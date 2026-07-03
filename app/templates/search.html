@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}产品查询 - 特种标签产品数据库{% endblock %}
+{% block body %}
+<form class="card" method="get" action="{{ url_for('search') }}">
+  <fieldset>
+    <legend>品牌 Brand</legend>
+    {% for b in brands %}
+      <label class="opt"><input type="checkbox" name="brand" value="{{ b.brand_id }}"
+        {{ 'checked' if b.brand_id|string in args.getlist('brand') }}>
+        {{ b.brand_name_cn or b.brand_name_en }}{% if b.brand_type==2 %} <span class="tag own">自研</span>{% endif %}</label>
+    {% endfor %}
+  </fieldset>
+  <fieldset>
+    <legend>行业应用 Application</legend>
+    {% for a in apps %}
+      <label class="opt"><input type="checkbox" name="app" value="{{ a.app_id }}"
+        {{ 'checked' if a.app_id|string in args.getlist('app') }}> {{ a.app_name_cn }} {{ a.app_name_en }}</label>
+    {% endfor %}
+  </fieldset>
+  <div class="grid2">
+    <fieldset>
+      <legend>面材 Facestock Material</legend>
+      {% for f in faces %}
+        <label class="opt"><input type="checkbox" name="face" value="{{ f.face_id }}"
+          {{ 'checked' if f.face_id|string in args.getlist('face') }}> {{ f.face_name_cn }}</label>
+      {% endfor %}
+    </fieldset>
+    <fieldset>
+      <legend>胶水 Adhesive</legend>
+      {% for a in adhs %}
+        <label class="opt"><input type="checkbox" name="adh" value="{{ a.adh_id }}"
+          {{ 'checked' if a.adh_id|string in args.getlist('adh') }}> {{ a.adh_name_cn }}</label>
+      {% endfor %}
+    </fieldset>
+  </div>
+  <fieldset>
+    <legend>耐温 / 耐化学 / 关键词</legend>
+    <label class="opt">长期耐温 ≥ <input type="number" name="temp_min" value="{{ args.get('temp_min','') }}" style="width:80px"> ℃</label>
+    <label class="opt">耐化学:
+      {% for g in ['A','B','C','D'] %}
+        <label class="opt"><input type="checkbox" name="chem" value="{{ g }}" {{ 'checked' if g in args.getlist('chem') }}>{{ g }}</label>
+      {% endfor %}
+    </label>
+    <label class="opt">关键词 <input type="text" name="kw" value="{{ args.get('kw','') }}" placeholder="型号/品名/特性" style="width:200px"></label>
+  </fieldset>
+  <button class="btn" type="submit">查询</button>
+  <a class="btn sec" href="{{ url_for('search') }}">重置</a>
+  <a class="btn sec" href="{{ url_for('export') }}?{{ request.query_string.decode() }}">导出当前结果 Excel</a>
+  <span class="muted">共 {{ total }} 条产品，当前命中 {{ rows|length }} 条</span>
+</form>
+
+<div class="card" style="overflow-x:auto">
+<table>
+  <tr><th>品牌</th><th>型号</th><th>品名</th><th>面材</th><th>胶水</th><th>行业应用</th>
+      <th>长期耐温℃</th><th>峰值℃</th><th>档位</th><th>耐化学</th><th>资料</th></tr>
+  {% for r in rows %}
+  <tr>
+    <td>{{ r.brand_name_cn or r.brand_code }}{% if r.brand_type==2 %} <span class="tag own">自研</span>{% endif %}</td>
+    <td><a href="{{ url_for('product_detail', pid=r.product_id) }}"><b>{{ r.model_no }}</b></a></td>
+    <td>{{ r.product_name_cn or r.product_name_en or '' }}</td>
+    <td>{% if r.face_name_cn %}<span class="tag">{{ r.face_name_cn }}</span>{% endif %}</td>
+    <td>{% if r.adh_name_cn %}<span class="tag">{{ r.adh_name_cn }}</span>{% endif %}</td>
+    <td class="muted">{{ r.apps or '' }}</td>
+    <td>{{ r.temp_long_max if r.temp_long_max is not none else '—' }}</td>
+    <td>{{ r.temp_peak_max if r.temp_peak_max is not none else '—' }}</td>
+    <td>{{ r.temp_tier or '—' }}</td>
+    <td>{{ r.chem_grade or '—' }}</td>
+    <td>{% if r.doc_count %}📎{{ r.doc_count }}{% endif %}</td>
+  </tr>
+  {% else %}
+  <tr><td colspan="11" class="muted">无匹配产品。请调整筛选条件，或到「数据管理」导入数据。</td></tr>
+  {% endfor %}
+</table>
+</div>
+{% endblock %}

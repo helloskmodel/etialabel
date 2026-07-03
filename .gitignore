@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+data/labels.db
+data/uploads/
+data/raw/

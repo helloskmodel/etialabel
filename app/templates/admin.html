@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}数据管理 - 特种标签产品数据库{% endblock %}
+{% block body %}
+<div class="grid2">
+  <div class="card">
+    <h3 style="margin-top:0">① 产品数据导入（Excel，不用改代码）</h3>
+    <p class="muted">流程：下载模板 → 在Excel里新增/修改产品行 → 上传。系统按「品牌+型号」判重：已存在则覆盖更新，不存在则新增。面材/胶水/行业填中文名、英文名或编码均可，新值自动创建字典项。</p>
+    <p><a class="btn sec" href="{{ url_for('download_template') }}">⬇ 下载导入模板（含字典参考）</a></p>
+    <form method="post" action="{{ url_for('import_excel') }}" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".xlsx" required>
+      <button class="btn" type="submit">上传导入</button>
+    </form>
+    <p class="muted">提示：先「导出当前结果Excel」再修改回传，即可批量更新既有数据。</p>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">② TDS / 手册 / Notes 文件上传绑定</h3>
+    <form method="post" action="{{ url_for('upload_doc') }}" enctype="multipart/form-data">
+      <p>产品：
+        <select name="product_id" required>
+          <option value="">— 选择产品 —</option>
+          {% for p in products %}<option value="{{ p.product_id }}">{{ p.brand_code }} {{ p.model_no }}</option>{% endfor %}
+        </select>
+        类型：
+        <select name="doc_type">
+          <option value="TDS">TDS 技术数据表</option>
+          <option value="BROCHURE">官方产品手册</option>
+          <option value="NOTES">应用说明 Notes</option>
+          <option value="MSDS">MSDS</option>
+          <option value="CERT">认证证书</option>
+        </select>
+      </p>
+      <p>标题：<input type="text" name="doc_title" placeholder="留空=用文件名" style="width:220px">
+         版本：<input type="text" name="version" placeholder="如 Rev.2024-03" style="width:120px">
+         语言：<select name="language"><option value="en">英</option><option value="zh">中</option><option value="ja">日</option></select>
+      </p>
+      <p><label class="opt"><input type="checkbox" name="is_public" value="1"> 对外公开可下载</label>
+         <label class="opt"><input type="checkbox" name="is_latest" value="1" checked> 设为当前最新版</label></p>
+      <p><input type="file" name="file" required> <button class="btn" type="submit">上传绑定</button></p>
+    </form>
+  </div>
+</div>
+<div class="card">
+  <h3 style="margin-top:0">各品牌数据量</h3>
+  <table style="max-width:420px">
+    <tr><th>品牌</th><th>在库产品数</th></tr>
+    {% for s in stats %}<tr><td>{{ s.brand_code }}</td><td>{{ s.n }}</td></tr>{% endfor %}
+  </table>
+</div>
+{% endblock %}

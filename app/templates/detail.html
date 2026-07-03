@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}{{ p.model_no }} - 产品详情{% endblock %}
+{% block body %}
+<div class="card">
+  <h2 style="margin-top:0">{{ p.brand_name_cn or p.brand_code }} {{ p.model_no }}
+    {% if p.brand_type==2 %}<span class="tag own">自研</span>{% endif %}</h2>
+  <p><b>{{ p.product_name_cn or '' }}</b> <span class="muted">{{ p.product_name_en or '' }}</span></p>
+  <table>
+    <tr><th style="width:140px">面材 Facestock</th><td>{{ p.face_name_cn or '—' }} {{ p.face_name_en or '' }}</td>
+        <th style="width:140px">胶水 Adhesive</th><td>{{ p.adh_name_cn or '—' }} {{ p.adh_name_en or '' }}</td></tr>
+    <tr><th>行业应用</th><td colspan="3">{{ p.apps or '—' }}</td></tr>
+    <tr><th>长期耐温</th><td>{{ p.temp_long_min if p.temp_long_min is not none else '?' }} ~ {{ p.temp_long_max if p.temp_long_max is not none else '?' }} ℃（档位 {{ p.temp_tier or '—' }}）</td>
+        <th>短时峰值</th><td>{{ p.temp_peak_max if p.temp_peak_max is not none else '—' }} ℃</td></tr>
+    <tr><th>耐化学等级</th><td>{{ p.chem_grade or '—' }}</td>
+        <th>厚度</th><td>{{ p.thickness_um or '—' }} μm</td></tr>
+    <tr><th>颜色</th><td>{{ p.color or '—' }}</td><th>打印方式</th><td>{{ p.print_method or '—' }}</td></tr>
+    <tr><th>认证</th><td colspan="3">{{ p.certification or '—' }}</td></tr>
+    <tr><th>特性 Feature</th><td colspan="3">{{ p.feature or '—' }}</td></tr>
+    <tr><th>优势 Benefit</th><td colspan="3">{{ p.benefit or '—' }}</td></tr>
+    <tr><th>适用工况 Application</th><td colspan="3">{{ p.application_desc or '—' }}</td></tr>
+    <tr><th>原始分类(L0留存)</th><td colspan="3" class="muted">{{ p.source_category_raw or '—' }}
+      {% if p.source_url %} | <a href="{{ p.source_url }}" target="_blank">品牌源页面</a>{% endif %}</td></tr>
+  </table>
+</div>
+<div class="card">
+  <h3 style="margin-top:0">绑定资料（TDS / 手册 / Notes）</h3>
+  <table>
+    <tr><th>类型</th><th>标题</th><th>语言</th><th>版本</th><th>最新版</th><th>下载</th></tr>
+    {% for d in docs %}
+    <tr><td>{{ d.doc_type }}</td><td>{{ d.doc_title }}</td><td>{{ d.language }}</td>
+        <td>{{ d.version or '—' }}</td><td>{{ '✔' if d.is_latest }}</td>
+        <td><a href="{{ url_for('download_doc', doc_id=d.doc_id) }}">下载</a></td></tr>
+    {% else %}
+    <tr><td colspan="6" class="muted">暂无绑定文件，可在「数据管理」页上传。</td></tr>
+    {% endfor %}
+  </table>
+</div>
+<a class="btn sec" href="javascript:history.back()">← 返回查询</a>
+{% endblock %}
