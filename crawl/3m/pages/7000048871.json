@@ -1,0 +1,128 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000090525/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000090525/",
+ "name": "3M™ Thermal Transfer Label Material 7812, Matte White Polyimide, 6 in x 500 ft, 1 Roll/Case",
+ "product_number": "",
+ "stock_number": "7000048871",
+ "short_description": "3M™ Thermal Transfer Polyimide Label Material 7812 is a polyimide film product that offers ultra-high temperature performance. This label product utilizes 3M™ Adhesive 100, that can withstand up to 450°F (232°C) short-term heat resistance, has excellent solvent resistance, and exhibits low outgassing characteristics.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Topcoat for thermal transfer printing",
+  "100 adhesive and polyimide facestock make it suitable for high temperature applications",
+  "Matte white thermal transfer topcoat for easy readability of barcodes and variable information."
+ ],
+ "attributes": {
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "2 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "High Temperature Acrylic Adhesive 100"
+  ],
+  "Facestock Color": [
+   "White"
+  ],
+  "Facestock Material": [
+   "Polyimide"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "500 ℉"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Overall Length (Imperial)": [
+   "500 ft"
+  ],
+  "Overall Length (Metric)": [
+   "152.4 m"
+  ],
+  "Overall Width (Imperial)": [
+   "6 in"
+  ],
+  "Overall Width (Metric)": [
+   "152.4 mm"
+  ],
+  "Primary Liner": [
+   "50# Densified Kraft"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "3.2 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.08 mm"
+  ],
+  "Printing Method": [
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Topcoat": [
+   "TC"
+  ],
+  "Units per Case": [
+   "1.0"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2399667O/3m-thermal-transfer-polyimide-label-material-7812.pdf?&fn=3M-Thermal-Transfer-Polyimide-Label-Material-7812.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™Thermal Transfer Polyimide Label Material 7811 and 7812",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/tlxjZxKuerI",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7812",
+  "title": "3M™ Thermal Transfer Label Material 7812, Matte White Polyimide, 6 in x 500 ft, 1 Roll/Case",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

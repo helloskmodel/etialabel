@@ -1,0 +1,91 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000239023/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000239023/",
+ "name": "3M™ Thermal Transfer Label Material FP019802, White Polypropylene, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100073323",
+ "short_description": "3M™ White Polypropylene Durable Label Material FP019802 offers excellent durability and moisture resistance. This label product utilizes 3M™ Adhesive P1110, which is for labeling tires when used in tire wash. This adhesive exhibits high initial tack, yet resists edge bleed and cold flow.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Polypropylene facestock for conformable surfaces.",
+  "P1110 adhesive",
+  "Polypropylene film is treated to accept most film ink systems and thermal transfer printing with composite and resin ribbons.",
+  "Adhesive exhibits high initial tack and ultimate adhesion and is designed to meet the demanding requirements of most battery label specifications.",
+  "Liner for 3M label product FP019802 is designed for high-speed die cutting and matrix stripping. Not recommended for sheet on press applications."
+ ],
+ "attributes": {
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Type": [
+   "P1110 Permanent"
+  ],
+  "Facestock Color": [
+   "White"
+  ],
+  "Facestock Material": [
+   "Polypropylene"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "50# Super Calendered Kraft"
+  ],
+  "Printing Method": [
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Surface Finish": [
+   "Glossy"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/1455463O/3m-wash-away-label-fp0602.pdf?&fn=FP0602-Data-Sheet.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Wash Away Label FP0602",
+   "url": "https://multimedia.3m.com/mws/media/1455463O/3m-wash-away-label-fp0602.pdf?&fn=FP0602-Data-Sheet.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "FP019802",
+  "title": "3M™ Thermal Transfer Label Material FP019802, White Polypropylene, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

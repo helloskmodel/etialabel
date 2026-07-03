@@ -1,0 +1,72 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b5005373127/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b5005373127/",
+ "name": "3M™ Versatile Print Label Material 7331V",
+ "product_number": "",
+ "stock_number": "B5005373127",
+ "short_description": "3M™ Versatile Print Label Material 7331V is a durable label material with a new topcoat formulation that works with more inks on more printing presses, including water-based flexographic inks on gloss labels.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Print water-based flexographic on gloss",
+  "Near zero edge bleed and high image sharpness",
+  "Run more jobs per batch on digital presses",
+  "Durable protection of variable data and barcodes",
+  "UL Component Recognition to UL969 Labeling and Marking Standard with many ink systems and print technologies*"
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Solvent Acrylic"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Inkjet",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Glossy"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2606075O/3m-versatile-print-label-material-7331v.pdf?&fn=3M-Versatile-Print-Label-Material-7331V.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Versatile Print Label Material 7331V",
+   "url": "https://multimedia.3m.com/mws/media/2606075O/3m-versatile-print-label-material-7331v.pdf?&fn=3M-Versatile-Print-Label-Material-7331V.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7331V",
+  "title": "3M™ Versatile Print Label Material 7331V",
+  "industries": [
+   "Manufacturing"
+  ]
+ }
+}

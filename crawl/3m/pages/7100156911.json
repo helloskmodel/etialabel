@@ -1,0 +1,101 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000582105/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000582105/",
+ "name": "3M™ Thermal Transfer Label Material 7818, Half Master, Silver Polyester Matte, Roll, Config",
+ "product_number": "7818",
+ "stock_number": "7100156911",
+ "short_description": "3M™ Thermal Transfer Label Materials are versatile and durable label stocks. They provide excellent thermal stability and moisture resistance for use in demanding applications, such as bar code tracking. The adhesive on many labels offers excellent clarity and good initial tack to help improve the finished label.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Offers excellent thermal stability and moisture resistance",
+  "Versatile materials produced for use in a variety of applications",
+  "Adhesive offers excellent clarity and good initial tack to help improve finished label"
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Solvent Acrylic"
+  ],
+  "Application": [
+   "Label"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Industries": [
+   "Aerospace",
+   "Automotive",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Overall Length (Imperial)": [
+   "1668 ft"
+  ],
+  "Overall Length (Metric)": [
+   "508.4 m"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "Silver"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Tape Thickness (Imperial)": [
+   "4.1 mil"
+  ],
+  "Topcoat": [
+   "TT TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/1561216O/3m-durable-label-materials.pdf?&fn=3M-Thermal-Transfer-Polyester-Label-Material-7818.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Durable Label Materials",
+   "url": "https://multimedia.3m.com/mws/media/1561216O/3m-durable-label-materials.pdf?&fn=3M-Thermal-Transfer-Polyester-Label-Material-7818.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7818P",
+  "title": "3M™ Thermal Transfer Label Material 7818, Half Master, Silver Polyester Matte, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

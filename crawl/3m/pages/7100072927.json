@@ -1,0 +1,80 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v101241067/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v101241067/",
+ "name": "3M™ Thermal Transfer Label Material 76999, Matte White Acrylate, Roll, Config",
+ "product_number": "76999",
+ "stock_number": "7100072927",
+ "short_description": "3M™ Thermal Transfer Label Materials are versatile and durable label stocks. They provide excellent thermal stability and moisture resistance for use in demanding applications, such as bar code tracking. The adhesive on many labels offers excellent clarity and good initial tack to help improve the finished label.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Offers excellent thermal stability and moisture resistance",
+  "Versatile materials produced for use in a variety of applications",
+  "Adhesive offers excellent clarity and good initial tack to help improve finished label"
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Solvent Acrylic"
+  ],
+  "Application": [
+   "Label"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Printing Method": [
+   "Thermal Transfer"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Tape Thickness (Imperial)": [
+   "2.8 mil"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/1017875O/3m-converter-markets-selection-guide-july-2023.pdf?&fn=3M-Converter-Markets-Guide.pdf",
+  "https://multimedia.3m.com/mws/media/2023442O/3m-iatd-automotive-portfolio-labels-brochure.pdf?&fn=3M-IATD-Automotive-Portfolio-Labels-Brochure.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Converter Markets Guide",
+   "url": "https://multimedia.3m.com/mws/media/1017875O/3m-converter-markets-selection-guide-july-2023.pdf?&fn=3M-Converter-Markets-Guide.pdf",
+   "contentType": "Brochures"
+  },
+  {
+   "title": "3M™ IATD Automotive Portfolio Labels Brochure",
+   "url": "https://multimedia.3m.com/mws/media/2023442O/3m-iatd-automotive-portfolio-labels-brochure.pdf?&fn=3M-IATD-Automotive-Portfolio-Labels-Brochure.pdf",
+   "contentType": "Brochures"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "76999",
+  "title": "3M™ Thermal Transfer Label Material 76999, Matte White Acrylate, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

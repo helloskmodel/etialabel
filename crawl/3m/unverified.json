@@ -1,0 +1,45 @@
+{
+ "unverified": [
+  {
+   "product_code_or_name": "3M™ Thermal Transfer Ribbons",
+   "reason": "Family/equipment page without a material number; task granularity is one record per material number.",
+   "url": "https://www.3m.com/3M/en_US/p/d/b00011921/"
+  },
+  {
+   "product_code_or_name": "3M™ Foodservice Printed Label Tape",
+   "reason": "Family/equipment page without a material number; task granularity is one record per material number.",
+   "url": "https://www.3m.com/3M/en_US/p/d/b00022774/"
+  },
+  {
+   "product_code_or_name": "3M™ Laser Printable Label Materials",
+   "reason": "Family/equipment page without a material number; task granularity is one record per material number.",
+   "url": "https://www.3m.com/3M/en_US/p/d/b40066892/"
+  },
+  {
+   "product_code_or_name": "3M™ Press Printable Label Materials",
+   "reason": "Family/equipment page without a material number; task granularity is one record per material number.",
+   "url": "https://www.3m.com/3M/en_US/p/d/b40071763/"
+  },
+  {
+   "product_code_or_name": "3M™ Overlaminate Label Materials",
+   "reason": "Family/equipment page without a material number; task granularity is one record per material number.",
+   "url": "https://www.3m.com/3M/en_US/p/d/b40072262/"
+  },
+  {
+   "product_code_or_name": "3M™ Hot Stamp Foil",
+   "reason": "Family/equipment page without a material number; task granularity is one record per material number.",
+   "url": "https://www.3m.com/3M/en_US/p/d/b5005104059/"
+  },
+  {
+   "product_code_or_name": "3M™ VP5000 Thermal Imaging System Core",
+   "reason": "Family/equipment page without a material number; task granularity is one record per material number.",
+   "url": "https://www.3m.com/3M/en_US/p/d/b5005110005/"
+  },
+  {
+   "product_code_or_name": "3M™ Precision Plate System",
+   "reason": "Family/equipment page without a material number; task granularity is one record per material number.",
+   "url": "https://www.3m.com/3M/en_US/p/d/b5005110006/"
+  }
+ ],
+ "blocked_urls": []
+}

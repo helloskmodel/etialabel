@@ -1,0 +1,170 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b5005329045/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b5005329045/",
+ "name": "3M™ Thermal Transfer Label Material 7872",
+ "product_number": "",
+ "stock_number": "B5005329045",
+ "short_description": "3M™ Thermal Transfer Polyester Label Material 7872 is a gloss polyester label material that offers premium durability and moisture resistance. This label product utilizes 3M™ High Performance Acrylic Adhesive 350, it offers excellent chemical resistance and holding strength even at high temperatures.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Adhesive can permanently bond to high surface energy (HSE) and low surface energy (LSE) plastics, textured and contoured surfaces, powder coatings, and slightly oily metals.",
+  "Thick adhesive caliper provides for stronger bond on textured surfaces.",
+  "Facestock is topcoated for thermal transfer printing."
+ ],
+ "attributes": {
+  "Adhesive Thickness (Imperial)": [
+   "1.8 mil"
+  ],
+  "Adhesive Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Adhesive Type": [
+   "Solvent Acrylic"
+  ],
+  "Backing Material": [
+   "Polyester"
+  ],
+  "Backing Thickness (Imperial)": [
+   "2 mil"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "1.8 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "350 High Holding Acrylic"
+  ],
+  "Facestock Color": [
+   "Platinum"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Celsius)": [
+   "150.56 ℃"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "300 ℉",
+   "303 ℉"
+  ],
+  "Minimum Operating Temperature (Celsius)": [
+   "-40 ℃"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Nominal Adhesive Thickness (Imperial)": [
+   "1.8 mil"
+  ],
+  "Overall Length (Imperial)": [
+   "1668 ft"
+  ],
+  "Overall Length (Metric)": [
+   "508.4 m"
+  ],
+  "Overall Width (Imperial)": [
+   "6 in",
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1.37 mm",
+   "152.4 mm",
+   "1371.6 m"
+  ],
+  "Primary Liner": [
+   "55# Densified Kraft"
+  ],
+  "Primary Liner Color": [
+   "Brown"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "3.2 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.08 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Thermal Transfer",
+   "UV Inkjet"
+  ],
+  "Product Color": [
+   "Platinum"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Tape Thickness (Imperial)": [
+   "3.8 mil"
+  ],
+  "Topcoat": [
+   "TC"
+  ],
+  "Units per Case": [
+   "1.0"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2399696O/3m-thermal-transfer-polyester-label-material-7872.pdf?&fn=3M-Thermal-Transfer-Polyester-Label-Material-7872.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Thermal Transfer Polyester Label Material 7872",
+   "url": "https://multimedia.3m.com/mws/media/2399696O/3m-thermal-transfer-polyester-label-material-7872.pdf?&fn=3M-Thermal-Transfer-Polyester-Label-Material-7872.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7872",
+  "title": "3M™ Thermal Transfer Label Material 7872",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

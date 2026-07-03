@@ -1,0 +1,155 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000176409/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000176409/",
+ "name": "3M™ Tamper Evident Label Material FMV02, Bright Silver VOID Polyester, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100000234",
+ "short_description": "3M™ Void Polyester Durable Label Material FMV02 is a tamper-indicating stock designed to provide a “void” message in the facestock when removal is attempted. This void polyester label utilizes 3M™ Adhesive P1410 which is an aggressive tackified emulsion acrylic adhesive that offers excellent adhesion to a wide variety of substrates, including polyolefins.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Designed for a range of labeling applications where tamper-resistance is important",
+  "Facestocks designed for reliable use and processing",
+  "Acrylic adhesive is formulated for strength, tack and clarity on a variety of surfaces",
+  "Polyester film is top coated to accept most film ink systems and thermal transfer printing",
+  "Meets CONEG requirements"
+ ],
+ "attributes": {
+  "Adhesive Thickness (Imperial)": [
+   "0.9 mil"
+  ],
+  "Adhesive Thickness (Metric)": [
+   "0.02 mm"
+  ],
+  "Backing Material": [
+   "Polyester"
+  ],
+  "Backing Thickness (Imperial)": [
+   "2 mil"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "0.9 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.023 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "P1410 Permanent"
+  ],
+  "Facestock Color": [
+   "Silver"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Celsius)": [
+   "150 ℃"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "302 ℉"
+  ],
+  "Minimum Operating Temperature (Celsius)": [
+   "-40 ℃"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Nominal Adhesive Thickness (Imperial)": [
+   "0.9 mil"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "50# Super Calendered Kraft"
+  ],
+  "Primary Liner Color": [
+   "Brown"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "3.2 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.08 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "Silver"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Bright"
+  ],
+  "Tape Thickness (Imperial)": [
+   "2.9 mil"
+  ],
+  "Topcoat": [
+   "TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2396595O/3m-void-polyester-durable-label-material-fmv02.pdf?&fn=3M-Void-Polyester-Durable-Label-Material-FMV02.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Void Polyester Durable Label Material FMV02",
+   "url": "https://multimedia.3m.com/mws/media/2396595O/3m-void-polyester-durable-label-material-fmv02.pdf?&fn=3M-Void-Polyester-Durable-Label-Material-FMV02.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "FMV02",
+  "title": "3M™ Tamper Evident Label Material FMV02, Bright Silver VOID Polyester, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

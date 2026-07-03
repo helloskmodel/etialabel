@@ -1,0 +1,124 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000239057/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000239057/",
+ "name": "3M™ Thermal Transfer Label Material FP102, Clear Polypropylene, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100073357",
+ "short_description": "3M™ Thermal Transfer Label Material FP102 has a clear PP TC facestock with P1410 adhesive and a 50 # SC liner",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Polypropylene facestock for conformable surfaces.",
+  "P1410 adhesive",
+  "50# SC semi bleached super calendared kraft sheet liner",
+  "Liner for 3M™ Clear Polypropylene Durable Label Material FP102 is designed for high-speed die cutting and matrix stripping. Not recommended for sheet on press applications."
+ ],
+ "attributes": {
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "0.9 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.023 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "P1410 Permanent"
+  ],
+  "Facestock Color": [
+   "Clear"
+  ],
+  "Facestock Material": [
+   "Polypropylene"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "302 ℉"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-20 ℉"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "50# Super Calendered Kraft"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "3.2 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.08 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "Transparent"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Glossy"
+  ],
+  "Topcoat": [
+   "TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2396517O/3m-clear-polypropylene-durable-label-material-fp102.pdf?&fn=3M-Clear-Polypropylene-Durable-Label-Material-FP102.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Clear Polypropylene Durable Label Material FP102",
+   "url": "https://multimedia.3m.com/mws/media/2396517O/3m-clear-polypropylene-durable-label-material-fp102.pdf?&fn=3M-Clear-Polypropylene-Durable-Label-Material-FP102.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "FP102",
+  "title": "3M™ Thermal Transfer Label Material FP102, Clear Polypropylene, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

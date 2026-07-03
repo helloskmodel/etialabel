@@ -1,0 +1,69 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v100675351/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v100675351/",
+ "name": "3M™ Versatile Print Label Material 7323V, Bright Silver Polyester, Roll, Config",
+ "product_number": "7323V",
+ "stock_number": "7100166740",
+ "short_description": "3M™ Versatile Print Label Material 7323V is a durable label material with a new topcoat formulation that works with more inks on more printing presses, including water-based flexographic inks on gloss labels.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Print water-based flexographic on gloss",
+  "Near zero edge bleed and high image sharpness",
+  "Run more jobs per batch on digital presses",
+  "Durable protection of variable data and barcodes",
+  "UL Component Recognition to UL969 Labeling and Marking Standard with many ink systems and print technologies*"
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Solvent Acrylic"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Inkjet",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "Silver"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Glossy"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/1017875O/3m-converter-markets-selection-guide-july-2023.pdf?&fn=3M-Converter-Markets-Guide.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Converter Markets Guide",
+   "url": "https://multimedia.3m.com/mws/media/1017875O/3m-converter-markets-selection-guide-july-2023.pdf?&fn=3M-Converter-Markets-Guide.pdf",
+   "contentType": "Brochures"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7323Z",
+  "title": "3M™ Versatile Print Label Material 7323V, Bright Silver Polyester, Roll, Config",
+  "industries": [
+   "Manufacturing"
+  ]
+ }
+}
