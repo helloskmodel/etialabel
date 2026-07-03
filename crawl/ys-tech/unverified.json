@@ -1,0 +1,15 @@
+{
+  "unverified": [
+    {
+      "product_code_or_name": "HP-600T",
+      "reason": "Code appears only in a case study (aluminum sow direct hot application at 500 C) and not in any product lineup page; possibly a variant of HP-600 or a typo, could not confirm as a distinct product.",
+      "url": "https://www.heatprooflabel.com/cases/aluminum-01/"
+    },
+    {
+      "product_code_or_name": "HEATPROOF thermal transfer ink ribbons (up to 1200 C)",
+      "reason": "The printing page describes heat-resistant and chemical-resistant ink ribbons withstanding up to 1200 C, but no product codes or specs are published, so no record could be created.",
+      "url": "https://www.heatprooflabel.com/products/printing/"
+    }
+  ],
+  "blocked_urls": []
+}

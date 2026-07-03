@@ -1,0 +1,155 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000186286/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000186286/",
+ "name": "3M™ Health Care Label Material FP035402, White Polyolefin, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100013519",
+ "short_description": "3M™  Durable Label Material FP035402 is a matte white opaque material that offers excellent durability, conformability and moisture resistance. This label product utilizes 3M™ Adhesive P1650, which is designed for use in demanding environments and conforms to the FDA requirements; including leachability of the adhesive through the bag material for secondary Blood bag tracking labels.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Designed for use on bottles, bags, LSE and other demanding healthcare applications",
+  "Not recommended for sheet on press applications.",
+  "The facestock for this construction is extremely pliable and conformable.",
+  "This makes it ideal for applications where the facestock must conform with the changes in the substrate.",
+  "Such properties make this facestock particularly effective in blood bag labeling applications."
+ ],
+ "attributes": {
+  "Adhesive Thickness (Imperial)": [
+   "1.25 mil"
+  ],
+  "Adhesive Thickness (Metric)": [
+   "0.03 mm"
+  ],
+  "Backing Material": [
+   "Polyolefin"
+  ],
+  "Backing Thickness (Imperial)": [
+   "3.3 mil"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "1.25 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.03 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "P1650 Permanent"
+  ],
+  "Facestock Color": [
+   "White"
+  ],
+  "Facestock Material": [
+   "Polyolefin"
+  ],
+  "Facestock Thickness": [
+   "4 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.1 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Celsius)": [
+   "60 ℃"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "140 ℉"
+  ],
+  "Minimum Operating Temperature (Celsius)": [
+   "-40 ℃"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Nominal Adhesive Thickness (Imperial)": [
+   "1.25 mil"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "50# Super Calendered Kraft"
+  ],
+  "Primary Liner Color": [
+   "Brown"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "3.2 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.08 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Tape Thickness (Imperial)": [
+   "4.6 mil"
+  ],
+  "Topcoat": [
+   "NTC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2396583O/3m-durable-label-material-fp035402.pdf?&fn=3M-Durable-Label-Material-FP035402.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Performance Label FP035402",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/XYSfMuj1RtU",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "FP035402",
+  "title": "3M™ Health Care Label Material FP035402, White Polyolefin, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

@@ -1,0 +1,155 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b5005329153/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b5005329153/",
+ "name": "3M™ Health Care Label Material 7110, Uncoated White Tamper Indicating Paper, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100013780",
+ "short_description": "3M™ Performance Paper Label Material 7110 adheres well to a variety of surfaces including high (HSE) and low surface energy (LSE) plastics and provides excellent resistance to flagging on small diameter vials. This product can be used as a tamper evident seal with the combination of fragile paper facestock and aggressive 3M™ Adhesive 320.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Designed for use on bottles, bags, LSE and other demanding healthcare applications",
+  "It is tamper evident on a variety of substrates.",
+  "Adhesive adheres will to a variety of surfaces including high surface energy (HSE) and low surface energy (LSE) plastics.",
+  "43# Densified Kraft liner helps improve application accuracy due to excellent liner release consistency.",
+  "The construction is designed to survive autoclaving while adhered to most surfaces.",
+  "It provides excellent resistance to flagging on small diameter vials."
+ ],
+ "attributes": {
+  "Adhesive Thickness (Imperial)": [
+   "1.1 mil"
+  ],
+  "Adhesive Thickness (Metric)": [
+   "0.03 mm"
+  ],
+  "Backing Material": [
+   "Paper"
+  ],
+  "Backing Thickness (Imperial)": [
+   "2.8 mil"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "1.1 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.03 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "320 High Tenacity Acrylic"
+  ],
+  "Facestock Color": [
+   "White"
+  ],
+  "Facestock Material": [
+   "Paper"
+  ],
+  "Facestock Thickness": [
+   "2.8 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.07 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Celsius)": [
+   "121.11 ℃"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "250 ℉"
+  ],
+  "Minimum Operating Temperature (Celsius)": [
+   "-40 ℃"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Nominal Adhesive Thickness (Imperial)": [
+   "1.1 mil"
+  ],
+  "Overall Width (Imperial)": [
+   "60 in"
+  ],
+  "Overall Width (Metric)": [
+   "1524 mm"
+  ],
+  "Primary Liner": [
+   "43# Densified Kraft"
+  ],
+  "Primary Liner Color": [
+   "Brown"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "2.5 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.06 mm"
+  ],
+  "Printing Method": [
+   "Flexo"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Uncoated"
+  ],
+  "Tape Thickness (Imperial)": [
+   "3.9 mil"
+  ],
+  "Topcoat": [
+   "NTC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2399675O/3m-performance-paper-label-material-7110.pdf?&fn=3M-Performance-Paper-Label-Material-7110.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Performance Paper Label 7110",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/y5jqE3Z-l48",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7110",
+  "title": "3M™ Health Care Label Material 7110, Uncoated White Tamper Indicating Paper, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

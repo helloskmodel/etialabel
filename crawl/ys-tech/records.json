@@ -1,0 +1,1345 @@
+{
+ "records": [
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-350N",
+   "name_en": "HP-350N HEATPROOF Heat Resistant Label",
+   "name_zh": "HP-350N HEATPROOF 耐高温标签",
+   "facestock_en": "",
+   "facestock_zh": "",
+   "adhesive_en": "Pressure-sensitive adhesive (category-level statement on Labels for Heat Treatment page)",
+   "adhesive_zh": "压敏胶（“热处理用标签”品类页的整体说明）",
+   "application_en": "Dual-use label: direct hot application on hot steel and aluminum surfaces up to 400℃ (apply-to-hot), and heat treatment process management applied from room temperature then heated (apply-cold-then-heat) through annealing, homogenizing and reflow processes. Case studies: aluminum billet homogenizing (applied at room temperature, then 550℃ x 12 hours) and injection casting mold management (200〜400℃, multiple cycles). Industries: steel, aluminum, ceramic, automotive, electronics, casting/jig management.",
+   "application_zh": "两用标签：可直接贴附于最高400℃的高温钢材和铝材表面（热贴），也可在室温贴附后经受加热（冷贴后加热），用于退火、均质化、回流焊等热处理工序的过程管理。应用案例：铝坯均质化工艺（室温贴附后550℃ x 12小时）、注射铸造模具管理（200〜400℃，多次循环）。行业：钢铁、铝业、陶瓷、汽车、电子、铸造/治具管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Ceramic",
+    "Automotive",
+    "Electronics",
+    "Casting"
+   ],
+   "features_en": [
+    "Application temperature up to 400℃ (can be applied to hot surfaces)",
+    "Application temperature from room temp to 400℃",
+    "Maximum heat resistance to 600℃",
+    "Excellent ink stability and resistance to ink smudging when applying at high temperatures"
+   ],
+   "features_zh": [
+    "贴附温度最高可达400℃（可直接贴附于高温表面）",
+    "贴附温度范围：室温至400℃",
+    "最高耐热温度600℃",
+    "高温贴附时油墨稳定性优异，抗油墨晕染"
+   ],
+   "benefits_en": [
+    "Identify and barcode products at high temperatures, or track products through high temperature processes",
+    "Variable information and barcodes can be printed on demand with standard thermal transfer printers"
+   ],
+   "benefits_zh": [
+    "可在高温下对产品进行标识和条码化，或在高温工序中跟踪产品",
+    "可用标准热转印打印机按需打印可变信息和条码"
+   ],
+   "temperature_performance": "Application temperature up to 400℃ (from room temp to 400℃); maximum heat resistance to 600℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/direct-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/direct-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/direct-label/",
+    "https://www.heatprooflabel.com/products/management-label/",
+    "https://www.heatprooflabel.com/products/",
+    "https://www.heatprooflabel.com/cases/aluminum-02/",
+    "https://www.heatprooflabel.com/cases/mold-01/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-600",
+   "name_en": "HP-600 HEATPROOF Label for Direct Hot Application",
+   "name_zh": "HP-600 HEATPROOF 高温直贴标签",
+   "facestock_en": "",
+   "facestock_zh": "",
+   "adhesive_en": "Heat activated adhesive",
+   "adhesive_zh": "热活化型胶粘剂",
+   "application_en": "Direct hot application (apply-to-hot) on hot steel and aluminum products immediately after casting/rolling, at surface temperatures from 250℃ to 600℃. Installation examples: steel hot coil at 550℃ and aluminum sow at 500℃, applied manually or with robotic labeler systems. Industries: steel, aluminum.",
+   "application_zh": "高温直贴（热贴）标签，可在铸造/轧制后立即贴附于表面温度250℃至600℃的高温钢材和铝材产品。安装示例：550℃的热轧钢卷、500℃的铝锭（sow），可人工或用机器人贴标系统贴附。行业：钢铁、铝业。",
+   "industries": [
+    "Steel",
+    "Aluminum"
+   ],
+   "features_en": [
+    "Application temperature from 250℃ to 600℃",
+    "Maximum heat resistance to 600℃",
+    "Heat activated adhesive (activated by hot direct application)"
+   ],
+   "features_zh": [
+    "贴附温度范围：250℃至600℃",
+    "最高耐热温度600℃",
+    "热活化型胶粘剂（通过高温直贴激活）"
+   ],
+   "benefits_en": [
+    "Identify and barcode hot coils soon after rolling; products can be accurately identified and verified downstream using barcode scanners",
+    "Labels printed on demand or pre-printed using standard thermal transfer printers"
+   ],
+   "benefits_zh": [
+    "轧制后即可对热轧卷进行标识和条码化；下游工序可用条码扫描器准确识别和核验产品",
+    "可用标准热转印打印机按需打印或预印标签"
+   ],
+   "temperature_performance": "Application temperature from 250℃ to 600℃; maximum heat resistance to 600℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/direct-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/direct-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/direct-label/",
+    "https://www.heatprooflabel.com/cases/steel-02/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-700T",
+   "name_en": "HP-700T HEATPROOF Label for Direct Hot Application",
+   "name_zh": "HP-700T HEATPROOF 高温直贴标签",
+   "facestock_en": "",
+   "facestock_zh": "",
+   "adhesive_en": "Heat activated adhesive",
+   "adhesive_zh": "热活化型胶粘剂",
+   "application_en": "Direct hot application (apply-to-hot) on hot steel products immediately after casting, at surface temperatures from 450℃ to 800℃. Installation examples: steel slab at 800℃, steel billet at 750℃, steel bloom at 800℃, applied with robotic labeler systems. Industries: steel, aluminum.",
+   "application_zh": "高温直贴（热贴）标签，可在铸造后立即贴附于表面温度450℃至800℃的高温钢材产品。安装示例：800℃钢板坯（slab）、750℃钢坯（billet）、800℃大方坯（bloom），可用机器人贴标系统贴附。行业：钢铁、铝业。",
+   "industries": [
+    "Steel",
+    "Aluminum"
+   ],
+   "features_en": [
+    "Application temperature from 450℃ to 800℃",
+    "Heat resistance up to 800℃",
+    "Heat activated adhesive (activated by hot direct application)"
+   ],
+   "features_zh": [
+    "贴附温度范围：450℃至800℃",
+    "耐热温度最高800℃",
+    "热活化型胶粘剂（通过高温直贴激活）"
+   ],
+   "benefits_en": [
+    "Automatically identify each hot slab/billet with visually clear identification and barcodes",
+    "Verify product identity downstream using barcode scanners, cameras or imaging systems"
+   ],
+   "benefits_zh": [
+    "自动对每块热板坯/钢坯进行清晰可视的标识和条码识别",
+    "下游工序可用条码扫描器、相机或成像系统核验产品身份"
+   ],
+   "temperature_performance": "Application temperature from 450℃ to 800℃; heat resistance up to 800℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/direct-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/direct-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/direct-label/",
+    "https://www.heatprooflabel.com/cases/steel-01/",
+    "https://www.heatprooflabel.com/cases/steel-03/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-900",
+   "name_en": "HP-900 HEATPROOF Label for Direct Hot Application",
+   "name_zh": "HP-900 HEATPROOF 高温直贴标签",
+   "facestock_en": "",
+   "facestock_zh": "",
+   "adhesive_en": "Heat activated adhesive",
+   "adhesive_zh": "热活化型胶粘剂",
+   "application_en": "Direct hot application (apply-to-hot) on hot steel and aluminum products immediately after casting, at surface temperatures from 450℃ up to 900℃ (highest application temperature in the HEATPROOF direct hot application lineup). Industries: steel, aluminum.",
+   "application_zh": "高温直贴（热贴）标签，可在铸造后立即贴附于表面温度450℃至最高900℃的高温钢材和铝材产品（HEATPROOF高温直贴系列中贴附温度最高的型号）。行业：钢铁、铝业。",
+   "industries": [
+    "Steel",
+    "Aluminum"
+   ],
+   "features_en": [
+    "Application temperature from 450℃ to 900℃",
+    "Maximum heat resistance to 900℃",
+    "Heat activated adhesive (activated by hot direct application)"
+   ],
+   "features_zh": [
+    "贴附温度范围：450℃至900℃",
+    "最高耐热温度900℃",
+    "热活化型胶粘剂（通过高温直贴激活）"
+   ],
+   "benefits_en": [
+    "Products can be accurately identified and verified in downstream processes using barcode scanners",
+    "Labels printed on demand or pre-printed using standard thermal transfer printers"
+   ],
+   "benefits_zh": [
+    "下游工序可用条码扫描器准确识别和核验产品",
+    "可用标准热转印打印机按需打印或预印标签"
+   ],
+   "temperature_performance": "Application temperature from 450℃ to 900℃; maximum heat resistance to 900℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/direct-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/direct-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/direct-label/",
+    "https://www.heatprooflabel.com/products/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-120S",
+   "name_en": "HP-120S HEATPROOF Label for Heat Treatment Process Management",
+   "name_zh": "HP-120S HEATPROOF 热处理过程管理标签",
+   "facestock_en": "",
+   "facestock_zh": "",
+   "adhesive_en": "Pressure-sensitive adhesive (category-level statement on Labels for Heat Treatment page)",
+   "adhesive_zh": "压敏胶（“热处理用标签”品类页的整体说明）",
+   "application_en": "Heat treatment process management: applied from room temperature (apply-cold-then-heat) and tracked through reheat processes up to 220℃. Case study: identification of injection casting molds through 200〜400℃ multi-cycle heating (used alongside HP-150N/HP-350N). Industries: steel, aluminum, ceramic, automotive, electronics, casting/jig and asset management.",
+   "application_zh": "热处理过程管理标签：室温贴附（冷贴后加热），可在最高220℃的再加热工序中跟踪产品。应用案例：注射铸造模具在200〜400℃多次循环加热中的标识管理（与HP-150N/HP-350N配合使用）。行业：钢铁、铝业、陶瓷、汽车、电子、铸造/治具及资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Ceramic",
+    "Automotive",
+    "Electronics",
+    "Casting"
+   ],
+   "features_en": [
+    "Application temperature from room temp to 220℃",
+    "Maximum heat resistance to 220℃",
+    "Chemical resistance",
+    "Strong initial adhesion",
+    "Excellent ink stability and resistance to smudging at higher application temperatures"
+   ],
+   "features_zh": [
+    "贴附温度范围：室温至220℃",
+    "最高耐热温度220℃",
+    "耐化学性",
+    "初粘力强",
+    "较高贴附温度下油墨稳定性优异、抗晕染"
+   ],
+   "benefits_en": [
+    "Scan barcodes into and out of reheat furnaces; printed information and barcodes remain intact through the reheat process",
+    "Labels can be die-cut to any size and printed on site"
+   ],
+   "benefits_zh": [
+    "进出再加热炉均可扫描条码；打印信息和条码在再加热过程中保持完好",
+    "标签可模切成任意尺寸并现场打印"
+   ],
+   "temperature_performance": "Application temperature from room temp to 220℃; maximum heat resistance to 220℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-label/",
+    "https://www.heatprooflabel.com/cases/mold-01/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-120SH4",
+   "name_en": "HP-120SH4 HEATPROOF Label for Heat Treatment Process Management",
+   "name_zh": "HP-120SH4 HEATPROOF 热处理过程管理标签",
+   "facestock_en": "",
+   "facestock_zh": "",
+   "adhesive_en": "Pressure-sensitive adhesive (category-level statement on Labels for Heat Treatment page)",
+   "adhesive_zh": "压敏胶（“热处理用标签”品类页的整体说明）",
+   "application_en": "Heat treatment process management: applied from room temperature (apply-cold-then-heat), tracked through reheat processes up to 220℃. Case studies: barcode ID management of concrete building panels and pylons through autoclave curing (10MPa, 180〜200℃ for 12 to several dozen hours). Industries: steel, aluminum, ceramic, automotive, electronics, concrete, casting/jig and asset management.",
+   "application_zh": "热处理过程管理标签：室温贴附（冷贴后加热），可在最高220℃的再加热工序中跟踪产品。应用案例：混凝土建材板和电线杆在蒸压养护（10MPa、180〜200℃、12小时至数十小时）中的条码标识管理。行业：钢铁、铝业、陶瓷、汽车、电子、混凝土、铸造/治具及资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Ceramic",
+    "Automotive",
+    "Electronics",
+    "Concrete",
+    "Casting"
+   ],
+   "features_en": [
+    "Application temperature from room temp to 220℃",
+    "Maximum heat resistance to 220℃",
+    "Higher chemical resistance than HP-120S",
+    "Stronger initial adhesion than HP-120S",
+    "Excellent ink stability and resistance to smudging at higher application temperatures"
+   ],
+   "features_zh": [
+    "贴附温度范围：室温至220℃",
+    "最高耐热温度220℃",
+    "耐化学性高于HP-120S",
+    "初粘力强于HP-120S",
+    "较高贴附温度下油墨稳定性优异、抗晕染"
+   ],
+   "benefits_en": [
+    "Survives autoclave processes (10MPa, up to 200℃) with barcodes remaining scannable, enabling accurate inventory tracking",
+    "Printed information and barcodes remain intact through the reheat process"
+   ],
+   "benefits_zh": [
+    "可耐受蒸压工艺（10MPa、最高200℃），条码仍可扫描，实现准确的库存跟踪",
+    "打印信息和条码在再加热过程中保持完好"
+   ],
+   "temperature_performance": "Application temperature from room temp to 220℃; maximum heat resistance to 220℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-label/",
+    "https://www.heatprooflabel.com/cases/concrete-01/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-ST200",
+   "name_en": "HP-ST200 HEATPROOF Label for Heat Treatment Process Management",
+   "name_zh": "HP-ST200 HEATPROOF 热处理过程管理标签",
+   "facestock_en": "PI core material (Polyimide)",
+   "facestock_zh": "PI（聚酰亚胺）基材",
+   "adhesive_en": "Pressure-sensitive adhesive (category-level statement on Labels for Heat Treatment page)",
+   "adhesive_zh": "压敏胶（“热处理用标签”品类页的整体说明）",
+   "application_en": "Heat treatment process management (apply-cold-then-heat): barcode tracking through reheat processes up to 300℃ such as annealing, homogenizing and reflow. Industries: steel, aluminum, ceramic, automotive, electronics, casting/jig and asset management.",
+   "application_zh": "热处理过程管理标签（冷贴后加热）：可在最高300℃的退火、均质化、回流焊等再加热工序中进行条码跟踪。行业：钢铁、铝业、陶瓷、汽车、电子、铸造/治具及资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Ceramic",
+    "Automotive",
+    "Electronics",
+    "Casting"
+   ],
+   "features_en": [
+    "Maximum heat resistance to 300℃",
+    "Higher chemical resistance",
+    "Stronger initial adhesion",
+    "PI core material",
+    "Excellent ink stability"
+   ],
+   "features_zh": [
+    "最高耐热温度300℃",
+    "更高的耐化学性",
+    "更强的初粘力",
+    "PI基材",
+    "油墨稳定性优异"
+   ],
+   "benefits_en": [
+    "Printed information and barcodes remain intact through the reheat process; scan barcodes into and out of reheat furnaces"
+   ],
+   "benefits_zh": [
+    "打印信息和条码在再加热过程中保持完好；进出再加热炉均可扫描条码"
+   ],
+   "temperature_performance": "Maximum heat resistance to 300℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-label/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-160",
+   "name_en": "HP-160 HEATPROOF Label for Heat Treatment Process Management",
+   "name_zh": "HP-160 HEATPROOF 热处理过程管理标签",
+   "facestock_en": "",
+   "facestock_zh": "",
+   "adhesive_en": "Pressure-sensitive adhesive (category-level statement on Labels for Heat Treatment page)",
+   "adhesive_zh": "压敏胶（“热处理用标签”品类页的整体说明）",
+   "application_en": "Heat treatment process management (apply-cold-then-heat): applied from room temperature and tracked through reheat processes up to 300℃ such as annealing, homogenizing and reflow. Industries: steel, aluminum, ceramic, automotive, electronics, casting/jig and asset management.",
+   "application_zh": "热处理过程管理标签（冷贴后加热）：室温贴附，可在最高300℃的退火、均质化、回流焊等再加热工序中跟踪产品。行业：钢铁、铝业、陶瓷、汽车、电子、铸造/治具及资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Ceramic",
+    "Automotive",
+    "Electronics",
+    "Casting"
+   ],
+   "features_en": [
+    "Maximum heat resistance to 300℃",
+    "Application temperature from room temp to 300℃",
+    "Exceptionally strong initial adhesion",
+    "Excellent ink stability"
+   ],
+   "features_zh": [
+    "最高耐热温度300℃",
+    "贴附温度范围：室温至300℃",
+    "初粘力特别强",
+    "油墨稳定性优异"
+   ],
+   "benefits_en": [
+    "Printed information and barcodes remain intact through the reheat process; scan barcodes into and out of reheat furnaces"
+   ],
+   "benefits_zh": [
+    "打印信息和条码在再加热过程中保持完好；进出再加热炉均可扫描条码"
+   ],
+   "temperature_performance": "Application temperature from room temp to 300℃; maximum heat resistance to 300℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-label/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-150N",
+   "name_en": "HP-150N HEATPROOF Label for Heat Treatment Process Management",
+   "name_zh": "HP-150N HEATPROOF 热处理过程管理标签",
+   "facestock_en": "",
+   "facestock_zh": "",
+   "adhesive_en": "Pressure-sensitive adhesive (category-level statement on Labels for Heat Treatment page)",
+   "adhesive_zh": "压敏胶（“热处理用标签”品类页的整体说明）",
+   "application_en": "Heat treatment process management (apply-cold-then-heat): applied from room temperature and tracked through reheat processes up to 350℃. Case study: identification of injection casting molds through 200〜400℃ multi-cycle heating (used alongside HP-120S/HP-350N). Industries: steel, aluminum, ceramic, automotive, electronics, casting/jig and asset management.",
+   "application_zh": "热处理过程管理标签（冷贴后加热）：室温贴附，可在最高350℃的再加热工序中跟踪产品。应用案例：注射铸造模具在200〜400℃多次循环加热中的标识管理（与HP-120S/HP-350N配合使用）。行业：钢铁、铝业、陶瓷、汽车、电子、铸造/治具及资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Ceramic",
+    "Automotive",
+    "Electronics",
+    "Casting"
+   ],
+   "features_en": [
+    "Maximum heat resistance to 350℃",
+    "Application temperature from room temp to 350℃",
+    "Strong initial adhesion",
+    "Excellent ink stability"
+   ],
+   "features_zh": [
+    "最高耐热温度350℃",
+    "贴附温度范围：室温至350℃",
+    "初粘力强",
+    "油墨稳定性优异"
+   ],
+   "benefits_en": [
+    "Printed information and barcodes remain intact through the reheat process; scan barcodes into and out of reheat furnaces"
+   ],
+   "benefits_zh": [
+    "打印信息和条码在再加热过程中保持完好；进出再加热炉均可扫描条码"
+   ],
+   "temperature_performance": "Application temperature from room temp to 350℃; maximum heat resistance to 350℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-label/",
+    "https://www.heatprooflabel.com/cases/mold-01/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-360",
+   "name_en": "HP-360 HEATPROOF Label for Heat Treatment Process Management",
+   "name_zh": "HP-360 HEATPROOF 热处理过程管理标签",
+   "facestock_en": "",
+   "facestock_zh": "",
+   "adhesive_en": "Pressure-sensitive adhesive (category-level statement on Labels for Heat Treatment page); stronger adhesion over 500℃",
+   "adhesive_zh": "压敏胶（“热处理用标签”品类页的整体说明）；超过500℃时粘附力更强",
+   "application_en": "Heat treatment process management (apply-cold-then-heat): applied from room temperature and tracked through reheat processes up to 600℃. Case study: aluminum billet homogenizing (applied at room temperature, then 550℃ x 12 hours, used alongside HP-350N/HP-380N+). Industries: steel, aluminum, ceramic, automotive, electronics, casting/jig and asset management.",
+   "application_zh": "热处理过程管理标签（冷贴后加热）：室温贴附，可在最高600℃的再加热工序中跟踪产品。应用案例：铝坯均质化工艺（室温贴附后550℃ x 12小时，与HP-350N/HP-380N+配合使用）。行业：钢铁、铝业、陶瓷、汽车、电子、铸造/治具及资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Ceramic",
+    "Automotive",
+    "Electronics",
+    "Casting"
+   ],
+   "features_en": [
+    "Maximum heat resistance to 600℃",
+    "Stronger adhesion over 500℃",
+    "Application temperature from room temp to 400℃",
+    "Excellent ink stability"
+   ],
+   "features_zh": [
+    "最高耐热温度600℃",
+    "超过500℃时粘附力更强",
+    "贴附温度范围：室温至400℃",
+    "油墨稳定性优异"
+   ],
+   "benefits_en": [
+    "Printed information and barcodes remain intact through the reheat process; scan barcodes into and out of reheat furnaces"
+   ],
+   "benefits_zh": [
+    "打印信息和条码在再加热过程中保持完好；进出再加热炉均可扫描条码"
+   ],
+   "temperature_performance": "Application temperature from room temp to 400℃; maximum heat resistance to 600℃; stronger adhesion over 500℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-label/",
+    "https://www.heatprooflabel.com/cases/aluminum-02/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-380N+",
+   "name_en": "HP-380N+ HEATPROOF Label for Heat Treatment Process Management",
+   "name_zh": "HP-380N+ HEATPROOF 热处理过程管理标签",
+   "facestock_en": "Thinner, softer AL (aluminum) core for application on rough surfaces",
+   "facestock_zh": "更薄更软的AL（铝）基材，适合贴附于粗糙表面",
+   "adhesive_en": "Unique 2 layer adhesive (pressure-sensitive per category-level statement)",
+   "adhesive_zh": "独特的双层胶粘剂（品类页整体说明为压敏胶）",
+   "application_en": "Heat treatment process management (apply-cold-then-heat): tracking through reheat processes up to 600℃, suitable for rough surfaces. Case study: aluminum billet homogenizing (applied at room temperature, then 550℃ x 12 hours, used alongside HP-350N/HP-360). Industries: steel, aluminum, ceramic, automotive, electronics, casting/jig and asset management.",
+   "application_zh": "热处理过程管理标签（冷贴后加热）：可在最高600℃的再加热工序中跟踪产品，适用于粗糙表面。应用案例：铝坯均质化工艺（室温贴附后550℃ x 12小时，与HP-350N/HP-360配合使用）。行业：钢铁、铝业、陶瓷、汽车、电子、铸造/治具及资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Ceramic",
+    "Automotive",
+    "Electronics",
+    "Casting"
+   ],
+   "features_en": [
+    "Maximum heat resistance to 600℃",
+    "Strong initial adhesion",
+    "Thinner, softer AL core for application on rough surfaces",
+    "Unique 2 layer adhesive",
+    "Excellent ink stability"
+   ],
+   "features_zh": [
+    "最高耐热温度600℃",
+    "初粘力强",
+    "更薄更软的AL基材，可贴附于粗糙表面",
+    "独特的双层胶粘剂",
+    "油墨稳定性优异"
+   ],
+   "benefits_en": [
+    "Can be applied on rough surfaces where standard labels struggle",
+    "Printed information and barcodes remain intact through the reheat process"
+   ],
+   "benefits_zh": [
+    "可贴附于普通标签难以附着的粗糙表面",
+    "打印信息和条码在再加热过程中保持完好"
+   ],
+   "temperature_performance": "Maximum heat resistance to 600℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-label/",
+    "https://www.heatprooflabel.com/cases/aluminum-02/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-800A",
+   "name_en": "HP-800A HEATPROOF Label for Heat Treatment Process Management",
+   "name_zh": "HP-800A HEATPROOF 热处理过程管理标签",
+   "facestock_en": "",
+   "facestock_zh": "",
+   "adhesive_en": "Unique 2 layer adhesive (pressure-sensitive per category-level statement)",
+   "adhesive_zh": "独特的双层胶粘剂（品类页整体说明为压敏胶）",
+   "application_en": "Heat treatment process management (apply-cold-then-heat): barcode tracking through reheat processes up to 800℃ such as annealing and homogenizing. Industries: steel, aluminum, ceramic, automotive, electronics, casting/jig and asset management.",
+   "application_zh": "热处理过程管理标签（冷贴后加热）：可在最高800℃的退火、均质化等再加热工序中进行条码跟踪。行业：钢铁、铝业、陶瓷、汽车、电子、铸造/治具及资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Ceramic",
+    "Automotive",
+    "Electronics",
+    "Casting"
+   ],
+   "features_en": [
+    "Maximum heat resistance to 800℃",
+    "Strong initial adhesion",
+    "Unique 2 layer adhesive"
+   ],
+   "features_zh": [
+    "最高耐热温度800℃",
+    "初粘力强",
+    "独特的双层胶粘剂"
+   ],
+   "benefits_en": [
+    "Printed information and barcodes remain intact through the reheat process; scan barcodes into and out of reheat furnaces"
+   ],
+   "benefits_zh": [
+    "打印信息和条码在再加热过程中保持完好；进出再加热炉均可扫描条码"
+   ],
+   "temperature_performance": "Maximum heat resistance to 800℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-label/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-800C",
+   "name_en": "HP-800C HEATPROOF Label for Heat Treatment Process Management",
+   "name_zh": "HP-800C HEATPROOF 热处理过程管理标签",
+   "facestock_en": "",
+   "facestock_zh": "",
+   "adhesive_en": "Pressure-sensitive adhesive (category-level statement on Labels for Heat Treatment page)",
+   "adhesive_zh": "压敏胶（“热处理用标签”品类页的整体说明）",
+   "application_en": "Heat treatment process management (apply-cold-then-heat): applied from room temperature and tracked through reheat processes up to 800℃. Industries: steel, aluminum, ceramic, automotive, electronics, casting/jig and asset management.",
+   "application_zh": "热处理过程管理标签（冷贴后加热）：室温贴附，可在最高800℃的再加热工序中跟踪产品。行业：钢铁、铝业、陶瓷、汽车、电子、铸造/治具及资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Ceramic",
+    "Automotive",
+    "Electronics",
+    "Casting"
+   ],
+   "features_en": [
+    "Maximum heat resistance to 800℃",
+    "Application temperature from room temp to 400℃"
+   ],
+   "features_zh": [
+    "最高耐热温度800℃",
+    "贴附温度范围：室温至400℃"
+   ],
+   "benefits_en": [
+    "Printed information and barcodes remain intact through the reheat process; scan barcodes into and out of reheat furnaces"
+   ],
+   "benefits_zh": [
+    "打印信息和条码在再加热过程中保持完好；进出再加热炉均可扫描条码"
+   ],
+   "temperature_performance": "Application temperature from room temp to 400℃; maximum heat resistance to 800℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-label/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-CBR CX2",
+   "name_en": "HP-CBR CX2 HEATPROOF Label for Heat Treatment Process Management",
+   "name_zh": "HP-CBR CX2 HEATPROOF 热处理过程管理标签",
+   "facestock_en": "",
+   "facestock_zh": "",
+   "adhesive_en": "Pressure-sensitive adhesive (category-level statement on Labels for Heat Treatment page)",
+   "adhesive_zh": "压敏胶（“热处理用标签”品类页的整体说明）",
+   "application_en": "Heat treatment process management (apply-cold-then-heat) up to 1200℃; after the baking process the label becomes integrated with the substrate surface. Case studies: management of ceramic products (alumina, glass, carbon) and laboratory crucibles at 1,000℃ for several to a dozen hours (used alongside HP-CBR HB). Industries: ceramic, steel, aluminum, electronics, casting/jig and asset management.",
+   "application_zh": "热处理过程管理标签（冷贴后加热），最高耐热1200℃；经烧成工序后标签与基材表面融为一体。应用案例：陶瓷产品（氧化铝、玻璃、碳）及实验室坩埚在1,000℃下数小时至十余小时的管理（与HP-CBR HB配合使用）。行业：陶瓷、钢铁、铝业、电子、铸造/治具及资产管理。",
+   "industries": [
+    "Ceramic",
+    "Steel",
+    "Aluminum",
+    "Electronics",
+    "Casting"
+   ],
+   "features_en": [
+    "Maximum heat resistance to 1200℃",
+    "High flexibility",
+    "After baking process, label becomes integrated with substrate surface",
+    "Good durability against scratching, pickling, impact, and multiple heat cycles"
+   ],
+   "features_zh": [
+    "最高耐热温度1200℃",
+    "柔韧性高",
+    "经烧成工序后标签与基材表面融为一体",
+    "对刮擦、酸洗、冲击及多次热循环具有良好耐久性"
+   ],
+   "benefits_en": [
+    "Identification survives multiple heat cycles, avoiding the need to re-identify products",
+    "Prevent lost or misidentified products with automated barcode identification"
+   ],
+   "benefits_zh": [
+    "标识可经受多次热循环，无需重新标识产品",
+    "通过自动条码识别防止产品丢失或误识别"
+   ],
+   "temperature_performance": "Maximum heat resistance to 1200℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-label/",
+    "https://www.heatprooflabel.com/cases/ceramics-01/",
+    "https://www.heatprooflabel.com/cases/ceramics-02/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-CBR HB",
+   "name_en": "HP-CBR HB HEATPROOF Label for Heat Treatment Process Management",
+   "name_zh": "HP-CBR HB HEATPROOF 热处理过程管理标签",
+   "facestock_en": "",
+   "facestock_zh": "",
+   "adhesive_en": "Pressure-sensitive adhesive (category-level statement on Labels for Heat Treatment page)",
+   "adhesive_zh": "压敏胶（“热处理用标签”品类页的整体说明）",
+   "application_en": "Heat treatment process management (apply-cold-then-heat) up to 1200℃, including annealing in non-oxygen atmospheres; after the baking process the label becomes integrated with the substrate surface. Case studies: management of ceramic products (alumina, glass, carbon) and laboratory crucibles at 1,000℃ (used alongside HP-CBR CX2). Industries: ceramic, steel, aluminum, electronics, casting/jig and asset management.",
+   "application_zh": "热处理过程管理标签（冷贴后加热），最高耐热1200℃，包括无氧气氛退火工艺；经烧成工序后标签与基材表面融为一体。应用案例：陶瓷产品（氧化铝、玻璃、碳）及实验室坩埚在1,000℃下的管理（与HP-CBR CX2配合使用）。行业：陶瓷、钢铁、铝业、电子、铸造/治具及资产管理。",
+   "industries": [
+    "Ceramic",
+    "Steel",
+    "Aluminum",
+    "Electronics",
+    "Casting"
+   ],
+   "features_en": [
+    "Maximum heat resistance to 1200℃",
+    "Good scanability after annealing in non-Oxygen atmosphere",
+    "High flexibility",
+    "After baking process, label becomes integrated with substrate surface",
+    "Good durability against scratching, pickling, impact, and multiple heat cycles"
+   ],
+   "features_zh": [
+    "最高耐热温度1200℃",
+    "无氧气氛退火后仍具良好可扫描性",
+    "柔韧性高",
+    "经烧成工序后标签与基材表面融为一体",
+    "对刮擦、酸洗、冲击及多次热循环具有良好耐久性"
+   ],
+   "benefits_en": [
+    "Barcodes remain scannable even after annealing in non-oxygen atmospheres",
+    "Identification survives multiple heat cycles, avoiding the need to re-identify products"
+   ],
+   "benefits_zh": [
+    "即使在无氧气氛退火后条码仍可扫描",
+    "标识可经受多次热循环，无需重新标识产品"
+   ],
+   "temperature_performance": "Maximum heat resistance to 1200℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-label/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-label/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-label/",
+    "https://www.heatprooflabel.com/cases/ceramics-01/",
+    "https://www.heatprooflabel.com/cases/ceramics-02/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-ST40",
+   "name_en": "HP-ST40 HEATPROOF Tag for Heat Treatment Process Management",
+   "name_zh": "HP-ST40 HEATPROOF 热处理过程管理标牌（挂签）",
+   "facestock_en": "Tag stock (no adhesive)",
+   "facestock_zh": "标牌材料（无胶）",
+   "adhesive_en": "None (tie-on tag)",
+   "adhesive_zh": "无胶（系挂/机械固定式标牌）",
+   "application_en": "Process management tag applied with screws, nails, spot welding or stud welding; colored tags for identification in processes up to 80℃, with outdoor use possible. Industries: steel, aluminum, galvanizing, coating, ceramic, asset management.",
+   "application_zh": "过程管理标牌，可用螺钉、钉子、点焊或螺柱焊固定；彩色标牌可用于最高80℃的工序标识，也可户外使用。行业：钢铁、铝业、镀锌、涂装、陶瓷、资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Galvanizing",
+    "Coating",
+    "Ceramic",
+    "Asset Management"
+   ],
+   "features_en": [
+    "Maximum heat resistance up to 80℃",
+    "Colored tags available",
+    "Good outdoor weather resistance",
+    "Tear resistant",
+    "Higher chemical resistance",
+    "No adhesive; applied with screws, nails, spot welding or stud welding"
+   ],
+   "features_zh": [
+    "最高耐热温度80℃",
+    "可提供彩色标牌",
+    "户外耐候性好",
+    "抗撕裂",
+    "较高的耐化学性",
+    "无胶；可用螺钉、钉子、点焊或螺柱焊固定"
+   ],
+   "benefits_en": [
+    "Variable information can be printed on site using standard thermal transfer printers"
+   ],
+   "benefits_zh": [
+    "可用标准热转印打印机现场打印可变信息"
+   ],
+   "temperature_performance": "Maximum heat resistance up to 80℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-tag/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-ST30",
+   "name_en": "HP-ST30 HEATPROOF Tag for Heat Treatment Process Management",
+   "name_zh": "HP-ST30 HEATPROOF 热处理过程管理标牌（挂签）",
+   "facestock_en": "Tag stock (no adhesive)",
+   "facestock_zh": "标牌材料（无胶）",
+   "adhesive_en": "None (tie-on tag)",
+   "adhesive_zh": "无胶（系挂/机械固定式标牌）",
+   "application_en": "Process management tag applied with screws, nails, spot welding or stud welding; colored tags for identification in processes up to 250℃, with outdoor use possible. Industries: steel, aluminum, galvanizing, coating, ceramic, asset management.",
+   "application_zh": "过程管理标牌，可用螺钉、钉子、点焊或螺柱焊固定；彩色标牌可用于最高250℃的工序标识，也可户外使用。行业：钢铁、铝业、镀锌、涂装、陶瓷、资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Galvanizing",
+    "Coating",
+    "Ceramic",
+    "Asset Management"
+   ],
+   "features_en": [
+    "Maximum heat resistance up to 250℃",
+    "Colored tag available",
+    "Good outdoor weather resistance",
+    "Tear resistant",
+    "Higher chemical resistance",
+    "No adhesive; applied with screws, nails, spot welding or stud welding"
+   ],
+   "features_zh": [
+    "最高耐热温度250℃",
+    "可提供彩色标牌",
+    "户外耐候性好",
+    "抗撕裂",
+    "较高的耐化学性",
+    "无胶；可用螺钉、钉子、点焊或螺柱焊固定"
+   ],
+   "benefits_en": [
+    "Variable information can be printed on site using standard thermal transfer printers"
+   ],
+   "benefits_zh": [
+    "可用标准热转印打印机现场打印可变信息"
+   ],
+   "temperature_performance": "Maximum heat resistance up to 250℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-tag/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-ST20",
+   "name_en": "HP-ST20 HEATPROOF Tag for Heat Treatment Process Management",
+   "name_zh": "HP-ST20 HEATPROOF 热处理过程管理标牌（挂签）",
+   "facestock_en": "Tag stock (no adhesive)",
+   "facestock_zh": "标牌材料（无胶）",
+   "adhesive_en": "None (tie-on tag)",
+   "adhesive_zh": "无胶（系挂/机械固定式标牌）",
+   "application_en": "Process management tag applied with screws, nails, spot welding or stud welding; colored tags for identification in processes up to 300℃, with outdoor use possible. Industries: steel, aluminum, galvanizing, coating, ceramic, asset management.",
+   "application_zh": "过程管理标牌，可用螺钉、钉子、点焊或螺柱焊固定；彩色标牌可用于最高300℃的工序标识，也可户外使用。行业：钢铁、铝业、镀锌、涂装、陶瓷、资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Galvanizing",
+    "Coating",
+    "Ceramic",
+    "Asset Management"
+   ],
+   "features_en": [
+    "Maximum heat resistance up to 300℃",
+    "Colored tags available",
+    "Good outdoor weather resistance",
+    "Tear resistant",
+    "Higher chemical resistance",
+    "No adhesive; applied with screws, nails, spot welding or stud welding"
+   ],
+   "features_zh": [
+    "最高耐热温度300℃",
+    "可提供彩色标牌",
+    "户外耐候性好",
+    "抗撕裂",
+    "较高的耐化学性",
+    "无胶；可用螺钉、钉子、点焊或螺柱焊固定"
+   ],
+   "benefits_en": [
+    "Variable information can be printed on site using standard thermal transfer printers"
+   ],
+   "benefits_zh": [
+    "可用标准热转印打印机现场打印可变信息"
+   ],
+   "temperature_performance": "Maximum heat resistance up to 300℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-tag/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-PC10",
+   "name_en": "HP-PC10 HEATPROOF Tag for Coating Process Management",
+   "name_zh": "HP-PC10 HEATPROOF 涂装工艺管理标牌（挂签）",
+   "facestock_en": "Tag stock (no adhesive)",
+   "facestock_zh": "标牌材料（无胶）",
+   "adhesive_en": "None (tie-on tag)",
+   "adhesive_zh": "无胶（系挂/机械固定式标牌）",
+   "application_en": "Process management tag suitable for coating process management up to 300℃. Case study: ID management of machine accessories and automotive parts through pre-treatment (cleansing and pickling), coating, and 250℃ x 30 min bake (used alongside HP-T40). Industries: coating, steel, aluminum, galvanizing, automotive, asset management.",
+   "application_zh": "过程管理标牌，适用于最高300℃的涂装工艺管理。应用案例：机械配件及汽车零部件经前处理（清洗和酸洗）、涂装、250℃ x 30分钟烘烤全过程的标识管理（与HP-T40配合使用）。行业：涂装、钢铁、铝业、镀锌、汽车、资产管理。",
+   "industries": [
+    "Coating",
+    "Steel",
+    "Aluminum",
+    "Galvanizing",
+    "Automotive",
+    "Asset Management"
+   ],
+   "features_en": [
+    "Maximum heat resistance up to 300℃",
+    "Higher chemical resistance",
+    "Suitable for coating process management",
+    "No adhesive; applied with screws, nails, spot welding or stud welding"
+   ],
+   "features_zh": [
+    "最高耐热温度300℃",
+    "较高的耐化学性",
+    "适用于涂装工艺管理",
+    "无胶；可用螺钉、钉子、点焊或螺柱焊固定"
+   ],
+   "benefits_en": [
+    "Identify products through powder coating processes, preventing lost or mixed products",
+    "Variable information can be printed on site using standard thermal transfer printers"
+   ],
+   "benefits_zh": [
+    "可在粉末涂装工序中识别产品，防止产品丢失或混料",
+    "可用标准热转印打印机现场打印可变信息"
+   ],
+   "temperature_performance": "Maximum heat resistance up to 300℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-tag/",
+    "https://www.heatprooflabel.com/cases/paint-01/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-T40",
+   "name_en": "HP-T40 HEATPROOF Tag for Heat Treatment Process Management",
+   "name_zh": "HP-T40 HEATPROOF 热处理过程管理标牌（挂签）",
+   "facestock_en": "Tag stock (no adhesive)",
+   "facestock_zh": "标牌材料（无胶）",
+   "adhesive_en": "None (tie-on tag)",
+   "adhesive_zh": "无胶（系挂/机械固定式标牌）",
+   "application_en": "Process management tag for heat treatment up to 400℃, applied with screws, nails, spot welding or stud welding. Case study: ID management of machine accessories and automotive parts through pre-treatment (cleansing and pickling), coating, and 250℃ x 30 min bake (used alongside HP-PC10). Industries: steel, aluminum, galvanizing, coating, automotive, asset management.",
+   "application_zh": "热处理过程管理标牌，最高耐热400℃，可用螺钉、钉子、点焊或螺柱焊固定。应用案例：机械配件及汽车零部件经前处理（清洗和酸洗）、涂装、250℃ x 30分钟烘烤全过程的标识管理（与HP-PC10配合使用）。行业：钢铁、铝业、镀锌、涂装、汽车、资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Galvanizing",
+    "Coating",
+    "Automotive",
+    "Asset Management"
+   ],
+   "features_en": [
+    "Maximum heat resistance up to 400℃",
+    "Tag will not change color after high temperature exposure",
+    "Good outdoor weather resistance",
+    "Tear resistant",
+    "Higher chemical resistance",
+    "Print and cut in thermal transfer printer",
+    "No adhesive; applied with screws, nails, spot welding or stud welding"
+   ],
+   "features_zh": [
+    "最高耐热温度400℃",
+    "高温暴露后标牌不变色",
+    "户外耐候性好",
+    "抗撕裂",
+    "较高的耐化学性",
+    "可在热转印打印机中打印并切割",
+    "无胶；可用螺钉、钉子、点焊或螺柱焊固定"
+   ],
+   "benefits_en": [
+    "Tag stays readable after high temperature exposure (no color change)",
+    "Variable information can be printed on site using standard thermal transfer printers"
+   ],
+   "benefits_zh": [
+    "高温暴露后标牌仍清晰可读（不变色）",
+    "可用标准热转印打印机现场打印可变信息"
+   ],
+   "temperature_performance": "Maximum heat resistance up to 400℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-tag/",
+    "https://www.heatprooflabel.com/cases/paint-01/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-T42",
+   "name_en": "HP-T42 HEATPROOF Tag for Heat Treatment Process Management",
+   "name_zh": "HP-T42 HEATPROOF 热处理过程管理标牌（挂签）",
+   "facestock_en": "Tag stock (no adhesive)",
+   "facestock_zh": "标牌材料（无胶）",
+   "adhesive_en": "None (tie-on tag)",
+   "adhesive_zh": "无胶（系挂/机械固定式标牌）",
+   "application_en": "Process management tag for heat treatment up to 400℃, applied with screws, nails, spot welding or stud welding. Case study: tracking automotive parts heat treatment jigs at 250℃ for several hours (used alongside HP-L80/HP-CBR Tag). Industries: steel, aluminum, galvanizing, coating, automotive, asset management.",
+   "application_zh": "热处理过程管理标牌，最高耐热400℃，可用螺钉、钉子、点焊或螺柱焊固定。应用案例：汽车零部件热处理治具在250℃数小时工艺中的跟踪管理（与HP-L80/HP-CBR Tag配合使用）。行业：钢铁、铝业、镀锌、涂装、汽车、资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Galvanizing",
+    "Coating",
+    "Automotive",
+    "Asset Management"
+   ],
+   "features_en": [
+    "Maximum heat resistance up to 400℃",
+    "Tag will not change color after high temperature exposure",
+    "Good outdoor weather resistance",
+    "Excellent tear resistance (higher than T40)",
+    "Higher chemical resistance",
+    "Print and cut in thermal transfer printer",
+    "No adhesive; applied with screws, nails, spot welding or stud welding"
+   ],
+   "features_zh": [
+    "最高耐热温度400℃",
+    "高温暴露后标牌不变色",
+    "户外耐候性好",
+    "优异的抗撕裂性（高于T40）",
+    "较高的耐化学性",
+    "可在热转印打印机中打印并切割",
+    "无胶；可用螺钉、钉子、点焊或螺柱焊固定"
+   ],
+   "benefits_en": [
+    "Tag stays readable after high temperature exposure (no color change)",
+    "Variable information can be printed on site using standard thermal transfer printers"
+   ],
+   "benefits_zh": [
+    "高温暴露后标牌仍清晰可读（不变色）",
+    "可用标准热转印打印机现场打印可变信息"
+   ],
+   "temperature_performance": "Maximum heat resistance up to 400℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-tag/",
+    "https://www.heatprooflabel.com/cases/car-01/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-M83",
+   "name_en": "HP-M83 HEATPROOF Tag for Heat Treatment Process Management",
+   "name_zh": "HP-M83 HEATPROOF 热处理过程管理标牌（挂签）",
+   "facestock_en": "Tag stock (no adhesive)",
+   "facestock_zh": "标牌材料（无胶）",
+   "adhesive_en": "None (tie-on tag)",
+   "adhesive_zh": "无胶（系挂/机械固定式标牌）",
+   "application_en": "Process management tag for heat treatment up to 850℃, designed to survive pickling/acid baths. Case study: tracking of steel wire coils and bars through pickling (HCl and H2SO4) followed by heat treatment at 800℃ x 10 hours. Industries: steel, aluminum, galvanizing, coating, asset management.",
+   "application_zh": "热处理过程管理标牌，最高耐热850℃，可耐受酸洗/酸浴工序。应用案例：钢丝卷和棒材经酸洗（盐酸和硫酸）后再经800℃ x 10小时热处理的全程跟踪。行业：钢铁、铝业、镀锌、涂装、资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Galvanizing",
+    "Coating",
+    "Asset Management"
+   ],
+   "features_en": [
+    "Maximum heat resistance up to 850℃",
+    "Exceptional durability",
+    "Strong resistance if exposed to pickling process (compared to HP-X82)",
+    "Print and cut in thermal transfer printer",
+    "No adhesive; applied with screws, nails, spot welding or stud welding"
+   ],
+   "features_zh": [
+    "最高耐热温度850℃",
+    "耐久性出色",
+    "对酸洗工序具有更强的耐受性（相比HP-X82）",
+    "可在热转印打印机中打印并切割",
+    "无胶；可用螺钉、钉子、点焊或螺柱焊固定"
+   ],
+   "benefits_en": [
+    "Survives pickling baths and reheat cycles, eliminating the need to re-identify products after these processes",
+    "Eliminate identification errors and lost coils"
+   ],
+   "benefits_zh": [
+    "可耐受酸洗浴和再加热循环，工序后无需重新标识产品",
+    "消除识别错误和线卷丢失问题"
+   ],
+   "temperature_performance": "Maximum heat resistance up to 850℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-tag/",
+    "https://www.heatprooflabel.com/cases/steel-04/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-L80",
+   "name_en": "HP-L80 HEATPROOF Tag for Heat Treatment Process Management",
+   "name_zh": "HP-L80 HEATPROOF 热处理过程管理标牌（挂签）",
+   "facestock_en": "Tag stock (no adhesive)",
+   "facestock_zh": "标牌材料（无胶）",
+   "adhesive_en": "None (tie-on tag)",
+   "adhesive_zh": "无胶（系挂/机械固定式标牌）",
+   "application_en": "Process management tag for heat treatment up to 1000℃, applied with screws, nails, spot welding or stud welding. Case studies: jig management for heat treatment of aluminum parts (500℃ x several hours x multiple cycles) and automotive parts heat treatment jigs at 250℃ (used alongside HP-CBR Tag/HP-T42). Industries: steel, aluminum, galvanizing, coating, automotive, asset management.",
+   "application_zh": "热处理过程管理标牌，最高耐热1000℃，可用螺钉、钉子、点焊或螺柱焊固定。应用案例：铝制零件热处理治具管理（500℃ x 数小时 x 多次循环）、汽车零部件热处理治具（250℃）（与HP-CBR Tag/HP-T42配合使用）。行业：钢铁、铝业、镀锌、涂装、汽车、资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Galvanizing",
+    "Coating",
+    "Automotive",
+    "Asset Management"
+   ],
+   "features_en": [
+    "Maximum heat resistance up to 1000℃",
+    "Good outdoor weather resistance",
+    "Print and cut in thermal transfer printer",
+    "No adhesive; applied with screws, nails, spot welding or stud welding"
+   ],
+   "features_zh": [
+    "最高耐热温度1000℃",
+    "户外耐候性好",
+    "可在热转印打印机中打印并切割",
+    "无胶；可用螺钉、钉子、点焊或螺柱焊固定"
+   ],
+   "benefits_en": [
+    "Maintains identification through multiple heat cycles, eliminating misidentified products",
+    "Variable information can be printed on site using standard thermal transfer printers"
+   ],
+   "benefits_zh": [
+    "在多次热循环中保持标识，消除产品误识别",
+    "可用标准热转印打印机现场打印可变信息"
+   ],
+   "temperature_performance": "Maximum heat resistance up to 1000℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-tag/",
+    "https://www.heatprooflabel.com/cases/aluminum-03/",
+    "https://www.heatprooflabel.com/cases/car-01/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-X82",
+   "name_en": "HP-X82 HEATPROOF Tag for Heat Treatment Process Management",
+   "name_zh": "HP-X82 HEATPROOF 热处理过程管理标牌（挂签）",
+   "facestock_en": "Tag stock (no adhesive)",
+   "facestock_zh": "标牌材料（无胶）",
+   "adhesive_en": "None (tie-on tag)",
+   "adhesive_zh": "无胶（系挂/机械固定式标牌）",
+   "application_en": "Process management tag for heat treatment up to 1000℃, designed to survive pickling processes; applied with screws, nails, spot welding or stud welding. Category applications include steel annealing, galvanizing process management, and coating processes. Industries: steel, aluminum, galvanizing, coating, asset management.",
+   "application_zh": "热处理过程管理标牌，最高耐热1000℃，可耐受酸洗工序；可用螺钉、钉子、点焊或螺柱焊固定。品类应用包括钢材退火、镀锌工艺管理和涂装工艺。行业：钢铁、铝业、镀锌、涂装、资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Galvanizing",
+    "Coating",
+    "Asset Management"
+   ],
+   "features_en": [
+    "Maximum heat resistance up to 1000℃",
+    "Long term durability after attachment",
+    "Strong resistance against pickling process",
+    "Print and cut in thermal transfer printer",
+    "No adhesive; applied with screws, nails, spot welding or stud welding"
+   ],
+   "features_zh": [
+    "最高耐热温度1000℃",
+    "安装后具有长期耐久性",
+    "对酸洗工序具有很强的耐受性",
+    "可在热转印打印机中打印并切割",
+    "无胶；可用螺钉、钉子、点焊或螺柱焊固定"
+   ],
+   "benefits_en": [
+    "Survives reheat cycles, pickling baths, acid baths, or galvanizing, eliminating the need to re-identify products after these processes"
+   ],
+   "benefits_zh": [
+    "可耐受再加热循环、酸洗浴、酸浴或镀锌工序，工序后无需重新标识产品"
+   ],
+   "temperature_performance": "Maximum heat resistance up to 1000℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-tag/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-L90",
+   "name_en": "HP-L90 HEATPROOF Tag for Heat Treatment Process Management",
+   "name_zh": "HP-L90 HEATPROOF 热处理过程管理标牌（挂签）",
+   "facestock_en": "Tag stock (no adhesive)",
+   "facestock_zh": "标牌材料（无胶）",
+   "adhesive_en": "None (tie-on tag)",
+   "adhesive_zh": "无胶（系挂/机械固定式标牌）",
+   "application_en": "Process management tag for heat treatment up to 1200℃; can be stud welded, spot welded, or nailed (nail gun application) to steel products, including attachment to HOT products at temperatures from room temperature up to 800℃ (apply-to-hot possible). Case study: forged steel products tagged from room temp to 800℃, then heat treated at 1100℃ x 18 hours with barcodes remaining scannable. Industries: steel, aluminum, galvanizing, asset management.",
+   "application_zh": "热处理过程管理标牌，最高耐热1200℃；可通过螺柱焊、点焊或射钉（钉枪）固定在钢材产品上，包括在室温至800℃的高温产品上直接安装（可热装）。应用案例：锻造钢材在室温至800℃下挂牌，随后经1100℃ x 18小时热处理后条码仍可扫描。行业：钢铁、铝业、镀锌、资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Galvanizing",
+    "Asset Management"
+   ],
+   "features_en": [
+    "Maximum heat resistance up to 1200℃",
+    "Long term durability after attachment",
+    "Print and cut in thermal transfer printer",
+    "Can be attached at temperatures from room temperature to 800℃ (hot attachment)",
+    "No adhesive; stud welded, spot welded, or nailed (nail gun application)"
+   ],
+   "features_zh": [
+    "最高耐热温度1200℃",
+    "安装后具有长期耐久性",
+    "可在热转印打印机中打印并切割",
+    "可在室温至800℃温度范围内安装（可热装）",
+    "无胶；可螺柱焊、点焊或射钉（钉枪）固定"
+   ],
+   "benefits_en": [
+    "Survives repeated heat cycles avoiding the need to re-identify products; remarking is not necessary",
+    "Accurate product tracking through the complete process using scannable barcodes"
+   ],
+   "benefits_zh": [
+    "可经受反复热循环，无需重新标识产品，无需重新打标",
+    "通过可扫描条码实现全流程准确的产品跟踪"
+   ],
+   "temperature_performance": "Maximum heat resistance up to 1200℃; attachment from room temperature to 800℃; case study: 1100℃ x 18 hours heat treatment",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-tag/",
+    "https://www.heatprooflabel.com/cases/steel-05/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-CBR Tag",
+   "name_en": "HP-CBR Tag HEATPROOF Coated Steel Tag for Heat Treatment Process Management",
+   "name_zh": "HP-CBR Tag HEATPROOF 涂层钢制热处理过程管理标牌",
+   "facestock_en": "Coated steel tag (no adhesive)",
+   "facestock_zh": "涂层钢制标牌（无胶）",
+   "adhesive_en": "None (tie-on tag)",
+   "adhesive_zh": "无胶（系挂/机械固定式标牌）",
+   "application_en": "Coated steel process management tag for heat treatment up to 1000℃, applied with screws, nails, spot welding or stud welding. Case studies: jig management for heat treatment of aluminum parts (500℃ x several hours x multiple cycles) and automotive parts heat treatment jigs at 250℃ (used alongside HP-L80/HP-T42). Industries: steel, aluminum, galvanizing, coating, automotive, ceramic, asset management.",
+   "application_zh": "涂层钢制热处理过程管理标牌，最高耐热1000℃，可用螺钉、钉子、点焊或螺柱焊固定。应用案例：铝制零件热处理治具管理（500℃ x 数小时 x 多次循环）、汽车零部件热处理治具（250℃）（与HP-L80/HP-T42配合使用）。行业：钢铁、铝业、镀锌、涂装、汽车、陶瓷、资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Galvanizing",
+    "Coating",
+    "Automotive",
+    "Ceramic",
+    "Asset Management"
+   ],
+   "features_en": [
+    "Maximum heat resistance up to 1000℃",
+    "Coated steel tag provides exceptional durability",
+    "Superior chemical resistance",
+    "Superior scratch resistance",
+    "No adhesive; applied with screws, nails, spot welding or stud welding"
+   ],
+   "features_zh": [
+    "最高耐热温度1000℃",
+    "涂层钢制标牌，耐久性出色",
+    "优异的耐化学性",
+    "优异的抗刮擦性",
+    "无胶；可用螺钉、钉子、点焊或螺柱焊固定"
+   ],
+   "benefits_en": [
+    "Maintains identification through multiple heat cycles and harsh handling, eliminating misidentified products"
+   ],
+   "benefits_zh": [
+    "在多次热循环和恶劣搬运环境中保持标识，消除产品误识别"
+   ],
+   "temperature_performance": "Maximum heat resistance up to 1000℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-tag/",
+    "https://www.heatprooflabel.com/cases/aluminum-03/",
+    "https://www.heatprooflabel.com/cases/car-01/"
+   ],
+   "last_verified": "2026-07-03"
+  },
+  {
+   "manufacturer": "YS-Tech",
+   "product_code": "HP-CBR OC",
+   "name_en": "HP-CBR OC HEATPROOF Coated Steel Tag for Heat Treatment Process Management",
+   "name_zh": "HP-CBR OC HEATPROOF 涂层钢制热处理过程管理标牌",
+   "facestock_en": "Coated steel tag (no adhesive)",
+   "facestock_zh": "涂层钢制标牌（无胶）",
+   "adhesive_en": "None (tie-on tag)",
+   "adhesive_zh": "无胶（系挂/机械固定式标牌）",
+   "application_en": "Coated steel process management tag for heat treatment up to 1000℃ with chemical and scratch resistance higher than the standard HP-CBR Tag; applied with screws, nails, spot welding or stud welding. Category applications include steel annealing, galvanizing process management, coating processes, and ceramic/porcelain parts identification. Industries: steel, aluminum, galvanizing, coating, ceramic, asset management.",
+   "application_zh": "涂层钢制热处理过程管理标牌，最高耐热1000℃，耐化学性和抗刮擦性高于标准HP-CBR Tag；可用螺钉、钉子、点焊或螺柱焊固定。品类应用包括钢材退火、镀锌工艺管理、涂装工艺及陶瓷/瓷器零件标识。行业：钢铁、铝业、镀锌、涂装、陶瓷、资产管理。",
+   "industries": [
+    "Steel",
+    "Aluminum",
+    "Galvanizing",
+    "Coating",
+    "Ceramic",
+    "Asset Management"
+   ],
+   "features_en": [
+    "Maximum heat resistance up to 1000℃",
+    "Coated steel tag provides exceptional durability",
+    "Superior chemical resistance (higher than HP-CBR Tag)",
+    "Superior scratch resistance (higher than HP-CBR Tag)",
+    "No adhesive; applied with screws, nails, spot welding or stud welding"
+   ],
+   "features_zh": [
+    "最高耐热温度1000℃",
+    "涂层钢制标牌，耐久性出色",
+    "优异的耐化学性（高于HP-CBR Tag）",
+    "优异的抗刮擦性（高于HP-CBR Tag）",
+    "无胶；可用螺钉、钉子、点焊或螺柱焊固定"
+   ],
+   "benefits_en": [
+    "Maintains identification through multiple heat cycles and chemically harsh processes, eliminating misidentified products"
+   ],
+   "benefits_zh": [
+    "在多次热循环和化学腐蚀性工序中保持标识，消除产品误识别"
+   ],
+   "temperature_performance": "Maximum heat resistance up to 1000℃",
+   "certifications": [],
+   "tds_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "catalog_url": "https://www.heatprooflabel.com/products/management-tag/",
+   "data_status": "verified",
+   "sources": [
+    "https://www.heatprooflabel.com/products/management-tag/"
+   ],
+   "last_verified": "2026-07-03"
+  }
+ ]
+}

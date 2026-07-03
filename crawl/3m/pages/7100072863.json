@@ -1,0 +1,118 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000238567/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000238567/",
+ "name": "3M™ Health Care Label Material 7011, Coated White Tamper Indicating Paper, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100072863",
+ "short_description": "3M™ Performance Paper Label Material 7011 provides excellent resistance to flagging on small diameter vials. This label material utilizes 3M™ High Precision Acrylic Adhesive 320, which provides firmness and strength on a variety of surfaces including high surface energy (HSE) and low surface energy (LSE) plastics, as well as, metals.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Designed for use on bottles, bags, LSE and other demanding healthcare applications",
+  "Designed to survive autoclaving, ETO and gamma sterilization while adhered to most surfaces.",
+  "Meets many pharmaceutical industry or manufacturer specifications.",
+  "Utilizes a 43# Densified Kraft liner that help improve application accuracy due to excellent liner release consistency.",
+  "Ideal for application rates up to 250 containers per minute."
+ ],
+ "attributes": {
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "0.9 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.023 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "320 High Tenacity Acrylic"
+  ],
+  "Facestock Material": [
+   "Paper"
+  ],
+  "Facestock Thickness": [
+   "2.3 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.06 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "250 ℉"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Overall Width (Imperial)": [
+   "60 in"
+  ],
+  "Overall Width (Metric)": [
+   "1524 mm"
+  ],
+  "Primary Liner": [
+   "43# Densified Kraft"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "2.5 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.06 mm"
+  ],
+  "Printing Method": [
+   "Flexo"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Litho"
+  ],
+  "Topcoat": [
+   "No"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2399726O/3m-performance-paper-label-material-7011.pdf?&fn=3M-Performance-Paper-Label-Material-7011.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Performance Paper Label 7011",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/I8hpcgXK5R4",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7011",
+  "title": "3M™ Health Care Label Material 7011, Coated White Tamper Indicating Paper, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

@@ -1,0 +1,172 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b5005329192/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b5005329192/",
+ "name": "3M™ Computer-Imprintable Polyester Label Material 7880",
+ "product_number": "",
+ "stock_number": "B5005329192",
+ "short_description": "3M™ Computer-Imprintable Polyester Label Material 7880 is a durable, high performance material that offers excellent thermal stability, moisture resistance and chemical resistance",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Designed specifically for computer printing applications including dot matrix/impact",
+  "#300 adhesive bonds well to a wide variety of substrates including metals, high surface energy (HSE) plastics and low surface energy (LSE) plastics.",
+  "55# densified kraft liner assures consistent die cutting.",
+  "3M™ Label Material 7880 is UL recognized (Files MH11410 and MH16411) and CSA accepted (File 99316). See the UL and CSA listings for details.",
+  "The matte coating resists degradation from scuffing, chemicals, moisture, and wide temperature fluctuations."
+ ],
+ "attributes": {
+  "Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Adhesive Thickness (Metric)": [
+   "0.02 mm"
+  ],
+  "Adhesive Type": [
+   "Solvent Acrylic"
+  ],
+  "Backing Material": [
+   "Polyester"
+  ],
+  "Backing Thickness (Imperial)": [
+   "2.3 mil"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.02 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "High Strength Acrylic Adhesive 300"
+  ],
+  "Facestock Color": [
+   "White"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2.3 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.06 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Celsius)": [
+   "150 ℃"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "300 ℉",
+   "302 ℉"
+  ],
+  "Minimum Operating Temperature (Celsius)": [
+   "-40 ℃"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Nominal Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Overall Length (Imperial)": [
+   "1668 ft"
+  ],
+  "Overall Length (Metric)": [
+   "508.4 m"
+  ],
+  "Overall Width (Imperial)": [
+   "6 in",
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "152.4 mm",
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "55# Densified Kraft"
+  ],
+  "Primary Liner Color": [
+   "Brown"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "3.2 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.08 mm"
+  ],
+  "Printing Method": [
+   "DMI",
+   "Dot Matrix",
+   "Flexo",
+   "Laser",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Tape Thickness (Imperial)": [
+   "3.1 mil"
+  ],
+  "Topcoat": [
+   "TC"
+  ],
+  "Units per Case": [
+   "1.0"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2399678O/3m-computer-imprintable-polyester-label-material-7880.pdf?&fn=3M-Computer-Imprintable-Polyester-Label-Material-7880.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Dot Matrix Label Material 7880",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/lymfupvBU-g",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7880",
+  "title": "3M™ Computer-Imprintable Polyester Label Material 7880",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

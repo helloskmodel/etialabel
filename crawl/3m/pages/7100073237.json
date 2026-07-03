@@ -1,0 +1,126 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000238938/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000238938/",
+ "name": "3M™ Laser Printable Label Material FM01961K, White Polyester, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100073237",
+ "short_description": "3M™ MC Polyester Durable Label Material FM01961K is a white durable, high performance microcavitated polyester materials that offers excellent thermal stability and moisture resistance. This polyester labels utilizes 3M™ Adhesive F2201, which offers high initial tack, good clarity and adhesion when applied at low temperatures and excellent processing characteristics.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Labels with a topcoating specially designed for use with laser printers",
+  "Adhesive dry ingredients are listed by FDA as indirect food contact additives when used in food packaging with minimum opportunity for exposure. See 21 CFR 175.105.",
+  "Can be applied at temperatures as low as 0°F (-18°C).",
+  "Adhesive offers exceptional adhesion to a wide variety of substrates with moderate resistance to water and humidity.",
+  "Liner has a special surface finish to enhance feed and reduce static problems. Ideal for copier and many desktop laser applications."
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Emulsion Acrylic"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.02 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "F2201 Freezer"
+  ],
+  "Facestock Color": [
+   "White"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "302 ℉"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-20 ℉"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "83# Laser"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "5.9 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.15 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Laser",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Topcoat": [
+   "MC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2396562O/3m-mc-polyester-durable-label-material-fm01961k.pdf?&fn=3M-MC-Polyester-Durable-Label-Material-FM01961K.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ MC Polyester Label FM01961K",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/QTqim6qBD/o=",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "FM01961K",
+  "title": "3M™ Laser Printable Label Material FM01961K, White Polyester, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

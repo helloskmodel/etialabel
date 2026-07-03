@@ -1,0 +1,126 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000194157/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000194157/",
+ "name": "3M™ Laser Printable Label Material 7850TL, White Polyester Matte, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100023262",
+ "short_description": "3M™ Durable Label Material 7850HL is a matte radiant white polyester label stock that offers excellent moisture resistance and thermal stability. This label product utilizes 3M™ Adhesive 350 which is a versatile adhesive for label material that offers excellent chemical resistance and holding strength even at high temperatures.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Durable label stock makes for precise, efficient production",
+  "Topcoated polyester provides excellent toner anchorage.",
+  "Receptive to dot matrix printing and is hand writeable.",
+  "The matte coating resists degradation from scuffing, chemicals, moisture, and wide temperature fluctuations.",
+  "Adhesive resists oozing and provides strength on a variety of surfaces"
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Solvent Acrylic"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "1.1 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.03 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "350 High Holding Acrylic"
+  ],
+  "Facestock Color": [
+   "White"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2.3 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.06 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "300 ℉"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "55# Clay-Coated Kraft"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "3.7 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.09 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Laser",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Topcoat": [
+   "TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2399665O/3m-durable-label-material-7850tl.pdf?&fn=3M-Durable-Label-Material-7850TL.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Durable Label Material 7850TL",
+   "url": "https://multimedia.3m.com/mws/media/2399665O/3m-durable-label-material-7850tl.pdf?&fn=3M-Durable-Label-Material-7850TL.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7850TL",
+  "title": "3M™ Laser Printable Label Material 7850TL, White Polyester Matte, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}
