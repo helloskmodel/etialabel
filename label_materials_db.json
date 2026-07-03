@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "name": "Label Material Database",
+    "description": "Database of label material stocks across major manufacturers. All records verified against manufacturer product pages / technical data sheets. English primary; *_zh fields are Chinese translations.",
+    "schema_version": "1.0",
+    "record_fields": [
+      "manufacturer",
+      "product_code",
+      "name_en",
+      "name_zh",
+      "facestock_en",
+      "facestock_zh",
+      "adhesive_en",
+      "adhesive_zh",
+      "application_en",
+      "application_zh",
+      "industries",
+      "features_en",
+      "features_zh",
+      "benefits_en",
+      "benefits_zh",
+      "temperature_performance",
+      "certifications",
+      "tds_url",
+      "catalog_url",
+      "data_status",
+      "sources",
+      "last_verified"
+    ],
+    "dedupe_key": "manufacturer + product_code",
+    "notes": "Schema bootstrapped 2026-07-03 from crawl task field mapping; the referenced 67-record seed file was not present in the repository.",
+    "last_updated": "2026-07-03"
+  },
+  "taxonomy": {
+    "facestock": [
+      "Polyimide",
+      "Polyester (PET)",
+      "Polyethylene naphthalate (PEN)",
+      "Polypropylene (PP)",
+      "Polyethylene (PE)",
+      "Polyolefin",
+      "Vinyl (PVC)",
+      "Polyvinyl fluoride (PVF)",
+      "Polycarbonate",
+      "Polyimide foam",
+      "Paper",
+      "Thermal paper",
+      "Aluminum foil",
+      "Metalized polyester",
+      "Ceramic",
+      "Glass cloth",
+      "Nylon cloth",
+      "Polyester cloth",
+      "Vinyl cloth",
+      "Tamper-evident / destructible film",
+      "Tag stock (no adhesive)",
+      "Fluoropolymer",
+      "Static-dissipative film"
+    ],
+    "adhesive": [
+      "Permanent acrylic",
+      "High-tack permanent acrylic",
+      "Aggressive acrylic",
+      "Removable acrylic",
+      "Repositionable acrylic",
+      "Modified acrylic",
+      "Pressure-sensitive acrylic",
+      "Silicone",
+      "Rubber-based",
+      "Emulsion acrylic",
+      "Solvent acrylic",
+      "Low-temperature acrylic",
+      "High-temperature acrylic",
+      "Low-outgassing acrylic",
+      "None (tie-on tag)",
+      "None (overlaminate)"
+    ],
+    "data_status": ["verified", "unverified", "seed"]
+  },
+  "sources": {
+    "Brady": {
+      "entry": "https://www.bradyid.com/labels",
+      "category_trees": {
+        "by_application": [
+          "https://www.bradyid.com/labels/barcode-labels",
+          "https://www.bradyid.com/labels/circuit-board",
+          "https://www.bradyid.com/labels/datacom",
+          "https://www.bradyid.com/labels/electrical",
+          "https://www.bradyid.com/labels/hazmat-labels",
+          "https://www.bradyid.com/labels/inspection-inventory",
+          "https://www.bradyid.com/labels/laboratory",
+          "https://www.bradyid.com/labels/numbers-letters",
+          "https://www.bradyid.com/labels/pipe-markers",
+          "https://www.bradyid.com/labels/rating-name-plate",
+          "https://www.bradyid.com/labels/safety-labels",
+          "https://www.bradyid.com/labels/wire-cable-labels"
+        ],
+        "by_property": [
+          "aggressive-adhesive",
+          "harsh-environment",
+          "heat-resistant",
+          "laser-markable",
+          "low-temperature",
+          "magnetic",
+          "metallic",
+          "permanent-adhesive",
+          "removable",
+          "repositionable",
+          "self-laminating",
+          "washdown-resistant"
+        ]
+      },
+      "record_granularity": "one record per B-number"
+    },
+    "3M": {
+      "entry": "https://www.3m.com/3M/en_US/p/c/labels/",
+      "filter": "industry: Manufacturing",
+      "record_granularity": "one record per material number"
+    },
+    "Polyonics": {
+      "entry": "https://polyonics.com",
+      "record_granularity": "one record per XF/TF number"
+    },
+    "YS-Tech": {
+      "entry": "http://www.heatprooflabel.com/products",
+      "record_granularity": "one record per product/series"
+    },
+    "LINTEC": {
+      "entries": [
+        "https://www.lintec-global.com/products/label/",
+        "https://www.lintec-global.com/products/industry/",
+        "https://www.lintec-global.com/products/electronics/"
+      ],
+      "record_granularity": "product-series level where no individual codes published"
+    },
+    "Avery Dennison": {
+      "entries": [
+        "https://label.averydennison.com"
+      ],
+      "record_granularity": "one record per Fasson spec (face + adhesive combo)"
+    },
+    "FLEXcon": {
+      "entry": "https://www.flexcon.com",
+      "record_granularity": "one record per product family/number"
+    }
+  },
+  "records": []
+}
