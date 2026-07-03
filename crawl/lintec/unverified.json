@@ -1,0 +1,20 @@
+{
+  "unverified": [
+    {
+      "product_code_or_name": "Removable Labelstock with Low Environmental Impact Hot-Melt Adhesive (launch March 10, 2025)",
+      "reason": "News release announces the product (hot-melt removable adhesive, applicable at -5℃, FDA 21 CFR 175.105 compliant adhesive) but no product code/series name is printed on the page",
+      "url": "https://www.lintec-global.com/topics/newsrelease/2025/250306_a.html"
+    },
+    {
+      "product_code_or_name": "Labelstock products to facilitate container recycling (PP-based synthetic paper facestock type and special water-resistant paper facestock type, launch Nov 1, 2023)",
+      "reason": "News release describes two new labelstocks but prints no product names or codes",
+      "url": "https://www.lintec-global.com/topics/newsrelease/2023/231025_a.html"
+    },
+    {
+      "product_code_or_name": "SRL-0758Red (red variant?)",
+      "reason": "TDS PDF filename 'SRL-0758Red.pdf' is linked from the table row printed as 'SRL-0758'; recorded as SRL-0758 per the printed item No., noting the PDF filename discrepancy here",
+      "url": "https://www.lintec-global.com/products/industry/industrial_use_adhesive_tapes/"
+    }
+  ],
+  "blocked_urls": []
+}

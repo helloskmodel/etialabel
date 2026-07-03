@@ -1,0 +1,169 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b40072262/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b40072262/",
+ "name": "3M™ Overlaminate Label Materials",
+ "product_number": "",
+ "stock_number": "B40072262",
+ "short_description": "3M™ Overlaminate Label Materials are designed for protective overlaminate applications. A durable facestock resists scuffs, abrasions and chemicals. Different adhesives are available for performance in a variety of temperatures, substrates, and environments – including oily metals.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Labels for protective overlaminate applications",
+  "Offers UV resistance and helps prevent color fading",
+  "Facestocks resist abrasion, scuffs and weathering",
+  " Adhesive is formulated for bonding to challenging substrates and offers high temp resistance",
+  "Densified and supercalendered kraft and polyester film liners make for efficient die cutting and auto dispensing"
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Emulsion Acrylic"
+  ],
+  "Application": [
+   "Label"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "0.9 mil",
+   "1.1 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.023 mm",
+   "0.03 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "P1212 Permanent"
+  ],
+  "Facestock Color": [
+   "Clear"
+  ],
+  "Facestock Material": [
+   "Acrylic",
+   "Polycarbonate",
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2 mil",
+   "3 mil",
+   "5 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm",
+   "0.08 mm",
+   "0.13 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "257 ℉"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-20 ℉"
+  ],
+  "Overall Length (Imperial)": [
+   "25 yd",
+   "50 yd"
+  ],
+  "Overall Length (Metric)": [
+   "22.86 m",
+   "45.72 m"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "50# Densified Kraft Paper DK",
+   "Polyester"
+  ],
+  "Primary Liner Color": [
+   "Clear"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "1 mil",
+   "3.2 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.03 mm",
+   "0.08 mm"
+  ],
+  "Product Color": [
+   "Transparent"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Glossy",
+   "Matte",
+   "Rubber"
+  ],
+  "Tape Thickness (Imperial)": [
+   "1.7 mil",
+   "2.9 mil",
+   "4.1 mil",
+   "5.9 mil"
+  ],
+  "Topcoat": [
+   "NTC",
+   "No"
+  ],
+  "Units per Case": [
+   "1.0"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/1577230O/3m-indoor-ul-recognized-durable-label-material-fl02n.pdf?&fn=3M-Indoor-UL-Recognized-Durable-Label-Material-FL02N.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Clear Acrylic Label 8524",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/JC1eWBeJIdw",
+   "contentType": "Regulatory Data Sheet"
+  },
+  {
+   "title": "3M™ Indoor UL Recognized Lexan Label Products FL02N",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/vzysjPdq4ts",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "",
+  "title": "3M™ Overlaminate Label Materials",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}
