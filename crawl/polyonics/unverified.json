@@ -1,0 +1,10 @@
+{
+  "unverified": [
+    {
+      "product_code_or_name": "Technical Data Sheet PDFs (all products)",
+      "reason": "TDS library at /resources/technical-data-sheets/ is gated behind a request form; no direct TDS PDF links are exposed anywhere on the site. Product specs were instead verified from the publicly linked product brochure PDFs on /resources/product-brochures/.",
+      "url": "https://polyonics.com/resources/technical-data-sheets/"
+    }
+  ],
+  "blocked_urls": []
+}

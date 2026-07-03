@@ -1,0 +1,182 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b5005310014/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b5005310014/",
+ "name": "3M™ Tamper Evident Label Material 7381/7866",
+ "product_number": "",
+ "stock_number": "B5005310014",
+ "short_description": "3M™ Tamper-Indicating Label Material 7381/7866 is designed to provide a “void” message in the facestock when removal is attempted. 3M label material 7381/7866 utilizes 3M™ Adhesive 300, which bonds well to a wide variety of substrates including high and low surface energy plastics.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Designed for a range of labeling applications where tamper-resistance is important",
+  "Facestocks designed for reliable use and processing",
+  "Acrylic adhesive is formulated for strength, tack and clarity on a variety of surfaces",
+  "The compact format of the “void” message permits manufacture of small labels (1/2\" x 1-1/4\")",
+  "Adhesive provides high bond to most surfaces",
+  "Durable polyester facestock withstands harsh environments"
+ ],
+ "attributes": {
+  "Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Adhesive Thickness (Metric)": [
+   "0.02 mm"
+  ],
+  "Adhesive Type": [
+   "Emulsion Acrylic",
+   "Solvent Acrylic"
+  ],
+  "Application": [
+   "Cold Storage and Tamper Evident",
+   "Label"
+  ],
+  "Backing Material": [
+   "Polyester"
+  ],
+  "Backing Thickness (Imperial)": [
+   "2 mil"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.02 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "High Strength Acrylic Adhesive 300"
+  ],
+  "Facestock Color": [
+   "White"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Paper",
+   "Print",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Celsius)": [
+   "150 ℃"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "300 ℉",
+   "302 ℉"
+  ],
+  "Minimum Operating Temperature (Celsius)": [
+   "-40 ℃"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Nominal Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Overall Length (Imperial)": [
+   "1668 ft"
+  ],
+  "Overall Length (Metric)": [
+   "508.4 m",
+   "508.41 m"
+  ],
+  "Overall Width (Imperial)": [
+   "4.5 in",
+   "6 in",
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "114.3 mm",
+   "152.4 mm",
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "55# Densified Kraft"
+  ],
+  "Primary Liner Color": [
+   "Brown"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "3.2 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.08 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Thermal Transfer",
+   "UV Inkjet"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Void Gloss"
+  ],
+  "Tape Thickness (Imperial)": [
+   "2.8 mil"
+  ],
+  "Topcoat": [
+   "TC"
+  ],
+  "Units per Case": [
+   "1.0"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2396585O/3m-tamper-indicating-label-material-7381-7866.pdf?&fn=3M-Tamper-Indicating-Label-Material-7381-7866.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Tamper Evident 7935",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/bHEsho_hyGs",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7381",
+  "title": "3M™ Tamper Evident Label Material 7381/7866",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

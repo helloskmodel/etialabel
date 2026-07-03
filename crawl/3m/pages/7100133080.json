@@ -1,0 +1,88 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000309777/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000309777/",
+ "name": "3M™ Sheet and Screen Label Material 7049, Soft White EL Vinyl, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100133080",
+ "short_description": "3M™ Screen Printable Extended Life Vinyl Performance Durable Label Material 7049 is a high performance material that offers good conformability and moisture resistance. This vinyl label stock utilizes 3M™ Adhesive P1400 which is a high performance tackified acrylic designed for use in demanding environments, including outdoor applications.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Facestocks (polyester and vinyl) and adhesives offer heat tolerance, clarity, and UV resistance",
+  "Adhesive offers good UV resistance and excellent adhesion to a wide variety of substrates, including polyolefins.",
+  "Liner provides easy sheet processing and is designed for the ultimate in layflat.",
+  "The backside of this liner is not printable.",
+  "Adhesive dry ingredients are listed by FDA as indirect food contact additives when used in food packaging with minimum opportunity for exposure. See 21 CFR 175.105.",
+  "UL recognized (File MH11410). See the UL listings for details."
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Emulsion Acrylic"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Facestock Material": [
+   "Vinyl"
+  ],
+  "Industries": [
+   "Automotive",
+   "Electronics",
+   "General Industrial",
+   "Military",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Sheet"
+  ],
+  "Overall Length (Imperial)": [
+   "1668 ft"
+  ],
+  "Overall Length (Metric)": [
+   "508.41 m"
+  ],
+  "Overall Width (Imperial)": [
+   "60.5 in"
+  ],
+  "Overall Width (Metric)": [
+   "1524 mm"
+  ],
+  "Printing Method": [
+   "Screen"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2396590O/3m-screen-printable-extended-life-vinyl-performance-durable-label-material-7049.pdf?&fn=3M-Screen-Printable-Extended-Life-Vinyl-Performance-Durable-Label-Material-7049.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ 7049-60 Label",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/FPyGMwxZ0bU",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7049",
+  "title": "3M™ Sheet and Screen Label Material 7049, Soft White EL Vinyl, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

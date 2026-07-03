@@ -1,0 +1,126 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000216271/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000216271/",
+ "name": "3M™ Sheet and Screen Label Material 7950, Clear Polyester, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100048948",
+ "short_description": "3M™ Screen Printable Sheet Polyester Label Material 7950 is a durable, high performance material that offers excellent thermal stability, moisture resistance and chemical resistance. This material utilizes 3M™ Adhesive 300, which has excellent quick tack and also bonds well to a variety of surfaces including LSE plastics.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Facestocks (polyester and vinyl) and adhesives offer heat tolerance, clarity, and UV resistance",
+  "Variable information can be added by the end-user as the material is thermal transfer printable.",
+  "3M adhesive 300 bonds well to a wide variety of substrates including metals, high surface energy (HSE) plastics and low surface energy (LSE) plastics.",
+  "It is ideal for applications requiring high initial adhesion especially to LSE plastic surfaces.",
+  "Liner provides easy sheet processing and is designed for layflat.",
+  "The backside of the liner is not printable.",
+  "UL recognized (File MH11410) and CSA accepted (File 99316). See the UL and CSA listings for details."
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Acrylic"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.02 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "High Strength Acrylic Adhesive 300"
+  ],
+  "Facestock Color": [
+   "Clear"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Sheet"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "302 ℉"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Primary Liner": [
+   "94# Polycoated Kraft"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "6.8 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.17 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Screen",
+   "Thermal Transfer",
+   "UV Screen"
+  ],
+  "Product Color": [
+   "Transparent"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Glossy"
+  ],
+  "Topcoat": [
+   "TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2399698O/3m-screen-printable-sheet-polyester-label-material-7950.pdf?&fn=3M-Screen-Printable-Sheet-Polyester-Label-Material-7950.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Screen Printable Sheet Polyester Label Material 7950",
+   "url": "https://multimedia.3m.com/mws/media/2399698O/3m-screen-printable-sheet-polyester-label-material-7950.pdf?&fn=3M-Screen-Printable-Sheet-Polyester-Label-Material-7950.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7950",
+  "title": "3M™ Sheet and Screen Label Material 7950, Clear Polyester, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

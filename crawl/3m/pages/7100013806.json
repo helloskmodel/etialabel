@@ -1,0 +1,117 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000186498/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000186498/",
+ "name": "3M™ Sheet and Screen Label Material 7809FL, Brushed Silver Polyester, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100013806",
+ "short_description": "3M™ Durable Label Material 7809FL is a gloss polyester film label stock that offers premium durability and moisture resistance. This label product utilizes 3M™ Adhesive 350 which is a versatile label adhesive offering excellent chemical resistance and holding strength even at high temperatures.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Facestocks (polyester and vinyl) and adhesives offer heat tolerance, clarity, and UV resistance",
+  "Thick adhesive caliper provides for stronger bond on textured surfaces.",
+  "Facestock is print treated for enhanced print receptivity.",
+  "Polyester liner contributes to improved die cutting by allowing for deeper die cuts"
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "High Performance Acrylic Adhesive 350"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "1.8 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "High Performance Acrylic Adhesive 350"
+  ],
+  "Facestock Color": [
+   "Silver"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive"
+  ],
+  "Label Form": [
+   "Sheet"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "450 ℉"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Overall Thickness (Imperial)": [
+   "2 mil"
+  ],
+  "Primary Liner": [
+   "Polyester"
+  ],
+  "Primary Liner Color": [
+   "Clear"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "1.5 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.04 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Screen",
+   "Thermal Transfer",
+   "UV Screen"
+  ],
+  "Product Color": [
+   "Silver"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Brushed"
+  ],
+  "Topcoat": [
+   "Portuguese"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/1017875O/3m-converter-markets-selection-guide-july-2023.pdf?&fn=3M-Converter-Markets-Guide.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Converter Markets Guide",
+   "url": "https://multimedia.3m.com/mws/media/1017875O/3m-converter-markets-selection-guide-july-2023.pdf?&fn=3M-Converter-Markets-Guide.pdf",
+   "contentType": "Brochures"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7809FL",
+  "title": "3M™ Sheet and Screen Label Material 7809FL, Brushed Silver Polyester, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

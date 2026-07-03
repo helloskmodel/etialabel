@@ -6371,6 +6371,3470 @@
         "https://www.lintec-global.com/products/industry/industrial_use_adhesive_tapes/"
       ],
       "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-504",
+      "name_en": "XF-504 Semi-gloss blue polyimide PCB label material (1 mil)",
+      "name_zh": "XF-504 半光泽蓝色聚酰亚胺 PCB 标签材料（1 mil）",
+      "facestock_en": "1 mil (25 μm) Polyimide, semi-gloss blue finish",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，半光泽蓝色",
+      "adhesive_en": "1 mil (25 μm) Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) polyimide film",
+        "Semi-gloss blue finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 聚酰亚胺(PI)薄膜",
+        "半光泽蓝色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-505",
+      "name_en": "XF-505 Semi-gloss green polyimide PCB label material (1 mil)",
+      "name_zh": "XF-505 半光泽绿色聚酰亚胺 PCB 标签材料（1 mil）",
+      "facestock_en": "1 mil (25 μm) Polyimide, semi-gloss green finish",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，半光泽绿色",
+      "adhesive_en": "1 mil (25 μm) Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) polyimide film",
+        "Semi-gloss green finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 聚酰亚胺(PI)薄膜",
+        "半光泽绿色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-518",
+      "name_en": "XF-518 Matte white polyimide PCB label material (1 mil)",
+      "name_zh": "XF-518 哑光白色聚酰亚胺 PCB 标签材料（1 mil）",
+      "facestock_en": "1 mil (25 μm) Polyimide, matte white finish",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，哑光白色",
+      "adhesive_en": "1 mil (25 μm) Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) polyimide film",
+        "Matte white finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 聚酰亚胺(PI)薄膜",
+        "哑光白色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-528",
+      "name_en": "XF-528 High gloss white polyimide PCB label material (1 mil)",
+      "name_zh": "XF-528 高光泽白色聚酰亚胺 PCB 标签材料（1 mil）",
+      "facestock_en": "1 mil (25 μm) Polyimide, high gloss white finish",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，高光泽白色",
+      "adhesive_en": "1 mil (25 μm) Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) polyimide film",
+        "High gloss white finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 聚酰亚胺(PI)薄膜",
+        "高光泽白色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-581",
+      "name_en": "XF-581 Semi-gloss white polyimide PCB label material (1 mil)",
+      "name_zh": "XF-581 半光泽白色聚酰亚胺 PCB 标签材料（1 mil）",
+      "facestock_en": "1 mil (25 μm) Polyimide, semi-gloss white finish",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，半光泽白色",
+      "adhesive_en": "1 mil (25 μm) Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) polyimide film",
+        "Semi-gloss white finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 聚酰亚胺(PI)薄膜",
+        "半光泽白色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-583",
+      "name_en": "XF-583 Matte white polyimide PCB label material (1 mil)",
+      "name_zh": "XF-583 哑光白色聚酰亚胺 PCB 标签材料（1 mil）",
+      "facestock_en": "1 mil (25 μm) Polyimide, matte white finish",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，哑光白色",
+      "adhesive_en": "1 mil (25 μm) Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) polyimide film",
+        "Matte white finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 聚酰亚胺(PI)薄膜",
+        "哑光白色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-519",
+      "name_en": "XF-519 Matte white polyimide PCB label material (2 mil)",
+      "name_zh": "XF-519 哑光白色聚酰亚胺 PCB 标签材料（2 mil）",
+      "facestock_en": "2 mil (50 μm) Polyimide, matte white finish",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，哑光白色",
+      "adhesive_en": "1.5 mil (38 μm) Acrylic",
+      "adhesive_zh": "1.5 mil (38 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) polyimide film",
+        "Matte white finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "哑光白色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-520",
+      "name_en": "XF-520 Semi-gloss yellow polyimide PCB label material (2 mil)",
+      "name_zh": "XF-520 半光泽黄色聚酰亚胺 PCB 标签材料（2 mil）",
+      "facestock_en": "2 mil (50 μm) Polyimide, semi-gloss yellow finish",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，半光泽黄色",
+      "adhesive_en": "2 mil (50 μm) Acrylic",
+      "adhesive_zh": "2 mil (50 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) polyimide film",
+        "Semi-gloss yellow finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "半光泽黄色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-525",
+      "name_en": "XF-525 Semi-gloss green polyimide PCB label material (2 mil)",
+      "name_zh": "XF-525 半光泽绿色聚酰亚胺 PCB 标签材料（2 mil）",
+      "facestock_en": "2 mil (50 μm) Polyimide, semi-gloss green finish",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，半光泽绿色",
+      "adhesive_en": "2 mil (50 μm) Acrylic",
+      "adhesive_zh": "2 mil (50 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) polyimide film",
+        "Semi-gloss green finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "半光泽绿色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-529",
+      "name_en": "XF-529 High gloss white polyimide PCB label material (2 mil)",
+      "name_zh": "XF-529 高光泽白色聚酰亚胺 PCB 标签材料（2 mil）",
+      "facestock_en": "2 mil (50 μm) Polyimide, high gloss white finish",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，高光泽白色",
+      "adhesive_en": "1.5 mil (38 μm) Acrylic",
+      "adhesive_zh": "1.5 mil (38 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) polyimide film",
+        "High gloss white finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "高光泽白色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-541",
+      "name_en": "XF-541 Matte \"buff\" color polyimide PCB label material (2 mil)",
+      "name_zh": "XF-541 哑光米黄色聚酰亚胺 PCB 标签材料（2 mil）",
+      "facestock_en": "2 mil (50 μm) Polyimide, matte \"buff\" color finish",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，哑光米黄色",
+      "adhesive_en": "2 mil (50 μm) Acrylic",
+      "adhesive_zh": "2 mil (50 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) polyimide film",
+        "Matte \"buff\" color finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "哑光米黄色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-552",
+      "name_en": "XF-552 High gloss yellow polyimide PCB label material (2 mil)",
+      "name_zh": "XF-552 高光泽黄色聚酰亚胺 PCB 标签材料（2 mil）",
+      "facestock_en": "2 mil (50 μm) Polyimide, high gloss yellow finish",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，高光泽黄色",
+      "adhesive_en": "2.4 mil (61 μm) Acrylic",
+      "adhesive_zh": "2.4 mil (61 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) polyimide film",
+        "High gloss yellow finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "高光泽黄色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-555",
+      "name_en": "XF-555 High gloss white polyimide PCB label material (2 mil)",
+      "name_zh": "XF-555 高光泽白色聚酰亚胺 PCB 标签材料（2 mil）",
+      "facestock_en": "2 mil (50 μm) Polyimide, high gloss white finish",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，高光泽白色",
+      "adhesive_en": "2 mil (50 μm) Acrylic",
+      "adhesive_zh": "2 mil (50 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) polyimide film",
+        "High gloss white finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "高光泽白色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-582",
+      "name_en": "XF-582 Semi-gloss white polyimide PCB label material (2 mil)",
+      "name_zh": "XF-582 半光泽白色聚酰亚胺 PCB 标签材料（2 mil）",
+      "facestock_en": "2 mil (50 μm) Polyimide, semi-gloss white finish",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，半光泽白色",
+      "adhesive_en": "2 mil (50 μm) Acrylic",
+      "adhesive_zh": "2 mil (50 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) polyimide film",
+        "Semi-gloss white finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "半光泽白色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-584",
+      "name_en": "XF-584 Matte white polyimide PCB label material (2 mil)",
+      "name_zh": "XF-584 哑光白色聚酰亚胺 PCB 标签材料（2 mil）",
+      "facestock_en": "2 mil (50 μm) Polyimide, matte white finish",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，哑光白色",
+      "adhesive_en": "2 mil (50 μm) Acrylic",
+      "adhesive_zh": "2 mil (50 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) polyimide film",
+        "Matte white finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "哑光白色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-592",
+      "name_en": "XF-592 Semi-gloss white polyimide PCB label material (2 mil)",
+      "name_zh": "XF-592 半光泽白色聚酰亚胺 PCB 标签材料（2 mil）",
+      "facestock_en": "2 mil (50 μm) Polyimide, semi-gloss white finish",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，半光泽白色",
+      "adhesive_en": "2.4 mil (61 μm) Acrylic",
+      "adhesive_zh": "2.4 mil (61 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB identification and tracking; electronic component tracking; asset tracking; warranty labeling through multi-pass reflow and wave solder processes",
+      "application_zh": "PCB标识与追溯；电子元器件追踪；资产追踪；保修标签；可经受多次回流焊和波峰焊工艺",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) polyimide film",
+        "Semi-gloss white finish",
+        "Dimensionally stable at high temperature",
+        "Non-yellowing, non-softening abrasion resistant topcoat",
+        "Resists highly corrosive, highly active fluxes",
+        "Aggressive pressure sensitive acrylic adhesive (PSA)",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "半光泽白色面层",
+        "高温下尺寸稳定",
+        "不泛黄、不软化的耐磨面涂层",
+        "耐强腐蚀性高活性助焊剂",
+        "强力丙烯酸压敏胶(PSA)",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Maintains barcode integrity and readability through the harshest multi-cycle PCB manufacturing processes",
+        "Remains firmly affixed through multiple passes at extreme temperatures and concentrated cleaning chemistries",
+        "High contrast printed barcodes remain readable post heat"
+      ],
+      "benefits_zh": [
+        "在最严苛的多周期PCB制造工艺中保持条码完整性和可读性",
+        "在极端温度和高浓度清洗化学品中多次过炉仍牢固粘附",
+        "高对比度打印条码在受热后仍可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-731",
+      "name_en": "XF-731 Durable Topcoat semi-gloss white polyimide PCB label material (1 mil)",
+      "name_zh": "XF-731 耐磨面涂层半光泽白色聚酰亚胺 PCB 标签材料（1 mil）",
+      "facestock_en": "1 mil (25 μm) Polyimide, semi-gloss white, durable topcoat",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，半光泽白色，耐磨面涂层",
+      "adhesive_en": "1 mil (25 μm) Acrylic (aggressive acrylic PSA)",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂（强力丙烯酸压敏胶）",
+      "application_en": "PCB ID and barcode tracking; top and bottom side PCB locations; tracking of components, assets and electronic devices",
+      "application_zh": "PCB标识与条码追踪；PCB顶面和底面位置；元器件、资产和电子设备追踪",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) semi-gloss white polyimide film",
+        "Durable topcoat chemistry, abrasion resistant when directly contacted at elevated temperatures",
+        "ORH1 highly active flux resistant",
+        "Heat, cold and solvent resistant",
+        "Thermal transfer printable (recommended ribbons: Ricoh B110CR, Armor AXR7+, ITW B324, DNP R510HF)",
+        "Resists softening and yellowing"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 半光泽白色聚酰亚胺(PI)薄膜",
+        "耐磨面涂层化学体系，高温下直接接触仍耐磨",
+        "耐ORH1高活性助焊剂",
+        "耐高温、耐低温、耐溶剂",
+        "可热转印打印（推荐碳带：Ricoh B110CR、Armor AXR7+、ITW B324、DNP R510HF）",
+        "抗软化、抗泛黄"
+      ],
+      "benefits_en": [
+        "Withstands highly active organic fluxes used in harsh PCB manufacturing processes",
+        "High contrast printed barcodes will not degrade and remain readable throughout the process",
+        "Stays affixed to PCBs through wave solder, reflow and high-pressure washes",
+        "Resists scratches from automated material handling systems"
+      ],
+      "benefits_zh": [
+        "耐受PCB制造中使用的高活性有机助焊剂",
+        "高对比度打印条码不会退化，全程保持可读",
+        "经波峰焊、回流焊和高压清洗仍牢固粘附于PCB",
+        "抵抗自动化搬运系统造成的刮擦"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C) (Durable Topcoat sheet prints: 100 hrs at 302 °F (125 °C))",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductSheet_Labels_DurableTopcoat.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductSheet_Labels_DurableTopcoat.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/general-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-732",
+      "name_en": "XF-732 Durable Topcoat semi-gloss white polyimide PCB label material (2 mil)",
+      "name_zh": "XF-732 耐磨面涂层半光泽白色聚酰亚胺 PCB 标签材料（2 mil）",
+      "facestock_en": "2 mil (50 μm) Polyimide, semi-gloss white, durable topcoat",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，半光泽白色，耐磨面涂层",
+      "adhesive_en": "2 mil (50 μm) Acrylic (aggressive acrylic PSA)",
+      "adhesive_zh": "2 mil (50 μm) 丙烯酸胶粘剂（强力丙烯酸压敏胶）",
+      "application_en": "PCB ID and barcode tracking; top and bottom side PCB locations; tracking of components, assets and electronic devices",
+      "application_zh": "PCB标识与条码追踪；PCB顶面和底面位置；元器件、资产和电子设备追踪",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) semi-gloss white polyimide film",
+        "Durable topcoat chemistry, abrasion resistant when directly contacted at elevated temperatures",
+        "ORH1 highly active flux resistant",
+        "Heat, cold and solvent resistant",
+        "Thermal transfer printable (recommended ribbons: Ricoh B110CR, Armor AXR7+, ITW B324, DNP R510HF)",
+        "Resists softening and yellowing"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 半光泽白色聚酰亚胺(PI)薄膜",
+        "耐磨面涂层化学体系，高温下直接接触仍耐磨",
+        "耐ORH1高活性助焊剂",
+        "耐高温、耐低温、耐溶剂",
+        "可热转印打印（推荐碳带：Ricoh B110CR、Armor AXR7+、ITW B324、DNP R510HF）",
+        "抗软化、抗泛黄"
+      ],
+      "benefits_en": [
+        "Withstands highly active organic fluxes used in harsh PCB manufacturing processes",
+        "High contrast printed barcodes will not degrade and remain readable throughout the process",
+        "Stays affixed to PCBs through wave solder, reflow and high-pressure washes",
+        "Resists scratches from automated material handling systems"
+      ],
+      "benefits_zh": [
+        "耐受PCB制造中使用的高活性有机助焊剂",
+        "高对比度打印条码不会退化，全程保持可读",
+        "经波峰焊、回流焊和高压清洗仍牢固粘附于PCB",
+        "抵抗自动化搬运系统造成的刮擦"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C) (Durable Topcoat sheet prints: 100 hrs at 302 °F (125 °C))",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductSheet_Labels_DurableTopcoat.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/pcb-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductSheet_Labels_DurableTopcoat.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/general-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-781",
+      "name_en": "XF-781 ESD-safe semi-gloss white polyimide label material (1 mil)",
+      "name_zh": "XF-781 ESD安全半光泽白色聚酰亚胺标签材料（1 mil）",
+      "facestock_en": "1 mil (25 μm) Polyimide, semi-gloss white, static dissipative top surface",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，半光泽白色，静电耗散面层",
+      "adhesive_en": "1 mil (25 μm) Acrylic (low charging acrylic PSA)",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂（低荷电丙烯酸压敏胶）",
+      "application_en": "ESD-safe identification, masking and tracking of static sensitive devices; asset tracking; ESD packaging; warranty labeling",
+      "application_zh": "静电敏感器件的ESD安全标识、遮蔽与追踪；资产追踪；ESD包装；保修标签",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) semi-gloss white polyimide film",
+        "Durable static dissipative top surface (surface resistance ≥ 10⁹ and ≤ 10¹¹ Ohms per brochure)",
+        "Low charging PSA and liners (< 125 volts on liner removal and repositioning)",
+        "High and low temperature dimensional stability",
+        "Chemical resistance",
+        "Halogen free"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 半光泽白色聚酰亚胺(PI)薄膜",
+        "耐久静电耗散面层（表面电阻 ≥ 10⁹ 且 ≤ 10¹¹ 欧姆，据产品手册）",
+        "低荷电压敏胶和离型纸（揭离及重贴时 < 125 伏）",
+        "高低温尺寸稳定性",
+        "耐化学品",
+        "无卤素"
+      ],
+      "benefits_en": [
+        "Protects sensitive devices from electrostatic charges arising from human contact (HBM) and charged devices (CDM)",
+        "Reduces the chance of charged insulators damaging ESD sensitive devices during label application and removal"
+      ],
+      "benefits_zh": [
+        "保护敏感器件免受人体接触(HBM)和带电器件(CDM)产生的静电危害",
+        "降低贴标及揭离过程中带电绝缘体损坏ESD敏感器件的风险"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "ANSI/ESD S20.20",
+        "ESD S541",
+        "IEC 61340",
+        "JEDEC JESD 625B",
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_ESDSafe_Rev0625201.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/esd-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_ESDSafe_Rev0625201.pdf",
+        "https://polyonics.com/performancelabels/esd-labels/",
+        "https://polyonics.com/resources/product-brochures/",
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-784",
+      "name_en": "XF-784 ESD-safe matte white polyimide label material (1 mil)",
+      "name_zh": "XF-784 ESD安全哑光白色聚酰亚胺标签材料（1 mil）",
+      "facestock_en": "1 mil (25 μm) Polyimide, matte white, static dissipative top surface",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，哑光白色，静电耗散面层",
+      "adhesive_en": "1 mil (25 μm) Acrylic (low charging acrylic PSA)",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂（低荷电丙烯酸压敏胶）",
+      "application_en": "ESD-safe identification, masking and tracking of static sensitive devices; asset tracking; ESD packaging; warranty labeling",
+      "application_zh": "静电敏感器件的ESD安全标识、遮蔽与追踪；资产追踪；ESD包装；保修标签",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) matte white polyimide film",
+        "Durable static dissipative top surface (surface resistance ≥ 10⁹ and ≤ 10¹¹ Ohms per brochure)",
+        "Low charging PSA and liners (< 125 volts on liner removal and repositioning)",
+        "High and low temperature dimensional stability",
+        "Chemical resistance",
+        "Halogen free"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 哑光白色聚酰亚胺(PI)薄膜",
+        "耐久静电耗散面层（表面电阻 ≥ 10⁹ 且 ≤ 10¹¹ 欧姆，据产品手册）",
+        "低荷电压敏胶和离型纸（揭离及重贴时 < 125 伏）",
+        "高低温尺寸稳定性",
+        "耐化学品",
+        "无卤素"
+      ],
+      "benefits_en": [
+        "Protects sensitive devices from electrostatic charges arising from human contact (HBM) and charged devices (CDM)",
+        "Reduces the chance of charged insulators damaging ESD sensitive devices during label application and removal"
+      ],
+      "benefits_zh": [
+        "保护敏感器件免受人体接触(HBM)和带电器件(CDM)产生的静电危害",
+        "降低贴标及揭离过程中带电绝缘体损坏ESD敏感器件的风险"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "ANSI/ESD S20.20",
+        "ESD S541",
+        "IEC 61340",
+        "JEDEC JESD 625B",
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_ESDSafe_Rev0625201.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/esd-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_ESDSafe_Rev0625201.pdf",
+        "https://polyonics.com/performancelabels/esd-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-782",
+      "name_en": "XF-782 ESD-safe semi-gloss white polyimide label material (2 mil)",
+      "name_zh": "XF-782 ESD安全半光泽白色聚酰亚胺标签材料（2 mil）",
+      "facestock_en": "2 mil (50 μm) Polyimide, semi-gloss white, static dissipative top surface",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，半光泽白色，静电耗散面层",
+      "adhesive_en": "2 mil (50 μm) Acrylic (low charging acrylic PSA)",
+      "adhesive_zh": "2 mil (50 μm) 丙烯酸胶粘剂（低荷电丙烯酸压敏胶）",
+      "application_en": "ESD-safe identification, masking and tracking of static sensitive devices; asset tracking; ESD packaging; warranty labeling",
+      "application_zh": "静电敏感器件的ESD安全标识、遮蔽与追踪；资产追踪；ESD包装；保修标签",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) semi-gloss white polyimide film",
+        "Durable static dissipative top surface (surface resistance ≥ 10⁹ and ≤ 10¹¹ Ohms per brochure)",
+        "Low charging PSA and liners (< 125 volts on liner removal and repositioning)",
+        "High and low temperature dimensional stability",
+        "Chemical resistance",
+        "Halogen free"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 半光泽白色聚酰亚胺(PI)薄膜",
+        "耐久静电耗散面层（表面电阻 ≥ 10⁹ 且 ≤ 10¹¹ 欧姆，据产品手册）",
+        "低荷电压敏胶和离型纸（揭离及重贴时 < 125 伏）",
+        "高低温尺寸稳定性",
+        "耐化学品",
+        "无卤素"
+      ],
+      "benefits_en": [
+        "Protects sensitive devices from electrostatic charges arising from human contact (HBM) and charged devices (CDM)",
+        "Reduces the chance of charged insulators damaging ESD sensitive devices during label application and removal"
+      ],
+      "benefits_zh": [
+        "保护敏感器件免受人体接触(HBM)和带电器件(CDM)产生的静电危害",
+        "降低贴标及揭离过程中带电绝缘体损坏ESD敏感器件的风险"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "ANSI/ESD S20.20",
+        "ESD S541",
+        "IEC 61340",
+        "JEDEC JESD 625B",
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_ESDSafe_Rev0625201.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/esd-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_ESDSafe_Rev0625201.pdf",
+        "https://polyonics.com/performancelabels/esd-labels/",
+        "https://polyonics.com/resources/product-brochures/",
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/pcb-labels/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-446",
+      "name_en": "XF-446 ESD-safe gloss white polyester label material (2 mil)",
+      "name_zh": "XF-446 ESD安全光泽白色聚酯标签材料（2 mil）",
+      "facestock_en": "2 mil (50 μm) Polyester (PET), gloss white, static dissipative top surface",
+      "facestock_zh": "2 mil (50 μm) 聚酯(PET)，光泽白色，静电耗散面层",
+      "adhesive_en": "1 mil (25 μm) Acrylic (low charging acrylic PSA)",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂（低荷电丙烯酸压敏胶）",
+      "application_en": "ESD-safe identification, masking and tracking of static sensitive devices; asset tracking; ESD packaging; warranty labeling; PCB identification, electronic component tracking",
+      "application_zh": "静电敏感器件的ESD安全标识、遮蔽与追踪；资产追踪；ESD包装；保修标签；PCB标识、电子元器件追踪",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) gloss white polyester (PET) film",
+        "Durable static dissipative top surface (surface resistance ≥ 10⁹ and ≤ 10¹¹ Ohms per brochure)",
+        "Low charging PSA and liners (< 125 volts on liner removal and repositioning)",
+        "High and low temperature dimensional stability",
+        "Chemical resistance",
+        "Halogen free"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 光泽白色聚酯(PET)薄膜",
+        "耐久静电耗散面层（表面电阻 ≥ 10⁹ 且 ≤ 10¹¹ 欧姆，据产品手册）",
+        "低荷电压敏胶和离型纸（揭离及重贴时 < 125 伏）",
+        "高低温尺寸稳定性",
+        "耐化学品",
+        "无卤素"
+      ],
+      "benefits_en": [
+        "Protects sensitive devices from electrostatic charges arising from human contact (HBM) and charged devices (CDM)",
+        "Reduces the chance of charged insulators damaging ESD sensitive devices during label application and removal"
+      ],
+      "benefits_zh": [
+        "保护敏感器件免受人体接触(HBM)和带电器件(CDM)产生的静电危害",
+        "降低贴标及揭离过程中带电绝缘体损坏ESD敏感器件的风险"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); Operating: -40 to 400 °F (-40 to 204 °C)",
+      "certifications": [
+        "ANSI/ESD S20.20",
+        "ESD S541",
+        "IEC 61340",
+        "JEDEC JESD 625B",
+        "REACH",
+        "RoHS",
+        "UL 969"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_ESDSafe_Rev0625201.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/esd-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_ESDSafe_Rev0625201.pdf",
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/esd-labels/",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-603",
+      "name_en": "XF-603 flame retardant semi-gloss white polyimide label / wire marking material (1 mil)",
+      "name_zh": "XF-603 阻燃半光泽白色聚酰亚胺标签/线缆标识材料（1 mil）",
+      "facestock_en": "1 mil (25 μm) Polyimide, semi-gloss white, durable matte thermal transfer printable topcoat",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，半光泽白色，耐久可热转印面涂层",
+      "adhesive_en": "1.1 mil (28 μm) Acrylic per PCB brochure (wire marking brochure prints 1 mil (25 μm) Acrylic); described as ultra-aggressive, flame-retardant pressure sensitive adhesive",
+      "adhesive_zh": "1.1 mil (28 μm) 丙烯酸胶粘剂（PCB手册；线缆标识手册标注为 1 mil (25 μm) 丙烯酸）；超强力阻燃压敏胶",
+      "application_en": "Wire marking and cable identification (wrap-around or PSA-to-PSA flag); PCB ID and tracking; batteries; power supplies; auto under-the-hood and interiors; wire wraps; aerospace and avionics ID tracking",
+      "application_zh": "线材标识与电缆识别（缠绕或胶对胶旗形标签）；PCB标识追踪；电池；电源；汽车发动机舱及内饰；线束缠绕；航空航电标识追踪",
+      "industries": [
+        "Electronics",
+        "Aerospace",
+        "Automotive"
+      ],
+      "features_en": [
+        "1 mil (25 μm) semi-gloss white polyimide film",
+        "Halogen free flame retardant technology creates protective char layers",
+        "Ultra-aggressive flame-retardant PSA",
+        "Thermal transfer printable",
+        "Chemically resistant"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 半光泽白色聚酰亚胺(PI)薄膜",
+        "无卤阻燃技术，受热形成保护性碳化层",
+        "超强力阻燃压敏胶",
+        "可热转印打印",
+        "耐化学品"
+      ],
+      "benefits_en": [
+        "Helps prevent the propagation of fire by controlling heat transfer and minimizing flammable gas generation",
+        "Can be wrapped around cables and wires or used as a flag identifier (PSA to PSA)",
+        "Maintains barcode readability through harsh aerospace and transportation environments"
+      ],
+      "benefits_zh": [
+        "控制热传导并减少可燃气体产生，有助于阻止火焰蔓延",
+        "可缠绕于电缆电线上，或作旗形标签（胶对胶）使用",
+        "在严苛的航空和运输环境中保持条码可读"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "UL94 VTM-0",
+        "UL 969",
+        "FMVSS 302 (tested)",
+        "REACH",
+        "RoHS",
+        "UL file QMFZ2.E338081 (Plastics, Component)"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductSheets_Labels_FlameRetardant.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/flame-retardant-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductSheets_Labels_FlameRetardant.pdf",
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_CableWireMarking_NylonFR.pdf",
+        "https://polyonics.com/performancelabels/flame-retardant-labels/",
+        "https://polyonics.com/performancelabels/wire-cable-marking-labels/",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/industries/electronics/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-611",
+      "name_en": "XF-611 flame retardant semi-gloss white polyester label material (1.5 mil)",
+      "name_zh": "XF-611 阻燃半光泽白色聚酯标签材料（1.5 mil）",
+      "facestock_en": "1.5 mil (38 μm) Polyester (PET), semi-gloss white",
+      "facestock_zh": "1.5 mil (38 μm) 聚酯(PET)，半光泽白色",
+      "adhesive_en": "1.1 mil (28 μm) Acrylic",
+      "adhesive_zh": "1.1 mil (28 μm) 丙烯酸胶粘剂",
+      "application_en": "PCB ID and tracking; batteries; power supplies; auto under-the-hood and interiors; wire wraps",
+      "application_zh": "PCB标识追踪；电池；电源；汽车发动机舱及内饰；线束缠绕",
+      "industries": [
+        "Electronics",
+        "Automotive",
+        "Aerospace"
+      ],
+      "features_en": [
+        "1.5 mil (38 μm) semi-gloss white polyester (PET) film",
+        "Halogen-free flame retardant label material",
+        "Thermal transfer printable"
+      ],
+      "features_zh": [
+        "1.5 mil (38 μm) 半光泽白色聚酯(PET)薄膜",
+        "无卤阻燃标签材料",
+        "可热转印打印"
+      ],
+      "benefits_en": [
+        "Helps prevent the propagation of fire",
+        "Lower temperature flame retardant option alongside polyimide products"
+      ],
+      "benefits_zh": [
+        "有助于阻止火焰蔓延",
+        "作为聚酰亚胺产品之外的低温阻燃选择"
+      ],
+      "temperature_performance": "-40 to 302 °F (-40 to 150 °C)",
+      "certifications": [
+        "UL94 VTM-0",
+        "UL 969",
+        "BSS 7238/7239 and FAR 25.853 (tested)",
+        "REACH",
+        "RoHS",
+        "UL file QMFZ2.E338081 (Plastics, Component)"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductSheets_Labels_FlameRetardant.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/flame-retardant-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductSheets_Labels_FlameRetardant.pdf",
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_PCB.pdf",
+        "https://polyonics.com/performancelabels/flame-retardant-labels/",
+        "https://polyonics.com/performancelabels/pcb-labels/",
+        "https://polyonics.com/industries/electronics/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-300",
+      "name_en": "XF-300 white woven nylon cloth wire and cable marking label material (5 mil)",
+      "name_zh": "XF-300 白色机织尼龙布线缆标识标签材料（5 mil）",
+      "facestock_en": "5 mil (125 μm) Nylon cloth, woven cloth - white",
+      "facestock_zh": "5 mil (125 μm) 尼龙布，白色机织布",
+      "adhesive_en": "2 mil (50 μm) High Temperature Acrylic (thick aggressive adhesive for high bond strength)",
+      "adhesive_zh": "2 mil (50 μm) 高温丙烯酸胶粘剂（厚型强力胶，高粘接强度）",
+      "application_en": "Wire marking; cable identification; asset tracking; electronics tracking; wire bundles; aerospace and avionics ID tracking; lower temperature and cryogenic wire/cable identification",
+      "application_zh": "线材标识；电缆识别；资产追踪；电子追踪；线束；航空航电追踪；低温及低温存储线缆识别",
+      "industries": [
+        "Aerospace",
+        "Electronics"
+      ],
+      "features_en": [
+        "5 mil (125 μm) durable, flexible white woven nylon cloth",
+        "Thick aggressive adhesive for high bond strength",
+        "Thermal transfer printable topcoat",
+        "Chemically resistant"
+      ],
+      "features_zh": [
+        "5 mil (125 μm) 耐久柔韧白色机织尼龙布",
+        "厚型强力胶粘剂，提供高粘接强度",
+        "可热转印面涂层",
+        "耐化学品"
+      ],
+      "benefits_en": [
+        "Conforms to most round or curved substrates",
+        "Performs in extreme cold including cryogenic storage",
+        "Durable against harsh weather"
+      ],
+      "benefits_zh": [
+        "可贴合大多数圆形或弯曲表面",
+        "在极寒环境（含低温存储）下仍可靠",
+        "耐受恶劣天气"
+      ],
+      "temperature_performance": "High Temperature: 5 min at 356 °F (180 °C); 30 days at 230 °F (110 °C). Cryogenic Storage: 1 hr in liquid nitrogen at -320 °F (-196 °C); 30 days at -158 °F (-70 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_CableWireMarking_NylonFR.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/wire-cable-marking-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_CableWireMarking_NylonFR.pdf",
+        "https://polyonics.com/performancelabels/wire-cable-marking-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-302",
+      "name_en": "XF-302 white woven nylon cloth wire and cable marking label material (5 mil)",
+      "name_zh": "XF-302 白色机织尼龙布线缆标识标签材料（5 mil）",
+      "facestock_en": "5 mil (125 μm) Nylon cloth, woven cloth - white",
+      "facestock_zh": "5 mil (125 μm) 尼龙布，白色机织布",
+      "adhesive_en": "1 mil (25 μm) High Temperature Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 高温丙烯酸胶粘剂",
+      "application_en": "Wire marking; cable identification; asset tracking; electronics tracking; wire bundles; aerospace and avionics ID tracking; lower temperature and cryogenic wire/cable identification",
+      "application_zh": "线材标识；电缆识别；资产追踪；电子追踪；线束；航空航电追踪；低温及低温存储线缆识别",
+      "industries": [
+        "Aerospace",
+        "Electronics"
+      ],
+      "features_en": [
+        "5 mil (125 μm) durable, flexible white woven nylon cloth",
+        "Low-profile high temperature acrylic PSA",
+        "Thermal transfer printable topcoat",
+        "Chemically resistant"
+      ],
+      "features_zh": [
+        "5 mil (125 μm) 耐久柔韧白色机织尼龙布",
+        "薄型高温丙烯酸压敏胶",
+        "可热转印面涂层",
+        "耐化学品"
+      ],
+      "benefits_en": [
+        "Conforms to most round or curved substrates",
+        "Performs in extreme cold including cryogenic storage",
+        "Durable against harsh weather"
+      ],
+      "benefits_zh": [
+        "可贴合大多数圆形或弯曲表面",
+        "在极寒环境（含低温存储）下仍可靠",
+        "耐受恶劣天气"
+      ],
+      "temperature_performance": "High Temperature: 5 min at 356 °F (180 °C); 30 days at 230 °F (110 °C). Cryogenic Storage: 1 hr in liquid nitrogen at -320 °F (-196 °C); 30 days at -158 °F (-70 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_CableWireMarking_NylonFR.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/wire-cable-marking-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Labels_CableWireMarking_NylonFR.pdf",
+        "https://polyonics.com/performancelabels/wire-cable-marking-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-301",
+      "name_en": "XF-301 nylon cloth wire and cable marking label material (low-profile PSA, cryogenic)",
+      "name_zh": "XF-301 尼龙布线缆标识标签材料（薄型压敏胶，耐低温存储）",
+      "facestock_en": "Nylon cloth (durable, flexible material that conforms to most round or curved substrates)",
+      "facestock_zh": "尼龙布（耐久柔韧，可贴合大多数圆形或弯曲表面）",
+      "adhesive_en": "Low-profile PSA (adhesive chemistry not stated on page)",
+      "adhesive_zh": "薄型压敏胶（页面未标明胶粘剂化学类型）",
+      "application_en": "Wire and cable identification in lower temperature applications, including cryogenics storage",
+      "application_zh": "低温应用（含低温存储）中的线缆识别",
+      "industries": [
+        "Aerospace",
+        "Electronics"
+      ],
+      "features_en": [
+        "Durable, flexible nylon cloth",
+        "Low-profile PSA"
+      ],
+      "features_zh": [
+        "耐久柔韧尼龙布",
+        "薄型压敏胶"
+      ],
+      "benefits_en": [
+        "Can be exposed to temperatures as low as -321 ºF (-196 ºC) (cryogenics storage) without losing performance"
+      ],
+      "benefits_zh": [
+        "可耐受低至 -321 ºF (-196 ºC) 的低温（低温存储）而不损失性能"
+      ],
+      "temperature_performance": "As low as -321 ºF (-196 ºC) (cryogenics storage)",
+      "certifications": [],
+      "tds_url": "https://polyonics.com/performancelabels/wire-cable-marking-labels/",
+      "catalog_url": "https://polyonics.com/performancelabels/wire-cable-marking-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/performancelabels/wire-cable-marking-labels/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-111",
+      "name_en": "XF-111 semi-gloss white flexible substrate film (0.5 mil (13 μm) Polyimide)",
+      "name_zh": "XF-111 半光泽白色柔性基材薄膜（0.5 mil (13 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "0.5 mil (13 μm) Polyimide, semi-gloss white topcoat (flexible substrate film)",
+      "facestock_zh": "0.5 mil (13 μm) 聚酰亚胺(PI)，半光泽白色面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "0.5 mil (13 μm) Polyimide film",
+        "Semi-gloss White topcoat",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)",
+        "High-resolution printing surface"
+      ],
+      "features_zh": [
+        "0.5 mil (13 μm) 聚酰亚胺(PI)薄膜",
+        "半光泽白色面涂层",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）",
+        "高分辨率印刷表面"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "Up to 572 °F (300 °C) (polyimide, per brochure text)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-113",
+      "name_en": "XF-113 high gloss clear flexible substrate film (0.5 mil (13 μm) Polyimide)",
+      "name_zh": "XF-113 高光泽透明（琥珀色）柔性基材薄膜（0.5 mil (13 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "0.5 mil (13 μm) Polyimide, high gloss clear topcoat (flexible substrate film)",
+      "facestock_zh": "0.5 mil (13 μm) 聚酰亚胺(PI)，高光泽透明（琥珀色）面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "0.5 mil (13 μm) Polyimide film",
+        "High Gloss Clear topcoat (amber in color due to the base polyimide color)",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)",
+        "ESD-Safe (static dissipative) topcoat, surface resistance ≥ 10⁵ and ≤ 10⁹ ohms; complies with ANSI/ESD S20.20, IEC 61340 and JEDEC JESD 625B"
+      ],
+      "features_zh": [
+        "0.5 mil (13 μm) 聚酰亚胺(PI)薄膜",
+        "高光泽透明（琥珀色）面涂层（因聚酰亚胺基膜呈琥珀色）",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）",
+        "ESD安全（静电耗散）面涂层，表面电阻 ≥ 10⁵ 且 ≤ 10⁹ 欧姆；符合 ANSI/ESD S20.20、IEC 61340 和 JEDEC JESD 625B"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "Up to 572 °F (300 °C) (polyimide, per brochure text)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "ANSI/ESD S20.20",
+        "IEC 61340",
+        "JEDEC JESD 625B"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-103",
+      "name_en": "XF-103 high gloss white flexible substrate film (1 mil (25 μm) Polyimide)",
+      "name_zh": "XF-103 高光泽白色柔性基材薄膜（1 mil (25 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "1 mil (25 μm) Polyimide, high gloss white topcoat (flexible substrate film)",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，高光泽白色面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) Polyimide film",
+        "High Gloss White topcoat",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)",
+        "High-resolution printing surface"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 聚酰亚胺(PI)薄膜",
+        "高光泽白色面涂层",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）",
+        "高分辨率印刷表面"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "Up to 572 °F (300 °C) (polyimide, per brochure text)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-107",
+      "name_en": "XF-107 highly reflective white flexible substrate film (1 mil (25 μm) Polyimide)",
+      "name_zh": "XF-107 高反射白色柔性基材薄膜（1 mil (25 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "1 mil (25 μm) Polyimide, highly reflective white topcoat (flexible substrate film)",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，高反射白色面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) Polyimide film",
+        "Highly Reflective White topcoat",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 聚酰亚胺(PI)薄膜",
+        "高反射白色面涂层",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "Up to 572 °F (300 °C) (polyimide, per brochure text)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-114",
+      "name_en": "XF-114 high gloss clear flexible substrate film (1 mil (25 μm) Polyimide)",
+      "name_zh": "XF-114 高光泽透明（琥珀色）柔性基材薄膜（1 mil (25 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "1 mil (25 μm) Polyimide, high gloss clear topcoat (flexible substrate film)",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，高光泽透明（琥珀色）面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) Polyimide film",
+        "High Gloss Clear topcoat (amber in color due to the base polyimide color)",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)",
+        "ESD-Safe (static dissipative) topcoat, surface resistance ≥ 10⁵ and ≤ 10⁹ ohms; complies with ANSI/ESD S20.20, IEC 61340 and JEDEC JESD 625B"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 聚酰亚胺(PI)薄膜",
+        "高光泽透明（琥珀色）面涂层（因聚酰亚胺基膜呈琥珀色）",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）",
+        "ESD安全（静电耗散）面涂层，表面电阻 ≥ 10⁵ 且 ≤ 10⁹ 欧姆；符合 ANSI/ESD S20.20、IEC 61340 和 JEDEC JESD 625B"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "Up to 572 °F (300 °C) (polyimide, per brochure text)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "ANSI/ESD S20.20",
+        "IEC 61340",
+        "JEDEC JESD 625B"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-115",
+      "name_en": "XF-115 high gloss clear flexible substrate film (1 mil (25 μm) Polyimide)",
+      "name_zh": "XF-115 高光泽透明（琥珀色）柔性基材薄膜（1 mil (25 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "1 mil (25 μm) Polyimide, high gloss clear topcoat (flexible substrate film)",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，高光泽透明（琥珀色）面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) Polyimide film",
+        "High Gloss Clear topcoat (amber in color due to the base polyimide color)",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)",
+        "High-resolution printing surface"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 聚酰亚胺(PI)薄膜",
+        "高光泽透明（琥珀色）面涂层（因聚酰亚胺基膜呈琥珀色）",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）",
+        "高分辨率印刷表面"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "Up to 572 °F (300 °C) (polyimide, per brochure text)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-122",
+      "name_en": "XF-122 high gloss clear flexible substrate film (1 mil (25 μm) Clear Polyester)",
+      "name_zh": "XF-122 高光泽透明（琥珀色）柔性基材薄膜（1 mil (25 μm) 透明聚酯(PET)）",
+      "facestock_en": "1 mil (25 μm) Clear Polyester, high gloss clear topcoat (flexible substrate film)",
+      "facestock_zh": "1 mil (25 μm) 透明聚酯(PET)，高光泽透明（琥珀色）面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) Clear Polyester film",
+        "High Gloss Clear topcoat",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)",
+        "ESD-Safe (static dissipative) topcoat, surface resistance ≥ 10⁵ and ≤ 10⁹ ohms; complies with ANSI/ESD S20.20, IEC 61340 and JEDEC JESD 625B"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 透明聚酯(PET)薄膜",
+        "高光泽透明（琥珀色）面涂层",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）",
+        "ESD安全（静电耗散）面涂层，表面电阻 ≥ 10⁵ 且 ≤ 10⁹ 欧姆；符合 ANSI/ESD S20.20、IEC 61340 和 JEDEC JESD 625B"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "ANSI/ESD S20.20",
+        "IEC 61340",
+        "JEDEC JESD 625B"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-106",
+      "name_en": "XF-106 highly reflective white flexible substrate film (1 mil (25 μm) Black Polyimide)",
+      "name_zh": "XF-106 高反射白色柔性基材薄膜（1 mil (25 μm) 黑色聚酰亚胺(PI)）",
+      "facestock_en": "1 mil (25 μm) Black Polyimide, highly reflective white topcoat (flexible substrate film)",
+      "facestock_zh": "1 mil (25 μm) 黑色聚酰亚胺(PI)，高反射白色面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "1 mil (25 μm) Black Polyimide film",
+        "Highly Reflective White topcoat",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 黑色聚酰亚胺(PI)薄膜",
+        "高反射白色面涂层",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "Up to 572 °F (300 °C) (polyimide, per brochure text)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-101",
+      "name_en": "XF-101 high gloss clear flexible substrate film (2 mil (50 μm) Polyimide)",
+      "name_zh": "XF-101 高光泽透明（琥珀色）柔性基材薄膜（2 mil (50 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "2 mil (50 μm) Polyimide, high gloss clear topcoat (flexible substrate film)",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，高光泽透明（琥珀色）面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) Polyimide film",
+        "High Gloss Clear topcoat (amber in color due to the base polyimide color)",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)",
+        "High-resolution printing surface"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "高光泽透明（琥珀色）面涂层（因聚酰亚胺基膜呈琥珀色）",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）",
+        "高分辨率印刷表面"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "Up to 572 °F (300 °C) (polyimide, per brochure text)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-104",
+      "name_en": "XF-104 high gloss white flexible substrate film (2 mil (50 μm) Polyimide)",
+      "name_zh": "XF-104 高光泽白色柔性基材薄膜（2 mil (50 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "2 mil (50 μm) Polyimide, high gloss white topcoat (flexible substrate film)",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，高光泽白色面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) Polyimide film",
+        "High Gloss White topcoat",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)",
+        "High-resolution printing surface"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "高光泽白色面涂层",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）",
+        "高分辨率印刷表面"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "Up to 572 °F (300 °C) (polyimide, per brochure text)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-118",
+      "name_en": "XF-118 high gloss clear flexible substrate film (2 mil (50 μm) Polyimide)",
+      "name_zh": "XF-118 高光泽透明（琥珀色）柔性基材薄膜（2 mil (50 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "2 mil (50 μm) Polyimide, high gloss clear topcoat (flexible substrate film)",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，高光泽透明（琥珀色）面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) Polyimide film",
+        "High Gloss Clear topcoat (amber in color due to the base polyimide color)",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)",
+        "ESD-Safe (static dissipative) topcoat, surface resistance ≥ 10⁵ and ≤ 10⁹ ohms; complies with ANSI/ESD S20.20, IEC 61340 and JEDEC JESD 625B"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "高光泽透明（琥珀色）面涂层（因聚酰亚胺基膜呈琥珀色）",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）",
+        "ESD安全（静电耗散）面涂层，表面电阻 ≥ 10⁵ 且 ≤ 10⁹ 欧姆；符合 ANSI/ESD S20.20、IEC 61340 和 JEDEC JESD 625B"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "Up to 572 °F (300 °C) (polyimide, per brochure text)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "ANSI/ESD S20.20",
+        "IEC 61340",
+        "JEDEC JESD 625B"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-124",
+      "name_en": "XF-124 high gloss white flexible substrate film (2 mil (50 μm) White Polyester)",
+      "name_zh": "XF-124 高光泽白色柔性基材薄膜（2 mil (50 μm) 白色聚酯(PET)）",
+      "facestock_en": "2 mil (50 μm) White Polyester, high gloss white topcoat (flexible substrate film)",
+      "facestock_zh": "2 mil (50 μm) 白色聚酯(PET)，高光泽白色面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "2 mil (50 μm) White Polyester film",
+        "High Gloss White topcoat",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)",
+        "ESD-Safe (static dissipative) topcoat, surface resistance ≥ 10⁵ and ≤ 10⁹ ohms; complies with ANSI/ESD S20.20, IEC 61340 and JEDEC JESD 625B"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 白色聚酯(PET)薄膜",
+        "高光泽白色面涂层",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）",
+        "ESD安全（静电耗散）面涂层，表面电阻 ≥ 10⁵ 且 ≤ 10⁹ 欧姆；符合 ANSI/ESD S20.20、IEC 61340 和 JEDEC JESD 625B"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "ANSI/ESD S20.20",
+        "IEC 61340",
+        "JEDEC JESD 625B"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-102",
+      "name_en": "XF-102 high gloss clear flexible substrate film (5 mil (125 μm) Polyimide)",
+      "name_zh": "XF-102 高光泽透明（琥珀色）柔性基材薄膜（5 mil (125 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "5 mil (125 μm) Polyimide, high gloss clear topcoat (flexible substrate film)",
+      "facestock_zh": "5 mil (125 μm) 聚酰亚胺(PI)，高光泽透明（琥珀色）面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "5 mil (125 μm) Polyimide film",
+        "High Gloss Clear topcoat (amber in color due to the base polyimide color)",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)",
+        "High-resolution printing surface"
+      ],
+      "features_zh": [
+        "5 mil (125 μm) 聚酰亚胺(PI)薄膜",
+        "高光泽透明（琥珀色）面涂层（因聚酰亚胺基膜呈琥珀色）",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）",
+        "高分辨率印刷表面"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "Up to 572 °F (300 °C) (polyimide, per brochure text)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-105",
+      "name_en": "XF-105 high gloss white flexible substrate film (5 mil (125 μm) Polyimide)",
+      "name_zh": "XF-105 高光泽白色柔性基材薄膜（5 mil (125 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "5 mil (125 μm) Polyimide, high gloss white topcoat (flexible substrate film)",
+      "facestock_zh": "5 mil (125 μm) 聚酰亚胺(PI)，高光泽白色面涂层（柔性基材薄膜）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Flexible circuits and heaters; ESD-safe electronics packaging; flexible audio devices and LEDs; RFID antennas; flexible drug delivery devices; temperature sensors",
+      "application_zh": "柔性电路与加热器；ESD安全电子包装；柔性音频设备与LED；RFID天线；柔性给药装置；温度传感器",
+      "industries": [
+        "Electronics"
+      ],
+      "features_en": [
+        "5 mil (125 μm) Polyimide film",
+        "High Gloss White topcoat",
+        "Topcoat designed for conductive, semi-conductive and resistive inks (flexo, digital, screen printing)",
+        "High-resolution printing surface"
+      ],
+      "features_zh": [
+        "5 mil (125 μm) 聚酰亚胺(PI)薄膜",
+        "高光泽白色面涂层",
+        "面涂层适用于导电、半导电及电阻油墨（柔印、数码、丝印）",
+        "高分辨率印刷表面"
+      ],
+      "benefits_en": [
+        "Increased ink receptivity, superior ink adhesion and high-resolution printing (per leading ink supplier evaluations)",
+        "High dimensional stability after exposure to extreme temperatures up to 572 °F (300 °C) (polyimide grades)"
+      ],
+      "benefits_zh": [
+        "提升油墨接受性、油墨附着力和高分辨率印刷（经主流油墨供应商评估）",
+        "聚酰亚胺等级在高达 572 °F (300 °C) 极端温度后仍保持高尺寸稳定性"
+      ],
+      "temperature_performance": "Up to 572 °F (300 °C) (polyimide, per brochure text)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+      "catalog_url": "https://polyonics.com/resources/product-brochures/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_FlexibleSubstrates.pdf",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XT-701",
+      "name_en": "XT-701 engineered single coated tape (0.5 mil (13 μm) Polyimide)",
+      "name_zh": "XT-701 工程单面胶带（0.5 mil (13 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "0.5 mil (13 μm) Polyimide (single coated tape)",
+      "facestock_zh": "0.5 mil (13 μm) 聚酰亚胺(PI)（单面涂胶胶带）",
+      "adhesive_en": "1 mil (25 μm) Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂",
+      "application_en": "Masking, insulating, isolating, bonding and protecting sensitive components and devices in extreme static charge, high temperature and harsh environments",
+      "application_zh": "在极端静电、高温和严苛环境中对敏感元器件进行遮蔽、绝缘、隔离、粘接与保护",
+      "industries": [
+        "Electronics",
+        "Automotive",
+        "Aerospace",
+        "Medical"
+      ],
+      "features_en": [
+        "Single coated tape: 0.5 mil (13 μm) Polyimide film",
+        "Adhesive: 1 mil (25 μm) Acrylic"
+      ],
+      "features_zh": [
+        "单面胶带：0.5 mil (13 μm) 聚酰亚胺(PI)薄膜",
+        "胶粘剂：1 mil (25 μm) 丙烯酸"
+      ],
+      "benefits_en": [
+        "Helps solve extreme electrostatic, high temperature and harsh environment challenges",
+        "Suited for specialty die cut applications"
+      ],
+      "benefits_zh": [
+        "帮助解决极端静电、高温和严苛环境挑战",
+        "适合专用模切应用"
+      ],
+      "temperature_performance": "-40 °F to 572 °F (-40 °C to 300 °C) (short term, 90 seconds)",
+      "certifications": [],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+        "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XT-620",
+      "name_en": "XT-620 engineered single coated tape (1 mil (25 μm) Polyimide)",
+      "name_zh": "XT-620 工程单面胶带（1 mil (25 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "1 mil (25 μm) Polyimide (single coated tape)",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)（单面涂胶胶带）",
+      "adhesive_en": "1 mil (25 μm) Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂",
+      "application_en": "Masking, insulating, isolating, bonding and protecting sensitive components and devices in extreme static charge, high temperature and harsh environments",
+      "application_zh": "在极端静电、高温和严苛环境中对敏感元器件进行遮蔽、绝缘、隔离、粘接与保护",
+      "industries": [
+        "Electronics",
+        "Automotive",
+        "Aerospace",
+        "Medical"
+      ],
+      "features_en": [
+        "Single coated tape: 1 mil (25 μm) Polyimide film",
+        "Adhesive: 1 mil (25 μm) Acrylic",
+        "Low-outgassing tested"
+      ],
+      "features_zh": [
+        "单面胶带：1 mil (25 μm) 聚酰亚胺(PI)薄膜",
+        "胶粘剂：1 mil (25 μm) 丙烯酸",
+        "低挥发（低放气）测试"
+      ],
+      "benefits_en": [
+        "Helps solve extreme electrostatic, high temperature and harsh environment challenges",
+        "Suited for specialty die cut applications"
+      ],
+      "benefits_zh": [
+        "帮助解决极端静电、高温和严苛环境挑战",
+        "适合专用模切应用"
+      ],
+      "temperature_performance": "-40 °F to 572 °F (-40 °C to 300 °C) (short term, 90 seconds)",
+      "certifications": [],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+        "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XT-707",
+      "name_en": "XT-707 engineered single coated tape (1 mil (25 μm) Polyimide)",
+      "name_zh": "XT-707 工程单面胶带（1 mil (25 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "1 mil (25 μm) Polyimide (single coated tape)",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)（单面涂胶胶带）",
+      "adhesive_en": "1 mil (25 μm) White Silicone (silicone adhesive)",
+      "adhesive_zh": "1 mil (25 μm) 白色硅胶（硅酮胶粘剂）",
+      "application_en": "Masking, insulating, isolating, bonding and protecting sensitive components and devices in extreme static charge, high temperature and harsh environments",
+      "application_zh": "在极端静电、高温和严苛环境中对敏感元器件进行遮蔽、绝缘、隔离、粘接与保护",
+      "industries": [
+        "Electronics",
+        "Automotive",
+        "Aerospace",
+        "Medical"
+      ],
+      "features_en": [
+        "Single coated tape: 1 mil (25 μm) Polyimide film",
+        "Adhesive: 1 mil (25 μm) White Silicone",
+        "Low-charging (< 125 V)"
+      ],
+      "features_zh": [
+        "单面胶带：1 mil (25 μm) 聚酰亚胺(PI)薄膜",
+        "胶粘剂：1 mil (25 μm) 白色硅胶(硅酮)",
+        "低荷电（< 125 伏）"
+      ],
+      "benefits_en": [
+        "Helps solve extreme electrostatic, high temperature and harsh environment challenges",
+        "Suited for specialty die cut applications"
+      ],
+      "benefits_zh": [
+        "帮助解决极端静电、高温和严苛环境挑战",
+        "适合专用模切应用"
+      ],
+      "temperature_performance": "-99 °F to 999 °F (-73 °C to 537 °C) (short term, 90 seconds)",
+      "certifications": [],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+        "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XT-722",
+      "name_en": "XT-722 engineered single coated tape (1 mil (25 μm) Black Polyimide)",
+      "name_zh": "XT-722 工程单面胶带（1 mil (25 μm) 黑色聚酰亚胺(PI)）",
+      "facestock_en": "1 mil (25 μm) Black Polyimide (single coated tape)",
+      "facestock_zh": "1 mil (25 μm) 黑色聚酰亚胺(PI)（单面涂胶胶带）",
+      "adhesive_en": "1 mil (25 μm) Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂",
+      "application_en": "Masking, insulating, isolating, bonding and protecting sensitive components and devices in extreme static charge, high temperature and harsh environments",
+      "application_zh": "在极端静电、高温和严苛环境中对敏感元器件进行遮蔽、绝缘、隔离、粘接与保护",
+      "industries": [
+        "Electronics",
+        "Automotive",
+        "Aerospace",
+        "Medical"
+      ],
+      "features_en": [
+        "Single coated tape: 1 mil (25 μm) Black Polyimide film",
+        "Adhesive: 1 mil (25 μm) Acrylic",
+        "High opacity"
+      ],
+      "features_zh": [
+        "单面胶带：1 mil (25 μm) 黑色聚酰亚胺(PI)薄膜",
+        "胶粘剂：1 mil (25 μm) 丙烯酸",
+        "高遮光性"
+      ],
+      "benefits_en": [
+        "Helps solve extreme electrostatic, high temperature and harsh environment challenges",
+        "Suited for specialty die cut applications"
+      ],
+      "benefits_zh": [
+        "帮助解决极端静电、高温和严苛环境挑战",
+        "适合专用模切应用"
+      ],
+      "temperature_performance": "-40 °F to 572 °F (-40 °C to 300 °C) (short term, 90 seconds)",
+      "certifications": [],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+        "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XT-637",
+      "name_en": "XT-637 engineered single coated tape (1 mil (25 μm) Clear Polyester)",
+      "name_zh": "XT-637 工程单面胶带（1 mil (25 μm) 透明聚酯(PET)）",
+      "facestock_en": "1 mil (25 μm) Clear Polyester (single coated tape)",
+      "facestock_zh": "1 mil (25 μm) 透明聚酯(PET)（单面涂胶胶带）",
+      "adhesive_en": "1 mil (25 μm) Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂",
+      "application_en": "Masking, insulating, isolating, bonding and protecting sensitive components and devices in extreme static charge, high temperature and harsh environments",
+      "application_zh": "在极端静电、高温和严苛环境中对敏感元器件进行遮蔽、绝缘、隔离、粘接与保护",
+      "industries": [
+        "Electronics",
+        "Automotive",
+        "Aerospace",
+        "Medical"
+      ],
+      "features_en": [
+        "Single coated tape: 1 mil (25 μm) Clear Polyester film",
+        "Adhesive: 1 mil (25 μm) Acrylic",
+        "Static dissipative",
+        "Low-charging (< 125 V)"
+      ],
+      "features_zh": [
+        "单面胶带：1 mil (25 μm) 透明聚酯(PET)薄膜",
+        "胶粘剂：1 mil (25 μm) 丙烯酸",
+        "静电耗散",
+        "低荷电（< 125 伏）"
+      ],
+      "benefits_en": [
+        "Helps solve extreme electrostatic, high temperature and harsh environment challenges",
+        "Suited for specialty die cut applications"
+      ],
+      "benefits_zh": [
+        "帮助解决极端静电、高温和严苛环境挑战",
+        "适合专用模切应用"
+      ],
+      "temperature_performance": "-40 °F to 302 °F (-40 °C to 150 °C) (short term, 90 seconds)",
+      "certifications": [],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+        "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XT-625",
+      "name_en": "XT-625 engineered single coated tape (2 mil (50 μm) Polyimide)",
+      "name_zh": "XT-625 工程单面胶带（2 mil (50 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "2 mil (50 μm) Polyimide (single coated tape)",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)（单面涂胶胶带）",
+      "adhesive_en": "1 mil (25 μm) Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 丙烯酸胶粘剂",
+      "application_en": "Masking, insulating, isolating, bonding and protecting sensitive components and devices in extreme static charge, high temperature and harsh environments",
+      "application_zh": "在极端静电、高温和严苛环境中对敏感元器件进行遮蔽、绝缘、隔离、粘接与保护",
+      "industries": [
+        "Electronics",
+        "Automotive",
+        "Aerospace",
+        "Medical"
+      ],
+      "features_en": [
+        "Single coated tape: 2 mil (50 μm) Polyimide film",
+        "Adhesive: 1 mil (25 μm) Acrylic",
+        "Flame retardant"
+      ],
+      "features_zh": [
+        "单面胶带：2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "胶粘剂：1 mil (25 μm) 丙烯酸",
+        "阻燃"
+      ],
+      "benefits_en": [
+        "Helps solve extreme electrostatic, high temperature and harsh environment challenges",
+        "Suited for specialty die cut applications"
+      ],
+      "benefits_zh": [
+        "帮助解决极端静电、高温和严苛环境挑战",
+        "适合专用模切应用"
+      ],
+      "temperature_performance": "-40 °F to 572 °F (-40 °C to 300 °C) (short term, 90 seconds)",
+      "certifications": [
+        "UL94 (tested)",
+        "FAR 25.853 (tested)",
+        "BSS 7238/7239 (tested)"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+        "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XT-679",
+      "name_en": "XT-679 engineered double coated tape (2 mil (50 μm) Polyimide)",
+      "name_zh": "XT-679 工程双面胶带（2 mil (50 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "2 mil (50 μm) Polyimide (double coated tape)",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)（双面涂胶胶带）",
+      "adhesive_en": "1.7 mil (43 μm) Acrylic (x2) (acrylic)",
+      "adhesive_zh": "1.7 mil (43 μm) 丙烯酸胶粘剂 (x2)",
+      "application_en": "Masking, insulating, isolating, bonding and protecting sensitive components and devices in extreme static charge, high temperature and harsh environments; double-coated bonding and assembly of components in high temperature and harsh environments",
+      "application_zh": "在极端静电、高温和严苛环境中对敏感元器件进行遮蔽、绝缘、隔离、粘接与保护；高温及严苛环境下的双面粘接与组装",
+      "industries": [
+        "Electronics",
+        "Automotive",
+        "Aerospace",
+        "Medical"
+      ],
+      "features_en": [
+        "Double coated tape: 2 mil (50 μm) Polyimide film",
+        "Adhesive: 1.7 mil (43 μm) Acrylic (x2)",
+        "Flame retardant"
+      ],
+      "features_zh": [
+        "双面胶带：2 mil (50 μm) 聚酰亚胺(PI)薄膜",
+        "胶粘剂：1.7 mil (43 μm) 丙烯酸 (x2)",
+        "阻燃"
+      ],
+      "benefits_en": [
+        "Helps solve extreme electrostatic, high temperature and harsh environment challenges",
+        "Suited for specialty die cut applications",
+        "Eliminates the need for mechanical fasteners, driving down product costs"
+      ],
+      "benefits_zh": [
+        "帮助解决极端静电、高温和严苛环境挑战",
+        "适合专用模切应用",
+        "免除机械紧固件，降低产品成本"
+      ],
+      "temperature_performance": "-40 °F to 572 °F (-40 °C to 300 °C) (short term, 90 seconds)",
+      "certifications": [
+        "UL94 (tested)",
+        "FAR 25.853 (tested)",
+        "BSS 7238/7239 (tested)"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductBrochure_Tapes.pdf",
+        "https://polyonics.com/performancelabels/esd-labels/esd-tape/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XL-1501",
+      "name_en": "XL-1501 clear (amber) polyimide high temperature overlaminate (1 mil (25 μm) Polyimide)",
+      "name_zh": "XL-1501 透明（琥珀色）聚酰亚胺高温覆膜（1 mil (25 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "1 mil (25 μm) Polyimide, clear (amber) overlaminate film",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，透明（琥珀色）覆膜",
+      "adhesive_en": "1 mil (25 μm) High Temperature Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 高温丙烯酸胶粘剂",
+      "application_en": "Protecting printed images: PCB and component tracking; heavy equipment, drying and curing ovens; metal processing plants; electronic PCB processing",
+      "application_zh": "保护印刷图像：PCB与元器件追踪；重型设备、干燥与固化炉；金属加工厂；电子PCB加工",
+      "industries": [
+        "Electronics",
+        "Metals"
+      ],
+      "features_en": [
+        "1 mil (25 μm) Polyimide clear polyimide film (amber)",
+        "UV and chemical resistant",
+        "Halogen free",
+        "Dimensionally stable"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 聚酰亚胺(PI)透明聚酰亚胺薄膜（琥珀色）",
+        "耐UV及耐化学品",
+        "无卤素",
+        "尺寸稳定"
+      ],
+      "benefits_en": [
+        "Guards valuable printed information from chemicals, abrasion, high heat and other hostile conditions",
+        "Protects printed images from moisture exposure and smearing when heated/abraded",
+        "Provides long term protection from loss of image clarity and resolution"
+      ],
+      "benefits_zh": [
+        "保护重要印刷信息免受化学品、磨损、高温等恶劣条件影响",
+        "防止印刷图像受潮及受热/磨擦时晕染",
+        "长期保持图像清晰度和分辨率"
+      ],
+      "temperature_performance": "-40 to 932 °F (-40 to 500 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductSheet_Labels_Overlaminates.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/over-laminates-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductSheet_Labels_Overlaminates.pdf",
+        "https://polyonics.com/performancelabels/over-laminates-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XL-1561",
+      "name_en": "XL-1561 clear (amber) polyimide high temperature overlaminate (1 mil (25 μm) Polyimide)",
+      "name_zh": "XL-1561 透明（琥珀色）聚酰亚胺高温覆膜（1 mil (25 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "1 mil (25 μm) Polyimide, clear (amber) overlaminate film",
+      "facestock_zh": "1 mil (25 μm) 聚酰亚胺(PI)，透明（琥珀色）覆膜",
+      "adhesive_en": "2 mil (50 μm) High Temperature Acrylic",
+      "adhesive_zh": "2 mil (50 μm) 高温丙烯酸胶粘剂",
+      "application_en": "Protecting printed images: PCB and component tracking; heavy equipment, drying and curing ovens; metal processing plants; electronic PCB processing",
+      "application_zh": "保护印刷图像：PCB与元器件追踪；重型设备、干燥与固化炉；金属加工厂；电子PCB加工",
+      "industries": [
+        "Electronics",
+        "Metals"
+      ],
+      "features_en": [
+        "1 mil (25 μm) Polyimide clear polyimide film (amber)",
+        "UV and chemical resistant",
+        "Halogen free",
+        "Dimensionally stable"
+      ],
+      "features_zh": [
+        "1 mil (25 μm) 聚酰亚胺(PI)透明聚酰亚胺薄膜（琥珀色）",
+        "耐UV及耐化学品",
+        "无卤素",
+        "尺寸稳定"
+      ],
+      "benefits_en": [
+        "Guards valuable printed information from chemicals, abrasion, high heat and other hostile conditions",
+        "Protects printed images from moisture exposure and smearing when heated/abraded",
+        "Provides long term protection from loss of image clarity and resolution"
+      ],
+      "benefits_zh": [
+        "保护重要印刷信息免受化学品、磨损、高温等恶劣条件影响",
+        "防止印刷图像受潮及受热/磨擦时晕染",
+        "长期保持图像清晰度和分辨率"
+      ],
+      "temperature_performance": "-40 to 932 °F (-40 to 500 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductSheet_Labels_Overlaminates.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/over-laminates-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductSheet_Labels_Overlaminates.pdf",
+        "https://polyonics.com/performancelabels/over-laminates-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XL-1502",
+      "name_en": "XL-1502 clear (amber) polyimide high temperature overlaminate (2 mil (50 μm) Polyimide)",
+      "name_zh": "XL-1502 透明（琥珀色）聚酰亚胺高温覆膜（2 mil (50 μm) 聚酰亚胺(PI)）",
+      "facestock_en": "2 mil (50 μm) Polyimide, clear (amber) overlaminate film",
+      "facestock_zh": "2 mil (50 μm) 聚酰亚胺(PI)，透明（琥珀色）覆膜",
+      "adhesive_en": "1 mil (25 μm) Highly Aggressive Acrylic",
+      "adhesive_zh": "1 mil (25 μm) 超强力丙烯酸胶粘剂",
+      "application_en": "Protecting printed images: PCB and component tracking; heavy equipment, drying and curing ovens; metal processing plants; electronic PCB processing",
+      "application_zh": "保护印刷图像：PCB与元器件追踪；重型设备、干燥与固化炉；金属加工厂；电子PCB加工",
+      "industries": [
+        "Electronics",
+        "Metals"
+      ],
+      "features_en": [
+        "2 mil (50 μm) Polyimide clear polyimide film (amber)",
+        "UV and chemical resistant",
+        "Halogen free",
+        "Dimensionally stable"
+      ],
+      "features_zh": [
+        "2 mil (50 μm) 聚酰亚胺(PI)透明聚酰亚胺薄膜（琥珀色）",
+        "耐UV及耐化学品",
+        "无卤素",
+        "尺寸稳定"
+      ],
+      "benefits_en": [
+        "Guards valuable printed information from chemicals, abrasion, high heat and other hostile conditions",
+        "Protects printed images from moisture exposure and smearing when heated/abraded",
+        "Provides long term protection from loss of image clarity and resolution"
+      ],
+      "benefits_zh": [
+        "保护重要印刷信息免受化学品、磨损、高温等恶劣条件影响",
+        "防止印刷图像受潮及受热/磨擦时晕染",
+        "长期保持图像清晰度和分辨率"
+      ],
+      "temperature_performance": "100 hrs at 302 °F (150°C); 5 min at 500 °F (260 °C); 90 sec at 572 °F (300 °C)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/wp-content/uploads/2024/12/ProductSheet_Labels_Overlaminates.pdf",
+      "catalog_url": "https://polyonics.com/performancelabels/over-laminates-labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/wp-content/uploads/2024/12/ProductSheet_Labels_Overlaminates.pdf",
+        "https://polyonics.com/performancelabels/over-laminates-labels/",
+        "https://polyonics.com/resources/product-brochures/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-101M",
+      "name_en": "XF-101M Apex Series ultra-performance polyimide PCB label material",
+      "name_zh": "XF-101M Apex系列超高性能聚酰亚胺 PCB 标签材料",
+      "facestock_en": "Matte white polyimide, 1 mil",
+      "facestock_zh": "哑光白色聚酰亚胺，1 mil",
+      "adhesive_en": "Acrylic adhesive",
+      "adhesive_zh": "丙烯酸胶粘剂",
+      "application_en": "PCB identification and WIP labeling; electronic component tracking; asset and warranty labeling; compatible with common PCB process chemistries and fluxes",
+      "application_zh": "PCB标识与在制品(WIP)标签；电子元器件追踪；资产与保修标签；兼容常见PCB工艺化学品及助焊剂",
+      "industries": [
+        "Electronics",
+        "Aerospace",
+        "Automotive",
+        "Laboratory"
+      ],
+      "features_en": [
+        "Matte white polyimide, 1 mil",
+        "PCB-ready durability and printability",
+        "Next-gen coating engineered for improved heat, chemical and flux resistance",
+        "Optimized for crisp, high-contrast thermal transfer (TTR) printing",
+        "Made in the USA"
+      ],
+      "features_zh": [
+        "哑光白色聚酰亚胺，1 mil",
+        "面向PCB的耐久性与可打印性",
+        "新一代涂层，耐热、耐化学品及耐助焊剂性能提升",
+        "为清晰高对比热转印(TTR)打印优化",
+        "美国制造"
+      ],
+      "benefits_en": [
+        "72% improvement in flux solder performance vs. legacy line (validated in testing)",
+        "15% improvement in cleaner resistance vs. legacy line, helping labels survive high-pressure washes",
+        "Maintains small-font and barcode readability through reflow and cleaning",
+        "Labels stay put and remain readable at elevated temperatures"
+      ],
+      "benefits_zh": [
+        "助焊剂焊接性能较上一代提升72%（经测试验证）",
+        "耐清洗剂性能提升15%，标签可耐受高压清洗",
+        "小字体和条码在回流焊与清洗后仍可读",
+        "高温下标签牢固且保持可读"
+      ],
+      "temperature_performance": "Up to 100 hours at 302 °F (150 °C), 5 minutes at 500 °F (260 °C), 90 seconds at 572 °F (300 °C) (typical performance; use case dependent, see TDS)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/highperformancelabels/",
+      "catalog_url": "https://polyonics.com/highperformancelabels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/highperformancelabels/",
+        "https://polyonics.com/industries/electronics/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-102MM",
+      "name_en": "XF-102MM Apex Series ultra-performance polyimide PCB label material",
+      "name_zh": "XF-102MM Apex系列超高性能聚酰亚胺 PCB 标签材料",
+      "facestock_en": "Matte white polyimide, 2 mil",
+      "facestock_zh": "哑光白色聚酰亚胺，2 mil",
+      "adhesive_en": "Acrylic adhesive",
+      "adhesive_zh": "丙烯酸胶粘剂",
+      "application_en": "PCB identification and WIP labeling; electronic component tracking; asset and warranty labeling; compatible with common PCB process chemistries and fluxes",
+      "application_zh": "PCB标识与在制品(WIP)标签；电子元器件追踪；资产与保修标签；兼容常见PCB工艺化学品及助焊剂",
+      "industries": [
+        "Electronics",
+        "Aerospace",
+        "Automotive",
+        "Laboratory"
+      ],
+      "features_en": [
+        "Matte white polyimide, 2 mil",
+        "PCB-ready durability and printability",
+        "Next-gen coating engineered for improved heat, chemical and flux resistance",
+        "Optimized for crisp, high-contrast thermal transfer (TTR) printing",
+        "Made in the USA"
+      ],
+      "features_zh": [
+        "哑光白色聚酰亚胺，2 mil",
+        "面向PCB的耐久性与可打印性",
+        "新一代涂层，耐热、耐化学品及耐助焊剂性能提升",
+        "为清晰高对比热转印(TTR)打印优化",
+        "美国制造"
+      ],
+      "benefits_en": [
+        "72% improvement in flux solder performance vs. legacy line (validated in testing)",
+        "15% improvement in cleaner resistance vs. legacy line, helping labels survive high-pressure washes",
+        "Maintains small-font and barcode readability through reflow and cleaning",
+        "Labels stay put and remain readable at elevated temperatures"
+      ],
+      "benefits_zh": [
+        "助焊剂焊接性能较上一代提升72%（经测试验证）",
+        "耐清洗剂性能提升15%，标签可耐受高压清洗",
+        "小字体和条码在回流焊与清洗后仍可读",
+        "高温下标签牢固且保持可读"
+      ],
+      "temperature_performance": "Up to 100 hours at 302 °F (150 °C), 5 minutes at 500 °F (260 °C), 90 seconds at 572 °F (300 °C) (typical performance; use case dependent, see TDS)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/highperformancelabels/",
+      "catalog_url": "https://polyonics.com/highperformancelabels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/highperformancelabels/",
+        "https://polyonics.com/industries/electronics/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-101S",
+      "name_en": "XF-101S Apex Series ultra-performance polyimide PCB label material",
+      "name_zh": "XF-101S Apex系列超高性能聚酰亚胺 PCB 标签材料",
+      "facestock_en": "Semi-gloss white polyimide, 1 mil",
+      "facestock_zh": "半光泽白色聚酰亚胺，1 mil",
+      "adhesive_en": "Acrylic adhesive",
+      "adhesive_zh": "丙烯酸胶粘剂",
+      "application_en": "PCB identification and WIP labeling; electronic component tracking; asset and warranty labeling; compatible with common PCB process chemistries and fluxes",
+      "application_zh": "PCB标识与在制品(WIP)标签；电子元器件追踪；资产与保修标签；兼容常见PCB工艺化学品及助焊剂",
+      "industries": [
+        "Electronics",
+        "Aerospace",
+        "Automotive",
+        "Laboratory"
+      ],
+      "features_en": [
+        "Semi-gloss white polyimide, 1 mil",
+        "Balanced readability and handling",
+        "Next-gen coating engineered for improved heat, chemical and flux resistance",
+        "Optimized for crisp, high-contrast thermal transfer (TTR) printing",
+        "Made in the USA"
+      ],
+      "features_zh": [
+        "半光泽白色聚酰亚胺，1 mil",
+        "兼顾可读性与操作性",
+        "新一代涂层，耐热、耐化学品及耐助焊剂性能提升",
+        "为清晰高对比热转印(TTR)打印优化",
+        "美国制造"
+      ],
+      "benefits_en": [
+        "72% improvement in flux solder performance vs. legacy line (validated in testing)",
+        "15% improvement in cleaner resistance vs. legacy line, helping labels survive high-pressure washes",
+        "Maintains small-font and barcode readability through reflow and cleaning",
+        "Labels stay put and remain readable at elevated temperatures"
+      ],
+      "benefits_zh": [
+        "助焊剂焊接性能较上一代提升72%（经测试验证）",
+        "耐清洗剂性能提升15%，标签可耐受高压清洗",
+        "小字体和条码在回流焊与清洗后仍可读",
+        "高温下标签牢固且保持可读"
+      ],
+      "temperature_performance": "Up to 100 hours at 302 °F (150 °C), 5 minutes at 500 °F (260 °C), 90 seconds at 572 °F (300 °C) (typical performance; use case dependent, see TDS)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/highperformancelabels/",
+      "catalog_url": "https://polyonics.com/highperformancelabels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/highperformancelabels/",
+        "https://polyonics.com/industries/electronics/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-102S",
+      "name_en": "XF-102S Apex Series ultra-performance polyimide PCB label material",
+      "name_zh": "XF-102S Apex系列超高性能聚酰亚胺 PCB 标签材料",
+      "facestock_en": "Semi-gloss white polyimide, 2 mil",
+      "facestock_zh": "半光泽白色聚酰亚胺，2 mil",
+      "adhesive_en": "Acrylic adhesive",
+      "adhesive_zh": "丙烯酸胶粘剂",
+      "application_en": "PCB identification and WIP labeling; electronic component tracking; asset and warranty labeling; compatible with common PCB process chemistries and fluxes",
+      "application_zh": "PCB标识与在制品(WIP)标签；电子元器件追踪；资产与保修标签；兼容常见PCB工艺化学品及助焊剂",
+      "industries": [
+        "Electronics",
+        "Aerospace",
+        "Automotive",
+        "Laboratory"
+      ],
+      "features_en": [
+        "Semi-gloss white polyimide, 2 mil",
+        "Balanced readability and handling",
+        "Next-gen coating engineered for improved heat, chemical and flux resistance",
+        "Optimized for crisp, high-contrast thermal transfer (TTR) printing",
+        "Made in the USA"
+      ],
+      "features_zh": [
+        "半光泽白色聚酰亚胺，2 mil",
+        "兼顾可读性与操作性",
+        "新一代涂层，耐热、耐化学品及耐助焊剂性能提升",
+        "为清晰高对比热转印(TTR)打印优化",
+        "美国制造"
+      ],
+      "benefits_en": [
+        "72% improvement in flux solder performance vs. legacy line (validated in testing)",
+        "15% improvement in cleaner resistance vs. legacy line, helping labels survive high-pressure washes",
+        "Maintains small-font and barcode readability through reflow and cleaning",
+        "Labels stay put and remain readable at elevated temperatures"
+      ],
+      "benefits_zh": [
+        "助焊剂焊接性能较上一代提升72%（经测试验证）",
+        "耐清洗剂性能提升15%，标签可耐受高压清洗",
+        "小字体和条码在回流焊与清洗后仍可读",
+        "高温下标签牢固且保持可读"
+      ],
+      "temperature_performance": "Up to 100 hours at 302 °F (150 °C), 5 minutes at 500 °F (260 °C), 90 seconds at 572 °F (300 °C) (typical performance; use case dependent, see TDS)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/highperformancelabels/",
+      "catalog_url": "https://polyonics.com/highperformancelabels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/highperformancelabels/",
+        "https://polyonics.com/industries/electronics/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-101G",
+      "name_en": "XF-101G Apex Series ultra-performance polyimide PCB label material",
+      "name_zh": "XF-101G Apex系列超高性能聚酰亚胺 PCB 标签材料",
+      "facestock_en": "Gloss white polyimide, 1 mil",
+      "facestock_zh": "光泽白色聚酰亚胺，1 mil",
+      "adhesive_en": "Acrylic adhesive",
+      "adhesive_zh": "丙烯酸胶粘剂",
+      "application_en": "PCB identification and WIP labeling; electronic component tracking; asset and warranty labeling; compatible with common PCB process chemistries and fluxes",
+      "application_zh": "PCB标识与在制品(WIP)标签；电子元器件追踪；资产与保修标签；兼容常见PCB工艺化学品及助焊剂",
+      "industries": [
+        "Electronics",
+        "Aerospace",
+        "Automotive",
+        "Laboratory"
+      ],
+      "features_en": [
+        "Gloss white polyimide, 1 mil",
+        "Highest brightness for tiny fonts and dense barcodes",
+        "Next-gen coating engineered for improved heat, chemical and flux resistance",
+        "Optimized for crisp, high-contrast thermal transfer (TTR) printing",
+        "Made in the USA"
+      ],
+      "features_zh": [
+        "光泽白色聚酰亚胺，1 mil",
+        "最高亮度，适合小字体和密集条码",
+        "新一代涂层，耐热、耐化学品及耐助焊剂性能提升",
+        "为清晰高对比热转印(TTR)打印优化",
+        "美国制造"
+      ],
+      "benefits_en": [
+        "72% improvement in flux solder performance vs. legacy line (validated in testing)",
+        "15% improvement in cleaner resistance vs. legacy line, helping labels survive high-pressure washes",
+        "Maintains small-font and barcode readability through reflow and cleaning",
+        "Labels stay put and remain readable at elevated temperatures"
+      ],
+      "benefits_zh": [
+        "助焊剂焊接性能较上一代提升72%（经测试验证）",
+        "耐清洗剂性能提升15%，标签可耐受高压清洗",
+        "小字体和条码在回流焊与清洗后仍可读",
+        "高温下标签牢固且保持可读"
+      ],
+      "temperature_performance": "Up to 100 hours at 302 °F (150 °C), 5 minutes at 500 °F (260 °C), 90 seconds at 572 °F (300 °C) (typical performance; use case dependent, see TDS)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/highperformancelabels/",
+      "catalog_url": "https://polyonics.com/highperformancelabels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/highperformancelabels/",
+        "https://polyonics.com/industries/electronics/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-102G",
+      "name_en": "XF-102G Apex Series ultra-performance polyimide PCB label material",
+      "name_zh": "XF-102G Apex系列超高性能聚酰亚胺 PCB 标签材料",
+      "facestock_en": "Gloss white polyimide, 2 mil",
+      "facestock_zh": "光泽白色聚酰亚胺，2 mil",
+      "adhesive_en": "Acrylic adhesive",
+      "adhesive_zh": "丙烯酸胶粘剂",
+      "application_en": "PCB identification and WIP labeling; electronic component tracking; asset and warranty labeling; compatible with common PCB process chemistries and fluxes",
+      "application_zh": "PCB标识与在制品(WIP)标签；电子元器件追踪；资产与保修标签；兼容常见PCB工艺化学品及助焊剂",
+      "industries": [
+        "Electronics",
+        "Aerospace",
+        "Automotive",
+        "Laboratory"
+      ],
+      "features_en": [
+        "Gloss white polyimide, 2 mil",
+        "Highest brightness for tiny fonts and dense barcodes",
+        "Next-gen coating engineered for improved heat, chemical and flux resistance",
+        "Optimized for crisp, high-contrast thermal transfer (TTR) printing",
+        "Made in the USA"
+      ],
+      "features_zh": [
+        "光泽白色聚酰亚胺，2 mil",
+        "最高亮度，适合小字体和密集条码",
+        "新一代涂层，耐热、耐化学品及耐助焊剂性能提升",
+        "为清晰高对比热转印(TTR)打印优化",
+        "美国制造"
+      ],
+      "benefits_en": [
+        "72% improvement in flux solder performance vs. legacy line (validated in testing)",
+        "15% improvement in cleaner resistance vs. legacy line, helping labels survive high-pressure washes",
+        "Maintains small-font and barcode readability through reflow and cleaning",
+        "Labels stay put and remain readable at elevated temperatures"
+      ],
+      "benefits_zh": [
+        "助焊剂焊接性能较上一代提升72%（经测试验证）",
+        "耐清洗剂性能提升15%，标签可耐受高压清洗",
+        "小字体和条码在回流焊与清洗后仍可读",
+        "高温下标签牢固且保持可读"
+      ],
+      "temperature_performance": "Up to 100 hours at 302 °F (150 °C), 5 minutes at 500 °F (260 °C), 90 seconds at 572 °F (300 °C) (typical performance; use case dependent, see TDS)",
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "tds_url": "https://polyonics.com/highperformancelabels/",
+      "catalog_url": "https://polyonics.com/highperformancelabels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/highperformancelabels/",
+        "https://polyonics.com/industries/electronics/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-101SE",
+      "name_en": "XF-101SE Apex Series ultra-performance polyimide PCB label material",
+      "name_zh": "XF-101SE Apex系列超高性能聚酰亚胺 PCB 标签材料",
+      "facestock_en": "ESD-safe semi-gloss polyimide variant (Apex Series)",
+      "facestock_zh": "ESD安全半光泽聚酰亚胺（Apex系列）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "PCB identification and WIP labeling; electronic component tracking; asset and warranty labeling; compatible with common PCB process chemistries and fluxes",
+      "application_zh": "PCB标识与在制品(WIP)标签；电子元器件追踪；资产与保修标签；兼容常见PCB工艺化学品及助焊剂",
+      "industries": [
+        "Electronics",
+        "Aerospace",
+        "Automotive",
+        "Laboratory"
+      ],
+      "features_en": [
+        "ESD-safe semi-gloss polyimide variant (Apex Series)",
+        "Antistatic construction to support ESD-sensitive workflows",
+        "Next-gen coating engineered for improved heat, chemical and flux resistance",
+        "Optimized for crisp, high-contrast thermal transfer (TTR) printing",
+        "Made in the USA"
+      ],
+      "features_zh": [
+        "ESD安全半光泽聚酰亚胺（Apex系列）",
+        "抗静电结构，支持ESD敏感产线",
+        "新一代涂层，耐热、耐化学品及耐助焊剂性能提升",
+        "为清晰高对比热转印(TTR)打印优化",
+        "美国制造"
+      ],
+      "benefits_en": [
+        "72% improvement in flux solder performance vs. legacy line (validated in testing)",
+        "15% improvement in cleaner resistance vs. legacy line, helping labels survive high-pressure washes",
+        "Maintains small-font and barcode readability through reflow and cleaning",
+        "Labels stay put and remain readable at elevated temperatures"
+      ],
+      "benefits_zh": [
+        "助焊剂焊接性能较上一代提升72%（经测试验证）",
+        "耐清洗剂性能提升15%，标签可耐受高压清洗",
+        "小字体和条码在回流焊与清洗后仍可读",
+        "高温下标签牢固且保持可读"
+      ],
+      "temperature_performance": "Up to 100 hours at 302 °F (150 °C), 5 minutes at 500 °F (260 °C), 90 seconds at 572 °F (300 °C) (typical performance; use case dependent, see TDS)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "ANSI/ESD S20.20 (options available)"
+      ],
+      "tds_url": "https://polyonics.com/highperformancelabels/",
+      "catalog_url": "https://polyonics.com/highperformancelabels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/highperformancelabels/",
+        "https://polyonics.com/industries/electronics/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-102SE",
+      "name_en": "XF-102SE Apex Series ultra-performance polyimide PCB label material",
+      "name_zh": "XF-102SE Apex系列超高性能聚酰亚胺 PCB 标签材料",
+      "facestock_en": "ESD-safe semi-gloss polyimide variant (Apex Series)",
+      "facestock_zh": "ESD安全半光泽聚酰亚胺（Apex系列）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "PCB identification and WIP labeling; electronic component tracking; asset and warranty labeling; compatible with common PCB process chemistries and fluxes",
+      "application_zh": "PCB标识与在制品(WIP)标签；电子元器件追踪；资产与保修标签；兼容常见PCB工艺化学品及助焊剂",
+      "industries": [
+        "Electronics",
+        "Aerospace",
+        "Automotive",
+        "Laboratory"
+      ],
+      "features_en": [
+        "ESD-safe semi-gloss polyimide variant (Apex Series)",
+        "Antistatic construction to support ESD-sensitive workflows",
+        "Next-gen coating engineered for improved heat, chemical and flux resistance",
+        "Optimized for crisp, high-contrast thermal transfer (TTR) printing",
+        "Made in the USA"
+      ],
+      "features_zh": [
+        "ESD安全半光泽聚酰亚胺（Apex系列）",
+        "抗静电结构，支持ESD敏感产线",
+        "新一代涂层，耐热、耐化学品及耐助焊剂性能提升",
+        "为清晰高对比热转印(TTR)打印优化",
+        "美国制造"
+      ],
+      "benefits_en": [
+        "72% improvement in flux solder performance vs. legacy line (validated in testing)",
+        "15% improvement in cleaner resistance vs. legacy line, helping labels survive high-pressure washes",
+        "Maintains small-font and barcode readability through reflow and cleaning",
+        "Labels stay put and remain readable at elevated temperatures"
+      ],
+      "benefits_zh": [
+        "助焊剂焊接性能较上一代提升72%（经测试验证）",
+        "耐清洗剂性能提升15%，标签可耐受高压清洗",
+        "小字体和条码在回流焊与清洗后仍可读",
+        "高温下标签牢固且保持可读"
+      ],
+      "temperature_performance": "Up to 100 hours at 302 °F (150 °C), 5 minutes at 500 °F (260 °C), 90 seconds at 572 °F (300 °C) (typical performance; use case dependent, see TDS)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "ANSI/ESD S20.20 (options available)"
+      ],
+      "tds_url": "https://polyonics.com/highperformancelabels/",
+      "catalog_url": "https://polyonics.com/highperformancelabels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/highperformancelabels/",
+        "https://polyonics.com/industries/electronics/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-101ME",
+      "name_en": "XF-101ME Apex Series ultra-performance polyimide PCB label material",
+      "name_zh": "XF-101ME Apex系列超高性能聚酰亚胺 PCB 标签材料",
+      "facestock_en": "ESD-safe variant (Apex Series; page lists under ESD-safe semi-gloss variants)",
+      "facestock_zh": "ESD安全型号（Apex系列，页面列于ESD安全半光泽型号）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "PCB identification and WIP labeling; electronic component tracking; asset and warranty labeling; compatible with common PCB process chemistries and fluxes",
+      "application_zh": "PCB标识与在制品(WIP)标签；电子元器件追踪；资产与保修标签；兼容常见PCB工艺化学品及助焊剂",
+      "industries": [
+        "Electronics",
+        "Aerospace",
+        "Automotive",
+        "Laboratory"
+      ],
+      "features_en": [
+        "ESD-safe variant (Apex Series; page lists under ESD-safe semi-gloss variants)",
+        "Antistatic construction to support ESD-sensitive workflows",
+        "Next-gen coating engineered for improved heat, chemical and flux resistance",
+        "Optimized for crisp, high-contrast thermal transfer (TTR) printing",
+        "Made in the USA"
+      ],
+      "features_zh": [
+        "ESD安全型号（Apex系列，页面列于ESD安全半光泽型号）",
+        "抗静电结构，支持ESD敏感产线",
+        "新一代涂层，耐热、耐化学品及耐助焊剂性能提升",
+        "为清晰高对比热转印(TTR)打印优化",
+        "美国制造"
+      ],
+      "benefits_en": [
+        "72% improvement in flux solder performance vs. legacy line (validated in testing)",
+        "15% improvement in cleaner resistance vs. legacy line, helping labels survive high-pressure washes",
+        "Maintains small-font and barcode readability through reflow and cleaning",
+        "Labels stay put and remain readable at elevated temperatures"
+      ],
+      "benefits_zh": [
+        "助焊剂焊接性能较上一代提升72%（经测试验证）",
+        "耐清洗剂性能提升15%，标签可耐受高压清洗",
+        "小字体和条码在回流焊与清洗后仍可读",
+        "高温下标签牢固且保持可读"
+      ],
+      "temperature_performance": "Up to 100 hours at 302 °F (150 °C), 5 minutes at 500 °F (260 °C), 90 seconds at 572 °F (300 °C) (typical performance; use case dependent, see TDS)",
+      "certifications": [
+        "REACH",
+        "RoHS",
+        "ANSI/ESD S20.20 (options available)"
+      ],
+      "tds_url": "https://polyonics.com/highperformancelabels/",
+      "catalog_url": "https://polyonics.com/highperformancelabels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/highperformancelabels/",
+        "https://polyonics.com/industries/electronics/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "XF-603FR",
+      "name_en": "XF-603FR flame retardant polyimide label material (Tedlar alternative)",
+      "name_zh": "XF-603FR 阻燃聚酰亚胺标签材料（Tedlar替代品）",
+      "facestock_en": "Flame-retardant polyimide label material (thickness not stated on page)",
+      "facestock_zh": "阻燃聚酰亚胺(PI)标签材料（页面未标明厚度）",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Harsh environment labeling for avionics, aerospace and military applications; polyimide-based replacement for Tedlar",
+      "application_zh": "航电、航空航天及军工严苛环境标签；基于聚酰亚胺的Tedlar替代方案",
+      "industries": [
+        "Aerospace",
+        "Military"
+      ],
+      "features_en": [
+        "Special coatings combined with halogen free flame-retardant technologies",
+        "High temperature resistance of polyimide film",
+        "Halogen free"
+      ],
+      "features_zh": [
+        "专用涂层结合无卤阻燃技术",
+        "聚酰亚胺薄膜的耐高温性能",
+        "无卤素"
+      ],
+      "benefits_en": [
+        "Reliable and cost-effective alternative to Tedlar for aerospace manufacturers",
+        "Durable label material meeting challenging aerospace industry requirements"
+      ],
+      "benefits_zh": [
+        "为航空制造商提供可靠且高性价比的Tedlar替代品",
+        "满足航空业严苛要求的耐久标签材料"
+      ],
+      "temperature_performance": "",
+      "certifications": [
+        "FAR 25.853 and 25.855 (smoke and toxicity testing)",
+        "BSS7238",
+        "BSS7239",
+        "IEC 61249-2-21",
+        "REACH",
+        "RoHS",
+        "UL 969 (file MH 19503 PGJI2)",
+        "UL94 V-0"
+      ],
+      "tds_url": "https://polyonics.com/industries/aerospace-avionics/",
+      "catalog_url": "https://polyonics.com/industries/aerospace-avionics/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/industries/aerospace-avionics/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "ML-3703",
+      "name_en": "ML-3703 HIGHdegree high temperature metal industry label",
+      "name_zh": "ML-3703 HIGHdegree 高温金属行业标签",
+      "facestock_en": "",
+      "facestock_zh": "",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Identifying ingots, coils, and sows stored indoors or outdoors; aluminum coils and ingots (recommended up to 750 °F on HIGHdegree page)",
+      "application_zh": "用于室内外存放的铸锭、卷材和铝母锭(sows)标识；铝卷与铸锭（HIGHdegree页推荐至750 °F）",
+      "industries": [
+        "Metals"
+      ],
+      "features_en": [
+        "Exceptional heat resistance",
+        "Weatherproof durability",
+        "Thermal transfer printable for variable information"
+      ],
+      "features_zh": [
+        "卓越耐热性",
+        "耐候耐久",
+        "可热转印打印可变信息"
+      ],
+      "benefits_en": [
+        "Long-term barcode readability for precise tracking and accountability",
+        "Enhanced part traceability, workplace safety and operational efficiency"
+      ],
+      "benefits_zh": [
+        "长期条码可读，实现精准追踪与可问责性",
+        "提升零件追溯性、作业安全与运营效率"
+      ],
+      "temperature_performance": "Performs up to 1112 ºF (600 ºC)",
+      "certifications": [],
+      "tds_url": "https://polyonics.com/highdegree/labels/",
+      "catalog_url": "https://polyonics.com/highdegree/labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/highdegree/labels/",
+        "https://polyonics.com/highdegree/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "ML-3708",
+      "name_en": "ML-3708 HIGHdegree high temperature metal industry label",
+      "name_zh": "ML-3708 HIGHdegree 高温金属行业标签",
+      "facestock_en": "",
+      "facestock_zh": "",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Parts exposed to harsh heat and weather conditions",
+      "application_zh": "暴露于严酷高温和恶劣天气条件下的零部件标识",
+      "industries": [
+        "Metals"
+      ],
+      "features_en": [
+        "Exceptional heat resistance",
+        "Weatherproof durability",
+        "Thermal transfer printable for variable information"
+      ],
+      "features_zh": [
+        "卓越耐热性",
+        "耐候耐久",
+        "可热转印打印可变信息"
+      ],
+      "benefits_en": [
+        "Long-term barcode readability for precise tracking and accountability",
+        "Enhanced part traceability, workplace safety and operational efficiency"
+      ],
+      "benefits_zh": [
+        "长期条码可读，实现精准追踪与可问责性",
+        "提升零件追溯性、作业安全与运营效率"
+      ],
+      "temperature_performance": "Withstands up to 842 ºF (450 ºC)",
+      "certifications": [],
+      "tds_url": "https://polyonics.com/highdegree/labels/",
+      "catalog_url": "https://polyonics.com/highdegree/labels/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/highdegree/labels/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "MT-3630",
+      "name_en": "MT-3630 HIGHdegree high temperature metal industry tag",
+      "name_zh": "MT-3630 HIGHdegree 高温金属行业吊牌",
+      "facestock_en": "",
+      "facestock_zh": "",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Traceability of steel billets, slabs, rebar and more during production, transit, or storage; sows and plates; rebar and long products",
+      "application_zh": "钢坨、板坯、螺纹钢等在生产、运输或仓储中的追溯；铝母锭(sows)与板材；螺纹钢及长材",
+      "industries": [
+        "Metals"
+      ],
+      "features_en": [
+        "Exceptional heat resistance",
+        "Weatherproof durability",
+        "Thermal transfer printable for variable information"
+      ],
+      "features_zh": [
+        "卓越耐热性",
+        "耐候耐久",
+        "可热转印打印可变信息"
+      ],
+      "benefits_en": [
+        "Long-term barcode readability for precise tracking and accountability",
+        "Enhanced part traceability, workplace safety and operational efficiency"
+      ],
+      "benefits_zh": [
+        "长期条码可读，实现精准追踪与可问责性",
+        "提升零件追溯性、作业安全与运营效率"
+      ],
+      "temperature_performance": "Rated for continuous exposure up to 1112 ºF (600 ºC)",
+      "certifications": [],
+      "tds_url": "https://polyonics.com/highdegree/tag/",
+      "catalog_url": "https://polyonics.com/highdegree/tag/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/highdegree/tag/",
+        "https://polyonics.com/highdegree/"
+      ],
+      "last_verified": "2026-07-03"
+    },
+    {
+      "manufacturer": "Polyonics",
+      "product_code": "MT-3620",
+      "name_en": "MT-3620 HIGHdegree high temperature metal industry tag",
+      "name_zh": "MT-3620 HIGHdegree 高温金属行业吊牌",
+      "facestock_en": "",
+      "facestock_zh": "",
+      "adhesive_en": "",
+      "adhesive_zh": "",
+      "application_en": "Reliable barcode tracking through tough industrial workflows",
+      "application_zh": "在严苛工业流程中实现可靠的条码追踪",
+      "industries": [
+        "Metals"
+      ],
+      "features_en": [
+        "Exceptional heat resistance",
+        "Weatherproof durability",
+        "Thermal transfer printable for variable information"
+      ],
+      "features_zh": [
+        "卓越耐热性",
+        "耐候耐久",
+        "可热转印打印可变信息"
+      ],
+      "benefits_en": [
+        "Long-term barcode readability for precise tracking and accountability",
+        "Enhanced part traceability, workplace safety and operational efficiency"
+      ],
+      "benefits_zh": [
+        "长期条码可读，实现精准追踪与可问责性",
+        "提升零件追溯性、作业安全与运营效率"
+      ],
+      "temperature_performance": "Built for exposure up to 1112 ºF (600 ºC)",
+      "certifications": [],
+      "tds_url": "https://polyonics.com/highdegree/tag/",
+      "catalog_url": "https://polyonics.com/highdegree/tag/",
+      "data_status": "verified",
+      "sources": [
+        "https://polyonics.com/highdegree/tag/"
+      ],
+      "last_verified": "2026-07-03"
     }
   ]
 }
