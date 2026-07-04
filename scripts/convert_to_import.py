@@ -51,6 +51,8 @@ FACE_MAP = [  # (关键词正则, code) 顺序敏感: 具体的在前
     (r"nonwoven", "NONWOVEN"),
     (r"foam base|foam", "FOAM"),
     (r"tedlar|\bPVF\b", "PVF"),
+    (r"tissue", "TISSUE"),
+    (r"thermal top", "PAPER"),
     (r"aluminum|aluminium|\bAL\b core", "ALU_FOIL"),
 ]
 ADH_MAP = [
@@ -361,9 +363,73 @@ def conv_old(target_mfr, brand_code, brand_cn_prefix):
     return rows
 
 
+# ================================================================ Avery (records_raw.json 通用格式, FLEXcon同构)
+def conv_raw_generic(raw_path, brand_code, shorten_model=False):
+    data = json.load(open(raw_path))["records"]
+    rows = {}
+    for r in data:
+        model = str(r.get("model", "")).strip()
+        if not model:
+            continue
+        if shorten_model:  # FLEXcon: 全名截短为"产品家族+编号"(如 THERMLfilm SELECT 10852)
+            m = re.match(r"^(.*?\d{4,6}[A-Z]{0,2})\b", model)
+            if m and len(m.group(1)) < len(model):
+                model = m.group(1).strip()
+        temp_raw = r.get("temp_raw", "")
+        tmax = c_int(temp_raw)
+        if tmax is None and temp_raw:  # 只有华氏度时换算(设计文档3.3规则②)
+            m = re.search(r"(-?\d+)\s*°?\s*F\b", temp_raw)
+            if m:
+                tmax = round((int(m.group(1)) - 32) * 5 / 9)
+        neg = re.findall(r"(-\d+)\s*(?:°\s*C|℃)", temp_raw)
+        tmin = min(int(n) for n in neg) if neg else ""
+        text_all = " ".join([r.get("chem_raw", ""), r.get("app_desc", "")]
+                            + r.get("features", []) + r.get("benefits", []))
+        src = r.get("source_category_raw", "")
+        for k, lab in (("facestock_raw", "原面材"), ("adhesive_raw", "原胶水"), ("liner", "底纸")):
+            if r.get(k):
+                src += f" | {lab}: {r[k]}"
+        if temp_raw:
+            src += f" | 原文耐温: {temp_raw[:120]}"
+        url = r.get("url", "")
+        tds = r.get("tds", "") or (url if ".pdf" in url.lower() else "")
+        row = finish_pub(row_dict(
+            brand=brand_code, model=model,
+            name_cn=r.get("name_cn", ""), name_en=r.get("name_en", ""),
+            face=map_code(FACE_MAP, r.get("facestock_raw", "")),
+            adh=map_code(ADH_MAP, r.get("adhesive_raw", "")),
+            apps=",".join(dict.fromkeys(r.get("sectors", []))),
+            tmin=tmin, tmax=tmax if tmax is not None else "", tpeak="",
+            chem=chem_from_text(text_all),
+            thick=um_from(r.get("thickness_raw", "")) or "",
+            color="", print="", cert=r.get("cert", ""),
+            feature="; ".join(r.get("features", []))[:800],
+            benefit="; ".join(r.get("benefits", []))[:800],
+            app_desc=r.get("app_desc", "")[:500],
+            source_raw=src[:500], url=url, tds=tds,
+        ))
+        if model in rows:  # 双板块同型号合并
+            old = rows[model]
+            merged_apps = ",".join(dict.fromkeys(
+                filter(None, old["apps"].split(",") + row["apps"].split(","))))
+            for k, v in row.items():
+                if old[k] in ("", None) and v not in ("", None):
+                    old[k] = v
+            old["apps"] = merged_apps
+        else:
+            rows[model] = row
+    return list(rows.values())
+
+
 def main():
     stats = {}
     stats["brady.xlsx"] = write_xlsx(conv_brady(), "brady.xlsx")
+    if (RAW / "avery/records_raw.json").exists():
+        stats["avery.xlsx"] = write_xlsx(
+            conv_raw_generic(RAW / "avery/records_raw.json", "AVERY"), "avery.xlsx")
+    if (RAW / "flexcon/records_raw.json").exists():
+        stats["flexcon.xlsx"] = write_xlsx(
+            conv_raw_generic(RAW / "flexcon/records_raw.json", "FLEXCON", shorten_model=True), "flexcon.xlsx")
     stats["3m.xlsx"] = write_xlsx(conv_3m(), "3m.xlsx")
     stats["lintec.xlsx"] = write_xlsx(conv_old("LINTEC", "LINTEC", "琳得科"), "lintec.xlsx")
     stats["polyonics.xlsx"] = write_xlsx(conv_old("Polyonics", "POLYONICS", ""), "polyonics.xlsx")
