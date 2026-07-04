@@ -1,0 +1,124 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000232267/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000232267/",
+ "name": "3M™ Thermal Transfer Label Material 7873, Bright Silver Polyester Gloss, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100066272",
+ "short_description": "3M™ Thermal Transfer Polyester Label Material 7873 is a gloss polyester label material that offers premium durability and moisture resistance. This label product utilizes 3M™ High Performance Acrylic Adhesive 350, it offers excellent chemical resistance and holding strength even at high temperatures.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Bright silver PET facestock.",
+  "Adhesive can permanently bond to high surface energy (HSE) and low surface energy (LSE) plastics, textured and contoured surfaces, powder coatings, and slightly oily metals.",
+  "Thick adhesive caliper provides for stronger bond on textured surfaces.",
+  "Facestock is topcoated for thermal transfer printing. The topcoat also provides improved ink anchorage for traditional forms of press printing."
+ ],
+ "attributes": {
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "1.8 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "350 High Holding Acrylic"
+  ],
+  "Facestock Color": [
+   "Silver"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "300 ℉"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "55# Densified Kraft"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "3.2 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.08 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "Silver"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Bright"
+  ],
+  "Topcoat": [
+   "TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2399701O/3m-thermal-transfer-polyester-label-material-7873.pdf?&fn=3M-Thermal-Transfer-Polyester-Label-Material-7873.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Thermal Transfer Label Material 7873",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/K43pJr3Ga4M",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7873",
+  "title": "3M™ Thermal Transfer Label Material 7873, Bright Silver Polyester Gloss, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

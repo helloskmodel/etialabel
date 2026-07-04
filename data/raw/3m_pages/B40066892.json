@@ -1,0 +1,153 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b40066892/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b40066892/",
+ "name": "3M™ Laser Printable Label Materials",
+ "product_number": "",
+ "stock_number": "B40066892",
+ "short_description": "3M™ Laser Printable Label Materials are topcoated to be printed on laser printers. A laser is used to electrically charge a drum that collects toner and applies it to the label which is then heated to make the image permanent.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Labels with a topcoating specially designed for use with laser printers"
+ ],
+ "attributes": {
+  "Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Adhesive Thickness (Metric)": [
+   "0.02 mm"
+  ],
+  "Adhesive Type": [
+   "Solvent Acrylic"
+  ],
+  "Backing Material": [
+   "Polyester"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.02 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "310 High Precision Acrylic"
+  ],
+  "Facestock Color": [
+   "White"
+  ],
+  "Facestock Material": [
+   "Polyester",
+   "Polyolefin"
+  ],
+  "Facestock Thickness": [
+   "2.3 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.06 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Celsius)": [
+   "150 ℃"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "302 ℉"
+  ],
+  "Minimum Operating Temperature (Celsius)": [
+   "-40 ℃"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Nominal Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "55# Clay-Coated Kraft"
+  ],
+  "Primary Liner Color": [
+   "Brown"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "3.7 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.09 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Laser",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Tape Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Topcoat": [
+   "TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/121769O/laser-toner-polyester-label-material-7840-7840tl.pdf?&fn=70070910396.pdf"
+ ],
+ "resources": [
+  {
+   "title": "Laser Toner Polyester Label Material 7840_7840TL",
+   "url": "https://multimedia.3m.com/mws/media/121769O/laser-toner-polyester-label-material-7840-7840tl.pdf?&fn=70070910396.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "",
+  "title": "3M™ Laser Printable Label Materials",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

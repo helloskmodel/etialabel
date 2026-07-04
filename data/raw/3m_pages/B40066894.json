@@ -1,0 +1,66 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b40066894/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b40066894/",
+ "name": "3M™ Firestop Identification Label, 3 in x 5 in, (250 Labels/Roll) 4 Rolls/Case",
+ "product_number": "ID LB",
+ "stock_number": "7010400882",
+ "short_description": "3M™ Firestop Identification Labels are bright red labels that stick quickly and reliably to joint and penetration firestop systems in order to provide highly visible information regarding firestop maintenance, repair and inspection.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Adhesive-backed label provides messaging in firestop systems",
+  "For use in penetration or joint firestop systems",
+  "Provides clear messaging in fire-rated construction setups",
+  "Bright red label provides high visibility",
+  "Applies easily and quickly to surfaces"
+ ],
+ "attributes": {
+  "Application": [
+   "Commercial Construction"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Case Quantity": [
+   "4.0 Bags per Case"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Product Color": [
+   "Red"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/1302803O/3m-fire-protection-products-specifiers-guide.pdf?&fn=3M-Fire-Protection-Products-Specifiers-Guide.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Fire Protection Products Specifiers Guide",
+   "url": "https://multimedia.3m.com/mws/media/1302803O/3m-fire-protection-products-specifiers-guide.pdf?&fn=3M-Fire-Protection-Products-Specifiers-Guide.pdf",
+   "contentType": "Product Selection Guides"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "",
+  "title": "3M™ Firestop Identification Label, 3 in x 5 in, (250 Labels/Roll) 4 Rolls/Case",
+  "industries": [
+   "Manufacturing",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

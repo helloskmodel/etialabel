@@ -1,0 +1,169 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b5005329172/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b5005329172/",
+ "name": "3M™ Sheet Label Material 7903",
+ "product_number": "",
+ "stock_number": "B5005329172",
+ "short_description": "3M™ Sheet Label Material 7903 is a durable, high performance material that offers excellent thermal stability, moisture resistance and chemical resistance. This material utilizes 3M™ Adhesive 350, which is designed to permanently bond to high and low surface energy plastics, textured and contoured surfaces, powder coatings, and slightly oily metals.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Facestocks (polyester and vinyl) and adhesives offer heat tolerance, clarity, and UV resistance",
+  "Liner provides easy sheet processing and is designed for layflat. The backside of the liner is not printable.",
+  "3M™ Sheet Label Material 7903 is UL recognized (File MH11410) and CSA accepted (File 99316). See the UL and CSA listings for details.",
+  "Overlaminate delivers moisture and tear resistance"
+ ],
+ "attributes": {
+  "Adhesive Thickness (Imperial)": [
+   "1.8 mil"
+  ],
+  "Adhesive Thickness (Metric)": [
+   "0.046 mm",
+   "0.05 mm"
+  ],
+  "Backing Material": [
+   "Polyester"
+  ],
+  "Backing Thickness (Imperial)": [
+   "2 mil"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "1.8 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "350 High Holding Acrylic"
+  ],
+  "Facestock Color": [
+   "Silver"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Sheet"
+  ],
+  "Maximum Operating Temperature (Celsius)": [
+   "150 ℃"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "302 ℉"
+  ],
+  "Minimum Operating Temperature (Celsius)": [
+   "-40 ℃"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Nominal Adhesive Thickness (Imperial)": [
+   "1.8 mil"
+  ],
+  "Overall Length (Imperial)": [
+   "27 in"
+  ],
+  "Overall Length (Metric)": [
+   "0.68 m"
+  ],
+  "Overall Width (Imperial)": [
+   "20 in",
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "508 mm",
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "94# Polycoated Kraft"
+  ],
+  "Primary Liner Color": [
+   "Brown"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "6.8 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.17 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Screen",
+   "Thermal Transfer",
+   "UV Screen"
+  ],
+  "Product Color": [
+   "Silver"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll",
+   "Sheet"
+  ],
+  "Surface Finish": [
+   "Bright"
+  ],
+  "Tape Thickness (Imperial)": [
+   "3.8 mil"
+  ],
+  "Topcoat": [
+   "Portuguese"
+  ],
+  "Units per Case": [
+   "100.0"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2399718O/3m-sheet-label-material-7903.pdf?&fn=3M-Sheet-Label-Material-7903.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Sheet and Screen Label Material 7903 and 7903FL",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/YTPsD3-e8iI",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7903",
+  "title": "3M™ Sheet Label Material 7903",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

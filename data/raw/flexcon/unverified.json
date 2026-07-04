@@ -1,0 +1,42 @@
+{
+ "unverified": [
+  {
+   "name": "Flexcon® SA Series Silicone Adhesives (individual part numbers)",
+   "reason": "Spotlight page describes the SA Series family (incl. SA1000 Series) but publishes no individual product numbers or spec tables; recorded as a single family-level record only.",
+   "url": "https://www.flexcon.com/spotlights/silicone-adhesives"
+  },
+  {
+   "name": "PharmCal® Supreme per-product service temperature",
+   "reason": "The Pharmaceutical Labeling Solutions PDF shows two temperature columns (-40°F to 212°F and -40°F to 302°F) as checkbox columns whose row alignment could not be reliably read from the PDF layout; temp_raw left blank for the 5 Supreme products rather than guessing.",
+   "url": "https://assets-us-01.kc-usercontent.com/5ebad2e9-8f0a-0050-6e0b-25e9f568a492/62854f5a-4c75-48fd-8ae6-9c17a5b7b604/Flexcon%20Pharmaceutical%20Labeling%20Solutions.pdf"
+  },
+  {
+   "name": "Flexcon PharmCal® products available in Europe",
+   "reason": "EU product list PDF (Flexcon Pharmaceutical Products EU.pdf) linked from the PharmCal spotlight was not downloaded/parsed to stay within the request budget; only North America PharmCal products captured.",
+   "url": "https://assets-us-01.kc-usercontent.com/5ebad2e9-8f0a-0050-6e0b-25e9f568a492/08be45ac-5d7b-4e41-aa87-6ad12ce2afb1/Flexcon%20Pharmaceutical%20Products%20EU.pdf"
+  },
+  {
+   "name": "TamperMark™ White Destruct individual products",
+   "reason": "TamperMark spotlight describes a \"White Destruct\" sub-family; only one destruct construction (FLX027516, TamperMark PE 200 White Destruct) is linked with a product page and captured. Other destruct variants, if any, are not listed on the pages crawled.",
+   "url": "https://www.flexcon.com/spotlights/tampermark"
+  },
+  {
+   "name": "FlexMark® L-59FR / FlexMount® L-59FR (068347, 068876, 068348, 068878, 068874) full technical data",
+   "reason": "Product detail pages linked from the L-59FR spotlight return 404; records built from spotlight page text only (no thickness table / service temperature).",
+   "url": "https://www.flexcon.com/spotlights/flexcon-flexmount-l-59fr"
+  },
+  {
+   "name": "DermaFlex™ P.E.F. 32 WHITE H-778 90 PFW full technical data",
+   "reason": "Product detail page (products/68293) returns 404; record built from DermaFlex spotlight text only.",
+   "url": "https://www.flexcon.com/spotlights/dermaflex"
+  }
+ ],
+ "blocked_urls": [
+  "https://www.flexcon.com/products/68293/dermaflex-pef-32-white-h-778-90-pfw-19-21",
+  "https://www.flexcon.com/products/68347/flexmark-l-59fr-068347-flexcon-flexmark-pi-200-amber-v-59fr-spec-50k-9",
+  "https://www.flexcon.com/products/68348/flexmark-l-59fr-068348-flexcon-flexmark-foil-200-silver-v-59fr-spec-50k-9",
+  "https://www.flexcon.com/products/68874/flexmount-l-59fr-068874-flexcon-flexmount-tt-400-v-59fr-84-la-pft",
+  "https://www.flexcon.com/products/68876/flexmark-l-59fr-068876-flexcon-flexmark-pi-200-amber-v-59fr-spec-50k-9-39-41",
+  "https://www.flexcon.com/products/68878/flexmark-l-59fr-068878-flexcon-flexmark-foil-200-silver-v-59fr-spec-50k-9-39-41"
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000223379/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000223379/",
+ "name": "3M™ Sheet and Screen Label Material 7028, Brushed Silver Polyester, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100056932",
+ "short_description": "3M™ Screen Printable Polyester Performance Durable Label Material 7028 is a durable, high performance material that offers excellent thermal stability and moisture resistance. This topcoated polyester label stock utilizes 3M™ Adhesive 350, which is designed to permanently bond to high and low surface energy plastics, textured and contoured surfaces, powder coatings, and slightly oily metals.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Facestocks (polyester and vinyl) and adhesives offer heat tolerance, clarity, and UV resistance",
+  "UL recognized (File MH16411). See the UL listings for details.",
+  "Adhesive offers excellent chemical resistance and holding strength, even at high temperatures.",
+  "Liner provides easy sheet processing and is designed for layflat.",
+  "The backside of the liner is not printable."
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Emulsion Acrylic"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "1.1 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.03 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "350 High Holding Acrylic"
+  ],
+  "Facestock Color": [
+   "Silver"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Sheet"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "302 ℉"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-20 ℉"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "90# Polycoated Kraft"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "6.8 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.17 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Screen",
+   "Thermal Transfer",
+   "UV Screen"
+  ],
+  "Product Color": [
+   "Silver"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Brushed"
+  ],
+  "Topcoat": [
+   "TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2396509O/3m-screen-printable-polyester-performance-durable-label-material-7028.pdf?&fn=3M-Screen-Printable-Polyester-Performance-Durable-Label-Material-7028.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Sheet and Screen Label Material 7028",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/Zckq9H6B7p4",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7028",
+  "title": "3M™ Sheet and Screen Label Material 7028, Brushed Silver Polyester, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

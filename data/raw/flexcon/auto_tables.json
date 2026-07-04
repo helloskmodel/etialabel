@@ -1,0 +1,741 @@
+[
+ {
+  "cat": "Parts Marking Labels",
+  "rows": [
+   {
+    "cells": [
+     "FLX#",
+     "Part #",
+     "Flexcon® Product",
+     "Adhesive",
+     "Topcoat",
+     "Film",
+     "Color",
+     "Temp. Resistance"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070475",
+     "PET-DYA1-9V09A/22",
+     "ThermlFilm® Advantage Value Satin White",
+     "L-344",
+     "TC-720",
+     "PET",
+     "Satin White",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   }
+  ]
+ },
+ {
+  "cat": "Warning & Instructional Labels",
+  "rows": [
+   {
+    "cells": [
+     "FLX#",
+     "Part #",
+     "Flexcon® Product",
+     "Adhesive",
+     "Topcoat",
+     "Film",
+     "Color",
+     "Temp. Resistance"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "",
+     "CMY-DZ79-F901S/31",
+     "ThermlFilm® ColorMark™  PM 200 Sun Yellow TC-716 L-836 (1.2-1.3) 40W GL-8",
+     "L-836",
+     "TC-716",
+     "PET",
+     "Yellow",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070741",
+     "VA3-DS00-9C05S/36",
+     "ThermlFilm® V 200 Cast Silver L-778 (1.4-1.5) 55W GL-9",
+     "L-778",
+     "",
+     "PVC",
+     "Silver",
+     "-40°F to 194°F -40°C to 90°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070746",
+     "VA2-DW00-9C05S/36",
+     "ThermlFilm® V 200 Cast White L-778 (1.4-1.5) 55W GL-9",
+     "L-778",
+     "",
+     "PVC",
+     "White",
+     "-40°F to 194°F -40°C to 90°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070604",
+     "VA4-DY00-9C05S/36",
+     "ThermlFilm® V 200 Cast Yellow L-778 (1.4-1.5) 55W GL-9",
+     "L-778",
+     "",
+     "PVC",
+     "Yellow",
+     "-40°F to 194°F -40°C to 90°C"
+    ],
+    "pid": null
+   }
+  ]
+ },
+ {
+  "cat": "Underhood Labels",
+  "rows": [
+   {
+    "cells": [
+     "FLX#",
+     "Part #",
+     "Flexcon® Product",
+     "Adhesive",
+     "Topcoat",
+     "Film",
+     "Color",
+     "Temp. Resistance"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070607",
+     "PET-DCA2-9V09S/22",
+     "ThermlFilm® Advantage Value Clear",
+     "L-344",
+     "TC-716",
+     "PET",
+     "Clear",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "054108*",
+     "",
+     "ThermlFilm Select® 10852 TTR (W/R&R) 1 Mil Gloss TC Clear Overlaminating Polyester Permanent Adhesive",
+     "L-344",
+     "TC-716",
+     "PET",
+     "Clear",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": "464"
+   },
+   {
+    "cells": [
+     "000464",
+     "",
+     "ThermlFilm Select® 10852 TTR (W/R&R) 1 Mil Gloss TC Clear Overlaminating Polyester Permanent Adhesive",
+     "L-157",
+     "TC-387",
+     "PET",
+     "Clear",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": "464"
+   },
+   {
+    "cells": [
+     "070473",
+     "PET-DUA2-9V09S/22",
+     "ThermlFilm® Advantage Value Satin Silver",
+     "L-344",
+     "TC-716",
+     "PET",
+     "Satin Silver",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "054111*",
+     "",
+     "ThermlFilm® NexGen™ 24120 TTR(W/R&R) 2 Mil Satin Silver Hi-Perf Perm ADH PCR Liner UL Rec",
+     "L-344",
+     "TC-716",
+     "PET",
+     "Satin Silver",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": "54111"
+   },
+   {
+    "cells": [
+     "070608",
+     "PET-DUA2-9W09S/27",
+     "ThermlFilm® Advantage Superb Satin Silver",
+     "L-606",
+     "TC-716",
+     "PET",
+     "Satin Silver",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070600",
+     "PET-DUA2-9U09S/36",
+     "ThermlFilm® Advantage Extreme Satin Silver",
+     "L-778",
+     "TC-716",
+     "PET",
+     "Satin Silver",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "064392",
+     "",
+     "ColorTape™ TT 100 White Opaque V-12 Spec 50K-8 Spec 50K-9",
+     "V-12",
+     "",
+     "",
+     "White Opaque",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": "64392"
+   },
+   {
+    "cells": [
+     "070472",
+     "PET-DWA2-9V09S/22",
+     "ThermlFilm® Advantage Value White",
+     "L-344",
+     "TC-716",
+     "PET",
+     "White",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "054109*",
+     "",
+     "ThermlFilm® NexGen™ 21120 TTR (W/R&R) 2 Mil White High-Performance Permanent Adhesive PCR Liner UL-Recognized",
+     "L-344",
+     "TC-716",
+     "PET",
+     "White",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": "54109"
+   },
+   {
+    "cells": [
+     "070551",
+     "PET-DWA2-9W09S/27",
+     "ThermlFilm® Advantage Superb White",
+     "L-606",
+     "TC-716",
+     "PET",
+     "White",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070485",
+     "PET-DWA2-9U09S/36",
+     "ThermlFilm® Advantage Extreme White",
+     "L-778",
+     "TC-716",
+     "PET",
+     "White",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "068768",
+     "",
+     "ThermlFilm® PM 200 White TC-716 V-156 Spec 50K/Q-9 (1.3-1.4)",
+     "V-156",
+     "TC-716",
+     "PET",
+     "White",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": "68768"
+   },
+   {
+    "cells": [
+     "012547",
+     "",
+     "ThermlFilm® PM 200 White TC-390 V-606 Spec 50K/Q-9 (1.4-1.5)",
+     "V-606",
+     "TC-390",
+     "PET",
+     "White",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": "12547"
+   },
+   {
+    "cells": [
+     "070474",
+     "PET-DWC2-9V09S/22",
+     "ThermlFilm® Advantage Value White Matte",
+     "L-344",
+     "MTC-722",
+     "PET",
+     "White Matte",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "000284*",
+     "",
+     "CompuCal® Excel™ 21440 MTC-722 Matte Topcoat 2 Mil White PET High-Performance Permanent Adhesive Roll Form Liner",
+     "L-344",
+     "MTC-722",
+     "PET",
+     "White Matte",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": "284"
+   },
+   {
+    "cells": [
+     "070481",
+     "PET-DYA1-9W09A/27",
+     "ThermlFilm® Advantage Superb Satin White",
+     "L-606",
+     "TC-720",
+     "PET",
+     "Satin White",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070487",
+     "PET-DYA1-9U09A/36",
+     "ThermlFilm® Advantage Extreme Satin White",
+     "L-778",
+     "TC-716",
+     "PET",
+     "Satin White",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   }
+  ]
+ },
+ {
+  "cat": "Security Labels",
+  "rows": [
+   {
+    "cells": [
+     "FLX#",
+     "Part #",
+     "Flexcon® Product",
+     "Adhesive",
+     "Topcoat",
+     "Film",
+     "Color",
+     "Temp. Resistance"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "006234",
+     "",
+     "TamperMark™ MM 150 Silver Void TC-390 V-344 90 PFW",
+     "V-156",
+     "TC-249",
+     "PET",
+     "Silver Void",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": "6234"
+   },
+   {
+    "cells": [
+     "007991",
+     "",
+     "TamperMark™ MM 150 Silver Void TC-390 V-344 90 PFW",
+     "V-344",
+     "TC-390",
+     "PET",
+     "White Void",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   }
+  ]
+ },
+ {
+  "cat": "Removable Surface Protection",
+  "rows": [
+   {
+    "cells": [
+     "FLX#",
+     "Part #",
+     "Flexcon® Product",
+     "Adhesive",
+     "Topcoat",
+     "Film",
+     "Color",
+     "Temp. Resistance"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "006068",
+     "",
+     "Flex-Vu™ OM 200 Clear A-324 100 Poly H-9 R",
+     "A-324",
+     "",
+     "PET",
+     "Clear",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": "6068"
+   },
+   {
+    "cells": [
+     "029613",
+     "",
+     "FlexMark® PE 380 F Clear Matte TC-848 V-133 150 Poly H-9 (.9-1.0)",
+     "V-133",
+     "TC-848",
+     "PE",
+     "Clear",
+     "-20°F to 176° F -29°C to 80°C"
+    ],
+    "pid": null
+   }
+  ]
+ },
+ {
+  "cat": "Printed Circuit Board Labels",
+  "rows": [
+   {
+    "cells": [
+     "FLX#",
+     "Part #",
+     "Flexcon® Product",
+     "Adhesive",
+     "Topcoat",
+     "Film",
+     "Color",
+     "Temp. Resistance"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070414",
+     "PI2-DW23-J48AH/36",
+     "ThermlFilm™ HT PI2W50GV2",
+     "L-455",
+     "TC-390",
+     "PI",
+     "White",
+     "-40°F to 500°F -40°C to 260°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "064987",
+     "PED-DW22-5909A/27",
+     "ThermlFilm® PE 200 White Destruct TC-387 L-88 (1.0-1.1) 40W GL-9",
+     "L-88",
+     "TC-387",
+     "PE",
+     "White",
+     "-40°F to 200°F -40°C to 93°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "000440*",
+     "",
+     "ThermlFilm® PE 200 White Destruct TC-387 L-88 Spec 50K-8",
+     "L-88",
+     "TC-387",
+     "PE",
+     "White",
+     "-40°F to 200°F -40°C to 93°C"
+    ],
+    "pid": "440"
+   }
+  ]
+ },
+ {
+  "cat": "Masking and Overlaminate",
+  "rows": [
+   {
+    "cells": [
+     "FLX#",
+     "Part #",
+     "Flexcon® Product",
+     "Adhesive",
+     "Topcoat",
+     "Film",
+     "Color",
+     "Temp. Resistance"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "000324",
+     "",
+     "DPM® UVCG 1 Mil Clear UV Polyester, Overlaminating Adhesive, Film Liner Over Rolls and Sheets",
+     "L-10",
+     "",
+     "PET",
+     "Clear",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": "324"
+   },
+   {
+    "cells": [
+     "000303",
+     "",
+     "DPM® CG Clear Polyester Overlaminating High-Performance Adhesive, Polyester Liner",
+     "L-344",
+     "",
+     "PET",
+     "Clear",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": "303"
+   },
+   {
+    "cells": [
+     "070610",
+     "HSM-DD00-C789S/17",
+     "FlexMark® OM 200 Clear HS V-866LP (0.6-0.7) 142 Poly C-9",
+     "V-866LP",
+     "",
+     "PET",
+     "Clear",
+     "-40°F to 356°F 428°F (short term, 30min.) -40°C to 180°C, 220°C (short term, 30min.)"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070463",
+     "HSM-DC00-A489S/17",
+     "FlexMark® OM 200 Clear HS V-866ULP (0.6-0.7) 142 POLY C-9",
+     "V-866ULP",
+     "",
+     "PET",
+     "Clear",
+     "-40°F to 356°F 428°F (short term, 30min.) -40°C to 180°C, 220°C (short term, 30min.)"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "",
+     "HSM-DW23-2U09S/22",
+     "ThermlFilm® PM 200 White HS TC-390 V-305 40W GL-9",
+     "V-305",
+     "TC-390",
+     "PET",
+     "White",
+     "-40°F to 302°F 428°F (short term, 30min.) -40°C to 180°C 220°C (short term, 30min.)"
+    ],
+    "pid": null
+   }
+  ]
+ },
+ {
+  "cat": "Chemical-Resistant Labels",
+  "rows": [
+   {
+    "cells": [
+     "FLX#",
+     "Part #",
+     "Flexcon® Product",
+     "Adhesive",
+     "Topcoat",
+     "Film",
+     "Color",
+     "Temp. Resistance"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070599",
+     "PET-DSJ9-6C09HR/24",
+     "ThermlFilm® ChemGard™ II MM 200 Silver MTC-410 L-606 (0.9-1.0) 40W GL-9",
+     "L-606",
+     "MTC-410",
+     "PET",
+     "Silver Matte",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070867",
+     "PET-DSJ9-9C12H/36",
+     "ThermlFilm® ChemGard™ II MM 200 Silver MTC-410 L-778 (1.4-1.5) 40WGL DF 9/7",
+     "L-778",
+     "MTC-410",
+     "PET",
+     "Silver Matte",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070601",
+     "PET-DWJ9-6C09HR/24",
+     "ThermlFilm® ChemGard™ II PM 200 White MTC-410 L-606 (0.9-1.0) 40W GL-9",
+     "L-606",
+     "MTC-410",
+     "PET",
+     "White Matte",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070602",
+     "PET-DWJ9-9C09HR/36",
+     "ThermlFilm® ChemGard™ II PM 200 White MTC-410 L-778 (1.4-1.5) 40W GL-9",
+     "L-778",
+     "MTC-410",
+     "PET",
+     "White Matte",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   }
+  ]
+ },
+ {
+  "cat": "Nameplate/Decorative",
+  "rows": [
+   {
+    "cells": [
+     "FLX#",
+     "Part #",
+     "Flexcon® Product",
+     "Adhesive",
+     "Topcoat",
+     "Film",
+     "Color",
+     "Temp. Resistance"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "051249",
+     "",
+     "ThermlFilm® MM 500 BBStainless TC-390 V-606 Spec 50K/Q-7 (1.9-2.1)",
+     "V-606",
+     "TC-390",
+     "PET",
+     "Silver Brushed",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": "51249"
+   }
+  ]
+ },
+ {
+  "cat": "Cable & Wire",
+  "rows": [
+   {
+    "cells": [
+     "FLX#",
+     "Part #",
+     "Flexcon® Product",
+     "Adhesive",
+     "Topcoat",
+     "Film",
+     "Color",
+     "Temp. Resistance"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "066984",
+     "PET-BC22-3109S/22",
+     "ThermlFilm® PM 100 Clear TC-387 L-29 40 W GL-9",
+     "L-29",
+     "TC-387",
+     "PET",
+     "Clear",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070598",
+     "PET-BC79-1570A/24",
+     "ThermlFilm® PM 100 Clear TC-716 L-344 (0.9-1.0) 100 Poly H-9",
+     "L-344",
+     "TC-716",
+     "PET",
+     "Clear",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   },
+   {
+    "cells": [
+     "070511",
+     "PET-BW79-Z409S/22",
+     "ThermlFilm® PM 100 White TC-716 V-344HS 40W GL-9",
+     "V-344HS",
+     "TC-716",
+     "PET",
+     "White",
+     "-40°F to 302°F -40°C to 150°C"
+    ],
+    "pid": null
+   }
+  ]
+ }
+]

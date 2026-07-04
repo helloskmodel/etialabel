@@ -1,0 +1,163 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b5005329049/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b5005329049/",
+ "name": "3M™ Thermal Transfer Label Material 3929",
+ "product_number": "",
+ "stock_number": "B5005329049",
+ "short_description": "3M™ Label Material 3929 thermal transfer printable retro-reflective film with 3M™ Adhesive 200 on a clay-coated paper liner is designed for long range bar code scanning. When bar code printed, the retro-reflective facestock extends the maximum and minimum scanning distance of long range scanners.  NOTE: 3M is unable to specify a maximum scanning distance with this material because of the differences between long range scanners.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Retro-reflective facestock",
+  "Designed for use with long range scanners.",
+  "Fan folding is not recommended, roll-to-roll is the preferred continuous printing process.",
+  "Specific bar code verifiers and scanning device recommendations can be obtained from the wide choice of suppliers selling in the marketplace."
+ ],
+ "attributes": {
+  "Adhesive Thickness (Imperial)": [
+   "11 mil"
+  ],
+  "Adhesive Thickness (Metric)": [
+   "0.03 mm"
+  ],
+  "Backing Thickness (Imperial)": [
+   "4.8 mil"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "1 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.03 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "200 High Performance Acrylic"
+  ],
+  "Facestock Color": [
+   "Silver"
+  ],
+  "Facestock Material": [
+   "Retroreflective"
+  ],
+  "Facestock Thickness": [
+   "4.8 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.12 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Celsius)": [
+   "148.89 ℃"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "300 ℉"
+  ],
+  "Minimum Operating Temperature (Celsius)": [
+   "-40 ℃"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Nominal Adhesive Thickness (Imperial)": [
+   "1 mil"
+  ],
+  "Overall Length (Imperial)": [
+   "150 yd"
+  ],
+  "Overall Length (Metric)": [
+   "137.16 m"
+  ],
+  "Overall Width (Imperial)": [
+   "6 in",
+   "24 in"
+  ],
+  "Overall Width (Metric)": [
+   "152.4 mm",
+   "609.6 mm"
+  ],
+  "Primary Liner": [
+   "78# Clay-Coated Kraft"
+  ],
+  "Primary Liner Color": [
+   "Brown"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "4.6 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.12 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "Silver"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Bright",
+   "Glossy"
+  ],
+  "Tape Thickness (Imperial)": [
+   "5.8 mil"
+  ],
+  "Topcoat": [
+   "TC"
+  ],
+  "Units per Case": [
+   "1.0"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/1455463O/3m-wash-away-label-fp0602.pdf?&fn=FP0602-Data-Sheet.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Wash Away Label FP0602",
+   "url": "https://multimedia.3m.com/mws/media/1455463O/3m-wash-away-label-fp0602.pdf?&fn=FP0602-Data-Sheet.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "3929",
+  "title": "3M™ Thermal Transfer Label Material 3929",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

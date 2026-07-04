@@ -1,0 +1,42 @@
+{
+ "unverified": [
+  {
+   "name": "EV Battery Solutions (page-level portfolio)",
+   "reason": "页面只有产品组合能力描述(单/双面转移标签、膜、胶带;丙烯酸/硅酮/橡胶胶系;阻燃胶;智能标签),未公布任何具体规格号/型号,故未生成产品记录;'Download the brochure' 链接指向 lgm.averydennison.com 营销落地页(需表单),未能获取PDF",
+   "url": "https://label.averydennison.com/ap/en_sa/home/products/automotive-electronics-industrial/ev-battery.html"
+  },
+  {
+   "name": "Electronics Solutions ASEAN PDF - 隐藏文字层中的旧版型号 (MZ2120, MZ2121, MZ2122, MZ2123, MZ2021, MZ2022, MZ2023, MZS1069H旧行等)",
+   "reason": "pdftotext 提取到该PDF存在两套重叠文字层;渲染页面(视觉核对)只显示 MZ2000W/MZ2001W/MZ2002W/MZ2003W、ADS1622/1623/1684/1685 等,MZ2120-MZ2123、MZ2021-MZ2023 仅存在于不可见旧文字层,未视觉确认,故不收录",
+   "url": "https://label.averydennison.com/content/dam/2025-ap-lpm-website-assets/english/po/asean-/Electronics%2bSolutions%20ASEAN.pdf"
+  },
+  {
+   "name": "Electronics Solutions ASEAN PDF - Functional Materials 类目行(Single Coated Conductive Fiber Tape 30-100µm, Single Coated Conductive Copper Foil Tape 20-60µm, Ultra Thin Single/Double Coated PI Tape 5/10µm, Single Coated PI Tape 25/50µm)",
+   "reason": "PDF只给出类目级厚度区间与胶系(Conductive Acrylic / Acrylic / Silicone or Acrylic),未印具体规格号(仅FT 4990/4991/9664/9665有编号,已收录),类目行不满足'一条=一个规格号'粒度",
+   "url": "https://label.averydennison.com/content/dam/2025-ap-lpm-website-assets/english/po/asean-/Electronics%2bSolutions%20ASEAN.pdf"
+  },
+  {
+   "name": "Durable LSE Selector Guide (pb-durables-selector-guide-sapssa.pdf)",
+   "reason": "内容为胶水选型指南(S8020/S333/S369/S730/DS128/S8088/S8049/S2060/TS79/TS8017/S8072/S8092等胶水说明),无'面材+胶水'成品规格号,未生成产品记录;胶水描述已用于补充相关记录",
+   "url": "https://label.averydennison.com/content/dam/averydennison/lpm-responsive/asia-pacific/en-sa/documents/promotional/durables-lse/pb-durables-selector-guide-sapssa.pdf"
+  },
+  {
+   "name": "FMVSS 302 Flammability Test - ADvantage Compliance Quick Facts",
+   "reason": "合规科普文档,无产品规格表,未生成产品记录",
+   "url": "https://label.averydennison.com/content/dam/averydennison/lpm-responsive/europe/english/documents/product-overviews/product/automotive-electronics-industrial/automotive/Avery%20Dennison%20ADvantage_Compliance%20Quick%20Facts%20Flammability%20Test.pdf"
+  },
+  {
+   "name": "Tyre ANZ/SSA PO 中 'Depends on SGP' 各行",
+   "reason": "7个规格无固定料号(Code 栏印为 'Depends on SGP',按客户卷宽定制涂胶图案),已按产品描述原文收录为记录并在 features 注明,此处补充说明其料号不固定",
+   "url": "https://label.averydennison.com/content/dam/averydennison/lpm-responsive/asia-pacific/en-sa/documents/products/select-solutions/select-solutions-portfolio/po/anz/po-select-solutions-tyre-anz-2021.pdf"
+  },
+  {
+   "name": "Electronics Solutions ASEAN PDF - Battery Label 部分低置信行 (MZS1675 厚度 12.5 micron 等)",
+   "reason": "该PDF文字层损坏(字体缺失告警),关键行已用页面渲染图像逐行视觉核对后收录;个别结构字符串中的连字符/占位符(如 'FR102/-PET75')按渲染图像照抄,可能与官方TDS写法略有出入",
+   "url": "https://label.averydennison.com/content/dam/2025-ap-lpm-website-assets/english/po/asean-/Electronics%2bSolutions%20ASEAN.pdf"
+  }
+ ],
+ "blocked_urls": [
+  "https://lgm.averydennison.com/acton/fs/blocks/showLandingPage/a/5313/p/p-0419/t/page/fm/0"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000577208/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000577208/",
+ "name": "3M™ Thermal Transfer Label Material 7815, Half Master, White Polyester Matte, Roll, Config",
+ "product_number": "7815",
+ "stock_number": "7100133084",
+ "short_description": "3M™ Thermal Transfer Label Materials are versatile and durable label stocks. They provide excellent thermal stability and moisture resistance for use in demanding applications, such as bar code tracking. The adhesive on many labels offers excellent clarity and good initial tack to help improve the finished label.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Offers excellent thermal stability and moisture resistance",
+  "Versatile materials produced for use in a variety of applications",
+  "Adhesive offers excellent clarity and good initial tack to help improve finished label"
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Solvent Acrylic"
+  ],
+  "Application": [
+   "Label"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Industries": [
+   "Aerospace",
+   "Automotive",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Overall Length (Imperial)": [
+   "1668 ft"
+  ],
+  "Overall Length (Metric)": [
+   "508.4 m"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Tape Thickness (Imperial)": [
+   "3.1 mil"
+  ],
+  "Topcoat": [
+   "TT TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/1455463O/3m-wash-away-label-fp0602.pdf?&fn=FP0602-Data-Sheet.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Wash Away Label FP0602",
+   "url": "https://multimedia.3m.com/mws/media/1455463O/3m-wash-away-label-fp0602.pdf?&fn=FP0602-Data-Sheet.pdf",
+   "contentType": "Data Sheets"
+  },
+  {
+   "title": "Thermal Transfer Polyester Label Material 7815_7815FL_7818",
+   "url": "https://multimedia.3m.com/mws/media/121772O/thermal-transfer-polyester-label-material-7815-7815fl-7818.pdf?&fn=70070910297.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7815P",
+  "title": "3M™ Thermal Transfer Label Material 7815, Half Master, White Polyester Matte, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b5005329110/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b5005329110/",
+ "name": "3M™ Foil Label Material 7800, Matte Silver Aluminum, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100012043",
+ "short_description": "Scotch® Photoelectric Scanning Tape 7800 is an exposed-lens retroreflective tape with a pressure-sensitive adhesive that is designed for use as expendable code marks in automatic warehouse or conveyor operations. This product affords exceptional contrast with its background for increased accuracy, reliability, and depth-of-field in photoelectric sorting and classification systems and may be employed with automatic on-line applicators or manual dispensers for identification or simple sortation of paperboard shipping containers.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Great alternative to traditional aluminum nameplates",
+  "Accurate and reliable photoelectric sorting.",
+  "Worry-free performance.",
+  "Suitable for high volume.",
+  "Available with DK and PCK liners suitable for rotary, roll to roll applications"
+ ],
+ "attributes": {
+  "Adhesive Thickness (Imperial)": [
+   "1.7 mil"
+  ],
+  "Adhesive Thickness (Metric)": [
+   "0.04 mm"
+  ],
+  "Adhesive Type": [
+   "Solvent Acrylic"
+  ],
+  "Backing Material": [
+   "Aluminum Foil"
+  ],
+  "Backing Thickness (Imperial)": [
+   "2 mil"
+  ],
+  "Brands": [
+   "Scotch®"
+  ],
+  "Core Size (Imperial)": [
+   "3 none"
+  ],
+  "Core Size (Metric)": [
+   "76 mm"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "1.7 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.04 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "320 High Tenacity Acrylic"
+  ],
+  "Facestock Color": [
+   "Silver"
+  ],
+  "Facestock Material": [
+   "Aluminum Foil"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Celsius)": [
+   "176.67 ℃"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "350 ℉"
+  ],
+  "Minimum Operating Temperature (Celsius)": [
+   "-40 ℃"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Nominal Adhesive Thickness (Imperial)": [
+   "1.7 mil"
+  ],
+  "Overall Thickness (Imperial)": [
+   "7 mil"
+  ],
+  "Overall Width (Imperial)": [
+   "40 in"
+  ],
+  "Overall Width (Metric)": [
+   "1016 mm"
+  ],
+  "Primary Liner": [
+   "60# Densified Kraft"
+  ],
+  "Primary Liner Color": [
+   "Brown"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "3 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.08 mm"
+  ],
+  "Printing Method": [
+   "DMI",
+   "Flexo",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "Silver"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Tape Structure - Reflective Technology": [
+   "Exposed-Lens Reflective Tape"
+  ],
+  "Tape Thickness (Imperial)": [
+   "3.7 mil"
+  ],
+  "Topcoat": [
+   "TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2396515O/3m-scotch-photoelectric-scanning-tape-7800.pdf?&fn=3M-Scotch-Photoelectric-Scanning-Tape-7800.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Aluminum Foil Label Material 7800",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/kTOQUmGejzs",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7800",
+  "title": "3M™ Foil Label Material 7800, Matte Silver Aluminum, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

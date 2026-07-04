@@ -1,0 +1,168 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b5005329024/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b5005329024/",
+ "name": "3M™ Thermal Transfer Label Material 7813",
+ "product_number": "",
+ "stock_number": "B5005329024",
+ "short_description": "3M™ Thermal Transfer Polyester Label Material 7813 is a durable matte polyester material that offers high abrasion and chemical resistance. This material utilizes 3M™ Acrylic Adhesive 300, which has excellent quick tack and also bonds well to a variety of surfaces including LSE plastics.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Matte TT topcoat on silver PET facestock.",
+  "Matte topcoat provides the advantages of matte coating combined with a surface that is smooth enough for thermal transfer printing.",
+  "Adhesive bonds well to a wide variety of substrates including metals, high surface energy (HSE) plastics and low surface energy (LSE) plastics.",
+  "55# densified kraft liner assures consistent die cutting.",
+  "Versions are available with pre-applied 3M adhesive",
+  "It is ideal for applications requiring high initial adhesion especially to LSE plastic surfaces."
+ ],
+ "attributes": {
+  "Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Adhesive Thickness (Metric)": [
+   "0.02 mm"
+  ],
+  "Backing Material": [
+   "Polyester"
+  ],
+  "Backing Thickness (Imperial)": [
+   "3.3 mil"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.02 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "High Strength Acrylic Adhesive 300"
+  ],
+  "Facestock Color": [
+   "Silver"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "3.3 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.08 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Celsius)": [
+   "150 ℃"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "300 ℉",
+   "302 ℉"
+  ],
+  "Minimum Operating Temperature (Celsius)": [
+   "-40 ℃"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Nominal Adhesive Thickness (Imperial)": [
+   "0.8 mil"
+  ],
+  "Overall Length (Imperial)": [
+   "1668 ft"
+  ],
+  "Overall Length (Metric)": [
+   "508.4 m"
+  ],
+  "Overall Width (Imperial)": [
+   "6 in",
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "152.4 mm",
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "55# Densified Kraft"
+  ],
+  "Primary Liner Color": [
+   "Brown"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "3.2 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.08 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "Silver"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Tape Thickness (Imperial)": [
+   "4.1 mil"
+  ],
+  "Topcoat": [
+   "TC"
+  ],
+  "Units per Case": [
+   "1.0"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2399705O/3m-thermal-transfer-polyester-label-material-7813.pdf?&fn=3M-Thermal-Transfer-Polyester-Label-Material-7813.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Thermal Transfer Label Material 7813",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/9M8Cye9OFxY",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7813",
+  "title": "3M™ Thermal Transfer Label Material 7813",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

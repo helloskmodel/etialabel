@@ -1,0 +1,126 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000089054/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000089054/",
+ "name": "3M™ Thermal Transfer Label Material 7879FL, Silver Polyester Matte, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100013031",
+ "short_description": "3M™ Thermal Transfer Polyester Label Material 7879FL is a durable silver polyester label material that is designed for use in demanding applications. This label material utilizes 3M™ High Performance Acrylic Adhesive 350, it offers excellent chemical resistance and holding strength even at high temperatures.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Topcoat provides the advantages of matte coating combined with a surface that is smooth enough for thermal transfer printing.",
+  "3M™ High Performance Acrylic Adhesive 350 permanently bonds to high surface energy (HSE) and low surface energy (LSE) plastics, textured and contoured surfaces, powder coatings, and slightly oily metals.",
+  "Polyester liner contributes to improved die cutting by allowing for deeper die cuts than paper without the added concern of exposing paper fibers."
+ ],
+ "attributes": {
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "1.8 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "350 High Holding Acrylic"
+  ],
+  "Facestock Color": [
+   "Silver"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "3.3 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.08 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "300 ℉"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "Polyester"
+  ],
+  "Primary Liner Color": [
+   "Clear"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "1.5 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.04 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "Silver"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Topcoat": [
+   "TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2399684O/3m-thermal-transfer-polyester-label-material-7879fl.pdf?&fn=3M-Thermal-Transfer-Polyester-Label-Material-7879FL.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Thermal Transfer Label Material 7879FL",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/lco396IxsDw",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7879FL",
+  "title": "3M™ Thermal Transfer Label Material 7879FL, Silver Polyester Matte, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

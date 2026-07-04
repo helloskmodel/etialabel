@@ -1,0 +1,101 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000239008/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000239008/",
+ "name": "3M™ Dot Matrix Label Material FP010609, White Polypropylene, Roll, Config",
+ "product_number": "",
+ "stock_number": "7100073308",
+ "short_description": "3M™ Matte White Polypropylene Durable Label Material FP010609 is a matte white opaque material that offers excellent durability and moisture resistance. This label product utilizes 3M™ Adhesive P1410, which is a general purpose permanent tackified acrylic that offers excellent adhesion to a wide variety of substrates, including polyolefins.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Designed specifically for computer printing applications including dot matrix/impact",
+  "Liner is used when high strength and caliper control are important.",
+  "Recommended for high speed labeling applications or where clarity of the adhesive is critcal.",
+  "Range of 3M acrylic adhesives suits the most specific applications",
+  "Selection of durable liners makes for efficient die-cutting and other processing"
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Emulsion Acrylic"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Type": [
+   "P1410 Permanent"
+  ],
+  "Facestock Color": [
+   "White"
+  ],
+  "Facestock Material": [
+   "Polypropylene"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "Polyester"
+  ],
+  "Printing Method": [
+   "Dot Matrix",
+   "Flexo",
+   "Laser",
+   "Thermal Transfer"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2396569O/3m-matte-white-polypropylene-durable-label-material-fp010609.pdf?&fn=3M-Matte-White-Polypropylene-Durable-Label-Material-FP010609.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Matte White Polypropylene Durable Label Material FP010609",
+   "url": "https://multimedia.3m.com/mws/media/2396569O/3m-matte-white-polypropylene-durable-label-material-fp010609.pdf?&fn=3M-Matte-White-Polypropylene-Durable-Label-Material-FP010609.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "FP010609",
+  "title": "3M™ Dot Matrix Label Material FP010609, White Polypropylene, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

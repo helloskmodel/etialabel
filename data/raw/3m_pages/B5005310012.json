@@ -1,0 +1,96 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b5005310012/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b5005310012/",
+ "name": "3M™ Tamper Evident Label Material 3812",
+ "product_number": "",
+ "stock_number": "B5005310012",
+ "short_description": "3M™ Destructible Polyurethane Label Material 3812 is designed as a non-removable label material. The facestock is a destructible, non-shrink, opaque, white polyurethane film. Once applied with sufficient pressure and dwell time, one piece removal is not possible on most surfaces.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Designed for a range of labeling applications where tamper-resistance is important",
+  "Facestocks designed for reliable use and processing",
+  "Acrylic adhesive is formulated for strength, tack and clarity on a variety of surfaces"
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Acrylic"
+  ],
+  "Application": [
+   "Cold Storage and Tamper Evident",
+   "Label"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Facestock Material": [
+   "Polyurethane"
+  ],
+  "Industries": [
+   "Paper",
+   "Print"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Overall Length (Imperial)": [
+   "1668 ft"
+  ],
+  "Overall Length (Metric)": [
+   "508.406 m"
+  ],
+  "Overall Width (Imperial)": [
+   "6 in"
+  ],
+  "Overall Width (Metric)": [
+   "152.4 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Thermal Transfer",
+   "UV Inkjet"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Matte"
+  ],
+  "Tape Thickness (Imperial)": [
+   "2.8 mil"
+  ],
+  "Topcoat": [
+   "TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2396541O/3m-destructible-polyurethane-label-material-3812.pdf?&fn=3M-Destructible-Polyurethane-Label-Material-3812.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Destructible Polyurethane Label Material 3812",
+   "url": "https://multimedia.3m.com/mws/media/2396541O/3m-destructible-polyurethane-label-material-3812.pdf?&fn=3M-Destructible-Polyurethane-Label-Material-3812.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "3812",
+  "title": "3M™ Tamper Evident Label Material 3812",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

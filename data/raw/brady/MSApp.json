@@ -1,0 +1,5052 @@
+{
+
+  "Bnums": 
+
+[
+  {
+    "num": "B-103",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "130 °C",
+    "maxServiceTemperatureF": "266 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0025 in",
+    "thicknessMm": "0.064 mm",
+    "colors": [
+      "Clear"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Clear Polyester Overlaminating Tape",
+    "description": "B-103 is a clear polyester overlaminating tape which offers additional protection against dirt, chemicals and abrasion on already printed materials.",
+    "specialProperties": [
+      "Harsh Environment Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Self-Lam",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-103 B 103 B103 B#103 B# 103 Acrylic Gloss Polyester Clear RoHS Clear Polyester Overlaminating Tape B-103 is a clear polyester overlaminating tape which offers additional protection against dirt, chemicals and abrasion on already printed materials. Harsh Environment Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification Self-Lam"
+  },
+  {
+    "num": "B-109",
+    "adhesive": "None",
+    "finish": "Matte",
+    "baseMaterial": "Polyethylene",
+    "maxServiceTemperatureC": "49 °C",
+    "maxServiceTemperatureF": "120 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0085 in",
+    "thicknessMm": "0.216 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Multi-Purpose Tags",
+    "description": "Use this durable non-adhesive polyethylene label material to create tags for multiconductor cables and wire bundles.",
+    "specialProperties": [],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Tag",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-109 B 109 B109 B#109 B# 109 None Matte Polyethylene White RoHS Multi-Purpose Tags Use this durable non-adhesive polyethylene label material to create tags for multiconductor cables and wire bundles.  Wire & Cable Tag Alcohols,Oils"
+  },
+  {
+    "num": "B-121",
+    "adhesive": "Removable Rubber",
+    "finish": "Matte",
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "60 °C",
+    "maxServiceTemperatureF": "140 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.005 in",
+    "thicknessMm": "0.127 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Removable Paper Label Stock",
+    "description": "B-121 is a removable dot-matrix printable paper label for warehouses and maintenance.",
+    "specialProperties": [
+      "Removable Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
+    "adhesion": [],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-121 B 121 B121 B#121 B# 121 Removable Rubber Matte Paper White RoHS Removable Paper Label Stock B-121 is a removable dot-matrix printable paper label for warehouses and maintenance. Removable Labels General Identification Label"
+  },
+  {
+    "num": "B-122",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0036 in",
+    "thicknessMm": "0.091 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Paper Label Stock",
+    "description": "B-122 is a permanent tamper proof paper label. It is designed for applications requiring a paper label that cannot be removed intact.",
+    "specialProperties": [
+      "Tamper Evident Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces"
+    ],
+    "adhesionTypical": 5,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-122 B 122 B122 B#122 B# 122 Acrylic Matte Paper White RoHS Paper Label Stock B-122 is a permanent tamper proof paper label. It is designed for applications requiring a paper label that cannot be removed intact. Tamper Evident Labels General Identification Label"
+  },
+  {
+    "num": "B-145",
+    "adhesive": "None",
+    "finish": "Matte",
+    "baseMaterial": "Polyethylene",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.023 in",
+    "thicknessMm": "0.584 mm",
+    "colors": [
+      "Gray"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Oval Tags",
+    "description": "Use this tough two-sided polyethylene tag label material to create tags for equipment, inventory and more.",
+    "specialProperties": [],
+    "printerLabelApplications": [
+      "Wire & Cable",
+      "Inspection Repair"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Tag",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-145 B 145 B145 B#145 B# 145 None Matte Polyethylene Gray RoHS Oval Tags Use this tough two-sided polyethylene tag label material to create tags for equipment, inventory and more.  Wire & Cable,Inspection Repair Tag Alcohols,Cleaners"
+  },
+  {
+    "num": "B-236",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polycarbonate",
+    "maxServiceTemperatureC": "50℃",
+    "maxServiceTemperatureF": "122 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": null,
+    "thicknessMm": null,
+    "colors": [
+      "White"
+    ],
+    "compliance": [],
+    "name": "Inkjet Printable Polycarbonate Tags",
+    "description": "B-236 rigid polycarbonate cards are designed for general panel identification such as terminal block markers.",
+    "specialProperties": [
+      "Inkjet Printable",
+      "Repositionable Labels"
+    ],
+    "printerLabelApplications": [
+      "Electrical",
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Tag",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-236 B 236 B236 B#236 B# 236 Acrylic Gloss Polycarbonate White  Inkjet Printable Polycarbonate Tags B-236 rigid polycarbonate cards are designed for general panel identification such as terminal block markers. Inkjet Printable,Repositionable Labels Electrical,Wire & Cable Tag"
+  },
+  {
+    "num": "B-312",
+    "adhesive": "None",
+    "finish": "Matte",
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "135 °C",
+    "maxServiceTemperatureF": "275 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": null,
+    "thicknessMm": null,
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "PermaSleeve Commercial Grade Heat-Shrink Sleeves",
+    "description": "B-312 is a polyolefin heat shrink tubing designed for wire identification and insulation purposes.",
+    "specialProperties": [],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Sleeve",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": "3:1",
+    "searchString": "B-312 B 312 B312 B#312 B# 312 None Matte Polyolefin White RoHS PermaSleeve Commercial Grade Heat-Shrink Sleeves B-312 is a polyolefin heat shrink tubing designed for wire identification and insulation purposes.  Wire & Cable Sleeve"
+  },
+  {
+    "num": "B-321",
+    "adhesive": "None",
+    "finish": "Matte",
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0065 in",
+    "thicknessMm": "0.16 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "BradySleeve Heat-Shrink Sleeves",
+    "description": "B-321 is a dot matrix printable, wire and cable heat-shrinkable sleeve.  It has excellent resistance to oil and solvents.",
+    "specialProperties": [
+      "Heat Shrink Sleeves"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Sleeve",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": "2:1",
+    "searchString": "B-321 B 321 B321 B#321 B# 321 None Matte Polyolefin White RoHS BradySleeve Heat-Shrink Sleeves B-321 is a dot matrix printable, wire and cable heat-shrinkable sleeve.  It has excellent resistance to oil and solvents.  Heat Shrink Sleeves Wire & Cable Sleeve Alcohols,Oils,Fuels"
+  },
+  {
+    "num": "B-338",
+    "adhesive": "None",
+    "finish": "Matte",
+    "baseMaterial": "Polyvinylidene Fluoride",
+    "maxServiceTemperatureC": "200 °C",
+    "maxServiceTemperatureF": "392 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": "0.5994 in",
+    "thicknessMm": "0.0236 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "High Temperature Cable Marker",
+    "description": "B-338 cable markers are designed for wire identification in areas where high temperature performance is needed. The material is characterized by low vacuum outgassing.",
+    "specialProperties": [],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Tag",
+    "chemicalResistance": [
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 2,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-338 B 338 B338 B#338 B# 338 None Matte Polyvinylidene Fluoride White RoHS High Temperature Cable Marker B-338 cable markers are designed for wire identification in areas where high temperature performance is needed. The material is characterized by low vacuum outgassing.  Wire & Cable Tag Oils"
+  },
+  {
+    "num": "B-342",
+    "adhesive": "None",
+    "finish": "Matte",
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "135 °C",
+    "maxServiceTemperatureF": "275 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": null,
+    "thicknessMm": null,
+    "colors": [
+      "White",
+      "Yellow",
+      "Black",
+      "Red",
+      "Blue",
+      "Green",
+      "Orange",
+      "Gray",
+      "Pink",
+      "Violet",
+      "Brown"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "PermaSleeve Heat-Shrink Sleeves",
+    "description": "Use PermaSleeve to create custom length sleeves (50 characters long) before heating and shrinking onto wire and cable (3:1).",
+    "specialProperties": [
+      "Heat Shrink Sleeves"
+    ],
+    "printerLabelApplications": [
+      "Electrical",
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Sleeve",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 3,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": "3:1",
+    "searchString": "B-342 B 342 B342 B#342 B# 342 None Matte Polyolefin White, Yellow, Black, Red, Blue, Green, Orange, Gray, Pink, Violet, Brown RoHS PermaSleeve Heat-Shrink Sleeves Use PermaSleeve to create custom length sleeves (50 characters long) before heating and shrinking onto wire and cable (3:1). Heat Shrink Sleeves Electrical,Wire & Cable Sleeve Alcohols,Oils,Fuels"
+  },
+  {
+    "num": "B-344",
+    "adhesive": "None",
+    "finish": "None",
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "130.6 °C",
+    "maxServiceTemperatureF": "267 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": null,
+    "thicknessMm": null,
+    "colors": [
+      "White",
+      "Yellow",
+      "Black",
+      "Red",
+      "Orange",
+      "Green",
+      "Blue",
+      "Violet",
+      "Pink",
+      "Gray",
+      "Brown"
+    ],
+    "compliance": [],
+    "name": "PermaSleeve Fluid Resistant Heat-Shrink Sleeves",
+    "description": "B-344 PermaSleeve material is a polyolefin heat shrink tubing suitable for use in applications that require greater resistance to harsh chemicals such as fuel and high power cleaning solvents.",
+    "specialProperties": [
+      "Heat Shrink Sleeves"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Sleeve",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": "3:1",
+    "searchString": "B-344 B 344 B344 B#344 B# 344 None None Polyolefin White, Yellow, Black, Red, Orange, Green, Blue, Violet, Pink, Gray, Brown  PermaSleeve Fluid Resistant Heat-Shrink Sleeves B-344 PermaSleeve material is a polyolefin heat shrink tubing suitable for use in applications that require greater resistance to harsh chemicals such as fuel and high power cleaning solvents.\t Heat Shrink Sleeves Wire & Cable Sleeve Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-345",
+    "adhesive": "None",
+    "finish": "Matte",
+    "baseMaterial": "Polyvinylidene Fluoride",
+    "maxServiceTemperatureC": "225 °C",
+    "maxServiceTemperatureF": "437 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": null,
+    "thicknessMm": null,
+    "colors": [
+      "Black",
+      "White",
+      "Yellow",
+      "Pink",
+      "Blue"
+    ],
+    "compliance": [],
+    "name": "PermaSleeve High Temp Heat-Shrink Sleeves",
+    "description": "B-345 is an Irradiated polyvinylidine flouride heat-shrink tubing. It is recommended for high temperature and low outgassing applications.",
+    "specialProperties": [
+      "Heat Shrink Sleeves"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Sleeve",
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": "2:1",
+    "searchString": "B-345 B 345 B345 B#345 B# 345 None Matte Polyvinylidene Fluoride Black, White, Yellow, Pink, Blue  PermaSleeve High Temp Heat-Shrink Sleeves B-345 is an Irradiated polyvinylidine flouride heat-shrink tubing. It is recommended for high temperature and low outgassing applications. Heat Shrink Sleeves Wire & Cable Sleeve Alcohols,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-350",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0102 in",
+    "thicknessMm": "0.259 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "AquALERT™Thermal Transfer Printable Water Indicating\nPolyester/Paper Laminate Label Stock",
+    "description": "B-350 material provides clear evidence of exposure to water for controlling invalid warranty claims, failure analysis or troubleshooting (service and repair).",
+    "specialProperties": [
+      "Permanent Adhesive Labels",
+      "Water Indicating Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 3,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces"
+    ],
+    "adhesionTypical": 5,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-350 B 350 B350 B#350 B# 350 Acrylic Gloss Paper White UL, RoHS AquALERT™Thermal Transfer Printable Water Indicating\nPolyester/Paper Laminate Label Stock B-350 material provides clear evidence of exposure to water for controlling invalid warranty claims, failure analysis or troubleshooting (service and repair). Permanent Adhesive Labels,Water Indicating Labels General Identification,Inspection Repair Label Alcohols,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-351",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Vinyl",
+    "maxServiceTemperatureC": "80 °C",
+    "maxServiceTemperatureF": "176 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0028 in",
+    "thicknessMm": "0.071 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Destructible Tamper Evident Matte Vinyl Labels",
+    "description": "Use this tough, tight-bonding vinyl label material to identify product tampering and prevent one-piece label removal.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels",
+      "Tamper Evident Labels"
+    ],
+    "printerLabelApplications": [
+      "Inspection Repair"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces"
+    ],
+    "adhesionTypical": 5,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-351 B 351 B351 B#351 B# 351 Acrylic Matte Vinyl White UL, RoHS Destructible Tamper Evident Matte Vinyl Labels Use this tough, tight-bonding vinyl label material to identify product tampering and prevent one-piece label removal. Heat Resistant Labels,Permanent Adhesive Labels,Tamper Evident Labels Inspection Repair Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-362",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Vinyl",
+    "maxServiceTemperatureC": "80 °C",
+    "maxServiceTemperatureF": "176 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0025 in",
+    "thicknessMm": "0.064 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Tamper Evident Metallized Vinyl Labels",
+    "description": "B-363 is a tamper-resistant metallized film. It has good resistance to solvents and humidity and is designed to fracture easily to prevent one-piece removal.",
+    "specialProperties": [
+      "Metallic Labels",
+      "Permanent Adhesive Labels",
+      "Tamper Evident Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces"
+    ],
+    "adhesionTypical": 5,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-362 B 362 B362 B#362 B# 362 Acrylic Gloss Vinyl Silver UL, RoHS Tamper Evident Metallized Vinyl Labels B-363 is a tamper-resistant metallized film. It has good resistance to solvents and humidity and is designed to fracture easily to prevent one-piece removal. Metallic Labels,Permanent Adhesive Labels,Tamper Evident Labels General Identification,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-388",
+    "adhesive": "None",
+    "finish": "Matte",
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "200 °C",
+    "maxServiceTemperatureF": "392 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": "0.02 in",
+    "thicknessMm": "0.508 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Standard Temperature Cable Marker",
+    "description": "B-388 cable markers are designed as a high performance wire bundle and cable identification tag. This standard temperature cable marker is meant for areas with continuous operating temperature up to 135°C.",
+    "specialProperties": [],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Tag",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 3,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-388 B 388 B388 B#388 B# 388 None Matte Polyolefin White RoHS Standard Temperature Cable Marker B-388 cable markers are designed as a high performance wire bundle and cable identification tag. This standard temperature cable marker is meant for areas with continuous operating temperature up to 135°C.  Wire & Cable Tag Alcohols,Oils,Fuels"
+  },
+  {
+    "num": "B-390",
+    "adhesive": "None",
+    "finish": "Matte",
+    "baseMaterial": "Polypropylene",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.018 in",
+    "thicknessMm": "0.457 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "DuraSleeve Wire Marking Inserts",
+    "description": "B-390 wire marking carrier inserts are designed to be printed and affixed to a wire using extruded, clear PVC Wire Marking Carriers.",
+    "specialProperties": [],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Sleeve",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 3,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-390 B 390 B390 B#390 B# 390 None Matte Polypropylene White RoHS DuraSleeve Wire Marking Inserts B-390 wire marking carrier inserts are designed to be printed and affixed to a wire using extruded, clear PVC Wire Marking Carriers.  Wire & Cable Sleeve Alcohols,Oils,Fuels"
+  },
+  {
+    "num": "B-402",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "60 °C",
+    "maxServiceTemperatureF": "140 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0035 in",
+    "thicknessMm": "0.089 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable White Paper Label Stock",
+    "description": "B-402 is a thermal transfer-printable paper with permanent adhesive. It uses an aggressive adhesive for bonding to corrugated, films, plastic and steel surfaces.",
+    "specialProperties": [
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces"
+    ],
+    "adhesionTypical": 5,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-402 B 402 B402 B#402 B# 402 Acrylic Matte Paper White RoHS Thermal Transfer Printable White Paper Label Stock B-402 is a thermal transfer-printable paper with permanent adhesive. It uses an aggressive adhesive for bonding to corrugated, films, plastic and steel surfaces. Permanent Adhesive Labels General Identification Label"
+  },
+  {
+    "num": "B-403",
+    "adhesive": "Removable Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "78 °C",
+    "maxServiceTemperatureF": "172 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0037 in",
+    "thicknessMm": "0.094 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Water Dissolvable Paper Labels",
+    "description": "Use this material when your label needs to be easily removed - with water - following use leaving no adhesive residue behind.",
+    "specialProperties": [
+      "Removable Labels",
+      "Water Dissolvable Labels"
+    ],
+    "printerLabelApplications": [
+      "Laboratory",
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces"
+    ],
+    "adhesionTypical": 5,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-403 B 403 B403 B#403 B# 403 Removable Acrylic Matte Paper White RoHS Water Dissolvable Paper Labels Use this material when your label needs to be easily removed - with water - following use leaving no adhesive residue behind. Removable Labels,Water Dissolvable Labels Laboratory,General Identification Label"
+  },
+  {
+    "num": "B-408",
+    "adhesive": "Removable Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "70 °C",
+    "maxServiceTemperatureF": "158 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": null,
+    "minServiceTemperatureF": null,
+    "thicknessIn": "0.003 in",
+    "thicknessMm": "0.076 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Matte White Paper Label Stock",
+    "description": "B-408 is a white paper label for barcode and general labeling applications. It uses a special adhesive that allows the label to be easily removed or repositioned.",
+    "specialProperties": [
+      "Removable Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
+    "adhesion": [],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-408 B 408 B408 B#408 B# 408 Removable Acrylic Matte Paper White RoHS Matte White Paper Label Stock B-408 is a white paper label for barcode and general labeling applications. It uses a special adhesive that allows the label to be easily removed or repositioned. Removable Labels General Identification Label"
+  },
+  {
+    "num": "B-412",
+    "adhesive": "None",
+    "finish": "Matte",
+    "baseMaterial": "Polypropylene",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.008 in",
+    "thicknessMm": "0.201 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "High Tensile Polyproplene Inserts/Tags",
+    "description": "Use this non-adhesive material to create identification strips for outlet faceplate and patch panel channels.",
+    "specialProperties": [],
+    "printerLabelApplications": [
+      "Wire & Cable",
+      "General Identification",
+      "DataCom"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Tag",
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-412 B 412 B412 B#412 B# 412 None Matte Polypropylene White RoHS High Tensile Polyproplene Inserts/Tags Use this non-adhesive material to create identification strips for outlet faceplate and patch panel channels.  Wire & Cable,General Identification, DataCom Tag Alcohols,Solvents,Oils"
+  },
+  {
+    "num": "B-413",
+    "adhesive": "Acrylic",
+    "finish": "Satin",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "110 °C",
+    "maxServiceTemperatureF": "230 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0034 in",
+    "thicknessMm": "0.086 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "cUL",
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Light Gray Polyester Label Stock With Acrylic Adhesive",
+    "description": "B-413 is non-metallized metallic looking label ideal for component identification.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Heat Resistant Labels",
+      "Metallic Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-413 B 413 B413 B#413 B# 413 Acrylic Satin Polyester Silver UL, cUL, RoHS Thermal Transfer Printable Light Gray Polyester Label Stock With Acrylic Adhesive B-413 is non-metallized metallic looking label ideal for component identification. Aggressive Adhesive Labels,Heat Resistant Labels,Metallic Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Oils"
+  },
+  {
+    "num": "B-414",
+    "adhesive": "None",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "50 °C",
+    "maxServiceTemperatureF": "122 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": null,
+    "minServiceTemperatureF": null,
+    "thicknessIn": "0.015 in",
+    "thicknessMm": "0.381 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "BradyGrip Print-on-Hook Labels featuring VELCRO Brand Hook",
+    "description": "Use this reusable print-on hook and loop label material with VELCRO® Brand ONE-WRAP® to easily mark cable bundles.",
+    "specialProperties": [
+      "Repositionable Labels"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable",
+      "General Identification",
+      "DataCom"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-414 B 414 B414 B#414 B# 414 None Gloss Polyester White RoHS BradyGrip Print-on-Hook Labels featuring VELCRO Brand Hook Use this reusable print-on hook and loop label material with VELCRO® Brand ONE-WRAP® to easily mark cable bundles. Repositionable Labels Wire & Cable,General Identification, DataCom Label"
+  },
+  {
+    "num": "B-417",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Vinyl",
+    "maxServiceTemperatureC": "70 °C",
+    "maxServiceTemperatureF": "158 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.004 in",
+    "thicknessMm": "0.107 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL"
+    ],
+    "name": "High Adhesion Self-Laminating Vinyl Wraps",
+    "description": "Self-laminating labels for tough conditions, including high-humidity environments, small diameter wires and wire jacketing materials.",
+    "specialProperties": [
+      "Permanent Adhesive Labels",
+      "Self Laminating Labels & Wraps"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Self-Lam",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 3,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-417 B 417 B417 B#417 B# 417 Acrylic Matte Vinyl White UL High Adhesion Self-Laminating Vinyl Wraps Self-laminating labels for tough conditions, including high-humidity environments, small diameter wires and wire jacketing materials. Permanent Adhesive Labels,Self Laminating Labels & Wraps Wire & Cable Self-Lam Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-421",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "150 °C",
+    "maxServiceTemperatureF": "302 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0035 in",
+    "thicknessMm": "0.089 mm",
+    "colors": [
+      "Black"
+    ],
+    "compliance": [
+      "UL"
+    ],
+    "name": "Matte Black Laser Markable Polyester Label Stock",
+    "description": "B-421 is designed for use in component labeling, bar coding and rating plate identification when marked with a standard IR laser. It can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-421 B 421 B421 B#421 B# 421 Acrylic Matte Polyester Black UL Matte Black Laser Markable Polyester Label Stock B-421 is designed for use in labeling electronic PCB’s, component identification, bar coding, and rating plates when marked with a standard IR laser. It can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. Heat Resistant Labels,Permanent Adhesive Labels General Identification,Rating & Name Plates Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-422",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.004 in",
+    "thicknessMm": "0.102 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "High Adhesion Multi-Purpose Polyester Labels",
+    "description": "Use this material to permanently label indoor and outdoor equipment, circuit boards, bar codes and solar panels.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates",
+      "DataCom"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-422 B 422 B422 B#422 B# 422 Acrylic Gloss Polyester White UL, CSA, RoHS High Adhesion Multi-Purpose Polyester Labels Use this material to permanently label indoor and outdoor equipment, circuit boards, bar codes and solar panels. Aggressive Adhesive Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates, DataCom Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-423",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "110 °C",
+    "maxServiceTemperatureF": "230 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.003 in",
+    "thicknessMm": "0.076 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Harsh-Environment Multi-Purpose Polyester Labels",
+    "description": "B-423 is a thermal transfer-printable label material with a permanent acrylic adhesive. It is ideal for electronic PCB and component, barcode label and rating plates applications.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Harsh Environment Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-423 B 423 B423 B#423 B# 423 Acrylic Gloss Polyester White UL, CSA, RoHS Harsh-Environment Multi-Purpose Polyester Labels B-423 is a thermal transfer-printable label material with a permanent acrylic adhesive. It is ideal for electronic PCB and component, barcode label and rating plates applications. Aggressive Adhesive Labels,Harsh Environment Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-424",
+    "adhesive": "Rubber",
+    "finish": "Matte",
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "50 °C",
+    "maxServiceTemperatureF": "122 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0035 in",
+    "thicknessMm": "0.089 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Paper Labels",
+    "description": "B-424 is a top-coated, thermal transfer-printable label material with a permanent latex adhesive. It is designed for use in labeling applications requiring a low-cost, general-purpose labeling material.",
+    "specialProperties": [
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 5,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-424 B 424 B424 B#424 B# 424 Rubber Matte Paper White RoHS Paper Labels B-424 is a top-coated, thermal transfer-printable label material with a permanent latex adhesive. It is designed for use in labeling applications requiring a low-cost, general-purpose labeling material. Permanent Adhesive Labels General Identification Label"
+  },
+  {
+    "num": "B-425A",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polypropylene",
+    "maxServiceTemperatureC": "80 °C",
+    "maxServiceTemperatureF": "176 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0046 in",
+    "thicknessMm": "0.1143 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA"
+    ],
+    "name": "T-Flag or P-Flag Matte Polyproplene Label",
+    "description": "Use this pre-sized polypropylene label material to create highly readable flags for cables and wires.",
+    "specialProperties": [
+      "Harsh Environment Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-425A B 425A B425A B#425A B# 425A Acrylic Matte Polypropylene White UL, CSA T-Flag or P-Flag Matte Polyproplene Label Use this pre-sized polypropylene label material to create highly readable flags for cables and wires. Harsh Environment Labels,Permanent Adhesive Labels General Identification Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-427",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Vinyl",
+    "maxServiceTemperatureC": "60 °C",
+    "maxServiceTemperatureF": "140 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.004 in",
+    "thicknessMm": "0.102 mm",
+    "colors": [
+      "Blue",
+      "Brown",
+      "Gray",
+      "Green",
+      "Orange",
+      "Purple",
+      "Red",
+      "White",
+      "Yellow"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Self-Laminating Vinyl Wraps",
+    "description": "Use this material to identify wires, cables when protecting the printed text with an integrated overlaminate is needed.",
+    "specialProperties": [
+      "Self Laminating Labels & Wraps"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Self-Lam",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 3,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-427 B 427 B427 B#427 B# 427 Acrylic Matte Vinyl Blue, Brown, Gray, Green, Orange, Purple, Red, White, Yellow UL, RoHS Self-Laminating Vinyl Wraps Use this material to identify wires, cables when protecting the printed text with an integrated overlaminate is needed. Self Laminating Labels & Wraps Wire & Cable Self-Lam Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-428",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Metallized Polyester",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0044 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Metallized Matte Polyester Labels",
+    "description": "Use this matte-metalized material to create serial and rating plate labels for backer boards, DIN rail, relays and more.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Metallic Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-428 B 428 B428 B#428 B# 428 Acrylic Matte Metallized Polyester Silver UL, CSA, RoHS Metallized Matte Polyester Labels Use this matte-metalized material to create serial and rating plate labels for backer boards, DIN rail, relays and more. Heat Resistant Labels,Metallic Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-430",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.003 in",
+    "thicknessMm": "0.076 mm",
+    "colors": [
+      "Clear"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Harsh-Environment Multi-Purpose Clear Polyester Labels",
+    "description": "Use this transparent polyester material on smooth or rough surfaces when permanent adhesion is needed.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Harsh Environment Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-430 B 430 B430 B#430 B# 430 Acrylic Gloss Polyester Clear UL, CSA, RoHS Harsh-Environment Multi-Purpose Clear Polyester Labels Use this transparent polyester material on smooth or rough surfaces when permanent adhesion is needed. Aggressive Adhesive Labels,Harsh Environment Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-432",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.004 in",
+    "thicknessMm": "0.102 mm",
+    "colors": [
+      "Clear"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "High Adhesion Multi-Purpose Clear Polyester Labels",
+    "description": "Use this clear polyester label material to permanently label circuit boards, panels, rating plates and solar panels.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-432 B 432 B432 B#432 B# 432 Acrylic Gloss Polyester Clear UL, CSA, RoHS High Adhesion Multi-Purpose Clear Polyester Labels Use this clear polyester label material to permanently label circuit boards, panels, rating plates and solar panels. Aggressive Adhesive Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-434A",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Metallized Polyester",
+    "maxServiceTemperatureC": "70 °C",
+    "maxServiceTemperatureF": "158 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-20 °C",
+    "minServiceTemperatureF": "-4 °F",
+    "thicknessIn": "0.0068 in",
+    "thicknessMm": "0.173 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Gloss Metallized Polyester Label Stock",
+    "description": "B-434A is a glossy metallized polyester label material with permanent acrylic-based adhesive. It is designed for rough surfaces and applications where increased adhesion is required.",
+    "specialProperties": [
+      "Metallic Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-434A B 434A B434A B#434A B# 434A Acrylic Gloss Metallized Polyester Silver UL, CSA, RoHS Thermal Transfer Printable Gloss Metallized Polyester Label Stock B-434A is a glossy metallized polyester label material with permanent acrylic-based adhesive. It is designed for rough surfaces and applications where increased adhesion is required. Metallic Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-435A",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Metallized Polyester",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0027 in",
+    "thicknessMm": "0.0673 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Metallized Polyester Labels",
+    "description": "B-435A is a high-performance material designed for thermal transfer printing. It withstands numerous solvents while maintaining excellent image quality. It is ideal for rating plate applications and general purpose labeling.",
+    "specialProperties": [
+      "Permanent Adhesive Labels",
+      "Chemical Resistant",
+      "Metallic Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-435A B 435A B435A B#435A B# 435A Acrylic Gloss Metallized Polyester Silver UL, CSA, RoHS Metallized Polyester Labels B-435A is a high-performance material designed for thermal transfer printing. It withstands numerous solvents while maintaining excellent image quality. It is ideal for rating plate applications and general purpose labeling. Permanent Adhesive Labels,Chemical Resistant,Metallic Labels General Identification,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-437",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyvinylfluoride",
+    "maxServiceTemperatureC": "135 °C",
+    "maxServiceTemperatureF": "275 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0036 in",
+    "thicknessMm": "0.091 mm",
+    "colors": [
+      "White",
+      "Yellow"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Self-Extinguishing Tedlar Wraps",
+    "description": "B-437 is a self-extinguishing label material used for wire and cable marking applications, particularly in aerospace, defense and mass transit industries.",
+    "specialProperties": [
+      "Self Laminating Labels & Wraps",
+      "Harsh Environment Labels"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-437 B 437 B437 B#437 B# 437 Acrylic Matte Polyvinylfluoride White, Yellow RoHS Self-Extinguishing Tedlar Wraps B-437 is a self-extinguishing label material used for wire and cable marking applications, particularly in aerospace, defense and mass transit industries.  Self Laminating Labels & Wraps,Harsh Environment Labels Wire & Cable Label Alcohols,Oils,Fuels"
+  },
+  {
+    "num": "B-438",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Metallized Polyester",
+    "maxServiceTemperatureC": "40 °C",
+    "maxServiceTemperatureF": "104 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0033 in",
+    "thicknessMm": "0.084 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Tamper Evident Matte Metallized Polyester Label Stock",
+    "description": "B-438 is a matte metallized polyester label material with a permanent adhesive that leaves a checkerboard footprint if removed. It is designed for applications requiring both high-performance and protection against removal.",
+    "specialProperties": [
+      "Metallic Labels",
+      "Permanent Adhesive Labels",
+      "Tamper Evident Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-438 B 438 B438 B#438 B# 438 Acrylic Matte Metallized Polyester Silver UL, CSA, RoHS Thermal Transfer Printable Tamper Evident Matte Metallized Polyester Label Stock B-438 is a matte metallized polyester label material with a permanent adhesive that leaves a checkerboard footprint if removed. It is designed for applications requiring both high-performance and protection against removal.  Metallic Labels,Permanent Adhesive Labels,Tamper Evident Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Oils"
+  },
+  {
+    "num": "B-439",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Vinyl",
+    "maxServiceTemperatureC": "80 °C",
+    "maxServiceTemperatureF": "176 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0042 in",
+    "thicknessMm": "0.107 mm",
+    "colors": [
+      "Silver",
+      "Gold",
+      "Red",
+      "Purple",
+      "Yellow",
+      "Orange",
+      "Green",
+      "Black",
+      "Light Blue",
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Multi-Purpose Vinyl Labels",
+    "description": "B-439 is a vinyl label stock designed for use with thermal transfer printers in ambient conditions and limited solvent exposure. It is ideal for applications requiring various colors.",
+    "specialProperties": [
+      "Harsh Environment Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": null,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-439 B 439 B439 B#439 B# 439 Acrylic Gloss Vinyl Silver, Gold, Red, Purple, Yellow, Orange, Green, Black, Light Blue, White RoHS Multi-Purpose Vinyl Labels B-439 is a vinyl label stock designed for use with thermal transfer printers in ambient conditions and limited solvent exposure. It is ideal for applications requiring various colors. Harsh Environment Labels,Permanent Adhesive Labels General Identification Label Alcohols,Cleaners,Oils"
+  },
+  {
+    "num": "B-449",
+    "adhesive": "Removable Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polypropylene",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0044 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Removable Polypropylene Label Stock",
+    "description": "B-449 is a matte, white label stock designed for use in temporary labeling applications that require solvent resistance and print performance coupled with clean removability.",
+    "specialProperties": [
+      "Removable Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-449 B 449 B449 B#449 B# 449 Removable Acrylic Matte Polypropylene White RoHS Thermal Transfer Printable Removable Polypropylene Label Stock B-449 is a matte, white label stock designed for use in temporary labeling applications that require solvent resistance and print performance coupled with clean removability. Removable Labels General Identification Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-461",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "110 °C",
+    "maxServiceTemperatureF": "230 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-196 °C",
+    "minServiceTemperatureF": "-321 °F",
+    "thicknessIn": "0.0019 in",
+    "thicknessMm": "0.048 mm",
+    "colors": [
+      "Clear"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Self-Laminating Cryogenic Polyester Labels",
+    "description": "Use for labeling laboratory tubes and vials where an overlaminate protects the text in cryogenic cold temperatures.",
+    "specialProperties": [
+      "Permanent Adhesive Labels",
+      "Self Laminating Labels & Wraps"
+    ],
+    "printerLabelApplications": [
+      "Laboratory"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Self-Lam",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 2,
+    "adhesion": [],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-461 B 461 B461 B#461 B# 461 Acrylic Matte Polyester Clear RoHS Self-Laminating Cryogenic Polyester Labels Use for labeling laboratory tubes and vials where an overlaminate protects the text in cryogenic cold temperatures. Permanent Adhesive Labels,Self Laminating Labels & Wraps Laboratory Self-Lam Alcohols,Cleaners,Oils"
+  },
+  {
+    "num": "B-472",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0032 in",
+    "thicknessMm": "0.081 mm",
+    "colors": [
+      "White",
+      "Yellow",
+      "Gray",
+      "Violet",
+      "Green",
+      "Blue",
+      "Red",
+      "Pink",
+      "Orange"
+    ],
+    "compliance": [
+      "CSA",
+      "RoHS"
+    ],
+    "name": "High Temp Flame Retardant Polyimide Wraps",
+    "description": "B-472 is specifically designed to self-extinguish and prevent flames from propagating. Used for wire and cable marking applications, particularly in aerospace, defense and mass transit industries.  THT and Dot matrix printable.",
+    "specialProperties": [
+      "Self Laminating Labels & Wraps"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Self-Lam",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-472 B 472 B472 B#472 B# 472 Acrylic Matte Polyimide White, Yellow, Gray, Violet, Green, Blue, Red, Pink, Orange UL, CSA, RoHS High Temp Flame Retardant Polyimide Wraps B-472 is specifically designed to self-extinguish and prevent flames from propagating. Used for wire and cable marking applications, particularly in aerospace, defense and mass transit industries.  THT and Dot matrix printable. Self Laminating Labels & Wraps Wire & Cable Self-Lam Alcohols,Oils,Fuels"
+  },
+  {
+    "num": "B-473",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0034 in",
+    "thicknessMm": "0.09 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Electrostatic Dissipative Polyester Labels",
+    "description": "B-473 is a thermal transfer printable polyester label stock with a static dissipative acrylic adhesive and static dissipative release liner. It is ideal for barcode, printed circuit board and component identification.",
+    "specialProperties": [
+      "Harsh Environment Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-473 B 473 B473 B#473 B# 473 Acrylic Gloss Polyester White UL, CSA, RoHS Electrostatic Dissipative Polyester Labels B-473 is a thermal transfer printable polyester label stock with a static dissipative acrylic adhesive and static dissipative release liner. It is ideal for barcode, printed circuit board and component identification. Harsh Environment Labels,Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-480A",
+    "adhesive": "Rubber",
+    "finish": "Satin",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "110 °C",
+    "maxServiceTemperatureF": "230 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0044 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "cUL",
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Light Gray Polyester Label Stock With Rubber Based Adhesive",
+    "description": "B-480A is a thermal transfer printable polyester label stock with a rubber based adhesive designed for low surface energy and powder coated surfaces.  It is recommended for applications including barcode labeling and serial and rating plates requiring nameplate-like quality.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Heat Resistant Labels",
+      "Metallic Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Rating & Name Plates",
+      "Inspection Repair"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 5,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-480A B 480A B480A B#480A B# 480A Rubber Satin Polyester Silver UL, cUL, RoHS Thermal Transfer Printable Light Gray Polyester Label Stock With Rubber Based Adhesive B-480A is a thermal transfer printable polyester label stock with a rubber based adhesive designed for low surface energy and powder coated surfaces.  It is recommended for applications including barcode labeling and serial and rating plates requiring nameplate-like quality. Aggressive Adhesive Labels,Heat Resistant Labels,Metallic Labels,Permanent Adhesive Labels General Identification,Rating & Name Plates,Inspection Repair Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-481",
+    "adhesive": "Acrylic",
+    "finish": "Satin",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "130 °C",
+    "maxServiceTemperatureF": "266 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-80 °C",
+    "minServiceTemperatureF": "-112 °F",
+    "thicknessIn": "0.0033 in",
+    "thicknessMm": "0.084 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "StainerBondz™Microscope Slide Polyester Labels",
+    "description": "Use this super chemical-resistant polyester label material to create labels for lab slides used in rigorous conditions.",
+    "specialProperties": [
+      "Harsh Environment Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Laboratory"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-481 B 481 B481 B#481 B# 481 Acrylic Matte Polyester White RoHS  StainerBondz™Microscope Slide Polyester Labels Use this super chemical-resistant polyester label material to create labels for lab slides used in rigorous conditions. Harsh Environment Labels,Permanent Adhesive Labels Laboratory Label Alcohols,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-482",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": null,
+    "maxServiceTemperatureF": null,
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": null,
+    "minServiceTemperatureF": null,
+    "thicknessIn": "0.0046 in",
+    "thicknessMm": "0.117 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Tissue Cassette Label",
+    "description": "B-482 is label stock designed for use in tissue cassette labeling applications that can withstand a variety of laboratory processing fluids.",
+    "specialProperties": [
+      "Chemical Resistant",
+      "Harsh Environment Labels"
+    ],
+    "printerLabelApplications": [
+      "Laboratory"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-482 B 482 B482 B#482 B# 482 Acrylic Matte Polyester White RoHS Tissue Cassette Label B-482 is label stock designed for use in tissue cassette labeling applications that can withstand a variety of laboratory processing fluids. Chemical Resistant,Harsh Environment Labels Laboratory Label Alcohols,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-483A",
+    "adhesive": "Rubber",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-29 °C",
+    "minServiceTemperatureF": "-20 °F",
+    "thicknessIn": "0.0069 in",
+    "thicknessMm": "0.175 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Ultra High Adhesion Multi-Purpose Polyester Labels",
+    "description": "B-483A label material is designed to permanently label products and equipment with extremely smooth or rough surfaces.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Electrical",
+      "General Identification",
+      "Rating & Name Plates",
+      "Safety",
+      "DataCom"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 5,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-483A B 483A B483A B#483A B# 483A Rubber Gloss Polyester White UL, CSA, RoHS Ultra High Adhesion Multi-Purpose Polyester Labels B-483A label material is designed to permanently label products and equipment with extremely smooth or rough surfaces. Aggressive Adhesive Labels Electrical,General Identification,Rating & Name Plates,Safety, DataCom Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-484A",
+    "adhesive": "Rubber",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.003 in",
+    "thicknessMm": "0.076 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL"
+    ],
+    "name": "Flexible Thermal Transfer Printable Label Stock",
+    "description": "B-484A is white polyester label stock designed for high adhesion to textured metals, low surface energy plastics, as well as angled and curved surfaces.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 5,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-484A B 484A B484A B#484A B# 484A Rubber Gloss Polyester White UL Flexible Thermal Transfer Printable Label Stock B-484A is white polyester label stock designed for high adhesion to textured metals, low surface energy plastics, as well as angled and curved surfaces. Aggressive Adhesive Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-486B",
+    "adhesive": "Rubber",
+    "finish": "Matte",
+    "baseMaterial": "Metallized Polyester",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0053 in",
+    "thicknessMm": "0.135 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "CSA"
+    ],
+    "name": "Ultra High Adhesion Metallized Matte Polyester Labels",
+    "description": "B-486B is a metallized polyester label stock designed for designed for high adhesion to textured metals, powder coated surfaces and low surface energy plastics. It can withstand numerous solvents and variable temperatures when applied to various surfaces. It is recommended for rating and serial plates that utilize barcodes, alphanumerics, graphic symbols and logos and require nameplate-like quality.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Heat Resistant Labels",
+      "Metallic Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": null,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 4,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-486B B 486B B486B B#486B B# 486B Rubber Matte Metallized Polyester Silver UL, CSA Ultra High Adhesion Metallized Matte Polyester Labels B-486B is a metallized polyester label stock designed for designed for high adhesion to textured metals, powder coated surfaces and low surface energy plastics. It can withstand numerous solvents and variable temperatures when applied to various surfaces. It is recommended for rating and serial plates that utilize barcodes, alphanumerics, graphic symbols and logos and require nameplate-like quality. Aggressive Adhesive Labels,Heat Resistant Labels,Metallic Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Solvents,Oils"
+  },
+  {
+    "num": "B-488",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "145 °C",
+    "maxServiceTemperatureF": "293 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0037 in",
+    "thicknessMm": "0.094 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Solvent Resistant Polyester Labels",
+    "description": "Use when a label needs to perform in various aggressive solvents and chemicals and various temperatures.",
+    "specialProperties": [
+      "Harsh Environment Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Laboratory",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-488 B 488 B488 B#488 B# 488 Acrylic Matte Polyester White CSA, RoHS Solvent Resistant Polyester Labels Use when a label needs to perform in various aggressive solvents and chemicals and various temperatures. Harsh Environment Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Laboratory,Rating & Name Plates Label Alcohols,Solvents,Oils"
+  },
+  {
+    "num": "B-489A",
+    "adhesive": "Rubber",
+    "finish": "Matte",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0051 in",
+    "thicknessMm": "0.1295 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Uttra High Adhesion Multi-Purpose Matte Polyester Labels",
+    "description": "B-489 is a matte polyester with ultra aggressive, permanent adhesive. It is designed for high adhesion to textured metals, low surface energy plastics, and powder coated surfaces.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 4,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-489A B 489A B489A B#489A B# 489A Rubber Matte Polyester White UL, CSA, RoHS Uttra High Adhesion Multi-Purpose Matte Polyester Labels B-489 is a matte polyester with ultra aggressive, permanent adhesive. It is designed for high adhesion to textured metals, low surface energy plastics, and powder coated surfaces. Aggressive Adhesive Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-490",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "130 °C",
+    "maxServiceTemperatureF": "266 °F",
+    "minApplicationTemperatureC": "-196 °C",
+    "minApplicationTemperatureF": "-320 °F",
+    "minServiceTemperatureC": "-196 °C",
+    "minServiceTemperatureF": "-320 °F",
+    "thicknessIn": "0.0026 in",
+    "thicknessMm": "0.065 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "FreezerBondz Cryogenic Polyester Labels",
+    "description": "Use this durable polyester label material on flat laboratory surfaces such as straws and slides used in extreme temperatures.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Low Temperature Labels"
+    ],
+    "printerLabelApplications": [
+      "Laboratory"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-490 B 490 B490 B#490 B# 490 Acrylic Matte Polyester White RoHS FreezerBondz Cryogenic Polyester Labels Use this durable polyester label material on flat laboratory surfaces such as straws and slides used in extreme temperatures. Aggressive Adhesive Labels,Low Temperature Labels Laboratory Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-492",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "110 °C",
+    "maxServiceTemperatureF": "230 °F",
+    "minApplicationTemperatureC": "-196 °C",
+    "minApplicationTemperatureF": "-320 °F",
+    "minServiceTemperatureC": "-196 °C",
+    "minServiceTemperatureF": "-320 °F",
+    "thicknessIn": "0.0032 in",
+    "thicknessMm": "0.081 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [],
+    "name": "FreezerBondz Ultra-Thin Cryogenic Polyester Labels",
+    "description": "Use this ultra-thin polyester label material on curved, frozen laboratory surfaces such as test tubes, vials and cryocanes.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Low Temperature Labels"
+    ],
+    "printerLabelApplications": [
+      "Laboratory"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-492 B 492 B492 B#492 B# 492 Acrylic Matte Polyester White  FreezerBondz Ultra-Thin Cryogenic Polyester Labels Use this ultra-thin polyester label material on curved, frozen laboratory surfaces such as test tubes, vials and cryocanes. Aggressive Adhesive Labels,Low Temperature Labels Laboratory Label Alcohols,Oils,Fuels"
+  },
+  {
+    "num": "B-498",
+    "adhesive": "Repositionable Rubber",
+    "finish": "Semi-gloss",
+    "baseMaterial": "Cloth",
+    "maxServiceTemperatureC": "80 °C",
+    "maxServiceTemperatureF": "176 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0073 in",
+    "thicknessMm": "0.185 mm",
+    "colors": [
+      "White",
+      "Yellow",
+      "Orange"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Repositionable Multi-Purpose Vinyl Cloth Labels",
+    "description": "Use this material when you want to easily remove or reposition labels on wires, cables, or any clean, dry surface.",
+    "specialProperties": [
+      "Repositionable Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Wire & Cable"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 3,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-498 B 498 B498 B#498 B# 498 Repositionable Rubber Semi-gloss Cloth White, Yellow, Orange UL, CSA, RoHS Repositionable Multi-Purpose Vinyl Cloth Labels Use this material when you want to easily remove or reposition labels on wires, cables, or any clean, dry surface. Repositionable Labels General Identification,Wire & Cable Label Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-499",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Nylon",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0065 in",
+    "thicknessMm": "0.165 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "High Adhesion Multi-Purpose Nylon Labels",
+    "description": "These labels provide a protective layer over text for excellent abrasion, dirt, oils, solvents, water and excess handling resistance.",
+    "specialProperties": [
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Wire & Cable"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 1,
+    "adhesion": [
+      "Strong for Common Surfaces"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-499 B 499 B499 B#499 B# 499 Acrylic Matte Nylon White UL, CSA, RoHS High Adhesion Multi-Purpose Nylon Labels These labels provide a protective layer over text for excellent abrasion, dirt, oils, solvents, water and excess handling resistance. Permanent Adhesive Labels General Identification,Wire & Cable Label Oils"
+  },
+  {
+    "num": "B-500",
+    "adhesive": "Repositionable Rubber",
+    "finish": "Matte",
+    "baseMaterial": "Cloth",
+    "maxServiceTemperatureC": "80 °C",
+    "maxServiceTemperatureF": "176 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0088 in",
+    "thicknessMm": "0.224 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [],
+    "name": "Polymer Coated Cloth Tape",
+    "description": "B-­500 is a polymer coated cloth label material with a printable topcoat and a rubber based pressure sensitive adhesive. It is a general purpose material for a variety of pre­printed labeling and wire marking applications requiring durability and economy. It has excellent flexibility for wrapping around curved surfaces and good oil and water resistance.",
+    "specialProperties": [
+      "Repositionable Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Wire & Cable"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 3,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-500 B 500 B500 B#500 B# 500 Repositionable Rubber Matte Cloth White  Polymer Coated Cloth Tape B-­500 is a polymer coated cloth label material with a printable topcoat and a rubber based pressure sensitive adhesive. It is a general purpose material for a variety of pre­printed labeling and wire marking applications requiring durability and economy. It has excellent flexibility for wrapping around curved surfaces and good oil and water resistance. Repositionable Labels General Identification,Inspection Repair,Wire & Cable Label Alcohols,Oils,Fuels"
+  },
+  {
+    "num": "B-508",
+    "adhesive": "None",
+    "finish": "Matte",
+    "baseMaterial": "Nomex",
+    "maxServiceTemperatureC": "130 °C",
+    "maxServiceTemperatureF": "266 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.012 in",
+    "thicknessMm": "0.305 mm",
+    "colors": [
+      "White",
+      "Yellow",
+      "Green"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Bradytag® Computer Printable Tag",
+    "description": "B-508 is a high performance wire bundle and cable identification tag for use in harsh environments. It has excellent tear, solvent and heat resistance properties.",
+    "specialProperties": [
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Tag",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 3,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-508 B 508 B508 B#508 B# 508 None Matte Nomex White, Yellow, Green RoHS Bradytag® Computer Printable Tag B-508 is a high performance wire bundle and cable identification tag for use in harsh environments. It has excellent tear, solvent and heat resistance properties. Permanent Adhesive Labels Wire & Cable Tag Alcohols,Oils,Fuels"
+  },
+  {
+    "num": "B-530",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Vinyl",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0025 in",
+    "thicknessMm": "0.06 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Destructible Tamper Evident Vinyl Labels",
+    "description": "B-­530 is a tamper-proof vinyl label for asset and equipment identification. It destructs upon removal, breaking into small pieces.",
+    "specialProperties": [
+      "Tamper Evident Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-530 B 530 B530 B#530 B# 530 Acrylic Gloss Vinyl White RoHS Destructible Tamper Evident Vinyl Labels B-­530 is a tamper-proof vinyl label for asset and equipment identification. It destructs upon removal, breaking into small pieces. Tamper Evident Labels General Identification Label"
+  },
+  {
+    "num": "B-533",
+    "adhesive": "Removable Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.003 in",
+    "thicknessMm": "0.0708 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Glossy White Polyester Label Stock",
+    "description": "B-533 is a white polyester label stock designed for electronic component marking and general purpose applications requiring good solvent, heat resistance and a label that can be easily removed.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Removable Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-533 B 533 B533 B#533 B# 533 Removable Acrylic Gloss Polyester White RoHS Thermal Transfer Printable Glossy White Polyester Label Stock B-533 is a white polyester label stock designed for electronic component marking and general purpose applications requiring good solvent, heat resistance and a label that can be easily removed.  Heat Resistant Labels,Removable Labels General Identification Label"
+  },
+  {
+    "num": "B-593",
+    "adhesive": "Acrylic-Foam Backed",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-20 °C",
+    "minServiceTemperatureF": "-4 °F",
+    "thicknessIn": "0.0256 in",
+    "thicknessMm": "0.65 mm",
+    "colors": [
+      "White",
+      "Yellow",
+      "Red",
+      "Green",
+      "Metallized"
+    ],
+    "compliance": [
+      "UL",
+      "cUL",
+      "RoHS"
+    ],
+    "name": "Raised Panel Labels",
+    "description": "B-593 is an adhesive taped polyester label designed for patch panel identification including external push-buttons, switches, and internal connection points. B-593 is also used as rating and serial plates using alphanumerics that require name plate quality.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Electrical"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 5,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-593 B 593 B593 B#593 B# 593 Acrylic-Foam Backed Gloss Polyester White, Yellow, Red, Green, Metallized UL, cUL, RoHS Raised Panel Labels B-593 is an adhesive taped polyester label designed for patch panel identification including external push-buttons, switches, and internal connection points. B-593 is also used as rating and serial plates using alphanumerics that require name plate quality. Heat Resistant Labels,Permanent Adhesive Labels Electrical Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-619A",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "145 °C",
+    "maxServiceTemperatureF": "293 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0036 in",
+    "thicknessMm": "0.091 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "cUL",
+      "RoHS"
+    ],
+    "name": "Matte White Polyester Label Stock",
+    "description": "B-619A is a dot-matrix and THT printable polyester label stock. It is designed for general purpose high performance labeling, barcode labels, and IC identification.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-619A B 619A B619A B#619A B# 619A Acrylic Matte Polyester White UL, cUL, RoHS Matte White Polyester Label Stock B-619A is a dot-matrix and THT printable polyester label stock. It is designed for general purpose high performance labeling, barcode labels, and IC identification. Heat Resistant Labels,Permanent Adhesive Labels General Identification,Rating & Name Plates Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-637",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyvinylfluoride",
+    "maxServiceTemperatureC": "135 °C",
+    "maxServiceTemperatureF": "275 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0036 in",
+    "thicknessMm": "0.091 mm",
+    "colors": [
+      "White",
+      "Yellow"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Dot Matrix Printable Label Stock",
+    "description": "B-637 is a label stock designed for cable and wire bundle identification and label applications where self­-extinguishing properties are required. It also exhibits good solvent and heat resistance.",
+    "specialProperties": [],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-637 B 637 B637 B#637 B# 637 Acrylic Matte Polyvinylfluoride White, Yellow RoHS Dot Matrix Printable Label Stock B-637 is a label stock designed for cable and wire bundle identification and label applications where self­-extinguishing properties are required. It also exhibits good solvent and heat resistance.  Wire & Cable Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-642",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyvinylfluoride",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0022 in",
+    "thicknessMm": "0.055 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Self-Laminating Self-Extinguishing Tedlar Wraps",
+    "description": "B-642 is a self-extinguishing material used for wire and cable marking applications, particularly in aerospace, defense and mass transit industries. It has excellent flexibility for wrapping on small diameter wires and the polyvinylfluoride film provides good self­-extinguishing properties and solvent resistance.",
+    "specialProperties": [
+      "Self Laminating Labels & Wraps"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Self-Lam",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-642 B 642 B642 B#642 B# 642 Acrylic Matte Polyvinylfluoride White RoHS Self-Laminating Self-Extinguishing Tedlar Wraps B-642 is a self-extinguishing material used for wire and cable marking applications, particularly in aerospace, defense and mass transit industries. It has excellent flexibility for wrapping on small diameter wires and the polyvinylfluoride film provides good self­-extinguishing properties and solvent resistance. Self Laminating Labels & Wraps Wire & Cable Self-Lam Alcohols,Oils,Fuels"
+  },
+  {
+    "num": "B-652",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "280 °C",
+    "maxServiceTemperatureF": "536 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0044 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "Amber"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Dot Matrix / Laser Printable High Temperature Polyimide Label",
+    "description": "B-652 is a polyimide label with high heat resistance. It is recommended for electronic component pre-process labeling.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-652 B 652 B652 B#652 B# 652 Acrylic Matte Polyimide Amber RoHS Dot Matrix / Laser Printable High Temperature Polyimide Label B-652 is a polyimide label with high heat resistance. It is recommended for electronic component pre-process labeling. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-654",
+    "adhesive": "Removable Silicone",
+    "finish": "Gloss",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "240 °C",
+    "maxServiceTemperatureF": "464 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": null,
+    "minServiceTemperatureF": null,
+    "thicknessIn": "0.0025 in",
+    "thicknessMm": "0.064 mm",
+    "colors": [
+      "Amber"
+    ],
+    "compliance": [],
+    "name": "Polyimide Masking Tape",
+    "description": "B-654 is a polyimide masking tape with high temperature removable adhesive. It is recommended for use use in printed circuit board applications. It can withstand solder fluxes, molten solder, and cleaning/degreasing solvents and removes cleanly with no adhesive residue from most surfaces.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-654 B 654 B654 B#654 B# 654 Removable Silicone Gloss Polyimide Amber  Polyimide Masking Tape B-654 is a polyimide masking tape with high temperature removable adhesive. It is recommended for use use in printed circuit board applications. It can withstand solder fluxes, molten solder, and cleaning/degreasing solvents and removes cleanly with no adhesive residue from most surfaces. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-719",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0033 in",
+    "thicknessMm": "0.084 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Ultra-Thin Matte Electrostatic Dissipative Polyimide Labels",
+    "description": "B-719 is a low profile matte polyimide label stock with a permanent static dissipative adhesive and a static dissipative release liner. It is designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-719 B 719 B719 B#719 B# 719 Acrylic Matte Polyimide White UL, RoHS Ultra-Thin Matte Electrostatic Dissipative Polyimide Labels B-719 is a low profile matte polyimide label stock with a permanent static dissipative adhesive and a static dissipative release liner. It is designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards.  Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-724",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0044 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "Amber"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Matte Amber Ultra High Temp Polyimide Labels",
+    "description": "B-724 is a matte polyimide label stock with a permanent acrylic adhesive, designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. It is designed to withstand extremely high temperatures and can be used for top- or bottom-side component or board identification.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-724 B 724 B724 B#724 B# 724 Acrylic Matte Polyimide Amber RoHS Matte Amber Ultra High Temp Polyimide Labels B-724 is a matte polyimide label stock with a permanent acrylic adhesive, designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. It is designed to withstand extremely high temperatures and can be used for top- or bottom-side component or board identification. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-728",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0044 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Matte White Thermal Transfer Printable Polyimide Label Stock",
+    "description": "B-728 is a matte polyimide label stock with a permanent acrylic adhesive, designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. It can be used for top- or bottom-side component or board identification. Its matte topcoat provides excellent resistance to solder balling.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-728 B 728 B728 B#728 B# 728 Acrylic Matte Polyimide White UL, RoHS Matte White Thermal Transfer Printable Polyimide Label Stock B-728 is a matte polyimide label stock with a permanent acrylic adhesive, designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. It can be used for top- or bottom-side component or board identification. Its matte topcoat provides excellent resistance to solder balling. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label"
+  },
+  {
+    "num": "B-729",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0034 in",
+    "thicknessMm": "0.086 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Matte White Low Profile Thermal Transfer Printable Polyimide Label Stock",
+    "description": "B-729 is a high-temperature polyimide label for pre-process circuit board identification. It is designed to survive multiple cycles of harsh condition washes used for circuit board cleaning processes. Its matte topcoat resists solder balls from sticking to the label after exposure to molten wave solder.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-729 B 729 B729 B#729 B# 729 Acrylic Matte Polyimide White UL, RoHS Matte White Low Profile Thermal Transfer Printable Polyimide Label Stock B-729 is a high-temperature polyimide label for pre-process circuit board identification. It is designed to survive multiple cycles of harsh condition washes used for circuit board cleaning processes. Its matte topcoat resists solder balls from sticking to the label after exposure to molten wave solder. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label"
+  },
+  {
+    "num": "B-730",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0045 in",
+    "thicknessMm": "0.114 mm",
+    "colors": [
+      "Black"
+    ],
+    "compliance": [
+      "UL"
+    ],
+    "name": "Matte Black Laser Markable Polyimide Label Stock",
+    "description": "B-730 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-730 B 730 B730 B#730 B# 730 Acrylic Matte Polyimide Black UL Matte Black Laser Markable Polyimide Label Stock B-730 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-731",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0047 in",
+    "thicknessMm": "0.119 mm",
+    "colors": [
+      "Black"
+    ],
+    "compliance": [
+      "UL"
+    ],
+    "name": "Matte Black Laser Markable Static Dissipative Polyimide Label Stock",
+    "description": "B-731 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging materials as defined by ANSI/ESD S541-2008.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-731 B 731 B731 B#731 B# 731 Acrylic Matte Polyimide Black UL Matte Black Laser Markable Static Dissipative Polyimide Label Stock B-731 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging materials as defined by ANSI/ESD S541-2008. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-7316",
+    "adhesive": "None",
+    "finish": "None",
+    "baseMaterial": "Steel",
+    "maxServiceTemperatureC": "815 °C",
+    "maxServiceTemperatureF": "1499 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-80 °C",
+    "minServiceTemperatureF": "-112 °F",
+    "thicknessIn": "0.0197 in",
+    "thicknessMm": "0.50 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Stainless Steel Cable Tags",
+    "description": "B­-7316 stainless steel cable tags are designed for labeling pipes, cables and wire bundles in harsh environments where extreme corrosion resistance and durability is required. The material can be laser etched or embossed for printed legends that are extremely durable. Tags are attached using stainless steel cable ties.",
+    "specialProperties": [],
+    "printerLabelApplications": [],
+    "tapeColorable": "No",
+    "materialType": "Tag",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-7316 B 7316 B7316 B#7316 B# 7316 None None Steel Silver RoHS Stainless Steel Cable Tags B­-7316 stainless steel cable tags are designed for labeling pipes, cables and wire bundles in harsh environments where extreme corrosion resistance and durability is required. The material can be laser etched or embossed for printed legends that are extremely durable. Tags are attached using stainless steel cable ties.   Tag"
+  },
+  {
+    "num": "B-732A",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.005 in",
+    "thicknessMm": "0.127 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL"
+    ],
+    "name": "Glossy White Laser Markable Polyimide Label Stock",
+    "description": "B-732A is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The product can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-732A B 732A B732A B#732A B# 732A Acrylic Gloss Polyimide White UL Glossy White Laser Markable Polyimide Label Stock B-732A is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The product can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-733A",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0052 in",
+    "thicknessMm": "0.132 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL"
+    ],
+    "name": "Glossy White Laser Markable Static Dissipative Polyimide Label Stock",
+    "description": "B-733A is a static dissipative material designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The product can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging materials as defined by ANSI/ESD S541-2008.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-733A B 733A B733A B#733A B# 733A Acrylic Gloss Polyimide White UL Glossy White Laser Markable Static Dissipative Polyimide Label Stock B-733A is a static dissipative material designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The product can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging materials as defined by ANSI/ESD S541-2008. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-734",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.005 in",
+    "thicknessMm": "0.127 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL"
+    ],
+    "name": "Matte White Laser Markable Polyimide Label Stock",
+    "description": "B-734 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-734 B 734 B734 B#734 B# 734 Acrylic Matte Polyimide White UL Matte White Laser Markable Polyimide Label Stock B-734 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-735",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0052 in",
+    "thicknessMm": "0.132 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL"
+    ],
+    "name": "Matte White Laser Markable Static Dissipative Polyimide Label Stock",
+    "description": "B-735 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-735 B 735 B735 B#735 B# 735 Acrylic Matte Polyimide White UL Matte White Laser Markable Static Dissipative Polyimide Label Stock B-735 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-7425",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polypropylene",
+    "maxServiceTemperatureC": "70 °C",
+    "maxServiceTemperatureF": "158 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-80 °C",
+    "minServiceTemperatureF": "-112 °F",
+    "thicknessIn": "0.004 in",
+    "thicknessMm": "0.102 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Chemical and Temperature Resistant Polypropylene Labels",
+    "description": "Use this versatile outdoor-friendly material when multiple color options will clearly provide information when adhered to rugged surfaces in dirty conditions.",
+    "specialProperties": [
+      "Low Temperature Labels",
+      "Permanent Adhesive Labels",
+      "Temperature Indicating Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Laboratory"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-7425 B 7425 B7425 B#7425 B# 7425 Acrylic Matte Polypropylene White RoHS Chemical and Temperature Resistant Polypropylene Labels Use this versatile outdoor-friendly material when multiple color options will clearly provide information when adhered to rugged surfaces in dirty conditions. Low Temperature Labels,Permanent Adhesive Labels,Temperature Indicating Labels General Identification,Laboratory Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-7511",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "143 °C",
+    "maxServiceTemperatureF": "289 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "37 °C",
+    "minServiceTemperatureF": "99 °F",
+    "thicknessIn": "0.0157 in",
+    "thicknessMm": "0.399 mm",
+    "colors": [
+      "Multi"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Irreversible Temperature Labels For Low Temperatures",
+    "description": "B-7511 is a temperature indicating label indicating the highest temperature reached over the range 37°C to 143°C. It is irreversible showing a permanent record of the highest reached temperature.",
+    "specialProperties": [
+      "Permanent Adhesive Labels",
+      "Temperature Indicating Labels"
+    ],
+    "printerLabelApplications": [
+      "Inspection Repair"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 4,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-7511 B 7511 B7511 B#7511 B# 7511 Acrylic Gloss Polyester Multi RoHS Irreversible Temperature Labels For Low Temperatures B-7511 is a temperature indicating label indicating the highest temperature reached over the range 37°C to 143°C. It is irreversible showing a permanent record of the highest reached temperature.   Permanent Adhesive Labels,Temperature Indicating Labels Inspection Repair Label"
+  },
+  {
+    "num": "B-7512",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyethylene",
+    "maxServiceTemperatureC": "210 °C",
+    "maxServiceTemperatureF": "410 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "149 °C",
+    "minServiceTemperatureF": "300 °F",
+    "thicknessIn": "0.0142 in",
+    "thicknessMm": "0.361 mm",
+    "colors": [
+      "Multi"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Irreversible Temperature Labels For Mid Temperatures",
+    "description": "B-7512 is a temperature indicating label indicating the highest temperature reached over the range 149°C to 177°C or 182°C to 210°C. It is irreversible showing a permanent record of the highest reached temperature.",
+    "specialProperties": [
+      "Permanent Adhesive Labels",
+      "Temperature Indicating Labels"
+    ],
+    "printerLabelApplications": [
+      "Inspection Repair"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Cleaners"
+    ],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-7512 B 7512 B7512 B#7512 B# 7512 Acrylic Gloss Polyethylene Multi RoHS Irreversible Temperature Labels For Mid Temperatures B-7512 is a temperature indicating label indicating the highest temperature reached over the range 149°C to 177°C or 182°C to 210°C. It is irreversible showing a permanent record of the highest reached temperature.   Permanent Adhesive Labels,Temperature Indicating Labels Inspection Repair Label Cleaners"
+  },
+  {
+    "num": "B-7518",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "0 °C",
+    "minServiceTemperatureF": "32 °F",
+    "thicknessIn": "0.0087 in",
+    "thicknessMm": "0.221 mm",
+    "colors": [
+      "Multi"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Reversible Temperature Indicating Labels",
+    "description": "B-7518 is temperature indicating label reversibly indicating the current surface termperature over the range 0°C to 100°C. The material changes colour at designated temperatures.",
+    "specialProperties": [
+      "Temperature Indicating Labels"
+    ],
+    "printerLabelApplications": [
+      "Inspection Repair"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 4,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-7518 B 7518 B7518 B#7518 B# 7518 Acrylic Gloss Polyester Multi RoHS Reversible Temperature Indicating Labels B-7518 is temperature indicating label reversibly indicating the current surface termperature over the range 0°C to 100°C. The material changes colour at designated temperatures. Temperature Indicating Labels Inspection Repair Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-7546",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": "4 °C",
+    "minApplicationTemperatureF": "39 °F",
+    "minServiceTemperatureC": "-20 °C",
+    "minServiceTemperatureF": "-4 °F",
+    "thicknessIn": "0.0032 in",
+    "thicknessMm": "0.080 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "VOID Pattern Tamper Evident Polyester Labels",
+    "description": "B-7546 is a tamper evident label material that leaves a VOID footprint when removed. It is thermal transfer printalbe and available in glossy white polyester material. The material allows for extremely high resolution printing when using the Brady Series R7962 and R4900 ribbons.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels",
+      "Tamper Evident Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-7546 B 7546 B7546 B#7546 B# 7546 Acrylic Gloss Polyester White UL, CSA, RoHS VOID Pattern Tamper Evident Polyester Labels B-7546 is a tamper evident label material that leaves a VOID footprint when removed. It is thermal transfer printalbe and available in glossy white polyester material. The material allows for extremely high resolution printing when using the Brady Series R7962 and R4900 ribbons. Heat Resistant Labels,Permanent Adhesive Labels,Tamper Evident Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-7566",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "80 °C",
+    "maxServiceTemperatureF": "176 °F",
+    "minApplicationTemperatureC": "4 °C",
+    "minApplicationTemperatureF": "39 °F",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0025 in",
+    "thicknessMm": "0.064 mm",
+    "colors": [
+      "Clear"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Tamper-evident Clear Polyester Label Stock",
+    "description": "B-7566 is a clear tamper evident label material designed to leave a VOID footprint when the label is removed. In addition, a VOID pattern will appear on the top\nsurface of the label in order to prevent it from being reused. The adhesive nature of this materia does not allow for repositioning and requires minimal\nhandling in order to prevent prematurely exposed VOID pattern.",
+    "specialProperties": [
+      "Permanent Adhesive Labels",
+      "Tamper Evident Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 1,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-7566 B 7566 B7566 B#7566 B# 7566 Acrylic Gloss Polyester Clear RoHS Thermal Transfer Printable Tamper-evident Clear Polyester Label Stock B-7566 is a clear tamper evident label material designed to leave a VOID footprint when the label is removed. In addition, a VOID pattern will appear on the top\nsurface of the label in order to prevent it from being reused. The adhesive nature of this materia does not allow for repositioning and requires minimal\nhandling in order to prevent prematurely exposed VOID pattern. Permanent Adhesive Labels,Tamper Evident Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Oils"
+  },
+  {
+    "num": "B-7576",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Metallized Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": "4 °C",
+    "minApplicationTemperatureF": "39 °F",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0028 in",
+    "thicknessMm": "0.071 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "VOID Pattern Tamper Evident Matte Metallized Polyester Labels",
+    "description": "B-7576 is a metallized tamper evident label material designed to leave a VOID footprint when the label is removed. In addition, a VOID pattern will appear on the top surface of the label in order to prevent it from being reused. The adhesive nature of this material does not allow for repositioning and requires minimal handling in order to prevent prematurely exposed VOID pattern.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Metallic Labels",
+      "Permanent Adhesive Labels",
+      "Tamper Evident Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-7576 B 7576 B7576 B#7576 B# 7576 Acrylic Matte Metallized Polyester Silver UL, RoHS VOID Pattern Tamper Evident Matte Metallized Polyester Labels B-7576 is a metallized tamper evident label material designed to leave a VOID footprint when the label is removed. In addition, a VOID pattern will appear on the top surface of the label in order to prevent it from being reused. The adhesive nature of this material does not allow for repositioning and requires minimal handling in order to prevent prematurely exposed VOID pattern. Heat Resistant Labels,Metallic Labels,Permanent Adhesive Labels,Tamper Evident Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-7641",
+    "adhesive": null,
+    "finish": "Matte",
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "105 °C",
+    "maxServiceTemperatureF": "221 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": null,
+    "thicknessMm": null,
+    "colors": [
+      "White",
+      "Yellow",
+      "Red"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "PermaSleeve Low Smoke Zero Halogen Heat-Shrink Sleeves",
+    "description": "Use this low-smoke, halogen-free and flame-retardant heat-shrink label material to permanently mark wires and cables.",
+    "specialProperties": [
+      "Heat Shrink Sleeves"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Sleeve",
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": "2:1",
+    "searchString": "B-7641 B 7641 B7641 B#7641 B# 7641  Matte Polyolefin White, Yellow, Red RoHS PermaSleeve Low Smoke Zero Halogen Heat-Shrink Sleeves Use this low-smoke, halogen-free and flame-retardant heat-shrink label material to permanently mark wires and cables. Heat Shrink Sleeves Wire & Cable Sleeve Alcohols,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-7642",
+    "adhesive": null,
+    "finish": "Matte",
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": null,
+    "thicknessMm": null,
+    "colors": [
+      "White",
+      "Yellow"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Heatex 2:1 Marker",
+    "description": "B-7642 is a heat-shrinkable polyolefin sleeve with a 2:1 shrink ratio for wire and cable marking. Markers are supplied roll form in a flattened format on a carrier designed for use with computer driven printers. B­7642 is available in white and yellow. Custom colors are available.",
+    "specialProperties": [
+      "Heat Shrink Sleeves"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Sleeve",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": "2:1",
+    "searchString": "B-7642 B 7642 B7642 B#7642 B# 7642  Matte Polyolefin White, Yellow RoHS Heatex 2:1 Marker B-7642 is a heat-shrinkable polyolefin sleeve with a 2:1 shrink ratio for wire and cable marking. Markers are supplied roll form in a flattened format on a carrier designed for use with computer driven printers. B­7642 is available in white and yellow. Custom colors are available.  Heat Shrink Sleeves Wire & Cable Sleeve Alcohols,Oils,Fuels"
+  },
+  {
+    "num": "B-7643",
+    "adhesive": null,
+    "finish": "Matte",
+    "baseMaterial": "Polyurethane",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0177 in",
+    "thicknessMm": "0.45 mm",
+    "colors": [
+      "White",
+      "Yellow"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Zero Halogen Cable Markers",
+    "description": "Brady B­7643 is a zero-halogen, high density thermoplastic polyether polyurethane cable marker. The markers are tough, with a very high degree of mark permanence in almost any environment. The material is thermal transfer printable and available in multiple colors.",
+    "specialProperties": [
+      "Heat Shrink Sleeves"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Sleeve",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-7643 B 7643 B7643 B#7643 B# 7643  Matte Polyurethane White, Yellow RoHS  Zero Halogen Cable Markers Brady B­7643 is a zero-halogen, high density thermoplastic polyether polyurethane cable marker. The markers are tough, with a very high degree of mark permanence in almost any environment. The material is thermal transfer printable and available in multiple colors. Heat Shrink Sleeves Wire & Cable Sleeve Alcohols,Oils,Fuels"
+  },
+  {
+    "num": "B-7646",
+    "adhesive": null,
+    "finish": "Matte",
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "135 °C",
+    "maxServiceTemperatureF": "275 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": "0.0205 in",
+    "thicknessMm": "0.521 mm",
+    "colors": [
+      "White",
+      "Yellow"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Diesel Resistant Sleeve",
+    "description": "B­7646 is a diesel-resistant sleeve material. When printed with R6600 Series thermal transfer ribbons it meets the material and physical property requirements of SAE AS-81531and MIL-STD-202 method 215K and NF F 00-608 type A and H Flammability Testing.",
+    "specialProperties": [
+      "Heat Shrink Sleeves"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Sleeve",
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 3,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": "3:1",
+    "searchString": "B-7646 B 7646 B7646 B#7646 B# 7646  Matte Polyolefin White, Yellow RoHS  Diesel Resistant Sleeve B­7646 is a diesel-resistant sleeve material. When printed with R6600 Series thermal transfer ribbons it meets the material and physical property requirements of SAE AS-81531and MIL-STD-202 method 215K and NF F 00-608 type A and H Flammability Testing. Heat Shrink Sleeves Wire & Cable Sleeve Alcohols,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-767",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0041 in",
+    "thicknessMm": "0.107 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Electrostatic Dissipative Polyimide Labels",
+    "description": "B-767 is a low profile polyimide label with a permanent static dissipative adhesive and static dissipative release liner. It is designed for use in circuit board and electronic component pre-process labeling.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-767 B 767 B767 B#767 B# 767 Acrylic Gloss Polyimide White UL, RoHS Electrostatic Dissipative Polyimide Labels B-767 is a low profile polyimide label with a permanent static dissipative adhesive and static dissipative release liner. It is designed for use in circuit board and electronic component pre-process labeling. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-768",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0031 in",
+    "thicknessMm": "0.084 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Ultra-Thin Electrostatic Dissipative Polyimide Labels",
+    "description": "B-768 is a low profile glossy polyimide label stock with a permanent static dissipative adhesive and a static dissipative release liner. It is designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-768 B 768 B768 B#768 B# 768 Acrylic Gloss Polyimide White UL, RoHS Ultra-Thin Electrostatic Dissipative Polyimide Labels B-768 is a low profile glossy polyimide label stock with a permanent static dissipative adhesive and a static dissipative release liner. It is designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards.  Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-776",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0044 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "Light Green"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Glossy Light Green Thermal Transfer Printable Polyimide Label Stock",
+    "description": "B-776 is a light green polyimide material designed for printed circuit board and component preprocess labeling. It has high temperature and solvent resistance and can withstand multiple cycles of harsh condition washes for printed circuit boards. It can be used for visual differentiation between Lead (Pb) Free manufacturing and non-Lead (Pb) Free manufacturing.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-776 B 776 B776 B#776 B# 776 Acrylic Gloss Polyimide Light Green UL, RoHS Glossy Light Green Thermal Transfer Printable Polyimide Label Stock B-776 is a light green polyimide material designed for printed circuit board and component preprocess labeling. It has high temperature and solvent resistance and can withstand multiple cycles of harsh condition washes for printed circuit boards. It can be used for visual differentiation between Lead (Pb) Free manufacturing and non-Lead (Pb) Free manufacturing.  Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-777",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0042 in",
+    "thicknessMm": "0.1041 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA"
+    ],
+    "name": "Glossy White Thermal Transfer Printable Polyimide Label Stock",
+    "description": "B-777 is a white polyimide material designed for printed cicuit board and component preprocess labeling. It is designed to withstand multiple cycles of harsh condition washes for printed circuit boards without reflow or preheating for improving print performance.",
+    "specialProperties": [
+      "Chemical Resistant",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-777 B 777 B777 B#777 B# 777 Acrylic Gloss Polyimide White UL, CSA  Glossy White Thermal Transfer Printable Polyimide Label Stock B-777 is a white polyimide material designed for printed cicuit board and component preprocess labeling. It is designed to withstand multiple cycles of harsh condition washes for printed circuit boards without reflow or preheating for improving print performance. Chemical Resistant, Heat Resistant Labels, Permanent Adhesive Labels Circuit Board Label Alcohols"
+  },
+  {
+    "num": "B-797",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0041 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "High Temp Polyimide Labels",
+    "description": "B-797 is a glossy polyimide label stock with a permanent acrylic adhesive, designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. It can be used for top- or bottom-side component or board identification. Its glossy topcoat provides excellent contrast and smear resistance.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-797 B 797 B797 B#797 B# 797 Acrylic Gloss Polyimide White UL, RoHS High Temp Polyimide Labels B-797 is a glossy polyimide label stock with a permanent acrylic adhesive, designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. It can be used for top- or bottom-side component or board identification. Its glossy topcoat provides excellent contrast and smear resistance. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-8117",
+    "adhesive": "Rubber",
+    "finish": "Matte",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.035 in",
+    "thicknessMm": "0.0889 mm",
+    "colors": [
+      "Black"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Matte Black Label Stock",
+    "description": "B-8117 is a black, matte polyester label material designed for general industrial identtification. It has a black synthetic rubber-based, pressure-sensitive adhesive that is ideal for plastic surfaces.",
+    "specialProperties": [
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": null,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-8117 B 8117 B8117 B#8117 B# 8117 Rubber Matte Polyester Black UL, RoHS Matte Black Label Stock B-8117 is a black, matte polyester label material designed for general industrial identtification. It has a black synthetic rubber-based, pressure-sensitive adhesive that is ideal for plastic surfaces. Permanent Adhesive Labels General Identification,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-813",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "60 °C",
+    "maxServiceTemperatureF": "140 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.004 in",
+    "thicknessMm": "0.010 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Standard Direct Thermal Permanent Paper",
+    "description": "B-813 is a general purpose, thermal-printed paper label.  It is recommended for labeling applications requiring a ribbonless, low cost label material. It is not recommended for high heat/humidity or outdoor applications.",
+    "specialProperties": [
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
+    "adhesion": [
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 5,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-813 B 813 B813 B#813 B# 813 Acrylic Matte Paper White RoHS Standard Direct Thermal Permanent Paper B-813 is a general purpose, thermal-printed paper label.  It is recommended for labeling applications requiring a ribbonless, low cost label material. It is not recommended for high heat/humidity or outdoor applications. Permanent Adhesive Labels General Identification Label"
+  },
+  {
+    "num": "B-816",
+    "adhesive": "Removable Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "60 °C",
+    "maxServiceTemperatureF": "140 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.004 in",
+    "thicknessMm": "0.010 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Standard Direct Thermal Removable Paper",
+    "description": "B-816 is a general purpose, thermal-printed paper label with an acryilc adhesive that allows for easy removal. It is recommended for labeling applications requiring a ribbonless, low cost label material. It is not recommended for high heat/humidity or outdoor applications.",
+    "specialProperties": [
+      "Removable Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
+    "adhesion": [
+      "Strong for Difficult Surfaces"
+    ],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-816 B 816 B816 B#816 B# 816 Removable Acrylic Matte Paper White RoHS Standard Direct Thermal Removable Paper B-816 is a general purpose, thermal-printed paper label with an acryilc adhesive that allows for easy removal. It is recommended for labeling applications requiring a ribbonless, low cost label material. It is not recommended for high heat/humidity or outdoor applications. Removable Labels General Identification Label"
+  },
+  {
+    "num": "B-8423",
+    "adhesive": "Acrylic",
+    "finish": "Satin",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "110 °C",
+    "maxServiceTemperatureF": "230 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0028 in",
+    "thicknessMm": "0.071 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Bradybondz™ B-8423 Satin Polyester Thermal Printable Label Stock",
+    "description": "B-8423 is designed for general purpose label and rating plate applications that utilize high quality/density alphanumerics, barcodes and graphics. B-8423 can also be used for solar panel identification and post process labeling of printed circuit boards.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-8423 B 8423 B8423 B#8423 B# 8423 Acrylic Satin Polyester White UL, CSA, RoHS Bradybondz™ B-8423 Satin Polyester Thermal Printable Label Stock B-8423 is designed for general purpose label and rating plate applications that utilize high quality/density alphanumerics, barcodes and graphics. B-8423 can also be used for solar panel identification and post process labeling of printed circuit boards. Aggressive Adhesive Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-8425",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polypropylene",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0031 in",
+    "thicknessMm": "0.079 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "T-Flag or P-Flag Matte Polypropylene Labels",
+    "description": "B-8425 is a general purpose label material appropriate for asset identification, rating plate, and warning/instructional labeling.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-8425 B 8425 B8425 B#8425 B# 8425 Acrylic Gloss Polypropylene White UL, CSA, RoHS T-Flag or P-Flag Matte Polypropylene Labels B-8425 is a general purpose label material appropriate for asset identification, rating plate, and warning/instructional labeling. Aggressive Adhesive Labels,Permanent Adhesive Labels General Identification Label"
+  },
+  {
+    "num": "B-8459",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.003 in",
+    "thicknessMm": "0.076 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "cUL"
+    ],
+    "name": "Thermal Transfer Printable Matte White Polyester Label Stock",
+    "description": "B-8459 is designed for applications such as rating plates that utilize high quality/density alphanumerics, barcodes and graphics.",
+    "specialProperties": [
+      "Harsh Environment Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-8459 B 8459 B8459 B#8459 B# 8459 Acrylic Matte Polyester White UL, cUL Thermal Transfer Printable Matte White Polyester Label Stock B-8459 is designed for applications such as rating plates that utilize high quality/density alphanumerics, barcodes and graphics. Harsh Environment Labels, Permanent Adhesive Labels General Identification Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-8591",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "110 °C",
+    "maxServiceTemperatureF": "230 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0043 in",
+    "thicknessMm": "0.109 mm",
+    "colors": [
+      "White",
+      "Yellow",
+      "Silver",
+      "Black"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "All-Weather Polyester Labels",
+    "description": "B-8591 is an outdoor-durable polyester label material designed for product, component and asset identification. It is a weather-resistant material appropriate for outdoor UV exposure applications.",
+    "specialProperties": [
+      "Outdoor Durable"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Safety"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-8591 B 8591 B8591 B#8591 B# 8591 Acrylic Gloss Polyester White, Yellow, Silver, Black UL, RoHS All-Weather Polyester Labels B-8591 is an outdoor-durable polyester label material designed for product, component and asset identification. It is a weather-resistant material appropriate for outdoor UV exposure applications. Outdoor Durable General Identification, Safety Label Alcohols,Cleaners"
+  },
+  {
+    "num": "B-953",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "130 °C",
+    "maxServiceTemperatureF": "266 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.002 in",
+    "thicknessMm": "0.051 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [],
+    "name": "White Polyester Label Stock",
+    "description": "Brady B-953 is a thin polyester label material designed for identification of small or intricate electronic components and devices.  Brady B-953 can withstand elevated temperatures for prolonged periods of time and has good solvent resistance. The material is capable of accepting extremely small print.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Inspection Repair"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 1,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-953 B 953 B953 B#953 B# 953 Acrylic Gloss Polyester White  White Polyester Label Stock Brady B-953 is a thin polyester label material designed for identification of small or intricate electronic components and devices.  Brady B-953 can withstand elevated temperatures for prolonged periods of time and has good solvent resistance. The material is capable of accepting extremely small print. Heat Resistant Labels,Permanent Adhesive Labels Inspection Repair Label Alcohols,Oils"
+  },
+  {
+    "num": "B-966B",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0029 in",
+    "thicknessMm": "0.074 mm",
+    "colors": [
+      "Clear"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Clear Polyester Overlaminating Tape",
+    "description": "Brady B-966B is a clear polyester film used as an overlaminate and for permashield applications. It has excellent clarity and abrasion resistance, as well as very good high-temperature and solvent resistance.",
+    "specialProperties": [
+      "Harsh Environment Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "B-966B B 966B B966B B#966B B# 966B Acrylic Gloss Polyester Clear RoHS  Clear Polyester Overlaminating Tape Brady B-966B is a clear polyester film used as an overlaminate and for permashield applications. It has excellent clarity and abrasion resistance, as well as very good high-temperature and solvent resistance. Harsh Environment Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+  },
+  {
+    "num": "B-969A",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "baseMaterial": "Metallized Polyester",
+    "maxServiceTemperatureC": "145 °C",
+    "maxServiceTemperatureF": "293 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.005 in",
+    "thicknessMm": "0.122 mm",
+    "colors": [
+      "Metallized"
+    ],
+    "compliance": [
+      "UL"
+    ],
+    "name": "Matte Metallized Polyester Label Stock",
+    "description": "Brady B-969A is a dot-matrix and THT-printable, metallized polyester label for general identification and rating plates. It has good smudge resistance, solvent resistance, and high temperature performance.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Metallic Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Strong for Highly Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 2,
+    "adhesionTextured": "Yes",
+    "shrinkRatio": null,
+    "searchString": "B-969A B 969A B969A B#969A B# 969A Acrylic Matte Metallized Polyester Metallized UL  Matte Metallized Polyester Label Stock Brady B-969A is a dot-matrix and THT-printable, metallized polyester label for general identification and rating plates. It has good smudge resistance, solvent resistance, and high temperature performance. Heat Resistant Labels,Metallic Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+  }
+],
+
+  "Filters": [{
+      "id": "materialType",
+      "values": [],
+      "filteropen": false
+    },
+    {
+      "id": "printerLabelApplications",
+      "values": [],
+      "filteropen": false
+    },
+    {
+      "id": "baseMaterial",
+      "values": [],
+      "filteropen": false
+    },
+    {
+      "id": "finish",
+      "values": [],
+      "filteropen": false
+    },
+    {
+      "id": "colors",
+      "values": [],
+      "filteropen": false
+    },
+    {
+      "id": "searchFilter",
+      "values": [],
+      "filteropen": false
+    },
+    {
+      "id": "chemicalResistance",
+      "values": [],
+      "filteropen": false
+    },
+    {
+      "id": "adhesion",
+      "values": [],
+      "filteropen": false
+    },
+    {
+      "id": "specialProperties",
+      "values": [],
+      "filteropen": false
+    },
+    {
+      "id": "compliance",
+      "values": [],
+      "filteropen": false
+    }
+  ]
+}

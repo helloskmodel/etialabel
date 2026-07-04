@@ -1,0 +1,118 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/v000238641/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/v000238641/",
+ "name": "3M™ Thermal Transfer Label Material 7817, White Polyester Gloss, Roll, Config",
+ "product_number": "7817",
+ "stock_number": "7100072939",
+ "short_description": "3M™ Thermal Transfer Label Materials are versatile and durable label stocks. They provide excellent thermal stability and moisture resistance for use in demanding applications, such as bar code tracking. The adhesive on many labels offers excellent clarity and good initial tack to help improve the finished label.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Offers excellent thermal stability and moisture resistance",
+  "Versatile materials produced for use in a variety of applications",
+  "Adhesive offers excellent clarity and good initial tack to help improve finished label"
+ ],
+ "attributes": {
+  "Adhesive Type": [
+   "Emulsion Acrylic"
+  ],
+  "Application": [
+   "Label"
+  ],
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Type": [
+   "P1400 Permanent"
+  ],
+  "Facestock Color": [
+   "White"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Overall Width (Metric)": [
+   "1371.6 mm"
+  ],
+  "Primary Liner": [
+   "55# Densified Kraft"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Thermal Transfer",
+   "UV Inkjet"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Product Type": [
+   "Label"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll"
+  ],
+  "Surface Finish": [
+   "Glossy"
+  ],
+  "Tape Thickness (Imperial)": [
+   "2.9 mil"
+  ],
+  "Topcoat": [
+   "TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/1455463O/3m-wash-away-label-fp0602.pdf?&fn=FP0602-Data-Sheet.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Thermal Transfer Polyester Label 7817",
+   "url": "https://cdmsweb.3m.com/ingredientcommunication/file/Media/tNQTfagDXoE",
+   "contentType": "Regulatory Data Sheet"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7817",
+  "title": "3M™ Thermal Transfer Label Material 7817, White Polyester Gloss, Roll, Config",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}

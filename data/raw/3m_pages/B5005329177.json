@@ -1,0 +1,128 @@
+{
+ "url": "https://www.3m.com/3M/en_US/p/d/b5005329177/",
+ "canonical": "https://www.3m.com/3M/en_US/p/d/b5005329177/",
+ "name": "3M™ Sheet Label Material 7908FL",
+ "product_number": "",
+ "stock_number": "B5005329177",
+ "short_description": "3M™ Sheet Label Material 7908FL is a durable, high performance material that offers excellent thermal stability, moisture resistance and chemical resistance. This material utilizes 3M™ Adhesive 350, which is designed to permanently bond to high and low surface energy plastics, textured and contoured surfaces, powder coatings, and slightly oily metals.",
+ "division": "Safety & Industrial Bus Group",
+ "discontinued": false,
+ "benefits": [
+  "Facestocks (polyester and vinyl) and adhesives offer heat tolerance, clarity, and UV resistance",
+  "Variable information can be added by the end-user as the material is thermal transfer printable.",
+  "Liner provides easy sheet processing and is designed for layflat applications that require domed decal molding.",
+  "3M™ Sheet Label Material 7908FL is UL recognized (File MH16411) and CSA accepted (File 99316). See the UL and CSA listings for details."
+ ],
+ "attributes": {
+  "Brands": [
+   "3M™"
+  ],
+  "Face Side Adhesive Thickness (Imperial)": [
+   "1.8 mil"
+  ],
+  "Face Side Adhesive Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Face Side Adhesive Type": [
+   "350 High Holding Acrylic"
+  ],
+  "Facestock Color": [
+   "White"
+  ],
+  "Facestock Material": [
+   "Polyester"
+  ],
+  "Facestock Thickness": [
+   "2 mil"
+  ],
+  "Facestock Thickness (Metric)": [
+   "0.05 mm"
+  ],
+  "Industries": [
+   "Automotive",
+   "Consumer Goods",
+   "Converter Solutions",
+   "Electronics",
+   "General Industrial",
+   "Medical",
+   "Military & Government",
+   "Packaging",
+   "Specialty Vehicles",
+   "Transportation"
+  ],
+  "Label Form": [
+   "Roll",
+   "Sheet"
+  ],
+  "Maximum Operating Temperature (Fahrenheit)": [
+   "302 ℉"
+  ],
+  "Minimum Operating Temperature (Fahrenheit)": [
+   "-40 ℉"
+  ],
+  "Overall Width (Imperial)": [
+   "54 in"
+  ],
+  "Primary Liner": [
+   "Polyester"
+  ],
+  "Primary Liner Color": [
+   "Clear"
+  ],
+  "Primary Liner Thickness (Imperial)": [
+   "4 mil"
+  ],
+  "Primary Liner Thickness (Metric)": [
+   "0.1 mm"
+  ],
+  "Printing Method": [
+   "Flexo",
+   "Screen",
+   "Thermal Transfer",
+   "UV Screen"
+  ],
+  "Product Color": [
+   "White"
+  ],
+  "Removability": [
+   "Not Removable"
+  ],
+  "Smallest Saleable Unit": [
+   "Roll",
+   "Sheet"
+  ],
+  "Surface Finish": [
+   "Glossy"
+  ],
+  "Topcoat": [
+   "TC"
+  ]
+ },
+ "tds_pdfs": [
+  "https://multimedia.3m.com/mws/media/2399730O/3m-sheet-label-material-7908fl.pdf?&fn=3M-Sheet-Label-Material-7908FL.pdf"
+ ],
+ "resources": [
+  {
+   "title": "3M™ Sheet Label Material 7908FL",
+   "url": "https://multimedia.3m.com/mws/media/2399730O/3m-sheet-label-material-7908fl.pdf?&fn=3M-Sheet-Label-Material-7908FL.pdf",
+   "contentType": "Data Sheets"
+  }
+ ],
+ "breadcrumb": [
+  "",
+  "",
+  "",
+  "",
+  ""
+ ],
+ "discovery": {
+  "material_number": "7908FL",
+  "title": "3M™ Sheet Label Material 7908FL",
+  "industries": [
+   "Manufacturing",
+   "Automotive",
+   "Electronics",
+   "Transportation"
+  ]
+ }
+}
