@@ -1,29 +1,68 @@
 {% extends "base.html" %}
 {% block title %}{{ p.model_no }} - 产品详情{% endblock %}
 {% block body %}
-<div class="card">
-  <h2 style="margin-top:0">{{ p.brand_name_cn or p.brand_code }} {{ p.model_no }}
-    {% if p.brand_type==2 %}<span class="tag own">自研</span>{% endif %}</h2>
-  <p><b>{{ p.product_name_cn or '' }}</b> <span class="muted">{{ p.product_name_en or '' }}</span></p>
-  <table>
-    <tr><th style="width:140px">面材 Facestock</th><td>{{ p.face_name_cn or '—' }} {{ p.face_name_en or '' }}</td>
-        <th style="width:140px">胶水 Adhesive</th><td>{{ p.adh_name_cn or '—' }} {{ p.adh_name_en or '' }}</td></tr>
-    <tr><th>行业应用</th><td colspan="3">{{ p.apps or '—' }}</td></tr>
-    <tr><th>长期耐温</th><td>{{ p.temp_long_min if p.temp_long_min is not none else '?' }} ~ {{ p.temp_long_max if p.temp_long_max is not none else '?' }} ℃（档位 {{ p.temp_tier or '—' }}）</td>
-        <th>短时峰值</th><td>{{ p.temp_peak_max if p.temp_peak_max is not none else '—' }} ℃</td></tr>
-    <tr><th>耐化学等级</th><td>{{ p.chem_grade or '—' }}</td>
-        <th>厚度</th><td>{{ p.thickness_um or '—' }} μm</td></tr>
-    <tr><th>颜色</th><td>{{ p.color or '—' }}</td><th>打印方式</th><td>{{ p.print_method or '—' }}</td></tr>
-    <tr><th>认证</th><td colspan="3">{{ p.certification or '—' }}</td></tr>
-    <tr><th>特性 Feature</th><td colspan="3">{{ p.feature or '—' }}</td></tr>
-    <tr><th>优势 Benefit</th><td colspan="3">{{ p.benefit or '—' }}</td></tr>
-    <tr><th>适用工况 Application</th><td colspan="3">{{ p.application_desc or '—' }}</td></tr>
-    <tr><th>原始分类(L0留存)</th><td colspan="3" class="muted">{{ p.source_category_raw or '—' }}
-      {% if p.source_url %} | <a href="{{ p.source_url }}" target="_blank">品牌源页面</a>{% endif %}</td></tr>
-  </table>
+<div class="card" style="border-top:4px solid var(--pri)">
+  <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px">
+    <div>
+      <h1 style="margin:0 0 4px; font-size:24px">{{ p.brand_name_cn or p.brand_code }} {{ p.model_no }}
+        {% if p.brand_type==2 %}<span class="tag own">自研</span>{% endif %}</h1>
+      <p style="margin:0; font-size:16px"><b>{{ p.product_name_cn or '' }}</b></p>
+      <p class="muted" style="margin:2px 0 8px">{{ p.product_name_en or '' }}</p>
+      <p>
+        {% if p.face_name_cn %}<span class="tag">面材: {{ p.face_name_cn }}</span>{% endif %}
+        {% if p.adh_name_cn %}<span class="tag">胶水: {{ p.adh_name_cn }}</span>{% endif %}
+        {% if p.temp_tier %}<span class="tag">耐温 {{ p.temp_tier }}{% if p.temp_long_max is not none %} ({{ p.temp_long_max }}℃){% endif %}</span>{% endif %}
+        {% if p.chem_grade %}<span class="tag">耐化学 {{ p.chem_grade }}</span>{% endif %}
+        {% for a in (p.apps or '').split(' / ') if a %}<span class="tag">{{ a }}</span>{% endfor %}
+      </p>
+    </div>
+    <div style="text-align:right; min-width:200px">
+      {% if p.tds_url %}<p><a class="btn" href="{{ p.tds_url }}" target="_blank">⬇ 下载官方 TDS</a></p>{% endif %}
+      {% if p.source_url and p.source_url != p.tds_url %}
+      <p><a class="btn sec" href="{{ p.source_url }}" target="_blank">品牌官网产品页 ↗</a></p>{% endif %}
+    </div>
+  </div>
+  {% if p.application_desc %}
+  <div style="background:#f6f9fc; border-radius:6px; padding:10px 14px; margin-top:8px">
+    <b>产品介绍 / 适用工况</b><br>{{ p.application_desc }}
+  </div>
+  {% endif %}
 </div>
+
+<div class="grid2">
+  <div class="card">
+    <h3 style="margin-top:0">技术参数</h3>
+    <table>
+      <tr><th style="width:130px">面材 Facestock</th><td>{{ p.face_name_cn or '—' }} {{ p.face_name_en or '' }}</td></tr>
+      <tr><th>胶水 Adhesive</th><td>{{ p.adh_name_cn or '—' }} {{ p.adh_name_en or '' }}</td></tr>
+      <tr><th>长期耐温</th><td>{{ p.temp_long_min if p.temp_long_min is not none else '?' }} ~ {{ p.temp_long_max if p.temp_long_max is not none else '?' }} ℃（档位 {{ p.temp_tier or '—' }}）</td></tr>
+      <tr><th>短时峰值</th><td>{{ p.temp_peak_max if p.temp_peak_max is not none else '—' }} ℃</td></tr>
+      <tr><th>耐化学等级</th><td>{{ p.chem_grade or '—' }}（A耐强溶剂 / B耐醇油 / C耐水油 / D未声明）</td></tr>
+      <tr><th>厚度</th><td>{{ p.thickness_um or '—' }} μm</td></tr>
+      <tr><th>颜色</th><td>{{ p.color or '—' }}</td></tr>
+      <tr><th>打印方式</th><td>{{ p.print_method or '—' }}</td></tr>
+      <tr><th>认证</th><td>{{ p.certification or '—' }}</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">特性与优势（FAB）</h3>
+    <table>
+      <tr><th style="width:90px">特性 Feature</th><td>{{ p.feature or '—' }}</td></tr>
+      <tr><th>优势 Benefit</th><td>{{ p.benefit or '—' }}</td></tr>
+      <tr><th>行业应用</th><td>{{ p.apps or '—' }}</td></tr>
+    </table>
+    <h3>数据溯源</h3>
+    <table>
+      <tr><th style="width:90px">原始分类</th><td class="muted">{{ p.source_category_raw or '—' }}</td></tr>
+      <tr><th>来源链接</th><td class="muted">
+        {% if p.source_url %}<a href="{{ p.source_url }}" target="_blank">品牌源页面</a>{% endif %}
+        {% if p.tds_url %} | <a href="{{ p.tds_url }}" target="_blank">TDS</a>{% endif %}</td></tr>
+    </table>
+  </div>
+</div>
+
 <div class="card">
-  <h3 style="margin-top:0">绑定资料（TDS / 手册 / Notes）</h3>
+  <h3 style="margin-top:0">绑定资料（本地上传的 TDS / 手册 / Notes）</h3>
   <table>
     <tr><th>类型</th><th>标题</th><th>语言</th><th>版本</th><th>最新版</th><th>下载</th></tr>
     {% for d in docs %}
@@ -31,9 +70,9 @@
         <td>{{ d.version or '—' }}</td><td>{{ '✔' if d.is_latest }}</td>
         <td><a href="{{ url_for('download_doc', doc_id=d.doc_id) }}">下载</a></td></tr>
     {% else %}
-    <tr><td colspan="6" class="muted">暂无绑定文件，可在「数据管理」页上传。</td></tr>
+    <tr><td colspan="6" class="muted">暂无本地绑定文件，可在「数据管理」页上传。官方TDS请用上方按钮直达。</td></tr>
     {% endfor %}
   </table>
 </div>
-<a class="btn sec" href="javascript:history.back()">← 返回查询</a>
+<a class="btn sec" href="javascript:history.back()">← 返回</a>
 {% endblock %}

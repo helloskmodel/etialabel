@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>{{ title }}</title>
+<style>
+  @page { size: A4; margin: 14mm 12mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "WenQuanYi Zen Hei","Noto Sans CJK SC",sans-serif; color:#1c2733; font-size:11px; margin:0; }
+  .cover { height: 250mm; display:flex; flex-direction:column; justify-content:center; text-align:center; page-break-after: always; }
+  .cover h1 { font-size:30px; color:#0b5ea8; margin-bottom:6px; }
+  .cover p { color:#5a6b7c; font-size:14px; }
+  .prod { border:1px solid #dde3ea; border-radius:6px; padding:10px 12px; margin-bottom:10px; page-break-inside: avoid; }
+  .prod h2 { font-size:15px; color:#0b5ea8; margin:0 0 2px; }
+  .prod .en { color:#7a8794; font-size:10px; margin:0 0 6px; }
+  .tags span { display:inline-block; background:#eef4fb; border:1px solid #c9dcf0; color:#0b5ea8; border-radius:3px; padding:0 5px; margin:0 3px 3px 0; font-size:10px; }
+  table { width:100%; border-collapse:collapse; margin-top:5px; }
+  th,td { border:1px solid #e3e9f0; padding:3px 6px; text-align:left; vertical-align:top; }
+  th { background:#f0f4f8; white-space:nowrap; width:70px; font-weight:600; }
+  .fab { margin-top:5px; background:#f6f9fc; border-radius:4px; padding:5px 8px; }
+  .foot { color:#9aa7b4; font-size:9px; margin-top:4px; word-break:break-all; }
+</style>
+</head>
+<body>
+<div class="cover">
+  <h1>{{ title }}</h1>
+  <p>共 {{ rows|length }} 款产品 · 生成日期 {{ date }}</p>
+  <p>ETIA 特种标签统一产品库</p>
+</div>
+
+{% for r in rows %}
+<div class="prod">
+  <h2>{{ r.brand_name_cn or r.brand_code }} {{ r.model_no }} — {{ r.product_name_cn or r.product_name_en or '' }}</h2>
+  <p class="en">{{ r.product_name_en or '' }}</p>
+  <p class="tags">
+    {% if r.face_name_cn %}<span>面材: {{ r.face_name_cn }}</span>{% endif %}
+    {% if r.adh_name_cn %}<span>胶水: {{ r.adh_name_cn }}</span>{% endif %}
+    {% if r.temp_tier %}<span>耐温 {{ r.temp_tier }}{% if r.temp_long_max is not none %} ({{ r.temp_long_max }}℃){% endif %}</span>{% endif %}
+    {% if r.chem_grade %}<span>耐化学 {{ r.chem_grade }}</span>{% endif %}
+    {% if r.apps %}<span>{{ r.apps }}</span>{% endif %}
+  </p>
+  <table>
+    <tr>
+      <th>长期耐温</th><td>{{ r.temp_long_min if r.temp_long_min is not none else '?' }} ~ {{ r.temp_long_max if r.temp_long_max is not none else '?' }} ℃</td>
+      <th>峰值</th><td>{{ r.temp_peak_max if r.temp_peak_max is not none else '—' }} ℃</td>
+      <th>厚度</th><td>{{ r.thickness_um or '—' }} μm</td>
+      <th>认证</th><td>{{ r.certification or '—' }}</td>
+    </tr>
+    <tr>
+      <th>颜色</th><td>{{ r.color or '—' }}</td>
+      <th>打印</th><td colspan="3">{{ r.print_method or '—' }}</td>
+      <th>耐化学</th><td>{{ r.chem_grade or '—' }}</td>
+    </tr>
+  </table>
+  {% if r.application_desc or r.feature or r.benefit %}
+  <div class="fab">
+    {% if r.application_desc %}<b>适用:</b> {{ r.application_desc }}<br>{% endif %}
+    {% if r.feature %}<b>特性:</b> {{ r.feature }}<br>{% endif %}
+    {% if r.benefit %}<b>优势:</b> {{ r.benefit }}{% endif %}
+  </div>
+  {% endif %}
+  {% if r.tds_url %}<p class="foot">TDS: {{ r.tds_url }}</p>{% endif %}
+</div>
+{% endfor %}
+</body>
+</html>

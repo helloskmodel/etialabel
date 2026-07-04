@@ -23,7 +23,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 HEADERS = ["brand", "model", "name_cn", "name_en", "face", "adh", "apps",
            "tmin", "tmax", "tpeak", "chem", "thick", "color", "print", "cert",
-           "feature", "benefit", "app_desc", "source_raw", "url", "pub"]
+           "feature", "benefit", "app_desc", "source_raw", "url", "pub", "tds"]
 
 # ---------------------------------------------------------------- face / adh
 FACE_MAP = [  # (关键词正则, code) 顺序敏感: 具体的在前
@@ -232,7 +232,8 @@ def conv_brady():
             feature="; ".join(feats), benefit="",
             app_desc=x.get("description") or "",
             source_raw=f"Brady材料选型器 MSApp.json | materialType={x.get('materialType')} | 原胶水: {adh_raw} | 原面材: {x.get('baseMaterial')}",
-            url=f"https://tds.bradyid.com/TDSdocs/{num}.pdf",
+            url="https://d37iyw84027v1q.cloudfront.net/Common/msapp/index.html",
+            tds=f"https://tds.bradyid.com/TDSdocs/{num}.pdf",
         )))
     return rows
 
@@ -279,6 +280,7 @@ def conv_3m():
         )
         if tds:
             r["source_raw"] += f" | TDS: {tds}"
+            r["tds"] = tds
         if str(model) in rows:  # 同型号双页面(卷装/定制)合并: 补空字段
             old = rows[str(model)]
             for k, v in r.items():
@@ -354,6 +356,7 @@ def conv_old(target_mfr, brand_code, brand_cn_prefix):
             benefit="; ".join(r.get("benefits_en", []))[:800],
             app_desc=r.get("application_en", "")[:500],
             source_raw=src[:500], url=r.get("tds_url", ""),
+            tds=r.get("tds_url", ""),
         )))
     return rows
 

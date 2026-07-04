@@ -40,6 +40,42 @@
   </div>
 </div>
 <div class="card">
+  <h3 style="margin-top:0">③ 单品结构化录入（管理员手工新增/修改一款产品）</h3>
+  <p class="muted">按「品牌+型号」判重：已存在则整条覆盖更新。面材/胶水/行业可填中文、英文或编码，新值自动进字典。</p>
+  <form method="post" action="{{ url_for('add_product') }}">
+    <p>
+      品牌* <select name="brand" required><option value="">—</option>
+        {% for b in stats %}<option value="{{ b.brand_code }}">{{ b.brand_code }}</option>{% endfor %}
+        <option value="ETIA">ETIA(自研)</option></select>
+      型号* <input type="text" name="model" required style="width:130px" placeholder="如 7812 / B-423">
+      中文品名 <input type="text" name="name_cn" style="width:200px">
+      英文品名 <input type="text" name="name_en" style="width:220px">
+    </p>
+    <p>
+      面材 <input type="text" name="face" style="width:130px" placeholder="如 POLYIMIDE/PET聚酯">
+      胶水 <input type="text" name="adh" style="width:130px" placeholder="如 高温丙烯酸胶">
+      行业(逗号分隔) <input type="text" name="apps" style="width:220px" placeholder="ELECTRONICS,AUTOMOTIVE">
+      厚度μm <input type="number" name="thick" style="width:70px">
+    </p>
+    <p>
+      长期耐温 min <input type="number" name="tmin" style="width:70px"> ~ max <input type="number" name="tmax" style="width:70px"> ℃
+      峰值 <input type="number" name="tpeak" style="width:70px"> ℃
+      耐化学 <select name="chem"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option></select>
+      颜色 <input type="text" name="color" style="width:90px">
+      打印方式 <input type="text" name="print_method" style="width:110px">
+    </p>
+    <p>认证 <input type="text" name="cert" style="width:250px" placeholder="UL 969, RoHS">
+       TDS链接 <input type="text" name="tds_url" style="width:320px" placeholder="https://..."></p>
+    <p>特性F <input type="text" name="feature" style="width:46%">
+       优势B <input type="text" name="benefit" style="width:46%"></p>
+    <p>适用工况A <input type="text" name="app_desc" style="width:94%"></p>
+    <p>原始分类 <input type="text" name="source_raw" style="width:40%" placeholder="品牌官网分类路径原文">
+       来源URL <input type="text" name="source_url" style="width:40%"></p>
+    <p><label class="opt"><input type="checkbox" name="pub" value="1" checked> 五维齐全,直接发布</label>
+       <button class="btn" type="submit">保存单品</button></p>
+  </form>
+</div>
+<div class="card">
   <h3 style="margin-top:0">各品牌数据量</h3>
   <table style="max-width:420px">
     <tr><th>品牌</th><th>在库产品数</th></tr>

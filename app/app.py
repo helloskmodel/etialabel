@@ -312,7 +312,7 @@ IMPORT_HEADERS = [
     "temp_long_min", "temp_long_max", "temp_peak_max", "chem_grade(A/B/C/D)",
     "thickness_um", "color", "print_method", "certification",
     "feature", "benefit", "application_desc",
-    "source_category_raw", "source_url", "is_published(1/0)",
+    "source_category_raw", "source_url", "is_published(1/0)", "tds_url",
 ]
 
 
@@ -375,7 +375,7 @@ def import_excel():
         vals = list(row) + [None] * (len(IMPORT_HEADERS) - len(row))
         (brand, model, name_cn, name_en, face, adh, apps_s,
          tmin, tmax, tpeak, chem, thick, color, printm, cert,
-         feature, benefit, app_desc, src_cat, src_url, pub) = vals[:21]
+         feature, benefit, app_desc, src_cat, src_url, pub, tds_u) = vals[:22]
         if not brand or not model:
             skipped += 1
             continue
@@ -393,7 +393,7 @@ def import_excel():
                         thickness_um=to_int(thick), color=color, print_method=printm,
                         certification=cert, feature=feature, benefit=benefit,
                         application_desc=app_desc, source_category_raw=src_cat,
-                        source_url=src_url,
+                        source_url=src_url, tds_url=tds_u,
                         is_published=1 if pub in (None, "", 1, "1") else 0)
             exist = db.execute("SELECT product_id FROM product WHERE brand_id=? AND model_no=?",
                                (brand_id, str(model).strip())).fetchone()
@@ -451,7 +451,128 @@ def upload_doc():
     return redirect(url_for("admin"))
 
 
+# ---------------------------------------------------------------- 单品结构化录入
+
+@app.route("/admin/add_product", methods=["POST"])
+def add_product():
+    fm = request.form
+    brand, model = fm.get("brand", "").strip(), fm.get("model", "").strip()
+    if not brand or not model:
+        flash("品牌和型号必填")
+        return redirect(url_for("admin"))
+    db = get_db()
+    brand_id = resolve_brand(db, brand)
+    tmax_i = to_int(fm.get("tmax"))
+    chem_v = (fm.get("chem") or "").strip().upper()[:1]
+    data = dict(product_name_cn=fm.get("name_cn"), product_name_en=fm.get("name_en"),
+                face_id=resolve_dict(db, "facestock_dict", "face_code", "face_id", fm.get("face")),
+                adh_id=resolve_dict(db, "adhesive_dict", "adh_code", "adh_id", fm.get("adh")),
+                temp_long_min=to_int(fm.get("tmin")), temp_long_max=tmax_i,
+                temp_peak_max=to_int(fm.get("tpeak")), temp_tier=temp_tier(tmax_i),
+                chem_grade=chem_v if chem_v in ("A", "B", "C", "D") else None,
+                thickness_um=to_int(fm.get("thick")), color=fm.get("color"),
+                print_method=fm.get("print_method"), certification=fm.get("cert"),
+                feature=fm.get("feature"), benefit=fm.get("benefit"),
+                application_desc=fm.get("app_desc"),
+                source_category_raw=fm.get("source_raw"), source_url=fm.get("source_url"),
+                tds_url=fm.get("tds_url"),
+                is_published=1 if fm.get("pub") == "1" else 0)
+    exist = db.execute("SELECT product_id FROM product WHERE brand_id=? AND model_no=?",
+                       (brand_id, model)).fetchone()
+    if exist:
+        pid = exist["product_id"]
+        sets = ", ".join(f"{k}=?" for k in data)
+        db.execute(f"UPDATE product SET {sets}, updated_at=datetime('now','localtime') WHERE product_id=?",
+                   list(data.values()) + [pid])
+        verb = "更新"
+    else:
+        cols = "brand_id, model_no, " + ", ".join(data)
+        ph = ",".join("?" * (len(data) + 2))
+        pid = db.execute(f"INSERT INTO product({cols}) VALUES({ph})",
+                         [brand_id, model] + list(data.values())).lastrowid
+        verb = "新增"
+    db.execute("DELETE FROM product_application WHERE product_id=?", (pid,))
+    for one in re.split(r"[,，;；/]+", fm.get("apps", "")):
+        app_id = resolve_dict(db, "application_dict", "app_code", "app_id", one)
+        if app_id:
+            db.execute("INSERT OR IGNORE INTO product_application(product_id,app_id) VALUES(?,?)", (pid, app_id))
+    db.commit()
+    flash(f"单品{verb}成功: {brand} {model}")
+    return redirect(url_for("product_detail", pid=pid))
+
+
+# ---------------------------------------------------------------- 下载中心 / 定制Catalog
+
+CHROMIUM = "/opt/pw-browsers/chromium"
+
+
+def html_to_pdf(html_str):
+    """打印HTML为PDF字节(用无头Chromium)."""
+    import subprocess
+    import tempfile
+    with tempfile.TemporaryDirectory() as td:
+        src = os.path.join(td, "catalog.html")
+        out = os.path.join(td, "catalog.pdf")
+        with open(src, "w", encoding="utf-8") as f:
+            f.write(html_str)
+        subprocess.run([CHROMIUM, "--headless", "--no-sandbox", "--disable-gpu",
+                        "--no-pdf-header-footer", f"--print-to-pdf={out}",
+                        "file://" + src], check=True, capture_output=True, timeout=90)
+        with open(out, "rb") as f:
+            return f.read()
+
+
+@app.route("/downloads")
+def downloads():
+    db = get_db()
+    where, params = build_filters(request.args)
+    rows = db.execute(FILTER_SQL.format(where=where), params).fetchall()
+    return render_template("downloads.html", rows=rows, args=request.args, **dict_options(db))
+
+
+@app.route("/downloads/create", methods=["POST"])
+def downloads_create():
+    ids = [int(i) for i in request.form.getlist("pid") if str(i).isdigit()]
+    if not ids:
+        flash("请先勾选要放进目录的产品")
+        return redirect(url_for("downloads"))
+    fmt = request.form.get("fmt", "xlsx")
+    title = request.form.get("title", "").strip() or "ETIA 定制产品目录"
+    db = get_db()
+    ph = ",".join("?" * len(ids))
+    rows = db.execute(FILTER_SQL.format(where=f" AND p.product_id IN ({ph})"), ids).fetchall()
+    stamp = datetime.now().strftime("%Y%m%d_%H%M")
+    if fmt == "pdf":
+        html = render_template("catalog_pdf.html", rows=rows, title=title,
+                               date=datetime.now().strftime("%Y-%m-%d"))
+        pdf = html_to_pdf(html)
+        return send_file(io.BytesIO(pdf), as_attachment=True,
+                         download_name=f"{title}_{stamp}.pdf", mimetype="application/pdf")
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "定制目录"
+    ws.append([h for h, _ in EXPORT_COLS] + ["TDS链接"])
+    for r in rows:
+        ws.append([fn(r) for _, fn in EXPORT_COLS] + [r["tds_url"]])
+    buf = io.BytesIO()
+    wb.save(buf)
+    buf.seek(0)
+    return send_file(buf, as_attachment=True, download_name=f"{title}_{stamp}.xlsx",
+                     mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
+
+def migrate_db():
+    db = sqlite3.connect(DB_PATH)
+    try:
+        db.execute("ALTER TABLE product ADD COLUMN tds_url TEXT")
+        db.commit()
+    except sqlite3.OperationalError:
+        pass
+    db.close()
+
+
 init_db()
+migrate_db()
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=False)

@@ -36,6 +36,7 @@
   <h1>ETIA 特种标签统一产品库</h1>
   <nav>
     <a href="{{ url_for('search') }}" class="{{ 'on' if request.endpoint=='search' }}">产品查询</a> &nbsp;|&nbsp;
+    <a href="{{ url_for('downloads') }}" class="{{ 'on' if request.endpoint=='downloads' }}">下载中心（定制Catalog）</a> &nbsp;|&nbsp;
     <a href="{{ url_for('admin') }}" class="{{ 'on' if request.endpoint=='admin' }}">数据管理（上传/导入）</a>
   </nav>
 </header>

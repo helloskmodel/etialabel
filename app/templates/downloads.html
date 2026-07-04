@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}下载中心 - 定制Catalog{% endblock %}
+{% block body %}
+<div class="card">
+  <h2 style="margin:0 0 4px">下载中心 · 定制 Catalog 生成</h2>
+  <p class="muted">第一步:用筛选缩小范围 → 第二步:勾选要放进目录的产品 → 第三步:起个名、选格式、生成下载。</p>
+</div>
+
+<form class="card" method="get" action="{{ url_for('downloads') }}">
+  <fieldset>
+    <legend>品牌</legend>
+    {% for b in brands %}
+      <label class="opt"><input type="checkbox" name="brand" value="{{ b.brand_id }}"
+        {{ 'checked' if b.brand_id|string in args.getlist('brand') }}> {{ b.brand_name_cn or b.brand_name_en }}</label>
+    {% endfor %}
+  </fieldset>
+  <fieldset>
+    <legend>行业应用</legend>
+    {% for a in apps %}
+      <label class="opt"><input type="checkbox" name="app" value="{{ a.app_id }}"
+        {{ 'checked' if a.app_id|string in args.getlist('app') }}> {{ a.app_name_cn }}</label>
+    {% endfor %}
+  </fieldset>
+  <p>长期耐温 ≥ <input type="number" name="temp_min" value="{{ args.get('temp_min','') }}" style="width:90px"> ℃
+     &nbsp; 耐化学:
+     {% for c in ['A','B','C','D'] %}
+       <label class="opt"><input type="checkbox" name="chem" value="{{ c }}" {{ 'checked' if c in args.getlist('chem') }}>{{ c }}</label>
+     {% endfor %}
+     &nbsp; 关键词 <input type="text" name="kw" value="{{ args.get('kw','') }}" placeholder="型号/品名" style="width:160px">
+     <button class="btn" type="submit">筛选</button>
+     <span class="muted">当前命中 {{ rows|length }} 条</span></p>
+</form>
+
+<form method="post" action="{{ url_for('downloads_create') }}">
+  <div class="card" style="position:sticky; top:0; z-index:5; display:flex; gap:14px; align-items:center; flex-wrap:wrap">
+    <b>已勾选 <span id="cnt">0</span> 条</b>
+    <label>目录名称 <input type="text" name="title" placeholder="如: 某某客户-耐高温标签选型目录" style="width:280px"></label>
+    <label>格式
+      <select name="fmt">
+        <option value="pdf">PDF 目录(可发客户)</option>
+        <option value="xlsx">Excel 清单</option>
+      </select></label>
+    <button class="btn" type="submit">生成并下载</button>
+    <label class="opt"><input type="checkbox" onclick="document.querySelectorAll('.pk').forEach(c=>{c.checked=this.checked}); cnt()"> 全选本页</label>
+  </div>
+  <div class="card" style="overflow-x:auto">
+  <table>
+    <tr><th></th><th>品牌</th><th>型号</th><th>品名</th><th>面材</th><th>胶水</th><th>长期耐温℃</th><th>档位</th><th>耐化学</th><th>TDS</th></tr>
+    {% for r in rows %}
+    <tr>
+      <td><input class="pk" type="checkbox" name="pid" value="{{ r.product_id }}" onclick="cnt()"></td>
+      <td>{{ r.brand_name_cn or r.brand_code }}</td>
+      <td><a href="{{ url_for('product_detail', pid=r.product_id) }}" target="_blank"><b>{{ r.model_no }}</b></a></td>
+      <td>{{ r.product_name_cn or r.product_name_en or '' }}</td>
+      <td>{{ r.face_name_cn or '' }}</td>
+      <td>{{ r.adh_name_cn or '' }}</td>
+      <td>{{ r.temp_long_max if r.temp_long_max is not none else '—' }}</td>
+      <td>{{ r.temp_tier or '—' }}</td>
+      <td>{{ r.chem_grade or '—' }}</td>
+      <td>{% if r.tds_url %}✔{% endif %}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="10" class="muted">无匹配产品,请调整筛选。</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+</form>
+<script>function cnt(){document.getElementById('cnt').textContent=document.querySelectorAll('.pk:checked').length}</script>
+{% endblock %}
