@@ -1,0 +1,139 @@
+<header>
+  <h1><b>ETIA</b> 特种标签统一产品库</h1>
+  <span id="hits"></span>
+  <span style="flex:1"></span>
+  <button class="btn sec" id="reset">清空筛选</button>
+  <button class="btn" id="csv">导出当前结果 CSV</button>
+</header>
+<div class="wrap">
+<aside id="filters">
+  <h3>关键词</h3>
+  <input class="kw" id="kw" type="search" placeholder="型号 / 品名 / 特性…">
+  <h3>品牌</h3><div class="chips" data-k="brand"></div>
+  <h3>行业应用</h3><div class="chips" data-k="app"></div>
+  <h3>面材</h3><div class="chips" data-k="face"></div>
+  <h3>胶水</h3><div class="chips" data-k="adh"></div>
+  <h3>耐温档位</h3><div class="chips" data-k="tier"></div>
+  <h3>长期耐温 ≥ ℃</h3>
+  <input class="kw" id="tmin" type="number" placeholder="如 200">
+  <h3>耐化学</h3><div class="chips" data-k="chem"></div>
+  <h3>资料</h3><div class="chips" data-k="tds"></div>
+</aside>
+<main>
+  <div class="tablebox">
+  <table>
+    <thead><tr><th>品牌</th><th>型号</th><th>品名</th><th>面材</th><th>胶水</th><th>长期耐温℃</th><th>档位</th><th>耐化学</th><th>TDS</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  </div>
+</main>
+</div>
+<div id="mask"></div>
+<div id="drawer" role="dialog" aria-modal="true"></div>
+<footer>数据来源:各品牌官网产品页 / 官方TDS / 官方选型器,均带溯源链接。官网未公布的参数留空。生成于 2026-07-04。</footer>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const P = JSON.parse(document.getElementById('data').textContent);
+const TIER = {T1:'≤80℃',T2:'81~120',T3:'121~180',T4:'181~260',T5:'261~500',T6:'>500'};
+const state = {brand:new Set(),app:new Set(),face:new Set(),adh:new Set(),tier:new Set(),chem:new Set(),tds:new Set(),kw:'',tmin:''};
+const uniq = (get) => { const m=new Map(); P.forEach(p=>{(get(p)||[]).forEach(v=>m.set(v,(m.get(v)||0)+1))}); return [...m.entries()].sort((a,b)=>b[1]-a[1]); };
+const FILTS = {
+  brand: uniq(p=>[p.bcn||p.bc]),
+  app:   uniq(p=>(p.ap||'').split(' / ').filter(Boolean)),
+  face:  uniq(p=>p.fc?[p.fc]:[]),
+  adh:   uniq(p=>p.ac?[p.ac]:[]),
+  tier:  ['T1','T2','T3','T4','T5','T6'].map(t=>[t,P.filter(p=>p.tier===t).length]),
+  chem:  ['A','B','C','D'].map(c=>[c,P.filter(p=>p.chem===c).length]),
+  tds:   [['有TDS直链',P.filter(p=>p.tds).length]],
+};
+for (const [k,items] of Object.entries(FILTS)){
+  const box = document.querySelector(`[data-k="${k}"]`);
+  items.forEach(([v,n])=>{
+    if(!n) return;
+    const c = document.createElement('button');
+    c.className='chip'; c.type='button';
+    c.textContent = (k==='tier'?`${v} ${TIER[v]}`:v)+` ·${n}`;
+    c.onclick = ()=>{ state[k].has(v)?state[k].delete(v):state[k].add(v); c.classList.toggle('on'); render(); };
+    c.dataset.v=v; box.appendChild(c);
+  });
+}
+document.getElementById('kw').oninput = e=>{state.kw=e.target.value.trim().toLowerCase();render()};
+document.getElementById('tmin').oninput = e=>{state.tmin=e.target.value;render()};
+document.getElementById('reset').onclick = ()=>{ Object.values(state).forEach(s=>{if(s instanceof Set)s.clear()}); state.kw='';state.tmin='';
+  document.getElementById('kw').value='';document.getElementById('tmin').value='';
+  document.querySelectorAll('.chip.on').forEach(c=>c.classList.remove('on')); render(); };
+function match(p){
+  if(state.brand.size && !state.brand.has(p.bcn||p.bc)) return false;
+  if(state.app.size && ![...state.app].some(a=>(p.ap||'').includes(a))) return false;
+  if(state.face.size && !state.face.has(p.fc)) return false;
+  if(state.adh.size && !state.adh.has(p.ac)) return false;
+  if(state.tier.size && !state.tier.has(p.tier)) return false;
+  if(state.chem.size && !state.chem.has(p.chem)) return false;
+  if(state.tds.size && !p.tds) return false;
+  if(state.tmin!=='' && !(p.t1>=+state.tmin)) return false;
+  if(state.kw){ const h=`${p.m} ${p.nc||''} ${p.ne||''} ${p.ft||''} ${p.ds||''} ${p.fc||''} ${p.ac||''}`.toLowerCase();
+    if(!h.includes(state.kw)) return false; }
+  return true;
+}
+let CUR=[];
+function render(){
+  CUR = P.filter(match);
+  document.getElementById('hits').textContent = `共 ${P.length} 款 · 命中 ${CUR.length} 款`;
+  const tb = document.getElementById('rows');
+  tb.innerHTML = CUR.slice(0,500).map((p,i)=>`<tr data-i="${i}">
+    <td class="mut">${p.bcn||p.bc}</td>
+    <td class="model">${esc(p.m)}</td>
+    <td>${esc(p.nc||p.ne||'')}</td>
+    <td>${p.fc?`<span class="tag">${esc(p.fc)}</span>`:''}</td>
+    <td>${p.ac?`<span class="tag">${esc(p.ac)}</span>`:''}</td>
+    <td>${p.t1??'—'}</td>
+    <td>${p.tier?`<span class="pill" style="background:var(--${p.tier.toLowerCase()})">${p.tier}</span>`:'—'}</td>
+    <td>${p.chem?`<span class="pill" style="background:var(--chem${p.chem})">${p.chem}</span>`:'—'}</td>
+    <td>${p.tds?'✔':''}</td></tr>`).join('')
+    + (CUR.length>500?`<tr><td colspan="9" class="mut">仅显示前500条,请再加筛选条件</td></tr>`:'');
+}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+document.getElementById('rows').onclick = e=>{
+  const tr = e.target.closest('tr[data-i]'); if(!tr) return;
+  openDrawer(CUR[+tr.dataset.i]);
+};
+const drawer=document.getElementById('drawer'), mask=document.getElementById('mask');
+function openDrawer(p){
+  drawer.innerHTML = `
+    <button class="btn sec" style="float:right" onclick="closeDrawer()">关闭 ✕</button>
+    <h2>${p.bcn||p.bc} ${esc(p.m)}</h2>
+    <p class="sub">${esc(p.nc||'')}<br><span class="mut">${esc(p.ne||'')}</span></p>
+    <p>${p.tier?`<span class="pill" style="background:var(--${p.tier.toLowerCase()})">耐温 ${p.tier}${p.t1!=null?' · '+p.t1+'℃':''}</span> `:''}
+       ${p.chem?`<span class="pill" style="background:var(--chem${p.chem})">耐化学 ${p.chem}</span> `:''}
+       ${(p.ap||'').split(' / ').filter(Boolean).map(a=>`<span class="tag">${esc(a)}</span>`).join('')}</p>
+    ${p.tds?`<p><a class="btn" href="${esc(p.tds)}" target="_blank" rel="noopener">⬇ 下载官方 TDS</a>
+       ${p.src&&p.src!==p.tds?` <a class="btn sec" href="${esc(p.src)}" target="_blank" rel="noopener">品牌源页面 ↗</a>`:''}</p>`
+      :(p.src?`<p><a class="btn sec" href="${esc(p.src)}" target="_blank" rel="noopener">品牌源页面 ↗</a></p>`:'')}
+    ${p.ds?`<div class="blk"><b>产品介绍 / 适用</b><br>${esc(p.ds)}</div>`:''}
+    <table class="spec">
+      <tr><th>面材</th><td>${esc(p.fc||'—')}</td></tr>
+      <tr><th>胶水</th><td>${esc(p.ac||'—')}</td></tr>
+      <tr><th>长期耐温</th><td>${p.t0!=null?p.t0+' ~ ':''}${p.t1!=null?p.t1+' ℃':'—'}${p.tp!=null?`(峰值 ${p.tp}℃)`:''}</td></tr>
+      <tr><th>厚度</th><td>${p.th!=null?p.th+' μm':'—'}</td></tr>
+      <tr><th>颜色</th><td>${esc(p.c||'—')}</td></tr>
+      <tr><th>打印方式</th><td>${esc(p.pr||'—')}</td></tr>
+      <tr><th>认证</th><td>${esc(p.cert||'—')}</td></tr>
+    </table>
+    ${p.ft?`<div class="blk"><b>特性 Feature</b><br>${esc(p.ft)}</div>`:''}
+    ${p.bn?`<div class="blk"><b>优势 Benefit</b><br>${esc(p.bn)}</div>`:''}
+    <p class="mut">耐化学分级口径:A 耐强溶剂浸泡 / B 耐酒精汽油机油 / C 耐水油 / D 官网未声明。空白字段=官网未公布(不编造)。</p>`;
+  drawer.classList.add('open'); mask.classList.add('on');
+}
+window.closeDrawer = ()=>{drawer.classList.remove('open');mask.classList.remove('on')};
+mask.onclick = closeDrawer;
+addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer()});
+document.getElementById('csv').onclick = ()=>{
+  const cols=[['品牌','bcn'],['型号','m'],['中文品名','nc'],['英文品名','ne'],['面材','fc'],['胶水','ac'],['行业','ap'],['长期耐温min','t0'],['长期耐温max','t1'],['峰值','tp'],['档位','tier'],['耐化学','chem'],['厚度um','th'],['颜色','c'],['打印','pr'],['认证','cert'],['特性','ft'],['优势','bn'],['适用','ds'],['TDS','tds'],['来源','src']];
+  const q=v=>`"${String(v??'').replace(/"/g,'""')}"`;
+  const csv='﻿'+cols.map(c=>c[0]).join(',')+'\n'+CUR.map(p=>cols.map(c=>q(p[c[1]])).join(',')).join('\n');
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));
+  a.download='ETIA产品筛选导出.csv'; a.click(); URL.revokeObjectURL(a.href);
+};
+render();
+</script>
