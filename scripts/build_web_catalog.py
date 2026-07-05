@@ -36,14 +36,21 @@ if lang == "en":
     WHERE p.status=1 ORDER BY b.sort_order, b.brand_code, p.model_no"""
 else:
     SQL = """
-    SELECT b.brand_code bc, b.brand_name_cn bcn, p.model_no m, p.product_name_cn nc, p.product_name_en ne,
-           f.face_name_cn fc, a.adh_name_cn ac,
+    SELECT b.brand_code bc,
+           b.brand_name_cn || (CASE WHEN b.brand_name_en!='' AND b.brand_name_en!=b.brand_name_cn
+                THEN ' '||b.brand_name_en ELSE '' END) bcn,
+           p.model_no m, p.product_name_cn nc, p.product_name_en ne,
+           f.face_name_cn || (CASE WHEN f.face_name_en!='' AND f.face_name_en!=f.face_name_cn
+                THEN ' ('||f.face_name_en||')' ELSE '' END) fc,
+           a.adh_name_cn || (CASE WHEN a.adh_name_en!='' AND a.adh_name_en!=a.adh_name_cn
+                THEN ' ('||a.adh_name_en||')' ELSE '' END) ac,
            (SELECT GROUP_CONCAT(d.app_name_cn,' / ') FROM product_application pa
             JOIN application_dict d ON d.app_id=pa.app_id WHERE pa.product_id=p.product_id) ap,
            p.temp_long_min t0, p.temp_long_max t1, p.temp_peak_max tp, p.temp_tier tier,
            p.chem_grade chem, p.thickness_um th, p.color c, p.print_method pr, p.certification cert,
            p.feature ft, p.benefit bn, p.application_desc ds, p.source_url src, p.tds_url tds,
-           p.sub_application sub
+           (SELECT a2.name_cn || (CASE WHEN a2.name_en!='' THEN ' ('||a2.name_en||')' ELSE '' END)
+            FROM application a2 WHERE a2.name_cn=p.sub_application) sub
     FROM product p JOIN brand b ON b.brand_id=p.brand_id
     LEFT JOIN facestock_dict f ON f.face_id=p.face_id
     LEFT JOIN adhesive_dict a ON a.adh_id=p.adh_id
