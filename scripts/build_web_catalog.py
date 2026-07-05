@@ -33,6 +33,9 @@ for r in rows:
             d[k] = d[k][:600] + "…"
     recs.append(d)
 data = json.dumps(recs, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-html = (TPL / "head.html").read_text() + (TPL / "body.html").read_text().replace("__DATA__", data)
+body_html = (TPL / "head.html").read_text() + (TPL / "body.html").read_text().replace("__DATA__", data)
+html = ('<!doctype html>\n<html lang="zh-CN">\n<head>\n<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width,initial-scale=1">\n'
+        + body_html + "\n</body>\n</html>\n")
 out.write_text(html)
 print(f"{out}: {len(recs)} 款, {round(len(html)/1024)} KB")

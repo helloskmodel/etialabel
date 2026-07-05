@@ -38,3 +38,17 @@
 - 内容:商城版产品库(7品牌894款)
 - 日常更新:`python3 scripts/build_web_catalog.py` 生成 → 改名 `index.html` → COS文件列表覆盖上传,网址不变
 - 踩坑备忘:必须用带 `cos-website` 的静态网站域名访问;带 `cos` 的对象域名会强制下载(腾讯云2024年起的安全策略)
+
+---
+
+## ✅ 最终上线(2026-07-05)—— 采用云开发CloudBase静态托管
+
+腾讯云2024年后新建的COS桶默认域名在浏览器强制下载,故改用**云开发CloudBase**:
+- **正式访问地址(对外发布用):**
+  https://etia-labeltool-etialabel-d5gu5lm09d300fe5d.webapps.tcloudbase.com
+- 部署方式:CloudBase控制台 → 应用托管「本地项目上传」→ 上传含 index.html 的文件夹
+  → 项目框架「其他」、安装/构建命令留空、构建产物目录 ./、部署路径 /
+- **重要:上传的 index.html 必须是包含 `<!doctype html><meta charset="utf-8">` 的完整版**
+  (由 scripts/build_web_catalog.py 生成的商城版;缺charset头会中文乱码)
+- 更新流程:重新生成 index.html → CloudBase同名覆盖上传重新部署 → 强刷(Ctrl+Shift+R)
+- COS桶 etia-label-1303055923 保留,后续存放TDS PDF文件用
