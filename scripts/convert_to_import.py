@@ -125,11 +125,11 @@ def cn_name(name_en, brand_prefix, model):
 
 # ---------------------------------------------------------------- 通用工具
 def c_int(s):
-    """'130 °C' / '150℃' / '-70 °C' -> int"""
+    """'130 °C' / '150℃' / '-28.89 °C' -> int(四舍五入, 支持小数)"""
     if not s:
         return None
-    m = re.search(r"(-?\d+)\s*(?:°\s*C|℃|C\b)", str(s))
-    return int(m.group(1)) if m else None
+    m = re.search(r"(-?\d+(?:\.\d+)?)\s*(?:°\s*C|℃|C\b)", str(s))
+    return int(round(float(m.group(1)))) if m else None
 
 
 def um_from(s):
