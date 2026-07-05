@@ -3,6 +3,8 @@ __pycache__/
 data/labels.db
 data/uploads/
 data/raw/**/pdf/
+data/raw/**/pages/
 data/raw/**/*.html
+data/raw/**/*.xml
 data/raw/**/*.pdf
 data/raw/**/__pycache__/
