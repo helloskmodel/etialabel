@@ -107,6 +107,10 @@ def init_db():
     db = sqlite3.connect(DB_PATH)
     with open(SCHEMA_PATH, encoding="utf-8") as f:
         db.executescript(f.read())
+    content_schema = os.path.join(os.path.dirname(SCHEMA_PATH), "schema_content.sql")
+    if os.path.exists(content_schema):
+        with open(content_schema, encoding="utf-8") as f:
+            db.executescript(f.read())
     for code, en, cn, btype in SEED_BRANDS:
         db.execute("INSERT OR IGNORE INTO brand(brand_code,brand_name_en,brand_name_cn,brand_type) VALUES(?,?,?,?)",
                    (code, en, cn, btype))
