@@ -20,7 +20,8 @@
 <div class="filterbar"><div class="fcard">
   <div class="frow"><span class="lbl">品牌</span><div class="chips" data-k="brand"></div></div>
   <div class="frow"><span class="lbl">行业</span><div class="chips" data-k="app"></div></div>
-  <div class="frow"><span class="lbl">耐温档</span><div class="chips" data-k="tier"></div></div>
+  <div class="frow"><span class="lbl">耐高温</span><div class="chips" data-k="ht"></div></div>
+  <div class="frow"><span class="lbl">耐低温</span><div class="chips" data-k="lt"></div></div>
   <div class="frow" id="morerow" style="display:none">
     <span class="lbl">面材</span><div class="chips" data-k="face"></div></div>
   <div class="frow" id="morerow2" style="display:none">
@@ -54,14 +55,17 @@
 <script>
 const P = JSON.parse(document.getElementById('data').textContent);
 const TIER={T1:'≤80℃',T2:'81~120℃',T3:'121~180℃',T4:'181~260℃',T5:'261~500℃',T6:'>500℃'};
+const LT=[[-20,'可达-20℃'],[-40,'可达-40℃'],[-80,'可达-80℃'],[-150,'可达-150℃'],[-196,'可达-196℃(液氮)']];
+const HT=[[100,'可达100℃'],[134,'可达134℃(灭菌)'],[150,'可达150℃'],[260,'可达260℃(回流焊)'],[600,'可达600℃'],[800,'可达800℃以上']];
 document.getElementById('stat-total').textContent = P.length+' 款材料';
 document.getElementById('stat-tds').textContent = P.filter(p=>p.tds).length+' 份官方TDS';
-const state={brand:new Set(),app:new Set(),face:new Set(),adh:new Set(),tier:new Set(),chem:new Set(),tds:new Set(),kw:'',tmin:''};
+const state={brand:new Set(),app:new Set(),face:new Set(),adh:new Set(),ht:new Set(),chem:new Set(),tds:new Set(),lt:new Set(),kw:'',tmin:''};
 const uniq=g=>{const m=new Map();P.forEach(p=>(g(p)||[]).forEach(v=>m.set(v,(m.get(v)||0)+1)));return [...m.entries()].sort((a,b)=>b[1]-a[1])};
 const FILTS={
   brand:uniq(p=>[p.bcn||p.bc]),
   app:uniq(p=>(p.ap||'').split(' / ').filter(Boolean)),
-  tier:['T1','T2','T3','T4','T5','T6'].map(t=>[t,P.filter(p=>p.tier===t).length]),
+  ht:HT.map(([th])=>[th,P.filter(p=>p.t1!=null&&p.t1>=th).length]),
+  lt:LT.map(([th])=>[th,P.filter(p=>p.t0!=null&&p.t0<=th).length]),
   face:uniq(p=>p.fc?[p.fc]:[]).slice(0,18),
   adh:uniq(p=>p.ac?[p.ac]:[]),
   chem:['A','B','C','D'].map(c=>[c,P.filter(p=>p.chem===c).length]),
@@ -71,7 +75,7 @@ for(const[k,items]of Object.entries(FILTS)){
   const box=document.querySelector(`[data-k="${k}"]`);
   items.forEach(([v,n])=>{ if(!n)return;
     const c=document.createElement('button');c.className='chip';c.type='button';
-    c.textContent=(k==='tier'?`${v} ${TIER[v]}`:v)+(k==='tier'||k==='chem'?` ·${n}`:'');
+    const lbl=k==='ht'?HT.find(x=>x[0]==v)[1]:k==='lt'?LT.find(x=>x[0]==v)[1]:v;c.textContent=lbl+(k==='ht'||k==='chem'||k==='lt'?` ·${n}`:'');
     c.onclick=()=>{state[k].has(v)?state[k].delete(v):state[k].add(v);c.classList.toggle('on');render(true)};
     box.appendChild(c); });
 }
@@ -97,9 +101,10 @@ function match(p){
   if(state.app.size&&![...state.app].some(a=>(p.ap||'').includes(a)))return false;
   if(state.face.size&&!state.face.has(p.fc))return false;
   if(state.adh.size&&!state.adh.has(p.ac))return false;
-  if(state.tier.size&&!state.tier.has(p.tier))return false;
   if(state.chem.size&&!state.chem.has(p.chem))return false;
   if(state.tds.size&&!p.tds)return false;
+  if(state.ht.size){const need=Math.min(...[...state.ht].map(Number));if(!(p.t1!=null&&p.t1>=need))return false;}
+  if(state.lt.size){const need=Math.max(...[...state.lt].map(Number));if(!(p.t0!=null&&p.t0<=need))return false;}
   if(state.tmin!==''&&!(p.t1>=+state.tmin))return false;
   if(state.kw){const h=`${p.m} ${p.nc||''} ${p.ne||''} ${p.ft||''} ${p.bn||''} ${p.ds||''} ${p.fc||''} ${p.ac||''} ${p.ap||''}`.toLowerCase();
     if(!h.includes(state.kw))return false}
@@ -151,6 +156,7 @@ function render(reset){
           ${p.ac?`<span class="tag">${esc(p.ac)}</span>`:''}
           ${p.t1!=null?`<span class="tag temp" style="background:var(--${(p.tier||'t1').toLowerCase()})">耐温${p.t1}℃</span>`:''}
           ${p.chem&&p.chem!=='D'?`<span class="tag temp" style="background:var(--chem${p.chem})">耐化学${p.chem}</span>`:''}
+          ${p.t0!=null&&p.t0<=-40?`<span class="tag temp" style="background:#2E6FB0">耐低温${p.t0}℃</span>`:''}
         </div>
         <div class="pfoot">${p.tds?'<span class="tds">✓ 官方TDS</span>':''}<span class="more">查看详情 →</span></div>
       </div>
