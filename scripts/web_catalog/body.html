@@ -140,13 +140,13 @@ function match(p){
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 function swClass(p){
   const f=(p.fc||'');const col=(p.c||'');
-  if(/聚酰亚胺/.test(f))return 'sw-pi';
-  if(/防拆|易碎/.test(f))return 'sw-void';
-  if(/铝箔|陶瓷|金属/.test(f)||/silver|银/i.test(col))return 'sw-metal';
-  if(/纸/.test(f))return 'sw-paper';
-  if(/布/.test(f))return 'sw-cloth';
-  if(/FOAM|泡/.test(f))return 'sw-foam';
-  if(/乙烯基/.test(f))return 'sw-vinyl';
+  if(/聚酰亚胺|polyimide/i.test(f))return 'sw-pi';
+  if(/防拆|易碎|tamper|destructible/i.test(f))return 'sw-void';
+  if(/铝箔|陶瓷|金属|alum|ceramic|metal/i.test(f)||/silver|银/i.test(col))return 'sw-metal';
+  if(/纸|paper/i.test(f))return 'sw-paper';
+  if(/布|cloth/i.test(f))return 'sw-cloth';
+  if(/FOAM|泡/i.test(f))return 'sw-foam';
+  if(/乙烯基|vinyl/i.test(f))return 'sw-vinyl';
   if(/transparent|clear|透明/i.test(col))return 'sw-clear';
   return 'sw-pet';
 }
