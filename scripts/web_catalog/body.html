@@ -80,7 +80,7 @@ for(const[k,items]of Object.entries(FILTS)){
   const box=document.querySelector(`[data-k="${k}"]`);
   items.forEach(([v,n])=>{ if(!n)return;
     const c=document.createElement('button');c.className='chip';c.type='button';
-    const lbl=k==='ht'?HT.find(x=>x[0]==v)[1]:k==='lt'?LT.find(x=>x[0]==v)[1]:v;c.textContent=lbl+(k==='ht'||k==='chem'||k==='lt'?` ·${n}`:'');
+    const lbl=k==='ht'?HT.find(x=>x[0]==v)[1]:k==='lt'?LT.find(x=>x[0]==v)[1]:v;c.textContent=lbl+(k==='ht'||k==='chem'||k==='lt'?` ·${n}款`:'');
     c.dataset.cn=(k==='app'?v:'' );
     c.onclick=()=>{state[k].has(v)?state[k].delete(v):state[k].add(v);c.classList.toggle('on');if(k==='app')renderSubChips();render(true)};
     box.appendChild(c); });
@@ -100,7 +100,7 @@ function renderSubChips(){
   box.innerHTML='';
   [...subs].sort((a,b)=>(counts[b]||0)-(counts[a]||0)).forEach(v=>{
     const c=document.createElement('button');c.className='chip'+(state.sub.has(v)?' on':'');c.type='button';
-    c.textContent=`${v} ·${counts[v]||0}`;
+    c.textContent=`${v} ·${counts[v]||0}款`;
     c.onclick=()=>{state.sub.has(v)?state.sub.delete(v):state.sub.add(v);c.classList.toggle('on');render(true)};
     box.appendChild(c);
   });
