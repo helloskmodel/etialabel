@@ -36,9 +36,7 @@ if lang == "en":
     WHERE p.status=1 ORDER BY b.sort_order, b.brand_code, p.model_no"""
 else:
     SQL = """
-    SELECT b.brand_code bc,
-           b.brand_name_cn || (CASE WHEN b.brand_name_en!='' AND b.brand_name_en!=b.brand_name_cn
-                THEN ' '||b.brand_name_en ELSE '' END) bcn,
+    SELECT b.brand_code bc, b.brand_name_en bcn,
            p.model_no m, p.product_name_cn nc, p.product_name_en ne,
            f.face_name_cn || (CASE WHEN f.face_name_en!='' AND f.face_name_en!=f.face_name_cn
                 THEN ' ('||f.face_name_en||')' ELSE '' END) fc,
