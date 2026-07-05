@@ -63,6 +63,7 @@ CREATE TABLE IF NOT EXISTS product (
     source_category_raw TEXT,          -- L0留存: 品牌原始分类原文
     source_url       TEXT,
     tds_url          TEXT,             -- 官方TDS外链(本地文件走 product_document)
+    sub_application  TEXT,             -- 二级细分应用(行业下的具体场景)
     is_published     INTEGER NOT NULL DEFAULT 1,
     status           INTEGER NOT NULL DEFAULT 1,
     created_at       TEXT DEFAULT (datetime('now','localtime')),

@@ -20,7 +20,8 @@ SELECT b.brand_code bc, b.brand_name_cn bcn, p.model_no m, p.product_name_cn nc,
         JOIN application_dict d ON d.app_id=pa.app_id WHERE pa.product_id=p.product_id) ap,
        p.temp_long_min t0, p.temp_long_max t1, p.temp_peak_max tp, p.temp_tier tier,
        p.chem_grade chem, p.thickness_um th, p.color c, p.print_method pr, p.certification cert,
-       p.feature ft, p.benefit bn, p.application_desc ds, p.source_url src, p.tds_url tds
+       p.feature ft, p.benefit bn, p.application_desc ds, p.source_url src, p.tds_url tds,
+       p.sub_application sub
 FROM product p JOIN brand b ON b.brand_id=p.brand_id
 LEFT JOIN facestock_dict f ON f.face_id=p.face_id
 LEFT JOIN adhesive_dict a ON a.adh_id=p.adh_id

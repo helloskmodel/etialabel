@@ -20,6 +20,7 @@
 <div class="filterbar"><div class="fcard">
   <div class="frow"><span class="lbl">品牌</span><div class="chips" data-k="brand"></div></div>
   <div class="frow"><span class="lbl">行业</span><div class="chips" data-k="app"></div></div>
+  <div class="frow" id="subrow" style="display:none"><span class="lbl" style="color:var(--accent)">应用</span><div class="chips" data-k="sub"></div></div>
   <div class="frow"><span class="lbl">耐高温</span><div class="chips" data-k="ht"></div></div>
   <div class="frow"><span class="lbl">耐低温</span><div class="chips" data-k="lt"></div></div>
   <div class="frow" id="morerow" style="display:none">
@@ -59,8 +60,12 @@ const LT=[[-20,'可达-20℃'],[-40,'可达-40℃'],[-80,'可达-80℃'],[-150,'
 const HT=[[100,'可达100℃'],[134,'可达134℃(灭菌)'],[150,'可达150℃'],[260,'可达260℃(回流焊)'],[600,'可达600℃'],[800,'可达800℃以上']];
 document.getElementById('stat-total').textContent = P.length+' 款材料';
 document.getElementById('stat-tds').textContent = P.filter(p=>p.tds).length+' 份官方TDS';
-const state={brand:new Set(),app:new Set(),face:new Set(),adh:new Set(),ht:new Set(),chem:new Set(),tds:new Set(),lt:new Set(),kw:'',tmin:''};
+const state={brand:new Set(),app:new Set(),face:new Set(),adh:new Set(),ht:new Set(),chem:new Set(),tds:new Set(),lt:new Set(),sub:new Set(),kw:'',tmin:''};
 const uniq=g=>{const m=new Map();P.forEach(p=>(g(p)||[]).forEach(v=>m.set(v,(m.get(v)||0)+1)));return [...m.entries()].sort((a,b)=>b[1]-a[1])};
+// 行业(中文)->该行业下的细分应用集合
+const SUB_IND={"发动机舱/车厢底": "汽车制造", "VIN车架号": "汽车制造", "轮胎标签": "汽车制造", "遮阳板警示": "汽车制造", "安全气囊": "汽车制造", "动力电池": "汽车制造", "线束标识": "汽车制造", "结构粘接/泡棉": "汽车制造", "激光打标件": "汽车制造", "电路板PCB": "电子制造", "镜头/后盖粘接": "电子制造", "元器件标识": "电子制造", "铭牌/额定标牌": "电子制造", "防静电ESD": "电子制造", "覆膜保护": "电子制造", "数据中心/机房": "数据通信/线缆", "线缆标识": "数据通信/线缆", "血袋标签": "医疗器械", "医疗可穿戴": "医疗器械", "医疗器械本体": "医疗器械", "针剂/西林瓶": "制药", "药品包装": "制药", "化合物库": "制药", "临床试验": "制药", "低温冻存": "实验室/生物样本", "PCR管": "实验室/生物样本", "载玻片": "实验室/生物样本", "微孔板": "实验室/生物样本", "样本管/试管": "实验室/生物样本", "组织病理": "实验室/生物样本", "色谱耗材": "实验室/生物样本", "细胞培养/耗材": "实验室/生物样本", "试剂标签": "实验室/生物样本", "大麻检测": "实验室/生物样本", "通用实验室": "实验室/生物样本", "钢铁/铸锻件": "冶金钢铁", "有色/表面处理": "冶金钢铁", "陶瓷制品": "通用制造", "危化品GHS": "安全标识", "检验/资产追踪": "通用制造", "纺织服装": "通用制造", "工业部件": "通用制造"};
+const APP2SUB={};
+P.forEach(p=>{if(!p.sub)return;(p.ap||'').split(' / ').filter(Boolean).forEach(a=>{(APP2SUB[a]=APP2SUB[a]||new Set()).add(p.sub);});});
 const FILTS={
   brand:uniq(p=>[p.bcn||p.bc]),
   app:uniq(p=>(p.ap||'').split(' / ').filter(Boolean)),
@@ -76,8 +81,29 @@ for(const[k,items]of Object.entries(FILTS)){
   items.forEach(([v,n])=>{ if(!n)return;
     const c=document.createElement('button');c.className='chip';c.type='button';
     const lbl=k==='ht'?HT.find(x=>x[0]==v)[1]:k==='lt'?LT.find(x=>x[0]==v)[1]:v;c.textContent=lbl+(k==='ht'||k==='chem'||k==='lt'?` ·${n}`:'');
-    c.onclick=()=>{state[k].has(v)?state[k].delete(v):state[k].add(v);c.classList.toggle('on');render(true)};
+    c.dataset.cn=(k==='app'?v:'' );
+    c.onclick=()=>{state[k].has(v)?state[k].delete(v):state[k].add(v);c.classList.toggle('on');if(k==='app')renderSubChips();render(true)};
     box.appendChild(c); });
+}
+// 联动: 根据已选行业, 动态渲染细分应用chips
+function renderSubChips(){
+  const box=document.querySelector('[data-k="sub"]');
+  const subrow=document.getElementById('subrow');
+  const indNames=new Set([...state.app]);
+  let subs=new Set();
+  if(indNames.size){Object.keys(SUB_IND).forEach(sub=>{if(indNames.has(SUB_IND[sub]))subs.add(sub);});}
+  if(!subs.size){subrow.style.display='none';box.innerHTML='';
+    // 清掉已选sub
+    state.sub.forEach(v=>state.sub.delete(v));return;}
+  subrow.style.display='flex';
+  const counts={};P.forEach(p=>{if(p.sub&&subs.has(p.sub))counts[p.sub]=(counts[p.sub]||0)+1;});
+  box.innerHTML='';
+  [...subs].sort((a,b)=>(counts[b]||0)-(counts[a]||0)).forEach(v=>{
+    const c=document.createElement('button');c.className='chip'+(state.sub.has(v)?' on':'');c.type='button';
+    c.textContent=`${v} ·${counts[v]||0}`;
+    c.onclick=()=>{state.sub.has(v)?state.sub.delete(v):state.sub.add(v);c.classList.toggle('on');render(true)};
+    box.appendChild(c);
+  });
 }
 document.getElementById('morebtn').onclick=e=>{
   const show=document.getElementById('morerow').style.display==='none';
@@ -94,7 +120,7 @@ document.getElementById('sort').onchange=()=>render(true);
 document.getElementById('reset').onclick=()=>{
   Object.values(state).forEach(s=>{if(s instanceof Set)s.clear()});state.kw='';state.tmin='';
   document.getElementById('kw').value='';document.getElementById('tmin').value='';
-  document.querySelectorAll('.chip.on').forEach(c=>c.classList.remove('on'));render(true);
+  document.querySelectorAll('.chip.on').forEach(c=>c.classList.remove('on'));document.getElementById('subrow').style.display='none';render(true);
 };
 function match(p){
   if(state.brand.size&&!state.brand.has(p.bcn||p.bc))return false;
@@ -103,6 +129,7 @@ function match(p){
   if(state.adh.size&&!state.adh.has(p.ac))return false;
   if(state.chem.size&&!state.chem.has(p.chem))return false;
   if(state.tds.size&&!p.tds)return false;
+  if(state.sub.size&&!state.sub.has(p.sub))return false;
   if(state.ht.size){const need=Math.min(...[...state.ht].map(Number));if(!(p.t1!=null&&p.t1>=need))return false;}
   if(state.lt.size){const need=Math.max(...[...state.lt].map(Number));if(!(p.t0!=null&&p.t0<=need))return false;}
   if(state.tmin!==''&&!(p.t1>=+state.tmin))return false;
@@ -157,6 +184,7 @@ function render(reset){
           ${p.t1!=null?`<span class="tag temp" style="background:var(--${(p.tier||'t1').toLowerCase()})">耐温${p.t1}℃</span>`:''}
           ${p.chem&&p.chem!=='D'?`<span class="tag temp" style="background:var(--chem${p.chem})">耐化学${p.chem}</span>`:''}
           ${p.t0!=null&&p.t0<=-40?`<span class="tag temp" style="background:#2E6FB0">耐低温${p.t0}℃</span>`:''}
+          ${p.sub?`<span class="tag" style="border-color:var(--accent);color:var(--accent)">${esc(p.sub)}</span>`:''}
         </div>
         <div class="pfoot">${p.tds?'<span class="tds">✓ 官方TDS</span>':''}<span class="more">查看详情 →</span></div>
       </div>
@@ -185,6 +213,7 @@ function openPDP(p){
           ${p.tier?`<span class="pill" style="background:var(--${p.tier.toLowerCase()})">耐温 ${p.tier} ${p.t1!=null?p.t1+'℃':''}</span>`:''}
           ${p.chem?`<span class="pill" style="background:var(--chem${p.chem})">耐化学 ${p.chem}</span>`:''}
           ${(p.ap||'').split(' / ').filter(Boolean).map(a=>`<span class="pill soft">${esc(a)}</span>`).join('')}
+          ${p.sub?`<span class="pill" style="background:var(--accent)">${esc(p.sub)}</span>`:''}
         </div>
         <table class="spec">
           <tr><th>面材</th><td>${esc(p.fc||'—')}</td></tr>

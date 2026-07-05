@@ -23,7 +23,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 HEADERS = ["brand", "model", "name_cn", "name_en", "face", "adh", "apps",
            "tmin", "tmax", "tpeak", "chem", "thick", "color", "print", "cert",
-           "feature", "benefit", "app_desc", "source_raw", "url", "pub", "tds"]
+           "feature", "benefit", "app_desc", "source_raw", "url", "pub", "tds", "sub"]
 
 # ---------------------------------------------------------------- face / adh
 FACE_MAP = [  # (关键词正则, code) 顺序敏感: 具体的在前
@@ -234,6 +234,7 @@ def conv_brady():
             feature="; ".join(feats), benefit="",
             app_desc=x.get("description") or "",
             source_raw=f"Brady材料选型器 MSApp.json | materialType={x.get('materialType')} | 原胶水: {adh_raw} | 原面材: {x.get('baseMaterial')}",
+            sub=(x.get("printerLabelApplications") or [""])[0],
             url="https://d37iyw84027v1q.cloudfront.net/Common/msapp/index.html",
             tds=f"https://tds.bradyid.com/TDSdocs/{num}.pdf",
         )))
@@ -407,6 +408,7 @@ def conv_raw_generic(raw_path, brand_code, shorten_model=False):
             benefit="; ".join(r.get("benefits", []))[:800],
             app_desc=r.get("app_desc", "")[:500],
             source_raw=src[:500], url=url, tds=tds,
+            sub=r.get("sub_application", ""),
         ))
         if model in rows:  # 双板块同型号合并
             old = rows[model]
@@ -430,6 +432,9 @@ def main():
     if (RAW / "flexcon/records_raw.json").exists():
         stats["flexcon.xlsx"] = write_xlsx(
             conv_raw_generic(RAW / "flexcon/records_raw.json", "FLEXCON", shorten_model=True), "flexcon.xlsx")
+    if (RAW / "computype/records_raw.json").exists():
+        stats["computype.xlsx"] = write_xlsx(
+            conv_raw_generic(RAW / "computype/records_raw.json", "COMPUTYPE"), "computype.xlsx")
     stats["3m.xlsx"] = write_xlsx(conv_3m(), "3m.xlsx")
     stats["lintec.xlsx"] = write_xlsx(conv_old("LINTEC", "LINTEC", "琳得科"), "lintec.xlsx")
     stats["polyonics.xlsx"] = write_xlsx(conv_old("Polyonics", "POLYONICS", ""), "polyonics.xlsx")

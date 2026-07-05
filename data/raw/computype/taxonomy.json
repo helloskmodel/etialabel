@@ -1,0 +1,161 @@
+{
+ "by_product": [
+  "Air Springs",
+  "Automotive Parts",
+  "Blood Bags",
+  "Cell Culture Labware",
+  "Drive Belts",
+  "Floor Mats",
+  "Garments",
+  "Library Books",
+  "Microplates",
+  "Microscope Slides",
+  "PCR Tubes",
+  "Printed Circuit Boards",
+  "Racks & Pallets",
+  "Tire Bead",
+  "Tire Bladders",
+  "Tire Tread",
+  "Totes & Bins",
+  "Tubes & Vials"
+ ],
+ "by_feature": [
+  "Cold Storage Labels",
+  "High Heat Labels",
+  "Chemical Resistant Labels",
+  "Hazard Communication Labels",
+  "Sustainable Labels",
+  "Tamper Evident Labels",
+  "Abrasion Resistant Labels",
+  "Sterilization Labels",
+  "Moisture Resistant Labels"
+ ],
+ "by_surface_material": [
+  "Glass",
+  "Metal",
+  "Plastic",
+  "Rubber",
+  "Silicone",
+  "Textile"
+ ],
+ "by_application": [
+  {
+   "industry": "Laboratory",
+   "industry_url": "https://computype.com/industry/laboratory/",
+   "sub": [
+    "Sample Processing",
+    "Cryo / Cryogenic Storage",
+    "PCR",
+    "Histology",
+    "Chromatography",
+    "Microplates",
+    "Microscope Slides",
+    "Tubes & Vials",
+    "Cell Culture",
+    "Reagents",
+    "Cannabis Testing"
+   ]
+  },
+  {
+   "industry": "Biopharma & Biotech",
+   "industry_url": "https://computype.com/industry/biopharma-and-biotech/",
+   "sub": [
+    "Drug Discovery",
+    "Compound Storage",
+    "Clinical Trial",
+    "Cell Culture",
+    "High-Throughput Screening"
+   ]
+  },
+  {
+   "industry": "Diagnostic",
+   "industry_url": "https://computype.com/industry/diagnostic/",
+   "sub": [
+    "Blood Tube / Specimen",
+    "Microscope Slide",
+    "Histology",
+    "Sample Processing"
+   ]
+  },
+  {
+   "industry": "Transfusion Medicine",
+   "industry_url": "https://computype.com/industry/transfusion-medicine/",
+   "sub": [
+    "Blood Bag (ISBT 128)",
+    "Plasma Bag",
+    "DIN (Donation Identification Number) Labels"
+   ]
+  },
+  {
+   "industry": "Biobanks",
+   "industry_url": "https://computype.com/industry/biobanks/",
+   "sub": [
+    "Cryogenic Storage",
+    "Cryovial / Frozen Vial",
+    "Freezer Box",
+    "Cryo Rack",
+    "Ultra-Low Temperature",
+    "Liquid Nitrogen"
+   ]
+  },
+  {
+   "industry": "Compound Storage",
+   "industry_url": "https://computype.com/industry/compound-storage/",
+   "sub": [
+    "Drug Discovery",
+    "Cryo Storage",
+    "Microplates",
+    "Autosampler / Storage Vials"
+   ]
+  },
+  {
+   "industry": "Labware Manufacturer / Distributor",
+   "industry_url": "https://computype.com/industry/labware-manufacturer-distributor/",
+   "sub": [
+    "Pre-barcoded Tubes/Vials",
+    "Labware Prep Services",
+    "Tare Weighing",
+    "Kitting & Packaging"
+   ]
+  },
+  {
+   "industry": "Other (Industrial - not medical/pharma/lab)",
+   "industry_url": "https://computype.com/industry/other-industries/",
+   "sub": [
+    "Tire (Bead/Tread/Bladder)",
+    "Belt & Rubber",
+    "Warehouse (Racks/Totes)",
+    "Automotive Parts",
+    "PCB",
+    "Air Springs",
+    "Floor Mats",
+    "Garments"
+   ]
+  }
+ ],
+ "applications_nav_tab": [
+  "Sample Processing",
+  "Drug Discovery",
+  "Cryo",
+  "In Vivo",
+  "PCR",
+  "Histology",
+  "Chromatography",
+  "Agriculture",
+  "Cannabis",
+  "Animal Health"
+ ],
+ "industry_taxonomy_raw": [
+  "biopharma-and-biotech",
+  "diagnostic",
+  "laboratory",
+  "labware-manufacturer-distributor",
+  "transfusion-medicine",
+  "biobanks",
+  "compound-storage",
+  "belt-rubber",
+  "tire",
+  "other-industries"
+ ],
+ "notes": "Computype 官网 (WordPress + UberMenu 兆级菜单) 的三层进入方式实为四条并列维度，集中在顶部导航：①主菜单 'Label Solutions' 下分三个子维度：By Product（18个具体应用产品线）、By Feature（9种特性，主要是各类 Resistance）、By Surface Material（6种被贴表面：玻璃/金属/塑料/橡胶/硅胶/纺织）；②顶部独立标签 'Applications'（10个生命科学/实验室应用，即任务所说的按应用子分类，如 Cryo/PCR/Histology/Drug Discovery 等）。此外站点还有一套 industry taxonomy（/industry/*，来自 sitemap，未直接出现在主菜单，但用于行业集合页）：Laboratory、Biopharma&Biotech、Diagnostic、Transfusion Medicine、Biobanks、Compound Storage、Labware Manufacturer/Distributor，以及工业类 Tire/Belt-Rubber/Other。by_application 字段即按此 industry 维度整理，sub 为各行业下 Computype 覆盖的子应用/产品线。注意：By Product 中 Air Springs/Automotive/Drive Belts/Floor Mats/Garments/Library/PCB/Tire*/Racks&Pallets/Totes&Bins 属工业非医疗方向，本次 records 仅收录实验室/医疗/制药相关产品线。另：By Feature 的 'Cold Storage Labels' (/cold-storage-labeling-solutions/) 与 Applications 的 'Cryo' (/cryogenic-labels/) 内容完全相同（同一套 Cryogenic Labels 页面，只是从两个维度入口进入）。Computype 为服务导向厂商，官网不提供型号编码，故以产品线名作 model，粒度=产品线；facestock/adhesive/temp/chem 仅记录页面上出现的材料/温度/耐受关键词，未出现的留空不编造。Shop (/shop/) 下另有约57个具体可购 SKU（含尺寸/印刷芯径），来自 product-sitemap.xml，本次未逐一收录为记录，可按需二次抓取。"
+}

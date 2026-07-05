@@ -312,7 +312,7 @@ IMPORT_HEADERS = [
     "temp_long_min", "temp_long_max", "temp_peak_max", "chem_grade(A/B/C/D)",
     "thickness_um", "color", "print_method", "certification",
     "feature", "benefit", "application_desc",
-    "source_category_raw", "source_url", "is_published(1/0)", "tds_url",
+    "source_category_raw", "source_url", "is_published(1/0)", "tds_url", "sub_application",
 ]
 
 
@@ -375,7 +375,7 @@ def import_excel():
         vals = list(row) + [None] * (len(IMPORT_HEADERS) - len(row))
         (brand, model, name_cn, name_en, face, adh, apps_s,
          tmin, tmax, tpeak, chem, thick, color, printm, cert,
-         feature, benefit, app_desc, src_cat, src_url, pub, tds_u) = vals[:22]
+         feature, benefit, app_desc, src_cat, src_url, pub, tds_u, sub_app) = vals[:23]
         if not brand or not model:
             skipped += 1
             continue
@@ -393,7 +393,7 @@ def import_excel():
                         thickness_um=to_int(thick), color=color, print_method=printm,
                         certification=cert, feature=feature, benefit=benefit,
                         application_desc=app_desc, source_category_raw=src_cat,
-                        source_url=src_url, tds_url=tds_u,
+                        source_url=src_url, tds_url=tds_u, sub_application=sub_app,
                         is_published=1 if pub in (None, "", 1, "1") else 0)
             exist = db.execute("SELECT product_id FROM product WHERE brand_id=? AND model_no=?",
                                (brand_id, str(model).strip())).fetchone()
@@ -563,11 +563,12 @@ def downloads_create():
 
 def migrate_db():
     db = sqlite3.connect(DB_PATH)
-    try:
-        db.execute("ALTER TABLE product ADD COLUMN tds_url TEXT")
-        db.commit()
-    except sqlite3.OperationalError:
-        pass
+    for col in ("tds_url", "sub_application"):
+        try:
+            db.execute(f"ALTER TABLE product ADD COLUMN {col} TEXT")
+            db.commit()
+        except sqlite3.OperationalError:
+            pass
     db.close()
 
 
