@@ -567,7 +567,7 @@ def downloads_create():
 
 def migrate_db():
     db = sqlite3.connect(DB_PATH)
-    for col in ("tds_url", "sub_application"):
+    for col in ("tds_url", "sub_application", "special_features"):
         try:
             db.execute(f"ALTER TABLE product ADD COLUMN {col} TEXT")
             db.commit()

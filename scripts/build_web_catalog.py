@@ -29,7 +29,8 @@ if lang == "en":
            p.temp_long_min t0, p.temp_long_max t1, p.temp_peak_max tp, p.temp_tier tier,
            p.chem_grade chem, p.thickness_um th, p.color c, p.print_method pr, p.certification cert,
            p.feature ft, p.benefit bn, p.application_desc ds, p.source_url src, p.tds_url tds,
-           (SELECT ap2.name_en FROM application ap2 WHERE ap2.name_cn=p.sub_application) sub
+           (SELECT ap2.name_en FROM application ap2 WHERE ap2.name_cn=p.sub_application) sub,
+           p.special_features sf
     FROM product p JOIN brand b ON b.brand_id=p.brand_id
     LEFT JOIN facestock_dict f ON f.face_id=p.face_id
     LEFT JOIN adhesive_dict a ON a.adh_id=p.adh_id
@@ -48,7 +49,8 @@ else:
            p.chem_grade chem, p.thickness_um th, p.color c, p.print_method pr, p.certification cert,
            p.feature ft, p.benefit bn, p.application_desc ds, p.source_url src, p.tds_url tds,
            (SELECT a2.name_cn || (CASE WHEN a2.name_en!='' THEN ' ('||a2.name_en||')' ELSE '' END)
-            FROM application a2 WHERE a2.name_cn=p.sub_application) sub
+            FROM application a2 WHERE a2.name_cn=p.sub_application) sub,
+           p.special_features sf
     FROM product p JOIN brand b ON b.brand_id=p.brand_id
     LEFT JOIN facestock_dict f ON f.face_id=p.face_id
     LEFT JOIN adhesive_dict a ON a.adh_id=p.adh_id
