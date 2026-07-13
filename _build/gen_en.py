@@ -706,19 +706,19 @@ OFFICES = [
  {"loc":"China · Shanghai","name":"Mark Tang","role":"",
   "addr":"Rm. 1903, 2# Building, Guoson Centre, No. 388 Zhongjiang Rd, Putuo District, Shanghai, China",
   "phones":[("400 990 8448","tel:4009908448"),("+86-21-6432-7144 ext. 106","tel:+862164327144")],
-  "email":"Omnicure@etia-tech.com","cc":"CN"},
+  "email":"label@etia-tech.com","cc":"CN"},
  {"loc":"Hong Kong","name":"Mark Tang","role":"",
   "addr":"Room 1003, 10/F, Tower 1, Lippo Centre, 89 Queensway, Admiralty, Hong Kong",
   "phones":[("+86 151 2119 7091","tel:+8615121197091")],
-  "email":"Omnicure@etia-tech.com","cc":"HK"},
+  "email":"label@etia-tech.com","cc":"HK"},
  {"loc":"Thailand · Bangkok","name":"Mr. Sompoch Ratchakom (Job)","role":"Sales Director",
   "addr":"22/41 H-Cape Biz Center, Sukhaphiban 2 Road, Prawet Subdistrict, Prawet District, Bangkok 10250, Thailand",
   "phones":[("+66 811 746 947","tel:+66811746947")],
-  "email":"omnicure.th@gmail.com","cc":"TH"},
+  "email":"label@etia-tech.com","cc":"TH"},
  {"loc":"Vietnam · Bac Ninh","name":"Tien Nguyen","role":"Technical Engineer",
   "addr":"No. 10 Thanh Nien Street, Area 5, Vo Cuong Ward, Bac Ninh Province, Viet Nam",
   "phones":[("+84 344 590 091","tel:+84344590091")],
-  "email":"omnicure.vn@gmail.com","cc":"VN"},
+  "email":"label@etia-tech.com","cc":"VN"},
 ]
 
 def office_cards():
@@ -748,7 +748,7 @@ def build_contact():
 %s</div>
 <div class="cta"><h3>Prefer to send your spec now?</h3>
 <p>Email your temperature range, substrate and a competitor part number if you have one — we'll match it and ship samples.</p>
-<div class="btns"><a class="btn" href="mailto:Omnicure@etia-tech.com">Email ETIA</a>
+<div class="btns"><a class="btn" href="mailto:label@etia-tech.com">Email ETIA</a>
 <a class="btn ghost" href="/brands/">Find a Brady Equivalent</a></div></div>
 </div>""" % office_cards()
     sch=[breadcrumb_schema(crumb),
