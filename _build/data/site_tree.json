@@ -1,0 +1,732 @@
+{
+ "industries": [
+  {
+   "slug": "dianzi-bandaoti",
+   "title": "电子半导体",
+   "sub": [
+    {
+     "slug": "pi-liuhuhan-biaoqian",
+     "title": "SMT 回流焊 PI 高温标签",
+     "products": [
+      "XF-581",
+      "XF-583",
+      "XF-781",
+      "XF-531",
+      "XF-532",
+      "XF-533",
+      "XF-446",
+      "XF-616",
+      "XF-592",
+      "XF-582",
+      "XF-584",
+      "XF-505",
+      "XF-555",
+      "XF-241",
+      "XF-941",
+      "XF-232",
+      "XF-252",
+      "XF-251",
+      "XF-101M",
+      "XF-102M",
+      "XF-101S",
+      "XF-102S",
+      "XF-101G",
+      "XF-102G",
+      "XF-101SE",
+      "XF-102SE",
+      "XF-101ME",
+      "E-8511",
+      "E-8512",
+      "E-8811",
+      "E-8812",
+      "E-8532TT",
+      "E-8531",
+      "E-8531彩色",
+      "E-8532W",
+      "E-8532+PET底纸",
+      "E-8611",
+      "E-8531B",
+      "E-8731/E-8711",
+      "E-8632 ",
+      "E-8631",
+      "E-8732",
+      "E-4633",
+      "E-2512",
+      "E-2522"
+     ]
+    },
+    {
+     "slug": "esd-fangjingdian-biaoqian",
+     "title": "防静电 ESD PCB 标签",
+     "products": [
+      "XF-781",
+      "XF-446",
+      "XF-101SE",
+      "XF-102SE",
+      "XF-101ME",
+      "E-2712",
+      "E-8731/E-8711",
+      "E-8732"
+     ]
+    },
+    {
+     "slug": "banma-sanjiao-biaoqian",
+     "title": "PCB 条码追溯标签",
+     "products": [
+      "XF-531",
+      "XF-532",
+      "XF-533",
+      "XF-241",
+      "XF-232",
+      "XF-252",
+      "XF-251",
+      "E-2512",
+      "E-2522"
+     ]
+    },
+    {
+     "slug": "laser-dabiao-biaoqian",
+     "title": "激光打标耐高温标签",
+     "products": [
+      "E-8531B"
+     ]
+    },
+    {
+     "slug": "xiaoxing-yuanqi-jian-biaoqian",
+     "title": "微型元器件极小标签",
+     "products": [
+      "XF-616"
+     ]
+    },
+    {
+     "slug": "naihuaxue-qingxi-biaoqian",
+     "title": "耐助焊剂清洗标签",
+     "products": [
+      "XF-592",
+      "XF-584",
+      "E-8811",
+      "E-8812"
+     ]
+    },
+    {
+     "slug": "baomi-mian-biaoqian",
+     "title": "SMT 遮蔽高温 PI 胶带",
+     "products": [
+      "E-8632 ",
+      "E-8631",
+      "E-4633"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "qiche-zhengche",
+   "title": "汽车整车",
+   "sub": [
+    {
+     "slug": "fache-jicang-gaowen-biaoqian",
+     "title": "发动机舱耐高温标签",
+     "products": [
+      "E-2313",
+      "E-2314",
+      "E-2315",
+      "E-2311",
+      "E-2512BL（激光镭射）",
+      "E-2112",
+      "E-2313"
+     ]
+    },
+    {
+     "slug": "xianshu-biaoshi-biaoqian",
+     "title": "汽车线束标识标签",
+     "products": [
+      "E-2931",
+      "E-2932"
+     ]
+    },
+    {
+     "slug": "neishi-zuran-biaoqian",
+     "title": "内饰 FMVSS302 阻燃标签",
+     "products": []
+    },
+    {
+     "slug": "lingjian-xulie-biaoqian",
+     "title": "零部件追溯铭牌",
+     "products": []
+    },
+    {
+     "slug": "youxiang-naiyou-biaoqian",
+     "title": "机油耐油防水标签",
+     "products": [
+      "E-2313",
+      "E-2314",
+      "E-2315",
+      "E-2813",
+      "E-2812",
+      "E-2312 (E-2012)",
+      "E-1836",
+      "E-2832",
+      "E-2814",
+      "E-2313"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "xinnengyuan-dianche",
+   "title": "新能源车动力电池",
+   "sub": [
+    {
+     "slug": "dianchi-fengbian-zuran-biaoqian",
+     "title": "电池封边 UL94 V0 阻燃 PI 标签",
+     "products": []
+    },
+    {
+     "slug": "hongxian-bao-hu-biaoqian",
+     "title": "高压线束绝缘标识",
+     "products": []
+    },
+    {
+     "slug": "diankong-qi-jian-biaoqian",
+     "title": "电控模块高温标签",
+     "products": []
+    },
+    {
+     "slug": "chongdian-duan-biaoqian",
+     "title": "充电组件追溯标签",
+     "products": []
+    },
+    {
+     "slug": "chegui-fanghuo-biaoqian",
+     "title": "整车低烟防火标签",
+     "products": []
+    }
+   ]
+  },
+  {
+   "slug": "xianlan-tongxin",
+   "title": "线缆通信光纤",
+   "sub": [
+    {
+     "slug": "guangxian-raoxian-biaoqian",
+     "title": "光纤缠绕标识标签",
+     "products": [
+      "E-2931",
+      "E-2932",
+      "XF-301(XF-8602)",
+      "E-4532"
+     ]
+    },
+    {
+     "slug": "tongxin-xianlan-zuran-biaoqian",
+     "title": "通信线缆阻燃标签",
+     "products": []
+    },
+    {
+     "slug": "dianli-xianlan-naihou-biaoqian",
+     "title": "电力线缆户外耐候标签",
+     "products": [
+      "E-6533彩色",
+      "E-6034",
+      "E-6534",
+      "E-6033"
+     ]
+    },
+    {
+     "slug": "jiguang-ji-duan-biaoqian",
+     "title": "光模块耐高温标签",
+     "products": []
+    },
+    {
+     "slug": "ji-fang-xian-shu-biaoqian",
+     "title": "机房绕包线缆标签",
+     "products": [
+      "E-2931",
+      "E-2932",
+      "XF-301(XF-8602)",
+      "E-4532"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "yiliao-shengwu",
+   "title": "生物医药医疗",
+   "sub": [
+    {
+     "slug": "121du-miejun-biaoqian",
+     "title": "121℃高压灭菌标签",
+     "products": [
+      "E-2532 ",
+      "E-5532",
+      "E-2232"
+     ]
+    },
+    {
+     "slug": "yiwan-yedan-nidan-biaoqian",
+     "title": "液氮低温样本标签",
+     "products": [
+      "XF-302",
+      "E-3635",
+      "E-4813",
+      "E-4533",
+      "E-2532 ",
+      "E-6333",
+      "E-4812",
+      "E-4802",
+      "E-5532",
+      "E-2232"
+     ]
+    },
+    {
+     "slug": "shoushu-qixie-zhuisu-biaoqian",
+     "title": "手术器械追溯标签",
+     "products": []
+    },
+    {
+     "slug": "shiji-ping-naihuaxue-biaoqian",
+     "title": "试剂瓶耐化学标签",
+     "products": [
+      "E-2532 "
+     ]
+    },
+    {
+     "slug": "wu-lu-su-yiliao-biaoqian",
+     "title": "无卤素医用 PI 标签",
+     "products": []
+    }
+   ]
+  },
+  {
+   "slug": "gangtie-yejin",
+   "title": "钢铁冶金",
+   "sub": [
+    {
+     "slug": "300du-gaowen-liuhua-biaoqian",
+     "title": "300℃热处理标签",
+     "products": [
+      "HP-180",
+      "HP-360",
+      "HP-600",
+      "HP-700",
+      "HP-900",
+      "HP-L90",
+      "HP-X1912",
+      "HP-G77",
+      "HP-L85",
+      "HP-120S",
+      "HP-901",
+      "E-112",
+      "E-239",
+      "E-884",
+      "E-7535",
+      "E-7545",
+      "E-272",
+      "E-760"
+     ]
+    },
+    {
+     "slug": "gangpi-pi-ci-shu-biaoqian",
+     "title": "钢坯铝箔高温标签",
+     "products": [
+      "HP-180",
+      "HP-360",
+      "HP-600",
+      "HP-700",
+      "HP-900",
+      "HP-L90",
+      "HP-X1912",
+      "HP-G77",
+      "HP-L85",
+      "HP-120S",
+      "HP-901",
+      "E-112",
+      "E-239",
+      "E-884",
+      "E-7535",
+      "E-7545",
+      "E-272",
+      "E-760"
+     ]
+    },
+    {
+     "slug": "moju-nai-mo-sun-biaoqian",
+     "title": "模具耐磨高温标签",
+     "products": [
+      "HP-180",
+      "HP-360",
+      "HP-600",
+      "HP-700",
+      "HP-900",
+      "HP-L90",
+      "HP-X1912",
+      "HP-G77",
+      "HP-L85",
+      "HP-120S",
+      "HP-901",
+      "E-112",
+      "E-239",
+      "E-884",
+      "E-7535",
+      "E-7545",
+      "E-272",
+      "E-760"
+     ]
+    },
+    {
+     "slug": "yejin-shebei-mingpai-biaoqian",
+     "title": "冶金设备金属铭牌",
+     "products": [
+      "HP-L90",
+      "HP-G77",
+      "HP-L85",
+      "HP-120S",
+      "HP-T40",
+      "E-112",
+      "E-239",
+      "E-884",
+      "E-272",
+      "E-760"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "taoci-boli",
+   "title": "陶瓷玻璃",
+   "sub": [
+    {
+     "slug": "yao-lu-gaowen-biaoqian",
+     "title": "窑炉耐高温标识",
+     "products": [
+      "HP-CBR-CX1",
+      "HP-CBR-CX2",
+      "HP-CBR-CX11",
+      "HP-CBR-CX14"
+     ]
+    },
+    {
+     "slug": "boli-jia-gong-zhebi-biaoqian",
+     "title": "玻璃加工遮蔽 PI 胶带",
+     "products": []
+    },
+    {
+     "slug": "gongyi-pin-pi-ci-biaoqian",
+     "title": "陶瓷产品批次标签",
+     "products": [
+      "HP-CBR-CX1",
+      "HP-CBR-CX2",
+      "HP-CBR-CX11",
+      "HP-CBR-CX14"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "huwai-shebei",
+   "title": "户外设备",
+   "sub": [
+    {
+     "slug": "nai-zi-wai-xian-biaoqian",
+     "title": "抗 UV 耐候铭牌",
+     "products": []
+    },
+    {
+     "slug": "fangshui-nai-lao-hua-biaoqian",
+     "title": "防水耐老化标签",
+     "products": []
+    },
+    {
+     "slug": "gongcheng-jixie-biaoqian",
+     "title": "工程机械耐油污标签",
+     "products": []
+    },
+    {
+     "slug": "ting-che-chang-she-bei-biaoqian",
+     "title": "充电桩户外标签",
+     "products": []
+    }
+   ]
+  }
+ ],
+ "applications": [
+  {
+   "slug": "smt-liuhuhan-bofuhan",
+   "title": "SMT 回流焊波峰焊标签",
+   "products": [
+    "XF-581",
+    "XF-583",
+    "XF-531",
+    "XF-532",
+    "XF-533",
+    "XF-616",
+    "XF-592",
+    "XF-582",
+    "XF-505",
+    "XF-555",
+    "XF-241",
+    "XF-941",
+    "XF-232",
+    "XF-252",
+    "XF-251",
+    "XF-101M",
+    "XF-102M",
+    "XF-101S",
+    "XF-102S",
+    "XF-101G",
+    "XF-102G",
+    "E-8511",
+    "E-8512",
+    "E-8811",
+    "E-8812",
+    "E-8532TT",
+    "E-8531",
+    "E-8531彩色",
+    "E-8532W",
+    "E-8532+PET底纸",
+    "E-8611",
+    "E-8531B",
+    "E-8632 ",
+    "E-8631",
+    "E-4633",
+    "E-2512",
+    "E-2522",
+    "HP-X1912",
+    "HP-G77",
+    "HP-120S",
+    "E-112",
+    "E-239",
+    "E-884",
+    "E-272",
+    "HP-CBR-CX1",
+    "HP-CBR-CX2",
+    "HP-CBR-CX11",
+    "HP-CBR-CX14",
+    "E-2311",
+    "E-2512BL（激光镭射）",
+    "E-2112"
+   ]
+  },
+  {
+   "slug": "fangjingdian-esd",
+   "title": "ESD 防静电洁净标签",
+   "products": [
+    "XF-781",
+    "XF-446",
+    "XF-101SE",
+    "XF-102SE",
+    "XF-101ME",
+    "E-2712",
+    "E-8731/E-8711",
+    "E-8732"
+   ]
+  },
+  {
+   "slug": "zuran-ul94v0",
+   "title": "UL94 V0 阻燃标签",
+   "products": [
+    "XF-603",
+    "XF-611"
+   ]
+  },
+  {
+   "slug": "chao-di-wen-ye-dan",
+   "title": "液氮超低温标签",
+   "products": [
+    "XF-302",
+    "E-3635",
+    "E-4813",
+    "E-4533",
+    "E-6333",
+    "E-4812",
+    "E-4802"
+   ]
+  },
+  {
+   "slug": "gaowen-rechuli",
+   "title": "300℃热处理标签",
+   "products": [
+    "HP-180",
+    "HP-360",
+    "HP-600",
+    "HP-700",
+    "HP-900",
+    "HP-L90",
+    "HP-L85",
+    "HP-901",
+    "E-7535",
+    "E-7545",
+    "E-760"
+   ]
+  },
+  {
+   "slug": "yiliao-miejun",
+   "title": "医疗灭菌专用标签",
+   "products": [
+    "E-2532 ",
+    "E-5532",
+    "E-2232"
+   ]
+  },
+  {
+   "slug": "xianlan-raoxian-biaoshi",
+   "title": "线缆缠绕标识",
+   "products": [
+    "E-2931",
+    "E-2932",
+    "E-2931",
+    "E-2932",
+    "XF-301(XF-8602)",
+    "E-4532"
+   ]
+  },
+  {
+   "slug": "huwai-naihou",
+   "title": "户外抗紫外线耐候标签",
+   "products": [
+    "E-6534",
+    "E-6533彩色",
+    "E-6034",
+    "E-6534",
+    "E-6033"
+   ]
+  }
+ ],
+ "materials": [
+  {
+   "slug": "pi-juyaxianya-biaoqian",
+   "title": "PI 聚酰亚胺高温标签",
+   "products": [
+    "XF-581",
+    "XF-583",
+    "XF-781",
+    "XF-531",
+    "XF-532",
+    "XF-533",
+    "XF-603",
+    "XF-616",
+    "XF-592",
+    "XF-582",
+    "XF-584",
+    "XF-505",
+    "XF-555",
+    "XF-241",
+    "XF-941",
+    "XF-232",
+    "XF-252",
+    "XF-251",
+    "XF-101M",
+    "XF-102M",
+    "XF-101S",
+    "XF-102S",
+    "XF-101G",
+    "XF-102G",
+    "XF-101SE",
+    "XF-102SE",
+    "XF-101ME",
+    "E-8511",
+    "E-8512",
+    "E-8811",
+    "E-8812",
+    "E-8532TT",
+    "E-8531",
+    "E-8531彩色",
+    "E-8532W",
+    "E-8532+PET底纸",
+    "E-8611",
+    "E-8531B",
+    "E-8731/E-8711",
+    "E-8632 ",
+    "E-8631",
+    "E-8732",
+    "HP-T40",
+    "E-884"
+   ]
+  },
+  {
+   "slug": "pet-yinzi-biaoqian",
+   "title": "PET 哑银消银龙标签",
+   "products": [
+    "XF-446",
+    "XF-611",
+    "E-2712",
+    "E-2512",
+    "E-2522",
+    "E-2532 ",
+    "E-239",
+    "E-2313",
+    "E-2314",
+    "E-2315",
+    "E-2813",
+    "E-2812",
+    "E-2311",
+    "E-2312 (E-2012)",
+    "E-2512BL（激光镭射）",
+    "E-2112",
+    "E-2832",
+    "E-2814",
+    "E-2931",
+    "E-2932",
+    "E-2931",
+    "E-2932",
+    "E-2313"
+   ]
+  },
+  {
+   "slug": "pp-hechengzhi-biaoqian",
+   "title": "PP 合成纸防水标签",
+   "products": [
+    "E-4633",
+    "E-4813",
+    "E-4533",
+    "E-4812",
+    "E-4802",
+    "E-5532",
+    "E-2232",
+    "E-4532"
+   ]
+  },
+  {
+   "slug": "jinshu-lvfo-biaoqian",
+   "title": "铝箔金属高温标签",
+   "products": [
+    "HP-180",
+    "HP-360",
+    "HP-600",
+    "HP-700",
+    "HP-900",
+    "HP-L90",
+    "HP-X1912",
+    "HP-G77",
+    "HP-L85",
+    "HP-120S",
+    "HP-901",
+    "E-7535",
+    "E-7545",
+    "E-272",
+    "E-760",
+    "HP-CBR-CX1",
+    "HP-CBR-CX2",
+    "HP-CBR-CX11",
+    "HP-CBR-CX14"
+   ]
+  },
+  {
+   "slug": "zhishi-biaoqian",
+   "title": "通用纸质/特种标签",
+   "products": [
+    "XF-302",
+    "E-3635",
+    "E-6333",
+    "E-112",
+    "E-1836",
+    "E-6534",
+    "E-6533彩色",
+    "E-6034",
+    "E-6534",
+    "E-6033",
+    "XF-301(XF-8602)"
+   ]
+  }
+ ]
+}
