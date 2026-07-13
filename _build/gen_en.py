@@ -314,6 +314,15 @@ nav.main a:hover{color:#fff;text-decoration:none}
 .trust .t{background:var(--bg);border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:10px;padding:18px}
 .trust .t b{display:block;color:var(--blue-deep);font-size:16px;margin-bottom:4px}
 .trust .t p{color:var(--mut);font-size:14px}
+.offices{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:8px}
+.office{border:1px solid var(--line);border-top:3px solid var(--green);border-radius:12px;padding:20px;background:#fff}
+.office h3{font-size:17px;color:var(--blue-deep);margin-bottom:4px}
+.office .role{font-weight:700;font-size:14px;margin-bottom:8px}
+.office .role span{color:var(--mut);font-weight:600}
+.office .addr{color:var(--mut);font-size:14px;margin-bottom:12px}
+.office .crows{list-style:none;display:flex;flex-direction:column;gap:7px}
+.office .crows li{font-size:14px;display:flex;gap:8px;align-items:baseline}
+.office .crows .ic{color:var(--blue);font-weight:700;width:16px;flex:none;text-align:center}
 table.matrix{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
 .tablewrap{overflow-x:auto}
 table.matrix th,table.matrix td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
@@ -369,7 +378,7 @@ def page(title, desc, canonical, body, schema=None, crumb=None):
         schema_js = '<script type="application/ld+json">%s</script>' % json.dumps(schema, ensure_ascii=False)
     nav = ('<a href="/industries/">Industries</a><a href="/applications/">Applications</a>'
            '<a href="/materials/">Materials</a><a href="/brands/">Brands</a>'
-           '<a href="/technical-resources/">Resources</a><a href="/about/">About</a>')
+           '<a href="/about/">About</a><a href="/contact/">Contact</a>')
     cr = ""
     if crumb:
         parts = []
@@ -394,7 +403,7 @@ def page(title, desc, canonical, body, schema=None, crumb=None):
 <div><strong>ETIA Label</strong> — Your Solution Partner for labels that perform where ordinary ones fail.<br>
 Sole agent: Polyonics (USA) &amp; YS&nbsp;Tech (Japan) · FlexCon · Computype · Own die-cutting &amp; slitting factory<br>
 <em style="color:#8fb0e6">Engineering Success.</em></div>
-<div><a href="/industries/">Industries</a> · <a href="/applications/">Applications</a> · <a href="/materials/">Materials</a> · <a href="/brands/">Brand Cross-Reference</a> · <a href="/about/">About</a></div>
+<div><a href="/industries/">Industries</a> · <a href="/applications/">Applications</a> · <a href="/materials/">Materials</a> · <a href="/brands/">Brand Cross-Reference</a> · <a href="/technical-resources/">Resources</a> · <a href="/about/">About</a> · <a href="/contact/">Contact</a></div>
 </div></footer></body></html>""" % (esc(title), esc(desc), canonical, hreflang_tags(canonical), esc(title), CSS, schema_js, nav, cr, body)
 
 def write(path, content):
@@ -419,7 +428,7 @@ def faq_html(qas):
 def cta():
     return """<div class="cta"><h3>Tell us the application — we'll engineer the label.</h3>
 <p>Send your temperature range, surface, chemical exposure and print method. We'll return the matched Polyonics, YS&nbsp;Tech or ETIA part with a datasheet and free qualification samples — often within one working day.</p>
-<div class="btns"><a class="btn" href="/technical-resources/">Request Samples &amp; Datasheet</a>
+<div class="btns"><a class="btn" href="/contact/">Request Samples &amp; Datasheet</a>
 <a class="btn ghost" href="/brands/">Find a Brady Equivalent</a></div></div>"""
 
 # Reusable "authorized brands" agency matrix (used on Brands + About pages).
@@ -661,7 +670,8 @@ def build_home():
     sch = {"@context":"https://schema.org","@type":"Organization","name":"ETIA Label","url":SITE,
            "slogan":"Your Solution Partner. Engineering Success.",
            "description":"ETIA is a solution partner for durable and specialty industrial labels engineered for extreme heat, cryogenic cold, chemicals and lead-free PCB assembly. Sole agent for Polyonics (USA) and YS Tech (Japan), with in-house die-cutting and slitting.",
-           "brand":["Polyonics","YS Tech","FlexCon","Computype","ETIA"]}
+           "brand":["Polyonics","YS Tech","FlexCon","Computype","ETIA"],
+           "contactPoint":contact_points()}
     write("/", page("ETIA Label — Your Solution Partner for Industrial Specialty Labels",
         "Durable, high-performance industrial labels for extreme heat to 1300°C, cryogenic cold, chemicals and lead-free PCB assembly. Sole agent for Polyonics (USA) & YS Tech (Japan). Browse by industry, application or material — free samples.",
         SITE+"/", body, sch))
@@ -690,6 +700,65 @@ def build_about():
         "For over 20 years ETIA has engineered durable, specialty labels for the toughest conditions. Sole agent for Polyonics (USA) & YS Tech (Japan), with in-house die-cutting, slitting and long-term technical partnership.",
         SITE+"/about/", body, [breadcrumb_schema(crumb), sch], crumb))
     track("/about/","tech-resources")
+
+# Regional sales/technical offices (English addresses only — the site is English).
+OFFICES = [
+ {"loc":"China · Shanghai","name":"Mark Tang","role":"",
+  "addr":"Rm. 1903, 2# Building, Guoson Centre, No. 388 Zhongjiang Rd, Putuo District, Shanghai, China",
+  "phones":[("400 990 8448","tel:4009908448"),("+86-21-6432-7144 ext. 106","tel:+862164327144")],
+  "email":"Omnicure@etia-tech.com","cc":"CN"},
+ {"loc":"Hong Kong","name":"Mark Tang","role":"",
+  "addr":"Room 1003, 10/F, Tower 1, Lippo Centre, 89 Queensway, Admiralty, Hong Kong",
+  "phones":[("+86 151 2119 7091","tel:+8615121197091")],
+  "email":"Omnicure@etia-tech.com","cc":"HK"},
+ {"loc":"Thailand · Bangkok","name":"Mr. Sompoch Ratchakom (Job)","role":"Sales Director",
+  "addr":"22/41 H-Cape Biz Center, Sukhaphiban 2 Road, Prawet Subdistrict, Prawet District, Bangkok 10250, Thailand",
+  "phones":[("+66 811 746 947","tel:+66811746947")],
+  "email":"omnicure.th@gmail.com","cc":"TH"},
+ {"loc":"Vietnam · Bac Ninh","name":"Tien Nguyen","role":"Technical Engineer",
+  "addr":"No. 10 Thanh Nien Street, Area 5, Vo Cuong Ward, Bac Ninh Province, Viet Nam",
+  "phones":[("+84 344 590 091","tel:+84344590091")],
+  "email":"omnicure.vn@gmail.com","cc":"VN"},
+]
+
+def office_cards():
+    out = []
+    for o in OFFICES:
+        role = esc(o["name"]) + ((" · <span>%s</span>" % esc(o["role"])) if o["role"] else "")
+        phones = "".join('<li><span class="ic">☎</span><a href="%s">%s</a></li>' % (u, esc(p)) for p,u in o["phones"])
+        out.append('<div class="office"><h3>%s</h3><div class="role">%s</div>'
+                   '<p class="addr">%s</p><ul class="crows">'
+                   '<li><span class="ic">✉</span><a href="mailto:%s">%s</a></li>%s</ul></div>'
+                   % (esc(o["loc"]), role, esc(o["addr"]), o["email"], esc(o["email"]), phones))
+    return '<div class="offices">%s</div>' % "".join(out)
+
+def contact_points():
+    return [{"@type":"ContactPoint","contactType":"sales","areaServed":o["cc"],
+             "telephone":o["phones"][0][0],"email":o["email"]} for o in OFFICES]
+
+def build_contact():
+    crumb=[("Home","/"),("Contact","/contact/")]
+    body="""<section class="hero"><div class="wrap">
+<h1>Talk to your local ETIA team.</h1>
+<p>Tell us your application — surface, temperature, chemical exposure and print method — and we'll return the matched part with a datasheet and free qualification samples, often within one working day.</p>
+</div></section>
+<div class="wrap">
+<div class="sec"><h2>Global contacts</h2>
+<p class="lede">Local sales and technical support across Greater China and Southeast Asia.</p>
+%s</div>
+<div class="cta"><h3>Prefer to send your spec now?</h3>
+<p>Email your temperature range, substrate and a competitor part number if you have one — we'll match it and ship samples.</p>
+<div class="btns"><a class="btn" href="mailto:Omnicure@etia-tech.com">Email ETIA</a>
+<a class="btn ghost" href="/brands/">Find a Brady Equivalent</a></div></div>
+</div>""" % office_cards()
+    sch=[breadcrumb_schema(crumb),
+         {"@context":"https://schema.org","@type":"ContactPage","name":"Contact ETIA Label",
+          "description":"Local ETIA sales and technical offices in Shanghai, Hong Kong, Bangkok and Bac Ninh.",
+          "mainEntity":{"@type":"Organization","name":"ETIA Label","url":SITE,"contactPoint":contact_points()}}]
+    write("/contact/", page("Contact ETIA — Global Offices (China, HK, Thailand, Vietnam) | ETIA Label",
+        "Contact your local ETIA team in Shanghai, Hong Kong, Bangkok or Bac Ninh for industrial specialty labels, spec matching and free samples.",
+        SITE+"/contact/", body, sch, crumb))
+    track("/contact/","tech-resources")
 
 def build_industries():
     # index
@@ -861,7 +930,7 @@ def build_sitemaps():
 
 # --------------------------------------------------------- run
 # clean old build dirs (keep .git, README)
-for d in ["industries","applications","materials","products","brands","technical-resources","about"]:
+for d in ["industries","applications","materials","products","brands","technical-resources","about","contact"]:
     p=os.path.join(ROOT,d)
     if os.path.isdir(p): shutil.rmtree(p)
 for f in os.listdir(ROOT):
@@ -869,6 +938,7 @@ for f in os.listdir(ROOT):
 
 build_home()
 build_about()
+build_contact()
 build_industries()
 build_applications()
 build_materials()
