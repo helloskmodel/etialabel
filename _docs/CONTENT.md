@@ -41,12 +41,9 @@ Status legend: 🔒 LOCKED (client-approved copy) · ✏️ draft · ⬜ not sta
   3. **We Develop** — Flexible constructions for specialized requirements.
   4. **We Support** — From samples and testing to repeat supply.
 
-### Service Commitment (light-green/grey background; 4 icon cards)
-- **Eyebrow:** OUR SERVICE COMMITMENT · **Heading:** Reliable quality. Practical support.
-  1. 🧪 **100% Quality Testing** — Incoming materials and finished products are inspected through our quality-control process.
-  2. ⚙️ **Application-Driven Solutions** — Materials are recommended around real process requirements.
-  3. 📦 **Flexible Supply** — Samples, small batches, custom converting, and repeat supply.
-  4. 🤝 **Long-Term Support** — Support from material selection through ongoing production.
+### Service Bar (directly under Hero) — brand-blue band, green ✓ checks (ETIA-TECH style)
+Four items in one blue bar under the hero (replaces the earlier mid-page service-card section):
+✓ 100% Quality Testing · ✓ Application-Driven Solutions · ✓ Flexible Supply · ✓ Long-Term Support
 
 ### 中文版
 - **眉题:** 耐久标识与特种标签材料
@@ -91,9 +88,9 @@ Not on the homepage. Customer logos/stories will live under **Insights › Case 
 - Button → Contact / Request Samples.
 
 ### HOME final section order (LOCKED — refined)
-Hero → Quick Proof Bar → Why ETIA (Understand/Source/Develop/Support) → Service Commitment →
-Partner Brands → Contact CTA.
-- "What We Can Offer" is SUPERSEDED by Why ETIA + Service Commitment (kept out unless client re-adds).
+Hero → **Service Bar (blue ✓)** → Quick Proof Bar → Why ETIA (Understand/Source/Develop/Support) →
+Partner Brands → Contact CTA (blue card).
+- "What We Can Offer" and the mid-page Service-card section are SUPERSEDED (kept out unless client re-adds).
 - Customers removed from Home → future Insights › Case Studies.
 - OPEN: which are the "9 Global Material Brands"? (5 named so far + 4 more.)
 
