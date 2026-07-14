@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.etialabel.com/materials/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/materials/polyimide-pi-labels/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/materials/polyester-pet-labels/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/materials/synthetic-pp-labels/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/materials/metal-foil-labels/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/materials/paper-specialty-labels/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/polyimide-pi/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/polyimide-pi/high-temp-and-chemical-resistant/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/polyimide-pi/esd-static-dissipative/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/polyester-pet/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/polyester-pet/abrasion-and-weather-resistant/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/polyester-pet/chemical-and-solvent-resistant/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/polyester-pet/ul-certified-flame-retardant/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/polyester-pet/matte-silver-bright-white/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/ceramic-and-metal-high-temp/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/ceramic-and-metal-high-temp/ultra-high-temp-endurance/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/ceramic-and-metal-high-temp/chemical-corrosion-resistant/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/ceramic-and-metal-high-temp/metallic-finish-and-abrasion/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/low-temp-weatherable-specialty/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/low-temp-weatherable-specialty/cryogenic-and-flexible/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/low-temp-weatherable-specialty/outdoor-uv-resistant/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/low-temp-weatherable-specialty/water-oil-moisture-proof/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/flame-retardant-and-esd-functional/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/flame-retardant-and-esd-functional/ul-flame-retardant/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/flame-retardant-and-esd-functional/esd-anti-static/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/synthetic-paper-and-specialty/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/synthetic-paper-and-specialty/tear-resistant-and-tough/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/synthetic-paper-and-specialty/chemical-corrosion-resistant/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.etialabel.com/products/by-material/synthetic-paper-and-specialty/special-function/</loc><changefreq>weekly</changefreq></url>
 </urlset>
