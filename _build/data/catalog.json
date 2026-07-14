@@ -1,0 +1,1916 @@
+{
+ "industries": {
+  "Electronics Manufacturing & PCB Process": {
+   "SMT Placement & Reflow Process": [
+    {
+     "series": "PI High-Temp Label",
+     "model": "XF-531/532/533/581 Series",
+     "seo": "Highest",
+     "poly": "XF-581/XF-583",
+     "etia": "E-8511/E-8531",
+     "brady": "B-416/B-497"
+    },
+    {
+     "series": "ESD Anti-Static PI Label",
+     "model": "SMT Anti-Static High-Temp Label",
+     "seo": "Highest",
+     "poly": "XF-101SE/XF-102SE",
+     "etia": "XF-8711/XF-8732",
+     "brady": "B-768"
+    },
+    {
+     "series": "Brady Equivalent Replacement Label",
+     "model": "Brady B-416 Equivalent Replacement Label",
+     "seo": "Highest",
+     "poly": "XF-531/XF-533",
+     "etia": "E-8512/E-8532",
+     "brady": "B-416"
+    }
+   ],
+   "PCB Full-Flow Process": [
+    {
+     "series": "PCB-Wash Chemical-Resistant PI Label",
+     "model": "PCB-Wash Solvent-Resistant PI Label",
+     "seo": "Highest",
+     "poly": "XF-101G/XF101M",
+     "etia": "E-8532TT",
+     "brady": "B-729"
+    },
+    {
+     "series": "PCB Lamination High-Temp Label",
+     "model": "PCB Lamination High-Temp PI Label",
+     "seo": "High",
+     "poly": "XF-581/XF-583",
+     "etia": "E-8511/E-8531",
+     "brady": "B-416/B-497"
+    },
+    {
+     "series": "PCB Plating Corrosion-Resistant Label",
+     "model": "Plating-Bath Acid/Alkali-Resistant PVC Label",
+     "seo": "High",
+     "poly": "XF-102G/XF102M",
+     "etia": "E-8512/E-8532",
+     "brady": "B-427/B-731"
+    },
+    {
+     "series": "PCB Finished-Goods Traceability Barcode Label",
+     "model": "PCB Finished-Goods High-Temp Barcode Label",
+     "seo": "Highest",
+     "poly": "XF-581/XF-583",
+     "etia": "E-8511/E-8531",
+     "brady": "B-416/B-497"
+    }
+   ],
+   "ESD Anti-Static & Cleanroom Marking": [
+    {
+     "series": "ESD Anti-Static Warning Label",
+     "model": "ESD Anti-Static Warning Label",
+     "seo": "Highest",
+     "poly": "XF-101SE/XF-102SE",
+     "etia": "XF-8711/XF-8732",
+     "brady": "B-768"
+    },
+    {
+     "series": "PCB Anti-Static Protection Label",
+     "model": "ESD Anti-Static PCB Label",
+     "seo": "Highest",
+     "poly": "XF-101SE/XF-102SE",
+     "etia": "XF-8711/XF-8732",
+     "brady": "B-768"
+    },
+    {
+     "series": "Component ESD Packaging Label",
+     "model": "ESD Bag Identification Label",
+     "seo": "High",
+     "poly": "XF-101SE/XF-102SE",
+     "etia": "XF-8711/XF-8732",
+     "brady": "B-768"
+    }
+   ],
+   "Component & Assembly Traceability": [
+    {
+     "series": "IC Chip Packaging High-Temp PI Label",
+     "model": "IC Chip Packaging High-Temp PI Label",
+     "seo": "Highest",
+     "poly": "XF-101G/XF101M",
+     "etia": "E-8532TT",
+     "brady": "B-729"
+    },
+    {
+     "series": "Micro-Component High-Temp Label",
+     "model": "0201/0402 Micro-Component High-Temp Label",
+     "seo": "High",
+     "poly": "XF-581/XF-583",
+     "etia": "E-8511/E-8531",
+     "brady": "B-416/B-497"
+    },
+    {
+     "series": "Connector High-Temp Marking Label",
+     "model": "Connector High-Temp Flame-Retardant Label",
+     "seo": "High",
+     "poly": "XF-101SE/XF-102SE",
+     "etia": "XF-8711/XF-8732",
+     "brady": "B-768"
+    },
+    {
+     "series": "Wire-Harness High-Temp Marking Label",
+     "model": "Electronic Harness High-Temp Flame-Retardant Label",
+     "seo": "High",
+     "poly": "XF-603",
+     "etia": "",
+     "brady": "B-8088A"
+    }
+   ],
+   "Electronic & Final Assembly Marking": [
+    {
+     "series": "Unit PET Nameplate Label",
+     "model": "Unit PET Nameplate Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2522",
+     "brady": "B-428"
+    },
+    {
+     "series": "Unit SN-Code Laser-Marked Label",
+     "model": "Unit SN-Code Laser-Marked Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2512BL",
+     "brady": "B-421"
+    },
+    {
+     "series": "Structural-Part Traceability Marking Label",
+     "model": "Unit Internal Structural High-Temp Label",
+     "seo": "High",
+     "poly": "XF-581/XF-583",
+     "etia": "E-8511/E-8531",
+     "brady": "B-416/B-497"
+    }
+   ],
+   "Test, QC & Shipping Traceability": [
+    {
+     "series": "Moisture-Proof ESD Packaging Label",
+     "model": "Moisture-Proof / ESD Packaging Warning Label",
+     "seo": "High",
+     "poly": "XF-101SE/XF-102SE",
+     "etia": "XF-8711/XF-8732",
+     "brady": "B-768"
+    }
+   ],
+   "Electronics Compliance & Certification Marking": [
+    {
+     "series": "UL-Certified Label",
+     "model": "UL-Certified Label",
+     "seo": "Highest",
+     "poly": "XF-581/XF-583",
+     "etia": "E-8511/E-8531",
+     "brady": "B-416/B-497"
+    },
+    {
+     "series": "Environmental-Compliance Label",
+     "model": "RoHS/REACH Environmental Marking Label",
+     "seo": "High",
+     "poly": "XF-581/XF-583",
+     "etia": "E-8511/E-8531",
+     "brady": "B-416/B-497"
+    },
+    {
+     "series": "Certification Marking Label",
+     "model": "3C/CE Certification Marking Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2512",
+     "brady": "B-428"
+    }
+   ]
+  },
+  "Automotive & Tire Industry": {
+   "Tire Vulcanization & Rubber-Molding Process": [
+    {
+     "series": "Tire Vulcanization Label",
+     "model": "E-2313/E-2314 Tire Vulcanization Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2313/E-2314",
+     "brady": "B-5118"
+    }
+   ],
+   "Auto Parts Machining / Heat-Treatment": [
+    {
+     "series": "Engine Oil-Resistant PET Label",
+     "model": "Engine Oil-Resistant PET Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    },
+    {
+     "series": "Chassis Abrasion & Weather-Resistant Label",
+     "model": "Chassis Abrasion-Resistant Marking Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    },
+    {
+     "series": "Interior-Trim Matte-Silver PET Label",
+     "model": "Interior-Trim Matte-Silver PET Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-2522/E-2823",
+     "brady": "B-428"
+    }
+   ],
+   "NEV-Specific Identification": [
+    {
+     "series": "Power-Battery High-Temp Flame-Retardant Label",
+     "model": "Power-Battery High-Temp Flame-Retardant Label",
+     "seo": "Highest",
+     "poly": "XF-603",
+     "etia": "",
+     "brady": "B-8088A"
+    },
+    {
+     "series": "NEV HV Harness Flame-Retardant Label",
+     "model": "NEV HV Harness Flame-Retardant Label",
+     "seo": "High",
+     "poly": "XF-611",
+     "etia": "E-2931/E-2932",
+     "brady": "B-5109FR"
+    }
+   ],
+   "Wire Harness & Vehicle Assembly": [
+    {
+     "series": "Auto Wire-Harness UL Flame-Retardant Label",
+     "model": "Auto Wire-Harness UL Flame-Retardant Label",
+     "seo": "Highest",
+     "poly": "XF-611",
+     "etia": "E-2931/E-2932",
+     "brady": "B-5109FR"
+    },
+    {
+     "series": "VIN Tamper-Proof Laser Label",
+     "model": "VIN Tamper-Proof Laser Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2512BL",
+     "brady": "B-421"
+    },
+    {
+     "series": "Vehicle Safety Warning Label",
+     "model": "Vehicle Safety Warning Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    }
+   ],
+   "Automotive Compliance & Certification Marking": [
+    {
+     "series": "IATF 16949 Certification Marking Label",
+     "model": "IATF 16949 Certification Marking Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ]
+  },
+  "Steel & Metal Industry": {
+   "Steel Hot-Rolling / Cold-Rolling Process": [
+    {
+     "series": "Hot-Apply High-Temp Label",
+     "model": "600°C High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-600",
+     "brady": ""
+    },
+    {
+     "series": "Hot-Apply High-Temp Label",
+     "model": "800°C High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-700",
+     "brady": ""
+    },
+    {
+     "series": "Hot-Apply High-Temp Label",
+     "model": "1000°C High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-900",
+     "brady": ""
+    },
+    {
+     "series": "High-Temp Tag",
+     "model": "1000°C High-Temp Tag",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-L85",
+     "brady": ""
+    },
+    {
+     "series": "High-Temp Tag",
+     "model": "1300°C High-Temp Tag",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-L90",
+     "brady": ""
+    },
+    {
+     "series": "High-Temp Label",
+     "model": "Hot-Rolled Steel-Plate 600°C High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-360",
+     "brady": ""
+    },
+    {
+     "series": "Hot-Rolled Steel-Plate High-Temp Label",
+     "model": "Hot-Rolled Steel-Plate 800°C High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-805",
+     "brady": ""
+    }
+   ],
+   "Steel Heat-Treatment Process": [
+    {
+     "series": "Steel-Structure Heat-Treatment Tag",
+     "model": "Steel-Structure Heat-Treatment 300–800°C Tag",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "GH-G77",
+     "brady": ""
+    }
+   ],
+   "Steel Storage & Logistics Traceability": [
+    {
+     "series": "Steel Coil Abrasion-Resistant Label",
+     "model": "Steel Coil Abrasion-Resistant Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": ""
+    }
+   ]
+  },
+  "Medical Devices & IVD": {
+   "Medical Device Manufacturing & Marking": [
+    {
+     "series": "Medical-Grade PET Nameplate Label",
+     "model": "Medical-Grade PET Nameplate Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2522/E-2823",
+     "brady": "B-428"
+    },
+    {
+     "series": "UDI Unique Device Identification Label",
+     "model": "FDA-Recognized UDI Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2532",
+     "brady": "B-488"
+    },
+    {
+     "series": "Equipment Internal High-Temp Label",
+     "model": "Medical-Device Internal High-Temp Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ],
+   "In-Vitro Diagnostics (IVD) Process": [
+    {
+     "series": "Reagent-Bottle Low-Temp Label",
+     "model": "Reagent-Bottle −80°C Low-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-4813",
+     "brady": "B-7425"
+    }
+   ],
+   "Medical Device Sterilization & Packaging": [
+    {
+     "series": "Sterilization Indicator Label",
+     "model": "EtO Sterilization Indicator Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-5532",
+     "brady": "B-7430"
+    },
+    {
+     "series": "Sterile-Packaging PET Label",
+     "model": "Sterile-Packaging PET Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2532",
+     "brady": "B-488"
+    }
+   ]
+  },
+  "Pharma R&D & Production": {
+   "Pharma R&D Laboratory": [
+    {
+     "series": "Reagent-Bottle Liquid-Nitrogen Label",
+     "model": "Reagent-Bottle −196°C LN2 Label",
+     "seo": "Highest",
+     "poly": "XF-302",
+     "etia": "E-4812",
+     "brady": "B-7425"
+    },
+    {
+     "series": "Cryovial Low-Temp Label",
+     "model": "Cryovial Low-Temp Label",
+     "seo": "Highest",
+     "poly": "XF-302",
+     "etia": "E-4812/E-3635",
+     "brady": "B-7425"
+    },
+    {
+     "series": "Blood-Bag Sample Identification Label",
+     "model": "Blood-Bag Sample Identification Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-5532",
+     "brady": "B-7430"
+    },
+    {
+     "series": "Equipment Calibration Marking Label",
+     "model": "Equipment Calibration Marking Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-2532",
+     "brady": "B-488"
+    }
+   ],
+   "Pharma Production Process": [
+    {
+     "series": "Pharma Production-Batch PET Label",
+     "model": "Pharma Production-Batch PET Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2532",
+     "brady": "B-488"
+    },
+    {
+     "series": "API Acid/Alkali-Resistant Label",
+     "model": "API Acid/Alkali-Resistant Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2532",
+     "brady": "B-488"
+    }
+   ],
+   "Pharma Cold-Chain Storage & Logistics": [
+    {
+     "series": "Pharma Cold-Chain Low-Temp Label",
+     "model": "Pharma Cold-Chain −20°C Low-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-4533",
+     "brady": "B-7430"
+    },
+    {
+     "series": "Cold-Storage High-Humidity Low-Temp Label",
+     "model": "Cold-Storage High-Humidity Low-Temp Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-5532",
+     "brady": "B-7430"
+    },
+    {
+     "series": "Vaccine Refrigerated-Transport Marking",
+     "model": "Vaccine Refrigerated-Transport Marking",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-4813",
+     "brady": "B-7425"
+    }
+   ],
+   "Pharma Compliance & Traceability Marking": [
+    {
+     "series": "Pharma Serialization Code Label",
+     "model": "Pharma Serialization Code Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-4813",
+     "brady": "B-7425"
+    }
+   ]
+  },
+  "Outdoor Facilities & Photovoltaics": {
+   "PV Power-Plant Outdoor Weatherability": [
+    {
+     "series": "PV-Module Weatherproof PET Label",
+     "model": "PV-Module 25-Year Weatherproof PET Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    },
+    {
+     "series": "Inverter High-Temp Flame-Retardant Label",
+     "model": "Inverter High-Temp Flame-Retardant Label",
+     "seo": "High",
+     "poly": "XF-603",
+     "etia": "",
+     "brady": "B-8088A"
+    },
+    {
+     "series": "PV-Cable Weatherproof Flame-Retardant Label",
+     "model": "PV-Cable Weatherproof Flame-Retardant Label",
+     "seo": "High",
+     "poly": "XF-611",
+     "etia": "E-2931/E-2932",
+     "brady": "B-5109FR"
+    }
+   ],
+   "Outdoor Security & Municipal Facilities": [
+    {
+     "series": "Security-Camera UV & Weather-Resistant Label",
+     "model": "Security-Camera UV & Weather-Resistant Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    },
+    {
+     "series": "Municipal-Pipeline Weatherproof Label",
+     "model": "Municipal-Pipeline Weatherproof Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    },
+    {
+     "series": "Outdoor-Billboard Sun-Resistant PET Label",
+     "model": "Outdoor-Billboard Sun-Resistant PET Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ],
+   "Outdoor Equipment & Construction Machinery": [
+    {
+     "series": "Construction-Machinery Oil-Resistant PET Label",
+     "model": "Construction-Machinery Oil-Resistant PET Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    },
+    {
+     "series": "Generator-Set High-Temp & Weatherproof Label",
+     "model": "Generator-Set High-Temp & Weatherproof Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ],
+   "Outdoor Cable & Pipeline Marking": [
+    {
+     "series": "Power-Cable Weatherproof Flame-Retardant Label",
+     "model": "Power-Cable Weatherproof Flame-Retardant Label",
+     "seo": "High",
+     "poly": "XF-611",
+     "etia": "E-2931/E-2932",
+     "brady": "B-5109FR"
+    },
+    {
+     "series": "Pipe Medium-Flow-Direction Marking Label",
+     "model": "Pipe Medium-Flow-Direction Marking Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    },
+    {
+     "series": "Environmental-Monitor Weatherproof Label",
+     "model": "Environmental-Monitor Weatherproof Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    }
+   ]
+  },
+  "Telecom Cabling & Equipment Rooms": {
+   "Telecom Room Cabling Marking": [
+    {
+     "series": "Cabinet-Equipment PET Nameplate Label",
+     "model": "Cabinet-Equipment PET Nameplate Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2522/E-2823",
+     "brady": "B-428"
+    },
+    {
+     "series": "Switch-Port Weatherproof Label",
+     "model": "Switch-Port Weatherproof Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    },
+    {
+     "series": "Equipment-Room Cable Fold-Over Label",
+     "model": "Equipment-Room Cable Fold-Over Label",
+     "seo": "Highest",
+     "poly": "XF-611",
+     "etia": "E-2931/E-2932",
+     "brady": "B-5109FR"
+    }
+   ],
+   "Telecom Carrier Network Cabling": [
+    {
+     "series": "Telecom Optical-Cable Weatherproof Label",
+     "model": "Telecom Optical-Cable Weatherproof Label",
+     "seo": "Highest",
+     "poly": "XF-611",
+     "etia": "E-2931/E-2932",
+     "brady": "B-5109FR"
+    },
+    {
+     "series": "Base-Station UV & Weather-Resistant Label",
+     "model": "Base-Station UV & Weather-Resistant Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    },
+    {
+     "series": "Telecom-Duct Warning Label",
+     "model": "Telecom-Duct Warning Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    }
+   ],
+   "Data Center Infrastructure": [
+    {
+     "series": "Hot/Cold-Aisle Warning Label",
+     "model": "Hot/Cold-Aisle Warning Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    },
+    {
+     "series": "Precision-AC Equipment Marking",
+     "model": "Precision-AC Equipment Marking",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ],
+   "Telecom Equipment Compliance Certification": [
+    {
+     "series": "Telecom-Equipment CE/3C Certification Marking Label",
+     "model": "Telecom-Equipment CE/3C Certification Marking Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    },
+    {
+     "series": "Network-Access License Marking Label",
+     "model": "Network-Access License Marking Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    },
+    {
+     "series": "Safety Warning Label",
+     "model": "Safety Warning Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    }
+   ]
+  },
+  "Ceramics & Kilns": {
+   "Ceramic Kiln Ultra-High-Temp Process": [
+    {
+     "series": "Inorganic-Ceramic Kiln High-Temp Label",
+     "model": "Inorganic-Ceramic Kiln High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-CBR-CX1",
+     "brady": ""
+    },
+    {
+     "series": "Ceramic Green-Body High-Temp Marking Label",
+     "model": "Ceramic Green-Body High-Temp Marking Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "HP-CBR-CX2",
+     "brady": ""
+    },
+    {
+     "series": "Kiln-Equipment High-Temp & Abrasion Label",
+     "model": "Kiln-Equipment High-Temp & Abrasion Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ],
+   "Ceramic Sanitaryware Marking": [
+    {
+     "series": "Sanitaryware PET Nameplate Label",
+     "model": "Sanitaryware PET Nameplate Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2522/E-2823",
+     "brady": "B-428"
+    }
+   ],
+   "Ceramic Manufacturing Process Marking": [
+    {
+     "series": "Ceramic Forming Process Label",
+     "model": "Ceramic Forming Process Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "HP-CBR-CX11",
+     "brady": ""
+    },
+    {
+     "series": "Glazing Process Marking Label",
+     "model": "Glazing Process Marking Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "HP-CBR-CX14",
+     "brady": ""
+    }
+   ]
+  }
+ },
+ "solutions": {
+  "SMT Reflow & PCB Process Solutions": {
+   "SMT Pre-Solder Placement Process": [
+    {
+     "series": "Micro-Component High-Temp Label",
+     "model": "0201/0402 Micro-Component High-Temp Label",
+     "seo": "Highest",
+     "poly": "XF-581/XF-583",
+     "etia": "E-8511/E-8531",
+     "brady": "B-416/B-497"
+    },
+    {
+     "series": "IC Chip Packaging Label",
+     "model": "IC Chip Packaging Label",
+     "seo": "Highest",
+     "poly": "XF-101G/XF101M",
+     "etia": "E-8532TT",
+     "brady": "B-729"
+    },
+    {
+     "series": "SMT Stencil High-Temp Label",
+     "model": "SMT Stencil 280°C High-Temp Label",
+     "seo": "High",
+     "poly": "XF-101G/XF101M",
+     "etia": "E-8532TT",
+     "brady": "B-729"
+    }
+   ],
+   "Reflow / Wave-Soldering Process": [
+    {
+     "series": "PI High-Temp Label",
+     "model": "XF-531/532/533/581 Series PI High-Temp Label",
+     "seo": "Highest",
+     "poly": "XF-531/XF-533",
+     "etia": "E-8512/E-8532",
+     "brady": "B-416"
+    },
+    {
+     "series": "ESD Anti-Static PI Label",
+     "model": "ESD Anti-Static PI Label",
+     "seo": "Highest",
+     "poly": "XF-101SE/XF-102SE",
+     "etia": "XF-8711/XF-8732",
+     "brady": "B-768"
+    },
+    {
+     "series": "Wave-Solder Tin-Erosion-Resistant PI Label",
+     "model": "Wave-Solder Tin-Erosion-Resistant PI Label",
+     "seo": "High",
+     "poly": "XF-101G/XF101M",
+     "etia": "E-8532TT",
+     "brady": "B-729"
+    }
+   ],
+   "PCB Back-End Full Process": [
+    {
+     "series": "PCB-Wash Chemical-Resistant PI Label",
+     "model": "PCB-Wash Chemical-Resistant PI Label",
+     "seo": "Highest",
+     "poly": "XF-102G/XF102M",
+     "etia": "E-8512/E-8532",
+     "brady": "B-427/B-731"
+    },
+    {
+     "series": "PCB Lamination High-Temp Label",
+     "model": "PCB Lamination High-Temp Label",
+     "seo": "High",
+     "poly": "XF-581/XF-583",
+     "etia": "E-8511/E-8531",
+     "brady": "B-416/B-497"
+    },
+    {
+     "series": "PCB Plating Corrosion-Resistant Label",
+     "model": "PCB Plating Corrosion-Resistant Label",
+     "seo": "High",
+     "poly": "XF-101G/XF101M",
+     "etia": "E-8532TT",
+     "brady": "B-729"
+    },
+    {
+     "series": "PCB Finished-Goods Traceability Barcode Label",
+     "model": "PCB Finished-Goods Traceability Barcode Label",
+     "seo": "Highest",
+     "poly": "XF-581/XF-583",
+     "etia": "E-8511/E-8531",
+     "brady": "B-416/B-497"
+    }
+   ],
+   "Electronic & Final Assembly": [
+    {
+     "series": "Unit PET Nameplate Label",
+     "model": "Unit PET Nameplate Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2522/E-2823",
+     "brady": "B-428"
+    },
+    {
+     "series": "SN-Code Laser-Marked Label",
+     "model": "SN-Code Laser-Marked Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2512BL",
+     "brady": "B-421"
+    },
+    {
+     "series": "Structural-Part Traceability Marking Label",
+     "model": "Structural-Part Traceability Marking Label",
+     "seo": "High",
+     "poly": "XF-581/XF-583",
+     "etia": "E-8511/E-8531",
+     "brady": "B-416/B-497"
+    }
+   ],
+   "Test, QC & Shipping Traceability": [
+    {
+     "series": "Moisture-Proof ESD Packaging Label",
+     "model": "Moisture-Proof ESD Packaging Label",
+     "seo": "High",
+     "poly": "XF-101SE/XF-102SE",
+     "etia": "XF-8711/XF-8732",
+     "brady": "B-768"
+    }
+   ]
+  },
+  "Automotive End-to-End Identification Solutions": {
+   "Tire Vulcanization & Rubber Molding": [
+    {
+     "series": "Tire Vulcanization Label",
+     "model": "E-2313/E-2314 Tire Vulcanization Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2313/E-2314",
+     "brady": "B-5118"
+    }
+   ],
+   "Auto Parts Machining / Heat-Treatment": [
+    {
+     "series": "Engine Oil-Resistant PET Label",
+     "model": "Engine Oil-Resistant PET Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    },
+    {
+     "series": "Chassis Abrasion & Weather-Resistant Label",
+     "model": "Chassis Abrasion & Weather-Resistant Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    },
+    {
+     "series": "Interior-Trim Matte-Silver PET Label",
+     "model": "Interior-Trim Matte-Silver PET Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-2522/E-2823",
+     "brady": "B-428"
+    }
+   ],
+   "NEV Three-Electric System (Battery/Motor/ECU)": [
+    {
+     "series": "Power-Battery High-Temp Flame-Retardant Label",
+     "model": "Power-Battery High-Temp Flame-Retardant Label",
+     "seo": "Highest",
+     "poly": "XF-603",
+     "etia": "",
+     "brady": "B-8088A"
+    },
+    {
+     "series": "NEV HV Harness Flame-Retardant Label",
+     "model": "NEV HV Harness Flame-Retardant Label",
+     "seo": "High",
+     "poly": "XF-611",
+     "etia": "E-2931/E-2932",
+     "brady": "B-5109FR"
+    },
+    {
+     "series": "ECU High-Temp Label",
+     "model": "ECU High-Temp Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ],
+   "Vehicle Assembly & Harness Marking": [
+    {
+     "series": "Auto Wire-Harness UL Flame-Retardant Label",
+     "model": "Auto Wire-Harness UL Flame-Retardant Label",
+     "seo": "Highest",
+     "poly": "XF-611",
+     "etia": "E-2931/E-2932",
+     "brady": "B-5109FR"
+    },
+    {
+     "series": "VIN Tamper-Proof Laser Label",
+     "model": "VIN Tamper-Proof Laser Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2512BL",
+     "brady": "B-421"
+    },
+    {
+     "series": "Vehicle Safety Warning Label",
+     "model": "Vehicle Safety Warning Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    }
+   ]
+  },
+  "Steel High-Temp Heat-Treatment Solutions": {
+   "Steel Hot-Rolling / Cold-Rolling Process": [
+    {
+     "series": "Ceramic-Base High-Temp Label",
+     "model": "1200°C Ceramic-Base High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-CBR-CX1",
+     "brady": ""
+    },
+    {
+     "series": "Hot-Rolled Steel-Plate High-Temp Label",
+     "model": "Hot-Rolled Steel-Plate 600°C High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "",
+     "brady": ""
+    },
+    {
+     "series": "Hot-Apply High-Temp Label",
+     "model": "600°C High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-600",
+     "brady": ""
+    },
+    {
+     "series": "Hot-Apply High-Temp Label",
+     "model": "800°C High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-700",
+     "brady": ""
+    },
+    {
+     "series": "Hot-Apply High-Temp Label",
+     "model": "1000°C High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-900",
+     "brady": ""
+    },
+    {
+     "series": "High-Temp Tag",
+     "model": "1000°C High-Temp Tag",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-L85",
+     "brady": ""
+    },
+    {
+     "series": "High-Temp Tag",
+     "model": "1300°C High-Temp Tag",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-L90",
+     "brady": ""
+    },
+    {
+     "series": "High-Temp Label",
+     "model": "Hot-Rolled Steel-Plate 600°C High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-360",
+     "brady": ""
+    },
+    {
+     "series": "Hot-Rolled Steel-Plate High-Temp Label",
+     "model": "Hot-Rolled Steel-Plate 800°C High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-805",
+     "brady": ""
+    }
+   ],
+   "Steel Heat-Treatment Process": [
+    {
+     "series": "Steel-Structure Heat-Treatment Tag",
+     "model": "Steel-Structure Heat-Treatment 300–800°C Tag",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "GH-G77",
+     "brady": ""
+    }
+   ],
+   "Steel Storage & Logistics Traceability": [
+    {
+     "series": "Steel Coil Abrasion-Resistant Label",
+     "model": "Steel Coil Abrasion-Resistant Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ],
+   "Steel Heat-Treatment Full Process": [
+    {
+     "series": "Auto-Parts Heat-Treatment High-Temp Label",
+     "model": "Auto-Parts Heat-Treatment High-Temp Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ],
+   "Steel Storage, Logistics & Equipment": [
+    {
+     "series": "Steel Coil Abrasion-Resistant Label",
+     "model": "Steel Coil Abrasion-Resistant Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ]
+  },
+  "Medical & Pharmaceutical Compliance Solutions": {
+   "Medical Device Mfg & UDI Compliance": [
+    {
+     "series": "Medical-Grade PET Nameplate Label",
+     "model": "Medical-Grade PET Nameplate Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2522/E-2823",
+     "brady": "B-428"
+    },
+    {
+     "series": "UDI Unique Device Identification Label",
+     "model": "FDA-Recognized UDI Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2532",
+     "brady": "B-488"
+    },
+    {
+     "series": "Equipment Internal High-Temp Label",
+     "model": "Equipment Internal High-Temp Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2532",
+     "brady": "B-488"
+    }
+   ],
+   "In-Vitro Diagnostics (IVD) Process": [
+    {
+     "series": "Reagent-Bottle Low-Temp Label",
+     "model": "Reagent-Bottle −80°C Low-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-4813",
+     "brady": "B-7425"
+    }
+   ],
+   "Pharma R&D Laboratory": [
+    {
+     "series": "Reagent-Bottle Liquid-Nitrogen Label",
+     "model": "Reagent-Bottle −196°C LN2 Label",
+     "seo": "Highest",
+     "poly": "XF-302",
+     "etia": "E-4812/E-3635",
+     "brady": "B-7425"
+    },
+    {
+     "series": "Cryovial Low-Temp Label",
+     "model": "Cryovial Low-Temp Label",
+     "seo": "Highest",
+     "poly": "XF-302",
+     "etia": "E-4812/E-3635",
+     "brady": "B-7425"
+    },
+    {
+     "series": "Blood-Bag Sample Identification Label",
+     "model": "Blood-Bag Sample Identification Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-5532",
+     "brady": "B-7430"
+    }
+   ],
+   "Pharma Production & Cold-Chain Logistics": [
+    {
+     "series": "Pharma Production-Batch PET Label",
+     "model": "Pharma Production-Batch PET Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2532",
+     "brady": "B-488"
+    },
+    {
+     "series": "API Acid/Alkali-Resistant Label",
+     "model": "API Acid/Alkali-Resistant Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2532",
+     "brady": "B-488"
+    },
+    {
+     "series": "Pharma Cold-Chain Low-Temp Label",
+     "model": "Pharma Cold-Chain −20°C Low-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2532",
+     "brady": "B-488"
+    },
+    {
+     "series": "Cold-Storage High-Humidity Low-Temp Label",
+     "model": "Cold-Storage High-Humidity Low-Temp Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-4533",
+     "brady": "B-7430"
+    }
+   ],
+   "Sterilization & Compliance Certification": [
+    {
+     "series": "Sterilization Indicator Label",
+     "model": "EtO Sterilization Indicator Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-5532",
+     "brady": "B-7430"
+    },
+    {
+     "series": "ISO 13485 Certification Marking Label",
+     "model": "ISO 13485 Certification Marking Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-4813",
+     "brady": "B-7425"
+    },
+    {
+     "series": "GMP Certification Marking Label",
+     "model": "GMP Certification Marking Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-4813",
+     "brady": "B-7425"
+    },
+    {
+     "series": "Pharma Track-and-Trace Code Label",
+     "model": "Pharma Serialization Code Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ]
+  },
+  "Outdoor PV & Weatherproof Marking Solutions": {
+   "PV Power-Plant Full-Flow Marking": [
+    {
+     "series": "PV-Module Weatherproof PET Label",
+     "model": "PV-Module 25-Year Weatherproof PET Label",
+     "seo": "Highest",
+     "poly": "XF-603",
+     "etia": "",
+     "brady": "B-8088A"
+    },
+    {
+     "series": "Inverter High-Temp Flame-Retardant Label",
+     "model": "Inverter High-Temp Flame-Retardant Label",
+     "seo": "High",
+     "poly": "XF-611",
+     "etia": "E-2931/E-2932",
+     "brady": "B-5109FR"
+    },
+    {
+     "series": "PV-Cable Weatherproof Flame-Retardant Label",
+     "model": "PV-Cable Weatherproof Flame-Retardant Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    }
+   ],
+   "Outdoor Equipment & Construction Machinery": [
+    {
+     "series": "Construction-Machinery Oil-Resistant PET Label",
+     "model": "Construction-Machinery Oil-Resistant PET Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    },
+    {
+     "series": "Generator-Set High-Temp & Weatherproof Label",
+     "model": "Generator-Set High-Temp & Weatherproof Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    },
+    {
+     "series": "Security-Camera UV & Weather-Resistant Label",
+     "model": "Security-Camera UV & Weather-Resistant Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    }
+   ],
+   "Outdoor Cable & Pipeline Marking": [
+    {
+     "series": "Power-Cable Weatherproof Flame-Retardant Label",
+     "model": "Power-Cable Weatherproof Flame-Retardant Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    },
+    {
+     "series": "Pipe Medium-Flow-Direction Marking Label",
+     "model": "Pipe Medium-Flow-Direction Marking Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    },
+    {
+     "series": "Municipal-Pipeline Weatherproof Label",
+     "model": "Municipal-Pipeline Weatherproof Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    }
+   ],
+   "Outdoor Equipment Anti-Theft / Tamper-Proof": [
+    {
+     "series": "Outdoor-Billboard Sun-Resistant PET Label",
+     "model": "Outdoor-Billboard Sun-Resistant PET Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ]
+  },
+  "Telecom Room & Data Center Solutions": {
+   "Equipment-Room Cabling Full-Flow Marking": [
+    {
+     "series": "Cabinet-Equipment PET Nameplate Label",
+     "model": "Cabinet-Equipment PET Nameplate Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    },
+    {
+     "series": "Switch-Port Weatherproof Label",
+     "model": "Switch-Port Weatherproof Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    },
+    {
+     "series": "Equipment-Room Cable Fold-Over Label",
+     "model": "Equipment-Room Cable Fold-Over Label",
+     "seo": "Highest",
+     "poly": "XF-611",
+     "etia": "E-2931/E-2932",
+     "brady": "B-5109FR"
+    }
+   ],
+   "Telecom Carrier Network": [
+    {
+     "series": "Telecom Optical-Cable Weatherproof Label",
+     "model": "Telecom Optical-Cable Weatherproof Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    },
+    {
+     "series": "Base-Station UV & Weather-Resistant Label",
+     "model": "Base-Station UV & Weather-Resistant Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    },
+    {
+     "series": "Telecom-Duct Warning Label",
+     "model": "Telecom-Duct Warning Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    }
+   ],
+   "Data Center Infrastructure": [
+    {
+     "series": "Hot/Cold-Aisle Warning Label",
+     "model": "Hot/Cold-Aisle Warning Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-6534",
+     "brady": "B-8541 B-595"
+    },
+    {
+     "series": "Precision-AC Equipment Marking",
+     "model": "Precision-AC Equipment Marking",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ],
+   "Telecom Equipment Compliance Certification": [
+    {
+     "series": "Telecom-Equipment CE/3C Certification Marking Label",
+     "model": "Telecom-Equipment CE/3C Certification Marking Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2522/E-2823",
+     "brady": "B-428"
+    }
+   ]
+  },
+  "Ceramic Kiln Ultra-High-Temp Solutions": {
+   "Ceramic Kiln Firing Process": [
+    {
+     "series": "Inorganic-Ceramic Kiln High-Temp Label",
+     "model": "Inorganic-Ceramic Kiln High-Temp Label",
+     "seo": "Highest",
+     "poly": "",
+     "etia": "HP-CBR-CX1",
+     "brady": ""
+    },
+    {
+     "series": "Ceramic Green-Body High-Temp Marking Label",
+     "model": "Ceramic Green-Body High-Temp Marking Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "HP-CBR-CX2",
+     "brady": ""
+    },
+    {
+     "series": "Kiln-Equipment High-Temp & Abrasion Label",
+     "model": "Kiln-Equipment High-Temp & Abrasion Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "E-2813",
+     "brady": "B-489"
+    }
+   ],
+   "Ceramic Sanitaryware Marking": [
+    {
+     "series": "Sanitaryware PET Nameplate Label",
+     "model": "Sanitaryware PET Nameplate Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "E-2522/E-2823",
+     "brady": "B-428"
+    }
+   ],
+   "Ceramic Manufacturing Full-Flow Marking": [
+    {
+     "series": "Ceramic Forming Process Label",
+     "model": "Ceramic Forming Process Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "HP-CBR-CX11",
+     "brady": ""
+    },
+    {
+     "series": "Glazing Process Marking Label",
+     "model": "Glazing Process Marking Label",
+     "seo": "Medium",
+     "poly": "",
+     "etia": "HP-CBR-CX14",
+     "brady": ""
+    }
+   ]
+  },
+  "ESD Anti-Static & Compliance Solutions": {
+   "Electronics ESD Protection": [
+    {
+     "series": "ESD Anti-Static Warning Label",
+     "model": "ESD Anti-Static Warning Label",
+     "seo": "Highest",
+     "poly": "XF-101SE/XF-102SE",
+     "etia": "XF-8711/XF-8732",
+     "brady": "B-768"
+    },
+    {
+     "series": "PCB Anti-Static Protection Label",
+     "model": "PCB Anti-Static Protection Label",
+     "seo": "Highest",
+     "poly": "XF-101SE/XF-102SE",
+     "etia": "XF-8711/XF-8732",
+     "brady": "B-768"
+    },
+    {
+     "series": "Component ESD Packaging Label",
+     "model": "Component ESD Packaging Label",
+     "seo": "High",
+     "poly": "XF-101SE/XF-102SE",
+     "etia": "XF-8711/XF-8732",
+     "brady": "B-768"
+    },
+    {
+     "series": "ESD Tote-Box Identification Label",
+     "model": "ESD Tote-Box Identification Label",
+     "seo": "High",
+     "poly": "XF-101SE/XF-102SE",
+     "etia": "XF-8711/XF-8732",
+     "brady": "B-768"
+    }
+   ],
+   "Cross-Industry Compliance & Certification Marking": [
+    {
+     "series": "UL94 Flame-Retardant Marking Label",
+     "model": "UL94 Flame-Retardant Marking Label",
+     "seo": "Highest",
+     "poly": "XF-611",
+     "etia": "E-2931/E-2932",
+     "brady": "B-5109FR"
+    },
+    {
+     "series": "RoHS/REACH Environmental Label",
+     "model": "RoHS/REACH Environmental Label",
+     "seo": "High",
+     "poly": "",
+     "etia": "",
+     "brady": ""
+    }
+   ]
+  }
+ },
+ "materials": {
+  "Polyimide (PI) — High-Temp & Chemical-Resistant": [
+   {
+    "detail": "PI High-Temp Label",
+    "model": "XF-531/532/533/581 Series PI High-Temp Label",
+    "seo": "Highest",
+    "poly": "XF-581/XF-583",
+    "etia": "E-8511/E-8531",
+    "brady": "B-416/B-497"
+   },
+   {
+    "detail": "PCB-Wash Chemical-Resistant PI Label",
+    "model": "PCB-Wash Chemical-Resistant PI Label",
+    "seo": "Highest",
+    "poly": "XF-101G/XF101M",
+    "etia": "E-8532TT",
+    "brady": "B-729"
+   },
+   {
+    "detail": "IC Chip Packaging High-Temp PI Label",
+    "model": "IC Chip Packaging High-Temp PI Label",
+    "seo": "High",
+    "poly": "XF-101G/XF101M",
+    "etia": "E-8532TT",
+    "brady": "B-729"
+   }
+  ],
+  "Polyimide (PI) — ESD Static-Dissipative": [
+   {
+    "detail": "ESD Anti-Static PI Label",
+    "model": "ESD Anti-Static PI Label",
+    "seo": "Highest",
+    "poly": "XF-101SE/XF-102SE",
+    "etia": "XF-8711/XF-8732",
+    "brady": "B-768"
+   },
+   {
+    "detail": "SMT Anti-Static High-Temp Label",
+    "model": "SMT Anti-Static High-Temp Label",
+    "seo": "Highest",
+    "poly": "XF-101SE/XF-102SE",
+    "etia": "XF-8711/XF-8732",
+    "brady": "B-768"
+   },
+   {
+    "detail": "PCB Anti-Static Protection Label",
+    "model": "PCB Anti-Static Protection Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-2712",
+    "brady": "B-473"
+   }
+  ],
+  "Polyester (PET) — Abrasion & Weather Resistant": [
+   {
+    "detail": "Unit PET Nameplate Label",
+    "model": "Unit PET Nameplate Label",
+    "seo": "Highest",
+    "poly": "",
+    "etia": "E-2813",
+    "brady": "B-489"
+   },
+   {
+    "detail": "Outer-Carton Logistics Abrasion-Resistant PET Label",
+    "model": "Outer-Carton Logistics Abrasion-Resistant PET Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-2813",
+    "brady": "B-489"
+   },
+   {
+    "detail": "Construction-Machinery Oil-Resistant PET Label",
+    "model": "Construction-Machinery Oil-Resistant PET Label",
+    "seo": "Highest",
+    "poly": "",
+    "etia": "E-2813",
+    "brady": "B-489"
+   },
+   {
+    "detail": "PV-Module 25-Year Weatherproof PET Label",
+    "model": "PV-Module 25-Year Weatherproof PET Label",
+    "seo": "Highest",
+    "poly": "",
+    "etia": "E-2813",
+    "brady": "B-489"
+   }
+  ],
+  "Polyester (PET) — Chemical & Solvent Resistant": [
+   {
+    "detail": "Reagent-Bottle −80°C Low-Temp Label",
+    "model": "Reagent-Bottle −80°C Low-Temp Label",
+    "seo": "Highest",
+    "poly": "",
+    "etia": "E-2532",
+    "brady": "B-488"
+   },
+   {
+    "detail": "Test-Card PET Label",
+    "model": "Test-Card PET Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-2813",
+    "brady": "B-489"
+   },
+   {
+    "detail": "Lab Reagent-Bottle Chemical-Resistant Label",
+    "model": "Lab Reagent-Bottle Chemical-Resistant Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-2532",
+    "brady": "B-488"
+   }
+  ],
+  "Polyester (PET) — UL-Certified Flame-Retardant": [
+   {
+    "detail": "UL Flame-Retardant PET Label",
+    "model": "UL Flame-Retardant PET Label",
+    "seo": "High",
+    "poly": "XF-611",
+    "etia": "E-2931/E-2932",
+    "brady": "B-5109FR"
+   },
+   {
+    "detail": "Auto Wire-Harness UL Flame-Retardant Label",
+    "model": "Auto Wire-Harness UL Flame-Retardant Label",
+    "seo": "High",
+    "poly": "XF-611",
+    "etia": "E-2931/E-2932",
+    "brady": "B-5109FR"
+   },
+   {
+    "detail": "NEV HV Harness Flame-Retardant Label",
+    "model": "NEV HV Harness Flame-Retardant Label",
+    "seo": "High",
+    "poly": "XF-611",
+    "etia": "E-2931/E-2932",
+    "brady": "B-5109FR"
+   }
+  ],
+  "Polyester (PET) — Matte-Silver / Bright-White": [
+   {
+    "detail": "Interior-Trim Matte-Silver PET Label",
+    "model": "Interior-Trim Matte-Silver PET Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-2522/E-2823",
+    "brady": "B-428"
+   },
+   {
+    "detail": "Brand-Logo Bright-White PET Label",
+    "model": "Brand-Logo Bright-White PET Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-2813",
+    "brady": "B-489"
+   },
+   {
+    "detail": "Sanitaryware PET Nameplate Label",
+    "model": "Sanitaryware PET Nameplate Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-2813",
+    "brady": "B-489"
+   }
+  ],
+  "Ceramic & Metal High-Temp — Ultra-High-Temp Endurance": [
+   {
+    "detail": "Ceramic-Base High-Temp Label",
+    "model": "1200°C Ceramic-Base High-Temp Label",
+    "seo": "Highest",
+    "poly": "",
+    "etia": "HP-CBR-CX1",
+    "brady": ""
+   },
+   {
+    "detail": "Steel-Structure Heat-Treatment Tag",
+    "model": "Steel-Structure Heat-Treatment 300–800°C Tag",
+    "seo": "Highest",
+    "poly": "",
+    "etia": "GH-G77",
+    "brady": ""
+   },
+   {
+    "detail": "Metallurgy-Equipment High-Temp & Abrasion Label",
+    "model": "Metallurgy-Equipment High-Temp & Abrasion Label",
+    "seo": "Medium",
+    "poly": "",
+    "etia": "E-2813",
+    "brady": ""
+   }
+  ],
+  "Ceramic & Metal High-Temp — Chemical-Corrosion Resistant": [
+   {
+    "detail": "Cold-Rolled Steel-Plate Acid/Alkali-Resistant PVC Label",
+    "model": "Cold-Rolled Steel-Plate Acid/Alkali-Resistant PVC Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-6534",
+    "brady": "B-8541 B-595"
+   },
+   {
+    "detail": "Plating-Bath Acid/Alkali-Resistant PVC Label",
+    "model": "Plating-Bath Acid/Alkali-Resistant PVC Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-6534",
+    "brady": "B-8541 B-595"
+   },
+   {
+    "detail": "Chemical-Pipeline Acid/Alkali & Weather-Resistant Label",
+    "model": "Chemical-Pipeline Acid/Alkali & Weather-Resistant Label",
+    "seo": "Medium",
+    "poly": "",
+    "etia": "E-6534",
+    "brady": "B-8541 B-595"
+   }
+  ],
+  "Ceramic & Metal High-Temp — Metallic Finish & Abrasion": [
+   {
+    "detail": "Metallized PET Nameplate Label",
+    "model": "Metallized PET Nameplate Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-2522/E-2823",
+    "brady": "B-428"
+   },
+   {
+    "detail": "Equipment Metal Nameplate Label",
+    "model": "Equipment Metal Nameplate Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-2522/E-2823",
+    "brady": "B-428"
+   },
+   {
+    "detail": "Aluminum-Foil Metal Label",
+    "model": "Aluminum-Foil Metal Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "HP-360",
+    "brady": ""
+   }
+  ],
+  "Low-Temp Weatherable Specialty — Cryogenic & Flexible": [
+   {
+    "detail": "Reagent-Bottle −196°C LN2 Label",
+    "model": "Reagent-Bottle −196°C LN2 Label",
+    "seo": "Highest",
+    "poly": "XF-302",
+    "etia": "E-4812/E-3635",
+    "brady": "B-7425"
+   },
+   {
+    "detail": "Cryovial Low-Temp Label",
+    "model": "Cryovial Low-Temp Label",
+    "seo": "Highest",
+    "poly": "XF-302",
+    "etia": "E-4812/E-3635",
+    "brady": "B-7425"
+   },
+   {
+    "detail": "Pharma Cold-Chain −20°C Low-Temp Label",
+    "model": "Pharma Cold-Chain −20°C Low-Temp Label",
+    "seo": "Highest",
+    "poly": "",
+    "etia": "E-4533",
+    "brady": "B-7430"
+   }
+  ],
+  "Low-Temp Weatherable Specialty — Outdoor UV-Resistant": [
+   {
+    "detail": "Outdoor Weatherproof PET/PVC Label",
+    "model": "Outdoor Weatherproof PET/PVC Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-2813/E-6534",
+    "brady": "B-489"
+   },
+   {
+    "detail": "Security-Camera UV & Weather-Resistant Label",
+    "model": "Security-Camera UV & Weather-Resistant Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-6534",
+    "brady": "B-8541 B-595"
+   },
+   {
+    "detail": "Power-Cable Weatherproof Flame-Retardant Label",
+    "model": "Power-Cable Weatherproof Flame-Retardant Label",
+    "seo": "High",
+    "poly": "XF-611",
+    "etia": "E-2931/E-2932",
+    "brady": "B-5109FR"
+   }
+  ],
+  "Low-Temp Weatherable Specialty — Water/Oil/Moisture-Proof": [
+   {
+    "detail": "Moisture-Proof Warning Label",
+    "model": "Moisture-Proof Warning Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-2813/E-6534",
+    "brady": "B-489"
+   },
+   {
+    "detail": "Water/Oil-Proof PVC Label",
+    "model": "Water/Oil-Proof PVC Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-6534",
+    "brady": "B-8541 B-595"
+   },
+   {
+    "detail": "Outdoor-Equipment Waterproof Marking Label",
+    "model": "Outdoor-Equipment Waterproof Marking Label",
+    "seo": "Medium",
+    "poly": "",
+    "etia": "E-6534",
+    "brady": "B-8541 B-595"
+   }
+  ],
+  "Flame-Retardant & ESD Functional — UL Flame-Retardant": [
+   {
+    "detail": "UL94 V-0 Flame-Retardant PET Label",
+    "model": "UL94 V-0 Flame-Retardant PET Label",
+    "seo": "Highest",
+    "poly": "XF-611",
+    "etia": "E-2931/E-2932",
+    "brady": "B-5109FR"
+   },
+   {
+    "detail": "Electronic-Equipment Flame-Retardant Marking Label",
+    "model": "Electronic-Equipment Flame-Retardant Marking Label",
+    "seo": "High",
+    "poly": "XF-611",
+    "etia": "E-2931/E-2932",
+    "brady": "B-5109FR"
+   }
+  ],
+  "Flame-Retardant & ESD Functional — ESD Anti-Static": [
+   {
+    "detail": "ESD Anti-Static Warning Label",
+    "model": "ESD Anti-Static Warning Label",
+    "seo": "Highest",
+    "poly": "XF-101SE/XF-102SE",
+    "etia": "XF-8711/XF-8732",
+    "brady": "B-768"
+   },
+   {
+    "detail": "ESD Tote-Box Identification Label",
+    "model": "ESD Tote-Box Identification Label",
+    "seo": "High",
+    "poly": "XF-101SE/XF-102SE",
+    "etia": "XF-8711/XF-8732",
+    "brady": "B-768"
+   },
+   {
+    "detail": "ESD Packaging Label",
+    "model": "ESD Packaging Label",
+    "seo": "High",
+    "poly": "XF-101SE/XF-102SE",
+    "etia": "XF-8711/XF-8732",
+    "brady": "B-768"
+   }
+  ],
+  "Synthetic Paper & Specialty — Tear-Resistant & Tough": [
+   {
+    "detail": "Chemical-Equipment Synthetic-Paper Tear-Resistant Label",
+    "model": "Chemical-Equipment Synthetic-Paper Tear-Resistant Label",
+    "seo": "High",
+    "poly": "XF-603",
+    "etia": "",
+    "brady": "B-8088A"
+   },
+   {
+    "detail": "Logistics-Carton BOPP Laminated Label",
+    "model": "Logistics-Carton BOPP Laminated Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-4533",
+    "brady": "B-7430"
+   }
+  ],
+  "Synthetic Paper & Specialty — Chemical-Corrosion Resistant": [
+   {
+    "detail": "PP Synthetic-Paper Corrosion-Resistant Label",
+    "model": "PP Synthetic-Paper Corrosion-Resistant Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-4813",
+    "brady": "B-7425"
+   },
+   {
+    "detail": "Lab Reagent-Bottle Synthetic-Paper Label",
+    "model": "Lab Reagent-Bottle Synthetic-Paper Label",
+    "seo": "High",
+    "poly": "",
+    "etia": "E-4813",
+    "brady": "B-7425"
+   }
+  ],
+  "Synthetic Paper & Specialty — Special-Function": [
+   {
+    "detail": "Removable No-Residue Label",
+    "model": "Removable No-Residue Label",
+    "seo": "Medium",
+    "poly": "",
+    "etia": "E-4633",
+    "brady": "B449"
+   }
+  ]
+ }
+}
