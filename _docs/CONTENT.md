@@ -15,25 +15,32 @@ Status legend: 🔒 LOCKED (client-approved copy) · ✏️ draft · ⬜ not sta
 ### Hero
 - **Eyebrow:** DURABLE IDENTIFICATION & SPECIALTY LABEL MATERIALS
 - **Headline:** Where Materials Meet Applications.
-- **Para 1:** For more than 20 years, ETIA has helped manufacturers solve demanding identification challenges through specialty material expertise, selected global brands, in-house development, and flexible small-batch supply.
-- **Para 2:** We match label materials and constructions to the real application — from high-temperature manufacturing and cryogenic storage to chemical exposure, oily surfaces, precision electronics, and long-term outdoor use.
-- **Buttons:** [Explore Label Solutions] · [Request Samples]
+- **Body (short — current):** Specialty label materials and application support for demanding manufacturing environments.
+- **Buttons:** [Explore Applications] · [Request Samples]
+- **Hero image:** NOT a plain roll/product shot. An industrial *application* mosaic — Electronics · Steel · Laboratory · Automotive · Cryogenic · Outdoor equipment. Minimal text; only a few small floating tags: High Temperature · Chemical Resistant · Cryogenic · Outdoor Durable.
 
-### Why ETIA
-- **Heading:** Every Durable Label Begins with Understanding the Application.
-- We do not believe one material fits every surface, process, or environment.
-- Before recommending a label, we consider what it must accomplish throughout its full lifecycle: where it will be applied, what temperatures and chemicals it will face, how it will be printed, how small the barcode must be, and how long the identification must remain readable.
-- ETIA combines global specialty materials, application knowledge, in-house development, testing support, custom converting, and flexible supply to help customers move from a complex requirement to a production-ready solution.
+### Quick Proof Bar (4 numbers; desktop 1×4, mobile 2×2)
+- **20+** Years of Experience
+- **1,000+** Material Options
+- **9** Global Material Brands
+- **4** Regional Locations
 
-**Four pillars:**
-1. **Specialty Material Expertise** — We understand how face stocks, adhesives, coatings, and print systems perform under real manufacturing and laboratory conditions.
-2. **Global Brands and In-House Development** — We bring together specialized materials from leading international brands with ETIA-developed constructions for requirements such as oily surfaces, difficult substrates, and demanding industrial processes.
-3. **Built for Specialized Demand** — We support applications that are often too complex, too varied, or too small for conventional high-volume suppliers.
-4. **From Sample to Long-Term Supply** — From material selection and application testing to slitting, die-cutting, small-batch production, and ongoing supply, ETIA stays involved where our expertise makes a difference.
+### Why ETIA (refined — supersedes the earlier 4 pillars)
+- **Eyebrow:** WHY ETIA
+- **Heading:** Built around your application.
+- **Intro:** We study the surface, process, temperature, chemicals, printing method, and product lifecycle before recommending a material.
+- Four big-number verbs (no complex icons):
+  1. **We Understand** — We start with your application and operating conditions.
+  2. **We Source** — Specialty materials from trusted global suppliers.
+  3. **We Develop** — Flexible constructions for specialized requirements.
+  4. **We Support** — From samples and testing to repeat supply.
 
-**Closing line:**
-> We do more than supply label materials.
-> We understand what your labels need to accomplish.
+### Service Commitment (light-green/grey background; 4 icon cards)
+- **Eyebrow:** OUR SERVICE COMMITMENT · **Heading:** Reliable quality. Practical support.
+  1. 🧪 **100% Quality Testing** — Incoming materials and finished products are inspected through our quality-control process.
+  2. ⚙️ **Application-Driven Solutions** — Materials are recommended around real process requirements.
+  3. 📦 **Flexible Supply** — Samples, small batches, custom converting, and repeat supply.
+  4. 🤝 **Long-Term Support** — Support from material selection through ongoing production.
 
 ### 中文版
 - **眉题:** 耐久标识与特种标签材料
@@ -77,9 +84,12 @@ Not on the homepage. Customer logos/stories will live under **Insights › Case 
 > 告诉我们您的应用，我们为您匹配材料。
 - Button → Contact / Request Samples.
 
-### HOME final section order (LOCKED)
-Hero → Why ETIA (4 pillars + closing line) → What We Can Offer → Partner Brands → Contact CTA.
-(Customers removed from Home → future Insights › Case Studies.)
+### HOME final section order (LOCKED — refined)
+Hero → Quick Proof Bar → Why ETIA (Understand/Source/Develop/Support) → Service Commitment →
+Partner Brands → Contact CTA.
+- "What We Can Offer" is SUPERSEDED by Why ETIA + Service Commitment (kept out unless client re-adds).
+- Customers removed from Home → future Insights › Case Studies.
+- OPEN: which are the "9 Global Material Brands"? (5 named so far + 4 more.)
 
 ### Assets
 - Logo (clean permanent URL): https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/IMAGE/logo/ETIALOGO.jpg
