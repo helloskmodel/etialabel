@@ -8,6 +8,11 @@ are kept general on the homepage (named in depth on Company / Products).
 
 Status legend: 🔒 LOCKED (client-approved copy) · ✏️ draft · ⬜ not started
 
+**Global design rules (site-wide):**
+- **All CTA buttons = brand blue** `#1A56DB` (hover deep blue `#143C96`). Green is logo/accent only — not buttons.
+- **Footer = white background**, dark text, thin top border. Include **Privacy Policy** (+ Terms) links → build `/privacy/`.
+- White Hönle/Computype-style header; serif display headlines (real webfont on live site); real photography over placeholders.
+
 ---
 
 ## 1. HOME 🔒  (client-provided EN + ZH)
