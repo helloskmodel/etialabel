@@ -25,17 +25,18 @@ Status legend: 🔒 LOCKED (client-approved copy) · ✏️ draft · ⬜ not sta
 - **Buttons:** [Explore Applications] · [Request Samples]
 - **Hero image:** NOT a plain roll/product shot. An industrial *application* mosaic — Electronics · Steel · Laboratory · Automotive · Cryogenic · Outdoor equipment. Minimal text; only a few small floating tags: High Temperature · Chemical Resistant · Cryogenic · Outdoor Durable.
 
-### Proof numbers — WOVEN INTO the Why ETIA verbs (no stat row) 🔒
-Each verb leads with its number:
+### Why ETIA — emphasize the "We" verbs (numbers stay in prose only, small 01–04 index) 🔒
+Big serif "We Understand / We Source / We Develop / We Support" is the focus, NOT the numbers.
+Numbers appear inside each sentence:
 - **20+** · We Understand — With 20+ years of experience, we understand demanding applications and the operating conditions behind them.
 - **9** · We Source — We provide access to specialty materials from 9 trusted global material brands.
 - **1,000+** · We Develop — With 1,000+ material options, we support specialized requirements with flexible material constructions.
 - **4** · We Support — Through 4 regional locations, we provide samples, testing support, flexible supply, and repeat delivery.
 Heading: **Built Around Your Application.** Intro: We study the surface, process, temperature, chemicals, printing method, and product lifecycle before recommending a material.
 
-### Hero image = STATIC application mosaic (静态)
-A single industrial-application collage — 6 tiles: Electronics & PCB · Steel & Metal · Laboratory ·
-Automotive · Cryogenic · Outdoor + floating capability tags. No animation. Placeholder tints now → real photos later.
+### Hero image = STATIC single image frame + floating value cards (clean, ETIA-TECH style)
+One large image (real application photo later) in a neutral rounded frame, with 2–3 floating white
+cards: High-Temperature / Cryogenic & Chemical / Outdoor Durable. No rainbow tiles, no animation.
 
 ### Why ETIA (refined — supersedes the earlier 4 pillars)
 - **Eyebrow:** WHY ETIA
@@ -96,7 +97,7 @@ Not on the homepage. Customer logos/stories will live under **Insights › Case 
 ### HOME final section order (LOCKED — refined)
 Hero (static mosaic) → **Service Bar (blue ✓)** → Why ETIA (intro + proof stats + Understand/Source/Develop/Support) →
 **What We Offer** (3 cards → Products/Applications/Support) → Partner Brands → Contact CTA (blue card).
-- "What We Offer" restored (client asked): Specialty Label Materials · Application Engineering & Sampling · Custom Converting & Supply — each routes into the catalog.
+- "What We Offer" restored (client asked): Specialty Label Materials · Application Engineering & Sampling · Custom Converting & Supply — **each with a line icon**, routing into the catalog.
 - Mid-page service-card section stays superseded (now the blue service bar under hero).
 - Customers removed from Home → future Insights › Case Studies.
 - OPEN: which are the "9 Global Material Brands"? (5 named so far + 4 more.)
