@@ -8,10 +8,11 @@ are kept general on the homepage (named in depth on Company / Products).
 
 Status legend: 🔒 LOCKED (client-approved copy) · ✏️ draft · ⬜ not started
 
-**Global design rules (site-wide):**
-- **All CTA buttons = brand blue** `#1A56DB` (hover deep blue `#143C96`). Green is logo/accent only — not buttons.
-- **Footer = white background**, dark text, thin top border. Include **Privacy Policy** (+ Terms) links → build `/privacy/`.
-- White Hönle/Computype-style header; serif display headlines (real webfont on live site); real photography over placeholders.
+**Global design rules (site-wide) — aligned to the ETIA-TECH sister site (etiatech.com):**
+- **Buttons = green** `#41A62A` (hover `#358B22`); secondary = ghost/outline. **CTA *blocks* = brand-blue card** `#1A56DB→#143C96` with white text + green primary button + ghost secondary + a green ⚡ accent. ("CTA 用品牌蓝" = the CTA block/card is blue, not the button.)
+- **Logo:** green `◄ETIA` + blue `·LABEL` wordmark (echoes ETIA-TECH's green-arrow mark); swap to real transparent logo when supplied.
+- **Footer = light grey** `#f3f5f8`, **blue column headings**, grey links, **green email**. Columns: **Navigation · Legal · Contact**. Legal = Privacy Policy / Cookie Policy / Terms of Use / Cookie Settings. Bottom bar: © 2026 ETIA-TECH (ASIA) Co., Limited + Privacy / Cookies.
+- White header; serif display headlines (real webfont on live site); real photography over placeholders.
 
 ---
 
