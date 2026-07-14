@@ -91,8 +91,9 @@ Not on the homepage. Customer logos/stories will live under **Insights › Case 
 
 ### HOME final section order (LOCKED — refined)
 Hero (animated carousel) → **Service Bar (blue ✓)** → Why ETIA (intro + proof stats + Understand/Source/Develop/Support) →
-Partner Brands → Contact CTA (blue card).
-- "What We Can Offer" and the mid-page Service-card section are SUPERSEDED (kept out unless client re-adds).
+**What We Offer** (3 cards → Products/Applications/Support) → Partner Brands → Contact CTA (blue card).
+- "What We Offer" restored (client asked): Specialty Label Materials · Application Engineering & Sampling · Custom Converting & Supply — each routes into the catalog.
+- Mid-page service-card section stays superseded (now the blue service bar under hero).
 - Customers removed from Home → future Insights › Case Studies.
 - OPEN: which are the "9 Global Material Brands"? (5 named so far + 4 more.)
 
