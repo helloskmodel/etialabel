@@ -69,10 +69,8 @@ Status legend: 🔒 LOCKED (client-approved copy) · ✏️ draft · ⬜ not sta
 - Logo wall: Polyonics · YS-Tech · FlexCon · Computype · ETIA
 - Logos: placeholder now → real logos (COS URLs) later.
 
-### Customers 🔒 (heading: "Trusted by Manufacturers")
-> From precision electronics to steel, medical, pharma and outdoor energy, manufacturers rely on ETIA for identification that lasts.
-> 从精密电子到钢铁、医疗、制药与户外能源，众多制造企业选择 ETIA 提供持久可靠的标识方案。
-- Logo wall: PLACEHOLDER tiles now → real customer logos (client to send, next day).
+### Customers — MOVED OFF HOME
+Not on the homepage. Customer logos/stories will live under **Insights › Case Studies** (future).
 
 ### Closing Contact CTA 🔒
 > Tell us your application. We'll match the material.
@@ -80,7 +78,8 @@ Status legend: 🔒 LOCKED (client-approved copy) · ✏️ draft · ⬜ not sta
 - Button → Contact / Request Samples.
 
 ### HOME final section order (LOCKED)
-Hero → Why ETIA (4 pillars + closing line) → What We Can Offer → Partner Brands → Customers → Contact CTA.
+Hero → Why ETIA (4 pillars + closing line) → What We Can Offer → Partner Brands → Contact CTA.
+(Customers removed from Home → future Insights › Case Studies.)
 
 ### Assets
 - Logo (clean permanent URL): https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/IMAGE/logo/ETIALOGO.jpg
@@ -94,5 +93,6 @@ Hero → Why ETIA (4 pillars + closing line) → What We Can Offer → Partner B
 ## 3. PRODUCTS & SOLUTIONS ⬜  (landing + By Industry / By Solution / By Material + collection + PDP template)
 ## 4. APPLICATIONS ⬜
 ## 5. INSIGHTS ⬜  (Case Studies / Blog / Resources)
+   - Case Studies = home for **customer logos / stories** (moved off homepage).
 ## 6. SERVICE & SUPPORT ⬜
 ## 7. CONTACT ⬜
