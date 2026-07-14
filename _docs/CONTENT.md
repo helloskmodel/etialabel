@@ -55,6 +55,14 @@ Status legend: 🔒 LOCKED (client-approved copy) · ✏️ draft · ⬜ not sta
 > 我们提供的不只是标签材料。
 > 我们理解您的标签需要完成什么任务。
 
+### What We Can Offer 🔒 (heading: "What We Can Offer" — *One partner, from material to production.*)
+1. **Specialty Label Materials & Constructions** — Genuine specialty materials from selected global brands, plus ETIA-developed constructions, matched to your surface, temperature, chemistry and print method.
+   特种标签材料与结构 —— 全球专业品牌的正品特种材料 + ETIA 自有研发结构，依表面/温度/化学/打印方式精准匹配。
+2. **Application Engineering & Sample Support** — Material selection, application testing and samples, so identification is validated before it reaches production.
+   应用工程与打样支持 —— 材料选型、应用测试与样品，让标识在量产前得到验证。
+3. **Custom Converting & Flexible Supply** — In-house slitting and die-cutting, small-batch runs and dependable long-term supply.
+   定制加工与柔性供应 —— 自有分切模切、小批量与稳定长期供应。
+
 ### Partner Brands 🔒 (heading: "Global Brands We Work With")
 > We combine specialty materials from selected international brands with ETIA's own developed constructions.
 > 我们整合来自全球专业品牌的特种材料，并结合 ETIA 自有研发的材料结构。
@@ -72,7 +80,13 @@ Status legend: 🔒 LOCKED (client-approved copy) · ✏️ draft · ⬜ not sta
 - Button → Contact / Request Samples.
 
 ### HOME final section order (LOCKED)
-Hero → Why ETIA (4 pillars + closing line) → Partner Brands → Customers → Contact CTA.
+Hero → Why ETIA (4 pillars + closing line) → What We Can Offer → Partner Brands → Customers → Contact CTA.
+
+### Assets
+- Logo (clean permanent URL): https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/IMAGE/logo/ETIALOGO.jpg
+  (JPG; prefer transparent PNG/SVG if available. Sandbox can't fetch COS, but live browsers will.)
+- Partner-brand logos: TBD (COS public URLs). Customer logos: client sending next day; placeholder tiles until then.
+- IMPORTANT: use clean permanent COS URLs only — never the pre-signed `?q-sign-...` links (they expire in ~1h).
 
 ---
 
