@@ -25,9 +25,13 @@ Status legend: 🔒 LOCKED (client-approved copy) · ✏️ draft · ⬜ not sta
 - **Buttons:** [Explore Applications] · [Request Samples]
 - **Hero image:** NOT a plain roll/product shot. An industrial *application* mosaic — Electronics · Steel · Laboratory · Automotive · Cryogenic · Outdoor equipment. Minimal text; only a few small floating tags: High Temperature · Chemical Resistant · Cryogenic · Outdoor Durable.
 
-### Proof numbers — FOLDED INTO "Why ETIA" (no standalone bar)
-20+ Years of Experience · 1,000+ Material Options · 9 Global Material Brands · 4 Regional Locations.
-(Shown as a stat row inside the Why ETIA section.)
+### Proof numbers — WOVEN INTO the Why ETIA verbs (no stat row) 🔒
+Each verb leads with its number:
+- **20+** · We Understand — With 20+ years of experience, we understand demanding applications and the operating conditions behind them.
+- **9** · We Source — We provide access to specialty materials from 9 trusted global material brands.
+- **1,000+** · We Develop — With 1,000+ material options, we support specialized requirements with flexible material constructions.
+- **4** · We Support — Through 4 regional locations, we provide samples, testing support, flexible supply, and repeat delivery.
+Heading: **Built Around Your Application.** Intro: We study the surface, process, temperature, chemicals, printing method, and product lifecycle before recommending a material.
 
 ### Hero image = STATIC application mosaic (静态)
 A single industrial-application collage — 6 tiles: Electronics & PCB · Steel & Metal · Laboratory ·
