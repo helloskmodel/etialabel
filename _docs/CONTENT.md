@@ -29,9 +29,9 @@ Status legend: 🔒 LOCKED (client-approved copy) · ✏️ draft · ⬜ not sta
 20+ Years of Experience · 1,000+ Material Options · 9 Global Material Brands · 4 Regional Locations.
 (Shown as a stat row inside the Why ETIA section.)
 
-### Hero image = animated carousel (动图)
-Crossfading slideshow of application scenes (Electronics/Steel/Lab-Cryo/Automotive/Medical/Outdoor)
-with dot indicators + floating capability tags. Placeholder gradients now → real photos later.
+### Hero image = STATIC application mosaic (静态)
+A single industrial-application collage — 6 tiles: Electronics & PCB · Steel & Metal · Laboratory ·
+Automotive · Cryogenic · Outdoor + floating capability tags. No animation. Placeholder tints now → real photos later.
 
 ### Why ETIA (refined — supersedes the earlier 4 pillars)
 - **Eyebrow:** WHY ETIA
@@ -90,7 +90,7 @@ Not on the homepage. Customer logos/stories will live under **Insights › Case 
 - Button → Contact / Request Samples.
 
 ### HOME final section order (LOCKED — refined)
-Hero (animated carousel) → **Service Bar (blue ✓)** → Why ETIA (intro + proof stats + Understand/Source/Develop/Support) →
+Hero (static mosaic) → **Service Bar (blue ✓)** → Why ETIA (intro + proof stats + Understand/Source/Develop/Support) →
 **What We Offer** (3 cards → Products/Applications/Support) → Partner Brands → Contact CTA (blue card).
 - "What We Offer" restored (client asked): Specialty Label Materials · Application Engineering & Sampling · Custom Converting & Supply — each routes into the catalog.
 - Mid-page service-card section stays superseded (now the blue service bar under hero).
