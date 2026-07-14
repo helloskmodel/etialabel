@@ -55,9 +55,24 @@ Status legend: 🔒 LOCKED (client-approved copy) · ✏️ draft · ⬜ not sta
 > 我们提供的不只是标签材料。
 > 我们理解您的标签需要完成什么任务。
 
-### Open question (Home tail)
-Hero + Why ETIA are locked. Decide whether Home ends here (route onward via buttons + nav)
-or adds a light **Solutions/Industries entry** + a **closing Contact CTA** below Why ETIA.
+### Partner Brands 🔒 (heading: "Global Brands We Work With")
+> We combine specialty materials from selected international brands with ETIA's own developed constructions.
+> 我们整合来自全球专业品牌的特种材料，并结合 ETIA 自有研发的材料结构。
+- Logo wall: Polyonics · YS-Tech · FlexCon · Computype · ETIA
+- Logos: placeholder now → real logos (COS URLs) later.
+
+### Customers 🔒 (heading: "Trusted by Manufacturers")
+> From precision electronics to steel, medical, pharma and outdoor energy, manufacturers rely on ETIA for identification that lasts.
+> 从精密电子到钢铁、医疗、制药与户外能源，众多制造企业选择 ETIA 提供持久可靠的标识方案。
+- Logo wall: PLACEHOLDER tiles now → real customer logos (client to send, next day).
+
+### Closing Contact CTA 🔒
+> Tell us your application. We'll match the material.
+> 告诉我们您的应用，我们为您匹配材料。
+- Button → Contact / Request Samples.
+
+### HOME final section order (LOCKED)
+Hero → Why ETIA (4 pillars + closing line) → Partner Brands → Customers → Contact CTA.
 
 ---
 
