@@ -386,8 +386,24 @@ def build_industries_hub(lang):
          else "FLEXcon and BIO TECH: wearables, diagnostics, pharma, devices, laboratory; cryogenic, sterilization."),
         L(lang,"/brands/flexcon/healthcare-life-sciences/"),
         L(lang,"/brands/bio-tech/healthcare-life-sciences/"))
+    # cross-series card: Electronics & PCB (Polyonics) — built by gen_pcb
+    pcb_card = ('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="xlinks">'
+                '<a href="%s">%s</a></div></a>') % (
+        L(lang,"/industries/electronics-pcb/"),
+        ("电子制造与PCB" if lang=="zh" else "Electronics & PCB"),
+        ("Polyonics 聚酰亚胺:回流焊、波峰焊、严苛清洗、ESD 与激光可标记。" if lang=="zh"
+         else "Polyonics polyimide: reflow, wave solder, harsh wash, ESD and laser-markable."),
+        L(lang,"/materials/polyimide/"),("聚酰亚胺产品线" if lang=="zh" else "Polyimide line"))
+    # cross-series card: Wire & Cable (Avery Dennison) — built by gen_wirecable
+    wc_card = ('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="xlinks">'
+               '<a href="%s">%s</a></div></a>') % (
+        L(lang,"/industries/wire-cable/"),
+        ("电力与线缆" if lang=="zh" else "Wire & Cable"),
+        ("Avery Dennison:旗型、缠绕、自覆膜、热缩、吊牌;按应用/行业/环境。" if lang=="zh"
+         else "Avery Dennison: flag, wrap, self-laminating, heat-shrink, tags; by application/industry/environment."),
+        L(lang,"/brands/avery-dennison/wire-cable/"),("Avery Dennison" ))
     h1 = "工业标识 — 行业与工艺应用" if lang=="zh" else "Industries & Applications"
-    body = '<section class="blk"><div class="wrap"><div class="grid">%s%s%s</div></div></section><div class="wrap">%s</div>' % (auto_card, hc_card, cards, cta(lang))
+    body = '<section class="blk"><div class="wrap"><div class="grid">%s%s%s%s%s</div></div></section><div class="wrap">%s</div>' % (auto_card, hc_card, pcb_card, wc_card, cards, cta(lang))
     crumb=[("Home","/"),("Industries & Applications",u_ind_hub())]
     write(lang, u_ind_hub(), page(lang, u_ind_hub(),
         ("行业与应用 — 超高温标识 | ETIA" if lang=="zh" else "Industries & Applications — Ultra-High-Temp Identification | ETIA"),

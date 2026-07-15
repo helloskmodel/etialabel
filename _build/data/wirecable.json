@@ -1,0 +1,466 @@
+{
+ "series": "wirecable",
+ "hub_route": "/industries/wire-cable/",
+ "brand": {
+  "name": "Avery Dennison",
+  "note_en": "ETIA supplies material selection; ETIA is not the manufacturer. Brady application methods and Avery Dennison materials may appear on the same page without confusing brand or product source.",
+  "note_zh": "ETIA 提供选型支持,并非制造商。Brady 的应用方法与 Avery Dennison 的材料可在同一页面呈现,但不混淆品牌与产品来源。"
+ },
+ "environments": [
+  {
+   "slug": "abrasion-resistant-labels",
+   "title_en": "Abrasion Resistant Labels",
+   "title_zh": "耐磨标签"
+  },
+  {
+   "slug": "moisture-resistant-labels",
+   "title_en": "Moisture Resistant Labels",
+   "title_zh": "耐潮湿标签"
+  },
+  {
+   "slug": "chemical-resistant-labels",
+   "title_en": "Chemical Resistant Labels",
+   "title_zh": "耐化学标签"
+  },
+  {
+   "slug": "high-heat-labels",
+   "title_en": "High Heat Labels",
+   "title_zh": "耐高温标签"
+  },
+  {
+   "slug": "cryogenic-labels",
+   "title_en": "Cryogenic Labels",
+   "title_zh": "超低温标签"
+  },
+  {
+   "slug": "sterilization-resistant-labels",
+   "title_en": "Sterilization Resistant Labels",
+   "title_zh": "耐灭菌标签"
+  }
+ ],
+ "priority_environments": [
+  "abrasion-resistant-labels",
+  "moisture-resistant-labels",
+  "chemical-resistant-labels",
+  "high-heat-labels"
+ ],
+ "conditional_environments": [
+  "cryogenic-labels",
+  "sterilization-resistant-labels"
+ ],
+ "applications": [
+  {
+   "slug": "flag-cable-labels",
+   "title_en": "Flag Cable Labels",
+   "title_zh": "旗型电缆标签",
+   "desc_en": "A larger double-sided printable flag for more text, barcodes, 2D codes, port and brand information.",
+   "desc_zh": "较大的双面打印区域,适合较多文字、条码、二维码、端口及品牌信息。",
+   "environments": [
+    "abrasion-resistant-labels",
+    "moisture-resistant-labels",
+    "chemical-resistant-labels",
+    "high-heat-labels"
+   ],
+   "environments_conditional": [
+    "cryogenic-labels",
+    "sterilization-resistant-labels"
+   ]
+  },
+  {
+   "slug": "wrap-around-cable-labels",
+   "title_en": "Wrap-Around Cable Labels",
+   "title_zh": "缠绕式电缆标签",
+   "desc_en": "Wraps around the cable in a compact format; a clear tail can cover the printed area for dense wiring.",
+   "desc_zh": "环绕线缆、结构紧凑;透明部分可覆盖打印区,适合密集布线。",
+   "environments": [
+    "abrasion-resistant-labels",
+    "moisture-resistant-labels",
+    "chemical-resistant-labels",
+    "high-heat-labels"
+   ],
+   "environments_conditional": [
+    "cryogenic-labels",
+    "sterilization-resistant-labels"
+   ]
+  },
+  {
+   "slug": "self-laminating-wire-labels",
+   "title_en": "Self-Laminating Wire Labels",
+   "title_zh": "自覆膜线缆标签",
+   "desc_en": "A clear tail laminates over the printed area to help protect text and barcodes; confirm by product data.",
+   "desc_zh": "透明尾部覆盖打印区,帮助保护文字与条码;须按具体产品资料确认。",
+   "environments": [
+    "abrasion-resistant-labels",
+    "moisture-resistant-labels",
+    "chemical-resistant-labels",
+    "high-heat-labels"
+   ],
+   "environments_conditional": [
+    "cryogenic-labels",
+    "sterilization-resistant-labels"
+   ]
+  },
+  {
+   "slug": "heat-shrink-wire-markers",
+   "title_en": "Heat-Shrink Wire Markers",
+   "title_zh": "热缩套管标识",
+   "desc_en": "Permanent identification of wires, cables and terminals; matched to Brady or other verified products.",
+   "desc_zh": "用于导线、电缆和端子的永久识别;后续匹配 Brady 或其他已验证产品。",
+   "environments": [
+    "abrasion-resistant-labels",
+    "moisture-resistant-labels",
+    "chemical-resistant-labels",
+    "high-heat-labels"
+   ],
+   "environments_conditional": [
+    "cryogenic-labels",
+    "sterilization-resistant-labels"
+   ]
+  },
+  {
+   "slug": "cable-tags",
+   "title_en": "Cable Tags",
+   "title_zh": "电缆吊牌与标签牌",
+   "desc_en": "For thicker cables, cable bundles and identification that does not require an adhesive.",
+   "desc_zh": "适用于较粗电缆、电缆束及无需胶粘的识别场景。",
+   "environments": [
+    "abrasion-resistant-labels",
+    "moisture-resistant-labels",
+    "chemical-resistant-labels",
+    "high-heat-labels"
+   ],
+   "environments_conditional": [
+    "cryogenic-labels",
+    "sterilization-resistant-labels"
+   ]
+  },
+  {
+   "slug": "datacom-network-cabling",
+   "title_en": "DataCom & Network Cabling",
+   "title_zh": "数据通信与网络布线",
+   "desc_en": "Data centers, cabinets, workstations, ports, fiber and network-cabling identification.",
+   "desc_zh": "数据中心、机柜、工作站、端口、光纤和网络布线识别。",
+   "environments": [
+    "abrasion-resistant-labels",
+    "moisture-resistant-labels"
+   ],
+   "environments_conditional": []
+  },
+  {
+   "slug": "electrical-control-panel-wiring",
+   "title_en": "Electrical & Control Panel Wiring",
+   "title_zh": "电气与控制柜布线",
+   "desc_en": "Control panels, terminals, conductors, electrical installation, service and troubleshooting.",
+   "desc_zh": "控制柜、端子、导线、电气安装、维修和故障排查。",
+   "environments": [
+    "abrasion-resistant-labels",
+    "moisture-resistant-labels",
+    "chemical-resistant-labels",
+    "high-heat-labels"
+   ],
+   "environments_conditional": []
+  },
+  {
+   "slug": "wire-harness-cable-assemblies",
+   "title_en": "Wire Harness & Cable Assemblies",
+   "title_zh": "线束与电缆组件",
+   "desc_en": "Harness production, assembly tracking, build location, serial-number and barcode identification.",
+   "desc_zh": "线束生产、组件追踪、装配定位、序列号及条码识别。",
+   "environments": [
+    "abrasion-resistant-labels",
+    "moisture-resistant-labels",
+    "chemical-resistant-labels",
+    "high-heat-labels"
+   ],
+   "environments_conditional": [
+    "cryogenic-labels",
+    "sterilization-resistant-labels"
+   ]
+  }
+ ],
+ "industries": [
+  {
+   "slug": "industrial-manufacturing",
+   "title_en": "Industrial Manufacturing",
+   "title_zh": "工业制造",
+   "objects_en": "Industrial equipment, automated lines, robots, cabinets, in-machine wiring and service identification.",
+   "objects_zh": "工业设备、自动化产线、机器人、机柜、机器内部布线及维修识别。",
+   "applications": [
+    "flag-cable-labels",
+    "wrap-around-cable-labels",
+    "heat-shrink-wire-markers",
+    "cable-tags"
+   ],
+   "priority_environments": [
+    "abrasion-resistant-labels",
+    "chemical-resistant-labels",
+    "high-heat-labels"
+   ],
+   "show_products": true
+  },
+  {
+   "slug": "automotive-transportation",
+   "title_en": "Automotive & Transportation",
+   "title_zh": "汽车与交通运输",
+   "objects_en": "Automotive harnesses, underhood, body electronics, powertrain and transportation-equipment cabling.",
+   "objects_zh": "汽车线束、发动机舱、车身电子、动力系统及交通设备线缆。",
+   "applications": [
+    "wrap-around-cable-labels",
+    "heat-shrink-wire-markers",
+    "self-laminating-wire-labels"
+   ],
+   "priority_environments": [
+    "abrasion-resistant-labels",
+    "moisture-resistant-labels",
+    "chemical-resistant-labels",
+    "high-heat-labels"
+   ],
+   "show_products": true
+  },
+  {
+   "slug": "datacom-telecom",
+   "title_en": "Data Communications & Telecom",
+   "title_zh": "数据通信与电信",
+   "objects_en": "Data centers, server cabinets, network ports, communication equipment, copper and fiber identification.",
+   "objects_zh": "数据中心、服务器机柜、网络端口、通信设备、铜缆及光纤识别。",
+   "applications": [
+    "flag-cable-labels",
+    "wrap-around-cable-labels",
+    "self-laminating-wire-labels",
+    "datacom-network-cabling"
+   ],
+   "priority_environments": [
+    "abrasion-resistant-labels",
+    "moisture-resistant-labels"
+   ],
+   "show_products": true
+  },
+  {
+   "slug": "electrical-control-systems",
+   "title_en": "Electrical Equipment & Control Systems",
+   "title_zh": "电气设备与控制系统",
+   "objects_en": "Distribution and control cabinets, terminal blocks, PLC, field devices and electrical installation.",
+   "objects_zh": "配电柜、控制柜、端子排、PLC、现场设备及电气安装。",
+   "applications": [
+    "flag-cable-labels",
+    "wrap-around-cable-labels",
+    "heat-shrink-wire-markers",
+    "electrical-control-panel-wiring"
+   ],
+   "priority_environments": [
+    "abrasion-resistant-labels",
+    "chemical-resistant-labels",
+    "high-heat-labels"
+   ],
+   "show_products": true
+  },
+  {
+   "slug": "aerospace-defense",
+   "title_en": "Aerospace & Defense",
+   "title_zh": "航空航天与国防",
+   "objects_en": "Aircraft, avionics, harness assemblies and high-reliability cable identification.",
+   "objects_zh": "飞机、航电设备、线束组件和高可靠性线缆识别。",
+   "applications": [
+    "heat-shrink-wire-markers",
+    "wrap-around-cable-labels",
+    "cable-tags"
+   ],
+   "priority_environments": [
+    "abrasion-resistant-labels"
+   ],
+   "show_products": false
+  },
+  {
+   "slug": "rail-transit",
+   "title_en": "Rail & Transit",
+   "title_zh": "轨道交通",
+   "objects_en": "Vehicle harnesses, signaling systems, car equipment, wayside control and power cables.",
+   "objects_zh": "车辆线束、信号系统、车厢设备、轨旁控制及电力电缆。",
+   "applications": [
+    "heat-shrink-wire-markers",
+    "cable-tags",
+    "wrap-around-cable-labels"
+   ],
+   "priority_environments": [
+    "abrasion-resistant-labels",
+    "moisture-resistant-labels",
+    "chemical-resistant-labels",
+    "high-heat-labels"
+   ],
+   "show_products": false
+  },
+  {
+   "slug": "energy-new-energy",
+   "title_en": "Energy & New Energy",
+   "title_zh": "能源与新能源",
+   "objects_en": "Photovoltaic, wind, energy storage, battery systems, charging equipment and power-facility cabling.",
+   "objects_zh": "光伏、风电、储能、电池系统、充电设备及电力设施线缆。",
+   "applications": [
+    "heat-shrink-wire-markers",
+    "cable-tags",
+    "wrap-around-cable-labels"
+   ],
+   "priority_environments": [
+    "moisture-resistant-labels",
+    "chemical-resistant-labels",
+    "high-heat-labels"
+   ],
+   "show_products": false
+  },
+  {
+   "slug": "medical-equipment",
+   "title_en": "Medical Equipment",
+   "title_zh": "医疗设备",
+   "objects_en": "In-device harnesses, diagnostic-equipment cabling and sterilizable equipment connections.",
+   "objects_zh": "医疗设备内部线束、诊断设备线缆及可灭菌设备连接线。",
+   "applications": [
+    "flag-cable-labels",
+    "wrap-around-cable-labels",
+    "self-laminating-wire-labels"
+   ],
+   "priority_environments": [
+    "chemical-resistant-labels",
+    "abrasion-resistant-labels"
+   ],
+   "show_products": false
+  }
+ ],
+ "products": [
+  {
+   "id": "avery-77920",
+   "brand": "Avery Dennison",
+   "product_name": "Avery Dennison 77920 White PET Flag",
+   "slug": "avery-dennison-77920",
+   "part_number": "77920",
+   "face_material": "White PET",
+   "application_categories": [
+    "flag-cable-labels",
+    "datacom-network-cabling",
+    "electrical-control-panel-wiring"
+   ],
+   "environment_paths": [],
+   "environment_status": "needs_verification",
+   "product_description": "2M WH PET TC/S8025/50#",
+   "verification_status": "needs_verification",
+   "source_document": "Avery Dennison Wire Marking & Cable Label Portfolio (NA, 10/2025) + Brady DataCom references"
+  },
+  {
+   "id": "avery-78385",
+   "brand": "Avery Dennison",
+   "product_name": "Avery Dennison 78385 White PET Flag",
+   "slug": "avery-dennison-78385",
+   "part_number": "78385",
+   "face_material": "White PET",
+   "application_categories": [
+    "flag-cable-labels",
+    "datacom-network-cabling",
+    "electrical-control-panel-wiring"
+   ],
+   "environment_paths": [],
+   "environment_status": "needs_verification",
+   "product_description": "2M WH PET TC/S8001/50#SCK",
+   "verification_status": "needs_verification",
+   "source_document": "Avery Dennison Wire Marking & Cable Label Portfolio (NA, 10/2025) + Brady DataCom references"
+  },
+  {
+   "id": "avery-79732",
+   "brand": "Avery Dennison",
+   "product_name": "Avery Dennison 79732 White PET Flag",
+   "slug": "avery-dennison-79732",
+   "part_number": "79732",
+   "face_material": "White PET",
+   "application_categories": [
+    "flag-cable-labels",
+    "datacom-network-cabling",
+    "electrical-control-panel-wiring"
+   ],
+   "environment_paths": [],
+   "environment_status": "needs_verification",
+   "product_description": "2M WH PET TC/S8029/50#SCK ABC",
+   "verification_status": "needs_verification",
+   "source_document": "Avery Dennison Wire Marking & Cable Label Portfolio (NA, 10/2025) + Brady DataCom references"
+  },
+  {
+   "id": "avery-40087",
+   "brand": "Avery Dennison",
+   "product_name": "Avery Dennison 40087 White Vinyl Flag",
+   "slug": "avery-dennison-40087",
+   "part_number": "40087",
+   "face_material": "White flexible vinyl",
+   "application_categories": [
+    "flag-cable-labels"
+   ],
+   "environment_paths": [],
+   "environment_status": "needs_verification",
+   "product_description": "4M WH F VNL TCD/S730/50# ABC",
+   "verification_status": "needs_verification",
+   "source_document": "Avery Dennison Wire Marking & Cable Label Portfolio (NA, 10/2025) + Brady DataCom references"
+  },
+  {
+   "id": "avery-79875",
+   "brand": "Avery Dennison",
+   "product_name": "Avery Dennison 79875 Clear Vinyl Wrap",
+   "slug": "avery-dennison-79875",
+   "part_number": "79875",
+   "face_material": "Clear vinyl",
+   "application_categories": [
+    "wrap-around-cable-labels",
+    "self-laminating-wire-labels"
+   ],
+   "environment_paths": [],
+   "environment_status": "needs_verification",
+   "product_description": "3.5M CL VINYL NTC/S730/50",
+   "verification_status": "needs_verification",
+   "source_document": "Avery Dennison Wire Marking & Cable Label Portfolio (NA, 10/2025) + Brady DataCom references"
+  },
+  {
+   "id": "avery-c0734",
+   "brand": "Avery Dennison",
+   "product_name": "Avery Dennison C0734 White BOPP Wrap",
+   "slug": "avery-dennison-c0734",
+   "part_number": "C0734",
+   "face_material": "White BOPP",
+   "application_categories": [
+    "wrap-around-cable-labels"
+   ],
+   "environment_paths": [],
+   "environment_status": "needs_verification",
+   "product_description": "2.3M WH BOPP TC2000/I406KB/40#BG",
+   "verification_status": "needs_verification",
+   "source_document": "Avery Dennison Wire Marking & Cable Label Portfolio (NA, 10/2025) + Brady DataCom references"
+  },
+  {
+   "id": "avery-77855",
+   "brand": "Avery Dennison",
+   "product_name": "Avery Dennison 77855 Clear PET Wrap",
+   "slug": "avery-dennison-77855",
+   "part_number": "77855",
+   "face_material": "Clear PET",
+   "application_categories": [
+    "wrap-around-cable-labels",
+    "self-laminating-wire-labels"
+   ],
+   "environment_paths": [],
+   "environment_status": "needs_verification",
+   "product_description": "1M CL PET TC/S730/1M PET",
+   "verification_status": "needs_verification",
+   "source_document": "Avery Dennison Wire Marking & Cable Label Portfolio (NA, 10/2025) + Brady DataCom references"
+  },
+  {
+   "id": "avery-77311",
+   "brand": "Avery Dennison",
+   "product_name": "Avery Dennison 77311 PRIMAX PET Wrap",
+   "slug": "avery-dennison-77311",
+   "part_number": "77311",
+   "face_material": "PET",
+   "application_categories": [
+    "wrap-around-cable-labels"
+   ],
+   "environment_paths": [],
+   "environment_status": "needs_verification",
+   "product_description": "PRIMAX 250/S730/1.2M PET",
+   "verification_status": "needs_verification",
+   "source_document": "Avery Dennison Wire Marking & Cable Label Portfolio (NA, 10/2025) + Brady DataCom references"
+  }
+ ]
+}

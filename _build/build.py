@@ -9,9 +9,13 @@ sys.path.insert(0, BUILD)
 import gen_heatproof as hp
 import gen_automotive as auto
 import gen_healthcare as hc
+import gen_pcb as pcb
+import gen_wirecable as wc
 
 hp.main()      # clean + build heatproof + heatproof sitemaps + base vercel.json
 auto.main()    # build automotive + automotive sitemap + merge redirects
 hc.main()      # build healthcare + healthcare sitemap + merge redirects
+pcb.main()     # build electronics & pcb / polyimide + sitemap
+wc.main()      # build wire & cable + sitemap
 print("BUILD COMPLETE — total EN canonical URLs:",
-      len(hp.ALL_URLS) + len(auto.AUTO_URLS) + len(hc.HC_URLS))
+      len(hp.ALL_URLS)+len(auto.AUTO_URLS)+len(hc.HC_URLS)+len(pcb.URLS)+len(wc.URLS))
