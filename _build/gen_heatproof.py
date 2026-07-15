@@ -146,6 +146,12 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .whyrow .ic svg{width:23px;height:23px}
 .whyrow b{display:block;font-family:var(--serif);font-size:18px;color:var(--blue-deep)}
 .whyrow p{font-size:14px;color:var(--mut);margin-top:2px}
+.indcard .ic{width:48px;height:48px;border-radius:12px;background:var(--mint);color:var(--green-d);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.indcard .ic svg{width:25px;height:25px}
+.indcard h3{font-family:var(--serif);font-weight:600}
+.indcard .apps{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.indcard .apps span{font-size:12px;font-weight:600;color:var(--mut);background:#fff;border:1px solid var(--line);border-radius:16px;padding:4px 10px}
+.indcard .go{color:var(--blue);font-weight:700;font-size:14px;margin-top:14px}
 .focuslist{display:flex;flex-direction:column;gap:10px;margin-top:6px}
 .focuslist a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 18px;border:1px solid var(--line);border-radius:12px;color:var(--ink);font-weight:700;font-size:16px}
 .focuslist a:hover{border-color:var(--blue);color:var(--blue);text-decoration:none;box-shadow:0 6px 20px rgba(26,86,219,.08)}
@@ -542,13 +548,33 @@ WHY_ICONS = [
  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><path d="M4 13.5h1.4A1.6 1.6 0 0 1 7 15.1v2.3A1.6 1.6 0 0 1 5.4 19H4z"/><path d="M20 13.5h-1.4a1.6 1.6 0 0 0-1.6 1.6v2.3a1.6 1.6 0 0 0 1.6 1.6H20z"/><path d="M20 19a3 3 0 0 1-3 3h-2"/></svg>',
 ]
 
-# five focus industries (names only — no partner brands)
+# five focus industries with their key APPLICATIONS as tags (embodies "explore by application").
+# format: (name_en, name_zh, url, apps_en[], apps_zh[]) — names only, no partner brands.
 HOME_FOCUS = [
- ("Electronics & PCB","电子制造与PCB","Reflow, wave solder, ESD, wash-resistant","回流焊、波峰焊、ESD、耐清洗","/industries/electronics-pcb/"),
- ("Metal Processing & Ceramics","金属加工与陶瓷","Hot-metal direct apply, heat-treatment, kiln firing to 1300°C","热态直贴、热处理、窑炉烧制至1300℃","/industries/"),
- ("Medical & Pharma","医疗与医药","Cryogenic, sterilization, skin-contact, laboratory","超低温、灭菌、贴肤、实验室","/industries/healthcare-life-sciences/"),
- ("Automotive","汽车","Underhood, EV battery, wire harness, VIN","发动机舱、EV电池、线束、VIN","/industries/automotive-label-materials/"),
- ("Wire & Cable","电力与线缆","Flag, wrap, heat-shrink, harness identification","旗型、缠绕、热缩、线束识别","/industries/wire-cable/"),
+ ("Electronics & PCB","电子制造与PCB","/industries/electronics-pcb/",
+  ["Reflow","Wave Solder","ESD","PCB Wash"],["回流焊","波峰焊","ESD防静电","PCB清洗"]),
+ ("Metal Processing & Ceramics","金属加工与陶瓷","/industries/",
+  ["Hot-Metal Direct","Heat-Treatment","Kiln 1300°C","Annealing"],["热态直贴","热处理","窑炉1300℃","退火"]),
+ ("Medical & Pharma","医疗与医药","/industries/healthcare-life-sciences/",
+  ["Cryogenic","Sterilization","Skin-Contact","Laboratory"],["超低温","灭菌","贴肤","实验室"]),
+ ("Automotive","汽车","/industries/automotive-label-materials/",
+  ["Underhood","EV Battery","Wire Harness","VIN"],["发动机舱","EV电池","线束","VIN"]),
+ ("Wire & Cable","电力与线缆","/industries/wire-cable/",
+  ["Flag","Wrap-Around","Heat-Shrink","Harness"],["旗型","缠绕","热缩","线束"]),
+]
+
+# one line icon per focus industry (Computype-style icon + text), same order as HOME_FOCUS
+INDUSTRY_ICONS = [
+ # Electronics & PCB — chip
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5"/><rect x="10" y="10" width="4" height="4" rx="1"/><path d="M9.5 3.5v3M14.5 3.5v3M9.5 17.5v3M14.5 17.5v3M3.5 9.5h3M3.5 14.5h3M17.5 9.5h3M17.5 14.5h3"/></svg>',
+ # Metal & Ceramics — flame over ingot
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5c.8 3 3.1 4.4 3.1 7.6 0 1.9-1.4 3.4-3.1 3.4s-3.1-1.5-3.1-3.4c0-1.1.5-1.9 1.2-2.6-.1 1.1.5 1.8.9 2.1.5-1.9.2-4.4 1-7.1z"/><rect x="6" y="16.5" width="12" height="4.5" rx="1"/></svg>',
+ # Medical & Pharma — cross
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="M12 8.5v7M8.5 12h7"/></svg>',
+ # Automotive — car
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l1.7-4.6A2 2 0 0 1 6.6 7h10.8a2 2 0 0 1 1.9 1.4L21 13v5h-2.5v-2h-13v2H3z"/><circle cx="7.5" cy="16" r="1.6"/><circle cx="16.5" cy="16" r="1.6"/></svg>',
+ # Wire & Cable — plug + cable
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="7" rx="1.5"/><path d="M11 2.5V5M13 2.5V5"/><path d="M12 9.5v2.5a4 4 0 0 1-4 4 4 4 0 0 0-4 4v.5"/></svg>',
 ]
 
 def _load_featured():
@@ -595,32 +621,24 @@ def img_frame(label):
     return '<div class="imgframe">%s</div>' % esc(label)
 
 def harsh_module(lang):
-    """ETIA Selected Harsh Environment Labels — compact 6-card grid (no big images/carousel)."""
-    fdata=_load_featured()
-    if not fdata: return ""
-    prods=sorted([p for p in fdata["products"] if p.get("homepage_featured")],key=lambda x:x["featured_order"])
-    if not prods: return ""
-    def land(p): return "/products/%s/"%p["maps_to"] if p.get("maps_to") else "%s%s/"%(fdata["center_route"],p["slug"])
+    """Third screen — Explore by Application: five core industries as entry points
+    (layer-by-layer drill-down: industry -> application -> product). No hot-products grid."""
     cards=""
-    for p in prods:
-        tags="".join('<span class="pill">%s</span>'%esc(t) for t in (p["tags_zh"] if lang=="zh" else p["tags_en"]))
-        cta_l="查看方案" if lang=="zh" else "View Solution"
-        cards+=('<div class="card"><div class="eyebrow" style="color:var(--blue);margin-bottom:2px">%s</div>'
-                '<div class="rows"><b style="color:var(--blue-deep)">%s</b></div>'
-                '<h3>%s</h3><p>%s</p><div class="xlinks">%s</div>'
-                '<div style="margin-top:10px"><a href="%s">%s →</a></div></div>')%(
-            esc(p["industry_zh"] if lang=="zh" else p["industry_en"]),
-            esc(p["harsh_zh"] if lang=="zh" else p["harsh_en"]),
-            esc(p["model"]),esc(p["one_liner_zh"] if lang=="zh" else p["one_liner_en"]),
-            tags,L(lang,land(p)),cta_l)
-    title="ETIA严苛环境标签精选" if lang=="zh" else "ETIA Selected Harsh Environment Labels"
-    sub=("面向极端温度、化学品、磨损、油污与防篡改要求的严苛环境标签材料。" if lang=="zh"
-         else "Label materials selected for demanding temperatures, chemicals, abrasion, challenging surfaces and secure identification.")
-    viewall="查看全部严苛环境标签" if lang=="zh" else "View All Harsh Environment Labels"
+    for k,(fe,fz,u,apps_en,apps_zh) in enumerate(HOME_FOCUS):
+        pills="".join('<span>%s</span>'%esc(a) for a in (apps_zh if lang=="zh" else apps_en))
+        cards+=('<a class="card indcard" href="%s"><div class="ic">%s</div><h3>%s</h3>'
+                '<div class="apps">%s</div><div class="go">%s →</div></a>')%(
+            L(lang,u), INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)], esc(fz if lang=="zh" else fe),
+            pills, ("进入" if lang=="zh" else "Explore"))
+    eyebrow="按应用探索" if lang=="zh" else "EXPLORE BY APPLICATION"
+    title="面向严苛应用的精选材料" if lang=="zh" else "Proven Materials for Demanding Applications"
+    sub=("根据具体行业、工艺、表面、温度及标识难题,探索适合的标签材料与解决方案。" if lang=="zh"
+         else "Explore label materials selected for specific industries, processes, surfaces, temperatures, and identification challenges.")
+    viewall="查看全部应用" if lang=="zh" else "View All Applications"
     return ('<section class="blk" style="background:var(--tint-blue)"><div class="wrap">'
-            '<h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div>'
+            '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div>'
             '<div style="margin-top:18px"><a class="btn sec" href="%s">%s →</a></div></div></section>')%(
-        esc(title),esc(sub),cards,L(lang,fdata["center_route"]),esc(viewall))
+        esc(eyebrow),esc(title),esc(sub),cards,L(lang,u_ind_hub()),esc(viewall))
 
 def build_home(lang):
     path = "/"
