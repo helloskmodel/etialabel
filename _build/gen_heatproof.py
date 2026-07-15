@@ -521,6 +521,37 @@ def build_stub(lang, path, title_en, title_zh, body_en, body_zh, active=""):
     write(lang, path, page(lang, path, "%s | ETIA"%title, esc(body_en)[:150], title, "", body, crumb, active=active))
     if lang=="en": track(path,"core")
 
+def build_outdoor_energy(lang):
+    """Outdoor & Energy application landing — lists applications; materials matched on
+    request (no products invented yet)."""
+    path="/industries/outdoor-energy/"
+    apps=[
+      ("Solar Panel Identification","光伏组件标识","PV modules, junction boxes and frames","光伏组件、接线盒与边框"),
+      ("Outdoor Equipment Labels","户外设备标签","Enclosures, machinery and field equipment","机柜、机械与现场设备"),
+      ("Electrical & Utility Identification","电力与公用设施标识","Utility assets, meters and distribution","电力资产、电表与配电"),
+      ("Battery & Energy Storage Labels","电池与储能标签","Energy-storage systems and battery packs","储能系统与电池组"),
+      ("UV- and Weather-Resistant Labels","耐UV与耐候标签","Sun, rain, moisture and temperature cycling","日晒、雨淋、潮湿与温变"),
+      ("Rating Plates & Asset Identification","铭牌与资产标识","Nameplates, ratings and asset tags","铭牌、参数牌与资产标签"),
+    ]
+    cards="".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>'%(
+        L(lang,"/contact/"), esc(z if lang=="zh" else e), esc(dz if lang=="zh" else de)) for e,z,de,dz in apps)
+    note=("户外与能源应用的具体材料按需匹配;经验证的产品与参数正在完善中。" if lang=="zh"
+          else "Materials for outdoor and energy applications are matched on request; verified products and specifications are being finalized.")
+    body=('<section class="blk"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>'
+          '<section class="blk"><div class="wrap"><div class="verify">%s</div></div></section>'
+          '<div class="wrap">%s</div>')%(
+        ("应用" if lang=="zh" else "Applications"), cards, esc(note), cta(lang))
+    crumb=[("Home","/"),("Industries & Applications",u_ind_hub()),("Outdoor & Energy",path)]
+    write(lang,path,page(lang,path,
+        ("户外与能源标签材料 | ETIA" if lang=="zh" else "Outdoor & Energy Label Materials | ETIA"),
+        ("面向光伏、户外设备、电力设施、储能与耐候标识的标签材料。" if lang=="zh"
+         else "Label materials for solar, outdoor equipment, electrical utility, energy storage and weather-resistant identification."),
+        ("户外与能源标签材料" if lang=="zh" else "Outdoor & Energy Label Materials"),
+        ("面向光伏、户外设备、电力设施、储能与耐UV耐候的标识方案。" if lang=="zh"
+         else "Identification for solar, outdoor equipment, electrical/utility, energy storage and UV/weather exposure."),
+        body,crumb,active="industries"))
+    if lang=="en": track(path,"industries")
+
 # ---------------------------------------------------------------- home
 ORG_JSONLD = {"@context":"https://schema.org","@type":"Organization","name":"ETIA Label",
     "url":SITE,"slogan":"Where materials meet applications.",
@@ -563,6 +594,9 @@ HOME_FOCUS = [
   ["Underhood","EV Battery","Wire Harness","VIN"],["发动机舱","EV电池","线束","VIN"]),
  ("Wire & Cable","电力与线缆","/industries/wire-cable/",
   ["Flag","Wrap-Around","Heat-Shrink","Harness"],["旗型","缠绕","热缩","线束"]),
+ ("Outdoor & Energy","户外与能源","/industries/outdoor-energy/",
+  ["Solar Panels","Outdoor Equipment","Energy Storage","UV / Weather","Rating Plates"],
+  ["光伏组件","户外设备","储能电池","耐UV耐候","铭牌资产"]),
 ]
 
 # one line icon per focus industry (Computype-style icon + text), same order as HOME_FOCUS
@@ -577,6 +611,8 @@ INDUSTRY_ICONS = [
  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l1.7-4.6A2 2 0 0 1 6.6 7h10.8a2 2 0 0 1 1.9 1.4L21 13v5h-2.5v-2h-13v2H3z"/><circle cx="7.5" cy="16" r="1.6"/><circle cx="16.5" cy="16" r="1.6"/></svg>',
  # Wire & Cable — plug + cable
  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="7" rx="1.5"/><path d="M11 2.5V5M13 2.5V5"/><path d="M12 9.5v2.5a4 4 0 0 1-4 4 4 4 0 0 0-4 4v.5"/></svg>',
+ # Outdoor & Energy — sun
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.6M12 19.4V22M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2 12h2.6M19.4 12H22M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9"/></svg>',
 ]
 
 def _load_featured():
@@ -784,6 +820,7 @@ def build_all():
     build_industries_hub(lang)
     for iid in INDUSTRIES: build_industry(lang, iid)
     for a in APPS: build_application(lang, a)
+    build_outdoor_energy(lang)
     # supporting nav stubs (marked pending where content not yet supplied)
     build_stub(lang,"/technical-resources/","Technical Resources","技术资源",
         "Selection guides, temperature-tier reference and datasheets for ultra-high-temperature identification. Full resource library is being populated.",
