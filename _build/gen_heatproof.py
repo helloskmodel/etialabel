@@ -470,17 +470,16 @@ def build_stub(lang, path, title_en, title_zh, body_en, body_zh, active=""):
 # ---------------------------------------------------------------- home
 ORG_JSONLD = {"@context":"https://schema.org","@type":"Organization","name":"ETIA Label",
     "url":SITE,"slogan":"Where materials meet applications.",
-    "description":"Supplier and application-support partner for durable, specialty industrial labels — including YS-Tech HEATPROOF ultra-high-temperature labels and tags.",
-    "brand":["Polyonics","YS-Tech","FlexCon","Computype","ETIA"],
+    "description":"Supplier and application-support partner for durable, specialty industrial labels — from ultra-high-temperature to cryogenic, chemical and tamper-evident identification.",
     "contactPoint":[{"@type":"ContactPoint","contactType":"sales","email":"label@etia-tech.com"}]}
 
 HOME_WHY = {
  "en":[("01","We Understand","We start with your application and operating conditions — surface, temperature, chemistry, print method and lifecycle — before recommending a material."),
-       ("02","We Source","We provide access to specialty materials from trusted global material brands, including YS-Tech HEATPROOF for ultra-high-temperature work."),
+       ("02","We Source","We provide access to specialty materials matched to demanding applications — from ultra-high-temperature to cryogenic, chemical exposure and secure identification."),
        ("03","We Develop","With flexible material constructions we support specialized, higher-mix and smaller-batch requirements that mass supply overlooks."),
        ("04","We Support","From samples and application testing to in-house slitting, die-cutting and dependable repeat supply across the region.")],
  "zh":[("01","深入理解","在推荐材料之前,我们先了解应用与工况 —— 表面、温度、化学环境、打印方式与产品生命周期。"),
-       ("02","全球采购","我们整合全球专业品牌的特种材料,包括面向超高温场景的 YS-Tech HEATPROOF。"),
+       ("02","全球采购","我们整合面向严苛应用的特种材料 —— 覆盖超高温、深低温、化学暴露与防伪识别等场景。"),
        ("03","自主研发","以柔性材料结构支持传统大批量供应难以覆盖的复杂、多品种、小批量需求。"),
        ("04","持续支持","从样品与应用测试,到自有分切、模切与稳定的长期供应,覆盖区域交付。")],
 }
@@ -564,25 +563,21 @@ def build_home(lang):
     brands=["Polyonics","YS-Tech","FlexCon","Computype","ETIA"]
     brand_html="".join('<span class="bchip">%s</span>'%esc(b) for b in brands)
 
+    # Phase-1 home order: Hero -> Service Bar -> Why ETIA -> ETIA Selected -> CTA.
+    # Partner-brand wall and brand-naming nav sections are omitted (brand approvals pending).
+    why_intro=("先理解应用,再匹配材料 —— 这是我们做每一枚标签的方式。" if lang=="zh"
+               else "We understand the application before matching the material — that's how we approach every label.")
     body="""<section class="hero"><div class="wrap">
 <div class="eyebrow">%s</div><h1 class="serif">%s</h1><p class="lede">%s</p>
 <div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn sec" href="%s">%s</a></div></div></section>
 %s
-<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div></div></section>
-<section class="blk" style="background:var(--bg)"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div></div></section>
-<section class="blk"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>
+<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="whygrid">%s</div></div></section>
 %s
-<section class="blk"><div class="wrap"><h2>%s</h2><div class="whygrid">%s</div></div></section>
-<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="brandwall">%s</div></div></section>
 <div class="wrap">%s</div>""" % (
         esc(eyebrow),esc(h1),esc(lede),L(lang,u_products()),esc(b1),L(lang,"/contact/"),esc(b2),
         svcbar,
-        esc(paths_title),esc(paths_sub),pcards_html,
-        esc(prog_title),esc(prog_sub),lines_html,
-        ("行业覆盖" if lang=="zh" else "Industries we serve"),ind_html,
+        esc(why_head),esc(why_intro),why_html,
         harsh_module(lang),
-        esc(why_head),why_html,
-        esc(brands_head),esc(brands_sub),brand_html,
         cta(lang))
 
     canonical=SITE+PREFIX[lang]+path
