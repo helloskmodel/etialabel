@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.etialabel.com/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/applications/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/support/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/support/brady-cross-reference/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/company/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/contact/</loc><changefreq>weekly</changefreq></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.etialabel.com/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/"/></url>
+  <url><loc>https://www.etialabel.com/products/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/products/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/products/"/></url>
+  <url><loc>https://www.etialabel.com/technical-resources/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/technical-resources/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/technical-resources/"/></url>
+  <url><loc>https://www.etialabel.com/about/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/about/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/about/"/></url>
+  <url><loc>https://www.etialabel.com/contact/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/contact/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/contact/"/></url>
+  <url><loc>https://www.etialabel.com/privacy/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/privacy/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/privacy/"/></url>
+  <url><loc>https://www.etialabel.com/cookies/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/cookies/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/cookies/"/></url>
+  <url><loc>https://www.etialabel.com/terms/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/terms/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/terms/"/></url>
 </urlset>

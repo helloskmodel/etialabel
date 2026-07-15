@@ -1,4 +1,31 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/cases",
+      "destination": "/industries/",
+      "permanent": true
+    },
+    {
+      "source": "/cases/:path*",
+      "destination": "/industries/",
+      "permanent": true
+    },
+    {
+      "source": "/products/direct-label",
+      "destination": "/products/direct-hot-application-labels/",
+      "permanent": true
+    },
+    {
+      "source": "/products/management-label",
+      "destination": "/products/heat-treatment-labels/",
+      "permanent": true
+    },
+    {
+      "source": "/products/management-tag",
+      "destination": "/products/heat-treatment-tags/",
+      "permanent": true
+    }
+  ]
 }

@@ -1,0 +1,873 @@
+{
+ "section": "heatproof",
+ "process_paths": [
+  {
+   "id": "direct_hot_application",
+   "slug": "direct-hot-application-labels",
+   "title_en": "Direct Hot Application Labels",
+   "title_zh": "高温金属表面直接贴标标签",
+   "h1_en": "Labels for Direct Application to Hot Metal",
+   "h1_zh": "高温金属表面直接贴标标签",
+   "type": "label"
+  },
+  {
+   "id": "heat_treatment_labels",
+   "slug": "heat-treatment-labels",
+   "title_en": "Heat-Treatment Process Labels",
+   "title_zh": "热处理与高温制程追溯标签",
+   "h1_en": "Labels for Heat-Treatment and High-Temperature Process Tracking",
+   "h1_zh": "热处理与高温制程追溯标签",
+   "type": "label"
+  },
+  {
+   "id": "heat_treatment_tags",
+   "slug": "heat-treatment-tags",
+   "title_en": "Heat-Treatment Process Tags",
+   "title_zh": "热处理过程追溯用耐高温吊牌",
+   "h1_en": "High-Temperature Tags for Heat-Treatment Process Tracking",
+   "h1_zh": "热处理过程追溯用耐高温吊牌",
+   "type": "tag"
+  }
+ ],
+ "products": [
+  {
+   "id": "hp-350n",
+   "type": "label",
+   "process_paths": [
+    "direct_hot_application",
+    "heat_treatment_labels"
+   ],
+   "app_temp": "Room temperature up to approx. 400°C",
+   "max_proc": "Up to approx. 600°C",
+   "note": "Medium/high-temperature metal and aluminum; applies hot or pre-applied",
+   "name": "HP-350N",
+   "slug": "hp-350n",
+   "applications": [
+    "steel/steel-coil-annealing-traceability",
+    "aluminum/aluminum-billet-homogenizing-traceability",
+    "heat-resistant-asset-management/injection-mold-identification"
+   ],
+   "industries": [
+    "aluminum",
+    "heat-resistant-asset-management",
+    "steel"
+   ]
+  },
+  {
+   "id": "hp-600",
+   "type": "label",
+   "process_paths": [
+    "direct_hot_application"
+   ],
+   "app_temp": "Approx. 250–600°C",
+   "max_proc": "Up to approx. 600°C",
+   "note": "Hot steel coils and hot aluminum products",
+   "name": "HP-600",
+   "slug": "hp-600",
+   "applications": [
+    "steel/hot-steel-coil-identification",
+    "aluminum/hot-aluminum-sow-identification",
+    "aluminum/hot-aluminum-ingot-identification"
+   ],
+   "industries": [
+    "aluminum",
+    "steel"
+   ]
+  },
+  {
+   "id": "hp-700t",
+   "type": "label",
+   "process_paths": [
+    "direct_hot_application"
+   ],
+   "app_temp": "Approx. 450–800°C",
+   "max_proc": "Up to approx. 800°C",
+   "note": "Hot slabs, billets and blooms",
+   "name": "HP-700T",
+   "slug": "hp-700t",
+   "applications": [
+    "steel/hot-steel-slab-identification",
+    "steel/hot-steel-billet-identification",
+    "steel/hot-steel-bloom-identification"
+   ],
+   "industries": [
+    "steel"
+   ]
+  },
+  {
+   "id": "hp-900",
+   "type": "label",
+   "process_paths": [
+    "direct_hot_application"
+   ],
+   "app_temp": "Approx. 450–900°C",
+   "max_proc": "Up to approx. 900°C",
+   "note": "Ultra-high-temperature hot steel identification",
+   "name": "HP-900",
+   "slug": "hp-900",
+   "applications": [
+    "steel/ultra-high-temperature-steel-identification"
+   ],
+   "industries": [
+    "steel"
+   ]
+  },
+  {
+   "id": "hp-120s",
+   "type": "label",
+   "process_paths": [
+    "heat_treatment_labels"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 220°C",
+   "note": "Chemical resistance and strong initial adhesion",
+   "name": "HP-120S",
+   "slug": "hp-120s",
+   "applications": [
+    "heat-resistant-asset-management/injection-mold-identification"
+   ],
+   "industries": [
+    "heat-resistant-asset-management"
+   ]
+  },
+  {
+   "id": "hp-120sh4",
+   "type": "label",
+   "process_paths": [
+    "heat_treatment_labels"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 220°C",
+   "note": "Higher chemical resistance and adhesion than HP-120S",
+   "name": "HP-120SH4",
+   "slug": "hp-120sh4",
+   "applications": [
+    "concrete/autoclaved-concrete-tracking",
+    "concrete/concrete-pipe-identification",
+    "concrete/aac-block-traceability",
+    "concrete/humid-heat-process-tracking"
+   ],
+   "industries": [
+    "concrete"
+   ]
+  },
+  {
+   "id": "hp-st200",
+   "type": "label",
+   "process_paths": [
+    "heat_treatment_labels"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 300°C",
+   "note": "Polyimide core; chemical resistance",
+   "name": "HP-ST200",
+   "slug": "hp-st200",
+   "applications": [],
+   "industries": []
+  },
+  {
+   "id": "hp-160",
+   "type": "label",
+   "process_paths": [
+    "heat_treatment_labels"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 300°C",
+   "note": "Exceptionally strong initial adhesion",
+   "name": "HP-160",
+   "slug": "hp-160",
+   "applications": [],
+   "industries": []
+  },
+  {
+   "id": "hp-150n",
+   "type": "label",
+   "process_paths": [
+    "heat_treatment_labels"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 350°C",
+   "note": "Strong initial adhesion",
+   "name": "HP-150N",
+   "slug": "hp-150n",
+   "applications": [
+    "heat-resistant-asset-management/injection-mold-identification"
+   ],
+   "industries": [
+    "heat-resistant-asset-management"
+   ]
+  },
+  {
+   "id": "hp-360",
+   "type": "label",
+   "process_paths": [
+    "heat_treatment_labels"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 600°C",
+   "note": "Stronger adhesion above approx. 500°C",
+   "name": "HP-360",
+   "slug": "hp-360",
+   "applications": [
+    "steel/steel-coil-annealing-traceability",
+    "aluminum/aluminum-billet-homogenizing-traceability"
+   ],
+   "industries": [
+    "aluminum",
+    "steel"
+   ]
+  },
+  {
+   "id": "hp-380n-plus",
+   "type": "label",
+   "process_paths": [
+    "heat_treatment_labels"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 600°C",
+   "note": "Thin, soft aluminum core for rough surfaces",
+   "name": "HP-380N-PLUS",
+   "slug": "hp-380n-plus",
+   "applications": [
+    "aluminum/aluminum-billet-homogenizing-traceability"
+   ],
+   "industries": [
+    "aluminum"
+   ]
+  },
+  {
+   "id": "hp-800a",
+   "type": "label",
+   "process_paths": [
+    "heat_treatment_labels"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 800°C",
+   "note": "Strong initial adhesion; two-layer adhesive",
+   "name": "HP-800A",
+   "slug": "hp-800a",
+   "applications": [
+    "steel/steel-coil-annealing-traceability"
+   ],
+   "industries": [
+    "steel"
+   ]
+  },
+  {
+   "id": "hp-800c",
+   "type": "label",
+   "process_paths": [
+    "heat_treatment_labels"
+   ],
+   "app_temp": "From room temperature to approx. 400°C",
+   "max_proc": "Approx. 800°C",
+   "note": "Applied cool, survives to ~800°C",
+   "name": "HP-800C",
+   "slug": "hp-800c",
+   "applications": [
+    "steel/steel-coil-annealing-traceability"
+   ],
+   "industries": [
+    "steel"
+   ]
+  },
+  {
+   "id": "hp-cbr-cx2",
+   "type": "label",
+   "process_paths": [
+    "heat_treatment_labels"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 1200°C",
+   "note": "Flexible; becomes integrated with substrate after firing",
+   "name": "HP-CBR-CX2",
+   "slug": "hp-cbr-cx2",
+   "applications": [
+    "heat-resistant-asset-management/injection-mold-identification",
+    "ceramics/ceramic-kiln-traceability",
+    "ceramics/alumina-setter-identification",
+    "ceramics/ceramic-jig-tracking",
+    "ceramics/crucible-identification",
+    "ceramics/repeated-firing-traceability"
+   ],
+   "industries": [
+    "ceramics",
+    "heat-resistant-asset-management"
+   ]
+  },
+  {
+   "id": "hp-cbr-hb",
+   "type": "label",
+   "process_paths": [
+    "heat_treatment_labels"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 1200°C",
+   "note": "Non-oxygen-atmosphere annealing and high-temperature scanning",
+   "name": "HP-CBR-HB",
+   "slug": "hp-cbr-hb",
+   "applications": [
+    "ceramics/ceramic-kiln-traceability",
+    "ceramics/alumina-setter-identification",
+    "ceramics/ceramic-jig-tracking",
+    "ceramics/crucible-identification",
+    "ceramics/repeated-firing-traceability"
+   ],
+   "industries": [
+    "ceramics"
+   ]
+  },
+  {
+   "id": "hp-st40",
+   "type": "tag",
+   "process_paths": [
+    "heat_treatment_tags"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 80°C",
+   "note": "Colored, weather-resistant, tear-resistant tag",
+   "name": "HP-ST40",
+   "slug": "hp-st40",
+   "applications": [],
+   "industries": []
+  },
+  {
+   "id": "hp-st30",
+   "type": "tag",
+   "process_paths": [
+    "heat_treatment_tags"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 250°C",
+   "note": "Colored, weather and chemical resistance",
+   "name": "HP-ST30",
+   "slug": "hp-st30",
+   "applications": [],
+   "industries": []
+  },
+  {
+   "id": "hp-st20",
+   "type": "tag",
+   "process_paths": [
+    "heat_treatment_tags"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 300°C",
+   "note": "Colored, tear-resistant and chemical-resistant tag",
+   "name": "HP-ST20",
+   "slug": "hp-st20",
+   "applications": [],
+   "industries": []
+  },
+  {
+   "id": "hp-pc10",
+   "type": "tag",
+   "process_paths": [
+    "heat_treatment_tags"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 300°C",
+   "note": "Coating process management",
+   "name": "HP-PC10",
+   "slug": "hp-pc10",
+   "applications": [
+    "coating-process-identification/powder-coating-tracking",
+    "coating-process-identification/coating-bake-cycle-tracking"
+   ],
+   "industries": [
+    "coating-process-identification"
+   ]
+  },
+  {
+   "id": "hp-t40",
+   "type": "tag",
+   "process_paths": [
+    "heat_treatment_tags"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 400°C",
+   "note": "Color stability after heat exposure",
+   "name": "HP-T40",
+   "slug": "hp-t40",
+   "applications": [
+    "coating-process-identification/powder-coating-tracking",
+    "coating-process-identification/coating-bake-cycle-tracking"
+   ],
+   "industries": [
+    "coating-process-identification"
+   ]
+  },
+  {
+   "id": "hp-t42",
+   "type": "tag",
+   "process_paths": [
+    "heat_treatment_tags"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 400°C",
+   "note": "Higher tear resistance than HP-T40",
+   "name": "HP-T42",
+   "slug": "hp-t42",
+   "applications": [
+    "aluminum/aluminum-parts-heat-treatment-tracking",
+    "aluminum/heat-treatment-jig-tracking",
+    "heat-resistant-asset-management/heat-treatment-jig-tracking",
+    "heat-resistant-asset-management/repeated-heat-cycle-tracking"
+   ],
+   "industries": [
+    "aluminum",
+    "heat-resistant-asset-management"
+   ]
+  },
+  {
+   "id": "hp-m83",
+   "type": "tag",
+   "process_paths": [
+    "heat_treatment_tags"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 850°C",
+   "note": "High durability and pickling resistance",
+   "name": "HP-M83",
+   "slug": "hp-m83",
+   "applications": [
+    "steel/steel-wire-annealing-traceability",
+    "heat-resistant-asset-management/furnace-fixture-identification",
+    "coating-process-identification/pretreatment-pickling-identification"
+   ],
+   "industries": [
+    "coating-process-identification",
+    "heat-resistant-asset-management",
+    "steel"
+   ]
+  },
+  {
+   "id": "hp-l80",
+   "type": "tag",
+   "process_paths": [
+    "heat_treatment_tags"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 1000°C",
+   "note": "Outdoor resistance; print-and-cut format",
+   "name": "HP-L80",
+   "slug": "hp-l80",
+   "applications": [
+    "heat-resistant-asset-management/furnace-fixture-identification"
+   ],
+   "industries": [
+    "heat-resistant-asset-management"
+   ]
+  },
+  {
+   "id": "hp-x82",
+   "type": "tag",
+   "process_paths": [
+    "heat_treatment_tags"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 1000°C",
+   "note": "Long-term durability and pickling resistance",
+   "name": "HP-X82",
+   "slug": "hp-x82",
+   "applications": [],
+   "industries": []
+  },
+  {
+   "id": "hp-l90",
+   "type": "tag",
+   "process_paths": [
+    "heat_treatment_tags"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 1200°C",
+   "note": "Long-term ultra-high-temperature tracking",
+   "name": "HP-L90",
+   "slug": "hp-l90",
+   "applications": [
+    "steel/forged-steel-heat-treatment-tracking",
+    "heat-resistant-asset-management/furnace-fixture-identification"
+   ],
+   "industries": [
+    "heat-resistant-asset-management",
+    "steel"
+   ]
+  },
+  {
+   "id": "hp-cbr-tag",
+   "type": "tag",
+   "process_paths": [
+    "heat_treatment_tags"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 1000°C",
+   "note": "Coated steel tag; chemical and scratch resistance",
+   "name": "HP-CBR-TAG",
+   "slug": "hp-cbr-tag",
+   "applications": [
+    "aluminum/aluminum-parts-heat-treatment-tracking",
+    "aluminum/heat-treatment-jig-tracking",
+    "heat-resistant-asset-management/heat-treatment-jig-tracking",
+    "heat-resistant-asset-management/repeated-heat-cycle-tracking"
+   ],
+   "industries": [
+    "aluminum",
+    "heat-resistant-asset-management"
+   ]
+  },
+  {
+   "id": "hp-cbr-oc",
+   "type": "tag",
+   "process_paths": [
+    "heat_treatment_tags"
+   ],
+   "app_temp": null,
+   "max_proc": "Approx. 1000°C",
+   "note": "Enhanced chemical and scratch resistance",
+   "name": "HP-CBR-OC",
+   "slug": "hp-cbr-oc",
+   "applications": [
+    "heat-resistant-asset-management/repeated-heat-cycle-tracking"
+   ],
+   "industries": [
+    "heat-resistant-asset-management"
+   ]
+  }
+ ],
+ "industries": [
+  {
+   "id": "steel",
+   "slug": "steel",
+   "title_en": "Steel Industry",
+   "title_zh": "钢铁行业",
+   "parent_type": "industry"
+  },
+  {
+   "id": "aluminum",
+   "slug": "aluminum",
+   "title_en": "Aluminum Industry",
+   "title_zh": "铝业",
+   "parent_type": "industry"
+  },
+  {
+   "id": "ceramics",
+   "slug": "ceramics",
+   "title_en": "Ceramics Industry",
+   "title_zh": "陶瓷行业",
+   "parent_type": "industry"
+  },
+  {
+   "id": "concrete",
+   "slug": "concrete",
+   "title_en": "Concrete Industry",
+   "title_zh": "混凝土行业",
+   "parent_type": "industry"
+  },
+  {
+   "id": "heat-resistant-asset-management",
+   "slug": "heat-resistant-asset-management",
+   "title_en": "Asset Management",
+   "title_zh": "资产管理",
+   "parent_type": "cross_industry_application"
+  },
+  {
+   "id": "coating-process-identification",
+   "slug": "coating-process-identification",
+   "title_en": "Product Coating",
+   "title_zh": "产品涂装",
+   "parent_type": "cross_industry_application"
+  }
+ ],
+ "applications": [
+  {
+   "parent": "steel",
+   "slug": "hot-steel-slab-identification",
+   "title_en": "Hot Steel Slab Identification",
+   "process_path": "direct_hot_application",
+   "recommended": [
+    "hp-700t"
+   ]
+  },
+  {
+   "parent": "steel",
+   "slug": "hot-steel-coil-identification",
+   "title_en": "Hot Steel Coil Identification",
+   "process_path": "direct_hot_application",
+   "recommended": [
+    "hp-600"
+   ]
+  },
+  {
+   "parent": "steel",
+   "slug": "hot-steel-billet-identification",
+   "title_en": "Hot Steel Billet Identification",
+   "process_path": "direct_hot_application",
+   "recommended": [
+    "hp-700t"
+   ]
+  },
+  {
+   "parent": "steel",
+   "slug": "hot-steel-bloom-identification",
+   "title_en": "Hot Steel Bloom Identification",
+   "process_path": "direct_hot_application",
+   "recommended": [
+    "hp-700t"
+   ]
+  },
+  {
+   "parent": "steel",
+   "slug": "ultra-high-temperature-steel-identification",
+   "title_en": "Ultra-High-Temperature Steel Identification",
+   "process_path": "direct_hot_application",
+   "recommended": [
+    "hp-900"
+   ]
+  },
+  {
+   "parent": "steel",
+   "slug": "steel-wire-annealing-traceability",
+   "title_en": "Steel Wire Pickling and Annealing",
+   "process_path": "heat_treatment_tags",
+   "recommended": [
+    "hp-m83"
+   ]
+  },
+  {
+   "parent": "steel",
+   "slug": "forged-steel-heat-treatment-tracking",
+   "title_en": "Forged Steel Heat-Treatment Tracking",
+   "process_path": "heat_treatment_tags",
+   "recommended": [
+    "hp-l90"
+   ]
+  },
+  {
+   "parent": "steel",
+   "slug": "steel-coil-annealing-traceability",
+   "title_en": "Steel Coil Annealing",
+   "process_path": "heat_treatment_labels",
+   "recommended": [
+    "hp-350n",
+    "hp-360",
+    "hp-800a",
+    "hp-800c"
+   ]
+  },
+  {
+   "parent": "aluminum",
+   "slug": "hot-aluminum-sow-identification",
+   "title_en": "Hot Aluminum Sow Identification",
+   "process_path": "direct_hot_application",
+   "recommended": [
+    "hp-600"
+   ]
+  },
+  {
+   "parent": "aluminum",
+   "slug": "hot-aluminum-ingot-identification",
+   "title_en": "Hot Aluminum Ingot Identification",
+   "process_path": "direct_hot_application",
+   "recommended": [
+    "hp-600"
+   ]
+  },
+  {
+   "parent": "aluminum",
+   "slug": "aluminum-billet-homogenizing-traceability",
+   "title_en": "Aluminum Billet Homogenizing",
+   "process_path": "heat_treatment_labels",
+   "recommended": [
+    "hp-350n",
+    "hp-360",
+    "hp-380n-plus"
+   ]
+  },
+  {
+   "parent": "aluminum",
+   "slug": "aluminum-parts-heat-treatment-tracking",
+   "title_en": "Aluminum Parts Heat Treatment",
+   "process_path": "heat_treatment_tags",
+   "recommended": [
+    "hp-t42",
+    "hp-cbr-tag"
+   ]
+  },
+  {
+   "parent": "aluminum",
+   "slug": "heat-treatment-jig-tracking",
+   "title_en": "Aluminum Heat-Treatment Jig Tracking",
+   "process_path": "heat_treatment_tags",
+   "recommended": [
+    "hp-t42",
+    "hp-cbr-tag"
+   ]
+  },
+  {
+   "parent": "heat-resistant-asset-management",
+   "slug": "heat-treatment-jig-tracking",
+   "title_en": "Reusable Heat-Treatment Jig Tracking",
+   "process_path": "heat_treatment_tags",
+   "recommended": [
+    "hp-t42",
+    "hp-cbr-tag"
+   ]
+  },
+  {
+   "parent": "heat-resistant-asset-management",
+   "slug": "injection-mold-identification",
+   "title_en": "Injection Mold Identification",
+   "process_path": "heat_treatment_labels",
+   "recommended": [
+    "hp-120s",
+    "hp-150n",
+    "hp-350n",
+    "hp-cbr-cx2"
+   ]
+  },
+  {
+   "parent": "heat-resistant-asset-management",
+   "slug": "repeated-heat-cycle-tracking",
+   "title_en": "Repeated Heat-Cycle Asset Tracking",
+   "process_path": "heat_treatment_tags",
+   "recommended": [
+    "hp-t42",
+    "hp-cbr-tag",
+    "hp-cbr-oc"
+   ]
+  },
+  {
+   "parent": "heat-resistant-asset-management",
+   "slug": "furnace-fixture-identification",
+   "title_en": "Furnace Fixture Identification",
+   "process_path": "heat_treatment_tags",
+   "recommended": [
+    "hp-m83",
+    "hp-l80",
+    "hp-l90"
+   ]
+  },
+  {
+   "parent": "coating-process-identification",
+   "slug": "powder-coating-tracking",
+   "title_en": "Powder-Coating Process Tracking",
+   "process_path": "heat_treatment_tags",
+   "recommended": [
+    "hp-pc10",
+    "hp-t40"
+   ]
+  },
+  {
+   "parent": "coating-process-identification",
+   "slug": "coating-bake-cycle-tracking",
+   "title_en": "Coating Bake-Cycle Tracking",
+   "process_path": "heat_treatment_tags",
+   "recommended": [
+    "hp-pc10",
+    "hp-t40"
+   ]
+  },
+  {
+   "parent": "coating-process-identification",
+   "slug": "pretreatment-pickling-identification",
+   "title_en": "Pretreatment and Pickling Identification",
+   "process_path": "heat_treatment_tags",
+   "recommended": [
+    "hp-m83"
+   ]
+  },
+  {
+   "parent": "coating-process-identification",
+   "slug": "painted-part-identification",
+   "title_en": "Painted-Part Identification",
+   "process_path": "heat_treatment_labels",
+   "recommended": []
+  },
+  {
+   "parent": "ceramics",
+   "slug": "ceramic-kiln-traceability",
+   "title_en": "Ceramic Kiln Process Tracking",
+   "process_path": "heat_treatment_labels",
+   "recommended": [
+    "hp-cbr-cx2",
+    "hp-cbr-hb"
+   ]
+  },
+  {
+   "parent": "ceramics",
+   "slug": "alumina-setter-identification",
+   "title_en": "Alumina Setter Identification",
+   "process_path": "heat_treatment_labels",
+   "recommended": [
+    "hp-cbr-cx2",
+    "hp-cbr-hb"
+   ]
+  },
+  {
+   "parent": "ceramics",
+   "slug": "ceramic-jig-tracking",
+   "title_en": "Ceramic Jig Tracking",
+   "process_path": "heat_treatment_labels",
+   "recommended": [
+    "hp-cbr-cx2",
+    "hp-cbr-hb"
+   ]
+  },
+  {
+   "parent": "ceramics",
+   "slug": "crucible-identification",
+   "title_en": "Crucible Identification",
+   "process_path": "heat_treatment_labels",
+   "recommended": [
+    "hp-cbr-cx2",
+    "hp-cbr-hb"
+   ]
+  },
+  {
+   "parent": "ceramics",
+   "slug": "repeated-firing-traceability",
+   "title_en": "Repeated Ceramic Firing",
+   "process_path": "heat_treatment_labels",
+   "recommended": [
+    "hp-cbr-cx2",
+    "hp-cbr-hb"
+   ]
+  },
+  {
+   "parent": "concrete",
+   "slug": "autoclaved-concrete-tracking",
+   "title_en": "Autoclaved Concrete Tracking",
+   "process_path": "heat_treatment_labels",
+   "recommended": [
+    "hp-120sh4"
+   ]
+  },
+  {
+   "parent": "concrete",
+   "slug": "concrete-pipe-identification",
+   "title_en": "Concrete Pipe Identification",
+   "process_path": "heat_treatment_labels",
+   "recommended": [
+    "hp-120sh4"
+   ]
+  },
+  {
+   "parent": "concrete",
+   "slug": "aac-block-traceability",
+   "title_en": "AAC Block Traceability",
+   "process_path": "heat_treatment_labels",
+   "recommended": [
+    "hp-120sh4"
+   ]
+  },
+  {
+   "parent": "concrete",
+   "slug": "humid-heat-process-tracking",
+   "title_en": "Humid-Heat Process Tracking",
+   "process_path": "heat_treatment_labels",
+   "recommended": [
+    "hp-120sh4"
+   ]
+  }
+ ]
+}

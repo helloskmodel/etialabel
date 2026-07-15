@@ -1,45 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.etialabel.com/products/by-industry/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/electronics-manufacturing-and-pcb-process/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/electronics-manufacturing-and-pcb-process/smt-placement-and-reflow-process/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/electronics-manufacturing-and-pcb-process/pcb-full-flow-process/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/electronics-manufacturing-and-pcb-process/esd-anti-static-and-cleanroom-marking/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/electronics-manufacturing-and-pcb-process/component-and-assembly-traceability/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/electronics-manufacturing-and-pcb-process/electronic-and-final-assembly-marking/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/electronics-manufacturing-and-pcb-process/test-qc-and-shipping-traceability/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/electronics-manufacturing-and-pcb-process/electronics-compliance-and-certification-marking/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/automotive-and-tire-industry/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/automotive-and-tire-industry/tire-vulcanization-and-rubber-molding-process/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/automotive-and-tire-industry/auto-parts-machining-heat-treatment/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/automotive-and-tire-industry/nev-specific-identification/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/automotive-and-tire-industry/wire-harness-and-vehicle-assembly/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/automotive-and-tire-industry/automotive-compliance-and-certification-marking/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/steel-and-metal-industry/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/steel-and-metal-industry/steel-hot-rolling-cold-rolling-process/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/steel-and-metal-industry/steel-heat-treatment-process/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/steel-and-metal-industry/steel-storage-and-logistics-traceability/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/medical-devices-and-ivd/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/medical-devices-and-ivd/medical-device-manufacturing-and-marking/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/medical-devices-and-ivd/in-vitro-diagnostics-ivd-process/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/medical-devices-and-ivd/medical-device-sterilization-and-packaging/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/pharma-randd-and-production/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/pharma-randd-and-production/pharma-randd-laboratory/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/pharma-randd-and-production/pharma-production-process/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/pharma-randd-and-production/pharma-cold-chain-storage-and-logistics/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/pharma-randd-and-production/pharma-compliance-and-traceability-marking/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/outdoor-facilities-and-photovoltaics/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/outdoor-facilities-and-photovoltaics/pv-power-plant-outdoor-weatherability/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/outdoor-facilities-and-photovoltaics/outdoor-security-and-municipal-facilities/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/outdoor-facilities-and-photovoltaics/outdoor-equipment-and-construction-machinery/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/outdoor-facilities-and-photovoltaics/outdoor-cable-and-pipeline-marking/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/telecom-cabling-and-equipment-rooms/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/telecom-cabling-and-equipment-rooms/telecom-room-cabling-marking/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/telecom-cabling-and-equipment-rooms/telecom-carrier-network-cabling/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/telecom-cabling-and-equipment-rooms/data-center-infrastructure/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/telecom-cabling-and-equipment-rooms/telecom-equipment-compliance-certification/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/ceramics-and-kilns/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/ceramics-and-kilns/ceramic-kiln-ultra-high-temp-process/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/ceramics-and-kilns/ceramic-sanitaryware-marking/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.etialabel.com/products/by-industry/ceramics-and-kilns/ceramic-manufacturing-process-marking/</loc><changefreq>weekly</changefreq></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.etialabel.com/industries/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/industries/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/industries/"/></url>
+  <url><loc>https://www.etialabel.com/industries/steel/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/industries/steel/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/industries/steel/"/></url>
+  <url><loc>https://www.etialabel.com/industries/aluminum/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/industries/aluminum/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/industries/aluminum/"/></url>
+  <url><loc>https://www.etialabel.com/industries/ceramics/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/industries/ceramics/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/industries/ceramics/"/></url>
+  <url><loc>https://www.etialabel.com/industries/concrete/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/industries/concrete/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/industries/concrete/"/></url>
+  <url><loc>https://www.etialabel.com/applications/heat-resistant-asset-management/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/applications/heat-resistant-asset-management/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/applications/heat-resistant-asset-management/"/></url>
+  <url><loc>https://www.etialabel.com/applications/coating-process-identification/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.etialabel.com/applications/coating-process-identification/"/><xhtml:link rel="alternate" hreflang="zh" href="https://www.etialabel.com/zh/applications/coating-process-identification/"/></url>
 </urlset>
