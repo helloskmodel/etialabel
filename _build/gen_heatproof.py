@@ -128,7 +128,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .why .ic{width:46px;height:46px;border-radius:12px;background:#fff;border:1px solid var(--line);color:var(--green-d);display:flex;align-items:center;justify-content:center;margin-bottom:14px;box-shadow:0 2px 8px rgba(16,34,58,.05)}
 .why .ic svg{width:24px;height:24px}
 .why .n{font-family:var(--serif);font-size:15px;color:var(--faint)}
-.why b{display:block;font-family:var(--serif);font-size:20px;color:var(--blue-deep);margin:2px 0 6px}
+.why b{display:block;font-family:var(--serif);font-size:20px;color:var(--blue-deep);margin:2px 0 2px}
+.why .sub{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--green-d);margin-bottom:8px}
 .why p{font-size:14px;color:var(--mut)}
 .brandwall{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
 .bchip{display:inline-block;font-size:12px;font-weight:700;padding:6px 14px;border-radius:22px;background:var(--bg);border:1px solid var(--line);color:var(--ink)}
@@ -558,45 +559,45 @@ ORG_JSONLD = {"@context":"https://schema.org","@type":"Organization","name":"ETI
     "description":"Supplier and application-support partner for durable, specialty industrial labels — from ultra-high-temperature to cryogenic, chemical and tamper-evident identification.",
     "contactPoint":[{"@type":"ContactPoint","contactType":"sales","email":"label@etia-tech.com"}]}
 
+# four pillars: (verb, sub-label, description)
 HOME_WHY = {
- "en":[("01","We Understand","We start with your application and operating conditions — surface, temperature, chemistry, print method and lifecycle — before recommending a material."),
-       ("02","We Source","We provide access to specialty materials matched to demanding applications — from ultra-high-temperature to cryogenic, chemical exposure and secure identification."),
-       ("03","We Develop","With flexible material constructions we support specialized, higher-mix and smaller-batch requirements that mass supply overlooks."),
-       ("04","We Support","From samples and application testing to in-house slitting, die-cutting and dependable repeat supply across the region.")],
- "zh":[("01","深入理解","在推荐材料之前,我们先了解应用与工况 —— 表面、温度、化学环境、打印方式与产品生命周期。"),
-       ("02","全球采购","我们整合面向严苛应用的特种材料 —— 覆盖超高温、深低温、化学暴露与防伪识别等场景。"),
-       ("03","自主研发","以柔性材料结构支持传统大批量供应难以覆盖的复杂、多品种、小批量需求。"),
-       ("04","持续支持","从样品与应用测试,到自有分切、模切与稳定的长期供应,覆盖区域交付。")],
+ "en":[("We Understand","Application First","We understand your application before recommending a material."),
+       ("We Match","Material Expertise","We match materials to real surfaces, processes, and environments."),
+       ("We Develop","Beyond Standard Products","We develop solutions for specialized requirements."),
+       ("We Support","Long-Term Partnership","From the first sample to dependable repeat supply.")],
+ "zh":[("我们理解","应用优先","在推荐材料之前,我们先理解您的真实应用。"),
+       ("我们匹配","材料专业","根据表面、工艺与环境匹配合适的材料。"),
+       ("我们开发","超越标准产品","针对专业需求开发更合适的材料方案。"),
+       ("我们支持","长期合作","从第一份样品,到稳定的重复供应。")],
 }
 
 # refined line icons for the four "We ..." pillars (24px, round caps, stroke = currentColor)
 WHY_ICONS = [
  # We Understand — magnifier (examine the application)
  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 21 21"/><path d="M8 10.5h5M10.5 8v5"/></svg>',
- # We Source — globe (specialty materials, worldwide)
- '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5a13 13 0 0 1 0 17 13 13 0 0 1 0-17z"/></svg>',
+ # We Match — target (material matched to the application)
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".6" fill="currentColor"/></svg>',
  # We Develop — flask (constructions & testing)
  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3.5h5M10 3.5v5.3L5.7 16.8A2 2 0 0 0 7.5 20h9a2 2 0 0 0 1.8-3.2L14 8.8V3.5"/><path d="M8.2 14.5h7.6"/></svg>',
  # We Support — headset (samples, testing, repeat supply)
  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><path d="M4 13.5h1.4A1.6 1.6 0 0 1 7 15.1v2.3A1.6 1.6 0 0 1 5.4 19H4z"/><path d="M20 13.5h-1.4a1.6 1.6 0 0 0-1.6 1.6v2.3a1.6 1.6 0 0 0 1.6 1.6H20z"/><path d="M20 19a3 3 0 0 1-3 3h-2"/></svg>',
 ]
 
-# five focus industries with their key APPLICATIONS as tags (embodies "explore by application").
+# Application Center — six focus industries with their applications as tags.
 # format: (name_en, name_zh, url, apps_en[], apps_zh[]) — names only, no partner brands.
 HOME_FOCUS = [
- ("Electronics & PCB","电子制造与PCB","/industries/electronics-pcb/",
-  ["Reflow","Wave Solder","ESD","PCB Wash"],["回流焊","波峰焊","ESD防静电","PCB清洗"]),
- ("Metal Processing & Ceramics","金属加工与陶瓷","/industries/",
-  ["Hot-Metal Direct","Heat-Treatment","Kiln 1300°C","Annealing"],["热态直贴","热处理","窑炉1300℃","退火"]),
- ("Medical & Pharma","医疗与医药","/industries/healthcare-life-sciences/",
-  ["Cryogenic","Sterilization","Skin-Contact","Laboratory"],["超低温","灭菌","贴肤","实验室"]),
- ("Automotive","汽车","/industries/automotive-label-materials/",
-  ["Underhood","EV Battery","Wire Harness","VIN"],["发动机舱","EV电池","线束","VIN"]),
- ("Wire & Cable","电力与线缆","/industries/wire-cable/",
-  ["Flag","Wrap-Around","Heat-Shrink","Harness"],["旗型","缠绕","热缩","线束"]),
- ("Outdoor & Energy","户外与能源","/industries/outdoor-energy/",
-  ["Solar Panels","Outdoor Equipment","Energy Storage","UV / Weather","Rating Plates"],
-  ["光伏组件","户外设备","储能电池","耐UV耐候","铭牌资产"]),
+ ("Medical & Laboratory","医疗与实验室","/industries/healthcare-life-sciences/",
+  ["Cryogenic storage","Slides","Chemical exposure"],["深低温存储","载玻片","化学环境"]),
+ ("Electronics Manufacturing","电子制造","/industries/electronics-pcb/",
+  ["PCB assembly","Reflow","Chemical cleaning"],["PCB装配","回流焊","化学清洗"]),
+ ("Steel & Metals","钢铁与金属","/industries/steel/",
+  ["Hot-metal labeling","Heat treatment","Traceability"],["热态贴标","热处理","生产追溯"]),
+ ("Ceramics & Sanitaryware","陶瓷与卫浴","/industries/ceramics/",
+  ["Kiln firing","Acid washing","Process tracking"],["窑炉烧制","酸洗","工艺追踪"]),
+ ("Tire & Rubber","轮胎与橡胶","/featured-solutions/e-2314-tire-vulcanization-barcode-label/",
+  ["Vulcanization","Pressure","Barcode tracking"],["硫化","压力","条码追溯"]),
+ ("Automotive","汽车制造","/industries/automotive-label-materials/",
+  ["VIN identification","Laser marking","Weather exposure"],["VIN标识","激光打标","户外耐候"]),
 ]
 
 # one line icon per focus industry (Computype-style icon + text), same order as HOME_FOCUS
@@ -669,11 +670,11 @@ def harsh_module(lang):
             L(lang,u), INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)], esc(fz if lang=="zh" else fe),
             pills, ("进入" if lang=="zh" else "Explore"))
     eyebrow="应用中心" if lang=="zh" else "APPLICATION CENTER"
-    title="按应用探索" if lang=="zh" else "Explore by Application"
-    sub=("根据工艺、环境与性能要求,找到合适的标签。" if lang=="zh"
-         else "Find the right label for your process, environment, and performance requirements.")
+    title="查找您的应用。" if lang=="zh" else "Find Your Application."
+    sub=("根据具体工艺、环境与标识要求,探索适合的耐久标签材料。" if lang=="zh"
+         else "Explore durable label materials selected for specific processes, environments, and identification requirements.")
     viewall="查看全部应用" if lang=="zh" else "View All Applications"
-    return ('<section class="blk" style="background:var(--tint-blue)"><div class="wrap">'
+    return ('<section class="blk" id="applications" style="background:var(--tint-blue)"><div class="wrap">'
             '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div>'
             '<div style="margin-top:18px"><a class="btn sec" href="%s">%s →</a></div></div></section>')%(
         esc(eyebrow),esc(title),esc(sub),cards,L(lang,u_ind_hub()),esc(viewall))
@@ -725,26 +726,42 @@ def build_home(lang):
         L(lang,u_industry(iid)),esc(INDUSTRIES[iid]["title_zh"] if lang=="zh" else INDUSTRIES[iid]["title_en"]),
         ("%d applications"%len([a for a in APPS if a["parent"]==iid]) if lang=="en" else "%d 个应用"%len([a for a in APPS if a["parent"]==iid])))
         for iid in ind_order)
-    why_html="".join('<div class="why"><div class="ic">%s</div><b>%s</b><p>%s</p></div>'%(WHY_ICONS[k%len(WHY_ICONS)],esc(t),esc(d)) for k,(n,t,d) in enumerate(HOME_WHY[lang]))
+    why_html="".join('<div class="why"><div class="ic">%s</div><b>%s</b><span class="sub">%s</span><p>%s</p></div>'%(
+        WHY_ICONS[k%len(WHY_ICONS)],esc(verb),esc(subl),esc(d)) for k,(verb,subl,d) in enumerate(HOME_WHY[lang]))
     brands=["Polyonics","YS-Tech","FlexCon","Computype","ETIA"]
     brand_html="".join('<span class="bchip">%s</span>'%esc(b) for b in brands)
 
-    # Phase-1 home (compact): Hero -> Service Bar -> Why ETIA -> ETIA Selected -> CTA.
-    # No partner brands (approvals pending); no oversized split images / carousel.
-    why_intro=("先理解应用,再匹配材料 —— 这是我们做每一枚标签的方式。" if lang=="zh"
-               else "We understand the application before matching the material — that's how we approach every label.")
+    # Phase-1 home (finalized copy): Hero -> Why ETIA -> Application Center -> Final CTA.
+    en = (lang=="en")
+    hero_eyebrow = "DURABLE IDENTIFICATION · SPECIALTY LABEL MATERIALS" if en else "耐久标识 · 特种标签材料"
+    hero_line = "Every durable label begins with understanding the application." if en else "每一枚耐久标签,都始于对应用的理解。"
+    hero_para = ("For over 20 years, ETIA has helped manufacturers solve demanding identification challenges through specialty material expertise and application knowledge." if en
+                 else "二十多年来,ETIA 凭借特种材料经验与应用专业,帮助制造企业解决严苛环境中的复杂标识难题。")
+    b1v = "Find Your Application" if en else "查找您的应用"
+    b2v = "Request Samples" if en else "申请样品"
+    why_eyebrow = "WHY ETIA" if en else "为什么选择 ETIA"
+    why_head_v = "Built Around Your Application." if en else "围绕您的应用而构建。"
+    why_intro_v = "Every application is different. That is where we begin." if en else "每一种应用都不一样,我们从这里开始。"
+    fcta_title = "Cannot Find Your Application?" if en else "没有找到您的应用?"
+    fcta_para = ("Tell us about your surface, process, environment, and identification requirements." if en
+                 else "告诉我们粘贴表面、生产工艺、使用环境与标识要求。")
+    fcta_b1 = "Talk to a Label Specialist" if en else "咨询标签专家"
+    fcta_b2 = "Request Samples" if en else "申请样品"
+    final_cta = ('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
+                 '<div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn on-dark" href="%s">%s</a></div></div></div>')%(
+        esc(fcta_title),esc(fcta_para),L(lang,"/contact/"),esc(fcta_b1),L(lang,"/contact/"),esc(fcta_b2))
     body="""<section class="hero"><div class="wrap">
-<div class="eyebrow">%s</div><h1 class="serif">%s</h1><p class="lede">%s</p>
-<div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn sec" href="%s">%s</a></div></div></section>
+<div class="eyebrow">%s</div><h1 class="serif">%s</h1>
+<p class="lede" style="color:var(--ink);font-size:20px;font-weight:600;max-width:32em">%s</p>
+<p class="lede">%s</p>
+<div class="btns"><a class="btn pri" href="#applications">%s</a><a class="btn sec" href="%s">%s</a></div></div></section>
+<section class="blk" style="background:var(--tint-green)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="whygrid">%s</div></div></section>
 %s
-<section class="blk" style="background:var(--tint-green)"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="whygrid">%s</div></div></section>
-%s
-<div class="wrap">%s</div>""" % (
-        esc(eyebrow),esc(h1),esc(lede),L(lang,u_products()),esc(b1),L(lang,"/contact/"),esc(b2),
-        svcbar,
-        esc(why_head),esc(why_intro),why_html,
+%s""" % (
+        esc(hero_eyebrow),esc(h1),esc(hero_line),esc(hero_para),esc(b1v),L(lang,"/contact/"),esc(b2v),
+        esc(why_eyebrow),esc(why_head_v),esc(why_intro_v),why_html,
         harsh_module(lang),
-        cta(lang))
+        final_cta)
 
     canonical=SITE+PREFIX[lang]+path
     schema_js="".join('<script type="application/ld+json">%s</script>'%json.dumps(s,ensure_ascii=False) for s in [ORG_JSONLD])
