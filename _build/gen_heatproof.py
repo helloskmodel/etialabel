@@ -129,8 +129,51 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .why p{font-size:14px;color:var(--mut)}
 .brandwall{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
 .bchip{display:inline-block;font-size:12px;font-weight:700;padding:6px 14px;border-radius:22px;background:var(--bg);border:1px solid var(--line);color:var(--ink)}
+/* split sections (image + text) */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:26px 0}
+.split .txt .eyebrow{margin-bottom:10px}
+.split .txt h2{font-family:var(--serif);font-weight:600;font-size:30px;color:var(--ink);margin-bottom:8px}
+.split .txt>.sub{color:var(--mut);margin-bottom:14px;max-width:36em}
+.imgframe{border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,var(--mint),#fff);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;color:var(--faint);font-size:12.5px;letter-spacing:.04em;overflow:hidden}
+.imgframe img{width:100%;height:100%;object-fit:cover;display:block}
+.whyrows{display:flex;flex-direction:column}
+.whyrow{display:flex;gap:14px;padding:15px 0;border-top:1px solid var(--line)}
+.whyrow:first-child{border-top:none}
+.whyrow .ic{flex:none;width:44px;height:44px;border-radius:11px;background:var(--mint);display:flex;align-items:center;justify-content:center;color:var(--green-d)}
+.whyrow .ic svg{width:23px;height:23px}
+.whyrow b{display:block;font-family:var(--serif);font-size:18px;color:var(--blue-deep)}
+.whyrow p{font-size:14px;color:var(--mut);margin-top:2px}
+.focuslist{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.focuslist a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 18px;border:1px solid var(--line);border-radius:12px;color:var(--ink);font-weight:700;font-size:16px}
+.focuslist a:hover{border-color:var(--blue);color:var(--blue);text-decoration:none;box-shadow:0 6px 20px rgba(26,86,219,.08)}
+.focuslist a small{color:var(--faint);font-size:12.5px;font-weight:500;display:block;margin-top:2px}
+.selrows{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.selrows a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 16px;border:1px solid var(--line);border-radius:11px;color:var(--ink)}
+.selrows a:hover{border-color:var(--blue);text-decoration:none}
+.selrows a .l b{color:var(--blue-deep)}.selrows a .l span{color:var(--mut);font-size:13px}
+.selrows a .r{color:var(--faint);font-size:12.5px;white-space:nowrap}
+/* case-studies carousel (16:9) */
+.cases{position:relative}
+.cwin{overflow:hidden;border-radius:18px;border:1px solid var(--line)}
+.ctrack{display:flex;transition:transform .45s ease}
+.cslide{min-width:100%}
+.cslide .img16{aspect-ratio:16/9;background:linear-gradient(135deg,var(--mint),#eef2fb);display:flex;align-items:center;justify-content:center;color:var(--faint);font-size:13px;letter-spacing:.04em}
+.cslide .img16 img{width:100%;height:100%;object-fit:cover;display:block}
+.cslide .cap{padding:20px 24px;background:#fff;display:flex;justify-content:space-between;align-items:flex-end;gap:18px;flex-wrap:wrap}
+.cslide .cap .eyebrow{color:var(--blue)}
+.cslide .cap h3{font-family:var(--serif);font-size:24px;color:var(--blue-deep);margin:4px 0 9px}
+.cslide .cap .kw{display:flex;flex-wrap:wrap;gap:6px}
+.cnav{display:flex;align-items:center;justify-content:space-between;margin-top:16px}
+.cdots{display:flex;gap:8px}
+.cdot{width:9px;height:9px;border-radius:50%;background:var(--line);border:none;cursor:pointer;padding:0}
+.cdot.on{background:var(--blue)}
+.carrows{display:flex;gap:8px}
+.carrow{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:16px;color:var(--ink);line-height:1}
+.carrow:hover{border-color:var(--blue);color:var(--blue)}
 @media(max-width:820px){.two{grid-template-columns:1fr}footer .fg{grid-template-columns:1fr}.pagehead h1{font-size:30px}
-.hero h1{font-size:32px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}}
+.hero h1{font-size:32px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}
+.split{grid-template-columns:1fr;gap:22px}.split .imgframe{order:-1}.split .txt h2{font-size:25px}
+.cslide .cap h3{font-size:20px}}
 """
 
 NAV_ITEMS = [("Products", u_products(), "products"),
@@ -484,36 +527,68 @@ HOME_WHY = {
        ("04","持续支持","从样品与应用测试,到自有分切、模切与稳定的长期供应,覆盖区域交付。")],
 }
 
-def harsh_module(lang):
-    """Homepage 'ETIA Selected Harsh Environment Labels' module (6 featured products).
-    Reads featured.json (built by gen_featured_data); returns '' if unavailable."""
-    try:
-        fdata = json.load(open(os.path.join(BUILD_DIR, "data", "featured.json")))
-    except Exception:
-        return ""
+# line icons for the four "We ..." pillars (stroke = currentColor)
+WHY_ICONS = [
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M1.5 12S5 5 12 5s10.5 7 10.5 7-3.5 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg>',
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 5.7 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.7-3.5-9s1-6.5 3.5-9z"/></svg>',
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 3h6M10 3v6l-5.2 9.2A2 2 0 0 0 6.5 21h11a2 2 0 0 0 1.7-2.8L14 9V3"/><path d="M7.5 15h9"/></svg>',
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 15a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z"/></svg>',
+]
+
+# five focus industries (names only — no partner brands)
+HOME_FOCUS = [
+ ("Electronics & PCB","电子制造与PCB","Reflow, wave solder, ESD, wash-resistant","回流焊、波峰焊、ESD、耐清洗","/industries/electronics-pcb/"),
+ ("Metal Processing & Ceramics","金属加工与陶瓷","Hot-metal direct apply, heat-treatment, kiln firing to 1300°C","热态直贴、热处理、窑炉烧制至1300℃","/industries/"),
+ ("Medical & Pharma","医疗与医药","Cryogenic, sterilization, skin-contact, laboratory","超低温、灭菌、贴肤、实验室","/industries/healthcare-life-sciences/"),
+ ("Automotive","汽车","Underhood, EV battery, wire harness, VIN","发动机舱、EV电池、线束、VIN","/industries/automotive-label-materials/"),
+ ("Wire & Cable","电力与线缆","Flag, wrap, heat-shrink, harness identification","旗型、缠绕、热缩、线束识别","/industries/wire-cable/"),
+]
+
+def _load_featured():
+    try: return json.load(open(os.path.join(BUILD_DIR, "data", "featured.json")))
+    except Exception: return None
+
+def harsh_carousel(lang):
+    """ETIA Selected → Case Studies: 16:9 image + keywords, manual carousel (no autoplay)."""
+    fdata = _load_featured()
+    if not fdata: return ""
     prods = sorted([p for p in fdata["products"] if p.get("homepage_featured")], key=lambda x: x["featured_order"])
     if not prods: return ""
     def land(p): return "/products/%s/" % p["maps_to"] if p.get("maps_to") else "%s%s/" % (fdata["center_route"], p["slug"])
-    cards = ""
-    for p in prods:
-        tags = "".join('<span class="pill">%s</span>' % esc(t) for t in (p["tags_zh"] if lang=="zh" else p["tags_en"]))
-        cta_l = "查看方案" if lang=="zh" else "View Solution"
-        cards += ('<div class="card"><div class="eyebrow" style="color:var(--blue);margin-bottom:2px">%s</div>'
-                  '<div class="rows"><b style="color:var(--blue-deep)">%s</b></div>'
-                  '<h3>%s</h3><p>%s</p><div class="xlinks">%s</div>'
-                  '<div style="margin-top:10px"><a href="%s">%s →</a></div></div>') % (
-            esc(p["industry_zh"] if lang=="zh" else p["industry_en"]),
-            esc(p["harsh_zh"] if lang=="zh" else p["harsh_en"]),
-            esc(p["model"]), esc(p["one_liner_zh"] if lang=="zh" else p["one_liner_en"]),
-            tags, L(lang, land(p)), cta_l)
-    title = "ETIA严苛环境标签精选" if lang=="zh" else "ETIA Selected Harsh Environment Labels"
-    sub = ("面向极端温度、化学品、磨损、油污与防篡改要求的严苛环境标签材料。" if lang=="zh"
-           else "Label materials selected for demanding temperatures, chemicals, abrasion, challenging surfaces and secure identification.")
+    slides = ""; dots = ""
+    for i, p in enumerate(prods):
+        img = ('<img src="%s" alt="%s">' % (esc(p["home_image"]), esc(p["harsh_en"]))) if p.get("home_image") else esc("16:9 image · %s" % p["model"])
+        kw = "".join('<span class="pill tag">%s</span>' % esc(t) for t in (p["tags_zh"] if lang=="zh" else p["tags_en"]))
+        view = "查看方案" if lang=="zh" else "View Solution"
+        slides += ('<div class="cslide"><div class="img16">%s</div><div class="cap">'
+                   '<div><div class="eyebrow">%s · %s</div><h3>%s</h3><div class="kw">%s</div></div>'
+                   '<a class="btn pri" style="padding:9px 18px;font-size:14px" href="%s">%s →</a></div></div>') % (
+            img, esc(p["industry_zh"] if lang=="zh" else p["industry_en"]), esc(p["model"]),
+            esc(p["harsh_zh"] if lang=="zh" else p["harsh_en"]), kw, L(lang, land(p)), view)
+        dots += '<button class="cdot%s" data-i="%d" aria-label="slide %d"></button>' % (" on" if i==0 else "", i, i+1)
+    title = "重点应用案例" if lang=="zh" else "Selected Applications"
+    sub = ("真实严苛工况下的重点产品与应用。" if lang=="zh" else "Key products in real harsh-environment applications.")
     viewall = "查看全部严苛环境标签" if lang=="zh" else "View All Harsh Environment Labels"
-    return ('<section class="blk" style="background:var(--bg)"><div class="wrap">'
-            '<h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div>'
-            '<div style="margin-top:18px"><a class="btn sec" href="%s">%s →</a></div></div></section>') % (
-        esc(title), esc(sub), cards, L(lang, fdata["center_route"]), esc(viewall))
+    js = ("<script>(function(){var t=document.getElementById('ctrack');if(!t)return;var n=t.children.length,i=0;"
+          "function go(x){i=(x+n)%n;t.style.transform='translateX('+(-i*100)+'%')';"
+          "var d=document.querySelectorAll('.cdot');for(var k=0;k<d.length;k++)d[k].className='cdot'+(k===i?' on':'');}"
+          "var pv=document.getElementById('cprev'),nx=document.getElementById('cnext');"
+          "if(pv)pv.onclick=function(){go(i-1)};if(nx)nx.onclick=function(){go(i+1)};"
+          "document.querySelectorAll('.cdot').forEach(function(b){b.onclick=function(){go(+b.getAttribute('data-i'))}});"
+          "})();</script>")
+    return ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div>'
+            '<div class="cases"><div class="cwin"><div class="ctrack" id="ctrack">%s</div></div>'
+            '<div class="cnav"><div class="cdots">%s</div><div class="carrows">'
+            '<button class="carrow" id="cprev" aria-label="previous">‹</button>'
+            '<button class="carrow" id="cnext" aria-label="next">›</button></div></div>'
+            '<div style="margin-top:16px"><a class="btn sec" href="%s">%s →</a></div></div></section>%s') % (
+        esc(title), esc(sub), slides, dots, L(lang, fdata["center_route"]), esc(viewall), js)
+
+def img_frame(label):
+    return '<div class="imgframe">%s</div>' % esc(label)
+
+def build_home(lang):
+    path = "/"
 
 def build_home(lang):
     path = "/"
@@ -563,21 +638,30 @@ def build_home(lang):
     brands=["Polyonics","YS-Tech","FlexCon","Computype","ETIA"]
     brand_html="".join('<span class="bchip">%s</span>'%esc(b) for b in brands)
 
-    # Phase-1 home order: Hero -> Service Bar -> Why ETIA -> ETIA Selected -> CTA.
-    # Partner-brand wall and brand-naming nav sections are omitted (brand approvals pending).
+    # Phase-1 home: Hero -> Service Bar -> Why ETIA (img left/text right) ->
+    # What We Focus (text left/img right, 5 industries) -> Case Studies carousel -> CTA.
+    # No partner brands (approvals pending).
     why_intro=("先理解应用,再匹配材料 —— 这是我们做每一枚标签的方式。" if lang=="zh"
                else "We understand the application before matching the material — that's how we approach every label.")
+    focus_intro=("我们专注于普通标签容易失效的严苛工况,覆盖五大重点行业。" if lang=="zh"
+                 else "We focus on the harsh conditions where ordinary labels fail — across five core industries.")
+    whyrows_html="".join('<div class="whyrow"><div class="ic">%s</div><div><b>%s</b><p>%s</p></div></div>'%(
+        WHY_ICONS[k%len(WHY_ICONS)], esc(t), esc(d)) for k,(n,t,d) in enumerate(HOME_WHY[lang]))
+    focus_html="".join('<a href="%s"><span>%s<small>%s</small></span><span style="color:var(--faint)">›</span></a>'%(
+        L(lang,u), esc(fz if lang=="zh" else fe), esc(dz if lang=="zh" else de)) for fe,fz,de,dz,u in HOME_FOCUS)
     body="""<section class="hero"><div class="wrap">
 <div class="eyebrow">%s</div><h1 class="serif">%s</h1><p class="lede">%s</p>
 <div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn sec" href="%s">%s</a></div></div></section>
 %s
-<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="whygrid">%s</div></div></section>
+<section class="blk"><div class="wrap"><div class="split">%s<div class="txt"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="whyrows">%s</div></div></div></div></section>
+<section class="blk" style="background:var(--bg)"><div class="wrap"><div class="split"><div class="txt"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="focuslist">%s</div></div>%s</div></div></section>
 %s
 <div class="wrap">%s</div>""" % (
         esc(eyebrow),esc(h1),esc(lede),L(lang,u_products()),esc(b1),L(lang,"/contact/"),esc(b2),
         svcbar,
-        esc(why_head),esc(why_intro),why_html,
-        harsh_module(lang),
+        img_frame("home-why-etia.jpg"), ("WHY ETIA" if lang=="en" else "为什么选择 ETIA"), esc(why_head), esc(why_intro), whyrows_html,
+        ("WHAT WE FOCUS" if lang=="en" else "我们专注"), ("What we focus on" if lang=="en" else "五大重点行业"), esc(focus_intro), focus_html, img_frame("home-what-we-focus.jpg"),
+        harsh_carousel(lang),
         cta(lang))
 
     canonical=SITE+PREFIX[lang]+path

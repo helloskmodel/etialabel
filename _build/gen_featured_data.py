@@ -30,7 +30,8 @@ def F(pid,model,slug,ind_en,ind_zh,harsh_en,harsh_zh,one_en,one_zh,tags_en,tags_
         "verified_claim_en":verified_en,"verified_claim_zh":verified_zh,
         "challenge_en":challenge_en,"challenge_zh":challenge_zh,
         "applications_en":apps_en or [],"applications_zh":apps_zh or [],
-        "tds_url":None,"tds_available":False}  # fill tds_url with the COS link when supplied
+        "tds_url":None,"tds_available":False,  # fill tds_url with the COS link when supplied
+        "home_image":None}  # 16:9 case-study image (COS URL) for the homepage carousel
 
 PRODUCTS=[
  F("fps-e-4812","E-4812","e-4812-cryogenic-direct-apply-label",

@@ -77,7 +77,8 @@
     "冻融样本追踪"
    ],
    "tds_url": null,
-   "tds_available": false
+   "tds_available": false,
+   "home_image": null
   },
   {
    "id": "fps-hp900",
@@ -112,7 +113,8 @@
    "applications_en": [],
    "applications_zh": [],
    "tds_url": null,
-   "tds_available": false
+   "tds_available": false,
+   "home_image": null
   },
   {
    "id": "fps-hp-cx",
@@ -148,7 +150,8 @@
    "applications_en": [],
    "applications_zh": [],
    "tds_url": null,
-   "tds_available": false
+   "tds_available": false,
+   "home_image": null
   },
   {
    "id": "fps-e-2314",
@@ -192,7 +195,8 @@
     "成品轮胎识别"
    ],
    "tds_url": null,
-   "tds_available": false
+   "tds_available": false,
+   "home_image": null
   },
   {
    "id": "fps-e-2532bl",
@@ -235,7 +239,8 @@
     "车辆合规标识"
    ],
    "tds_url": null,
-   "tds_available": false
+   "tds_available": false,
+   "home_image": null
   },
   {
    "id": "fps-xf-581",
@@ -280,7 +285,8 @@
     "在制品追踪"
    ],
    "tds_url": null,
-   "tds_available": false
+   "tds_available": false,
+   "home_image": null
   },
   {
    "id": "fps-e-2813",
@@ -323,7 +329,8 @@
     "大型设备铭牌"
    ],
    "tds_url": null,
-   "tds_available": false
+   "tds_available": false,
+   "home_image": null
   },
   {
    "id": "fps-apex",
@@ -368,7 +375,8 @@
     "ESD 管控电子"
    ],
    "tds_url": null,
-   "tds_available": false
+   "tds_available": false,
+   "home_image": null
   }
  ]
 }
