@@ -12,12 +12,14 @@ import gen_healthcare as hc
 import gen_pcb as pcb
 import gen_wirecable as wc
 import gen_pi as pi
+import gen_featured as fs
 
-hp.main()      # clean + build heatproof + heatproof sitemaps + base vercel.json
+hp.main()      # clean + build heatproof + home (with harsh-env module) + base vercel.json
 auto.main()    # build automotive + automotive sitemap + merge redirects
 hc.main()      # build healthcare + healthcare sitemap + merge redirects
 pcb.main()     # build electronics & pcb / polyimide categories + sitemap
 wc.main()      # build wire & cable + sitemap
 pi.main()      # build Polyimide (PI) Material & Application Center + By-Material hub
+fs.main()      # build Featured Solutions center + harsh-environment landing pages
 print("BUILD COMPLETE — total EN canonical URLs:",
-      len(hp.ALL_URLS)+len(auto.AUTO_URLS)+len(hc.HC_URLS)+len(pcb.URLS)+len(wc.URLS)+len(pi.URLS))
+      len(hp.ALL_URLS)+len(auto.AUTO_URLS)+len(hc.HC_URLS)+len(pcb.URLS)+len(wc.URLS)+len(pi.URLS)+len(fs.URLS))

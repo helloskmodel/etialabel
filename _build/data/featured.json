@@ -1,0 +1,358 @@
+{
+ "center_route": "/featured-solutions/",
+ "conditions": [
+  {
+   "slug": "extreme-cold",
+   "en": "Extreme Cold",
+   "zh": "超低温"
+  },
+  {
+   "slug": "extreme-heat",
+   "en": "Extreme Heat",
+   "zh": "超高温"
+  },
+  {
+   "slug": "chemical-exposure",
+   "en": "Chemical Exposure",
+   "zh": "化学暴露"
+  },
+  {
+   "slug": "abrasion-rough",
+   "en": "Abrasion & Rough Surfaces",
+   "zh": "磨损与粗糙表面"
+  },
+  {
+   "slug": "tamper-evidence",
+   "en": "Tamper Evidence",
+   "zh": "防篡改"
+  },
+  {
+   "slug": "pcb-process",
+   "en": "PCB Process",
+   "zh": "PCB制程"
+  }
+ ],
+ "products": [
+  {
+   "id": "fps-e-4812",
+   "model": "E-4812",
+   "slug": "e-4812-cryogenic-direct-apply-label",
+   "industry_en": "Medical & Laboratory",
+   "industry_zh": "医疗与实验室",
+   "harsh_en": "-196°C Cryogenic Identification",
+   "harsh_zh": "-196℃液氮存储标签",
+   "one_liner_en": "Apply directly at ultra-low temperature without thawing stored samples.",
+   "one_liner_zh": "在超低温下直接贴标,无需解冻已存样本。",
+   "tags_en": [
+    "Cryogenic",
+    "Freeze-Thaw",
+    "Chemical Resistant"
+   ],
+   "tags_zh": [
+    "超低温",
+    "冻融循环",
+    "耐化学"
+   ],
+   "harsh_conditions": [
+    "extreme-cold",
+    "chemical-exposure"
+   ],
+   "homepage_featured": true,
+   "featured_order": 1,
+   "maps_to": null,
+   "verified_claim_en": null,
+   "verified_claim_zh": null,
+   "challenge_en": "Ultra-low-temperature direct application, liquid-nitrogen storage, freeze-thaw cycling and exposure to media such as DMSO, methanol, IPA and ethanol.",
+   "challenge_zh": "超低温直接贴标、液氮存储、冻融循环,以及 DMSO、甲醇、IPA、乙醇等介质暴露。",
+   "applications_en": [
+    "Cryovial and sample identification",
+    "Liquid-nitrogen (vapor / liquid phase) storage",
+    "Biobank and freezer inventory",
+    "Freeze-thaw sample tracking"
+   ],
+   "applications_zh": [
+    "冻存管与样本识别",
+    "液氮(气相/液相)存储",
+    "生物样本库与冰箱库存",
+    "冻融样本追踪"
+   ]
+  },
+  {
+   "id": "fps-hp900",
+   "model": "HP900",
+   "slug": "hp900-hot-metal-direct-apply-label",
+   "industry_en": "Steel & Metal",
+   "industry_zh": "钢铁与金属",
+   "harsh_en": "900°C Hot-Metal Direct Apply",
+   "harsh_zh": "900℃热态金属直贴标签",
+   "one_liner_en": "Apply identification directly onto hot metal surfaces up to 900°C.",
+   "one_liner_zh": "在最高 900℃ 的热态金属表面直接贴标。",
+   "tags_en": [
+    "900°C (verified)",
+    "Direct-Apply",
+    "Heat-Treatment"
+   ],
+   "tags_zh": [
+    "900℃(已验证)",
+    "热态直贴",
+    "热处理"
+   ],
+   "harsh_conditions": [
+    "extreme-heat"
+   ],
+   "homepage_featured": true,
+   "featured_order": 2,
+   "maps_to": "hp-900",
+   "verified_claim_en": "Direct application to hot metal surfaces up to 900°C is demonstrated (verified).",
+   "verified_claim_zh": "最高 900℃ 热态金属表面直接贴标具有证明(已验证)。",
+   "challenge_en": null,
+   "challenge_zh": null,
+   "applications_en": [],
+   "applications_zh": []
+  },
+  {
+   "id": "fps-hp-cx",
+   "model": "HP CX11/CX2",
+   "slug": "hp-cx11-cx2-ceramic-kiln-label",
+   "industry_en": "Ceramics & Sanitaryware",
+   "industry_zh": "陶瓷与卫浴",
+   "harsh_en": "1300°C Kiln Firing",
+   "harsh_zh": "1300℃陶瓷烧制标签",
+   "one_liner_en": "Track ceramic ware through kiln firing up to 1300°C.",
+   "one_liner_zh": "在最高 1300℃ 的窑炉烧制中追踪陶瓷制品。",
+   "tags_en": [
+    "1300°C (verified)",
+    "Kiln Firing",
+    "Acid-Wash"
+   ],
+   "tags_zh": [
+    "1300℃(已验证)",
+    "窑炉烧制",
+    "酸洗"
+   ],
+   "harsh_conditions": [
+    "extreme-heat",
+    "chemical-exposure"
+   ],
+   "homepage_featured": true,
+   "featured_order": 3,
+   "maps_to": "hp-cbr-cx2",
+   "verified_claim_en": "1300°C ceramic kiln firing is demonstrated (verified).",
+   "verified_claim_zh": "1300℃ 陶瓷窑炉烧制性能具有证明(已验证)。",
+   "challenge_en": null,
+   "challenge_zh": null,
+   "applications_en": [],
+   "applications_zh": []
+  },
+  {
+   "id": "fps-e-2314",
+   "model": "E-2314",
+   "slug": "e-2314-tire-vulcanization-barcode-label",
+   "industry_en": "Tire & Rubber",
+   "industry_zh": "轮胎与橡胶",
+   "harsh_en": "Tire Vulcanization Barcode",
+   "harsh_zh": "轮胎硫化条码标签",
+   "one_liner_en": "Keep barcodes readable through ~200°C vulcanization, pressure and chemicals.",
+   "one_liner_zh": "在约 200℃ 硫化、压力与化学品中保持条码可读。",
+   "tags_en": [
+    "~200°C Process",
+    "Pressure",
+    "Chemical Resistant"
+   ],
+   "tags_zh": [
+    "约200℃制程",
+    "耐压",
+    "耐化学"
+   ],
+   "harsh_conditions": [
+    "extreme-heat",
+    "chemical-exposure"
+   ],
+   "homepage_featured": true,
+   "featured_order": 4,
+   "maps_to": null,
+   "verified_claim_en": null,
+   "verified_claim_zh": null,
+   "challenge_en": "Tire vulcanization at ~200°C with pressure, acids/alkalis, oils and cleaning agents, followed by outdoor, ozone and UV exposure.",
+   "challenge_zh": "约 200℃ 轮胎硫化,伴随压力、酸碱、油污与清洗剂,随后经历户外、臭氧与紫外线暴露。",
+   "applications_en": [
+    "Green-tire barcode tracking",
+    "Vulcanization process traceability",
+    "Cured-tire identification"
+   ],
+   "applications_zh": [
+    "生胎条码追踪",
+    "硫化过程追溯",
+    "成品轮胎识别"
+   ]
+  },
+  {
+   "id": "fps-e-2532bl",
+   "model": "E-2532BL",
+   "slug": "e-2532bl-laser-tamper-evident-vin-label",
+   "industry_en": "Automotive",
+   "industry_zh": "汽车",
+   "harsh_en": "Laser Tamper-Evident VIN",
+   "harsh_zh": "激光防篡改VIN标签",
+   "one_liner_en": "Laser-markable VIN identification with tamper-evident, weatherable construction.",
+   "one_liner_zh": "可激光打标的 VIN 标识,具备防篡改、耐候结构。",
+   "tags_en": [
+    "Tamper-Evident",
+    "Laser-Markable",
+    "Weatherable"
+   ],
+   "tags_zh": [
+    "防篡改",
+    "激光可标记",
+    "耐候"
+   ],
+   "harsh_conditions": [
+    "tamper-evidence"
+   ],
+   "homepage_featured": true,
+   "featured_order": 5,
+   "maps_to": null,
+   "verified_claim_en": null,
+   "verified_claim_zh": null,
+   "challenge_en": "Vehicle identification (VIN) requiring laser marking, tamper and transfer resistance, and durability against weather, abrasion and automotive chemicals.",
+   "challenge_zh": "车辆身份识别(VIN)需激光加工,并具备防篡改、防转移,以及耐候、耐磨与耐汽车化学品的耐久性。",
+   "applications_en": [
+    "VIN plates and labels",
+    "Anti-transfer security identification",
+    "Vehicle compliance marking"
+   ],
+   "applications_zh": [
+    "VIN 铭牌与标签",
+    "防转移安全识别",
+    "车辆合规标识"
+   ]
+  },
+  {
+   "id": "fps-xf-581",
+   "model": "XF-581",
+   "slug": "xf-581-polyimide-pcb-label-material",
+   "industry_en": "Electronics Manufacturing",
+   "industry_zh": "电子制造",
+   "harsh_en": "High-Temp PCB Polyimide",
+   "harsh_zh": "PCB耐高温PI标签",
+   "one_liner_en": "Polyimide identification through reflow soldering, high heat and chemical cleaning.",
+   "one_liner_zh": "聚酰亚胺标识,可经受回流焊、高温与化学清洗。",
+   "tags_en": [
+    "PCB",
+    "Reflow",
+    "Wash-Resistant"
+   ],
+   "tags_zh": [
+    "PCB",
+    "回流焊",
+    "耐清洗"
+   ],
+   "harsh_conditions": [
+    "extreme-heat",
+    "pcb-process",
+    "chemical-exposure"
+   ],
+   "homepage_featured": true,
+   "featured_order": 6,
+   "maps_to": null,
+   "verified_claim_en": null,
+   "verified_claim_zh": null,
+   "challenge_en": "PCB and electronic-component tracking through reflow soldering and high-temperature processing with chemical cleaning, across automotive, medical and avionics electronics.",
+   "challenge_zh": "PCB 与电子元件在回流焊及高温处理、化学清洗中的追踪,覆盖汽车、医疗与航空电子。",
+   "applications_en": [
+    "PCB traceability barcodes",
+    "Component pre-process identification",
+    "Work-in-process tracking"
+   ],
+   "applications_zh": [
+    "PCB 追溯条码",
+    "元件制程前标识",
+    "在制品追踪"
+   ]
+  },
+  {
+   "id": "fps-e-2813",
+   "model": "E-2813",
+   "slug": "e-2813-aggressive-adhesive-label-material",
+   "industry_en": "Automotive Parts",
+   "industry_zh": "汽车零部件",
+   "harsh_en": "Aggressive Adhesive for Rough & Oily Surfaces",
+   "harsh_zh": "粗糙油污表面强粘标签",
+   "one_liner_en": "Bonds to powder-coated, rough and oily surfaces where standard labels lift.",
+   "one_liner_zh": "可粘附于普通标签易翘的粉末涂层、粗糙及油污表面。",
+   "tags_en": [
+    "Rough Surface",
+    "Oily Surface",
+    "Powder-Coat"
+   ],
+   "tags_zh": [
+    "粗糙表面",
+    "油污表面",
+    "粉末涂层"
+   ],
+   "harsh_conditions": [
+    "abrasion-rough"
+   ],
+   "homepage_featured": false,
+   "featured_order": 7,
+   "maps_to": null,
+   "verified_claim_en": null,
+   "verified_claim_zh": null,
+   "challenge_en": "Powder-coated, rough and oily surfaces on automotive parts, molds and large equipment where standard adhesives lift or fail.",
+   "challenge_zh": "汽车零件、模具与大型设备的粉末涂层、粗糙及油污表面,普通胶黏剂易翘边或失效。",
+   "applications_en": [
+    "Automotive parts marking",
+    "Mold and tooling identification",
+    "Large-equipment nameplates"
+   ],
+   "applications_zh": [
+    "汽车零件标识",
+    "模具与工装识别",
+    "大型设备铭牌"
+   ]
+  },
+  {
+   "id": "fps-apex",
+   "model": "APEX",
+   "slug": "apex-high-performance-polyimide-pcb-labels",
+   "industry_en": "Electronics Manufacturing",
+   "industry_zh": "电子制造",
+   "harsh_en": "High-Performance PI for Modern PCB",
+   "harsh_zh": "现代PCB高性能PI标签",
+   "one_liner_en": "Engineered for modern PCB fluxes and cleaners with multi-reflow durability.",
+   "one_liner_zh": "面向现代 PCB 助焊剂与清洗剂,具备多次回流焊耐久性。",
+   "tags_en": [
+    "+72% Flux (verified)",
+    "Multi-Reflow",
+    "ESD Option"
+   ],
+   "tags_zh": [
+    "助焊+72%(已验证)",
+    "多次回流",
+    "ESD可选"
+   ],
+   "harsh_conditions": [
+    "extreme-heat",
+    "pcb-process",
+    "chemical-exposure"
+   ],
+   "homepage_featured": false,
+   "featured_order": 8,
+   "maps_to": null,
+   "verified_claim_en": "72% flux-resistance improvement versus the previous product line (tested).",
+   "verified_claim_zh": "助焊剂性能较上一代产品线提升 72%(有试验佐证)。",
+   "challenge_en": "Modern PCB fluxes and cleaners, multiple reflow cycles, and small-font barcode legibility with optional ESD control.",
+   "challenge_zh": "现代 PCB 助焊剂与清洗剂、多次回流焊,以及小字体条码可读性,并可选 ESD 控制。",
+   "applications_en": [
+    "High-density PCB traceability",
+    "Multi-reflow assembly tracking",
+    "ESD-controlled electronics"
+   ],
+   "applications_zh": [
+    "高密度 PCB 追溯",
+    "多次回流装配追踪",
+    "ESD 管控电子"
+   ]
+  }
+ ]
+}

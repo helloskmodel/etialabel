@@ -485,6 +485,37 @@ HOME_WHY = {
        ("04","持续支持","从样品与应用测试,到自有分切、模切与稳定的长期供应,覆盖区域交付。")],
 }
 
+def harsh_module(lang):
+    """Homepage 'ETIA Selected Harsh Environment Labels' module (6 featured products).
+    Reads featured.json (built by gen_featured_data); returns '' if unavailable."""
+    try:
+        fdata = json.load(open(os.path.join(BUILD_DIR, "data", "featured.json")))
+    except Exception:
+        return ""
+    prods = sorted([p for p in fdata["products"] if p.get("homepage_featured")], key=lambda x: x["featured_order"])
+    if not prods: return ""
+    def land(p): return "/products/%s/" % p["maps_to"] if p.get("maps_to") else "%s%s/" % (fdata["center_route"], p["slug"])
+    cards = ""
+    for p in prods:
+        tags = "".join('<span class="pill">%s</span>' % esc(t) for t in (p["tags_zh"] if lang=="zh" else p["tags_en"]))
+        cta_l = "查看方案" if lang=="zh" else "View Solution"
+        cards += ('<div class="card"><div class="eyebrow" style="color:var(--blue);margin-bottom:2px">%s</div>'
+                  '<div class="rows"><b style="color:var(--blue-deep)">%s</b></div>'
+                  '<h3>%s</h3><p>%s</p><div class="xlinks">%s</div>'
+                  '<div style="margin-top:10px"><a href="%s">%s →</a></div></div>') % (
+            esc(p["industry_zh"] if lang=="zh" else p["industry_en"]),
+            esc(p["harsh_zh"] if lang=="zh" else p["harsh_en"]),
+            esc(p["model"]), esc(p["one_liner_zh"] if lang=="zh" else p["one_liner_en"]),
+            tags, L(lang, land(p)), cta_l)
+    title = "ETIA严苛环境标签精选" if lang=="zh" else "ETIA Selected Harsh Environment Labels"
+    sub = ("面向极端温度、化学品、磨损、油污与防篡改要求的严苛环境标签材料。" if lang=="zh"
+           else "Label materials selected for demanding temperatures, chemicals, abrasion, challenging surfaces and secure identification.")
+    viewall = "查看全部严苛环境标签" if lang=="zh" else "View All Harsh Environment Labels"
+    return ('<section class="blk" style="background:var(--bg)"><div class="wrap">'
+            '<h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div>'
+            '<div style="margin-top:18px"><a class="btn sec" href="%s">%s →</a></div></div></section>') % (
+        esc(title), esc(sub), cards, L(lang, fdata["center_route"]), esc(viewall))
+
 def build_home(lang):
     path = "/"
     if lang == "en":
@@ -540,6 +571,7 @@ def build_home(lang):
 <section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div></div></section>
 <section class="blk" style="background:var(--bg)"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div></div></section>
 <section class="blk"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>
+%s
 <section class="blk"><div class="wrap"><h2>%s</h2><div class="whygrid">%s</div></div></section>
 <section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="brandwall">%s</div></div></section>
 <div class="wrap">%s</div>""" % (
@@ -548,6 +580,7 @@ def build_home(lang):
         esc(paths_title),esc(paths_sub),pcards_html,
         esc(prog_title),esc(prog_sub),lines_html,
         ("行业覆盖" if lang=="zh" else "Industries we serve"),ind_html,
+        harsh_module(lang),
         esc(why_head),why_html,
         esc(brands_head),esc(brands_sub),brand_html,
         cta(lang))
@@ -611,7 +644,7 @@ def clean():
     # by the orchestrator ordering); heatproof runs first, automotive layers on top.
     for d in ["products","industries","applications","technical-resources","about","contact","zh",
               "materials","brands","insights","support","company","privacy","cookies","terms",
-              "label-materials","popular"]:
+              "label-materials","popular","featured-solutions"]:
         p=os.path.join(ROOT,d)
         if os.path.isdir(p): shutil.rmtree(p)
     for f in os.listdir(ROOT):
