@@ -3,12 +3,12 @@
   "prefix": {"en": "", "zh": "/zh", "vi": "/vi", "th": "/th"},
   "lang_name": {"en": "EN", "zh": "中文", "vi": "Tiếng Việt", "th": "ไทย"},
   "focus_urls": [
-    "/industries/healthcare-life-sciences/",
     "/industries/electronics-pcb/",
-    "/industries/steel/",
-    "/industries/ceramics/",
-    "/featured-solutions/e-2314-tire-vulcanization-barcode-label/",
-    "/industries/automotive-label-materials/"
+    "/industries/",
+    "/industries/healthcare-life-sciences/",
+    "/industries/automotive-label-materials/",
+    "/industries/wire-cable/",
+    "/industries/outdoor-energy/"
   ],
   "en": {
     "nav": ["Products", "Industries & Applications", "Technical Resources", "About ETIA", "Contact"],
@@ -32,12 +32,12 @@
     "appc_sub": "Explore durable label materials selected for specific processes, environments, and identification requirements.",
     "appc_viewall": "View All Applications",
     "focus": [
-      ["Medical & Laboratory", ["Cryogenic storage", "Slides", "Chemical exposure"]],
-      ["Electronics Manufacturing", ["PCB assembly", "Reflow", "Chemical cleaning"]],
-      ["Steel & Metals", ["Hot-metal labeling", "Heat treatment", "Traceability"]],
-      ["Ceramics & Sanitaryware", ["Kiln firing", "Acid washing", "Process tracking"]],
-      ["Tire & Rubber", ["Vulcanization", "Pressure", "Barcode tracking"]],
-      ["Automotive", ["VIN identification", "Laser marking", "Weather exposure"]]
+      ["Electronics & PCB", ["Reflow", "Wave solder", "ESD", "PCB wash"]],
+      ["Metal Processing & Ceramics", ["Hot-metal direct", "Heat treatment", "Kiln 1300°C", "Annealing"]],
+      ["Medical & Pharma", ["Cryogenic", "Sterilization", "Skin-contact", "Laboratory"]],
+      ["Automotive", ["Underhood", "EV battery", "Wire harness", "VIN"]],
+      ["Wire & Cable", ["Flag", "Wrap-around", "Heat-shrink", "Harness"]],
+      ["Outdoor & Energy", ["Solar panels", "Outdoor equipment", "Energy storage", "UV / weather"]]
     ],
     "explore": "Explore",
     "fcta_title": "Cannot Find Your Application?",
@@ -70,12 +70,12 @@
     "appc_sub": "根据具体工艺、环境与标识要求，探索适合的耐久标签材料。",
     "appc_viewall": "查看全部应用",
     "focus": [
-      ["医疗与实验室", ["深低温存储", "载玻片", "化学环境"]],
-      ["电子制造", ["PCB 装配", "回流焊", "化学清洗"]],
-      ["钢铁与金属", ["热态贴标", "热处理", "生产追溯"]],
-      ["陶瓷与卫浴", ["窑炉烧制", "酸洗", "工艺追踪"]],
-      ["轮胎与橡胶", ["硫化", "压力", "条码追溯"]],
-      ["汽车制造", ["VIN 标识", "激光打标", "户外耐候"]]
+      ["电子制造与PCB", ["回流焊", "波峰焊", "ESD防静电", "PCB清洗"]],
+      ["金属加工与陶瓷", ["热态直贴", "热处理", "窑炉1300℃", "退火"]],
+      ["医疗与医药", ["超低温", "灭菌", "贴肤", "实验室"]],
+      ["汽车", ["发动机舱", "EV电池", "线束", "VIN"]],
+      ["电力与线缆", ["旗型", "缠绕", "热缩", "线束"]],
+      ["户外与能源", ["光伏组件", "户外设备", "储能电池", "耐UV耐候"]]
     ],
     "explore": "进入",
     "fcta_title": "没有找到您的应用？",
@@ -108,12 +108,12 @@
     "appc_sub": "Khám phá vật liệu nhãn bền vững được lựa chọn theo từng quy trình, môi trường và yêu cầu nhận diện cụ thể.",
     "appc_viewall": "Xem tất cả ứng dụng",
     "focus": [
-      ["Y tế & Phòng thí nghiệm", ["Lưu trữ siêu lạnh", "Lam kính", "Hóa chất"]],
-      ["Sản xuất điện tử", ["Lắp ráp PCB", "Hàn reflow", "Làm sạch hóa học"]],
-      ["Thép & Kim loại", ["Dán nhãn kim loại nóng", "Xử lý nhiệt", "Truy xuất"]],
-      ["Gốm sứ & Thiết bị vệ sinh", ["Nung lò", "Rửa axit", "Theo dõi quy trình"]],
-      ["Lốp xe & Cao su", ["Lưu hóa", "Áp suất", "Theo dõi mã vạch"]],
-      ["Ô tô", ["Nhận diện VIN", "Khắc laser", "Khả năng chịu thời tiết"]]
+      ["Điện tử & PCB", ["Hàn reflow", "Hàn sóng", "ESD", "Rửa PCB"]],
+      ["Gia công kim loại & Gốm sứ", ["Dán kim loại nóng", "Xử lý nhiệt", "Nung 1300°C", "Ủ nhiệt"]],
+      ["Y tế & Dược phẩm", ["Siêu lạnh", "Tiệt trùng", "Tiếp xúc da", "Phòng thí nghiệm"]],
+      ["Ô tô", ["Khoang máy", "Pin EV", "Bó dây", "VIN"]],
+      ["Dây & Cáp", ["Nhãn cờ", "Quấn quanh", "Ống co nhiệt", "Bó dây"]],
+      ["Ngoài trời & Năng lượng", ["Tấm pin mặt trời", "Thiết bị ngoài trời", "Lưu trữ năng lượng", "UV / Thời tiết"]]
     ],
     "explore": "Khám phá",
     "fcta_title": "Chưa tìm thấy ứng dụng của bạn?",
@@ -146,12 +146,12 @@
     "appc_sub": "สำรวจวัสดุฉลากที่ทนทานซึ่งคัดเลือกตามกระบวนการ สภาพแวดล้อม และข้อกำหนดด้านการระบุข้อมูลแต่ละประเภท",
     "appc_viewall": "ดูการใช้งานทั้งหมด",
     "focus": [
-      ["การแพทย์และห้องปฏิบัติการ", ["การจัดเก็บอุณหภูมิต่ำมาก", "สไลด์แก้ว", "สารเคมี"]],
-      ["การผลิตอิเล็กทรอนิกส์", ["การประกอบ PCB", "รีโฟลว์", "การล้างด้วยสารเคมี"]],
-      ["เหล็กและโลหะ", ["การติดฉลากบนโลหะร้อน", "การอบชุบความร้อน", "การตรวจสอบย้อนกลับ"]],
-      ["เซรามิกและสุขภัณฑ์", ["การเผาในเตา", "การล้างด้วยกรด", "การติดตามกระบวนการ"]],
-      ["ยางรถยนต์และยาง", ["การวัลคาไนซ์", "แรงดัน", "การติดตามด้วยบาร์โค้ด"]],
-      ["ยานยนต์", ["การระบุ VIN", "การมาร์กด้วยเลเซอร์", "ความทนทานต่อสภาพอากาศ"]]
+      ["อิเล็กทรอนิกส์และ PCB", ["รีโฟลว์", "เวฟโซลเดอร์", "ESD", "ล้าง PCB"]],
+      ["งานโลหะและเซรามิก", ["ติดโลหะร้อน", "อบชุบความร้อน", "เผา 1300°C", "อบอ่อน"]],
+      ["การแพทย์และเภสัชกรรม", ["อุณหภูมิต่ำมาก", "ฆ่าเชื้อ", "สัมผัสผิว", "ห้องปฏิบัติการ"]],
+      ["ยานยนต์", ["ห้องเครื่อง", "แบตเตอรี่ EV", "ชุดสายไฟ", "VIN"]],
+      ["สายไฟและเคเบิล", ["ฉลากธง", "พันรอบ", "ท่อหด", "ชุดสายไฟ"]],
+      ["กลางแจ้งและพลังงาน", ["แผงโซลาร์", "อุปกรณ์กลางแจ้ง", "กักเก็บพลังงาน", "UV / สภาพอากาศ"]]
     ],
     "explore": "สำรวจ",
     "fcta_title": "ยังไม่พบการใช้งานของคุณใช่หรือไม่?",
