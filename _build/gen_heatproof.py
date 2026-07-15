@@ -236,11 +236,11 @@ Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)"
 
 def cta(lang):
     if lang == "zh":
-        return """<div class="cta"><div class="ic">⚡</div><h3>提供工况，我们匹配材料并寄样验证。</h3>
-<p>告知贴标时的物件温度、后续最高工艺温度、表面与附着方式,我们推荐方案并安排样品。</p>
+        return """<div class="cta"><div class="ic">⚡</div><h3>始于应用。终于选对材料。</h3>
+<p>告知表面、温度、化学环境与打印方式,我们推荐材料并安排样品验证。</p>
 <div class="btns"><a class="btn pri" href="%s">申请样品</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
-    return """<div class="cta"><div class="ic">⚡</div><h3>Tell us the process. We'll match the material and validate by sample.</h3>
-<p>Share the object temperature at application, the maximum later process temperature, the surface and the attachment method — we'll recommend an approach and arrange samples.</p>
+    return """<div class="cta"><div class="ic">⚡</div><h3>Start with the Application. Finish with the Right Material.</h3>
+<p>Tell us the surface, temperature, chemistry and print method — we'll recommend the material and arrange samples.</p>
 <div class="btns"><a class="btn pri" href="%s">Request a Sample</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
 
 def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, active=""):
@@ -668,10 +668,10 @@ def harsh_module(lang):
                 '<div class="body"><h3>%s</h3><div class="apps">%s</div><div class="go">%s →</div></div></a>')%(
             L(lang,u), INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)], esc(fz if lang=="zh" else fe),
             pills, ("进入" if lang=="zh" else "Explore"))
-    eyebrow="按应用探索" if lang=="zh" else "EXPLORE BY APPLICATION"
-    title="面向严苛应用的精选材料" if lang=="zh" else "Proven Materials for Demanding Applications"
-    sub=("根据具体行业、工艺、表面、温度及标识难题,探索适合的标签材料与解决方案。" if lang=="zh"
-         else "Explore label materials selected for specific industries, processes, surfaces, temperatures, and identification challenges.")
+    eyebrow="应用中心" if lang=="zh" else "APPLICATION CENTER"
+    title="按应用探索" if lang=="zh" else "Explore by Application"
+    sub=("根据工艺、环境与性能要求,找到合适的标签。" if lang=="zh"
+         else "Find the right label for your process, environment, and performance requirements.")
     viewall="查看全部应用" if lang=="zh" else "View All Applications"
     return ('<section class="blk" style="background:var(--tint-blue)"><div class="wrap">'
             '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div>'
@@ -685,7 +685,7 @@ def build_home(lang):
     path = "/"
     if lang == "en":
         eyebrow="Durable Identification · Specialty Label Materials"
-        h1="Where materials meet applications."
+        h1="Where Materials Meet Applications."
         lede="Specialty label materials and application support for demanding manufacturing environments — from ultra-high-temperature steel and ceramics to heat-treatment tracking. We start from your application, not a catalog."
         b1,b2="Explore Products","Request Samples"
         svc=["100% Quality Testing","Application-Driven Solutions","Flexible Supply","Long-Term Support"]
@@ -695,7 +695,7 @@ def build_home(lang):
                 ("Industries & Applications","By industry and process — steel, aluminum, ceramics, concrete and cross-industry uses.",u_ind_hub())]
         prog_title="Ultra-high-temperature program"
         prog_sub="YS-Tech HEATPROOF materials for identification that survives casting, rolling, annealing and firing."
-        why_head="Built around your application."
+        why_head="Built Around Your Application."
         brands_head="Global brands we work with"
         brands_sub="We combine specialty materials from selected international brands with ETIA's own developed constructions."
     else:

@@ -57,10 +57,10 @@ FS_CSS="""<style>.cchip{font-size:13px;font-weight:600;padding:7px 13px;border-r
 
 def cta_fs(lang):
     if lang=="zh":
-        return ('<div class="cta"><div class="ic">⚡</div><h3>在您的真实工艺中测试材料。</h3>'
+        return ('<div class="cta"><div class="ic">⚡</div><h3>始于应用。终于选对材料。</h3>'
                 '<p>提交温度、表面、化学品、打印方式与标签尺寸,申请进一步选型或样品测试。</p>'
                 '<div class="btns"><a class="btn pri" href="%s">申请样品</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
-    return ('<div class="cta"><div class="ic">⚡</div><h3>Test the material in your real process.</h3>'
+    return ('<div class="cta"><div class="ic">⚡</div><h3>Start with the Application. Finish with the Right Material.</h3>'
             '<p>Send your temperature, surface, chemicals, print method and label size to request selection support or sample testing.</p>'
             '<div class="btns"><a class="btn pri" href="%s">Request a Sample</a><a class="btn on-dark" href="%s">Discuss Your Application</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
 

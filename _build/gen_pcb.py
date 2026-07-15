@@ -68,10 +68,10 @@ def itemlist(items,lang):
 
 def cta_pcb(lang):
     if lang=="zh":
-        return ('<div class="cta"><div class="ic">⚡</div><h3>告诉我们您的PCB工艺,我们协助选材并寄样。</h3>'
+        return ('<div class="cta"><div class="ic">⚡</div><h3>始于应用。终于选对材料。</h3>'
                 '<p>提供峰值/持续温度、回流或波峰焊路线、清洗化学品与循环次数、ESD要求与条码密度,我们从 Polyonics 聚酰亚胺中给出选型建议。</p>'
                 '<div class="btns"><a class="btn pri" href="%s">申请样品</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
-    return ('<div class="cta"><div class="ic">⚡</div><h3>Tell us your PCB process. We\'ll support selection and samples.</h3>'
+    return ('<div class="cta"><div class="ic">⚡</div><h3>Start with the Application. Finish with the Right Material.</h3>'
             '<p>Share peak/continuous temperature, reflow or wave-solder route, wash chemistry and cycles, ESD needs and barcode density — we\'ll recommend from Polyonics polyimide materials.</p>'
             '<div class="btns"><a class="btn pri" href="%s">Request Samples</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
 

@@ -179,10 +179,10 @@ def build_hub(lang):
 
 def cta_auto(lang):
     if lang=="zh":
-        return ('<div class="cta"><div class="ic">⚡</div><h3>说明您的汽车标签应用,我们协助选型并寄样。</h3>'
+        return ('<div class="cta"><div class="ic">⚡</div><h3>始于应用。终于选对材料。</h3>'
                 '<p>告知车辆区域、表面、温度、化学暴露、安全要求与打印方式,我们从 3M 与 FLEXcon 材料中给出选型建议并安排样品。</p>'
                 '<div class="btns"><a class="btn pri" href="%s">申请材料样品</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>') % (L(lang,"/contact/"),L(lang,"/contact/"))
-    return ('<div class="cta"><div class="ic">⚡</div><h3>Tell us your automotive application. We\'ll support selection and samples.</h3>'
+    return ('<div class="cta"><div class="ic">⚡</div><h3>Start with the Application. Finish with the Right Material.</h3>'
             '<p>Share the vehicle area, surface, temperature, chemical exposure, security requirement and print method — we\'ll recommend from 3M and FLEXcon materials and arrange samples.</p>'
             '<div class="btns"><a class="btn pri" href="%s">Request Material Samples</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>') % (L(lang,"/contact/"),L(lang,"/contact/"))
 

@@ -103,10 +103,10 @@ def neutral_table(prods, lang):
 
 def cta_hc(lang):
     if lang=="zh":
-        return ('<div class="cta"><div class="ic">⚡</div><h3>说明您的医疗/实验室识别需求,我们协助选型并寄样。</h3>'
+        return ('<div class="cta"><div class="ic">⚡</div><h3>始于应用。终于选对材料。</h3>'
                 '<p>告知应用、温度(冷冻/液氮)、灭菌方式、化学暴露、是否贴肤或导电,我们从 FLEXcon 与 BIO TECH 材料中给出选型建议。</p>'
                 '<div class="btns"><a class="btn pri" href="%s">申请材料样品</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
-    return ('<div class="cta"><div class="ic">⚡</div><h3>Tell us your medical or lab identification need. We\'ll support selection and samples.</h3>'
+    return ('<div class="cta"><div class="ic">⚡</div><h3>Start with the Application. Finish with the Right Material.</h3>'
             '<p>Share the application, temperature (freeze / LN2), sterilization method, chemical exposure, skin-contact or conductivity — we\'ll recommend from FLEXcon and BIO TECH materials.</p>'
             '<div class="btns"><a class="btn pri" href="%s">Request Material Samples</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
 

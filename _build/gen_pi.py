@@ -89,10 +89,10 @@ PI_CSS="""<style>
 
 def cta_pi(lang):
     if lang=="zh":
-        return ('<div class="cta"><div class="ic">⚡</div><h3>告诉我们您的高温制程,我们协助 PI 选材并寄样。</h3>'
+        return ('<div class="cta"><div class="ic">⚡</div><h3>始于应用。终于选对材料。</h3>'
                 '<p>提供制程温度、持续/峰值温度、ESD、耐化学、阻燃与打印要求,我们从 POLYONICS 与 ETIA 聚酰亚胺中给出建议。</p>'
                 '<div class="btns"><a class="btn pri" href="%s">申请样品</a><a class="btn on-dark" href="%s">咨询材料工程师</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
-    return ('<div class="cta"><div class="ic">⚡</div><h3>Tell us your high-temperature process. We\'ll support PI selection and samples.</h3>'
+    return ('<div class="cta"><div class="ic">⚡</div><h3>Start with the Application. Finish with the Right Material.</h3>'
             '<p>Share process, continuous/peak temperature, ESD, chemical, flame and print requirements — we\'ll recommend from POLYONICS and ETIA polyimide materials.</p>'
             '<div class="btns"><a class="btn pri" href="%s">Request Samples</a><a class="btn on-dark" href="%s">Talk to a Materials Engineer</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
 
