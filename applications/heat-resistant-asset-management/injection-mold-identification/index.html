@@ -25,6 +25,10 @@ nav{display:flex;align-items:center;gap:26px}
 nav a{font-size:14.5px;font-weight:600;color:var(--ink);white-space:nowrap}
 nav a:hover{color:var(--blue)}nav a.on{color:var(--blue)}
 nav .lang{font-size:13px;color:var(--faint);border:1px solid var(--line);border-radius:8px;padding:5px 10px}
+.langsw{display:inline-flex;gap:2px;margin-left:10px;border:1px solid var(--line);border-radius:9px;padding:2px}
+nav .langsw a{display:inline-block;font-size:12px;color:var(--faint);padding:5px 9px;border-radius:7px;font-weight:600}
+nav .langsw a.on{color:#fff;background:var(--blue)}
+nav .langsw a:hover{color:var(--blue)}nav .langsw a.on:hover{color:#fff}
 @media(max-width:900px){nav a:not(.lang){display:none}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}

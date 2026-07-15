@@ -134,6 +134,7 @@ for rel, txt in pages.items():
     # ("中文" is the legitimate switch-to-Chinese control on English pages)
     body = re.sub(r'<link rel="alternate"[^>]*>', '', txt)
     body = re.sub(r'<a class="lang"[^>]*>.*?</a>', '', body)
+    body = re.sub(r'<span class="langsw">.*?</span>', '', body)  # 4-language switcher labels
     if cjk.search(body):
         # show first offending line
         for i, line in enumerate(body.splitlines(), 1):

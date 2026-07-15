@@ -36,8 +36,8 @@ def u_industry(iid):
 def u_app(parent, slug):
     return "%s%s/" % (u_industry(parent), slug)
 
-def L(lang, path):  # localize a site-relative path
-    return PREFIX[lang] + path
+def L(lang, path):  # localize a site-relative path (vi/th have no inner pages -> English)
+    return PREFIX.get(lang, "") + path
 
 # ---------------------------------------------------------------- design system (finalized brand)
 CSS = """
@@ -62,6 +62,10 @@ nav{display:flex;align-items:center;gap:26px}
 nav a{font-size:14.5px;font-weight:600;color:var(--ink);white-space:nowrap}
 nav a:hover{color:var(--blue)}nav a.on{color:var(--blue)}
 nav .lang{font-size:13px;color:var(--faint);border:1px solid var(--line);border-radius:8px;padding:5px 10px}
+.langsw{display:inline-flex;gap:2px;margin-left:10px;border:1px solid var(--line);border-radius:9px;padding:2px}
+nav .langsw a{display:inline-block;font-size:12px;color:var(--faint);padding:5px 9px;border-radius:7px;font-weight:600}
+nav .langsw a.on{color:#fff;background:var(--blue)}
+nav .langsw a:hover{color:var(--blue)}nav .langsw a.on:hover{color:#fff}
 @media(max-width:900px){nav a:not(.lang){display:none}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
@@ -682,93 +686,79 @@ def harsh_module(lang):
 def build_home(lang):
     path = "/"
 
-def build_home(lang):
-    path = "/"
-    if lang == "en":
-        eyebrow="Durable Identification · Specialty Label Materials"
-        h1="Where Materials Meet Applications."
-        lede="Specialty label materials and application support for demanding manufacturing environments — from ultra-high-temperature steel and ceramics to heat-treatment tracking. We start from your application, not a catalog."
-        b1,b2="Explore Products","Request Samples"
-        svc=["100% Quality Testing","Application-Driven Solutions","Flexible Supply","Long-Term Support"]
-        paths_title="Two ways to find your label"
-        paths_sub="Every path converges on the same datasheet-backed product."
-        pcards=[("Products","By process line — direct hot application, heat-treatment labels and tags.",u_products()),
-                ("Industries & Applications","By industry and process — steel, aluminum, ceramics, concrete and cross-industry uses.",u_ind_hub())]
-        prog_title="Ultra-high-temperature program"
-        prog_sub="YS-Tech HEATPROOF materials for identification that survives casting, rolling, annealing and firing."
-        why_head="Built Around Your Application."
-        brands_head="Global brands we work with"
-        brands_sub="We combine specialty materials from selected international brands with ETIA's own developed constructions."
-    else:
-        eyebrow="耐久标识 · 特种标签材料"
-        h1="让材料,真正适配应用。"
-        lede="面向高要求制造环境的特种标签材料与应用支持 —— 从超高温钢铁、陶瓷到热处理追溯。我们从您的应用出发,而非从目录出发。"
-        b1,b2="浏览产品","申请样品"
-        svc=["100% 出货检测","应用驱动的方案","柔性供应","长期支持"]
-        paths_title="两种查找方式"
-        paths_sub="每一条路径,最终都指向同一款有数据表支撑的产品。"
-        pcards=[("产品中心","按工艺线查找 —— 超高温直贴标签、热处理标签与吊牌。",u_products()),
-                ("行业与应用","按行业与工艺查找 —— 钢铁、铝、陶瓷、混凝土及跨行业应用。",u_ind_hub())]
-        prog_title="超高温标识方案"
-        prog_sub="采用 YS-Tech HEATPROOF 材料,标识可经受铸造、轧制、退火与烧成。"
-        why_head="始于对应用的理解。"
-        brands_head="我们合作的全球品牌"
-        brands_sub="我们整合来自全球专业品牌的特种材料,并结合 ETIA 自有研发的材料结构。"
-    # sections
-    svcbar='<div class="svcbar"><div class="wrap">%s</div></div>' % "".join('<div class="i">%s</div>'%esc(s) for s in svc)
-    pcards_html="".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>'%(L(lang,u),esc(t),esc(d)) for t,d,u in pcards)
-    lines_html="".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="rows"><b>%d</b> %s</div></a>'%(
-        L(lang,u_line(pid)),esc(PATHS[pid]["title_zh"] if lang=="zh" else PATHS[pid]["title_en"]),
-        ("面向该工艺的材料选择。" if lang=="zh" else "Material selection focused on this process."),
-        len(line_products(pid)),("款产品" if lang=="zh" else "products")) for pid in ["direct_hot_application","heat_treatment_labels","heat_treatment_tags"])
-    ind_order=["steel","aluminum","ceramics","concrete","heat-resistant-asset-management","coating-process-identification"]
-    ind_html="".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>'%(
-        L(lang,u_industry(iid)),esc(INDUSTRIES[iid]["title_zh"] if lang=="zh" else INDUSTRIES[iid]["title_en"]),
-        ("%d applications"%len([a for a in APPS if a["parent"]==iid]) if lang=="en" else "%d 个应用"%len([a for a in APPS if a["parent"]==iid])))
-        for iid in ind_order)
-    why_html="".join('<div class="why"><div class="ic">%s</div><b>%s</b><span class="sub">%s</span><p>%s</p></div>'%(
-        WHY_ICONS[k%len(WHY_ICONS)],esc(verb),esc(subl),esc(d)) for k,(verb,subl,d) in enumerate(HOME_WHY[lang]))
-    brands=["Polyonics","YS-Tech","FlexCon","Computype","ETIA"]
-    brand_html="".join('<span class="bchip">%s</span>'%esc(b) for b in brands)
+HOME_I18N = json.load(open(os.path.join(BUILD_DIR, "data", "home_i18n.json")))
+HOME_LANGS = HOME_I18N["langs"]
+HL_PREFIX = HOME_I18N["prefix"]
+FOCUS_URLS = HOME_I18N["focus_urls"]
 
-    # Phase-1 home (finalized copy): Hero -> Why ETIA -> Application Center -> Final CTA.
-    en = (lang=="en")
-    hero_eyebrow = "DURABLE IDENTIFICATION · SPECIALTY LABEL MATERIALS" if en else "耐久标识 · 特种标签材料"
-    hero_line = "Every durable label begins with understanding the application." if en else "每一枚耐久标签,都始于对应用的理解。"
-    hero_para = ("For over 20 years, ETIA has helped manufacturers solve demanding identification challenges through specialty material expertise and application knowledge." if en
-                 else "二十多年来,ETIA 凭借特种材料经验与应用专业,帮助制造企业解决严苛环境中的复杂标识难题。")
-    b1v = "Find Your Application" if en else "查找您的应用"
-    b2v = "Request Samples" if en else "申请样品"
-    why_eyebrow = "WHY ETIA" if en else "为什么选择 ETIA"
-    why_head_v = "Built Around Your Application." if en else "围绕您的应用而构建。"
-    why_intro_v = "Every application is different. That is where we begin." if en else "每一种应用都不一样,我们从这里开始。"
-    fcta_title = "Cannot Find Your Application?" if en else "没有找到您的应用?"
-    fcta_para = ("Tell us about your surface, process, environment, and identification requirements." if en
-                 else "告诉我们粘贴表面、生产工艺、使用环境与标识要求。")
-    fcta_b1 = "Talk to a Label Specialist" if en else "咨询标签专家"
-    fcta_b2 = "Request Samples" if en else "申请样品"
-    final_cta = ('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
-                 '<div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn on-dark" href="%s">%s</a></div></div></div>')%(
-        esc(fcta_title),esc(fcta_para),L(lang,"/contact/"),esc(fcta_b1),L(lang,"/contact/"),esc(fcta_b2))
+def home_hlink(lang, path):
+    # home internal link: en -> path, zh -> /zh+path (inner zh exists), vi/th -> English pages
+    return ("/zh"+path) if lang=="zh" else path
+
+def home_switcher(active):
+    out=""
+    for lg in HOME_LANGS:
+        href = "/" if lg=="en" else HL_PREFIX[lg]+"/"
+        out += '<a href="%s"%s>%s</a>' % (href, ' class="on"' if lg==active else '', esc(HOME_I18N["lang_name"][lg]))
+    return '<span class="langsw">%s</span>' % out
+
+def home_nav(lang):
+    T=HOME_I18N[lang]
+    hrefs=["/products/","/industries/","/technical-resources/","/about/","/contact/"]
+    links="".join('<a href="%s">%s</a>'%(home_hlink(lang,h),esc(lbl)) for h,lbl in zip(hrefs,T["nav"]))
+    return '<nav>%s%s</nav>' % (links, home_switcher(lang))
+
+def home_footer(lang):
+    T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
+    navl="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,h),esc(l)) for h,l in
+                 zip(["/products/","/industries/","/technical-resources/","/about/"],T["nav"][:4]))
+    legal="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,p),t) for p,t in
+                  [("/privacy/","Privacy Policy"),("/cookies/","Cookie Policy"),("/terms/","Terms of Use")])
+    return ('<footer><div class="wrap"><div class="flogo"><span class="ar">◄</span><span class="grn">ETIA</span><span class="blu">·LABEL</span></div>'
+            '<div class="fg"><div><h5>%s</h5><ul>%s</ul></div><div><h5>%s</h5><ul>%s</ul></div>'
+            '<div><h5>%s</h5><a class="email" href="mailto:label@etia-tech.com">label@etia-tech.com</a><br><br>'
+            'Shanghai · Hong Kong · Bangkok · Bac Ninh</div></div>'
+            '<div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span></div></div></footer>') % (
+        esc(nh),navl,esc(lh),legal,esc(ch))
+
+def home_hreflang(path):
+    t=[]
+    for lg in HOME_LANGS:
+        t.append('<link rel="alternate" hreflang="%s" href="%s%s%s">'%(lg,SITE,HL_PREFIX[lg],path))
+    t.append('<link rel="alternate" hreflang="x-default" href="%s%s">'%(SITE,path))
+    return "".join(t)
+
+def build_home(lang):
+    path="/"
+    T=HOME_I18N[lang]
+    # Why ETIA pillars
+    why_html="".join('<div class="why"><div class="ic">%s</div><b>%s</b><span class="sub">%s</span><p>%s</p></div>'%(
+        WHY_ICONS[k%len(WHY_ICONS)],esc(verb),esc(subl),esc(d)) for k,(verb,subl,d) in enumerate(T["why"]))
+    # Application Center — six industry cards (icon + name + application tags)
+    app_cards=""
+    for k,(name,apps) in enumerate(T["focus"]):
+        pills="".join('<span>%s</span>'%esc(a) for a in apps)
+        app_cards+=('<a class="card indcard" href="%s"><div class="ic">%s</div>'
+                    '<div class="body"><h3>%s</h3><div class="apps">%s</div><div class="go">%s →</div></div></a>')%(
+            home_hlink(lang,FOCUS_URLS[k]), INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)], esc(name), pills, esc(T["explore"]))
+    final_cta=('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
+               '<div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn on-dark" href="%s">%s</a></div></div></div>')%(
+        esc(T["fcta_title"]),esc(T["fcta_para"]),home_hlink(lang,"/contact/"),esc(T["fcta_b1"]),home_hlink(lang,"/contact/"),esc(T["fcta_b2"]))
     body="""<section class="hero"><div class="wrap">
 <div class="eyebrow">%s</div><h1 class="serif">%s</h1>
 <p class="lede" style="color:var(--ink);font-size:20px;font-weight:600;max-width:32em">%s</p>
 <p class="lede">%s</p>
 <div class="btns"><a class="btn pri" href="#applications">%s</a><a class="btn sec" href="%s">%s</a></div></div></section>
 <section class="blk" style="background:var(--tint-green)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="whygrid">%s</div></div></section>
-%s
+<section class="blk" id="applications" style="background:var(--tint-blue)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div>
+<div style="margin-top:18px"><a class="btn sec" href="%s">%s →</a></div></div></section>
 %s""" % (
-        esc(hero_eyebrow),esc(h1),esc(hero_line),esc(hero_para),esc(b1v),L(lang,"/contact/"),esc(b2v),
-        esc(why_eyebrow),esc(why_head_v),esc(why_intro_v),why_html,
-        harsh_module(lang),
+        esc(T["hero_eyebrow"]),esc(T["hero_h1"]),esc(T["hero_line"]),esc(T["hero_para"]),esc(T["hero_b1"]),home_hlink(lang,"/contact/"),esc(T["hero_b2"]),
+        esc(T["why_eyebrow"]),esc(T["why_head"]),esc(T["why_intro"]),why_html,
+        esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_cards,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]),
         final_cta)
-
-    canonical=SITE+PREFIX[lang]+path
-    schema_js="".join('<script type="application/ld+json">%s</script>'%json.dumps(s,ensure_ascii=False) for s in [ORG_JSONLD])
-    title=("ETIA Label — Specialty & Ultra-High-Temperature Industrial Labels" if lang=="en"
-           else "ETIA Label — 特种与超高温工业标签")
-    desc=("Specialty label materials and application support for demanding environments — ultra-high-temperature labels and tags for steel, aluminum, ceramics and heat-treatment tracking." if lang=="en"
-          else "面向严苛环境的特种标签材料与应用支持 —— 用于钢铁、铝、陶瓷及热处理追溯的超高温标签与吊牌。")
+    canonical=SITE+HL_PREFIX[lang]+path
+    schema_js='<script type="application/ld+json">%s</script>'%json.dumps(ORG_JSONLD,ensure_ascii=False)
     doc="""<!doctype html><html lang="%s"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>%s</title><meta name="description" content="%s">
@@ -779,11 +769,11 @@ def build_home(lang):
 <header><div class="wrap"><a class="logo" href="%s"><span class="ar">◄</span><span class="grn">ETIA</span><span class="blu">·LABEL</span></a>%s</div></header>
 %s
 %s
-</body></html>""" % (lang,esc(title),esc(desc),canonical,hreflang_block(path),esc(title),CSS,schema_js,
-        L(lang,"/"),nav_html(lang,"home"),body,footer_html(lang))
-    full=os.path.join(ROOT,(PREFIX[lang]).strip("/"),"index.html")
-    os.makedirs(os.path.dirname(full) if os.path.dirname(full) else ROOT,exist_ok=True)
-    open(full if lang=="en" else os.path.join(ROOT,"zh","index.html"),"w").write(doc)
+</body></html>""" % (lang,esc(T["meta_title"]),esc(T["meta_desc"]),canonical,home_hreflang(path),esc(T["meta_title"]),CSS,schema_js,
+        ("/" if lang=="en" else HL_PREFIX[lang]+"/"),home_nav(lang),body,home_footer(lang))
+    outdir=os.path.join(ROOT,HL_PREFIX[lang].strip("/")) if HL_PREFIX[lang] else ROOT
+    os.makedirs(outdir,exist_ok=True)
+    open(os.path.join(outdir,"index.html"),"w").write(doc)
     if lang=="en": track(path,"core")
 
 # ---------------------------------------------------------------- sitemaps + redirects
@@ -822,15 +812,16 @@ def clean():
     # by the orchestrator ordering); heatproof runs first, automotive layers on top.
     for d in ["products","industries","applications","technical-resources","about","contact","zh",
               "materials","brands","insights","support","company","privacy","cookies","terms",
-              "label-materials","popular","featured-solutions"]:
+              "label-materials","popular","featured-solutions","vi","th"]:
         p=os.path.join(ROOT,d)
         if os.path.isdir(p): shutil.rmtree(p)
     for f in os.listdir(ROOT):
         if f.startswith("sitemap") or f=="robots.txt": os.remove(os.path.join(ROOT,f))
 
 def build_all():
-  for lang in LANGS:
+  for lang in HOME_LANGS:   # home is 4-language (en, zh, vi, th)
     build_home(lang)
+  for lang in LANGS:        # inner site is en + zh
     build_products_hub(lang)
     for pid in PATHS: build_process_line(lang, pid)
     for pid in PRODUCTS: build_product(lang, PRODUCTS[pid])
