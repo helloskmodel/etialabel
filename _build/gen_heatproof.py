@@ -146,8 +146,10 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .whyrow .ic svg{width:23px;height:23px}
 .whyrow b{display:block;font-family:var(--serif);font-size:18px;color:var(--blue-deep)}
 .whyrow p{font-size:14px;color:var(--mut);margin-top:2px}
-.indcard .ic{width:48px;height:48px;border-radius:12px;background:var(--mint);color:var(--green-d);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.indcard{display:flex;gap:16px;align-items:flex-start}
+.indcard .ic{flex:none;width:48px;height:48px;border-radius:12px;background:var(--mint);color:var(--green-d);display:flex;align-items:center;justify-content:center}
 .indcard .ic svg{width:25px;height:25px}
+.indcard .body{flex:1;min-width:0}
 .indcard h3{font-family:var(--serif);font-weight:600}
 .indcard .apps{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
 .indcard .apps span{font-size:12px;font-weight:600;color:var(--mut);background:#fff;border:1px solid var(--line);border-radius:16px;padding:4px 10px}
@@ -626,8 +628,8 @@ def harsh_module(lang):
     cards=""
     for k,(fe,fz,u,apps_en,apps_zh) in enumerate(HOME_FOCUS):
         pills="".join('<span>%s</span>'%esc(a) for a in (apps_zh if lang=="zh" else apps_en))
-        cards+=('<a class="card indcard" href="%s"><div class="ic">%s</div><h3>%s</h3>'
-                '<div class="apps">%s</div><div class="go">%s →</div></a>')%(
+        cards+=('<a class="card indcard" href="%s"><div class="ic">%s</div>'
+                '<div class="body"><h3>%s</h3><div class="apps">%s</div><div class="go">%s →</div></div></a>')%(
             L(lang,u), INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)], esc(fz if lang=="zh" else fe),
             pills, ("进入" if lang=="zh" else "Explore"))
     eyebrow="按应用探索" if lang=="zh" else "EXPLORE BY APPLICATION"
