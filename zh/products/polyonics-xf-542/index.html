@@ -6,6 +6,7 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--ink:#141b2d;--mut:#5c6678;--faint:#8a93a3;--line:#e7ebf2;--bg:#f6f8fc;--mint:#f1f7ef;
+--tint-green:#f0f5ee;--tint-blue:#edf2fb;
 --blue-deep:#143C96;--blue:#1A56DB;--green:#41A62A;--green-d:#358B22;
 --serif:'Iowan Old Style','Palatino Linotype','Palatino','Georgia',serif;
 --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
@@ -85,8 +86,10 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .svcbar .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:20px 24px}
 .svcbar .i{font-size:14.5px;font-weight:600;display:flex;gap:9px;align-items:flex-start}
 .svcbar .i::before{content:"✓";color:#8fe063;font-weight:800;flex:none}
-.whygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.why{border-top:2px solid var(--line);padding-top:14px}
+.whygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.why{padding-top:4px}
+.why .ic{width:46px;height:46px;border-radius:12px;background:#fff;border:1px solid var(--line);color:var(--green-d);display:flex;align-items:center;justify-content:center;margin-bottom:14px;box-shadow:0 2px 8px rgba(16,34,58,.05)}
+.why .ic svg{width:24px;height:24px}
 .why .n{font-family:var(--serif);font-size:15px;color:var(--faint)}
 .why b{display:block;font-family:var(--serif);font-size:20px;color:var(--blue-deep);margin:2px 0 6px}
 .why p{font-size:14px;color:var(--mut)}
