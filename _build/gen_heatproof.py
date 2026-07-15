@@ -605,20 +605,21 @@ HOME_FOCUS = [
   ["VIN identification","Laser marking","Weather exposure"],["VIN标识","激光打标","户外耐候"]),
 ]
 
-# one line icon per focus industry (Computype-style icon + text), same order as HOME_FOCUS
+# one line icon per Application-Center industry — SAME ORDER as home_i18n.json "focus":
+# Medical & Laboratory · Electronics · Steel & Metals · Ceramics & Sanitaryware · Tire & Rubber · Automotive
 INDUSTRY_ICONS = [
- # Electronics & PCB — chip
- '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5"/><rect x="10" y="10" width="4" height="4" rx="1"/><path d="M9.5 3.5v3M14.5 3.5v3M9.5 17.5v3M14.5 17.5v3M3.5 9.5h3M3.5 14.5h3M17.5 9.5h3M17.5 14.5h3"/></svg>',
- # Metal & Ceramics — flame over ingot
- '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5c.8 3 3.1 4.4 3.1 7.6 0 1.9-1.4 3.4-3.1 3.4s-3.1-1.5-3.1-3.4c0-1.1.5-1.9 1.2-2.6-.1 1.1.5 1.8.9 2.1.5-1.9.2-4.4 1-7.1z"/><rect x="6" y="16.5" width="12" height="4.5" rx="1"/></svg>',
- # Medical & Pharma — cross
+ # Medical & Laboratory — cross
  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="M12 8.5v7M8.5 12h7"/></svg>',
+ # Electronics Manufacturing — chip
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5"/><rect x="10" y="10" width="4" height="4" rx="1"/><path d="M9.5 3.5v3M14.5 3.5v3M9.5 17.5v3M14.5 17.5v3M3.5 9.5h3M3.5 14.5h3M17.5 9.5h3M17.5 14.5h3"/></svg>',
+ # Steel & Metals — flame over ingot
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5c.8 3 3.1 4.4 3.1 7.6 0 1.9-1.4 3.4-3.1 3.4s-3.1-1.5-3.1-3.4c0-1.1.5-1.9 1.2-2.6-.1 1.1.5 1.8.9 2.1.5-1.9.2-4.4 1-7.1z"/><rect x="6" y="16.5" width="12" height="4.5" rx="1"/></svg>',
+ # Ceramics & Sanitaryware — urn / kiln vessel
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.5h8M9.5 3.5c0 2-2.5 2.5-2.5 5.5v7a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-7c0-3-2.5-3.5-2.5-5.5"/><path d="M7.2 11h9.6"/></svg>',
+ # Tire & Rubber — tire
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v3.2M12 17.8V21M3 12h3.2M17.8 12H21M5.6 5.6l2.3 2.3M16.1 16.1l2.3 2.3M18.4 5.6l-2.3 2.3M7.9 16.1l-2.3 2.3"/></svg>',
  # Automotive — car
  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l1.7-4.6A2 2 0 0 1 6.6 7h10.8a2 2 0 0 1 1.9 1.4L21 13v5h-2.5v-2h-13v2H3z"/><circle cx="7.5" cy="16" r="1.6"/><circle cx="16.5" cy="16" r="1.6"/></svg>',
- # Wire & Cable — plug + cable
- '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="7" rx="1.5"/><path d="M11 2.5V5M13 2.5V5"/><path d="M12 9.5v2.5a4 4 0 0 1-4 4 4 4 0 0 0-4 4v.5"/></svg>',
- # Outdoor & Energy — sun
- '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.6M12 19.4V22M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2 12h2.6M19.4 12H22M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9"/></svg>',
 ]
 
 def _load_featured():
