@@ -128,11 +128,12 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .svcbar .i{font-size:14.5px;font-weight:600;display:flex;gap:9px;align-items:flex-start}
 .svcbar .i::before{content:"✓";color:#8fe063;font-weight:800;flex:none}
 .whygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.why{padding-top:4px}
-.why .ic{width:46px;height:46px;border-radius:12px;background:#fff;border:1px solid var(--line);color:var(--green-d);display:flex;align-items:center;justify-content:center;margin-bottom:14px;box-shadow:0 2px 8px rgba(16,34,58,.05)}
+.why{display:flex;gap:14px;align-items:flex-start;padding-top:4px}
+.why .ic{flex:none;width:46px;height:46px;border-radius:12px;background:#fff;border:1px solid var(--line);color:var(--green-d);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(16,34,58,.05)}
 .why .ic svg{width:24px;height:24px}
+.why .txt{flex:1;min-width:0}
 .why .n{font-family:var(--serif);font-size:15px;color:var(--faint)}
-.why b{display:block;font-family:var(--serif);font-size:20px;color:var(--blue-deep);margin:2px 0 2px}
+.why b{display:block;font-family:var(--serif);font-size:19px;color:var(--blue-deep);margin:0 0 2px}
 .why .sub{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--green-d);margin-bottom:8px}
 .why p{font-size:14px;color:var(--mut)}
 .brandwall{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
@@ -732,7 +733,7 @@ def build_home(lang):
     path="/"
     T=HOME_I18N[lang]
     # Why ETIA pillars
-    why_html="".join('<div class="why"><div class="ic">%s</div><b>%s</b><span class="sub">%s</span><p>%s</p></div>'%(
+    why_html="".join('<div class="why"><div class="ic">%s</div><div class="txt"><b>%s</b><span class="sub">%s</span><p>%s</p></div></div>'%(
         WHY_ICONS[k%len(WHY_ICONS)],esc(verb),esc(subl),esc(d)) for k,(verb,subl,d) in enumerate(T["why"]))
     # Application Center — six industry cards (icon + name + application tags)
     app_cards=""
