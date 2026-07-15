@@ -393,7 +393,7 @@ def build_industries_hub(lang):
         ("电子制造与PCB" if lang=="zh" else "Electronics & PCB"),
         ("Polyonics 聚酰亚胺:回流焊、波峰焊、严苛清洗、ESD 与激光可标记。" if lang=="zh"
          else "Polyonics polyimide: reflow, wave solder, harsh wash, ESD and laser-markable."),
-        L(lang,"/materials/polyimide/"),("聚酰亚胺产品线" if lang=="zh" else "Polyimide line"))
+        L(lang,"/materials/polyimide-pi-label-materials/"),("聚酰亚胺产品线" if lang=="zh" else "Polyimide line"))
     # cross-series card: Wire & Cable (Avery Dennison) — built by gen_wirecable
     wc_card = ('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="xlinks">'
                '<a href="%s">%s</a></div></a>') % (

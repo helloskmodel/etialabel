@@ -1,0 +1,505 @@
+{
+ "route": "/materials/polyimide-pi-label-materials/",
+ "process": [
+  {
+   "slug": "high-temperature-pcb-labels",
+   "en": "High-Temperature PCB Identification & Tracking",
+   "zh": "PCB耐高温识别与追踪"
+  },
+  {
+   "slug": "smt-process-tracking-labels",
+   "en": "SMT Process Tracking",
+   "zh": "SMT制程追踪"
+  },
+  {
+   "slug": "reflow-soldering-labels",
+   "en": "Reflow Soldering",
+   "zh": "回流焊"
+  },
+  {
+   "slug": "wave-soldering-labels",
+   "en": "Wave Soldering",
+   "zh": "波峰焊与过锡炉"
+  },
+  {
+   "slug": "pcb-wash-process-labels",
+   "en": "PCB Wash Process",
+   "zh": "PCB清洗"
+  },
+  {
+   "slug": "high-temperature-barcode-labels",
+   "en": "High-Temperature Barcode Tracking",
+   "zh": "高温条码追踪"
+  },
+  {
+   "slug": "high-temperature-masking-tapes",
+   "en": "High-Temperature Masking",
+   "zh": "高温遮蔽"
+  },
+  {
+   "slug": "heat-treatment-process-labels",
+   "en": "Industrial Heat Treatment",
+   "zh": "工业热处理"
+  }
+ ],
+ "performance": [
+  {
+   "slug": "300c-high-temperature-labels",
+   "en": "300°C Process Exposure",
+   "zh": "300℃高温制程"
+  },
+  {
+   "slug": "esd-safe-polyimide-labels",
+   "en": "ESD-Safe & Static-Dissipative",
+   "zh": "ESD防静电"
+  },
+  {
+   "slug": "chemical-resistant-polyimide-labels",
+   "en": "Chemical & Flux Resistant",
+   "zh": "耐化学品与助焊剂"
+  },
+  {
+   "slug": "abrasion-resistant-polyimide-labels",
+   "en": "Abrasion-Resistant Topcoat",
+   "zh": "耐磨打印表面"
+  },
+  {
+   "slug": "flame-retardant-polyimide-labels",
+   "en": "Flame-Retardant",
+   "zh": "阻燃"
+  },
+  {
+   "slug": "halogen-free-polyimide-labels",
+   "en": "Halogen-Free",
+   "zh": "无卤"
+  },
+  {
+   "slug": "low-outgassing-polyimide-labels",
+   "en": "Low-Outgassing",
+   "zh": "低释气"
+  },
+  {
+   "slug": "removable-high-temperature-labels",
+   "en": "Removable & Residue-Free",
+   "zh": "可移除与无残胶"
+  },
+  {
+   "slug": "polyimide-overlaminates",
+   "en": "High-Temperature Print Protection",
+   "zh": "高温打印保护"
+  }
+ ],
+ "industry": [
+  {
+   "slug": "electronics-pcb",
+   "en": "Electronics & PCB Manufacturing",
+   "zh": "电子与PCB制造"
+  },
+  {
+   "slug": "semiconductor-advanced-packaging",
+   "en": "Semiconductor & Advanced Packaging",
+   "zh": "半导体与先进封装"
+  },
+  {
+   "slug": "automotive-new-energy",
+   "en": "Automotive & New Energy Vehicles",
+   "zh": "汽车与新能源车"
+  },
+  {
+   "slug": "wire-cable-fiber-optics",
+   "en": "Wire, Cable & Fiber Optics",
+   "zh": "电线、电缆与光纤"
+  },
+  {
+   "slug": "aerospace-transportation",
+   "en": "Aerospace & Transportation",
+   "zh": "航空航天与交通运输"
+  },
+  {
+   "slug": "medical-laboratory",
+   "en": "Medical Devices & Laboratories",
+   "zh": "医疗设备与实验室"
+  },
+  {
+   "slug": "industrial-heat-treatment",
+   "en": "Industrial Manufacturing & Heat Treatment",
+   "zh": "工业制造与热处理"
+  }
+ ],
+ "families": [
+  {
+   "id": "PI-F01",
+   "en": "PCB High-Temperature Tracking Labels",
+   "zh": "PCB高温追踪标签",
+   "brands": [
+    "POLYONICS",
+    "ETIA"
+   ],
+   "process": [
+    "high-temperature-pcb-labels",
+    "reflow-soldering-labels",
+    "wave-soldering-labels",
+    "pcb-wash-process-labels",
+    "high-temperature-barcode-labels",
+    "smt-process-tracking-labels"
+   ],
+   "performance": [
+    "300c-high-temperature-labels"
+   ],
+   "industry": [
+    "electronics-pcb",
+    "semiconductor-advanced-packaging",
+    "industrial-heat-treatment"
+   ],
+   "members": [
+    {
+     "brand": "POLYONICS",
+     "model": "XF-533",
+     "slug": "polyonics-xf-533"
+    },
+    {
+     "brand": "POLYONICS",
+     "model": "XF-542",
+     "slug": "polyonics-xf-542"
+    },
+    {
+     "brand": "POLYONICS",
+     "model": "XF-505",
+     "slug": "polyonics-xf-505"
+    },
+    {
+     "brand": "ETIA",
+     "model": "E-8532TT",
+     "slug": null
+    },
+    {
+     "brand": "ETIA",
+     "model": "E-8531",
+     "slug": null
+    }
+   ],
+   "note_en": "Low-profile and colour-coded polyimide for reflow, wave solder and repeated harsh washes.",
+   "note_zh": "低厚度与颜色区分聚酰亚胺,适用于回流焊、波峰焊与多轮严苛清洗。"
+  },
+  {
+   "id": "PI-F02",
+   "en": "ESD-Safe Polyimide Labels",
+   "zh": "ESD安全PI标签",
+   "brands": [
+    "POLYONICS",
+    "ETIA"
+   ],
+   "process": [
+    "reflow-soldering-labels",
+    "wave-soldering-labels",
+    "smt-process-tracking-labels",
+    "pcb-wash-process-labels"
+   ],
+   "performance": [
+    "esd-safe-polyimide-labels"
+   ],
+   "industry": [
+    "electronics-pcb",
+    "semiconductor-advanced-packaging"
+   ],
+   "members": [
+    {
+     "brand": "POLYONICS",
+     "model": "XF-781",
+     "slug": null
+    },
+    {
+     "brand": "POLYONICS",
+     "model": "XF-782",
+     "slug": null
+    },
+    {
+     "brand": "POLYONICS",
+     "model": "XF-784",
+     "slug": null
+    },
+    {
+     "brand": "POLYONICS",
+     "model": "XF-101SE",
+     "slug": "polyonics-xf-101se"
+    },
+    {
+     "brand": "POLYONICS",
+     "model": "XF-101ME",
+     "slug": "polyonics-xf-101me"
+    },
+    {
+     "brand": "POLYONICS",
+     "model": "XF-101M",
+     "slug": "polyonics-xf-101m"
+    },
+    {
+     "brand": "POLYONICS",
+     "model": "XF-102SE",
+     "slug": "polyonics-xf-102se"
+    },
+    {
+     "brand": "ETIA",
+     "model": "E-8731",
+     "slug": null
+    },
+    {
+     "brand": "ETIA",
+     "model": "E-8732",
+     "slug": null
+    }
+   ],
+   "note_en": "Static-dissipative polyimide for ESD-controlled electronics and semiconductor production.",
+   "note_zh": "静电耗散聚酰亚胺,用于 ESD 管控的电子与半导体生产。"
+  },
+  {
+   "id": "PI-F03",
+   "en": "Chemical-Resistant Polyimide Labels",
+   "zh": "耐化学PI标签",
+   "brands": [
+    "POLYONICS",
+    "ETIA"
+   ],
+   "process": [
+    "pcb-wash-process-labels",
+    "reflow-soldering-labels"
+   ],
+   "performance": [
+    "chemical-resistant-polyimide-labels"
+   ],
+   "industry": [
+    "electronics-pcb"
+   ],
+   "members": [
+    {
+     "brand": "POLYONICS",
+     "model": "XF-102G",
+     "slug": "polyonics-xf-102g"
+    },
+    {
+     "brand": "POLYONICS",
+     "model": "XF-446",
+     "slug": "polyonics-xf-446"
+    },
+    {
+     "brand": "ETIA",
+     "model": "E-8512",
+     "slug": null
+    },
+    {
+     "brand": "ETIA",
+     "model": "E-2712",
+     "slug": null
+    }
+   ],
+   "note_en": "Polyimide and PET for flux, solvents and aggressive cleaning chemistry.",
+   "note_zh": "聚酰亚胺与 PET,耐助焊剂、溶剂与强力清洗化学品。"
+  },
+  {
+   "id": "PI-F04",
+   "en": "Abrasion-Resistant Polyimide Labels",
+   "zh": "耐磨PI标签",
+   "brands": [
+    "POLYONICS",
+    "ETIA"
+   ],
+   "process": [
+    "high-temperature-barcode-labels"
+   ],
+   "performance": [
+    "abrasion-resistant-polyimide-labels"
+   ],
+   "industry": [
+    "electronics-pcb",
+    "automotive-new-energy"
+   ],
+   "members": [
+    {
+     "brand": "POLYONICS",
+     "model": "XF-731",
+     "slug": null
+    },
+    {
+     "brand": "POLYONICS",
+     "model": "XF-732",
+     "slug": null
+    }
+   ],
+   "note_en": "Abrasion-resistant topcoat for barcode and small-text durability. Specs pending verification.",
+   "note_zh": "耐磨打印涂层,提升条码与小字耐久性。参数待核验。"
+  },
+  {
+   "id": "PI-F05",
+   "en": "Flame-Retardant Polyimide Labels",
+   "zh": "阻燃PI标签",
+   "brands": [
+    "POLYONICS",
+    "ETIA"
+   ],
+   "process": [
+    "high-temperature-pcb-labels"
+   ],
+   "performance": [
+    "flame-retardant-polyimide-labels"
+   ],
+   "industry": [
+    "electronics-pcb",
+    "automotive-new-energy",
+    "aerospace-transportation"
+   ],
+   "members": [
+    {
+     "brand": "POLYONICS",
+     "model": "XF-603",
+     "slug": null
+    },
+    {
+     "brand": "POLYONICS",
+     "model": "XF-603FR",
+     "slug": null
+    }
+   ],
+   "note_en": "Flame-retardant polyimide. UL / flammability status bound to the specific model — pending verification.",
+   "note_zh": "阻燃聚酰亚胺。UL/阻燃状态须绑定具体型号 —— 待核验。"
+  },
+  {
+   "id": "PI-F06",
+   "en": "High-Temperature Polyimide Overlaminates",
+   "zh": "高温PI覆膜",
+   "brands": [
+    "POLYONICS",
+    "ETIA"
+   ],
+   "process": [
+    "high-temperature-barcode-labels"
+   ],
+   "performance": [
+    "polyimide-overlaminates"
+   ],
+   "industry": [
+    "electronics-pcb"
+   ],
+   "members": [
+    {
+     "brand": "POLYONICS",
+     "model": "XL-1501",
+     "slug": null
+    },
+    {
+     "brand": "POLYONICS",
+     "model": "XL-1502",
+     "slug": null
+    },
+    {
+     "brand": "POLYONICS",
+     "model": "XL-1561",
+     "slug": null
+    }
+   ],
+   "note_en": "Clear high-temperature overlaminates protecting printed identification. Specs pending verification.",
+   "note_zh": "透明高温覆膜,保护印刷标识。参数待核验。"
+  },
+  {
+   "id": "PI-F07",
+   "en": "Polyimide Engineering Tapes",
+   "zh": "PI工程胶带",
+   "brands": [
+    "POLYONICS",
+    "ETIA"
+   ],
+   "process": [
+    "high-temperature-masking-tapes"
+   ],
+   "performance": [
+    "300c-high-temperature-labels"
+   ],
+   "industry": [
+    "electronics-pcb",
+    "semiconductor-advanced-packaging"
+   ],
+   "members": [
+    {
+     "brand": "POLYONICS",
+     "model": "XT series",
+     "slug": null
+    }
+   ],
+   "note_en": "Polyimide engineering tapes for high-temperature masking. Specific grades on request.",
+   "note_zh": "聚酰亚胺工程胶带,用于高温遮蔽。具体规格按需提供。"
+  },
+  {
+   "id": "PI-F08",
+   "en": "Industrial Heat-Treatment Labels",
+   "zh": "工业热处理标签",
+   "brands": [
+    "ETIA"
+   ],
+   "process": [
+    "heat-treatment-process-labels"
+   ],
+   "performance": [
+    "300c-high-temperature-labels"
+   ],
+   "industry": [
+    "industrial-heat-treatment"
+   ],
+   "members": [
+    {
+     "brand": "ETIA",
+     "model": "HEATPROOF series",
+     "slug": null
+    }
+   ],
+   "note_en": "ETIA ultra-high-temperature labels and tags for heat-treatment tracking (see HEATPROOF program).",
+   "note_zh": "ETIA 超高温标签与吊牌,用于热处理追溯(见 HEATPROOF 系列)。"
+  }
+ ],
+ "related": [
+  {
+   "cat_en": "Standard matte white PI",
+   "cat_zh": "标准哑白PI",
+   "avery": "ADS1622",
+   "brady": "B-729",
+   "lintec": "on request"
+  },
+  {
+   "cat_en": "Ultra-thin ESD PI",
+   "cat_zh": "超薄ESD PI",
+   "avery": "AAG996 / AAH477",
+   "brady": "B-718 / B-719",
+   "lintec": "on request"
+  },
+  {
+   "cat_en": "Amber ultra-heat PI",
+   "cat_zh": "琥珀超耐高温PI",
+   "avery": "MZS1412",
+   "brady": "B-724",
+   "lintec": "on request"
+  },
+  {
+   "cat_en": "Chemical-resistant",
+   "cat_zh": "耐化学",
+   "avery": "ADS1685",
+   "brady": "B-777 / B-797",
+   "lintec": "on request"
+  },
+  {
+   "cat_en": "High-temp overlaminate",
+   "cat_zh": "高温覆膜",
+   "avery": "—",
+   "brady": "—",
+   "lintec": "on request"
+  }
+ ],
+ "hidden_brands": [
+  "3M",
+  "FLEXcon",
+  "Computype",
+  "YS-Tech",
+  "MiLabels"
+ ],
+ "featured_brands": [
+  "POLYONICS",
+  "ETIA"
+ ]
+}

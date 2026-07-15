@@ -46,6 +46,16 @@
       "source": "/medical",
       "destination": "/industries/healthcare-life-sciences/",
       "permanent": true
+    },
+    {
+      "source": "/materials/polyimide",
+      "destination": "/materials/polyimide-pi-label-materials/",
+      "permanent": true
+    },
+    {
+      "source": "/pi",
+      "destination": "/materials/polyimide-pi-label-materials/",
+      "permanent": true
     }
   ]
 }

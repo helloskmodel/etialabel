@@ -18,7 +18,7 @@ CATMKT=DATA["category_market"]
 
 URLS=[]
 def track(p,g): URLS.append((p,g))
-HUB="/industries/electronics-pcb/"; MAT="/materials/polyimide/"
+HUB="/industries/electronics-pcb/"; MAT="/materials/polyimide-pi-label-materials/"  # PI center (gen_pi)
 def u_cat(s): return "%s%s/"%(HUB,s)
 def u_prod(s): return "/products/%s/"%s
 def u_brand(): return "/brands/polyonics/electronics-pcb/"
@@ -228,7 +228,7 @@ def build_sitemap():
 
 def build_all():
     for lang in LANGS:
-        build_hub(lang); build_material(lang)
+        build_hub(lang)  # /materials/polyimide-pi-label-materials/ is built by gen_pi (PI center)
         for c in DATA["categories"]: build_category(lang,c)
         build_brand(lang)
         for p in DATA["products"]: build_product(lang,p)

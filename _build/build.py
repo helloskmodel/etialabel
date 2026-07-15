@@ -11,11 +11,13 @@ import gen_automotive as auto
 import gen_healthcare as hc
 import gen_pcb as pcb
 import gen_wirecable as wc
+import gen_pi as pi
 
 hp.main()      # clean + build heatproof + heatproof sitemaps + base vercel.json
 auto.main()    # build automotive + automotive sitemap + merge redirects
 hc.main()      # build healthcare + healthcare sitemap + merge redirects
-pcb.main()     # build electronics & pcb / polyimide + sitemap
+pcb.main()     # build electronics & pcb / polyimide categories + sitemap
 wc.main()      # build wire & cable + sitemap
+pi.main()      # build Polyimide (PI) Material & Application Center + By-Material hub
 print("BUILD COMPLETE — total EN canonical URLs:",
-      len(hp.ALL_URLS)+len(auto.AUTO_URLS)+len(hc.HC_URLS)+len(pcb.URLS)+len(wc.URLS))
+      len(hp.ALL_URLS)+len(auto.AUTO_URLS)+len(hc.HC_URLS)+len(pcb.URLS)+len(wc.URLS)+len(pi.URLS))
