@@ -26,6 +26,16 @@
       "source": "/products/management-tag",
       "destination": "/products/heat-treatment-tags/",
       "permanent": true
+    },
+    {
+      "source": "/automotive",
+      "destination": "/industries/automotive-label-materials/",
+      "permanent": true
+    },
+    {
+      "source": "/automotive/:path*",
+      "destination": "/industries/automotive-label-materials/",
+      "permanent": true
     }
   ]
 }

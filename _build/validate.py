@@ -89,7 +89,7 @@ for rel, txt in pages.items():
                     warnings.append(f"[hreflang-recip] {rel}: zh target {zt} not mirrored from en {en_target}")
 
 # ---- 3. every application -> >=1 product link ----
-prod_link_re = re.compile(r'href="(/products/hp-[^"/]+/)"')
+prod_link_re = re.compile(r'href="(/products/(?:hp|3m|flexcon)-[^"/]+/)"')
 for rel, txt in pages.items():
     if re.match(r'applications/[^/]+/[^/]+/index\.html$', rel) or re.match(r'industries/[^/]+/[^/]+/index\.html$', rel):
         if not prod_link_re.search(txt):

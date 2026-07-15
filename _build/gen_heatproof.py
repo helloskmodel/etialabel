@@ -368,8 +368,17 @@ def build_industries_hub(lang):
             L(lang,u_industry(iid)), esc(title),
             ("跨行业应用" if (lang=="zh" and i["parent_type"]!="industry") else ("%d applications" % len(apps)) if lang=="en" else "%d 个应用"%len(apps)),
             alink)
-    h1 = "超高温工业标识行业与工艺应用" if lang=="zh" else "Ultra-High-Temperature Identification by Industry and Process"
-    body = '<section class="blk"><div class="wrap"><div class="grid">%s</div></div></section><div class="wrap">%s</div>' % (cards, cta(lang))
+    # cross-series card: Automotive label materials (3M + FLEXcon) — built by gen_automotive
+    auto_card = ('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="xlinks">'
+                 '<a href="%s">3M</a><a href="%s">FLEXcon</a></div></a>') % (
+        L(lang,"/industries/automotive-label-materials/"),
+        ("汽车标签材料" if lang=="zh" else "Automotive Label Materials"),
+        ("3M 与 FLEXcon 汽车标识材料:发动机舱、EV电池、线束、VIN 与警示。" if lang=="zh"
+         else "3M and FLEXcon materials: underhood, EV battery, wire harness, VIN and warning identification."),
+        L(lang,"/brands/3m/automotive-label-materials/"),
+        L(lang,"/brands/flexcon/automotive-label-materials/"))
+    h1 = "工业标识 — 行业与工艺应用" if lang=="zh" else "Industries & Applications"
+    body = '<section class="blk"><div class="wrap"><div class="grid">%s%s</div></div></section><div class="wrap">%s</div>' % (auto_card, cards, cta(lang))
     crumb=[("Home","/"),("Industries & Applications",u_ind_hub())]
     write(lang, u_ind_hub(), page(lang, u_ind_hub(),
         ("行业与应用 — 超高温标识 | ETIA" if lang=="zh" else "Industries & Applications — Ultra-High-Temp Identification | ETIA"),
@@ -571,15 +580,20 @@ def write_redirects():
     open(os.path.join(ROOT,"vercel.json"),"w").write(json.dumps(cfg,indent=2)+"\n")
 
 # ---------------------------------------------------------------- run
-# preserve source (generators/data/docs); regenerate the section output dirs
-for d in ["products","industries","applications","technical-resources","about","contact","zh",
-          "materials","brands","insights","support","company","privacy","cookies","terms"]:
-    p=os.path.join(ROOT,d)
-    if os.path.isdir(p): shutil.rmtree(p)
-for f in os.listdir(ROOT):
-    if f.startswith("sitemap") or f=="robots.txt": os.remove(os.path.join(ROOT,f))
+def clean():
+    # preserve source (generators/data/docs); regenerate the section output dirs.
+    # NOTE: does NOT delete automotive-owned dirs (label-materials, brands are handled
+    # by the orchestrator ordering); heatproof runs first, automotive layers on top.
+    for d in ["products","industries","applications","technical-resources","about","contact","zh",
+              "materials","brands","insights","support","company","privacy","cookies","terms",
+              "label-materials","popular"]:
+        p=os.path.join(ROOT,d)
+        if os.path.isdir(p): shutil.rmtree(p)
+    for f in os.listdir(ROOT):
+        if f.startswith("sitemap") or f=="robots.txt": os.remove(os.path.join(ROOT,f))
 
-for lang in LANGS:
+def build_all():
+  for lang in LANGS:
     build_home(lang)
     build_products_hub(lang)
     for pid in PATHS: build_process_line(lang, pid)
@@ -608,9 +622,14 @@ for lang in LANGS:
         "These Terms of Use govern your use of this website. Full reviewed terms are being finalized.",
         "本使用条款约束您对本网站的使用。经审阅的完整条款正在整理中。")
 
-build_sitemaps()
-write_redirects()
+def main():
+    clean()
+    build_all()
+    build_sitemaps()
+    write_redirects()
+    from collections import Counter
+    print("HEATPROOF EN canonical URLs:", len(ALL_URLS))
+    print(Counter(g for _,g in ALL_URLS))
 
-from collections import Counter
-print("EN canonical URLs:", len(ALL_URLS))
-print(Counter(g for _,g in ALL_URLS))
+if __name__ == "__main__":
+    main()
