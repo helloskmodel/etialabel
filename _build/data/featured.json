@@ -75,7 +75,9 @@
     "液氮(气相/液相)存储",
     "生物样本库与冰箱库存",
     "冻融样本追踪"
-   ]
+   ],
+   "tds_url": null,
+   "tds_available": false
   },
   {
    "id": "fps-hp900",
@@ -108,7 +110,9 @@
    "challenge_en": null,
    "challenge_zh": null,
    "applications_en": [],
-   "applications_zh": []
+   "applications_zh": [],
+   "tds_url": null,
+   "tds_available": false
   },
   {
    "id": "fps-hp-cx",
@@ -142,7 +146,9 @@
    "challenge_en": null,
    "challenge_zh": null,
    "applications_en": [],
-   "applications_zh": []
+   "applications_zh": [],
+   "tds_url": null,
+   "tds_available": false
   },
   {
    "id": "fps-e-2314",
@@ -184,7 +190,9 @@
     "生胎条码追踪",
     "硫化过程追溯",
     "成品轮胎识别"
-   ]
+   ],
+   "tds_url": null,
+   "tds_available": false
   },
   {
    "id": "fps-e-2532bl",
@@ -225,7 +233,9 @@
     "VIN 铭牌与标签",
     "防转移安全识别",
     "车辆合规标识"
-   ]
+   ],
+   "tds_url": null,
+   "tds_available": false
   },
   {
    "id": "fps-xf-581",
@@ -268,7 +278,9 @@
     "PCB 追溯条码",
     "元件制程前标识",
     "在制品追踪"
-   ]
+   ],
+   "tds_url": null,
+   "tds_available": false
   },
   {
    "id": "fps-e-2813",
@@ -309,7 +321,9 @@
     "汽车零件标识",
     "模具与工装识别",
     "大型设备铭牌"
-   ]
+   ],
+   "tds_url": null,
+   "tds_available": false
   },
   {
    "id": "fps-apex",
@@ -352,7 +366,9 @@
     "高密度 PCB 追溯",
     "多次回流装配追踪",
     "ESD 管控电子"
-   ]
+   ],
+   "tds_url": null,
+   "tds_available": false
   }
  ]
 }

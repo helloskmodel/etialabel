@@ -29,7 +29,8 @@ def F(pid,model,slug,ind_en,ind_zh,harsh_en,harsh_zh,one_en,one_zh,tags_en,tags_
         "homepage_featured":home,"featured_order":order,"maps_to":maps_to,
         "verified_claim_en":verified_en,"verified_claim_zh":verified_zh,
         "challenge_en":challenge_en,"challenge_zh":challenge_zh,
-        "applications_en":apps_en or [],"applications_zh":apps_zh or []}
+        "applications_en":apps_en or [],"applications_zh":apps_zh or [],
+        "tds_url":None,"tds_available":False}  # fill tds_url with the COS link when supplied
 
 PRODUCTS=[
  F("fps-e-4812","E-4812","e-4812-cryogenic-direct-apply-label",

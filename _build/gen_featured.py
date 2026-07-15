@@ -94,6 +94,16 @@ PERF_ROWS=[("Temperature / exposure","温度/暴露"),("Application temperature"
  ("Printing method","打印方式"),("Chemical resistance","耐化学"),("Abrasion resistance","耐磨"),
  ("Outdoor durability","户外耐久"),("Certifications / compliance","认证/合规"),("Recommended ribbon","推荐碳带")]
 
+def tds_button(p,lang):
+    if p.get("tds_url"):
+        return '<a class="btn sec" href="%s">%s</a>'%(esc(p["tds_url"]),("下载 TDS" if lang=="zh" else "Download TDS"))
+    return '<a class="btn sec" href="%s">%s</a>'%(L(lang,"/contact/"),("索取 TDS" if lang=="zh" else "Request TDS"))
+
+def tds_badge(p,lang):
+    if p.get("tds_url") or p.get("tds_available"):
+        return '<span class="pill" style="background:#eef7ea;color:#276527;border-color:#bfe0b0">%s</span>'%("TDS 可用 ✓" if lang=="zh" else "TDS Available ✓")
+    return ""
+
 def build_landing(lang,p):
     path="%s%s/"%(CENTER,p["slug"])
     verified=('<div class="verify" style="background:#eef7ea;border-color:#bfe0b0;color:#276527"><b>✓ %s</b></div>'%esc(p["verified_claim_zh"] if lang=="zh" else p["verified_claim_en"])) if p["verified_claim_en"] else ""
@@ -108,9 +118,11 @@ def build_landing(lang,p):
     rel.append(("/contact/",("咨询工程师" if lang=="zh" else "Talk to an Engineer")))
     rellinks="".join('<a href="%s">%s</a>'%(L(lang,u),esc(t)) for u,t in rel[:3])
     faq=build_faq(p,lang)
+    hero_btns=('<div class="btns" style="margin-top:16px"><a class="btn pri" href="%s">%s</a>%s</div>')%(
+        L(lang,"/contact/"),("申请样品" if lang=="zh" else "Request a Sample"),tds_button(p,lang))
     body=(
-      '<section class="blk"><div class="wrap"><div class="xlinks">%s</div>%s'
-      '<div style="margin-top:10px">%s</div></div></section>'
+      '<section class="blk"><div class="wrap"><div class="xlinks">%s %s</div>%s'
+      '<div style="margin-top:10px">%s</div>%s</div></section>'
       '<section class="blk"><div class="wrap"><h2>%s</h2><p style="color:var(--mut);max-width:48em">%s</p></div></section>'
       '<section class="blk" style="background:var(--bg)"><div class="wrap"><h2>%s</h2><ul class="checks">%s</ul></div></section>'
       '<section class="blk"><div class="wrap"><h2>%s</h2><div class="tablewrap"><table><tbody>%s</tbody></table></div>'
@@ -119,8 +131,8 @@ def build_landing(lang,p):
       '<section class="blk"><div class="wrap"><h2>%s</h2><div class="xlinks">%s</div></div></section>'
       '<section class="blk"><div class="wrap"><div class="verify">%s</div></div></section>'
       '<div class="wrap">%s</div>')%(
-        perf_tags(p,lang), verified,
-        cond_pills(p,lang),
+        perf_tags(p,lang), tds_badge(p,lang), verified,
+        cond_pills(p,lang), hero_btns,
         ("识别挑战" if lang=="zh" else "The Identification Challenge"),
         esc(p["challenge_zh"] if lang=="zh" else p["challenge_en"]) if p["challenge_en"] else "",
         ("典型应用" if lang=="zh" else "Typical Applications"), apps or "<li>—</li>",
