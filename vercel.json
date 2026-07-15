@@ -36,6 +36,16 @@
       "source": "/automotive/:path*",
       "destination": "/industries/automotive-label-materials/",
       "permanent": true
+    },
+    {
+      "source": "/healthcare",
+      "destination": "/industries/healthcare-life-sciences/",
+      "permanent": true
+    },
+    {
+      "source": "/medical",
+      "destination": "/industries/healthcare-life-sciences/",
+      "permanent": true
     }
   ]
 }

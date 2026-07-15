@@ -377,8 +377,17 @@ def build_industries_hub(lang):
          else "3M and FLEXcon materials: underhood, EV battery, wire harness, VIN and warning identification."),
         L(lang,"/brands/3m/automotive-label-materials/"),
         L(lang,"/brands/flexcon/automotive-label-materials/"))
+    # cross-series card: Healthcare & Life Sciences (FLEXcon + BIO TECH) — built by gen_healthcare
+    hc_card = ('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="xlinks">'
+               '<a href="%s">FLEXcon</a><a href="%s">BIO TECH</a></div></a>') % (
+        L(lang,"/industries/healthcare-life-sciences/"),
+        ("医疗与生命科学" if lang=="zh" else "Healthcare & Life Sciences"),
+        ("FLEXcon 与 BIO TECH:可穿戴、诊断、制药、医疗器械、实验室;低温/液氮/灭菌。" if lang=="zh"
+         else "FLEXcon and BIO TECH: wearables, diagnostics, pharma, devices, laboratory; cryogenic, sterilization."),
+        L(lang,"/brands/flexcon/healthcare-life-sciences/"),
+        L(lang,"/brands/bio-tech/healthcare-life-sciences/"))
     h1 = "工业标识 — 行业与工艺应用" if lang=="zh" else "Industries & Applications"
-    body = '<section class="blk"><div class="wrap"><div class="grid">%s%s</div></div></section><div class="wrap">%s</div>' % (auto_card, cards, cta(lang))
+    body = '<section class="blk"><div class="wrap"><div class="grid">%s%s%s</div></div></section><div class="wrap">%s</div>' % (auto_card, hc_card, cards, cta(lang))
     crumb=[("Home","/"),("Industries & Applications",u_ind_hub())]
     write(lang, u_ind_hub(), page(lang, u_ind_hub(),
         ("行业与应用 — 超高温标识 | ETIA" if lang=="zh" else "Industries & Applications — Ultra-High-Temp Identification | ETIA"),
