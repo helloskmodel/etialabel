@@ -166,12 +166,14 @@
     ],
     "fs_eyebrow": "FREE SAMPLE",
     "fs_title": "Request Free Samples",
-    "fs_sub": "Leave your email, phone and mailing address — we'll send samples to you.",
+    "fs_sub": "Request free samples of any material above — leave your email, phone and mailing address, and we'll send them for evaluation.",
     "fs_email": "Email",
     "fs_phone": "Phone",
     "fs_addr": "Mailing address",
     "fs_btn": "Request Free Sample",
-    "fs_note": "We reply within one business day."
+    "fs_note": "We reply within one business day.",
+    "sc_eyebrow": "SERVICE COMMITMENT",
+    "sc_title": "Our Service Commitment"
   },
   "zh": {
     "nav": [
@@ -314,12 +316,14 @@
     ],
     "fs_eyebrow": "免费样品",
     "fs_title": "申请免费样品",
-    "fs_sub": "留下您的邮箱、电话与邮寄地址，我们为您寄送样品。",
+    "fs_sub": "上述任一材料均可免费申请样品——留下您的邮箱、电话与邮寄地址，我们为您寄送验证。",
     "fs_email": "邮箱",
     "fs_phone": "电话",
     "fs_addr": "邮寄地址",
     "fs_btn": "申请免费样品",
-    "fs_note": "我们将在一个工作日内回复。"
+    "fs_note": "我们将在一个工作日内回复。",
+    "sc_eyebrow": "服务承诺",
+    "sc_title": "我们的服务承诺"
   },
   "vi": {
     "nav": [
@@ -462,12 +466,14 @@
     ],
     "fs_eyebrow": "FREE SAMPLE",
     "fs_title": "Request Free Samples",
-    "fs_sub": "Leave your email, phone and mailing address — we'll send samples to you.",
+    "fs_sub": "Request free samples of any material above — leave your email, phone and mailing address, and we'll send them for evaluation.",
     "fs_email": "Email",
     "fs_phone": "Phone",
     "fs_addr": "Mailing address",
     "fs_btn": "Request Free Sample",
-    "fs_note": "We reply within one business day."
+    "fs_note": "We reply within one business day.",
+    "sc_eyebrow": "SERVICE COMMITMENT",
+    "sc_title": "Our Service Commitment"
   },
   "th": {
     "nav": [
@@ -610,11 +616,13 @@
     ],
     "fs_eyebrow": "FREE SAMPLE",
     "fs_title": "Request Free Samples",
-    "fs_sub": "Leave your email, phone and mailing address — we'll send samples to you.",
+    "fs_sub": "Request free samples of any material above — leave your email, phone and mailing address, and we'll send them for evaluation.",
     "fs_email": "Email",
     "fs_phone": "Phone",
     "fs_addr": "Mailing address",
     "fs_btn": "Request Free Sample",
-    "fs_note": "We reply within one business day."
+    "fs_note": "We reply within one business day.",
+    "sc_eyebrow": "SERVICE COMMITMENT",
+    "sc_title": "Our Service Commitment"
   }
 }

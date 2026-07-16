@@ -296,3 +296,12 @@ FREE SAMPLE block: form (email / phone / mailing address) -> mailto label@etia-t
 2 Application-Driven Solutions / 应用驱动方案 — materials selected around your process, environment, and performance requirements. / 围绕工艺、环境与性能要求，为您的应用匹配合适材料。
 3 Flexible Supply / 柔性供应 — multiple materials, varied specifications, sample quantities, small-batch production. / 支持多种材料、多种规格、样品及小批量生产。
 4 Responsive Application Support / 及时应用支持 — engineers respond quickly when conditions change or issues arise (positioned as Application Support, not after-sales). / 当生产工况变化或贴标应用出现问题时，我们及时响应，协助恢复稳定生产。
+
+---
+
+# REVISION 7 — Trust Bar (every page) + Service Commitment moved to home bottom
+- TRUST BAR: thin blue strip, 4 short titles only (no descriptions), on EVERY page (home after hero, inner pages after page-head) to divide hero from content below.
+  Titles: 100% Quality Inspection · Application-Driven Solutions · Flexible Supply · Responsive Application Support (中文同 Rev 6).
+- SERVICE COMMITMENT: detailed 4-item block (title + description) moved to the END of the home page, above the Final CTA. Heading "Our Service Commitment / 我们的服务承诺".
+- Home order: Hero → Trust Bar → Why → Applications(6) → Request Product Samples(5) → Free Sample form → Service Commitment → Final CTA.
+- Free Sample copy: no "hot sales / 热销" (ad-law); "Request free samples of any material above…".

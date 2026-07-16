@@ -125,6 +125,14 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .hero h1{font-family:var(--serif);font-weight:600;font-size:46px;line-height:1.08;letter-spacing:-.01em;text-wrap:balance;max-width:16em}
 .hero .lede{margin-top:18px;color:var(--mut);font-size:19px;max-width:40em}
 .hero .btns{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.trustbar{background:linear-gradient(150deg,var(--blue),var(--blue-deep))}
+.trustbar .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:14px 24px}
+.trustbar .ti{font-size:13.5px;font-weight:700;color:#fff;display:flex;gap:8px;align-items:center;justify-content:center;text-align:center}
+.trustbar .ti::before{content:"✓";color:#8fe063;font-weight:800;flex:none}
+.scgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:10px}
+.sci{border-top:2px solid var(--green);padding-top:14px}
+.sci b{display:block;font-size:15px;font-weight:700;color:var(--blue-deep);margin-bottom:6px}
+.sci p{font-size:13px;color:var(--mut);line-height:1.55}
 .svcbar{background:linear-gradient(155deg,var(--blue),var(--blue-deep));color:#fff}
 .svcbar .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:26px 24px}
 .svcbar .i{display:flex;gap:10px;align-items:flex-start}
@@ -259,6 +267,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .hero h1{font-size:32px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}
 .split{grid-template-columns:1fr;gap:22px}.split .imgframe{order:-1}.split .txt h2{font-size:25px}
 .acgrid{grid-template-columns:1fr 1fr;gap:10px}
+.trustbar .wrap{grid-template-columns:1fr 1fr;gap:10px}
+.scgrid{grid-template-columns:1fr 1fr;gap:16px}
 .fsbox{grid-template-columns:1fr;gap:20px}
 .aslide{grid-template-columns:1fr;min-height:0}.aimg{min-height:190px}.aimg .aicon svg{width:60px;height:60px}.acopy{padding:26px 24px}.acopy h3{font-size:22px}.acar-nav{display:none}
 .cslide .cap h3{font-size:20px}}
@@ -311,6 +321,14 @@ Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)"
 <div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span><span><a href="%s">Privacy</a> &nbsp; <a href="%s">Cookies</a></span></div>
 </div></footer>""" % (nav, legal, L(lang,"/privacy/"), L(lang,"/cookies/"))
 
+TRUST_TITLES = {
+ "en":["100% Quality Inspection","Application-Driven Solutions","Flexible Supply","Responsive Application Support"],
+ "zh":["100% 质量检测","应用驱动方案","柔性供应","及时应用支持"],
+}
+def trust_bar(lang):
+    items="".join('<div class="ti">%s</div>'%esc(t) for t in TRUST_TITLES.get(lang, TRUST_TITLES["en"]))
+    return '<section class="trustbar"><div class="wrap">%s</div></section>' % items
+
 def cta(lang):
     if lang == "zh":
         return """<div class="cta"><div class="ic">⚡</div><h3>始于应用。终于选对材料。</h3>
@@ -339,8 +357,9 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 <div class="wrap"><div class="pagehead"><h1>%s</h1>%s</div></div>
 %s
 %s
+%s
 </body></html>""" % (lang, esc(title), esc(desc), canonical, hreflang_block(path), esc(title), CSS, schema_js,
-     L(lang,"/"), nav_html(lang, active, path), cr, esc(h1), lede_html, body, footer_html(lang))
+     L(lang,"/"), nav_html(lang, active, path), cr, esc(h1), lede_html, trust_bar(lang), body, footer_html(lang))
 
 def write(lang, path, content):
     full = os.path.join(ROOT, (PREFIX[lang] + path).strip("/"), "index.html")
@@ -866,25 +885,31 @@ def build_home(lang):
     final_cta=('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
                '<div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn on-dark" href="%s">%s</a></div></div></div>')%(
         esc(T["fcta_title"]),esc(T["fcta_para"]),home_hlink(lang,"/contact/"),esc(T["fcta_b1"]),home_hlink(lang,"/contact/"),esc(T["fcta_b2"]))
-    svc_html="".join('<div class="i"><div class="it"><b>%s</b><span>%s</span></div></div>'%(esc(it["title"]),esc(it["desc"])) for it in T.get("svc",[]))
+    trust_html=trust_bar(lang)
+    sc_items="".join('<div class="sci"><b>%s</b><p>%s</p></div>'%(esc(it["title"]),esc(it["desc"])) for it in T.get("svc",[]))
+    sc_section=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
+                '<div class="scgrid">%s</div></div></section>')%(
+        esc(T.get("sc_eyebrow","SERVICE COMMITMENT")),esc(T.get("sc_title","Our Service Commitment")),sc_items)
     body="""<section class="hero"><div class="wrap">
 <div class="eyebrow">%s</div><h1 class="serif">%s</h1>
 <p class="lede" style="color:var(--ink);font-size:20px;font-weight:600;max-width:32em">%s</p>
 <p class="lede">%s</p>
 <div class="btns"><a class="btn pri" href="#applications">%s</a><a class="btn sec" href="%s">%s</a></div></div></section>
-<section class="svcbar"><div class="wrap">%s</div></section>
+%s
 <section class="blk" style="background:var(--tint-green)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="whygrid">%s</div>%s</div></section>
 <section class="blk" id="applications" style="background:var(--tint-blue)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>%s
 <div style="margin-top:20px"><a class="btn sec" href="%s">%s →</a></div></div></section>
 %s
 %s
+%s
 %s""" % (
         esc(T["hero_eyebrow"]),esc(T["hero_h1"]),esc(T["hero_line"]),esc(T["hero_para"]),esc(T["hero_b1"]),home_hlink(lang,"/contact/"),esc(T["hero_b2"]),
-        svc_html,
+        trust_html,
         esc(T["why_eyebrow"]),esc(T["why_head"]),esc(T["why_intro"]),why_html,why_close,
         esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_grid,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]),
         prod_section,
         fs_section,
+        sc_section,
         final_cta)
     canonical=SITE+HL_PREFIX[lang]+path
     schema_js='<script type="application/ld+json">%s</script>'%json.dumps(ORG_JSONLD,ensure_ascii=False)
