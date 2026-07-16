@@ -333,7 +333,8 @@ def build_products_overview(lang):
 def build_application_notes(lang):
     zh = (lang == "zh")
     # Browse chips: by industry (6) + by environment (9) — articles get tagged into these.
-    ind_chips = "".join('<a class="pill" href="%s">%s</a>' % (L(lang, u), esc(z if zh else e)) for e, z, u in APPS_AXIS)
+    # Application Notes is an independent SEO article library — tags organize notes, they do NOT link to products.
+    ind_chips = "".join('<span class="pill">%s</span>' % esc(z if zh else e) for e, z, u in APPS_AXIS)
     env_chips = "".join('<span class="pill tag">%s</span>' % esc(z if zh else e) for e, z in BY_ENV)
     body = (
         '<section class="blk"><div class="wrap">'
