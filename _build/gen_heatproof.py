@@ -287,29 +287,47 @@ def line_products(pid):
     return [PRODUCTS[x] for x in PRODUCTS if pid in PRODUCTS[x]["process_paths"]]
 
 def build_products_hub(lang):
-    cards = ""
-    for pid in ["direct_hot_application","heat_treatment_labels","heat_treatment_tags"]:
-        pp = PATHS[pid]; prods = line_products(pid)
-        title = pp["title_zh"] if lang=="zh" else pp["title_en"]
-        temps = [PRODUCTS[x]["max_proc"] for x in PRODUCTS if pid in PRODUCTS[x]["process_paths"]]
-        cards += ('<a class="card" href="%s"><h3>%s</h3><p>%s</p>'
-                  '<div class="rows"><b>%d</b> products · format: %s</div></a>') % (
-            L(lang,u_line(pid)), esc(title),
-            ("面向该工艺的材料选择。" if lang=="zh" else "Material selection focused on this process."),
-            len(prods), ("吊牌" if pp["type"]=="tag" else "标签") if lang=="zh" else pp["type"])
+    # Products & Solutions — three ways to find a material
+    routes = [
+      ("按行业" if lang=="zh" else "By Industry",
+       "电子/PCB、金属陶瓷、医疗、汽车、电力线缆、户外能源 —— 从您的行业与应用出发。" if lang=="zh"
+       else "Electronics/PCB, metal & ceramics, medical, automotive, wire & cable, outdoor & energy — start from your industry and application.",
+       "/industries/"),
+      ("按材料" if lang=="zh" else "By Material",
+       "聚酰亚胺(重点)、聚酯、乙烯基等 —— 从材料结构出发选型。" if lang=="zh"
+       else "Polyimide (featured), polyester, vinyl and more — start from the material construction.",
+       "/materials/"),
+      ("严选产品" if lang=="zh" else "Featured Solutions",
+       "面向极端温度、化学、磨损与防篡改的严苛环境标签精选。" if lang=="zh"
+       else "Selected harsh-environment labels for extreme temperature, chemical, abrasion and tamper-evident needs.",
+       "/featured-solutions/"),
+    ]
+    rcards = "".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="rows" style="color:var(--blue);font-weight:700;margin-top:10px">%s →</div></a>'%(
+        L(lang,u), esc(t), esc(d), ("进入" if lang=="zh" else "Explore")) for t,d,u in routes)
+    # secondary: ultra-high-temperature process lines
+    lcards = "".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>'%(
+        L(lang,u_line(pid)), esc(PATHS[pid]["title_zh"] if lang=="zh" else PATHS[pid]["title_en"]),
+        ("%d 款产品"%len(line_products(pid)) if lang=="zh" else "%d products"%len(line_products(pid))))
+        for pid in ["direct_hot_application","heat_treatment_labels","heat_treatment_tags"])
     body = ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div></div></section>'
+            '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div></div></section>'
             '<div class="wrap">%s</div>') % (
-        ("三条工艺产品线" if lang=="zh" else "Three process product lines"),
-        ("按贴标方式与工艺温度选择。不把所有单品直接堆在总览页。" if lang=="zh" else "Choose by how the label or tag is applied and the process it must survive."),
-        cards, cta(lang))
-    h1 = "工业追溯用超高温标签与吊牌" if lang=="zh" else "Ultra-High-Temperature Labels and Tags for Industrial Traceability"
-    lede = ("面向钢铁、铝业、陶瓷、混凝土等高温工艺的标识方案。ETIA 供应 YS-Tech HEATPROOF 材料并提供应用支持。" if lang=="zh"
-            else "Identification that survives casting, rolling, annealing, firing and repeated heat cycles. ETIA supplies YS-Tech HEATPROOF materials with application support.")
-    crumb = [("Home","/"),("Products",u_products())]
+        ("三种查找方式" if lang=="zh" else "Three ways to find a material"),
+        ("按行业、按材料,或从严选产品切入 —— 每条路径最终都指向同一款有数据表支撑的产品。" if lang=="zh"
+         else "By industry, by material, or from our featured products — every path converges on the same datasheet-backed material."),
+        rcards,
+        ("超高温工艺产品线" if lang=="zh" else "Ultra-high-temperature process lines"),
+        ("热态直贴 / 热处理标签 / 热处理吊牌 —— 面向钢铁、铝、陶瓷、混凝土等高温工艺。" if lang=="zh"
+         else "Direct hot application / heat-treatment labels / heat-treatment tags — for steel, aluminum, ceramics and concrete."),
+        lcards, cta(lang))
+    h1 = "产品与解决方案" if lang=="zh" else "Products & Solutions"
+    lede = ("按行业、按材料或从严选产品出发,找到适配您应用的耐久标签材料。" if lang=="zh"
+            else "Find durable label materials matched to your application — by industry, by material, or from our featured solutions.")
+    crumb = [("Home","/"),("Products & Solutions",u_products())]
     write(lang, u_products(), page(lang, u_products(),
-        ("超高温标签与吊牌 | ETIA" if lang=="zh" else "Ultra-High-Temperature Labels & Tags | ETIA"),
-        ("面向高温工艺的直贴标签、热处理标签与吊牌 — 钢铁/铝/陶瓷/混凝土。" if lang=="zh"
-         else "Ultra-high-temperature labels and tags for direct hot application, heat-treatment and tagging across steel, aluminum, ceramics and concrete."),
+        ("产品与解决方案 | ETIA" if lang=="zh" else "Products & Solutions | ETIA"),
+        ("按行业、按材料或严选产品浏览 ETIA 耐久与特种标签材料。" if lang=="zh"
+         else "Browse ETIA durable and specialty label materials by industry, by material, or by featured solution."),
         h1, lede, body, crumb, active="products"))
     if lang=="en": track(u_products(),"core")
 
@@ -820,6 +838,100 @@ def clean():
     for f in os.listdir(ROOT):
         if f.startswith("sitemap") or f=="robots.txt": os.remove(os.path.join(ROOT,f))
 
+def build_about(lang):
+    zh = (lang=="zh")
+    lead = ("ETIA 是耐用与特种工业标签材料的解决方案伙伴 —— 我们从您的应用出发,匹配、开发并供应能在普通标签失效之处依然可靠的标签。" if zh
+            else "ETIA is a solution partner for durable and specialty industrial label materials — we start from your application to match, develop and supply labels that perform where ordinary ones fail.")
+    blocks = [
+      (("应用优先" if zh else "Application first"),
+       ("在推荐材料之前,我们先理解表面、温度、化学环境、打印方式与产品生命周期。" if zh
+        else "Before recommending a material, we understand the surface, temperature, chemistry, print method and product lifecycle.")),
+      (("材料与研发" if zh else "Materials & development"),
+       ("我们整合来自选定国际专业品牌的特种材料,并针对油污、难粘基材与复杂工艺开发 ETIA 自有材料结构。" if zh
+        else "We combine specialty materials from selected international brands with ETIA-developed constructions for oily, hard-to-bond and demanding processes.")),
+      (("加工与供应" if zh else "Converting & supply"),
+       ("自有分切与模切,支持多品种、小批量与稳定的长期供应。" if zh
+        else "In-house slitting and die-cutting supporting higher-mix, small-batch runs and dependable long-term supply.")),
+      (("区域布局" if zh else "Regional presence"),
+       ("上海 · 香港 · 曼谷 · 北宁,持续拓展东南亚市场。" if zh
+        else "Shanghai · Hong Kong · Bangkok · Bac Ninh, expanding across Southeast Asia.")),
+    ]
+    cards="".join('<div class="card"><h3>%s</h3><p>%s</p></div>'%(esc(t),esc(d)) for t,d in blocks)
+    note=("ETIA 是材料供应与应用支持伙伴,并非所代表品牌产品的制造商;我们不将原厂的制造、研发与认证能力写作 ETIA 自有。" if zh
+          else "ETIA is a materials supply and application-support partner, not the manufacturer of the represented brands' products; we do not present manufacturers' production, R&D or certifications as our own.")
+    body=('<section class="blk"><div class="wrap"><div class="grid">%s</div></div></section>'
+          '<section class="blk"><div class="wrap"><div class="verify">%s</div></div></section>'
+          '<div class="wrap">%s</div>')%(cards,esc(note),cta(lang))
+    crumb=[("Home","/"),("About ETIA","/about/")]
+    write(lang,"/about/",page(lang,"/about/",
+        ("关于 ETIA | ETIA" if zh else "About ETIA | ETIA"),
+        ("ETIA 是耐用与特种工业标签材料的解决方案伙伴,应用优先、自有加工、区域供应。" if zh
+         else "ETIA is a solution partner for durable and specialty industrial label materials — application-first, in-house converting, regional supply."),
+        ("关于 ETIA" if zh else "About ETIA"), lead, body, crumb, active="about"))
+    if lang=="en": track("/about/","core")
+
+def build_contact(lang):
+    zh=(lang=="zh")
+    offices=[
+      ("Shanghai","上海","China","中国","+86 151 2119 7091 · 400 990 8448"),
+      ("Hong Kong","香港","ETIA-TECH (ASIA) Co., Limited","ETIA-TECH (ASIA) Co., Limited","label@etia-tech.com"),
+      ("Bangkok","曼谷","Thailand","泰国","+66 811 746 947"),
+      ("Bac Ninh","北宁","Vietnam","越南","+84 344 590 091"),
+    ]
+    cards="".join('<div class="card"><h3>%s</h3><p>%s</p><div class="rows"><b>%s</b></div></div>'%(
+        esc(z if zh else e), esc(rz if zh else r), esc(c)) for e,z,r,rz,c in offices)
+    ask=("告诉我们:粘贴表面、温度(贴标时与后续最高)、化学暴露、打印方式与标签尺寸,我们推荐材料并安排样品。" if zh
+         else "Tell us: the surface, temperature (at application and later peak), chemical exposure, print method and label size — we'll recommend the material and arrange samples.")
+    body=('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div>'
+          '<a class="btn pri" href="mailto:label@etia-tech.com">label@etia-tech.com</a></div></section>'
+          '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>'
+          '<div class="wrap">%s</div>')%(
+        ("告诉我们您的应用" if zh else "Tell us your application"), esc(ask),
+        ("办公室" if zh else "Offices"), cards, cta(lang))
+    crumb=[("Home","/"),("Contact","/contact/")]
+    write(lang,"/contact/",page(lang,"/contact/",
+        ("联系 ETIA | ETIA" if zh else "Contact ETIA | ETIA"),
+        ("联系 ETIA:上海 · 香港 · 曼谷 · 北宁 · label@etia-tech.com。提供工况,我们匹配材料并寄样。" if zh
+         else "Contact ETIA — Shanghai · Hong Kong · Bangkok · Bac Ninh · label@etia-tech.com. Share your application and we'll match the material and send samples."),
+        ("联系我们" if zh else "Contact ETIA"),
+        ("提供工况,我们匹配材料并寄样验证。" if zh else "Share your application — we'll match the material and validate by sample."),
+        body, crumb, active="contact"))
+    if lang=="en": track("/contact/","core")
+
+def build_tech(lang):
+    zh=(lang=="zh")
+    items=[
+      (("应用优先的选型" if zh else "Application-first selection"),
+       ("我们按真实工况匹配材料,而不是默认推荐参数最高的方案。" if zh
+        else "We match materials to the real process, not automatically the highest-spec option.")),
+      (("技术数据表(TDS)" if zh else "Technical data sheets (TDS)"),
+       ("每个型号的耐温、认证与化学数据以原厂 TDS 为准 —— 可按需索取。" if zh
+        else "Temperature, certification and chemical data for each model come from the manufacturer TDS — available on request.")),
+      (("温度的正确读法" if zh else "Reading temperatures correctly"),
+       ("区分贴标温度、持续使用温度与短时峰值温度;峰值不等于长期耐温。" if zh
+        else "Distinguish application temperature, continuous service temperature and short-term peak; a peak is not a continuous rating.")),
+      (("样品与验证" if zh else "Samples & validation"),
+       ("量产前请以实际材料通过您的打印、表面、化学与暴露顺序测试。" if zh
+        else "Before production, test the actual material through your print, surface, chemistry and exposure sequence.")),
+    ]
+    cards="".join('<div class="card"><h3>%s</h3><p>%s</p></div>'%(esc(t),esc(d)) for t,d in items)
+    body=('<section class="blk"><div class="wrap"><div class="grid">%s</div></div></section>'
+          '<section class="blk"><div class="wrap"><div class="verify">%s</div></div></section>'
+          '<div class="wrap">%s</div>')%(cards,
+        ("选型指南、温度分级参考与应用笔记正在陆续发布;需要具体型号资料请联系 ETIA。" if zh
+         else "Selection guides, temperature-tier references and application notes are being published; contact ETIA for model-specific data."),
+        cta(lang))
+    crumb=[("Home","/"),("Technical Resources","/technical-resources/")]
+    write(lang,"/technical-resources/",page(lang,"/technical-resources/",
+        ("技术资源 | ETIA" if zh else "Technical Resources | ETIA"),
+        ("选型方法、TDS 索取、温度读法与样品验证 —— ETIA 应用支持。" if zh
+         else "Selection approach, TDS on request, reading temperatures and sample validation — ETIA application support."),
+        ("技术资源" if zh else "Technical Resources"),
+        ("选型方法、技术数据与验证建议 —— 帮助您在量产前选对材料。" if zh
+         else "Selection approach, technical data and validation guidance — to choose the right material before production."),
+        body, crumb, active="tech"))
+    if lang=="en": track("/technical-resources/","core")
+
 def build_all():
   for lang in HOME_LANGS:   # home is 4-language (en, zh, vi, th)
     build_home(lang)
@@ -831,16 +943,9 @@ def build_all():
     for iid in INDUSTRIES: build_industry(lang, iid)
     for a in APPS: build_application(lang, a)
     build_outdoor_energy(lang)
-    # supporting nav stubs (marked pending where content not yet supplied)
-    build_stub(lang,"/technical-resources/","Technical Resources","技术资源",
-        "Selection guides, temperature-tier reference and datasheets for ultra-high-temperature identification. Full resource library is being populated.",
-        "超高温标识的选型指南、温度分级参考与技术数据表。资源库正在完善中。", active="tech")
-    build_stub(lang,"/about/","About ETIA","关于ETIA",
-        "ETIA is a supplier and application-support partner for durable, specialty industrial labels — not the manufacturer of HEATPROOF products. Full company profile is being finalized.",
-        "ETIA 是耐用型特种工业标签的供应与应用支持伙伴,并非 HEATPROOF 产品的制造商。公司完整介绍整理中。", active="about")
-    build_stub(lang,"/contact/","Contact ETIA","联系我们",
-        "Tell us the object temperature at application, the maximum later process temperature, the surface and the attachment method — Shanghai · Hong Kong · Bangkok · Bac Ninh · label@etia-tech.com",
-        "请告知贴标时物件温度、后续最高工艺温度、表面及附着方式 — 上海 · 香港 · 曼谷 · 北宁 · label@etia-tech.com", active="contact")
+    build_about(lang)
+    build_contact(lang)
+    build_tech(lang)
     # legal stubs (placeholder copy — to be replaced with reviewed legal text)
     build_stub(lang,"/privacy/","Privacy Policy","隐私政策",
         "This Privacy Policy explains how ETIA handles information collected through this website. Full reviewed policy text is being finalized.",
