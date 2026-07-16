@@ -286,6 +286,24 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .acar-nav{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:22px;line-height:1;cursor:pointer;z-index:5;box-shadow:0 6px 18px rgba(16,34,58,.14)}
 .acar-nav:hover{border-color:var(--blue);color:var(--blue)}
 .acar-nav.prev{left:-14px}.acar-nav.next{right:-14px}
+/* product catalog: facets + list (Brady IA, modern skin) */
+.catalog{display:grid;grid-template-columns:236px 1fr;gap:30px;align-items:start;margin-top:6px}
+.facets .fgroup{border-bottom:1px solid var(--line);padding:14px 0}
+.facets .fgroup:first-child{padding-top:0}
+.facets h4{font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin-bottom:9px}
+.facets label{display:flex;align-items:center;gap:9px;font-size:14px;color:var(--ink);padding:5px 0;cursor:pointer}
+.facets input{width:16px;height:16px;accent-color:var(--blue);flex:none}
+.catcount{font-size:13px;font-weight:700;color:var(--faint);margin-bottom:14px}
+.plist{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pcardx{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:#fff;display:flex;flex-direction:column;transition:.15s}
+.pcardx:hover{border-color:var(--blue);box-shadow:0 10px 30px rgba(26,86,219,.09)}
+.pcardx h3{font-size:16px;color:var(--blue-deep);margin-bottom:10px;line-height:1.25}
+.pcardx .pmeta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}
+.pcardx .pmeta span{font-size:11.5px;font-weight:700;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:4px 10px;color:var(--mut)}
+.pcardx .pmeta span.esd{background:#eaf1ff;color:var(--blue);border-color:#d6e2fb}
+.pcardx>p{font-size:13px;color:var(--mut);line-height:1.5;flex:1;margin-bottom:13px}
+.pcardx .plink{font-size:13.5px;font-weight:700;color:var(--blue)}
+@media(max-width:820px){.catalog{grid-template-columns:1fr}.plist{grid-template-columns:1fr}}
 @media(max-width:820px){.two{grid-template-columns:1fr}footer .fg{grid-template-columns:1fr}.pagehead h1{font-size:30px}
 .hero h1{font-size:32px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}
 .split{grid-template-columns:1fr;gap:22px}.split .imgframe{order:-1}.split .txt h2{font-size:25px}
