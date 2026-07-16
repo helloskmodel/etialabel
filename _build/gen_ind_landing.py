@@ -213,10 +213,47 @@ def build_landing(lang, slug):
         URLS.append(path)
 
 
+# ---- Browse: By Environment (Products axis) ----
+BY_ENV = [
+    ("Oil-Resistant Labels", "耐油污标签"),
+    ("ESD-Safe Labels", "抗静电标签"),
+    ("Laser-Markable Labels", "激光打标标签"),
+    ("Abrasion-Resistant Labels", "耐磨标签"),
+    ("Cryogenic Labels", "深低温标签"),
+    ("Moisture-Resistant Labels", "耐潮湿标签"),
+    ("Chemical-Resistant Labels", "耐化学标签"),
+    ("Heat-Resistant Labels", "耐高温标签"),
+    ("Sterilization-Resistant Labels", "耐灭菌标签"),
+]
+
+def build_by_environment(lang):
+    zh = (lang == "zh")
+    contact = L(lang, "/contact/")
+    cards = "".join(
+        '<a class="card" href="%s"><h3>%s</h3><div class="go" style="color:var(--blue);font-weight:700;font-size:13.5px;margin-top:10px">%s →</div></a>'
+        % (contact, esc(z if zh else e), ("申请样品" if zh else "Request Samples")) for e, z in BY_ENV)
+    body = ('<section class="blk"><div class="wrap"><div class="grid">%s</div></div></section>'
+            '<div class="wrap">%s</div>') % (cards, cta(lang))
+    path = "/products/by-environment/"
+    crumb = [("Home", "/"), ("Products", "/products/"), ("By Environment" if not zh else "按环境", path)]
+    write(lang, path, page(lang, path,
+          ("按环境选择标签材料 | ETIA" if zh else "Label Materials by Environment | ETIA"),
+          ("按使用环境选择标签材料：耐油污、抗静电、激光打标、耐磨、深低温、耐潮湿、耐化学、耐高温、耐灭菌。" if zh
+           else "Select label materials by environment: oil, ESD, laser-marking, abrasion, cryogenic, moisture, chemical, heat and sterilization."),
+          ("按环境" if zh else "By Environment"),
+          ("按使用环境快速定位合适的标签材料 —— 具体型号由 ETIA 依据真实工况匹配。" if zh
+           else "Find the right label material by the environment it must survive — matched to your real conditions by ETIA."),
+          body, crumb, active="products"))
+    if lang == "en":
+        URLS.append(path)
+
+
 def main():
     for slug in LANDINGS:
         for lang in LANGS:
             build_landing(lang, slug)
+    for lang in LANGS:
+        build_by_environment(lang)
 
 
 if __name__ == "__main__":
