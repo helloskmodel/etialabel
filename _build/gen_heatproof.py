@@ -847,7 +847,7 @@ def build_home(lang):
     # Explore by Application — six cards (image on top, copy below; all six visible, animate on hover)
     cards=""
     for k,f in enumerate(T["focus"]):
-        img_html=('<img src="%s" alt="%s" loading="lazy">'%(esc(f["img"]),esc(f["name"]))) if f.get("img") else ""
+        img_html=('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">'%(esc(f["img"]),esc(f["name"]))) if f.get("img") else ""
         cards+=('<a class="acard" href="%s"><div class="acard-img g%d">%s<span class="aicon">%s</span></div>'
                 '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p>'
                 '<div class="acard-go">%s →</div></div></a>')%(
@@ -859,7 +859,7 @@ def build_home(lang):
     pcards=""
     for k,pr in enumerate(T.get("products",[])):
         gi=PROD_ICON[k%len(PROD_ICON)]
-        pimg=('<img src="%s" alt="%s" loading="lazy">'%(esc(pr["img"]),esc(pr["name"]))) if pr.get("img") else ""
+        pimg=('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">'%(esc(pr["img"]),esc(pr["name"]))) if pr.get("img") else ""
         pcards+=('<a class="acard pcard" href="%s"><div class="acard-img g%d">%s<span class="aicon">%s</span></div>'
                  '<div class="acard-body"><h3>%s</h3><div class="pmodel">%s</div><div class="pcode">%s</div>'
                  '<div class="acard-go">%s →</div></div></a>')%(
