@@ -302,15 +302,11 @@ def build_landing(lang, slug):
              '<a class="btn on-dark" href="%s">%s</a></div></div></div>') % (
         esc(d["fcta_h"]), esc(d["fcta_body"]), contact, esc(d["fcta1"]), contact, esc(d["fcta2"]))
 
-    body = (sec("", top)
-            + sec("var(--tint-green)", challenges)
-            + sec("", offers)
-            + sec("var(--tint-blue)", apps)
-            + sec("", directions)
-            + sec("var(--tint-green)", steps)
-            + sec("", why)
-            + sec("", close)
-            + final)
+    # CLEAN layer-1 (hoenle model): short general intro (the hero, rendered by page())
+    # + applications one-by-one as image+text cards + CTA. The brochure blocks
+    # (top/challenges/offers/directions/steps/why/close) stay computed above for future
+    # use but are intentionally NOT rendered — user wants intro + application cards only.
+    body = sec("", apps) + final
 
     crumb = [(("首页" if lang == "zh" else "Home"), "/"),
              (("行业" if lang == "zh" else "Industries"), "/industries/"),
