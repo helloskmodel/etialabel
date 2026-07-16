@@ -67,7 +67,25 @@ nav .lang{font-size:13px;color:var(--faint);border:1px solid var(--line);border-
 nav .langsw a{display:inline-block;font-size:12px;color:var(--faint);padding:5px 9px;border-radius:7px;font-weight:600}
 nav .langsw a.on{color:#fff;background:var(--blue)}
 nav .langsw a:hover{color:var(--blue)}nav .langsw a.on:hover{color:#fff}
-@media(max-width:900px){nav a:not(.lang){display:none}}
+/* Products mega-menu dropdown */
+nav .nd{position:relative;display:inline-block}
+nav .nd::after{content:"";position:absolute;top:100%;left:0;right:0;height:16px}
+nav .ndt{display:inline-flex;align-items:center;gap:5px;font-size:14.5px;font-weight:600;color:var(--ink);cursor:pointer}
+nav .ndt .caret{font-size:10px;color:var(--faint);transition:.15s}
+nav .nd:hover .ndt{color:var(--blue)}nav .nd:hover .ndt .caret{transform:rotate(180deg);color:var(--blue)}
+nav .ndm.pm{position:absolute;top:100%;left:0;margin-top:14px;background:#fff;border:1px solid var(--line);
+  border-radius:16px;box-shadow:0 22px 60px rgba(20,40,90,.18);display:grid;grid-template-columns:210px 1fr;
+  min-width:600px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.15s;z-index:60;overflow:hidden}
+nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transform:translateY(0)}
+.pm .ndrail{background:var(--bg);border-right:1px solid var(--line);padding:14px 12px}
+.pm .axbtn{display:block;width:100%;text-align:left;background:none;border:none;font-family:inherit;
+  font-size:14px;font-weight:700;color:var(--ink);padding:11px 14px;border-radius:9px;cursor:pointer;white-space:nowrap}
+.pm .axbtn.on,.pm .axbtn:hover{background:#fff;color:var(--blue);box-shadow:0 2px 8px rgba(16,34,58,.06)}
+.pm .ndpanels{padding:18px 20px}
+.pm .axpanel{grid-template-columns:1fr 1fr;gap:4px 26px}
+.pm .axpanel a{display:block;font-size:13.5px;font-weight:600;color:var(--ink);padding:8px 10px;border-radius:8px;white-space:nowrap}
+.pm .axpanel a:hover{background:var(--tint-blue);color:var(--blue);text-decoration:none}
+@media(max-width:900px){nav a:not(.lang){display:none}nav .nd{display:none}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
 .btn{display:inline-block;font-weight:700;font-size:15px;padding:12px 24px;border-radius:10px}
@@ -280,6 +298,50 @@ NAV_ITEMS = [("Products", u_products(), "products"),
              ("Service", "/service/", "service")]
 NAV_ZH = {"Products":"产品","Applications":"应用","Insights":"洞察","Service":"服务"}
 
+# Products mega-menu: 4 axes (Computype-style left rail + right list)
+PROD_AXES = [
+ ("app","By Application","按应用",[
+   ("Electronics & PCB","电子与PCB","/industries/electronics-pcb/"),
+   ("Metals & Ceramics","金属与陶瓷","/industries/steel/"),
+   ("Medical & Laboratory","医疗与实验室","/industries/healthcare-life-sciences/"),
+   ("Automotive & Tire","汽车与轮胎","/industries/automotive-label-materials/"),
+   ("Wire & Cable","电线与电缆","/industries/wire-cable/"),
+   ("Outdoor & Energy","户外与能源","/industries/outdoor-energy/"),
+ ]),
+ ("env","By Environment","按环境",[
+   ("Oil-Resistant","耐油污","/products/by-environment/"),
+   ("ESD-Safe","抗静电","/products/by-environment/"),
+   ("Laser-Markable","激光打标","/products/by-environment/"),
+   ("Abrasion-Resistant","耐磨","/products/by-environment/"),
+   ("Cryogenic","深低温","/products/by-environment/"),
+   ("Moisture-Resistant","耐潮湿","/products/by-environment/"),
+   ("Chemical-Resistant","耐化学","/products/by-environment/"),
+   ("Heat-Resistant","耐高温","/products/by-environment/"),
+   ("Sterilization-Resistant","耐灭菌","/products/by-environment/"),
+ ]),
+ ("feat","By Feature","按特性",[
+   ("Tamper-Evident","防拆","/products/by-feature/"),
+   ("Removable","可移除","/products/by-feature/"),
+ ]),
+ ("mat","By Material","按材料",[
+   ("Polyimide — Heat-Resistant","聚酰亚胺 · 耐高温","/materials/polyimide-pi-label-materials/"),
+ ]),
+]
+
+def products_dropdown(lang, linkfn):
+    zh = (lang == "zh")
+    lab = lambda e, z: z if zh else e
+    top = "产品" if zh else "Products"
+    rail = ""; panels = ""
+    for i, (key, he, hz, items) in enumerate(PROD_AXES):
+        on = " on" if i == 0 else ""
+        rail += '<button type="button" class="axbtn%s" onmouseover="etaAx(this,\'%s\')">%s</button>' % (on, key, esc(lab(he, hz)))
+        links = "".join('<a href="%s">%s</a>' % (linkfn(u), esc(lab(e, z))) for e, z, u in items)
+        panels += '<div class="axpanel" data-ax="%s" style="display:%s">%s</div>' % (key, ("grid" if i == 0 else "none"), links)
+    return ('<div class="nd"><a class="ndt" href="%s">%s <span class="caret">&#9662;</span></a>'
+            '<div class="ndm pm"><div class="ndrail">%s</div><div class="ndpanels">%s</div></div></div>') % (
+        linkfn("/products/"), esc(top), rail, panels)
+
 ALL_URLS = []   # (path, group, changefreq)  — English canonical set for sitemap
 def track(path, group): ALL_URLS.append((path, group))
 
@@ -296,8 +358,12 @@ def breadcrumb_jsonld(items, lang):
 
 def nav_html(lang, active, path="/"):
     def lab(t): return NAV_ZH[t] if lang == "zh" else t
-    items = "".join('<a href="%s"%s>%s</a>' % (L(lang, href), ' class="on"' if key==active else '', lab(t))
-                    for t, href, key in NAV_ITEMS)
+    items = ""
+    for t, href, key in NAV_ITEMS:
+        if key == "products":
+            items += products_dropdown(lang, lambda p: L(lang, p))
+        else:
+            items += '<a href="%s"%s>%s</a>' % (L(lang, href), ' class="on"' if key==active else '', lab(t))
     other = "zh" if lang == "en" else "en"
     other_label = "CN" if lang == "en" else "EN"   # label = the language you switch TO
     return '<nav>%s<a class="lang" href="%s">%s</a></nav>' % (items, L(other, path), other_label)
@@ -357,6 +423,7 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 %s
 %s
 %s
+<script>function etaAx(b,a){var m=b.closest('.ndm');m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});m.querySelectorAll('.axpanel').forEach(function(p){p.style.display=(p.getAttribute('data-ax')===a)?'grid':'none';});}</script>
 </body></html>""" % (lang, esc(title), esc(desc), canonical, hreflang_block(path), esc(title), CSS, schema_js,
      L(lang,"/"), nav_html(lang, active, path), cr, esc(h1), lede_html, trust_bar(lang), body, footer_html(lang))
 
@@ -813,9 +880,11 @@ def home_switcher(active):
 
 def home_nav(lang):
     T=HOME_I18N[lang]
-    hrefs=["/products/","/industries/","/insights/","/service/"]
-    links="".join('<a href="%s">%s</a>'%(home_hlink(lang,h),esc(lbl)) for h,lbl in zip(hrefs,T["nav"]))
-    return '<nav>%s%s</nav>' % (links, home_switcher(lang))
+    lf=lambda p: home_hlink(lang,p)
+    hrefs=["/industries/","/insights/","/service/"]
+    prod=products_dropdown(lang, lf)
+    links="".join('<a href="%s">%s</a>'%(lf(h),esc(lbl)) for h,lbl in zip(hrefs,T["nav"][1:]))
+    return '<nav>%s%s%s</nav>' % (prod, links, home_switcher(lang))
 
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
@@ -922,7 +991,8 @@ def build_home(lang):
 <header><div class="wrap"><a class="logo" href="%s"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%%20LOGO.jpg" alt="ETIA Label"></a>%s</div></header>
 %s
 %s
-<script>function etaSlide(d){var c=document.getElementById('acar');if(c)c.scrollBy({left:d*c.clientWidth,behavior:'smooth'});}
+<script>function etaAx(b,a){var m=b.closest('.ndm');m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});m.querySelectorAll('.axpanel').forEach(function(p){p.style.display=(p.getAttribute('data-ax')===a)?'grid':'none';});}
+function etaSlide(d){var c=document.getElementById('acar');if(c)c.scrollBy({left:d*c.clientWidth,behavior:'smooth'});}
 function etaSample(e){e.preventDefault();var g=function(i){var el=document.getElementById(i);return el?el.value:'';};
 var b='Email: '+g('fs-email')+'%%0D%%0APhone: '+g('fs-phone')+'%%0D%%0AAddress: '+g('fs-addr')+'%%0D%%0A%%0D%%0APlease send free samples.';
 window.location.href='mailto:label@etia-tech.com?subject=Free%%20Sample%%20Request&body='+b;return false;}</script>

@@ -30,7 +30,25 @@ nav .lang{font-size:13px;color:var(--faint);border:1px solid var(--line);border-
 nav .langsw a{display:inline-block;font-size:12px;color:var(--faint);padding:5px 9px;border-radius:7px;font-weight:600}
 nav .langsw a.on{color:#fff;background:var(--blue)}
 nav .langsw a:hover{color:var(--blue)}nav .langsw a.on:hover{color:#fff}
-@media(max-width:900px){nav a:not(.lang){display:none}}
+/* Products mega-menu dropdown */
+nav .nd{position:relative;display:inline-block}
+nav .nd::after{content:"";position:absolute;top:100%;left:0;right:0;height:16px}
+nav .ndt{display:inline-flex;align-items:center;gap:5px;font-size:14.5px;font-weight:600;color:var(--ink);cursor:pointer}
+nav .ndt .caret{font-size:10px;color:var(--faint);transition:.15s}
+nav .nd:hover .ndt{color:var(--blue)}nav .nd:hover .ndt .caret{transform:rotate(180deg);color:var(--blue)}
+nav .ndm.pm{position:absolute;top:100%;left:0;margin-top:14px;background:#fff;border:1px solid var(--line);
+  border-radius:16px;box-shadow:0 22px 60px rgba(20,40,90,.18);display:grid;grid-template-columns:210px 1fr;
+  min-width:600px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.15s;z-index:60;overflow:hidden}
+nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transform:translateY(0)}
+.pm .ndrail{background:var(--bg);border-right:1px solid var(--line);padding:14px 12px}
+.pm .axbtn{display:block;width:100%;text-align:left;background:none;border:none;font-family:inherit;
+  font-size:14px;font-weight:700;color:var(--ink);padding:11px 14px;border-radius:9px;cursor:pointer;white-space:nowrap}
+.pm .axbtn.on,.pm .axbtn:hover{background:#fff;color:var(--blue);box-shadow:0 2px 8px rgba(16,34,58,.06)}
+.pm .ndpanels{padding:18px 20px}
+.pm .axpanel{grid-template-columns:1fr 1fr;gap:4px 26px}
+.pm .axpanel a{display:block;font-size:13.5px;font-weight:600;color:var(--ink);padding:8px 10px;border-radius:8px;white-space:nowrap}
+.pm .axpanel a:hover{background:var(--tint-blue);color:var(--blue);text-decoration:none}
+@media(max-width:900px){nav a:not(.lang){display:none}nav .nd{display:none}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
 .btn{display:inline-block;font-weight:700;font-size:15px;padding:12px 24px;border-radius:10px}
@@ -237,7 +255,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .cslide .cap h3{font-size:20px}}
 </style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "ETIA Label", "url": "https://www.etialabel.com", "slogan": "Where materials meet applications.", "description": "Supplier and application-support partner for durable, specialty industrial labels — from ultra-high-temperature to cryogenic, chemical and tamper-evident identification.", "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "email": "label@etia-tech.com"}]}</script></head><body>
 <div class="topstrip"></div>
-<header><div class="wrap"><a class="logo" href="/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></a><nav><a href="/products/">Products</a><a href="/industries/">Applications</a><a href="/insights/">Insights</a><a href="/service/">Service</a><span class="langsw"><a href="/" class="on">EN</a><a href="/cn/">CN</a><a href="/vn/">VN</a><a href="/th/">TH</a></span></nav></div></header>
+<header><div class="wrap"><a class="logo" href="/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></a><nav><div class="nd"><a class="ndt" href="/products/">Products <span class="caret">&#9662;</span></a><div class="ndm pm"><div class="ndrail"><button type="button" class="axbtn on" onmouseover="etaAx(this,'app')">By Application</button><button type="button" class="axbtn" onmouseover="etaAx(this,'env')">By Environment</button><button type="button" class="axbtn" onmouseover="etaAx(this,'feat')">By Feature</button><button type="button" class="axbtn" onmouseover="etaAx(this,'mat')">By Material</button></div><div class="ndpanels"><div class="axpanel" data-ax="app" style="display:grid"><a href="/industries/electronics-pcb/">Electronics &amp; PCB</a><a href="/industries/steel/">Metals &amp; Ceramics</a><a href="/industries/healthcare-life-sciences/">Medical &amp; Laboratory</a><a href="/industries/automotive-label-materials/">Automotive &amp; Tire</a><a href="/industries/wire-cable/">Wire &amp; Cable</a><a href="/industries/outdoor-energy/">Outdoor &amp; Energy</a></div><div class="axpanel" data-ax="env" style="display:none"><a href="/products/by-environment/">Oil-Resistant</a><a href="/products/by-environment/">ESD-Safe</a><a href="/products/by-environment/">Laser-Markable</a><a href="/products/by-environment/">Abrasion-Resistant</a><a href="/products/by-environment/">Cryogenic</a><a href="/products/by-environment/">Moisture-Resistant</a><a href="/products/by-environment/">Chemical-Resistant</a><a href="/products/by-environment/">Heat-Resistant</a><a href="/products/by-environment/">Sterilization-Resistant</a></div><div class="axpanel" data-ax="feat" style="display:none"><a href="/products/by-feature/">Tamper-Evident</a><a href="/products/by-feature/">Removable</a></div><div class="axpanel" data-ax="mat" style="display:none"><a href="/materials/polyimide-pi-label-materials/">Polyimide — Heat-Resistant</a></div></div></div></div><a href="/industries/">Applications</a><a href="/insights/">Insights</a><a href="/service/">Service</a><span class="langsw"><a href="/" class="on">EN</a><a href="/cn/">CN</a><a href="/vn/">VN</a><a href="/th/">TH</a></span></nav></div></header>
 <section class="hero"><div class="wrap">
 <div class="eyebrow">DURABLE IDENTIFICATION · SPECIALTY LABEL MATERIALS</div><h1 class="serif">Where Materials Meet Applications.</h1>
 <p class="lede" style="color:var(--ink);font-size:20px;font-weight:600;max-width:32em">Every demanding application starts with the right material.</p>
@@ -251,7 +269,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 <section class="blk"><div class="wrap"><div class="eyebrow">SERVICE COMMITMENT</div><h2>Our Service Commitment</h2><div class="scgrid"><div class="sci"><b>100% Quality Inspection</b><p>Backed by in-house laboratory testing, production verification, final inspection, and retained samples for full traceability.</p></div><div class="sci"><b>Application-Driven Solutions</b><p>Materials selected around your process, environment, and performance requirements.</p></div><div class="sci"><b>Flexible Supply</b><p>Multiple materials, varied specifications, sample quantities, and small-batch production.</p></div><div class="sci"><b>Responsive Application Support</b><p>When production conditions change or application issues arise, our engineers respond quickly to help keep your production running.</p></div></div></div></section>
 <div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>Need a Helping Hand?</h3><p>We can label for you. Tell us your surface, process, environment and identification requirements — we&#x27;ll match the material and arrange samples.</p><div class="btns"><a class="btn pri" href="/contact/">Talk to a Label Specialist</a><a class="btn on-dark" href="/contact/">Request Samples</a></div></div></div>
 <footer><div class="wrap"><div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></div><div class="fg"><div><h5>Navigation</h5><ul><li><a href="/products/">Products</a></li><li><a href="/industries/">Applications</a></li><li><a href="/insights/">Insights</a></li><li><a href="/service/">Service</a></li></ul></div><div><h5>Legal</h5><ul><li><a href="/privacy/">Privacy Policy</a></li><li><a href="/cookies/">Cookie Policy</a></li><li><a href="/terms/">Terms of Use</a></li></ul></div><div><h5>Contact</h5><a class="email" href="mailto:label@etia-tech.com">label@etia-tech.com</a><br><br>Shanghai · Hong Kong · Bangkok · Bac Ninh</div></div><div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span></div></div></footer>
-<script>function etaSlide(d){var c=document.getElementById('acar');if(c)c.scrollBy({left:d*c.clientWidth,behavior:'smooth'});}
+<script>function etaAx(b,a){var m=b.closest('.ndm');m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});m.querySelectorAll('.axpanel').forEach(function(p){p.style.display=(p.getAttribute('data-ax')===a)?'grid':'none';});}
+function etaSlide(d){var c=document.getElementById('acar');if(c)c.scrollBy({left:d*c.clientWidth,behavior:'smooth'});}
 function etaSample(e){e.preventDefault();var g=function(i){var el=document.getElementById(i);return el?el.value:'';};
 var b='Email: '+g('fs-email')+'%0D%0APhone: '+g('fs-phone')+'%0D%0AAddress: '+g('fs-addr')+'%0D%0A%0D%0APlease send free samples.';
 window.location.href='mailto:label@etia-tech.com?subject=Free%20Sample%20Request&body='+b;return false;}</script>

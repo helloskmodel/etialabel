@@ -30,7 +30,25 @@ nav .lang{font-size:13px;color:var(--faint);border:1px solid var(--line);border-
 nav .langsw a{display:inline-block;font-size:12px;color:var(--faint);padding:5px 9px;border-radius:7px;font-weight:600}
 nav .langsw a.on{color:#fff;background:var(--blue)}
 nav .langsw a:hover{color:var(--blue)}nav .langsw a.on:hover{color:#fff}
-@media(max-width:900px){nav a:not(.lang){display:none}}
+/* Products mega-menu dropdown */
+nav .nd{position:relative;display:inline-block}
+nav .nd::after{content:"";position:absolute;top:100%;left:0;right:0;height:16px}
+nav .ndt{display:inline-flex;align-items:center;gap:5px;font-size:14.5px;font-weight:600;color:var(--ink);cursor:pointer}
+nav .ndt .caret{font-size:10px;color:var(--faint);transition:.15s}
+nav .nd:hover .ndt{color:var(--blue)}nav .nd:hover .ndt .caret{transform:rotate(180deg);color:var(--blue)}
+nav .ndm.pm{position:absolute;top:100%;left:0;margin-top:14px;background:#fff;border:1px solid var(--line);
+  border-radius:16px;box-shadow:0 22px 60px rgba(20,40,90,.18);display:grid;grid-template-columns:210px 1fr;
+  min-width:600px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.15s;z-index:60;overflow:hidden}
+nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transform:translateY(0)}
+.pm .ndrail{background:var(--bg);border-right:1px solid var(--line);padding:14px 12px}
+.pm .axbtn{display:block;width:100%;text-align:left;background:none;border:none;font-family:inherit;
+  font-size:14px;font-weight:700;color:var(--ink);padding:11px 14px;border-radius:9px;cursor:pointer;white-space:nowrap}
+.pm .axbtn.on,.pm .axbtn:hover{background:#fff;color:var(--blue);box-shadow:0 2px 8px rgba(16,34,58,.06)}
+.pm .ndpanels{padding:18px 20px}
+.pm .axpanel{grid-template-columns:1fr 1fr;gap:4px 26px}
+.pm .axpanel a{display:block;font-size:13.5px;font-weight:600;color:var(--ink);padding:8px 10px;border-radius:8px;white-space:nowrap}
+.pm .axpanel a:hover{background:var(--tint-blue);color:var(--blue);text-decoration:none}
+@media(max-width:900px){nav a:not(.lang){display:none}nav .nd{display:none}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
 .btn{display:inline-block;font-weight:700;font-size:15px;padding:12px 24px;border-radius:10px}
@@ -237,7 +255,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .cslide .cap h3{font-size:20px}}
 </style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.etialabel.com/cn/"}, {"@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.etialabel.com/cn/products/"}, {"@type": "ListItem", "position": 3, "name": "HP-ST20", "item": "https://www.etialabel.com/cn/products/hp-st20/"}]}</script></head><body>
 <div class="topstrip"></div>
-<header><div class="wrap"><a class="logo" href="/cn/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></a><nav><a href="/cn/products/" class="on">产品</a><a href="/cn/industries/">应用</a><a href="/cn/insights/">洞察</a><a href="/cn/service/">服务</a><a class="lang" href="/products/hp-st20/">EN</a></nav></div></header>
+<header><div class="wrap"><a class="logo" href="/cn/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></a><nav><div class="nd"><a class="ndt" href="/cn/products/">产品 <span class="caret">&#9662;</span></a><div class="ndm pm"><div class="ndrail"><button type="button" class="axbtn on" onmouseover="etaAx(this,'app')">按应用</button><button type="button" class="axbtn" onmouseover="etaAx(this,'env')">按环境</button><button type="button" class="axbtn" onmouseover="etaAx(this,'feat')">按特性</button><button type="button" class="axbtn" onmouseover="etaAx(this,'mat')">按材料</button></div><div class="ndpanels"><div class="axpanel" data-ax="app" style="display:grid"><a href="/cn/industries/electronics-pcb/">电子与PCB</a><a href="/cn/industries/steel/">金属与陶瓷</a><a href="/cn/industries/healthcare-life-sciences/">医疗与实验室</a><a href="/cn/industries/automotive-label-materials/">汽车与轮胎</a><a href="/cn/industries/wire-cable/">电线与电缆</a><a href="/cn/industries/outdoor-energy/">户外与能源</a></div><div class="axpanel" data-ax="env" style="display:none"><a href="/cn/products/by-environment/">耐油污</a><a href="/cn/products/by-environment/">抗静电</a><a href="/cn/products/by-environment/">激光打标</a><a href="/cn/products/by-environment/">耐磨</a><a href="/cn/products/by-environment/">深低温</a><a href="/cn/products/by-environment/">耐潮湿</a><a href="/cn/products/by-environment/">耐化学</a><a href="/cn/products/by-environment/">耐高温</a><a href="/cn/products/by-environment/">耐灭菌</a></div><div class="axpanel" data-ax="feat" style="display:none"><a href="/cn/products/by-feature/">防拆</a><a href="/cn/products/by-feature/">可移除</a></div><div class="axpanel" data-ax="mat" style="display:none"><a href="/cn/materials/polyimide-pi-label-materials/">聚酰亚胺 · 耐高温</a></div></div></div></div><a href="/cn/industries/">应用</a><a href="/cn/insights/">洞察</a><a href="/cn/service/">服务</a><a class="lang" href="/products/hp-st20/">EN</a></nav></div></header>
 <div class="wrap"><div class="crumb"><a href="/cn/">Home</a> &rsaquo; <a href="/cn/products/">Products</a> &rsaquo; <b>HP-ST20</b></div></div>
 <div class="wrap"><div class="pagehead"><h1>HP-ST20 耐高温吊牌</h1></div></div>
 <section class="trustbar"><div class="wrap"><div class="ti">100% 质量检测</div><div class="ti">应用驱动方案</div><div class="ti">柔性供应</div><div class="ti">及时应用支持</div></div></section>
@@ -254,4 +272,5 @@ Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)"
 </div>
 <div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span><span><a href="/cn/privacy/">Privacy</a> &nbsp; <a href="/cn/cookies/">Cookies</a></span></div>
 </div></footer>
+<script>function etaAx(b,a){var m=b.closest('.ndm');m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});m.querySelectorAll('.axpanel').forEach(function(p){p.style.display=(p.getAttribute('data-ax')===a)?'grid':'none';});}</script>
 </body></html>
