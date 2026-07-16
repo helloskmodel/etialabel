@@ -65,7 +65,7 @@ for rel, txt in pages.items():
     if not alts:
         continue  # page without alternates (e.g. root home if not built here)
     canon_m = canon_re.search(txt)
-    is_zh = rel.startswith('zh/')
+    is_zh = rel.startswith('cn/')
     if 'x-default' not in alts:
         errors.append(f"[hreflang] {rel} missing x-default")
     if 'en' not in alts:
@@ -128,7 +128,7 @@ for rel, txt in pages.items():
 # ---- 6. Chinese leak in EN output ----
 cjk = re.compile(r'[一-鿿]')
 for rel, txt in pages.items():
-    if rel.startswith('zh/'):
+    if rel.startswith('cn/'):
         continue
     # strip the hreflang/canonical link block and the EN<->ZH language switcher label
     # ("中文" is the legitimate switch-to-Chinese control on English pages)

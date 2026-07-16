@@ -19,7 +19,7 @@ INDUSTRIES = {i["id"]: i for i in DATA["industries"]}
 APPS = DATA["applications"]
 
 LANGS = ["en", "zh"]
-PREFIX = {"en": "", "zh": "/zh"}
+PREFIX = {"en": "", "zh": "/cn"}
 HREFLANG = {"en": "en", "zh": "zh"}
 
 def esc(s): return html.escape(str(s or ""), quote=True)
@@ -802,7 +802,7 @@ FOCUS_URLS = HOME_I18N["focus_urls"]
 
 def home_hlink(lang, path):
     # home internal link: en -> path, zh -> /zh+path (inner zh exists), vi/th -> English pages
-    return ("/zh"+path) if lang=="zh" else path
+    return ("/cn"+path) if lang=="zh" else path
 
 def home_switcher(active):
     out=""
@@ -965,9 +965,9 @@ def clean():
     # preserve source (generators/data/docs); regenerate the section output dirs.
     # NOTE: does NOT delete automotive-owned dirs (label-materials, brands are handled
     # by the orchestrator ordering); heatproof runs first, automotive layers on top.
-    for d in ["products","industries","applications","technical-resources","about","contact","zh",
+    for d in ["products","industries","applications","technical-resources","about","contact","zh","cn",
               "materials","brands","insights","service","support","company","privacy","cookies","terms",
-              "label-materials","popular","featured-solutions","vi","th"]:
+              "label-materials","popular","featured-solutions","vi","vn","th"]:
         p=os.path.join(ROOT,d)
         if os.path.isdir(p): shutil.rmtree(p)
     for f in os.listdir(ROOT):

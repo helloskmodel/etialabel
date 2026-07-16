@@ -312,3 +312,9 @@ FREE SAMPLE block: form (email / phone / mailing address) -> mailto label@etia-t
 - Technical Resources page DELETED (no redirect — clean).
 - Insights = articles/knowledge section (new page, EN+ZH). Service = service commitment + capabilities (new page, EN+ZH).
 - About / Contact moved to footer (still reachable). Nav labels: 产品/应用/洞察/服务.
+
+---
+
+# REVISION 9 — Language URL codes: EN=/ , 中文=/cn , Tiếng Việt=/vn , ไทย=/th
+Changed Chinese path prefix /zh -> /cn and Vietnamese /vi -> /vn (market-facing codes; important for future SEO).
+hreflang attribute keeps ISO codes (zh/vi/th); only the URL path uses cn/vn/th. Full Chinese inner site now under /cn/. VI/TH are home-only for now.
