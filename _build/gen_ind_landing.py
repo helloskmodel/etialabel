@@ -20,43 +20,61 @@ def build_pcb_category(lang, cat_slug):
     cat = PCB_CATS[cat_slug]
     prods = [p for p in PCB_PROD if cat_slug in p.get("application_categories", [])]
     contact = L(lang, "/contact/")
-    cards = ""
+    # localization maps for table cells (data-* attrs stay English so filters match)
+    COLOR_ZH = {"White": "白", "Amber": "琥珀", "Amber/translucent": "琥珀/半透", "Light green": "浅绿"}
+    FIN_ZH = {"Matte": "哑面", "Gloss": "亮面"}
+    HEAT_ZH = {"reflow / wave-solder": "回流/波峰焊", "ultra-high-heat": "超高温", "moderate heat": "中等温度"}
+    def _film(constr):
+        cl = (constr or "").lower()
+        if "polyimide" in cl: return "PI 聚酰亚胺" if zh else "Polyimide (PI)"
+        if "polyester" in cl or "pet" in cl: return "PET"
+        return "—"
+    facets = ""
     if prods:
         colors = sorted({p["film_color"] for p in prods if p.get("film_color") and p["film_color"] != "—"})
         finishes = sorted({p["finish"] for p in prods if p.get("finish") and p["finish"] != "—"})
         has_esd = any(p.get("esd") for p in prods)
-        def fg(title, name, values):
+        def fg(title, name, values, labelmap):
             if not values: return ""
-            boxes = "".join('<label><input type="checkbox" onchange="etaFilter(this)" data-fg="%s" data-fv="%s">%s</label>' % (name, esc(v), esc(v)) for v in values)
+            boxes = "".join('<label><input type="checkbox" onchange="etaFilter(this)" data-fg="%s" data-fv="%s">%s</label>'
+                            % (name, esc(v), esc(labelmap.get(v, v) if zh else v)) for v in values)
             return '<div class="fgroup"><h4>%s</h4>%s</div>' % (esc(title), boxes)
-        facets = fg(("颜色" if zh else "Color"), "color", colors) + fg(("表面" if zh else "Finish"), "finish", finishes)
+        facets = fg(("颜色" if zh else "Color"), "color", colors, COLOR_ZH) + fg(("表面" if zh else "Finish"), "finish", finishes, FIN_ZH)
         if has_esd:
             facets += '<div class="fgroup"><h4>ESD</h4><label><input type="checkbox" onchange="etaFilter(this)" data-fg="esd" data-fv="1">%s</label></div>' % ("抗静电" if zh else "ESD-Safe")
+        heads = (["产品", "材料", "颜色", "表面", "工艺", "ESD", ""] if zh
+                 else ["Product", "Film", "Color", "Finish", "Process", "ESD", ""])
+        thead = "".join('<th>%s</th>' % esc(h) for h in heads)
+        rows_html = ""
         for p in prods:
-            c = p.get("film_color", ""); fin = p.get("finish", "")
-            meta = ""
-            if c and c != "—": meta += '<span>%s</span>' % esc(c)
-            if fin and fin != "—": meta += '<span>%s</span>' % esc(fin)
-            if p.get("heat_tier"): meta += '<span>%s</span>' % esc(p["heat_tier"])
-            if p.get("esd"): meta += '<span class="esd">ESD-Safe</span>'
-            constr = p.get("construction", "") or ""
+            c = p.get("film_color", ""); fin = p.get("finish", ""); ht = p.get("heat_tier", "")
             desc = p.get("brochure_direction_zh" if zh else "brochure_direction_en", "") or ""
-            url = L(lang, "/products/%s/" % p["slug"])
-            cards += ('<div class="prow" data-color="%s" data-finish="%s" data-esd="%s">'
-                      '<h3><a href="%s">%s</a></h3>'
-                      '%s<p>%s</p><div class="pmeta">%s</div>'
-                      '<div class="pactions"><a class="plink" href="%s">%s &rarr;</a>'
-                      '<a class="samplebtn" href="%s">%s</a></div></div>') % (
+            color_cell = (COLOR_ZH.get(c, c) if zh else c) if c and c != "—" else "—"
+            fin_cell = (FIN_ZH.get(fin, fin) if zh else fin) if fin and fin != "—" else "—"
+            heat_cell = (HEAT_ZH.get(ht, ht) if zh else ht) if ht else "—"
+            esd_cell = ('<span class="esd-y">%s</span>' % ("抗静电" if zh else "ESD")) if p.get("esd") else "—"
+            sp = "%s?product=%s" % (contact, p["slug"])
+            actions = (
+                '<a class="pbtn" href="%s&amp;type=inquiry">%s</a>'
+                '<a class="pbtn sample" href="%s&amp;type=sample">%s</a>'
+                '<a class="pbtn" href="%s&amp;type=tds">%s</a>') % (
+                sp, ("询价" if zh else "GET INQUIRY"),
+                sp, ("免费样品" if zh else "FREE SAMPLE"),
+                sp, ("下载 TDS" if zh else "DOWNLOAD TDS"))
+            rows_html += ('<tr class="fitem" data-color="%s" data-finish="%s" data-esd="%s">'
+                          '<td class="ptd-name">%s<div class="ptd-desc">%s</div></td>'
+                          '<td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td>'
+                          '<td class="ptd-act">%s</td></tr>') % (
                 esc(c if c != "—" else ""), esc(fin if fin != "—" else ""), ("1" if p.get("esd") else ""),
-                url, esc(p["product_name"]),
-                ('<div class="pconstr">%s</div>' % esc(constr)) if constr else "",
-                esc(desc), meta,
-                url, ("查看产品" if zh else "View Product"),
-                ("%s?product=%s" % (contact, p["slug"])), ("免费样品" if zh else "FREE SAMPLE"))
+                esc(p["product_name"]), esc(desc),
+                esc(_film(p.get("construction", ""))), esc(color_cell), esc(fin_cell), esc(heat_cell), esd_cell,
+                actions)
+        content = ('<div class="ptable-wrap"><table class="ptable"><thead><tr>%s</tr></thead>'
+                   '<tbody>%s</tbody></table></div>') % (thead, rows_html)
         n = len(prods)
     else:
         # No individual product entries yet — render the market-equivalent categories as rows.
-        facets = ""
+        cards = ""
         rows = PCB_MKT.get(cat_slug, [])
         for r in rows:
             eqs = [("Polyonics", r.get("polyonics")), ("ETIA", r.get("etia")),
@@ -69,16 +87,17 @@ def build_pcb_category(lang, cat_slug):
                       '<a class="plink" href="%s">%s →</a></div>') % (
                 esc(title), desc, meta,
                 contact, ("联系 ETIA 选型" if zh else "Contact ETIA for Selection"))
+        content = '<div class="plist">%s</div>' % cards
         n = len(rows)
     count = '<div class="catcount">%s</div>' % ((("共 %d 项" % n) if zh else ("%d results" % n)) if n else "")
     filt = ("<script>function etaFilter(x){var r=x.closest('.catalog')||document;var g={};"
             "r.querySelectorAll('.fgroup input:checked').forEach(function(c){(g[c.dataset.fg]=g[c.dataset.fg]||[]).push(c.dataset.fv);});"
-            "r.querySelectorAll('.prow').forEach(function(k){var s=true;for(var f in g){if(g[f].indexOf(k.getAttribute('data-'+f)||'')<0){s=false;break;}}k.style.display=s?'':'none';});}</script>")
+            "r.querySelectorAll('.fitem').forEach(function(k){var s=true;for(var f in g){if(g[f].indexOf(k.getAttribute('data-'+f)||'')<0){s=false;break;}}k.style.display=s?'':'none';});}</script>")
     if facets:
         catalog = ('<div class="catalog"><aside class="facets">%s</aside>'
-                   '<div>%s<div class="plist">%s</div></div></div>') % (facets, count, cards)
+                   '<div>%s%s</div></div>') % (facets, count, content)
     else:
-        catalog = '<div>%s<div class="plist">%s</div></div>' % (count, cards)
+        catalog = '<div>%s%s</div>' % (count, content)
     body = ('<section class="blk"><div class="wrap">%s</div></section>'
             '<div class="wrap">%s</div>%s') % (catalog, cta(lang), filt)
     path = "/industries/electronics-pcb/%s/" % cat_slug

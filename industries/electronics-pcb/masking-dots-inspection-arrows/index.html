@@ -305,10 +305,23 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .prow .pmeta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}
 .prow .pmeta span{font-size:11.5px;font-weight:700;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:4px 10px;color:var(--mut)}
 .prow .pmeta span.esd{background:#eaf1ff;color:var(--blue);border-color:#d6e2fb}
-.prow .pactions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.prow .plink{font-size:13.5px;font-weight:700;color:var(--blue)}
-.samplebtn{display:inline-block;background:var(--green);color:#fff;font-size:12px;font-weight:800;letter-spacing:.04em;padding:7px 16px;border-radius:20px}
-.samplebtn:hover{background:var(--green-d);text-decoration:none;color:#fff}
+.prow .pactions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pbtn{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.04em;padding:7px 15px;border-radius:20px;border:1.5px solid var(--line);color:var(--blue-deep);background:#fff}
+.pbtn:hover{border-color:var(--blue);color:var(--blue);text-decoration:none}
+.pbtn.sample{background:var(--green);border-color:var(--green);color:#fff}
+.pbtn.sample:hover{background:var(--green-d);border-color:var(--green-d);color:#fff}
+/* product spec table (FLEXcon-style) */
+.ptable-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+.ptable{width:100%;border-collapse:collapse;font-size:13.5px}
+.ptable th{text-align:left;font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);padding:12px 14px;border-bottom:2px solid var(--line);white-space:nowrap;background:var(--bg)}
+.ptable td{padding:15px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--mut);white-space:nowrap}
+.ptable tr:last-child td{border-bottom:none}
+.ptable tbody tr:hover{background:#fafbfe}
+.ptable .ptd-name{color:var(--blue-deep);font-weight:800;font-size:14.5px;white-space:normal;min-width:220px}
+.ptable .ptd-desc{font-weight:400;font-size:12px;color:var(--mut);margin-top:4px;line-height:1.45;max-width:34em;white-space:normal}
+.ptable .esd-y{display:inline-block;font-size:11px;font-weight:800;background:#eaf1ff;color:var(--blue);border:1px solid #d6e2fb;border-radius:12px;padding:3px 9px}
+.ptable .ptd-act{white-space:normal;min-width:150px}
+.ptable .ptd-act .pbtn{margin:0 6px 6px 0}
 @media(max-width:820px){.catalog{grid-template-columns:1fr}}
 @media(max-width:820px){.two{grid-template-columns:1fr}footer .fg{grid-template-columns:1fr}.pagehead h1{font-size:30px}
 .hero h1{font-size:32px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}
@@ -327,7 +340,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 
 <section class="blk"><div class="wrap"><div><div class="catcount">2 results</div><div class="plist"><div class="prow"><h3>Removable high-temp PI</h3><p>Specific construction is matched to your process and removability/residue requirements, to be confirmed by sample; contact ETIA for the specification.</p><div class="pmeta"><span>ETIA E-8632 / E-8631</span><span>Brady B-104</span><span>3M FM1732R</span></div><a class="plink" href="/contact/">Contact ETIA for Selection →</a></div><div class="prow"><h3>Removable film dot</h3><p>Specific construction is matched to your process and removability/residue requirements, to be confirmed by sample; contact ETIA for the specification.</p><div class="pmeta"><span>ETIA E-4633</span><span>Brady B-449</span><span>3M FM1542</span></div><a class="plink" href="/contact/">Contact ETIA for Selection →</a></div></div></div></div></section><div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>Start with the Application. Finish with the Right Material.</h3>
 <p>Tell us the surface, temperature, chemistry and print method — we'll recommend the material and arrange samples.</p>
-<div class="btns"><a class="btn pri" href="/contact/">Request a Sample</a><a class="btn on-dark" href="/contact/">Talk to an Engineer</a></div></div></div><script>function etaFilter(x){var r=x.closest('.catalog')||document;var g={};r.querySelectorAll('.fgroup input:checked').forEach(function(c){(g[c.dataset.fg]=g[c.dataset.fg]||[]).push(c.dataset.fv);});r.querySelectorAll('.prow').forEach(function(k){var s=true;for(var f in g){if(g[f].indexOf(k.getAttribute('data-'+f)||'')<0){s=false;break;}}k.style.display=s?'':'none';});}</script>
+<div class="btns"><a class="btn pri" href="/contact/">Request a Sample</a><a class="btn on-dark" href="/contact/">Talk to an Engineer</a></div></div></div><script>function etaFilter(x){var r=x.closest('.catalog')||document;var g={};r.querySelectorAll('.fgroup input:checked').forEach(function(c){(g[c.dataset.fg]=g[c.dataset.fg]||[]).push(c.dataset.fv);});r.querySelectorAll('.fitem').forEach(function(k){var s=true;for(var f in g){if(g[f].indexOf(k.getAttribute('data-'+f)||'')<0){s=false;break;}}k.style.display=s?'':'none';});}</script>
 <footer><div class="wrap">
 <div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></div>
 <div class="fg">

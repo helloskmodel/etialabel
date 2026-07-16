@@ -92,7 +92,9 @@ for rel, txt in pages.items():
 prod_link_re = re.compile(r'href="(/products/(?:hp|3m|flexcon|biotech|polyonics|avery)-[^"/]+/)"')
 for rel, txt in pages.items():
     if re.match(r'applications/[^/]+/[^/]+/index\.html$', rel) or re.match(r'industries/[^/]+/[^/]+/index\.html$', rel):
-        if not prod_link_re.search(txt):
+        # A page that lists products with per-product actions (?product=<slug>) counts as
+        # having products, even when it doesn't link out to a separate product page.
+        if not prod_link_re.search(txt) and '?product=' not in txt:
             # An application with the explicit "to be confirmed by sample" marker is an
             # intentional, flagged data gap (no HP product fits yet) — warn, don't error.
             if 'to be confirmed by sample' in txt or 'confirmed by sample' in txt:
