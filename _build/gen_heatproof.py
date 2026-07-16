@@ -208,6 +208,9 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .acard .atags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
 .acard .atags span{font-size:11.5px;font-weight:700;color:var(--blue);background:#eaf1ff;border:1px solid #d6e2fb;border-radius:14px;padding:4px 10px}
 .acard-go{color:var(--blue);font-weight:700;font-size:13.5px}
+.pcard h3{font-size:17px}
+.pcard .pmodel{font-size:12.5px;font-weight:700;color:var(--faint);letter-spacing:.02em;margin-top:5px;flex:1}
+.pcard .acard-go{margin-top:12px}
 /* explore-by-application carousel (legacy) */
 .acar-wrap{position:relative;margin-top:8px}
 .acar{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:20px;border:1px solid var(--line);background:#fff;scrollbar-width:none}
@@ -816,6 +819,20 @@ def build_home(lang):
             home_hlink(lang,FOCUS_URLS[k]), k%6, INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)],
             esc(f["name"]), esc(f["headline"]), esc(f["desc"]), tags, esc(T["explore"]))
     app_grid='<div class="acgrid">%s</div>'%cards
+    # Most Popular Products — same card pattern (image top), application name as title, model small
+    PROD_ICON=[1,2,0,3,2,4]
+    pcards=""
+    for k,pr in enumerate(T.get("products",[])):
+        gi=PROD_ICON[k%len(PROD_ICON)]
+        pcards+=('<a class="acard pcard" href="%s"><div class="acard-img g%d"><span class="aicon">%s</span></div>'
+                 '<div class="acard-body"><h3>%s</h3><div class="pmodel">%s</div>'
+                 '<div class="acard-go">%s →</div></div></a>')%(
+            home_hlink(lang,"/contact/"), gi, INDUSTRY_ICONS[gi%len(INDUSTRY_ICONS)],
+            esc(pr["name"]), esc(pr["model"]), esc(T.get("prod_cta","Request Sample")))
+    prod_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
+                  '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
+                  '<div class="acgrid">%s</div></div></section>')%(
+        esc(T.get("prod_eyebrow","")),esc(T.get("prod_title","")),esc(T.get("prod_sub","")),pcards) if pcards else ""
     final_cta=('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
                '<div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn on-dark" href="%s">%s</a></div></div></div>')%(
         esc(T["fcta_title"]),esc(T["fcta_para"]),home_hlink(lang,"/contact/"),esc(T["fcta_b1"]),home_hlink(lang,"/contact/"),esc(T["fcta_b2"]))
@@ -829,11 +846,13 @@ def build_home(lang):
 <section class="blk" style="background:var(--tint-green)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="whygrid">%s</div>%s</div></section>
 <section class="blk" id="applications" style="background:var(--tint-blue)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>%s
 <div style="margin-top:20px"><a class="btn sec" href="%s">%s →</a></div></div></section>
+%s
 %s""" % (
         esc(T["hero_eyebrow"]),esc(T["hero_h1"]),esc(T["hero_line"]),esc(T["hero_para"]),esc(T["hero_b1"]),home_hlink(lang,"/contact/"),esc(T["hero_b2"]),
         svc_html,
         esc(T["why_eyebrow"]),esc(T["why_head"]),esc(T["why_intro"]),why_html,why_close,
         esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_grid,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]),
+        prod_section,
         final_cta)
     canonical=SITE+HL_PREFIX[lang]+path
     schema_js='<script type="application/ld+json">%s</script>'%json.dumps(ORG_JSONLD,ensure_ascii=False)

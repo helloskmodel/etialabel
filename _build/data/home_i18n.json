@@ -148,7 +148,37 @@
       "Flexible Supply",
       "Long-Term Support"
     ],
-    "why_close": "Reliable. Responsive. Consistent."
+    "why_close": "Reliable. Responsive. Consistent.",
+    "prod_eyebrow": "MOST POPULAR",
+    "prod_title": "Our Most Popular Products",
+    "prod_sub": "Application-first selections — welcome to request samples for evaluation.",
+    "prod_cta": "Request Sample",
+    "products": [
+      {
+        "name": "Ultra-High-Temperature Direct Apply",
+        "model": "ETIA HP Series"
+      },
+      {
+        "name": "Direct Apply for Cryogenic Storage",
+        "model": "ETIA Cryogenic Series"
+      },
+      {
+        "name": "High-Temperature PCB Polyimide",
+        "model": "POLYONICS / APEX Series"
+      },
+      {
+        "name": "High Adhesion for Oily Surfaces",
+        "model": "ETIA High-Adhesion Series"
+      },
+      {
+        "name": "Chemical-Resistant Slide Identification",
+        "model": "ETIA Laboratory Series"
+      },
+      {
+        "name": "Dual-Layer ESD-Safe Identification",
+        "model": "ETIA / Selected Specialty Materials"
+      }
+    ]
   },
   "zh": {
     "nav": [
@@ -273,7 +303,37 @@
       "柔性供应",
       "长期支持"
     ],
-    "why_close": "可靠 · 及时 · 稳定"
+    "why_close": "可靠 · 及时 · 稳定",
+    "prod_eyebrow": "最受欢迎",
+    "prod_title": "最受欢迎的代表产品",
+    "prod_sub": "以应用为先的精选——欢迎申请样品验证。",
+    "prod_cta": "申请样品",
+    "products": [
+      {
+        "name": "超高温直贴标识",
+        "model": "ETIA HP Series"
+      },
+      {
+        "name": "深低温直接贴标与液氮存储",
+        "model": "ETIA Cryogenic Series"
+      },
+      {
+        "name": "现代 PCB 耐高温聚酰亚胺标签",
+        "model": "POLYONICS / APEX Series"
+      },
+      {
+        "name": "油污表面超粘标签",
+        "model": "ETIA High-Adhesion Series"
+      },
+      {
+        "name": "耐化学载玻片标签",
+        "model": "ETIA Laboratory Series"
+      },
+      {
+        "name": "双层抗静电标签",
+        "model": "ETIA / Selected Specialty Materials"
+      }
+    ]
   },
   "vi": {
     "nav": [
@@ -398,7 +458,37 @@
       "Cung ứng linh hoạt",
       "Hỗ trợ dài hạn"
     ],
-    "why_close": "Reliable. Responsive. Consistent."
+    "why_close": "Reliable. Responsive. Consistent.",
+    "prod_eyebrow": "MOST POPULAR",
+    "prod_title": "Our Most Popular Products",
+    "prod_sub": "Application-first selections — welcome to request samples for evaluation.",
+    "prod_cta": "Request Sample",
+    "products": [
+      {
+        "name": "Ultra-High-Temperature Direct Apply",
+        "model": "ETIA HP Series"
+      },
+      {
+        "name": "Direct Apply for Cryogenic Storage",
+        "model": "ETIA Cryogenic Series"
+      },
+      {
+        "name": "High-Temperature PCB Polyimide",
+        "model": "POLYONICS / APEX Series"
+      },
+      {
+        "name": "High Adhesion for Oily Surfaces",
+        "model": "ETIA High-Adhesion Series"
+      },
+      {
+        "name": "Chemical-Resistant Slide Identification",
+        "model": "ETIA Laboratory Series"
+      },
+      {
+        "name": "Dual-Layer ESD-Safe Identification",
+        "model": "ETIA / Selected Specialty Materials"
+      }
+    ]
   },
   "th": {
     "nav": [
@@ -523,6 +613,36 @@
       "การจัดหาที่ยืดหยุ่น",
       "การสนับสนุนระยะยาว"
     ],
-    "why_close": "Reliable. Responsive. Consistent."
+    "why_close": "Reliable. Responsive. Consistent.",
+    "prod_eyebrow": "MOST POPULAR",
+    "prod_title": "Our Most Popular Products",
+    "prod_sub": "Application-first selections — welcome to request samples for evaluation.",
+    "prod_cta": "Request Sample",
+    "products": [
+      {
+        "name": "Ultra-High-Temperature Direct Apply",
+        "model": "ETIA HP Series"
+      },
+      {
+        "name": "Direct Apply for Cryogenic Storage",
+        "model": "ETIA Cryogenic Series"
+      },
+      {
+        "name": "High-Temperature PCB Polyimide",
+        "model": "POLYONICS / APEX Series"
+      },
+      {
+        "name": "High Adhesion for Oily Surfaces",
+        "model": "ETIA High-Adhesion Series"
+      },
+      {
+        "name": "Chemical-Resistant Slide Identification",
+        "model": "ETIA Laboratory Series"
+      },
+      {
+        "name": "Dual-Layer ESD-Safe Identification",
+        "model": "ETIA / Selected Specialty Materials"
+      }
+    ]
   }
 }
