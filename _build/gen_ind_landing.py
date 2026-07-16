@@ -493,26 +493,67 @@ LANDINGS = {
 }
 
 
+# Hero slogan per industry (bilingual). Sits under the industry label in the HERO SECTION.
+SLOGANS = {
+    "electronics-pcb": ("Identification that survives the entire manufacturing process.",
+                        "贯穿整个制造流程，始终可靠可读的标识。"),
+    "steel": ("Built for extreme heat, direct flame and repeated firing.",
+              "为极端高温、直接火焰与反复烧成而生。"),
+    "healthcare-life-sciences": ("Readable through cold storage, chemicals and sterilization.",
+                                 "历经冷藏、化学与灭菌，依然清晰可读。"),
+    "automotive-label-materials": ("Durable through heat, oil and a lifetime of service.",
+                                   "耐高温、耐油污，伴随整车全生命周期。"),
+    "wire-cable": ("The right marker for every wire and cable.",
+                   "为每一根电线与电缆匹配合适的标识。"),
+    "outdoor-energy": ("Weatherproof identification that lasts for years outdoors.",
+                       "耐候标识，户外经年不褪色。"),
+}
+
+# Brochure / product-list cards shown below the tab module (FLEXcon-style resource row).
+# Only real, existing destinations — swap in real brochure PDFs later.
+def _resources(lang, slug):
+    zh = (lang == "zh")
+    cards = [((("浏览产品与方案" if zh else "Browse Products & Solutions"),
+               ("按应用、环境、特性与材料浏览" if zh else "Browse by application, environment, feature and material"),
+               "/products/")),
+             ((("申请样品" if zh else "Request Samples"),
+               ("提供工况，我们安排材料测试" if zh else "Share your conditions — we arrange material testing"),
+               "/contact/"))]
+    return cards
+
 def build_landing(lang, slug):
-    """CLEAN layer-1 (hoenle model): the hero (general intro, rendered by page())
-    + applications one-by-one as image+text cards + CTA. Only these fields are needed
-    per language: eyebrow, h1, hero, apps_h, apps[(title,desc,cta)], fcta_h, fcta_body,
-    fcta1, fcta2, meta_title, meta_desc. Optional richer brochure fields are ignored."""
+    """Layer-1 industry landing. HERO SECTION (industry label + slogan, banner-ready) →
+    intro paragraph → applications tab module (single scrollable row of tabs + active
+    panel with image + text) → brochure/resource cards → CTA."""
     d = LANDINGS[slug][lang]
     path = LANDINGS[slug]["path"]
+    zh = (lang == "zh")
     contact = L(lang, "/contact/")
     def sec(bg, inner):
         st = ' style="background:%s"' % bg if bg else ""
         return '<section class="blk"%s><div class="wrap">%s</div></section>' % (st, inner)
 
+    # --- HERO SECTION (banner-ready) ---
+    hero_img = LANDINGS[slug].get("hero_img", "")
+    slogan = SLOGANS.get(slug, ("", ""))[1 if zh else 0]
+    if hero_img:
+        hero_open = '<section class="indhero hasimg" style="background-image:url(%s)">' % esc(hero_img)
+    else:
+        hero_open = '<section class="indhero">'
+    hero_html = ('%s<div class="wrap"><div class="eyebrow">%s</div><h1>%s</h1>'
+                 '<p class="slogan">%s</p></div></section>') % (
+        hero_open, esc(d["eyebrow"]), esc(d["h1"]), esc(slogan))
+
+    # --- intro paragraph (below hero) ---
+    intro = sec("", '<p class="lede" style="max-width:62em">%s</p>' % esc(d["hero"]))
+
+    # --- applications tab module: single scrollable row of tabs + active panel ---
     app_urls = LANDINGS[slug].get("app_urls", [])
     app_imgs = LANDINGS[slug].get("app_imgs", [])
     def panel_img(i, t):
         url = app_imgs[i] if i < len(app_imgs) else ""
         img = ('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">' % (esc(url), esc(t))) if url else ""
         return '<div class="apimg">%s<span class="ph">\U0001F3F7</span></div>' % img
-    # Tabbed applications module: one tab per application, only the active panel (image
-    # + title + description) is shown — so the applications are NOT all piled together.
     tabs = "".join(
         '<button class="apptab%s" onclick="etaTab(this)">%s</button>' % ((" on" if i == 0 else ""), esc(t))
         for i, (t, dsc, cta_) in enumerate(d["apps"]))
@@ -525,22 +566,33 @@ def build_landing(lang, slug):
     tabscript = ("<script>function etaTab(b){var m=b.closest('.appmod');"
                  "var t=[].slice.call(m.querySelectorAll('.apptab'));var i=t.indexOf(b);"
                  "t.forEach(function(x,j){x.classList.toggle('on',j===i);});"
-                 "m.querySelectorAll('.apppanel').forEach(function(p,j){p.style.display=(j===i)?'grid':'none';});}</script>")
-    apps = '<h2>%s</h2><div class="appmod"><div class="apptabs">%s</div><div class="apppanels">%s</div></div>%s' % (
-        esc(d["apps_h"]), tabs, panels, tabscript)
+                 "m.querySelectorAll('.apppanel').forEach(function(p,j){p.style.display=(j===i)?'grid':'none';});}"
+                 "function etaScroll(b,dir){var r=b.closest('.apptabsrow').querySelector('.apptabs');"
+                 "r.scrollBy({left:dir*260,behavior:'smooth'});}</script>")
+    apps_html = ('<h2>%s</h2><div class="appmod">'
+                 '<div class="apptabsrow"><button class="apparrow" onclick="etaScroll(this,-1)" aria-label="prev">&lsaquo;</button>'
+                 '<div class="apptabs">%s</div>'
+                 '<button class="apparrow" onclick="etaScroll(this,1)" aria-label="next">&rsaquo;</button></div>'
+                 '<div class="apppanels">%s</div></div>%s') % (esc(d["apps_h"]), tabs, panels, tabscript)
+
+    # --- brochure / resource cards ---
+    bcards = "".join(
+        '<a class="bcard" href="%s"><div class="bct"><h3>%s</h3><p>%s</p></div><span class="barr">&rarr;</span></a>'
+        % (L(lang, url), esc(t), esc(s)) for t, s, url in _resources(lang, slug))
+    brochures = sec("", '<div class="brochures">%s</div>' % bcards)
 
     final = ('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
              '<div class="btns"><a class="btn pri" href="%s">%s</a>'
              '<a class="btn on-dark" href="%s">%s</a></div></div></div>') % (
         esc(d["fcta_h"]), esc(d["fcta_body"]), contact, esc(d["fcta1"]), contact, esc(d["fcta2"]))
 
-    body = sec("", apps) + final
+    body = intro + sec("", apps_html) + brochures + final
 
-    crumb = [(("首页" if lang == "zh" else "Home"), "/"),
-             (("行业" if lang == "zh" else "Industries"), "/industries/"),
+    crumb = [(("首页" if zh else "Home"), "/"),
+             (("行业" if zh else "Industries"), "/industries/"),
              (d["eyebrow"], path)]
     write(lang, path, page(lang, path, d["meta_title"], d["meta_desc"],
-                           d["h1"], d["hero"], body, crumb, active="industries", trust=False))
+                           d["h1"], d["hero"], body, crumb, active="industries", trust=False, hero=hero_html))
     if lang == "en":
         URLS.append(path)
 

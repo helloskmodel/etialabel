@@ -107,12 +107,33 @@ section.blk{padding:34px 0}
 .grid.grid3{grid-template-columns:repeat(3,1fr)}
 @media(max-width:900px){.grid.grid3{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.grid.grid3{grid-template-columns:1fr}}
-/* tabbed applications module (industry landing) */
+/* industry landing HERO SECTION (label + slogan, banner-ready) */
+.indhero{position:relative;background:linear-gradient(120deg,#0c2a63,var(--blue-deep) 55%,#0a1f4a);color:#fff;overflow:hidden;background-size:cover;background-position:center}
+.indhero.hasimg::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(9,24,58,.92),rgba(9,24,58,.55));z-index:1}
+.indhero .wrap{position:relative;z-index:2;padding:56px 24px 60px}
+.indhero .eyebrow{color:#9fc0ff}
+.indhero h1{color:#fff;font-size:40px;line-height:1.1;margin:12px 0 16px;max-width:16em;font-weight:800}
+.indhero .slogan{font-size:20px;line-height:1.45;color:#dbe6ff;font-weight:600;max-width:32em}
+@media(max-width:820px){.indhero h1{font-size:30px}.indhero .slogan{font-size:16.5px}.indhero .wrap{padding:40px 24px 44px}}
+/* tabbed applications module (industry landing) — single scrollable row of tabs */
 .appmod{margin-top:6px}
-.apptabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:2px solid var(--line);margin-bottom:30px}
-.apptab{background:none;border:none;font-family:inherit;font-size:15px;font-weight:700;color:var(--mut);padding:12px 16px;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;line-height:1.3}
+.apptabsrow{display:flex;align-items:stretch;border-bottom:2px solid var(--line);margin-bottom:30px}
+.apparrow{flex:none;background:none;border:none;color:var(--faint);font-size:26px;line-height:1;cursor:pointer;padding:0 6px;align-self:center}
+.apparrow:hover{color:var(--blue)}
+.apptabs{display:flex;flex-wrap:nowrap;gap:2px;overflow-x:auto;scroll-behavior:smooth;flex:1;scrollbar-width:none;-ms-overflow-style:none}
+.apptabs::-webkit-scrollbar{display:none}
+.apptab{flex:none;max-width:210px;text-align:center;white-space:normal;background:none;border:none;font-family:inherit;font-size:15px;font-weight:700;color:var(--mut);padding:14px 16px;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;line-height:1.25}
 .apptab:hover{color:var(--ink)}
 .apptab.on{color:var(--blue-deep);border-bottom-color:var(--blue)}
+/* brochure / resource cards below the tab module */
+.brochures{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.bcard{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px 26px;border-radius:14px;color:#fff;background:linear-gradient(120deg,var(--blue-deep),var(--blue));transition:transform .15s,box-shadow .15s}
+.bcard:nth-child(2){background:linear-gradient(120deg,#0f3d1f,var(--green-d))}
+.bcard:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(20,40,90,.18);text-decoration:none}
+.bcard .bct h3{font-size:19px;color:#fff;margin-bottom:5px;line-height:1.2}
+.bcard .bct p{font-size:13px;color:#e6eefc;line-height:1.45}
+.bcard .barr{font-size:26px;color:#fff;flex:none;line-height:1}
+@media(max-width:700px){.brochures{grid-template-columns:1fr}}
 .apppanel{display:grid;grid-template-columns:minmax(0,460px) 1fr;gap:40px;align-items:center}
 .apppanel .apimg{position:relative;aspect-ratio:16/11;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#dfe7f3,#eef2f8);display:flex;align-items:center;justify-content:center}
 .apppanel .apimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -449,13 +470,16 @@ def cta(lang):
 <p>Tell us the surface, temperature, chemistry and print method — we'll recommend the material and arrange samples.</p>
 <div class="btns"><a class="btn pri" href="%s">Request a Sample</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
 
-def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, active="", trust=True):
+def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, active="", trust=True, hero=None):
     canonical = SITE + PREFIX[lang] + path
     sch = [breadcrumb_jsonld(crumb, lang)] + (schema_extra or [])
     schema_js = "".join('<script type="application/ld+json">%s</script>' % json.dumps(s, ensure_ascii=False) for s in sch)
     cr = ' &rsaquo; '.join((('<a href="%s">%s</a>' % (L(lang,p), esc(n))) if p and i < len(crumb)-1 else '<b>%s</b>' % esc(n))
                            for i,(n,p) in enumerate(crumb))
     lede_html = ('<p class="lede">%s</p>' % lede) if lede else ""
+    # hero (when given) replaces the plain pagehead block — used for the industry
+    # landing HERO SECTION (label + slogan, banner-ready).
+    head_block = hero if hero else ('<div class="wrap"><div class="pagehead"><h1>%s</h1>%s</div></div>' % (esc(h1), lede_html))
     return """<!doctype html><html lang="%s"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>%s</title><meta name="description" content="%s">
@@ -465,13 +489,13 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 <div class="topstrip"></div>
 <header><div class="wrap"><a class="logo" href="%s"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%%20LOGO.jpg" alt="ETIA Label"></a>%s</div></header>
 <div class="wrap"><div class="crumb">%s</div></div>
-<div class="wrap"><div class="pagehead"><h1>%s</h1>%s</div></div>
+%s
 %s
 %s
 %s
 <script>function etaAx(b,a){var m=b.closest('.ndm');m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});m.querySelectorAll('.axpanel').forEach(function(p){p.style.display=(p.getAttribute('data-ax')===a)?'grid':'none';});}</script>
 </body></html>""" % (lang, esc(title), esc(desc), canonical, hreflang_block(path), esc(title), CSS, schema_js,
-     L(lang,"/"), nav_html(lang, active, path), cr, esc(h1), lede_html, (trust_bar(lang) if trust else ""), body, footer_html(lang))
+     L(lang,"/"), nav_html(lang, active, path), cr, head_block, (trust_bar(lang) if trust else ""), body, footer_html(lang))
 
 def write(lang, path, content):
     full = os.path.join(ROOT, (PREFIX[lang] + path).strip("/"), "index.html")
