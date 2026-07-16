@@ -3,8 +3,93 @@
 """Industry LANDING pages (first layer). Data-driven brochure layout, EN + /cn.
 Runs after the section generators so it owns /industries/<slug>/index.html.
 Add more industries by adding entries to LANDINGS."""
+import os, json
 import gen_heatproof as hp
 from gen_heatproof import esc, L, page, write, cta, LANGS
+
+_PCBD = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "pcb.json"), encoding="utf-8"))
+PCB_CATS = {c["slug"]: c for c in _PCBD["categories"]}
+PCB_PROD = _PCBD["products"]
+PCB_MKT = _PCBD.get("category_market", {})
+
+def _pcb_img(p):
+    """Product photo if present, else a clean placeholder tile (onerror removes broken img)."""
+    url = p.get("img") or ""
+    if url:
+        return ('<div class="pimg"><img src="%s" alt="%s" loading="lazy" '
+                'onerror="this.remove()"><span class="ph">\U0001F3F7</span></div>') % (esc(url), esc(p["product_name"]))
+    return '<div class="pimg"><span class="ph">\U0001F3F7</span></div>'
+
+def build_pcb_category(lang, cat_slug):
+    """Application page (layer 2): short intro + compact facets + product list (image + text)."""
+    zh = (lang == "zh")
+    cat = PCB_CATS[cat_slug]
+    prods = [p for p in PCB_PROD if cat_slug in p.get("application_categories", [])]
+    contact = L(lang, "/contact/")
+    cards = ""
+    if prods:
+        colors = sorted({p["film_color"] for p in prods if p.get("film_color") and p["film_color"] != "—"})
+        finishes = sorted({p["finish"] for p in prods if p.get("finish") and p["finish"] != "—"})
+        has_esd = any(p.get("esd") for p in prods)
+        def fg(title, name, values):
+            if not values: return ""
+            boxes = "".join('<label><input type="checkbox" onchange="etaFilter(this)" data-fg="%s" data-fv="%s">%s</label>' % (name, esc(v), esc(v)) for v in values)
+            return '<div class="fgroup"><h4>%s</h4>%s</div>' % (esc(title), boxes)
+        facets = fg(("颜色" if zh else "Color"), "color", colors) + fg(("表面" if zh else "Finish"), "finish", finishes)
+        if has_esd:
+            facets += '<div class="fgroup"><h4>ESD</h4><label><input type="checkbox" onchange="etaFilter(this)" data-fg="esd" data-fv="1">%s</label></div>' % ("抗静电" if zh else "ESD-Safe")
+        for p in prods:
+            c = p.get("film_color", ""); fin = p.get("finish", "")
+            meta = ""
+            if c and c != "—": meta += '<span>%s</span>' % esc(c)
+            if fin and fin != "—": meta += '<span>%s</span>' % esc(fin)
+            if p.get("heat_tier"): meta += '<span>%s</span>' % esc(p["heat_tier"])
+            if p.get("esd"): meta += '<span class="esd">ESD-Safe</span>'
+            desc = p.get("brochure_direction_zh" if zh else "brochure_direction_en", "") or ""
+            cards += ('<div class="pcardx" data-color="%s" data-finish="%s" data-esd="%s">%s'
+                      '<div class="pbody"><h3>%s</h3><div class="pmeta">%s</div><p>%s</p>'
+                      '<a class="plink" href="%s">%s →</a></div></div>') % (
+                esc(c if c != "—" else ""), esc(fin if fin != "—" else ""), ("1" if p.get("esd") else ""),
+                _pcb_img(p), esc(p["product_name"]), meta, esc(desc),
+                L(lang, "/products/%s/" % p["slug"]), ("查看 / 申请样品" if zh else "View / Request Sample"))
+        n = len(prods)
+    else:
+        # No individual product entries yet — render the market-equivalent categories as cards.
+        facets = ""
+        rows = PCB_MKT.get(cat_slug, [])
+        for r in rows:
+            eqs = [("Polyonics", r.get("polyonics")), ("ETIA", r.get("etia")),
+                   ("Brady", r.get("brady")), ("3M", r.get("3m"))]
+            meta = "".join('<span>%s %s</span>' % (esc(b), esc(v)) for b, v in eqs if v and v not in ("—", "on request", None))
+            title = r.get("cat_zh" if zh else "cat_en", "")
+            desc = ("根据实际工艺与可移除/残胶要求匹配具体型号，最终由样品确认；请联系 ETIA 索取规格。" if zh
+                    else "Specific construction is matched to your process and removability/residue requirements, to be confirmed by sample; contact ETIA for the specification.")
+            cards += ('<div class="pcardx">%s<div class="pbody"><h3>%s</h3><div class="pmeta">%s</div>'
+                      '<p>%s</p><a class="plink" href="%s">%s →</a></div></div>') % (
+                '<div class="pimg"><span class="ph">\U0001F3F7</span></div>', esc(title), meta, desc,
+                contact, ("联系 ETIA 选型" if zh else "Contact ETIA for Selection"))
+        n = len(rows)
+    count = '<div class="catcount">%s</div>' % ((("共 %d 项" % n) if zh else ("%d results" % n)) if n else "")
+    filt = ("<script>function etaFilter(x){var r=x.closest('.catalog');var g={};"
+            "r.querySelectorAll('.fgroup input:checked').forEach(function(c){(g[c.dataset.fg]=g[c.dataset.fg]||[]).push(c.dataset.fv);});"
+            "r.querySelectorAll('.pcardx').forEach(function(k){var s=true;for(var f in g){if(g[f].indexOf(k.getAttribute('data-'+f)||'')<0){s=false;break;}}k.style.display=s?'flex':'none';});}</script>")
+    if facets:
+        catalog = ('<div class="catalog"><aside class="facets">%s</aside>'
+                   '<div>%s<div class="plist">%s</div></div></div>') % (facets, count, cards)
+    else:
+        catalog = '<div>%s<div class="plist">%s</div></div>' % (count, cards)
+    body = ('<section class="blk"><div class="wrap">%s</div></section>'
+            '<div class="wrap">%s</div>%s') % (catalog, cta(lang), filt)
+    path = "/industries/electronics-pcb/%s/" % cat_slug
+    crumb = [(("首页" if zh else "Home"), "/"), (("行业" if zh else "Industries"), "/industries/"),
+             (("电子与PCB" if zh else "Electronics & PCB"), "/industries/electronics-pcb/"),
+             ((cat["title_zh"] if zh else cat["title_en"]), path)]
+    lede = cat["lede_zh"] if zh else cat["lede_en"]
+    write(lang, path, page(lang, path,
+        ((cat["title_zh"] if zh else cat["title_en"]) + " | ETIA"),
+        lede[:160], (cat["title_zh"] if zh else cat["title_en"]), lede, body, crumb, active="products"))
+    if lang == "en":
+        URLS.append(path)
 
 URLS = []
 
@@ -19,6 +104,8 @@ LANDINGS = {
     "/industries/electronics-pcb/masking-dots-inspection-arrows/",
     "/industries/electronics-pcb/laser-markable-labels/",
   ],
+  # Application thumbnails (image + text cards). Fill with clean COS URLs when ready.
+  "app_imgs": ["", "", "", "", "", ""],
   "en": {
     "eyebrow": "Electronics & PCB",
     "h1": "Label Materials for Electronics and PCB Manufacturing",
@@ -181,11 +268,20 @@ def build_landing(lang, slug):
     offers = '<h2>%s</h2>%s' % (esc(d["offers_h"]), cards_grid(d["offers"]))
 
     app_urls = LANDINGS[slug].get("app_urls", [])
+    app_imgs = LANDINGS[slug].get("app_imgs", [])
+    def app_tile(i, t):
+        url = app_imgs[i] if i < len(app_imgs) else ""
+        if url:
+            return ('<div class="acard-img" style="background:linear-gradient(135deg,#dfe7f3,#eef2f8)">'
+                    '<img src="%s" alt="%s" loading="lazy" onerror="this.remove()"><span class="aicon" style="font-size:30px">\U0001F3F7</span></div>') % (esc(url), esc(t))
+        return ('<div class="acard-img" style="background:linear-gradient(135deg,#dfe7f3,#eef2f8)">'
+                '<span class="aicon" style="font-size:30px">\U0001F3F7</span></div>')
     app_cards = "".join(
-        '<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="go" style="color:var(--blue);font-weight:700;font-size:13.5px;margin-top:12px">%s →</div></a>'
-        % (L(lang, app_urls[i]) if i < len(app_urls) else contact, esc(t), esc(dsc), esc(cta_))
+        '<a class="acard" href="%s">%s<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p>'
+        '<div class="acard-go" style="margin-top:10px">%s →</div></div></a>'
+        % (L(lang, app_urls[i]) if i < len(app_urls) else contact, app_tile(i, t), esc(t), esc(dsc), esc(cta_))
         for i, (t, dsc, cta_) in enumerate(d["apps"]))
-    apps = '<h2>%s</h2><div class="grid">%s</div>' % (esc(d["apps_h"]), app_cards)
+    apps = '<h2>%s</h2><div class="grid grid3">%s</div>' % (esc(d["apps_h"]), app_cards)
 
     dir_cards = "".join(
         '<div class="card"><h3>%s</h3><p>%s</p><div style="margin-top:14px"><a class="btn sec" href="%s">%s →</a></div></div>'
@@ -367,6 +463,8 @@ def main():
         for lang in LANGS:
             build_landing(lang, slug)
     for lang in LANGS:
+        for cat_slug in PCB_CATS:
+            build_pcb_category(lang, cat_slug)
         build_by_environment(lang)
         build_by_feature(lang)
         build_products_overview(lang)
