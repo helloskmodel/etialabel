@@ -52,11 +52,56 @@ nav.main a:hover{color:var(--blue);text-decoration:none;border-bottom-color:var(
 .hero h1{font-size:40px;line-height:1.14;font-weight:800;color:var(--blue-deep);max-width:860px;margin-top:14px}
 .hero p{color:var(--mut);margin-top:16px;max-width:730px;font-size:17px}
 .hero .btns{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
-/* ---- Trust strip (AGENTS 4.1): one row of authorization / proof points ---- */
-.tstrip{background:var(--bg);border-bottom:1px solid var(--line)}
-.tstrip .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;padding:16px 20px;justify-content:center}
-.tstrip .ti{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#374151}
-.tstrip .ti .dot{width:7px;height:7px;border-radius:50%;background:var(--green);flex:none}
+/* ---- Home hero: editorial two-column with right stat panel ---- */
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.hero-copy .sub{font-size:18px;font-weight:700;color:var(--ink);margin-top:14px;max-width:640px}
+.hero-panel{background:linear-gradient(155deg,#fff,var(--soft-blue));border:1px solid var(--line);border-radius:24px;box-shadow:0 22px 55px rgba(20,60,150,.12);padding:14px 26px}
+.hero-panel .pstat{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 4px;border-bottom:1px solid var(--line-soft)}
+.hero-panel .pstat:last-child{border-bottom:0}
+.hero-panel .pstat b{font-size:26px;color:var(--blue-deep);white-space:nowrap}
+.hero-panel .pstat span{color:var(--mut);font-size:13px;font-weight:600;text-align:right;max-width:170px}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:28px}}
+/* ---- Service bar: four proof points, icons, no descriptions ---- */
+.svcbar{background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svcbar .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:20px}
+.svc{display:flex;align-items:center;gap:10px;justify-content:center;font-size:14px;font-weight:700;color:#374151;text-align:center}
+.svc svg{width:22px;height:22px;color:var(--green);flex:none}
+@media(max-width:760px){.svcbar .wrap{grid-template-columns:1fr 1fr;gap:14px}.svc{justify-content:flex-start}}
+/* ---- Generic light section + centered heading ---- */
+.section{padding:56px 0}
+.section.alt{background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.center{text-align:center}
+.h2{font-size:30px;color:var(--blue-deep);font-weight:800;letter-spacing:-.02em;margin-top:6px}
+/* ---- Why ETIA: four columns ---- */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:34px;text-align:left}
+.why-ic{width:46px;height:46px;border-radius:12px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(20,60,150,.06)}
+.why-ic svg{width:24px;height:24px;color:var(--blue)}
+.why-item h3{font-size:18px;color:var(--blue-deep);margin:14px 0 6px}
+.why-item p{color:var(--mut);font-size:14px}
+.why-tag{text-align:center;margin-top:30px;font-weight:800;color:var(--green);letter-spacing:.02em;font-size:16px}
+@media(max-width:860px){.why-grid{grid-template-columns:1fr 1fr}}
+/* ---- Explore by Application: CSS scroll-snap carousel (no JS) ---- */
+.appcar{margin-top:30px}
+.appcar-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 2px 14px;-webkit-overflow-scrolling:touch}
+.appcar-track::-webkit-scrollbar{height:8px}
+.appcar-track::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
+.appslide{scroll-snap-align:center;flex:0 0 88%;display:grid;grid-template-columns:55% 45%;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 16px 44px rgba(20,60,150,.08)}
+.appslide .img{position:relative;overflow:hidden;min-height:340px;background:linear-gradient(155deg,var(--soft-blue),var(--soft-green));display:flex;flex-direction:column;justify-content:space-between;padding:26px;border-right:1px solid var(--line)}
+.appslide .img .num{font-size:14px;font-weight:800;letter-spacing:.12em;color:var(--blue);z-index:1}
+.appslide .img .iname{font-size:24px;font-weight:800;line-height:1.2;color:var(--blue-deep);z-index:1;max-width:82%}
+.appslide .img .bignum{position:absolute;right:-4px;bottom:-34px;font-size:150px;font-weight:900;color:#fff;opacity:.6;line-height:1;letter-spacing:-.04em}
+.appslide .copy{padding:30px 32px;display:flex;flex-direction:column}
+.appslide .copy .eyebrow{margin-bottom:8px}
+.appslide .copy h3{font-size:23px;color:var(--blue-deep);font-weight:800;line-height:1.2}
+.appslide .copy p{color:var(--mut);font-size:14px;margin:10px 0 14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tags span{font-size:12px;font-weight:700;background:#eef4ff;color:var(--blue);border:1px solid #d9e6ff;border-radius:20px;padding:5px 12px}
+.feat{font-size:13px;color:var(--ink);margin-top:auto;padding-top:12px;border-top:1px solid var(--line-soft)}
+.feat b{color:var(--blue-deep)}
+.appslide .copy .go{margin-top:14px;font-weight:800;color:var(--green)}
+.appslide .copy .go:hover{text-decoration:none;color:var(--green-d)}
+.appcar-hint{text-align:center;color:var(--mut);font-size:13px;margin-top:12px}
+@media(max-width:760px){.appslide{flex:0 0 90%;grid-template-columns:1fr}.appslide .img{min-height:170px;border-right:0;border-bottom:1px solid var(--line)}.appslide .img .bignum{font-size:110px;bottom:-24px}}
 .crumb{font-size:13px;color:var(--mut);padding:14px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
 .paths{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:36px 0}

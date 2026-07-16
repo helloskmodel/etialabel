@@ -321,11 +321,56 @@ nav.main a:hover{color:var(--blue);text-decoration:none;border-bottom-color:var(
 .hero h1{font-size:40px;line-height:1.14;font-weight:800;color:var(--blue-deep);max-width:860px;margin-top:14px}
 .hero p{color:var(--mut);margin-top:16px;max-width:730px;font-size:17px}
 .hero .btns{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
-/* ---- Trust strip (AGENTS 4.1): one row of authorization / proof points ---- */
-.tstrip{background:var(--bg);border-bottom:1px solid var(--line)}
-.tstrip .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;padding:16px 20px;justify-content:center}
-.tstrip .ti{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#374151}
-.tstrip .ti .dot{width:7px;height:7px;border-radius:50%;background:var(--green);flex:none}
+/* ---- Home hero: editorial two-column with right stat panel ---- */
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.hero-copy .sub{font-size:18px;font-weight:700;color:var(--ink);margin-top:14px;max-width:640px}
+.hero-panel{background:linear-gradient(155deg,#fff,var(--soft-blue));border:1px solid var(--line);border-radius:24px;box-shadow:0 22px 55px rgba(20,60,150,.12);padding:14px 26px}
+.hero-panel .pstat{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 4px;border-bottom:1px solid var(--line-soft)}
+.hero-panel .pstat:last-child{border-bottom:0}
+.hero-panel .pstat b{font-size:26px;color:var(--blue-deep);white-space:nowrap}
+.hero-panel .pstat span{color:var(--mut);font-size:13px;font-weight:600;text-align:right;max-width:170px}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:28px}}
+/* ---- Service bar: four proof points, icons, no descriptions ---- */
+.svcbar{background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svcbar .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:20px}
+.svc{display:flex;align-items:center;gap:10px;justify-content:center;font-size:14px;font-weight:700;color:#374151;text-align:center}
+.svc svg{width:22px;height:22px;color:var(--green);flex:none}
+@media(max-width:760px){.svcbar .wrap{grid-template-columns:1fr 1fr;gap:14px}.svc{justify-content:flex-start}}
+/* ---- Generic light section + centered heading ---- */
+.section{padding:56px 0}
+.section.alt{background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.center{text-align:center}
+.h2{font-size:30px;color:var(--blue-deep);font-weight:800;letter-spacing:-.02em;margin-top:6px}
+/* ---- Why ETIA: four columns ---- */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:34px;text-align:left}
+.why-ic{width:46px;height:46px;border-radius:12px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(20,60,150,.06)}
+.why-ic svg{width:24px;height:24px;color:var(--blue)}
+.why-item h3{font-size:18px;color:var(--blue-deep);margin:14px 0 6px}
+.why-item p{color:var(--mut);font-size:14px}
+.why-tag{text-align:center;margin-top:30px;font-weight:800;color:var(--green);letter-spacing:.02em;font-size:16px}
+@media(max-width:860px){.why-grid{grid-template-columns:1fr 1fr}}
+/* ---- Explore by Application: CSS scroll-snap carousel (no JS) ---- */
+.appcar{margin-top:30px}
+.appcar-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 2px 14px;-webkit-overflow-scrolling:touch}
+.appcar-track::-webkit-scrollbar{height:8px}
+.appcar-track::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
+.appslide{scroll-snap-align:center;flex:0 0 88%;display:grid;grid-template-columns:55% 45%;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 16px 44px rgba(20,60,150,.08)}
+.appslide .img{position:relative;overflow:hidden;min-height:340px;background:linear-gradient(155deg,var(--soft-blue),var(--soft-green));display:flex;flex-direction:column;justify-content:space-between;padding:26px;border-right:1px solid var(--line)}
+.appslide .img .num{font-size:14px;font-weight:800;letter-spacing:.12em;color:var(--blue);z-index:1}
+.appslide .img .iname{font-size:24px;font-weight:800;line-height:1.2;color:var(--blue-deep);z-index:1;max-width:82%}
+.appslide .img .bignum{position:absolute;right:-4px;bottom:-34px;font-size:150px;font-weight:900;color:#fff;opacity:.6;line-height:1;letter-spacing:-.04em}
+.appslide .copy{padding:30px 32px;display:flex;flex-direction:column}
+.appslide .copy .eyebrow{margin-bottom:8px}
+.appslide .copy h3{font-size:23px;color:var(--blue-deep);font-weight:800;line-height:1.2}
+.appslide .copy p{color:var(--mut);font-size:14px;margin:10px 0 14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tags span{font-size:12px;font-weight:700;background:#eef4ff;color:var(--blue);border:1px solid #d9e6ff;border-radius:20px;padding:5px 12px}
+.feat{font-size:13px;color:var(--ink);margin-top:auto;padding-top:12px;border-top:1px solid var(--line-soft)}
+.feat b{color:var(--blue-deep)}
+.appslide .copy .go{margin-top:14px;font-weight:800;color:var(--green)}
+.appslide .copy .go:hover{text-decoration:none;color:var(--green-d)}
+.appcar-hint{text-align:center;color:var(--mut);font-size:13px;margin-top:12px}
+@media(max-width:760px){.appslide{flex:0 0 90%;grid-template-columns:1fr}.appslide .img{min-height:170px;border-right:0;border-bottom:1px solid var(--line)}.appslide .img .bignum{font-size:110px;bottom:-24px}}
 .crumb{font-size:13px;color:var(--mut);padding:14px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
 .paths{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:36px 0}
@@ -707,45 +752,112 @@ def default_faqs(h1, models):
     return qas
 
 # ============================================================ BUILD
+# --- simple line icons (inline SVG, currentColor) --------------------------
+IC_SHIELD = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4-3 6.5-7 8-4-1.5-7-4-7-8V6z"/><path d="M9 12l2 2 4-4"/></svg>'
+IC_TARGET = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg>'
+IC_TRUCK  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v9H3z"/><path d="M14 9h4l3 3v3h-7z"/><circle cx="7.5" cy="17.5" r="1.6"/><circle cx="17.5" cy="17.5" r="1.6"/></svg>'
+IC_CHECK  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>'
+IC_EYE    = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>'
+IC_LINK   = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h6"/><path d="M9 8H7a4 4 0 000 8h2"/><path d="M15 8h2a4 4 0 010 8h-2"/></svg>'
+IC_GEAR   = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg>'
+IC_BOX    = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v10l-8 4-8-4V7z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg>'
+
+# Explore-by-Application carousel data (finalized home copy). Each slide links
+# to the closest existing hub page; products appear only as supporting proof.
+APP_SLIDES = [
+ {"n":"01","ind":"Electronics Manufacturing &amp; PCB","head":"High-Temperature PCB Identification",
+  "desc":"Durable polyimide label materials for lead-free reflow, chemical cleaning, precision printing, and barcode traceability.",
+  "tags":["Lead-Free Reflow","Chemical Resistant","Precision Print"],
+  "flabel":"Featured Material","feat":"POLYONICS High-Temperature Polyimide","url":"/industries/electronics-semiconductor/"},
+ {"n":"02","ind":"Metals, Ceramics &amp; Heat Treatment","head":"Ultra-High-Temperature Process Tracking",
+  "desc":"Identification solutions for hot metal, heat treatment, ceramic firing, and other extreme-temperature processes.",
+  "tags":["Direct Apply","Heat Treatment","Kiln Firing"],
+  "flabel":"Featured Solution","feat":"ETIA Ultra-High-Temperature Series","url":"/applications/high-temp-heat-treatment/"},
+ {"n":"03","ind":"Medical, Pharmaceutical &amp; Laboratory","head":"Cryogenic and Chemical-Resistant Identification",
+  "desc":"Durable identification for ultra-low-temperature application, liquid nitrogen storage, laboratory slides, and chemical-intensive workflows.",
+  "tags":["−196 °C Storage","Freeze-Thaw","Chemical Resistant"],
+  "flabel":"Featured Solution","feat":"ETIA Cryogenic &amp; Laboratory Series","url":"/applications/cryogenic-ln2/"},
+ {"n":"04","ind":"Automotive, Tire &amp; Rubber","head":"Durable Identification for Demanding Surfaces",
+  "desc":"High-performance labels for oily surfaces, tire vulcanization, VIN identification, and long-term automotive traceability.",
+  "tags":["Oily Surfaces","Vulcanization","VIN Tracking"],
+  "flabel":"Featured Solution","feat":"ETIA High-Adhesion Series","url":"/industries/automotive/"},
+ {"n":"05","ind":"Wire &amp; Cable","head":"Durable Wire and Cable Identification",
+  "desc":"Reliable identification for small-diameter cables, curved surfaces, abrasion, heat, and long-term tracking.",
+  "tags":["Small Diameter","Abrasion Resistant","Long-Term Tracking"],
+  "flabel":"Featured Solution","feat":"Specialty Wire &amp; Cable Materials","url":"/industries/cable-fiber-optic/"},
+ {"n":"06","ind":"Outdoor &amp; Energy","head":"Long-Term Outdoor Identification",
+  "desc":"Weather-resistant label materials for sunlight, moisture, temperature changes, abrasion, and demanding outdoor environments.",
+  "tags":["UV Resistant","Weatherable","Long-Term Durability"],
+  "flabel":"Featured Solution","feat":"Outdoor Durable Label Materials","url":"/applications/outdoor-uv-weatherproof/"},
+]
+
 # homepage
 def build_home():
-    ind_cards = "".join('<div class="card"><h4><a href="/industries/%s/">%s</a></h4><p>%s</p></div>'
-                        % (IND_MAP[i["slug"]][0], esc(IND_MAP[i["slug"]][1]), esc(IND_MAP[i["slug"]][2][:70]+"…"))
-                        for i in tree["industries"])
-    body = """<section class="hero"><div class="wrap">
-<span class="eyebrow">Industrial Specialty Labels · 20 Years</span>
-<h1>Your solution partner for labels that perform where ordinary ones fail.</h1>
-<p>For over 20 years we've engineered durable and specialty labels for the toughest conditions — extreme heat to 1300&nbsp;°C, cryogenic cold to −196&nbsp;°C, harsh chemicals, oily surfaces and lead-free PCB assembly. We start from your application, not a catalog.</p>
-<div class="btns"><a class="btn" href="/contact/">Request Samples &amp; Datasheet</a>
-<a class="btn ghost" href="/industries/">Browse by Industry</a></div></div></section>
-<section class="tstrip"><div class="wrap">
-<span class="ti"><span class="dot"></span>Sole agent — Polyonics (USA)</span>
-<span class="ti"><span class="dot"></span>Sole agent — YS&nbsp;Tech (Japan)</span>
-<span class="ti"><span class="dot"></span>In-house die-cutting &amp; slitting</span>
-<span class="ti"><span class="dot"></span>1300&nbsp;°C to −196&nbsp;°C envelope</span>
-<span class="ti"><span class="dot"></span>Free qualification samples</span>
-</div></section>
-<div class="wrap"><div class="paths">
-<div class="pcard"><div class="tag">Path 1</div><h3><a href="/industries/">By Industry</a></h3>
-<p style="color:var(--mut);font-size:14px">Start from your sector — electronics, automotive, medical, steel and more.</p>
-<ul><li>Electronics &amp; Semiconductor</li><li>Automotive · EV &amp; Battery</li><li>Medical &amp; Biotech</li><li>Steel · Ceramic · Cable</li></ul></div>
-<div class="pcard"><div class="tag">Path 2</div><h3><a href="/applications/">By Application</a></h3>
-<p style="color:var(--mut);font-size:14px">Start from your process — the heat, chemistry or environment the label must survive.</p>
-<ul><li>SMT Reflow &amp; Wave Soldering</li><li>Cryogenic LN2 · Sterilization</li><li>Heat-Treatment 300–1300&nbsp;°C</li><li>ESD · UL94 V-0 · Outdoor UV</li></ul></div>
-<div class="pcard"><div class="tag">Path 3</div><h3><a href="/materials/">By Base Material</a></h3>
-<p style="color:var(--mut);font-size:14px">Start from the substrate — polyimide, PET, PP, metal foil or specialty.</p>
-<ul><li>Polyimide (PI) High-Temp</li><li>Polyester (PET)</li><li>Synthetic PP · Paper/Specialty</li><li>Metal &amp; Aluminum Foil</li></ul></div>
+    # Service bar — four proof points, icons only (finalized home copy)
+    svc = [(IC_SHIELD,"100% Pre-Shipment Inspection"),(IC_TARGET,"Application-Driven Solutions"),
+           (IC_TRUCK,"Flexible Supply"),(IC_CHECK,"Long-Term Support")]
+    svcbar = '<section class="svcbar"><div class="wrap">%s</div></section>' % "".join(
+        '<div class="svc">%s<span>%s</span></div>' % (ic, t) for ic,t in svc)
+    # Why ETIA — four columns
+    why = [(IC_EYE,"We Understand.","Every application is different. We start with your process, not a product catalog."),
+           (IC_LINK,"We Match.","Global specialty materials, matched to your application."),
+           (IC_GEAR,"We Engineer.","Flexible constructions for requirements standard materials cannot meet."),
+           (IC_BOX,"We Deliver.","From the first sample to dependable long-term supply.")]
+    why_html = "".join('<div class="why-item"><div class="why-ic">%s</div><h3>%s</h3><p>%s</p></div>'
+                       % (ic, h, esc(d)) for ic,h,d in why)
+    # Explore-by-Application carousel
+    slides = ""
+    for s in APP_SLIDES:
+        tags = "".join('<span>%s</span>' % t for t in s["tags"])
+        slides += ('<article class="appslide">'
+            '<div class="img"><div class="num">%s / 06</div><div class="iname">%s</div><div class="bignum">%s</div></div>'
+            '<div class="copy"><span class="eyebrow">%s</span><h3>%s</h3><p>%s</p>'
+            '<div class="tags">%s</div><div class="feat"><b>%s:</b> %s</div>'
+            '<a class="go" href="%s">View Application &rarr;</a></div></article>'
+            ) % (s["n"], s["ind"], s["n"], s["ind"], s["head"], esc(s["desc"]), tags, s["flabel"], s["feat"], s["url"])
+
+    body = """<section class="hero"><div class="wrap"><div class="hero-grid">
+<div class="hero-copy">
+<span class="eyebrow">Durable Identification · Specialty Label Materials</span>
+<h1>Where Materials Meet Applications.</h1>
+<p class="sub">Every demanding application starts with the right material.</p>
+<p>For over 20 years, ETIA has helped manufacturers solve complex identification challenges through specialty materials, application expertise, and flexible supply.</p>
+<div class="btns"><a class="btn" href="/applications/">Explore Applications</a>
+<a class="btn ghost" href="/contact/">Request Samples</a></div>
 </div>
+<div class="hero-panel">
+<div class="pstat"><b>20+ yrs</b><span>Specialty identification expertise</span></div>
+<div class="pstat"><b>1300&nbsp;°C → −196&nbsp;°C</b><span>Ultra-high heat to cryogenic cold</span></div>
+<div class="pstat"><b>100%%</b><span>Pre-shipment inspection</span></div>
+</div>
+</div></div></section>
 %s
-<div class="sec"><h2>All industries</h2><div class="grid">%s</div></div>
-%s</div>""" % (TRUST_TRIANGLE, ind_cards, cta())
+<section class="section"><div class="wrap center">
+<span class="eyebrow">Why ETIA</span>
+<h2 class="h2">Built Around Your Application.</h2>
+<div class="why-grid">%s</div>
+<div class="why-tag">Reliable. Responsive. Consistent.</div>
+</div></section>
+<section class="section alt"><div class="wrap">
+<div class="center">
+<span class="eyebrow">Explore by Application</span>
+<h2 class="h2">Proven Materials for Demanding Applications</h2>
+<p class="lede" style="margin:12px auto 0;max-width:660px">Explore label materials selected for specific industries, processes, surfaces, temperatures, and identification challenges.</p></div>
+<div class="appcar"><div class="appcar-track">%s</div></div>
+<p class="appcar-hint">Swipe or scroll to browse all six applications &rarr;</p>
+<div class="center" style="margin-top:18px"><a class="btn ghost" href="/applications/">View All Applications &rarr;</a></div>
+</div></section>
+<div class="wrap"><div class="cta"><h3>Cannot Find Your Application?</h3>
+<p>Tell us about your surface, process, environment, and identification requirements — we'll match the right material and send free samples.</p>
+<div class="btns"><a class="btn" href="/contact/">Talk to a Label Specialist</a>
+<a class="btn ghost" href="/contact/">Request Samples</a></div></div></div>""" % (svcbar, why_html, slides)
     sch = {"@context":"https://schema.org","@type":"Organization","name":"ETIA Label","url":SITE,
-           "slogan":"Your Solution Partner. Engineering Success.",
-           "description":"ETIA is a solution partner for durable and specialty industrial labels engineered for extreme heat, cryogenic cold, chemicals and lead-free PCB assembly. Sole agent for Polyonics (USA) and YS Tech (Japan), with in-house die-cutting and slitting.",
+           "slogan":"Where Materials Meet Applications.",
+           "description":"ETIA supplies specialty label materials for demanding applications — high-temperature polyimide for PCB, ultra-high-temperature process tracking, cryogenic and chemical-resistant, automotive, wire & cable and outdoor identification. 20+ years of application expertise.",
            "brand":["Polyonics","YS Tech","FlexCon","Computype","ETIA"],
            "contactPoint":contact_points()}
-    write("/", page("ETIA Label — Your Solution Partner for Industrial Specialty Labels",
-        "Durable, high-performance industrial labels for extreme heat to 1300°C, cryogenic cold, chemicals and lead-free PCB assembly. Sole agent for Polyonics (USA) & YS Tech (Japan). Browse by industry, application or material — free samples.",
+    write("/", page("ETIA Label — Specialty Label Materials for Demanding Applications",
+        "Where materials meet applications. For 20+ years ETIA has solved complex identification challenges with specialty label materials — high-temp polyimide PCB, ultra-high-temperature, cryogenic, chemical-resistant, automotive, cable and outdoor. Explore by application; request free samples.",
         SITE+"/", body, sch))
     track("/", "root")
 
