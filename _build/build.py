@@ -13,6 +13,7 @@ import gen_pcb as pcb
 import gen_wirecable as wc
 import gen_pi as pi
 import gen_featured as fs
+import gen_ind_landing as land
 
 hp.main()      # clean + build heatproof + home (with harsh-env module) + base vercel.json
 auto.main()    # build automotive + automotive sitemap + merge redirects
@@ -21,5 +22,6 @@ pcb.main()     # build electronics & pcb / polyimide categories + sitemap
 wc.main()      # build wire & cable + sitemap
 pi.main()      # build Polyimide (PI) Material & Application Center + By-Material hub
 fs.main()      # build Featured Solutions center + harsh-environment landing pages
+land.main()    # industry LANDING pages (brochure layer) — owns /industries/<slug>/ index
 print("BUILD COMPLETE — total EN canonical URLs:",
-      len(hp.ALL_URLS)+len(auto.AUTO_URLS)+len(hc.HC_URLS)+len(pcb.URLS)+len(wc.URLS)+len(pi.URLS)+len(fs.URLS))
+      len(hp.ALL_URLS)+len(auto.AUTO_URLS)+len(hc.HC_URLS)+len(pcb.URLS)+len(wc.URLS)+len(pi.URLS)+len(fs.URLS)+len(land.URLS))
