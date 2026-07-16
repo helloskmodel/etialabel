@@ -126,9 +126,11 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .hero .lede{margin-top:18px;color:var(--mut);font-size:19px;max-width:40em}
 .hero .btns{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
 .svcbar{background:linear-gradient(155deg,var(--blue),var(--blue-deep));color:#fff}
-.svcbar .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:20px 24px}
-.svcbar .i{font-size:14.5px;font-weight:600;display:flex;gap:9px;align-items:flex-start}
-.svcbar .i::before{content:"✓";color:#8fe063;font-weight:800;flex:none}
+.svcbar .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:26px 24px}
+.svcbar .i{display:flex;gap:10px;align-items:flex-start}
+.svcbar .i::before{content:"✓";color:#8fe063;font-weight:800;flex:none;margin-top:2px}
+.svcbar .i b{display:block;font-size:14px;font-weight:700;color:#fff;margin-bottom:4px}
+.svcbar .i span{display:block;font-size:11.5px;color:#c3d0ea;line-height:1.45}
 .whygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .why{display:flex;gap:14px;align-items:flex-start;padding-top:4px}
 .why .ic{flex:none;width:46px;height:46px;border-radius:12px;background:#fff;border:1px solid var(--line);color:var(--green-d);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(16,34,58,.05)}
@@ -864,7 +866,7 @@ def build_home(lang):
     final_cta=('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
                '<div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn on-dark" href="%s">%s</a></div></div></div>')%(
         esc(T["fcta_title"]),esc(T["fcta_para"]),home_hlink(lang,"/contact/"),esc(T["fcta_b1"]),home_hlink(lang,"/contact/"),esc(T["fcta_b2"]))
-    svc_html="".join('<div class="i">%s</div>'%esc(s) for s in T.get("svc",[]))
+    svc_html="".join('<div class="i"><div class="it"><b>%s</b><span>%s</span></div></div>'%(esc(it["title"]),esc(it["desc"])) for it in T.get("svc",[]))
     body="""<section class="hero"><div class="wrap">
 <div class="eyebrow">%s</div><h1 class="serif">%s</h1>
 <p class="lede" style="color:var(--ink);font-size:20px;font-weight:600;max-width:32em">%s</p>

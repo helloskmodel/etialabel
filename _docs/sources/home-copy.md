@@ -288,3 +288,11 @@ Product cards (title / spec) — one row of 5:
 5 Dual-Layer ESD-Safe PCB Labels / 双层抗静电 PCB 标签 — ESD-safe construction
 Section title changed from "Most Popular" (ad-law) -> "Request Product Samples / 欢迎申请样品".
 FREE SAMPLE block: form (email / phone / mailing address) -> mailto label@etia-tech.com (static-site lead capture).
+
+---
+
+# REVISION 6 — SERVICE COMMITMENT (final; was Service Bar). Each = title + one-line description.
+1 100% Quality Inspection / 100% 质量检测 — in-house lab testing, production verification, final inspection, retained samples, full traceability. / 自有实验室检测、上机验证、成品检验与严格留样，全流程质量可追溯。
+2 Application-Driven Solutions / 应用驱动方案 — materials selected around your process, environment, and performance requirements. / 围绕工艺、环境与性能要求，为您的应用匹配合适材料。
+3 Flexible Supply / 柔性供应 — multiple materials, varied specifications, sample quantities, small-batch production. / 支持多种材料、多种规格、样品及小批量生产。
+4 Responsive Application Support / 及时应用支持 — engineers respond quickly when conditions change or issues arise (positioned as Application Support, not after-sales). / 当生产工况变化或贴标应用出现问题时，我们及时响应，协助恢复稳定生产。

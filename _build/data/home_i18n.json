@@ -115,10 +115,22 @@
     "meta_title": "ETIA Label — Specialty & Ultra-High-Temperature Industrial Labels",
     "meta_desc": "Durable, specialty label materials matched to your application — from cryogenic and high-heat to chemical, tamper-evident and PCB identification.",
     "svc": [
-      "100% Pre-Shipment Inspection",
-      "Application-Driven Solutions",
-      "Flexible Supply",
-      "Long-Term Support"
+      {
+        "title": "100% Quality Inspection",
+        "desc": "Backed by in-house laboratory testing, production verification, final inspection, and retained samples for full traceability."
+      },
+      {
+        "title": "Application-Driven Solutions",
+        "desc": "Materials selected around your process, environment, and performance requirements."
+      },
+      {
+        "title": "Flexible Supply",
+        "desc": "Multiple materials, varied specifications, sample quantities, and small-batch production."
+      },
+      {
+        "title": "Responsive Application Support",
+        "desc": "When production conditions change or application issues arise, our engineers respond quickly to help keep your production running."
+      }
     ],
     "why_close": "",
     "prod_eyebrow": "REQUEST SAMPLES",
@@ -251,10 +263,22 @@
     "meta_title": "ETIA Label — 特种与超高温工业标签",
     "meta_desc": "面向严苛环境的特种耐久标签材料，依应用匹配 —— 覆盖超低温、高温、化学、防篡改与 PCB 标识。",
     "svc": [
-      "100% 出货全检",
-      "应用驱动方案",
-      "柔性供应",
-      "长期支持"
+      {
+        "title": "100% 质量检测",
+        "desc": "自有实验室检测、上机验证、成品检验与严格留样，全流程质量可追溯。"
+      },
+      {
+        "title": "应用驱动方案",
+        "desc": "围绕工艺、环境与性能要求，为您的应用匹配合适材料。"
+      },
+      {
+        "title": "柔性供应",
+        "desc": "支持多种材料、多种规格、样品及小批量生产。"
+      },
+      {
+        "title": "及时应用支持",
+        "desc": "当生产工况变化或贴标应用出现问题时，我们及时响应，协助恢复稳定生产。"
+      }
     ],
     "why_close": "",
     "prod_eyebrow": "样品申请",
@@ -387,10 +411,22 @@
     "meta_title": "ETIA Label — Vật liệu nhãn công nghiệp chuyên dụng",
     "meta_desc": "Vật liệu nhãn bền vững, chuyên dụng, được kết hợp theo ứng dụng của bạn — từ siêu lạnh và nhiệt độ cao đến hóa chất, chống giả mạo và nhận diện PCB.",
     "svc": [
-      "Kiểm tra chất lượng 100%",
-      "Giải pháp theo ứng dụng",
-      "Cung ứng linh hoạt",
-      "Hỗ trợ dài hạn"
+      {
+        "title": "100% Quality Inspection",
+        "desc": "Backed by in-house laboratory testing, production verification, final inspection, and retained samples for full traceability."
+      },
+      {
+        "title": "Application-Driven Solutions",
+        "desc": "Materials selected around your process, environment, and performance requirements."
+      },
+      {
+        "title": "Flexible Supply",
+        "desc": "Multiple materials, varied specifications, sample quantities, and small-batch production."
+      },
+      {
+        "title": "Responsive Application Support",
+        "desc": "When production conditions change or application issues arise, our engineers respond quickly to help keep your production running."
+      }
     ],
     "why_close": "",
     "prod_eyebrow": "REQUEST SAMPLES",
@@ -523,10 +559,22 @@
     "meta_title": "ETIA Label — วัสดุฉลากอุตสาหกรรมเฉพาะทาง",
     "meta_desc": "วัสดุฉลากที่ทนทานและเฉพาะทาง เลือกให้เหมาะกับการใช้งานของคุณ — ตั้งแต่อุณหภูมิต่ำมากและความร้อนสูง ไปจนถึงสารเคมี การป้องกันการปลอมแปลง และการระบุ PCB",
     "svc": [
-      "ตรวจสอบคุณภาพ 100%",
-      "โซลูชันตามการใช้งาน",
-      "การจัดหาที่ยืดหยุ่น",
-      "การสนับสนุนระยะยาว"
+      {
+        "title": "100% Quality Inspection",
+        "desc": "Backed by in-house laboratory testing, production verification, final inspection, and retained samples for full traceability."
+      },
+      {
+        "title": "Application-Driven Solutions",
+        "desc": "Materials selected around your process, environment, and performance requirements."
+      },
+      {
+        "title": "Flexible Supply",
+        "desc": "Multiple materials, varied specifications, sample quantities, and small-batch production."
+      },
+      {
+        "title": "Responsive Application Support",
+        "desc": "When production conditions change or application issues arise, our engineers respond quickly to help keep your production running."
+      }
     ],
     "why_close": "",
     "prod_eyebrow": "REQUEST SAMPLES",
