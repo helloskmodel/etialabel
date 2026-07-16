@@ -204,7 +204,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .acard-body{padding:12px 12px 14px;display:flex;flex-direction:column;flex:1}
 .acard-eyebrow{font-size:9.5px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--green-d);margin-bottom:5px;line-height:1.25}
 .acard-body h3{font-weight:700;font-size:14px;color:var(--blue-deep);line-height:1.2;margin-bottom:5px}
-.acard-body>p{font-size:11.5px;color:var(--mut);line-height:1.4;flex:1}
+.acard-body h3.indname{font-size:16.5px;line-height:1.18;margin-bottom:7px}
+.acard-body>p{font-size:11px;color:var(--mut);line-height:1.45;flex:1}
 .acard .atags{display:flex;flex-wrap:wrap;gap:4px;margin:9px 0}
 .acard .atags span{font-size:10px;font-weight:700;color:var(--blue);background:#eaf1ff;border:1px solid #d6e2fb;border-radius:11px;padding:3px 7px}
 .acard-go{color:var(--blue);font-weight:700;font-size:11.5px}
@@ -815,10 +816,10 @@ def build_home(lang):
     for k,f in enumerate(T["focus"]):
         tags="".join('<span>%s</span>'%esc(t) for t in f["tags"])
         cards+=('<a class="acard" href="%s"><div class="acard-img g%d"><span class="aicon">%s</span></div>'
-                '<div class="acard-body"><div class="acard-eyebrow">%s</div><h3>%s</h3><p>%s</p>'
+                '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p>'
                 '<div class="atags">%s</div><div class="acard-go">%s →</div></div></a>')%(
             home_hlink(lang,FOCUS_URLS[k]), k%6, INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)],
-            esc(f["name"]), esc(f["headline"]), esc(f["desc"]), tags, esc(T["explore"]))
+            esc(f["name"]), esc(f["desc"]), tags, esc(T["explore"]))
     app_grid='<div class="acgrid">%s</div>'%cards
     # Most Popular Products — same card pattern (image top), application name as title, model small
     PROD_ICON=[1,2,0,3,2,4]

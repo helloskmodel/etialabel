@@ -68,7 +68,7 @@
       {
         "name": "Electronics Manufacturing & PCB",
         "headline": "High-Temperature Polyimide PCB Labels",
-        "desc": "For modern lead-free reflow, chemical cleaning, precision printing and barcode traceability.",
+        "desc": "High-temperature labels for PCB assembly, component traceability, and electronics manufacturing. Designed for lead-free reflow, chemical cleaning, and precision barcode identification.",
         "tags": [
           "Lead-Free Reflow",
           "Chemical Cleaning",
@@ -78,7 +78,7 @@
       {
         "name": "Metals, Ceramics & Heat Treatment",
         "headline": "Ultra-High-Temperature Direct-Apply Labels",
-        "desc": "For hot-state steel, heat-treatment tracking and ceramic kiln firing.",
+        "desc": "Durable labels for hot metal, heat treatment, kiln firing, and other extreme-temperature manufacturing processes where conventional labels fail.",
         "tags": [
           "Hot-Surface Apply",
           "Heat Treatment",
@@ -88,7 +88,7 @@
       {
         "name": "Medical, Pharmaceutical & Laboratory",
         "headline": "Cryogenic and Chemical-Resistant Identification",
-        "desc": "For low-temperature direct apply, liquid-nitrogen storage, slides and laboratory chemical workflows.",
+        "desc": "Reliable identification for cryogenic storage, laboratory workflows, medical devices, pharmaceuticals, and chemical-resistant applications.",
         "tags": [
           "−196°C Storage",
           "Freeze-Thaw",
@@ -96,9 +96,9 @@
         ]
       },
       {
-        "name": "Automotive, Tire & Rubber",
+        "name": "Automotive & Tire",
         "headline": "Durable Identification for Automotive and Rubber Processing",
-        "desc": "For oily surfaces, tire vulcanization, VIN laser marking and long-term traceability.",
+        "desc": "High-performance labels for VIN identification, tire manufacturing, oily surfaces, and long-term traceability across automotive production.",
         "tags": [
           "Oily Surfaces",
           "Vulcanization",
@@ -108,7 +108,7 @@
       {
         "name": "Wire & Cable",
         "headline": "Durable Wire and Cable Identification",
-        "desc": "For small-diameter cables, curved surfaces, abrasion, heat and long-term identification.",
+        "desc": "Durable identification for wire, cable, harnesses, and electrical components exposed to heat, abrasion, and demanding industrial environments.",
         "tags": [
           "Small Diameter",
           "Abrasion",
@@ -118,7 +118,7 @@
       {
         "name": "Outdoor & Energy",
         "headline": "Weather-Resistant Outdoor Identification",
-        "desc": "For UV, rain, temperature swings, abrasion and long-term outdoor exposure.",
+        "desc": "Weather-resistant labels for outdoor equipment, utilities, renewable energy, and industrial assets requiring long-term durability.",
         "tags": [
           "UV Resistant",
           "Weatherable",
@@ -219,7 +219,7 @@
       {
         "name": "电子制造与 PCB",
         "headline": "耐高温聚酰亚胺 PCB 标签",
-        "desc": "适用于现代无铅回流焊、化学清洗、精密小字打印与条码追溯。",
+        "desc": "适用于 PCB 制造、电子装配与元器件追溯，满足无铅回流焊、化学清洗及精密条码标识等应用。",
         "tags": [
           "无铅回流焊",
           "化学清洗",
@@ -229,7 +229,7 @@
       {
         "name": "金属、陶瓷与热处理",
         "headline": "超高温直贴标签",
-        "desc": "适用于热态钢铁、热处理追踪及陶瓷窑炉烧制。",
+        "desc": "适用于热态金属、热处理、陶瓷烧制等超高温工艺，实现全过程可靠标识。",
         "tags": [
           "高温直贴",
           "热处理",
@@ -239,7 +239,7 @@
       {
         "name": "医疗、医药与实验室",
         "headline": "深低温与耐化学标识",
-        "desc": "适用于低温直接贴标、液氮长期存储、载玻片及实验室化学流程。",
+        "desc": "适用于深低温存储、实验室、医疗器械及医药行业，满足耐化学与长期样本追溯需求。",
         "tags": [
           "−196°C 存储",
           "冻融循环",
@@ -247,9 +247,9 @@
         ]
       },
       {
-        "name": "汽车、轮胎与橡胶",
+        "name": "汽车与轮胎",
         "headline": "汽车与橡胶加工耐久标识",
-        "desc": "适用于油污表面、轮胎硫化、VIN 激光标识及长期追溯。",
+        "desc": "适用于汽车制造、VIN 标识、轮胎硫化及油污表面，支持全生命周期追溯。",
         "tags": [
           "油污表面",
           "硫化工艺",
@@ -259,7 +259,7 @@
       {
         "name": "电线与电缆",
         "headline": "耐久电线电缆标识",
-        "desc": "适用于细径线缆、弯曲表面、摩擦、热处理及长期识别。",
+        "desc": "适用于电线、电缆、线束及电气元件，在高温、磨损等环境下保持可靠识别。",
         "tags": [
           "细径线缆",
           "耐磨",
@@ -269,7 +269,7 @@
       {
         "name": "户外与能源",
         "headline": "户外耐候标识",
-        "desc": "适用于紫外线、雨水、温差、磨损及长期户外暴露。",
+        "desc": "适用于户外设备、能源设施及工业资产，具备长期耐候、抗紫外线与耐久性能。",
         "tags": [
           "抗紫外线",
           "耐候",
@@ -370,7 +370,7 @@
       {
         "name": "Electronics Manufacturing & PCB",
         "headline": "High-Temperature Polyimide PCB Labels",
-        "desc": "For modern lead-free reflow, chemical cleaning, precision printing and barcode traceability.",
+        "desc": "High-temperature labels for PCB assembly, component traceability, and electronics manufacturing. Designed for lead-free reflow, chemical cleaning, and precision barcode identification.",
         "tags": [
           "Lead-Free Reflow",
           "Chemical Cleaning",
@@ -380,7 +380,7 @@
       {
         "name": "Metals, Ceramics & Heat Treatment",
         "headline": "Ultra-High-Temperature Direct-Apply Labels",
-        "desc": "For hot-state steel, heat-treatment tracking and ceramic kiln firing.",
+        "desc": "Durable labels for hot metal, heat treatment, kiln firing, and other extreme-temperature manufacturing processes where conventional labels fail.",
         "tags": [
           "Hot-Surface Apply",
           "Heat Treatment",
@@ -390,7 +390,7 @@
       {
         "name": "Medical, Pharmaceutical & Laboratory",
         "headline": "Cryogenic and Chemical-Resistant Identification",
-        "desc": "For low-temperature direct apply, liquid-nitrogen storage, slides and laboratory chemical workflows.",
+        "desc": "Reliable identification for cryogenic storage, laboratory workflows, medical devices, pharmaceuticals, and chemical-resistant applications.",
         "tags": [
           "−196°C Storage",
           "Freeze-Thaw",
@@ -398,9 +398,9 @@
         ]
       },
       {
-        "name": "Automotive, Tire & Rubber",
+        "name": "Automotive & Tire",
         "headline": "Durable Identification for Automotive and Rubber Processing",
-        "desc": "For oily surfaces, tire vulcanization, VIN laser marking and long-term traceability.",
+        "desc": "High-performance labels for VIN identification, tire manufacturing, oily surfaces, and long-term traceability across automotive production.",
         "tags": [
           "Oily Surfaces",
           "Vulcanization",
@@ -410,7 +410,7 @@
       {
         "name": "Wire & Cable",
         "headline": "Durable Wire and Cable Identification",
-        "desc": "For small-diameter cables, curved surfaces, abrasion, heat and long-term identification.",
+        "desc": "Durable identification for wire, cable, harnesses, and electrical components exposed to heat, abrasion, and demanding industrial environments.",
         "tags": [
           "Small Diameter",
           "Abrasion",
@@ -420,7 +420,7 @@
       {
         "name": "Outdoor & Energy",
         "headline": "Weather-Resistant Outdoor Identification",
-        "desc": "For UV, rain, temperature swings, abrasion and long-term outdoor exposure.",
+        "desc": "Weather-resistant labels for outdoor equipment, utilities, renewable energy, and industrial assets requiring long-term durability.",
         "tags": [
           "UV Resistant",
           "Weatherable",
@@ -521,7 +521,7 @@
       {
         "name": "Electronics Manufacturing & PCB",
         "headline": "High-Temperature Polyimide PCB Labels",
-        "desc": "For modern lead-free reflow, chemical cleaning, precision printing and barcode traceability.",
+        "desc": "High-temperature labels for PCB assembly, component traceability, and electronics manufacturing. Designed for lead-free reflow, chemical cleaning, and precision barcode identification.",
         "tags": [
           "Lead-Free Reflow",
           "Chemical Cleaning",
@@ -531,7 +531,7 @@
       {
         "name": "Metals, Ceramics & Heat Treatment",
         "headline": "Ultra-High-Temperature Direct-Apply Labels",
-        "desc": "For hot-state steel, heat-treatment tracking and ceramic kiln firing.",
+        "desc": "Durable labels for hot metal, heat treatment, kiln firing, and other extreme-temperature manufacturing processes where conventional labels fail.",
         "tags": [
           "Hot-Surface Apply",
           "Heat Treatment",
@@ -541,7 +541,7 @@
       {
         "name": "Medical, Pharmaceutical & Laboratory",
         "headline": "Cryogenic and Chemical-Resistant Identification",
-        "desc": "For low-temperature direct apply, liquid-nitrogen storage, slides and laboratory chemical workflows.",
+        "desc": "Reliable identification for cryogenic storage, laboratory workflows, medical devices, pharmaceuticals, and chemical-resistant applications.",
         "tags": [
           "−196°C Storage",
           "Freeze-Thaw",
@@ -549,9 +549,9 @@
         ]
       },
       {
-        "name": "Automotive, Tire & Rubber",
+        "name": "Automotive & Tire",
         "headline": "Durable Identification for Automotive and Rubber Processing",
-        "desc": "For oily surfaces, tire vulcanization, VIN laser marking and long-term traceability.",
+        "desc": "High-performance labels for VIN identification, tire manufacturing, oily surfaces, and long-term traceability across automotive production.",
         "tags": [
           "Oily Surfaces",
           "Vulcanization",
@@ -561,7 +561,7 @@
       {
         "name": "Wire & Cable",
         "headline": "Durable Wire and Cable Identification",
-        "desc": "For small-diameter cables, curved surfaces, abrasion, heat and long-term identification.",
+        "desc": "Durable identification for wire, cable, harnesses, and electrical components exposed to heat, abrasion, and demanding industrial environments.",
         "tags": [
           "Small Diameter",
           "Abrasion",
@@ -571,7 +571,7 @@
       {
         "name": "Outdoor & Energy",
         "headline": "Weather-Resistant Outdoor Identification",
-        "desc": "For UV, rain, temperature swings, abrasion and long-term outdoor exposure.",
+        "desc": "Weather-resistant labels for outdoor equipment, utilities, renewable energy, and industrial assets requiring long-term durability.",
         "tags": [
           "UV Resistant",
           "Weatherable",
