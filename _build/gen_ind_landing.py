@@ -727,19 +727,31 @@ def build_products_overview(lang):
     if lang == "en":
         URLS.append(path)
 
+APP_NOTES_ORDER = ["electronics-pcb", "steel", "healthcare-life-sciences",
+                   "automotive-label-materials", "wire-cable", "outdoor-energy"]
+
 def build_application_notes(lang):
     zh = (lang == "zh")
-    # Browse chips: by industry (6) + by environment (9) — articles get tagged into these.
-    # Application Notes is an independent SEO article library — tags organize notes, they do NOT link to products.
-    ind_chips = "".join('<span class="pill">%s</span>' % esc(z if zh else e) for e, z, u in APPS_AXIS)
+    # Organised by the 6 industries, each listing its application points. Application Notes is an
+    # independent SEO article library — these are organising tags; notes get published under them later.
+    ind_secs = ""
+    total_apps = 0
+    for slug in APP_NOTES_ORDER:
+        d = LANDINGS[slug][lang]
+        apps = d["apps"]
+        total_apps += len(apps)
+        chips = "".join('<span class="pill">%s</span>' % esc(t) for t, _, _ in apps)
+        ind_secs += ('<div class="an-block"><div class="eyebrow">%s</div>'
+                     '<div class="xlinks" style="margin-top:9px">%s</div></div>') % (esc(d["eyebrow"]), chips)
     env_chips = "".join('<span class="pill tag">%s</span>' % esc(z if zh else e) for e, z in BY_ENV)
+    count_line = (("6 大行业 · %d 个应用" % total_apps) if zh else ("6 industries · %d applications" % total_apps))
     body = (
         '<section class="blk"><div class="wrap">'
-        '<h2>%s</h2><div class="xlinks">%s</div>'
-        '<h2 style="margin-top:26px">%s</h2><div class="xlinks">%s</div>'
-        '<div class="verify" style="margin-top:22px">%s</div></div></section>'
+        '<div class="catcount" style="margin-bottom:20px">%s</div>%s'
+        '<h2 style="margin-top:30px">%s</h2><div class="xlinks">%s</div>'
+        '<div class="verify" style="margin-top:24px">%s</div></div></section>'
         '<div class="wrap">%s</div>') % (
-        ("按行业浏览" if zh else "Browse by Industry"), ind_chips,
+        count_line, ind_secs,
         ("按环境浏览" if zh else "Browse by Environment"), env_chips,
         ("应用笔记正在陆续发布（约 40 篇，按行业 / 应用 / 环境标记）。需要特定主题资料请联系 ETIA。" if zh
          else "Application notes are being published (around 40, tagged by industry / application / environment). Contact ETIA for a specific topic."),

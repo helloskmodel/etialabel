@@ -177,6 +177,7 @@ ul.checks li::before{content:"→";position:absolute;left:0;color:var(--blue);fo
 .verify{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 16px;font-size:13.5px;color:#92400e;margin-top:14px}
 .xlinks{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .xlinks a{font-size:13px;background:var(--bg);border:1px solid var(--line);padding:7px 13px;border-radius:20px;color:var(--ink)}
+.an-block{padding:18px 0;border-bottom:1px solid var(--line)}.an-block:last-of-type{border-bottom:none}
 .cta{background:linear-gradient(155deg,var(--blue),var(--blue-deep));color:#fff;border-radius:18px;padding:40px;text-align:center;margin:26px 0}
 .cta .ic{font-size:28px;color:#8fe063}
 .cta h3{font-size:26px;font-weight:800;margin-top:4px;text-wrap:balance}
