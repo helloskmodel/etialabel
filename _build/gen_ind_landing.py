@@ -87,7 +87,7 @@ def build_pcb_category(lang, cat_slug):
     lede = cat["lede_zh"] if zh else cat["lede_en"]
     write(lang, path, page(lang, path,
         ((cat["title_zh"] if zh else cat["title_en"]) + " | ETIA"),
-        lede[:160], (cat["title_zh"] if zh else cat["title_en"]), lede, body, crumb, active="products"))
+        lede[:160], (cat["title_zh"] if zh else cat["title_en"]), lede, body, crumb, active="products", trust=False))
     if lang == "en":
         URLS.append(path)
 
@@ -312,7 +312,7 @@ def build_landing(lang, slug):
              (("行业" if lang == "zh" else "Industries"), "/industries/"),
              (d["eyebrow"], path)]
     write(lang, path, page(lang, path, d["meta_title"], d["meta_desc"],
-                           d["h1"], d["hero"], body, crumb, active="industries"))
+                           d["h1"], d["hero"], body, crumb, active="industries", trust=False))
     if lang == "en":
         URLS.append(path)
 

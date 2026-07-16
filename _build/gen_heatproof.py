@@ -437,7 +437,7 @@ def cta(lang):
 <p>Tell us the surface, temperature, chemistry and print method — we'll recommend the material and arrange samples.</p>
 <div class="btns"><a class="btn pri" href="%s">Request a Sample</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
 
-def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, active=""):
+def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, active="", trust=True):
     canonical = SITE + PREFIX[lang] + path
     sch = [breadcrumb_jsonld(crumb, lang)] + (schema_extra or [])
     schema_js = "".join('<script type="application/ld+json">%s</script>' % json.dumps(s, ensure_ascii=False) for s in sch)
@@ -459,7 +459,7 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 %s
 <script>function etaAx(b,a){var m=b.closest('.ndm');m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});m.querySelectorAll('.axpanel').forEach(function(p){p.style.display=(p.getAttribute('data-ax')===a)?'grid':'none';});}</script>
 </body></html>""" % (lang, esc(title), esc(desc), canonical, hreflang_block(path), esc(title), CSS, schema_js,
-     L(lang,"/"), nav_html(lang, active, path), cr, esc(h1), lede_html, trust_bar(lang), body, footer_html(lang))
+     L(lang,"/"), nav_html(lang, active, path), cr, esc(h1), lede_html, (trust_bar(lang) if trust else ""), body, footer_html(lang))
 
 def write(lang, path, content):
     full = os.path.join(ROOT, (PREFIX[lang] + path).strip("/"), "index.html")
