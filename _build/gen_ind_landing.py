@@ -242,29 +242,268 @@ LANDINGS = {
     "meta_desc": "面向PCB制造、回流焊、波峰焊、严苛清洗、ESD控制、自动贴标及后制程追溯的耐久标签材料。ETIA提供材料选型、样品测试、模切加工与供应支持。",
   },
  },
+
+ # ---- Metals & Ceramics ----
+ "steel": {
+  "path": "/industries/steel/",
+  "app_urls": [
+    "/industries/steel/hot-steel-billet-identification/",
+    "/industries/steel/forged-steel-heat-treatment-tracking/",
+    "/industries/steel/steel-coil-annealing-traceability/",
+    "/industries/steel/ultra-high-temperature-steel-identification/",
+    "/industries/ceramics/ceramic-kiln-traceability/",
+    "/industries/ceramics/crucible-identification/",
+  ],
+  "app_imgs": ["", "", "", "", "", ""],
+  "en": {
+    "eyebrow": "Metals & Ceramics",
+    "h1": "Label Materials for Metals and Ceramics",
+    "hero": "Steel, aluminium and ceramic processes expose identification to extreme heat, direct flame, oxidation, abrasion and repeated firing. ETIA supplies high-temperature label and tag materials and matches each construction to the real process — surface, peak temperature, dwell time and handling.",
+    "apps_h": "Applications We Support",
+    "apps": [
+      ("Hot Steel Billet Identification", "Identification applied to hot billets that must survive high surface temperature, scale and downstream handling.", "Explore"),
+      ("Forged-Steel Heat-Treatment Tracking", "Traceability through forging and heat-treatment where labels face heat, oil quench and mechanical handling.", "Explore"),
+      ("Steel Coil Annealing", "Coil identification that must remain readable through annealing heat and the coil process line.", "Explore"),
+      ("Ultra-High-Temperature Steel Identification", "Materials for the most extreme steel process temperatures, selected by the actual thermal profile.", "Explore"),
+      ("Ceramic Kiln Process Tracking", "Identification that survives kiln firing cycles and repeated high-temperature exposure.", "Explore"),
+      ("Crucible Identification", "Marking for crucibles and refractory ware exposed to extreme, repeated heat.", "Explore"),
+    ],
+    "fcta_h": "Match the Right Material to Your Thermal Process",
+    "fcta_body": "Share your surface, peak temperature, dwell time and handling with ETIA, and request materials for testing.",
+    "fcta1": "Talk to an Application Specialist", "fcta2": "Request Samples",
+    "meta_title": "Metals & Ceramics Label Materials — High-Temperature Steel & Kiln Identification | ETIA",
+    "meta_desc": "High-temperature label and tag materials for steel, aluminium and ceramics: hot billet/coil ID, forged-steel heat-treatment, annealing, kiln firing and crucible marking. ETIA supports selection, samples and supply.",
+  },
+  "zh": {
+    "eyebrow": "金属与陶瓷",
+    "h1": "面向金属与陶瓷的标签材料",
+    "hero": "钢铁、铝及陶瓷工艺会让标识经受极端高温、直接火焰、氧化、磨损与多次烧成。ETIA 供应耐高温标签与标牌材料，并根据真实工艺——表面、峰值温度、持续时间与搬运方式——匹配合适的材料结构。",
+    "apps_h": "我们支持的应用",
+    "apps": [
+      ("热钢坯标识", "贴附于高温钢坯的标识，需要经受高表面温度、氧化皮及后续搬运。", "查看"),
+      ("锻钢热处理追溯", "贯穿锻造与热处理的追溯，标签需应对高温、油淬及机械搬运。", "查看"),
+      ("钢卷退火标识", "钢卷标识需在退火高温及卷材产线过程中保持可读。", "查看"),
+      ("超高温钢材标识", "面向最极端钢铁工艺温度的材料，按实际热曲线选型。", "查看"),
+      ("陶瓷窑炉过程追踪", "可经受窑炉烧成循环及多次高温暴露的标识。", "查看"),
+      ("坩埚标识", "用于经受极端、反复高温的坩埚与耐火制品标记。", "查看"),
+    ],
+    "fcta_h": "为您的热工艺匹配合适材料",
+    "fcta_body": "向 ETIA 提供表面、峰值温度、持续时间与搬运方式，并申请材料进行测试。",
+    "fcta1": "联系应用选型人员", "fcta2": "申请样品",
+    "meta_title": "金属与陶瓷标签材料｜耐高温钢铁与窑炉标识｜ETIA",
+    "meta_desc": "面向钢铁、铝及陶瓷的耐高温标签与标牌材料：热钢坯/钢卷标识、锻钢热处理、退火、窑炉烧成与坩埚标记。ETIA 提供选型、样品与供应支持。",
+  },
+ },
+
+ # ---- Medical & Laboratory ----
+ "healthcare-life-sciences": {
+  "path": "/industries/healthcare-life-sciences/",
+  "app_urls": [
+    "/industries/healthcare-life-sciences/diagnostics-testing/",
+    "/industries/healthcare-life-sciences/laboratory/",
+    "/industries/healthcare-life-sciences/medical-devices/",
+    "/industries/healthcare-life-sciences/pharmaceutical/",
+    "/industries/healthcare-life-sciences/wearable-devices/",
+  ],
+  "app_imgs": ["", "", "", "", ""],
+  "en": {
+    "eyebrow": "Medical & Laboratory",
+    "h1": "Label Materials for Medical and Laboratory",
+    "hero": "Medical and laboratory identification must stay readable through cold storage, solvents, disinfection, sterilization and skin contact. ETIA supplies specialty label materials and helps match each construction to the surface, chemistry and process.",
+    "apps_h": "Applications We Support",
+    "apps": [
+      ("Diagnostics & Testing", "Labels for diagnostic consumables and test devices that face solvents, moisture and cold storage.", "Explore"),
+      ("Laboratory", "Identification for tubes, vials and slides through cryogenic storage, chemicals and autoclaving.", "Explore"),
+      ("Medical Devices", "Durable device identification and UDI marking that must survive cleaning and the product lifecycle.", "Explore"),
+      ("Pharmaceutical", "Materials for pharmaceutical containers and packaging with clean, reliable adhesion.", "Explore"),
+      ("Wearable Devices", "Skin-contact and device labels balancing adhesion, comfort and durability.", "Explore"),
+    ],
+    "fcta_h": "Match the Right Material to Your Application",
+    "fcta_body": "Tell ETIA the surface, chemistry, temperature and process, and request materials for testing.",
+    "fcta1": "Talk to an Application Specialist", "fcta2": "Request Samples",
+    "meta_title": "Medical & Laboratory Label Materials — Cryogenic, Chemical & Sterilization Resistant | ETIA",
+    "meta_desc": "Specialty label materials for medical and laboratory identification: diagnostics, laboratory cryo/autoclave, medical devices, pharmaceutical and wearables. ETIA supports selection, samples and supply.",
+  },
+  "zh": {
+    "eyebrow": "医疗与实验室",
+    "h1": "面向医疗与实验室的标签材料",
+    "hero": "医疗与实验室标识需要在冷藏、溶剂、消毒、灭菌及皮肤接触环境下保持可读。ETIA 供应特种标签材料，并根据表面、化学环境与工艺匹配合适的材料结构。",
+    "apps_h": "我们支持的应用",
+    "apps": [
+      ("诊断与检测", "用于诊断耗材与检测器件的标签，需应对溶剂、潮湿与冷藏。", "查看"),
+      ("实验室", "试管、样品瓶及载玻片标识，需经受深低温储存、化学品与高压灭菌。", "查看"),
+      ("医疗器械", "耐久的器械标识与 UDI 标记，需经受清洗及产品生命周期。", "查看"),
+      ("制药", "用于药品容器与包装的材料，粘接洁净可靠。", "查看"),
+      ("可穿戴设备", "兼顾粘接、舒适与耐久的皮肤接触及设备标签。", "查看"),
+    ],
+    "fcta_h": "为您的应用匹配合适材料",
+    "fcta_body": "向 ETIA 提供表面、化学环境、温度与工艺，并申请材料进行测试。",
+    "fcta1": "联系应用选型人员", "fcta2": "申请样品",
+    "meta_title": "医疗与实验室标签材料｜耐深低温、耐化学与耐灭菌｜ETIA",
+    "meta_desc": "面向医疗与实验室标识的特种标签材料：诊断检测、实验室深低温/高压灭菌、医疗器械、制药与可穿戴。ETIA 提供选型、样品与供应支持。",
+  },
+ },
+
+ # ---- Automotive & Tire (landing route matches mega-menu; cards link to /industries/automotive/*) ----
+ "automotive-label-materials": {
+  "path": "/industries/automotive-label-materials/",
+  "app_urls": [
+    "/industries/automotive/underhood-powertrain-labels/",
+    "/industries/automotive/parts-marking-nameplate-labels/",
+    "/industries/automotive/vin-security-compliance-labels/",
+    "/industries/automotive/cable-wire-harness-labels/",
+    "/industries/automotive/ev-battery-charging-labels/",
+    "/industries/automotive/paint-masking-overlaminate/",
+  ],
+  "app_imgs": ["", "", "", "", "", ""],
+  "en": {
+    "eyebrow": "Automotive & Tire",
+    "h1": "Label Materials for Automotive and Tire",
+    "hero": "Automotive identification must survive heat, oil, fuel, abrasion and years of service. ETIA supplies specialty label materials for underhood, parts marking, compliance, wiring and EV applications — matched to the real surface and environment.",
+    "apps_h": "Applications We Support",
+    "apps": [
+      ("Underhood & Powertrain Labels", "Identification for high-heat, oil- and chemical-exposed underhood and powertrain areas.", "Explore"),
+      ("Parts Marking & Nameplates", "Durable component identification and nameplates for the product lifecycle.", "Explore"),
+      ("VIN, Security & Compliance", "VIN, security and regulatory-compliance labels with tamper and durability requirements.", "Explore"),
+      ("Cable & Wire Harness Labels", "Wire and harness identification that resists heat, abrasion and handling.", "Explore"),
+      ("EV Battery & Charging Labels", "Identification and warning labels for EV battery, charging and high-voltage areas.", "Explore"),
+      ("Paint Masking & Overlaminate", "Masking and overlaminate materials matched to temperature and removability.", "Explore"),
+    ],
+    "fcta_h": "Match the Right Material to Your Application",
+    "fcta_body": "Tell ETIA the surface, temperature, chemistry and durability need, and request materials for testing.",
+    "fcta1": "Talk to an Application Specialist", "fcta2": "Request Samples",
+    "meta_title": "Automotive & Tire Label Materials — Underhood, VIN, Harness & EV | ETIA",
+    "meta_desc": "Specialty automotive label materials for underhood/powertrain, parts marking, VIN and compliance, wire harness, EV battery and paint masking. ETIA supports selection, samples and supply.",
+  },
+  "zh": {
+    "eyebrow": "汽车与轮胎",
+    "h1": "面向汽车与轮胎的标签材料",
+    "hero": "汽车标识需要经受高温、油污、燃油、磨损及多年使用。ETIA 供应用于发动机舱、零件标记、法规合规、线束及电动车应用的特种标签材料——按真实表面与环境匹配。",
+    "apps_h": "我们支持的应用",
+    "apps": [
+      ("发动机舱与动力总成标签", "用于高温、接触油污及化学品的发动机舱与动力总成区域标识。", "查看"),
+      ("零件标记与铭牌", "面向产品生命周期的耐久零部件标识与铭牌。", "查看"),
+      ("VIN、安全与合规", "满足防拆与耐久要求的 VIN、安全及法规合规标签。", "查看"),
+      ("线缆与线束标签", "耐高温、耐磨、耐搬运的导线与线束标识。", "查看"),
+      ("电池与充电标签", "用于电动车电池、充电及高压区域的标识与警示标签。", "查看"),
+      ("喷漆遮蔽与覆膜", "按温度与可移除性匹配的遮蔽与覆膜材料。", "查看"),
+    ],
+    "fcta_h": "为您的应用匹配合适材料",
+    "fcta_body": "向 ETIA 提供表面、温度、化学环境与耐久需求，并申请材料进行测试。",
+    "fcta1": "联系应用选型人员", "fcta2": "申请样品",
+    "meta_title": "汽车与轮胎标签材料｜发动机舱、VIN、线束与电动车｜ETIA",
+    "meta_desc": "面向发动机舱/动力总成、零件标记、VIN 与合规、线束、电动车电池及喷漆遮蔽的汽车特种标签材料。ETIA 提供选型、样品与供应支持。",
+  },
+ },
+
+ # ---- Wire & Cable ----
+ "wire-cable": {
+  "path": "/industries/wire-cable/",
+  "app_urls": [
+    "/industries/wire-cable/flag-cable-labels/",
+    "/industries/wire-cable/wrap-around-cable-labels/",
+    "/industries/wire-cable/heat-shrink-wire-markers/",
+    "/industries/wire-cable/self-laminating-wire-labels/",
+    "/industries/wire-cable/wire-harness-cable-assemblies/",
+    "/industries/wire-cable/datacom-network-cabling/",
+  ],
+  "app_imgs": ["", "", "", "", "", ""],
+  "en": {
+    "eyebrow": "Wire & Cable",
+    "h1": "Label Materials for Wire and Cable",
+    "hero": "Wire and cable identification must wrap, self-laminate or shrink onto the conductor and stay readable through handling, heat and the installed environment. ETIA supplies specialty label materials matched to the cable diameter, method and environment.",
+    "apps_h": "Applications We Support",
+    "apps": [
+      ("Flag Cable Labels", "Flag-style labels for thin wires where a wrap-around print area is not enough.", "Explore"),
+      ("Wrap-Around Cable Labels", "Self-wrapping labels with a clear over-laminate that protects the printed area.", "Explore"),
+      ("Heat-Shrink Wire Markers", "Heat-shrink markers for permanent, durable conductor identification.", "Explore"),
+      ("Self-Laminating Wire Labels", "Self-laminating labels that seal the print under a protective clear tail.", "Explore"),
+      ("Wire Harness & Cable Assemblies", "Identification for harness and assembly production and downstream service.", "Explore"),
+      ("DataCom & Network Cabling", "Labels for structured cabling, patch and network identification.", "Explore"),
+    ],
+    "fcta_h": "Match the Right Material to Your Cable",
+    "fcta_body": "Tell ETIA the cable diameter, method and environment, and request materials for testing.",
+    "fcta1": "Talk to an Application Specialist", "fcta2": "Request Samples",
+    "meta_title": "Wire & Cable Label Materials — Flag, Wrap-Around, Heat-Shrink & Self-Laminating | ETIA",
+    "meta_desc": "Specialty wire and cable label materials: flag labels, wrap-around, heat-shrink markers, self-laminating, wire harness and datacom cabling. ETIA supports selection, samples and supply.",
+  },
+  "zh": {
+    "eyebrow": "电线与电缆",
+    "h1": "面向电线与电缆的标签材料",
+    "hero": "电线电缆标识需要以缠绕、自覆膜或热缩方式固定在导体上，并在搬运、高温及安装环境中保持可读。ETIA 供应按线径、方式与环境匹配的特种标签材料。",
+    "apps_h": "我们支持的应用",
+    "apps": [
+      ("旗形电缆标签", "用于细线的旗形标签，适合缠绕打印面积不足的场景。", "查看"),
+      ("缠绕式电缆标签", "自缠绕标签，带透明覆膜保护打印区域。", "查看"),
+      ("热缩线标", "热缩标记，实现永久、耐久的导体标识。", "查看"),
+      ("自覆膜线标", "自覆膜标签，用透明保护尾将打印内容封在膜下。", "查看"),
+      ("线束与线缆组件", "面向线束与组件生产及后续维护的标识。", "查看"),
+      ("数据与网络布线", "用于综合布线、跳线及网络标识的标签。", "查看"),
+    ],
+    "fcta_h": "为您的线缆匹配合适材料",
+    "fcta_body": "向 ETIA 提供线径、方式与环境，并申请材料进行测试。",
+    "fcta1": "联系应用选型人员", "fcta2": "申请样品",
+    "meta_title": "电线与电缆标签材料｜旗形、缠绕、热缩与自覆膜｜ETIA",
+    "meta_desc": "特种电线电缆标签材料：旗形标签、缠绕式、热缩标记、自覆膜、线束与数据网络布线。ETIA 提供选型、样品与供应支持。",
+  },
+ },
+
+ # ---- Outdoor & Energy (no layer-2 pages yet — cards route to contact) ----
+ "outdoor-energy": {
+  "path": "/industries/outdoor-energy/",
+  "app_urls": [],
+  "app_imgs": ["", "", "", "", ""],
+  "en": {
+    "eyebrow": "Outdoor & Energy",
+    "h1": "Label Materials for Outdoor and Energy",
+    "hero": "Outdoor and energy identification must survive UV, weather, temperature cycling and years of exposure. ETIA supplies durable, weather-resistant label materials matched to the surface, environment and required service life.",
+    "apps_h": "Applications We Support",
+    "apps": [
+      ("Solar Panel Identification", "Durable labels for solar modules exposed to UV, heat and long outdoor service.", "Contact ETIA"),
+      ("Outdoor Equipment Labels", "Weather-resistant identification for outdoor equipment and enclosures.", "Contact ETIA"),
+      ("Energy Storage Labels", "Identification and warning labels for energy-storage and battery systems.", "Contact ETIA"),
+      ("UV & Weather-Resistant Labels", "Materials selected for long-term UV, moisture and temperature exposure.", "Contact ETIA"),
+      ("Rating & Nameplate Labels", "Durable rating plates and nameplates for outdoor and energy assets.", "Contact ETIA"),
+    ],
+    "fcta_h": "Match the Right Material to Your Environment",
+    "fcta_body": "Tell ETIA the surface, exposure and service-life need, and request materials for testing.",
+    "fcta1": "Talk to an Application Specialist", "fcta2": "Request Samples",
+    "meta_title": "Outdoor & Energy Label Materials — UV, Weather & Long-Life Identification | ETIA",
+    "meta_desc": "Durable, weather-resistant label materials for outdoor and energy: solar module ID, outdoor equipment, energy storage, UV/weather and rating plates. ETIA supports selection, samples and supply.",
+  },
+  "zh": {
+    "eyebrow": "户外与能源",
+    "h1": "面向户外与能源的标签材料",
+    "hero": "户外与能源标识需要经受紫外线、气候、温度循环及多年暴露。ETIA 供应耐久、耐候的标签材料，并按表面、环境与所需使用寿命匹配。",
+    "apps_h": "我们支持的应用",
+    "apps": [
+      ("太阳能组件标识", "用于经受紫外线、高温及长期户外使用的光伏组件耐久标签。", "联系 ETIA"),
+      ("户外设备标签", "用于户外设备与机箱的耐候标识。", "联系 ETIA"),
+      ("储能标签", "用于储能与电池系统的标识与警示标签。", "联系 ETIA"),
+      ("耐紫外与耐候标签", "针对长期紫外线、潮湿与温度暴露选型的材料。", "联系 ETIA"),
+      ("铭牌与规格标签", "用于户外与能源资产的耐久规格牌与铭牌。", "联系 ETIA"),
+    ],
+    "fcta_h": "为您的环境匹配合适材料",
+    "fcta_body": "向 ETIA 提供表面、暴露条件与使用寿命需求，并申请材料进行测试。",
+    "fcta1": "联系应用选型人员", "fcta2": "申请样品",
+    "meta_title": "户外与能源标签材料｜耐紫外、耐候与长寿命标识｜ETIA",
+    "meta_desc": "面向户外与能源的耐久耐候标签材料：光伏组件标识、户外设备、储能、耐紫外/耐候与规格铭牌。ETIA 提供选型、样品与供应支持。",
+  },
+ },
 }
 
 
-def cards_grid(items):
-    return '<div class="grid">%s</div>' % "".join(
-        '<div class="card"><h3>%s</h3><p>%s</p></div>' % (esc(t), esc(dsc)) for t, dsc in items)
-
 def build_landing(lang, slug):
+    """CLEAN layer-1 (hoenle model): the hero (general intro, rendered by page())
+    + applications one-by-one as image+text cards + CTA. Only these fields are needed
+    per language: eyebrow, h1, hero, apps_h, apps[(title,desc,cta)], fcta_h, fcta_body,
+    fcta1, fcta2, meta_title, meta_desc. Optional richer brochure fields are ignored."""
     d = LANDINGS[slug][lang]
     path = LANDINGS[slug]["path"]
     contact = L(lang, "/contact/")
     def sec(bg, inner):
         st = ' style="background:%s"' % bg if bg else ""
         return '<section class="blk"%s><div class="wrap">%s</div></section>' % (st, inner)
-
-    top = ('<div class="btns" style="margin-bottom:22px"><a class="btn pri" href="%s">%s</a>'
-           '<a class="btn sec" href="%s">%s</a></div>'
-           '<h2>%s</h2>%s') % (
-        contact, esc(d["cta1"]), contact, esc(d["cta2"]),
-        esc(d["intro_h"]), "".join('<p style="color:var(--mut);max-width:60em;margin-bottom:12px">%s</p>' % esc(p) for p in d["intro"]))
-
-    challenges = '<h2>%s</h2>%s' % (esc(d["challenges_h"]), cards_grid(d["challenges"]))
-    offers = '<h2>%s</h2>%s' % (esc(d["offers_h"]), cards_grid(d["offers"]))
 
     app_urls = LANDINGS[slug].get("app_urls", [])
     app_imgs = LANDINGS[slug].get("app_imgs", [])
@@ -282,29 +521,11 @@ def build_landing(lang, slug):
         for i, (t, dsc, cta_) in enumerate(d["apps"]))
     apps = '<h2>%s</h2><div class="grid grid3">%s</div>' % (esc(d["apps_h"]), app_cards)
 
-    dir_cards = "".join(
-        '<div class="card"><h3>%s</h3><p>%s</p><div style="margin-top:14px"><a class="btn sec" href="%s">%s →</a></div></div>'
-        % (esc(t), esc(dsc), contact, esc(cta_)) for t, dsc, cta_ in d["dir"])
-    directions = '<h2>%s</h2><div class="two">%s</div>' % (esc(d["dir_h"]), dir_cards)
-
-    step_cards = "".join(
-        '<div class="card"><h3><span style="color:var(--green-d)">%s</span> &nbsp;%s</h3><p>%s</p></div>'
-        % (esc(n), esc(t), esc(dsc)) for n, t, dsc in d["steps"])
-    steps = '<h2>%s</h2><div class="grid">%s</div>' % (esc(d["steps_h"]), step_cards)
-
-    why = '<h2>%s</h2><ul class="checks">%s</ul>' % (
-        esc(d["why_h"]), "".join('<li>%s</li>' % esc(x) for x in d["why"]))
-    close = '<h2>%s</h2><p style="color:var(--mut);max-width:60em">%s</p>' % (esc(d["close_h"]), esc(d["close"]))
-
     final = ('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
              '<div class="btns"><a class="btn pri" href="%s">%s</a>'
              '<a class="btn on-dark" href="%s">%s</a></div></div></div>') % (
         esc(d["fcta_h"]), esc(d["fcta_body"]), contact, esc(d["fcta1"]), contact, esc(d["fcta2"]))
 
-    # CLEAN layer-1 (hoenle model): short general intro (the hero, rendered by page())
-    # + applications one-by-one as image+text cards + CTA. The brochure blocks
-    # (top/challenges/offers/directions/steps/why/close) stay computed above for future
-    # use but are intentionally NOT rendered — user wants intro + application cards only.
     body = sec("", apps) + final
 
     crumb = [(("首页" if lang == "zh" else "Home"), "/"),
