@@ -900,14 +900,12 @@ def build_home(lang):
 <div style="margin-top:20px"><a class="btn sec" href="%s">%s →</a></div></div></section>
 %s
 %s
-%s
 %s""" % (
         esc(T["hero_eyebrow"]),esc(T["hero_h1"]),esc(T["hero_line"]),esc(T["hero_para"]),esc(T["hero_b1"]),home_hlink(lang,"/contact/"),esc(T["hero_b2"]),
         trust_html,
         esc(T["why_eyebrow"]),esc(T["why_head"]),esc(T["why_intro"]),why_html,why_close,
         esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_grid,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]),
         prod_section,
-        fs_section,
         sc_section,
         final_cta)
     canonical=SITE+HL_PREFIX[lang]+path
