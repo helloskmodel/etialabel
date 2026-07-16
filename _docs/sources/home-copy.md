@@ -276,3 +276,15 @@ Card titles are final:
 - 我们深耕特种材料 — 凭借长期材料经验，整合全球高性能特种标签材料。
 - 我们灵活供应 — 支持多种材料、多种规格、小批量及长期稳定供货。
 - 我们定制解决方案 — 围绕实际应用提供测试、检验、分切、模切及定制加工。
+
+---
+
+# REVISION 5 — Products reduced to 5 (name + spec) + Free Sample form
+Product cards (title / spec) — one row of 5:
+1 Direct Hot-Application Labels / 高温直贴标签 — up to 900°C / 应用温度可达 900℃
+2 Cryogenic / LN₂ Storage Labels / 液氮存储低温标签 — −80°C direct · −196°C storage
+3 Polyimide PCB Labels — APEX / 聚酰亚胺 PCB 标签 · APEX 新一代 — up to 300°C
+4 Heavy-Duty Oil-Resistant Labels / 超粘防油污标签 — high-adhesion, oil-resistant
+5 Dual-Layer ESD-Safe PCB Labels / 双层抗静电 PCB 标签 — ESD-safe construction
+Section title changed from "Most Popular" (ad-law) -> "Request Product Samples / 欢迎申请样品".
+FREE SAMPLE block: form (email / phone / mailing address) -> mailto label@etia-tech.com (static-site lead capture).

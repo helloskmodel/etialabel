@@ -127,30 +127,34 @@
     "prod_cta": "Request Sample",
     "products": [
       {
-        "name": "Ultra-High-Temperature Direct Apply",
-        "model": "ETIA HP Series"
+        "name": "Direct Hot-Application Labels",
+        "model": "Application temperature up to 900°C"
       },
       {
-        "name": "Direct Apply for Cryogenic Storage",
-        "model": "ETIA Cryogenic Series"
+        "name": "Cryogenic / LN₂ Storage Labels",
+        "model": "Direct apply −80°C · storage to −196°C"
       },
       {
-        "name": "High-Temperature PCB Polyimide",
-        "model": "POLYONICS / APEX Series"
+        "name": "Polyimide PCB Labels — APEX",
+        "model": "Heat resistant up to 300°C"
       },
       {
-        "name": "High Adhesion for Oily Surfaces",
-        "model": "ETIA High-Adhesion Series"
+        "name": "Heavy-Duty Oil-Resistant Labels",
+        "model": "High-adhesion, oil-resistant"
       },
       {
-        "name": "Chemical-Resistant Slide Identification",
-        "model": "ETIA Laboratory Series"
-      },
-      {
-        "name": "Dual-Layer ESD-Safe Identification",
-        "model": "ETIA / Selected Specialty Materials"
+        "name": "Dual-Layer ESD-Safe PCB Labels",
+        "model": "ESD-safe construction"
       }
-    ]
+    ],
+    "fs_eyebrow": "FREE SAMPLE",
+    "fs_title": "Request Free Samples",
+    "fs_sub": "Leave your email, phone and mailing address — we'll send samples to you.",
+    "fs_email": "Email",
+    "fs_phone": "Phone",
+    "fs_addr": "Mailing address",
+    "fs_btn": "Request Free Sample",
+    "fs_note": "We reply within one business day."
   },
   "zh": {
     "nav": [
@@ -254,30 +258,34 @@
     "prod_cta": "申请样品",
     "products": [
       {
-        "name": "超高温直贴标识",
-        "model": "ETIA HP Series"
+        "name": "高温直贴标签",
+        "model": "应用温度可达 900℃"
       },
       {
-        "name": "深低温直接贴标与液氮存储",
-        "model": "ETIA Cryogenic Series"
+        "name": "液氮存储低温标签",
+        "model": "−80℃ 直贴 · −196℃ 长存"
       },
       {
-        "name": "现代 PCB 耐高温聚酰亚胺标签",
-        "model": "POLYONICS / APEX Series"
+        "name": "聚酰亚胺 PCB 标签 · APEX 新一代",
+        "model": "耐温可达 300℃"
       },
       {
-        "name": "油污表面超粘标签",
-        "model": "ETIA High-Adhesion Series"
+        "name": "超粘防油污标签",
+        "model": "强力粘接 · 耐油污"
       },
       {
-        "name": "耐化学载玻片标签",
-        "model": "ETIA Laboratory Series"
-      },
-      {
-        "name": "双层抗静电标签",
-        "model": "ETIA / Selected Specialty Materials"
+        "name": "双层抗静电 PCB 标签",
+        "model": "抗静电结构"
       }
-    ]
+    ],
+    "fs_eyebrow": "免费样品",
+    "fs_title": "申请免费样品",
+    "fs_sub": "留下您的邮箱、电话与邮寄地址，我们为您寄送样品。",
+    "fs_email": "邮箱",
+    "fs_phone": "电话",
+    "fs_addr": "邮寄地址",
+    "fs_btn": "申请免费样品",
+    "fs_note": "我们将在一个工作日内回复。"
   },
   "vi": {
     "nav": [
@@ -381,30 +389,34 @@
     "prod_cta": "Request Sample",
     "products": [
       {
-        "name": "Ultra-High-Temperature Direct Apply",
-        "model": "ETIA HP Series"
+        "name": "Direct Hot-Application Labels",
+        "model": "Application temperature up to 900°C"
       },
       {
-        "name": "Direct Apply for Cryogenic Storage",
-        "model": "ETIA Cryogenic Series"
+        "name": "Cryogenic / LN₂ Storage Labels",
+        "model": "Direct apply −80°C · storage to −196°C"
       },
       {
-        "name": "High-Temperature PCB Polyimide",
-        "model": "POLYONICS / APEX Series"
+        "name": "Polyimide PCB Labels — APEX",
+        "model": "Heat resistant up to 300°C"
       },
       {
-        "name": "High Adhesion for Oily Surfaces",
-        "model": "ETIA High-Adhesion Series"
+        "name": "Heavy-Duty Oil-Resistant Labels",
+        "model": "High-adhesion, oil-resistant"
       },
       {
-        "name": "Chemical-Resistant Slide Identification",
-        "model": "ETIA Laboratory Series"
-      },
-      {
-        "name": "Dual-Layer ESD-Safe Identification",
-        "model": "ETIA / Selected Specialty Materials"
+        "name": "Dual-Layer ESD-Safe PCB Labels",
+        "model": "ESD-safe construction"
       }
-    ]
+    ],
+    "fs_eyebrow": "FREE SAMPLE",
+    "fs_title": "Request Free Samples",
+    "fs_sub": "Leave your email, phone and mailing address — we'll send samples to you.",
+    "fs_email": "Email",
+    "fs_phone": "Phone",
+    "fs_addr": "Mailing address",
+    "fs_btn": "Request Free Sample",
+    "fs_note": "We reply within one business day."
   },
   "th": {
     "nav": [
@@ -508,29 +520,33 @@
     "prod_cta": "Request Sample",
     "products": [
       {
-        "name": "Ultra-High-Temperature Direct Apply",
-        "model": "ETIA HP Series"
+        "name": "Direct Hot-Application Labels",
+        "model": "Application temperature up to 900°C"
       },
       {
-        "name": "Direct Apply for Cryogenic Storage",
-        "model": "ETIA Cryogenic Series"
+        "name": "Cryogenic / LN₂ Storage Labels",
+        "model": "Direct apply −80°C · storage to −196°C"
       },
       {
-        "name": "High-Temperature PCB Polyimide",
-        "model": "POLYONICS / APEX Series"
+        "name": "Polyimide PCB Labels — APEX",
+        "model": "Heat resistant up to 300°C"
       },
       {
-        "name": "High Adhesion for Oily Surfaces",
-        "model": "ETIA High-Adhesion Series"
+        "name": "Heavy-Duty Oil-Resistant Labels",
+        "model": "High-adhesion, oil-resistant"
       },
       {
-        "name": "Chemical-Resistant Slide Identification",
-        "model": "ETIA Laboratory Series"
-      },
-      {
-        "name": "Dual-Layer ESD-Safe Identification",
-        "model": "ETIA / Selected Specialty Materials"
+        "name": "Dual-Layer ESD-Safe PCB Labels",
+        "model": "ESD-safe construction"
       }
-    ]
+    ],
+    "fs_eyebrow": "FREE SAMPLE",
+    "fs_title": "Request Free Samples",
+    "fs_sub": "Leave your email, phone and mailing address — we'll send samples to you.",
+    "fs_email": "Email",
+    "fs_phone": "Phone",
+    "fs_addr": "Mailing address",
+    "fs_btn": "Request Free Sample",
+    "fs_note": "We reply within one business day."
   }
 }

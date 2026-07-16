@@ -194,6 +194,17 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .whyclose{text-align:center;font-family:var(--serif);font-weight:600;color:var(--blue-deep);font-size:18px;letter-spacing:.02em;margin-top:26px}
 /* explore-by-application: six cards (image top / copy below) */
 .acgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.acgrid.acgrid5{grid-template-columns:repeat(5,1fr)}
+.freesample{background:linear-gradient(150deg,var(--blue),var(--blue-deep))}
+.fsbox{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.fsbox h2{color:#fff;font-size:26px}
+.fsbox .fssub{color:#d3ddf3;font-size:15px;max-width:26em;margin-top:8px}
+.fsbox .fsnote{color:#8fe063;font-size:12.5px;font-weight:700;margin-top:12px}
+.fsform{display:grid;gap:10px}
+.fsform input{width:100%;padding:13px 15px;border-radius:10px;border:1px solid #ffffff33;background:#ffffff14;color:#fff;font-size:14.5px;font-family:inherit}
+.fsform input::placeholder{color:#c3d0ea}
+.fsform input:focus{outline:none;border-color:#8fe063;background:#ffffff1f}
+.fsform .btn.pri{width:100%;text-align:center;margin-top:4px;border:none;cursor:pointer;font-family:inherit}
 .acard{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fff;color:var(--ink);transition:transform .18s,box-shadow .18s,border-color .18s}
 .acard:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(20,40,90,.14);border-color:var(--blue);text-decoration:none}
 .acard-img{position:relative;aspect-ratio:16/11;display:flex;align-items:center;justify-content:center;overflow:hidden}
@@ -245,6 +256,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .hero h1{font-size:32px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}
 .split{grid-template-columns:1fr;gap:22px}.split .imgframe{order:-1}.split .txt h2{font-size:25px}
 .acgrid{grid-template-columns:1fr 1fr;gap:10px}
+.fsbox{grid-template-columns:1fr;gap:20px}
 .aslide{grid-template-columns:1fr;min-height:0}.aimg{min-height:190px}.aimg .aicon svg{width:60px;height:60px}.acopy{padding:26px 24px}.acopy h3{font-size:22px}.acar-nav{display:none}
 .cslide .cap h3{font-size:20px}}
 """
@@ -832,8 +844,22 @@ def build_home(lang):
             esc(pr["name"]), esc(pr["model"]), esc(T.get("prod_cta","Request Sample")))
     prod_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
                   '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
-                  '<div class="acgrid">%s</div></div></section>')%(
+                  '<div class="acgrid acgrid5">%s</div></div></section>')%(
         esc(T.get("prod_eyebrow","")),esc(T.get("prod_title","")),esc(T.get("prod_sub","")),pcards) if pcards else ""
+    # Free Sample — lead capture (email / phone / address) -> mailto
+    fs_section=('<section class="blk freesample"><div class="wrap"><div class="fsbox">'
+                '<div class="fsL"><div class="eyebrow" style="color:#8fe063">%s</div>'
+                '<h2 style="color:#fff">%s</h2><p class="fssub">%s</p><div class="fsnote">%s</div></div>'
+                '<form class="fsform" onsubmit="return etaSample(event)">'
+                '<input id="fs-email" type="email" required placeholder="%s">'
+                '<input id="fs-phone" type="tel" placeholder="%s">'
+                '<input id="fs-addr" type="text" placeholder="%s">'
+                '<button class="btn pri" type="submit">%s</button></form>'
+                '</div></div></section>')%(
+        esc(T.get("fs_eyebrow","FREE SAMPLE")),esc(T.get("fs_title","Request Free Samples")),
+        esc(T.get("fs_sub","")),esc(T.get("fs_note","")),
+        esc(T.get("fs_email","Email")),esc(T.get("fs_phone","Phone")),
+        esc(T.get("fs_addr","Mailing address")),esc(T.get("fs_btn","Request Free Sample")))
     final_cta=('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
                '<div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn on-dark" href="%s">%s</a></div></div></div>')%(
         esc(T["fcta_title"]),esc(T["fcta_para"]),home_hlink(lang,"/contact/"),esc(T["fcta_b1"]),home_hlink(lang,"/contact/"),esc(T["fcta_b2"]))
@@ -848,12 +874,14 @@ def build_home(lang):
 <section class="blk" id="applications" style="background:var(--tint-blue)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>%s
 <div style="margin-top:20px"><a class="btn sec" href="%s">%s →</a></div></div></section>
 %s
+%s
 %s""" % (
         esc(T["hero_eyebrow"]),esc(T["hero_h1"]),esc(T["hero_line"]),esc(T["hero_para"]),esc(T["hero_b1"]),home_hlink(lang,"/contact/"),esc(T["hero_b2"]),
         svc_html,
         esc(T["why_eyebrow"]),esc(T["why_head"]),esc(T["why_intro"]),why_html,why_close,
         esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_grid,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]),
         prod_section,
+        fs_section,
         final_cta)
     canonical=SITE+HL_PREFIX[lang]+path
     schema_js='<script type="application/ld+json">%s</script>'%json.dumps(ORG_JSONLD,ensure_ascii=False)
@@ -867,7 +895,10 @@ def build_home(lang):
 <header><div class="wrap"><a class="logo" href="%s"><img src="https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/IMAGE/logo/ETIALOGO.jpg" alt="ETIA Label"></a>%s</div></header>
 %s
 %s
-<script>function etaSlide(d){var c=document.getElementById('acar');if(c)c.scrollBy({left:d*c.clientWidth,behavior:'smooth'});}</script>
+<script>function etaSlide(d){var c=document.getElementById('acar');if(c)c.scrollBy({left:d*c.clientWidth,behavior:'smooth'});}
+function etaSample(e){e.preventDefault();var g=function(i){var el=document.getElementById(i);return el?el.value:'';};
+var b='Email: '+g('fs-email')+'%%0D%%0APhone: '+g('fs-phone')+'%%0D%%0AAddress: '+g('fs-addr')+'%%0D%%0A%%0D%%0APlease send free samples.';
+window.location.href='mailto:label@etia-tech.com?subject=Free%%20Sample%%20Request&body='+b;return false;}</script>
 </body></html>""" % (lang,esc(T["meta_title"]),esc(T["meta_desc"]),canonical,home_hreflang(path),esc(T["meta_title"]),CSS,schema_js,
         ("/" if lang=="en" else HL_PREFIX[lang]+"/"),home_nav(lang),body,home_footer(lang))
     outdir=os.path.join(ROOT,HL_PREFIX[lang].strip("/")) if HL_PREFIX[lang] else ROOT
