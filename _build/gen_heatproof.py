@@ -57,6 +57,7 @@ img{max-width:100%}
 header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:40}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
 .logo{display:flex;align-items:center;font-weight:800;font-size:22px}
+.logo img{height:40px;width:auto;display:block}
 .logo .ar{color:var(--green);margin-right:2px}.logo .grn{color:var(--green)}.logo .blu{color:var(--blue-deep)}
 nav{display:flex;align-items:center;gap:26px}
 nav a{font-size:14.5px;font-weight:600;color:var(--ink);white-space:nowrap}
@@ -111,6 +112,7 @@ ul.checks li::before{content:"→";position:absolute;left:0;color:var(--blue);fo
 .btn.on-dark{border:1.5px solid #ffffff66;color:#fff}.btn.on-dark:hover{background:#fff;color:var(--blue-deep);text-decoration:none}
 footer{background:#f3f5f8;color:var(--mut);padding:48px 0 26px;font-size:14px;border-top:1px solid var(--line);margin-top:20px}
 footer .flogo{font-weight:800;font-size:21px;margin-bottom:22px}
+footer .flogo img{height:34px;width:auto;display:block}
 footer .fg{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:26px}
 footer h5{color:var(--blue);font-size:14px;font-weight:700;margin-bottom:12px}
 footer ul{list-style:none;display:flex;flex-direction:column;gap:8px}
@@ -260,7 +262,7 @@ def footer_html(lang):
     legal = "".join('<li><a href="%s">%s</a></li>' % (L(lang, p), t) for t, p in
                     [("Privacy Policy","/privacy/"),("Cookie Policy","/cookies/"),("Terms of Use","/terms/")])
     return """<footer><div class="wrap">
-<div class="flogo"><span class="ar">◄</span><span class="grn">ETIA</span><span class="blu">·LABEL</span></div>
+<div class="flogo"><img src="https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/IMAGE/logo/ETIALOGO.jpg" alt="ETIA Label"></div>
 <div class="fg">
 <div><h5>Navigation</h5><ul>%s</ul></div>
 <div><h5>Legal</h5><ul>%s</ul></div>
@@ -293,7 +295,7 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 <meta property="og:title" content="%s"><meta property="og:type" content="website"><meta property="og:site_name" content="ETIA Label">
 <style>%s</style>%s</head><body>
 <div class="topstrip"></div>
-<header><div class="wrap"><a class="logo" href="%s"><span class="ar">◄</span><span class="grn">ETIA</span><span class="blu">·LABEL</span></a>%s</div></header>
+<header><div class="wrap"><a class="logo" href="%s"><img src="https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/IMAGE/logo/ETIALOGO.jpg" alt="ETIA Label"></a>%s</div></header>
 <div class="wrap"><div class="crumb">%s</div></div>
 <div class="wrap"><div class="pagehead"><h1>%s</h1>%s</div></div>
 %s
@@ -764,7 +766,7 @@ def home_footer(lang):
                  zip(["/products/","/industries/","/technical-resources/","/about/"],T["nav"][:4]))
     legal="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,p),t) for p,t in
                   [("/privacy/","Privacy Policy"),("/cookies/","Cookie Policy"),("/terms/","Terms of Use")])
-    return ('<footer><div class="wrap"><div class="flogo"><span class="ar">◄</span><span class="grn">ETIA</span><span class="blu">·LABEL</span></div>'
+    return ('<footer><div class="wrap"><div class="flogo"><img src="https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/IMAGE/logo/ETIALOGO.jpg" alt="ETIA Label"></div>'
             '<div class="fg"><div><h5>%s</h5><ul>%s</ul></div><div><h5>%s</h5><ul>%s</ul></div>'
             '<div><h5>%s</h5><a class="email" href="mailto:label@etia-tech.com">label@etia-tech.com</a><br><br>'
             'Shanghai · Hong Kong · Bangkok · Bac Ninh</div></div>'
@@ -831,7 +833,7 @@ def build_home(lang):
 <meta property="og:title" content="%s"><meta property="og:type" content="website"><meta property="og:site_name" content="ETIA Label">
 <style>%s</style>%s</head><body>
 <div class="topstrip"></div>
-<header><div class="wrap"><a class="logo" href="%s"><span class="ar">◄</span><span class="grn">ETIA</span><span class="blu">·LABEL</span></a>%s</div></header>
+<header><div class="wrap"><a class="logo" href="%s"><img src="https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/IMAGE/logo/ETIALOGO.jpg" alt="ETIA Label"></a>%s</div></header>
 %s
 %s
 <script>function etaSlide(d){var c=document.getElementById('acar');if(c)c.scrollBy({left:d*c.clientWidth,behavior:'smooth'});}</script>
