@@ -624,6 +624,7 @@ BY_ENV = [
     ("ESD-Safe Labels", "抗静电标签"),
     ("Laser-Markable Labels", "激光打标标签"),
     ("Abrasion-Resistant Labels", "耐磨标签"),
+    ("Low-Temp Labels", "低温标签"),
     ("Cryogenic Labels", "深低温标签"),
     ("Moisture-Resistant Labels", "耐潮湿标签"),
     ("Chemical-Resistant Labels", "耐化学标签"),

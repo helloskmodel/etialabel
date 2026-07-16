@@ -27,6 +27,7 @@ These match the site navigation & browse pages exactly.
 | esd-safe | ESD-Safe | 抗静电 |
 | laser-markable | Laser-Markable | 激光打标 |
 | abrasion-resistant | Abrasion-Resistant | 耐磨 |
+| low-temp | Low-Temp | 低温 |
 | cryogenic | Cryogenic | 深低温 |
 | moisture-resistant | Moisture-Resistant | 耐潮湿 |
 | chemical-resistant | Chemical-Resistant | 耐化学 |

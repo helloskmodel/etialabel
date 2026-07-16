@@ -392,6 +392,7 @@ PROD_AXES = [
    ("ESD-Safe","抗静电","/products/by-environment/"),
    ("Laser-Markable","激光打标","/products/by-environment/"),
    ("Abrasion-Resistant","耐磨","/products/by-environment/"),
+   ("Low-Temp","低温","/products/by-environment/"),
    ("Cryogenic","深低温","/products/by-environment/"),
    ("Moisture-Resistant","耐潮湿","/products/by-environment/"),
    ("Chemical-Resistant","耐化学","/products/by-environment/"),
