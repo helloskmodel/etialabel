@@ -11,6 +11,14 @@ URLS = []
 LANDINGS = {
  "electronics-pcb": {
   "path": "/industries/electronics-pcb/",
+  "app_urls": [
+    "/industries/electronics-pcb/reflow-polyimide-labels/",
+    "/industries/electronics-pcb/non-reflow-polyimide-labels/",
+    "/industries/electronics-pcb/post-process-labels/",
+    "/industries/electronics-pcb/auto-dispense-labels/",
+    "/industries/electronics-pcb/masking-dots-inspection-arrows/",
+    "/industries/electronics-pcb/laser-markable-labels/",
+  ],
   "en": {
     "eyebrow": "Electronics & PCB",
     "h1": "Label Materials for Electronics and PCB Manufacturing",
@@ -172,9 +180,11 @@ def build_landing(lang, slug):
     challenges = '<h2>%s</h2>%s' % (esc(d["challenges_h"]), cards_grid(d["challenges"]))
     offers = '<h2>%s</h2>%s' % (esc(d["offers_h"]), cards_grid(d["offers"]))
 
+    app_urls = LANDINGS[slug].get("app_urls", [])
     app_cards = "".join(
         '<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="go" style="color:var(--blue);font-weight:700;font-size:13.5px;margin-top:12px">%s →</div></a>'
-        % (contact, esc(t), esc(dsc), esc(cta_)) for t, dsc, cta_ in d["apps"])
+        % (L(lang, app_urls[i]) if i < len(app_urls) else contact, esc(t), esc(dsc), esc(cta_))
+        for i, (t, dsc, cta_) in enumerate(d["apps"]))
     apps = '<h2>%s</h2><div class="grid">%s</div>' % (esc(d["apps_h"]), app_cards)
 
     dir_cards = "".join(
