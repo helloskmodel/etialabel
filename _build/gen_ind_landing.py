@@ -216,7 +216,9 @@ def build_landing(lang, slug):
             + sec("", close)
             + final)
 
-    crumb = [("Home", "/"), ("Applications", "/industries/"), (d["eyebrow"], path)]
+    crumb = [(("首页" if lang == "zh" else "Home"), "/"),
+             (("行业" if lang == "zh" else "Industries"), "/industries/"),
+             (d["eyebrow"], path)]
     write(lang, path, page(lang, path, d["meta_title"], d["meta_desc"],
                            d["h1"], d["hero"], body, crumb, active="industries"))
     if lang == "en":
