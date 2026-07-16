@@ -135,7 +135,9 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .why .ic svg{width:24px;height:24px}
 .why .txt{flex:1;min-width:0}
 .why .n{font-family:var(--serif);font-size:15px;color:var(--faint)}
-.why b{display:block;font-family:var(--serif);font-size:19px;color:var(--blue-deep);margin:0 0 2px}
+.why b{display:block;font-weight:700;font-size:17px;color:var(--blue-deep);margin:0 0 7px}
+.why .wlead{font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.4;margin-bottom:7px}
+.why .wexp{font-size:13px;color:var(--mut);line-height:1.5}
 .why .sub{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--green-d);margin-bottom:8px}
 .why p{font-size:14px;color:var(--mut)}
 .brandwall{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
@@ -801,8 +803,8 @@ def build_home(lang):
     path="/"
     T=HOME_I18N[lang]
     # Why ETIA pillars — icon + "We…" heading + up to two short lines
-    why_html="".join('<div class="why"><div class="ic">%s</div><div class="txt"><b>%s</b><p>%s</p></div></div>'%(
-        WHY_ICONS[k%len(WHY_ICONS)],esc(head),esc(text)) for k,(head,text) in enumerate(T["why"]))
+    why_html="".join('<div class="why"><div class="ic">%s</div><div class="txt"><b>%s</b><p class="wlead">%s</p><p class="wexp">%s</p></div></div>'%(
+        WHY_ICONS[k%len(WHY_ICONS)],esc(head),esc(lead),esc(exp)) for k,(head,lead,exp) in enumerate(T["why"]))
     why_close=('<p class="whyclose">%s</p>'%esc(T["why_close"])) if T.get("why_close") else ""
     # Explore by Application — six cards (image on top, copy below; all six visible, animate on hover)
     cards=""

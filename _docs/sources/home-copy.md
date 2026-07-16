@@ -224,3 +224,28 @@ Tags: 抗紫外线 · 耐候 · 长期耐久
 4. High Adhesion for Oily Surfaces / 油污表面超粘标签 — ETIA High-Adhesion Series
 5. Chemical-Resistant Slide Identification / 耐化学载玻片标签 — ETIA Laboratory Series
 6. Dual-Layer ESD-Safe Identification / 双层抗静电标签 — ETIA / Selected Specialty Materials
+
+---
+
+# REVISION 2 — WHY ETIA final copy (3-part: heading · bold lead · ≤2-line explanation)
+
+Card format: small heading + bold lead sentence (main copy) + explanation within two lines.
+Logic: 理解应用 → 匹配材料 → 开发方案 → 稳定交付.
+
+**We Understand** — We begin with the application, not the product catalog.
+_We study the surface, process, temperature, chemical exposure, printing method, and product lifecycle before recommending a material._
+**We Match** — We connect specialized materials with real operating conditions.
+_By combining global specialty brands with deep material knowledge, we identify the construction best suited to each application._
+**We Engineer** — We develop solutions beyond standard material portfolios.
+_Our flexible constructions and in-house development support specialized, multi-variant, and smaller-batch requirements._
+**We Deliver** — We support the complete path from evaluation to repeat supply.
+_From samples and application testing to slitting, die-cutting, production introduction, and long-term supply, we stay involved._
+
+我们理解 — 我们从应用出发，而不是从产品目录出发。
+_在推荐材料之前，我们会综合分析表面、工艺、温度、化学环境、打印方式与产品生命周期。_
+我们匹配 — 我们让专业材料适配真实工况。
+_依托全球特种材料品牌与深入的材料经验，为每一种应用匹配更适合的材料结构。_
+我们开发 — 我们为标准材料体系之外的需求开发方案。
+_通过灵活的材料结构与自有研发，支持专业化、多品种及小批量需求。_
+我们交付 — 我们贯穿从评估验证到持续供应的完整过程。
+_从样品与应用测试，到分切、模切、量产导入及长期供应，ETIA 持续参与。_
