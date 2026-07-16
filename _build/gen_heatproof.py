@@ -859,10 +859,11 @@ def build_home(lang):
     pcards=""
     for k,pr in enumerate(T.get("products",[])):
         gi=PROD_ICON[k%len(PROD_ICON)]
-        pcards+=('<a class="acard pcard" href="%s"><div class="acard-img g%d"><span class="aicon">%s</span></div>'
+        pimg=('<img src="%s" alt="%s" loading="lazy">'%(esc(pr["img"]),esc(pr["name"]))) if pr.get("img") else ""
+        pcards+=('<a class="acard pcard" href="%s"><div class="acard-img g%d">%s<span class="aicon">%s</span></div>'
                  '<div class="acard-body"><h3>%s</h3><div class="pmodel">%s</div><div class="pcode">%s</div>'
                  '<div class="acard-go">%s →</div></div></a>')%(
-            home_hlink(lang,"/contact/"), gi, INDUSTRY_ICONS[gi%len(INDUSTRY_ICONS)],
+            home_hlink(lang,"/contact/"), gi, pimg, INDUSTRY_ICONS[gi%len(INDUSTRY_ICONS)],
             esc(pr["name"]), esc(pr["model"]), esc(pr.get("code","")), esc(T.get("prod_cta","Request Sample")))
     prod_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
                   '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'

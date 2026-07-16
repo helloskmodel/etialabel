@@ -146,27 +146,32 @@
       {
         "name": "Direct Hot-Application Labels",
         "model": "Application temperature up to 900°C",
-        "code": "HP-900"
+        "code": "HP-900",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900"
       },
       {
         "name": "Cryogenic / LN₂ Storage Labels",
         "model": "Direct apply −80°C · storage to −196°C",
-        "code": "E-4812"
+        "code": "E-4812",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E4812"
       },
       {
         "name": "Polyimide PCB Labels — APEX",
         "model": "Heat resistant up to 300°C",
-        "code": "XF-101G"
+        "code": "XF-101G",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF101G"
       },
       {
         "name": "Heavy-Duty Oil-Resistant Labels",
         "model": "High-adhesion, oil-resistant",
-        "code": "E-2813"
+        "code": "E-2813",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2813"
       },
       {
         "name": "Dual-Layer ESD-Safe PCB Labels",
         "model": "ESD-safe construction",
-        "code": "E-2712"
+        "code": "E-2712",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2712"
       }
     ],
     "fs_eyebrow": "FREE SAMPLE",
@@ -301,27 +306,32 @@
       {
         "name": "高温直贴标签",
         "model": "应用温度可达 900℃",
-        "code": "HP-900"
+        "code": "HP-900",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900"
       },
       {
         "name": "液氮存储低温标签",
         "model": "−80℃ 直贴 · −196℃ 长存",
-        "code": "E-4812"
+        "code": "E-4812",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E4812"
       },
       {
         "name": "聚酰亚胺 PCB 标签 · APEX 新一代",
         "model": "耐温可达 300℃",
-        "code": "XF-101G"
+        "code": "XF-101G",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF101G"
       },
       {
         "name": "超粘防油污标签",
         "model": "强力粘接 · 耐油污",
-        "code": "E-2813"
+        "code": "E-2813",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2813"
       },
       {
         "name": "双层抗静电 PCB 标签",
         "model": "抗静电结构",
-        "code": "E-2712"
+        "code": "E-2712",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2712"
       }
     ],
     "fs_eyebrow": "免费样品",
@@ -456,27 +466,32 @@
       {
         "name": "Direct Hot-Application Labels",
         "model": "Application temperature up to 900°C",
-        "code": "HP-900"
+        "code": "HP-900",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900"
       },
       {
         "name": "Cryogenic / LN₂ Storage Labels",
         "model": "Direct apply −80°C · storage to −196°C",
-        "code": "E-4812"
+        "code": "E-4812",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E4812"
       },
       {
         "name": "Polyimide PCB Labels — APEX",
         "model": "Heat resistant up to 300°C",
-        "code": "XF-101G"
+        "code": "XF-101G",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF101G"
       },
       {
         "name": "Heavy-Duty Oil-Resistant Labels",
         "model": "High-adhesion, oil-resistant",
-        "code": "E-2813"
+        "code": "E-2813",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2813"
       },
       {
         "name": "Dual-Layer ESD-Safe PCB Labels",
         "model": "ESD-safe construction",
-        "code": "E-2712"
+        "code": "E-2712",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2712"
       }
     ],
     "fs_eyebrow": "FREE SAMPLE",
@@ -611,27 +626,32 @@
       {
         "name": "Direct Hot-Application Labels",
         "model": "Application temperature up to 900°C",
-        "code": "HP-900"
+        "code": "HP-900",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900"
       },
       {
         "name": "Cryogenic / LN₂ Storage Labels",
         "model": "Direct apply −80°C · storage to −196°C",
-        "code": "E-4812"
+        "code": "E-4812",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E4812"
       },
       {
         "name": "Polyimide PCB Labels — APEX",
         "model": "Heat resistant up to 300°C",
-        "code": "XF-101G"
+        "code": "XF-101G",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF101G"
       },
       {
         "name": "Heavy-Duty Oil-Resistant Labels",
         "model": "High-adhesion, oil-resistant",
-        "code": "E-2813"
+        "code": "E-2813",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2813"
       },
       {
         "name": "Dual-Layer ESD-Safe PCB Labels",
         "model": "ESD-safe construction",
-        "code": "E-2712"
+        "code": "E-2712",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2712"
       }
     ],
     "fs_eyebrow": "FREE SAMPLE",
