@@ -12,16 +12,10 @@ PCB_CATS = {c["slug"]: c for c in _PCBD["categories"]}
 PCB_PROD = _PCBD["products"]
 PCB_MKT = _PCBD.get("category_market", {})
 
-def _pcb_img(p):
-    """Product photo if present, else a clean placeholder tile (onerror removes broken img)."""
-    url = p.get("img") or ""
-    if url:
-        return ('<div class="pimg"><img src="%s" alt="%s" loading="lazy" '
-                'onerror="this.remove()"><span class="ph">\U0001F3F7</span></div>') % (esc(url), esc(p["product_name"]))
-    return '<div class="pimg"><span class="ph">\U0001F3F7</span></div>'
-
 def build_pcb_category(lang, cat_slug):
-    """Application page (layer 2): short intro + compact facets + product list (image + text)."""
+    """Application page (layer 2): short intro + compact facets + product list.
+    Labels all look alike, so NO product images — hoenle style: name + material
+    construction + use description + spec chips."""
     zh = (lang == "zh")
     cat = PCB_CATS[cat_slug]
     prods = [p for p in PCB_PROD if cat_slug in p.get("application_categories", [])]
@@ -45,16 +39,21 @@ def build_pcb_category(lang, cat_slug):
             if fin and fin != "—": meta += '<span>%s</span>' % esc(fin)
             if p.get("heat_tier"): meta += '<span>%s</span>' % esc(p["heat_tier"])
             if p.get("esd"): meta += '<span class="esd">ESD-Safe</span>'
+            constr = p.get("construction", "") or ""
             desc = p.get("brochure_direction_zh" if zh else "brochure_direction_en", "") or ""
-            cards += ('<div class="pcardx" data-color="%s" data-finish="%s" data-esd="%s">%s'
-                      '<div class="pbody"><h3>%s</h3><div class="pmeta">%s</div><p>%s</p>'
-                      '<a class="plink" href="%s">%s →</a></div></div>') % (
+            url = L(lang, "/products/%s/" % p["slug"])
+            cards += ('<div class="prow" data-color="%s" data-finish="%s" data-esd="%s">'
+                      '<h3><a href="%s">%s</a></h3>'
+                      '%s<p>%s</p><div class="pmeta">%s</div>'
+                      '<a class="plink" href="%s">%s →</a></div>') % (
                 esc(c if c != "—" else ""), esc(fin if fin != "—" else ""), ("1" if p.get("esd") else ""),
-                _pcb_img(p), esc(p["product_name"]), meta, esc(desc),
-                L(lang, "/products/%s/" % p["slug"]), ("查看 / 申请样品" if zh else "View / Request Sample"))
+                url, esc(p["product_name"]),
+                ('<div class="pconstr">%s</div>' % esc(constr)) if constr else "",
+                esc(desc), meta,
+                url, ("查看产品 / 申请样品" if zh else "View Product / Request Sample"))
         n = len(prods)
     else:
-        # No individual product entries yet — render the market-equivalent categories as cards.
+        # No individual product entries yet — render the market-equivalent categories as rows.
         facets = ""
         rows = PCB_MKT.get(cat_slug, [])
         for r in rows:
@@ -64,15 +63,15 @@ def build_pcb_category(lang, cat_slug):
             title = r.get("cat_zh" if zh else "cat_en", "")
             desc = ("根据实际工艺与可移除/残胶要求匹配具体型号，最终由样品确认；请联系 ETIA 索取规格。" if zh
                     else "Specific construction is matched to your process and removability/residue requirements, to be confirmed by sample; contact ETIA for the specification.")
-            cards += ('<div class="pcardx">%s<div class="pbody"><h3>%s</h3><div class="pmeta">%s</div>'
-                      '<p>%s</p><a class="plink" href="%s">%s →</a></div></div>') % (
-                '<div class="pimg"><span class="ph">\U0001F3F7</span></div>', esc(title), meta, desc,
+            cards += ('<div class="prow"><h3>%s</h3><p>%s</p><div class="pmeta">%s</div>'
+                      '<a class="plink" href="%s">%s →</a></div>') % (
+                esc(title), desc, meta,
                 contact, ("联系 ETIA 选型" if zh else "Contact ETIA for Selection"))
         n = len(rows)
     count = '<div class="catcount">%s</div>' % ((("共 %d 项" % n) if zh else ("%d results" % n)) if n else "")
-    filt = ("<script>function etaFilter(x){var r=x.closest('.catalog');var g={};"
+    filt = ("<script>function etaFilter(x){var r=x.closest('.catalog')||document;var g={};"
             "r.querySelectorAll('.fgroup input:checked').forEach(function(c){(g[c.dataset.fg]=g[c.dataset.fg]||[]).push(c.dataset.fv);});"
-            "r.querySelectorAll('.pcardx').forEach(function(k){var s=true;for(var f in g){if(g[f].indexOf(k.getAttribute('data-'+f)||'')<0){s=false;break;}}k.style.display=s?'flex':'none';});}</script>")
+            "r.querySelectorAll('.prow').forEach(function(k){var s=true;for(var f in g){if(g[f].indexOf(k.getAttribute('data-'+f)||'')<0){s=false;break;}}k.style.display=s?'':'none';});}</script>")
     if facets:
         catalog = ('<div class="catalog"><aside class="facets">%s</aside>'
                    '<div>%s<div class="plist">%s</div></div></div>') % (facets, count, cards)
