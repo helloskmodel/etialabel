@@ -187,9 +187,39 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .carrows{display:flex;gap:8px}
 .carrow{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:16px;color:var(--ink);line-height:1}
 .carrow:hover{border-color:var(--blue);color:var(--blue)}
+.whyclose{text-align:center;font-family:var(--serif);font-weight:600;color:var(--blue-deep);font-size:18px;letter-spacing:.02em;margin-top:26px}
+/* explore-by-application carousel */
+.acar-wrap{position:relative;margin-top:8px}
+.acar{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:20px;border:1px solid var(--line);background:#fff;scrollbar-width:none}
+.acar::-webkit-scrollbar{display:none}
+.aslide{flex:0 0 100%;scroll-snap-align:start;display:grid;grid-template-columns:55% 45%;min-height:430px}
+.aimg{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.aimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.aimg .aicon{color:#ffffffcc;font-size:78px;line-height:1}
+.aimg .aicon svg{width:92px;height:92px}
+.aimg .anum{position:absolute;left:26px;bottom:22px;color:#fff;font-family:var(--serif);font-size:18px;letter-spacing:.1em;font-weight:600;opacity:.92}
+.aimg.g0{background:linear-gradient(150deg,#1A56DB,#143C96)}
+.aimg.g1{background:linear-gradient(150deg,#B45309,#7c2d12)}
+.aimg.g2{background:linear-gradient(150deg,#0e7490,#155e75)}
+.aimg.g3{background:linear-gradient(150deg,#334155,#0f172a)}
+.aimg.g4{background:linear-gradient(150deg,#41A62A,#256d18)}
+.aimg.g5{background:linear-gradient(150deg,#2563eb,#0e7490)}
+.acopy{padding:40px 42px;display:flex;flex-direction:column;justify-content:center}
+.acopy .aeyebrow{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--green-d);margin-bottom:10px}
+.acopy h3{font-family:var(--serif);font-weight:600;font-size:27px;color:var(--blue-deep);line-height:1.12;margin-bottom:12px}
+.acopy>p{font-size:15px;color:var(--mut);max-width:34em}
+.atags{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0}
+.atags span{font-size:12px;font-weight:700;color:var(--blue);background:#eaf1ff;border:1px solid #d6e2fb;border-radius:16px;padding:5px 12px}
+.afeat{border-top:1px solid var(--line);padding-top:14px;margin-bottom:18px}
+.afeat .k{display:block;font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);margin-bottom:2px}
+.afeat .v{font-size:15px;font-weight:700;color:var(--ink)}
+.acar-nav{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:22px;line-height:1;cursor:pointer;z-index:5;box-shadow:0 6px 18px rgba(16,34,58,.14)}
+.acar-nav:hover{border-color:var(--blue);color:var(--blue)}
+.acar-nav.prev{left:-14px}.acar-nav.next{right:-14px}
 @media(max-width:820px){.two{grid-template-columns:1fr}footer .fg{grid-template-columns:1fr}.pagehead h1{font-size:30px}
 .hero h1{font-size:32px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}
 .split{grid-template-columns:1fr;gap:22px}.split .imgframe{order:-1}.split .txt h2{font-size:25px}
+.aslide{grid-template-columns:1fr;min-height:0}.aimg{min-height:190px}.aimg .aicon svg{width:60px;height:60px}.acopy{padding:26px 24px}.acopy h3{font-size:22px}.acar-nav{display:none}
 .cslide .cap h3{font-size:20px}}
 """
 
@@ -751,16 +781,28 @@ def home_hreflang(path):
 def build_home(lang):
     path="/"
     T=HOME_I18N[lang]
-    # Why ETIA pillars
-    why_html="".join('<div class="why"><div class="ic">%s</div><div class="txt"><b>%s</b><span class="sub">%s</span><p>%s</p></div></div>'%(
-        WHY_ICONS[k%len(WHY_ICONS)],esc(verb),esc(subl),esc(d)) for k,(verb,subl,d) in enumerate(T["why"]))
-    # Application Center — six industry cards (icon + name + application tags)
-    app_cards=""
-    for k,(name,apps) in enumerate(T["focus"]):
-        pills="".join('<span>%s</span>'%esc(a) for a in apps)
-        app_cards+=('<a class="card indcard" href="%s"><div class="ic">%s</div>'
-                    '<div class="body"><h3>%s</h3><div class="apps">%s</div><div class="go">%s →</div></div></a>')%(
-            home_hlink(lang,FOCUS_URLS[k]), INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)], esc(name), pills, esc(T["explore"]))
+    # Why ETIA pillars — icon + "We…" heading + up to two short lines
+    why_html="".join('<div class="why"><div class="ic">%s</div><div class="txt"><b>%s</b><p>%s</p></div></div>'%(
+        WHY_ICONS[k%len(WHY_ICONS)],esc(head),esc(text)) for k,(head,text) in enumerate(T["why"]))
+    why_close=('<p class="whyclose">%s</p>'%esc(T["why_close"])) if T.get("why_close") else ""
+    # Explore by Application — large image + copy carousel (one industry per slide)
+    n=len(T["focus"])
+    slides=""
+    for k,f in enumerate(T["focus"]):
+        tags="".join('<span>%s</span>'%esc(t) for t in f["tags"])
+        slides+=('<div class="aslide">'
+                 '<div class="aimg g%d"><span class="aicon">%s</span><span class="anum">%02d / %02d</span></div>'
+                 '<div class="acopy"><div class="aeyebrow">%s</div><h3>%s</h3><p>%s</p>'
+                 '<div class="atags">%s</div>'
+                 '<div class="afeat"><span class="k">%s</span><span class="v">%s</span></div>'
+                 '<a class="btn sec" href="%s">%s →</a></div></div>')%(
+            k%6, INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)], k+1, n,
+            esc(f["name"]), esc(f["headline"]), esc(f["desc"]), tags,
+            esc(f["feat_kind"]), esc(f["feat"]),
+            home_hlink(lang,FOCUS_URLS[k]), esc(T["explore"]))
+    app_carousel=('<div class="acar-wrap"><button class="acar-nav prev" type="button" aria-label="Previous" onclick="etaSlide(-1)">‹</button>'
+                  '<div class="acar" id="acar">%s</div>'
+                  '<button class="acar-nav next" type="button" aria-label="Next" onclick="etaSlide(1)">›</button></div>')%slides
     final_cta=('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
                '<div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn on-dark" href="%s">%s</a></div></div></div>')%(
         esc(T["fcta_title"]),esc(T["fcta_para"]),home_hlink(lang,"/contact/"),esc(T["fcta_b1"]),home_hlink(lang,"/contact/"),esc(T["fcta_b2"]))
@@ -771,14 +813,14 @@ def build_home(lang):
 <p class="lede">%s</p>
 <div class="btns"><a class="btn pri" href="#applications">%s</a><a class="btn sec" href="%s">%s</a></div></div></section>
 <section class="svcbar"><div class="wrap">%s</div></section>
-<section class="blk" style="background:var(--tint-green)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="whygrid">%s</div></div></section>
-<section class="blk" id="applications" style="background:var(--tint-blue)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div>
-<div style="margin-top:18px"><a class="btn sec" href="%s">%s →</a></div></div></section>
+<section class="blk" style="background:var(--tint-green)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="whygrid">%s</div>%s</div></section>
+<section class="blk" id="applications" style="background:var(--tint-blue)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>%s
+<div style="margin-top:20px"><a class="btn sec" href="%s">%s →</a></div></div></section>
 %s""" % (
         esc(T["hero_eyebrow"]),esc(T["hero_h1"]),esc(T["hero_line"]),esc(T["hero_para"]),esc(T["hero_b1"]),home_hlink(lang,"/contact/"),esc(T["hero_b2"]),
         svc_html,
-        esc(T["why_eyebrow"]),esc(T["why_head"]),esc(T["why_intro"]),why_html,
-        esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_cards,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]),
+        esc(T["why_eyebrow"]),esc(T["why_head"]),esc(T["why_intro"]),why_html,why_close,
+        esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_carousel,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]),
         final_cta)
     canonical=SITE+HL_PREFIX[lang]+path
     schema_js='<script type="application/ld+json">%s</script>'%json.dumps(ORG_JSONLD,ensure_ascii=False)
@@ -792,6 +834,7 @@ def build_home(lang):
 <header><div class="wrap"><a class="logo" href="%s"><span class="ar">◄</span><span class="grn">ETIA</span><span class="blu">·LABEL</span></a>%s</div></header>
 %s
 %s
+<script>function etaSlide(d){var c=document.getElementById('acar');if(c)c.scrollBy({left:d*c.clientWidth,behavior:'smooth'});}</script>
 </body></html>""" % (lang,esc(T["meta_title"]),esc(T["meta_desc"]),canonical,home_hreflang(path),esc(T["meta_title"]),CSS,schema_js,
         ("/" if lang=="en" else HL_PREFIX[lang]+"/"),home_nav(lang),body,home_footer(lang))
     outdir=os.path.join(ROOT,HL_PREFIX[lang].strip("/")) if HL_PREFIX[lang] else ROOT
