@@ -97,6 +97,18 @@ section.blk{padding:34px 0}
 .bcard .bct p{font-size:13px;color:#e6eefc;line-height:1.45}
 .bcard .barr{font-size:26px;color:#fff;flex:none;line-height:1}
 @media(max-width:700px){.brochures{grid-template-columns:1fr}}
+/* service contact form + phones */
+.ctwo{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:start;margin-top:10px}
+.cform{display:flex;flex-direction:column;gap:12px}
+.cform .cfrow{display:flex;gap:12px}
+.cform input,.cform textarea{width:100%;font-family:inherit;font-size:14px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--blue)}
+.cform .btn{align-self:flex-start;margin-top:4px;border:none;cursor:pointer}
+.cphones{display:flex;flex-direction:column;gap:15px}
+.cph{border-left:3px solid var(--blue);padding:3px 0 3px 14px}
+.cph b{display:block;font-size:15px;color:var(--blue-deep)}
+.cph span{font-size:13.5px;color:var(--mut)}
+@media(max-width:820px){.ctwo{grid-template-columns:1fr;gap:24px}.cform .cfrow{flex-direction:column}}
 .apppanel{display:grid;grid-template-columns:minmax(0,460px) 1fr;gap:40px;align-items:center}
 .apppanel .apimg{position:relative;aspect-ratio:16/11;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#dfe7f3,#eef2f8);display:flex;align-items:center;justify-content:center}
 .apppanel .apimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}

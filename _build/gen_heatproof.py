@@ -134,6 +134,18 @@ section.blk{padding:34px 0}
 .bcard .bct p{font-size:13px;color:#e6eefc;line-height:1.45}
 .bcard .barr{font-size:26px;color:#fff;flex:none;line-height:1}
 @media(max-width:700px){.brochures{grid-template-columns:1fr}}
+/* service contact form + phones */
+.ctwo{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:start;margin-top:10px}
+.cform{display:flex;flex-direction:column;gap:12px}
+.cform .cfrow{display:flex;gap:12px}
+.cform input,.cform textarea{width:100%;font-family:inherit;font-size:14px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--blue)}
+.cform .btn{align-self:flex-start;margin-top:4px;border:none;cursor:pointer}
+.cphones{display:flex;flex-direction:column;gap:15px}
+.cph{border-left:3px solid var(--blue);padding:3px 0 3px 14px}
+.cph b{display:block;font-size:15px;color:var(--blue-deep)}
+.cph span{font-size:13.5px;color:var(--mut)}
+@media(max-width:820px){.ctwo{grid-template-columns:1fr;gap:24px}.cform .cfrow{flex-direction:column}}
 .apppanel{display:grid;grid-template-columns:minmax(0,460px) 1fr;gap:40px;align-items:center}
 .apppanel .apimg{position:relative;aspect-ratio:16/11;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#dfe7f3,#eef2f8);display:flex;align-items:center;justify-content:center}
 .apppanel .apimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -1227,39 +1239,71 @@ def build_tech(lang):
         body, crumb, active="tech"))
     if lang=="en": track("/technical-resources/","core")
 
+SERVICE_OFFICES=[
+  ("Shanghai","上海","+86 151 2119 7091 · 400 990 8448"),
+  ("Hong Kong","香港","label@etia-tech.com"),
+  ("Bangkok","曼谷","+66 811 746 947"),
+  ("Bac Ninh","北宁","+84 344 590 091"),
+]
+# Future: 4 service images (one per commitment). Fill with clean COS URLs when ready.
+SERVICE_IMGS=["","","",""]
+
 def build_service(lang):
     zh=(lang=="zh")
     svc=HOME_I18N.get(lang,HOME_I18N["en"]).get("svc",[])
-    commit="".join('<div class="card"><h3>%s</h3><p>%s</p></div>'%(esc(it["title"]),esc(it["desc"])) for it in svc)
-    caps=[
-      (("材料选型与匹配" if zh else "Material selection & matching"),
-       ("根据表面、工艺、温度、化学环境与打印方式，为您的应用匹配合适材料。" if zh
-        else "We match materials to your surface, process, temperature, chemistry and print method.")),
-      (("样品与实验室检测" if zh else "Samples & laboratory testing"),
-       ("量产前提供自有实验室检测与样品验证，帮助您确认方案。" if zh
-        else "In-house laboratory testing and sample validation before production.")),
-      (("加工与成型" if zh else "Converting & finishing"),
-       ("按您需要的规格提供分切、模切与成型加工。" if zh
-        else "Slitting, die-cutting and converting to your required format.")),
-      (("及时应用支持" if zh else "Responsive application support"),
-       ("当工况变化或贴标应用出现问题时，工程师及时响应，协助恢复稳定生产。" if zh
-        else "When conditions change or application issues arise, our engineers respond quickly.")),
-    ]
-    capcards="".join('<div class="card"><h3>%s</h3><p>%s</p></div>'%(esc(t),esc(d)) for t,d in caps)
-    body=('<section class="blk"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>'
-          '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>'
-          '<div class="wrap">%s</div>')%(
-        ("服务承诺" if zh else "Service Commitment"), commit,
-        ("服务能力" if zh else "Our Capabilities"), capcards, cta(lang))
+    # --- Service Commitment as a tab BAR (same module as the industry landings) ---
+    def panel_img(i):
+        u=SERVICE_IMGS[i] if i<len(SERVICE_IMGS) else ""
+        img=('<img src="%s" alt="" loading="lazy" onerror="this.remove()">'%esc(u)) if u else ""
+        return '<div class="apimg">%s<span class="ph">\U0001F6E1</span></div>'%img
+    tabs="".join('<button class="apptab%s" onclick="etaTab(this)">%s</button>'%((" on" if i==0 else ""),esc(it["title"]))
+                 for i,it in enumerate(svc))
+    panels="".join('<div class="apppanel"%s>%s<div class="aptext"><h3>%s</h3><p>%s</p></div></div>'
+                   %((' style="display:none"' if i>0 else ''),panel_img(i),esc(it["title"]),esc(it["desc"]))
+                   for i,it in enumerate(svc))
+    tabscript=("<script>function etaTab(b){var m=b.closest('.appmod');var t=[].slice.call(m.querySelectorAll('.apptab'));"
+               "var i=t.indexOf(b);t.forEach(function(x,j){x.classList.toggle('on',j===i);});"
+               "m.querySelectorAll('.apppanel').forEach(function(p,j){p.style.display=(j===i)?'grid':'none';});}"
+               "function etaScroll(b,d){var r=b.closest('.apptabsrow').querySelector('.apptabs');r.scrollBy({left:d*260,behavior:'smooth'});}"
+               "function etaMail(f){var g=function(n){var e=f.elements[n];return e?e.value:'';};"
+               "var b='Name: '+g('name')+'%0D%0ACompany: '+g('company')+'%0D%0APhone: '+g('phone')+'%0D%0AEmail: '+g('email')+'%0D%0A%0D%0A'+g('msg');"
+               "window.location.href='mailto:label@etia-tech.com?subject='+encodeURIComponent('Website enquiry')+'&body='+encodeURIComponent(b);return false;}</script>")
+    commit_sec=('<section class="blk"><div class="wrap"><h2>%s</h2><div class="appmod">'
+                '<div class="apptabsrow"><button class="apparrow" onclick="etaScroll(this,-1)" aria-label="prev">&lsaquo;</button>'
+                '<div class="apptabs">%s</div>'
+                '<button class="apparrow" onclick="etaScroll(this,1)" aria-label="next">&rsaquo;</button></div>'
+                '<div class="apppanels">%s</div></div></div></section>')%(
+        ("我们的服务承诺" if zh else "Our Service Commitment"), tabs, panels)
+    # --- contact form with phone ---
+    ph=lambda p: '<input name="%s" placeholder="%s"%s>'%p
+    fields=('<div class="cfrow"><input name="name" placeholder="%s" required><input name="company" placeholder="%s"></div>'
+            '<div class="cfrow"><input name="phone" placeholder="%s" required><input name="email" type="email" placeholder="%s"></div>'
+            '<textarea name="msg" rows="4" placeholder="%s"></textarea>'
+            '<button class="btn pri" type="submit">%s</button>')%(
+        ("姓名 *" if zh else "Name *"),("公司" if zh else "Company"),
+        ("电话 *" if zh else "Phone *"),("邮箱" if zh else "Email"),
+        ("请描述您的应用：表面、温度、化学环境、打印方式与标签尺寸" if zh
+         else "Describe your application: surface, temperature, chemistry, print method and label size"),
+        ("提交" if zh else "Send Enquiry"))
+    phones="".join('<div class="cph"><b>%s</b><span>%s</span></div>'%(esc(z if zh else e),esc(c)) for e,z,c in SERVICE_OFFICES)
+    form_sec=('<section class="blk" style="background:var(--tint-blue)"><div class="wrap">'
+              '<h2>%s</h2><div class="sub">%s</div>'
+              '<div class="ctwo"><form class="cform" onsubmit="return etaMail(this)">%s</form>'
+              '<div class="cphones">%s</div></div></div></section>')%(
+        ("联系我们" if zh else "Get in Touch"),
+        ("留下电话与应用需求，我们尽快回复并安排样品。" if zh
+         else "Leave your phone and application — we'll reply quickly and arrange samples."),
+        fields, phones)
+    body=commit_sec+form_sec+('<div class="wrap">%s</div>'%cta(lang))+tabscript
     crumb=[("Home","/"),("Service","/service/")]
     write(lang,"/service/",page(lang,"/service/",
         ("服务 | ETIA" if zh else "Service | ETIA"),
-        ("质量检测、应用驱动选型、柔性供应、加工成型与及时应用支持 —— ETIA 服务。" if zh
-         else "Quality inspection, application-driven selection, flexible supply, converting and responsive support — ETIA service."),
+        ("100% 质量检测、应用驱动选型、柔性供应与及时应用支持 —— ETIA 服务承诺。" if zh
+         else "100% quality inspection, application-driven selection, flexible supply and responsive support — the ETIA service commitment."),
         ("服务" if zh else "Service"),
-        ("从选型、样品与检测，到分切模切与长期供应，我们贯穿应用全过程。" if zh
-         else "From selection, samples and testing to converting and long-term supply — support across the full application."),
-        body, crumb, active="service"))
+        ("从选型、样品与检测，到柔性供应与长期应用支持，我们贯穿应用全过程。" if zh
+         else "From selection, samples and testing to flexible supply and long-term support — across the full application."),
+        body, crumb, active="service", trust=False))
     if lang=="en": track("/service/","core")
 
 def build_insights(lang):
@@ -1296,6 +1340,83 @@ def build_insights(lang):
         body, crumb, active="insights"))
     if lang=="en": track("/insights/","core")
 
+LEGAL_UPDATED=("2026年7月16日","16 July 2026")
+
+def _legal_page(lang, path, title_en, title_zh, desc_en, desc_zh, secs_en, secs_zh):
+    """General website legal template (to be reviewed by the client's legal counsel)."""
+    zh=(lang=="zh")
+    secs=secs_zh if zh else secs_en
+    body_secs="".join('<section class="blk"><div class="wrap"><h2>%s</h2>%s</div></section>'
+                      %(esc(h),"".join('<p style="color:var(--mut);max-width:64em;margin-bottom:12px">%s</p>'%esc(p) for p in ps))
+                      for h,ps in secs)
+    upd='<div class="wrap"><p style="color:var(--faint);font-size:13px;margin:6px 0 0">%s %s</p></div>'%(
+        ("最后更新：" if zh else "Last updated:"), LEGAL_UPDATED[0 if zh else 1])
+    body=upd+body_secs+('<div class="wrap">%s</div>'%cta(lang))
+    crumb=[("Home","/"),((title_zh if zh else title_en),path)]
+    write(lang,path,page(lang,path,(title_zh if zh else title_en)+" | ETIA",
+        (desc_zh if zh else desc_en),(title_zh if zh else title_en),"",body,crumb,active="",trust=False))
+    if lang=="en": track(path,"core")
+
+def build_legal(lang):
+    CONTACT="label@etia-tech.com"
+    _legal_page(lang,"/privacy/","Privacy Policy","隐私政策",
+        "How ETIA collects, uses and protects information submitted through this website.",
+        "ETIA 如何收集、使用并保护通过本网站提交的信息。",
+        [("Introduction",["ETIA (\"we\", \"us\") respects your privacy. This Privacy Policy explains what information we collect through this website, how we use it, and the choices you have. It applies to this website only."]),
+         ("Information We Collect",["Information you provide: when you submit an enquiry, request a sample or contact us, we collect the details you enter — such as your name, company, phone number, email address and the content of your message.",
+                                    "Information collected automatically: like most websites, we may collect technical data such as IP address, browser type, device information and pages visited, through cookies and similar technologies."]),
+         ("How We Use Information",["We use the information to respond to your enquiries, provide samples, quotations and application support, operate and improve the website, and meet legal or regulatory obligations."]),
+         ("Cookies",["This website uses cookies and similar technologies. Please see our Cookie Policy for details on the cookies we use and how to manage them."]),
+         ("Sharing of Information",["We do not sell your personal information. We may share it with affiliated companies and trusted service providers who help us respond to your enquiry or operate the website, and where required by law."]),
+         ("Data Retention & Security",["We retain personal information only as long as necessary for the purposes described above or as required by law, and we apply reasonable technical and organisational measures to protect it."]),
+         ("Your Rights",["Subject to applicable law, you may request access to, correction of, or deletion of your personal information. To make a request, contact us at "+CONTACT+"."]),
+         ("International Transfers",["ETIA operates in several countries. Your information may be processed in the countries where we or our service providers operate, with appropriate safeguards."]),
+         ("Changes to This Policy",["We may update this Privacy Policy from time to time. The \"Last updated\" date shows when it was last revised."]),
+         ("Contact Us",["For any privacy question or request, contact us at "+CONTACT+"."])],
+        [("引言",["ETIA（\"我们\"）尊重您的隐私。本隐私政策说明我们通过本网站收集哪些信息、如何使用，以及您拥有的选择。本政策仅适用于本网站。"]),
+         ("我们收集的信息",["您主动提供的信息：当您提交询价、申请样品或与我们联系时，我们会收集您填写的内容，例如姓名、公司、电话、邮箱及留言内容。",
+                     "自动收集的信息：与大多数网站一样，我们可能通过 Cookie 及类似技术收集技术数据，如 IP 地址、浏览器类型、设备信息及访问页面。"]),
+         ("信息的使用",["我们使用这些信息以回复您的询问、提供样品、报价与应用支持，运营并改进本网站，并履行法律或监管义务。"]),
+         ("Cookie",["本网站使用 Cookie 及类似技术。有关我们使用的 Cookie 及管理方式，请参见我们的 Cookie 政策。"]),
+         ("信息的共享",["我们不会出售您的个人信息。我们可能与关联公司及协助我们回复询问或运营网站的可信服务商共享信息，或在法律要求时共享。"]),
+         ("信息保留与安全",["我们仅在实现上述目的所需或法律要求的期限内保留个人信息，并采取合理的技术与管理措施加以保护。"]),
+         ("您的权利",["在适用法律范围内，您可以请求访问、更正或删除您的个人信息。如需提出请求，请通过 "+CONTACT+" 与我们联系。"]),
+         ("跨境传输",["ETIA 在多个国家运营。您的信息可能在我们或服务商运营的国家处理，并采取适当的保护措施。"]),
+         ("政策变更",["我们可能会不时更新本隐私政策。\"最后更新\"日期显示其最近修订时间。"]),
+         ("联系我们",["如有任何隐私问题或请求，请通过 "+CONTACT+" 与我们联系。"])])
+    _legal_page(lang,"/cookies/","Cookie Policy","Cookie 政策",
+        "How this website uses cookies and how you can manage them.",
+        "本网站如何使用 Cookie 以及您如何管理它们。",
+        [("What Are Cookies",["Cookies are small text files placed on your device when you visit a website. They help the site function and provide information to site operators."]),
+         ("How We Use Cookies",["Essential cookies: needed for the website to function correctly.",
+                                "Analytics and preference cookies: help us understand how the website is used and remember your preferences, so we can improve it."]),
+         ("Managing Cookies",["You can control or delete cookies through your browser settings. Blocking some cookies may affect how the website works."]),
+         ("Changes & Contact",["We may update this Cookie Policy from time to time. For questions, contact "+CONTACT+"."])],
+        [("什么是 Cookie",["Cookie 是您访问网站时存放在您设备上的小型文本文件，用于帮助网站运行并向网站运营者提供信息。"]),
+         ("我们如何使用 Cookie",["必要 Cookie：网站正常运行所必需。",
+                          "分析与偏好 Cookie：帮助我们了解网站的使用情况并记住您的偏好，以便改进网站。"]),
+         ("管理 Cookie",["您可以通过浏览器设置控制或删除 Cookie。屏蔽部分 Cookie 可能影响网站的使用。"]),
+         ("变更与联系",["我们可能会不时更新本 Cookie 政策。如有疑问，请联系 "+CONTACT+"。"])])
+    _legal_page(lang,"/terms/","Terms of Use","使用条款",
+        "The terms that govern your use of the ETIA website.",
+        "约束您使用 ETIA 网站的条款。",
+        [("Acceptance of Terms",["By accessing or using this website, you agree to these Terms of Use. If you do not agree, please do not use the website."]),
+         ("Use of the Website",["You agree to use this website only for lawful purposes and not in any way that could damage, disable or impair the website or interfere with others' use of it."]),
+         ("Intellectual Property",["Unless otherwise stated, the content on this website — including text, images, layout and trademarks — is owned by or licensed to ETIA and may not be copied or used without permission."]),
+         ("Product Information",["Product descriptions, specifications and temperature figures on this website are indicative and provided for general guidance. They are not a guarantee of performance. Final material data comes from the manufacturer technical data sheet (TDS), and suitability should be confirmed by your own application testing before production."]),
+         ("No Warranty & Limitation of Liability",["This website and its content are provided \"as is\" without warranties of any kind. To the extent permitted by law, ETIA is not liable for any loss arising from use of, or reliance on, this website."]),
+         ("Third-Party Links",["This website may contain links to third-party sites. We are not responsible for the content or practices of those sites."]),
+         ("Changes",["We may update these Terms of Use from time to time. Continued use of the website means you accept the current terms."]),
+         ("Contact",["For questions about these terms, contact "+CONTACT+"."])],
+        [("条款的接受",["访问或使用本网站即表示您同意本使用条款。若您不同意，请勿使用本网站。"]),
+         ("网站的使用",["您同意仅将本网站用于合法目的，不以任何可能损害、瘫痪或削弱网站，或干扰他人使用的方式使用本网站。"]),
+         ("知识产权",["除另有说明外，本网站的内容 —— 包括文字、图片、版式与商标 —— 归 ETIA 所有或经授权使用，未经许可不得复制或使用。"]),
+         ("产品信息",["本网站的产品描述、规格与温度数据为指示性内容，仅供一般参考，并非性能保证。最终材料数据以原厂技术数据表（TDS）为准，量产前应通过您自身的应用测试确认适用性。"]),
+         ("免责声明与责任限制",["本网站及其内容按\"现状\"提供，不作任何形式的保证。在法律允许的范围内，ETIA 不对因使用或依赖本网站而产生的任何损失承担责任。"]),
+         ("第三方链接",["本网站可能包含指向第三方网站的链接。我们不对这些网站的内容或做法负责。"]),
+         ("变更",["我们可能会不时更新本使用条款。继续使用本网站即表示您接受当前条款。"]),
+         ("联系",["如对本条款有疑问，请联系 "+CONTACT+"。"])])
+
 def build_all():
   for lang in HOME_LANGS:   # home is 4-language (en, zh, vi, th)
     build_home(lang)
@@ -1311,16 +1432,8 @@ def build_all():
     build_contact(lang)
     build_insights(lang)
     build_service(lang)
-    # legal stubs (placeholder copy — to be replaced with reviewed legal text)
-    build_stub(lang,"/privacy/","Privacy Policy","隐私政策",
-        "This Privacy Policy explains how ETIA handles information collected through this website. Full reviewed policy text is being finalized.",
-        "本隐私政策说明 ETIA 如何处理通过本网站收集的信息。经审阅的完整条款正在整理中。")
-    build_stub(lang,"/cookies/","Cookie Policy","Cookie 政策",
-        "This Cookie Policy describes how this website uses cookies and similar technologies. Full reviewed policy text is being finalized.",
-        "本 Cookie 政策说明本网站如何使用 Cookie 及类似技术。经审阅的完整条款正在整理中。")
-    build_stub(lang,"/terms/","Terms of Use","使用条款",
-        "These Terms of Use govern your use of this website. Full reviewed terms are being finalized.",
-        "本使用条款约束您对本网站的使用。经审阅的完整条款正在整理中。")
+    # legal pages (general website template — client legal counsel should review)
+    build_legal(lang)
 
 def main():
     clean()
