@@ -814,12 +814,11 @@ def build_home(lang):
     # Explore by Application — six cards (image on top, copy below; all six visible, animate on hover)
     cards=""
     for k,f in enumerate(T["focus"]):
-        tags="".join('<span>%s</span>'%esc(t) for t in f["tags"])
         cards+=('<a class="acard" href="%s"><div class="acard-img g%d"><span class="aicon">%s</span></div>'
                 '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p>'
-                '<div class="atags">%s</div><div class="acard-go">%s →</div></div></a>')%(
+                '<div class="acard-go">%s →</div></div></a>')%(
             home_hlink(lang,FOCUS_URLS[k]), k%6, INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)],
-            esc(f["name"]), esc(f["desc"]), tags, esc(T["explore"]))
+            esc(f["name"]), esc(f["desc"]), esc(T["explore"]))
     app_grid='<div class="acgrid">%s</div>'%cards
     # Most Popular Products — same card pattern (image top), application name as title, model small
     PROD_ICON=[1,2,0,3,2,4]
