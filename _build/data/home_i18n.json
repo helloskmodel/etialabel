@@ -28,7 +28,7 @@
   "en": {
     "nav": [
       "Products",
-      "Applications",
+      "Application Notes",
       "Insights",
       "Service"
     ],
@@ -188,7 +188,7 @@
   "zh": {
     "nav": [
       "产品",
-      "应用",
+      "应用笔记",
       "洞察",
       "服务"
     ],
@@ -348,7 +348,7 @@
   "vi": {
     "nav": [
       "Sản phẩm",
-      "Ứng dụng",
+      "Application Notes",
       "Insights",
       "Dịch vụ"
     ],
@@ -508,7 +508,7 @@
   "th": {
     "nav": [
       "ผลิตภัณฑ์",
-      "การใช้งาน",
+      "Application Notes",
       "Insights",
       "บริการ"
     ],

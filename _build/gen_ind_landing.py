@@ -330,6 +330,35 @@ def build_products_overview(lang):
     if lang == "en":
         URLS.append(path)
 
+def build_application_notes(lang):
+    zh = (lang == "zh")
+    # Browse chips: by industry (6) + by environment (9) — articles get tagged into these.
+    ind_chips = "".join('<a class="pill" href="%s">%s</a>' % (L(lang, u), esc(z if zh else e)) for e, z, u in APPS_AXIS)
+    env_chips = "".join('<span class="pill tag">%s</span>' % esc(z if zh else e) for e, z in BY_ENV)
+    body = (
+        '<section class="blk"><div class="wrap">'
+        '<h2>%s</h2><div class="xlinks">%s</div>'
+        '<h2 style="margin-top:26px">%s</h2><div class="xlinks">%s</div>'
+        '<div class="verify" style="margin-top:22px">%s</div></div></section>'
+        '<div class="wrap">%s</div>') % (
+        ("按行业浏览" if zh else "Browse by Industry"), ind_chips,
+        ("按环境浏览" if zh else "Browse by Environment"), env_chips,
+        ("应用笔记正在陆续发布（约 40 篇，按行业 / 应用 / 环境标记）。需要特定主题资料请联系 ETIA。" if zh
+         else "Application notes are being published (around 40, tagged by industry / application / environment). Contact ETIA for a specific topic."),
+        cta(lang))
+    path = "/application-notes/"
+    crumb = [("Home", "/"), ("Application Notes" if not zh else "应用笔记", path)]
+    write(lang, path, page(lang, path,
+          ("应用笔记 | ETIA" if zh else "Application Notes | ETIA"),
+          ("面向严苛标识应用的技术笔记与选型参考，按行业、应用与环境组织。" if zh
+           else "Technical application notes and selection references for demanding identification, organized by industry, application and environment."),
+          ("应用笔记" if zh else "Application Notes"),
+          ("按行业、应用与环境组织的标签应用知识库 —— 帮助您在量产前选对材料。" if zh
+           else "A library of label application knowledge — organized by industry, application and environment."),
+          body, crumb, active="notes"))
+    if lang == "en":
+        URLS.append(path)
+
 def main():
     for slug in LANDINGS:
         for lang in LANGS:
@@ -338,6 +367,7 @@ def main():
         build_by_environment(lang)
         build_by_feature(lang)
         build_products_overview(lang)
+        build_application_notes(lang)
 
 
 if __name__ == "__main__":

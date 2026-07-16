@@ -298,14 +298,14 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 """
 
 NAV_ITEMS = [("Products", u_products(), "products"),
-             ("Applications", u_ind_hub(), "industries"),
+             ("Application Notes", "/application-notes/", "notes"),
              ("Insights", "/insights/", "insights"),
              ("Service", "/service/", "service")]
-NAV_ZH = {"Products":"产品","Applications":"应用","Insights":"洞察","Service":"服务"}
+NAV_ZH = {"Products":"产品","Application Notes":"应用笔记","Insights":"洞察","Service":"服务"}
 
 # Products mega-menu: 4 axes (Computype-style left rail + right list)
 PROD_AXES = [
- ("app","By Application","按应用",[
+ ("app","By Industry","按行业",[
    ("Electronics & PCB","电子与PCB","/industries/electronics-pcb/"),
    ("Metals & Ceramics","金属与陶瓷","/industries/steel/"),
    ("Medical & Laboratory","医疗与实验室","/industries/healthcare-life-sciences/"),
@@ -377,8 +377,8 @@ def nav_html(lang, active, path="/"):
     other_label = "CN" if lang == "en" else "EN"   # label = the language you switch TO
     return '<nav>%s<a class="lang" href="%s">%s</a></nav>' % (items, L(other, path), other_label)
 
-FOOTER_LINKS = [("Products", u_products()), ("Applications", u_ind_hub()),
-                ("Insights", "/insights/"), ("Service", "/service/"),
+FOOTER_LINKS = [("Products", u_products()), ("Industries", u_ind_hub()),
+                ("Application Notes", "/application-notes/"), ("Service", "/service/"),
                 ("About ETIA", "/about/"), ("Contact", "/contact/")]
 def footer_html(lang):
     nav = "".join('<li><a href="%s">%s</a></li>' % (L(lang, p), t) for t, p in FOOTER_LINKS)
@@ -890,7 +890,7 @@ def home_switcher(active):
 def home_nav(lang):
     T=HOME_I18N[lang]
     lf=lambda p: home_hlink(lang,p)
-    hrefs=["/industries/","/insights/","/service/"]
+    hrefs=["/application-notes/","/insights/","/service/"]
     prod=products_dropdown(lang, lf)
     links="".join('<a href="%s">%s</a>'%(lf(h),esc(lbl)) for h,lbl in zip(hrefs,T["nav"][1:]))
     return '<nav>%s%s%s</nav>' % (prod, links, home_switcher(lang))
@@ -1046,7 +1046,7 @@ def clean():
     # preserve source (generators/data/docs); regenerate the section output dirs.
     # NOTE: does NOT delete automotive-owned dirs (label-materials, brands are handled
     # by the orchestrator ordering); heatproof runs first, automotive layers on top.
-    for d in ["products","industries","applications","technical-resources","about","contact","zh","cn",
+    for d in ["products","industries","applications","application-notes","technical-resources","about","contact","zh","cn",
               "materials","brands","insights","service","support","company","privacy","cookies","terms",
               "label-materials","popular","featured-solutions","vi","vn","th"]:
         p=os.path.join(ROOT,d)
