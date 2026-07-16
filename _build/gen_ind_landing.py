@@ -248,12 +248,86 @@ def build_by_environment(lang):
         URLS.append(path)
 
 
+BY_FEATURE = [
+    ("Tamper-Evident Labels", "防拆标签"),
+    ("Removable Labels", "可移除标签"),
+]
+
+BY_MATERIAL = [
+    ("Polyimide — Heat-Resistant", "聚酰亚胺 · 耐高温", "/materials/polyimide-pi-label-materials/"),
+]
+
+# By Application axis = the six industries (landing pages)
+APPS_AXIS = [
+    ("Electronics & PCB", "电子与PCB", "/industries/electronics-pcb/"),
+    ("Metals & Ceramics", "金属与陶瓷", "/industries/steel/"),
+    ("Medical & Laboratory", "医疗与实验室", "/industries/healthcare-life-sciences/"),
+    ("Automotive & Tire", "汽车与轮胎", "/industries/automotive-label-materials/"),
+    ("Wire & Cable", "电线与电缆", "/industries/wire-cable/"),
+    ("Outdoor & Energy", "户外与能源", "/industries/outdoor-energy/"),
+]
+
+def build_by_feature(lang):
+    zh = (lang == "zh")
+    contact = L(lang, "/contact/")
+    cards = "".join(
+        '<a class="card" href="%s"><h3>%s</h3><div class="go" style="color:var(--blue);font-weight:700;font-size:13.5px;margin-top:10px">%s →</div></a>'
+        % (contact, esc(z if zh else e), ("申请样品" if zh else "Request Samples")) for e, z in BY_FEATURE)
+    body = ('<section class="blk"><div class="wrap"><div class="grid">%s</div></div></section>'
+            '<div class="wrap">%s</div>') % (cards, cta(lang))
+    path = "/products/by-feature/"
+    crumb = [("Home", "/"), ("Products", "/products/"), ("By Feature" if not zh else "按特性", path)]
+    write(lang, path, page(lang, path,
+          ("按特性选择标签材料 | ETIA" if zh else "Label Materials by Feature | ETIA"),
+          ("按功能特性选择标签:防拆、可移除等 —— 具体型号由 ETIA 依据真实应用匹配。" if zh
+           else "Select labels by feature: tamper-evident, removable and more — matched to your application by ETIA."),
+          ("按特性" if zh else "By Feature"),
+          ("按功能特性快速定位合适的标签材料。" if zh
+           else "Find the right label material by the feature you need."),
+          body, crumb, active="products"))
+    if lang == "en":
+        URLS.append(path)
+
+def build_products_overview(lang):
+    zh = (lang == "zh")
+    def axis(head_e, head_z, sub_e, sub_z, items, bg):
+        cards = "".join(
+            '<a class="card" href="%s"><h3>%s</h3></a>' % (L(lang, url), esc(z if zh else e))
+            for e, z, url in items)
+        st = ' style="background:%s"' % bg if bg else ""
+        return ('<section class="blk"%s><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
+                '<div class="sub">%s</div><div class="grid">%s</div></div></section>') % (
+            st, esc(head_z if zh else head_e).upper() if not zh else esc(head_z),
+            esc((head_z if zh else head_e)), esc(sub_z if zh else sub_e), cards)
+    env_items = [(e, z, "/products/by-environment/") for e, z in BY_ENV]
+    feat_items = [(e, z, "/products/by-feature/") for e, z in BY_FEATURE]
+    body = (
+        axis("By Application", "按应用", "Start from your industry and process.", "从您的行业与工艺出发。", APPS_AXIS, "") +
+        axis("By Environment", "按环境", "Start from the condition the label must survive.", "从标签需要承受的环境出发。", env_items, "var(--tint-green)") +
+        axis("By Feature", "按特性", "Start from the functional property you need.", "从您需要的功能特性出发。", feat_items, "") +
+        axis("By Material", "按材料", "Start from the substrate.", "从基材出发。", BY_MATERIAL, "var(--tint-blue)") +
+        '<div class="wrap">%s</div>' % cta(lang))
+    path = "/products/"
+    crumb = [("Home", "/"), ("Products", path)]
+    write(lang, path, page(lang, path,
+          ("产品与方案 | ETIA" if zh else "Products & Solutions | ETIA"),
+          ("按应用、环境、特性与材料四种方式浏览 ETIA 特种标签材料。" if zh
+           else "Browse ETIA specialty label materials four ways — by application, environment, feature and material."),
+          ("产品与方案" if zh else "Products & Solutions"),
+          ("四种浏览方式,快速找到适合您应用的标签材料。" if zh
+           else "Four ways to browse — find the label material that fits your application."),
+          body, crumb, active="products"))
+    if lang == "en":
+        URLS.append(path)
+
 def main():
     for slug in LANDINGS:
         for lang in LANGS:
             build_landing(lang, slug)
     for lang in LANGS:
         build_by_environment(lang)
+        build_by_feature(lang)
+        build_products_overview(lang)
 
 
 if __name__ == "__main__":
