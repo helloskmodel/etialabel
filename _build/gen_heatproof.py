@@ -342,7 +342,10 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .prow .pmeta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}
 .prow .pmeta span{font-size:11.5px;font-weight:700;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:4px 10px;color:var(--mut)}
 .prow .pmeta span.esd{background:#eaf1ff;color:var(--blue);border-color:#d6e2fb}
+.prow .pactions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .prow .plink{font-size:13.5px;font-weight:700;color:var(--blue)}
+.samplebtn{display:inline-block;background:var(--green);color:#fff;font-size:12px;font-weight:800;letter-spacing:.04em;padding:7px 16px;border-radius:20px}
+.samplebtn:hover{background:var(--green-d);text-decoration:none;color:#fff}
 @media(max-width:820px){.catalog{grid-template-columns:1fr}}
 @media(max-width:820px){.two{grid-template-columns:1fr}footer .fg{grid-template-columns:1fr}.pagehead h1{font-size:30px}
 .hero h1{font-size:32px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}

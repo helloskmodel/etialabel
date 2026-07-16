@@ -45,12 +45,14 @@ def build_pcb_category(lang, cat_slug):
             cards += ('<div class="prow" data-color="%s" data-finish="%s" data-esd="%s">'
                       '<h3><a href="%s">%s</a></h3>'
                       '%s<p>%s</p><div class="pmeta">%s</div>'
-                      '<a class="plink" href="%s">%s →</a></div>') % (
+                      '<div class="pactions"><a class="plink" href="%s">%s &rarr;</a>'
+                      '<a class="samplebtn" href="%s">%s</a></div></div>') % (
                 esc(c if c != "—" else ""), esc(fin if fin != "—" else ""), ("1" if p.get("esd") else ""),
                 url, esc(p["product_name"]),
                 ('<div class="pconstr">%s</div>' % esc(constr)) if constr else "",
                 esc(desc), meta,
-                url, ("查看产品 / 申请样品" if zh else "View Product / Request Sample"))
+                url, ("查看产品" if zh else "View Product"),
+                ("%s?product=%s" % (contact, p["slug"])), ("免费样品" if zh else "FREE SAMPLE"))
         n = len(prods)
     else:
         # No individual product entries yet — render the market-equivalent categories as rows.
