@@ -299,7 +299,7 @@ def nav_html(lang, active, path="/"):
     items = "".join('<a href="%s"%s>%s</a>' % (L(lang, href), ' class="on"' if key==active else '', lab(t))
                     for t, href, key in NAV_ITEMS)
     other = "zh" if lang == "en" else "en"
-    other_label = "中文" if lang == "en" else "EN"   # label = the language you switch TO
+    other_label = "CN" if lang == "en" else "EN"   # label = the language you switch TO
     return '<nav>%s<a class="lang" href="%s">%s</a></nav>' % (items, L(other, path), other_label)
 
 FOOTER_LINKS = [("Products", u_products()), ("Applications", u_ind_hub()),
