@@ -305,3 +305,10 @@ FREE SAMPLE block: form (email / phone / mailing address) -> mailto label@etia-t
 - SERVICE COMMITMENT: detailed 4-item block (title + description) moved to the END of the home page, above the Final CTA. Heading "Our Service Commitment / 我们的服务承诺".
 - Home order: Hero → Trust Bar → Why → Applications(6) → Request Product Samples(5) → Free Sample form → Service Commitment → Final CTA.
 - Free Sample copy: no "hot sales / 热销" (ad-law); "Request free samples of any material above…".
+
+---
+
+# REVISION 8 — Navigation = Products · Applications · Insights · Service (4 items)
+- Technical Resources page DELETED (no redirect — clean).
+- Insights = articles/knowledge section (new page, EN+ZH). Service = service commitment + capabilities (new page, EN+ZH).
+- About / Contact moved to footer (still reachable). Nav labels: 产品/应用/洞察/服务.

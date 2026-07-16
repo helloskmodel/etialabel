@@ -28,10 +28,9 @@
   "en": {
     "nav": [
       "Products",
-      "Industries & Applications",
-      "Technical Resources",
-      "About ETIA",
-      "Contact"
+      "Applications",
+      "Insights",
+      "Service"
     ],
     "hero_eyebrow": "DURABLE IDENTIFICATION · SPECIALTY LABEL MATERIALS",
     "hero_h1": "Where Materials Meet Applications.",
@@ -177,11 +176,10 @@
   },
   "zh": {
     "nav": [
-      "产品中心",
-      "行业与应用",
-      "技术资源",
-      "关于ETIA",
-      "联系我们"
+      "产品",
+      "应用",
+      "洞察",
+      "服务"
     ],
     "hero_eyebrow": "耐久标识 · 特种标签材料",
     "hero_h1": "让材料，真正适配应用。",
@@ -328,10 +326,9 @@
   "vi": {
     "nav": [
       "Sản phẩm",
-      "Ngành & Ứng dụng",
-      "Tài nguyên kỹ thuật",
-      "Về ETIA",
-      "Liên hệ"
+      "Ứng dụng",
+      "Insights",
+      "Dịch vụ"
     ],
     "hero_eyebrow": "NHẬN DIỆN BỀN VỮNG · VẬT LIỆU NHÃN CHUYÊN DỤNG",
     "hero_h1": "Nơi vật liệu đáp ứng đúng ứng dụng.",
@@ -478,10 +475,9 @@
   "th": {
     "nav": [
       "ผลิตภัณฑ์",
-      "อุตสาหกรรมและการใช้งาน",
-      "ทรัพยากรทางเทคนิค",
-      "เกี่ยวกับ ETIA",
-      "ติดต่อ"
+      "การใช้งาน",
+      "Insights",
+      "บริการ"
     ],
     "hero_eyebrow": "ระบบระบุข้อมูลที่ทนทาน · วัสดุฉลากเฉพาะทาง",
     "hero_h1": "จุดที่วัสดุตอบโจทย์การใช้งานจริง",

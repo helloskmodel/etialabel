@@ -275,12 +275,10 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 """
 
 NAV_ITEMS = [("Products", u_products(), "products"),
-             ("Industries &amp; Applications", u_ind_hub(), "industries"),
-             ("Technical Resources", "/technical-resources/", "tech"),
-             ("About ETIA", "/about/", "about"),
-             ("Contact", "/contact/", "contact")]
-NAV_ZH = {"Products":"产品中心","Industries &amp; Applications":"行业与应用",
-          "Technical Resources":"技术资源","About ETIA":"关于ETIA","Contact":"联系我们"}
+             ("Applications", u_ind_hub(), "industries"),
+             ("Insights", "/insights/", "insights"),
+             ("Service", "/service/", "service")]
+NAV_ZH = {"Products":"产品","Applications":"应用","Insights":"洞察","Service":"服务"}
 
 ALL_URLS = []   # (path, group, changefreq)  — English canonical set for sitemap
 def track(path, group): ALL_URLS.append((path, group))
@@ -304,8 +302,9 @@ def nav_html(lang, active, path="/"):
     other_label = "中文" if lang == "en" else "EN"   # label = the language you switch TO
     return '<nav>%s<a class="lang" href="%s">%s</a></nav>' % (items, L(other, path), other_label)
 
-FOOTER_LINKS = [("Products", u_products()), ("Industries & Applications", u_ind_hub()),
-                ("Technical Resources", "/technical-resources/"), ("About ETIA", "/about/")]
+FOOTER_LINKS = [("Products", u_products()), ("Applications", u_ind_hub()),
+                ("Insights", "/insights/"), ("Service", "/service/"),
+                ("About ETIA", "/about/"), ("Contact", "/contact/")]
 def footer_html(lang):
     nav = "".join('<li><a href="%s">%s</a></li>' % (L(lang, p), t) for t, p in FOOTER_LINKS)
     legal = "".join('<li><a href="%s">%s</a></li>' % (L(lang, p), t) for t, p in
@@ -814,14 +813,14 @@ def home_switcher(active):
 
 def home_nav(lang):
     T=HOME_I18N[lang]
-    hrefs=["/products/","/industries/","/technical-resources/","/about/","/contact/"]
+    hrefs=["/products/","/industries/","/insights/","/service/"]
     links="".join('<a href="%s">%s</a>'%(home_hlink(lang,h),esc(lbl)) for h,lbl in zip(hrefs,T["nav"]))
     return '<nav>%s%s</nav>' % (links, home_switcher(lang))
 
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
     navl="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,h),esc(l)) for h,l in
-                 zip(["/products/","/industries/","/technical-resources/","/about/"],T["nav"][:4]))
+                 zip(["/products/","/industries/","/insights/","/service/"],T["nav"][:4]))
     legal="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,p),t) for p,t in
                   [("/privacy/","Privacy Policy"),("/cookies/","Cookie Policy"),("/terms/","Terms of Use")])
     return ('<footer><div class="wrap"><div class="flogo"><img src="https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/IMAGE/logo/ETIALOGO.jpg" alt="ETIA Label"></div>'
@@ -969,7 +968,7 @@ def clean():
     # NOTE: does NOT delete automotive-owned dirs (label-materials, brands are handled
     # by the orchestrator ordering); heatproof runs first, automotive layers on top.
     for d in ["products","industries","applications","technical-resources","about","contact","zh",
-              "materials","brands","insights","support","company","privacy","cookies","terms",
+              "materials","brands","insights","service","support","company","privacy","cookies","terms",
               "label-materials","popular","featured-solutions","vi","th"]:
         p=os.path.join(ROOT,d)
         if os.path.isdir(p): shutil.rmtree(p)
@@ -1070,6 +1069,75 @@ def build_tech(lang):
         body, crumb, active="tech"))
     if lang=="en": track("/technical-resources/","core")
 
+def build_service(lang):
+    zh=(lang=="zh")
+    svc=HOME_I18N.get(lang,HOME_I18N["en"]).get("svc",[])
+    commit="".join('<div class="card"><h3>%s</h3><p>%s</p></div>'%(esc(it["title"]),esc(it["desc"])) for it in svc)
+    caps=[
+      (("材料选型与匹配" if zh else "Material selection & matching"),
+       ("根据表面、工艺、温度、化学环境与打印方式，为您的应用匹配合适材料。" if zh
+        else "We match materials to your surface, process, temperature, chemistry and print method.")),
+      (("样品与实验室检测" if zh else "Samples & laboratory testing"),
+       ("量产前提供自有实验室检测与样品验证，帮助您确认方案。" if zh
+        else "In-house laboratory testing and sample validation before production.")),
+      (("加工与成型" if zh else "Converting & finishing"),
+       ("按您需要的规格提供分切、模切与成型加工。" if zh
+        else "Slitting, die-cutting and converting to your required format.")),
+      (("及时应用支持" if zh else "Responsive application support"),
+       ("当工况变化或贴标应用出现问题时，工程师及时响应，协助恢复稳定生产。" if zh
+        else "When conditions change or application issues arise, our engineers respond quickly.")),
+    ]
+    capcards="".join('<div class="card"><h3>%s</h3><p>%s</p></div>'%(esc(t),esc(d)) for t,d in caps)
+    body=('<section class="blk"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>'
+          '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>'
+          '<div class="wrap">%s</div>')%(
+        ("服务承诺" if zh else "Service Commitment"), commit,
+        ("服务能力" if zh else "Our Capabilities"), capcards, cta(lang))
+    crumb=[("Home","/"),("Service","/service/")]
+    write(lang,"/service/",page(lang,"/service/",
+        ("服务 | ETIA" if zh else "Service | ETIA"),
+        ("质量检测、应用驱动选型、柔性供应、加工成型与及时应用支持 —— ETIA 服务。" if zh
+         else "Quality inspection, application-driven selection, flexible supply, converting and responsive support — ETIA service."),
+        ("服务" if zh else "Service"),
+        ("从选型、样品与检测，到分切模切与长期供应，我们贯穿应用全过程。" if zh
+         else "From selection, samples and testing to converting and long-term supply — support across the full application."),
+        body, crumb, active="service"))
+    if lang=="en": track("/service/","core")
+
+def build_insights(lang):
+    zh=(lang=="zh")
+    items=[
+      (("从应用出发，而非从目录出发" if zh else "Start from the application, not the catalog"),
+       ("选对标签始于工艺、表面、温度、化学环境与打印方式，而不是默认参数最高的型号。" if zh
+        else "The right label starts with the process, surface, temperature, chemistry and print method — not a default top-spec model.")),
+      (("应用温度 vs 峰值温度" if zh else "Application temperature vs. peak temperature"),
+       ("短时峰值温度不等于长期耐温；区分二者可避免现场失效。" if zh
+        else "A short-term peak rating is not a continuous service rating; separating them prevents field failures.")),
+      (("整体结构决定成败" if zh else "The whole construction matters"),
+       ("面材、胶粘剂、涂层、碳带与被贴表面共同决定标签能否存活，而非仅看面材。" if zh
+        else "Face material, adhesive, topcoat, ribbon and surface together decide whether a label survives — not the face alone.")),
+      (("回流焊、清洗与化学暴露" if zh else "Reflow, wash and chemical exposure"),
+       ("焊接前贴附的标签，需在高温、助焊剂、溶剂与多次清洗后仍保持清晰可读。" if zh
+        else "Labels applied before soldering must stay readable through heat, flux, solvents and repeated washes.")),
+    ]
+    cards="".join('<div class="card"><h3>%s</h3><p>%s</p></div>'%(esc(t),esc(d)) for t,d in items)
+    body=('<section class="blk"><div class="wrap"><div class="grid">%s</div></div></section>'
+          '<section class="blk"><div class="wrap"><div class="verify">%s</div></div></section>'
+          '<div class="wrap">%s</div>')%(cards,
+        ("更多应用笔记与选型参考陆续发布；需要具体型号资料请联系 ETIA。" if zh
+         else "More application notes and selection references are being published; contact ETIA for model-specific data."),
+        cta(lang))
+    crumb=[("Home","/"),("Insights","/insights/")]
+    write(lang,"/insights/",page(lang,"/insights/",
+        ("洞察 | ETIA" if zh else "Insights | ETIA"),
+        ("应用优先选型、温度读法、构造原理与工艺暴露 —— ETIA 标签应用知识。" if zh
+         else "Application-first selection, reading temperatures, construction and process exposure — ETIA label application knowledge."),
+        ("洞察" if zh else "Insights"),
+        ("关于严苛工业标签的应用知识 —— 帮助您在量产前选对材料。" if zh
+         else "Application knowledge for demanding industrial labels — to choose the right material before production."),
+        body, crumb, active="insights"))
+    if lang=="en": track("/insights/","core")
+
 def build_all():
   for lang in HOME_LANGS:   # home is 4-language (en, zh, vi, th)
     build_home(lang)
@@ -1083,7 +1151,8 @@ def build_all():
     build_outdoor_energy(lang)
     build_about(lang)
     build_contact(lang)
-    build_tech(lang)
+    build_insights(lang)
+    build_service(lang)
     # legal stubs (placeholder copy — to be replaced with reviewed legal text)
     build_stub(lang,"/privacy/","Privacy Policy","隐私政策",
         "This Privacy Policy explains how ETIA handles information collected through this website. Full reviewed policy text is being finalized.",
