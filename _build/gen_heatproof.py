@@ -764,16 +764,19 @@ def build_home(lang):
     final_cta=('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
                '<div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn on-dark" href="%s">%s</a></div></div></div>')%(
         esc(T["fcta_title"]),esc(T["fcta_para"]),home_hlink(lang,"/contact/"),esc(T["fcta_b1"]),home_hlink(lang,"/contact/"),esc(T["fcta_b2"]))
+    svc_html="".join('<div class="i">%s</div>'%esc(s) for s in T.get("svc",[]))
     body="""<section class="hero"><div class="wrap">
 <div class="eyebrow">%s</div><h1 class="serif">%s</h1>
 <p class="lede" style="color:var(--ink);font-size:20px;font-weight:600;max-width:32em">%s</p>
 <p class="lede">%s</p>
 <div class="btns"><a class="btn pri" href="#applications">%s</a><a class="btn sec" href="%s">%s</a></div></div></section>
+<section class="svcbar"><div class="wrap">%s</div></section>
 <section class="blk" style="background:var(--tint-green)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="whygrid">%s</div></div></section>
 <section class="blk" id="applications" style="background:var(--tint-blue)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div>
 <div style="margin-top:18px"><a class="btn sec" href="%s">%s →</a></div></div></section>
 %s""" % (
         esc(T["hero_eyebrow"]),esc(T["hero_h1"]),esc(T["hero_line"]),esc(T["hero_para"]),esc(T["hero_b1"]),home_hlink(lang,"/contact/"),esc(T["hero_b2"]),
+        svc_html,
         esc(T["why_eyebrow"]),esc(T["why_head"]),esc(T["why_intro"]),why_html,
         esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_cards,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]),
         final_cta)

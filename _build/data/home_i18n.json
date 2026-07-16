@@ -1,7 +1,22 @@
 {
-  "langs": ["en", "zh", "vi", "th"],
-  "prefix": {"en": "", "zh": "/zh", "vi": "/vi", "th": "/th"},
-  "lang_name": {"en": "EN", "zh": "中文", "vi": "Tiếng Việt", "th": "ไทย"},
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "prefix": {
+    "en": "",
+    "zh": "/zh",
+    "vi": "/vi",
+    "th": "/th"
+  },
+  "lang_name": {
+    "en": "EN",
+    "zh": "中文",
+    "vi": "Tiếng Việt",
+    "th": "ไทย"
+  },
   "focus_urls": [
     "/industries/electronics-pcb/",
     "/industries/",
@@ -11,7 +26,13 @@
     "/industries/outdoor-energy/"
   ],
   "en": {
-    "nav": ["Products", "Industries & Applications", "Technical Resources", "About ETIA", "Contact"],
+    "nav": [
+      "Products",
+      "Industries & Applications",
+      "Technical Resources",
+      "About ETIA",
+      "Contact"
+    ],
     "hero_eyebrow": "DURABLE IDENTIFICATION · SPECIALTY LABEL MATERIALS",
     "hero_h1": "Where Materials Meet Applications.",
     "hero_line": "Every durable label begins with understanding the application.",
@@ -22,34 +43,114 @@
     "why_head": "Built Around Your Application.",
     "why_intro": "Every application is different. That is where we begin.",
     "why": [
-      ["We Understand", "Application First", "We understand your application before recommending a material."],
-      ["We Match", "Material Expertise", "We match materials to real surfaces, processes, and environments."],
-      ["We Develop", "Beyond Standard Products", "We develop solutions for specialized requirements."],
-      ["We Support", "Long-Term Partnership", "From the first sample to dependable repeat supply."]
+      [
+        "We Understand",
+        "Application First",
+        "We understand your application before recommending a material."
+      ],
+      [
+        "We Match",
+        "Material Expertise",
+        "We match materials to real surfaces, processes, and environments."
+      ],
+      [
+        "We Develop",
+        "Beyond Standard Products",
+        "We develop solutions for specialized requirements."
+      ],
+      [
+        "We Support",
+        "Long-Term Partnership",
+        "From the first sample to dependable repeat supply."
+      ]
     ],
     "appc_eyebrow": "APPLICATION CENTER",
     "appc_title": "Find Your Application.",
     "appc_sub": "Explore durable label materials selected for specific processes, environments, and identification requirements.",
     "appc_viewall": "View All Applications",
     "focus": [
-      ["Electronics & PCB", ["Reflow", "Wave solder", "ESD", "PCB wash"]],
-      ["Metal Processing & Ceramics", ["Hot-metal direct", "Heat treatment", "Kiln 1300°C", "Annealing"]],
-      ["Medical & Pharma", ["Cryogenic", "Sterilization", "Skin-contact", "Laboratory"]],
-      ["Automotive", ["Underhood", "EV battery", "Wire harness", "VIN"]],
-      ["Wire & Cable", ["Flag", "Wrap-around", "Heat-shrink", "Harness"]],
-      ["Outdoor & Energy", ["Solar panels", "Outdoor equipment", "Energy storage", "UV / weather"]]
+      [
+        "Electronics & PCB",
+        [
+          "Reflow",
+          "Wave solder",
+          "ESD",
+          "PCB wash"
+        ]
+      ],
+      [
+        "Metal Processing & Ceramics",
+        [
+          "Hot-metal direct",
+          "Heat treatment",
+          "Kiln 1300°C",
+          "Annealing"
+        ]
+      ],
+      [
+        "Medical & Pharma",
+        [
+          "Cryogenic",
+          "Sterilization",
+          "Skin-contact",
+          "Laboratory"
+        ]
+      ],
+      [
+        "Automotive",
+        [
+          "Underhood",
+          "EV battery",
+          "Wire harness",
+          "VIN"
+        ]
+      ],
+      [
+        "Wire & Cable",
+        [
+          "Flag",
+          "Wrap-around",
+          "Heat-shrink",
+          "Harness"
+        ]
+      ],
+      [
+        "Outdoor & Energy",
+        [
+          "Solar panels",
+          "Outdoor equipment",
+          "Energy storage",
+          "UV / weather"
+        ]
+      ]
     ],
     "explore": "Explore",
     "fcta_title": "Cannot Find Your Application?",
     "fcta_para": "Tell us about your surface, process, environment, and identification requirements.",
     "fcta_b1": "Talk to a Label Specialist",
     "fcta_b2": "Request Samples",
-    "footer_heads": ["Navigation", "Legal", "Contact"],
+    "footer_heads": [
+      "Navigation",
+      "Legal",
+      "Contact"
+    ],
     "meta_title": "ETIA Label — Specialty & Ultra-High-Temperature Industrial Labels",
-    "meta_desc": "Durable, specialty label materials matched to your application — from cryogenic and high-heat to chemical, tamper-evident and PCB identification."
+    "meta_desc": "Durable, specialty label materials matched to your application — from cryogenic and high-heat to chemical, tamper-evident and PCB identification.",
+    "svc": [
+      "100% Quality Testing",
+      "Application-Driven Solutions",
+      "Flexible Supply",
+      "Long-Term Support"
+    ]
   },
   "zh": {
-    "nav": ["产品中心", "行业与应用", "技术资源", "关于ETIA", "联系我们"],
+    "nav": [
+      "产品中心",
+      "行业与应用",
+      "技术资源",
+      "关于ETIA",
+      "联系我们"
+    ],
     "hero_eyebrow": "耐久标识 · 特种标签材料",
     "hero_h1": "让材料，真正适配应用。",
     "hero_line": "每一枚耐久标签，都始于对应用的理解。",
@@ -60,34 +161,114 @@
     "why_head": "围绕您的应用而构建。",
     "why_intro": "每一种应用都不一样，我们从这里开始。",
     "why": [
-      ["我们理解", "应用优先", "在推荐材料之前，我们先理解您的真实应用。"],
-      ["我们匹配", "材料专业", "根据表面、工艺与环境匹配合适的材料。"],
-      ["我们开发", "超越标准产品", "针对专业需求开发更合适的材料方案。"],
-      ["我们支持", "长期合作", "从第一份样品，到稳定的重复供应。"]
+      [
+        "我们理解",
+        "应用优先",
+        "在推荐材料之前，我们先理解您的真实应用。"
+      ],
+      [
+        "我们匹配",
+        "材料专业",
+        "根据表面、工艺与环境匹配合适的材料。"
+      ],
+      [
+        "我们开发",
+        "超越标准产品",
+        "针对专业需求开发更合适的材料方案。"
+      ],
+      [
+        "我们支持",
+        "长期合作",
+        "从第一份样品，到稳定的重复供应。"
+      ]
     ],
     "appc_eyebrow": "应用中心",
     "appc_title": "查找您的应用。",
     "appc_sub": "根据具体工艺、环境与标识要求，探索适合的耐久标签材料。",
     "appc_viewall": "查看全部应用",
     "focus": [
-      ["电子制造与PCB", ["回流焊", "波峰焊", "ESD防静电", "PCB清洗"]],
-      ["金属加工与陶瓷", ["热态直贴", "热处理", "窑炉1300℃", "退火"]],
-      ["医疗与医药", ["超低温", "灭菌", "贴肤", "实验室"]],
-      ["汽车", ["发动机舱", "EV电池", "线束", "VIN"]],
-      ["电力与线缆", ["旗型", "缠绕", "热缩", "线束"]],
-      ["户外与能源", ["光伏组件", "户外设备", "储能电池", "耐UV耐候"]]
+      [
+        "电子制造与PCB",
+        [
+          "回流焊",
+          "波峰焊",
+          "ESD防静电",
+          "PCB清洗"
+        ]
+      ],
+      [
+        "金属加工与陶瓷",
+        [
+          "热态直贴",
+          "热处理",
+          "窑炉1300℃",
+          "退火"
+        ]
+      ],
+      [
+        "医疗与医药",
+        [
+          "超低温",
+          "灭菌",
+          "贴肤",
+          "实验室"
+        ]
+      ],
+      [
+        "汽车",
+        [
+          "发动机舱",
+          "EV电池",
+          "线束",
+          "VIN"
+        ]
+      ],
+      [
+        "电力与线缆",
+        [
+          "旗型",
+          "缠绕",
+          "热缩",
+          "线束"
+        ]
+      ],
+      [
+        "户外与能源",
+        [
+          "光伏组件",
+          "户外设备",
+          "储能电池",
+          "耐UV耐候"
+        ]
+      ]
     ],
     "explore": "进入",
     "fcta_title": "没有找到您的应用？",
     "fcta_para": "告诉我们粘贴表面、生产工艺、使用环境与标识要求。",
     "fcta_b1": "咨询标签专家",
     "fcta_b2": "申请样品",
-    "footer_heads": ["导航", "法律", "联系"],
+    "footer_heads": [
+      "导航",
+      "法律",
+      "联系"
+    ],
     "meta_title": "ETIA Label — 特种与超高温工业标签",
-    "meta_desc": "面向严苛环境的特种耐久标签材料，依应用匹配 —— 覆盖超低温、高温、化学、防篡改与 PCB 标识。"
+    "meta_desc": "面向严苛环境的特种耐久标签材料，依应用匹配 —— 覆盖超低温、高温、化学、防篡改与 PCB 标识。",
+    "svc": [
+      "100% 出货全检",
+      "以应用为导向的方案",
+      "灵活供货",
+      "长期技术支持"
+    ]
   },
   "vi": {
-    "nav": ["Sản phẩm", "Ngành & Ứng dụng", "Tài nguyên kỹ thuật", "Về ETIA", "Liên hệ"],
+    "nav": [
+      "Sản phẩm",
+      "Ngành & Ứng dụng",
+      "Tài nguyên kỹ thuật",
+      "Về ETIA",
+      "Liên hệ"
+    ],
     "hero_eyebrow": "NHẬN DIỆN BỀN VỮNG · VẬT LIỆU NHÃN CHUYÊN DỤNG",
     "hero_h1": "Nơi vật liệu đáp ứng đúng ứng dụng.",
     "hero_line": "Mỗi nhãn bền vững đều bắt đầu từ việc hiểu rõ ứng dụng.",
@@ -98,34 +279,114 @@
     "why_head": "Được xây dựng xoay quanh ứng dụng của bạn.",
     "why_intro": "Mỗi ứng dụng đều khác nhau. Đó là điểm chúng tôi bắt đầu.",
     "why": [
-      ["Chúng tôi thấu hiểu", "Ứng dụng là ưu tiên", "Chúng tôi tìm hiểu ứng dụng trước khi đề xuất vật liệu."],
-      ["Chúng tôi kết hợp", "Chuyên môn vật liệu", "Chúng tôi kết hợp vật liệu với bề mặt, quy trình và môi trường thực tế."],
-      ["Chúng tôi phát triển", "Vượt ra ngoài sản phẩm tiêu chuẩn", "Chúng tôi phát triển giải pháp cho các yêu cầu chuyên biệt."],
-      ["Chúng tôi đồng hành", "Hợp tác lâu dài", "Từ mẫu thử đầu tiên đến nguồn cung lặp lại ổn định."]
+      [
+        "Chúng tôi thấu hiểu",
+        "Ứng dụng là ưu tiên",
+        "Chúng tôi tìm hiểu ứng dụng trước khi đề xuất vật liệu."
+      ],
+      [
+        "Chúng tôi kết hợp",
+        "Chuyên môn vật liệu",
+        "Chúng tôi kết hợp vật liệu với bề mặt, quy trình và môi trường thực tế."
+      ],
+      [
+        "Chúng tôi phát triển",
+        "Vượt ra ngoài sản phẩm tiêu chuẩn",
+        "Chúng tôi phát triển giải pháp cho các yêu cầu chuyên biệt."
+      ],
+      [
+        "Chúng tôi đồng hành",
+        "Hợp tác lâu dài",
+        "Từ mẫu thử đầu tiên đến nguồn cung lặp lại ổn định."
+      ]
     ],
     "appc_eyebrow": "TRUNG TÂM ỨNG DỤNG",
     "appc_title": "Tìm ứng dụng của bạn.",
     "appc_sub": "Khám phá vật liệu nhãn bền vững được lựa chọn theo từng quy trình, môi trường và yêu cầu nhận diện cụ thể.",
     "appc_viewall": "Xem tất cả ứng dụng",
     "focus": [
-      ["Điện tử & PCB", ["Hàn reflow", "Hàn sóng", "ESD", "Rửa PCB"]],
-      ["Gia công kim loại & Gốm sứ", ["Dán kim loại nóng", "Xử lý nhiệt", "Nung 1300°C", "Ủ nhiệt"]],
-      ["Y tế & Dược phẩm", ["Siêu lạnh", "Tiệt trùng", "Tiếp xúc da", "Phòng thí nghiệm"]],
-      ["Ô tô", ["Khoang máy", "Pin EV", "Bó dây", "VIN"]],
-      ["Dây & Cáp", ["Nhãn cờ", "Quấn quanh", "Ống co nhiệt", "Bó dây"]],
-      ["Ngoài trời & Năng lượng", ["Tấm pin mặt trời", "Thiết bị ngoài trời", "Lưu trữ năng lượng", "UV / Thời tiết"]]
+      [
+        "Điện tử & PCB",
+        [
+          "Hàn reflow",
+          "Hàn sóng",
+          "ESD",
+          "Rửa PCB"
+        ]
+      ],
+      [
+        "Gia công kim loại & Gốm sứ",
+        [
+          "Dán kim loại nóng",
+          "Xử lý nhiệt",
+          "Nung 1300°C",
+          "Ủ nhiệt"
+        ]
+      ],
+      [
+        "Y tế & Dược phẩm",
+        [
+          "Siêu lạnh",
+          "Tiệt trùng",
+          "Tiếp xúc da",
+          "Phòng thí nghiệm"
+        ]
+      ],
+      [
+        "Ô tô",
+        [
+          "Khoang máy",
+          "Pin EV",
+          "Bó dây",
+          "VIN"
+        ]
+      ],
+      [
+        "Dây & Cáp",
+        [
+          "Nhãn cờ",
+          "Quấn quanh",
+          "Ống co nhiệt",
+          "Bó dây"
+        ]
+      ],
+      [
+        "Ngoài trời & Năng lượng",
+        [
+          "Tấm pin mặt trời",
+          "Thiết bị ngoài trời",
+          "Lưu trữ năng lượng",
+          "UV / Thời tiết"
+        ]
+      ]
     ],
     "explore": "Khám phá",
     "fcta_title": "Chưa tìm thấy ứng dụng của bạn?",
     "fcta_para": "Hãy cho chúng tôi biết bề mặt, quy trình, môi trường và yêu cầu nhận diện của bạn.",
     "fcta_b1": "Trao đổi với chuyên gia nhãn",
     "fcta_b2": "Yêu cầu mẫu",
-    "footer_heads": ["Điều hướng", "Pháp lý", "Liên hệ"],
+    "footer_heads": [
+      "Điều hướng",
+      "Pháp lý",
+      "Liên hệ"
+    ],
     "meta_title": "ETIA Label — Vật liệu nhãn công nghiệp chuyên dụng",
-    "meta_desc": "Vật liệu nhãn bền vững, chuyên dụng, được kết hợp theo ứng dụng của bạn — từ siêu lạnh và nhiệt độ cao đến hóa chất, chống giả mạo và nhận diện PCB."
+    "meta_desc": "Vật liệu nhãn bền vững, chuyên dụng, được kết hợp theo ứng dụng của bạn — từ siêu lạnh và nhiệt độ cao đến hóa chất, chống giả mạo và nhận diện PCB.",
+    "svc": [
+      "Kiểm tra chất lượng 100%",
+      "Giải pháp theo ứng dụng",
+      "Cung ứng linh hoạt",
+      "Hỗ trợ dài hạn"
+    ]
   },
   "th": {
-    "nav": ["ผลิตภัณฑ์", "อุตสาหกรรมและการใช้งาน", "ทรัพยากรทางเทคนิค", "เกี่ยวกับ ETIA", "ติดต่อ"],
+    "nav": [
+      "ผลิตภัณฑ์",
+      "อุตสาหกรรมและการใช้งาน",
+      "ทรัพยากรทางเทคนิค",
+      "เกี่ยวกับ ETIA",
+      "ติดต่อ"
+    ],
     "hero_eyebrow": "ระบบระบุข้อมูลที่ทนทาน · วัสดุฉลากเฉพาะทาง",
     "hero_h1": "จุดที่วัสดุตอบโจทย์การใช้งานจริง",
     "hero_line": "ฉลากที่ทนทานทุกชนิดเริ่มต้นจากการเข้าใจการใช้งาน",
@@ -136,30 +397,104 @@
     "why_head": "ออกแบบแนวทางโดยยึดการใช้งานของคุณเป็นหลัก",
     "why_intro": "ทุกการใช้งานแตกต่างกัน และนั่นคือจุดเริ่มต้นของเรา",
     "why": [
-      ["เราทำความเข้าใจ", "เริ่มจากการใช้งาน", "เราเข้าใจการใช้งานก่อนแนะนำวัสดุ"],
-      ["เราจับคู่", "ความเชี่ยวชาญด้านวัสดุ", "เราจับคู่วัสดุให้เหมาะกับพื้นผิว กระบวนการ และสภาพแวดล้อมจริง"],
-      ["เราพัฒนา", "เหนือกว่าผลิตภัณฑ์มาตรฐาน", "เราพัฒนาโซลูชันสำหรับความต้องการเฉพาะทาง"],
-      ["เราสนับสนุน", "ความร่วมมือระยะยาว", "ตั้งแต่ตัวอย่างชิ้นแรก ไปจนถึงการจัดส่งซ้ำอย่างต่อเนื่อง"]
+      [
+        "เราทำความเข้าใจ",
+        "เริ่มจากการใช้งาน",
+        "เราเข้าใจการใช้งานก่อนแนะนำวัสดุ"
+      ],
+      [
+        "เราจับคู่",
+        "ความเชี่ยวชาญด้านวัสดุ",
+        "เราจับคู่วัสดุให้เหมาะกับพื้นผิว กระบวนการ และสภาพแวดล้อมจริง"
+      ],
+      [
+        "เราพัฒนา",
+        "เหนือกว่าผลิตภัณฑ์มาตรฐาน",
+        "เราพัฒนาโซลูชันสำหรับความต้องการเฉพาะทาง"
+      ],
+      [
+        "เราสนับสนุน",
+        "ความร่วมมือระยะยาว",
+        "ตั้งแต่ตัวอย่างชิ้นแรก ไปจนถึงการจัดส่งซ้ำอย่างต่อเนื่อง"
+      ]
     ],
     "appc_eyebrow": "ศูนย์รวมการใช้งาน",
     "appc_title": "ค้นหาการใช้งานของคุณ",
     "appc_sub": "สำรวจวัสดุฉลากที่ทนทานซึ่งคัดเลือกตามกระบวนการ สภาพแวดล้อม และข้อกำหนดด้านการระบุข้อมูลแต่ละประเภท",
     "appc_viewall": "ดูการใช้งานทั้งหมด",
     "focus": [
-      ["อิเล็กทรอนิกส์และ PCB", ["รีโฟลว์", "เวฟโซลเดอร์", "ESD", "ล้าง PCB"]],
-      ["งานโลหะและเซรามิก", ["ติดโลหะร้อน", "อบชุบความร้อน", "เผา 1300°C", "อบอ่อน"]],
-      ["การแพทย์และเภสัชกรรม", ["อุณหภูมิต่ำมาก", "ฆ่าเชื้อ", "สัมผัสผิว", "ห้องปฏิบัติการ"]],
-      ["ยานยนต์", ["ห้องเครื่อง", "แบตเตอรี่ EV", "ชุดสายไฟ", "VIN"]],
-      ["สายไฟและเคเบิล", ["ฉลากธง", "พันรอบ", "ท่อหด", "ชุดสายไฟ"]],
-      ["กลางแจ้งและพลังงาน", ["แผงโซลาร์", "อุปกรณ์กลางแจ้ง", "กักเก็บพลังงาน", "UV / สภาพอากาศ"]]
+      [
+        "อิเล็กทรอนิกส์และ PCB",
+        [
+          "รีโฟลว์",
+          "เวฟโซลเดอร์",
+          "ESD",
+          "ล้าง PCB"
+        ]
+      ],
+      [
+        "งานโลหะและเซรามิก",
+        [
+          "ติดโลหะร้อน",
+          "อบชุบความร้อน",
+          "เผา 1300°C",
+          "อบอ่อน"
+        ]
+      ],
+      [
+        "การแพทย์และเภสัชกรรม",
+        [
+          "อุณหภูมิต่ำมาก",
+          "ฆ่าเชื้อ",
+          "สัมผัสผิว",
+          "ห้องปฏิบัติการ"
+        ]
+      ],
+      [
+        "ยานยนต์",
+        [
+          "ห้องเครื่อง",
+          "แบตเตอรี่ EV",
+          "ชุดสายไฟ",
+          "VIN"
+        ]
+      ],
+      [
+        "สายไฟและเคเบิล",
+        [
+          "ฉลากธง",
+          "พันรอบ",
+          "ท่อหด",
+          "ชุดสายไฟ"
+        ]
+      ],
+      [
+        "กลางแจ้งและพลังงาน",
+        [
+          "แผงโซลาร์",
+          "อุปกรณ์กลางแจ้ง",
+          "กักเก็บพลังงาน",
+          "UV / สภาพอากาศ"
+        ]
+      ]
     ],
     "explore": "สำรวจ",
     "fcta_title": "ยังไม่พบการใช้งานของคุณใช่หรือไม่?",
     "fcta_para": "แจ้งให้เราทราบเกี่ยวกับพื้นผิว กระบวนการ สภาพแวดล้อม และข้อกำหนดด้านการระบุข้อมูลของคุณ",
     "fcta_b1": "ปรึกษาผู้เชี่ยวชาญด้านฉลาก",
     "fcta_b2": "ขอตัวอย่าง",
-    "footer_heads": ["เมนู", "กฎหมาย", "ติดต่อ"],
+    "footer_heads": [
+      "เมนู",
+      "กฎหมาย",
+      "ติดต่อ"
+    ],
     "meta_title": "ETIA Label — วัสดุฉลากอุตสาหกรรมเฉพาะทาง",
-    "meta_desc": "วัสดุฉลากที่ทนทานและเฉพาะทาง เลือกให้เหมาะกับการใช้งานของคุณ — ตั้งแต่อุณหภูมิต่ำมากและความร้อนสูง ไปจนถึงสารเคมี การป้องกันการปลอมแปลง และการระบุ PCB"
+    "meta_desc": "วัสดุฉลากที่ทนทานและเฉพาะทาง เลือกให้เหมาะกับการใช้งานของคุณ — ตั้งแต่อุณหภูมิต่ำมากและความร้อนสูง ไปจนถึงสารเคมี การป้องกันการปลอมแปลง และการระบุ PCB",
+    "svc": [
+      "ตรวจสอบคุณภาพ 100%",
+      "โซลูชันตามการใช้งาน",
+      "การจัดหาที่ยืดหยุ่น",
+      "การสนับสนุนระยะยาว"
+    ]
   }
 }
