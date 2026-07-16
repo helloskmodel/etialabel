@@ -200,3 +200,27 @@ Tags: 抗紫外线 · 耐候 · 长期耐久
 - Desktop: image ~55% / copy ~45%; show carousel numbering e.g. 01 / 06.
 - Mobile order: image → industry → headline → three tags → featured material → CTA.
 - Products appear only as supporting proof within each slide. The application remains the primary navigation path.
+
+---
+
+# REVISION 2026-07-16 — Six-application cards (refined) + Design update
+
+**Font (whole site):** `"Inter","PingFang SC","Microsoft YaHei","Noto Sans SC","Noto Sans Thai",system-ui,-apple-system,"Segoe UI",sans-serif` — match www.etiatech.com.
+
+**Application section format changed:** from one-at-a-time big image+copy carousel → SIX cards, image on top / copy below, all six visible on one screen, animate on hover. Card = industry name · application headline · one value line · three tags · View Application. (Featured material/model removed from these cards.)
+
+## Six application cards (industry name / application headline EN·ZH / value line / 3 tags)
+1. Electronics Manufacturing & PCB / 电子制造与 PCB — High-Temperature Polyimide PCB Labels / 耐高温聚酰亚胺 PCB 标签 — Lead-Free Reflow · Chemical Cleaning · Precision Print
+2. Metals, Ceramics & Heat Treatment / 金属、陶瓷与热处理 — Ultra-High-Temperature Direct-Apply Labels / 超高温直贴标签 — Hot-Surface Apply · Heat Treatment · Kiln Firing  (900°C steel + 1300°C ceramic — exact temps live on product pages only, not one material for all)
+3. Medical, Pharmaceutical & Laboratory / 医疗、医药与实验室 — Cryogenic and Chemical-Resistant Identification / 深低温与耐化学标识 — −196°C Storage · Freeze-Thaw · Chemical Resistant  (slide labels can be own page: Histology Slide / Chemical-Resistant Slide Labels; verified soak times in body)
+4. Automotive, Tire & Rubber / 汽车、轮胎与橡胶 — Durable Identification for Automotive and Rubber Processing / 汽车与橡胶加工耐久标识 — Oily Surfaces · Vulcanization · VIN Tracking
+5. Wire & Cable / 电线与电缆 — Durable Wire and Cable Identification / 耐久电线电缆标识 — Small Diameter · Abrasion · Long-Term Tracking
+6. Outdoor & Energy / 户外与能源 — Weather-Resistant Outdoor Identification / 户外耐候标识 — UV Resistant · Weatherable · Long-Term Durability
+
+## Six featured products (PENDING — same card pattern; application title main, model small) — placement TBD
+1. Ultra-High-Temperature Direct Apply / 超高温直贴标识 — ETIA HP Series
+2. Direct Apply for Cryogenic Storage / 深低温直接贴标与液氮存储 — ETIA Cryogenic Series
+3. High-Temperature PCB Polyimide / 现代 PCB 耐高温聚酰亚胺标签 — POLYONICS / APEX Series
+4. High Adhesion for Oily Surfaces / 油污表面超粘标签 — ETIA High-Adhesion Series
+5. Chemical-Resistant Slide Identification / 耐化学载玻片标签 — ETIA Laboratory Series
+6. Dual-Layer ESD-Safe Identification / 双层抗静电标签 — ETIA / Selected Specialty Materials

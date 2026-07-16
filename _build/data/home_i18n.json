@@ -67,75 +67,63 @@
     "focus": [
       {
         "name": "Electronics Manufacturing & PCB",
-        "headline": "High-Temperature PCB Identification",
-        "desc": "Durable polyimide label materials for lead-free reflow, chemical cleaning, precision printing, and barcode traceability.",
+        "headline": "High-Temperature Polyimide PCB Labels",
+        "desc": "For modern lead-free reflow, chemical cleaning, precision printing and barcode traceability.",
         "tags": [
           "Lead-Free Reflow",
-          "Chemical Resistant",
+          "Chemical Cleaning",
           "Precision Print"
-        ],
-        "feat_kind": "Featured Material",
-        "feat": "POLYONICS High-Temperature Polyimide"
+        ]
       },
       {
         "name": "Metals, Ceramics & Heat Treatment",
-        "headline": "Ultra-High-Temperature Process Tracking",
-        "desc": "Identification solutions for hot metal, heat treatment, ceramic firing, and other extreme-temperature processes.",
+        "headline": "Ultra-High-Temperature Direct-Apply Labels",
+        "desc": "For hot-state steel, heat-treatment tracking and ceramic kiln firing.",
         "tags": [
-          "Direct Apply",
+          "Hot-Surface Apply",
           "Heat Treatment",
           "Kiln Firing"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "ETIA Ultra-High-Temperature Series"
+        ]
       },
       {
         "name": "Medical, Pharmaceutical & Laboratory",
         "headline": "Cryogenic and Chemical-Resistant Identification",
-        "desc": "Durable identification for ultra-low-temperature application, liquid nitrogen storage, laboratory slides, and chemical-intensive workflows.",
+        "desc": "For low-temperature direct apply, liquid-nitrogen storage, slides and laboratory chemical workflows.",
         "tags": [
           "−196°C Storage",
           "Freeze-Thaw",
           "Chemical Resistant"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "ETIA Cryogenic & Laboratory Series"
+        ]
       },
       {
         "name": "Automotive, Tire & Rubber",
-        "headline": "Durable Identification for Demanding Surfaces",
-        "desc": "High-performance labels for oily surfaces, tire vulcanization, VIN identification, and long-term automotive traceability.",
+        "headline": "Durable Identification for Automotive and Rubber Processing",
+        "desc": "For oily surfaces, tire vulcanization, VIN laser marking and long-term traceability.",
         "tags": [
           "Oily Surfaces",
           "Vulcanization",
           "VIN Tracking"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "ETIA High-Adhesion Series"
+        ]
       },
       {
         "name": "Wire & Cable",
         "headline": "Durable Wire and Cable Identification",
-        "desc": "Reliable identification for small-diameter cables, curved surfaces, abrasion, heat, and long-term tracking.",
+        "desc": "For small-diameter cables, curved surfaces, abrasion, heat and long-term identification.",
         "tags": [
           "Small Diameter",
-          "Abrasion Resistant",
+          "Abrasion",
           "Long-Term Tracking"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "Specialty Wire & Cable Materials"
+        ]
       },
       {
         "name": "Outdoor & Energy",
-        "headline": "Long-Term Outdoor Identification",
-        "desc": "Weather-resistant label materials for sunlight, moisture, temperature changes, abrasion, and demanding outdoor environments.",
+        "headline": "Weather-Resistant Outdoor Identification",
+        "desc": "For UV, rain, temperature swings, abrasion and long-term outdoor exposure.",
         "tags": [
           "UV Resistant",
           "Weatherable",
           "Long-Term Durability"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "Outdoor Durable Label Materials"
+        ]
       }
     ],
     "explore": "View Application",
@@ -200,75 +188,63 @@
     "focus": [
       {
         "name": "电子制造与 PCB",
-        "headline": "PCB 耐高温标识",
-        "desc": "面向无铅回流焊、化学清洗、精密小字打印及条码追溯的耐久聚酰亚胺标签材料。",
+        "headline": "耐高温聚酰亚胺 PCB 标签",
+        "desc": "适用于现代无铅回流焊、化学清洗、精密小字打印与条码追溯。",
         "tags": [
           "无铅回流焊",
-          "耐化学",
+          "化学清洗",
           "精密打印"
-        ],
-        "feat_kind": "代表材料",
-        "feat": "POLYONICS 耐高温聚酰亚胺材料"
+        ]
       },
       {
         "name": "金属、陶瓷与热处理",
-        "headline": "超高温生产过程追踪",
-        "desc": "适用于热态金属、热处理、陶瓷烧制及其他极端高温生产流程的标识方案。",
+        "headline": "超高温直贴标签",
+        "desc": "适用于热态钢铁、热处理追踪及陶瓷窑炉烧制。",
         "tags": [
           "高温直贴",
           "热处理",
           "窑炉烧制"
-        ],
-        "feat_kind": "代表方案",
-        "feat": "ETIA 超高温标签系列"
+        ]
       },
       {
         "name": "医疗、医药与实验室",
         "headline": "深低温与耐化学标识",
-        "desc": "适用于超低温直接贴标、液氮长期存储、实验室载玻片及强化学流程的耐久标识。",
+        "desc": "适用于低温直接贴标、液氮长期存储、载玻片及实验室化学流程。",
         "tags": [
           "−196°C 存储",
           "冻融循环",
           "耐化学"
-        ],
-        "feat_kind": "代表方案",
-        "feat": "ETIA 深低温与实验室标签系列"
+        ]
       },
       {
         "name": "汽车、轮胎与橡胶",
-        "headline": "面向复杂表面的耐久标识",
-        "desc": "适用于油污表面、轮胎硫化、VIN 标识及汽车全生命周期追溯的高性能标签。",
+        "headline": "汽车与橡胶加工耐久标识",
+        "desc": "适用于油污表面、轮胎硫化、VIN 激光标识及长期追溯。",
         "tags": [
           "油污表面",
           "硫化工艺",
           "VIN 追溯"
-        ],
-        "feat_kind": "代表方案",
-        "feat": "ETIA 超粘标签系列"
+        ]
       },
       {
         "name": "电线与电缆",
         "headline": "耐久电线电缆标识",
-        "desc": "适用于细径线缆、弯曲表面、摩擦、高温及长期追踪的可靠标识方案。",
+        "desc": "适用于细径线缆、弯曲表面、摩擦、热处理及长期识别。",
         "tags": [
           "细径线缆",
           "耐磨",
           "长期追踪"
-        ],
-        "feat_kind": "代表方案",
-        "feat": "电线电缆特种标签材料"
+        ]
       },
       {
         "name": "户外与能源",
-        "headline": "长期户外耐候标识",
-        "desc": "适用于阳光、潮湿、温差、磨损及其他严苛户外环境的耐候标签材料。",
+        "headline": "户外耐候标识",
+        "desc": "适用于紫外线、雨水、温差、磨损及长期户外暴露。",
         "tags": [
           "抗紫外线",
           "耐候",
           "长期耐久"
-        ],
-        "feat_kind": "代表方案",
-        "feat": "户外耐久标签材料"
+        ]
       }
     ],
     "explore": "查看应用",
@@ -333,75 +309,63 @@
     "focus": [
       {
         "name": "Electronics Manufacturing & PCB",
-        "headline": "High-Temperature PCB Identification",
-        "desc": "Durable polyimide label materials for lead-free reflow, chemical cleaning, precision printing, and barcode traceability.",
+        "headline": "High-Temperature Polyimide PCB Labels",
+        "desc": "For modern lead-free reflow, chemical cleaning, precision printing and barcode traceability.",
         "tags": [
           "Lead-Free Reflow",
-          "Chemical Resistant",
+          "Chemical Cleaning",
           "Precision Print"
-        ],
-        "feat_kind": "Featured Material",
-        "feat": "POLYONICS High-Temperature Polyimide"
+        ]
       },
       {
         "name": "Metals, Ceramics & Heat Treatment",
-        "headline": "Ultra-High-Temperature Process Tracking",
-        "desc": "Identification solutions for hot metal, heat treatment, ceramic firing, and other extreme-temperature processes.",
+        "headline": "Ultra-High-Temperature Direct-Apply Labels",
+        "desc": "For hot-state steel, heat-treatment tracking and ceramic kiln firing.",
         "tags": [
-          "Direct Apply",
+          "Hot-Surface Apply",
           "Heat Treatment",
           "Kiln Firing"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "ETIA Ultra-High-Temperature Series"
+        ]
       },
       {
         "name": "Medical, Pharmaceutical & Laboratory",
         "headline": "Cryogenic and Chemical-Resistant Identification",
-        "desc": "Durable identification for ultra-low-temperature application, liquid nitrogen storage, laboratory slides, and chemical-intensive workflows.",
+        "desc": "For low-temperature direct apply, liquid-nitrogen storage, slides and laboratory chemical workflows.",
         "tags": [
           "−196°C Storage",
           "Freeze-Thaw",
           "Chemical Resistant"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "ETIA Cryogenic & Laboratory Series"
+        ]
       },
       {
         "name": "Automotive, Tire & Rubber",
-        "headline": "Durable Identification for Demanding Surfaces",
-        "desc": "High-performance labels for oily surfaces, tire vulcanization, VIN identification, and long-term automotive traceability.",
+        "headline": "Durable Identification for Automotive and Rubber Processing",
+        "desc": "For oily surfaces, tire vulcanization, VIN laser marking and long-term traceability.",
         "tags": [
           "Oily Surfaces",
           "Vulcanization",
           "VIN Tracking"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "ETIA High-Adhesion Series"
+        ]
       },
       {
         "name": "Wire & Cable",
         "headline": "Durable Wire and Cable Identification",
-        "desc": "Reliable identification for small-diameter cables, curved surfaces, abrasion, heat, and long-term tracking.",
+        "desc": "For small-diameter cables, curved surfaces, abrasion, heat and long-term identification.",
         "tags": [
           "Small Diameter",
-          "Abrasion Resistant",
+          "Abrasion",
           "Long-Term Tracking"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "Specialty Wire & Cable Materials"
+        ]
       },
       {
         "name": "Outdoor & Energy",
-        "headline": "Long-Term Outdoor Identification",
-        "desc": "Weather-resistant label materials for sunlight, moisture, temperature changes, abrasion, and demanding outdoor environments.",
+        "headline": "Weather-Resistant Outdoor Identification",
+        "desc": "For UV, rain, temperature swings, abrasion and long-term outdoor exposure.",
         "tags": [
           "UV Resistant",
           "Weatherable",
           "Long-Term Durability"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "Outdoor Durable Label Materials"
+        ]
       }
     ],
     "explore": "Khám phá",
@@ -466,75 +430,63 @@
     "focus": [
       {
         "name": "Electronics Manufacturing & PCB",
-        "headline": "High-Temperature PCB Identification",
-        "desc": "Durable polyimide label materials for lead-free reflow, chemical cleaning, precision printing, and barcode traceability.",
+        "headline": "High-Temperature Polyimide PCB Labels",
+        "desc": "For modern lead-free reflow, chemical cleaning, precision printing and barcode traceability.",
         "tags": [
           "Lead-Free Reflow",
-          "Chemical Resistant",
+          "Chemical Cleaning",
           "Precision Print"
-        ],
-        "feat_kind": "Featured Material",
-        "feat": "POLYONICS High-Temperature Polyimide"
+        ]
       },
       {
         "name": "Metals, Ceramics & Heat Treatment",
-        "headline": "Ultra-High-Temperature Process Tracking",
-        "desc": "Identification solutions for hot metal, heat treatment, ceramic firing, and other extreme-temperature processes.",
+        "headline": "Ultra-High-Temperature Direct-Apply Labels",
+        "desc": "For hot-state steel, heat-treatment tracking and ceramic kiln firing.",
         "tags": [
-          "Direct Apply",
+          "Hot-Surface Apply",
           "Heat Treatment",
           "Kiln Firing"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "ETIA Ultra-High-Temperature Series"
+        ]
       },
       {
         "name": "Medical, Pharmaceutical & Laboratory",
         "headline": "Cryogenic and Chemical-Resistant Identification",
-        "desc": "Durable identification for ultra-low-temperature application, liquid nitrogen storage, laboratory slides, and chemical-intensive workflows.",
+        "desc": "For low-temperature direct apply, liquid-nitrogen storage, slides and laboratory chemical workflows.",
         "tags": [
           "−196°C Storage",
           "Freeze-Thaw",
           "Chemical Resistant"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "ETIA Cryogenic & Laboratory Series"
+        ]
       },
       {
         "name": "Automotive, Tire & Rubber",
-        "headline": "Durable Identification for Demanding Surfaces",
-        "desc": "High-performance labels for oily surfaces, tire vulcanization, VIN identification, and long-term automotive traceability.",
+        "headline": "Durable Identification for Automotive and Rubber Processing",
+        "desc": "For oily surfaces, tire vulcanization, VIN laser marking and long-term traceability.",
         "tags": [
           "Oily Surfaces",
           "Vulcanization",
           "VIN Tracking"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "ETIA High-Adhesion Series"
+        ]
       },
       {
         "name": "Wire & Cable",
         "headline": "Durable Wire and Cable Identification",
-        "desc": "Reliable identification for small-diameter cables, curved surfaces, abrasion, heat, and long-term tracking.",
+        "desc": "For small-diameter cables, curved surfaces, abrasion, heat and long-term identification.",
         "tags": [
           "Small Diameter",
-          "Abrasion Resistant",
+          "Abrasion",
           "Long-Term Tracking"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "Specialty Wire & Cable Materials"
+        ]
       },
       {
         "name": "Outdoor & Energy",
-        "headline": "Long-Term Outdoor Identification",
-        "desc": "Weather-resistant label materials for sunlight, moisture, temperature changes, abrasion, and demanding outdoor environments.",
+        "headline": "Weather-Resistant Outdoor Identification",
+        "desc": "For UV, rain, temperature swings, abrasion and long-term outdoor exposure.",
         "tags": [
           "UV Resistant",
           "Weatherable",
           "Long-Term Durability"
-        ],
-        "feat_kind": "Featured Solution",
-        "feat": "Outdoor Durable Label Materials"
+        ]
       }
     ],
     "explore": "สำรวจ",

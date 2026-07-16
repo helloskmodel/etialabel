@@ -45,8 +45,8 @@ CSS = """
 :root{--ink:#141b2d;--mut:#5c6678;--faint:#8a93a3;--line:#e7ebf2;--bg:#f6f8fc;--mint:#f1f7ef;
 --tint-green:#f0f5ee;--tint-blue:#edf2fb;
 --blue-deep:#143C96;--blue:#1A56DB;--green:#41A62A;--green-d:#358B22;
---serif:'Iowan Old Style','Palatino Linotype','Palatino','Georgia',serif;
---sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+--serif:'Inter','PingFang SC','Microsoft YaHei','Noto Sans SC','Noto Sans Thai',system-ui,-apple-system,'Segoe UI',sans-serif;
+--sans:'Inter','PingFang SC','Microsoft YaHei','Noto Sans SC','Noto Sans Thai',system-ui,-apple-system,'Segoe UI',sans-serif}
 body{font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
 img{max-width:100%}
@@ -190,7 +190,23 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .carrow{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:16px;color:var(--ink);line-height:1}
 .carrow:hover{border-color:var(--blue);color:var(--blue)}
 .whyclose{text-align:center;font-family:var(--serif);font-weight:600;color:var(--blue-deep);font-size:18px;letter-spacing:.02em;margin-top:26px}
-/* explore-by-application carousel */
+/* explore-by-application: six cards (image top / copy below) */
+.acgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.acard{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;color:var(--ink);transition:transform .18s,box-shadow .18s,border-color .18s}
+.acard:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(20,40,90,.14);border-color:var(--blue);text-decoration:none}
+.acard-img{position:relative;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.acard-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.acard:hover .acard-img img{transform:scale(1.06)}
+.acard-img .aicon{color:#ffffffe6}
+.acard-img .aicon svg{width:54px;height:54px}
+.acard-body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.acard-eyebrow{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--green-d);margin-bottom:7px}
+.acard-body h3{font-weight:700;font-size:18px;color:var(--blue-deep);line-height:1.22;margin-bottom:7px}
+.acard-body>p{font-size:13.5px;color:var(--mut);flex:1}
+.acard .atags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.acard .atags span{font-size:11.5px;font-weight:700;color:var(--blue);background:#eaf1ff;border:1px solid #d6e2fb;border-radius:14px;padding:4px 10px}
+.acard-go{color:var(--blue);font-weight:700;font-size:13.5px}
+/* explore-by-application carousel (legacy) */
 .acar-wrap{position:relative;margin-top:8px}
 .acar{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:20px;border:1px solid var(--line);background:#fff;scrollbar-width:none}
 .acar::-webkit-scrollbar{display:none}
@@ -221,6 +237,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 @media(max-width:820px){.two{grid-template-columns:1fr}footer .fg{grid-template-columns:1fr}.pagehead h1{font-size:30px}
 .hero h1{font-size:32px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}
 .split{grid-template-columns:1fr;gap:22px}.split .imgframe{order:-1}.split .txt h2{font-size:25px}
+.acgrid{grid-template-columns:1fr}
 .aslide{grid-template-columns:1fr;min-height:0}.aimg{min-height:190px}.aimg .aicon svg{width:60px;height:60px}.acopy{padding:26px 24px}.acopy h3{font-size:22px}.acar-nav{display:none}
 .cslide .cap h3{font-size:20px}}
 """
@@ -787,24 +804,16 @@ def build_home(lang):
     why_html="".join('<div class="why"><div class="ic">%s</div><div class="txt"><b>%s</b><p>%s</p></div></div>'%(
         WHY_ICONS[k%len(WHY_ICONS)],esc(head),esc(text)) for k,(head,text) in enumerate(T["why"]))
     why_close=('<p class="whyclose">%s</p>'%esc(T["why_close"])) if T.get("why_close") else ""
-    # Explore by Application — large image + copy carousel (one industry per slide)
-    n=len(T["focus"])
-    slides=""
+    # Explore by Application — six cards (image on top, copy below; all six visible, animate on hover)
+    cards=""
     for k,f in enumerate(T["focus"]):
         tags="".join('<span>%s</span>'%esc(t) for t in f["tags"])
-        slides+=('<div class="aslide">'
-                 '<div class="aimg g%d"><span class="aicon">%s</span><span class="anum">%02d / %02d</span></div>'
-                 '<div class="acopy"><div class="aeyebrow">%s</div><h3>%s</h3><p>%s</p>'
-                 '<div class="atags">%s</div>'
-                 '<div class="afeat"><span class="k">%s</span><span class="v">%s</span></div>'
-                 '<a class="btn sec" href="%s">%s →</a></div></div>')%(
-            k%6, INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)], k+1, n,
-            esc(f["name"]), esc(f["headline"]), esc(f["desc"]), tags,
-            esc(f["feat_kind"]), esc(f["feat"]),
-            home_hlink(lang,FOCUS_URLS[k]), esc(T["explore"]))
-    app_carousel=('<div class="acar-wrap"><button class="acar-nav prev" type="button" aria-label="Previous" onclick="etaSlide(-1)">‹</button>'
-                  '<div class="acar" id="acar">%s</div>'
-                  '<button class="acar-nav next" type="button" aria-label="Next" onclick="etaSlide(1)">›</button></div>')%slides
+        cards+=('<a class="acard" href="%s"><div class="acard-img g%d"><span class="aicon">%s</span></div>'
+                '<div class="acard-body"><div class="acard-eyebrow">%s</div><h3>%s</h3><p>%s</p>'
+                '<div class="atags">%s</div><div class="acard-go">%s →</div></div></a>')%(
+            home_hlink(lang,FOCUS_URLS[k]), k%6, INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)],
+            esc(f["name"]), esc(f["headline"]), esc(f["desc"]), tags, esc(T["explore"]))
+    app_grid='<div class="acgrid">%s</div>'%cards
     final_cta=('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
                '<div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn on-dark" href="%s">%s</a></div></div></div>')%(
         esc(T["fcta_title"]),esc(T["fcta_para"]),home_hlink(lang,"/contact/"),esc(T["fcta_b1"]),home_hlink(lang,"/contact/"),esc(T["fcta_b2"]))
@@ -822,7 +831,7 @@ def build_home(lang):
         esc(T["hero_eyebrow"]),esc(T["hero_h1"]),esc(T["hero_line"]),esc(T["hero_para"]),esc(T["hero_b1"]),home_hlink(lang,"/contact/"),esc(T["hero_b2"]),
         svc_html,
         esc(T["why_eyebrow"]),esc(T["why_head"]),esc(T["why_intro"]),why_html,why_close,
-        esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_carousel,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]),
+        esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_grid,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]),
         final_cta)
     canonical=SITE+HL_PREFIX[lang]+path
     schema_js='<script type="application/ld+json">%s</script>'%json.dumps(ORG_JSONLD,ensure_ascii=False)
