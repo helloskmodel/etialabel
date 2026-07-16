@@ -67,24 +67,29 @@ nav .lang{font-size:13px;color:var(--faint);border:1px solid var(--line);border-
 nav .langsw a{display:inline-block;font-size:12px;color:var(--faint);padding:5px 9px;border-radius:7px;font-weight:600}
 nav .langsw a.on{color:#fff;background:var(--blue)}
 nav .langsw a:hover{color:var(--blue)}nav .langsw a.on:hover{color:#fff}
-/* Products mega-menu dropdown */
+/* Products mega-menu dropdown (spacious, icon rows, opens leftward to stay on screen) */
 nav .nd{position:relative;display:inline-block}
-nav .nd::after{content:"";position:absolute;top:100%;left:0;right:0;height:16px}
-nav .ndt{display:inline-flex;align-items:center;gap:5px;font-size:14.5px;font-weight:600;color:var(--ink);cursor:pointer}
+nav .nd::after{content:"";position:absolute;top:100%;left:0;right:0;height:18px}
+nav .ndt{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;font-weight:600;color:var(--ink);cursor:pointer}
 nav .ndt .caret{font-size:10px;color:var(--faint);transition:.15s}
 nav .nd:hover .ndt{color:var(--blue)}nav .nd:hover .ndt .caret{transform:rotate(180deg);color:var(--blue)}
-nav .ndm.pm{position:absolute;top:100%;left:0;margin-top:14px;background:#fff;border:1px solid var(--line);
-  border-radius:16px;box-shadow:0 22px 60px rgba(20,40,90,.18);display:grid;grid-template-columns:210px 1fr;
-  min-width:600px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.15s;z-index:60;overflow:hidden}
+nav .ndm.pm{position:absolute;top:100%;right:0;margin-top:16px;background:#fff;border:1px solid var(--line);
+  border-radius:18px;box-shadow:0 26px 70px rgba(20,40,90,.20);display:grid;grid-template-columns:236px 1fr;
+  width:760px;max-width:92vw;opacity:0;visibility:hidden;transform:translateY(10px);transition:.16s;z-index:60;overflow:hidden}
 nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transform:translateY(0)}
-.pm .ndrail{background:var(--bg);border-right:1px solid var(--line);padding:14px 12px}
+.pm .ndrail{background:var(--bg);border-right:1px solid var(--line);padding:22px 14px}
+.pm .ndrail-h{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--faint);padding:0 14px 14px}
 .pm .axbtn{display:block;width:100%;text-align:left;background:none;border:none;font-family:inherit;
-  font-size:14px;font-weight:700;color:var(--ink);padding:11px 14px;border-radius:9px;cursor:pointer;white-space:nowrap}
-.pm .axbtn.on,.pm .axbtn:hover{background:#fff;color:var(--blue);box-shadow:0 2px 8px rgba(16,34,58,.06)}
-.pm .ndpanels{padding:18px 20px}
-.pm .axpanel{grid-template-columns:1fr 1fr;gap:4px 26px}
-.pm .axpanel a{display:block;font-size:13.5px;font-weight:600;color:var(--ink);padding:8px 10px;border-radius:8px;white-space:nowrap}
+  font-size:15px;font-weight:700;color:var(--ink);padding:14px 16px;border-radius:11px;cursor:pointer;white-space:nowrap;transition:.12s}
+.pm .axbtn.on,.pm .axbtn:hover{background:#fff;color:var(--blue);box-shadow:0 3px 12px rgba(16,34,58,.08)}
+.pm .ndpanels{padding:22px 24px}
+.pm .axpanel{grid-template-columns:1fr 1fr;gap:6px 18px;align-content:start}
+.pm .axpanel a{display:flex;align-items:center;gap:13px;font-size:14.5px;font-weight:600;color:var(--ink);padding:11px 12px;border-radius:11px;white-space:nowrap}
 .pm .axpanel a:hover{background:var(--tint-blue);color:var(--blue);text-decoration:none}
+.pm .axi{flex:none;width:38px;height:38px;border-radius:10px;background:var(--mint);color:var(--green-d);display:flex;align-items:center;justify-content:center}
+.pm .axi:empty{background:#eaf1ff}
+.pm .axi:empty::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.pm .axi svg{width:21px;height:21px}
 @media(max-width:900px){nav a:not(.lang){display:none}nav .nd{display:none}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
@@ -335,12 +340,16 @@ def products_dropdown(lang, linkfn):
     rail = ""; panels = ""
     for i, (key, he, hz, items) in enumerate(PROD_AXES):
         on = " on" if i == 0 else ""
-        rail += '<button type="button" class="axbtn%s" onmouseover="etaAx(this,\'%s\')">%s</button>' % (on, key, esc(lab(he, hz)))
-        links = "".join('<a href="%s">%s</a>' % (linkfn(u), esc(lab(e, z))) for e, z, u in items)
-        panels += '<div class="axpanel" data-ax="%s" style="display:%s">%s</div>' % (key, ("grid" if i == 0 else "none"), links)
+        rail += '<button type="button" class="axbtn%s" onmouseover="etaAx(this,\'%s\')"><span class="axc">%s</span></button>' % (
+            on, key, esc(lab(he, hz)))
+        link_list = ""
+        for j, (e, z, u) in enumerate(items):
+            ic = INDUSTRY_ICONS[j % len(INDUSTRY_ICONS)] if key == "app" else ""
+            link_list += '<a href="%s"><span class="axi">%s</span><span class="axl">%s</span></a>' % (linkfn(u), ic, esc(lab(e, z)))
+        panels += '<div class="axpanel" data-ax="%s" style="display:%s">%s</div>' % (key, ("grid" if i == 0 else "none"), link_list)
     return ('<div class="nd"><a class="ndt" href="%s">%s <span class="caret">&#9662;</span></a>'
-            '<div class="ndm pm"><div class="ndrail">%s</div><div class="ndpanels">%s</div></div></div>') % (
-        linkfn("/products/"), esc(top), rail, panels)
+            '<div class="ndm pm"><div class="ndrail"><div class="ndrail-h">%s</div>%s</div><div class="ndpanels">%s</div></div></div>') % (
+        linkfn("/products/"), esc(top), ("产品方案" if zh else "LABEL SOLUTIONS"), rail, panels)
 
 ALL_URLS = []   # (path, group, changefreq)  — English canonical set for sitemap
 def track(path, group): ALL_URLS.append((path, group))
