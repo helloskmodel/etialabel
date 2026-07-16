@@ -31,6 +31,7 @@ These match the site navigation & browse pages exactly.
 | moisture-resistant | Moisture-Resistant | 耐潮湿 |
 | chemical-resistant | Chemical-Resistant | 耐化学 |
 | heat-resistant | Heat-Resistant | 耐高温 |
+| uv-resistant | UV-Resistant | 耐紫外 |
 | sterilization-resistant | Sterilization-Resistant | 耐灭菌 |
 
 > Format per article: `industry: electronics-pcb | applications: [reflow, esd] | environments: [heat-resistant, chemical-resistant]`

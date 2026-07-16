@@ -628,6 +628,7 @@ BY_ENV = [
     ("Moisture-Resistant Labels", "耐潮湿标签"),
     ("Chemical-Resistant Labels", "耐化学标签"),
     ("Heat-Resistant Labels", "耐高温标签"),
+    ("UV-Resistant Labels", "耐紫外标签"),
     ("Sterilization-Resistant Labels", "耐灭菌标签"),
 ]
 

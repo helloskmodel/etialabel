@@ -396,6 +396,7 @@ PROD_AXES = [
    ("Moisture-Resistant","耐潮湿","/products/by-environment/"),
    ("Chemical-Resistant","耐化学","/products/by-environment/"),
    ("Heat-Resistant","耐高温","/products/by-environment/"),
+   ("UV-Resistant","耐紫外","/products/by-environment/"),
    ("Sterilization-Resistant","耐灭菌","/products/by-environment/"),
  ]),
  ("feat","By Feature","按特性",[
