@@ -507,19 +507,27 @@ def build_landing(lang, slug):
 
     app_urls = LANDINGS[slug].get("app_urls", [])
     app_imgs = LANDINGS[slug].get("app_imgs", [])
-    def app_tile(i, t):
+    def panel_img(i, t):
         url = app_imgs[i] if i < len(app_imgs) else ""
-        if url:
-            return ('<div class="acard-img" style="background:linear-gradient(135deg,#dfe7f3,#eef2f8)">'
-                    '<img src="%s" alt="%s" loading="lazy" onerror="this.remove()"><span class="aicon" style="font-size:30px">\U0001F3F7</span></div>') % (esc(url), esc(t))
-        return ('<div class="acard-img" style="background:linear-gradient(135deg,#dfe7f3,#eef2f8)">'
-                '<span class="aicon" style="font-size:30px">\U0001F3F7</span></div>')
-    app_cards = "".join(
-        '<a class="acard" href="%s">%s<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p>'
-        '<div class="acard-go" style="margin-top:10px">%s →</div></div></a>'
-        % (L(lang, app_urls[i]) if i < len(app_urls) else contact, app_tile(i, t), esc(t), esc(dsc), esc(cta_))
+        img = ('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">' % (esc(url), esc(t))) if url else ""
+        return '<div class="apimg">%s<span class="ph">\U0001F3F7</span></div>' % img
+    # Tabbed applications module: one tab per application, only the active panel (image
+    # + title + description) is shown — so the applications are NOT all piled together.
+    tabs = "".join(
+        '<button class="apptab%s" onclick="etaTab(this)">%s</button>' % ((" on" if i == 0 else ""), esc(t))
         for i, (t, dsc, cta_) in enumerate(d["apps"]))
-    apps = '<h2>%s</h2><div class="grid grid3">%s</div>' % (esc(d["apps_h"]), app_cards)
+    panels = "".join(
+        '<div class="apppanel"%s>%s<div class="aptext"><h3>%s</h3><p>%s</p>'
+        '<a class="plink" href="%s">%s →</a></div></div>'
+        % ((' style="display:none"' if i > 0 else ''), panel_img(i, t), esc(t), esc(dsc),
+           (L(lang, app_urls[i]) if i < len(app_urls) else contact), esc(cta_))
+        for i, (t, dsc, cta_) in enumerate(d["apps"]))
+    tabscript = ("<script>function etaTab(b){var m=b.closest('.appmod');"
+                 "var t=[].slice.call(m.querySelectorAll('.apptab'));var i=t.indexOf(b);"
+                 "t.forEach(function(x,j){x.classList.toggle('on',j===i);});"
+                 "m.querySelectorAll('.apppanel').forEach(function(p,j){p.style.display=(j===i)?'grid':'none';});}</script>")
+    apps = '<h2>%s</h2><div class="appmod"><div class="apptabs">%s</div><div class="apppanels">%s</div></div>%s' % (
+        esc(d["apps_h"]), tabs, panels, tabscript)
 
     final = ('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
              '<div class="btns"><a class="btn pri" href="%s">%s</a>'

@@ -107,6 +107,20 @@ section.blk{padding:34px 0}
 .grid.grid3{grid-template-columns:repeat(3,1fr)}
 @media(max-width:900px){.grid.grid3{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.grid.grid3{grid-template-columns:1fr}}
+/* tabbed applications module (industry landing) */
+.appmod{margin-top:6px}
+.apptabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:2px solid var(--line);margin-bottom:30px}
+.apptab{background:none;border:none;font-family:inherit;font-size:15px;font-weight:700;color:var(--mut);padding:12px 16px;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;line-height:1.3}
+.apptab:hover{color:var(--ink)}
+.apptab.on{color:var(--blue-deep);border-bottom-color:var(--blue)}
+.apppanel{display:grid;grid-template-columns:minmax(0,460px) 1fr;gap:40px;align-items:center}
+.apppanel .apimg{position:relative;aspect-ratio:16/11;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#dfe7f3,#eef2f8);display:flex;align-items:center;justify-content:center}
+.apppanel .apimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.apppanel .apimg .ph{font-size:42px;color:#aeb8c9}
+.apppanel .aptext h3{font-size:25px;color:var(--blue-deep);margin-bottom:14px;line-height:1.2}
+.apppanel .aptext p{font-size:15.5px;color:var(--mut);line-height:1.65;margin-bottom:20px;max-width:40em}
+.apppanel .aptext .plink{font-size:14px;font-weight:700;color:var(--blue)}
+@media(max-width:820px){.apppanel{grid-template-columns:1fr;gap:20px}.apptab{font-size:13.5px;padding:10px 11px}.apppanel .aptext h3{font-size:22px}}
 .card{border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff;transition:.15s;display:block}
 .card:hover{border-color:var(--blue);box-shadow:0 8px 26px rgba(26,86,219,.10);text-decoration:none}
 .card h3{font-size:18px;color:var(--blue-deep);margin-bottom:6px}
