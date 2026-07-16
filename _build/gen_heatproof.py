@@ -806,8 +806,8 @@ def build_home(lang):
     path="/"
     T=HOME_I18N[lang]
     # Why ETIA pillars — icon + "We…" heading + up to two short lines
-    why_html="".join('<div class="why"><div class="ic">%s</div><div class="txt"><b>%s</b><p class="wlead">%s</p><p class="wexp">%s</p></div></div>'%(
-        WHY_ICONS[k%len(WHY_ICONS)],esc(head),esc(lead),esc(exp)) for k,(head,lead,exp) in enumerate(T["why"]))
+    why_html="".join('<div class="why"><div class="ic">%s</div><div class="txt"><b>%s</b><p class="wexp">%s</p></div></div>'%(
+        WHY_ICONS[k%len(WHY_ICONS)],esc(head),esc(text)) for k,(head,text) in enumerate(T["why"]))
     why_close=('<p class="whyclose">%s</p>'%esc(T["why_close"])) if T.get("why_close") else ""
     # Explore by Application — six cards (image on top, copy below; all six visible, animate on hover)
     cards=""

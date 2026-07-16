@@ -262,3 +262,17 @@ Card = application name (main title) + model (small). Same image-top card patter
 4 High Adhesion for Oily Surfaces / 油污表面超粘标签 — ETIA High-Adhesion Series
 5 Chemical-Resistant Slide Identification / 耐化学载玻片标签 — ETIA Laboratory Series
 6 Dual-Layer ESD-Safe Identification / 双层抗静电标签 — ETIA / Selected Specialty Materials
+
+---
+
+# REVISION 4 — WHY ETIA FINAL (authoritative; supersedes Rev 2). Card = heading + one explanation line.
+Card titles are final:
+- We Understand the Application — We evaluate the process, environment, and performance requirements before recommending a material.
+- We Know Specialty Materials — We combine deep material expertise with a global portfolio of high-performance label materials.
+- We Supply with Flexibility — We support multiple materials, varied specifications, small batches, and dependable repeat supply.
+- We Customize a Solution — We provide testing, inspection, slitting, die-cutting, and converting tailored to the application.
+中文:
+- 我们理解应用 — 在推荐材料之前，综合评估工艺、环境与性能要求。
+- 我们深耕特种材料 — 凭借长期材料经验，整合全球高性能特种标签材料。
+- 我们灵活供应 — 支持多种材料、多种规格、小批量及长期稳定供货。
+- 我们定制解决方案 — 围绕实际应用提供测试、检验、分切、模切及定制加工。
