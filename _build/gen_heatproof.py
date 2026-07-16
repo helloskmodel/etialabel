@@ -847,10 +847,11 @@ def build_home(lang):
     # Explore by Application — six cards (image on top, copy below; all six visible, animate on hover)
     cards=""
     for k,f in enumerate(T["focus"]):
-        cards+=('<a class="acard" href="%s"><div class="acard-img g%d"><span class="aicon">%s</span></div>'
+        img_html=('<img src="%s" alt="%s" loading="lazy">'%(esc(f["img"]),esc(f["name"]))) if f.get("img") else ""
+        cards+=('<a class="acard" href="%s"><div class="acard-img g%d">%s<span class="aicon">%s</span></div>'
                 '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p>'
                 '<div class="acard-go">%s →</div></div></a>')%(
-            home_hlink(lang,FOCUS_URLS[k]), k%6, INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)],
+            home_hlink(lang,FOCUS_URLS[k]), k%6, img_html, INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)],
             esc(f["name"]), esc(f["desc"]), esc(T["explore"]))
     app_grid='<div class="acgrid">%s</div>'%cards
     # Most Popular Products — same card pattern (image top), application name as title, model small
