@@ -616,17 +616,26 @@ def build_landing(lang, slug):
 
 
 # ---- Browse: By Environment (Products axis) ----
+# Environment axis follows Brady's (authoritative) resistance categories, plus the
+# label-industry properties we serve (ESD / laser / sterilization).
 BY_ENV = [
+    ("Abrasion-Resistant Labels", "耐磨标签"),
+    ("Chemical-Resistant Labels", "耐化学标签"),
+    ("Corrosion-Resistant Labels", "耐腐蚀标签"),
+    ("Dirt-Resistant Labels", "抗污标签"),
+    ("Fluid-Resistant Labels", "耐液体标签"),
+    ("Heat-Resistant Labels", "耐热标签"),
+    ("High-Temperature-Resistant Labels", "耐高温标签"),
+    ("Humidity-Resistant Labels", "耐潮湿标签"),
+    ("Low-Temperature-Resistant Labels", "耐低温标签"),
     ("Oil-Resistant Labels", "耐油污标签"),
+    ("Temperature-Resistant Labels", "耐温变标签"),
+    ("UV-Resistant Labels", "耐紫外标签"),
+    ("Water-Resistant Labels", "耐水标签"),
+    ("Wave-Solder-Resistant Labels", "耐波峰焊标签"),
+    ("Weather-Resistant Labels", "耐候标签"),
     ("ESD-Safe Labels", "抗静电标签"),
     ("Laser-Markable Labels", "激光打标标签"),
-    ("Abrasion-Resistant Labels", "耐磨标签"),
-    ("Low-Temp Labels", "低温标签"),
-    ("Cryogenic Labels", "深低温标签"),
-    ("Moisture-Resistant Labels", "耐潮湿标签"),
-    ("Chemical-Resistant Labels", "耐化学标签"),
-    ("Heat-Resistant Labels", "耐高温标签"),
-    ("UV-Resistant Labels", "耐紫外标签"),
     ("Sterilization-Resistant Labels", "耐灭菌标签"),
 ]
 
