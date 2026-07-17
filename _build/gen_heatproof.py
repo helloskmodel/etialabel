@@ -108,9 +108,9 @@ section.blk{padding:34px 0}
 @media(max-width:900px){.grid.grid3{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.grid.grid3{grid-template-columns:1fr}}
 /* industry landing HERO SECTION (label + slogan, banner-ready) */
-.indhero{position:relative;background:linear-gradient(120deg,var(--blue) ,var(--blue-deep) 60%,#0f2f7a);color:#fff;overflow:hidden;background-size:cover;background-position:center;min-height:380px;display:grid;align-items:center}
+.indhero{position:relative;background:linear-gradient(120deg,var(--blue),var(--blue-deep) 60%,#0f2f7a);color:#fff;overflow:hidden;background-size:cover;background-position:center}
 .indhero.hasimg::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(20,60,150,.90),rgba(20,60,150,.42));z-index:1}
-.indhero .wrap{position:relative;z-index:2;padding:44px 24px}
+.indhero .wrap{position:relative;z-index:2;padding:60px 24px}
 .indhero .eyebrow{color:#9fc0ff}
 .indhero h1{color:#fff;font-family:var(--sans);font-size:40px;line-height:1.12;letter-spacing:-.01em;margin:12px 0 16px;max-width:18em;font-weight:800;text-align:left}
 .indhero .slogan{font-size:20px;line-height:1.45;color:#dbe6ff;font-weight:600;max-width:32em}
@@ -217,9 +217,9 @@ footer .email{color:var(--green);font-weight:600}
 footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;color:var(--faint);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 /* home */
 /* home section banners (dark image + green corner label) */
-.hbanner{position:relative;overflow:hidden;background:var(--blue-deep);background-size:cover;background-position:center right;border-bottom:2px solid #fff;display:grid;align-items:center;min-height:330px}
+.hbanner{position:relative;overflow:hidden;background:var(--blue-deep);background-size:cover;background-position:center right;border-bottom:2px solid #fff}
 .hbanner::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,60,150,.94) 24%,rgba(20,60,150,.70) 52%,rgba(20,60,150,.28))}
-.hbanner .wrap{position:relative;z-index:2;padding:46px 24px}
+.hbanner .wrap{position:relative;z-index:2;padding:60px 24px}
 .hbanner .eyebrow{color:#8fe063;margin-bottom:6px}
 .hbanner h1{color:#fff;font-family:var(--sans);font-weight:800;font-size:40px;line-height:1.12;letter-spacing:-.01em;text-align:left;margin:2px 0 10px;max-width:18em}
 .hbanner .hsub{font-size:18px;font-weight:700;color:#eef3ff;margin-bottom:10px;max-width:40em}
