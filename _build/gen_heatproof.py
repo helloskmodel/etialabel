@@ -147,7 +147,7 @@ section.blk{padding:34px 0}
 .cph span{font-size:13.5px;color:var(--mut)}
 @media(max-width:820px){.ctwo{grid-template-columns:1fr;gap:24px}.cform .cfrow{flex-direction:column}}
 .apppanel{display:grid;grid-template-columns:minmax(0,460px) 1fr;gap:40px;align-items:center}
-.apppanel .apimg{position:relative;aspect-ratio:16/11;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#dfe7f3,#eef2f8);display:flex;align-items:center;justify-content:center}
+.apppanel .apimg{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#dfe7f3,#eef2f8);display:flex;align-items:center;justify-content:center}
 .apppanel .apimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .apppanel .apimg .ph{font-size:42px;color:#aeb8c9}
 .apppanel .aptext h3{font-size:25px;color:var(--blue-deep);margin-bottom:14px;line-height:1.2}
