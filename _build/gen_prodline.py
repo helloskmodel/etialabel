@@ -290,8 +290,9 @@ PROC = [
 ]
 # product-line cards (name, (desc en,zh), url, gradient, image)
 PLINES = [
- ("POLYONICS APEX", ("Premium polyimide platform — proven flux/cleaner gains, 300°C, ESD & UL options.",
-                     "高端聚酰亚胺平台 —— 助焊剂/清洗剂性能提升，耐温 300°C，提供 ESD 与 UL 选项。"),
+ ("NEW Apex Series – Ultra-Performance Polyimide Label Materials for PCBs",
+  ("Premium polyimide platform — proven flux/cleaner gains, 300°C, ESD & UL options.",
+   "高端聚酰亚胺平台 —— 助焊剂/清洗剂性能提升，耐温 300°C，提供 ESD 与 UL 选项。"),
   "/products/circuit-board-labels/apex-series/", "linear-gradient(135deg,#0e2a63,#1A56DB)", APEX_BANNER),
  ("POLYONICS XF", ("Core XF polyimide family for reflow, wash and general PCB identification.",
                    "面向回流、清洗与通用 PCB 标识的核心 XF 聚酰亚胺系列。"),
@@ -370,8 +371,9 @@ def build_pcb_sector(lang):
     path = "/products/circuit-board-labels/"
     crumb = [("Home" if not zh else "首页", "/"), ("Products" if not zh else "产品", "/products/"),
              ("Circuit Board & PCB Labels" if not zh else "电路板与 PCB 标签", path)]
-    hero = ('<section class="pagehead"><div class="wrap"><div class="eyebrow">%s</div>'
-            '<h1>%s</h1><p class="lede" style="max-width:60em">%s</p></div></section>') % (
+    hero = ('<section class="indhero hasimg" style="background-image:url(%s)"><div class="wrap"><div class="eyebrow">%s</div>'
+            '<h1>%s</h1><p class="slogan">%s</p></div></section>') % (
+        esc(APEX_BANNER),
         H("PRODUCTS · ELECTRONICS & PCB", "产品 · 电子与 PCB"),
         H("Circuit Board & PCB Labels", "电路板与 PCB 标签"),
         H("Select a process to see the challenge, the recommended material, and the product lines that fit.",
