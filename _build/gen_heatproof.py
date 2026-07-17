@@ -97,7 +97,7 @@ nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transform:translateY(0)}
 .btn.pri{background:var(--green);color:#fff}.btn.pri:hover{background:var(--green-d);text-decoration:none}
 .btn.sec{border:1.5px solid var(--ink);color:var(--ink)}.btn.sec:hover{background:var(--ink);color:#fff;text-decoration:none}
 .pagehead{padding:34px 0 8px}
-.pagehead h1{font-family:var(--serif);font-weight:600;font-size:38px;line-height:1.1;text-wrap:balance;max-width:20em}
+.pagehead h1{font-family:var(--sans);font-weight:800;font-size:40px;line-height:1.12;text-align:left;text-wrap:balance;max-width:20em}
 .pagehead .lede{margin-top:14px;color:var(--mut);font-size:18px;max-width:44em}
 .pagehead .btns{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
 section.blk{padding:34px 0}
@@ -112,7 +112,7 @@ section.blk{padding:34px 0}
 .indhero.hasimg::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(9,24,58,.90),rgba(9,24,58,.45));z-index:1}
 .indhero .wrap{position:relative;z-index:2;padding:44px 24px}
 .indhero .eyebrow{color:#9fc0ff}
-.indhero h1{color:#fff;font-size:40px;line-height:1.1;margin:12px 0 16px;max-width:16em;font-weight:800}
+.indhero h1{color:#fff;font-family:var(--sans);font-size:40px;line-height:1.12;letter-spacing:-.01em;margin:12px 0 16px;max-width:18em;font-weight:800;text-align:left}
 .indhero .slogan{font-size:20px;line-height:1.45;color:#dbe6ff;font-weight:600;max-width:32em}
 @media(max-width:820px){.indhero{min-height:280px}.indhero h1{font-size:30px}.indhero .slogan{font-size:16.5px}.indhero .wrap{padding:36px 24px}}
 /* tabbed applications module (industry landing) — single scrollable row of tabs */
@@ -216,9 +216,22 @@ footer a{color:var(--mut)}footer a:hover{color:var(--blue)}
 footer .email{color:var(--green);font-weight:600}
 footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;color:var(--faint);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 /* home */
+/* home section banners (dark image + green corner label) */
+.hbanner{position:relative;overflow:hidden;background:#0b1f47;background-size:cover;background-position:center right;border-bottom:2px solid #fff;display:grid;align-items:center;min-height:330px}
+.hbanner::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(9,22,54,.97) 24%,rgba(9,22,54,.72) 52%,rgba(9,22,54,.30))}
+.hbanner .wrap{position:relative;z-index:2;padding:46px 24px}
+.hbanner .eyebrow{color:#8fe063;margin-bottom:6px}
+.hbanner h1{color:#fff;font-family:var(--sans);font-weight:800;font-size:40px;line-height:1.12;letter-spacing:-.01em;text-align:left;margin:2px 0 10px;max-width:18em}
+.hbanner .hsub{font-size:18px;font-weight:700;color:#eef3ff;margin-bottom:10px;max-width:40em}
+.hbanner .hbody{font-size:15px;color:#c7d3ec;line-height:1.65;max-width:46em;margin-bottom:22px}
+.hbanner .htab{position:absolute;top:0;right:0;z-index:3;background:var(--green);color:#fff;font-size:11px;font-weight:800;letter-spacing:.12em;padding:8px 20px;border-bottom-left-radius:12px}
+.hbanner .btns{display:flex;gap:12px;flex-wrap:wrap}
+.hbanner .btns .btn.sec{border-color:rgba(255,255,255,.6);color:#fff}
+.hbanner .btns .btn.sec:hover{background:#fff;color:var(--blue-deep)}
+@media(max-width:820px){.hbanner{min-height:250px}.hbanner h1{font-size:27px}.hbanner .hsub{font-size:15.5px}.hbanner .wrap{padding:34px 24px}}
 .hero{padding:60px 0 46px}
 .hero .eyebrow{margin-bottom:14px}
-.hero h1{font-family:var(--serif);font-weight:600;font-size:46px;line-height:1.08;letter-spacing:-.01em;text-wrap:balance;max-width:16em}
+.hero h1{font-family:var(--sans);font-weight:800;font-size:40px;line-height:1.12;letter-spacing:-.01em;text-align:left;text-wrap:balance;max-width:18em}
 .hero .lede{margin-top:18px;color:var(--mut);font-size:19px;max-width:40em}
 .hero .btns{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
 .trustbar{background:linear-gradient(150deg,var(--blue),var(--blue-deep))}
@@ -399,7 +412,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .ptable .ptd-act .pbtn{margin:0 5px 5px 0}
 @media(max-width:820px){.catalog{grid-template-columns:1fr}}
 @media(max-width:820px){.two{grid-template-columns:1fr}footer .fg{grid-template-columns:1fr}.pagehead h1{font-size:30px}
-.hero h1{font-size:32px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}
+.hero h1{font-size:30px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}
 .split{grid-template-columns:1fr;gap:22px}.split .imgframe{order:-1}.split .txt h2{font-size:25px}
 .acgrid{grid-template-columns:1fr 1fr;gap:10px}
 .trustbar .wrap{grid-template-columns:1fr 1fr;gap:10px}
@@ -1039,9 +1052,86 @@ def home_hreflang(path):
     t.append('<link rel="alternate" hreflang="x-default" href="%s%s">'%(SITE,path))
     return "".join(t)
 
+# New home structure: hero + 4 gateway sections (Products / Applications / Insights / Service).
+# EN copy supplied by client; ZH translated; vi/th fall back to EN.
+HOME2 = {
+ "en": {
+  "hero": {"eyebrow": "DURABLE IDENTIFICATION · SPECIALTY LABEL MATERIALS",
+           "h1": "Where Materials Meet Applications.",
+           "line": "Every demanding application starts with the right material.",
+           "body": "For over 20 years, ETIA has helped manufacturers solve complex identification challenges through specialty materials, application expertise, and flexible supply.",
+           "b1": "Explore Solutions", "b2": "Request Samples"},
+  "sections": [
+   {"eyebrow": "SPECIALTY LABEL MATERIALS · ENGINEERED CONSTRUCTIONS",
+    "h2": "Materials Built for Demanding Conditions.",
+    "sub": "The right construction starts with the right performance requirements.",
+    "body": "Explore specialty label materials for high temperature, cryogenic storage, chemical exposure, outdoor durability, difficult surfaces, and long-term industrial identification.",
+    "b1": "Explore Materials", "b1u": "/products/", "b2": "Request Material Support", "b2u": "/contact/"},
+   {"eyebrow": "INDUSTRIES · PROCESSES · OPERATING CONDITIONS",
+    "h2": "Built Around the Application.",
+    "sub": "Every environment creates a different identification challenge.",
+    "body": "Explore application notes developed around real surfaces, temperatures, chemicals, printing methods, processes, and service-life requirements.",
+    "b1": "Explore Applications", "b1u": "/application-notes/", "b2": "Discuss Your Application", "b2u": "/contact/"},
+   {"eyebrow": "TECHNICAL GUIDANCE · MATERIAL KNOWLEDGE · CASE STUDIES",
+    "h2": "Understand the Material. Learn from the Application.",
+    "sub": "Practical knowledge for better identification decisions.",
+    "body": "Explore technical guidance, material-selection insights, performance testing, printing considerations, and real-world case studies.",
+    "b1": "Explore Insights", "b1u": "/insights/", "b2": "View Case Studies", "b2u": "/application-notes/"},
+   {"eyebrow": "APPLICATION SUPPORT · TESTING · FLEXIBLE SUPPLY",
+    "h2": "Support from Material Selection to Long-Term Supply.",
+    "sub": "Practical support throughout every stage of your project.",
+    "body": "From application review and sample evaluation to laboratory testing, converting, quality inspection, and repeat supply, ETIA helps manufacturers move confidently from selection to production.",
+    "b1": "Talk to a Material Specialist", "b1u": "/contact/", "b2": "Request Samples", "b2u": "/contact/"},
+  ]},
+ "zh": {
+  "hero": {"eyebrow": "耐久标识 · 特种标签材料",
+           "h1": "让材料匹配应用。",
+           "line": "每一个严苛应用，都始于选对材料。",
+           "body": "20 多年来，ETIA 以特种材料、应用专业与柔性供应，帮助制造商解决复杂的标识难题。",
+           "b1": "浏览方案", "b2": "申请样品"},
+  "sections": [
+   {"eyebrow": "特种标签材料 · 工程化结构",
+    "h2": "为严苛工况而生的材料。",
+    "sub": "合适的材料结构，始于明确的性能要求。",
+    "body": "探索适用于高温、深低温储存、化学暴露、户外耐久、难贴表面及长期工业标识的特种标签材料。",
+    "b1": "浏览材料", "b1u": "/products/", "b2": "获取材料支持", "b2u": "/contact/"},
+   {"eyebrow": "行业 · 工艺 · 工况",
+    "h2": "围绕应用而构建。",
+    "sub": "每一种环境，都是不同的标识挑战。",
+    "body": "查阅围绕真实表面、温度、化学品、打印方式、工艺与使用寿命要求编写的应用笔记。",
+    "b1": "浏览应用笔记", "b1u": "/application-notes/", "b2": "沟通您的应用", "b2u": "/contact/"},
+   {"eyebrow": "技术指南 · 材料知识 · 案例研究",
+    "h2": "读懂材料，从应用中学习。",
+    "sub": "帮助您做出更好标识决策的实用知识。",
+    "body": "探索技术指南、材料选型洞察、性能测试、打印要点与真实案例研究。",
+    "b1": "浏览洞察", "b1u": "/insights/", "b2": "查看案例", "b2u": "/application-notes/"},
+   {"eyebrow": "应用支持 · 检测 · 柔性供应",
+    "h2": "从选材到长期供应的全程支持。",
+    "sub": "贯穿项目每一阶段的切实支持。",
+    "body": "从应用评估、样品验证，到实验室检测、加工成型、质量检验与持续供应，ETIA 帮助制造商从选型稳步走向量产。",
+    "b1": "咨询材料专家", "b1u": "/contact/", "b2": "申请样品", "b2u": "/contact/"},
+  ]},
+}
+
+# Green corner labels + banner background images (fill BG with clean COS URLs later)
+HOME_TABS = [("HOME", "首页"), ("PRODUCTS", "产品"), ("APPLICATIONS", "应用"), ("INSIGHTS", "洞察"), ("SERVICE", "服务")]
+HOME_BG = ["", "", "", "", ""]
+
+def home_banner(lang, tab, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
+    zh = (lang == "zh")
+    st = ' style="background-image:url(%s)"' % esc(bg) if bg else ""
+    return ('<section class="hbanner"%s><span class="htab">%s</span><div class="wrap">'
+            '<div class="eyebrow">%s</div><h1>%s</h1>'
+            '<p class="hsub">%s</p><p class="hbody">%s</p>'
+            '<div class="btns"><a class="btn pri" href="%s">%s</a>'
+            '<a class="btn sec" href="%s">%s</a></div></div></section>') % (
+        st, esc(tab[1] if zh else tab[0]), esc(eyebrow), esc(title), esc(sub), esc(body),
+        home_hlink(lang, b1u), esc(b1), home_hlink(lang, b2u), esc(b2))
+
 def build_home(lang):
     path="/"
     T=HOME_I18N[lang]
+    G=HOME2.get(lang, HOME2["en"])
     # Why ETIA pillars — icon + "We…" heading + up to two short lines
     why_html="".join('<div class="why"><div class="ic">%s</div><div class="txt"><b>%s</b><p class="wexp">%s</p></div></div>'%(
         WHY_ICONS[k%len(WHY_ICONS)],esc(head),esc(text)) for k,(head,text) in enumerate(T["why"]))
@@ -1093,25 +1183,12 @@ def build_home(lang):
     sc_section=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
                 '<div class="scgrid">%s</div></div></section>')%(
         esc(T.get("sc_eyebrow","SERVICE COMMITMENT")),esc(T.get("sc_title","Our Service Commitment")),sc_items)
-    body="""<section class="hero"><div class="wrap">
-<div class="eyebrow">%s</div><h1 class="serif">%s</h1>
-<p class="lede" style="color:var(--ink);font-size:20px;font-weight:600;max-width:32em">%s</p>
-<p class="lede">%s</p>
-<div class="btns"><a class="btn pri" href="#applications">%s</a><a class="btn sec" href="%s">%s</a></div></div></section>
-%s
-<section class="blk" style="background:var(--tint-green)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div><div class="whygrid">%s</div>%s</div></section>
-<section class="blk" id="applications" style="background:var(--tint-blue)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>%s
-<div style="margin-top:20px"><a class="btn sec" href="%s">%s →</a></div></div></section>
-%s
-%s
-%s""" % (
-        esc(T["hero_eyebrow"]),esc(T["hero_h1"]),esc(T["hero_line"]),esc(T["hero_para"]),esc(T["hero_b1"]),home_hlink(lang,"/contact/"),esc(T["hero_b2"]),
-        trust_html,
-        esc(T["why_eyebrow"]),esc(T["why_head"]),esc(T["why_intro"]),why_html,why_close,
-        esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_grid,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]),
-        prod_section,
-        sc_section,
-        final_cta)
+    h=G["hero"]
+    body=home_banner(lang, HOME_TABS[0], HOME_BG[0], h["eyebrow"], h["h1"], h["line"], h["body"],
+                     h["b1"], "/products/", h["b2"], "/contact/")
+    for i,s in enumerate(G["sections"]):
+        body+=home_banner(lang, HOME_TABS[i+1], HOME_BG[i+1], s["eyebrow"], s["h2"], s["sub"], s["body"],
+                          s["b1"], s["b1u"], s["b2"], s["b2u"])
     canonical=SITE+HL_PREFIX[lang]+path
     schema_js='<script type="application/ld+json">%s</script>'%json.dumps(ORG_JSONLD,ensure_ascii=False)
     doc="""<!doctype html><html lang="%s"><head>
