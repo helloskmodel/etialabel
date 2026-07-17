@@ -1083,8 +1083,10 @@ def home_nav(lang):
     lf=lambda p: home_hlink(lang,p)
     hrefs=["/application-notes/","/insights/","/service/"]
     prod=products_dropdown(lang, lf)
+    home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
+    home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
     links="".join('<a href="%s">%s</a>'%(lf(h),esc(lbl)) for h,lbl in zip(hrefs,T["nav"][1:]))
-    return '<nav>%s%s%s</nav>' % (prod, links, home_switcher(lang))
+    return '<nav>%s%s%s%s</nav>' % (home_link, prod, links, home_switcher(lang))
 
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
