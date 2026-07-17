@@ -38,6 +38,14 @@ PL_CSS = """<style>
 .plul{list-style:none;padding:0;margin:6px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0 44px}
 .plul li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;color:var(--ink);line-height:1.55;padding:13px 0;border-bottom:1px solid var(--line)}
 .plul .bt{flex:0 0 auto;width:22px;height:22px;color:var(--green-d)}.plul .bt svg{width:22px;height:22px}
+.whyblk{background:linear-gradient(180deg,#eef4ff,#f4f7fd)}
+.whyh{font-size:30px}
+.whysub{font-size:18px;font-weight:800;color:var(--blue);margin:-4px 0 20px}
+.whyul{list-style:none;padding:0;margin:0;max-width:70em}
+.whyul li{position:relative;padding:16px 0 16px 34px;font-size:18px;line-height:1.6;color:#54627a;border-bottom:1px solid #d9e4f5}
+.whyul li:last-child{border-bottom:none}
+.whyul li:before{content:"";position:absolute;left:4px;top:24px;width:12px;height:12px;border-radius:50%;background:var(--green)}
+.whyul strong{color:var(--blue-deep);font-weight:800}
 .spectbl{width:100%;border-collapse:collapse;font-size:15px;max-width:940px}
 .spectbl th{text-align:left;width:230px;background:#f4f7fd;color:var(--blue-deep);font-weight:800;padding:14px 16px;vertical-align:top}
 .spectbl td{padding:14px 16px;border-bottom:1px solid var(--line);color:var(--ink)}
@@ -81,15 +89,15 @@ PILLARS = [  # (icon idx, (en title, zh title), (en desc, zh desc))  -- VERBATIM
      ("The quality you expect from a leader in performance label materials.",
       "源自高性能标签材料领导者的品质保证。")),
 ]
-WHY = [  # VERBATIM
- ("72% improvement in flux solder performance vs. our legacy line, validated in testing.",
-  "助焊剂焊接性能提升 72%（相较上一代材料，经测试验证）。"),
- ("15% improvement in cleaner resistance vs. our legacy line, helping labels survive high-pressure washes.",
-  "清洗剂耐受性提升 15%（相较上一代材料），助力标签经受高压清洗。"),
- ("Enhanced ink transfer for more defined images, even at smaller font sizes. Designed to extend printhead life and maintain readability through exposure to highly caustic solutions.",
-  "油墨转移增强，即使在更小字号下也能获得更清晰的图像；延长打印头寿命，并在强腐蚀性溶液暴露后保持可读性。"),
- ("Coating and adhesive system engineered for elevated temperatures, ensuring labels stay put and remain readable.",
-  "涂层与胶粘系统专为高温设计，确保标签牢固附着、保持可读。"),
+WHY = [  # VERBATIM (lead phrase bolded for emphasis)
+ ("<strong>72% improvement</strong> in flux solder performance vs. our legacy line, validated in testing.",
+  "<strong>助焊剂焊接性能提升 72%</strong>（相较上一代材料，经测试验证）。"),
+ ("<strong>15% improvement</strong> in cleaner resistance vs. our legacy line, helping labels survive high-pressure washes.",
+  "<strong>清洗剂耐受性提升 15%</strong>（相较上一代材料），助力标签经受高压清洗。"),
+ ("<strong>Enhanced ink transfer for more defined images, even at smaller font sizes.</strong> Designed to extend printhead life and maintain readability through exposure to highly caustic solutions.",
+  "<strong>油墨转移增强，即使在更小字号下也能获得更清晰的图像。</strong>延长打印头寿命，并在强腐蚀性溶液暴露后保持可读性。"),
+ ("<strong>Coating and adhesive system engineered for elevated temperatures</strong>, ensuring labels stay put and remain readable.",
+  "<strong>涂层与胶粘系统专为高温设计</strong>，确保标签牢固附着、保持可读。"),
 ]
 FEATURES = [  # from TDS "Features" (verbatim)
  ("Thermal transfer printable top surface", "热转印可打印表面"),
@@ -108,8 +116,11 @@ SPECS = [  # only TDS-stated info
  (("Topcoat / finish", "面涂 / 表面"), ("High-opacity white — matte / semi-gloss / gloss", "高遮盖白 — 哑面 / 半光 / 亮光")),
  (("Print method", "打印方式"), ("Thermal transfer (full-resin ribbon recommended)", "热转印（建议使用全树脂碳带）")),
  (("Thermal exposure (typical)", "热暴露（典型）"),
-  ("Up to 100 hrs @ 302°F (150°C) · 5 min @ 500°F (260°C) · 90 sec @ 572°F (300°C)",
-   "最高 100 小时 @150°C · 5 分钟 @260°C · 90 秒 @300°C")),
+  ("Up to <strong>100 hrs @ 302°F (150°C)</strong> · <strong>5 min @ 500°F (260°C)</strong> · <strong>90 sec @ 572°F (300°C)</strong>",
+   "最高 <strong>100 小时 @150°C</strong> · <strong>5 分钟 @260°C</strong> · <strong>90 秒 @300°C</strong>")),
+ (("Print performance", "打印性能"),
+  ("<strong>Thermal transfer (TTR)</strong> — crisp, high-contrast images; protects small type and dense barcodes after heat and wash cycles.",
+   "<strong>热转印（TTR）</strong> —— 清晰、高对比度图像；在高温与清洗循环后保护小字号与密集条码。")),
  (("Standards", "标准"), ("MIL-STD-202G Method 215K · UL 969 (pending) · REACH · RoHS",
                           "MIL-STD-202G Method 215K · UL 969（审批中）· REACH · RoHS")),
 ]
@@ -144,10 +155,10 @@ def build_apex(lang):
                    % (IC[i], H(te, tz), H(de, dz)) for i, (te, tz), (de, dz) in PILLARS)
     s_pillars = ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="pillg">%s</div></div></section>'
                  % (H("Value Pillars", "产品优势"), pill))
-    # WHY APEX (one consistent style: bullet list)
-    why = "".join('<li><span class="bt">%s</span>%s</li>' % (CHK, H(e, z)) for e, z in WHY)
-    s_why = ('<section class="blk" style="background:#f4f7fd"><div class="wrap"><h2>%s</h2>'
-             '<p class="plsub">%s</p><ul class="plul">%s</ul></div></section>') % (
+    # WHY APEX (prominent: big heading, bold lead phrase per point)
+    why = "".join('<li>%s</li>' % _t(lang, e, z) for e, z in WHY)
+    s_why = ('<section class="blk whyblk"><div class="wrap"><h2 class="whyh">%s</h2>'
+             '<p class="whysub">%s</p><ul class="whyul">%s</ul></div></section>') % (
         H("Why Apex for PCB Manufacturing", "为什么选择 Apex"),
         H("Built for today's fluxes, cleaners, and multi-cycle reflow.", "专为当今的助焊剂、清洗剂与多次回流焊工艺打造。"), why)
     # FEATURES (bullet list, from TDS)
@@ -155,7 +166,7 @@ def build_apex(lang):
     s_feat = ('<section class="blk"><div class="wrap"><h2>%s</h2><p class="plsub">%s</p><ul class="plul">%s</ul></div></section>'
               % (H("Features", "特性"), H("From the product Technical Data Sheets.", "摘自产品技术数据表（TDS）。"), feat))
     # SPECIFICATIONS (table)
-    spec = "".join('<tr><th>%s</th><td>%s</td></tr>' % (H(ke, kz), H(ve, vz)) for (ke, kz), (ve, vz) in SPECS)
+    spec = "".join('<tr><th>%s</th><td>%s</td></tr>' % (H(ke, kz), _t(lang, ve, vz)) for (ke, kz), (ve, vz) in SPECS)
     s_spec = ('<section class="blk" style="background:#f4f7fd"><div class="wrap"><h2>%s</h2>'
               '<p class="plsub">%s</p><table class="spectbl"><tbody>%s</tbody></table></div></section>') % (
         H("Specifications", "规格参数"),
@@ -172,16 +183,14 @@ def build_apex(lang):
         esc(sku), H(*FIN[fk]), esc(th), ('<span class="esdp">ESD</span>' if e else "—"), acts(sku))
         for sku, fk, th, e in SKUS)
     heads = "".join('<th>%s</th>' % H(*h) for h in [("Apex SKU","型号"),("Finish","表面"),("Thickness","厚度"),("ESD","ESD"),("Get it","获取")])
-    therm = "".join('<div class="tcell"><div class="tv">%s</div><div class="tl">%s</div></div>' % (esc(v), esc(l)) for v, l in THERMAL)
     s_sku = ('<section class="blk"><div class="wrap"><h2>%s</h2><p class="plsub">%s</p>'
              '<div class="ptable-wrap" style="overflow-x:auto"><table class="skutbl"><thead><tr>%s</tr></thead>'
              '<tbody>%s</tbody></table></div>'
-             '<h3 style="margin:26px 0 10px;color:var(--blue-deep)">%s</h3><div class="tgrid">%s</div>'
              '</div></section>') % (
         H("Product Line at a Glance — Apex Series SKUs", "Apex 系列型号一览"),
         H("All SKUs: polyimide film · acrylic adhesive · REACH/RoHS. ANSI/ESD S20.20 options available. FREE SAMPLE is per SKU.",
           "所有型号：聚酰亚胺面材 · 丙烯酸胶 · 符合 REACH/RoHS。提供 ANSI/ESD S20.20 选项。免费样品按单个型号提供。"),
-        heads, rows, H("Thermal Exposure Guide (typical — see TDS for exact limits)", "热暴露参考（典型值 —— 精确上限见 TDS）"), therm)
+        heads, rows)
     # APPLICATIONS
     chips = "".join('<span class="achip">%s</span>' % H(e, z) for e, z in APPS)
     s_app = ('<section class="blk" style="background:#f4f7fd"><div class="wrap"><h2>%s</h2>'
@@ -215,7 +224,7 @@ def build_apex(lang):
         L(lang, "/contact/"), H("Ask the Experts", "咨询专家"),
         L(lang, "/contact/"), H("Request Apex Samples", "申请 Apex 样品"))
 
-    body = PL_CSS + s_pillars + s_why + s_feat + s_spec + s_sku + s_app + s_print + s_doc + s_cta
+    body = PL_CSS + s_pillars + s_why + s_feat + s_spec + s_sku + s_app + s_doc + s_cta
     path = "/products/circuit-board-labels/apex-series/"
     crumb = [("Home" if not zh else "首页", "/"),
              ("Products" if not zh else "产品", "/products/"),
