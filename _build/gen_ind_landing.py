@@ -5,6 +5,7 @@ Runs after the section generators so it owns /industries/<slug>/index.html.
 Add more industries by adding entries to LANDINGS."""
 import os, json
 import gen_heatproof as hp
+import gen_notes
 from gen_heatproof import esc, L, page, write, cta, LANGS
 
 _PCBD = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "pcb.json"), encoding="utf-8"))
@@ -751,7 +752,18 @@ def build_application_notes(lang):
                      '<div class="xlinks" style="margin-top:9px">%s</div></div>') % (esc(d["eyebrow"]), chips)
     env_chips = "".join('<span class="pill tag">%s</span>' % esc(z if zh else e) for e, z in BY_ENV)
     count_line = (("6 大行业 · %d 个应用" % total_apps) if zh else ("6 industries · %d applications" % total_apps))
+    # Published notes (real articles) linked as cards.
+    pub_cards = "".join(
+        '<a class="card" href="%s"><div class="eyebrow" style="margin-bottom:6px">%s</div>'
+        '<h3 style="font-size:16px;color:var(--blue-deep);line-height:1.3">%s</h3>'
+        '<div style="color:var(--blue);font-weight:700;font-size:13px;margin-top:10px">%s &rarr;</div></a>'
+        % (L(lang, "/application-notes/%s/" % slug), esc(iz if zh else ie), esc(tz if zh else te),
+           ("阅读" if zh else "Read"))
+        for slug, te, tz, ie, iz in gen_notes.PUBLISHED)
+    pub_sec = ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="grid grid3">%s</div></div></section>'
+               % (("最新笔记" if zh else "Latest Notes"), pub_cards))
     body = (
+        pub_sec +
         '<section class="blk"><div class="wrap">'
         '<div class="catcount" style="margin-bottom:20px">%s</div>%s'
         '<h2 style="margin-top:30px">%s</h2><div class="xlinks">%s</div>'
