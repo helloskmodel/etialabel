@@ -9,7 +9,8 @@ from gen_heatproof import esc, L, page, write, LANGS
 
 COS = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/"
 TDS_BASE = COS + "TDS/POLIOLICS/"
-APEX_BANNER = "https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/IMAGE/logo/BANNER-OMNICURE.jpg"
+APEX_BANNER = "https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/IMAGE/logo/BANNER-OMNICURE.jpg"  # hero banner (unchanged)
+APEX_CARD_IMG = COS + "TDS/POLIOLICS/APEX1609.jpg"  # product-line card image on the sector page
 
 def _svg(p): return ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
                      'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">%s</svg>' % p)
@@ -292,7 +293,7 @@ PROC = [
 PLINES = [
  ("NEW Apex Series – Ultra-Performance Polyimide Label Materials for PCBs",
   ("Ultra Heat Resistant Label, up to 300°C", "超耐高温标签，耐温可达 300°C"),
-  "/products/circuit-board-labels/apex-series/", "linear-gradient(135deg,#0e2a63,#1A56DB)", APEX_BANNER),
+  "/products/circuit-board-labels/apex-series/", "linear-gradient(135deg,#0e2a63,#1A56DB)", APEX_CARD_IMG),
  ("POLYONICS XF", ("Core XF polyimide family for reflow, wash and general PCB identification.",
                    "面向回流、清洗与通用 PCB 标识的核心 XF 聚酰亚胺系列。"),
   "/contact/", "linear-gradient(135deg,#1A56DB,#3f7be0)", ""),
