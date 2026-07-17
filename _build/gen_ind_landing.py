@@ -161,7 +161,7 @@ LANDINGS = {
     "eyebrow": "Electronics & PCB",
     "h1": "Label Materials for Electronics and PCB Manufacturing",
     "hero": "Reliable identification must survive more than the finished product environment. It may need to remain readable through soldering, flux, aggressive cleaning, static-controlled handling and automated assembly. ETIA supplies specialty label materials and helps match each construction to the actual manufacturing process.",
-    "cta1": "Discuss Your Application", "cta2": "Request Samples",
+    "cta1": "Discuss Your Application", "cta2": "Talk to a Specialist",
     "intro_h": "Identification Through the Manufacturing Process",
     "intro": [
       "PCB and electronics labels may be applied before, during or after manufacturing. Their exposure changes according to the point of application. A pre-process label may encounter reflow or wave solder, rapid temperature change, flux and repeated cleaning. A post-process label may require chemical resistance, strong adhesion and durable traceability throughout assembly and service life. Labels used in ESD-controlled areas may also require static-dissipative constructions, while automated placement introduces additional requirements for release consistency, stiffness, curl and liner performance.",
@@ -221,7 +221,7 @@ LANDINGS = {
     "close": "The most heat-resistant material is not automatically the best material. Reliable identification depends on matching the complete construction to the real process. Share your temperature profile, chemistry, surface, print method and application timing with ETIA so that the selection can begin from the conditions that matter.",
     "fcta_h": "Find the Right Material for Your PCB Process",
     "fcta_body": "Discuss your manufacturing conditions with ETIA and request materials for application testing.",
-    "fcta1": "Talk to an Application Specialist", "fcta2": "Request Samples",
+    "fcta1": "Talk to an Application Specialist", "fcta2": "Talk to a Specialist",
     "meta_title": "Electronics & PCB Label Materials for Manufacturing Processes | ETIA",
     "meta_desc": "Durable label materials for PCB manufacturing, reflow, wave solder, harsh wash, ESD control, automated dispensing and post-process traceability. ETIA supports selection, samples, converting and supply.",
   },
@@ -229,7 +229,7 @@ LANDINGS = {
     "eyebrow": "电子与PCB",
     "h1": "面向电子与PCB制造的标签材料",
     "hero": "可靠标识不仅需要适应成品的使用环境，还可能需要经历焊接、助焊剂、严苛清洗、静电控制及自动化装配。ETIA供应特种标签材料，并根据客户的实际制造流程匹配合适的材料结构。",
-    "cta1": "沟通应用需求", "cta2": "申请样品",
+    "cta1": "沟通应用需求", "cta2": "咨询专家",
     "intro_h": "贯穿制造流程的可靠标识",
     "intro": [
       "电子与PCB标签可能在制造前、制造过程中或制造完成后贴附，不同贴标阶段对应的工况并不相同。制程前标签可能需要经历回流焊或波峰焊、快速温度变化、助焊剂及多次清洗；后制程标签则更关注耐化学性、粘接可靠性以及装配和使用周期内的持续追溯。ESD控制区域还可能需要静电耗散结构；自动贴标则会增加对离型稳定性、挺度、翘曲和底纸性能的要求。",
@@ -289,7 +289,7 @@ LANDINGS = {
     "close": "最高耐温的材料不一定是最合适的材料。可靠标识来自完整材料结构与实际工艺的正确匹配。向ETIA提供温度曲线、化学介质、贴附表面、打印方式及贴标阶段，我们将从真正影响应用的条件开始选型。",
     "fcta_h": "为您的PCB制造流程匹配合适材料",
     "fcta_body": "与ETIA沟通实际制造工况，并申请材料进行应用测试。",
-    "fcta1": "联系应用选型人员", "fcta2": "申请样品",
+    "fcta1": "联系应用选型人员", "fcta2": "咨询专家",
     "meta_title": "电子与PCB制造标签材料｜回流焊、波峰焊、耐清洗与ESD应用｜ETIA",
     "meta_desc": "面向PCB制造、回流焊、波峰焊、严苛清洗、ESD控制、自动贴标及后制程追溯的耐久标签材料。ETIA提供材料选型、样品测试、模切加工与供应支持。",
   },
@@ -322,7 +322,7 @@ LANDINGS = {
     ],
     "fcta_h": "Match the Right Material to Your Thermal Process",
     "fcta_body": "Share your surface, peak temperature, dwell time and handling with ETIA, and request materials for testing.",
-    "fcta1": "Talk to an Application Specialist", "fcta2": "Request Samples",
+    "fcta1": "Talk to an Application Specialist", "fcta2": "Talk to a Specialist",
     "meta_title": "Metals & Ceramics Label Materials — High-Temperature Steel & Kiln Identification | ETIA",
     "meta_desc": "High-temperature label and tag materials for steel, aluminium and ceramics: hot billet/coil ID, forged-steel heat-treatment, annealing, kiln firing and crucible marking. ETIA supports selection, samples and supply.",
   },
@@ -341,7 +341,7 @@ LANDINGS = {
     ],
     "fcta_h": "为您的热工艺匹配合适材料",
     "fcta_body": "向 ETIA 提供表面、峰值温度、持续时间与搬运方式，并申请材料进行测试。",
-    "fcta1": "联系应用选型人员", "fcta2": "申请样品",
+    "fcta1": "联系应用选型人员", "fcta2": "咨询专家",
     "meta_title": "金属与陶瓷标签材料｜耐高温钢铁与窑炉标识｜ETIA",
     "meta_desc": "面向钢铁、铝及陶瓷的耐高温标签与标牌材料：热钢坯/钢卷标识、锻钢热处理、退火、窑炉烧成与坩埚标记。ETIA 提供选型、样品与供应支持。",
   },
@@ -372,7 +372,7 @@ LANDINGS = {
     ],
     "fcta_h": "Match the Right Material to Your Application",
     "fcta_body": "Tell ETIA the surface, chemistry, temperature and process, and request materials for testing.",
-    "fcta1": "Talk to an Application Specialist", "fcta2": "Request Samples",
+    "fcta1": "Talk to an Application Specialist", "fcta2": "Talk to a Specialist",
     "meta_title": "Medical & Laboratory Label Materials — Cryogenic, Chemical & Sterilization Resistant | ETIA",
     "meta_desc": "Specialty label materials for medical and laboratory identification: diagnostics, laboratory cryo/autoclave, medical devices, pharmaceutical and wearables. ETIA supports selection, samples and supply.",
   },
@@ -390,7 +390,7 @@ LANDINGS = {
     ],
     "fcta_h": "为您的应用匹配合适材料",
     "fcta_body": "向 ETIA 提供表面、化学环境、温度与工艺，并申请材料进行测试。",
-    "fcta1": "联系应用选型人员", "fcta2": "申请样品",
+    "fcta1": "联系应用选型人员", "fcta2": "咨询专家",
     "meta_title": "医疗与实验室标签材料｜耐深低温、耐化学与耐灭菌｜ETIA",
     "meta_desc": "面向医疗与实验室标识的特种标签材料：诊断检测、实验室深低温/高压灭菌、医疗器械、制药与可穿戴。ETIA 提供选型、样品与供应支持。",
   },
@@ -423,7 +423,7 @@ LANDINGS = {
     ],
     "fcta_h": "Match the Right Material to Your Application",
     "fcta_body": "Tell ETIA the surface, temperature, chemistry and durability need, and request materials for testing.",
-    "fcta1": "Talk to an Application Specialist", "fcta2": "Request Samples",
+    "fcta1": "Talk to an Application Specialist", "fcta2": "Talk to a Specialist",
     "meta_title": "Automotive & Tire Label Materials — Underhood, VIN, Harness & EV | ETIA",
     "meta_desc": "Specialty automotive label materials for underhood/powertrain, parts marking, VIN and compliance, wire harness, EV battery and paint masking. ETIA supports selection, samples and supply.",
   },
@@ -442,7 +442,7 @@ LANDINGS = {
     ],
     "fcta_h": "为您的应用匹配合适材料",
     "fcta_body": "向 ETIA 提供表面、温度、化学环境与耐久需求，并申请材料进行测试。",
-    "fcta1": "联系应用选型人员", "fcta2": "申请样品",
+    "fcta1": "联系应用选型人员", "fcta2": "咨询专家",
     "meta_title": "汽车与轮胎标签材料｜发动机舱、VIN、线束与电动车｜ETIA",
     "meta_desc": "面向发动机舱/动力总成、零件标记、VIN 与合规、线束、电动车电池及喷漆遮蔽的汽车特种标签材料。ETIA 提供选型、样品与供应支持。",
   },
@@ -475,7 +475,7 @@ LANDINGS = {
     ],
     "fcta_h": "Match the Right Material to Your Cable",
     "fcta_body": "Tell ETIA the cable diameter, method and environment, and request materials for testing.",
-    "fcta1": "Talk to an Application Specialist", "fcta2": "Request Samples",
+    "fcta1": "Talk to an Application Specialist", "fcta2": "Talk to a Specialist",
     "meta_title": "Wire & Cable Label Materials — Flag, Wrap-Around, Heat-Shrink & Self-Laminating | ETIA",
     "meta_desc": "Specialty wire and cable label materials: flag labels, wrap-around, heat-shrink markers, self-laminating, wire harness and datacom cabling. ETIA supports selection, samples and supply.",
   },
@@ -494,7 +494,7 @@ LANDINGS = {
     ],
     "fcta_h": "为您的线缆匹配合适材料",
     "fcta_body": "向 ETIA 提供线径、方式与环境，并申请材料进行测试。",
-    "fcta1": "联系应用选型人员", "fcta2": "申请样品",
+    "fcta1": "联系应用选型人员", "fcta2": "咨询专家",
     "meta_title": "电线与电缆标签材料｜旗形、缠绕、热缩与自覆膜｜ETIA",
     "meta_desc": "特种电线电缆标签材料：旗形标签、缠绕式、热缩标记、自覆膜、线束与数据网络布线。ETIA 提供选型、样品与供应支持。",
   },
@@ -519,7 +519,7 @@ LANDINGS = {
     ],
     "fcta_h": "Match the Right Material to Your Environment",
     "fcta_body": "Tell ETIA the surface, exposure and service-life need, and request materials for testing.",
-    "fcta1": "Talk to an Application Specialist", "fcta2": "Request Samples",
+    "fcta1": "Talk to an Application Specialist", "fcta2": "Talk to a Specialist",
     "meta_title": "Outdoor & Energy Label Materials — UV, Weather & Long-Life Identification | ETIA",
     "meta_desc": "Durable, weather-resistant label materials for outdoor and energy: solar module ID, outdoor equipment, energy storage, UV/weather and rating plates. ETIA supports selection, samples and supply.",
   },
@@ -537,7 +537,7 @@ LANDINGS = {
     ],
     "fcta_h": "为您的环境匹配合适材料",
     "fcta_body": "向 ETIA 提供表面、暴露条件与使用寿命需求，并申请材料进行测试。",
-    "fcta1": "联系应用选型人员", "fcta2": "申请样品",
+    "fcta1": "联系应用选型人员", "fcta2": "咨询专家",
     "meta_title": "户外与能源标签材料｜耐紫外、耐候与长寿命标识｜ETIA",
     "meta_desc": "面向户外与能源的耐久耐候标签材料：光伏组件标识、户外设备、储能、耐紫外/耐候与规格铭牌。ETIA 提供选型、样品与供应支持。",
   },
@@ -568,7 +568,7 @@ def _resources(lang, slug):
     cards = [((("浏览产品与方案" if zh else "Browse Products & Solutions"),
                ("按应用、环境、特性与材料浏览" if zh else "Browse by application, environment, feature and material"),
                "/products/")),
-             ((("申请样品" if zh else "Request Samples"),
+             ((("咨询专家" if zh else "Talk to a Specialist"),
                ("提供工况，我们安排材料测试" if zh else "Share your conditions — we arrange material testing"),
                "/contact/"))]
     return cards
@@ -675,7 +675,7 @@ def build_by_environment(lang):
     contact = L(lang, "/contact/")
     cards = "".join(
         '<a class="card" href="%s"><h3>%s</h3><div class="go" style="color:var(--blue);font-weight:700;font-size:13.5px;margin-top:10px">%s →</div></a>'
-        % (contact, esc(z if zh else e), ("申请样品" if zh else "Request Samples")) for e, z in BY_ENV)
+        % (contact, esc(z if zh else e), ("咨询专家" if zh else "Talk to a Specialist")) for e, z in BY_ENV)
     body = ('<section class="blk"><div class="wrap"><div class="grid">%s</div></div></section>'
             '<div class="wrap">%s</div>') % (cards, hp.cta2(lang, "products"))
     path = "/products/by-environment/"
@@ -716,7 +716,7 @@ def build_by_feature(lang):
     contact = L(lang, "/contact/")
     cards = "".join(
         '<a class="card" href="%s"><h3>%s</h3><div class="go" style="color:var(--blue);font-weight:700;font-size:13.5px;margin-top:10px">%s →</div></a>'
-        % (contact, esc(z if zh else e), ("申请样品" if zh else "Request Samples")) for e, z in BY_FEATURE)
+        % (contact, esc(z if zh else e), ("咨询专家" if zh else "Talk to a Specialist")) for e, z in BY_FEATURE)
     body = ('<section class="blk"><div class="wrap"><div class="grid">%s</div></div></section>'
             '<div class="wrap">%s</div>') % (cards, hp.cta2(lang, "products"))
     path = "/products/by-feature/"

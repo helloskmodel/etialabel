@@ -542,10 +542,10 @@ def cta(lang):
     if lang == "zh":
         return """<div class="cta"><div class="ic">⚡</div><h3>始于应用。终于选对材料。</h3>
 <p>告知表面、温度、化学环境与打印方式,我们推荐材料并安排样品验证。</p>
-<div class="btns"><a class="btn pri" href="%s">申请样品</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
+<div class="btns"><a class="btn pri" href="%s">咨询专家</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
     return """<div class="cta"><div class="ic">⚡</div><h3>Start with the Application. Finish with the Right Material.</h3>
 <p>Tell us the surface, temperature, chemistry and print method — we'll recommend the material and arrange samples.</p>
-<div class="btns"><a class="btn pri" href="%s">Request a Sample</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
+<div class="btns"><a class="btn pri" href="%s">Talk to a Specialist</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
 
 # Per-page bottom CTA (question headline + <=2 sentences + primary + secondary).
 CTAS = {
@@ -1116,7 +1116,7 @@ HOME2 = {
            "h1": "Where Materials Meet Applications.",
            "line": "Every demanding application starts with the right material.",
            "body": "For over 20 years, ETIA has helped manufacturers solve complex identification challenges through specialty materials, application expertise, and flexible supply.",
-           "b1": "Explore Solutions", "b2": "Request Samples"},
+           "b1": "Explore Solutions", "b2": "Talk to a Specialist"},
   "sections": [
    {"eyebrow": "SPECIALTY LABEL MATERIALS · ENGINEERED CONSTRUCTIONS",
     "h2": "Materials Built for Demanding Conditions.",
@@ -1137,14 +1137,14 @@ HOME2 = {
     "h2": "Support from Material Selection to Long-Term Supply.",
     "sub": "Practical support throughout every stage of your project.",
     "body": "From application review and sample evaluation to laboratory testing, converting, quality inspection, and repeat supply, ETIA helps manufacturers move confidently from selection to production.",
-    "b1": "Talk to a Material Specialist", "b1u": "/contact/", "b2": "Request Samples", "b2u": "/contact/"},
+    "b1": "Talk to a Material Specialist", "b1u": "/contact/", "b2": "Talk to a Specialist", "b2u": "/contact/"},
   ]},
  "zh": {
   "hero": {"eyebrow": "耐久标识 · 特种标签材料",
            "h1": "让材料匹配应用。",
            "line": "每一个严苛应用，都始于选对材料。",
            "body": "20 多年来，ETIA 以特种材料、应用专业与柔性供应，帮助制造商解决复杂的标识难题。",
-           "b1": "浏览方案", "b2": "申请样品"},
+           "b1": "浏览方案", "b2": "咨询专家"},
   "sections": [
    {"eyebrow": "特种标签材料 · 工程化结构",
     "h2": "为严苛工况而生的材料。",
@@ -1165,7 +1165,7 @@ HOME2 = {
     "h2": "从选材到长期供应的全程支持。",
     "sub": "贯穿项目每一阶段的切实支持。",
     "body": "从应用评估、样品验证，到实验室检测、加工成型、质量检验与持续供应，ETIA 帮助制造商从选型稳步走向量产。",
-    "b1": "咨询材料专家", "b1u": "/contact/", "b2": "申请样品", "b2u": "/contact/"},
+    "b1": "咨询材料专家", "b1u": "/contact/", "b2": "咨询专家", "b2u": "/contact/"},
   ]},
 }
 
@@ -1231,7 +1231,7 @@ def build_home(lang):
                  '<div class="acard-body"><h3>%s</h3><div class="pmodel">%s</div><div class="pcode">%s</div>'
                  '<div class="acard-go">%s →</div></div></a>')%(
             home_hlink(lang,"/contact/"), gi, pimg, INDUSTRY_ICONS[gi%len(INDUSTRY_ICONS)],
-            esc(pr["name"]), esc(pr["model"]), esc(pr.get("code","")), esc(T.get("prod_cta","Request Sample")))
+            esc(pr["name"]), esc(pr["model"]), esc(pr.get("code","")), esc(T.get("prod_cta","Talk to a Specialist")))
     prod_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
                   '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
                   '<div class="acgrid acgrid5">%s</div></div></section>')%(
@@ -1378,12 +1378,35 @@ def build_contact(lang):
         esc(z if zh else e), esc(rz if zh else r), esc(c)) for e,z,r,rz,c in offices)
     ask=("告诉我们:粘贴表面、温度(贴标时与后续最高)、化学暴露、打印方式与标签尺寸,我们推荐材料并安排样品。" if zh
          else "Tell us: the surface, temperature (at application and later peak), chemical exposure, print method and label size — we'll recommend the material and arrange samples.")
-    body=('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div>'
-          '<a class="btn pri" href="mailto:label@etia-tech.com">label@etia-tech.com</a></div></section>'
-          '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>'
-          '<div class="wrap">%s</div>')%(
-        ("告诉我们您的应用" if zh else "Tell us your application"), esc(ask),
-        ("办公室" if zh else "Offices"), cards, cta(lang))
+    def lb(e,z): return z if zh else e
+    form_css=('<style>.cform{max-width:760px}'
+      '.cfg{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px;margin:12px 0 18px}'
+      '.cform label{display:flex;flex-direction:column;font-size:13px;font-weight:700;color:var(--blue-deep);gap:6px}'
+      '.cform label.full{grid-column:1/-1}'
+      '.cform input,.cform textarea{font:inherit;font-weight:400;padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink)}'
+      '.cform input:focus,.cform textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}'
+      '@media(max-width:560px){.cfg{grid-template-columns:1fr}}</style>')
+    form=(form_css+'<form class="cform" onsubmit="return etaContact(event)"><div class="cfg">'
+      '<label>'+esc(lb("Name *","姓名 *"))+'<input name="name" required></label>'
+      '<label>'+esc(lb("Company","公司"))+'<input name="company"></label>'
+      '<label>'+esc(lb("Email *","邮箱 *"))+'<input type="email" name="email" required></label>'
+      '<label>'+esc(lb("Phone *","电话 *"))+'<input name="phone" required></label>'
+      '<label class="full">'+esc(lb("Product / Interest","产品 / 需求"))+'<input name="product" id="cf_product"></label>'
+      '<label class="full">'+esc(lb("Your application — surface, temperature, chemistry, print method, label size","您的应用 —— 表面、温度、化学环境、打印方式、标签尺寸"))+'<textarea name="message" rows="4"></textarea></label>'
+      '</div><button class="btn pri" type="submit">'+esc(lb("Send to ETIA","发送给 ETIA"))+'</button></form>')
+    form_js=('<script>(function(){var p=new URLSearchParams(location.search),pr=p.get("product"),ty=p.get("type"),f=document.getElementById("cf_product");if(f&&pr){f.value=pr+(ty?" ("+ty+")":"");}})();'
+      'function etaContact(e){e.preventDefault();var f=e.target,g=function(n){var el=f.querySelector("[name="+n+"]");return el?el.value.trim():"";};'
+      'var nm=g("name"),em=g("email"),ph=g("phone");'
+      'if(!nm||!em||!ph){alert("'+lb("Please fill in name, email and phone.","请填写姓名、邮箱和电话。")+'");return false;}'
+      'var s="ETIA enquiry"+(g("product")?" - "+g("product"):"");'
+      'var b="Name: "+nm+"\\nCompany: "+g("company")+"\\nEmail: "+em+"\\nPhone: "+ph+"\\nProduct: "+g("product")+"\\n\\n"+g("message");'
+      'window.location.href="mailto:label@etia-tech.com?subject="+encodeURIComponent(s)+"&body="+encodeURIComponent(b);return false;}</script>')
+    body=('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div>%s%s'
+          '<p class="muted" style="font-size:13px;margin-top:10px">%s <a href="mailto:label@etia-tech.com">label@etia-tech.com</a></p></div></section>'
+          '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>')%(
+        lb("Tell us your application","告诉我们您的应用"), esc(ask), form, form_js,
+        lb("Prefer email? Write to","更习惯邮件？请联系"),
+        lb("Offices","办公室"), cards)
     crumb=[("Home","/"),("Contact","/contact/")]
     write(lang,"/contact/",page(lang,"/contact/",
         ("联系 ETIA | ETIA" if zh else "Contact ETIA | ETIA"),
@@ -1604,7 +1627,7 @@ def build_legal(lang):
          ("Changes to This Policy",["We may update this Privacy Policy from time to time. The \"Last updated\" date shows when it was last revised."]),
          ("Contact Us",["For any privacy question or request, contact us at "+CONTACT+"."])],
         [("引言",["ETIA（\"我们\"）尊重您的隐私。本隐私政策说明我们通过本网站收集哪些信息、如何使用，以及您拥有的选择。本政策仅适用于本网站。"]),
-         ("我们收集的信息",["您主动提供的信息：当您提交询价、申请样品或与我们联系时，我们会收集您填写的内容，例如姓名、公司、电话、邮箱及留言内容。",
+         ("我们收集的信息",["您主动提供的信息：当您提交询价、咨询专家或与我们联系时，我们会收集您填写的内容，例如姓名、公司、电话、邮箱及留言内容。",
                      "自动收集的信息：与大多数网站一样，我们可能通过 Cookie 及类似技术收集技术数据，如 IP 地址、浏览器类型、设备信息及访问页面。"]),
          ("信息的使用",["我们使用这些信息以回复您的询问、提供样品、报价与应用支持，运营并改进本网站，并履行法律或监管义务。"]),
          ("Cookie",["本网站使用 Cookie 及类似技术。有关我们使用的 Cookie 及管理方式，请参见我们的 Cookie 政策。"]),
