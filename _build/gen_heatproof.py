@@ -422,11 +422,12 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .cslide .cap h3{font-size:20px}}
 """
 
-NAV_ITEMS = [("Products", u_products(), "products"),
+NAV_ITEMS = [("Home", "/", "home"),
+             ("Products", u_products(), "products"),
              ("Application Notes", "/application-notes/", "notes"),
              ("Insights", "/insights/", "insights"),
              ("Service", "/service/", "service")]
-NAV_ZH = {"Products":"产品","Application Notes":"应用笔记","Insights":"洞察","Service":"服务"}
+NAV_ZH = {"Home":"首页","Products":"产品","Application Notes":"应用笔记","Insights":"洞察","Service":"服务"}
 
 # Products mega-menu: 4 axes (Computype-style left rail + right list)
 PROD_AXES = [
