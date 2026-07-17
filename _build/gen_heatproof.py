@@ -156,6 +156,12 @@ section.blk{padding:34px 0}
 .apppanel .aptext h3{font-size:25px;color:var(--blue-deep);margin-bottom:14px;line-height:1.2}
 .apppanel .aptext p{font-size:15.5px;color:var(--mut);line-height:1.65;margin-bottom:20px;max-width:40em}
 .apppanel .aptext .plink{font-size:14px;font-weight:700;color:var(--blue)}
+/* service commitment panel text */
+.appmod.svc .apppanel{align-items:start}
+.aptext .svc-num{font-size:13px;font-weight:800;letter-spacing:.12em;color:var(--green-d)}
+.aptext .svc-num+h3{margin-top:6px}
+.aptext .svc-tag{font-size:17px;font-weight:700;color:var(--ink);margin-bottom:16px;max-width:40em}
+.aptext .svc-close{font-size:15px;font-weight:800;color:var(--blue);margin-bottom:0}
 @media(max-width:820px){.apppanel{grid-template-columns:1fr;gap:20px}.apptab{font-size:13.5px;padding:10px 11px}.apppanel .aptext h3{font-size:22px}}
 .card{border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff;transition:.15s;display:block}
 .card:hover{border-color:var(--blue);box-shadow:0 8px 26px rgba(26,86,219,.10);text-decoration:none}
@@ -1253,20 +1259,58 @@ SERVICE_OFFICES=[
 ]
 # Future: 4 service images (one per commitment). Fill with clean COS URLs when ready.
 SERVICE_IMGS=["","","",""]
+SERVICE_INTRO=(
+  "From material quality and application validation to flexible converting and ongoing support, ETIA helps customers reduce risk and achieve reliable labeling performance throughout the entire project lifecycle.",
+  "从材料质量、应用验证，到柔性加工与持续支持，ETIA 在项目全流程中帮助客户降低导入风险，确保标签应用稳定可靠。")
+# num, title(en,zh), tagline(en,zh), body[(en,zh)...], close(en,zh)
+SERVICE_COMMIT=[
+ {"num":"01","title":("100% Quality Inspection","100% 质量检验"),
+  "tag":("Quality is verified at every stage.","每一个环节，都经过质量验证。"),
+  "body":[("Reliable label performance begins with consistent material quality. Every incoming material is inspected before entering production, and finished products are checked before shipment.",
+           "稳定的标签表现，始于稳定的材料质量。所有来料在进入生产前均经过检验，成品在出库前再次进行质量确认。"),
+          ("Supported by our in-house laboratory, production verification, retained samples, and traceability procedures, we help ensure that every batch meets the required quality and application standards.",
+           "依托自有实验室、生产过程验证、出库留样及追溯机制，我们确保每一批材料符合相应的质量和应用要求。")],
+  "close":("Every material. Every batch. Every delivery.","每一种材料，每一个批次，每一次交付。")},
+ {"num":"02","title":("Application-Driven Solutions","应用驱动方案"),
+  "tag":("Every application is unique.","每一种应用都不一样。"),
+  "body":[("Before recommending a material, we evaluate your surface, process, environment, printing method, and performance requirements.",
+           "在推荐材料之前，我们会充分评估粘贴表面、生产工艺、使用环境、打印方式及性能要求。"),
+          ("Whenever possible, materials are validated in our laboratory under simulated production conditions, helping reduce implementation risk before full-scale production.",
+           "在条件允许的情况下，我们会在模拟实际生产工况下进行实验室验证，帮助客户在正式量产导入前降低应用风险。")],
+  "close":("We don't guess. We validate.","我们不凭猜测，依靠验证。")},
+ {"num":"03","title":("Flexible Supply","柔性供应"),
+  "tag":("Materials supplied in the format your production needs.","按照您的生产需求，提供合适的材料规格。"),
+  "body":[("Specialized applications often require more than standard material sizes and fixed order quantities. With in-house slitting, die-cutting, and converting equipment, we can adapt materials to different production and processing requirements.",
+           "专业应用往往需要不同于标准产品的尺寸、规格和采购数量。依托自有分切、模切及加工设备，我们能够根据客户的生产与加工需求调整材料交付形式。"),
+          ("We support multiple materials, custom widths and sizes, varied specifications, samples, small-batch orders, and volume production.",
+           "我们支持多种材料、定制宽度与尺寸、多种规格、样品、小批量订单及批量生产。")],
+  "close":("Flexible materials. Flexible formats. Flexible quantities.","材料灵活、规格灵活、数量灵活。")},
+ {"num":"04","title":("Responsive Application Support","快速应用支持"),
+  "tag":("Supporting your application at every stage.","在应用的每一个阶段，为您提供支持。"),
+  "body":[("Our support continues from initial material selection and sample evaluation through printing, converting, implementation, and full-scale production.",
+           "我们的支持贯穿材料选型、样品评估、打印、加工、导入及正式量产的全过程。"),
+          ("When process conditions change or unexpected application issues arise, our team responds quickly with practical support to help minimize disruption and maintain consistent labeling performance.",
+           "当工艺条件发生变化，或生产过程中出现新的应用问题时，我们会快速响应，提供切实可行的支持，帮助减少生产中断并保持标签性能稳定。")],
+  "close":("Before delivery, during production, and beyond.","交付之前、生产之中，以及长期应用之后。")},
+]
 
 def build_service(lang):
     zh=(lang=="zh")
-    svc=HOME_I18N.get(lang,HOME_I18N["en"]).get("svc",[])
+    j=1 if zh else 0
     # --- Service Commitment as a tab BAR (same module as the industry landings) ---
     def panel_img(i):
         u=SERVICE_IMGS[i] if i<len(SERVICE_IMGS) else ""
         img=('<img src="%s" alt="" loading="lazy" onerror="this.remove()">'%esc(u)) if u else ""
         return '<div class="apimg">%s<span class="ph">\U0001F6E1</span></div>'%img
-    tabs="".join('<button class="apptab%s" onclick="etaTab(this)">%s</button>'%((" on" if i==0 else ""),esc(it["title"]))
-                 for i,it in enumerate(svc))
-    panels="".join('<div class="apppanel"%s>%s<div class="aptext"><h3>%s</h3><p>%s</p></div></div>'
-                   %((' style="display:none"' if i>0 else ''),panel_img(i),esc(it["title"]),esc(it["desc"]))
-                   for i,it in enumerate(svc))
+    tabs="".join('<button class="apptab%s" onclick="etaTab(this)">%s</button>'%((" on" if i==0 else ""),esc(it["title"][j]))
+                 for i,it in enumerate(SERVICE_COMMIT))
+    def panel(i,it):
+        bodyp="".join('<p>%s</p>'%esc(b[j]) for b in it["body"])
+        return ('<div class="apppanel"%s>%s<div class="aptext"><div class="svc-num">%s</div>'
+                '<h3>%s</h3><p class="svc-tag">%s</p>%s<p class="svc-close">%s</p></div></div>')%(
+            (' style="display:none"' if i>0 else ''),panel_img(i),esc(it["num"]),
+            esc(it["title"][j]),esc(it["tag"][j]),bodyp,esc(it["close"][j]))
+    panels="".join(panel(i,it) for i,it in enumerate(SERVICE_COMMIT))
     tabscript=("<script>function etaTab(b){var m=b.closest('.appmod');var t=[].slice.call(m.querySelectorAll('.apptab'));"
                "var i=t.indexOf(b);t.forEach(function(x,j){x.classList.toggle('on',j===i);});"
                "m.querySelectorAll('.apppanel').forEach(function(p,j){p.style.display=(j===i)?'grid':'none';});}"
@@ -1274,12 +1318,14 @@ def build_service(lang):
                "function etaMail(f){var g=function(n){var e=f.elements[n];return e?e.value:'';};"
                "var b='Name: '+g('name')+'%0D%0ACompany: '+g('company')+'%0D%0APhone: '+g('phone')+'%0D%0AEmail: '+g('email')+'%0D%0A%0D%0A'+g('msg');"
                "window.location.href='mailto:label@etia-tech.com?subject='+encodeURIComponent('Website enquiry')+'&body='+encodeURIComponent(b);return false;}</script>")
-    commit_sec=('<section class="blk"><div class="wrap"><h2>%s</h2><div class="appmod">'
+    commit_sec=('<section class="blk"><div class="wrap"><h2>%s</h2>'
+                '<p class="lede" style="max-width:64em;margin-bottom:26px">%s</p>'
+                '<div class="appmod svc">'
                 '<div class="apptabsrow"><button class="apparrow" onclick="etaScroll(this,-1)" aria-label="prev">&lsaquo;</button>'
                 '<div class="apptabs">%s</div>'
                 '<button class="apparrow" onclick="etaScroll(this,1)" aria-label="next">&rsaquo;</button></div>'
                 '<div class="apppanels">%s</div></div></div></section>')%(
-        ("我们的服务承诺" if zh else "Our Service Commitment"), tabs, panels)
+        ("我们的服务承诺" if zh else "Our Service Commitment"), esc(SERVICE_INTRO[j]), tabs, panels)
     # --- contact form with phone ---
     ph=lambda p: '<input name="%s" placeholder="%s"%s>'%p
     fields=('<div class="cfrow"><input name="name" placeholder="%s" required><input name="company" placeholder="%s"></div>'
