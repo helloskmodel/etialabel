@@ -384,7 +384,7 @@ def build_product(lang, p):
         ("跨品牌为应用替代,非技术等效。" if lang=="zh" else "Cross-brand items are application alternatives, not technical equivalents."),
         ("资格声明" if lang=="zh" else "Qualification"), (QUALIFY_ZH if lang=="zh" else QUALIFY_EN),
         esc(p["source_document"]), (VERIFY_ZH[:0] and "" or ("来源手册,需核对最新TDS。" if lang=="zh" else "Brochure source — verify current TDS.")),
-        cta_auto(lang))
+        hp.cta2(lang,"product-detail"))
     name=p["product_name"]
     crumb=[("Home","/"),("Products","/products/"),(BRANDS[bkey]["name"],u_brand(bkey)),(name,path)]
     title=("%s | ETIA" % name)

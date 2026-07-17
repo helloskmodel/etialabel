@@ -198,11 +198,11 @@ ul.checks li::before{content:"→";position:absolute;left:0;color:var(--blue);fo
 .nfbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:8px 0 4px}
 .nsearch{flex:1;min-width:220px;max-width:420px;font-family:inherit;font-size:15px;padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
 .nsearch:focus{outline:none;border-color:var(--blue)}
-.cta{background:linear-gradient(155deg,var(--blue),var(--blue-deep));color:#fff;border-radius:18px;padding:40px;text-align:center;margin:26px 0}
+.cta{background:linear-gradient(155deg,var(--blue),var(--blue-deep));color:#fff;border-radius:18px;padding:40px;text-align:left;margin:26px 0}
 .cta .ic{font-size:28px;color:#8fe063}
 .cta h3{font-size:26px;font-weight:800;margin-top:4px;text-wrap:balance}
-.cta p{color:#d3ddf3;margin:12px auto 20px;max-width:40em}
-.cta .btns{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:480px;margin:16px auto 0}
+.cta p{color:#d3ddf3;margin:12px 0 20px;max-width:52em}
+.cta .btns{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:480px;margin:16px 0 0}
 .cta .btns .btn{display:block;width:100%;padding:11px 16px;font-size:14px;text-align:center}
 @media(max-width:520px){.cta .btns{grid-template-columns:1fr;max-width:320px}}
 .btn.on-dark{border:1.5px solid #ffffff66;color:#fff}.btn.on-dark:hover{background:#fff;color:var(--blue-deep);text-decoration:none}
@@ -546,6 +546,59 @@ def cta(lang):
 <p>Tell us the surface, temperature, chemistry and print method — we'll recommend the material and arrange samples.</p>
 <div class="btns"><a class="btn pri" href="%s">Request a Sample</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
 
+# Per-page bottom CTA (question headline + <=2 sentences + primary + secondary).
+CTAS = {
+ "home": {"h": ("We Can Label for You.", "标签，我们为您来做。"),
+   "body": ("Tell us about the surface, temperature, chemical exposure, printing method, and expected service life. Our team will help you narrow down the right material and prepare samples for evaluation.",
+            "告诉我们贴附表面、温度、化学暴露、打印方式与预期使用寿命，我们的团队将帮您缩小材料范围并准备样品供评估。"),
+   "b1": ("Talk to a Specialist", "咨询专家"), "b1u": "/contact/",
+   "b2": ("Send Us Your Requirements", "提交您的需求"), "b2u": "/contact/"},
+ "products": {"h": ("Need Help Comparing Materials?", "需要帮助比较材料？"),
+   "body": ("Share your performance requirements and preferred construction. We will help you compare suitable material options based on temperature, surface, adhesive, printing, and durability needs.",
+            "告诉我们您的性能要求与倾向的材料结构，我们将根据温度、表面、胶粘剂、打印与耐久性需求，帮您比较合适的材料选项。"),
+   "b1": ("Get Material Recommendations", "获取材料推荐"), "b1u": "/contact/",
+   "b2": ("Request Technical Data", "索取技术数据"), "b2u": "/contact/"},
+ "applications": {"h": ("Have a Specific Application Challenge?", "有具体的应用难题？"),
+   "body": ("Describe where the label will be used, what it must withstand, and how it will be printed. We will help you identify the key material requirements and recommend a practical starting point.",
+            "描述标签的使用位置、需承受的工况以及打印方式，我们将帮您梳理关键材料要求，并给出可落地的选型起点。"),
+   "b1": ("Discuss Your Application", "沟通您的应用"), "b1u": "/contact/",
+   "b2": ("Talk to a Specialist", "咨询专家"), "b2u": "/contact/"},
+ "insights": {"h": ("Still Have Questions After Reading?", "读完仍有疑问？"),
+   "body": ("Technical articles can explain the principles, but every process is different. Send us your application details and our team will help you translate the guidance into a suitable material choice.",
+            "技术文章讲的是原理，但每个工艺都不同。把您的应用细节发给我们，团队会帮您把这些指南转化为合适的材料选择。"),
+   "b1": ("Ask a Material Question", "提出材料问题"), "b1u": "/contact/",
+   "b2": ("Explore Applications", "浏览应用笔记"), "b2u": "/application-notes/"},
+ "service": {"h": ("Looking for Material or Production Support?", "需要材料或生产方面的支持？"),
+   "body": ("Whether you need help with material selection, testing, converting, quality control, or repeat supply, our team is ready to support your project with clear and practical guidance.",
+            "无论是材料选型、检测、加工、质量控制还是持续供应，我们的团队都能以清晰、务实的建议支持您的项目。"),
+   "b1": ("Talk to a Specialist", "咨询专家"), "b1u": "/contact/",
+   "b2": ("Submit Your Requirements", "提交您的需求"), "b2u": "/contact/"},
+ "application-note": {"h": ("Need a Material Recommendation for This Application?", "需要这个应用的材料推荐？"),
+   "body": ("Share your surface, temperature, chemical exposure, and printing requirements. We will help you identify suitable options for testing.",
+            "告诉我们表面、温度、化学暴露与打印要求，我们将帮您筛选出可供测试的合适选项。"),
+   "b1": ("Request a Recommendation", "申请选型推荐"), "b1u": "/contact/",
+   "b2": ("Talk to a Specialist", "咨询专家"), "b2u": "/contact/"},
+ "case-study": {"h": ("Facing a Similar Identification Challenge?", "面临类似的标识难题？"),
+   "body": ("Tell us about your process and operating conditions. We will review the application and help you evaluate a suitable material construction.",
+            "告诉我们您的工艺与工况，我们将评估应用并帮您选出合适的材料结构。"),
+   "b1": ("Discuss a Similar Project", "沟通类似项目"), "b1u": "/contact/",
+   "b2": ("Talk to a Specialist", "咨询专家"), "b2u": "/contact/"},
+ "product-detail": {"h": ("Need to Confirm Whether This Material Is Suitable?", "需要确认这款材料是否适用？"),
+   "body": ("Send us your application conditions and printing requirements. We will help you evaluate fit, available formats, and sample options.",
+            "把您的应用工况与打印要求发给我们，我们将帮您评估适用性、可选规格与样品方案。"),
+   "b1": ("Check Material Suitability", "确认材料适用性"), "b1u": "/contact/",
+   "b2": ("FREE SAMPLE", "免费样品"), "b2u": "/contact/"},
+}
+
+def cta2(lang, kind, linkfn=L):
+    zh = (lang == "zh"); c = CTAS.get(kind, CTAS["home"])
+    pk = lambda t: t[1] if zh else t[0]
+    return ('<div class="cta cta-q"><h3>%s</h3><p>%s</p>'
+            '<div class="btns"><a class="btn pri" href="%s">%s</a>'
+            '<a class="btn on-dark" href="%s">%s</a></div></div>') % (
+        esc(pk(c["h"])), esc(pk(c["body"])), linkfn(lang, c["b1u"]), esc(pk(c["b1"])),
+        linkfn(lang, c["b2u"]), esc(pk(c["b2"])))
+
 def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, active="", trust=True, hero=None):
     canonical = SITE + PREFIX[lang] + path
     sch = [breadcrumb_jsonld(crumb, lang)] + (schema_extra or [])
@@ -683,7 +736,7 @@ def build_process_line(lang, pid):
         sec_en,
         ("行业应用" if lang=="zh" else "Industry applications"), ind_links or "—",
         ("其他工艺线" if lang=="zh" else "Related process lines"), others,
-        cta(lang))
+        cta2(lang,"product-detail"))
     # ItemList structured data (visible product list matches markup)
     itemlist = {"@context":"https://schema.org","@type":"ItemList","itemListElement":[
         {"@type":"ListItem","position":i+1,"name":p["name"],"url":SITE+PREFIX[lang]+u_prod(p["slug"])} for i,p in enumerate(prods)]}
@@ -724,7 +777,7 @@ def build_product(lang, p):
         path_badges,
         ("推荐行业应用" if lang=="zh" else "Recommended applications"), applinks or ("—"),
         ("相关与替代产品" if lang=="zh" else "Related & alternative products"), altlinks or "—",
-        cta(lang))
+        cta2(lang,"product-detail"))
     name = p["name"]
     ptype = ("吊牌" if p["type"]=="tag" else "标签") if lang=="zh" else p["type"]
     h1 = "%s %s" % (name, ("耐高温"+ptype if lang=="zh" else "High-Temperature "+p["type"].title()))
@@ -805,7 +858,7 @@ def build_industry(lang, iid):
             '<section class="blk"><div class="wrap"><h2>%s</h2><div class="xlinks">%s</div></div></section>'
             '<div class="wrap">%s</div>') % (
         ("应用" if lang=="zh" else "Applications"), appcards,
-        ("推荐工艺线" if lang=="zh" else "Recommended process lines"), proclinks, cta(lang))
+        ("推荐工艺线" if lang=="zh" else "Recommended process lines"), proclinks, cta2(lang,"applications"))
     parentlabel = "Industries & Applications"
     crumb=[("Home","/"),(parentlabel,u_ind_hub()),(title,u_industry(iid))]
     write(lang, u_industry(iid), page(lang, u_industry(iid),
@@ -830,7 +883,7 @@ def build_application(lang, a):
         ("推荐产品" if lang=="zh" else "Recommended products"), reccards,
         L(lang,u_line(a["process_path"])), esc(pp["title_zh"] if lang=="zh" else pp["title_en"]),
         L(lang,u_industry(iid)), esc(i["title_zh"] if lang=="zh" else i["title_en"]),
-        cta(lang))
+        cta2(lang,"applications"))
     title=i["title_zh"] if lang=="zh" else i["title_en"]
     crumb=[("Home","/"),("Industries & Applications",u_ind_hub()),(title,u_industry(iid)),(a["title_en"],u_app(iid,a["slug"]))]
     write(lang, u_app(iid,a["slug"]), page(lang, u_app(iid,a["slug"]),
@@ -1186,9 +1239,7 @@ def build_home(lang):
         esc(T.get("fs_sub","")),esc(T.get("fs_note","")),
         esc(T.get("fs_email","Email")),esc(T.get("fs_phone","Phone")),
         esc(T.get("fs_addr","Mailing address")),esc(T.get("fs_btn","Request Free Sample")))
-    final_cta=('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
-               '<div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn on-dark" href="%s">%s</a></div></div></div>')%(
-        esc(T["fcta_title"]),esc(T["fcta_para"]),home_hlink(lang,"/contact/"),esc(T["fcta_b1"]),home_hlink(lang,"/contact/"),esc(T["fcta_b2"]))
+    final_cta='<div class="wrap">%s</div>'%cta2(lang,"home",home_hlink)
     trust_html=trust_bar(lang)
     sc_items="".join('<div class="sci"><b>%s</b><p>%s</p></div>'%(esc(it["title"]),esc(it["desc"])) for it in T.get("svc",[]))
     sc_section=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
@@ -1461,7 +1512,7 @@ def build_service(lang):
         ("留下电话与应用需求，我们尽快回复并安排样品。" if zh
          else "Leave your phone and application — we'll reply quickly and arrange samples."),
         fields, phones)
-    body=commit_sec+form_sec+('<div class="wrap">%s</div>'%cta(lang))+tabscript
+    body=commit_sec+form_sec+('<div class="wrap">%s</div>'%cta2(lang,"service"))+tabscript
     crumb=[("Home","/"),("Service","/service/")]
     write(lang,"/service/",page(lang,"/service/",
         ("服务 | ETIA" if zh else "Service | ETIA"),
@@ -1493,7 +1544,7 @@ def build_insights(lang):
           '<div class="wrap">%s</div>')%(cards,
         ("更多应用笔记与选型参考陆续发布；需要具体型号资料请联系 ETIA。" if zh
          else "More application notes and selection references are being published; contact ETIA for model-specific data."),
-        cta(lang))
+        cta2(lang,"insights"))
     crumb=[("Home","/"),("Insights","/insights/")]
     write(lang,"/insights/",page(lang,"/insights/",
         ("洞察 | ETIA" if zh else "Insights | ETIA"),

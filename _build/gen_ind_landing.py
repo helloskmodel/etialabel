@@ -103,7 +103,7 @@ def build_pcb_category(lang, cat_slug):
     else:
         catalog = '<div>%s%s</div>' % (count, content)
     body = ('<section class="blk"><div class="wrap">%s</div></section>'
-            '<div class="wrap">%s</div>%s') % (catalog, cta(lang), filt)
+            '<div class="wrap">%s</div>%s') % (catalog, hp.cta2(lang, "products"), filt)
     path = "/industries/electronics-pcb/%s/" % cat_slug
     crumb = [(("首页" if zh else "Home"), "/"), (("行业" if zh else "Industries"), "/industries/"),
              (("电子与PCB" if zh else "Electronics & PCB"), "/industries/electronics-pcb/"),
@@ -650,7 +650,7 @@ def build_by_environment(lang):
         '<a class="card" href="%s"><h3>%s</h3><div class="go" style="color:var(--blue);font-weight:700;font-size:13.5px;margin-top:10px">%s →</div></a>'
         % (contact, esc(z if zh else e), ("申请样品" if zh else "Request Samples")) for e, z in BY_ENV)
     body = ('<section class="blk"><div class="wrap"><div class="grid">%s</div></div></section>'
-            '<div class="wrap">%s</div>') % (cards, cta(lang))
+            '<div class="wrap">%s</div>') % (cards, hp.cta2(lang, "products"))
     path = "/products/by-environment/"
     crumb = [("Home", "/"), ("Products", "/products/"), ("By Environment" if not zh else "按环境", path)]
     write(lang, path, page(lang, path,
@@ -691,7 +691,7 @@ def build_by_feature(lang):
         '<a class="card" href="%s"><h3>%s</h3><div class="go" style="color:var(--blue);font-weight:700;font-size:13.5px;margin-top:10px">%s →</div></a>'
         % (contact, esc(z if zh else e), ("申请样品" if zh else "Request Samples")) for e, z in BY_FEATURE)
     body = ('<section class="blk"><div class="wrap"><div class="grid">%s</div></div></section>'
-            '<div class="wrap">%s</div>') % (cards, cta(lang))
+            '<div class="wrap">%s</div>') % (cards, hp.cta2(lang, "products"))
     path = "/products/by-feature/"
     crumb = [("Home", "/"), ("Products", "/products/"), ("By Feature" if not zh else "按特性", path)]
     write(lang, path, page(lang, path,
@@ -729,7 +729,7 @@ def build_products_overview(lang):
         card(("By Material", "按材料"), ("Start from the substrate.", "从基材出发。"),
              BY_MATERIAL[0][2], [("Polyimide", "聚酰亚胺")]))
     body = ('<section class="blk"><div class="wrap"><div class="two">%s</div></div></section>'
-            '<div class="wrap">%s</div>') % (cards, cta(lang))
+            '<div class="wrap">%s</div>') % (cards, hp.cta2(lang, "products"))
     path = "/products/"
     crumb = [("Home", "/"), ("Products", path)]
     write(lang, path, page(lang, path,
@@ -799,7 +799,7 @@ def build_application_notes(lang):
         ("按行业筛选" if zh else "Filter by Industry"), chips, init_count, countword, esc(searchph), cards,
         ("应用笔记正在陆续发布（约 40 篇，按行业 / 应用 / 环境标记）。需要特定主题资料请联系 ETIA。" if zh
          else "Application notes are being published (around 40, tagged by industry / application / environment). Contact ETIA for a specific topic."),
-        cta(lang), js)
+        hp.cta2(lang, "applications"), js)
     # HERO SECTION — the APPLICATIONS hero banner (HOME2 section 1)
     hero = hp.section_hero(lang, 1)
     path = "/application-notes/"

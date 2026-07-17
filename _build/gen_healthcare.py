@@ -283,7 +283,7 @@ def build_product(lang, p):
         ("同品牌相关材料" if lang=="zh" else "Related materials from the same brand"), samelinks,
         ("资格声明" if lang=="zh" else "Qualification"), (QUALIFY_ZH if lang=="zh" else QUALIFY_EN),
         ("来源手册,需核对最新数据表。" if lang=="zh" else "Brochure source — verify current data sheet."),
-        cta_hc(lang))
+        hp.cta2(lang,"product-detail"))
     name=p["product_name"]
     crumb=[("Home","/"),("Products","/products/"),(BRANDS[bk]["name"],u_brand(bk)),(name,path)]
     desc=(("%s。%s"%(name,p["brochure_direction_zh"]))[:157] if lang=="zh" else ("%s — %s"%(name,p["brochure_direction_en"]))[:157])

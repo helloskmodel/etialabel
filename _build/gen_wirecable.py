@@ -215,7 +215,7 @@ def build_product(lang,p):
         esc(p["product_description"]),
         ("材料信息" if lang=="zh" else "Material information"),factrows,
         ("适用应用" if lang=="zh" else "Applicable applications"),appbadges or "—",
-        esc(envnote),cta_wc(lang))
+        esc(envnote),hp.cta2(lang,"product-detail"))
     name=p["product_name"]
     crumb=[("Home","/"),("Products","/products/"),("Avery Dennison",u_brand()),(name,path)]
     hp.write(lang,path,page(lang,path,"%s | ETIA"%name,

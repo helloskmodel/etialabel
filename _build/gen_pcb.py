@@ -203,7 +203,7 @@ def build_product(lang,p):
         ("材料结构" if lang=="zh" else "Material construction"),factrows,
         ("适用PCB工艺" if lang=="zh" else "Applicable PCB processes"),catbadges or "—",
         ("市场对应型号" if lang=="zh" else "Related products in the market"),market_table_product(p,lang),
-        (VERIFY_ZH if lang=="zh" else VERIFY_EN),cta_pcb(lang))
+        (VERIFY_ZH if lang=="zh" else VERIFY_EN),hp.cta2(lang,"product-detail"))
     name=p["product_name"]
     crumb=[("Home","/"),("Products","/products/"),("Polyonics",u_brand()),(name,path)]
     # no Product structured data (no offer/availability)

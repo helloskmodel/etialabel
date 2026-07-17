@@ -96,7 +96,7 @@ def build_ecl(lang):
         _p([("Tell us your reflow / wave profile, flux and cleaning chemistry, ESD requirements, application surface and barcode density, and ETIA will lock in the right Polyonics® construction and arrange free samples for process validation.",
              "告诉我们你的回流 / 波峰曲线、助焊剂与清洗化学品、ESD 要求、粘贴表面与条码密度，ETIA 将为你锁定合适的 Polyonics® 结构，并安排免费打样用于工艺验证。")], zh))
 
-    body = s1 + s2 + s3 + s4 + s5 + s6 + talk + ('<div class="wrap">%s</div>' % cta(lang))
+    body = s1 + s2 + s3 + s4 + s5 + s6 + talk + ('<div class="wrap">%s</div>' % hp.cta2(lang, "product-detail"))
     crumb = [(("首页" if zh else "Home"), "/"), (("行业" if zh else "Industries"), "/industries/"),
              (("电子元器件标签" if zh else "Electronic Component Labels"), path)]
     meta_t = ("电子元器件标签｜耐 300°C 回流焊·波峰焊·强助焊剂 — Apex 系列｜ETIA（Polyonics®）" if zh
@@ -212,7 +212,7 @@ def build_note(lang, n):
         + _sec(_t(("Market Cross-Reference", "市场对应型号"), zh),
                _tbl([("Brand", "品牌"), ("Corresponding model", "对应型号"), ("Notes", "说明")], n["mkt_rows"], zh)
                + _note(_t(MKT_DISCLAIMER, zh)))
-        + ('<div class="wrap">%s</div>' % cta(lang)))
+        + ('<div class="wrap">%s</div>' % hp.cta2(lang, "application-note")))
     crumb = [(("首页" if zh else "Home"), "/"),
              (("应用笔记" if zh else "Application Notes"), "/application-notes/"),
              (_t(n["title"], zh), path)]
