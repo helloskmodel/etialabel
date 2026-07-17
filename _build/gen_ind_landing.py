@@ -55,19 +55,22 @@ def build_pcb_category(lang, cat_slug):
             heat_cell = (HEAT_ZH.get(ht, ht) if zh else ht) if ht else "—"
             esd_cell = ('<span class="esd-y">%s</span>' % ("抗静电" if zh else "ESD")) if p.get("esd") else "—"
             sp = "%s?product=%s" % (contact, p["slug"])
+            purl = L(lang, "/products/%s/" % p["slug"])
             actions = (
+                '<a class="pbtn view" href="%s">%s</a>'
                 '<a class="pbtn" href="%s&amp;type=inquiry">%s</a>'
                 '<a class="pbtn sample" href="%s&amp;type=sample">%s</a>'
                 '<a class="pbtn" href="%s&amp;type=tds">%s</a>') % (
+                purl, ("查看产品" if zh else "VIEW PRODUCT"),
                 sp, ("询价" if zh else "GET INQUIRY"),
                 sp, ("免费样品" if zh else "FREE SAMPLE"),
                 sp, ("下载 TDS" if zh else "DOWNLOAD TDS"))
             rows_html += ('<tr class="fitem" data-color="%s" data-finish="%s" data-esd="%s">'
-                          '<td class="ptd-name">%s<div class="ptd-desc">%s</div></td>'
+                          '<td class="ptd-name"><a href="%s">%s</a><div class="ptd-desc">%s</div></td>'
                           '<td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td>'
                           '<td class="ptd-act">%s</td></tr>') % (
                 esc(c if c != "—" else ""), esc(fin if fin != "—" else ""), ("1" if p.get("esd") else ""),
-                esc(p["product_name"]), esc(desc),
+                purl, esc(p["product_name"]), esc(desc),
                 esc(_film(p.get("construction", ""))), esc(color_cell), esc(fin_cell), esc(heat_cell), esd_cell,
                 actions)
         content = ('<div class="ptable-wrap"><table class="ptable"><thead><tr>%s</tr></thead>'
