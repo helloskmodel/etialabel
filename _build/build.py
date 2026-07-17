@@ -15,6 +15,7 @@ import gen_pi as pi
 import gen_featured as fs
 import gen_ind_landing as land
 import gen_notes as notes
+import gen_prodline as prodline
 
 hp.main()      # clean + build heatproof + home (with harsh-env module) + base vercel.json
 auto.main()    # build automotive + automotive sitemap + merge redirects
@@ -25,5 +26,6 @@ pi.main()      # build Polyimide (PI) Material & Application Center + By-Materia
 fs.main()      # build Featured Solutions center + harsh-environment landing pages
 land.main()    # industry LANDING pages (brochure layer) — owns /industries/<slug>/ index
 notes.main()   # Application Notes (SEO articles) + Electronic Component Labels product landing
+prodline.main()  # Reusable product-line landings (Polyonics Apex Series, first instance)
 print("BUILD COMPLETE — total EN canonical URLs:",
-      len(hp.ALL_URLS)+len(auto.AUTO_URLS)+len(hc.HC_URLS)+len(pcb.URLS)+len(wc.URLS)+len(pi.URLS)+len(fs.URLS)+len(land.URLS)+len(notes.URLS))
+      len(hp.ALL_URLS)+len(auto.AUTO_URLS)+len(hc.HC_URLS)+len(pcb.URLS)+len(wc.URLS)+len(pi.URLS)+len(fs.URLS)+len(land.URLS)+len(notes.URLS)+len(prodline.URLS))
