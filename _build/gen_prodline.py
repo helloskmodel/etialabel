@@ -9,7 +9,7 @@ from gen_heatproof import esc, L, page, write, LANGS
 
 COS = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/"
 TDS_BASE = COS + "TDS/POLIOLICS/"
-APEX_BANNER = TDS_BASE + "APEXbanner.jpg"
+APEX_BANNER = "https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/IMAGE/logo/BANNER-OMNICURE.jpg"
 
 def _svg(p): return ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
                      'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">%s</svg>' % p)
@@ -132,8 +132,8 @@ def build_apex(lang):
     hero = ('<section class="aphero"><div class="wrap"><div class="eyebrow">%s</div>'
             '<h1>%s</h1><p>%s</p><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
             '</div></section>') % (
-        H("NEW · POLYONICS PRODUCT LINE", "全新 · POLYONICS 产品线"),
-        H("Introducing the NEW Apex Series – Ultra-Performance Polyimide Label Materials for PCBs",
+        H("Ultra Heat Resistant Label", "超耐高温标签"),
+        H("New Apex Series – Ultra-Performance Polyimide Label Materials for PCBs",
           "全新 Apex 系列 —— 面向 PCB 的超高性能聚酰亚胺标签材料"),
         H("Next-gen coating for modern PCB lines. Proven gains in flux and cleaner resistance with excellent print quality and adhesion at high temperatures.",
           "面向现代 PCB 产线的新一代涂层。助焊剂与清洗剂耐受性显著提升，兼具优异的打印质量与高温附着力。"),
