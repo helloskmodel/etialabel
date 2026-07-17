@@ -222,7 +222,7 @@ def build_apex(lang):
         H("Technical Data Sheets for each Apex SKU.", "各 Apex 型号的技术数据表（TDS）。"), docs,
         H("REACH / RoHS / UL declarations available on request.", "REACH / RoHS / UL 声明可应要求提供。"))
     # CTA
-    s_cta = ('<section class="blk"><div class="wrap"><div class="cta" style="text-align:left"><h3>%s</h3><p>%s</p>'
+    s_cta = ('<section class="blk"><div class="wrap"><div class="cta"><h3>%s</h3><p>%s</p>'
              '<div class="btns"><a class="btn pri" href="%s">%s</a><a class="btn on-dark" href="%s">%s</a></div>'
              '</div></div></section>') % (
         H("Request guidance on SKU selection", "需要选型建议？"),
