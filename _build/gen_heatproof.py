@@ -1168,7 +1168,14 @@ HOME2 = {
 
 # Green corner labels + banner background images (fill BG with clean COS URLs later)
 HOME_TABS = [("HOME", "首页"), ("PRODUCTS", "产品"), ("APPLICATIONS", "应用"), ("INSIGHTS", "洞察"), ("SERVICE", "服务")]
-HOME_BG = ["", "", "", "", ""]
+# Page hero banners (COS). .hbanner::before lays the brand-blue gradient over the photo.
+BANNER_HOME = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/APEXbanner.jpg"
+BANNER_APPLICATION = "https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/BANNERIMG/BANNER-APPLICATION.jpg"
+BANNER_INSIGHT = "https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/BANNERIMG/BANNER-INSIGHT.jpg"
+BANNER_SERVICE = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/HP9001609.jpg"
+HOME_BG = [BANNER_HOME, "", "", "", ""]
+# section_hero idx: 0=Products, 1=Applications, 2=Insights, 3=Service
+SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
 
 def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
     st = ' style="background-image:url(%s)"' % esc(bg) if bg else ""
@@ -1190,6 +1197,7 @@ def page_hero(lang, eyebrow, title, sub, body, b1, b1u, b2, b2u, bg=""):
 # Per-page hero from a HOME2 section. idx: 0=Products,1=Applications,2=Insights,3=Service.
 def section_hero(lang, idx, bg=""):
     s = HOME2.get(lang, HOME2["en"])["sections"][idx]
+    bg = bg or SECTION_BG.get(idx, "")
     return page_hero(lang, s["eyebrow"], s["h2"], s["sub"], s["body"], s["b1"], s["b1u"], s["b2"], s["b2u"], bg)
 
 def build_home(lang):
