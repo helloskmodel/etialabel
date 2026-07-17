@@ -11,6 +11,7 @@ COS = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/"
 TDS_BASE = COS + "TDS/POLIOLICS/"
 APEX_BANNER = "https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/IMAGE/logo/BANNER-OMNICURE.jpg"  # hero banner (unchanged)
 APEX_CARD_IMG = COS + "TDS/POLIOLICS/APEX1609.jpg"  # product-line card image on the sector page
+WHY_IMG = COS + "TDS/POLIOLICS/XF-101M.jpg"  # image on the left of the Why Apex section
 
 def _svg(p): return ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
                      'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">%s</svg>' % p)
@@ -46,6 +47,10 @@ PL_CSS = """<style>
 .whyul li:last-child{border-bottom:none}
 .whyul li:before{content:"";position:absolute;left:4px;top:24px;width:12px;height:12px;border-radius:50%;background:var(--green)}
 .whyul strong{color:var(--blue-deep);font-weight:800}
+.whyul .hl{background:#e4f3dd;color:var(--green-d);font-weight:800;padding:0 8px;border-radius:6px}
+.whygrid{display:grid;grid-template-columns:0.82fr 1.18fr;gap:36px;align-items:center;margin-top:8px}
+.whyimg{border-radius:14px;background-size:cover;background-position:center;min-height:360px;background-color:#0e2a63;box-shadow:0 14px 34px rgba(20,40,90,.16)}
+@media(max-width:820px){.whygrid{grid-template-columns:1fr}.whyimg{min-height:220px}}
 .spectbl{width:100%;border-collapse:collapse;font-size:15px;max-width:940px}
 .spectbl th{text-align:left;width:230px;background:#f4f7fd;color:var(--blue-deep);font-weight:800;padding:14px 16px;vertical-align:top}
 .spectbl td{padding:14px 16px;border-bottom:1px solid var(--line);color:var(--ink)}
@@ -90,10 +95,10 @@ PILLARS = [  # (icon idx, (en title, zh title), (en desc, zh desc))  -- VERBATIM
       "源自高性能标签材料领导者的品质保证。")),
 ]
 WHY = [  # VERBATIM (lead phrase bolded for emphasis)
- ("<strong>72% improvement</strong> in flux solder performance vs. our legacy line, validated in testing.",
-  "<strong>助焊剂焊接性能提升 72%</strong>（相较上一代材料，经测试验证）。"),
- ("<strong>15% improvement</strong> in cleaner resistance vs. our legacy line, helping labels survive high-pressure washes.",
-  "<strong>清洗剂耐受性提升 15%</strong>（相较上一代材料），助力标签经受高压清洗。"),
+ ("<strong><span class=\"hl\">72%</span> improvement</strong> in flux solder performance vs. our legacy line, validated in testing.",
+  "<strong>助焊剂焊接性能提升 <span class=\"hl\">72%</span></strong>（相较上一代材料，经测试验证）。"),
+ ("<strong><span class=\"hl\">15%</span> improvement</strong> in cleaner resistance vs. our legacy line, helping labels survive high-pressure washes.",
+  "<strong>清洗剂耐受性提升 <span class=\"hl\">15%</span></strong>（相较上一代材料），助力标签经受高压清洗。"),
  ("<strong>Enhanced ink transfer for more defined images, even at smaller font sizes.</strong> Designed to extend printhead life and maintain readability through exposure to highly caustic solutions.",
   "<strong>油墨转移增强，即使在更小字号下也能获得更清晰的图像。</strong>延长打印头寿命，并在强腐蚀性溶液暴露后保持可读性。"),
  ("<strong>Coating and adhesive system engineered for elevated temperatures</strong>, ensuring labels stay put and remain readable.",
@@ -158,8 +163,10 @@ def build_apex(lang):
     # WHY APEX (prominent: big heading, bold lead phrase per point)
     why = "".join('<li>%s</li>' % _t(lang, e, z) for e, z in WHY)
     s_why = ('<section class="blk whyblk"><div class="wrap"><h2 class="whyh">%s</h2>'
-             '<p class="whysub">%s</p><ul class="whyul">%s</ul></div></section>') % (
-        H("Why Apex for PCB Manufacturing", "为什么选择 Apex"),
+             '<div class="whygrid"><div class="whyimg" style="background-image:url(%s)"></div>'
+             '<div class="whycol"><p class="whysub">%s</p><ul class="whyul">%s</ul></div></div>'
+             '</div></section>') % (
+        H("Why Apex for PCB Manufacturing", "为什么选择 Apex"), esc(WHY_IMG),
         H("Built for today's fluxes, cleaners, and multi-cycle reflow.", "专为当今的助焊剂、清洗剂与多次回流焊工艺打造。"), why)
     # FEATURES (bullet list, from TDS)
     feat = "".join('<li><span class="bt">%s</span>%s</li>' % (CHK, H(e, z)) for e, z in FEATURES)
