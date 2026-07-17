@@ -49,8 +49,8 @@ PL_CSS = """<style>
 .whyul strong{color:var(--blue-deep);font-weight:800}
 .whyul .hl{background:#e4f3dd;color:var(--green-d);font-weight:800;padding:0 8px;border-radius:6px}
 .whygrid{display:grid;grid-template-columns:0.82fr 1.18fr;gap:36px;align-items:center;margin-top:8px}
-.whyimg{border-radius:14px;background-size:cover;background-position:center;min-height:360px;background-color:#0e2a63;box-shadow:0 14px 34px rgba(20,40,90,.16)}
-@media(max-width:820px){.whygrid{grid-template-columns:1fr}.whyimg{min-height:220px}}
+.whyimg{border-radius:14px;background-size:contain;background-repeat:no-repeat;background-position:center;aspect-ratio:16/9;background-color:#0e2a63;box-shadow:0 14px 34px rgba(20,40,90,.16)}
+@media(max-width:820px){.whygrid{grid-template-columns:1fr}}
 .spectbl{width:100%;border-collapse:collapse;font-size:15px;max-width:940px}
 .spectbl th{text-align:left;width:230px;background:#f4f7fd;color:var(--blue-deep);font-weight:800;padding:14px 16px;vertical-align:top}
 .spectbl td{padding:14px 16px;border-bottom:1px solid var(--line);color:var(--ink)}
