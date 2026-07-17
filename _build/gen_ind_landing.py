@@ -749,41 +749,47 @@ def build_application_notes(lang):
         if islug not in seen:
             seen[islug] = [ie, iz, 0]; ind_counts.append(islug)
         seen[islug][2] += 1
-    chips = '<button class="nfchip on" data-ind="all" onclick="etaNF(this)">%s<span class="n">%d</span></button>' % (
-        ("全部" if zh else "All"), total)
-    for islug in ind_counts:
+    # No "All" (it would be a huge grid). Default = first industry; search spans all industries.
+    default_ind = ind_counts[0] if ind_counts else ""
+    chips = ""
+    for i, islug in enumerate(ind_counts):
         ie, iz, c = seen[islug]
-        chips += '<button class="nfchip" data-ind="%s" onclick="etaNF(this)">%s<span class="n">%d</span></button>' % (
-            islug, esc(iz if zh else ie), c)
-    # note cards (image placeholder + industry eyebrow + title + desc)
+        chips += '<button class="nfchip%s" data-ind="%s" onclick="etaNF(this)">%s<span class="n">%d</span></button>' % (
+            (" on" if i == 0 else ""), islug, esc(iz if zh else ie), c)
+    init_count = seen[default_ind][2] if default_ind else 0
+    # note cards (image placeholder + industry eyebrow + title + desc); non-default industries hidden initially
     cards = ""
     for slug, te, tz, de, dz, islug, ie, iz in pub:
         title = tz if zh else te; desc = dz if zh else de; ind = iz if zh else ie
         text = ("%s %s %s" % (title, desc, ind)).lower()
         url = L(lang, "/application-notes/%s/" % slug)
-        cards += ('<a class="acard nfitem" data-ind="%s" data-text="%s" href="%s">'
+        hide = ' style="display:none"' if islug != default_ind else ''
+        cards += ('<a class="acard nfitem"%s data-ind="%s" data-text="%s" href="%s">'
                   '<div class="acard-img" style="background:linear-gradient(135deg,#dfe7f3,#eef2f8)">'
                   '<span class="aicon" style="font-size:30px">\U0001F4C4</span></div>'
                   '<div class="acard-body"><div class="acard-eyebrow">%s</div>'
                   '<h3 class="indname">%s</h3><p>%s</p></div></a>') % (
-            esc(islug), esc(text), url, esc(ind), esc(title), esc(desc))
+            hide, esc(islug), esc(text), url, esc(ind), esc(title), esc(desc))
     countword = ("篇应用笔记" if zh else "application notes")
-    searchph = ("搜索应用笔记…" if zh else "Search application notes...")
+    searchph = ("搜索全部应用笔记…" if zh else "Search all application notes...")
+    # search (non-empty) spans ALL industries; empty search shows the active industry only
     js = ("<script>function etaNF(b){"
           "if(b&&b.classList){document.querySelectorAll('.nfchip').forEach(function(x){x.classList.toggle('on',x===b);});}"
-          "var on=document.querySelector('.nfchip.on');var ind=on?on.getAttribute('data-ind'):'all';"
+          "var on=document.querySelector('.nfchip.on');var ind=on?on.getAttribute('data-ind'):'';"
           "var s=document.getElementById('nfsearch');var q=(s?s.value:'').toLowerCase();var n=0;"
-          "document.querySelectorAll('.nfitem').forEach(function(c){var ok=(ind=='all'||c.getAttribute('data-ind')==ind)&&(q==''||c.getAttribute('data-text').indexOf(q)>=0);c.style.display=ok?'':'none';if(ok)n++;});"
+          "document.querySelectorAll('.nfitem').forEach(function(c){"
+          "var ok=q!=''?(c.getAttribute('data-text').indexOf(q)>=0):(ind==''||c.getAttribute('data-ind')==ind);"
+          "c.style.display=ok?'':'none';if(ok)n++;});"
           "var cc=document.getElementById('nfcount');if(cc)cc.textContent=n;}</script>")
     body = ('<section class="blk"><div class="wrap">'
             '<div class="eyebrow">%s</div><div class="nfrow">%s</div>'
-            '<div class="nfbar"><div class="catcount"><span id="nfcount">%d</span> / %d %s</div>'
+            '<div class="nfbar"><div class="catcount"><span id="nfcount">%d</span> %s</div>'
             '<input id="nfsearch" class="nsearch" type="search" placeholder="%s" oninput="etaNF()"></div>'
             '<div class="grid grid3" style="margin-top:6px">%s</div>'
             '<div class="verify" style="margin-top:24px">%s</div>'
             '</div></section>'
             '<div class="wrap">%s</div>%s') % (
-        ("按行业筛选" if zh else "Filter by Industry"), chips, total, total, countword, esc(searchph), cards,
+        ("按行业筛选" if zh else "Filter by Industry"), chips, init_count, countword, esc(searchph), cards,
         ("应用笔记正在陆续发布（约 40 篇，按行业 / 应用 / 环境标记）。需要特定主题资料请联系 ETIA。" if zh
          else "Application notes are being published (around 40, tagged by industry / application / environment). Contact ETIA for a specific topic."),
         cta(lang), js)
