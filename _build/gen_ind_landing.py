@@ -703,24 +703,30 @@ def build_by_feature(lang):
         URLS.append(path)
 
 def build_products_overview(lang):
+    """Clean 4-axis hub. The full item lists live in the nav dropdown and the browse
+    pages — this page just points to each axis, it does NOT list everything."""
     zh = (lang == "zh")
-    def axis(head_e, head_z, sub_e, sub_z, items, bg):
-        cards = "".join(
-            '<a class="card" href="%s"><h3>%s</h3></a>' % (L(lang, url), esc(z if zh else e))
-            for e, z, url in items)
-        st = ' style="background:%s"' % bg if bg else ""
-        return ('<section class="blk"%s><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
-                '<div class="sub">%s</div><div class="grid">%s</div></div></section>') % (
-            st, esc(head_z if zh else head_e).upper() if not zh else esc(head_z),
-            esc((head_z if zh else head_e)), esc(sub_z if zh else sub_e), cards)
-    env_items = [(e, z, "/products/by-environment/") for e, z in BY_ENV]
-    feat_items = [(e, z, "/products/by-feature/") for e, z in BY_FEATURE]
-    body = (
-        axis("By Application", "按应用", "Start from your industry and process.", "从您的行业与工艺出发。", APPS_AXIS, "") +
-        axis("By Environment", "按环境", "Start from the condition the label must survive.", "从标签需要承受的环境出发。", env_items, "var(--tint-green)") +
-        axis("By Feature", "按特性", "Start from the functional property you need.", "从您需要的功能特性出发。", feat_items, "") +
-        axis("By Material", "按材料", "Start from the substrate.", "从基材出发。", BY_MATERIAL, "var(--tint-blue)") +
-        '<div class="wrap">%s</div>' % cta(lang))
+    def card(head, sub, url, examples):
+        eyebrow = esc(head[1]) if zh else esc(head[0]).upper()
+        chips = "".join('<span class="pill">%s</span>' % esc(x[1] if zh else x[0]) for x in examples)
+        return ('<a class="card" href="%s"><div class="eyebrow">%s</div>'
+                '<h3 style="font-size:19px;color:var(--blue-deep);margin:5px 0 6px">%s</h3>'
+                '<p style="color:var(--mut);font-size:14px;margin-bottom:12px">%s</p>'
+                '<div class="xlinks" style="margin:0">%s</div>'
+                '<div class="acard-go" style="margin-top:14px;color:var(--blue);font-weight:700;font-size:13.5px">%s &rarr;</div></a>') % (
+            L(lang, url), eyebrow, esc(head[1] if zh else head[0]), esc(sub[1] if zh else sub[0]),
+            chips, ("浏览" if zh else "Browse"))
+    cards = (
+        card(("By Industry", "按行业"), ("Start from your industry and process.", "从您的行业与工艺出发。"),
+             "/industries/", [(e, z) for e, z, u in APPS_AXIS][:4]) +
+        card(("By Environment", "按环境"), ("Start from the condition the label must survive.", "从标签需要承受的环境出发。"),
+             "/products/by-environment/", [("Heat-Resistant", "耐热"), ("ESD-Safe", "抗静电"), ("Chemical-Resistant", "耐化学"), ("UV-Resistant", "耐紫外")]) +
+        card(("By Feature", "按特性"), ("Start from the functional property you need.", "从您需要的功能特性出发。"),
+             "/products/by-feature/", [("Tamper-Evident", "防拆"), ("Removable", "可移除")]) +
+        card(("By Material", "按材料"), ("Start from the substrate.", "从基材出发。"),
+             BY_MATERIAL[0][2], [("Polyimide", "聚酰亚胺")]))
+    body = ('<section class="blk"><div class="wrap"><div class="two">%s</div></div></section>'
+            '<div class="wrap">%s</div>') % (cards, cta(lang))
     path = "/products/"
     crumb = [("Home", "/"), ("Products", path)]
     write(lang, path, page(lang, path,
