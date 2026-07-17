@@ -736,10 +736,8 @@ def build_products_overview(lang):
           ("产品与方案 | ETIA" if zh else "Products & Solutions | ETIA"),
           ("按应用、环境、特性与材料四种方式浏览 ETIA 特种标签材料。" if zh
            else "Browse ETIA specialty label materials four ways — by application, environment, feature and material."),
-          ("产品与方案" if zh else "Products & Solutions"),
-          ("四种浏览方式,快速找到适合您应用的标签材料。" if zh
-           else "Four ways to browse — find the label material that fits your application."),
-          body, crumb, active="products"))
+          ("产品与方案" if zh else "Products & Solutions"), "",
+          body, crumb, active="products", hero=hp.section_hero(lang, 0)))
     if lang == "en":
         URLS.append(path)
 
@@ -802,13 +800,8 @@ def build_application_notes(lang):
         ("应用笔记正在陆续发布（约 40 篇，按行业 / 应用 / 环境标记）。需要特定主题资料请联系 ETIA。" if zh
          else "Application notes are being published (around 40, tagged by industry / application / environment). Contact ETIA for a specific topic."),
         cta(lang), js)
-    # HERO SECTION (banner-ready)
-    hero = ('<section class="indhero"><div class="wrap"><div class="eyebrow">%s</div>'
-            '<h1>%s</h1><p class="slogan">%s</p></div></section>') % (
-        ("应用笔记" if zh else "Application Notes"),
-        ("应用笔记" if zh else "Application Notes"),
-        ("按行业与工艺组织的真实标签应用案例与选型参考。" if zh
-         else "Real-world label application cases and selection guidance, organized by industry and process."))
+    # HERO SECTION — the APPLICATIONS hero banner (HOME2 section 1)
+    hero = hp.section_hero(lang, 1)
     path = "/application-notes/"
     crumb = [("Home" if not zh else "首页", "/"), ("Application Notes" if not zh else "应用笔记", path)]
     write(lang, path, page(lang, path,

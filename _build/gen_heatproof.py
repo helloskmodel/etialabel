@@ -1117,33 +1117,27 @@ HOME2 = {
 HOME_TABS = [("HOME", "首页"), ("PRODUCTS", "产品"), ("APPLICATIONS", "应用"), ("INSIGHTS", "洞察"), ("SERVICE", "服务")]
 HOME_BG = ["", "", "", "", ""]
 
-def home_banner(lang, tab, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
-    zh = (lang == "zh")
+def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
     st = ' style="background-image:url(%s)"' % esc(bg) if bg else ""
-    return ('<section class="hbanner"%s><span class="htab">%s</span><div class="wrap">'
+    return ('<section class="hbanner"%s><div class="wrap">'
             '<div class="eyebrow">%s</div><h1>%s</h1>'
             '<p class="hsub">%s</p><p class="hbody">%s</p>'
             '<div class="btns"><a class="btn pri" href="%s">%s</a>'
             '<a class="btn sec" href="%s">%s</a></div></div></section>') % (
-        st, esc(tab[1] if zh else tab[0]), esc(eyebrow), esc(title), esc(sub), esc(body),
-        home_hlink(lang, b1u), esc(b1), home_hlink(lang, b2u), esc(b2))
+        st, esc(eyebrow), esc(title), esc(sub), esc(body),
+        linkfn(lang, b1u), esc(b1), linkfn(lang, b2u), esc(b2))
+
+def home_banner(lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
+    return _banner_html(home_hlink, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u)
 
 # Page HERO banner for inner pages (uses L() for en/zh links). Same look as the home banner.
-def page_hero(lang, tab, eyebrow, title, sub, body, b1, b1u, b2, b2u, bg=""):
-    zh = (lang == "zh")
-    st = ' style="background-image:url(%s)"' % esc(bg) if bg else ""
-    return ('<section class="hbanner"%s><span class="htab">%s</span><div class="wrap">'
-            '<div class="eyebrow">%s</div><h1>%s</h1>'
-            '<p class="hsub">%s</p><p class="hbody">%s</p>'
-            '<div class="btns"><a class="btn pri" href="%s">%s</a>'
-            '<a class="btn sec" href="%s">%s</a></div></div></section>') % (
-        st, esc(tab[1] if zh else tab[0]), esc(eyebrow), esc(title), esc(sub), esc(body),
-        L(lang, b1u), esc(b1), L(lang, b2u), esc(b2))
+def page_hero(lang, eyebrow, title, sub, body, b1, b1u, b2, b2u, bg=""):
+    return _banner_html(L, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u)
 
-# Per-page hero copy (tab + which HOME2 section). idx: 0=Products,1=Applications,2=Insights,3=Service.
-def section_hero(lang, tab, idx, bg=""):
+# Per-page hero from a HOME2 section. idx: 0=Products,1=Applications,2=Insights,3=Service.
+def section_hero(lang, idx, bg=""):
     s = HOME2.get(lang, HOME2["en"])["sections"][idx]
-    return page_hero(lang, tab, s["eyebrow"], s["h2"], s["sub"], s["body"], s["b1"], s["b1u"], s["b2"], s["b2u"], bg)
+    return page_hero(lang, s["eyebrow"], s["h2"], s["sub"], s["body"], s["b1"], s["b1u"], s["b2"], s["b2u"], bg)
 
 def build_home(lang):
     path="/"
@@ -1201,11 +1195,17 @@ def build_home(lang):
                 '<div class="scgrid">%s</div></div></section>')%(
         esc(T.get("sc_eyebrow","SERVICE COMMITMENT")),esc(T.get("sc_title","Our Service Commitment")),sc_items)
     h=G["hero"]
-    body=home_banner(lang, HOME_TABS[0], HOME_BG[0], h["eyebrow"], h["h1"], h["line"], h["body"],
-                     h["b1"], "/products/", h["b2"], "/contact/")
-    for i,s in enumerate(G["sections"]):
-        body+=home_banner(lang, HOME_TABS[i+1], HOME_BG[i+1], s["eyebrow"], s["h2"], s["sub"], s["body"],
-                          s["b1"], s["b1u"], s["b2"], s["b2u"])
+    hero_banner=home_banner(lang, HOME_BG[0], h["eyebrow"], h["h1"], h["line"], h["body"],
+                            h["b1"], "/products/", h["b2"], "/contact/")
+    why_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
+                 '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
+                 '<div class="whygrid">%s</div>%s</div></section>')%(
+        esc(T["why_eyebrow"]),esc(T["why_head"]),esc(T["why_intro"]),why_html,why_close)
+    app_section=('<section class="blk" id="applications" style="background:var(--tint-blue)"><div class="wrap">'
+                 '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>%s'
+                 '<div style="margin-top:20px"><a class="btn sec" href="%s">%s →</a></div></div></section>')%(
+        esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_grid,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]))
+    body=hero_banner+trust_html+why_section+app_section+prod_section+sc_section+final_cta
     canonical=SITE+HL_PREFIX[lang]+path
     schema_js='<script type="application/ld+json">%s</script>'%json.dumps(ORG_JSONLD,ensure_ascii=False)
     doc="""<!doctype html><html lang="%s"><head>
@@ -1467,10 +1467,8 @@ def build_service(lang):
         ("服务 | ETIA" if zh else "Service | ETIA"),
         ("100% 质量检测、应用驱动选型、柔性供应与及时应用支持 —— ETIA 服务承诺。" if zh
          else "100% quality inspection, application-driven selection, flexible supply and responsive support — the ETIA service commitment."),
-        ("服务" if zh else "Service"),
-        ("从选型、样品与检测，到柔性供应与长期应用支持，我们贯穿应用全过程。" if zh
-         else "From selection, samples and testing to flexible supply and long-term support — across the full application."),
-        body, crumb, active="service", trust=False))
+        ("服务" if zh else "Service"), "",
+        body, crumb, active="service", trust=False, hero=section_hero(lang, 3)))
     if lang=="en": track("/service/","core")
 
 def build_insights(lang):
@@ -1501,10 +1499,8 @@ def build_insights(lang):
         ("洞察 | ETIA" if zh else "Insights | ETIA"),
         ("应用优先选型、温度读法、构造原理与工艺暴露 —— ETIA 标签应用知识。" if zh
          else "Application-first selection, reading temperatures, construction and process exposure — ETIA label application knowledge."),
-        ("洞察" if zh else "Insights"),
-        ("关于严苛工业标签的应用知识 —— 帮助您在量产前选对材料。" if zh
-         else "Application knowledge for demanding industrial labels — to choose the right material before production."),
-        body, crumb, active="insights"))
+        ("洞察" if zh else "Insights"), "",
+        body, crumb, active="insights", hero=section_hero(lang, 2)))
     if lang=="en": track("/insights/","core")
 
 LEGAL_UPDATED=("2026年7月16日","16 July 2026")
