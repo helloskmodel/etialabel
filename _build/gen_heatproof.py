@@ -431,7 +431,7 @@ NAV_ZH = {"Products":"产品","Application Notes":"应用笔记","Insights":"洞
 # Products mega-menu: 4 axes (Computype-style left rail + right list)
 PROD_AXES = [
  ("app","By Industry","按行业",[
-   ("Electronics & PCB","电子与PCB","/industries/electronics-pcb/"),
+   ("Circuit Board & PCB Labels","电路板与 PCB 标签","/products/circuit-board-labels/"),
    ("Metals & Ceramics","金属与陶瓷","/industries/steel/"),
    ("Medical & Laboratory","医疗与实验室","/industries/healthcare-life-sciences/"),
    ("Automotive & Tire","汽车与轮胎","/industries/automotive-label-materials/"),

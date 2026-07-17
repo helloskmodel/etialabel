@@ -230,10 +230,166 @@ def build_apex(lang):
     if lang == "en":
         hp.track(path, "products")
 
+# =================================================================== PCB SECTOR
+SECTOR_INTRO = (
+ "PCB labels — also called printed circuit board markers — provide track-and-trace identification "
+ "through assembly, testing, repair and maintenance. Manufacturers use multi-pass, high-temperature "
+ "reflow and wave-soldering with pre-heat and thermal soaks, highly active (ORH1) fluxes and "
+ "high-pressure chemical washes. Polyonics® polyimide PCB label materials withstand the severity of "
+ "these processes, keeping printed barcodes and images readable through the harshest, multi-cycle "
+ "manufacturing — for accurate inventory control and traceability from production to delivery. "
+ "All materials are REACH &amp; RoHS compliant.",
+ "PCB 标签 —— 又称印制电路板标识 —— 贯穿装配、测试、维修与维护，实现全流程追溯。制造过程采用多次高温回流焊与波峰焊，"
+ "包含预热与热浸、强活性（ORH1）助焊剂及高压化学清洗。Polyonics® 聚酰亚胺 PCB 标签材料可承受这些严苛工艺，"
+ "在最严苛的多循环制造中保持条码与图像清晰可读 —— 从生产到交付实现精确的库存控制与可追溯性。所有材料均符合 REACH 与 RoHS。")
+
+# (name_en, name_zh, (proc), (challenge), (recommended), draft)
+PROC = [
+ ("Wash and Reflow", "清洗与回流",
+  ("The label is applied before soldering and remains on the PCB through reflow or wave soldering, flux exposure, chemical cleaning, and high-pressure washing.",
+   "标签在焊接前贴附，并在回流焊或波峰焊、助焊剂暴露、化学清洗与高压清洗全过程中留存于 PCB 上。"),
+  ("Extreme heat, active fluxes, and aggressive cleaners can cause ordinary labels to shrink, lift, discolor, or lose barcode readability.",
+   "极端高温、活性助焊剂与强清洗剂会使普通标签收缩、翘边、变色或丧失条码可读性。"),
+  ("High-temperature polyimide materials with heat-resistant coatings and aggressive adhesives. Standard and ESD-safe constructions are available.",
+   "采用耐高温聚酰亚胺材料，配以耐热涂层与强力胶粘剂。提供标准型与 ESD 抗静电结构。"), False),
+ ("Wash and Non-Reflow", "清洗（非回流）",
+  ("The label is applied after reflow but before chemical cleaning or high-pressure washing. It encounters aggressive cleaners and moderate heat without passing through the full reflow profile.",
+   "标签在回流焊之后、化学清洗或高压清洗之前贴附，会经受强清洗剂与中等温度，但不经历完整回流焊曲线。"),
+  ("Cleaning chemicals and wash pressure can damage printed images, soften the label coating, or cause edge lifting.",
+   "清洗化学品与清洗压力可能损坏打印图像、软化标签涂层或导致边缘翘起。"),
+  ("Chemical-resistant polyimide or polyester materials selected according to the cleaner, wash pressure, and temperature exposure. ESD-safe options are available.",
+   "根据清洗剂、清洗压力与温度暴露选用耐化学聚酰亚胺或聚酯材料。提供 ESD 抗静电选项。"), False),
+ ("Post-Process", "后道工序",
+  ("The label is applied after soldering, reflow, and cleaning have been completed. It carries final serial numbers, barcodes, inspection data, or warranty information.",
+   "标签在焊接、回流与清洗完成后贴附，承载最终序列号、条码、检验数据或保修信息。"),
+  ("Limited space, uneven surfaces, repeated handling, and long service life require reliable adhesion and clearly readable small-format identification.",
+   "空间有限、表面不平、反复搬运与长使用寿命，要求可靠附着与清晰可读的小尺寸标识。"),
+  ("Durable polyester materials provide a practical and cost-effective solution. ESD-safe polyester options are available for sensitive assemblies.",
+   "耐用聚酯材料提供实用且高性价比的方案。对敏感组件提供 ESD 抗静电聚酯选项。"), False),
+ ("Laser Markable", "激光打标",
+  ("Serial numbers, text, barcodes, and 2D codes are created directly on a laser-sensitive label surface. Depending on the construction, the label can remain on the PCB through wash and reflow processes.",
+   "序列号、文字、条码与二维码直接在激光敏感的标签表面生成。视结构不同，标签可在清洗与回流工艺中留存于 PCB 上。"),
+  ("The marked image must maintain high contrast and precise code definition despite heat, chemicals, cleaning, and abrasion.",
+   "在高温、化学品、清洗与磨损下，打标图像须保持高对比度与精确的码型清晰度。"),
+  ("Laser-markable polyimide materials for permanent, high-resolution PCB identification. Standard and ESD-safe constructions are available.",
+   "激光可打标聚酰亚胺材料，实现永久、高分辨率的 PCB 标识。提供标准型与 ESD 抗静电结构。"), False),
+ ("Auto Dispense", "自动贴标",
+  ("Labels are applied by automatic dispensers and applicators during high-throughput PCB assembly, without manual placement.",
+   "在高节拍 PCB 装配中，标签由自动贴标机与施标器贴附，无需人工放置。"),
+  ("Successful automatic placement depends on liner release, stiffness, curl, roll direction and die-cut quality — not only durability.",
+   "自动贴标的成功不仅取决于耐久性，还取决于离型、挺度、卷曲、卷向与模切质量。"),
+  ("Polyimide and polyester constructions validated for dispensing performance and dimensional stability. (Draft — awaiting client copy.)",
+   "经验证具备贴标性能与尺寸稳定性的聚酰亚胺与聚酯结构。（草拟 —— 待客户文案确认。）"), True),
+ ("Masks, Dots and Arrows", "遮蔽点与箭头",
+  ("Removable masking dots, solder-mask circles and inspection arrows applied during PCB processing, then removed after the step.",
+   "在 PCB 加工过程中贴附、并在该工序后移除的可移除遮蔽圆点、阻焊圆点与检验箭头。"),
+  ("Materials must withstand process heat yet remove cleanly without residue, and stay stable as small die-cut shapes.",
+   "材料须承受工艺高温，同时可洁净无残胶地移除，并在小尺寸模切形状下保持稳定。"),
+  ("Removable high-temperature polyimide masking dots and film shapes for PCB processing. (Draft — awaiting client copy.)",
+   "用于 PCB 加工的可移除耐高温聚酰亚胺遮蔽圆点与薄膜形状。（草拟 —— 待客户文案确认。）"), True),
+]
+# product-line cards (name, (desc en,zh), url, gradient, image)
+PLINES = [
+ ("POLYONICS APEX", ("Premium polyimide platform — proven flux/cleaner gains, 300°C, ESD & UL options.",
+                     "高端聚酰亚胺平台 —— 助焊剂/清洗剂性能提升，耐温 300°C，提供 ESD 与 UL 选项。"),
+  "/products/circuit-board-labels/apex-series/", "linear-gradient(135deg,#0e2a63,#1A56DB)", APEX_BANNER),
+ ("POLYONICS XF", ("Core XF polyimide family for reflow, wash and general PCB identification.",
+                   "面向回流、清洗与通用 PCB 标识的核心 XF 聚酰亚胺系列。"),
+  "/contact/", "linear-gradient(135deg,#1A56DB,#3f7be0)", ""),
+ ("ETIA E85 SERIES", ("ETIA-branded durable PET/PI series — cost-effective, in-stock.",
+                      "ETIA 自有耐用 PET/PI 系列 —— 高性价比、现货供应。"),
+  "/contact/", "linear-gradient(135deg,#358B22,#41A62A)", ""),
+]
+
+SECTOR_CSS = """<style>
+.pcmod{margin-top:8px}
+.pctabsrow{display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--line)}
+.pctabs{display:flex;gap:26px;overflow-x:auto;scrollbar-width:none;flex:1}.pctabs::-webkit-scrollbar{display:none}
+.pctab{white-space:nowrap;background:none;border:none;padding:12px 0;font-size:15px;font-weight:700;color:var(--mut);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px}
+.pctab.on{color:var(--blue-deep);border-bottom-color:var(--blue)}
+.pcarrow{background:none;border:none;font-size:20px;color:var(--mut);cursor:pointer;padding:4px 6px}
+.pcpanel{padding-top:24px}
+.pc3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.pcbox{border:1px solid var(--line);border-radius:12px;padding:18px 18px 20px;background:#fff}
+.pcbi{width:32px;height:32px;margin-bottom:8px}.pcbi svg{width:32px;height:32px}
+.pce{font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;margin-bottom:7px}
+.pcbox p{font-size:13.5px;color:var(--ink);line-height:1.55}
+.pcdraft{font-size:11px;color:var(--mut);font-style:italic;margin-top:8px}
+.plw{margin-top:30px}
+.plh{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+.plg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.plc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fff;text-decoration:none;transition:transform .18s,box-shadow .18s,border-color .18s}
+.plc:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(20,40,90,.14);border-color:var(--blue)}
+.plimg{position:relative;aspect-ratio:16/9;background-size:cover;background-position:center;display:flex;align-items:flex-end}
+.plgo{color:#fff;font-weight:800;font-size:12px;padding:10px 12px;background:linear-gradient(transparent,rgba(0,0,0,.35))}
+.plb2{padding:14px 15px 16px}.pln{font-weight:800;font-size:15.5px;color:var(--blue-deep)}.plb2 p{font-size:12px;color:var(--mut);line-height:1.5;margin-top:7px}
+@media(max-width:820px){.pc3{grid-template-columns:1fr}.plg{grid-template-columns:1fr}}
+</style>"""
+PROC_ICONS = (
+ _svg('<path d="M3 12h4l2-7 4 14 2-7h6"/>'),                 # process
+ _svg('<path d="M12 3 2 20h20L12 3z"/><path d="M12 10v5M12 18h.01"/>'),  # challenge
+ _svg('<path d="M12 3 4 6.5v5c0 4.6 3.2 7.7 8 9.5 4.8-1.8 8-4.9 8-9.5v-5L12 3z"/><path d="m9 12 2 2 4-4"/>'),  # recommended
+)
+
+def build_pcb_sector(lang):
+    zh = (lang == "zh")
+    def H(en, z): return esc(_t(lang, en, z))
+    tabs = ""; panels = ""
+    for i, (ne, nz, pr, ch, rc, draft) in enumerate(PROC):
+        tabs += '<button class="pctab%s" onclick="pcTab(this,%d)">%s</button>' % (" on" if i == 0 else "", i, H(ne, nz))
+        cols = ('<div class="pc3">'
+                '<div class="pcbox"><div class="pcbi" style="color:var(--blue)">%s</div><div class="pce" style="color:var(--blue)">%s</div><p>%s</p></div>'
+                '<div class="pcbox"><div class="pcbi" style="color:#c2621f">%s</div><div class="pce" style="color:#b4531a">%s</div><p>%s</p></div>'
+                '<div class="pcbox" style="background:#f4f9f2"><div class="pcbi" style="color:var(--green-d)">%s</div><div class="pce" style="color:var(--green-d)">%s</div><p>%s</p>%s</div>'
+                '</div>') % (
+            PROC_ICONS[0], H("Process", "工艺"), H(*pr),
+            PROC_ICONS[1], H("Challenge", "挑战"), H(*ch),
+            PROC_ICONS[2], H("Recommended Material", "推荐材料"), H(*rc),
+            ('<p class="pcdraft">%s</p>' % H("Draft — awaiting final copy.", "草拟 —— 待最终文案。") if draft else ""))
+        cards = ""
+        for name, (de, dz), url, grad, img in PLINES:
+            style = (('background:%s;background-image:url(%s);background-size:cover;background-position:center' % (grad, esc(img)))
+                     if img else ('background:%s' % grad))
+            cards += ('<a class="plc" href="%s"><div class="plimg" style="%s"><span class="plgo">%s</span></div>'
+                      '<div class="plb2"><div class="pln">%s</div><p>%s</p></div></a>') % (
+                L(lang, url), style, H("Open series →", "查看系列 →"), esc(name), H(de, dz))
+        panels += ('<div class="pcpanel" data-i="%d" style="display:%s">%s'
+                   '<div class="plw"><div class="plh">%s</div><div class="plg">%s</div></div></div>') % (
+            i, "block" if i == 0 else "none", cols, H("Product Lines", "产品系列"), cards)
+    js = ("<script>function pcTab(b,i){var m=b.closest('.pcmod');"
+          "m.querySelectorAll('.pctab').forEach(function(x,j){x.classList.toggle('on',j===i);});"
+          "m.querySelectorAll('.pcpanel').forEach(function(p){p.style.display=(+p.getAttribute('data-i')===i)?'block':'none';});}"
+          "function pcScroll(b,d){b.closest('.pctabsrow').querySelector('.pctabs').scrollBy({left:d*240,behavior:'smooth'});}</script>")
+    intro = '<section class="blk" style="padding-bottom:0"><div class="wrap"><p style="max-width:70em;font-size:15px;line-height:1.7;color:var(--ink)">%s</p></div></section>' % _t(lang, *SECTOR_INTRO)
+    module = ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="pcmod">'
+              '<div class="pctabsrow"><button class="pcarrow" onclick="pcScroll(this,-1)">&lsaquo;</button>'
+              '<div class="pctabs">%s</div><button class="pcarrow" onclick="pcScroll(this,1)">&rsaquo;</button></div>'
+              '%s</div></div></section>%s') % (H("Browse by Process", "按工艺浏览"), tabs, panels, js)
+    body = SECTOR_CSS + intro + module + ('<div class="wrap">%s</div>' % hp.cta2(lang, "products"))
+    path = "/products/circuit-board-labels/"
+    crumb = [("Home" if not zh else "首页", "/"), ("Products" if not zh else "产品", "/products/"),
+             ("Circuit Board & PCB Labels" if not zh else "电路板与 PCB 标签", path)]
+    hero = ('<section class="pagehead"><div class="wrap"><div class="eyebrow">%s</div>'
+            '<h1>%s</h1><p class="lede" style="max-width:60em">%s</p></div></section>') % (
+        H("PRODUCTS · ELECTRONICS & PCB", "产品 · 电子与 PCB"),
+        H("Circuit Board & PCB Labels", "电路板与 PCB 标签"),
+        H("Select a process to see the challenge, the recommended material, and the product lines that fit.",
+          "选择一种工艺，查看对应的挑战、推荐材料与适配的产品系列。"))
+    write(lang, path, page(lang, path,
+        _t(lang, "Circuit Board & PCB Labels | ETIA", "电路板与 PCB 标签 | ETIA"),
+        _t(lang, "Ultra-durable circuit-board and PCB labels for reflow, wash, post-process, laser marking, auto-dispense and masking — Polyonics Apex, XF and ETIA E85 lines.",
+                 "面向回流、清洗、后道、激光打标、自动贴标与遮蔽的超耐用电路板 / PCB 标签 —— Polyonics Apex、XF 与 ETIA E85 系列。"),
+        _t(lang, "Circuit Board & PCB Labels", "电路板与 PCB 标签"), "",
+        body, crumb, active="products", hero=hero))
+    if lang == "en":
+        hp.track(path, "products")
+
 URLS = []
 def main():
     for lang in LANGS:
+        build_pcb_sector(lang)
         build_apex(lang)
+    URLS.append("/products/circuit-board-labels/")
     URLS.append("/products/circuit-board-labels/apex-series/")
 
 if __name__ == "__main__":
