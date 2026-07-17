@@ -738,52 +738,70 @@ APP_NOTES_ORDER = ["electronics-pcb", "steel", "healthcare-life-sciences",
                    "automotive-label-materials", "wire-cable", "outdoor-energy"]
 
 def build_application_notes(lang):
+    """HERO SECTION + service bar + Filter-by-Industry chips & search + note cards."""
     zh = (lang == "zh")
-    # Organised by the 6 industries, each listing its application points. Application Notes is an
-    # independent SEO article library — these are organising tags; notes get published under them later.
-    ind_secs = ""
-    total_apps = 0
-    for slug in APP_NOTES_ORDER:
-        d = LANDINGS[slug][lang]
-        apps = d["apps"]
-        total_apps += len(apps)
-        chips = "".join('<span class="pill">%s</span>' % esc(t) for t, _, _ in apps)
-        ind_secs += ('<div class="an-block"><div class="eyebrow">%s</div>'
-                     '<div class="xlinks" style="margin-top:9px">%s</div></div>') % (esc(d["eyebrow"]), chips)
-    env_chips = "".join('<span class="pill tag">%s</span>' % esc(z if zh else e) for e, z in BY_ENV)
-    count_line = (("6 大行业 · %d 个应用" % total_apps) if zh else ("6 industries · %d applications" % total_apps))
-    # Published notes (real articles) linked as cards.
-    pub_cards = "".join(
-        '<a class="card" href="%s"><div class="eyebrow" style="margin-bottom:6px">%s</div>'
-        '<h3 style="font-size:16px;color:var(--blue-deep);line-height:1.3">%s</h3>'
-        '<div style="color:var(--blue);font-weight:700;font-size:13px;margin-top:10px">%s &rarr;</div></a>'
-        % (L(lang, "/application-notes/%s/" % slug), esc(iz if zh else ie), esc(tz if zh else te),
-           ("阅读" if zh else "Read"))
-        for slug, te, tz, ie, iz in gen_notes.PUBLISHED)
-    pub_sec = ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="grid grid3">%s</div></div></section>'
-               % (("最新笔记" if zh else "Latest Notes"), pub_cards))
-    body = (
-        pub_sec +
-        '<section class="blk"><div class="wrap">'
-        '<div class="catcount" style="margin-bottom:20px">%s</div>%s'
-        '<h2 style="margin-top:30px">%s</h2><div class="xlinks">%s</div>'
-        '<div class="verify" style="margin-top:24px">%s</div></div></section>'
-        '<div class="wrap">%s</div>') % (
-        count_line, ind_secs,
-        ("按环境浏览" if zh else "Browse by Environment"), env_chips,
+    pub = gen_notes.PUBLISHED
+    total = len(pub)
+    # industry counts (only industries that actually have published notes)
+    ind_counts = []
+    seen = {}
+    for slug, te, tz, de, dz, islug, ie, iz in pub:
+        if islug not in seen:
+            seen[islug] = [ie, iz, 0]; ind_counts.append(islug)
+        seen[islug][2] += 1
+    chips = '<button class="nfchip on" data-ind="all" onclick="etaNF(this)">%s<span class="n">%d</span></button>' % (
+        ("全部" if zh else "All"), total)
+    for islug in ind_counts:
+        ie, iz, c = seen[islug]
+        chips += '<button class="nfchip" data-ind="%s" onclick="etaNF(this)">%s<span class="n">%d</span></button>' % (
+            islug, esc(iz if zh else ie), c)
+    # note cards (image placeholder + industry eyebrow + title + desc)
+    cards = ""
+    for slug, te, tz, de, dz, islug, ie, iz in pub:
+        title = tz if zh else te; desc = dz if zh else de; ind = iz if zh else ie
+        text = ("%s %s %s" % (title, desc, ind)).lower()
+        url = L(lang, "/application-notes/%s/" % slug)
+        cards += ('<a class="acard nfitem" data-ind="%s" data-text="%s" href="%s">'
+                  '<div class="acard-img" style="background:linear-gradient(135deg,#dfe7f3,#eef2f8)">'
+                  '<span class="aicon" style="font-size:30px">\U0001F4C4</span></div>'
+                  '<div class="acard-body"><div class="acard-eyebrow">%s</div>'
+                  '<h3 class="indname">%s</h3><p>%s</p></div></a>') % (
+            esc(islug), esc(text), url, esc(ind), esc(title), esc(desc))
+    countword = ("篇应用笔记" if zh else "application notes")
+    searchph = ("搜索应用笔记…" if zh else "Search application notes...")
+    js = ("<script>function etaNF(b){"
+          "if(b&&b.classList){document.querySelectorAll('.nfchip').forEach(function(x){x.classList.toggle('on',x===b);});}"
+          "var on=document.querySelector('.nfchip.on');var ind=on?on.getAttribute('data-ind'):'all';"
+          "var s=document.getElementById('nfsearch');var q=(s?s.value:'').toLowerCase();var n=0;"
+          "document.querySelectorAll('.nfitem').forEach(function(c){var ok=(ind=='all'||c.getAttribute('data-ind')==ind)&&(q==''||c.getAttribute('data-text').indexOf(q)>=0);c.style.display=ok?'':'none';if(ok)n++;});"
+          "var cc=document.getElementById('nfcount');if(cc)cc.textContent=n;}</script>")
+    body = ('<section class="blk"><div class="wrap">'
+            '<div class="eyebrow">%s</div><div class="nfrow">%s</div>'
+            '<div class="nfbar"><div class="catcount"><span id="nfcount">%d</span> / %d %s</div>'
+            '<input id="nfsearch" class="nsearch" type="search" placeholder="%s" oninput="etaNF()"></div>'
+            '<div class="grid grid3" style="margin-top:6px">%s</div>'
+            '<div class="verify" style="margin-top:24px">%s</div>'
+            '</div></section>'
+            '<div class="wrap">%s</div>%s') % (
+        ("按行业筛选" if zh else "Filter by Industry"), chips, total, total, countword, esc(searchph), cards,
         ("应用笔记正在陆续发布（约 40 篇，按行业 / 应用 / 环境标记）。需要特定主题资料请联系 ETIA。" if zh
          else "Application notes are being published (around 40, tagged by industry / application / environment). Contact ETIA for a specific topic."),
-        cta(lang))
+        cta(lang), js)
+    # HERO SECTION (banner-ready)
+    hero = ('<section class="indhero"><div class="wrap"><div class="eyebrow">%s</div>'
+            '<h1>%s</h1><p class="slogan">%s</p></div></section>') % (
+        ("应用笔记" if zh else "Application Notes"),
+        ("应用笔记" if zh else "Application Notes"),
+        ("按行业与工艺组织的真实标签应用案例与选型参考。" if zh
+         else "Real-world label application cases and selection guidance, organized by industry and process."))
     path = "/application-notes/"
-    crumb = [("Home", "/"), ("Application Notes" if not zh else "应用笔记", path)]
+    crumb = [("Home" if not zh else "首页", "/"), ("Application Notes" if not zh else "应用笔记", path)]
     write(lang, path, page(lang, path,
           ("应用笔记 | ETIA" if zh else "Application Notes | ETIA"),
-          ("面向严苛标识应用的技术笔记与选型参考，按行业、应用与环境组织。" if zh
-           else "Technical application notes and selection references for demanding identification, organized by industry, application and environment."),
-          ("应用笔记" if zh else "Application Notes"),
-          ("按行业、应用与环境组织的标签应用知识库 —— 帮助您在量产前选对材料。" if zh
-           else "A library of label application knowledge — organized by industry, application and environment."),
-          body, crumb, active="notes"))
+          ("面向严苛标识应用的技术笔记与案例，按行业、工艺与产品筛选。" if zh
+           else "Technical application notes and case studies for demanding identification — filter by industry, process and product."),
+          ("应用笔记" if zh else "Application Notes"), "",
+          body, crumb, active="notes", hero=hero))  # trust bar kept (default True)
     if lang == "en":
         URLS.append(path)
 

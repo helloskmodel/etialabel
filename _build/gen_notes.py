@@ -198,7 +198,7 @@ NOTES = [
                ["ETIA", "E-2931 / E-2932", ("UL94 VTM-0 cable flame-retardant", "UL94 VTM-0 线缆阻燃")],
                ["3M / Avery", "—", ("No direct UL94 flame-retardant label", "无直接 UL94 阻燃标签款")]]},
 ]
-NOTE_IND = ("Electronics & PCB", "电子与PCB")
+NOTE_IND = ("Electronics & PCB", "电子与PCB", "electronics-pcb")
 
 def build_note(lang, n):
     zh = (lang == "zh")
@@ -221,8 +221,10 @@ def build_note(lang, n):
     if lang == "en":
         URLS.append(path); track(path, "core")
 
-# Published notes for the Application Notes index (slug, title en/zh, industry label en/zh)
-PUBLISHED = [(n["slug"], n["title"][0], n["title"][1], NOTE_IND[0], NOTE_IND[1]) for n in NOTES]
+# Published notes for the Application Notes index:
+# (slug, title_en, title_zh, desc_en, desc_zh, ind_slug, ind_en, ind_zh)
+PUBLISHED = [(n["slug"], n["title"][0], n["title"][1], n["meta_d"][0], n["meta_d"][1],
+              NOTE_IND[2], NOTE_IND[0], NOTE_IND[1]) for n in NOTES]
 
 def main():
     for lang in LANGS:
