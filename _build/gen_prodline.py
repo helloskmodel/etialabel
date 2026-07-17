@@ -310,10 +310,11 @@ SECTOR_CSS = """<style>
 .pcarrow{background:none;border:none;font-size:20px;color:var(--mut);cursor:pointer;padding:4px 6px}
 .pcpanel{padding-top:24px}
 .pc3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
-.pcbox{border:1px solid var(--line);border-radius:12px;padding:18px 18px 20px;background:#fff}
-.pcbi{width:32px;height:32px;margin-bottom:8px}.pcbi svg{width:32px;height:32px}
-.pce{font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;margin-bottom:7px}
-.pcbox p{font-size:13.5px;color:var(--ink);line-height:1.55}
+.pcbox{border:1px solid var(--line);border-radius:12px;padding:20px 20px 22px;background:#fff}
+.pchead{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.pcbi{flex:0 0 auto;width:34px;height:34px}.pcbi svg{width:34px;height:34px}
+.pce{font-size:15px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;line-height:1.15}
+.pcbox p{font-size:15px;color:var(--ink);line-height:1.6}
 .pcdraft{font-size:11px;color:var(--mut);font-style:italic;margin-top:8px}
 .plw{margin-top:30px}
 .plh{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
@@ -338,9 +339,9 @@ def build_pcb_sector(lang):
     for i, (ne, nz, pr, ch, rc, draft) in enumerate(PROC):
         tabs += '<button class="pctab%s" onclick="pcTab(this,%d)">%s</button>' % (" on" if i == 0 else "", i, H(ne, nz))
         cols = ('<div class="pc3">'
-                '<div class="pcbox"><div class="pcbi" style="color:var(--blue)">%s</div><div class="pce" style="color:var(--blue)">%s</div><p>%s</p></div>'
-                '<div class="pcbox"><div class="pcbi" style="color:#c2621f">%s</div><div class="pce" style="color:#b4531a">%s</div><p>%s</p></div>'
-                '<div class="pcbox" style="background:#f4f9f2"><div class="pcbi" style="color:var(--green-d)">%s</div><div class="pce" style="color:var(--green-d)">%s</div><p>%s</p>%s</div>'
+                '<div class="pcbox"><div class="pchead"><div class="pcbi" style="color:var(--blue)">%s</div><div class="pce" style="color:var(--blue)">%s</div></div><p>%s</p></div>'
+                '<div class="pcbox"><div class="pchead"><div class="pcbi" style="color:#c2621f">%s</div><div class="pce" style="color:#b4531a">%s</div></div><p>%s</p></div>'
+                '<div class="pcbox" style="background:#f4f9f2"><div class="pchead"><div class="pcbi" style="color:var(--green-d)">%s</div><div class="pce" style="color:var(--green-d)">%s</div></div><p>%s</p>%s</div>'
                 '</div>') % (
             PROC_ICONS[0], H("Process", "工艺"), H(*pr),
             PROC_ICONS[1], H("Challenge", "挑战"), H(*ch),
