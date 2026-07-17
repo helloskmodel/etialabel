@@ -512,7 +512,7 @@ def nav_html(lang, active, path="/"):
     other_label = "CN" if lang == "en" else "EN"   # label = the language you switch TO
     return '<nav>%s<a class="lang" href="%s">%s</a></nav>' % (items, L(other, path), other_label)
 
-FOOTER_LINKS = [("Products", u_products()), ("Industries", u_ind_hub()),
+FOOTER_LINKS = [("Home", "/"), ("Products", u_products()), ("Industries", u_ind_hub()),
                 ("Application Notes", "/application-notes/"), ("Service", "/service/"),
                 ("About ETIA", "/about/"), ("Contact", "/contact/")]
 def footer_html(lang):
@@ -1173,7 +1173,7 @@ HOME_TABS = [("HOME", "首页"), ("PRODUCTS", "产品"), ("APPLICATIONS", "应�
 BANNER_HOME = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/ETIALABEL%20HOME.jpg"
 BANNER_APPLICATION = "https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/BANNERIMG/BANNER-APPLICATION.jpg"
 BANNER_INSIGHT = "https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/BANNERIMG/BANNER-INSIGHT.jpg"
-BANNER_SERVICE = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/HP9001609.jpg"
+BANNER_SERVICE = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-outdoor-energy.png"
 HOME_BG = [BANNER_HOME, "", "", "", ""]
 # section_hero idx: 0=Products, 1=Applications, 2=Insights, 3=Service
 SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
