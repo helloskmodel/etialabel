@@ -1170,7 +1170,7 @@ HOME2 = {
 # Green corner labels + banner background images (fill BG with clean COS URLs later)
 HOME_TABS = [("HOME", "首页"), ("PRODUCTS", "产品"), ("APPLICATIONS", "应用"), ("INSIGHTS", "洞察"), ("SERVICE", "服务")]
 # Page hero banners (COS). .hbanner::before lays the brand-blue gradient over the photo.
-BANNER_HOME = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/ETIALABEL%20HOME.jpg"
+BANNER_HOME = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/BANNER-HOMEPAGE.jpg"
 BANNER_APPLICATION = "https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/BANNERIMG/BANNER-APPLICATION.jpg"
 BANNER_INSIGHT = "https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/BANNERIMG/BANNER-INSIGHT.jpg"
 BANNER_SERVICE = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-outdoor-energy.png"
