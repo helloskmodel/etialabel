@@ -291,8 +291,7 @@ PROC = [
 # product-line cards (name, (desc en,zh), url, gradient, image)
 PLINES = [
  ("NEW Apex Series – Ultra-Performance Polyimide Label Materials for PCBs",
-  ("Premium polyimide platform — proven flux/cleaner gains, 300°C, ESD & UL options.",
-   "高端聚酰亚胺平台 —— 助焊剂/清洗剂性能提升，耐温 300°C，提供 ESD 与 UL 选项。"),
+  ("Ultra Heat Resistant Label, up to 300°C", "超耐高温标签，耐温可达 300°C"),
   "/products/circuit-board-labels/apex-series/", "linear-gradient(135deg,#0e2a63,#1A56DB)", APEX_BANNER),
  ("POLYONICS XF", ("Core XF polyimide family for reflow, wash and general PCB identification.",
                    "面向回流、清洗与通用 PCB 标识的核心 XF 聚酰亚胺系列。"),
