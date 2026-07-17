@@ -571,19 +571,22 @@ def build_landing(lang, slug):
     # --- applications tab module: single scrollable row of tabs + active panel ---
     app_urls = LANDINGS[slug].get("app_urls", [])
     app_imgs = LANDINGS[slug].get("app_imgs", [])
-    def panel_img(i, t):
-        url = app_imgs[i] if i < len(app_imgs) else ""
-        img = ('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">' % (esc(url), esc(t))) if url else ""
-        return '<div class="apimg">%s<span class="ph">\U0001F3F7</span></div>' % img
+    def panel_img(i, t, link):
+        src = app_imgs[i] if i < len(app_imgs) else ""
+        img = ('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">' % (esc(src), esc(t))) if src else ""
+        # The application image IS the product-line picture — click it to open the product line page.
+        return ('<a class="apimg" href="%s">%s<span class="ph">\U0001F3F7</span>'
+                '<span class="apimg-cta">%s</span></a>') % (link, img, ("查看产品线 →" if zh else "View product line →"))
     tabs = "".join(
         '<button class="apptab%s" onclick="etaTab(this)">%s</button>' % ((" on" if i == 0 else ""), esc(t))
         for i, (t, dsc, cta_) in enumerate(d["apps"]))
-    panels = "".join(
-        '<div class="apppanel"%s>%s<div class="aptext"><h3>%s</h3><p>%s</p>'
-        '<a class="plink" href="%s">%s →</a></div></div>'
-        % ((' style="display:none"' if i > 0 else ''), panel_img(i, t), esc(t), esc(dsc),
-           (L(lang, app_urls[i]) if i < len(app_urls) else contact), esc(cta_))
-        for i, (t, dsc, cta_) in enumerate(d["apps"]))
+    panels = ""
+    for i, (t, dsc, cta_) in enumerate(d["apps"]):
+        link = L(lang, app_urls[i]) if i < len(app_urls) else contact
+        panels += ('<div class="apppanel"%s>%s<div class="aptext"><h3>%s</h3><p>%s</p>'
+                   '<a class="plink" href="%s">%s →</a></div></div>') % (
+            (' style="display:none"' if i > 0 else ''), panel_img(i, t, link),
+            esc(t), esc(dsc), link, esc(cta_))
     tabscript = ("<script>function etaTab(b){var m=b.closest('.appmod');"
                  "var t=[].slice.call(m.querySelectorAll('.apptab'));var i=t.indexOf(b);"
                  "t.forEach(function(x,j){x.classList.toggle('on',j===i);});"
@@ -596,18 +599,12 @@ def build_landing(lang, slug):
                  '<button class="apparrow" onclick="etaScroll(this,1)" aria-label="next">&rsaquo;</button></div>'
                  '<div class="apppanels">%s</div></div>%s') % (esc(d["apps_h"]), tabs, panels, tabscript)
 
-    # --- brochure / resource cards ---
-    bcards = "".join(
-        '<a class="bcard" href="%s"><div class="bct"><h3>%s</h3><p>%s</p></div><span class="barr">&rarr;</span></a>'
-        % (L(lang, url), esc(t), esc(s)) for t, s, url in _resources(lang, slug))
-    brochures = sec("", '<div class="brochures">%s</div>' % bcards)
-
     final = ('<div class="wrap"><div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
              '<div class="btns"><a class="btn pri" href="%s">%s</a>'
              '<a class="btn on-dark" href="%s">%s</a></div></div></div>') % (
         esc(d["fcta_h"]), esc(d["fcta_body"]), contact, esc(d["fcta1"]), contact, esc(d["fcta2"]))
 
-    body = intro + sec("", apps_html) + brochures + final
+    body = intro + sec("", apps_html) + final
 
     crumb = [(("首页" if zh else "Home"), "/"),
              (("行业" if zh else "Industries"), "/industries/"),
