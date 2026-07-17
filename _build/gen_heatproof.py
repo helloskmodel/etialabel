@@ -1423,8 +1423,13 @@ SERVICE_OFFICES=[
   ("Bangkok","曼谷","+66 811 746 947"),
   ("Bac Ninh","北宁","+84 344 590 091"),
 ]
-# Future: 4 service images (one per commitment). Fill with clean COS URLs when ready.
-SERVICE_IMGS=["","","",""]
+# 4 service images (one per commitment) on COS. quote() matches COS folder encoding.
+import urllib.parse as _up
+_SVC_B="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/"+_up.quote("C・Service 服务图 4 组")+"/"
+SERVICE_IMGS=[_SVC_B+"service-quality-inspection.png",
+              _SVC_B+"service-application-solutions.png",
+              _SVC_B+"service-flexible-supply.png",
+              _SVC_B+"service-application-support.png"]
 SERVICE_INTRO=(
   "From material quality and application validation to flexible converting and ongoing support, ETIA helps customers reduce risk and achieve reliable labeling performance throughout the entire project lifecycle.",
   "从材料质量、应用验证，到柔性加工与持续支持，ETIA 在项目全流程中帮助客户降低导入风险，确保标签应用稳定可靠。")

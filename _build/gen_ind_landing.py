@@ -3,9 +3,36 @@
 """Industry LANDING pages (first layer). Data-driven brochure layout, EN + /cn.
 Runs after the section generators so it owns /industries/<slug>/index.html.
 Add more industries by adding entries to LANDINGS."""
-import os, json
+import os, json, urllib.parse
 import gen_heatproof as hp
 import gen_notes
+
+# ---- Image URLs on COS (folder names contain ・/spaces/Chinese; quote() matches COS encoding) ----
+_COS = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/"
+def _q(s): return urllib.parse.quote(s)
+_A = _COS + _q("A・HERO banner 6 组") + "/"
+HERO_BANNERS = {
+    "electronics-pcb": _A + "hero-electronics-pcb.png",
+    "steel": _A + "hero-metals-ceramics.png",
+    "healthcare-life-sciences": _A + "hero-medical-laboratory.png",
+    "automotive-label-materials": _A + "hero-automotive-tire.png",
+    "wire-cable": _A + "hero-wire-cable.png",
+    "outdoor-energy": _A + "hero-outdoor-energy.png",
+}
+_B = _COS + _q("B・应用 Tab 图 34 组") + "/"
+# slug -> (subfolder, [filenames matching each application, in app order])
+_APP_IMG = {
+    "electronics-pcb": ("1. PCB 6 张", ["pcb-reflow", "pcb-non-reflow", "pcb-post-process", "pcb-auto-dispense", "pcb-masking", "pcb-laser"]),
+    "steel": ("2. 金属陶瓷 6 张", ["metals-hot-billet", "metals-forged-heat-treat", "metals-coil-annealing", "metals-ultra-high-temp", "metals-ceramic-kiln", "metals-crucible"]),
+    "healthcare-life-sciences": ("3. 医疗实验室 5 张", ["medical-diagnostics", "medical-laboratory", "medical-devices", "medical-pharma", "medical-wearable"]),
+    "automotive-label-materials": ("4. 汽车轮胎 6 张", ["auto-underhood", "auto-parts-marking", "auto-vin", "auto-harness", "auto-ev-battery", "auto-paint-masking"]),
+    "wire-cable": ("5. 电线电缆 6 张", ["wire-flag", "wire-wrap-around", "wire-heat-shrink", "wire-self-laminating", "wire-harness", "wire-datacom"]),
+    "outdoor-energy": ("6. 户外能源 5 张", ["outdoor-solar", "outdoor-equipment", "outdoor-energy-storage", "outdoor-uv-weather", "outdoor-rating-plate"]),
+}
+def app_img_urls(slug):
+    if slug not in _APP_IMG: return []
+    sub, names = _APP_IMG[slug]
+    return [_B + _q(sub) + "/" + n + ".png" for n in names]
 from gen_heatproof import esc, L, page, write, cta, LANGS
 
 _PCBD = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "pcb.json"), encoding="utf-8"))
@@ -559,7 +586,7 @@ def build_landing(lang, slug):
         return '<section class="blk"%s><div class="wrap">%s</div></section>' % (st, inner)
 
     # --- HERO SECTION (banner-ready) ---
-    hero_img = LANDINGS[slug].get("hero_img", "")
+    hero_img = HERO_BANNERS.get(slug, "")
     slogan = SLOGANS.get(slug, ("", ""))[1 if zh else 0]
     if hero_img:
         hero_open = '<section class="indhero hasimg" style="background-image:url(%s)">' % esc(hero_img)
@@ -574,7 +601,7 @@ def build_landing(lang, slug):
 
     # --- applications tab module: single scrollable row of tabs + active panel ---
     app_urls = LANDINGS[slug].get("app_urls", [])
-    app_imgs = LANDINGS[slug].get("app_imgs", [])
+    app_imgs = app_img_urls(slug)
     def panel_img(i, t, link):
         src = app_imgs[i] if i < len(app_imgs) else ""
         img = ('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">' % (esc(src), esc(t))) if src else ""
