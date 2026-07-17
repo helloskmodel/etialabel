@@ -1128,6 +1128,23 @@ def home_banner(lang, tab, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
         st, esc(tab[1] if zh else tab[0]), esc(eyebrow), esc(title), esc(sub), esc(body),
         home_hlink(lang, b1u), esc(b1), home_hlink(lang, b2u), esc(b2))
 
+# Page HERO banner for inner pages (uses L() for en/zh links). Same look as the home banner.
+def page_hero(lang, tab, eyebrow, title, sub, body, b1, b1u, b2, b2u, bg=""):
+    zh = (lang == "zh")
+    st = ' style="background-image:url(%s)"' % esc(bg) if bg else ""
+    return ('<section class="hbanner"%s><span class="htab">%s</span><div class="wrap">'
+            '<div class="eyebrow">%s</div><h1>%s</h1>'
+            '<p class="hsub">%s</p><p class="hbody">%s</p>'
+            '<div class="btns"><a class="btn pri" href="%s">%s</a>'
+            '<a class="btn sec" href="%s">%s</a></div></div></section>') % (
+        st, esc(tab[1] if zh else tab[0]), esc(eyebrow), esc(title), esc(sub), esc(body),
+        L(lang, b1u), esc(b1), L(lang, b2u), esc(b2))
+
+# Per-page hero copy (tab + which HOME2 section). idx: 0=Products,1=Applications,2=Insights,3=Service.
+def section_hero(lang, tab, idx, bg=""):
+    s = HOME2.get(lang, HOME2["en"])["sections"][idx]
+    return page_hero(lang, tab, s["eyebrow"], s["h2"], s["sub"], s["body"], s["b1"], s["b1u"], s["b2"], s["b2u"], bg)
+
 def build_home(lang):
     path="/"
     T=HOME_I18N[lang]
