@@ -113,11 +113,11 @@ SPECS = [  # only TDS-stated info
                           "MIL-STD-202G Method 215K · UL 969（审批中）· REACH · RoHS")),
 ]
 FIN = {"M": ("Matte white", "哑面白"), "S": ("Semi-gloss white", "半光白"), "G": ("Gloss white", "亮光白")}
-SKUS = [  # (sku, finish-key, thickness, esd)
+SKUS = [  # (sku, finish-key, thickness, esd) -- exactly the 8 TDS files on COS
  ("XF-101M", "M", "1 mil", False), ("XF-101S", "S", "1 mil", False), ("XF-101G", "G", "1 mil", False),
- ("XF-101ME", "M", "1 mil", True), ("XF-101SE", "S", "1 mil", True),
+ ("XF-101ME", "M", "1 mil", True),
  ("XF-102M", "M", "2 mil", False), ("XF-102S", "S", "2 mil", False), ("XF-102G", "G", "2 mil", False),
- ("XF-102ME", "M", "2 mil", True), ("XF-102SE", "S", "2 mil", True),
+ ("XF-102SE", "S", "2 mil", True),
 ]
 THERMAL = [("100 hrs", "302°F / 150°C"), ("5 min", "500°F / 260°C"), ("90 sec", "572°F / 300°C")]
 APPS = [("PCB identification & WIP labeling", "PCB 标识与在制品(WIP)标签"),
