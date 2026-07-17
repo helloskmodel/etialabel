@@ -776,21 +776,31 @@ def build_application_notes(lang):
     zh = (lang == "zh")
     pub = gen_notes.PUBLISHED
     total = len(pub)
-    # industry counts (only industries that actually have published notes)
-    ind_counts = []
-    seen = {}
+    # Note counts per industry
+    ncount = {}
     for slug, te, tz, de, dz, islug, ie, iz in pub:
-        if islug not in seen:
-            seen[islug] = [ie, iz, 0]; ind_counts.append(islug)
-        seen[islug][2] += 1
-    # No "All" (it would be a huge grid). Default = first industry; search spans all industries.
-    default_ind = ind_counts[0] if ind_counts else ""
+        ncount[islug] = ncount.get(islug, 0) + 1
+    # Full taxonomy: ALL 6 industries + their branch applications (from LANDINGS).
+    # No "All" chip, but every industry & application point is listed for clear navigation.
+    industries = []  # (islug, name, [(app_title, app_url), ...])
+    for islug, v in LANDINGS.items():
+        d = v[lang]
+        urls = v.get("app_urls", [])
+        apps = [(t, (L(lang, urls[i]) if i < len(urls) else L(lang, v["path"])))
+                for i, (t, dsc, cta_) in enumerate(d["apps"])]
+        industries.append((islug, d["eyebrow"], apps))
+    default_ind = industries[0][0] if industries else ""
     chips = ""
-    for i, islug in enumerate(ind_counts):
-        ie, iz, c = seen[islug]
+    for islug, name, apps in industries:
         chips += '<button class="nfchip%s" data-ind="%s" onclick="etaNF(this)">%s<span class="n">%d</span></button>' % (
-            (" on" if i == 0 else ""), islug, esc(iz if zh else ie), c)
-    init_count = seen[default_ind][2] if default_ind else 0
+            (" on" if islug == default_ind else ""), islug, esc(name), ncount.get(islug, 0))
+    # Per-industry application pill rows (only the active industry's row is shown)
+    approws = ""
+    for islug, name, apps in industries:
+        pills = "".join('<a class="apppill" href="%s">%s</a>' % (u, esc(t)) for (t, u) in apps)
+        hide = "" if islug == default_ind else ' style="display:none"'
+        approws += '<div class="nfapps" data-ind="%s"%s>%s</div>' % (islug, hide, pills)
+    init_count = ncount.get(default_ind, 0)
     # note cards (image placeholder + industry eyebrow + title + desc); non-default industries hidden initially
     cards = ""
     for slug, te, tz, de, dz, islug, ie, iz in pub:
@@ -807,23 +817,34 @@ def build_application_notes(lang):
     countword = ("篇应用笔记" if zh else "application notes")
     searchph = ("搜索全部应用笔记…" if zh else "Search all application notes...")
     # search (non-empty) spans ALL industries; empty search shows the active industry only
+    emptymsg = ("该行业的应用笔记正在整理中——可先浏览上方的应用点。" if zh
+                else "Notes for this industry are in preparation — explore its applications above.")
     js = ("<script>function etaNF(b){"
           "if(b&&b.classList){document.querySelectorAll('.nfchip').forEach(function(x){x.classList.toggle('on',x===b);});}"
           "var on=document.querySelector('.nfchip.on');var ind=on?on.getAttribute('data-ind'):'';"
+          "document.querySelectorAll('.nfapps').forEach(function(r){r.style.display=(r.getAttribute('data-ind')==ind)?'':'none';});"
           "var s=document.getElementById('nfsearch');var q=(s?s.value:'').toLowerCase();var n=0;"
           "document.querySelectorAll('.nfitem').forEach(function(c){"
           "var ok=q!=''?(c.getAttribute('data-text').indexOf(q)>=0):(ind==''||c.getAttribute('data-ind')==ind);"
           "c.style.display=ok?'':'none';if(ok)n++;});"
-          "var cc=document.getElementById('nfcount');if(cc)cc.textContent=n;}</script>")
-    body = ('<section class="blk"><div class="wrap">'
-            '<div class="eyebrow">%s</div><div class="nfrow">%s</div>'
+          "var cc=document.getElementById('nfcount');if(cc)cc.textContent=n;"
+          "var em=document.getElementById('nfempty');if(em)em.style.display=n?'none':'';}</script>")
+    css = ("<style>.nfapps{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}"
+           ".apppill{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:20px;"
+           "font-size:13px;color:var(--ink);background:#fff;text-decoration:none;transition:.15s}"
+           ".apppill:hover{border-color:var(--blue);color:var(--blue);background:#f4f7fd}</style>")
+    body = ('%s<section class="blk"><div class="wrap">'
+            '<div class="eyebrow">%s</div><div class="nfrow">%s</div>%s'
             '<div class="nfbar"><div class="catcount"><span id="nfcount">%d</span> %s</div>'
             '<input id="nfsearch" class="nsearch" type="search" placeholder="%s" oninput="etaNF()"></div>'
             '<div class="grid grid3" style="margin-top:6px">%s</div>'
+            '<p id="nfempty" class="muted" style="margin:8px 0 0;%s">%s</p>'
             '<div class="verify" style="margin-top:24px">%s</div>'
             '</div></section>'
             '<div class="wrap">%s</div>%s') % (
-        ("按行业筛选" if zh else "Filter by Industry"), chips, init_count, countword, esc(searchph), cards,
+        css, ("按行业筛选" if zh else "Filter by Industry"), chips, approws,
+        init_count, countword, esc(searchph), cards,
+        ("" if init_count == 0 else "display:none"), esc(emptymsg),
         ("应用笔记正在陆续发布（约 40 篇，按行业 / 应用 / 环境标记）。需要特定主题资料请联系 ETIA。" if zh
          else "Application notes are being published (around 40, tagged by industry / application / environment). Contact ETIA for a specific topic."),
         hp.cta2(lang, "applications"), js)
