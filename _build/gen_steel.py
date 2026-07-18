@@ -94,7 +94,7 @@ CSS = """<style>
 
 UI = {"process": ("Process", "工艺"), "challenge": ("Challenge", "挑战"),
       "solution": ("Recommended Solution", "推荐方案"), "lines": ("Product Lines", "产品系列"),
-      "browse": ("Browse by Process", "按工艺浏览"), "view": ("View product →", "查看产品 →"),
+      "browse": ("Browse by Application", "按应用浏览"), "view": ("View product →", "查看产品 →"),
       "overview": ("Overview", "概述"), "features": ("Features", "特性"),
       "benefits": ("Benefits", "收益"), "spec": ("Specification", "规格"),
       "application": ("Application", "应用"), "talk": ("Talk to a Specialist", "咨询专家"),
