@@ -28,6 +28,11 @@
       "permanent": true
     },
     {
+      "source": "/products/hp-700t",
+      "destination": "/products/hp-900/",
+      "permanent": true
+    },
+    {
       "source": "/automotive",
       "destination": "/industries/automotive-label-materials/",
       "permanent": true
