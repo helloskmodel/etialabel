@@ -40,6 +40,8 @@ STEEL_CSS = """<style>
 .starrow{background:none;border:none;font-size:20px;color:var(--mut);cursor:pointer;padding:4px 6px}
 .stpanel{padding-top:24px}
 .st4{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.st3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.plw{margin-top:26px}.plh{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
 .stbox{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
 .stbox .h{display:flex;align-items:center;gap:12px;margin-bottom:8px}
 .stbox .h .i{width:30px;height:30px;flex:0 0 auto}.stbox .h .i svg{width:30px;height:30px}
@@ -73,7 +75,7 @@ STEEL_CSS = """<style>
 .faq summary:before{content:"+";color:var(--blue);font-weight:800;margin-right:10px}
 .faq details[open] summary:before{content:"\\2013"}
 .faq p{font-size:14.5px;color:var(--ink);line-height:1.6;margin-top:8px;padding-left:22px}
-@media(max-width:820px){.st4,.failul,.flist{grid-template-columns:1fr}}
+@media(max-width:820px){.st3,.st4,.failul,.flist{grid-template-columns:1fr}}
 </style>""".replace("__BANNER__", STEEL_BANNER)
 
 # ------------------------------------------------- Level 1: Application Landing
@@ -178,58 +180,43 @@ def build_steel_landing(lang):
     ]
     overview = ('<section class="blk"><div class="wrap"><div class="ovbody">%s</div></div></section>') % (
         "".join('<p%s>%s</p>' % ((' class="ovlead"' if i == 0 else ''), H(e, z)) for i, (e, z) in enumerate(ov_ps)))
-    # why + fail
-    fails = "".join('<li>%s</li>' % H(e, z) for e, z in FAIL_L1)
-    why = ('<section class="blk"><div class="wrap"><h2>%s</h2>'
-           '<p class="plsub">%s</p><ul class="failul">%s</ul></div></section>') % (
-        H("Why the Steel Industry Needs Heat-Resistant Labels", "钢铁行业为什么需要耐高温标签"),
-        H("At the moment material needs to be identified, it is often still red-hot, covered in scale, and about to enter an even harsher process. Conventional labels all fail here:",
-          "物料在被识别的那一刻,往往还是红热的、带氧化皮的、即将进入更严苛工序的。普通标签在这里全部失效:"),
-        fails)
-    # application-type tab module
+    # PCB-style FLEXcon bar: each application tab reveals Process / Challenge / Recommended Solution,
+    # with the fitting Product Lines below.
+    STLINES = [
+      [("HP-700T", ("750℃ hot billet / slab direct application — anchors into scale, robot-ready.", "750℃ 热态钢坯 / 板坯直贴 —— 锚固氧化皮,机器人可用。"), "/industries/steel/hot-billet-direct-labeling/"),
+       ("HP-600", ("550℃ hot coil / aluminum direct application.", "550℃ 热态钢卷 / 铝直贴。"), "/contact/")],
+      [("HEATPROOF Through-Process", ("Ambient-applied; survives pickling (H₂SO₄ / HCl) + 10–18h annealing, still scannable at furnace exit.", "常温贴附;耐酸洗(H₂SO₄ / HCl)+ 10~18 小时退火,出炉仍可扫。"), "/contact/")],
+      [("HEATPROOF Tags", ("Mechanically-fixed durable tags; readable through dozens–hundreds of thermal cycles.", "机械固定耐用挂牌;经数十至上百次热循环仍可读。"), "/contact/")],
+      [("HEATPROOF Print System", ("Thermal-transfer printer + high-temperature ribbon, MES-integrated print-and-apply.", "热转印打印机 + 高温色带,与 MES 集成即打即贴。"), "/contact/")],
+    ]
     tabs = ""; panels = ""
     for i, (nm, wh, ch, hw, sv) in enumerate(APP_TYPES):
         tabs += '<button class="sttab%s" onclick="stTab(this,%d)">%s</button>' % (" on" if i == 0 else "", i, H(*nm))
-        def box(ic, lbl, col, val):
-            return ('<div class="stbox"><div class="h"><span class="i" style="color:%s">%s</span>'
-                    '<span class="e" style="color:%s">%s</span></div><p>%s</p></div>') % (col, ic, col, lbl, H(*val))
-        panels += ('<div class="stpanel" data-i="%d" style="display:%s"><div class="st4">%s%s%s%s</div></div>') % (
-            i, "block" if i == 0 else "none",
-            box(IC_WHERE, H("Where", "用在哪"), "var(--blue)", wh),
-            box(IC_CHAL, H("Challenge", "核心挑战"), "#c2621f", ch),
-            box(IC_HOW, H("How it works", "怎么用"), "var(--blue)", hw),
-            box(IC_SOLVE, H("What it solves", "解决什么"), "var(--green-d)", sv))
+        def box(ic, lbl, col, val, tint=False):
+            return ('<div class="stbox"%s><div class="h"><span class="i" style="color:%s">%s</span>'
+                    '<span class="e" style="color:%s">%s</span></div><p>%s</p></div>') % (
+                (' style="background:#f4f9f2"' if tint else ''), col, ic, col, lbl, H(*val))
+        cols = '<div class="st3">%s%s%s</div>' % (
+            box(IC_HOW, H("Process", "工艺"), "var(--blue)", wh),
+            box(IC_CHAL, H("Challenge", "挑战"), "#c2621f", ch),
+            box(IC_SOLVE, H("Recommended Solution", "推荐方案"), "var(--green-d)", hw, tint=True))
+        cards = "".join('<a class="stcard" href="%s"><div class="t">%s</div>'
+                        '<p style="font-size:12.5px;color:var(--mut);line-height:1.5;margin:6px 0 8px">%s</p>'
+                        '<div class="go">%s</div></a>' % (
+            L(lang, u), esc(n2), H(de, dz), H("View series →", "查看系列 →")) for n2, (de, dz), u in STLINES[i])
+        panels += ('<div class="stpanel" data-i="%d" style="display:%s">%s'
+                   '<div class="plw"><div class="plh">%s</div><div class="stgrid">%s</div></div></div>') % (
+            i, "block" if i == 0 else "none", cols, H("Product Lines", "产品系列"), cards)
     st_js = ("<script>function stTab(b,i){var m=b.closest('.stmod');"
              "m.querySelectorAll('.sttab').forEach(function(x,j){x.classList.toggle('on',j===i);});"
              "m.querySelectorAll('.stpanel').forEach(function(p){p.style.display=(+p.getAttribute('data-i')===i)?'block':'none';});}"
              "function stScroll(b,d){b.closest('.sttabsrow').querySelector('.sttabs').scrollBy({left:d*240,behavior:'smooth'});}</script>")
-    types = ('<section class="blk" style="background:#f4f7fd"><div class="wrap"><h2>%s</h2><div class="stmod">'
+    types = ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="stmod">'
              '<div class="sttabsrow"><button class="starrow" onclick="stScroll(this,-1)">&lsaquo;</button>'
              '<div class="sttabs">%s</div><button class="starrow" onclick="stScroll(this,1)">&rsaquo;</button></div>'
              '%s</div></div></section>%s') % (
-        H("Types of Label Application in the Steel Industry", "钢铁行业的标签应用类型"), tabs, panels, st_js)
-    # process map table
-    mrows = "".join('<tr><td class="k">%s</td><td>%s</td><td>%s</td><td>%s</td></tr>' % (
-        H(*a), H(*b), H(*c), H(*d)) for a, b, c, d in PROC_MAP)
-    mheads = "".join('<th>%s</th>' % H(*h) for h in [("Process","工序"),("Material state","对象状态"),("What the label must survive","标签面临的考验"),("Application type","应用类型")])
-    pmap = ('<section class="blk"><div class="wrap"><h2>%s</h2>'
-            '<div class="ptable-wrap" style="overflow-x:auto"><table class="sttbl"><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>'
-            '</div></section>') % (H("Label Application Map Across the Steel Process Chain", "钢铁全流程标签应用地图"), mheads, mrows)
-    # choose by process cards
-    ccards = "".join('<a class="stcard" href="%s"><div class="t">%s</div><div class="m">%s</div><div class="go">%s</div></a>' % (
-        L(lang, u), H(*t), esc(m), H("View solution →", "查看方案 →")) for t, m, u in CHOOSE)
-    choose = ('<section class="blk" style="background:#f4f7fd"><div class="wrap"><h2>%s</h2>'
-              '<div class="stgrid">%s</div></div></section>') % (
-        H("Choose Your Application by Process", "按工序选择你的应用场景"), ccards)
-    # benefits
-    brows = "".join('<div class="frow"><div class="c">%s</div><div class="tx"><p>%s</p></div></div>' % (CHK, H(e, z)) for e, z in BENEFITS_L1)
-    ben = ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="flist">%s</div></div></section>') % (
-        H("Industry-Level Benefits", "行业收益概览"), brows)
-    # faq
-    faqs = "".join('<details><summary>%s</summary></details>' % H(*q) for q in FAQ_L1)
-    faq = ('<section class="blk" style="background:#f4f7fd"><div class="wrap"><h2>%s</h2><div class="faq">%s</div></div></section>') % (
-        H("FAQ", "常见问题"), faqs)
-    body = STEEL_CSS + overview + why + types + pmap + choose + ben + faq + ('<div class="wrap">%s</div>' % hp.cta2(lang, "applications"))
+        H("Browse by Application", "按应用浏览"), tabs, panels, st_js)
+    body = STEEL_CSS + overview + types + ('<div class="wrap">%s</div>' % hp.cta2(lang, "applications"))
     path = "/industries/steel/"
     crumb = [("Home" if not zh else "首页", "/"), ("Industries" if not zh else "行业", "/industries/"),
              ("Steel Industry" if not zh else "钢铁行业", path)]
