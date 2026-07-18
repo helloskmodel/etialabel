@@ -165,8 +165,7 @@ def build_steel_landing(lang):
         H("HEATPROOF™ · Extreme Temperature Identification Solutions", "HEATPROOF™ · 极端温度标识解决方案"),
         H("One Label. One Journey. Complete Traceability Through Extreme Heat.",
           "一张标签,一段旅程,穿越极端高温的完整可追溯。"),
-        H("750℃ direct application on red-hot surfaces, acid immersion, 800℃ annealing — heat-resistant barcode identification across the entire steel process chain.",
-          "750℃ 赤热直贴、酸洗浸泡、800℃ 退火 —— 覆盖钢铁全流程的耐高温条码标识。"),
+        H("Extreme Heat-Resistant Labels and Tags", "极端耐高温标签与挂牌"),
         contact, H("Talk to a Specialist", "咨询专家"))
     # HEATPROOF overview
     ov_ps = [
