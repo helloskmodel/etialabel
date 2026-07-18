@@ -27,6 +27,8 @@ STEEL_CSS = """<style>
 .sthero p{color:#eef3ff;font-size:16px;line-height:1.6;max-width:56em}
 .stbadge{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);color:#fff;font-weight:700;font-size:12.5px;border-radius:20px;padding:5px 13px;margin:0 7px 8px 0}
 .plsub{color:var(--mut);font-size:15px;margin:-6px 0 16px;max-width:66em}
+.ovbody{max-width:66em}.ovbody p{font-size:16px;line-height:1.75;color:var(--ink);margin-bottom:16px}
+.ovbody p.ovlead{font-size:19px;font-weight:700;color:var(--blue-deep);line-height:1.55}
 .failul{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
 .failul li{padding:12px 0 12px 26px;position:relative;font-size:15px;color:var(--ink);line-height:1.55;border-bottom:1px solid var(--line)}
 .failul li:before{content:"\\2717";position:absolute;left:2px;top:12px;color:#c2621f;font-weight:800}
@@ -160,12 +162,23 @@ def build_steel_landing(lang):
     hero = ('<section class="sthero"><div class="wrap"><div class="eyebrow">%s</div>'
             '<h1>%s</h1><p>%s</p><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
             '</div></section>') % (
-        H("METALS · STEEL INDUSTRY", "金属 · 钢铁行业"),
-        H("From continuous casting to the warehouse — one label follows it all the way",
-          "从连铸到入库,一张标签跟到底"),
+        H("HEATPROOF™ · Extreme Temperature Identification Solutions", "HEATPROOF™ · 极端温度标识解决方案"),
+        H("One Label. One Journey. Complete Traceability Through Extreme Heat.",
+          "一张标签,一段旅程,穿越极端高温的完整可追溯。"),
         H("750℃ direct application on red-hot surfaces, acid immersion, 800℃ annealing — heat-resistant barcode identification across the entire steel process chain.",
           "750℃ 赤热直贴、酸洗浸泡、800℃ 退火 —— 覆盖钢铁全流程的耐高温条码标识。"),
         contact, H("Talk to a Specialist", "咨询专家"))
+    # HEATPROOF overview
+    ov_ps = [
+      ("In extreme manufacturing environments, product identity is often lost when conventional identification methods fail.",
+       "在极端制造环境中,当传统标识方式失效时,产品身份往往随之丢失。"),
+      ("HEATPROOF™ introduces a new generation of thermal traceability solutions — enabling direct hot application labels, heat treatment labels and durable tags that maintain product identification through extreme temperatures, chemical exposure and demanding thermal processes.",
+       "HEATPROOF™ 带来新一代热追溯解决方案 —— 提供热态直贴标签、热处理标签与耐用挂牌,让产品标识在极端温度、化学暴露与严苛热处理工艺中始终保持。"),
+      ("From steel and aluminum processing to ceramics and advanced manufacturing, HEATPROOF™ helps manufacturers create, maintain and verify one continuous product identity from production to final delivery.",
+       "从钢铁、铝加工到陶瓷与先进制造,HEATPROOF™ 帮助制造商从生产到最终交付,创建、保持并验证一致连续的产品身份。"),
+    ]
+    overview = ('<section class="blk"><div class="wrap"><div class="ovbody">%s</div></div></section>') % (
+        "".join('<p%s>%s</p>' % ((' class="ovlead"' if i == 0 else ''), H(e, z)) for i, (e, z) in enumerate(ov_ps)))
     # why + fail
     fails = "".join('<li>%s</li>' % H(e, z) for e, z in FAIL_L1)
     why = ('<section class="blk"><div class="wrap"><h2>%s</h2>'
@@ -217,7 +230,7 @@ def build_steel_landing(lang):
     faqs = "".join('<details><summary>%s</summary></details>' % H(*q) for q in FAQ_L1)
     faq = ('<section class="blk" style="background:#f4f7fd"><div class="wrap"><h2>%s</h2><div class="faq">%s</div></div></section>') % (
         H("FAQ", "常见问题"), faqs)
-    body = STEEL_CSS + why + types + pmap + choose + ben + faq + ('<div class="wrap">%s</div>' % hp.cta2(lang, "applications"))
+    body = STEEL_CSS + overview + why + types + pmap + choose + ben + faq + ('<div class="wrap">%s</div>' % hp.cta2(lang, "applications"))
     path = "/industries/steel/"
     crumb = [("Home" if not zh else "首页", "/"), ("Industries" if not zh else "行业", "/industries/"),
              ("Steel Industry" if not zh else "钢铁行业", path)]
