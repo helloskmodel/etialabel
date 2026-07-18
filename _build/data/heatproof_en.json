@@ -8,9 +8,9 @@
    "temp": "800℃",
    "process": "After continuous casting the slab surface is about 800℃, covered in scale. A robotic labeler applies the label automatically to the slab end face at the roller table; it travels through the cooling bed, transport and stacking up to furnace entry.",
    "challenge": "800℃ heat + continuously flaking scale + rapid cooling. Ordinary labels instantly carbonize, curl or peel off with the scale; spray marking drops off with the scale; manual tagging needs personnel near the heat.",
-   "solution": "HP-700T + robotic labeler + on-site thermal transfer print. HP-700T applies at 450–800℃ (max heat resistance 800℃); the heat-activated adhesive bonds on hot contact and the barcode stays scannable. For direct application up to 900℃, use HP-900.",
-   "product": "HP-700T",
-   "recommended": "HP-700T"
+   "solution": "HP-900 + robotic labeler + on-site thermal transfer print. HP-900 applies at 450–800℃ (max heat resistance 800℃); the heat-activated adhesive bonds on hot contact and the barcode stays scannable. For direct application up to 900℃, use HP-900.",
+   "product": "HP-900",
+   "recommended": "HP-900"
   },
   {
    "code": "S-2",
@@ -20,7 +20,7 @@
    "temp": "550℃",
    "process": "After hot rolling the coil surface is about 550℃; a robot applies the label to the coil eye end face or outer wrap. It follows cooling, banding and warehousing; downstream may include pickling/galvanizing pretreatment.",
    "challenge": "550℃ heat + curved coil surface. The label must conform to the curve without lifting and stay readable through downstream pretreatment.",
-   "solution": "HP-600 — applies at 250–600℃ (max heat resistance 600℃), stable ink without smudging, scannable while hot; for higher surfaces step up to HP-700T (to 800℃) or HP-900 (to 900℃).",
+   "solution": "HP-600 — applies at 250–600℃ (max heat resistance 600℃), stable ink without smudging, scannable while hot; for higher surfaces step up to HP-900 (up to 900℃).",
    "product": "HP-600",
    "recommended": "HP-600"
   },
@@ -32,9 +32,9 @@
    "temp": "750℃",
    "process": "After the caster cut the billet end face is about 750℃. A robot labels it downstream of the cutting machine; the billet cools on the bed, is stacked, and is scanned before furnace entry to confirm identity and feed back to MES.",
    "challenge": "The billet was previously identified by a stamped number whose readability is unreliable, causing misidentification; the rough 750℃ scale surface won't hold ordinary labels.",
-   "solution": "HP-700T — applies at 450–800℃ (max heat resistance 800℃), thermal-shock and scale-flake resistant, roll-fed for automatic labelers; for direct application up to 900℃, use HP-900.",
-   "product": "HP-700T",
-   "recommended": "HP-700T"
+   "solution": "HP-900 — applies at 450–800℃ (max heat resistance 800℃), thermal-shock and scale-flake resistant, roll-fed for automatic labelers; for direct application up to 900℃, use HP-900.",
+   "product": "HP-900",
+   "recommended": "HP-900"
   },
   {
    "code": "S-4",
