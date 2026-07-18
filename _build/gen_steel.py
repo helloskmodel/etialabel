@@ -49,7 +49,7 @@ CASE_TAB = {
  "C-1": ("Kiln Jigs · 1000℃", "窑炉工装 · 1000℃"), "C-2": ("Crucible", "坩埚"),
 }
 CASE_PROD = {
- "S-1": ("HP-700T", "hp-700t"), "S-2": ("HP-600", "hp-600"), "S-3": ("HP-700T", "hp-700t"),
+ "S-1": ("HP-900", "hp-900"), "S-2": ("HP-600", "hp-600"), "S-3": ("HP-900", "hp-900"),
  "S-4": ("HP-M83", "hp-m83"), "S-5": ("HP-L90", "hp-l90"), "A-1": ("HP-600", "hp-600"),
  "A-2": ("HP-350N / 380N+ / 360", "hp-350n"), "A-3": ("HP-T42 + HP-CBR Tag", "hp-t42-hp-cbr-tag"),
  "C-1": ("HP-CBR CX2 / HB", "hp-cbr-cx2"), "C-2": ("HP-CBR CX2 / HB", "hp-cbr-cx2"),
