@@ -1320,6 +1320,7 @@ def write_redirects():
       {"source":"/products/direct-label","destination":"/products/direct-hot-application-labels/","permanent":True},
       {"source":"/products/management-label","destination":"/products/heat-treatment-labels/","permanent":True},
       {"source":"/products/management-tag","destination":"/products/heat-treatment-tags/","permanent":True},
+      {"source":"/products/hp-700t","destination":"/products/hp-900/","permanent":True},
     ]}
     open(os.path.join(ROOT,"vercel.json"),"w").write(json.dumps(cfg,indent=2)+"\n")
 
