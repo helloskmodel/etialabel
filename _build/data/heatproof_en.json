@@ -1,0 +1,350 @@
+{
+ "cases": [
+  {
+   "code": "S-1",
+   "industry": "Steel",
+   "name": "Robotic direct labeling of hot steel slab",
+   "object": "Steel Slab",
+   "temp": "800℃",
+   "process": "After continuous casting the slab surface is about 800℃, covered in scale. A robotic labeler applies the label automatically to the slab end face at the roller table; it travels through the cooling bed, transport and stacking up to furnace entry.",
+   "challenge": "800℃ heat + continuously flaking scale + rapid cooling. Ordinary labels instantly carbonize, curl or peel off with the scale; spray marking drops off with the scale; manual tagging needs personnel near the heat.",
+   "solution": "HP-700T + robotic labeler + on-site thermal transfer print. HP-700T applies at 450–800℃ (max heat resistance 800℃); the heat-activated adhesive bonds on hot contact and the barcode stays scannable. For direct application up to 900℃, use HP-900.",
+   "product": "HP-700T",
+   "recommended": "HP-700T"
+  },
+  {
+   "code": "S-2",
+   "industry": "Steel",
+   "name": "Robotic direct labeling of hot steel coil",
+   "object": "Steel Coil",
+   "temp": "550℃",
+   "process": "After hot rolling the coil surface is about 550℃; a robot applies the label to the coil eye end face or outer wrap. It follows cooling, banding and warehousing; downstream may include pickling/galvanizing pretreatment.",
+   "challenge": "550℃ heat + curved coil surface. The label must conform to the curve without lifting and stay readable through downstream pretreatment.",
+   "solution": "HP-600 — applies at 250–600℃ (max heat resistance 600℃), stable ink without smudging, scannable while hot; for higher surfaces step up to HP-700T (to 800℃) or HP-900 (to 900℃).",
+   "product": "HP-600",
+   "recommended": "HP-600"
+  },
+  {
+   "code": "S-3",
+   "industry": "Steel",
+   "name": "Robotic direct labeling of hot steel billet",
+   "object": "Steel Billet",
+   "temp": "750℃",
+   "process": "After the caster cut the billet end face is about 750℃. A robot labels it downstream of the cutting machine; the billet cools on the bed, is stacked, and is scanned before furnace entry to confirm identity and feed back to MES.",
+   "challenge": "The billet was previously identified by a stamped number whose readability is unreliable, causing misidentification; the rough 750℃ scale surface won't hold ordinary labels.",
+   "solution": "HP-700T — applies at 450–800℃ (max heat resistance 800℃), thermal-shock and scale-flake resistant, roll-fed for automatic labelers; for direct application up to 900℃, use HP-900.",
+   "product": "HP-700T",
+   "recommended": "HP-700T"
+  },
+  {
+   "code": "S-4",
+   "industry": "Steel",
+   "name": "Wire pickling + annealing full traceability",
+   "object": "Wire/bar · Pickling (H₂SO₄, HCl)",
+   "temp": "Anneal 800℃×10h",
+   "process": "Wire/bar coils are first pickled (sulfuric/hydrochloric acid) to remove scale, then annealed in a furnace at about 800℃ × 10 hours. The label is applied at room temperature and follows the coil throughout.",
+   "challenge": "First strong-acid immersion, then prolonged heat — chemical attack and sustained high temperature stack up. Ordinary label stock/ink dissolves or carbonizes and traceability breaks.",
+   "solution": "HP-M83 — an ultra-high-temp label/tag resisting acid immersion + 800℃ long anneal; barcode still machine-readable after the furnace, giving one continuous chain from pretreatment to heat treatment.",
+   "product": "HP-M83",
+   "recommended": "HP-M83"
+  },
+  {
+   "code": "S-5",
+   "industry": "Steel",
+   "name": "Forged part heat-treatment traceability",
+   "object": "Forged steel · hot forging 800℃",
+   "temp": "Anneal 1100℃×18h",
+   "process": "The forging is hot-forged at 800℃, then annealed at 1100℃ × 18 hours. The label must survive extreme heat plus extreme duration and stay readable.",
+   "challenge": "1100℃ is extreme, compounded by 18 hours of exposure that even ordinary heat-resistant labels struggle with; a lost mark mixes up forged batches.",
+   "solution": "HP-L90 — built for extreme forging heat treatment, resisting 1100℃-class prolonged exposure and keeping the barcode readable after annealing.",
+   "product": "HP-L90",
+   "recommended": "HP-L90"
+  },
+  {
+   "code": "A-1",
+   "industry": "Aluminum",
+   "name": "Robotic direct labeling of hot aluminum sow",
+   "object": "Aluminum Sow",
+   "temp": "550℃",
+   "process": "After casting, the aluminum sow surface is about 550℃; a robot applies the label at the roller table, following the sow through cooling, stacking and warehousing.",
+   "challenge": "550℃ aluminum surface — fast heat conduction and easy oxidation; the label must bond instantly and resist rapid cooling.",
+   "solution": "HP-600 — 550℃ direct application, compatible with robotic labeling and on-site thermal transfer print, scannable while hot.",
+   "product": "HP-600",
+   "recommended": "HP-600"
+  },
+  {
+   "code": "A-2",
+   "industry": "Aluminum",
+   "name": "Aluminum billet homogenizing management",
+   "object": "Aluminum Billet",
+   "temp": "Apply r.t~400℃ / Anneal 550℃",
+   "process": "The aluminum billet is at room temperature ~400℃ when labeled, then enters a homogenizing anneal furnace at about 550℃ for several hours, before cutting and extrusion.",
+   "challenge": "A wide application-temperature span (r.t to 400℃) and it must survive the 550℃ anneal; a lost mark confuses alloy grade / heat batch.",
+   "solution": "HP-350N / 380N+ / 360 — covering different application temperatures and anneal needs; select per actual conditions to keep traceability through homogenizing.",
+   "product": "HP-350N/380N+/360",
+   "recommended": "HP-350N / 380N+ / 360"
+  },
+  {
+   "code": "A-3",
+   "industry": "Aluminum",
+   "name": "Aluminum heat-treatment jig management",
+   "object": "Heat-treat Jigs",
+   "temp": "500℃×several h×cycles",
+   "process": "Jigs used for solution/aging heat treatment of aluminum parts undergo about 500℃ × several hours × many cycles. The label/tag is fixed to the jig for the long term.",
+   "challenge": "Jigs re-enter the furnace repeatedly and must stay readable through dozens to hundreds of thermal cycles; single-use labels can't cope.",
+   "solution": "HP-T42 + HP-CBR Tag — a reusable-cycle label plus a mechanically fixed tag, for tooling asset management and cycle counting.",
+   "product": "HP-T42 / CBR Tag",
+   "recommended": "HP-T42 / CBR Tag"
+  },
+  {
+   "code": "C-1",
+   "industry": "Ceramics",
+   "name": "High-temp ceramic kiln jig management",
+   "object": "Jigs (Alumina/Glass/Carbon)",
+   "temp": "1000℃×10h+",
+   "process": "Kiln jigs of alumina, glass or carbon undergo firing cycles of 1000℃ × over 10 hours. The tag is mechanically fixed to the jig and reused.",
+   "challenge": "1000℃+ is extreme and exposure exceeds 10 hours; ordinary labels fully ash out, making a readable mark very hard to keep.",
+   "solution": "HP-CBR CX2 / HB — extreme-high-temp mechanically fixed tags for 1000℃+ prolonged kiln firing.",
+   "product": "HP-CBR CX2 / HB",
+   "recommended": "HP-CBR CX2 / HB"
+  },
+  {
+   "code": "C-2",
+   "industry": "Ceramics",
+   "name": "Laboratory crucible heat-treatment mgmt",
+   "object": "Crucible",
+   "temp": "1000℃×several h",
+   "process": "Laboratory/production crucibles undergo 1000℃ × several-hour thermal cycles and need reliable identity marking to track batch and use.",
+   "challenge": "Crucibles are small, cycled frequently and extremely hot; the mark must withstand 1000℃ and be repeatedly scannable.",
+   "solution": "HP-CBR CX2 / HB — mechanically fixed tags resisting repeated 1000℃ heat; for direct marking on a crucible body within the direct-application range, use HP-900 (450–900℃ direct application).",
+   "product": "HP-CBR CX2 / HB",
+   "recommended": "HP-CBR CX2 / HB"
+  }
+ ],
+ "products": [
+  {
+   "name": "HP-700T",
+   "slug": "hp-700t",
+   "cases": "S-1 / S-3",
+   "overview": "A high-temp direct label for red-hot billet/slab, applied at 450–800℃ (max heat resistance 800℃); robot-applied, the heat-activated adhesive bonds on hot contact, giving the stock a machine-readable identity from the moment of casting.",
+   "features": [
+    "Applies at 450–800℃, max 800℃; no burn/curl/peel",
+    "Heat-activated adhesive (not PSA)",
+    "Adapts to rough scale surface",
+    "High-contrast imaging when hot",
+    "Thermal-shock resistant",
+    "Roll-fed for robotic labeling",
+    "On-site thermal transfer, heat no. from MES"
+   ],
+   "benefits": [
+    "Removes manual tagging in the hot zone (up to 800℃)",
+    "Unique identity at production; replaces unreliable stamped numbers",
+    "Scan before furnace, ID in seconds",
+    "Traceable to caster heat & billet no.",
+    "No spray-marking rework, seamless MES"
+   ],
+   "spec": [
+    "Application temp: 450–800℃",
+    "Max heat resistance: 800℃",
+    "Category: direct hot label (heat-activated adhesive)",
+    "Object: slab / billet / bloom",
+    "Base: heat-resistant metal",
+    "Print: thermal transfer / pre-print",
+    "Note: for direct application up to 900℃ use HP-900",
+    "Compliance: REACH / RoHS"
+   ],
+   "application": "Robotic station downstream of caster/roller table → end-face application at 450–800℃ (avoid burr zone) → cooling/transport/stacking barcode stays readable → scan station before furnace feeds back to MES."
+  },
+  {
+   "name": "HP-600",
+   "slug": "hp-600",
+   "cases": "S-2 / A-1",
+   "overview": "A high-temp direct label applied at 250–600℃ (max heat resistance 600℃), designed for objects such as hot coils and aluminum sows; heat-activated adhesive, stable ink at heat, conforms to curves without lifting.",
+   "features": [
+    "Applies at 250–600℃, max 600℃",
+    "Heat-activated adhesive",
+    "Stable ink, no smudge/bleed",
+    "Conforms to curves, no lift",
+    "Robotic labeling + thermal transfer"
+   ],
+   "benefits": [
+    "Print-and-apply while hot; early batch identity",
+    "Scan-in replaces visual check",
+    "Compatible with downstream pretreatment",
+    "Fewer mixed coils/sows and misdeliveries"
+   ],
+   "spec": [
+    "Application temp: 250–600℃",
+    "Max heat resistance: 600℃",
+    "Category: direct hot label (heat-activated adhesive)",
+    "Object: coil / aluminum sow",
+    "Print: thermal transfer / pre-print",
+    "Supply: roll / sheet",
+    "Compliance: REACH / RoHS"
+   ],
+   "application": "Robotic labeling at rolling/casting exit → coil eye or sow surface → cooling/banding/stacking → scan-in feedback."
+  },
+  {
+   "name": "HP-M83",
+   "slug": "hp-m83",
+   "cases": "S-4",
+   "overview": "Built for the wire pretreatment chain of 'pickle first, then long anneal', resisting both acid attack and 800℃ × 10h sustained heat; one continuous batch trace from pretreatment to heat treatment.",
+   "features": [
+    "Resists H₂SO₄/HCl pickling",
+    "Resists 800℃ × 10h long anneal",
+    "Room-temp application, follows throughout",
+    "Dual chemical + heat stability",
+    "Thermal transfer, print won't fade"
+   ],
+   "benefits": [
+    "Keeps the mark through the most batch-losing step",
+    "Continuous trace pickling→anneal→finishing",
+    "Fewer mixed wire coils",
+    "Scan at furnace exit, data feedback"
+   ],
+   "spec": [
+    "Category: process/ultra-high-temp (acid-resistant)",
+    "Temp: 800℃ long anneal",
+    "Chemical: H₂SO₄/HCl pickling",
+    "Object: steel wire/bar coil",
+    "Apply: room temperature",
+    "Compliance: REACH / RoHS"
+   ],
+   "application": "Room-temp labeling of coil → pickling bath (sulfuric/hydrochloric) → anneal furnace 800℃×10h → scan at exit → finishing & warehousing."
+  },
+  {
+   "name": "HP-L90",
+   "slug": "hp-l90",
+   "cases": "S-5",
+   "overview": "Designed for extreme forging heat treatment, withstanding 1100℃ × 18h prolonged exposure so high-value forgings keep a unique readable mark after hot forging and long annealing.",
+   "features": [
+    "Resists 1100℃-class extreme heat",
+    "Resists 18h prolonged exposure",
+    "Survives forging + annealing",
+    "Thermal transfer, no fade at heat"
+   ],
+   "benefits": [
+    "No batch loss in extreme heat treatment",
+    "Material/heat batch traceable",
+    "Fewer mixed high-value forgings",
+    "Lower quality claims"
+   ],
+   "spec": [
+    "Category: ultra-high-temp label",
+    "Temp: 1100℃-class prolonged",
+    "Exposure: 18h+",
+    "Object: forged steel",
+    "Print: thermal transfer",
+    "Compliance: REACH / RoHS"
+   ],
+   "application": "Label forging → 800℃ hot forging → 1100℃×18h anneal → scan at exit → downstream traceability."
+  },
+  {
+   "name": "HP-350N / 380N+ / 360",
+   "slug": "hp-350n",
+   "cases": "A-2",
+   "overview": "For aluminum billet homogenizing — applied at r.t to 400℃, then through a ~550℃ anneal for several hours. Three grades cover different application-temperature bands and anneal intensities.",
+   "features": [
+    "Covers r.t~400℃ application band",
+    "Resists 550℃ homogenizing anneal",
+    "Three grades for precise match",
+    "Thermal transfer"
+   ],
+   "benefits": [
+    "No alloy-grade mix through homogenizing",
+    "Heat batch traceable",
+    "Fewer wrong-material extrusions",
+    "Flexible 3-grade selection"
+   ],
+   "spec": [
+    "Category: process label",
+    "Apply band: r.t~400℃",
+    "Anneal: 550℃",
+    "Object: aluminum billet",
+    "Print: thermal transfer",
+    "Compliance: REACH / RoHS",
+    "(Grade differences per YS tech advice)"
+   ],
+   "application": "Billet labeling (r.t~400℃) → 550℃ homogenizing furnace → scan at exit → traceability before cutting/extrusion."
+  },
+  {
+   "name": "HP-T42 + HP-CBR Tag",
+   "slug": "hp-t42-hp-cbr-tag",
+   "cases": "A-3",
+   "overview": "For repeatedly furnaced aluminum heat-treatment jigs, a label + mechanically fixed tag combo that stays readable through 500℃ × dozens-to-hundreds of thermal cycles.",
+   "features": [
+    "Resists 500℃ multiple cycles",
+    "Mechanically fixed (wired/riveted), no fall-off",
+    "Long-term repeat scanning",
+    "Flexible label + tag combo"
+   ],
+   "benefits": [
+    "Jig cycle count trackable",
+    "End-of-life alerts, less over-use",
+    "Clear jig identity & station",
+    "Reusable assets not lost"
+   ],
+   "spec": [
+    "HP-T42: cycle label, 500℃ multi-cycle, applied",
+    "HP-CBR Tag: mechanically fixed, high-temp multi-cycle, wired/riveted",
+    "Object: heat-treat jigs",
+    "Compliance: REACH / RoHS"
+   ],
+   "application": "Tag/label the jig → 500℃ heat treatment × cycles → scan each furnace pass → cumulative cycle count & life management."
+  },
+  {
+   "name": "HP-CBR CX2 / HB",
+   "slug": "hp-cbr-cx2",
+   "cases": "C-1 / C-2",
+   "overview": "For extreme kiln firing above 1000℃ exceeding 10h, mechanically fixed to alumina/glass/carbon jigs or crucibles, keeping a readable barcode after repeated firing.",
+   "features": [
+    "Resists 1000℃+ prolonged firing",
+    "Readable through repeated cycles",
+    "Mechanically fixed, secure",
+    "CX2/HB two types for different jigs"
+   ],
+   "benefits": [
+    "No mark loss in extreme kiln firing",
+    "Jig cycle count & life management",
+    "Clear kiln position & identity",
+    "High-value kiln-ware trace"
+   ],
+   "spec": [
+    "Category: extreme-high-temp tag",
+    "Temp: 1000℃+ prolonged",
+    "Fixing: mechanical",
+    "Object: alumina/glass/carbon jigs, crucibles",
+    "Compliance: REACH / RoHS"
+   ],
+   "application": "Fix CBR tag to jig/crucible (use HP-900/901 for direct body marking) → 1000℃×10h+ firing × cycles → scan at kiln exit → reusable asset management."
+  },
+  {
+   "name": "Green-body fired-in mark [model TBC]",
+   "slug": "green-body-fired-in-mark",
+   "cases": "Ceramics supplement (not a website case)",
+   "overview": "Applied at the green-body stage (water-laden, soft, deformable); it accompanies the body through drying → bisque/binder burn-out → firing at ~1250–1300℃. Inorganic matter fuses into the glaze, permanently firing the barcode into the ceramic — one-time, indelible, no re-labeling.",
+   "features": [
+    "Applies to wet, porous soft surface",
+    "Shrinkage matched to body drying/firing",
+    "Fires with the body to ~1250–1300℃",
+    "Inorganic matter fuses into glaze, permanent",
+    "Adapts to oxidizing/reducing atmosphere"
+   ],
+   "benefits": [
+    "Single identity from green body to finished ware, no re-labeling",
+    "Permanent & indelible, anti-mix/anti-counterfeit",
+    "Full batch/kiln-position traceability",
+    "Lifetime identity for high-value ware"
+   ],
+   "spec": [
+    "Category: one-time fired-in permanent label",
+    "Apply stage: green body",
+    "Max firing: ~1250–1300℃ (TBC by YS tech)",
+    "Bond: inorganic matter fused into glaze",
+    "Atmosphere: oxidizing/reducing (TBC)",
+    "Compliance: REACH / RoHS"
+   ],
+   "application": "Green-body labeling → drying → bisque/binder burn-out → firing 1250–1300℃ → barcode permanently fired into glaze → scan trace.\n★ Four challenge gates: ① wet-surface bonding ② synchronized drying shrinkage ③ inorganic matter stays put through burn-out ④ fuses into glaze without distortion."
+  }
+ ]
+}

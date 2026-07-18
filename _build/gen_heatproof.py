@@ -433,7 +433,9 @@ NAV_ZH = {"Home":"首页","Products":"产品","Application Notes":"应用笔记"
 PROD_AXES = [
  ("app","By Industry","按行业",[
    ("Circuit Board & PCB Labels","电路板与 PCB 标签","/products/circuit-board-labels/"),
-   ("Metals & Ceramics","金属与陶瓷","/industries/steel/"),
+   ("Steel · HEATPROOF™","钢铁 · HEATPROOF™","/industries/steel/"),
+   ("Aluminum · HEATPROOF™","铝 · HEATPROOF™","/industries/aluminum/"),
+   ("Ceramics · HEATPROOF™","陶瓷 · HEATPROOF™","/industries/ceramics/"),
    ("Medical & Laboratory","医疗与实验室","/industries/healthcare-life-sciences/"),
    ("Automotive & Tire","汽车与轮胎","/industries/automotive-label-materials/"),
    ("Wire & Cable","电线与电缆","/industries/wire-cable/"),
