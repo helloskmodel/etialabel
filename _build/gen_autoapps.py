@@ -6,6 +6,7 @@ shown as FLEXcon tabs; each tab has a single Introduction box + product cards be
 Product detail landing pages are future work. Content: _build/data/automotive_apps.json.
 Runs AFTER gen_ind_landing so it owns /industries/automotive-label-materials/."""
 import os, json
+from urllib.parse import quote
 import gen_heatproof as hp
 from gen_heatproof import esc, L, page, write, LANGS
 
@@ -54,6 +55,9 @@ CSS = """<style>
 .avplc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff;text-decoration:none;transition:.16s}
 .avplc:hover{border-color:var(--blue);box-shadow:0 12px 30px rgba(20,40,90,.12);transform:translateY(-3px)}
 .avplc .t{font-weight:800;color:var(--blue-deep);font-size:16px;line-height:1.3}
+.avplc .m{font-size:13px;font-weight:700;color:var(--blue);margin-top:7px}
+.avplc .sp{font-size:12.5px;color:var(--ink);margin-top:7px;line-height:1.4}
+.avplc .sp span{display:block;color:var(--faint);font-weight:800;text-transform:uppercase;font-size:10px;letter-spacing:.04em;margin-bottom:1px}
 .avplc .go{font-size:12.5px;font-weight:700;color:var(--green-d);margin-top:12px}
 @media(max-width:820px){.avplg{grid-template-columns:1fr}}
 </style>""".replace("__BANNER__", BANNER)
@@ -74,21 +78,24 @@ def build_sector(lang):
     for i, a in enumerate(APPS):
         tabs += '<button class="avtab%s" onclick="avTab(this,%d)">%s</button>' % (
             " on" if i == 0 else "", i, esc(a["name"]))
-        # single Introduction box (purpose + challenges woven in)
-        intro = esc(a["purpose"])
+        # single Introduction box (overview/purpose + challenges woven in)
+        intro = esc(a.get("overview") or a["purpose"])
         if intro and intro[-1] not in ".。": intro += "."
         if a.get("challenges"):
             intro += _t(lang, " Key challenges: ", " 主要挑战：") + esc(a["challenges"]) + "."
         area = ('<span class="area">%s</span>' % esc(a["area"])) if a.get("area") else ""
         box = ('<div class="avbox"><div class="h"><span class="i">%s</span><span class="e">%s</span></div>'
                '%s<p>%s</p></div>') % (IC_INTRO, U("intro"), area, intro)
-        # product cards (products list if present, else the recommended solution)
-        items = a["products"] if a.get("products") else ([a["solution"]] if a.get("solution") else [])
+        # product card — material type + specific 3M product + facestock + adhesive
         cards = ""
-        for it in items:
-            url = L(lang, "/contact/?product=%s&industry=automotive" % it.replace(" ", "%20"))
-            cards += ('<a class="avplc" href="%s"><div class="t">%s</div><div class="go">%s</div></a>') % (
-                url, esc(it), U("soon"))
+        if a.get("product"):
+            url = L(lang, "/contact/?product=%s&industry=automotive" % quote(a["product"], safe=""))
+            lines = ""
+            if a.get("tds_3m"): lines += '<div class="m">%s</div>' % esc(a["tds_3m"])
+            if a.get("facestock"): lines += '<div class="sp"><span>%s</span>%s</div>' % (H("Facestock", "面材"), esc(a["facestock"]))
+            if a.get("adhesive"): lines += '<div class="sp"><span>%s</span>%s</div>' % (H("Adhesive", "胶粘剂"), esc(a["adhesive"]))
+            cards = ('<a class="avplc" href="%s"><div class="t">%s</div>%s<div class="go">%s</div></a>') % (
+                url, esc(a["product"]), lines, U("soon"))
         plw = ('<div class="avplw"><div class="avplh">%s</div><div class="avplg">%s</div></div>' % (
             U("products"), cards)) if cards else ""
         panels += '<div class="avpanel" data-i="%d" style="display:%s">%s%s</div>' % (

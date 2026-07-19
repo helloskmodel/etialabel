@@ -4,154 +4,218 @@
   {
    "area": "Engine Compartment",
    "name": "Radiator Warning Labels",
+   "overview": "",
    "purpose": "Safety warning and operating information",
    "challenges": "High temperature, coolant, moisture, engine chemicals",
    "solution": "High temperature resistant label materials",
-   "products": []
+   "product": "Polyester Label Material",
+   "tds_3m": "Polyester Label Material 7871/7871V",
+   "facestock": "Polyester white-gloss",
+   "adhesive": "++/++++ (Balanced medium-high tack acrylic)"
   },
   {
    "area": "Engine Compartment",
    "name": "Battery Labels",
+   "overview": "",
    "purpose": "Battery identification, warning and service information",
    "challenges": "Heat, chemicals, durability",
    "solution": "Durable polyester labels with strong adhesion",
-   "products": []
+   "product": "Polyester Label Material",
+   "tds_3m": "3M™ Polyester Label Material 7868/7868V",
+   "facestock": "Polyester white-gloss",
+   "adhesive": "++/++++ (Balanced medium-high tack acrylic)"
   },
   {
    "area": "Engine Compartment",
    "name": "Power Steering / Fluid Labels",
+   "overview": "",
    "purpose": "Fluid identification and maintenance information",
    "challenges": "Oil contamination, chemical exposure, adhesion on difficult surfaces",
    "solution": "Oil-resistant adhesive label materials",
-   "products": []
+   "product": "Polyester Label Material",
+   "tds_3m": "3M™ Polyester Label Material 7879",
+   "facestock": "Polyester silver-matte",
+   "adhesive": "+++ (Ultra-high tack oil-resistant acrylic)"
   },
   {
    "area": "Door Jamb",
    "name": "VIN Labels",
+   "overview": "",
    "purpose": "Vehicle identification, traceability and regulatory information",
    "challenges": "Long-term durability, abrasion, chemicals, tamper resistance",
    "solution": "Laser markable durable labels",
-   "products": []
+   "product": "Laser Markable Label Material",
+   "tds_3m": "3M™ Laser Markable Label Material 7847",
+   "facestock": "Acrylate black-matte/white",
+   "adhesive": "++/++++ (High-strength chemical-resistant acrylic)"
   },
   {
    "area": "Door Jamb",
    "name": "Tire Pressure Labels",
+   "overview": "",
    "purpose": "Tire pressure and vehicle information",
    "challenges": "Long-term readability, environmental exposure",
    "solution": "Durable polyester labels",
-   "products": []
+   "product": "Polyester Label Material",
+   "tds_3m": "3M™ Polyester Label Material 7868/7868V",
+   "facestock": "Polyester white-gloss",
+   "adhesive": "++/++++ (Balanced medium-high tack acrylic)"
   },
   {
    "area": "Battery & Electrical",
    "name": "Battery Identification Labels",
+   "overview": "",
    "purpose": "Battery information, safety warning and service identification",
    "challenges": "Heat cycling, chemicals, high durability requirement",
    "solution": "Chemical-resistant and durable label materials",
-   "products": []
+   "product": "Polyester Label Material",
+   "tds_3m": "3M™ Polyester Label Material 7868/7868V",
+   "facestock": "Polyester white-gloss",
+   "adhesive": "++/++++ (Balanced medium-high tack acrylic)"
   },
   {
    "area": "Battery & Electrical",
    "name": "Electrical Component Labels",
+   "overview": "",
    "purpose": "Component identification and traceability",
    "challenges": "Small surfaces, durability, readability",
    "solution": "High-performance identification labels",
-   "products": []
+   "product": "High Temperature Resistant Label Material",
+   "tds_3m": "3M™ High Temperature Resistant Label Material 3921",
+   "facestock": "Heat-resistant acrylate film",
+   "adhesive": "++ (Standard high-temperature acrylic)"
   },
   {
    "area": "Fuel & Charging",
    "name": "Fuel Instruction Labels",
+   "overview": "",
    "purpose": "Fuel operation instructions and warnings",
    "challenges": "Chemical exposure, moisture, curved surfaces",
    "solution": "Durable polyester labels for shaped surfaces",
-   "products": []
+   "product": "Polyester Label Material",
+   "tds_3m": "3M™ Polyester Label Material 7247",
+   "facestock": "Polyester silver-matte",
+   "adhesive": "+++ (High-tack conformable acrylic)"
   },
   {
    "area": "Fuel & Charging",
    "name": "Charging Instruction Labels",
+   "overview": "",
    "purpose": "EV charging operation and safety information",
    "challenges": "Outdoor exposure, chemicals, long-term readability",
    "solution": "Durable EV identification labels",
-   "products": []
+   "product": "Polyester Label Material",
+   "tds_3m": "3M™ Polyester Label Material 7871/7871V",
+   "facestock": "Polyester white-gloss",
+   "adhesive": "++/++++ (Balanced medium-high tack acrylic)"
   },
   {
    "area": "Exterior",
    "name": "Exterior Identification Labels",
+   "overview": "",
    "purpose": "Vehicle exterior component identification",
    "challenges": "UV, weather, abrasion, outdoor durability",
    "solution": "Weather-resistant label materials",
-   "products": []
+   "product": "Polyester Label Material",
+   "tds_3m": "3M™ Polyester Label Material 7871/7871V",
+   "facestock": "Polyester white-gloss",
+   "adhesive": "++/++++ (Balanced medium-high tack acrylic)"
   },
   {
    "area": "Exterior",
    "name": "Security Labels",
+   "overview": "",
    "purpose": "Anti-tamper and authentication",
    "challenges": "Removal resistance, security requirements",
    "solution": "Tamper evident / destructible labels",
-   "products": []
+   "product": "Tamper Evident Label Material /Destructible Label Material",
+   "tds_3m": "3M™ Tamper Evident Label Material 7380 / 3M™ Destructible Label Material 3812",
+   "facestock": "Polyester white-matte / Polyurethane white-matte",
+   "adhesive": "++/++++ (High-strength security acrylic)"
   },
   {
    "area": "Interior",
    "name": "Airbag Labels",
+   "overview": "",
    "purpose": "Safety identification and warning information",
    "challenges": "Heat aging, appearance, adhesion",
    "solution": "Durable interior label materials",
-   "products": []
+   "product": "Polyester Label Material",
+   "tds_3m": "3M™ Polyester Label Material OFM03402",
+   "facestock": "Polyester white-gloss",
+   "adhesive": "++ (Standard interior acrylic)"
   },
   {
    "area": "Interior",
    "name": "Seat Belt Labels",
+   "overview": "",
    "purpose": "Safety and compliance information",
    "challenges": "Textile surface, durability",
    "solution": "Specialty adhesive solutions",
-   "products": []
+   "product": "Polyolefin Durable Label Material",
+   "tds_3m": "3M™ Polyolefin Durable Label Material FP0354EG",
+   "facestock": "Polyolefin white-matte",
+   "adhesive": "++ (Low-modulus flexible acrylic)"
   },
   {
    "area": "Interior",
    "name": "Sun Visor Labels",
+   "overview": "",
    "purpose": "Warning and instruction information",
    "challenges": "Appearance, adhesion, aging",
    "solution": "Interior durable labels",
-   "products": []
+   "product": "Polyester Label Material",
+   "tds_3m": "3M™ Polyester Label Material 7331(V)",
+   "facestock": "Polyester white-gloss",
+   "adhesive": "++ (Standard interior acrylic)"
   },
   {
    "area": "Interior",
    "name": "Carpet Labels",
+   "overview": "",
    "purpose": "Component identification",
    "challenges": "Textile adhesion",
    "solution": "Flexible adhesive solutions",
-   "products": []
+   "product": "Polyolefin Durable Label Material",
+   "tds_3m": "3M™ Polyolefin Durable Label Material FP0354EG",
+   "facestock": "Polyolefin white-matte",
+   "adhesive": "++ (Conformable textile acrylic)"
   },
   {
    "area": "Flexible Components",
    "name": "Flexible Component Labels",
+   "overview": "",
    "purpose": "Identification of flexible automotive parts",
    "challenges": "Flexing, bending, surface variation",
    "solution": "Flexible label materials",
-   "products": []
+   "product": "Polyolefin Label Material",
+   "tds_3m": "3M™ Polyolefin Label Material 76716NA",
+   "facestock": "Polyolefin white-matte",
+   "adhesive": "++ (Low-modulus flexible acrylic)"
   },
   {
    "area": "Rubber Components",
    "name": "Tire Vulcanization Labels",
-   "purpose": "Tire production tracking and identification during vulcanization",
-   "challenges": "High temperature, rubber surface, chemicals, pressure",
-   "solution": "Rubber surface labeling solutions",
-   "products": []
+   "overview": "Pre-cure tire bead labels applied to green tires or calendered rubber at the tire building machine, carrying scannable barcode identification through the full high-pressure vulcanization process for work-in-progress tracking, compatible with all tire types including passenger cars, trucks and commercial vehicles.",
+   "purpose": "WIP production tracking through tire building and curing, batch and mold traceability, maintain readable identification through vulcanization heat, pressure and chemical exposure.",
+   "challenges": "Extreme vulcanization high temperature and pressure, tacky unstable green rubber surfaces, rubber compound variation, vulcanizing chemical exposure, mechanical handling during building and curing, no lifting or edge failure after vulcanization, maintain barcode scannability post-cure.",
+   "solution": "Heat-stabilized pre-cure label constructions validated for vulcanization conditions, high-temperature resistant acrylic adhesive, compatible with manual or automated application on green tires and calendered rubber.",
+   "product": "",
+   "tds_3m": "",
+   "facestock": "",
+   "adhesive": ""
   },
   {
    "area": "Rubber Components",
-   "name": "Belt Vulcanization Labels",
-   "purpose": "Belt manufacturing identification and traceability",
-   "challenges": "Heat, rubber surface, mechanical stress",
-   "solution": "Vulcanization-resistant labels",
-   "products": []
-  },
-  {
-   "area": "Rubber Components",
-   "name": "Air Spring Labels",
-   "purpose": "Air spring production identification",
-   "challenges": "Rubber surface, durability, long-term tracking",
-   "solution": "Rubber component labeling solutions",
-   "products": []
+   "name": "Post-Cure Tire Bead Labels",
+   "overview": "Post-cure tire bead labels applied to finished cured tires after vulcanization, supporting barcode identification during final inspection, rework, warehouse storage, distribution and after-sales traceability for all tire types including passenger cars, trucks and commercial vehicles.",
+   "purpose": "Finished tire identification post-inspection, rework marking, logistics and warehouse tracking, full lifecycle tire traceability through distribution and service.",
+   "challenges": "Low surface energy cured rubber surfaces, abrasion during tire handling and transport, long-term outdoor weather and road chemical exposure, reliable barcode scannability through storage and distribution.",
+   "solution": "Special engineered high-tack adhesive formulated for cured rubber, durable abrasion-resistant label construction, weather and chemical resistant for post-vulcanization application.",
+   "product": "Post-cure cured tire high-tack bead labels",
+   "tds_3m": "",
+   "facestock": "Polyester white-gloss",
+   "adhesive": "+++ (Ultra-high tack specialized acrylic for low-surface-energy cured rubber)"
   }
  ]
 }
