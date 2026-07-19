@@ -92,9 +92,9 @@
    "temp": "500℃×several h×cycles",
    "process": "Jigs used for solution/aging heat treatment of aluminum parts undergo about 500℃ × several hours × many cycles. The label/tag is fixed to the jig for the long term.",
    "challenge": "Jigs re-enter the furnace repeatedly and must stay readable through dozens to hundreds of thermal cycles; single-use labels can't cope.",
-   "solution": "HP-T42 + HP-CBR Tag — a reusable-cycle label plus a mechanically fixed tag, for tooling asset management and cycle counting.",
-   "product": "HP-T42 / CBR Tag",
-   "recommended": "HP-T42 / CBR Tag"
+   "solution": "HP-L90 — an extreme heat-treatment tag for tooling and jig asset management, staying readable through repeated thermal cycles and cycle counting.",
+   "product": "HP-L90",
+   "recommended": "HP-L90"
   },
   {
    "code": "C-1",
@@ -213,33 +213,6 @@
    "application": "Room-temp labeling of coil → pickling bath (sulfuric/hydrochloric) → anneal furnace 800℃×10h → scan at exit → finishing & warehousing."
   },
   {
-   "name": "HP-L90",
-   "slug": "hp-l90",
-   "cases": "S-5",
-   "overview": "Designed for extreme forging heat treatment, withstanding 1100℃ × 18h prolonged exposure so high-value forgings keep a unique readable mark after hot forging and long annealing.",
-   "features": [
-    "Resists 1100℃-class extreme heat",
-    "Resists 18h prolonged exposure",
-    "Survives forging + annealing",
-    "Thermal transfer, no fade at heat"
-   ],
-   "benefits": [
-    "No batch loss in extreme heat treatment",
-    "Material/heat batch traceable",
-    "Fewer mixed high-value forgings",
-    "Lower quality claims"
-   ],
-   "spec": [
-    "Category: ultra-high-temp label",
-    "Temp: 1100℃-class prolonged",
-    "Exposure: 18h+",
-    "Object: forged steel",
-    "Print: thermal transfer",
-    "Compliance: REACH / RoHS"
-   ],
-   "application": "Label forging → 800℃ hot forging → 1100℃×18h anneal → scan at exit → downstream traceability."
-  },
-  {
    "name": "HP-350N / 380N+ / 360",
    "slug": "hp-350n",
    "cases": "A-2",
@@ -266,47 +239,6 @@
     "(Grade differences per YS tech advice)"
    ],
    "application": "Billet labeling (r.t~400℃) → 550℃ homogenizing furnace → scan at exit → traceability before cutting/extrusion."
-  },
-  {
-   "name": "HP-T42 + HP-CBR Tag",
-   "slug": "hp-t42-hp-cbr-tag",
-   "cases": "A-3",
-   "category": "Tags for Heat Treatment / Process Management",
-   "app_temp": "room temperature ～1,200℃",
-   "max_temp": "1,200℃",
-   "overview": "Heat-resistant tags can be attached to a variety of metal products including hot steel, immediately after casting. Tags can also be designed to survive reheat cycles, pickling baths, acid baths, or galvanizing, thus eliminating the need to re-identify products after these processes.",
-   "features": [
-    "Maximum heat resistance up to 1200℃",
-    "Long-term durability after attachment",
-    "Print and cut in a thermal transfer printer"
-   ],
-   "installation": [
-    [
-     "Steel",
-     "Slab, Bloom, Billet, Wire"
-    ],
-    [
-     "Automotive parts",
-     "Heat treatment process management"
-    ],
-    [
-     "Others",
-     "Jig management for heat treatment process"
-    ]
-   ],
-   "details": [
-    "HEATPROOF tags can be attached directly onto hot steel and aluminum immediately after casting, to track products through reheat processes such as annealing or homogenizing.",
-    "YStech works with customers to implement identification solutions that meet each company's individual system requirements."
-   ],
-   "spec": [
-    "Application temperature: room temperature to 1,200℃",
-    "Maximum heat resistance: 1,200℃",
-    "Type: heat-resistant tag (mechanically attached)",
-    "Durability: survives reheat cycles, pickling / acid baths, galvanizing",
-    "Printing: thermal transfer, print & cut"
-   ],
-   "benefits": [],
-   "application": ""
   },
   {
    "name": "HP-CBR CX2",
@@ -389,6 +321,47 @@
     "Compliance: REACH / RoHS"
    ],
    "application": "Green-body labeling → drying → bisque/binder burn-out → firing 1250–1300℃ → barcode permanently fired into glaze → scan trace.\n★ Four challenge gates: ① wet-surface bonding ② synchronized drying shrinkage ③ inorganic matter stays put through burn-out ④ fuses into glaze without distortion."
+  },
+  {
+   "name": "HP-L90",
+   "slug": "hp-l90",
+   "cases": "S-5 / A-3",
+   "category": "Tags for Heat Treatment / Process Management",
+   "app_temp": "room temperature ～1,200℃",
+   "max_temp": "1,200℃",
+   "overview": "Heat-resistant tags can be attached to a variety of metal products including hot steel, immediately after casting. Tags can also be designed to survive reheat cycles, pickling baths, acid baths, or galvanizing, thus eliminating the need to re-identify products after these processes.",
+   "features": [
+    "Maximum heat resistance up to 1200℃",
+    "Long-term durability after attachment",
+    "Print and cut in a thermal transfer printer"
+   ],
+   "installation": [
+    [
+     "Steel",
+     "Slab, Bloom, Billet, Wire"
+    ],
+    [
+     "Automotive parts",
+     "Heat treatment process management"
+    ],
+    [
+     "Others",
+     "Jig management for heat treatment process"
+    ]
+   ],
+   "details": [
+    "HEATPROOF tags can be attached directly onto hot steel and aluminum immediately after casting, to track products through reheat processes such as annealing or homogenizing.",
+    "YStech works with customers to implement identification solutions that meet each company's individual system requirements."
+   ],
+   "spec": [
+    "Application temperature: room temperature to 1,200℃",
+    "Maximum heat resistance: 1,200℃",
+    "Type: heat-resistant tag (mechanically attached)",
+    "Durability: survives reheat cycles, pickling / acid baths, galvanizing",
+    "Printing: thermal transfer, print & cut"
+   ],
+   "benefits": [],
+   "application": ""
   }
  ]
 }
