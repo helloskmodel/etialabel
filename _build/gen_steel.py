@@ -51,7 +51,7 @@ CASE_TAB = {
 CASE_PROD = {
  "S-1": ("HP-900", "hp-900"), "S-2": ("HP-600", "hp-600"), "S-3": ("HP-900", "hp-900"),
  "S-4": ("HP-M83", "hp-m83"), "S-5": ("HP-L90", "hp-l90"), "A-1": ("HP-600", "hp-600"),
- "A-2": ("HP-350N / 380N+ / 360", "hp-350n"), "A-3": ("HP-L90", "hp-l90"),
+ "A-2": ("HP-350N / 380N+ / 360", "hp-350n"), "A-3": ("HP-T42 + HP-CBR Tag", "hp-cbr-tag"),
  "C-1": ("HP-CBR CX2 / HB", "hp-cbr-cx2"), "C-2": ("HP-CBR CX2 / HB", "hp-cbr-cx2"),
 }
 PROD_URL = "/products/heatproof/%s/"
@@ -106,8 +106,8 @@ CSS = """<style>
 @media(max-width:820px){.hp3,.flist,.sgrid,.pov{grid-template-columns:1fr}}
 </style>""".replace("__BANNER__", BANNER)
 
-UI = {"process": ("Process", "工艺"), "challenge": ("Challenge", "挑战"),
-      "solution": ("Recommended Solution", "推荐方案"), "lines": ("Product Lines", "产品系列"),
+UI = {"process": ("Introduction", "介绍"), "challenge": ("Challenge", "挑战"),
+      "solution": ("Solution", "方案"), "lines": ("Product Lines", "产品系列"),
       "browse": ("Browse by Application", "按应用浏览"), "view": ("View product →", "查看产品 →"),
       "overview": ("Overview", "概述"), "features": ("Features", "特性"),
       "benefits": ("Benefits", "收益"), "spec": ("Specification", "规格"),

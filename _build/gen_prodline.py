@@ -360,9 +360,9 @@ def build_pcb_sector(lang):
                 '<div class="pcbox"><div class="pchead"><div class="pcbi" style="color:#c2621f">%s</div><div class="pce" style="color:#b4531a">%s</div></div><p>%s</p></div>'
                 '<div class="pcbox" style="background:#f4f9f2"><div class="pchead"><div class="pcbi" style="color:var(--green-d)">%s</div><div class="pce" style="color:var(--green-d)">%s</div></div><p>%s</p>%s</div>'
                 '</div>') % (
-            PROC_ICONS[0], H("Process", "工艺"), H(*pr),
+            PROC_ICONS[0], H("Introduction", "介绍"), H(*pr),
             PROC_ICONS[1], H("Challenge", "挑战"), H(*ch),
-            PROC_ICONS[2], H("Recommended Material", "推荐材料"), H(*rc),
+            PROC_ICONS[2], H("Solution", "方案"), H(*rc),
             ('<p class="pcdraft">%s</p>' % H("Draft — awaiting final copy.", "草拟 —— 待最终文案。") if draft else ""))
         cards = ""
         for name, (de, dz), url, grad, img in PLINES:
@@ -382,7 +382,7 @@ def build_pcb_sector(lang):
     module = ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="pcmod">'
               '<div class="pctabsrow"><button class="pcarrow" onclick="pcScroll(this,-1)">&lsaquo;</button>'
               '<div class="pctabs">%s</div><button class="pcarrow" onclick="pcScroll(this,1)">&rsaquo;</button></div>'
-              '%s</div></div></section>%s') % (H("Browse by Process", "按工艺浏览"), tabs, panels, js)
+              '%s</div></div></section>%s') % (H("Browse by Application", "按应用浏览"), tabs, panels, js)
     body = SECTOR_CSS + intro + module + ('<div class="wrap">%s</div>' % hp.cta2(lang, "products"))
     path = "/products/circuit-board-labels/"
     crumb = [("Home" if not zh else "首页", "/"), ("Products" if not zh else "产品", "/products/"),

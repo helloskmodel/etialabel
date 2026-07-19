@@ -92,9 +92,9 @@
    "temp": "500℃×several h×cycles",
    "process": "Jigs used for solution/aging heat treatment of aluminum parts undergo about 500℃ × several hours × many cycles. The label/tag is fixed to the jig for the long term.",
    "challenge": "Jigs re-enter the furnace repeatedly and must stay readable through dozens to hundreds of thermal cycles; single-use labels can't cope.",
-   "solution": "HP-L90 — an extreme heat-treatment tag for tooling and jig asset management, staying readable through repeated thermal cycles and cycle counting.",
-   "product": "HP-L90",
-   "recommended": "HP-L90"
+   "solution": "HP-T42 + HP-CBR Tag — a reusable-cycle label plus a mechanically fixed tag, for tooling asset management and cycle counting.",
+   "product": "HP-T42 / HP-CBR Tag",
+   "recommended": "HP-T42 + HP-CBR Tag"
   },
   {
    "code": "C-1",
@@ -362,6 +362,28 @@
    ],
    "benefits": [],
    "application": ""
+  },
+  {
+   "name": "HP-CBR Tag",
+   "slug": "hp-cbr-tag",
+   "cases": "A-3",
+   "category": "Tags for Heat Treatment / Process Management",
+   "max_temp": "1,000℃",
+   "overview": "A coated steel heat-resistant tag with chemical and scratch resistance, mechanically fixed to reusable tooling and jigs for identification through repeated heat-treatment cycles.",
+   "features": [
+    "Coated steel tag",
+    "Chemical and scratch resistance",
+    "For reusable tooling and jig identification through repeated heat cycles"
+   ],
+   "spec": [
+    "Maximum heat resistance: approx. 1,000℃",
+    "Type: coated steel tag (mechanically fixed)",
+    "Resistance: chemical and scratch",
+    "Category: tags for heat treatment / process management"
+   ],
+   "benefits": [],
+   "application": "",
+   "installation": []
   }
  ]
 }
