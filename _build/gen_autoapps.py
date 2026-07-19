@@ -23,7 +23,7 @@ PROP_ZH = {
  "Abrasion-Resistant": "耐磨", "Chemical-Resistant": "耐化学", "Corrosion-Resistant": "耐腐蚀",
  "Heat-Resistant": "耐热", "High-Temperature-Resistant": "耐高温", "Humidity-Resistant": "耐潮湿",
  "Oil-Resistant": "耐油污", "Temperature-Resistant": "耐温变", "UV-Resistant": "耐紫外",
- "Water-Resistant": "耐水", "Weather-Resistant": "耐候", "Laser-Markable": "激光打标",
+ "Water-Resistant": "耐水", "Waterproof": "防水", "Weather-Resistant": "耐候", "Laser-Markable": "激光打标",
  "Tamper-Evident": "防拆", "Flexible": "柔性",
 }
 # each property (Solution) paired with the challenge (stressor) it answers — one
@@ -33,7 +33,8 @@ PROP_CHALLENGE = {
  "Chemical-Resistant": ("Chemicals", "化学品"), "Oil-Resistant": ("Oil / Fluids", "油污"),
  "Humidity-Resistant": ("Moisture", "潮湿"), "UV-Resistant": ("UV Exposure", "紫外线"),
  "Weather-Resistant": ("Weather / Outdoor", "户外候变"), "Abrasion-Resistant": ("Abrasion", "磨损"),
- "Water-Resistant": ("Water", "水"), "Corrosion-Resistant": ("Corrosion", "腐蚀"),
+ "Water-Resistant": ("Water", "水"), "Waterproof": ("Water / Rain Exposure", "淋雨/浸水"),
+ "Corrosion-Resistant": ("Corrosion", "腐蚀"),
  "Temperature-Resistant": ("Temperature Cycling", "温度变化"), "Tamper-Evident": ("Tamper Risk", "防拆需求"),
  "Laser-Markable": ("Permanent Marking", "永久标识"), "Flexible": ("Flexing / Bending", "弯曲变形"),
 }

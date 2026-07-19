@@ -82,6 +82,7 @@
    "adhesive": "++/++++ (Balanced medium-high tack acrylic)",
    "props": [
     "Weather-Resistant",
+    "Waterproof",
     "Abrasion-Resistant"
    ]
   },
@@ -146,6 +147,7 @@
    "adhesive": "++/++++ (Balanced medium-high tack acrylic)",
    "props": [
     "Weather-Resistant",
+    "Waterproof",
     "UV-Resistant",
     "Chemical-Resistant"
    ]
@@ -164,6 +166,7 @@
    "props": [
     "UV-Resistant",
     "Weather-Resistant",
+    "Waterproof",
     "Abrasion-Resistant"
    ]
   },
@@ -291,6 +294,7 @@
    "props": [
     "Abrasion-Resistant",
     "Weather-Resistant",
+    "Waterproof",
     "Chemical-Resistant"
    ]
   }
