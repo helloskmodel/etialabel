@@ -19,6 +19,8 @@ def _t(lang, en, zh): return zh if lang == "zh" else en
 
 def _svg(p): return ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">%s</svg>' % p)
 IC_INTRO = _svg('<circle cx="12" cy="12" r="9"/><path d="M12 16v-5M12 8h.01"/>')
+IC_CHAL = _svg('<path d="M12 3 2 20h20L12 3z"/><path d="M12 10v5M12 18h.01"/>')
+IC_SOL  = _svg('<path d="M12 3 4 6.5v5c0 4.6 3.2 7.7 8 9.5 4.8-1.8 8-4.9 8-9.5v-5L12 3z"/><path d="m9 12 2 2 4-4"/>')
 
 UI = {
  "browse": ("Browse by Application", "按应用浏览"),
@@ -45,14 +47,13 @@ CSS = """<style>
 .avtab.on{color:var(--blue-deep);border-bottom-color:var(--blue)}
 .avarrow{background:none;border:none;font-size:20px;color:var(--mut);cursor:pointer;padding:4px 6px}
 .avpanel{padding-top:24px}
-.avbox{border:1px solid var(--line);border-radius:12px;padding:20px 22px;background:#fff;max-width:none}
+.av3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:start}
+.avbox{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
 .avbox .h{display:flex;align-items:center;gap:12px;margin-bottom:10px}
-.avbox .h .i{width:28px;height:28px;flex:0 0 auto;color:var(--blue)}.avbox .h .i svg{width:28px;height:28px}
-.avbox .h .e{font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--blue)}
-.avbox .area{display:inline-block;background:var(--tint-blue);color:var(--blue-deep);font-size:11.5px;font-weight:700;border-radius:20px;padding:4px 12px;margin-bottom:12px}
-.avbox p{font-size:15px;color:var(--ink);line-height:1.65}
-.avbox .avmeta{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;color:var(--ink);line-height:1.6}
-.avbox .avmeta span{display:block;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--faint);margin-bottom:3px}
+.avbox .h .i{width:28px;height:28px;flex:0 0 auto}.avbox .h .i svg{width:28px;height:28px}
+.avbox .h .e{font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.avbox .area{display:inline-block;background:var(--tint-blue);color:var(--blue-deep);font-size:11.5px;font-weight:700;border-radius:20px;padding:4px 12px;margin-bottom:10px}
+.avbox p{font-size:14px;color:var(--ink);line-height:1.55}
 .avplw{margin-top:26px}.avplh{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
 .avplg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
 .avplc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff;text-decoration:none;transition:.16s}
@@ -65,7 +66,7 @@ CSS = """<style>
 .avplc.avfc{cursor:default}
 .avplc.avfc:hover{transform:none;box-shadow:none;border-color:var(--line)}
 .avplc.avfc .fd{font-size:13.5px;color:var(--mut);line-height:1.6;margin-top:9px}
-@media(max-width:820px){.avplg{grid-template-columns:1fr}}
+@media(max-width:820px){.av3,.avplg{grid-template-columns:1fr}}
 </style>""".replace("__BANNER__", BANNER)
 
 def build_sector(lang):
@@ -84,16 +85,16 @@ def build_sector(lang):
     for i, a in enumerate(APPS):
         tabs += '<button class="avtab%s" onclick="avTab(this,%d)">%s</button>' % (
             " on" if i == 0 else "", i, esc(a["name"]))
-        # single Introduction box — summarizes intro (purpose) + challenge + recommended solution
-        lead = esc(a.get("overview") or a["purpose"])
-        metas = ""
-        if a.get("challenges"):
-            metas += '<div class="avmeta"><span>%s</span>%s</div>' % (H("Challenge", "挑战"), esc(a["challenges"]))
-        if a.get("solution"):
-            metas += '<div class="avmeta"><span>%s</span>%s</div>' % (H("Recommended Solution", "推荐方案"), esc(a["solution"]))
+        # three side-by-side boxes: Introduction / Challenge / Recommended Solution
+        def abox(ic, lbl, col, txt, extra="", tint=False):
+            return ('<div class="avbox"%s><div class="h"><span class="i" style="color:%s">%s</span>'
+                    '<span class="e" style="color:%s">%s</span></div>%s<p>%s</p></div>') % (
+                (' style="background:#f4f9f2"' if tint else ''), col, ic, col, lbl, extra, esc(txt))
         area = ('<span class="area">%s</span>' % esc(a["area"])) if a.get("area") else ""
-        box = ('<div class="avbox"><div class="h"><span class="i">%s</span><span class="e">%s</span></div>'
-               '%s<p>%s</p>%s</div>') % (IC_INTRO, U("intro"), area, lead, metas)
+        box = '<div class="av3">%s%s%s</div>' % (
+            abox(IC_INTRO, U("intro"), "var(--blue)", a.get("overview") or a["purpose"], extra=area),
+            abox(IC_CHAL, H("Challenge", "挑战"), "#c2621f", a.get("challenges", "")),
+            abox(IC_SOL, H("Recommended Solution", "推荐方案"), "var(--green-d)", a.get("solution", ""), tint=True))
         # cards below the intro: custom value cards (title + desc) OR a material product card
         cards = ""; heading = U("products")
         if a.get("cards"):
