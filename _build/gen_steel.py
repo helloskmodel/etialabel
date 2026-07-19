@@ -113,7 +113,7 @@ UI = {"process": ("Process", "工艺"), "challenge": ("Challenge", "挑战"),
       "benefits": ("Benefits", "收益"), "spec": ("Specification", "规格"),
       "application": ("Application", "应用"), "talk": ("Talk to a Specialist", "咨询专家"),
       "apptemp": ("Application Temperature Range", "应用温度范围"), "install": ("Installation Examples", "安装示例"),
-      "maxtemp": ("Maximum Temperature", "最高温度"),
+      "maxtemp": ("Maximum Temperature", "最高温度"), "details": ("Details", "详情"),
       "sample": ("FREE SAMPLE", "免费样品"), "eyebrow": ("HEATPROOF™ · Extreme Temperature Identification Solutions", "HEATPROOF™ · 极端温度标识解决方案"),
       "subhead": ("Extreme Heat-Resistant Labels and Tags", "极端耐高温标签与挂牌")}
 
@@ -210,7 +210,7 @@ def build_product(lang, slug):
     contact = L(lang, "/contact/")
     cat = p.get("category"); at = p.get("app_temp"); mt = p.get("max_temp")
     eyebrow = esc(cat) if cat else H("HEATPROOF™ · PRODUCT", "HEATPROOF™ · 产品")
-    if at and mt: rng = esc(at) + esc(mt)
+    if at and mt: rng = esc(at) + esc(mt) if at.strip().endswith("～") else esc(at)
     elif at: rng = esc(at)
     elif mt: rng = H("Up to ", "最高 ") + esc(mt)
     else: rng = ""
@@ -246,6 +246,10 @@ def build_product(lang, slug):
     if p.get("installation"):
         rows = "".join('<tr><th>%s</th><td>%s</td></tr>' % (esc(a), esc(b)) for a, b in p["installation"])
         inst = sec(U("install"), '<div style="overflow-x:auto"><table class="spectbl"><tbody>%s</tbody></table></div>' % rows)
+    det = ""
+    if p.get("details"):
+        paras = "".join('<p style="font-size:15.5px;line-height:1.7;color:var(--ink);margin-bottom:12px">%s</p>' % esc(x) for x in p["details"])
+        det = sec(U("details"), '<div style="max-width:66em">%s</div>' % paras)
     ben = sec(U("benefits"), flist(p["benefits"])) if p.get("benefits") else ""
     srows = ""
     for s in p["spec"]:
@@ -255,7 +259,7 @@ def build_product(lang, slug):
             srows += '<tr><th></th><td>%s</td></tr>' % esc(s)
     spec = sec(U("spec"), '<div class="ptable-wrap" style="overflow-x:auto"><table class="spectbl"><tbody>%s</tbody></table></div>' % srows, bg=1) if p.get("spec") else ""
     app = sec(U("application"), '<p class="plsub" style="font-size:15.5px;color:var(--ink);line-height:1.7">%s</p>' % esc(p["application"])) if p.get("application") else ""
-    body = CSS + ov + feat + inst + ben + spec + app + ('<div class="wrap">%s</div>' % hp.cta2(lang, "product-detail"))
+    body = CSS + ov + feat + inst + det + ben + spec + app + ('<div class="wrap">%s</div>' % hp.cta2(lang, "product-detail"))
     path = PROD_URL % slug
     crumb = [("Home" if not zh else "首页", "/"), ("Products" if not zh else "产品", "/products/"),
              ("HEATPROOF™", "/products/heatproof/"), (p["name"], path)]

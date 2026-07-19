@@ -271,26 +271,42 @@
    "name": "HP-T42 + HP-CBR Tag",
    "slug": "hp-t42-hp-cbr-tag",
    "cases": "A-3",
-   "overview": "For repeatedly furnaced aluminum heat-treatment jigs, a label + mechanically fixed tag combo that stays readable through 500℃ × dozens-to-hundreds of thermal cycles.",
+   "category": "Tags for Heat Treatment / Process Management",
+   "app_temp": "room temperature ～1,200℃",
+   "max_temp": "1,200℃",
+   "overview": "Heat-resistant tags can be attached to a variety of metal products including hot steel, immediately after casting. Tags can also be designed to survive reheat cycles, pickling baths, acid baths, or galvanizing, thus eliminating the need to re-identify products after these processes.",
    "features": [
-    "Resists 500℃ multiple cycles",
-    "Mechanically fixed (wired/riveted), no fall-off",
-    "Long-term repeat scanning",
-    "Flexible label + tag combo"
+    "Maximum heat resistance up to 1200℃",
+    "Long-term durability after attachment",
+    "Print and cut in a thermal transfer printer"
    ],
-   "benefits": [
-    "Jig cycle count trackable",
-    "End-of-life alerts, less over-use",
-    "Clear jig identity & station",
-    "Reusable assets not lost"
+   "installation": [
+    [
+     "Steel",
+     "Slab, Bloom, Billet, Wire"
+    ],
+    [
+     "Automotive parts",
+     "Heat treatment process management"
+    ],
+    [
+     "Others",
+     "Jig management for heat treatment process"
+    ]
+   ],
+   "details": [
+    "HEATPROOF tags can be attached directly onto hot steel and aluminum immediately after casting, to track products through reheat processes such as annealing or homogenizing.",
+    "YStech works with customers to implement identification solutions that meet each company's individual system requirements."
    ],
    "spec": [
-    "HP-T42: cycle label, 500℃ multi-cycle, applied",
-    "HP-CBR Tag: mechanically fixed, high-temp multi-cycle, wired/riveted",
-    "Object: heat-treat jigs",
-    "Compliance: REACH / RoHS"
+    "Application temperature: room temperature to 1,200℃",
+    "Maximum heat resistance: 1,200℃",
+    "Type: heat-resistant tag (mechanically attached)",
+    "Durability: survives reheat cycles, pickling / acid baths, galvanizing",
+    "Printing: thermal transfer, print & cut"
    ],
-   "application": "Tag/label the jig → 500℃ heat treatment × cycles → scan each furnace pass → cumulative cycle count & life management."
+   "benefits": [],
+   "application": ""
   },
   {
    "name": "HP-CBR CX2",
