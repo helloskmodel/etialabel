@@ -51,6 +51,8 @@ CSS = """<style>
 .avbox .h .e{font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--blue)}
 .avbox .area{display:inline-block;background:var(--tint-blue);color:var(--blue-deep);font-size:11.5px;font-weight:700;border-radius:20px;padding:4px 12px;margin-bottom:12px}
 .avbox p{font-size:15px;color:var(--ink);line-height:1.65}
+.avbox .avmeta{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;color:var(--ink);line-height:1.6}
+.avbox .avmeta span{display:block;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--faint);margin-bottom:3px}
 .avplw{margin-top:26px}.avplh{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
 .avplg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
 .avplc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff;text-decoration:none;transition:.16s}
@@ -82,16 +84,16 @@ def build_sector(lang):
     for i, a in enumerate(APPS):
         tabs += '<button class="avtab%s" onclick="avTab(this,%d)">%s</button>' % (
             " on" if i == 0 else "", i, esc(a["name"]))
-        # single Introduction box (overview/purpose + challenges woven in)
-        intro = esc(a.get("overview") or a["purpose"])
-        if intro and intro[-1] not in ".。": intro += "."
+        # single Introduction box — summarizes intro (purpose) + challenge + recommended solution
+        lead = esc(a.get("overview") or a["purpose"])
+        metas = ""
         if a.get("challenges"):
-            ch = esc(a["challenges"])
-            intro += _t(lang, " Key challenges: ", " 主要挑战：") + ch
-            if ch and ch[-1] not in ".。": intro += "."
+            metas += '<div class="avmeta"><span>%s</span>%s</div>' % (H("Challenge", "挑战"), esc(a["challenges"]))
+        if a.get("solution"):
+            metas += '<div class="avmeta"><span>%s</span>%s</div>' % (H("Recommended Solution", "推荐方案"), esc(a["solution"]))
         area = ('<span class="area">%s</span>' % esc(a["area"])) if a.get("area") else ""
         box = ('<div class="avbox"><div class="h"><span class="i">%s</span><span class="e">%s</span></div>'
-               '%s<p>%s</p></div>') % (IC_INTRO, U("intro"), area, intro)
+               '%s<p>%s</p>%s</div>') % (IC_INTRO, U("intro"), area, lead, metas)
         # cards below the intro: custom value cards (title + desc) OR a material product card
         cards = ""; heading = U("products")
         if a.get("cards"):
