@@ -11,7 +11,13 @@
    "product": "Polyester Label Material",
    "tds_3m": "Polyester Label Material 7871/7871V",
    "facestock": "Polyester white-gloss",
-   "adhesive": "++/++++ (Balanced medium-high tack acrylic)"
+   "adhesive": "++/++++ (Balanced medium-high tack acrylic)",
+   "props": [
+    "Heat-Resistant",
+    "High-Temperature-Resistant",
+    "Chemical-Resistant",
+    "Humidity-Resistant"
+   ]
   },
   {
    "area": "Engine Compartment",
@@ -23,7 +29,11 @@
    "product": "Polyester Label Material",
    "tds_3m": "3M™ Polyester Label Material 7868/7868V",
    "facestock": "Polyester white-gloss",
-   "adhesive": "++/++++ (Balanced medium-high tack acrylic)"
+   "adhesive": "++/++++ (Balanced medium-high tack acrylic)",
+   "props": [
+    "Heat-Resistant",
+    "Chemical-Resistant"
+   ]
   },
   {
    "area": "Engine Compartment",
@@ -35,7 +45,11 @@
    "product": "Polyester Label Material",
    "tds_3m": "3M™ Polyester Label Material 7879",
    "facestock": "Polyester silver-matte",
-   "adhesive": "+++ (Ultra-high tack oil-resistant acrylic)"
+   "adhesive": "+++ (Ultra-high tack oil-resistant acrylic)",
+   "props": [
+    "Oil-Resistant",
+    "Chemical-Resistant"
+   ]
   },
   {
    "area": "Door Jamb",
@@ -47,7 +61,13 @@
    "product": "Laser Markable Label Material",
    "tds_3m": "3M™ Laser Markable Label Material 7847",
    "facestock": "Acrylate black-matte/white",
-   "adhesive": "++/++++ (High-strength chemical-resistant acrylic)"
+   "adhesive": "++/++++ (High-strength chemical-resistant acrylic)",
+   "props": [
+    "Laser-Markable",
+    "Abrasion-Resistant",
+    "Chemical-Resistant",
+    "Tamper-Evident"
+   ]
   },
   {
    "area": "Door Jamb",
@@ -59,7 +79,11 @@
    "product": "Polyester Label Material",
    "tds_3m": "3M™ Polyester Label Material 7868/7868V",
    "facestock": "Polyester white-gloss",
-   "adhesive": "++/++++ (Balanced medium-high tack acrylic)"
+   "adhesive": "++/++++ (Balanced medium-high tack acrylic)",
+   "props": [
+    "Weather-Resistant",
+    "Abrasion-Resistant"
+   ]
   },
   {
    "area": "Battery & Electrical",
@@ -71,7 +95,11 @@
    "product": "Polyester Label Material",
    "tds_3m": "3M™ Polyester Label Material 7868/7868V",
    "facestock": "Polyester white-gloss",
-   "adhesive": "++/++++ (Balanced medium-high tack acrylic)"
+   "adhesive": "++/++++ (Balanced medium-high tack acrylic)",
+   "props": [
+    "Heat-Resistant",
+    "Chemical-Resistant"
+   ]
   },
   {
    "area": "Battery & Electrical",
@@ -83,7 +111,11 @@
    "product": "High Temperature Resistant Label Material",
    "tds_3m": "3M™ High Temperature Resistant Label Material 3921",
    "facestock": "Heat-resistant acrylate film",
-   "adhesive": "++ (Standard high-temperature acrylic)"
+   "adhesive": "++ (Standard high-temperature acrylic)",
+   "props": [
+    "High-Temperature-Resistant",
+    "Heat-Resistant"
+   ]
   },
   {
    "area": "Fuel & Charging",
@@ -95,7 +127,11 @@
    "product": "Polyester Label Material",
    "tds_3m": "3M™ Polyester Label Material 7247",
    "facestock": "Polyester silver-matte",
-   "adhesive": "+++ (High-tack conformable acrylic)"
+   "adhesive": "+++ (High-tack conformable acrylic)",
+   "props": [
+    "Chemical-Resistant",
+    "Humidity-Resistant"
+   ]
   },
   {
    "area": "Fuel & Charging",
@@ -107,7 +143,12 @@
    "product": "Polyester Label Material",
    "tds_3m": "3M™ Polyester Label Material 7871/7871V",
    "facestock": "Polyester white-gloss",
-   "adhesive": "++/++++ (Balanced medium-high tack acrylic)"
+   "adhesive": "++/++++ (Balanced medium-high tack acrylic)",
+   "props": [
+    "Weather-Resistant",
+    "UV-Resistant",
+    "Chemical-Resistant"
+   ]
   },
   {
    "area": "Exterior",
@@ -119,7 +160,12 @@
    "product": "Polyester Label Material",
    "tds_3m": "3M™ Polyester Label Material 7871/7871V",
    "facestock": "Polyester white-gloss",
-   "adhesive": "++/++++ (Balanced medium-high tack acrylic)"
+   "adhesive": "++/++++ (Balanced medium-high tack acrylic)",
+   "props": [
+    "UV-Resistant",
+    "Weather-Resistant",
+    "Abrasion-Resistant"
+   ]
   },
   {
    "area": "Exterior",
@@ -131,7 +177,10 @@
    "product": "Tamper Evident Label Material /Destructible Label Material",
    "tds_3m": "3M™ Tamper Evident Label Material 7380 / 3M™ Destructible Label Material 3812",
    "facestock": "Polyester white-matte / Polyurethane white-matte",
-   "adhesive": "++/++++ (High-strength security acrylic)"
+   "adhesive": "++/++++ (High-strength security acrylic)",
+   "props": [
+    "Tamper-Evident"
+   ]
   },
   {
    "area": "Interior",
@@ -143,7 +192,10 @@
    "product": "Polyester Label Material",
    "tds_3m": "3M™ Polyester Label Material OFM03402",
    "facestock": "Polyester white-gloss",
-   "adhesive": "++ (Standard interior acrylic)"
+   "adhesive": "++ (Standard interior acrylic)",
+   "props": [
+    "Heat-Resistant"
+   ]
   },
   {
    "area": "Interior",
@@ -155,7 +207,11 @@
    "product": "Polyolefin Durable Label Material",
    "tds_3m": "3M™ Polyolefin Durable Label Material FP0354EG",
    "facestock": "Polyolefin white-matte",
-   "adhesive": "++ (Low-modulus flexible acrylic)"
+   "adhesive": "++ (Low-modulus flexible acrylic)",
+   "props": [
+    "Abrasion-Resistant",
+    "Flexible"
+   ]
   },
   {
    "area": "Interior",
@@ -167,7 +223,10 @@
    "product": "Polyester Label Material",
    "tds_3m": "3M™ Polyester Label Material 7331(V)",
    "facestock": "Polyester white-gloss",
-   "adhesive": "++ (Standard interior acrylic)"
+   "adhesive": "++ (Standard interior acrylic)",
+   "props": [
+    "Heat-Resistant"
+   ]
   },
   {
    "area": "Interior",
@@ -179,7 +238,11 @@
    "product": "Polyolefin Durable Label Material",
    "tds_3m": "3M™ Polyolefin Durable Label Material FP0354EG",
    "facestock": "Polyolefin white-matte",
-   "adhesive": "++ (Conformable textile acrylic)"
+   "adhesive": "++ (Conformable textile acrylic)",
+   "props": [
+    "Abrasion-Resistant",
+    "Flexible"
+   ]
   },
   {
    "area": "Flexible Components",
@@ -191,7 +254,11 @@
    "product": "Polyolefin Label Material",
    "tds_3m": "3M™ Polyolefin Label Material 76716NA",
    "facestock": "Polyolefin white-matte",
-   "adhesive": "++ (Low-modulus flexible acrylic)"
+   "adhesive": "++ (Low-modulus flexible acrylic)",
+   "props": [
+    "Flexible",
+    "Abrasion-Resistant"
+   ]
   },
   {
    "area": "Rubber Components",
@@ -203,7 +270,12 @@
    "product": "",
    "tds_3m": "",
    "facestock": "",
-   "adhesive": ""
+   "adhesive": "",
+   "props": [
+    "Heat-Resistant",
+    "High-Temperature-Resistant",
+    "Chemical-Resistant"
+   ]
   },
   {
    "area": "Rubber Components",
@@ -215,7 +287,12 @@
    "product": "Post-cure cured tire high-tack bead labels",
    "tds_3m": "",
    "facestock": "Polyester white-gloss",
-   "adhesive": "+++ (Ultra-high tack specialized acrylic for low-surface-energy cured rubber)"
+   "adhesive": "+++ (Ultra-high tack specialized acrylic for low-surface-energy cured rubber)",
+   "props": [
+    "Abrasion-Resistant",
+    "Weather-Resistant",
+    "Chemical-Resistant"
+   ]
   }
  ]
 }

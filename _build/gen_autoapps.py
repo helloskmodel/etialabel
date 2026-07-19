@@ -17,6 +17,16 @@ PATH = "/industries/automotive-label-materials/"
 
 def _t(lang, en, zh): return zh if lang == "zh" else en
 
+# Shared property vocabulary — same terms as the "By Environment" / "By Feature" nav
+# axes, so translations are authored once and reused across the whole site.
+PROP_ZH = {
+ "Abrasion-Resistant": "耐磨", "Chemical-Resistant": "耐化学", "Corrosion-Resistant": "耐腐蚀",
+ "Heat-Resistant": "耐热", "High-Temperature-Resistant": "耐高温", "Humidity-Resistant": "耐潮湿",
+ "Oil-Resistant": "耐油污", "Temperature-Resistant": "耐温变", "UV-Resistant": "耐紫外",
+ "Water-Resistant": "耐水", "Weather-Resistant": "耐候", "Laser-Markable": "激光打标",
+ "Tamper-Evident": "防拆", "Flexible": "柔性",
+}
+
 def _svg(p): return ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">%s</svg>' % p)
 IC_INTRO = _svg('<circle cx="12" cy="12" r="9"/><path d="M12 16v-5M12 8h.01"/>')
 IC_CHAL = _svg('<path d="M12 3 2 20h20L12 3z"/><path d="M12 10v5M12 18h.01"/>')
@@ -54,6 +64,10 @@ CSS = """<style>
 .avbox .h .e{font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
 .avbox .area{display:inline-block;background:var(--tint-blue);color:var(--blue-deep);font-size:11.5px;font-weight:700;border-radius:20px;padding:4px 12px;margin-bottom:10px}
 .avbox p{font-size:14px;color:var(--ink);line-height:1.55}
+.avchips{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px}
+.avchip{font-size:12px;font-weight:700;border-radius:20px;padding:5px 12px;line-height:1.25}
+.avchip.ch{background:#fff1e8;color:#b4531a;border:1px solid #f4cdb0}
+.avchip.so{background:var(--mint);color:var(--green-d);border:1px solid #cfe6c5}
 .avplw{margin-top:26px}.avplh{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
 .avplg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
 .avplc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff;text-decoration:none;transition:.16s}
@@ -85,16 +99,23 @@ def build_sector(lang):
     for i, a in enumerate(APPS):
         tabs += '<button class="avtab%s" onclick="avTab(this,%d)">%s</button>' % (
             " on" if i == 0 else "", i, esc(a["name"]))
-        # three side-by-side boxes: Introduction / Challenge / Recommended Solution
-        def abox(ic, lbl, col, txt, extra="", tint=False):
+        # three side-by-side boxes: Introduction (prose) / Challenge (chips) / Solution (chips)
+        def box_wrap(ic, lbl, col, inner, tint=False):
             return ('<div class="avbox"%s><div class="h"><span class="i" style="color:%s">%s</span>'
-                    '<span class="e" style="color:%s">%s</span></div>%s<p>%s</p></div>') % (
-                (' style="background:#f4f9f2"' if tint else ''), col, ic, col, lbl, extra, esc(txt))
+                    '<span class="e" style="color:%s">%s</span></div>%s</div>') % (
+                (' style="background:#f4f9f2"' if tint else ''), col, ic, col, lbl, inner)
+        def chips(items, cls):
+            return '<div class="avchips">%s</div>' % "".join('<span class="avchip %s">%s</span>' % (cls, esc(x)) for x in items)
         area = ('<span class="area">%s</span>' % esc(a["area"])) if a.get("area") else ""
+        intro_inner = area + '<p>%s</p>' % esc(a.get("overview") or a["purpose"])
+        ch_items = [(c.strip()[0].upper() + c.strip()[1:]) for c in a.get("challenges", "").split(",") if c.strip()]
+        ch_inner = chips(ch_items, "ch") if ch_items else ""
+        so_items = [_t(lang, pr, PROP_ZH.get(pr, pr)) for pr in a.get("props", [])]
+        so_inner = chips(so_items, "so") if so_items else ('<p>%s</p>' % esc(a.get("solution", "")))
         box = '<div class="av3">%s%s%s</div>' % (
-            abox(IC_INTRO, U("intro"), "var(--blue)", a.get("overview") or a["purpose"], extra=area),
-            abox(IC_CHAL, H("Challenge", "挑战"), "#c2621f", a.get("challenges", "")),
-            abox(IC_SOL, H("Recommended Solution", "推荐方案"), "var(--green-d)", a.get("solution", ""), tint=True))
+            box_wrap(IC_INTRO, U("intro"), "var(--blue)", intro_inner),
+            box_wrap(IC_CHAL, H("Challenge", "挑战"), "#c2621f", ch_inner),
+            box_wrap(IC_SOL, H("Recommended Solution", "推荐方案"), "var(--green-d)", so_inner, tint=True))
         # cards below the intro: custom value cards (title + desc) OR a material product card
         cards = ""; heading = U("products")
         if a.get("cards"):
