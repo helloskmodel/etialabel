@@ -203,7 +203,21 @@
    "product": "",
    "tds_3m": "",
    "facestock": "",
-   "adhesive": ""
+   "adhesive": "",
+   "cards": [
+    {
+     "title": "Barcode labels for reliable tracking in tire manufacturing",
+     "desc": "Maintain scannable identification from early-stage production through curing, inspection, and handling in tire manufacturing environments."
+    },
+    {
+     "title": "Tire label adhesives for cured and uncured rubber",
+     "desc": "Support reliable adhesion on green tires, calendered rubber, and cured surfaces under heat, pressure, and handling conditions."
+    },
+    {
+     "title": "Guaranteed unique sequences for tire identification",
+     "desc": "Pre-printed labels with controlled serialization ensure every tire receives a unique identifier without duplication or sequence errors."
+    }
+   ]
   },
   {
    "area": "Rubber Components",

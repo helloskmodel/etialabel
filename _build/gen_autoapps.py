@@ -24,6 +24,7 @@ UI = {
  "browse": ("Browse by Application", "按应用浏览"),
  "intro": ("Introduction", "介绍"),
  "products": ("Recommended Products", "推荐产品"),
+ "solutions": ("Solutions", "解决方案"),
  "talk": ("Talk to a Specialist", "咨询专家"),
  "soon": ("Landing page coming soon — talk to a specialist →", "产品页即将上线 —— 咨询专家 →"),
  "eyebrow": ("AUTOMOTIVE · LABEL SOLUTIONS", "汽车 · 标签解决方案"),
@@ -59,6 +60,9 @@ CSS = """<style>
 .avplc .sp{font-size:12.5px;color:var(--ink);margin-top:7px;line-height:1.4}
 .avplc .sp span{display:block;color:var(--faint);font-weight:800;text-transform:uppercase;font-size:10px;letter-spacing:.04em;margin-bottom:1px}
 .avplc .go{font-size:12.5px;font-weight:700;color:var(--green-d);margin-top:12px}
+.avplc.avfc{cursor:default}
+.avplc.avfc:hover{transform:none;box-shadow:none;border-color:var(--line)}
+.avplc.avfc .fd{font-size:13.5px;color:var(--mut);line-height:1.6;margin-top:9px}
 @media(max-width:820px){.avplg{grid-template-columns:1fr}}
 </style>""".replace("__BANNER__", BANNER)
 
@@ -82,13 +86,20 @@ def build_sector(lang):
         intro = esc(a.get("overview") or a["purpose"])
         if intro and intro[-1] not in ".。": intro += "."
         if a.get("challenges"):
-            intro += _t(lang, " Key challenges: ", " 主要挑战：") + esc(a["challenges"]) + "."
+            ch = esc(a["challenges"])
+            intro += _t(lang, " Key challenges: ", " 主要挑战：") + ch
+            if ch and ch[-1] not in ".。": intro += "."
         area = ('<span class="area">%s</span>' % esc(a["area"])) if a.get("area") else ""
         box = ('<div class="avbox"><div class="h"><span class="i">%s</span><span class="e">%s</span></div>'
                '%s<p>%s</p></div>') % (IC_INTRO, U("intro"), area, intro)
-        # product card — material type + specific 3M product + facestock + adhesive
-        cards = ""
-        if a.get("product"):
+        # cards below the intro: custom value cards (title + desc) OR a material product card
+        cards = ""; heading = U("products")
+        if a.get("cards"):
+            heading = U("solutions")
+            for c in a["cards"]:
+                cards += '<div class="avplc avfc"><div class="t">%s</div><p class="fd">%s</p></div>' % (
+                    esc(c["title"]), esc(c["desc"]))
+        elif a.get("product"):
             url = L(lang, "/contact/?product=%s&industry=automotive" % quote(a["product"], safe=""))
             lines = ""
             if a.get("tds_3m"): lines += '<div class="m">%s</div>' % esc(a["tds_3m"])
@@ -97,7 +108,7 @@ def build_sector(lang):
             cards = ('<a class="avplc" href="%s"><div class="t">%s</div>%s<div class="go">%s</div></a>') % (
                 url, esc(a["product"]), lines, U("soon"))
         plw = ('<div class="avplw"><div class="avplh">%s</div><div class="avplg">%s</div></div>' % (
-            U("products"), cards)) if cards else ""
+            heading, cards)) if cards else ""
         panels += '<div class="avpanel" data-i="%d" style="display:%s">%s%s</div>' % (
             i, "block" if i == 0 else "none", box, plw)
     js = ("<script>function avTab(b,i){var m=b.closest('.avmod');"
