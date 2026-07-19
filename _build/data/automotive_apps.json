@@ -1,0 +1,157 @@
+{
+ "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-automotive-tire.png",
+ "apps": [
+  {
+   "area": "Engine Compartment",
+   "name": "Radiator Warning Labels",
+   "purpose": "Safety warning and operating information",
+   "challenges": "High temperature, coolant, moisture, engine chemicals",
+   "solution": "High temperature resistant label materials",
+   "products": []
+  },
+  {
+   "area": "Engine Compartment",
+   "name": "Battery Labels",
+   "purpose": "Battery identification, warning and service information",
+   "challenges": "Heat, chemicals, durability",
+   "solution": "Durable polyester labels with strong adhesion",
+   "products": []
+  },
+  {
+   "area": "Engine Compartment",
+   "name": "Power Steering / Fluid Labels",
+   "purpose": "Fluid identification and maintenance information",
+   "challenges": "Oil contamination, chemical exposure, adhesion on difficult surfaces",
+   "solution": "Oil-resistant adhesive label materials",
+   "products": []
+  },
+  {
+   "area": "Door Jamb",
+   "name": "VIN Labels",
+   "purpose": "Vehicle identification, traceability and regulatory information",
+   "challenges": "Long-term durability, abrasion, chemicals, tamper resistance",
+   "solution": "Laser markable durable labels",
+   "products": []
+  },
+  {
+   "area": "Door Jamb",
+   "name": "Tire Pressure Labels",
+   "purpose": "Tire pressure and vehicle information",
+   "challenges": "Long-term readability, environmental exposure",
+   "solution": "Durable polyester labels",
+   "products": []
+  },
+  {
+   "area": "Battery & Electrical",
+   "name": "Battery Identification Labels",
+   "purpose": "Battery information, safety warning and service identification",
+   "challenges": "Heat cycling, chemicals, high durability requirement",
+   "solution": "Chemical-resistant and durable label materials",
+   "products": []
+  },
+  {
+   "area": "Battery & Electrical",
+   "name": "Electrical Component Labels",
+   "purpose": "Component identification and traceability",
+   "challenges": "Small surfaces, durability, readability",
+   "solution": "High-performance identification labels",
+   "products": []
+  },
+  {
+   "area": "Fuel & Charging",
+   "name": "Fuel Instruction Labels",
+   "purpose": "Fuel operation instructions and warnings",
+   "challenges": "Chemical exposure, moisture, curved surfaces",
+   "solution": "Durable polyester labels for shaped surfaces",
+   "products": []
+  },
+  {
+   "area": "Fuel & Charging",
+   "name": "Charging Instruction Labels",
+   "purpose": "EV charging operation and safety information",
+   "challenges": "Outdoor exposure, chemicals, long-term readability",
+   "solution": "Durable EV identification labels",
+   "products": []
+  },
+  {
+   "area": "Exterior",
+   "name": "Exterior Identification Labels",
+   "purpose": "Vehicle exterior component identification",
+   "challenges": "UV, weather, abrasion, outdoor durability",
+   "solution": "Weather-resistant label materials",
+   "products": []
+  },
+  {
+   "area": "Exterior",
+   "name": "Security Labels",
+   "purpose": "Anti-tamper and authentication",
+   "challenges": "Removal resistance, security requirements",
+   "solution": "Tamper evident / destructible labels",
+   "products": []
+  },
+  {
+   "area": "Interior",
+   "name": "Airbag Labels",
+   "purpose": "Safety identification and warning information",
+   "challenges": "Heat aging, appearance, adhesion",
+   "solution": "Durable interior label materials",
+   "products": []
+  },
+  {
+   "area": "Interior",
+   "name": "Seat Belt Labels",
+   "purpose": "Safety and compliance information",
+   "challenges": "Textile surface, durability",
+   "solution": "Specialty adhesive solutions",
+   "products": []
+  },
+  {
+   "area": "Interior",
+   "name": "Sun Visor Labels",
+   "purpose": "Warning and instruction information",
+   "challenges": "Appearance, adhesion, aging",
+   "solution": "Interior durable labels",
+   "products": []
+  },
+  {
+   "area": "Interior",
+   "name": "Carpet Labels",
+   "purpose": "Component identification",
+   "challenges": "Textile adhesion",
+   "solution": "Flexible adhesive solutions",
+   "products": []
+  },
+  {
+   "area": "Flexible Components",
+   "name": "Flexible Component Labels",
+   "purpose": "Identification of flexible automotive parts",
+   "challenges": "Flexing, bending, surface variation",
+   "solution": "Flexible label materials",
+   "products": []
+  },
+  {
+   "area": "Rubber Components",
+   "name": "Tire Vulcanization Labels",
+   "purpose": "Tire production tracking and identification during vulcanization",
+   "challenges": "High temperature, rubber surface, chemicals, pressure",
+   "solution": "Rubber surface labeling solutions",
+   "products": []
+  },
+  {
+   "area": "Rubber Components",
+   "name": "Belt Vulcanization Labels",
+   "purpose": "Belt manufacturing identification and traceability",
+   "challenges": "Heat, rubber surface, mechanical stress",
+   "solution": "Vulcanization-resistant labels",
+   "products": []
+  },
+  {
+   "area": "Rubber Components",
+   "name": "Air Spring Labels",
+   "purpose": "Air spring production identification",
+   "challenges": "Rubber surface, durability, long-term tracking",
+   "solution": "Rubber component labeling solutions",
+   "products": []
+  }
+ ]
+}
