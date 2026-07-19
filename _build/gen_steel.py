@@ -99,9 +99,10 @@ CSS = """<style>
 .pov .ptext p{font-size:16px;line-height:1.7;color:var(--ink)}
 .povimg{border:1px solid var(--line);border-radius:14px;background:#fff;padding:16px;text-align:center}
 .povimg img{max-width:100%;height:auto;border-radius:8px}
-.badge-temp{display:inline-flex;align-items:baseline;gap:10px;background:#fff3ec;border:1px solid #f4c9ae;border-radius:12px;padding:12px 18px;margin-top:18px}
-.badge-temp .lab{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#c2621f}
-.badge-temp .val{font-size:26px;font-weight:800;color:#b4501a}
+.tempbadges{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px}
+.badge-temp{display:flex;flex-direction:column;gap:4px;background:#fff3ec;border:1px solid #f4c9ae;border-radius:12px;padding:12px 18px}
+.badge-temp .lab{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#c2621f}
+.badge-temp .val{font-size:22px;font-weight:800;color:#b4501a;line-height:1.1}
 @media(max-width:820px){.hp3,.flist,.sgrid,.pov{grid-template-columns:1fr}}
 </style>""".replace("__BANNER__", BANNER)
 
@@ -112,6 +113,7 @@ UI = {"process": ("Process", "工艺"), "challenge": ("Challenge", "挑战"),
       "benefits": ("Benefits", "收益"), "spec": ("Specification", "规格"),
       "application": ("Application", "应用"), "talk": ("Talk to a Specialist", "咨询专家"),
       "apptemp": ("Application Temperature Range", "应用温度范围"), "install": ("Installation Examples", "安装示例"),
+      "maxtemp": ("Maximum Temperature", "最高温度"),
       "sample": ("FREE SAMPLE", "免费样品"), "eyebrow": ("HEATPROOF™ · Extreme Temperature Identification Solutions", "HEATPROOF™ · 极端温度标识解决方案"),
       "subhead": ("Extreme Heat-Resistant Labels and Tags", "极端耐高温标签与挂牌")}
 
@@ -206,9 +208,13 @@ def build_product(lang, slug):
     def U(k): return H(*UI[k])
     p = PRODUCTS[slug]
     contact = L(lang, "/contact/")
-    cat = p.get("category"); at = p.get("app_temp")
+    cat = p.get("category"); at = p.get("app_temp"); mt = p.get("max_temp")
     eyebrow = esc(cat) if cat else H("HEATPROOF™ · PRODUCT", "HEATPROOF™ · 产品")
-    subhead = (U("apptemp") + " · " + esc(at)) if at else H(*UI["subhead"])
+    if at and mt: rng = esc(at) + esc(mt)
+    elif at: rng = esc(at)
+    elif mt: rng = H("Up to ", "最高 ") + esc(mt)
+    else: rng = ""
+    subhead = (U("apptemp") + " · " + rng) if rng else H(*UI["subhead"])
     hero = ('<section class="hphero"><div class="wrap"><div class="eyebrow">%s</div>'
             '<h1>%s</h1><p>%s</p><div style="margin-top:18px"><a class="btn pri" href="%s">%s</a> '
             '<a class="btn on-dark" href="%s">%s</a></div></div></section>') % (
@@ -220,9 +226,13 @@ def build_product(lang, slug):
         '<div class="frow"><div class="c">%s</div><p>%s</p></div>' % (CHK, esc(x)) for x in items)
     # overview — description + optional temperature badge + product image (two-column)
     ovtext = '<p style="font-size:16px;line-height:1.7;color:var(--ink)">%s</p>' % esc(p["overview"])
+    badges = ""
     if at:
-        ovtext += '<div class="badge-temp"><span class="lab">%s</span><span class="val">%s</span></div>' % (
-            U("apptemp"), esc(at))
+        badges += '<div class="badge-temp"><span class="lab">%s</span><span class="val">%s</span></div>' % (U("apptemp"), esc(at))
+    if mt:
+        badges += '<div class="badge-temp"><span class="lab">%s</span><span class="val">%s</span></div>' % (U("maxtemp"), esc(mt))
+    if badges:
+        ovtext += '<div class="tempbadges">%s</div>' % badges
     if p.get("image"):
         ovinner = ('<div class="pov"><div class="ptext">%s</div>'
                    '<div class="povimg"><img src="%s" alt="%s" loading="lazy"></div></div>') % (

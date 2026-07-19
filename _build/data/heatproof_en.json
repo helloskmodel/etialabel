@@ -293,30 +293,58 @@
    "application": "Tag/label the jig → 500℃ heat treatment × cycles → scan each furnace pass → cumulative cycle count & life management."
   },
   {
-   "name": "HP-CBR CX2 / HB",
+   "name": "HP-CBR CX2",
    "slug": "hp-cbr-cx2",
    "cases": "C-1 / C-2",
-   "overview": "For extreme kiln firing above 1000℃ exceeding 10h, mechanically fixed to alumina/glass/carbon jigs or crucibles, keeping a readable barcode after repeated firing.",
+   "category": "Labels for Heat Treatment / Process Management",
+   "app_temp": "room temperature ～",
+   "max_temp": "1,200℃",
+   "overview": "Track products through heat processes using scannable barcodes. Industries include ceramics, porcelain, concrete, electronics, and a variety of metals.",
    "features": [
-    "Resists 1000℃+ prolonged firing",
-    "Readable through repeated cycles",
-    "Mechanically fixed, secure",
-    "CX2/HB two types for different jigs"
+    "Maximum heat resistance to 1200℃",
+    "High flexibility",
+    "After the baking process, the label becomes integrated with the substrate surface",
+    "Good durability against scratching, pickling, impact, and multiple heat cycles"
    ],
-   "benefits": [
-    "No mark loss in extreme kiln firing",
-    "Jig cycle count & life management",
-    "Clear kiln position & identity",
-    "High-value kiln-ware trace"
+   "installation": [
+    [
+     "Steel",
+     "Coil annealing"
+    ],
+    [
+     "Aluminum",
+     "Homogenizing, Annealing"
+    ],
+    [
+     "Ceramics",
+     "Baking process, Setter management"
+    ],
+    [
+     "Automotive",
+     "Heat treatment process management"
+    ],
+    [
+     "Asset & Tooling",
+     "Production history, Process management"
+    ],
+    [
+     "Electronics",
+     "Reflow process management"
+    ],
+    [
+     "Others",
+     "Jig management"
+    ]
    ],
    "spec": [
-    "Category: extreme-high-temp tag",
-    "Temp: 1000℃+ prolonged",
-    "Fixing: mechanical",
-    "Object: alumina/glass/carbon jigs, crucibles",
-    "Compliance: REACH / RoHS"
+    "Application temperature: room temperature and above",
+    "Maximum heat resistance: 1,200℃",
+    "Category: labels for heat treatment / process management",
+    "Printing: scannable barcodes",
+    "Industries: ceramics, porcelain, concrete, electronics, metals"
    ],
-   "application": "Fix CBR tag to jig/crucible (use HP-900/901 for direct body marking) → 1000℃×10h+ firing × cycles → scan at kiln exit → reusable asset management."
+   "benefits": [],
+   "application": ""
   },
   {
    "name": "Green-body fired-in mark [model TBC]",
