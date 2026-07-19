@@ -126,34 +126,34 @@
    "name": "HP-900",
    "slug": "hp-900",
    "cases": "S-1 / S-3",
-   "overview": "A high-temp direct label for red-hot billet/slab, applied at 450–800℃ (max heat resistance 800℃); robot-applied, the heat-activated adhesive bonds on hot contact, giving the stock a machine-readable identity from the moment of casting.",
+   "category": "Labels for Direct Hot Application",
+   "app_temp": "～900℃",
+   "overview": "Heat-resistant labels that can be applied to hot objects such as steel, aluminum or copper immediately after the casting process. Thermal transfer printers allow variable information and barcodes to be easily printed.",
    "features": [
-    "Applies at 450–800℃, max 800℃; no burn/curl/peel",
-    "Heat-activated adhesive (not PSA)",
-    "Adapts to rough scale surface",
-    "High-contrast imaging when hot",
-    "Thermal-shock resistant",
-    "Roll-fed for robotic labeling",
-    "On-site thermal transfer, heat no. from MES"
+    "Application temperature from 450℃ to 900℃",
+    "Maximum heat resistance to 900℃",
+    "Heat-activated adhesive"
    ],
-   "benefits": [
-    "Removes manual tagging in the hot zone (up to 800℃)",
-    "Unique identity at production; replaces unreliable stamped numbers",
-    "Scan before furnace, ID in seconds",
-    "Traceable to caster heat & billet no.",
-    "No spray-marking rework, seamless MES"
+   "installation": [
+    [
+     "Steel",
+     "Slab, Bloom, Bar, Billet, Plate, Hot Coil"
+    ],
+    [
+     "Aluminum",
+     "Sow, Ingot, Billet, Slab or Plate"
+    ]
    ],
+   "image": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/TDS/HP900/HP900HEATACTIVEEN.png",
    "spec": [
-    "Application temp: 450–800℃",
-    "Max heat resistance: 800℃",
-    "Category: direct hot label (heat-activated adhesive)",
-    "Object: slab / billet / bloom",
-    "Base: heat-resistant metal",
-    "Print: thermal transfer / pre-print",
-    "Note: for direct application up to 900℃ use HP-900",
-    "Compliance: REACH / RoHS"
+    "Application temperature: 450℃ – 900℃",
+    "Maximum heat resistance: 900℃",
+    "Adhesive: heat-activated",
+    "Category: labels for direct hot application",
+    "Printing: thermal transfer (variable data & barcodes)"
    ],
-   "application": "Robotic station downstream of caster/roller table → end-face application at 450–800℃ (avoid burr zone) → cooling/transport/stacking barcode stays readable → scan station before furnace feeds back to MES."
+   "benefits": [],
+   "application": ""
   },
   {
    "name": "HP-600",

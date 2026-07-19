@@ -95,7 +95,14 @@ CSS = """<style>
 .scard .st{font-weight:800;color:var(--blue-deep);font-size:20px;margin-bottom:8px}
 .scard .sd{font-size:14px;color:var(--mut);line-height:1.55;flex:1}
 .scard .go{font-size:13px;font-weight:700;color:var(--blue);margin-top:14px}
-@media(max-width:820px){.hp3,.flist,.sgrid{grid-template-columns:1fr}}
+.pov{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+.pov .ptext p{font-size:16px;line-height:1.7;color:var(--ink)}
+.povimg{border:1px solid var(--line);border-radius:14px;background:#fff;padding:16px;text-align:center}
+.povimg img{max-width:100%;height:auto;border-radius:8px}
+.badge-temp{display:inline-flex;align-items:baseline;gap:10px;background:#fff3ec;border:1px solid #f4c9ae;border-radius:12px;padding:12px 18px;margin-top:18px}
+.badge-temp .lab{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#c2621f}
+.badge-temp .val{font-size:26px;font-weight:800;color:#b4501a}
+@media(max-width:820px){.hp3,.flist,.sgrid,.pov{grid-template-columns:1fr}}
 </style>""".replace("__BANNER__", BANNER)
 
 UI = {"process": ("Process", "工艺"), "challenge": ("Challenge", "挑战"),
@@ -104,6 +111,7 @@ UI = {"process": ("Process", "工艺"), "challenge": ("Challenge", "挑战"),
       "overview": ("Overview", "概述"), "features": ("Features", "特性"),
       "benefits": ("Benefits", "收益"), "spec": ("Specification", "规格"),
       "application": ("Application", "应用"), "talk": ("Talk to a Specialist", "咨询专家"),
+      "apptemp": ("Application Temperature Range", "应用温度范围"), "install": ("Installation Examples", "安装示例"),
       "sample": ("FREE SAMPLE", "免费样品"), "eyebrow": ("HEATPROOF™ · Extreme Temperature Identification Solutions", "HEATPROOF™ · 极端温度标识解决方案"),
       "subhead": ("Extreme Heat-Resistant Labels and Tags", "极端耐高温标签与挂牌")}
 
@@ -198,28 +206,46 @@ def build_product(lang, slug):
     def U(k): return H(*UI[k])
     p = PRODUCTS[slug]
     contact = L(lang, "/contact/")
+    cat = p.get("category"); at = p.get("app_temp")
+    eyebrow = esc(cat) if cat else H("HEATPROOF™ · PRODUCT", "HEATPROOF™ · 产品")
+    subhead = (U("apptemp") + " · " + esc(at)) if at else H(*UI["subhead"])
     hero = ('<section class="hphero"><div class="wrap"><div class="eyebrow">%s</div>'
             '<h1>%s</h1><p>%s</p><div style="margin-top:18px"><a class="btn pri" href="%s">%s</a> '
             '<a class="btn on-dark" href="%s">%s</a></div></div></section>') % (
-        H("HEATPROOF™ · PRODUCT", "HEATPROOF™ · 产品"), esc(p["name"]), H(*UI["subhead"]),
+        eyebrow, esc(p["name"]), subhead,
         L(lang, "/contact/?product=%s&type=sample" % p["name"].split()[0]), U("sample"), contact, U("talk"))
     sec = lambda h, inner, bg="": '<section class="blk"%s><div class="wrap"><h2>%s</h2>%s</div></section>' % (
         (' style="background:#f4f7fd"' if bg else ''), h, inner)
-    ov = sec(U("overview"), '<p class="plsub" style="font-size:16px;color:var(--ink)">%s</p>' % esc(p["overview"]))
     def flist(items): return '<div class="flist">%s</div>' % "".join(
         '<div class="frow"><div class="c">%s</div><p>%s</p></div>' % (CHK, esc(x)) for x in items)
-    feat = sec(U("features"), flist(p["features"]), bg=1) if p["features"] else ""
-    ben = sec(U("benefits"), flist(p["benefits"])) if p["benefits"] else ""
-    # spec: split "k: v"
+    # overview — description + optional temperature badge + product image (two-column)
+    ovtext = '<p style="font-size:16px;line-height:1.7;color:var(--ink)">%s</p>' % esc(p["overview"])
+    if at:
+        ovtext += '<div class="badge-temp"><span class="lab">%s</span><span class="val">%s</span></div>' % (
+            U("apptemp"), esc(at))
+    if p.get("image"):
+        ovinner = ('<div class="pov"><div class="ptext">%s</div>'
+                   '<div class="povimg"><img src="%s" alt="%s" loading="lazy"></div></div>') % (
+            ovtext, esc(p["image"]), esc(p["name"]))
+    else:
+        ovinner = '<div class="ovbody">%s</div>' % ovtext
+    ov = sec(U("overview"), ovinner)
+    feat = sec(U("features"), flist(p["features"]), bg=1) if p.get("features") else ""
+    # installation examples (label -> examples)
+    inst = ""
+    if p.get("installation"):
+        rows = "".join('<tr><th>%s</th><td>%s</td></tr>' % (esc(a), esc(b)) for a, b in p["installation"])
+        inst = sec(U("install"), '<div style="overflow-x:auto"><table class="spectbl"><tbody>%s</tbody></table></div>' % rows)
+    ben = sec(U("benefits"), flist(p["benefits"])) if p.get("benefits") else ""
     srows = ""
     for s in p["spec"]:
         if ":" in s:
             k, v = s.split(":", 1); srows += '<tr><th>%s</th><td>%s</td></tr>' % (esc(k.strip()), esc(v.strip()))
         else:
             srows += '<tr><th></th><td>%s</td></tr>' % esc(s)
-    spec = sec(U("spec"), '<div class="ptable-wrap" style="overflow-x:auto"><table class="spectbl"><tbody>%s</tbody></table></div>' % srows, bg=1) if p["spec"] else ""
-    app = sec(U("application"), '<p class="plsub" style="font-size:15.5px;color:var(--ink);line-height:1.7">%s</p>' % esc(p["application"])) if p["application"] else ""
-    body = CSS + ov + feat + ben + spec + app + ('<div class="wrap">%s</div>' % hp.cta2(lang, "product-detail"))
+    spec = sec(U("spec"), '<div class="ptable-wrap" style="overflow-x:auto"><table class="spectbl"><tbody>%s</tbody></table></div>' % srows, bg=1) if p.get("spec") else ""
+    app = sec(U("application"), '<p class="plsub" style="font-size:15.5px;color:var(--ink);line-height:1.7">%s</p>' % esc(p["application"])) if p.get("application") else ""
+    body = CSS + ov + feat + inst + ben + spec + app + ('<div class="wrap">%s</div>' % hp.cta2(lang, "product-detail"))
     path = PROD_URL % slug
     crumb = [("Home" if not zh else "首页", "/"), ("Products" if not zh else "产品", "/products/"),
              ("HEATPROOF™", "/products/heatproof/"), (p["name"], path)]
