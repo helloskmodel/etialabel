@@ -67,29 +67,43 @@ nav .lang{font-size:13px;color:var(--faint);border:1px solid var(--line);border-
 nav .langsw a{display:inline-block;font-size:12px;color:var(--faint);padding:5px 9px;border-radius:7px;font-weight:600}
 nav .langsw a.on{color:#fff;background:var(--blue)}
 nav .langsw a:hover{color:var(--blue)}nav .langsw a.on:hover{color:#fff}
-/* Products mega-menu dropdown (spacious, icon rows, opens leftward to stay on screen) */
+/* Products mega-menu — left-anchored cascading columns (up to 3 levels, Delo/Panacol style) */
 nav .nd{position:relative;display:inline-block}
-nav .nd::after{content:"";position:absolute;top:100%;left:0;right:0;height:18px}
+nav .nd.ndwide{position:static}
 nav .ndt{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;font-weight:600;color:var(--ink);cursor:pointer}
 nav .ndt .caret{font-size:10px;color:var(--faint);transition:.15s}
-nav .nd:hover .ndt{color:var(--blue)}nav .nd:hover .ndt .caret{transform:rotate(180deg);color:var(--blue)}
-nav .ndm.pm{position:absolute;top:100%;right:0;margin-top:16px;background:#fff;border:1px solid var(--line);
-  border-radius:18px;box-shadow:0 26px 70px rgba(20,40,90,.20);display:grid;grid-template-columns:236px 1fr;
-  width:760px;max-width:92vw;opacity:0;visibility:hidden;transform:translateY(10px);transition:.16s;z-index:60;overflow:hidden}
-nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transform:translateY(0)}
-.pm .ndrail{background:var(--bg);border-right:1px solid var(--line);padding:22px 14px}
-.pm .ndrail-h{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--faint);padding:0 14px 14px}
-.pm .axbtn{display:block;width:100%;text-align:left;background:none;border:none;font-family:inherit;
-  font-size:15px;font-weight:700;color:var(--ink);padding:14px 16px;border-radius:11px;cursor:pointer;white-space:nowrap;transition:.12s}
+nav .nd:hover .ndt,nav .nd.open .ndt{color:var(--blue)}
+nav .nd:hover .ndt .caret,nav .nd.open .ndt .caret{transform:rotate(180deg);color:var(--blue)}
+nav .ndm.pm{position:absolute;top:70px;left:24px;right:auto;background:#fff;border:1px solid var(--line);
+  border-radius:16px;box-shadow:0 26px 70px rgba(20,40,90,.20);display:grid;grid-template-columns:224px 268px 244px;
+  max-width:calc(100vw - 48px);opacity:0;visibility:hidden;transform:translateY(10px);transition:.16s;z-index:60;overflow:hidden}
+nav .nd.open .ndm.pm,nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transform:translateY(0)}
+.pm .ndrail{background:var(--bg);border-right:1px solid var(--line);padding:16px 12px}
+.pm .ndrail-h{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--faint);padding:0 14px 12px}
+.pm .axbtn{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;text-align:left;background:none;border:none;font-family:inherit;
+  font-size:14.5px;font-weight:700;color:var(--ink);padding:12px 14px;border-radius:10px;cursor:pointer;white-space:nowrap;transition:.12s}
+.pm .axbtn .chev{color:var(--faint);font-size:17px;line-height:1}
 .pm .axbtn.on,.pm .axbtn:hover{background:#fff;color:var(--blue);box-shadow:0 3px 12px rgba(16,34,58,.08)}
-.pm .ndpanels{padding:22px 24px}
-.pm .axpanel{grid-template-columns:1fr 1fr;gap:6px 18px;align-content:start}
-.pm .axpanel a{display:flex;align-items:center;gap:13px;font-size:14.5px;font-weight:600;color:var(--ink);padding:11px 12px;border-radius:11px;white-space:nowrap}
-.pm .axpanel a:hover{background:var(--tint-blue);color:var(--blue);text-decoration:none}
-.pm .axi{flex:none;width:38px;height:38px;border-radius:10px;background:var(--mint);color:var(--green-d);display:flex;align-items:center;justify-content:center}
-.pm .axi:empty{background:#eaf1ff}
-.pm .axi:empty::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue)}
-.pm .axi svg{width:21px;height:21px}
+.pm .axbtn.on .chev,.pm .axbtn:hover .chev{color:var(--blue)}
+.pm .ndmid{border-right:1px solid var(--line);padding:16px 12px}
+.pm .midgroup{flex-direction:column;gap:2px}
+.pm .axitem{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:none;font-family:inherit;
+  font-size:14px;font-weight:600;color:var(--ink);padding:10px 12px;border-radius:10px;white-space:nowrap;cursor:pointer;transition:.12s}
+.pm .axitem:hover,.pm .axitem.on{background:var(--tint-blue);color:var(--blue);text-decoration:none}
+.pm .axitem .axl{flex:1}
+.pm .axitem .chev{color:var(--faint);font-size:17px;line-height:1;margin-left:auto}
+.pm .axitem:hover .chev,.pm .axitem.on .chev{color:var(--blue)}
+.pm .axi{flex:none;width:32px;height:32px;border-radius:9px;background:var(--mint);color:var(--green-d);display:flex;align-items:center;justify-content:center}
+.pm .axi:empty{display:none}
+.pm .axi svg{width:19px;height:19px}
+.pm .ndsub{padding:16px 12px}
+.pm .subgroup{flex-direction:column;gap:2px}
+.pm .subgroup a{display:block;font-size:14px;font-weight:600;color:var(--ink);padding:10px 12px;border-radius:10px;white-space:nowrap}
+.pm .subgroup a:hover{background:var(--tint-green);color:var(--green-d);text-decoration:none}
+.pm .subgroup a.suball{font-weight:700;color:var(--blue);border-bottom:1px solid var(--line);border-radius:0;margin-bottom:4px;padding-bottom:12px}
+.pm .subgroup a.suball:hover{background:none;text-decoration:underline}
+.pm .subempty{color:var(--faint);font-size:13px;font-weight:500;padding:12px;line-height:1.5}
+@media(max-width:980px){nav .ndm.pm{grid-template-columns:200px 1fr;left:16px}.pm .ndsub{display:none}}
 @media(max-width:900px){nav a:not(.lang){display:none}nav .nd{display:none}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
@@ -433,9 +447,11 @@ NAV_ZH = {"Home":"首页","Products":"产品","Application Notes":"应用笔记"
 PROD_AXES = [
  ("app","By Industry","按行业",[
    ("Circuit Board & PCB Labels","电路板与 PCB 标签","/products/circuit-board-labels/"),
-   ("Steel · HEATPROOF™","钢铁 · HEATPROOF™","/industries/steel/"),
-   ("Aluminum · HEATPROOF™","铝 · HEATPROOF™","/industries/aluminum/"),
-   ("Ceramics · HEATPROOF™","陶瓷 · HEATPROOF™","/industries/ceramics/"),
+   ("Metal & Ceramics","金属与陶瓷","/industries/metal-ceramics/",[
+      ("Steel","钢铁","/industries/steel/"),
+      ("Aluminum","铝","/industries/aluminum/"),
+      ("Ceramics","陶瓷","/industries/ceramics/"),
+   ]),
    ("Medical & Laboratory","医疗与实验室","/industries/healthcare-life-sciences/"),
    ("Automotive & Tire","汽车与轮胎","/industries/automotive-label-materials/"),
    ("Wire & Cable","电线与电缆","/industries/wire-cable/"),
@@ -471,22 +487,45 @@ PROD_AXES = [
 ]
 
 def products_dropdown(lang, linkfn):
+    """Left-anchored cascading flyout: col1 axes -> col2 items -> col3 sub-items.
+    Items carrying a 4th element (a list of children) render a chevron and open col3."""
     zh = (lang == "zh")
     lab = lambda e, z: z if zh else e
     top = "产品" if zh else "Products"
-    rail = ""; panels = ""
+    rail = ""; mids = ""; subs = ""
     for i, (key, he, hz, items) in enumerate(PROD_AXES):
         on = " on" if i == 0 else ""
-        rail += '<button type="button" class="axbtn%s" onmouseover="etaAx(this,\'%s\')"><span class="axc">%s</span></button>' % (
-            on, key, esc(lab(he, hz)))
-        link_list = ""
-        for j, (e, z, u) in enumerate(items):
+        rail += ('<button type="button" class="axbtn%s" data-ax="%s" onmouseover="etaAx(this,\'%s\')">'
+                 '<span class="axc">%s</span><span class="chev">&rsaquo;</span></button>') % (on, key, key, esc(lab(he, hz)))
+        midlinks = ""
+        for j, item in enumerate(items):
+            e, z, u = item[0], item[1], item[2]
+            kids = item[3] if len(item) > 3 else None
             ic = INDUSTRY_ICONS[j % len(INDUSTRY_ICONS)] if key == "app" else ""
-            link_list += '<a href="%s"><span class="axi">%s</span><span class="axl">%s</span></a>' % (linkfn(u), ic, esc(lab(e, z)))
-        panels += '<div class="axpanel" data-ax="%s" style="display:%s">%s</div>' % (key, ("grid" if i == 0 else "none"), link_list)
-    return ('<div class="nd"><a class="ndt" href="%s">%s <span class="caret">&#9662;</span></a>'
-            '<div class="ndm pm"><div class="ndrail"><div class="ndrail-h">%s</div>%s</div><div class="ndpanels">%s</div></div></div>') % (
-        linkfn("/products/"), esc(top), ("产品方案" if zh else "LABEL SOLUTIONS"), rail, panels)
+            icon = '<span class="axi">%s</span>' % ic
+            if kids:
+                sid = "%s-%d" % (key, j)
+                midlinks += ('<button type="button" class="axitem haskid" data-sub="%s" onmouseover="etaSub(this,\'%s\')">'
+                             '%s<span class="axl">%s</span><span class="chev">&rsaquo;</span></button>') % (
+                    sid, sid, icon, esc(lab(e, z)))
+                sublinks = '<a class="suball" href="%s">%s</a>' % (
+                    linkfn(u), esc(("查看全部 →" if zh else "View all →")))
+                sublinks += "".join('<a href="%s">%s</a>' % (linkfn(cu), esc(lab(ce, cz))) for ce, cz, cu in kids)
+                subs += '<div class="subgroup" data-sub="%s" style="display:none">%s</div>' % (sid, sublinks)
+            else:
+                midlinks += ('<a class="axitem" href="%s" onmouseover="etaSub(this,\'\')">'
+                             '%s<span class="axl">%s</span></a>') % (linkfn(u), icon, esc(lab(e, z)))
+        mids += '<div class="midgroup" data-mid="%s" style="display:%s">%s</div>' % (
+            key, "flex" if i == 0 else "none", midlinks)
+    subs += ('<div class="subgroup subph" data-sub="" style="display:flex"><div class="subempty">%s</div></div>') % (
+        "将鼠标移到左侧类别上，查看其产品系列。" if zh else "Hover a category on the left to see its product lines.")
+    return ('<div class="nd ndwide" onmouseenter="etaOpen(this)" onmouseleave="etaClose(this)">'
+            '<a class="ndt" href="%s">%s <span class="caret">&#9662;</span></a>'
+            '<div class="ndm pm">'
+            '<div class="ndrail"><div class="ndrail-h">%s</div>%s</div>'
+            '<div class="ndmid">%s</div>'
+            '<div class="ndsub">%s</div>'
+            '</div></div>') % (linkfn("/products/"), esc(top), ("产品方案" if zh else "LABEL SOLUTIONS"), rail, mids, subs)
 
 ALL_URLS = []   # (path, group, changefreq)  — English canonical set for sitemap
 def track(path, group): ALL_URLS.append((path, group))
@@ -625,7 +664,18 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 %s
 %s
 %s
-<script>function etaAx(b,a){var m=b.closest('.ndm');m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});m.querySelectorAll('.axpanel').forEach(function(p){p.style.display=(p.getAttribute('data-ax')===a)?'grid':'none';});}</script>
+<script>
+function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
+function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
+function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
+if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
+m.querySelectorAll('.subgroup').forEach(function(p){p.style.display=(p.getAttribute('data-sub')===s)?'flex':'none';});}
+function etaAx(b,a){var m=b.closest('.ndm');
+m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});
+m.querySelectorAll('.midgroup').forEach(function(p){p.style.display=(p.getAttribute('data-mid')===a)?'flex':'none';});
+var mg=m.querySelector('.midgroup[data-mid="'+a+'"]');var first=mg?mg.querySelector('.axitem.haskid'):null;
+etaSub(first,first?first.getAttribute('data-sub'):'');}
+</script>
 </body></html>""" % (lang, esc(title), esc(desc), canonical, hreflang_block(path), esc(title), CSS, schema_js,
      L(lang,"/"), nav_html(lang, active, path), cr, head_block, (trust_bar(lang) if trust else ""), body, footer_html(lang))
 
@@ -1282,7 +1332,17 @@ def build_home(lang):
 <header><div class="wrap"><a class="logo" href="%s"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%%20LOGO.jpg" alt="ETIA Label"></a>%s</div></header>
 %s
 %s
-<script>function etaAx(b,a){var m=b.closest('.ndm');m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});m.querySelectorAll('.axpanel').forEach(function(p){p.style.display=(p.getAttribute('data-ax')===a)?'grid':'none';});}
+<script>
+function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
+function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
+function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
+if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
+m.querySelectorAll('.subgroup').forEach(function(p){p.style.display=(p.getAttribute('data-sub')===s)?'flex':'none';});}
+function etaAx(b,a){var m=b.closest('.ndm');
+m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});
+m.querySelectorAll('.midgroup').forEach(function(p){p.style.display=(p.getAttribute('data-mid')===a)?'flex':'none';});
+var mg=m.querySelector('.midgroup[data-mid="'+a+'"]');var first=mg?mg.querySelector('.axitem.haskid'):null;
+etaSub(first,first?first.getAttribute('data-sub'):'');}
 function etaSlide(d){var c=document.getElementById('acar');if(c)c.scrollBy({left:d*c.clientWidth,behavior:'smooth'});}
 function etaSample(e){e.preventDefault();var g=function(i){var el=document.getElementById(i);return el?el.value:'';};
 var b='Email: '+g('fs-email')+'%%0D%%0APhone: '+g('fs-phone')+'%%0D%%0AAddress: '+g('fs-addr')+'%%0D%%0A%%0D%%0APlease send free samples.';

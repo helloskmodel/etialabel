@@ -89,7 +89,13 @@ CSS = """<style>
 .spectbl{width:100%;border-collapse:collapse;font-size:15px;max-width:820px}
 .spectbl th{text-align:left;width:230px;background:#f4f7fd;color:var(--blue-deep);font-weight:800;padding:13px 16px;vertical-align:top}
 .spectbl td{padding:13px 16px;border-bottom:1px solid var(--line);color:var(--ink)}
-@media(max-width:820px){.hp3,.flist{grid-template-columns:1fr}}
+.sgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:6px}
+.scard{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:24px 22px;background:#fff;text-decoration:none;transition:.16s}
+.scard:hover{border-color:var(--blue);box-shadow:0 14px 34px rgba(20,40,90,.13);transform:translateY(-3px)}
+.scard .st{font-weight:800;color:var(--blue-deep);font-size:20px;margin-bottom:8px}
+.scard .sd{font-size:14px;color:var(--mut);line-height:1.55;flex:1}
+.scard .go{font-size:13px;font-weight:700;color:var(--blue);margin-top:14px}
+@media(max-width:820px){.hp3,.flist,.sgrid{grid-template-columns:1fr}}
 </style>""".replace("__BANNER__", BANNER)
 
 UI = {"process": ("Process", "工艺"), "challenge": ("Challenge", "挑战"),
@@ -100,6 +106,42 @@ UI = {"process": ("Process", "工艺"), "challenge": ("Challenge", "挑战"),
       "application": ("Application", "应用"), "talk": ("Talk to a Specialist", "咨询专家"),
       "sample": ("FREE SAMPLE", "免费样品"), "eyebrow": ("HEATPROOF™ · Extreme Temperature Identification Solutions", "HEATPROOF™ · 极端温度标识解决方案"),
       "subhead": ("Extreme Heat-Resistant Labels and Tags", "极端耐高温标签与挂牌")}
+
+def build_category(lang):
+    """Industry-level hub: Metal & Ceramics -> drills down to the 3 sectors
+    (Steel / Aluminum / Ceramics). Each sector card leads to its FLEXcon landing."""
+    zh = (lang == "zh")
+    def H(e, z): return esc(_t(lang, e, z))
+    def U(k): return H(*UI[k])
+    contact = L(lang, "/contact/")
+    hero = ('<section class="hphero"><div class="wrap"><div class="eyebrow">%s</div>'
+            '<h1>%s</h1><p>%s</p><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
+            '</div></section>') % (U("eyebrow"), H("Metal &amp; Ceramics", "金属与陶瓷"),
+        H("Heat-resistant identification across steel, aluminum and ceramics — from continuous casting and hot rolling to kiln firing at 1000℃ and beyond.",
+          "覆盖钢铁、铝与陶瓷的耐高温标识 —— 从连铸、热轧到 1000℃ 以上的窑炉烧成。"), contact, U("talk"))
+    overview = ('<section class="blk"><div class="wrap"><div class="ovbody"><p>%s</p></div></div></section>') % H(
+        "The HEATPROOF™ range covers the full metal and ceramic process chain. Choose a sector to see its specific applications, challenges and recommended label and tag solutions.",
+        "HEATPROOF™ 产品系列覆盖金属与陶瓷的全流程。选择一个板块,查看具体应用、挑战与推荐的标签与挂牌方案。")
+    cards = ""
+    for key in ("steel", "aluminum", "ceramics"):
+        name_en, name_zh, _h1e, _h1z, ine, inz, _codes = SECTORS[key]
+        cards += ('<a class="scard" href="%s"><div class="st">%s</div>'
+                  '<p class="sd">%s</p><div class="go">%s</div></a>') % (
+            L(lang, "/industries/%s/" % key), _t(lang, name_en, name_zh),
+            _t(lang, ine, inz), H("Explore sector →", "查看板块 →"))
+    grid = ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sgrid">%s</div></div></section>') % (
+        H("Sectors", "板块"), cards)
+    body = CSS + overview + grid + ('<div class="wrap">%s</div>' % hp.cta2(lang, "applications"))
+    path = "/industries/metal-ceramics/"
+    crumb = [("Home" if not zh else "首页", "/"), ("Industries" if not zh else "行业", "/industries/"),
+             (_t(lang, "Metal & Ceramics", "金属与陶瓷"), path)]
+    write(lang, path, page(lang, path,
+        _t(lang, "Metal & Ceramics Heat-Resistant Labels & Tags — HEATPROOF™ | ETIA",
+                 "金属与陶瓷耐高温标签与挂牌 —— HEATPROOF™ | ETIA"),
+        _t(lang, "HEATPROOF™ heat-resistant labels and tags for steel, aluminum and ceramics — direct hot application, heat treatment and durable tags across the process chain.",
+                 "面向钢铁、铝与陶瓷的 HEATPROOF™ 耐高温标签与挂牌 —— 热态直贴、热处理与耐用挂牌,覆盖全流程。"),
+        _t(lang, "Metal & Ceramics", "金属与陶瓷"), "", body, crumb, active="", hero=hero))
+    if lang == "en": hp.track(path, "industries")
 
 def build_sector(lang, key):
     zh = (lang == "zh")
@@ -140,6 +182,7 @@ def build_sector(lang, key):
     body = CSS + overview + mod + ('<div class="wrap">%s</div>' % hp.cta2(lang, "applications"))
     path = "/industries/%s/" % key
     crumb = [("Home" if not zh else "首页", "/"), ("Industries" if not zh else "行业", "/industries/"),
+             (_t(lang, "Metal & Ceramics", "金属与陶瓷"), "/industries/metal-ceramics/"),
              (name_en if not zh else name_zh, path)]
     write(lang, path, page(lang, path,
         _t(lang, "%s Heat-Resistant Labels & Tags — HEATPROOF™ | ETIA" % name_en,
@@ -219,11 +262,13 @@ URLS = []
 def main():
     for lang in LANGS:
         build_hub(lang)
+        build_category(lang)
         for key in SECTORS:
             build_sector(lang, key)
         for slug in PRODUCTS:
             build_product(lang, slug)
-    URLS.extend(["/products/heatproof/"] + ["/industries/%s/" % k for k in SECTORS] + [PROD_URL % s for s in PRODUCTS])
+    URLS.extend(["/products/heatproof/", "/industries/metal-ceramics/"]
+                + ["/industries/%s/" % k for k in SECTORS] + [PROD_URL % s for s in PRODUCTS])
 
 if __name__ == "__main__":
     main()
