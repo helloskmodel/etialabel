@@ -26,6 +26,17 @@ PROP_ZH = {
  "Water-Resistant": "耐水", "Weather-Resistant": "耐候", "Laser-Markable": "激光打标",
  "Tamper-Evident": "防拆", "Flexible": "柔性",
 }
+# each property (Solution) paired with the challenge (stressor) it answers — one
+# controlled, corresponding vocabulary so Challenge and Solution chips always match.
+PROP_CHALLENGE = {
+ "Heat-Resistant": ("High Temperature", "高温"), "High-Temperature-Resistant": ("High Temperature", "高温"),
+ "Chemical-Resistant": ("Chemicals", "化学品"), "Oil-Resistant": ("Oil / Fluids", "油污"),
+ "Humidity-Resistant": ("Moisture", "潮湿"), "UV-Resistant": ("UV Exposure", "紫外线"),
+ "Weather-Resistant": ("Weather / Outdoor", "户外候变"), "Abrasion-Resistant": ("Abrasion", "磨损"),
+ "Water-Resistant": ("Water", "水"), "Corrosion-Resistant": ("Corrosion", "腐蚀"),
+ "Temperature-Resistant": ("Temperature Cycling", "温度变化"), "Tamper-Evident": ("Tamper Risk", "防拆需求"),
+ "Laser-Markable": ("Permanent Marking", "永久标识"), "Flexible": ("Flexing / Bending", "弯曲变形"),
+}
 
 def _svg(p): return ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">%s</svg>' % p)
 IC_INTRO = _svg('<circle cx="12" cy="12" r="9"/><path d="M12 16v-5M12 8h.01"/>')
@@ -108,7 +119,15 @@ def build_sector(lang):
             return '<div class="avchips">%s</div>' % "".join('<span class="avchip %s">%s</span>' % (cls, esc(x)) for x in items)
         area = ('<span class="area">%s</span>' % esc(a["area"])) if a.get("area") else ""
         intro_inner = area + '<p>%s</p>' % esc(a.get("overview") or a["purpose"])
-        ch_items = [(c.strip()[0].upper() + c.strip()[1:]) for c in a.get("challenges", "").split(",") if c.strip()]
+        # challenge chips derived from the paired vocabulary (dedup, order-stable) so they
+        # always correspond to the Solution chips; fall back to raw text if unmapped.
+        seen = set(); ch_items = []
+        for pr in a.get("props", []):
+            pair = PROP_CHALLENGE.get(pr)
+            if pair and pair[0] not in seen:
+                seen.add(pair[0]); ch_items.append(_t(lang, pair[0], pair[1]))
+        if not ch_items:
+            ch_items = [(c.strip()[0].upper() + c.strip()[1:]) for c in a.get("challenges", "").split(",") if c.strip()]
         ch_inner = chips(ch_items, "ch") if ch_items else ""
         so_items = [_t(lang, pr, PROP_ZH.get(pr, pr)) for pr in a.get("props", [])]
         so_inner = chips(so_items, "so") if so_items else ('<p>%s</p>' % esc(a.get("solution", "")))
