@@ -104,7 +104,8 @@ nav .nd.open .ndm.pm,nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transfor
 .pm .subgroup a.suball:hover{background:none;text-decoration:underline}
 .pm .subempty{color:var(--faint);font-size:13px;font-weight:500;padding:12px;line-height:1.5}
 @media(max-width:980px){nav .ndm.pm{grid-template-columns:200px 1fr;left:16px}.pm .ndsub{display:none}}
-@media(max-width:900px){nav a:not(.lang){display:none}nav .nd{display:none}}
+@media(max-width:900px){nav>a:not(.lang){display:none}nav .nd{display:none}
+nav .langsw{display:inline-flex;margin-left:auto}nav .langsw a{display:inline-block;padding:5px 7px;font-size:11.5px}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
 .btn{display:inline-block;font-weight:700;font-size:15px;padding:12px 24px;border-radius:10px}
@@ -429,11 +430,15 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .hero h1{font-size:30px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}
 .split{grid-template-columns:1fr;gap:22px}.split .imgframe{order:-1}.split .txt h2{font-size:25px}
 .acgrid{grid-template-columns:1fr 1fr;gap:10px}
+.acgrid.acgrid5{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:12px;padding:2px 2px 10px}
+.acgrid.acgrid5::-webkit-scrollbar{display:none}
+.acgrid.acgrid5 .acard{flex:0 0 74%;scroll-snap-align:start}
 .trustbar .wrap{grid-template-columns:1fr 1fr;gap:10px}
 .scgrid{grid-template-columns:1fr 1fr;gap:16px}
 .fsbox{grid-template-columns:1fr;gap:20px}
 .aslide{grid-template-columns:1fr;min-height:0}.aimg{min-height:190px}.aimg .aicon svg{width:60px;height:60px}.acopy{padding:26px 24px}.acopy h3{font-size:22px}.acar-nav{display:none}
 .cslide .cap h3{font-size:20px}}
+@media(max-width:560px){.scgrid{grid-template-columns:1fr}.trustbar .wrap{grid-template-columns:1fr}.svcbar .wrap{grid-template-columns:1fr}.whygrid{grid-template-columns:1fr}}
 """
 
 NAV_ITEMS = [("Home", "/", "home"),
