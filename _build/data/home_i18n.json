@@ -24,8 +24,8 @@
   "en": {
     "nav": [
       "Products",
+      "Industries",
       "Application Notes",
-      "Insights",
       "Service"
     ],
     "hero_eyebrow": "DURABLE IDENTIFICATION · SPECIALTY LABEL MATERIALS",
@@ -156,8 +156,8 @@
   "zh": {
     "nav": [
       "产品",
+      "行业",
       "应用笔记",
-      "洞察",
       "服务"
     ],
     "hero_eyebrow": "耐久标识 · 特种标签材料",
@@ -288,8 +288,8 @@
   "vi": {
     "nav": [
       "Sản phẩm",
+      "Ngành",
       "Application Notes",
-      "Insights",
       "Dịch vụ"
     ],
     "hero_eyebrow": "NHẬN DIỆN BỀN VỮNG · VẬT LIỆU NHÃN CHUYÊN DỤNG",
@@ -420,8 +420,8 @@
   "th": {
     "nav": [
       "ผลิตภัณฑ์",
+      "อุตสาหกรรม",
       "Application Notes",
-      "Insights",
       "บริการ"
     ],
     "hero_eyebrow": "ระบบระบุข้อมูลที่ทนทาน · วัสดุฉลากเฉพาะทาง",

@@ -11,10 +11,16 @@ sys.path.insert(0, BUILD)
 import gen_heatproof as hp
 import gen_steel as steel
 import gen_autoapps as autoapps
+import gen_appnotes as appnotes
 
 hp.main()        # clean + build shell: home, products hub, core/legal, nav/footer, base vercel.json
 steel.main()     # Metals & Ceramics sector — Steel/Aluminum/Ceramics + HP-900 line (owns /industries/metal-ceramics/, /industries/steel/ …)
 autoapps.main()  # Automotive Label Solutions — E-Label sector (owns /industries/automotive-label-materials/)
+appnotes.main()  # Application Notes — one SEO article per application (Purpose/Challenge/Risk/Solution)
+
+# sitemaps + redirects run LAST so every sector's tracked URLs are included
+hp.build_sitemaps()
+hp.write_redirects()
 
 def strip_cn_fullstops():
     """Client style: Chinese copy uses no full-stop (。). Trailing 。 is dropped; a
@@ -37,5 +43,4 @@ def strip_cn_fullstops():
     print("Chinese full-stop (。) stripped from", n, "pages")
 
 strip_cn_fullstops()
-print("BUILD COMPLETE — total EN canonical URLs:",
-      len(hp.ALL_URLS) + len(steel.URLS) + len(autoapps.URLS))
+print("BUILD COMPLETE — total EN canonical URLs:", len(hp.ALL_URLS))

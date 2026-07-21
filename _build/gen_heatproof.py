@@ -454,7 +454,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 
 NAV_ITEMS = [("Home", "/", "home"),
              ("Products", u_products(), "products"),
-             ("Insights", "/insights/", "insights"),
+             ("Application Notes", "/application-notes/", "insights"),
              ("Service", "/service/", "service")]
 NAV_ZH = {"Home":"首页","Products":"产品","Application Notes":"应用笔记","Insights":"洞察","Service":"服务"}
 
@@ -543,7 +543,7 @@ def nav_html(lang, active, path="/"):
         items, L(other, path), other_label, NAV_TOGGLE)
 
 FOOTER_LINKS = [("Home", "/"), ("Products", u_products()), ("Industries", u_ind_hub()),
-                ("Insights", "/insights/"), ("Service", "/service/"),
+                ("Application Notes", "/application-notes/"), ("Service", "/service/"),
                 ("About ETIA", "/about/"), ("Contact", "/contact/")]
 def footer_html(lang):
     nav = "".join('<li><a href="%s">%s</a></li>' % (L(lang, p), t) for t, p in FOOTER_LINKS)
@@ -1085,18 +1085,19 @@ def home_switcher(active):
 def home_nav(lang):
     T=HOME_I18N[lang]
     lf=lambda p: home_hlink(lang,p)
-    hrefs=["/insights/","/service/"]
+    hrefs=["/application-notes/","/service/"]
     prod=products_dropdown(lang, lf)
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
-    links="".join('<a href="%s">%s</a>'%(lf(h),esc(lbl)) for h,lbl in zip(hrefs,T["nav"][1:]))
+    # top nav after the Products dropdown: Application Notes, Service (nav[2:])
+    links="".join('<a href="%s">%s</a>'%(lf(h),esc(lbl)) for h,lbl in zip(hrefs,T["nav"][2:]))
     return '<nav><div class="navlinks">%s%s%s</div>%s%s</nav>' % (
         home_link, prod, links, home_switcher(lang), NAV_TOGGLE)
 
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
     navl="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,h),esc(l)) for h,l in
-                 zip(["/products/","/industries/","/insights/","/service/"],T["nav"][:4]))
+                 zip(["/products/","/industries/","/application-notes/","/service/"],T["nav"][:4]))
     legal="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,p),t) for p,t in
                   [("/privacy/","Privacy Policy"),("/cookies/","Cookie Policy"),("/terms/","Terms of Use")])
     return ('<footer><div class="wrap"><div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%%20LOGO.jpg" alt="ETIA Label"></div>'
@@ -1137,7 +1138,7 @@ HOME2 = {
     "h2": "Understand the Material. Learn from the Application.",
     "sub": "Practical knowledge for better identification decisions.",
     "body": "Explore technical guidance, material-selection insights, performance testing, printing considerations, and real-world case studies.",
-    "b1": "Explore Insights", "b1u": "/insights/", "b2": "View Case Studies", "b2u": "/products/"},
+    "b1": "Read Application Notes", "b1u": "/application-notes/", "b2": "View Case Studies", "b2u": "/products/"},
    {"eyebrow": "APPLICATION SUPPORT · TESTING · FLEXIBLE SUPPLY",
     "h2": "Support from Material Selection to Long-Term Supply.",
     "sub": "Practical support throughout every stage of your project.",
@@ -1165,7 +1166,7 @@ HOME2 = {
     "h2": "读懂材料，从应用中学习。",
     "sub": "帮助您做出更好标识决策的实用知识。",
     "body": "探索技术指南、材料选型洞察、性能测试、打印要点与真实案例研究。",
-    "b1": "浏览洞察", "b1u": "/insights/", "b2": "查看案例", "b2u": "/products/"},
+    "b1": "浏览应用笔记", "b1u": "/application-notes/", "b2": "查看案例", "b2u": "/products/"},
    {"eyebrow": "应用支持 · 检测 · 柔性供应",
     "h2": "从选材到长期供应的全程支持。",
     "sub": "贯穿项目每一阶段的切实支持。",
@@ -1315,7 +1316,8 @@ def build_sitemaps():
     for p,g in ALL_URLS: groups.setdefault(g,[]).append(p)
     files={}
     for g,fn in [("core","sitemap-core.xml"),("products","sitemap-products.xml"),
-                 ("industries","sitemap-industries.xml"),("applications","sitemap-applications.xml")]:
+                 ("industries","sitemap-industries.xml"),("applications","sitemap-applications.xml"),
+                 ("notes","sitemap-application-notes.xml")]:
         xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
         for p in groups.get(g,[]):
             xml+='  <url><loc>%s%s</loc>' % (SITE,p)
@@ -1337,6 +1339,8 @@ def write_redirects():
       {"source":"/products/management-tag","destination":"/products/heat-treatment-tags/","permanent":True},
       {"source":"/products/hp-700t","destination":"/products/hp-900/","permanent":True},
       {"source":"/products/heatproof/hp-t42-hp-cbr-tag","destination":"/products/heatproof/hp-l90/","permanent":True},
+      {"source":"/insights","destination":"/application-notes/","permanent":True},
+      {"source":"/insights/:path*","destination":"/application-notes/","permanent":True},
     ]}
     open(os.path.join(ROOT,"vercel.json"),"w").write(json.dumps(cfg,indent=2)+"\n")
 
@@ -1701,7 +1705,7 @@ def build_all():
     for a in APPS: build_application(lang, a)
     build_about(lang)
     build_contact(lang)
-    build_insights(lang)
+    # /insights/ retired — Application Notes (built by gen_appnotes) replaces it
     build_service(lang)
     # legal pages (general website template — client legal counsel should review)
     build_legal(lang)
@@ -1709,8 +1713,9 @@ def build_all():
 def main():
     clean()
     build_all()
-    build_sitemaps()
-    write_redirects()
+    # NOTE: build_sitemaps() + write_redirects() are called by the orchestrator
+    # (build.py) AFTER every sector generator has tracked its URLs, so the sector
+    # and Application-Notes pages are included in the sitemap.
     from collections import Counter
     print("HEATPROOF EN canonical URLs:", len(ALL_URLS))
     print(Counter(g for _,g in ALL_URLS))
