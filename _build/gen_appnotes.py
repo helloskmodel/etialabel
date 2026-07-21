@@ -5,7 +5,7 @@ the two keyword cards (Challenge -> Recommendation); the richer material (Label
 Purpose, Challenge, Risk of the Wrong Label and the full E-LABEL Solution with
 Feature / Benefit / Specification) lives here as an indexed, sitemap-listed article.
 Content source: the same _build/data/automotive_apps.json used by the sector page."""
-import re
+import os, re, json
 from urllib.parse import quote
 import gen_heatproof as hp
 from gen_heatproof import esc, L, page, write, LANGS
@@ -14,6 +14,13 @@ from gen_autoapps import _t, PROP_ZH, PROP_CHALLENGE, IC_INTRO, IC_CHAL, IC_SOL,
 
 APPS = auto.APPS
 HUB = "/application-notes/"
+
+# Structured, hand-authored application notes (Industry/Application/Technology header +
+# numbered sections). Data: _build/data/appnotes.json. These read as full technical
+# articles and follow the client's canonical Application-Note structure.
+_NOTES_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "appnotes.json")
+NOTES = json.load(open(_NOTES_FILE, encoding="utf-8"))["notes"] if os.path.exists(_NOTES_FILE) else []
+NOTE_URLS = [HUB + n["slug"] + "/" for n in NOTES]
 
 
 def slug(name):
@@ -161,6 +168,62 @@ def build_article(lang, a, s):
         hp.track(path, "notes")
 
 
+CSS_NOTE = """<style>
+.nnmeta{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:4px 0 8px}
+.nnmeta .row{display:grid;grid-template-columns:170px 1fr;gap:18px;padding:15px 22px;border-bottom:1px solid var(--line)}
+.nnmeta .row:last-child{border-bottom:none}
+.nnmeta .row:nth-child(odd){background:var(--bg)}
+.nnmeta .lab{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);padding-top:2px}
+.nnmeta .tags{font-size:15px;color:var(--ink);line-height:1.6}
+.nnsec{margin-top:36px}
+.nnsec .num{font-size:12px;font-weight:800;letter-spacing:.09em;color:var(--blue);text-transform:uppercase}
+.nnsec h2{font-size:23px;color:var(--blue-deep);margin:5px 0 13px;line-height:1.25}
+.nnsec p{font-size:16px;line-height:1.78;color:var(--ink)}
+.nncfg{margin-top:16px;background:var(--tint-blue);border:1px solid #d7e3fb;border-radius:11px;padding:15px 20px}
+.nncfg .lab{font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
+.nncfg .val{font-size:15px;font-weight:700;color:var(--blue-deep);line-height:1.65}
+.nnben{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:11px 26px}
+.nnben li{position:relative;padding-left:27px;font-size:15.5px;color:var(--ink);line-height:1.5}
+.nnben li::before{content:"✓";position:absolute;left:0;top:0;color:var(--green-d);font-weight:800}
+@media(max-width:700px){.nnmeta .row{grid-template-columns:1fr;gap:5px}.nnben{grid-template-columns:1fr}.nnsec h2{font-size:20px}}
+</style>"""
+
+
+def build_note(lang, n):
+    def H(e, z): return esc(_t(lang, e, z))
+    path = HUB + n["slug"] + "/"
+    title = _t(lang, n["title_en"], n["title_zh"])
+    rows = ""
+    for m in n.get("meta", []):
+        tags = _t(lang, m["tags_en"], m["tags_zh"])
+        rows += '<div class="row"><div class="lab">%s</div><div class="tags">%s</div></div>' % (
+            H(m["label_en"], m["label_zh"]), esc(" · ".join(tags)))
+    meta_html = ('<div class="nnmeta">%s</div>' % rows) if rows else ""
+    secs = ""
+    for idx, s in enumerate(n["sections"]):
+        inner = ""
+        if s.get("body_en") or s.get("body_zh"):
+            inner += '<p>%s</p>' % esc(_t(lang, s.get("body_en", ""), s.get("body_zh", "")))
+        if s.get("config_en") or s.get("config_zh"):
+            cfg = _t(lang, s.get("config_en", []), s.get("config_zh", []))
+            inner += '<div class="nncfg"><div class="lab">%s</div><div class="val">%s</div></div>' % (
+                H("Recommended Configuration", "推荐配置"), esc(" · ".join(cfg)))
+        if s.get("list_en") or s.get("list_zh"):
+            items = _t(lang, s.get("list_en", []), s.get("list_zh", []))
+            inner += '<ul class="nnben">%s</ul>' % "".join('<li>%s</li>' % esc(x) for x in items)
+        secs += '<div class="nnsec"><div class="num">%02d · %s</div><h2>%s</h2>%s</div>' % (
+            idx + 1, esc(s["key"]), H(s["h_en"], s["h_zh"]), inner)
+    body = CSS_NOTE + ('<section class="blk"><div class="wrap anwrap">%s%s</div></section>'
+                       '<div class="wrap">%s</div>') % (meta_html, secs, hp.cta2(lang, "applications"))
+    desc = _t(lang, n["sections"][0].get("body_en", "")[:150], n["sections"][0].get("body_zh", "")[:70])
+    crumb = [("Home", "/"), (_t(lang, "Application Notes", "应用笔记"), HUB), (title, path)]
+    write(lang, path, page(lang, path,
+        _t(lang, "%s — Application Note | ETIA" % n["title_en"], "%s —— 应用笔记 | ETIA" % n["title_zh"]),
+        desc, title, "", body, crumb, active="insights"))
+    if lang == "en":
+        hp.track(path, "notes")
+
+
 def build_hub(lang):
     zh = (lang == "zh")
     def H(e, z): return esc(_t(lang, e, z))
@@ -172,6 +235,17 @@ def build_hub(lang):
             groups[ar] = []; order.append(ar)
         groups[ar].append((a, s))
     blocks = ""
+    # featured, hand-authored technical notes first
+    if NOTES:
+        fcards = ""
+        for n in NOTES:
+            fcards += ('<a class="ancard" href="%s"><h3>%s</h3><p>%s</p>'
+                       '<div class="go">%s →</div></a>') % (
+                L(lang, HUB + n["slug"] + "/"), esc(_t(lang, n["title_en"], n["title_zh"])),
+                esc(_t(lang, n["sections"][0].get("body_en", ""), n["sections"][0].get("body_zh", ""))[:140]),
+                H("Read", "阅读"))
+        blocks += '<div class="angroup"><h2>%s</h2><div class="angrid">%s</div></div>' % (
+            H("Featured Notes", "精选笔记"), fcards)
     for ar in order:
         cards = ""
         for a, s in groups[ar]:
@@ -199,11 +273,13 @@ def build_hub(lang):
         hp.track(HUB, "notes")
 
 
-URLS = [HUB] + ART_URLS
+URLS = [HUB] + ART_URLS + NOTE_URLS
 
 def main():
     for lang in LANGS:
         build_hub(lang)
+        for n in NOTES:
+            build_note(lang, n)
         for a, s in zip(APPS, SLUGS):
             build_article(lang, a, s)
 
