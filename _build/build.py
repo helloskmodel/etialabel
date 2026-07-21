@@ -31,5 +31,28 @@ notes.main()   # Application Notes (SEO articles) + Electronic Component Labels 
 prodline.main()  # Reusable product-line landings (Polyonics Apex Series, first instance)
 steel.main()     # Metals/Steel sector — application landing + HP-900 product line (owns /industries/steel/)
 autoapps.main()  # Automotive Label Solutions — 19-application sector landing (owns /industries/automotive-label-materials/)
+
+def strip_cn_fullstops():
+    """Client style: Chinese copy uses no full-stop (。). Trailing 。 is dropped; a
+    mid-sentence 。 (between clauses) becomes a space so sentences don't run together.
+    Runs over all generated HTML so current and future Chinese content stays consistent."""
+    root_dir = os.path.dirname(BUILD)
+    skip = {"_build", "_docs", ".git", "node_modules", "scratchpad"}
+    n = 0
+    for r, dirs, files in os.walk(root_dir):
+        dirs[:] = [d for d in dirs if d not in skip and not d.startswith(".")]
+        for f in files:
+            if not f.endswith(".html"):
+                continue
+            p = os.path.join(r, f)
+            s = open(p, encoding="utf-8").read()
+            if "。" not in s:
+                continue
+            new = s.replace("。<", "<").replace("。 ", " ").replace("。", " ")
+            if new != s:
+                open(p, "w", encoding="utf-8").write(new); n += 1
+    print("Chinese full-stop (。) stripped from", n, "pages")
+
+strip_cn_fullstops()
 print("BUILD COMPLETE — total EN canonical URLs:",
       len(hp.ALL_URLS)+len(auto.AUTO_URLS)+len(hc.HC_URLS)+len(pcb.URLS)+len(wc.URLS)+len(pi.URLS)+len(fs.URLS)+len(land.URLS)+len(notes.URLS)+len(prodline.URLS)+len(steel.URLS)+len(autoapps.URLS))
