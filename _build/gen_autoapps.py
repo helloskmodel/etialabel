@@ -43,13 +43,16 @@ def _svg(p): return ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
 IC_INTRO = _svg('<circle cx="12" cy="12" r="9"/><path d="M12 16v-5M12 8h.01"/>')
 IC_CHAL = _svg('<path d="M12 3 2 20h20L12 3z"/><path d="M12 10v5M12 18h.01"/>')
 IC_SOL  = _svg('<path d="M12 3 4 6.5v5c0 4.6 3.2 7.7 8 9.5 4.8-1.8 8-4.9 8-9.5v-5L12 3z"/><path d="m9 12 2 2 4-4"/>')
+# Risk-of-wrong-label — shield with an X (what goes wrong if the label is mismatched)
+IC_RISK = _svg('<path d="M12 3 4 6.5v5c0 4.6 3.2 7.7 8 9.5 4.8-1.8 8-4.9 8-9.5v-5L12 3z"/><path d="m9.5 9.5 5 5M14.5 9.5l-5 5"/>')
 
 UI = {
  "browse": ("Browse by Application", "按应用浏览"),
- "intro": ("Introduction", "介绍"),
+ "intro": ("Label Purpose", "标签用途"),
  "products": ("Recommended Products", "推荐产品"),
  "solutions": ("Solutions", "解决方案"),
- "risk": ("Risk of the Wrong Label", "用错标签的风险"),
+ "risk": ("Risk of Wrong Label", "用错标签风险"),
+ "challenge": ("Challenge", "应用挑战"),
  "feature": ("Feature", "特性"), "benefit": ("Benefit", "收益"), "spec": ("Specification", "规格"),
  "distributor": ("Computype — ETIA authorized distributor", "Computype —— ETIA 授权代理"),
  "talk": ("Talk to a Specialist", "咨询专家"),
@@ -124,10 +127,10 @@ def build_sector(lang):
     overview = ('<section class="blk"><div class="wrap"><div class="avovbody"><p>%s</p></div></div></section>') % H(
         "ETIA E-LABEL materials matched to each application on the vehicle — from high-temperature engine-bay warnings and VIN traceability to EV charging labels and tire vulcanization. Each application shows what it must withstand, the recommended resistance, and the matched E-LABEL product.",
         "ETIA E-LABEL 系列与整车各应用一一匹配 —— 从发动机舱高温警示、VIN 可追溯，到新能源充电标签与轮胎硫化标签。每个应用都列出需要耐受什么、推荐的抗性属性，以及匹配的 E-LABEL 产品。")
-    def box_wrap(ic, lbl, col, inner, tint=False):
+    def box_wrap(ic, lbl, col, inner, bg=""):
         return ('<div class="avbox"%s><div class="h"><span class="i" style="color:%s">%s</span>'
                 '<span class="e" style="color:%s">%s</span></div>%s</div>') % (
-            (' style="background:#f4f9f2"' if tint else ''), col, ic, col, lbl, inner)
+            (' style="background:%s" ' % bg if bg else ''), col, ic, col, lbl, inner)
     def chips(items, cls):
         return '<div class="avchips">%s</div>' % "".join('<span class="avchip %s">%s</span>' % (cls, esc(x)) for x in items)
     tabs = ""; panels = ""
@@ -135,25 +138,15 @@ def build_sector(lang):
         name = _t(lang, a["name_en"], a["name_zh"])
         tabs += '<button class="avtab%s" onclick="avTab(this,%d)">%s</button>' % (
             " on" if i == 0 else "", i, esc(name))
-        # Introduction (prose) / Challenge (chips) / Solution (chips) — three side-by-side boxes
+        # Three prose cards — Label Purpose / Challenge / Risk of Wrong Label
         area = ('<span class="area">%s</span>' % esc(a["area"])) if a.get("area") else ""
-        intro_inner = area + '<p>%s</p>' % esc(_t(lang, a["purpose_en"], a["purpose_zh"]))
-        # challenge chips derived from the paired vocabulary so they correspond to the Solution chips
-        seen = set(); ch_items = []
-        for pr in a.get("props", []):
-            pair = PROP_CHALLENGE.get(pr)
-            if pair and pair[0] not in seen:
-                seen.add(pair[0]); ch_items.append(_t(lang, pair[0], pair[1]))
-        so_items = [_t(lang, pr, PROP_ZH.get(pr, pr)) for pr in a.get("props", [])]
+        purpose_inner = area + '<p>%s</p>' % esc(_t(lang, a["purpose_en"], a["purpose_zh"]))
+        chal_inner = '<p>%s</p>' % esc(_t(lang, a.get("challenge_en", ""), a.get("challenge_zh", "")))
+        risk_inner = '<p>%s</p>' % esc(_t(lang, a.get("risk_en", ""), a.get("risk_zh", "")))
         box = '<div class="av3">%s%s%s</div>' % (
-            box_wrap(IC_INTRO, U("intro"), "var(--blue)", intro_inner),
-            box_wrap(IC_CHAL, H("Challenge", "挑战"), "#c2621f", chips(ch_items, "ch")),
-            box_wrap(IC_SOL, H("Recommended Solution", "推荐方案"), "var(--green-d)", chips(so_items, "so"), tint=True))
-        # risk-of-the-wrong-label callout
-        risk = ""
-        if a.get("risk_en") or a.get("risk_zh"):
-            risk = '<div class="avrisk"><span class="rl">%s</span>%s</div>' % (
-                U("risk"), esc(_t(lang, a.get("risk_en", ""), a.get("risk_zh", ""))))
+            box_wrap(IC_INTRO, U("intro"), "var(--blue)", purpose_inner),
+            box_wrap(IC_CHAL, U("challenge"), "#c2621f", chal_inner),
+            box_wrap(IC_RISK, U("risk"), "#c0341d", risk_inner, bg="#fff6f2"))
         # E-LABEL product cards: model + Feature + Benefit + Specification
         cards = ""
         for pr in a.get("products", []):
@@ -169,8 +162,8 @@ def build_sector(lang):
                 url, badge, esc(pr["model"]), note, lines, U("soon"))
         plw = ('<div class="avplw"><div class="avplh">%s</div><div class="avplg">%s</div></div>' % (
             U("products"), cards)) if cards else ""
-        panels += '<div class="avpanel" data-i="%d" style="display:%s">%s%s%s</div>' % (
-            i, "block" if i == 0 else "none", box, risk, plw)
+        panels += '<div class="avpanel" data-i="%d" style="display:%s">%s%s</div>' % (
+            i, "block" if i == 0 else "none", box, plw)
     js = ("<script>function avTab(b,i){var m=b.closest('.avmod');"
           "m.querySelectorAll('.avtab').forEach(function(x,j){x.classList.toggle('on',j===i);});"
           "m.querySelectorAll('.avpanel').forEach(function(p){p.style.display=(+p.getAttribute('data-i')===i)?'block':'none';});}"
