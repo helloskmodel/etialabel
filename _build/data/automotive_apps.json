@@ -1,0 +1,401 @@
+{
+ "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-automotive-tire.png",
+ "apps": [
+  {
+   "area": "Engine Compartment",
+   "name_en": "Radiator Warning Labels",
+   "name_zh": "散热器警示标签",
+   "purpose_en": "Safety warning and operating information for the radiator and cooling system; withstands high heat and coolant.",
+   "purpose_zh": "散热器及冷却系统的安全警示与操作信息标识，耐高温冷却液。",
+   "risk_en": "Labels dropping off at high heat lose the safety warning; coolant corrosion smears the print; technician mis-operation causes safety incidents.",
+   "risk_zh": "高温脱落导致安全警示丢失、冷却液腐蚀脱墨、维修人员误操作引发安全事故。",
+   "props": [
+    "Heat-Resistant",
+    "High-Temperature-Resistant",
+    "Chemical-Resistant",
+    "Humidity-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2813",
+     "feature_en": "White gloss polyester + medium-high-tack acrylic + heat-resistant topcoat",
+     "feature_zh": "白色光面聚酯基材+中高粘丙烯酸胶+耐温顶涂层",
+     "benefit_en": "Withstands engine-bay heat and humidity; resists coolant without lifting; warning stays legible long-term",
+     "benefit_zh": "耐发动机舱高温高湿、耐冷却液不脱落、警示信息长期清晰可读",
+     "spec_en": "Facestock: 2mil white gloss PET · Adhesive: medium-high-tack acrylic · Temp: -40~150℃ · coolant-resistant · UL",
+     "spec_zh": "基材:2mil白色光面聚酯PET;胶层:中高粘丙烯酸;耐温:-40~150℃;耐冷却液;UL认证",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Engine Compartment",
+   "name_en": "Battery Labels",
+   "name_zh": "电池标签",
+   "purpose_en": "Automotive battery identification, safety warning and service information; resists acids/alkalis and heat cycling.",
+   "purpose_zh": "汽车蓄电池标识、安全警示及维保信息标签，耐酸碱及热循环。",
+   "risk_en": "Electrolyte corrosion causes drop-off; adhesive fails under heat cycling; loss of battery traceability affects after-sales and recall.",
+   "risk_zh": "电解液腐蚀脱落、热循环胶失效、电池追溯丢失影响售后与召回。",
+   "props": [
+    "Heat-Resistant",
+    "Chemical-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2512",
+     "feature_en": "White gloss polyester + chemical-resistant acrylic + high-durability formula",
+     "feature_zh": "白色光面聚酯+耐化学丙烯酸胶+高耐久性配方",
+     "benefit_en": "No edge-lift through battery heat cycling; resists electrolyte corrosion; identification stays clear over full battery life",
+     "benefit_zh": "耐电池热循环不翘边、耐电解液腐蚀、电池全寿命标识清晰",
+     "spec_en": "Facestock: 2mil white gloss PET · Adhesive: medium-high-tack chemical-resistant acrylic · Temp: -40~125℃ · acid/alkali-resistant · UL",
+     "spec_zh": "基材:2mil白色光面聚酯PET;胶层:中高粘耐化学丙烯酸;耐温:-40~125℃;耐酸碱;UL认证",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Engine Compartment",
+   "name_en": "Power Steering / Fluid Labels",
+   "name_zh": "动力转向油液标签",
+   "purpose_en": "Identification and maintenance information for power-steering and fluid reservoirs; resists engine oil and hydraulic fluid.",
+   "purpose_zh": "动力转向及各类油液储液罐的标识与维护信息，耐机油液压油。",
+   "risk_en": "Oil penetration fails the adhesive and drops the label; curved-surface edge-lift; mixed-up fluid labels cause wrong fill and faults.",
+   "risk_zh": "油污渗透胶失效脱落、曲面翘边、油液标识混淆加错油引发故障。",
+   "props": [
+    "Oil-Resistant",
+    "Chemical-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2823",
+     "feature_en": "Silver matte polyester + ultra-high-tack oil-resistant acrylic + conformable",
+     "feature_zh": "银色哑光聚酯+超高粘耐油丙烯酸胶+曲面适配",
+     "benefit_en": "Resists engine/hydraulic oil without swelling; conforms to curves without lifting; durable in oily environments",
+     "benefit_zh": "耐机油液压油不溶胀、曲面贴附不翘边、油液环境标识持久",
+     "spec_en": "Facestock: 2mil silver matte PET · Adhesive: ultra-high-tack oil-resistant acrylic · Temp: -40~120℃ · oil/hydraulic-fluid-resistant",
+     "spec_zh": "基材:2mil银色哑光聚酯PET;胶层:超高粘耐油丙烯酸;耐温:-40~120℃;耐机油液压油",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Door Jamb",
+   "name_en": "VIN Labels",
+   "name_zh": "VIN标签",
+   "purpose_en": "Permanent VIN identification for whole-vehicle traceability and regulatory compliance; tamper- and tear-evident.",
+   "purpose_zh": "车辆识别码VIN永久性标识，整车追溯与法规合规，防篡改防撕毁。",
+   "risk_en": "A tampered label voids vehicle traceability; a worn VIN becomes unreadable; failing regulatory compliance.",
+   "risk_zh": "标签被篡改车辆追溯失效、磨损后VIN不可读、法规合规不通过。",
+   "props": [
+    "Laser-Markable",
+    "Abrasion-Resistant",
+    "Chemical-Resistant",
+    "Tamper-Evident"
+   ],
+   "products": [
+    {
+     "model": "E-2512BL",
+     "feature_en": "Laser-markable acrylic facestock + high-strength chemical-resistant adhesive + destructible structure",
+     "feature_zh": "激光打标丙烯酸基材+高强度耐化学胶+防撕毁结构",
+     "benefit_en": "Laser marking is permanent and non-erasable; chemical- and abrasion-resistant; tamper-evident to meet regulations",
+     "benefit_zh": "激光打标永久不可擦除、耐化学耐磨损、防篡改满足法规要求",
+     "spec_en": "Facestock: black matte / white acrylic · Adhesive: high-strength chemical-resistant acrylic · Temp: -40~150℃ · laser-markable · tamper-evident",
+     "spec_zh": "基材:黑色哑光/白色丙烯酸;胶层:高强度耐化学丙烯酸;耐温:-40~150℃;激光打标;防篡改",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Door Jamb",
+   "name_en": "Tire Pressure Labels",
+   "name_zh": "胎压警示标签",
+   "purpose_en": "Tire-pressure and vehicle-load information at the door jamb; readable outdoors long-term.",
+   "purpose_zh": "车门立柱处轮胎气压及车辆载荷信息标识，长期户外可读。",
+   "risk_en": "UV ageing fades the label; adhesive fails under temperature cycling; loss of tire-pressure info affects driving safety.",
+   "risk_zh": "紫外线老化褪色、温变胶失效、胎压信息丢失影响行车安全。",
+   "props": [
+    "Weather-Resistant",
+    "Waterproof",
+    "UV-Resistant",
+    "Abrasion-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2512",
+     "feature_en": "White gloss polyester + weather-resistant acrylic + UV-stable coating",
+     "feature_zh": "白色光面聚酯+耐候丙烯酸胶+UV稳定涂层",
+     "benefit_en": "No fading under outdoor UV; no drop-off through temperature cycling; pressure info stays clear long-term",
+     "benefit_zh": "耐户外紫外线不褪色、温变循环不脱落、胎压信息长期清晰",
+     "spec_en": "Facestock: 2mil white gloss PET · Adhesive: medium-high-tack weather-resistant acrylic · Temp: -40~125℃ · UV-resistant · UL",
+     "spec_zh": "基材:2mil白色光面聚酯PET;胶层:中高粘耐候丙烯酸;耐温:-40~125℃;耐UV;UL认证",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Battery & Electrical",
+   "name_en": "Battery Identification Labels",
+   "name_zh": "电池标识标签",
+   "purpose_en": "Information, safety warning and service identification for battery cells and modules; resists temperature cycling and chemicals.",
+   "purpose_zh": "电池单体及模组的信息、安全警示与服务标识，耐温变耐化学。",
+   "risk_en": "Adhesive fails and drops off under heat cycling; chemical corrosion smears print; battery-module traceability breaks.",
+   "risk_zh": "热循环胶失效脱落、化学腐蚀脱墨、电池模组追溯中断。",
+   "props": [
+    "Heat-Resistant",
+    "Chemical-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2512",
+     "feature_en": "White gloss polyester + chemical-resistant acrylic + high-durability formula",
+     "feature_zh": "白色光面聚酯+耐化学丙烯酸胶+高耐久配方",
+     "benefit_en": "Withstands battery heat cycling; resists electrolyte corrosion; reliable identification across the full battery lifecycle",
+     "benefit_zh": "耐电池热循环、耐电解液腐蚀、电池全生命周期标识可靠",
+     "spec_en": "Facestock: 2mil white gloss PET · Adhesive: medium-high-tack chemical-resistant acrylic · Temp: -40~125℃ · acid/alkali-resistant",
+     "spec_zh": "基材:2mil白色光面聚酯PET;胶层:中高粘耐化学丙烯酸;耐温:-40~125℃;耐酸碱",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Battery & Electrical",
+   "name_en": "Electrical Component Labels",
+   "name_zh": "电气元件标签",
+   "purpose_en": "Small-format identification and traceability for automotive electrical components, harnesses and connectors; precise application.",
+   "purpose_zh": "汽车电气元件、线束、连接器的小尺寸标识与追溯，精密贴附。",
+   "risk_en": "Small labels print unclearly; edge-lift on component curves; loss of electrical traceability hampers repair.",
+   "risk_zh": "小标签打印不清、元件曲面翘边、电气追溯丢失影响维修。",
+   "props": [
+    "High-Temperature-Resistant",
+    "Heat-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2931",
+     "feature_en": "Heat-resistant PET film facestock + standard high-temperature adhesive + ultra-thin construction",
+     "feature_zh": "耐高温PET薄膜基材+标准高温胶+超薄结构",
+     "benefit_en": "Stable in high-heat environments; precise application on small formats; component traceability stays legible",
+     "benefit_zh": "耐高温环境稳定、小尺寸精密贴附、电气元件追溯清晰可读",
+     "spec_en": "Facestock: heat-resistant PET film · Adhesive: high-temperature acrylic · Temp: -40~180℃ short-term · ultra-thin",
+     "spec_zh": "基材:耐高温PET薄膜;胶层:高温丙烯酸;耐温:-40~180℃短期;超薄",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Fuel & Charging",
+   "name_en": "Fuel Instruction Labels",
+   "name_zh": "燃油说明标签",
+   "purpose_en": "Operating instructions and safety warnings at the fuel filler; resists fuel chemicals and applies to curved surfaces.",
+   "purpose_zh": "燃油加注口操作说明与安全警示标签，耐燃油化学品曲面贴附。",
+   "risk_en": "Fuel dissolves the adhesive and drops the label; curved-surface edge-lift; wrong filling causes safety incidents.",
+   "risk_zh": "燃油溶解胶层脱落、曲面翘边、加注错误引发安全事故。",
+   "props": [
+    "Chemical-Resistant",
+    "Oil-Resistant",
+    "Humidity-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2522",
+     "feature_en": "Silver matte polyester + high-tack flexible acrylic + conformable",
+     "feature_zh": "银色哑光聚酯+高粘柔性丙烯酸胶+曲面适配",
+     "benefit_en": "Resists fuel chemicals; conforms to curves without lifting; filler identification stays clear and durable",
+     "benefit_zh": "耐燃油化学品、曲面贴附不翘边、加注口标识持久清晰",
+     "spec_en": "Facestock: 2mil silver matte PET · Adhesive: high-tack flexible acrylic · Temp: -40~120℃ · fuel-resistant · conformable",
+     "spec_zh": "基材:2mil银色哑光聚酯PET;胶层:高粘柔性丙烯酸;耐温:-40~120℃;耐燃油;曲面适配",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Fuel & Charging",
+   "name_en": "EV Charging Instruction Labels",
+   "name_zh": "新能源充电说明标签",
+   "purpose_en": "Operating instructions and safety information at the EV charging port; resists outdoor exposure and chemicals.",
+   "purpose_zh": "电动汽车充电口操作说明与安全信息标识，耐户外耐化学。",
+   "risk_en": "Outdoor ageing fades the label; chemical corrosion smears print; loss of charging-safety info causes incidents.",
+   "risk_zh": "户外老化褪色、化学腐蚀脱墨、充电安全信息丢失引发事故。",
+   "props": [
+    "Weather-Resistant",
+    "Waterproof",
+    "UV-Resistant",
+    "Chemical-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2813",
+     "feature_en": "White gloss polyester + weather-resistant acrylic + UV-stable topcoat",
+     "feature_zh": "白色光面聚酯+耐候丙烯酸胶+UV稳定顶涂层",
+     "benefit_en": "All-weather outdoor durability; resists charging-port chemicals; EV identification stays clear and compliant long-term",
+     "benefit_zh": "耐户外全气候、耐充电口化学品、新能源标识长期清晰合规",
+     "spec_en": "Facestock: 2mil white gloss PET · Adhesive: medium-high-tack weather-resistant acrylic · Temp: -40~150℃ · UV/weather-resistant",
+     "spec_zh": "基材:2mil白色光面聚酯PET;胶层:中高粘耐候丙烯酸;耐温:-40~150℃;耐UV耐候",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Exterior",
+   "name_en": "Exterior Identification Labels",
+   "name_zh": "外部标识标签",
+   "purpose_en": "Identification and traceability for exterior vehicle components; all-weather, UV- and abrasion-resistant.",
+   "purpose_zh": "汽车外部零部件的标识与追溯，耐全气候紫外线耐磨。",
+   "risk_en": "UV ageing chalks and drops the label; grit abrasion makes it unreadable; exterior-part traceability is lost.",
+   "risk_zh": "UV老化粉化脱落、砂石磨损不可读、外饰件追溯丢失。",
+   "props": [
+    "UV-Resistant",
+    "Weather-Resistant",
+    "Waterproof",
+    "Abrasion-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2813",
+     "feature_en": "White gloss polyester + weather-resistant acrylic + UV anti-ageing coating",
+     "feature_zh": "白色光面聚酯+耐候丙烯酸胶+UV抗老化涂层",
+     "benefit_en": "All-weather resistance without chalking; withstands grit abrasion; full-life traceability for exterior parts",
+     "benefit_zh": "全气候耐候不粉化、耐砂石磨损、外饰件全寿命追溯",
+     "spec_en": "Facestock: 2mil white gloss PET · Adhesive: medium-high-tack weather-resistant acrylic · Temp: -40~150℃ · UV/weather-resistant",
+     "spec_zh": "基材:2mil白色光面聚酯PET;胶层:中高粘耐候丙烯酸;耐温:-40~150℃;耐UV;耐候",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Interior",
+   "name_en": "Airbag Labels",
+   "name_zh": "安全气囊标签",
+   "purpose_en": "Safety identification and warning information for the airbag module; heat-ageing resistant, interior-grade.",
+   "purpose_zh": "安全气囊模块的安全标识与警示信息，耐热老化内饰级。",
+   "risk_en": "Heat-ageing drop-off; poor appearance; loss of the safety warning affects correct airbag use.",
+   "risk_zh": "热老化脱落、外观不良、安全警示丢失影响气囊正确使用。",
+   "props": [
+    "Heat-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2112",
+     "feature_en": "White gloss polyester + interior-grade standard acrylic + low-glare surface",
+     "feature_zh": "白色光面聚酯+内饰级标准丙烯酸胶+低反光表面",
+     "benefit_en": "Resists interior heat-ageing; flat and clean appearance; airbag safety info stays clear long-term",
+     "benefit_zh": "内饰耐热老化、外观平整美观、气囊安全信息长期清晰",
+     "spec_en": "Facestock: 2mil white gloss PET · Adhesive: standard interior acrylic · Temp: -40~110℃ · interior-grade",
+     "spec_zh": "基材:2mil白色光面聚酯PET;胶层:标准内饰丙烯酸;耐温:-40~110℃;内饰级",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Interior",
+   "name_en": "Sun Visor Warning Labels",
+   "name_zh": "遮阳板警示标签",
+   "purpose_en": "Safety warning and operating instructions on the sun visor; interior-grade, ageing-resistant, lays flat.",
+   "purpose_zh": "遮阳板处安全警示与操作说明标识，内饰级耐老化平整。",
+   "risk_en": "Sunlight ageing; edge-lift spoils appearance; warning info fades and becomes unreadable.",
+   "risk_zh": "阳光照射老化、翘边影响外观、警示信息褪色不可读。",
+   "props": [
+    "Heat-Resistant",
+    "UV-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2512",
+     "feature_en": "White gloss polyester + interior standard acrylic + flat surface",
+     "feature_zh": "白色光面聚酯+内饰标准丙烯酸胶+平整表面",
+     "benefit_en": "Flat, clean interior appearance; resists sunlight ageing; sun-visor warning stays clear long-term",
+     "benefit_zh": "内饰平整美观、耐阳光老化、遮阳板警示信息长期清晰",
+     "spec_en": "Facestock: 2mil white gloss PET · Adhesive: standard interior acrylic · Temp: -40~110℃ · interior-grade",
+     "spec_zh": "基材:2mil白色光面聚酯PET;胶层:标准内饰丙烯酸;耐温:-40~110℃;内饰级",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Interior",
+   "name_en": "Carpet Component Labels",
+   "name_zh": "地毯零部件标签",
+   "purpose_en": "Component identification for automotive carpet and interior textiles; bonds to fabric surfaces.",
+   "purpose_zh": "汽车地毯及内饰纺织件的零部件标识，织物表面贴附。",
+   "risk_en": "Drop-off from fabric surfaces; label damaged when flexed; component traceability lost.",
+   "risk_zh": "织物表面脱落、弯折标签损坏、零部件追溯丢失。",
+   "props": [
+    "Flexible",
+    "Abrasion-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2012",
+     "feature_en": "White matte polyester + flexible textile acrylic + low-modulus construction",
+     "feature_zh": "白色哑光聚酯+柔性纺织物丙烯酸胶+低模量结构",
+     "benefit_en": "Strong bond to fabric without peeling; flexes without cracking; reliable traceability for carpet parts",
+     "benefit_zh": "纺织物表面强粘不掉、柔性耐弯折、地毯零部件追溯可靠",
+     "spec_en": "Facestock: white matte polyester · Adhesive: flexible textile acrylic · Temp: -40~100℃ · fabric-compatible",
+     "spec_zh": "基材:聚酯白色哑光;胶层:柔性纺织物丙烯酸;耐温:-40~100℃;织物适配",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Flexible Components",
+   "name_en": "Flexible Component Labels",
+   "name_zh": "柔性零部件标签",
+   "purpose_en": "Identification for flexible automotive parts; withstands repeated flexing and bending deformation.",
+   "purpose_zh": "汽车柔性零部件的标识，耐反复弯折弯曲变形。",
+   "risk_en": "Flex-fatigue cracking; edge-lift under surface deformation; traceability of flexible parts breaks.",
+   "risk_zh": "弯折疲劳脆裂、曲面变形翘边、柔性件追溯中断。",
+   "props": [
+    "Flexible",
+    "Abrasion-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2512BL",
+     "feature_en": "White matte polyester facestock + low-modulus flexible acrylic + high-elongation construction",
+     "feature_zh": "白色哑光聚酯基材+低模量柔性丙烯酸胶+高延展结构",
+     "benefit_en": "High elongation for repeated flexing; deforms with the part without cracking; durable traceability for flexible parts",
+     "benefit_zh": "高延展耐反复弯折、随部件变形不裂、柔性零部件追溯持久",
+     "spec_en": "Facestock: white matte polyester · Adhesive: low-modulus flexible acrylic · Temp: -40~100℃ · high-elongation",
+     "spec_zh": "基材:聚酯白色哑光;胶层:低模量柔性丙烯酸;耐温:-40~100℃;高延展性",
+     "brand": "E-Label"
+    }
+   ]
+  },
+  {
+   "area": "Rubber Components",
+   "name_en": "Tire Vulcanization Labels (Pre-cure)",
+   "name_zh": "轮胎硫化标签（预硫化）",
+   "purpose_en": "Pre-printed barcode labels applied to green tires during tire building; stay readable through high-temperature, high-pressure vulcanization for production traceability.",
+   "purpose_zh": "轮胎成型工序中贴附于生胎的预制条码标签，经高温高压硫化后保持可读，用于生产追溯。",
+   "risk_en": "Barcode smears after vulcanization; poor bond to the green-rubber surface; edge-lift during vulcanization breaks traceability.",
+   "risk_zh": "硫化后条码糊掉、生胶面贴附不良、硫化过程翘边导致追溯中断。",
+   "props": [
+    "Heat-Resistant",
+    "High-Temperature-Resistant",
+    "Chemical-Resistant"
+   ],
+   "products": [
+    {
+     "model": "E-2313",
+     "feature_en": "Heat-stabilized pre-cure construction + high-temperature acrylic + vulcanization-validated formula",
+     "feature_zh": "热稳定预硫化结构+耐高温丙烯酸胶+硫化验证配方",
+     "benefit_en": "Barcode remains readable after high-temp/high-pressure vulcanization; reliable bond on green rubber; full-process tire traceability",
+     "benefit_zh": "经硫化高温高压后条码仍可读、生胶面可靠贴附、轮胎全工序追溯",
+     "spec_en": "Facestock: heat-stabilized polyester · Adhesive: vulcanization-grade high-temperature acrylic · Vulcanization: 180℃ high-pressure · green-rubber-compatible",
+     "spec_zh": "基材:热稳定聚酯;胶层:硫化级耐高温丙烯酸;耐硫化:180℃高压;生胶适配",
+     "brand": "E-Label"
+    },
+    {
+     "model": "TS1100P / TS1134P",
+     "feature_en": "Heat-stabilized pre-cure construction + high-temperature acrylic + vulcanization-validated formula",
+     "feature_zh": "热稳定预硫化结构+耐高温丙烯酸胶+硫化验证配方",
+     "benefit_en": "Barcode remains readable after high-temp/high-pressure vulcanization; reliable bond on green rubber; full-process tire traceability",
+     "benefit_zh": "经硫化高温高压后条码仍可读、生胶面可靠贴附、轮胎全工序追溯",
+     "spec_en": "Facestock: heat-stabilized polyester · Adhesive: vulcanization-grade high-temperature acrylic · Vulcanization: 180℃ high-pressure · green-rubber-compatible",
+     "spec_zh": "基材:热稳定聚酯;胶层:硫化级耐高温丙烯酸;耐硫化:180℃高压;生胶适配",
+     "brand": "Computype"
+    }
+   ]
+  }
+ ]
+}

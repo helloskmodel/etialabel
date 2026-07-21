@@ -59,10 +59,10 @@ def cta_fs(lang):
     if lang=="zh":
         return ('<div class="cta"><div class="ic">⚡</div><h3>始于应用。终于选对材料。</h3>'
                 '<p>提交温度、表面、化学品、打印方式与标签尺寸,申请进一步选型或样品测试。</p>'
-                '<div class="btns"><a class="btn pri" href="%s">申请样品</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
+                '<div class="btns"><a class="btn pri" href="%s">咨询专家</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
     return ('<div class="cta"><div class="ic">⚡</div><h3>Start with the Application. Finish with the Right Material.</h3>'
             '<p>Send your temperature, surface, chemicals, print method and label size to request selection support or sample testing.</p>'
-            '<div class="btns"><a class="btn pri" href="%s">Request a Sample</a><a class="btn on-dark" href="%s">Discuss Your Application</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
+            '<div class="btns"><a class="btn pri" href="%s">Talk to a Specialist</a><a class="btn on-dark" href="%s">Discuss Your Application</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
 
 def build_center(lang):
     path=CENTER
@@ -119,7 +119,7 @@ def build_landing(lang,p):
     rellinks="".join('<a href="%s">%s</a>'%(L(lang,u),esc(t)) for u,t in rel[:3])
     faq=build_faq(p,lang)
     hero_btns=('<div class="btns" style="margin-top:16px"><a class="btn pri" href="%s">%s</a>%s</div>')%(
-        L(lang,"/contact/"),("申请样品" if lang=="zh" else "Request a Sample"),tds_button(p,lang))
+        L(lang,"/contact/"),("咨询专家" if lang=="zh" else "Talk to a Specialist"),tds_button(p,lang))
     body=(
       '<section class="blk"><div class="wrap"><div class="xlinks">%s %s</div>%s'
       '<div style="margin-top:10px">%s</div>%s</div></section>'

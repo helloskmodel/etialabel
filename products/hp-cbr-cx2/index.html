@@ -23,6 +23,9 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .logo img{height:40px;width:auto;display:block}
 .logo .ar{color:var(--green);margin-right:2px}.logo .grn{color:var(--green)}.logo .blu{color:var(--blue-deep)}
 nav{display:flex;align-items:center;gap:26px}
+nav .navlinks{display:flex;align-items:center;gap:26px}
+.navtog{display:none;background:none;border:none;cursor:pointer;padding:6px;margin-left:8px;color:var(--ink)}
+.navtog svg{width:26px;height:26px;display:block}
 nav a{font-size:14.5px;font-weight:600;color:var(--ink);white-space:nowrap}
 nav a:hover{color:var(--blue)}nav a.on{color:var(--blue)}
 nav .lang{font-size:13px;color:var(--faint);border:1px solid var(--line);border-radius:8px;padding:5px 10px}
@@ -30,30 +33,52 @@ nav .lang{font-size:13px;color:var(--faint);border:1px solid var(--line);border-
 nav .langsw a{display:inline-block;font-size:12px;color:var(--faint);padding:5px 9px;border-radius:7px;font-weight:600}
 nav .langsw a.on{color:#fff;background:var(--blue)}
 nav .langsw a:hover{color:var(--blue)}nav .langsw a.on:hover{color:#fff}
-/* Products mega-menu dropdown (spacious, icon rows, opens leftward to stay on screen) */
+/* Products mega-menu — left-anchored cascading columns (up to 3 levels, Delo/Panacol style) */
 nav .nd{position:relative;display:inline-block}
-nav .nd::after{content:"";position:absolute;top:100%;left:0;right:0;height:18px}
+nav .nd.ndwide{position:static}
 nav .ndt{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;font-weight:600;color:var(--ink);cursor:pointer}
 nav .ndt .caret{font-size:10px;color:var(--faint);transition:.15s}
-nav .nd:hover .ndt{color:var(--blue)}nav .nd:hover .ndt .caret{transform:rotate(180deg);color:var(--blue)}
-nav .ndm.pm{position:absolute;top:100%;right:0;margin-top:16px;background:#fff;border:1px solid var(--line);
-  border-radius:18px;box-shadow:0 26px 70px rgba(20,40,90,.20);display:grid;grid-template-columns:236px 1fr;
-  width:760px;max-width:92vw;opacity:0;visibility:hidden;transform:translateY(10px);transition:.16s;z-index:60;overflow:hidden}
-nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transform:translateY(0)}
-.pm .ndrail{background:var(--bg);border-right:1px solid var(--line);padding:22px 14px}
-.pm .ndrail-h{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--faint);padding:0 14px 14px}
-.pm .axbtn{display:block;width:100%;text-align:left;background:none;border:none;font-family:inherit;
-  font-size:15px;font-weight:700;color:var(--ink);padding:14px 16px;border-radius:11px;cursor:pointer;white-space:nowrap;transition:.12s}
+nav .nd:hover .ndt,nav .nd.open .ndt{color:var(--blue)}
+nav .nd:hover .ndt .caret,nav .nd.open .ndt .caret{transform:rotate(180deg);color:var(--blue)}
+nav .ndm.pm{position:absolute;top:70px;left:24px;right:auto;background:#fff;border:1px solid var(--line);
+  border-radius:16px;box-shadow:0 26px 70px rgba(20,40,90,.20);display:grid;grid-template-columns:224px 268px 244px;
+  max-width:calc(100vw - 48px);opacity:0;visibility:hidden;transform:translateY(10px);transition:.16s;z-index:60;overflow:hidden}
+nav .nd.open .ndm.pm,nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transform:translateY(0)}
+.pm .ndrail{background:var(--bg);border-right:1px solid var(--line);padding:16px 12px}
+.pm .ndrail-h{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--faint);padding:0 14px 12px}
+.pm .axbtn{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;text-align:left;background:none;border:none;font-family:inherit;
+  font-size:14.5px;font-weight:700;color:var(--ink);padding:12px 14px;border-radius:10px;cursor:pointer;white-space:nowrap;transition:.12s}
+.pm .axbtn .chev{color:var(--faint);font-size:17px;line-height:1}
 .pm .axbtn.on,.pm .axbtn:hover{background:#fff;color:var(--blue);box-shadow:0 3px 12px rgba(16,34,58,.08)}
-.pm .ndpanels{padding:22px 24px}
-.pm .axpanel{grid-template-columns:1fr 1fr;gap:6px 18px;align-content:start}
-.pm .axpanel a{display:flex;align-items:center;gap:13px;font-size:14.5px;font-weight:600;color:var(--ink);padding:11px 12px;border-radius:11px;white-space:nowrap}
-.pm .axpanel a:hover{background:var(--tint-blue);color:var(--blue);text-decoration:none}
-.pm .axi{flex:none;width:38px;height:38px;border-radius:10px;background:var(--mint);color:var(--green-d);display:flex;align-items:center;justify-content:center}
-.pm .axi:empty{background:#eaf1ff}
-.pm .axi:empty::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue)}
-.pm .axi svg{width:21px;height:21px}
-@media(max-width:900px){nav a:not(.lang){display:none}nav .nd{display:none}}
+.pm .axbtn.on .chev,.pm .axbtn:hover .chev{color:var(--blue)}
+.pm .ndmid{border-right:1px solid var(--line);padding:16px 12px}
+.pm .midgroup{flex-direction:column;gap:2px}
+.pm .axitem{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:none;font-family:inherit;
+  font-size:14px;font-weight:600;color:var(--ink);padding:10px 12px;border-radius:10px;white-space:nowrap;cursor:pointer;transition:.12s}
+.pm .axitem:hover,.pm .axitem.on{background:var(--tint-blue);color:var(--blue);text-decoration:none}
+.pm .axitem .axl{flex:1}
+.pm .axitem .chev{color:var(--faint);font-size:17px;line-height:1;margin-left:auto}
+.pm .axitem:hover .chev,.pm .axitem.on .chev{color:var(--blue)}
+.pm .axi{flex:none;width:32px;height:32px;border-radius:9px;background:var(--mint);color:var(--green-d);display:flex;align-items:center;justify-content:center}
+.pm .axi:empty{display:none}
+.pm .axi svg{width:19px;height:19px}
+.pm .ndsub{padding:16px 12px}
+.pm .subgroup{flex-direction:column;gap:2px}
+.pm .subgroup a{display:block;font-size:14px;font-weight:600;color:var(--ink);padding:10px 12px;border-radius:10px;white-space:nowrap}
+.pm .subgroup a:hover{background:var(--tint-green);color:var(--green-d);text-decoration:none}
+.pm .subgroup a.suball{font-weight:700;color:var(--blue);border-bottom:1px solid var(--line);border-radius:0;margin-bottom:4px;padding-bottom:12px}
+.pm .subgroup a.suball:hover{background:none;text-decoration:underline}
+.pm .subempty{color:var(--faint);font-size:13px;font-weight:500;padding:12px;line-height:1.5}
+@media(max-width:980px){nav .ndm.pm{grid-template-columns:200px 1fr;left:16px}.pm .ndsub{display:none}}
+@media(max-width:900px){
+.navtog{display:inline-flex}
+nav .langsw,nav>a.lang{margin-left:auto}
+nav .langsw{display:inline-flex}nav .langsw a{display:inline-block;padding:5px 7px;font-size:11.5px}
+nav .navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);box-shadow:0 22px 44px rgba(20,40,90,.16);flex-direction:column;align-items:stretch;gap:0;padding:6px 0;z-index:55}
+nav.open .navlinks{display:flex}
+nav .navlinks>a,nav .navlinks .ndt{padding:14px 24px;font-size:16px;border-bottom:1px solid var(--bg)}
+nav .navlinks .nd,nav .navlinks .nd.ndwide{display:block;position:static}
+nav .navlinks .ndm.pm,nav .navlinks .caret{display:none}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
 .btn{display:inline-block;font-weight:700;font-size:15px;padding:12px 24px;border-radius:10px}
@@ -161,11 +186,11 @@ ul.checks li::before{content:"→";position:absolute;left:0;color:var(--blue);fo
 .nfbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:8px 0 4px}
 .nsearch{flex:1;min-width:220px;max-width:420px;font-family:inherit;font-size:15px;padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
 .nsearch:focus{outline:none;border-color:var(--blue)}
-.cta{background:linear-gradient(155deg,var(--blue),var(--blue-deep));color:#fff;border-radius:18px;padding:40px;text-align:left;margin:26px 0}
+.cta{background:linear-gradient(155deg,var(--blue),var(--blue-deep));color:#fff;border-radius:18px;padding:40px;text-align:center;margin:26px 0}
 .cta .ic{font-size:28px;color:#8fe063}
 .cta h3{font-size:26px;font-weight:800;margin-top:4px;text-wrap:balance}
-.cta p{color:#d3ddf3;margin:12px 0 20px;max-width:52em}
-.cta .btns{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:480px;margin:16px 0 0}
+.cta p{color:#d3ddf3;margin:12px auto 20px;max-width:52em}
+.cta .btns{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:480px;margin:16px auto 0}
 .cta .btns .btn{display:block;width:100%;padding:11px 16px;font-size:14px;text-align:center}
 @media(max-width:520px){.cta .btns{grid-template-columns:1fr;max-width:320px}}
 .btn.on-dark{border:1.5px solid #ffffff66;color:#fff}.btn.on-dark:hover{background:#fff;color:var(--blue-deep);text-decoration:none}
@@ -181,7 +206,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 /* home */
 /* home section banners (dark image + green corner label) */
 .hbanner{position:relative;overflow:hidden;background:var(--blue-deep);background-size:cover;background-position:center right;border-bottom:2px solid #fff}
-.hbanner::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,60,150,.94) 24%,rgba(20,60,150,.70) 52%,rgba(20,60,150,.28))}
+.hbanner::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,60,150,.90) 16%,rgba(20,60,150,.50) 54%,rgba(20,60,150,.08))}
 .hbanner .wrap{position:relative;z-index:2;padding:60px 24px}
 .hbanner .eyebrow{color:#8fe063;margin-bottom:6px}
 .hbanner h1{color:#fff;font-family:var(--sans);font-weight:800;font-size:40px;line-height:1.12;letter-spacing:-.01em;text-align:left;margin:2px 0 10px;max-width:18em}
@@ -378,14 +403,18 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .hero h1{font-size:30px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}
 .split{grid-template-columns:1fr;gap:22px}.split .imgframe{order:-1}.split .txt h2{font-size:25px}
 .acgrid{grid-template-columns:1fr 1fr;gap:10px}
+.acgrid.acgrid5{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:12px;padding:2px 2px 10px}
+.acgrid.acgrid5::-webkit-scrollbar{display:none}
+.acgrid.acgrid5 .acard{flex:0 0 74%;scroll-snap-align:start}
 .trustbar .wrap{grid-template-columns:1fr 1fr;gap:10px}
 .scgrid{grid-template-columns:1fr 1fr;gap:16px}
 .fsbox{grid-template-columns:1fr;gap:20px}
 .aslide{grid-template-columns:1fr;min-height:0}.aimg{min-height:190px}.aimg .aicon svg{width:60px;height:60px}.acopy{padding:26px 24px}.acopy h3{font-size:22px}.acar-nav{display:none}
 .cslide .cap h3{font-size:20px}}
+@media(max-width:560px){.scgrid{grid-template-columns:1fr}.trustbar .wrap{grid-template-columns:1fr}.svcbar .wrap{grid-template-columns:1fr}.whygrid{grid-template-columns:1fr}}
 </style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.etialabel.com/"}, {"@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.etialabel.com/products/"}, {"@type": "ListItem", "position": 3, "name": "HP-CBR-CX2", "item": "https://www.etialabel.com/products/hp-cbr-cx2/"}]}</script></head><body>
 <div class="topstrip"></div>
-<header><div class="wrap"><a class="logo" href="/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></a><nav><div class="nd"><a class="ndt" href="/products/">Products <span class="caret">&#9662;</span></a><div class="ndm pm"><div class="ndrail"><div class="ndrail-h">LABEL SOLUTIONS</div><button type="button" class="axbtn on" onmouseover="etaAx(this,'app')"><span class="axc">By Industry</span></button><button type="button" class="axbtn" onmouseover="etaAx(this,'env')"><span class="axc">By Environment</span></button><button type="button" class="axbtn" onmouseover="etaAx(this,'feat')"><span class="axc">By Feature</span></button><button type="button" class="axbtn" onmouseover="etaAx(this,'mat')"><span class="axc">By Material</span></button></div><div class="ndpanels"><div class="axpanel" data-ax="app" style="display:grid"><a href="/industries/electronics-pcb/"><span class="axi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5"/><rect x="10" y="10" width="4" height="4" rx="1"/><path d="M9.5 3.5v3M14.5 3.5v3M9.5 17.5v3M14.5 17.5v3M3.5 9.5h3M3.5 14.5h3M17.5 9.5h3M17.5 14.5h3"/></svg></span><span class="axl">Electronics &amp; PCB</span></a><a href="/industries/steel/"><span class="axi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5c.8 3 3.1 4.4 3.1 7.6 0 1.9-1.4 3.4-3.1 3.4s-3.1-1.5-3.1-3.4c0-1.1.5-1.9 1.2-2.6-.1 1.1.5 1.8.9 2.1.5-1.9.2-4.4 1-7.1z"/><rect x="6" y="16.5" width="12" height="4.5" rx="1"/></svg></span><span class="axl">Metals &amp; Ceramics</span></a><a href="/industries/healthcare-life-sciences/"><span class="axi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="M12 8.5v7M8.5 12h7"/></svg></span><span class="axl">Medical &amp; Laboratory</span></a><a href="/industries/automotive-label-materials/"><span class="axi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l1.7-4.6A2 2 0 0 1 6.6 7h10.8a2 2 0 0 1 1.9 1.4L21 13v5h-2.5v-2h-13v2H3z"/><circle cx="7.5" cy="16" r="1.6"/><circle cx="16.5" cy="16" r="1.6"/></svg></span><span class="axl">Automotive &amp; Tire</span></a><a href="/industries/wire-cable/"><span class="axi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="7" rx="1.5"/><path d="M11 2.5V5M13 2.5V5"/><path d="M12 9.5v2.5a4 4 0 0 1-4 4 4 4 0 0 0-4 4v.5"/></svg></span><span class="axl">Wire &amp; Cable</span></a><a href="/industries/outdoor-energy/"><span class="axi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.6M12 19.4V22M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2 12h2.6M19.4 12H22M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9"/></svg></span><span class="axl">Outdoor &amp; Energy</span></a></div><div class="axpanel" data-ax="env" style="display:none"><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Abrasion-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Chemical-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Corrosion-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Dirt-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Fluid-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Heat-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">High-Temperature-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Humidity-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Low-Temperature-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Oil-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Temperature-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">UV-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Water-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Wave-Solder-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Weather-Resistant</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">ESD-Safe</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Laser-Markable</span></a><a href="/products/by-environment/"><span class="axi"></span><span class="axl">Sterilization-Resistant</span></a></div><div class="axpanel" data-ax="feat" style="display:none"><a href="/products/by-feature/"><span class="axi"></span><span class="axl">Tamper-Evident</span></a><a href="/products/by-feature/"><span class="axi"></span><span class="axl">Removable</span></a></div><div class="axpanel" data-ax="mat" style="display:none"><a href="/materials/polyimide-pi-label-materials/"><span class="axi"></span><span class="axl">Polyimide — Heat-Resistant</span></a></div></div></div></div><a href="/application-notes/">Application Notes</a><a href="/insights/">Insights</a><a href="/service/">Service</a><a class="lang" href="/cn/products/hp-cbr-cx2/">CN</a></nav></div></header>
+<header><div class="wrap"><a class="logo" href="/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></a><nav><div class="navlinks"><a href="/">Home</a><div class="nd ndwide" onmouseenter="etaOpen(this)" onmouseleave="etaClose(this)"><a class="ndt" href="/products/">Products <span class="caret">&#9662;</span></a><div class="ndm pm"><div class="ndrail"><div class="ndrail-h">LABEL SOLUTIONS</div><button type="button" class="axbtn on" data-ax="app" onmouseover="etaAx(this,'app')"><span class="axc">By Industry</span><span class="chev">&rsaquo;</span></button><button type="button" class="axbtn" data-ax="env" onmouseover="etaAx(this,'env')"><span class="axc">By Environment</span><span class="chev">&rsaquo;</span></button><button type="button" class="axbtn" data-ax="feat" onmouseover="etaAx(this,'feat')"><span class="axc">By Feature</span><span class="chev">&rsaquo;</span></button><button type="button" class="axbtn" data-ax="mat" onmouseover="etaAx(this,'mat')"><span class="axc">By Material</span><span class="chev">&rsaquo;</span></button></div><div class="ndmid"><div class="midgroup" data-mid="app" style="display:flex"><a class="axitem" href="/products/circuit-board-labels/" onmouseover="etaSub(this,'')"><span class="axi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5"/><rect x="10" y="10" width="4" height="4" rx="1"/><path d="M9.5 3.5v3M14.5 3.5v3M9.5 17.5v3M14.5 17.5v3M3.5 9.5h3M3.5 14.5h3M17.5 9.5h3M17.5 14.5h3"/></svg></span><span class="axl">Circuit Board &amp; PCB Labels</span></a><button type="button" class="axitem haskid" data-sub="app-1" onmouseover="etaSub(this,'app-1')"><span class="axi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5c.8 3 3.1 4.4 3.1 7.6 0 1.9-1.4 3.4-3.1 3.4s-3.1-1.5-3.1-3.4c0-1.1.5-1.9 1.2-2.6-.1 1.1.5 1.8.9 2.1.5-1.9.2-4.4 1-7.1z"/><rect x="6" y="16.5" width="12" height="4.5" rx="1"/></svg></span><span class="axl">Metal &amp; Ceramics</span><span class="chev">&rsaquo;</span></button><a class="axitem" href="/industries/healthcare-life-sciences/" onmouseover="etaSub(this,'')"><span class="axi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="M12 8.5v7M8.5 12h7"/></svg></span><span class="axl">Medical &amp; Laboratory</span></a><a class="axitem" href="/industries/automotive-label-materials/" onmouseover="etaSub(this,'')"><span class="axi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l1.7-4.6A2 2 0 0 1 6.6 7h10.8a2 2 0 0 1 1.9 1.4L21 13v5h-2.5v-2h-13v2H3z"/><circle cx="7.5" cy="16" r="1.6"/><circle cx="16.5" cy="16" r="1.6"/></svg></span><span class="axl">Automotive &amp; Tire</span></a><a class="axitem" href="/industries/wire-cable/" onmouseover="etaSub(this,'')"><span class="axi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="7" rx="1.5"/><path d="M11 2.5V5M13 2.5V5"/><path d="M12 9.5v2.5a4 4 0 0 1-4 4 4 4 0 0 0-4 4v.5"/></svg></span><span class="axl">Wire &amp; Cable</span></a><a class="axitem" href="/industries/outdoor-energy/" onmouseover="etaSub(this,'')"><span class="axi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.6M12 19.4V22M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2 12h2.6M19.4 12H22M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9"/></svg></span><span class="axl">Outdoor &amp; Energy</span></a></div><div class="midgroup" data-mid="env" style="display:none"><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Abrasion-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Chemical-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Corrosion-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Dirt-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Fluid-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Heat-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">High-Temperature-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Humidity-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Low-Temperature-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Oil-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Temperature-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">UV-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Water-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Wave-Solder-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Weather-Resistant</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">ESD-Safe</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Laser-Markable</span></a><a class="axitem" href="/products/by-environment/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Sterilization-Resistant</span></a></div><div class="midgroup" data-mid="feat" style="display:none"><a class="axitem" href="/products/by-feature/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Tamper-Evident</span></a><a class="axitem" href="/products/by-feature/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Removable</span></a></div><div class="midgroup" data-mid="mat" style="display:none"><a class="axitem" href="/materials/polyimide-pi-label-materials/" onmouseover="etaSub(this,'')"><span class="axi"></span><span class="axl">Polyimide — Heat-Resistant</span></a></div></div><div class="ndsub"><div class="subgroup" data-sub="app-1" style="display:none"><a class="suball" href="/industries/metal-ceramics/">View all →</a><a href="/industries/steel/">Steel</a><a href="/industries/aluminum/">Aluminum</a><a href="/industries/ceramics/">Ceramics</a></div><div class="subgroup subph" data-sub="" style="display:flex"><div class="subempty">Hover a category on the left to see its product lines.</div></div></div></div></div><a href="/application-notes/">Application Notes</a><a href="/insights/">Insights</a><a href="/service/">Service</a></div><a class="lang" href="/cn/products/hp-cbr-cx2/">CN</a><button class="navtog" type="button" aria-label="Menu" onclick="etaMenu(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></nav></div></header>
 <div class="wrap"><div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/products/">Products</a> &rsaquo; <b>HP-CBR-CX2</b></div></div>
 <div class="wrap"><div class="pagehead"><h1>HP-CBR-CX2 High-Temperature Label</h1></div></div>
 <section class="trustbar"><div class="wrap"><div class="ti">100% Quality Inspection</div><div class="ti">Application-Driven Solutions</div><div class="ti">Flexible Supply</div><div class="ti">Responsive Application Support</div></div></section>
@@ -393,12 +422,24 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 <footer><div class="wrap">
 <div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></div>
 <div class="fg">
-<div><h5>Navigation</h5><ul><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/application-notes/">Application Notes</a></li><li><a href="/service/">Service</a></li><li><a href="/about/">About ETIA</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+<div><h5>Navigation</h5><ul><li><a href="/">Home</a></li><li><a href="/products/">Products</a></li><li><a href="/industries/">Industries</a></li><li><a href="/application-notes/">Application Notes</a></li><li><a href="/service/">Service</a></li><li><a href="/about/">About ETIA</a></li><li><a href="/contact/">Contact</a></li></ul></div>
 <div><h5>Legal</h5><ul><li><a href="/privacy/">Privacy Policy</a></li><li><a href="/cookies/">Cookie Policy</a></li><li><a href="/terms/">Terms of Use</a></li></ul></div>
 <div><h5>Contact</h5><a class="email" href="mailto:label@etia-tech.com">label@etia-tech.com</a><br><br>
 Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)">Supplier &amp; application-support partner — genuine, brand-authorized materials.</span></div>
 </div>
 <div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span><span><a href="/privacy/">Privacy</a> &nbsp; <a href="/cookies/">Cookies</a></span></div>
 </div></footer>
-<script>function etaAx(b,a){var m=b.closest('.ndm');m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});m.querySelectorAll('.axpanel').forEach(function(p){p.style.display=(p.getAttribute('data-ax')===a)?'grid':'none';});}</script>
+<script>
+function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
+function etaMenu(b){var n=b.closest('nav');if(n)n.classList.toggle('open');}
+function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
+function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
+if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
+m.querySelectorAll('.subgroup').forEach(function(p){p.style.display=(p.getAttribute('data-sub')===s)?'flex':'none';});}
+function etaAx(b,a){var m=b.closest('.ndm');
+m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});
+m.querySelectorAll('.midgroup').forEach(function(p){p.style.display=(p.getAttribute('data-mid')===a)?'flex':'none';});
+var mg=m.querySelector('.midgroup[data-mid="'+a+'"]');var first=mg?mg.querySelector('.axitem.haskid'):null;
+etaSub(first,first?first.getAttribute('data-sub'):'');}
+</script>
 </body></html>

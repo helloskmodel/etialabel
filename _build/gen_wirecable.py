@@ -45,10 +45,10 @@ def cta_wc(lang):
     if lang=="zh":
         return ('<div class="cta"><div class="ic">⚡</div><h3>始于应用。终于选对材料。</h3>'
                 '<p>提供线径与形式(旗型/缠绕/自覆膜/热缩/吊牌)、行业、环境(耐磨/潮湿/化学/高温)与打印方式,我们从 Avery Dennison 材料中给出建议。</p>'
-                '<div class="btns"><a class="btn pri" href="%s">申请样品</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
+                '<div class="btns"><a class="btn pri" href="%s">咨询专家</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
     return ('<div class="cta"><div class="ic">⚡</div><h3>Start with the Application. Finish with the Right Material.</h3>'
             '<p>Share cable size and format (flag / wrap / self-laminating / heat-shrink / tag), industry, environment (abrasion / moisture / chemical / heat) and print method — we\'ll recommend from Avery Dennison materials.</p>'
-            '<div class="btns"><a class="btn pri" href="%s">Request Samples</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
+            '<div class="btns"><a class="btn pri" href="%s">Talk to a Specialist</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>')%(L(lang,"/contact/"),L(lang,"/contact/"))
 
 def build_hub(lang):
     path=HUB

@@ -28,6 +28,16 @@
       "permanent": true
     },
     {
+      "source": "/products/hp-700t",
+      "destination": "/products/hp-900/",
+      "permanent": true
+    },
+    {
+      "source": "/products/heatproof/hp-t42-hp-cbr-tag",
+      "destination": "/products/heatproof/hp-l90/",
+      "permanent": true
+    },
+    {
       "source": "/automotive",
       "destination": "/industries/automotive-label-materials/",
       "permanent": true

@@ -60,6 +60,9 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .logo img{height:40px;width:auto;display:block}
 .logo .ar{color:var(--green);margin-right:2px}.logo .grn{color:var(--green)}.logo .blu{color:var(--blue-deep)}
 nav{display:flex;align-items:center;gap:26px}
+nav .navlinks{display:flex;align-items:center;gap:26px}
+.navtog{display:none;background:none;border:none;cursor:pointer;padding:6px;margin-left:8px;color:var(--ink)}
+.navtog svg{width:26px;height:26px;display:block}
 nav a{font-size:14.5px;font-weight:600;color:var(--ink);white-space:nowrap}
 nav a:hover{color:var(--blue)}nav a.on{color:var(--blue)}
 nav .lang{font-size:13px;color:var(--faint);border:1px solid var(--line);border-radius:8px;padding:5px 10px}
@@ -67,30 +70,52 @@ nav .lang{font-size:13px;color:var(--faint);border:1px solid var(--line);border-
 nav .langsw a{display:inline-block;font-size:12px;color:var(--faint);padding:5px 9px;border-radius:7px;font-weight:600}
 nav .langsw a.on{color:#fff;background:var(--blue)}
 nav .langsw a:hover{color:var(--blue)}nav .langsw a.on:hover{color:#fff}
-/* Products mega-menu dropdown (spacious, icon rows, opens leftward to stay on screen) */
+/* Products mega-menu — left-anchored cascading columns (up to 3 levels, Delo/Panacol style) */
 nav .nd{position:relative;display:inline-block}
-nav .nd::after{content:"";position:absolute;top:100%;left:0;right:0;height:18px}
+nav .nd.ndwide{position:static}
 nav .ndt{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;font-weight:600;color:var(--ink);cursor:pointer}
 nav .ndt .caret{font-size:10px;color:var(--faint);transition:.15s}
-nav .nd:hover .ndt{color:var(--blue)}nav .nd:hover .ndt .caret{transform:rotate(180deg);color:var(--blue)}
-nav .ndm.pm{position:absolute;top:100%;right:0;margin-top:16px;background:#fff;border:1px solid var(--line);
-  border-radius:18px;box-shadow:0 26px 70px rgba(20,40,90,.20);display:grid;grid-template-columns:236px 1fr;
-  width:760px;max-width:92vw;opacity:0;visibility:hidden;transform:translateY(10px);transition:.16s;z-index:60;overflow:hidden}
-nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transform:translateY(0)}
-.pm .ndrail{background:var(--bg);border-right:1px solid var(--line);padding:22px 14px}
-.pm .ndrail-h{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--faint);padding:0 14px 14px}
-.pm .axbtn{display:block;width:100%;text-align:left;background:none;border:none;font-family:inherit;
-  font-size:15px;font-weight:700;color:var(--ink);padding:14px 16px;border-radius:11px;cursor:pointer;white-space:nowrap;transition:.12s}
+nav .nd:hover .ndt,nav .nd.open .ndt{color:var(--blue)}
+nav .nd:hover .ndt .caret,nav .nd.open .ndt .caret{transform:rotate(180deg);color:var(--blue)}
+nav .ndm.pm{position:absolute;top:70px;left:24px;right:auto;background:#fff;border:1px solid var(--line);
+  border-radius:16px;box-shadow:0 26px 70px rgba(20,40,90,.20);display:grid;grid-template-columns:224px 268px 244px;
+  max-width:calc(100vw - 48px);opacity:0;visibility:hidden;transform:translateY(10px);transition:.16s;z-index:60;overflow:hidden}
+nav .nd.open .ndm.pm,nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transform:translateY(0)}
+.pm .ndrail{background:var(--bg);border-right:1px solid var(--line);padding:16px 12px}
+.pm .ndrail-h{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--faint);padding:0 14px 12px}
+.pm .axbtn{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;text-align:left;background:none;border:none;font-family:inherit;
+  font-size:14.5px;font-weight:700;color:var(--ink);padding:12px 14px;border-radius:10px;cursor:pointer;white-space:nowrap;transition:.12s}
+.pm .axbtn .chev{color:var(--faint);font-size:17px;line-height:1}
 .pm .axbtn.on,.pm .axbtn:hover{background:#fff;color:var(--blue);box-shadow:0 3px 12px rgba(16,34,58,.08)}
-.pm .ndpanels{padding:22px 24px}
-.pm .axpanel{grid-template-columns:1fr 1fr;gap:6px 18px;align-content:start}
-.pm .axpanel a{display:flex;align-items:center;gap:13px;font-size:14.5px;font-weight:600;color:var(--ink);padding:11px 12px;border-radius:11px;white-space:nowrap}
-.pm .axpanel a:hover{background:var(--tint-blue);color:var(--blue);text-decoration:none}
-.pm .axi{flex:none;width:38px;height:38px;border-radius:10px;background:var(--mint);color:var(--green-d);display:flex;align-items:center;justify-content:center}
-.pm .axi:empty{background:#eaf1ff}
-.pm .axi:empty::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue)}
-.pm .axi svg{width:21px;height:21px}
-@media(max-width:900px){nav a:not(.lang){display:none}nav .nd{display:none}}
+.pm .axbtn.on .chev,.pm .axbtn:hover .chev{color:var(--blue)}
+.pm .ndmid{border-right:1px solid var(--line);padding:16px 12px}
+.pm .midgroup{flex-direction:column;gap:2px}
+.pm .axitem{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:none;font-family:inherit;
+  font-size:14px;font-weight:600;color:var(--ink);padding:10px 12px;border-radius:10px;white-space:nowrap;cursor:pointer;transition:.12s}
+.pm .axitem:hover,.pm .axitem.on{background:var(--tint-blue);color:var(--blue);text-decoration:none}
+.pm .axitem .axl{flex:1}
+.pm .axitem .chev{color:var(--faint);font-size:17px;line-height:1;margin-left:auto}
+.pm .axitem:hover .chev,.pm .axitem.on .chev{color:var(--blue)}
+.pm .axi{flex:none;width:32px;height:32px;border-radius:9px;background:var(--mint);color:var(--green-d);display:flex;align-items:center;justify-content:center}
+.pm .axi:empty{display:none}
+.pm .axi svg{width:19px;height:19px}
+.pm .ndsub{padding:16px 12px}
+.pm .subgroup{flex-direction:column;gap:2px}
+.pm .subgroup a{display:block;font-size:14px;font-weight:600;color:var(--ink);padding:10px 12px;border-radius:10px;white-space:nowrap}
+.pm .subgroup a:hover{background:var(--tint-green);color:var(--green-d);text-decoration:none}
+.pm .subgroup a.suball{font-weight:700;color:var(--blue);border-bottom:1px solid var(--line);border-radius:0;margin-bottom:4px;padding-bottom:12px}
+.pm .subgroup a.suball:hover{background:none;text-decoration:underline}
+.pm .subempty{color:var(--faint);font-size:13px;font-weight:500;padding:12px;line-height:1.5}
+@media(max-width:980px){nav .ndm.pm{grid-template-columns:200px 1fr;left:16px}.pm .ndsub{display:none}}
+@media(max-width:900px){
+.navtog{display:inline-flex}
+nav .langsw,nav>a.lang{margin-left:auto}
+nav .langsw{display:inline-flex}nav .langsw a{display:inline-block;padding:5px 7px;font-size:11.5px}
+nav .navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);box-shadow:0 22px 44px rgba(20,40,90,.16);flex-direction:column;align-items:stretch;gap:0;padding:6px 0;z-index:55}
+nav.open .navlinks{display:flex}
+nav .navlinks>a,nav .navlinks .ndt{padding:14px 24px;font-size:16px;border-bottom:1px solid var(--bg)}
+nav .navlinks .nd,nav .navlinks .nd.ndwide{display:block;position:static}
+nav .navlinks .ndm.pm,nav .navlinks .caret{display:none}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
 .btn{display:inline-block;font-weight:700;font-size:15px;padding:12px 24px;border-radius:10px}
@@ -198,11 +223,11 @@ ul.checks li::before{content:"→";position:absolute;left:0;color:var(--blue);fo
 .nfbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:8px 0 4px}
 .nsearch{flex:1;min-width:220px;max-width:420px;font-family:inherit;font-size:15px;padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
 .nsearch:focus{outline:none;border-color:var(--blue)}
-.cta{background:linear-gradient(155deg,var(--blue),var(--blue-deep));color:#fff;border-radius:18px;padding:40px;text-align:left;margin:26px 0}
+.cta{background:linear-gradient(155deg,var(--blue),var(--blue-deep));color:#fff;border-radius:18px;padding:40px;text-align:center;margin:26px 0}
 .cta .ic{font-size:28px;color:#8fe063}
 .cta h3{font-size:26px;font-weight:800;margin-top:4px;text-wrap:balance}
-.cta p{color:#d3ddf3;margin:12px 0 20px;max-width:52em}
-.cta .btns{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:480px;margin:16px 0 0}
+.cta p{color:#d3ddf3;margin:12px auto 20px;max-width:52em}
+.cta .btns{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:480px;margin:16px auto 0}
 .cta .btns .btn{display:block;width:100%;padding:11px 16px;font-size:14px;text-align:center}
 @media(max-width:520px){.cta .btns{grid-template-columns:1fr;max-width:320px}}
 .btn.on-dark{border:1.5px solid #ffffff66;color:#fff}.btn.on-dark:hover{background:#fff;color:var(--blue-deep);text-decoration:none}
@@ -218,7 +243,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 /* home */
 /* home section banners (dark image + green corner label) */
 .hbanner{position:relative;overflow:hidden;background:var(--blue-deep);background-size:cover;background-position:center right;border-bottom:2px solid #fff}
-.hbanner::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,60,150,.94) 24%,rgba(20,60,150,.70) 52%,rgba(20,60,150,.28))}
+.hbanner::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,60,150,.90) 16%,rgba(20,60,150,.50) 54%,rgba(20,60,150,.08))}
 .hbanner .wrap{position:relative;z-index:2;padding:60px 24px}
 .hbanner .eyebrow{color:#8fe063;margin-bottom:6px}
 .hbanner h1{color:#fff;font-family:var(--sans);font-weight:800;font-size:40px;line-height:1.12;letter-spacing:-.01em;text-align:left;margin:2px 0 10px;max-width:18em}
@@ -415,24 +440,33 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .hero h1{font-size:30px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}
 .split{grid-template-columns:1fr;gap:22px}.split .imgframe{order:-1}.split .txt h2{font-size:25px}
 .acgrid{grid-template-columns:1fr 1fr;gap:10px}
+.acgrid.acgrid5{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:12px;padding:2px 2px 10px}
+.acgrid.acgrid5::-webkit-scrollbar{display:none}
+.acgrid.acgrid5 .acard{flex:0 0 74%;scroll-snap-align:start}
 .trustbar .wrap{grid-template-columns:1fr 1fr;gap:10px}
 .scgrid{grid-template-columns:1fr 1fr;gap:16px}
 .fsbox{grid-template-columns:1fr;gap:20px}
 .aslide{grid-template-columns:1fr;min-height:0}.aimg{min-height:190px}.aimg .aicon svg{width:60px;height:60px}.acopy{padding:26px 24px}.acopy h3{font-size:22px}.acar-nav{display:none}
 .cslide .cap h3{font-size:20px}}
+@media(max-width:560px){.scgrid{grid-template-columns:1fr}.trustbar .wrap{grid-template-columns:1fr}.svcbar .wrap{grid-template-columns:1fr}.whygrid{grid-template-columns:1fr}}
 """
 
-NAV_ITEMS = [("Products", u_products(), "products"),
+NAV_ITEMS = [("Home", "/", "home"),
+             ("Products", u_products(), "products"),
              ("Application Notes", "/application-notes/", "notes"),
              ("Insights", "/insights/", "insights"),
              ("Service", "/service/", "service")]
-NAV_ZH = {"Products":"产品","Application Notes":"应用笔记","Insights":"洞察","Service":"服务"}
+NAV_ZH = {"Home":"首页","Products":"产品","Application Notes":"应用笔记","Insights":"洞察","Service":"服务"}
 
 # Products mega-menu: 4 axes (Computype-style left rail + right list)
 PROD_AXES = [
  ("app","By Industry","按行业",[
-   ("Electronics & PCB","电子与PCB","/industries/electronics-pcb/"),
-   ("Metals & Ceramics","金属与陶瓷","/industries/steel/"),
+   ("Circuit Board & PCB Labels","电路板与 PCB 标签","/products/circuit-board-labels/"),
+   ("Metal & Ceramics","金属与陶瓷","/industries/metal-ceramics/",[
+      ("Steel","钢铁","/industries/steel/"),
+      ("Aluminum","铝","/industries/aluminum/"),
+      ("Ceramics","陶瓷","/industries/ceramics/"),
+   ]),
    ("Medical & Laboratory","医疗与实验室","/industries/healthcare-life-sciences/"),
    ("Automotive & Tire","汽车与轮胎","/industries/automotive-label-materials/"),
    ("Wire & Cable","电线与电缆","/industries/wire-cable/"),
@@ -468,22 +502,45 @@ PROD_AXES = [
 ]
 
 def products_dropdown(lang, linkfn):
+    """Left-anchored cascading flyout: col1 axes -> col2 items -> col3 sub-items.
+    Items carrying a 4th element (a list of children) render a chevron and open col3."""
     zh = (lang == "zh")
     lab = lambda e, z: z if zh else e
     top = "产品" if zh else "Products"
-    rail = ""; panels = ""
+    rail = ""; mids = ""; subs = ""
     for i, (key, he, hz, items) in enumerate(PROD_AXES):
         on = " on" if i == 0 else ""
-        rail += '<button type="button" class="axbtn%s" onmouseover="etaAx(this,\'%s\')"><span class="axc">%s</span></button>' % (
-            on, key, esc(lab(he, hz)))
-        link_list = ""
-        for j, (e, z, u) in enumerate(items):
+        rail += ('<button type="button" class="axbtn%s" data-ax="%s" onmouseover="etaAx(this,\'%s\')">'
+                 '<span class="axc">%s</span><span class="chev">&rsaquo;</span></button>') % (on, key, key, esc(lab(he, hz)))
+        midlinks = ""
+        for j, item in enumerate(items):
+            e, z, u = item[0], item[1], item[2]
+            kids = item[3] if len(item) > 3 else None
             ic = INDUSTRY_ICONS[j % len(INDUSTRY_ICONS)] if key == "app" else ""
-            link_list += '<a href="%s"><span class="axi">%s</span><span class="axl">%s</span></a>' % (linkfn(u), ic, esc(lab(e, z)))
-        panels += '<div class="axpanel" data-ax="%s" style="display:%s">%s</div>' % (key, ("grid" if i == 0 else "none"), link_list)
-    return ('<div class="nd"><a class="ndt" href="%s">%s <span class="caret">&#9662;</span></a>'
-            '<div class="ndm pm"><div class="ndrail"><div class="ndrail-h">%s</div>%s</div><div class="ndpanels">%s</div></div></div>') % (
-        linkfn("/products/"), esc(top), ("产品方案" if zh else "LABEL SOLUTIONS"), rail, panels)
+            icon = '<span class="axi">%s</span>' % ic
+            if kids:
+                sid = "%s-%d" % (key, j)
+                midlinks += ('<button type="button" class="axitem haskid" data-sub="%s" onmouseover="etaSub(this,\'%s\')">'
+                             '%s<span class="axl">%s</span><span class="chev">&rsaquo;</span></button>') % (
+                    sid, sid, icon, esc(lab(e, z)))
+                sublinks = '<a class="suball" href="%s">%s</a>' % (
+                    linkfn(u), esc(("查看全部 →" if zh else "View all →")))
+                sublinks += "".join('<a href="%s">%s</a>' % (linkfn(cu), esc(lab(ce, cz))) for ce, cz, cu in kids)
+                subs += '<div class="subgroup" data-sub="%s" style="display:none">%s</div>' % (sid, sublinks)
+            else:
+                midlinks += ('<a class="axitem" href="%s" onmouseover="etaSub(this,\'\')">'
+                             '%s<span class="axl">%s</span></a>') % (linkfn(u), icon, esc(lab(e, z)))
+        mids += '<div class="midgroup" data-mid="%s" style="display:%s">%s</div>' % (
+            key, "flex" if i == 0 else "none", midlinks)
+    subs += ('<div class="subgroup subph" data-sub="" style="display:flex"><div class="subempty">%s</div></div>') % (
+        "将鼠标移到左侧类别上，查看其产品系列。" if zh else "Hover a category on the left to see its product lines.")
+    return ('<div class="nd ndwide" onmouseenter="etaOpen(this)" onmouseleave="etaClose(this)">'
+            '<a class="ndt" href="%s">%s <span class="caret">&#9662;</span></a>'
+            '<div class="ndm pm">'
+            '<div class="ndrail"><div class="ndrail-h">%s</div>%s</div>'
+            '<div class="ndmid">%s</div>'
+            '<div class="ndsub">%s</div>'
+            '</div></div>') % (linkfn("/products/"), esc(top), ("产品方案" if zh else "LABEL SOLUTIONS"), rail, mids, subs)
 
 ALL_URLS = []   # (path, group, changefreq)  — English canonical set for sitemap
 def track(path, group): ALL_URLS.append((path, group))
@@ -499,6 +556,10 @@ def breadcrumb_jsonld(items, lang):
     return {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
         {"@type":"ListItem","position":i+1,"name":n,"item":SITE+PREFIX[lang]+p} for i,(n,p) in enumerate(items)]}
 
+NAV_TOGGLE = ('<button class="navtog" type="button" aria-label="Menu" onclick="etaMenu(this)">'
+              '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">'
+              '<path d="M4 7h16M4 12h16M4 17h16"/></svg></button>')
+
 def nav_html(lang, active, path="/"):
     def lab(t): return NAV_ZH[t] if lang == "zh" else t
     items = ""
@@ -509,9 +570,10 @@ def nav_html(lang, active, path="/"):
             items += '<a href="%s"%s>%s</a>' % (L(lang, href), ' class="on"' if key==active else '', lab(t))
     other = "zh" if lang == "en" else "en"
     other_label = "CN" if lang == "en" else "EN"   # label = the language you switch TO
-    return '<nav>%s<a class="lang" href="%s">%s</a></nav>' % (items, L(other, path), other_label)
+    return '<nav><div class="navlinks">%s</div><a class="lang" href="%s">%s</a>%s</nav>' % (
+        items, L(other, path), other_label, NAV_TOGGLE)
 
-FOOTER_LINKS = [("Products", u_products()), ("Industries", u_ind_hub()),
+FOOTER_LINKS = [("Home", "/"), ("Products", u_products()), ("Industries", u_ind_hub()),
                 ("Application Notes", "/application-notes/"), ("Service", "/service/"),
                 ("About ETIA", "/about/"), ("Contact", "/contact/")]
 def footer_html(lang):
@@ -541,10 +603,10 @@ def cta(lang):
     if lang == "zh":
         return """<div class="cta"><div class="ic">⚡</div><h3>始于应用。终于选对材料。</h3>
 <p>告知表面、温度、化学环境与打印方式,我们推荐材料并安排样品验证。</p>
-<div class="btns"><a class="btn pri" href="%s">申请样品</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
+<div class="btns"><a class="btn pri" href="%s">咨询专家</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
     return """<div class="cta"><div class="ic">⚡</div><h3>Start with the Application. Finish with the Right Material.</h3>
 <p>Tell us the surface, temperature, chemistry and print method — we'll recommend the material and arrange samples.</p>
-<div class="btns"><a class="btn pri" href="%s">Request a Sample</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
+<div class="btns"><a class="btn pri" href="%s">Talk to a Specialist</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
 
 # Per-page bottom CTA (question headline + <=2 sentences + primary + secondary).
 CTAS = {
@@ -622,7 +684,19 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 %s
 %s
 %s
-<script>function etaAx(b,a){var m=b.closest('.ndm');m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});m.querySelectorAll('.axpanel').forEach(function(p){p.style.display=(p.getAttribute('data-ax')===a)?'grid':'none';});}</script>
+<script>
+function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
+function etaMenu(b){var n=b.closest('nav');if(n)n.classList.toggle('open');}
+function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
+function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
+if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
+m.querySelectorAll('.subgroup').forEach(function(p){p.style.display=(p.getAttribute('data-sub')===s)?'flex':'none';});}
+function etaAx(b,a){var m=b.closest('.ndm');
+m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});
+m.querySelectorAll('.midgroup').forEach(function(p){p.style.display=(p.getAttribute('data-mid')===a)?'flex':'none';});
+var mg=m.querySelector('.midgroup[data-mid="'+a+'"]');var first=mg?mg.querySelector('.axitem.haskid'):null;
+etaSub(first,first?first.getAttribute('data-sub'):'');}
+</script>
 </body></html>""" % (lang, esc(title), esc(desc), canonical, hreflang_block(path), esc(title), CSS, schema_js,
      L(lang,"/"), nav_html(lang, active, path), cr, head_block, (trust_bar(lang) if trust else ""), body, footer_html(lang))
 
@@ -1082,8 +1156,11 @@ def home_nav(lang):
     lf=lambda p: home_hlink(lang,p)
     hrefs=["/application-notes/","/insights/","/service/"]
     prod=products_dropdown(lang, lf)
+    home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
+    home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
     links="".join('<a href="%s">%s</a>'%(lf(h),esc(lbl)) for h,lbl in zip(hrefs,T["nav"][1:]))
-    return '<nav>%s%s%s</nav>' % (prod, links, home_switcher(lang))
+    return '<nav><div class="navlinks">%s%s%s</div>%s%s</nav>' % (
+        home_link, prod, links, home_switcher(lang), NAV_TOGGLE)
 
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
@@ -1113,7 +1190,7 @@ HOME2 = {
            "h1": "Where Materials Meet Applications.",
            "line": "Every demanding application starts with the right material.",
            "body": "For over 20 years, ETIA has helped manufacturers solve complex identification challenges through specialty materials, application expertise, and flexible supply.",
-           "b1": "Explore Solutions", "b2": "Request Samples"},
+           "b1": "Explore Solutions", "b2": "Talk to a Specialist"},
   "sections": [
    {"eyebrow": "SPECIALTY LABEL MATERIALS · ENGINEERED CONSTRUCTIONS",
     "h2": "Materials Built for Demanding Conditions.",
@@ -1134,14 +1211,14 @@ HOME2 = {
     "h2": "Support from Material Selection to Long-Term Supply.",
     "sub": "Practical support throughout every stage of your project.",
     "body": "From application review and sample evaluation to laboratory testing, converting, quality inspection, and repeat supply, ETIA helps manufacturers move confidently from selection to production.",
-    "b1": "Talk to a Material Specialist", "b1u": "/contact/", "b2": "Request Samples", "b2u": "/contact/"},
+    "b1": "Talk to a Material Specialist", "b1u": "/contact/", "b2": "Talk to a Specialist", "b2u": "/contact/"},
   ]},
  "zh": {
   "hero": {"eyebrow": "耐久标识 · 特种标签材料",
            "h1": "让材料匹配应用。",
            "line": "每一个严苛应用，都始于选对材料。",
            "body": "20 多年来，ETIA 以特种材料、应用专业与柔性供应，帮助制造商解决复杂的标识难题。",
-           "b1": "浏览方案", "b2": "申请样品"},
+           "b1": "浏览方案", "b2": "咨询专家"},
   "sections": [
    {"eyebrow": "特种标签材料 · 工程化结构",
     "h2": "为严苛工况而生的材料。",
@@ -1162,13 +1239,20 @@ HOME2 = {
     "h2": "从选材到长期供应的全程支持。",
     "sub": "贯穿项目每一阶段的切实支持。",
     "body": "从应用评估、样品验证，到实验室检测、加工成型、质量检验与持续供应，ETIA 帮助制造商从选型稳步走向量产。",
-    "b1": "咨询材料专家", "b1u": "/contact/", "b2": "申请样品", "b2u": "/contact/"},
+    "b1": "咨询材料专家", "b1u": "/contact/", "b2": "咨询专家", "b2u": "/contact/"},
   ]},
 }
 
 # Green corner labels + banner background images (fill BG with clean COS URLs later)
 HOME_TABS = [("HOME", "首页"), ("PRODUCTS", "产品"), ("APPLICATIONS", "应用"), ("INSIGHTS", "洞察"), ("SERVICE", "服务")]
-HOME_BG = ["", "", "", "", ""]
+# Page hero banners (COS). .hbanner::before lays the brand-blue gradient over the photo.
+BANNER_HOME = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/BANNER-HOMEPAGE.jpg"
+BANNER_APPLICATION = "https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/BANNERIMG/BANNER-APPLICATION.jpg"
+BANNER_INSIGHT = "https://etiatech-1303055923.cos.ap-singapore.myqcloud.com/BANNERIMG/BANNER-INSIGHT.jpg"
+BANNER_SERVICE = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-outdoor-energy.png"
+HOME_BG = [BANNER_HOME, "", "", "", ""]
+# section_hero idx: 0=Products, 1=Applications, 2=Insights, 3=Service
+SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
 
 def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
     st = ' style="background-image:url(%s)"' % esc(bg) if bg else ""
@@ -1190,6 +1274,7 @@ def page_hero(lang, eyebrow, title, sub, body, b1, b1u, b2, b2u, bg=""):
 # Per-page hero from a HOME2 section. idx: 0=Products,1=Applications,2=Insights,3=Service.
 def section_hero(lang, idx, bg=""):
     s = HOME2.get(lang, HOME2["en"])["sections"][idx]
+    bg = bg or SECTION_BG.get(idx, "")
     return page_hero(lang, s["eyebrow"], s["h2"], s["sub"], s["body"], s["b1"], s["b1u"], s["b2"], s["b2u"], bg)
 
 def build_home(lang):
@@ -1220,7 +1305,7 @@ def build_home(lang):
                  '<div class="acard-body"><h3>%s</h3><div class="pmodel">%s</div><div class="pcode">%s</div>'
                  '<div class="acard-go">%s →</div></div></a>')%(
             home_hlink(lang,"/contact/"), gi, pimg, INDUSTRY_ICONS[gi%len(INDUSTRY_ICONS)],
-            esc(pr["name"]), esc(pr["model"]), esc(pr.get("code","")), esc(T.get("prod_cta","Request Sample")))
+            esc(pr["name"]), esc(pr["model"]), esc(pr.get("code","")), esc(T.get("prod_cta","Talk to a Specialist")))
     prod_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
                   '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
                   '<div class="acgrid acgrid5">%s</div></div></section>')%(
@@ -1259,22 +1344,34 @@ def build_home(lang):
     body=hero_banner+trust_html+why_section+app_section+prod_section+sc_section+final_cta
     canonical=SITE+HL_PREFIX[lang]+path
     schema_js='<script type="application/ld+json">%s</script>'%json.dumps(ORG_JSONLD,ensure_ascii=False)
+    hero_preload=('<link rel="preload" as="image" href="'+HOME_BG[0]+'" fetchpriority="high">') if HOME_BG[0] else ""
     doc="""<!doctype html><html lang="%s"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>%s</title><meta name="description" content="%s">
-<link rel="canonical" href="%s">%s
+<link rel="canonical" href="%s">%s%s
 <meta property="og:title" content="%s"><meta property="og:type" content="website"><meta property="og:site_name" content="ETIA Label">
 <style>%s</style>%s</head><body>
 <div class="topstrip"></div>
 <header><div class="wrap"><a class="logo" href="%s"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%%20LOGO.jpg" alt="ETIA Label"></a>%s</div></header>
 %s
 %s
-<script>function etaAx(b,a){var m=b.closest('.ndm');m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});m.querySelectorAll('.axpanel').forEach(function(p){p.style.display=(p.getAttribute('data-ax')===a)?'grid':'none';});}
+<script>
+function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
+function etaMenu(b){var n=b.closest('nav');if(n)n.classList.toggle('open');}
+function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
+function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
+if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
+m.querySelectorAll('.subgroup').forEach(function(p){p.style.display=(p.getAttribute('data-sub')===s)?'flex':'none';});}
+function etaAx(b,a){var m=b.closest('.ndm');
+m.querySelectorAll('.axbtn').forEach(function(x){x.classList.toggle('on',x===b);});
+m.querySelectorAll('.midgroup').forEach(function(p){p.style.display=(p.getAttribute('data-mid')===a)?'flex':'none';});
+var mg=m.querySelector('.midgroup[data-mid="'+a+'"]');var first=mg?mg.querySelector('.axitem.haskid'):null;
+etaSub(first,first?first.getAttribute('data-sub'):'');}
 function etaSlide(d){var c=document.getElementById('acar');if(c)c.scrollBy({left:d*c.clientWidth,behavior:'smooth'});}
 function etaSample(e){e.preventDefault();var g=function(i){var el=document.getElementById(i);return el?el.value:'';};
 var b='Email: '+g('fs-email')+'%%0D%%0APhone: '+g('fs-phone')+'%%0D%%0AAddress: '+g('fs-addr')+'%%0D%%0A%%0D%%0APlease send free samples.';
 window.location.href='mailto:label@etia-tech.com?subject=Free%%20Sample%%20Request&body='+b;return false;}</script>
-</body></html>""" % (lang,esc(T["meta_title"]),esc(T["meta_desc"]),canonical,home_hreflang(path),esc(T["meta_title"]),CSS,schema_js,
+</body></html>""" % (lang,esc(T["meta_title"]),esc(T["meta_desc"]),canonical,home_hreflang(path),hero_preload,esc(T["meta_title"]),CSS,schema_js,
         ("/" if lang=="en" else HL_PREFIX[lang]+"/"),home_nav(lang),body,home_footer(lang))
     outdir=os.path.join(ROOT,HL_PREFIX[lang].strip("/")) if HL_PREFIX[lang] else ROOT
     os.makedirs(outdir,exist_ok=True)
@@ -1307,6 +1404,8 @@ def write_redirects():
       {"source":"/products/direct-label","destination":"/products/direct-hot-application-labels/","permanent":True},
       {"source":"/products/management-label","destination":"/products/heat-treatment-labels/","permanent":True},
       {"source":"/products/management-tag","destination":"/products/heat-treatment-tags/","permanent":True},
+      {"source":"/products/hp-700t","destination":"/products/hp-900/","permanent":True},
+      {"source":"/products/heatproof/hp-t42-hp-cbr-tag","destination":"/products/heatproof/hp-l90/","permanent":True},
     ]}
     open(os.path.join(ROOT,"vercel.json"),"w").write(json.dumps(cfg,indent=2)+"\n")
 
@@ -1367,12 +1466,35 @@ def build_contact(lang):
         esc(z if zh else e), esc(rz if zh else r), esc(c)) for e,z,r,rz,c in offices)
     ask=("告诉我们:粘贴表面、温度(贴标时与后续最高)、化学暴露、打印方式与标签尺寸,我们推荐材料并安排样品。" if zh
          else "Tell us: the surface, temperature (at application and later peak), chemical exposure, print method and label size — we'll recommend the material and arrange samples.")
-    body=('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div>'
-          '<a class="btn pri" href="mailto:label@etia-tech.com">label@etia-tech.com</a></div></section>'
-          '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>'
-          '<div class="wrap">%s</div>')%(
-        ("告诉我们您的应用" if zh else "Tell us your application"), esc(ask),
-        ("办公室" if zh else "Offices"), cards, cta(lang))
+    def lb(e,z): return z if zh else e
+    form_css=('<style>.cform{max-width:760px}'
+      '.cfg{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px;margin:12px 0 18px}'
+      '.cform label{display:flex;flex-direction:column;font-size:13px;font-weight:700;color:var(--blue-deep);gap:6px}'
+      '.cform label.full{grid-column:1/-1}'
+      '.cform input,.cform textarea{font:inherit;font-weight:400;padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink)}'
+      '.cform input:focus,.cform textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}'
+      '@media(max-width:560px){.cfg{grid-template-columns:1fr}}</style>')
+    form=(form_css+'<form class="cform" onsubmit="return etaContact(event)"><div class="cfg">'
+      '<label>'+esc(lb("Name *","姓名 *"))+'<input name="name" required></label>'
+      '<label>'+esc(lb("Company","公司"))+'<input name="company"></label>'
+      '<label>'+esc(lb("Email *","邮箱 *"))+'<input type="email" name="email" required></label>'
+      '<label>'+esc(lb("Phone *","电话 *"))+'<input name="phone" required></label>'
+      '<label class="full">'+esc(lb("Product / Interest","产品 / 需求"))+'<input name="product" id="cf_product"></label>'
+      '<label class="full">'+esc(lb("Your application — surface, temperature, chemistry, print method, label size","您的应用 —— 表面、温度、化学环境、打印方式、标签尺寸"))+'<textarea name="message" rows="4"></textarea></label>'
+      '</div><button class="btn pri" type="submit">'+esc(lb("Send to ETIA","发送给 ETIA"))+'</button></form>')
+    form_js=('<script>(function(){var p=new URLSearchParams(location.search),pr=p.get("product"),ty=p.get("type"),f=document.getElementById("cf_product");if(f&&pr){f.value=pr+(ty?" ("+ty+")":"");}})();'
+      'function etaContact(e){e.preventDefault();var f=e.target,g=function(n){var el=f.querySelector("[name="+n+"]");return el?el.value.trim():"";};'
+      'var nm=g("name"),em=g("email"),ph=g("phone");'
+      'if(!nm||!em||!ph){alert("'+lb("Please fill in name, email and phone.","请填写姓名、邮箱和电话。")+'");return false;}'
+      'var s="ETIA enquiry"+(g("product")?" - "+g("product"):"");'
+      'var b="Name: "+nm+"\\nCompany: "+g("company")+"\\nEmail: "+em+"\\nPhone: "+ph+"\\nProduct: "+g("product")+"\\n\\n"+g("message");'
+      'window.location.href="mailto:label@etia-tech.com?subject="+encodeURIComponent(s)+"&body="+encodeURIComponent(b);return false;}</script>')
+    body=('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div>%s%s'
+          '<p class="muted" style="font-size:13px;margin-top:10px">%s <a href="mailto:label@etia-tech.com">label@etia-tech.com</a></p></div></section>'
+          '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>')%(
+        lb("Tell us your application","告诉我们您的应用"), esc(ask), form, form_js,
+        lb("Prefer email? Write to","更习惯邮件？请联系"),
+        lb("Offices","办公室"), cards)
     crumb=[("Home","/"),("Contact","/contact/")]
     write(lang,"/contact/",page(lang,"/contact/",
         ("联系 ETIA | ETIA" if zh else "Contact ETIA | ETIA"),
@@ -1593,7 +1715,7 @@ def build_legal(lang):
          ("Changes to This Policy",["We may update this Privacy Policy from time to time. The \"Last updated\" date shows when it was last revised."]),
          ("Contact Us",["For any privacy question or request, contact us at "+CONTACT+"."])],
         [("引言",["ETIA（\"我们\"）尊重您的隐私。本隐私政策说明我们通过本网站收集哪些信息、如何使用，以及您拥有的选择。本政策仅适用于本网站。"]),
-         ("我们收集的信息",["您主动提供的信息：当您提交询价、申请样品或与我们联系时，我们会收集您填写的内容，例如姓名、公司、电话、邮箱及留言内容。",
+         ("我们收集的信息",["您主动提供的信息：当您提交询价、咨询专家或与我们联系时，我们会收集您填写的内容，例如姓名、公司、电话、邮箱及留言内容。",
                      "自动收集的信息：与大多数网站一样，我们可能通过 Cookie 及类似技术收集技术数据，如 IP 地址、浏览器类型、设备信息及访问页面。"]),
          ("信息的使用",["我们使用这些信息以回复您的询问、提供样品、报价与应用支持，运营并改进本网站，并履行法律或监管义务。"]),
          ("Cookie",["本网站使用 Cookie 及类似技术。有关我们使用的 Cookie 及管理方式，请参见我们的 Cookie 政策。"]),

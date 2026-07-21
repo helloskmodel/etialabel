@@ -75,26 +75,6 @@
    ]
   },
   {
-   "id": "hp-700t",
-   "type": "label",
-   "process_paths": [
-    "direct_hot_application"
-   ],
-   "app_temp": "Approx. 450–800°C",
-   "max_proc": "Up to approx. 800°C",
-   "note": "Hot slabs, billets and blooms",
-   "name": "HP-700T",
-   "slug": "hp-700t",
-   "applications": [
-    "steel/hot-steel-slab-identification",
-    "steel/hot-steel-billet-identification",
-    "steel/hot-steel-bloom-identification"
-   ],
-   "industries": [
-    "steel"
-   ]
-  },
-  {
    "id": "hp-900",
    "type": "label",
    "process_paths": [
@@ -102,10 +82,13 @@
    ],
    "app_temp": "Approx. 450–900°C",
    "max_proc": "Up to approx. 900°C",
-   "note": "Ultra-high-temperature hot steel identification",
+   "note": "Direct identification of hot slabs, billets, blooms and ultra-high-temperature steel",
    "name": "HP-900",
    "slug": "hp-900",
    "applications": [
+    "steel/hot-steel-slab-identification",
+    "steel/hot-steel-billet-identification",
+    "steel/hot-steel-bloom-identification",
     "steel/ultra-high-temperature-steel-identification"
    ],
    "industries": [
@@ -585,7 +568,7 @@
    "title_en": "Hot Steel Slab Identification",
    "process_path": "direct_hot_application",
    "recommended": [
-    "hp-700t"
+    "hp-900"
    ]
   },
   {
@@ -603,7 +586,7 @@
    "title_en": "Hot Steel Billet Identification",
    "process_path": "direct_hot_application",
    "recommended": [
-    "hp-700t"
+    "hp-900"
    ]
   },
   {
@@ -612,7 +595,7 @@
    "title_en": "Hot Steel Bloom Identification",
    "process_path": "direct_hot_application",
    "recommended": [
-    "hp-700t"
+    "hp-900"
    ]
   },
   {
