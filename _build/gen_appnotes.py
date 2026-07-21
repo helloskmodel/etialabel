@@ -92,20 +92,36 @@ def build_article(lang, a, s):
     chal_prose = _t(lang, a.get("challenge_en", ""), a.get("challenge_zh", ""))
     risk_prose = _t(lang, a.get("risk_en", ""), a.get("risk_zh", ""))
 
-    sec = ""
-    # Challenge
-    sec += ('<div class="ansec chal"><h2><span class="i">%s</span>%s</h2>%s%s</div>') % (
-        IC_CHAL, H("Challenge", "应用挑战"), _chips(ch_items, "ch"),
-        ('<p>%s</p>' % esc(chal_prose)) if chal_prose else "")
-    # Risk of wrong label
-    if risk_prose:
-        sec += ('<div class="ansec risk"><h2><span class="i">%s</span>%s</h2>'
-                '<div class="anriskbox"><p>%s</p></div></div>') % (
-            IC_RISK, H("Risk of Wrong Label", "用错标签风险"), esc(risk_prose))
-    # Recommended Solution — E-LABEL product card(s) with Feature / Benefit / Specification
+    area_txt = _t(lang, a.get("area", ""), a.get("area_zh", a.get("area", "")))
+    chal = _t(lang, a.get("challenge_en", ""), a.get("challenge_zh", ""))
+    risk = _t(lang, a.get("risk_en", ""), a.get("risk_zh", ""))
+    pr0 = next((p for p in a.get("products", []) if p.get("brand", "E-Label") != "Computype"), None)
+    model = pr0["model"] if pr0 else ""
+    feat = _t(lang, pr0.get("feature_en", ""), pr0.get("feature_zh", "")) if pr0 else ""
+    ben = _t(lang, pr0.get("benefit_en", ""), pr0.get("benefit_zh", "")) if pr0 else ""
+    def _lc(x): return (x[0].lower() + x[1:]) if x and not x[:2].isupper() else x
+
+    # Prose article, composed from the application's data — reads as an authored
+    # technical note rather than a datasheet.
+    if zh:
+        Hs = ("概述", "应用环境", "用错标签的代价", "推荐方案", "我们的方法")
+        p_ov = "在整车的%s,%s不仅是部件上的一个标记,更承载着车辆在整个生命周期中所依赖的安全、警示与可追溯信息,由于这些信息必须从装配线一直保持到多年使用之后,标签结构的选择是一项工程决策,而非收尾环节" % (area_txt, a["name_zh"])
+        p_env = "该位置会让标签持续面对:%s,这些因素分别作用于标签系统的不同部分——与基材的粘接、面材的尺寸稳定性,以及印刷图文的耐久性——正是它们长期叠加的作用,让通用材料失效" % chal
+        p_risk = "%s,在以安全与法规合规为准绳的行业里,标签一旦脱落或不可读,绝非外观瑕疵——它可能导致停线、返工,甚至成为现场安全与召回隐患,选错材料的代价远不止一张标签的价格" % risk
+        p_sol = "针对该应用,ETIA 推荐 %s,其结构为:%s——正是针对上述工况而设计,%s,从贴附之初到部件的整个使用周期,标签始终保持粘接与印刷信息完好" % (model, feat, ben)
+        p_close = "ETIA 的每一次推荐都从应用出发,而非从产品出发,如果您的工况有所不同——更高的温区、更低表面能的基材、更严格的合规要求——我们会先测试、再匹配,然后才给出建议"
+    else:
+        Hs = ("Overview", "The operating environment", "The cost of the wrong label", "Recommended solution", "The ETIA approach")
+        p_ov = "Across the %s, %s do more than mark a part — they carry the safety, warning and traceability information a vehicle depends on throughout its life. Because that information has to remain intact from the assembly line through years of service, the label construction is an engineering choice, not a finishing touch." % ((a.get("area", "") or "").lower(), a["name_en"])
+        p_env = "This position exposes the label to a combination of stressors: %s. Each acts on a different part of the label system — the adhesive bond to the substrate, the dimensional stability of the facestock and the durability of the printed image — and it is their sustained combination, not any single condition, that defeats general-purpose materials." % chal
+        p_risk = "%s In an industry governed by safety and regulatory compliance, a label that lifts or becomes unreadable is not a cosmetic defect — it can stop a line, force rework, or become a field-safety and recall liability. The cost of the wrong material is measured in far more than the price of a label." % risk
+        p_sol = "For this application ETIA specifies %s. Its construction is purpose-built: %s — engineered directly against the conditions above. In service it %s. From first application through the full life of the part, the label keeps its adhesion and its printed information intact." % (model, feat, _lc(ben))
+        p_close = "Every ETIA recommendation starts from the application, not the product. If your conditions differ — a hotter zone, a lower-energy surface, a tighter compliance requirement — we test and match the construction before we recommend it."
+
+    # matched product card (Feature / Benefit / Specification) — sits inside the Solution section
     prod_html = ""
     for pr in a.get("products", []):
-        if pr.get("brand", "E-Label") != "E-Label":
+        if pr.get("brand", "E-Label") == "Computype":
             continue
         rows = ""
         for key, en, zh_l in (("feature", "Feature", "特性"), ("benefit", "Benefit", "收益"),
@@ -113,25 +129,31 @@ def build_article(lang, a, s):
             val = _t(lang, pr.get(key + "_en", ""), pr.get(key + "_zh", ""))
             if val:
                 rows += '<div class="row"><span>%s</span><p>%s</p></div>' % (H(en, zh_l), esc(val))
-        url = L(lang, "/contact/?product=%s&industry=automotive" % quote(pr["model"], safe=""))
-        prod_html += ('<div class="anprod"><span class="avbrand">E-LABEL</span>'
+        url = L(lang, "/contact/?product=%s" % quote(pr["model"], safe=""))
+        brand = pr.get("brand", "E-Label")
+        prod_html += ('<div class="anprod"><span class="avbrand">%s</span>'
                       '<div class="m">%s</div>%s<a class="cta" href="%s">%s</a></div>') % (
+            esc("E-LABEL" if brand == "E-Label" else brand.upper()),
             esc(pr["model"]), rows, url, H("Talk to a Specialist", "咨询专家"))
-    if prod_html:
-        sec += ('<div class="ansec sol"><h2><span class="i">%s</span>%s</h2>%s</div>') % (
-            IC_SOL, H("Recommended Solution", "推荐方案"), prod_html)
-    # recommendation keyword chips as a quick reference under the solution
-    if rec_items:
-        sec += ('<div class="ansec sol"><h2><span class="i">%s</span>%s</h2>%s</div>') % (
-            IC_INTRO, H("Material Properties", "材料属性"), _chips(rec_items, "so"))
 
-    area_txt = _t(lang, a.get("area", ""), a.get("area_zh", a.get("area", "")))
+    sec = '<div class="ansec"><h2>%s</h2><p>%s</p></div>' % (esc(Hs[0]), esc(p_ov))
+    if chal:
+        sec += ('<div class="ansec chal"><h2><span class="i">%s</span>%s</h2><p>%s</p>%s</div>') % (
+            IC_CHAL, esc(Hs[1]), esc(p_env), _chips(ch_items, "ch"))
+    if risk:
+        sec += ('<div class="ansec risk"><h2><span class="i">%s</span>%s</h2><p>%s</p></div>') % (
+            IC_RISK, esc(Hs[2]), esc(p_risk))
+    if pr0:
+        sec += ('<div class="ansec sol"><h2><span class="i">%s</span>%s</h2><p>%s</p>%s%s</div>') % (
+            IC_SOL, esc(Hs[3]), esc(p_sol), prod_html, _chips(rec_items, "so"))
+    sec += '<div class="ansec"><h2>%s</h2><p>%s</p></div>' % (esc(Hs[4]), esc(p_close))
+
     area = ('<span class="anarea">%s</span>' % esc(area_txt)) if area_txt else ""
     body = CSS + ('<section class="blk"><div class="wrap anwrap">%s%s</div></section>'
                   '<div class="wrap">%s</div>') % (area, sec, hp.cta2(lang, "applications"))
     lede = esc(_t(lang, a["purpose_en"], a["purpose_zh"]))
-    title = _t(lang, "%s — Label Purpose, Challenge & Recommended E-LABEL Material | ETIA" % a["name_en"],
-                     "%s —— 标签用途、应用挑战与推荐 E-LABEL 材料 | ETIA" % a["name_zh"])
+    title = _t(lang, "%s — Application Note & Material Selection Guide | ETIA" % a["name_en"],
+                     "%s —— 应用笔记与选型指南 | ETIA" % a["name_zh"])
     desc = _t(lang, a["purpose_en"], a["purpose_zh"])
     crumb = [("Home", "/"), ("Application Notes", HUB), (name, path)]
     write(lang, path, page(lang, path, title, desc, name, lede, body, crumb, active="insights"))
