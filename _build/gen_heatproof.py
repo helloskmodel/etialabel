@@ -18,9 +18,17 @@ PRODUCTS = {p["id"]: p for p in DATA["products"]}
 INDUSTRIES = {i["id"]: i for i in DATA["industries"]}
 APPS = DATA["applications"]
 
-LANGS = ["en", "zh"]
-PREFIX = {"en": "", "zh": "/cn"}
-HREFLANG = {"en": "en", "zh": "zh"}
+LANGS = ["en", "zh"]                       # default inner-site languages
+PREFIX = {"en": "", "zh": "/cn", "vi": "/vn", "th": "/th"}
+HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th"}
+# Paths that exist in all four languages (home + the automotive sector). Links to
+# any other path from a vi/th page fall back to the English version (no 404).
+FOURLANG = {"/", "/industries/automotive-label-materials/"}
+def Lx(lang, path):
+    """Smart localized link: use the vi/th version only if that path is 4-language."""
+    if lang in ("vi", "th") and path not in FOURLANG:
+        return path
+    return PREFIX.get(lang, "") + path
 
 def esc(s): return html.escape(str(s or ""), quote=True)
 
@@ -457,6 +465,16 @@ NAV_ITEMS = [("Home", "/", "home"),
              ("Application Notes", "/application-notes/", "insights"),
              ("Service", "/service/", "service")]
 NAV_ZH = {"Home":"首页","Products":"产品","Application Notes":"应用笔记","Insights":"洞察","Service":"服务"}
+# 4-language nav / footer labels (keyed by the English label)
+NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Application Notes":"Ghi chú ứng dụng","Service":"Dịch vụ",
+          "Industries":"Ngành","About ETIA":"Về ETIA","Contact":"Liên hệ"}
+NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Application Notes":"แอปพลิเคชันโน้ต","Service":"บริการ",
+          "Industries":"อุตสาหกรรม","About ETIA":"เกี่ยวกับ ETIA","Contact":"ติดต่อ"}
+def navlab(lang, t):
+    if lang == "zh": return NAV_ZH.get(t, t)
+    if lang == "vi": return NAV_VI.get(t, t)
+    if lang == "th": return NAV_TH.get(t, t)
+    return t
 
 # Products mega-menu: current sectors only (legacy partner-brand sectors retired)
 PROD_AXES = [
@@ -520,9 +538,9 @@ def products_dropdown(lang, linkfn):
 ALL_URLS = []   # (path, group, changefreq)  — English canonical set for sitemap
 def track(path, group): ALL_URLS.append((path, group))
 
-def hreflang_block(path):
+def hreflang_block(path, langs=None):
     t = []
-    for lg in LANGS:
+    for lg in (langs or LANGS):
         t.append('<link rel="alternate" hreflang="%s" href="%s">' % (HREFLANG[lg], SITE + PREFIX[lg] + path))
     t.append('<link rel="alternate" hreflang="x-default" href="%s">' % (SITE + path))  # EN is x-default
     return "".join(t)
@@ -535,36 +553,60 @@ NAV_TOGGLE = ('<button class="navtog" type="button" aria-label="Menu" onclick="e
               '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">'
               '<path d="M4 7h16M4 12h16M4 17h16"/></svg></button>')
 
-def nav_html(lang, active, path="/"):
-    def lab(t): return NAV_ZH[t] if lang == "zh" else t
+LANG_CODE = {"en": "EN", "zh": "CN", "vi": "VN", "th": "TH"}
+def nav_html(lang, active, path="/", langs=None):
+    langs = langs or ["en", "zh"]
     items = ""
     for t, href, key in NAV_ITEMS:
         if key == "products":
-            items += products_dropdown(lang, lambda p: L(lang, p))
+            items += products_dropdown(lang, lambda p: Lx(lang, p))
         else:
-            items += '<a href="%s"%s>%s</a>' % (L(lang, href), ' class="on"' if key==active else '', lab(t))
-    other = "zh" if lang == "en" else "en"
-    other_label = "CN" if lang == "en" else "EN"   # label = the language you switch TO
-    return '<nav><div class="navlinks">%s</div><a class="lang" href="%s">%s</a>%s</nav>' % (
-        items, L(other, path), other_label, NAV_TOGGLE)
+            items += '<a href="%s"%s>%s</a>' % (Lx(lang, href), ' class="on"' if key==active else '', navlab(lang, t))
+    if len(langs) > 2:
+        # 4-language switcher chips (page exists in all of `langs`)
+        sw = '<div class="langsw">%s</div>' % "".join(
+            '<a href="%s"%s>%s</a>' % (PREFIX[lg] + path, ' class="on"' if lg == lang else '', LANG_CODE[lg])
+            for lg in langs)
+    else:
+        other = "zh" if lang == "en" else "en"
+        sw = '<a class="lang" href="%s">%s</a>' % (L(other, path), LANG_CODE[other])
+    return '<nav><div class="navlinks">%s</div>%s%s</nav>' % (items, sw, NAV_TOGGLE)
 
 FOOTER_LINKS = [("Home", "/"), ("Products", u_products()), ("Industries", u_ind_hub()),
                 ("Application Notes", "/application-notes/"), ("Service", "/service/"),
                 ("About ETIA", "/about/"), ("Contact", "/contact/")]
+FOOTER_I18N = {
+ "heads": {"en": ("Navigation","Legal","Contact"), "zh": ("导航","法律","联系"),
+           "vi": ("Điều hướng","Pháp lý","Liên hệ"), "th": ("เมนู","กฎหมาย","ติดต่อ")},
+ "legal": {"en": ("Privacy Policy","Cookie Policy","Terms of Use"),
+           "zh": ("隐私政策","Cookie 政策","使用条款"),
+           "vi": ("Chính sách bảo mật","Chính sách cookie","Điều khoản sử dụng"),
+           "th": ("นโยบายความเป็นส่วนตัว","นโยบายคุกกี้","ข้อกำหนดการใช้งาน")},
+ "tag": {"en": "Supplier &amp; application-support partner — genuine, brand-authorized materials.",
+         "zh": "特种工业标签的供应与应用支持伙伴 —— 正品、品牌授权材料。",
+         "vi": "Đối tác cung ứng và hỗ trợ ứng dụng — vật liệu chính hãng, được ủy quyền thương hiệu.",
+         "th": "พันธมิตรด้านการจัดหาและสนับสนุนการใช้งาน — วัสดุแท้ที่ได้รับอนุญาตจากแบรนด์"},
+ "pc": {"en": ("Privacy","Cookies"), "zh": ("隐私","Cookie"),
+        "vi": ("Bảo mật","Cookie"), "th": ("ความเป็นส่วนตัว","คุกกี้")},
+}
 def footer_html(lang):
-    nav = "".join('<li><a href="%s">%s</a></li>' % (L(lang, p), t) for t, p in FOOTER_LINKS)
-    legal = "".join('<li><a href="%s">%s</a></li>' % (L(lang, p), t) for t, p in
-                    [("Privacy Policy","/privacy/"),("Cookie Policy","/cookies/"),("Terms of Use","/terms/")])
-    return """<footer><div class="wrap">
+    heads = FOOTER_I18N["heads"].get(lang, FOOTER_I18N["heads"]["en"])
+    legals = FOOTER_I18N["legal"].get(lang, FOOTER_I18N["legal"]["en"])
+    tag = FOOTER_I18N["tag"].get(lang, FOOTER_I18N["tag"]["en"])
+    pc = FOOTER_I18N["pc"].get(lang, FOOTER_I18N["pc"]["en"])
+    nav = "".join('<li><a href="%s">%s</a></li>' % (Lx(lang, p), navlab(lang, t)) for t, p in FOOTER_LINKS)
+    legal = "".join('<li><a href="%s">%s</a></li>' % (Lx(lang, p), lt) for lt, p in
+                    zip(legals, ["/privacy/","/cookies/","/terms/"]))
+    return ("""<footer><div class="wrap">
 <div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%%20LOGO.jpg" alt="ETIA Label"></div>
 <div class="fg">
-<div><h5>Navigation</h5><ul>%s</ul></div>
-<div><h5>Legal</h5><ul>%s</ul></div>
-<div><h5>Contact</h5><a class="email" href="mailto:label@etia-tech.com">label@etia-tech.com</a><br><br>
-Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)">Supplier &amp; application-support partner — genuine, brand-authorized materials.</span></div>
-</div>
-<div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span><span><a href="%s">Privacy</a> &nbsp; <a href="%s">Cookies</a></span></div>
-</div></footer>""" % (nav, legal, L(lang,"/privacy/"), L(lang,"/cookies/"))
+<div><h5>%s</h5><ul>%s</ul></div>
+<div><h5>%s</h5><ul>%s</ul></div>
+<div><h5>%s</h5><a class="email" href="mailto:label@etia-tech.com">label@etia-tech.com</a><br><br>
+Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)">%s</span></div>
+</div>""" % (heads[0], nav, heads[1], legal, heads[2], tag)) + """
+<div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span><span><a href="%s">%s</a> &nbsp; <a href="%s">%s</a></span></div>
+</div></footer>""" % (Lx(lang,"/privacy/"), pc[0], Lx(lang,"/cookies/"), pc[1])
 
 TRUST_TITLES = {
  "en":["100% Quality Inspection","Application-Driven Solutions","Flexible Supply","Responsive Application Support"],
@@ -655,11 +697,11 @@ def cta2(lang, kind, linkfn=L):
         esc(pk(c["h"])), esc(pk(c["body"])), linkfn(lang, c["b1u"]), esc(pk(c["b1"])),
         linkfn(lang, c["b2u"]), esc(pk(c["b2"])))
 
-def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, active="", trust=True, hero=None):
+def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, active="", trust=True, hero=None, langs=None):
     canonical = SITE + PREFIX[lang] + path
     sch = [breadcrumb_jsonld(crumb, lang)] + (schema_extra or [])
     schema_js = "".join('<script type="application/ld+json">%s</script>' % json.dumps(s, ensure_ascii=False) for s in sch)
-    cr = ' &rsaquo; '.join((('<a href="%s">%s</a>' % (L(lang,p), esc(n))) if p and i < len(crumb)-1 else '<b>%s</b>' % esc(n))
+    cr = ' &rsaquo; '.join((('<a href="%s">%s</a>' % (Lx(lang,p), esc(n))) if p and i < len(crumb)-1 else '<b>%s</b>' % esc(n))
                            for i,(n,p) in enumerate(crumb))
     lede_html = ('<p class="lede">%s</p>' % lede) if lede else ""
     # hero (when given) replaces the plain pagehead block — used for the industry
@@ -691,8 +733,8 @@ m.querySelectorAll('.midgroup').forEach(function(p){p.style.display=(p.getAttrib
 var mg=m.querySelector('.midgroup[data-mid="'+a+'"]');var first=mg?mg.querySelector('.axitem.haskid'):null;
 etaSub(first,first?first.getAttribute('data-sub'):'');}
 </script>
-</body></html>""" % (lang, esc(title), esc(desc), canonical, hreflang_block(path), esc(title), CSS, schema_js,
-     L(lang,"/"), nav_html(lang, active, path), cr, head_block, (trust_bar(lang) if trust else ""), body, footer_html(lang))
+</body></html>""" % (lang, esc(title), esc(desc), canonical, hreflang_block(path, langs), esc(title), CSS, schema_js,
+     Lx(lang,"/"), nav_html(lang, active, path, langs), cr, head_block, (trust_bar(lang) if trust else ""), body, footer_html(lang))
 
 def write(lang, path, content):
     full = os.path.join(ROOT, (PREFIX[lang] + path).strip("/"), "index.html")
