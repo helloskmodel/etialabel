@@ -111,20 +111,21 @@ def build_article(lang, a, s):
 
     # SEO article flow: Application -> Risks of the Wrong Label -> Material
     # Considerations -> Recommended Products -> ETIA Recommendation -> ETIA Support.
+    # Keep the prose lean — one short line per section; the data does the talking.
     if zh:
         heads = ("应用", "用错标签的风险", "材料选型考量", "推荐产品", "ETIA 推荐", "ETIA 支持")
-        p_app = "%s,在整车的%s,%s承载着安全、警示与可追溯信息,必须在部件的整个使用周期内保持清晰可读,在这里选对标签是一项工程决策,而非收尾环节——它直接决定这些信息能否在真实工况下存留" % (purpose, area_txt, a["name_zh"])
-        p_risk2 = "使用并非为该位置设计的标签,会以可预见的方式失效,%s,在以安全与法规合规为准绳的行业里,标签一旦脱落或不可读,绝非外观瑕疵——它可能导致停线、返工,甚至成为现场安全与召回隐患,选错材料的代价远不止一张标签的价格" % risk
-        p_mat = "为该应用选择耐久标签,关键在于让三个层次与环境相匹配:面材需保持尺寸稳定与可印刷性,胶层需维持与基材的粘接,顶涂层需保护印刷图文,在这里材料必须耐受:%s,需要重点确认的抗性包括" % chal
-        p_rec = "针对该应用,ETIA 推荐 %s,其结构为:%s——正是针对上述工况而设计,%s,ETIA 的每一次推荐都从应用出发,而非从产品目录出发,当工况不同时,我们会先测试、再匹配,然后才给出建议" % (model, feat, ben)
-        p_sup = "ETIA 提供从选型到供应的全流程支持——应用评估、样品测试、自有分切加工、质量检验与稳定的重复供应——确保通过验证的材料,就是量产时交付给您的材料"
+        p_app = purpose
+        p_risk2 = risk
+        p_mat = ("该应用需耐受:%s" % chal) if chal else ""
+        p_rec = ("针对该应用,ETIA 推荐 %s" % model) if model else ""
+        p_sup = "ETIA 提供应用评估、打样、供应与长期服务"
     else:
         heads = ("Application", "Risks of Using the Wrong Label", "Material Considerations", "Recommended Products", "ETIA Recommendation", "ETIA Support")
-        p_app = "%s Across the %s, %s carry safety, warning and traceability information that has to remain legible for the full service life of the part. Choosing the right label here is an engineering decision, not a finishing touch — it determines whether that information survives real-world service." % (purpose, (a.get("area", "") or "").lower(), a["name_en"])
-        p_risk2 = "A label that is not built for this position fails in predictable ways. %s In a safety- and compliance-driven industry, an unreadable or detached label is not a cosmetic defect — it can halt a production line, force rework, or become a field-safety and recall liability. The cost of specifying the wrong material is far greater than the price of the label." % risk
-        p_mat = "Selecting a durable label here comes down to matching three layers to the environment: the facestock, which must hold its dimensions and printability; the adhesive, which must keep its bond to the substrate; and the topcoat, which must protect the printed image. In this application the material has to withstand %s. The key resistances to specify are" % _lc(chal)
-        p_rec = "For this application ETIA recommends %s. Its construction — %s — is engineered directly against these conditions, and in service it %s. Every ETIA recommendation starts from the application, not the catalogue: where conditions differ, we test and match the construction before recommending it." % (model, feat, _lc(ben))
-        p_sup = "ETIA supports the full path from selection to supply — application review, sample evaluation and testing, in-house converting, quality inspection and dependable repeat supply — so the material that passes qualification is the same one delivered in production."
+        p_app = purpose
+        p_risk2 = risk
+        p_mat = ("This label must withstand %s." % _lc(chal)) if chal else ""
+        p_rec = ("ETIA recommends %s for this application." % model) if model else ""
+        p_sup = "ETIA supports application review, sampling, supply and long-term service."
 
     keys = ("APPLICATION", "RISKS OF THE WRONG LABEL", "MATERIAL CONSIDERATIONS",
             "RECOMMENDED PRODUCTS", "ETIA RECOMMENDATION", "ETIA SUPPORT")
@@ -147,16 +148,17 @@ def build_article(lang, a, s):
             esc("E-LABEL" if brand == "E-Label" else brand.upper()),
             esc(pr["model"]), rows, url, H("Talk to a Specialist", "咨询专家"))
 
+    def _p(t): return ('<p>%s</p>' % esc(t)) if t else ""
     def _ns(num, key, heading, inner):
-        return '<div class="nnsec"><div class="num">%02d · %s</div><h2>%s</h2>%s</div>' % (
-            num, esc(key), esc(heading), inner)
-    sec = _ns(1, keys[0], heads[0], '<p>%s</p>' % esc(p_app))
-    sec += _ns(2, keys[1], heads[1], '<p>%s</p>' % esc(p_risk2))
-    sec += _ns(3, keys[2], heads[2], '<p>%s</p>' % esc(p_mat) + _chips(rec_items, "so"))
+        return ('<div class="nnsec"><div class="num">%02d · %s</div><h2>%s</h2>%s</div>' % (
+            num, esc(key), esc(heading), inner)) if inner else ""
+    sec = _ns(1, keys[0], heads[0], _p(p_app))
+    sec += _ns(2, keys[1], heads[1], _p(p_risk2))
+    sec += _ns(3, keys[2], heads[2], _p(p_mat) + _chips(rec_items, "so"))
     if prod_html:
         sec += _ns(4, keys[3], heads[3], prod_html)
-    sec += _ns(5, keys[4], heads[4], '<p>%s</p>' % esc(p_rec))
-    sec += _ns(6, keys[5], heads[5], '<p>%s</p>' % esc(p_sup))
+    sec += _ns(5, keys[4], heads[4], _p(p_rec))
+    sec += _ns(6, keys[5], heads[5], _p(p_sup))
 
     area = ('<span class="anarea">%s</span>' % esc(area_txt)) if area_txt else ""
     body = CSS + CSS_NOTE + ('<section class="blk"><div class="wrap anwrap">%s%s</div></section>'
