@@ -19,8 +19,7 @@
   },
   "focus_urls": [
     "/industries/metal-ceramics/",
-    "/industries/automotive-label-materials/",
-    "/products/circuit-board-labels/"
+    "/industries/automotive-label-materials/"
   ],
   "en": {
     "nav": [
@@ -74,13 +73,6 @@
         "desc": "Durable labels for automotive manufacturing and tire traceability.",
         "tags": [],
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
-      },
-      {
-        "name": "Circuit Board & PCB",
-        "headline": "High-Temperature Polyimide PCB Labels",
-        "desc": "High-temperature label materials for PCB assembly and electronics traceability.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB.jpg"
       }
     ],
     "explore": "View Application",
@@ -213,13 +205,6 @@
         "desc": "用于汽车制造与轮胎追溯的耐久标签材料。",
         "tags": [],
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
-      },
-      {
-        "name": "电路板与 PCB",
-        "headline": "耐高温聚酰亚胺 PCB 标签",
-        "desc": "用于 PCB 装配与电子产品追溯的耐高温标签材料。",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB.jpg"
       }
     ],
     "explore": "查看应用",
@@ -352,13 +337,6 @@
         "desc": "Durable labels for automotive manufacturing and tire traceability.",
         "tags": [],
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
-      },
-      {
-        "name": "Bảng mạch & PCB",
-        "headline": "High-Temperature Polyimide PCB Labels",
-        "desc": "High-temperature label materials for PCB assembly and electronics traceability.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB.jpg"
       }
     ],
     "explore": "Khám phá",
@@ -491,13 +469,6 @@
         "desc": "Durable labels for automotive manufacturing and tire traceability.",
         "tags": [],
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
-      },
-      {
-        "name": "แผงวงจร & PCB",
-        "headline": "High-Temperature Polyimide PCB Labels",
-        "desc": "High-temperature label materials for PCB assembly and electronics traceability.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB.jpg"
       }
     ],
     "explore": "สำรวจ",

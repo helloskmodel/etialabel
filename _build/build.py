@@ -2,19 +2,17 @@
 # -*- coding: utf-8 -*-
 """Single build entrypoint. HEATPROOF builds the shared shell (home, products hub,
 core/legal, nav/footer). Only the CURRENT sectors are layered on: Metals/Ceramics
-(steel), Automotive (E-Label), and the PCB/Apex product-line. Legacy partner-brand
-sectors (old automotive/healthcare/pcb/wire-cable/polyimide/featured/notes/brochure)
-have been retired. Finally strips Chinese full-stops and verifies."""
+(steel) and Automotive (E-Label). Legacy partner-brand sectors and the Circuit
+Board & PCB / Apex product-line (to be redefined) have been retired. Finally
+strips Chinese full-stops and verifies."""
 import sys, os
 BUILD = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BUILD)
 import gen_heatproof as hp
-import gen_prodline as prodline
 import gen_steel as steel
 import gen_autoapps as autoapps
 
 hp.main()        # clean + build shell: home, products hub, core/legal, nav/footer, base vercel.json
-prodline.main()  # PCB sector + Polyonics Apex Series product-line landing
 steel.main()     # Metals & Ceramics sector — Steel/Aluminum/Ceramics + HP-900 line (owns /industries/metal-ceramics/, /industries/steel/ …)
 autoapps.main()  # Automotive Label Solutions — E-Label sector (owns /industries/automotive-label-materials/)
 
@@ -40,4 +38,4 @@ def strip_cn_fullstops():
 
 strip_cn_fullstops()
 print("BUILD COMPLETE — total EN canonical URLs:",
-      len(hp.ALL_URLS) + len(prodline.URLS) + len(steel.URLS) + len(autoapps.URLS))
+      len(hp.ALL_URLS) + len(steel.URLS) + len(autoapps.URLS))

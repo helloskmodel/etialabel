@@ -130,8 +130,9 @@ section.blk{padding:34px 0}
 .blk h2+.sub{color:var(--mut);margin-bottom:16px;max-width:46em}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
 .grid.grid3{grid-template-columns:repeat(3,1fr)}
+.grid.grid2{grid-template-columns:repeat(2,1fr);max-width:760px}
 @media(max-width:900px){.grid.grid3{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.grid.grid3{grid-template-columns:1fr}}
+@media(max-width:560px){.grid.grid3,.grid.grid2{grid-template-columns:1fr}}
 /* industry landing HERO SECTION (label + slogan, banner-ready) */
 .indhero{position:relative;background:linear-gradient(120deg,var(--blue),var(--blue-deep) 60%,#0f2f7a);color:#fff;overflow:hidden;background-size:cover;background-position:center}
 .indhero.hasimg::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(20,60,150,.90),rgba(20,60,150,.42));z-index:1}
@@ -460,7 +461,6 @@ NAV_ZH = {"Home":"首页","Products":"产品","Application Notes":"应用笔记"
 # Products mega-menu: current sectors only (legacy partner-brand sectors retired)
 PROD_AXES = [
  ("app","By Industry","按行业",[
-   ("Circuit Board & PCB Labels","电路板与 PCB 标签","/products/circuit-board-labels/"),
    ("Metal & Ceramics","金属与陶瓷","/industries/metal-ceramics/",[
       ("Steel","钢铁","/industries/steel/"),
       ("Aluminum","铝","/industries/aluminum/"),
@@ -688,8 +688,8 @@ def build_products_hub(lang):
     # Products & Solutions — three ways to find a material
     routes = [
       ("按行业与应用" if lang=="zh" else "By Industry & Application",
-       "金属与陶瓷、汽车、电路板/PCB —— 从您的行业与应用出发选型" if lang=="zh"
-       else "Metal & ceramics, automotive, circuit board & PCB — start from your industry and application.",
+       "金属与陶瓷、汽车 —— 从您的行业与应用出发选型" if lang=="zh"
+       else "Metal & ceramics and automotive — start from your industry and application.",
        "/industries/"),
     ]
     rcards = "".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="rows" style="color:var(--blue);font-weight:700;margin-top:10px">%s →</div></a>'%(
@@ -845,12 +845,9 @@ def build_industries_hub(lang):
             "面向钢铁、铝与陶瓷的 HEATPROOF 耐高温标签与挂牌 —— 耐受 1000℃ 以上") +
         _sc("/industries/automotive-label-materials/", "Automotive", "汽车",
             "E-Label durable automotive labels across the whole vehicle — engine bay, battery, interior, exterior and tire.",
-            "覆盖整车的 E-Label 耐用汽车标签 —— 发动机舱、电池、内饰、外饰与轮胎") +
-        _sc("/products/circuit-board-labels/", "Circuit Board & PCB Labels", "电路板与 PCB 标签",
-            "Ultra-performance polyimide PCB labels — the Polyonics Apex Series, heat-resistant to 300℃.",
-            "超高性能 PCB 聚酰亚胺标签 —— Polyonics Apex 系列，耐温 300℃"))
+            "覆盖整车的 E-Label 耐用汽车标签 —— 发动机舱、电池、内饰、外饰与轮胎"))
     h1 = "行业与应用" if lang == "zh" else "Industries & Applications"
-    body = '<section class="blk"><div class="wrap"><div class="grid grid3">%s</div></div></section><div class="wrap">%s</div>' % (sector_cards, cta(lang))
+    body = '<section class="blk"><div class="wrap"><div class="grid grid2">%s</div></div></section><div class="wrap">%s</div>' % (sector_cards, cta(lang))
     crumb=[("Home","/"),("Industries & Applications",u_ind_hub())]
     write(lang, u_ind_hub(), page(lang, u_ind_hub(),
         ("行业与应用 — 超高温标识 | ETIA" if lang=="zh" else "Industries & Applications — Ultra-High-Temp Identification | ETIA"),
@@ -982,8 +979,6 @@ HOME_FOCUS = [
   ["Hot-metal labeling","Heat treatment","Kiln firing"],["热态贴标","热处理","窑炉烧制"]),
  ("Automotive","汽车制造","/industries/automotive-label-materials/",
   ["VIN identification","Laser marking","Weather exposure"],["VIN标识","激光打标","户外耐候"]),
- ("Circuit Board & PCB","电路板与PCB","/products/circuit-board-labels/",
-  ["PCB assembly","Reflow","Chemical cleaning"],["PCB装配","回流焊","化学清洗"]),
 ]
 
 # one line icon per Application-Center industry — SAME ORDER as home_i18n.json "focus":
