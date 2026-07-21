@@ -125,7 +125,8 @@ def build_article(lang, a, s):
         sec += ('<div class="ansec sol"><h2><span class="i">%s</span>%s</h2>%s</div>') % (
             IC_INTRO, H("Material Properties", "材料属性"), _chips(rec_items, "so"))
 
-    area = ('<span class="anarea">%s</span>' % esc(a["area"])) if a.get("area") else ""
+    area_txt = _t(lang, a.get("area", ""), a.get("area_zh", a.get("area", "")))
+    area = ('<span class="anarea">%s</span>' % esc(area_txt)) if area_txt else ""
     body = CSS + ('<section class="blk"><div class="wrap anwrap">%s%s</div></section>'
                   '<div class="wrap">%s</div>') % (area, sec, hp.cta2(lang, "applications"))
     lede = esc(_t(lang, a["purpose_en"], a["purpose_zh"]))
@@ -158,7 +159,9 @@ def build_hub(lang):
                 L(lang, HUB + s + "/"), esc(name),
                 esc(_t(lang, a["purpose_en"], a["purpose_zh"])),
                 H("Read", "阅读"))
-        blocks += '<div class="angroup"><h2>%s</h2><div class="angrid">%s</div></div>' % (esc(ar), cards)
+        az = groups[ar][0][0].get("area_zh", ar)
+        blocks += '<div class="angroup"><h2>%s</h2><div class="angrid">%s</div></div>' % (
+            esc(_t(lang, ar, az)), cards)
     lede = H("Application-by-application guidance: what each label is for, the environment challenge it faces, the risk of the wrong label, and the recommended E-LABEL material.",
              "逐个应用的选型指引:每种标签的用途、面临的环境挑战、用错标签的风险,以及推荐的 E-LABEL 材料。")
     body = CSS + ('<section class="blk"><div class="wrap">%s</div></section>'

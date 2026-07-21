@@ -5,7 +5,7 @@
 shown as FLEXcon tabs; each tab has a single Introduction box + product cards below.
 Product detail landing pages are future work. Content: _build/data/automotive_apps.json.
 Runs AFTER gen_ind_landing so it owns /industries/automotive-label-materials/."""
-import os, json
+import os, json, re
 from urllib.parse import quote
 import gen_heatproof as hp
 from gen_heatproof import esc, L, page, write, LANGS
@@ -14,6 +14,9 @@ _D = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "da
 APPS = _D["apps"]
 BANNER = _D["banner"]
 PATH = "/industries/automotive-label-materials/"
+AN_HUB = "/application-notes/"   # each application's full write-up lives here
+
+def _an_slug(name): return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 def _t(lang, en, zh): return zh if lang == "zh" else en
 
@@ -152,15 +155,30 @@ def build_sector(lang):
             if pair and pair[0] not in seen:
                 seen.add(pair[0]); ch_items.append(_t(lang, pair[0], pair[1]))
         rec_items = [_t(lang, pr, PROP_ZH.get(pr, pr)) for pr in a.get("props", [])]
-        models = [pr["model"] for pr in a.get("products", []) if pr.get("brand", "E-Label") == "E-Label"]
-        rec_inner = chips(rec_items, "so")
-        if models:
-            rec_inner += '<div class="avrec"><span>E-LABEL</span>%s</div>' % esc(" · ".join(models))
         box = '<div class="av2">%s%s</div>' % (
             box_wrap(IC_CHAL, U("challenge"), "#c2621f", chips(ch_items, "ch")),
-            box_wrap(IC_SOL, U("recommend"), "var(--green-d)", rec_inner, bg="#f4f9f2"))
-        panels += '<div class="avpanel" data-i="%d" style="display:%s">%s</div>' % (
-            i, "block" if i == 0 else "none", box)
+            box_wrap(IC_SOL, U("recommend"), "var(--green-d)", chips(rec_items, "so"), bg="#f4f9f2"))
+        # matched product card(s) UNDER the two keyword cards — model + Feature/Benefit/Spec,
+        # linking to the full Application Notes write-up.
+        art = L(lang, AN_HUB + _an_slug(a["name_en"]) + "/")
+        cards = ""
+        for pr in a.get("products", []):
+            brand = pr.get("brand", "E-Label")
+            if brand == "Computype":
+                continue
+            rows = ""
+            for key, lab in (("feature", "feature"), ("benefit", "benefit"), ("spec", "spec")):
+                val = _t(lang, pr.get(key + "_en", ""), pr.get(key + "_zh", ""))
+                if val:
+                    rows += '<div class="sp"><span>%s</span>%s</div>' % (U(lab), esc(val))
+            cards += ('<a class="avplc" href="%s"><span class="avbrand">%s</span>'
+                      '<div class="t">%s</div>%s<div class="go">%s</div></a>') % (
+                art, esc("E-LABEL" if brand == "E-Label" else brand.upper()),
+                esc(pr["model"]), rows, H("View details", "查看详情") + " →")
+        plw = ('<div class="avplw"><div class="avplh">%s</div><div class="avplg">%s</div></div>' % (
+            U("products"), cards)) if cards else ""
+        panels += '<div class="avpanel" data-i="%d" style="display:%s">%s%s</div>' % (
+            i, "block" if i == 0 else "none", box, plw)
     js = ("<script>function avTab(b,i){var m=b.closest('.avmod');"
           "m.querySelectorAll('.avtab').forEach(function(x,j){x.classList.toggle('on',j===i);});"
           "m.querySelectorAll('.avpanel').forEach(function(p){p.style.display=(+p.getAttribute('data-i')===i)?'block':'none';});}"
