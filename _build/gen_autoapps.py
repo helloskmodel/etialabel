@@ -10,10 +10,24 @@ from urllib.parse import quote
 import gen_heatproof as hp
 from gen_heatproof import esc, L, page, write, LANGS
 
-_D = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "automotive_apps.json"), encoding="utf-8"))
-APPS = _D["apps"]
-BANNER = _D["banner"]
-PATH = "/industries/automotive-label-materials/"
+# ---------------------------------------------------------------------------
+# Sector registry. Every sector is ONE JSON file in _build/data/ following the
+# unified format (see data/sectors/_TEMPLATE.json): a self-describing "sector"
+# metadata block + a flat "apps" list. To add a sector, drop a JSON here.
+SECTOR_FILES = ["automotive_apps.json"]
+_DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+
+def _load(fn):
+    d = json.load(open(os.path.join(_DATA, fn), encoding="utf-8"))
+    s = d["sector"]
+    s.setdefault("banner", d.get("banner", ""))
+    return s, d["apps"]
+
+SECTORS = [_load(fn) for fn in SECTOR_FILES]          # [(sector_meta, apps), ...]
+# back-compat aliases (first sector) — used by gen_appnotes fallbacks
+APPS = SECTORS[0][1]
+BANNER = SECTORS[0][0].get("banner", "")
+PATH = SECTORS[0][0]["path"]
 
 def _t(lang, en, zh): return zh if lang == "zh" else en
 
@@ -64,7 +78,8 @@ UI = {
 }
 
 CSS = """<style>
-.avhero{background:linear-gradient(115deg,rgba(10,30,80,.90),rgba(20,60,150,.50) 55%,rgba(26,86,219,.10)),url('__BANNER__') center/cover no-repeat #0e2a63;color:#fff}
+.avhero{background:#0e2a63;color:#fff}
+.avhero.bg{background:linear-gradient(115deg,rgba(10,30,80,.90),rgba(20,60,150,.50) 55%,rgba(26,86,219,.10)),var(--avbanner) center/cover no-repeat #0e2a63}
 .avhero .wrap{padding:56px 24px}.avhero .eyebrow{color:#9dbcff}
 .avhero h1{color:#fff;font-size:38px;font-weight:800;line-height:1.14;margin:6px 0 12px;max-width:20em}
 .avhero p{color:#eef3ff;font-size:16px;line-height:1.6;max-width:56em}
@@ -118,20 +133,26 @@ CSS = """<style>
  .avchips{gap:5px}.avchip{font-size:11px;padding:3px 8px}
  .avrec{font-size:11.5px;gap:6px;margin-top:9px}.avrec span{font-size:9px;padding:2px 5px}
 }
-</style>""".replace("__BANNER__", BANNER)
+</style>"""
 
-def build_sector(lang):
+def _sname(sector, lang): return _t(lang, sector["name_en"], sector["name_zh"])
+
+def build_sector(lang, sector, apps):
     zh = (lang == "zh")
     def H(e, z): return esc(_t(lang, e, z))
     def U(k): return H(*UI[k])
     contact = L(lang, "/contact/")
-    hero = ('<section class="avhero"><div class="wrap"><div class="eyebrow">%s</div>'
+    PATH = sector["path"]
+    banner = sector.get("banner", "")
+    hcls = "avhero bg" if banner else "avhero"
+    hstyle = (' style="--avbanner:url(\'%s\')"' % banner) if banner else ""
+    hero = ('<section class="%s"%s><div class="wrap"><div class="eyebrow">%s</div>'
             '<h1>%s</h1><p>%s</p><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
-            '</div></section>') % (U("eyebrow"),
-        H("Automotive Label Solutions", "汽车标签解决方案"), H(*UI["subhead"]), contact, U("talk"))
-    overview = ('<section class="blk"><div class="wrap"><div class="avovbody"><p>%s</p></div></div></section>') % H(
-        "Match each application by environment challenge to the recommended E-LABEL material. Label purpose, risk of the wrong label and full product specifications are covered in Application Notes.",
-        "按每个应用面临的环境挑战,匹配推荐的 E-LABEL 材料。标签用途、用错标签的风险与完整产品规格,详见 Application Notes。")
+            '</div></section>') % (hcls, hstyle,
+        esc(_t(lang, sector["eyebrow_en"], sector["eyebrow_zh"])),
+        esc(_sname(sector, lang)), esc(_t(lang, sector["subhead_en"], sector["subhead_zh"])), contact, U("talk"))
+    overview = ('<section class="blk"><div class="wrap"><div class="avovbody"><p>%s</p></div></div></section>') % esc(
+        _t(lang, sector["intro_en"], sector["intro_zh"]))
     def box_wrap(ic, lbl, col, inner, bg=""):
         return ('<div class="avbox"%s><div class="h"><span class="i" style="color:%s">%s</span>'
                 '<span class="e" style="color:%s">%s</span></div>%s</div>') % (
@@ -139,7 +160,7 @@ def build_sector(lang):
     def chips(items, cls):
         return '<div class="avchips">%s</div>' % "".join('<span class="avchip %s">%s</span>' % (cls, esc(x)) for x in items)
     tabs = ""; panels = ""
-    for i, a in enumerate(APPS):
+    for i, a in enumerate(apps):
         name = _t(lang, a["name_en"], a["name_zh"])
         tabs += '<button class="avtab%s" onclick="avTab(this,%d)">%s</button>' % (
             " on" if i == 0 else "", i, esc(name))
@@ -170,20 +191,21 @@ def build_sector(lang):
            '<div class="avtabs">%s</div><button class="avarrow" onclick="avScroll(this,1)">&rsaquo;</button></div>'
            '%s</div></div></section>%s') % (U("browse"), tabs, panels, js)
     body = CSS + overview + mod + ('<div class="wrap">%s</div>' % hp.cta2(lang, "applications"))
+    sname = _sname(sector, lang)
     crumb = [("Home" if not zh else "首页", "/"), ("Industries" if not zh else "行业", "/industries/"),
-             (_t(lang, "Automotive Label Solutions", "汽车标签解决方案"), PATH)]
+             (sname, PATH)]
     write(lang, PATH, page(lang, PATH,
-        _t(lang, "Automotive Label Solutions — Durable Vehicle Labels | ETIA",
-                 "汽车标签解决方案 —— 耐用整车标签 | ETIA"),
-        _t(lang, "Durable automotive label materials across the vehicle — engine bay, battery, fuel & charging, interior, exterior and rubber components.",
-                 "覆盖整车各应用的耐用汽车标签材料 —— 发动机舱、电池、燃油与充电、内饰、外饰与橡胶部件。"),
-        _t(lang, "Automotive Label Solutions", "汽车标签解决方案"), "", body, crumb, active="", hero=hero))
+        _t(lang, "%s — Durable Industrial Labels | ETIA" % sector["name_en"],
+                 "%s —— 耐用工业标签 | ETIA" % sector["name_zh"]),
+        _t(lang, sector["subhead_en"], sector["subhead_zh"]),
+        sname, "", body, crumb, active="", hero=hero))
     if lang == "en": hp.track(PATH, "industries")
 
-URLS = [PATH]
+URLS = [s["path"] for s, _ in SECTORS]
 def main():
     for lang in LANGS:
-        build_sector(lang)
+        for sector, apps in SECTORS:
+            build_sector(lang, sector, apps)
 
 if __name__ == "__main__":
     main()
