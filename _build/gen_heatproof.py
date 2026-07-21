@@ -73,6 +73,7 @@ nav .langsw a:hover{color:var(--blue)}nav .langsw a.on:hover{color:#fff}
 /* Products mega-menu — left-anchored cascading columns (up to 3 levels, Delo/Panacol style) */
 nav .nd{position:relative;display:inline-block}
 nav .nd.ndwide{position:static}
+.ndacc{display:none}.ndmob{display:none}
 nav .ndt{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;font-weight:600;color:var(--ink);cursor:pointer}
 nav .ndt .caret{font-size:10px;color:var(--faint);transition:.15s}
 nav .nd:hover .ndt,nav .nd.open .ndt{color:var(--blue)}
@@ -114,8 +115,17 @@ nav .langsw{display:inline-flex}nav .langsw a{display:inline-block;padding:5px 7
 nav .navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);box-shadow:0 22px 44px rgba(20,40,90,.16);flex-direction:column;align-items:stretch;gap:0;padding:6px 0;z-index:55}
 nav.open .navlinks{display:flex}
 nav .navlinks>a,nav .navlinks .ndt{padding:14px 24px;font-size:16px;border-bottom:1px solid var(--bg)}
-nav .navlinks .nd,nav .navlinks .nd.ndwide{display:block;position:static}
-nav .navlinks .ndm.pm,nav .navlinks .caret{display:none}}
+nav .navlinks .nd,nav .navlinks .nd.ndwide{display:block;position:relative}
+nav .navlinks .ndm.pm,nav .navlinks .caret{display:none}
+/* mobile Products = inline accordion (the hover mega-menu is touch-hostile) */
+nav .navlinks .ndacc{display:inline-flex;align-items:center;justify-content:center;position:absolute;right:10px;top:3px;
+  width:44px;height:44px;background:none;border:none;color:var(--faint);font-size:15px;cursor:pointer;font-family:inherit;transition:transform .18s}
+nav .navlinks .nd.accopen .ndacc{transform:rotate(180deg);color:var(--blue)}
+nav .navlinks .nd.accopen .ndmob{display:block;background:var(--bg)}
+nav .navlinks .ndmob a{display:block;padding:12px 24px;font-size:15px;color:var(--ink);border-bottom:1px solid #fff}
+nav .navlinks .ndmob a.mobtop{font-weight:700}
+nav .navlinks .ndmob a.mobsub{padding-left:44px;font-size:14px;font-weight:500;color:var(--mut)}
+nav .navlinks .ndmob a:hover{color:var(--blue);text-decoration:none}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
 .btn{display:inline-block;font-weight:700;font-size:15px;padding:12px 24px;border-radius:10px}
@@ -503,13 +513,24 @@ def products_dropdown(lang, linkfn):
             key, "flex" if i == 0 else "none", midlinks)
     subs += ('<div class="subgroup subph" data-sub="" style="display:flex"><div class="subempty">%s</div></div>') % (
         "将鼠标移到左侧类别上，查看其产品系列。" if zh else "Hover a category on the left to see its product lines.")
+    # flat accordion list for mobile (the hover mega-menu doesn't work on touch)
+    mob = ""
+    for key, he, hz, items in PROD_AXES:
+        for item in items:
+            e, z, u = item[0], item[1], item[2]
+            kids = item[3] if len(item) > 3 else None
+            mob += '<a class="mobtop" href="%s">%s</a>' % (linkfn(u), esc(lab(e, z)))
+            for ce, cz, cu in (kids or []):
+                mob += '<a class="mobsub" href="%s">%s</a>' % (linkfn(cu), esc(lab(ce, cz)))
     return ('<div class="nd ndwide" onmouseenter="etaOpen(this)" onmouseleave="etaClose(this)">'
             '<a class="ndt" href="%s">%s <span class="caret">&#9662;</span></a>'
+            '<button type="button" class="ndacc" aria-label="Expand products" onclick="etaAcc(this)">&#9662;</button>'
             '<div class="ndm pm">'
             '<div class="ndrail"><div class="ndrail-h">%s</div>%s</div>'
             '<div class="ndmid">%s</div>'
             '<div class="ndsub">%s</div>'
-            '</div></div>') % (linkfn("/products/"), esc(top), ("产品方案" if zh else "LABEL SOLUTIONS"), rail, mids, subs)
+            '</div><div class="ndmob">%s</div></div>') % (
+        linkfn("/products/"), esc(top), ("产品方案" if zh else "LABEL SOLUTIONS"), rail, mids, subs, mob)
 
 ALL_URLS = []   # (path, group, changefreq)  — English canonical set for sitemap
 def track(path, group): ALL_URLS.append((path, group))
@@ -656,6 +677,7 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 <script>
 function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
 function etaMenu(b){var n=b.closest('nav');if(n)n.classList.toggle('open');}
+function etaAcc(b){var n=b.closest('.nd');if(n)n.classList.toggle('accopen');}
 function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
 function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
 if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
@@ -1290,6 +1312,7 @@ def build_home(lang):
 <script>
 function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
 function etaMenu(b){var n=b.closest('nav');if(n)n.classList.toggle('open');}
+function etaAcc(b){var n=b.closest('.nd');if(n)n.classList.toggle('accopen');}
 function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
 function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
 if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
