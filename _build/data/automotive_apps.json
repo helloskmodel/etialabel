@@ -386,17 +386,7 @@
      "brand": "E-Label"
     },
     {
-     "model": "TS1100P",
-     "feature_en": "Heat-stabilized pre-cure construction + high-temperature acrylic + vulcanization-validated formula",
-     "feature_zh": "热稳定预硫化结构+耐高温丙烯酸胶+硫化验证配方",
-     "benefit_en": "Barcode remains readable after high-temp/high-pressure vulcanization; reliable bond on green rubber; full-process tire traceability",
-     "benefit_zh": "经硫化高温高压后条码仍可读、生胶面可靠贴附、轮胎全工序追溯",
-     "spec_en": "Facestock: heat-stabilized polyester · Adhesive: vulcanization-grade high-temperature acrylic · Vulcanization: 180℃ high-pressure · green-rubber-compatible",
-     "spec_zh": "基材:热稳定聚酯;胶层:硫化级耐高温丙烯酸;耐硫化:180℃高压;生胶适配",
-     "brand": "Computype"
-    },
-    {
-     "model": "TS1134P",
+     "model": "TS1100P / TS1134P",
      "feature_en": "Heat-stabilized pre-cure construction + high-temperature acrylic + vulcanization-validated formula",
      "feature_zh": "热稳定预硫化结构+耐高温丙烯酸胶+硫化验证配方",
      "benefit_en": "Barcode remains readable after high-temp/high-pressure vulcanization; reliable bond on green rubber; full-process tire traceability",
