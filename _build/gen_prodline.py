@@ -341,7 +341,15 @@ SECTOR_CSS = """<style>
 .plimg{position:relative;aspect-ratio:16/9;background-size:cover;background-position:center;display:flex;align-items:flex-end}
 .plgo{color:#fff;font-weight:800;font-size:12px;padding:10px 12px;background:linear-gradient(transparent,rgba(0,0,0,.35))}
 .plb2{padding:14px 15px 16px}.pln{font-weight:800;font-size:15.5px;color:var(--blue-deep)}.plb2 p{font-size:12px;color:var(--mut);line-height:1.5;margin-top:7px}
-@media(max-width:820px){.pc3{grid-template-columns:1fr}.plg{grid-template-columns:1fr}}
+@media(max-width:820px){
+ .plg{grid-template-columns:1fr}
+ /* compact the 3 boxes on mobile so product cards stay near the top */
+ .pc3{grid-template-columns:1fr;gap:10px}
+ .pcbox{padding:13px 15px 15px}.pchead{margin-bottom:7px}
+ .pcbi,.pcbi svg{width:26px;height:26px}
+ .pce{font-size:13px}.pcbox p{font-size:13.5px;line-height:1.5}
+ .plw{margin-top:20px}
+}
 </style>"""
 PROC_ICONS = (
  _svg('<path d="M3 12h4l2-7 4 14 2-7h6"/>'),                 # process

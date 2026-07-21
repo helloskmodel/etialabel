@@ -100,7 +100,16 @@ CSS = """<style>
 .avplc.avfc{cursor:default}
 .avplc.avfc:hover{transform:none;box-shadow:none;border-color:var(--line)}
 .avplc.avfc .fd{font-size:13.5px;color:var(--mut);line-height:1.6;margin-top:9px}
-@media(max-width:820px){.av3,.avplg{grid-template-columns:1fr}}
+@media(max-width:820px){
+ .avplg{grid-template-columns:1fr}
+ /* keep the 3 boxes tight on mobile so product cards stay near the top */
+ .av3{grid-template-columns:1fr;gap:10px}
+ .avbox{padding:13px 15px}
+ .avbox .h{margin-bottom:7px}.avbox .h .i,.avbox .h .i svg{width:22px;height:22px}
+ .avbox p{font-size:13.5px;line-height:1.5}
+ .avchips{gap:6px}.avchip{font-size:11.5px;padding:4px 10px}
+ .avplw{margin-top:18px}
+}
 </style>""".replace("__BANNER__", BANNER)
 
 def build_sector(lang):

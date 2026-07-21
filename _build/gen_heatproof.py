@@ -453,12 +453,11 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 
 NAV_ITEMS = [("Home", "/", "home"),
              ("Products", u_products(), "products"),
-             ("Application Notes", "/application-notes/", "notes"),
              ("Insights", "/insights/", "insights"),
              ("Service", "/service/", "service")]
 NAV_ZH = {"Home":"首页","Products":"产品","Application Notes":"应用笔记","Insights":"洞察","Service":"服务"}
 
-# Products mega-menu: 4 axes (Computype-style left rail + right list)
+# Products mega-menu: current sectors only (legacy partner-brand sectors retired)
 PROD_AXES = [
  ("app","By Industry","按行业",[
    ("Circuit Board & PCB Labels","电路板与 PCB 标签","/products/circuit-board-labels/"),
@@ -467,37 +466,7 @@ PROD_AXES = [
       ("Aluminum","铝","/industries/aluminum/"),
       ("Ceramics","陶瓷","/industries/ceramics/"),
    ]),
-   ("Medical & Laboratory","医疗与实验室","/industries/healthcare-life-sciences/"),
-   ("Automotive & Tire","汽车与轮胎","/industries/automotive-label-materials/"),
-   ("Wire & Cable","电线与电缆","/industries/wire-cable/"),
-   ("Outdoor & Energy","户外与能源","/industries/outdoor-energy/"),
- ]),
- ("env","By Environment","按环境",[
-   ("Abrasion-Resistant","耐磨","/products/by-environment/"),
-   ("Chemical-Resistant","耐化学","/products/by-environment/"),
-   ("Corrosion-Resistant","耐腐蚀","/products/by-environment/"),
-   ("Dirt-Resistant","抗污","/products/by-environment/"),
-   ("Fluid-Resistant","耐液体","/products/by-environment/"),
-   ("Heat-Resistant","耐热","/products/by-environment/"),
-   ("High-Temperature-Resistant","耐高温","/products/by-environment/"),
-   ("Humidity-Resistant","耐潮湿","/products/by-environment/"),
-   ("Low-Temperature-Resistant","耐低温","/products/by-environment/"),
-   ("Oil-Resistant","耐油污","/products/by-environment/"),
-   ("Temperature-Resistant","耐温变","/products/by-environment/"),
-   ("UV-Resistant","耐紫外","/products/by-environment/"),
-   ("Water-Resistant","耐水","/products/by-environment/"),
-   ("Wave-Solder-Resistant","耐波峰焊","/products/by-environment/"),
-   ("Weather-Resistant","耐候","/products/by-environment/"),
-   ("ESD-Safe","抗静电","/products/by-environment/"),
-   ("Laser-Markable","激光打标","/products/by-environment/"),
-   ("Sterilization-Resistant","耐灭菌","/products/by-environment/"),
- ]),
- ("feat","By Feature","按特性",[
-   ("Tamper-Evident","防拆","/products/by-feature/"),
-   ("Removable","可移除","/products/by-feature/"),
- ]),
- ("mat","By Material","按材料",[
-   ("Polyimide — Heat-Resistant","聚酰亚胺 · 耐高温","/materials/polyimide-pi-label-materials/"),
+   ("Automotive","汽车","/industries/automotive-label-materials/"),
  ]),
 ]
 
@@ -574,7 +543,7 @@ def nav_html(lang, active, path="/"):
         items, L(other, path), other_label, NAV_TOGGLE)
 
 FOOTER_LINKS = [("Home", "/"), ("Products", u_products()), ("Industries", u_ind_hub()),
-                ("Application Notes", "/application-notes/"), ("Service", "/service/"),
+                ("Insights", "/insights/"), ("Service", "/service/"),
                 ("About ETIA", "/about/"), ("Contact", "/contact/")]
 def footer_html(lang):
     nav = "".join('<li><a href="%s">%s</a></li>' % (L(lang, p), t) for t, p in FOOTER_LINKS)
@@ -629,7 +598,7 @@ CTAS = {
    "body": ("Technical articles can explain the principles, but every process is different. Send us your application details and our team will help you translate the guidance into a suitable material choice.",
             "技术文章讲的是原理，但每个工艺都不同。把您的应用细节发给我们，团队会帮您把这些指南转化为合适的材料选择。"),
    "b1": ("Ask a Material Question", "提出材料问题"), "b1u": "/contact/",
-   "b2": ("Explore Applications", "浏览应用笔记"), "b2u": "/application-notes/"},
+   "b2": ("Explore Applications", "浏览应用笔记"), "b2u": "/products/"},
  "service": {"h": ("Looking for Material or Production Support?", "需要材料或生产方面的支持？"),
    "body": ("Whether you need help with material selection, testing, converting, quality control, or repeat supply, our team is ready to support your project with clear and practical guidance.",
             "无论是材料选型、检测、加工、质量控制还是持续供应，我们的团队都能以清晰、务实的建议支持您的项目。"),
@@ -718,18 +687,10 @@ def line_products(pid):
 def build_products_hub(lang):
     # Products & Solutions — three ways to find a material
     routes = [
-      ("按行业" if lang=="zh" else "By Industry",
-       "电子/PCB、金属陶瓷、医疗、汽车、电力线缆、户外能源 —— 从您的行业与应用出发。" if lang=="zh"
-       else "Electronics/PCB, metal & ceramics, medical, automotive, wire & cable, outdoor & energy — start from your industry and application.",
+      ("按行业与应用" if lang=="zh" else "By Industry & Application",
+       "金属与陶瓷、汽车、电路板/PCB —— 从您的行业与应用出发选型" if lang=="zh"
+       else "Metal & ceramics, automotive, circuit board & PCB — start from your industry and application.",
        "/industries/"),
-      ("按材料" if lang=="zh" else "By Material",
-       "聚酰亚胺(重点)、聚酯、乙烯基等 —— 从材料结构出发选型。" if lang=="zh"
-       else "Polyimide (featured), polyester, vinyl and more — start from the material construction.",
-       "/materials/"),
-      ("严选产品" if lang=="zh" else "Featured Solutions",
-       "面向极端温度、化学、磨损与防篡改的严苛环境标签精选。" if lang=="zh"
-       else "Selected harsh-environment labels for extreme temperature, chemical, abrasion and tamper-evident needs.",
-       "/featured-solutions/"),
     ]
     rcards = "".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="rows" style="color:var(--blue);font-weight:700;margin-top:10px">%s →</div></a>'%(
         L(lang,u), esc(t), esc(d), ("进入" if lang=="zh" else "Explore")) for t,d,u in routes)
@@ -875,42 +836,21 @@ def build_industries_hub(lang):
             L(lang,u_industry(iid)), esc(title),
             ("跨行业应用" if (lang=="zh" and i["parent_type"]!="industry") else ("%d applications" % len(apps)) if lang=="en" else "%d 个应用"%len(apps)),
             alink)
-    # cross-series card: Automotive label materials (3M + FLEXcon) — built by gen_automotive
-    auto_card = ('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="xlinks">'
-                 '<a href="%s">3M</a><a href="%s">FLEXcon</a></div></a>') % (
-        L(lang,"/industries/automotive-label-materials/"),
-        ("汽车标签材料" if lang=="zh" else "Automotive Label Materials"),
-        ("3M 与 FLEXcon 汽车标识材料:发动机舱、EV电池、线束、VIN 与警示。" if lang=="zh"
-         else "3M and FLEXcon materials: underhood, EV battery, wire harness, VIN and warning identification."),
-        L(lang,"/brands/3m/automotive-label-materials/"),
-        L(lang,"/brands/flexcon/automotive-label-materials/"))
-    # cross-series card: Healthcare & Life Sciences (FLEXcon + BIO TECH) — built by gen_healthcare
-    hc_card = ('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="xlinks">'
-               '<a href="%s">FLEXcon</a><a href="%s">BIO TECH</a></div></a>') % (
-        L(lang,"/industries/healthcare-life-sciences/"),
-        ("医疗与生命科学" if lang=="zh" else "Healthcare & Life Sciences"),
-        ("FLEXcon 与 BIO TECH:可穿戴、诊断、制药、医疗器械、实验室;低温/液氮/灭菌。" if lang=="zh"
-         else "FLEXcon and BIO TECH: wearables, diagnostics, pharma, devices, laboratory; cryogenic, sterilization."),
-        L(lang,"/brands/flexcon/healthcare-life-sciences/"),
-        L(lang,"/brands/bio-tech/healthcare-life-sciences/"))
-    # cross-series card: Electronics & PCB (Polyonics) — built by gen_pcb
-    pcb_card = ('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="xlinks">'
-                '<a href="%s">%s</a></div></a>') % (
-        L(lang,"/industries/electronics-pcb/"),
-        ("电子制造与PCB" if lang=="zh" else "Electronics & PCB"),
-        ("Polyonics 聚酰亚胺:回流焊、波峰焊、严苛清洗、ESD 与激光可标记。" if lang=="zh"
-         else "Polyonics polyimide: reflow, wave solder, harsh wash, ESD and laser-markable."),
-        L(lang,"/materials/polyimide-pi-label-materials/"),("聚酰亚胺产品线" if lang=="zh" else "Polyimide line"))
-    # cross-series card: Wire & Cable (Avery Dennison) — built by gen_wirecable
-    wc_card = ('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="xlinks">'
-               '<a href="%s">%s</a></div></a>') % (
-        L(lang,"/industries/wire-cable/"),
-        ("电力与线缆" if lang=="zh" else "Wire & Cable"),
-        ("Avery Dennison:旗型、缠绕、自覆膜、热缩、吊牌;按应用/行业/环境。" if lang=="zh"
-         else "Avery Dennison: flag, wrap, self-laminating, heat-shrink, tags; by application/industry/environment."),
-        L(lang,"/brands/avery-dennison/wire-cable/"),("Avery Dennison" ))
-    h1 = "工业标识 — 行业与工艺应用" if lang=="zh" else "Industries & Applications"
-    body = '<section class="blk"><div class="wrap"><div class="grid">%s%s%s%s%s</div></div></section><div class="wrap">%s</div>' % (auto_card, hc_card, pcb_card, wc_card, cards, cta(lang))
+    def _sc(url, te, tz, de, dz):
+        return '<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>' % (
+            L(lang, url), esc(tz if lang == "zh" else te), esc(dz if lang == "zh" else de))
+    sector_cards = (
+        _sc("/industries/metal-ceramics/", "Metal & Ceramics", "金属与陶瓷",
+            "HEATPROOF heat-resistant labels & tags for steel, aluminum and ceramics — up to 1000℃ and beyond.",
+            "面向钢铁、铝与陶瓷的 HEATPROOF 耐高温标签与挂牌 —— 耐受 1000℃ 以上") +
+        _sc("/industries/automotive-label-materials/", "Automotive", "汽车",
+            "E-Label durable automotive labels across the whole vehicle — engine bay, battery, interior, exterior and tire.",
+            "覆盖整车的 E-Label 耐用汽车标签 —— 发动机舱、电池、内饰、外饰与轮胎") +
+        _sc("/products/circuit-board-labels/", "Circuit Board & PCB Labels", "电路板与 PCB 标签",
+            "Ultra-performance polyimide PCB labels — the Polyonics Apex Series, heat-resistant to 300℃.",
+            "超高性能 PCB 聚酰亚胺标签 —— Polyonics Apex 系列，耐温 300℃"))
+    h1 = "行业与应用" if lang == "zh" else "Industries & Applications"
+    body = '<section class="blk"><div class="wrap"><div class="grid grid3">%s</div></div></section><div class="wrap">%s</div>' % (sector_cards, cta(lang))
     crumb=[("Home","/"),("Industries & Applications",u_ind_hub())]
     write(lang, u_ind_hub(), page(lang, u_ind_hub(),
         ("行业与应用 — 超高温标识 | ETIA" if lang=="zh" else "Industries & Applications — Ultra-High-Temp Identification | ETIA"),
@@ -1038,18 +978,12 @@ WHY_ICONS = [
 # Application Center — six focus industries with their applications as tags.
 # format: (name_en, name_zh, url, apps_en[], apps_zh[]) — names only, no partner brands.
 HOME_FOCUS = [
- ("Medical & Laboratory","医疗与实验室","/industries/healthcare-life-sciences/",
-  ["Cryogenic storage","Slides","Chemical exposure"],["深低温存储","载玻片","化学环境"]),
- ("Electronics Manufacturing","电子制造","/industries/electronics-pcb/",
-  ["PCB assembly","Reflow","Chemical cleaning"],["PCB装配","回流焊","化学清洗"]),
- ("Steel & Metals","钢铁与金属","/industries/steel/",
-  ["Hot-metal labeling","Heat treatment","Traceability"],["热态贴标","热处理","生产追溯"]),
- ("Ceramics & Sanitaryware","陶瓷与卫浴","/industries/ceramics/",
-  ["Kiln firing","Acid washing","Process tracking"],["窑炉烧制","酸洗","工艺追踪"]),
- ("Tire & Rubber","轮胎与橡胶","/featured-solutions/e-2314-tire-vulcanization-barcode-label/",
-  ["Vulcanization","Pressure","Barcode tracking"],["硫化","压力","条码追溯"]),
+ ("Metal & Ceramics","金属与陶瓷","/industries/metal-ceramics/",
+  ["Hot-metal labeling","Heat treatment","Kiln firing"],["热态贴标","热处理","窑炉烧制"]),
  ("Automotive","汽车制造","/industries/automotive-label-materials/",
   ["VIN identification","Laser marking","Weather exposure"],["VIN标识","激光打标","户外耐候"]),
+ ("Circuit Board & PCB","电路板与PCB","/products/circuit-board-labels/",
+  ["PCB assembly","Reflow","Chemical cleaning"],["PCB装配","回流焊","化学清洗"]),
 ]
 
 # one line icon per Application-Center industry — SAME ORDER as home_i18n.json "focus":
@@ -1116,11 +1050,13 @@ def harsh_module(lang):
     """Third screen — Explore by Application: five core industries as entry points
     (layer-by-layer drill-down: industry -> application -> product). No hot-products grid."""
     cards=""
+    # explicit icon per HOME_FOCUS entry: Metal&Ceramics -> flame(1), Automotive -> car(3), PCB -> chip(0)
+    focus_icons=[1,3,0]
     for k,(fe,fz,u,apps_en,apps_zh) in enumerate(HOME_FOCUS):
         pills="".join('<span>%s</span>'%esc(a) for a in (apps_zh if lang=="zh" else apps_en))
         cards+=('<a class="card indcard" href="%s"><div class="ic">%s</div>'
                 '<div class="body"><h3>%s</h3><div class="apps">%s</div><div class="go">%s →</div></div></a>')%(
-            L(lang,u), INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)], esc(fz if lang=="zh" else fe),
+            L(lang,u), INDUSTRY_ICONS[focus_icons[k%len(focus_icons)]], esc(fz if lang=="zh" else fe),
             pills, ("进入" if lang=="zh" else "Explore"))
     eyebrow="应用中心" if lang=="zh" else "APPLICATION CENTER"
     title="查找您的应用。" if lang=="zh" else "Find Your Application."
@@ -1154,7 +1090,7 @@ def home_switcher(active):
 def home_nav(lang):
     T=HOME_I18N[lang]
     lf=lambda p: home_hlink(lang,p)
-    hrefs=["/application-notes/","/insights/","/service/"]
+    hrefs=["/insights/","/service/"]
     prod=products_dropdown(lang, lf)
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
@@ -1201,12 +1137,12 @@ HOME2 = {
     "h2": "Built Around the Application.",
     "sub": "Every environment creates a different identification challenge.",
     "body": "Explore application notes developed around real surfaces, temperatures, chemicals, printing methods, processes, and service-life requirements.",
-    "b1": "Explore Applications", "b1u": "/application-notes/", "b2": "Discuss Your Application", "b2u": "/contact/"},
+    "b1": "Explore Applications", "b1u": "/products/", "b2": "Discuss Your Application", "b2u": "/contact/"},
    {"eyebrow": "TECHNICAL GUIDANCE · MATERIAL KNOWLEDGE · CASE STUDIES",
     "h2": "Understand the Material. Learn from the Application.",
     "sub": "Practical knowledge for better identification decisions.",
     "body": "Explore technical guidance, material-selection insights, performance testing, printing considerations, and real-world case studies.",
-    "b1": "Explore Insights", "b1u": "/insights/", "b2": "View Case Studies", "b2u": "/application-notes/"},
+    "b1": "Explore Insights", "b1u": "/insights/", "b2": "View Case Studies", "b2u": "/products/"},
    {"eyebrow": "APPLICATION SUPPORT · TESTING · FLEXIBLE SUPPLY",
     "h2": "Support from Material Selection to Long-Term Supply.",
     "sub": "Practical support throughout every stage of your project.",
@@ -1229,12 +1165,12 @@ HOME2 = {
     "h2": "围绕应用而构建。",
     "sub": "每一种环境，都是不同的标识挑战。",
     "body": "查阅围绕真实表面、温度、化学品、打印方式、工艺与使用寿命要求编写的应用笔记。",
-    "b1": "浏览应用笔记", "b1u": "/application-notes/", "b2": "沟通您的应用", "b2u": "/contact/"},
+    "b1": "浏览应用笔记", "b1u": "/products/", "b2": "沟通您的应用", "b2u": "/contact/"},
    {"eyebrow": "技术指南 · 材料知识 · 案例研究",
     "h2": "读懂材料，从应用中学习。",
     "sub": "帮助您做出更好标识决策的实用知识。",
     "body": "探索技术指南、材料选型洞察、性能测试、打印要点与真实案例研究。",
-    "b1": "浏览洞察", "b1u": "/insights/", "b2": "查看案例", "b2u": "/application-notes/"},
+    "b1": "浏览洞察", "b1u": "/insights/", "b2": "查看案例", "b2u": "/products/"},
    {"eyebrow": "应用支持 · 检测 · 柔性供应",
     "h2": "从选材到长期供应的全程支持。",
     "sub": "贯穿项目每一阶段的切实支持。",
@@ -1768,7 +1704,6 @@ def build_all():
     build_industries_hub(lang)
     for iid in INDUSTRIES: build_industry(lang, iid)
     for a in APPS: build_application(lang, a)
-    build_outdoor_energy(lang)
     build_about(lang)
     build_contact(lang)
     build_insights(lang)

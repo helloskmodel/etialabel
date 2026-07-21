@@ -103,7 +103,18 @@ CSS = """<style>
 .badge-temp{display:flex;flex-direction:column;gap:4px;background:#fff3ec;border:1px solid #f4c9ae;border-radius:12px;padding:12px 18px}
 .badge-temp .lab{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#c2621f}
 .badge-temp .val{font-size:22px;font-weight:800;color:#b4501a;line-height:1.1}
-@media(max-width:820px){.hp3,.flist,.sgrid,.pov{grid-template-columns:1fr}}
+@media(max-width:820px){
+ .hp3,.flist,.sgrid,.pov{grid-template-columns:1fr}
+ /* compact the 3 boxes on mobile so product cards stay near the top */
+ .hp3{gap:10px}
+ .hpbox{padding:13px 15px}.hpbox .h{margin-bottom:6px}
+ .hpbox .h .i,.hpbox .h .i svg{width:24px;height:24px}
+ .hpbox p{font-size:13.5px;line-height:1.5}
+ .plw{margin-top:18px}
+ /* tighten the 3 sector cards on mobile */
+ .sgrid{gap:12px}.scard{padding:18px 18px}
+ .scard .st{font-size:18px;margin-bottom:6px}.scard .sd{font-size:13.5px}
+}
 </style>""".replace("__BANNER__", BANNER)
 
 UI = {"process": ("Introduction", "介绍"), "challenge": ("Challenge", "挑战"),
@@ -126,7 +137,7 @@ def build_category(lang):
     contact = L(lang, "/contact/")
     hero = ('<section class="hphero"><div class="wrap"><div class="eyebrow">%s</div>'
             '<h1>%s</h1><p>%s</p><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
-            '</div></section>') % (U("eyebrow"), H("Metal &amp; Ceramics", "金属与陶瓷"),
+            '</div></section>') % (U("eyebrow"), H("Metal & Ceramics", "金属与陶瓷"),
         H("Heat-resistant identification across steel, aluminum and ceramics — from continuous casting and hot rolling to kiln firing at 1000℃ and beyond.",
           "覆盖钢铁、铝与陶瓷的耐高温标识 —— 从连铸、热轧到 1000℃ 以上的窑炉烧成。"), contact, U("talk"))
     overview = ('<section class="blk"><div class="wrap"><div class="ovbody"><p>%s</p></div></div></section>') % H(
