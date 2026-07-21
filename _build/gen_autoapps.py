@@ -159,8 +159,10 @@ def build_sector(lang):
             box_wrap(IC_CHAL, U("challenge"), "#c2621f", chips(ch_items, "ch")),
             box_wrap(IC_SOL, U("recommend"), "var(--green-d)", chips(rec_items, "so"), bg="#f4f9f2"))
         # matched product card(s) UNDER the two keyword cards — model + Feature/Benefit/Spec,
-        # linking to the full Application Notes write-up.
-        art = L(lang, AN_HUB + _an_slug(a["name_en"]) + "/")
+        # link to the Application Note only where one is published; otherwise to Contact.
+        has_note = bool(a.get("note"))
+        art = L(lang, (AN_HUB + _an_slug(a["name_en"]) + "/") if has_note else "/contact/")
+        go = (H("View details", "查看详情") + " →") if has_note else (H("Talk to a Specialist", "咨询专家") + " →")
         cards = ""
         for pr in a.get("products", []):
             brand = pr.get("brand", "E-Label")
@@ -174,7 +176,7 @@ def build_sector(lang):
             cards += ('<a class="avplc" href="%s"><span class="avbrand">%s</span>'
                       '<div class="t">%s</div>%s<div class="go">%s</div></a>') % (
                 art, esc("E-LABEL" if brand == "E-Label" else brand.upper()),
-                esc(pr["model"]), rows, H("View details", "查看详情") + " →")
+                esc(pr["model"]), rows, go)
         plw = ('<div class="avplw"><div class="avplh">%s</div><div class="avplg">%s</div></div>' % (
             U("products"), cards)) if cards else ""
         panels += '<div class="avpanel" data-i="%d" style="display:%s">%s%s</div>' % (

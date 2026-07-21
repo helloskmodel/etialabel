@@ -40,7 +40,9 @@ def _slugs():
     return out
 
 SLUGS = _slugs()
-ART_URLS = [HUB + s + "/" for s in SLUGS]
+# Only applications flagged "note": true are published as full articles (first batch).
+PUB = [(a, s) for a, s in zip(APPS, SLUGS) if a.get("note")]
+ART_URLS = [HUB + s + "/" for a, s in PUB]
 
 CSS = """<style>
 .anwrap{max-width:900px}
@@ -231,13 +233,6 @@ def build_note(lang, n):
 def build_hub(lang):
     zh = (lang == "zh")
     def H(e, z): return esc(_t(lang, e, z))
-    # group articles by area, in first-seen order
-    order, groups = [], {}
-    for a, s in zip(APPS, SLUGS):
-        ar = a.get("area", "Other")
-        if ar not in groups:
-            groups[ar] = []; order.append(ar)
-        groups[ar].append((a, s))
     blocks = ""
     # featured, hand-authored technical notes first
     if NOTES:
@@ -249,19 +244,19 @@ def build_hub(lang):
                 esc(_t(lang, n["sections"][0].get("body_en", ""), n["sections"][0].get("body_zh", ""))[:140]),
                 H("Read", "阅读"))
         blocks += '<div class="angroup"><h2>%s</h2><div class="angrid">%s</div></div>' % (
-            H("Featured Notes", "精选笔记"), fcards)
-    for ar in order:
+            H("UV Curing", "UV 固化"), fcards)
+    # published label notes under a single Automotive heading
+    if PUB:
         cards = ""
-        for a, s in groups[ar]:
+        for a, s in PUB:
             name = _t(lang, a["name_en"], a["name_zh"])
             cards += ('<a class="ancard" href="%s"><h3>%s</h3><p>%s</p>'
                       '<div class="go">%s →</div></a>') % (
                 L(lang, HUB + s + "/"), esc(name),
                 esc(_t(lang, a["purpose_en"], a["purpose_zh"])),
                 H("Read", "阅读"))
-        az = groups[ar][0][0].get("area_zh", ar)
         blocks += '<div class="angroup"><h2>%s</h2><div class="angrid">%s</div></div>' % (
-            esc(_t(lang, ar, az)), cards)
+            H("Automotive Labels", "汽车标签"), cards)
     lede = H("Application-by-application guidance: what each label is for, the environment challenge it faces, the risk of the wrong label, and the recommended E-LABEL material.",
              "逐个应用的选型指引:每种标签的用途、面临的环境挑战、用错标签的风险,以及推荐的 E-LABEL 材料。")
     body = CSS + ('<section class="blk"><div class="wrap">%s</div></section>'
@@ -284,7 +279,7 @@ def main():
         build_hub(lang)
         for n in NOTES:
             build_note(lang, n)
-        for a, s in zip(APPS, SLUGS):
+        for a, s in PUB:
             build_article(lang, a, s)
 
 
