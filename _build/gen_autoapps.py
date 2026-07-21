@@ -51,6 +51,7 @@ UI = {
  "solutions": ("Solutions", "解决方案"),
  "risk": ("Risk of the Wrong Label", "用错标签的风险"),
  "feature": ("Feature", "特性"), "benefit": ("Benefit", "收益"), "spec": ("Specification", "规格"),
+ "distributor": ("Computype — ETIA authorized distributor", "Computype —— ETIA 授权代理"),
  "talk": ("Talk to a Specialist", "咨询专家"),
  "soon": ("Landing page coming soon — talk to a specialist →", "产品页即将上线 —— 咨询专家 →"),
  "eyebrow": ("AUTOMOTIVE · LABEL SOLUTIONS", "汽车 · 标签解决方案"),
@@ -86,6 +87,9 @@ CSS = """<style>
 .avplg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
 .avplc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff;text-decoration:none;transition:.16s}
 .avplc:hover{border-color:var(--blue);box-shadow:0 12px 30px rgba(20,40,90,.12);transform:translateY(-3px)}
+.avplc .avbrand{align-self:flex-start;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--green-d);background:var(--mint);border:1px solid #cfe6c5;border-radius:6px;padding:2px 8px;margin-bottom:8px}
+.avplc .avbrand.cp{color:#5b3fa0;background:#f1edfb;border-color:#ddd2f3}
+.avplc .avdist{font-size:11px;color:var(--faint);font-weight:600;margin-top:3px}
 .avplc .t{font-weight:800;color:var(--blue-deep);font-size:16px;line-height:1.3}
 .avplc .m{font-size:13px;font-weight:700;color:var(--blue);margin-top:7px}
 .avplc .sp{font-size:12.5px;color:var(--ink);margin-top:7px;line-height:1.4}
@@ -145,12 +149,15 @@ def build_sector(lang):
         cards = ""
         for pr in a.get("products", []):
             url = L(lang, "/contact/?product=%s&industry=automotive" % quote(pr["model"], safe=""))
+            brand = pr.get("brand", "E-Label")
+            badge = '<span class="avbrand%s">%s</span>' % (" cp" if brand == "Computype" else "", esc(brand))
+            note = ('<div class="avdist">%s</div>' % U("distributor")) if brand == "Computype" else ""
             lines = ""
             for key, lab in (("feature", "feature"), ("benefit", "benefit"), ("spec", "spec")):
                 val = _t(lang, pr.get(key + "_en", ""), pr.get(key + "_zh", ""))
                 if val: lines += '<div class="sp"><span>%s</span>%s</div>' % (U(lab), esc(val))
-            cards += ('<a class="avplc" href="%s"><div class="t">%s</div>%s<div class="go">%s</div></a>') % (
-                url, esc(pr["model"]), lines, U("soon"))
+            cards += ('<a class="avplc" href="%s">%s<div class="t">%s</div>%s%s<div class="go">%s</div></a>') % (
+                url, badge, esc(pr["model"]), note, lines, U("soon"))
         plw = ('<div class="avplw"><div class="avplh">%s</div><div class="avplg">%s</div></div>' % (
             U("products"), cards)) if cards else ""
         panels += '<div class="avpanel" data-i="%d" style="display:%s">%s%s%s</div>' % (
