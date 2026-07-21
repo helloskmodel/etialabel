@@ -60,6 +60,9 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .logo img{height:40px;width:auto;display:block}
 .logo .ar{color:var(--green);margin-right:2px}.logo .grn{color:var(--green)}.logo .blu{color:var(--blue-deep)}
 nav{display:flex;align-items:center;gap:26px}
+nav .navlinks{display:flex;align-items:center;gap:26px}
+.navtog{display:none;background:none;border:none;cursor:pointer;padding:6px;margin-left:8px;color:var(--ink)}
+.navtog svg{width:26px;height:26px;display:block}
 nav a{font-size:14.5px;font-weight:600;color:var(--ink);white-space:nowrap}
 nav a:hover{color:var(--blue)}nav a.on{color:var(--blue)}
 nav .lang{font-size:13px;color:var(--faint);border:1px solid var(--line);border-radius:8px;padding:5px 10px}
@@ -104,8 +107,15 @@ nav .nd.open .ndm.pm,nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transfor
 .pm .subgroup a.suball:hover{background:none;text-decoration:underline}
 .pm .subempty{color:var(--faint);font-size:13px;font-weight:500;padding:12px;line-height:1.5}
 @media(max-width:980px){nav .ndm.pm{grid-template-columns:200px 1fr;left:16px}.pm .ndsub{display:none}}
-@media(max-width:900px){nav>a:not(.lang){display:none}nav .nd{display:none}
-nav .langsw{display:inline-flex;margin-left:auto}nav .langsw a{display:inline-block;padding:5px 7px;font-size:11.5px}}
+@media(max-width:900px){
+.navtog{display:inline-flex}
+nav .langsw,nav>a.lang{margin-left:auto}
+nav .langsw{display:inline-flex}nav .langsw a{display:inline-block;padding:5px 7px;font-size:11.5px}
+nav .navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);box-shadow:0 22px 44px rgba(20,40,90,.16);flex-direction:column;align-items:stretch;gap:0;padding:6px 0;z-index:55}
+nav.open .navlinks{display:flex}
+nav .navlinks>a,nav .navlinks .ndt{padding:14px 24px;font-size:16px;border-bottom:1px solid var(--bg)}
+nav .navlinks .nd,nav .navlinks .nd.ndwide{display:block;position:static}
+nav .navlinks .ndm.pm,nav .navlinks .caret{display:none}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
 .btn{display:inline-block;font-weight:700;font-size:15px;padding:12px 24px;border-radius:10px}
@@ -546,6 +556,10 @@ def breadcrumb_jsonld(items, lang):
     return {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
         {"@type":"ListItem","position":i+1,"name":n,"item":SITE+PREFIX[lang]+p} for i,(n,p) in enumerate(items)]}
 
+NAV_TOGGLE = ('<button class="navtog" type="button" aria-label="Menu" onclick="etaMenu(this)">'
+              '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">'
+              '<path d="M4 7h16M4 12h16M4 17h16"/></svg></button>')
+
 def nav_html(lang, active, path="/"):
     def lab(t): return NAV_ZH[t] if lang == "zh" else t
     items = ""
@@ -556,7 +570,8 @@ def nav_html(lang, active, path="/"):
             items += '<a href="%s"%s>%s</a>' % (L(lang, href), ' class="on"' if key==active else '', lab(t))
     other = "zh" if lang == "en" else "en"
     other_label = "CN" if lang == "en" else "EN"   # label = the language you switch TO
-    return '<nav>%s<a class="lang" href="%s">%s</a></nav>' % (items, L(other, path), other_label)
+    return '<nav><div class="navlinks">%s</div><a class="lang" href="%s">%s</a>%s</nav>' % (
+        items, L(other, path), other_label, NAV_TOGGLE)
 
 FOOTER_LINKS = [("Home", "/"), ("Products", u_products()), ("Industries", u_ind_hub()),
                 ("Application Notes", "/application-notes/"), ("Service", "/service/"),
@@ -671,6 +686,7 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 %s
 <script>
 function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
+function etaMenu(b){var n=b.closest('nav');if(n)n.classList.toggle('open');}
 function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
 function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
 if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
@@ -1143,7 +1159,8 @@ def home_nav(lang):
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
     links="".join('<a href="%s">%s</a>'%(lf(h),esc(lbl)) for h,lbl in zip(hrefs,T["nav"][1:]))
-    return '<nav>%s%s%s%s</nav>' % (home_link, prod, links, home_switcher(lang))
+    return '<nav><div class="navlinks">%s%s%s</div>%s%s</nav>' % (
+        home_link, prod, links, home_switcher(lang), NAV_TOGGLE)
 
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
@@ -1340,6 +1357,7 @@ def build_home(lang):
 %s
 <script>
 function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
+function etaMenu(b){var n=b.closest('nav');if(n)n.classList.toggle('open');}
 function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
 function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
 if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
