@@ -172,23 +172,22 @@ def build_article(lang, a, s):
 
 
 CSS_NOTE = """<style>
-.nnmeta{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:4px 0 8px}
-.nnmeta .row{display:grid;grid-template-columns:170px 1fr;gap:18px;padding:15px 22px;border-bottom:1px solid var(--line)}
-.nnmeta .row:last-child{border-bottom:none}
-.nnmeta .row:nth-child(odd){background:var(--bg)}
-.nnmeta .lab{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);padding-top:2px}
-.nnmeta .tags{font-size:15px;color:var(--ink);line-height:1.6}
-.nnsec{margin-top:36px}
-.nnsec .num{font-size:12px;font-weight:800;letter-spacing:.09em;color:var(--blue);text-transform:uppercase}
-.nnsec h2{font-size:23px;color:var(--blue-deep);margin:5px 0 13px;line-height:1.25}
-.nnsec p{font-size:16px;line-height:1.78;color:var(--ink)}
-.nncfg{margin-top:16px;background:var(--tint-blue);border:1px solid #d7e3fb;border-radius:11px;padding:15px 20px}
-.nncfg .lab{font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
-.nncfg .val{font-size:15px;font-weight:700;color:var(--blue-deep);line-height:1.65}
-.nnben{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:11px 26px}
-.nnben li{position:relative;padding-left:27px;font-size:15.5px;color:var(--ink);line-height:1.5}
-.nnben li::before{content:"✓";position:absolute;left:0;top:0;color:var(--green-d);font-weight:800}
-@media(max-width:700px){.nnmeta .row{grid-template-columns:1fr;gap:5px}.nnben{grid-template-columns:1fr}.nnsec h2{font-size:20px}}
+/* clean engineering-document style — thin dividers, no boxes or fills */
+.nnmeta{margin:2px 0 6px;border-top:1px solid var(--line)}
+.nnmeta .row{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:10px 2px;border-bottom:1px solid var(--line)}
+.nnmeta .lab{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);padding-top:2px}
+.nnmeta .tags{font-size:14.5px;color:var(--ink);line-height:1.55}
+.nnsec{margin-top:30px}
+.nnsec .num{font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--mut);text-transform:uppercase}
+.nnsec h2{font-size:19px;font-weight:800;color:var(--blue-deep);margin:5px 0 10px;line-height:1.3}
+.nnsec p{font-size:15.5px;line-height:1.75;color:var(--ink)}
+.nncfg{margin-top:14px;border-left:3px solid var(--blue);padding:3px 0 3px 16px}
+.nncfg .lab{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:4px}
+.nncfg .val{font-size:14.5px;font-weight:700;color:var(--blue-deep);line-height:1.6}
+.nnben{list-style:none;padding:0;margin:6px 0 0}
+.nnben li{position:relative;padding:6px 0 6px 20px;font-size:15px;color:var(--ink);line-height:1.5;border-bottom:1px solid var(--bg)}
+.nnben li::before{content:"—";position:absolute;left:0;top:6px;color:var(--blue);font-weight:700}
+@media(max-width:700px){.nnmeta .row{grid-template-columns:1fr;gap:3px}.nnsec h2{font-size:18px}}
 </style>"""
 
 
