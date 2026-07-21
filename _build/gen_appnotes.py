@@ -12,28 +12,28 @@ from gen_heatproof import esc, L, page, write, LANGS
 import gen_autoapps as auto
 from gen_autoapps import _t, PROP_ZH, PROP_CHALLENGE, IC_INTRO, IC_CHAL, IC_SOL, IC_RISK
 
+APPS = auto.APPS
 HUB = "/application-notes/"
 
 
 def slug(name):
-    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+    s = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+    return s
 
 
-def _entries():
-    """Flat, globally-unique list of (sector, app, slug) across every sector."""
+def _slugs():
     seen, out = {}, []
-    for sector, apps in auto.SECTORS:
-        for a in apps:
-            s = slug(a["name_en"])
-            if s in seen:
-                seen[s] += 1; s = "%s-%d" % (s, seen[s])
-            else:
-                seen[s] = 1
-            out.append((sector, a, s))
+    for a in APPS:
+        s = slug(a["name_en"])
+        if s in seen:                       # guarantee uniqueness
+            seen[s] += 1; s = "%s-%d" % (s, seen[s])
+        else:
+            seen[s] = 1
+        out.append(s)
     return out
 
-ENTRIES = _entries()
-ART_URLS = [HUB + s + "/" for _, _, s in ENTRIES]
+SLUGS = _slugs()
+ART_URLS = [HUB + s + "/" for s in SLUGS]
 
 CSS = """<style>
 .anwrap{max-width:900px}
@@ -77,7 +77,7 @@ def _chips(items, cls):
         '<span class="anchip %s">%s</span>' % (cls, esc(x)) for x in items)
 
 
-def build_article(lang, sector, a, s):
+def build_article(lang, a, s):
     zh = (lang == "zh")
     def H(e, z): return esc(_t(lang, e, z))
     path = HUB + s + "/"
@@ -102,12 +102,10 @@ def build_article(lang, sector, a, s):
         sec += ('<div class="ansec risk"><h2><span class="i">%s</span>%s</h2>'
                 '<div class="anriskbox"><p>%s</p></div></div>') % (
             IC_RISK, H("Risk of Wrong Label", "用错标签风险"), esc(risk_prose))
-    # Recommended Solution — own-brand product card(s) with Feature / Benefit / Specification.
-    # Computype (distributor lines) are held for now and skipped.
+    # Recommended Solution — E-LABEL product card(s) with Feature / Benefit / Specification
     prod_html = ""
     for pr in a.get("products", []):
-        brand = pr.get("brand", "E-Label")
-        if brand == "Computype":
+        if pr.get("brand", "E-Label") != "E-Label":
             continue
         rows = ""
         for key, en, zh_l in (("feature", "Feature", "特性"), ("benefit", "Benefit", "收益"),
@@ -115,10 +113,10 @@ def build_article(lang, sector, a, s):
             val = _t(lang, pr.get(key + "_en", ""), pr.get(key + "_zh", ""))
             if val:
                 rows += '<div class="row"><span>%s</span><p>%s</p></div>' % (H(en, zh_l), esc(val))
-        url = L(lang, "/contact/?product=%s" % quote(pr["model"], safe=""))
-        prod_html += ('<div class="anprod"><span class="avbrand">%s</span>'
+        url = L(lang, "/contact/?product=%s&industry=automotive" % quote(pr["model"], safe=""))
+        prod_html += ('<div class="anprod"><span class="avbrand">E-LABEL</span>'
                       '<div class="m">%s</div>%s<a class="cta" href="%s">%s</a></div>') % (
-            esc(brand.upper()), esc(pr["model"]), rows, url, H("Talk to a Specialist", "咨询专家"))
+            esc(pr["model"]), rows, url, H("Talk to a Specialist", "咨询专家"))
     if prod_html:
         sec += ('<div class="ansec sol"><h2><span class="i">%s</span>%s</h2>%s</div>') % (
             IC_SOL, H("Recommended Solution", "推荐方案"), prod_html)
@@ -127,15 +125,14 @@ def build_article(lang, sector, a, s):
         sec += ('<div class="ansec sol"><h2><span class="i">%s</span>%s</h2>%s</div>') % (
             IC_INTRO, H("Material Properties", "材料属性"), _chips(rec_items, "so"))
 
-    area_txt = _t(lang, a.get("area", ""), a.get("area_zh", a.get("area", "")))
-    area = ('<span class="anarea">%s</span>' % esc(area_txt)) if area_txt else ""
+    area = ('<span class="anarea">%s</span>' % esc(a["area"])) if a.get("area") else ""
     body = CSS + ('<section class="blk"><div class="wrap anwrap">%s%s</div></section>'
                   '<div class="wrap">%s</div>') % (area, sec, hp.cta2(lang, "applications"))
     lede = esc(_t(lang, a["purpose_en"], a["purpose_zh"]))
-    title = _t(lang, "%s — Label Purpose, Challenge & Recommended Material | ETIA" % a["name_en"],
-                     "%s —— 标签用途、应用挑战与推荐材料 | ETIA" % a["name_zh"])
+    title = _t(lang, "%s — Label Purpose, Challenge & Recommended E-LABEL Material | ETIA" % a["name_en"],
+                     "%s —— 标签用途、应用挑战与推荐 E-LABEL 材料 | ETIA" % a["name_zh"])
     desc = _t(lang, a["purpose_en"], a["purpose_zh"])
-    crumb = [("Home", "/"), (_t(lang, "Application Notes", "应用笔记"), HUB), (name, path)]
+    crumb = [("Home", "/"), ("Application Notes", HUB), (name, path)]
     write(lang, path, page(lang, path, title, desc, name, lede, body, crumb, active="insights"))
     if lang == "en":
         hp.track(path, "notes")
@@ -144,28 +141,26 @@ def build_article(lang, sector, a, s):
 def build_hub(lang):
     zh = (lang == "zh")
     def H(e, z): return esc(_t(lang, e, z))
-    # group articles by sector, in registry order
+    # group articles by area, in first-seen order
     order, groups = [], {}
-    for sector, a, s in ENTRIES:
-        key = sector["name_en"]
-        if key not in groups:
-            groups[key] = (sector, []); order.append(key)
-        groups[key][1].append((a, s))
+    for a, s in zip(APPS, SLUGS):
+        ar = a.get("area", "Other")
+        if ar not in groups:
+            groups[ar] = []; order.append(ar)
+        groups[ar].append((a, s))
     blocks = ""
-    for key in order:
-        sector, items = groups[key]
+    for ar in order:
         cards = ""
-        for a, s in items:
+        for a, s in groups[ar]:
             name = _t(lang, a["name_en"], a["name_zh"])
             cards += ('<a class="ancard" href="%s"><h3>%s</h3><p>%s</p>'
                       '<div class="go">%s →</div></a>') % (
                 L(lang, HUB + s + "/"), esc(name),
                 esc(_t(lang, a["purpose_en"], a["purpose_zh"])),
                 H("Read", "阅读"))
-        blocks += '<div class="angroup"><h2>%s</h2><div class="angrid">%s</div></div>' % (
-            esc(_t(lang, sector["name_en"], sector["name_zh"])), cards)
-    lede = H("Application-by-application guidance: what each label is for, the environment challenge it faces, the risk of the wrong label, and the recommended material.",
-             "逐个应用的选型指引:每种标签的用途、面临的环境挑战、用错标签的风险,以及推荐的材料。")
+        blocks += '<div class="angroup"><h2>%s</h2><div class="angrid">%s</div></div>' % (esc(ar), cards)
+    lede = H("Application-by-application guidance: what each label is for, the environment challenge it faces, the risk of the wrong label, and the recommended E-LABEL material.",
+             "逐个应用的选型指引:每种标签的用途、面临的环境挑战、用错标签的风险,以及推荐的 E-LABEL 材料。")
     body = CSS + ('<section class="blk"><div class="wrap">%s</div></section>'
                   '<div class="wrap">%s</div>') % (blocks, hp.cta2(lang, "applications"))
     crumb = [("Home", "/"), ("Application Notes", HUB)]
@@ -184,8 +179,8 @@ URLS = [HUB] + ART_URLS
 def main():
     for lang in LANGS:
         build_hub(lang)
-        for sector, a, s in ENTRIES:
-            build_article(lang, sector, a, s)
+        for a, s in zip(APPS, SLUGS):
+            build_article(lang, a, s)
 
 
 if __name__ == "__main__":

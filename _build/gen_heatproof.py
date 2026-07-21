@@ -73,7 +73,6 @@ nav .langsw a:hover{color:var(--blue)}nav .langsw a.on:hover{color:#fff}
 /* Products mega-menu — left-anchored cascading columns (up to 3 levels, Delo/Panacol style) */
 nav .nd{position:relative;display:inline-block}
 nav .nd.ndwide{position:static}
-.ndacc{display:none}.ndmob{display:none}
 nav .ndt{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;font-weight:600;color:var(--ink);cursor:pointer}
 nav .ndt .caret{font-size:10px;color:var(--faint);transition:.15s}
 nav .nd:hover .ndt,nav .nd.open .ndt{color:var(--blue)}
@@ -115,17 +114,8 @@ nav .langsw{display:inline-flex}nav .langsw a{display:inline-block;padding:5px 7
 nav .navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);box-shadow:0 22px 44px rgba(20,40,90,.16);flex-direction:column;align-items:stretch;gap:0;padding:6px 0;z-index:55}
 nav.open .navlinks{display:flex}
 nav .navlinks>a,nav .navlinks .ndt{padding:14px 24px;font-size:16px;border-bottom:1px solid var(--bg)}
-nav .navlinks .nd,nav .navlinks .nd.ndwide{display:block;position:relative}
-nav .navlinks .ndm.pm,nav .navlinks .caret{display:none}
-/* mobile Products = inline accordion (the hover mega-menu is touch-hostile) */
-nav .navlinks .ndacc{display:inline-flex;align-items:center;justify-content:center;position:absolute;right:10px;top:3px;
-  width:44px;height:44px;background:none;border:none;color:var(--faint);font-size:15px;cursor:pointer;font-family:inherit;transition:transform .18s}
-nav .navlinks .nd.accopen .ndacc{transform:rotate(180deg);color:var(--blue)}
-nav .navlinks .nd.accopen .ndmob{display:block;background:var(--bg)}
-nav .navlinks .ndmob a{display:block;padding:12px 24px;font-size:15px;color:var(--ink);border-bottom:1px solid #fff}
-nav .navlinks .ndmob a.mobtop{font-weight:700}
-nav .navlinks .ndmob a.mobsub{padding-left:44px;font-size:14px;font-weight:500;color:var(--mut)}
-nav .navlinks .ndmob a:hover{color:var(--blue);text-decoration:none}}
+nav .navlinks .nd,nav .navlinks .nd.ndwide{display:block;position:static}
+nav .navlinks .ndm.pm,nav .navlinks .caret{display:none}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
 .btn{display:inline-block;font-weight:700;font-size:15px;padding:12px 24px;border-radius:10px}
@@ -471,11 +461,6 @@ NAV_ZH = {"Home":"首页","Products":"产品","Application Notes":"应用笔记"
 # Products mega-menu: current sectors only (legacy partner-brand sectors retired)
 PROD_AXES = [
  ("app","By Industry","按行业",[
-   ("Metal & Ceramics","金属与陶瓷","/industries/metal-ceramics/",[
-      ("Steel","钢铁","/industries/steel/"),
-      ("Aluminum","铝","/industries/aluminum/"),
-      ("Ceramics","陶瓷","/industries/ceramics/"),
-   ]),
    ("Automotive","汽车","/industries/automotive-label-materials/"),
  ]),
 ]
@@ -513,24 +498,13 @@ def products_dropdown(lang, linkfn):
             key, "flex" if i == 0 else "none", midlinks)
     subs += ('<div class="subgroup subph" data-sub="" style="display:flex"><div class="subempty">%s</div></div>') % (
         "将鼠标移到左侧类别上，查看其产品系列。" if zh else "Hover a category on the left to see its product lines.")
-    # flat accordion list for mobile (the hover mega-menu doesn't work on touch)
-    mob = ""
-    for key, he, hz, items in PROD_AXES:
-        for item in items:
-            e, z, u = item[0], item[1], item[2]
-            kids = item[3] if len(item) > 3 else None
-            mob += '<a class="mobtop" href="%s">%s</a>' % (linkfn(u), esc(lab(e, z)))
-            for ce, cz, cu in (kids or []):
-                mob += '<a class="mobsub" href="%s">%s</a>' % (linkfn(cu), esc(lab(ce, cz)))
     return ('<div class="nd ndwide" onmouseenter="etaOpen(this)" onmouseleave="etaClose(this)">'
             '<a class="ndt" href="%s">%s <span class="caret">&#9662;</span></a>'
-            '<button type="button" class="ndacc" aria-label="Expand products" onclick="etaAcc(this)">&#9662;</button>'
             '<div class="ndm pm">'
             '<div class="ndrail"><div class="ndrail-h">%s</div>%s</div>'
             '<div class="ndmid">%s</div>'
             '<div class="ndsub">%s</div>'
-            '</div><div class="ndmob">%s</div></div>') % (
-        linkfn("/products/"), esc(top), ("产品方案" if zh else "LABEL SOLUTIONS"), rail, mids, subs, mob)
+            '</div></div>') % (linkfn("/products/"), esc(top), ("产品方案" if zh else "LABEL SOLUTIONS"), rail, mids, subs)
 
 ALL_URLS = []   # (path, group, changefreq)  — English canonical set for sitemap
 def track(path, group): ALL_URLS.append((path, group))
@@ -677,7 +651,6 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 <script>
 function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
 function etaMenu(b){var n=b.closest('nav');if(n)n.classList.toggle('open');}
-function etaAcc(b){var n=b.closest('.nd');if(n)n.classList.toggle('accopen');}
 function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
 function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
 if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
@@ -716,25 +689,15 @@ def build_products_hub(lang):
     ]
     rcards = "".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="rows" style="color:var(--blue);font-weight:700;margin-top:10px">%s →</div></a>'%(
         L(lang,u), esc(t), esc(d), ("进入" if lang=="zh" else "Explore")) for t,d,u in routes)
-    # secondary: ultra-high-temperature process lines
-    lcards = "".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>'%(
-        L(lang,u_line(pid)), esc(PATHS[pid]["title_zh"] if lang=="zh" else PATHS[pid]["title_en"]),
-        ("%d 款产品"%len(line_products(pid)) if lang=="zh" else "%d products"%len(line_products(pid))))
-        for pid in ["direct_hot_application","heat_treatment_labels","heat_treatment_tags"])
-    body = ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div></div></section>'
-            '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="grid">%s</div></div></section>'
+    body = ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="grid grid2">%s</div></div></section>'
             '<div class="wrap">%s</div>') % (
-        ("三种查找方式" if lang=="zh" else "Three ways to find a material"),
-        ("按行业、按材料,或从严选产品切入 —— 每条路径最终都指向同一款有数据表支撑的产品。" if lang=="zh"
-         else "By industry, by material, or from our featured products — every path converges on the same datasheet-backed material."),
-        rcards,
-        ("超高温工艺产品线" if lang=="zh" else "Ultra-high-temperature process lines"),
-        ("热态直贴 / 热处理标签 / 热处理吊牌 —— 面向钢铁、铝、陶瓷、混凝土等高温工艺。" if lang=="zh"
-         else "Direct hot application / heat-treatment labels / heat-treatment tags — for steel, aluminum, ceramics and concrete."),
-        lcards, cta(lang))
+        ("从应用出发" if lang=="zh" else "Start from your application"),
+        ("从您的行业与应用出发,匹配适配的耐久标签材料。" if lang=="zh"
+         else "Start from your industry and application to match the right durable label material."),
+        rcards, cta(lang))
     h1 = "产品与解决方案" if lang=="zh" else "Products & Solutions"
-    lede = ("按行业、按材料或从严选产品出发,找到适配您应用的耐久标签材料。" if lang=="zh"
-            else "Find durable label materials matched to your application — by industry, by material, or from our featured solutions.")
+    lede = ("从您的行业与应用出发,找到适配的耐久标签材料。" if lang=="zh"
+            else "Find durable label materials matched to your application.")
     crumb = [("Home","/"),("Products & Solutions",u_products())]
     write(lang, u_products(), page(lang, u_products(),
         ("产品与解决方案 | ETIA" if lang=="zh" else "Products & Solutions | ETIA"),
@@ -862,9 +825,6 @@ def build_industries_hub(lang):
         return '<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>' % (
             L(lang, url), esc(tz if lang == "zh" else te), esc(dz if lang == "zh" else de))
     sector_cards = (
-        _sc("/industries/metal-ceramics/", "Metal & Ceramics", "金属与陶瓷",
-            "HEATPROOF heat-resistant labels & tags for steel, aluminum and ceramics — up to 1000℃ and beyond.",
-            "面向钢铁、铝与陶瓷的 HEATPROOF 耐高温标签与挂牌 —— 耐受 1000℃ 以上") +
         _sc("/industries/automotive-label-materials/", "Automotive", "汽车",
             "E-Label durable automotive labels across the whole vehicle — engine bay, battery, interior, exterior and tire.",
             "覆盖整车的 E-Label 耐用汽车标签 —— 发动机舱、电池、内饰、外饰与轮胎"))
@@ -872,9 +832,9 @@ def build_industries_hub(lang):
     body = '<section class="blk"><div class="wrap"><div class="grid grid2">%s</div></div></section><div class="wrap">%s</div>' % (sector_cards, cta(lang))
     crumb=[("Home","/"),("Industries & Applications",u_ind_hub())]
     write(lang, u_ind_hub(), page(lang, u_ind_hub(),
-        ("行业与应用 — 超高温标识 | ETIA" if lang=="zh" else "Industries & Applications — Ultra-High-Temp Identification | ETIA"),
-        ("按行业与工艺选择超高温标签与吊牌:钢铁、铝、陶瓷、混凝土及资产管理、产品涂装。" if lang=="zh"
-         else "Ultra-high-temperature identification by industry and process: steel, aluminum, ceramics, concrete, asset management and product coating."),
+        ("行业与应用 | ETIA" if lang=="zh" else "Industries & Applications | ETIA"),
+        ("从您的行业与应用出发,匹配合适的标签材料。" if lang=="zh"
+         else "Start from your industry and application to match the right label material."),
         h1, "", body, crumb, active="industries"))
     if lang=="en": track(u_ind_hub(),"industries")
 
@@ -997,8 +957,6 @@ WHY_ICONS = [
 # Application Center — six focus industries with their applications as tags.
 # format: (name_en, name_zh, url, apps_en[], apps_zh[]) — names only, no partner brands.
 HOME_FOCUS = [
- ("Metal & Ceramics","金属与陶瓷","/industries/metal-ceramics/",
-  ["Hot-metal labeling","Heat treatment","Kiln firing"],["热态贴标","热处理","窑炉烧制"]),
  ("Automotive","汽车制造","/industries/automotive-label-materials/",
   ["VIN identification","Laser marking","Weather exposure"],["VIN标识","激光打标","户外耐候"]),
 ]
@@ -1068,7 +1026,7 @@ def harsh_module(lang):
     (layer-by-layer drill-down: industry -> application -> product). No hot-products grid."""
     cards=""
     # explicit icon per HOME_FOCUS entry: Metal&Ceramics -> flame(1), Automotive -> car(3), PCB -> chip(0)
-    focus_icons=[1,3,0]
+    focus_icons=[3]  # Automotive -> car icon
     for k,(fe,fz,u,apps_en,apps_zh) in enumerate(HOME_FOCUS):
         pills="".join('<span>%s</span>'%esc(a) for a in (apps_zh if lang=="zh" else apps_en))
         cards+=('<a class="card indcard" href="%s"><div class="ic">%s</div>'
@@ -1312,7 +1270,6 @@ def build_home(lang):
 <script>
 function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
 function etaMenu(b){var n=b.closest('nav');if(n)n.classList.toggle('open');}
-function etaAcc(b){var n=b.closest('.nd');if(n)n.classList.toggle('accopen');}
 function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
 function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
 if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
@@ -1721,11 +1678,7 @@ def build_all():
     build_home(lang)
   for lang in LANGS:        # inner site is en + zh
     build_products_hub(lang)
-    for pid in PATHS: build_process_line(lang, pid)
-    for pid in PRODUCTS: build_product(lang, PRODUCTS[pid])
     build_industries_hub(lang)
-    for iid in INDUSTRIES: build_industry(lang, iid)
-    for a in APPS: build_application(lang, a)
     build_about(lang)
     build_contact(lang)
     # /insights/ retired — Application Notes (built by gen_appnotes) replaces it

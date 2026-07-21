@@ -18,7 +18,6 @@
     "th": "TH"
   },
   "focus_urls": [
-    "/industries/metal-ceramics/",
     "/industries/automotive-label-materials/"
   ],
   "en": {
@@ -60,13 +59,6 @@
     "appc_sub": "Explore label materials selected for specific industries, processes, surfaces, temperatures, and identification challenges.",
     "appc_viewall": "View All Applications",
     "focus": [
-      {
-        "name": "Metal & Ceramics",
-        "headline": "Ultra-High-Temperature Direct-Apply Labels",
-        "desc": "Reliable label materials for extreme-heat and metal processing.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL.jpg"
-      },
       {
         "name": "Automotive",
         "headline": "Durable Identification for Automotive and Rubber Processing",
@@ -193,13 +185,6 @@
     "appc_viewall": "查看全部应用",
     "focus": [
       {
-        "name": "金属与陶瓷",
-        "headline": "超高温直贴标签",
-        "desc": "面向超高温与金属加工的可靠标签材料。",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL.jpg"
-      },
-      {
         "name": "汽车",
         "headline": "汽车与橡胶加工耐久标识",
         "desc": "用于汽车制造与轮胎追溯的耐久标签材料。",
@@ -325,13 +310,6 @@
     "appc_viewall": "Xem tất cả ứng dụng",
     "focus": [
       {
-        "name": "Kim loại & Gốm sứ",
-        "headline": "Ultra-High-Temperature Direct-Apply Labels",
-        "desc": "Reliable label materials for extreme-heat and metal processing.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL.jpg"
-      },
-      {
         "name": "Ô tô",
         "headline": "Durable Identification for Automotive and Rubber Processing",
         "desc": "Durable labels for automotive manufacturing and tire traceability.",
@@ -456,13 +434,6 @@
     "appc_sub": "สำรวจวัสดุฉลากที่ทนทานซึ่งคัดเลือกตามกระบวนการ สภาพแวดล้อม และข้อกำหนดด้านการระบุข้อมูลแต่ละประเภท",
     "appc_viewall": "ดูการใช้งานทั้งหมด",
     "focus": [
-      {
-        "name": "โลหะและเซรามิก",
-        "headline": "Ultra-High-Temperature Direct-Apply Labels",
-        "desc": "Reliable label materials for extreme-heat and metal processing.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL.jpg"
-      },
       {
         "name": "ยานยนต์",
         "headline": "Durable Identification for Automotive and Rubber Processing",

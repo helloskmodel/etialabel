@@ -1,21 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Single build entrypoint. HEATPROOF builds the shared shell (home, products hub,
-core/legal, nav/footer). Only the CURRENT sectors are layered on: Metals/Ceramics
-(steel) and Automotive (E-Label). Legacy partner-brand sectors and the Circuit
-Board & PCB / Apex product-line (to be redefined) have been retired. Finally
-strips Chinese full-stops and verifies."""
+core/legal, nav/footer). Today only ONE sector is live — Automotive (unified
+format) — plus its Application Notes. All other sectors (Metal & Ceramics /
+steel and the HEATPROOF heat-content, PCB/Apex) are retired pending re-supply in
+the unified sector format. Finally strips Chinese full-stops and verifies."""
 import sys, os
 BUILD = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BUILD)
 import gen_heatproof as hp
-import gen_steel as steel
 import gen_autoapps as autoapps
 import gen_appnotes as appnotes
 
 hp.main()        # clean + build shell: home, products hub, core/legal, nav/footer, base vercel.json
-steel.main()     # Metals & Ceramics sector — Steel/Aluminum/Ceramics + HP-900 line (owns /industries/metal-ceramics/, /industries/steel/ …)
-autoapps.main()  # Automotive Label Solutions — E-Label sector (owns /industries/automotive-label-materials/)
+autoapps.main()  # Automotive Label Solutions — the only live sector today (unified format)
 appnotes.main()  # Application Notes — one SEO article per application (Purpose/Challenge/Risk/Solution)
 
 # sitemaps + redirects run LAST so every sector's tracked URLs are included

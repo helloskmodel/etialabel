@@ -1,20 +1,8 @@
 {
- "sector": {
-  "name_en": "Automotive Label Solutions",
-  "name_zh": "汽车标签解决方案",
-  "path": "/industries/automotive-label-materials/",
-  "eyebrow_en": "AUTOMOTIVE · LABEL SOLUTIONS",
-  "eyebrow_zh": "汽车 · 标签解决方案",
-  "subhead_en": "Durable identification across the whole vehicle — engine bay, battery, fuel & charging, interior, exterior and rubber components.",
-  "subhead_zh": "覆盖整车的耐用标识 —— 发动机舱、电池、燃油与充电、内饰、外饰与橡胶部件。",
-  "intro_en": "Match each application by environment challenge to the recommended E-LABEL material. Label purpose, risk of the wrong label and full product specifications are covered in Application Notes.",
-  "intro_zh": "按每个应用面临的环境挑战,匹配推荐的 E-LABEL 材料。标签用途、用错标签的风险与完整产品规格,详见 Application Notes。",
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-automotive-tire.png"
- },
+ "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-automotive-tire.png",
  "apps": [
   {
    "area": "Engine Compartment",
-   "area_zh": "发动机舱",
    "name_en": "Radiator Warning Labels",
    "name_zh": "散热器警示标签",
    "purpose_en": "Safety warning and operating information for the radiator and cooling system; withstands high heat and coolant.",
@@ -44,7 +32,6 @@
   },
   {
    "area": "Engine Compartment",
-   "area_zh": "发动机舱",
    "name_en": "Battery Labels",
    "name_zh": "电池标签",
    "purpose_en": "Automotive battery identification, safety warning and service information; resists acids/alkalis and heat cycling.",
@@ -72,7 +59,6 @@
   },
   {
    "area": "Engine Compartment",
-   "area_zh": "发动机舱",
    "name_en": "Power Steering / Fluid Labels",
    "name_zh": "动力转向油液标签",
    "purpose_en": "Identification and maintenance information for power-steering and fluid reservoirs; resists engine oil and hydraulic fluid.",
@@ -100,7 +86,6 @@
   },
   {
    "area": "Door Jamb",
-   "area_zh": "门柱",
    "name_en": "VIN Labels",
    "name_zh": "VIN标签",
    "purpose_en": "Permanent VIN identification for whole-vehicle traceability and regulatory compliance; tamper- and tear-evident.",
@@ -130,7 +115,6 @@
   },
   {
    "area": "Door Jamb",
-   "area_zh": "门柱",
    "name_en": "Tire Pressure Labels",
    "name_zh": "胎压警示标签",
    "purpose_en": "Tire-pressure and vehicle-load information at the door jamb; readable outdoors long-term.",
@@ -160,7 +144,6 @@
   },
   {
    "area": "Battery & Electrical",
-   "area_zh": "电池与电气",
    "name_en": "Battery Identification Labels",
    "name_zh": "电池标识标签",
    "purpose_en": "Information, safety warning and service identification for battery cells and modules; resists temperature cycling and chemicals.",
@@ -188,7 +171,6 @@
   },
   {
    "area": "Battery & Electrical",
-   "area_zh": "电池与电气",
    "name_en": "Electrical Component Labels",
    "name_zh": "电气元件标签",
    "purpose_en": "Small-format identification and traceability for automotive electrical components, harnesses and connectors; precise application.",
@@ -216,7 +198,6 @@
   },
   {
    "area": "Fuel & Charging",
-   "area_zh": "燃油与充电",
    "name_en": "Fuel Instruction Labels",
    "name_zh": "燃油说明标签",
    "purpose_en": "Operating instructions and safety warnings at the fuel filler; resists fuel chemicals and applies to curved surfaces.",
@@ -245,7 +226,6 @@
   },
   {
    "area": "Fuel & Charging",
-   "area_zh": "燃油与充电",
    "name_en": "EV Charging Instruction Labels",
    "name_zh": "新能源充电说明标签",
    "purpose_en": "Operating instructions and safety information at the EV charging port; resists outdoor exposure and chemicals.",
@@ -275,7 +255,6 @@
   },
   {
    "area": "Exterior",
-   "area_zh": "外饰",
    "name_en": "Exterior Identification Labels",
    "name_zh": "外部标识标签",
    "purpose_en": "Identification and traceability for exterior vehicle components; all-weather, UV- and abrasion-resistant.",
@@ -305,7 +284,6 @@
   },
   {
    "area": "Interior",
-   "area_zh": "内饰",
    "name_en": "Airbag Labels",
    "name_zh": "安全气囊标签",
    "purpose_en": "Safety identification and warning information for the airbag module; heat-ageing resistant, interior-grade.",
@@ -332,7 +310,6 @@
   },
   {
    "area": "Interior",
-   "area_zh": "内饰",
    "name_en": "Sun Visor Warning Labels",
    "name_zh": "遮阳板警示标签",
    "purpose_en": "Safety warning and operating instructions on the sun visor; interior-grade, ageing-resistant, lays flat.",
@@ -360,7 +337,6 @@
   },
   {
    "area": "Interior",
-   "area_zh": "内饰",
    "name_en": "Carpet Component Labels",
    "name_zh": "地毯零部件标签",
    "purpose_en": "Component identification for automotive carpet and interior textiles; bonds to fabric surfaces.",
@@ -388,7 +364,6 @@
   },
   {
    "area": "Flexible Components",
-   "area_zh": "柔性部件",
    "name_en": "Flexible Component Labels",
    "name_zh": "柔性零部件标签",
    "purpose_en": "Identification for flexible automotive parts; withstands repeated flexing and bending deformation.",
@@ -416,7 +391,6 @@
   },
   {
    "area": "Rubber Components",
-   "area_zh": "橡胶部件",
    "name_en": "Tire Vulcanization Labels (Pre-cure)",
    "name_zh": "轮胎硫化标签（预硫化）",
    "purpose_en": "Pre-printed barcode labels applied to green tires during tire building; stay readable through high-temperature, high-pressure vulcanization for production traceability.",
