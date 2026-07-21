@@ -4,10 +4,5 @@
   <sitemap><loc>https://www.etialabel.com/sitemap-products.xml</loc></sitemap>
   <sitemap><loc>https://www.etialabel.com/sitemap-industries.xml</loc></sitemap>
   <sitemap><loc>https://www.etialabel.com/sitemap-applications.xml</loc></sitemap>
-  <sitemap><loc>https://www.etialabel.com/sitemap-automotive.xml</loc></sitemap>
-  <sitemap><loc>https://www.etialabel.com/sitemap-healthcare.xml</loc></sitemap>
-  <sitemap><loc>https://www.etialabel.com/sitemap-pcb.xml</loc></sitemap>
-  <sitemap><loc>https://www.etialabel.com/sitemap-wirecable.xml</loc></sitemap>
-  <sitemap><loc>https://www.etialabel.com/sitemap-materials.xml</loc></sitemap>
-  <sitemap><loc>https://www.etialabel.com/sitemap-featured.xml</loc></sitemap>
+  <sitemap><loc>https://www.etialabel.com/sitemap-application-notes.xml</loc></sitemap>
 </sitemapindex>

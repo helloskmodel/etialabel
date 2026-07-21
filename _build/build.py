@@ -1,41 +1,28 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Single build entrypoint. Runs HEATPROOF first (it does the wholesale clean and builds
-the shared shell: home, industries, products hub, core/legal stubs), then layers the
-Automotive (3M + FLEXcon) section on top without clobbering. Finally verifies."""
+"""Single build entrypoint. HEATPROOF builds the shared shell (home, products hub,
+core/legal, nav/footer). Today only ONE sector is live — Automotive (unified
+format) — plus its Application Notes. All other sectors (Metal & Ceramics /
+steel and the HEATPROOF heat-content, PCB/Apex) are retired pending re-supply in
+the unified sector format. Finally strips Chinese full-stops and verifies."""
 import sys, os
 BUILD = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BUILD)
 import gen_heatproof as hp
-import gen_automotive as auto
-import gen_healthcare as hc
-import gen_pcb as pcb
-import gen_wirecable as wc
-import gen_pi as pi
-import gen_featured as fs
-import gen_ind_landing as land
-import gen_notes as notes
-import gen_prodline as prodline
-import gen_steel as steel
 import gen_autoapps as autoapps
+import gen_appnotes as appnotes
 
-hp.main()      # clean + build heatproof + home (with harsh-env module) + base vercel.json
-auto.main()    # build automotive + automotive sitemap + merge redirects
-hc.main()      # build healthcare + healthcare sitemap + merge redirects
-pcb.main()     # build electronics & pcb / polyimide categories + sitemap
-wc.main()      # build wire & cable + sitemap
-pi.main()      # build Polyimide (PI) Material & Application Center + By-Material hub
-fs.main()      # build Featured Solutions center + harsh-environment landing pages
-land.main()    # industry LANDING pages (brochure layer) — owns /industries/<slug>/ index
-notes.main()   # Application Notes (SEO articles) + Electronic Component Labels product landing
-prodline.main()  # Reusable product-line landings (Polyonics Apex Series, first instance)
-steel.main()     # Metals/Steel sector — application landing + HP-900 product line (owns /industries/steel/)
-autoapps.main()  # Automotive Label Solutions — 19-application sector landing (owns /industries/automotive-label-materials/)
+hp.main()        # clean + build shell: home, products hub, core/legal, nav/footer, base vercel.json
+autoapps.main()  # Automotive Label Solutions — the only live sector today (unified format)
+appnotes.main()  # Application Notes — one SEO article per application (Purpose/Challenge/Risk/Solution)
+
+# sitemaps + redirects run LAST so every sector's tracked URLs are included
+hp.build_sitemaps()
+hp.write_redirects()
 
 def strip_cn_fullstops():
     """Client style: Chinese copy uses no full-stop (。). Trailing 。 is dropped; a
-    mid-sentence 。 (between clauses) becomes a space so sentences don't run together.
-    Runs over all generated HTML so current and future Chinese content stays consistent."""
+    mid-sentence 。 (between clauses) becomes a space so sentences don't run together."""
     root_dir = os.path.dirname(BUILD)
     skip = {"_build", "_docs", ".git", "node_modules", "scratchpad"}
     n = 0
@@ -54,5 +41,4 @@ def strip_cn_fullstops():
     print("Chinese full-stop (。) stripped from", n, "pages")
 
 strip_cn_fullstops()
-print("BUILD COMPLETE — total EN canonical URLs:",
-      len(hp.ALL_URLS)+len(auto.AUTO_URLS)+len(hc.HC_URLS)+len(pcb.URLS)+len(wc.URLS)+len(pi.URLS)+len(fs.URLS)+len(land.URLS)+len(notes.URLS)+len(prodline.URLS)+len(steel.URLS)+len(autoapps.URLS))
+print("BUILD COMPLETE — total EN canonical URLs:", len(hp.ALL_URLS))

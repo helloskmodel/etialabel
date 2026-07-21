@@ -9,6 +9,8 @@
    "purpose_zh": "散热器及冷却系统的安全警示与操作信息标识，耐高温冷却液。",
    "risk_en": "Labels dropping off at high heat lose the safety warning; coolant corrosion smears the print; technician mis-operation causes safety incidents.",
    "risk_zh": "高温脱落导致安全警示丢失、冷却液腐蚀脱墨、维修人员误操作引发安全事故。",
+   "challenge_en": "Continuous high heat, coolant corrosion, humidity, engine-bay chemical attack",
+   "challenge_zh": "持续高温环境、冷却液腐蚀、潮湿、发动机舱化学品侵蚀",
    "props": [
     "Heat-Resistant",
     "High-Temperature-Resistant",
@@ -36,6 +38,8 @@
    "purpose_zh": "汽车蓄电池标识、安全警示及维保信息标签，耐酸碱及热循环。",
    "risk_en": "Electrolyte corrosion causes drop-off; adhesive fails under heat cycling; loss of battery traceability affects after-sales and recall.",
    "risk_zh": "电解液腐蚀脱落、热循环胶失效、电池追溯丢失影响售后与召回。",
+   "challenge_en": "Wide battery thermal-cycling swings, electrolyte corrosion, high durability demand, low-surface-energy battery casing",
+   "challenge_zh": "电池热循环温差大、电解液腐蚀、高耐久性要求、电池外壳低表面能",
    "props": [
     "Heat-Resistant",
     "Chemical-Resistant"
@@ -61,6 +65,8 @@
    "purpose_zh": "动力转向及各类油液储液罐的标识与维护信息，耐机油液压油。",
    "risk_en": "Oil penetration fails the adhesive and drops the label; curved-surface edge-lift; mixed-up fluid labels cause wrong fill and faults.",
    "risk_zh": "油污渗透胶失效脱落、曲面翘边、油液标识混淆加错油引发故障。",
+   "challenge_en": "Oil seepage, chemical contact, low-surface-energy curved application, oil resistance",
+   "challenge_zh": "机油油污渗透、化学品接触、低表面能曲面贴附、耐油",
    "props": [
     "Oil-Resistant",
     "Chemical-Resistant"
@@ -86,6 +92,8 @@
    "purpose_zh": "车辆识别码VIN永久性标识，整车追溯与法规合规，防篡改防撕毁。",
    "risk_en": "A tampered label voids vehicle traceability; a worn VIN becomes unreadable; failing regulatory compliance.",
    "risk_zh": "标签被篡改车辆追溯失效、磨损后VIN不可读、法规合规不通过。",
+   "challenge_en": "Long-term outdoor durability, abrasion and scratch resistance, chemical resistance, tamper- and counterfeit-proofing",
+   "challenge_zh": "长期户外耐久性、耐磨耐刮、耐化学品、防篡改防伪",
    "props": [
     "Laser-Markable",
     "Abrasion-Resistant",
@@ -113,6 +121,8 @@
    "purpose_zh": "车门立柱处轮胎气压及车辆载荷信息标识，长期户外可读。",
    "risk_en": "UV ageing fades the label; adhesive fails under temperature cycling; loss of tire-pressure info affects driving safety.",
    "risk_zh": "紫外线老化褪色、温变胶失效、胎压信息丢失影响行车安全。",
+   "challenge_en": "Long-term outdoor exposure, thermal-cycling resistance, UV resistance, permanently legible data",
+   "challenge_zh": "长期户外环境暴露、耐温变、耐紫外线、信息永久可读",
    "props": [
     "Weather-Resistant",
     "Waterproof",
@@ -140,6 +150,8 @@
    "purpose_zh": "电池单体及模组的信息、安全警示与服务标识，耐温变耐化学。",
    "risk_en": "Adhesive fails and drops off under heat cycling; chemical corrosion smears print; battery-module traceability breaks.",
    "risk_zh": "热循环胶失效脱落、化学腐蚀脱墨、电池模组追溯中断。",
+   "challenge_en": "Wide thermal-cycling swings, chemical contact, high durability demand, module traceability",
+   "challenge_zh": "热循环温差大、化学品接触、高耐久性要求、模组追溯",
    "props": [
     "Heat-Resistant",
     "Chemical-Resistant"
@@ -165,6 +177,8 @@
    "purpose_zh": "汽车电气元件、线束、连接器的小尺寸标识与追溯，精密贴附。",
    "risk_en": "Small labels print unclearly; edge-lift on component curves; loss of electrical traceability hampers repair.",
    "risk_zh": "小标签打印不清、元件曲面翘边、电气追溯丢失影响维修。",
+   "challenge_en": "Small-format curved application, durability demand, barcode readability, densely packed components",
+   "challenge_zh": "小尺寸曲面贴附、耐久性要求、条码可读性、元件密集空间",
    "props": [
     "High-Temperature-Resistant",
     "Heat-Resistant"
@@ -190,6 +204,8 @@
    "purpose_zh": "燃油加注口操作说明与安全警示标签，耐燃油化学品曲面贴附。",
    "risk_en": "Fuel dissolves the adhesive and drops the label; curved-surface edge-lift; wrong filling causes safety incidents.",
    "risk_zh": "燃油溶解胶层脱落、曲面翘边、加注错误引发安全事故。",
+   "challenge_en": "Fuel-chemical corrosion, humid environment, curved-surface conformance, long-term outdoor exposure",
+   "challenge_zh": "燃油化学品腐蚀、潮湿环境、曲面贴附适配、长期户外",
    "props": [
     "Chemical-Resistant",
     "Oil-Resistant",
@@ -216,6 +232,8 @@
    "purpose_zh": "电动汽车充电口操作说明与安全信息标识，耐户外耐化学。",
    "risk_en": "Outdoor ageing fades the label; chemical corrosion smears print; loss of charging-safety info causes incidents.",
    "risk_zh": "户外老化褪色、化学腐蚀脱墨、充电安全信息丢失引发事故。",
+   "challenge_en": "Outdoor sun and rain, chemical contact, long-term readability, EV/new-energy compliance",
+   "challenge_zh": "户外日晒雨淋、化学品接触、长期可读性、新能源合规",
    "props": [
     "Weather-Resistant",
     "Waterproof",
@@ -243,6 +261,8 @@
    "purpose_zh": "汽车外部零部件的标识与追溯，耐全气候紫外线耐磨。",
    "risk_en": "UV ageing chalks and drops the label; grit abrasion makes it unreadable; exterior-part traceability is lost.",
    "risk_zh": "UV老化粉化脱落、砂石磨损不可读、外饰件追溯丢失。",
+   "challenge_en": "UV ageing, wind and rain, gravel abrasion, long-term outdoor durability",
+   "challenge_zh": "紫外线老化、风吹雨淋、砂石磨损、户外长期耐久性",
    "props": [
     "UV-Resistant",
     "Weather-Resistant",
@@ -270,6 +290,8 @@
    "purpose_zh": "安全气囊模块的安全标识与警示信息，耐热老化内饰级。",
    "risk_en": "Heat-ageing drop-off; poor appearance; loss of the safety warning affects correct airbag use.",
    "risk_zh": "热老化脱落、外观不良、安全警示丢失影响气囊正确使用。",
+   "challenge_en": "Interior heat-ageing, high cosmetic standard, low-surface-energy plastic application, safety compliance",
+   "challenge_zh": "内饰高温老化、外观要求高、低表面能塑料贴附、安全合规",
    "props": [
     "Heat-Resistant"
    ],
@@ -294,6 +316,8 @@
    "purpose_zh": "遮阳板处安全警示与操作说明标识，内饰级耐老化平整。",
    "risk_en": "Sunlight ageing; edge-lift spoils appearance; warning info fades and becomes unreadable.",
    "risk_zh": "阳光照射老化、翘边影响外观、警示信息褪色不可读。",
+   "challenge_en": "High interior cosmetic standard, flat application, heat-ageing resistance, direct sunlight",
+   "challenge_zh": "内饰外观要求高、平整贴附、耐热老化、阳光直射",
    "props": [
     "Heat-Resistant",
     "UV-Resistant"
@@ -319,6 +343,8 @@
    "purpose_zh": "汽车地毯及内饰纺织件的零部件标识，织物表面贴附。",
    "risk_en": "Drop-off from fabric surfaces; label damaged when flexed; component traceability lost.",
    "risk_zh": "织物表面脱落、弯折标签损坏、零部件追溯丢失。",
+   "challenge_en": "Textile-surface bonding, flexible bending, interior-environment durability",
+   "challenge_zh": "纺织物表面粘接、柔性弯折、内饰环境耐久性",
    "props": [
     "Flexible",
     "Abrasion-Resistant"
@@ -344,6 +370,8 @@
    "purpose_zh": "汽车柔性零部件的标识，耐反复弯折弯曲变形。",
    "risk_en": "Flex-fatigue cracking; edge-lift under surface deformation; traceability of flexible parts breaks.",
    "risk_zh": "弯折疲劳脆裂、曲面变形翘边、柔性件追溯中断。",
+   "challenge_en": "Repeated flex fatigue, curved deformation, varied substrate surfaces, compact size",
+   "challenge_zh": "反复弯折疲劳、曲面变形、多种基材表面、尺寸小巧",
    "props": [
     "Flexible",
     "Abrasion-Resistant"
@@ -369,6 +397,8 @@
    "purpose_zh": "轮胎成型工序中贴附于生胎的预制条码标签，经高温高压硫化后保持可读，用于生产追溯。",
    "risk_en": "Barcode smears after vulcanization; poor bond to the green-rubber surface; edge-lift during vulcanization breaks traceability.",
    "risk_zh": "硫化后条码糊掉、生胶面贴附不良、硫化过程翘边导致追溯中断。",
+   "challenge_en": "Extreme vulcanization heat and pressure, tacky green-rubber surface, varied compound formulations, vulcanization-chemical contact",
+   "challenge_zh": "硫化极端高温高压、生胶粘性表面、胶料成分差异、硫化化学品接触",
    "props": [
     "Heat-Resistant",
     "High-Temperature-Resistant",

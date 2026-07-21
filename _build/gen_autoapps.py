@@ -43,13 +43,17 @@ def _svg(p): return ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
 IC_INTRO = _svg('<circle cx="12" cy="12" r="9"/><path d="M12 16v-5M12 8h.01"/>')
 IC_CHAL = _svg('<path d="M12 3 2 20h20L12 3z"/><path d="M12 10v5M12 18h.01"/>')
 IC_SOL  = _svg('<path d="M12 3 4 6.5v5c0 4.6 3.2 7.7 8 9.5 4.8-1.8 8-4.9 8-9.5v-5L12 3z"/><path d="m9 12 2 2 4-4"/>')
+# Risk-of-wrong-label — shield with an X (what goes wrong if the label is mismatched)
+IC_RISK = _svg('<path d="M12 3 4 6.5v5c0 4.6 3.2 7.7 8 9.5 4.8-1.8 8-4.9 8-9.5v-5L12 3z"/><path d="m9.5 9.5 5 5M14.5 9.5l-5 5"/>')
 
 UI = {
  "browse": ("Browse by Application", "按应用浏览"),
- "intro": ("Introduction", "介绍"),
+ "intro": ("Label Purpose", "标签用途"),
  "products": ("Recommended Products", "推荐产品"),
  "solutions": ("Solutions", "解决方案"),
- "risk": ("Risk of the Wrong Label", "用错标签的风险"),
+ "risk": ("Risk of Wrong Label", "用错标签风险"),
+ "challenge": ("Challenge", "应用挑战"),
+ "recommend": ("Recommendation", "推荐方案"),
  "feature": ("Feature", "特性"), "benefit": ("Benefit", "收益"), "spec": ("Specification", "规格"),
  "distributor": ("Computype — ETIA authorized distributor", "Computype —— ETIA 授权代理"),
  "talk": ("Talk to a Specialist", "咨询专家"),
@@ -73,6 +77,7 @@ CSS = """<style>
 .avarrow{background:none;border:none;font-size:20px;color:var(--mut);cursor:pointer;padding:4px 6px}
 .avpanel{padding-top:24px}
 .av3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:start}
+.av2{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;max-width:760px}
 .avbox{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
 .avbox .h{display:flex;align-items:center;gap:12px;margin-bottom:10px}
 .avbox .h .i{width:28px;height:28px;flex:0 0 auto}.avbox .h .i svg{width:28px;height:28px}
@@ -83,6 +88,8 @@ CSS = """<style>
 .avchip{font-size:12px;font-weight:700;border-radius:20px;padding:5px 12px;line-height:1.25}
 .avchip.ch{background:#fff1e8;color:#b4531a;border:1px solid #f4cdb0}
 .avchip.so{background:var(--mint);color:var(--green-d);border:1px solid #cfe6c5}
+.avrec{margin-top:12px;display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:13px;font-weight:800;color:var(--green-d)}
+.avrec span{background:var(--green-d);color:#fff;border-radius:5px;padding:2px 7px;font-size:10px;letter-spacing:.05em}
 .avplw{margin-top:26px}.avplh{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
 .avplg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
 .avplc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff;text-decoration:none;transition:.16s}
@@ -100,7 +107,17 @@ CSS = """<style>
 .avplc.avfc{cursor:default}
 .avplc.avfc:hover{transform:none;box-shadow:none;border-color:var(--line)}
 .avplc.avfc .fd{font-size:13.5px;color:var(--mut);line-height:1.6;margin-top:9px}
-@media(max-width:820px){.av3,.avplg{grid-template-columns:1fr}}
+@media(max-width:820px){
+ .avplg{grid-template-columns:1fr}
+ .av3{grid-template-columns:1fr;gap:10px}
+ /* the 2 keyword cards stay side-by-side (one row) on mobile — kept compact */
+ .av2{grid-template-columns:1fr 1fr;gap:9px}
+ .avbox{padding:11px 12px}
+ .avbox .h{margin-bottom:7px;gap:8px}.avbox .h .i,.avbox .h .i svg{width:18px;height:18px}
+ .avbox .h .e{font-size:11px}
+ .avchips{gap:5px}.avchip{font-size:11px;padding:3px 8px}
+ .avrec{font-size:11.5px;gap:6px;margin-top:9px}.avrec span{font-size:9px;padding:2px 5px}
+}
 </style>""".replace("__BANNER__", BANNER)
 
 def build_sector(lang):
@@ -113,12 +130,12 @@ def build_sector(lang):
             '</div></section>') % (U("eyebrow"),
         H("Automotive Label Solutions", "汽车标签解决方案"), H(*UI["subhead"]), contact, U("talk"))
     overview = ('<section class="blk"><div class="wrap"><div class="avovbody"><p>%s</p></div></div></section>') % H(
-        "ETIA E-LABEL materials matched to each application on the vehicle — from high-temperature engine-bay warnings and VIN traceability to EV charging labels and tire vulcanization. Each application shows what it must withstand, the recommended resistance, and the matched E-LABEL product.",
-        "ETIA E-LABEL 系列与整车各应用一一匹配 —— 从发动机舱高温警示、VIN 可追溯，到新能源充电标签与轮胎硫化标签。每个应用都列出需要耐受什么、推荐的抗性属性，以及匹配的 E-LABEL 产品。")
-    def box_wrap(ic, lbl, col, inner, tint=False):
+        "Match each application by environment challenge to the recommended E-LABEL material. Label purpose, risk of the wrong label and full product specifications are covered in Application Notes.",
+        "按每个应用面临的环境挑战,匹配推荐的 E-LABEL 材料。标签用途、用错标签的风险与完整产品规格,详见 Application Notes。")
+    def box_wrap(ic, lbl, col, inner, bg=""):
         return ('<div class="avbox"%s><div class="h"><span class="i" style="color:%s">%s</span>'
                 '<span class="e" style="color:%s">%s</span></div>%s</div>') % (
-            (' style="background:#f4f9f2"' if tint else ''), col, ic, col, lbl, inner)
+            (' style="background:%s" ' % bg if bg else ''), col, ic, col, lbl, inner)
     def chips(items, cls):
         return '<div class="avchips">%s</div>' % "".join('<span class="avchip %s">%s</span>' % (cls, esc(x)) for x in items)
     tabs = ""; panels = ""
@@ -126,42 +143,24 @@ def build_sector(lang):
         name = _t(lang, a["name_en"], a["name_zh"])
         tabs += '<button class="avtab%s" onclick="avTab(this,%d)">%s</button>' % (
             " on" if i == 0 else "", i, esc(name))
-        # Introduction (prose) / Challenge (chips) / Solution (chips) — three side-by-side boxes
-        area = ('<span class="area">%s</span>' % esc(a["area"])) if a.get("area") else ""
-        intro_inner = area + '<p>%s</p>' % esc(_t(lang, a["purpose_en"], a["purpose_zh"]))
-        # challenge chips derived from the paired vocabulary so they correspond to the Solution chips
+        # Two compact keyword cards — Challenge (environment) -> Recommendation (material).
+        # Both use the shared controlled vocabulary; Purpose / Risk / full Solution live in
+        # Application Notes. Recommendation card also names the matched E-LABEL model(s).
         seen = set(); ch_items = []
         for pr in a.get("props", []):
             pair = PROP_CHALLENGE.get(pr)
             if pair and pair[0] not in seen:
                 seen.add(pair[0]); ch_items.append(_t(lang, pair[0], pair[1]))
-        so_items = [_t(lang, pr, PROP_ZH.get(pr, pr)) for pr in a.get("props", [])]
-        box = '<div class="av3">%s%s%s</div>' % (
-            box_wrap(IC_INTRO, U("intro"), "var(--blue)", intro_inner),
-            box_wrap(IC_CHAL, H("Challenge", "挑战"), "#c2621f", chips(ch_items, "ch")),
-            box_wrap(IC_SOL, H("Recommended Solution", "推荐方案"), "var(--green-d)", chips(so_items, "so"), tint=True))
-        # risk-of-the-wrong-label callout
-        risk = ""
-        if a.get("risk_en") or a.get("risk_zh"):
-            risk = '<div class="avrisk"><span class="rl">%s</span>%s</div>' % (
-                U("risk"), esc(_t(lang, a.get("risk_en", ""), a.get("risk_zh", ""))))
-        # E-LABEL product cards: model + Feature + Benefit + Specification
-        cards = ""
-        for pr in a.get("products", []):
-            url = L(lang, "/contact/?product=%s&industry=automotive" % quote(pr["model"], safe=""))
-            brand = pr.get("brand", "E-Label")
-            badge = '<span class="avbrand%s">%s</span>' % (" cp" if brand == "Computype" else "", esc(brand))
-            note = ('<div class="avdist">%s</div>' % U("distributor")) if brand == "Computype" else ""
-            lines = ""
-            for key, lab in (("feature", "feature"), ("benefit", "benefit"), ("spec", "spec")):
-                val = _t(lang, pr.get(key + "_en", ""), pr.get(key + "_zh", ""))
-                if val: lines += '<div class="sp"><span>%s</span>%s</div>' % (U(lab), esc(val))
-            cards += ('<a class="avplc" href="%s">%s<div class="t">%s</div>%s%s<div class="go">%s</div></a>') % (
-                url, badge, esc(pr["model"]), note, lines, U("soon"))
-        plw = ('<div class="avplw"><div class="avplh">%s</div><div class="avplg">%s</div></div>' % (
-            U("products"), cards)) if cards else ""
-        panels += '<div class="avpanel" data-i="%d" style="display:%s">%s%s%s</div>' % (
-            i, "block" if i == 0 else "none", box, risk, plw)
+        rec_items = [_t(lang, pr, PROP_ZH.get(pr, pr)) for pr in a.get("props", [])]
+        models = [pr["model"] for pr in a.get("products", []) if pr.get("brand", "E-Label") == "E-Label"]
+        rec_inner = chips(rec_items, "so")
+        if models:
+            rec_inner += '<div class="avrec"><span>E-LABEL</span>%s</div>' % esc(" · ".join(models))
+        box = '<div class="av2">%s%s</div>' % (
+            box_wrap(IC_CHAL, U("challenge"), "#c2621f", chips(ch_items, "ch")),
+            box_wrap(IC_SOL, U("recommend"), "var(--green-d)", rec_inner, bg="#f4f9f2"))
+        panels += '<div class="avpanel" data-i="%d" style="display:%s">%s</div>' % (
+            i, "block" if i == 0 else "none", box)
     js = ("<script>function avTab(b,i){var m=b.closest('.avmod');"
           "m.querySelectorAll('.avtab').forEach(function(x,j){x.classList.toggle('on',j===i);});"
           "m.querySelectorAll('.avpanel').forEach(function(p){p.style.display=(+p.getAttribute('data-i')===i)?'block':'none';});}"

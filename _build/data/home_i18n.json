@@ -18,18 +18,13 @@
     "th": "TH"
   },
   "focus_urls": [
-    "/industries/electronics-pcb/",
-    "/industries/",
-    "/industries/healthcare-life-sciences/",
-    "/industries/automotive-label-materials/",
-    "/industries/wire-cable/",
-    "/industries/outdoor-energy/"
+    "/industries/automotive-label-materials/"
   ],
   "en": {
     "nav": [
       "Products",
+      "Industries",
       "Application Notes",
-      "Insights",
       "Service"
     ],
     "hero_eyebrow": "DURABLE IDENTIFICATION · SPECIALTY LABEL MATERIALS",
@@ -65,46 +60,11 @@
     "appc_viewall": "View All Applications",
     "focus": [
       {
-        "name": "Electronics Manufacturing & PCB",
-        "headline": "High-Temperature Polyimide PCB Labels",
-        "desc": "High-temperature label materials for PCB assembly and electronics traceability.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB.jpg"
-      },
-      {
-        "name": "Metals & Ceramics",
-        "headline": "Ultra-High-Temperature Direct-Apply Labels",
-        "desc": "Reliable label materials for extreme-heat and metal processing.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL.jpg"
-      },
-      {
-        "name": "Medical & Laboratory",
-        "headline": "Cryogenic and Chemical-Resistant Identification",
-        "desc": "Cryogenic and chemical-resistant labels for healthcare and laboratories.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL.jpg"
-      },
-      {
-        "name": "Automotive & Tire",
+        "name": "Automotive",
         "headline": "Durable Identification for Automotive and Rubber Processing",
         "desc": "Durable labels for automotive manufacturing and tire traceability.",
         "tags": [],
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
-      },
-      {
-        "name": "Wire & Cable",
-        "headline": "Durable Wire and Cable Identification",
-        "desc": "Durable labels for wire, cable, harness and connector identification.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE.jpg"
-      },
-      {
-        "name": "Outdoor & Energy",
-        "headline": "Weather-Resistant Outdoor Identification",
-        "desc": "Weather-resistant labels for outdoor equipment and energy infrastructure.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR.jpg"
       }
     ],
     "explore": "View Application",
@@ -188,8 +148,8 @@
   "zh": {
     "nav": [
       "产品",
+      "行业",
       "应用笔记",
-      "洞察",
       "服务"
     ],
     "hero_eyebrow": "耐久标识 · 特种标签材料",
@@ -225,46 +185,11 @@
     "appc_viewall": "查看全部应用",
     "focus": [
       {
-        "name": "电子制造与 PCB",
-        "headline": "耐高温聚酰亚胺 PCB 标签",
-        "desc": "用于 PCB 装配与电子产品追溯的耐高温标签材料。",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB.jpg"
-      },
-      {
-        "name": "金属与陶瓷",
-        "headline": "超高温直贴标签",
-        "desc": "面向超高温与金属加工的可靠标签材料。",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL.jpg"
-      },
-      {
-        "name": "医疗与实验室",
-        "headline": "深低温与耐化学标识",
-        "desc": "面向医疗与实验室的深低温、耐化学标签材料。",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL.jpg"
-      },
-      {
-        "name": "汽车与轮胎",
+        "name": "汽车",
         "headline": "汽车与橡胶加工耐久标识",
         "desc": "用于汽车制造与轮胎追溯的耐久标签材料。",
         "tags": [],
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
-      },
-      {
-        "name": "电线与电缆",
-        "headline": "耐久电线电缆标识",
-        "desc": "用于电线、电缆、线束与连接器标识的耐久标签材料。",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE.jpg"
-      },
-      {
-        "name": "户外与能源",
-        "headline": "户外耐候标识",
-        "desc": "面向户外设备与能源设施的耐候标签材料。",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR.jpg"
       }
     ],
     "explore": "查看应用",
@@ -348,8 +273,8 @@
   "vi": {
     "nav": [
       "Sản phẩm",
+      "Ngành",
       "Application Notes",
-      "Insights",
       "Dịch vụ"
     ],
     "hero_eyebrow": "NHẬN DIỆN BỀN VỮNG · VẬT LIỆU NHÃN CHUYÊN DỤNG",
@@ -385,46 +310,11 @@
     "appc_viewall": "Xem tất cả ứng dụng",
     "focus": [
       {
-        "name": "Electronics Manufacturing & PCB",
-        "headline": "High-Temperature Polyimide PCB Labels",
-        "desc": "High-temperature label materials for PCB assembly and electronics traceability.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB.jpg"
-      },
-      {
-        "name": "Metals & Ceramics",
-        "headline": "Ultra-High-Temperature Direct-Apply Labels",
-        "desc": "Reliable label materials for extreme-heat and metal processing.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL.jpg"
-      },
-      {
-        "name": "Medical & Laboratory",
-        "headline": "Cryogenic and Chemical-Resistant Identification",
-        "desc": "Cryogenic and chemical-resistant labels for healthcare and laboratories.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL.jpg"
-      },
-      {
-        "name": "Automotive & Tire",
+        "name": "Ô tô",
         "headline": "Durable Identification for Automotive and Rubber Processing",
         "desc": "Durable labels for automotive manufacturing and tire traceability.",
         "tags": [],
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
-      },
-      {
-        "name": "Wire & Cable",
-        "headline": "Durable Wire and Cable Identification",
-        "desc": "Durable labels for wire, cable, harness and connector identification.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE.jpg"
-      },
-      {
-        "name": "Outdoor & Energy",
-        "headline": "Weather-Resistant Outdoor Identification",
-        "desc": "Weather-resistant labels for outdoor equipment and energy infrastructure.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR.jpg"
       }
     ],
     "explore": "Khám phá",
@@ -508,8 +398,8 @@
   "th": {
     "nav": [
       "ผลิตภัณฑ์",
+      "อุตสาหกรรม",
       "Application Notes",
-      "Insights",
       "บริการ"
     ],
     "hero_eyebrow": "ระบบระบุข้อมูลที่ทนทาน · วัสดุฉลากเฉพาะทาง",
@@ -545,46 +435,11 @@
     "appc_viewall": "ดูการใช้งานทั้งหมด",
     "focus": [
       {
-        "name": "Electronics Manufacturing & PCB",
-        "headline": "High-Temperature Polyimide PCB Labels",
-        "desc": "High-temperature label materials for PCB assembly and electronics traceability.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB.jpg"
-      },
-      {
-        "name": "Metals & Ceramics",
-        "headline": "Ultra-High-Temperature Direct-Apply Labels",
-        "desc": "Reliable label materials for extreme-heat and metal processing.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL.jpg"
-      },
-      {
-        "name": "Medical & Laboratory",
-        "headline": "Cryogenic and Chemical-Resistant Identification",
-        "desc": "Cryogenic and chemical-resistant labels for healthcare and laboratories.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL.jpg"
-      },
-      {
-        "name": "Automotive & Tire",
+        "name": "ยานยนต์",
         "headline": "Durable Identification for Automotive and Rubber Processing",
         "desc": "Durable labels for automotive manufacturing and tire traceability.",
         "tags": [],
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
-      },
-      {
-        "name": "Wire & Cable",
-        "headline": "Durable Wire and Cable Identification",
-        "desc": "Durable labels for wire, cable, harness and connector identification.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE.jpg"
-      },
-      {
-        "name": "Outdoor & Energy",
-        "headline": "Weather-Resistant Outdoor Identification",
-        "desc": "Weather-resistant labels for outdoor equipment and energy infrastructure.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR.jpg"
       }
     ],
     "explore": "สำรวจ",
