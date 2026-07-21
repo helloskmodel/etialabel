@@ -8,39 +8,64 @@ Runs AFTER gen_ind_landing so it owns /industries/automotive-label-materials/.""
 import os, json, re
 from urllib.parse import quote
 import gen_heatproof as hp
-from gen_heatproof import esc, L, page, write, LANGS
+from gen_heatproof import esc, L, Lx, page, write, LANGS
 
 _D = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "automotive_apps.json"), encoding="utf-8"))
 APPS = _D["apps"]
 BANNER = _D["banner"]
 PATH = "/industries/automotive-label-materials/"
 AN_HUB = "/application-notes/"   # each application's full write-up lives here
+ALL_LANGS = ["en", "zh", "vi", "th"]   # the automotive sector is fully 4-language
+_LI = {"en": 0, "zh": 1, "vi": 2, "th": 3}
 
 def _an_slug(name): return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
-def _t(lang, en, zh): return zh if lang == "zh" else en
+def _t(lang, en, zh, vi=None, th=None):
+    return {"zh": zh, "vi": vi if vi is not None else en, "th": th if th is not None else en}.get(lang, en)
+def _pk(lang, tup):
+    i = _LI.get(lang, 0)
+    return tup[i] if i < len(tup) else tup[0]
+def _tn(lang, d, base):   # translate an app field with _en/_zh/_vi/_th suffixes
+    return d.get(base + "_" + lang) or d.get(base + "_en", "")
 
-# Shared property vocabulary — same terms as the "By Environment" / "By Feature" nav
-# axes, so translations are authored once and reused across the whole site.
-PROP_ZH = {
- "Abrasion-Resistant": "耐磨", "Chemical-Resistant": "耐化学", "Corrosion-Resistant": "耐腐蚀",
- "Heat-Resistant": "耐热", "High-Temperature-Resistant": "耐高温", "Humidity-Resistant": "耐潮湿",
- "Oil-Resistant": "耐油污", "Temperature-Resistant": "耐温变", "UV-Resistant": "耐紫外",
- "Water-Resistant": "耐水", "Waterproof": "防水", "Weather-Resistant": "耐候", "Laser-Markable": "激光打标",
- "Tamper-Evident": "防拆", "Flexible": "柔性",
+# Shared 4-language property vocabulary — (en, zh, vi, th). Recommendation chip.
+PROP = {
+ "Abrasion-Resistant": ("Abrasion-Resistant","耐磨","Chống mài mòn","ทนการเสียดสี"),
+ "Chemical-Resistant": ("Chemical-Resistant","耐化学","Chống hóa chất","ทนสารเคมี"),
+ "Corrosion-Resistant": ("Corrosion-Resistant","耐腐蚀","Chống ăn mòn","ทนการกัดกร่อน"),
+ "Heat-Resistant": ("Heat-Resistant","耐热","Chịu nhiệt","ทนความร้อน"),
+ "High-Temperature-Resistant": ("High-Temperature-Resistant","耐高温","Chịu nhiệt độ cao","ทนอุณหภูมิสูง"),
+ "Humidity-Resistant": ("Humidity-Resistant","耐潮湿","Chống ẩm","ทนความชื้น"),
+ "Oil-Resistant": ("Oil-Resistant","耐油污","Chống dầu","ทนน้ำมัน"),
+ "Temperature-Resistant": ("Temperature-Resistant","耐温变","Chịu biến thiên nhiệt","ทนการเปลี่ยนอุณหภูมิ"),
+ "UV-Resistant": ("UV-Resistant","耐紫外","Chống tia UV","ทนรังสียูวี"),
+ "Water-Resistant": ("Water-Resistant","耐水","Chống nước","ทนน้ำ"),
+ "Waterproof": ("Waterproof","防水","Chống thấm nước","กันน้ำ"),
+ "Weather-Resistant": ("Weather-Resistant","耐候","Chịu thời tiết","ทนสภาพอากาศ"),
+ "Laser-Markable": ("Laser-Markable","激光打标","Khắc laser được","พิมพ์ด้วยเลเซอร์ได้"),
+ "Tamper-Evident": ("Tamper-Evident","防拆","Chống giả mạo","ป้องกันการงัดแงะ"),
+ "Flexible": ("Flexible","柔性","Linh hoạt","ยืดหยุ่น"),
 }
-# each property (Solution) paired with the challenge (stressor) it answers — one
-# controlled, corresponding vocabulary so Challenge and Solution chips always match.
+# Challenge (stressor) paired to each property — (en, zh, vi, th).
 PROP_CHALLENGE = {
- "Heat-Resistant": ("High Temperature", "高温"), "High-Temperature-Resistant": ("High Temperature", "高温"),
- "Chemical-Resistant": ("Chemicals", "化学品"), "Oil-Resistant": ("Oil / Fluids", "油污"),
- "Humidity-Resistant": ("Moisture", "潮湿"), "UV-Resistant": ("UV Exposure", "紫外线"),
- "Weather-Resistant": ("Weather / Outdoor", "户外候变"), "Abrasion-Resistant": ("Abrasion", "磨损"),
- "Water-Resistant": ("Water", "水"), "Waterproof": ("Water / Rain Exposure", "淋雨/浸水"),
- "Corrosion-Resistant": ("Corrosion", "腐蚀"),
- "Temperature-Resistant": ("Temperature Cycling", "温度变化"), "Tamper-Evident": ("Tamper Risk", "防拆需求"),
- "Laser-Markable": ("Permanent Marking", "永久标识"), "Flexible": ("Flexing / Bending", "弯曲变形"),
+ "Heat-Resistant": ("High Temperature","高温","Nhiệt độ cao","อุณหภูมิสูง"),
+ "High-Temperature-Resistant": ("High Temperature","高温","Nhiệt độ cao","อุณหภูมิสูง"),
+ "Chemical-Resistant": ("Chemicals","化学品","Hóa chất","สารเคมี"),
+ "Oil-Resistant": ("Oil / Fluids","油污","Dầu / chất lỏng","น้ำมัน / ของเหลว"),
+ "Humidity-Resistant": ("Moisture","潮湿","Độ ẩm","ความชื้น"),
+ "UV-Resistant": ("UV Exposure","紫外线","Tia UV","รังสียูวี"),
+ "Weather-Resistant": ("Weather / Outdoor","户外候变","Thời tiết / ngoài trời","สภาพอากาศ / กลางแจ้ง"),
+ "Abrasion-Resistant": ("Abrasion","磨损","Mài mòn","การเสียดสี"),
+ "Water-Resistant": ("Water","水","Nước","น้ำ"),
+ "Waterproof": ("Water / Rain Exposure","淋雨/浸水","Nước / mưa","น้ำ / ฝน"),
+ "Corrosion-Resistant": ("Corrosion","腐蚀","Ăn mòn","การกัดกร่อน"),
+ "Temperature-Resistant": ("Temperature Cycling","温度变化","Chu kỳ nhiệt","การเปลี่ยนอุณหภูมิ"),
+ "Tamper-Evident": ("Tamper Risk","防拆需求","Nguy cơ giả mạo","ความเสี่ยงการงัดแงะ"),
+ "Laser-Markable": ("Permanent Marking","永久标识","Đánh dấu vĩnh viễn","การทำเครื่องหมายถาวร"),
+ "Flexible": ("Flexing / Bending","弯曲变形","Uốn cong","การโค้งงอ"),
 }
+# back-compat: PROP_ZH used by gen_appnotes
+PROP_ZH = {k: v[1] for k, v in PROP.items()}
 
 def _svg(p): return ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">%s</svg>' % p)
 IC_INTRO = _svg('<circle cx="12" cy="12" r="9"/><path d="M12 16v-5M12 8h.01"/>')
@@ -50,20 +75,25 @@ IC_SOL  = _svg('<path d="M12 3 4 6.5v5c0 4.6 3.2 7.7 8 9.5 4.8-1.8 8-4.9 8-9.5v-
 IC_RISK = _svg('<path d="M12 3 4 6.5v5c0 4.6 3.2 7.7 8 9.5 4.8-1.8 8-4.9 8-9.5v-5L12 3z"/><path d="m9.5 9.5 5 5M14.5 9.5l-5 5"/>')
 
 UI = {
- "browse": ("Browse by Application", "按应用浏览"),
- "intro": ("Label Purpose", "标签用途"),
- "products": ("Recommended Products", "推荐产品"),
- "solutions": ("Solutions", "解决方案"),
- "risk": ("Risk of Wrong Label", "用错标签风险"),
- "challenge": ("Challenge", "应用挑战"),
- "recommend": ("Recommendation", "推荐方案"),
- "feature": ("Feature", "特性"), "benefit": ("Benefit", "收益"), "spec": ("Specification", "规格"),
- "distributor": ("Computype — ETIA authorized distributor", "Computype —— ETIA 授权代理"),
- "talk": ("Talk to a Specialist", "咨询专家"),
- "soon": ("Landing page coming soon — talk to a specialist →", "产品页即将上线 —— 咨询专家 →"),
- "eyebrow": ("AUTOMOTIVE · LABEL SOLUTIONS", "汽车 · 标签解决方案"),
+ "browse": ("Browse by Application","按应用浏览","Duyệt theo ứng dụng","เรียกดูตามการใช้งาน"),
+ "products": ("Recommended Products","推荐产品","Sản phẩm đề xuất","ผลิตภัณฑ์แนะนำ"),
+ "challenge": ("Challenge","应用挑战","Thách thức","ความท้าทาย"),
+ "recommend": ("Recommendation","推荐方案","Khuyến nghị","คำแนะนำ"),
+ "feature": ("Feature","特性","Đặc tính","คุณสมบัติ"),
+ "benefit": ("Benefit","收益","Lợi ích","ประโยชน์"),
+ "spec": ("Specification","规格","Thông số","ข้อกำหนด"),
+ "talk": ("Talk to a Specialist","咨询专家","Trao đổi với chuyên gia","ปรึกษาผู้เชี่ยวชาญ"),
+ "details": ("View details","查看详情","Xem chi tiết","ดูรายละเอียด"),
+ "eyebrow": ("AUTOMOTIVE · LABEL SOLUTIONS","汽车 · 标签解决方案","Ô TÔ · GIẢI PHÁP NHÃN","ยานยนต์ · โซลูชันฉลาก"),
+ "name": ("Automotive Label Solutions","汽车标签解决方案","Giải pháp nhãn ô tô","โซลูชันฉลากยานยนต์"),
  "subhead": ("Durable identification across the whole vehicle — engine bay, battery, fuel & charging, interior, exterior and rubber components.",
-             "覆盖整车的耐用标识 —— 发动机舱、电池、燃油与充电、内饰、外饰与橡胶部件。"),
+             "覆盖整车的耐用标识 —— 发动机舱、电池、燃油与充电、内饰、外饰与橡胶部件。",
+             "Nhận diện bền vững trên toàn xe — khoang động cơ, ắc-quy, nhiên liệu & sạc, nội thất, ngoại thất và linh kiện cao su.",
+             "การระบุข้อมูลที่ทนทานทั่วทั้งคัน — ห้องเครื่อง แบตเตอรี่ เชื้อเพลิงและการชาร์จ ภายใน ภายนอก และชิ้นส่วนยาง"),
+ "intro": ("Match each application by environment challenge to the recommended E-LABEL material. Label purpose, risk of the wrong label and full product specifications are covered in Application Notes.",
+           "按每个应用面临的环境挑战,匹配推荐的 E-LABEL 材料。标签用途、用错标签的风险与完整产品规格,详见 Application Notes。",
+           "Ghép mỗi ứng dụng theo thách thức môi trường với vật liệu E-LABEL được đề xuất. Mục đích nhãn, rủi ro dùng sai nhãn và thông số sản phẩm đầy đủ có trong Ghi chú ứng dụng.",
+           "จับคู่แต่ละการใช้งานตามความท้าทายด้านสภาพแวดล้อมกับวัสดุ E-LABEL ที่แนะนำ วัตถุประสงค์ของฉลาก ความเสี่ยงของการใช้ฉลากผิด และข้อกำหนดผลิตภัณฑ์ฉบับเต็มอยู่ในแอปพลิเคชันโน้ต"),
 }
 
 CSS = """<style>
@@ -124,17 +154,12 @@ CSS = """<style>
 </style>""".replace("__BANNER__", BANNER)
 
 def build_sector(lang):
-    zh = (lang == "zh")
-    def H(e, z): return esc(_t(lang, e, z))
-    def U(k): return H(*UI[k])
-    contact = L(lang, "/contact/")
+    def U(k): return esc(_pk(lang, UI[k]))
+    contact = Lx(lang, "/contact/")
     hero = ('<section class="avhero"><div class="wrap"><div class="eyebrow">%s</div>'
             '<h1>%s</h1><p>%s</p><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
-            '</div></section>') % (U("eyebrow"),
-        H("Automotive Label Solutions", "汽车标签解决方案"), H(*UI["subhead"]), contact, U("talk"))
-    overview = ('<section class="blk"><div class="wrap"><div class="avovbody"><p>%s</p></div></div></section>') % H(
-        "Match each application by environment challenge to the recommended E-LABEL material. Label purpose, risk of the wrong label and full product specifications are covered in Application Notes.",
-        "按每个应用面临的环境挑战,匹配推荐的 E-LABEL 材料。标签用途、用错标签的风险与完整产品规格,详见 Application Notes。")
+            '</div></section>') % (U("eyebrow"), U("name"), U("subhead"), contact, U("talk"))
+    overview = ('<section class="blk"><div class="wrap"><div class="avovbody"><p>%s</p></div></div></section>') % U("intro")
     def box_wrap(ic, lbl, col, inner, bg=""):
         return ('<div class="avbox"%s><div class="h"><span class="i" style="color:%s">%s</span>'
                 '<span class="e" style="color:%s">%s</span></div>%s</div>') % (
@@ -143,36 +168,34 @@ def build_sector(lang):
         return '<div class="avchips">%s</div>' % "".join('<span class="avchip %s">%s</span>' % (cls, esc(x)) for x in items)
     tabs = ""; panels = ""
     for i, a in enumerate(APPS):
-        name = _t(lang, a["name_en"], a["name_zh"])
+        name = _tn(lang, a, "name")
         tabs += '<button class="avtab%s" onclick="avTab(this,%d)">%s</button>' % (
             " on" if i == 0 else "", i, esc(name))
         # Two compact keyword cards — Challenge (environment) -> Recommendation (material).
-        # Both use the shared controlled vocabulary; Purpose / Risk / full Solution live in
-        # Application Notes. Recommendation card also names the matched E-LABEL model(s).
         seen = set(); ch_items = []
         for pr in a.get("props", []):
             pair = PROP_CHALLENGE.get(pr)
             if pair and pair[0] not in seen:
-                seen.add(pair[0]); ch_items.append(_t(lang, pair[0], pair[1]))
-        rec_items = [_t(lang, pr, PROP_ZH.get(pr, pr)) for pr in a.get("props", [])]
+                seen.add(pair[0]); ch_items.append(_pk(lang, pair))
+        rec_items = [_pk(lang, PROP[pr]) if pr in PROP else pr for pr in a.get("props", [])]
         box = '<div class="av2">%s%s</div>' % (
             box_wrap(IC_CHAL, U("challenge"), "#c2621f", chips(ch_items, "ch")),
             box_wrap(IC_SOL, U("recommend"), "var(--green-d)", chips(rec_items, "so"), bg="#f4f9f2"))
-        # matched product card(s) UNDER the two keyword cards — model + Feature/Benefit/Spec,
-        # link to the Application Note only where one is published; otherwise to Contact.
+        # matched product card(s) — model + Feature/Benefit/Spec (spec text stays English
+        # for vi/th for now). Link to the Application Note where published, else Contact.
         has_note = bool(a.get("note"))
-        art = L(lang, (AN_HUB + _an_slug(a["name_en"]) + "/") if has_note else "/contact/")
-        go = (H("View details", "查看详情") + " →") if has_note else (H("Talk to a Specialist", "咨询专家") + " →")
+        art = Lx(lang, (AN_HUB + _an_slug(a["name_en"]) + "/") if has_note else "/contact/")
+        go = (U("details") + " →") if has_note else (U("talk") + " →")
         cards = ""
         for pr in a.get("products", []):
             brand = pr.get("brand", "E-Label")
             if brand == "Computype":
                 continue
             rows = ""
-            for key, lab in (("feature", "feature"), ("benefit", "benefit"), ("spec", "spec")):
+            for key in ("feature", "benefit", "spec"):
                 val = _t(lang, pr.get(key + "_en", ""), pr.get(key + "_zh", ""))
                 if val:
-                    rows += '<div class="sp"><span>%s</span>%s</div>' % (U(lab), esc(val))
+                    rows += '<div class="sp"><span>%s</span>%s</div>' % (U(key), esc(val))
             cards += ('<a class="avplc" href="%s"><span class="avbrand">%s</span>'
                       '<div class="t">%s</div>%s<div class="go">%s</div></a>') % (
                 art, esc("E-LABEL" if brand == "E-Label" else brand.upper()),
@@ -189,20 +212,22 @@ def build_sector(lang):
            '<div class="avtabsrow"><button class="avarrow" onclick="avScroll(this,-1)">&lsaquo;</button>'
            '<div class="avtabs">%s</div><button class="avarrow" onclick="avScroll(this,1)">&rsaquo;</button></div>'
            '%s</div></div></section>%s') % (U("browse"), tabs, panels, js)
-    body = CSS + overview + mod + ('<div class="wrap">%s</div>' % hp.cta2(lang, "applications"))
-    crumb = [("Home" if not zh else "首页", "/"), ("Industries" if not zh else "行业", "/industries/"),
-             (_t(lang, "Automotive Label Solutions", "汽车标签解决方案"), PATH)]
-    write(lang, PATH, page(lang, PATH,
-        _t(lang, "Automotive Label Solutions — Durable Vehicle Labels | ETIA",
-                 "汽车标签解决方案 —— 耐用整车标签 | ETIA"),
-        _t(lang, "Durable automotive label materials across the vehicle — engine bay, battery, fuel & charging, interior, exterior and rubber components.",
-                 "覆盖整车各应用的耐用汽车标签材料 —— 发动机舱、电池、燃油与充电、内饰、外饰与橡胶部件。"),
-        _t(lang, "Automotive Label Solutions", "汽车标签解决方案"), "", body, crumb, active="", hero=hero))
+    body = CSS + overview + mod + ('<div class="wrap">%s</div>' % hp.cta2(lang, "applications", hp.Lx))
+    home = _t(lang, "Home", "首页", "Trang chủ", "หน้าแรก")
+    inds = _t(lang, "Industries", "行业", "Ngành", "อุตสาหกรรม")
+    sname = _pk(lang, UI["name"])
+    crumb = [(home, "/"), (inds, "/industries/"), (sname, PATH)]
+    title = _t(lang, "Automotive Label Solutions — Durable Vehicle Labels | ETIA",
+                     "汽车标签解决方案 —— 耐用整车标签 | ETIA",
+                     "Giải pháp nhãn ô tô — Nhãn xe bền vững | ETIA",
+                     "โซลูชันฉลากยานยนต์ — ฉลากรถที่ทนทาน | ETIA")
+    write(lang, PATH, page(lang, PATH, title, _pk(lang, UI["subhead"]),
+        sname, "", body, crumb, active="", hero=hero, langs=ALL_LANGS))
     if lang == "en": hp.track(PATH, "industries")
 
 URLS = [PATH]
 def main():
-    for lang in LANGS:
+    for lang in ALL_LANGS:
         build_sector(lang)
 
 if __name__ == "__main__":
