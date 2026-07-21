@@ -274,7 +274,7 @@
     "nav": [
       "Sản phẩm",
       "Ngành",
-      "Application Notes",
+      "Ghi chú ứng dụng",
       "Dịch vụ"
     ],
     "hero_eyebrow": "NHẬN DIỆN BỀN VỮNG · VẬT LIỆU NHÃN CHUYÊN DỤNG",
@@ -288,20 +288,20 @@
     "why_intro": "",
     "why": [
       [
-        "We Understand the Application",
-        "We evaluate the process, environment, and performance requirements before recommending a material."
+        "Chúng tôi hiểu ứng dụng",
+        "Chúng tôi đánh giá quy trình, môi trường và yêu cầu hiệu suất trước khi đề xuất vật liệu."
       ],
       [
-        "We Know Specialty Materials",
-        "We combine deep material expertise with a global portfolio of high-performance label materials."
+        "Chúng tôi am hiểu vật liệu chuyên dụng",
+        "Chúng tôi kết hợp chuyên môn sâu về vật liệu với danh mục vật liệu nhãn hiệu suất cao trên toàn cầu."
       ],
       [
-        "We Supply with Flexibility",
-        "We support multiple materials, varied specifications, small batches, and dependable repeat supply."
+        "Chúng tôi cung ứng linh hoạt",
+        "Chúng tôi hỗ trợ nhiều loại vật liệu, quy cách đa dạng, lô nhỏ và nguồn cung lặp lại ổn định."
       ],
       [
-        "We Customize a Solution",
-        "We provide testing, inspection, slitting, die-cutting, and converting tailored to the application."
+        "Chúng tôi tùy chỉnh giải pháp",
+        "Chúng tôi cung cấp thử nghiệm, kiểm tra, xẻ cuộn, bế và gia công theo từng ứng dụng."
       ]
     ],
     "appc_eyebrow": "TRUNG TÂM ỨNG DỤNG",
@@ -311,15 +311,15 @@
     "focus": [
       {
         "name": "Ô tô",
-        "headline": "Durable Identification for Automotive and Rubber Processing",
-        "desc": "Durable labels for automotive manufacturing and tire traceability.",
+        "headline": "Nhận diện bền vững cho sản xuất ô tô và cao su",
+        "desc": "Nhãn bền cho sản xuất ô tô và truy xuất nguồn gốc lốp xe.",
         "tags": [],
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
       }
     ],
     "explore": "Khám phá",
-    "fcta_title": "Need a Helping Hand?",
-    "fcta_para": "We can label for you. Tell us your surface, process, environment and identification requirements — we'll match the material and arrange samples.",
+    "fcta_title": "Cần chúng tôi hỗ trợ?",
+    "fcta_para": "Chúng tôi có thể làm nhãn cho bạn. Hãy cho biết bề mặt, quy trình, môi trường và yêu cầu nhận diện — chúng tôi sẽ chọn vật liệu phù hợp và chuẩn bị mẫu.",
     "fcta_b1": "Trao đổi với chuyên gia nhãn",
     "fcta_b2": "Yêu cầu mẫu",
     "footer_heads": [
@@ -331,75 +331,75 @@
     "meta_desc": "Vật liệu nhãn bền vững, chuyên dụng, được kết hợp theo ứng dụng của bạn — từ siêu lạnh và nhiệt độ cao đến hóa chất, chống giả mạo và nhận diện PCB.",
     "svc": [
       {
-        "title": "100% Quality Inspection",
-        "desc": "Backed by in-house laboratory testing, production verification, final inspection, and retained samples for full traceability."
+        "title": "Kiểm tra chất lượng 100%",
+        "desc": "Được đảm bảo bằng thử nghiệm phòng lab nội bộ, kiểm định sản xuất, kiểm tra cuối và lưu mẫu để truy xuất đầy đủ."
       },
       {
-        "title": "Application-Driven Solutions",
-        "desc": "Materials selected around your process, environment, and performance requirements."
+        "title": "Giải pháp theo ứng dụng",
+        "desc": "Vật liệu được lựa chọn xoay quanh quy trình, môi trường và yêu cầu hiệu suất của bạn."
       },
       {
-        "title": "Flexible Supply",
-        "desc": "Multiple materials, varied specifications, sample quantities, and small-batch production."
+        "title": "Cung ứng linh hoạt",
+        "desc": "Nhiều loại vật liệu, quy cách đa dạng, số lượng mẫu và sản xuất lô nhỏ."
       },
       {
-        "title": "Responsive Application Support",
-        "desc": "When production conditions change or application issues arise, our engineers respond quickly to help keep your production running."
+        "title": "Hỗ trợ ứng dụng kịp thời",
+        "desc": "Khi điều kiện sản xuất thay đổi hoặc phát sinh vấn đề ứng dụng, đội ngũ kỹ sư của chúng tôi phản hồi nhanh để giúp duy trì sản xuất."
       }
     ],
     "why_close": "",
-    "prod_eyebrow": "REQUEST SAMPLES",
-    "prod_title": "Request Product Samples",
-    "prod_sub": "Tell us your application — we'll recommend a material and arrange samples for evaluation.",
-    "prod_cta": "Talk to a Specialist",
+    "prod_eyebrow": "YÊU CẦU MẪU",
+    "prod_title": "Yêu cầu mẫu sản phẩm",
+    "prod_sub": "Hãy cho biết ứng dụng của bạn — chúng tôi sẽ đề xuất vật liệu và chuẩn bị mẫu để đánh giá.",
+    "prod_cta": "Trao đổi với chuyên gia",
     "products": [
       {
-        "name": "Direct Hot-Application Labels",
-        "model": "Application temperature up to 900°C",
+        "name": "Nhãn dán trực tiếp khi nóng",
+        "model": "Nhiệt độ ứng dụng đến 900°C",
         "code": "HP-900",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900"
       },
       {
-        "name": "Low Temperature Label",
-        "model": "Cryo direct apply and long-term nitrogen storage",
+        "name": "Nhãn nhiệt độ thấp",
+        "model": "Dán trực tiếp siêu lạnh và lưu trữ nitơ dài hạn",
         "code": "E-4812",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E4812"
       },
       {
-        "name": "Polyimide PCB Labels — APEX",
-        "model": "Heat resistant up to 300°C",
+        "name": "Nhãn PCB polyimide — APEX",
+        "model": "Chịu nhiệt đến 300°C",
         "code": "XF-101G",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF101G"
       },
       {
-        "name": "Heavy-Duty Oil-Resistant Labels",
-        "model": "High-adhesion, oil-resistant",
+        "name": "Nhãn chống dầu chịu tải nặng",
+        "model": "Độ bám cao, chống dầu",
         "code": "E-2813",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2813"
       },
       {
-        "name": "Dual-Layer ESD-Safe PCB Labels",
-        "model": "ESD-safe construction",
+        "name": "Nhãn PCB chống tĩnh điện hai lớp",
+        "model": "Cấu tạo an toàn ESD",
         "code": "E-2712",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2712"
       }
     ],
-    "fs_eyebrow": "FREE SAMPLE",
-    "fs_title": "Request Free Samples",
-    "fs_sub": "Request free samples of any material above — leave your email, phone and mailing address, and we'll send them for evaluation.",
+    "fs_eyebrow": "MẪU MIỄN PHÍ",
+    "fs_title": "Yêu cầu mẫu miễn phí",
+    "fs_sub": "Yêu cầu mẫu miễn phí của bất kỳ vật liệu nào ở trên — để lại email, số điện thoại và địa chỉ nhận hàng, chúng tôi sẽ gửi mẫu để đánh giá.",
     "fs_email": "Email",
-    "fs_phone": "Phone",
-    "fs_addr": "Mailing address",
-    "fs_btn": "Request Free Sample",
-    "fs_note": "We reply within one business day.",
-    "sc_eyebrow": "SERVICE COMMITMENT",
-    "sc_title": "Our Service Commitment"
+    "fs_phone": "Số điện thoại",
+    "fs_addr": "Địa chỉ nhận hàng",
+    "fs_btn": "Yêu cầu mẫu miễn phí",
+    "fs_note": "Chúng tôi phản hồi trong vòng một ngày làm việc.",
+    "sc_eyebrow": "CAM KẾT DỊCH VỤ",
+    "sc_title": "Cam kết dịch vụ của chúng tôi"
   },
   "th": {
     "nav": [
       "ผลิตภัณฑ์",
       "อุตสาหกรรม",
-      "Application Notes",
+      "แอปพลิเคชันโน้ต",
       "บริการ"
     ],
     "hero_eyebrow": "ระบบระบุข้อมูลที่ทนทาน · วัสดุฉลากเฉพาะทาง",
@@ -413,20 +413,20 @@
     "why_intro": "",
     "why": [
       [
-        "We Understand the Application",
-        "We evaluate the process, environment, and performance requirements before recommending a material."
+        "เราเข้าใจการใช้งาน",
+        "เราประเมินกระบวนการ สภาพแวดล้อม และข้อกำหนดด้านสมรรถนะ ก่อนแนะนำวัสดุ"
       ],
       [
-        "We Know Specialty Materials",
-        "We combine deep material expertise with a global portfolio of high-performance label materials."
+        "เราเชี่ยวชาญวัสดุเฉพาะทาง",
+        "เราผสานความเชี่ยวชาญด้านวัสดุเข้ากับพอร์ตวัสดุฉลากสมรรถนะสูงระดับสากล"
       ],
       [
-        "We Supply with Flexibility",
-        "We support multiple materials, varied specifications, small batches, and dependable repeat supply."
+        "เราจัดหาอย่างยืดหยุ่น",
+        "เรารองรับวัสดุหลากหลาย ข้อกำหนดที่แตกต่าง การผลิตล็อตเล็ก และการจัดส่งซ้ำที่เชื่อถือได้"
       ],
       [
-        "We Customize a Solution",
-        "We provide testing, inspection, slitting, die-cutting, and converting tailored to the application."
+        "เราปรับแต่งโซลูชัน",
+        "เราให้บริการทดสอบ ตรวจสอบ กรีด ปั๊มขึ้นรูป และแปรรูปตามการใช้งาน"
       ]
     ],
     "appc_eyebrow": "ศูนย์รวมการใช้งาน",
@@ -436,15 +436,15 @@
     "focus": [
       {
         "name": "ยานยนต์",
-        "headline": "Durable Identification for Automotive and Rubber Processing",
-        "desc": "Durable labels for automotive manufacturing and tire traceability.",
+        "headline": "การระบุข้อมูลที่ทนทานสำหรับการผลิตยานยนต์และยาง",
+        "desc": "ฉลากที่ทนทานสำหรับการผลิตยานยนต์และการตรวจสอบย้อนกลับของยาง",
         "tags": [],
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
       }
     ],
     "explore": "สำรวจ",
-    "fcta_title": "Need a Helping Hand?",
-    "fcta_para": "We can label for you. Tell us your surface, process, environment and identification requirements — we'll match the material and arrange samples.",
+    "fcta_title": "ต้องการให้เราช่วยไหม?",
+    "fcta_para": "เราทำฉลากให้คุณได้ บอกเราถึงพื้นผิว กระบวนการ สภาพแวดล้อม และข้อกำหนดการระบุข้อมูล แล้วเราจะจับคู่วัสดุและจัดเตรียมตัวอย่างให้",
     "fcta_b1": "ปรึกษาผู้เชี่ยวชาญด้านฉลาก",
     "fcta_b2": "ขอตัวอย่าง",
     "footer_heads": [
@@ -456,68 +456,68 @@
     "meta_desc": "วัสดุฉลากที่ทนทานและเฉพาะทาง เลือกให้เหมาะกับการใช้งานของคุณ — ตั้งแต่อุณหภูมิต่ำมากและความร้อนสูง ไปจนถึงสารเคมี การป้องกันการปลอมแปลง และการระบุ PCB",
     "svc": [
       {
-        "title": "100% Quality Inspection",
-        "desc": "Backed by in-house laboratory testing, production verification, final inspection, and retained samples for full traceability."
+        "title": "การตรวจสอบคุณภาพ 100%",
+        "desc": "รองรับด้วยการทดสอบในห้องปฏิบัติการภายใน การตรวจสอบการผลิต การตรวจขั้นสุดท้าย และการเก็บตัวอย่างเพื่อการตรวจสอบย้อนกลับอย่างครบถ้วน"
       },
       {
-        "title": "Application-Driven Solutions",
-        "desc": "Materials selected around your process, environment, and performance requirements."
+        "title": "โซลูชันที่ขับเคลื่อนด้วยการใช้งาน",
+        "desc": "วัสดุที่คัดเลือกตามกระบวนการ สภาพแวดล้อม และข้อกำหนดด้านสมรรถนะของคุณ"
       },
       {
-        "title": "Flexible Supply",
-        "desc": "Multiple materials, varied specifications, sample quantities, and small-batch production."
+        "title": "การจัดหาที่ยืดหยุ่น",
+        "desc": "วัสดุหลากหลาย ข้อกำหนดที่แตกต่าง จำนวนตัวอย่าง และการผลิตล็อตเล็ก"
       },
       {
-        "title": "Responsive Application Support",
-        "desc": "When production conditions change or application issues arise, our engineers respond quickly to help keep your production running."
+        "title": "การสนับสนุนการใช้งานที่ตอบสนองรวดเร็ว",
+        "desc": "เมื่อสภาวะการผลิตเปลี่ยนแปลงหรือเกิดปัญหาการใช้งาน วิศวกรของเราตอบสนองอย่างรวดเร็วเพื่อช่วยให้การผลิตดำเนินต่อไป"
       }
     ],
     "why_close": "",
-    "prod_eyebrow": "REQUEST SAMPLES",
-    "prod_title": "Request Product Samples",
-    "prod_sub": "Tell us your application — we'll recommend a material and arrange samples for evaluation.",
-    "prod_cta": "Talk to a Specialist",
+    "prod_eyebrow": "ขอตัวอย่าง",
+    "prod_title": "ขอตัวอย่างผลิตภัณฑ์",
+    "prod_sub": "บอกเราถึงการใช้งานของคุณ แล้วเราจะแนะนำวัสดุและจัดเตรียมตัวอย่างเพื่อประเมิน",
+    "prod_cta": "ปรึกษาผู้เชี่ยวชาญ",
     "products": [
       {
-        "name": "Direct Hot-Application Labels",
-        "model": "Application temperature up to 900°C",
+        "name": "ฉลากติดขณะร้อนโดยตรง",
+        "model": "อุณหภูมิใช้งานสูงถึง 900°C",
         "code": "HP-900",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900"
       },
       {
-        "name": "Low Temperature Label",
-        "model": "Cryo direct apply and long-term nitrogen storage",
+        "name": "ฉลากอุณหภูมิต่ำ",
+        "model": "ติดโดยตรงในสภาวะเย็นจัดและจัดเก็บในไนโตรเจนระยะยาว",
         "code": "E-4812",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E4812"
       },
       {
-        "name": "Polyimide PCB Labels — APEX",
-        "model": "Heat resistant up to 300°C",
+        "name": "ฉลาก PCB โพลีอิไมด์ — APEX",
+        "model": "ทนความร้อนสูงถึง 300°C",
         "code": "XF-101G",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF101G"
       },
       {
-        "name": "Heavy-Duty Oil-Resistant Labels",
-        "model": "High-adhesion, oil-resistant",
+        "name": "ฉลากทนน้ำมันสำหรับงานหนัก",
+        "model": "ยึดเกาะสูง ทนน้ำมัน",
         "code": "E-2813",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2813"
       },
       {
-        "name": "Dual-Layer ESD-Safe PCB Labels",
-        "model": "ESD-safe construction",
+        "name": "ฉลาก PCB ป้องกันไฟฟ้าสถิตสองชั้น",
+        "model": "โครงสร้างปลอดภัยต่อ ESD",
         "code": "E-2712",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2712"
       }
     ],
-    "fs_eyebrow": "FREE SAMPLE",
-    "fs_title": "Request Free Samples",
-    "fs_sub": "Request free samples of any material above — leave your email, phone and mailing address, and we'll send them for evaluation.",
-    "fs_email": "Email",
-    "fs_phone": "Phone",
-    "fs_addr": "Mailing address",
-    "fs_btn": "Request Free Sample",
-    "fs_note": "We reply within one business day.",
-    "sc_eyebrow": "SERVICE COMMITMENT",
-    "sc_title": "Our Service Commitment"
+    "fs_eyebrow": "ตัวอย่างฟรี",
+    "fs_title": "ขอตัวอย่างฟรี",
+    "fs_sub": "ขอตัวอย่างฟรีของวัสดุใดก็ได้ด้านบน ทิ้งอีเมล เบอร์โทร และที่อยู่จัดส่ง แล้วเราจะส่งไปให้ประเมิน",
+    "fs_email": "อีเมล",
+    "fs_phone": "โทรศัพท์",
+    "fs_addr": "ที่อยู่จัดส่ง",
+    "fs_btn": "ขอตัวอย่างฟรี",
+    "fs_note": "เราตอบกลับภายในหนึ่งวันทำการ",
+    "sc_eyebrow": "คำมั่นด้านบริการ",
+    "sc_title": "คำมั่นด้านบริการของเรา"
   }
 }

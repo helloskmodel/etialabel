@@ -469,8 +469,16 @@ def products_dropdown(lang, linkfn):
     """Left-anchored cascading flyout: col1 axes -> col2 items -> col3 sub-items.
     Items carrying a 4th element (a list of children) render a chevron and open col3."""
     zh = (lang == "zh")
-    lab = lambda e, z: z if zh else e
-    top = "产品" if zh else "Products"
+    # vi/th labels for the small set of menu strings (fall back to EN otherwise)
+    MENU_VITH = {"By Industry": ("Theo ngành", "ตามอุตสาหกรรม"),
+                 "Automotive": ("Ô tô", "ยานยนต์")}
+    def lab(e, z):
+        if zh: return z
+        if lang == "vi" and e in MENU_VITH: return MENU_VITH[e][0]
+        if lang == "th" and e in MENU_VITH: return MENU_VITH[e][1]
+        return e
+    def pick(en, zh_, vi, th): return {"zh": zh_, "vi": vi, "th": th}.get(lang, en)
+    top = pick("Products", "产品", "Sản phẩm", "ผลิตภัณฑ์")
     rail = ""; mids = ""; subs = ""
     for i, (key, he, hz, items) in enumerate(PROD_AXES):
         on = " on" if i == 0 else ""
@@ -488,7 +496,7 @@ def products_dropdown(lang, linkfn):
                              '%s<span class="axl">%s</span><span class="chev">&rsaquo;</span></button>') % (
                     sid, sid, icon, esc(lab(e, z)))
                 sublinks = '<a class="suball" href="%s">%s</a>' % (
-                    linkfn(u), esc(("查看全部 →" if zh else "View all →")))
+                    linkfn(u), esc(pick("View all →", "查看全部 →", "Xem tất cả →", "ดูทั้งหมด →")))
                 sublinks += "".join('<a href="%s">%s</a>' % (linkfn(cu), esc(lab(ce, cz))) for ce, cz, cu in kids)
                 subs += '<div class="subgroup" data-sub="%s" style="display:none">%s</div>' % (sid, sublinks)
             else:
@@ -497,7 +505,10 @@ def products_dropdown(lang, linkfn):
         mids += '<div class="midgroup" data-mid="%s" style="display:%s">%s</div>' % (
             key, "flex" if i == 0 else "none", midlinks)
     subs += ('<div class="subgroup subph" data-sub="" style="display:flex"><div class="subempty">%s</div></div>') % (
-        "将鼠标移到左侧类别上，查看其产品系列。" if zh else "Hover a category on the left to see its product lines.")
+        pick("Hover a category on the left to see its product lines.",
+             "将鼠标移到左侧类别上，查看其产品系列。",
+             "Di chuột vào một danh mục bên trái để xem các dòng sản phẩm.",
+             "วางเมาส์บนหมวดหมู่ทางซ้ายเพื่อดูสายผลิตภัณฑ์"))
     return ('<div class="nd ndwide" onmouseenter="etaOpen(this)" onmouseleave="etaClose(this)">'
             '<a class="ndt" href="%s">%s <span class="caret">&#9662;</span></a>'
             '<div class="ndm pm">'
@@ -558,27 +569,45 @@ Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)"
 TRUST_TITLES = {
  "en":["100% Quality Inspection","Application-Driven Solutions","Flexible Supply","Responsive Application Support"],
  "zh":["100% 质量检测","应用驱动方案","柔性供应","及时应用支持"],
+ "vi":["Kiểm tra chất lượng 100%","Giải pháp theo ứng dụng","Cung ứng linh hoạt","Hỗ trợ ứng dụng kịp thời"],
+ "th":["การตรวจสอบคุณภาพ 100%","โซลูชันที่ขับเคลื่อนด้วยการใช้งาน","การจัดหาที่ยืดหยุ่น","การสนับสนุนการใช้งานที่ตอบสนองรวดเร็ว"],
 }
 def trust_bar(lang):
     items="".join('<div class="ti">%s</div>'%esc(t) for t in TRUST_TITLES.get(lang, TRUST_TITLES["en"]))
     return '<section class="trustbar"><div class="wrap">%s</div></section>' % items
 
+CTA_I18N = {
+ "en": ("Start with the Application. Finish with the Right Material.",
+        "Tell us the surface, temperature, chemistry and print method — we'll recommend the material and arrange samples.",
+        "Talk to a Specialist", "Talk to an Engineer"),
+ "zh": ("始于应用。终于选对材料。",
+        "告知表面、温度、化学环境与打印方式,我们推荐材料并安排样品验证。",
+        "咨询专家", "咨询工程师"),
+ "vi": ("Bắt đầu từ ứng dụng. Kết thúc bằng đúng vật liệu.",
+        "Hãy cho biết bề mặt, nhiệt độ, môi trường hóa chất và phương pháp in — chúng tôi sẽ đề xuất vật liệu và chuẩn bị mẫu.",
+        "Trao đổi với chuyên gia", "Trao đổi với kỹ sư"),
+ "th": ("เริ่มจากการใช้งาน จบด้วยวัสดุที่ถูกต้อง",
+        "บอกเราถึงพื้นผิว อุณหภูมิ สภาพแวดล้อมทางเคมี และวิธีการพิมพ์ แล้วเราจะแนะนำวัสดุและจัดเตรียมตัวอย่าง",
+        "ปรึกษาผู้เชี่ยวชาญ", "ปรึกษาวิศวกร"),
+}
 def cta(lang):
-    if lang == "zh":
-        return """<div class="cta"><div class="ic">⚡</div><h3>始于应用。终于选对材料。</h3>
-<p>告知表面、温度、化学环境与打印方式,我们推荐材料并安排样品验证。</p>
-<div class="btns"><a class="btn pri" href="%s">咨询专家</a><a class="btn on-dark" href="%s">咨询工程师</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
-    return """<div class="cta"><div class="ic">⚡</div><h3>Start with the Application. Finish with the Right Material.</h3>
-<p>Tell us the surface, temperature, chemistry and print method — we'll recommend the material and arrange samples.</p>
-<div class="btns"><a class="btn pri" href="%s">Talk to a Specialist</a><a class="btn on-dark" href="%s">Talk to an Engineer</a></div></div>""" % (L(lang,"/contact/"), L(lang,"/contact/"))
+    h, p, b1, b2 = CTA_I18N.get(lang, CTA_I18N["en"])
+    u = L(lang, "/contact/")
+    return ('<div class="cta"><div class="ic">⚡</div><h3>%s</h3><p>%s</p>'
+            '<div class="btns"><a class="btn pri" href="%s">%s</a>'
+            '<a class="btn on-dark" href="%s">%s</a></div></div>') % (
+        esc(h), esc(p), u, esc(b1), u, esc(b2))
 
 # Per-page bottom CTA (question headline + <=2 sentences + primary + secondary).
 CTAS = {
- "home": {"h": ("We Can Label for You.", "标签，我们为您来做。"),
+ "home": {"h": ("We Can Label for You.", "标签，我们为您来做。",
+                "Chúng tôi có thể làm nhãn cho bạn.", "เราทำฉลากให้คุณได้"),
    "body": ("Tell us about the surface, temperature, chemical exposure, printing method, and expected service life. Our team will help you narrow down the right material and prepare samples for evaluation.",
-            "告诉我们贴附表面、温度、化学暴露、打印方式与预期使用寿命，我们的团队将帮您缩小材料范围并准备样品供评估。"),
-   "b1": ("Talk to a Specialist", "咨询专家"), "b1u": "/contact/",
-   "b2": ("Send Us Your Requirements", "提交您的需求"), "b2u": "/contact/"},
+            "告诉我们贴附表面、温度、化学暴露、打印方式与预期使用寿命，我们的团队将帮您缩小材料范围并准备样品供评估。",
+            "Hãy cho biết bề mặt, nhiệt độ, môi trường hóa chất, phương pháp in và tuổi thọ dự kiến. Đội ngũ của chúng tôi sẽ giúp bạn khoanh vùng vật liệu phù hợp và chuẩn bị mẫu để đánh giá.",
+            "บอกเราถึงพื้นผิว อุณหภูมิ การสัมผัสสารเคมี วิธีการพิมพ์ และอายุการใช้งานที่คาดหวัง ทีมของเราจะช่วยคัดกรองวัสดุที่เหมาะสมและเตรียมตัวอย่างเพื่อประเมิน"),
+   "b1": ("Talk to a Specialist", "咨询专家", "Trao đổi với chuyên gia", "ปรึกษาผู้เชี่ยวชาญ"), "b1u": "/contact/",
+   "b2": ("Send Us Your Requirements", "提交您的需求", "Gửi yêu cầu của bạn", "ส่งข้อกำหนดของคุณ"), "b2u": "/contact/"},
  "products": {"h": ("Need Help Comparing Materials?", "需要帮助比较材料？"),
    "body": ("Share your performance requirements and preferred construction. We will help you compare suitable material options based on temperature, surface, adhesive, printing, and durability needs.",
             "告诉我们您的性能要求与倾向的材料结构，我们将根据温度、表面、胶粘剂、打印与耐久性需求，帮您比较合适的材料选项。"),
@@ -617,8 +646,9 @@ CTAS = {
 }
 
 def cta2(lang, kind, linkfn=L):
-    zh = (lang == "zh"); c = CTAS.get(kind, CTAS["home"])
-    pk = lambda t: t[1] if zh else t[0]
+    c = CTAS.get(kind, CTAS["home"])
+    li = {"en": 0, "zh": 1, "vi": 2, "th": 3}.get(lang, 0)
+    pk = lambda t: t[li] if li < len(t) else t[0]
     return ('<div class="cta cta-q"><h3>%s</h3><p>%s</p>'
             '<div class="btns"><a class="btn pri" href="%s">%s</a>'
             '<a class="btn on-dark" href="%s">%s</a></div></div>') % (
@@ -1152,6 +1182,62 @@ HOME2 = {
     "sub": "贯穿项目每一阶段的切实支持。",
     "body": "从应用评估、样品验证，到实验室检测、加工成型、质量检验与持续供应，ETIA 帮助制造商从选型稳步走向量产。",
     "b1": "咨询材料专家", "b1u": "/contact/", "b2": "咨询专家", "b2u": "/contact/"},
+  ]},
+ "vi": {
+  "hero": {"eyebrow": "NHẬN DIỆN BỀN VỮNG · VẬT LIỆU NHÃN CHUYÊN DỤNG",
+           "h1": "Nơi vật liệu đáp ứng đúng ứng dụng.",
+           "line": "Mỗi ứng dụng khắt khe đều bắt đầu từ việc chọn đúng vật liệu.",
+           "body": "Hơn 20 năm qua, ETIA đã giúp các nhà sản xuất giải quyết những thách thức nhận diện phức tạp bằng vật liệu chuyên dụng, chuyên môn ứng dụng và nguồn cung linh hoạt.",
+           "b1": "Khám phá giải pháp", "b2": "Trao đổi với chuyên gia"},
+  "sections": [
+   {"eyebrow": "VẬT LIỆU NHÃN CHUYÊN DỤNG · CẤU TRÚC KỸ THUẬT",
+    "h2": "Vật liệu cho những điều kiện khắt khe.",
+    "sub": "Cấu trúc phù hợp bắt đầu từ yêu cầu hiệu suất rõ ràng.",
+    "body": "Khám phá vật liệu nhãn chuyên dụng cho nhiệt độ cao, lưu trữ siêu lạnh, tiếp xúc hóa chất, độ bền ngoài trời, bề mặt khó dán và nhận diện công nghiệp dài hạn.",
+    "b1": "Khám phá vật liệu", "b1u": "/products/", "b2": "Yêu cầu hỗ trợ vật liệu", "b2u": "/contact/"},
+   {"eyebrow": "NGÀNH · QUY TRÌNH · ĐIỀU KIỆN VẬN HÀNH",
+    "h2": "Xây dựng xoay quanh ứng dụng.",
+    "sub": "Mỗi môi trường là một thách thức nhận diện khác nhau.",
+    "body": "Khám phá các ghi chú ứng dụng được xây dựng từ bề mặt, nhiệt độ, hóa chất, phương pháp in, quy trình và yêu cầu tuổi thọ thực tế.",
+    "b1": "Khám phá ứng dụng", "b1u": "/products/", "b2": "Trao đổi về ứng dụng", "b2u": "/contact/"},
+   {"eyebrow": "HƯỚNG DẪN KỸ THUẬT · KIẾN THỨC VẬT LIỆU · NGHIÊN CỨU TÌNH HUỐNG",
+    "h2": "Hiểu vật liệu. Học từ ứng dụng.",
+    "sub": "Kiến thức thực tiễn cho những quyết định nhận diện tốt hơn.",
+    "body": "Khám phá hướng dẫn kỹ thuật, kinh nghiệm chọn vật liệu, thử nghiệm hiệu suất, lưu ý khi in và các tình huống thực tế.",
+    "b1": "Đọc ghi chú ứng dụng", "b1u": "/application-notes/", "b2": "Xem nghiên cứu tình huống", "b2u": "/products/"},
+   {"eyebrow": "HỖ TRỢ ỨNG DỤNG · THỬ NGHIỆM · CUNG ỨNG LINH HOẠT",
+    "h2": "Đồng hành từ chọn vật liệu đến cung ứng dài hạn.",
+    "sub": "Hỗ trợ thiết thực xuyên suốt mọi giai đoạn của dự án.",
+    "body": "Từ đánh giá ứng dụng, thử mẫu, đến thử nghiệm phòng lab, gia công, kiểm tra chất lượng và cung ứng lặp lại, ETIA giúp nhà sản xuất tự tin đi từ lựa chọn đến sản xuất.",
+    "b1": "Trao đổi với chuyên gia vật liệu", "b1u": "/contact/", "b2": "Trao đổi với chuyên gia", "b2u": "/contact/"},
+  ]},
+ "th": {
+  "hero": {"eyebrow": "ระบบระบุข้อมูลที่ทนทาน · วัสดุฉลากเฉพาะทาง",
+           "h1": "จุดที่วัสดุตอบโจทย์การใช้งานจริง",
+           "line": "ทุกการใช้งานที่ท้าทายเริ่มต้นจากการเลือกวัสดุที่ถูกต้อง",
+           "body": "ตลอดกว่า 20 ปี ETIA ช่วยผู้ผลิตแก้ปัญหาการระบุข้อมูลที่ซับซ้อน ด้วยวัสดุเฉพาะทาง ความเชี่ยวชาญด้านการใช้งาน และการจัดหาที่ยืดหยุ่น",
+           "b1": "สำรวจโซลูชัน", "b2": "ปรึกษาผู้เชี่ยวชาญ"},
+  "sections": [
+   {"eyebrow": "วัสดุฉลากเฉพาะทาง · โครงสร้างเชิงวิศวกรรม",
+    "h2": "วัสดุที่สร้างมาเพื่อสภาวะที่ท้าทาย",
+    "sub": "โครงสร้างที่เหมาะสมเริ่มจากข้อกำหนดด้านสมรรถนะที่ชัดเจน",
+    "body": "สำรวจวัสดุฉลากเฉพาะทางสำหรับอุณหภูมิสูง การจัดเก็บเย็นจัด การสัมผัสสารเคมี ความทนทานกลางแจ้ง พื้นผิวที่ติดยาก และการระบุข้อมูลอุตสาหกรรมระยะยาว",
+    "b1": "สำรวจวัสดุ", "b1u": "/products/", "b2": "ขอการสนับสนุนด้านวัสดุ", "b2u": "/contact/"},
+   {"eyebrow": "อุตสาหกรรม · กระบวนการ · สภาวะการทำงาน",
+    "h2": "ออกแบบโดยยึดการใช้งานเป็นหลัก",
+    "sub": "ทุกสภาพแวดล้อมสร้างความท้าทายในการระบุข้อมูลที่แตกต่างกัน",
+    "body": "สำรวจแอปพลิเคชันโน้ตที่พัฒนาจากพื้นผิว อุณหภูมิ สารเคมี วิธีการพิมพ์ กระบวนการ และข้อกำหนดอายุการใช้งานจริง",
+    "b1": "สำรวจการใช้งาน", "b1u": "/products/", "b2": "ปรึกษาเรื่องการใช้งาน", "b2u": "/contact/"},
+   {"eyebrow": "คำแนะนำทางเทคนิค · ความรู้ด้านวัสดุ · กรณีศึกษา",
+    "h2": "เข้าใจวัสดุ เรียนรู้จากการใช้งาน",
+    "sub": "ความรู้เชิงปฏิบัติเพื่อการตัดสินใจระบุข้อมูลที่ดีขึ้น",
+    "body": "สำรวจคำแนะนำทางเทคนิค ข้อมูลเชิงลึกในการเลือกวัสดุ การทดสอบสมรรถนะ ข้อควรพิจารณาในการพิมพ์ และกรณีศึกษาจริง",
+    "b1": "อ่านแอปพลิเคชันโน้ต", "b1u": "/application-notes/", "b2": "ดูกรณีศึกษา", "b2u": "/products/"},
+   {"eyebrow": "การสนับสนุนการใช้งาน · การทดสอบ · การจัดหาที่ยืดหยุ่น",
+    "h2": "สนับสนุนตั้งแต่การเลือกวัสดุจนถึงการจัดหาระยะยาว",
+    "sub": "การสนับสนุนเชิงปฏิบัติในทุกขั้นตอนของโครงการ",
+    "body": "ตั้งแต่การประเมินการใช้งานและตัวอย่าง ไปจนถึงการทดสอบในห้องปฏิบัติการ การแปรรูป การตรวจสอบคุณภาพ และการจัดส่งซ้ำ ETIA ช่วยให้ผู้ผลิตก้าวจากการเลือกสู่การผลิตอย่างมั่นใจ",
+    "b1": "ปรึกษาผู้เชี่ยวชาญด้านวัสดุ", "b1u": "/contact/", "b2": "ปรึกษาผู้เชี่ยวชาญ", "b2u": "/contact/"},
   ]},
 }
 
