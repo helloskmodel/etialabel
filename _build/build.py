@@ -13,6 +13,7 @@ import gen_autoapps as autoapps
 import gen_pcb as pcb
 import gen_apex as apex
 import gen_e2712 as e2712
+import gen_polyimide as polyimide
 import gen_appnotes as appnotes
 
 hp.main()        # clean + build shell: home, products hub, core/legal, nav/footer, base vercel.json
@@ -20,6 +21,7 @@ autoapps.main()  # Automotive Label Solutions — E-Label sector (owns /industri
 pcb.main()       # Circuit Board & PCB Labels — 4 processes incl. ESD-Safe (owns /industries/circuit-board-pcb/)
 apex.main()      # Apex Series — next-gen PCB polyimide (owns /products/apex-series/)
 e2712.main()     # E-2712 — dual anti-static polyester, the E-Label ESD pick (owns /products/e-2712/)
+polyimide.main() # Polyimide Label Materials — technical page + full product line (owns /products/polyimide-label-materials/)
 appnotes.main()  # Application Notes — one SEO article per application (Purpose/Challenge/Risk/Solution)
 
 # sitemaps + redirects run LAST so every sector's tracked URLs are included
