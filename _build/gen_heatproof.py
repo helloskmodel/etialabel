@@ -486,6 +486,7 @@ PROD_AXES = [
      ("Post-Process","后处理","/industries/circuit-board-pcb/#post-process"),
      ("ESD-Safe","防静电（ESD）","/industries/circuit-board-pcb/#esd-safe"),
      ("Apex Series","Apex 系列","/products/apex-series/"),
+     ("E-2712 (ESD)","E-2712 防静电","/products/e-2712/"),
    ]),
  ]),
 ]
