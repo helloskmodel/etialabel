@@ -10,10 +10,12 @@ BUILD = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BUILD)
 import gen_heatproof as hp
 import gen_autoapps as autoapps
+import gen_pcb as pcb
 import gen_appnotes as appnotes
 
 hp.main()        # clean + build shell: home, products hub, core/legal, nav/footer, base vercel.json
-autoapps.main()  # Automotive Label Solutions — the only live sector today (unified format)
+autoapps.main()  # Automotive Label Solutions — E-Label sector (owns /industries/automotive-label-materials/)
+pcb.main()       # Circuit Board & PCB Labels — 3 processes, 3-series products (owns /industries/circuit-board-pcb/)
 appnotes.main()  # Application Notes — one SEO article per application (Purpose/Challenge/Risk/Solution)
 
 # sitemaps + redirects run LAST so every sector's tracked URLs are included
