@@ -75,15 +75,15 @@ def build_sector(lang):
     def T(en, zh_): return esc(_t(lang, en, zh_))
     contact = L(lang, "/contact/")
     hero = ('<section class="pchero"><div class="wrap"><div class="eyebrow">%s</div>'
-            '<h1>%s</h1><p>%s</p><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
+            '<h1>%s</h1><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
             '</div></section>') % (
         T(SEC["eyebrow_en"], SEC["eyebrow_zh"]), T(SEC["name_en"], SEC["name_zh"]),
-        T(SEC["subhead_en"], SEC["subhead_zh"]), contact, U("talk"))
+        contact, U("talk"))
     apex_link = ('<p style="margin-top:14px"><a href="%s" style="font-weight:700;color:var(--blue-deep)">%s</a></p>') % (
         L(lang, "/products/apex-series/"),
         _t(lang, "Explore the Apex Series — next-generation PCB polyimide →", "了解 Apex 系列 —— 新一代 PCB 聚酰亚胺 →"))
     overview = '<section class="blk"><div class="wrap"><div class="pcov"><p>%s</p>%s</div></div></section>' % (
-        T(SEC["intro_en"], SEC["intro_zh"]), apex_link)
+        T(SEC["subhead_en"], SEC["subhead_zh"]), apex_link)
     tabs = ""; panels = ""
     for i, pr in enumerate(PROCESSES):
         tabs += '<button class="pctab%s" data-key="%s" onclick="pcTab(this,%d)">%s</button>' % (
