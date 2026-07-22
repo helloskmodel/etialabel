@@ -46,6 +46,11 @@
       "source": "/insights/:path*",
       "destination": "/application-notes/",
       "permanent": true
+    },
+    {
+      "source": "/industries/esd-safe-labels",
+      "destination": "/industries/circuit-board-pcb/#esd-safe",
+      "permanent": true
     }
   ]
 }

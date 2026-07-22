@@ -1463,6 +1463,7 @@ def write_redirects():
       {"source":"/products/heatproof/hp-t42-hp-cbr-tag","destination":"/products/heatproof/hp-l90/","permanent":True},
       {"source":"/insights","destination":"/application-notes/","permanent":True},
       {"source":"/insights/:path*","destination":"/application-notes/","permanent":True},
+      {"source":"/industries/esd-safe-labels","destination":"/industries/circuit-board-pcb/#esd-safe","permanent":True},
     ]}
     open(os.path.join(ROOT,"vercel.json"),"w").write(json.dumps(cfg,indent=2)+"\n")
 
