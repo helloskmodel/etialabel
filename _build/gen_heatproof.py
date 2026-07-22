@@ -480,8 +480,12 @@ def navlab(lang, t):
 PROD_AXES = [
  ("app","By Industry","按行业",[
    ("Automotive","汽车","/industries/automotive-label-materials/"),
-   ("Circuit Board & PCB","电路板与 PCB","/industries/circuit-board-pcb/"),
-   ("ESD-Safe Labels","防静电（ESD）标签","/industries/esd-safe-labels/"),
+   ("Circuit Board & PCB","电路板与 PCB","/industries/circuit-board-pcb/",[
+     ("Wash & Reflow","清洗与回流焊","/industries/circuit-board-pcb/#wash-reflow"),
+     ("Wash & Non-Reflow","清洗与非回流","/industries/circuit-board-pcb/#wash-nonreflow"),
+     ("Post-Process","后处理","/industries/circuit-board-pcb/#post-process"),
+     ("ESD-Safe","防静电（ESD）","/industries/circuit-board-pcb/#esd-safe"),
+   ]),
  ]),
 ]
 
@@ -906,11 +910,8 @@ def build_industries_hub(lang):
             "E-Label durable automotive labels across the whole vehicle — engine bay, battery, interior, exterior and tire.",
             "覆盖整车的 E-Label 耐用汽车标签 —— 发动机舱、电池、内饰、外饰与轮胎") +
         _sc("/industries/circuit-board-pcb/", "Circuit Board & PCB", "电路板与 PCB",
-            "PCB labels in five categories — reflow, aggressive wash, post-process, ESD-safe and ultra heat-resistant — under Polyonics APEX, Polyonics XF and E-Label.",
-            "五大类 PCB 标签 —— 回流、强洗、后处理、防静电与超耐高温 —— 提供 Polyonics APEX、Polyonics XF 与 E-Label 三个系列") +
-        _sc("/industries/esd-safe-labels/", "ESD-Safe Labels", "防静电（ESD）标签",
-            "Static-dissipative polyimide and polyester labels — low-charging under 125 V, compliant to ANSI/ESD S20.20, for static-sensitive devices.",
-            "静电耗散聚酰亚胺与聚酯标签 —— 低电荷低于 125 V，符合 ANSI/ESD S20.20，适用于静电敏感器件"))
+            "PCB labels by process — reflow, aggressive wash, post-process and ESD-safe — under Polyonics APEX, Polyonics XF and E-Label.",
+            "按工序划分的 PCB 标签 —— 回流、强洗、后处理与防静电 —— 提供 Polyonics APEX、Polyonics XF 与 E-Label 三个系列"))
     h1 = "行业与应用" if lang == "zh" else "Industries & Applications"
     body = '<section class="blk"><div class="wrap"><div class="grid grid2">%s</div></div></section><div class="wrap">%s</div>' % (sector_cards, cta(lang))
     crumb=[("Home","/"),("Industries & Applications",u_ind_hub())]
