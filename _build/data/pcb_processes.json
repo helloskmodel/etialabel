@@ -7,8 +7,8 @@
   "eyebrow_zh": "电路板 · PCB 标签",
   "subhead_en": "Traceability labels matched to each PCB process — reflow, aggressive wash, finished-board and ESD-safe.",
   "subhead_zh": "按 PCB 工序匹配的可追溯标签 —— 回流焊、强力清洗、成品板与防静电。",
-  "intro_en": "PCB labels are organised into four processes. Pick the process, then the construction — 1 mil, 2 mil, ESD-safe or ultra heat-resistant. Each is available under three series: Polyonics APEX, Polyonics XF and E-Label — the same construction under each identity.",
-  "intro_zh": "PCB 标签分为四个工序。先选工序,再选构造 —— 1 mil、2 mil、ESD 防静电或超耐高温。每一款都提供三个系列:Polyonics APEX、Polyonics XF 与 E-Label —— 同一材料,三种标识。",
+  "intro_en": "PCB labels are organised into four processes. Pick the process, then the construction — 1 mil, 2 mil or ESD-safe. Each is available under three series: Polyonics APEX, Polyonics XF and E-Label — the same construction under each identity.",
+  "intro_zh": "PCB 标签分为四个工序。先选工序,再选构造 —— 1 mil、2 mil 或 ESD 防静电。每一款都提供三个系列:Polyonics APEX、Polyonics XF 与 E-Label —— 同一材料,三种标识。",
   "banner": ""
  },
  "processes": [
@@ -36,12 +36,6 @@
      "elabel": "E-8732", "apex": "XF-102SE", "xf": "XF-782",
      "spec_en": "2 mil heavy gloss white PI; dual ESD; reinforced wash-resistant topcoat; -70~100℃; UL/MIL",
      "spec_zh": "2mil 加厚亮光白 PI;双 ESD 防静电;强化耐洗表层;-70~100℃;UL/MIL"
-    },
-    {
-     "variant_en": "Ultra heat-resistant", "variant_zh": "超耐高温", "esd": false,
-     "elabel": "E-8531", "apex": "XF-101G", "xf": "XF-581",
-     "spec_en": "1 mil highest-temp white specialty PI; 300 °C short-term; R4300 ribbon meets SAE AS81530; ultra-durable high-temp adhesive; dual-side",
-     "spec_zh": "1mil 最耐高温白色特种 PI;短时耐 300℃;R4300 碳带满足 SAE AS81530;超耐久高温胶;正反面通用"
     }
    ]
   },
