@@ -78,11 +78,9 @@ def build_sector(lang):
             '<h1>%s</h1><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
             '</div></section>') % (T(SEC["name_en"], SEC["name_zh"]), contact, U("talk"))
     rel = [("/products/polyimide-label-materials/",
-            _t(lang, "Polyimide label materials — full technical page & product line →", "聚酰亚胺标签材料 —— 完整技术页与产品线 →")),
+            _t(lang, "Polyimide label materials — technical page & full product line →", "聚酰亚胺标签材料 —— 技术页与完整产品线 →")),
            ("/products/apex-series/",
-            _t(lang, "Apex Series — next-generation PCB polyimide →", "Apex 系列 —— 新一代 PCB 聚酰亚胺 →")),
-           ("/products/e-2712/",
-            _t(lang, "E-2712 — dual anti-static ESD polyester →", "E-2712 —— 双抗静电 ESD 聚酯 →"))]
+            _t(lang, "Apex Series — next-generation PCB polyimide →", "Apex 系列 —— 新一代 PCB 聚酰亚胺 →"))]
     rel_links = "".join('<a href="%s" style="display:block;margin-top:8px;font-weight:700;color:var(--blue-deep)">%s</a>' % (
         L(lang, u), esc(t)) for u, t in rel)
     overview = '<section class="blk"><div class="wrap"><div class="pcov"><p>%s</p><div style="margin-top:8px">%s</div></div></div></section>' % (

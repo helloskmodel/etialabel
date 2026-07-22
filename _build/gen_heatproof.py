@@ -126,6 +126,7 @@ nav .navlinks>a,nav .navlinks .ndt{padding:14px 24px;font-size:16px;border-botto
 nav .navlinks .nd,nav .navlinks .nd.ndwide{display:block;position:static}
 nav .navlinks .ndm.pm,nav .navlinks .caret{display:none}
 nav .navlinks .ndmob{display:block;background:var(--bg)}
+.ndmob .ndmh{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);padding:15px 24px 5px 40px}
 .ndmob .ndmr{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;text-align:left;background:none;border:none;font-family:inherit;font-size:15px;font-weight:600;color:var(--ink);padding:13px 24px 13px 40px;border-bottom:1px solid var(--line);cursor:pointer}
 .ndmob a.ndmr.solo{text-decoration:none}
 .ndmob .mchev{font-size:20px;line-height:1;color:var(--faint);transition:.15s}
@@ -488,9 +489,15 @@ def navlab(lang, t):
 
 # Products mega-menu: current sectors only (legacy partner-brand sectors retired)
 PROD_AXES = [
- ("app","By Industry","按行业",[
+ ("app","By Application","按应用",[
    ("Automotive Labeling Solutions","汽车标签解决方案","/industries/automotive-label-materials/"),
    ("PCB Labeling Solutions","PCB 标签解决方案","/industries/circuit-board-pcb/"),
+ ]),
+ ("mat","By Material","按材料",[
+   ("Polyimide Label Materials","聚酰亚胺标签材料","/products/polyimide-label-materials/",[
+     ("Apex Series","Apex 系列","/products/apex-series/"),
+   ]),
+   ("Polyester — E-2712 (ESD)","聚酯 —— E-2712（防静电）","/products/e-2712/"),
  ]),
 ]
 
@@ -499,8 +506,8 @@ def products_dropdown(lang, linkfn):
     Items carrying a 4th element (a list of children) render a chevron and open col3."""
     zh = (lang == "zh")
     # vi/th labels for the small set of menu strings (fall back to EN otherwise)
-    MENU_VITH = {"By Industry": ("Theo ngành", "ตามอุตสาหกรรม"),
-                 "Automotive": ("Ô tô", "ยานยนต์")}
+    MENU_VITH = {"By Application": ("Theo ứng dụng", "ตามการใช้งาน"),
+                 "By Material": ("Theo vật liệu", "ตามวัสดุ")}
     def lab(e, z):
         if zh: return z
         if lang == "vi" and e in MENU_VITH: return MENU_VITH[e][0]
@@ -542,6 +549,8 @@ def products_dropdown(lang, linkfn):
     vall = pick("View all →", "查看全部 →", "Xem tất cả →", "ดูทั้งหมด →")
     mob = '<div class="ndmob">'
     for key, he, hz, itms in PROD_AXES:
+        if len(PROD_AXES) > 1:
+            mob += '<div class="ndmh">%s</div>' % esc(lab(he, hz))
         for item in itms:
             e, z, u = item[0], item[1], item[2]
             kids = item[3] if len(item) > 3 else None
