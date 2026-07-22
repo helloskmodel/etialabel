@@ -11,15 +11,13 @@ sys.path.insert(0, BUILD)
 import gen_heatproof as hp
 import gen_autoapps as autoapps
 import gen_pcb as pcb
-import gen_esd as esd
 import gen_apex as apex
 import gen_e2712 as e2712
 import gen_appnotes as appnotes
 
 hp.main()        # clean + build shell: home, products hub, core/legal, nav/footer, base vercel.json
 autoapps.main()  # Automotive Label Solutions — E-Label sector (owns /industries/automotive-label-materials/)
-pcb.main()       # Circuit Board & PCB Labels — 3 processes, 3-series products (owns /industries/circuit-board-pcb/)
-esd.main()       # ESD-Safe Labels — Polyonics static-dissipative line (owns /industries/esd-safe-labels/)
+pcb.main()       # Circuit Board & PCB Labels — 4 processes incl. ESD-Safe (owns /industries/circuit-board-pcb/)
 apex.main()      # Apex Series — next-gen PCB polyimide (owns /products/apex-series/)
 e2712.main()     # E-2712 — dual anti-static polyester, the E-Label ESD pick (owns /products/e-2712/)
 appnotes.main()  # Application Notes — one SEO article per application (Purpose/Challenge/Risk/Solution)
