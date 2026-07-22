@@ -479,8 +479,8 @@ def navlab(lang, t):
 # Products mega-menu: current sectors only (legacy partner-brand sectors retired)
 PROD_AXES = [
  ("app","By Industry","按行业",[
-   ("Automotive","汽车","/industries/automotive-label-materials/"),
-   ("Circuit Board & PCB","电路板与 PCB","/industries/circuit-board-pcb/",[
+   ("Automotive Labeling Solutions","汽车标签解决方案","/industries/automotive-label-materials/"),
+   ("PCB Labeling Solutions","PCB 标签解决方案","/industries/circuit-board-pcb/",[
      ("Wash & Reflow","清洗与回流焊","/industries/circuit-board-pcb/#wash-reflow"),
      ("Wash & Non-Reflow","清洗与非回流","/industries/circuit-board-pcb/#wash-nonreflow"),
      ("Post-Process","后处理","/industries/circuit-board-pcb/#post-process"),
@@ -907,12 +907,12 @@ def build_industries_hub(lang):
         return '<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>' % (
             L(lang, url), esc(tz if lang == "zh" else te), esc(dz if lang == "zh" else de))
     sector_cards = (
-        _sc("/industries/automotive-label-materials/", "Automotive", "汽车",
+        _sc("/industries/automotive-label-materials/", "Automotive Labeling Solutions", "汽车标签解决方案",
             "E-Label durable automotive labels across the whole vehicle — engine bay, battery, interior, exterior and tire.",
             "覆盖整车的 E-Label 耐用汽车标签 —— 发动机舱、电池、内饰、外饰与轮胎") +
-        _sc("/industries/circuit-board-pcb/", "Circuit Board & PCB", "电路板与 PCB",
-            "PCB labels by process — reflow, aggressive wash, post-process and ESD-safe — under Polyonics APEX, Polyonics XF and E-Label.",
-            "按工序划分的 PCB 标签 —— 回流、强洗、后处理与防静电 —— 提供 Polyonics APEX、Polyonics XF 与 E-Label 三个系列"))
+        _sc("/industries/circuit-board-pcb/", "PCB Labeling Solutions", "PCB 标签解决方案",
+            "PCB labels by process — reflow, aggressive wash and post-process — under Polyonics APEX, Polyonics XF and E-Label.",
+            "按工序划分的 PCB 标签 —— 回流、强洗与后处理 —— 提供 Polyonics APEX、Polyonics XF 与 E-Label 三个系列"))
     h1 = "行业与应用" if lang == "zh" else "Industries & Applications"
     body = '<section class="blk"><div class="wrap"><div class="grid grid2">%s</div></div></section><div class="wrap">%s</div>' % (sector_cards, cta(lang))
     crumb=[("Home","/"),("Industries & Applications",u_ind_hub())]
