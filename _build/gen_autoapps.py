@@ -84,12 +84,12 @@ UI = {
  "spec": ("Specification","规格","Thông số","ข้อกำหนด"),
  "talk": ("Talk to a Specialist","咨询专家","Trao đổi với chuyên gia","ปรึกษาผู้เชี่ยวชาญ"),
  "details": ("View details","查看详情","Xem chi tiết","ดูรายละเอียด"),
- "eyebrow": ("AUTOMOTIVE · LABEL SOLUTIONS","汽车 · 标签解决方案","Ô TÔ · GIẢI PHÁP NHÃN","ยานยนต์ · โซลูชันฉลาก"),
- "name": ("Automotive Label Solutions","汽车标签解决方案","Giải pháp nhãn ô tô","โซลูชันฉลากยานยนต์"),
- "subhead": ("Durable identification across the whole vehicle — engine bay, battery, fuel & charging, interior, exterior and rubber components.",
-             "覆盖整车的耐用标识 —— 发动机舱、电池、燃油与充电、内饰、外饰与橡胶部件。",
-             "Nhận diện bền vững trên toàn xe — khoang động cơ, ắc-quy, nhiên liệu & sạc, nội thất, ngoại thất và linh kiện cao su.",
-             "การระบุข้อมูลที่ทนทานทั่วทั้งคัน — ห้องเครื่อง แบตเตอรี่ เชื้อเพลิงและการชาร์จ ภายใน ภายนอก และชิ้นส่วนยาง"),
+ "eyebrow": ("AUTOMOTIVE · LABELING SOLUTIONS","汽车 · 标签解决方案","Ô TÔ · GIẢI PHÁP NHÃN","ยานยนต์ · โซลูชันฉลาก"),
+ "name": ("Automotive Labeling Solutions","汽车标签解决方案","Giải pháp nhãn ô tô","โซลูชันฉลากยานยนต์"),
+ "subhead": ("Reliable labeling solutions for vehicle identification, safety, warning, and component tracking. Designed to withstand heat, chemicals, abrasion, fluids, and outdoor exposure throughout the vehicle lifecycle.",
+             "面向车辆标识、安全、警示与部件追踪的可靠标签方案 专为在整车生命周期中承受高温、化学品、磨损、油液与户外暴露而设计",
+             "Giải pháp nhãn đáng tin cậy cho nhận diện xe, an toàn, cảnh báo và theo dõi linh kiện. Được thiết kế để chịu nhiệt, hóa chất, mài mòn, chất lỏng và phơi nhiễm ngoài trời trong suốt vòng đời của xe.",
+             "โซลูชันฉลากที่เชื่อถือได้สำหรับการระบุยานพาหนะ ความปลอดภัย การเตือน และการติดตามชิ้นส่วน ออกแบบให้ทนความร้อน สารเคมี การเสียดสี ของเหลว และการสัมผัสกลางแจ้งตลอดอายุการใช้งานของรถ"),
  "intro": ("Match each application by environment challenge to the recommended E-LABEL material. Label purpose, risk of the wrong label and full product specifications are covered in Application Notes.",
            "按每个应用面临的环境挑战,匹配推荐的 E-LABEL 材料。标签用途、用错标签的风险与完整产品规格,详见 Application Notes。",
            "Ghép mỗi ứng dụng theo thách thức môi trường với vật liệu E-LABEL được đề xuất. Mục đích nhãn, rủi ro dùng sai nhãn và thông số sản phẩm đầy đủ có trong Ghi chú ứng dụng.",
@@ -217,7 +217,7 @@ def build_sector(lang):
     inds = _t(lang, "Industries", "行业", "Ngành", "อุตสาหกรรม")
     sname = _pk(lang, UI["name"])
     crumb = [(home, "/"), (inds, "/industries/"), (sname, PATH)]
-    title = _t(lang, "Automotive Label Solutions — Durable Vehicle Labels | ETIA",
+    title = _t(lang, "Automotive Labeling Solutions — Durable Vehicle Labels | ETIA",
                      "汽车标签解决方案 —— 耐用整车标签 | ETIA",
                      "Giải pháp nhãn ô tô — Nhãn xe bền vững | ETIA",
                      "โซลูชันฉลากยานยนต์ — ฉลากรถที่ทนทาน | ETIA")
