@@ -484,7 +484,6 @@ PROD_AXES = [
      ("Wash & Reflow","清洗与回流焊","/industries/circuit-board-pcb/#wash-reflow"),
      ("Wash & Non-Reflow","清洗与非回流","/industries/circuit-board-pcb/#wash-nonreflow"),
      ("Post-Process","后处理","/industries/circuit-board-pcb/#post-process"),
-     ("ESD-Safe","防静电（ESD）","/industries/circuit-board-pcb/#esd-safe"),
      ("Apex Series","Apex 系列","/products/apex-series/"),
      ("E-2712 (ESD)","E-2712 防静电","/products/e-2712/"),
    ]),
@@ -1463,7 +1462,7 @@ def write_redirects():
       {"source":"/products/heatproof/hp-t42-hp-cbr-tag","destination":"/products/heatproof/hp-l90/","permanent":True},
       {"source":"/insights","destination":"/application-notes/","permanent":True},
       {"source":"/insights/:path*","destination":"/application-notes/","permanent":True},
-      {"source":"/industries/esd-safe-labels","destination":"/industries/circuit-board-pcb/#esd-safe","permanent":True},
+      {"source":"/industries/esd-safe-labels","destination":"/industries/circuit-board-pcb/#post-process","permanent":True},
     ]}
     open(os.path.join(ROOT,"vercel.json"),"w").write(json.dumps(cfg,indent=2)+"\n")
 

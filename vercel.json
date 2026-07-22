@@ -49,7 +49,7 @@
     },
     {
       "source": "/industries/esd-safe-labels",
-      "destination": "/industries/circuit-board-pcb/#esd-safe",
+      "destination": "/industries/circuit-board-pcb/#post-process",
       "permanent": true
     }
   ]
