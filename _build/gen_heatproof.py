@@ -126,16 +126,18 @@ nav.open .navlinks{display:flex}
 nav .navlinks>a,nav .navlinks .ndt{padding:14px 24px;font-size:16px;border-bottom:1px solid var(--bg)}
 nav .navlinks .nd,nav .navlinks .nd.ndwide{display:block;position:static}
 nav .navlinks .ndm.pm,nav .navlinks .caret{display:none}
-nav .navlinks .ndmob{display:block;background:var(--bg)}
-.ndmob .ndmh{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);padding:15px 24px 5px 40px}
-.ndmob .ndmr{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;text-align:left;background:none;border:none;font-family:inherit;font-size:15px;font-weight:600;color:var(--ink);padding:13px 24px 13px 40px;border-bottom:1px solid var(--line);cursor:pointer}
-.ndmob a.ndmr.solo{text-decoration:none}
-.ndmob .mchev{font-size:20px;line-height:1;color:var(--faint);transition:.15s}
-.ndmob .ndmg.open .mchev{transform:rotate(45deg);color:var(--blue)}
-.ndmob .ndmc{display:none;background:#fff}
+nav .navlinks .ndmob{display:block;background:#fff}
+.ndmob .ndmr{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:none;border:none;font-family:inherit;font-size:16px;font-weight:600;color:var(--ink);padding:16px 24px;border-bottom:1px solid var(--line);cursor:pointer}
+.ndmob .ndmi{flex:none;width:26px;height:26px;color:var(--green-d);display:flex;align-items:center;justify-content:center}
+.ndmob .ndmi svg{width:24px;height:24px}
+.ndmob .ndml{flex:1}
+.ndmob .mchev{font-size:22px;line-height:1;color:var(--faint);transition:.15s}
+.ndmob .ndmg.open .mchev{transform:rotate(90deg);color:var(--blue)}
+.ndmob .ndmg.open .ndmr{color:var(--blue)}
+.ndmob .ndmc{display:none;background:var(--bg)}
 .ndmob .ndmg.open .ndmc{display:block}
-.ndmob .ndma{display:block;font-size:14.5px;color:var(--ink);padding:11px 24px 11px 52px;border-bottom:1px solid var(--bg)}
-.ndmob .ndma.vall{font-weight:700;color:var(--blue)}}
+.ndmob .ndma{display:block;font-size:15px;color:var(--ink);padding:13px 24px 13px 64px;border-bottom:1px solid var(--line)}
+.ndmob .ndma.sub{padding-left:82px;font-size:14px;color:var(--mut)}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
 .btn{display:inline-block;font-weight:700;font-size:15px;padding:12px 24px;border-radius:10px}
@@ -489,6 +491,12 @@ def navlab(lang, t):
     return t
 
 # Products mega-menu: current sectors only (legacy partner-brand sectors retired)
+def _navsvg(p): return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">%s</svg>' % p
+AXIS_ICONS = {
+ "prod": _navsvg('<path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/>'),
+ "app":  _navsvg('<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>'),
+ "mat":  _navsvg('<rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 13h14M5 17h10M5 21h14"/>'),
+}
 PROD_AXES = [
  ("prod","By Product","按产品",[
    ("Apex Series","Apex 系列","/products/apex-series/"),
@@ -548,23 +556,21 @@ def products_dropdown(lang, linkfn):
              "将鼠标移到左侧类别上，查看其产品系列。",
              "Di chuột vào một danh mục bên trái để xem các dòng sản phẩm.",
              "วางเมาส์บนหมวดหมู่ทางซ้ายเพื่อดูสายผลิตภัณฑ์"))
-    # Mobile accordion — tap-driven, replaces the hover mega-menu on small screens.
-    vall = pick("View all →", "查看全部 →", "Xem tất cả →", "ดูทั้งหมด →")
+    # Mobile accordion — one collapsed row per axis (icon + label + chevron);
+    # tapping an axis reveals its items. Keeps the phone menu short at a glance.
     mob = '<div class="ndmob">'
     for key, he, hz, itms in PROD_AXES:
-        if len(PROD_AXES) > 1:
-            mob += '<div class="ndmh">%s</div>' % esc(lab(he, hz))
+        inner = ""
         for item in itms:
             e, z, u = item[0], item[1], item[2]
             kids = item[3] if len(item) > 3 else None
+            inner += '<a class="ndma" href="%s">%s</a>' % (linkfn(u), esc(lab(e, z)))
             if kids:
-                mob += ('<div class="ndmg"><button type="button" class="ndmr" onclick="etaMob(this)">'
-                        '<span>%s</span><span class="mchev">+</span></button><div class="ndmc">'
-                        '<a class="ndma vall" href="%s">%s</a>%s</div></div>') % (
-                    esc(lab(e, z)), linkfn(u), esc(vall),
-                    "".join('<a class="ndma" href="%s">%s</a>' % (linkfn(cu), esc(lab(ce, cz))) for ce, cz, cu in kids))
-            else:
-                mob += '<a class="ndmr solo" href="%s">%s</a>' % (linkfn(u), esc(lab(e, z)))
+                inner += "".join('<a class="ndma sub" href="%s">%s</a>' % (linkfn(cu), esc(lab(ce, cz)))
+                                 for ce, cz, cu in kids)
+        mob += ('<div class="ndmg"><button type="button" class="ndmr" onclick="etaMob(this)">'
+                '<span class="ndmi">%s</span><span class="ndml">%s</span><span class="mchev">&rsaquo;</span></button>'
+                '<div class="ndmc">%s</div></div>') % (AXIS_ICONS.get(key, ""), esc(lab(he, hz)), inner)
     mob += '</div>'
     has_kids = any(len(item) > 3 for _, _, _, itms in PROD_AXES for item in itms)
     pmcls = "ndm pm" if has_kids else "ndm pm pm2"
