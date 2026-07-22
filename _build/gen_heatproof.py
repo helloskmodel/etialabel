@@ -484,6 +484,7 @@ PROD_AXES = [
      ("Wash & Reflow","清洗与回流焊","/industries/circuit-board-pcb/#wash-reflow"),
      ("Wash & Non-Reflow","清洗与非回流","/industries/circuit-board-pcb/#wash-nonreflow"),
      ("Post-Process","后处理","/industries/circuit-board-pcb/#post-process"),
+     ("Polyimide Label Materials","聚酰亚胺标签材料","/products/polyimide-label-materials/"),
      ("Apex Series","Apex 系列","/products/apex-series/"),
      ("E-2712 (ESD)","E-2712 防静电","/products/e-2712/"),
    ]),
