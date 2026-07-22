@@ -74,11 +74,9 @@ def build_sector(lang):
     def U(k): return esc(_t(lang, *UI[k]))
     def T(en, zh_): return esc(_t(lang, en, zh_))
     contact = L(lang, "/contact/")
-    hero = ('<section class="pchero"><div class="wrap"><div class="eyebrow">%s</div>'
+    hero = ('<section class="pchero"><div class="wrap">'
             '<h1>%s</h1><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
-            '</div></section>') % (
-        T(SEC["eyebrow_en"], SEC["eyebrow_zh"]), T(SEC["name_en"], SEC["name_zh"]),
-        contact, U("talk"))
+            '</div></section>') % (T(SEC["name_en"], SEC["name_zh"]), contact, U("talk"))
     apex_link = ('<p style="margin-top:14px"><a href="%s" style="font-weight:700;color:var(--blue-deep)">%s</a></p>') % (
         L(lang, "/products/apex-series/"),
         _t(lang, "Explore the Apex Series — next-generation PCB polyimide →", "了解 Apex 系列 —— 新一代 PCB 聚酰亚胺 →"))
@@ -135,7 +133,7 @@ def build_sector(lang):
     sname = _t(lang, SEC["name_en"], SEC["name_zh"])
     crumb = [(_t(lang, "Home", "首页"), "/"), (_t(lang, "Industries", "行业"), "/industries/"), (sname, PATH)]
     write(lang, PATH, page(lang, PATH,
-        _t(lang, "Circuit Board & PCB Labels by Category | ETIA", "按类别划分的电路板与 PCB 标签 | ETIA"),
+        _t(lang, "PCB Labeling Solutions — Circuit Board Labels by Process | ETIA", "PCB 标签解决方案 —— 按工序划分的电路板标签 | ETIA"),
         _t(lang, SEC["subhead_en"], SEC["subhead_zh"]), sname, "", body, crumb, active="", hero=hero))
     if lang == "en": hp.track(PATH, "industries")
 
