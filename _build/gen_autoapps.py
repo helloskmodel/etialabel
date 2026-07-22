@@ -157,9 +157,9 @@ def build_sector(lang):
     def U(k): return esc(_pk(lang, UI[k]))
     contact = Lx(lang, "/contact/")
     hero = ('<section class="avhero"><div class="wrap"><div class="eyebrow">%s</div>'
-            '<h1>%s</h1><p>%s</p><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
-            '</div></section>') % (U("eyebrow"), U("name"), U("subhead"), contact, U("talk"))
-    overview = ('<section class="blk"><div class="wrap"><div class="avovbody"><p>%s</p></div></div></section>') % U("intro")
+            '<h1>%s</h1><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
+            '</div></section>') % (U("eyebrow"), U("name"), contact, U("talk"))
+    overview = ('<section class="blk"><div class="wrap"><div class="avovbody"><p>%s</p></div></div></section>') % U("subhead")
     def box_wrap(ic, lbl, col, inner, bg=""):
         return ('<div class="avbox"%s><div class="h"><span class="i" style="color:%s">%s</span>'
                 '<span class="e" style="color:%s">%s</span></div>%s</div>') % (
