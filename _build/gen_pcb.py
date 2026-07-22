@@ -38,6 +38,7 @@ CSS = """<style>
 .pctab{white-space:nowrap;background:none;border:none;padding:12px 0;font-size:15px;font-weight:700;color:var(--mut);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px}
 .pctab.on{color:var(--blue-deep);border-bottom-color:var(--blue)}
 .pcpanel{padding-top:24px}
+.pclead{font-size:17px;line-height:1.6;color:var(--ink);max-width:60em;margin:0 0 20px;font-weight:500}
 .pc2{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;max-width:760px}
 .pcbox{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:#fff}
 .pcbox.rec{background:#f4f9f2}
@@ -97,7 +98,8 @@ def build_sector(lang):
                '<span class="e" style="color:var(--green-d)">%s</span></div>'
                '<div class="pcmat">%s</div><p style="margin-top:6px">%s</p></div>') % (
             IC_SOL, U("recommend"), T(pr["material_en"], pr["material_zh"]), T(pr["overview_en"], pr["overview_zh"]))
-        box = '<div class="pc2">%s%s</div>' % (chal, rec)
+        lead = ('<p class="pclead">%s</p>' % T(pr.get("lead_en", ""), pr.get("lead_zh", ""))) if pr.get("lead_en") else ""
+        box = lead + '<div class="pc2">%s%s</div>' % (chal, rec)
         # three series cards side by side — Polyonics APEX, Polyonics XF, E-Label
         cards = ""
         for label, cls, key in (("Polyonics APEX", "apex", "apex"),
