@@ -490,14 +490,7 @@ def navlab(lang, t):
 PROD_AXES = [
  ("app","By Industry","按行业",[
    ("Automotive Labeling Solutions","汽车标签解决方案","/industries/automotive-label-materials/"),
-   ("PCB Labeling Solutions","PCB 标签解决方案","/industries/circuit-board-pcb/",[
-     ("Wash & Reflow","清洗与回流焊","/industries/circuit-board-pcb/#wash-reflow"),
-     ("Wash & Non-Reflow","清洗与非回流","/industries/circuit-board-pcb/#wash-nonreflow"),
-     ("Post-Process","后处理","/industries/circuit-board-pcb/#post-process"),
-     ("Polyimide Label Materials","聚酰亚胺标签材料","/products/polyimide-label-materials/"),
-     ("Apex Series","Apex 系列","/products/apex-series/"),
-     ("E-2712 (ESD)","E-2712 防静电","/products/e-2712/"),
-   ]),
+   ("PCB Labeling Solutions","PCB 标签解决方案","/industries/circuit-board-pcb/"),
  ]),
 ]
 
