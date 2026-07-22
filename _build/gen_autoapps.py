@@ -97,7 +97,7 @@ UI = {
 }
 
 CSS = """<style>
-.avhero{background:linear-gradient(115deg,rgba(10,30,80,.90),rgba(20,60,150,.50) 55%,rgba(26,86,219,.10)),url('__BANNER__') center/cover no-repeat #0e2a63;color:#fff}
+.avhero{background:linear-gradient(120deg,#0c2555 0%,#16357d 52%,#1e50c7 100%);color:#fff}
 .avhero .wrap{padding:56px 24px}.avhero .eyebrow{color:#9dbcff}
 .avhero h1{color:#fff;font-size:38px;font-weight:800;line-height:1.14;margin:6px 0 12px;max-width:20em}
 .avhero p{color:#eef3ff;font-size:16px;line-height:1.6;max-width:56em}
