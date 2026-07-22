@@ -50,23 +50,21 @@ CSS = """<style>
 .pcchip.ch{background:#fff1e8;color:#b4531a;border:1px solid #f4cdb0}
 .pcmat{font-size:14px;font-weight:800;color:var(--green-d)}
 .pcplw{margin-top:24px}.pcplh{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
-.pclist{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;max-width:920px}
-.pcpr{display:grid;grid-template-columns:280px 1fr;gap:18px;padding:15px 18px;border-bottom:1px solid var(--line);align-items:start}
-.pcpr:last-child{border-bottom:none}
-.pcpr .var{display:flex;align-items:center;gap:8px;margin-bottom:9px}
-.pcpr .vt{font-size:11px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:var(--blue-deep)}
-.pcesd{font-size:9.5px;font-weight:800;letter-spacing:.02em;border-radius:5px;padding:2px 7px;white-space:nowrap}
-.pcesd.on{color:var(--green-d);background:var(--mint);border:1px solid #cfe6c5}
-.pcesd.off{color:var(--mut);background:#f1f3f6;border:1px solid var(--line)}
-.pcpn{display:flex;align-items:center;gap:7px;padding:2px 0;font-size:13.5px}
-.pcpn b{font-weight:800;color:var(--blue-deep)}
-.pcbadge{font-size:9px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;border-radius:5px;padding:2px 6px;flex:0 0 auto;width:64px;text-align:center}
-.pcbadge.el{color:var(--green-d);background:var(--mint);border:1px solid #cfe6c5}
-.pcbadge.apex{color:#2f7ad1;background:#eaf3fc;border:1px solid #cfe4f8}
-.pcbadge.xf{color:#0b2a6b;background:#dbe6fa;border:1px solid #b6cdf3}
-.pcpr .spec{font-size:13px;color:var(--mut);line-height:1.55;align-self:center}
-@media(max-width:820px){.pc2{grid-template-columns:1fr 1fr;gap:9px}
- .pcpr{grid-template-columns:1fr;gap:9px}.pcbox{padding:11px 12px}.pcchip{font-size:11px;padding:3px 8px}}
+.pcseries{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;align-items:start}
+.pcscard{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+.pcscard.apex{border-top:3px solid #2f7ad1}
+.pcscard.xf{border-top:3px solid #0b2a6b}
+.pcscard.el{border-top:3px solid var(--green-d)}
+.pcshead{font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:11px 16px;border-bottom:1px solid var(--line)}
+.pcshead.apex{color:#2f7ad1;background:#eaf3fc}
+.pcshead.xf{color:#0b2a6b;background:#dbe6fa}
+.pcshead.el{color:var(--green-d);background:var(--mint)}
+.pcsitem{padding:12px 16px;border-bottom:1px solid var(--line)}
+.pcsitem:last-child{border-bottom:none}
+.pcsitem b{display:block;font-size:15px;font-weight:800;color:var(--blue-deep);margin-bottom:4px}
+.pcsitem span{font-size:12.5px;color:var(--mut);line-height:1.5}
+@media(max-width:820px){.pc2{grid-template-columns:1fr 1fr;gap:9px}.pcseries{grid-template-columns:1fr}
+ .pcbox{padding:11px 12px}.pcchip{font-size:11px;padding:3px 8px}}
 </style>"""
 
 
@@ -95,32 +93,28 @@ def build_sector(lang):
                 '<span class="e" style="color:#c2621f">%s</span></div><p>%s</p>'
                 '<div class="pcchips" style="margin-top:8px">%s</div></div>') % (
             IC_CHAL, U("challenge"), T(pr["challenge_en"], pr["challenge_zh"]), chips)
-        more = ""
-        if pr["key"] == "esd-safe":
-            more = ('<p style="margin-top:10px"><a href="%s" style="font-weight:700;color:var(--green-d)">%s</a></p>') % (
-                L(lang, "/products/e-2712/"), _t(lang, "E-Label ESD pick — E-2712 dual anti-static →", "E-Label 防静电首选 —— E-2712 双抗静电 →"))
         rec = ('<div class="pcbox rec"><div class="h"><span class="i" style="color:var(--green-d)">%s</span>'
                '<span class="e" style="color:var(--green-d)">%s</span></div>'
-               '<div class="pcmat">%s</div><p style="margin-top:6px">%s</p>%s</div>') % (
-            IC_SOL, U("recommend"), T(pr["material_en"], pr["material_zh"]), T(pr["overview_en"], pr["overview_zh"]), more)
+               '<div class="pcmat">%s</div><p style="margin-top:6px">%s</p></div>') % (
+            IC_SOL, U("recommend"), T(pr["material_en"], pr["material_zh"]), T(pr["overview_en"], pr["overview_zh"]))
         box = '<div class="pc2">%s%s</div>' % (chal, rec)
-        # compact list — one row per variant; E-Label primary + APEX/XF reference chips
-        rows = ""
-        for p in pr["products"]:
-            var = _t(lang, p.get("variant_en", ""), p.get("variant_zh", ""))
-            esd_tag = ('<span class="pcesd on">ESD ✓</span>' if p.get("esd")
-                       else '<span class="pcesd off">%s</span>' % _t(lang, "no ESD", "无 ESD"))
-            pns = ""
-            for label, cls, key in (("E-Label", "el", "elabel"),
-                                    ("APEX", "apex", "apex"),
-                                    ("XF", "xf", "xf")):
+        # three series cards side by side — Polyonics APEX, Polyonics XF, E-Label
+        cards = ""
+        for label, cls, key in (("Polyonics APEX", "apex", "apex"),
+                                ("Polyonics XF", "xf", "xf"),
+                                ("E-Label", "el", "elabel")):
+            items = ""
+            for p in pr["products"]:
                 val = p.get(key)
-                if val:
-                    pns += '<div class="pcpn"><span class="pcbadge %s">%s</span><b>%s</b></div>' % (cls, label, esc(val))
-            spec = _t(lang, p.get("spec_en", ""), p.get("spec_zh", ""))
-            rows += ('<div class="pcpr"><div><div class="var"><span class="vt">%s</span>%s</div>%s</div>'
-                     '<div class="spec">%s</div></div>') % (esc(var), esd_tag, pns, esc(spec))
-        plw = '<div class="pcplw"><div class="pcplh">%s</div><div class="pclist">%s</div></div>' % (U("products"), rows)
+                if not val:
+                    continue
+                spec = _t(lang, p.get("spec_en", ""), p.get("spec_zh", ""))
+                items += '<div class="pcsitem"><b>%s</b><span>%s</span></div>' % (esc(val), esc(spec))
+            if not items:
+                continue
+            cards += '<div class="pcscard %s"><div class="pcshead %s">%s</div>%s</div>' % (
+                cls, cls, esc(label), items)
+        plw = '<div class="pcplw"><div class="pcplh">%s</div><div class="pcseries">%s</div></div>' % (U("products"), cards)
         panels += '<div class="pcpanel" data-i="%d" style="display:%s">%s%s</div>' % (
             i, "block" if i == 0 else "none", box, plw)
     js = ("<script>function pcTab(b,i){var m=b.closest('.pcmod');"

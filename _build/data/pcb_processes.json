@@ -5,10 +5,10 @@
   "path": "/industries/circuit-board-pcb/",
   "eyebrow_en": "CIRCUIT BOARD · PCB LABELS",
   "eyebrow_zh": "电路板 · PCB 标签",
-  "subhead_en": "Traceability labels matched to each PCB process — reflow, aggressive wash, finished-board and ESD-safe.",
-  "subhead_zh": "按 PCB 工序匹配的可追溯标签 —— 回流焊、强力清洗、成品板与防静电。",
-  "intro_en": "PCB labels are organised into four processes. Pick the process, then the construction — 1 mil, 2 mil or ESD-safe. Each is available under three series: Polyonics APEX, Polyonics XF and E-Label — the same construction under each identity.",
-  "intro_zh": "PCB 标签分为四个工序。先选工序,再选构造 —— 1 mil、2 mil 或 ESD 防静电。每一款都提供三个系列:Polyonics APEX、Polyonics XF 与 E-Label —— 同一材料,三种标识。",
+  "subhead_en": "Traceability labels matched to each PCB process — reflow, aggressive wash and finished-board identification.",
+  "subhead_zh": "按 PCB 工序匹配的可追溯标签 —— 回流焊、强力清洗与成品板标识。",
+  "intro_en": "PCB labels are organised by process: where the label is applied, what it must survive and the recommended material. Every product is available under three series — Polyonics APEX, Polyonics XF and E-Label — the same construction under each identity.",
+  "intro_zh": "PCB 标签按工序组织:标签贴在哪里、必须承受什么、推荐哪种材料 每一款都提供三个系列 —— Polyonics APEX、Polyonics XF 与 E-Label —— 同一材料,三种标识",
   "banner": ""
  },
  "processes": [
@@ -18,25 +18,28 @@
    "name_zh": "清洗与回流焊",
    "material_en": "Polyimide · thermal transfer",
    "material_zh": "聚酰亚胺 · 热转印",
-   "overview_en": "The most demanding process: the label is applied to a bare or in-process board and passes through the reflow oven and aggressive aqueous wash — polyimide territory.",
-   "overview_zh": "最苛刻的工序:标签贴在裸板或在制板上,穿过回流焊炉和强碱水洗,必须用聚酰亚胺",
-   "challenge_en": "Survive 260–330 °C multiple reflow passes and strong Kyzen/Zestron cleaning with no smearing or lifting, keeping small text and dense barcodes scannable.",
-   "challenge_zh": "承受 260-330℃ 多次回流,以及 Kyzen/Zestron 强力清洗,印字不糊、标签不翘,小字与密集条码保持可读",
+   "overview_en": "The most demanding process: the label is applied to a bare or in-process board and passes through the reflow oven and aggressive aqueous wash.",
+   "overview_zh": "最苛刻的工序:标签贴在裸板或在制板上,穿过回流焊炉和强碱水洗",
+   "challenge_en": "Survive 260–300 °C multiple reflow passes and strong Zestron/Kyzen cleaning with no smearing or lifting, keeping small text and dense barcodes scannable.",
+   "challenge_zh": "承受 260-300℃ 多次回流,以及 Zestron/Kyzen 强力清洗,印字不糊、标签不翘,小字与密集条码保持可读",
    "chips_en": ["High-temp reflow", "Aggressive wash", "Barcode legibility", "No pre-heat"],
    "chips_zh": ["高温回流", "强力清洗", "条码可读", "免预热"],
    "products": [
-    {
-     "variant_en": "1 mil · ESD", "variant_zh": "1 mil · ESD", "esd": true,
-     "elabel": "E-8731", "apex": "XF-101ME", "xf": "XF-781",
-     "spec_en": "1 mil gloss white PI; dual ESD; reinforced wash-resistant coating; no pre-heat; UL/MIL",
-     "spec_zh": "1mil 亮光白 PI;双 ESD 防静电;强化耐洗涂层;免预热;UL/MIL"
-    },
-    {
-     "variant_en": "2 mil · ESD", "variant_zh": "2 mil · ESD", "esd": true,
-     "elabel": "E-8732", "apex": "XF-102SE", "xf": "XF-782",
-     "spec_en": "2 mil heavy gloss white PI; dual ESD; reinforced wash-resistant topcoat; -70~100℃; UL/MIL",
-     "spec_zh": "2mil 加厚亮光白 PI;双 ESD 防静电;强化耐洗表层;-70~100℃;UL/MIL"
-    }
+    {"apex": "XF-102SE", "xf": "XF-782", "elabel": "E-8732",
+     "spec_en": "2 mil heavy gloss white; dual ESD; reinforced wash-resistant topcoat; -70~100 °C; UL/MIL; no print pre-heat",
+     "spec_zh": "2mil 加厚亮光白;双 ESD 防静电;强化耐洗表层;-70~100℃;UL/MIL;无需打印预热"},
+    {"apex": "XF-101ME", "xf": "XF-781", "elabel": "E-8731",
+     "spec_en": "1 mil gloss white; dual ESD; reinforced wash-resistant coating; no pre-heat; UL/MIL; thermal transfer",
+     "spec_zh": "1mil 亮光白;双 ESD 防静电;强化耐洗涂层;无需预热;UL/MIL 认证;热转印"},
+    {"apex": "XF-101G", "xf": "XF-581", "elabel": "E-8531",
+     "spec_en": "1 mil highest-temp white specialty PI; non-ESD; 300 °C short-term; R4300 ribbon meets SAE AS81530; ultra-durable high-temp adhesive; dual-side",
+     "spec_zh": "1mil 最耐高温白色特种 PI;无 ESD;短时耐 300℃;搭配 R4300 碳带满足 SAE AS81530;超耐久高温胶;正反面通用"},
+    {"apex": "XF-102G", "xf": "XF-582", "elabel": "E-8532TT",
+     "spec_en": "2 mil highest-temp white specialty PI; non-ESD; 300 °C short-term; R4300 ribbon meets SAE AS81531; ultra-durable high-temp adhesive; dual-side",
+     "spec_zh": "2mil 最耐高温白色特种 PI;无 ESD;短时耐 300℃;搭配 R4300 碳带满足 SAE AS81531;超耐久高温胶;正反面通用"},
+    {"apex": "XF-102M", "xf": "XF-584", "elabel": "E-8532",
+     "spec_en": "2 mil matte white PI; non-ESD; -70~100 °C; UL/MIL; thermal transfer",
+     "spec_zh": "2mil 哑光白 PI;无 ESD;-70~100℃;UL、MIL;热转印"}
    ]
   },
   {
@@ -52,18 +55,12 @@
    "chips_en": ["Aggressive wash", "Moderate heat", "No pre-heat", "Barcode legibility"],
    "chips_zh": ["强力清洗", "中等热", "免预热", "条码可读"],
    "products": [
-    {
-     "variant_en": "1 mil · ESD", "variant_zh": "1 mil · ESD", "esd": true,
-     "elabel": "E-8731", "apex": "XF-101ME", "xf": "XF-781",
-     "spec_en": "1 mil gloss white PI; dual ESD; reinforced wash-resistant coating; no pre-heat; UL/MIL",
-     "spec_zh": "1mil 亮光白 PI;双 ESD 防静电;强化耐洗涂层;免预热;UL/MIL"
-    },
-    {
-     "variant_en": "2 mil · matte", "variant_zh": "2 mil · 哑光", "esd": false,
-     "elabel": "E-8532", "apex": "XF-102M", "xf": "XF-584",
-     "spec_en": "2 mil matte white PI; non-ESD; -70~100℃; UL/MIL; thermal transfer",
-     "spec_zh": "2mil 哑光白 PI;无 ESD;-70~100℃;UL/MIL;热转印"
-    }
+    {"apex": "XF-102SE", "xf": "XF-782", "elabel": "E-8732",
+     "spec_en": "2 mil heavy gloss white; dual ESD; reinforced wash-resistant topcoat; -70~100 °C; UL/MIL; no print pre-heat",
+     "spec_zh": "2mil 加厚亮光白;双 ESD 防静电;强化耐洗表层;-70~100℃;UL/MIL;无需打印预热"},
+    {"apex": "XF-101ME", "xf": "XF-781", "elabel": "E-8731",
+     "spec_en": "1 mil gloss white; dual ESD; reinforced wash-resistant coating; no pre-heat; UL/MIL; thermal transfer",
+     "spec_zh": "1mil 亮光白;双 ESD 防静电;强化耐洗涂层;无需预热;UL/MIL 认证;热转印"}
    ]
   },
   {
@@ -72,64 +69,28 @@
    "name_zh": "后处理",
    "material_en": "Polyester · thermal transfer",
    "material_zh": "聚酯 · 热转印",
-   "overview_en": "Applied after all soldering, cleaning and reflow — the final identity on a finished board or assembly. No reflow heat, so no need for 300 °C polyimide.",
-   "overview_zh": "在所有焊接、清洗、回流完成后贴,成品板/组件的最终标识,不再需要极端耐热的聚酰亚胺",
-   "challenge_en": "Thin, low-cost and ESD-safe where needed — without over-engineering with heat resistance the process never uses.",
-   "challenge_zh": "薄、低成本,需要时 ESD 安全,不为用不到的耐热能力买单",
+   "overview_en": "Applied after all soldering, cleaning and reflow — the final identity on a finished board or assembly. No reflow heat, so no need for the extreme heat resistance of polyimide.",
+   "overview_zh": "在所有焊接、清洗、回流之后贴,成品板/组件的最终标识,不再需要聚酰亚胺的极端耐温",
+   "challenge_en": "ESD-safe, thin and low-cost — without over-engineering with heat resistance the process never uses.",
+   "challenge_zh": "ESD 安全、薄、低成本,不为用不到的耐热能力买单",
    "chips_en": ["ESD-safe", "Thin", "Low cost", "Solvent-resistant"],
    "chips_zh": ["ESD 安全", "薄型", "低成本", "耐溶剂"],
    "products": [
-    {
-     "variant_en": "2 mil · FR", "variant_zh": "2 mil · 阻燃", "esd": false,
-     "elabel": "E-2912", "apex": "", "xf": "XF-611",
-     "spec_en": "2 mil flame-retardant polyester; UL94 V-0, self-extinguishing; battery-safe",
-     "spec_zh": "2mil 阻燃聚酯;UL94 V-0 阻燃、自熄;电池环境安全"
-    },
-    {
-     "variant_en": "2 mil · ESD", "variant_zh": "2 mil · ESD", "esd": true,
-     "elabel": "E-2712", "apex": "", "xf": "",
-     "spec_en": "2 mil ESD polyester; static-dissipative, medical-grade, permanent; gloss white; -40~180℃; UL 969",
-     "spec_zh": "2mil ESD 聚酯;防静电、医疗级、永久;光面白;-40~180℃;UL 969"
-    },
-    {
-     "variant_en": "1 mil · ultra-thin", "variant_zh": "1 mil · 超薄", "esd": false,
-     "elabel": "E-2512", "apex": "", "xf": "",
-     "spec_en": "1 mil ultra-thin polyester; compact, cost-optimised, for micro devices; -40~85℃",
-     "spec_zh": "1mil 超薄聚酯;超薄微型、成本优化、微型设备专用;-40~85℃"
-    }
-   ]
-  },
-  {
-   "key": "esd-safe",
-   "name_en": "ESD-Safe",
-   "name_zh": "防静电（ESD）",
-   "material_en": "Static-dissipative polyimide / polyester",
-   "material_zh": "静电耗散聚酰亚胺 / 聚酯",
-   "overview_en": "Dedicated static-dissipative line for static-sensitive assemblies: surface resistance 10⁹–10¹¹ Ω and low-charging PSA under 125 V. See the full ESD-Safe page for standards and compliance.",
-   "overview_zh": "面向静电敏感组件的专用静电耗散产品线:表面电阻 10⁹–10¹¹ Ω,低电荷压敏胶低于 125 V 详见 ESD-Safe 专页的标准与合规",
-   "challenge_en": "Dissipate charge from human contact (HBM) and charged devices (CDM) without a hard short, and stay compliant to ANSI/ESD S20.20 through reflow, wash and handling.",
-   "challenge_zh": "耗散人体接触（HBM）与带电器件（CDM）静电而不造成硬短路,并在回流、清洗与操作全程符合 ANSI/ESD S20.20",
-   "chips_en": ["10⁹–10¹¹ Ω", "< 125 V", "ANSI/ESD S20.20", "UL 969"],
-   "chips_zh": ["10⁹–10¹¹ Ω", "< 125 V", "ANSI/ESD S20.20", "UL 969"],
-   "products": [
-    {
-     "variant_en": "1 mil · polyimide", "variant_zh": "1 mil · 聚酰亚胺", "esd": true,
-     "elabel": "", "apex": "", "xf": "XF-781",
-     "spec_en": "1 mil polyimide; semi-gloss white; static-dissipative; 100 hrs @ 150 °C · 5 min @ 260 °C · 90 sec @ 300 °C",
-     "spec_zh": "1mil 聚酰亚胺;半光白;静电耗散;150 °C 100 小时 · 260 °C 5 分钟 · 300 °C 90 秒"
-    },
-    {
-     "variant_en": "2 mil · polyimide", "variant_zh": "2 mil · 聚酰亚胺", "esd": true,
-     "elabel": "", "apex": "", "xf": "XF-782",
-     "spec_en": "2 mil polyimide; semi-gloss white; static-dissipative; UL 969 recognized",
-     "spec_zh": "2mil 聚酰亚胺;半光白;静电耗散;UL 969 认证"
-    },
-    {
-     "variant_en": "2 mil · polyester", "variant_zh": "2 mil · 聚酯", "esd": true,
-     "elabel": "E-2712", "apex": "", "xf": "XF-446",
-     "spec_en": "2 mil dual anti-static polyester; face, adhesive and liner anti-static; peel voltage < 100 V; −40 to 180 °C; RoHS",
-     "spec_zh": "2mil 双抗静电聚酯;面层、胶面、底纸全防静电;剥离电压 <100V;−40~180°C;RoHS"
-    }
+    {"apex": "", "xf": "XF-611", "elabel": "E-2912",
+     "spec_en": "Flame-retardant polyester; UL94 V-0, self-extinguishing; battery-safe; 2 mil",
+     "spec_zh": "阻燃聚酯;UL94 V-0 阻燃、自熄;电池环境安全;2mil"},
+    {"apex": "", "xf": "XF-446", "elabel": "E-2532",
+     "spec_en": "Post-process polyester; medical-grade, abrasion-resistant, permanent; 2 mil gloss white; -40~180 °C; UL 969",
+     "spec_zh": "后处理聚酯;医疗设备级、耐磨耐擦、永久标识;2mil 光面白;-40~180℃;UL 969"},
+    {"apex": "", "xf": "", "elabel": "E-2712",
+     "spec_en": "Post-process dual anti-static polyester; face, adhesive and liner anti-static; peel voltage < 100 V; 2 mil gloss white; -40~180 °C; UL 969",
+     "spec_zh": "后处理双抗静电聚酯;面层、胶面、底纸全防静电;剥离电压 <100V;2mil 光面白;-40~180℃;UL 969"},
+    {"apex": "", "xf": "", "elabel": "E-2512",
+     "spec_en": "Ultra-thin polyester; compact, cost-optimised, for micro devices; 1 mil; -40~85 °C",
+     "spec_zh": "超薄聚酯;超薄微型、成本优化、微型设备专用;1mil;-40~85℃"},
+    {"apex": "", "xf": "", "elabel": "E-2712C",
+     "spec_en": "Colour dual anti-static polyester; colour sorting, LN2- and chemical-resistant; gloss colour",
+     "spec_zh": "彩色双抗静电聚酯;彩色快速分类、耐液氮耐化学;光面彩色"}
    ]
   }
  ]
