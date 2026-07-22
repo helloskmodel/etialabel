@@ -77,11 +77,16 @@ def build_sector(lang):
     hero = ('<section class="pchero"><div class="wrap">'
             '<h1>%s</h1><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
             '</div></section>') % (T(SEC["name_en"], SEC["name_zh"]), contact, U("talk"))
-    apex_link = ('<p style="margin-top:14px"><a href="%s" style="font-weight:700;color:var(--blue-deep)">%s</a></p>') % (
-        L(lang, "/products/apex-series/"),
-        _t(lang, "Explore the Apex Series — next-generation PCB polyimide →", "了解 Apex 系列 —— 新一代 PCB 聚酰亚胺 →"))
-    overview = '<section class="blk"><div class="wrap"><div class="pcov"><p>%s</p>%s</div></div></section>' % (
-        T(SEC["subhead_en"], SEC["subhead_zh"]), apex_link)
+    rel = [("/products/polyimide-label-materials/",
+            _t(lang, "Polyimide label materials — full technical page & product line →", "聚酰亚胺标签材料 —— 完整技术页与产品线 →")),
+           ("/products/apex-series/",
+            _t(lang, "Apex Series — next-generation PCB polyimide →", "Apex 系列 —— 新一代 PCB 聚酰亚胺 →")),
+           ("/products/e-2712/",
+            _t(lang, "E-2712 — dual anti-static ESD polyester →", "E-2712 —— 双抗静电 ESD 聚酯 →"))]
+    rel_links = "".join('<a href="%s" style="display:block;margin-top:8px;font-weight:700;color:var(--blue-deep)">%s</a>' % (
+        L(lang, u), esc(t)) for u, t in rel)
+    overview = '<section class="blk"><div class="wrap"><div class="pcov"><p>%s</p><div style="margin-top:8px">%s</div></div></div></section>' % (
+        T(SEC["subhead_en"], SEC["subhead_zh"]), rel_links)
     tabs = ""; panels = ""
     for i, pr in enumerate(PROCESSES):
         tabs += '<button class="pctab%s" data-key="%s" onclick="pcTab(this,%d)">%s</button>' % (
