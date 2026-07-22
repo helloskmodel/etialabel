@@ -114,6 +114,7 @@ nav .nd.open .ndm.pm,nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transfor
 .pm .subgroup a.suball{font-weight:700;color:var(--blue);border-bottom:1px solid var(--line);border-radius:0;margin-bottom:4px;padding-bottom:12px}
 .pm .subgroup a.suball:hover{background:none;text-decoration:underline}
 .pm .subempty{color:var(--faint);font-size:13px;font-weight:500;padding:12px;line-height:1.5}
+.ndmob{display:none}
 @media(max-width:980px){nav .ndm.pm{grid-template-columns:200px 1fr;left:16px}.pm .ndsub{display:none}}
 @media(max-width:900px){
 .navtog{display:inline-flex}
@@ -123,7 +124,16 @@ nav .navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:
 nav.open .navlinks{display:flex}
 nav .navlinks>a,nav .navlinks .ndt{padding:14px 24px;font-size:16px;border-bottom:1px solid var(--bg)}
 nav .navlinks .nd,nav .navlinks .nd.ndwide{display:block;position:static}
-nav .navlinks .ndm.pm,nav .navlinks .caret{display:none}}
+nav .navlinks .ndm.pm,nav .navlinks .caret{display:none}
+nav .navlinks .ndmob{display:block;background:var(--bg)}
+.ndmob .ndmr{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;text-align:left;background:none;border:none;font-family:inherit;font-size:15px;font-weight:600;color:var(--ink);padding:13px 24px 13px 40px;border-bottom:1px solid var(--line);cursor:pointer}
+.ndmob a.ndmr.solo{text-decoration:none}
+.ndmob .mchev{font-size:20px;line-height:1;color:var(--faint);transition:.15s}
+.ndmob .ndmg.open .mchev{transform:rotate(45deg);color:var(--blue)}
+.ndmob .ndmc{display:none;background:#fff}
+.ndmob .ndmg.open .ndmc{display:block}
+.ndmob .ndma{display:block;font-size:14.5px;color:var(--ink);padding:11px 24px 11px 52px;border-bottom:1px solid var(--bg)}
+.ndmob .ndma.vall{font-weight:700;color:var(--blue)}}
 .crumb{font-size:13px;color:var(--mut);padding:16px 0}
 .crumb a{color:var(--mut)}.crumb b{color:var(--ink)}
 .btn{display:inline-block;font-weight:700;font-size:15px;padding:12px 24px;border-radius:10px}
@@ -535,13 +545,29 @@ def products_dropdown(lang, linkfn):
              "将鼠标移到左侧类别上，查看其产品系列。",
              "Di chuột vào một danh mục bên trái để xem các dòng sản phẩm.",
              "วางเมาส์บนหมวดหมู่ทางซ้ายเพื่อดูสายผลิตภัณฑ์"))
+    # Mobile accordion — tap-driven, replaces the hover mega-menu on small screens.
+    vall = pick("View all →", "查看全部 →", "Xem tất cả →", "ดูทั้งหมด →")
+    mob = '<div class="ndmob">'
+    for key, he, hz, itms in PROD_AXES:
+        for item in itms:
+            e, z, u = item[0], item[1], item[2]
+            kids = item[3] if len(item) > 3 else None
+            if kids:
+                mob += ('<div class="ndmg"><button type="button" class="ndmr" onclick="etaMob(this)">'
+                        '<span>%s</span><span class="mchev">+</span></button><div class="ndmc">'
+                        '<a class="ndma vall" href="%s">%s</a>%s</div></div>') % (
+                    esc(lab(e, z)), linkfn(u), esc(vall),
+                    "".join('<a class="ndma" href="%s">%s</a>' % (linkfn(cu), esc(lab(ce, cz))) for ce, cz, cu in kids))
+            else:
+                mob += '<a class="ndmr solo" href="%s">%s</a>' % (linkfn(u), esc(lab(e, z)))
+    mob += '</div>'
     return ('<div class="nd ndwide" onmouseenter="etaOpen(this)" onmouseleave="etaClose(this)">'
             '<a class="ndt" href="%s">%s <span class="caret">&#9662;</span></a>'
             '<div class="ndm pm">'
             '<div class="ndrail"><div class="ndrail-h">%s</div>%s</div>'
             '<div class="ndmid">%s</div>'
             '<div class="ndsub">%s</div>'
-            '</div></div>') % (linkfn("/products/"), esc(top), ("产品方案" if zh else "LABEL SOLUTIONS"), rail, mids, subs)
+            '</div>%s</div>') % (linkfn("/products/"), esc(top), ("产品方案" if zh else "LABEL SOLUTIONS"), rail, mids, subs, mob)
 
 ALL_URLS = []   # (path, group, changefreq)  — English canonical set for sitemap
 def track(path, group): ALL_URLS.append((path, group))
@@ -734,6 +760,7 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 <script>
 function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
 function etaMenu(b){var n=b.closest('nav');if(n)n.classList.toggle('open');}
+function etaMob(b){var g=b.closest('.ndmg');if(g)g.classList.toggle('open');}
 function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
 function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
 if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
@@ -1412,6 +1439,7 @@ def build_home(lang):
 <script>
 function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
 function etaMenu(b){var n=b.closest('nav');if(n)n.classList.toggle('open');}
+function etaMob(b){var g=b.closest('.ndmg');if(g)g.classList.toggle('open');}
 function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
 function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
 if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
