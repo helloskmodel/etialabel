@@ -50,17 +50,21 @@ CSS = """<style>
 .pcchip.ch{background:#fff1e8;color:#b4531a;border:1px solid #f4cdb0}
 .pcmat{font-size:14px;font-weight:800;color:var(--green-d)}
 .pcplw{margin-top:24px}.pcplh{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
-.pcplg{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
-.pcprod{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:#fff}
-.pcrow{display:flex;align-items:center;gap:10px;padding:5px 0}
-.pcrow b{font-size:15px;font-weight:800;color:var(--blue-deep)}
-.pcbadge{font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;border-radius:6px;padding:3px 8px;flex:0 0 auto;width:112px;text-align:center}
-.pcbadge.apex{color:#0b2a6b;background:#dbe6fa;border:1px solid #b6cdf3}
-.pcbadge.xf{color:#2f7ad1;background:#eaf3fc;border:1px solid #cfe4f8}
-.pcbadge.el{color:var(--green-d);background:var(--mint);border:1px solid #cfe6c5}
-.pcspec{font-size:12.5px;color:var(--mut);line-height:1.5;margin-top:9px;padding-top:9px;border-top:1px solid var(--line)}
-@media(max-width:820px){.pc2{grid-template-columns:1fr 1fr;gap:9px}.pcplg{grid-template-columns:1fr}
- .pcbox{padding:11px 12px}.pcchip{font-size:11px;padding:3px 8px}.pcbadge{width:96px;font-size:9px}}
+.pcseries{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+.pcscard{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+.pcscard.apex{border-top:3px solid #0b2a6b}
+.pcscard.xf{border-top:3px solid #2f7ad1}
+.pcscard.el{border-top:3px solid var(--green-d)}
+.pcshead{font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:11px 16px;border-bottom:1px solid var(--line)}
+.pcshead.apex{color:#0b2a6b;background:#dbe6fa}
+.pcshead.xf{color:#2f7ad1;background:#eaf3fc}
+.pcshead.el{color:var(--green-d);background:var(--mint)}
+.pcsitem{padding:12px 16px;border-bottom:1px solid var(--line)}
+.pcsitem:last-child{border-bottom:none}
+.pcsitem b{display:block;font-size:15px;font-weight:800;color:var(--blue-deep);margin-bottom:4px}
+.pcsitem span{font-size:12.5px;color:var(--mut);line-height:1.5}
+@media(max-width:820px){.pc2{grid-template-columns:1fr 1fr;gap:9px}.pcseries{grid-template-columns:1fr}
+ .pcbox{padding:11px 12px}.pcchip{font-size:11px;padding:3px 8px}}
 </style>"""
 
 
@@ -90,19 +94,23 @@ def build_sector(lang):
                '<div class="pcmat">%s</div><p style="margin-top:6px">%s</p></div>') % (
             IC_SOL, U("recommend"), T(pr["material_en"], pr["material_zh"]), T(pr["overview_en"], pr["overview_zh"]))
         box = '<div class="pc2">%s%s</div>' % (chal, rec)
-        # product cards — three colour-coded series badges + spec
+        # three series columns — one card per series, side by side
         cards = ""
-        for p in pr["products"]:
-            rows = ""
-            for series, cls, val in (("Polyonics APEX", "apex", p.get("apex")),
-                                     ("Polyonics XF", "xf", p.get("xf")),
-                                     ("E-Label", "el", p.get("elabel"))):
-                if val:
-                    rows += '<div class="pcrow"><span class="pcbadge %s">%s</span><b>%s</b></div>' % (
-                        cls, esc(series), esc(val))
-            spec = _t(lang, p.get("spec_en", ""), p.get("spec_zh", ""))
-            cards += '<div class="pcprod">%s<div class="pcspec">%s</div></div>' % (rows, esc(spec))
-        plw = '<div class="pcplw"><div class="pcplh">%s</div><div class="pcplg">%s</div></div>' % (U("products"), cards)
+        for label, cls, key in (("Polyonics APEX", "apex", "apex"),
+                                 ("Polyonics XF", "xf", "xf"),
+                                 ("E-Label", "el", "elabel")):
+            items = ""
+            for p in pr["products"]:
+                val = p.get(key)
+                if not val:
+                    continue
+                spec = _t(lang, p.get("spec_en", ""), p.get("spec_zh", ""))
+                items += '<div class="pcsitem"><b>%s</b><span>%s</span></div>' % (esc(val), esc(spec))
+            if not items:
+                continue
+            cards += '<div class="pcscard %s"><div class="pcshead %s">%s</div>%s</div>' % (
+                cls, cls, esc(label), items)
+        plw = '<div class="pcplw"><div class="pcplh">%s</div><div class="pcseries">%s</div></div>' % (U("products"), cards)
         panels += '<div class="pcpanel" data-i="%d" style="display:%s">%s%s</div>' % (
             i, "block" if i == 0 else "none", box, plw)
     js = ("<script>function pcTab(b,i){var m=b.closest('.pcmod');"
