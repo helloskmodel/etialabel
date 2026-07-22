@@ -509,10 +509,10 @@ PROD_AXES = [
    ("PCB Labeling Solutions","PCB 标签解决方案","/industries/circuit-board-pcb/"),
  ]),
  ("mat","By Material","按材料",[
-   ("Polyimide Label Materials","聚酰亚胺标签材料","/products/polyimide-label-materials/",[
+   ("Polyimide","聚酰亚胺","/products/polyimide-label-materials/",[
      ("Apex Series","Apex 系列","/products/apex-series/"),
    ]),
-   ("Polyester — E-2712 (ESD)","聚酯 —— E-2712（防静电）","/products/e-2712/"),
+   ("Polyester","聚酯","/products/e-2712/"),
  ]),
 ]
 
