@@ -493,21 +493,26 @@ def navlab(lang, t):
 # Products mega-menu: current sectors only (legacy partner-brand sectors retired)
 def _navsvg(p): return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">%s</svg>' % p
 AXIS_ICONS = {
- "prod": _navsvg('<path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/>'),
+ "env":  _navsvg('<path d="M12 2s4 4 4 8a4 4 0 0 1-8 0c0-4 4-8 4-8z"/><path d="M12 22a6 6 0 0 0 6-6"/>'),
  "app":  _navsvg('<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>'),
  "mat":  _navsvg('<rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 13h14M5 17h10M5 21h14"/>'),
 }
 PROD_AXES = [
- ("prod","By Product","按产品",[
-   ("Apex Series","Apex 系列","/products/apex-series/"),
-   ("E-2712 (ESD Polyester)","E-2712（防静电聚酯）","/products/e-2712/"),
+ ("env","By Environment","按环境",[
+   ("Heat Resistant","耐高温","/environments/#heat-resistant"),
+   ("Cold Temperatures","低温","/environments/#cold-temperatures"),
+   ("Chemical","耐化学","/environments/#chemical"),
+   ("Abrasion","耐磨","/environments/#abrasion"),
  ]),
  ("app","By Application","按应用",[
    ("Automotive Labeling Solutions","汽车标签解决方案","/industries/automotive-label-materials/"),
    ("PCB Labeling Solutions","PCB 标签解决方案","/industries/circuit-board-pcb/"),
  ]),
  ("mat","By Material","按材料",[
-   ("Polyimide Label Materials","聚酰亚胺标签材料","/products/polyimide-label-materials/"),
+   ("Polyimide Label Materials","聚酰亚胺标签材料","/products/polyimide-label-materials/",[
+     ("Apex Series","Apex 系列","/products/apex-series/"),
+   ]),
+   ("Polyester — E-2712 (ESD)","聚酯 —— E-2712（防静电）","/products/e-2712/"),
  ]),
 ]
 
@@ -516,7 +521,7 @@ def products_dropdown(lang, linkfn):
     Items carrying a 4th element (a list of children) render a chevron and open col3."""
     zh = (lang == "zh")
     # vi/th labels for the small set of menu strings (fall back to EN otherwise)
-    MENU_VITH = {"By Product": ("Theo sản phẩm", "ตามผลิตภัณฑ์"),
+    MENU_VITH = {"By Environment": ("Theo môi trường", "ตามสภาพแวดล้อม"),
                  "By Application": ("Theo ứng dụng", "ตามการใช้งาน"),
                  "By Material": ("Theo vật liệu", "ตามวัสดุ")}
     def lab(e, z):
