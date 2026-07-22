@@ -485,6 +485,7 @@ PROD_AXES = [
      ("Wash & Non-Reflow","清洗与非回流","/industries/circuit-board-pcb/#wash-nonreflow"),
      ("Post-Process","后处理","/industries/circuit-board-pcb/#post-process"),
      ("ESD-Safe","防静电（ESD）","/industries/circuit-board-pcb/#esd-safe"),
+     ("Apex Series","Apex 系列","/products/apex-series/"),
    ]),
  ]),
 ]

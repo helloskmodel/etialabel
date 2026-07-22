@@ -80,7 +80,11 @@ def build_sector(lang):
             '</div></section>') % (
         T(SEC["eyebrow_en"], SEC["eyebrow_zh"]), T(SEC["name_en"], SEC["name_zh"]),
         T(SEC["subhead_en"], SEC["subhead_zh"]), contact, U("talk"))
-    overview = '<section class="blk"><div class="wrap"><div class="pcov"><p>%s</p></div></div></section>' % T(SEC["intro_en"], SEC["intro_zh"])
+    apex_link = ('<p style="margin-top:14px"><a href="%s" style="font-weight:700;color:var(--blue-deep)">%s</a></p>') % (
+        L(lang, "/products/apex-series/"),
+        _t(lang, "Explore the Apex Series — next-generation PCB polyimide →", "了解 Apex 系列 —— 新一代 PCB 聚酰亚胺 →"))
+    overview = '<section class="blk"><div class="wrap"><div class="pcov"><p>%s</p>%s</div></div></section>' % (
+        T(SEC["intro_en"], SEC["intro_zh"]), apex_link)
     tabs = ""; panels = ""
     for i, pr in enumerate(PROCESSES):
         tabs += '<button class="pctab%s" data-key="%s" onclick="pcTab(this,%d)">%s</button>' % (
