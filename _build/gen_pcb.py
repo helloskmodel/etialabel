@@ -97,7 +97,9 @@ def build_sector(lang):
             IC_CHAL, U("challenge"), T(pr["challenge_en"], pr["challenge_zh"]), chips)
         more = ""
         if pr["key"] == "esd-safe":
-            more = ('<p style="margin-top:10px"><a href="%s" style="font-weight:700;color:var(--blue-deep)">%s</a></p>') % (
+            more = ('<p style="margin-top:10px"><a href="%s" style="font-weight:700;color:var(--green-d)">%s</a></p>'
+                    '<p style="margin-top:4px"><a href="%s" style="font-weight:700;color:var(--blue-deep)">%s</a></p>') % (
+                L(lang, "/products/e-2712/"), _t(lang, "E-Label ESD pick — E-2712 dual anti-static →", "E-Label 防静电首选 —— E-2712 双抗静电 →"),
                 L(lang, "/industries/esd-safe-labels/"), _t(lang, "Full ESD-Safe specs & compliance →", "ESD 完整规格与合规 →"))
         rec = ('<div class="pcbox rec"><div class="h"><span class="i" style="color:var(--green-d)">%s</span>'
                '<span class="e" style="color:var(--green-d)">%s</span></div>'

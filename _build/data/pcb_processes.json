@@ -126,9 +126,9 @@
     },
     {
      "variant_en": "2 mil · polyester", "variant_zh": "2 mil · 聚酯", "esd": true,
-     "elabel": "", "apex": "", "xf": "XF-446",
-     "spec_en": "2 mil polyester; gloss white; static-dissipative; operating −40 to 204 °C",
-     "spec_zh": "2mil 聚酯;光面白;静电耗散;工作温度 −40 至 204 °C"
+     "elabel": "E-2712", "apex": "", "xf": "XF-446",
+     "spec_en": "2 mil dual anti-static polyester; face, adhesive and liner anti-static; peel voltage < 100 V; −40 to 180 °C; RoHS",
+     "spec_zh": "2mil 双抗静电聚酯;面层、胶面、底纸全防静电;剥离电压 <100V;−40~180°C;RoHS"
     }
    ]
   }
