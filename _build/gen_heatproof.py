@@ -89,6 +89,7 @@ nav .ndm.pm{position:absolute;top:70px;left:24px;right:auto;background:#fff;bord
   border-radius:16px;box-shadow:0 26px 70px rgba(20,40,90,.20);display:grid;grid-template-columns:224px 268px 244px;
   max-width:calc(100vw - 48px);opacity:0;visibility:hidden;transform:translateY(10px);transition:.16s;z-index:60;overflow:hidden}
 nav .nd.open .ndm.pm,nav .nd:hover .ndm.pm{opacity:1;visibility:visible;transform:translateY(0)}
+nav .ndm.pm.pm2{grid-template-columns:224px minmax(300px,360px)}
 .pm .ndrail{background:var(--bg);border-right:1px solid var(--line);padding:16px 12px}
 .pm .ndrail-h{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--faint);padding:0 14px 12px}
 .pm .axbtn{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;text-align:left;background:none;border:none;font-family:inherit;
@@ -489,15 +490,16 @@ def navlab(lang, t):
 
 # Products mega-menu: current sectors only (legacy partner-brand sectors retired)
 PROD_AXES = [
+ ("prod","By Product","按产品",[
+   ("Apex Series","Apex 系列","/products/apex-series/"),
+   ("E-2712 (ESD Polyester)","E-2712（防静电聚酯）","/products/e-2712/"),
+ ]),
  ("app","By Application","按应用",[
    ("Automotive Labeling Solutions","汽车标签解决方案","/industries/automotive-label-materials/"),
    ("PCB Labeling Solutions","PCB 标签解决方案","/industries/circuit-board-pcb/"),
  ]),
  ("mat","By Material","按材料",[
-   ("Polyimide Label Materials","聚酰亚胺标签材料","/products/polyimide-label-materials/",[
-     ("Apex Series","Apex 系列","/products/apex-series/"),
-   ]),
-   ("Polyester — E-2712 (ESD)","聚酯 —— E-2712（防静电）","/products/e-2712/"),
+   ("Polyimide Label Materials","聚酰亚胺标签材料","/products/polyimide-label-materials/"),
  ]),
 ]
 
@@ -506,7 +508,8 @@ def products_dropdown(lang, linkfn):
     Items carrying a 4th element (a list of children) render a chevron and open col3."""
     zh = (lang == "zh")
     # vi/th labels for the small set of menu strings (fall back to EN otherwise)
-    MENU_VITH = {"By Application": ("Theo ứng dụng", "ตามการใช้งาน"),
+    MENU_VITH = {"By Product": ("Theo sản phẩm", "ตามผลิตภัณฑ์"),
+                 "By Application": ("Theo ứng dụng", "ตามการใช้งาน"),
                  "By Material": ("Theo vật liệu", "ตามวัสดุ")}
     def lab(e, z):
         if zh: return z
@@ -563,13 +566,16 @@ def products_dropdown(lang, linkfn):
             else:
                 mob += '<a class="ndmr solo" href="%s">%s</a>' % (linkfn(u), esc(lab(e, z)))
     mob += '</div>'
+    has_kids = any(len(item) > 3 for _, _, _, itms in PROD_AXES for item in itms)
+    pmcls = "ndm pm" if has_kids else "ndm pm pm2"
+    sub_col = ('<div class="ndsub">%s</div>' % subs) if has_kids else ""
     return ('<div class="nd ndwide" onmouseenter="etaOpen(this)" onmouseleave="etaClose(this)">'
             '<a class="ndt" href="%s">%s <span class="caret">&#9662;</span></a>'
-            '<div class="ndm pm">'
+            '<div class="%s">'
             '<div class="ndrail"><div class="ndrail-h">%s</div>%s</div>'
             '<div class="ndmid">%s</div>'
-            '<div class="ndsub">%s</div>'
-            '</div>%s</div>') % (linkfn("/products/"), esc(top), ("产品方案" if zh else "LABEL SOLUTIONS"), rail, mids, subs, mob)
+            '%s'
+            '</div>%s</div>') % (linkfn("/products/"), esc(top), pmcls, ("产品方案" if zh else "LABEL SOLUTIONS"), rail, mids, sub_col, mob)
 
 ALL_URLS = []   # (path, group, changefreq)  — English canonical set for sitemap
 def track(path, group): ALL_URLS.append((path, group))
