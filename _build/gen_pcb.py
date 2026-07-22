@@ -20,8 +20,8 @@ IC_CHAL = _svg('<path d="M12 3 2 20h20L12 3z"/><path d="M12 10v5M12 18h.01"/>')
 IC_SOL  = _svg('<path d="M12 3 4 6.5v5c0 4.6 3.2 7.7 8 9.5 4.8-1.8 8-4.9 8-9.5v-5L12 3z"/><path d="m9 12 2 2 4-4"/>')
 
 UI = {
- "browse": ("Browse by Process", "按工序浏览"),
- "challenge": ("Challenge", "工序挑战"),
+ "browse": ("Browse by Category", "按类别浏览"),
+ "challenge": ("Challenge", "类别挑战"),
  "recommend": ("Recommended Material", "推荐材料"),
  "products": ("Products", "产品"),
  "talk": ("Talk to a Specialist", "咨询专家"),
@@ -50,7 +50,7 @@ CSS = """<style>
 .pcchip.ch{background:#fff1e8;color:#b4531a;border:1px solid #f4cdb0}
 .pcmat{font-size:14px;font-weight:800;color:var(--green-d)}
 .pcplw{margin-top:24px}.pcplh{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
-.pcseries{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+.pcseries{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;align-items:start}
 .pcscard{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
 .pcscard.apex{border-top:3px solid #2f7ad1}
 .pcscard.xf{border-top:3px solid #0b2a6b}
@@ -61,8 +61,13 @@ CSS = """<style>
 .pcshead.el{color:var(--green-d);background:var(--mint)}
 .pcsitem{padding:12px 16px;border-bottom:1px solid var(--line)}
 .pcsitem:last-child{border-bottom:none}
+.pcvar{display:flex;align-items:center;gap:8px;margin-bottom:5px}
+.pcvar .vt{font-size:11px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:var(--mut)}
+.pcesd{font-size:9.5px;font-weight:800;letter-spacing:.02em;border-radius:5px;padding:2px 7px;white-space:nowrap}
+.pcesd.on{color:var(--green-d);background:var(--mint);border:1px solid #cfe6c5}
+.pcesd.off{color:var(--mut);background:#f1f3f6;border:1px solid var(--line)}
 .pcsitem b{display:block;font-size:15px;font-weight:800;color:var(--blue-deep);margin-bottom:4px}
-.pcsitem span{font-size:12.5px;color:var(--mut);line-height:1.5}
+.pcsitem>span{font-size:12.5px;color:var(--mut);line-height:1.5}
 @media(max-width:820px){.pc2{grid-template-columns:1fr 1fr;gap:9px}.pcseries{grid-template-columns:1fr}
  .pcbox{padding:11px 12px}.pcchip{font-size:11px;padding:3px 8px}}
 </style>"""
@@ -105,7 +110,12 @@ def build_sector(lang):
                 if not val:
                     continue
                 spec = _t(lang, p.get("spec_en", ""), p.get("spec_zh", ""))
-                items += '<div class="pcsitem"><b>%s</b><span>%s</span></div>' % (esc(val), esc(spec))
+                var = _t(lang, p.get("variant_en", ""), p.get("variant_zh", ""))
+                esd_on = p.get("esd")
+                esd_tag = ('<span class="pcesd on">ESD ✓</span>' if esd_on
+                           else '<span class="pcesd off">%s</span>' % _t(lang, "no ESD", "无 ESD"))
+                var_html = ('<div class="pcvar"><span class="vt">%s</span>%s</div>' % (esc(var), esd_tag)) if var else ""
+                items += '<div class="pcsitem">%s<b>%s</b><span>%s</span></div>' % (var_html, esc(val), esc(spec))
             if not items:
                 continue
             cards += '<div class="pcscard %s"><div class="pcshead %s">%s</div>%s</div>' % (
@@ -125,7 +135,7 @@ def build_sector(lang):
     sname = _t(lang, SEC["name_en"], SEC["name_zh"])
     crumb = [(_t(lang, "Home", "首页"), "/"), (_t(lang, "Industries", "行业"), "/industries/"), (sname, PATH)]
     write(lang, PATH, page(lang, PATH,
-        _t(lang, "Circuit Board & PCB Labels by Process | ETIA", "按工序划分的电路板与 PCB 标签 | ETIA"),
+        _t(lang, "Circuit Board & PCB Labels by Category | ETIA", "按类别划分的电路板与 PCB 标签 | ETIA"),
         _t(lang, SEC["subhead_en"], SEC["subhead_zh"]), sname, "", body, crumb, active="", hero=hero))
     if lang == "en": hp.track(PATH, "industries")
 
