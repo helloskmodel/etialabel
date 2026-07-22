@@ -55,8 +55,8 @@ CSS = """<style>
 .pcrow{display:flex;align-items:center;gap:10px;padding:5px 0}
 .pcrow b{font-size:15px;font-weight:800;color:var(--blue-deep)}
 .pcbadge{font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;border-radius:6px;padding:3px 8px;flex:0 0 auto;width:112px;text-align:center}
-.pcbadge.apex{color:#5b3fa0;background:#f1edfb;border:1px solid #ddd2f3}
-.pcbadge.xf{color:var(--blue);background:var(--tint-blue);border:1px solid #d7e3fb}
+.pcbadge.apex{color:#0b2a6b;background:#dbe6fa;border:1px solid #b6cdf3}
+.pcbadge.xf{color:#2f7ad1;background:#eaf3fc;border:1px solid #cfe4f8}
 .pcbadge.el{color:var(--green-d);background:var(--mint);border:1px solid #cfe6c5}
 .pcspec{font-size:12.5px;color:var(--mut);line-height:1.5;margin-top:9px;padding-top:9px;border-top:1px solid var(--line)}
 @media(max-width:820px){.pc2{grid-template-columns:1fr 1fr;gap:9px}.pcplg{grid-template-columns:1fr}
