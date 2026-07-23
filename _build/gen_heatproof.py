@@ -476,13 +476,14 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 
 NAV_ITEMS = [("Home", "/", "home"),
              ("Products", u_products(), "products"),
+             ("Case Studies", "/case-studies/", "cases"),
              ("Application Notes", "/application-notes/", "insights"),
              ("Service", "/service/", "service")]
-NAV_ZH = {"Home":"首页","Products":"产品","Application Notes":"应用笔记","Insights":"洞察","Service":"服务"}
+NAV_ZH = {"Home":"首页","Products":"产品","Case Studies":"案例","Application Notes":"应用笔记","Insights":"洞察","Service":"服务"}
 # 4-language nav / footer labels (keyed by the English label)
-NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Application Notes":"Ghi chú ứng dụng","Service":"Dịch vụ",
+NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Case Studies":"Nghiên cứu điển hình","Application Notes":"Ghi chú ứng dụng","Service":"Dịch vụ",
           "Industries":"Ngành","About ETIA":"Về ETIA","Contact":"Liên hệ"}
-NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Application Notes":"แอปพลิเคชันโน้ต","Service":"บริการ",
+NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Case Studies":"กรณีศึกษา","Application Notes":"แอปพลิเคชันโน้ต","Service":"บริการ",
           "Industries":"อุตสาหกรรม","About ETIA":"เกี่ยวกับ ETIA","Contact":"ติดต่อ"}
 def navlab(lang, t):
     if lang == "zh": return NAV_ZH.get(t, t)
