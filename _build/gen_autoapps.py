@@ -94,7 +94,59 @@ UI = {
            "按每个应用面临的环境挑战,匹配推荐的 E-LABEL 材料。标签用途、用错标签的风险与完整产品规格,详见 Application Notes。",
            "Ghép mỗi ứng dụng theo thách thức môi trường với vật liệu E-LABEL được đề xuất. Mục đích nhãn, rủi ro dùng sai nhãn và thông số sản phẩm đầy đủ có trong Ghi chú ứng dụng.",
            "จับคู่แต่ละการใช้งานตามความท้าทายด้านสภาพแวดล้อมกับวัสดุ E-LABEL ที่แนะนำ วัตถุประสงค์ของฉลาก ความเสี่ยงของการใช้ฉลากผิด และข้อกำหนดผลิตภัณฑ์ฉบับเต็มอยู่ในแอปพลิเคชันโน้ต"),
+ "exp_eyebrow": ("EXPLORE PRODUCTS","浏览产品","KHÁM PHÁ SẢN PHẨM","สำรวจผลิตภัณฑ์"),
+ "exp_title": ("Explore Label Products","浏览标签产品","Khám phá sản phẩm nhãn","สำรวจผลิตภัณฑ์ฉลาก"),
+ "exp_sub": ("Durable label materials selected for vehicle identification, under-hood, fluids and outdoor exposure. Browse the full range in the product catalog.",
+             "面向车辆标识、发动机舱、油液与户外暴露精选的耐用标签材料 在产品目录中浏览完整系列",
+             "Vật liệu nhãn bền được chọn cho nhận diện xe, khoang động cơ, chất lỏng và phơi nhiễm ngoài trời. Duyệt toàn bộ dải sản phẩm trong danh mục.",
+             "วัสดุฉลากทนทานที่คัดสรรสำหรับการระบุยานพาหนะ ใต้ฝากระโปรง ของเหลว และกลางแจ้ง เรียกดูผลิตภัณฑ์ทั้งหมดในแคตตาล็อก"),
+ "browse_all": ("Browse all products","浏览全部产品","Xem tất cả sản phẩm","ดูผลิตภัณฑ์ทั้งหมด"),
+ "learn_eyebrow": ("APPLICATION NOTES","应用笔记","GHI CHÚ ỨNG DỤNG","แอปพลิเคชันโน้ต"),
+ "learn_title": ("Learn from Application Notes","从应用笔记中学习","Tìm hiểu từ ghi chú ứng dụng","เรียนรู้จากแอปพลิเคชันโน้ต"),
+ "learn_sub": ("Engineering guidance on where each label is used, what it must survive, and how to choose the right material.",
+               "工程视角讲解每种标签用在哪、要承受什么、如何选对材料",
+               "Hướng dẫn kỹ thuật về nơi dùng mỗi nhãn, phải chịu được gì và cách chọn vật liệu phù hợp.",
+               "คำแนะนำเชิงวิศวกรรมว่าฉลากแต่ละแบบใช้ที่ไหน ต้องทนอะไร และเลือกวัสดุอย่างไร"),
+ "all_notes": ("All application notes","全部应用笔记","Tất cả ghi chú ứng dụng","แอปพลิเคชันโน้ตทั้งหมด"),
+ "read": ("Read","阅读","Đọc","อ่าน"),
 }
+
+# Curated "Explore Label Products" cards for the industry landing (link to the
+# product catalog; per-family product pages are future work). (en, zh, vi, th) pairs.
+EXPLORE_CARDS = [
+ {"t": ("Durable Polyester Labels","耐用聚酯标签","Nhãn polyester bền","ฉลากโพลีเอสเตอร์ทนทาน"),
+  "d": ("Vehicle and component identification that resists heat, humidity and abrasion.",
+        "耐高温、耐潮湿、耐磨的车辆与部件标识",
+        "Nhận diện xe và linh kiện chịu nhiệt, ẩm và mài mòn.",
+        "การระบุยานพาหนะและชิ้นส่วนที่ทนความร้อน ความชื้น และการเสียดสี")},
+ {"t": ("Laser-Markable VIN Labels","激光打标 VIN 标签","Nhãn VIN khắc laser","ฉลาก VIN พิมพ์เลเซอร์"),
+  "d": ("Permanent, tamper-evident vehicle identification for lifetime traceability.",
+        "永久、防拆的车辆标识,支持全生命周期追溯",
+        "Nhận diện xe vĩnh viễn, chống giả mạo cho truy xuất trọn đời.",
+        "การระบุยานพาหนะถาวร ป้องกันการงัดแงะ เพื่อการติดตามตลอดอายุ")},
+ {"t": ("Oil & Chemical Resistant Labels","耐油耐化学标签","Nhãn chống dầu & hóa chất","ฉลากทนน้ำมันและสารเคมี"),
+  "d": ("Under-hood, battery and fluid-reservoir labels that hold through oil and chemical contact.",
+        "发动机舱、电池与油液罐标签,耐油污与化学品接触不脱落",
+        "Nhãn khoang động cơ, ắc-quy và bình chứa chịu dầu và hóa chất.",
+        "ฉลากใต้ฝากระโปรง แบตเตอรี่ และถังของเหลว ที่ทนน้ำมันและสารเคมี")},
+ {"t": ("Low-Temperature Labels","低温标签","Nhãn nhiệt độ thấp","ฉลากอุณหภูมิต่ำ"),
+  "d": ("Cold-chain and cryogenic apply that stays bonded at deep-freeze temperatures.",
+        "冷链与深冷贴附,在极低温下仍牢固粘接",
+        "Dán chuỗi lạnh và siêu lạnh, bám chắc ở nhiệt độ đông sâu.",
+        "การติดในห่วงโซ่ความเย็นและอุณหภูมิต่ำมาก คงการยึดเกาะที่อุณหภูมิแช่แข็ง")},
+]
+
+# Application notes that belong to this industry (slug + title/blurb, EN+ZH notes).
+LEARN_NOTES = [
+ {"slug": "tire-bead-labels",
+  "t": ("Tire Bead Labels","轮胎胎圈标签"),
+  "d": ("Reliable barcode identification from green tire production through vulcanization, inspection and final assembly.",
+        "从绿胎生产、硫化、检验到总装的可靠条码标识")},
+ {"slug": "vin-labels",
+  "t": ("VIN Labels","VIN 标签"),
+  "d": ("Permanent vehicle identification for lifetime traceability — laser-markable, weather- and chemical-resistant, tamper-evident.",
+        "面向全生命周期追溯的永久车辆标识 可激光打标、耐候耐化学、防篡改")},
+]
 
 CSS = """<style>
 .avhero{background:linear-gradient(115deg,rgba(9,24,64,.92),rgba(16,44,120,.66) 55%,rgba(26,86,219,.30)),url('__BANNER__') center/cover no-repeat #0c2555;color:#fff}
@@ -151,6 +203,21 @@ CSS = """<style>
  .avchips{gap:5px}.avchip{font-size:11px;padding:3px 8px}
  .avrec{font-size:11.5px;gap:6px;margin-top:9px}.avrec span{font-size:9px;padding:2px 5px}
 }
+/* Explore Label Products + Learn from Application Notes (industry hub) */
+.avxg{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:20px}
+.avxc{display:block;border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff;text-decoration:none;transition:.16s}
+.avxc:hover{border-color:var(--blue);box-shadow:0 12px 30px rgba(20,40,90,.12);transform:translateY(-3px)}
+.avxc .xt{font-weight:800;color:var(--blue-deep);font-size:16.5px;line-height:1.3}
+.avxc .xd{font-size:13.5px;color:var(--mut);line-height:1.6;margin-top:9px}
+.avxc .xgo{font-size:12.5px;font-weight:700;color:var(--green-d);margin-top:14px}
+.avng{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:20px}
+.avnc{display:block;border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff;text-decoration:none;transition:.16s}
+.avnc:hover{border-color:var(--blue);box-shadow:0 12px 30px rgba(20,40,90,.12);transform:translateY(-3px)}
+.avnc .nt{font-weight:800;color:var(--blue-deep);font-size:17px;line-height:1.3}
+.avnc .ndd{font-size:14px;color:var(--mut);line-height:1.6;margin-top:9px}
+.avnc .ngo{font-size:12.5px;font-weight:700;color:var(--green-d);margin-top:14px}
+.avmore{margin-top:22px}
+@media(max-width:820px){.avxg,.avng{grid-template-columns:1fr}}
 </style>""".replace("__BANNER__", BANNER)
 
 def build_sector(lang):
@@ -160,59 +227,35 @@ def build_sector(lang):
             '<h1>%s</h1><div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div>'
             '</div></section>') % (U("name"), contact, U("talk"))
     overview = ('<section class="blk"><div class="wrap"><div class="avovbody"><p>%s</p></div></div></section>') % U("subhead")
-    def box_wrap(ic, lbl, col, inner, bg=""):
-        return ('<div class="avbox"%s><div class="h"><span class="i" style="color:%s">%s</span>'
-                '<span class="e" style="color:%s">%s</span></div>%s</div>') % (
-            (' style="background:%s" ' % bg if bg else ''), col, ic, col, lbl, inner)
-    def chips(items, cls):
-        return '<div class="avchips">%s</div>' % "".join('<span class="avchip %s">%s</span>' % (cls, esc(x)) for x in items)
-    tabs = ""; panels = ""
-    for i, a in enumerate(APPS):
-        name = _tn(lang, a, "name")
-        tabs += '<button class="avtab%s" onclick="avTab(this,%d)">%s</button>' % (
-            " on" if i == 0 else "", i, esc(name))
-        # Two compact keyword cards — Challenge (environment) -> Recommendation (material).
-        seen = set(); ch_items = []
-        for pr in a.get("props", []):
-            pair = PROP_CHALLENGE.get(pr)
-            if pair and pair[0] not in seen:
-                seen.add(pair[0]); ch_items.append(_pk(lang, pair))
-        rec_items = [_pk(lang, PROP[pr]) if pr in PROP else pr for pr in a.get("props", [])]
-        box = '<div class="av2">%s%s</div>' % (
-            box_wrap(IC_CHAL, U("challenge"), "#c2621f", chips(ch_items, "ch")),
-            box_wrap(IC_SOL, U("recommend"), "var(--green-d)", chips(rec_items, "so"), bg="#f4f9f2"))
-        # matched product card(s) — model + Feature/Benefit/Spec (spec text stays English
-        # for vi/th for now). Link to the Application Note where published, else Contact.
-        has_note = bool(a.get("note"))
-        art = Lx(lang, (AN_HUB + _an_slug(a["name_en"]) + "/") if has_note else "/contact/")
-        go = (U("details") + " →") if has_note else (U("talk") + " →")
-        cards = ""
-        for pr in a.get("products", []):
-            brand = pr.get("brand", "E-Label")
-            if brand == "Computype":
-                continue
-            rows = ""
-            for key in ("feature", "benefit", "spec"):
-                val = _t(lang, pr.get(key + "_en", ""), pr.get(key + "_zh", ""))
-                if val:
-                    rows += '<div class="sp"><span>%s</span>%s</div>' % (U(key), esc(val))
-            cards += ('<a class="avplc" href="%s"><span class="avbrand">%s</span>'
-                      '<div class="t">%s</div>%s<div class="go">%s</div></a>') % (
-                art, esc("E-LABEL" if brand == "E-Label" else brand.upper()),
-                esc(pr["model"]), rows, go)
-        plw = ('<div class="avplw"><div class="avplh">%s</div><div class="avplg">%s</div></div>' % (
-            U("products"), cards)) if cards else ""
-        panels += '<div class="avpanel" data-i="%d" style="display:%s">%s%s</div>' % (
-            i, "block" if i == 0 else "none", box, plw)
-    js = ("<script>function avTab(b,i){var m=b.closest('.avmod');"
-          "m.querySelectorAll('.avtab').forEach(function(x,j){x.classList.toggle('on',j===i);});"
-          "m.querySelectorAll('.avpanel').forEach(function(p){p.style.display=(+p.getAttribute('data-i')===i)?'block':'none';});}"
-          "function avScroll(b,d){b.closest('.avtabsrow').querySelector('.avtabs').scrollBy({left:d*240,behavior:'smooth'});}</script>")
-    mod = ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="avmod">'
-           '<div class="avtabsrow"><button class="avarrow" onclick="avScroll(this,-1)">&lsaquo;</button>'
-           '<div class="avtabs">%s</div><button class="avarrow" onclick="avScroll(this,1)">&rsaquo;</button></div>'
-           '%s</div></div></section>%s') % (U("browse"), tabs, panels, js)
-    body = CSS + overview + mod + ('<div class="wrap">%s</div>' % hp.cta2(lang, "applications", hp.Lx))
+    # Explore Label Products — curated entry cards into the product catalog
+    # (per-family product pages are future work; all link to /products/ for now).
+    products_url = Lx(lang, "/products/")
+    xcards = "".join(
+        '<a class="avxc" href="%s"><div class="xt">%s</div><div class="xd">%s</div>'
+        '<div class="xgo">→</div></a>' % (
+            products_url, esc(_pk(lang, c["t"])), esc(_pk(lang, c["d"])))
+        for c in EXPLORE_CARDS)
+    explore = ('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div>'
+               '<h2>%s</h2><div class="sub">%s</div><div class="avxg">%s</div>'
+               '<div class="avmore"><a class="btn sec" href="%s">%s →</a></div>'
+               '</div></section>') % (
+        U("exp_eyebrow"), U("exp_title"), U("exp_sub"), xcards, products_url, U("browse_all"))
+    # Learn from Application Notes — industry notes (EN+ZH only; vi/th fall back to the EN note).
+    def note_url(slug):
+        return Lx(lang, AN_HUB + slug + "/") if lang in ("en", "zh") else (AN_HUB + slug + "/")
+    ncards = "".join(
+        '<a class="avnc" href="%s"><div class="nt">%s</div><div class="ndd">%s</div>'
+        '<div class="ngo">%s →</div></a>' % (
+            note_url(n["slug"]), esc(_t(lang, n["t"][0], n["t"][1])),
+            esc(_t(lang, n["d"][0], n["d"][1])), U("read"))
+        for n in LEARN_NOTES)
+    notes_hub = Lx(lang, AN_HUB) if lang in ("en", "zh") else AN_HUB
+    learn = ('<section class="blk" style="background:var(--tint-blue)"><div class="wrap">'
+             '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
+             '<div class="avng">%s</div><div class="avmore"><a class="btn sec" href="%s">%s →</a></div>'
+             '</div></section>') % (
+        U("learn_eyebrow"), U("learn_title"), U("learn_sub"), ncards, notes_hub, U("all_notes"))
+    body = CSS + overview + explore + learn + ('<div class="wrap">%s</div>' % hp.cta2(lang, "applications", hp.Lx))
     home = _t(lang, "Home", "首页", "Trang chủ", "หน้าแรก")
     inds = _t(lang, "Industries", "行业", "Ngành", "อุตสาหกรรม")
     sname = _pk(lang, UI["name"])
