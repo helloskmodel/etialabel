@@ -32,6 +32,12 @@ FEATURED = [{
  "title_zh": "VIN 标签",
  "blurb_en": "Permanent vehicle identification for lifetime traceability — laser-markable, weather- and chemical-resistant, tamper-evident. Challenges, requirements and material selection.",
  "blurb_zh": "面向全生命周期追溯的永久车辆标识 —— 可激光打标、耐候耐化学、防篡改 挑战、要求与选材",
+}, {
+ "slug": "esd-safe-pcb-labeling",
+ "title_en": "ESD-Safe PCB Labeling",
+ "title_zh": "PCB 防静电（ESD）标签",
+ "blurb_en": "Static dissipative through topcoat, adhesive and liner — holds ≥B barcode grade through reflow and aggressive aqueous cleaning. Polyonics XF-102SE and the ESD range.",
+ "blurb_zh": "面层、胶层、离型纸全叠静电耗散 —— 回流与强力水洗后仍保持 ≥B 条码等级 Polyonics XF-102SE 与 ESD 系列",
 }]
 
 CSS = """<style>
@@ -64,6 +70,12 @@ CSS = """<style>
 .affq{border-bottom:1px solid var(--line);padding:15px 0}.affq:last-child{border-bottom:none}
 .affq h3{font-size:15.5px;font-weight:800;color:var(--blue-deep);margin:0 0 6px}
 .affq p{font-size:14.5px;color:var(--ink);line-height:1.65;margin:0}
+.afreq{margin-top:12px;display:grid;gap:11px}
+.afreqrow{display:flex;gap:13px;align-items:flex-start;font-size:15px;line-height:1.55;color:var(--ink)}
+.afreqi{font-size:19px;line-height:1.3;flex:none;width:26px;text-align:center}
+.afsub{margin-top:12px}.afsub p{font-size:15.5px;line-height:1.7;color:var(--ink);margin:10px 0 0}
+.afsub b{color:var(--blue-deep)}
+.afh3b{font-size:13.5px;font-weight:800;letter-spacing:.03em;color:var(--mut);text-transform:uppercase;margin:20px 0 8px}
 @media(max-width:640px){.afck{grid-template-columns:1fr}}
 .afrel{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
 .afrel a{font-size:14px;font-weight:700;color:var(--blue-deep);border:1px solid var(--line);border-radius:20px;padding:7px 15px}
@@ -392,11 +404,141 @@ def build_vin(lang):
     if lang == "en": hp.track(path, "notes")
 
 
+def build_esd_pcb(lang):
+    def T(en, zh): return esc(_t(lang, en, zh))
+    contact = L(lang, "/contact/")
+    path = HUB + "esd-safe-pcb-labeling/"
+
+    tags = ["ESD-Safe", "PCB", "Polyimide", "Reflow", "Aqueous Wash", "Barcode"]
+    tags_zh = ["防静电", "PCB", "聚酰亚胺", "回流焊", "水洗", "条码"]
+    hero = ('<section class="afhero"><div class="wrap"><div class="eyebrow">%s</div>'
+            '<h1>%s</h1><p>%s</p><p style="font-size:13.5px;color:#c9d6f5;margin-top:8px">%s</p>'
+            '<div class="aftags">%s</div>'
+            '<div class="afbtns"><a class="btn pri" href="%s">%s</a>'
+            '<a class="btn on-dark" href="%s">%s</a></div></div></section>') % (
+        T("PCB LABELING · ESD-SAFE", "PCB 标签 · 防静电"),
+        T("ESD-Safe Labeling That Survives the Wash", "经得起清洗的防静电标签"),
+        T("On static-controlled lines, the label is often the last uncontrolled charge source. XF-102SE is static dissipative through the topcoat, adhesive and liner — and holds ≥B barcode grade through reflow and aggressive aqueous cleaning.",
+          "在防静电受控产线上,标签往往是最后一个不受控的电荷来源 XF-102SE 面层、胶层与离型纸全叠静电耗散 —— 并在回流与强力水洗后仍保持 ≥B 条码等级"),
+        T("Polyonics XF-102SE · 2 mil white ESD semi-gloss polyimide label material",
+          "Polyonics XF-102SE · 2mil 白色 ESD 半光聚酰亚胺标签材料"),
+        "".join('<span class="aftag">%s</span>' % esc(_t(lang, e, z)) for e, z in zip(tags, tags_zh)),
+        contact, T("Request Samples", "索取样品"), contact, T("Talk to an Application Engineer", "咨询应用工程师"))
+
+    def sec(num, key_en, key_zh, head_en, head_zh, inner):
+        return ('<div class="afsec"><div class="num">%s · %s</div><h2>%s</h2>%s</div>') % (
+            num, T(key_en, key_zh), T(head_en, head_zh), inner)
+
+    s1 = sec("01", "APPLICATION", "用途", "Application", "用途",
+        _t(lang, "<p>XF-102SE is applied to bare or in-process PCBs carrying static-sensitive components, then travels with the board through reflow, wave solder and aqueous cleaning. Used for PCB identification, WIP and IC labeling, electronic component tracking, permanent ID and warranty labeling. The 2 mil construction delivers the strongest adhesion in the ESD range and is designated for auto apply and pick-and-place processing on high-volume lines.</p>",
+                 "<p>XF-102SE 贴于带静电敏感元件的裸板或在制 PCB,随板经过回流、波峰焊与水洗 用于 PCB 标识、WIP 与 IC 标签、电子元件追踪、永久标识与保修标签 2mil 构造在防静电系列中提供最强粘接,并被指定用于高产量产线的自动贴标与贴片处理</p>"))
+
+    s2 = sec("02", "CHALLENGES", "挑战", "Challenges", "挑战",
+        _t(lang,
+           "<p>Three problems arrive together on an ESD-controlled line.</p>"
+           "<div class=\"afsub\"><p><b>Charge at application.</b> Peeling a label from its liner is a separation event — triboelectric charging centimetres from components sensitive to well under 100 V. Operator grounding does not help if the label itself holds charge.</p>"
+           "<p><b>Print survival.</b> After 260 °C reflow, the topcoat meets caustic cleaners at 70 °C under high-pressure spray. The label stays attached; the barcode does not survive.</p>"
+           "<p><b>Audit evidence.</b> ESD coordinators need numbers their auditor accepts. A resistivity range describes the material — it does not describe behaviour during a discharge event.</p></div>",
+           "<p>防静电受控产线上,三个问题同时出现</p>"
+           "<div class=\"afsub\"><p><b>贴标时的电荷</b> 从离型纸揭下标签是一次分离事件 —— 在距离敏感度远低于 100 V 的元件仅几厘米处产生摩擦起电 若标签本身带电,操作员接地也无济于事</p>"
+           "<p><b>印字存活</b> 260 °C 回流后,面层在 70 °C 高压喷淋下接触强碱清洗剂 标签还在,条码却没了</p>"
+           "<p><b>审核证据</b> ESD 管理员需要审核员认可的数据 电阻率区间描述的是材料本身 —— 而非放电事件中的行为</p></div>"))
+
+    reqs = [("⚡", "Static dissipative through the full stack", "全叠静电耗散", "topcoat, adhesive and liner, not just the face", "面层、胶层与离型纸,不只是面层"),
+            ("📊", "Quantified ESD data", "量化 ESD 数据", "decay time and charge generation, not only a resistivity range", "衰减时间与电荷生成,不只是电阻率区间"),
+            ("🔥", "Full reflow envelope", "完整回流耐温", "300 °C short-term, 150 °C sustained", "短时 300 °C,持续 150 °C"),
+            ("🧪", "Validated wash resistance", "经验证的耐洗", "named chemistries at production concentration", "具名化学品、生产浓度"),
+            ("⚙️", "Reliable auto apply", "可靠自动贴标", "consistent feed and release at line speed", "产线速度下稳定送标与离型"),
+            ("⏱️", "No added process steps", "不增加工序", "no pre-bake before chemical wash", "化学清洗前无需预烘")]
+    s3 = sec("03", "REQUIREMENTS", "关键要求", "Requirements", "关键要求",
+        '<div class="afreq">%s</div>' % "".join(
+            '<div class="afreqrow"><span class="afreqi">%s</span><span><b>%s</b> — %s</span></div>' % (
+                ic, T(le, lz), T(re, rz)) for ic, le, lz, re, rz in reqs))
+
+    s4 = sec("04", "MATERIAL SELECTION", "材料选择", "Material Selection", "材料选择",
+        _t(lang, "<p>Polyimide is the only practical film for in-process PCB labels — it clears lead-free reflow where polyester cannot. But the film is not what fails. The topcoat carries the printed image and takes the chemical and mechanical attack; the adhesive holds at the bond line.</p><p>For ESD, all three layers must be engineered together. XF-102SE pairs a static dissipative semi-gloss topcoat with a low-charging acrylic adhesive and a low-charging liner, so the charge path is controlled at the moment of application — not just on the finished label. The 2 mil build gives the range's highest adhesion and the stiffness auto-apply heads need.</p>",
+                 "<p>聚酰亚胺是在制 PCB 标签唯一实用的薄膜 —— 它能通过无铅回流,而聚酯不能 但失效的并不是薄膜 面层承载印刷图像并承受化学与机械攻击;胶在粘接界面保持粘着</p><p>对 ESD 而言,三层必须协同设计 XF-102SE 将静电耗散半光面层、低电荷丙烯酸胶与低电荷离型纸配合,使电荷路径在贴标那一刻就受控 —— 而不仅是在成品标签上 2mil 构造提供系列最高粘接,以及自动贴标头所需的挺度</p>"))
+
+    # comparison table
+    comp_rows = [
+        ("Finish", "表面", ["Semi-gloss white", "Semi-gloss white", "Matte white"], ["半光白", "半光白", "哑光白"]),
+        ("Film", "薄膜", ["2 mil", "1 mil", "1 mil"], ["2 mil", "1 mil", "1 mil"]),
+        ("Total thickness", "总厚度", ["3.9 mil (99 µm)", "2.4 mil (61 µm)", "2.4 mil (61 µm)"], ["3.9 mil (99 µm)", "2.4 mil (61 µm)", "2.4 mil (61 µm)"]),
+        ("Adhesion, SS 24 hr", "粘接,不锈钢 24h", ["≥50 oz/in", "≥40 oz/in", "≥40 oz/in"], ["≥50 oz/in", "≥40 oz/in", "≥40 oz/in"]),
+        ("Tack (Loop Tack)", "初粘（Loop Tack）", ["≥1200 g/in", "≥1000 g/in", "≥1000 g/in"], ["≥1200 g/in", "≥1000 g/in", "≥1000 g/in"]),
+        ("Auto apply", "自动贴标", ["Designated", "—", "—"], ["指定", "—", "—"]),
+        ("Best for", "最适合", ["Default choice — strongest adhesion, auto apply, high-volume lines", "Tight component clearance", "Tight clearance + solder ball resistance"],
+                              ["默认之选 —— 最强粘接、自动贴标、高产量产线", "元件间距紧凑", "间距紧凑 + 抗锡球"]),
+    ]
+    comp = '<table class="afptbl"><tr><th></th><th>XF-102SE</th><th>XF-101SE</th><th>XF-101ME</th></tr>%s</table>' % "".join(
+        '<tr><td>%s</td>%s</tr>' % (T(ke, kz), "".join('<td>%s</td>' % T(v, vz) for v, vz in zip(ve, vz)))
+        for ke, kz, ve, vz in comp_rows)
+    logic = '<p class="afsub" style="margin-top:14px"><b>%s</b> %s</p>' % (
+        T("Selection logic:", "选型逻辑:"),
+        T("start with XF-102SE. Move to 1 mil only where component clearance requires it — and choose XF-101ME over XF-101SE if the board sees molten wave solder, since the matte topcoat resists solder ball pickup.",
+          "从 XF-102SE 起步 仅在元件间距需要时改用 1 mil —— 若板子会经受熔融波峰焊,选 XF-101ME 而非 XF-101SE,因为哑光面层抗锡球附着"))
+    esd_rows = [("Static decay", "静电衰减", "EIA 541", "0.02 sec to 1% of initial charge", "0.02 秒衰减至初始电荷 1%"),
+                ("Low charging, PSA and liner", "低电荷,胶与离型纸", "Modified ESD ADV 11.2", "<125 volts", "<125 伏"),
+                ("ESD surface durability", "ESD 表面耐久", "ASTM D4752-10", ">500 IPA double rubs", ">500 次 IPA 双向擦拭")]
+    esd_tbl = ('<div class="afh3b">%s</div><table class="afptbl"><tr><th>%s</th><th>%s</th><th>%s</th></tr>%s</table>') % (
+        T("Shared ESD performance", "共同 ESD 性能"), T("Property", "属性"), T("Test method", "测试方法"), T("Result", "结果"),
+        "".join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % (T(pe, pz), esc(m), T(re, rz)) for pe, pz, m, re, rz in esd_rows))
+    proc_rows = [("Temperature", "温度", "100 hrs @ 150 °C · 5 min @ 260 °C · 90 sec @ 300 °C", "150 °C 100 小时 · 260 °C 5 分钟 · 300 °C 90 秒"),
+                 ("Barcode grade after Kyzen & Zestron heated immersion", "Kyzen & Zestron 热浸后条码等级", "≥B (ISO/IEC 15415/15416)", "≥B（ISO/IEC 15415/15416）"),
+                 ("Flux immersion — Alpha, AIM, Indium", "助焊剂浸泡 —— Alpha、AIM、Indium", "No visible effect", "无可见影响"),
+                 ("MIL-STD-202G Method 215K", "MIL-STD-202G Method 215K", "No visible effect", "无可见影响"),
+                 ("Pre-bake before wash", "清洗前预烘", "Not required", "无需"),
+                 ("Compliance", "合规", "ANSI/ESD S20.20 · UL 969 · REACH · RoHS · Halogen free", "ANSI/ESD S20.20 · UL 969 · REACH · RoHS · 无卤")]
+    proc_tbl = ('<div class="afh3b">%s</div><table class="afptbl">%s</table>') % (
+        T("Shared process performance", "共同工艺性能"),
+        "".join('<tr><td>%s</td><td>%s</td></tr>' % (T(ke, kz), T(ve, vz)) for ke, kz, ve, vz in proc_rows))
+    s5 = sec("05", "RECOMMENDED PRODUCTS", "推荐产品", "Recommended Products", "推荐产品",
+        comp + logic + esd_tbl + proc_tbl)
+
+    faq = [("Which ESD number does my auditor actually want?", "审核员真正想要哪个 ESD 数值?",
+            "Under an ANSI/ESD S20.20 control program, most auditors ask for static decay time — how fast the material sheds charge. Resistivity describes what a material is; decay time describes how it behaves during a discharge event. XF-102SE publishes both decay time (0.02 sec) and charge generation on liner removal (<125 V).",
+            "在 ANSI/ESD S20.20 管控方案下,多数审核员要的是静电衰减时间 —— 材料泄放电荷的速度 电阻率描述材料是什么;衰减时间描述放电事件中的行为 XF-102SE 同时公布衰减时间（0.02 秒）与揭离离型纸时的电荷生成（<125 V）"),
+           ("Does ESD performance change after thermal exposure?", "热暴露后 ESD 性能会变化吗?",
+            "Long exposures to elevated temperature can reduce ESD properties — this is inherent to static dissipative constructions, not specific to one product. If your process involves extended high-temperature dwell, validate ESD performance after that exposure rather than on incoming material. Ionization is recommended alongside ESD-safe labels regardless.",
+            "长时间高温暴露会降低 ESD 性能 —— 这是静电耗散构造的固有特性,并非某一产品独有 若你的工艺涉及长时间高温驻留,应在该暴露之后（而非来料时）验证 ESD 性能 无论如何,建议在使用防静电标签的同时配合离子风"),
+           ("When should I specify 1 mil instead?", "何时该改用 1 mil?",
+            "When component clearance is tight. The 1 mil options (XF-101SE, XF-101ME) reduce total build from 3.9 mil to 2.4 mil with identical ESD, thermal and chemical performance — the trade-off is lower adhesion (≥40 vs ≥50 oz/in) and no auto-apply designation.",
+            "当元件间距紧凑时 1 mil 选项（XF-101SE、XF-101ME）把总厚度从 3.9 mil 降到 2.4 mil,ESD、热与化学性能相同 —— 代价是粘接更低（≥40 对 ≥50 oz/in）且无自动贴标指定")]
+    s6 = sec("06", "FAQ", "常见问题", "FAQ", "常见问题",
+        '<div class="affaq">%s</div>' % "".join(
+            '<div class="affq"><h3>%s</h3><p>%s</p></div>' % (T(qe, qz), T(ae, az)) for qe, qz, ae, az in faq))
+
+    cta = ('<section class="blk alt"><div class="wrap"><div class="cta cta-q"><h3>%s</h3><p>%s</p>'
+           '<div class="btns"><a class="btn pri" href="%s">%s</a>'
+           '<a class="btn on-dark" href="%s">%s</a></div></div></div></section>') % (
+        T("Qualify It On Your Own Line", "在你的产线上完成选型"),
+        T("Send us your printer, ribbon and process conditions. We will match a material and ship samples for qualification.",
+          "把你的打印机、碳带与工艺条件发我们 我们匹配材料并寄送样品供选型验证"),
+        contact, T("Request Samples", "索取样品"), contact, T("Talk to an Application Engineer", "咨询应用工程师"))
+
+    body = (CSS + '<section class="blk"><div class="wrap afwrap">%s</div></section>' % (s1 + s2 + s3 + s4 + s5 + s6)) + cta
+    title = _t(lang, "ESD-Safe PCB Labeling — XF-102SE Polyimide | ETIA", "PCB 防静电标签 —— XF-102SE 聚酰亚胺 | ETIA")
+    desc = _t(lang, "ESD-safe polyimide PCB labels: static dissipative through topcoat, adhesive and liner; ≥B barcode grade after reflow and aqueous wash. XF-102SE and the ESD range.",
+                    "ESD 防静电聚酰亚胺 PCB 标签:面层、胶层、离型纸全叠静电耗散;回流与水洗后 ≥B 条码等级 XF-102SE 与 ESD 系列")
+    name = _t(lang, "ESD-Safe PCB Labeling", "PCB 防静电（ESD）标签")
+    crumb = [("Home", "/"), (_t(lang, "Application Notes", "应用笔记"), HUB), (name, path)]
+    art = {"@context": "https://schema.org", "@type": "TechArticle", "headline": name, "description": desc,
+           "articleSection": _t(lang, "Application Note", "应用笔记"),
+           "inLanguage": ("zh-CN" if lang == "zh" else "en"),
+           "publisher": {"@type": "Organization", "name": "ETIA Label"}}
+    faq_schema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": _t(lang, qe, qz),
+         "acceptedAnswer": {"@type": "Answer", "text": _t(lang, ae, az)}} for qe, qz, ae, az in faq]}
+    write(lang, path, page(lang, path, title, desc, name, "", body, crumb, schema_extra=[art, faq_schema], active="insights", hero=hero))
+    if lang == "en": hp.track(path, "notes")
+
+
 def main():
     for lang in LANGS:
         build_green_tire(lang)
         build_tire_bead(lang)
         build_vin(lang)
+        build_esd_pcb(lang)
 
 
 if __name__ == "__main__":
