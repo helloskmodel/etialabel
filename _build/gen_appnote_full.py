@@ -26,6 +26,12 @@ FEATURED = [{
  "title_zh": "轮胎胎圈标签",
  "blurb_en": "Reliable barcode identification from green tire production through vulcanization, inspection and final assembly — the challenges, what the label must do, and how to choose the material.",
  "blurb_zh": "从绿胎生产、硫化、检验到总装的可靠条码标识 —— 挑战、标签要做到什么,以及如何选材",
+}, {
+ "slug": "vin-labels",
+ "title_en": "VIN Labels",
+ "title_zh": "VIN 标签",
+ "blurb_en": "Permanent vehicle identification for lifetime traceability — laser-markable, weather- and chemical-resistant, tamper-evident. Challenges, requirements and material selection.",
+ "blurb_zh": "面向全生命周期追溯的永久车辆标识 —— 可激光打标、耐候耐化学、防篡改 挑战、要求与选材",
 }]
 
 CSS = """<style>
@@ -293,10 +299,104 @@ def build_tire_bead(lang):
     if lang == "en": hp.track(path, "notes")
 
 
+def build_vin(lang):
+    def T(en, zh): return esc(_t(lang, en, zh))
+    contact = L(lang, "/contact/")
+    path = HUB + "vin-labels/"
+    img = lambda en, zh: '<div class="afimg"><b>%s</b>  %s</div>' % (T("Image", "配图"), T(en, zh))
+
+    tags = ["VIN Labels", "Vehicle Identification", "Laser Marking", "Automotive", "Traceability"]
+    tags_zh = ["VIN 标签", "车辆识别", "激光打标", "汽车", "可追溯"]
+    hero = ('<section class="afhero"><div class="wrap"><div class="eyebrow">%s</div>'
+            '<h1>%s</h1><p>%s</p><div class="aftags">%s</div>'
+            '<div class="afbtns"><a class="btn pri" href="%s">%s</a>'
+            '<a class="btn on-dark" href="%s">%s</a></div></div></section>') % (
+        T("AUTOMOTIVE LABELING", "汽车标签"),
+        T("Permanent Vehicle Identification for Lifetime Traceability", "面向全生命周期追溯的永久车辆标识"),
+        T("VIN labels provide permanent vehicle identification throughout manufacturing, registration, service and the vehicle's operating life. Designed for demanding automotive environments, they support compliance, traceability and product security while maintaining long-term readability.",
+          "VIN 标签在制造、注册、维修与整车使用寿命全程提供永久车辆标识 面向严苛的汽车环境,支撑合规、可追溯与产品防伪,并保持长期可读"),
+        "".join('<span class="aftag">%s</span>' % esc(_t(lang, e, z)) for e, z in zip(tags, tags_zh)),
+        contact, T("Request Samples", "索取样品"), contact, T("Talk to an Engineer", "咨询工程师"))
+
+    def sec(num, key_en, key_zh, head_en, head_zh, inner):
+        return ('<div class="afsec"><div class="num">%s · %s</div><h2>%s</h2>%s</div>') % (
+            num, T(key_en, key_zh), T(head_en, head_zh), inner)
+
+    s1 = sec("01", "APPLICATION", "用途", "Application Overview", "用途概述",
+        _t(lang, "<p>Vehicle Identification Number (VIN) labels are applied to designated locations on the vehicle, including the dashboard, door pillar, engine compartment or other OEM-defined positions. They identify each vehicle throughout production, registration, after-sales service, recalls and lifecycle management.</p>",
+                 "<p>车辆识别代号（VIN）标签贴于车辆的指定位置,包括仪表台、门柱、发动机舱或其他 OEM 规定的位置 它们在生产、注册、售后服务、召回与全生命周期管理中标识每一台车辆</p>")
+        + img("VIN label on the dashboard / door pillar", "仪表台 / 门柱上的 VIN 标签"))
+
+    chal = [("UV exposure", "紫外线暴露"), ("Automotive fluids", "汽车油液"),
+            ("Heat and humidity", "高温与潮湿"), ("Outdoor weathering", "户外风化"),
+            ("Cleaning chemicals", "清洗化学品"), ("Tampering attempts", "篡改企图"),
+            ("Laser marking quality", "激光打标质量")]
+    s2 = sec("02", "ENGINEERING CHALLENGES", "工程挑战", "Engineering Challenges", "工程挑战",
+        ('<p>%s</p><ul class="aful">%s</ul>' % (
+            T("VIN labels are expected to remain readable for the entire life of the vehicle. Typical challenges include:",
+              "VIN 标签需在整车寿命期内保持可读 典型挑战包括:"),
+            "".join('<li>%s</li>' % T(e, z) for e, z in chal)))
+        + img("Vehicle exterior under outdoor weathering / cleaning", "户外风化 / 清洗中的车身"))
+
+    must = [("Permanent identification", "永久标识"), ("High laser contrast", "高激光对比度"),
+            ("Chemical resistance", "耐化学"), ("Weather resistance", "耐候"),
+            ("Barcode readability", "条码可读"), ("Tamper-evident performance", "防篡改表现")]
+    s3 = sec("03", "WHAT THE LABEL MUST DO", "标签要做到什么", "What the Label Must Do", "标签要做到什么",
+        '<ul class="afck">%s</ul>' % "".join('<li>%s</li>' % T(e, z) for e, z in must))
+
+    s4 = sec("04", "MATERIAL SELECTION", "材料选择", "Choosing the Right Material", "如何选对材料",
+        _t(lang, "<p>Selecting a VIN label requires balancing durability, security and production efficiency. Engineers should evaluate the mounting surface, marking technology, environmental exposure, required service life and any tamper-evident or regulatory requirements before choosing a label material.</p>",
+                 "<p>选择 VIN 标签需要在耐久、防伪与生产效率之间权衡 工程师在选材前应评估贴附表面、打标技术、环境暴露、所需使用寿命,以及任何防篡改或法规要求</p>"))
+
+    prods = [("E-2512BL", "E-Label", "VIN / permanent vehicle ID, laser-markable, tamper-evident", "VIN / 永久车辆标识,激光可打标,防篡改")]
+    ptbl = ('<table class="afptbl"><tr><th>%s</th><th>%s</th><th>%s</th></tr>%s</table>') % (
+        T("Product", "产品"), T("Brand", "品牌"), T("Suitable For", "适用于"),
+        "".join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % (esc(p), esc(b), T(se, sz)) for p, b, se, sz in prods))
+    s5 = sec("05", "RECOMMENDED SOLUTIONS", "推荐方案", "Recommended Solutions", "推荐方案",
+        _t(lang, "<p>For permanent, tamper-evident vehicle identification, ETIA recommends E-Label <b>E-2512BL</b> — a laser-markable acrylic facestock with a high-strength, chemical-resistant adhesive and a destructible, tamper-evident construction, rated -40 to 150 °C. ETIA supplies genuine materials and helps engineers match the construction to the mounting surface and compliance requirements.</p>",
+                 "<p>用于永久、防篡改的车辆标识,ETIA 推荐 E-Label <b>E-2512BL</b> —— 激光可打标丙烯酸面材,配高强度耐化学胶与易碎防篡改结构,耐温 -40 至 150 °C ETIA 供应正品材料,并协助工程师使构造匹配贴附表面与合规要求</p>")
+        + ptbl)
+
+    faq = [("Can VIN labels be removed?", "VIN 标签能被撕下吗?",
+            "Tamper-evident materials are designed to leave visible evidence if removal is attempted.", "防篡改材料在被尝试撕除时会留下明显痕迹"),
+           ("Why use laser-markable labels?", "为什么用激光可打标标签?",
+            "Laser marking provides permanent, high-resolution identification without ink or ribbons.", "激光打标无需油墨或碳带,提供永久、高分辨率的标识"),
+           ("How long should a VIN label last?", "VIN 标签应能用多久?",
+            "Automotive VIN labels are typically designed to remain legible throughout the vehicle's service life.", "汽车 VIN 标签通常设计为在整车使用寿命期内保持可读")]
+    s6 = sec("06", "FAQ", "常见问题", "FAQ", "常见问题",
+        '<div class="affaq">%s</div>' % "".join(
+            '<div class="affq"><h3>%s</h3><p>%s</p></div>' % (T(qe, qz), T(ae, az)) for qe, qz, ae, az in faq))
+
+    cta = ('<section class="blk alt"><div class="wrap"><div class="cta cta-q"><h3>%s</h3><p>%s</p>'
+           '<div class="btns"><a class="btn pri" href="%s">%s</a>'
+           '<a class="btn on-dark" href="%s">%s</a></div></div></div></section>') % (
+        T("Need help selecting the right VIN label?", "需要帮助选对 VIN 标签吗?"),
+        T("ETIA helps automotive manufacturers select durable label materials for vehicle identification, compliance and traceability.",
+          "ETIA 协助汽车制造商为车辆标识、合规与可追溯选择耐久的标签材料"),
+        contact, T("Request Samples", "索取样品"), contact, T("Talk to an Engineer", "咨询工程师"))
+
+    body = (CSS + '<section class="blk"><div class="wrap afwrap">%s</div></section>' % (s1 + s2 + s3 + s4 + s5 + s6)) + cta
+    title = _t(lang, "VIN Labels — Permanent Vehicle Identification | ETIA", "VIN 标签 —— 永久车辆标识 | ETIA")
+    desc = _t(lang, "VIN labels for permanent vehicle identification — laser-markable, weather- and chemical-resistant, tamper-evident. ETIA helps engineers select the material.",
+                    "永久车辆标识用 VIN 标签 —— 可激光打标、耐候耐化学、防篡改 ETIA 协助工程师选材")
+    name = _t(lang, "VIN Labels", "VIN 标签")
+    crumb = [("Home", "/"), (_t(lang, "Application Notes", "应用笔记"), HUB), (name, path)]
+    art = {"@context": "https://schema.org", "@type": "TechArticle", "headline": name, "description": desc,
+           "articleSection": _t(lang, "Application Note", "应用笔记"),
+           "inLanguage": ("zh-CN" if lang == "zh" else "en"),
+           "publisher": {"@type": "Organization", "name": "ETIA Label"}}
+    faq_schema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": _t(lang, qe, qz),
+         "acceptedAnswer": {"@type": "Answer", "text": _t(lang, ae, az)}} for qe, qz, ae, az in faq]}
+    write(lang, path, page(lang, path, title, desc, name, "", body, crumb, schema_extra=[art, faq_schema], active="insights", hero=hero))
+    if lang == "en": hp.track(path, "notes")
+
+
 def main():
     for lang in LANGS:
         build_green_tire(lang)
         build_tire_bead(lang)
+        build_vin(lang)
 
 
 if __name__ == "__main__":
