@@ -233,6 +233,20 @@ def build_hub(lang):
     zh = (lang == "zh")
     def H(e, z): return esc(_t(lang, e, z))
     blocks = ""
+    # full engineering notes (Standard V1.0) first
+    try:
+        import gen_appnote_full as _af
+        feat = _af.FEATURED
+    except Exception:
+        feat = []
+    if feat:
+        vcards = "".join(
+            ('<a class="ancard" href="%s"><h3>%s</h3><p>%s</p><div class="go">%s →</div></a>') % (
+                L(lang, HUB + n["slug"] + "/"), esc(_t(lang, n["title_en"], n["title_zh"])),
+                esc(_t(lang, n["blurb_en"], n["blurb_zh"])), H("Read", "阅读"))
+            for n in feat)
+        blocks += '<div class="angroup"><h2>%s</h2><div class="angrid">%s</div></div>' % (
+            H("Engineering Notes", "工程笔记"), vcards)
     # featured, hand-authored technical notes first
     if NOTES:
         fcards = ""

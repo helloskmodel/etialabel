@@ -16,6 +16,7 @@ import gen_e2712 as e2712
 import gen_polyimide as polyimide
 import gen_environments as environments
 import gen_casestudies as casestudies
+import gen_appnote_full as appnote_full
 import gen_appnotes as appnotes
 
 hp.main()        # clean + build shell: home, products hub, core/legal, nav/footer, base vercel.json
@@ -26,7 +27,8 @@ e2712.main()     # E-2712 — dual anti-static polyester, the E-Label ESD pick (
 polyimide.main() # Polyimide Label Materials — technical page + full product line (owns /products/polyimide-label-materials/)
 environments.main() # Labels by Environment — heat / cold / chemical / abrasion hub (owns /environments/)
 casestudies.main()  # Case Studies — hub + one big landing page per case (owns /case-studies/)
-appnotes.main()  # Application Notes — one SEO article per application (Purpose/Challenge/Risk/Solution)
+appnote_full.main() # Full engineering Application Notes per Standard V1.0 (hero + 7 sections)
+appnotes.main()  # Application Notes — simple 4-section notes + hub (lists featured full notes too)
 
 # sitemaps + redirects run LAST so every sector's tracked URLs are included
 hp.build_sitemaps()
