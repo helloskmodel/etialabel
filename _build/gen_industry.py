@@ -47,7 +47,7 @@ UI = {
 DATA = {
  "automotive": {
   "slug": "automotive-labeling-solutions",
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg",
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-automotive-tire.png",
   "hero_alt": ("Automotive component on the assembly line carrying a barcode identification label",
                "汽车装配线上带条码标识标签的零部件"),
   "eyebrow": ("INDUSTRY LABELING SOLUTIONS", "行业标签解决方案"),
@@ -57,8 +57,8 @@ DATA = {
   "intro": ("From component manufacturing and vehicle assembly to aftermarket service, labels carry the identification, traceability and safety information that follows every part through its working life. ETIA helps automotive manufacturers match durable label materials to the heat, chemicals and outdoor exposure of each production and service environment.",
             "从零部件制造、整车装配到售后服务,标签承载着伴随每个零件整个使用寿命的标识、追溯与安全信息 ETIA 帮助汽车制造商为各生产与服务环境的高温、化学品与户外暴露匹配耐用标签材料"),
   "why_title": ("Why Automotive Labeling Matters", "为什么汽车标签很重要"),
-  "why": ("A modern vehicle is built from thousands of parts made by many suppliers across different plants. Labels connect those components to the operators, machines and quality systems that build and service them, and they carry the barcodes that link physical parts to production and traceability data. The information must stay readable through heat, oil, cleaning chemicals, abrasion and years of outdoor exposure. When a label fails, traceability breaks, warranty and recall records are lost, and safety warnings disappear — so the labeling choice is a quality and compliance decision, not just a consumable.",
-          "一辆现代汽车由多家供应商在不同工厂制造的数千个零件组成 标签把这些零部件与制造和维修它们的操作人员、机器与质量体系连接起来,并承载着把实物零件与生产及追溯数据关联的条码 这些信息必须在高温、油污、清洗化学品、磨损与多年户外暴露中保持可读 一旦标签失效,追溯中断、保修与召回记录丢失、安全警示消失 因此标签选择是质量与合规决策,而非仅仅是耗材"),
+  "why": ("A modern vehicle is built from thousands of parts made by many suppliers. Labels connect those components to the operators, machines and quality systems that build and service them, and carry the barcodes that link parts to traceability data. That information must survive heat, oil, chemicals, abrasion and years outdoors — when a label fails, traceability, warranty records and safety warnings go with it.",
+          "一辆现代汽车由多家供应商制造的数千个零件组成 标签把这些零部件与制造和维修它们的操作人员、机器与质量体系连接起来,并承载把零件与追溯数据关联的条码 这些信息必须经受高温、油污、化学品、磨损与多年户外暴露 —— 一旦标签失效,追溯、保修记录与安全警示都随之丢失"),
   "explore_title": ("Explore Automotive Labeling Solutions", "探索汽车标签解决方案"),
   "categories": [
    {"name": ("Production Tracking", "生产追踪"),
@@ -104,7 +104,7 @@ DATA = {
  },
  "pcb": {
   "slug": "pcb-electronics-labeling-solutions",
-  "banner": "",
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-electronics-pcb.png",
   "hero_alt": ("Printed circuit board carrying a barcode identification label during assembly",
                "贴装过程中带条码标识标签的印刷电路板"),
   "eyebrow": ("INDUSTRY LABELING SOLUTIONS", "行业标签解决方案"),
@@ -114,8 +114,8 @@ DATA = {
   "intro": ("From bare boards and SMT assembly to test and finished-product identification, labels keep every board and component traceable through modern electronics manufacturing. ETIA helps electronics manufacturers match label materials to reflow, cleaning and ESD-controlled processes.",
             "从裸板、SMT 贴装到测试与成品标识,标签让每块板与元件在现代电子制造中保持可追溯 ETIA 帮助电子制造商为回流、清洗与防静电工艺匹配标签材料"),
   "why_title": ("Why PCB Labeling Matters", "为什么 PCB 标签很重要"),
-  "why": ("Electronics manufacturing depends on accurate identification for quality control, process management and traceability. A label applied to a bare board may pass through solder reflow above 250 °C, aggressive aqueous cleaning, handling, testing and long production cycles — and it must still scan and read cleanly at the end. Barcodes are often small and printed at high density, so print quality and durability matter as much as adhesion. When identification is lost, boards are scrapped or reworked and traceability records break, so the right label protects both yield and quality data.",
-          "电子制造依赖准确标识来做质量控制、流程管理与追溯 贴在裸板上的标签可能要经历 250 °C 以上的回流焊、强力水洗、搬运、测试与长生产周期 —— 最终仍必须清晰可扫可读 条码往往很小且高密度打印,因此打印质量与耐久性与粘接同样重要 一旦标识丢失,板子被报废或返工、追溯记录中断 因此正确的标签同时保护良率与质量数据"),
+  "why": ("Electronics manufacturing depends on accurate identification for quality control and traceability. A label applied to a bare board may pass through reflow above 250 °C, aggressive cleaning, handling, testing and long production cycles — and must still scan cleanly at the end. Barcodes are small and densely printed, so print quality and durability matter as much as adhesion. Lost identification means scrapped boards and broken traceability records.",
+          "电子制造依赖准确标识来做质量控制与追溯 贴在裸板上的标签可能要经历 250 °C 以上回流焊、强力清洗、搬运、测试与长生产周期 —— 最终仍必须清晰可扫 条码小且高密度打印,因此打印质量与耐久性与粘接同样重要 标识一旦丢失,意味着板子报废与追溯记录中断"),
   "explore_title": ("Explore PCB Labeling Solutions", "探索 PCB 标签解决方案"),
   "categories": [
    {"name": ("PCB Manufacturing", "PCB 制造"),
@@ -168,15 +168,17 @@ FINAL_BODY = ("Every production environment is different. ETIA helps manufacture
               "每条产线的环境都不一样 ETIA 帮助制造商比较应用条件、评估材料,并安排样品在你自己的产线上做工艺测试 把你的贴附表面、温度、化学环境与打印方式告诉我们,我们会给出实用的起点")
 
 CSS = """<style>
+/* industry pages run tighter than the global rhythm to keep the hub scannable */
+.blk{padding:26px 0}
 .inhero{background:linear-gradient(115deg,rgba(9,24,64,.94),rgba(16,44,120,.72) 55%,rgba(26,86,219,.42)),__BG__ #0c2555;color:#fff}
-.inhero .wrap{padding:60px 24px}.inhero .eyebrow{color:#9dbcff;font-size:12px;font-weight:800;letter-spacing:.08em}
+.inhero .wrap{padding:46px 24px}.inhero .eyebrow{color:#9dbcff;font-size:12px;font-weight:800;letter-spacing:.08em}
 .inhero h1{color:#fff;font-size:38px;font-weight:800;line-height:1.14;margin:8px 0 6px;max-width:20em}
 .inhero .isub{color:#cfe0ff;font-size:19px;font-weight:700;line-height:1.35;margin:0 0 14px;max-width:26em}
 .inhero p{color:#eef3ff;font-size:16px;line-height:1.66;max-width:52em}
 .inbtns{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
 .inwhy{max-width:60em}.inwhy p{font-size:16px;line-height:1.75;color:var(--ink)}
-.incat{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
-.incard{border:1px solid var(--line);border-radius:14px;padding:24px;background:#fff}
+.incat{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.incard{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:#fff}
 .incard h3{font-size:18px;font-weight:800;color:var(--blue-deep);margin:0 0 8px}
 .incard .cd{font-size:14.5px;line-height:1.6;color:var(--mut)}
 .incard .tl{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);margin:16px 0 8px}
