@@ -21,9 +21,9 @@ APPS = DATA["applications"]
 LANGS = ["en", "zh"]                       # default inner-site languages
 PREFIX = {"en": "", "zh": "/cn", "vi": "/vn", "th": "/th"}
 HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th"}
-# Paths that exist in all four languages (home + the automotive sector). Links to
-# any other path from a vi/th page fall back to the English version (no 404).
-FOURLANG = {"/", "/industries/automotive-label-materials/"}
+# Paths that exist in all four languages (home only). Links to any other path from
+# a vi/th page fall back to the English version (no 404). Industry hubs are EN+ZH.
+FOURLANG = {"/"}
 def Lx(lang, path):
     """Smart localized link: use the vi/th version only if that path is 4-language."""
     if lang in ("vi", "th") and path not in FOURLANG:
