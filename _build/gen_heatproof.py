@@ -1521,6 +1521,7 @@ def write_redirects():
       {"source":"/insights","destination":"/application-notes/","permanent":True},
       {"source":"/insights/:path*","destination":"/application-notes/","permanent":True},
       {"source":"/industries/esd-safe-labels","destination":"/industries/circuit-board-pcb/#post-process","permanent":True},
+      {"source":"/application-notes/green-tire-wip-tracking","destination":"/application-notes/tire-bead-labels/","permanent":True},
     ]}
     open(os.path.join(ROOT,"vercel.json"),"w").write(json.dumps(cfg,indent=2)+"\n")
 
