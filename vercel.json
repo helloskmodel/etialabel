@@ -49,12 +49,22 @@
     },
     {
       "source": "/industries/esd-safe-labels",
-      "destination": "/industries/circuit-board-pcb/#post-process",
+      "destination": "/industries/pcb-electronics-labeling-solutions/",
       "permanent": true
     },
     {
       "source": "/application-notes/green-tire-wip-tracking",
       "destination": "/application-notes/tire-bead-labels/",
+      "permanent": true
+    },
+    {
+      "source": "/industries/automotive-label-materials",
+      "destination": "/industries/automotive-labeling-solutions/",
+      "permanent": true
+    },
+    {
+      "source": "/industries/circuit-board-pcb",
+      "destination": "/industries/pcb-electronics-labeling-solutions/",
       "permanent": true
     }
   ]

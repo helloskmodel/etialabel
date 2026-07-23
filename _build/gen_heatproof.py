@@ -511,8 +511,8 @@ PROD_AXES = [
    ("Abrasion","耐磨","/environments/#abrasion"),
  ]),
  ("app","By Application","按应用",[
-   ("Automotive Labeling Solutions","汽车标签解决方案","/industries/automotive-label-materials/"),
-   ("PCB Labeling Solutions","PCB 标签解决方案","/industries/circuit-board-pcb/"),
+   ("Automotive Labeling Solutions","汽车标签解决方案","/industries/automotive-labeling-solutions/"),
+   ("PCB Labeling Solutions","PCB 标签解决方案","/industries/pcb-electronics-labeling-solutions/"),
  ]),
  ("mat","By Material","按材料",[
    ("Polyimide","聚酰亚胺","/products/polyimide-label-materials/",[
@@ -961,10 +961,10 @@ def build_industries_hub(lang):
         return '<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>' % (
             L(lang, url), esc(tz if lang == "zh" else te), esc(dz if lang == "zh" else de))
     sector_cards = (
-        _sc("/industries/automotive-label-materials/", "Automotive Labeling Solutions", "汽车标签解决方案",
+        _sc("/industries/automotive-labeling-solutions/", "Automotive Labeling Solutions", "汽车标签解决方案",
             "E-Label durable automotive labels across the whole vehicle — engine bay, battery, interior, exterior and tire.",
             "覆盖整车的 E-Label 耐用汽车标签 —— 发动机舱、电池、内饰、外饰与轮胎") +
-        _sc("/industries/circuit-board-pcb/", "PCB Labeling Solutions", "PCB 标签解决方案",
+        _sc("/industries/pcb-electronics-labeling-solutions/", "PCB Labeling Solutions", "PCB 标签解决方案",
             "PCB labels by process — reflow, aggressive wash and post-process — under Polyonics APEX, Polyonics XF and E-Label.",
             "按工序划分的 PCB 标签 —— 回流、强洗与后处理 —— 提供 Polyonics APEX、Polyonics XF 与 E-Label 三个系列"))
     h1 = "行业与应用" if lang == "zh" else "Industries & Applications"
@@ -1096,7 +1096,7 @@ WHY_ICONS = [
 # Application Center — six focus industries with their applications as tags.
 # format: (name_en, name_zh, url, apps_en[], apps_zh[]) — names only, no partner brands.
 HOME_FOCUS = [
- ("Automotive","汽车制造","/industries/automotive-label-materials/",
+ ("Automotive","汽车制造","/industries/automotive-labeling-solutions/",
   ["VIN identification","Laser marking","Weather exposure"],["VIN标识","激光打标","户外耐候"]),
 ]
 
@@ -1520,8 +1520,10 @@ def write_redirects():
       {"source":"/products/heatproof/hp-t42-hp-cbr-tag","destination":"/products/heatproof/hp-l90/","permanent":True},
       {"source":"/insights","destination":"/application-notes/","permanent":True},
       {"source":"/insights/:path*","destination":"/application-notes/","permanent":True},
-      {"source":"/industries/esd-safe-labels","destination":"/industries/circuit-board-pcb/#post-process","permanent":True},
+      {"source":"/industries/esd-safe-labels","destination":"/industries/pcb-electronics-labeling-solutions/","permanent":True},
       {"source":"/application-notes/green-tire-wip-tracking","destination":"/application-notes/tire-bead-labels/","permanent":True},
+      {"source":"/industries/automotive-label-materials","destination":"/industries/automotive-labeling-solutions/","permanent":True},
+      {"source":"/industries/circuit-board-pcb","destination":"/industries/pcb-electronics-labeling-solutions/","permanent":True},
     ]}
     open(os.path.join(ROOT,"vercel.json"),"w").write(json.dumps(cfg,indent=2)+"\n")
 
