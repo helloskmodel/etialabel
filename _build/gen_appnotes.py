@@ -170,7 +170,12 @@ def build_article(lang, a, s):
                      "%s —— 材料选型指南与应用笔记 | ETIA" % a["name_zh"])
     desc = _t(lang, a["purpose_en"], a["purpose_zh"])
     crumb = [("Home", "/"), (_t(lang, "Application Notes", "应用笔记"), HUB), (name, path)]
-    write(lang, path, page(lang, path, title, desc, name, lede, body, crumb, active="insights"))
+    art = {"@context": "https://schema.org", "@type": "TechArticle",
+           "headline": title.split(" | ")[0], "description": desc,
+           "articleSection": _t(lang, "Application Note", "应用笔记"),
+           "inLanguage": ("zh-CN" if lang == "zh" else "en"),
+           "publisher": {"@type": "Organization", "name": "ETIA Label"}}
+    write(lang, path, page(lang, path, title, desc, name, lede, body, crumb, schema_extra=[art], active="insights"))
     if lang == "en":
         hp.track(path, "notes")
 

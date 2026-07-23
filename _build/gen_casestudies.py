@@ -18,6 +18,8 @@ CASES = [
   "slug": "fixture-traceability-carburizing",
   "title_en": "Improving Fixture Traceability in Automotive Carburizing Processes",
   "title_zh": "改善汽车渗碳工艺中的工装可追溯性",
+  "lead_en": "On an automotive carburizing line, US-E high-temperature labels replaced manual tablet entry with 2D-code scanning on the fixtures — cutting human error and keeping lot-to-fixture traceability reliable through 1,100 °C heat, washing and mechanical impact.",
+  "lead_zh": "在汽车渗碳产线上,US-E 耐高温标签让工装从手工平板录入改为二维码扫描 —— 减少人为失误,并在 1,100 °C 高温、清洗与机械冲击下保持批次-工装追溯可靠",
   "app_en": "Metal fixtures used in carburizing processes",
   "app_zh": "用于渗碳工艺的金属工装",
   "product_en": "US-E (heat resistance up to 1,100 °C)",
@@ -84,6 +86,7 @@ def build_detail(lang, c):
             '<div style="margin-top:20px"><a class="btn pri" href="%s">%s</a></div></div></section>') % (
         T("CASE STUDY", "案例研究"), T(c["title_en"], c["title_zh"]), contact, T("Talk to a Specialist", "咨询专家"))
 
+    lead = ('<section class="blk"><div class="wrap"><p style="font-size:17px;line-height:1.7;color:var(--ink);max-width:70em">%s</p></div></section>') % T(c["lead_en"], c["lead_zh"])
     fig = ('<section class="blk"><div class="wrap"><div class="csfig"><div class="ph">%s</div>'
            '<div class="cap">%s</div></div></div></section>') % (
         T("Image", "配图"),
@@ -106,13 +109,19 @@ def build_detail(lang, c):
         row("Challenges", "挑战", chal),
         row("Solution / Benefits", "方案 / 收益", sol))
 
-    body = CSS + fig + table + ('<div class="wrap">%s</div>' % hp.cta2(lang, "applications"))
+    body = CSS + lead + fig + table + ('<div class="wrap">%s</div>' % hp.cta2(lang, "applications"))
     sname = _t(lang, "Case Studies", "案例")
     crumb = [(_t(lang, "Home", "首页"), "/"), (sname, HUB), (_t(lang, c["title_en"], c["title_zh"]), path)]
+    art = {"@context": "https://schema.org", "@type": "Article",
+           "headline": _t(lang, c["title_en"], c["title_zh"]),
+           "description": _t(lang, c["lead_en"], c["lead_zh"]),
+           "articleSection": "Case Study", "about": _t(lang, c["product_en"], c["product_zh"]),
+           "inLanguage": ("zh-CN" if lang == "zh" else "en"),
+           "publisher": {"@type": "Organization", "name": "ETIA Label"}}
     write(lang, path, page(lang, path,
         _t(lang, c["title_en"] + " | ETIA Case Study", c["title_zh"] + " | ETIA 案例"),
-        _t(lang, c["app_en"] + " — " + c["product_en"], c["app_zh"] + " —— " + c["product_zh"]),
-        _t(lang, c["title_en"], c["title_zh"]), "", body, crumb, active="cases", hero=hero))
+        _t(lang, c["lead_en"], c["lead_zh"]),
+        _t(lang, c["title_en"], c["title_zh"]), "", body, crumb, schema_extra=[art], active="cases", hero=hero))
     if lang == "en": hp.track(path, "core")
 
 
