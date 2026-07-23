@@ -401,8 +401,15 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .indcar-wrap{position:relative;margin-top:20px}
 .indcar{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px}
 .indcar::-webkit-scrollbar{display:none}
-.indcar>.acard{flex:0 0 300px;scroll-snap-align:start}
-@media(max-width:600px){.indcar>.acard{flex:0 0 80%}}
+.indcar>.acard{flex:0 0 280px;scroll-snap-align:start}
+.indcar>.acard .acard-img{aspect-ratio:16/9}
+.acard-img.g0{background:linear-gradient(150deg,#1A56DB,#143C96)}
+.acard-img.g1{background:linear-gradient(150deg,#0e7490,#155e75)}
+.acard-img.g2{background:linear-gradient(150deg,#41A62A,#256d18)}
+.acard-img.g3{background:linear-gradient(150deg,#B45309,#7c2d12)}
+.acard-img.g4{background:linear-gradient(150deg,#334155,#0f172a)}
+.acard-img.g5{background:linear-gradient(150deg,#2563eb,#0e7490)}
+@media(max-width:600px){.indcar>.acard{flex:0 0 66%}.indcar>.acard .acard-img{aspect-ratio:16/10}}
 /* explore-by-application carousel (legacy) */
 .acar-wrap{position:relative;margin-top:8px}
 .acar{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:20px;border:1px solid var(--line);background:#fff;scrollbar-width:none}
@@ -1403,11 +1410,13 @@ def build_home(lang):
     # Solutions by Industry — image-card carousel (photo on top, copy below), arrows scroll the row
     cards=""
     for k,f in enumerate(T["focus"]):
-        img_html=('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">'%(esc(f["img"]),esc(f["name"]))) if f.get("img") else ""
+        # photo if supplied, else a clean gradient header with the industry icon
+        top=('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">'%(esc(f["img"]),esc(f["name"]))) if f.get("img") \
+            else ('<span class="aicon">%s</span>'%INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)])
         cards+=('<a class="acard" href="%s"><div class="acard-img g%d">%s</div>'
                 '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p>'
                 '<div class="acard-go">%s →</div></div></a>')%(
-            home_hlink(lang,FOCUS_URLS[k]), k%6, img_html,
+            home_hlink(lang,FOCUS_URLS[k]), k%6, top,
             esc(f["name"]), esc(f["desc"]), esc(T["explore"]))
     app_grid=('<div class="indcar-wrap"><button class="acar-nav prev" onclick="etaIndSlide(-1)" aria-label="Previous">&lsaquo;</button>'
               '<div class="indcar" id="indcar">%s</div>'
