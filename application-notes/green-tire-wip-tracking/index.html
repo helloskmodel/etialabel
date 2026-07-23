@@ -462,6 +462,13 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .afptbl th{background:var(--tint-blue);color:var(--blue-deep);font-weight:800;font-size:12px}
 .afptbl td:first-child{font-weight:800;color:var(--blue-deep)}.afptbl tr:last-child td{border-bottom:none}
 .aful{margin:12px 0 0;padding-left:20px}.aful li{margin:7px 0;font-size:15px;line-height:1.6;color:var(--ink)}
+.afck{list-style:none;padding:0;margin:12px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:8px 24px}
+.afck li{position:relative;padding-left:28px;font-size:15px;line-height:1.55;color:var(--ink)}
+.afck li:before{content:"✓";position:absolute;left:0;color:var(--green-d);font-weight:800}
+.affq{border-bottom:1px solid var(--line);padding:15px 0}.affq:last-child{border-bottom:none}
+.affq h3{font-size:15.5px;font-weight:800;color:var(--blue-deep);margin:0 0 6px}
+.affq p{font-size:14.5px;color:var(--ink);line-height:1.65;margin:0}
+@media(max-width:640px){.afck{grid-template-columns:1fr}}
 .afrel{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
 .afrel a{font-size:14px;font-weight:700;color:var(--blue-deep);border:1px solid var(--line);border-radius:20px;padding:7px 15px}
 .afimg{border:1px dashed #c2cde6;background:#f6f9ff;border-radius:12px;padding:14px 18px;margin-top:16px;color:#7d8db3;font-size:12.5px;line-height:1.5}
