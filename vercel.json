@@ -66,6 +66,26 @@
       "source": "/industries/circuit-board-pcb",
       "destination": "/industries/pcb-electronics-labeling-solutions/",
       "permanent": true
+    },
+    {
+      "source": "/industries/cable-labeling-solutions",
+      "destination": "/industries/wire-cable-labeling-solutions/",
+      "permanent": true
+    },
+    {
+      "source": "/industries/outdoor-labeling-solutions",
+      "destination": "/industries/outdoor-energy-labeling-solutions/",
+      "permanent": true
+    },
+    {
+      "source": "/industries/medical-labeling-solutions",
+      "destination": "/industries/medical-pharmaceutical-labeling-solutions/",
+      "permanent": true
+    },
+    {
+      "source": "/industries/steel-labeling-solutions",
+      "destination": "/industries/steel-metal-ceramic-labeling-solutions/",
+      "permanent": true
     }
   ]
 }
