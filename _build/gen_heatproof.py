@@ -1533,6 +1533,10 @@ def write_redirects():
       {"source":"/application-notes/green-tire-wip-tracking","destination":"/application-notes/tire-bead-labels/","permanent":True},
       {"source":"/industries/automotive-label-materials","destination":"/industries/automotive-labeling-solutions/","permanent":True},
       {"source":"/industries/circuit-board-pcb","destination":"/industries/pcb-electronics-labeling-solutions/","permanent":True},
+      {"source":"/industries/cable-labeling-solutions","destination":"/industries/wire-cable-labeling-solutions/","permanent":True},
+      {"source":"/industries/outdoor-labeling-solutions","destination":"/industries/outdoor-energy-labeling-solutions/","permanent":True},
+      {"source":"/industries/medical-labeling-solutions","destination":"/industries/medical-pharmaceutical-labeling-solutions/","permanent":True},
+      {"source":"/industries/steel-labeling-solutions","destination":"/industries/steel-metal-ceramic-labeling-solutions/","permanent":True},
     ]}
     open(os.path.join(ROOT,"vercel.json"),"w").write(json.dumps(cfg,indent=2)+"\n")
 

@@ -20,10 +20,10 @@
   "focus_urls": [
     "/industries/automotive-labeling-solutions/",
     "/industries/pcb-electronics-labeling-solutions/",
-    "/industries/medical-labeling-solutions/",
-    "/industries/cable-labeling-solutions/",
-    "/industries/outdoor-labeling-solutions/",
-    "/industries/steel-labeling-solutions/"
+    "/industries/medical-pharmaceutical-labeling-solutions/",
+    "/industries/wire-cable-labeling-solutions/",
+    "/industries/outdoor-energy-labeling-solutions/",
+    "/industries/steel-metal-ceramic-labeling-solutions/"
   ],
   "en": {
     "nav": [
@@ -75,12 +75,12 @@
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-electronics-pcb.png"
       },
       {
-        "name": "Medical & Life Sciences",
+        "name": "Medical & Pharmaceutical",
         "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-medical-laboratory.png"
       },
       {
-        "name": "Cable & Wire",
+        "name": "Wire & Cable",
         "desc": "Durable marking for wire, cable and harness assemblies.",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-wire-cable.png"
       },
@@ -90,7 +90,7 @@
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-outdoor-energy.png"
       },
       {
-        "name": "Steel & Metals",
+        "name": "Steel, Metal & Ceramic",
         "desc": "High-temperature and storage-tough identification for metal processing.",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-metals-ceramics.png"
       }
@@ -223,7 +223,7 @@
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-electronics-pcb.png"
       },
       {
-        "name": "医疗与生命科学",
+        "name": "医疗与制药",
         "desc": "经受灭菌与冷藏的器械、诊断与实验室标识",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-medical-laboratory.png"
       },
@@ -238,7 +238,7 @@
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-outdoor-energy.png"
       },
       {
-        "name": "钢铁与金属",
+        "name": "钢铁、金属与陶瓷",
         "desc": "面向金属加工的耐高温与耐存放标识",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-metals-ceramics.png"
       }
@@ -371,12 +371,12 @@
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-electronics-pcb.png"
       },
       {
-        "name": "Medical & Life Sciences",
+        "name": "Medical & Pharmaceutical",
         "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-medical-laboratory.png"
       },
       {
-        "name": "Cable & Wire",
+        "name": "Wire & Cable",
         "desc": "Durable marking for wire, cable and harness assemblies.",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-wire-cable.png"
       },
@@ -386,7 +386,7 @@
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-outdoor-energy.png"
       },
       {
-        "name": "Steel & Metals",
+        "name": "Steel, Metal & Ceramic",
         "desc": "High-temperature and storage-tough identification for metal processing.",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-metals-ceramics.png"
       }
@@ -519,12 +519,12 @@
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-electronics-pcb.png"
       },
       {
-        "name": "Medical & Life Sciences",
+        "name": "Medical & Pharmaceutical",
         "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-medical-laboratory.png"
       },
       {
-        "name": "Cable & Wire",
+        "name": "Wire & Cable",
         "desc": "Durable marking for wire, cable and harness assemblies.",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-wire-cable.png"
       },
@@ -534,7 +534,7 @@
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-outdoor-energy.png"
       },
       {
-        "name": "Steel & Metals",
+        "name": "Steel, Metal & Ceramic",
         "desc": "High-temperature and storage-tough identification for metal processing.",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-metals-ceramics.png"
       }
