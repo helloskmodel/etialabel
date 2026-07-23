@@ -125,8 +125,13 @@ nav .navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:
 nav.open .navlinks{display:flex}
 nav .navlinks>a,nav .navlinks .ndt{padding:14px 24px;font-size:16px;border-bottom:1px solid var(--bg)}
 nav .navlinks .nd,nav .navlinks .nd.ndwide{display:block;position:static}
-nav .navlinks .ndm.pm,nav .navlinks .caret{display:none}
-nav .navlinks .ndmob{display:block;background:#fff}
+nav .navlinks .ndm.pm{display:none}
+nav .navlinks .ndt{display:flex;align-items:center;justify-content:space-between}
+nav .navlinks .ndt .caret{display:inline-block;font-size:15px;color:var(--faint);transition:.15s}
+nav .navlinks .nd.mopen .ndt,nav .navlinks .nd.mopen .ndt .caret{color:var(--blue)}
+nav .navlinks .nd.mopen .ndt .caret{transform:rotate(180deg)}
+nav .navlinks .ndmob{display:none;background:#fff}
+nav .navlinks .nd.mopen .ndmob{display:block}
 .ndmob .ndmr{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:none;border:none;font-family:inherit;font-size:16px;font-weight:600;color:var(--ink);padding:16px 24px;border-bottom:1px solid var(--line);cursor:pointer}
 .ndmob .ndmi{flex:none;width:26px;height:26px;color:var(--green-d);display:flex;align-items:center;justify-content:center}
 .ndmob .ndmi svg{width:24px;height:24px}
@@ -582,7 +587,7 @@ def products_dropdown(lang, linkfn):
     pmcls = "ndm pm" if has_kids else "ndm pm pm2"
     sub_col = ('<div class="ndsub">%s</div>' % subs) if has_kids else ""
     return ('<div class="nd ndwide" onmouseenter="etaOpen(this)" onmouseleave="etaClose(this)">'
-            '<a class="ndt" href="%s">%s <span class="caret">&#9662;</span></a>'
+            '<a class="ndt" href="%s" onclick="return etaProd(this,event)">%s <span class="caret">&#9662;</span></a>'
             '<div class="%s">'
             '<div class="ndrail"><div class="ndrail-h">%s</div>%s</div>'
             '<div class="ndmid">%s</div>'
@@ -781,6 +786,7 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
 function etaMenu(b){var n=b.closest('nav');if(n)n.classList.toggle('open');}
 function etaMob(b){var g=b.closest('.ndmg');if(g)g.classList.toggle('open');}
+function etaProd(b,e){if(window.innerWidth<=900){if(e&&e.preventDefault)e.preventDefault();b.closest('.nd').classList.toggle('mopen');return false;}return true;}
 function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
 function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
 if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
@@ -1202,10 +1208,12 @@ def home_nav(lang):
     prod=products_dropdown(lang, lf)
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
-    # top nav after the Products dropdown: Application Notes, Service (nav[2:])
+    cs_lbl={"en":"Case Studies","zh":"案例","vi":"Nghiên cứu điển hình","th":"กรณีศึกษา"}.get(lang,"Case Studies")
+    cs_link='<a href="%s">%s</a>'%(lf("/case-studies/"),esc(cs_lbl))
+    # top nav after the Products dropdown: Case Studies, Application Notes, Service (nav[2:])
     links="".join('<a href="%s">%s</a>'%(lf(h),esc(lbl)) for h,lbl in zip(hrefs,T["nav"][2:]))
-    return '<nav><div class="navlinks">%s%s%s</div>%s%s</nav>' % (
-        home_link, prod, links, home_switcher(lang), NAV_TOGGLE)
+    return '<nav><div class="navlinks">%s%s%s%s</div>%s%s</nav>' % (
+        home_link, prod, cs_link, links, home_switcher(lang), NAV_TOGGLE)
 
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
@@ -1460,6 +1468,7 @@ def build_home(lang):
 function etaOpen(n){clearTimeout(n._t);n.classList.add('open');}
 function etaMenu(b){var n=b.closest('nav');if(n)n.classList.toggle('open');}
 function etaMob(b){var g=b.closest('.ndmg');if(g)g.classList.toggle('open');}
+function etaProd(b,e){if(window.innerWidth<=900){if(e&&e.preventDefault)e.preventDefault();b.closest('.nd').classList.toggle('mopen');return false;}return true;}
 function etaClose(n){n._t=setTimeout(function(){n.classList.remove('open');},180);}
 function etaSub(b,s){var m=b?b.closest('.ndm'):(document.querySelector('.nd.open .ndm')||document.querySelector('.ndm'));if(!m)return;
 if(b&&b.classList&&b.classList.contains('axitem'))m.querySelectorAll('.axitem').forEach(function(x){x.classList.toggle('on',x===b);});
