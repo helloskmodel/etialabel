@@ -11,6 +11,7 @@ sys.path.insert(0, BUILD)
 import gen_heatproof as hp
 import gen_autoapps as autoapps
 import gen_pcb as pcb
+import gen_industry as industry
 import gen_apex as apex
 import gen_e2712 as e2712
 import gen_polyimide as polyimide
@@ -20,8 +21,9 @@ import gen_appnote_full as appnote_full
 import gen_appnotes as appnotes
 
 hp.main()        # clean + build shell: home, products hub, core/legal, nav/footer, base vercel.json
-autoapps.main()  # Automotive Label Solutions — E-Label sector (owns /industries/automotive-label-materials/)
-pcb.main()       # Circuit Board & PCB Labels — 4 processes incl. ESD-Safe (owns /industries/circuit-board-pcb/)
+# NB: gen_autoapps is imported (its PROP/PROP_ZH vocab is reused by gen_appnotes) but no
+# longer builds a landing — the industry hubs below own the automotive + PCB pages.
+industry.main()  # Industry landing hubs — shared layout (owns automotive + PCB landing pages, EN+ZH)
 apex.main()      # Apex Series — next-gen PCB polyimide (owns /products/apex-series/)
 e2712.main()     # E-2712 — dual anti-static polyester, the E-Label ESD pick (owns /products/e-2712/)
 polyimide.main() # Polyimide Label Materials — technical page + full product line (owns /products/polyimide-label-materials/)
