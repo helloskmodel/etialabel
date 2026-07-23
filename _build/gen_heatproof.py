@@ -397,6 +397,12 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .pcard .pcode{display:inline-block;align-self:flex-start;font-size:11px;font-weight:800;color:var(--green-d);letter-spacing:.03em;background:var(--tint-green);border:1px solid #d5e6cf;border-radius:7px;padding:2px 8px;margin-top:9px;flex:0}
 .pcard .acard-go{margin-top:auto;padding-top:12px}
 @media(max-width:1180px){.acgrid{grid-template-columns:repeat(3,1fr)}}
+/* Solutions by Industry — image-card carousel */
+.indcar-wrap{position:relative;margin-top:20px}
+.indcar{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px}
+.indcar::-webkit-scrollbar{display:none}
+.indcar>.acard{flex:0 0 300px;scroll-snap-align:start}
+@media(max-width:600px){.indcar>.acard{flex:0 0 80%}}
 /* explore-by-application carousel (legacy) */
 .acar-wrap{position:relative;margin-top:8px}
 .acar{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:20px;border:1px solid var(--line);background:#fff;scrollbar-width:none}
@@ -1394,16 +1400,18 @@ def build_home(lang):
     why_html="".join('<div class="why"><div class="ic">%s</div><div class="txt"><b>%s</b><p class="wexp">%s</p></div></div>'%(
         WHY_ICONS[k%len(WHY_ICONS)],esc(head),esc(text)) for k,(head,text) in enumerate(T["why"]))
     why_close=('<p class="whyclose">%s</p>'%esc(T["why_close"])) if T.get("why_close") else ""
-    # Explore by Application — six cards (image on top, copy below; all six visible, animate on hover)
+    # Solutions by Industry — image-card carousel (photo on top, copy below), arrows scroll the row
     cards=""
     for k,f in enumerate(T["focus"]):
         img_html=('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">'%(esc(f["img"]),esc(f["name"]))) if f.get("img") else ""
-        cards+=('<a class="acard" href="%s"><div class="acard-img g%d">%s<span class="aicon">%s</span></div>'
+        cards+=('<a class="acard" href="%s"><div class="acard-img g%d">%s</div>'
                 '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p>'
                 '<div class="acard-go">%s →</div></div></a>')%(
-            home_hlink(lang,FOCUS_URLS[k]), k%6, img_html, INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)],
+            home_hlink(lang,FOCUS_URLS[k]), k%6, img_html,
             esc(f["name"]), esc(f["desc"]), esc(T["explore"]))
-    app_grid='<div class="acgrid">%s</div>'%cards
+    app_grid=('<div class="indcar-wrap"><button class="acar-nav prev" onclick="etaIndSlide(-1)" aria-label="Previous">&lsaquo;</button>'
+              '<div class="indcar" id="indcar">%s</div>'
+              '<button class="acar-nav next" onclick="etaIndSlide(1)" aria-label="Next">&rsaquo;</button></div>')%cards
     # Most Popular Products — same card pattern (image top), application name as title, model small
     PROD_ICON=[1,2,0,3,2,4]
     pcards=""
@@ -1479,6 +1487,7 @@ m.querySelectorAll('.midgroup').forEach(function(p){p.style.display=(p.getAttrib
 var mg=m.querySelector('.midgroup[data-mid="'+a+'"]');var first=mg?mg.querySelector('.axitem.haskid'):null;
 etaSub(first,first?first.getAttribute('data-sub'):'');}
 function etaSlide(d){var c=document.getElementById('acar');if(c)c.scrollBy({left:d*c.clientWidth,behavior:'smooth'});}
+function etaIndSlide(d){var c=document.getElementById('indcar');if(c)c.scrollBy({left:d*Math.min(628,Math.max(300,c.clientWidth*0.85)),behavior:'smooth'});}
 function etaSample(e){e.preventDefault();var g=function(i){var el=document.getElementById(i);return el?el.value:'';};
 var b='Email: '+g('fs-email')+'%%0D%%0APhone: '+g('fs-phone')+'%%0D%%0AAddress: '+g('fs-addr')+'%%0D%%0A%%0D%%0APlease send free samples.';
 window.location.href='mailto:label@etia-tech.com?subject=Free%%20Sample%%20Request&body='+b;return false;}</script>
