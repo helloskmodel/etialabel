@@ -356,8 +356,15 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .indcar-wrap{position:relative;margin-top:20px}
 .indcar{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px}
 .indcar::-webkit-scrollbar{display:none}
-.indcar>.acard{flex:0 0 300px;scroll-snap-align:start}
-@media(max-width:600px){.indcar>.acard{flex:0 0 80%}}
+.indcar>.acard{flex:0 0 280px;scroll-snap-align:start}
+.indcar>.acard .acard-img{aspect-ratio:16/9}
+.acard-img.g0{background:linear-gradient(150deg,#1A56DB,#143C96)}
+.acard-img.g1{background:linear-gradient(150deg,#0e7490,#155e75)}
+.acard-img.g2{background:linear-gradient(150deg,#41A62A,#256d18)}
+.acard-img.g3{background:linear-gradient(150deg,#B45309,#7c2d12)}
+.acard-img.g4{background:linear-gradient(150deg,#334155,#0f172a)}
+.acard-img.g5{background:linear-gradient(150deg,#2563eb,#0e7490)}
+@media(max-width:600px){.indcar>.acard{flex:0 0 66%}.indcar>.acard .acard-img{aspect-ratio:16/10}}
 /* explore-by-application carousel (legacy) */
 .acar-wrap{position:relative;margin-top:8px}
 .acar{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:20px;border:1px solid var(--line);background:#fff;scrollbar-width:none}
@@ -447,7 +454,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 <style>
 /* industry pages run tighter than the global rhythm to keep the hub scannable */
 .blk{padding:26px 0}
-.inhero{background:linear-gradient(115deg,rgba(9,24,64,.94),rgba(16,44,120,.72) 55%,rgba(26,86,219,.42)),url('https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-electronics-pcb.png') center/cover no-repeat, #0c2555;color:#fff}
+.inhero{background:linear-gradient(115deg,rgba(9,24,64,.94),rgba(16,44,120,.72) 55%,rgba(26,86,219,.42)), #0c2555;color:#fff}
 .inhero .wrap{padding:46px 24px}.inhero .eyebrow{color:#9dbcff;font-size:12px;font-weight:800;letter-spacing:.08em}
 .inhero h1{color:#fff;font-size:38px;font-weight:800;line-height:1.14;margin:8px 0 6px;max-width:20em}
 .inhero .isub{color:#cfe0ff;font-size:19px;font-weight:700;line-height:1.35;margin:0 0 14px;max-width:26em}

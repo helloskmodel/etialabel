@@ -49,7 +49,7 @@ UI = {
 DATA = {
  "automotive": {
   "slug": "automotive-labeling-solutions",
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-automotive-tire.png",
+  "banner": "",
   "hero_alt": ("Automotive component on the assembly line carrying a barcode identification label",
                "汽车装配线上带条码标识标签的零部件"),
   "eyebrow": ("INDUSTRY LABELING SOLUTIONS", "行业标签解决方案"),
@@ -106,7 +106,7 @@ DATA = {
  },
  "pcb": {
   "slug": "pcb-electronics-labeling-solutions",
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-electronics-pcb.png",
+  "banner": "",
   "hero_alt": ("Printed circuit board carrying a barcode identification label during assembly",
                "贴装过程中带条码标识标签的印刷电路板"),
   "eyebrow": ("INDUSTRY LABELING SOLUTIONS", "行业标签解决方案"),
@@ -164,7 +164,7 @@ DATA = {
  },
  "cable": {
   "slug": "wire-cable-labeling-solutions",
-  "banner": _HERO + "hero-wire-cable.png",
+  "banner": "",
   "hero_alt": ("Bundled wires and cables carrying identification markers", "带标识的成束线缆"),
   "eyebrow": ("INDUSTRY LABELING SOLUTIONS", "行业标签解决方案"),
   "title": ("Wire & Cable Labeling Solutions", "线缆标签解决方案"),
@@ -232,7 +232,7 @@ DATA = {
  },
  "outdoor": {
   "slug": "outdoor-energy-labeling-solutions",
-  "banner": _HERO + "hero-outdoor-energy.png",
+  "banner": "",
   "hero_alt": ("Outdoor energy equipment carrying a weatherable rating label", "带耐候铭牌的户外能源设备"),
   "eyebrow": ("INDUSTRY LABELING SOLUTIONS", "行业标签解决方案"),
   "title": ("Outdoor & Energy Labeling Solutions", "户外与能源标签解决方案"),
@@ -305,7 +305,7 @@ DATA = {
  },
  "steel": {
   "slug": "steel-metal-ceramic-labeling-solutions",
-  "banner": _HERO + "hero-metals-ceramics.png",
+  "banner": "",
   "hero_alt": ("Steel coils in storage carrying identification tags", "存放中带标识挂签的钢卷"),
   "eyebrow": ("INDUSTRY LABELING SOLUTIONS", "行业标签解决方案"),
   "title": ("Steel, Metal & Ceramic Labeling Solutions", "钢铁、金属与陶瓷标签解决方案"),
@@ -375,7 +375,7 @@ DATA = {
  },
  "medical": {
   "slug": "medical-pharmaceutical-labeling-solutions",
-  "banner": _HERO + "hero-medical-laboratory.png",
+  "banner": "",
   "hero_alt": ("Medical device and laboratory vials carrying identification labels", "带标识标签的医疗器械与实验室样品瓶"),
   "eyebrow": ("INDUSTRY LABELING SOLUTIONS", "行业标签解决方案"),
   "title": ("Medical, Pharmaceutical & Life Science Labeling Solutions", "医疗、制药与生命科学标签解决方案"),
