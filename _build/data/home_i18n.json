@@ -18,7 +18,12 @@
     "th": "TH"
   },
   "focus_urls": [
-    "/industries/automotive-labeling-solutions/"
+    "/industries/automotive-labeling-solutions/",
+    "/industries/pcb-electronics-labeling-solutions/",
+    "/industries/medical-labeling-solutions/",
+    "/industries/cable-labeling-solutions/",
+    "/industries/outdoor-labeling-solutions/",
+    "/industries/steel-labeling-solutions/"
   ],
   "en": {
     "nav": [
@@ -54,17 +59,40 @@
         "We provide testing, inspection, slitting, die-cutting, and converting tailored to the application."
       ]
     ],
-    "appc_eyebrow": "EXPLORE BY APPLICATION",
-    "appc_title": "Proven Materials for Demanding Applications",
-    "appc_sub": "Explore label materials selected for specific industries, processes, surfaces, temperatures, and identification challenges.",
-    "appc_viewall": "View All Applications",
+    "appc_eyebrow": "SOLUTIONS BY INDUSTRY",
+    "appc_title": "Solutions by Industry",
+    "appc_sub": "Pick your industry to see recommended labeling solutions, challenges and applications.",
+    "appc_viewall": "View All Industries",
     "focus": [
       {
         "name": "Automotive",
-        "headline": "Durable Identification for Automotive and Rubber Processing",
-        "desc": "Durable labels for automotive manufacturing and tire traceability.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
+        "desc": "Vehicle, tire, battery and component identification across the lifecycle.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-automotive-tire.png"
+      },
+      {
+        "name": "PCB & Electronics",
+        "desc": "Reflow-, wash- and ESD-safe identification through electronics manufacturing.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-electronics-pcb.png"
+      },
+      {
+        "name": "Medical & Life Sciences",
+        "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-medical-laboratory.png"
+      },
+      {
+        "name": "Cable & Wire",
+        "desc": "Durable marking for wire, cable and harness assemblies.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-wire-cable.png"
+      },
+      {
+        "name": "Outdoor & Energy",
+        "desc": "Weatherable identification that survives years outdoors.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-outdoor-energy.png"
+      },
+      {
+        "name": "Steel & Metals",
+        "desc": "High-temperature and storage-tough identification for metal processing.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-metals-ceramics.png"
       }
     ],
     "explore": "View Application",
@@ -179,17 +207,40 @@
         "围绕实际应用提供测试、检验、分切、模切及定制加工。"
       ]
     ],
-    "appc_eyebrow": "按应用探索",
-    "appc_title": "面向严苛应用的精选材料",
-    "appc_sub": "根据具体行业、工艺、表面、温度及标识要求，探索适合的标签材料与解决方案。",
-    "appc_viewall": "查看全部应用",
+    "appc_eyebrow": "按行业浏览",
+    "appc_title": "按行业选择方案",
+    "appc_sub": "选择你的行业,查看推荐的标签方案、挑战与应用",
+    "appc_viewall": "查看全部行业",
     "focus": [
       {
         "name": "汽车",
-        "headline": "汽车与橡胶加工耐久标识",
-        "desc": "用于汽车制造与轮胎追溯的耐久标签材料。",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
+        "desc": "覆盖全生命周期的车辆、轮胎、电池与零部件标识",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-automotive-tire.png"
+      },
+      {
+        "name": "PCB 与电子",
+        "desc": "贯穿电子制造的回流、水洗与防静电标识",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-electronics-pcb.png"
+      },
+      {
+        "name": "医疗与生命科学",
+        "desc": "经受灭菌与冷藏的器械、诊断与实验室标识",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-medical-laboratory.png"
+      },
+      {
+        "name": "线缆",
+        "desc": "面向线缆与线束的耐用标识",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-wire-cable.png"
+      },
+      {
+        "name": "户外与能源",
+        "desc": "经久户外的耐候标识",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-outdoor-energy.png"
+      },
+      {
+        "name": "钢铁与金属",
+        "desc": "面向金属加工的耐高温与耐存放标识",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-metals-ceramics.png"
       }
     ],
     "explore": "查看应用",
@@ -304,17 +355,40 @@
         "Chúng tôi cung cấp thử nghiệm, kiểm tra, xẻ cuộn, bế và gia công theo từng ứng dụng."
       ]
     ],
-    "appc_eyebrow": "TRUNG TÂM ỨNG DỤNG",
-    "appc_title": "Tìm ứng dụng của bạn.",
-    "appc_sub": "Khám phá vật liệu nhãn bền vững được lựa chọn theo từng quy trình, môi trường và yêu cầu nhận diện cụ thể.",
-    "appc_viewall": "Xem tất cả ứng dụng",
+    "appc_eyebrow": "SOLUTIONS BY INDUSTRY",
+    "appc_title": "Solutions by Industry",
+    "appc_sub": "Pick your industry to see recommended labeling solutions, challenges and applications.",
+    "appc_viewall": "View All Industries",
     "focus": [
       {
-        "name": "Ô tô",
-        "headline": "Nhận diện bền vững cho sản xuất ô tô và cao su",
-        "desc": "Nhãn bền cho sản xuất ô tô và truy xuất nguồn gốc lốp xe.",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
+        "name": "Automotive",
+        "desc": "Vehicle, tire, battery and component identification across the lifecycle.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-automotive-tire.png"
+      },
+      {
+        "name": "PCB & Electronics",
+        "desc": "Reflow-, wash- and ESD-safe identification through electronics manufacturing.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-electronics-pcb.png"
+      },
+      {
+        "name": "Medical & Life Sciences",
+        "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-medical-laboratory.png"
+      },
+      {
+        "name": "Cable & Wire",
+        "desc": "Durable marking for wire, cable and harness assemblies.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-wire-cable.png"
+      },
+      {
+        "name": "Outdoor & Energy",
+        "desc": "Weatherable identification that survives years outdoors.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-outdoor-energy.png"
+      },
+      {
+        "name": "Steel & Metals",
+        "desc": "High-temperature and storage-tough identification for metal processing.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-metals-ceramics.png"
       }
     ],
     "explore": "Khám phá",
@@ -429,17 +503,40 @@
         "เราให้บริการทดสอบ ตรวจสอบ กรีด ปั๊มขึ้นรูป และแปรรูปตามการใช้งาน"
       ]
     ],
-    "appc_eyebrow": "ศูนย์รวมการใช้งาน",
-    "appc_title": "ค้นหาการใช้งานของคุณ",
-    "appc_sub": "สำรวจวัสดุฉลากที่ทนทานซึ่งคัดเลือกตามกระบวนการ สภาพแวดล้อม และข้อกำหนดด้านการระบุข้อมูลแต่ละประเภท",
-    "appc_viewall": "ดูการใช้งานทั้งหมด",
+    "appc_eyebrow": "SOLUTIONS BY INDUSTRY",
+    "appc_title": "Solutions by Industry",
+    "appc_sub": "Pick your industry to see recommended labeling solutions, challenges and applications.",
+    "appc_viewall": "View All Industries",
     "focus": [
       {
-        "name": "ยานยนต์",
-        "headline": "การระบุข้อมูลที่ทนทานสำหรับการผลิตยานยนต์และยาง",
-        "desc": "ฉลากที่ทนทานสำหรับการผลิตยานยนต์และการตรวจสอบย้อนกลับของยาง",
-        "tags": [],
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO.jpg"
+        "name": "Automotive",
+        "desc": "Vehicle, tire, battery and component identification across the lifecycle.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-automotive-tire.png"
+      },
+      {
+        "name": "PCB & Electronics",
+        "desc": "Reflow-, wash- and ESD-safe identification through electronics manufacturing.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-electronics-pcb.png"
+      },
+      {
+        "name": "Medical & Life Sciences",
+        "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-medical-laboratory.png"
+      },
+      {
+        "name": "Cable & Wire",
+        "desc": "Durable marking for wire, cable and harness assemblies.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-wire-cable.png"
+      },
+      {
+        "name": "Outdoor & Energy",
+        "desc": "Weatherable identification that survives years outdoors.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-outdoor-energy.png"
+      },
+      {
+        "name": "Steel & Metals",
+        "desc": "High-temperature and storage-tough identification for metal processing.",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/hero-metals-ceramics.png"
       }
     ],
     "explore": "สำรวจ",

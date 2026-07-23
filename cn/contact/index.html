@@ -352,6 +352,12 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .pcard .pcode{display:inline-block;align-self:flex-start;font-size:11px;font-weight:800;color:var(--green-d);letter-spacing:.03em;background:var(--tint-green);border:1px solid #d5e6cf;border-radius:7px;padding:2px 8px;margin-top:9px;flex:0}
 .pcard .acard-go{margin-top:auto;padding-top:12px}
 @media(max-width:1180px){.acgrid{grid-template-columns:repeat(3,1fr)}}
+/* Solutions by Industry — image-card carousel */
+.indcar-wrap{position:relative;margin-top:20px}
+.indcar{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px}
+.indcar::-webkit-scrollbar{display:none}
+.indcar>.acard{flex:0 0 300px;scroll-snap-align:start}
+@media(max-width:600px){.indcar>.acard{flex:0 0 80%}}
 /* explore-by-application carousel (legacy) */
 .acar-wrap{position:relative;margin-top:8px}
 .acar{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:20px;border:1px solid var(--line);background:#fff;scrollbar-width:none}
