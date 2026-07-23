@@ -317,7 +317,7 @@ def build(lang):
 
     # faq
     faq = "".join('<div class="pifaqi"><h3>%s</h3><p>%s</p></div>' % (T(qe, qz), T(ae, az))
-                  for qe, qz, ae, az in FAQ)
+                  for qe, qz, ae, az in FAQ[:3])
     faqblk = '<section class="blk alt"><div class="wrap"><h2>%s</h2><div class="pifaq">%s</div></div></section>' % (
         T("FAQ", "常见问题"), faq)
 
@@ -331,13 +331,15 @@ def build(lang):
         contact, T("Request Free Samples", "索取免费样品"),
         contact, T("Talk to an Application Engineer", "咨询应用工程师"))
 
-    body = (CSS + proof + whyblk + layerblk + orh1blk + esdblk + apexblk + lineblk
-            + appblk + printblk + faqblk + finalcta)
+    # Trimmed: drop the prose essays (proof / three-layers / print-performance) and
+    # keep the spec tables + product line — a product page should be scannable, not an essay.
+    body = (CSS + whyblk + orh1blk + esdblk + apexblk + lineblk
+            + appblk + faqblk + finalcta)
     sname = _t(lang, "Polyimide Label Materials", "聚酰亚胺标签材料")
     crumb = [(_t(lang, "Home", "首页"), "/"), (_t(lang, "Products", "产品"), "/products/"), (sname, PATH)]
     faq_schema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": _t(lang, qe, qz),
-         "acceptedAnswer": {"@type": "Answer", "text": _t(lang, ae, az)}} for qe, qz, ae, az in FAQ]}
+         "acceptedAnswer": {"@type": "Answer", "text": _t(lang, ae, az)}} for qe, qz, ae, az in FAQ[:3]]}
     write(lang, PATH, page(lang, PATH,
         _t(lang, "Polyimide Label Materials for PCB & Electronics | ETIA",
                  "PCB 与电子用聚酰亚胺标签材料 | ETIA"),
