@@ -115,22 +115,19 @@ def build_article(lang, a, s):
     # Considerations -> Recommended Products -> ETIA Recommendation -> ETIA Support.
     # Keep the prose lean — one short line per section; the data does the talking.
     if zh:
-        heads = ("应用", "用错标签的风险", "材料选型考量", "推荐产品", "ETIA 推荐", "ETIA 支持")
+        heads = ("用途", "标签需要做到什么", "普通标签的问题", "正确的选择")
         p_app = purpose
-        p_risk2 = risk
-        p_mat = ("该应用需耐受:%s" % chal) if chal else ""
+        p_need = ("该应用中,标签需耐受:%s" % chal) if chal else "标签需在整个使用过程中保持牢固与可读"
+        p_prob = risk
         p_rec = ("针对该应用,ETIA 推荐 %s" % model) if model else ""
-        p_sup = "ETIA 提供应用评估、打样、供应与长期服务"
     else:
-        heads = ("Application", "Risks of Using the Wrong Label", "Material Considerations", "Recommended Products", "ETIA Recommendation", "ETIA Support")
+        heads = ("Application", "What the label needs to do", "The problem with an ordinary label", "The right choice")
         p_app = purpose
-        p_risk2 = risk
-        p_mat = ("This label must withstand %s." % _lc(chal)) if chal else ""
+        p_need = ("In this application the label must withstand %s." % _lc(chal)) if chal else "The label has to stay firmly attached and readable throughout use."
+        p_prob = risk
         p_rec = ("ETIA recommends %s for this application." % model) if model else ""
-        p_sup = "ETIA supports application review, sampling, supply and long-term service."
 
-    keys = ("APPLICATION", "RISKS OF THE WRONG LABEL", "MATERIAL CONSIDERATIONS",
-            "RECOMMENDED PRODUCTS", "ETIA RECOMMENDATION", "ETIA SUPPORT")
+    keys = ("APPLICATION", "WHAT IT MUST DO", "PROBLEM WITH AN ORDINARY LABEL", "THE RIGHT CHOICE")
 
     # matched product card(s) — Feature / Benefit / Specification
     prod_html = ""
@@ -155,12 +152,9 @@ def build_article(lang, a, s):
         return ('<div class="nnsec"><div class="num">%02d · %s</div><h2>%s</h2>%s</div>' % (
             num, esc(key), esc(heading), inner)) if inner else ""
     sec = _ns(1, keys[0], heads[0], _p(p_app))
-    sec += _ns(2, keys[1], heads[1], _p(p_risk2))
-    sec += _ns(3, keys[2], heads[2], _p(p_mat) + _chips(rec_items, "so"))
-    if prod_html:
-        sec += _ns(4, keys[3], heads[3], prod_html)
-    sec += _ns(5, keys[4], heads[4], _p(p_rec))
-    sec += _ns(6, keys[5], heads[5], _p(p_sup))
+    sec += _ns(2, keys[1], heads[1], _p(p_need) + _chips(ch_items, "ch"))
+    sec += _ns(3, keys[2], heads[2], _p(p_prob))
+    sec += _ns(4, keys[3], heads[3], _p(p_rec) + prod_html)
 
     area = ('<span class="anarea">%s</span>' % esc(area_txt)) if area_txt else ""
     body = CSS + CSS_NOTE + ('<section class="blk"><div class="wrap anwrap">%s%s</div></section>'
