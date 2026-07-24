@@ -41,10 +41,12 @@ _build/
 /products/item/<line>/            产品线页(600字)   ┐ 三路径共用终点
 /products/item/<sku>/             单品页(300字)     ┘
 /application-notes/<slug>/        应用笔记
+/news/                            News/Insights 新闻·洞察 hub
+/news/<slug>/                     文章(营销洞察 + 未来泰国/越南公司介绍)
 /about/  /service/  /contact/     公司/服务/联系
 /privacy/ /cookies/ /terms/       法律
 ```
-**三条路径同一套设计,最终都落到同一个产品页。** Cases 第一期不上。
+**三条路径同一套设计,最终都落到同一个产品页。** Cases 第一期不上;**News 本期开**(先放 Wire&Cable「采购必看」软文,未来放 TH/VI 公司介绍)。
 
 ## 4. 本期 6 个行业(按序)
 1. **PCB**  `/products/by-industry/pcb/`  — ✅ 内容已给
@@ -76,6 +78,10 @@ _build/
 ## 7. 应用笔记 `/application-notes/<slug>/`
 **按产品来写**,每篇 **600 字**;带 **行业 / 材料 / 环境** 标签;**末尾附产品链接**。
 已有:ESD-PCB、轮胎胎唇、VIN、导管UV固化。
+
+## 7.5 News / Insights `/news/<slug>/`
+文章型页面:标题 + 正文 + 可选标签(行业/产品链接)。本期首篇=Wire&Cable「采购必看」软文。
+未来用途:泰国、越南公司介绍。
 
 ## 8. 首页 `/`(结构已锁定,客户已给 EN+ZH)
 Hero → 蓝色服务条(✓) → Why ETIA → What We Offer → 合作品牌 → 联系CTA。约 300–450 词。
