@@ -1,0 +1,43 @@
+{
+  "slug": "wire-cable",
+  "source": "_docs/sources/wire-cable_ZH.md",
+  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-BANNER.jpg",
+  "hero": {
+    "eyebrow": {"zh": "按行业 · 通讯与线缆", "en": "", "th": "", "vi": ""},
+    "title": {"zh": "通讯与线缆行业标识", "en": "", "th": "", "vi": ""},
+    "slogan": {"zh": "可靠标识，保障系统安全运行", "en": "", "th": "", "vi": ""}
+  },
+  "overview": {
+    "zh": [
+      "在通讯传输、工业自控、新能源及车载电气系统中，线缆线束是设备运转的核心载体，专业标识是实现线路识别、运维检修、全周期追溯的关键基础。设备集成度、布线密度持续提升，线缆长期面临高频弯折、温湿度交变、复杂介质侵蚀等严苛工况，普通标签极易起翘脱落、字迹脱墨，威胁电气与通讯系统的稳定安全",
+      "随行业安全标准升级，阻燃、无卤、抗老化、高贴合已成为高端线缆标识的核心刚需。ETIA 按工况等级、阻燃性能与认证资质匹配专用线缆标识方案，长效稳固贴合、清晰留存、阻断火情隐患"
+    ],
+    "en": [], "th": [], "vi": []
+  },
+  "classify_by": {"zh": "按性能等级", "en": "", "th": "", "vi": ""},
+  "tiers": [
+    {
+      "name": {"zh": "高端阻燃 · 带UL认证", "en": "", "th": "", "vi": ""},
+      "intro": {"zh": "包含 Polyonics XF-603、1306 两款主力型号。全系无卤阻燃，拥有官方 UL 合规认证，具备耐高温、抗老化、耐化学腐蚀等优势，适用于航空、新能源、高端工控等严苛工况与高合规要求项目。", "en": "", "th": "", "vi": ""},
+      "products": [
+        {"name": "Polyonics XF-603", "line": {"zh": "1mil 无卤聚酰亚胺 · 峰值300℃ · UL94 VTM-0"}, "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-XF603.jpg", "landing": true},
+        {"name": "1306", "line": {"zh": "36μm 亚透明自覆膜 PET · UL/cUL"}, "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-APPLICATION.jpg", "landing": true}
+      ]
+    },
+    {
+      "name": {"zh": "常规阻燃 · 无UL认证", "en": "", "th": "", "vi": ""},
+      "intro": {"zh": "涵盖 E2931、E-6033 型号。采用无卤阻燃配方，粘贴附着力强，支持缠绕、对粘两种贴标方式，满足工业基础防火安全需求，性价比突出。", "en": "", "th": "", "vi": ""},
+      "products": [
+        {"name": "E2931", "line": {"zh": "无卤阻燃 · 缠绕/对粘"}, "img": "", "landing": false},
+        {"name": "E-6033", "line": {"zh": "无卤阻燃 · 规格待核实"}, "img": "", "landing": false}
+      ]
+    },
+    {
+      "name": {"zh": "经济通用 · 无阻燃无认证", "en": "", "th": "", "vi": ""},
+      "intro": {"zh": "代表型号 E4532。材质柔软、可轻松缠绕线缆，仅适配常温普通布线场景；无阻燃、无认证，主打基础线路标识功能。", "en": "", "th": "", "vi": ""},
+      "products": [
+        {"name": "E4532", "line": {"zh": "常温普通布线 · 无阻燃无认证"}, "img": "", "landing": false}
+      ]
+    }
+  ]
+}
