@@ -24,6 +24,8 @@ hp.main()        # clean + build shell: home, products hub, core/legal, nav/foot
 # NB: gen_autoapps is imported (its PROP/PROP_ZH vocab is reused by gen_appnotes) but no
 # longer builds a landing — the industry hubs below own the automotive + PCB pages.
 industry.main()  # Industry landing hubs — shared layout (owns automotive + PCB landing pages, EN+ZH)
+import render_industry  # v2 data-driven override: rebuilds Wire & Cable with the new design + real content
+render_industry.main()
 apex.main()      # Apex Series — next-gen PCB polyimide (owns /products/apex-series/)
 e2712.main()     # E-2712 — dual anti-static polyester, the E-Label ESD pick (owns /products/e-2712/)
 polyimide.main() # Polyimide Label Materials — technical page + full product line (owns /products/polyimide-label-materials/)
