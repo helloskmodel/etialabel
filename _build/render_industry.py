@@ -63,8 +63,8 @@ CSS = """
 .wcmcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
 .wcmcard{display:flex;gap:13px;align-items:center;background:#fff;border:1px solid #dbe3f1;border-radius:12px;padding:11px;text-decoration:none;color:#17203a;transition:box-shadow .15s,transform .15s}
 a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-2px)}
-.wcmcard img{width:64px;height:64px;border-radius:9px;object-fit:cover;flex:none;background:#e8eefb}
-.wcmcard .ph{width:64px;height:64px;border-radius:9px;flex:none;background:linear-gradient(135deg,#e8eefb,#d3e0f6)}
+.wcmcard .ic{width:56px;height:56px;border-radius:11px;flex:none;display:grid;place-items:center;background:#eef3fc;color:#1A56DB}
+.wcmcard .ic svg{width:28px;height:28px}
 .wcmcard .mn{font-size:15px;font-weight:800;margin:0}
 .wcmcard .ml{font-size:12px;color:#5a6884;margin:3px 0 0;line-height:1.4}
 .wcmcard .mgo{font-size:11.5px;font-weight:800;color:#1A56DB;margin-top:5px;display:block}
@@ -77,7 +77,7 @@ JS_TMPL = """
 (function(){
 var CATS=%(cats)s, GO=%(go)s, CS=%(consult)s;
 function card(p){
-  var im=p.img?('<img src="'+p.img+'" alt="" loading="lazy" onerror="this.outerHTML=\\'<span class=ph></span>\\'">'):'<span class="ph"></span>';
+  var im='<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7" cy="7" r="1.1"/></svg></span>';
   var inner=im+'<div><p class="mn">'+p.n+'</p><p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+'</span>'):('<span class="mgo">'+CS+'</span>'))+'</div>';
   return p.landing?'<a class="wcmcard" href="'+p.href+'">'+inner+'</a>':'<div class="wcmcard off">'+inner+'</div>';
 }
