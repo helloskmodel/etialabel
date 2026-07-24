@@ -6,6 +6,19 @@
 
 _定稿于 2026-07-24,客户逐条确认。_
 
+## 0.5 每个行业的 6 块内容（Definition of Done · 客户 2026-07-24 定）
+每个行业上线需备齐这 6 块,客户按此拆分供稿:
+| # | 内容块 | 落地页面 |
+|---|---|---|
+| 1 | Headline + Slogan | 行业页 Hero(两句) |
+| 2 | Overview | 行业页 Part 1(~300字) |
+| 3 | 产品分类 | 行业页 FlexCon Bar(按性能/工艺分档) |
+| 4 | 产品 Landing page | `/products/item/<sku>/`(产品线600 / 单品300,含图含下载) |
+| 5 | Application Notes(工程师视角) | `/application-notes/<slug>/` |
+| 6 | 采购文案 News | `/news/<slug>/`(上图下文字封面) |
+
+> 样板行业 = Wire & Cable。已完成 1/2/3/6;待补 4(XF-603·1306 产品页)与 5(XF-603 工程笔记)。
+
 ---
 
 ## 1. 技术架构(一套数据驱动生成器)
