@@ -168,7 +168,7 @@ DATA = {
   "hero_alt": ("Bundled wires and cables carrying identification markers", "带标识的成束线缆"),
   "eyebrow": ("INDUSTRY LABELING SOLUTIONS", "行业标签解决方案"),
   "title": ("Wire & Cable Labeling Solutions", "线缆标签解决方案"),
-  "headline": ("Reliable Identification for Every Wire, Cable and Connection", "面向每一根线缆与每一处连接的可靠标识"),
+  "headline": ("Reliable identification that keeps systems running safely", "可靠标识，保障系统安全运行"),
   "intro": ("Clear wire and cable identification supports correct installation, faster maintenance and reliable troubleshooting across industrial equipment, electrical systems, telecommunications, transportation and infrastructure. ETIA helps manufacturers and system integrators select labeling solutions that remain attached and readable throughout production, installation and long-term service.",
             "清晰的线缆标识,支撑工业设备、电气系统、通信、交通与基础设施中的正确安装、更快维护与可靠排障 ETIA 帮助制造商与系统集成商选择在生产、安装与长期使用中始终不脱落、可读的标签方案"),
   "why_title": ("Why Wire & Cable Labeling Matters", "为什么线缆标签很重要"),
@@ -508,11 +508,12 @@ def build(lang, key):
     bg = ("url('%s') center/cover no-repeat," % d["banner"]) if d["banner"] else ""
     css = CSS.replace("__BG__", bg)
 
+    # Hero = two lines only: title + one-line slogan (no long paragraph).
     hero = ('<section class="inhero"><div class="wrap"><div class="eyebrow">%s</div>'
-            '<h1>%s</h1><div class="isub">%s</div><p>%s</p>'
+            '<h1>%s</h1><div class="isub">%s</div>'
             '<div class="inbtns"><a class="btn pri" href="#solutions">%s</a>'
             '<a class="btn on-dark" href="#guide">%s</a></div></div></section>') % (
-        T(d["eyebrow"]), T(d["title"]), T(d["headline"]), T(d["intro"]),
+        T(d["eyebrow"]), T(d["title"]), T(d["headline"]),
         U("primary_cta"), U("secondary_cta"))
 
     # "why" may be a single (en,zh) pair or a list of paragraph pairs
