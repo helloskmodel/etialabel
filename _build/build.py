@@ -32,6 +32,8 @@ polyimide.main() # Polyimide Label Materials — technical page + full product l
 environments.main() # Labels by Environment — heat / cold / chemical / abrasion hub (owns /environments/)
 casestudies.main()  # Case Studies — hub + one big landing page per case (owns /case-studies/)
 appnote_full.main() # Full engineering Application Notes per Standard V1.0 (hero + 7 sections)
+import gen_news
+gen_news.main()  # News / Insights hub + article pages
 appnotes.main()  # Application Notes — simple 4-section notes + hub (lists featured full notes too)
 
 # sitemaps + redirects run LAST so every sector's tracked URLs are included

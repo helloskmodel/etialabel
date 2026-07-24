@@ -1,0 +1,66 @@
+{
+  "articles": [
+    {
+      "slug": "cable-label-certifications",
+      "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-FLAME.jpg",
+      "tags": {"zh": ["线缆", "阻燃认证", "选型"], "en": ["Wire & Cable", "Certifications", "Selection"]},
+      "title": {"zh": "线缆标签采购核心认证科普", "en": "Cable-Label Certifications: What Buyers Must Know"},
+      "subtitle": {"zh": "阻燃只是基础，权威认证才是安全与准入的硬门槛", "en": "Flame retardance is the baseline — certification is the real gate for safety and market access"},
+      "lead": {"zh": "新能源、车载、航空、高端工业设备对电气安全要求严苛，线束标签看似不起眼，却是火灾防控里关键一环。很多人误以为只要材料能阻燃就足够，其实阻燃只是基础性能，各类国际标准与第三方认证的核心初衷，是通过权威机构统一、严谨的测试，量化验证材料真实安全性能，让生产、整机制造、终端使用全链条都有可靠安全背书，从制度层面规避起火蔓延、高温失效、燃烧毒烟伤人等各类风险。", "en": "New-energy, automotive, aerospace and high-end industrial equipment demand strict electrical safety, and the humble harness label is a key link in fire control. Many assume a flame-retardant material is enough, but flame retardance is only baseline performance. Standards and third-party certifications exist to quantify a material's real safety through rigorous, authoritative testing — giving production, assembly and end-use a reliable safety warrant against fire spread, high-temperature failure and toxic-smoke injury."},
+      "sections": {
+        "zh": [
+          {"h": "", "ps": ["行业各项标准的出台，统一了全球安全评判尺度，杜绝市面上“宣称阻燃却无实测依据”的劣质材料，从源头保障设备长期运行安全；同时各大海外品牌、细分行业都会以对应认证作为准入门槛，没有权威认证，即便标签自宣称阻燃，也无法进入当地供应链、不能配套终端产品流通销售。"]},
+          {"h": "四大核心安规标准释义", "ps": [
+            "UL94 VTM-0 Rated —— 薄膜类标签最高阻燃等级，经权威机构垂直燃烧测试，要求材料遇火快速自熄、无引燃滴落物，是线束防火安全的基础硬性指标。",
+            "UL969 Recognized —— 全球通用永久性标签认证，模拟高低温、湿热、油污、摩擦等长期工况，验证标签长期牢固、标识清晰，避免后期标识失效引发的检修与故障误判。",
+            "FMVSS 302 Tested —— 北美机动车内饰安全标准，规范车载材料燃烧速率，是北美车辆配套标签必备安全资质，无认证不得配套当地在售车型。",
+            "BSS7238/7239 + FAR25.853 —— 波音航空级烟毒安全标准，严控燃烧产烟量与有毒气体释放，适配密闭机舱场景，是航空供应链硬性安全门槛。"
+          ]},
+          {"h": "Polyonics XF-603 / XF-611 认证精准区分（原厂手册标准）", "ps": [
+            "XF-603（25μm PI 高温款）—— 具备 UL94 VTM-0、UL969、FMVSS302、REACH/RoHS 全套认证；无 BSS 航空烟毒资质，适配北美车载、储能、高温工业设备，满足汽车行业安全准入要求。",
+            "XF-611（38μm PET 通用款）—— 具备 UL94 VTM-0、UL969、BSS7238/7239、REACH/RoHS 全套认证；无 FMVSS302 汽车认证，适配航空、轨道交通、通用工控海外项目，匹配密闭空间高安全标准。"
+          ]},
+          {"h": "权威认证 = 安全落地保障，仅阻燃不足以支撑商用", "ps": ["市面上不少标签仅口头标注阻燃，缺少第三方权威检测背书，真实防火、耐久性能无法核实，存在极大安全隐患。各类国际标准与认证由专业机构实测出具，是可落地、可核验的安全凭证，也是进入海外市场、配套品牌整机的硬性条件。两款 Polyonics 阻燃标签分赛道配齐对应权威认证，既有实打实的阻燃安全性能，又具备完整第三方安全背书。"]}
+        ],
+        "en": [
+          {"h": "", "ps": ["These standards unify a global safety benchmark and shut out \"claims flame-retardant but has no test evidence\" materials. Overseas brands and industry segments treat the matching certification as a market-entry gate — without it, a label that self-claims flame retardance still cannot enter the local supply chain or ship with the end product."]},
+          {"h": "Four core safety standards", "ps": [
+            "UL94 VTM-0 Rated — the highest flame rating for film labels. Vertical-burn testing requires rapid self-extinguishing with no flaming drips; the baseline hard metric for harness fire safety.",
+            "UL969 Recognized — the global permanent-label certification. It simulates thermal cycling, humidity, oil and abrasion to verify long-term adhesion and legibility, preventing later identification failure.",
+            "FMVSS 302 Tested — the North American motor-vehicle interior standard governing burn rate; mandatory for labels supplied to vehicles sold in North America.",
+            "BSS7238/7239 + FAR25.853 — Boeing aerospace smoke-and-toxicity standards controlling smoke and toxic-gas release for enclosed cabins; a hard gate for the aviation supply chain."
+          ]},
+          {"h": "Polyonics XF-603 vs XF-611 (per the manufacturer's manual)", "ps": [
+            "XF-603 (25 µm PI, high-temp) — carries UL94 VTM-0, UL969, FMVSS302, REACH/RoHS; no BSS aviation smoke-toxicity rating. For North American automotive, energy-storage and high-temperature industrial equipment.",
+            "XF-611 (38 µm PET, general) — carries UL94 VTM-0, UL969, BSS7238/7239, REACH/RoHS; no FMVSS302 automotive rating. For aerospace, rail transit and general industrial-control export projects."
+          ]},
+          {"h": "Certification = verifiable safety; flame retardance alone isn't enough", "ps": ["Many labels only claim flame retardance without third-party test backing, so real fire and durability performance can't be verified — a major safety risk. Standards and certifications issued by professional labs are verifiable safety credentials and a hard condition for entering overseas markets. The two Polyonics labels carry the matching certifications for their respective lanes."]}
+        ]
+      }
+    },
+    {
+      "slug": "cable-label-buyers-guide",
+      "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-APPLICATION.jpg",
+      "tags": {"zh": ["线缆", "阻燃", "采购选型"], "en": ["Wire & Cable", "Flame-Retardant", "Procurement"]},
+      "title": {"zh": "采购必看：再也不用返工的线缆标签", "en": "Buyer's Guide: Cable Labels That End Rework"},
+      "subtitle": {"zh": "严格区分阻燃款与常规款，按工况适配，解决脱落、不防火、不耐用三大通病", "en": "Separate flame-retardant from standard grades, match the conditions, and end peeling, poor fire safety and short life"},
+      "lead": {"zh": "做工业线束采购、工程选型都懂：标签选型最忌讳只看低价，看似节省成本，批量上机后全是隐患返工。普通通用标签适配性差、稳定性弱，面对密集布线、高低温工况极易出问题，导致线路标识失效、运维出错，徒增售后与整改成本。", "en": "Anyone in industrial harness procurement knows: choosing labels on price alone looks cheaper but turns into rework in volume production. Generic labels adapt poorly and fail under dense routing and temperature extremes, causing identification failure and maintenance errors that add cost."},
+      "sections": {
+        "zh": [
+          {"h": "市面通用标签通病", "ps": ["布线紧凑、线缆反复弯折就翘边、卷边、开口脱落；多数平价标签无阻燃能力，设备高温发热、线路过载场景存在起火隐患；长期温差、油污环境下打印字迹极易模糊脱墨，线路溯源、设备检修毫无保障，是工业项目高频返工痛点。"]},
+          {"h": "专业阻燃款 · 安全兜底", "ps": ["专属无卤阻燃配方，遇火自熄、阻断火势蔓延，低烟无毒，从根源规避线路起火扩散风险。专为设备高温发热、密闭机房、高压布线等高安全场景打造，补齐普通标签防火短板。"]},
+          {"h": "强粘锁固 · 弯折震动不掉标", "ps": ["线束专用高粘阻燃胶，通过双 85 严苛老化测试，细线径对粘开口严控 ≤1.5mm。无惧长期震动、高低温交替冲击、线缆反复弯折，密集布线也能服帖贴合。"]},
+          {"h": "高清耐打 · 长效清晰不脱墨", "ps": ["专属耐磨打印涂层，热转印显色均匀饱满，耐油污、耐擦拭、抗腐蚀，长期恶劣工况依旧字迹清晰，全程保障线路标识可追溯。"]},
+          {"h": "全工况适配 · 通吃各类场景", "ps": ["全系覆盖 PI 聚酰亚胺、高端尼龙、PET 聚酯三大基材，细分阻燃专用款与常规耐用款，适配高温、深冷、常温全工况。汽车电子、工控设备、航空储能、精密电子等多领域均可稳固长效、安全合规，大幅降低售后返工率。"]}
+        ],
+        "en": [
+          {"h": "Common problems with generic labels", "ps": ["Under tight routing and repeated flexing they lift, curl and peel; most low-cost labels have no flame resistance and pose an ignition risk on hot or overloaded circuits; under temperature swings and oil, printed text smears — leaving traceability and maintenance unprotected. This is a frequent source of project rework."]},
+          {"h": "Professional flame-retardant grade — a safety backstop", "ps": ["A dedicated halogen-free flame-retardant construction self-extinguishes and contains fire spread with low smoke and no toxicity — built for hot equipment, enclosed rooms and high-voltage routing where ordinary labels fall short."]},
+          {"h": "Strong hold — no drop under flex or vibration", "ps": ["A high-tack harness adhesive passes dual-85 aging tests, with fine-gauge self-lap opening held ≤1.5 mm. It stays put through vibration, thermal shock and repeated flexing, even in dense routing."]},
+          {"h": "Sharp, durable print — legible for the long run", "ps": ["A dedicated abrasion-resistant topcoat gives even, saturated thermal-transfer print that resists oil, wiping and corrosion, keeping text legible through harsh conditions and traceable throughout."]},
+          {"h": "Fits every condition", "ps": ["The range spans PI polyimide, high-grade nylon and PET across flame-retardant and standard grades, covering high-temp, cryogenic and ambient. It serves automotive electronics, industrial control, aerospace, energy-storage and precision electronics — cutting after-sales rework."]}
+        ]
+      }
+    }
+  ]
+}

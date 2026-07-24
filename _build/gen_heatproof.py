@@ -496,12 +496,13 @@ NAV_ITEMS = [("Home", "/", "home"),
              ("Products", u_products(), "products"),
              ("Case Studies", "/case-studies/", "cases"),
              ("Application Notes", "/application-notes/", "insights"),
+             ("News", "/news/", "news"),
              ("Service", "/service/", "service")]
-NAV_ZH = {"Home":"首页","Products":"产品","Case Studies":"案例","Application Notes":"应用笔记","Insights":"洞察","Service":"服务"}
+NAV_ZH = {"Home":"首页","Products":"产品","Case Studies":"案例","Application Notes":"应用笔记","News":"新闻","Insights":"洞察","Service":"服务"}
 # 4-language nav / footer labels (keyed by the English label)
-NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Case Studies":"Nghiên cứu điển hình","Application Notes":"Ghi chú ứng dụng","Service":"Dịch vụ",
+NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Case Studies":"Nghiên cứu điển hình","Application Notes":"Ghi chú ứng dụng","News":"Tin tức","Service":"Dịch vụ",
           "Industries":"Ngành","About ETIA":"Về ETIA","Contact":"Liên hệ"}
-NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Case Studies":"กรณีศึกษา","Application Notes":"แอปพลิเคชันโน้ต","Service":"บริการ",
+NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Case Studies":"กรณีศึกษา","Application Notes":"แอปพลิเคชันโน้ต","News":"ข่าว","Service":"บริการ",
           "Industries":"อุตสาหกรรม","About ETIA":"เกี่ยวกับ ETIA","Contact":"ติดต่อ"}
 def navlab(lang, t):
     if lang == "zh": return NAV_ZH.get(t, t)
@@ -1227,8 +1228,12 @@ def home_nav(lang):
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
     cs_lbl={"en":"Case Studies","zh":"案例","vi":"Nghiên cứu điển hình","th":"กรณีศึกษา"}.get(lang,"Case Studies")
     cs_link='<a href="%s">%s</a>'%(lf("/case-studies/"),esc(cs_lbl))
-    # top nav after the Products dropdown: Case Studies, Application Notes, Service (nav[2:])
-    links="".join('<a href="%s">%s</a>'%(lf(h),esc(lbl)) for h,lbl in zip(hrefs,T["nav"][2:]))
+    # top nav after Products: Application Notes, News, Service
+    an_lbl={"en":"Application Notes","zh":"应用笔记","vi":"Ghi chú ứng dụng","th":"แอปพลิเคชันโน้ต"}.get(lang,"Application Notes")
+    news_lbl={"en":"News","zh":"新闻","vi":"Tin tức","th":"ข่าว"}.get(lang,"News")
+    sv_lbl={"en":"Service","zh":"服务","vi":"Dịch vụ","th":"บริการ"}.get(lang,"Service")
+    links=('<a href="%s">%s</a><a href="%s">%s</a><a href="%s">%s</a>'%(
+        lf("/application-notes/"),esc(an_lbl),lf("/news/"),esc(news_lbl),lf("/service/"),esc(sv_lbl)))
     return '<nav><div class="navlinks">%s%s%s%s</div>%s%s</nav>' % (
         home_link, prod, cs_link, links, home_switcher(lang), NAV_TOGGLE)
 
@@ -1559,7 +1564,7 @@ def clean():
     # NOTE: does NOT delete automotive-owned dirs (label-materials, brands are handled
     # by the orchestrator ordering); heatproof runs first, automotive layers on top.
     for d in ["products","industries","applications","application-notes","technical-resources","about","contact","zh","cn",
-              "materials","brands","insights","service","support","company","privacy","cookies","terms",
+              "materials","brands","insights","news","service","support","company","privacy","cookies","terms",
               "label-materials","popular","featured-solutions","vi","vn","th"]:
         p=os.path.join(ROOT,d)
         if os.path.isdir(p): shutil.rmtree(p)
