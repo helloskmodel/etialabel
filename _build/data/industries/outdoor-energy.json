@@ -1,0 +1,61 @@
+{
+  "slug": "outdoor-energy-labeling-solutions",
+  "source": "_docs/sources/outdoor-energy_ZH.md",
+  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOORBANNER.jpg",
+  "seo_title": {"en": "Outdoor & Energy Labeling Solutions | ETIA", "zh": "户外能源标识解决方案 | ETIA"},
+  "seo_desc": {"en": "Weatherable, flame-retardant and permanent labels for solar, wind, energy storage and power transmission — durable through UV, salt spray and thermal cycling.", "zh": "面向光伏、风电、储能与电力输配的耐候、阻燃与永久标识，耐 UV、盐雾与高低温循环。"},
+  "hero": {
+    "eyebrow": {"en": "By Industry · Outdoor & Energy", "zh": "按行业 · 户外能源"},
+    "title": {"en": "Outdoor & Energy Labeling Solutions", "zh": "户外能源标识解决方案"},
+    "slogan": {"en": "No failure in extreme environments — lifelong traceability for every asset", "zh": "极端环境不失效，设备终身可溯源"}
+  },
+  "overview": {
+    "zh": [
+      "随着光伏、风电、储能、电力输配等新能源产业高速发展，设备长期暴露于紫外老化、盐雾腐蚀、高低温循环等极端户外环境中，标识的耐久性直接决定资产的可追溯性与安全合规性。",
+      "ETIA 户外能源标识体系，专为能源行业严酷工况量身打造，覆盖光伏新能源、风电、储能系统、电力输配四大核心领域。从 10 年以上耐候级氟素标签，到 UL94 V-0 阻燃绝缘标识，从 316 不锈钢海上风电永久铭牌，到柔性乙烯基电缆标识，形成完整的全场景产品矩阵。",
+      "全系配备三级覆膜防护体系（PET/Vinyl/PVF），适配背板、镀锌钢、塑料壳体、电缆曲面等多种基材，确保标识在设备全生命周期内清晰可读、粘贴牢固，守护能源资产从投产到退役的全程追溯与安全合规。"
+    ],
+    "en": [
+      "As solar, wind, energy-storage and power-transmission industries grow, equipment sits for years in extreme outdoor conditions — UV aging, salt-spray corrosion and thermal cycling — and label durability directly determines asset traceability and safety compliance.",
+      "ETIA's outdoor-energy identification system is built for the harsh duty of the energy sector, covering four core domains: solar, wind, energy storage and power transmission. From 10-year-plus weatherable fluoropolymer labels to UL94 V-0 flame-retardant insulation labels, and from 316-stainless offshore-wind nameplates to flexible vinyl cable labels — a complete, full-scenario product matrix.",
+      "The range carries a three-tier overlaminate system (PET/Vinyl/PVF) for backsheets, galvanized steel, plastic housings and curved cable surfaces, keeping identification legible and firmly bonded across the equipment's full life — guarding traceability and compliance from commissioning to retirement."
+    ]
+  },
+  "classify_by": {"en": "By application domain", "zh": "按应用领域"},
+  "tiers": [
+    {
+      "name": {"en": "Solar / PV", "zh": "光伏新能源"},
+      "intro": {"en": "Full-scenario labels for module backsheets, combiner boxes, mounting and junction boxes, and EVA/POE film processes.", "zh": "组件背板、汇流箱、支架接线盒与 EVA/POE 胶膜制程的全场景标识。"},
+      "products": [
+        {"name": "E-2813 PVF", "line": {"en": "Fluoropolymer face · 10+ yr outdoor · anti-UV · backsheet high-tack", "zh": "氟素面层 · 10+ 年户外耐候 · 抗 UV · 背板专用高粘胶"}, "img": "", "landing": false},
+        {"name": "E-2813", "line": {"en": "Weatherable PET · 5–8 yr · galvanized adhesive · 120°C", "zh": "标准耐候 PET · 5-8 年 · 镀锌专用胶 · 120℃"}, "img": "", "landing": false},
+        {"name": "XF-611", "line": {"en": "UL94 V-0 · dielectric · in-box high-temp stable", "zh": "UL94 V-0 阻燃 · 绝缘耐压 · 箱内高温稳定"}, "img": "", "landing": true},
+        {"name": "E-4633", "line": {"en": "Low-tack removable · zero residue · cleanroom", "zh": "低粘可移除 · 零残胶 · 洁净室"}, "img": "", "landing": false}
+      ]
+    },
+    {
+      "name": {"en": "Wind", "zh": "风电"},
+      "intro": {"en": "Long-life labels for onshore wind blades and components in abrasive, UV-heavy environments.", "zh": "陆上风电叶片及零部件在风沙、UV 环境下的长期标识。"},
+      "products": [
+        {"name": "E-2813", "line": {"en": "Weatherable PET · abrasion · UV-stable · large-curve high-tack", "zh": "耐候 PET · 耐风沙磨损 · UV 稳定 · 大曲面强粘"}, "img": "", "landing": false}
+      ]
+    },
+    {
+      "name": {"en": "Power Transmission (Substation)", "zh": "电力输配（变电站）"},
+      "intro": {"en": "Transformer nameplates, switchgear parameters, and pole / cable-routing labels.", "zh": "变压器铭牌、高压开关柜参数与杆塔/电缆走向标识。"},
+      "products": [
+        {"name": "HP-360", "line": {"en": "Aluminum / stainless · laser / etch permanent · IP65", "zh": "铝 / 不锈钢 · 激光 / 蚀刻永久 · IP65"}, "img": "", "landing": false},
+        {"name": "XF-611", "line": {"en": "UL94 V-0 · crisp print · cabinet temp-stable", "zh": "UL94 V-0 · 参数级清晰 · 柜内温变稳定"}, "img": "", "landing": true},
+        {"name": "E-6533", "line": {"en": "Colored vinyl · curved surfaces · anti-UV abrasion · color-coding", "zh": "彩色乙烯基 · 曲面适配 · 抗 UV 耐磨 · 颜色编码"}, "img": "", "landing": false}
+      ]
+    },
+    {
+      "name": {"en": "Energy Storage", "zh": "储能系统"},
+      "intro": {"en": "Battery-cluster, PCS nameplate and high-voltage safety / fire-warning labels.", "zh": "电池簇、PCS 变流器铭牌与高压安全/消防警示标识。"},
+      "products": [
+        {"name": "XF-611", "line": {"en": "UL94 V-0 · dielectric · 10-yr weatherable · high-contrast print", "zh": "UL94 V-0 · 绝缘耐压 · 10 年耐候 · 高对比印刷"}, "img": "", "landing": true},
+        {"name": "E6534 2mil Vinyl", "line": {"en": "2.0 mil anti-UV · permanent PSA · 7-yr anti-UV", "zh": "2.0mil 抗 UV · 永久压敏胶 · 7 年抗 UV"}, "img": "", "landing": true}
+      ]
+    }
+  ]
+}
