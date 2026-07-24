@@ -523,9 +523,13 @@ PROD_AXES = [
    ("Chemical","耐化学","/environments/#chemical"),
    ("Abrasion","耐磨","/environments/#abrasion"),
  ]),
- ("app","By Application","按应用",[
-   ("Automotive Labeling Solutions","汽车标签解决方案","/industries/automotive-labeling-solutions/"),
-   ("PCB Labeling Solutions","PCB 标签解决方案","/industries/pcb-electronics-labeling-solutions/"),
+ ("app","By Industry","按行业",[
+   ("PCB","PCB","/industries/pcb-electronics-labeling-solutions/"),
+   ("Automotive & Tire","汽车与轮胎","/industries/automotive-labeling-solutions/"),
+   ("Wire & Cable","线缆","/industries/wire-cable-labeling-solutions/"),
+   ("Outdoor & Energy","户外与能源","/industries/outdoor-energy-labeling-solutions/"),
+   ("Medical & Pharmacy","医疗与制药","/industries/medical-pharmaceutical-labeling-solutions/"),
+   ("Steel & Ceramics","钢铁与陶瓷","/industries/steel-metal-ceramic-labeling-solutions/"),
  ]),
  ("mat","By Material","按材料",[
    ("Polyimide","聚酰亚胺","/products/polyimide-label-materials/",[
@@ -541,7 +545,7 @@ def products_dropdown(lang, linkfn):
     zh = (lang == "zh")
     # vi/th labels for the small set of menu strings (fall back to EN otherwise)
     MENU_VITH = {"By Environment": ("Theo môi trường", "ตามสภาพแวดล้อม"),
-                 "By Application": ("Theo ứng dụng", "ตามการใช้งาน"),
+                 "By Industry": ("Theo ngành", "ตามอุตสาหกรรม"),
                  "By Material": ("Theo vật liệu", "ตามวัสดุ")}
     def lab(e, z):
         if zh: return z
