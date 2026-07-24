@@ -524,12 +524,12 @@ PROD_AXES = [
    ("Abrasion","耐磨","/environments/#abrasion"),
  ]),
  ("app","By Industry","按行业",[
-   ("PCB Labeling Solutions","PCB 与电子标签解决方案","/industries/pcb-electronics-labeling-solutions/"),
-   ("Automotive Labeling Solutions","汽车标签解决方案","/industries/automotive-labeling-solutions/"),
-   ("Wire & Cable Labeling Solutions","线缆标签解决方案","/industries/wire-cable-labeling-solutions/"),
-   ("Outdoor & Energy Labeling Solutions","户外与能源标签解决方案","/industries/outdoor-energy-labeling-solutions/"),
-   ("Medical & Pharmaceutical Labeling Solutions","医疗与制药标签解决方案","/industries/medical-pharmaceutical-labeling-solutions/"),
-   ("Steel, Metal & Ceramic Labeling Solutions","钢铁、金属与陶瓷标签解决方案","/industries/steel-metal-ceramic-labeling-solutions/"),
+   ("PCB","PCB","/industries/pcb-electronics-labeling-solutions/"),
+   ("Automotive & Tire","汽车与轮胎","/industries/automotive-labeling-solutions/"),
+   ("Wire & Cable","线缆","/industries/wire-cable-labeling-solutions/"),
+   ("Outdoor & Energy","户外与能源","/industries/outdoor-energy-labeling-solutions/"),
+   ("Medical & Pharmacy","医疗与制药","/industries/medical-pharmaceutical-labeling-solutions/"),
+   ("Steel & Ceramics","钢铁与陶瓷","/industries/steel-metal-ceramic-labeling-solutions/"),
  ]),
  ("mat","By Material","按材料",[
    ("Polyimide","聚酰亚胺","/products/polyimide-label-materials/",[
