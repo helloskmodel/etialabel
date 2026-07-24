@@ -140,9 +140,11 @@ def build_lang(data, lang):
     return (hp.PREFIX[lang] + path)
 
 def main():
+    # Chinese only for now — the client authored the brief in Chinese (~300 words).
+    # English is NOT auto-translated here; the EN page awaits client-provided copy.
     for slug in ["wire-cable"]:
         data = json.load(open(os.path.join(IND_DIR, slug + ".json"), encoding="utf-8"))
-        for lang in hp.LANGS:
+        for lang in ["zh"]:
             out = build_lang(data, lang)
             print("industry v2:", out)
 
