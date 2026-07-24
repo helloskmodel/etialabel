@@ -40,8 +40,8 @@ CSS = """
 <style>
 .wchero{position:relative;overflow:hidden;color:#fff;min-height:280px;display:flex;align-items:flex-end;background:#12224b}
 .wchero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
-.wchero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,20,48,.94),rgba(20,60,150,.55) 72%,transparent)}
-.wchero .in{position:relative;max-width:1080px;margin:0 auto;width:100%;padding:40px 24px}
+.wchero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(9,20,48,.9),rgba(20,60,150,.5) 68%,transparent)}
+.wchero .in{position:relative;z-index:2;max-width:1080px;margin:0 auto;width:100%;padding:40px 24px}
 .wchero .eye{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#8fe36a}
 .wchero h1{color:#fff;font-size:clamp(26px,4.4vw,40px);margin:10px 0 8px;line-height:1.14;max-width:20em}
 .wchero .slog{color:#dbe6ff;font-size:19px;font-weight:600;margin:0;max-width:30em}
@@ -55,9 +55,9 @@ CSS = """
 .wcar:hover{opacity:1}
 .wctabs{display:flex;gap:4px;overflow-x:auto;flex:1;justify-content:center}
 .wctabs::-webkit-scrollbar{height:0}
-.wctab{flex:none;max-width:220px;text-align:center;font-size:15px;font-weight:800;line-height:1.25;padding:15px 24px;cursor:pointer;white-space:normal;background:transparent;color:#143C96;border:none;border-radius:14px 14px 0 0;position:relative;margin-bottom:-1px}
+.wctab{flex:none;max-width:200px;text-align:center;font-size:13.5px;font-weight:700;line-height:1.25;padding:10px 16px;cursor:pointer;white-space:normal;background:transparent;color:#143C96;border:none;border-radius:9px 9px 0 0;position:relative;margin-bottom:-1px}
 .wctab.on{background:#5b6ee8;color:#fff}
-.wctab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:#1A56DB}
+.wctab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#1A56DB}
 #wcpanel{margin-top:24px;max-width:760px;margin-left:auto;margin-right:auto}
 .wccatintro{color:#2c3a58;font-size:16px;line-height:1.7;margin:8px auto 20px}
 .wcmcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
