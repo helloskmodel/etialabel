@@ -13,8 +13,13 @@ HUB = "/application-notes/"
 
 def _t(lang, en, zh): return zh if lang == "zh" else en
 
-# Featured full notes, surfaced on the Application Notes hub.
-FEATURED = [{
+# Legacy engineering notes retired pending re-supply as new 4-language articles.
+# Empty ACTIVE list => nothing renders; empty FEATURED => hub lists none.
+_ACTIVE_BUILDS = []
+FEATURED = []
+
+# Retired featured notes (kept for reference only; not surfaced anywhere).
+_RETIRED_FEATURED = [{
  "slug": "tire-bead-labels",
  "title_en": "Tire Bead Labels",
  "title_zh": "轮胎胎圈标签",
@@ -396,10 +401,12 @@ def build_esd_pcb(lang):
 
 
 def main():
+    # The three legacy engineering notes (tire-bead / VIN / ESD-PCB) are retired
+    # pending re-supply as new 4-language articles. FEATURED is empty so the hub
+    # lists none and no pages generate. Render helpers are kept for reference.
     for lang in LANGS:
-        build_tire_bead(lang)
-        build_vin(lang)
-        build_esd_pcb(lang)
+        for build in _ACTIVE_BUILDS:
+            build(lang)
 
 
 if __name__ == "__main__":
