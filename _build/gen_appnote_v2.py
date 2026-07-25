@@ -106,10 +106,11 @@ def build_note(d, lang):
     subtitle = L(d.get("subtitle", {}), lang)
     banner = d.get("banner", "")
     bg = ('<img class="bg" src="%s" alt="" loading="eager" onerror="this.style.display=\'none\'">' % esc(banner)) if banner else ""
+    # Hero shows eyebrow + title only (subtitle kept in data for meta/hub, not
+    # rendered in the hero — it crowded the banner).
     hero = ('%s<section class="anhero">%s<div class="in"><div class="k">%s</div>'
-            '<h1>%s</h1>%s</div></section>') % (
-        CSS, bg, esc(ui["eyebrow"]), esc(title),
-        ('<p class="sub">%s</p>' % esc(subtitle)) if subtitle else "")
+            '<h1>%s</h1></div></section>') % (
+        CSS, bg, esc(ui["eyebrow"]), esc(title))
 
     def sec(eye, h, inner):
         return '<section class="ansec"><div class="aneye">%s</div><h2>%s</h2>%s</section>' % (esc(eye), esc(h), inner)
