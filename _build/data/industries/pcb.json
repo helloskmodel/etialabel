@@ -84,7 +84,8 @@
             "th": "ทนรีโฟลว์และล้างซ้ำได้ · พิมพ์ชัดเจนแม่นยำสูง"
           },
           "img": "",
-          "landing": true
+          "landing": true,
+          "slug": "apex"
         }
       ],
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
@@ -113,7 +114,8 @@
             "th": "ทนความร้อนและสารเคมีสมดุล · มีหลายสีช่วยแยกประเภท"
           },
           "img": "",
-          "landing": true
+          "landing": true,
+          "slug": "xf58"
         }
       ],
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB581",
@@ -142,7 +144,8 @@
             "th": "PET กันไฟฟ้าสถิตสองชั้น · หน่วงไฟ"
           },
           "img": "",
-          "landing": true
+          "landing": true,
+          "slug": "e-2712"
         },
         {
           "name": "E-8732",
@@ -153,7 +156,8 @@
             "th": "PI ทนความร้อนผลิตในประเทศ · การผลิตจำนวนมาก"
           },
           "img": "",
-          "landing": true
+          "landing": true,
+          "slug": "e-8732"
         }
       ],
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB8732",
