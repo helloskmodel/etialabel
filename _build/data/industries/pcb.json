@@ -76,7 +76,7 @@
       },
       "products": [
         {
-          "name": "APEX Series",
+          "name": "Polyonics APEX Series",
           "line": {
             "en": "Multi-cycle reflow & cleaning resistant · ultra-high print clarity",
             "zh": "耐多轮焊洗 · 打印高清精度优异",
@@ -87,7 +87,8 @@
           "landing": true
         }
       ],
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX"
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
+      "tab": "APEX"
     },
     {
       "name": {
@@ -104,7 +105,7 @@
       },
       "products": [
         {
-          "name": "XF58 Series",
+          "name": "Polyonics XF58 Series",
           "line": {
             "en": "Balanced solder & cleaning resistance · multi-color finish options",
             "zh": "焊洗性能均衡 · 多色饰面可选易分类",
@@ -115,7 +116,8 @@
           "landing": true
         }
       ],
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB581"
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB581",
+      "tab": "XF58"
     },
     {
       "name": {
@@ -154,7 +156,8 @@
           "landing": true
         }
       ],
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB8732"
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB8732",
+      "tab": "E Series"
     }
   ]
 }
