@@ -24,6 +24,8 @@ hp.main()        # clean + build shell: home, products hub, core/legal, nav/foot
 # NB: gen_autoapps is imported (its PROP/PROP_ZH vocab is reused by gen_appnotes) but no
 # longer builds a landing — the industry hubs below own the automotive + PCB pages.
 industry.main()  # Industry landing hubs — shared layout (owns automotive + PCB landing pages, EN+ZH)
+import gen_product  # product Landing pages (part 4)
+gen_product.main()
 import render_industry  # v2 data-driven override: rebuilds Wire & Cable with the new design + real content
 render_industry.main()
 apex.main()      # Apex Series — next-gen PCB polyimide (owns /products/apex-series/)
