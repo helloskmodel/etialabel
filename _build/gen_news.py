@@ -56,6 +56,17 @@ CSS = """
 .ncard h3{margin:0;font-size:17px;line-height:1.35;color:#17203a}
 .ncard .cs{font-size:13.5px;color:#5a6884;line-height:1.5;flex:1}
 .ncard .go{font-size:13.5px;font-weight:800;color:#41A62A}
+@media (max-width:760px){
+  .nhero{min-height:200px}
+  .nhero .in{padding:24px 18px}
+  .nhero h1{font-size:23px}
+  .nhero .sub{font-size:15px}
+  .art{padding:22px 18px}
+  .art .lead{font-size:15.5px;line-height:1.66;margin:0 0 16px}
+  .art h2{font-size:18px;margin:20px 0 8px}
+  .art p{font-size:14.5px;line-height:1.7;margin:0 0 10px}
+  .ncards{padding:22px 18px 6px;gap:16px}
+}
 </style>
 """
 
