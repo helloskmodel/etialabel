@@ -37,6 +37,8 @@ appnote_full.main() # Full engineering Application Notes per Standard V1.0 (hero
 import gen_news
 gen_news.main()  # News / Insights hub + article pages
 appnotes.main()  # Application Notes — simple 4-section notes + hub (lists featured full notes too)
+import gen_appnote_v2  # data-driven 4-language Application Notes + hub override (owns /application-notes/)
+gen_appnote_v2.main()
 
 # sitemaps + redirects run LAST so every sector's tracked URLs are included
 hp.build_sitemaps()
