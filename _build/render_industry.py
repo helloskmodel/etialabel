@@ -68,12 +68,12 @@ CSS = """
 .wctab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#1A56DB}
 #wcpanel{margin-top:24px;max-width:760px;margin-left:auto;margin-right:auto}
 .wccatimg{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block;margin:0 auto 16px;background:#e8eefb}
-.wc2col{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center;max-width:900px;margin:0 auto}
+.wc2col{display:grid;grid-template-columns:36% 1fr;gap:20px;align-items:start;max-width:900px;margin:0 auto}
 .wc2col .wccatimg{margin:0;aspect-ratio:4/3}
 .wcright{display:flex;flex-direction:column;gap:12px}
-.wcright .wccatintro{margin:0 0 2px;text-align:left}
-.wc2col .wcmcards{grid-template-columns:1fr}
-@media(max-width:760px){.wc2col{grid-template-columns:1fr;gap:14px}.wc2col .wccatimg{aspect-ratio:16/9}}
+.wcright .wccatintro{margin:0 0 2px;text-align:left;font-size:15px}
+.wc2col .wcmcards{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+@media(max-width:760px){.wc2col{grid-template-columns:1fr;gap:14px}.wc2col .wccatimg{aspect-ratio:16/9}.wc2col .wcmcards{grid-template-columns:1fr 1fr}}
 .wccatintro{color:#2c3a58;font-size:16px;line-height:1.7;margin:8px auto 20px}
 .wcmcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
 .wcmcard{display:flex;gap:13px;align-items:center;background:#fff;border:1px solid #dbe3f1;border-radius:12px;padding:11px;text-decoration:none;color:#17203a;transition:box-shadow .15s,transform .15s}
