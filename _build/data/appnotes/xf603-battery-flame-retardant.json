@@ -1,0 +1,78 @@
+{
+  "slug": "xf603-xf611-battery-flame-retardant",
+  "source": "_docs/sources/Application Notes XF603 XF611 (battery)",
+  "order": 2,
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/auto-battery",
+  "image": "",
+  "title": {
+    "zh": "新能源电池全生命周期追溯与追踪 —— 阻燃系列 XF603 / XF611 专项应用",
+    "en": "New-Energy Battery Full-Lifecycle Traceability — Flame-Retardant XF603 / XF611",
+    "vi": "Truy xuất toàn vòng đời pin năng lượng mới — Dòng chống cháy XF603 / XF611",
+    "th": "การติดตามตลอดวงจรชีวิตแบตเตอรี่พลังงานใหม่ — ซีรีส์กันไฟ XF603 / XF611"
+  },
+  "seo_desc": {
+    "en": "Flame-retardant XF603 / XF611 labels for new-energy battery, energy-storage, cable and warehouse identification — 10–20 year outdoor durability, UL94 VTM-0, UL969, BSS7238/7239, REACH & RoHS.",
+    "zh": "阻燃系列 XF603 / XF611：新能源电池、储能、线缆与仓储标识 —— 10–20 年户外耐久，UL94 VTM-0、UL969、BSS7238/7239、REACH 与 RoHS",
+    "vi": "Nhãn chống cháy XF603 / XF611 cho pin năng lượng mới, lưu trữ, cáp và kho — độ bền ngoài trời 10–20 năm, UL94 VTM-0, UL969, BSS7238/7239, REACH & RoHS.",
+    "th": "ฉลากกันไฟ XF603 / XF611 สำหรับแบตเตอรี่พลังงานใหม่ ระบบกักเก็บ สายเคเบิล และคลังสินค้า — ทนกลางแจ้ง 10–20 ปี, UL94 VTM-0, UL969, BSS7238/7239, REACH & RoHS"
+  },
+  "overview": {
+    "zh": "本方案适配新能源动力电池、储能电池及配套线缆、仓储设备全品类标识场景，覆盖模组生产追溯、电池包安全警示、高低压线缆管理、厂内仓储台账标识四大核心用途，支持手动与自动化贴标。通过标准化、长效化标识体系，实现电池全生命周期溯源管控，为新能源设备标准化生产、安全运维、合规存档提供基础支撑",
+    "en": "This solution is applicable to full-category identification scenarios for new-energy power batteries, energy-storage batteries, supporting cables and warehouse equipment. It covers four core application scenarios: module production traceability, battery pack safety warning, high- and low-voltage cable management, and in-plant warehouse labeling. Supporting manual and automatic labeling, it realizes full-life-cycle traceability management and provides fundamental support for standardized production, safe operation and compliance filing of new-energy equipment.",
+    "vi": "Giải pháp này phù hợp với các tình huống dán nhãn toàn loại cho pin năng lượng mới, pin lưu trữ năng lượng, cáp phụ trợ và thiết bị kho bãi. Bao gồm bốn ứng dụng cốt lõi: truy xuất nguồn gốc sản xuất mô-đun, cảnh báo an toàn gói pin, quản lý cáp cao áp và thấp áp, dán nhãn sổ sách kho trong xưởng. Hỗ trợ dán nhãn thủ công và tự động, xây dựng hệ thống nhãn chuẩn hóa và bền vững, thực hiện quản lý truy xuất nguồn gốc toàn vòng đời pin, cung cấp nền tảng cơ bản cho sản xuất chuẩn hóa, vận hành an toàn và lưu trữ hồ sơ tuân thủ quy định của thiết bị năng lượng mới.",
+    "th": "โซลูชันนี้เหมาะสำหรับการติดฉลากทุกประเภทสำหรับแบตเตอรี่พลังงานใหม่ แบตเตอรี่เก็บพลังงาน สายเคเบิลรองรับ และอุปกรณ์คลังสินค้า ครอบคลุมการติดตามการผลิตโมดูล คำเตือนความปลอดภัยของแพ็คแบตเตอรี่ การจัดการสายเคเบิลแรงดันสูงและต่ำ และการติดฉลากบันทึกคลังสินค้าในโรงงาน รองรับการติดฉลากทั้งแบบแมนนวลและระบบอัตโนมัติ สร้างระบบการระบุที่มีมาตรฐานและยั่งยืน ทำให้สามารถควบคุมการติดตามข้อมูลตลอดวงจรชีวิตแบตเตอรี่ และเป็นพื้นฐานสำหรับการผลิตที่มีมาตรฐาน การดำเนินงานที่ปลอดภัย และการเก็บเอกสารตามข้อกำหนดของอุปกรณ์พลังงานใหม่"
+  },
+  "challenges": {
+    "zh": "新能源电池与储能设备服役周期极长，普遍需要 10–20 年长效稳定标识。户外工况长期面临强光暴晒、高温高湿、化学溶剂侵蚀等严苛考验。传统标签耐候、耐温、耐腐性能不足，易褪色脱墨、起翘脱落，极易造成追溯断裂、合规失效、运维管控困难等问题",
+    "en": "New-energy batteries and energy-storage equipment require a 10–20 year long-term stable identification system. Outdoor working conditions involve severe challenges such as strong ultraviolet radiation, high temperature and humidity, and chemical solvent erosion. Traditional labels suffer from poor weather, temperature and corrosion resistance, causing fading, peeling and falling off, which leads to traceability failure, non-compliance and difficult operation management.",
+    "vi": "Pin năng lượng mới và thiết bị lưu trữ năng lượng có chu kỳ hoạt động cực dài, thường yêu cầu hệ thống nhãn ổn định lâu dài từ 10–20 năm. Môi trường làm việc ngoài trời thường xuyên chịu tác động khắc nghiệt như tia cực tím mạnh, nhiệt độ và độ ẩm cao, ăn mòn dung môi hóa học. Nhãn truyền thống có khả năng chống thời tiết, chống nhiệt, chống ăn mòn hạn chế, dễ bị phai màu, bong mực, cong vênh và rơi ra, dễ gây gián đoạn truy xuất nguồn gốc, vi phạm quy định và khó khăn trong quản lý vận hành.",
+    "th": "แบตเตอรี่พลังงานใหม่และอุปกรณ์เก็บพลังงานมีอายุการใช้งานยาวนาน โดยทั่วไปต้องการระบบฉลากที่เสถียรและใช้งานได้ยาวนาน 10–20 ปี สภาพการใช้งานกลางแจ้งต้องเผชิญกับแสงอัลตราไวโอเลตเข้ม อุณหภูมิและความชื้นสูง และการกัดกร่อนจากสารเคมีอย่างต่อเนื่อง ฉลากทั่วไปมีคุณสมบัติทนต่อสภาพอากาศ ทนอุณหภูมิและทนการกัดกร่อนไม่เพียงพอ มักเกิดปัญหาสีซีด หมึกหลุด ขอบยกและฉลากหลุด ทำให้การติดตามข้อมูลขัดข้อง ไม่เป็นไปตามข้อกำหนด และยากต่อการควบคุมดูแลระบบงาน"
+  },
+  "solution_intro": {
+    "zh": "XF603/611 标签精准匹配新能源电池长效标识工况，性能与认证配套完整，核心优势如下",
+    "en": "XF603 / XF611 labels precisely match the long-term identification conditions of new-energy batteries, with complete performance and certification support. Core advantages:",
+    "vi": "Nhãn XF603/611 phù hợp với điều kiện làm việc dài hạn của pin năng lượng mới, với hiệu suất và chứng nhận đầy đủ như sau:",
+    "th": "ฉลาก XF603/611 ตรงตามสภาพการทำงานระยะยาวของแบตเตอรี่พลังงานใหม่ มีประสิทธิภาพและใบรับรองครบถ้วน ดังนี้"
+  },
+  "advantages": {
+    "en": [
+      {"label": "Weather & UV Resistance", "text": "Resists long-term outdoor exposure, temperature and humidity alternation, and chemical erosion, adapting to 10–20 year full-life-cycle traceability."},
+      {"label": "Extreme Temperature Resistance", "text": "Passed strict temperature tests: 100h at 150°C, 5min at 260°C, 90s at 300°C, for extreme battery temperature changes."},
+      {"label": "UL94 VTM-0 High-Grade Flame Retardancy", "text": "The top-tier thin-film flame-retardant rating suppresses fire spread and eliminates battery thermal-runaway risks to ensure system safety."},
+      {"label": "UL969 Marking Durability Certification", "text": "A global authoritative standard for equipment marking durability, ensuring permanent legibility and stable adhesion throughout the device lifespan, preventing aging, peeling and invalid traceability."},
+      {"label": "BSS7238/7239 Low-Smoke & Low-Toxicity", "text": "Aerospace-grade safety standard that reduces smoke density and toxic emissions during fire incidents, minimizing secondary equipment damage and on-site safety risks."},
+      {"label": "RoHS & REACH Environmental Compliance", "text": "Complies with international environmental regulations with no restricted hazardous substances, meeting global environmental acceptance and market-access requirements for new-energy projects."}
+    ],
+    "zh": [
+      {"label": "耐候抗 UV", "text": "长效抵御户外暴晒、温湿交变、化学侵蚀，适配 10–20 年全生命周期追溯"},
+      {"label": "极致耐温", "text": "通过严苛温测参数：100h@150℃、5min@260℃、90s@300℃，适配电池极端温变场景"},
+      {"label": "UL94 VTM-0 高阶阻燃", "text": "行业最高薄膜阻燃等级，有效阻隔火势蔓延，规避电池热失控起火风险，保障电池系统安全"},
+      {"label": "UL969 标识耐久认证", "text": "全球设备标识权威耐久标准，保障标签长期粘贴牢固、字迹永久可读，杜绝户外老化、起皮脱落、信息失效问题，实现设备全生命周期有效溯源"},
+      {"label": "BSS7238/7239 低烟低毒", "text": "航空级安全标准，火情状态下大幅降低烟雾浓度与有毒物质释放，减少设备二次损毁与现场安全隐患"},
+      {"label": "RoHS、REACH 合规环保", "text": "符合国际环保管控规范，不含有害受限物质，满足海内外新能源行业环保验收与合规准入要求"}
+    ],
+    "vi": [
+      {"label": "Chống thời tiết & Tia UV", "text": "Chống nắng lâu dài, biến động nhiệt độ-độ ẩm và ăn mòn hóa học, đáp ứng truy xuất nguồn gốc 10–20 năm."},
+      {"label": "Chịu nhiệt cực cao", "text": "Đạt chuẩn chịu nhiệt nghiêm ngặt: 100h@150°C, 5phút@260°C, 90giây@300°C, thích ứng biến nhiệt khắc nghiệt của pin."},
+      {"label": "UL94 VTM-0 Chống cháy cấp cao", "text": "Tiêu chuẩn chống cháy màng mỏng cao cấp nhất, ngăn chặn lan tỏa ngọn lửa, phòng tránh rủi ro mất kiểm soát nhiệt và cháy nổ pin."},
+      {"label": "UL969 Chứng nhận độ bền nhãn", "text": "Tiêu chuẩn quốc tế về độ bền nhận diện thiết bị, đảm bảo chữ rõ nét, dán bền ổn định suốt vòng đời sản phẩm, tránh lão hóa, bong tróc và mất dữ liệu truy xuất."},
+      {"label": "BSS7238/7239 Khói thấp - Độc tính thấp", "text": "Tiêu chuẩn an toàn cấp hàng không, giảm nồng độ khói và chất độc khi có cháy, hạn chế hư hỏng thứ cấp và rủi ro an toàn tại hiện trường."},
+      {"label": "RoHS, REACH Tuân thủ môi trường", "text": "Tuân thủ quy chuẩn môi trường quốc tế, không chứa chất độc hại hạn chế, đáp ứng yêu cầu kiểm tra môi trường và tiếp nhận thị trường dự án năng lượng mới toàn cầu."}
+    ],
+    "th": [
+      {"label": "ทนต่อสภาพอากาศและรังสียูวี", "text": "ต้านทานแสงแดด การเปลี่ยนอุณหภูมิ-ความชื้น และการกัดกร่อนทางเคมี รองรับการติดตามตลอด 10–20 ปี"},
+      {"label": "ทนอุณหภูมิสูง", "text": "ผ่านเกณฑ์ทนอุณหภูมิ 100ชม.@150°C, 5นาที@260°C, 90วินาที@300°C รองรับสภาพอุณหภูมิที่รุนแรงของแบตเตอรี่"},
+      {"label": "UL94 VTM-0 ระดับกันไฟสูงสุด", "text": "มาตรฐานกันไฟฟิล์มเกรดสูงสุด ยับยั้งการลามของไฟ ป้องกันความเสี่ยงความร้อนผิดปกติและไฟไหม้แบตเตอรี่"},
+      {"label": "UL969 ใบรับรองความทนทานของฉลาก", "text": "มาตรฐานสากลด้านความทนทานฉลากอุปกรณ์ รับประกันตัวหนังสือชัดเจนและการติดที่เสถียรตลอดอายุการใช้งาน ป้องกันฉลากเสื่อมสภาพ หลุดลอกและข้อมูลสูญหาย"},
+      {"label": "BSS7238/7239 ควันต่ำ-พิษต่ำ", "text": "มาตรฐานความปลอดภัยระดับอากาศยาน ลดความเข้มข้นของควันและสารพิษเมื่อเกิดเหตุไฟไหม้ ลดความเสียหายรองและอันตรายในพื้นที่ปฏิบัติงาน"},
+      {"label": "RoHS, REACH มาตรฐานสิ่งแวดล้อม", "text": "สอดคล้องกับกฎระเบียบสิ่งแวดล้อมสากล ไม่มีสารอันตรายต้องห้าม รองรับการตรวจสอบและเข้าสู่ตลาดโครงการพลังงานใหม่ทั้งในและต่างประเทศ"}
+    ]
+  },
+  "value": {
+    "zh": "整套高性能标识方案，可帮助客户彻底规避设备标识失效、安全警示缺失、溯源链路中断等隐患。长效稳定的标识表现，可大幅降低后期运维更换、故障排查成本，助力设备顺利通过海内外权威合规验收，全面提升产线标准化、安全化、智能化管控水平",
+    "en": "This high-performance labeling solution helps customers avoid equipment identification failure, missing safety warnings and broken traceability chains. Stable long-term labeling performance greatly reduces later maintenance, replacement and troubleshooting costs. It supports global compliance certification and comprehensively improves the standardization, safety and intelligent management level of new-energy production lines.",
+    "vi": "Giải pháp nhãn hiệu suất cao giúp khách hàng loại bỏ hoàn toàn các rủi ro như nhãn thiết bị hỏng hóc, thiếu cảnh báo an toàn, gián đoạn chuỗi truy xuất nguồn gốc. Hiệu suất nhãn ổn định lâu dài giúp cắt giảm đáng kể chi phí bảo trì, thay thế và khắc phục sự cố sau này, hỗ trợ thiết bị vượt qua kiểm tra tuân thủ quy định trong và ngoài nước, nâng cao toàn diện mức quản lý chuẩn hóa, an toàn và thông minh của dây chuyền sản xuất.",
+    "th": "โซลูชันการติดฉลากประสิทธิภาพสูงช่วยให้ลูกค้าหลีกเลี่ยงความเสี่ยงต่างๆ เช่น ฉลากอุปกรณ์เสียหาย ไม่มีคำเตือนความปลอดภัย และการขัดข้องของระบบติดตามข้อมูล ความเสถียรของฉลากในระยะยาวช่วยลดต้นทุนในการบำรุงรักษา เปลี่ยนอะไหล่และตรวจสอบปัญหาในภายหลังได้อย่างมาก สนับสนุนให้อุปกรณ์ผ่านการตรวจสอบและรับรองมาตรฐานทั้งในและต่างประเทศ และยกระดับมาตรฐานความปลอดภัยและระดับการจัดการอัจฉริยะของสายการผลิตอย่างครอบคลุม"
+  }
+}
