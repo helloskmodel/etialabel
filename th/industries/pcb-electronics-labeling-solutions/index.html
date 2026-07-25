@@ -472,6 +472,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .wctab.on{background:#5b6ee8;color:#fff}
 .wctab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#1A56DB}
 #wcpanel{margin-top:24px;max-width:760px;margin-left:auto;margin-right:auto}
+.wccatimg{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block;margin:0 auto 16px;background:#e8eefb}
 .wccatintro{color:#2c3a58;font-size:16px;line-height:1.7;margin:8px auto 20px}
 .wcmcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
 .wcmcard{display:flex;gap:13px;align-items:center;background:#fff;border:1px solid #dbe3f1;border-radius:12px;padding:11px;text-decoration:none;color:#17203a;transition:box-shadow .15s,transform .15s}
@@ -502,7 +503,7 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
 <section class="wcsec wcov"><div class="wceye">ภาพรวมอุตสาหกรรม</div><h2>ภาพรวมอุตสาหกรรม</h2><p>PCB เป็นสื่อพื้นฐานสำคัญของอุตสาหกรรมอิเล็กทรอนิกส์ ครอบคลุมทุกสาขาการผลิต ปัจจุบันกระบวนการผลิตมีความเข้มงวดสูง ฉลากที่เสถียรและแม่นยำจำเป็นอย่างยิ่งสำหรับการตรวจสอบย้อนกลับในระบบอัจฉริยะ</p></section><section class="wcsec"><div class="wceye">Products</div><h2>เลือกซีรีส์</h2><div class="wcfc"><div class="wcfcrow"><button class="wcar" onclick="wcScroll(-1)">&lsaquo;</button><div class="wctabs" id="wctabs"></div><button class="wcar" onclick="wcScroll(1)">&rsaquo;</button></div><div id="wcpanel"></div></div></section>
 <script>
 (function(){
-var CATS=[{"tab": "APEX Series · Polyonics นำเข้าแท้", "intro": "รุ่นพรีเมียมสำหรับกระบวนการ PCB ความหนาแน่นสูงสมัยใหม่", "prods": [{"n": "APEX Series", "l": "ทนรีโฟลว์และล้างซ้ำได้ · พิมพ์ชัดเจนแม่นยำสูง", "img": "", "landing": true, "href": "#"}]}, {"tab": "XF58 Series · Polyonics นำเข้าแท้", "intro": "รุ่นอุตสาหกรรมหลัก รองรับการผลิต PCB ทุกสถานการณ์", "prods": [{"n": "XF58 Series", "l": "ทนความร้อนและสารเคมีสมดุล · มีหลายสีช่วยแยกประเภท", "img": "", "landing": true, "href": "#"}]}, {"tab": "E Series · พัฒนาโดย ETIA", "intro": "พัฒนาเองคุ้มค่า สืบทอดเทคโนโลยีระดับสูง 20 ปี", "prods": [{"n": "E-2712", "l": "PET กันไฟฟ้าสถิตสองชั้น · หน่วงไฟ", "img": "", "landing": true, "href": "#"}, {"n": "E-8732", "l": "PI ทนความร้อนผลิตในประเทศ · การผลิตจำนวนมาก", "img": "", "landing": true, "href": "#"}]}], GO="ดูสินค้า →", CS="ปรึกษา · ไม่มีหน้าเฉพาะ";
+var CATS=[{"tab": "APEX Series · Polyonics นำเข้าแท้", "intro": "รุ่นพรีเมียมสำหรับกระบวนการ PCB ความหนาแน่นสูงสมัยใหม่", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX", "prods": [{"n": "APEX Series", "l": "ทนรีโฟลว์และล้างซ้ำได้ · พิมพ์ชัดเจนแม่นยำสูง", "img": "", "landing": true, "href": "#"}]}, {"tab": "XF58 Series · Polyonics นำเข้าแท้", "intro": "รุ่นอุตสาหกรรมหลัก รองรับการผลิต PCB ทุกสถานการณ์", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB581", "prods": [{"n": "XF58 Series", "l": "ทนความร้อนและสารเคมีสมดุล · มีหลายสีช่วยแยกประเภท", "img": "", "landing": true, "href": "#"}]}, {"tab": "E Series · พัฒนาโดย ETIA", "intro": "พัฒนาเองคุ้มค่า สืบทอดเทคโนโลยีระดับสูง 20 ปี", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB8732", "prods": [{"n": "E-2712", "l": "PET กันไฟฟ้าสถิตสองชั้น · หน่วงไฟ", "img": "", "landing": true, "href": "#"}, {"n": "E-8732", "l": "PI ทนความร้อนผลิตในประเทศ · การผลิตจำนวนมาก", "img": "", "landing": true, "href": "#"}]}], GO="ดูสินค้า →", CS="ปรึกษา · ไม่มีหน้าเฉพาะ";
 function card(p){
   var im='<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7" cy="7" r="1.1"/></svg></span>';
   var inner=im+'<div><p class="mn">'+p.n+'</p><p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+'</span>'):('<span class="mgo">'+CS+'</span>'))+'</div>';
@@ -517,7 +518,8 @@ function render(a){
     tabs.appendChild(b);
   });
   var c=CATS[a];
-  panel.innerHTML='<p class="wccatintro">'+c.intro+'</p><div class="wcmcards">'+c.prods.map(card).join('')+'</div>';
+  var im=c.img?('<img class="wccatimg" src="'+c.img+'" alt="" loading="lazy" onerror="this.remove()">'):'';
+  panel.innerHTML=im+'<p class="wccatintro">'+c.intro+'</p><div class="wcmcards">'+c.prods.map(card).join('')+'</div>';
 }
 window.wcScroll=function(d){document.getElementById('wctabs').scrollBy({left:d*180,behavior:'smooth'});};
 render(0);
