@@ -144,9 +144,11 @@ def build_lang(data, lang):
     for t in data["tiers"]:
         prods = []
         for p in t["products"]:
+            pslug = p.get("slug", "")
+            href = hp.Lx(lang, "/products/item/%s/" % pslug) if (pslug and p.get("landing")) else "#"
             prods.append({"n": p["name"], "l": L(p.get("line", {}), lang),
-                          "img": p.get("img", ""), "landing": bool(p.get("landing")),
-                          "href": "#"})  # product Landing pages: next step
+                          "img": p.get("img", ""), "landing": bool(p.get("landing") and pslug),
+                          "href": href})
         cats.append({"tab": t.get("tab") or L(t["name"], lang), "intro": L(t["intro"], lang),
                      "img": t.get("img", ""), "prods": prods})
 

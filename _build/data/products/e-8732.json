@@ -1,0 +1,51 @@
+{
+  "slug": "e-8732",
+  "source": "_docs/sources/pcb-products (E8732)",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg",
+  "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB8732",
+  "title": {"en": "E8732 Series — ETIA Domestic PI PCB Labels", "zh": "E8732 系列 · ETIA 本土量产型 PI 标签", "vi": "Dòng E8732 · Nhãn PCB PI nội địa ETIA", "th": "ชุด E8732 · ฉลาก PCB PI ผลิตในประเทศ ETIA"},
+  "tagline": {"en": "E8732, local fast support for mass consumer electronics PCB lines", "zh": "E8732，本土快速配套，适配大批量消费电子 PCB 产线", "vi": "E8732, hỗ trợ nhanh tại địa phương cho dây chuyền PCB điện tử tiêu dùng sản xuất lớn", "th": "E8732 สนับสนุนรวดเร็วในพื้นที่ เหมาะไลน์ PCB อิเล็กทรอนิกส์ผู้บริโภคจำนวนมาก"},
+  "positioning": {
+    "en": "E8732 / E8732ESD are domestic mass-production PI labels focused on standard consumer-electronics PCB lines that run a single reflow. The series prioritizes local fast supply and on-site technical support over multi-cycle premium performance, with samples and TDS provided one-to-one by email.",
+    "zh": "E8732 / E8732ESD 是聚焦大批量消费电子普通 PCB 产线、适配单轮回流的本土量产型 PI 标签；相较多轮高温高端材质，更主打本土快速响应与属地技术支持，样品与 TDS 仅通过邮件申领。",
+    "vi": "E8732 / E8732ESD là nhãn PI sản xuất nội địa lớn lượng, tập trung vào dây chuyền PCB điện tử tiêu dùng tiêu chuẩn chạy một vòng hàn hồi. Dòng sản phẩm ưu tiên cung cấp nhanh tại địa phương và hỗ trợ kỹ thuật tại xưởng hơn là hiệu năng cao đa chu trình; mẫu và TDS chỉ gửi qua email.",
+    "th": "E8732 / E8732ESD เป็นฉลาก PI ผลิตในประเทศจำนวนมาก มุ่งเน้นไลน์ PCB อิเล็กทรอนิกส์ผู้บริโภคมาตรฐานที่ใช้รีโฟลว์รอบเดียว ซีรีส์นี้ให้ความสำคัญกับการจัดหาที่รวดเร็วในพื้นที่และการสนับสนุนเทคนิคที่โรงงานมากกว่าสเปคพรีเมียมหลายรอบ ตัวอย่างและ TDS ส่งทางอีเมลเท่านั้น"
+  },
+  "challenges": {
+    "en": ["Mass consumer-electronics PCBs only need single-reflow basic thermal resistance, not multi-cycle premium materials", "Time-zone gaps slow overseas technical support for on-site process tuning and defect handling", "Small and mid consumer-electronics factories run unified workflows and do not need multi-thickness or special-finish non-standard variants"],
+    "zh": ["大批量消费电子 PCB 仅需单轮回流基础耐候性能，无需多轮高温高端材质", "海外物料存在时差隔阂，产线现场调试、异常处理响应周期长", "中小型消费电子工厂产线工况统一，无需多厚度、多特殊饰面非标规格"],
+    "vi": ["PCB điện tử tiêu dùng sản xuất lớn chỉ cần chịu nhiệt cơ bản một vòng hàn hồi, không cần vật liệu cao cấp đa chu trình", "Chênh lệch múi giờ làm chậm hỗ trợ kỹ thuật nước ngoài khi điều chỉnh quy trình và xử lý lỗi tại xưởng", "Nhà máy điện tử tiêu dùng nhỏ và trung vận hành quy trình thống nhất, không cần dòng nhiều độ dày hay bề mặt đặc biệt phi tiêu chuẩn"],
+    "th": ["PCB อิเล็กทรอนิกส์ผู้บริโภคผลิตจำนวนมากต้องการแค่คุณสมบัติทนความร้อนรีโฟลว์รอบเดียว ไม่ต้องการวัสดุพรีเมียมหลายรอบ", "ความต่างเขตเวลาทำให้การสนับสนุนเทคนิคจากต่างประเทศช้า เมื่อต้องปรับกระบวนการและแก้ปัญหาที่โรงงาน", "โรงงานอิเล็กทรอนิกส์ขนาดกลาง-เล็กใช้กระบวนการมาตรฐานเดียว ไม่ต้องการรุ่นหนาหรือผิวพิเศษที่กำหนดเอง"]
+  },
+  "features": {
+    "en": ["Locally developed 2mil standard polyimide film with a unified matte-white finish, tailored for standard consumer-electronics SMT", "Stable basic thermal rating: continuous 150°C/100h, peak 260°C for 5 minutes, fitting the single-reflow process", "Universal permanent acrylic PSA, compatible with regular consumer-electronics solder flux and water-wash cleaning", "Two standardized grades: E8732 standard, E8732ESD basic anti-static", "Compatible with mainstream thermal-transfer ribbons for clear scannable barcodes in mass printing", "RoHS tested, meeting domestic China consumer-electronics environmental regulations"],
+    "zh": ["本土自研 2mil 标准聚酰亚胺基材，统一哑白外观，匹配消费电子标准 SMT 制程", "稳定基础耐温：150℃长期耐受 100h，峰值 260℃短时 5 分钟，适配单次回流工艺", "通用丙烯酸永久压敏胶，兼容消费电子常规助焊剂与水洗清洗流程", "双标准化型号覆盖需求：E8732 常规款、E8732ESD 基础防静电款", "兼容市面主流热转印碳带，大批量打印条码清晰可扫", "通过 RoHS 环保检测，满足国内消费电子内销管控规范"],
+    "vi": ["Chất nền PI tiêu chuẩn 2mil tự sản xuất trong nước, bề mặt trắng mờ thống nhất, thiết kế cho SMT điện tử tiêu dùng tiêu chuẩn", "Khả năng chịu nhiệt ổn định: liên tục 150°C/100h, đỉnh 260°C trong 5 phút, phù hợp quy trình hàn một vòng", "Keo acrylic vĩnh viễn đa dụng, tương thích dung dịch hàn và nước rửa thông dụng ngành điện tử tiêu dùng", "Hai mã tiêu chuẩn: E8732 tiêu chuẩn, E8732ESD chống tĩnh cơ bản", "Tương thích băng chuyển nhiệt phổ biến, in mã vạch rõ ràng cho sản xuất hàng loạt", "Đạt chuẩn RoHS, tuân thủ quy định môi trường điện tử tiêu dùng nội địa Trung Quốc"],
+    "th": ["ฐาน PI ความหนา 2mil พัฒนาขึ้นเองในประเทศ ผิวสีขาวด้านเดียวกัน ออกแบบสำหรับ SMT อุปกรณ์ผู้บริโภคมาตรฐาน", "ความสามารถทนอุณหภูมิพื้นฐาน: ทน 150°C ต่อเนื่อง 100 ชม. อุณหภูมิสูงสุด 260°C เป็นเวลา 5 นาที เข้ากับรีโฟลว์รอบเดียว", "กาวอะคริลิกถาวรอเนกประสงค์ เข้ากับสารบัดกรีและน้ำล้างทั่วไปของอุตสาหกรรมอิเล็กทรอนิกส์", "มี 2 รุ่นมาตรฐาน: E8732 มาตรฐาน, E8732ESD ป้องกันสถิตเบื้องต้น", "เข้ากับริบบอนพิมพ์ถ่ายเทความร้อนทั่วไป บาร์โค้ดชัดเจนสำหรับงานพิมพ์จำนวนมาก", "ผ่านเกณฑ์ RoHS ปฏิบัติตามกฎสิ่งแวดล้อมสำหรับสินค้าอิเล็กทรอนิกส์ขายในประเทศจีน"]
+  },
+  "benefits": {
+    "en": ["Nearby local factory support means faster response for sampling, process optimization and production-failure handling", "Specs fully match the single-reflow mass-production standard for consumer electronics, with no over-engineered extras", "Local stock kept ready for fast bulk replenishment and urgent sampling, avoiding line downtime", "On-site local technical team eliminates cross-timezone communication delays", "Only two standardized items simplify inventory sorting and stocking pressure for mass-production factories"],
+    "zh": ["本土工厂就近配套，打样、工艺优化、产线异常售后处理响应更快", "性能完全匹配消费电子单轮回流量产标准，无多余高端冗余配置", "国内常备现货，大批量补单、加急试样发货周期短，不耽误产线排产", "本地技术团队可上门协同调试，消除跨时区沟通滞后问题", "仅两款标准化物料，简化大批量工厂库存分类与备货压力"],
+    "vi": ["Nhà máy địa phương gần đó hỗ trợ nhanh hơn cho lấy mẫu, tối ưu quy trình và xử lý sự cố sản xuất", "Thông số khớp hoàn toàn tiêu chuẩn hàn một vòng sản xuất lớn điện tử tiêu dùng, không có tính năng thừa cao cấp", "Luôn có hàng tồn kho nội địa, giao nhanh cho đơn lớn và mẫu gấp, tránh dừng dây chuyền", "Đội ngũ kỹ thuật tại địa phương loại bỏ độ trễ giao tiếp chênh lệch múi giờ", "Chỉ hai mã chuẩn giúp đơn giản phân loại kho và giảm áp lực tồn kho nhà máy sản xuất lớn"],
+    "th": ["โรงงานใกล้เคียงในพื้นที่ตอบสนองขอตัวอย่าง ปรับปรุงกระบวนการ และแก้ปัญหาการผลิตได้เร็วขึ้น", "สเปคตรงกับมาตรฐานรีโฟลว์รอบเดียวของการผลิตจำนวนมากอิเล็กทรอนิกส์ผู้บริโภค ไม่มีฟีเจอร์พรีเมียมที่เกินจำเป็น", "มีสต็อกในประเทศพร้อมส่ง เติมสินค้าจำนวนมากและตัวอย่างด่วนได้เร็ว ไม่ทำให้ไลน์หยุด", "ทีมเทคนิคในพื้นที่ช่วยขจัดความล่าช้าจากการสื่อสารข้ามเขตเวลา", "มีเพียง 2 รุ่นมาตรฐาน ช่วยลดความยุ่งยากในการแยกและจัดการสต็อกโรงงานผลิตจำนวนมาก"]
+  },
+  "spec": {
+    "en": ["E8732: standard non-ESD PI label for mass consumer-electronics PCB lines", "E8732ESD: basic anti-static PI label for consumer workshops running small chips", "Unified spec: 2mil polyimide, matte white, acrylic pressure-sensitive adhesive"],
+    "zh": ["E8732：标准无防静电 PI 标签，通用大批量消费电子 PCB 产线", "E8732ESD：基础防静电 PI 标签，搭载小型芯片消费电子车间使用", "统一参数：2mil 聚酰亚胺、哑白色、丙烯酸压敏胶"],
+    "vi": ["E8732: nhãn PI tiêu chuẩn không chống tĩnh, cho dây chuyền PCB điện tử tiêu dùng sản xuất lớn", "E8732ESD: nhãn PI chống tĩnh cơ bản, cho xưởng sản xuất thiết bị tiêu dùng dùng chip nhỏ", "Thông số thống nhất: polyimide 2mil, trắng mờ, keo nhạy áp acrylic"],
+    "th": ["E8732: ฉลาก PI มาตรฐานไม่ป้องกันสถิต สำหรับไลน์ PCB อิเล็กทรอนิกส์ผู้บริโภคจำนวนมาก", "E8732ESD: ฉลาก PI ป้องกันสถิตเบื้องต้น สำหรับโรงงานที่ใช้ชิปขนาดเล็ก", "สเปคมาตรฐานเดียว: โพลิอิมิด 2mil สีขาวด้าน กาวไวต่อแรงกดอะคริลิก"]
+  },
+  "applications": {
+    "en": ["Mass consumer-electronics mainboards", "Small appliance control boards", "Mobile sub-boards", "General power boards", "Digital component traceability"],
+    "zh": ["大批量消费电子主板", "小家电控制板", "手机副板", "普通电源板", "数码半成品追溯"],
+    "vi": ["Bo mạch chính điện tử tiêu dùng sản xuất lớn", "Tấm điều khiển thiết bị gia dụng", "Tấm phụ điện thoại", "Tấm nguồn thông dụng", "Theo dõi linh kiện kỹ thuật số"],
+    "th": ["บอร์ดหลักอิเล็กทรอนิกส์ผู้บริโภคจำนวนมาก", "แผ่นควบคุมเครื่องใช้ในบ้าน", "แผ่นรองโทรศัพท์", "แผ่นจ่ายไฟทั่วไป", "ฉลากติดตามชิ้นส่วนดิจิทัล"]
+  },
+  "certifications": {
+    "en": ["Fully validated under domestic single-reflow and washing workflows for consumer electronics, RoHS compliant"],
+    "zh": ["完成国内消费电子单轮回流 + 水洗全工况验证，符合 RoHS 环保标准"],
+    "vi": ["Đã xác minh toàn quy trình hàn một vòng và rửa dành cho điện tử tiêu dùng, tuân thủ RoHS"],
+    "th": ["ผ่านการทดสอบกระบวนการรีโฟลว์รอบเดียวและล้างสำหรับอุปกรณ์ผู้บริโภค ปฏิบัติตาม RoHS"]
+  }
+}
