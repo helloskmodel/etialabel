@@ -69,6 +69,20 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
 .wcmcard .ml{font-size:12px;color:#5a6884;margin:3px 0 0;line-height:1.4}
 .wcmcard .mgo{font-size:11.5px;font-weight:800;color:#1A56DB;margin-top:5px;display:block}
 .wcmcard.off{cursor:default}.wcmcard.off .mgo{color:#8a97b3}
+@media (max-width:760px){
+  .wchero{min-height:210px}
+  .wchero .in{padding:24px 18px}
+  .wchero h1{font-size:24px;margin:8px 0 6px}
+  .wchero .slog{font-size:15.5px}
+  .wcsec{padding:20px 18px}
+  .wcsec h2{font-size:20px;margin:6px 0 9px}
+  .wcov p{font-size:14.5px;line-height:1.62;margin:0 0 8px}
+  .wccatintro{font-size:14.5px;line-height:1.58;margin:6px auto 14px}
+  .wctab{font-size:12.5px;padding:9px 13px}
+  #wcpanel{margin-top:16px}
+  .wcmcard .ic{width:46px;height:46px}
+  .wcmcard .ic svg{width:24px;height:24px}
+}
 </style>
 """
 
