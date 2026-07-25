@@ -67,6 +67,7 @@ CSS = """
 .wctab.on{background:#5b6ee8;color:#fff}
 .wctab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#1A56DB}
 #wcpanel{margin-top:24px;max-width:760px;margin-left:auto;margin-right:auto}
+.wccatimg{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block;margin:0 auto 16px;background:#e8eefb}
 .wccatintro{color:#2c3a58;font-size:16px;line-height:1.7;margin:8px auto 20px}
 .wcmcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
 .wcmcard{display:flex;gap:13px;align-items:center;background:#fff;border:1px solid #dbe3f1;border-radius:12px;padding:11px;text-decoration:none;color:#17203a;transition:box-shadow .15s,transform .15s}
@@ -112,7 +113,8 @@ function render(a){
     tabs.appendChild(b);
   });
   var c=CATS[a];
-  panel.innerHTML='<p class="wccatintro">'+c.intro+'</p><div class="wcmcards">'+c.prods.map(card).join('')+'</div>';
+  var im=c.img?('<img class="wccatimg" src="'+c.img+'" alt="" loading="lazy" onerror="this.remove()">'):'';
+  panel.innerHTML=im+'<p class="wccatintro">'+c.intro+'</p><div class="wcmcards">'+c.prods.map(card).join('')+'</div>';
 }
 window.wcScroll=function(d){document.getElementById('wctabs').scrollBy({left:d*180,behavior:'smooth'});};
 render(0);
@@ -134,7 +136,8 @@ def build_lang(data, lang):
             prods.append({"n": p["name"], "l": L(p.get("line", {}), lang),
                           "img": p.get("img", ""), "landing": bool(p.get("landing")),
                           "href": "#"})  # product Landing pages: next step
-        cats.append({"tab": L(t["name"], lang), "intro": L(t["intro"], lang), "prods": prods})
+        cats.append({"tab": L(t["name"], lang), "intro": L(t["intro"], lang),
+                     "img": t.get("img", ""), "prods": prods})
 
     banner = data.get("banner_img", "")
     bg = ('<img class="bg" src="%s" alt="" loading="eager" onerror="this.style.display=\'none\'">' % esc(banner)) if banner else ""
