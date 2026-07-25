@@ -25,8 +25,16 @@ UI = {
          "cta_p": "Request Samples", "cta_g": "Ask an Engineer"},
   "zh": {"overview": "行业概述", "eyebrow_ov": "行业概述",
          "go": "查看产品 →", "consult": "咨询选型 · 无单独页",
-         "home": "首页", "cta_h": "线缆标识选型拿不准？告诉我们工况，我们匹配材料",
+         "home": "首页", "cta_h": "选型拿不准？告诉我们工况，我们匹配材料",
          "cta_p": "申请样品", "cta_g": "咨询工程师"},
+  "vi": {"overview": "Tổng quan ngành", "eyebrow_ov": "Tổng quan ngành",
+         "go": "Xem sản phẩm →", "consult": "Tư vấn · chưa có trang riêng",
+         "home": "Trang chủ", "cta_h": "Chưa chắc chọn nhãn nào? Cho chúng tôi biết điều kiện — chúng tôi ghép vật liệu.",
+         "cta_p": "Yêu cầu mẫu", "cta_g": "Hỏi kỹ sư"},
+  "th": {"overview": "ภาพรวมอุตสาหกรรม", "eyebrow_ov": "ภาพรวมอุตสาหกรรม",
+         "go": "ดูสินค้า →", "consult": "ปรึกษา · ไม่มีหน้าเฉพาะ",
+         "home": "หน้าแรก", "cta_h": "ไม่แน่ใจว่าจะเลือกฉลากใด? บอกเงื่อนไขการใช้งาน แล้วเราจะจับคู่วัสดุให้",
+         "cta_p": "ขอตัวอย่าง", "cta_g": "สอบถามวิศวกร"},
 }
 
 def L(node, lang):
@@ -149,7 +157,8 @@ def build_lang(data, lang):
 
     crumb = [(ui["home"], "/"), (title, path)]
     content = hp.page(lang, path, L(data["seo_title"], lang), L(data["seo_desc"], lang),
-                      title, "", body, crumb, active="app", trust=False, hero=hero)
+                      title, "", body, crumb, active="app", trust=False, hero=hero,
+                      langs=data.get("langs", ["en", "zh"]))
     hp.write(lang, path, content)  # overwrites gen_industry output; path already tracked there
     return (hp.PREFIX[lang] + path)
 
@@ -157,9 +166,9 @@ def main():
     # Both languages get the v2 design + real products (model numbers are facts,
     # not translation). English prose (overview / tier intros) is a draft
     # translation of the Chinese brief, pending client review.
-    for slug in ["wire-cable", "outdoor-energy"]:
+    for slug in ["wire-cable", "outdoor-energy", "pcb"]:
         data = json.load(open(os.path.join(IND_DIR, slug + ".json"), encoding="utf-8"))
-        for lang in ["en", "zh"]:
+        for lang in data.get("langs", ["en", "zh"]):
             out = build_lang(data, lang)
             print("industry v2:", out)
 
