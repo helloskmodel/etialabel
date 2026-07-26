@@ -88,15 +88,28 @@
           "slug": "hp-700t"
         },
         {
-          "name": "HP-600",
+          "name": "HP-800C",
           "line": {
-            "en": "550℃ application for coils and objects already cooled or post-hot-rolling",
-            "zh": "550℃ 贴附,适用钢卷及已降温 / 热轧后对象",
-            "vi": "Dán 550℃ cho cuộn thép và đối tượng đã nguội hoặc sau cán nóng",
-            "th": "ติดที่ 550℃ สำหรับคอยล์และวัตถุที่เย็นลงแล้วหรือหลังการรีดร้อน"
+            "en": "Up to 800°C · high adhesion on glass & metal",
+            "zh": "耐 800°C · 玻璃与金属高附着",
+            "vi": "Đến 800°C · bám dính cao trên kính & kim loại",
+            "th": "ถึง 800°C · ยึดเกาะสูงบนแก้วและโลหะ"
           },
           "img": "",
-          "landing": false
+          "landing": true,
+          "slug": "hp-800c"
+        },
+        {
+          "name": "HP-901",
+          "line": {
+            "en": "Up to 1000°C · nickel foil, uneven surfaces",
+            "zh": "耐 1000°C · 镍箔，适应不平整表面",
+            "vi": "Đến 1000°C · lá niken, bề mặt gồ ghề",
+            "th": "ถึง 1000°C · แผ่นนิกเกิล พื้นผิวไม่เรียบ"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-901"
         }
       ],
       "img": "",
@@ -146,15 +159,16 @@
       },
       "products": [
         {
-          "name": "Heat Treatment Tag",
+          "name": "HP-L90",
           "line": {
-            "en": "Mechanically fixed to reusable jigs, fixtures and baskets for tooling asset management, cycle counting and end-of-life alerts",
-            "zh": "机械固定于反复使用的工装、夹具、料筐,用于工装资产管理、使用次数统计与寿命预警",
-            "vi": "Cố định cơ khí lên đồ gá, kẹp, giỏ đựng dùng lại để quản lý tài sản đồ gá, đếm số lần sử dụng và cảnh báo hết tuổi thọ",
-            "th": "ยึดเชิงกลกับจิ๊ก ฟิกซ์เจอร์ และตะกร้าที่ใช้ซ้ำ เพื่อจัดการสินทรัพย์จิ๊ก นับจำนวนรอบการใช้งาน และแจ้งเตือนหมดอายุการใช้งาน"
+            "en": "Up to 1200°C · stainless-steel tag",
+            "zh": "耐 1200°C · 不锈钢挂牌",
+            "vi": "Đến 1200°C · thẻ thép không gỉ",
+            "th": "ถึง 1200°C · แท็กสแตนเลส"
           },
           "img": "",
-          "landing": false
+          "landing": true,
+          "slug": "hp-l90"
         }
       ],
       "img": "",
@@ -188,6 +202,36 @@
       ],
       "img": "",
       "tab": "On-Site Print"
+    },
+    {
+      "name": {
+        "en": "Ceramics & Glass",
+        "zh": "陶瓷与玻璃",
+        "vi": "Gốm sứ & Thủy tinh",
+        "th": "เซรามิกและแก้ว"
+      },
+      "intro": {
+        "en": "Direct identification and bar-coding on ceramic and glass products fired up to 1200°C.",
+        "zh": "耐 1200°C 高温烧制的陶瓷、玻璃产品直接条码标识",
+        "vi": "Nhận diện và in mã vạch trực tiếp trên sản phẩm gốm sứ và thủy tinh nung đến 1200°C",
+        "th": "ระบุและพิมพ์บาร์โค้ดโดยตรงบนผลิตภัณฑ์เซรามิกและแก้วที่เผาถึง 1200°C"
+      },
+      "img": "",
+      "tab": "Ceramics",
+      "products": [
+        {
+          "name": "HP-CBR11",
+          "line": {
+            "en": "Up to 1200°C · direct bar-coding on ceramics",
+            "zh": "耐 1200°C · 陶瓷直接条码标识",
+            "vi": "Đến 1200°C · mã vạch trực tiếp trên gốm sứ",
+            "th": "ถึง 1200°C · บาร์โค้ดบนเซรามิกโดยตรง"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-cbr11"
+        }
+      ]
     }
   ]
 }

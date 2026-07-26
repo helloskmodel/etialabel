@@ -1,0 +1,31 @@
+{
+  "slug": "hp-901",
+  "source": "TDS HP-901",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "product_img": "",
+  "title": {"en": "HP-901 — HP Series High-Temp Label", "zh": "HP-901 · HP Series 高温标签", "vi": "HP-901 · Nhãn chịu nhiệt cao HP Series", "th": "HP-901 · ฉลากทนความร้อนสูง HP Series"},
+  "tagline": {"en": "High-temperature HP-series label for hot metal from 450 to 1000°C", "zh": "HP 系列高温标签，适用于 450 至 1000°C 的高温金属", "vi": "Nhãn HP series chịu nhiệt cao dùng cho kim loại nóng từ 450 đến 1000°C", "th": "ฉลาก HP series ทนความร้อนสูงสำหรับโลหะร้อนตั้งแต่ 450 ถึง 1000°C"},
+  "positioning": {},
+  "challenges": {},
+  "features": {
+    "en": ["Applicable to hot metal at temperatures from 450 to 1000°C", "Heat resistance up to 1000°C", "Minimum loss of adhesion value at high temperature", "Adheres well to uneven surface", "Printable with the thermal transfer printer", "Thermal transfer ink ribbon: YS-4"],
+    "zh": ["适用于 450 至 1000°C 温度下的高温金属", "耐热性最高达 1000°C", "在高温下附着力损失最小", "在不平整表面上附着良好", "可使用热转印打印机打印", "热转印色带：YS-4"],
+    "vi": ["Áp dụng cho kim loại nóng ở nhiệt độ từ 450 đến 1000°C", "Khả năng chịu nhiệt đến 1000°C", "Tổn thất độ bám dính tối thiểu ở nhiệt độ cao", "Bám dính tốt trên bề mặt không bằng phẳng", "Có thể in bằng máy in chuyển nhiệt", "Băng mực chuyển nhiệt: YS-4"],
+    "th": ["ใช้ได้กับโลหะร้อนที่อุณหภูมิตั้งแต่ 450 ถึง 1000°C", "ทนความร้อนได้ถึง 1000°C", "สูญเสียค่าการยึดเกาะน้อยที่สุดที่อุณหภูมิสูง", "ยึดเกาะได้ดีบนพื้นผิวที่ไม่เรียบ", "พิมพ์ได้ด้วยเครื่องพิมพ์ถ่ายเทความร้อน", "ริบบอนหมึกถ่ายเทความร้อน: YS-4"]
+  },
+  "benefits": {},
+  "spec": {
+    "en": ["Printing layer: Inorganic coating (White), 10±3µ", "Label core: Nickel foil, 10±1µ", "Back layer: Inorganic adhesive, 35±3µ", "Adhesion: 1-4 N/25mm (SUS plate / 180° peel)", "Heat resistance: Good (800°C x 5hr)", "Application temperature: 400-1000°C"],
+    "zh": ["打印层：无机涂层（白色），10±3µ", "标签芯层：镍箔，10±1µ", "背层：无机胶粘剂，35±3µ", "附着力：1-4 N/25mm（SUS 板 / 180° 剥离）", "耐热性：良好（800°C x 5hr）", "使用温度：400-1000°C"],
+    "vi": ["Lớp in: Lớp phủ vô cơ (Trắng), 10±3µ", "Lõi nhãn: Lá niken, 10±1µ", "Lớp lưng: Keo vô cơ, 35±3µ", "Độ bám dính: 1-4 N/25mm (tấm SUS / bóc 180°)", "Khả năng chịu nhiệt: Tốt (800°C x 5hr)", "Nhiệt độ sử dụng: 400-1000°C"],
+    "th": ["ชั้นพิมพ์: สารเคลือบอนินทรีย์ (สีขาว), 10±3µ", "แกนฉลาก: ฟอยล์นิกเกิล, 10±1µ", "ชั้นหลัง: กาวอนินทรีย์, 35±3µ", "การยึดเกาะ: 1-4 N/25mm (แผ่น SUS / ลอก 180°)", "ความทนความร้อน: ดี (800°C x 5hr)", "อุณหภูมิการใช้งาน: 400-1000°C"]
+  },
+  "applications": {
+    "en": ["For metal products management under heat treatment up to 1000°C", "Steel, Aluminum, Nonferrous metal industry, Metal-processing industry"],
+    "zh": ["用于高达 1000°C 热处理下的金属产品管理", "钢铁、铝、有色金属行业，金属加工行业"],
+    "vi": ["Dùng cho quản lý sản phẩm kim loại trong xử lý nhiệt đến 1000°C", "Ngành thép, nhôm, kim loại màu, ngành gia công kim loại"],
+    "th": ["สำหรับการจัดการผลิตภัณฑ์โลหะภายใต้การอบชุบความร้อนถึง 1000°C", "อุตสาหกรรมเหล็ก อะลูมิเนียม โลหะนอกกลุ่มเหล็ก อุตสาหกรรมแปรรูปโลหะ"]
+  },
+  "certifications": {}
+}
