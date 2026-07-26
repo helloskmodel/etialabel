@@ -1,0 +1,193 @@
+{
+  "slug": "steel-metal-ceramic-labeling-solutions",
+  "source": "_docs/sources/steel/",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner_img": "",
+  "seo_title": {
+    "en": "Heat-Resistant Label Applications for the Steel Industry",
+    "zh": "钢铁行业耐高温标签应用",
+    "vi": "Ứng dụng nhãn chịu nhiệt trong ngành thép",
+    "th": "การใช้งานฉลากทนความร้อนในอุตสาหกรรมเหล็ก"
+  },
+  "seo_desc": {
+    "en": "Heat-Resistant Label Applications for the Steel Industry | 750℃ Direct Hot Application · Pickling & Annealing Traceability",
+    "zh": "钢铁行业耐高温标签应用 | 750℃ 热态直贴 · 酸洗退火追溯",
+    "vi": "Ứng dụng nhãn chịu nhiệt trong ngành thép | Dán trực tiếp 750℃ · Truy xuất qua tẩy gỉ và ủ",
+    "th": "การใช้งานฉลากทนความร้อนในอุตสาหกรรมเหล็ก | ติดโดยตรงที่ 750℃ · การสอบกลับผ่านการกัดกรดและอบอ่อน"
+  },
+  "hero": {
+    "eyebrow": {
+      "en": "By Industry · Steel",
+      "zh": "按行业 · 钢铁",
+      "vi": "Theo ngành · Thép",
+      "th": "ตามอุตสาหกรรม · เหล็ก"
+    },
+    "title": {
+      "en": "Heat-Resistant Label Applications in the Steel Industry",
+      "zh": "钢铁行业耐高温标签应用",
+      "vi": "Ứng dụng nhãn chịu nhiệt trong ngành thép",
+      "th": "การใช้งานฉลากทนความร้อนในอุตสาหกรรมเหล็ก"
+    },
+    "slogan": {
+      "en": "750℃ direct application on red-hot surfaces, acid immersion, 800℃ annealing — heat-resistant barcode identification across the entire steel process chain",
+      "zh": "750℃ 赤热直贴、酸洗浸泡、800℃ 退火——覆盖钢铁全流程的耐高温条码标识",
+      "vi": "Dán trực tiếp lên bề mặt đỏ rực 750℃, ngâm axit tẩy gỉ, ủ 800℃ — nhận dạng mã vạch chịu nhiệt cho toàn bộ chuỗi công đoạn ngành thép",
+      "th": "ติดโดยตรงบนผิวร้อนแดง 750℃ แช่กรด อบอ่อน 800℃ — การระบุตัวตนด้วยบาร์โค้ดทนความร้อนครอบคลุมทุกขั้นตอนของกระบวนการผลิตเหล็ก"
+    }
+  },
+  "overview": {
+    "en": [
+      "What makes steel production different is this: at the moment material needs to be identified, it is often still red-hot, covered in scale, and about to enter an even harsher process. Conventional labels all fail here — paper and PET labels carbonize above 200℃; inkjet coding and paint sit on the scale layer and burn away in the reheating furnace; manual tagging requires personnel to approach a 700℃ heat source; stamping is not machine-readable and cannot connect to MES in real time. The value of a heat-resistant label is keeping the barcode machine-readable throughout the entire hot-working chain, genuinely binding physical material to the information system."
+    ],
+    "zh": [
+      "钢铁生产的特殊性在于:物料在被识别的那一刻,往往还是红热的、带氧化皮的、即将进入更严苛工序的。普通标签在这里全部失效——纸 / PET 标签 200℃ 以上直接碳化;喷码 / 油漆附着在氧化皮上,氧化皮一脱落标识随之消失,经加热炉后完全烧尽;人工挂牌需要人员靠近 700℃ 热源,效率低且存在安全风险;钢印 / 打点无法机读,无法与 MES 实时对接。耐高温标签的价值,是让条码在整个热加工链条中始终保持可机读,把物理物料和信息系统真正绑定。"
+    ],
+    "vi": [
+      "Điểm đặc thù của sản xuất thép nằm ở chỗ: tại thời điểm cần nhận dạng, vật liệu thường vẫn đang đỏ rực, phủ đầy vảy oxit, và sắp bước vào công đoạn còn khắc nghiệt hơn. Các loại nhãn thông thường đều thất bại ở đây — nhãn giấy / PET cháy thành than khi vượt quá 200℃; phun mã / sơn bám trên lớp vảy oxit và cháy sạch sau khi qua lò nung; treo thẻ thủ công buộc công nhân phải tiếp cận nguồn nhiệt 700℃, chậm và mất an toàn; đóng số / chấm dấu không đọc được bằng máy, không kết nối thời gian thực với MES. Giá trị của nhãn chịu nhiệt là giữ cho mã vạch luôn đọc được bằng máy xuyên suốt chuỗi gia công nóng, thực sự gắn kết vật liệu vật lý với hệ thống thông tin."
+    ],
+    "th": [
+      "สิ่งที่ทำให้การผลิตเหล็กแตกต่างคือ ณ วินาทีที่ต้องระบุตัวตนวัสดุ ชิ้นงานมักยังร้อนแดง มีสเกลออกไซด์ปกคลุม และกำลังจะเข้าสู่กระบวนการที่รุนแรงกว่าเดิม ฉลากทั่วไปล้มเหลวทั้งหมดในสภาวะนี้ — ฉลากกระดาษ / PET ไหม้เป็นถ่านเมื่อเกิน 200℃; การพ่นรหัส / สี เกาะอยู่บนชั้นสเกลและถูกเผาหมดหลังผ่านเตาอบ; การแขวนป้ายด้วยมือพนักงานต้องเข้าใกล้แหล่งความร้อน 700℃ ช้าและไม่ปลอดภัย; การตอกตัวเลข / ตอกจุด เครื่องอ่านไม่ได้ เชื่อมต่อ MES แบบเรียลไทม์ไม่ได้ คุณค่าของฉลากทนความร้อนคือการทำให้บาร์โค้ดยังคงอ่านด้วยเครื่องได้ตลอดทั้งห่วงโซ่การแปรรูปร้อน เชื่อมโยงวัสดุจริงเข้ากับระบบสารสนเทศอย่างแท้จริง"
+    ]
+  },
+  "classify_by": {
+    "en": "Choose an application",
+    "zh": "选择应用",
+    "vi": "Chọn ứng dụng",
+    "th": "เลือกการใช้งาน"
+  },
+  "tiers": [
+    {
+      "name": {
+        "en": "Direct Hot Application Labels",
+        "zh": "热态直贴标签",
+        "vi": "Nhãn dán trực tiếp khi nóng",
+        "th": "ฉลากติดโดยตรงขณะร้อน"
+      },
+      "intro": {
+        "en": "Surface temperature at the moment of application is 550–750℃; the surface is rough and covered in scale. The label must bond instantly and must not burn.",
+        "zh": "贴附瞬间对象表面 550–750℃,表面粗糙、覆盖氧化皮,标签必须瞬间贴牢且不燃烧",
+        "vi": "Nhiệt độ bề mặt tại thời điểm dán là 550–750℃; bề mặt thô ráp, phủ vảy oxit. Nhãn phải bám tức thì và không được cháy.",
+        "th": "อุณหภูมิผิวขณะติดอยู่ที่ 550–750℃ ผิวหยาบและมีสเกลปกคลุม ฉลากต้องยึดติดทันทีและต้องไม่ไหม้"
+      },
+      "products": [
+        {
+          "name": "HP-700T",
+          "line": {
+            "en": "750℃ direct application on hot billets and slabs",
+            "zh": "750℃ 热态钢坯 / 板坯表面直接贴附",
+            "vi": "Dán trực tiếp 750℃ lên phôi thanh và phôi tấm nóng",
+            "th": "ติดโดยตรงที่ 750℃ บนบิลเล็ตและสแลบร้อน"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-700t"
+        },
+        {
+          "name": "HP-600",
+          "line": {
+            "en": "550℃ application for coils and objects already cooled or post-hot-rolling",
+            "zh": "550℃ 贴附,适用钢卷及已降温 / 热轧后对象",
+            "vi": "Dán 550℃ cho cuộn thép và đối tượng đã nguội hoặc sau cán nóng",
+            "th": "ติดที่ 550℃ สำหรับคอยล์และวัตถุที่เย็นลงแล้วหรือหลังการรีดร้อน"
+          },
+          "img": "",
+          "landing": false
+        }
+      ],
+      "img": "",
+      "tab": "Direct Hot"
+    },
+    {
+      "name": {
+        "en": "Through-Process Labels for Heat Treatment",
+        "zh": "热处理过程标签",
+        "vi": "Nhãn theo suốt quá trình nhiệt luyện",
+        "th": "ฉลากติดตามตลอดกระบวนการอบชุบ"
+      },
+      "intro": {
+        "en": "The label must first be immersed in acid (H₂SO₄ / HCl), then be baked in a furnace for 10–18 hours — chemical attack and long-duration heat stacked on top of each other.",
+        "zh": "标签不是耐一下高温,而是要先泡酸(H₂SO₄ / HCl)、再进炉烧 10~18 小时,化学腐蚀与长时间高温叠加",
+        "vi": "Nhãn không chỉ cần chịu nóng một lúc — mà phải ngâm axit trước (H₂SO₄ / HCl), rồi nung trong lò 10–18 giờ. Ăn mòn hóa học và nhiệt độ cao kéo dài chồng lên nhau.",
+        "th": "ฉลากไม่ได้แค่ทนร้อนชั่วครู่ แต่ต้องแช่กรดก่อน (H₂SO₄ / HCl) แล้วเข้าเตาอบนาน 10–18 ชั่วโมง การกัดกร่อนทางเคมีและความร้อนระยะยาวซ้อนทับกัน"
+      },
+      "products": [
+        {
+          "name": "Through-Process Label",
+          "line": {
+            "en": "Applied at ambient temperature; travels with the workpiece through pickling and 10–18h annealing, still scannable at furnace exit",
+            "zh": "常温贴附,随工件走完酸洗与 10~18 小时退火全过程,出炉后仍可扫码",
+            "vi": "Dán ở nhiệt độ thường; đi cùng chi tiết qua tẩy gỉ và ủ 10–18 giờ, vẫn quét được khi ra lò",
+            "th": "ติดที่อุณหภูมิห้อง เดินทางไปกับชิ้นงานผ่านการกัดกรดและอบอ่อน 10–18 ชม. ยังสแกนได้เมื่อออกจากเตา"
+          },
+          "img": "",
+          "landing": false
+        }
+      ],
+      "img": "",
+      "tab": "Through-Process"
+    },
+    {
+      "name": {
+        "en": "Heat Treatment Tags",
+        "zh": "热处理挂牌",
+        "vi": "Thẻ treo chịu nhiệt",
+        "th": "ป้ายแขวนทนความร้อน"
+      },
+      "intro": {
+        "en": "Not single-use — must stay readable through dozens to hundreds of thermal cycles.",
+        "zh": "不是一次性使用,而是要承受几十上百次热循环仍可读",
+        "vi": "Không dùng một lần — phải đọc được sau hàng chục đến hàng trăm chu kỳ nhiệt.",
+        "th": "ไม่ใช่การใช้ครั้งเดียว — ต้องอ่านได้หลังผ่านรอบความร้อนหลายสิบถึงหลายร้อยรอบ"
+      },
+      "products": [
+        {
+          "name": "Heat Treatment Tag",
+          "line": {
+            "en": "Mechanically fixed to reusable jigs, fixtures and baskets for tooling asset management, cycle counting and end-of-life alerts",
+            "zh": "机械固定于反复使用的工装、夹具、料筐,用于工装资产管理、使用次数统计与寿命预警",
+            "vi": "Cố định cơ khí lên đồ gá, kẹp, giỏ đựng dùng lại để quản lý tài sản đồ gá, đếm số lần sử dụng và cảnh báo hết tuổi thọ",
+            "th": "ยึดเชิงกลกับจิ๊ก ฟิกซ์เจอร์ และตะกร้าที่ใช้ซ้ำ เพื่อจัดการสินทรัพย์จิ๊ก นับจำนวนรอบการใช้งาน และแจ้งเตือนหมดอายุการใช้งาน"
+          },
+          "img": "",
+          "landing": false
+        }
+      ],
+      "img": "",
+      "tab": "Tags"
+    },
+    {
+      "name": {
+        "en": "On-Site Printing & System Integration",
+        "zh": "现场打印与系统集成",
+        "vi": "In tại chỗ và tích hợp hệ thống",
+        "th": "การพิมพ์หน้างานและการเชื่อมต่อระบบ"
+      },
+      "intro": {
+        "en": "Thermal transfer printer + high-temperature ribbon. MES pushes the heat number / batch number in real time, the label is printed and applied immediately, and downstream scanning stations feed data back.",
+        "zh": "热转印打印机 + 高温色带,由 MES 实时下发炉次 / 批号,打印后即时贴附;下游扫码站回传数据",
+        "vi": "Máy in truyền nhiệt + ruy băng chịu nhiệt. MES đẩy số mẻ / số lô theo thời gian thực, in xong dán ngay; trạm quét phía sau phản hồi dữ liệu về hệ thống.",
+        "th": "เครื่องพิมพ์ถ่ายโอนความร้อน + ริบบอนทนความร้อน MES ส่งหมายเลขเตา / หมายเลขล็อตแบบเรียลไทม์ พิมพ์แล้วติดทันที สถานีสแกนปลายทางส่งข้อมูลกลับ"
+      },
+      "products": [
+        {
+          "name": "On-Site Printing",
+          "line": {
+            "en": "Print-and-apply station linking MES heat numbers to the label, with downstream scan-back at each stage",
+            "zh": "即打即贴工位,将 MES 炉次号写入标签,各环节扫码回传",
+            "vi": "Trạm in và dán liên kết số mẻ MES với nhãn, quét phản hồi ở từng công đoạn phía sau",
+            "th": "สถานีพิมพ์และติดที่เชื่อมหมายเลขเตาจาก MES เข้ากับฉลาก พร้อมสแกนกลับในแต่ละขั้นตอนปลายทาง"
+          },
+          "img": "",
+          "landing": false
+        }
+      ],
+      "img": "",
+      "tab": "On-Site Print"
+    }
+  ]
+}
