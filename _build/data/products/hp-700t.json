@@ -1,0 +1,237 @@
+{
+  "slug": "hp-700t",
+  "source": "_docs/sources/steel/ (HP-700T)",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "product_img": "",
+  "title": {
+    "en": "HP-700T — 750℃ Direct Application Label for Hot Steel Billets",
+    "zh": "750℃ 热态钢坯直贴标签 HP-700T",
+    "vi": "HP-700T — Nhãn dán trực tiếp lên phôi thanh thép nóng 750℃",
+    "th": "HP-700T — ฉลากติดโดยตรงบนบิลเล็ตเหล็กร้อน 750℃"
+  },
+  "tagline": {
+    "en": "HP-700T — Applied directly to a 750℃ billet surface",
+    "zh": "HP-700T — 750℃ 钢坯表面直接贴附",
+    "vi": "HP-700T — Dán trực tiếp lên bề mặt phôi thanh 750℃",
+    "th": "HP-700T — ติดโดยตรงบนผิวบิลเล็ต 750℃"
+  },
+  "positioning": {
+    "en": "Billets cut from the continuous caster, with end-face / side-face temperatures around 750℃, covered in scale that keeps flaking off. Billets wait on the cooling bed, get transported, get stacked, and eventually go into the reheating furnace or straight to the mill. A robotic labeling station is installed downstream of the cutting machine: MES pushes the heat number, the thermal transfer printer prints on the spot, the robot picks the label, and it is applied automatically to the billet end face. On contact, the adhesive layer softens and penetrates the rough pores of the scale, forming a mechanical anchor as it cools; the barcode stays scannable while the billet cools, is moved by crane, and sits in the stack, and a scanning station confirms identity and feeds it back to MES before furnace entry.",
+    "zh": "连铸机切断后的钢坯,端面 / 侧面温度约 750℃,表面覆盖氧化皮并持续脱落。钢坯需在冷床等待、转运、堆垛,最终进入加热炉或直送轧机。在切断机后方设置机器人贴标工位:MES 下发炉次号,热转印打印机现场打印,机器人取标,在钢坯端面自动贴附。标签胶层在接触瞬间软化、渗入氧化皮的粗糙孔隙,冷却后形成机械锚固;钢坯在冷床降温、行车转运、堆垛期间条码持续可扫,入炉前由扫码站确认身份并回传 MES。",
+    "vi": "Phôi thanh sau khi được cắt khỏi máy đúc liên tục có nhiệt độ mặt đầu / mặt bên khoảng 750℃, bề mặt phủ vảy oxit và liên tục bong tróc. Phôi phải chờ trên giàn làm nguội, được vận chuyển, xếp chồng, rồi cuối cùng vào lò nung hoặc đi thẳng tới máy cán. Bố trí trạm robot dán nhãn phía sau máy cắt: MES đẩy số mẻ, máy in truyền nhiệt in tại chỗ, robot lấy nhãn, dán tự động lên mặt đầu phôi. Lớp keo mềm ra ngay khi tiếp xúc, thẩm thấu vào các lỗ rỗng thô ráp của vảy oxit, và khi nguội tạo thành neo cơ học; trong suốt quá trình phôi nguội trên giàn, được cầu trục di chuyển và xếp chồng, mã vạch vẫn quét được liên tục, và trước khi vào lò trạm quét xác nhận danh tính và phản hồi về MES.",
+    "th": "บิลเล็ตที่ถูกตัดจากเครื่องหล่อต่อเนื่องมีอุณหภูมิหน้าตัด / ผิวข้างประมาณ 750℃ ผิวปกคลุมด้วยสเกลออกไซด์ที่หลุดร่อนอยู่ตลอด บิลเล็ตต้องรอบนเตียงระบายความร้อน ถูกขนย้าย จัดกอง และสุดท้ายเข้าเตาอบหรือส่งตรงไปยังเครื่องรีด ติดตั้งสถานีหุ่นยนต์ติดฉลากหลังเครื่องตัด: MES ส่งหมายเลขเตา เครื่องพิมพ์ถ่ายโอนความร้อนพิมพ์ที่หน้างาน หุ่นยนต์หยิบฉลาก แล้วติดอัตโนมัติบนหน้าตัดบิลเล็ต ชั้นกาวจะอ่อนตัวทันทีที่สัมผัสและซึมเข้าไปในรูพรุนหยาบของสเกล เมื่อเย็นตัวลงจะเกิดการยึดเชิงกล ตลอดช่วงที่บิลเล็ตเย็นตัว ถูกเครนเคลื่อนย้าย และวางในกอง บาร์โค้ดยังสแกนได้ต่อเนื่อง และก่อนเข้าเตาสถานีสแกนจะยืนยันตัวตนและส่งข้อมูลกลับไปยัง MES"
+  },
+  "challenges": {
+    "en": [
+      "Between the caster cut and stacking, the billet has no physical identity",
+      "The common approach today — record the position and log the heat number by hand — loses batch attribution the moment the stack order gets disturbed or a job is inserted",
+      "Inkjet coding cannot form a legible mark on 750℃ scale",
+      "Manual tagging requires an operator to carry a tagging pole up to a hot billet"
+    ],
+    "zh": [
+      "连铸切断到堆垛之间,钢坯没有物理身份",
+      "目前普遍靠记录位置 + 人工登记炉次,一旦堆垛顺序被打乱或有插单,批次归属就丢了",
+      "喷码在 750℃ 氧化皮上无法成型",
+      "人工挂牌需要操作工携带挂牌杆靠近热坯"
+    ],
+    "vi": [
+      "Từ lúc cắt phôi đến lúc xếp chồng, phôi thanh không có danh tính vật lý",
+      "Cách làm phổ biến hiện nay là ghi lại vị trí + đăng ký số mẻ thủ công — chỉ cần thứ tự xếp chồng bị xáo trộn hoặc có đơn chen ngang là quy thuộc lô lập tức mất",
+      "Phun mã không thể tạo dấu rõ nét trên vảy oxit 750℃",
+      "Treo thẻ thủ công buộc công nhân phải mang sào treo lại gần phôi nóng"
+    ],
+    "th": [
+      "ระหว่างการตัดจากเครื่องหล่อจนถึงการจัดกอง บิลเล็ตไม่มีตัวตนทางกายภาพ",
+      "วิธีที่ใช้กันทั่วไปในปัจจุบันคือ บันทึกตำแหน่ง + ลงหมายเลขเตาด้วยมือ — เพียงลำดับการจัดกองถูกรบกวนหรือมีงานแทรก การระบุล็อตก็สูญหายทันที",
+      "การพ่นรหัสไม่สามารถสร้างเครื่องหมายที่อ่านออกได้บนสเกล 750℃",
+      "การแขวนป้ายด้วยมือบังคับให้พนักงานถือไม้แขวนป้ายเข้าใกล้บิลเล็ตร้อน"
+    ]
+  },
+  "features": {
+    "en": [
+      "750℃ direct application: application surface up to 750℃ — the label does not burn, curl, or fall off",
+      "Instant high-temperature adhesive: softens and bonds on contact, anchoring into the pores of the scale as it cools — not a conventional pressure-sensitive mechanism",
+      "Scale-surface adaptability: engineered for rough, uneven billet surfaces with loose scale",
+      "High-contrast imaging when hot: the barcode retains contrast even against the billet's own glow, supporting hot-state scanning",
+      "Thermal shock resistance: withstands rapid cooling on the bed or localized water spray without cracking or peeling",
+      "Robot-compatible: roll-fed supply for continuous feeding on automatic labelers without jamming",
+      "On-site thermal transfer printing: supports print-and-apply with heat numbers pushed live from MES",
+      "Resists scale flake-off: deep anchoring means loose scale doesn't take the label with it"
+    ],
+    "zh": [
+      "750℃ 直贴耐受:贴附面温度可达 750℃,标签不燃烧、不卷边、不脱落",
+      "高温瞬时粘接胶:接触即软化贴合,冷却后锚固于氧化皮孔隙,非常规压敏胶原理",
+      "氧化皮表面适应性:针对粗糙、不平整、带浮皮的钢坯表面设计",
+      "热态高对比成像:钢坯自发光条件下条码仍保持反差,支持热态扫描",
+      "抗热冲击:承受冷床自然冷却 / 局部喷水的骤冷,不龟裂剥落",
+      "机器人贴标兼容:卷装供料,可配自动贴标机连续送标,不卡带",
+      "现场热转印打印:支持 MES 实时下发炉次号即打即贴",
+      "抗氧化皮脱落:贴附深度渗入,浮皮脱落不带走标签"
+    ],
+    "vi": [
+      "Chịu dán trực tiếp 750℃: nhiệt độ bề mặt dán lên tới 750℃; nhãn không cháy, không cong mép, không bong",
+      "Keo dính tức thì chịu nhiệt cao: mềm và bám ngay khi tiếp xúc, neo vào lỗ rỗng của vảy oxit khi nguội — không theo nguyên lý keo nhạy áp thông thường",
+      "Thích ứng bề mặt vảy oxit: thiết kế riêng cho bề mặt phôi thô ráp, gồ ghề, có vảy bong",
+      "Tạo ảnh tương phản cao khi nóng: mã vạch giữ được độ tương phản ngay cả khi phôi tự phát sáng, hỗ trợ quét ở trạng thái nóng",
+      "Kháng sốc nhiệt: chịu được làm nguội đột ngột trên giàn hoặc phun nước cục bộ mà không nứt hay bong",
+      "Tương thích robot dán nhãn: cấp liệu dạng cuộn, chạy liên tục trên máy dán tự động, không kẹt băng",
+      "In truyền nhiệt tại chỗ: hỗ trợ in và dán ngay với số mẻ do MES đẩy xuống thời gian thực",
+      "Kháng bong vảy oxit: bám sâu, vảy bong ra không kéo theo nhãn"
+    ],
+    "th": [
+      "ทนการติดโดยตรงที่ 750℃: อุณหภูมิผิวที่ติดสูงถึง 750℃ ฉลากไม่ไหม้ ไม่ม้วนขอบ ไม่หลุด",
+      "กาวยึดติดทันทีทนอุณหภูมิสูง: อ่อนตัวและยึดติดทันทีที่สัมผัส แล้วยึดเข้ารูพรุนของสเกลเมื่อเย็นตัว — ไม่ใช่หลักการกาวไวแรงกดทั่วไป",
+      "รองรับผิวที่มีสเกล: ออกแบบมาเพื่อผิวบิลเล็ตที่หยาบ ไม่เรียบ และมีสเกลหลวม",
+      "ให้ภาพคอนทราสต์สูงขณะร้อน: บาร์โค้ดยังคงคอนทราสต์แม้บิลเล็ตเปล่งแสงในตัวเอง รองรับการสแกนขณะร้อน",
+      "ทนการช็อกความร้อน: ทนการเย็นตัวอย่างรวดเร็วบนเตียงหรือการพ่นน้ำเฉพาะจุดโดยไม่แตกร้าวหรือลอก",
+      "รองรับหุ่นยนต์ติดฉลาก: ป้อนแบบม้วน จ่ายฉลากต่อเนื่องบนเครื่องติดอัตโนมัติโดยไม่ติดขัด",
+      "พิมพ์ถ่ายโอนความร้อนที่หน้างาน: รองรับการพิมพ์และติดทันทีด้วยหมายเลขเตาที่ MES ส่งมาแบบเรียลไทม์",
+      "ทนต่อการหลุดร่อนของสเกล: ยึดลึก สเกลที่หลุดไม่ดึงฉลากไปด้วย"
+    ]
+  },
+  "benefits": {
+    "en": [
+      "Removes manual work from the hot zone: operators no longer approach 750℃ billets to tag them; hot-zone manual work approaches zero",
+      "Identity from the moment of production: a unique barcode right after the cut — batch attribution survives even a scrambled stack",
+      "Identity confirmed before furnace entry: scanning replaces manual checking; a single billet is identified in seconds",
+      "Heat number traceability: quality claims on finished goods trace straight back to the specific caster heat and billet number",
+      "Fewer mix-ups and misrouting: charging errors and wrong-mill deliveries drop significantly",
+      "No maintenance burden: no inkjet equipment cleaning, no paint consumables",
+      "Seamless MES integration: the barcode is the data entry point; manual ledger entry is eliminated"
+    ],
+    "zh": [
+      "消除热区人工作业:操作工不再靠近 750℃ 钢坯挂牌,高温区人工作业趋近于 0",
+      "钢坯自产出即有身份:切断后立即获得唯一条码,堆垛乱序也不丢批次",
+      "入炉前身份确认:扫码替代人工核对,单坯识别数秒完成",
+      "炉次可回溯:成品质量异议可直接回溯至具体连铸炉次与坯号",
+      "减少混批与错送:装炉错误、错送轧线的情况显著减少",
+      "免维护成本:无喷码设备清洗维护、无油漆耗材",
+      "MES 无缝对接:条码即数据入口,取消手工台账录入"
+    ],
+    "vi": [
+      "Loại bỏ thao tác thủ công trong vùng nhiệt: công nhân không còn phải lại gần phôi 750℃ để treo thẻ; thao tác thủ công vùng nhiệt cao tiệm cận bằng không",
+      "Phôi có danh tính ngay khi ra lò: có mã vạch duy nhất ngay sau khi cắt — xếp chồng lộn xộn cũng không mất quy thuộc lô",
+      "Xác nhận danh tính trước khi vào lò: quét mã thay cho đối chiếu thủ công; nhận dạng một phôi chỉ trong vài giây",
+      "Truy xuất được về số mẻ: khiếu nại chất lượng thành phẩm truy ngược thẳng về đúng mẻ đúc và số phôi cụ thể",
+      "Giảm lẫn lô và giao nhầm: sai sót nạp lò và giao nhầm dây chuyền cán giảm rõ rệt",
+      "Không gánh nặng bảo trì: không phải vệ sinh thiết bị phun mã, không tốn vật tư sơn",
+      "Tích hợp MES liền mạch: mã vạch chính là cổng vào dữ liệu; loại bỏ nhập sổ sách thủ công"
+    ],
+    "th": [
+      "ขจัดงานที่ใช้คนในเขตความร้อน: พนักงานไม่ต้องเข้าใกล้บิลเล็ต 750℃ เพื่อแขวนป้ายอีกต่อไป งานที่ใช้คนในเขตร้อนเข้าใกล้ศูนย์",
+      "บิลเล็ตมีตัวตนตั้งแต่วินาทีที่ผลิต: ได้บาร์โค้ดเฉพาะทันทีหลังตัด — กองจัดสลับก็ไม่เสียการระบุล็อต",
+      "ยืนยันตัวตนก่อนเข้าเตา: สแกนแทนการตรวจสอบด้วยมือ ระบุบิลเล็ตหนึ่งท่อนภายในไม่กี่วินาที",
+      "สอบกลับถึงหมายเลขเตาได้: ข้อร้องเรียนคุณภาพของสินค้าสำเร็จรูปสอบกลับตรงไปถึงเตาหล่อและหมายเลขบิลเล็ตที่เฉพาะเจาะจง",
+      "ลดการปนล็อตและการส่งผิด: ความผิดพลาดในการป้อนเตาและการส่งผิดสายรีดลดลงอย่างชัดเจน",
+      "ไม่มีภาระการบำรุงรักษา: ไม่ต้องล้างเครื่องพ่นรหัส ไม่สิ้นเปลืองสี",
+      "เชื่อมต่อ MES ได้ราบรื่น: บาร์โค้ดคือประตูข้อมูล ตัดการบันทึกบัญชีด้วยมือออกไป"
+    ]
+  },
+  "spec": {
+    "en": [
+      "Model: HP-700T",
+      "Product category: Direct Hot Application label",
+      "Max. application temperature: 750℃",
+      "Applicable objects: Steel billet / steel slab",
+      "Applicable surface: Rough, scale-covered hot steel surfaces",
+      "Base material: Heat-resistant metal substrate",
+      "Adhesive: High-temperature anchoring adhesive",
+      "Printing method: Thermal transfer (dedicated high-temp ribbon) / pre-print",
+      "Standard size: TBC (e.g. 100 × 50 mm, customizable)",
+      "Supply form: Roll (for automatic labelers) / sheet",
+      "Application method: Robotic labeling / manual tagging pole",
+      "Supporting equipment: Robotic labeling system, thermal transfer printer, high-temp ribbon, scanning station",
+      "Storage: Ambient, away from light; use within 12 months recommended",
+      "HP-700T vs HP-600 — Max. application temperature: 750℃ vs 550℃",
+      "HP-700T vs HP-600 — Typical objects: Billets, slabs vs Coils, aluminum sows",
+      "HP-700T vs HP-600 — When to choose: High-temperature stock straight from the caster vs Objects already cooled, or post-hot-rolling"
+    ],
+    "zh": [
+      "型号:HP-700T",
+      "产品类别:热态直贴标签(Direct Hot Application)",
+      "最高贴附温度:750℃",
+      "适用对象:钢坯 Billet / 板坯 Slab",
+      "适用表面:氧化皮覆盖的粗糙热态钢表面",
+      "基材:耐高温金属基材",
+      "胶黏剂:高温专用锚固型胶",
+      "印刷方式:热转印(专用高温色带)/ 预印",
+      "标准尺寸:待填(如 100 × 50mm,可定制)",
+      "供货形式:卷装(适配自动贴标机)/ 单张",
+      "贴附方式:机器人自动贴标 / 手动贴标杆",
+      "配套设备:机器人贴标系统、热转印打印机、高温色带、扫码站",
+      "保存条件:常温避光,建议 12 个月内使用",
+      "HP-700T 对比 HP-600 — 最高贴附温度:750℃ / 550℃",
+      "HP-700T 对比 HP-600 — 典型对象:钢坯、板坯 / 钢卷、铝锭",
+      "HP-700T 对比 HP-600 — 适用判断:连铸直出高温坯 / 已降温或热轧后对象"
+    ],
+    "vi": [
+      "Model: HP-700T",
+      "Phân loại sản phẩm: Nhãn dán trực tiếp khi nóng (Direct Hot Application)",
+      "Nhiệt độ dán tối đa: 750℃",
+      "Đối tượng áp dụng: Phôi thanh (Billet) / Phôi tấm (Slab)",
+      "Bề mặt áp dụng: Bề mặt thép nóng thô ráp phủ vảy oxit",
+      "Vật liệu nền: Nền kim loại chịu nhiệt",
+      "Keo dính: Keo neo bám chuyên dụng chịu nhiệt cao",
+      "Phương thức in: In truyền nhiệt (ruy băng chịu nhiệt chuyên dụng) / in sẵn",
+      "Kích thước tiêu chuẩn: Chờ xác nhận (ví dụ 100 × 50 mm, có thể tùy chỉnh)",
+      "Hình thức cung cấp: Cuộn (dùng cho máy dán tự động) / tờ rời",
+      "Phương thức dán: Robot dán nhãn / sào dán thủ công",
+      "Thiết bị đi kèm: Hệ thống robot dán nhãn, máy in truyền nhiệt, ruy băng chịu nhiệt, trạm quét",
+      "Điều kiện bảo quản: Nhiệt độ thường, tránh ánh sáng; khuyến nghị dùng trong vòng 12 tháng",
+      "HP-700T so với HP-600 — Nhiệt độ dán tối đa: 750℃ / 550℃",
+      "HP-700T so với HP-600 — Đối tượng điển hình: Phôi thanh, phôi tấm / Cuộn thép, thỏi nhôm",
+      "HP-700T so với HP-600 — Khi nào chọn: Phôi nhiệt độ cao ra thẳng từ máy đúc / Đối tượng đã nguội hoặc sau cán nóng"
+    ],
+    "th": [
+      "รุ่น: HP-700T",
+      "ประเภทผลิตภัณฑ์: ฉลากติดโดยตรงขณะร้อน (Direct Hot Application)",
+      "อุณหภูมิการติดสูงสุด: 750℃",
+      "วัตถุที่ใช้ได้: บิลเล็ต (Billet) / สแลบ (Slab)",
+      "ผิวที่ใช้ได้: ผิวเหล็กร้อนที่หยาบและมีสเกลปกคลุม",
+      "วัสดุฐาน: ฐานโลหะทนความร้อน",
+      "กาว: กาวยึดเกาะเฉพาะทางทนอุณหภูมิสูง",
+      "วิธีการพิมพ์: ถ่ายโอนความร้อน (ริบบอนทนความร้อนเฉพาะทาง) / พิมพ์ล่วงหน้า",
+      "ขนาดมาตรฐาน: รอยืนยัน (เช่น 100 × 50 มม. สั่งทำได้)",
+      "รูปแบบการจัดส่ง: ม้วน (สำหรับเครื่องติดอัตโนมัติ) / แผ่น",
+      "วิธีการติด: หุ่นยนต์ติดฉลาก / ไม้ติดฉลากแบบมือ",
+      "อุปกรณ์ประกอบ: ระบบหุ่นยนต์ติดฉลาก เครื่องพิมพ์ถ่ายโอนความร้อน ริบบอนทนความร้อน สถานีสแกน",
+      "การเก็บรักษา: อุณหภูมิห้อง หลีกเลี่ยงแสง แนะนำให้ใช้ภายใน 12 เดือน",
+      "HP-700T เทียบ HP-600 — อุณหภูมิการติดสูงสุด: 750℃ / 550℃",
+      "HP-700T เทียบ HP-600 — วัตถุทั่วไป: บิลเล็ต สแลบ / คอยล์ อะลูมิเนียมซาว",
+      "HP-700T เทียบ HP-600 — เลือกเมื่อใด: ชิ้นงานอุณหภูมิสูงที่ออกจากเครื่องหล่อโดยตรง / วัตถุที่เย็นลงแล้ว หรือหลังการรีดร้อน"
+    ]
+  },
+  "applications": {
+    "en": [
+      "Steel billet / steel slab",
+      "Rough, scale-covered hot steel surfaces (550–750℃)",
+      "Billet end face straight from the continuous caster",
+      "Hot material on the cooling bed, during transport and stacking, up to furnace entry"
+    ],
+    "zh": [
+      "钢坯 Billet / 板坯 Slab",
+      "氧化皮覆盖的粗糙热态钢表面(550–750℃)",
+      "连铸机切断后的钢坯端面",
+      "冷床等待、转运、堆垛至入炉前的热态物料"
+    ],
+    "vi": [
+      "Phôi thanh (Billet) / Phôi tấm (Slab)",
+      "Bề mặt thép nóng thô ráp phủ vảy oxit (550–750℃)",
+      "Mặt đầu phôi thanh vừa ra khỏi máy đúc liên tục",
+      "Vật liệu nóng trên giàn làm nguội, trong quá trình vận chuyển và xếp chồng, cho tới trước khi vào lò"
+    ],
+    "th": [
+      "บิลเล็ต (Billet) / สแลบ (Slab)",
+      "ผิวเหล็กร้อนที่หยาบและมีสเกลปกคลุม (550–750℃)",
+      "หน้าตัดบิลเล็ตที่เพิ่งออกจากเครื่องหล่อต่อเนื่อง",
+      "วัสดุร้อนบนเตียงระบายความร้อน ระหว่างการขนย้ายและการจัดกอง จนถึงก่อนเข้าเตา"
+    ]
+  },
+  "certifications": {
+    "en": ["RoHS / REACH compliant"],
+    "zh": ["符合 RoHS / REACH"],
+    "vi": ["Tuân thủ RoHS / REACH"],
+    "th": ["ปฏิบัติตาม RoHS / REACH"]
+  }
+}
