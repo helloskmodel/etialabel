@@ -1,0 +1,31 @@
+{
+  "slug": "hp-cbr15",
+  "source": "HEATPROOF CBR series",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "product_img": "",
+  "title": {"en": "HP-CBR15 — Ceramic Product Label (non-oxygen process)", "zh": "HP-CBR15 · 陶瓷产品标签（无氧工艺）", "vi": "HP-CBR15 · Nhãn sản phẩm gốm sứ (quy trình không oxy)", "th": "HP-CBR15 · ฉลากผลิตภัณฑ์เซรามิก (กระบวนการไร้ออกซิเจน)"},
+  "tagline": {"en": "Ceramic product label with strong resistance against non-oxygen (color-changing) processes, heat resistance up to 1200°C", "zh": "陶瓷产品标签，对无氧（变色）工艺具有强抗性，耐热性高达 1200°C", "vi": "Nhãn sản phẩm gốm sứ, kháng mạnh với quy trình không oxy (đổi màu), chịu nhiệt đến 1200°C", "th": "ฉลากผลิตภัณฑ์เซรามิก ต้านทานกระบวนการไร้ออกซิเจน (เปลี่ยนสี) ได้ดี ทนความร้อนถึง 1200°C"},
+  "positioning": {},
+  "challenges": {},
+  "features": {
+    "en": ["High heat resistance up to 1200°C", "Strong resistance against non-oxygen (color-changing) processes"],
+    "zh": ["高耐热性，高达 1200°C", "对无氧（变色）工艺具有强抗性"],
+    "vi": ["Chịu nhiệt cao đến 1200°C", "Kháng mạnh với các quy trình không oxy (đổi màu)"],
+    "th": ["ทนความร้อนสูงถึง 1200°C", "ต้านทานกระบวนการไร้ออกซิเจน (เปลี่ยนสี) ได้ดี"]
+  },
+  "benefits": {},
+  "spec": {
+    "en": ["Core & printing surface: Organic/inorganic complex", "Adhesive: Acrylic", "Liner: Silicone paper", "Application temperature: RT~50°C", "Heat resistance: 1200°C"],
+    "zh": ["芯层及打印表面：有机/无机复合物", "胶粘剂：丙烯酸", "离型纸：硅纸", "使用温度：RT~50°C", "耐热性：1200°C"],
+    "vi": ["Lõi & bề mặt in: Phức hợp hữu cơ/vô cơ", "Keo dán: Acrylic", "Lớp lót: Giấy silicone", "Nhiệt độ ứng dụng: RT~50°C", "Chịu nhiệt: 1200°C"],
+    "th": ["แกน & พื้นผิวพิมพ์: สารประกอบอินทรีย์/อนินทรีย์", "กาว: อะคริลิก", "แผ่นรอง: กระดาษซิลิโคน", "อุณหภูมิการใช้งาน: RT~50°C", "ทนความร้อน: 1200°C"]
+  },
+  "applications": {
+    "en": ["Direct identification and bar-coding on ceramic products fired under non-oxygen / color-changing processes"],
+    "zh": ["在无氧/变色工艺下烧制的陶瓷产品上直接标识和条码打印"],
+    "vi": ["Nhận dạng trực tiếp và in mã vạch trên sản phẩm gốm sứ nung trong quy trình không oxy / đổi màu"],
+    "th": ["การระบุและพิมพ์บาร์โค้ดโดยตรงบนผลิตภัณฑ์เซรามิกที่เผาภายใต้กระบวนการไร้ออกซิเจน / เปลี่ยนสี"]
+  },
+  "certifications": {}
+}

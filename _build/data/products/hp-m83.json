@@ -1,0 +1,31 @@
+{
+  "slug": "hp-m83",
+  "source": "TDS HP-M83",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "product_img": "",
+  "title": {"en": "HP-M83 — HP Series Magnetic High-Temp Tag", "zh": "HP-M83 · HP Series 磁性高温标牌", "vi": "HP-M83 · Thẻ từ tính chịu nhiệt cao HP Series", "th": "HP-M83 · แท็กแม่เหล็กทนความร้อนสูง HP Series"},
+  "tagline": {"en": "Thin magnetic tag with high heat resistance up to 850°C, printable with the thermal transfer printer", "zh": "磁性薄层标牌，耐热性高达 850°C，可用热转印打印机打印", "vi": "Thẻ từ tính mỏng, chịu nhiệt cao đến 850°C, in được bằng máy in chuyển nhiệt", "th": "แท็กแม่เหล็กชั้นบาง ทนความร้อนสูงถึง 850°C พิมพ์ด้วยเครื่องพิมพ์ถ่ายเทความร้อนได้"},
+  "positioning": {},
+  "challenges": {},
+  "features": {
+    "en": ["Thin layer tag", "Core material having magnetism", "Printable with the thermal transfer printer", "High heat resistance up to 850°C", "Acid resistance", "Thermal transfer ink ribbon: YS-4"],
+    "zh": ["薄层标牌", "芯材具有磁性", "可用热转印打印机打印", "耐热性高达 850°C", "耐酸性", "热转印色带：YS-4"],
+    "vi": ["Thẻ dạng lớp mỏng", "Vật liệu lõi có từ tính", "In được bằng máy in chuyển nhiệt", "Chịu nhiệt cao đến 850°C", "Kháng axit", "Ruy băng mực chuyển nhiệt: YS-4"],
+    "th": ["แท็กชั้นบาง", "วัสดุแกนมีคุณสมบัติแม่เหล็ก", "พิมพ์ด้วยเครื่องพิมพ์ถ่ายเทความร้อนได้", "ทนความร้อนสูงถึง 850°C", "ทนกรด", "ริบบอนหมึกถ่ายเทความร้อน: YS-4"]
+  },
+  "benefits": {},
+  "spec": {
+    "en": ["Printing layer: Inorganic coating (White), 10±3µ", "Tag core: Stainless steel foil, 50±1µ", "Back layer: Inorganic coating (White), 10±3µ", "Heat resistance: 850°C (850°C x 2hr)", "Hardness: >9H (pencil hardness)", "Scratch resistance: 20 (sandpaper #400, company standard)", "Scratch resistance: >100 (sandpaper #1000, company standard)", "Acid resistance: 4 (20% H2SO4 70°C x 2hr; 10% HCl RT x 30min)", "Solvent resistance: 5 (Xylene, Acetone, Alcohol, Mineral oil)", "Rating: 1=Poor, 2=Average, 3=Good, 4=Very good, 5=Excellent"],
+    "zh": ["打印层：无机涂层（白色），10±3µ", "标牌芯层：不锈钢箔，50±1µ", "背层：无机涂层（白色），10±3µ", "耐热性：850°C（850°C x 2hr）", "硬度：>9H（铅笔硬度）", "耐刮擦性：20（砂纸 #400，公司标准）", "耐刮擦性：>100（砂纸 #1000，公司标准）", "耐酸性：4（20% H2SO4 70°C x 2hr；10% HCl RT x 30min）", "耐溶剂性：5（二甲苯、丙酮、酒精、矿物油）", "评级：1=Poor, 2=Average, 3=Good, 4=Very good, 5=Excellent"],
+    "vi": ["Lớp in: Lớp phủ vô cơ (Trắng), 10±3µ", "Lõi thẻ: Lá thép không gỉ, 50±1µ", "Lớp lưng: Lớp phủ vô cơ (Trắng), 10±3µ", "Chịu nhiệt: 850°C (850°C x 2hr)", "Độ cứng: >9H (độ cứng bút chì)", "Kháng trầy xước: 20 (giấy nhám #400, tiêu chuẩn công ty)", "Kháng trầy xước: >100 (giấy nhám #1000, tiêu chuẩn công ty)", "Kháng axit: 4 (20% H2SO4 70°C x 2hr; 10% HCl RT x 30min)", "Kháng dung môi: 5 (Xylene, Acetone, Alcohol, Mineral oil)", "Xếp hạng: 1=Poor, 2=Average, 3=Good, 4=Very good, 5=Excellent"],
+    "th": ["ชั้นพิมพ์: สารเคลือบอนินทรีย์ (สีขาว), 10±3µ", "แกนแท็ก: แผ่นฟอยล์สแตนเลส, 50±1µ", "ชั้นหลัง: สารเคลือบอนินทรีย์ (สีขาว), 10±3µ", "ทนความร้อน: 850°C (850°C x 2hr)", "ความแข็ง: >9H (ความแข็งดินสอ)", "ทนการขีดข่วน: 20 (กระดาษทราย #400, มาตรฐานบริษัท)", "ทนการขีดข่วน: >100 (กระดาษทราย #1000, มาตรฐานบริษัท)", "ทนกรด: 4 (20% H2SO4 70°C x 2hr; 10% HCl RT x 30min)", "ทนตัวทำละลาย: 5 (Xylene, Acetone, Alcohol, Mineral oil)", "ระดับคะแนน: 1=Poor, 2=Average, 3=Good, 4=Very good, 5=Excellent"]
+  },
+  "applications": {
+    "en": ["For metal products management under heat treatment up to 850°C", "Steel, Aluminum, Nonferrous metal industry, Metal-processing industry", "Available for use in pickling process"],
+    "zh": ["用于热处理下的金属产品管理，温度高达 850°C", "钢铁、铝、有色金属行业，金属加工行业", "可用于酸洗工艺"],
+    "vi": ["Dùng để quản lý sản phẩm kim loại trong xử lý nhiệt đến 850°C", "Ngành thép, nhôm, kim loại màu, ngành gia công kim loại", "Có thể dùng trong quy trình tẩy rửa axit (pickling)"],
+    "th": ["สำหรับการจัดการผลิตภัณฑ์โลหะภายใต้การอบชุบความร้อนถึง 850°C", "อุตสาหกรรมเหล็ก อะลูมิเนียม โลหะนอกกลุ่มเหล็ก อุตสาหกรรมแปรรูปโลหะ", "ใช้ในกระบวนการกัดกรด (pickling) ได้"]
+  },
+  "certifications": {}
+}

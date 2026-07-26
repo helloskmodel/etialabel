@@ -55,33 +55,35 @@
     ]
   },
   "classify_by": {
-    "en": "Choose an application",
-    "zh": "选择应用",
-    "vi": "Chọn ứng dụng",
-    "th": "เลือกการใช้งาน"
+    "en": "Choose a category",
+    "zh": "选择应用分类",
+    "vi": "Chọn danh mục",
+    "th": "เลือกหมวดหมู่"
   },
   "tiers": [
     {
+      "tab": "Direct Applied",
       "name": {
-        "en": "Direct Hot Application Labels",
-        "zh": "热态直贴标签",
-        "vi": "Nhãn dán trực tiếp khi nóng",
-        "th": "ฉลากติดโดยตรงขณะร้อน"
+        "en": "Direct Applied Series",
+        "zh": "直贴系列",
+        "vi": "Dòng dán trực tiếp",
+        "th": "ซีรีส์ติดโดยตรง"
       },
       "intro": {
-        "en": "Surface temperature at the moment of application is 550–750℃; the surface is rough and covered in scale. The label must bond instantly and must not burn.",
-        "zh": "贴附瞬间对象表面 550–750℃,表面粗糙、覆盖氧化皮,标签必须瞬间贴牢且不燃烧",
-        "vi": "Nhiệt độ bề mặt tại thời điểm dán là 550–750℃; bề mặt thô ráp, phủ vảy oxit. Nhãn phải bám tức thì và không được cháy.",
-        "th": "อุณหภูมิผิวขณะติดอยู่ที่ 550–750℃ ผิวหยาบและมีสเกลปกคลุม ฉลากต้องยึดติดทันทีและต้องไม่ไหม้"
+        "en": "Self-adhesive labels applied directly onto hot metal — the adhesive is heat-activated on contact and anchors firmly after cooling.",
+        "zh": "直接贴附于热态金属的自粘标签 —— 遇热活化、冷却后牢固锚固",
+        "vi": "Nhãn tự dính dán trực tiếp lên kim loại nóng — keo được kích hoạt bằng nhiệt khi tiếp xúc và bám chắc sau khi nguội",
+        "th": "ฉลากกาวในตัวติดโดยตรงบนโลหะร้อน — กาวถูกกระตุ้นด้วยความร้อนเมื่อสัมผัสและยึดแน่นหลังเย็นตัว"
       },
+      "img": "",
       "products": [
         {
           "name": "HP-700T",
           "line": {
-            "en": "750℃ direct application on hot billets and slabs",
-            "zh": "750℃ 热态钢坯 / 板坯表面直接贴附",
-            "vi": "Dán trực tiếp 750℃ lên phôi thanh và phôi tấm nóng",
-            "th": "ติดโดยตรงที่ 750℃ บนบิลเล็ตและสแลบร้อน"
+            "en": "450–800°C · brass foil",
+            "zh": "450–800°C · 黄铜箔",
+            "vi": "450–800°C · lá đồng thau",
+            "th": "450–800°C · แผ่นทองเหลือง"
           },
           "img": "",
           "landing": true,
@@ -90,10 +92,10 @@
         {
           "name": "HP-800C",
           "line": {
-            "en": "Up to 800°C · high adhesion on glass & metal",
-            "zh": "耐 800°C · 玻璃与金属高附着",
-            "vi": "Đến 800°C · bám dính cao trên kính & kim loại",
-            "th": "ถึง 800°C · ยึดเกาะสูงบนแก้วและโลหะ"
+            "en": "Up to 800°C · glass & metal, high adhesion",
+            "zh": "耐 800°C · 玻璃与金属，高附着",
+            "vi": "Đến 800°C · kính & kim loại, bám dính cao",
+            "th": "ถึง 800°C · แก้วและโลหะ ยึดเกาะสูง"
           },
           "img": "",
           "landing": true,
@@ -110,126 +112,180 @@
           "img": "",
           "landing": true,
           "slug": "hp-901"
-        }
-      ],
-      "img": "",
-      "tab": "Direct Hot"
-    },
-    {
-      "name": {
-        "en": "Through-Process Labels for Heat Treatment",
-        "zh": "热处理过程标签",
-        "vi": "Nhãn theo suốt quá trình nhiệt luyện",
-        "th": "ฉลากติดตามตลอดกระบวนการอบชุบ"
-      },
-      "intro": {
-        "en": "The label must first be immersed in acid (H₂SO₄ / HCl), then be baked in a furnace for 10–18 hours — chemical attack and long-duration heat stacked on top of each other.",
-        "zh": "标签不是耐一下高温,而是要先泡酸(H₂SO₄ / HCl)、再进炉烧 10~18 小时,化学腐蚀与长时间高温叠加",
-        "vi": "Nhãn không chỉ cần chịu nóng một lúc — mà phải ngâm axit trước (H₂SO₄ / HCl), rồi nung trong lò 10–18 giờ. Ăn mòn hóa học và nhiệt độ cao kéo dài chồng lên nhau.",
-        "th": "ฉลากไม่ได้แค่ทนร้อนชั่วครู่ แต่ต้องแช่กรดก่อน (H₂SO₄ / HCl) แล้วเข้าเตาอบนาน 10–18 ชั่วโมง การกัดกร่อนทางเคมีและความร้อนระยะยาวซ้อนทับกัน"
-      },
-      "products": [
+        },
         {
-          "name": "Through-Process Label",
+          "name": "HP-X2049",
           "line": {
-            "en": "Applied at ambient temperature; travels with the workpiece through pickling and 10–18h annealing, still scannable at furnace exit",
-            "zh": "常温贴附,随工件走完酸洗与 10~18 小时退火全过程,出炉后仍可扫码",
-            "vi": "Dán ở nhiệt độ thường; đi cùng chi tiết qua tẩy gỉ và ủ 10–18 giờ, vẫn quét được khi ra lò",
-            "th": "ติดที่อุณหภูมิห้อง เดินทางไปกับชิ้นงานผ่านการกัดกรดและอบอ่อน 10–18 ชม. ยังสแกนได้เมื่อออกจากเตา"
+            "en": "250–600°C · aluminum, hot application",
+            "zh": "250–600°C · 铝件热贴",
+            "vi": "250–600°C · nhôm, dán nóng",
+            "th": "250–600°C · อะลูมิเนียม ติดขณะร้อน"
           },
           "img": "",
-          "landing": false
+          "landing": true,
+          "slug": "hp-x2049"
         }
-      ],
-      "img": "",
-      "tab": "Through-Process"
+      ]
     },
     {
+      "tab": "HT Labels",
       "name": {
-        "en": "Heat Treatment Tags",
-        "zh": "热处理挂牌",
-        "vi": "Thẻ treo chịu nhiệt",
-        "th": "ป้ายแขวนทนความร้อน"
+        "en": "Heat-Treatment Labels",
+        "zh": "热处理标签",
+        "vi": "Nhãn xử lý nhiệt",
+        "th": "ฉลากอบชุบความร้อน"
       },
       "intro": {
-        "en": "Not single-use — must stay readable through dozens to hundreds of thermal cycles.",
-        "zh": "不是一次性使用,而是要承受几十上百次热循环仍可读",
-        "vi": "Không dùng một lần — phải đọc được sau hàng chục đến hàng trăm chu kỳ nhiệt.",
-        "th": "ไม่ใช่การใช้ครั้งเดียว — ต้องอ่านได้หลังผ่านรอบความร้อนหลายสิบถึงหลายร้อยรอบ"
+        "en": "Labels that travel with the part through the heat-treatment furnace and fuse with the surface during baking.",
+        "zh": "随工件走完热处理炉、烧制中与表面融为一体的标签",
+        "vi": "Nhãn đi cùng chi tiết qua lò xử lý nhiệt và hòa làm một với bề mặt khi nung",
+        "th": "ฉลากที่เดินทางไปกับชิ้นงานผ่านเตาอบชุบและหลอมรวมกับพื้นผิวขณะเผา"
       },
+      "img": "",
+      "products": [
+        {
+          "name": "HP-X2080",
+          "line": {
+            "en": "Up to 1200°C · fast heating to 65°C/min",
+            "zh": "耐 1200°C · 升温可达 65°C/min",
+            "vi": "Đến 1200°C · gia nhiệt nhanh tới 65°C/phút",
+            "th": "ถึง 1200°C · ให้ความร้อนเร็วถึง 65°C/นาที"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-x2080"
+        },
+        {
+          "name": "HP-CBR13",
+          "line": {
+            "en": "Up to 1200°C · low color change",
+            "zh": "耐 1200°C · 低黄变",
+            "vi": "Đến 1200°C · ít đổi màu",
+            "th": "ถึง 1200°C · เปลี่ยนสีน้อย"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-cbr13"
+        }
+      ]
+    },
+    {
+      "tab": "HT Tags",
+      "name": {
+        "en": "Heat-Treatment Tags",
+        "zh": "热处理吊牌",
+        "vi": "Thẻ treo xử lý nhiệt",
+        "th": "แท็กอบชุบความร้อน"
+      },
+      "intro": {
+        "en": "Mechanically fixed metal tags that survive repeated thermal cycles, pickling and acid baths.",
+        "zh": "机械固定的金属吊牌，耐多次热循环、酸洗与酸浸",
+        "vi": "Thẻ kim loại cố định cơ học, chịu được nhiều chu kỳ nhiệt, tẩy rửa và ngâm axit",
+        "th": "แท็กโลหะยึดเชิงกล ทนวัฏจักรความร้อนซ้ำ การล้างกรดและการแช่กรด"
+      },
+      "img": "",
       "products": [
         {
           "name": "HP-L90",
           "line": {
             "en": "Up to 1200°C · stainless-steel tag",
-            "zh": "耐 1200°C · 不锈钢挂牌",
+            "zh": "耐 1200°C · 不锈钢吊牌",
             "vi": "Đến 1200°C · thẻ thép không gỉ",
             "th": "ถึง 1200°C · แท็กสแตนเลส"
           },
           "img": "",
           "landing": true,
           "slug": "hp-l90"
-        }
-      ],
-      "img": "",
-      "tab": "Tags"
-    },
-    {
-      "name": {
-        "en": "On-Site Printing & System Integration",
-        "zh": "现场打印与系统集成",
-        "vi": "In tại chỗ và tích hợp hệ thống",
-        "th": "การพิมพ์หน้างานและการเชื่อมต่อระบบ"
-      },
-      "intro": {
-        "en": "Thermal transfer printer + high-temperature ribbon. MES pushes the heat number / batch number in real time, the label is printed and applied immediately, and downstream scanning stations feed data back.",
-        "zh": "热转印打印机 + 高温色带,由 MES 实时下发炉次 / 批号,打印后即时贴附;下游扫码站回传数据",
-        "vi": "Máy in truyền nhiệt + ruy băng chịu nhiệt. MES đẩy số mẻ / số lô theo thời gian thực, in xong dán ngay; trạm quét phía sau phản hồi dữ liệu về hệ thống.",
-        "th": "เครื่องพิมพ์ถ่ายโอนความร้อน + ริบบอนทนความร้อน MES ส่งหมายเลขเตา / หมายเลขล็อตแบบเรียลไทม์ พิมพ์แล้วติดทันที สถานีสแกนปลายทางส่งข้อมูลกลับ"
-      },
-      "products": [
+        },
         {
-          "name": "On-Site Printing",
+          "name": "HP-L80",
           "line": {
-            "en": "Print-and-apply station linking MES heat numbers to the label, with downstream scan-back at each stage",
-            "zh": "即打即贴工位,将 MES 炉次号写入标签,各环节扫码回传",
-            "vi": "Trạm in và dán liên kết số mẻ MES với nhãn, quét phản hồi ở từng công đoạn phía sau",
-            "th": "สถานีพิมพ์และติดที่เชื่อมหมายเลขเตาจาก MES เข้ากับฉลาก พร้อมสแกนกลับในแต่ละขั้นตอนปลายทาง"
+            "en": "Up to 1000°C · acid-resistant tag",
+            "zh": "耐 1000°C · 耐酸吊牌",
+            "vi": "Đến 1000°C · thẻ chống axit",
+            "th": "ถึง 1000°C · แท็กทนกรด"
           },
           "img": "",
-          "landing": false
+          "landing": true,
+          "slug": "hp-l80"
+        },
+        {
+          "name": "HP-M83",
+          "line": {
+            "en": "850°C · magnetic, acid-resistant tag",
+            "zh": "850°C · 磁性耐酸吊牌",
+            "vi": "850°C · thẻ từ tính, chống axit",
+            "th": "850°C · แท็กแม่เหล็ก ทนกรด"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-m83"
         }
-      ],
-      "img": "",
-      "tab": "On-Site Print"
+      ]
     },
     {
+      "tab": "Ceramic Transfer",
       "name": {
-        "en": "Ceramics & Glass",
-        "zh": "陶瓷与玻璃",
-        "vi": "Gốm sứ & Thủy tinh",
-        "th": "เซรามิกและแก้ว"
+        "en": "Ceramic Transfer",
+        "zh": "陶瓷转印",
+        "vi": "Chuyển in gốm sứ",
+        "th": "ถ่ายโอนเซรามิก"
       },
       "intro": {
-        "en": "Direct identification and bar-coding on ceramic and glass products fired up to 1200°C.",
-        "zh": "耐 1200°C 高温烧制的陶瓷、玻璃产品直接条码标识",
-        "vi": "Nhận diện và in mã vạch trực tiếp trên sản phẩm gốm sứ và thủy tinh nung đến 1200°C",
-        "th": "ระบุและพิมพ์บาร์โค้ดโดยตรงบนผลิตภัณฑ์เซรามิกและแก้วที่เผาถึง 1200°C"
+        "en": "Labels that transfer onto and fuse with ceramic and glass products during high-temperature firing.",
+        "zh": "高温烧制中直接转印、与陶瓷玻璃产品融为一体的标签",
+        "vi": "Nhãn chuyển in và hòa làm một với sản phẩm gốm sứ và thủy tinh trong quá trình nung nhiệt độ cao",
+        "th": "ฉลากที่ถ่ายโอนและหลอมรวมกับผลิตภัณฑ์เซรามิกและแก้วระหว่างการเผาที่อุณหภูมิสูง"
       },
       "img": "",
-      "tab": "Ceramics",
       "products": [
         {
           "name": "HP-CBR11",
           "line": {
-            "en": "Up to 1200°C · direct bar-coding on ceramics",
-            "zh": "耐 1200°C · 陶瓷直接条码标识",
-            "vi": "Đến 1200°C · mã vạch trực tiếp trên gốm sứ",
-            "th": "ถึง 1200°C · บาร์โค้ดบนเซรามิกโดยตรง"
+            "en": "Up to 1250°C · water-soluble, sanitary ware",
+            "zh": "耐 1250°C · 水溶胶，卫浴适用",
+            "vi": "Đến 1250°C · keo tan trong nước, thiết bị vệ sinh",
+            "th": "ถึง 1250°C · กาวละลายน้ำ สุขภัณฑ์"
           },
           "img": "",
           "landing": true,
           "slug": "hp-cbr11"
+        },
+        {
+          "name": "HP-CBR CX2",
+          "line": {
+            "en": "Up to 1200°C · fuses on firing, self-adhesive",
+            "zh": "耐 1200°C · 烧制融合，自带背胶",
+            "vi": "Đến 1200°C · hòa khi nung, tự dính",
+            "th": "ถึง 1200°C · หลอมขณะเผา มีกาวในตัว"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-cbr-cx2"
+        },
+        {
+          "name": "HP-CBR14",
+          "line": {
+            "en": "Up to 1200°C · removable, auto application",
+            "zh": "耐 1200°C · 可移除，自动贴标",
+            "vi": "Đến 1200°C · tháo được, dán tự động",
+            "th": "ถึง 1200°C · ลอกออกได้ ติดอัตโนมัติ"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-cbr14"
+        },
+        {
+          "name": "HP-CBR15",
+          "line": {
+            "en": "Up to 1200°C · non-oxygen / color-change process",
+            "zh": "耐 1200°C · 无氧/变色工艺",
+            "vi": "Đến 1200°C · quy trình không oxy / đổi màu",
+            "th": "ถึง 1200°C · กระบวนการไร้ออกซิเจน/เปลี่ยนสี"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-cbr15"
         }
       ]
     }

@@ -1,0 +1,31 @@
+{
+  "slug": "hp-cbr-cx2",
+  "source": "HEATPROOF CBR series",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "product_img": "",
+  "title": {"en": "HP-CBR CX2 — Ceramic Product Label", "zh": "HP-CBR CX2 · 陶瓷产品标签", "vi": "HP-CBR CX2 · Nhãn sản phẩm gốm sứ", "th": "HP-CBR CX2 · ฉลากผลิตภัณฑ์เซรามิก"},
+  "tagline": {"en": "Ceramic product label with high heat resistance up to 1200°C", "zh": "陶瓷产品标签，耐热性高达 1200°C", "vi": "Nhãn sản phẩm gốm sứ, chịu nhiệt cao đến 1200°C", "th": "ฉลากผลิตภัณฑ์เซรามิก ทนความร้อนสูงถึง 1200°C"},
+  "positioning": {},
+  "challenges": {},
+  "features": {
+    "en": ["High heat resistance up to 1200°C", "Heating must be done gradually", "The label is very thin and weak before being heated over 500°C", "Once the label hardens, the layer becomes very tough"],
+    "zh": ["高耐热性，高达 1200°C", "必须逐步加热", "在加热至 500°C 以上之前，标签非常薄且脆弱", "标签硬化后，涂层变得非常坚韧"],
+    "vi": ["Chịu nhiệt cao đến 1200°C", "Phải gia nhiệt từ từ", "Nhãn rất mỏng và yếu trước khi được nung trên 500°C", "Sau khi nhãn cứng lại, lớp phủ trở nên rất bền chắc"],
+    "th": ["ทนความร้อนสูงถึง 1200°C", "ต้องให้ความร้อนอย่างค่อยเป็นค่อยไป", "ฉลากบางและเปราะมากก่อนได้รับความร้อนเกิน 500°C", "เมื่อฉลากแข็งตัวแล้ว ชั้นเคลือบจะเหนียวแข็งแรงมาก"]
+  },
+  "benefits": {},
+  "spec": {
+    "en": ["Core & printing surface: Organic/inorganic complex", "Adhesive: Acrylic", "Liner: Paper / PET", "Application temperature: RT~50°C", "Heat resistance: 1200°C"],
+    "zh": ["芯层及打印表面：有机/无机复合物", "胶粘剂：丙烯酸", "离型纸：纸 / PET", "使用温度：RT~50°C", "耐热性：1200°C"],
+    "vi": ["Lõi & bề mặt in: Phức hợp hữu cơ/vô cơ", "Keo dán: Acrylic", "Lớp lót: Giấy / PET", "Nhiệt độ ứng dụng: RT~50°C", "Chịu nhiệt: 1200°C"],
+    "th": ["แกน & พื้นผิวพิมพ์: สารประกอบอินทรีย์/อนินทรีย์", "กาว: อะคริลิก", "แผ่นรอง: กระดาษ / PET", "อุณหภูมิการใช้งาน: RT~50°C", "ทนความร้อน: 1200°C"]
+  },
+  "applications": {
+    "en": ["Direct identification and bar-coding on ceramic products"],
+    "zh": ["在陶瓷产品上直接标识和条码打印"],
+    "vi": ["Nhận dạng trực tiếp và in mã vạch trên sản phẩm gốm sứ"],
+    "th": ["การระบุและพิมพ์บาร์โค้ดโดยตรงบนผลิตภัณฑ์เซรามิก"]
+  },
+  "certifications": {}
+}
