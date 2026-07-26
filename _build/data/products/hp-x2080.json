@@ -1,0 +1,31 @@
+{
+  "slug": "hp-x2080",
+  "source": "TDS HP-X2080",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "product_img": "",
+  "title": {"en": "HP-X2080 — HP Series High-Speed Heat-Treatment Label", "zh": "HP-X2080 · HP Series 高速热处理标签", "vi": "HP-X2080 · Nhãn xử lý nhiệt tốc độ cao HP Series", "th": "HP-X2080 · ฉลากอบชุบความร้อนความเร็วสูง HP Series"},
+  "tagline": {"en": "Label for heat treatment at a higher heating speed than HP-CBR CX2", "zh": "用于热处理的标签，升温速度高于 HP-CBR CX2", "vi": "Nhãn dùng cho xử lý nhiệt với tốc độ gia nhiệt cao hơn HP-CBR CX2", "th": "ฉลากสำหรับการอบชุบความร้อนที่ความเร็วในการให้ความร้อนสูงกว่า HP-CBR CX2"},
+  "positioning": {},
+  "challenges": {},
+  "features": {
+    "en": ["Heat resistance up to 1200°C", "Applicable for heating speed up to 65°C/min (10°C/min for HP-CBR CX2)", "After baking, the label becomes unified with the object", "Chemical proof, high resistance to scratching", "Enough repetition durability after baking with the object", "Printing by TT printer with YS-4"],
+    "zh": ["耐热性高达 1200°C", "适用于最高 65°C/min 的升温速度（HP-CBR CX2 为 10°C/min）", "烘烤后，标签与物体融为一体", "耐化学性，高耐刮擦性", "与物体一起烘烤后具有足够的重复耐久性", "使用 YS-4 的 TT 打印机打印"],
+    "vi": ["Chịu nhiệt đến 1200°C", "Áp dụng cho tốc độ gia nhiệt đến 65°C/min (10°C/min đối với HP-CBR CX2)", "Sau khi nung, nhãn hợp nhất với vật thể", "Kháng hóa chất, kháng trầy xước cao", "Đủ độ bền lặp lại sau khi nung cùng vật thể", "In bằng máy in TT với YS-4"],
+    "th": ["ทนความร้อนถึง 1200°C", "ใช้ได้กับความเร็วในการให้ความร้อนถึง 65°C/min (10°C/min สำหรับ HP-CBR CX2)", "หลังการอบ ฉลากจะรวมเป็นเนื้อเดียวกับวัตถุ", "ทนสารเคมี ทนการขีดข่วนสูง", "มีความทนทานต่อการใช้ซ้ำเพียงพอหลังการอบร่วมกับวัตถุ", "พิมพ์ด้วยเครื่องพิมพ์ TT ด้วย YS-4"]
+  },
+  "benefits": {},
+  "spec": {
+    "en": ["Label layer: Organic/inorganic complex, 16µm", "Adhesive: Acrylic material, 10µm", "Liner: Silicone treatment paper, 75µm"],
+    "zh": ["标签层：有机/无机复合物，16µm", "胶粘剂：丙烯酸材料，10µm", "离型纸：硅处理纸，75µm"],
+    "vi": ["Lớp nhãn: Phức hợp hữu cơ/vô cơ, 16µm", "Keo dán: Vật liệu acrylic, 10µm", "Lớp lót: Giấy xử lý silicone, 75µm"],
+    "th": ["ชั้นฉลาก: สารประกอบอินทรีย์/อนินทรีย์, 16µm", "กาว: วัสดุอะคริลิก, 10µm", "แผ่นรอง: กระดาษเคลือบซิลิโคน, 75µm"]
+  },
+  "applications": {
+    "en": ["Process management for heat treatment up to 1200°C", "Management for ceramics, glass and metallic parts", "Management of tray or jigs for heat treatment"],
+    "zh": ["热处理工艺管理，温度高达 1200°C", "陶瓷、玻璃及金属零件的管理", "热处理托盘或治具的管理"],
+    "vi": ["Quản lý quy trình xử lý nhiệt đến 1200°C", "Quản lý gốm sứ, thủy tinh và chi tiết kim loại", "Quản lý khay hoặc đồ gá cho xử lý nhiệt"],
+    "th": ["การจัดการกระบวนการอบชุบความร้อนถึง 1200°C", "การจัดการเซรามิก แก้ว และชิ้นส่วนโลหะ", "การจัดการถาดหรือจิ๊กสำหรับการอบชุบความร้อน"]
+  },
+  "certifications": {}
+}

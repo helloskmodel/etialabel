@@ -1,0 +1,62 @@
+{
+  "slug": "ceramic-sanitaryware-tracing",
+  "source": "_docs/sources/ceramic sanitaryware (HP-CBR)",
+  "order": 4,
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "image": "",
+  "title": {
+    "zh": "陶瓷卫浴生产管理标识方案",
+    "en": "Ceramic Sanitary-Ware Production-Management Labeling Solution",
+    "vi": "Giải pháp nhãn quản lý sản xuất gốm sứ vệ sinh",
+    "th": "โซลูชันฉลากการจัดการการผลิตสุขภัณฑ์เซรามิก"
+  },
+  "seo_desc": {
+    "en": "One-code process traceability for ceramic sanitary-ware from the wet-blank stage through high-temperature firing — the HP-CBR ceramic-transfer series that fuses with the ceramic surface during firing.",
+    "zh": "陶瓷卫浴从湿坯到高温烧制成品的一码过程追溯 —— 烧制中与陶瓷表面融为一体的 HP-CBR 陶瓷转印系列",
+    "vi": "Truy xuất một mã toàn quy trình cho gốm sứ vệ sinh từ giai đoạn phôi ướt đến khi nung ở nhiệt độ cao — dòng chuyển in gốm HP-CBR hòa làm một với bề mặt gốm khi nung.",
+    "th": "การตรวจสอบย้อนกลับด้วยรหัสเดียวตลอดกระบวนการสำหรับสุขภัณฑ์เซรามิกตั้งแต่ขั้นตอนดินดิบจนถึงการเผาที่อุณหภูมิสูง — ซีรีส์ถ่ายโอนเซรามิก HP-CBR ที่หลอมรวมกับพื้นผิวเซรามิกระหว่างการเผา"
+  },
+  "overview": {
+    "zh": "陶瓷卫浴的生产从湿坯半成品开始，经干燥、高温烧制直至成品，需要从泥坯阶段就实现一码过程管理。当前行业正全面推动全链路可追踪、可追溯的标准化标识体系，为高效、精益的生产计划与质量管控提供基础支撑",
+    "en": "Ceramic sanitary-ware production runs from the wet clay blank (semi-finished) stage through drying and high-temperature firing to the finished product, and the industry increasingly needs one-code process management starting at the blank stage. It is moving toward a standardized, fully trackable and traceable identification system that underpins efficient, lean production planning and quality control.",
+    "vi": "Sản xuất gốm sứ vệ sinh bắt đầu từ giai đoạn phôi đất ướt (bán thành phẩm), qua sấy khô và nung ở nhiệt độ cao đến thành phẩm, và ngành cần quản lý quy trình bằng một mã ngay từ giai đoạn phôi. Ngành đang hướng tới hệ thống nhận diện chuẩn hóa, có thể theo dõi và truy xuất toàn bộ, làm nền tảng cho việc lập kế hoạch sản xuất tinh gọn, hiệu quả và kiểm soát chất lượng.",
+    "th": "การผลิตสุขภัณฑ์เซรามิกเริ่มจากขั้นตอนดินดิบ (กึ่งสำเร็จรูป) ผ่านการอบแห้งและการเผาที่อุณหภูมิสูงจนถึงสินค้าสำเร็จรูป อุตสาหกรรมต้องการการจัดการกระบวนการด้วยรหัสเดียวตั้งแต่ขั้นตอนดินดิบ และกำลังมุ่งสู่ระบบการระบุที่เป็นมาตรฐาน ติดตามและตรวจสอบย้อนกลับได้ทั้งหมด เพื่อรองรับการวางแผนการผลิตที่มีประสิทธิภาพ ลีน และการควบคุมคุณภาพ"
+  },
+  "challenges": {
+    "zh": "常规标签只能在陶瓷卫浴成品后进行标识，解决供应链标识，却无法实现烧制前的生产工序管理，造成两方面困扰：质量追溯困难 —— 湿坯或烧制前阶段没有标识，无法追溯这段的产品数量与质量状态；数据不全面 —— 从湿坯到烧制阶段没有数据，无法形成从原料到成品的数据完整，从而影响更高效、精益的生产计划安排",
+    "en": "Conventional labels can only be applied after the ceramic sanitary-ware is finished — they solve supply-chain identification but cannot manage the pre-firing production stages, causing two problems. First, difficult quality traceability: with no mark at the wet-blank or pre-firing stage, the quantity and quality status of that stage cannot be traced. Second, incomplete data: with no data from the wet-blank through the firing stage, a complete raw-material-to-finished-product data set cannot be formed, which undermines more efficient, lean production planning.",
+    "vi": "Nhãn thông thường chỉ có thể dán sau khi gốm sứ vệ sinh đã hoàn thiện — chúng giải quyết nhận diện chuỗi cung ứng nhưng không thể quản lý các giai đoạn sản xuất trước khi nung, gây ra hai vấn đề. Thứ nhất, khó truy xuất chất lượng: không có dấu ở giai đoạn phôi ướt hoặc trước khi nung, không thể truy xuất số lượng và tình trạng chất lượng của giai đoạn đó. Thứ hai, dữ liệu không đầy đủ: không có dữ liệu từ phôi ướt đến giai đoạn nung, không thể hình thành bộ dữ liệu hoàn chỉnh từ nguyên liệu đến thành phẩm, làm ảnh hưởng đến việc lập kế hoạch sản xuất tinh gọn, hiệu quả hơn.",
+    "th": "ฉลากทั่วไปติดได้เฉพาะหลังจากสุขภัณฑ์เซรามิกเสร็จสมบูรณ์ — แก้ปัญหาการระบุในห่วงโซ่อุปทานได้ แต่ไม่สามารถจัดการขั้นตอนการผลิตก่อนการเผา ทำให้เกิดสองปัญหา หนึ่ง การตรวจสอบย้อนกลับคุณภาพทำได้ยาก: เมื่อไม่มีเครื่องหมายในขั้นตอนดินดิบหรือก่อนการเผา จึงไม่สามารถตรวจสอบจำนวนและสถานะคุณภาพของขั้นตอนนั้น สอง ข้อมูลไม่ครบถ้วน: เมื่อไม่มีข้อมูลตั้งแต่ดินดิบจนถึงขั้นการเผา จึงไม่สามารถสร้างชุดข้อมูลที่สมบูรณ์จากวัตถุดิบถึงสินค้าสำเร็จรูป ซึ่งบั่นทอนการวางแผนการผลิตที่มีประสิทธิภาพและลีนมากขึ้น"
+  },
+  "solution_intro": {
+    "zh": "破解上述瓶颈，关键在于为每一件产品建立贯穿全生命周期的「数字孪生」，让卫浴产品从湿坯半成品开始，直至高温烧制成品，全程可追溯。ETIA 推荐耐高温陶瓷转印 HP-CBR 系列，可在烧制过程中与陶瓷基材表面融为一体",
+    "en": "The key to breaking these bottlenecks is to give every product a lifecycle-spanning \"digital twin\", so a sanitary-ware item is traceable all the way from the wet-blank semi-finished stage to the high-temperature-fired finished product. ETIA recommends the high-temperature ceramic-transfer HP-CBR series, which fuses with the ceramic substrate surface during firing.",
+    "vi": "Chìa khóa để phá vỡ những nút thắt này là tạo cho mỗi sản phẩm một \"bản sao số\" xuyên suốt vòng đời, để một sản phẩm vệ sinh có thể truy xuất từ giai đoạn phôi ướt bán thành phẩm đến khi nung ở nhiệt độ cao thành thành phẩm. ETIA đề xuất dòng chuyển in gốm chịu nhiệt cao HP-CBR, hòa làm một với bề mặt nền gốm trong quá trình nung.",
+    "th": "กุญแจสำคัญในการทลายคอขวดเหล่านี้คือการให้แต่ละผลิตภัณฑ์มี \"ดิจิทัลทวิน\" ตลอดวงจรชีวิต เพื่อให้สุขภัณฑ์สามารถตรวจสอบย้อนกลับได้ตั้งแต่ขั้นตอนดินดิบกึ่งสำเร็จรูปจนถึงสินค้าที่เผาที่อุณหภูมิสูง ETIA แนะนำซีรีส์ถ่ายโอนเซรามิกทนความร้อนสูง HP-CBR ซึ่งหลอมรวมกับพื้นผิวเนื้อเซรามิกระหว่างการเผา"
+  },
+  "advantages": {
+    "en": [
+      {"label": "HP-CBR CX2", "text": "Highly flexible, conforming perfectly to flat or slightly curved ceramic surfaces; fuses with the substrate surface during firing; self-adhesive for easy application."},
+      {"label": "HP-CBR CX11", "text": "Highly flexible, conforming to ceramic surfaces; fuses with the substrate surface during firing; scratch-resistant and acid/alkali-resistant."}
+    ],
+    "zh": [
+      {"label": "HP-CBR CX2", "text": "标签具有高柔韧性，可完美贴合平整或略有弧度的陶瓷表面；烧制过程中标签与基材表面融为一体；自带背胶，使用方便"},
+      {"label": "HP-CBR CX11", "text": "标签具有高柔韧性，可贴合陶瓷表面；烧制过程中标签与基材表面融为一体；耐刮擦，耐酸碱"}
+    ],
+    "vi": [
+      {"label": "HP-CBR CX2", "text": "Độ dẻo cao, ôm sát hoàn hảo bề mặt gốm phẳng hoặc hơi cong; hòa làm một với bề mặt nền khi nung; có sẵn keo dán, dễ sử dụng."},
+      {"label": "HP-CBR CX11", "text": "Độ dẻo cao, ôm sát bề mặt gốm; hòa làm một với bề mặt nền khi nung; chống trầy xước, chống axit và kiềm."}
+    ],
+    "th": [
+      {"label": "HP-CBR CX2", "text": "ยืดหยุ่นสูง แนบสนิทกับพื้นผิวเซรามิกที่เรียบหรือโค้งเล็กน้อยได้อย่างสมบูรณ์ หลอมรวมกับพื้นผิวเนื้อขณะเผา มีกาวในตัว ใช้งานสะดวก"},
+      {"label": "HP-CBR CX11", "text": "ยืดหยุ่นสูง แนบกับพื้นผิวเซรามิก หลอมรวมกับพื้นผิวเนื้อขณะเผา ทนการขีดข่วน ทนกรดและด่าง"}
+    ]
+  },
+  "value": {
+    "zh": "从湿坯半成品到高温烧制成品，一标到底、全程可追踪可追溯，实现一码过程管理，减少混批与追溯断链，全面提升生产计划的效率与精益管控水平",
+    "en": "From the wet-blank semi-finished stage to the high-temperature-fired finished product, one label lasts all the way — fully trackable and traceable — enabling one-code process management, reducing batch mix-ups and broken traceability chains, and comprehensively improving the efficiency and lean control of production planning.",
+    "vi": "Từ giai đoạn phôi ướt bán thành phẩm đến thành phẩm nung ở nhiệt độ cao, một nhãn theo suốt toàn bộ — có thể theo dõi và truy xuất hoàn toàn — cho phép quản lý quy trình bằng một mã, giảm nhầm lẫn lô và đứt gãy chuỗi truy xuất, nâng cao toàn diện hiệu quả và mức kiểm soát tinh gọn của việc lập kế hoạch sản xuất.",
+    "th": "ตั้งแต่ขั้นตอนดินดิบกึ่งสำเร็จรูปจนถึงสินค้าที่เผาที่อุณหภูมิสูง ฉลากเดียวอยู่ได้ตลอดเส้นทาง — ติดตามและตรวจสอบย้อนกลับได้ทั้งหมด — ทำให้จัดการกระบวนการด้วยรหัสเดียว ลดการสับสนของล็อตและการขาดตอนของการตรวจสอบย้อนกลับ และยกระดับประสิทธิภาพและการควบคุมแบบลีนของการวางแผนการผลิตอย่างครอบคลุม"
+  }
+}
