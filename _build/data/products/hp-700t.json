@@ -1,7 +1,12 @@
 {
   "slug": "hp-700t",
   "source": "_docs/sources/steel/ (HP-700T)",
-  "langs": ["en", "zh", "vi", "th"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "",
   "product_img": "",
   "title": {
@@ -130,76 +135,44 @@
   },
   "spec": {
     "en": [
-      "Model: HP-700T",
-      "Product category: Direct Hot Application label",
-      "Max. application temperature: 750℃",
-      "Applicable objects: Steel billet / steel slab",
-      "Applicable surface: Rough, scale-covered hot steel surfaces",
-      "Base material: Heat-resistant metal substrate",
-      "Adhesive: High-temperature anchoring adhesive",
-      "Printing method: Thermal transfer (dedicated high-temp ribbon) / pre-print",
-      "Standard size: TBC (e.g. 100 × 50 mm, customizable)",
-      "Supply form: Roll (for automatic labelers) / sheet",
-      "Application method: Robotic labeling / manual tagging pole",
-      "Supporting equipment: Robotic labeling system, thermal transfer printer, high-temp ribbon, scanning station",
-      "Storage: Ambient, away from light; use within 12 months recommended",
-      "HP-700T vs HP-600 — Max. application temperature: 750℃ vs 550℃",
-      "HP-700T vs HP-600 — Typical objects: Billets, slabs vs Coils, aluminum sows",
-      "HP-700T vs HP-600 — When to choose: High-temperature stock straight from the caster vs Objects already cooled, or post-hot-rolling"
+      "Model: HP-700T (HP Series)",
+      "Printing layer: Inorganic coating (White), 10±1µ",
+      "Label core: Brass foil, 20±1µ",
+      "Back layer: Inorganic adhesive, 30±2µ",
+      "Adhesion: 100–400 gf/25mm (stainless steel plate / 180° peel)",
+      "Heat resistance: Good (700°C × 5hr)",
+      "Application temperature: 450–800°C",
+      "Thermal transfer ink ribbon: YS-540 or YS-4"
     ],
     "zh": [
-      "型号:HP-700T",
-      "产品类别:热态直贴标签(Direct Hot Application)",
-      "最高贴附温度:750℃",
-      "适用对象:钢坯 Billet / 板坯 Slab",
-      "适用表面:氧化皮覆盖的粗糙热态钢表面",
-      "基材:耐高温金属基材",
-      "胶黏剂:高温专用锚固型胶",
-      "印刷方式:热转印(专用高温色带)/ 预印",
-      "标准尺寸:待填(如 100 × 50mm,可定制)",
-      "供货形式:卷装(适配自动贴标机)/ 单张",
-      "贴附方式:机器人自动贴标 / 手动贴标杆",
-      "配套设备:机器人贴标系统、热转印打印机、高温色带、扫码站",
-      "保存条件:常温避光,建议 12 个月内使用",
-      "HP-700T 对比 HP-600 — 最高贴附温度:750℃ / 550℃",
-      "HP-700T 对比 HP-600 — 典型对象:钢坯、板坯 / 钢卷、铝锭",
-      "HP-700T 对比 HP-600 — 适用判断:连铸直出高温坯 / 已降温或热轧后对象"
+      "型号：HP-700T（HP 系列）",
+      "打印层：无机涂层（白），10±1µ",
+      "标签基材：黄铜箔，20±1µ",
+      "背层：无机胶黏剂，30±2µ",
+      "粘着力：100–400 gf/25mm（不锈钢板 / 180° 剥离）",
+      "耐热性：良好（700°C × 5hr）",
+      "适用温度：450–800°C",
+      "热转印碳带：YS-540 或 YS-4"
     ],
     "vi": [
-      "Model: HP-700T",
-      "Phân loại sản phẩm: Nhãn dán trực tiếp khi nóng (Direct Hot Application)",
-      "Nhiệt độ dán tối đa: 750℃",
-      "Đối tượng áp dụng: Phôi thanh (Billet) / Phôi tấm (Slab)",
-      "Bề mặt áp dụng: Bề mặt thép nóng thô ráp phủ vảy oxit",
-      "Vật liệu nền: Nền kim loại chịu nhiệt",
-      "Keo dính: Keo neo bám chuyên dụng chịu nhiệt cao",
-      "Phương thức in: In truyền nhiệt (ruy băng chịu nhiệt chuyên dụng) / in sẵn",
-      "Kích thước tiêu chuẩn: Chờ xác nhận (ví dụ 100 × 50 mm, có thể tùy chỉnh)",
-      "Hình thức cung cấp: Cuộn (dùng cho máy dán tự động) / tờ rời",
-      "Phương thức dán: Robot dán nhãn / sào dán thủ công",
-      "Thiết bị đi kèm: Hệ thống robot dán nhãn, máy in truyền nhiệt, ruy băng chịu nhiệt, trạm quét",
-      "Điều kiện bảo quản: Nhiệt độ thường, tránh ánh sáng; khuyến nghị dùng trong vòng 12 tháng",
-      "HP-700T so với HP-600 — Nhiệt độ dán tối đa: 750℃ / 550℃",
-      "HP-700T so với HP-600 — Đối tượng điển hình: Phôi thanh, phôi tấm / Cuộn thép, thỏi nhôm",
-      "HP-700T so với HP-600 — Khi nào chọn: Phôi nhiệt độ cao ra thẳng từ máy đúc / Đối tượng đã nguội hoặc sau cán nóng"
+      "Model: HP-700T (HP Series)",
+      "Lớp in: Lớp phủ vô cơ (trắng), 10±1µ",
+      "Lõi nhãn: Lá đồng thau, 20±1µ",
+      "Lớp lưng: Keo vô cơ, 30±2µ",
+      "Độ bám dính: 100–400 gf/25mm (tấm thép không gỉ / bóc 180°)",
+      "Khả năng chịu nhiệt: Tốt (700°C × 5hr)",
+      "Nhiệt độ ứng dụng: 450–800°C",
+      "Ruy băng in chuyển nhiệt: YS-540 hoặc YS-4"
     ],
     "th": [
-      "รุ่น: HP-700T",
-      "ประเภทผลิตภัณฑ์: ฉลากติดโดยตรงขณะร้อน (Direct Hot Application)",
-      "อุณหภูมิการติดสูงสุด: 750℃",
-      "วัตถุที่ใช้ได้: บิลเล็ต (Billet) / สแลบ (Slab)",
-      "ผิวที่ใช้ได้: ผิวเหล็กร้อนที่หยาบและมีสเกลปกคลุม",
-      "วัสดุฐาน: ฐานโลหะทนความร้อน",
-      "กาว: กาวยึดเกาะเฉพาะทางทนอุณหภูมิสูง",
-      "วิธีการพิมพ์: ถ่ายโอนความร้อน (ริบบอนทนความร้อนเฉพาะทาง) / พิมพ์ล่วงหน้า",
-      "ขนาดมาตรฐาน: รอยืนยัน (เช่น 100 × 50 มม. สั่งทำได้)",
-      "รูปแบบการจัดส่ง: ม้วน (สำหรับเครื่องติดอัตโนมัติ) / แผ่น",
-      "วิธีการติด: หุ่นยนต์ติดฉลาก / ไม้ติดฉลากแบบมือ",
-      "อุปกรณ์ประกอบ: ระบบหุ่นยนต์ติดฉลาก เครื่องพิมพ์ถ่ายโอนความร้อน ริบบอนทนความร้อน สถานีสแกน",
-      "การเก็บรักษา: อุณหภูมิห้อง หลีกเลี่ยงแสง แนะนำให้ใช้ภายใน 12 เดือน",
-      "HP-700T เทียบ HP-600 — อุณหภูมิการติดสูงสุด: 750℃ / 550℃",
-      "HP-700T เทียบ HP-600 — วัตถุทั่วไป: บิลเล็ต สแลบ / คอยล์ อะลูมิเนียมซาว",
-      "HP-700T เทียบ HP-600 — เลือกเมื่อใด: ชิ้นงานอุณหภูมิสูงที่ออกจากเครื่องหล่อโดยตรง / วัตถุที่เย็นลงแล้ว หรือหลังการรีดร้อน"
+      "รุ่น: HP-700T (HP Series)",
+      "ชั้นพิมพ์: สารเคลือบอนินทรีย์ (สีขาว), 10±1µ",
+      "แกนฉลาก: แผ่นทองเหลือง, 20±1µ",
+      "ชั้นหลัง: กาวอนินทรีย์, 30±2µ",
+      "แรงยึดติด: 100–400 gf/25mm (แผ่นสแตนเลส / ลอก 180°)",
+      "ความทนความร้อน: ดี (700°C × 5hr)",
+      "อุณหภูมิใช้งาน: 450–800°C",
+      "ริบบอนถ่ายเทความร้อน: YS-540 หรือ YS-4"
     ]
   },
   "applications": {
@@ -229,9 +202,17 @@
     ]
   },
   "certifications": {
-    "en": ["RoHS / REACH compliant"],
-    "zh": ["符合 RoHS / REACH"],
-    "vi": ["Tuân thủ RoHS / REACH"],
-    "th": ["ปฏิบัติตาม RoHS / REACH"]
+    "en": [
+      "RoHS / REACH compliant"
+    ],
+    "zh": [
+      "符合 RoHS / REACH"
+    ],
+    "vi": [
+      "Tuân thủ RoHS / REACH"
+    ],
+    "th": [
+      "ปฏิบัติตาม RoHS / REACH"
+    ]
   }
 }
