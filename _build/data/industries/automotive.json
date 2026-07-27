@@ -1,0 +1,401 @@
+{
+  "slug": "automotive-labeling-solutions",
+  "source": "_docs/sources/automotive/",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER.jpg",
+  "seo_title": {
+    "en": "Automotive & Tire Labeling Solution | ETIA",
+    "zh": "汽车与轮胎标签解决方案 | ETIA",
+    "vi": "Giải pháp Nhãn Ô Tô & Lốp Xe | ETIA",
+    "th": "โซลูชันฉลากรถยนต์และยาง | ETIA"
+  },
+  "seo_desc": {
+    "en": "High-performance labels for automotive interior trim, exterior parts, engine bays, batteries, chassis and tires — resistant to high temperature, oil, chemicals, flame and UV, with tamper-proof VIN and tire traceability.",
+    "zh": "适配车内内饰、车身外饰、发动机舱、电池、底盘与轮胎的高性能车用标签 —— 耐高温、耐油污、耐化学品、阻燃、耐 UV，满足 VIN 与轮胎防篡改追溯",
+    "vi": "Nhãn ô tô hiệu suất cao cho nội thất, ngoại thất, kho động cơ, pin, khung gầm và lốp xe — chịu nhiệt, chống dầu, hóa chất, cháy và UV, truy xuất VIN và lốp chống sửa đổi",
+    "th": "ฉลากรถยนต์ประสิทธิภาพสูงสำหรับตกแต่งภายใน ชิ้นส่วนภายนอก ห้องเครื่องยนต์ แบตเตอรี่ แชสซี และยาง — ทนความร้อน น้ำมัน สารเคมี ไฟ และยูวี พร้อมการติดตาม VIN และยางป้องกันการแก้ไข"
+  },
+  "hero": {
+    "eyebrow": {
+      "en": "By Industry · Automotive & Tire",
+      "zh": "按行业 · 汽车与轮胎",
+      "vi": "Theo ngành · Ô tô & Lốp xe",
+      "th": "ตามอุตสาหกรรม · รถยนต์และยาง"
+    },
+    "title": {
+      "en": "Automotive & Tire Labeling Solution",
+      "zh": "汽车与轮胎标签解决方案",
+      "vi": "Giải pháp Nhãn Ô Tô & Lốp Xe",
+      "th": "โซลูชันฉลากรถยนต์และยาง"
+    },
+    "slogan": {
+      "en": "Durable vehicle marking, full lifecycle traceability to secure driving safety",
+      "zh": "全车耐久标识，长效溯源，守护行车安全",
+      "vi": "Dấu hiệu bền toàn xe, truy xuất nguồn gốc lâu dài, bảo vệ an toàn lái xe",
+      "th": "เครื่องหมายทนทานทั่วรถ ติดตามสินค้าระยะยาว ปกป้องความปลอดภัยขณะขับขี่"
+    }
+  },
+  "overview": {
+    "zh": [
+      "我们推出适配车内内饰、车身外饰、发动机舱、汽车零部件、刹车盘、底盘、悬挂件、轮胎等全场景的高性能车用标签，满足燃油车与新能源车的使用要求。标签长期具备耐高温、耐油污、耐化学品、阻燃、耐 UV 等特性，可在金属、橡胶、织物、低表面能塑料等极易脱标材质上保持持久牢固，同时满足 VIN 码、轮胎追溯标识的防篡改、持久可读的强制法规要求。全系产品可抵御极端温变、机油、制动液等各类汽车介质腐蚀，提供一体化标签解决方案"
+    ],
+    "en": [
+      "We provide a full range of high-performance vehicle labels applicable to interior trim, exterior parts, engine bays, auto components, brake discs, chassis, suspensions and tires for both fuel and new energy vehicles. The labels feature outstanding resistance to high temperature, oil, chemicals, flame and UV rays, and adhere firmly to hard-to-stick substrates including metal, rubber, fabric and low-surface-energy plastics. They meet mandatory regulatory requirements for tamper-proof and long-lasting readable VIN and tire trace marks. All product lines resist corrosion caused by extreme temperature fluctuation, engine oil, brake fluid and other automotive fluids to deliver integrated labeling solutions."
+    ],
+    "vi": [
+      "Chúng tôi cung cấp dòng nhãn ô tô hiệu suất cao phù hợp cho nội thất xe, ngoại thất xe, kho động cơ, bộ phận ô tô, đĩa phanh, khung gầm, bộ giảm xóc và lốp xe, đáp ứng yêu cầu sử dụng xe đốt xăng và xe năng lượng mới. Nhãn có khả năng chịu nhiệt cao, chống dầu, chống hóa chất, chống cháy, chống tia UV lâu năm, bám chặt trên kim loại, cao su, vải, nhựa năng lượng bề mặt thấp dễ bong tróc. Sản phẩm đáp ứng quy định bắt buộc về chống sửa đổi, dễ đọc lâu dài cho mã VIN và nhãn truy xuất lốp. Toàn bộ dòng sản phẩm chống ăn mòn do biến nhiệt khắc nghiệt, dầu máy, dầu phanh và các dung dịch ô tô khác, đưa ra giải pháp nhãn tích hợp hoàn chỉnh."
+    ],
+    "th": [
+      "เราจัดจำหน่ายฉลากรถยนต์ประสิทธิภาพสูง เหมาะสำหรับตกแต่งภายใน ชิ้นส่วนภายนอก ห้องเครื่องยนต์ ชิ้นส่วนรถ จานเบรก แชสซี สปริงรองรับ และยางรถ รองรับทั้งรถน้ำมันและรถพลังงานใหม่ ฉลากมีคุณสมบัติทนอุณหภูมิสูง ทนน้ำมัน ทนสารเคมี ป้องกันไฟ และป้องกันรังสียูวี ได้ยาวนาน ติดแน่นบนโลหะ ยาง ผ้า พลาสติกผิวต่ำที่มักลอกง่าย สอดคล้องกับกฎหมายบังคับเกี่ยวกับป้องกันการแก้ไขและอ่านได้ยาวนานสำหรับรหัส VIN และฉลากติดตามยาง ทุกชุดสินค้าป้องกันการกัดกร่อนจากอุณหภูมิที่เปลี่ยนแปลง น้ำมันเครื่อง น้ำมันเบรก และสารอื่นๆ ของรถยนต์ มอบโซลูชันฉลากแบบรวม"
+    ]
+  },
+  "classify_by": {
+    "en": "Choose an application area",
+    "zh": "选择应用区域",
+    "vi": "Chọn khu vực ứng dụng",
+    "th": "เลือกพื้นที่การใช้งาน"
+  },
+  "tiers": [
+    {
+      "tab": "Engine Bay",
+      "name": {
+        "en": "🛢️ Engine Bay Labels",
+        "zh": "🛢️ 发动机舱标签",
+        "vi": "🛢️ Nhãn kho động cơ",
+        "th": "🛢️ ฉลากห้องเครื่องยนต์"
+      },
+      "intro": {
+        "en": "High-temperature, oil- and chemical-resistant labels for radiators, batteries and fluid reservoirs in the engine bay.",
+        "zh": "适配散热器、蓄电池、油液储罐的耐高温、耐油、耐化学品发动机舱标签",
+        "vi": "Nhãn kho động cơ chịu nhiệt cao, chống dầu và hóa chất cho bộ tản nhiệt, pin và bình chứa dầu",
+        "th": "ฉลากห้องเครื่องยนต์ทนอุณหภูมิสูง ทนน้ำมันและสารเคมี สำหรับหม้อน้ำ แบตเตอรี่ และถังน้ำมัน"
+      },
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-2813.jpg",
+      "products": [
+        {
+          "name": "Radiator Warning Label",
+          "line": {
+            "en": "E-2813 · -40℃~150℃ (200℃ peak) · 2mil white glossy PET · coolant, engine oil, gasoline & acid/alkali resistant",
+            "zh": "E-2813 · -40℃~150℃（短时峰值 200℃）· 2mil 白色光面 PET · 耐冷却液、机油、汽油、酸碱",
+            "vi": "E-2813 · -40℃~150℃ (đỉnh 200℃) · PET bóng trắng 2mil · chống dung dịch làm mát, dầu máy, xăng, axit bazơ",
+            "th": "E-2813 · -40℃~150°C (สูงสุด 200°C) · PET สีขาวเงา 2 มิล · ทนน้ำยาหม้อน้ำ น้ำมันเครื่อง เบนซิน กรด-เบส"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": "Battery Identification Label",
+          "line": {
+            "en": "E-2512 · -40℃~125℃ · 2mil white glossy PET · electrolyte, acid, alkali & engine-grease resistant",
+            "zh": "E-2512 · -40℃~125℃ · 2mil 白色光面 PET · 耐电解液、酸碱、舱内油污",
+            "vi": "E-2512 · -40℃~125℃ · PET bóng trắng 2mil · chống dung dịch điện ly, axit, bazơ, dầu kho động cơ",
+            "th": "E-2512 · -40℃~125°C · PET สีขาวเงา 2 มิล · ทนสารอิเล็กโทรไลต์ กรด เบส น้ำมันในห้องเครื่อง"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": "Power Steering Fluid Label",
+          "line": {
+            "en": "E-2823 · -40℃~120℃ · 2mil silver matte PET · engine oil, hydraulic oil & oil-penetration resistant",
+            "zh": "E-2823 · -40℃~120℃ · 2mil 银色哑光 PET · 耐机油、液压油、油污渗透",
+            "vi": "E-2823 · -40℃~120℃ · PET mờ bạc 2mil · chống dầu máy, dầu thủy lực, dầu thấm",
+            "th": "E-2823 · -40℃~120°C · PET สีเงินด้าน 2 มิล · ทนน้ำมันเครื่อง น้ำมันไฮดรอลิก การซึมของน้ำมัน"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "tab": "VIN & Body",
+      "name": {
+        "en": "🚪 Body & B-Pillar VIN Labels",
+        "zh": "🚪 车门立柱车身标识标签",
+        "vi": "🚪 Nhãn cột B & mã VIN thân xe",
+        "th": "🚪 ฉลากเสา B และรหัส VIN ตัวถัง"
+      },
+      "intro": {
+        "en": "Tamper-proof VIN labels and tire-pressure/load placards for B-pillar and door-frame body panels.",
+        "zh": "适配 B 柱、车门框钣金的防篡改 VIN 与胎压载重标识标签",
+        "vi": "Nhãn VIN chống giả và nhãn áp suất/tải trọng lốp cho cột B và khung cửa thân xe",
+        "th": "ฉลาก VIN ป้องกันการแก้ไขและฉลากความดัน/น้ำหนักยาง สำหรับเสา B และกรอบประตูตัวถัง"
+      },
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-VINCODE.jpg",
+      "products": [
+        {
+          "name": "Laser Tamper-Proof VIN Label",
+          "line": {
+            "en": "E-2512BL · -40℃~150℃ · matte black-white laser acrylic film · tamper-proof laser engraving, complies with global VIN traceability",
+            "zh": "E-2512BL · -40℃~150℃ · 哑光黑白丙烯酸激光膜 · 防撕毁防伪，符合整车 VIN 法规唯一追溯",
+            "vi": "E-2512BL · -40℃~150℃ · màng acrylic laser đen trắng mờ · chống xé chống giả, đáp ứng truy xuất VIN toàn xe",
+            "th": "E-2512BL · -40℃~150°C · ฟิล์มอะคริลิกเลเซอร์ขาวดำสีด้าน · ป้องกันการฉีกและการแก้ไข สอดคล้องการติดตาม VIN"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": "Tire Load Warning Label",
+          "line": {
+            "en": "E-2512 · -40℃~125℃ · 2mil white glossy PET · rain, road dirt, UV & car-wash chemical resistant",
+            "zh": "E-2512 · -40℃~125℃ · 2mil 白色光面 PET · 耐雨水、路面油污、紫外线、洗车药剂",
+            "vi": "E-2512 · -40℃~125℃ · PET bóng trắng 2mil · chống mưa, dầu đường, tia UV, dung dịch rửa xe",
+            "th": "E-2512 · -40℃~125°C · PET สีขาวเงา 2 มิล · ทนฝน น้ำมันบนถนน รังสียูวี สารล้างรถ"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "tab": "Battery & Electrical",
+      "name": {
+        "en": "🔋 Battery & Electrical Harness Labels",
+        "zh": "🔋 电池与电气系统标签",
+        "vi": "🔋 Nhãn pin & dây điện",
+        "th": "🔋 ฉลากแบตเตอรี่และสายไฟ"
+      },
+      "intro": {
+        "en": "Battery-module ID and harness/connector labels resisting electrolyte, acid/alkali and short-term high heat.",
+        "zh": "耐电解液、酸碱与短时高温的电池模组识别与线束连接器标签",
+        "vi": "Nhãn nhận biết mô đun pin và dây nối/đầu nối chống dung dịch điện ly, axit bazơ và nhiệt cao ngắn hạn",
+        "th": "ฉลากระบุโมดูลแบตเตอรี่และสายไฟ/ขั้วต่อ ทนสารอิเล็กโทรไลต์ กรด-เบส และความร้อนสูงชั่วคราว"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": "Battery Module Marking Label",
+          "line": {
+            "en": "E-2512 · -40℃~125℃ · 2mil white glossy PET · electrolyte, acid, alkali & cooling-grease resistant",
+            "zh": "E-2512 · -40℃~125℃ · 2mil 白色光面 PET · 耐电解液、酸碱、冷却润滑油脂",
+            "vi": "E-2512 · -40℃~125℃ · PET bóng trắng 2mil · chống dung dịch điện ly, axit, bazơ, dầu bôi trơn làm mát",
+            "th": "E-2512 · -40℃~125°C · PET สีขาวเงา 2 มิล · ทนสารอิเล็กโทรไลต์ กรด เบส น้ำมันหล่อเย็น"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": "Electrical Wire Harness Label",
+          "line": {
+            "en": "XF603 · -40℃~180℃ short-term · ultra-thin high-temp PET/polyimide film · solder flux, light grease & coolant resistant",
+            "zh": "XF603 · -40℃~180℃短时高温 · 超薄耐高温 PET／聚酰亚胺薄膜 · 耐助焊剂、轻微油污、冷却剂",
+            "vi": "XF603 · -40℃~180℃ ngắn hạn · màng PET/polyimide siêu mỏng chịu nhiệt cao · chống dung dịch hàn, dầu nhẹ, dung dịch làm mát",
+            "th": "XF603 · -40℃~180°C ชั่วคราว · ฟิล์ม PET/โพลีอิมิดบางพิเศษทนอุณหภูมิสูง · ทนฟลักซ์บัดกรี น้ำมันเล็กน้อย น้ำยาหล่อเย็น"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "tab": "Fuel & Charging",
+      "name": {
+        "en": "⛽ Fuel & EV Charging Port Labels",
+        "zh": "⛽ 燃油与新能源充电标签",
+        "vi": "⛽ Nhãn nắp xăng & cổng sạc xe điện",
+        "th": "⛽ ฉลากช่องเติมน้ำมันและชาร์จรถไฟฟ้า"
+      },
+      "intro": {
+        "en": "Fuel-filler warning and EV charging labels resisting fuel, cleaners and semi-outdoor weathering.",
+        "zh": "耐燃油、清洁剂与半户外老化的燃油加注与新能源充电说明标签",
+        "vi": "Nhãn cảnh báo nắp xăng và hướng dẫn sạc xe điện chống nhiên liệu, dung dịch rửa và thời tiết nửa ngoài trời",
+        "th": "ฉลากเตือนช่องเติมน้ำมันและคำแนะนำชาร์จรถไฟฟ้า ทนน้ำมัน สารล้าง และสภาพอากาศกึ่งกลางแจ้ง"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": "Fuel Filler Warning Label",
+          "line": {
+            "en": "E-2522 · -40℃~120℃ · 2mil silver matte PET · gasoline, diesel, fuel additive & car-wash solvent resistant",
+            "zh": "E-2522 · -40℃~120℃ · 2mil 银色哑光 PET · 耐汽油、柴油、燃油添加剂、洗车溶剂",
+            "vi": "E-2522 · -40℃~120℃ · PET mờ bạc 2mil · chống xăng, dầu diesel, phụ gia nhiên liệu, dung dịch rửa xe",
+            "th": "E-2522 · -40℃~120°C · PET สีเงินด้าน 2 มิล · ทนเบนซิน ดีเซล สารเติมน้ำมัน สารล้างรถ"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": "EV Charging Instruction Label",
+          "line": {
+            "en": "E-2813 · -40℃~150℃ (200℃ peak) · 2mil white glossy PET · charging cleaner, rain, grease & UV resistant",
+            "zh": "E-2813 · -40℃~150℃（短时峰值 200℃）· 2mil 白色光面 PET · 耐充电试剂、雨水、油污、紫外线",
+            "vi": "E-2813 · -40℃~150℃ (đỉnh 200℃) · PET bóng trắng 2mil · chống dung dịch vệ sinh sạc, mưa, dầu, tia UV",
+            "th": "E-2813 · -40℃~150°C (สูงสุด 200°C) · PET สีขาวเงา 2 มิล · ทนสารล้างชาร์จ ฝน น้ำมัน รังสียูวี"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "tab": "Exterior & Chassis",
+      "name": {
+        "en": "☀️ Exterior & Chassis Component Labels",
+        "zh": "☀️ 车身外饰 & 底盘零部件标签",
+        "vi": "☀️ Nhãn ngoại thất & khung gầm",
+        "th": "☀️ ฉลากชิ้นส่วนภายนอกและแชสซี"
+      },
+      "intro": {
+        "en": "Weatherproof traceability labels for bumpers, brake discs, chassis suspension and stamped metal parts.",
+        "zh": "适配保险杠、刹车盘、底盘悬挂与冲压件的耐候追溯标签",
+        "vi": "Nhãn truy xuất chịu thời tiết cho cản, đĩa phanh, khung gầm giảm xóc và bộ phận dập kim loại",
+        "th": "ฉลากติดตามทนสภาพอากาศ สำหรับกันชน จานเบรก แชสซีกันสะเทือน และชิ้นส่วนปั๊มโลหะ"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": "Component Traceability Label",
+          "line": {
+            "en": "E-2813 · -40℃~150℃ · 2mil white glossy weatherproof PET · rain, deicing salt, brake dust, UV & brake-fluid resistant",
+            "zh": "E-2813 · -40℃~150℃ · 2mil 白色光面耐候 PET · 耐雨水、融雪盐、刹车粉尘、紫外线、制动液",
+            "vi": "E-2813 · -40℃~150℃ · PET chịu thời tiết bóng trắng 2mil · chống mưa, muối tan tuyết, bụi phanh, tia UV, dầu phanh",
+            "th": "E-2813 · -40℃~150°C · PET ทนสภาพอากาศสีขาวเงา 2 มิล · ทนฝน เกลือละลายหิมะ ฝุ่นเบรก รังสียูวี น้ำมันเบรก"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "tab": "Interior",
+      "name": {
+        "en": "🧸 Interior Trim Labels",
+        "zh": "🧸 车内内饰标签",
+        "vi": "🧸 Nhãn nội thất xe",
+        "th": "🧸 ฉลากตกแต่งภายในรถ"
+      },
+      "intro": {
+        "en": "Interior labels for airbag housings, sun visors and carpets — soft adhesive, no yellowing, fold-resistant.",
+        "zh": "适配安全气囊壳体、遮阳板、地毯的内饰标签，软胶不泛黄、耐弯折",
+        "vi": "Nhãn nội thất cho vỏ túi khí, tấm che nắng và thảm — keo mềm, không vàng, chống gấp",
+        "th": "ฉลากตกแต่งภายในสำหรับเปลือกถุงลม แผ่นบังแดด และพรม — กาวนุ่ม ไม่เหลือง ทนการพับ"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": "Airbag Warning Label",
+          "line": {
+            "en": "E-2112 · -20℃~100℃ · 2mil white glossy interior PET · interior cleaner, body oil, alcohol & VOC resistant · silicone adhesive",
+            "zh": "E-2112 · -20℃~100℃ · 2mil 白色光面内饰 PET · 耐内饰清洁剂、人体油脂、酒精、车内挥发物 · 专用硅胶胶",
+            "vi": "E-2112 · -20℃~100℃ · PET bóng trắng nội thất 2mil · chống dung dịch vệ sinh nội thất, dầu cơ thể, cồn, chất bay hơi · keo silicone",
+            "th": "E-2112 · -20℃~100°C · PET สีขาวเงาสำหรับตกแต่งภายใน 2 มิล · ทนสารล้างภายใน น้ำมันร่างกาย แอลกอฮอล์ สารระเหย · กาวซิลิโคน"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": "Sun Visor Sticker",
+          "line": {
+            "en": "E-2512 · -40℃~110℃ · 2mil white glossy PET · interior spray cleaner, grease & moisture resistant, no white creases after folding",
+            "zh": "E-2512 · -40℃~110℃ · 2mil 白色光面 PET · 耐内饰清洁喷雾、光照老化油脂、车内湿气，反复折叠无发白",
+            "vi": "E-2512 · -40℃~110℃ · PET bóng trắng 2mil · chống xịt vệ sinh nội thất, dầu lão hóa do nắng, hơi ẩm, không nếp trắng khi gấp",
+            "th": "E-2512 · -40℃~110°C · PET สีขาวเงา 2 มิล · ทนสเปรย์ล้างภายใน น้ำมันเสื่อมจากแสง ความชื้น ไม่มีรอยพับสีขาว"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": "Carpet Label",
+          "line": {
+            "en": "E-2012 · -20℃~100℃ · white matte PET · carpet cleaner, lubricant, moisture & repeated-folding resistant · high initial tack on fabric",
+            "zh": "E-2012 · -20℃~100℃ · 白色哑光 PET · 耐地毯清洁剂、润滑油、车内水汽、反复弯折 · 高初粘牢贴织物",
+            "vi": "E-2012 · -20℃~100℃ · PET mờ trắng · chống dung dịch rửa thảm, dầu bôi trơn, hơi ẩm, gấp nhiều lần · lực dính ban đầu cao trên vải",
+            "th": "E-2012 · -20℃~100°C · PET สีด้านขาว · ทนสารล้างพรม น้ำมันหล่อลื่น ความชื้น การพับซ้ำๆ · แรงยึดเริ่มต้นสูงบนผ้า"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "tab": "Flexible Parts",
+      "name": {
+        "en": "📎 Flexible Component Labels",
+        "zh": "📎 柔性零部件标签",
+        "vi": "📎 Nhãn linh kiện mềm dẻo",
+        "th": "📎 ฉลากชิ้นส่วนยืดหยุ่น"
+      },
+      "intro": {
+        "en": "Low-modulus flexible labels for rubber hoses and soft plastic parts that flex without cracking or edge lifting.",
+        "zh": "适配橡胶管路、软质塑料件的低模量柔性标签，随形变不开裂、边缘不脱胶",
+        "vi": "Nhãn mềm mô đun thấp cho ống cao su và bộ phận nhựa mềm, biến dạng không nứt, không bong cạnh",
+        "th": "ฉลากยืดหยุ่นโมดูลต่ำ สำหรับท่อยางและชิ้นส่วนพลาสติกอ่อน ยืดได้ไม่แตก ไม่หลุดขอบ"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": "Flexible Fitting Identification Label",
+          "line": {
+            "en": "E-2512BL · -40℃~100℃ · white matte PET · rubber-bleed oil, interior cleaner & repeated-bending resistant, for low-surface soft plastics",
+            "zh": "E-2512BL · -40℃~100℃ · 白色哑光 PET · 耐橡胶析出油脂、内饰清洁剂、反复弯折，适配低表面软性塑胶",
+            "vi": "E-2512BL · -40℃~100℃ · PET mờ trắng · chống dầu chảy từ cao su, dung dịch vệ sinh, gấp liên tục, phù hợp nhựa mềm năng lượng bề mặt thấp",
+            "th": "E-2512BL · -40℃~100°C · PET สีด้านขาว · ทนน้ำมันซึมจากยาง สารล้างภายใน การพับซ้ำๆ เหมาะพลาสติกอ่อนผิวต่ำ"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "tab": "Tire",
+      "name": {
+        "en": "🛞 Tire Industry Special Labels",
+        "zh": "🛞 轮胎全流程专用标签",
+        "vi": "🛞 Dòng nhãn chuyên dụng ngành lốp xe",
+        "th": "🛞 ฉลากเฉพาะอุตสาหกรรมยาง"
+      },
+      "intro": {
+        "en": "Full-process tire labels — from uncured green-tire barcodes through cured-tire sidewall marking.",
+        "zh": "覆盖预硫化生胎条码到硫化成品胎侧标识的轮胎全流程标签",
+        "vi": "Nhãn lốp xe toàn quy trình — từ mã vạch lốp thô trước lưu hóa đến nhãn thành phẩm hông lốp sau lưu hóa",
+        "th": "ฉลากยางครบทุกขั้นตอน — ตั้งแต่บาร์โค้ดยางดิบก่อนอบยางถึงฉลากแก้มยางสำเร็จรูปหลังอบยาง"
+      },
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-TIRE.jpg",
+      "products": [
+        {
+          "name": "Uncured Green Tire Barcode Label",
+          "line": {
+            "en": "COMPUYTPE TS-1100P · ambient molding, withstands 180℃ vulcanization (200℃ short-term high pressure) · thermally stabilized modified polyester · rubber-bleed oil, vulcanizing agent & steam resistant",
+            "zh": "COMPUYTPE TS-1100P · 常温成型，耐 180℃硫化短时高温高压（短时承受 200℃）· 热稳定改性聚酯 · 耐生胎橡胶析出油脂、硫化药剂、高温水汽",
+            "vi": "COMPUYTPE TS-1100P · nhiệt thường tạo hình, chịu 180℃ lưu hóa ngắn hạn (chịu 200℃ cao áp ngắn hạn) · polyester ổn định nhiệt cải biến · chống dầu cao su thô, thuốc lưu hóa, hơi nước nhiệt cao",
+            "th": "COMPUYTPE TS-1100P · อุณหภูมิปกติขึ้นรูป ทน 180°C อบยางชั่วคราว (ทน 200°C ชั่วคราว) · โพลีเอสเตอร์เสถียรอุณหภูมิปรับปรุง · ทนน้ำมันซึมจากยางดิบ สารอบยาง ไอน้ำอุณหภูมิสูง"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": "Finished Vulcanized Tire Sidewall Label",
+          "line": {
+            "en": "COMPUYTPE TS1130 · -40℃~80℃ · white glossy PET · rubber-bleed oil, ozone, rain, road grease & deicing-salt resistant",
+            "zh": "COMPUYTPE TS1130 · -40℃~80℃ · 白色光面 PET · 耐橡胶析出油脂、臭氧、雨水、路面油污、融雪盐",
+            "vi": "COMPUYTPE TS1130 · -40℃~80℃ · PET bóng trắng · chống dầu cao su, ôzôn, mưa, dầu đường, muối tan tuyết",
+            "th": "COMPUYTPE TS1130 · -40℃~80°C · PET สีขาวเงา · ทนน้ำมันยาง โอโซน ฝน น้ำมันบนถนน เกลือละลายหิมะ"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        }
+      ]
+    }
+  ]
+}
