@@ -70,6 +70,14 @@ CSS = """
 .wctab .tabic{font-size:23px;line-height:1;display:block}
 .wctab .tabic svg{width:25px;height:25px;display:block}
 .wctab .tablb{font-size:12px;font-weight:700;line-height:1.15}
+.wcsub{display:none;flex-wrap:wrap;gap:8px;justify-content:center;margin:16px auto 0;max-width:860px}
+.wcsubtab{flex:none;font-size:13px;font-weight:600;padding:7px 14px;border-radius:20px;border:1px solid #dbe3f1;background:#fff;color:#41506e;cursor:pointer;white-space:nowrap}
+.wcsubtab.on{background:#eef2ff;border-color:#5b6ee8;color:#143C96;font-weight:700}
+.wcsubtab:hover{border-color:#5b6ee8}
+.wcdt .mn{font-size:17px;font-weight:800;color:#143C96;margin:2px 0 6px}
+.wcdt .ml{font-size:15px;line-height:1.65;color:#41506e;margin:0 0 10px}
+.wcgo{font-size:13px;font-weight:800;color:#1A56DB;text-decoration:none}
+.wcgo.off{color:#8a97b3}
 #wcpanel{margin-top:24px;max-width:760px;margin-left:auto;margin-right:auto}
 .wccatimg{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block;margin:0 auto 16px;background:#e8eefb}
 .wc2col{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center;max-width:860px;margin:0 auto 20px}
@@ -109,14 +117,31 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
 JS_TMPL = """
 <script>
 (function(){
-var CATS=%(cats)s, GO=%(go)s, CS=%(consult)s;
+var CATS=%(cats)s, GO=%(go)s, CS=%(consult)s, SUBNAV=%(subnav)s;
 function card(p){
   var im='<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7" cy="7" r="1.1"/></svg></span>';
   var inner=im+'<div><p class="mn">'+p.n+'</p><p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+'</span>'):('<span class="mgo">'+CS+'</span>'))+'</div>';
   return p.landing?'<a class="wcmcard" href="'+p.href+'">'+inner+'</a>':'<div class="wcmcard off">'+inner+'</div>';
 }
+// two-level detail: render the selected sub-application under a category
+function renderSub(a,sel){
+  var c=CATS[a],sub=document.getElementById('wcsub'),panel=document.getElementById('wcpanel');
+  sub.innerHTML='';
+  c.prods.forEach(function(p,j){
+    var b=document.createElement('button');b.className='wcsubtab'+(j===sel?' on':'');b.textContent=p.n;
+    b.onclick=function(){renderSub(a,j);b.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});};
+    sub.appendChild(b);
+  });
+  var p=c.prods[sel];
+  var link=p.landing?('<a class="wcgo" href="'+p.href+'">'+GO+' →</a>'):('<span class="wcgo off">'+CS+'</span>');
+  var dt='<div class="wcdt"><p class="mn">'+p.n+'</p><p class="ml">'+p.l+'</p>'+link+'</div>';
+  var intro=c.intro?('<p class="wccatintro">'+c.intro+'</p>'):'';
+  if(c.img){
+    panel.innerHTML='<div class="wc2col"><img class="wccatimg" src="'+c.img+'" alt="" loading="lazy" onerror="this.remove()"><div class="wcright">'+intro+dt+'</div></div>';
+  }else{ panel.innerHTML=intro+dt; }
+}
 function render(a){
-  var tabs=document.getElementById('wctabs'),panel=document.getElementById('wcpanel');
+  var tabs=document.getElementById('wctabs'),panel=document.getElementById('wcpanel'),sub=document.getElementById('wcsub');
   tabs.innerHTML='';
   CATS.forEach(function(c,i){
     var b=document.createElement('button');b.className='wctab'+(i===a?' on':'')+(c.icon?' hasic':'');
@@ -124,12 +149,13 @@ function render(a){
     b.onclick=function(){render(i);b.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});};
     tabs.appendChild(b);
   });
+  if(SUBNAV){ sub.style.display=''; renderSub(a,0); return; }
+  if(sub){ sub.style.display='none'; }
   var c=CATS[a];
   var intro=c.intro?('<p class="wccatintro">'+c.intro+'</p>'):'';
   var img='<img class="wccatimg" src="'+c.img+'" alt="" loading="lazy" onerror="this.remove()">';
   var cards='<div class="wcmcards">'+c.prods.map(card).join('')+'</div>';
   if(c.img){
-    // left = image (half), right = product positioning; product cards below
     panel.innerHTML='<div class="wc2col">'+img+'<div class="wcright">'+intro+'</div></div>'+cards;
   }else{
     panel.innerHTML=intro+cards;
@@ -173,11 +199,12 @@ def build_lang(data, lang):
             '<button class="wcar" onclick="wcScroll(-1)">&lsaquo;</button>'
             '<div class="wctabs" id="wctabs"></div>'
             '<button class="wcar" onclick="wcScroll(1)">&rsaquo;</button>'
-            '</div><div id="wcpanel"></div></div></section>') % (
+            '</div><div class="wcsub" id="wcsub"></div><div id="wcpanel"></div></div></section>') % (
         esc(ui["eyebrow_ov"]), esc(ui["overview"]), overview, esc(L(data["classify_by"], lang)))
     body += JS_TMPL % {"cats": json.dumps(cats, ensure_ascii=False),
                        "go": json.dumps(ui["go"], ensure_ascii=False),
-                       "consult": json.dumps(ui["consult"], ensure_ascii=False)}
+                       "consult": json.dumps(ui["consult"], ensure_ascii=False),
+                       "subnav": "true" if data.get("subnav") else "false"}
 
     crumb = [(ui["home"], "/"), (title, path)]
     content = hp.page(lang, path, L(data["seo_title"], lang), L(data["seo_desc"], lang),
