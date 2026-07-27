@@ -68,6 +68,7 @@ CSS = """
 .wctab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#1A56DB}
 .wctab.hasic{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 14px;min-width:74px}
 .wctab .tabic{font-size:23px;line-height:1;display:block}
+.wctab .tabic svg{width:25px;height:25px;display:block}
 .wctab .tablb{font-size:12px;font-weight:700;line-height:1.15}
 #wcpanel{margin-top:24px;max-width:760px;margin-left:auto;margin-right:auto}
 .wccatimg{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block;margin:0 auto 16px;background:#e8eefb}
