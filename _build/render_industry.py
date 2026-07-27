@@ -149,7 +149,7 @@ function render(a){
     b.onclick=function(){render(i);b.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});};
     tabs.appendChild(b);
   });
-  if(SUBNAV){ sub.style.display=''; renderSub(a,0); return; }
+  if(SUBNAV){ sub.style.display='flex'; renderSub(a,0); return; }
   if(sub){ sub.style.display='none'; }
   var c=CATS[a];
   var intro=c.intro?('<p class="wccatintro">'+c.intro+'</p>'):'';
