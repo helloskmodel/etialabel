@@ -66,6 +66,9 @@ CSS = """
 .wctab{flex:none;max-width:200px;text-align:center;font-size:13.5px;font-weight:700;line-height:1.25;padding:10px 16px;cursor:pointer;white-space:normal;background:transparent;color:#143C96;border:none;border-radius:9px 9px 0 0;position:relative;margin-bottom:-1px}
 .wctab.on{background:#5b6ee8;color:#fff}
 .wctab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#1A56DB}
+.wctab.hasic{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 14px;min-width:74px}
+.wctab .tabic{font-size:23px;line-height:1;display:block}
+.wctab .tablb{font-size:12px;font-weight:700;line-height:1.15}
 #wcpanel{margin-top:24px;max-width:760px;margin-left:auto;margin-right:auto}
 .wccatimg{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block;margin:0 auto 16px;background:#e8eefb}
 .wc2col{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center;max-width:860px;margin:0 auto 20px}
@@ -115,7 +118,8 @@ function render(a){
   var tabs=document.getElementById('wctabs'),panel=document.getElementById('wcpanel');
   tabs.innerHTML='';
   CATS.forEach(function(c,i){
-    var b=document.createElement('button');b.className='wctab'+(i===a?' on':'');b.textContent=c.tab;
+    var b=document.createElement('button');b.className='wctab'+(i===a?' on':'')+(c.icon?' hasic':'');
+    if(c.icon){b.innerHTML='<span class="tabic">'+c.icon+'</span><span class="tablb">'+c.tab+'</span>';}else{b.textContent=c.tab;}
     b.onclick=function(){render(i);b.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});};
     tabs.appendChild(b);
   });
@@ -153,7 +157,7 @@ def build_lang(data, lang):
                           "img": p.get("img", ""), "landing": bool(p.get("landing") and pslug),
                           "href": href})
         cats.append({"tab": t.get("tab") or L(t["name"], lang), "intro": L(t["intro"], lang),
-                     "img": t.get("img", ""), "prods": prods})
+                     "img": t.get("img", ""), "icon": t.get("icon", ""), "prods": prods})
 
     banner = data.get("banner_img", "")
     bg = ('<img class="bg" src="%s" alt="" loading="eager" onerror="this.style.display=\'none\'">' % esc(banner)) if banner else ""
