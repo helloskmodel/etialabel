@@ -518,11 +518,12 @@ AXIS_ICONS = {
  "mat":  _navsvg('<rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 13h14M5 17h10M5 21h14"/>'),
 }
 PROD_AXES = [
- ("env","By Environment","按环境",[
-   ("Heat Resistant","耐高温","/environments/#heat-resistant"),
-   ("Cold Temperatures","低温","/environments/#cold-temperatures"),
-   ("Chemical","耐化学","/environments/#chemical"),
-   ("Abrasion","耐磨","/environments/#abrasion"),
+ ("mat","By Material","按材料",[
+   ("Polyimide (PI)","聚酰亚胺 PI","/products/polyimide-label-materials/"),
+   ("Polyester (PET)","聚酯 PET","/products/item/e-2712/"),
+   ("Nylon","尼龙","/products/item/e-3635/"),
+   ("Synthetic Paper","合成纸","/products/item/e-4532/"),
+   ("Metal Foil","金属箔","/products/item/hp-700t/"),
  ]),
  ("app","By Industry","按行业",[
    ("PCB","PCB","/industries/pcb-electronics-labeling-solutions/"),
@@ -531,12 +532,6 @@ PROD_AXES = [
    ("Outdoor & Energy","户外与能源","/industries/outdoor-energy-labeling-solutions/"),
    ("Medical & Pharmacy","医疗与制药","/industries/medical-pharmaceutical-labeling-solutions/"),
    ("Steel & Ceramics","钢铁与陶瓷","/industries/steel-metal-ceramic-labeling-solutions/"),
- ]),
- ("mat","By Material","按材料",[
-   ("Polyimide","聚酰亚胺","/products/polyimide-label-materials/",[
-     ("Apex Series","Apex 系列","/products/apex-series/"),
-   ]),
-   ("Polyester","聚酯","/products/e-2712/"),
  ]),
 ]
 
