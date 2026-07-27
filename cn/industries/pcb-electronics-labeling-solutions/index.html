@@ -471,6 +471,9 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .wctab{flex:none;max-width:200px;text-align:center;font-size:13.5px;font-weight:700;line-height:1.25;padding:10px 16px;cursor:pointer;white-space:normal;background:transparent;color:#143C96;border:none;border-radius:9px 9px 0 0;position:relative;margin-bottom:-1px}
 .wctab.on{background:#5b6ee8;color:#fff}
 .wctab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#1A56DB}
+.wctab.hasic{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 14px;min-width:74px}
+.wctab .tabic{font-size:23px;line-height:1;display:block}
+.wctab .tablb{font-size:12px;font-weight:700;line-height:1.15}
 #wcpanel{margin-top:24px;max-width:760px;margin-left:auto;margin-right:auto}
 .wccatimg{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block;margin:0 auto 16px;background:#e8eefb}
 .wc2col{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center;max-width:860px;margin:0 auto 20px}
@@ -510,7 +513,7 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
 <section class="wcsec wcov"><div class="wceye">行业概述</div><h2>行业概述</h2><p>PCB 是所有电子产业的核心基础载体，应用覆盖民用消费、工业控制、汽车电子、人工智能、数据算力、高端芯片封装等全领域 伴随产业全面向精密化、高端化迭代，生产工况愈发严苛，全链路精准追溯、稳定可靠的专业标识方案，已成为高端智能制造的核心刚需</p></section><section class="wcsec"><div class="wceye">Products</div><h2>选择系列</h2><div class="wcfc"><div class="wcfcrow"><button class="wcar" onclick="wcScroll(-1)">&lsaquo;</button><div class="wctabs" id="wctabs"></div><button class="wcar" onclick="wcScroll(1)">&rsaquo;</button></div><div id="wcpanel"></div></div></section>
 <script>
 (function(){
-var CATS=[{"tab": "APEX", "intro": "高端精密旗舰，适配现代高精密度 PCB 制程 ", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX", "prods": [{"n": "Polyonics APEX Series", "l": "耐多轮焊洗 · 打印高清精度优异", "img": "", "landing": true, "href": "/cn/products/item/apex/"}]}, {"tab": "XF58", "intro": "工业主流主力款，适配全场景 PCB 量产制程 ", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB581", "prods": [{"n": "Polyonics XF58 Series", "l": "焊洗性能均衡 · 多色饰面可选易分类", "img": "", "landing": true, "href": "/cn/products/item/xf58/"}]}, {"tab": "E Series", "intro": "国产自研高性价比 PI 标签系列，深耕 PCB 中低端大批量平价量产场景，依托多年高端工艺技术积淀，适配通用量产工况", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB8732", "prods": [{"n": "E-Label PI Series", "l": "全品类规格齐全，覆盖通用/超粘/可移除/防静电四大场景", "img": "", "landing": true, "href": "/cn/products/item/e-series/"}]}, {"tab": "E-2712", "intro": "2mil 双层双抗静电 PET 标签，适配 PCB、半导体静电敏感产线", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712", "prods": [{"n": "E-2712", "l": "双层防静电 · 耐温耐溶剂 · 打印清晰附着力佳", "img": "", "landing": true, "href": "/cn/products/item/e-2712/"}]}], GO="查看产品 →", CS="咨询选型 · 无单独页";
+var CATS=[{"tab": "APEX", "intro": "高端精密旗舰，适配现代高精密度 PCB 制程 ", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX", "icon": "", "prods": [{"n": "Polyonics APEX Series", "l": "耐多轮焊洗 · 打印高清精度优异", "img": "", "landing": true, "href": "/cn/products/item/apex/"}]}, {"tab": "XF58", "intro": "工业主流主力款，适配全场景 PCB 量产制程 ", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB581", "icon": "", "prods": [{"n": "Polyonics XF58 Series", "l": "焊洗性能均衡 · 多色饰面可选易分类", "img": "", "landing": true, "href": "/cn/products/item/xf58/"}]}, {"tab": "E Series", "intro": "国产自研高性价比 PI 标签系列，深耕 PCB 中低端大批量平价量产场景，依托多年高端工艺技术积淀，适配通用量产工况", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB8732", "icon": "", "prods": [{"n": "E-Label PI Series", "l": "全品类规格齐全，覆盖通用/超粘/可移除/防静电四大场景", "img": "", "landing": true, "href": "/cn/products/item/e-series/"}]}, {"tab": "E-2712", "intro": "2mil 双层双抗静电 PET 标签，适配 PCB、半导体静电敏感产线", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712", "icon": "", "prods": [{"n": "E-2712", "l": "双层防静电 · 耐温耐溶剂 · 打印清晰附着力佳", "img": "", "landing": true, "href": "/cn/products/item/e-2712/"}]}], GO="查看产品 →", CS="咨询选型 · 无单独页";
 function card(p){
   var im='<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7" cy="7" r="1.1"/></svg></span>';
   var inner=im+'<div><p class="mn">'+p.n+'</p><p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+'</span>'):('<span class="mgo">'+CS+'</span>'))+'</div>';
@@ -520,7 +523,8 @@ function render(a){
   var tabs=document.getElementById('wctabs'),panel=document.getElementById('wcpanel');
   tabs.innerHTML='';
   CATS.forEach(function(c,i){
-    var b=document.createElement('button');b.className='wctab'+(i===a?' on':'');b.textContent=c.tab;
+    var b=document.createElement('button');b.className='wctab'+(i===a?' on':'')+(c.icon?' hasic':'');
+    if(c.icon){b.innerHTML='<span class="tabic">'+c.icon+'</span><span class="tablb">'+c.tab+'</span>';}else{b.textContent=c.tab;}
     b.onclick=function(){render(i);b.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});};
     tabs.appendChild(b);
   });

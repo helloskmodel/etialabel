@@ -471,6 +471,9 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .wctab{flex:none;max-width:200px;text-align:center;font-size:13.5px;font-weight:700;line-height:1.25;padding:10px 16px;cursor:pointer;white-space:normal;background:transparent;color:#143C96;border:none;border-radius:9px 9px 0 0;position:relative;margin-bottom:-1px}
 .wctab.on{background:#5b6ee8;color:#fff}
 .wctab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#1A56DB}
+.wctab.hasic{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 14px;min-width:74px}
+.wctab .tabic{font-size:23px;line-height:1;display:block}
+.wctab .tablb{font-size:12px;font-weight:700;line-height:1.15}
 #wcpanel{margin-top:24px;max-width:760px;margin-left:auto;margin-right:auto}
 .wccatimg{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block;margin:0 auto 16px;background:#e8eefb}
 .wc2col{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center;max-width:860px;margin:0 auto 20px}
@@ -510,7 +513,7 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
 <section class="wcsec wcov"><div class="wceye">行业概述</div><h2>行业概述</h2><p>随着光伏、风电、储能、电力输配等新能源产业高速发展，设备长期暴露于紫外老化、盐雾腐蚀、高低温循环等极端户外环境中，标识的耐久性直接决定资产的可追溯性与安全合规性</p><p>ETIA 户外能源标识体系，专为能源行业严酷工况量身打造，覆盖光伏新能源、风电、储能系统、电力输配四大核心领域 从 10 年以上耐候级氟素标签，到 UL94 V-0 阻燃绝缘标识，从 316 不锈钢海上风电永久铭牌，到柔性乙烯基电缆标识，形成完整的全场景产品矩阵</p><p>全系配备三级覆膜防护体系（PET/Vinyl/PVF），适配背板、镀锌钢、塑料壳体、电缆曲面等多种基材，确保标识在设备全生命周期内清晰可读、粘贴牢固，守护能源资产从投产到退役的全程追溯与安全合规</p></section><section class="wcsec"><div class="wceye">Products</div><h2>按应用领域</h2><div class="wcfc"><div class="wcfcrow"><button class="wcar" onclick="wcScroll(-1)">&lsaquo;</button><div class="wctabs" id="wctabs"></div><button class="wcar" onclick="wcScroll(1)">&rsaquo;</button></div><div id="wcpanel"></div></div></section>
 <script>
 (function(){
-var CATS=[{"tab": "光伏新能源", "intro": "组件背板、汇流箱、支架接线盒与 EVA/POE 胶膜制程的全场景标识 ", "img": "", "prods": [{"n": "E-2813 PVF", "l": "氟素面层 · 10+ 年户外耐候 · 抗 UV · 背板专用高粘胶", "img": "", "landing": false, "href": "#"}, {"n": "E-2813", "l": "标准耐候 PET · 5-8 年 · 镀锌专用胶 · 120℃", "img": "", "landing": false, "href": "#"}, {"n": "XF-611", "l": "UL94 V-0 阻燃 · 绝缘耐压 · 箱内高温稳定", "img": "", "landing": false, "href": "#"}, {"n": "E-4633", "l": "低粘可移除 · 零残胶 · 洁净室", "img": "", "landing": false, "href": "#"}]}, {"tab": "风电", "intro": "陆上风电叶片及零部件在风沙、UV 环境下的长期标识 ", "img": "", "prods": [{"n": "E-2813", "l": "耐候 PET · 耐风沙磨损 · UV 稳定 · 大曲面强粘", "img": "", "landing": false, "href": "#"}]}, {"tab": "电力输配（变电站）", "intro": "变压器铭牌、高压开关柜参数与杆塔/电缆走向标识 ", "img": "", "prods": [{"n": "HP-360", "l": "铝 / 不锈钢 · 激光 / 蚀刻永久 · IP65", "img": "", "landing": false, "href": "#"}, {"n": "XF-611", "l": "UL94 V-0 · 参数级清晰 · 柜内温变稳定", "img": "", "landing": false, "href": "#"}, {"n": "E-6533", "l": "彩色乙烯基 · 曲面适配 · 抗 UV 耐磨 · 颜色编码", "img": "", "landing": false, "href": "#"}]}, {"tab": "储能系统", "intro": "电池簇、PCS 变流器铭牌与高压安全/消防警示标识 ", "img": "", "prods": [{"n": "XF-611", "l": "UL94 V-0 · 绝缘耐压 · 10 年耐候 · 高对比印刷", "img": "", "landing": false, "href": "#"}, {"n": "E6534 2mil Vinyl", "l": "2.0mil 抗 UV · 永久压敏胶 · 7 年抗 UV", "img": "", "landing": false, "href": "#"}]}], GO="查看产品 →", CS="咨询选型 · 无单独页";
+var CATS=[{"tab": "光伏新能源", "intro": "组件背板、汇流箱、支架接线盒与 EVA/POE 胶膜制程的全场景标识 ", "img": "", "icon": "", "prods": [{"n": "E-2813 PVF", "l": "氟素面层 · 10+ 年户外耐候 · 抗 UV · 背板专用高粘胶", "img": "", "landing": false, "href": "#"}, {"n": "E-2813", "l": "标准耐候 PET · 5-8 年 · 镀锌专用胶 · 120℃", "img": "", "landing": false, "href": "#"}, {"n": "XF-611", "l": "UL94 V-0 阻燃 · 绝缘耐压 · 箱内高温稳定", "img": "", "landing": false, "href": "#"}, {"n": "E-4633", "l": "低粘可移除 · 零残胶 · 洁净室", "img": "", "landing": false, "href": "#"}]}, {"tab": "风电", "intro": "陆上风电叶片及零部件在风沙、UV 环境下的长期标识 ", "img": "", "icon": "", "prods": [{"n": "E-2813", "l": "耐候 PET · 耐风沙磨损 · UV 稳定 · 大曲面强粘", "img": "", "landing": false, "href": "#"}]}, {"tab": "电力输配（变电站）", "intro": "变压器铭牌、高压开关柜参数与杆塔/电缆走向标识 ", "img": "", "icon": "", "prods": [{"n": "HP-360", "l": "铝 / 不锈钢 · 激光 / 蚀刻永久 · IP65", "img": "", "landing": false, "href": "#"}, {"n": "XF-611", "l": "UL94 V-0 · 参数级清晰 · 柜内温变稳定", "img": "", "landing": false, "href": "#"}, {"n": "E-6533", "l": "彩色乙烯基 · 曲面适配 · 抗 UV 耐磨 · 颜色编码", "img": "", "landing": false, "href": "#"}]}, {"tab": "储能系统", "intro": "电池簇、PCS 变流器铭牌与高压安全/消防警示标识 ", "img": "", "icon": "", "prods": [{"n": "XF-611", "l": "UL94 V-0 · 绝缘耐压 · 10 年耐候 · 高对比印刷", "img": "", "landing": false, "href": "#"}, {"n": "E6534 2mil Vinyl", "l": "2.0mil 抗 UV · 永久压敏胶 · 7 年抗 UV", "img": "", "landing": false, "href": "#"}]}], GO="查看产品 →", CS="咨询选型 · 无单独页";
 function card(p){
   var im='<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7" cy="7" r="1.1"/></svg></span>';
   var inner=im+'<div><p class="mn">'+p.n+'</p><p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+'</span>'):('<span class="mgo">'+CS+'</span>'))+'</div>';
@@ -520,7 +523,8 @@ function render(a){
   var tabs=document.getElementById('wctabs'),panel=document.getElementById('wcpanel');
   tabs.innerHTML='';
   CATS.forEach(function(c,i){
-    var b=document.createElement('button');b.className='wctab'+(i===a?' on':'');b.textContent=c.tab;
+    var b=document.createElement('button');b.className='wctab'+(i===a?' on':'')+(c.icon?' hasic':'');
+    if(c.icon){b.innerHTML='<span class="tabic">'+c.icon+'</span><span class="tablb">'+c.tab+'</span>';}else{b.textContent=c.tab;}
     b.onclick=function(){render(i);b.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});};
     tabs.appendChild(b);
   });

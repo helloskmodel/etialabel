@@ -113,7 +113,8 @@
           "landing": false,
           "slug": ""
         }
-      ]
+      ],
+      "icon": "🛢️"
     },
     {
       "tab": "VIN & Body",
@@ -155,7 +156,8 @@
           "landing": false,
           "slug": ""
         }
-      ]
+      ],
+      "icon": "🚪"
     },
     {
       "tab": "Battery & Electrical",
@@ -197,7 +199,8 @@
           "landing": false,
           "slug": ""
         }
-      ]
+      ],
+      "icon": "🔋"
     },
     {
       "tab": "Fuel & Charging",
@@ -239,7 +242,8 @@
           "landing": false,
           "slug": ""
         }
-      ]
+      ],
+      "icon": "⛽"
     },
     {
       "tab": "Exterior & Chassis",
@@ -269,7 +273,8 @@
           "landing": false,
           "slug": ""
         }
-      ]
+      ],
+      "icon": "☀️"
     },
     {
       "tab": "Interior",
@@ -323,7 +328,8 @@
           "landing": false,
           "slug": ""
         }
-      ]
+      ],
+      "icon": "🧸"
     },
     {
       "tab": "Flexible Parts",
@@ -353,7 +359,8 @@
           "landing": false,
           "slug": ""
         }
-      ]
+      ],
+      "icon": "📎"
     },
     {
       "tab": "Tire",
@@ -395,7 +402,8 @@
           "landing": false,
           "slug": ""
         }
-      ]
+      ],
+      "icon": "🛞"
     }
   ]
 }
