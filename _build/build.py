@@ -16,7 +16,6 @@ import gen_apex as apex
 import gen_e2712 as e2712
 import gen_polyimide as polyimide
 import gen_environments as environments
-import gen_casestudies as casestudies
 import gen_appnote_full as appnote_full
 import gen_appnotes as appnotes
 
@@ -32,7 +31,6 @@ apex.main()      # Apex Series — next-gen PCB polyimide (owns /products/apex-s
 e2712.main()     # E-2712 — dual anti-static polyester, the E-Label ESD pick (owns /products/e-2712/)
 polyimide.main() # Polyimide Label Materials — technical page + full product line (owns /products/polyimide-label-materials/)
 environments.main() # Labels by Environment — heat / cold / chemical / abrasion hub (owns /environments/)
-casestudies.main()  # Case Studies — hub + one big landing page per case (owns /case-studies/)
 appnote_full.main() # Full engineering Application Notes per Standard V1.0 (hero + 7 sections)
 import gen_news
 gen_news.main()  # News / Insights hub + article pages
