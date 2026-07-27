@@ -2,7 +2,12 @@
   "slug": "ceramic-sanitaryware-tracing",
   "source": "_docs/sources/ceramic sanitaryware (HP-CBR)",
   "order": 4,
-  "langs": ["en", "zh", "vi", "th"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "",
   "image": "",
   "title": {
@@ -30,27 +35,35 @@
     "th": "ฉลากทั่วไปติดได้เฉพาะหลังจากสุขภัณฑ์เซรามิกเสร็จสมบูรณ์ — แก้ปัญหาการระบุในห่วงโซ่อุปทานได้ แต่ไม่สามารถจัดการขั้นตอนการผลิตก่อนการเผา ทำให้เกิดสองปัญหา หนึ่ง การตรวจสอบย้อนกลับคุณภาพทำได้ยาก: เมื่อไม่มีเครื่องหมายในขั้นตอนดินดิบหรือก่อนการเผา จึงไม่สามารถตรวจสอบจำนวนและสถานะคุณภาพของขั้นตอนนั้น สอง ข้อมูลไม่ครบถ้วน: เมื่อไม่มีข้อมูลตั้งแต่ดินดิบจนถึงขั้นการเผา จึงไม่สามารถสร้างชุดข้อมูลที่สมบูรณ์จากวัตถุดิบถึงสินค้าสำเร็จรูป ซึ่งบั่นทอนการวางแผนการผลิตที่มีประสิทธิภาพและลีนมากขึ้น"
   },
   "solution_intro": {
-    "zh": "破解上述瓶颈，关键在于为每一件产品建立贯穿全生命周期的「数字孪生」，让卫浴产品从湿坯半成品开始，直至高温烧制成品，全程可追溯。ETIA 推荐耐高温陶瓷转印 HP-CBR 系列，可在烧制过程中与陶瓷基材表面融为一体",
-    "en": "The key to breaking these bottlenecks is to give every product a lifecycle-spanning \"digital twin\", so a sanitary-ware item is traceable all the way from the wet-blank semi-finished stage to the high-temperature-fired finished product. ETIA recommends the high-temperature ceramic-transfer HP-CBR series, which fuses with the ceramic substrate surface during firing.",
-    "vi": "Chìa khóa để phá vỡ những nút thắt này là tạo cho mỗi sản phẩm một \"bản sao số\" xuyên suốt vòng đời, để một sản phẩm vệ sinh có thể truy xuất từ giai đoạn phôi ướt bán thành phẩm đến khi nung ở nhiệt độ cao thành thành phẩm. ETIA đề xuất dòng chuyển in gốm chịu nhiệt cao HP-CBR, hòa làm một với bề mặt nền gốm trong quá trình nung.",
-    "th": "กุญแจสำคัญในการทลายคอขวดเหล่านี้คือการให้แต่ละผลิตภัณฑ์มี \"ดิจิทัลทวิน\" ตลอดวงจรชีวิต เพื่อให้สุขภัณฑ์สามารถตรวจสอบย้อนกลับได้ตั้งแต่ขั้นตอนดินดิบกึ่งสำเร็จรูปจนถึงสินค้าที่เผาที่อุณหภูมิสูง ETIA แนะนำซีรีส์ถ่ายโอนเซรามิกทนความร้อนสูง HP-CBR ซึ่งหลอมรวมกับพื้นผิวเนื้อเซรามิกระหว่างการเผา"
+    "zh": "破解上述瓶颈，关键在于为每一件产品建立贯穿全生命周期的「数字孪生」，让卫浴产品从湿坯半成品开始，直至高温烧制成品，全程可追溯。ETIA 推荐耐高温陶瓷转印标签 HP-CBR11，可在烧制过程中与陶瓷基材表面融为一体",
+    "en": "The key to breaking these bottlenecks is to give every product a lifecycle-spanning \"digital twin\", so a sanitary-ware item is traceable all the way from the wet-blank semi-finished stage to the high-temperature-fired finished product. ETIA recommends the high-temperature ceramic-transfer label HP-CBR11, which fuses with the ceramic substrate surface during firing.",
+    "vi": "Chìa khóa để phá vỡ những nút thắt này là tạo cho mỗi sản phẩm một \"bản sao số\" xuyên suốt vòng đời, để một sản phẩm vệ sinh có thể truy xuất từ giai đoạn phôi ướt bán thành phẩm đến khi nung ở nhiệt độ cao thành thành phẩm. ETIA đề xuất nhãn chuyển in gốm chịu nhiệt cao HP-CBR11, hòa làm một với bề mặt nền gốm trong quá trình nung.",
+    "th": "กุญแจสำคัญในการทลายคอขวดเหล่านี้คือการให้แต่ละผลิตภัณฑ์มี \"ดิจิทัลทวิน\" ตลอดวงจรชีวิต เพื่อให้สุขภัณฑ์สามารถตรวจสอบย้อนกลับได้ตั้งแต่ขั้นตอนดินดิบกึ่งสำเร็จรูปจนถึงสินค้าที่เผาที่อุณหภูมิสูง ETIA แนะนำฉลากถ่ายโอนเซรามิกทนความร้อนสูง HP-CBR11 ซึ่งหลอมรวมกับพื้นผิวเนื้อเซรามิกระหว่างการเผา"
   },
   "advantages": {
     "en": [
-      {"label": "HP-CBR CX2", "text": "Highly flexible, conforming perfectly to flat or slightly curved ceramic surfaces; fuses with the substrate surface during firing; self-adhesive for easy application."},
-      {"label": "HP-CBR CX11", "text": "Highly flexible, conforming to ceramic surfaces; fuses with the substrate surface during firing; scratch-resistant and acid/alkali-resistant."}
+      {
+        "label": "HP-CBR11",
+        "text": "Highly flexible, conforming to flat or slightly curved ceramic surfaces; fuses with the substrate surface during firing; water-soluble adhesive suited to sanitary-ware production; scratch-resistant and acid/alkali-resistant; heat resistance up to 1200°C."
+      }
     ],
     "zh": [
-      {"label": "HP-CBR CX2", "text": "标签具有高柔韧性，可完美贴合平整或略有弧度的陶瓷表面；烧制过程中标签与基材表面融为一体；自带背胶，使用方便"},
-      {"label": "HP-CBR CX11", "text": "标签具有高柔韧性，可贴合陶瓷表面；烧制过程中标签与基材表面融为一体；耐刮擦，耐酸碱"}
+      {
+        "label": "HP-CBR11",
+        "text": "高柔韧性，可贴合平整或略有弧度的陶瓷表面；烧制过程中与基材表面融为一体；水溶性背胶，适配卫浴生产；耐刮擦、耐酸碱；耐高温达 1200°C"
+      }
     ],
     "vi": [
-      {"label": "HP-CBR CX2", "text": "Độ dẻo cao, ôm sát hoàn hảo bề mặt gốm phẳng hoặc hơi cong; hòa làm một với bề mặt nền khi nung; có sẵn keo dán, dễ sử dụng."},
-      {"label": "HP-CBR CX11", "text": "Độ dẻo cao, ôm sát bề mặt gốm; hòa làm một với bề mặt nền khi nung; chống trầy xước, chống axit và kiềm."}
+      {
+        "label": "HP-CBR11",
+        "text": "Độ dẻo cao, ôm sát bề mặt gốm phẳng hoặc hơi cong; hòa làm một với bề mặt nền khi nung; keo tan trong nước phù hợp sản xuất thiết bị vệ sinh; chống trầy xước, chống axit và kiềm; chịu nhiệt đến 1200°C."
+      }
     ],
     "th": [
-      {"label": "HP-CBR CX2", "text": "ยืดหยุ่นสูง แนบสนิทกับพื้นผิวเซรามิกที่เรียบหรือโค้งเล็กน้อยได้อย่างสมบูรณ์ หลอมรวมกับพื้นผิวเนื้อขณะเผา มีกาวในตัว ใช้งานสะดวก"},
-      {"label": "HP-CBR CX11", "text": "ยืดหยุ่นสูง แนบกับพื้นผิวเซรามิก หลอมรวมกับพื้นผิวเนื้อขณะเผา ทนการขีดข่วน ทนกรดและด่าง"}
+      {
+        "label": "HP-CBR11",
+        "text": "ยืดหยุ่นสูง แนบกับพื้นผิวเซรามิกที่เรียบหรือโค้งเล็กน้อย หลอมรวมกับพื้นผิวเนื้อขณะเผา กาวละลายน้ำเหมาะกับการผลิตสุขภัณฑ์ ทนการขีดข่วน ทนกรดและด่าง ทนความร้อนถึง 1200°C"
+      }
     ]
   },
   "value": {
