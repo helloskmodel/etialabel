@@ -1,56 +1,196 @@
 {
   "slug": "wire-cable-labeling-solutions",
-  "source": "_docs/sources/wire-cable_ZH.md",
+  "source": "_docs/sources/wire & cable",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-BANNER.jpg",
-  "seo_title": {"en": "Wire & Cable Labeling Solutions | ETIA", "zh": "线缆标签解决方案 | ETIA"},
-  "seo_desc": {"en": "Flame-retardant, UL-listed and general-purpose wire & cable labels — matched to your duty level, flame rating and certification needs.", "zh": "无卤阻燃、UL 认证与通用线缆标签，按工况等级、阻燃性能与认证资质匹配选型。"},
+  "seo_title": {
+    "en": "Wire and Cable Labeling Solution | ETIA",
+    "zh": "线缆与线束标识解决方案 | ETIA",
+    "vi": "Giải pháp nhãn đánh dấu dây cáp | ETIA",
+    "th": "โซลูชันฉลากสายไฟและสายเคเบิล | ETIA"
+  },
+  "seo_desc": {
+    "en": "Flame-retardant and general-purpose wire & cable labels for automotive, electronics and industrial communication — high-adhesion cable adhesive and premium thermal-transfer facestock across temperature and flame-retardant grades.",
+    "zh": "面向汽车、电子设备与工业通信的阻燃及通用线缆标识 —— 高附着力专用背胶、适配热转印高清打印的优质面材，覆盖不同耐温与阻燃等级",
+    "vi": "Nhãn dây cáp chống cháy và thông dụng cho ô tô, điện tử và truyền thông công nghiệp — keo bám dính cao và vật liệu mặt in chuyển nhiệt cao cấp, phủ nhiều cấp độ chịu nhiệt và chống cháy.",
+    "th": "ฉลากสายไฟและสายเคเบิลชนิดหน่วงไฟและใช้งานทั่วไปสำหรับยานยนต์ อิเล็กทรอนิกส์ และการสื่อสารอุตสาหกรรม — กาวยึดเกาะสูงและวัสดุพิมพ์ถ่ายเทความร้อนคุณภาพสูง ครอบคลุมทุกระดับการทนความร้อนและการหน่วงไฟ"
+  },
   "hero": {
-    "eyebrow": {"en": "By Industry · Wire & Cable", "zh": "按行业 · 通讯与线缆"},
-    "title": {"en": "Wire & Cable Labeling Solutions", "zh": "通讯与线缆行业标识"},
-    "slogan": {"en": "Reliable identification that keeps systems running safely", "zh": "可靠标识，保障系统安全运行"}
+    "eyebrow": {
+      "en": "By Industry · Wire & Cable",
+      "zh": "按行业 · 线缆",
+      "vi": "Theo ngành · Dây & Cáp",
+      "th": "ตามอุตสาหกรรม · สายไฟและสายเคเบิล"
+    },
+    "title": {
+      "en": "Wire and Cable Labeling Solution",
+      "zh": "线缆与线束标识解决方案",
+      "vi": "Giải pháp nhãn đánh dấu dây cáp",
+      "th": "โซลูชันฉลากสายไฟและสายเคเบิล"
+    },
+    "slogan": {
+      "en": "Reliable Labels, Secure Operation & Maintenance",
+      "zh": "可靠标识，保障运维安全",
+      "vi": "Nhãn đáng tin cậy, đảm bảo an toàn vận hành bảo trì",
+      "th": "ฉลากที่เชื่อถือได้ การทำงานและการบำรุงรักษาที่ปลอดภัย"
+    }
   },
   "overview": {
     "zh": [
-      "在通讯传输、工业自控、新能源及车载电气系统中，线缆线束是设备运转的核心载体，专业标识是实现线路识别、运维检修、全周期追溯的关键基础。当下设备集成度、布线密度持续提升，线缆长期面临高频弯折、温湿度交变、复杂介质侵蚀等严苛工况，传统普通标签性能短板凸显，极易出现起翘脱落、字迹脱墨模糊等问题，易造成线路混淆、运维误判，直接威胁电气与通讯系统的稳定安全运行",
-      "伴随行业安全标准持续升级，阻燃防护、无卤环保、抗老化、高贴合稳定性已成为高端线缆标识的核心选型刚需。常规商用标签缺乏阻燃能力、耐候性差，无法满足储能、车载、精密工控等高端场景的合规验收标准。工况适配的专用线缆标识方案，可长效稳固贴合、清晰留存标识、阻断火情隐患，有效规避运维与安全风险，是保障通讯链路通畅、电气系统稳定、工程合规交付的重要配套支撑"
+      "在汽车、电子设备和工业通信领域，线缆是系统运转的核心连接件。然而，标识这些线缆的标签却面临诸多技术难题：高温高湿环境粘接失效、小线径线缆缠绕后边缘起翘开口、普通面材打印易模糊褪色，叠加日趋严苛的阻燃安规标准。标签胶粘剂附着力不足会引发翘边脱落，劣质面材无法承载清晰稳定打印，一旦标签失效，可能导致线路信息丢失，增加故障排查难度，埋下设备安全隐患。针对各类复杂工况与行业痛点，我司开发多款不同性能的线缆标识产品，全部采用高附着力专用线缆背胶、适配热转印高清打印的优质面材，适配不同耐温及阻燃场景，兼顾安全合规与量产性价比"
     ],
     "en": [
-      "In telecom, industrial automation, new-energy and automotive electrical systems, cables and harnesses are the backbone of every machine, and reliable identification is the basis for circuit tracing, maintenance and full-lifecycle traceability. As integration and wiring density rise, cables face constant flexing, thermal-humidity cycling and aggressive media — and ordinary labels lift, peel and smear, causing misidentification that threatens safe, stable operation.",
-      "As safety standards tighten, flame retardance, halogen-free chemistry, aging resistance and secure adhesion have become baseline requirements. Ordinary labels lack flame and weather resistance and cannot meet energy-storage, automotive or precision-control compliance. A purpose-built cable label stays bonded, stays legible and helps contain fire risk — cutting maintenance and safety risk and supporting compliant delivery."
+      "In automotive, electronic equipment and industrial communication industries, wires and cables are core connecting components of the whole system. Nevertheless, cable marking labels face various technical challenges: adhesive failure under high temperature & high humidity, edge curling & peeling after wrapping on thin-diameter cables, blurry and faded prints on ordinary facestock, plus increasingly strict flame retardant safety standards. Insufficient adhesion of glue will cause label lifting and falling off, while low-quality facestock cannot support clear, stable printing. Once labels fail, circuit data may be lost, raising troubleshooting difficulty and bringing hidden safety hazards to equipment. To solve diverse working conditions and industry pain points, we develop a full range of cable marking products with dedicated high-adhesion cable glue and premium facestock for sharp thermal transfer printing. Our items cover various temperature resistance and flame retardant grades, balancing safety compliance and mass production cost performance."
+    ],
+    "vi": [
+      "Trong ngành ô tô, thiết bị điện tử và truyền thông công nghiệp, dây cáp là bộ phận kết nối cốt lõi của hệ thống. Tuy nhiên, nhãn đánh dấu dây cáp đối mặt nhiều khó khăn kỹ thuật: keo bong tróc ở môi trường nhiệt độ cao và độ ẩm cao, mép nhãn cuốn cong sau khi quấn trên dây đường kính nhỏ, chữ in mờ và phai trên vật liệu mặt thông thường, cùng các tiêu chuẩn chống cháy ngày càng chặt chẽ. Keo có độ bám dính kém sẽ làm nhãn nhấc mép và rơi ra, vật liệu mặt kém chất lượng không thể in chữ rõ nét, ổn định. Nếu nhãn hỏng, thông tin đường dây có thể bị mất, tăng khó khăn khắc phục lỗi và tiềm ẩn nguy cơ an toàn thiết bị. Để giải quyết các điều kiện làm việc phức tạp và các khó khăn của ngành, chúng tôi phát triển đầy đủ các dòng sản phẩm nhãn đánh dấu dây cáp với keo chuyên dụng độ bám dính cao và vật liệu mặt cao cấp cho in chuyển nhiệt sắc nét. Các sản phẩm bao phủ nhiều cấp độ chịu nhiệt và chống cháy, cân bằng giữa tuân thủ an toàn và hiệu quả chi phí sản xuất hàng loạt."
+    ],
+    "th": [
+      "ในอุตสาหกรรมยานยนต์ อุปกรณ์อิเล็กทรอนิกส์ และการสื่อสารอุตสาหกรรม สายไฟและสายเคเบิลเป็นชิ้นส่วนเชื่อมต่อหลักของทั้งระบบ อย่างไรก็ตาม ฉลากที่ใช้ระบุสายเคเบิลต้องเผชิญกับความท้าทายทางเทคนิคหลายด้าน ได้แก่ กาวเสื่อมสภาพภายใต้อุณหภูมิสูงและความชื้นสูง ขอบฉลากม้วนงอและหลุดลอกหลังพันรอบสายเส้นเล็ก งานพิมพ์เบลอและซีดจางบนวัสดุพิมพ์ทั่วไป รวมถึงมาตรฐานความปลอดภัยด้านการหน่วงไฟที่เข้มงวดขึ้นเรื่อย ๆ กาวที่ยึดเกาะไม่เพียงพอทำให้ฉลากเผยอและหลุดออก ส่วนวัสดุพิมพ์คุณภาพต่ำไม่สามารถรองรับงานพิมพ์ที่ชัดเจนและเสถียร เมื่อฉลากล้มเหลว ข้อมูลวงจรอาจสูญหาย เพิ่มความยากในการตรวจหาข้อผิดพลาดและก่อให้เกิดความเสี่ยงด้านความปลอดภัยของอุปกรณ์ เพื่อแก้ปัญหาสภาวะการทำงานที่หลากหลายและจุดเจ็บปวดของอุตสาหกรรม เราพัฒนาผลิตภัณฑ์ฉลากสายเคเบิลครบไลน์ด้วยกาวเฉพาะที่ยึดเกาะสูงและวัสดุพิมพ์คุณภาพสูงสำหรับการพิมพ์ถ่ายเทความร้อนที่คมชัด ผลิตภัณฑ์ของเราครอบคลุมระดับการทนความร้อนและการหน่วงไฟที่หลากหลาย สร้างสมดุลระหว่างการปฏิบัติตามมาตรฐานความปลอดภัยและความคุ้มค่าในการผลิตจำนวนมาก"
     ]
   },
-  "classify_by": {"en": "Choose by duty level", "zh": "按工况等级选型"},
+  "classify_by": {
+    "en": "Choose a category",
+    "zh": "选择应用分类",
+    "vi": "Chọn danh mục",
+    "th": "เลือกหมวดหมู่"
+  },
   "tiers": [
     {
-      "name": {"en": "Halogen-Free FR · UL Listed", "zh": "无卤阻燃 · 带UL认证"},
-      "intro": {
-        "en": "Two flagship models: Polyonics XF-603 and 1306. All halogen-free flame-retardant with official UL certification, offering high-temperature, aging and chemical resistance — for aerospace, new-energy and high-end industrial-control applications with strict compliance requirements.",
-        "zh": "包含 Polyonics XF-603、1306 两款主力型号。全系无卤阻燃，拥有官方 UL 合规认证，具备耐高温、抗老化、耐化学腐蚀等优势，性能稳定可靠，适用于航空、新能源、高端工控等严苛工况与高合规要求项目"
+      "tab": "High-Temp FR",
+      "name": {
+        "en": "High-Temp & Flame-Retardant · UL Export",
+        "zh": "耐高温高阻燃·UL 出口款",
+        "vi": "Chịu nhiệt cao & Chống cháy · Xuất khẩu UL",
+        "th": "ทนความร้อนสูง & หน่วงไฟ · ส่งออก UL"
       },
+      "intro": {
+        "en": "Imported PI labels rated 300℃ short-term / 150℃ long-term, UL94 VTM-0 halogen-free flame retardant with full UL certification for export.",
+        "zh": "进口 PI 标签，短时耐 300℃、长期 150℃，UL94 VTM-0 无卤阻燃，全套 UL 认证适配出口",
+        "vi": "Nhãn PI nhập khẩu chịu 300°C ngắn hạn / 150°C dài hạn, chống cháy không halogen UL94 VTM-0 với chứng nhận UL đầy đủ cho xuất khẩu.",
+        "th": "ฉลาก PI นำเข้า ทน 300°C ระยะสั้น / 150°C ระยะยาว หน่วงไฟไร้ฮาโลเจน UL94 VTM-0 พร้อมการรับรอง UL ครบชุดสำหรับส่งออก"
+      },
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-XF603.jpg",
       "products": [
-        {"name": "Polyonics XF-603", "line": {"en": "1 mil halogen-free PI · 300°C peak · UL94 VTM-0", "zh": "1mil 无卤聚酰亚胺 · 峰值300℃ · UL94 VTM-0"}, "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-XF603.jpg", "landing": true},
-        {"name": "1306", "line": {"en": "36 µm semi-clear self-laminating PET · UL/cUL", "zh": "36μm 亚透明自覆膜 PET · UL/cUL"}, "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-APPLICATION.jpg", "landing": true}
+        {
+          "name": "XF-603",
+          "line": {
+            "en": "Imported PI · 300℃ short-term / 150℃ long-term · UL94 VTM-0 · full UL",
+            "zh": "进口 PI · 短时 300℃/长期 150℃ · UL94 VTM-0 · 全套 UL",
+            "vi": "PI nhập khẩu · 300°C ngắn hạn / 150°C dài hạn · UL94 VTM-0 · UL đầy đủ",
+            "th": "PI นำเข้า · 300°C ระยะสั้น / 150°C ระยะยาว · UL94 VTM-0 · UL ครบชุด"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "xf-603"
+        }
       ]
     },
     {
-      "name": {"en": "Standard FR · Non-UL", "zh": "常规阻燃 · 无UL认证"},
-      "intro": {
-        "en": "Covers E2931 and E-6033. Halogen-free flame-retardant formulation with strong adhesion, supporting both wrap and flag application — meeting baseline industrial fire-safety needs with broad compatibility and strong value.",
-        "zh": "涵盖 E2931、E-6033 型号。采用无卤阻燃配方，粘贴附着力强，支持线缆缠绕、对粘两种贴标方式，可满足工业基础防火安全需求，工况适配性广，整体性价比突出"
+      "tab": "Industrial FR",
+      "name": {
+        "en": "Industrial Flame-Retardant · Cost-Effective",
+        "zh": "高阻燃工业级·高性价比",
+        "vi": "Chống cháy công nghiệp · Hiệu quả chi phí",
+        "th": "หน่วงไฟระดับอุตสาหกรรม · คุ้มค่า"
       },
+      "intro": {
+        "en": "Dual-layer flame-retardant PET stable at 150℃, SGS flame-retardant tested — the cost-effective mainstream choice for industrial use.",
+        "zh": "双层阻燃 PET，稳定耐 150℃工况，SGS 阻燃检测达标，工业阻燃高性价比主力款",
+        "vi": "PET chống cháy hai lớp ổn định ở 150°C, đã kiểm tra chống cháy SGS — lựa chọn chủ lực hiệu quả chi phí cho công nghiệp.",
+        "th": "PET หน่วงไฟสองชั้น เสถียรที่ 150°C ผ่านการทดสอบหน่วงไฟ SGS — ตัวเลือกหลักที่คุ้มค่าสำหรับงานอุตสาหกรรม"
+      },
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-2931.jpg",
       "products": [
-        {"name": "E2931", "line": {"en": "Halogen-free FR · wrap / flag", "zh": "无卤阻燃 · 缠绕/对粘"}, "img": "", "landing": false},
-        {"name": "E-6033", "line": {"en": "Halogen-free FR · spec to verify", "zh": "无卤阻燃 · 规格待核实"}, "img": "", "landing": false}
+        {
+          "name": "E-2913",
+          "line": {
+            "en": "Ultra-thin dual-layer FR PET · 150℃ · UL94 VTM-0 · SGS tested",
+            "zh": "超薄双层阻燃 PET · 150℃ · UL94 VTM-0 · SGS 检测",
+            "vi": "PET chống cháy hai lớp siêu mỏng · 150°C · UL94 VTM-0 · kiểm tra SGS",
+            "th": "PET หน่วงไฟสองชั้นบางพิเศษ · 150°C · UL94 VTM-0 · ทดสอบ SGS"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-2913"
+        }
       ]
     },
     {
-      "name": {"en": "Economy · Non-FR", "zh": "经济通用 · 无阻燃无认证"},
-      "intro": {
-        "en": "Represented by E4532. Soft and easy to wrap, for ambient general wiring only — no flame rating, no certification; basic circuit identification for low-cost general projects.",
-        "zh": "代表型号为 E4532。材质柔软、可轻松缠绕线缆，仅适配常温普通布线场景，无阻燃性能、无相关认证，主打基础线路标识功能，适合低成本通用工程项目选型"
+      "tab": "Protective",
+      "name": {
+        "en": "Industrial Protective · Flexible Long-Life",
+        "zh": "工业防护级·柔韧长效",
+        "vi": "Bảo vệ công nghiệp · Dẻo dai bền lâu",
+        "th": "ป้องกันระดับอุตสาหกรรม · ยืดหยุ่นทนทาน"
       },
+      "intro": {
+        "en": "Flexible non-flame-retardant labels rated to 120℃ — nylon wrap-around and clear self-laminating for durable long-life marking.",
+        "zh": "柔韧无阻燃标签，耐 120℃工况，尼龙缠绕与透明自覆膜，长效防护",
+        "vi": "Nhãn dẻo dai không chống cháy chịu đến 120°C — dạng quấn nylon và tự cán màng trong suốt cho đánh dấu bền lâu.",
+        "th": "ฉลากยืดหยุ่นชนิดไม่หน่วงไฟ ทนถึง 120°C — แบบพันไนลอนและแบบเคลือบใสในตัว สำหรับการทำเครื่องหมายที่ทนทาน"
+      },
+      "img": "",
       "products": [
-        {"name": "E4532", "line": {"en": "Ambient general wiring · non-FR", "zh": "常温普通布线 · 无阻燃无认证"}, "img": "", "landing": false}
+        {
+          "name": "E3635",
+          "line": {
+            "en": "Flexible nylon wrap-around · 120℃ · oil-resistant",
+            "zh": "柔韧尼龙缠绕 · 120℃ · 耐油污",
+            "vi": "Quấn nylon dẻo dai · 120°C · chống dầu",
+            "th": "พันไนลอนยืดหยุ่น · 120°C · ทนน้ำมัน"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-3635"
+        },
+        {
+          "name": "E6033",
+          "line": {
+            "en": "Clear self-laminating · 120℃ · waterproof & solvent resistant",
+            "zh": "透明自覆膜 · 120℃ · 防水耐溶剂",
+            "vi": "Tự cán màng trong suốt · 120°C · chống nước & dung môi",
+            "th": "เคลือบใสในตัว · 120°C · กันน้ำและทนตัวทำละลาย"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-6033"
+        }
+      ]
+    },
+    {
+      "tab": "Economy",
+      "name": {
+        "en": "Mass-Production Economy",
+        "zh": "经济型量产级",
+        "vi": "Kinh tế sản xuất hàng loạt",
+        "th": "ประหยัดสำหรับผลิตจำนวนมาก"
+      },
+      "intro": {
+        "en": "Soft synthetic-paper label rated to 90℃ for low-cost, high-speed mass-production general wiring.",
+        "zh": "柔软合成纸标签，耐 90℃中低温工况，低成本高速量产通用布线",
+        "vi": "Nhãn giấy tổng hợp mềm chịu đến 90°C cho đánh dấu đi dây thông dụng chi phí thấp, in tốc độ cao.",
+        "th": "ฉลากกระดาษสังเคราะห์เนื้อนุ่ม ทนถึง 90°C สำหรับงานเดินสายทั่วไปต้นทุนต่ำ ผลิตความเร็วสูง"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": "E4532",
+          "line": {
+            "en": "Soft synthetic paper · 90℃ · high-speed mass production",
+            "zh": "轻质合成纸 · 90℃ · 高速量产",
+            "vi": "Giấy tổng hợp mềm · 90°C · sản xuất hàng loạt tốc độ cao",
+            "th": "กระดาษสังเคราะห์เนื้อนุ่ม · 90°C · ผลิตจำนวนมากความเร็วสูง"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-4532"
+        }
       ]
     }
   ]
