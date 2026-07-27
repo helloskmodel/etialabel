@@ -64,6 +64,16 @@ CSS = """
 .plist li::before{content:"";position:absolute;left:0;top:8px;width:12px;height:12px;border-radius:3px;background:#dbe7fb}
 .plist.ok li::before{background:#41A62A;border-radius:50%}
 .plist.warn li::before{background:#e6b23a}
+.ptblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 14px;border:1px solid #e3eaf6;border-radius:12px}
+.ptbl{border-collapse:collapse;width:100%;min-width:520px;font-size:14.5px}
+.ptbl th,.ptbl td{text-align:left;padding:11px 14px;border-bottom:1px solid #eef2f9}
+.ptbl thead th{background:#f4f7fd;color:#143C96;font-weight:800;font-size:12.5px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap}
+.ptbl tbody tr:last-child td{border-bottom:0}
+.ptbl td:first-child{font-weight:700;color:#1A56DB;white-space:nowrap}
+.ptbl tbody tr.esd td:first-child{color:#41A62A}
+.ptnote{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.ptnote li{position:relative;padding-left:20px;font-size:14px;line-height:1.6;color:#5a6885}
+.ptnote li::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:2px;background:#dbe7fb}
 .pfeat{display:grid;grid-template-columns:1fr;gap:20px}
 .pfeat .pimg{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:12px;background:#e8eefb}
 .pcta{max-width:900px;margin:34px auto;background:linear-gradient(120deg,#143C96,#1A56DB);border-radius:16px;padding:30px 30px;color:#fff}
@@ -82,6 +92,23 @@ def section(eye, h, inner):
 
 def ul(items, cls=""):
     return '<ul class="plist %s">%s</ul>' % (cls, "".join("<li>%s</li>" % esc(x) for x in items))
+
+def spec_table(tbl, lang):
+    """Render a per-row product table. Cells may be plain strings or {lang} dicts."""
+    heads = L(tbl.get("headers", {}), lang)
+    thead = "".join("<th>%s</th>" % esc(h) for h in heads)
+    rows_html = ""
+    for row in tbl.get("rows", []):
+        cells = row["cells"] if isinstance(row, dict) else row
+        cls = " class=\"esd\"" if isinstance(row, dict) and row.get("esd") else ""
+        tds = "".join("<td>%s</td>" % esc(L(c, lang)) for c in cells)
+        rows_html += "<tr%s>%s</tr>" % (cls, tds)
+    html = ('<div class="ptblwrap"><table class="ptbl"><thead><tr>%s</tr></thead>'
+            '<tbody>%s</tbody></table></div>') % (thead, rows_html)
+    notes = L(tbl.get("notes", {}), lang)
+    if notes:
+        html += '<ul class="ptnote">%s</ul>' % "".join("<li>%s</li>" % esc(n) for n in notes)
+    return html
 
 def build_lang(d, lang):
     ui = UI.get(lang, UI[SOURCE_LANG])
@@ -106,7 +133,9 @@ def build_lang(d, lang):
         body += section(ui["features"], ui["features"], '<div class="pfeat">%s%s</div>' % (img, ul(L(d["features"], lang), "ok")))
     if L(d.get("benefits", {}), lang):
         body += section(ui["benefits"], ui["benefits"], ul(L(d["benefits"], lang), "ok"))
-    if L(d.get("spec", {}), lang):
+    if d.get("spec_table"):
+        body += section(ui["spec"], ui["spec"], spec_table(d["spec_table"], lang))
+    elif L(d.get("spec", {}), lang):
         body += section(ui["spec"], ui["spec"], ul(L(d["spec"], lang)))
     if L(d.get("applications", {}), lang):
         body += section(ui["applications"], ui["applications"], ul(L(d["applications"], lang)))

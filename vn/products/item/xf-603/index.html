@@ -469,6 +469,16 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .plist li::before{content:"";position:absolute;left:0;top:8px;width:12px;height:12px;border-radius:3px;background:#dbe7fb}
 .plist.ok li::before{background:#41A62A;border-radius:50%}
 .plist.warn li::before{background:#e6b23a}
+.ptblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 14px;border:1px solid #e3eaf6;border-radius:12px}
+.ptbl{border-collapse:collapse;width:100%;min-width:520px;font-size:14.5px}
+.ptbl th,.ptbl td{text-align:left;padding:11px 14px;border-bottom:1px solid #eef2f9}
+.ptbl thead th{background:#f4f7fd;color:#143C96;font-weight:800;font-size:12.5px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap}
+.ptbl tbody tr:last-child td{border-bottom:0}
+.ptbl td:first-child{font-weight:700;color:#1A56DB;white-space:nowrap}
+.ptbl tbody tr.esd td:first-child{color:#41A62A}
+.ptnote{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.ptnote li{position:relative;padding-left:20px;font-size:14px;line-height:1.6;color:#5a6885}
+.ptnote li::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:2px;background:#dbe7fb}
 .pfeat{display:grid;grid-template-columns:1fr;gap:20px}
 .pfeat .pimg{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:12px;background:#e8eefb}
 .pcta{max-width:900px;margin:34px auto;background:linear-gradient(120deg,#143C96,#1A56DB);border-radius:16px;padding:30px 30px;color:#fff}
