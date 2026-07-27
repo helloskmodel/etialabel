@@ -1,31 +1,86 @@
 {
   "slug": "hp-cbr11",
   "source": "TDS HP-CBR11",
-  "langs": ["en", "zh", "vi", "th"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "",
-  "product_img": "",
-  "title": {"en": "HP-CBR11 — Ceramic Product Label", "zh": "HP-CBR11 · 陶瓷产品标签", "vi": "HP-CBR11 · Nhãn sản phẩm gốm sứ", "th": "HP-CBR11 · ฉลากผลิตภัณฑ์เซรามิก"},
-  "tagline": {"en": "HP-CBR11 is designed for variable product identification and bar-coding directly onto ceramic products", "zh": "HP-CBR11 专为在陶瓷产品上直接进行可变产品标识和条码打印而设计", "vi": "HP-CBR11 được thiết kế để nhận diện sản phẩm biến đổi và in mã vạch trực tiếp lên sản phẩm gốm sứ", "th": "HP-CBR11 ออกแบบมาเพื่อการระบุผลิตภัณฑ์แบบแปรผันและพิมพ์บาร์โค้ดโดยตรงบนผลิตภัณฑ์เซรามิก"},
+  "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP-CBR11.jpg",
+  "title": {
+    "en": "HP-CBR11 — Ceramic Product Label",
+    "zh": "HP-CBR11 · 陶瓷产品标签",
+    "vi": "HP-CBR11 · Nhãn sản phẩm gốm sứ",
+    "th": "HP-CBR11 · ฉลากผลิตภัณฑ์เซรามิก"
+  },
+  "tagline": {
+    "en": "HP-CBR11 is designed for variable product identification and bar-coding directly onto ceramic products",
+    "zh": "HP-CBR11 专为在陶瓷产品上直接进行可变产品标识和条码打印而设计",
+    "vi": "HP-CBR11 được thiết kế để nhận diện sản phẩm biến đổi và in mã vạch trực tiếp lên sản phẩm gốm sứ",
+    "th": "HP-CBR11 ออกแบบมาเพื่อการระบุผลิตภัณฑ์แบบแปรผันและพิมพ์บาร์โค้ดโดยตรงบนผลิตภัณฑ์เซรามิก"
+  },
   "positioning": {},
   "challenges": {},
   "features": {
-    "en": ["High heat resistance up to 1200°C", "Thermal shock resistance", "Thermal transfer ink ribbon: YS-350T"],
-    "zh": ["高耐热性，最高达 1200°C", "抗热冲击性", "热转印色带：YS-350T"],
-    "vi": ["Khả năng chịu nhiệt cao đến 1200°C", "Khả năng chống sốc nhiệt", "Băng mực chuyển nhiệt: YS-350T"],
-    "th": ["ทนความร้อนสูงถึง 1200°C", "ทนต่อการเปลี่ยนแปลงอุณหภูมิฉับพลัน", "ริบบอนหมึกถ่ายเทความร้อน: YS-350T"]
+    "en": [
+      "High heat resistance up to 1200°C",
+      "Thermal shock resistance",
+      "Thermal transfer ink ribbon: YS-350T"
+    ],
+    "zh": [
+      "高耐热性，最高达 1200°C",
+      "抗热冲击性",
+      "热转印色带：YS-350T"
+    ],
+    "vi": [
+      "Khả năng chịu nhiệt cao đến 1200°C",
+      "Khả năng chống sốc nhiệt",
+      "Băng mực chuyển nhiệt: YS-350T"
+    ],
+    "th": [
+      "ทนความร้อนสูงถึง 1200°C",
+      "ทนต่อการเปลี่ยนแปลงอุณหภูมิฉับพลัน",
+      "ริบบอนหมึกถ่ายเทความร้อน: YS-350T"
+    ]
   },
   "benefits": {},
   "spec": {
-    "en": ["Label base layer: Acrylic resin, 30±1µ", "Adhesive layer: Water-soluble resin, transparent", "Liner: Paper, 202µ, White"],
-    "zh": ["标签基层：丙烯酸树脂，30±1µ", "胶粘层：水溶性树脂，透明", "底纸：纸，202µ，白色"],
-    "vi": ["Lớp nền nhãn: Nhựa acrylic, 30±1µ", "Lớp keo: Nhựa tan trong nước, trong suốt", "Lớp lót: Giấy, 202µ, Trắng"],
-    "th": ["ชั้นฐานฉลาก: อะคริลิกเรซิน, 30±1µ", "ชั้นกาว: เรซินละลายน้ำ, โปร่งใส", "แผ่นรอง: กระดาษ, 202µ, สีขาว"]
+    "en": [
+      "Label base layer: Acrylic resin, 30±1µ",
+      "Adhesive layer: Water-soluble resin, transparent",
+      "Liner: Paper, 202µ, White"
+    ],
+    "zh": [
+      "标签基层：丙烯酸树脂，30±1µ",
+      "胶粘层：水溶性树脂，透明",
+      "底纸：纸，202µ，白色"
+    ],
+    "vi": [
+      "Lớp nền nhãn: Nhựa acrylic, 30±1µ",
+      "Lớp keo: Nhựa tan trong nước, trong suốt",
+      "Lớp lót: Giấy, 202µ, Trắng"
+    ],
+    "th": [
+      "ชั้นฐานฉลาก: อะคริลิกเรซิน, 30±1µ",
+      "ชั้นกาว: เรซินละลายน้ำ, โปร่งใส",
+      "แผ่นรอง: กระดาษ, 202µ, สีขาว"
+    ]
   },
   "applications": {
-    "en": ["Metal, Ceramic and Glass products, including any other product materials exposed to high temperatures up to about 1200°C"],
-    "zh": ["金属、陶瓷和玻璃产品，以及暴露于约 1200°C 高温下的任何其他产品材料"],
-    "vi": ["Sản phẩm kim loại, gốm sứ và thủy tinh, bao gồm bất kỳ vật liệu sản phẩm nào khác chịu nhiệt độ cao đến khoảng 1200°C"],
-    "th": ["ผลิตภัณฑ์โลหะ เซรามิก และแก้ว รวมถึงวัสดุผลิตภัณฑ์อื่นใดที่สัมผัสกับอุณหภูมิสูงถึงประมาณ 1200°C"]
+    "en": [
+      "Metal, Ceramic and Glass products, including any other product materials exposed to high temperatures up to about 1200°C"
+    ],
+    "zh": [
+      "金属、陶瓷和玻璃产品，以及暴露于约 1200°C 高温下的任何其他产品材料"
+    ],
+    "vi": [
+      "Sản phẩm kim loại, gốm sứ và thủy tinh, bao gồm bất kỳ vật liệu sản phẩm nào khác chịu nhiệt độ cao đến khoảng 1200°C"
+    ],
+    "th": [
+      "ผลิตภัณฑ์โลหะ เซรามิก และแก้ว รวมถึงวัสดุผลิตภัณฑ์อื่นใดที่สัมผัสกับอุณหภูมิสูงถึงประมาณ 1200°C"
+    ]
   },
   "certifications": {}
 }
