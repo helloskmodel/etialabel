@@ -30,11 +30,30 @@
     "vi": ["Giảm thiệt hại phế liệu: dấu hiệu hoàn chỉnh qua mọi quy trình, giảm tấm PCB lỗi và công sửa chữa, tiết kiệm chi phí nguyên vật liệu", "Nâng năng suất tự động hóa: mã vạch luôn rõ nét để quét, hỗ trợ kiểm tra AOI hoàn toàn tự động, giảm nhân công kiểm tra thủ công đáng kể", "Tránh sự cố chất lượng chip: quy cách ESD chuẩn phù hợp xưởng sạch chính xác, loại bỏ khiếu nại & bồi thường do hỏng tĩnh điện", "Đơn giản hóa quản lý kho & tuân thủ toàn cầu: một dòng sản phẩm bao phủ toàn bộ dây chuyền thông thường & chống tĩnh điện, giảm số loại hàng tồn kho; đầy đủ chứng nhận UL, REACH, RoHS, đơn giản hóa kiểm tra nhà máy & thủ tục hải quan cho đối tác nước ngoài"],
     "th": ["ลดความสูญเสียของเสีย: รอยเครื่องหมายสมบูรณ์ตลอดกระบวนการ ลดแผ่น PCB เสียและงานซ่อมแซม ประหยัดต้นทุนวัตถุดิบ", "เพิ่มประสิทธิภาพการผลิตอัตโนมัติ: บาร์โค้ดชัดเจนตลอดเวลาสแกนได้ รองรับเครื่องตรวจสอบ AOI อัตโนมัติเต็มรูปแบบ ลดแรงงานตรวจสอบด้วยมืออย่างมาก", "หลีกเลี่ยงปัญหาคุณภาพชิป: สเปค ESD มาตรฐานเหมาะกับโรงงานสะอาดที่ผลิตชิ้นส่วนละเอียด ป้องกันการร้องเรียนและค่าชดเชยจากความเสียหายไฟฟ้าสถิต", "จัดการคลังสินค้าและปฏิบัติตามกฎระเบียบทั่วโลกได้ง่าย: สายสินค้าเดียวครอบคลุมไลน์ผลิตทั่วไปและไลน์ป้องกันไฟฟ้าสถิต ลดจำนวนรุ่นสินค้าที่สต็อก; มีใบรับรอง UL, REACH, RoHS ครบชุด ทำให้ขั้นตอนตรวจโรงงานและพิธีศุลกากรง่ายขึ้น"]
   },
-  "spec": {
-    "en": ["Standard series (6, non-ESD): XF-101M / XF-101S / XF-101G (1mil polyimide — matte / semi-gloss / gloss white); XF-102M / XF-102S / XF-102G (2mil polyimide — matte / semi-gloss / gloss white)", "ESD-safe series (3, ANSI/ESD S20.20): XF-101ME, XF-101SE (1mil anti-static polyimide — matte, semi-gloss); XF-102ME (2mil anti-static polyimide — matte)", "Unified thermal: 150°C/100h continuous · 260°C/5min reflow peak · 300°C/90s extreme", "Permanent acrylic adhesive; all 9 models UL certified"],
-    "zh": ["标准通用系列（6 款，无防静电需求）：XF-101M / XF-101S / XF-101G（1mil 聚酰亚胺 雾白 / 半亮白 / 亮白）；XF-102M / XF-102S / XF-102G（2mil 聚酰亚胺 雾白 / 半亮白 / 亮白）", "ESD 防静电系列（3 款，符合 ANSI/ESD S20.20）：XF-101ME、XF-101SE（1mil 防静电聚酰亚胺 雾白、半亮白）；XF-102ME（2mil 防静电聚酰亚胺 雾白）", "统一耐温：150℃/100h 长期 · 260℃/5min 回流峰值 · 300℃/90s 短时极限", "永久性丙烯酸胶水；全部 9 款型号持有 UL 认证"],
-    "vi": ["Dòng tiêu chuẩn thông dụng (6 mã, không yêu cầu chống tĩnh điện): XF-101M / XF-101S / XF-101G (Polyimide 1mil — trắng mờ / bán bóng / bóng); XF-102M / XF-102S / XF-102G (Polyimide 2mil — trắng mờ / bán bóng / bóng)", "Dòng chống tĩnh điện ESD (3 mã, tuân thủ ANSI/ESD S20.20): XF-101ME, XF-101SE (Polyimide chống tĩnh 1mil — trắng mờ, bán bóng); XF-102ME (Polyimide chống tĩnh 2mil — trắng mờ)", "Chịu nhiệt thống nhất: 150°C/100giờ liên tục · 260°C/5phút đỉnh hàn hồi · 300°C/90giây cực đoan ngắn hạn", "Keo acrylic vĩnh viễn; tất cả 9 mã đều có chứng nhận UL"],
-    "th": ["สายสินค้ามาตรฐานทั่วไป (6 รุ่น ไม่ต้องป้องกันไฟฟ้าสถิต): XF-101M / XF-101S / XF-101G (โพลิอิมิด 1mil — สีขาวด้าน / กึ่งเงา / เงา); XF-102M / XF-102S / XF-102G (โพลิอิมิด 2mil — สีขาวด้าน / กึ่งเงา / เงา)", "สายสินค้าป้องกันไฟฟ้าสถิต ESD (3 รุ่น ปฏิบัติตาม ANSI/ESD S20.20): XF-101ME, XF-101SE (โพลิอิมิดป้องกันสถิต 1mil — สีขาวด้าน, กึ่งเงา); XF-102ME (โพลิอิมิดป้องกันสถิต 2mil — สีขาวด้าน)", "ทนอุณหภูมิมาตรฐานเดียวกัน: 150°C/100 ชั่วโมง ต่อเนื่อง · 260°C/5 นาที สูงสุดรีโฟลว์ · 300°C/90 วินาที สูงรุนแรงชั่วคราว", "กาวอะคริลิกถาวร; ทั้ง 9 รุ่นมีใบรับรอง UL"]
+  "spec_table": {
+    "headers": {
+      "en": ["Model", "Base", "Thickness", "Finish", "ESD"],
+      "zh": ["型号", "基材", "厚度", "表面", "防静电"],
+      "vi": ["Mã", "Vật liệu", "Độ dày", "Bề mặt", "ESD"],
+      "th": ["รุ่น", "วัสดุ", "ความหนา", "พื้นผิว", "ESD"]
+    },
+    "rows": [
+      {"cells": ["XF-101M", {"en": "Polyimide", "zh": "聚酰亚胺", "vi": "Polyimide", "th": "โพลิอิมิด"}, "1 mil", {"en": "Matte white", "zh": "雾白", "vi": "Trắng mờ", "th": "สีขาวด้าน"}, "—"]},
+      {"cells": ["XF-101S", {"en": "Polyimide", "zh": "聚酰亚胺", "vi": "Polyimide", "th": "โพลิอิมิด"}, "1 mil", {"en": "Semi-gloss white", "zh": "半亮白", "vi": "Trắng bán bóng", "th": "สีขาวกึ่งเงา"}, "—"]},
+      {"cells": ["XF-101G", {"en": "Polyimide", "zh": "聚酰亚胺", "vi": "Polyimide", "th": "โพลิอิมิด"}, "1 mil", {"en": "Gloss white", "zh": "亮白", "vi": "Trắng bóng", "th": "สีขาวเงา"}, "—"]},
+      {"cells": ["XF-102M", {"en": "Polyimide", "zh": "聚酰亚胺", "vi": "Polyimide", "th": "โพลิอิมิด"}, "2 mil", {"en": "Matte white", "zh": "雾白", "vi": "Trắng mờ", "th": "สีขาวด้าน"}, "—"]},
+      {"cells": ["XF-102S", {"en": "Polyimide", "zh": "聚酰亚胺", "vi": "Polyimide", "th": "โพลิอิมิด"}, "2 mil", {"en": "Semi-gloss white", "zh": "半亮白", "vi": "Trắng bán bóng", "th": "สีขาวกึ่งเงา"}, "—"]},
+      {"cells": ["XF-102G", {"en": "Polyimide", "zh": "聚酰亚胺", "vi": "Polyimide", "th": "โพลิอิมิด"}, "2 mil", {"en": "Gloss white", "zh": "亮白", "vi": "Trắng bóng", "th": "สีขาวเงา"}, "—"]},
+      {"esd": true, "cells": ["XF-101ME", {"en": "Anti-static PI", "zh": "防静电聚酰亚胺", "vi": "PI chống tĩnh", "th": "โพลิอิมิดป้องกันสถิต"}, "1 mil", {"en": "Matte", "zh": "雾白", "vi": "Mờ", "th": "ด้าน"}, "S20.20"]},
+      {"esd": true, "cells": ["XF-101SE", {"en": "Anti-static PI", "zh": "防静电聚酰亚胺", "vi": "PI chống tĩnh", "th": "โพลิอิมิดป้องกันสถิต"}, "1 mil", {"en": "Semi-gloss", "zh": "半亮白", "vi": "Bán bóng", "th": "กึ่งเงา"}, "S20.20"]},
+      {"esd": true, "cells": ["XF-102ME", {"en": "Anti-static PI", "zh": "防静电聚酰亚胺", "vi": "PI chống tĩnh", "th": "โพลิอิมิดป้องกันสถิต"}, "2 mil", {"en": "Matte", "zh": "雾白", "vi": "Mờ", "th": "ด้าน"}, "S20.20"]}
+    ],
+    "notes": {
+      "en": ["Unified thermal: 150°C/100h continuous · 260°C/5min reflow peak · 300°C/90s extreme", "Permanent acrylic adhesive; all 9 models UL certified (REACH & RoHS compliant)"],
+      "zh": ["统一耐温：150℃/100h 长期 · 260℃/5min 回流峰值 · 300℃/90s 短时极限", "永久性丙烯酸胶水；全部 9 款型号持有 UL 认证（符合 REACH、RoHS）"],
+      "vi": ["Chịu nhiệt thống nhất: 150°C/100giờ liên tục · 260°C/5phút đỉnh hàn hồi · 300°C/90giây cực đoan ngắn hạn", "Keo acrylic vĩnh viễn; tất cả 9 mã đều có chứng nhận UL (đáp ứng REACH & RoHS)"],
+      "th": ["ทนอุณหภูมิมาตรฐานเดียวกัน: 150°C/100 ชั่วโมง ต่อเนื่อง · 260°C/5 นาที สูงสุดรีโฟลว์ · 300°C/90 วินาที สูงรุนแรงชั่วคราว", "กาวอะคริลิกถาวร; ทั้ง 9 รุ่นมีใบรับรอง UL (ตรงตาม REACH และ RoHS)"]
+    }
   },
   "applications": {
     "en": ["AI server motherboards / GPU accelerators, automotive domain controllers / radar PCBs, aerospace high-reliability boards, 5G/6G optical modules, medical & industrial-vision mainboards"],
