@@ -1,0 +1,76 @@
+{
+  "slug": "steel-wire-pickling-annealing",
+  "source": "_docs/sources/HeatProof case study — steel wire (HP-M83)",
+  "order": 6,
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "image": "",
+  "title": {
+    "en": "Steel Wire Coil Identification through Pickling & Annealing — HP-M83",
+    "zh": "线材盘卷酸洗与退火全程标识 —— HP-M83",
+    "vi": "Nhận diện cuộn dây thép qua tẩy rửa & ủ — HP-M83",
+    "th": "การระบุขดลวดเหล็กผ่านการล้างกรดและการอบอ่อน — HP-M83"
+  },
+  "subtitle": {
+    "en": "One heat-resistant tag that survives pickling and 800°C annealing — no detach-and-reattach, no misidentification.",
+    "zh": "一枚耐高温吊牌，挺过酸洗与 800°C 退火 —— 无需摘挂、杜绝错识",
+    "vi": "Một thẻ chịu nhiệt vượt qua tẩy rửa và ủ 800°C — không tháo-gắn lại, không nhận nhầm.",
+    "th": "แท็กทนความร้อนหนึ่งชิ้นที่ผ่านการล้างกรดและการอบอ่อน 800°C — ไม่ต้องถอดแล้วติดใหม่ ไม่ระบุผิด"
+  },
+  "seo_desc": {
+    "en": "HP-M83 heat-resistant tag for steel wire coils and bars — stays on through pickling (HCl/H₂SO₄) and 800°C annealing, eliminating the detach-and-reattach misidentification of PET tags.",
+    "zh": "HP-M83 耐高温吊牌用于线材盘卷与棒材 —— 全程挺过酸洗（HCl/H₂SO₄）与 800°C 退火，杜绝 PET 吊牌摘挂造成的错识",
+    "vi": "Thẻ chịu nhiệt HP-M83 cho cuộn và thanh dây thép — bám suốt qua tẩy rửa (HCl/H₂SO₄) và ủ 800°C, loại bỏ việc nhận nhầm do tháo-gắn lại thẻ PET.",
+    "th": "แท็กทนความร้อน HP-M83 สำหรับขดลวดและแท่งเหล็ก — ติดตลอดผ่านการล้างกรด (HCl/H₂SO₄) และการอบอ่อน 800°C ขจัดการระบุผิดจากการถอด-ติดใหม่ของแท็ก PET"
+  },
+  "overview": {
+    "en": "Steel wire coils and bars are identified through pre-treatment and annealing. A typical route runs pickling (HCl and H₂SO₄) followed by heat treatment at 800°C for around 10 hours, and manufacturers need reliable product-ID management across every step — eliminating identification errors and lost coils while reducing labor cost.",
+    "zh": "线材盘卷与棒材需要在前处理与退火全过程中保持标识。典型工艺为酸洗（HCl 与 H₂SO₄）后进行约 800°C、10 小时的热处理；工厂需要在每一道工序都可靠地进行产品身份管理 —— 杜绝识别错误与盘卷丢失，同时降低人工成本",
+    "vi": "Cuộn và thanh dây thép cần được nhận diện xuyên suốt tiền xử lý và ủ. Quy trình điển hình là tẩy rửa (HCl và H₂SO₄) rồi xử lý nhiệt ở 800°C trong khoảng 10 giờ, và nhà sản xuất cần quản lý mã sản phẩm đáng tin cậy ở mọi bước — loại bỏ lỗi nhận diện và mất cuộn đồng thời giảm chi phí nhân công.",
+    "th": "ขดลวดและแท่งเหล็กต้องถูกระบุตลอดการเตรียมก่อนและการอบอ่อน กระบวนการทั่วไปคือการล้างกรด (HCl และ H₂SO₄) แล้วอบชุบที่ 800°C ประมาณ 10 ชั่วโมง และผู้ผลิตต้องการการจัดการรหัสสินค้าที่เชื่อถือได้ทุกขั้นตอน — ขจัดข้อผิดพลาดในการระบุและการสูญหายของขด พร้อมลดต้นทุนแรงงาน"
+  },
+  "challenges": {
+    "en": "Standard PET tags do not have enough heat resistance, so they must be detached before the heating process and reattached afterwards. Reattaching the tag after heat treatment creates the possibility of incorrect identification — leading to misidentified or lost coils and extra manual labor.",
+    "zh": "普通 PET 吊牌耐热不足，必须在加热前摘下、加热后再挂回。热处理后重新挂牌会带来错识的可能 —— 造成盘卷错识或丢失，并增加人工工作量",
+    "vi": "Thẻ PET tiêu chuẩn không đủ khả năng chịu nhiệt, nên phải tháo ra trước khi gia nhiệt và gắn lại sau đó. Việc gắn lại thẻ sau xử lý nhiệt tạo khả năng nhận diện sai — dẫn đến cuộn bị nhận nhầm hoặc thất lạc và tốn thêm nhân công.",
+    "th": "แท็ก PET มาตรฐานทนความร้อนไม่พอ จึงต้องถอดออกก่อนกระบวนการให้ความร้อนและติดกลับหลังจากนั้น การติดแท็กกลับหลังการอบชุบทำให้เกิดโอกาสระบุผิด — นำไปสู่ขดที่ถูกระบุผิดหรือสูญหายและแรงงานเพิ่มเติม"
+  },
+  "solution_intro": {
+    "en": "The HP-M83 tag is a high-temperature barcode tag that survives every process. It is attached before pickling and stays on the coil through pickling, the 800°C heat treatment and the phosphoric-salt surface treatment, so the wire coil is identified through all processes without detaching and reattaching.",
+    "zh": "HP-M83 是可挺过全部工序的耐高温条码吊牌。在酸洗前挂上，随盘卷走完酸洗、800°C 热处理与磷化表面处理，全程无需摘挂即可识别，实现一牌到底",
+    "vi": "Thẻ HP-M83 là thẻ mã vạch chịu nhiệt cao vượt qua mọi công đoạn. Nó được gắn trước khi tẩy rửa và bám trên cuộn qua tẩy rửa, xử lý nhiệt 800°C và xử lý bề mặt muối phốt phát, nên cuộn dây được nhận diện xuyên suốt mà không cần tháo-gắn lại.",
+    "th": "แท็ก HP-M83 เป็นแท็กบาร์โค้ดทนความร้อนสูงที่ผ่านทุกกระบวนการ ติดก่อนการล้างกรดและอยู่บนขดตลอดการล้างกรด การอบชุบ 800°C และการบำบัดผิวด้วยเกลือฟอสเฟต จึงระบุขดลวดได้ตลอดทุกกระบวนการโดยไม่ต้องถอดและติดใหม่"
+  },
+  "advantages": {
+    "en": [
+      {"label": "Survives the full process", "text": "One high-temperature barcode tag stays readable through pickling (HCl / H₂SO₄), 800°C annealing and phosphoric-salt surface treatment — no need to remove it for heating."},
+      {"label": "Eliminates misidentification", "text": "Because the tag is never detached and reattached, the wrong-tag errors that occur when re-tagging after heat treatment are eliminated."},
+      {"label": "Reduces labor and lost coils", "text": "No detach/reattach handling and no re-tagging means less manual labor and fewer lost or misidentified coils."},
+      {"label": "Acid- and heat-resistant construction", "text": "HP-M83 is acid-resistant and rated for heat treatment up to 850°C, with a magnetic core for handling — suited to the pickling-plus-annealing route."}
+    ],
+    "zh": [
+      {"label": "全程存活", "text": "一枚耐高温条码吊牌，挺过酸洗（HCl/H₂SO₄）、800°C 退火与磷化表面处理，始终可读，加热无需取下"},
+      {"label": "杜绝错识", "text": "吊牌全程不摘不挂，彻底消除热处理后重新挂牌带来的错牌错识"},
+      {"label": "省人工、减丢失", "text": "无需摘挂与重新挂牌，减少人工工作量，降低盘卷丢失与错识"},
+      {"label": "耐酸耐高温结构", "text": "HP-M83 耐酸，热处理耐温达 850°C，带磁性芯便于取放 —— 适配酸洗 + 退火工艺路线"}
+    ],
+    "vi": [
+      {"label": "Vượt qua toàn bộ quy trình", "text": "Một thẻ mã vạch chịu nhiệt cao vẫn đọc được qua tẩy rửa (HCl / H₂SO₄), ủ 800°C và xử lý bề mặt muối phốt phát — không cần tháo khi gia nhiệt."},
+      {"label": "Loại bỏ nhận diện sai", "text": "Vì thẻ không bao giờ bị tháo và gắn lại, các lỗi gắn nhầm thẻ khi dán lại sau xử lý nhiệt được loại bỏ."},
+      {"label": "Giảm nhân công và mất cuộn", "text": "Không thao tác tháo/gắn lại và không dán lại thẻ nghĩa là ít nhân công hơn và ít cuộn thất lạc hoặc nhận nhầm hơn."},
+      {"label": "Kết cấu chịu axit và nhiệt", "text": "HP-M83 chịu axit, chịu xử lý nhiệt đến 850°C, có lõi từ tính để thao tác — phù hợp tuyến tẩy rửa cộng ủ."}
+    ],
+    "th": [
+      {"label": "ผ่านตลอดทุกกระบวนการ", "text": "แท็กบาร์โค้ดทนความร้อนสูงหนึ่งชิ้นยังอ่านได้ผ่านการล้างกรด (HCl / H₂SO₄) การอบอ่อน 800°C และการบำบัดผิวด้วยเกลือฟอสเฟต — ไม่ต้องถอดเมื่อให้ความร้อน"},
+      {"label": "ขจัดการระบุผิด", "text": "เนื่องจากแท็กไม่เคยถูกถอดและติดใหม่ ข้อผิดพลาดจากการติดแท็กผิดเมื่อติดใหม่หลังการอบชุบจึงหมดไป"},
+      {"label": "ลดแรงงานและการสูญหายของขด", "text": "ไม่มีการถอด/ติดใหม่และไม่ต้องติดแท็กใหม่ หมายถึงแรงงานน้อยลงและขดที่สูญหายหรือระบุผิดน้อยลง"},
+      {"label": "โครงสร้างทนกรดและทนความร้อน", "text": "HP-M83 ทนกรด ทนการอบชุบถึง 850°C มีแกนแม่เหล็กเพื่อการหยิบจับ — เหมาะกับเส้นทางล้างกรดร่วมกับการอบอ่อน"}
+    ]
+  },
+  "value": {
+    "en": "Attaching one HP-M83 tag before pickling gives every wire coil a single identity that survives to shipment — eliminating identification errors and lost coils, cutting labor cost, and enabling reliable product-ID management across the whole pre-treatment and annealing line.",
+    "zh": "在酸洗前挂上一枚 HP-M83，即让每一盘线材拥有可延续至出货的唯一身份 —— 杜绝识别错误与盘卷丢失、降低人工成本，实现前处理与退火全线可靠的产品身份管理",
+    "vi": "Gắn một thẻ HP-M83 trước khi tẩy rửa cho mỗi cuộn dây một danh tính duy nhất tồn tại đến khi xuất hàng — loại bỏ lỗi nhận diện và mất cuộn, cắt giảm chi phí nhân công, và cho phép quản lý mã sản phẩm đáng tin cậy trên toàn tuyến tiền xử lý và ủ.",
+    "th": "การติดแท็ก HP-M83 หนึ่งชิ้นก่อนการล้างกรดทำให้ขดลวดแต่ละขดมีอัตลักษณ์เดียวที่คงอยู่จนถึงการจัดส่ง — ขจัดข้อผิดพลาดในการระบุและการสูญหายของขด ลดต้นทุนแรงงาน และทำให้จัดการรหัสสินค้าได้อย่างเชื่อถือได้ตลอดสายการเตรียมก่อนและการอบอ่อน"
+  }
+}
