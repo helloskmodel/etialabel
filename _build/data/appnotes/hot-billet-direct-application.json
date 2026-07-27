@@ -1,0 +1,102 @@
+{
+  "slug": "hot-billet-direct-application",
+  "source": "_docs/sources/HP-700 hot billet direct application",
+  "order": 5,
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "image": "",
+  "title": {
+    "zh": "热钢坯直贴标识方案 —— HP-700 超耐高温标签",
+    "en": "Hot Steel Billet Direct-Application Labeling — HP-700 Ultra-High-Temp Label",
+    "vi": "Giải pháp nhãn dán trực tiếp phôi thép nóng — Nhãn siêu chịu nhiệt HP-700",
+    "th": "โซลูชันฉลากติดโดยตรงบนบิลเล็ตเหล็กร้อน — ฉลากทนความร้อนสูงพิเศษ HP-700"
+  },
+  "subtitle": {
+    "zh": "在铸造后 750–800°C 钢坯上直接贴标，一标到底、全程可追溯",
+    "en": "Applied directly to 750–800°C billets right after casting — one label all the way, fully traceable.",
+    "vi": "Dán trực tiếp lên phôi 750–800°C ngay sau khi đúc — một nhãn xuyên suốt, truy xuất toàn trình.",
+    "th": "ติดโดยตรงบนบิลเล็ต 750–800°C ทันทีหลังการหล่อ — ฉลากเดียวตลอดเส้นทาง ตรวจสอบย้อนกลับได้ทั้งหมด"
+  },
+  "seo_desc": {
+    "en": "Direct-application labeling for 750–800°C hot steel billets with HP-700 — replaces unreliable inkjet+OCR, enabling one-code traceability from casting through the reheat furnace to logistics.",
+    "zh": "用 HP-700 在 750–800°C 热钢坯上直贴标识 —— 替代不可靠的喷码 + OCR，实现从铸造、加热炉到物流的一码全程可追溯",
+    "vi": "Nhãn dán trực tiếp cho phôi thép nóng 750–800°C với HP-700 — thay thế in phun+OCR kém tin cậy, truy xuất một mã từ đúc qua lò nung đến logistics.",
+    "th": "ฉลากติดโดยตรงสำหรับบิลเล็ตเหล็กร้อน 750–800°C ด้วย HP-700 — แทนที่การพ่นหมึก+OCR ที่ไม่น่าเชื่อถือ ตรวจสอบย้อนกลับด้วยรหัสเดียวตั้งแต่การหล่อผ่านเตาอบจนถึงโลจิสติกส์"
+  },
+  "overview": {
+    "zh": "在钢铁制造中，高温方坯的标识是一个极具挑战性的工业难题 —— 它需要在极端恶劣的环境（高温、氧化、水汽、冲击）下，实现可靠、高效、低成本的身份信息传递。典型场景为铸造后的热钢坯，表面温度 750–800°C，需要清晰识别每一根钢坯，并准确跟踪其通过加热炉的全过程",
+    "en": "In steel manufacturing, marking hot billets is a genuinely difficult industrial problem — it requires reliable, efficient, low-cost identity transfer under an extremely harsh environment (high heat, oxidation, water vapor, impact). The typical scenario is a hot billet straight from casting, with a surface temperature of 750–800°C, where every billet must be clearly identified and accurately tracked as it passes through the reheat furnace.",
+    "vi": "Trong sản xuất thép, việc đánh dấu phôi nóng là một bài toán công nghiệp thực sự khó — cần truyền tải thông tin nhận dạng đáng tin cậy, hiệu quả, chi phí thấp trong môi trường cực kỳ khắc nghiệt (nhiệt cao, oxy hóa, hơi nước, va đập). Tình huống điển hình là phôi nóng ngay sau khi đúc, nhiệt độ bề mặt 750–800°C, cần nhận diện rõ từng phôi và theo dõi chính xác khi đi qua lò nung.",
+    "th": "ในการผลิตเหล็ก การทำเครื่องหมายบนบิลเล็ตร้อนเป็นโจทย์อุตสาหกรรมที่ยากอย่างแท้จริง — ต้องส่งผ่านข้อมูลระบุตัวตนที่เชื่อถือได้ มีประสิทธิภาพ ต้นทุนต่ำ ภายใต้สภาพแวดล้อมที่รุนแรงมาก (ความร้อนสูง ออกซิเดชัน ไอน้ำ แรงกระแทก) สถานการณ์ทั่วไปคือบิลเล็ตร้อนที่ออกจากการหล่อ อุณหภูมิพื้นผิว 750–800°C ต้องระบุแต่ละบิลเล็ตได้ชัดเจนและติดตามอย่างแม่นยำขณะผ่านเตาอบ"
+  },
+  "challenges": {
+    "zh": "现有生产流程多采用喷码机喷码 + OCR 视觉识别：喷码质量无法完全保障，OCR 识别率不高、易造成识别错误。同时高温、氧化皮、水汽与冲击的严苛工况，让普通标识难以在全流程中保持可读，导致一码管理、一标到底难以实现",
+    "en": "Current lines mostly rely on inkjet coding plus OCR vision recognition: the print quality cannot be fully guaranteed, and OCR recognition rates are not high, which causes read errors. At the same time, the harsh conditions — high heat, oxide scale, water vapor and impact — make ordinary marks hard to keep readable through the whole process, so one-code, one-label-all-the-way management is hard to achieve.",
+    "vi": "Các dây chuyền hiện nay chủ yếu dựa vào in phun kết hợp nhận dạng thị giác OCR: chất lượng in không thể đảm bảo hoàn toàn, tỷ lệ nhận dạng OCR không cao, dễ gây lỗi đọc. Đồng thời điều kiện khắc nghiệt — nhiệt cao, vảy oxit, hơi nước và va đập — khiến dấu thông thường khó giữ đọc được suốt quy trình, nên khó đạt quản lý một mã, một nhãn xuyên suốt.",
+    "th": "ปัจจุบันสายการผลิตส่วนใหญ่พึ่งพาการพ่นหมึกร่วมกับการรู้จำด้วยภาพ OCR: คุณภาพการพิมพ์ไม่สามารถรับประกันได้เต็มที่ และอัตราการรู้จำ OCR ไม่สูง ทำให้เกิดข้อผิดพลาดในการอ่าน ในเวลาเดียวกัน สภาพที่รุนแรง — ความร้อนสูง สเกลออกไซด์ ไอน้ำ และแรงกระแทก — ทำให้เครื่องหมายทั่วไปคงความอ่านได้ตลอดกระบวนการได้ยาก จึงยากที่จะทำการจัดการด้วยรหัสเดียวตลอดเส้นทาง"
+  },
+  "solution_intro": {
+    "zh": "推荐使用耐高温标签 HP-700：打印好二维码后，用贴标机器人或手工贴标设备，直接贴在铸造后 800°C 的钢坯上，实现一标到底、全程可追溯",
+    "en": "The recommended solution is the heat-resistant HP-700 label: print the QR code, then use a robotic labeler or a manual applicator to place it directly onto the 800°C billet right after casting — one label all the way, fully traceable.",
+    "vi": "Giải pháp đề xuất là nhãn chịu nhiệt HP-700: in mã QR, sau đó dùng robot dán nhãn hoặc thiết bị dán thủ công đặt trực tiếp lên phôi 800°C ngay sau khi đúc — một nhãn xuyên suốt, truy xuất toàn trình.",
+    "th": "โซลูชันที่แนะนำคือฉลากทนความร้อน HP-700: พิมพ์คิวอาร์โค้ด แล้วใช้หุ่นยนต์ติดฉลากหรืออุปกรณ์ติดด้วยมือ วางลงบนบิลเล็ต 800°C โดยตรงทันทีหลังการหล่อ — ฉลากเดียวตลอดเส้นทาง ตรวจสอบย้อนกลับได้ทั้งหมด"
+  },
+  "advantages": {
+    "en": [
+      {"label": "One label all the way · fully traceable", "text": "Each billet gets a unique QR code from casting; scanners read it accurately across production, logistics and distribution for end-to-end tracking and traceability."},
+      {"label": "Real-time quality monitoring", "text": "Scanners identify every billet precisely, enabling real-time quality monitoring and real-time data upload during production."},
+      {"label": "Digital logistics · lower cost", "text": "From production to logistics, scanning integrated with the WMS digitalizes logistics, cutting cost significantly and raising efficiency."},
+      {"label": "Heat-activated adhesive technology", "text": "A dry, heat-activated adhesive: activated by high heat, it spreads on contact with the hot substrate, a chemical reaction strengthens the bond, and it stays firmly anchored after cooling — so it applies directly to a 750–800°C billet surface without melting and does not fall off in later processes."},
+      {"label": "Heat-resistance specification", "text": "Application temperature range 450–800°C; heat resistance up to 800°C."}
+    ],
+    "zh": [
+      {"label": "一标到底 · 全程可追溯", "text": "从铸造起即赋予唯一二维码，配合扫描仪在生产、物流、流通各环节精准读取，全程追踪、全程可追溯"},
+      {"label": "实时质量监控", "text": "通过扫描仪精准识别每一根钢坯，实现生产过程实时质量监控、实时数据上传"},
+      {"label": "物流数字化 · 降本增效", "text": "从生产到物流环节通过扫描并与 WMS 集成，实现物流数字化，大幅节省成本、提高效率"},
+      {"label": "热激活胶黏剂技术", "text": "独有的干性热激活胶黏剂：遇高温活化、接触热基材后扩散、热量引发化学反应增强粘合，冷却后仍牢固锚固；确保在 750–800°C 钢坯表面直贴不熔化、后续流程不脱落"},
+      {"label": "耐高温规格", "text": "适用温度范围 450–800°C，耐高温达 800°C"}
+    ],
+    "vi": [
+      {"label": "Một nhãn xuyên suốt · truy xuất toàn trình", "text": "Mỗi phôi có mã QR duy nhất từ khi đúc; máy quét đọc chính xác qua sản xuất, logistics và phân phối để theo dõi và truy xuất từ đầu đến cuối."},
+      {"label": "Giám sát chất lượng thời gian thực", "text": "Máy quét nhận diện chính xác từng phôi, cho phép giám sát chất lượng và tải dữ liệu thời gian thực trong sản xuất."},
+      {"label": "Logistics số hóa · giảm chi phí", "text": "Từ sản xuất đến logistics, quét tích hợp với WMS số hóa logistics, giảm đáng kể chi phí và nâng cao hiệu quả."},
+      {"label": "Công nghệ keo kích hoạt bằng nhiệt", "text": "Keo khô kích hoạt bằng nhiệt: được kích hoạt bởi nhiệt cao, lan ra khi tiếp xúc nền nóng, phản ứng hóa học tăng cường độ bám, và bám chắc sau khi nguội — dán trực tiếp lên bề mặt phôi 750–800°C mà không chảy và không bong trong các công đoạn sau."},
+      {"label": "Thông số chịu nhiệt", "text": "Dải nhiệt độ ứng dụng 450–800°C; chịu nhiệt đến 800°C."}
+    ],
+    "th": [
+      {"label": "ฉลากเดียวตลอดเส้นทาง · ตรวจสอบย้อนกลับได้ทั้งหมด", "text": "แต่ละบิลเล็ตได้คิวอาร์โค้ดเฉพาะตั้งแต่การหล่อ เครื่องสแกนอ่านได้แม่นยำตลอดการผลิต โลจิสติกส์ และการกระจายสินค้า เพื่อการติดตามและตรวจสอบย้อนกลับแบบครบวงจร"},
+      {"label": "ตรวจสอบคุณภาพแบบเรียลไทม์", "text": "เครื่องสแกนระบุแต่ละบิลเล็ตได้อย่างแม่นยำ ทำให้ตรวจสอบคุณภาพและอัปโหลดข้อมูลแบบเรียลไทม์ระหว่างการผลิต"},
+      {"label": "โลจิสติกส์ดิจิทัล · ลดต้นทุน", "text": "ตั้งแต่การผลิตถึงโลจิสติกส์ การสแกนที่เชื่อมต่อกับ WMS ทำให้โลจิสติกส์เป็นดิจิทัล ลดต้นทุนอย่างมากและเพิ่มประสิทธิภาพ"},
+      {"label": "เทคโนโลยีกาวกระตุ้นด้วยความร้อน", "text": "กาวแห้งที่กระตุ้นด้วยความร้อน: ถูกกระตุ้นด้วยความร้อนสูง แผ่ตัวเมื่อสัมผัสเนื้อวัสดุร้อน ปฏิกิริยาเคมีเสริมการยึดเกาะ และยึดแน่นหลังเย็นตัว — ติดโดยตรงบนพื้นผิวบิลเล็ต 750–800°C โดยไม่ละลายและไม่หลุดในขั้นตอนถัดไป"},
+      {"label": "ข้อมูลจำเพาะการทนความร้อน", "text": "ช่วงอุณหภูมิใช้งาน 450–800°C ทนความร้อนถึง 800°C"}
+    ]
+  },
+  "extra": {
+    "en": [{"heading": "Recommended equipment", "items": [
+      {"label": "Thermal transfer printer", "text": "CABXC6, ZEBRA ZT411, TSC MH241T (print and cut)"},
+      {"label": "High-temperature ribbon", "text": "YS-4"},
+      {"label": "Scanner", "text": "COGNEX DATAMAN 370, ZEBRA 3600, HONEYWELL GRANIT 1980I"}
+    ]}],
+    "zh": [{"heading": "推荐配套设备", "items": [
+      {"label": "热转印打印机", "text": "CABXC6、ZEBRA ZT411、TSC MH241T（打印并剪切）"},
+      {"label": "耐高温碳带", "text": "YS-4"},
+      {"label": "扫描仪", "text": "COGNEX DATAMAN 370、ZEBRA 3600、HONEYWELL GRANIT 1980I"}
+    ]}],
+    "vi": [{"heading": "Thiết bị đề xuất", "items": [
+      {"label": "Máy in chuyển nhiệt", "text": "CABXC6, ZEBRA ZT411, TSC MH241T (in và cắt)"},
+      {"label": "Ruy băng chịu nhiệt", "text": "YS-4"},
+      {"label": "Máy quét", "text": "COGNEX DATAMAN 370, ZEBRA 3600, HONEYWELL GRANIT 1980I"}
+    ]}],
+    "th": [{"heading": "อุปกรณ์ที่แนะนำ", "items": [
+      {"label": "เครื่องพิมพ์ถ่ายเทความร้อน", "text": "CABXC6, ZEBRA ZT411, TSC MH241T (พิมพ์และตัด)"},
+      {"label": "ริบบอนทนความร้อน", "text": "YS-4"},
+      {"label": "เครื่องสแกน", "text": "COGNEX DATAMAN 370, ZEBRA 3600, HONEYWELL GRANIT 1980I"}
+    ]}]
+  },
+  "value": {
+    "zh": "该方案消除了喷码 + OCR 的识别错误，实现从铸造、加热炉到物流的全程可追溯与实时质量监控，并通过与 WMS 集成实现物流数字化，显著降低成本、提升效率",
+    "en": "This solution eliminates inkjet+OCR read errors, delivers end-to-end traceability and real-time quality monitoring from casting through the reheat furnace to logistics, and digitalizes logistics via WMS integration — significantly lowering cost and raising efficiency.",
+    "vi": "Giải pháp này loại bỏ lỗi đọc của in phun+OCR, mang lại truy xuất từ đầu đến cuối và giám sát chất lượng thời gian thực từ đúc qua lò nung đến logistics, và số hóa logistics thông qua tích hợp WMS — giảm đáng kể chi phí và nâng cao hiệu quả.",
+    "th": "โซลูชันนี้ขจัดข้อผิดพลาดการอ่านของการพ่นหมึก+OCR ให้การตรวจสอบย้อนกลับแบบครบวงจรและการตรวจสอบคุณภาพแบบเรียลไทม์ตั้งแต่การหล่อผ่านเตาอบจนถึงโลจิสติกส์ และทำให้โลจิสติกส์เป็นดิจิทัลผ่านการเชื่อมต่อ WMS — ลดต้นทุนอย่างมากและเพิ่มประสิทธิภาพ"
+  }
+}
