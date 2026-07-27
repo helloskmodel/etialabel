@@ -180,10 +180,14 @@ def build_lang(data, lang):
         for p in t["products"]:
             pslug = p.get("slug", "")
             href = hp.Lx(lang, "/products/item/%s/" % pslug) if (pslug and p.get("landing")) else "#"
-            prods.append({"n": p["name"], "l": L(p.get("line", {}), lang),
+            pname = p["name"]
+            pname = L(pname, lang) if isinstance(pname, dict) else pname
+            prods.append({"n": pname, "l": L(p.get("line", {}), lang),
                           "img": p.get("img", ""), "landing": bool(p.get("landing") and pslug),
                           "href": href})
-        cats.append({"tab": t.get("tab") or L(t["name"], lang), "intro": L(t["intro"], lang),
+        tabval = t.get("tab")
+        tab = L(tabval, lang) if isinstance(tabval, dict) else (tabval or L(t["name"], lang))
+        cats.append({"tab": tab, "intro": L(t["intro"], lang),
                      "img": t.get("img", ""), "icon": t.get("icon", ""), "prods": prods})
 
     banner = data.get("banner_img", "")
