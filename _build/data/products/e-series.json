@@ -1,0 +1,99 @@
+{
+  "slug": "e-series",
+  "source": "_docs/sources/PCB E-Label PI family",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB8732",
+  "title": {
+    "en": "E-LABEL Domestic Mass-Produced PI Label Family | Suitable for High-Volume PCB Production Lines",
+    "zh": "E-LABEL 本土量产国产 PI 标签家族｜适配大批量 PCB 产线",
+    "vi": "Bộ nhãn PI sản xuất trong nước E-LABEL | Phù hợp dây chuyền sản xuất PCB số lượng lớn",
+    "th": "ตระกูลฉลาก PI ผลิตในประเทศ E-LABEL | เหมาะสำหรับสายการผลิต PCB ปริมาณมาก"
+  },
+  "tagline": {
+    "en": "Tailored for cost-effective mass production of domestic consumer electronics PCBs. 4 series with 20 standardized high-temperature resistant PI labels, adapting to diverse SMT high-temperature traceability scenarios.",
+    "zh": "专为国内消费电子平价PCB量产打造，四大系列20款标准化耐高温PI标签，分层匹配各类SMT高温追溯工况",
+    "vi": "Được thiết kế cho sản xuất hàng loạt PCB thiết bị điện tử tiêu dùng trong nước giá hợp lý. 4 dòng sản phẩm với 20 loại nhãn PI chịu nhiệt tiêu chuẩn, phù hợp với các tình huống truy vết nhiệt cao SMT đa dạng.",
+    "th": "สร้างขึ้นสำหรับการผลิต PCB อิเล็กทรอนิกส์ผู้บริโภคในประเทศราคาประหยัด มี 4 ซีรีส์ 20 รุ่นฉลาก PI ทนต่ออุณหภูมิสูงมาตรฐาน รองรับสถานการณ์ติดตามอุณหภูมิสูง SMT ที่หลากหลาย"
+  },
+  "positioning": {
+    "en": "To meet the mass production demands of mid-to-low-end domestic PCBs, adapt to the single-reflow standard working conditions of consumer electronic mainboards, small home appliance control boards and general power boards, and fill the label selection gap for cost-effective mass production lines, we launch the fully domestic E-series high-temperature resistant PI label family. Supported by local ready stock and rapid regional technical services, it meets customers’ differentiated requirements for budget, production processes and ESD control.",
+    "zh": "为适配国内中低端大批量 PCB 量产刚需，针对消费电子主板、小家电控制板、普通电源板单轮回流标准生产工况，填补平价量产产线的标签选型空白，我们全新推出本土量产 E 系列 PI 耐高温标签完整家族。依托本地常备现货与属地快速技术服务，分层匹配客户差异化预算、生产工艺及 ESD 防静电管控各类需求",
+    "vi": "Để đáp ứng nhu cầu sản xuất hàng loạt PCB cấp trung và thấp trong nước, thích ứng với điều kiện sản xuất tiêu chuẩn một lần lưu nhiệt của bo mạch chính điện tử tiêu dùng, bo mạch điều khiển thiết bị gia dụng nhỏ và bo mạch nguồn thông thường, lấp đầy khoảng trống lựa chọn nhãn cho dây chuyền sản xuất giá rẻ hàng loạt, chúng tôi ra mắt dòng nhãn PI chịu nhiệt cao dòng E sản xuất trong nước hoàn chỉnh. Với hàng tồn kho sẵn có tại địa phương và dịch vụ kỹ thuật nhanh chóng, đáp ứng đa dạng nhu cầu về ngân sách, quy trình sản xuất và kiểm soát tĩnh điện ESD của khách hàng.",
+    "th": "เพื่อตอบสนองความต้องการผลิต PCB จำนวนมากระดับกลางถึงต่ำในประเทศ รองรับสภาพการผลิตมาตรฐานรีฟลาวเดี่ยวของบอร์ดหลักอิเล็กทรอนิกส์ผู้บริโภค บอร์ดควบคุมเครื่องใช้ไฟฟ้าขนาดเล็ก และบอร์ดจ่ายไฟทั่วไป เติมช่องว่างการเลือกฉลากสำหรับสายการผลิตราคาประหยัดจำนวนมาก เราเปิดตัวตระกูลฉลาก PI ทนต่ออุณหภูมิสูงซีรีส์ E ที่ผลิตในประเทศอย่างครบวงจร ด้วยสต็อกสินค้าพร้อมใช้ในท้องถิ่นและบริการเทคนิคที่รวดเร็ว รองรับความต้องการงบประมาณ ขั้นตอนการผลิต และการควบคุมไฟฟ้าสถิต ESD ที่แตกต่างกันของลูกค้า"
+  },
+  "challenges": {},
+  "features": {
+    "en": [
+      "Excellent Temperature Resistance, Suitable for Full Welding Process: Featuring strict reflow and wave soldering working conditions, E-LABEL domestic E-series PI labels offer a wide temperature resistance range from -40℃ to 300℃, with special models resisting instantaneous high temperature up to 350℃. The labels maintain stable structure and clear barcodes without warping, falling off or carbonization after repeated high-temperature cycles, perfectly fitting the full PCB welding process and meeting long-term traceability needs of mass production.",
+      "Professional Anti-static Design, Ensure Production Yield: High-speed printing and labeling easily generate friction static electricity, which may damage precision electronic components. E-LABEL ESD series adopts professional anti-static surface material to continuously release static electricity and avoid static accumulation, effectively protecting sensitive chips and components, eliminating static defects and stably improving overall production yield.",
+      "Full Product Coverage, Adaptable to Multi-scenario Mass Production: The E-series includes 4 product lines and more than 20 standardized in-stock models with complete specifications of various thicknesses, surfaces and adhesives. It fully adapts to mass production scenarios of consumer electronic mainboards, small appliance boards and power boards, compatible with mainstream thermal transfer printing and full production processes, compliant with RoHS environmental standards, solving all high-temperature traceability material selection needs in one stop.",
+      "Local Mass Production & Efficient Delivery: All series are in stock locally with fast sample delivery and mass replenishment cycles, avoiding production line shutdowns. Flexible supply covers small-batch trial production to million-level mass production, covering the whole project cycle from R&D, trial production to stable mass production.",
+      "Local Technical Support, Rapid On-site Problem Solving: Relying on the local technical team, we provide rapid on-site commissioning to solve printing adaptation, high-temperature warping, labeling errors and other production line problems, eliminating cross-region communication delays and efficiently adapting to customer mass production conditions.",
+      "Hierarchical Selection & One-stop Full Coverage: Covering four product lines: general low-cost, high-adhesion, high-temperature removable and ESD anti-static. 20 standardized models require no non-standard customization, accurately matching diverse processes and scenarios, greatly reducing customers’ SKU inventory and selection pressure."
+    ],
+    "zh": [
+      "极致耐温性能，适配全焊接制程：回流焊、波峰焊工序工况严苛，E-LABEL本土E系列PI标签具备-40℃~300℃宽域耐温能力，特种型号可耐受350℃短时高温。多次高温循环后标签不起翘、不脱落、不碳化，结构稳定、条码清晰可读，完美适配PCB批量焊接全流程，满足大批量量产长期追溯需求",
+      "专业防静电，保障量产良率：高速印刷与贴标易产生摩擦静电，极易损伤精密电子元件。E-LABEL ESD系列搭载专用抗静电面材，可持续缓释静电、避免静电积聚，有效保护敏感芯片与元器件，杜绝静电不良，稳定提升整体生产良率",
+      "全品类覆盖，适配多场景量产：E系列拥有四大产品线、20余款标准化现货型号，多厚度、多表面、多胶系规格齐全。可全面适配消费电子主板、小家电板、电源板等大批量PCB量产场景，兼容主流热转印打印与全生产制程，符合RoHS环保标准，一站式解决各类高温追溯选材需求",
+      "本土量产交付，高效保障量产：全系列国内常备现货，试样加急交付、大批量补货周期短，有效杜绝产线停工待料。支持小批量试产至百万级量产灵活供货，全面覆盖项目研发、试产、稳定量产全周期",
+      "属地技术赋能，快速解决产线问题：依托本土技术团队，可快速对接现场调试，针对性解决打印适配、高温过炉翘标、贴标异常等产线问题，无跨区域沟通滞后，高效适配客户量产工况",
+      "四大系列分层选型，一站式全覆盖：涵盖基础通用、超粘高附着、高温可移除、防静电ESD四大产品线，20款标准化定型型号，无需非标定制，精准匹配不同工艺与应用场景，大幅降低客户SKU库存与选型压力"
+    ],
+    "vi": [
+      "Chịu nhiệt vượt trội, phù hợp toàn bộ quy trình hàn: Với điều kiện làm việc khắc nghiệt của quy trình hàn lưu nhiệt và hàn sóng, nhãn PI dòng E sản xuất trong nước E-LABEL có khả năng chịu nhiệt rộng từ -40℃ đến 300℃, các loại đặc biệt chịu được nhiệt cao tức thời lên đến 350℃. Nhãn giữ cấu trúc ổn định, mã vạch rõ ràng không cong vênh, rơi ra hoặc bị cacbon hóa sau nhiều chu kỳ nhiệt cao, hoàn toàn phù hợp quy trình hàn PCB toàn diện và đáp ứng nhu cầu truy vết dài hạn trong sản xuất hàng loạt.",
+      "Chống tĩnh điện chuyên nghiệp, đảm bảo tỷ lệ sản phẩm tốt: In ấn và dán nhãn tốc độ cao dễ tạo ra tĩnh điện ma sát, có thể làm hỏng linh kiện điện tử chính xác. Dòng ESD E-LABEL sử dụng vật liệu bề mặt chống tĩnh điện chuyên dụng, giải phóng tĩnh điện liên tục và tránh tích tụ tĩnh điện, bảo vệ chip và linh kiện nhạy cảm hiệu quả, loại bỏ lỗi do tĩnh điện và nâng cao tỷ lệ sản phẩm tốt tổng thể.",
+      "Bao phủ toàn bộ loại sản phẩm, phù hợp sản xuất hàng loạt đa tình huống: Dòng E có 4 dòng sản phẩm và hơn 20 mẫu tiêu chuẩn có sẵn với đầy đủ độ dày, bề mặt và loại keo đa dạng. Phù hợp toàn diện với các tình huống sản xuất hàng loạt bo mạch chính điện tử tiêu dùng, bo mạch thiết bị gia dụng nhỏ, bo mạch nguồn, tương thích in chuyển nhiệt phổ biến và toàn bộ quy trình sản xuất, đạt tiêu chuẩn môi trường RoHS, giải quyết mọi nhu cầu lựa chọn vật liệu truy vết nhiệt cao một cách toàn diện.",
+      "Sản xuất trong nước & Giao hàng hiệu quả: Toàn bộ dòng sản phẩm có hàng sẵn trong nước, giao mẫu nhanh và bổ sung hàng loạt chu kỳ ngắn, tránh ngừng sản xuất do thiếu vật liệu. Hỗ trợ linh hoạt từ sản xuất thử lô nhỏ đến sản xuất hàng triệu sản phẩm, bao gồm toàn bộ chu kỳ dự án từ nghiên cứu, thử sản xuất đến sản xuất ổn định.",
+      "Hỗ trợ kỹ thuật địa phương, xử lý sự cố nhanh: Đội ngũ kỹ thuật địa phương hỗ trợ điều chỉnh tại hiện trường nhanh chóng, giải quyết vấn đề tương thích in ấn, nhãn cong vênh ở nhiệt cao, lỗi dán nhãn… không có độ trễ giao tiếp xuyên vùng, phù hợp hiệu quả với điều kiện sản xuất của khách hàng.",
+      "Lựa chọn phân tầng & Bao phủ một cửa: Bao gồm 4 dòng sản phẩm: phổ thông giá rẻ, độ bám cao, có thể tháo rời không dư keo và chống tĩnh ESD. 20 mẫu tiêu chuẩn không cần tùy chỉnh phi chuẩn, phù hợp chính xác với nhiều quy trình và tình huống, giảm áp lực quản lý kho SKU và lựa chọn sản phẩm cho khách hàng."
+    ],
+    "th": [
+      "ทนต่ออุณหภูมิสูงเยี่ยม รองรับขั้นตอนการเชื่อมทั้งหมด: ด้วยสภาพการทำงานที่เข้มงวดของการเชื่อมรีฟลาวและเวฟโซลเดอร์ ฉลาก PI ซีรีส์ E ที่ผลิตในประเทศ E-LABEL มีช่วงอุณหภูมิทนตั้งแต่ -40℃ ถึง 300℃ รุ่นพิเศษทนต่ออุณหภูมิสูงชั่วคราวสูงสุด 350℃ ฉลากยังคงโครงสร้างที่เสถียร บาร์โค้ดชัดเจน ไม่โค้งงอ หลุด หรือคาร์บอนไลซ์หลังจากวนรอบอุณหภูมิสูงซ้ำๆ เหมาะสำหรับขั้นตอนการเชื่อม PCB ทั้งหมดและตอบสนองความต้องการติดตามระยะยาวในการผลิตจำนวนมาก",
+      "ออกแบบป้องกันไฟฟ้าสถิตอย่างมืออาชีพ รับประกันอัตราการผลิตที่ดี: การพิมพ์และติดฉลากความเร็วสูงมักสร้างไฟฟ้าสถิตจากการเสียดสี ซึ่งอาจทำลายชิ้นส่วนอิเล็กทรอนิกส์ที่ละเอียดอ่อน ซีรีส์ ESD ของ E-LABEL ใช้วัสดุผิวป้องกันไฟฟ้าสถิตเฉพาะทาง ช่วยปล่อยไฟฟ้าสถิตอย่างต่อเนื่อง ป้องกันการสะสมไฟฟ้าสถิต ปกป้องชิปและชิ้นส่วนที่ละเอียดอ่อนได้อย่างมีประสิทธิภาพ กำจัดข้อบกพร่องจากไฟฟ้าสถิต และเพิ่มอัตราการผลิตที่ดีโดยรวม",
+      "ครอบคลุมสินค้าทุกประเภท รองรับการผลิตจำนวนมากหลายสถานการณ์: ซีรีส์ E มี 4 สายผลิตภัณฑ์และมากกว่า 20 รุ่นมาตรฐานที่มีสต็อก พร้อมขนาดความหนา ผิวสัมผัส และกาวที่หลากหลายครบครัน รองรับการผลิต PCB จำนวนมาก เช่น บอร์ดหลักอิเล็กทรอนิกส์ผู้บริโภค บอร์ดเครื่องใช้ไฟฟ้าขนาดเล็ก และบอร์ดจ่ายไฟ เข้ากันได้กับการพิมพ์ถ่ายเทความร้อนยอดนิยมและขั้นตอนการผลิตทั้งหมด สอดคล้องกับมาตรฐานสิ่งแวดล้อม RoHS ตอบสนองความต้องการเลือกวัสดุสำหรับติดตามอุณหภูมิสูงได้ทุกประเภทในที่เดียว",
+      "ผลิตในประเทศ ส่งมอบรวดเร็วรองรับการผลิต: สินค้าทุกรุ่นมีสต็อกในประเทศ ส่งตัวอย่างฉุกเฉินและสั่งซื้อจำนวนมากรวดเร็ว ป้องกันสายการผลิตหยุดชะงักจากขาดวัสดุ รองรับการผลิตทดลองขนาดเล็กจนถึงการผลิตจำนวนมากครอบคลุมทุกขั้นตอนโครงการ",
+      "ทีมเทคนิคในท้องถิ่น แก้ไขปัญหาสายการผลิตได้รวดเร็ว: มีทีมเทคนิคประจำท้องถิ่นให้บริการปรับตั้งหน้างาน แก้ไขปัญหาการพิมพ์ ฉลากโค้งงอที่อุณหภูมิสูง การติดฉลากผิดปกติโดยไม่มีความล่าช้าในการสื่อสารข้ามพื้นที่ รองรับสภาพการผลิตของลูกค้าได้อย่างมีประสิทธิภาพ",
+      "เลือกสินค้าแยกเกรด ครอบคลุมทุกความต้องการในที่เดียว: ครอบคลุม 4 สายสินค้า ได้แก่ รุ่นทั่วไปราคาประหยัด รุ่นกาวเหนียวพิเศษ รุ่นถอดออกไม่ทิ้งคราบ และรุ่นป้องกันไฟฟ้าสถิต มี 20 รุ่นมาตรฐาน ไม่ต้องสั่งทำพิเศษ ตอบสนองขั้นตอนและสถานการณ์ที่แตกต่างกัน ช่วยลดภาระการจัดการสต็อกและการเลือกสินค้าของลูกค้า"
+    ]
+  },
+  "benefits": {},
+  "spec": {
+    "en": [
+      "E-85XX general low-cost line: E-8511, E-8511TT, E-8512, E-8512TT, E-8531, E-8531B, E-8532, E-8532TT, E-8532W, E-8532+PET liner",
+      "E-88XX high-adhesion line: E-8811, E-8812, E-8832",
+      "E-86XX removable no-residue line: E-8611, E-8631, E-8632S (peak 350℃)",
+      "E-87XX ESD anti-static line: E-8711, E-8731, E-8732, E-8732W"
+    ],
+    "zh": [
+      "E-85XX 基础低成本通用系列：E-8511、E-8511TT、E-8512、E-8512TT、E-8531、E-8531B、E-8532、E-8532TT、E-8532W、E-8532+PET底纸",
+      "E-88XX 超粘高附着力系列：E-8811、E-8812、E-8832",
+      "E-86XX 高温可移除无残胶系列：E-8611、E-8631、E-8632S（峰值350℃）",
+      "E-87XX 防静电ESD系列：E-8711、E-8731、E-8732、E-8732W"
+    ],
+    "vi": [
+      "Dòng E-85XX phổ thông giá rẻ: E-8511, E-8511TT, E-8512, E-8512TT, E-8531, E-8531B, E-8532, E-8532TT, E-8532W, E-8532+PET liner",
+      "Dòng E-88XX độ bám cao: E-8811, E-8812, E-8832",
+      "Dòng E-86XX có thể tháo rời không dư keo: E-8611, E-8631, E-8632S (đỉnh 350℃)",
+      "Dòng E-87XX chống tĩnh điện ESD: E-8711, E-8731, E-8732, E-8732W"
+    ],
+    "th": [
+      "สาย E-85XX รุ่นทั่วไปราคาประหยัด: E-8511, E-8511TT, E-8512, E-8512TT, E-8531, E-8531B, E-8532, E-8532TT, E-8532W, E-8532+PET liner",
+      "สาย E-88XX รุ่นกาวเหนียวพิเศษ: E-8811, E-8812, E-8832",
+      "สาย E-86XX รุ่นถอดออกไม่ทิ้งคราบ: E-8611, E-8631, E-8632S (สูงสุด 350℃)",
+      "สาย E-87XX รุ่นป้องกันไฟฟ้าสถิต ESD: E-8711, E-8731, E-8732, E-8732W"
+    ]
+  },
+  "applications": {
+    "en": ["Consumer electronics mainboards", "Small home appliance control boards", "General power boards"],
+    "zh": ["消费电子主板", "小家电控制板", "普通电源板"],
+    "vi": ["Bo mạch chính điện tử tiêu dùng", "Bo mạch điều khiển thiết bị gia dụng nhỏ", "Bo mạch nguồn thông thường"],
+    "th": ["บอร์ดหลักอิเล็กทรอนิกส์ผู้บริโภค", "บอร์ดควบคุมเครื่องใช้ไฟฟ้าขนาดเล็ก", "บอร์ดจ่ายไฟทั่วไป"]
+  },
+  "certifications": {
+    "en": ["RoHS compliant"],
+    "zh": ["符合 RoHS 环保标准"],
+    "vi": ["Đạt tiêu chuẩn RoHS"],
+    "th": ["สอดคล้องกับมาตรฐานสิ่งแวดล้อม RoHS"]
+  }
+}

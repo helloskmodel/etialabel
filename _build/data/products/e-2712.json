@@ -1,99 +1,132 @@
 {
   "slug": "e-2712",
-  "source": "_docs/sources/pcb-products_4lang (E-2712)",
+  "source": "_docs/sources/PCB E-2712",
   "langs": ["en", "zh", "vi", "th"],
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg",
+  "banner": "",
   "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712",
-  "title": {"en": "E-2712 2-Layer Dual Anti-Static PET Label", "zh": "E-2712 双层双抗静电 PET 标签", "vi": "Nhãn PET 2 lớp kép chống tĩnh E-2712", "th": "ฉลาก PET โครงสร้าง 2 ชั้น ป้องกันไฟฟ้าสถิตคู่ รุ่น E-2712"},
-  "tagline": {"en": "A 2-layer dual anti-static structure that lowers the risk of static damage to microchips", "zh": "双层双抗结构，降低静电击穿芯片风险", "vi": "Cấu trúc 2 lớp kép chống tĩnh, giảm rủi ro hư hỏng chip do tĩnh điện", "th": "โครงสร้าง 2 ชั้นป้องกันไฟฟ้าสถิตคู่ ช่วยลดความเสี่ยงชิปเสียจากไฟฟ้าสถิต"},
+  "title": {
+    "en": "E-2712 — Dual Anti-Static PET Label",
+    "zh": "双抗静电 PET 标签 E-2712",
+    "vi": "Nhãn PET kép chống tĩnh E-2712",
+    "th": "ฉลาก PET ป้องกันไฟฟ้าสถิตคู่ รุ่น E-2712"
+  },
+  "tagline": {
+    "en": "E-2712 is constructed with 2mil white dual-layer anti-static PET substrate and permanent anti-static acrylic pressure-sensitive adhesive.",
+    "zh": "E-2712 采用 2mil 白色双层双抗静电 PET 基材，搭配长效防静电丙烯酸压敏胶",
+    "vi": "E-2712 sử dụng nền PET trắng 2mil cấu trúc 2 lớp chống tĩnh kép, kết hợp keo dính áp lực acrylic chống tĩnh lâu dài.",
+    "th": "รุ่น E-2712 ทำจากแผ่น PET สีขาวหนา 2mil โครงสร้าง 2 ชั้นป้องกันไฟฟ้าสถิตคู่ ผสานกาวอะคริลิกป้องกันไฟฟ้าสถิตยาวนาน"
+  },
   "positioning": {
-    "en": "An ESD, flame-retardant tracking label for cleanrooms — stable in use 24 hours after labeling, suitable for a range of demanding electronic processes.",
-    "zh": "适配无尘车间 ESD 阻燃追溯标签，贴标静置 24h 后稳定使用，适配多类严苛电子制程。",
-    "vi": "Nhãn theo dõi chống tĩnh, chống cháy dùng cho phòng sạch — hoạt động ổn định sau khi dán 24 giờ, phù hợp nhiều quy trình điện tử khắt khe.",
-    "th": "ฉลากติดตามป้องกันไฟฟ้าสถิตและป้องกันไฟไหม้สำหรับห้องสะอาด ทำงานเสถียรหลังติดฉลาก 24 ชั่วโมง เหมาะกับกระบวนการผลิตอิเล็กทรอนิกส์หลายประเภท"
+    "en": "E-2712 is constructed with 2mil white dual-layer anti-static PET substrate and permanent anti-static acrylic pressure-sensitive adhesive. Designed for traceability of PCBs and precision electronic components, it supports thermal transfer printing with outstanding temperature and solvent resistance.",
+    "zh": "E-2712 采用 2mil 白色双层双抗静电 PET 基材，搭配长效防静电丙烯酸压敏胶，主打 PCB 与精密元器件防静电追溯场景，支持热转印打印，兼具出色耐温、耐溶剂能力",
+    "vi": "E-2712 sử dụng nền PET trắng 2mil cấu trúc 2 lớp chống tĩnh kép, kết hợp keo dính áp lực acrylic chống tĩnh lâu dài. Sản phẩm được thiết kế cho truy xuất PCB và linh kiện điện tử chính xác, hỗ trợ in chuyển nhiệt, chịu nhiệt và dung môi rất tốt.",
+    "th": "รุ่น E-2712 ทำจากแผ่น PET สีขาวหนา 2mil โครงสร้าง 2 ชั้นป้องกันไฟฟ้าสถิตคู่ ผสานกาวอะคริลิกป้องกันไฟฟ้าสถิตยาวนาน ออกแบบสำหรับติดตาม PCB และชิ้นส่วนอิเล็กทรอนิกส์ละเอียดอ่อน รองรับการพิมพ์ถ่ายเทความร้อน ทนทานต่ออุณหภูมิสูงและสารละลายได้ดีเยี่ยม"
   },
-  "challenges": {
-    "en": ["Conventional labels have only single-layer anti-static performance; static can be generated while peeling the liner, risking damage to tiny chips."],
-    "zh": ["普通标签仅单层防静电，撕膜过程易产生静电，存在微型芯片损坏隐患。"],
-    "vi": ["Nhãn thông thường chỉ có một lớp chống tĩnh; bóc giấy lót dễ sinh tĩnh điện, gây nguy cơ hư hỏng chip siêu nhỏ."],
-    "th": ["ฉลากทั่วไปมีชั้นป้องกันไฟฟ้าสถิตเพียงชั้นเดียว การลอกกระดาษรองอาจเกิดไฟฟ้าสถิต ทำให้ชิปขนาดเล็กเสียหาย"]
-  },
+  "challenges": {},
   "features": {
     "en": [
-      "Material structure: 2 mil anti-static white PET substrate + transparent flame-retardant anti-static acrylic adhesive — a 2-layer dual anti-static construction",
-      "ESD specs: peel voltage <100V, compliant with EOS/ESD STM 11.11, with stable static suppression in long-term use",
-      "Temperature: operating -40℃ ~ +149℃ (24h after labeling); substrate + adhesive reach UL 94 VTM-0 flame rating",
-      "Adhesive: transparent flame-retardant glue with high initial and ultimate tack, resistant to isopropanol and acid/alkaline industrial cleaners",
-      "Print: smooth coating fits all thermal-transfer ribbons; ultra-fine barcodes stay clear and scratch-resistant",
-      "Compliance: meets RoHS, free of restricted hazardous substances"
+      "Wide printing compatibility: Works with color & black resin/wax-resin thermal ribbons, as well as solvent-based and water-based inks, delivering crisp, scratch-resistant barcodes.",
+      "Superior adhesion, firmly sticks to various workpiece surfaces.",
+      "Excellent comprehensive durability: Resistant to abrasion, chemical solvents, high temperature and high humidity."
     ],
     "zh": [
-      "材质结构：2mil 白色 PET 防静电基材 + 透明阻燃防静电丙烯酸胶，双层双抗静电构造",
-      "防静电参数：剥离电压＜100V，符合 EOS/ESD STM 11.11 标准，长期使用静电抑制性能稳定",
-      "耐温参数：贴标静置 24h 使用温度 -40℃ ~ +149℃；基材 + 胶粘剂整体阻燃 UL 94 VTM-0",
-      "胶水性能：高初粘、高终粘透明阻燃胶，耐受异丙醇、酸碱工业清洗剂",
-      "打印适配：平整涂层适配各品牌热转印碳带，超细条码清晰、耐摩擦",
-      "合规标准：符合 RoHS 环保管控，不含受限有害物质"
+      "打印适配广：兼容彩色、黑色树脂 / 蜡树脂热转印碳带，也可搭配溶剂、水性油墨印刷，条码清晰耐磨",
+      "附着力优秀，可稳定贴合各类工件表面",
+      "综合耐候性强，耐摩擦、耐化学溶剂、耐高温、耐潮湿"
     ],
     "vi": [
-      "Cấu trúc vật liệu: Nền PET trắng chống tĩnh 2mil + keo acrylic chống tĩnh trong suốt chống cháy — cấu trúc 2 lớp kép chống tĩnh",
-      "Thông số chống tĩnh: Điện áp bóc tách <100V, tuân thủ EOS/ESD STM 11.11, khả năng chống tĩnh ổn định khi sử dụng lâu dài",
-      "Chịu nhiệt: Nhiệt độ sử dụng -40℃ ~ +149℃ sau khi dán 24 giờ; nền và keo đạt cấp chống cháy UL 94 VTM-0",
-      "Tính chất keo: Keo trong suốt chống cháy, độ dính ban đầu và cuối cao, chịu cồn isopropyl và dung dịch axit/bazơ công nghiệp",
-      "Tương thích in: Lớp phủ mịn phù hợp mọi loại băng chuyển nhiệt; mã vạch siêu nhỏ rõ nét, chống xước",
-      "Tuân thủ: Đạt chuẩn RoHS, không chứa chất độc bị hạn chế"
+      "Tương thích nhiều loại in: Hoạt động tốt với băng chuyển nhiệt nhựa màu/đen, cũng như mực dung môi và mực nước, mã vạch rõ nét chống xước.",
+      "Độ bám cao, dính chặt trên mọi bề mặt vật liệu sản xuất.",
+      "Bền toàn diện: Chịu ma sát, dung môi hóa chất, nhiệt cao và độ ẩm lớn."
     ],
     "th": [
-      "โครงสร้างวัสดุ: แผ่น PET สีขาวป้องกันไฟฟ้าสถิต หนา 2mil + กาวอะคริลิกใสป้องกันไฟไหม้ป้องกันไฟฟ้าสถิต โครงสร้าง 2 ชั้นป้องกันไฟฟ้าสถิตคู่",
-      "สเปคป้องกันไฟฟ้าสถิต: แรงดันขณะลอก <100V ตามมาตรฐาน EOS/ESD STM 11.11 ป้องกันไฟฟ้าสถิตเสถียรในการใช้งานระยะยาว",
-      "ทนอุณหภูมิ: ช่วงใช้งาน -40℃ ~ +149°C หลังติดฉลาก 24 ชั่วโมง วัสดุฐานและกาวผ่านเกรดป้องกันไฟไหม้ UL 94 VTM-0",
-      "คุณสมบัติกาว: กาวใสป้องกันไฟไหม้ แรงยึดเกาะสูงตอนเริ่มและถาวร ทนแอลกอฮอล์ไอโซโปรพิลและสารกรด/เบสอุตสาหกรรม",
-      "การพิมพ์: ชั้นผิวเรียบเข้ากับริบบอนทุกยี่ห้อ บาร์โค้ดขนาดเล็กชัดเจน ทนการขูดขีด",
-      "มาตรฐาน: ผ่าน RoHS ไม่มีสารอันตรายที่ถูกจำกัด"
+      "เข้ากันได้กับวัสดุพิมพ์หลายชนิด ใช้ริบบอนเรซินสี/ดำ ริบบอนแว็กซ์เรซิน รวมถึงหมึกสารละลายและหมึกน้ำ บาร์โค้ดชัดเจน ทนต่อการขูดขีด",
+      "แรงยึดเกาะสูง ติดแน่นบนผิววัสดุหลายประเภท",
+      "ความทนทานรอบด้าน ทนต่อการเสียดสี สารเคมี อุณหภูมิสูง และความชื้นสูง"
     ]
   },
   "benefits": {
     "en": [
-      "The 2-layer dual anti-static design reduces static-induced chip damage, cutting scrap and compensation cost",
-      "Heat- and wash-resistant; barcodes stay scannable throughout, reducing manual re-inspection and rework",
-      "One label integrates ESD, flame-retardant and temperature performance, simplifying inventory categories",
-      "RoHS compliant, easing factory audits and export for domestic and overseas customers"
+      "Dual-layer anti-static design suppresses static buildup twice over, drastically cutting chip breakdown and scrap loss.",
+      "Heat & solvent resistant to fit full manufacturing workflows with consistently scannable barcodes to reduce rework.",
+      "One single label covers traceability demands across electronics and new energy sectors, simplifying inventory management."
     ],
     "zh": [
-      "双层双抗静电设计，减少静电造成芯片损坏，降低报废与赔付成本",
-      "耐高温、耐清洗，条码全程可扫描，减少人工复检与返工损耗",
-      "单款集成 ESD、阻燃、耐温多重性能，简化物料库存品类",
-      "RoHS 合规，便于海内外工厂审厂、货物出口"
+      "双层双抗静电结构双重抑制静电产生，大幅降低芯片击穿报废风险",
+      "耐温耐溶剂适配全生产工序，条码全程清晰可扫，减少返工损耗",
+      "一款标签覆盖电子、新能源多类追溯需求，简化物料库存管理"
     ],
     "vi": [
-      "Thiết kế 2 lớp kép chống tĩnh giảm hư hỏng chip do tĩnh, cắt chi phí phế liệu và bồi thường",
-      "Chịu nhiệt và dung dịch rửa; mã vạch đọc được suốt quy trình, giảm kiểm tra thủ công và sửa chữa",
-      "Một mã tích hợp chống tĩnh, chống cháy, chịu nhiệt — đơn giản hóa quản lý kho vật tư",
-      "Đạt RoHS, thuận tiện kiểm tra nhà máy và xuất khẩu hàng hóa ra nước ngoài"
+      "Cấu trúc 2 lớp kép chống tĩnh ngăn chặn sự hình thành điện tĩnh kép, giảm mạnh nguy cơ hư hỏng chip và hàng phế liệu.",
+      "Chịu nhiệt, dung môi phù hợp toàn bộ quy trình sản xuất, mã vạch luôn đọc được để cắt chi phí sửa chữa.",
+      "Một loại nhãn đáp ứng nhu cầu truy xuất ngành điện tử và năng lượng mới, đơn giản hóa quản lý kho hàng."
     ],
     "th": [
-      "โครงสร้าง 2 ชั้นป้องกันไฟฟ้าสถิตคู่ ลดชิปเสียจากไฟฟ้าสถิต ตัดต้นทุนของเสียและค่าชดเชย",
-      "ทนอุณหภูมิและสารล้าง บาร์โค้ดอ่านได้ตลอดกระบวนการ ลดการตรวจด้วยมือและงานซ่อม",
-      "รุ่นเดียวรวมป้องกันไฟฟ้าสถิต ป้องกันไฟไหม้ และทนอุณหภูมิ จัดการสต็อกง่ายขึ้น",
-      "ผ่าน RoHS ทำให้การตรวจโรงงานและส่งออกสินค้าราบรื่น"
+      "โครงสร้าง 2 ชั้นป้องกันไฟฟ้าสถิตคู่ ช่วยยับยั้งการสะสมไฟฟ้าสถิตสองชั้น ลดความเสี่ยงชิปเสียและของเสียจำนวนมาก",
+      "ทนความร้อนและสารละลาย เข้ากับทุกขั้นตอนการผลิต บาร์โค้ดอ่านได้ตลอดเวลา ลดงานซ่อมแซม",
+      "เพียงรุ่นเดียวตอบโจทย์การติดตามสินค้าอิเล็กทรอนิกส์และพลังงานใหม่ ช่วยจัดการสต็อกวัสดุได้ง่ายขึ้น"
     ]
   },
   "spec": {
-    "en": ["Standard model: E-2712 white PET 2-layer dual anti-static label", "Customizable: any slit width; roll or sheet as required", "Use categories: cleanroom ESD control · PCB process traceability · energy-storage flame-retardant marking"],
-    "zh": ["标准型号：E-2712 白色 PET 双层双抗静电标签", "可定制：任意宽度分切，卷材 / 单张按需生产", "适用区分：无尘车间管控 · PCB 制程追溯 · 储能阻燃标识"],
-    "vi": ["Mã chuẩn: E-2712 Nhãn PET trắng 2 lớp kép chống tĩnh", "Tùy chỉnh: Cắt theo mọi độ rộng; dạng cuộn hoặc tấm theo yêu cầu", "Phân loại sử dụng: Quản lý ESD phòng sạch · theo dõi quy trình PCB · nhãn chống cháy thiết bị lưu trữ năng lượng"],
-    "th": ["รุ่นมาตรฐาน: E-2712 ฉลาก PET สีขาว 2 ชั้นป้องกันไฟฟ้าสถิตคู่", "ปรับแต่ง: ตัดขนาดตามต้องการ ม้วนหรือแผ่น", "การใช้งาน: ควบคุม ESD ห้องสะอาด · ติดตามกระบวนการ PCB · ฉลากป้องกันไฟไหม้อุปกรณ์เก็บพลังงาน"]
+    "en": [
+      "Thickness: Substrate 0.052mm, Adhesive 0.025mm, Liner 0.070mm",
+      "Adhesion Performance: Peel strength 15N/25mm, Initial tack 13N/25mm, Holding power ≥48h/25mm",
+      "ESD Standard (EOS/ESD STM 11.11): Surface resistance 10⁸~10¹¹Ω/sq, Adhesive resistance 10⁷~10¹¹Ω/sq, Peel voltage ＜100V",
+      "Operating Temperature: -40℃ ~ 180℃",
+      "Storage Condition: 1-year shelf life at 22℃ & 50% relative humidity"
+    ],
+    "zh": [
+      "厚度：基材 0.052mm，胶层 0.025mm，底纸 0.070mm",
+      "粘结性能：剥离力 15N/25mm，初粘力 13N/25mm，持粘力≥48h/25mm",
+      "ESD 防静电标准（EOS/ESD STM 11.11）：涂层面电阻率 10⁸~10¹¹Ω/□，胶面电阻率 10⁷~10¹¹Ω/□，剥离电压＜100V",
+      "使用温度：-40℃ ~ 180℃",
+      "储存要求：22℃、相对湿度 50% 环境，保质期 1 年"
+    ],
+    "vi": [
+      "Độ dày: Nền 0,052mm, Keo 0,025mm, Giấy lót 0,070mm",
+      "Tính bám: Độ bóc 15N/25mm, Độ dính ban đầu 13N/25mm, Giữ bám ≥48h/25mm",
+      "Tiêu chuẩn ESD (EOS/ESD STM 11.11): Điện trở bề mặt 10⁸~10¹¹Ω/vuông, Điện trở keo 10⁷~10¹¹Ω/vuông, Điện áp bóc ＜100V",
+      "Nhiệt độ sử dụng: -40℃ ~ 180℃",
+      "Điều kiện lưu kho: Hạn sử dụng 1 năm ở 22℃, độ ẩm tương đối 50%"
+    ],
+    "th": [
+      "ความหนา: แผ่นฐาน 0.052mm กาว 0.025mm กระดาษรอง 0.070mm",
+      "คุณสมบัติแรงยึด: แรงลอก 15N/25mm แรงยึดเริ่มต้น 13N/25mm แรงยึดถาวร ≥48ชั่วโมง/25mm",
+      "มาตรฐาน ESD (EOS/ESD STM 11.11): ค่าความต้านทานผิว 10⁸~10¹¹โอห์ม/ตารางนิ้ว ค่าความต้านทานกาว 10⁷~10¹¹โอห์ม/ตารางนิ้ว แรงดันขณะลอก ＜100โวลต์",
+      "ช่วงอุณหภูมิใช้งาน: -40℃ ~ 180℃",
+      "เงื่อนไขเก็บรักษา: อายุการเก็บ 1 ปี ที่อุณหภูมิ 22°C ความชื้นสัมพัทธ์ 50%"
+    ]
   },
   "applications": {
-    "en": ["Batch traceability for rigid-flex PCBs and control boards on SMT lines", "Tray labels for chips, capacitors and other components", "Cleanroom fixture, jig and material-tray sorting labels", "Internal-component marking for new-energy storage equipment"],
-    "zh": ["PCB 软硬板、工控板 SMT 生产批次追溯", "芯片、电容等元器件物料托盘标识", "无尘车间工装、治具、料盘分类标签", "新能源储能设备内部组件标识"],
-    "vi": ["Theo dõi lô PCB cứng-mềm và bo điều khiển trên dây chuyền SMT", "Nhãn khay chứa chip, tụ điện và các linh kiện khác", "Nhãn phân loại đồ gá, khay vật liệu trong phòng sạch", "Đánh dấu bộ phận bên trong thiết bị lưu trữ năng lượng mới"],
-    "th": ["ติดตามล็อตการผลิต PCB แข็ง-อ่อนและบอร์ดควบคุมบนไลน์ SMT", "ฉลากสำหรับถาดเก็บชิป ตัวเก็บประจุและชิ้นส่วนอื่นๆ", "ฉลากแยกประเภทอุปกรณ์จับยึดและถาดวัสดุในห้องสะอาด", "ติดฉลากชิ้นส่วนภายในอุปกรณ์เก็บพลังงานใหม่"]
+    "en": [
+      "Traceability labels for PCBs and precision electronic parts",
+      "Component & material tags for new energy and semiconductor industries",
+      "Asset nameplates for factory equipment, jigs and fixtures",
+      "Warehouse material labels & workshop safety warning stickers"
+    ],
+    "zh": [
+      "PCB 电路板、精密电子元器件生产追溯标识",
+      "新能源、半导体行业物料与组件标签",
+      "工厂设备、工装治具资产分类铭牌",
+      "仓储物料、车间安全警示标识"
+    ],
+    "vi": [
+      "Nhãn truy xuất sản xuất cho PCB và linh kiện điện tử tinh vi",
+      "Nhãn vật tư, bộ phận ngành bán dẫn và năng lượng mới",
+      "Bảng tên tài sản cho máy móc, đồ gá nhà xưởng",
+      "Nhãn vật tư kho và nhãn cảnh báo an toàn xưởng sản xuất"
+    ],
+    "th": [
+      "ฉลากติดตามการผลิต PCB และชิ้นส่วนอิเล็กทรอนิกส์ละเอียดอ่อน",
+      "ฉลากวัสดุและชิ้นส่วนสำหรับอุตสาหกรรมเซมิคอนดักเตอร์และพลังงานใหม่",
+      "ป้ายระบุทรัพย์สินเครื่องจักร อุปกรณ์จับยึดในโรงงาน",
+      "ฉลากวัสดุคลังและป้ายเตือนความปลอดภัยโรงงาน"
+    ]
   },
   "certifications": {
-    "en": ["Anti-static: passed EOS/ESD STM 11.11", "Flame-retardant: substrate + adhesive reach UL 94 VTM-0", "Environmental: passed RoHS hazardous-substance testing"],
-    "zh": ["防静电：通过 EOS/ESD STM 11.11 检测", "阻燃：基材 + 胶整体达 UL 94 VTM-0 等级", "环保：RoHS 有害物质检测合格"],
-    "vi": ["Chống tĩnh: Đạt EOS/ESD STM 11.11", "Chống cháy: Nền và keo đạt UL 94 VTM-0", "Môi trường: Đạt kiểm tra chất độc RoHS"],
-    "th": ["ป้องกันไฟฟ้าสถิต: ผ่าน EOS/ESD STM 11.11", "ป้องกันไฟไหม้: วัสดุฐานและกาวผ่าน UL 94 VTM-0", "สิ่งแวดล้อม: ผ่านการตรวจสารอันตราย RoHS"]
+    "en": ["ESD Standard (EOS/ESD STM 11.11): Surface resistance 10⁸~10¹¹Ω/sq, Adhesive resistance 10⁷~10¹¹Ω/sq, Peel voltage ＜100V"],
+    "zh": ["ESD 防静电标准（EOS/ESD STM 11.11）：涂层面电阻率 10⁸~10¹¹Ω/□，胶面电阻率 10⁷~10¹¹Ω/□，剥离电压＜100V"],
+    "vi": ["Tiêu chuẩn ESD (EOS/ESD STM 11.11): Điện trở bề mặt 10⁸~10¹¹Ω/vuông, Điện trở keo 10⁷~10¹¹Ω/vuông, Điện áp bóc ＜100V"],
+    "th": ["มาตรฐาน ESD (EOS/ESD STM 11.11): ค่าความต้านทานผิว 10⁸~10¹¹โอห์ม/ตารางนิ้ว ค่าความต้านทานกาว 10⁷~10¹¹โอห์ม/ตารางนิ้ว แรงดันขณะลอก ＜100โวลต์"]
   }
 }
