@@ -35,7 +35,7 @@
     },
     "slogan": {
       "en": "Premium High-Temp Resistant PI Labels for Harsh PCB Production",
-      "zh": "面向严苛 PCB 制程的高端耐高温 PI 标签",
+      "zh": "严苛 PCB 制程专用 高端耐高温 PI 追溯标签方案",
       "vi": "Nhãn PI cao cấp chịu nhiệt cao cho sản xuất PCB khắc nghiệt",
       "th": "ฉลาก PI ทนความร้อนสูงระดับพรีเมียมสำหรับการผลิต PCB ที่เข้มงวด"
     }
@@ -123,45 +123,63 @@
     },
     {
       "name": {
-        "en": "E Series · ETIA",
-        "zh": "E 系列 · ETIA 自研",
-        "vi": "E Series · ETIA tự phát triển",
-        "th": "E Series · พัฒนาโดย ETIA"
+        "en": "E Series · ETIA Self-Developed PI Line",
+        "zh": "E 系列 · ETIA 本土自研 PI 系列",
+        "vi": "E Series · ETIA tự phát triển dòng PI",
+        "th": "E Series · พัฒนาโดย ETIA (ซีรีส์ PI)"
       },
       "intro": {
-        "en": "Self-developed economical PI high-temp labels for consumer electronics and simple-process industrial PCBs.",
-        "zh": "适配消费电子及工艺简易工业 PCB，自研经济型 PI 耐高温标签",
-        "vi": "Nhãn PI chịu nhiệt kinh tế tự phát triển cho PCB điện tử tiêu dùng và công nghiệp quy trình đơn giản.",
-        "th": "ฉลาก PI ทนความร้อนรุ่นประหยัดที่พัฒนาเอง สำหรับ PCB อิเล็กทรอนิกส์ผู้บริโภคและอุตสาหกรรมกระบวนการเรียบง่าย"
+        "en": "Self-developed, cost-effective PI label series for mass production of mid-to-low-end PCBs, backed by years of high-end process technology.",
+        "zh": "国产自研高性价比 PI 标签系列，深耕 PCB 中低端大批量平价量产场景，依托多年高端工艺技术积淀，适配通用量产工况",
+        "vi": "Dòng nhãn PI tự phát triển giá trị cao cho sản xuất PCB trung thấp, kế thừa nhiều năm công nghệ cao cấp",
+        "th": "ซีรีส์ PI คุ้มค่าพัฒนาเอง สำหรับผลิต PCB ขนาดกลาง-ต่ำ สืบทอดเทคโนโลยีหลายปี"
       },
       "products": [
         {
-          "name": "E-2712",
+          "name": "E-Label PI Series",
           "line": {
-            "en": "Dual anti-static PET · flame-retardant",
-            "zh": "双抗静电 PET · 阻燃",
-            "vi": "PET chống tĩnh điện kép · chống cháy",
-            "th": "PET กันไฟฟ้าสถิตสองชั้น · หน่วงไฟ"
+            "en": "Full specs — general, high-adhesion, removable and ESD",
+            "zh": "全品类规格齐全，覆盖通用/超粘/可移除/防静电四大场景",
+            "vi": "Đầy đủ quy cách — phổ thông, siêu bám, tháo rời, chống tĩnh",
+            "th": "สเปคครบ — ทั่วไป กาวเหนียว ถอดได้ ป้องกันไฟฟ้าสถิต"
           },
           "img": "",
           "landing": true,
-          "slug": "e-2712"
-        },
-        {
-          "name": "E-8732",
-          "line": {
-            "en": "Domestic high-temp PI · mass production",
-            "zh": "本土耐高温 PI · 大批量量产",
-            "vi": "PI chịu nhiệt nội địa · sản xuất hàng loạt",
-            "th": "PI ทนความร้อนผลิตในประเทศ · การผลิตจำนวนมาก"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "e-8732"
+          "slug": "e-series"
         }
       ],
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB8732",
       "tab": "E Series"
+    },
+    {
+      "tab": "E-2712",
+      "name": {
+        "en": "E-2712 · ETIA Dual Anti-Static PET",
+        "zh": "E-2712 · ETIA 自研双抗静电 PET",
+        "vi": "E-2712 · PET chống tĩnh kép ETIA",
+        "th": "E-2712 · PET ป้องกันไฟฟ้าสถิตคู่ ETIA"
+      },
+      "intro": {
+        "en": "2mil dual-layer anti-static PET label for ESD-sensitive PCB and semiconductor lines.",
+        "zh": "2mil 双层双抗静电 PET 标签，适配 PCB、半导体静电敏感产线",
+        "vi": "Nhãn PET 2 lớp chống tĩnh, cho dây chuyền PCB và bán dẫn dễ hư tĩnh điện",
+        "th": "ฉลาก PET 2 ชั้นป้องกันไฟฟ้าสถิต เหมาะไลน์ PCB เซมิคอนดักเตอร์"
+      },
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712",
+      "products": [
+        {
+          "name": "E-2712",
+          "line": {
+            "en": "Dual-layer ESD · heat & solvent resistant · crisp print",
+            "zh": "双层防静电 · 耐温耐溶剂 · 打印清晰附着力佳",
+            "vi": "2 lớp chống tĩnh · chịu nhiệt dung môi · in rõ",
+            "th": "2 ชั้นป้องกันไฟฟ้าสถิต · ทนความร้อนสารละลาย · พิมพ์ชัด"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-2712"
+        }
+      ]
     }
   ]
 }
