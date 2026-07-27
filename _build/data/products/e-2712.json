@@ -1,9 +1,14 @@
 {
   "slug": "e-2712",
   "source": "_docs/sources/PCB E-2712",
-  "langs": ["en", "zh", "vi", "th"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "",
-  "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712",
+  "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712?v=2",
   "title": {
     "en": "E-2712 — Dual Anti-Static PET Label",
     "zh": "双抗静电 PET 标签 E-2712",
@@ -124,9 +129,17 @@
     ]
   },
   "certifications": {
-    "en": ["ESD Standard (EOS/ESD STM 11.11): Surface resistance 10⁸~10¹¹Ω/sq, Adhesive resistance 10⁷~10¹¹Ω/sq, Peel voltage ＜100V"],
-    "zh": ["ESD 防静电标准（EOS/ESD STM 11.11）：涂层面电阻率 10⁸~10¹¹Ω/□，胶面电阻率 10⁷~10¹¹Ω/□，剥离电压＜100V"],
-    "vi": ["Tiêu chuẩn ESD (EOS/ESD STM 11.11): Điện trở bề mặt 10⁸~10¹¹Ω/vuông, Điện trở keo 10⁷~10¹¹Ω/vuông, Điện áp bóc ＜100V"],
-    "th": ["มาตรฐาน ESD (EOS/ESD STM 11.11): ค่าความต้านทานผิว 10⁸~10¹¹โอห์ม/ตารางนิ้ว ค่าความต้านทานกาว 10⁷~10¹¹โอห์ม/ตารางนิ้ว แรงดันขณะลอก ＜100โวลต์"]
+    "en": [
+      "ESD Standard (EOS/ESD STM 11.11): Surface resistance 10⁸~10¹¹Ω/sq, Adhesive resistance 10⁷~10¹¹Ω/sq, Peel voltage ＜100V"
+    ],
+    "zh": [
+      "ESD 防静电标准（EOS/ESD STM 11.11）：涂层面电阻率 10⁸~10¹¹Ω/□，胶面电阻率 10⁷~10¹¹Ω/□，剥离电压＜100V"
+    ],
+    "vi": [
+      "Tiêu chuẩn ESD (EOS/ESD STM 11.11): Điện trở bề mặt 10⁸~10¹¹Ω/vuông, Điện trở keo 10⁷~10¹¹Ω/vuông, Điện áp bóc ＜100V"
+    ],
+    "th": [
+      "มาตรฐาน ESD (EOS/ESD STM 11.11): ค่าความต้านทานผิว 10⁸~10¹¹โอห์ม/ตารางนิ้ว ค่าความต้านทานกาว 10⁷~10¹¹โอห์ม/ตารางนิ้ว แรงดันขณะลอก ＜100โวลต์"
+    ]
   }
 }
