@@ -17,7 +17,7 @@ import gen_heatproof as hp
 from gen_heatproof import esc, L, Lx, page, write, LANGS
 
 AN = "/application-notes/"
-CS = "/case-studies/"
+CS = "/products/"
 CONTACT = "/contact/"
 # Shared 6-industry hero image set.
 _HERO = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/A%E3%83%BBHERO%20banner%206%20%E7%BB%84/"
@@ -38,8 +38,8 @@ UI = {
  "r_an_d": ("Practical guidance for individual labeling applications.", "针对具体标签应用的实用指南"),
  "r_ei":   ("Engineering Insights", "工程洞察"),
  "r_ei_d": ("Technical articles on material selection, printing and durability.", "关于材料选型、打印与耐久性的技术文章"),
- "r_cs":   ("Case Studies", "案例研究"),
- "r_cs_d": ("Real-world labeling challenges and evaluation approaches.", "真实标签挑战与评估方法"),
+ "r_cs":   ("Products", "产品"),
+ "r_cs_d": ("Browse durable and specialty label materials.", "浏览耐久与特种标签材料"),
  "r_faq":  ("FAQ", "常见问题"),
  "r_faq_d":("Answers to common industry labeling questions.", "常见行业标签问题解答"),
  "final_primary":   ("Talk to an Application Specialist", "咨询应用专家"),

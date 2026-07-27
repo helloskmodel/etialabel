@@ -494,7 +494,6 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 
 NAV_ITEMS = [("Home", "/", "home"),
              ("Products", u_products(), "products"),
-             ("Case Studies", "/case-studies/", "cases"),
              ("Application Notes", "/application-notes/", "insights"),
              ("News", "/news/", "news"),
              ("Service", "/service/", "service")]
@@ -1221,16 +1220,14 @@ def home_nav(lang):
     prod=products_dropdown(lang, lf)
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
-    cs_lbl={"en":"Case Studies","zh":"案例","vi":"Nghiên cứu điển hình","th":"กรณีศึกษา"}.get(lang,"Case Studies")
-    cs_link='<a href="%s">%s</a>'%(lf("/case-studies/"),esc(cs_lbl))
     # top nav after Products: Application Notes, News, Service
     an_lbl={"en":"Application Notes","zh":"应用笔记","vi":"Ghi chú ứng dụng","th":"แอปพลิเคชันโน้ต"}.get(lang,"Application Notes")
     news_lbl={"en":"News","zh":"新闻","vi":"Tin tức","th":"ข่าว"}.get(lang,"News")
     sv_lbl={"en":"Service","zh":"服务","vi":"Dịch vụ","th":"บริการ"}.get(lang,"Service")
     links=('<a href="%s">%s</a><a href="%s">%s</a><a href="%s">%s</a>'%(
         lf("/application-notes/"),esc(an_lbl),lf("/news/"),esc(news_lbl),lf("/service/"),esc(sv_lbl)))
-    return '<nav><div class="navlinks">%s%s%s%s</div>%s%s</nav>' % (
-        home_link, prod, cs_link, links, home_switcher(lang), NAV_TOGGLE)
+    return '<nav><div class="navlinks">%s%s%s</div>%s%s</nav>' % (
+        home_link, prod, links, home_switcher(lang), NAV_TOGGLE)
 
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
