@@ -63,16 +63,16 @@
   "tiers": [
     {
       "tab": {
-        "en": "Engine Bay",
+        "en": "Under the Hood",
         "zh": "发动机舱",
         "vi": "Khoang động cơ",
         "th": "ห้องเครื่อง"
       },
       "name": {
-        "en": "🛢️ Engine Bay Labels",
-        "zh": "🛢️ 发动机舱标签",
-        "vi": "🛢️ Nhãn kho động cơ",
-        "th": "🛢️ ฉลากห้องเครื่องยนต์"
+        "en": "Engine Bay Labels",
+        "zh": "发动机舱标签",
+        "vi": "Nhãn kho động cơ",
+        "th": "ฉลากห้องเครื่องยนต์"
       },
       "intro": {
         "en": "High-temperature, oil- and chemical-resistant labels for radiators, batteries and fluid reservoirs in the engine bay.",
@@ -80,7 +80,7 @@
         "vi": "Nhãn kho động cơ chịu nhiệt cao, chống dầu và hóa chất cho bộ tản nhiệt, pin và bình chứa dầu",
         "th": "ฉลากห้องเครื่องยนต์ทนอุณหภูมิสูง ทนน้ำมันและสารเคมี สำหรับหม้อน้ำ แบตเตอรี่ และถังน้ำมัน"
       },
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-2813.jpg",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-RADIATOR.jpg",
       "products": [
         {
           "name": {
@@ -138,16 +138,16 @@
     },
     {
       "tab": {
-        "en": "VIN & Body",
+        "en": "Door Jam & VIN",
         "zh": "车身 VIN",
         "vi": "VIN thân xe",
         "th": "VIN ตัวถัง"
       },
       "name": {
-        "en": "🚪 Body & B-Pillar VIN Labels",
-        "zh": "🚪 车门立柱车身标识标签",
-        "vi": "🚪 Nhãn cột B & mã VIN thân xe",
-        "th": "🚪 ฉลากเสา B และรหัส VIN ตัวถัง"
+        "en": "Body & B-Pillar VIN Labels",
+        "zh": "车门立柱车身标识标签",
+        "vi": "Nhãn cột B & mã VIN thân xe",
+        "th": "ฉลากเสา B และรหัส VIN ตัวถัง"
       },
       "intro": {
         "en": "Tamper-proof VIN labels and tire-pressure/load placards for B-pillar and door-frame body panels.",
@@ -196,16 +196,16 @@
     },
     {
       "tab": {
-        "en": "Battery & Electrical",
+        "en": "Electronics",
         "zh": "电池电气",
         "vi": "Pin & Điện",
         "th": "แบตเตอรี่ไฟฟ้า"
       },
       "name": {
-        "en": "🔋 Battery & Electrical Harness Labels",
-        "zh": "🔋 电池与电气系统标签",
-        "vi": "🔋 Nhãn pin & dây điện",
-        "th": "🔋 ฉลากแบตเตอรี่และสายไฟ"
+        "en": "Battery & Electrical Harness Labels",
+        "zh": "电池与电气系统标签",
+        "vi": "Nhãn pin & dây điện",
+        "th": "ฉลากแบตเตอรี่และสายไฟ"
       },
       "intro": {
         "en": "Battery-module ID and harness/connector labels resisting electrolyte, acid/alkali and short-term high heat.",
@@ -213,7 +213,7 @@
         "vi": "Nhãn nhận biết mô đun pin và dây nối/đầu nối chống dung dịch điện ly, axit bazơ và nhiệt cao ngắn hạn",
         "th": "ฉลากระบุโมดูลแบตเตอรี่และสายไฟ/ขั้วต่อ ทนสารอิเล็กโทรไลต์ กรด-เบส และความร้อนสูงชั่วคราว"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-WIRE%20HARNESS%20LABEL.jpg",
       "products": [
         {
           "name": {
@@ -254,16 +254,16 @@
     },
     {
       "tab": {
-        "en": "Fuel & Charging",
+        "en": "Fuel & EV Charging",
         "zh": "燃油充电",
         "vi": "Xăng & Sạc",
         "th": "น้ำมัน/ชาร์จ"
       },
       "name": {
-        "en": "⛽ Fuel & EV Charging Port Labels",
-        "zh": "⛽ 燃油与新能源充电标签",
-        "vi": "⛽ Nhãn nắp xăng & cổng sạc xe điện",
-        "th": "⛽ ฉลากช่องเติมน้ำมันและชาร์จรถไฟฟ้า"
+        "en": "Fuel & EV Charging Port Labels",
+        "zh": "燃油与新能源充电标签",
+        "vi": "Nhãn nắp xăng & cổng sạc xe điện",
+        "th": "ฉลากช่องเติมน้ำมันและชาร์จรถไฟฟ้า"
       },
       "intro": {
         "en": "Fuel-filler warning and EV charging labels resisting fuel, cleaners and semi-outdoor weathering.",
@@ -271,7 +271,7 @@
         "vi": "Nhãn cảnh báo nắp xăng và hướng dẫn sạc xe điện chống nhiên liệu, dung dịch rửa và thời tiết nửa ngoài trời",
         "th": "ฉลากเตือนช่องเติมน้ำมันและคำแนะนำชาร์จรถไฟฟ้า ทนน้ำมัน สารล้าง และสภาพอากาศกึ่งกลางแจ้ง"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-FUEL.jpg",
       "products": [
         {
           "name": {
@@ -312,16 +312,16 @@
     },
     {
       "tab": {
-        "en": "Exterior & Chassis",
+        "en": "Under the Vehicle",
         "zh": "外饰底盘",
         "vi": "Ngoại thất & Gầm",
         "th": "ภายนอก/แชสซี"
       },
       "name": {
-        "en": "☀️ Exterior & Chassis Component Labels",
-        "zh": "☀️ 车身外饰 & 底盘零部件标签",
-        "vi": "☀️ Nhãn ngoại thất & khung gầm",
-        "th": "☀️ ฉลากชิ้นส่วนภายนอกและแชสซี"
+        "en": "Exterior & Chassis Component Labels",
+        "zh": "车身外饰 & 底盘零部件标签",
+        "vi": "Nhãn ngoại thất & khung gầm",
+        "th": "ฉลากชิ้นส่วนภายนอกและแชสซี"
       },
       "intro": {
         "en": "Weatherproof traceability labels for bumpers, brake discs, chassis suspension and stamped metal parts.",
@@ -329,7 +329,7 @@
         "vi": "Nhãn truy xuất chịu thời tiết cho cản, đĩa phanh, khung gầm giảm xóc và bộ phận dập kim loại",
         "th": "ฉลากติดตามทนสภาพอากาศ สำหรับกันชน จานเบรก แชสซีกันสะเทือน และชิ้นส่วนปั๊มโลหะ"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS.jpg",
       "products": [
         {
           "name": {
@@ -353,16 +353,57 @@
     },
     {
       "tab": {
-        "en": "Interior",
+        "en": "Oily / Dirty Surfaces",
+        "zh": "油污表面",
+        "vi": "Bề mặt dầu mỡ",
+        "th": "พื้นผิวเปื้อนน้ำมัน"
+      },
+      "name": {
+        "en": "Oily / Dirty Surface Labels",
+        "zh": "油污表面标签",
+        "vi": "Nhãn bề mặt dầu mỡ",
+        "th": "ฉลากพื้นผิวเปื้อนน้ำมัน"
+      },
+      "intro": {
+        "en": "Specialized adhesives cut through contamination, bonding reliably to oily and greasy automotive parts. Labels remain intact across gearboxes, pumps, and hydraulic systems where standard solutions typically fail quickly.",
+        "zh": "专用胶粘剂穿透油污，牢固粘接于油腻的汽车零部件；在变速箱、泵、液压系统等常规方案易失效的场景下仍保持标签完整",
+        "vi": "Keo chuyên dụng xuyên qua lớp bẩn, bám chắc lên các chi tiết ô tô dính dầu mỡ; nhãn giữ nguyên vẹn trên hộp số, bơm và hệ thống thủy lực nơi giải pháp thông thường thường nhanh hỏng.",
+        "th": "กาวเฉพาะทางแทรกผ่านคราบสกปรก ยึดติดแน่นกับชิ้นส่วนรถยนต์ที่เปื้อนน้ำมัน ฉลากคงสภาพบนกระปุกเกียร์ ปั๊ม และระบบไฮดรอลิก ที่โซลูชันทั่วไปมักเสียหายเร็ว"
+      },
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS.jpg",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3c3 4 5 6.5 5 9a5 5 0 0 1-10 0c0-2.5 2-5 5-9z'/><path d='M9.5 13.5a2.5 2.5 0 0 0 2.5 2.5'/></svg>",
+      "products": [
+        {
+          "name": {
+            "en": "Oil & Grease-Resistant Component Label",
+            "zh": "耐油污零部件标签",
+            "vi": "Nhãn linh kiện chống dầu mỡ",
+            "th": "ฉลากชิ้นส่วนทนน้ำมัน"
+          },
+          "line": {
+            "en": "E-2813 · -40℃~150℃ · bonds through oil & grease on metal · gearboxes, pumps, hydraulics",
+            "zh": "E-2813 · -40℃~150℃ · 穿透油污牢贴金属 · 变速箱、泵、液压系统",
+            "vi": "E-2813 · -40℃~150℃ · bám xuyên dầu mỡ trên kim loại · hộp số, bơm, thủy lực",
+            "th": "E-2813 · -40℃~150°C · ยึดผ่านน้ำมันบนโลหะ · กระปุกเกียร์ ปั๊ม ไฮดรอลิก"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "tab": {
+        "en": "Safety & Interior",
         "zh": "内饰",
         "vi": "Nội thất",
         "th": "ภายใน"
       },
       "name": {
-        "en": "🧸 Interior Trim Labels",
-        "zh": "🧸 车内内饰标签",
-        "vi": "🧸 Nhãn nội thất xe",
-        "th": "🧸 ฉลากตกแต่งภายในรถ"
+        "en": "Interior Trim Labels",
+        "zh": "车内内饰标签",
+        "vi": "Nhãn nội thất xe",
+        "th": "ฉลากตกแต่งภายในรถ"
       },
       "intro": {
         "en": "Interior labels for airbag housings, sun visors and carpets — soft adhesive, no yellowing, fold-resistant.",
@@ -370,7 +411,7 @@
         "vi": "Nhãn nội thất cho vỏ túi khí, tấm che nắng và thảm — keo mềm, không vàng, chống gấp",
         "th": "ฉลากตกแต่งภายในสำหรับเปลือกถุงลม แผ่นบังแดด และพรม — กาวนุ่ม ไม่เหลือง ทนการพับ"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AIRBAG.jpg",
       "products": [
         {
           "name": {
@@ -428,16 +469,16 @@
     },
     {
       "tab": {
-        "en": "Flexible Parts",
+        "en": "Flexible Components",
         "zh": "柔性件",
         "vi": "Linh kiện mềm",
         "th": "ชิ้นส่วนยืดหยุ่น"
       },
       "name": {
-        "en": "📎 Flexible Component Labels",
-        "zh": "📎 柔性零部件标签",
-        "vi": "📎 Nhãn linh kiện mềm dẻo",
-        "th": "📎 ฉลากชิ้นส่วนยืดหยุ่น"
+        "en": "Flexible Component Labels",
+        "zh": "柔性零部件标签",
+        "vi": "Nhãn linh kiện mềm dẻo",
+        "th": "ฉลากชิ้นส่วนยืดหยุ่น"
       },
       "intro": {
         "en": "Low-modulus flexible labels for rubber hoses and soft plastic parts that flex without cracking or edge lifting.",
@@ -445,7 +486,7 @@
         "vi": "Nhãn mềm mô đun thấp cho ống cao su và bộ phận nhựa mềm, biến dạng không nứt, không bong cạnh",
         "th": "ฉลากยืดหยุ่นโมดูลต่ำ สำหรับท่อยางและชิ้นส่วนพลาสติกอ่อน ยืดได้ไม่แตก ไม่หลุดขอบ"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-LABEL%20ON%20PLASTIC.jpg",
       "products": [
         {
           "name": {
@@ -475,10 +516,10 @@
         "th": "ยาง"
       },
       "name": {
-        "en": "🛞 Tire Industry Special Labels",
-        "zh": "🛞 轮胎全流程专用标签",
-        "vi": "🛞 Dòng nhãn chuyên dụng ngành lốp xe",
-        "th": "🛞 ฉลากเฉพาะอุตสาหกรรมยาง"
+        "en": "Tire Industry Special Labels",
+        "zh": "轮胎全流程专用标签",
+        "vi": "Dòng nhãn chuyên dụng ngành lốp xe",
+        "th": "ฉลากเฉพาะอุตสาหกรรมยาง"
       },
       "intro": {
         "en": "Full-process tire labels — from uncured green-tire barcodes through cured-tire sidewall marking.",
