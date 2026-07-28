@@ -120,7 +120,7 @@ def build_lang(d, lang):
     contact = hp.Lx(lang, "/contact/")
     hero = ('%s<section class="phero">%s<div class="in"><div class="k">%s</div>'
             '<h1>%s</h1><p class="tl">%s</p><a class="pbtn" href="%s">%s</a></div></section>') % (
-        CSS, bg, esc(ui["products"]), esc(title), esc(L(d.get("tagline", {}), lang)), contact, esc(ui["cta_btn"]))
+        CSS, bg, esc(L(d.get("eyebrow", {}), lang) or ui["products"]), esc(title), esc(L(d.get("tagline", {}), lang)), contact, esc(ui["cta_btn"]))
 
     body = ""
     if L(d.get("positioning", {}), lang):
