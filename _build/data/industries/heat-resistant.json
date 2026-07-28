@@ -1,16 +1,21 @@
 {
-  "slug": "high-temperature",
+  "slug": "heat-resistant",
   "base": "/products/",
   "track": true,
   "subnav": false,
   "source": "existing product range, organized as a temperature bar from 150°C to 1300°C",
-  "langs": ["en", "zh", "vi", "th"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER.jpg",
   "seo_title": {
-    "en": "High-Temperature Labels | ETIA",
-    "zh": "高温标签 | ETIA",
-    "vi": "Nhãn nhiệt độ cao | ETIA",
-    "th": "ฉลากอุณหภูมิสูง | ETIA"
+    "en": "Heat-Resistant Labels | ETIA",
+    "zh": "耐高温标签 | ETIA",
+    "vi": "Nhãn chịu nhiệt | ETIA",
+    "th": "ฉลากทนความร้อน | ETIA"
   },
   "seo_desc": {
     "en": "High-temperature labels and tags from 150°C electronics assembly to 1,300°C metal heat-treatment and ceramic firing.",
@@ -20,16 +25,16 @@
   },
   "hero": {
     "eyebrow": {
-      "en": "By Performance · High Temperature",
-      "zh": "按性能 · 高温",
-      "vi": "Theo hiệu suất · Nhiệt độ cao",
-      "th": "ตามสมรรถนะ · อุณหภูมิสูง"
+      "en": "By Performance · Heat Resistant",
+      "zh": "按性能 · 耐高温",
+      "vi": "Theo hiệu suất · Chịu nhiệt",
+      "th": "ตามสมรรถนะ · ทนความร้อน"
     },
     "title": {
-      "en": "High-Temperature Labels",
-      "zh": "高温标签",
-      "vi": "Nhãn nhiệt độ cao",
-      "th": "ฉลากอุณหภูมิสูง"
+      "en": "Heat-Resistant Labels",
+      "zh": "耐高温标签",
+      "vi": "Nhãn chịu nhiệt",
+      "th": "ฉลากทนความร้อน"
     },
     "slogan": {
       "en": "From 150°C electronics to 1,300°C metal & ceramics — one temperature ladder",
@@ -39,10 +44,18 @@
     }
   },
   "overview": {
-    "en": ["High-temperature labels and tags spanning 150°C electronics assembly to 1,300°C metal heat-treatment and ceramic firing. Choose a temperature range to see the matching materials."],
-    "zh": ["覆盖 150°C 电子组装到 1300°C 金属热处理与陶瓷烧制的高温标签与吊牌。选择温度区间查看对应材料"],
-    "vi": ["Nhãn và thẻ nhiệt độ cao trải dài từ lắp ráp điện tử 150°C đến xử lý nhiệt kim loại và nung gốm 1.300°C. Chọn dải nhiệt độ để xem vật liệu phù hợp."],
-    "th": ["ฉลากและแท็กอุณหภูมิสูง ครอบคลุมตั้งแต่การประกอบอิเล็กทรอนิกส์ 150°C ถึงการอบชุบโลหะและการเผาเซรามิก 1,300°C เลือกช่วงอุณหภูมิเพื่อดูวัสดุที่เหมาะสม"]
+    "en": [
+      "High-temperature labels and tags spanning 150°C electronics assembly to 1,300°C metal heat-treatment and ceramic firing. Choose a temperature range to see the matching materials."
+    ],
+    "zh": [
+      "覆盖 150°C 电子组装到 1300°C 金属热处理与陶瓷烧制的高温标签与吊牌。选择温度区间查看对应材料"
+    ],
+    "vi": [
+      "Nhãn và thẻ nhiệt độ cao trải dài từ lắp ráp điện tử 150°C đến xử lý nhiệt kim loại và nung gốm 1.300°C. Chọn dải nhiệt độ để xem vật liệu phù hợp."
+    ],
+    "th": [
+      "ฉลากและแท็กอุณหภูมิสูง ครอบคลุมตั้งแต่การประกอบอิเล็กทรอนิกส์ 150°C ถึงการอบชุบโลหะและการเผาเซรามิก 1,300°C เลือกช่วงอุณหภูมิเพื่อดูวัสดุที่เหมาะสม"
+    ]
   },
   "classify_by": {
     "en": "Choose a temperature range",
@@ -80,7 +93,9 @@
             "vi": "-40°C to 150°C · 2mil Gloss white PET + Balanced acrylic PSA + Glassine liner · trung nhiệt phổ thông, chịu mài mòn, cồn & dầu nhẹ, cho PCB, linh kiện điện tử & bó dây · ROHS",
             "th": "-40°C to 150°C · 2mil Gloss white PET + Balanced acrylic PSA + Glassine liner · อุณหภูมิปานกลางทั่วไป ทนการเสียดสี แอลกอฮอล์ & น้ำมันเบา สำหรับ PCB ชิ้นส่วนอิเล็กทรอนิกส์ & ชุดสายไฟ · ROHS"
           },
-          "img": "", "landing": false, "slug": ""
+          "img": "",
+          "landing": false,
+          "slug": ""
         },
         {
           "name": {
@@ -95,7 +110,9 @@
             "vi": "-40°C to 160°C · 3mil Matte grey PET + General high-tack acrylic PSA + Glassine liner · nền xám che khuyết tật, chịu dầu, cồn & axit/kiềm nhẹ, cho vật đúc kim loại & vỏ thiết bị · ROHS, REACH",
             "th": "-40°C to 160°C · 3mil Matte grey PET + General high-tack acrylic PSA + Glassine liner · พื้นสีเทาปิดตำหนิ ทนน้ำมัน แอลกอฮอล์ & กรด/ด่างอ่อน สำหรับงานหล่อโลหะ & ตัวถังอุปกรณ์ · ROHS, REACH"
           },
-          "img": "", "landing": false, "slug": ""
+          "img": "",
+          "landing": false,
+          "slug": ""
         },
         {
           "name": {
@@ -110,7 +127,9 @@
             "vi": "-40°C to 180°C · 2mil Black top white base PET + Permanent high-temp acrylic PSA + Glassine liner · khắc laser CO2/YAG/UV, vĩnh viễn, chịu dung môi, mài mòn & nhiệt-ẩm, mã QR đen trắng ổn định",
             "th": "-40°C to 180°C · 2mil Black top white base PET + Permanent high-temp acrylic PSA + Glassine liner · มาร์กด้วยเลเซอร์ CO2/YAG/UV ถาวร ทนตัวทำละลาย การเสียดสี & ความร้อนชื้น QR ขาวดำอ่านเสถียร"
           },
-          "img": "", "landing": false, "slug": ""
+          "img": "",
+          "landing": false,
+          "slug": ""
         },
         {
           "name": {
@@ -125,7 +144,9 @@
             "vi": "-40°C to 200°C · 4mil Matte White PET + Rubber high-temp PSA + Glassine liner · keo cao su chịu nhiệt bền sau lưu hóa, chịu dầu, axit/kiềm mạnh & chất tách khuôn, chịu phun bi · ROHS",
             "th": "-40°C to 200°C · 4mil Matte White PET + Rubber high-temp PSA + Glassine liner · กาวยางทนร้อนคงทนหลังวัลคาไนซ์ ทนน้ำมัน กรด/ด่างเข้มข้น & สารถอดแบบ ทนการยิงเม็ดโลหะ · ROHS"
           },
-          "img": "", "landing": false, "slug": ""
+          "img": "",
+          "landing": false,
+          "slug": ""
         },
         {
           "name": {
@@ -140,7 +161,9 @@
             "vi": "-40°C to 200°C · 3mil Matte white PET + High-temp high-tack acrylic PSA + Glassine liner · chịu dầu động cơ, nước làm mát & dung môi tẩy rửa, chịu sốc nhiệt & trầy xước, cho chi tiết khoang máy kim loại/nhựa",
             "th": "-40°C to 200°C · 3mil Matte white PET + High-temp high-tack acrylic PSA + Glassine liner · ทนน้ำมันเครื่อง น้ำหล่อเย็น & ตัวทำละลายทำความสะอาด ทนช็อกความร้อน & รอยขีดข่วน สำหรับชิ้นส่วนห้องเครื่องโลหะ/พลาสติก"
           },
-          "img": "", "landing": false, "slug": ""
+          "img": "",
+          "landing": false,
+          "slug": ""
         },
         {
           "name": {
@@ -155,7 +178,9 @@
             "vi": "-40°C to 200°C · 4mil Gloss white PET + High-tack high-temp acrylic PSA + Glassine liner · dày & cứng, cấp chịu mài mòn nâng cao, chịu dung môi tẩy công nghiệp, quét mã vạch rõ nét, cho nhôm, thép & ABS · UL, ROHS",
             "th": "-40°C to 200°C · 4mil Gloss white PET + High-tack high-temp acrylic PSA + Glassine liner · หนา & แข็งแรง เพิ่มระดับทนการเสียดสี ทนตัวทำละลายทำความสะอาดอุตสาหกรรม สแกนบาร์โค้ดคมชัด สำหรับอะลูมิเนียม เหล็ก & ABS · UL, ROHS"
           },
-          "img": "", "landing": false, "slug": ""
+          "img": "",
+          "landing": false,
+          "slug": ""
         },
         {
           "name": {
@@ -170,7 +195,9 @@
             "vi": "-40°C to 220°C · 5mil Matte white PET + Special high-temp rubber PSA + Thick Glassine liner · chịu nhiệt cao nhất ngành 220°C, chịu ủ & ram thép, chịu dầu tôi & dung dịch tẩy gỉ axit/kiềm, chịu phun bi · ROHS",
             "th": "-40°C to 220°C · 5mil Matte white PET + Special high-temp rubber PSA + Thick Glassine liner · ทนอุณหภูมิสูงสุดในอุตสาหกรรม 220°C ทนการอบอ่อน & อบคืนตัวเหล็ก ทนน้ำมันชุบแข็ง & น้ำยาขจัดสนิมกรด/ด่าง ทนการยิงเม็ดโลหะ · ROHS"
           },
-          "img": "", "landing": false, "slug": ""
+          "img": "",
+          "landing": false,
+          "slug": ""
         }
       ]
     },
@@ -203,7 +230,10 @@
             "vi": "Đến 300°C · polyimide cho hàn hồi lưu, rửa & kiểm soát tĩnh điện PCB · Polyonics nhập khẩu + ETIA tự phát triển",
             "th": "ถึง 300°C · โพลิอิมิดสำหรับรีโฟลว์ ล้าง และควบคุมไฟฟ้าสถิต PCB · Polyonics นำเข้า + ETIA พัฒนาเอง"
           },
-          "img": "", "landing": false, "slug": "", "url": "/industries/pcb-electronics-labeling-solutions/"
+          "img": "",
+          "landing": false,
+          "slug": "",
+          "url": "/industries/pcb-electronics-labeling-solutions/"
         },
         {
           "name": "XF-603",
@@ -213,7 +243,9 @@
             "vi": "300°C ngắn hạn / 150°C dài hạn · PI chống cháy UL94",
             "th": "300°C ระยะสั้น / 150°C ระยะยาว · PI กันไฟ UL94"
           },
-          "img": "", "landing": true, "slug": "xf-603"
+          "img": "",
+          "landing": true,
+          "slug": "xf-603"
         },
         {
           "name": {
@@ -228,7 +260,9 @@
             "vi": "-40°C to 300°C · 1mil Gold PI Polyimide facestock + High-temp silicone PSA + White PET liner · cho hàn hồi lưu SMT & hàn sóng, chịu 300°C tức thời, chịu flux, thiếc hàn & chất tẩy rửa, không để lại keo · UL, ROHS",
             "th": "-40°C to 300°C · 1mil Gold PI Polyimide facestock + High-temp silicone PSA + White PET liner · สำหรับรีโฟลว์ SMT & บัดกรีคลื่น ทน 300°C ชั่วขณะ ทนฟลักซ์ บัดกรี & น้ำยาทำความสะอาด ไม่มีคราบกาว · UL, ROHS"
           },
-          "img": "", "landing": false, "slug": ""
+          "img": "",
+          "landing": false,
+          "slug": ""
         }
       ]
     },
@@ -256,7 +290,9 @@
             "vi": "250–600°C · nhôm, dán nóng",
             "th": "250–600°C · อะลูมิเนียม ติดขณะร้อน"
           },
-          "img": "", "landing": true, "slug": "hp-x2049"
+          "img": "",
+          "landing": true,
+          "slug": "hp-x2049"
         },
         {
           "name": "HP-700T",
@@ -266,7 +302,9 @@
             "vi": "450–800°C · lá đồng thau",
             "th": "450–800°C · แผ่นทองเหลือง"
           },
-          "img": "", "landing": true, "slug": "hp-700t"
+          "img": "",
+          "landing": true,
+          "slug": "hp-700t"
         },
         {
           "name": "HP-800C",
@@ -276,7 +314,9 @@
             "vi": "Đến 800°C · kính & kim loại, bám dính cao",
             "th": "ถึง 800°C · แก้วและโลหะ ยึดเกาะสูง"
           },
-          "img": "", "landing": true, "slug": "hp-800c"
+          "img": "",
+          "landing": true,
+          "slug": "hp-800c"
         }
       ]
     },
@@ -304,7 +344,9 @@
             "vi": "450–1000°C · lá niken, bề mặt gồ ghề",
             "th": "450–1000°C · แผ่นนิกเกิล พื้นผิวไม่เรียบ"
           },
-          "img": "", "landing": true, "slug": "hp-901"
+          "img": "",
+          "landing": true,
+          "slug": "hp-901"
         },
         {
           "name": "HP-L80",
@@ -314,7 +356,9 @@
             "vi": "Đến 1000°C · thẻ chống axit",
             "th": "ถึง 1000°C · แท็กทนกรด"
           },
-          "img": "", "landing": true, "slug": "hp-l80"
+          "img": "",
+          "landing": true,
+          "slug": "hp-l80"
         },
         {
           "name": "HP-M83",
@@ -324,7 +368,9 @@
             "vi": "850°C · thẻ từ tính, chống axit",
             "th": "850°C · แท็กแม่เหล็ก ทนกรด"
           },
-          "img": "", "landing": true, "slug": "hp-m83"
+          "img": "",
+          "landing": true,
+          "slug": "hp-m83"
         }
       ]
     },
@@ -352,7 +398,9 @@
             "vi": "Đến 1200°C · gia nhiệt nhanh tới 65°C/phút",
             "th": "ถึง 1200°C · ให้ความร้อนเร็วถึง 65°C/นาที"
           },
-          "img": "", "landing": true, "slug": "hp-x2080"
+          "img": "",
+          "landing": true,
+          "slug": "hp-x2080"
         },
         {
           "name": "HP-CBR13",
@@ -362,7 +410,9 @@
             "vi": "Đến 1200°C · ít đổi màu",
             "th": "ถึง 1200°C · เปลี่ยนสีน้อย"
           },
-          "img": "", "landing": true, "slug": "hp-cbr13"
+          "img": "",
+          "landing": true,
+          "slug": "hp-cbr13"
         },
         {
           "name": "HP-L90",
@@ -372,7 +422,9 @@
             "vi": "Đến 1200°C · thẻ thép không gỉ",
             "th": "ถึง 1200°C · แท็กสแตนเลส"
           },
-          "img": "", "landing": true, "slug": "hp-l90"
+          "img": "",
+          "landing": true,
+          "slug": "hp-l90"
         },
         {
           "name": "HP-CBR11",
@@ -382,7 +434,9 @@
             "vi": "Đến 1250°C · gốm sứ & thiết bị vệ sinh",
             "th": "ถึง 1250°C · เซรามิกและสุขภัณฑ์"
           },
-          "img": "", "landing": true, "slug": "hp-cbr11"
+          "img": "",
+          "landing": true,
+          "slug": "hp-cbr11"
         }
       ]
     }
