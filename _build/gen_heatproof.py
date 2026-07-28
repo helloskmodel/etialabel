@@ -1453,7 +1453,6 @@ def build_home(lang):
         esc(T.get("fs_email","Email")),esc(T.get("fs_phone","Phone")),
         esc(T.get("fs_addr","Mailing address")),esc(T.get("fs_btn","Request Free Sample")))
     final_cta='<div class="wrap">%s</div>'%cta2(lang,"home",home_hlink)
-    trust_html=trust_bar(lang)
     sc_items="".join('<div class="sci"><b>%s</b><p>%s</p></div>'%(esc(it["title"]),esc(it["desc"])) for it in T.get("svc",[]))
     sc_section=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
                 '<div class="scgrid">%s</div></div></section>')%(
@@ -1469,7 +1468,9 @@ def build_home(lang):
                  '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>%s'
                  '<div style="margin-top:20px"><a class="btn sec" href="%s">%s →</a></div></div></section>')%(
         esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_grid,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]))
-    body=hero_banner+trust_html+why_section+app_section+prod_section+sc_section+final_cta
+    # trust strip removed from the home page: it duplicated the Service Commitment
+    # section below (same four items). Keep the dedicated section only.
+    body=hero_banner+why_section+app_section+prod_section+sc_section+final_cta
     canonical=SITE+HL_PREFIX[lang]+path
     schema_js='<script type="application/ld+json">%s</script>'%json.dumps(ORG_JSONLD,ensure_ascii=False)
     hero_preload=('<link rel="preload" as="image" href="'+HOME_BG[0]+'" fetchpriority="high">') if HOME_BG[0] else ""
