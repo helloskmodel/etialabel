@@ -32,5 +32,77 @@
     "zh": "XF58 系列",
     "vi": "Dòng XF58",
     "th": "ซีรีส์ XF58"
+  },
+  "features": {
+    "en": [
+      "Multiple finishes, colors, and thicknesses for flexible PCB identification",
+      "1 mil and 2 mil polyimide constructions for different board profiles",
+      "Withstands reflow soldering up to 300°C with excellent thermal stability",
+      "High-resolution thermal transfer printing with leading ribbon compatibility",
+      "Reliable acrylic adhesive for reflow and chemical cleaning processes",
+      "REACH, RoHS, and UL 969 compliant",
+      "Proven material platform with stable, high-volume supply"
+    ],
+    "zh": [
+      "多种表面、颜色与厚度，灵活满足 PCB 标识需求",
+      "1mil 与 2mil 聚酰亚胺结构，适配不同板厚与板型",
+      "耐回流焊高温达 300°C，热稳定性优异",
+      "高分辨率热转印，兼容主流碳带",
+      "可靠丙烯酸胶粘剂，适应回流焊与化学清洗工艺",
+      "符合 REACH、RoHS 与 UL 969",
+      "成熟材料平台，稳定的大批量供应"
+    ],
+    "vi": [
+      "Nhiều bề mặt, màu sắc và độ dày, linh hoạt cho nhận diện PCB",
+      "Cấu tạo polyimide 1 mil và 2 mil cho các loại bo mạch khác nhau",
+      "Chịu hàn hồi lưu đến 300°C với độ ổn định nhiệt xuất sắc",
+      "In truyền nhiệt độ phân giải cao, tương thích các loại ribbon hàng đầu",
+      "Keo acrylic đáng tin cậy cho quy trình hàn hồi lưu và rửa hóa chất",
+      "Tuân thủ REACH, RoHS và UL 969",
+      "Nền tảng vật liệu đã kiểm chứng với nguồn cung ổn định số lượng lớn"
+    ],
+    "th": [
+      "หลายพื้นผิว สี และความหนา เพื่อการระบุ PCB ที่ยืดหยุ่น",
+      "โครงสร้างโพลิอิมิด 1 มิล และ 2 มิล สำหรับบอร์ดหลากหลายแบบ",
+      "ทนการบัดกรีรีโฟลว์สูงถึง 300°C ด้วยเสถียรภาพทางความร้อนที่ยอดเยี่ยม",
+      "การพิมพ์ถ่ายโอนความร้อนความละเอียดสูง เข้ากันได้กับริบบอนชั้นนำ",
+      "กาวอะคริลิกที่เชื่อถือได้สำหรับกระบวนการรีโฟลว์และการล้างด้วยสารเคมี",
+      "สอดคล้องกับ REACH, RoHS และ UL 969",
+      "แพลตฟอร์มวัสดุที่พิสูจน์แล้ว พร้อมการจัดหาปริมาณมากที่เสถียร"
+    ]
+  },
+  "benefits": {
+    "en": [
+      "Simplifies line, model, and batch identification",
+      "Supports both thin and standard PCB applications",
+      "Maintains barcode readability through reflow and cleaning",
+      "Reduces inspection time and production scrap",
+      "Balances reliable performance with cost efficiency",
+      "Ensures consistent supply for large-scale production"
+    ],
+    "zh": [
+      "简化产线、型号与批次标识",
+      "兼容薄板与标准 PCB 应用",
+      "历经回流焊与清洗仍保持条码清晰可读",
+      "缩短检验时间，减少生产报废",
+      "在可靠性能与成本效益之间取得平衡",
+      "为大规模量产确保稳定供应"
+    ],
+    "vi": [
+      "Đơn giản hóa nhận diện dây chuyền, model và lô hàng",
+      "Hỗ trợ cả ứng dụng PCB mỏng và tiêu chuẩn",
+      "Giữ mã vạch rõ ràng qua hàn hồi lưu và rửa",
+      "Giảm thời gian kiểm tra và phế phẩm sản xuất",
+      "Cân bằng hiệu năng ổn định với hiệu quả chi phí",
+      "Đảm bảo nguồn cung ổn định cho sản xuất quy mô lớn"
+    ],
+    "th": [
+      "ทำให้การระบุไลน์ รุ่น และล็อตง่ายขึ้น",
+      "รองรับทั้งงาน PCB บางและมาตรฐาน",
+      "คงบาร์โค้ดให้อ่านได้ตลอดรีโฟลว์และการล้าง",
+      "ลดเวลาตรวจสอบและของเสียในการผลิต",
+      "สมดุลระหว่างประสิทธิภาพที่เชื่อถือได้กับความคุ้มค่า",
+      "รับประกันการจัดหาที่สม่ำเสมอสำหรับการผลิตขนาดใหญ่"
+    ]
   }
 }
