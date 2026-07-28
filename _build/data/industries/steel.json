@@ -42,16 +42,16 @@
   },
   "overview": {
     "zh": [
-      "HEATPROOF 标签与吊牌为经受高温工艺的产品提供标识与条码，提升产品识别、追踪与库存对账效率，同时减少错标、提升安全并降低人工成本"
+      "HEATPROOF 标签与吊牌为历经高温工艺的工件提供可靠的标识与条码，强化全程可追溯性与库存准确度，同时减少错标、提升作业安全并降低人工成本"
     ],
     "en": [
-      "HEATPROOF labels and tags provide identification and barcoding for products exposed to high-temperature processes — improving product identification, tracking and inventory reconciliation while reducing misidentified products, improving safety and lowering labor costs."
+      "HEATPROOF labels and tags deliver reliable identification and barcoding for components that pass through high-temperature processes — strengthening traceability and inventory accuracy while reducing misidentification, improving workplace safety, and lowering labor costs."
     ],
     "vi": [
-      "Nhãn và thẻ HEATPROOF cung cấp nhận diện và mã vạch cho sản phẩm trải qua các quy trình nhiệt độ cao — cải thiện nhận diện, theo dõi và đối soát tồn kho, đồng thời giảm nhầm lẫn sản phẩm, nâng cao an toàn và giảm chi phí nhân công."
+      "Nhãn và thẻ HEATPROOF mang lại khả năng nhận diện và mã vạch đáng tin cậy cho các chi tiết trải qua quy trình nhiệt độ cao — củng cố truy xuất nguồn gốc và độ chính xác tồn kho, đồng thời giảm nhầm lẫn, nâng cao an toàn lao động và giảm chi phí nhân công."
     ],
     "th": [
-      "ฉลากและแท็ก HEATPROOF ให้การระบุและบาร์โค้ดสำหรับผลิตภัณฑ์ที่ผ่านกระบวนการอุณหภูมิสูง — ช่วยเพิ่มการระบุ การติดตาม และการกระทบยอดสินค้าคงคลัง พร้อมลดการระบุผิด เพิ่มความปลอดภัย และลดต้นทุนแรงงาน"
+      "ฉลากและแท็ก HEATPROOF มอบการระบุและบาร์โค้ดที่เชื่อถือได้สำหรับชิ้นงานที่ผ่านกระบวนการอุณหภูมิสูง เสริมความสามารถในการตรวจสอบย้อนกลับและความแม่นยำของสินค้าคงคลัง พร้อมลดการระบุผิด เพิ่มความปลอดภัยในการทำงาน และลดต้นทุนแรงงาน"
     ]
   },
   "classify_by": {
@@ -70,10 +70,10 @@
         "th": "ซีรีส์ติดโดยตรง"
       },
       "intro": {
-        "en": "Heat-resistant labels applied to hot objects such as steel, aluminum or copper immediately after casting. Thermal-transfer printers let variable information and barcodes be printed easily.",
-        "zh": "可在铸造后立即贴附于钢、铝、铜等热态工件的耐高温标签。配合热转印打印机，可轻松打印可变信息与条码",
-        "vi": "Nhãn chịu nhiệt dán lên vật nóng như thép, nhôm hoặc đồng ngay sau khi đúc. Máy in truyền nhiệt cho phép in thông tin biến đổi và mã vạch dễ dàng.",
-        "th": "ฉลากทนความร้อนติดบนวัตถุร้อน เช่น เหล็ก อะลูมิเนียม หรือทองแดง ทันทีหลังการหล่อ เครื่องพิมพ์ถ่ายโอนความร้อนช่วยพิมพ์ข้อมูลแปรผันและบาร์โค้ดได้ง่าย"
+        "en": "Heat-resistant labels applied directly to hot steel, aluminum, or copper immediately after casting, with thermal-transfer printing of variable data and barcodes for precise, in-line identification.",
+        "zh": "可在铸造后立即直接贴附于钢、铝、铜等热态工件的耐高温标签，配合热转印打印可变数据与条码，实现精准的在线标识",
+        "vi": "Nhãn chịu nhiệt dán trực tiếp lên thép, nhôm hoặc đồng nóng ngay sau khi đúc, kết hợp in truyền nhiệt dữ liệu biến đổi và mã vạch để nhận diện chính xác ngay trên chuyền.",
+        "th": "ฉลากทนความร้อนติดโดยตรงบนเหล็ก อะลูมิเนียม หรือทองแดงร้อน ทันทีหลังการหล่อ พร้อมการพิมพ์ถ่ายโอนความร้อนสำหรับข้อมูลแปรผันและบาร์โค้ด เพื่อการระบุที่แม่นยำในสายการผลิต"
       },
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP700.jpg",
       "products": [
@@ -124,10 +124,10 @@
         "th": "ฉลากอบชุบความร้อน"
       },
       "intro": {
-        "en": "Heat-resistant labels for annealing, homogenizing and other reheat processes — barcode identification for heat-resistant process management using HEATPROOF labels.",
-        "zh": "适用于退火、均热及其他再加热工艺的耐高温标签 —— 以 HEATPROOF 标签实现耐高温工艺管理的条码标识",
-        "vi": "Nhãn chịu nhiệt cho ủ, đồng nhất hóa và các quy trình gia nhiệt lại khác — nhận diện mã vạch cho quản lý quy trình chịu nhiệt bằng nhãn HEATPROOF.",
-        "th": "ฉลากทนความร้อนสำหรับการอบอ่อน การทำให้เป็นเนื้อเดียว และกระบวนการให้ความร้อนซ้ำอื่นๆ — การระบุด้วยบาร์โค้ดสำหรับการจัดการกระบวนการทนความร้อนด้วยฉลาก HEATPROOF"
+        "en": "Heat-resistant labels engineered for annealing, homogenizing, and other reheat processes, keeping barcodes legible throughout demanding thermal cycles.",
+        "zh": "专为退火、均热及其他再加热工艺设计的耐高温标签，在严苛热循环中保持条码清晰可读",
+        "vi": "Nhãn chịu nhiệt được thiết kế cho ủ, đồng nhất hóa và các quy trình gia nhiệt lại khác, giữ mã vạch rõ nét xuyên suốt các chu kỳ nhiệt khắc nghiệt.",
+        "th": "ฉลากทนความร้อนที่ออกแบบมาสำหรับการอบอ่อน การทำให้เป็นเนื้อเดียว และกระบวนการให้ความร้อนซ้ำอื่นๆ คงบาร์โค้ดให้อ่านได้ชัดตลอดวัฏจักรความร้อนที่เข้มงวด"
       },
       "img": "",
       "products": [
@@ -166,10 +166,10 @@
         "th": "แท็กอบชุบความร้อน"
       },
       "intro": {
-        "en": "Tags for heat-treatment process management, rated up to 1,200°C. Attached to metal products including hot steel right after casting, and designed to survive reheat cycles, pickling, acid baths or galvanizing — eliminating the need to re-identify products after these processes.",
-        "zh": "用于热处理工艺管理的吊牌，耐温可达 1,200°C。可在铸造后立即固定于钢等各类金属产品，并能承受再加热循环、酸洗、酸浸或热镀锌 —— 免去这些工序后重新标识",
-        "vi": "Thẻ cho quản lý quy trình xử lý nhiệt, chịu đến 1.200°C. Gắn lên sản phẩm kim loại kể cả thép nóng ngay sau khi đúc, chịu được chu kỳ gia nhiệt lại, tẩy gỉ, ngâm axit hoặc mạ kẽm — loại bỏ nhu cầu nhận diện lại sản phẩm sau các quy trình này.",
-        "th": "แท็กสำหรับการจัดการกระบวนการอบชุบความร้อน ทนได้ถึง 1,200°C ติดกับผลิตภัณฑ์โลหะรวมถึงเหล็กร้อนทันทีหลังหล่อ ออกแบบให้ทนวัฏจักรการให้ความร้อนซ้ำ การกัดกรด การแช่กรด หรือการชุบสังกะสี — ไม่ต้องระบุผลิตภัณฑ์ใหม่หลังกระบวนการเหล่านี้"
+        "en": "Durable tags for heat-treatment process management, rated to 1,200°C. Fixed to metal products — including hot steel straight from casting — they withstand repeated reheat cycles, pickling, acid baths, and galvanizing, so parts need no re-identification between stages.",
+        "zh": "用于热处理工艺管理的耐用吊牌，耐温可达 1,200°C。可固定于钢等各类金属产品（含铸造后的热态钢件），承受反复的再加热循环、酸洗、酸浸与热镀锌，各工序间无需重新标识",
+        "vi": "Thẻ bền cho quản lý quy trình xử lý nhiệt, chịu đến 1.200°C. Được gắn lên sản phẩm kim loại — kể cả thép nóng vừa ra khỏi khuôn đúc — chịu được các chu kỳ gia nhiệt lại lặp lại, tẩy gỉ, ngâm axit và mạ kẽm, nên chi tiết không cần nhận diện lại giữa các công đoạn.",
+        "th": "แท็กทนทานสำหรับการจัดการกระบวนการอบชุบความร้อน ทนได้ถึง 1,200°C ยึดกับผลิตภัณฑ์โลหะ รวมถึงเหล็กร้อนที่เพิ่งออกจากการหล่อ ทนวัฏจักรการให้ความร้อนซ้ำ การกัดกรด การแช่กรด และการชุบสังกะสี จึงไม่ต้องระบุชิ้นงานใหม่ระหว่างขั้นตอน"
       },
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HPM83.jpg",
       "products": [
@@ -220,10 +220,10 @@
         "th": "ถ่ายโอนเซรามิก"
       },
       "intro": {
-        "en": "Transfer labels for ceramic and sanitary-ware firing at approximately 1,000–1,250°C. Applied immediately after ceramic forming; after firing the printed pattern is permanently fused onto the workpiece, enabling production management from the earliest manufacturing stage.",
-        "zh": "用于陶瓷与卫浴约 1,000–1,250°C 烧制的转印标签。可在陶瓷成型后立即贴附；烧制后印刷图案永久熔附于工件，实现从制造最初工序起的生产管理",
-        "vi": "Nhãn chuyển in cho nung gốm sứ và thiết bị vệ sinh ở khoảng 1.000–1.250°C. Dán ngay sau khi tạo hình gốm; sau khi nung, hoa văn in được nung chảy vĩnh viễn lên chi tiết, cho phép quản lý sản xuất từ công đoạn chế tạo sớm nhất.",
-        "th": "ฉลากถ่ายโอนสำหรับการเผาเซรามิกและสุขภัณฑ์ที่ประมาณ 1,000–1,250°C ติดทันทีหลังขึ้นรูปเซรามิก หลังการเผา ลวดลายที่พิมพ์จะหลอมติดถาวรบนชิ้นงาน ทำให้จัดการการผลิตได้ตั้งแต่ขั้นตอนการผลิตแรกสุด"
+        "en": "Transfer labels for ceramic and sanitary-ware firing at roughly 1,000–1,250°C. Applied right after forming, the printed marking fuses permanently into the workpiece during firing — enabling full production management from the earliest manufacturing stage.",
+        "zh": "用于陶瓷与卫浴约 1,000–1,250°C 烧制的转印标签。成型后即可贴附，烧制过程中印刷标记永久熔附于工件，实现自制造最初工序起的全流程生产管理",
+        "vi": "Nhãn chuyển in cho nung gốm sứ và thiết bị vệ sinh ở khoảng 1.000–1.250°C. Dán ngay sau khi tạo hình, dấu in được nung chảy vĩnh viễn vào chi tiết trong quá trình nung — cho phép quản lý sản xuất toàn diện từ công đoạn chế tạo sớm nhất.",
+        "th": "ฉลากถ่ายโอนสำหรับการเผาเซรามิกและสุขภัณฑ์ที่ประมาณ 1,000–1,250°C ติดทันทีหลังขึ้นรูป เครื่องหมายที่พิมพ์จะหลอมติดถาวรเข้ากับชิ้นงานระหว่างการเผา ทำให้จัดการการผลิตได้อย่างครบถ้วนตั้งแต่ขั้นตอนการผลิตแรกสุด"
       },
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP-CBR11.jpg",
       "products": [
