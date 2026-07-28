@@ -1,70 +1,316 @@
 {
   "slug": "apex",
   "source": "_docs/sources/pcb-products (APEX)",
-  "langs": ["en", "zh", "vi", "th"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg",
   "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
-  "title": {"en": "APEX Series — Polyonics PI PCB Labels", "zh": "APEX 系列 · Polyonics 聚酰亚胺 PCB 标签", "vi": "Dòng APEX · Nhãn PCB PI Polyonics", "th": "ชุด APEX · ฉลาก PCB PI Polyonics"},
-  "tagline": {"en": "APEX, optimized for high-standard modern PCB manufacturing", "zh": "APEX，适配现代高端 PCB 严苛制程", "vi": "APEX, được thiết kế cho quy trình PCB cao cấp hiện đại khắt khe", "th": "APEX ออกแบบมาเพื่อกระบวนการผลิต PCB ระดับไฮเอนด์สมัยใหม่ที่เข้มงวด"},
-  "positioning": {
-    "en": "PCBs for AI computing, automotive and aerospace adopt double-sided PoP stacking technology and must withstand 2–4 cycles of 260°C reflow soldering plus 4 rounds of intensive chemical cleaning. Traditional PI labels cannot survive full production workflows and lead to massive scrap loss.",
-    "zh": "AI 算力、车载、航天 PCB 采用 PoP 双面堆叠工艺，需承受 2~4 次 260℃回流焊 + 四轮强力化学清洗，传统 PI 标签无法适配全流程，极易造成产线报废损耗",
-    "vi": "PCB dùng cho tính toán AI, ô tô và hàng không vũ trụ áp dụng công nghệ xếp chồng PoP hai mặt, chịu được 2–4 lần hàn hồi lưu nhiệt độ 260°C cùng 4 vòng rửa hóa chất mạnh. Nhãn PI truyền thống không chịu được toàn bộ quy trình sản xuất, gây thiệt hại phế liệu nghiêm trọng.",
-    "th": "แผ่นวงจร PCB สำหรับคอมพิวเตอร์ AI ยานยนต์และอวกาศใช้เทคโนโลยีซ้อนชั้น PoP สองหน้า ต้องทนอุณหภูมิรีโฟลว์ 260°C จำนวน 2–4 รอบ พร้อมล้างด้วยสารเคมีเข้มข้น 4 รอบ ฉลาก PI แบบดั้งเดิมไม่สามารถทนกระบวนการผลิตทั้งหมดได้ ทำให้เกิดของเสียและความสูญเสียในไลน์ผลิต"
+  "title": {
+    "en": "APEX Series — Polyonics PI PCB Labels",
+    "zh": "APEX 系列 · Polyonics 聚酰亚胺 PCB 标签",
+    "vi": "Dòng APEX · Nhãn PCB PI Polyonics",
+    "th": "ชุด APEX · ฉลาก PCB PI Polyonics"
   },
-  "challenges": {
-    "en": ["Repeated high-temperature reflow causes label yellowing, softening and adhesive peeling", "Corrosive cleaning solutions soak and spray, blurring barcodes and destroying printed marks", "Lack of standardized ESD labels creates risks of electrostatic breakdown for microchips"],
-    "zh": ["多次回流高温导致标签黄变、软化、背胶脱落", "强腐蚀清洗药水浸泡喷淋，条码模糊、标识损毁", "缺少标准化 ESD 标签，微型芯片存在静电击穿风险"],
-    "vi": ["Nhiệt độ cao nhiều lần hàn hồi làm nhãn vàng hóa, mềm hóa, keo dán bong tróc", "Dung dịch rửa ăn mòn mạnh ngâm và phun, làm mờ mã vạch, hủy các dấu in trên bề mặt", "Thiếu dòng nhãn ESD chuẩn hóa, vi mạch chip có nguy cơ hỏng do tĩnh điện"],
-    "th": ["อุณหภูมิสูงจากการรีโฟลว์หลายรอบทำให้ฉลากเหลือง อ่อนตัว และกาวหลุดลอก", "สารล้างที่กัดกร่อนแรงแช่และฉีดพ่น ทำให้บาร์โค้ดเบลอและรอยพิมพ์เสียหาย", "ขาดฉลาก ESD มาตรฐาน ทำให้ชิปไมโครมีความเสี่ยงเสียหายจากไฟฟ้าสถิต"]
+  "tagline": {
+    "en": "APEX, optimized for high-standard modern PCB manufacturing",
+    "zh": "APEX，适配现代高端 PCB 严苛制程",
+    "vi": "APEX, được thiết kế cho quy trình PCB cao cấp hiện đại khắt khe",
+    "th": "APEX ออกแบบมาเพื่อกระบวนการผลิต PCB ระดับไฮเอนด์สมัยใหม่ที่เข้มงวด"
+  },
+  "positioning": {
+    "en": "Introducing the new APEX Series — ultra-performance polyimide label materials for PCBs. A next-gen coating for modern PCB lines, with proven gains in flux and cleaner resistance plus excellent print quality and adhesion at high temperatures.",
+    "zh": "全新 APEX 系列 —— 面向 PCB 的超高性能聚酰亚胺标签材料。新一代涂层专为现代 PCB 产线打造，在耐助焊剂与耐清洗方面提升显著，并在高温下保持优异的打印质量与附着力。",
+    "vi": "Giới thiệu dòng APEX mới — vật liệu nhãn polyimide siêu hiệu năng cho PCB. Lớp phủ thế hệ mới cho dây chuyền PCB hiện đại, cải thiện rõ rệt khả năng chịu flux và dung dịch rửa, cùng chất lượng in và độ bám dính xuất sắc ở nhiệt độ cao.",
+    "th": "ขอแนะนำซีรีส์ APEX ใหม่ — วัสดุฉลากโพลิอิมิดสมรรถนะสูงยิ่งสำหรับ PCB เคลือบเจเนอเรชันใหม่สำหรับไลน์ PCB สมัยใหม่ เพิ่มความทนฟลักซ์และน้ำยาล้างอย่างชัดเจน พร้อมคุณภาพการพิมพ์และการยึดเกาะที่ยอดเยี่ยมที่อุณหภูมิสูง"
   },
   "features": {
-    "en": ["Improved flux-resistant formula: 72% performance boost vs legacy XF-582 in internal tests", "Chemical-resistant coating: 15% higher anti-corrosion; passes the Kyzen 4-cycle cleaning test", "Thermally stable substrate: continuous 150°C/100h; short peak 260°C/5min, 300°C/90s; anti-yellowing", "Standardized ESD product line: ANSI/ESD S20.20 compliant; static-dissipative topcoat + low-static liner", "Complete portfolio of 9 models with permanent acrylic adhesive; all 9 models UL certified, complying with REACH & RoHS"],
-    "zh": ["耐助焊配方升级：对比老款 XF-582 内部测试性能提升 72%", "耐化学清洗涂层：耐腐蚀性提升 15%，通过 Kyzen 四轮标准清洗测试", "高温稳定基材：长期 150℃/100h，短时峰值 260℃/5min、300℃/90s，抗黄化不易软化", "标准化 ESD 产品线：符合 ANSI/ESD S20.20；静电消散表层 + 低静电底纸", "9 款完整产品规格，永久性丙烯酸胶水；全部 9 款型号持有 UL 认证，满足 REACH、RoHS 环保标准"],
-    "vi": ["Công thức chống dung dịch hàn cải tiến: hiệu suất tăng 72% so với dòng cũ XF-582 qua kiểm tra nội bộ", "Lớp phủ chống hóa chất: khả năng chống ăn mòn tăng 15%; vượt qua bài kiểm tra rửa 4 vòng tiêu chuẩn Kyzen", "Chất nền ổn định nhiệt: chịu liên tục 150°C/100giờ, chịu đỉnh ngắn hạn 260°C/5phút, 300°C/90giây; chống vàng hóa, không dễ mềm", "Dòng sản phẩm ESD chuẩn hóa: tuân thủ ANSI/ESD S20.20; lớp phủ tiêu tán tĩnh điện + lót giấy thấp tĩnh", "9 mã sản phẩm hoàn chỉnh, keo acrylic vĩnh viễn; tất cả 9 mã đều có chứng nhận UL, đáp ứng tiêu chuẩn môi trường REACH, RoHS"],
-    "th": ["สูตรต้านทานสารบัดกรีได้รับการปรับปรุง: ประสิทธิภาพเพิ่มขึ้น 72% เทียบกับรุ่นเก่า XF-582 จากการทดสอบภายใน", "ชั้นเคลือบต้านทานสารเคมี: ความสามารถต้านการกัดกร่อนเพิ่มขึ้น 15%; ผ่านการทดสอบล้าง 4 รอบมาตรฐาน Kyzen", "ฐานวัสดุเสถียรต่ออุณหภูมิ: ทนอุณหภูมิ 150°C ต่อเนื่อง 100 ชั่วโมง ทนอุณหภูมิสูงสุดชั่วคราว 260°C 5 นาที และ 300°C 90 วินาที ป้องกันการเหลือง ไม่อ่อนตัวง่าย", "สายสินค้า ESD มาตรฐาน: ปฏิบัติตามข้อกำหนด ANSI/ESD S20.20; ชั้นเคลือบกระจายไฟฟ้าสถิต + แผ่นรองค่าความสถิตต่ำ", "สเปคสินค้าทั้งหมด 9 รุ่น กาวอะคริลิกถาวร; ทั้ง 9 รุ่นมีใบรับรอง UL ตรงตามมาตรฐานสิ่งแวดล้อม REACH และ RoHS"]
+    "en": [
+      "Improved Heat Resistance — engineered for extreme thermal cycles, keeping labels secure and readable.",
+      "Improved Chemical & Flux Resistance — withstands the harshest PCB processes, including high-pressure washes and aggressive fluxes.",
+      "Precision Readability — maintains small-font and barcode readability through reflow and cleaning.",
+      "Superior Print Performance — optimized for crisp, high-contrast TTR printability.",
+      "Made in the USA, Trusted Global Supplier — the quality you expect from a leader in performance label materials."
+    ],
+    "zh": [
+      "耐热性提升 —— 专为极端热循环设计，确保标签牢固、清晰可读。",
+      "耐化学与耐助焊剂提升 —— 可承受最严苛的 PCB 制程，包括高压清洗与强力助焊剂。",
+      "精准可读 —— 历经回流焊与清洗，仍保持小字体与条码清晰可读。",
+      "卓越打印表现 —— 针对清晰、高对比的热转印（TTR）打印优化。",
+      "美国原产，值得信赖的全球供应商 —— 源自高性能标签材料领导者的品质保证。"
+    ],
+    "vi": [
+      "Chịu nhiệt tốt hơn — thiết kế cho chu kỳ nhiệt khắc nghiệt, giữ nhãn bám chắc và dễ đọc.",
+      "Chịu hóa chất & flux tốt hơn — chịu được quy trình PCB khắc nghiệt nhất, gồm rửa áp lực cao và flux mạnh.",
+      "Đọc chính xác — giữ khả năng đọc font nhỏ và mã vạch qua hàn hồi lưu và rửa.",
+      "In vượt trội — tối ưu cho in TTR sắc nét, tương phản cao.",
+      "Sản xuất tại Mỹ, nhà cung cấp toàn cầu tin cậy — chất lượng từ nhà dẫn đầu vật liệu nhãn hiệu năng cao."
+    ],
+    "th": [
+      "ทนความร้อนดีขึ้น — ออกแบบสำหรับวัฏจักรความร้อนสุดขั้ว ให้ฉลากยึดแน่นและอ่านได้",
+      "ทนสารเคมีและฟลักซ์ดีขึ้น — ทนกระบวนการ PCB ที่รุนแรงที่สุด รวมถึงการล้างแรงดันสูงและฟลักซ์เข้มข้น",
+      "อ่านได้แม่นยำ — คงความชัดของฟอนต์เล็กและบาร์โค้ดตลอดรีโฟลว์และการล้าง",
+      "การพิมพ์ที่เหนือกว่า — ปรับให้พิมพ์ TTR คมชัด คอนทราสต์สูง",
+      "ผลิตในสหรัฐฯ ซัพพลายเออร์ระดับโลกที่ไว้ใจได้ — คุณภาพจากผู้นำวัสดุฉลากสมรรถนะสูง"
+    ]
   },
   "benefits": {
-    "en": ["Cut scrap loss: intact marks through all processes reduce defective PCB waste & rework cost, saving raw material expenses", "Boost automatic production capacity: fully scannable barcodes support automatic AOI, drastically lowering manual inspection labor", "Avoid chip quality accidents: certified ESD grades fit clean precision workshops, eliminating claims & compensation caused by ESD damage", "Simplify warehousing & global compliance: one series covers regular & ESD production lines to reduce stock varieties, and complete UL, REACH, RoHS certifications simplify overseas factory audit & customs clearance"],
-    "zh": ["降低报废损耗：全流程标识完整，减少不良 PCB 报废与返工，节约原材料成本", "提升自动化产能：条码全程清晰可扫描，适配全自动 AOI 检测，大幅减少人工复检人力", "规避芯片品质事故：标准化 ESD 规格适配无尘精密车间，杜绝静电损坏引发客诉与赔付", "简化仓储与全球合规：单一系列覆盖常规、防静电全产线，减少多型号备货；全系 UL、REACH、RoHS 资质齐全，简化海外客户审厂、报关流程"],
-    "vi": ["Giảm thiệt hại phế liệu: dấu hiệu hoàn chỉnh qua mọi quy trình, giảm tấm PCB lỗi và công sửa chữa, tiết kiệm chi phí nguyên vật liệu", "Nâng năng suất tự động hóa: mã vạch luôn rõ nét để quét, hỗ trợ kiểm tra AOI hoàn toàn tự động, giảm nhân công kiểm tra thủ công đáng kể", "Tránh sự cố chất lượng chip: quy cách ESD chuẩn phù hợp xưởng sạch chính xác, loại bỏ khiếu nại & bồi thường do hỏng tĩnh điện", "Đơn giản hóa quản lý kho & tuân thủ toàn cầu: một dòng sản phẩm bao phủ toàn bộ dây chuyền thông thường & chống tĩnh điện, giảm số loại hàng tồn kho; đầy đủ chứng nhận UL, REACH, RoHS, đơn giản hóa kiểm tra nhà máy & thủ tục hải quan cho đối tác nước ngoài"],
-    "th": ["ลดความสูญเสียของเสีย: รอยเครื่องหมายสมบูรณ์ตลอดกระบวนการ ลดแผ่น PCB เสียและงานซ่อมแซม ประหยัดต้นทุนวัตถุดิบ", "เพิ่มประสิทธิภาพการผลิตอัตโนมัติ: บาร์โค้ดชัดเจนตลอดเวลาสแกนได้ รองรับเครื่องตรวจสอบ AOI อัตโนมัติเต็มรูปแบบ ลดแรงงานตรวจสอบด้วยมืออย่างมาก", "หลีกเลี่ยงปัญหาคุณภาพชิป: สเปค ESD มาตรฐานเหมาะกับโรงงานสะอาดที่ผลิตชิ้นส่วนละเอียด ป้องกันการร้องเรียนและค่าชดเชยจากความเสียหายไฟฟ้าสถิต", "จัดการคลังสินค้าและปฏิบัติตามกฎระเบียบทั่วโลกได้ง่าย: สายสินค้าเดียวครอบคลุมไลน์ผลิตทั่วไปและไลน์ป้องกันไฟฟ้าสถิต ลดจำนวนรุ่นสินค้าที่สต็อก; มีใบรับรอง UL, REACH, RoHS ครบชุด ทำให้ขั้นตอนตรวจโรงงานและพิธีศุลกากรง่ายขึ้น"]
+    "en": [
+      "Built for today’s fluxes, cleaners, and multi-cycle reflow.",
+      "72% improvement in flux solder performance vs. our legacy line, validated in testing.",
+      "15% improvement in cleaner resistance vs. our legacy line, helping labels survive high-pressure washes.",
+      "Enhanced ink transfer for more defined images, even at smaller font sizes — designed to extend printhead life and maintain readability through exposure to highly caustic solutions.",
+      "Coating and adhesive system engineered for elevated temperatures, ensuring labels stay put and remain readable."
+    ],
+    "zh": [
+      "专为当今的助焊剂、清洗剂与多轮回流焊而生。",
+      "耐助焊剂焊接性能较老款提升 72%，经测试验证。",
+      "耐清洗剂性能较老款提升 15%，助力标签经受高压清洗。",
+      "油墨转移增强，图像更清晰，即使小字体亦然；专为延长打印头寿命、在强腐蚀溶液中保持可读性而设计。",
+      "涂层与胶粘系统专为高温设计，确保标签牢固不脱、持续可读。"
+    ],
+    "vi": [
+      "Được tạo ra cho flux, dung dịch rửa và hàn hồi lưu nhiều chu kỳ ngày nay.",
+      "Hiệu suất hàn chịu flux cải thiện 72% so với dòng cũ, đã kiểm chứng qua thử nghiệm.",
+      "Khả năng chịu dung dịch rửa cải thiện 15% so với dòng cũ, giúp nhãn chịu được rửa áp lực cao.",
+      "Truyền mực tốt hơn cho hình ảnh sắc nét hơn, ngay cả ở font nhỏ; thiết kế để kéo dài tuổi thọ đầu in và giữ khả năng đọc khi tiếp xúc dung dịch ăn mòn mạnh.",
+      "Hệ lớp phủ và keo thiết kế cho nhiệt độ cao, đảm bảo nhãn bám chắc và dễ đọc."
+    ],
+    "th": [
+      "สร้างมาเพื่อฟลักซ์ น้ำยาล้าง และรีโฟลว์หลายรอบในปัจจุบัน",
+      "ประสิทธิภาพการบัดกรีทนฟลักซ์ดีขึ้น 72% เทียบรุ่นเดิม ผ่านการทดสอบยืนยัน",
+      "ความทนน้ำยาล้างดีขึ้น 15% เทียบรุ่นเดิม ช่วยให้ฉลากทนการล้างแรงดันสูง",
+      "การถ่ายโอนหมึกดีขึ้นให้ภาพคมชัดขึ้นแม้ฟอนต์เล็ก ออกแบบเพื่อยืดอายุหัวพิมพ์และคงการอ่านได้เมื่อสัมผัสสารกัดกร่อนแรง",
+      "ระบบเคลือบและกาวออกแบบสำหรับอุณหภูมิสูง ให้ฉลากยึดแน่นและอ่านได้"
+    ]
   },
   "spec_table": {
     "headers": {
-      "en": ["Model", "Base", "Thickness", "Finish", "ESD"],
-      "zh": ["型号", "基材", "厚度", "表面", "防静电"],
-      "vi": ["Mã", "Vật liệu", "Độ dày", "Bề mặt", "ESD"],
-      "th": ["รุ่น", "วัสดุ", "ความหนา", "พื้นผิว", "ESD"]
+      "en": [
+        "Model",
+        "Base",
+        "Thickness",
+        "Finish",
+        "ESD"
+      ],
+      "zh": [
+        "型号",
+        "基材",
+        "厚度",
+        "表面",
+        "防静电"
+      ],
+      "vi": [
+        "Mã",
+        "Vật liệu",
+        "Độ dày",
+        "Bề mặt",
+        "ESD"
+      ],
+      "th": [
+        "รุ่น",
+        "วัสดุ",
+        "ความหนา",
+        "พื้นผิว",
+        "ESD"
+      ]
     },
     "rows": [
-      {"cells": ["XF-101M", {"en": "Polyimide", "zh": "聚酰亚胺", "vi": "Polyimide", "th": "โพลิอิมิด"}, "1 mil", {"en": "Matte white", "zh": "雾白", "vi": "Trắng mờ", "th": "สีขาวด้าน"}, "—"]},
-      {"cells": ["XF-101S", {"en": "Polyimide", "zh": "聚酰亚胺", "vi": "Polyimide", "th": "โพลิอิมิด"}, "1 mil", {"en": "Semi-gloss white", "zh": "半亮白", "vi": "Trắng bán bóng", "th": "สีขาวกึ่งเงา"}, "—"]},
-      {"cells": ["XF-101G", {"en": "Polyimide", "zh": "聚酰亚胺", "vi": "Polyimide", "th": "โพลิอิมิด"}, "1 mil", {"en": "Gloss white", "zh": "亮白", "vi": "Trắng bóng", "th": "สีขาวเงา"}, "—"]},
-      {"cells": ["XF-102M", {"en": "Polyimide", "zh": "聚酰亚胺", "vi": "Polyimide", "th": "โพลิอิมิด"}, "2 mil", {"en": "Matte white", "zh": "雾白", "vi": "Trắng mờ", "th": "สีขาวด้าน"}, "—"]},
-      {"cells": ["XF-102S", {"en": "Polyimide", "zh": "聚酰亚胺", "vi": "Polyimide", "th": "โพลิอิมิด"}, "2 mil", {"en": "Semi-gloss white", "zh": "半亮白", "vi": "Trắng bán bóng", "th": "สีขาวกึ่งเงา"}, "—"]},
-      {"cells": ["XF-102G", {"en": "Polyimide", "zh": "聚酰亚胺", "vi": "Polyimide", "th": "โพลิอิมิด"}, "2 mil", {"en": "Gloss white", "zh": "亮白", "vi": "Trắng bóng", "th": "สีขาวเงา"}, "—"]},
-      {"esd": true, "cells": ["XF-101ME", {"en": "Anti-static PI", "zh": "防静电聚酰亚胺", "vi": "PI chống tĩnh", "th": "โพลิอิมิดป้องกันสถิต"}, "1 mil", {"en": "Matte", "zh": "雾白", "vi": "Mờ", "th": "ด้าน"}, "S20.20"]},
-      {"esd": true, "cells": ["XF-101SE", {"en": "Anti-static PI", "zh": "防静电聚酰亚胺", "vi": "PI chống tĩnh", "th": "โพลิอิมิดป้องกันสถิต"}, "1 mil", {"en": "Semi-gloss", "zh": "半亮白", "vi": "Bán bóng", "th": "กึ่งเงา"}, "S20.20"]},
-      {"esd": true, "cells": ["XF-102ME", {"en": "Anti-static PI", "zh": "防静电聚酰亚胺", "vi": "PI chống tĩnh", "th": "โพลิอิมิดป้องกันสถิต"}, "2 mil", {"en": "Matte", "zh": "雾白", "vi": "Mờ", "th": "ด้าน"}, "S20.20"]}
+      {
+        "cells": [
+          "XF-101M",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Matte white",
+            "zh": "雾白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          "—"
+        ]
+      },
+      {
+        "cells": [
+          "XF-101S",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Semi-gloss white",
+            "zh": "半亮白",
+            "vi": "Trắng bán bóng",
+            "th": "สีขาวกึ่งเงา"
+          },
+          "—"
+        ]
+      },
+      {
+        "cells": [
+          "XF-101G",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Gloss white",
+            "zh": "亮白",
+            "vi": "Trắng bóng",
+            "th": "สีขาวเงา"
+          },
+          "—"
+        ]
+      },
+      {
+        "cells": [
+          "XF-102M",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Matte white",
+            "zh": "雾白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          "—"
+        ]
+      },
+      {
+        "cells": [
+          "XF-102S",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Semi-gloss white",
+            "zh": "半亮白",
+            "vi": "Trắng bán bóng",
+            "th": "สีขาวกึ่งเงา"
+          },
+          "—"
+        ]
+      },
+      {
+        "cells": [
+          "XF-102G",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Gloss white",
+            "zh": "亮白",
+            "vi": "Trắng bóng",
+            "th": "สีขาวเงา"
+          },
+          "—"
+        ]
+      },
+      {
+        "esd": true,
+        "cells": [
+          "XF-101ME",
+          {
+            "en": "Anti-static PI",
+            "zh": "防静电聚酰亚胺",
+            "vi": "PI chống tĩnh",
+            "th": "โพลิอิมิดป้องกันสถิต"
+          },
+          "1 mil",
+          {
+            "en": "Matte",
+            "zh": "雾白",
+            "vi": "Mờ",
+            "th": "ด้าน"
+          },
+          "S20.20"
+        ]
+      },
+      {
+        "esd": true,
+        "cells": [
+          "XF-101SE",
+          {
+            "en": "Anti-static PI",
+            "zh": "防静电聚酰亚胺",
+            "vi": "PI chống tĩnh",
+            "th": "โพลิอิมิดป้องกันสถิต"
+          },
+          "1 mil",
+          {
+            "en": "Semi-gloss",
+            "zh": "半亮白",
+            "vi": "Bán bóng",
+            "th": "กึ่งเงา"
+          },
+          "S20.20"
+        ]
+      },
+      {
+        "esd": true,
+        "cells": [
+          "XF-102ME",
+          {
+            "en": "Anti-static PI",
+            "zh": "防静电聚酰亚胺",
+            "vi": "PI chống tĩnh",
+            "th": "โพลิอิมิดป้องกันสถิต"
+          },
+          "2 mil",
+          {
+            "en": "Matte",
+            "zh": "雾白",
+            "vi": "Mờ",
+            "th": "ด้าน"
+          },
+          "S20.20"
+        ]
+      }
     ],
     "notes": {
-      "en": ["Unified thermal: 150°C/100h continuous · 260°C/5min reflow peak · 300°C/90s extreme", "Permanent acrylic adhesive; all 9 models UL certified (REACH & RoHS compliant)"],
-      "zh": ["统一耐温：150℃/100h 长期 · 260℃/5min 回流峰值 · 300℃/90s 短时极限", "永久性丙烯酸胶水；全部 9 款型号持有 UL 认证（符合 REACH、RoHS）"],
-      "vi": ["Chịu nhiệt thống nhất: 150°C/100giờ liên tục · 260°C/5phút đỉnh hàn hồi · 300°C/90giây cực đoan ngắn hạn", "Keo acrylic vĩnh viễn; tất cả 9 mã đều có chứng nhận UL (đáp ứng REACH & RoHS)"],
-      "th": ["ทนอุณหภูมิมาตรฐานเดียวกัน: 150°C/100 ชั่วโมง ต่อเนื่อง · 260°C/5 นาที สูงสุดรีโฟลว์ · 300°C/90 วินาที สูงรุนแรงชั่วคราว", "กาวอะคริลิกถาวร; ทั้ง 9 รุ่นมีใบรับรอง UL (ตรงตาม REACH และ RoHS)"]
+      "en": [
+        "Unified thermal: 150°C/100h continuous · 260°C/5min reflow peak · 300°C/90s extreme",
+        "Permanent acrylic adhesive; all 9 models UL certified (REACH & RoHS compliant)"
+      ],
+      "zh": [
+        "统一耐温：150℃/100h 长期 · 260℃/5min 回流峰值 · 300℃/90s 短时极限",
+        "永久性丙烯酸胶水；全部 9 款型号持有 UL 认证（符合 REACH、RoHS）"
+      ],
+      "vi": [
+        "Chịu nhiệt thống nhất: 150°C/100giờ liên tục · 260°C/5phút đỉnh hàn hồi · 300°C/90giây cực đoan ngắn hạn",
+        "Keo acrylic vĩnh viễn; tất cả 9 mã đều có chứng nhận UL (đáp ứng REACH & RoHS)"
+      ],
+      "th": [
+        "ทนอุณหภูมิมาตรฐานเดียวกัน: 150°C/100 ชั่วโมง ต่อเนื่อง · 260°C/5 นาที สูงสุดรีโฟลว์ · 300°C/90 วินาที สูงรุนแรงชั่วคราว",
+        "กาวอะคริลิกถาวร; ทั้ง 9 รุ่นมีใบรับรอง UL (ตรงตาม REACH และ RoHS)"
+      ]
     }
-  },
-  "applications": {
-    "en": ["AI server motherboards / GPU accelerators, automotive domain controllers / radar PCBs, aerospace high-reliability boards, 5G/6G optical modules, medical & industrial-vision mainboards"],
-    "zh": ["AI 服务器主板 / GPU 加速卡、车载域控制器 / 雷达 PCB、航空航天高可靠电路板、5G/6G 光模块、医疗 & 工业视觉主控板"],
-    "vi": ["Bo mạch chủ máy chủ AI / Card tăng tốc GPU, Bộ điều khiển miền ô tô / PCB radar, Bo mạch độ tin cậy cao hàng không vũ trụ, Module quang 5G/6G, Bo mạch chính y tế & thị giác công nghiệp"],
-    "th": ["แผ่นวงจรแม่บอร์ดเซิร์ฟเวอร์ AI / การ์ดเร่งความเร็ว GPU ตัวควบคุมโดเมนยานยนต์ / PCB เรดาร์ แผ่นวงจรความน่าเชื่อถือสูงอวกาศ โมดูลออปติคัล 5G/6G แผ่นวงจรหลักทางการแพทย์และอุตสาหกรรมภาพ"]
-  },
-  "certifications": {
-    "en": ["All models UL certified; REACH & RoHS compliant", "Full-process internal validation: 6 fluxes + 4 industrial cleaners, 90 samples per model; passes the official Kyzen 4-cycle cleaning standard"],
-    "zh": ["所有型号取得 UL 认证，符合 REACH、RoHS 管控标准", "全工况内部验证：6 款助焊剂 + 4 款工业清洗剂，每款 90 份样品检测；通过 Kyzen 官方四轮清洗标准"],
-    "vi": ["Tất cả mã có chứng nhận UL; tuân thủ REACH & RoHS", "Xác minh nội bộ toàn quy trình: 6 loại dung dịch hàn + 4 chất rửa công nghiệp, 90 mẫu thử mỗi mã; vượt tiêu chuẩn rửa 4 vòng chính thức Kyzen"],
-    "th": ["ทุกรุ่นมีใบรับรอง UL; ปฏิบัติตาม REACH และ RoHS", "ตรวจสอบทุกกระบวนการภายใน: สารบัดกรี 6 ชนิด + สารล้างอุตสาหกรรม 4 ชนิด 90 ตัวอย่างต่อรุ่น; ผ่านมาตรฐานการล้าง 4 รอบทางการของ Kyzen"]
   }
 }
