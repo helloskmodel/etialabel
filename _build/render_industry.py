@@ -70,7 +70,9 @@ CSS = """
 .wctab .tabic{font-size:23px;line-height:1;display:block}
 .wctab .tabic svg{width:25px;height:25px;display:block}
 .wctab .tablb{font-size:12px;font-weight:700;line-height:1.15}
-.wcsub{display:none;flex-wrap:wrap;gap:8px;justify-content:center;margin:16px auto 0;max-width:860px}
+.wcsubrow{display:none;align-items:center;gap:2px;max-width:860px;margin:16px auto 0}
+.wcsub{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:8px;flex:1;justify-content:flex-start;-webkit-overflow-scrolling:touch}
+.wcsub::-webkit-scrollbar{height:0}
 .wcsubtab{flex:none;font-size:13px;font-weight:600;padding:7px 14px;border-radius:20px;border:1px solid #dbe3f1;background:#fff;color:#41506e;cursor:pointer;white-space:nowrap}
 .wcsubtab.on{background:#eef2ff;border-color:#5b6ee8;color:#143C96;font-weight:700}
 .wcsubtab:hover{border-color:#5b6ee8}
@@ -152,12 +154,14 @@ function render(a){
     b.onclick=function(){render(i);b.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});};
     tabs.appendChild(b);
   });
-  if(SUBNAV){ sub.style.display='flex'; renderSub(a,0); return; }
-  if(sub){ sub.style.display='none'; }
+  var subrow=document.getElementById('wcsubrow');
+  if(SUBNAV){ if(subrow) subrow.style.display='flex'; renderSub(a,0); return; }
+  if(subrow){ subrow.style.display='none'; }
   var c=CATS[a];
   panel.innerHTML=topRow(c)+'<div class="wcmcards">'+c.prods.map(function(p){return card(p,false);}).join('')+'</div>';
 }
 window.wcScroll=function(d){document.getElementById('wctabs').scrollBy({left:d*180,behavior:'smooth'});};
+window.wcSubScroll=function(d){document.getElementById('wcsub').scrollBy({left:d*200,behavior:'smooth'});};
 render(0);
 })();
 </script>
@@ -205,7 +209,9 @@ def build_lang(data, lang):
             '<button class="wcar" onclick="wcScroll(-1)">&lsaquo;</button>'
             '<div class="wctabs" id="wctabs"></div>'
             '<button class="wcar" onclick="wcScroll(1)">&rsaquo;</button>'
-            '</div><div class="wcsub" id="wcsub"></div><div id="wcpanel"></div></div></section>') % (
+            '</div><div class="wcsubrow" id="wcsubrow"><button class="wcar" onclick="wcSubScroll(-1)">&lsaquo;</button>'
+            '<div class="wcsub" id="wcsub"></div>'
+            '<button class="wcar" onclick="wcSubScroll(1)">&rsaquo;</button></div><div id="wcpanel"></div></div></section>') % (
         esc(ui["eyebrow_ov"]), esc(ui["overview"]), overview, esc(L(data["classify_by"], lang)))
     body += JS_TMPL % {"cats": json.dumps(cats, ensure_ascii=False),
                        "go": json.dumps(ui["go"], ensure_ascii=False),
@@ -225,7 +231,7 @@ def main():
     # Both languages get the v2 design + real products (model numbers are facts,
     # not translation). English prose (overview / tier intros) is a draft
     # translation of the Chinese brief, pending client review.
-    for slug in ["wire-cable", "outdoor-energy", "pcb", "steel", "automotive", "high-temperature", "low-temperature"]:
+    for slug in ["wire-cable", "outdoor-energy", "pcb", "steel", "automotive", "heat-resistant", "low-temperature"]:
         data = json.load(open(os.path.join(IND_DIR, slug + ".json"), encoding="utf-8"))
         for lang in data.get("langs", ["en", "zh"]):
             out = build_lang(data, lang)

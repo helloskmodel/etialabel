@@ -518,7 +518,7 @@ AXIS_ICONS = {
 }
 PROD_AXES = [
  ("perf","By Performance","按性能",[
-   ("High Temperature","高温","/products/high-temperature/"),
+   ("Heat Resistant","耐高温","/products/heat-resistant/"),
    ("Low Temperature","低温","/products/low-temperature/"),
  ]),
  ("app","By Industry","按行业",[
@@ -540,7 +540,7 @@ def products_dropdown(lang, linkfn):
                  "By Industry": ("Theo ngành", "ตามอุตสาหกรรม"),
                  "By Material": ("Theo vật liệu", "ตามวัสดุ"),
                  "By Performance": ("Theo hiệu suất", "ตามสมรรถนะ"),
-                 "High Temperature": ("Nhiệt độ cao", "อุณหภูมิสูง"),
+                 "Heat Resistant": ("Chịu nhiệt", "ทนความร้อน"),
                  "Low Temperature": ("Nhiệt độ thấp", "อุณหภูมิต่ำ")}
     def lab(e, z):
         if zh: return z
