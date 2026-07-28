@@ -121,7 +121,7 @@ var CATS=%(cats)s, GO=%(go)s, CS=%(consult)s, SUBNAV=%(subnav)s;
 function card(p,hideName){
   var im='<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7" cy="7" r="1.1"/></svg></span>';
   var nm=hideName?'':'<p class="mn">'+p.n+'</p>';
-  var inner=im+'<div>'+nm+'<p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+' →</span>'):('<span class="mgo">'+CS+'</span>'))+'</div>';
+  var inner=im+'<div>'+nm+'<p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+'</span>'):('<span class="mgo">'+CS+'</span>'))+'</div>';
   return p.landing?'<a class="wcmcard" href="'+p.href+'">'+inner+'</a>':'<div class="wcmcard off">'+inner+'</div>';
 }
 // top row: [image | category-description card]; falls back to plain intro when no image
@@ -165,7 +165,7 @@ render(0);
 def build_lang(data, lang):
     ui = UI.get(lang, UI[SOURCE_LANG])
     slug = data["slug"]
-    path = "/industries/%s/" % slug
+    path = "%s%s/" % (data.get("base", "/industries/"), slug)
     title = L(data["hero"]["title"], lang)
 
     # CATS for the FlexCon bar
@@ -210,13 +210,15 @@ def build_lang(data, lang):
                       title, "", body, crumb, active="app", trust=False, hero=hero,
                       langs=data.get("langs", ["en", "zh"]))
     hp.write(lang, path, content)  # overwrites gen_industry output; path already tracked there
+    if lang == "en" and data.get("track"):  # new pages (not from gen_industry) need tracking
+        hp.track(path, "products")
     return (hp.PREFIX[lang] + path)
 
 def main():
     # Both languages get the v2 design + real products (model numbers are facts,
     # not translation). English prose (overview / tier intros) is a draft
     # translation of the Chinese brief, pending client review.
-    for slug in ["wire-cable", "outdoor-energy", "pcb", "steel", "automotive"]:
+    for slug in ["wire-cable", "outdoor-energy", "pcb", "steel", "automotive", "heat-resistant"]:
         data = json.load(open(os.path.join(IND_DIR, slug + ".json"), encoding="utf-8"))
         for lang in data.get("langs", ["en", "zh"]):
             out = build_lang(data, lang)

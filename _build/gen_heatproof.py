@@ -517,12 +517,8 @@ AXIS_ICONS = {
  "mat":  _navsvg('<rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 13h14M5 17h10M5 21h14"/>'),
 }
 PROD_AXES = [
- ("mat","By Material","按材料",[
-   ("Polyimide (PI)","聚酰亚胺 PI","/products/polyimide-label-materials/"),
-   ("Polyester (PET)","聚酯 PET","/products/item/e-2712/"),
-   ("Nylon","尼龙","/products/item/e-3635/"),
-   ("Synthetic Paper","合成纸","/products/item/e-4532/"),
-   ("Metal Foil","金属箔","/products/item/hp-700t/"),
+ ("perf","By Performance","按性能",[
+   ("Heat Resistant","耐高温","/products/heat-resistant/"),
  ]),
  ("app","By Industry","按行业",[
    ("PCB","PCB","/industries/pcb-electronics-labeling-solutions/"),
@@ -541,7 +537,9 @@ def products_dropdown(lang, linkfn):
     # vi/th labels for the small set of menu strings (fall back to EN otherwise)
     MENU_VITH = {"By Environment": ("Theo môi trường", "ตามสภาพแวดล้อม"),
                  "By Industry": ("Theo ngành", "ตามอุตสาหกรรม"),
-                 "By Material": ("Theo vật liệu", "ตามวัสดุ")}
+                 "By Material": ("Theo vật liệu", "ตามวัสดุ"),
+                 "By Performance": ("Theo hiệu suất", "ตามสมรรถนะ"),
+                 "Heat Resistant": ("Chịu nhiệt", "ทนความร้อน")}
     def lab(e, z):
         if zh: return z
         if lang == "vi" and e in MENU_VITH: return MENU_VITH[e][0]
