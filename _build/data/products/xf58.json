@@ -1,11 +1,26 @@
 {
   "slug": "xf58",
   "source": "_docs/sources/pcb-products (XF58)",
-  "langs": ["en", "zh", "vi", "th"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg",
   "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB581",
-  "title": {"en": "XF58 Series — Polyonics PI PCB Labels", "zh": "XF58 系列 · Polyonics 聚酰亚胺 PCB 标签", "vi": "Dòng XF58 · Nhãn PCB PI Polyonics", "th": "ชุด XF58 · ฉลาก PCB PI Polyonics"},
-  "tagline": {"en": "XF58, multi-finish PI labels for mass PCB production", "zh": "XF58，多色可选，适配量产通用 PCB 全制程", "vi": "XF58, nhãn PI nhiều bề mặt cho sản xuất hàng loạt PCB", "th": "XF58 ฉลาก PI หลายพื้นผิว เหมาะการผลิต PCB จำนวนมาก"},
+  "title": {
+    "en": "XF58 Series — Polyonics PI PCB Labels",
+    "zh": "XF58 系列 · Polyonics 聚酰亚胺 PCB 标签",
+    "vi": "Dòng XF58 · Nhãn PCB PI Polyonics",
+    "th": "ชุด XF58 · ฉลาก PCB PI Polyonics"
+  },
+  "tagline": {
+    "en": "Reliable Polyimide Labels for Everyday PCB Manufacturing",
+    "zh": "可靠聚酰亚胺标签，适配日常 PCB 制造",
+    "vi": "Nhãn Polyimide đáng tin cậy cho sản xuất PCB hằng ngày",
+    "th": "ฉลากโพลิอิมิดที่เชื่อถือได้สำหรับการผลิต PCB ประจำวัน"
+  },
   "positioning": {
     "en": "Mass production lines for consumer electronics, industrial control and entry automotive PCBs demand cost-effective high-temperature tracking labels, and rely on different finishes and base colors to separate production lines and models. As a mature classic PI label, XF58 survives full reflow and multi-stage chemical cleaning, balancing stable performance and material cost.",
     "zh": "消费电子、工控、车载基础 PCB 大批量产线，需要高性价比耐高温追溯标签，同时依靠不同外观色彩区分产线、机种；XF58 作为成熟经典 PI 标签，覆盖回流焊、多轮化学清洗全流程，兼顾成本与制程耐久度。",
@@ -13,39 +28,187 @@
     "th": "ไลน์ผลิตจำนวนมากของบอร์ดอิเล็กทรอนิกส์ผู้บริโภค คอนโทรลอุตสาหกรรม และ PCB ยานยนต์เบื้องต้น ต้องการฉลากทนอุณหภูมิราคาประหยัด และพึ่งพาพื้นผิวและสีฐานหลายแบบเพื่อแยกไลน์ผลิตและรุ่นสินค้า XF58 เป็นวัสดุ PI คลาสสิกที่ผ่านการพิสูจน์ ทนกระบวนการรีโฟลว์และล้างสารเคมีหลายรอบ สมดุลระหว่างประสิทธิภาพและต้นทุนวัสดุ"
   },
   "challenges": {
-    "en": ["Mass SMT factories need diverse finishes to distinguish models, yet most label lines only offer limited white options", "2–4 cycles of 260°C reflow plus high-pressure chemical cleaning cause adhesive lift and unreadable barcodes, driving high scrap rates", "Thin PCBs require 1mil ultra-thin labels while rough boards need higher-adhesion 2mil variants; a single thickness cannot cover all boards", "Low-quality topcoat leads to faint prints that fail automatic AOI scanning", "Mid-volume factories avoid high-priced premium labels and need a stable, budget-friendly proven material"],
-    "zh": ["大批量 SMT 产线需要多款外观区分机种，市面标签色彩选择单一", "2~4 次 260℃回流 + 高压化学清洗，普通标签脱胶、条码模糊，报废量大", "薄型 PCB 适配 1mil 薄标签，厚板 / 高附着力需求需 2mil 规格，单规格物料无法全覆盖", "普通涂层热转印清晰度差，AOI 全自动检测识别失败", "中小批量产线不愿采购高价高端标签，需要稳定平价成熟方案"],
-    "vi": ["Nhà máy SMT sản xuất lớn cần nhiều loại bề mặt để phân biệt mã sản phẩm, nhưng hầu hết dòng nhãn chỉ có ít lựa chọn màu trắng", "2–4 vòng hàn hồi 260°C cùng rửa hóa chất áp suất cao làm keo bong tróc, mã vạch không đọc được, tăng tỷ lệ phế liệu", "PCB mỏng cần nhãn siêu mỏng 1mil trong khi tấm thô cần dòng 2mil bám dính tốt hơn; một độ dày không bao phủ tất cả tấm", "Lớp phủ kém làm in mờ, không nhận dạng được bởi máy AOI tự động", "Nhà máy sản xuất trung lượng tránh dòng cao cấp giá đắt, cần vật liệu ổn định chi phí thấp đã kiểm chứng"],
-    "th": ["โรงงาน SMT ผลิตจำนวนมากต้องการพื้นผิวหลายชนิดเพื่อแยกรุ่นสินค้า แต่ส่วนใหญ่รุ่นฉลากมีตัวเลือกสีขาวน้อย", "รีโฟลว์ 2–4 รอบ ที่ 260°C พร้อมล้างสารเคมีแรงดันสูง ทำให้กาวหลุดลอก บาร์โค้ดอ่านไม่ออก เพิ่มอัตราเศษเสีย", "PCB บางต้องการฉลากบางพิเศษ 1mil ในขณะที่แผ่นหยาบต้องการรุ่น 2mil ยึดเกาะแน่นกว่า ความหนาเดียวไม่ครอบคลุมทุกแผ่น", "ชั้นเคลือบคุณภาพต่ำทำให้ภาพพิมพ์จาง ตรวจจับด้วยเครื่อง AOI อัตโนมัติไม่ได้", "โรงงานผลิตปริมาณกลางหลีกเลี่ยงรุ่นพรีเมียมราคาแพง ต้องการวัสดุเสถียร ราคาประหยัดที่พิสูจน์แล้ว"]
+    "en": [
+      "Mass SMT factories need diverse finishes to distinguish models, yet most label lines only offer limited white options",
+      "2–4 cycles of 260°C reflow plus high-pressure chemical cleaning cause adhesive lift and unreadable barcodes, driving high scrap rates",
+      "Thin PCBs require 1mil ultra-thin labels while rough boards need higher-adhesion 2mil variants; a single thickness cannot cover all boards",
+      "Low-quality topcoat leads to faint prints that fail automatic AOI scanning",
+      "Mid-volume factories avoid high-priced premium labels and need a stable, budget-friendly proven material"
+    ],
+    "zh": [
+      "大批量 SMT 产线需要多款外观区分机种，市面标签色彩选择单一",
+      "2~4 次 260℃回流 + 高压化学清洗，普通标签脱胶、条码模糊，报废量大",
+      "薄型 PCB 适配 1mil 薄标签，厚板 / 高附着力需求需 2mil 规格，单规格物料无法全覆盖",
+      "普通涂层热转印清晰度差，AOI 全自动检测识别失败",
+      "中小批量产线不愿采购高价高端标签，需要稳定平价成熟方案"
+    ],
+    "vi": [
+      "Nhà máy SMT sản xuất lớn cần nhiều loại bề mặt để phân biệt mã sản phẩm, nhưng hầu hết dòng nhãn chỉ có ít lựa chọn màu trắng",
+      "2–4 vòng hàn hồi 260°C cùng rửa hóa chất áp suất cao làm keo bong tróc, mã vạch không đọc được, tăng tỷ lệ phế liệu",
+      "PCB mỏng cần nhãn siêu mỏng 1mil trong khi tấm thô cần dòng 2mil bám dính tốt hơn; một độ dày không bao phủ tất cả tấm",
+      "Lớp phủ kém làm in mờ, không nhận dạng được bởi máy AOI tự động",
+      "Nhà máy sản xuất trung lượng tránh dòng cao cấp giá đắt, cần vật liệu ổn định chi phí thấp đã kiểm chứng"
+    ],
+    "th": [
+      "โรงงาน SMT ผลิตจำนวนมากต้องการพื้นผิวหลายชนิดเพื่อแยกรุ่นสินค้า แต่ส่วนใหญ่รุ่นฉลากมีตัวเลือกสีขาวน้อย",
+      "รีโฟลว์ 2–4 รอบ ที่ 260°C พร้อมล้างสารเคมีแรงดันสูง ทำให้กาวหลุดลอก บาร์โค้ดอ่านไม่ออก เพิ่มอัตราเศษเสีย",
+      "PCB บางต้องการฉลากบางพิเศษ 1mil ในขณะที่แผ่นหยาบต้องการรุ่น 2mil ยึดเกาะแน่นกว่า ความหนาเดียวไม่ครอบคลุมทุกแผ่น",
+      "ชั้นเคลือบคุณภาพต่ำทำให้ภาพพิมพ์จาง ตรวจจับด้วยเครื่อง AOI อัตโนมัติไม่ได้",
+      "โรงงานผลิตปริมาณกลางหลีกเลี่ยงรุ่นพรีเมียมราคาแพง ต้องการวัสดุเสถียร ราคาประหยัดที่พิสูจน์แล้ว"
+    ]
   },
   "features": {
-    "en": ["Rich finish and color options: matte white, semi-gloss white and high-gloss white finishes, plus green and yellow base materials for line and model classification", "Dual-thickness PI substrate: 1mil ultra-thin fits ultra-thin PCBs; 2mil heavy-duty offers stronger adhesion on rough boards", "Thermally stable substrate: continuous 150°C/100h, short peak 260°C/5min and 300°C/90s, resisting yellowing and softening through reflow", "Universal thermal-transfer topcoat: compatible with DNP, Dynic and Ricoh mainstream ribbons, printing ultra-fine barcodes at low energy", "Standard permanent acrylic adhesive: resists repeated cleaner soak and spray, passing standard Kyzen cleaning conditions", "Full-line compliance: all models REACH and RoHS compliant and UL 969 recognized", "Mature mass-production formula: 20-year market-proven classic material with stable large-volume supply and controllable lead time"],
-    "zh": ["丰富外观色彩规格：提供哑白、半亮白、亮白多款白色饰面，配套黄、绿彩色基材，支持产线 / 机型颜色分类管理", "双厚度 PI 基材：1mil 超薄款适配超薄 PCB；2mil 加厚款附着力更强，适配粗糙板面", "稳定高温基材：长期 150℃耐受 100h，短时峰值 260℃/5min、300℃/90s，过炉不易黄变软化", "通用热转印涂层：适配市面 DNP、Dynic、Ricoh 主流碳带，低能耗即可打印超细条码", "标准丙烯酸永久胶：耐多轮清洗剂浸泡喷淋，通过常规 Kyzen 清洗工况测试", "全系列合规认证：全系 REACH、RoHS 环保，所有型号均持有 UL 969 认证", "成熟量产配方：20 年市场验证经典材质，大批量供货稳定，交期可控"],
-    "vi": ["Nhiều lựa chọn bề mặt và màu: trắng mờ, trắng bán bóng, trắng bóng, kèm chất nền màu xanh và vàng để phân loại dây chuyền và mã máy", "Chất nền PI hai độ dày: 1mil siêu mỏng cho PCB siêu mỏng; 2mil dày hơn bám dính tốt trên tấm thô ráp", "Chất nền ổn định nhiệt: liên tục 150°C/100h, đỉnh ngắn hạn 260°C/5phút và 300°C/90giây, chống vàng hóa và mềm hóa khi qua lò", "Lớp phủ chuyển nhiệt đa dụng: tương thích băng DNP, Dynic, Ricoh phổ biến, in mã vạch siêu nhỏ với năng lượng thấp", "Keo acrylic vĩnh viễn tiêu chuẩn: chịu ngâm và phun dung dịch rửa nhiều lần, vượt qua điều kiện rửa Kyzen tiêu chuẩn", "Tuân thủ toàn dòng: tất cả mã đáp ứng REACH và RoHS, có chứng nhận UL 969", "Công thức sản xuất hàng loạt đã kiểm chứng: vật liệu cổ điển 20 năm thị trường, cung cấp lớn ổn định, thời gian giao hàng kiểm soát được"],
-    "th": ["ตัวเลือกพื้นผิวและสีหลากหลาย: สีขาวด้าน ขาวกึ่งเงา ขาวเงา รวมฐานสีเขียวและเหลือง สำหรับแยกไลน์ผลิตและรุ่นเครื่อง", "ฐาน PI สองความหนา: 1mil บางพิเศษเหมาะกับ PCB บางพิเศษ; 2mil หนาขึ้น ยึดเกาะดีบนแผ่นหยาบ", "ฐานวัสดุเสถียรต่ออุณหภูมิ: ต่อเนื่อง 150°C/100h สูงสุดชั่วคราว 260°C/5min และ 300°C/90s ไม่เหลืองและอ่อนตัวเมื่อผ่านเตา", "ชั้นเคลือบถ่ายเทความร้อนอเนกประสงค์: เข้ากับริบบอน DNP, Dynic, Ricoh ทั่วไป พิมพ์บาร์โค้ดละเอียดด้วยพลังงานต่ำ", "กาวอะคริลิกถาวรมาตรฐาน: ทนการแช่และฉีดสารล้างซ้ำ ผ่านเงื่อนไขการล้าง Kyzen มาตรฐาน", "ปฏิบัติตามทั้งสาย: ทุกรุ่นตรง REACH และ RoHS มีใบรับรอง UL 969", "สูตรผลิตจำนวนมากที่พิสูจน์แล้ว: วัสดุคลาสสิกผ่านตลาด 20 ปี จัดส่งจำนวนมากเสถียร กำหนดส่งควบคุมได้"]
+    "en": [
+      "Rich finish and color options: matte white, semi-gloss white and high-gloss white finishes, plus green and yellow base materials for line and model classification",
+      "Dual-thickness PI substrate: 1mil ultra-thin fits ultra-thin PCBs; 2mil heavy-duty offers stronger adhesion on rough boards",
+      "Thermally stable substrate: continuous 150°C/100h, short peak 260°C/5min and 300°C/90s, resisting yellowing and softening through reflow",
+      "Universal thermal-transfer topcoat: compatible with DNP, Dynic and Ricoh mainstream ribbons, printing ultra-fine barcodes at low energy",
+      "Standard permanent acrylic adhesive: resists repeated cleaner soak and spray, passing standard Kyzen cleaning conditions",
+      "Full-line compliance: all models REACH and RoHS compliant and UL 969 recognized",
+      "Mature mass-production formula: 20-year market-proven classic material with stable large-volume supply and controllable lead time"
+    ],
+    "zh": [
+      "丰富外观色彩规格：提供哑白、半亮白、亮白多款白色饰面，配套黄、绿彩色基材，支持产线 / 机型颜色分类管理",
+      "双厚度 PI 基材：1mil 超薄款适配超薄 PCB；2mil 加厚款附着力更强，适配粗糙板面",
+      "稳定高温基材：长期 150℃耐受 100h，短时峰值 260℃/5min、300℃/90s，过炉不易黄变软化",
+      "通用热转印涂层：适配市面 DNP、Dynic、Ricoh 主流碳带，低能耗即可打印超细条码",
+      "标准丙烯酸永久胶：耐多轮清洗剂浸泡喷淋，通过常规 Kyzen 清洗工况测试",
+      "全系列合规认证：全系 REACH、RoHS 环保，所有型号均持有 UL 969 认证",
+      "成熟量产配方：20 年市场验证经典材质，大批量供货稳定，交期可控"
+    ],
+    "vi": [
+      "Nhiều lựa chọn bề mặt và màu: trắng mờ, trắng bán bóng, trắng bóng, kèm chất nền màu xanh và vàng để phân loại dây chuyền và mã máy",
+      "Chất nền PI hai độ dày: 1mil siêu mỏng cho PCB siêu mỏng; 2mil dày hơn bám dính tốt trên tấm thô ráp",
+      "Chất nền ổn định nhiệt: liên tục 150°C/100h, đỉnh ngắn hạn 260°C/5phút và 300°C/90giây, chống vàng hóa và mềm hóa khi qua lò",
+      "Lớp phủ chuyển nhiệt đa dụng: tương thích băng DNP, Dynic, Ricoh phổ biến, in mã vạch siêu nhỏ với năng lượng thấp",
+      "Keo acrylic vĩnh viễn tiêu chuẩn: chịu ngâm và phun dung dịch rửa nhiều lần, vượt qua điều kiện rửa Kyzen tiêu chuẩn",
+      "Tuân thủ toàn dòng: tất cả mã đáp ứng REACH và RoHS, có chứng nhận UL 969",
+      "Công thức sản xuất hàng loạt đã kiểm chứng: vật liệu cổ điển 20 năm thị trường, cung cấp lớn ổn định, thời gian giao hàng kiểm soát được"
+    ],
+    "th": [
+      "ตัวเลือกพื้นผิวและสีหลากหลาย: สีขาวด้าน ขาวกึ่งเงา ขาวเงา รวมฐานสีเขียวและเหลือง สำหรับแยกไลน์ผลิตและรุ่นเครื่อง",
+      "ฐาน PI สองความหนา: 1mil บางพิเศษเหมาะกับ PCB บางพิเศษ; 2mil หนาขึ้น ยึดเกาะดีบนแผ่นหยาบ",
+      "ฐานวัสดุเสถียรต่ออุณหภูมิ: ต่อเนื่อง 150°C/100h สูงสุดชั่วคราว 260°C/5min และ 300°C/90s ไม่เหลืองและอ่อนตัวเมื่อผ่านเตา",
+      "ชั้นเคลือบถ่ายเทความร้อนอเนกประสงค์: เข้ากับริบบอน DNP, Dynic, Ricoh ทั่วไป พิมพ์บาร์โค้ดละเอียดด้วยพลังงานต่ำ",
+      "กาวอะคริลิกถาวรมาตรฐาน: ทนการแช่และฉีดสารล้างซ้ำ ผ่านเงื่อนไขการล้าง Kyzen มาตรฐาน",
+      "ปฏิบัติตามทั้งสาย: ทุกรุ่นตรง REACH และ RoHS มีใบรับรอง UL 969",
+      "สูตรผลิตจำนวนมากที่พิสูจน์แล้ว: วัสดุคลาสสิกผ่านตลาด 20 ปี จัดส่งจำนวนมากเสถียร กำหนดส่งควบคุมได้"
+    ]
   },
   "benefits": {
-    "en": ["Visual line sorting: multiple finishes and base colors enable quick line and batch separation without extra dyeing", "Flexible stock planning: 1mil and 2mil grades cover thin and thick boards, one material line fits all mass models", "Lower batch scrap: barcodes stay intact after reflow and cleaning, cutting manual re-inspection and defective board loss", "Optimized procurement cost: a mature budget-grade classic material greatly reduces label spend versus premium series", "Stable supply chain: long-running mass-production material with consistent bulk-order supply and no shortage risk", "Smooth global export: full UL and environmental certificates ease consumer-electronics export audits and customs clearance"],
-    "zh": ["色彩分类管理：多饰面 / 彩色款按需选型，不用额外染色，快速区分产线、产品批次", "灵活物料搭配：1mil/2mil 双规格覆盖薄板、厚板，一条物料线适配全部量产机型", "降低批量报废：过回流、清洗后条码完整，减少人工复检与不良板损耗", "采购成本优化：成熟平价老款，对比高端系列大幅削减标签物料采购支出", "供应链稳定：长期量产成熟料，大批量订单供货稳定，无断料风险", "全球出货合规：全套 UL、环保资质，消费电子出口审厂、报关顺畅"],
-    "vi": ["Phân loại trực quan: nhiều bề mặt và màu cơ sở phân loại dây chuyền và lô nhanh không cần nhuộm thêm", "Lập kho linh hoạt: hai độ dày 1mil và 2mil bao phủ tấm mỏng và dày, một dòng vật liệu cho tất cả mã sản xuất hàng loạt", "Giảm phế liệu lô: mã vạch hoàn chỉnh sau hàn và rửa, cắt giảm kiểm tra lại thủ công và tổn thất tấm lỗi", "Tối ưu chi phí mua hàng: vật liệu cổ điển giá hợp lý giảm mạnh chi phí nhãn so với dòng cao cấp", "Chuỗi cung ứng ổn định: vật liệu sản xuất lâu năm, cung cấp đơn hàng lớn ổn định, không rủi ro đứt hàng", "Xuất khẩu toàn cầu thuận tiện: bộ chứng nhận UL và môi trường đầy đủ giúp kiểm tra xuất khẩu điện tử và thông quan dễ dàng"],
-    "th": ["แยกไลน์ด้วยภาพ: พื้นผิวและสีฐานหลายแบบแยกไลน์และล็อตได้รวดเร็ว ไม่ต้องย้อมสีเพิ่ม", "วางสต็อกยืดหยุ่น: สองความหนา 1mil และ 2mil ครอบคลุมแผ่นบางและหนา หนึ่งสายวัสดุใช้กับทุกรุ่นผลิตจำนวนมาก", "ลดเศษล็อต: บาร์โค้ดสมบูรณ์หลังรีโฟลว์และล้าง ลดการตรวจซ้ำด้วยมือและความสูญเสียแผ่นเสีย", "ปรับต้นทุนจัดซื้อ: วัสดุคลาสสิกราคาประหยัดลดค่าฉลากมากเทียบรุ่นพรีเมียม", "โซ่จัดหาเสถียร: วัสดุผลิตมานาน จัดส่งออเดอร์ขนาดใหญ่เสถียร ไม่มีความเสี่ยงขาดวัสดุ", "ส่งออกทั่วโลกราบรื่น: ชุดใบรับรอง UL และสิ่งแวดล้อมครบ ช่วยตรวจส่งออกอิเล็กทรอนิกส์และศุลกากรราบรื่น"]
+    "en": [
+      "Visual line sorting: multiple finishes and base colors enable quick line and batch separation without extra dyeing",
+      "Flexible stock planning: 1mil and 2mil grades cover thin and thick boards, one material line fits all mass models",
+      "Lower batch scrap: barcodes stay intact after reflow and cleaning, cutting manual re-inspection and defective board loss",
+      "Optimized procurement cost: a mature budget-grade classic material greatly reduces label spend versus premium series",
+      "Stable supply chain: long-running mass-production material with consistent bulk-order supply and no shortage risk",
+      "Smooth global export: full UL and environmental certificates ease consumer-electronics export audits and customs clearance"
+    ],
+    "zh": [
+      "色彩分类管理：多饰面 / 彩色款按需选型，不用额外染色，快速区分产线、产品批次",
+      "灵活物料搭配：1mil/2mil 双规格覆盖薄板、厚板，一条物料线适配全部量产机型",
+      "降低批量报废：过回流、清洗后条码完整，减少人工复检与不良板损耗",
+      "采购成本优化：成熟平价老款，对比高端系列大幅削减标签物料采购支出",
+      "供应链稳定：长期量产成熟料，大批量订单供货稳定，无断料风险",
+      "全球出货合规：全套 UL、环保资质，消费电子出口审厂、报关顺畅"
+    ],
+    "vi": [
+      "Phân loại trực quan: nhiều bề mặt và màu cơ sở phân loại dây chuyền và lô nhanh không cần nhuộm thêm",
+      "Lập kho linh hoạt: hai độ dày 1mil và 2mil bao phủ tấm mỏng và dày, một dòng vật liệu cho tất cả mã sản xuất hàng loạt",
+      "Giảm phế liệu lô: mã vạch hoàn chỉnh sau hàn và rửa, cắt giảm kiểm tra lại thủ công và tổn thất tấm lỗi",
+      "Tối ưu chi phí mua hàng: vật liệu cổ điển giá hợp lý giảm mạnh chi phí nhãn so với dòng cao cấp",
+      "Chuỗi cung ứng ổn định: vật liệu sản xuất lâu năm, cung cấp đơn hàng lớn ổn định, không rủi ro đứt hàng",
+      "Xuất khẩu toàn cầu thuận tiện: bộ chứng nhận UL và môi trường đầy đủ giúp kiểm tra xuất khẩu điện tử và thông quan dễ dàng"
+    ],
+    "th": [
+      "แยกไลน์ด้วยภาพ: พื้นผิวและสีฐานหลายแบบแยกไลน์และล็อตได้รวดเร็ว ไม่ต้องย้อมสีเพิ่ม",
+      "วางสต็อกยืดหยุ่น: สองความหนา 1mil และ 2mil ครอบคลุมแผ่นบางและหนา หนึ่งสายวัสดุใช้กับทุกรุ่นผลิตจำนวนมาก",
+      "ลดเศษล็อต: บาร์โค้ดสมบูรณ์หลังรีโฟลว์และล้าง ลดการตรวจซ้ำด้วยมือและความสูญเสียแผ่นเสีย",
+      "ปรับต้นทุนจัดซื้อ: วัสดุคลาสสิกราคาประหยัดลดค่าฉลากมากเทียบรุ่นพรีเมียม",
+      "โซ่จัดหาเสถียร: วัสดุผลิตมานาน จัดส่งออเดอร์ขนาดใหญ่เสถียร ไม่มีความเสี่ยงขาดวัสดุ",
+      "ส่งออกทั่วโลกราบรื่น: ชุดใบรับรอง UL และสิ่งแวดล้อมครบ ช่วยตรวจส่งออกอิเล็กทรอนิกส์และศุลกากรราบรื่น"
+    ]
   },
   "spec": {
-    "en": ["1mil thin line (6 models): XF-518 Matte White, XF-583 Matte White, XF-581 Semi-Gloss White, XF-603 Semi-Gloss White, XF-528 High-Gloss White, XF-505 Green", "2mil heavy-duty line (3 models): XF-584 Matte White, XF-582 Semi-Gloss White, XF-529 High-Gloss White", "Unified thermal rating: 150°C continuous 100h, 260°C peak 5min, 300°C extreme 90s", "Adhesive: permanent high-temperature acrylic pressure-sensitive adhesive"],
-    "zh": ["1mil 薄款（6 款）：XF-518 哑白、XF-583 哑白、XF-581 半亮白、XF-603 半亮白、XF-528 亮白、XF-505 绿色", "2mil 加厚款（3 款）：XF-584 哑白、XF-582 半亮白、XF-529 亮白", "统一耐温：150℃持续 100h，260℃短时 5min，300℃短时 90s", "胶水：永久高温丙烯酸压敏胶"],
-    "vi": ["Dòng mỏng 1mil (6 mã): XF-518 Trắng mờ, XF-583 Trắng mờ, XF-581 Trắng bán bóng, XF-603 Trắng bán bóng, XF-528 Trắng bóng, XF-505 Xanh", "Dòng dày 2mil (3 mã): XF-584 Trắng mờ, XF-582 Trắng bán bóng, XF-529 Trắng bóng", "Thông số chịu nhiệt thống nhất: 150°C liên tục 100h, đỉnh hàn 260°C 5phút, cực đoan 300°C 90giây", "Keo: keo nhạy áp acrylic chịu nhiệt vĩnh viễn"],
-    "th": ["รุ่นบาง 1mil (6 รุ่น): XF-518 ขาวด้าน, XF-583 ขาวด้าน, XF-581 ขาวกึ่งเงา, XF-603 ขาวกึ่งเงา, XF-528 ขาวเงา, XF-505 สีเขียว", "รุ่นหนา 2mil (3 รุ่น): XF-584 ขาวด้าน, XF-582 ขาวกึ่งเงา, XF-529 ขาวเงา", "สเปคทนอุณหภูมิมาตรฐานเดียว: 150°C ต่อเนื่อง 100h, รีโฟลว์สูงสุด 260°C 5min, รุนแรง 300°C 90s", "กาว: กาวอะคริลิกไวต่อแรงกดทนอุณหภูมิถาวร"]
+    "en": [
+      "1mil thin line (6 models): XF-518 Matte White, XF-583 Matte White, XF-581 Semi-Gloss White, XF-603 Semi-Gloss White, XF-528 High-Gloss White, XF-505 Green",
+      "2mil heavy-duty line (3 models): XF-584 Matte White, XF-582 Semi-Gloss White, XF-529 High-Gloss White",
+      "Unified thermal rating: 150°C continuous 100h, 260°C peak 5min, 300°C extreme 90s",
+      "Adhesive: permanent high-temperature acrylic pressure-sensitive adhesive"
+    ],
+    "zh": [
+      "1mil 薄款（6 款）：XF-518 哑白、XF-583 哑白、XF-581 半亮白、XF-603 半亮白、XF-528 亮白、XF-505 绿色",
+      "2mil 加厚款（3 款）：XF-584 哑白、XF-582 半亮白、XF-529 亮白",
+      "统一耐温：150℃持续 100h，260℃短时 5min，300℃短时 90s",
+      "胶水：永久高温丙烯酸压敏胶"
+    ],
+    "vi": [
+      "Dòng mỏng 1mil (6 mã): XF-518 Trắng mờ, XF-583 Trắng mờ, XF-581 Trắng bán bóng, XF-603 Trắng bán bóng, XF-528 Trắng bóng, XF-505 Xanh",
+      "Dòng dày 2mil (3 mã): XF-584 Trắng mờ, XF-582 Trắng bán bóng, XF-529 Trắng bóng",
+      "Thông số chịu nhiệt thống nhất: 150°C liên tục 100h, đỉnh hàn 260°C 5phút, cực đoan 300°C 90giây",
+      "Keo: keo nhạy áp acrylic chịu nhiệt vĩnh viễn"
+    ],
+    "th": [
+      "รุ่นบาง 1mil (6 รุ่น): XF-518 ขาวด้าน, XF-583 ขาวด้าน, XF-581 ขาวกึ่งเงา, XF-603 ขาวกึ่งเงา, XF-528 ขาวเงา, XF-505 สีเขียว",
+      "รุ่นหนา 2mil (3 รุ่น): XF-584 ขาวด้าน, XF-582 ขาวกึ่งเงา, XF-529 ขาวเงา",
+      "สเปคทนอุณหภูมิมาตรฐานเดียว: 150°C ต่อเนื่อง 100h, รีโฟลว์สูงสุด 260°C 5min, รุนแรง 300°C 90s",
+      "กาว: กาวอะคริลิกไวต่อแรงกดทนอุณหภูมิถาวร"
+    ]
   },
   "applications": {
-    "en": ["Consumer electronics mainboards", "Industrial control PCBs", "Entry automotive circuit boards", "Power boards", "Small appliance control boards", "Component traceability tags"],
-    "zh": ["消费电子主板", "工控 PCB", "入门车载线路板", "电源板", "小家电控制板", "元器件追溯标识"],
-    "vi": ["Bo mạch chủ điện tử tiêu dùng", "PCB điều khiển công nghiệp", "Bo mạch ô tô cơ bản", "Tấm nguồn", "Bo điều khiển thiết bị nhỏ", "Nhãn theo dõi linh kiện"],
-    "th": ["บอร์ดหลักอิเล็กทรอนิกส์ผู้บริโภค", "PCB คอนโทรลอุตสาหกรรม", "บอร์ดวงจรยานยนต์เบื้องต้น", "บอร์ดจ่ายไฟ", "บอร์ดควบคุมเครื่องใช้ขนาดเล็ก", "ฉลากติดตามชิ้นส่วน"]
+    "en": [
+      "Consumer electronics mainboards",
+      "Industrial control PCBs",
+      "Entry automotive circuit boards",
+      "Power boards",
+      "Small appliance control boards",
+      "Component traceability tags"
+    ],
+    "zh": [
+      "消费电子主板",
+      "工控 PCB",
+      "入门车载线路板",
+      "电源板",
+      "小家电控制板",
+      "元器件追溯标识"
+    ],
+    "vi": [
+      "Bo mạch chủ điện tử tiêu dùng",
+      "PCB điều khiển công nghiệp",
+      "Bo mạch ô tô cơ bản",
+      "Tấm nguồn",
+      "Bo điều khiển thiết bị nhỏ",
+      "Nhãn theo dõi linh kiện"
+    ],
+    "th": [
+      "บอร์ดหลักอิเล็กทรอนิกส์ผู้บริโภค",
+      "PCB คอนโทรลอุตสาหกรรม",
+      "บอร์ดวงจรยานยนต์เบื้องต้น",
+      "บอร์ดจ่ายไฟ",
+      "บอร์ดควบคุมเครื่องใช้ขนาดเล็ก",
+      "ฉลากติดตามชิ้นส่วน"
+    ]
   },
   "certifications": {
-    "en": ["Full-process validation with 6 mainstream fluxes and 4 industrial cleaners, 90 test samples per grade", "Verified compatibility with mainstream thermal-transfer ribbons for stable mass printing", "All variants comply with REACH and RoHS, fully UL 969 certified"],
-    "zh": ["6 类主流助焊剂、4 款通用清洗剂全工况验证，每款 90 份样品测试", "兼容市面主流热转印碳带，打印稳定性量产实测验证", "全系 REACH、RoHS，全型号 UL 969 认证齐全"],
-    "vi": ["Xác minh toàn quy trình với 6 loại dung dịch hàn và 4 chất rửa công nghiệp, 90 mẫu thử mỗi mã", "Kiểm tra tương thích băng chuyển nhiệt phổ biến, in ổn định cho sản xuất hàng loạt", "Tất cả mã tuân thủ REACH và RoHS, có đầy đủ chứng nhận UL 969"],
-    "th": ["ตรวจสอบทุกกระบวนการด้วยสารบัดกรี 6 ชนิดและสารล้างอุตสาหกรรม 4 ชนิด ตัวอย่างทดสอบ 90 ชิ้นต่อรุ่น", "ตรวจสอบความเข้ากันได้กับริบบอนถ่ายเทความร้อนทั่วไป พิมพ์เสถียรสำหรับผลิตจำนวนมาก", "ทุกรุ่นปฏิบัติตาม REACH และ RoHS มีใบรับรอง UL 969 ครบชุด"]
+    "en": [
+      "Full-process validation with 6 mainstream fluxes and 4 industrial cleaners, 90 test samples per grade",
+      "Verified compatibility with mainstream thermal-transfer ribbons for stable mass printing",
+      "All variants comply with REACH and RoHS, fully UL 969 certified"
+    ],
+    "zh": [
+      "6 类主流助焊剂、4 款通用清洗剂全工况验证，每款 90 份样品测试",
+      "兼容市面主流热转印碳带，打印稳定性量产实测验证",
+      "全系 REACH、RoHS，全型号 UL 969 认证齐全"
+    ],
+    "vi": [
+      "Xác minh toàn quy trình với 6 loại dung dịch hàn và 4 chất rửa công nghiệp, 90 mẫu thử mỗi mã",
+      "Kiểm tra tương thích băng chuyển nhiệt phổ biến, in ổn định cho sản xuất hàng loạt",
+      "Tất cả mã tuân thủ REACH và RoHS, có đầy đủ chứng nhận UL 969"
+    ],
+    "th": [
+      "ตรวจสอบทุกกระบวนการด้วยสารบัดกรี 6 ชนิดและสารล้างอุตสาหกรรม 4 ชนิด ตัวอย่างทดสอบ 90 ชิ้นต่อรุ่น",
+      "ตรวจสอบความเข้ากันได้กับริบบอนถ่ายเทความร้อนทั่วไป พิมพ์เสถียรสำหรับผลิตจำนวนมาก",
+      "ทุกรุ่นปฏิบัติตาม REACH และ RoHS มีใบรับรอง UL 969 ครบชุด"
+    ]
   }
 }

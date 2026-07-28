@@ -1,7 +1,12 @@
 {
   "slug": "e-series",
   "source": "_docs/sources/PCB E-Label PI family",
-  "langs": ["en", "zh", "vi", "th"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB8732",
   "product_img": "",
   "title": {
@@ -11,10 +16,10 @@
     "th": "ฉลากโพลิอิมิด PCB ซีรีส์ E"
   },
   "tagline": {
-    "en": "Cost-Effective Solutions for High-Volume PCB Manufacturing",
-    "zh": "高产量 PCB 制造的高性价比标签解决方案",
-    "vi": "Giải pháp nhãn hiệu quả chi phí cho sản xuất PCB số lượng lớn",
-    "th": "โซลูชันฉลากคุ้มค่าสำหรับการผลิต PCB ปริมาณมาก"
+    "en": "Standardized Polyimide Labels for High-Volume PCB Manufacturing",
+    "zh": "标准化聚酰亚胺标签，专为高产量 PCB 制造",
+    "vi": "Nhãn Polyimide tiêu chuẩn hóa cho sản xuất PCB số lượng lớn",
+    "th": "ฉลากโพลิอิมิดมาตรฐานสำหรับการผลิต PCB ปริมาณมาก"
   },
   "positioning": {
     "en": "The E-Series is engineered for high-volume PCB manufacturing, delivering reliable performance through standard reflow soldering. With durable adhesion, clear print quality, and dependable traceability, it provides a practical and cost-effective labeling solution for everyday electronics production.",
