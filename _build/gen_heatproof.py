@@ -519,6 +519,7 @@ AXIS_ICONS = {
 PROD_AXES = [
  ("perf","By Performance","按性能",[
    ("Heat Resistant","耐高温","/products/heat-resistant/"),
+   ("Low Temperature","低温","/products/low-temperature/"),
  ]),
  ("app","By Industry","按行业",[
    ("PCB","PCB","/industries/pcb-electronics-labeling-solutions/"),
@@ -539,7 +540,8 @@ def products_dropdown(lang, linkfn):
                  "By Industry": ("Theo ngành", "ตามอุตสาหกรรม"),
                  "By Material": ("Theo vật liệu", "ตามวัสดุ"),
                  "By Performance": ("Theo hiệu suất", "ตามสมรรถนะ"),
-                 "Heat Resistant": ("Chịu nhiệt", "ทนความร้อน")}
+                 "Heat Resistant": ("Chịu nhiệt", "ทนความร้อน"),
+                 "Low Temperature": ("Nhiệt độ thấp", "อุณหภูมิต่ำ")}
     def lab(e, z):
         if zh: return z
         if lang == "vi" and e in MENU_VITH: return MENU_VITH[e][0]
