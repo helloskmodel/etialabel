@@ -93,6 +93,7 @@ CSS = """
 a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-2px)}
 .wcmcard .ic{width:56px;height:56px;border-radius:11px;flex:none;display:grid;place-items:center;background:#eef3fc;color:#1A56DB}
 .wcmcard .ic svg{width:28px;height:28px}
+.wcmcard .ic .cim{width:100%;height:100%;object-fit:cover;border-radius:11px;display:block}
 .wcmcard .mn{font-size:15px;font-weight:800;margin:0}
 .wcmcard .ml{font-size:12px;color:#5a6884;margin:3px 0 0;line-height:1.4}
 .wcmcard .mgo{font-size:11.5px;font-weight:800;color:#1A56DB;margin-top:5px;display:block}
@@ -119,7 +120,7 @@ JS_TMPL = """
 (function(){
 var CATS=%(cats)s, GO=%(go)s, CS=%(consult)s, SUBNAV=%(subnav)s;
 function card(p,hideName){
-  var im='<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7" cy="7" r="1.1"/></svg></span>';
+  var im=p.img?('<span class="ic"><img class="cim" src="'+p.img+'" alt="" loading="lazy" onerror="this.remove()"></span>'):('<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7" cy="7" r="1.1"/></svg></span>');
   var nm=hideName?'':'<p class="mn">'+p.n+'</p>';
   var inner=im+'<div>'+nm+'<p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+'</span>'):('<span class="mgo">'+CS+'</span>'))+'</div>';
   return p.landing?'<a class="wcmcard" href="'+p.href+'">'+inner+'</a>':'<div class="wcmcard off">'+inner+'</div>';
@@ -174,11 +175,17 @@ def build_lang(data, lang):
         prods = []
         for p in t["products"]:
             pslug = p.get("slug", "")
-            href = hp.Lx(lang, "/products/item/%s/" % pslug) if (pslug and p.get("landing")) else "#"
+            purl = p.get("url", "")  # optional arbitrary link target (e.g. a combined card -> an industry page)
+            if purl:
+                href = hp.Lx(lang, purl); is_landing = True
+            elif pslug and p.get("landing"):
+                href = hp.Lx(lang, "/products/item/%s/" % pslug); is_landing = True
+            else:
+                href = "#"; is_landing = False
             pname = p["name"]
             pname = L(pname, lang) if isinstance(pname, dict) else pname
             prods.append({"n": pname, "l": L(p.get("line", {}), lang),
-                          "img": p.get("img", ""), "landing": bool(p.get("landing") and pslug),
+                          "img": p.get("img", ""), "landing": is_landing,
                           "href": href})
         tabval = t.get("tab")
         tab = L(tabval, lang) if isinstance(tabval, dict) else (tabval or L(t["name"], lang))
@@ -218,7 +225,7 @@ def main():
     # Both languages get the v2 design + real products (model numbers are facts,
     # not translation). English prose (overview / tier intros) is a draft
     # translation of the Chinese brief, pending client review.
-    for slug in ["wire-cable", "outdoor-energy", "pcb", "steel", "automotive", "heat-resistant", "low-temperature"]:
+    for slug in ["wire-cable", "outdoor-energy", "pcb", "steel", "automotive", "high-temperature", "low-temperature"]:
         data = json.load(open(os.path.join(IND_DIR, slug + ".json"), encoding="utf-8"))
         for lang in data.get("langs", ["en", "zh"]):
             out = build_lang(data, lang)

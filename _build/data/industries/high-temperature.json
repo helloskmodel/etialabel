@@ -1,0 +1,390 @@
+{
+  "slug": "high-temperature",
+  "base": "/products/",
+  "track": true,
+  "subnav": false,
+  "source": "existing product range, organized as a temperature bar from 150°C to 1300°C",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER.jpg",
+  "seo_title": {
+    "en": "High-Temperature Labels | ETIA",
+    "zh": "高温标签 | ETIA",
+    "vi": "Nhãn nhiệt độ cao | ETIA",
+    "th": "ฉลากอุณหภูมิสูง | ETIA"
+  },
+  "seo_desc": {
+    "en": "High-temperature labels and tags from 150°C electronics assembly to 1,300°C metal heat-treatment and ceramic firing.",
+    "zh": "从 150°C 电子组装到 1300°C 金属热处理与陶瓷烧制的高温标签与吊牌。",
+    "vi": "Nhãn và thẻ nhiệt độ cao từ lắp ráp điện tử 150°C đến xử lý nhiệt kim loại và nung gốm 1.300°C.",
+    "th": "ฉลากและแท็กอุณหภูมิสูง ตั้งแต่การประกอบอิเล็กทรอนิกส์ 150°C ถึงการอบชุบโลหะและการเผาเซรามิก 1,300°C"
+  },
+  "hero": {
+    "eyebrow": {
+      "en": "By Performance · High Temperature",
+      "zh": "按性能 · 高温",
+      "vi": "Theo hiệu suất · Nhiệt độ cao",
+      "th": "ตามสมรรถนะ · อุณหภูมิสูง"
+    },
+    "title": {
+      "en": "High-Temperature Labels",
+      "zh": "高温标签",
+      "vi": "Nhãn nhiệt độ cao",
+      "th": "ฉลากอุณหภูมิสูง"
+    },
+    "slogan": {
+      "en": "From 150°C electronics to 1,300°C metal & ceramics — one temperature ladder",
+      "zh": "从 150℃电子到 1300℃金属与陶瓷，一梯覆盖",
+      "vi": "Từ điện tử 150°C đến kim loại & gốm 1.300°C — một thang nhiệt độ",
+      "th": "ตั้งแต่อิเล็กทรอนิกส์ 150°C ถึงโลหะและเซรามิก 1,300°C"
+    }
+  },
+  "overview": {
+    "en": ["High-temperature labels and tags spanning 150°C electronics assembly to 1,300°C metal heat-treatment and ceramic firing. Choose a temperature range to see the matching materials."],
+    "zh": ["覆盖 150°C 电子组装到 1300°C 金属热处理与陶瓷烧制的高温标签与吊牌。选择温度区间查看对应材料"],
+    "vi": ["Nhãn và thẻ nhiệt độ cao trải dài từ lắp ráp điện tử 150°C đến xử lý nhiệt kim loại và nung gốm 1.300°C. Chọn dải nhiệt độ để xem vật liệu phù hợp."],
+    "th": ["ฉลากและแท็กอุณหภูมิสูง ครอบคลุมตั้งแต่การประกอบอิเล็กทรอนิกส์ 150°C ถึงการอบชุบโลหะและการเผาเซรามิก 1,300°C เลือกช่วงอุณหภูมิเพื่อดูวัสดุที่เหมาะสม"]
+  },
+  "classify_by": {
+    "en": "Choose a temperature range",
+    "zh": "选择温度区间",
+    "vi": "Chọn dải nhiệt độ",
+    "th": "เลือกช่วงอุณหภูมิ"
+  },
+  "tiers": [
+    {
+      "tab": "150–250°C",
+      "name": {
+        "en": "Industrial & Automotive PET · 150–250°C",
+        "zh": "工业与汽车 PET · 150–250°C",
+        "vi": "PET công nghiệp & ô tô · 150–250°C",
+        "th": "PET อุตสาหกรรมและยานยนต์ · 150–250°C"
+      },
+      "intro": {
+        "en": "PET labels for industrial equipment and automotive parts — oil, solvent and heat-treatment resistant.",
+        "zh": "适用于工业设备与汽车零部件的 PET 标签 —— 耐油、耐溶剂与热处理",
+        "vi": "Nhãn PET cho thiết bị công nghiệp và chi tiết ô tô — chịu dầu, dung môi và xử lý nhiệt.",
+        "th": "ฉลาก PET สำหรับอุปกรณ์อุตสาหกรรมและชิ้นส่วนยานยนต์ — ทนน้ำมัน ตัวทำละลาย และการอบชุบ"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": {
+            "en": "E-2532-2 — Gloss White Mid-Temp Electronics PET",
+            "zh": "2mil 亮面通用电子 PET",
+            "vi": "E-2532-2 — Gloss White Mid-Temp Electronics PET",
+            "th": "E-2532-2 — Gloss White Mid-Temp Electronics PET"
+          },
+          "line": {
+            "en": "-40°C to 150°C · 2mil Gloss white PET + Balanced acrylic PSA + Glassine liner · general mid-temp, resists abrasion, alcohol & light oil, for PCB, electronic components & harness · ROHS",
+            "zh": "-40°C to 150°C · 2mil Gloss white PET + Balanced acrylic PSA + Glassine liner · 通用中温，耐摩擦、耐酒精与轻度油污，适配 PCB、电子元器件与线束 · ROHS",
+            "vi": "-40°C to 150°C · 2mil Gloss white PET + Balanced acrylic PSA + Glassine liner · trung nhiệt phổ thông, chịu mài mòn, cồn & dầu nhẹ, cho PCB, linh kiện điện tử & bó dây · ROHS",
+            "th": "-40°C to 150°C · 2mil Gloss white PET + Balanced acrylic PSA + Glassine liner · อุณหภูมิปานกลางทั่วไป ทนการเสียดสี แอลกอฮอล์ & น้ำมันเบา สำหรับ PCB ชิ้นส่วนอิเล็กทรอนิกส์ & ชุดสายไฟ · ROHS"
+          },
+          "img": "", "landing": false, "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-2713 — Matte Grey General Industrial PET",
+            "zh": "3mil 灰色通用工业 PET",
+            "vi": "E-2713 — Matte Grey General Industrial PET",
+            "th": "E-2713 — Matte Grey General Industrial PET"
+          },
+          "line": {
+            "en": "-40°C to 160°C · 3mil Matte grey PET + General high-tack acrylic PSA + Glassine liner · grey base hides flaws, resists oil, alcohol & mild acid/alkali, for metal castings & equipment housings · ROHS, REACH",
+            "zh": "-40°C to 160°C · 3mil Matte grey PET + General high-tack acrylic PSA + Glassine liner · 灰底遮瑕，耐机油、酒精与轻度酸碱，适配金属铸件与设备壳体 · ROHS, REACH",
+            "vi": "-40°C to 160°C · 3mil Matte grey PET + General high-tack acrylic PSA + Glassine liner · nền xám che khuyết tật, chịu dầu, cồn & axit/kiềm nhẹ, cho vật đúc kim loại & vỏ thiết bị · ROHS, REACH",
+            "th": "-40°C to 160°C · 3mil Matte grey PET + General high-tack acrylic PSA + Glassine liner · พื้นสีเทาปิดตำหนิ ทนน้ำมัน แอลกอฮอล์ & กรด/ด่างอ่อน สำหรับงานหล่อโลหะ & ตัวถังอุปกรณ์ · ROHS, REACH"
+          },
+          "img": "", "landing": false, "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-2512BL — Black Laser-Marking Mid-High-Temp PET",
+            "zh": "2mil 黑色激光打码中高温 PET",
+            "vi": "E-2512BL — Black Laser-Marking Mid-High-Temp PET",
+            "th": "E-2512BL — Black Laser-Marking Mid-High-Temp PET"
+          },
+          "line": {
+            "en": "-40°C to 180°C · 2mil Black top white base PET + Permanent high-temp acrylic PSA + Glassine liner · CO2/YAG/UV fiber laser marking, permanent, solvent, abrasion & heat-humidity resistant, stable black-on-white QR",
+            "zh": "-40°C to 180°C · 2mil Black top white base PET + Permanent high-temp acrylic PSA + Glassine liner · CO2／YAG／UV 光纤激光打码，永久不可擦，耐溶剂、耐磨与耐高温高湿，黑白二维码识别稳定",
+            "vi": "-40°C to 180°C · 2mil Black top white base PET + Permanent high-temp acrylic PSA + Glassine liner · khắc laser CO2/YAG/UV, vĩnh viễn, chịu dung môi, mài mòn & nhiệt-ẩm, mã QR đen trắng ổn định",
+            "th": "-40°C to 180°C · 2mil Black top white base PET + Permanent high-temp acrylic PSA + Glassine liner · มาร์กด้วยเลเซอร์ CO2/YAG/UV ถาวร ทนตัวทำละลาย การเสียดสี & ความร้อนชื้น QR ขาวดำอ่านเสถียร"
+          },
+          "img": "", "landing": false, "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-2314 — Rubber Vulcanization High-Temp PET",
+            "zh": "橡胶硫化高温 PET",
+            "vi": "E-2314 — Rubber Vulcanization High-Temp PET",
+            "th": "E-2314 — Rubber Vulcanization High-Temp PET"
+          },
+          "line": {
+            "en": "-40°C to 200°C · 4mil Matte White PET + Rubber high-temp PSA + Glassine liner · rubber high-temp adhesive survives vulcanization, resists oil, strong acid/alkali & mold release, withstands shot blasting · ROHS",
+            "zh": "-40°C to 200°C · 4mil Matte White PET + Rubber high-temp PSA + Glassine liner · 橡胶专用高温胶硫化后不脱落，耐机油、强酸强碱与脱模剂，耐喷丸打磨 · ROHS",
+            "vi": "-40°C to 200°C · 4mil Matte White PET + Rubber high-temp PSA + Glassine liner · keo cao su chịu nhiệt bền sau lưu hóa, chịu dầu, axit/kiềm mạnh & chất tách khuôn, chịu phun bi · ROHS",
+            "th": "-40°C to 200°C · 4mil Matte White PET + Rubber high-temp PSA + Glassine liner · กาวยางทนร้อนคงทนหลังวัลคาไนซ์ ทนน้ำมัน กรด/ด่างเข้มข้น & สารถอดแบบ ทนการยิงเม็ดโลหะ · ROHS"
+          },
+          "img": "", "landing": false, "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-2813 — Automotive General High-Temp PET",
+            "zh": "200℃汽车通用高温 PET",
+            "vi": "E-2813 — Automotive General High-Temp PET",
+            "th": "E-2813 — Automotive General High-Temp PET"
+          },
+          "line": {
+            "en": "-40°C to 200°C · 3mil Matte white PET + High-temp high-tack acrylic PSA + Glassine liner · resists engine oil, coolant & cleaning solvents, thermal-shock & scratch resistant, for metal/plastic engine-bay parts",
+            "zh": "-40°C to 200°C · 3mil Matte white PET + High-temp high-tack acrylic PSA + Glassine liner · 耐发动机机油、防冻液与清洗溶剂，耐冷热冲击、防刮，适配金属／塑料机舱零部件",
+            "vi": "-40°C to 200°C · 3mil Matte white PET + High-temp high-tack acrylic PSA + Glassine liner · chịu dầu động cơ, nước làm mát & dung môi tẩy rửa, chịu sốc nhiệt & trầy xước, cho chi tiết khoang máy kim loại/nhựa",
+            "th": "-40°C to 200°C · 3mil Matte white PET + High-temp high-tack acrylic PSA + Glassine liner · ทนน้ำมันเครื่อง น้ำหล่อเย็น & ตัวทำละลายทำความสะอาด ทนช็อกความร้อน & รอยขีดข่วน สำหรับชิ้นส่วนห้องเครื่องโลหะ/พลาสติก"
+          },
+          "img": "", "landing": false, "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-2814 — Thick Gloss High-Temp PET (Export)",
+            "zh": "4mil 加厚亮面高温 PET（出口标准版）",
+            "vi": "E-2814 — Thick Gloss High-Temp PET (Export)",
+            "th": "E-2814 — Thick Gloss High-Temp PET (Export)"
+          },
+          "line": {
+            "en": "-40°C to 200°C · 4mil Gloss white PET + High-tack high-temp acrylic PSA + Glassine liner · thick & rigid, upgraded abrasion rating, resists industrial cleaning solvents, sharp barcode scanning, for aluminum, steel & ABS · UL, ROHS",
+            "zh": "-40°C to 200°C · 4mil Gloss white PET + High-tack high-temp acrylic PSA + Glassine liner · 加厚高挺度、耐磨等级提升，耐工业清洗溶剂，条码扫描清晰，适配铝、钢与 ABS · UL, ROHS",
+            "vi": "-40°C to 200°C · 4mil Gloss white PET + High-tack high-temp acrylic PSA + Glassine liner · dày & cứng, cấp chịu mài mòn nâng cao, chịu dung môi tẩy công nghiệp, quét mã vạch rõ nét, cho nhôm, thép & ABS · UL, ROHS",
+            "th": "-40°C to 200°C · 4mil Gloss white PET + High-tack high-temp acrylic PSA + Glassine liner · หนา & แข็งแรง เพิ่มระดับทนการเสียดสี ทนตัวทำละลายทำความสะอาดอุตสาหกรรม สแกนบาร์โค้ดคมชัด สำหรับอะลูมิเนียม เหล็ก & ABS · UL, ROHS"
+          },
+          "img": "", "landing": false, "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-2315 — 220°C Steel Heat-Treatment PET",
+            "zh": "5mil 超厚 220℃钢铁热处理 PET",
+            "vi": "E-2315 — 220°C Steel Heat-Treatment PET",
+            "th": "E-2315 — 220°C Steel Heat-Treatment PET"
+          },
+          "line": {
+            "en": "-40°C to 220°C · 5mil Matte white PET + Special high-temp rubber PSA + Thick Glassine liner · industry-top 220°C, withstands steel annealing & tempering, resists quench oil & acid/alkali de-rust, shot-blast resistant · ROHS",
+            "zh": "-40°C to 220°C · 5mil Matte white PET + Special high-temp rubber PSA + Thick Glassine liner · 行业最高耐温 220°C，耐钢铁退火与回火，耐淬火油与酸碱除锈液，耐喷丸 · ROHS",
+            "vi": "-40°C to 220°C · 5mil Matte white PET + Special high-temp rubber PSA + Thick Glassine liner · chịu nhiệt cao nhất ngành 220°C, chịu ủ & ram thép, chịu dầu tôi & dung dịch tẩy gỉ axit/kiềm, chịu phun bi · ROHS",
+            "th": "-40°C to 220°C · 5mil Matte white PET + Special high-temp rubber PSA + Thick Glassine liner · ทนอุณหภูมิสูงสุดในอุตสาหกรรม 220°C ทนการอบอ่อน & อบคืนตัวเหล็ก ทนน้ำมันชุบแข็ง & น้ำยาขจัดสนิมกรด/ด่าง ทนการยิงเม็ดโลหะ · ROHS"
+          },
+          "img": "", "landing": false, "slug": ""
+        }
+      ]
+    },
+    {
+      "tab": "250–400°C",
+      "name": {
+        "en": "Polyimide Electronics · 250–400°C",
+        "zh": "聚酰亚胺电子 · 250–400°C",
+        "vi": "Điện tử polyimide · 250–400°C",
+        "th": "อิเล็กทรอนิกส์โพลิอิมิด · 250–400°C"
+      },
+      "intro": {
+        "en": "Polyimide labels for PCB and electronics assembly — reflow, cleaning and ESD-controlled processes.",
+        "zh": "适用于 PCB 与电子组装的聚酰亚胺标签 —— 回流焊、清洗与防静电工序",
+        "vi": "Nhãn polyimide cho PCB và lắp ráp điện tử — quy trình hàn hồi lưu, rửa và kiểm soát tĩnh điện.",
+        "th": "ฉลากโพลิอิมิดสำหรับ PCB และการประกอบอิเล็กทรอนิกส์ — รีโฟลว์ ล้าง และกระบวนการควบคุมไฟฟ้าสถิต"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": {
+            "en": "PI Series — APEX · XF58 · E-Series",
+            "zh": "PI 系列 — APEX · XF58 · E 系列",
+            "vi": "Dòng PI — APEX · XF58 · E-Series",
+            "th": "ซีรีส์ PI — APEX · XF58 · E-Series"
+          },
+          "line": {
+            "en": "Up to 300°C · polyimide for PCB reflow, cleaning & ESD-controlled processes · imported Polyonics + ETIA in-house",
+            "zh": "耐 300°C · 聚酰亚胺，适配 PCB 回流、清洗与防静电工序 · Polyonics 进口 + ETIA 自研",
+            "vi": "Đến 300°C · polyimide cho hàn hồi lưu, rửa & kiểm soát tĩnh điện PCB · Polyonics nhập khẩu + ETIA tự phát triển",
+            "th": "ถึง 300°C · โพลิอิมิดสำหรับรีโฟลว์ ล้าง และควบคุมไฟฟ้าสถิต PCB · Polyonics นำเข้า + ETIA พัฒนาเอง"
+          },
+          "img": "", "landing": false, "slug": "", "url": "/industries/pcb-electronics-labeling-solutions/"
+        },
+        {
+          "name": "XF-603",
+          "line": {
+            "en": "300°C short-term / 150°C long-term · UL94 flame-retardant PI",
+            "zh": "短时 300°C／长期 150°C · UL94 阻燃 PI",
+            "vi": "300°C ngắn hạn / 150°C dài hạn · PI chống cháy UL94",
+            "th": "300°C ระยะสั้น / 150°C ระยะยาว · PI กันไฟ UL94"
+          },
+          "img": "", "landing": true, "slug": "xf-603"
+        },
+        {
+          "name": {
+            "en": "XF-710 — Imported Polyimide High-Temp Label",
+            "zh": "耐高温聚酰亚胺 PI 高温标签（进口代理）",
+            "vi": "XF-710 — Imported Polyimide High-Temp Label",
+            "th": "XF-710 — Imported Polyimide High-Temp Label"
+          },
+          "line": {
+            "en": "-40°C to 300°C · 1mil Gold PI Polyimide facestock + High-temp silicone PSA + White PET liner · for SMT reflow & wave soldering, withstands 300°C transient, resists flux, solder & cleaners, no residue · UL, ROHS",
+            "zh": "-40°C to 300°C · 1mil Gold PI Polyimide facestock + High-temp silicone PSA + White PET liner · 适配 SMT 回流焊与波峰焊，耐 300°C 瞬时高温，耐助焊剂、焊锡与清洗剂，无残胶 · UL, ROHS",
+            "vi": "-40°C to 300°C · 1mil Gold PI Polyimide facestock + High-temp silicone PSA + White PET liner · cho hàn hồi lưu SMT & hàn sóng, chịu 300°C tức thời, chịu flux, thiếc hàn & chất tẩy rửa, không để lại keo · UL, ROHS",
+            "th": "-40°C to 300°C · 1mil Gold PI Polyimide facestock + High-temp silicone PSA + White PET liner · สำหรับรีโฟลว์ SMT & บัดกรีคลื่น ทน 300°C ชั่วขณะ ทนฟลักซ์ บัดกรี & น้ำยาทำความสะอาด ไม่มีคราบกาว · UL, ROHS"
+          },
+          "img": "", "landing": false, "slug": ""
+        }
+      ]
+    },
+    {
+      "tab": "400–800°C",
+      "name": {
+        "en": "Hot Metal · 400–800°C",
+        "zh": "热态金属 · 400–800°C",
+        "vi": "Kim loại nóng · 400–800°C",
+        "th": "โลหะร้อน · 400–800°C"
+      },
+      "intro": {
+        "en": "Heat-activated labels applied directly to hot metal after casting.",
+        "zh": "热激活标签，铸造后可直接贴附于热态金属",
+        "vi": "Nhãn kích hoạt bằng nhiệt, dán trực tiếp lên kim loại nóng sau khi đúc.",
+        "th": "ฉลากกระตุ้นด้วยความร้อน ติดโดยตรงบนโลหะร้อนหลังการหล่อ"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": "HP-X2049",
+          "line": {
+            "en": "250–600°C · aluminum, hot application",
+            "zh": "250–600°C · 铝件热贴",
+            "vi": "250–600°C · nhôm, dán nóng",
+            "th": "250–600°C · อะลูมิเนียม ติดขณะร้อน"
+          },
+          "img": "", "landing": true, "slug": "hp-x2049"
+        },
+        {
+          "name": "HP-700T",
+          "line": {
+            "en": "450–800°C · brass foil",
+            "zh": "450–800°C · 黄铜箔",
+            "vi": "450–800°C · lá đồng thau",
+            "th": "450–800°C · แผ่นทองเหลือง"
+          },
+          "img": "", "landing": true, "slug": "hp-700t"
+        },
+        {
+          "name": "HP-800C",
+          "line": {
+            "en": "Up to 800°C · glass & metal, high adhesion",
+            "zh": "耐 800°C · 玻璃与金属，高附着",
+            "vi": "Đến 800°C · kính & kim loại, bám dính cao",
+            "th": "ถึง 800°C · แก้วและโลหะ ยึดเกาะสูง"
+          },
+          "img": "", "landing": true, "slug": "hp-800c"
+        }
+      ]
+    },
+    {
+      "tab": "800–1000°C",
+      "name": {
+        "en": "High Heat · 800–1000°C",
+        "zh": "高温 · 800–1000°C",
+        "vi": "Nhiệt cao · 800–1000°C",
+        "th": "ความร้อนสูง · 800–1000°C"
+      },
+      "intro": {
+        "en": "Labels and tags for high-heat metal processing and heat treatment.",
+        "zh": "适用于高温金属加工与热处理的标签与吊牌",
+        "vi": "Nhãn và thẻ cho gia công kim loại nhiệt cao và xử lý nhiệt.",
+        "th": "ฉลากและแท็กสำหรับการแปรรูปโลหะและการอบชุบที่ความร้อนสูง"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": "HP-901",
+          "line": {
+            "en": "450–1000°C · nickel foil, uneven surfaces",
+            "zh": "450–1000°C · 镍箔，适应不平整表面",
+            "vi": "450–1000°C · lá niken, bề mặt gồ ghề",
+            "th": "450–1000°C · แผ่นนิกเกิล พื้นผิวไม่เรียบ"
+          },
+          "img": "", "landing": true, "slug": "hp-901"
+        },
+        {
+          "name": "HP-L80",
+          "line": {
+            "en": "Up to 1000°C · acid-resistant tag",
+            "zh": "耐 1000°C · 耐酸吊牌",
+            "vi": "Đến 1000°C · thẻ chống axit",
+            "th": "ถึง 1000°C · แท็กทนกรด"
+          },
+          "img": "", "landing": true, "slug": "hp-l80"
+        },
+        {
+          "name": "HP-M83",
+          "line": {
+            "en": "850°C · magnetic, acid-resistant tag",
+            "zh": "850°C · 磁性耐酸吊牌",
+            "vi": "850°C · thẻ từ tính, chống axit",
+            "th": "850°C · แท็กแม่เหล็ก ทนกรด"
+          },
+          "img": "", "landing": true, "slug": "hp-m83"
+        }
+      ]
+    },
+    {
+      "tab": "1000–1300°C",
+      "name": {
+        "en": "Extreme Heat · 1000–1300°C",
+        "zh": "极端高温 · 1000–1300°C",
+        "vi": "Nhiệt cực cao · 1000–1300°C",
+        "th": "ความร้อนสูงยิ่งยวด · 1000–1300°C"
+      },
+      "intro": {
+        "en": "Ultra-high-temperature labels and tags for heat treatment and ceramic firing.",
+        "zh": "用于热处理与陶瓷烧制的超高温标签与吊牌",
+        "vi": "Nhãn và thẻ siêu chịu nhiệt cho xử lý nhiệt và nung gốm sứ.",
+        "th": "ฉลากและแท็กทนอุณหภูมิสูงยิ่งยวดสำหรับการอบชุบและการเผาเซรามิก"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": "HP-X2080",
+          "line": {
+            "en": "Up to 1200°C · fast heating to 65°C/min",
+            "zh": "耐 1200°C · 升温可达 65°C/min",
+            "vi": "Đến 1200°C · gia nhiệt nhanh tới 65°C/phút",
+            "th": "ถึง 1200°C · ให้ความร้อนเร็วถึง 65°C/นาที"
+          },
+          "img": "", "landing": true, "slug": "hp-x2080"
+        },
+        {
+          "name": "HP-CBR13",
+          "line": {
+            "en": "Up to 1200°C · low color change",
+            "zh": "耐 1200°C · 低黄变",
+            "vi": "Đến 1200°C · ít đổi màu",
+            "th": "ถึง 1200°C · เปลี่ยนสีน้อย"
+          },
+          "img": "", "landing": true, "slug": "hp-cbr13"
+        },
+        {
+          "name": "HP-L90",
+          "line": {
+            "en": "Up to 1200°C · stainless-steel tag",
+            "zh": "耐 1200°C · 不锈钢吊牌",
+            "vi": "Đến 1200°C · thẻ thép không gỉ",
+            "th": "ถึง 1200°C · แท็กสแตนเลส"
+          },
+          "img": "", "landing": true, "slug": "hp-l90"
+        },
+        {
+          "name": "HP-CBR11",
+          "line": {
+            "en": "Up to 1250°C · ceramic & sanitary ware",
+            "zh": "耐 1250°C · 陶瓷与卫浴适用",
+            "vi": "Đến 1250°C · gốm sứ & thiết bị vệ sinh",
+            "th": "ถึง 1250°C · เซรามิกและสุขภัณฑ์"
+          },
+          "img": "", "landing": true, "slug": "hp-cbr11"
+        }
+      ]
+    }
+  ]
+}
