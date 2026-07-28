@@ -1379,12 +1379,13 @@ SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
 
 def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
     st = ' style="background-image:url(%s)"' % esc(bg) if bg else ""
+    body_html = ('<p class="hbody">%s</p>' % esc(body)) if body else ""
     return ('<section class="hbanner"%s><div class="wrap">'
             '<div class="eyebrow">%s</div><h1>%s</h1>'
-            '<p class="hsub">%s</p><p class="hbody">%s</p>'
+            '<p class="hsub">%s</p>%s'
             '<div class="btns"><a class="btn pri" href="%s">%s</a>'
             '<a class="btn sec" href="%s">%s</a></div></div></section>') % (
-        st, esc(eyebrow), esc(title), esc(sub), esc(body),
+        st, esc(eyebrow), esc(title), esc(sub), body_html,
         linkfn(lang, b1u), esc(b1), linkfn(lang, b2u), esc(b2))
 
 def home_banner(lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
@@ -1458,7 +1459,7 @@ def build_home(lang):
                 '<div class="scgrid">%s</div></div></section>')%(
         esc(T.get("sc_eyebrow","SERVICE COMMITMENT")),esc(T.get("sc_title","Our Service Commitment")),sc_items)
     h=G["hero"]
-    hero_banner=home_banner(lang, HOME_BG[0], h["eyebrow"], h["h1"], h["line"], h["body"],
+    hero_banner=home_banner(lang, HOME_BG[0], h["eyebrow"], h["h1"], h["line"], "",
                             h["b1"], "/products/", h["b2"], "/contact/")
     why_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
                  '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
