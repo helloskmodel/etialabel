@@ -10,22 +10,22 @@
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg",
   "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
   "title": {
-    "en": "APEX Series — Polyonics PI PCB Labels",
-    "zh": "APEX 系列 · Polyonics 聚酰亚胺 PCB 标签",
-    "vi": "Dòng APEX · Nhãn PCB PI Polyonics",
-    "th": "ชุด APEX · ฉลาก PCB PI Polyonics"
+    "en": "Next-Generation Polyimide Labels for Advanced PCB Manufacturing",
+    "zh": "面向先进 PCB 制造的下一代聚酰亚胺标签",
+    "vi": "Nhãn Polyimide thế hệ mới cho sản xuất PCB tiên tiến",
+    "th": "ฉลากโพลิอิมิดยุคใหม่สำหรับการผลิต PCB ขั้นสูง"
   },
   "tagline": {
-    "en": "Advanced Polyimide Labels for Next-Generation PCB Manufacturing",
-    "zh": "先进聚酰亚胺标签，专为下一代 PCB 制造",
-    "vi": "Nhãn Polyimide tiên tiến cho sản xuất PCB thế hệ mới",
-    "th": "ฉลากโพลิอิมิดขั้นสูงสำหรับการผลิต PCB ยุคใหม่"
+    "en": "Built for Advanced Processes. Designed for Lasting Traceability.",
+    "zh": "为先进制程而生，为持久追溯而设计。",
+    "vi": "Tạo ra cho quy trình tiên tiến. Thiết kế để truy xuất bền lâu.",
+    "th": "สร้างมาเพื่อกระบวนการขั้นสูง ออกแบบเพื่อการตรวจสอบย้อนกลับที่ยั่งยืน"
   },
   "positioning": {
-    "en": "Introducing the new APEX Series — ultra-performance polyimide label materials for PCBs. A next-gen coating for modern PCB lines, with proven gains in flux and cleaner resistance plus excellent print quality and adhesion at high temperatures.",
-    "zh": "全新 APEX 系列 —— 面向 PCB 的超高性能聚酰亚胺标签材料。新一代涂层专为现代 PCB 产线打造，在耐助焊剂与耐清洗方面提升显著，并在高温下保持优异的打印质量与附着力。",
-    "vi": "Giới thiệu dòng APEX mới — vật liệu nhãn polyimide siêu hiệu năng cho PCB. Lớp phủ thế hệ mới cho dây chuyền PCB hiện đại, cải thiện rõ rệt khả năng chịu flux và dung dịch rửa, cùng chất lượng in và độ bám dính xuất sắc ở nhiệt độ cao.",
-    "th": "ขอแนะนำซีรีส์ APEX ใหม่ — วัสดุฉลากโพลิอิมิดสมรรถนะสูงยิ่งสำหรับ PCB เคลือบเจเนอเรชันใหม่สำหรับไลน์ PCB สมัยใหม่ เพิ่มความทนฟลักซ์และน้ำยาล้างอย่างชัดเจน พร้อมคุณภาพการพิมพ์และการยึดเกาะที่ยอดเยี่ยมที่อุณหภูมิสูง"
+    "en": "The Apex™ Series is engineered for next-generation PCB manufacturing. Advanced coating technology delivers exceptional resistance to high-temperature reflow, aggressive cleaning chemicals, and demanding production environments while maintaining superior print quality, durable adhesion, and reliable traceability.",
+    "zh": "Apex™ 系列专为下一代 PCB 制造而设计。先进涂层技术在高温回流焊、强力清洗化学品与严苛生产环境下提供卓越耐受性，同时保持优异的打印质量、持久附着力与可靠追溯。",
+    "vi": "Dòng Apex™ được thiết kế cho sản xuất PCB thế hệ mới. Công nghệ lớp phủ tiên tiến mang lại khả năng chịu hàn hồi lưu nhiệt độ cao, hóa chất tẩy rửa mạnh và môi trường sản xuất khắc nghiệt, đồng thời giữ chất lượng in vượt trội, độ bám bền và truy xuất đáng tin cậy.",
+    "th": "ซีรีส์ Apex™ ออกแบบมาเพื่อการผลิต PCB ยุคใหม่ เทคโนโลยีเคลือบขั้นสูงให้ความทนทานยอดเยี่ยมต่อการบัดกรีรีโฟลว์อุณหภูมิสูง สารเคมีทำความสะอาดที่รุนแรง และสภาพแวดล้อมการผลิตที่เข้มงวด พร้อมคงคุณภาพการพิมพ์ที่เหนือกว่า การยึดเกาะที่ทนทาน และการตรวจสอบย้อนกลับที่เชื่อถือได้"
   },
   "features": {
     "en": [
@@ -312,5 +312,11 @@
         "กาวอะคริลิกถาวร; ทั้ง 9 รุ่นมีใบรับรอง UL (ตรงตาม REACH และ RoHS)"
       ]
     }
+  },
+  "eyebrow": {
+    "en": "Apex™ Series",
+    "zh": "Apex™ 系列",
+    "vi": "Dòng Apex™",
+    "th": "ซีรีส์ Apex™"
   }
 }
