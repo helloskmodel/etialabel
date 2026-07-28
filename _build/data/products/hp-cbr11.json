@@ -48,24 +48,24 @@
   "benefits": {},
   "spec": {
     "en": [
-      "Label base layer: Acrylic resin, 30±1µ",
-      "Adhesive layer: Water-soluble resin, transparent",
-      "Liner: Paper, 202µ, White"
+      "Label layer: Organic/inorganic complex, 25µm",
+      "Adhesive: Acrylic material, 10µm",
+      "Liner: Silicone treatment paper, 75µm"
     ],
     "zh": [
-      "标签基层：丙烯酸树脂，30±1µ",
-      "胶粘层：水溶性树脂，透明",
-      "底纸：纸，202µ，白色"
+      "标签层：有机／无机复合材料，25µm",
+      "胶粘层：丙烯酸材料，10µm",
+      "底纸：硅处理离型纸，75µm"
     ],
     "vi": [
-      "Lớp nền nhãn: Nhựa acrylic, 30±1µ",
-      "Lớp keo: Nhựa tan trong nước, trong suốt",
-      "Lớp lót: Giấy, 202µ, Trắng"
+      "Lớp nhãn: Vật liệu phức hợp hữu cơ/vô cơ, 25µm",
+      "Lớp keo: Vật liệu acrylic, 10µm",
+      "Lớp lót: Giấy xử lý silicone, 75µm"
     ],
     "th": [
-      "ชั้นฐานฉลาก: อะคริลิกเรซิน, 30±1µ",
-      "ชั้นกาว: เรซินละลายน้ำ, โปร่งใส",
-      "แผ่นรอง: กระดาษ, 202µ, สีขาว"
+      "ชั้นฉลาก: วัสดุผสมอินทรีย์/อนินทรีย์, 25µm",
+      "ชั้นกาว: วัสดุอะคริลิก, 10µm",
+      "แผ่นรอง: กระดาษเคลือบซิลิโคน, 75µm"
     ]
   },
   "applications": {

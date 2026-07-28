@@ -230,10 +230,10 @@
         {
           "name": "HP-CBR11",
           "line": {
-            "en": "Up to 1250°C · water-soluble, sanitary ware",
-            "zh": "耐 1250°C · 水溶胶，卫浴适用",
-            "vi": "Đến 1250°C · keo tan trong nước, thiết bị vệ sinh",
-            "th": "ถึง 1250°C · กาวละลายน้ำ สุขภัณฑ์"
+            "en": "Up to 1250°C · ceramic & sanitary ware",
+            "zh": "耐 1250°C · 陶瓷与卫浴适用",
+            "vi": "Đến 1250°C · gốm sứ & thiết bị vệ sinh",
+            "th": "ถึง 1250°C · เซรามิกและสุขภัณฑ์"
           },
           "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP-CBR11.jpg",
           "landing": true,
