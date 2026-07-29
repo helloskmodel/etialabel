@@ -136,6 +136,13 @@
     "prod_cta": "Talk to a Specialist",
     "products": [
       {
+        "name": "Polyimide PCB Labels — APEX",
+        "model": "PI film · reflow up to 300°C",
+        "code": "APEX",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
+        "slug": "apex"
+      },
+      {
         "name": "High-Temperature Labels",
         "model": "PI, hot-apply & heat treatment — up to 1000°C",
         "code": "",
@@ -271,6 +278,13 @@
     "prod_sub": "告诉我们您的应用，我们将推荐材料并安排样品验证。",
     "prod_cta": "咨询专家",
     "products": [
+      {
+        "name": "聚酰亚胺 PCB 标签 · APEX",
+        "model": "PI 面材 · 回流焊耐温 300°C",
+        "code": "APEX",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
+        "slug": "apex"
+      },
       {
         "name": "耐高温标签",
         "model": "PI、高温直贴与热处理 — 可达 1000℃",
@@ -408,6 +422,13 @@
     "prod_cta": "Trao đổi với chuyên gia",
     "products": [
       {
+        "name": "Nhãn PCB Polyimide — APEX",
+        "model": "Màng PI · reflow đến 300°C",
+        "code": "APEX",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
+        "slug": "apex"
+      },
+      {
         "name": "Nhãn nhiệt độ cao",
         "model": "PI, dán nóng & xử lý nhiệt — đến 1000°C",
         "code": "",
@@ -543,6 +564,13 @@
     "prod_sub": "บอกเราถึงการใช้งานของคุณ แล้วเราจะแนะนำวัสดุและจัดเตรียมตัวอย่างเพื่อประเมิน",
     "prod_cta": "ปรึกษาผู้เชี่ยวชาญ",
     "products": [
+      {
+        "name": "ฉลาก PCB โพลีอิไมด์ — APEX",
+        "model": "ฟิล์ม PI · รีโฟลว์ถึง 300°C",
+        "code": "APEX",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
+        "slug": "apex"
+      },
       {
         "name": "ฉลากทนอุณหภูมิสูง",
         "model": "PI ติดร้อนและการอบชุบความร้อน — สูงถึง 1000°C",
