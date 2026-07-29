@@ -9,7 +9,7 @@
     "vi",
     "th"
   ],
-  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-MICROPLATE.jpg",
+  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-BANNER",
   "seo_title": {
     "en": "Medical & Pharmaceutical Labels | ETIA",
     "zh": "医疗医药标识 | ETIA",
@@ -82,7 +82,7 @@
         "vi": "Nhãn cho lọ và ống đông dán trực tiếp ở −80°C không cần rã đông, rồi lưu nitơ lỏng — chịu −196°C và đông-rã lặp lại.",
         "th": "ฉลากขวดและหลอดเก็บตัวอย่าง ติดตรงที่ −80°C โดยไม่ต้องละลาย แล้วเก็บในไนโตรเจนเหลว — ทน −196°C และแช่แข็ง-ละลายซ้ำ"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-196DIRECT-VIAL",
       "products": [
         {
           "name": {
@@ -156,7 +156,7 @@
         "vi": "Dán ở nhiệt độ thường rồi thả vào nitơ lỏng — chịu sốc nhiệt từ nhiệt thường xuống −196°C mà không phân lớp.",
         "th": "ติดที่อุณหภูมิปกติแล้วแช่ในไนโตรเจนเหลว — ออกแบบให้ทนแรงกระแทกอุณหภูมิจากปกติลง −196°C โดยไม่แยกชั้น"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-196C",
       "products": [
         {
           "name": {
@@ -196,7 +196,7 @@
         "vi": "Nhãn chống nước, chịu đông-rã cho ống huyết thanh, hóa chất và ống lab thường trong tủ −80°C — chống ngưng tụ, cong vênh và mờ chữ.",
         "th": "ฉลากกันน้ำ ทนแช่แข็ง-ละลายสำหรับหลอดซีรัม น้ำยา และหลอดแล็บทั่วไปในตู้ −80°C — ต้านน้ำค้าง การงอ และตัวอักษรจาง"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-80",
       "products": [
         {
           "name": {
@@ -270,7 +270,7 @@
         "vi": "Nhãn thấp di trú, tương thích máu cho túi huyết tương và túi máu — chịu tắm nước và ly tâm mà không làm ô nhiễm mẫu.",
         "th": "ฉลากปล่อยสารน้อย เข้ากับเลือดสำหรับถุงพลาสม่าและถุงเลือด — ทนการแช่น้ำและปั่นเหวี่ยงโดยไม่ปนเปื้อนตัวอย่าง"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-BLOODBAG",
       "products": [
         {
           "name": {
@@ -327,7 +327,7 @@
         "vi": "Nhãn vẫn bám và đọc được qua hơi nước 121–134°C, khí EtO, chiếu xạ gamma và lau khử trùng.",
         "th": "ฉลากที่ยังยึดติดและอ่านได้ผ่านไอน้ำ 121–134°C แก๊ส EtO รังสีแกมมา และการเช็ดด้วยน้ำยาฆ่าเชื้อ"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-STERLIZATION",
       "products": [
         {
           "name": {
@@ -401,7 +401,7 @@
         "vi": "Nhãn mềm, ôm sát cho lọ cong và ống tiêm đổ sẵn — chống cong ở bán kính nhỏ cho dây chuyền GMP tự động tốc độ cao.",
         "th": "ฉลากนุ่มแนบสำหรับขวดโค้งและหลอดฉีดยาเตรียมไว้ — ป้องกันการงอบนรัศมีแคบ สำหรับสายการผลิต GMP อัตโนมัติความเร็วสูง"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-SMALLDIAMETER",
       "products": [
         {
           "name": {
@@ -441,7 +441,7 @@
         "vi": "Nhãn phiến chống hóa chất cho khử sáp, nhuộm màu và sửa kháng nguyên nhiệt cao — chịu ngâm xylen và cồn mà không tan.",
         "th": "ฉลากสไลด์ทนสารเคมีสำหรับล้างขี้ผึ้ง ย้อมสี และซ่อมแอนติเจนอุณหภูมิสูง — ทนการแช่ไซลีนและแอลกอฮอล์โดยไม่ละลาย"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-MICROSCOPE%20SLIDE",
       "products": [
         {
           "name": {
@@ -481,7 +481,7 @@
         "vi": "Nhãn siêu phẳng, chống ngưng tụ cho tấm 96/384 lỗ lưu −80°C — mã vạch quét được qua đóng và quét tự động.",
         "th": "ฉลากผิวเรียบเนียน กันน้ำค้างสำหรับแผ่น 96/384 หลุมเก็บที่ −80°C — บาร์โค้ดสแกนได้ผ่านการปิดและสแกนอัตโนมัติ"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-196DIRECT-TUBE",
       "products": [
         {
           "name": {
