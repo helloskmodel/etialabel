@@ -213,21 +213,5 @@
         "hi": 25
       }
     ]
-  },
-  "featured": {
-    "en": [
-      "Cryogenic Labels",
-      "Cryogenic Vial Labels",
-      "Blood Bag Labels",
-      "Pharmaceutical Labels",
-      "Laboratory Labels"
-    ],
-    "zh": [
-      "深低温标签",
-      "液氮冻存标签",
-      "血袋标签",
-      "医药标签",
-      "实验室标签"
-    ]
   }
 }
