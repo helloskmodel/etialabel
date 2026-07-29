@@ -384,9 +384,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .acard-img{position:relative;aspect-ratio:16/11;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .acard-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .35s}
 .acard:hover .acard-img img{transform:scale(1.06)}
-.sccard .acard-img{background:#eef3fc}
-.sccard .acard-img img{object-fit:contain}
-.sccard:hover .acard-img img{transform:none}
+#svccar .acard-img{background:#eef3fc;aspect-ratio:1/1}
+#svccar .acard-img img{object-fit:cover}
 .appcard .acard-img{background:#eef3fc;aspect-ratio:16/10}
 .appcard .acard-body p{font-size:14px;color:var(--mut);line-height:1.55;margin-top:6px}
 .indfilter{display:flex;flex-wrap:wrap;gap:9px;margin:2px 0 22px}
@@ -1430,13 +1429,14 @@ SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
 def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
     st = ' style="background-image:url(%s)"' % esc(bg) if bg else ""
     body_html = ('<p class="hbody">%s</p>' % esc(body)) if body else ""
+    # second button is optional — omit it when its label is empty
+    b2_html = ('<a class="btn sec" href="%s">%s</a>' % (linkfn(lang, b2u), esc(b2))) if b2 else ""
     return ('<section class="hbanner"%s><div class="wrap">'
             '<div class="eyebrow">%s</div><h1>%s</h1>'
             '<p class="hsub">%s</p>%s'
-            '<div class="btns"><a class="btn pri" href="%s">%s</a>'
-            '<a class="btn sec" href="%s">%s</a></div></div></section>') % (
+            '<div class="btns"><a class="btn pri" href="%s">%s</a>%s</div></div></section>') % (
         st, esc(eyebrow), esc(title), esc(sub), body_html,
-        linkfn(lang, b1u), esc(b1), linkfn(lang, b2u), esc(b2))
+        linkfn(lang, b1u), esc(b1), b2_html)
 
 def home_banner(lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
     return _banner_html(home_hlink, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u)
@@ -1892,9 +1892,10 @@ def build_applications(lang):
         ("应用笔记" if zh else "APPLICATION NOTES"),
         ("按行业浏览应用笔记" if zh else "Application Notes by Industry"),
         fbtns, note_cards, cta2(lang,"applications"), js)
-    # hero without the body paragraph
+    # hero without body paragraph, single CTA "Talk to Engineering"
     s=HOME2.get(lang,HOME2["en"])["sections"][1]
-    hero=page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "", s["b1"], s["b1u"], s["b2"], s["b2u"], SECTION_BG.get(1,""))
+    hero=page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
+                   ("咨询工程师" if zh else "Talk to Engineering"), "/contact/", "", "", SECTION_BG.get(1,""))
     crumb=[("Home","/"),("Applications","/applications/")]
     write(lang,"/applications/",page(lang,"/applications/",
         ("应用 | ETIA" if zh else "Applications | ETIA"),
