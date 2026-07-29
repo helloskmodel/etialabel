@@ -498,9 +498,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .wcmcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
 .wcmcard{display:flex;gap:13px;align-items:center;background:#fff;border:1px solid #dbe3f1;border-radius:12px;padding:11px;text-decoration:none;color:#17203a;transition:box-shadow .15s,transform .15s}
 a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-2px)}
-.wcmcard .ic{width:56px;height:56px;border-radius:11px;flex:none;display:grid;place-items:center;background:#eef3fc;color:#1A56DB}
-.wcmcard .ic svg{width:28px;height:28px}
-.wcmcard .ic .cim{width:100%;height:100%;object-fit:cover;border-radius:11px;display:block}
+.wcmcard .ic{width:44px;height:44px;border-radius:8px;flex:none;overflow:hidden;background:#f2f5fa;align-self:flex-start}
+.wcmcard .ic .cim{width:100%;height:100%;object-fit:cover;display:block}
 .wcmcard .mn{font-size:15px;font-weight:800;margin:0}
 .wcmcard .ml{font-size:12px;color:#5a6884;margin:3px 0 0;line-height:1.4}
 .wcmcard .mgo{font-size:11.5px;font-weight:800;color:#1A56DB;margin-top:5px;display:block}
@@ -516,8 +515,7 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
   .wccatintro{font-size:14.5px;line-height:1.58;margin:6px auto 14px}
   .wctab{font-size:12.5px;padding:9px 13px}
   #wcpanel{margin-top:16px}
-  .wcmcard .ic{width:46px;height:46px}
-  .wcmcard .ic svg{width:24px;height:24px}
+  .wcmcard .ic{width:40px;height:40px}
 }
 </style>
 <section class="wchero"><img class="bg" src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-BANNER.jpg" alt="" loading="eager" onerror="this.style.display='none'"><div class="in"><div class="eye">ตามอุตสาหกรรม · สายไฟและสายเคเบิล</div><h1>โซลูชันฉลากสายไฟและสายเคเบิล</h1><p class="slog">ฉลากที่เชื่อถือได้ การทำงานและการบำรุงรักษาที่ปลอดภัย</p></div></section>
@@ -527,7 +525,7 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
 (function(){
 var CATS=[{"tab": "High-Temp FR", "intro": "ฉลาก PI นำเข้า ทน 300°C ระยะสั้น / 150°C ระยะยาว หน่วงไฟไร้ฮาโลเจน UL94 VTM-0 พร้อมการรับรอง UL ครบชุดสำหรับส่งออก", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-XF603.jpg", "icon": "", "prods": [{"n": "XF-603", "l": "PI นำเข้า · 300°C ระยะสั้น / 150°C ระยะยาว · UL94 VTM-0 · UL ครบชุด", "img": "", "landing": true, "href": "/products/item/xf-603/"}]}, {"tab": "Industrial FR", "intro": "PET หน่วงไฟสองชั้น เสถียรที่ 150°C ผ่านการทดสอบหน่วงไฟ SGS — ตัวเลือกหลักที่คุ้มค่าสำหรับงานอุตสาหกรรม", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-2931.jpg", "icon": "", "prods": [{"n": "E-2913", "l": "PET หน่วงไฟสองชั้นบางพิเศษ · 150°C · UL94 VTM-0 · ทดสอบ SGS", "img": "", "landing": true, "href": "/products/item/e-2913/"}]}, {"tab": "Protective", "intro": "ฉลากยืดหยุ่นชนิดไม่หน่วงไฟ ทนถึง 120°C — แบบพันไนลอนและแบบเคลือบใสในตัว สำหรับการทำเครื่องหมายที่ทนทาน", "img": "", "icon": "", "prods": [{"n": "E3635", "l": "พันไนลอนยืดหยุ่น · 120°C · ทนน้ำมัน", "img": "", "landing": true, "href": "/products/item/e-3635/"}, {"n": "E6033", "l": "เคลือบใสในตัว · 120°C · กันน้ำและทนตัวทำละลาย", "img": "", "landing": true, "href": "/products/item/e-6033/"}]}, {"tab": "Economy", "intro": "ฉลากกระดาษสังเคราะห์เนื้อนุ่ม ทนถึง 90°C สำหรับงานเดินสายทั่วไปต้นทุนต่ำ ผลิตความเร็วสูง", "img": "", "icon": "", "prods": [{"n": "E4532", "l": "กระดาษสังเคราะห์เนื้อนุ่ม · 90°C · ผลิตจำนวนมากความเร็วสูง", "img": "", "landing": true, "href": "/products/item/e-4532/"}]}], GO="ดูสินค้า →", SUBNAV=false, HIDE_INTRO=false;
 function card(p,hideName){
-  var im=p.img?('<span class="ic"><img class="cim" src="'+p.img+'" alt="" loading="lazy" onerror="this.remove()"></span>'):('<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7" cy="7" r="1.1"/></svg></span>');
+  var im=p.img?('<span class="ic"><img class="cim" src="'+p.img+'" alt="" loading="lazy" onerror="this.parentNode.remove()"></span>'):'';
   var nm=hideName?'':'<p class="mn">'+p.n+'</p>';
   var inner=im+'<div>'+nm+'<p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+'</span>'):'')+'</div>';
   return p.landing?'<a class="wcmcard" href="'+p.href+'">'+inner+'</a>':'<div class="wcmcard off">'+inner+'</div>';

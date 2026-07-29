@@ -498,9 +498,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .wcmcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
 .wcmcard{display:flex;gap:13px;align-items:center;background:#fff;border:1px solid #dbe3f1;border-radius:12px;padding:11px;text-decoration:none;color:#17203a;transition:box-shadow .15s,transform .15s}
 a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-2px)}
-.wcmcard .ic{width:56px;height:56px;border-radius:11px;flex:none;display:grid;place-items:center;background:#eef3fc;color:#1A56DB}
-.wcmcard .ic svg{width:28px;height:28px}
-.wcmcard .ic .cim{width:100%;height:100%;object-fit:cover;border-radius:11px;display:block}
+.wcmcard .ic{width:44px;height:44px;border-radius:8px;flex:none;overflow:hidden;background:#f2f5fa;align-self:flex-start}
+.wcmcard .ic .cim{width:100%;height:100%;object-fit:cover;display:block}
 .wcmcard .mn{font-size:15px;font-weight:800;margin:0}
 .wcmcard .ml{font-size:12px;color:#5a6884;margin:3px 0 0;line-height:1.4}
 .wcmcard .mgo{font-size:11.5px;font-weight:800;color:#1A56DB;margin-top:5px;display:block}
@@ -516,8 +515,7 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
   .wccatintro{font-size:14.5px;line-height:1.58;margin:6px auto 14px}
   .wctab{font-size:12.5px;padding:9px 13px}
   #wcpanel{margin-top:16px}
-  .wcmcard .ic{width:46px;height:46px}
-  .wcmcard .ic svg{width:24px;height:24px}
+  .wcmcard .ic{width:40px;height:40px}
 }
 </style>
 <section class="wchero"><img class="bg" src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OUTDOOR-BANNER.jpg" alt="" loading="eager" onerror="this.style.display='none'"><div class="in"><div class="eye">按行业 · 户外与能源</div><h1>户外能源标签解决方案</h1><p class="slog">极端环境不失效，设备终身可溯源</p></div></section>
@@ -527,7 +525,7 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
 (function(){
 var CATS=[{"tab": "光伏", "intro": "组件背板与铭牌标识，耐受 25 年 UV 老化、高低温循环与湿热环境 ", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OUTDOOR-SOLARSUN.jpg", "icon": "", "prods": [{"n": "白色耐 UV 光伏标签", "l": "MZS1670 · 50µm 白色耐 UV PET · S333 胶 · UV60 / PCT48 / DH1000 · 适配组件背板层压", "img": "", "landing": false, "href": "#"}, {"n": "亚银光伏铭牌标签", "l": "MZ0511 · 50µm 哑银 PET · S8050 胶 · UL969 · PCT48 / DH1000 · 金属质感铭牌级", "img": "", "landing": false, "href": "#"}, {"n": "黑色光伏标签", "l": "MZS1619 · 50µm 黑色 PET · S333 胶 · UL969 · UV60 / PCT48 / DH1000 · 免满版印刷，无脱墨风险", "img": "", "landing": false, "href": "#"}]}, {"tab": "新能源电池", "intro": "电芯、模组与 PACK 追溯及警示标识，耐受电解液、高低温循环与户外环境 ", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OUTDOOR-NEWEV.jpg", "icon": "", "prods": [{"n": "电池模组追溯标签", "l": "21361V2 · 2.0mil 白色哑光耐化学 PET · L-606 高性能胶 · UL 认证 · 耐 DMC 电解液 · 高分辨率二维码", "img": "", "landing": false, "href": "#"}, {"n": "电池包标识标签", "l": "WP344S · 2mil 白色 PET · TC-716 顶涂 · L-344 高性能胶 · UL Recognized · 永久胶粘 · 耐候 10 年", "img": "", "landing": false, "href": "#"}, {"n": "电池警示标签", "l": "V400 F · 4mil 白色乙烯基 · TC-106 顶涂 · L-156 特种胶 · UL 认证 · 阻燃电气合规 · 高对比度醒目印刷", "img": "", "landing": false, "href": "#"}, {"n": "厂内货架标签", "l": "21449 · 2mil 白色哑光 PET · MTC-722 顶涂 · L-344 胶 · UL 认证 · 热转印适配 · 耐油污耐摩擦", "img": "", "landing": false, "href": "#"}]}, {"tab": "户外警示", "intro": "电气、高温、管道与危险化学品警示标识，兼具阻燃、耐候、耐化学与海事耐受性能 ", "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OUTDOOR-WARNING%20OILDRUM.jpg", "icon": "", "prods": [{"n": "电气安全警示标签", "l": "V400 F · 4mil 白色乙烯基 · TC-106 顶涂 · L-156 特种胶 · UL 认证 · 阻燃电气合规 · 5–7 年户外", "img": "", "landing": false, "href": "#"}, {"n": "高温环境警示标签", "l": "21361V2 · 2.0mil 白色哑光耐化学 PET · L-606 高性能胶 · UL 认证 · 耐高温耐化学 · 粗糙表面适配（钢厂 / 陶瓷 / 锻造）", "img": "", "landing": false, "href": "#"}, {"n": "管道介质警示标签", "l": "4mil 柔性白色乙烯基 · 高性能胶 · 柔性曲面适配 · 5–7 年户外耐候 · 颜色编码流向标记", "img": "", "landing": false, "href": "#"}, {"n": "危险化学品警示标签", "l": "41028 · 3.1mil 白色 PVC · V-224 胶 · BS 5609 海事认证 · 激光打印 · 耐海水耐化学腐蚀（GHS）", "img": "", "landing": false, "href": "#"}]}], GO="查看产品 →", SUBNAV=false, HIDE_INTRO=false;
 function card(p,hideName){
-  var im=p.img?('<span class="ic"><img class="cim" src="'+p.img+'" alt="" loading="lazy" onerror="this.remove()"></span>'):('<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7" cy="7" r="1.1"/></svg></span>');
+  var im=p.img?('<span class="ic"><img class="cim" src="'+p.img+'" alt="" loading="lazy" onerror="this.parentNode.remove()"></span>'):'';
   var nm=hideName?'':'<p class="mn">'+p.n+'</p>';
   var inner=im+'<div>'+nm+'<p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+'</span>'):'')+'</div>';
   return p.landing?'<a class="wcmcard" href="'+p.href+'">'+inner+'</a>':'<div class="wcmcard off">'+inner+'</div>';
