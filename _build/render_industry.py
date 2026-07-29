@@ -232,7 +232,7 @@ def main():
     # Both languages get the v2 design + real products (model numbers are facts,
     # not translation). English prose (overview / tier intros) is a draft
     # translation of the Chinese brief, pending client review.
-    for slug in ["wire-cable", "outdoor-energy", "pcb", "steel", "automotive", "heat-resistant", "low-temperature", "flame-retardant", "weather-resistant"]:
+    for slug in ["wire-cable", "outdoor-energy", "pcb", "steel", "automotive", "heat-resistant", "low-temperature", "flame-retardant", "weather-resistant", "medical"]:
         data = json.load(open(os.path.join(IND_DIR, slug + ".json"), encoding="utf-8"))
         for lang in data.get("langs", ["en", "zh"]):
             out = build_lang(data, lang)
