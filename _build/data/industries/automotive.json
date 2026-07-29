@@ -165,14 +165,14 @@
             "th": "ฉลากเลเซอร์ป้องกันการแก้ไขรหัส VIN"
           },
           "line": {
-            "en": "E-2512BL · -40℃~150℃ · matte black-white laser acrylic film · tamper-proof laser engraving, complies with global VIN traceability",
-            "zh": "E-2512BL · -40℃~150℃ · 哑光黑白丙烯酸激光膜 · 防撕毁防伪，符合整车 VIN 法规唯一追溯",
-            "vi": "E-2512BL · -40℃~150℃ · màng acrylic laser đen trắng mờ · chống xé chống giả, đáp ứng truy xuất VIN toàn xe",
-            "th": "E-2512BL · -40℃~150°C · ฟิล์มอะคริลิกเลเซอร์ขาวดำสีด้าน · ป้องกันการฉีกและการแก้ไข สอดคล้องการติดตาม VIN"
+            "en": "E-2512BL · -40℃~180℃ · dual-layer glossy black PET laser film · self-destruct tamper-evidence, one-pass laser mark + die-cut, RoHS · global VIN traceability",
+            "zh": "E-2512BL · -40℃~180℃ · 双层亮面黑色 PET 激光膜 · 揭除自毁留痕，激光打标裁切一体，RoHS · 整车 VIN 唯一追溯",
+            "vi": "E-2512BL · -40℃~180℃ · màng laser PET đen bóng hai lớp · tự hủy để lại dấu vết, khắc laser + bế một lần, RoHS · truy xuất VIN toàn xe",
+            "th": "E-2512BL · -40℃~180°C · ฟิล์มเลเซอร์ PET ดำเงาสองชั้น · ทำลายตัวเองทิ้งร่องรอย มาร์กเลเซอร์+ไดคัตในขั้นตอนเดียว RoHS · การติดตาม VIN ทั้งคัน"
           },
           "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-VINCODE",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-2512bl"
         },
         {
           "name": {
