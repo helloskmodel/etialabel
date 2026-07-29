@@ -21,22 +21,22 @@ UI = {
          "benefits": "Benefits", "spec": "Specifications", "applications": "Applications",
          "certs": "Testing & Certifications", "cta_btn": "Request Samples & TDS by Email",
          "cta_note": "No online download — samples and the TDS are sent one-to-one by email.",
-         "home": "Home", "products": "Products"},
+         "featured": "Featured Product Solutions", "home": "Home", "products": "Products"},
   "zh": {"positioning": "产品概述", "challenges": "核心制程挑战", "features": "核心特性",
          "benefits": "客户价值", "spec": "产品规格", "applications": "适用场景",
          "certs": "测试与认证", "cta_btn": "邮件申请样品 & TDS",
          "cta_note": "本页无在线下载，样品与 TDS 仅通过邮件一对一发送。",
-         "home": "首页", "products": "产品"},
+         "featured": "推荐产品方案", "home": "首页", "products": "产品"},
   "vi": {"positioning": "Tổng quan", "challenges": "Thách thức sản xuất", "features": "Đặc tính",
          "benefits": "Lợi ích", "spec": "Thông số kỹ thuật", "applications": "Ứng dụng",
          "certs": "Kiểm tra & Chứng nhận", "cta_btn": "Yêu cầu mẫu & TDS qua Email",
          "cta_note": "Không tải xuống trực tuyến — mẫu và TDS được gửi riêng qua email.",
-         "home": "Trang chủ", "products": "Sản phẩm"},
+         "featured": "Giải pháp sản phẩm tiêu biểu", "home": "Trang chủ", "products": "Sản phẩm"},
   "th": {"positioning": "ภาพรวม", "challenges": "ความท้าทายในการผลิต", "features": "คุณสมบัติ",
          "benefits": "ประโยชน์", "spec": "ข้อมูลจำเพาะ", "applications": "การใช้งาน",
          "certs": "การทดสอบและการรับรอง", "cta_btn": "ขอตัวอย่าง & TDS ทางอีเมล",
          "cta_note": "ไม่มีการดาวน์โหลดออนไลน์ — ตัวอย่างและ TDS จะถูกส่งทางอีเมล",
-         "home": "หน้าแรก", "products": "สินค้า"},
+         "featured": "โซลูชันผลิตภัณฑ์แนะนำ", "home": "หน้าแรก", "products": "สินค้า"},
 }
 
 def L(node, lang):
@@ -80,6 +80,14 @@ CSS = """
 .pcta{max-width:900px;margin:34px auto;background:linear-gradient(120deg,#143C96,#1A56DB);border-radius:16px;padding:30px 30px;color:#fff}
 .pcta h3{margin:0 0 8px;font-size:21px}
 .pcta p{margin:0 0 16px;color:#dbe6ff;font-size:14.5px}
+.pwhy{font-size:16px;line-height:1.75;color:#2c3a58;margin:0 0 16px}
+.pscn{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:16px}
+.pscncard{border:1px solid #e3eaf6;border-radius:14px;padding:18px;background:#fff;display:flex;flex-direction:column;gap:6px}
+.pscncard .tmp{font-size:17px;font-weight:800;color:#41A62A;line-height:1.2}
+.pscncard .pr{font-size:11.5px;font-weight:700;color:#8593ad;text-transform:uppercase;letter-spacing:.05em}
+.pscncard h3{margin:2px 0 0;font-size:16px;color:#143C96;line-height:1.3}
+.pscncard p{margin:0;font-size:14px;line-height:1.6;color:#41506e}
+.pscncard .ap{margin-top:auto;padding-top:8px;font-size:12.5px;color:#5a6885;line-height:1.55;border-top:1px solid #eef2f9}
 @media (max-width:760px){
   .phero .in{padding:26px 18px}.phero h1{font-size:24px}.phero .tl{font-size:15.5px}
   .psec{padding:20px 18px}.psec h2{font-size:20px}.psec .pos{font-size:14.5px;line-height:1.65}
@@ -89,7 +97,17 @@ CSS = """
 """
 
 def section(eye, h, inner):
-    return '<section class="psec"><div class="peye">%s</div><h2>%s</h2>%s</section>' % (esc(eye), esc(h), inner)
+    eyehtml = ('<div class="peye">%s</div>' % esc(eye)) if eye else ""
+    return '<section class="psec">%s<h2>%s</h2>%s</section>' % (eyehtml, esc(h), inner)
+
+def scenarios_html(items):
+    cards = ""
+    for s in items:
+        cards += ('<div class="pscncard"><div class="tmp">%s</div><div class="pr">%s</div>'
+                  '<h3>%s</h3><p>%s</p><div class="ap">%s</div></div>') % (
+            esc(s.get("temp", "")), esc(s.get("process", "")), esc(s.get("title", "")),
+            esc(s.get("desc", "")), esc(s.get("apps", "")))
+    return '<div class="pscn">%s</div>' % cards
 
 def ul(items, cls=""):
     return '<ul class="plist %s">%s</ul>' % (cls, "".join("<li>%s</li>" % esc(x) for x in items))
@@ -141,6 +159,19 @@ def build_lang(d, lang):
         body += section(ui["features"], ui["features"], '<div class="pfeat">%s%s</div>' % (img, ul(L(d["features"], lang), "ok")))
     if L(d.get("benefits", {}), lang):
         body += section(ui["benefits"], ui["benefits"], ul(L(d["benefits"], lang), "ok"))
+    if d.get("why"):
+        w = d["why"]
+        heading = L(w.get("heading", {}), lang)
+        inner = ""
+        if L(w.get("intro", {}), lang):
+            inner += '<p class="pwhy">%s</p>' % esc(L(w["intro"], lang))
+        if L(w.get("items", {}), lang):
+            inner += ul(L(w["items"], lang), "ok")
+        body += section("", heading or ui["benefits"], inner)
+    if L(d.get("scenarios", {}), lang):
+        body += section(ui["applications"], ui["applications"], scenarios_html(L(d["scenarios"], lang)))
+    if L(d.get("featured", {}), lang):
+        body += section("", ui["featured"], ul(L(d["featured"], lang), "ok"))
     if d.get("spec_table"):
         body += section(ui["spec"], ui["spec"], spec_table(d["spec_table"], lang))
     elif L(d.get("spec", {}), lang):

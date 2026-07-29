@@ -1,0 +1,152 @@
+{
+  "slug": "high-heat-identification",
+  "source": "client brief — High Heat Identification Solutions",
+  "langs": ["en", "zh"],
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP700.jpg",
+  "eyebrow": {
+    "en": "Solutions",
+    "zh": "解决方案"
+  },
+  "title": {
+    "en": "High Heat Identification Solutions",
+    "zh": "耐高温标识解决方案"
+  },
+  "tagline": {
+    "en": "Engineered for high heat. Built for reliable identification.",
+    "zh": "耐受严苛高温，保障稳定识别。"
+  },
+  "positioning": {
+    "en": "Built with high-performance materials, specialty adhesives, and durable topcoats, our high heat identification solutions are engineered for demanding thermal processes. They maintain reliable adhesion, clear identification, and long-lasting durability across a wide range of high-temperature manufacturing applications.",
+    "zh": "采用高性能面材、特种胶粘技术及耐高温涂层，专为严苛高温工艺打造，在高温、热循环及复杂制造环境中保持稳定粘接、清晰识别和持久耐用，满足各类高温制造应用的标识需求。"
+  },
+  "why": {
+    "heading": {
+      "en": "Why High Heat Identification?",
+      "zh": "为什么选择耐高温标识？"
+    },
+    "intro": {
+      "en": "High-temperature applications require more than heat-resistant materials. The right combination of facestock, adhesive, and protective coating ensures labels remain securely bonded and readable throughout demanding thermal processes.",
+      "zh": "高温应用不仅需要耐热材料，更需要面材、胶粘剂和保护涂层的协同设计，才能在严苛高温工艺中保持牢固粘接、清晰识别和稳定性能。"
+    },
+    "items": {
+      "en": [
+        "High-performance materials for demanding thermal environments",
+        "Specialty adhesives for reliable bonding at elevated temperatures",
+        "Durable topcoats resistant to heat, abrasion, and chemicals",
+        "Excellent barcode and print durability",
+        "Engineered for a wide range of industrial applications"
+      ],
+      "zh": [
+        "高性能材料，适用于严苛高温环境",
+        "特种胶粘技术，实现高温下稳定粘接",
+        "耐高温、耐磨损、耐化学腐蚀保护涂层",
+        "条码及打印信息长期清晰可读",
+        "满足多种高温制造工艺应用需求"
+      ]
+    }
+  },
+  "scenarios": {
+    "en": [
+      {
+        "temp": "121–135°C",
+        "process": "Autoclave Processing",
+        "title": "Steam Sterilization",
+        "desc": "Labels withstand repeated steam sterilization cycles while remaining securely bonded and fully readable.",
+        "apps": "Medical devices • Surgical instruments • Laboratory containers • Healthcare equipment"
+      },
+      {
+        "temp": "150–220°C",
+        "process": "Curing Ovens",
+        "title": "Paint & Powder Coating",
+        "desc": "Labels remain bonded and readable throughout paint and powder coating bake cycles without bubbling, discoloration, or print degradation.",
+        "apps": "Automotive parts • Metal fabrication • Appliances • Industrial equipment"
+      },
+      {
+        "temp": "170–220°C",
+        "process": "Rubber Curing",
+        "title": "Rubber Vulcanization",
+        "desc": "Labels applied before curing withstand heat, pressure, and rubber expansion throughout the vulcanization process.",
+        "apps": "Tires • Rubber hoses • Rubber seals • Molded rubber components"
+      },
+      {
+        "temp": "260–330°C",
+        "process": "SMT Assembly",
+        "title": "PCB Reflow Soldering",
+        "desc": "Designed for multiple lead-free reflow cycles while maintaining reliable adhesion, barcode readability, and PCB traceability.",
+        "apps": "PCB manufacturing • SMT assembly • Electronic components • PCBA traceability"
+      },
+      {
+        "temp": "Up to 1000°C",
+        "process": "Direct Hot Application",
+        "title": "Ultra High Temperature Direct Apply",
+        "desc": "Labels are applied directly onto hot steel, aluminum, or other metal surfaces immediately after casting or rolling, eliminating the need for cooling before identification.",
+        "apps": "Steel mills • Aluminum processing • Copper processing • Continuous casting • Hot rolling"
+      },
+      {
+        "temp": "Room Temp. to 1200°C",
+        "process": "Heat Treatment",
+        "title": "Heat Treatment Process Management",
+        "desc": "Labels are applied before heat treatment and remain with the product throughout annealing, firing, sintering, and other thermal processes to ensure continuous identification.",
+        "apps": "Steel • Ceramics • Porcelain • Concrete • Electronics • Metal fabrication"
+      }
+    ],
+    "zh": [
+      {
+        "temp": "121–135°C",
+        "process": "高压蒸汽灭菌",
+        "title": "高温蒸汽灭菌",
+        "desc": "标签可耐受反复高温高压蒸汽灭菌，在灭菌过程中保持牢固粘贴和清晰识别。",
+        "apps": "医疗器械 • 手术器械 • 实验室容器 • 医疗设备"
+      },
+      {
+        "temp": "150–220°C",
+        "process": "烘烤固化",
+        "title": "喷涂与粉末涂装固化",
+        "desc": "标签在喷漆和粉末涂装烘烤过程中保持牢固粘贴，不起泡、不变色，打印信息清晰可读。",
+        "apps": "汽车零部件 • 金属制品 • 家电制造 • 工业设备"
+      },
+      {
+        "temp": "170–220°C",
+        "process": "硫化工艺",
+        "title": "橡胶硫化",
+        "desc": "标签在硫化过程中耐受高温、高压及橡胶膨胀，保持稳定识别。",
+        "apps": "轮胎 • 橡胶软管 • 密封件 • 橡胶制品"
+      },
+      {
+        "temp": "260–330°C",
+        "process": "SMT 制程",
+        "title": "PCB 回流焊",
+        "desc": "适用于多次无铅回流焊工艺，保持稳定粘接、条码清晰及产品追溯。",
+        "apps": "PCB 制造 • SMT 贴装 • 电子元器件 • PCBA 追溯"
+      },
+      {
+        "temp": "最高 1000°C",
+        "process": "赤热金属直接贴标",
+        "title": "超高温直贴",
+        "desc": "标签可直接贴附于高温钢材、铝材等赤热金属表面，无需等待冷却即可完成产品标识。",
+        "apps": "钢铁制造 • 铝加工 • 铜加工 • 连铸 • 热轧"
+      },
+      {
+        "temp": "常温贴标 · 最高 1200°C",
+        "process": "热处理工艺",
+        "title": "热处理过程管理",
+        "desc": "标签于常温贴附，随产品经历退火、淬火、烧结等高温工艺，在整个热处理过程中保持稳定识别。",
+        "apps": "钢铁 • 陶瓷 • 瓷制品 • 混凝土制品 • 电子制造 • 金属加工"
+      }
+    ]
+  },
+  "featured": {
+    "en": [
+      "Ultra High Temperature Direct Apply Labels",
+      "Heat Treatment Labels",
+      "Heat Treatment Tags",
+      "High-Temperature Polyimide Labels"
+    ],
+    "zh": [
+      "超高温直贴标签",
+      "热处理标签",
+      "热处理吊牌",
+      "耐高温聚酰亚胺标签"
+    ]
+  }
+}
