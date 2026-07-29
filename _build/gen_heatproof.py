@@ -293,6 +293,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .trustbar .ti::before{content:"✓";color:#8fe063;font-weight:800;flex:none}
 .scgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:10px}
 .sci{border-top:2px solid var(--green);padding-top:14px}
+.sci-img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;display:block;margin:0 0 12px;background:#eef3fc}
+.sci:has(.sci-img){border-top:none;padding-top:0}
 .sci b{display:block;font-size:15px;font-weight:700;color:var(--blue-deep);margin-bottom:6px}
 .sci p{font-size:13px;color:var(--mut);line-height:1.55}
 .svcbar{background:linear-gradient(155deg,var(--blue),var(--blue-deep));color:#fff}
@@ -1457,7 +1459,9 @@ def build_home(lang):
         esc(T.get("fs_email","Email")),esc(T.get("fs_phone","Phone")),
         esc(T.get("fs_addr","Mailing address")),esc(T.get("fs_btn","Request Free Sample")))
     final_cta='<div class="wrap">%s</div>'%cta2(lang,"home",home_hlink)
-    sc_items="".join('<div class="sci"><b>%s</b><p>%s</p></div>'%(esc(it["title"]),esc(it["desc"])) for it in T.get("svc",[]))
+    sc_items="".join('<div class="sci">%s<b>%s</b><p>%s</p></div>'%(
+        ('<img class="sci-img" src="%s" alt="" loading="lazy" onerror="this.remove()">'%esc(it["img"]) if it.get("img") else ''),
+        esc(it["title"]),esc(it["desc"])) for it in T.get("svc",[]))
     sc_section=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
                 '<div class="scgrid">%s</div></div></section>')%(
         esc(T.get("sc_eyebrow","SERVICE COMMITMENT")),esc(T.get("sc_title","Our Service Commitment")),sc_items)
@@ -1695,43 +1699,31 @@ SERVICE_OFFICES=[
 # 4 service images (one per commitment) on COS. quote() matches COS folder encoding.
 import urllib.parse as _up
 _SVC_B="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/"+_up.quote("C・Service 服务图 4 组")+"/"
-SERVICE_IMGS=[_SVC_B+"service-quality-inspection.png",
-              _SVC_B+"service-application-solutions.png",
-              _SVC_B+"service-flexible-supply.png",
-              _SVC_B+"service-application-support.png"]
+SERVICE_IMGS=["https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/100%25%20QUALITY%20INSPECTION",
+              "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/APPLICATION%20DRIVEN%20SOLUTION",
+              "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/FLEXIBLE%20SUPPLY",
+              "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/RESPONSIVE%20SUPPORT"]
 SERVICE_INTRO=(
   "From material quality and application validation to flexible converting and ongoing support, ETIA helps customers reduce risk and achieve reliable labeling performance throughout the entire project lifecycle.",
   "从材料质量、应用验证，到柔性加工与持续支持，ETIA 在项目全流程中帮助客户降低导入风险，确保标签应用稳定可靠。")
 # num, title(en,zh), tagline(en,zh), body[(en,zh)...], close(en,zh)
 SERVICE_COMMIT=[
- {"num":"01","title":("100% Quality Inspection","100% 质量检验"),
-  "tag":("Quality is verified at every stage.","每一个环节，都经过质量验证。"),
-  "body":[("Reliable label performance begins with consistent material quality. Every incoming material is inspected before entering production, and finished products are checked before shipment.",
-           "稳定的标签表现，始于稳定的材料质量。所有来料在进入生产前均经过检验，成品在出库前再次进行质量确认。"),
-          ("Supported by our in-house laboratory, production verification, retained samples, and traceability procedures, we help ensure that every batch meets the required quality and application standards.",
-           "依托自有实验室、生产过程验证、出库留样及追溯机制，我们确保每一批材料符合相应的质量和应用要求。")],
-  "close":("Every material. Every batch. Every delivery.","每一种材料，每一个批次，每一次交付。")},
- {"num":"02","title":("Application-Driven Solutions","应用驱动方案"),
-  "tag":("Every application is unique.","每一种应用都不一样。"),
-  "body":[("Before recommending a material, we evaluate your surface, process, environment, printing method, and performance requirements.",
-           "在推荐材料之前，我们会充分评估粘贴表面、生产工艺、使用环境、打印方式及性能要求。"),
-          ("Whenever possible, materials are validated in our laboratory under simulated production conditions, helping reduce implementation risk before full-scale production.",
-           "在条件允许的情况下，我们会在模拟实际生产工况下进行实验室验证，帮助客户在正式量产导入前降低应用风险。")],
-  "close":("We don't guess. We validate.","我们不凭猜测，依靠验证。")},
- {"num":"03","title":("Flexible Supply","柔性供应"),
-  "tag":("Materials supplied in the format your production needs.","按照您的生产需求，提供合适的材料规格。"),
-  "body":[("Specialized applications often require more than standard material sizes and fixed order quantities. With in-house slitting, die-cutting, and converting equipment, we can adapt materials to different production and processing requirements.",
-           "专业应用往往需要不同于标准产品的尺寸、规格和采购数量。依托自有分切、模切及加工设备，我们能够根据客户的生产与加工需求调整材料交付形式。"),
-          ("We support multiple materials, custom widths and sizes, varied specifications, samples, small-batch orders, and volume production.",
-           "我们支持多种材料、定制宽度与尺寸、多种规格、样品、小批量订单及批量生产。")],
-  "close":("Flexible materials. Flexible formats. Flexible quantities.","材料灵活、规格灵活、数量灵活。")},
- {"num":"04","title":("Responsive Application Support","快速应用支持"),
-  "tag":("Supporting your application at every stage.","在应用的每一个阶段，为您提供支持。"),
-  "body":[("Our support continues from initial material selection and sample evaluation through printing, converting, implementation, and full-scale production.",
-           "我们的支持贯穿材料选型、样品评估、打印、加工、导入及正式量产的全过程。"),
-          ("When process conditions change or unexpected application issues arise, our team responds quickly with practical support to help minimize disruption and maintain consistent labeling performance.",
-           "当工艺条件发生变化，或生产过程中出现新的应用问题时，我们会快速响应，提供切实可行的支持，帮助减少生产中断并保持标签性能稳定。")],
-  "close":("Before delivery, during production, and beyond.","交付之前、生产之中，以及长期应用之后。")},
+ {"num":"01","title":('100% Quality Inspection', '100% 质量检验'),
+  "tag":('Every batch tested. Every shipment verified.', '批批检测，件件验证。'),
+  "body":[('Incoming materials are tested before production, verified during processing, and inspected again before shipment. Every batch is retained for full traceability.', '来料先检测，上机前验证，出厂前复检，并保留批次留样，实现全流程质量追溯。')],
+  "close":('Every material. Every batch. Every delivery.', '每一种材料，每一个批次，每一次交付。')},
+ {"num":"02","title":('Application-Driven Solutions', '应用驱动方案'),
+  "tag":('The right material for every application.', '以应用为导向，匹配合适材料。'),
+  "body":[('Our engineers work with your team to understand the application, evaluate the process, and recommend the right material through on-site or remote support.', '工程师深入了解您的应用、工艺与环境，可现场或远程协同，帮助选择更适合的材料与标识方案。')],
+  "close":("We don't guess. We validate.", '我们不凭猜测，依靠验证。')},
+ {"num":"03","title":('Flexible Supply', '柔性供应'),
+  "tag":('Flexible supply, built around your production.', '灵活供货，适配您的生产节奏。'),
+  "body":[('Multiple warehouses, flexible air and sea logistics, plus custom slitting, die-cutting, and pre-printed labels to support your production.', '多地仓储，海运、空运灵活配送，并提供分切、模切、预打印等配套服务，满足不同生产需求。')],
+  "close":('Flexible materials. Flexible formats. Flexible quantities.', '材料灵活、规格灵活、数量灵活。')},
+ {"num":"04","title":('Responsive Application Support', '快速应用支持'),
+  "tag":('Fast support from a dedicated team.', '专属团队，快速响应。'),
+  "body":[('A dedicated support team connects sales, engineering, logistics, and service for fast, coordinated responses throughout your project.', '专属服务团队协同销售、工程、物流与客服，快速响应项目需求，持续支持生产运行。')],
+  "close":('Before delivery, during production, and beyond.', '交付之前、生产之中，以及长期应用之后。')},
 ]
 
 def build_service(lang):
