@@ -108,12 +108,19 @@ CSS = """
 .pscn-sub{font-size:12.5px;line-height:1.55;color:#41506e;margin-top:4px}
 .pscn-lb{display:block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#8593ad;margin-bottom:1px}
 .pscncard .pscn-sub:first-of-type{margin-top:8px;padding-top:8px;border-top:1px solid #eef2f9}
-.flexbarwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:2px 0 18px;padding-bottom:4px;scroll-snap-type:x proximity}
-.flexbar{display:flex;gap:6px;min-width:min-content}
-.flexseg{flex:0 0 auto;padding:11px 16px;color:#fff;border:0;border-radius:8px;text-align:center;cursor:pointer;opacity:.5;transition:opacity .15s,box-shadow .15s;font:inherit;white-space:nowrap;scroll-snap-align:center}
-.flexseg.on{opacity:1;box-shadow:0 4px 12px rgba(20,60,150,.2)}
-.flexseg .fb-t{font-size:13.5px;font-weight:800}
-.pscntab .pscncard{margin:0}
+/* temperature tab bar — same component as the industry "Choose a category" */
+.scnfc{margin-top:6px}
+.scnfcrow{display:flex;align-items:flex-end;gap:2px;border-bottom:1px solid #dbe3f1}
+.scnar{flex:none;width:34px;height:46px;border:none;background:transparent;color:#143C96;font-size:26px;line-height:1;cursor:pointer;opacity:.6}
+.scnar:hover{opacity:1}
+.scntabs{display:flex;gap:4px;overflow-x:auto;flex:1;justify-content:center;-webkit-overflow-scrolling:touch}
+.scntabs::-webkit-scrollbar{height:0}
+.scntab{flex:none;font-size:13.5px;font-weight:700;line-height:1.25;padding:10px 16px;cursor:pointer;white-space:nowrap;background:transparent;color:#143C96;border:none;border-radius:9px 9px 0 0;position:relative;margin-bottom:-1px;font-family:inherit}
+.scntab.on{background:#5b6ee8;color:#fff}
+.scntab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#1A56DB}
+#scnpanel{margin-top:22px;max-width:760px;margin-left:auto;margin-right:auto}
+#scnpanel .pscncard+.pscncard{margin-top:14px}
+@media(max-width:760px){.scntab{font-size:12.5px;padding:9px 13px}}
 @media (max-width:760px){
   .phero .in{padding:26px 18px}.phero h1{font-size:24px}.phero .tl{font-size:15.5px}
   .psec{padding:20px 18px}.psec h2{font-size:20px}.psec .pos{font-size:14.5px;line-height:1.65}
@@ -152,43 +159,49 @@ def _segcolor(s):
         return _temp_color((s["lo"] + s["hi"]) / 2.0)
     return "#8aa0c0"
 
-def scenarios_html(items, ui):
+def _scn_panel(s, ui):
+    """The description card shown below the selected temperature tab. One product =
+    one card; extra cards stack here when a temperature maps to several products."""
     def subblock(label, text):
         return '<div class="pscn-sub"><span class="pscn-lb">%s</span>%s</div>' % (esc(label), esc(text))
-    # FLEXcon-style temperature bar acts as a tab selector (cold -> warm). Clicking
-    # a segment shows the matching card below (one at a time), like the industry
-    # "Choose a category" pattern.
-    segs = ""
-    cards = ""
-    for i, s in enumerate(items):
-        col = _segcolor(s)
-        ic = s.get("icon", "")
-        segs += ('<button type="button" class="flexseg%s" style="background:%s" onclick="etaScn(this,%d)">'
-                 '<span class="fb-t">%s</span></button>') % (
-            (" on" if i == 0 else ""), col, i, esc(s.get("temp", "")))
-        title = ("%s %s" % (ic, s.get("title", ""))).strip()
-        apps = s.get("apps", "")
-        sub = ""
-        apline = ""
-        if isinstance(apps, list):
-            if apps:
-                sub += subblock(ui["sc_apps"], " · ".join(apps))
-        elif apps:
-            apline = '<div class="ap">%s</div>' % esc(apps)
-        if s.get("containers"):
-            sub += subblock(ui["sc_containers"], s["containers"])
-        if s.get("products"):
-            sub += subblock(ui["sc_products"], s["products"])
-        cards += ('<div class="pscncard" data-i="%d" style="border-top:3px solid %s;%s"><div class="tmp">%s</div>'
-                  '<div class="pr">%s</div><h3>%s</h3><p>%s</p>%s%s</div>') % (
-            i, col, ("" if i == 0 else "display:none"), esc(s.get("temp", "")),
-            esc(s.get("process", "")), esc(title), esc(s.get("desc", "")), sub, apline)
-    js = ('<script>function etaScn(b,i){var w=b.closest(".pscnwrap");'
-          'w.querySelectorAll(".flexseg").forEach(function(s,j){s.classList.toggle("on",j===i);});'
-          'w.querySelectorAll(".pscncard").forEach(function(c){c.style.display=(+c.getAttribute("data-i")===i)?"":"none";});'
-          'if(b.scrollIntoView){b.scrollIntoView({behavior:"smooth",inline:"center",block:"nearest"});}}</script>')
-    return ('<div class="pscnwrap"><div class="flexbarwrap"><div class="flexbar">%s</div></div>'
-            '<div class="pscntab">%s</div></div>%s') % (segs, cards, js)
+    title = ("%s %s" % (s.get("icon", ""), s.get("title", ""))).strip()
+    apps = s.get("apps", "")
+    sub = ""
+    apline = ""
+    if isinstance(apps, list):
+        if apps:
+            sub += subblock(ui["sc_apps"], " · ".join(apps))
+    elif apps:
+        apline = '<div class="ap">%s</div>' % esc(apps)
+    if s.get("containers"):
+        sub += subblock(ui["sc_containers"], s["containers"])
+    if s.get("products"):
+        sub += subblock(ui["sc_products"], s["products"])
+    return ('<div class="pscncard"><div class="pr">%s</div><h3>%s</h3><p>%s</p>%s%s</div>') % (
+        esc(s.get("process", "")), esc(title), esc(s.get("desc", "")), sub, apline)
+
+def scenarios_html(items, ui):
+    # Temperature tab bar — same component as the industry "Choose a category":
+    # text tabs = temperature ranges, arrows scroll, selected tab highlighted;
+    # the selected temperature's description card renders below.
+    cats = [{"tab": s.get("temp", ""), "html": _scn_panel(s, ui)} for s in items]
+    static_tabs = "".join(
+        '<button type="button" class="scntab%s">%s</button>' % ((" on" if i == 0 else ""), esc(c["tab"]))
+        for i, c in enumerate(cats))
+    static_panel = cats[0]["html"] if cats else ""
+    bar = ('<div class="scnfc"><div class="scnfcrow">'
+           '<button class="scnar" type="button" onclick="scnScroll(-1)">&lsaquo;</button>'
+           '<div class="scntabs" id="scntabs">%s</div>'
+           '<button class="scnar" type="button" onclick="scnScroll(1)">&rsaquo;</button>'
+           '</div><div id="scnpanel">%s</div></div>') % (static_tabs, static_panel)
+    js = ('<script>(function(){var C=%s;'
+          'function render(i){var t=document.getElementById("scntabs"),p=document.getElementById("scnpanel");t.innerHTML="";'
+          'C.forEach(function(c,j){var b=document.createElement("button");b.type="button";b.className="scntab"+(j===i?" on":"");'
+          'b.textContent=c.tab;b.onclick=function(){render(j);b.scrollIntoView({inline:"center",block:"nearest",behavior:"smooth"});};'
+          't.appendChild(b);});p.innerHTML=C[i].html;}'
+          'window.scnScroll=function(d){document.getElementById("scntabs").scrollBy({left:d*180,behavior:"smooth"});};'
+          'render(0);})();</script>') % json.dumps(cats, ensure_ascii=False)
+    return bar + js
 
 def ul(items, cls=""):
     return '<ul class="plist %s">%s</ul>' % (cls, "".join("<li>%s</li>" % esc(x) for x in items))
