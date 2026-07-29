@@ -3,8 +3,20 @@
   "source": "client application note — VIN code identification (Tesla example)",
   "order": 1,
   "langs": ["en", "zh"],
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-VINCODE",
-  "image": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-VINCODE",
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-FRONT",
+  "image": "",
+  "gallery": [
+    {"img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-FRONT",
+     "caption": {"en": "Windshield VIN (front)", "zh": "挡风玻璃 VIN（前部）"}},
+    {"img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-UPPER%20B-PILLAR",
+     "caption": {"en": "Upper B-pillar", "zh": "B 柱上部"}},
+    {"img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-DOOR",
+     "caption": {"en": "Door jamb", "zh": "车门框"}},
+    {"img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-REAR%20DOOR",
+     "caption": {"en": "Rear door", "zh": "后车门"}},
+    {"img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-FRONT%20SEAT",
+     "caption": {"en": "Front seat", "zh": "前排座椅"}}
+  ],
   "title": {
     "en": "VIN Code Identification in Modern Vehicles: A Tesla Example",
     "zh": "现代汽车 VIN 码识别 —— 以特斯拉为例"
