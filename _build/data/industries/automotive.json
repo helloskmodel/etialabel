@@ -432,35 +432,35 @@
       "products": [
         {
           "name": {
-            "en": "Uncured Green Tire Barcode Label",
-            "zh": "预硫化生胎条码标签",
-            "vi": "Nhãn mã vạch lốp thô trước lưu hóa",
-            "th": "ฉลากบาร์โค้ดยางดิบก่อนอบยาง"
+            "en": "Pre-Cure Tire Bead Label",
+            "zh": "预硫化胎圈标签",
+            "vi": "Nhãn hạt lốp trước lưu hóa",
+            "th": "ฉลากลูกปัดยางก่อนการอบ"
           },
           "line": {
-            "en": "COMPUYTPE TS-1100P · ambient molding, withstands 180℃ vulcanization (200℃ short-term high pressure) · thermally stabilized modified polyester · rubber-bleed oil, vulcanizing agent & steam resistant",
-            "zh": "COMPUYTPE TS-1100P · 常温成型，耐 180℃硫化短时高温高压（短时承受 200℃）· 热稳定改性聚酯 · 耐生胎橡胶析出油脂、硫化药剂、高温水汽",
-            "vi": "COMPUYTPE TS-1100P · nhiệt thường tạo hình, chịu 180℃ lưu hóa ngắn hạn (chịu 200℃ cao áp ngắn hạn) · polyester ổn định nhiệt cải biến · chống dầu cao su thô, thuốc lưu hóa, hơi nước nhiệt cao",
-            "th": "COMPUYTPE TS-1100P · อุณหภูมิปกติขึ้นรูป ทน 180°C อบยางชั่วคราว (ทน 200°C ชั่วคราว) · โพลีเอสเตอร์เสถียรอุณหภูมิปรับปรุง · ทนน้ำมันซึมจากยางดิบ สารอบยาง ไอน้ำอุณหภูมิสูง"
+            "en": "COMPUTYPE TS-1100P · Pre-cure bead labels for all tire types · precise placement & dimensional stability through curing · ambient molding, withstands 180°C vulcanization (200°C short-term), rubber-bleed oil, vulcanizing-agent & steam resistant",
+            "zh": "COMPUTYPE TS-1100P · 适配全部胎型的预硫化胎圈标签 · 精准贴标定位，硫化过程尺寸稳定 · 常温成型，耐 180°C 硫化（短时 200°C），耐生胎析出油脂、硫化药剂与高温水汽",
+            "vi": "COMPUTYPE TS-1100P · Nhãn hạt lốp trước lưu hóa cho mọi loại lốp · đặt nhãn chính xác, ổn định kích thước qua lưu hóa · tạo hình nhiệt thường, chịu 180°C lưu hóa (200°C ngắn hạn), chống dầu cao su, thuốc lưu hóa & hơi nước",
+            "th": "COMPUTYPE TS-1100P · ฉลากลูกปัดยางก่อนอบสำหรับยางทุกชนิด · วางตำแหน่งแม่นยำ เสถียรด้านมิติตลอดการอบยาง · ขึ้นรูปอุณหภูมิปกติ ทน 180°C อบยาง (200°C ชั่วคราว) ทนน้ำมันยางดิบ สารอบยาง และไอน้ำ"
           },
-          "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-TIRE",
+          "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-TIRE-PRECURE",
           "landing": false,
           "slug": ""
         },
         {
           "name": {
-            "en": "Finished Vulcanized Tire Sidewall Label",
-            "zh": "硫化后成品轮胎标识标签",
-            "vi": "Nhãn lốp thành phẩm sau lưu hóa",
-            "th": "ฉลากยางสำเร็จรูปหลังอบยาง"
+            "en": "Post-Cure Tire Bead Label",
+            "zh": "硫化后胎圈标签",
+            "vi": "Nhãn hạt lốp sau lưu hóa",
+            "th": "ฉลากลูกปัดยางหลังการอบ"
           },
           "line": {
-            "en": "COMPUYTPE TS1130 · -40℃~80℃ · white glossy PET · rubber-bleed oil, ozone, rain, road grease & deicing-salt resistant",
-            "zh": "COMPUYTPE TS1130 · -40℃~80℃ · 白色光面 PET · 耐橡胶析出油脂、臭氧、雨水、路面油污、融雪盐",
-            "vi": "COMPUYTPE TS1130 · -40℃~80℃ · PET bóng trắng · chống dầu cao su, ôzôn, mưa, dầu đường, muối tan tuyết",
-            "th": "COMPUYTPE TS1130 · -40℃~80°C · PET สีขาวเงา · ทนน้ำมันยาง โอโซน ฝน น้ำมันบนถนน เกลือละลายหิมะ"
+            "en": "COMPUTYPE TS1130 · Post-cure bead labels for all tire types · optimal adhesion to cured rubber through tire testing · -40°C~80°C, white glossy PET, rubber-bleed oil, ozone, rain, road-grease & deicing-salt resistant",
+            "zh": "COMPUTYPE TS1130 · 适配全部胎型的硫化后胎圈标签 · 与硫化橡胶最佳附着，贯穿轮胎测试全程 · -40°C~80°C，白色光面 PET，耐橡胶析出油脂、臭氧、雨水、路面油污与融雪盐",
+            "vi": "COMPUTYPE TS1130 · Nhãn hạt lốp sau lưu hóa cho mọi loại lốp · bám tối ưu vào cao su đã lưu hóa suốt quá trình kiểm tra lốp · -40°C~80°C, PET bóng trắng, chống dầu cao su, ôzôn, mưa, dầu đường & muối tan tuyết",
+            "th": "COMPUTYPE TS1130 · ฉลากลูกปัดยางหลังอบสำหรับยางทุกชนิด · ยึดเกาะยางที่อบแล้วดีที่สุดตลอดการทดสอบยาง · -40°C~80°C, PET สีขาวเงา, ทนน้ำมันยาง โอโซน ฝน น้ำมันถนน & เกลือละลายหิมะ"
           },
-          "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-TIRE",
+          "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-TIER-POSTCURE",
           "landing": false,
           "slug": ""
         }
