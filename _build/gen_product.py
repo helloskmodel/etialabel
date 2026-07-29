@@ -108,11 +108,13 @@ CSS = """
 .pscn-sub{font-size:12.5px;line-height:1.55;color:#41506e;margin-top:4px}
 .pscn-lb{display:block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#8593ad;margin-bottom:1px}
 .pscncard .pscn-sub:first-of-type{margin-top:8px;padding-top:8px;border-top:1px solid #eef2f9}
-.flexbarwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:2px 0 22px;padding-bottom:2px}
+.flexbarwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:2px 0 18px;padding-bottom:2px}
 .flexbar{display:flex;gap:3px;min-width:520px}
-.flexseg{flex:1;padding:10px 8px;color:#fff;border-radius:7px;text-align:center;min-width:84px}
+.flexseg{flex:1;padding:10px 8px;color:#fff;border:0;border-radius:7px;text-align:center;min-width:84px;cursor:pointer;opacity:.5;transition:opacity .15s,box-shadow .15s;font:inherit}
+.flexseg.on{opacity:1;box-shadow:0 4px 12px rgba(20,60,150,.2)}
 .flexseg .fb-t{display:block;font-size:12.5px;font-weight:800;white-space:nowrap}
 .flexseg .fb-n{display:block;font-size:10.5px;line-height:1.25;margin-top:3px}
+.pscntab .pscncard{margin:0}
 @media (max-width:760px){
   .phero .in{padding:26px 18px}.phero h1{font-size:24px}.phero .tl{font-size:15.5px}
   .psec{padding:20px 18px}.psec h2{font-size:20px}.psec .pos{font-size:14.5px;line-height:1.65}
@@ -154,18 +156,19 @@ def _segcolor(s):
 def scenarios_html(items, ui):
     def subblock(label, text):
         return '<div class="pscn-sub"><span class="pscn-lb">%s</span>%s</div>' % (esc(label), esc(text))
-    # FLEXcon-style temperature bar: one colored segment per scenario, cold -> warm.
+    # FLEXcon-style temperature bar acts as a tab selector (cold -> warm). Clicking
+    # a segment shows the matching card below (one at a time), like the industry
+    # "Choose a category" pattern.
     segs = ""
-    for s in items:
-        ic = s.get("icon", "")
-        segs += ('<div class="flexseg" style="background:%s"><span class="fb-t">%s</span>'
-                 '<span class="fb-n">%s%s</span></div>') % (
-            _segcolor(s), esc(s.get("temp", "")),
-            (esc(ic) + " " if ic else ""), esc(s.get("title", "")))
-    flexbar = '<div class="flexbarwrap"><div class="flexbar">%s</div></div>' % segs
     cards = ""
-    for s in items:
-        title = ("%s %s" % (s.get("icon", ""), s.get("title", ""))).strip()
+    for i, s in enumerate(items):
+        col = _segcolor(s)
+        ic = s.get("icon", "")
+        segs += ('<button type="button" class="flexseg%s" style="background:%s" onclick="etaScn(this,%d)">'
+                 '<span class="fb-t">%s</span><span class="fb-n">%s%s</span></button>') % (
+            (" on" if i == 0 else ""), col, i, esc(s.get("temp", "")),
+            (esc(ic) + " " if ic else ""), esc(s.get("title", "")))
+        title = ("%s %s" % (ic, s.get("title", ""))).strip()
         apps = s.get("apps", "")
         sub = ""
         apline = ""
@@ -178,11 +181,15 @@ def scenarios_html(items, ui):
             sub += subblock(ui["sc_containers"], s["containers"])
         if s.get("products"):
             sub += subblock(ui["sc_products"], s["products"])
-        cards += ('<div class="pscncard" style="border-top:3px solid %s"><div class="tmp">%s</div>'
+        cards += ('<div class="pscncard" data-i="%d" style="border-top:3px solid %s;%s"><div class="tmp">%s</div>'
                   '<div class="pr">%s</div><h3>%s</h3><p>%s</p>%s%s</div>') % (
-            _segcolor(s), esc(s.get("temp", "")), esc(s.get("process", "")), esc(title),
-            esc(s.get("desc", "")), sub, apline)
-    return flexbar + '<div class="pscn">%s</div>' % cards
+            i, col, ("" if i == 0 else "display:none"), esc(s.get("temp", "")),
+            esc(s.get("process", "")), esc(title), esc(s.get("desc", "")), sub, apline)
+    js = ('<script>function etaScn(b,i){var w=b.closest(".pscnwrap");'
+          'w.querySelectorAll(".flexseg").forEach(function(s,j){s.classList.toggle("on",j===i);});'
+          'w.querySelectorAll(".pscncard").forEach(function(c){c.style.display=(+c.getAttribute("data-i")===i)?"":"none";});}</script>')
+    return ('<div class="pscnwrap"><div class="flexbarwrap"><div class="flexbar">%s</div></div>'
+            '<div class="pscntab">%s</div></div>%s') % (segs, cards, js)
 
 def ul(items, cls=""):
     return '<ul class="plist %s">%s</ul>' % (cls, "".join("<li>%s</li>" % esc(x) for x in items))
