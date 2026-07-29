@@ -282,7 +282,8 @@ def build_lang(d, lang):
     body += ('<div class="pcta"><h3>%s</h3><p>%s</p><a class="pbtn" href="%s">%s</a></div>' % (
         esc(ui["cta_btn"]), esc(ui["cta_note"]), contact, esc(ui["cta_btn"])))
 
-    crumb = [(ui["home"], "/"), (ui["products"], "/products/"), (title, path)]
+    # No products hub — breadcrumb is Home > Title (matches the industry pages)
+    crumb = [(ui["home"], "/"), (title, path)]
     content = hp.page(lang, path, title + " | ETIA", esc(L(d.get("tagline", {}), lang)),
                       title, "", body, crumb, active="products", trust=False, hero=hero,
                       langs=d.get("langs", ["en", "zh"]))
