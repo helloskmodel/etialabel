@@ -7,7 +7,7 @@
     "vi",
     "th"
   ],
-  "banner": "",
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712",
   "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712",
   "title": {
     "en": "E-2712 — Dual Anti-Static PET Label",
@@ -141,5 +141,6 @@
     "th": [
       "มาตรฐาน ESD (EOS/ESD STM 11.11): ค่าความต้านทานผิว 10⁸~10¹¹โอห์ม/ตารางนิ้ว ค่าความต้านทานกาว 10⁷~10¹¹โอห์ม/ตารางนิ้ว แรงดันขณะลอก ＜100โวลต์"
     ]
-  }
+  },
+  "hero_tagline": false
 }

@@ -124,9 +124,11 @@ def build_lang(d, lang):
     banner = d.get("banner", "")
     bg = ('<img class="bg" src="%s" alt="" loading="eager" onerror="this.style.display=\'none\'">' % esc(banner)) if banner else ""
     contact = hp.Lx(lang, "/contact/")
+    # tagline stays in data for the meta description; hero_tagline:false hides it from the hero
+    tl_html = ('<p class="tl">%s</p>' % esc(L(d.get("tagline", {}), lang))) if d.get("hero_tagline", True) else ""
     hero = ('%s<section class="phero">%s<div class="in"><div class="k">%s</div>'
-            '<h1>%s</h1><p class="tl">%s</p><a class="pbtn" href="%s">%s</a></div></section>') % (
-        CSS, bg, esc(L(d.get("eyebrow", {}), lang) or ui["products"]), esc(title), esc(L(d.get("tagline", {}), lang)), contact, esc(ui["cta_btn"]))
+            '<h1>%s</h1>%s<a class="pbtn" href="%s">%s</a></div></section>') % (
+        CSS, bg, esc(L(d.get("eyebrow", {}), lang) or ui["products"]), esc(title), tl_html, contact, esc(ui["cta_btn"]))
 
     body = ""
     if L(d.get("positioning", {}), lang):
