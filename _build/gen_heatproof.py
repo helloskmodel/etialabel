@@ -1610,12 +1610,6 @@ def write_redirects():
       {"source":"/industries/medical-labeling-solutions","destination":"/industries/medical-pharmaceutical-labeling-solutions/","permanent":True},
       {"source":"/industries/steel-labeling-solutions","destination":"/industries/steel-metal-ceramic-labeling-solutions/","permanent":True},
     ]}
-    # Always revalidate HTML so content updates show immediately (no stale cached pages).
-    # Vercel only serves the HTML/sitemap here; product images live on the COS bucket.
-    cfg["headers"]=[
-      {"source":"/(.*)","headers":[
-        {"key":"Cache-Control","value":"public, max-age=0, must-revalidate"}]},
-    ]
     open(os.path.join(ROOT,"vercel.json"),"w").write(json.dumps(cfg,indent=2)+"\n")
 
 # ---------------------------------------------------------------- run
