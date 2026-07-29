@@ -521,6 +521,7 @@ PROD_AXES = [
    ("Heat Resistant","耐高温","/products/heat-resistant/"),
    ("Low Temperature","低温","/products/low-temperature/"),
    ("Flame Retardant","阻燃","/products/flame-retardant/"),
+   ("Weather Resistant","耐候","/products/weather-resistant/"),
  ]),
  ("app","By Industry","按行业",[
    ("PCB","PCB","/industries/pcb-electronics-labeling-solutions/"),
@@ -543,7 +544,8 @@ def products_dropdown(lang, linkfn):
                  "By Performance": ("Theo hiệu suất", "ตามสมรรถนะ"),
                  "Heat Resistant": ("Chịu nhiệt", "ทนความร้อน"),
                  "Low Temperature": ("Nhiệt độ thấp", "อุณหภูมิต่ำ"),
-                 "Flame Retardant": ("Chống cháy", "หน่วงไฟ")}
+                 "Flame Retardant": ("Chống cháy", "หน่วงไฟ"),
+                 "Weather Resistant": ("Chịu thời tiết", "ทนสภาพอากาศ")}
     def lab(e, z):
         if zh: return z
         if lang == "vi" and e in MENU_VITH: return MENU_VITH[e][0]
