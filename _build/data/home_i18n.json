@@ -136,34 +136,18 @@
     "prod_cta": "Talk to a Specialist",
     "products": [
       {
-        "name": "Direct Hot-Application Labels",
-        "model": "Application temperature up to 900°C",
-        "code": "HP-900",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900"
+        "name": "High-Temperature Labels",
+        "model": "PI, hot-apply & heat treatment — up to 1000°C",
+        "code": "",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
+        "slug": "high-heat-identification"
       },
       {
         "name": "Low Temperature Label",
         "model": "Cryo direct apply and long-term nitrogen storage",
         "code": "E-4812",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812"
-      },
-      {
-        "name": "Polyimide PCB Labels — APEX",
-        "model": "Heat resistant up to 300°C",
-        "code": "XF-101G",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF101G"
-      },
-      {
-        "name": "Heavy-Duty Oil-Resistant Labels",
-        "model": "High-adhesion, oil-resistant",
-        "code": "E-2813",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS"
-      },
-      {
-        "name": "Dual-Layer ESD-Safe PCB Labels",
-        "model": "ESD-safe construction",
-        "code": "E-2712",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg"
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
+        "slug": "e-4812"
       }
     ],
     "fs_eyebrow": "FREE SAMPLE",
@@ -288,34 +272,18 @@
     "prod_cta": "咨询专家",
     "products": [
       {
-        "name": "高温直贴标签",
-        "model": "应用温度可达 900℃",
-        "code": "HP-900",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900"
+        "name": "耐高温标签",
+        "model": "PI、高温直贴与热处理 — 可达 1000℃",
+        "code": "",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
+        "slug": "high-heat-identification"
       },
       {
         "name": "低温标签",
         "model": "深低温直贴 · 液氮长期存储",
         "code": "E-4812",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812"
-      },
-      {
-        "name": "聚酰亚胺 PCB 标签 · APEX 新一代",
-        "model": "耐温可达 300℃",
-        "code": "XF-101G",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF101G"
-      },
-      {
-        "name": "超粘防油污标签",
-        "model": "强力粘接 · 耐油污",
-        "code": "E-2813",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS"
-      },
-      {
-        "name": "双层抗静电 PCB 标签",
-        "model": "抗静电结构",
-        "code": "E-2712",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg"
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
+        "slug": "e-4812"
       }
     ],
     "fs_eyebrow": "免费样品",
@@ -440,34 +408,18 @@
     "prod_cta": "Trao đổi với chuyên gia",
     "products": [
       {
-        "name": "Nhãn dán trực tiếp khi nóng",
-        "model": "Nhiệt độ ứng dụng đến 900°C",
-        "code": "HP-900",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900"
+        "name": "Nhãn nhiệt độ cao",
+        "model": "PI, dán nóng & xử lý nhiệt — đến 1000°C",
+        "code": "",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
+        "slug": "high-heat-identification"
       },
       {
         "name": "Nhãn nhiệt độ thấp",
         "model": "Dán trực tiếp siêu lạnh và lưu trữ nitơ dài hạn",
         "code": "E-4812",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812"
-      },
-      {
-        "name": "Nhãn PCB polyimide — APEX",
-        "model": "Chịu nhiệt đến 300°C",
-        "code": "XF-101G",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF101G"
-      },
-      {
-        "name": "Nhãn chống dầu chịu tải nặng",
-        "model": "Độ bám cao, chống dầu",
-        "code": "E-2813",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS"
-      },
-      {
-        "name": "Nhãn PCB chống tĩnh điện hai lớp",
-        "model": "Cấu tạo an toàn ESD",
-        "code": "E-2712",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg"
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
+        "slug": "e-4812"
       }
     ],
     "fs_eyebrow": "MẪU MIỄN PHÍ",
@@ -592,34 +544,18 @@
     "prod_cta": "ปรึกษาผู้เชี่ยวชาญ",
     "products": [
       {
-        "name": "ฉลากติดขณะร้อนโดยตรง",
-        "model": "อุณหภูมิใช้งานสูงถึง 900°C",
-        "code": "HP-900",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900"
+        "name": "ฉลากทนอุณหภูมิสูง",
+        "model": "PI ติดร้อนและการอบชุบความร้อน — สูงถึง 1000°C",
+        "code": "",
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
+        "slug": "high-heat-identification"
       },
       {
         "name": "ฉลากอุณหภูมิต่ำ",
         "model": "ติดโดยตรงในสภาวะเย็นจัดและจัดเก็บในไนโตรเจนระยะยาว",
         "code": "E-4812",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812"
-      },
-      {
-        "name": "ฉลาก PCB โพลีอิไมด์ — APEX",
-        "model": "ทนความร้อนสูงถึง 300°C",
-        "code": "XF-101G",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF101G"
-      },
-      {
-        "name": "ฉลากทนน้ำมันสำหรับงานหนัก",
-        "model": "ยึดเกาะสูง ทนน้ำมัน",
-        "code": "E-2813",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS"
-      },
-      {
-        "name": "ฉลาก PCB ป้องกันไฟฟ้าสถิตสองชั้น",
-        "model": "โครงสร้างปลอดภัยต่อ ESD",
-        "code": "E-2712",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg"
+        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
+        "slug": "e-4812"
       }
     ],
     "fs_eyebrow": "ตัวอย่างฟรี",
