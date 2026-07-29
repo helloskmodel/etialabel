@@ -2,8 +2,13 @@
   "slug": "apex-pcb-process-labels",
   "source": "_docs/sources/Application Notes APEX (PCB)",
   "order": 1,
-  "langs": ["en", "zh", "vi", "th"],
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg",
   "image": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX-APP",
   "title": {
     "en": "APEX Series Polyimide Labels for PCB",
@@ -37,59 +42,187 @@
   },
   "advantages": {
     "en": [
-      {"label": "Enhanced Flux Resistance", "text": "Internal multi-condition tests prove a 72% performance improvement over the legacy XF-582, compatible with various high-activity soldering fluxes."},
-      {"label": "Improved High-Pressure Cleaning Resistance", "text": "Internal testing shows 15% better chemical resistance than traditional lines, suitable for high-pressure spraying and multi-round chemical soaking to preserve label and print integrity."},
-      {"label": "Multi-Cycle High-Temperature Compatibility", "text": "Developed for repeated reflow processes. Labels stay firmly attached after multiple peak-temperature cycles, with legible texts and barcodes maintained."},
-      {"label": "Stable Thermal Transfer Print Quality", "text": "High-contrast print output; tiny fonts and precise barcodes remain readable after full reflow and cleaning processes."},
-      {"label": "Optimized Ink Transfer", "text": "Uniform ink transfer extends printhead service life. Printed marks resist smudging and dissolution when exposed to highly corrosive cleaning fluids."}
+      {
+        "label": "Enhanced Flux Resistance",
+        "text": "Internal multi-condition tests prove a 72% performance improvement over the legacy XF-582, compatible with various high-activity soldering fluxes."
+      },
+      {
+        "label": "Improved High-Pressure Cleaning Resistance",
+        "text": "Internal testing shows 15% better chemical resistance than traditional lines, suitable for high-pressure spraying and multi-round chemical soaking to preserve label and print integrity."
+      },
+      {
+        "label": "Multi-Cycle High-Temperature Compatibility",
+        "text": "Developed for repeated reflow processes. Labels stay firmly attached after multiple peak-temperature cycles, with legible texts and barcodes maintained."
+      },
+      {
+        "label": "Stable Thermal Transfer Print Quality",
+        "text": "High-contrast print output; tiny fonts and precise barcodes remain readable after full reflow and cleaning processes."
+      },
+      {
+        "label": "Optimized Ink Transfer",
+        "text": "Uniform ink transfer extends printhead service life. Printed marks resist smudging and dissolution when exposed to highly corrosive cleaning fluids."
+      }
     ],
     "zh": [
-      {"label": "耐助焊表现优化", "text": "经内部多工况测试，相较 XF-582 旧款提升 72%，可适配市面多款高活性焊接助焊剂"},
-      {"label": "耐高压清洗表现改善", "text": "经内部测试，相较传统产品线耐化学腐蚀能力提升 15%，适配产线高压喷淋、多轮药液浸泡场景，有助于维持标签与打印标识完整度"},
-      {"label": "适配多次高温循环工况", "text": "针对多轮回流工艺开发，多次峰值高温加工后，标签贴合状态稳定，字符、条码可维持清晰识别状态"},
-      {"label": "热转印成像稳定", "text": "打印后字迹对比度良好，微小字体与精密条码经过回流、清洗整套工序后，仍可正常识别读取"},
-      {"label": "油墨转印效果优化", "text": "油墨转移均匀充分，有利于延长打印头使用寿命；接触强腐蚀清洗药液后，打印标识不易出现晕染、溶解现象"}
+      {
+        "label": "耐助焊表现优化",
+        "text": "经内部多工况测试，相较 XF-582 旧款提升 72%，可适配市面多款高活性焊接助焊剂"
+      },
+      {
+        "label": "耐高压清洗表现改善",
+        "text": "经内部测试，相较传统产品线耐化学腐蚀能力提升 15%，适配产线高压喷淋、多轮药液浸泡场景，有助于维持标签与打印标识完整度"
+      },
+      {
+        "label": "适配多次高温循环工况",
+        "text": "针对多轮回流工艺开发，多次峰值高温加工后，标签贴合状态稳定，字符、条码可维持清晰识别状态"
+      },
+      {
+        "label": "热转印成像稳定",
+        "text": "打印后字迹对比度良好，微小字体与精密条码经过回流、清洗整套工序后，仍可正常识别读取"
+      },
+      {
+        "label": "油墨转印效果优化",
+        "text": "油墨转移均匀充分，有利于延长打印头使用寿命；接触强腐蚀清洗药液后，打印标识不易出现晕染、溶解现象"
+      }
     ],
     "vi": [
-      {"label": "Tăng khả năng chịu dung dịch hàn", "text": "Kiểm tra nội bộ nhiều điều kiện cho thấy hiệu năng cải thiện 72% so với dòng XF-582 cũ, tương thích nhiều loại dung dịch hàn hoạt tính cao trên thị trường."},
-      {"label": "Cải thiện khả năng chịu rửa áp suất cao", "text": "Kiểm tra nội bộ cho thấy khả năng chống ăn mòn hóa chất cao hơn 15% so với dòng truyền thống, phù hợp phun áp suất cao và ngâm dung dịch nhiều vòng để giữ nguyên vẹn nhãn và nội dung in."},
-      {"label": "Tương thích nhiều chu kỳ nhiệt cao", "text": "Được phát triển cho quy trình nấu lại nhiều lần. Nhãn dính chắc chắn sau nhiều chu kỳ nhiệt đỉnh, chữ và mã vạch vẫn rõ ràng đọc được."},
-      {"label": "Chất lượng in chuyển nhiệt ổn định", "text": "In ra độ tương phản tốt; chữ nhỏ và mã vạch chính xác vẫn đọc được sau toàn bộ quy trình nấu lại và rửa."},
-      {"label": "Truyền mực tối ưu", "text": "Mực phân bổ đều kéo dài tuổi thọ đầu in. Dấu in khó bị lem tan khi tiếp xúc dung dịch rửa ăn mòn mạnh."}
+      {
+        "label": "Tăng khả năng chịu dung dịch hàn",
+        "text": "Kiểm tra nội bộ nhiều điều kiện cho thấy hiệu năng cải thiện 72% so với dòng XF-582 cũ, tương thích nhiều loại dung dịch hàn hoạt tính cao trên thị trường."
+      },
+      {
+        "label": "Cải thiện khả năng chịu rửa áp suất cao",
+        "text": "Kiểm tra nội bộ cho thấy khả năng chống ăn mòn hóa chất cao hơn 15% so với dòng truyền thống, phù hợp phun áp suất cao và ngâm dung dịch nhiều vòng để giữ nguyên vẹn nhãn và nội dung in."
+      },
+      {
+        "label": "Tương thích nhiều chu kỳ nhiệt cao",
+        "text": "Được phát triển cho quy trình nấu lại nhiều lần. Nhãn dính chắc chắn sau nhiều chu kỳ nhiệt đỉnh, chữ và mã vạch vẫn rõ ràng đọc được."
+      },
+      {
+        "label": "Chất lượng in chuyển nhiệt ổn định",
+        "text": "In ra độ tương phản tốt; chữ nhỏ và mã vạch chính xác vẫn đọc được sau toàn bộ quy trình nấu lại và rửa."
+      },
+      {
+        "label": "Truyền mực tối ưu",
+        "text": "Mực phân bổ đều kéo dài tuổi thọ đầu in. Dấu in khó bị lem tan khi tiếp xúc dung dịch rửa ăn mòn mạnh."
+      }
     ],
     "th": [
-      {"label": "เพิ่มความสามารถทนต่อสารบัดกรี", "text": "จากการทดสอบภายในหลายสภาพ พบว่าประสิทธิภาพดีขึ้น 72% เมื่อเทียบกับ XF-582 รุ่นเก่า เข้ากันได้กับสารบัดกรีอัตราการทำงานสูงหลายชนิดในตลาด"},
-      {"label": "ปรับปรุงความสามารถทนต่อการล้างด้วยแรงดันสูง", "text": "จากการทดสอบภายใน พบว่าความสามารถต้านการกัดกร่อนของสารเคมีสูงกว่าซีรีส์เดิม 15% เหมาะสำหรับระบบฉีดแรงดันสูง และแช่สารล้างหลายรอบ รักษาความสมบูรณ์ของฉลากและรอยพิมพ์"},
-      {"label": "เข้ากันได้กับรอบความร้อนสูงหลายรอบ", "text": "พัฒนาขึ้นสำหรับกระบวนการรีฟลาวหลายรอบ ฉลากยึดติดแน่นหนาหลังผ่านความร้อนสูงสุดหลายรอบ ตัวอักษรและบาร์โค้ดยังคงอ่านได้ชัดเจน"},
-      {"label": "คุณภาพการพิมพ์ถ่ายเทความร้อนเสถียร", "text": "รอยพิมพ์มีค่าคอนทราสต์ดี ตัวอักษรขนาดเล็กและบาร์โค้ดละเอียดยังคงอ่านได้หลังผ่านกระบวนการรีฟลาวและล้างทั้งหมด"},
-      {"label": "การถ่ายเทหมึกได้รับการปรับปรุง", "text": "หมึกกระจายตัวสม่ำเสมอ ยืดอายุหัวพิมพ์ รอยพิมพ์ยากที่จะเป็นคราบหรือละลายเมื่อสัมผัสสารล้างที่กัดกร่อนแรง"}
+      {
+        "label": "เพิ่มความสามารถทนต่อสารบัดกรี",
+        "text": "จากการทดสอบภายในหลายสภาพ พบว่าประสิทธิภาพดีขึ้น 72% เมื่อเทียบกับ XF-582 รุ่นเก่า เข้ากันได้กับสารบัดกรีอัตราการทำงานสูงหลายชนิดในตลาด"
+      },
+      {
+        "label": "ปรับปรุงความสามารถทนต่อการล้างด้วยแรงดันสูง",
+        "text": "จากการทดสอบภายใน พบว่าความสามารถต้านการกัดกร่อนของสารเคมีสูงกว่าซีรีส์เดิม 15% เหมาะสำหรับระบบฉีดแรงดันสูง และแช่สารล้างหลายรอบ รักษาความสมบูรณ์ของฉลากและรอยพิมพ์"
+      },
+      {
+        "label": "เข้ากันได้กับรอบความร้อนสูงหลายรอบ",
+        "text": "พัฒนาขึ้นสำหรับกระบวนการรีฟลาวหลายรอบ ฉลากยึดติดแน่นหนาหลังผ่านความร้อนสูงสุดหลายรอบ ตัวอักษรและบาร์โค้ดยังคงอ่านได้ชัดเจน"
+      },
+      {
+        "label": "คุณภาพการพิมพ์ถ่ายเทความร้อนเสถียร",
+        "text": "รอยพิมพ์มีค่าคอนทราสต์ดี ตัวอักษรขนาดเล็กและบาร์โค้ดละเอียดยังคงอ่านได้หลังผ่านกระบวนการรีฟลาวและล้างทั้งหมด"
+      },
+      {
+        "label": "การถ่ายเทหมึกได้รับการปรับปรุง",
+        "text": "หมึกกระจายตัวสม่ำเสมอ ยืดอายุหัวพิมพ์ รอยพิมพ์ยากที่จะเป็นคราบหรือละลายเมื่อสัมผัสสารล้างที่กัดกร่อนแรง"
+      }
     ]
   },
   "extra": {
-    "en": [{"heading": "Product Specifications & Compliance", "items": [
-      {"label": "ESD-Safe Series", "text": "Compliant with ANSI/ESD S20.20. A static-dissipative non-conductive top coat paired with a low-charge liner reduces the risk of ESD damage to micro precision chips from human contact or charged components."},
-      {"label": "Multi-Size Options", "text": "Base thickness: 1mil / 2mil. Standard grades: matte, semi-gloss, gloss. ESD grades: matte, semi-gloss."},
-      {"label": "Compliance Certifications", "text": "All products halogen-free, REACH & RoHS compliant. Standard grades hold UL certification; UL documents for ESD variants are pending submission."},
-      {"label": "Test Conditions", "text": "Passed the Kyzen 4-cycle cleaning protocol (15% solution, 66°C, 50–60 psi, 75 min total across 4 cycles), fully compatible with Kyzen's new-generation aqueous cleaners. Matching tests completed with recommended thermal-transfer ribbons from DNP, Dynic and Ricoh."}
-    ]}],
-    "zh": [{"heading": "配套产品规格与合规说明", "items": [
-      {"label": "ESD 防静电系列", "text": "符合 ANSI/ESD S20.20 行业标准，表层为静电耗散不导电材质，搭配低静电底纸，降低人体、器件静电对微型精密芯片造成损伤的概率"},
-      {"label": "多规格选型范围", "text": "基材分为 1mil、2mil 两种厚度；常规款提供哑面、半亮、亮面；防静电款包含哑面、半亮面"},
-      {"label": "合规资质区分", "text": "全系无卤素、满足 REACH、RoHS；常规成品已取得 UL 认证，防静电型号 UL 认证资料正在提交审核"},
-      {"label": "工况测试说明", "text": "完成 Kyzen 四轮清洗标准流程测试（15% 浓度药液、66℃、50-60psi、总时长 75 分钟分 4 轮），可兼容该品牌全系新一代水基清洗药剂；配套 DNP、Dynic、Ricoh 多款推荐热转印碳带完成匹配测试"}
-    ]}],
-    "vi": [{"heading": "Thông số sản phẩm & Tuân thủ quy định", "items": [
-      {"label": "Dòng chống tĩnh điện ESD", "text": "Tuân thủ tiêu chuẩn ANSI/ESD S20.20. Lớp bề mặt tiêu tán tĩnh không dẫn điện kết hợp lớp lót ít tích tĩnh, giảm rủi ro hư hỏng chip siêu nhỏ do tĩnh điện từ người hoặc linh kiện tích điện."},
-      {"label": "Nhiều lựa chọn kích thước", "text": "Độ dày nền: 1mil / 2mil. Loại tiêu chuẩn: mờ, nửa bóng, bóng. Loại chống tĩnh điện: mờ, nửa bóng."},
-      {"label": "Chứng nhận tuân thủ", "text": "Tất cả sản phẩm không halogen, tuân thủ REACH & RoHS. Loại tiêu chuẩn có chứng nhận UL; hồ sơ UL cho loại chống tĩnh điện đang chờ nộp xét duyệt."},
-      {"label": "Điều kiện thử nghiệm", "text": "Vượt qua quy trình rửa 4 vòng Kyzen (nồng độ 15%, 66°C, 50–60 psi, tổng 75 phút chia 4 vòng), hoàn toàn tương thích dung dịch rửa nước thế hệ mới của Kyzen. Đã hoàn thành thử nghiệm phối hợp với dải băng chuyển nhiệt đề xuất từ DNP, Dynic và Ricoh."}
-    ]}],
-    "th": [{"heading": "ข้อมูลสเปคสินค้าและการปฏิบัติตามกฎหมาย", "items": [
-      {"label": "ซีรีส์ป้องกันไฟฟ้าสถิต ESD", "text": "ปฏิบัติตามมาตรฐาน ANSI/ESD S20.20 ผิวเคลือบระบายไฟฟ้าสถิต ไม่นำไฟฟ้า ควบคู่กับแผ่นรองที่สะสมไฟฟ้าน้อย ลดความเสี่ยงชิปขนาดเล็กเสียหายจากไฟฟ้าสถิตที่เกิดจากมนุษย์หรือชิ้นงานที่มีประจุไฟฟ้า"},
-      {"label": "ตัวเลือกความหนาหลายระดับ", "text": "ความหนาแผ่นฐาน: 1mil / 2mil รุ่นมาตรฐาน: ผิวด้าน กึ่งเงา เงา รุ่นป้องกันไฟฟ้าสถิต: ผิวด้าน กึ่งเงา"},
-      {"label": "ใบรับรองการปฏิบัติตามกฎหมาย", "text": "ทุกสินค้าปราศจากฮาโลเจน ปฏิบัติตาม REACH & RoHS รุ่นมาตรฐานได้รับใบรับรอง UL ส่วนเอกสาร UL สำหรับรุ่นป้องกันไฟฟ้าสถิตกำลังส่งขอพิจารณา"},
-      {"label": "เงื่อนไขการทดสอบ", "text": "ผ่านขั้นตอนการล้าง 4 รอบตามมาตรฐาน Kyzen (สารล้าง 15% อุณหภูมิ 66°C ความดัน 50–60 psi เวลารวม 75 นาที แบ่งเป็น 4 รอบ) เข้ากันได้กับสารล้างน้ำรุ่นใหม่ทั้งไลน์ของ Kyzen ได้ทำการทดสอบคู่กับเทปถ่ายเทความร้อนที่แนะนำจาก DNP Dynic และ Ricoh"}
-    ]}]
+    "en": [
+      {
+        "heading": "Product Specifications & Compliance",
+        "items": [
+          {
+            "label": "ESD-Safe Series",
+            "text": "Compliant with ANSI/ESD S20.20. A static-dissipative non-conductive top coat paired with a low-charge liner reduces the risk of ESD damage to micro precision chips from human contact or charged components."
+          },
+          {
+            "label": "Multi-Size Options",
+            "text": "Base thickness: 1mil / 2mil. Standard grades: matte, semi-gloss, gloss. ESD grades: matte, semi-gloss."
+          },
+          {
+            "label": "Compliance Certifications",
+            "text": "All products halogen-free, REACH & RoHS compliant. Standard grades hold UL certification; UL documents for ESD variants are pending submission."
+          },
+          {
+            "label": "Test Conditions",
+            "text": "Passed the Kyzen 4-cycle cleaning protocol (15% solution, 66°C, 50–60 psi, 75 min total across 4 cycles), fully compatible with Kyzen's new-generation aqueous cleaners. Matching tests completed with recommended thermal-transfer ribbons from DNP, Dynic and Ricoh."
+          }
+        ]
+      }
+    ],
+    "zh": [
+      {
+        "heading": "配套产品规格与合规说明",
+        "items": [
+          {
+            "label": "ESD 防静电系列",
+            "text": "符合 ANSI/ESD S20.20 行业标准，表层为静电耗散不导电材质，搭配低静电底纸，降低人体、器件静电对微型精密芯片造成损伤的概率"
+          },
+          {
+            "label": "多规格选型范围",
+            "text": "基材分为 1mil、2mil 两种厚度；常规款提供哑面、半亮、亮面；防静电款包含哑面、半亮面"
+          },
+          {
+            "label": "合规资质区分",
+            "text": "全系无卤素、满足 REACH、RoHS；常规成品已取得 UL 认证，防静电型号 UL 认证资料正在提交审核"
+          },
+          {
+            "label": "工况测试说明",
+            "text": "完成 Kyzen 四轮清洗标准流程测试（15% 浓度药液、66℃、50-60psi、总时长 75 分钟分 4 轮），可兼容该品牌全系新一代水基清洗药剂；配套 DNP、Dynic、Ricoh 多款推荐热转印碳带完成匹配测试"
+          }
+        ]
+      }
+    ],
+    "vi": [
+      {
+        "heading": "Thông số sản phẩm & Tuân thủ quy định",
+        "items": [
+          {
+            "label": "Dòng chống tĩnh điện ESD",
+            "text": "Tuân thủ tiêu chuẩn ANSI/ESD S20.20. Lớp bề mặt tiêu tán tĩnh không dẫn điện kết hợp lớp lót ít tích tĩnh, giảm rủi ro hư hỏng chip siêu nhỏ do tĩnh điện từ người hoặc linh kiện tích điện."
+          },
+          {
+            "label": "Nhiều lựa chọn kích thước",
+            "text": "Độ dày nền: 1mil / 2mil. Loại tiêu chuẩn: mờ, nửa bóng, bóng. Loại chống tĩnh điện: mờ, nửa bóng."
+          },
+          {
+            "label": "Chứng nhận tuân thủ",
+            "text": "Tất cả sản phẩm không halogen, tuân thủ REACH & RoHS. Loại tiêu chuẩn có chứng nhận UL; hồ sơ UL cho loại chống tĩnh điện đang chờ nộp xét duyệt."
+          },
+          {
+            "label": "Điều kiện thử nghiệm",
+            "text": "Vượt qua quy trình rửa 4 vòng Kyzen (nồng độ 15%, 66°C, 50–60 psi, tổng 75 phút chia 4 vòng), hoàn toàn tương thích dung dịch rửa nước thế hệ mới của Kyzen. Đã hoàn thành thử nghiệm phối hợp với dải băng chuyển nhiệt đề xuất từ DNP, Dynic và Ricoh."
+          }
+        ]
+      }
+    ],
+    "th": [
+      {
+        "heading": "ข้อมูลสเปคสินค้าและการปฏิบัติตามกฎหมาย",
+        "items": [
+          {
+            "label": "ซีรีส์ป้องกันไฟฟ้าสถิต ESD",
+            "text": "ปฏิบัติตามมาตรฐาน ANSI/ESD S20.20 ผิวเคลือบระบายไฟฟ้าสถิต ไม่นำไฟฟ้า ควบคู่กับแผ่นรองที่สะสมไฟฟ้าน้อย ลดความเสี่ยงชิปขนาดเล็กเสียหายจากไฟฟ้าสถิตที่เกิดจากมนุษย์หรือชิ้นงานที่มีประจุไฟฟ้า"
+          },
+          {
+            "label": "ตัวเลือกความหนาหลายระดับ",
+            "text": "ความหนาแผ่นฐาน: 1mil / 2mil รุ่นมาตรฐาน: ผิวด้าน กึ่งเงา เงา รุ่นป้องกันไฟฟ้าสถิต: ผิวด้าน กึ่งเงา"
+          },
+          {
+            "label": "ใบรับรองการปฏิบัติตามกฎหมาย",
+            "text": "ทุกสินค้าปราศจากฮาโลเจน ปฏิบัติตาม REACH & RoHS รุ่นมาตรฐานได้รับใบรับรอง UL ส่วนเอกสาร UL สำหรับรุ่นป้องกันไฟฟ้าสถิตกำลังส่งขอพิจารณา"
+          },
+          {
+            "label": "เงื่อนไขการทดสอบ",
+            "text": "ผ่านขั้นตอนการล้าง 4 รอบตามมาตรฐาน Kyzen (สารล้าง 15% อุณหภูมิ 66°C ความดัน 50–60 psi เวลารวม 75 นาที แบ่งเป็น 4 รอบ) เข้ากันได้กับสารล้างน้ำรุ่นใหม่ทั้งไลน์ของ Kyzen ได้ทำการทดสอบคู่กับเทปถ่ายเทความร้อนที่แนะนำจาก DNP Dynic และ Ricoh"
+          }
+        ]
+      }
+    ]
   },
   "value": {
     "zh": "APEX 可匹配高端 PCB 多轮回流、四轮化学清洗、静电防护、环保合规四大工艺升级需求，弥补传统标识材料耐热、耐化学性能不均衡的局限，有助于减少 SMT 焊接、清洗工序的线路板不良比例。单一物料可适配算力、车载、航天多类高端产线，简化工厂物料库存管理；本系列标签仅用于 SMT 中段工序追溯，AOI 检测完成后撕除，不跟随线路板流入整机后段制程",
