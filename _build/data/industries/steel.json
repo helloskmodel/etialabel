@@ -142,18 +142,6 @@
           "img": "",
           "landing": true,
           "slug": "hp-x2080"
-        },
-        {
-          "name": "HP-CBR13",
-          "line": {
-            "en": "Up to 1200°C · low color change",
-            "zh": "耐 1200°C · 低黄变",
-            "vi": "Đến 1200°C · ít đổi màu",
-            "th": "ถึง 1200°C · เปลี่ยนสีน้อย"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "hp-cbr13"
         }
       ]
     },
