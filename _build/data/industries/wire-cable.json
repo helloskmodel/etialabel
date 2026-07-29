@@ -7,7 +7,7 @@
     "vi",
     "th"
   ],
-  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-BANNER",
+  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER",
   "seo_title": {
     "en": "Wire and Cable Labeling Solution | ETIA",
     "zh": "线缆与线束标识解决方案 | ETIA",
@@ -62,7 +62,12 @@
   },
   "tiers": [
     {
-      "tab": "High-Temp FR",
+      "tab": {
+        "en": "Heat Resistant",
+        "zh": "耐高温",
+        "vi": "Chịu nhiệt",
+        "th": "ทนความร้อน"
+      },
       "name": {
         "en": "High-Temp & Flame-Retardant · UL-Listed for Export",
         "zh": "耐高温高阻燃·UL 出口款",
@@ -75,7 +80,7 @@
         "vi": "Nhãn PI nhập khẩu chịu 300°C ngắn hạn / 150°C dài hạn, chống cháy không halogen UL94 VTM-0 với chứng nhận UL đầy đủ cho xuất khẩu.",
         "th": "ฉลาก PI นำเข้า ทน 300°C ระยะสั้น / 150°C ระยะยาว หน่วงไฟไร้ฮาโลเจน UL94 VTM-0 พร้อมการรับรอง UL ครบชุดสำหรับส่งออก"
       },
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-XF603",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-XF603",
       "products": [
         {
           "name": "XF-603",
@@ -92,7 +97,12 @@
       ]
     },
     {
-      "tab": "Industrial FR",
+      "tab": {
+        "en": "FR",
+        "zh": "阻燃",
+        "vi": "Chống cháy",
+        "th": "หน่วงไฟ"
+      },
       "name": {
         "en": "Industrial Flame-Retardant · Cost-Effective",
         "zh": "高阻燃工业级·高性价比",
@@ -105,7 +115,7 @@
         "vi": "PET chống cháy hai lớp ổn định ở 150°C, đã kiểm tra chống cháy SGS — lựa chọn chủ lực hiệu quả chi phí cho công nghiệp.",
         "th": "PET หน่วงไฟสองชั้น เสถียรที่ 150°C ผ่านการทดสอบหน่วงไฟ SGS — ตัวเลือกหลักที่คุ้มค่าสำหรับงานอุตสาหกรรม"
       },
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-2931",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-2931",
       "products": [
         {
           "name": "E-2913",
@@ -122,7 +132,12 @@
       ]
     },
     {
-      "tab": "Protective",
+      "tab": {
+        "en": "Protective",
+        "zh": "防护",
+        "vi": "Bảo vệ",
+        "th": "ป้องกัน"
+      },
       "name": {
         "en": "Industrial Protective · Flexible Long-Life",
         "zh": "工业防护级·柔韧长效",
@@ -135,7 +150,7 @@
         "vi": "Nhãn dẻo dai không chống cháy chịu đến 120°C — dạng quấn nylon và tự cán màng trong suốt cho đánh dấu bền lâu.",
         "th": "ฉลากยืดหยุ่นชนิดไม่หน่วงไฟ ทนถึง 120°C — แบบพันไนลอนและแบบเคลือบใสในตัว สำหรับการทำเครื่องหมายที่ทนทาน"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-WRAP%20AROUND",
       "products": [
         {
           "name": "E3635",
@@ -164,7 +179,12 @@
       ]
     },
     {
-      "tab": "Economy",
+      "tab": {
+        "en": "Economy",
+        "zh": "经济型",
+        "vi": "Kinh tế",
+        "th": "ประหยัด"
+      },
       "name": {
         "en": "Mass-Production Economy",
         "zh": "经济型量产级",
@@ -177,7 +197,7 @@
         "vi": "Nhãn giấy tổng hợp mềm chịu đến 90°C cho đánh dấu đi dây thông dụng chi phí thấp, in tốc độ cao.",
         "th": "ฉลากกระดาษสังเคราะห์เนื้อนุ่ม ทนถึง 90°C สำหรับงานเดินสายทั่วไปต้นทุนต่ำ ผลิตความเร็วสูง"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-FOLD%20OVER",
       "products": [
         {
           "name": "E4532",
