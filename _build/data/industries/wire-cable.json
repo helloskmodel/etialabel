@@ -63,10 +63,10 @@
   "tiers": [
     {
       "tab": {
-        "en": "Heat Resistant",
-        "zh": "耐高温",
-        "vi": "Chịu nhiệt",
-        "th": "ทนความร้อน"
+        "en": "High-Temp FR",
+        "zh": "高温阻燃",
+        "vi": "FR chịu nhiệt cao",
+        "th": "หน่วงไฟทนร้อนสูง"
       },
       "name": {
         "en": "High-Temp & Flame-Retardant · UL-Listed for Export",
@@ -98,10 +98,10 @@
     },
     {
       "tab": {
-        "en": "FR",
-        "zh": "阻燃",
-        "vi": "Chống cháy",
-        "th": "หน่วงไฟ"
+        "en": "General FR",
+        "zh": "通用阻燃",
+        "vi": "FR phổ thông",
+        "th": "หน่วงไฟทั่วไป"
       },
       "name": {
         "en": "Industrial Flame-Retardant · Cost-Effective",
@@ -133,10 +133,10 @@
     },
     {
       "tab": {
-        "en": "Protective",
-        "zh": "防护",
-        "vi": "Bảo vệ",
-        "th": "ป้องกัน"
+        "en": "Wrap-Around",
+        "zh": "缠绕式",
+        "vi": "Quấn quanh",
+        "th": "พันรอบ"
       },
       "name": {
         "en": "Industrial Protective · Flexible Long-Life",
@@ -180,10 +180,10 @@
     },
     {
       "tab": {
-        "en": "Economy",
-        "zh": "经济型",
-        "vi": "Kinh tế",
-        "th": "ประหยัด"
+        "en": "Fold-Over",
+        "zh": "对折式",
+        "vi": "Gập đôi",
+        "th": "พับทบ"
       },
       "name": {
         "en": "Mass-Production Economy",
