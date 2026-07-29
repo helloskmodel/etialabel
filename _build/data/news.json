@@ -1,6 +1,88 @@
 {
   "articles": [
     {
+      "slug": "ul94-vtm0-flame-retardant-labels",
+      "banner": "",
+      "tags": {
+        "zh": [
+          "UL94",
+          "阻燃",
+          "标签材料"
+        ],
+        "en": [
+          "UL94",
+          "Flame Retardant",
+          "Label Materials"
+        ]
+      },
+      "title": {
+        "zh": "什么是 UL94 VTM-0？阻燃标签材料选型指南",
+        "en": "What Is UL94 VTM-0? A Guide to Flame-Retardant Label Materials"
+      },
+      "subtitle": {
+        "zh": "读懂 UL94 VTM-0 等级，为电池、线束、PCB 等关键部位选对阻燃标签。",
+        "en": "Understanding the UL94 VTM-0 rating — and how to choose flame-retardant labels for batteries, harnesses, PCBs and more."
+      },
+      "lead": {
+        "zh": "随着新能源汽车、储能系统、工业电子及数据中心等行业不断发展，产品对材料安全性的要求越来越高。除了电池、塑胶件和绝缘材料，标签材料也逐渐成为产品安全设计的重要组成部分。",
+        "en": "As electric vehicles, energy storage systems, industrial electronics, and data centers continue to evolve, product safety requirements are becoming more demanding. In addition to batteries, plastics, and insulation materials, label materials are increasingly recognized as an important part of product safety design."
+      },
+      "sections": {
+        "zh": [
+          {
+            "h": "UL94 VTM-0 是什么？",
+            "ps": [
+              "UL94 是国际通用的塑料阻燃性能测试标准。对于标签、薄膜等柔性材料，采用 VTM（Vertical Thin Material）测试，其中 VTM-0 为最高等级，其次为 VTM-1 和 VTM-2。获得 UL94 VTM-0 认证的材料，需要在垂直燃烧测试中快速自熄、无引燃性滴落，并有效抑制火焰蔓延。"
+            ]
+          },
+          {
+            "h": "为什么标签也需要阻燃？",
+            "ps": [
+              "虽然标签只是一个小部件，却经常应用于电池包、线束、PCB、连接器及工业设备等关键位置。如果标签或胶粘剂容易燃烧，可能成为火焰传播路径，并影响产品识别与追溯。"
+            ]
+          },
+          {
+            "h": "耐高温 ≠ 阻燃",
+            "ps": [
+              "需要注意的是，耐高温并不等于阻燃。耐高温材料能够长期承受高温环境，而阻燃材料则是在接触火焰时能够快速自熄、降低火焰蔓延风险。对于新能源汽车、电力电子和储能设备等高安全应用，两种性能通常同样重要。"
+            ]
+          },
+          {
+            "h": "如何选择阻燃标签材料",
+            "ps": [
+              "选择阻燃标签材料时，除了关注 UL94 VTM-0 等级，还应综合评估耐温性能、耐化学性、打印方式、胶粘剂以及实际应用环境。只有兼顾安全、耐久和加工适应性，才能确保标签在整个产品生命周期内保持可靠识别。"
+            ]
+          }
+        ],
+        "en": [
+          {
+            "h": "What is UL94 VTM-0?",
+            "ps": [
+              "UL94 is the internationally recognized flammability standard for plastic materials. For thin and flexible materials such as labels and films, the VTM (Vertical Thin Material) classification is used, with VTM-0 representing the highest flame-retardant rating, followed by VTM-1 and VTM-2. To achieve a VTM-0 rating, a material must self-extinguish quickly, produce no flaming drips, and limit flame propagation during standardized vertical burn testing."
+            ]
+          },
+          {
+            "h": "Why do labels need to be flame retardant?",
+            "ps": [
+              "Although labels are small components, they are commonly applied to battery packs, wire harnesses, PCBs, connectors, and other critical assemblies. If the label construction is combustible, it can contribute to flame spread and compromise long-term product identification and traceability."
+            ]
+          },
+          {
+            "h": "Heat resistance is not flame retardancy",
+            "ps": [
+              "It is also important to understand that heat resistance is not the same as flame retardancy. Heat-resistant materials are designed to withstand elevated temperatures during normal operation, while flame-retardant materials are engineered to self-extinguish and reduce flame propagation when exposed to fire. Many high-safety applications require both characteristics."
+            ]
+          },
+          {
+            "h": "Selecting a flame-retardant label material",
+            "ps": [
+              "When selecting a flame-retardant label material, engineers should consider more than just the UL94 VTM-0 rating. Temperature resistance, chemical durability, printability, adhesive performance, and the actual operating environment should all be evaluated to ensure reliable identification throughout the product lifecycle."
+            ]
+          }
+        ]
+      }
+    },
+    {
       "slug": "glp-1-cold-chain-labeling",
       "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/GLP-1%20COLD%20CHAIN",
       "tags": {
