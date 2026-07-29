@@ -108,9 +108,9 @@ CSS = """
 .pscn-sub{font-size:12.5px;line-height:1.55;color:#41506e;margin-top:4px}
 .pscn-lb{display:block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#8593ad;margin-bottom:1px}
 .pscncard .pscn-sub:first-of-type{margin-top:8px;padding-top:8px;border-top:1px solid #eef2f9}
-.flexbarwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:2px 0 18px;padding-bottom:2px}
+.flexbarwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:2px 0 18px;padding-bottom:4px;scroll-snap-type:x proximity}
 .flexbar{display:flex;gap:3px;min-width:520px}
-.flexseg{flex:1;padding:10px 8px;color:#fff;border:0;border-radius:7px;text-align:center;min-width:84px;cursor:pointer;opacity:.5;transition:opacity .15s,box-shadow .15s;font:inherit}
+.flexseg{flex:1;padding:11px 8px;color:#fff;border:0;border-radius:7px;text-align:center;min-width:88px;cursor:pointer;opacity:.5;transition:opacity .15s,box-shadow .15s;font:inherit;scroll-snap-align:center}
 .flexseg.on{opacity:1;box-shadow:0 4px 12px rgba(20,60,150,.2)}
 .flexseg .fb-t{display:block;font-size:12.5px;font-weight:800;white-space:nowrap}
 .flexseg .fb-n{display:block;font-size:10.5px;line-height:1.25;margin-top:3px}
@@ -187,7 +187,8 @@ def scenarios_html(items, ui):
             esc(s.get("process", "")), esc(title), esc(s.get("desc", "")), sub, apline)
     js = ('<script>function etaScn(b,i){var w=b.closest(".pscnwrap");'
           'w.querySelectorAll(".flexseg").forEach(function(s,j){s.classList.toggle("on",j===i);});'
-          'w.querySelectorAll(".pscncard").forEach(function(c){c.style.display=(+c.getAttribute("data-i")===i)?"":"none";});}</script>')
+          'w.querySelectorAll(".pscncard").forEach(function(c){c.style.display=(+c.getAttribute("data-i")===i)?"":"none";});'
+          'if(b.scrollIntoView){b.scrollIntoView({behavior:"smooth",inline:"center",block:"nearest"});}}</script>')
     return ('<div class="pscnwrap"><div class="flexbarwrap"><div class="flexbar">%s</div></div>'
             '<div class="pscntab">%s</div></div>%s') % (segs, cards, js)
 
