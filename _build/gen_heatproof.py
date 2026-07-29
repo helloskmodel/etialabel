@@ -1841,53 +1841,33 @@ def build_service(lang):
     if lang=="en": track("/service/","core")
 
 def build_applications(lang):
-    """Applications = Application-Notes hub. Small industry filter buttons on top,
-    notes (picture + topic cards) below, client-side filtered by industry."""
+    """Applications = Application-Notes hub. A simple picture + topic card grid,
+    newest first. (Kept intentionally plain — no industry filter.)"""
     zh=(lang=="zh")
     def _nl(node):
         if not isinstance(node,dict): return node or ""
         return node.get(lang) or node.get("en") or node.get("zh") or ""
-    # industry taxonomy (order) and per-note industry key
-    IND_LABELS=[("automotive","Automotive","汽车"),("pcb","PCB","PCB"),
-                ("medical","Medical","医疗"),("steel","Steel & Ceramics","钢铁与陶瓷"),
-                ("wire-cable","Wire & Cable","线缆"),("outdoor-energy","Outdoor & Energy","户外与能源")]
-    NOTE_IND={
-      "vin-code-identification-tesla":"automotive",
-      "apex-pcb-process-labels":"pcb",
-      "e-4812-cryogenic-biosample-labels":"medical",
-      "hot-billet-direct-application":"steel",
-      "ceramic-sanitaryware-tracing":"steel",
-      "steel-wire-pickling-annealing":"steel",
-      "xf603-xf611-battery-flame-retardant":"outdoor-energy",
-    }
     notes=[]
     adir=os.path.join(BUILD_DIR,"data","appnotes")
     for fn in sorted(os.listdir(adir)):
-        if fn.endswith(".json"): notes.append(json.load(open(os.path.join(adir,fn),encoding="utf-8")))
+        if fn.endswith(".json"):
+            n=json.load(open(os.path.join(adir,fn),encoding="utf-8"))
+            if lang in n.get("langs",["en","zh","vi","th"]): notes.append(n)
     notes.sort(key=lambda n:n.get("order",99))
-    present=set(NOTE_IND.get(n["slug"],"") for n in notes)
-    filters=[("all","All","全部")]+[(k,en,z) for k,en,z in IND_LABELS if k in present]
-    fbtns="".join('<button class="indfbtn%s" onclick="etaNoteFilter(this,\'%s\')">%s</button>'%(
-        (" on" if k=="all" else ""), k, esc(z if zh else en)) for k,en,z in filters)
     def _notecard(n):
-        slug=n["slug"]; ind=NOTE_IND.get(slug,"")
         img=n.get("image") or n.get("banner") or ""
         im=('<img src="%s" alt="" loading="lazy" onerror="this.remove()">'%esc(img)) if img else ''
-        return ('<a class="acard appcard" data-ind="%s" href="%s"><div class="acard-img">%s</div>'
+        return ('<a class="acard appcard" href="%s"><div class="acard-img">%s</div>'
                 '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p></div></a>')%(
-            ind, Lx(lang,"/application-notes/%s/"%slug), im,
+            Lx(lang,"/application-notes/%s/"%n["slug"]), im,
             esc(_nl(n.get("title",{}))), esc(_nl(n.get("subtitle",{}))))
     note_cards="".join(_notecard(n) for n in notes)
-    js=('<script>function etaNoteFilter(b,k){var w=b.closest(".notesblk");'
-        'w.querySelectorAll(".indfbtn").forEach(function(x){x.classList.toggle("on",x===b);});'
-        'w.querySelectorAll(".appcard[data-ind]").forEach(function(c){'
-        'c.style.display=(k==="all"||c.getAttribute("data-ind")===k)?"":"none";});}</script>')
-    body=('<section class="blk notesblk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
-          '<div class="indfilter">%s</div><div class="grid grid2">%s</div></div></section>'
-          '<div class="wrap">%s</div>%s')%(
+    body=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
+          '<div class="grid grid2">%s</div></div></section>'
+          '<div class="wrap">%s</div>')%(
         ("应用笔记" if zh else "APPLICATION NOTES"),
-        ("按行业浏览应用笔记" if zh else "Application Notes by Industry"),
-        fbtns, note_cards, cta2(lang,"applications"), js)
+        ("应用笔记" if zh else "Application Notes"),
+        note_cards, cta2(lang,"applications"))
     # hero without body paragraph, single CTA "Talk to Engineering"
     s=HOME2.get(lang,HOME2["en"])["sections"][1]
     hero=page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
