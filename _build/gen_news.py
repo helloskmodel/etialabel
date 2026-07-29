@@ -109,8 +109,13 @@ def build_hub(lang):
             esc(L(a["title"], lang)), esc(L(a.get("subtitle", {}), lang)), esc(ui["read"]))
     body = CSS + '<div class="ncards">%s</div>' % cards
     crumb = [(ui["home"], "/"), (ui["hub_title"], HUB)]
-    # brand Insight hero (Knowledge Drives Better Decisions)
-    hero = hp.section_hero(lang, 2) if lang in ("en", "zh") else None
+    # brand Insight hero (Knowledge Drives Better Decisions) — without the body paragraph
+    if lang in ("en", "zh"):
+        s = hp.HOME2.get(lang, hp.HOME2["en"])["sections"][2]
+        hero = hp.page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
+                            s["b1"], s["b1u"], s["b2"], s["b2u"], hp.SECTION_BG.get(2, ""))
+    else:
+        hero = None
     content = hp.page(lang, HUB, ui["hub_title"] + " | ETIA", ui["hub_lede"],
                       ui["hub_title"], "", body, crumb, active="insights", trust=False, hero=hero)
     hp.write(lang, HUB, content)
