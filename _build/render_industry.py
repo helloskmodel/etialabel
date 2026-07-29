@@ -120,7 +120,7 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
 JS_TMPL = """
 <script>
 (function(){
-var CATS=%(cats)s, GO=%(go)s, CS=%(consult)s, SUBNAV=%(subnav)s;
+var CATS=%(cats)s, GO=%(go)s, CS=%(consult)s, SUBNAV=%(subnav)s, HIDE_INTRO=%(hide_intro)s;
 function card(p,hideName){
   var im=p.img?('<span class="ic"><img class="cim" src="'+p.img+'" alt="" loading="lazy" onerror="this.remove()"></span>'):('<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7" cy="7" r="1.1"/></svg></span>');
   var nm=hideName?'':'<p class="mn">'+p.n+'</p>';
@@ -129,6 +129,7 @@ function card(p,hideName){
 }
 // top row: [image | category-description card]; falls back to plain intro when no image
 function topRow(c){
+  if(HIDE_INTRO) return '';
   if(!c.img) return c.intro?('<p class="wccatintro">'+c.intro+'</p>'):'';
   var intro=c.intro?('<div class="wccatcard"><p class="wccatintro">'+c.intro+'</p></div>'):'<div class="wccatcard"></div>';
   return '<div class="wc2col"><img class="wccatimg" src="'+c.img+'" alt="" loading="lazy" onerror="this.remove()">'+intro+'</div>';
@@ -216,7 +217,8 @@ def build_lang(data, lang):
     body += JS_TMPL % {"cats": json.dumps(cats, ensure_ascii=False),
                        "go": json.dumps(ui["go"], ensure_ascii=False),
                        "consult": json.dumps(ui["consult"], ensure_ascii=False),
-                       "subnav": "true" if data.get("subnav") else "false"}
+                       "subnav": "true" if data.get("subnav") else "false",
+                       "hide_intro": "true" if data.get("hide_intro") else "false"}
 
     crumb = [(ui["home"], "/"), (title, path)]
     content = hp.page(lang, path, L(data["seo_title"], lang), L(data["seo_desc"], lang),
