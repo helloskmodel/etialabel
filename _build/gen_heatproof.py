@@ -1894,10 +1894,13 @@ def build_applications(lang):
     def _nl(node):
         if not isinstance(node,dict): return node or ""
         return node.get(lang) or node.get("en") or node.get("zh") or ""
+    # Feature only these client-provided notes as examples (more added over time)
+    FEATURED_NOTES=["vin-code-identification-tesla","hot-billet-direct-application"]
     notes=[]
     adir=os.path.join(BUILD_DIR,"data","appnotes")
-    for fn in sorted(os.listdir(adir)):
-        if fn.endswith(".json"): notes.append(json.load(open(os.path.join(adir,fn),encoding="utf-8")))
+    for slug in FEATURED_NOTES:
+        fp=os.path.join(adir,slug+".json")
+        if os.path.exists(fp): notes.append(json.load(open(fp,encoding="utf-8")))
     notes.sort(key=lambda n:n.get("order",99))
     note_cards="".join(_imgcard(Lx(lang,"/application-notes/%s/"%n["slug"]),
         (n.get("image") or n.get("banner") or ""), _nl(n.get("title",{})), _nl(n.get("subtitle",{})))
