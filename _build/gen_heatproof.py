@@ -1433,17 +1433,22 @@ def build_home(lang):
     app_grid=('<div class="indcar-wrap"><button class="acar-nav prev" onclick="etaIndSlide(-1)" aria-label="Previous">&lsaquo;</button>'
               '<div class="indcar" id="indcar">%s</div>'
               '<button class="acar-nav next" onclick="etaIndSlide(1)" aria-label="Next">&rsaquo;</button></div>')%cards
-    # Most Popular Products — same card pattern (image top), application name as title, model small
+    # Most Popular Products — same card pattern (image top), application name as title, model small.
+    # Cards link to the product landing page when one exists (per-index slug), else to contact.
     PROD_ICON=[1,2,0,3,2,4]
+    POP_PROD_SLUGS=["hp-901","e-4812","apex","","e-2712"]  # "" -> no landing yet (falls back to contact)
     pcards=""
     for k,pr in enumerate(T.get("products",[])):
         gi=PROD_ICON[k%len(PROD_ICON)]
+        slug=pr.get("slug") or (POP_PROD_SLUGS[k] if k<len(POP_PROD_SLUGS) else "")
+        href=home_hlink(lang,"/products/item/%s/"%slug) if slug else home_hlink(lang,"/contact/")
         pimg=('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">'%(esc(pr["img"]),esc(pr["name"]))) if pr.get("img") else ""
         pcards+=('<a class="acard pcard" href="%s"><div class="acard-img g%d">%s<span class="aicon">%s</span></div>'
                  '<div class="acard-body"><h3>%s</h3><div class="pmodel">%s</div><div class="pcode">%s</div>'
                  '<div class="acard-go">%s →</div></div></a>')%(
-            home_hlink(lang,"/contact/"), gi, pimg, INDUSTRY_ICONS[gi%len(INDUSTRY_ICONS)],
-            esc(pr["name"]), esc(pr["model"]), esc(pr.get("code","")), esc(T.get("prod_cta","Talk to a Specialist")))
+            href, gi, pimg, INDUSTRY_ICONS[gi%len(INDUSTRY_ICONS)],
+            esc(pr["name"]), esc(pr["model"]), esc(pr.get("code","")),
+            esc(T.get("prod_cta","Talk to a Specialist") if not slug else ("查看产品" if lang=="zh" else "View Product")))
     prod_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
                   '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
                   '<div class="acgrid acgrid5">%s</div></div></section>')%(
