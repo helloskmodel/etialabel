@@ -86,8 +86,8 @@
             "th": "450–800°C · แผ่นทองเหลือง"
           },
           "img": "",
-          "landing": true,
-          "slug": "hp-700t"
+          "landing": false,
+          "slug": ""
         },
         {
           "name": "HP-800C",
@@ -98,8 +98,8 @@
             "th": "ถึง 800°C · แก้วและโลหะ ยึดเกาะสูง"
           },
           "img": "",
-          "landing": true,
-          "slug": "hp-800c"
+          "landing": false,
+          "slug": ""
         },
         {
           "name": "HP-901",
@@ -170,8 +170,8 @@
             "th": "ถึง 1200°C · แท็กสแตนเลส"
           },
           "img": "",
-          "landing": true,
-          "slug": "hp-l90"
+          "landing": false,
+          "slug": ""
         },
         {
           "name": "HP-L80",
@@ -182,8 +182,8 @@
             "th": "ถึง 1000°C · แท็กทนกรด"
           },
           "img": "",
-          "landing": true,
-          "slug": "hp-l80"
+          "landing": false,
+          "slug": ""
         },
         {
           "name": "HP-M83",
@@ -194,8 +194,8 @@
             "th": "850°C · แท็กแม่เหล็ก ทนกรด"
           },
           "img": "",
-          "landing": true,
-          "slug": "hp-m83"
+          "landing": false,
+          "slug": ""
         }
       ]
     },
