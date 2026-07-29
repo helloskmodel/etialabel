@@ -387,6 +387,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .sccard .acard-img{background:#eef3fc}
 .sccard .acard-img img{object-fit:contain}
 .sccard:hover .acard-img img{transform:none}
+.appcard .acard-img{background:#eef3fc;aspect-ratio:16/10}
+.appcard .acard-body p{font-size:14px;color:var(--mut);line-height:1.55;margin-top:6px}
 .acard-img .aicon{color:#ffffffe6}
 .acard-img .aicon svg{width:38px;height:38px}
 .acard-body{padding:12px 12px 14px;display:flex;flex-direction:column;flex:1}
@@ -1871,8 +1873,22 @@ def build_applications(lang):
        "极端环境不失效，设备终身可溯源",
        "Built to survive extreme environments with lifelong asset traceability."),
     ]
-    cards="".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>'%(
-        Lx(lang,"/industries/%s/"%slug), esc(tz if zh else te), esc(dz if zh else de))
+    # image-top "picture + topic" card
+    _COS="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/"
+    IND_IMG={
+      "automotive-labeling-solutions":_COS+"AUTO-BANNER",
+      "pcb-electronics-labeling-solutions":_COS+"PCB-BANNER.jpg",
+      "medical-pharmaceutical-labeling-solutions":_COS+"MEDICAL-BANNER",
+      "steel-metal-ceramic-labeling-solutions":_COS+"STEEL-BANNER",
+      "wire-cable-labeling-solutions":_COS+"CABLE-BANNER",
+      "outdoor-energy-labeling-solutions":_COS+"OURDOOR-BANNER",
+    }
+    def _imgcard(href,img,title,desc):
+        im=('<img src="%s" alt="" loading="lazy" onerror="this.remove()">'%esc(img)) if img else ''
+        dd=('<p>%s</p>'%esc(desc)) if desc else ''
+        return ('<a class="acard appcard" href="%s"><div class="acard-img">%s</div>'
+                '<div class="acard-body"><h3 class="indname">%s</h3>%s</div></a>')%(esc(href),im,esc(title),dd)
+    cards="".join(_imgcard(Lx(lang,"/industries/%s/"%slug), IND_IMG.get(slug,""), (tz if zh else te), (dz if zh else de))
         for slug,tz,te,dz,de in sectors)
     # Application Notes — real client notes (built by gen_appnotes), ordered by their "order" field
     def _nl(node):
@@ -1883,8 +1899,8 @@ def build_applications(lang):
     for fn in sorted(os.listdir(adir)):
         if fn.endswith(".json"): notes.append(json.load(open(os.path.join(adir,fn),encoding="utf-8")))
     notes.sort(key=lambda n:n.get("order",99))
-    note_cards="".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>'%(
-        Lx(lang,"/application-notes/%s/"%n["slug"]), esc(_nl(n.get("title",{}))), esc(_nl(n.get("subtitle",{}))))
+    note_cards="".join(_imgcard(Lx(lang,"/application-notes/%s/"%n["slug"]),
+        (n.get("image") or n.get("banner") or ""), _nl(n.get("title",{})), _nl(n.get("subtitle",{})))
         for n in notes)
     body=(
       # By Industry
