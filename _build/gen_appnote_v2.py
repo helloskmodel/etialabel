@@ -130,6 +130,11 @@ def build_note(d, lang):
     def bullets(items):
         return '<ul class="anbul">%s</ul>' % "".join("<li>%s</li>" % esc(x) for x in items)
 
+    def paras(v):  # intro may be a single string or a list of paragraphs
+        if isinstance(v, list):
+            return "".join('<p class="tx">%s</p>' % esc(x) for x in v if x)
+        return ('<p class="tx">%s</p>' % esc(v)) if v else ""
+
     # Simple 4-point template: 1) basic info  2) existing process & problems
     # 3) solution (points)  4) application advantages.
     body = ""
@@ -145,7 +150,7 @@ def build_note(d, lang):
     prob = d.get("problems", {})
     p_intro = L(prob.get("intro", {}), lang)
     p_items = L(prob.get("items", {}), lang)
-    inner = ('<p class="tx">%s</p>' % esc(p_intro)) if p_intro else ""
+    inner = paras(p_intro)
     if p_items:
         inner += bullets(p_items)
     if inner:
@@ -155,8 +160,7 @@ def build_note(d, lang):
     sol = ""
     solution = d.get("solution", {})
     s_intro = L(solution.get("intro", {}), lang)
-    if s_intro:
-        sol += '<p class="tx">%s</p>' % esc(s_intro)
+    sol += paras(s_intro)
     img = d.get("image", "")
     if img:
         sol += '<img class="animg" src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(img)
