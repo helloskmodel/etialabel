@@ -1506,11 +1506,10 @@ def build_home(lang):
         esc(T.get("fs_addr","Mailing address")),esc(T.get("fs_btn","Request Free Sample")))
     final_cta='<div class="wrap">%s</div>'%cta2(lang,"home",home_hlink)
     # Service Commitment — same image-top card carousel as Industries/Products (small images, one row, mobile-friendly)
-    sc_items="".join('<div class="acard sccard"><div class="acard-img g%d">%s</div>'
+    sc_items="".join('<div class="acard sccard"><div class="acard-img">%s</div>'
                      '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p></div></div>'%(
-        k%6,
         ('<img src="%s" alt="" loading="lazy" onerror="this.remove()">'%esc(it["img"]) if it.get("img") else ''),
-        esc(it["title"]),esc(it["desc"])) for k,it in enumerate(T.get("svc",[])))
+        esc(it["title"]),esc(it["desc"])) for it in T.get("svc",[]))
     sc_section=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
                 '<div class="indcar-wrap"><button class="acar-nav prev" onclick="etaSvcSlide(-1)" aria-label="Previous">&lsaquo;</button>'
                 '<div class="indcar" id="svccar">%s</div>'
