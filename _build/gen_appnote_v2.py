@@ -64,6 +64,10 @@ CSS = """
 .ansec h2{font-size:22px;color:#143C96;margin:8px 0 14px}
 .ansec p.tx{font-size:16px;line-height:1.78;color:#2c3a58;margin:0 0 14px}
 .animg{width:100%;max-height:360px;object-fit:cover;border-radius:14px;margin:6px 0 20px;background:#e8eefb}
+.angal{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:16px 0 20px}
+.angfig{margin:0}
+.angfig img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;background:#eef3fc;display:block}
+.angfig figcaption{font-size:12.5px;color:#5a6885;margin-top:6px;text-align:center}
 .anadv{list-style:none;padding:0;margin:14px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .anadv li{background:#f6f9ff;border:1px solid #e0e9f8;border-radius:12px;padding:15px 16px}
 .anadv .lb{display:block;font-size:15px;font-weight:800;color:#143C96;margin:0 0 5px}
@@ -128,6 +132,13 @@ def build_note(d, lang):
     img = d.get("image", "")
     if img:
         sol += '<img class="animg" src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(img)
+    gal = d.get("gallery", [])
+    if gal:
+        figs = "".join(
+            '<figure class="angfig"><img src="%s" alt="%s" loading="lazy" onerror="this.closest(\'figure\').remove()"><figcaption>%s</figcaption></figure>'
+            % (esc(g.get("img", "")), esc(L(g.get("caption", {}), lang)), esc(L(g.get("caption", {}), lang)))
+            for g in gal)
+        sol += '<div class="angal">%s</div>' % figs
     adv = d.get("advantages", {}).get(lang) or d.get("advantages", {}).get(SOURCE_LANG) or []
     if adv:
         sol += _adv(adv)
