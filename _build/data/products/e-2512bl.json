@@ -1,6 +1,6 @@
 {
   "slug": "e-2512bl",
-  "source": "client product brief — E-2512BL black glossy PET laser-etched label",
+  "source": "client product brief — E-2512BL black gloss PET laser-etch label (EN authoritative)",
   "langs": ["en", "zh"],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER",
   "product_img": "",
@@ -9,27 +9,27 @@
     "zh": "汽车 · 激光刻蚀标识"
   },
   "title": {
-    "en": "E-2512BL — Black Glossy PET Laser-Etched Label",
+    "en": "E-2512BL — Black Gloss PET Laser-Etch Label",
     "zh": "E-2512BL · 黑色亮面 PET 激光刻蚀标签"
   },
   "tagline": {
-    "en": "Laser etching stops tampering — OEM traceability, assured",
+    "en": "Permanent Laser Marking. Trusted Traceability.",
     "zh": "激光刻写杜绝篡改，原厂溯源有保障"
   },
   "positioning": {
-    "en": "E-2512BL is a dual-layer PET laser label — a black face over a white base that develops a sharp, high-contrast mark, compatible with every type of laser marker. Built with a permanent acrylic adhesive and a self-destructing facestock, it is used for automotive VIN plates, engine components, windows and warranty nameplates. It withstands −40°C to 180°C and hot oil, is laser-marked and die-cut in a single pass, and meets RoHS — enabling full-lifecycle component traceability.",
+    "en": "E-2512BL is a dual-layer PET laser-markable label featuring a black surface and white core for high-contrast laser engraving. Compatible with CO₂, fiber, UV, and YAG laser systems, it combines permanent acrylic adhesive with a destructible construction to prevent label transfer or tampering. Designed for automotive VIN plates, engine components, glass labels, warranty plates, and permanent asset identification, it withstands temperatures from -40°C to 180°C, as well as oil, abrasion, and harsh environments. Laser marking and cutting can be completed in a single process, supporting automated production and full-life traceability. RoHS compliant.",
     "zh": "E-2512BL 为双层 PET 激光标签，黑面白底显色，适配全类型激光打标机。采用永久丙烯酸胶与自毁基材，用于汽车 VIN、发动机件、车窗、保修铭牌。耐 −40℃~180℃高温油污，激光打刻裁切一体成型，RoHS 环保，实现零部件全周期溯源。"
   },
   "challenges": {},
   "features": {
     "en": [
-      "Dual-layer PET laser facestock — laser marking is sharp and high-contrast",
-      "Self-destructs on removal, leaving a tamper trail — the label cannot be transferred or altered",
-      "−40°C to 180°C wide-temperature durability; resists oil, corrosion and abrasion",
-      "Strong permanent pressure-sensitive adhesive; the bond is even better with heat-assisted application",
-      "Laser marking and die-cutting complete in a single step — suited to automated production lines",
-      "Works on metal, plastic and glass, with a matching glass-specific laser tape available",
-      "Meets the RoHS environmental standard"
+      "Dual-layer black PET construction delivers sharp, high-contrast white laser engraving.",
+      "Destructible label structure prevents removal and transfer.",
+      "Withstands temperatures from -40°C to 180°C with excellent resistance to oil, chemicals, and abrasion.",
+      "Permanent acrylic adhesive provides strong long-term bonding; heated application further improves adhesion.",
+      "Supports simultaneous laser marking and die-cutting for automated production lines.",
+      "Suitable for metal, plastic, and glass surfaces, with dedicated laser tapes available for glass applications.",
+      "RoHS compliant."
     ],
     "zh": [
       "双层 PET 激光基材，激光刻印高清晰高对比",
@@ -43,12 +43,12 @@
   },
   "benefits": {
     "en": [
-      "Anti-counterfeit and anti-diversion — blocks refurbished or fake parts and reduces after-sales losses",
-      "Stays legible long-term across the vehicle's harsh environments — a reliable basis for traceability and warranty",
-      "Simplifies production steps; automated processing raises throughput and cuts manual error",
-      "One material for many points across the vehicle — unified procurement",
-      "Resists fall-off and rework, lowering total long-term cost of use",
-      "Size, QR code and anti-counterfeit graphics can all be customized"
+      "Helps prevent counterfeiting, relabeling, and unauthorized part replacement.",
+      "Maintains permanent identification throughout the vehicle lifecycle for reliable warranty and traceability.",
+      "Simplifies manufacturing by integrating marking and cutting into one automated process.",
+      "One label solution for multiple automotive components, reducing purchasing complexity.",
+      "Minimizes label failure and rework, lowering total lifecycle costs.",
+      "Custom sizes, QR codes, serial numbers, and security graphics are available."
     ],
     "zh": [
       "防伪防窜货，杜绝配件翻新造假，减少售后损耗",
@@ -56,7 +56,7 @@
       "简化生产工序，自动化加工，提升产能减少人工误差",
       "全车多点位通用，统一物料采购",
       "不易脱落返工，长期综合使用成本更低",
-      "尺寸、二维码、防伪图案均可定制"
+      "尺寸、二维码、序列号、防伪图案均可定制"
     ]
   },
   "spec_table": {
@@ -65,59 +65,71 @@
       "zh": ["参数", "详情"]
     },
     "rows": [
-      {"group": {"en": "Construction & Thickness", "zh": "结构厚度"}},
+      {"group": {"en": "Construction", "zh": "结构"}},
       {"cells": [
-        {"en": "Facestock", "zh": "面材"},
-        {"en": "0.052 mm black glossy PET", "zh": "0.052mm 黑亮 PET"}
+        {"en": "Face Stock", "zh": "面材"},
+        {"en": "0.052 mm Black Gloss PET", "zh": "0.052mm 黑色亮面 PET"}
       ]},
       {"cells": [
-        {"en": "Adhesive layer", "zh": "胶层"},
-        {"en": "0.025 mm", "zh": "0.025mm"}
+        {"en": "Adhesive", "zh": "胶粘剂"},
+        {"en": "0.025 mm Permanent Acrylic", "zh": "0.025mm 永久丙烯酸胶"}
       ]},
       {"cells": [
         {"en": "Liner", "zh": "底纸"},
-        {"en": "0.068 mm", "zh": "0.068mm"}
+        {"en": "0.068 mm Release Liner", "zh": "0.068mm 离型底纸"}
       ]},
-      {"group": {"en": "Adhesion", "zh": "粘接性能"}},
+      {"group": {"en": "Adhesion Performance", "zh": "粘接性能"}},
       {"cells": [
-        {"en": "Peel adhesion", "zh": "剥离力"},
+        {"en": "Peel Adhesion", "zh": "剥离力"},
         {"en": "13 N/25 mm", "zh": "13N/25mm"}
       ]},
       {"cells": [
-        {"en": "Initial tack", "zh": "初粘力"},
+        {"en": "Initial Tack", "zh": "初粘力"},
         {"en": "15 N/25 mm", "zh": "15N/25mm"}
       ]},
       {"cells": [
-        {"en": "Holding power", "zh": "持粘"},
-        {"en": "≥ 48 h/25 mm", "zh": "≥48h/25mm"}
+        {"en": "Holding Power", "zh": "持粘"},
+        {"en": "≥ 48 hours (25 mm)", "zh": "≥48h/25mm"}
       ]},
-      {"group": {"en": "Environment & Processing", "zh": "环境与加工"}},
+      {"group": {"en": "Environmental & Processing", "zh": "环境与加工"}},
       {"cells": [
-        {"en": "Temperature range", "zh": "耐温"},
-        {"en": "−40°C to 180°C", "zh": "−40℃~180℃"}
+        {"en": "Service Temperature", "zh": "耐温"},
+        {"en": "-40°C to 180°C", "zh": "−40℃~180℃"}
       ]},
       {"cells": [
-        {"en": "Laser compatibility", "zh": "激光兼容"},
-        {"en": "CO₂ / YAG / UV / fiber laser markers", "zh": "兼容 CO₂／YAG／UV／光纤激光机"}
+        {"en": "Laser Compatibility", "zh": "激光兼容"},
+        {"en": "Compatible with CO₂, Fiber, UV, and YAG laser marking systems", "zh": "兼容 CO₂、光纤、UV、YAG 激光打标机"}
       ]},
       {"group": {"en": "Storage & Compliance", "zh": "存储环保"}},
       {"cells": [
-        {"en": "Shelf life", "zh": "保质期"},
-        {"en": "12 months at 22°C, 50% RH", "zh": "22℃、50% 湿度保质期 12 个月"}
+        {"en": "Shelf Life", "zh": "保质期"},
+        {"en": "12 months at 22°C / 50% RH", "zh": "22℃、50% 湿度下 12 个月"}
       ]},
       {"cells": [
         {"en": "Compliance", "zh": "环保"},
-        {"en": "Complies with the RoHS directive", "zh": "符合 RoHS 指令"}
+        {"en": "RoHS Compliant", "zh": "符合 RoHS 指令"}
       ]},
-      {"group": {"en": "Application Notes", "zh": "使用提示"}},
+      {"group": {"en": "Application Guidelines", "zh": "使用提示"}},
       {"cells": [
-        {"en": "Recommendation", "zh": "建议"},
-        {"en": "Apply to a clean, oil-free surface with firm pressure; heat-assisted application strengthens the bond.", "zh": "粘贴面清洁无油污，充分施压，加温可增强粘接。"}
+        {"en": "Surface", "zh": "表面"},
+        {"en": "Apply to clean, dry, oil-free surfaces.", "zh": "粘贴面清洁、干燥、无油污。"}
       ]},
-      {"group": {"en": "Security", "zh": "安全特性"}},
       {"cells": [
-        {"en": "Tamper evidence", "zh": "防伪"},
-        {"en": "Fractures and leaves a trail on removal; supports visible or hidden anti-counterfeit graphics and text customization.", "zh": "撕除碎裂留痕，支持显性／隐藏防伪图文定制。"}
+        {"en": "Pressure", "zh": "施压"},
+        {"en": "Apply firm pressure after installation.", "zh": "贴装后充分施压。"}
+      ]},
+      {"cells": [
+        {"en": "Heat", "zh": "加温"},
+        {"en": "Moderate heat during application improves final bond strength.", "zh": "适度加温可增强最终粘接强度。"}
+      ]},
+      {"group": {"en": "Security Features", "zh": "安全特性"}},
+      {"cells": [
+        {"en": "Tamper Evidence", "zh": "防篡改"},
+        {"en": "Destructible construction leaves visible evidence when removal is attempted.", "zh": "自毁结构，尝试揭除时留下明显痕迹。"}
+      ]},
+      {"cells": [
+        {"en": "Custom Security Graphics", "zh": "防伪定制"},
+        {"en": "Custom overt or covert security graphics are available for anti-counterfeiting applications.", "zh": "可定制显性或隐藏防伪图文，用于防伪应用。"}
       ]}
     ],
     "notes": {
@@ -129,16 +141,16 @@
     "en": [
       "Automotive VIN plates",
       "Engine components",
-      "Vehicle windows",
-      "Warranty nameplates",
-      "Full-lifecycle component traceability"
+      "Glass labels",
+      "Warranty plates",
+      "Permanent asset identification"
     ],
     "zh": [
-      "汽车 VIN 车架号",
+      "汽车 VIN 铭牌",
       "发动机零部件",
-      "车窗",
+      "玻璃标签（车窗）",
       "保修铭牌",
-      "零部件全周期溯源"
+      "永久资产标识"
     ]
   },
   "certifications": {}
