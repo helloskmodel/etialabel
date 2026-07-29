@@ -1,0 +1,153 @@
+{
+  "slug": "e-4812",
+  "source": "client product brief — E-4812 / 4812 (-196°C LN2 storage material)",
+  "langs": ["en", "zh"],
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-BANNER",
+  "product_img": "",
+  "eyebrow": {
+    "en": "Low Temperature · Cryogenic Storage",
+    "zh": "低温 · 液氮冻存"
+  },
+  "title": {
+    "en": "E-4812 — −196°C LN₂ Cryogenic Storage Label",
+    "zh": "E-4812 · −196℃ 液氮冻存标签"
+  },
+  "tagline": {
+    "en": "−196°C liquid-nitrogen storage · direct-apply to frozen surfaces · up to 10 freeze-thaw cycles",
+    "zh": "−196℃ 液氮冻存 · 冷冻表面直贴 · 耐 10 次反复冻融"
+  },
+  "positioning": {
+    "en": "Purpose-built identification labels for frozen laboratory sample containers — polypropylene (PP) cryovials, test tubes and storage boxes (PP and cardboard). Rated for storage from −150°C to −196°C (liquid-nitrogen environments), it keeps information clearly legible across the sample's entire frozen-storage lifecycle. It also survives repeated thaw-and-refreeze cycles — up to 10 cycles of thawing at room temperature or in warm / ice water followed by refreezing.",
+    "zh": "该产品专为冷冻实验室样品容器的识别标签而设计，适用于聚丙烯（PP）冷冻小瓶、试管和存储盒（PP 和纸板）。存储温度范围在 −150°C 至 −196°C（液氮环境）。信息可确保在样品整个冷冻存储生命周期内保持清晰可识别。该产品还能承受多次解冻和冷冻循环——最多可承受 10 次在室温或温水／冰水中解冻后再冷冻的循环。"
+  },
+  "challenges": {},
+  "features": {
+    "en": [
+      "Ultra-low-temp direct application: 7 N initial tack lets you label frozen surfaces directly — no need to thaw the sample, for a simpler, faster workflow.",
+      "Strong adhesion retention: stays firmly bonded through long-term liquid-nitrogen storage without loosening or falling off, preventing sample mix-ups.",
+      "Withstands up to 10 freeze-thaw cycles: wide temperature tolerance means no cracking, peeling or degradation across repeated cycles, keeping the mark intact.",
+      "Broad facestock compatibility: waterproof, oil-resistant and chemical-resistant, compatible with multiple print methods. For variable data, pair a thermal-transfer printer with an ultra-low-temperature resin ribbon for crisp, durable print."
+    ],
+    "zh": [
+      "超低温直贴：初粘力达 7N，可以直接贴于冷冻的表面，无需解冻样本，操作更便捷。",
+      "持粘性强：可以长时间存储在液氮中，也不会松动脱落，牢固贴合，避免样本混淆。",
+      "可耐受高达 10 次反复冻融循环：宽温度耐受，多次冻融也不会破裂、剥落、降解，保证标识完整。",
+      "面材适配性广：防水，抗油，耐化学，适配多种印刷方式。可变信息打印，使用热转印打印机搭配超低温树脂碳带，确保信息清晰持久。"
+    ]
+  },
+  "benefits": {},
+  "spec_table": {
+    "headers": {
+      "en": ["Parameter", "Details"],
+      "zh": ["参数", "详情"]
+    },
+    "rows": [
+      {"group": {"en": "Facestock Variants", "zh": "面材版本"}},
+      {"cells": [
+        {"en": "EL865", "zh": "EL865"},
+        {"en": "White biaxially-oriented (BOPP) film with excellent flexibility.", "zh": "白色双向拉伸薄膜，具备优异柔韧性。"}
+      ]},
+      {"cells": [
+        {"en": "EL864", "zh": "EL864"},
+        {"en": "Ultra-clear biaxially-oriented (BOPP) film for curved-surface application and a \"no-label\", ultra-transparent look.", "zh": "超透明双向拉伸薄膜，适用于曲面贴合，及需要实现超透明无标签视觉效果的场景。"}
+      ]},
+      {"cells": [
+        {"en": "EL864WT", "zh": "EL864WT"},
+        {"en": "Wrap-around self-laminating label for thin tubes and cryovials — protects printed information for lasting, clear legibility.", "zh": "环绕自覆膜标签，适合细管、冻存管等，更好保护信息持久、清晰。"}
+      ]},
+      {"group": {"en": "Facestock", "zh": "面材"}},
+      {"cells": [
+        {"en": "Material", "zh": "材质"},
+        {"en": "White, flexible, coated biaxially-oriented film from a co-extruded polymer blend.", "zh": "一种白色、柔韧、涂布处理的双向拉伸薄膜，由共挤聚合物混合物制成。"}
+      ]},
+      {"cells": [
+        {"en": "Grammage", "zh": "克重"},
+        {"en": "55 g/m² (ISO 536)", "zh": "55 g/m²（ISO 536）"}
+      ]},
+      {"cells": [
+        {"en": "Thickness", "zh": "厚度"},
+        {"en": "56 µm (ISO 534)", "zh": "56 µm（ISO 534）"}
+      ]},
+      {"cells": [
+        {"en": "Opacity", "zh": "不透明度"},
+        {"en": "85% (ISO 2471)", "zh": "85%（ISO 2471）"}
+      ]},
+      {"cells": [
+        {"en": "Printability", "zh": "印刷适性"},
+        {"en": "Flexo, screen, offset and UV inkjet; thermal transfer with a specific wax-resin or resin ribbon.", "zh": "适用于柔印、丝网印刷、胶印和 UV 喷墨印刷方法；可使用特定的蜡-树脂或树脂色带进行热转印打印。"}
+      ]},
+      {"group": {"en": "Adhesive", "zh": "胶粘剂"}},
+      {"cells": [
+        {"en": "Type", "zh": "类型"},
+        {"en": "Permanent", "zh": "永久性胶粘剂"}
+      ]},
+      {"cells": [
+        {"en": "Composition", "zh": "成分"},
+        {"en": "Water-based acrylic", "zh": "水性丙烯酸胶粘剂"}
+      ]},
+      {"cells": [
+        {"en": "Initial tack", "zh": "初粘力"},
+        {"en": "7 N (FTM 9)", "zh": "7 N（FTM 9）"}
+      ]},
+      {"group": {"en": "Liner", "zh": "底材"}},
+      {"cells": [
+        {"en": "Material", "zh": "材质"},
+        {"en": "White transparent glassine", "zh": "白色透明玻璃化底纸"}
+      ]},
+      {"cells": [
+        {"en": "Grammage", "zh": "克重"},
+        {"en": "62 g/m² (ISO 536)", "zh": "62 g/m²（ISO 536）"}
+      ]},
+      {"cells": [
+        {"en": "Thickness", "zh": "厚度"},
+        {"en": "54 µm (ISO 534)", "zh": "54 µm（ISO 534）"}
+      ]},
+      {"cells": [
+        {"en": "Tensile strength (MD)", "zh": "抗拉强度（纵向）"},
+        {"en": "7 kN/m (ISO 1924)", "zh": "7 kN/m（ISO 1924）"}
+      ]},
+      {"cells": [
+        {"en": "Tensile strength (CD)", "zh": "抗拉强度（横向）"},
+        {"en": "2.7 kN/m (ISO 1924)", "zh": "2.7 kN/m（ISO 1924）"}
+      ]},
+      {"cells": [
+        {"en": "Transparency", "zh": "透明度"},
+        {"en": "48% (DIN 53147)", "zh": "48%（DIN 53147）"}
+      ]},
+      {"group": {"en": "Performance", "zh": "性能参数"}},
+      {"cells": [
+        {"en": "Total thickness", "zh": "总厚度"},
+        {"en": "132 µm", "zh": "132 µm"}
+      ]},
+      {"cells": [
+        {"en": "Minimum application temperature", "zh": "最低贴标温度"},
+        {"en": "−10°C", "zh": "−10°C"}
+      ]},
+      {"cells": [
+        {"en": "Service temperature range", "zh": "使用温度范围"},
+        {"en": "−196°C to 80°C", "zh": "−196°C 至 80°C"}
+      ]}
+    ],
+    "notes": {
+      "en": ["Figures are indicative typical values; verify against the current technical datasheet and by application testing before production."],
+      "zh": ["以上为参考性典型值；量产前请以最新技术数据表为准并经应用测试确认。"]
+    }
+  },
+  "applications": {
+    "en": [
+      "Polypropylene (PP) cryovials",
+      "Test tubes",
+      "Storage boxes (PP and cardboard)",
+      "Research biobanks, stem-cell and gene cryostorage",
+      "Dry-ice and liquid-nitrogen shipping containers"
+    ],
+    "zh": [
+      "聚丙烯（PP）冷冻小瓶",
+      "试管",
+      "存储盒（PP 与纸板）",
+      "科研样本库、干细胞与基因冻存",
+      "干冰与液氮运输容器"
+    ]
+  },
+  "certifications": {}
+}
