@@ -139,12 +139,21 @@ def build_note(d, lang):
     # 3) solution (points)  4) application advantages.
     body = ""
 
-    # 1. Basic application information — a compact facts table (label / value rows)
+    # 1. Basic application information — facts table + location photos (gallery)
     info = L(d.get("info", {}), lang)
-    if info:
+    gal = d.get("gallery", [])
+    gal_html = ""
+    if gal:
+        figs = "".join(
+            '<figure class="angfig"><img src="%s" alt="%s" loading="lazy" onerror="this.closest(\'figure\').remove()"><figcaption>%s</figcaption></figure>'
+            % (esc(g.get("img", "")), esc(L(g.get("caption", {}), lang)), esc(L(g.get("caption", {}), lang)))
+            for g in gal)
+        gal_html = '<div class="angal">%s</div>' % figs
+    if info or gal_html:
         rows = "".join('<div class="anfrow"><span class="anfk">%s</span><span class="anfv">%s</span></div>'
                        % (esc(i.get("label", "")), esc(i.get("value", ""))) for i in info)
-        body += sec("01", ui["info"], '<div class="anfacts">%s</div>' % rows)
+        facts = ('<div class="anfacts">%s</div>' % rows) if info else ""
+        body += sec("01", ui["info"], facts + gal_html)
 
     # 2. Existing process & problems — intro paragraph + problem bullets
     prob = d.get("problems", {})
@@ -167,13 +176,6 @@ def build_note(d, lang):
     points = L(solution.get("points", {}), lang)
     if points:
         sol += _adv(points)
-    gal = d.get("gallery", [])
-    if gal:
-        figs = "".join(
-            '<figure class="angfig"><img src="%s" alt="%s" loading="lazy" onerror="this.closest(\'figure\').remove()"><figcaption>%s</figcaption></figure>'
-            % (esc(g.get("img", "")), esc(L(g.get("caption", {}), lang)), esc(L(g.get("caption", {}), lang)))
-            for g in gal)
-        sol += '<div class="angal">%s</div>' % figs
     if sol:
         body += sec("03", ui["solution"], sol)
 
