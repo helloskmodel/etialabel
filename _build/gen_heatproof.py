@@ -384,6 +384,9 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .acard-img{position:relative;aspect-ratio:16/11;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .acard-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .35s}
 .acard:hover .acard-img img{transform:scale(1.06)}
+.sccard .acard-img{background:#eef3fc}
+.sccard .acard-img img{object-fit:contain}
+.sccard:hover .acard-img img{transform:none}
 .acard-img .aicon{color:#ffffffe6}
 .acard-img .aicon svg{width:38px;height:38px}
 .acard-body{padding:12px 12px 14px;display:flex;flex-direction:column;flex:1}
@@ -1468,11 +1471,17 @@ def build_home(lang):
         esc(T.get("fs_email","Email")),esc(T.get("fs_phone","Phone")),
         esc(T.get("fs_addr","Mailing address")),esc(T.get("fs_btn","Request Free Sample")))
     final_cta='<div class="wrap">%s</div>'%cta2(lang,"home",home_hlink)
-    sc_items="".join('<div class="sci">%s<b>%s</b><p>%s</p></div>'%(
-        ('<img class="sci-img" src="%s" alt="" loading="lazy" onerror="this.remove()">'%esc(it["img"]) if it.get("img") else ''),
-        esc(it["title"]),esc(it["desc"])) for it in T.get("svc",[]))
+    # Service Commitment — same image-top card carousel as Industries/Products (small images, one row, mobile-friendly)
+    sc_items="".join('<div class="acard sccard"><div class="acard-img g%d">%s</div>'
+                     '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p></div></div>'%(
+        k%6,
+        ('<img src="%s" alt="" loading="lazy" onerror="this.remove()">'%esc(it["img"]) if it.get("img") else ''),
+        esc(it["title"]),esc(it["desc"])) for k,it in enumerate(T.get("svc",[])))
     sc_section=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
-                '<div class="scgrid">%s</div></div></section>')%(
+                '<div class="indcar-wrap"><button class="acar-nav prev" onclick="etaSvcSlide(-1)" aria-label="Previous">&lsaquo;</button>'
+                '<div class="indcar" id="svccar">%s</div>'
+                '<button class="acar-nav next" onclick="etaSvcSlide(1)" aria-label="Next">&rsaquo;</button></div>'
+                '</div></section>')%(
         esc(T.get("sc_eyebrow","SERVICE COMMITMENT")),esc(T.get("sc_title","Our Service Commitment")),sc_items)
     h=G["hero"]
     hero_banner=home_banner(lang, HOME_BG[0], h["eyebrow"], h["h1"], h["line"], "",
@@ -1517,6 +1526,7 @@ var mg=m.querySelector('.midgroup[data-mid="'+a+'"]');var first=mg?mg.querySelec
 etaSub(first,first?first.getAttribute('data-sub'):'');}
 function etaSlide(d){var c=document.getElementById('acar');if(c)c.scrollBy({left:d*c.clientWidth,behavior:'smooth'});}
 function etaIndSlide(d){var c=document.getElementById('indcar');if(c)c.scrollBy({left:d*Math.min(628,Math.max(300,c.clientWidth*0.85)),behavior:'smooth'});}
+function etaSvcSlide(d){var c=document.getElementById('svccar');if(c)c.scrollBy({left:d*Math.min(628,Math.max(300,c.clientWidth*0.85)),behavior:'smooth'});}
 function etaSample(e){e.preventDefault();var g=function(i){var el=document.getElementById(i);return el?el.value:'';};
 var b='Email: '+g('fs-email')+'%%0D%%0APhone: '+g('fs-phone')+'%%0D%%0AAddress: '+g('fs-addr')+'%%0D%%0A%%0D%%0APlease send free samples.';
 window.location.href='mailto:label@etia-tech.com?subject=Free%%20Sample%%20Request&body='+b;return false;}</script>
