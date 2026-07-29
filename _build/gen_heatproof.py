@@ -495,15 +495,16 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 """
 
 NAV_ITEMS = [("Home", "/", "home"),
-             ("Products", u_products(), "products"),
-             ("Application Notes", "/application-notes/", "insights"),
-             ("News", "/news/", "news"),
+             ("Product", u_products(), "products"),
+             ("Application", "/applications/", "applications"),
+             ("Insight", "/insights/", "insights"),
              ("Service", "/service/", "service")]
-NAV_ZH = {"Home":"首页","Products":"产品","Case Studies":"案例","Application Notes":"应用笔记","News":"新闻","Insights":"洞察","Service":"服务"}
+NAV_ZH = {"Home":"首页","Products":"产品","Product":"产品","Case Studies":"案例","Application Notes":"应用笔记","Application":"应用","News":"新闻","Insights":"洞察","Insight":"洞察","Service":"服务",
+          "Industries":"行业","About ETIA":"关于 ETIA","Contact":"联系我们"}
 # 4-language nav / footer labels (keyed by the English label)
-NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Case Studies":"Nghiên cứu điển hình","Application Notes":"Ghi chú ứng dụng","News":"Tin tức","Service":"Dịch vụ",
+NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Product":"Sản phẩm","Case Studies":"Nghiên cứu điển hình","Application Notes":"Ghi chú ứng dụng","Application":"Ứng dụng","News":"Tin tức","Insight":"Kiến thức","Service":"Dịch vụ",
           "Industries":"Ngành","About ETIA":"Về ETIA","Contact":"Liên hệ"}
-NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Case Studies":"กรณีศึกษา","Application Notes":"แอปพลิเคชันโน้ต","News":"ข่าว","Service":"บริการ",
+NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Product":"ผลิตภัณฑ์","Case Studies":"กรณีศึกษา","Application Notes":"แอปพลิเคชันโน้ต","Application":"การใช้งาน","News":"ข่าว","Insight":"ความรู้","Service":"บริการ",
           "Industries":"อุตสาหกรรม","About ETIA":"เกี่ยวกับ ETIA","Contact":"ติดต่อ"}
 def navlab(lang, t):
     if lang == "zh": return NAV_ZH.get(t, t)
@@ -554,7 +555,7 @@ def products_dropdown(lang, linkfn):
         if lang == "th" and e in MENU_VITH: return MENU_VITH[e][1]
         return e
     def pick(en, zh_, vi, th): return {"zh": zh_, "vi": vi, "th": th}.get(lang, en)
-    top = pick("Products", "产品", "Sản phẩm", "ผลิตภัณฑ์")
+    top = pick("Product", "产品", "Sản phẩm", "ผลิตภัณฑ์")
     rail = ""; mids = ""; subs = ""
     for i, (key, he, hz, items) in enumerate(PROD_AXES):
         on = " on" if i == 0 else ""
@@ -649,8 +650,8 @@ def nav_html(lang, active, path="/", langs=None):
         sw = '<a class="lang" href="%s">%s</a>' % (L(other, path), LANG_CODE[other])
     return '<nav><div class="navlinks">%s</div>%s%s</nav>' % (items, sw, NAV_TOGGLE)
 
-FOOTER_LINKS = [("Home", "/"), ("Products", u_products()), ("Industries", u_ind_hub()),
-                ("Application Notes", "/application-notes/"), ("Service", "/service/"),
+FOOTER_LINKS = [("Home", "/"), ("Product", u_products()), ("Application", "/applications/"),
+                ("Insight", "/insights/"), ("Service", "/service/"),
                 ("About ETIA", "/about/"), ("Contact", "/contact/")]
 FOOTER_I18N = {
  "heads": {"en": ("Navigation","Legal","Contact"), "zh": ("导航","法律","联系"),
@@ -1222,23 +1223,26 @@ def home_switcher(active):
 def home_nav(lang):
     T=HOME_I18N[lang]
     lf=lambda p: home_hlink(lang,p)
-    hrefs=["/application-notes/","/service/"]
     prod=products_dropdown(lang, lf)
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
-    # top nav after Products: Application Notes, News, Service
-    an_lbl={"en":"Application Notes","zh":"应用笔记","vi":"Ghi chú ứng dụng","th":"แอปพลิเคชันโน้ต"}.get(lang,"Application Notes")
-    news_lbl={"en":"News","zh":"新闻","vi":"Tin tức","th":"ข่าว"}.get(lang,"News")
+    # top nav after Product: Application, Insight, Service
+    app_lbl={"en":"Application","zh":"应用","vi":"Ứng dụng","th":"การใช้งาน"}.get(lang,"Application")
+    ins_lbl={"en":"Insight","zh":"洞察","vi":"Kiến thức","th":"ความรู้"}.get(lang,"Insight")
     sv_lbl={"en":"Service","zh":"服务","vi":"Dịch vụ","th":"บริการ"}.get(lang,"Service")
     links=('<a href="%s">%s</a><a href="%s">%s</a><a href="%s">%s</a>'%(
-        lf("/application-notes/"),esc(an_lbl),lf("/news/"),esc(news_lbl),lf("/service/"),esc(sv_lbl)))
+        lf("/applications/"),esc(app_lbl),lf("/insights/"),esc(ins_lbl),lf("/service/"),esc(sv_lbl)))
     return '<nav><div class="navlinks">%s%s%s</div>%s%s</nav>' % (
         home_link, prod, links, home_switcher(lang), NAV_TOGGLE)
 
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
-    navl="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,h),esc(l)) for h,l in
-                 zip(["/products/","/industries/","/application-notes/","/service/"],T["nav"][:4]))
+    # footer nav mirrors the top nav: Product · Application · Insight · Service
+    foot_nav=[("/products/",{"en":"Product","zh":"产品","vi":"Sản phẩm","th":"ผลิตภัณฑ์"}.get(lang,"Product")),
+              ("/applications/",{"en":"Application","zh":"应用","vi":"Ứng dụng","th":"การใช้งาน"}.get(lang,"Application")),
+              ("/insights/",{"en":"Insight","zh":"洞察","vi":"Kiến thức","th":"ความรู้"}.get(lang,"Insight")),
+              ("/service/",{"en":"Service","zh":"服务","vi":"Dịch vụ","th":"บริการ"}.get(lang,"Service"))]
+    navl="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,h),esc(l)) for h,l in foot_nav)
     legal="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,p),t) for p,t in
                   [("/privacy/","Privacy Policy"),("/cookies/","Cookie Policy"),("/terms/","Terms of Use")])
     return ('<footer><div class="wrap"><div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%%20LOGO.jpg" alt="ETIA Label"></div>'
@@ -1788,6 +1792,45 @@ def build_service(lang):
         body, crumb, active="service", trust=False, hero=section_hero(lang, 3)))
     if lang=="en": track("/service/","core")
 
+def build_applications(lang):
+    """Applications hub — brand pillar 'Applications Drive Material Selection'.
+    Cards route to the real client industry-sector landings (built by render_industry)."""
+    zh=(lang=="zh")
+    # (slug, title_zh, title_en, desc_zh, desc_en) — titles/slogans are client-provided
+    sectors=[
+      ("automotive-labeling-solutions","汽车与轮胎标识","Automotive & Tire",
+       "全车耐久标识，长效溯源，守护行车安全",
+       "Durable full-vehicle marking with lifecycle traceability to secure driving safety."),
+      ("pcb-electronics-labeling-solutions","PCB 电子标识","PCB & Electronics",
+       "高性能 PI 标签，专为 PCB 制造而生",
+       "Engineered polyimide labels for reflow, aggressive wash and post-process PCB manufacturing."),
+      ("medical-pharmaceutical-labeling-solutions","医疗与医药标识","Medical & Pharmaceutical",
+       "全系列医用特种标签，守护生物医药安全追踪",
+       "A full range of medical specialty labels securing biopharmaceutical traceability."),
+      ("steel-metal-ceramic-labeling-solutions","钢铁与陶瓷标识","Steel & Ceramics",
+       "耐受极端高温，实现全程可追溯",
+       "Withstand extreme heat and enable end-to-end traceability."),
+      ("wire-cable-labeling-solutions","线缆与线束标识","Wire & Cable",
+       "可靠标识，保障运维安全",
+       "Reliable wrap-around and fold-over labels for safe operation and maintenance."),
+      ("outdoor-energy-labeling-solutions","户外与能源标识","Outdoor & Energy",
+       "极端环境不失效，设备终身可溯源",
+       "Built to survive extreme environments with lifelong asset traceability."),
+    ]
+    cards="".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>'%(
+        Lx(lang,"/industries/%s/"%slug), esc(tz if zh else te), esc(dz if zh else de))
+        for slug,tz,te,dz,de in sectors)
+    body=('<section class="blk"><div class="wrap"><div class="grid grid2">%s</div></div></section>'
+          '<div class="wrap">%s</div>')%(cards, cta2(lang,"applications"))
+    crumb=[("Home","/"),("Applications","/applications/")]
+    write(lang,"/applications/",page(lang,"/applications/",
+        ("应用 | ETIA" if zh else "Applications | ETIA"),
+        ("按行业与工艺选择标签材料 —— 汽车、PCB、医疗、钢铁、线缆与户外能源。" if zh
+         else "Choose label materials by industry and process — automotive, PCB, medical, steel, wire & cable, and outdoor energy."),
+        ("应用" if zh else "Applications"), "",
+        body, crumb, active="applications", hero=section_hero(lang, 1)))
+    if lang=="en": track("/applications/","industries")
+
 def build_insights(lang):
     zh=(lang=="zh")
     items=[
@@ -1905,7 +1948,8 @@ def build_all():
     build_industries_hub(lang)
     build_about(lang)
     build_contact(lang)
-    # /insights/ retired — Application Notes (built by gen_appnotes) replaces it
+    build_applications(lang)   # nav pillar: Application
+    build_insights(lang)       # nav pillar: Insight
     build_service(lang)
     # legal pages (general website template — client legal counsel should review)
     build_legal(lang)
