@@ -1,0 +1,448 @@
+{
+  "slug": "medical-pharmaceutical-labeling-solutions",
+  "track": false,
+  "subnav": false,
+  "source": "existing medical/cold-chain product range, organized by medical application",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-MICROPLATE.jpg",
+  "seo_title": {
+    "en": "Medical & Pharmaceutical Labels | ETIA",
+    "zh": "医疗与制药标签 | ETIA",
+    "vi": "Nhãn y tế & dược phẩm | ETIA",
+    "th": "ฉลากการแพทย์และเภสัชกรรม | ETIA"
+  },
+  "seo_desc": {
+    "en": "Medical, pharmaceutical and life-science labels for blood bags, cryogenic biobanks, reagents and sterilized devices — low-migration adhesives surviving −196°C LN2, freeze-thaw and EO/gamma/autoclave sterilization.",
+    "zh": "面向血袋、深冷生物样本库、试剂与灭菌器械的医疗、制药与生命科学标签 —— 低迁移胶水，耐 −196°C 液氮、反复冻融与环氧乙烷/伽马/高压蒸汽灭菌。",
+    "vi": "Nhãn y tế, dược phẩm và khoa học sự sống cho túi máu, ngân hàng sinh học siêu lạnh, thuốc thử và thiết bị tiệt trùng — keo thấp di trú chịu LN2 −196°C, đông-rã và tiệt trùng EO/gamma/hấp.",
+    "th": "ฉลากการแพทย์ เภสัชกรรม และวิทยาศาสตร์ชีวภาพสำหรับถุงเลือด ไบโอแบงก์ไครโอ น้ำยา และอุปกรณ์ฆ่าเชื้อ — กาวอพยพต่ำทน LN2 −196°C แช่แข็ง-ละลาย และการฆ่าเชื้อ EO/แกมมา/ออโตเคลฟ"
+  },
+  "hero": {
+    "eyebrow": {
+      "en": "Industry · Medical & Life Science",
+      "zh": "行业 · 医疗与生命科学",
+      "vi": "Ngành · Y tế & Khoa học sự sống",
+      "th": "อุตสาหกรรม · การแพทย์และวิทยาศาสตร์ชีวภาพ"
+    },
+    "title": {
+      "en": "Medical, Pharmaceutical & Life Science Labels",
+      "zh": "医疗、制药与生命科学标签",
+      "vi": "Nhãn Y tế, Dược phẩm & Khoa học sự sống",
+      "th": "ฉลากการแพทย์ เภสัชกรรม และวิทยาศาสตร์ชีวภาพ"
+    },
+    "slogan": {
+      "en": "From blood bags to biobanks — labels that survive sterilization, LN₂ and freeze-thaw",
+      "zh": "从血袋到生物样本库 —— 耐灭菌、液氮与反复冻融的标签",
+      "vi": "Từ túi máu đến biobank — nhãn chịu tiệt trùng, LN₂ và đông-rã",
+      "th": "จากถุงเลือดถึงไบโอแบงก์ — ฉลากที่ทนการฆ่าเชื้อ LN₂ และแช่แข็ง-ละลาย"
+    }
+  },
+  "overview": {
+    "en": [
+      "Medical devices, pharmaceuticals, IVD workflows and life-science samples depend on accurate identification at every stage — through sterilization, disinfectants, refrigeration, deep freezing, liquid nitrogen and repeated handling. ETIA matches medical-grade, low-migration label materials to the complete workflow, not a single exposure. Choose an application to see the matching materials."
+    ],
+    "zh": [
+      "医疗器械、药品、IVD 流程与生命科学样本在每个阶段都依赖准确标识 —— 历经灭菌、消毒剂、冷藏、深冻、液氮与反复搬运。ETIA 以医用级、低迁移标签材料匹配完整流程，而非单一暴露。选择应用查看对应材料。"
+    ],
+    "vi": [
+      "Thiết bị y tế, dược phẩm, quy trình IVD và mẫu khoa học sự sống phụ thuộc vào nhận diện chính xác ở mọi giai đoạn — qua tiệt trùng, chất khử trùng, làm lạnh, đông sâu, nitơ lỏng và thao tác lặp lại. ETIA chọn vật liệu nhãn cấp y tế, thấp di trú cho toàn quy trình. Chọn ứng dụng để xem vật liệu phù hợp."
+    ],
+    "th": [
+      "อุปกรณ์การแพทย์ เภสัชภัณฑ์ กระบวนการ IVD และตัวอย่างวิทยาศาสตร์ชีวภาพต้องการการระบุที่แม่นยำทุกขั้นตอน — ผ่านการฆ่าเชื้อ น้ำยาฆ่าเชื้อ การแช่เย็น แช่แข็งลึก ไนโตรเจนเหลว และการจับซ้ำ ETIA จับคู่วัสดุฉลากเกรดการแพทย์อพยพต่ำกับทั้งกระบวนการ เลือกการใช้งานเพื่อดูวัสดุที่เหมาะสม"
+    ]
+  },
+  "classify_by": {
+    "en": "Choose an application",
+    "zh": "选择应用",
+    "vi": "Chọn ứng dụng",
+    "th": "เลือกการใช้งาน"
+  },
+  "tiers": [
+    {
+      "tab": {
+        "en": "Blood Bags",
+        "zh": "血袋",
+        "vi": "Túi máu",
+        "th": "ถุงเลือด"
+      },
+      "name": {
+        "en": "Blood Bags & Transfusion",
+        "zh": "血袋与输血",
+        "vi": "Túi máu & Truyền máu",
+        "th": "ถุงเลือดและการถ่ายเลือด"
+      },
+      "intro": {
+        "en": "Flexible, plasticizer-resistant labels for PVC blood bags and transfusion sets — staying legible through refrigeration, freezing and repeated handling.",
+        "zh": "适用于 PVC 血袋与输血器具的柔性、耐增塑剂标签 —— 历经冷藏、冷冻与反复搬运仍清晰可读。",
+        "vi": "Nhãn dẻo, chống hóa dẻo cho túi máu PVC và bộ truyền máu — vẫn rõ nét qua làm lạnh, đông và thao tác lặp lại.",
+        "th": "ฉลากยืดหยุ่นทนพลาสติไซเซอร์สำหรับถุงเลือด PVC และชุดถ่ายเลือด — คงอ่านได้ผ่านการแช่เย็น แช่แข็ง และการจับซ้ำ"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": {
+            "en": "E-4802 — Transparent PO Cryo Blood-Bag Label",
+            "zh": "E-4802 透明 PO 液氮血袋标签",
+            "vi": "E-4802 — Nhãn túi máu đông lạnh PO trong suốt",
+            "th": "E-4802 — ฉลากถุงเลือดไครโอ PO ใส"
+          },
+          "line": {
+            "en": "−196°C~100°C · 2mil Transparent PO · thermal transfer, 10× freeze-thaw, DMSO/methanol/IPA resistant · FDA, ISO3826 · blood bags & biobank cryovials",
+            "zh": "−196℃~100℃ · 2mil 透明 PO · 支持热转印，耐 10 次冻融，耐 DMSO/甲醇/异丙醇 · FDA、ISO3826 · 血站血袋与生物样本库冻存管",
+            "vi": "−196°C~100°C · PO trong suốt 2mil · in truyền nhiệt, 10 lần đông-rã, chịu DMSO/methanol/IPA · FDA, ISO3826 · túi máu & ống trữ ngân hàng sinh học",
+            "th": "−196°C~100°C · PO ใส 2mil · พิมพ์ถ่ายโอนความร้อน แช่แข็ง-ละลาย 10 ครั้ง ทน DMSO/เมทานอล/IPA · FDA, ISO3826 · ถุงเลือดและหลอดเก็บไบโอแบงก์"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-4853 — 1mil Ultra-Thin PE Soft Blood-Bag Label",
+            "zh": "E-4853 1mil 超薄 PE 软质血袋专用标签",
+            "vi": "E-4853 — Nhãn túi máu mềm PE siêu mỏng 1mil",
+            "th": "E-4853 — ฉลากถุงเลือดนุ่ม PE บางพิเศษ 1mil"
+          },
+          "line": {
+            "en": "−80°C~120°C · 1mil White PE + plasticizer-resistant acrylic PSA · industry ultra-thin 1mil flexible film, resists PVC plasticizer migration for lasting bond, citric-acid & disinfectant resistant, flat/low-curve tubing only (no spheres) · FDA, ISO3826 · soft PVC blood bags, micro blood-collection tubes, flexible consumables",
+            "zh": "−80℃~120℃ · 1mil 白色 PE + 耐增塑剂丙烯酸胶 · 行业超薄 1mil 柔性材质，抵抗 PVC 血袋增塑剂迁移长期贴合不脱落，耐柠檬酸与医用消毒液，仅适配扁平/小弧度管材禁止球面 · FDA、ISO3826 · 软 PVC 血袋、微量采血管、柔性医用耗材",
+            "vi": "−80°C~120°C · PE trắng 1mil + keo acrylic chống hóa dẻo · màng mềm siêu mỏng 1mil, chống di trú hóa dẻo PVC bám lâu dài, chịu axit citric & chất khử trùng, chỉ dùng ống phẳng/ít cong (không cầu) · FDA, ISO3826 · túi máu PVC mềm, ống lấy máu vi lượng, vật tư mềm",
+            "th": "−80°C~120°C · PE ขาว 1mil + กาวอะคริลิกทนพลาสติไซเซอร์ · ฟิล์มยืดหยุ่นบางพิเศษ 1mil ต้านการอพยพพลาสติไซเซอร์ PVC ยึดติดนาน ทนกรดซิตริกและน้ำยาฆ่าเชื้อ ใช้เฉพาะหลอดแบน/โค้งน้อย (ห้ามผิวทรงกลม) · FDA, ISO3826 · ถุงเลือด PVC นุ่ม หลอดเก็บเลือดขนาดจิ๋ว วัสดุสิ้นเปลืองแบบยืดหยุ่น"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-4513 — Universal Medical PP Blood-Bag / Tube Label",
+            "zh": "E-4513 通用医用 PP 血袋/试管两用标签",
+            "vi": "E-4513 — Nhãn PP y tế đa dụng túi máu / ống nghiệm",
+            "th": "E-4513 — ฉลาก PP การแพทย์อเนกประสงค์ถุงเลือด/หลอด"
+          },
+          "line": {
+            "en": "−80°C~120°C · 2mil White PP + water-based balanced acrylic PSA · waterproof & tear-resistant, resists medical solvents, writable, fits PVC blood bags, glass tubes & power cables, medium tack with no residue · ROHS · hospital labs, temporary power-asset marking, small reagent bottles",
+            "zh": "−80℃~120℃ · 2mil 白色 PP + 水性平衡丙烯酸胶 · 防水抗撕裂、耐各类医用溶剂，可手写，适配 PVC 血袋、玻璃试管、电力线缆，中等粘力无残胶 · ROHS · 医院检验科、电力资产临时标识、小型试剂瓶",
+            "vi": "−80°C~120°C · PP trắng 2mil + keo acrylic gốc nước cân bằng · chống nước & chống rách, chịu dung môi y tế, viết được, vừa túi máu PVC, ống thủy tinh & cáp điện, độ dính trung bình không để lại keo · ROHS · phòng lab bệnh viện, đánh dấu tài sản điện tạm thời, chai thuốc thử nhỏ",
+            "th": "−80°C~120°C · PP ขาว 2mil + กาวอะคริลิกฐานน้ำสมดุล · กันน้ำและทนการฉีกขาด ทนตัวทำละลายการแพทย์ เขียนได้ เข้ากับถุงเลือด PVC หลอดแก้วและสายไฟ ความเหนียวปานกลางไม่ทิ้งคราบ · ROHS · แล็บโรงพยาบาล การทำเครื่องหมายทรัพย์สินไฟฟ้าชั่วคราว ขวดน้ำยาขนาดเล็ก"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-4533 — Thick PP Blood-Bag Label",
+            "zh": "E-4533 加厚血袋专用 PP 标签",
+            "vi": "E-4533 — Nhãn PP dày chuyên dụng túi máu",
+            "th": "E-4533 — ฉลาก PP หนาสำหรับถุงเลือด"
+          },
+          "line": {
+            "en": "−40°C~120°C · 3mil White PP + blood-bag balanced acrylic PSA · thick face resists creasing on flexible bag curves, resists PVC plasticizer migration, alcohol-disinfection resistant, rub-resistant thermal print (not for spherical containers) · FDA blood-bag standard · single-use PVC blood bags, wide-mouth vials, indoor cable marking",
+            "zh": "−40℃~120℃ · 3mil 白色 PP + 血袋平衡丙烯酸胶 · 加厚面材抗弯折适配血袋柔性曲面，耐 PVC 增塑剂迁移，耐酒精消毒，热转印字迹耐摩擦（不可贴球面容器） · FDA 血袋标准 · 一次性 PVC 血袋、大口径药瓶、室内线缆标识",
+            "vi": "−40°C~120°C · PP trắng 3mil + keo acrylic cân bằng túi máu · mặt dày chống gấp trên cong túi mềm, chống di trú hóa dẻo PVC, chịu khử trùng cồn, chữ in truyền nhiệt chống mài (không dùng bình cầu) · tiêu chuẩn túi máu FDA · túi máu PVC dùng một lần, lọ miệng rộng, đánh dấu cáp trong nhà",
+            "th": "−40°C~120°C · PP ขาว 3mil + กาวอะคริลิกสมดุลถุงเลือด · หน้าฟิล์มหนาต้านการยับบนโค้งถุงนุ่ม ต้านการอพยพพลาสติไซเซอร์ PVC ทนการฆ่าเชื้อด้วยแอลกอฮอล์ พิมพ์ถ่ายโอนความร้อนทนการเสียดสี (ห้ามภาชนะทรงกลม) · มาตรฐานถุงเลือด FDA · ถุงเลือด PVC ใช้ครั้งเดียว ขวดปากกว้าง การทำเครื่องหมายสายเคเบิลในอาคาร"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "tab": {
+        "en": "Cryo & Biobank",
+        "zh": "深冷与样本库",
+        "vi": "Siêu lạnh & Biobank",
+        "th": "ไครโอ & ไบโอแบงก์"
+      },
+      "name": {
+        "en": "Cryogenic & Biobank Storage",
+        "zh": "深冷与生物样本库存储",
+        "vi": "Lưu trữ siêu lạnh & Biobank",
+        "th": "การเก็บไครโอเจนิกและไบโอแบงก์"
+      },
+      "intro": {
+        "en": "Liquid-nitrogen and deep-freeze labels for cryovials, biobanks and cell & gene therapy — surviving −196°C and repeated freeze-thaw with low-migration adhesives.",
+        "zh": "适用于冻存管、生物样本库与细胞及基因治疗的液氮与深冻标签 —— 采用低迁移胶水，可承受 −196°C 与反复冻融。",
+        "vi": "Nhãn nitơ lỏng và đông sâu cho ống trữ, ngân hàng sinh học và liệu pháp tế bào & gen — chịu −196°C và đông-rã lặp lại với keo thấp di trú.",
+        "th": "ฉลากไนโตรเจนเหลวและแช่แข็งลึกสำหรับหลอดไครโอ ไบโอแบงก์ และเซลล์และยีนบำบัด — ทน −196°C และแช่แข็ง-ละลายซ้ำด้วยกาวอพยพต่ำ"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": {
+            "en": "E-4812 — White PO Cryogenic Storage Label",
+            "zh": "E-4812 白色 PO 液氮冻存标签",
+            "vi": "E-4812 — Nhãn trữ đông lạnh PO trắng",
+            "th": "E-4812 — ฉลากเก็บไครโอ PO ขาว"
+          },
+          "line": {
+            "en": "−196°C~100°C · 2mil White PO · high-contrast thermal transfer, −196°C LN2 immersion, 10× freeze-thaw, lab-solvent resistant · FDA · research biobanks, stem-cell & gene cryovials, dry-ice shipping",
+            "zh": "−196℃~100℃ · 2mil 白色 PO · 热转印对比度高，耐 −196℃液氮浸泡与 10 次反复冻融，耐各类实验室有机溶剂 · FDA · 科研样本库、干细胞与基因细胞冻存管、干冰运输容器",
+            "vi": "−196°C~100°C · PO trắng 2mil · in truyền nhiệt tương phản cao, ngâm LN2 −196°C, 10 lần đông-rã, chịu dung môi phòng thí nghiệm · FDA · ngân hàng sinh học, ống trữ tế bào gốc & gen, vận chuyển đá khô",
+            "th": "−196°C~100°C · PO ขาว 2mil · พิมพ์ถ่ายโอนความร้อนคอนทราสต์สูง แช่ LN2 −196°C แช่แข็ง-ละลาย 10 ครั้ง ทนตัวทำละลายห้องแล็บ · FDA · ไบโอแบงก์วิจัย หลอดสเต็มเซลล์และยีน การขนส่งน้ำแข็งแห้ง"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-4813 — White PP Liquid-Nitrogen-Grade Cryo Label",
+            "zh": "E-4813 白色 PP 液氮级冻存标签",
+            "vi": "E-4813 — Nhãn đông lạnh PP trắng cấp nitơ lỏng",
+            "th": "E-4813 — ฉลากไครโอ PP ขาวเกรดไนโตรเจนเหลว"
+          },
+          "line": {
+            "en": "−196°C~120°C · 2mil White PP · 10× freeze-thaw, waterproof & tear-resistant, alcohol & biochemical-reagent resistant, long-term −80°C deep freeze · FDA · biobanks, clinical-lab tubes, reagent bottles",
+            "zh": "−196℃~120℃ · 2mil 白色 PP · 耐 10 次冻融，防水抗撕裂，耐消毒酒精与各类生化试剂，可长期 −80℃深冻存储 · FDA · 生物样本库、检验科试管、生物试剂瓶",
+            "vi": "−196°C~120°C · PP trắng 2mil · 10 lần đông-rã, chống nước & chống rách, chịu cồn & thuốc thử sinh hóa, đông sâu −80°C dài hạn · FDA · ngân hàng sinh học, ống xét nghiệm, chai thuốc thử",
+            "th": "−196°C~120°C · PP ขาว 2mil · แช่แข็ง-ละลาย 10 ครั้ง กันน้ำและทนการฉีกขาด ทนแอลกอฮอล์และน้ำยาชีวเคมี แช่แข็งลึก −80°C ระยะยาว · FDA · ไบโอแบงก์ หลอดแล็บคลินิก ขวดน้ำยา"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-4834 — 2mil Ultra-Thin PO High Freeze-Thaw Cell Label",
+            "zh": "E-4834 2mil 超薄 PO 高耐冻融细胞标签",
+            "vi": "E-4834 — Nhãn tế bào PO siêu mỏng 2mil chịu đông-rã cao",
+            "th": "E-4834 — ฉลากเซลล์ PO บางพิเศษ 2mil ทนแช่แข็ง-ละลายสูง"
+          },
+          "line": {
+            "en": "−196°C~120°C · 2mil White PO · up to 15× LN2 freeze-thaw, low-migration & non-cytotoxic, strong-acid & DMSO resistant, ultra-thin no lift · ISO10993 biocompatibility, FDA · gene-therapy samples, stem-cell banks, single-cell cryovials",
+            "zh": "−196℃~120℃ · 2mil 白色 PO · 最高耐受 15 次液氮冻融循环，低胶迁移、无细胞毒性，耐强酸与二甲亚砜，超薄不翘边 · ISO10993 生物相容性、FDA · 基因治疗样本、干细胞库、单细胞冻存管",
+            "vi": "−196°C~120°C · PO trắng 2mil · tối đa 15 lần đông-rã LN2, thấp di trú & không độc tế bào, chịu axit mạnh & DMSO, siêu mỏng không bong · ISO10993 tương thích sinh học, FDA · mẫu liệu pháp gen, ngân hàng tế bào gốc, ống đơn bào",
+            "th": "−196°C~120°C · PO ขาว 2mil · แช่แข็ง-ละลาย LN2 สูงสุด 15 ครั้ง อพยพต่ำและไม่เป็นพิษต่อเซลล์ ทนกรดแก่และ DMSO บางพิเศษไม่เผยอ · ISO10993 ความเข้ากันได้ทางชีวภาพ, FDA · ตัวอย่างยีนบำบัด ธนาคารสเต็มเซลล์ หลอดเซลล์เดี่ยว"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-6333 — 3mil White PE Rubber-Adhesive Cryo Label",
+            "zh": "E-6333 3mil 白色 PE 橡胶低温胶超低温标签",
+            "vi": "E-6333 — Nhãn đông lạnh PE trắng keo cao su 3mil",
+            "th": "E-6333 — ฉลากไครโอ PE ขาวกาวยาง 3mil"
+          },
+          "line": {
+            "en": "−196°C~110°C · 3mil White PE + rubber cryo adhesive · apply directly to frozen tube walls, DMSO & cell-lysis resistant, autoclavable, conforms to tight curves · ROHS, REACH · vaccine storage, CAR-T cryostorage, lab dry-ice/LN2",
+            "zh": "−196℃~110℃ · 3mil 白色 PE + 橡胶基超低温胶 · 可直接在冷冻管壁贴标，耐 DMSO 与细胞裂解试剂，可耐高压蒸汽灭菌，柔软贴合极小弧度试管 · ROHS、REACH · 疫苗存储、CAR-T 细胞冻存、实验室干冰/液氮工况",
+            "vi": "−196°C~110°C · PE trắng 3mil + keo cao su đông lạnh · dán trực tiếp lên thành ống đông, chịu DMSO & ly giải tế bào, hấp tiệt trùng được, ôm cong hẹp · ROHS, REACH · trữ vắc-xin, đông lạnh CAR-T, đá khô/LN2 phòng lab",
+            "th": "−196°C~110°C · PE ขาว 3mil + กาวยางไครโอ · ติดผนังหลอดแช่แข็งได้โดยตรง ทน DMSO และน้ำยาสลายเซลล์ ออโตเคลฟได้ แนบโค้งแคบ · ROHS, REACH · เก็บวัคซีน แช่แข็ง CAR-T งานน้ำแข็งแห้ง/LN2 ในแล็บ"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "Flexcon CryoFlex FLX070806 — 1mil Ultra-Thin PP Premium Cryo Label",
+            "zh": "Flexcon CryoFlex FLX070806 1mil 超薄 PP 高端冻存标签",
+            "vi": "Flexcon CryoFlex FLX070806 — Nhãn đông lạnh cao cấp PP siêu mỏng 1mil",
+            "th": "Flexcon CryoFlex FLX070806 — ฉลากไครโอพรีเมียม PP บางพิเศษ 1mil"
+          },
+          "line": {
+            "en": "−196°C~135°C · 1mil Matte Transparent PP + cryo high-tack PSA · imported ultra-thin 1mil, apply direct to −196°C tube walls, DMSO & cell-reagent resistant, 10× freeze-thaw, fits PP cryovials & EVA bags · FDA, international biobank standards · premium stem-cell banks, CAR-T therapy, overseas bio-labs, premium blood bags",
+            "zh": "−196℃~135℃ · 1mil 透明雾面 PP + 超低温高粘胶 · 进口超薄 1mil 材质，可直接贴 −196℃冷冻管壁，耐 DMSO 与各类细胞试剂，耐 10 次冻融，适配 PP 冻存管与 EVA 血袋 · FDA、生物样本库国际标准 · 高端干细胞库、CAR-T 治疗、海外生物实验室、血站高端血袋标识",
+            "vi": "−196°C~135°C · PP trong mờ 1mil + keo bám cao đông lạnh · nhập khẩu siêu mỏng 1mil, dán trực tiếp thành ống −196°C, chịu DMSO & thuốc thử tế bào, 10 lần đông-rã, vừa ống trữ PP & túi EVA · FDA, tiêu chuẩn ngân hàng sinh học quốc tế · ngân hàng tế bào gốc cao cấp, liệu pháp CAR-T, phòng lab sinh học nước ngoài, túi máu cao cấp",
+            "th": "−196°C~135°C · PP ใสด้าน 1mil + กาวเหนียวสูงไครโอ · นำเข้าบางพิเศษ 1mil ติดผนังหลอด −196°C ได้โดยตรง ทน DMSO และน้ำยาเซลล์ แช่แข็ง-ละลาย 10 ครั้ง เข้ากับหลอด PP และถุง EVA · FDA มาตรฐานไบโอแบงก์สากล · ธนาคารสเต็มเซลล์พรีเมียม การบำบัด CAR-T แล็บชีวภาพต่างประเทศ ถุงเลือดพรีเมียม"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "Avery Dennison AZ452 — White PP Cryogenic Sample-Tracking Label",
+            "zh": "Avery Dennison AZ452 白色 PP 超低温样本追溯标签",
+            "vi": "Avery Dennison AZ452 — Nhãn truy xuất mẫu đông lạnh PP trắng",
+            "th": "Avery Dennison AZ452 — ฉลากติดตามตัวอย่างไครโอ PP ขาว"
+          },
+          "line": {
+            "en": "−196°C~120°C · 2mil White PP · very high barcode contrast, LN2 freeze-thaw & disinfectant resistant, low-migration biosafe adhesive, excellent curved-surface adhesion · FDA, ISEGA · reference labs, hospital sample banks, long-term biosample tracking",
+            "zh": "−196℃~120℃ · 2mil 白色 PP · 白底热转印条码对比度极高，耐液氮冻融与医用消毒剂，低胶迁移符合生物安全，曲面附着力优异 · FDA、ISEGA · 第三方医学检测机构、三甲医院样本库、长期生物样本追溯",
+            "vi": "−196°C~120°C · PP trắng 2mil · mã vạch tương phản rất cao, chịu đông-rã LN2 & chất khử trùng, keo thấp di trú an toàn sinh học, bám cong xuất sắc · FDA, ISEGA · phòng xét nghiệm tham chiếu, ngân hàng mẫu bệnh viện, truy xuất mẫu dài hạn",
+            "th": "−196°C~120°C · PP ขาว 2mil · บาร์โค้ดคอนทราสต์สูงมาก ทนแช่แข็ง-ละลาย LN2 และน้ำยาฆ่าเชื้อ กาวอพยพต่ำปลอดภัยชีวภาพ ยึดผิวโค้งดีเยี่ยม · FDA, ISEGA · แล็บอ้างอิง ธนาคารตัวอย่างโรงพยาบาล การติดตามตัวอย่างระยะยาว"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "tab": {
+        "en": "Reagent & Vial",
+        "zh": "试剂与样品瓶",
+        "vi": "Thuốc thử & Lọ",
+        "th": "น้ำยา & หลอด"
+      },
+      "name": {
+        "en": "Reagent, Vial & Tube",
+        "zh": "试剂、样品瓶与试管",
+        "vi": "Thuốc thử, Lọ & Ống",
+        "th": "น้ำยา หลอด และหลอดทดลอง"
+      },
+      "intro": {
+        "en": "Waterproof, solvent-resistant and removable labels for reagent bottles, small vials, tubes and thin medical cables — clean-peel or permanent as the workflow needs.",
+        "zh": "适用于试剂瓶、小样品瓶、试管与细医疗线缆的防水、耐溶剂与可移除标签 —— 按流程需要选择洁净可撕或永久粘贴。",
+        "vi": "Nhãn chống nước, chịu dung môi và tháo được cho chai thuốc thử, lọ nhỏ, ống và cáp y tế mảnh — bóc sạch hoặc vĩnh viễn tùy quy trình.",
+        "th": "ฉลากกันน้ำ ทนตัวทำละลาย และถอดออกได้สำหรับขวดน้ำยา หลอดเล็ก หลอดทดลอง และสายเคเบิลการแพทย์บาง — ลอกสะอาดหรือถาวรตามงาน"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": {
+            "en": "E-4501 — Universal Medical PP Reagent-Bottle Label",
+            "zh": "E-4501 通用医用 PP 试剂瓶标签",
+            "vi": "E-4501 — Nhãn PP y tế đa dụng chai thuốc thử",
+            "th": "E-4501 — ฉลาก PP การแพทย์อเนกประสงค์ขวดน้ำยา"
+          },
+          "line": {
+            "en": "−40°C~120°C · 2mil White PP + medium-tack medical acrylic PSA · waterproof, ethanol & weak-acid resistant, writable and thermal-transfer, medium tack for plastic & glass reagent bottles and sample tubes, low extractables · REACH · IVD reagent bottles, hospital sample tubes, lab consumables",
+            "zh": "−40℃~120℃ · 2mil 白色 PP + 中粘医用丙烯酸胶 · 防水耐乙醇、弱酸，支持手写与热转印，中等粘性适配塑料、玻璃试剂瓶、采样管，低析出 · REACH · 体外检测试剂瓶、医院采样管、实验室耗材",
+            "vi": "−40°C~120°C · PP trắng 2mil + keo acrylic y tế độ dính trung bình · chống nước, chịu ethanol & axit yếu, viết được và in truyền nhiệt, độ dính trung bình cho chai thuốc thử nhựa & thủy tinh và ống mẫu, ít chất chiết · REACH · chai thuốc thử IVD, ống mẫu bệnh viện, vật tư phòng lab",
+            "th": "−40°C~120°C · PP ขาว 2mil + กาวอะคริลิกการแพทย์เหนียวปานกลาง · กันน้ำ ทนเอทานอลและกรดอ่อน เขียนได้และพิมพ์ถ่ายโอนความร้อน เหนียวปานกลางเข้ากับขวดน้ำยาพลาสติกและแก้วและหลอดตัวอย่าง สารสกัดต่ำ · REACH · ขวดน้ำยา IVD หลอดตัวอย่างโรงพยาบาล วัสดุสิ้นเปลืองแล็บ"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-4232 — Small-Vial Synthetic-Paper Label",
+            "zh": "E-4232 小口径药瓶合成纸标签",
+            "vi": "E-4232 — Nhãn giấy tổng hợp lọ nhỏ",
+            "th": "E-4232 — ฉลากกระดาษสังเคราะห์ขวดปากเล็ก"
+          },
+          "line": {
+            "en": "−20°C~80°C · 2mil Medical synthetic paper + low-migration acrylic PSA · extreme anti-edge-lift, fits tiny-curve blood-collection & centrifuge tubes, waterproof/oilproof & medical-alcohol resistant, dual writable + thermal-transfer, no adhesive residue · REACH medical low-migration standard · small medicine vials, lab blood-collection tubes, single-use syringe marking",
+            "zh": "−20℃~80℃ · 2mil 医用合成纸 + 低析出丙烯酸胶 · 极致抗边缘翘曲，适配极小曲面采血管、离心管，防水防油耐医用酒精，可手写+热转印双打印，无胶残留 · REACH 医用低析出标准 · 药品小药瓶、检验科采血管、一次性注射器标识",
+            "vi": "−20°C~80°C · giấy tổng hợp y tế 2mil + keo acrylic thấp di trú · chống bong mép cực tốt, vừa ống lấy máu & ly tâm cong nhỏ, chống nước/dầu & chịu cồn y tế, viết được + in truyền nhiệt, không cặn keo · chuẩn thấp di trú y tế REACH · lọ thuốc nhỏ, ống lấy máu phòng lab, đánh dấu bơm tiêm dùng một lần",
+            "th": "−20°C~80°C · กระดาษสังเคราะห์การแพทย์ 2mil + กาวอะคริลิกอพยพต่ำ · ต้านการเผยอขอบสูงสุด เข้ากับหลอดเก็บเลือดและปั่นเหวี่ยงโค้งเล็ก กันน้ำ/น้ำมันและทนแอลกอฮอล์การแพทย์ เขียนได้+พิมพ์ถ่ายโอนความร้อน ไม่มีคราบกาว · มาตรฐานอพยพต่ำการแพทย์ REACH · ขวดยาขนาดเล็ก หลอดเก็บเลือดในแล็บ การทำเครื่องหมายกระบอกฉีดยาใช้ครั้งเดียว"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-4312 — 2mil White Removable Medical PP Label",
+            "zh": "E-4312 2mil 白色可移除医用 PP 标签",
+            "vi": "E-4312 — Nhãn PP y tế trắng tháo được 2mil",
+            "th": "E-4312 — ฉลาก PP การแพทย์ขาวลอกออกได้ 2mil"
+          },
+          "line": {
+            "en": "−30°C~110°C · 2mil White PP + low-residue removable medical PSA · gentle clean removal with no residue, waterproof and disinfectant resistant, writable, fits single-use consumables, low-extractable medical grade · REACH · temporary sorting of single-use instruments, medical tote marking",
+            "zh": "−30℃~110℃ · 2mil 白色 PP + 低残留可移除医用胶 · 温和剥离无残胶，防水耐医用消毒试剂，可手写，适配一次性医疗耗材，低析出医用级 · REACH · 一次性器械临时分类、医疗周转箱标识",
+            "vi": "−30°C~110°C · PP trắng 2mil + keo y tế tháo được ít cặn · gỡ nhẹ sạch không để lại keo, chống nước và chịu chất khử trùng, viết được, vừa vật tư dùng một lần, cấp y tế ít chất chiết · REACH · phân loại tạm dụng cụ dùng một lần, đánh dấu thùng y tế",
+            "th": "−30°C~110°C · PP ขาว 2mil + กาวการแพทย์ลอกออกได้คราบต่ำ · ลอกนุ่มสะอาดไม่ทิ้งคราบ กันน้ำและทนน้ำยาฆ่าเชื้อ เขียนได้ เข้ากับวัสดุสิ้นเปลืองใช้ครั้งเดียว เกรดการแพทย์สารสกัดต่ำ · REACH · การจัดหมวดเครื่องมือใช้ครั้งเดียวชั่วคราว การทำเครื่องหมายกล่องขนส่งการแพทย์"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-4633 — 3mil Removable Medical PP Synthetic Paper",
+            "zh": "E-4633 3mil 可移除医用 PP 合成纸",
+            "vi": "E-4633 — Giấy tổng hợp PP y tế tháo được 3mil",
+            "th": "E-4633 — กระดาษสังเคราะห์ PP การแพทย์ลอกออกได้ 3mil"
+          },
+          "line": {
+            "en": "−40°C~120°C · 3mil White PP synthetic paper + removable acrylic PSA · peels clean with no residue, waterproof & anti-lift, writable and thermal-transfer, medical-alcohol & weak-acid resistant, low extractables to medical standard · REACH · temporary infusion-bottle marking, IVD test kits, temporary hospital tube sorting",
+            "zh": "−40℃~120℃ · 3mil 白色 PP 合成纸 + 可移除丙烯酸胶 · 可移除剥离无残胶，防水抗翘边，可手写与热转印，耐医用酒精与弱酸，低析出符合医用标准 · REACH · 输液瓶临时标识、体外检测试剂盒、医院临时试管分类标签",
+            "vi": "−40°C~120°C · giấy tổng hợp PP trắng 3mil + keo acrylic tháo được · gỡ sạch không để lại keo, chống nước & chống bong, viết được và in truyền nhiệt, chịu cồn y tế & axit yếu, ít chất chiết đạt chuẩn y tế · REACH · đánh dấu chai truyền tạm, bộ kit IVD, phân loại ống bệnh viện tạm thời",
+            "th": "−40°C~120°C · กระดาษสังเคราะห์ PP ขาว 3mil + กาวอะคริลิกลอกออกได้ · ลอกสะอาดไม่ทิ้งคราบ กันน้ำและกันเผยอ เขียนได้และพิมพ์ถ่ายโอนความร้อน ทนแอลกอฮอล์การแพทย์และกรดอ่อน สารสกัดต่ำตามมาตรฐานการแพทย์ · REACH · การทำเครื่องหมายขวดน้ำเกลือชั่วคราว ชุดทดสอบ IVD การจัดหมวดหลอดโรงพยาบาลชั่วคราว"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-4532 — Thin Medical Cable PP Label",
+            "zh": "E-4532 薄款医用线缆 PP 标签",
+            "vi": "E-4532 — Nhãn PP cáp y tế mỏng",
+            "th": "E-4532 — ฉลาก PP สายเคเบิลการแพทย์แบบบาง"
+          },
+          "line": {
+            "en": "−40°C~120°C · 2mil White PP + thin low-tack acrylic PSA · ultra-thin and flexible for wrap-around harness labeling without lifting, writable & thermal-transfer, waterproof & moisture-proof, low-tack clean removal · medical-device internal cables, fiber optics, instrument harness marking",
+            "zh": "−40℃~120℃ · 2mil 白色 PP + 薄型低粘丙烯酸胶 · 超薄柔软线束环贴不开胶，支持手写与热转印，防水防潮，低粘剥离无残胶 · 医疗设备内部线缆、光纤、医用仪器线束标识",
+            "vi": "−40°C~120°C · PP trắng 2mil + keo acrylic mỏng độ dính thấp · siêu mỏng và mềm để dán quấn bó dây không bong, viết được & in truyền nhiệt, chống nước & chống ẩm, độ dính thấp gỡ sạch · cáp nội bộ thiết bị y tế, cáp quang, đánh dấu bó dây thiết bị",
+            "th": "−40°C~120°C · PP ขาว 2mil + กาวอะคริลิกบางเหนียวต่ำ · บางพิเศษและยืดหยุ่นสำหรับติดพันสายไม่เผยอ เขียนได้และพิมพ์ถ่ายโอนความร้อน กันน้ำและกันความชื้น เหนียวต่ำลอกสะอาด · สายเคเบิลภายในอุปกรณ์การแพทย์ ใยแก้วนำแสง การทำเครื่องหมายชุดสายอุปกรณ์"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "tab": {
+        "en": "Sterilization",
+        "zh": "灭菌",
+        "vi": "Tiệt trùng",
+        "th": "การฆ่าเชื้อ"
+      },
+      "name": {
+        "en": "Sterilization-Resistant",
+        "zh": "耐灭菌",
+        "vi": "Chịu tiệt trùng",
+        "th": "ทนการฆ่าเชื้อ"
+      },
+      "intro": {
+        "en": "Labels that stay bonded and readable through validated sterilization — EO, gamma, e-beam, autoclave and chemical disinfection.",
+        "zh": "在经验证的灭菌流程中保持粘附与可读的标签 —— 环氧乙烷、伽马、电子束、高压蒸汽与化学消毒。",
+        "vi": "Nhãn vẫn bám và đọc được qua tiệt trùng đã kiểm định — EO, gamma, chùm điện tử, hấp và khử trùng hóa chất.",
+        "th": "ฉลากที่ยังยึดติดและอ่านได้ผ่านการฆ่าเชื้อที่ผ่านการตรวจสอบ — EO แกมมา ลำอิเล็กตรอน ออโตเคลฟ และการฆ่าเชื้อด้วยสารเคมี"
+      },
+      "img": "",
+      "products": [
+        {
+          "name": {
+            "en": "E-5532 — Multi-Sterilization Medical PO Label",
+            "zh": "E-5532 多灭菌方式医疗 PO 标签",
+            "vi": "E-5532 — Nhãn PO y tế đa tiệt trùng",
+            "th": "E-5532 — ฉลาก PO การแพทย์ฆ่าเชื้อหลายวิธี"
+          },
+          "line": {
+            "en": "−80°C~134°C · 2mil White PO + low-migration medical PSA · compatible with EO, gamma, e-beam & autoclave sterilization, non-cytotoxic with very low extractables, disinfectant resistant · ISO10993, FDA, ISEGA · Class III implants, infusion & blood bags, medical-consumable tracing",
+            "zh": "−80℃~134℃ · 2mil 白色 PO + 低迁移医用胶 · 兼容 EO 环氧乙烷、伽马射线、电子束、高压蒸汽 4 类灭菌，无细胞毒性、极低可析出物，耐医用消毒剂 · ISO10993、FDA、ISEGA · 三类植入医疗器械、输液袋、血袋、医用耗材追溯",
+            "vi": "−80°C~134°C · PO trắng 2mil + keo y tế thấp di trú · tương thích tiệt trùng EO, gamma, chùm điện tử & hấp áp lực, không độc tế bào với chất chiết cực thấp, chịu chất khử trùng · ISO10993, FDA, ISEGA · cấy ghép loại III, túi truyền & túi máu, truy xuất vật tư y tế",
+            "th": "−80°C~134°C · PO ขาว 2mil + กาวการแพทย์อพยพต่ำ · รองรับการฆ่าเชื้อ EO แกมมา ลำอิเล็กตรอน และออโตเคลฟ ไม่เป็นพิษต่อเซลล์และมีสารสกัดต่ำมาก ทนน้ำยาฆ่าเชื้อ · ISO10993, FDA, ISEGA · อุปกรณ์ฝังกลุ่ม III ถุงน้ำเกลือและถุงเลือด การติดตามวัสดุสิ้นเปลืองการแพทย์"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "Avery Dennison BB624 — Transparent PP Blood-Bag Sterilization Label",
+            "zh": "Avery Dennison BB624 透明 PP 血袋灭菌标签",
+            "vi": "Avery Dennison BB624 — Nhãn tiệt trùng túi máu PP trong suốt",
+            "th": "Avery Dennison BB624 — ฉลากฆ่าเชื้อถุงเลือด PP ใส"
+          },
+          "line": {
+            "en": "−196°C~120°C · 2mil Transparent PP · autoclave + cryo dual-duty, PVC plasticizer resistant, clear so samples stay visible · FDA, ISEGA, ISO3826 · vaccine cold chain, hospital blood bags & cryovials",
+            "zh": "−196℃~120℃ · 2mil 透明 PP · 兼容高压蒸汽灭菌与液氮冻存双工况，耐 PVC 增塑剂，透明不遮挡样本 · FDA、ISEGA、ISO3826 · 疫苗冷链、医院血袋与检验科冻存管",
+            "vi": "−196°C~120°C · PP trong suốt 2mil · vừa hấp tiệt trùng vừa đông lạnh, chống hóa dẻo PVC, trong suốt không che mẫu · FDA, ISEGA, ISO3826 · chuỗi lạnh vắc-xin, túi máu bệnh viện & ống trữ",
+            "th": "−196°C~120°C · PP ใส 2mil · ใช้ได้ทั้งออโตเคลฟและไครโอ ทนสารพลาสติไซเซอร์ PVC ใสไม่บังตัวอย่าง · FDA, ISEGA, ISO3826 · โซ่ความเย็นวัคซีน ถุงเลือดโรงพยาบาลและหลอดเก็บ"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        }
+      ]
+    }
+  ]
+}
