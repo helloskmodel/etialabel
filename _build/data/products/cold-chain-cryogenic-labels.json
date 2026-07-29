@@ -22,43 +22,6 @@
     "en": "Engineered for pharmaceutical, laboratory, and healthcare applications, our Cold Chain & Cryogenic Labels deliver reliable identification from refrigerated storage to liquid nitrogen environments. Designed to withstand freezing, thawing, and cryogenic conditions, they remain securely bonded and clearly readable throughout the product lifecycle.",
     "zh": "ETIA 低温与深低温系列标签专为制药、生命科学、实验室及医疗行业打造，覆盖冷藏、冷冻及液氮存储环境，在冻结、解冻及深低温工况下保持牢固粘接和清晰识别，满足样本、血液制品及药品全流程标识需求。"
   },
-  "highlight": {
-    "eyebrow": {
-      "en": "Our Core Product",
-      "zh": "我们的核心产品"
-    },
-    "title": {
-      "en": "E-4812 Cryogenic Label",
-      "zh": "E-4812 低温标签"
-    },
-    "body": {
-      "en": "The E-4812 is ETIA's core low-temperature label — proven for direct application in cryogenic environments and long-term liquid-nitrogen storage. It stays securely bonded and clearly readable through freezing, thawing and repeated freeze–thaw cycles down to −196°C.",
-      "zh": "E-4812 是 ETIA 的核心低温标签——可在深低温环境直贴、并长期用于液氮存储。在低至 −196°C 的冻结、解冻及反复冻融循环中，依然牢固粘接、清晰可读。"
-    },
-    "points": {
-      "en": [
-        "Reliable performance from ambient down to −196°C",
-        "Direct cryogenic application and long-term nitrogen storage",
-        "Resistant to moisture, condensation and freeze–thaw cycles",
-        "Durable barcode and thermal-transfer print quality"
-      ],
-      "zh": [
-        "覆盖常温至 −196°C 深低温环境",
-        "支持深低温直贴与液氮长期存储",
-        "耐潮湿、耐冷凝、耐冷热循环",
-        "条码与热转印打印持久清晰"
-      ]
-    },
-    "links": [
-      {
-        "slug": "e-4812",
-        "label": {
-          "en": "E-4812 Low Temperature Label",
-          "zh": "E-4812 低温标签"
-        }
-      }
-    ]
-  },
   "why": {
     "heading": {
       "en": "Why Cold Chain & Cryogenic Labels?",
