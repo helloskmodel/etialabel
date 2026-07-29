@@ -143,14 +143,14 @@
         "slug": "apex"
       },
       {
-        "name": "High-Temperature Labels",
+        "name": "Heat Resistant Labels",
         "model": "PI, hot-apply & heat treatment — up to 1000°C",
         "code": "",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
         "slug": "high-heat-identification"
       },
       {
-        "name": "Cold Chain & Cryogenic Labels",
+        "name": "Low Temperature Resistant Labels",
         "model": "Ambient to −196°C — cryogenic & cold chain",
         "code": "",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
@@ -307,7 +307,7 @@
         "slug": "high-heat-identification"
       },
       {
-        "name": "低温与深低温标签",
+        "name": "耐低温标签",
         "model": "常温至 −196°C · 深低温与冷链",
         "code": "",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
@@ -457,14 +457,14 @@
         "slug": "apex"
       },
       {
-        "name": "Nhãn nhiệt độ cao",
+        "name": "Nhãn chịu nhiệt",
         "model": "PI, dán nóng & xử lý nhiệt — đến 1000°C",
         "code": "",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
         "slug": "high-heat-identification"
       },
       {
-        "name": "Nhãn chuỗi lạnh & siêu lạnh",
+        "name": "Nhãn chịu nhiệt độ thấp",
         "model": "Nhiệt độ thường đến −196°C — siêu lạnh & chuỗi lạnh",
         "code": "",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
@@ -614,14 +614,14 @@
         "slug": "apex"
       },
       {
-        "name": "ฉลากทนอุณหภูมิสูง",
+        "name": "ฉลากทนความร้อน",
         "model": "PI ติดร้อนและการอบชุบความร้อน — สูงถึง 1000°C",
         "code": "",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
         "slug": "high-heat-identification"
       },
       {
-        "name": "ฉลากโซ่ความเย็นและอุณหภูมิต่ำมาก",
+        "name": "ฉลากทนอุณหภูมิต่ำ",
         "model": "อุณหภูมิห้องถึง −196°C — เย็นจัดและโซ่ความเย็น",
         "code": "",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
