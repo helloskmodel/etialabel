@@ -118,9 +118,13 @@ CSS = """
 .scntab{flex:none;font-size:13.5px;font-weight:700;line-height:1.25;padding:10px 16px;cursor:pointer;white-space:nowrap;background:transparent;color:#143C96;border:none;border-radius:9px 9px 0 0;position:relative;margin-bottom:-1px;font-family:inherit}
 .scntab.on{background:#5b6ee8;color:#fff}
 .scntab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#1A56DB}
-#scnpanel{margin-top:22px;max-width:760px;margin-left:auto;margin-right:auto}
+#scnpanel{margin-top:20px;max-width:760px;margin-left:auto;margin-right:auto}
 #scnpanel .pscncard+.pscncard{margin-top:14px}
-@media(max-width:760px){.scntab{font-size:12.5px;padding:9px 13px}}
+/* dimensional container around the temperature tabs + panel */
+.scnbox{background:#f4f7ff;border:1px solid #e3eaf6;border-radius:16px;padding:16px 18px 22px;box-shadow:0 8px 26px rgba(20,60,150,.08)}
+.scnbox .scnfcrow{border-bottom-color:#d6e0f2}
+#scnpanel .pscncard{background:#fff;border-color:#dbe6fb;box-shadow:0 6px 18px rgba(20,60,150,.1)}
+@media(max-width:760px){.scntab{font-size:12.5px;padding:9px 13px}.scnbox{padding:12px 12px 18px}}
 @media (max-width:760px){
   .phero .in{padding:26px 18px}.phero h1{font-size:24px}.phero .tl{font-size:15.5px}
   .psec{padding:20px 18px}.psec h2{font-size:20px}.psec .pos{font-size:14.5px;line-height:1.65}
@@ -189,11 +193,11 @@ def scenarios_html(items, ui):
         '<button type="button" class="scntab%s">%s</button>' % ((" on" if i == 0 else ""), esc(c["tab"]))
         for i, c in enumerate(cats))
     static_panel = cats[0]["html"] if cats else ""
-    bar = ('<div class="scnfc"><div class="scnfcrow">'
+    bar = ('<div class="scnbox"><div class="scnfc"><div class="scnfcrow">'
            '<button class="scnar" type="button" onclick="scnScroll(-1)">&lsaquo;</button>'
            '<div class="scntabs" id="scntabs">%s</div>'
            '<button class="scnar" type="button" onclick="scnScroll(1)">&rsaquo;</button>'
-           '</div><div id="scnpanel">%s</div></div>') % (static_tabs, static_panel)
+           '</div><div id="scnpanel">%s</div></div></div>') % (static_tabs, static_panel)
     js = ('<script>(function(){var C=%s;'
           'function render(i){var t=document.getElementById("scntabs"),p=document.getElementById("scnpanel");t.innerHTML="";'
           'C.forEach(function(c,j){var b=document.createElement("button");b.type="button";b.className="scntab"+(j===i?" on":"");'
@@ -264,7 +268,7 @@ def build_lang(d, lang):
         if L(w.get("items", {}), lang):
             body += section("", ui["key_benefits"], ul(L(w["items"], lang), "ok"))
     if L(d.get("scenarios", {}), lang):
-        body += section(ui["applications"], ui["applications"], scenarios_html(L(d["scenarios"], lang), ui))
+        body += section("", ui["applications"], scenarios_html(L(d["scenarios"], lang), ui))
     if L(d.get("featured", {}), lang):
         body += section("", ui["featured"], ul(L(d["featured"], lang), "ok"))
     if d.get("spec_table"):

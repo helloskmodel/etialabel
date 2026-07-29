@@ -525,9 +525,13 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .scntab{flex:none;font-size:13.5px;font-weight:700;line-height:1.25;padding:10px 16px;cursor:pointer;white-space:nowrap;background:transparent;color:#143C96;border:none;border-radius:9px 9px 0 0;position:relative;margin-bottom:-1px;font-family:inherit}
 .scntab.on{background:#5b6ee8;color:#fff}
 .scntab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#1A56DB}
-#scnpanel{margin-top:22px;max-width:760px;margin-left:auto;margin-right:auto}
+#scnpanel{margin-top:20px;max-width:760px;margin-left:auto;margin-right:auto}
 #scnpanel .pscncard+.pscncard{margin-top:14px}
-@media(max-width:760px){.scntab{font-size:12.5px;padding:9px 13px}}
+/* dimensional container around the temperature tabs + panel */
+.scnbox{background:#f4f7ff;border:1px solid #e3eaf6;border-radius:16px;padding:16px 18px 22px;box-shadow:0 8px 26px rgba(20,60,150,.08)}
+.scnbox .scnfcrow{border-bottom-color:#d6e0f2}
+#scnpanel .pscncard{background:#fff;border-color:#dbe6fb;box-shadow:0 6px 18px rgba(20,60,150,.1)}
+@media(max-width:760px){.scntab{font-size:12.5px;padding:9px 13px}.scnbox{padding:12px 12px 18px}}
 @media (max-width:760px){
   .phero .in{padding:26px 18px}.phero h1{font-size:24px}.phero .tl{font-size:15.5px}
   .psec{padding:20px 18px}.psec h2{font-size:20px}.psec .pos{font-size:14.5px;line-height:1.65}
