@@ -1,0 +1,100 @@
+{
+  "slug": "e-2813",
+  "source": "client product brief — E-2813 oil-resistant asset & component label (EN/ZH)",
+  "langs": ["en", "zh"],
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER",
+  "product_img": "",
+  "eyebrow": {
+    "en": "Industrial · Oil-Resistant Identification",
+    "zh": "工业 · 耐油污标识"
+  },
+  "title": {
+    "en": "E-2813 — Oil-Resistant Asset & Component Label",
+    "zh": "E-2813 · 耐油污资产与零部件标签"
+  },
+  "tagline": {
+    "en": "Reliable identification on oily metals, plastics and coated surfaces — −40°C to 200°C",
+    "zh": "油污金属、塑料与喷涂表面上的可靠标识 —— −40°C～200°C"
+  },
+  "positioning": {
+    "en": "Designed for demanding industrial environments, E-2813 delivers reliable identification on oil-contaminated metals, plastics and coated surfaces. With strong adhesion, excellent chemical resistance and durable thermal-transfer printability, it ensures long-lasting barcode readability and dependable traceability for automotive, tooling, machinery and asset identification.",
+    "zh": "E-2813 专为汽车、机械加工及工业制造等严苛工况设计，可牢固粘贴于油污金属、塑料及喷涂表面。凭借优异的粘接性能、耐化学腐蚀能力和热转印打印性能，可长期保持条码清晰可读，为零部件管理、资产追踪及工业标识提供可靠的追溯解决方案。"
+  },
+  "challenges": {},
+  "features": {
+    "en": [
+      "2 mil high-gloss white PET facestock",
+      "Strong permanent acrylic adhesive for oily and coated surfaces",
+      "Excellent resistance to oils, fuels, coolants and industrial chemicals",
+      "Durable thermal-transfer printability with excellent barcode readability",
+      "Smooth, dimensionally stable surface for consistent printing",
+      "Service temperature: −40°C to 200°C"
+    ],
+    "zh": [
+      "2 mil 白色亮面 PET 面材",
+      "高性能永久性丙烯酸胶，适用于油污及喷涂表面",
+      "优异的耐油污、耐汽油、耐冷冻液及耐化学腐蚀性能",
+      "热转印打印效果优异，条码长期清晰可读",
+      "表面平整、尺寸稳定，打印一致性高",
+      "使用温度：−40°C～200°C"
+    ]
+  },
+  "benefits": {
+    "en": [
+      "Maintains reliable adhesion on oily industrial surfaces",
+      "Improves barcode durability in harsh environments",
+      "Reduces label replacement and maintenance",
+      "Supports long-term asset tracking and product traceability",
+      "Suitable for a wide range of industrial substrates"
+    ],
+    "zh": [
+      "在油污工业表面保持稳定粘接",
+      "提高严苛环境下条码的长期可读性",
+      "减少标签更换与维护",
+      "支持长期资产管理与产品追溯",
+      "适用于多种工业材料及复杂表面"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": ["Item", "Specification"],
+      "zh": ["项目", "参数"]
+    },
+    "rows": [
+      {"cells": [{"en": "Facestock", "zh": "面材"}, {"en": "White gloss PET", "zh": "白色亮面 PET"}]},
+      {"cells": [{"en": "Facestock Thickness", "zh": "面材厚度"}, {"en": "2 mil / 0.050 mm", "zh": "2 mil / 0.050 mm"}]},
+      {"cells": [{"en": "Adhesive", "zh": "胶粘剂"}, {"en": "Permanent acrylic", "zh": "永久性丙烯酸胶"}]},
+      {"cells": [{"en": "Adhesive Thickness", "zh": "胶层厚度"}, {"en": "0.060 mm", "zh": "0.060 mm"}]},
+      {"cells": [{"en": "Liner Thickness", "zh": "底纸厚度"}, {"en": "0.068 mm", "zh": "0.068 mm"}]},
+      {"cells": [{"en": "Print Method", "zh": "打印方式"}, {"en": "Thermal transfer", "zh": "热转印"}]},
+      {"cells": [{"en": "Service Temperature", "zh": "使用温度"}, {"en": "−40°C to 200°C", "zh": "−40°C～200°C"}]},
+      {"cells": [{"en": "Peel Adhesion", "zh": "剥离力"}, {"en": "28 N/25 mm", "zh": "28 N/25 mm"}]},
+      {"cells": [{"en": "Initial Tack", "zh": "初粘力"}, {"en": "30 N/25 mm", "zh": "30 N/25 mm"}]},
+      {"cells": [{"en": "Holding Power", "zh": "持粘力"}, {"en": "≥ 1000 h/25 mm", "zh": "≥1000 h/25mm"}]},
+      {"cells": [{"en": "Shelf Life", "zh": "保存期限"}, {"en": "At least 1 year at 22°C and 50% RH", "zh": "22°C、50% RH 条件下至少 1 年"}]}
+    ],
+    "notes": {
+      "en": ["Figures are indicative typical values; verify against the current technical datasheet and by application testing before production."],
+      "zh": ["以上为参考性典型值；量产前请以最新技术数据表为准并经应用测试确认。"]
+    }
+  },
+  "applications": {
+    "en": [
+      "Automotive components",
+      "Tool and mold identification",
+      "Industrial equipment labeling",
+      "Asset tracking",
+      "Barcode and rating labels",
+      "Safety and warning labels"
+    ],
+    "zh": [
+      "汽车零部件标识",
+      "模具与工装管理",
+      "工业设备标识",
+      "资产追踪标签",
+      "条码及铭牌标签",
+      "安全警示标签"
+    ]
+  },
+  "certifications": {}
+}

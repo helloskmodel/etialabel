@@ -1439,7 +1439,7 @@ def build_home(lang):
     # Most Popular Products — same card pattern (image top), application name as title, model small.
     # Cards link to the product landing page when one exists (per-index slug), else to contact.
     PROD_ICON=[1,2,0,3,2,4]
-    POP_PROD_SLUGS=["hp-901","e-4812","apex","","e-2712"]  # "" -> no landing yet (falls back to contact)
+    POP_PROD_SLUGS=["hp-901","e-4812","apex","e-2813","e-2712"]  # "" -> no landing yet (falls back to contact)
     pcards=""
     for k,pr in enumerate(T.get("products",[])):
         gi=PROD_ICON[k%len(PROD_ICON)]
