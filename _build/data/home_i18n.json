@@ -143,11 +143,11 @@
         "slug": "high-heat-identification"
       },
       {
-        "name": "Low Temperature Label",
-        "model": "Cryo direct apply and long-term nitrogen storage",
-        "code": "E-4812",
+        "name": "Cold Chain & Cryogenic Labels",
+        "model": "Ambient to −196°C — cryogenic & cold chain",
+        "code": "",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
-        "slug": "e-4812"
+        "slug": "cold-chain-cryogenic-labels"
       }
     ],
     "fs_eyebrow": "FREE SAMPLE",
@@ -279,11 +279,11 @@
         "slug": "high-heat-identification"
       },
       {
-        "name": "低温标签",
-        "model": "深低温直贴 · 液氮长期存储",
-        "code": "E-4812",
+        "name": "低温与深低温标签",
+        "model": "常温至 −196°C · 深低温与冷链",
+        "code": "",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
-        "slug": "e-4812"
+        "slug": "cold-chain-cryogenic-labels"
       }
     ],
     "fs_eyebrow": "免费样品",
@@ -415,11 +415,11 @@
         "slug": "high-heat-identification"
       },
       {
-        "name": "Nhãn nhiệt độ thấp",
-        "model": "Dán trực tiếp siêu lạnh và lưu trữ nitơ dài hạn",
-        "code": "E-4812",
+        "name": "Nhãn chuỗi lạnh & siêu lạnh",
+        "model": "Nhiệt độ thường đến −196°C — siêu lạnh & chuỗi lạnh",
+        "code": "",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
-        "slug": "e-4812"
+        "slug": "cold-chain-cryogenic-labels"
       }
     ],
     "fs_eyebrow": "MẪU MIỄN PHÍ",
@@ -551,11 +551,11 @@
         "slug": "high-heat-identification"
       },
       {
-        "name": "ฉลากอุณหภูมิต่ำ",
-        "model": "ติดโดยตรงในสภาวะเย็นจัดและจัดเก็บในไนโตรเจนระยะยาว",
-        "code": "E-4812",
+        "name": "ฉลากโซ่ความเย็นและอุณหภูมิต่ำมาก",
+        "model": "อุณหภูมิห้องถึง −196°C — เย็นจัดและโซ่ความเย็น",
+        "code": "",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
-        "slug": "e-4812"
+        "slug": "cold-chain-cryogenic-labels"
       }
     ],
     "fs_eyebrow": "ตัวอย่างฟรี",

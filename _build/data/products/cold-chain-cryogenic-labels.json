@@ -1,0 +1,195 @@
+{
+  "slug": "cold-chain-cryogenic-labels",
+  "source": "client brief — Cold Chain & Cryogenic Labels",
+  "langs": ["en", "zh"],
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
+  "eyebrow": {
+    "en": "Solutions",
+    "zh": "解决方案"
+  },
+  "title": {
+    "en": "Cold Chain & Cryogenic Labels",
+    "zh": "低温与深低温系列标签"
+  },
+  "tagline": {
+    "en": "Built for extreme cold. Designed for reliable identification.",
+    "zh": "耐受极寒环境，保障稳定识别。"
+  },
+  "positioning": {
+    "en": "Engineered for pharmaceutical, laboratory, and healthcare applications, our Cold Chain & Cryogenic Labels deliver reliable identification from refrigerated storage to liquid nitrogen environments. Designed to withstand freezing, thawing, and cryogenic conditions, they remain securely bonded and clearly readable throughout the product lifecycle.",
+    "zh": "ETIA 低温与深低温系列标签专为制药、生命科学、实验室及医疗行业打造，覆盖冷藏、冷冻及液氮存储环境，在冻结、解冻及深低温工况下保持牢固粘接和清晰识别，满足样本、血液制品及药品全流程标识需求。"
+  },
+  "highlight": {
+    "eyebrow": {"en": "Our Core Product", "zh": "我们的核心产品"},
+    "title": {"en": "E-4812 Cryogenic Label", "zh": "E-4812 低温标签"},
+    "body": {
+      "en": "The E-4812 is ETIA's core low-temperature label — proven for direct application in cryogenic environments and long-term liquid-nitrogen storage. It stays securely bonded and clearly readable through freezing, thawing and repeated freeze–thaw cycles down to −196°C.",
+      "zh": "E-4812 是 ETIA 的核心低温标签——可在深低温环境直贴、并长期用于液氮存储。在低至 −196°C 的冻结、解冻及反复冻融循环中，依然牢固粘接、清晰可读。"
+    },
+    "points": {
+      "en": [
+        "Reliable performance from ambient down to −196°C",
+        "Direct cryogenic application and long-term nitrogen storage",
+        "Resistant to moisture, condensation and freeze–thaw cycles",
+        "Durable barcode and thermal-transfer print quality"
+      ],
+      "zh": [
+        "覆盖常温至 −196°C 深低温环境",
+        "支持深低温直贴与液氮长期存储",
+        "耐潮湿、耐冷凝、耐冷热循环",
+        "条码与热转印打印持久清晰"
+      ]
+    },
+    "links": [
+      {"slug": "e-4812", "label": {"en": "E-4812 Low Temperature Label", "zh": "E-4812 低温标签"}}
+    ]
+  },
+  "why": {
+    "heading": {
+      "en": "Why Cold Chain & Cryogenic Labels?",
+      "zh": "为什么选择低温与深低温系列标签？"
+    },
+    "intro": {
+      "en": "Low-temperature applications require labels engineered for demanding environments. From refrigerated pharmaceuticals to cryogenic biobanking, the right label ensures secure adhesion, durable printing, and reliable barcode readability throughout storage, transportation, and laboratory workflows.",
+      "zh": "低温应用需要专为严苛环境设计的标签。从医药冷链到液氮样本保存，合适的标签能够在储存、运输及实验室应用过程中持续保持牢固粘接、清晰打印和可靠识别。"
+    },
+    "items": {
+      "en": [
+        "Reliable performance from ambient to −196°C",
+        "Engineered for cryogenic, frozen, and refrigerated applications",
+        "Resistant to moisture, condensation, and freeze–thaw cycles",
+        "Durable barcode and thermal-transfer print quality",
+        "Designed for pharmaceutical, laboratory, and healthcare use"
+      ],
+      "zh": [
+        "覆盖常温至 −196°C 深低温环境",
+        "适用于液氮、冷冻及冷链应用",
+        "耐冷凝、耐潮湿及冷热循环",
+        "条码与热转印打印持久清晰",
+        "面向制药、生命科学、实验室及医疗行业"
+      ]
+    }
+  },
+  "scenarios": {
+    "en": [
+      {
+        "icon": "❄️",
+        "temp": "Down to −196°C",
+        "process": "Liquid Nitrogen Storage",
+        "title": "Cryogenic Storage",
+        "desc": "Designed for long-term cryogenic preservation of high-value biological samples.",
+        "apps": ["Biobanking", "Cell & Gene Therapy", "Tissue Banking", "Stem Cell Storage"],
+        "containers": "Cryovials • Cryotubes • Cryoboxes • Vials",
+        "products": "Cryogenic Vial Labels • Cryogenic Tube Labels"
+      },
+      {
+        "icon": "❄️",
+        "temp": "−80°C to −20°C",
+        "process": "Frozen Storage & Transportation",
+        "title": "Frozen Samples & Clinical Logistics",
+        "desc": "Reliable identification for frozen samples throughout storage, handling, and dry ice transportation.",
+        "apps": ["Clinical Trials", "Laboratory Samples", "Diagnostic Specimens", "Dry Ice Shipping"],
+        "containers": "Cryovials • Sample Tubes • Sample Boxes • Shipping Containers",
+        "products": "Freezer Labels • Cryogenic Labels"
+      },
+      {
+        "icon": "🩸",
+        "temp": "−40°C to 4°C",
+        "process": "Blood Processing & Storage",
+        "title": "Blood & Blood Products",
+        "desc": "Reliable labeling throughout blood collection, component processing, storage, transportation, and transfusion.",
+        "apps": ["Whole Blood", "Plasma", "Platelets", "Blood Products"],
+        "containers": "Blood Bags • Plasma Bags • Blood Collection Tubes • Sample Tubes",
+        "products": "Blood Bag Labels • Laboratory Labels"
+      },
+      {
+        "icon": "💉",
+        "temp": "2°C to 8°C",
+        "process": "Refrigerated Cold Chain",
+        "title": "Vaccines & Injectable Pharmaceuticals",
+        "desc": "Designed for temperature-sensitive injectable pharmaceuticals throughout refrigerated storage and distribution.",
+        "apps": ["Vaccines", "Biologics", "Injectable Drugs", "Clinical Distribution"],
+        "containers": "Glass Vials • Prefilled Syringes • IV Bags • Cartridges",
+        "products": "Pharmaceutical Labels • Cold Chain Labels"
+      },
+      {
+        "icon": "💊",
+        "temp": "15°C to 25°C",
+        "process": "Ambient Healthcare",
+        "title": "Pharmaceutical Packaging",
+        "desc": "Durable identification for pharmaceutical manufacturing, packaging, warehousing, and healthcare distribution.",
+        "apps": ["Prescription Medicines", "OTC Medicines", "Diagnostic Reagents", "Healthcare Products"],
+        "containers": "Medicine Bottles • Plastic Bottles • Reagent Bottles • Cartons",
+        "products": "Pharmaceutical Labels • Healthcare Labels"
+      }
+    ],
+    "zh": [
+      {
+        "icon": "❄️",
+        "temp": "最低 −196°C",
+        "process": "液氮保存",
+        "title": "液氮深低温存储",
+        "desc": "适用于高价值生物样本的长期液氮保存。",
+        "apps": ["生物样本库", "细胞与基因治疗", "组织样本库", "干细胞保存"],
+        "containers": "冻存管 • 冻存盒 • 西林瓶 • 样本瓶",
+        "products": "液氮冻存标签 • 冻存管标签"
+      },
+      {
+        "icon": "❄️",
+        "temp": "−80°C 至 −20°C",
+        "process": "冻存与运输",
+        "title": "冻存样本与临床物流",
+        "desc": "适用于实验室样本、临床样本及干冰运输全过程。",
+        "apps": ["临床试验", "实验室样本", "检测样本", "干冰运输"],
+        "containers": "冻存管 • 样本管 • 样本盒 • 冷链运输箱",
+        "products": "冷冻标签 • 深低温标签"
+      },
+      {
+        "icon": "🩸",
+        "temp": "−40°C 至 4°C",
+        "process": "血液处理与储存",
+        "title": "血液及血液制品",
+        "desc": "满足血液采集、成分分离、储存、运输及临床输注全过程的可靠标识需求。",
+        "apps": ["全血", "血浆", "血小板", "血液制品"],
+        "containers": "血袋 • 血浆袋 • 采血管 • 样本管",
+        "products": "血袋标签 • 实验室标签"
+      },
+      {
+        "icon": "💉",
+        "temp": "2°C 至 8°C",
+        "process": "医药冷链",
+        "title": "疫苗与注射制剂",
+        "desc": "适用于疫苗、生物制剂及其他温控注射药物的冷链储运。",
+        "apps": ["疫苗", "生物制剂", "注射制剂", "临床配送"],
+        "containers": "西林瓶 • 预灌封注射器 • 输液袋 • 卡式瓶",
+        "products": "医药标签 • 冷链标签"
+      },
+      {
+        "icon": "💊",
+        "temp": "15°C 至 25°C",
+        "process": "常温医药",
+        "title": "医药包装",
+        "desc": "为药品、诊断试剂及医疗健康产品提供持久可靠的标识方案。",
+        "apps": ["处方药", "OTC 药品", "诊断试剂", "医疗健康产品"],
+        "containers": "药瓶 • 塑料瓶 • 试剂瓶 • 包装盒",
+        "products": "医药标签 • 医疗健康标签"
+      }
+    ]
+  },
+  "featured": {
+    "en": [
+      "Cryogenic Labels",
+      "Cryogenic Vial Labels",
+      "Blood Bag Labels",
+      "Pharmaceutical Labels",
+      "Laboratory Labels"
+    ],
+    "zh": [
+      "深低温标签",
+      "液氮冻存标签",
+      "血袋标签",
+      "医药标签",
+      "实验室标签"
+    ]
+  }
+}
