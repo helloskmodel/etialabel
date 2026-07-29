@@ -109,11 +109,10 @@ CSS = """
 .pscn-lb{display:block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#8593ad;margin-bottom:1px}
 .pscncard .pscn-sub:first-of-type{margin-top:8px;padding-top:8px;border-top:1px solid #eef2f9}
 .flexbarwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:2px 0 18px;padding-bottom:4px;scroll-snap-type:x proximity}
-.flexbar{display:flex;gap:3px;min-width:520px}
-.flexseg{flex:1;padding:11px 8px;color:#fff;border:0;border-radius:7px;text-align:center;min-width:88px;cursor:pointer;opacity:.5;transition:opacity .15s,box-shadow .15s;font:inherit;scroll-snap-align:center}
+.flexbar{display:flex;gap:6px;min-width:min-content}
+.flexseg{flex:0 0 auto;padding:11px 16px;color:#fff;border:0;border-radius:8px;text-align:center;cursor:pointer;opacity:.5;transition:opacity .15s,box-shadow .15s;font:inherit;white-space:nowrap;scroll-snap-align:center}
 .flexseg.on{opacity:1;box-shadow:0 4px 12px rgba(20,60,150,.2)}
-.flexseg .fb-t{display:block;font-size:12.5px;font-weight:800;white-space:nowrap}
-.flexseg .fb-n{display:block;font-size:10.5px;line-height:1.25;margin-top:3px}
+.flexseg .fb-t{font-size:13.5px;font-weight:800}
 .pscntab .pscncard{margin:0}
 @media (max-width:760px){
   .phero .in{padding:26px 18px}.phero h1{font-size:24px}.phero .tl{font-size:15.5px}
@@ -165,9 +164,8 @@ def scenarios_html(items, ui):
         col = _segcolor(s)
         ic = s.get("icon", "")
         segs += ('<button type="button" class="flexseg%s" style="background:%s" onclick="etaScn(this,%d)">'
-                 '<span class="fb-t">%s</span><span class="fb-n">%s%s</span></button>') % (
-            (" on" if i == 0 else ""), col, i, esc(s.get("temp", "")),
-            (esc(ic) + " " if ic else ""), esc(s.get("title", "")))
+                 '<span class="fb-t">%s</span></button>') % (
+            (" on" if i == 0 else ""), col, i, esc(s.get("temp", "")))
         title = ("%s %s" % (ic, s.get("title", ""))).strip()
         apps = s.get("apps", "")
         sub = ""
