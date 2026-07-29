@@ -10,15 +10,15 @@ import gen_heatproof as hp
 
 BUILD = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(BUILD, "data", "news.json")
-HUB = "/news/"
+HUB = "/insights/"
 SOURCE_LANG = "zh"
 esc = hp.esc
 
 UI = {
-  "en": {"hub_title": "News & Insights", "hub_lede": "Selection guidance, certifications and application know-how for durable industrial labels.",
-         "read": "Read →", "back": "← All articles", "home": "Home", "news": "News"},
-  "zh": {"hub_title": "新闻与洞察", "hub_lede": "耐久工业标签的选型指南、认证科普与应用知识。",
-         "read": "阅读 →", "back": "← 返回全部文章", "home": "首页", "news": "新闻"},
+  "en": {"hub_title": "Insights", "hub_lede": "Market analysis, material knowledge and application know-how for durable industrial labels.",
+         "read": "Read →", "back": "← All insights", "home": "Home", "news": "Insight"},
+  "zh": {"hub_title": "洞察", "hub_lede": "耐久工业标签的市场解读、材料知识与应用经验。",
+         "read": "阅读 →", "back": "← 返回全部洞察", "home": "首页", "news": "洞察"},
 }
 
 def L(node, lang):
@@ -91,7 +91,7 @@ def build_article(a, lang):
     body += '<a class="nback" href="%s">%s</a></div>' % (hp.Lx(lang, HUB), esc(ui["back"]))
     crumb = [(ui["home"], "/"), (ui["hub_title"], HUB), (title, path)]
     content = hp.page(lang, path, title + " | ETIA", esc(L(a.get("subtitle", {}), lang)),
-                      title, "", body, crumb, active="news", trust=False, hero=hero)
+                      title, "", body, crumb, active="insights", trust=False, hero=hero)
     hp.write(lang, path, content)
     if lang == "en":
         hp.track(path, "core")
@@ -109,8 +109,10 @@ def build_hub(lang):
             esc(L(a["title"], lang)), esc(L(a.get("subtitle", {}), lang)), esc(ui["read"]))
     body = CSS + '<div class="ncards">%s</div>' % cards
     crumb = [(ui["home"], "/"), (ui["hub_title"], HUB)]
+    # brand Insight hero (Knowledge Drives Better Decisions)
+    hero = hp.section_hero(lang, 2) if lang in ("en", "zh") else None
     content = hp.page(lang, HUB, ui["hub_title"] + " | ETIA", ui["hub_lede"],
-                      ui["hub_title"], ui["hub_lede"], body, crumb, active="news", trust=False)
+                      ui["hub_title"], "", body, crumb, active="insights", trust=False, hero=hero)
     hp.write(lang, HUB, content)
     if lang == "en":
         hp.track(HUB, "core")

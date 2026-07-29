@@ -38,16 +38,6 @@
       "permanent": true
     },
     {
-      "source": "/insights",
-      "destination": "/application-notes/",
-      "permanent": true
-    },
-    {
-      "source": "/insights/:path*",
-      "destination": "/application-notes/",
-      "permanent": true
-    },
-    {
       "source": "/industries/esd-safe-labels",
       "destination": "/industries/pcb-electronics-labeling-solutions/",
       "permanent": true
