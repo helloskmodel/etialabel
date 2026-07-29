@@ -35,7 +35,20 @@
       "面材适配性广：防水，抗油，耐化学，适配多种印刷方式。可变信息打印，使用热转印打印机搭配超低温树脂碳带，确保信息清晰持久。"
     ]
   },
-  "benefits": {},
+  "benefits": {
+    "en": [
+      "No warm-up needed — label directly at −80°C or in liquid nitrogen without thawing, so the sample never has to return to room temperature and its viability and integrity are protected.",
+      "Stays firmly attached — through long-term liquid-nitrogen storage the label stays bonded and never lifts, preventing mislabeling and sample mix-ups and safeguarding traceability.",
+      "Survives repeated freeze-thaw — withstands up to 10 freeze-thaw cycles, keeping identification clear and intact even after the sample is retrieved and refrozen many times.",
+      "Clear, durable data — thermal transfer with an ultra-low-temperature resin ribbon keeps information legible across the entire frozen lifecycle, reducing manual-checking errors."
+    ],
+    "zh": [
+      "样本无需回温 —— 可在 −80℃ 及液氮环境下直接贴标，样本无需解冻回到常温，最大程度保护样本活性与完整性。",
+      "标识牢固不脱落 —— 长期液氮存储中标签牢固贴合、不松动脱落，避免样本错标与混淆，保障全程可追溯。",
+      "耐反复冻融 —— 可耐受最多 10 次冻融循环，样本多次取用、反复冻存后标识依旧清晰完整。",
+      "信息清晰持久 —— 热转印搭配超低温树脂碳带，冷冻全周期信息清晰可读，减少人工核对差错。"
+    ]
+  },
   "spec_table": {
     "headers": {
       "en": ["Parameter", "Details"],
