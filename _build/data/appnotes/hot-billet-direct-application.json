@@ -1,98 +1,76 @@
 {
   "slug": "hot-billet-direct-application",
   "source": "client brief — HEATPROOF HP-700T hot billet identification (800°C)",
-  "order": 5,
+  "order": 2,
   "langs": ["en", "zh", "vi", "th"],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP700.jpg",
   "image": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP700.jpg",
   "title": {
-    "zh": "钢坯高温识别方案 —— HEATPROOF HP-700T 耐高温标签",
-    "en": "Steel Billet High-Temperature Identification — HEATPROOF HP-700T Label",
-    "vi": "Giải pháp nhận dạng phôi thép nhiệt độ cao — Nhãn chịu nhiệt HEATPROOF HP-700T",
-    "th": "โซลูชันระบุบิลเล็ตเหล็กอุณหภูมิสูง — ฉลากทนความร้อน HEATPROOF HP-700T"
+    "zh": "钢坯高温识别 —— HEATPROOF HP-700T",
+    "en": "Steel Billet High-Temperature Identification — HEATPROOF HP-700T",
+    "vi": "Nhận dạng phôi thép nhiệt độ cao — HEATPROOF HP-700T",
+    "th": "การระบุบิลเล็ตเหล็กอุณหภูมิสูง — HEATPROOF HP-700T"
   },
   "subtitle": {
-    "zh": "在 800°C 热轧钢坯上直接贴标，一标到底、全流程精准追溯",
-    "en": "Applied directly to 800°C hot-rolled billets — one label all the way, precise end-to-end traceability.",
-    "vi": "Dán trực tiếp lên phôi cán nóng 800°C — một nhãn xuyên suốt, truy xuất chính xác toàn trình.",
-    "th": "ติดโดยตรงบนบิลเล็ตรีดร้อน 800°C — ฉลากเดียวตลอดเส้นทาง ตรวจสอบย้อนกลับได้อย่างแม่นยำ"
+    "zh": "在 800°C 热轧钢坯上直接贴标，一码全程追溯。",
+    "en": "Applied directly to 800°C hot-rolled billets — one code, end-to-end traceability.",
+    "vi": "Dán trực tiếp lên phôi cán nóng 800°C — một mã, truy xuất toàn trình.",
+    "th": "ติดโดยตรงบนบิลเล็ตรีดร้อน 800°C — รหัสเดียว ตรวจสอบย้อนกลับตลอดสาย"
   },
   "seo_desc": {
-    "en": "Direct-application labeling for 800°C hot-rolled steel billets with HEATPROOF HP-700T — replaces manual spray-marking with scannable barcodes for one-code, end-to-end traceability from the rolling line through inventory to shipping.",
-    "zh": "用 HEATPROOF HP-700T 在 800°C 热轧钢坯上直贴标识 —— 以标准条码替代人工喷涂，实现从轧机前工序到库存、出货的一码全程精准追溯。",
-    "vi": "Nhãn dán trực tiếp cho phôi thép cán nóng 800°C với HEATPROOF HP-700T — thay thế đánh dấu phun thủ công bằng mã vạch quét được, truy xuất một mã từ dây chuyền cán qua kho đến giao hàng.",
-    "th": "ฉลากติดโดยตรงสำหรับบิลเล็ตเหล็กรีดร้อน 800°C ด้วย HEATPROOF HP-700T — แทนที่การพ่นหมึกด้วยมือด้วยบาร์โค้ดที่สแกนได้ ตรวจสอบย้อนกลับด้วยรหัสเดียวจากสายการรีดผ่านคลังสินค้าถึงการจัดส่ง"
+    "en": "Direct-application labeling for 800°C hot-rolled steel billets with HEATPROOF HP-700T — scannable barcodes replace manual spray-marking for one-code, end-to-end traceability.",
+    "zh": "用 HEATPROOF HP-700T 在 800°C 热轧钢坯上直贴标识——以条码替代人工喷涂，实现一码全程追溯。",
+    "vi": "Nhãn dán trực tiếp cho phôi thép cán nóng 800°C với HEATPROOF HP-700T — mã vạch thay cho phun thủ công, truy xuất một mã toàn trình.",
+    "th": "ฉลากติดโดยตรงสำหรับบิลเล็ตเหล็กรีดร้อน 800°C ด้วย HEATPROOF HP-700T — บาร์โค้ดแทนการพ่นด้วยมือ ตรวจสอบย้อนกลับด้วยรหัสเดียวตลอดสาย"
   },
   "overview": {
-    "zh": "识别对象为热轧钢坯，作业温度约 800°C，应用于轧机前工序、库存管理及出货环节，采用 HEATPROOF HP-700T 耐高温标签，实现单块钢坯的唯一身份与全流程追溯。",
-    "en": "The identification target is hot-rolled steel billets at an operating temperature of about 800°C, used across pre-rolling processes, inventory management and shipping. The HEATPROOF HP-700T ultra-high-temperature label gives each billet a unique identity and full-process traceability.",
-    "vi": "Đối tượng nhận dạng là phôi thép cán nóng, nhiệt độ vận hành khoảng 800°C, dùng trong các công đoạn trước máy cán, quản lý kho và khâu giao hàng. Nhãn chịu nhiệt HEATPROOF HP-700T mang lại danh tính duy nhất cho từng phôi và truy xuất toàn trình.",
-    "th": "เป้าหมายการระบุคือบิลเล็ตเหล็กรีดร้อน อุณหภูมิใช้งานประมาณ 800°C ใช้ในกระบวนการก่อนเครื่องรีด การจัดการคลังสินค้า และขั้นตอนการจัดส่ง ฉลากทนความร้อน HEATPROOF HP-700T ให้เอกลักษณ์เฉพาะแก่บิลเล็ตแต่ละชิ้นและการตรวจสอบย้อนกลับทั้งกระบวนการ"
+    "zh": "对象为约 800°C 的热轧钢坯，覆盖轧机前工序、库存与出货。HP-700T 耐高温标签给每块钢坯唯一身份与全流程追溯。",
+    "en": "The target is hot-rolled billets at about 800°C, across pre-rolling, inventory and shipping. The HP-700T high-temperature label gives each billet a unique identity and full-process traceability.",
+    "vi": "Đối tượng là phôi cán nóng khoảng 800°C, xuyên suốt trước cán, kho và giao hàng. Nhãn HP-700T mang lại danh tính duy nhất và truy xuất toàn trình cho từng phôi.",
+    "th": "เป้าหมายคือบิลเล็ตรีดร้อนราว 800°C ครอบคลุมก่อนรีด คลังสินค้า และการจัดส่ง ฉลาก HP-700T ให้เอกลักษณ์เฉพาะและการตรวจสอบย้อนกลับตลอดสายแก่บิลเล็ตแต่ละชิ้น"
   },
   "challenges": {
-    "zh": "现场目前采用人工分段喷涂方式进行钢坯标识。受 800°C 高温限制，无法实现自动化连续标识，长期存在多项生产问题：喷涂标识会随高温氧化皮脱落，钢坯进入轧机前标识丢失；钢坯冷却后人工补贴标签，极易出现贴错、物料混淆；喷涂文字无标准编码、无法扫码识别，人工肉眼核对易出错，影响后道工序；人工分段喷涂工作量大、效率低、出错率高。",
-    "en": "The site currently marks billets by manual, section-by-section spray painting. Constrained by the 800°C heat, automated continuous marking is impossible, and several production problems persist: sprayed marks flake off with the high-temperature oxide scale, so identification is lost before the billet enters the rolling mill; labels re-applied by hand after the billet cools are highly prone to mislabeling and material mix-ups; sprayed text has no standard code and cannot be scanned, so manual visual checking is error-prone and disrupts downstream processes; and manual section-by-section spraying is labor-intensive, inefficient and error-prone.",
-    "vi": "Hiện trường hiện đánh dấu phôi bằng cách phun sơn thủ công theo từng đoạn. Do giới hạn nhiệt 800°C, không thể đánh dấu liên tục tự động, và nhiều vấn đề sản xuất tồn tại: dấu phun bong ra cùng vảy oxit nhiệt độ cao nên mất nhận dạng trước khi phôi vào máy cán; nhãn dán lại bằng tay sau khi phôi nguội rất dễ dán sai và lẫn vật liệu; chữ phun không có mã chuẩn, không quét được nên kiểm tra bằng mắt dễ sai và ảnh hưởng công đoạn sau; phun thủ công theo đoạn tốn công, hiệu suất thấp và tỷ lệ lỗi cao.",
-    "th": "ปัจจุบันหน้างานทำเครื่องหมายบิลเล็ตด้วยการพ่นสีด้วยมือทีละส่วน ด้วยข้อจำกัดความร้อน 800°C จึงไม่สามารถทำเครื่องหมายต่อเนื่องอัตโนมัติได้ และมีปัญหาการผลิตหลายอย่าง: เครื่องหมายพ่นหลุดไปพร้อมสเกลออกไซด์อุณหภูมิสูง ทำให้สูญเสียการระบุก่อนบิลเล็ตเข้าเครื่องรีด; ฉลากที่ติดใหม่ด้วยมือหลังบิลเล็ตเย็นลงเสี่ยงติดผิดและวัสดุปะปนสูง; ข้อความพ่นไม่มีรหัสมาตรฐานและสแกนไม่ได้ การตรวจด้วยสายตาจึงผิดพลาดง่ายและกระทบกระบวนการถัดไป; การพ่นด้วยมือทีละส่วนใช้แรงงานมาก ประสิทธิภาพต่ำ และผิดพลาดสูง"
+    "zh": "现场原用人工分段喷涂标识，受 800°C 限制无法自动连续标识：喷涂随氧化皮脱落、进轧机前即丢失；冷却后人工补贴易贴错、混料；喷涂无标准码、不可扫描，人工核对慢且易错。",
+    "en": "Billets were previously marked by manual, section-by-section spraying. The 800°C heat rules out automated continuous marking: sprayed marks flake off with the oxide scale and are lost before the mill; hand-applied labels after cooling cause mislabeling and mix-ups; and sprayed text has no scannable code, so manual checking is slow and error-prone.",
+    "vi": "Trước đây phôi được đánh dấu bằng phun sơn thủ công theo đoạn. Nhiệt 800°C khiến không thể đánh dấu liên tục tự động: dấu phun bong theo vảy oxit và mất trước khi vào máy cán; nhãn dán tay sau khi nguội dễ sai và lẫn vật liệu; chữ phun không có mã quét được nên kiểm tra thủ công chậm và dễ lỗi.",
+    "th": "เดิมทำเครื่องหมายบิลเล็ตด้วยการพ่นด้วยมือทีละส่วน ความร้อน 800°C ทำให้ทำเครื่องหมายต่อเนื่องอัตโนมัติไม่ได้: เครื่องหมายพ่นหลุดไปกับสเกลออกไซด์และหายก่อนเข้าเครื่องรีด; ฉลากที่ติดด้วยมือหลังเย็นลงทำให้ติดผิดและวัสดุปะปน; ข้อความพ่นไม่มีรหัสที่สแกนได้ การตรวจด้วยมือจึงช้าและผิดพลาดง่าย"
   },
   "solution_intro": {
-    "zh": "采用 HEATPROOF HP-700T 耐高温标签替代人工喷涂：打印好标准条码后，钢坯出炉即由机器臂自动贴标，实现一标到底、全流程精准追溯。",
-    "en": "Replace manual spraying with the HEATPROOF HP-700T ultra-high-temperature label: print a standard barcode, then have a robotic arm apply it automatically as the billet leaves the furnace — one label all the way, with precise end-to-end traceability.",
-    "vi": "Thay thế phun thủ công bằng nhãn chịu nhiệt HEATPROOF HP-700T: in mã vạch chuẩn, rồi robot dán tự động ngay khi phôi ra khỏi lò — một nhãn xuyên suốt, truy xuất chính xác toàn trình.",
-    "th": "แทนที่การพ่นด้วยมือด้วยฉลากทนความร้อน HEATPROOF HP-700T: พิมพ์บาร์โค้ดมาตรฐาน แล้วให้แขนหุ่นยนต์ติดโดยอัตโนมัติทันทีที่บิลเล็ตออกจากเตา — ฉลากเดียวตลอดเส้นทาง ตรวจสอบย้อนกลับได้อย่างแม่นยำ"
+    "zh": "用 HP-700T 替代人工喷涂：打印标准条码，钢坯出炉即由机器臂自动贴标，一标到底、全程精准追溯。",
+    "en": "Replace manual spraying with HP-700T: print a standard barcode, and a robotic arm applies it automatically as the billet leaves the furnace — one label all the way, with precise end-to-end traceability.",
+    "vi": "Thay phun thủ công bằng HP-700T: in mã vạch chuẩn, robot dán tự động ngay khi phôi ra lò — một nhãn xuyên suốt, truy xuất chính xác toàn trình.",
+    "th": "แทนการพ่นด้วยมือด้วย HP-700T: พิมพ์บาร์โค้ดมาตรฐาน แล้วแขนหุ่นยนต์ติดอัตโนมัติทันทีที่บิลเล็ตออกจากเตา — ฉลากเดียวตลอดสาย ตรวจสอบย้อนกลับได้อย่างแม่นยำ"
   },
   "advantages": {
     "en": [
-      {"label": "Precise barcode identification", "text": "Replaces traditional sprayed text with a standard barcode, giving each individual billet a unique, traceable identity."},
-      {"label": "High-temperature pre-application", "text": "HP-700T uses advanced heat-activated adhesive technology with excellent all-round performance. A robotic arm applies the label right after the billet leaves the furnace; it bonds stably under 800°C conditions and its bond strength keeps increasing as the billet cools. With strong heat, oxidation and weather resistance, it stays firmly attached and legible throughout — truly one label all the way, with precise end-to-end traceability."},
-      {"label": "Automatic scanning", "text": "Compatible with barcode scanners and machine-vision equipment, removing repeated manual re-checking of materials."},
-      {"label": "Full-process verification", "text": "A barcode scan verifies each billet before shipping, replacing manual visual inspection and preventing shipping errors."}
+      {"label": "Precise barcode ID", "text": "A standard barcode replaces sprayed text, giving each billet a unique, traceable identity."},
+      {"label": "High-temperature pre-application", "text": "HP-700T's heat-activated adhesive lets a robotic arm apply the label as the billet leaves the furnace; it bonds at 800°C and grows stronger as the billet cools — heat-, oxidation- and weather-resistant, firmly attached and legible end to end."},
+      {"label": "Automatic scanning", "text": "Works with barcode scanners and machine vision, removing repeated manual re-checks."},
+      {"label": "Full-process verification", "text": "A pre-shipping barcode scan replaces visual inspection and prevents shipping errors."}
     ],
     "zh": [
-      {"label": "条码精准识别", "text": "替代传统喷涂文字，采用标准条码，实现单块钢坯唯一溯源。"},
-      {"label": "高温前置贴标", "text": "HP-700T 采用先进热激活胶粘剂技术，综合性能优异。钢坯出炉后由机器臂自动粘贴标签，800°C 高温工况下可稳定贴合，随钢坯降温粘结强度持续递增，牢固度更高。标签兼具超强耐高温、抗氧化、耐候性能，全程稳固不脱落、标识不失效，真正实现一标到底、全流程精准追溯。"},
-      {"label": "支持自动扫码", "text": "可适配扫码设备及视觉识别设备，无需人工重复复核物料。"},
-      {"label": "全流程校验", "text": "出货前条码扫描核验，替代人工目视检查，杜绝发货错误。"}
+      {"label": "条码精准识别", "text": "以标准条码替代喷涂文字，实现单块钢坯唯一溯源。"},
+      {"label": "高温前置贴标", "text": "HP-700T 采用热激活胶粘剂，钢坯出炉即由机器臂自动贴标；800°C 下稳定贴合、随降温粘结持续增强，耐高温、抗氧化、耐候，全程稳固不脱落。"},
+      {"label": "支持自动扫码", "text": "适配扫码与视觉识别设备，无需人工重复复核。"},
+      {"label": "全流程校验", "text": "出货前条码扫描核验，替代人工目视，杜绝发货错误。"}
     ],
     "vi": [
-      {"label": "Nhận dạng mã vạch chính xác", "text": "Thay thế chữ phun truyền thống bằng mã vạch chuẩn, mang lại danh tính duy nhất, truy xuất được cho từng phôi."},
-      {"label": "Dán nhãn nhiệt độ cao đầu nguồn", "text": "HP-700T dùng công nghệ keo kích hoạt bằng nhiệt tiên tiến, hiệu năng toàn diện xuất sắc. Robot dán nhãn ngay khi phôi ra khỏi lò; bám ổn định ở 800°C và độ bám tăng dần khi phôi nguội. Nhãn chịu nhiệt, chống oxy hóa và chịu thời tiết mạnh, bám chắc và rõ nét suốt quá trình — thực sự một nhãn xuyên suốt, truy xuất chính xác toàn trình."},
-      {"label": "Hỗ trợ quét tự động", "text": "Tương thích thiết bị quét mã và thiết bị nhận dạng thị giác, không cần kiểm tra lại vật liệu thủ công lặp lại."},
-      {"label": "Kiểm tra toàn trình", "text": "Quét mã vạch xác minh từng phôi trước khi giao hàng, thay cho kiểm tra bằng mắt, loại bỏ lỗi giao hàng."}
+      {"label": "Nhận dạng mã vạch chính xác", "text": "Mã vạch chuẩn thay chữ phun, mang lại danh tính duy nhất, truy xuất được cho từng phôi."},
+      {"label": "Dán nhãn nhiệt độ cao đầu nguồn", "text": "Keo kích hoạt bằng nhiệt của HP-700T cho phép robot dán nhãn ngay khi phôi ra lò; bám ở 800°C và chắc dần khi nguội — chịu nhiệt, chống oxy hóa, chịu thời tiết, bám chắc và rõ nét toàn trình."},
+      {"label": "Quét tự động", "text": "Tương thích máy quét mã và nhận dạng thị giác, không cần kiểm tra lại thủ công."},
+      {"label": "Kiểm tra toàn trình", "text": "Quét mã trước khi giao hàng thay cho kiểm tra bằng mắt, loại bỏ lỗi giao hàng."}
     ],
     "th": [
-      {"label": "ระบุด้วยบาร์โค้ดแม่นยำ", "text": "แทนที่ข้อความพ่นแบบเดิมด้วยบาร์โค้ดมาตรฐาน ให้เอกลักษณ์เฉพาะที่ตรวจสอบย้อนกลับได้แก่บิลเล็ตแต่ละชิ้น"},
-      {"label": "ติดฉลากล่วงหน้าที่อุณหภูมิสูง", "text": "HP-700T ใช้เทคโนโลยีกาวกระตุ้นด้วยความร้อนขั้นสูง ประสิทธิภาพรอบด้านยอดเยี่ยม แขนหุ่นยนต์ติดฉลากทันทีที่บิลเล็ตออกจากเตา ยึดเกาะมั่นคงที่ 800°C และแรงยึดเพิ่มขึ้นเรื่อย ๆ เมื่อบิลเล็ตเย็นลง ฉลากทนความร้อน ทนออกซิเดชัน และทนสภาพอากาศ ยึดแน่นและอ่านได้ตลอด — ฉลากเดียวตลอดเส้นทาง ตรวจสอบย้อนกลับได้อย่างแม่นยำ"},
-      {"label": "รองรับการสแกนอัตโนมัติ", "text": "เข้ากันได้กับอุปกรณ์สแกนและอุปกรณ์รู้จำด้วยภาพ ไม่ต้องตรวจซ้ำวัสดุด้วยมือ"},
-      {"label": "ตรวจสอบทั้งกระบวนการ", "text": "สแกนบาร์โค้ดตรวจสอบบิลเล็ตแต่ละชิ้นก่อนจัดส่ง แทนการตรวจด้วยสายตา ป้องกันข้อผิดพลาดในการจัดส่ง"}
+      {"label": "ระบุด้วยบาร์โค้ดแม่นยำ", "text": "บาร์โค้ดมาตรฐานแทนข้อความพ่น ให้เอกลักษณ์เฉพาะที่ตรวจสอบย้อนกลับได้แก่บิลเล็ตแต่ละชิ้น"},
+      {"label": "ติดฉลากล่วงหน้าที่อุณหภูมิสูง", "text": "กาวกระตุ้นด้วยความร้อนของ HP-700T ให้แขนหุ่นยนต์ติดฉลากทันทีที่บิลเล็ตออกจากเตา ยึดที่ 800°C และแน่นขึ้นเมื่อเย็นลง — ทนความร้อน ทนออกซิเดชัน ทนสภาพอากาศ ยึดแน่นและอ่านได้ตลอดสาย"},
+      {"label": "สแกนอัตโนมัติ", "text": "ใช้ได้กับเครื่องสแกนและการรู้จำด้วยภาพ ไม่ต้องตรวจซ้ำด้วยมือ"},
+      {"label": "ตรวจสอบทั้งกระบวนการ", "text": "สแกนบาร์โค้ดก่อนจัดส่งแทนการตรวจด้วยสายตา ป้องกันข้อผิดพลาดในการจัดส่ง"}
     ]
   },
-  "extra": {
-    "en": [{"heading": "Recommended equipment", "items": [
-      {"label": "Thermal transfer printer", "text": "CABXC6, ZEBRA ZT411, TSC MH241T (print and cut)"},
-      {"label": "High-temperature ribbon", "text": "YS-4"},
-      {"label": "Scanner", "text": "COGNEX DATAMAN 370, ZEBRA 3600, HONEYWELL GRANIT 1980I"}
-    ]}],
-    "zh": [{"heading": "推荐配套设备", "items": [
-      {"label": "热转印打印机", "text": "CABXC6、ZEBRA ZT411、TSC MH241T（打印并剪切）"},
-      {"label": "耐高温碳带", "text": "YS-4"},
-      {"label": "扫描仪", "text": "COGNEX DATAMAN 370、ZEBRA 3600、HONEYWELL GRANIT 1980I"}
-    ]}],
-    "vi": [{"heading": "Thiết bị đề xuất", "items": [
-      {"label": "Máy in chuyển nhiệt", "text": "CABXC6, ZEBRA ZT411, TSC MH241T (in và cắt)"},
-      {"label": "Ruy băng chịu nhiệt", "text": "YS-4"},
-      {"label": "Máy quét", "text": "COGNEX DATAMAN 370, ZEBRA 3600, HONEYWELL GRANIT 1980I"}
-    ]}],
-    "th": [{"heading": "อุปกรณ์ที่แนะนำ", "items": [
-      {"label": "เครื่องพิมพ์ถ่ายเทความร้อน", "text": "CABXC6, ZEBRA ZT411, TSC MH241T (พิมพ์และตัด)"},
-      {"label": "ริบบอนทนความร้อน", "text": "YS-4"},
-      {"label": "เครื่องสแกน", "text": "COGNEX DATAMAN 370, ZEBRA 3600, HONEYWELL GRANIT 1980I"}
-    ]}]
-  },
   "value": {
-    "zh": "该方案彻底解决钢坯错标、混料问题，实现自动化识别、大幅降低人工失误，提升出货准确率并简化库存对账，同时优化现场作业流程、降低品质管理成本。",
-    "en": "This solution thoroughly eliminates billet mislabeling and material mix-ups, enables automated identification that sharply reduces human error, improves shipping accuracy and simplifies inventory reconciliation, and optimizes on-site workflow while lowering quality-management cost.",
-    "vi": "Giải pháp này loại bỏ triệt để lỗi dán sai và lẫn vật liệu của phôi, cho phép nhận dạng tự động giúp giảm mạnh lỗi con người, nâng cao độ chính xác giao hàng và đơn giản hóa đối chiếu kho, đồng thời tối ưu quy trình hiện trường và giảm chi phí quản lý chất lượng.",
-    "th": "โซลูชันนี้ขจัดปัญหาการติดผิดและวัสดุปะปนของบิลเล็ตอย่างสิ้นเชิง เปิดใช้การระบุอัตโนมัติที่ลดข้อผิดพลาดของคนอย่างมาก เพิ่มความแม่นยำในการจัดส่งและทำให้การกระทบยอดคลังสินค้าง่ายขึ้น พร้อมทั้งปรับปรุงกระบวนการหน้างานและลดต้นทุนการจัดการคุณภาพ"
+    "zh": "彻底解决错标、混料，自动化识别大幅降低人工失误，提升出货准确率并简化库存对账。",
+    "en": "It eliminates mislabeling and material mix-ups, automates identification to cut human error, improves shipping accuracy and simplifies inventory reconciliation.",
+    "vi": "Loại bỏ lỗi dán sai và lẫn vật liệu, tự động hóa nhận dạng để giảm lỗi con người, nâng cao độ chính xác giao hàng và đơn giản hóa đối chiếu kho.",
+    "th": "ขจัดการติดผิดและวัสดุปะปน อัตโนมัติการระบุเพื่อลดข้อผิดพลาดของคน เพิ่มความแม่นยำการจัดส่ง และทำให้การกระทบยอดคลังสินค้าง่ายขึ้น"
   }
 }
