@@ -145,16 +145,16 @@
       {
         "name": "Heat Resistant Labels",
         "model": "PI, hot-apply & heat treatment — up to 1000°C",
-        "code": "HP · PI",
+        "code": "HP-700T",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
-        "slug": "high-heat-identification"
+        "slug": "hp-700t"
       },
       {
         "name": "Low Temperature Resistant Labels",
         "model": "Ambient to −196°C — cryogenic & cold chain",
         "code": "E-4812",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
-        "slug": "cold-chain-cryogenic-labels"
+        "slug": "e-4812"
       },
       {
         "name": "Heavy-Duty Oil-Resistant Labels",
@@ -302,16 +302,16 @@
       {
         "name": "耐高温标签",
         "model": "PI、高温直贴与热处理 — 可达 1000℃",
-        "code": "HP · PI",
+        "code": "HP-700T",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
-        "slug": "high-heat-identification"
+        "slug": "hp-700t"
       },
       {
         "name": "耐低温标签",
         "model": "常温至 −196°C · 深低温与冷链",
         "code": "E-4812",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
-        "slug": "cold-chain-cryogenic-labels"
+        "slug": "e-4812"
       },
       {
         "name": "超粘防油污标签",
@@ -459,16 +459,16 @@
       {
         "name": "Nhãn chịu nhiệt",
         "model": "PI, dán nóng & xử lý nhiệt — đến 1000°C",
-        "code": "HP · PI",
+        "code": "HP-700T",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
-        "slug": "high-heat-identification"
+        "slug": "hp-700t"
       },
       {
         "name": "Nhãn chịu nhiệt độ thấp",
         "model": "Nhiệt độ thường đến −196°C — siêu lạnh & chuỗi lạnh",
         "code": "E-4812",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
-        "slug": "cold-chain-cryogenic-labels"
+        "slug": "e-4812"
       },
       {
         "name": "Nhãn chống dầu chịu tải nặng",
@@ -616,16 +616,16 @@
       {
         "name": "ฉลากทนความร้อน",
         "model": "PI ติดร้อนและการอบชุบความร้อน — สูงถึง 1000°C",
-        "code": "HP · PI",
+        "code": "HP-700T",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
-        "slug": "high-heat-identification"
+        "slug": "hp-700t"
       },
       {
         "name": "ฉลากทนอุณหภูมิต่ำ",
         "model": "อุณหภูมิห้องถึง −196°C — เย็นจัดและโซ่ความเย็น",
         "code": "E-4812",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
-        "slug": "cold-chain-cryogenic-labels"
+        "slug": "e-4812"
       },
       {
         "name": "ฉลากทนน้ำมันสำหรับงานหนัก",
