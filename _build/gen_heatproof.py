@@ -1601,8 +1601,6 @@ def write_redirects():
       {"source":"/products/management-tag","destination":"/products/heat-treatment-tags/","permanent":True},
       {"source":"/products/hp-700t","destination":"/products/hp-900/","permanent":True},
       {"source":"/products/heatproof/hp-t42-hp-cbr-tag","destination":"/products/heatproof/hp-l90/","permanent":True},
-      {"source":"/insights","destination":"/application-notes/","permanent":True},
-      {"source":"/insights/:path*","destination":"/application-notes/","permanent":True},
       {"source":"/industries/esd-safe-labels","destination":"/industries/pcb-electronics-labeling-solutions/","permanent":True},
       {"source":"/application-notes/green-tire-wip-tracking","destination":"/application-notes/tire-bead-labels/","permanent":True},
       {"source":"/industries/automotive-label-materials","destination":"/industries/automotive-labeling-solutions/","permanent":True},
@@ -2046,7 +2044,7 @@ def build_all():
     build_about(lang)
     build_contact(lang)
     build_applications(lang)   # nav pillar: Application
-    build_insights(lang)       # nav pillar: Insight
+    # /insights/ (nav pillar: Insight) is built by gen_news as the Insights article hub
     build_service(lang)
     # legal pages (general website template — client legal counsel should review)
     build_legal(lang)
