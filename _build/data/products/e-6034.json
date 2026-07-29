@@ -1,0 +1,112 @@
+{
+  "slug": "e-6034",
+  "source": "client product brief — E-6034 matte vinyl wrap-around label (EN/ZH)",
+  "langs": ["en", "zh"],
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER",
+  "product_img": "",
+  "eyebrow": {
+    "en": "Wire & Cable · Wrap-Around Identification",
+    "zh": "线缆 · 缠绕标识"
+  },
+  "title": {
+    "en": "E-6034 — Matte Vinyl Wrap-Around Labels",
+    "zh": "E-6034 · 雾面 VINYL 缠绕标签"
+  },
+  "tagline": {
+    "en": "Flexible wrap-around labels for wire, cable and equipment identification",
+    "zh": "柔性缠绕标签，适用于线缆、线束及户外设备标识"
+  },
+  "positioning": {
+    "en": "E-6034 is a flexible matte vinyl label material designed for wrap-around identification of wires, cables and industrial equipment. Its soft vinyl construction conforms easily to curved surfaces, while the permanent acrylic adhesive delivers reliable long-term bonding on plastics, painted metals and coated surfaces. Resistant to moisture, UV exposure, oils and abrasion, E-6034 provides durable identification for both indoor and outdoor applications.",
+    "zh": "E-6034 是一款专为线缆、线束及工业设备标识设计的雾面 VINYL 标签材料。柔软的乙烯基面材能够紧密贴合线缆、管件及各种曲面，配合高性能永久性丙烯酸胶，在塑料、金属、粉末喷涂及玻璃等多种基材上保持稳定粘接。具备优异的耐水、耐油、耐紫外线及耐磨性能，可满足室内外长期标识需求。"
+  },
+  "challenges": {},
+  "benefits": {
+    "en": [
+      "Flexible for curved surfaces — soft matte vinyl conforms to wires, cables, tubes and irregular surfaces without lifting or wrinkling.",
+      "Strong permanent adhesion — high-performance acrylic adhesive bonds securely to plastics, painted metal, powder coatings, glass and fiberglass.",
+      "Built for harsh environments — withstands water, oil, UV exposure, abrasion and salt spray for long-lasting identification.",
+      "Clear, reliable printing — the matte surface delivers excellent thermal-transfer print quality and barcode readability with reduced glare."
+    ],
+    "zh": [
+      "柔软贴合，不易翘边 —— 柔性 VINYL 面材可轻松缠绕各种线缆、管路及异形曲面，贴合牢固，不易起翘。",
+      "强力持久粘接 —— 永久性丙烯酸胶适用于塑料、喷涂金属、玻璃、玻纤等多种表面，长期使用依然稳定可靠。",
+      "适应严苛环境 —— 耐水、耐油、耐紫外线、耐磨损，可满足户外及工业环境的长期使用要求。",
+      "清晰打印，易于识别 —— 雾面表面减少反光，支持热转印打印，文字、二维码和条码清晰易读。"
+    ]
+  },
+  "features": {
+    "en": [
+      "Flexible and conformable",
+      "Water, oil and UV resistant",
+      "Suitable for thermal-transfer printing",
+      "Excellent outdoor durability"
+    ],
+    "zh": [
+      "柔软易缠绕，适用于曲面",
+      "防水、耐油、耐紫外线",
+      "支持热转印打印",
+      "耐磨耐候，适合室内外长期使用"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": ["Parameter", "Details"],
+      "zh": ["参数", "详情"]
+    },
+    "rows": [
+      {"group": {"en": "Specifications", "zh": "产品特点"}},
+      {"cells": [
+        {"en": "Material", "zh": "面材"},
+        {"en": "Matte Vinyl", "zh": "雾面 VINYL（乙烯基）"}
+      ]},
+      {"cells": [
+        {"en": "Face Thickness", "zh": "面材厚度"},
+        {"en": "0.087 mm (3.4 mil)", "zh": "0.087 mm（3.4 mil）"}
+      ]},
+      {"cells": [
+        {"en": "Adhesive", "zh": "胶粘剂"},
+        {"en": "Permanent Acrylic", "zh": "永久性丙烯酸胶"}
+      ]},
+      {"cells": [
+        {"en": "Adhesive Thickness", "zh": "胶层厚度"},
+        {"en": "0.022 mm (0.9 mil)", "zh": "0.022 mm（0.9 mil）"}
+      ]},
+      {"cells": [
+        {"en": "Service Temperature", "zh": "使用温度"},
+        {"en": "−40°C to 80°C", "zh": "−40℃～80℃"}
+      ]},
+      {"group": {"en": "Recommended For", "zh": "适用行业"}},
+      {"cells": [
+        {"en": "Markets", "zh": "行业"},
+        {"en": "Electrical & Power · Telecommunications · Data Centers · Industrial Automation · Automotive & EV · Rail & Transportation · Outdoor Infrastructure", "zh": "电力 · 通信 · 数据中心 · 工业自动化 · 汽车与新能源 · 轨道交通 · 户外基础设施"}
+      ]}
+    ],
+    "notes": {
+      "en": ["Figures are indicative typical values; verify against the current technical datasheet and by application testing before production."],
+      "zh": ["以上为参考性典型值；量产前请以最新技术数据表为准并经应用测试确认。"]
+    }
+  },
+  "applications": {
+    "en": [
+      "Wire & cable identification",
+      "Electrical control panels",
+      "Data centers & network cabling",
+      "Telecommunications equipment",
+      "Automotive wiring harnesses",
+      "Outdoor electrical equipment",
+      "Industrial machinery",
+      "Infrastructure maintenance"
+    ],
+    "zh": [
+      "电线、电缆及线束标识",
+      "电力控制柜及配电设备",
+      "数据中心及网络布线",
+      "通信设备及光纤线路",
+      "汽车及新能源线束",
+      "户外设备及基础设施标识",
+      "工业自动化设备"
+    ]
+  },
+  "certifications": {}
+}

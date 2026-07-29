@@ -175,6 +175,18 @@
           "img": "",
           "landing": true,
           "slug": "e-6033"
+        },
+        {
+          "name": "E6034",
+          "line": {
+            "en": "Matte vinyl · −40℃~80℃ · flexible wrap-around, water/oil/UV resistant · thermal-transfer printable",
+            "zh": "雾面 VINYL · −40℃~80℃ · 柔性缠绕，耐水/耐油/耐紫外，支持热转印",
+            "vi": "Vinyl mờ · −40°C~80°C · quấn linh hoạt, chống nước/dầu/UV · in truyền nhiệt",
+            "th": "ไวนิลด้าน · −40°C~80°C · พันแบบยืดหยุ่น ทนน้ำ/น้ำมัน/UV · พิมพ์ถ่ายโอนความร้อน"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-6034"
         }
       ]
     },
