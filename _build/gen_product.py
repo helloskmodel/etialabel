@@ -21,22 +21,26 @@ UI = {
          "benefits": "Benefits", "spec": "Specifications", "applications": "Applications",
          "certs": "Testing & Certifications", "cta_btn": "Request Samples & TDS by Email",
          "cta_note": "No online download — samples and the TDS are sent one-to-one by email.",
-         "featured": "Featured Product Solutions", "home": "Home", "products": "Products"},
+         "featured": "Featured Product Solutions", "home": "Home", "products": "Products",
+         "sc_apps": "Typical Applications", "sc_containers": "Typical Containers", "sc_products": "Recommended Products"},
   "zh": {"positioning": "产品概述", "challenges": "核心制程挑战", "features": "核心特性",
          "benefits": "客户价值", "spec": "产品规格", "applications": "适用场景",
          "certs": "测试与认证", "cta_btn": "邮件申请样品 & TDS",
          "cta_note": "本页无在线下载，样品与 TDS 仅通过邮件一对一发送。",
-         "featured": "推荐产品方案", "home": "首页", "products": "产品"},
+         "featured": "推荐产品方案", "home": "首页", "products": "产品",
+         "sc_apps": "典型应用", "sc_containers": "典型容器", "sc_products": "推荐产品"},
   "vi": {"positioning": "Tổng quan", "challenges": "Thách thức sản xuất", "features": "Đặc tính",
          "benefits": "Lợi ích", "spec": "Thông số kỹ thuật", "applications": "Ứng dụng",
          "certs": "Kiểm tra & Chứng nhận", "cta_btn": "Yêu cầu mẫu & TDS qua Email",
          "cta_note": "Không tải xuống trực tuyến — mẫu và TDS được gửi riêng qua email.",
-         "featured": "Giải pháp sản phẩm tiêu biểu", "home": "Trang chủ", "products": "Sản phẩm"},
+         "featured": "Giải pháp sản phẩm tiêu biểu", "home": "Trang chủ", "products": "Sản phẩm",
+         "sc_apps": "Ứng dụng điển hình", "sc_containers": "Vật chứa điển hình", "sc_products": "Sản phẩm đề xuất"},
   "th": {"positioning": "ภาพรวม", "challenges": "ความท้าทายในการผลิต", "features": "คุณสมบัติ",
          "benefits": "ประโยชน์", "spec": "ข้อมูลจำเพาะ", "applications": "การใช้งาน",
          "certs": "การทดสอบและการรับรอง", "cta_btn": "ขอตัวอย่าง & TDS ทางอีเมล",
          "cta_note": "ไม่มีการดาวน์โหลดออนไลน์ — ตัวอย่างและ TDS จะถูกส่งทางอีเมล",
-         "featured": "โซลูชันผลิตภัณฑ์แนะนำ", "home": "หน้าแรก", "products": "สินค้า"},
+         "featured": "โซลูชันผลิตภัณฑ์แนะนำ", "home": "หน้าแรก", "products": "สินค้า",
+         "sc_apps": "การใช้งานทั่วไป", "sc_containers": "ภาชนะทั่วไป", "sc_products": "ผลิตภัณฑ์แนะนำ"},
 }
 
 def L(node, lang):
@@ -97,6 +101,9 @@ CSS = """
 .pscncard h3{margin:2px 0 0;font-size:16px;color:#143C96;line-height:1.3}
 .pscncard p{margin:0;font-size:14px;line-height:1.6;color:#41506e}
 .pscncard .ap{margin-top:auto;padding-top:8px;font-size:12.5px;color:#5a6885;line-height:1.55;border-top:1px solid #eef2f9}
+.pscn-sub{font-size:12.5px;line-height:1.55;color:#41506e;margin-top:4px}
+.pscn-lb{display:block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#8593ad;margin-bottom:1px}
+.pscncard .pscn-sub:first-of-type{margin-top:8px;padding-top:8px;border-top:1px solid #eef2f9}
 @media (max-width:760px){
   .phero .in{padding:26px 18px}.phero h1{font-size:24px}.phero .tl{font-size:15.5px}
   .psec{padding:20px 18px}.psec h2{font-size:20px}.psec .pos{font-size:14.5px;line-height:1.65}
@@ -121,13 +128,28 @@ def highlight_html(h, lang):
         esc(L(h.get("eyebrow", {}), lang)), esc(L(h.get("title", {}), lang)),
         esc(L(h.get("body", {}), lang)), (ul(pts, "ok") if pts else ""), linkshtml)
 
-def scenarios_html(items):
+def scenarios_html(items, ui):
+    def subblock(label, text):
+        return '<div class="pscn-sub"><span class="pscn-lb">%s</span>%s</div>' % (esc(label), esc(text))
     cards = ""
     for s in items:
+        title = ("%s %s" % (s.get("icon", ""), s.get("title", ""))).strip()
+        apps = s.get("apps", "")
+        sub = ""
+        apline = ""
+        if isinstance(apps, list):
+            if apps:
+                sub += subblock(ui["sc_apps"], " · ".join(apps))
+        elif apps:
+            apline = '<div class="ap">%s</div>' % esc(apps)
+        if s.get("containers"):
+            sub += subblock(ui["sc_containers"], s["containers"])
+        if s.get("products"):
+            sub += subblock(ui["sc_products"], s["products"])
         cards += ('<div class="pscncard"><div class="tmp">%s</div><div class="pr">%s</div>'
-                  '<h3>%s</h3><p>%s</p><div class="ap">%s</div></div>') % (
-            esc(s.get("temp", "")), esc(s.get("process", "")), esc(s.get("title", "")),
-            esc(s.get("desc", "")), esc(s.get("apps", "")))
+                  '<h3>%s</h3><p>%s</p>%s%s</div>') % (
+            esc(s.get("temp", "")), esc(s.get("process", "")), esc(title),
+            esc(s.get("desc", "")), sub, apline)
     return '<div class="pscn">%s</div>' % cards
 
 def ul(items, cls=""):
@@ -192,7 +214,7 @@ def build_lang(d, lang):
             inner += ul(L(w["items"], lang), "ok")
         body += section("", heading or ui["benefits"], inner)
     if L(d.get("scenarios", {}), lang):
-        body += section(ui["applications"], ui["applications"], scenarios_html(L(d["scenarios"], lang)))
+        body += section(ui["applications"], ui["applications"], scenarios_html(L(d["scenarios"], lang), ui))
     if L(d.get("featured", {}), lang):
         body += section("", ui["featured"], ul(L(d["featured"], lang), "ok"))
     if d.get("spec_table"):

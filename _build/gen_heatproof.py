@@ -844,8 +844,8 @@ FEATURED_PRODUCTS = [
   # Trimmed for launch — keep only the high-temp and low-temp solutions live.
   # The rest are retained as data files (data/products/*.json) and will be
   # re-added here as their pages are finalized.
-  "high-heat-identification",   # high temperature
-  "e-4812",                     # low temperature
+  "high-heat-identification",       # high temperature
+  "cold-chain-cryogenic-labels",    # low temperature
 ]
 
 def build_products_hub(lang):
