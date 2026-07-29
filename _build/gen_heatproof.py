@@ -837,8 +837,38 @@ def prod_type_pill(p):
 def line_products(pid):
     return [PRODUCTS[x] for x in PRODUCTS if pid in PRODUCTS[x]["process_paths"]]
 
+# Introduced product landing pages, in display order (home best-sellers first).
+# Add a slug here when a product's page is ready — it then appears in the /products/
+# catalog and is internally linked for SEO. Missing files are skipped safely.
+FEATURED_PRODUCTS = [
+  "hp-901", "e-4812", "apex", "e-2813", "e-2712",       # home best-sellers
+  "e-2512bl", "xf-603", "e-2913", "xf58", "e-series",    # automotive / high-temp / PCB
+  "e-6034", "e-6033", "e-3635", "e-4532",                # wire & cable
+  "hp-x2080", "hp-cbr11",                                # steel high-temp
+]
+
 def build_products_hub(lang):
-    # Products & Solutions — three ways to find a material
+    # Featured product catalog — every introduced product landing page. This is the
+    # single "products entry" the home best-sellers link into, and the SEO backbone
+    # (internal links to every product page). Grows as new products are introduced.
+    def _plang(node):
+        if not isinstance(node, dict): return node or ""
+        return node.get(lang) or node.get("en") or node.get("zh") or ""
+    pcat=""
+    for slug in FEATURED_PRODUCTS:
+        fp=os.path.join(BUILD_DIR,"data","products",slug+".json")
+        if not os.path.exists(fp): continue
+        p=json.load(open(fp,encoding="utf-8"))
+        pcat+='<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>'%(
+            Lx(lang,"/products/item/%s/"%slug), esc(_plang(p.get("title",{}))), esc(_plang(p.get("tagline",{}))))
+    catalog_section=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
+                     '<div class="sub">%s</div><div class="grid grid2">%s</div></div></section>')%(
+        ("产品目录" if lang=="zh" else "PRODUCTS"),
+        ("产品精选" if lang=="zh" else "Featured Products"),
+        ("按型号浏览已上线的 ETIA 特种标签产品，更多产品陆续补充。" if lang=="zh"
+         else "Browse ETIA specialty label products by model — more are added over time."),
+        pcat)
+    # Secondary route — find by industry & application
     routes = [
       ("按行业与应用" if lang=="zh" else "By Industry & Application",
        "金属与陶瓷、汽车 —— 从您的行业与应用出发选型" if lang=="zh"
@@ -847,7 +877,8 @@ def build_products_hub(lang):
     ]
     rcards = "".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="rows" style="color:var(--blue);font-weight:700;margin-top:10px">%s →</div></a>'%(
         L(lang,u), esc(t), esc(d), ("进入" if lang=="zh" else "Explore")) for t,d,u in routes)
-    body = ('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="grid grid2">%s</div></div></section>'
+    body = (catalog_section +
+        '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><h2>%s</h2><div class="sub">%s</div><div class="grid grid2">%s</div></div></section>'
             '<div class="wrap">%s</div>') % (
         ("从应用出发" if lang=="zh" else "Start from your application"),
         ("从您的行业与应用出发,匹配适配的耐久标签材料。" if lang=="zh"
@@ -1452,10 +1483,13 @@ def build_home(lang):
             href, gi, pimg, INDUSTRY_ICONS[gi%len(INDUSTRY_ICONS)],
             esc(pr["name"]), esc(pr["model"]), esc(pr.get("code","")),
             esc(T.get("prod_cta","Talk to a Specialist") if not slug else ("查看产品" if lang=="zh" else "View Product")))
+    prod_viewall={"en":"View All Products","zh":"查看全部产品","vi":"Xem tất cả sản phẩm","th":"ดูสินค้าทั้งหมด"}.get(lang,"View All Products")
     prod_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
                   '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
-                  '<div class="acgrid acgrid5">%s</div></div></section>')%(
-        esc(T.get("prod_eyebrow","")),esc(T.get("prod_title","")),esc(T.get("prod_sub","")),pcards) if pcards else ""
+                  '<div class="acgrid acgrid5">%s</div>'
+                  '<div style="margin-top:20px"><a class="btn sec" href="%s">%s →</a></div></div></section>')%(
+        esc(T.get("prod_eyebrow","")),esc(T.get("prod_title","")),esc(T.get("prod_sub","")),pcards,
+        home_hlink(lang,"/products/"),esc(prod_viewall)) if pcards else ""
     # Free Sample — lead capture (email / phone / address) -> mailto
     fs_section=('<section class="blk freesample"><div class="wrap"><div class="fsbox">'
                 '<div class="fsL"><div class="eyebrow" style="color:#8fe063">%s</div>'
