@@ -389,6 +389,10 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .sccard:hover .acard-img img{transform:none}
 .appcard .acard-img{background:#eef3fc;aspect-ratio:16/10}
 .appcard .acard-body p{font-size:14px;color:var(--mut);line-height:1.55;margin-top:6px}
+.indfilter{display:flex;flex-wrap:wrap;gap:9px;margin:2px 0 22px}
+.indfbtn{font-size:14px;font-weight:700;color:var(--mut);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer;transition:.15s}
+.indfbtn:hover{border-color:var(--blue);color:var(--blue)}
+.indfbtn.on{background:var(--blue);border-color:var(--blue);color:#fff}
 .acard-img .aicon{color:#ffffffe6}
 .acard-img .aicon svg{width:38px;height:38px}
 .acard-body{padding:12px 12px 14px;display:flex;flex-direction:column;flex:1}
@@ -1841,81 +1845,61 @@ def build_service(lang):
     if lang=="en": track("/service/","core")
 
 def build_applications(lang):
-    """Applications hub — brand pillar 'Applications Drive Material Selection'.
-    Cards route to the real client industry-sector landings (built by render_industry)."""
+    """Applications = Application-Notes hub. Small industry filter buttons on top,
+    notes (picture + topic cards) below, client-side filtered by industry."""
     zh=(lang=="zh")
-    # (slug, title_zh, title_en, desc_zh, desc_en) — titles/slogans are client-provided
-    sectors=[
-      ("automotive-labeling-solutions","汽车与轮胎标识","Automotive & Tire",
-       "全车耐久标识，长效溯源，守护行车安全",
-       "Durable full-vehicle marking with lifecycle traceability to secure driving safety."),
-      ("pcb-electronics-labeling-solutions","PCB 电子标识","PCB & Electronics",
-       "高性能 PI 标签，专为 PCB 制造而生",
-       "Engineered polyimide labels for reflow, aggressive wash and post-process PCB manufacturing."),
-      ("medical-pharmaceutical-labeling-solutions","医疗与医药标识","Medical & Pharmaceutical",
-       "全系列医用特种标签，守护生物医药安全追踪",
-       "A full range of medical specialty labels securing biopharmaceutical traceability."),
-      ("steel-metal-ceramic-labeling-solutions","钢铁与陶瓷标识","Steel & Ceramics",
-       "耐受极端高温，实现全程可追溯",
-       "Withstand extreme heat and enable end-to-end traceability."),
-      ("wire-cable-labeling-solutions","线缆与线束标识","Wire & Cable",
-       "可靠标识，保障运维安全",
-       "Reliable wrap-around and fold-over labels for safe operation and maintenance."),
-      ("outdoor-energy-labeling-solutions","户外与能源标识","Outdoor & Energy",
-       "极端环境不失效，设备终身可溯源",
-       "Built to survive extreme environments with lifelong asset traceability."),
-    ]
-    # image-top "picture + topic" card
-    _COS="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/"
-    IND_IMG={
-      "automotive-labeling-solutions":_COS+"AUTO-BANNER",
-      "pcb-electronics-labeling-solutions":_COS+"PCB-BANNER.jpg",
-      "medical-pharmaceutical-labeling-solutions":_COS+"MEDICAL-BANNER",
-      "steel-metal-ceramic-labeling-solutions":_COS+"STEEL-BANNER",
-      "wire-cable-labeling-solutions":_COS+"CABLE-BANNER",
-      "outdoor-energy-labeling-solutions":_COS+"OURDOOR-BANNER",
-    }
-    def _imgcard(href,img,title,desc):
-        im=('<img src="%s" alt="" loading="lazy" onerror="this.remove()">'%esc(img)) if img else ''
-        dd=('<p>%s</p>'%esc(desc)) if desc else ''
-        return ('<a class="acard appcard" href="%s"><div class="acard-img">%s</div>'
-                '<div class="acard-body"><h3 class="indname">%s</h3>%s</div></a>')%(esc(href),im,esc(title),dd)
-    cards="".join(_imgcard(Lx(lang,"/industries/%s/"%slug), IND_IMG.get(slug,""), (tz if zh else te), (dz if zh else de))
-        for slug,tz,te,dz,de in sectors)
-    # Application Notes — real client notes (built by gen_appnotes), ordered by their "order" field
     def _nl(node):
         if not isinstance(node,dict): return node or ""
         return node.get(lang) or node.get("en") or node.get("zh") or ""
-    # Feature only these client-provided notes as examples (more added over time)
-    FEATURED_NOTES=["vin-code-identification-tesla","hot-billet-direct-application"]
+    # industry taxonomy (order) and per-note industry key
+    IND_LABELS=[("automotive","Automotive","汽车"),("pcb","PCB","PCB"),
+                ("medical","Medical","医疗"),("steel","Steel & Ceramics","钢铁与陶瓷"),
+                ("wire-cable","Wire & Cable","线缆"),("outdoor-energy","Outdoor & Energy","户外与能源")]
+    NOTE_IND={
+      "vin-code-identification-tesla":"automotive",
+      "apex-pcb-process-labels":"pcb",
+      "e-4812-cryogenic-biosample-labels":"medical",
+      "hot-billet-direct-application":"steel",
+      "ceramic-sanitaryware-tracing":"steel",
+      "steel-wire-pickling-annealing":"steel",
+      "xf603-xf611-battery-flame-retardant":"outdoor-energy",
+    }
     notes=[]
     adir=os.path.join(BUILD_DIR,"data","appnotes")
-    for slug in FEATURED_NOTES:
-        fp=os.path.join(adir,slug+".json")
-        if os.path.exists(fp): notes.append(json.load(open(fp,encoding="utf-8")))
+    for fn in sorted(os.listdir(adir)):
+        if fn.endswith(".json"): notes.append(json.load(open(os.path.join(adir,fn),encoding="utf-8")))
     notes.sort(key=lambda n:n.get("order",99))
-    note_cards="".join(_imgcard(Lx(lang,"/application-notes/%s/"%n["slug"]),
-        (n.get("image") or n.get("banner") or ""), _nl(n.get("title",{})), _nl(n.get("subtitle",{})))
-        for n in notes)
-    body=(
-      # By Industry
-      '<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
-      '<div class="grid grid2">%s</div></div></section>'
-      # Application Notes
-      '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
-      '<div class="grid grid2">%s</div></div></section>'
-      '<div class="wrap">%s</div>')%(
-        ("按行业" if zh else "BY INDUSTRY"), ("按行业浏览" if zh else "Browse by Industry"), cards,
-        ("应用笔记" if zh else "APPLICATION NOTES"), ("应用笔记" if zh else "Application Notes"), note_cards,
-        cta2(lang,"applications"))
-    # hero without the body paragraph (kept eyebrow/title/sub); trust strip removed
+    present=set(NOTE_IND.get(n["slug"],"") for n in notes)
+    filters=[("all","All","全部")]+[(k,en,z) for k,en,z in IND_LABELS if k in present]
+    fbtns="".join('<button class="indfbtn%s" onclick="etaNoteFilter(this,\'%s\')">%s</button>'%(
+        (" on" if k=="all" else ""), k, esc(z if zh else en)) for k,en,z in filters)
+    def _notecard(n):
+        slug=n["slug"]; ind=NOTE_IND.get(slug,"")
+        img=n.get("image") or n.get("banner") or ""
+        im=('<img src="%s" alt="" loading="lazy" onerror="this.remove()">'%esc(img)) if img else ''
+        return ('<a class="acard appcard" data-ind="%s" href="%s"><div class="acard-img">%s</div>'
+                '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p></div></a>')%(
+            ind, Lx(lang,"/application-notes/%s/"%slug), im,
+            esc(_nl(n.get("title",{}))), esc(_nl(n.get("subtitle",{}))))
+    note_cards="".join(_notecard(n) for n in notes)
+    js=('<script>function etaNoteFilter(b,k){var w=b.closest(".notesblk");'
+        'w.querySelectorAll(".indfbtn").forEach(function(x){x.classList.toggle("on",x===b);});'
+        'w.querySelectorAll(".appcard[data-ind]").forEach(function(c){'
+        'c.style.display=(k==="all"||c.getAttribute("data-ind")===k)?"":"none";});}</script>')
+    body=('<section class="blk notesblk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
+          '<div class="indfilter">%s</div><div class="grid grid2">%s</div></div></section>'
+          '<div class="wrap">%s</div>%s')%(
+        ("应用笔记" if zh else "APPLICATION NOTES"),
+        ("按行业浏览应用笔记" if zh else "Application Notes by Industry"),
+        fbtns, note_cards, cta2(lang,"applications"), js)
+    # hero without the body paragraph
     s=HOME2.get(lang,HOME2["en"])["sections"][1]
     hero=page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "", s["b1"], s["b1u"], s["b2"], s["b2u"], SECTION_BG.get(1,""))
     crumb=[("Home","/"),("Applications","/applications/")]
     write(lang,"/applications/",page(lang,"/applications/",
         ("应用 | ETIA" if zh else "Applications | ETIA"),
-        ("按行业与应用笔记浏览 ETIA 标签方案 —— 汽车、PCB、医疗、钢铁、线缆与户外能源。" if zh
-         else "Browse ETIA labeling by industry and application notes — automotive, PCB, medical, steel, wire & cable, and outdoor energy."),
+        ("按行业浏览 ETIA 应用笔记 —— 汽车、PCB、医疗、钢铁、户外能源等。" if zh
+         else "Browse ETIA application notes by industry - automotive, PCB, medical, steel, outdoor energy and more."),
         ("应用" if zh else "Applications"), "",
         body, crumb, active="applications", trust=False, hero=hero))
     if lang=="en": track("/applications/","industries")
