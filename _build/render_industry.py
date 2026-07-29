@@ -99,6 +99,11 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
 .wcmcard .ml{font-size:12px;color:#5a6884;margin:3px 0 0;line-height:1.4}
 .wcmcard .mgo{font-size:11.5px;font-weight:800;color:#1A56DB;margin-top:5px;display:block}
 .wcmcard.off{cursor:default}.wcmcard.off .mgo{color:#8a97b3}
+.wcmcard.big{flex-direction:column;align-items:stretch;gap:0;padding:0;overflow:hidden}
+.wcmcard.big .ic{width:100%;height:200px;border-radius:0;align-self:stretch}
+.wcmcard.big>div{padding:13px 15px}
+.wcmcard.big .ml{font-size:13px}
+@media(max-width:760px){.wcmcard.big .ic{height:210px}}
 @media (max-width:760px){
   .wchero{min-height:210px}
   .wchero .in{padding:24px 18px}
@@ -118,12 +123,13 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
 JS_TMPL = """
 <script>
 (function(){
-var CATS=%(cats)s, GO=%(go)s, SUBNAV=%(subnav)s, HIDE_INTRO=%(hide_intro)s;
+var CATS=%(cats)s, GO=%(go)s, SUBNAV=%(subnav)s, HIDE_INTRO=%(hide_intro)s, BIG_IMG=%(big_img)s;
 function card(p,hideName){
+  var cls='wcmcard'+(BIG_IMG?' big':'')+(p.landing?'':' off');
   var im=p.img?('<span class="ic"><img class="cim" src="'+p.img+'" alt="" loading="lazy" onerror="this.parentNode.remove()"></span>'):'';
   var nm=hideName?'':'<p class="mn">'+p.n+'</p>';
   var inner=im+'<div>'+nm+'<p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+'</span>'):'')+'</div>';
-  return p.landing?'<a class="wcmcard" href="'+p.href+'">'+inner+'</a>':'<div class="wcmcard off">'+inner+'</div>';
+  return p.landing?'<a class="'+cls+'" href="'+p.href+'">'+inner+'</a>':'<div class="'+cls+'">'+inner+'</div>';
 }
 // top row: [image | category-description card]; falls back to plain intro when no image
 function topRow(c){
@@ -215,7 +221,8 @@ def build_lang(data, lang):
     body += JS_TMPL % {"cats": json.dumps(cats, ensure_ascii=False),
                        "go": json.dumps(ui["go"], ensure_ascii=False),
                        "subnav": "true" if data.get("subnav") else "false",
-                       "hide_intro": "true" if data.get("hide_intro") else "false"}
+                       "hide_intro": "true" if data.get("hide_intro") else "false",
+                       "big_img": "true" if data.get("big_img") else "false"}
 
     crumb = [(ui["home"], "/"), (title, path)]
     content = hp.page(lang, path, L(data["seo_title"], lang), L(data["seo_desc"], lang),

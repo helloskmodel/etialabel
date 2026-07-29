@@ -312,16 +312,16 @@
     },
     {
       "tab": {
-        "en": "Under the Vehicle",
-        "zh": "外饰底盘",
-        "vi": "Ngoại thất & Gầm",
-        "th": "ภายนอก/แชสซี"
+        "en": "Auto Parts",
+        "zh": "零部件",
+        "vi": "Phụ tùng",
+        "th": "ชิ้นส่วนรถยนต์"
       },
       "name": {
-        "en": "Exterior & Chassis Component Labels",
-        "zh": "车身外饰 & 底盘零部件标签",
-        "vi": "Nhãn ngoại thất & khung gầm",
-        "th": "ฉลากชิ้นส่วนภายนอกและแชสซี"
+        "en": "Auto Parts Labels",
+        "zh": "汽车零部件标签",
+        "vi": "Nhãn phụ tùng ô tô",
+        "th": "ฉลากชิ้นส่วนรถยนต์"
       },
       "intro": {
         "en": "Weatherproof traceability labels for bumpers, brake discs, chassis suspension and stamped metal parts.",
@@ -350,47 +350,6 @@
         }
       ],
       "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M3 13l1.8-4.5A2 2 0 0 1 6.7 7H14l4 4 2.4.8A1 1 0 0 1 21 12.8V15h-2.2M8.8 15H6'/><circle cx='7.5' cy='16.5' r='1.9'/><circle cx='16.8' cy='16.5' r='1.9'/></svg>"
-    },
-    {
-      "tab": {
-        "en": "Oily / Dirty Surfaces",
-        "zh": "油污表面",
-        "vi": "Bề mặt dầu mỡ",
-        "th": "พื้นผิวเปื้อนน้ำมัน"
-      },
-      "name": {
-        "en": "Oily / Dirty Surface Labels",
-        "zh": "油污表面标签",
-        "vi": "Nhãn bề mặt dầu mỡ",
-        "th": "ฉลากพื้นผิวเปื้อนน้ำมัน"
-      },
-      "intro": {
-        "en": "Specialized adhesives cut through contamination, bonding reliably to oily and greasy automotive parts. Labels remain intact across gearboxes, pumps, and hydraulic systems where standard solutions typically fail quickly.",
-        "zh": "专用胶粘剂穿透油污，牢固粘接于油腻的汽车零部件；在变速箱、泵、液压系统等常规方案易失效的场景下仍保持标签完整",
-        "vi": "Keo chuyên dụng xuyên qua lớp bẩn, bám chắc lên các chi tiết ô tô dính dầu mỡ; nhãn giữ nguyên vẹn trên hộp số, bơm và hệ thống thủy lực nơi giải pháp thông thường thường nhanh hỏng.",
-        "th": "กาวเฉพาะทางแทรกผ่านคราบสกปรก ยึดติดแน่นกับชิ้นส่วนรถยนต์ที่เปื้อนน้ำมัน ฉลากคงสภาพบนกระปุกเกียร์ ปั๊ม และระบบไฮดรอลิก ที่โซลูชันทั่วไปมักเสียหายเร็ว"
-      },
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-2813",
-      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3c3 4 5 6.5 5 9a5 5 0 0 1-10 0c0-2.5 2-5 5-9z'/><path d='M9.5 13.5a2.5 2.5 0 0 0 2.5 2.5'/></svg>",
-      "products": [
-        {
-          "name": {
-            "en": "Oil & Grease-Resistant Component Label",
-            "zh": "耐油污零部件标签",
-            "vi": "Nhãn linh kiện chống dầu mỡ",
-            "th": "ฉลากชิ้นส่วนทนน้ำมัน"
-          },
-          "line": {
-            "en": "E-2813 · -40℃~150℃ · bonds through oil & grease on metal · gearboxes, pumps, hydraulics",
-            "zh": "E-2813 · -40℃~150℃ · 穿透油污牢贴金属 · 变速箱、泵、液压系统",
-            "vi": "E-2813 · -40℃~150℃ · bám xuyên dầu mỡ trên kim loại · hộp số, bơm, thủy lực",
-            "th": "E-2813 · -40℃~150°C · ยึดผ่านน้ำมันบนโลหะ · กระปุกเกียร์ ปั๊ม ไฮดรอลิก"
-          },
-          "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-2813",
-          "landing": false,
-          "slug": ""
-        }
-      ]
     },
     {
       "tab": {
@@ -446,67 +405,9 @@
           "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-LABEL%20ON%20PLASTIC",
           "landing": false,
           "slug": ""
-        },
-        {
-          "name": {
-            "en": "Carpet Label",
-            "zh": "地毯零部件标签",
-            "vi": "Nhãn thảm xe",
-            "th": "ฉลากพรมรถ"
-          },
-          "line": {
-            "en": "E-2012 · -20℃~100℃ · white matte PET · carpet cleaner, lubricant, moisture & repeated-folding resistant · high initial tack on fabric",
-            "zh": "E-2012 · -20℃~100℃ · 白色哑光 PET · 耐地毯清洁剂、润滑油、车内水汽、反复弯折 · 高初粘牢贴织物",
-            "vi": "E-2012 · -20℃~100℃ · PET mờ trắng · chống dung dịch rửa thảm, dầu bôi trơn, hơi ẩm, gấp nhiều lần · lực dính ban đầu cao trên vải",
-            "th": "E-2012 · -20℃~100°C · PET สีด้านขาว · ทนสารล้างพรม น้ำมันหล่อลื่น ความชื้น การพับซ้ำๆ · แรงยึดเริ่มต้นสูงบนผ้า"
-          },
-          "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-LABEL%20ON%20PLASTIC",
-          "landing": false,
-          "slug": ""
         }
       ],
       "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M7 4v7a2 2 0 0 0 2 2h5'/><path d='M7 13l-2.2 2.2A2 2 0 0 0 4 16.6V20'/><path d='M9 15v5M14 13h3a2 2 0 0 1 2 2v5'/></svg>"
-    },
-    {
-      "tab": {
-        "en": "Flexible Components",
-        "zh": "柔性件",
-        "vi": "Linh kiện mềm",
-        "th": "ชิ้นส่วนยืดหยุ่น"
-      },
-      "name": {
-        "en": "Flexible Component Labels",
-        "zh": "柔性零部件标签",
-        "vi": "Nhãn linh kiện mềm dẻo",
-        "th": "ฉลากชิ้นส่วนยืดหยุ่น"
-      },
-      "intro": {
-        "en": "Low-modulus flexible labels for rubber hoses and soft plastic parts that flex without cracking or edge lifting.",
-        "zh": "适配橡胶管路、软质塑料件的低模量柔性标签，随形变不开裂、边缘不脱胶",
-        "vi": "Nhãn mềm mô đun thấp cho ống cao su và bộ phận nhựa mềm, biến dạng không nứt, không bong cạnh",
-        "th": "ฉลากยืดหยุ่นโมดูลต่ำ สำหรับท่อยางและชิ้นส่วนพลาสติกอ่อน ยืดได้ไม่แตก ไม่หลุดขอบ"
-      },
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-LABEL%20ON%20PLASTIC",
-      "products": [
-        {
-          "name": {
-            "en": "Flexible Fitting Identification Label",
-            "zh": "柔性配件识别标签",
-            "vi": "Nhãn nhận biết phụ kiện mềm",
-            "th": "ฉลากระบุชิ้นส่วนอ่อน"
-          },
-          "line": {
-            "en": "E-2512BL · -40℃~100℃ · white matte PET · rubber-bleed oil, interior cleaner & repeated-bending resistant, for low-surface soft plastics",
-            "zh": "E-2512BL · -40℃~100℃ · 白色哑光 PET · 耐橡胶析出油脂、内饰清洁剂、反复弯折，适配低表面软性塑胶",
-            "vi": "E-2512BL · -40℃~100℃ · PET mờ trắng · chống dầu chảy từ cao su, dung dịch vệ sinh, gấp liên tục, phù hợp nhựa mềm năng lượng bề mặt thấp",
-            "th": "E-2512BL · -40℃~100°C · PET สีด้านขาว · ทนน้ำมันซึมจากยาง สารล้างภายใน การพับซ้ำๆ เหมาะพลาสติกอ่อนผิวต่ำ"
-          },
-          "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-LABEL%20ON%20PLASTIC",
-          "landing": false,
-          "slug": ""
-        }
-      ],
-      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M2 9c2.2-3.5 4.3-3.5 6.5 0s4.3 3.5 6.5 0 4.3-3.5 6.5 0M2 15c2.2-3.5 4.3-3.5 6.5 0s4.3 3.5 6.5 0 4.3-3.5 6.5 0'/></svg>"
     },
     {
       "tab": {
@@ -567,5 +468,7 @@
       "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><circle cx='12' cy='12' r='4'/><path d='M12 3v3M12 18v3M3 12h3M18 12h3'/></svg>"
     }
   ],
-  "subnav": false
+  "subnav": false,
+  "hide_intro": true,
+  "big_img": true
 }

@@ -504,6 +504,11 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
 .wcmcard .ml{font-size:12px;color:#5a6884;margin:3px 0 0;line-height:1.4}
 .wcmcard .mgo{font-size:11.5px;font-weight:800;color:#1A56DB;margin-top:5px;display:block}
 .wcmcard.off{cursor:default}.wcmcard.off .mgo{color:#8a97b3}
+.wcmcard.big{flex-direction:column;align-items:stretch;gap:0;padding:0;overflow:hidden}
+.wcmcard.big .ic{width:100%;height:200px;border-radius:0;align-self:stretch}
+.wcmcard.big>div{padding:13px 15px}
+.wcmcard.big .ml{font-size:13px}
+@media(max-width:760px){.wcmcard.big .ic{height:210px}}
 @media (max-width:760px){
   .wchero{min-height:210px}
   .wchero .in{padding:24px 18px}
@@ -523,12 +528,13 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
 <section class="wcsec wcov"><div class="wceye">行业概述</div><h2>行业概述</h2><p>户外耐候 PVC 与 Vinyl 标签，专为 5–10 年日晒、盐雾与雨淋工况设计 —— 抗紫外线、耐沿海盐雾、酸雨与冷热循环，标识始终清晰 选择材质查看对应产品</p></section><section class="wcsec"><div class="wceye">Products</div><h2>选择材质</h2><div class="wcfc"><div class="wcfcrow"><button class="wcar" onclick="wcScroll(-1)">&lsaquo;</button><div class="wctabs" id="wctabs"></div><button class="wcar" onclick="wcScroll(1)">&rsaquo;</button></div><div class="wcsubrow" id="wcsubrow"><button class="wcar" onclick="wcSubScroll(-1)">&lsaquo;</button><div class="wcsub" id="wcsub"></div><button class="wcar" onclick="wcSubScroll(1)">&rsaquo;</button></div><div id="wcpanel"></div></div></section>
 <script>
 (function(){
-var CATS=[{"tab": "线缆 Vinyl", "intro": "柔性耐候 Vinyl，适用于户外线缆与线束缠绕 —— 贴合曲面，抗紫外线、耐盐雾与潮湿不翘边 ", "img": "", "icon": "", "prods": [{"n": "E-6034 · 雾面透明户外耐候 Vinyl", "l": "-40℃ ~ 80℃ · 4mil 雾面透明 Vinyl + 耐候丙烯酸胶 · 户外耐候 5~8 年，抗紫外线、耐沿海盐雾与高湿，柔软适配弧形电缆，防水防油，雾面不反光扫码 · 户外电力线缆、通信光缆、沿海风电线束", "img": "", "landing": false, "href": "#"}, {"n": "E-6034-1 · 半透明白色线缆 Vinyl", "l": "-40℃ ~ 90℃ · 4mil 半透明白色 Vinyl + 中粘耐候丙烯酸胶 · 半透底色不遮挡线缆原色，户外耐候 5 年，防水耐油，线束缠绕不翘边 · 弱电布线、安防线缆、室内通信线束", "img": "", "landing": false, "href": "#"}]}, {"tab": "基建 PVC", "intro": "刚性耐候 PVC，适用于户外长期资产、电线杆与管道标识 —— 3 至 10 年抗紫外线、耐酸雨与冷热循环 ", "img": "", "icon": "", "prods": [{"n": "E-6534 · 加厚白色超强耐候 PVC", "l": "-40℃ ~ 150℃ · 4mil 加厚白色 PVC + 超强耐候丙烯酸胶 + 加厚底纸 · 全系户外最耐用 PVC，耐候 7~10 年，抗强紫外线、酸雨与高低温循环，加厚抗撕裂，长期不褪色 · 光伏组件、通信基站、市政大型管道、户外长期资产跟踪", "img": "", "landing": false, "href": "#"}, {"n": "E-6533 · 白色户外耐候 PVC", "l": "-40℃ ~ 150℃ · 3mil 白色 PVC + 户外永久丙烯酸胶 + 加厚格拉辛底纸 · 加厚底纸挺度高、模切平整，户外耐候 3~5 年，抗紫外线与冷热冲击，贴合电线杆与金属管道曲面，耐雨水腐蚀 · 电力电线杆、给排水管道、户外设备资产铭牌", "img": "", "landing": false, "href": "#"}, {"n": "E-6833 · 通用户外市政 PVC", "l": "-40℃ ~ 120℃ · 3mil 白色 PVC + 长效耐候丙烯酸胶 · 户外耐候 7~10 年，抗紫外线、耐酸碱雨水，适配地下给排水与燃气管道，耐磨防刮，热转印字迹户外 5 年清晰 · 市政地下管网、燃气管道、园区户外管道标识", "img": "", "landing": false, "href": "#"}]}, {"tab": "安全警示", "intro": "高可视耐候警示 Vinyl，适用于危险管路与户外安全标识 —— 高饱和底色，耐紫外线、盐雾与雨水 ", "img": "", "icon": "", "prods": [{"n": "E-6533R · 红色警示户外 Vinyl", "l": "-40℃ ~ 80℃ · 3mil 红色警示 Vinyl + 耐候丙烯酸胶 · 高饱和红色警示底色，户外耐候 5~8 年，抗紫外线、盐雾与雨水，柔软贴曲面，区分危险管路 · 化工管道警示、电力基站、光伏板安全标识、厂区危险区域标牌", "img": "", "landing": false, "href": "#"}]}], GO="查看产品 →", SUBNAV=false, HIDE_INTRO=false;
+var CATS=[{"tab": "线缆 Vinyl", "intro": "柔性耐候 Vinyl，适用于户外线缆与线束缠绕 —— 贴合曲面，抗紫外线、耐盐雾与潮湿不翘边 ", "img": "", "icon": "", "prods": [{"n": "E-6034 · 雾面透明户外耐候 Vinyl", "l": "-40℃ ~ 80℃ · 4mil 雾面透明 Vinyl + 耐候丙烯酸胶 · 户外耐候 5~8 年，抗紫外线、耐沿海盐雾与高湿，柔软适配弧形电缆，防水防油，雾面不反光扫码 · 户外电力线缆、通信光缆、沿海风电线束", "img": "", "landing": false, "href": "#"}, {"n": "E-6034-1 · 半透明白色线缆 Vinyl", "l": "-40℃ ~ 90℃ · 4mil 半透明白色 Vinyl + 中粘耐候丙烯酸胶 · 半透底色不遮挡线缆原色，户外耐候 5 年，防水耐油，线束缠绕不翘边 · 弱电布线、安防线缆、室内通信线束", "img": "", "landing": false, "href": "#"}]}, {"tab": "基建 PVC", "intro": "刚性耐候 PVC，适用于户外长期资产、电线杆与管道标识 —— 3 至 10 年抗紫外线、耐酸雨与冷热循环 ", "img": "", "icon": "", "prods": [{"n": "E-6534 · 加厚白色超强耐候 PVC", "l": "-40℃ ~ 150℃ · 4mil 加厚白色 PVC + 超强耐候丙烯酸胶 + 加厚底纸 · 全系户外最耐用 PVC，耐候 7~10 年，抗强紫外线、酸雨与高低温循环，加厚抗撕裂，长期不褪色 · 光伏组件、通信基站、市政大型管道、户外长期资产跟踪", "img": "", "landing": false, "href": "#"}, {"n": "E-6533 · 白色户外耐候 PVC", "l": "-40℃ ~ 150℃ · 3mil 白色 PVC + 户外永久丙烯酸胶 + 加厚格拉辛底纸 · 加厚底纸挺度高、模切平整，户外耐候 3~5 年，抗紫外线与冷热冲击，贴合电线杆与金属管道曲面，耐雨水腐蚀 · 电力电线杆、给排水管道、户外设备资产铭牌", "img": "", "landing": false, "href": "#"}, {"n": "E-6833 · 通用户外市政 PVC", "l": "-40℃ ~ 120℃ · 3mil 白色 PVC + 长效耐候丙烯酸胶 · 户外耐候 7~10 年，抗紫外线、耐酸碱雨水，适配地下给排水与燃气管道，耐磨防刮，热转印字迹户外 5 年清晰 · 市政地下管网、燃气管道、园区户外管道标识", "img": "", "landing": false, "href": "#"}]}, {"tab": "安全警示", "intro": "高可视耐候警示 Vinyl，适用于危险管路与户外安全标识 —— 高饱和底色，耐紫外线、盐雾与雨水 ", "img": "", "icon": "", "prods": [{"n": "E-6533R · 红色警示户外 Vinyl", "l": "-40℃ ~ 80℃ · 3mil 红色警示 Vinyl + 耐候丙烯酸胶 · 高饱和红色警示底色，户外耐候 5~8 年，抗紫外线、盐雾与雨水，柔软贴曲面，区分危险管路 · 化工管道警示、电力基站、光伏板安全标识、厂区危险区域标牌", "img": "", "landing": false, "href": "#"}]}], GO="查看产品 →", SUBNAV=false, HIDE_INTRO=false, BIG_IMG=false;
 function card(p,hideName){
+  var cls='wcmcard'+(BIG_IMG?' big':'')+(p.landing?'':' off');
   var im=p.img?('<span class="ic"><img class="cim" src="'+p.img+'" alt="" loading="lazy" onerror="this.parentNode.remove()"></span>'):'';
   var nm=hideName?'':'<p class="mn">'+p.n+'</p>';
   var inner=im+'<div>'+nm+'<p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+'</span>'):'')+'</div>';
-  return p.landing?'<a class="wcmcard" href="'+p.href+'">'+inner+'</a>':'<div class="wcmcard off">'+inner+'</div>';
+  return p.landing?'<a class="'+cls+'" href="'+p.href+'">'+inner+'</a>':'<div class="'+cls+'">'+inner+'</div>';
 }
 // top row: [image | category-description card]; falls back to plain intro when no image
 function topRow(c){
