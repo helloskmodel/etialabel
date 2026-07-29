@@ -345,8 +345,8 @@
             "th": "E-2813 · -40℃~150°C · PET ทนสภาพอากาศสีขาวเงา 2 มิล · ทนฝน เกลือละลายหิมะ ฝุ่นเบรก รังสียูวี น้ำมันเบรก"
           },
           "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-2813"
         }
       ],
       "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M3 13l1.8-4.5A2 2 0 0 1 6.7 7H14l4 4 2.4.8A1 1 0 0 1 21 12.8V15h-2.2M8.8 15H6'/><circle cx='7.5' cy='16.5' r='1.9'/><circle cx='16.8' cy='16.5' r='1.9'/></svg>"
