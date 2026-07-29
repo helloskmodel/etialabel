@@ -96,7 +96,7 @@
         "hi": 1000
       },
       {
-        "temp": "Room Temp. to 1200°C",
+        "temp": "Up to 1200°C",
         "process": "Heat Treatment",
         "title": "Heat Treatment Process Management",
         "desc": "Labels are applied before heat treatment and remain with the product throughout annealing, firing, sintering, and other thermal processes to ensure continuous identification.",
@@ -152,7 +152,7 @@
         "hi": 1000
       },
       {
-        "temp": "常温贴标 · 最高 1200°C",
+        "temp": "最高 1200°C",
         "process": "热处理工艺",
         "title": "热处理过程管理",
         "desc": "标签于常温贴附，随产品经历退火、淬火、烧结等高温工艺，在整个热处理过程中保持稳定识别。",
