@@ -1,7 +1,10 @@
 {
   "slug": "high-heat-identification",
   "source": "client brief — High Heat Identification Solutions",
-  "langs": ["en", "zh"],
+  "langs": [
+    "en",
+    "zh"
+  ],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HEAT%20RESISTANT%20",
   "eyebrow": {
     "en": "Solutions",
@@ -51,8 +54,20 @@
       ]
     },
     "links": [
-      {"slug": "apex", "label": {"en": "APEX Polyimide PCB Labels", "zh": "APEX 聚酰亚胺 PCB 标签"}},
-      {"slug": "xf-603", "label": {"en": "XF-603 PI High-Temp Flame-Retardant", "zh": "XF-603 PI 耐高温阻燃标签"}}
+      {
+        "slug": "apex",
+        "label": {
+          "en": "APEX Polyimide PCB Labels",
+          "zh": "APEX 聚酰亚胺 PCB 标签"
+        }
+      },
+      {
+        "slug": "xf-603",
+        "label": {
+          "en": "XF-603 PI High-Temp Flame-Retardant",
+          "zh": "XF-603 PI 耐高温阻燃标签"
+        }
+      }
     ]
   },
   "why": {
@@ -88,42 +103,54 @@
         "process": "Autoclave Processing",
         "title": "Steam Sterilization",
         "desc": "Labels withstand repeated steam sterilization cycles while remaining securely bonded and fully readable.",
-        "apps": "Medical devices • Surgical instruments • Laboratory containers • Healthcare equipment"
+        "apps": "Medical devices • Surgical instruments • Laboratory containers • Healthcare equipment",
+        "lo": 121,
+        "hi": 135
       },
       {
         "temp": "150–220°C",
         "process": "Curing Ovens",
         "title": "Paint & Powder Coating",
         "desc": "Labels remain bonded and readable throughout paint and powder coating bake cycles without bubbling, discoloration, or print degradation.",
-        "apps": "Automotive parts • Metal fabrication • Appliances • Industrial equipment"
+        "apps": "Automotive parts • Metal fabrication • Appliances • Industrial equipment",
+        "lo": 150,
+        "hi": 220
       },
       {
         "temp": "170–220°C",
         "process": "Rubber Curing",
         "title": "Rubber Vulcanization",
         "desc": "Labels applied before curing withstand heat, pressure, and rubber expansion throughout the vulcanization process.",
-        "apps": "Tires • Rubber hoses • Rubber seals • Molded rubber components"
+        "apps": "Tires • Rubber hoses • Rubber seals • Molded rubber components",
+        "lo": 170,
+        "hi": 220
       },
       {
         "temp": "260–330°C",
         "process": "SMT Assembly",
         "title": "PCB Reflow Soldering",
         "desc": "Designed for multiple lead-free reflow cycles while maintaining reliable adhesion, barcode readability, and PCB traceability.",
-        "apps": "PCB manufacturing • SMT assembly • Electronic components • PCBA traceability"
+        "apps": "PCB manufacturing • SMT assembly • Electronic components • PCBA traceability",
+        "lo": 260,
+        "hi": 330
       },
       {
         "temp": "Up to 1000°C",
         "process": "Direct Hot Application",
         "title": "Ultra High Temperature Direct Apply",
         "desc": "Labels are applied directly onto hot steel, aluminum, or other metal surfaces immediately after casting or rolling, eliminating the need for cooling before identification.",
-        "apps": "Steel mills • Aluminum processing • Copper processing • Continuous casting • Hot rolling"
+        "apps": "Steel mills • Aluminum processing • Copper processing • Continuous casting • Hot rolling",
+        "lo": 800,
+        "hi": 1000
       },
       {
         "temp": "Room Temp. to 1200°C",
         "process": "Heat Treatment",
         "title": "Heat Treatment Process Management",
         "desc": "Labels are applied before heat treatment and remain with the product throughout annealing, firing, sintering, and other thermal processes to ensure continuous identification.",
-        "apps": "Steel • Ceramics • Porcelain • Concrete • Electronics • Metal fabrication"
+        "apps": "Steel • Ceramics • Porcelain • Concrete • Electronics • Metal fabrication",
+        "lo": 20,
+        "hi": 1200
       }
     ],
     "zh": [
@@ -132,42 +159,54 @@
         "process": "高压蒸汽灭菌",
         "title": "高温蒸汽灭菌",
         "desc": "标签可耐受反复高温高压蒸汽灭菌，在灭菌过程中保持牢固粘贴和清晰识别。",
-        "apps": "医疗器械 • 手术器械 • 实验室容器 • 医疗设备"
+        "apps": "医疗器械 • 手术器械 • 实验室容器 • 医疗设备",
+        "lo": 121,
+        "hi": 135
       },
       {
         "temp": "150–220°C",
         "process": "烘烤固化",
         "title": "喷涂与粉末涂装固化",
         "desc": "标签在喷漆和粉末涂装烘烤过程中保持牢固粘贴，不起泡、不变色，打印信息清晰可读。",
-        "apps": "汽车零部件 • 金属制品 • 家电制造 • 工业设备"
+        "apps": "汽车零部件 • 金属制品 • 家电制造 • 工业设备",
+        "lo": 150,
+        "hi": 220
       },
       {
         "temp": "170–220°C",
         "process": "硫化工艺",
         "title": "橡胶硫化",
         "desc": "标签在硫化过程中耐受高温、高压及橡胶膨胀，保持稳定识别。",
-        "apps": "轮胎 • 橡胶软管 • 密封件 • 橡胶制品"
+        "apps": "轮胎 • 橡胶软管 • 密封件 • 橡胶制品",
+        "lo": 170,
+        "hi": 220
       },
       {
         "temp": "260–330°C",
         "process": "SMT 制程",
         "title": "PCB 回流焊",
         "desc": "适用于多次无铅回流焊工艺，保持稳定粘接、条码清晰及产品追溯。",
-        "apps": "PCB 制造 • SMT 贴装 • 电子元器件 • PCBA 追溯"
+        "apps": "PCB 制造 • SMT 贴装 • 电子元器件 • PCBA 追溯",
+        "lo": 260,
+        "hi": 330
       },
       {
         "temp": "最高 1000°C",
         "process": "赤热金属直接贴标",
         "title": "超高温直贴",
         "desc": "标签可直接贴附于高温钢材、铝材等赤热金属表面，无需等待冷却即可完成产品标识。",
-        "apps": "钢铁制造 • 铝加工 • 铜加工 • 连铸 • 热轧"
+        "apps": "钢铁制造 • 铝加工 • 铜加工 • 连铸 • 热轧",
+        "lo": 800,
+        "hi": 1000
       },
       {
         "temp": "常温贴标 · 最高 1200°C",
         "process": "热处理工艺",
         "title": "热处理过程管理",
         "desc": "标签于常温贴附，随产品经历退火、淬火、烧结等高温工艺，在整个热处理过程中保持稳定识别。",
-        "apps": "钢铁 • 陶瓷 • 瓷制品 • 混凝土制品 • 电子制造 • 金属加工"
+        "apps": "钢铁 • 陶瓷 • 瓷制品 • 混凝土制品 • 电子制造 • 金属加工",
+        "lo": 20,
+        "hi": 1200
       }
     ]
   },
