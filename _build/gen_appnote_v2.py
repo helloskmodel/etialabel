@@ -18,31 +18,31 @@ SOURCE_LANG = "zh"
 esc = hp.esc
 
 UI = {
-  "en": {"eyebrow": "Application Note", "overview": "Project Overview",
-         "challenges": "Application Requirements & Challenges",
-         "solution": "Solution & Core Advantages", "value": "Customer Value",
+  "en": {"eyebrow": "Application Note", "info": "Basic Application Information",
+         "problems": "Existing Process & Problems", "solution": "Solution",
+         "advantages": "Application Advantages",
          "cta_btn": "Request Samples & TDS by Email",
          "cta_note": "No online download — samples and the technical datasheet are sent one-to-one by email.",
          "home": "Home", "notes": "Application Notes",
-         "hub_lede": "Engineering application notes: the process, the challenge, the solution and the recommended ETIA material — by application."},
-  "zh": {"eyebrow": "应用笔记", "overview": "项目应用概述",
-         "challenges": "应用要求与挑战", "solution": "解决方案与核心优势",
-         "value": "客户应用价值", "cta_btn": "邮件申请样品 & TDS",
+         "hub_lede": "Engineering application notes: the application, the problem, the solution and the advantages — by process."},
+  "zh": {"eyebrow": "应用笔记", "info": "基础应用信息",
+         "problems": "现有工艺及问题", "solution": "解决方案", "advantages": "应用优势",
+         "cta_btn": "邮件申请样品 & TDS",
          "cta_note": "本页无在线下载，样品与技术数据表仅通过邮件一对一发送。",
          "home": "首页", "notes": "应用笔记",
-         "hub_lede": "工程应用笔记：逐个应用讲清制程、挑战、解决方案与推荐的 ETIA 材料。"},
-  "vi": {"eyebrow": "Ghi chú ứng dụng", "overview": "Tổng quan dự án",
-         "challenges": "Yêu cầu & thách thức ứng dụng", "solution": "Giải pháp & ưu điểm cốt lõi",
-         "value": "Giá trị cho khách hàng", "cta_btn": "Yêu cầu mẫu & TDS qua Email",
+         "hub_lede": "工程应用笔记：逐个应用讲清基础信息、现有问题、解决方案与应用优势。"},
+  "vi": {"eyebrow": "Ghi chú ứng dụng", "info": "Thông tin ứng dụng cơ bản",
+         "problems": "Quy trình hiện tại & vấn đề", "solution": "Giải pháp",
+         "advantages": "Ưu điểm ứng dụng", "cta_btn": "Yêu cầu mẫu & TDS qua Email",
          "cta_note": "Không tải xuống trực tuyến — mẫu và bảng dữ liệu kỹ thuật được gửi riêng qua email.",
          "home": "Trang chủ", "notes": "Ghi chú ứng dụng",
-         "hub_lede": "Ghi chú ứng dụng kỹ thuật: quy trình, thách thức, giải pháp và vật liệu ETIA được đề xuất — theo từng ứng dụng."},
-  "th": {"eyebrow": "บันทึกการใช้งาน", "overview": "ภาพรวมโครงการ",
-         "challenges": "ข้อกำหนดและความท้าทายในการใช้งาน", "solution": "โซลูชันและข้อเด่นสำคัญ",
-         "value": "คุณค่าที่ลูกค้าได้รับ", "cta_btn": "ขอตัวอย่าง & TDS ทางอีเมล",
+         "hub_lede": "Ghi chú ứng dụng kỹ thuật: thông tin cơ bản, vấn đề, giải pháp và ưu điểm — theo quy trình."},
+  "th": {"eyebrow": "บันทึกการใช้งาน", "info": "ข้อมูลการใช้งานพื้นฐาน",
+         "problems": "กระบวนการปัจจุบันและปัญหา", "solution": "โซลูชัน",
+         "advantages": "ข้อได้เปรียบในการใช้งาน", "cta_btn": "ขอตัวอย่าง & TDS ทางอีเมล",
          "cta_note": "ไม่มีการดาวน์โหลดออนไลน์ — ตัวอย่างและเอกสารข้อมูลเทคนิคจะถูกส่งทางอีเมล",
          "home": "หน้าแรก", "notes": "บันทึกการใช้งาน",
-         "hub_lede": "บันทึกการใช้งานเชิงวิศวกรรม: กระบวนการ ความท้าทาย โซลูชัน และวัสดุ ETIA ที่แนะนำ — ตามการใช้งาน"},
+         "hub_lede": "บันทึกการใช้งานเชิงวิศวกรรม: ข้อมูลพื้นฐาน ปัญหา โซลูชัน และข้อได้เปรียบ — ตามกระบวนการ"},
 }
 
 def L(node, lang):
@@ -68,6 +68,14 @@ CSS = """
 .angfig{margin:0}
 .angfig img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;background:#eef3fc;display:block}
 .angfig figcaption{font-size:12.5px;color:#5a6885;margin-top:6px;text-align:center}
+.anfacts{border:1px solid #e0e9f8;border-radius:12px;overflow:hidden;max-width:660px;margin:2px 0 0}
+.anfrow{display:grid;grid-template-columns:180px 1fr}
+.anfrow+.anfrow{border-top:1px solid #eef2f9}
+.anfk{background:#f4f7fd;color:#143C96;font-weight:700;font-size:14px;padding:12px 16px}
+.anfv{padding:12px 16px;font-size:14.5px;color:#2c3a58}
+.anbul{list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:9px}
+.anbul li{position:relative;padding-left:24px;font-size:15.5px;line-height:1.72;color:#41506e}
+.anbul li::before{content:"";position:absolute;left:0;top:8px;width:11px;height:11px;border-radius:50%;background:#41A62A}
 .anadv{list-style:none;padding:0;margin:14px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .anadv li{background:#f6f9ff;border:1px solid #e0e9f8;border-radius:12px;padding:15px 16px}
 .anadv .lb{display:block;font-size:15px;font-weight:800;color:#143C96;margin:0 0 5px}
@@ -119,19 +127,42 @@ def build_note(d, lang):
     def sec(eye, h, inner):
         return '<section class="ansec"><div class="aneye">%s</div><h2>%s</h2>%s</section>' % (esc(eye), esc(h), inner)
 
-    body = ""
-    if L(d.get("overview", {}), lang):
-        body += sec(ui["eyebrow"], ui["overview"], '<p class="tx">%s</p>' % esc(L(d["overview"], lang)))
-    if L(d.get("challenges", {}), lang):
-        body += sec(ui["challenges"], ui["challenges"], '<p class="tx">%s</p>' % esc(L(d["challenges"], lang)))
+    def bullets(items):
+        return '<ul class="anbul">%s</ul>' % "".join("<li>%s</li>" % esc(x) for x in items)
 
-    # Solution: intro + optional image + advantage list + optional spec sub-blocks
+    # Simple 4-point template: 1) basic info  2) existing process & problems
+    # 3) solution (points)  4) application advantages.
+    body = ""
+
+    # 1. Basic application information — a compact facts table (label / value rows)
+    info = L(d.get("info", {}), lang)
+    if info:
+        rows = "".join('<div class="anfrow"><span class="anfk">%s</span><span class="anfv">%s</span></div>'
+                       % (esc(i.get("label", "")), esc(i.get("value", ""))) for i in info)
+        body += sec("01", ui["info"], '<div class="anfacts">%s</div>' % rows)
+
+    # 2. Existing process & problems — intro paragraph + problem bullets
+    prob = d.get("problems", {})
+    p_intro = L(prob.get("intro", {}), lang)
+    p_items = L(prob.get("items", {}), lang)
+    inner = ('<p class="tx">%s</p>' % esc(p_intro)) if p_intro else ""
+    if p_items:
+        inner += bullets(p_items)
+    if inner:
+        body += sec("02", ui["problems"], inner)
+
+    # 3. Solution — optional intro + labelled points (+ optional image/gallery)
     sol = ""
-    if L(d.get("solution_intro", {}), lang):
-        sol += '<p class="tx">%s</p>' % esc(L(d["solution_intro"], lang))
+    solution = d.get("solution", {})
+    s_intro = L(solution.get("intro", {}), lang)
+    if s_intro:
+        sol += '<p class="tx">%s</p>' % esc(s_intro)
     img = d.get("image", "")
     if img:
         sol += '<img class="animg" src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(img)
+    points = L(solution.get("points", {}), lang)
+    if points:
+        sol += _adv(points)
     gal = d.get("gallery", [])
     if gal:
         figs = "".join(
@@ -139,17 +170,13 @@ def build_note(d, lang):
             % (esc(g.get("img", "")), esc(L(g.get("caption", {}), lang)), esc(L(g.get("caption", {}), lang)))
             for g in gal)
         sol += '<div class="angal">%s</div>' % figs
-    adv = d.get("advantages", {}).get(lang) or d.get("advantages", {}).get(SOURCE_LANG) or []
-    if adv:
-        sol += _adv(adv)
-    extra = d.get("extra", {}).get(lang) or d.get("extra", {}).get(SOURCE_LANG) or []
-    for block in extra:
-        sol += '<div class="anxsub"><h3>%s</h3>%s</div>' % (esc(block.get("heading", "")), _adv(block.get("items", [])))
     if sol:
-        body += sec(ui["solution"], ui["solution"], sol)
+        body += sec("03", ui["solution"], sol)
 
-    if L(d.get("value", {}), lang):
-        body += sec(ui["value"], ui["value"], '<p class="tx">%s</p>' % esc(L(d["value"], lang)))
+    # 4. Application advantages — bullet list
+    adv = L(d.get("advantages", {}), lang)
+    if adv:
+        body += sec("04", ui["advantages"], bullets(adv))
 
     contact = hp.Lx(lang, "/contact/")
     body += ('<div class="ancta"><h3>%s</h3><p>%s</p><a class="anbtn" href="%s">%s</a></div>' % (
