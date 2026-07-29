@@ -1,84 +1,82 @@
 {
   "slug": "hot-billet-direct-application",
-  "source": "client brief — HEATPROOF HP-700T hot billet identification (800°C)",
+  "source": "client brief — HEATPROOF HP-700T high-temperature steel billet identification (800°C)",
   "order": 1,
   "langs": ["en", "zh"],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP700.jpg",
   "image": "",
   "title": {
-    "zh": "HEATPROOF HP-700T 钢坯高温识别方案",
-    "en": "HEATPROOF HP-700T — Steel Billet High-Temperature Identification"
+    "en": "HEATPROOF HP-700T High-Temperature Steel Billet Identification",
+    "zh": "HEATPROOF HP-700T 钢坯高温识别方案"
   },
   "subtitle": {
-    "zh": "在 800°C 热轧钢坯上直接贴标，一标到底、全流程精准追溯。",
-    "en": "Applied directly to 800°C hot-rolled billets — one label all the way, precise end-to-end traceability."
+    "en": "Direct-apply barcode labeling for 800°C hot-rolled billets — one code, end-to-end traceability.",
+    "zh": "在 800°C 热轧钢坯上直贴条码标识 —— 一码到底，全流程追溯。"
   },
   "seo_desc": {
-    "zh": "用 HEATPROOF HP-700T 在 800°C 热轧钢坯上直贴标识——以标准条码替代人工喷涂，实现从轧机前工序到库存、出货的一码全程精准追溯。",
-    "en": "Direct-application labeling for 800°C hot-rolled steel billets with HEATPROOF HP-700T — scannable barcodes replace manual spray-marking for one-code, end-to-end traceability from the rolling line through inventory to shipping."
+    "en": "How HEATPROOF HP-700T replaces manual paint marking on 800°C hot-rolled steel billets with robot-applied, heat-activated barcode labels for automated, one-code traceability from before rolling through inventory to shipment.",
+    "zh": "HEATPROOF HP-700T 如何在 800°C 热轧钢坯上以机器人直贴、热激活的条码标签替代人工喷涂，实现从轧制前到库存、出货的自动化一码追溯。"
   },
   "info": {
+    "en": [
+      {"label": "Identification target", "value": "Hot-rolled steel billets"},
+      {"label": "Operating temperature", "value": "Up to 800°C"},
+      {"label": "Application stages", "value": "Before rolling, inventory management, and shipment"},
+      {"label": "Recommended product", "value": "HEATPROOF HP-700T high-temperature label"}
+    ],
     "zh": [
       {"label": "识别对象", "value": "热轧钢坯"},
-      {"label": "作业温度", "value": "800°C"},
-      {"label": "应用范围", "value": "轧机前工序、库存管理及出货环节"},
-      {"label": "应用产品", "value": "HEATPROOF HP-700T 耐高温标签"}
-    ],
-    "en": [
-      {"label": "Target", "value": "Hot-rolled steel billets"},
-      {"label": "Operating temperature", "value": "800°C"},
-      {"label": "Scope", "value": "Pre-rolling process, inventory management and shipping"},
-      {"label": "Product", "value": "HEATPROOF HP-700T high-temperature label"}
+      {"label": "作业温度", "value": "最高 800°C"},
+      {"label": "应用环节", "value": "轧制前、库存管理与出货"},
+      {"label": "推荐产品", "value": "HEATPROOF HP-700T 耐高温标签"}
     ]
   },
   "problems": {
     "intro": {
-      "zh": "现场目前采用人工分段喷涂方式进行钢坯标识。受 800°C 高温限制，无法实现自动化连续标识，长期存在多项生产问题：",
-      "en": "The site currently marks billets by manual, section-by-section spray painting. Constrained by the 800°C heat, automated continuous marking is impossible, and several production problems persist:"
-    },
-    "items": {
-      "zh": [
-        "喷涂标识会随高温氧化皮脱落，钢坯进入轧机前标识丢失。",
-        "钢坯冷却后人工补贴标签，极易出现贴错、物料混淆问题。",
-        "喷涂文字无标准编码、无法扫码识别，人工肉眼核对易出错，影响后道工序。",
-        "人工分段喷涂工作量大、效率低、出错率高。"
-      ],
       "en": [
-        "Sprayed marks flake off with the high-temperature oxide scale, so identification is lost before the billet enters the rolling mill.",
-        "Labels re-applied by hand after the billet cools are highly prone to mislabeling and material mix-ups.",
-        "Sprayed text has no standard code and cannot be scanned, so manual visual checking is error-prone and disrupts downstream processes.",
-        "Manual section-by-section spraying is labor-intensive, inefficient and error-prone."
+        "The site currently relies on manually applied paint markings to identify steel billets. At temperatures up to 800°C, this method cannot support continuous automated identification and creates several operational problems.",
+        "Paint markings may disappear as the surface oxide scale flakes off, causing billet identification to be lost before rolling. Labels must then be applied manually after cooling, increasing the risk of incorrect labeling and material mix-ups.",
+        "Painted characters also lack standardized barcodes and cannot be read by scanners. Operators must verify billet information visually, which increases workload, slows production, and raises the possibility of errors during processing, inventory control, and shipment."
+      ],
+      "zh": [
+        "现场目前采用人工喷涂标记来识别钢坯。在最高 800°C 的高温下，这种方式无法实现连续自动化识别，并带来多项作业问题。",
+        "喷涂标记可能随表面氧化皮剥落而消失，导致钢坯在轧制前就丢失标识；冷却后需人工补贴标签，增加了贴错与物料混淆的风险。",
+        "喷涂字符没有标准条码、无法被扫码设备读取。操作人员只能目视核对钢坯信息，增加了工作量、拖慢生产，并在加工、库存与出货环节增加出错可能。"
       ]
     }
   },
   "solution": {
-    "points": {
-      "zh": [
-        {"label": "条码精准识别", "text": "替代传统喷涂文字，采用标准条码，实现单块钢坯唯一溯源。"},
-        {"label": "高温前置贴标", "text": "HP-700T 采用先进热激活胶粘剂技术，综合性能优异。钢坯出炉后由机器臂自动粘贴标签，800°C 高温工况下可稳定贴合，随钢坯降温粘结强度持续递增，牢固度更高。标签兼具超强耐高温、抗氧化、耐候性能，全程稳固不脱落、标识不失效，真正实现一标到底、全流程精准追溯。"},
-        {"label": "支持自动扫码", "text": "可适配扫码设备及视觉识别设备，无需人工重复复核物料。"},
-        {"label": "全流程校验", "text": "出货前条码扫描核验，替代人工目视检查，杜绝发货错误。"}
-      ],
+    "intro": {
       "en": [
-        {"label": "Precise barcode identification", "text": "Replaces traditional sprayed text with a standard barcode, giving each individual billet a unique, traceable identity."},
-        {"label": "High-temperature pre-application", "text": "HP-700T uses advanced heat-activated adhesive technology with excellent all-round performance. A robotic arm applies the label right after the billet leaves the furnace; it bonds stably under 800°C conditions and its bond strength keeps increasing as the billet cools. With strong heat, oxidation and weather resistance, it stays firmly attached and legible throughout — truly one label all the way, with precise end-to-end traceability."},
-        {"label": "Automatic scanning", "text": "Compatible with barcode scanners and machine-vision equipment, removing repeated manual re-checking of materials."},
-        {"label": "Full-process verification", "text": "A barcode scan verifies each billet before shipping, replacing manual visual inspection and preventing shipping errors."}
+        "HEATPROOF HP-700T replaces painted text with standardized barcode identification, giving each billet a unique traceable code.",
+        "After the billet leaves the furnace, a robotic system applies the label directly to the hot surface. The heat-activated adhesive provides stable bonding at temperatures up to 800°C, while adhesion continues to increase as the billet cools.",
+        "The label is designed to withstand high temperatures, oxidation, and outdoor exposure while maintaining secure attachment and readable identification throughout the process.",
+        "HP-700T is also compatible with barcode scanners and machine-vision systems, enabling automated verification without repeated manual checks. Before shipment, each barcode can be scanned and matched against production records to reduce dispatch errors."
+      ],
+      "zh": [
+        "HEATPROOF HP-700T 以标准条码标识替代喷涂文字，为每块钢坯赋予唯一可追溯编码。",
+        "钢坯出炉后，由机器人系统将标签直接贴附于高温表面。热激活胶粘剂在最高 800°C 下稳定贴合，并随钢坯降温持续增强粘接力。",
+        "标签专为耐高温、抗氧化与户外暴露设计，全过程保持牢固贴附与清晰可读。",
+        "HP-700T 兼容扫码设备与机器视觉系统，实现自动核验，无需反复人工检查。出货前可扫描每个条码并与生产记录比对，减少发货错误。"
       ]
     }
   },
   "advantages": {
-    "zh": [
-      "彻底解决钢坯错标、混料问题。",
-      "实现自动化识别，大幅降低人工失误。",
-      "提升出货准确率，简化库存对账工作。",
-      "优化现场作业流程，降低品质管理成本。"
-    ],
     "en": [
-      "Thoroughly eliminates billet mislabeling and material mix-ups.",
-      "Automated identification that sharply reduces human error.",
-      "Improves shipping accuracy and simplifies inventory reconciliation.",
-      "Optimizes on-site workflow and lowers quality-management cost."
+      "Reduces incorrect labeling and billet mix-ups.",
+      "Enables automated barcode identification and tracking.",
+      "Maintains reliable adhesion at temperatures up to 800°C.",
+      "Improves inventory and shipment accuracy.",
+      "Reduces manual inspection and operator error.",
+      "Supports end-to-end traceability from production to delivery."
+    ],
+    "zh": [
+      "减少贴错与钢坯混料。",
+      "实现自动条码识别与追踪。",
+      "在最高 800°C 下保持可靠粘接。",
+      "提升库存与出货准确率。",
+      "减少人工检查与操作失误。",
+      "支持从生产到交付的端到端追溯。"
     ]
   }
 }
