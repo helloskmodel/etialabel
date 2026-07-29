@@ -1755,10 +1755,10 @@ SERVICE_OFFICES=[
 # 4 service images (one per commitment) on COS. quote() matches COS folder encoding.
 import urllib.parse as _up
 _SVC_B="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/"+_up.quote("C・Service 服务图 4 组")+"/"
-SERVICE_IMGS=["https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/100%25%20QUALITY%20INSPECTION",
-              "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/APPLICATION%20DRIVEN%20SOLUTION",
-              "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/FLEXIBLE%20SUPPLY",
-              "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/RESPONSIVE%20SUPPORT"]
+SERVICE_IMGS=["https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/QUALITY",
+              "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SOLUTION",
+              "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPLY",
+              "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"]
 SERVICE_INTRO=(
   "From material quality and application validation to flexible converting and ongoing support, ETIA helps customers reduce risk and achieve reliable labeling performance throughout the entire project lifecycle.",
   "从材料质量、应用验证，到柔性加工与持续支持，ETIA 在项目全流程中帮助客户降低导入风险，确保标签应用稳定可靠。")
