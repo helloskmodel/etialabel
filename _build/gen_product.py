@@ -71,6 +71,7 @@ CSS = """
 .ptbl tbody tr:last-child td{border-bottom:0}
 .ptbl td:first-child{font-weight:700;color:#1A56DB;white-space:nowrap}
 .ptbl tbody tr.esd td:first-child{color:#41A62A}
+.ptbl tbody tr.grp td{background:#eef3fb;color:#143C96;font-weight:800;font-size:12px;letter-spacing:.04em;text-transform:uppercase;padding:9px 14px}
 .ptnote{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
 .ptnote li{position:relative;padding-left:20px;font-size:14px;line-height:1.6;color:#5a6885}
 .ptnote li::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:2px;background:#dbe7fb}
@@ -96,9 +97,14 @@ def ul(items, cls=""):
 def spec_table(tbl, lang):
     """Render a per-row product table. Cells may be plain strings or {lang} dicts."""
     heads = L(tbl.get("headers", {}), lang)
+    ncols = len(heads)
     thead = "".join("<th>%s</th>" % esc(h) for h in heads)
     rows_html = ""
     for row in tbl.get("rows", []):
+        # group divider row: spans all columns
+        if isinstance(row, dict) and row.get("group"):
+            rows_html += '<tr class="grp"><td colspan="%d">%s</td></tr>' % (ncols, esc(L(row["group"], lang)))
+            continue
         cells = row["cells"] if isinstance(row, dict) else row
         cls = " class=\"esd\"" if isinstance(row, dict) and row.get("esd") else ""
         tds = "".join("<td>%s</td>" % esc(L(c, lang)) for c in cells)
