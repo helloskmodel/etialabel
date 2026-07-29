@@ -846,11 +846,11 @@ def line_products(pid):
 # Add a slug here when a product's page is ready — it then appears in the /products/
 # catalog and is internally linked for SEO. Missing files are skipped safely.
 FEATURED_PRODUCTS = [
-  "high-heat-identification",                            # high-heat solutions hub
-  "hp-901", "e-4812", "apex", "e-2813", "e-2712",       # home best-sellers
-  "e-2512bl", "xf-603", "e-2913", "xf58", "e-series",    # automotive / high-temp / PCB
-  "e-6034", "e-6033", "e-3635", "e-4532",                # wire & cable
-  "hp-x2080", "hp-cbr11",                                # steel high-temp
+  # Trimmed for launch — keep only the high-temp and low-temp solutions live.
+  # The rest are retained as data files (data/products/*.json) and will be
+  # re-added here as their pages are finalized.
+  "high-heat-identification",   # high temperature
+  "e-4812",                     # low temperature
 ]
 
 def build_products_hub(lang):
