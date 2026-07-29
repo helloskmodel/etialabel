@@ -81,6 +81,15 @@ CSS = """
 .pcta h3{margin:0 0 8px;font-size:21px}
 .pcta p{margin:0 0 16px;color:#dbe6ff;font-size:14.5px}
 .pwhy{font-size:16px;line-height:1.75;color:#2c3a58;margin:0 0 16px}
+.phl{background:linear-gradient(120deg,#0e1c3f,#1a3d8f);border-radius:16px;padding:26px 28px;color:#fff}
+.phl-eye{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#8fe36a}
+.phl-t{color:#fff;font-size:24px;margin:8px 0 12px;line-height:1.2}
+.phl-b{color:#dbe6ff;font-size:15.5px;line-height:1.75;margin:0 0 14px}
+.phl .plist li{color:#eaf1ff}
+.phl .plist li::before{background:#8fe36a}
+.phl-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.phl-lnk{display:inline-block;background:rgba(255,255,255,.14);color:#fff;font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:8px;text-decoration:none;border:1px solid rgba(255,255,255,.25)}
+.phl-lnk:hover{background:rgba(255,255,255,.26)}
 .pscn{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:16px}
 .pscncard{border:1px solid #e3eaf6;border-radius:14px;padding:18px;background:#fff;display:flex;flex-direction:column;gap:6px}
 .pscncard .tmp{font-size:17px;font-weight:800;color:#41A62A;line-height:1.2}
@@ -99,6 +108,18 @@ CSS = """
 def section(eye, h, inner):
     eyehtml = ('<div class="peye">%s</div>' % esc(eye)) if eye else ""
     return '<section class="psec">%s<h2>%s</h2>%s</section>' % (eyehtml, esc(h), inner)
+
+def highlight_html(h, lang):
+    pts = L(h.get("points", {}), lang)
+    links = ""
+    for lk in h.get("links", []):
+        links += '<a class="phl-lnk" href="%s">%s →</a>' % (
+            hp.Lx(lang, "/products/item/%s/" % lk["slug"]), esc(L(lk.get("label", {}), lang)))
+    linkshtml = ('<div class="phl-links">%s</div>' % links) if links else ""
+    return ('<section class="psec"><div class="phl"><div class="phl-eye">%s</div>'
+            '<h2 class="phl-t">%s</h2><p class="phl-b">%s</p>%s%s</div></section>') % (
+        esc(L(h.get("eyebrow", {}), lang)), esc(L(h.get("title", {}), lang)),
+        esc(L(h.get("body", {}), lang)), (ul(pts, "ok") if pts else ""), linkshtml)
 
 def scenarios_html(items):
     cards = ""
@@ -151,6 +172,8 @@ def build_lang(d, lang):
     body = ""
     if L(d.get("positioning", {}), lang):
         body += section(ui["positioning"], ui["positioning"], '<p class="pos">%s</p>' % esc(L(d["positioning"], lang)))
+    if d.get("highlight") and L(d["highlight"].get("title", {}), lang):
+        body += highlight_html(d["highlight"], lang)
     if L(d.get("challenges", {}), lang):
         body += section(ui["challenges"], ui["challenges"], ul(L(d["challenges"], lang), "warn"))
     if L(d.get("features", {}), lang):
