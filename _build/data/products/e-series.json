@@ -109,21 +109,25 @@
     "headers": {
       "en": [
         "Model",
+        "Series",
         "Description",
         "Thickness"
       ],
       "zh": [
         "型号",
+        "系列",
         "产品说明",
         "厚度"
       ],
       "vi": [
         "Mã",
+        "Dòng",
         "Mô tả",
         "Độ dày"
       ],
       "th": [
         "รุ่น",
+        "สาย",
         "รายละเอียด",
         "ความหนา"
       ]
@@ -132,6 +136,12 @@
       {
         "cells": [
           "E-8511",
+          {
+            "en": "E-85XX · General low-cost",
+            "zh": "E-85XX · 基础低成本通用",
+            "vi": "E-85XX · Phổ thông giá rẻ",
+            "th": "E-85XX · ทั่วไปต้นทุนต่ำ"
+          },
           {
             "en": "Low-cost gloss high-temp label",
             "zh": "低成本亮面耐高温标签",
@@ -145,6 +155,12 @@
         "cells": [
           "E-8511TT",
           {
+            "en": "E-85XX · General low-cost",
+            "zh": "E-85XX · 基础低成本通用",
+            "vi": "E-85XX · Phổ thông giá rẻ",
+            "th": "E-85XX · ทั่วไปต้นทุนต่ำ"
+          },
+          {
             "en": "Abrasion-resistant low-cost gloss high-temp label",
             "zh": "耐磨低成本亮面耐高温标签",
             "vi": "Nhãn chịu nhiệt bóng giá rẻ chống mài mòn",
@@ -156,6 +172,12 @@
       {
         "cells": [
           "E-8512",
+          {
+            "en": "E-85XX · General low-cost",
+            "zh": "E-85XX · 基础低成本通用",
+            "vi": "E-85XX · Phổ thông giá rẻ",
+            "th": "E-85XX · ทั่วไปต้นทุนต่ำ"
+          },
           {
             "en": "Low-cost gloss high-temp label",
             "zh": "低成本亮面耐高温标签",
@@ -169,6 +191,12 @@
         "cells": [
           "E-8512TT",
           {
+            "en": "E-85XX · General low-cost",
+            "zh": "E-85XX · 基础低成本通用",
+            "vi": "E-85XX · Phổ thông giá rẻ",
+            "th": "E-85XX · ทั่วไปต้นทุนต่ำ"
+          },
+          {
             "en": "Scratch-resistant low-cost gloss high-temp label",
             "zh": "耐刮擦低成本亮面耐高温标签",
             "vi": "Nhãn chịu nhiệt bóng giá rẻ chống trầy xước",
@@ -180,6 +208,12 @@
       {
         "cells": [
           "E-8531",
+          {
+            "en": "E-85XX · General low-cost",
+            "zh": "E-85XX · 基础低成本通用",
+            "vi": "E-85XX · Phổ thông giá rẻ",
+            "th": "E-85XX · ทั่วไปต้นทุนต่ำ"
+          },
           {
             "en": "Low-cost matte high-temp label",
             "zh": "低成本哑面耐高温标签",
@@ -193,6 +227,12 @@
         "cells": [
           "E-8531B",
           {
+            "en": "E-85XX · General low-cost",
+            "zh": "E-85XX · 基础低成本通用",
+            "vi": "E-85XX · Phổ thông giá rẻ",
+            "th": "E-85XX · ทั่วไปต้นทุนต่ำ"
+          },
+          {
             "en": "Black matte high-temp label",
             "zh": "黑色哑面耐高温标签",
             "vi": "Nhãn chịu nhiệt mờ đen",
@@ -204,6 +244,12 @@
       {
         "cells": [
           "E-8532",
+          {
+            "en": "E-85XX · General low-cost",
+            "zh": "E-85XX · 基础低成本通用",
+            "vi": "E-85XX · Phổ thông giá rẻ",
+            "th": "E-85XX · ทั่วไปต้นทุนต่ำ"
+          },
           {
             "en": "Low-cost matte high-temp label",
             "zh": "低成本哑面耐高温标签",
@@ -217,6 +263,12 @@
         "cells": [
           "E-8532TT",
           {
+            "en": "E-85XX · General low-cost",
+            "zh": "E-85XX · 基础低成本通用",
+            "vi": "E-85XX · Phổ thông giá rẻ",
+            "th": "E-85XX · ทั่วไปต้นทุนต่ำ"
+          },
+          {
             "en": "Scratch-resistant matte high-temp label",
             "zh": "耐刮擦哑面耐高温标签",
             "vi": "Nhãn chịu nhiệt mờ chống trầy xước",
@@ -228,6 +280,12 @@
       {
         "cells": [
           "E-8532W",
+          {
+            "en": "E-85XX · General low-cost",
+            "zh": "E-85XX · 基础低成本通用",
+            "vi": "E-85XX · Phổ thông giá rẻ",
+            "th": "E-85XX · ทั่วไปต้นทุนต่ำ"
+          },
           {
             "en": "Textured-base matte high-temp label",
             "zh": "网纹底哑面耐高温标签",
@@ -241,6 +299,12 @@
         "cells": [
           "E-8532+PET",
           {
+            "en": "E-85XX · General low-cost",
+            "zh": "E-85XX · 基础低成本通用",
+            "vi": "E-85XX · Phổ thông giá rẻ",
+            "th": "E-85XX · ทั่วไปต้นทุนต่ำ"
+          },
+          {
             "en": "Auto-apply matte high-temp label (PET liner)",
             "zh": "可自动贴标哑面耐高温标签（PET 底纸）",
             "vi": "Nhãn chịu nhiệt mờ dán tự động (đế PET)",
@@ -252,6 +316,12 @@
       {
         "cells": [
           "E-8811",
+          {
+            "en": "E-88XX · High-tack",
+            "zh": "E-88XX · 超粘高附着",
+            "vi": "E-88XX · Độ bám cao",
+            "th": "E-88XX · ยึดเกาะสูง"
+          },
           {
             "en": "High-tack low-cost gloss high-temp label",
             "zh": "超粘低成本亮面耐高温标签",
@@ -265,6 +335,12 @@
         "cells": [
           "E-8812",
           {
+            "en": "E-88XX · High-tack",
+            "zh": "E-88XX · 超粘高附着",
+            "vi": "E-88XX · Độ bám cao",
+            "th": "E-88XX · ยึดเกาะสูง"
+          },
+          {
             "en": "High-tack low-cost gloss high-temp label",
             "zh": "超粘低成本亮面耐高温标签",
             "vi": "Nhãn chịu nhiệt bóng giá rẻ độ bám cao",
@@ -276,6 +352,12 @@
       {
         "cells": [
           "E-8832",
+          {
+            "en": "E-88XX · High-tack",
+            "zh": "E-88XX · 超粘高附着",
+            "vi": "E-88XX · Độ bám cao",
+            "th": "E-88XX · ยึดเกาะสูง"
+          },
           {
             "en": "High-tack low-cost matte high-temp label",
             "zh": "超粘低成本哑面耐高温标签",
@@ -289,6 +371,12 @@
         "cells": [
           "E-8611",
           {
+            "en": "E-86XX · Removable",
+            "zh": "E-86XX · 可移除无残胶",
+            "vi": "E-86XX · Tháo được",
+            "th": "E-86XX · ถอดออกได้"
+          },
+          {
             "en": "No-residue gloss high-temp label",
             "zh": "不留残胶亮面耐高温标签",
             "vi": "Nhãn chịu nhiệt bóng không keo thừa",
@@ -300,6 +388,12 @@
       {
         "cells": [
           "E-8631",
+          {
+            "en": "E-86XX · Removable",
+            "zh": "E-86XX · 可移除无残胶",
+            "vi": "E-86XX · Tháo được",
+            "th": "E-86XX · ถอดออกได้"
+          },
           {
             "en": "Removable matte high-temp label",
             "zh": "可移除哑面耐高温标签",
@@ -313,6 +407,12 @@
         "cells": [
           "E-8632S",
           {
+            "en": "E-86XX · Removable",
+            "zh": "E-86XX · 可移除无残胶",
+            "vi": "E-86XX · Tháo được",
+            "th": "E-86XX · ถอดออกได้"
+          },
+          {
             "en": "Removable matte high-temp label (350°C peak)",
             "zh": "可移除哑面耐高温标签（峰值 350°C）",
             "vi": "Nhãn chịu nhiệt mờ tháo được (đỉnh 350°C)",
@@ -324,6 +424,12 @@
       {
         "cells": [
           "E-8711",
+          {
+            "en": "E-87XX · ESD",
+            "zh": "E-87XX · 防静电 ESD",
+            "vi": "E-87XX · ESD",
+            "th": "E-87XX · ESD"
+          },
           {
             "en": "ESD gloss PI high-temp label",
             "zh": "防静电耐高温亮面 PI 标签",
@@ -338,6 +444,12 @@
         "cells": [
           "E-8731",
           {
+            "en": "E-87XX · ESD",
+            "zh": "E-87XX · 防静电 ESD",
+            "vi": "E-87XX · ESD",
+            "th": "E-87XX · ESD"
+          },
+          {
             "en": "ESD matte PI high-temp label",
             "zh": "防静电耐高温哑面 PI 标签",
             "vi": "Nhãn PI chịu nhiệt mờ ESD",
@@ -351,6 +463,12 @@
         "cells": [
           "E-8732",
           {
+            "en": "E-87XX · ESD",
+            "zh": "E-87XX · 防静电 ESD",
+            "vi": "E-87XX · ESD",
+            "th": "E-87XX · ESD"
+          },
+          {
             "en": "ESD matte PI high-temp label",
             "zh": "防静电耐高温哑面 PI 标签",
             "vi": "Nhãn PI chịu nhiệt mờ ESD",
@@ -363,6 +481,12 @@
       {
         "cells": [
           "E-8732W",
+          {
+            "en": "E-87XX · ESD",
+            "zh": "E-87XX · 防静电 ESD",
+            "vi": "E-87XX · ESD",
+            "th": "E-87XX · ESD"
+          },
           {
             "en": "Textured-base ESD matte PI high-temp label",
             "zh": "网纹底防静电哑面高温 PI 标签",
