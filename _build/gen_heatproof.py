@@ -1470,11 +1470,12 @@ def build_home(lang):
         slug=pr.get("slug") or (POP_PROD_SLUGS[k] if k<len(POP_PROD_SLUGS) else "")
         href=home_hlink(lang,"/products/item/%s/"%slug) if slug else home_hlink(lang,"/contact/")
         pimg=('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">'%(esc(pr["img"]),esc(pr["name"]))) if pr.get("img") else ""
+        pcode_html=('<div class="pcode">%s</div>'%esc(pr["code"])) if pr.get("code") else ""  # skip empty code pill (solution cards)
         pcards+=('<a class="acard pcard" href="%s"><div class="acard-img g%d">%s<span class="aicon">%s</span></div>'
-                 '<div class="acard-body"><h3>%s</h3><div class="pmodel">%s</div><div class="pcode">%s</div>'
+                 '<div class="acard-body"><h3>%s</h3><div class="pmodel">%s</div>%s'
                  '<div class="acard-go">%s →</div></div></a>')%(
             href, gi, pimg, INDUSTRY_ICONS[gi%len(INDUSTRY_ICONS)],
-            esc(pr["name"]), esc(pr["model"]), esc(pr.get("code","")),
+            esc(pr["name"]), esc(pr["model"]), pcode_html,
             esc(T.get("prod_cta","Talk to a Specialist") if not slug else ("查看产品" if lang=="zh" else "View Product")))
     prod_viewall={"en":"View All Products","zh":"查看全部产品","vi":"Xem tất cả sản phẩm","th":"ดูสินค้าทั้งหมด"}.get(lang,"View All Products")
     prod_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
