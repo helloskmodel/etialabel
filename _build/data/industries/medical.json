@@ -65,10 +65,10 @@
   "tiers": [
     {
       "tab": {
-        "en": "Cryo Vial",
-        "zh": "西林瓶冷贴",
-        "vi": "Lọ dán lạnh",
-        "th": "ขวดติดเย็น"
+        "en": "Vial · Cold LN₂",
+        "zh": "西林瓶冷贴液氮存",
+        "vi": "Lọ dán lạnh LN₂",
+        "th": "ขวดติดเย็น LN₂"
       },
       "name": {
         "en": "Vial · Cold-Applied LN₂ Storage",
@@ -105,10 +105,10 @@
     },
     {
       "tab": {
-        "en": "Cryo Tube",
-        "zh": "冻存管冷贴",
-        "vi": "Ống dán lạnh",
-        "th": "หลอดติดเย็น"
+        "en": "Cryotube · Cold LN₂",
+        "zh": "冻存管冷贴液氮存",
+        "vi": "Ống dán lạnh LN₂",
+        "th": "หลอดติดเย็น LN₂"
       },
       "name": {
         "en": "Cryotube · Cold-Applied LN₂ Storage",
@@ -163,7 +163,7 @@
     {
       "tab": {
         "en": "Room-Temp LN₂",
-        "zh": "常温贴液氮",
+        "zh": "常温贴液氮存",
         "vi": "LN₂ nhiệt thường",
         "th": "LN₂ อุณหภูมิปกติ"
       },
