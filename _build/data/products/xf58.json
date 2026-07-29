@@ -104,5 +104,215 @@
       "สมดุลระหว่างประสิทธิภาพที่เชื่อถือได้กับความคุ้มค่า",
       "รับประกันการจัดหาที่สม่ำเสมอสำหรับการผลิตขนาดใหญ่"
     ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Model",
+        "Base",
+        "Thickness",
+        "Finish"
+      ],
+      "zh": [
+        "型号",
+        "基材",
+        "厚度",
+        "表面"
+      ],
+      "vi": [
+        "Mã",
+        "Vật liệu",
+        "Độ dày",
+        "Bề mặt"
+      ],
+      "th": [
+        "รุ่น",
+        "วัสดุ",
+        "ความหนา",
+        "พื้นผิว"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          "XF-518",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Matte white",
+            "zh": "雾白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "XF-583",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Matte white",
+            "zh": "雾白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "XF-581",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Semi-gloss white",
+            "zh": "半亮白",
+            "vi": "Trắng bán bóng",
+            "th": "สีขาวกึ่งเงา"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "XF-603",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Semi-gloss white",
+            "zh": "半亮白",
+            "vi": "Trắng bán bóng",
+            "th": "สีขาวกึ่งเงา"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "XF-528",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Gloss white",
+            "zh": "亮白",
+            "vi": "Trắng bóng",
+            "th": "สีขาวเงา"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "XF-505",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Green",
+            "zh": "绿色",
+            "vi": "Xanh lá",
+            "th": "สีเขียว"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "XF-584",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Matte white",
+            "zh": "雾白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "XF-582",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Semi-gloss white",
+            "zh": "半亮白",
+            "vi": "Trắng bán bóng",
+            "th": "สีขาวกึ่งเงา"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "XF-529",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Gloss white",
+            "zh": "亮白",
+            "vi": "Trắng bóng",
+            "th": "สีขาวเงา"
+          }
+        ]
+      }
+    ],
+    "notes": {
+      "en": [
+        "Unified thermal: 150°C/100h continuous · 260°C/5min peak · 300°C/90s extreme",
+        "Permanent high-temperature acrylic adhesive"
+      ],
+      "zh": [
+        "统一耐温：150°C/100h 长期 · 260°C/5min 峰值 · 300°C/90s 极限",
+        "永久性高温丙烯酸胶粘剂"
+      ],
+      "vi": [
+        "Chịu nhiệt thống nhất: 150°C/100giờ liên tục · 260°C/5phút đỉnh · 300°C/90giây cực đoan",
+        "Keo acrylic chịu nhiệt cao vĩnh viễn"
+      ],
+      "th": [
+        "ทนอุณหภูมิมาตรฐาน: 150°C/100 ชม. ต่อเนื่อง · 260°C/5 นาที สูงสุด · 300°C/90 วินาที สุดขั้ว",
+        "กาวอะคริลิกทนความร้อนสูงแบบถาวร"
+      ]
+    }
   }
 }

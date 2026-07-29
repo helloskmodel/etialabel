@@ -32,5 +32,152 @@
     "zh": "E 系列",
     "vi": "Dòng E",
     "th": "ซีรีส์ E"
+  },
+  "features": {
+    "en": [
+      "Four product lines — general, high-adhesion, removable, and ESD — covering every mainstream PCB scenario",
+      "20 standardized, in-stock models with no non-standard customization required",
+      "Polyimide construction stable through standard reflow soldering, with select models to 350°C",
+      "Consistent thermal-transfer print quality with mainstream ribbon compatibility",
+      "ESD line with static-dissipative surface to protect sensitive components",
+      "RoHS compliant",
+      "Local ready stock and rapid replenishment for uninterrupted high-volume production"
+    ],
+    "zh": [
+      "四大产品线 —— 通用、高附着、可移除、ESD 防静电，覆盖各类主流 PCB 场景",
+      "20 款标准化现货型号，无需非标定制",
+      "聚酰亚胺结构，稳定通过标准回流焊，部分型号耐受 350°C",
+      "热转印打印质量稳定，兼容主流碳带",
+      "ESD 产品线采用静电消散面材，保护敏感元器件",
+      "符合 RoHS",
+      "本地常备现货、快速补货，保障高产量不间断生产"
+    ],
+    "vi": [
+      "Bốn dòng sản phẩm — phổ thông, độ bám cao, tháo rời và ESD — bao phủ mọi tình huống PCB phổ biến",
+      "20 mẫu tiêu chuẩn có sẵn, không cần tùy chỉnh phi chuẩn",
+      "Cấu tạo polyimide ổn định qua hàn hồi lưu tiêu chuẩn, một số mẫu chịu đến 350°C",
+      "Chất lượng in truyền nhiệt nhất quán, tương thích ribbon phổ biến",
+      "Dòng ESD với bề mặt tiêu tán tĩnh điện bảo vệ linh kiện nhạy cảm",
+      "Tuân thủ RoHS",
+      "Hàng sẵn tại địa phương, bổ sung nhanh cho sản xuất số lượng lớn liên tục"
+    ],
+    "th": [
+      "สี่สายผลิตภัณฑ์ — ทั่วไป ยึดเกาะสูง ถอดออกได้ และ ESD — ครอบคลุมทุกสถานการณ์ PCB หลัก",
+      "20 รุ่นมาตรฐานพร้อมสต็อก ไม่ต้องสั่งทำพิเศษ",
+      "โครงสร้างโพลิอิมิดเสถียรผ่านการบัดกรีรีโฟลว์มาตรฐาน บางรุ่นทนถึง 350°C",
+      "คุณภาพการพิมพ์ถ่ายโอนความร้อนสม่ำเสมอ เข้ากันได้กับริบบอนหลัก",
+      "สาย ESD ผิวกระจายไฟฟ้าสถิตปกป้องชิ้นส่วนที่ละเอียดอ่อน",
+      "สอดคล้องกับ RoHS",
+      "สต็อกพร้อมในท้องถิ่นและเติมเร็ว เพื่อการผลิตปริมาณมากต่อเนื่อง"
+    ]
+  },
+  "benefits": {
+    "en": [
+      "One standardized family covers general, high-adhesion, removable and ESD needs",
+      "Reduces SKU inventory and material-selection effort",
+      "Dependable identification through reflow and cleaning",
+      "Cost-effective material choice for high-volume production",
+      "Stable, on-time supply keeps lines running",
+      "Simplifies traceability across models and batches"
+    ],
+    "zh": [
+      "单一标准化家族覆盖通用、高附着、可移除与 ESD 需求",
+      "减少 SKU 库存与选型工作量",
+      "历经回流焊与清洗仍可靠标识",
+      "高产量生产的高性价比材料选择",
+      "稳定准时供货，保障产线运行",
+      "简化跨型号与批次的追溯"
+    ],
+    "vi": [
+      "Một dòng chuẩn hóa bao phủ nhu cầu phổ thông, độ bám cao, tháo rời và ESD",
+      "Giảm tồn kho SKU và công sức chọn vật liệu",
+      "Nhận diện đáng tin cậy qua hàn hồi lưu và rửa",
+      "Lựa chọn vật liệu hiệu quả chi phí cho sản xuất số lượng lớn",
+      "Nguồn cung ổn định, đúng hẹn giữ dây chuyền hoạt động",
+      "Đơn giản hóa truy xuất qua các model và lô"
+    ],
+    "th": [
+      "ตระกูลมาตรฐานเดียวครอบคลุมความต้องการทั่วไป ยึดเกาะสูง ถอดได้ และ ESD",
+      "ลดสต็อก SKU และภาระการเลือกวัสดุ",
+      "การระบุที่เชื่อถือได้ตลอดรีโฟลว์และการล้าง",
+      "ตัวเลือกวัสดุคุ้มค่าสำหรับการผลิตปริมาณมาก",
+      "การจัดหาที่เสถียรตรงเวลาช่วยให้สายการผลิตเดินต่อ",
+      "ทำให้การตรวจสอบย้อนกลับข้ามรุ่นและล็อตง่ายขึ้น"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Line",
+        "Models",
+        "Type"
+      ],
+      "zh": [
+        "系列",
+        "型号",
+        "类型"
+      ],
+      "vi": [
+        "Dòng",
+        "Mã",
+        "Loại"
+      ],
+      "th": [
+        "สาย",
+        "รุ่น",
+        "ประเภท"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          "E-85XX",
+          "E-8511 / E-8511TT / E-8512 / E-8512TT / E-8531 / E-8531B / E-8532 / E-8532TT / E-8532W / E-8532+PET",
+          {
+            "en": "General, low-cost",
+            "zh": "通用低成本",
+            "vi": "Phổ thông, giá rẻ",
+            "th": "ทั่วไป ต้นทุนต่ำ"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-88XX",
+          "E-8811 / E-8812 / E-8832",
+          {
+            "en": "High-adhesion",
+            "zh": "高附着",
+            "vi": "Độ bám cao",
+            "th": "ยึดเกาะสูง"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-86XX",
+          "E-8611 / E-8631 / E-8632S",
+          {
+            "en": "Removable, no residue (350°C peak)",
+            "zh": "可移除无残胶（峰值 350°C）",
+            "vi": "Tháo được, không keo thừa (đỉnh 350°C)",
+            "th": "ถอดออกไม่ทิ้งคราบ (สูงสุด 350°C)"
+          }
+        ]
+      },
+      {
+        "esd": true,
+        "cells": [
+          "E-87XX",
+          "E-8711 / E-8731 / E-8732 / E-8732W",
+          {
+            "en": "ESD anti-static",
+            "zh": "ESD 防静电",
+            "vi": "Chống tĩnh điện ESD",
+            "th": "ป้องกันไฟฟ้าสถิต ESD"
+          }
+        ]
+      }
+    ]
   }
 }
