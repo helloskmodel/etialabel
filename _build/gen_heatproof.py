@@ -529,8 +529,8 @@ AXIS_ICONS = {
 }
 PROD_AXES = [
  ("env","By Environment","按环境",[
-   ("High Temp Label","高温标签","/products/heat-resistant/"),
-   ("Low Temperature Label","低温标签","/products/low-temperature/"),
+   ("High Temp Label","高温标签","/products/item/high-heat-identification/"),
+   ("Low Temperature Label","低温标签","/products/item/cold-chain-cryogenic-labels/"),
  ]),
  ("app","By Industry","按行业",[
    ("PCB","PCB","/industries/pcb-electronics-labeling-solutions/"),
@@ -1479,10 +1479,8 @@ def build_home(lang):
     prod_viewall={"en":"View All Products","zh":"查看全部产品","vi":"Xem tất cả sản phẩm","th":"ดูสินค้าทั้งหมด"}.get(lang,"View All Products")
     prod_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
                   '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
-                  '<div class="acgrid acgrid5">%s</div>'
-                  '<div style="margin-top:20px"><a class="btn sec" href="%s">%s →</a></div></div></section>')%(
-        esc(T.get("prod_eyebrow","")),esc(T.get("prod_title","")),esc(T.get("prod_sub","")),pcards,
-        home_hlink(lang,"/products/"),esc(prod_viewall)) if pcards else ""
+                  '<div class="acgrid acgrid5">%s</div></div></section>')%(
+        esc(T.get("prod_eyebrow","")),esc(T.get("prod_title","")),esc(T.get("prod_sub","")),pcards) if pcards else ""
     # Free Sample — lead capture (email / phone / address) -> mailto
     fs_section=('<section class="blk freesample"><div class="wrap"><div class="fsbox">'
                 '<div class="fsL"><div class="eyebrow" style="color:#8fe063">%s</div>'
@@ -1511,15 +1509,14 @@ def build_home(lang):
         esc(T.get("sc_eyebrow","SERVICE COMMITMENT")),esc(T.get("sc_title","Our Service Commitment")),sc_items)
     h=G["hero"]
     hero_banner=home_banner(lang, HOME_BG[0], h["eyebrow"], h["h1"], h["line"], "",
-                            h["b1"], "/products/", h["b2"], "/contact/")
+                            h["b1"], "/applications/", h["b2"], "/contact/")
     why_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
                  '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
                  '<div class="whygrid">%s</div>%s</div></section>')%(
         esc(T["why_eyebrow"]),esc(T["why_head"]),esc(T["why_intro"]),why_html,why_close)
     app_section=('<section class="blk" id="applications" style="background:var(--tint-blue)"><div class="wrap">'
-                 '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>%s'
-                 '<div style="margin-top:20px"><a class="btn sec" href="%s">%s →</a></div></div></section>')%(
-        esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_grid,home_hlink(lang,"/industries/"),esc(T["appc_viewall"]))
+                 '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>%s</div></section>')%(
+        esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_grid)
     # trust strip removed from the home page: it duplicated the Service Commitment
     # section below (same four items). Keep the dedicated section only.
     body=hero_banner+why_section+app_section+prod_section+sc_section+final_cta
@@ -1585,8 +1582,19 @@ def build_sitemaps():
 def write_redirects():
     # 301 migration redirects (per brief §13) + clean-url config, in vercel.json
     cfg={"cleanUrls":True,"trailingSlash":True,"redirects":[
-      {"source":"/cases","destination":"/industries/","permanent":True},
-      {"source":"/cases/:path*","destination":"/industries/","permanent":True},
+      # No products/industries hub pages — send the hub paths to Home (browse
+      # from Home + the Product nav dropdown). Exact paths only, so the
+      # /products/item/* landings and individual industry pages are unaffected.
+      {"source":"/products","destination":"/","permanent":False},
+      {"source":"/industries","destination":"/","permanent":False},
+      {"source":"/cn/products","destination":"/cn/","permanent":False},
+      {"source":"/cn/industries","destination":"/cn/","permanent":False},
+      {"source":"/vn/products","destination":"/vn/","permanent":False},
+      {"source":"/vn/industries","destination":"/vn/","permanent":False},
+      {"source":"/th/products","destination":"/th/","permanent":False},
+      {"source":"/th/industries","destination":"/th/","permanent":False},
+      {"source":"/cases","destination":"/","permanent":True},
+      {"source":"/cases/:path*","destination":"/","permanent":True},
       {"source":"/products/direct-label","destination":"/products/direct-hot-application-labels/","permanent":True},
       {"source":"/products/management-label","destination":"/products/heat-treatment-labels/","permanent":True},
       {"source":"/products/management-tag","destination":"/products/heat-treatment-tags/","permanent":True},
@@ -1985,8 +1993,9 @@ def build_all():
   for lang in HOME_LANGS:   # home is 4-language (en, zh, vi, th)
     build_home(lang)
   for lang in LANGS:        # inner site is en + zh
-    build_products_hub(lang)
-    build_industries_hub(lang)
+    # No products/industries hub ("集合页"): browse happens from Home + the
+    # Product nav dropdown. /products/ and /industries/ redirect to Home
+    # (see write_redirects). Individual product & industry pages remain.
     build_about(lang)
     build_contact(lang)
     build_applications(lang)   # nav pillar: Application
