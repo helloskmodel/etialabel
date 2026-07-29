@@ -29,21 +29,25 @@
       "zh": "聚酰亚胺（PI）标签"
     },
     "body": {
-      "en": "Polyimide (PI) film labels are ETIA's core high-temperature identification material. The heat-resistant PI facestock withstands repeated lead-free reflow soldering and demanding thermal processes, keeping barcodes and printed data sharp and scannable throughout.",
-      "zh": "聚酰亚胺（PI）薄膜标签是 ETIA 的核心耐高温标识材料。耐高温 PI 面材可耐受反复无铅回流焊及严苛热工艺，全程保持条码与打印信息清晰、可扫描。"
+      "en": "Polyimide (PI) film labels are ETIA's core high-temperature identification material. The amber PI facestock withstands repeated lead-free reflow soldering and demanding thermal processes, staying dimensionally stable — no shrinkage, curl or discoloration — where paper and PET labels fail. Barcodes, serial numbers and printed data remain sharp and scannable from the board through final assembly, giving electronics manufacturers dependable end-to-end traceability. Flame-retardant PI grades are also available for stricter safety requirements.",
+      "zh": "聚酰亚胺（PI）薄膜标签是 ETIA 的核心耐高温标识材料。琥珀色 PI 面材可耐受反复无铅回流焊及严苛热工艺，尺寸稳定、不收缩、不卷曲、不变色——在纸质与 PET 标签失效的场景中依然可靠。条码、序列号与打印信息从上板到成品全程保持清晰、可扫描，为电子制造提供稳定的端到端追溯。同时提供阻燃 PI 规格，满足更严格的安全要求。"
     },
     "points": {
       "en": [
-        "Heat-resistant polyimide (PI) film facestock",
-        "Withstands multiple lead-free PCB reflow cycles up to 300°C",
+        "Amber polyimide (PI) film facestock, heat-resistant up to 300°C",
+        "Withstands multiple lead-free PCB reflow and SMT cycles",
+        "Dimensionally stable — no shrinkage, curl or discoloration",
         "Chemical-, solvent- and abrasion-resistant topcoat",
-        "Reliable PCB / PCBA traceability and electronics identification"
+        "Flame-retardant grades available for stricter safety needs",
+        "Reliable PCB / PCBA, battery and electronics traceability"
       ],
       "zh": [
-        "耐高温聚酰亚胺（PI）薄膜面材",
-        "耐受多次无铅回流焊，耐温可达 300°C",
+        "琥珀色聚酰亚胺（PI）薄膜面材，耐温可达 300°C",
+        "耐受多次无铅回流焊及 SMT 制程",
+        "尺寸稳定——不收缩、不卷曲、不变色",
         "耐化学、耐溶剂、耐磨保护涂层",
-        "稳定的 PCB / PCBA 追溯与电子标识"
+        "提供阻燃规格，满足更严格的安全要求",
+        "稳定的 PCB / PCBA、电池与电子标识追溯"
       ]
     },
     "links": [
