@@ -692,8 +692,8 @@ Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)"
 </div></footer>""" % (Lx(lang,"/privacy/"), pc[0], Lx(lang,"/cookies/"), pc[1])
 
 TRUST_TITLES = {
- "en":["100% Quality Inspection","Application-Driven Solutions","Flexible Supply","Responsive Application Support"],
- "zh":["100% 质量检测","应用驱动方案","柔性供应","及时应用支持"],
+ "en":["100% Quality Inspection","Application-Driven Solutions","Flexible Supply","Responsive Customer Support"],
+ "zh":["100% 质量检测","应用驱动方案","柔性供应","快速响应服务"],
  "vi":["Kiểm tra chất lượng 100%","Giải pháp theo ứng dụng","Cung ứng linh hoạt","Hỗ trợ ứng dụng kịp thời"],
  "th":["การตรวจสอบคุณภาพ 100%","โซลูชันที่ขับเคลื่อนด้วยการใช้งาน","การจัดหาที่ยืดหยุ่น","การสนับสนุนการใช้งานที่ตอบสนองรวดเร็ว"],
 }
@@ -1782,8 +1782,8 @@ SERVICE_COMMIT=[
   "tag":('Flexible supply, built around your production.', '灵活供货，适配您的生产节奏。'),
   "body":[('Multiple warehouses, flexible air and sea logistics, plus custom slitting, die-cutting, and pre-printed labels to support your production.', '多地仓储，海运、空运灵活配送，并提供分切、模切、预打印等配套服务，满足不同生产需求。')],
   "close":('Flexible materials. Flexible formats. Flexible quantities.', '材料灵活、规格灵活、数量灵活。')},
- {"num":"04","title":('Responsive Application Support', '快速应用支持'),
-  "tag":('Fast support from a dedicated team.', '专属团队，快速响应。'),
+ {"num":"04","title":('Responsive Customer Support', '快速响应服务'),
+  "tag":('Fast, dependable support from a dedicated team.', '专属团队，快速响应。'),
   "body":[('A dedicated support team connects sales, engineering, logistics, and service for fast, coordinated responses throughout your project.', '专属服务团队协同销售、工程、物流与客服，快速响应项目需求，持续支持生产运行。')],
   "close":('Before delivery, during production, and beyond.', '交付之前、生产之中，以及长期应用之后。')},
 ]
@@ -1844,7 +1844,7 @@ def build_service(lang):
     crumb=[("Home","/"),("Service","/service/")]
     write(lang,"/service/",page(lang,"/service/",
         ("服务 | ETIA" if zh else "Service | ETIA"),
-        ("100% 质量检测、应用驱动选型、柔性供应与及时应用支持 —— ETIA 服务承诺。" if zh
+        ("100% 质量检测、应用驱动选型、柔性供应与快速响应服务 —— ETIA 服务承诺。" if zh
          else "100% quality inspection, application-driven selection, flexible supply and responsive support — the ETIA service commitment."),
         ("服务" if zh else "Service"), "",
         body, crumb, active="service", trust=False, hero=section_hero(lang, 3)))
