@@ -3,8 +3,8 @@
   "source": "client brief — HEATPROOF HP-700T hot billet identification (800°C)",
   "order": 5,
   "langs": ["en", "zh", "vi", "th"],
-  "banner": "",
-  "image": "",
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP700.jpg",
+  "image": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP700.jpg",
   "title": {
     "zh": "钢坯高温识别方案 —— HEATPROOF HP-700T 耐高温标签",
     "en": "Steel Billet High-Temperature Identification — HEATPROOF HP-700T Label",
