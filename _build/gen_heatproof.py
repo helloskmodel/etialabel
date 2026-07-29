@@ -1874,15 +1874,39 @@ def build_applications(lang):
     cards="".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>'%(
         Lx(lang,"/industries/%s/"%slug), esc(tz if zh else te), esc(dz if zh else de))
         for slug,tz,te,dz,de in sectors)
-    body=('<section class="blk"><div class="wrap"><div class="grid grid2">%s</div></div></section>'
-          '<div class="wrap">%s</div>')%(cards, cta2(lang,"applications"))
+    # Application Notes — real client notes (built by gen_appnotes), ordered by their "order" field
+    def _nl(node):
+        if not isinstance(node,dict): return node or ""
+        return node.get(lang) or node.get("en") or node.get("zh") or ""
+    notes=[]
+    adir=os.path.join(BUILD_DIR,"data","appnotes")
+    for fn in sorted(os.listdir(adir)):
+        if fn.endswith(".json"): notes.append(json.load(open(os.path.join(adir,fn),encoding="utf-8")))
+    notes.sort(key=lambda n:n.get("order",99))
+    note_cards="".join('<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>'%(
+        Lx(lang,"/application-notes/%s/"%n["slug"]), esc(_nl(n.get("title",{}))), esc(_nl(n.get("subtitle",{}))))
+        for n in notes)
+    body=(
+      # By Industry
+      '<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
+      '<div class="grid grid2">%s</div></div></section>'
+      # Application Notes
+      '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
+      '<div class="grid grid2">%s</div></div></section>'
+      '<div class="wrap">%s</div>')%(
+        ("按行业" if zh else "BY INDUSTRY"), ("按行业浏览" if zh else "Browse by Industry"), cards,
+        ("应用笔记" if zh else "APPLICATION NOTES"), ("应用笔记" if zh else "Application Notes"), note_cards,
+        cta2(lang,"applications"))
+    # hero without the body paragraph (kept eyebrow/title/sub); trust strip removed
+    s=HOME2.get(lang,HOME2["en"])["sections"][1]
+    hero=page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "", s["b1"], s["b1u"], s["b2"], s["b2u"], SECTION_BG.get(1,""))
     crumb=[("Home","/"),("Applications","/applications/")]
     write(lang,"/applications/",page(lang,"/applications/",
         ("应用 | ETIA" if zh else "Applications | ETIA"),
-        ("按行业与工艺选择标签材料 —— 汽车、PCB、医疗、钢铁、线缆与户外能源。" if zh
-         else "Choose label materials by industry and process — automotive, PCB, medical, steel, wire & cable, and outdoor energy."),
+        ("按行业与应用笔记浏览 ETIA 标签方案 —— 汽车、PCB、医疗、钢铁、线缆与户外能源。" if zh
+         else "Browse ETIA labeling by industry and application notes — automotive, PCB, medical, steel, wire & cable, and outdoor energy."),
         ("应用" if zh else "Applications"), "",
-        body, crumb, active="applications", hero=section_hero(lang, 1)))
+        body, crumb, active="applications", trust=False, hero=hero))
     if lang=="en": track("/applications/","industries")
 
 def build_insights(lang):
