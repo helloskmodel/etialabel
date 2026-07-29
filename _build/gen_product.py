@@ -22,24 +22,28 @@ UI = {
          "certs": "Testing & Certifications", "cta_btn": "Request Samples & TDS by Email",
          "cta_note": "No online download — samples and the TDS are sent one-to-one by email.",
          "featured": "Featured Product Solutions", "home": "Home", "products": "Products",
+         "key_benefits": "Key Benefits",
          "sc_apps": "Typical Applications", "sc_containers": "Typical Containers", "sc_products": "Recommended Products"},
   "zh": {"positioning": "产品概述", "challenges": "核心制程挑战", "features": "核心特性",
          "benefits": "客户价值", "spec": "产品规格", "applications": "适用场景",
          "certs": "测试与认证", "cta_btn": "邮件申请样品 & TDS",
          "cta_note": "本页无在线下载，样品与 TDS 仅通过邮件一对一发送。",
          "featured": "推荐产品方案", "home": "首页", "products": "产品",
+         "key_benefits": "核心优势",
          "sc_apps": "典型应用", "sc_containers": "典型容器", "sc_products": "推荐产品"},
   "vi": {"positioning": "Tổng quan", "challenges": "Thách thức sản xuất", "features": "Đặc tính",
          "benefits": "Lợi ích", "spec": "Thông số kỹ thuật", "applications": "Ứng dụng",
          "certs": "Kiểm tra & Chứng nhận", "cta_btn": "Yêu cầu mẫu & TDS qua Email",
          "cta_note": "Không tải xuống trực tuyến — mẫu và TDS được gửi riêng qua email.",
          "featured": "Giải pháp sản phẩm tiêu biểu", "home": "Trang chủ", "products": "Sản phẩm",
+         "key_benefits": "Lợi ích chính",
          "sc_apps": "Ứng dụng điển hình", "sc_containers": "Vật chứa điển hình", "sc_products": "Sản phẩm đề xuất"},
   "th": {"positioning": "ภาพรวม", "challenges": "ความท้าทายในการผลิต", "features": "คุณสมบัติ",
          "benefits": "ประโยชน์", "spec": "ข้อมูลจำเพาะ", "applications": "การใช้งาน",
          "certs": "การทดสอบและการรับรอง", "cta_btn": "ขอตัวอย่าง & TDS ทางอีเมล",
          "cta_note": "ไม่มีการดาวน์โหลดออนไลน์ — ตัวอย่างและ TDS จะถูกส่งทางอีเมล",
          "featured": "โซลูชันผลิตภัณฑ์แนะนำ", "home": "หน้าแรก", "products": "สินค้า",
+         "key_benefits": "ประโยชน์หลัก",
          "sc_apps": "การใช้งานทั่วไป", "sc_containers": "ภาชนะทั่วไป", "sc_products": "ผลิตภัณฑ์แนะนำ"},
 }
 
@@ -235,12 +239,11 @@ def build_lang(d, lang):
     if d.get("why"):
         w = d["why"]
         heading = L(w.get("heading", {}), lang)
-        inner = ""
+        # Why (rationale) and Benefit (key benefits list) are separate sections.
         if L(w.get("intro", {}), lang):
-            inner += '<p class="pwhy">%s</p>' % esc(L(w["intro"], lang))
+            body += section("", heading or ui["benefits"], '<p class="pwhy">%s</p>' % esc(L(w["intro"], lang)))
         if L(w.get("items", {}), lang):
-            inner += ul(L(w["items"], lang), "ok")
-        body += section("", heading or ui["benefits"], inner)
+            body += section("", ui["key_benefits"], ul(L(w["items"], lang), "ok"))
     if L(d.get("scenarios", {}), lang):
         body += section(ui["applications"], ui["applications"], scenarios_html(L(d["scenarios"], lang), ui))
     if L(d.get("featured", {}), lang):
