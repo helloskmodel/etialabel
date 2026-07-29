@@ -35,74 +35,74 @@
   },
   "features": {
     "en": [
-      "Multiple finishes, colors, and thicknesses for flexible PCB identification",
-      "1 mil and 2 mil polyimide constructions for different board profiles",
-      "Withstands reflow soldering up to 300°C with excellent thermal stability",
-      "High-resolution thermal transfer printing with leading ribbon compatibility",
+      "Multiple finishes and colors for easy product and production line identification",
+      "1 mil and 2 mil constructions to fit different PCB profiles",
+      "Thermally stable polyimide for reflow soldering and high-temperature processing",
+      "High-resolution thermal transfer printing with excellent barcode readability",
       "Reliable acrylic adhesive for reflow and chemical cleaning processes",
       "REACH, RoHS, and UL 969 compliant",
-      "Proven material platform with stable, high-volume supply"
+      "Proven material platform with consistent quality and stable supply"
     ],
     "zh": [
-      "多种表面、颜色与厚度，灵活满足 PCB 标识需求",
-      "1mil 与 2mil 聚酰亚胺结构，适配不同板厚与板型",
-      "耐回流焊高温达 300°C，热稳定性优异",
-      "高分辨率热转印，兼容主流碳带",
-      "可靠丙烯酸胶粘剂，适应回流焊与化学清洗工艺",
+      "多种表面与颜色，便于区分产品与产线",
+      "1mil 与 2mil 两种结构，适配不同 PCB 板型",
+      "热稳定聚酰亚胺，适应回流焊与高温制程",
+      "高分辨率热转印，条码识读性优异",
+      "可靠丙烯酸胶，适应回流焊与化学清洗制程",
       "符合 REACH、RoHS 与 UL 969",
-      "成熟材料平台，稳定的大批量供应"
+      "成熟材料平台，品质稳定、供货可靠"
     ],
     "vi": [
-      "Nhiều bề mặt, màu sắc và độ dày, linh hoạt cho nhận diện PCB",
-      "Cấu tạo polyimide 1 mil và 2 mil cho các loại bo mạch khác nhau",
-      "Chịu hàn hồi lưu đến 300°C với độ ổn định nhiệt xuất sắc",
-      "In truyền nhiệt độ phân giải cao, tương thích các loại ribbon hàng đầu",
-      "Keo acrylic đáng tin cậy cho quy trình hàn hồi lưu và rửa hóa chất",
+      "Nhiều bề mặt và màu sắc, dễ nhận diện sản phẩm và dây chuyền",
+      "Cấu tạo 1 mil và 2 mil phù hợp các loại PCB khác nhau",
+      "Polyimide ổn định nhiệt cho hàn hồi lưu và gia công nhiệt độ cao",
+      "In truyền nhiệt độ phân giải cao, mã vạch dễ đọc",
+      "Keo acrylic đáng tin cậy cho hàn hồi lưu và rửa hóa chất",
       "Tuân thủ REACH, RoHS và UL 969",
-      "Nền tảng vật liệu đã kiểm chứng với nguồn cung ổn định số lượng lớn"
+      "Nền vật liệu đã được kiểm chứng, chất lượng ổn định và nguồn cung bền vững"
     ],
     "th": [
-      "หลายพื้นผิว สี และความหนา เพื่อการระบุ PCB ที่ยืดหยุ่น",
-      "โครงสร้างโพลิอิมิด 1 มิล และ 2 มิล สำหรับบอร์ดหลากหลายแบบ",
-      "ทนการบัดกรีรีโฟลว์สูงถึง 300°C ด้วยเสถียรภาพทางความร้อนที่ยอดเยี่ยม",
-      "การพิมพ์ถ่ายโอนความร้อนความละเอียดสูง เข้ากันได้กับริบบอนชั้นนำ",
-      "กาวอะคริลิกที่เชื่อถือได้สำหรับกระบวนการรีโฟลว์และการล้างด้วยสารเคมี",
-      "สอดคล้องกับ REACH, RoHS และ UL 969",
-      "แพลตฟอร์มวัสดุที่พิสูจน์แล้ว พร้อมการจัดหาปริมาณมากที่เสถียร"
+      "หลายพื้นผิวและสี ระบุผลิตภัณฑ์และสายการผลิตได้ง่าย",
+      "โครงสร้าง 1 mil และ 2 mil เข้ากับ PCB หลายแบบ",
+      "โพลิอิมิดเสถียรทางความร้อน สำหรับการบัดกรีรีโฟลว์และงานอุณหภูมิสูง",
+      "พิมพ์ถ่ายโอนความร้อนความละเอียดสูง อ่านบาร์โค้ดได้ดีเยี่ยม",
+      "กาวอะคริลิกเชื่อถือได้ สำหรับรีโฟลว์และการล้างด้วยสารเคมี",
+      "สอดคล้อง REACH, RoHS และ UL 969",
+      "แพลตฟอร์มวัสดุที่พิสูจน์แล้ว คุณภาพสม่ำเสมอและการจัดหาที่มั่นคง"
     ]
   },
   "benefits": {
     "en": [
-      "Simplifies line, model, and batch identification",
-      "Supports both thin and standard PCB applications",
-      "Maintains barcode readability through reflow and cleaning",
-      "Reduces inspection time and production scrap",
-      "Balances reliable performance with cost efficiency",
-      "Ensures consistent supply for large-scale production"
+      "Simplifies PCB identification across products and production lines",
+      "Supports a wide range of standard PCB manufacturing applications",
+      "Maintains reliable barcode readability throughout production",
+      "Improves production efficiency with consistent labeling performance",
+      "Balances dependable performance with cost-effective manufacturing",
+      "Reduces complexity with standardized material options"
     ],
     "zh": [
-      "简化产线、型号与批次标识",
-      "兼容薄板与标准 PCB 应用",
-      "历经回流焊与清洗仍保持条码清晰可读",
-      "缩短检验时间，减少生产报废",
-      "在可靠性能与成本效益之间取得平衡",
-      "为大规模量产确保稳定供应"
+      "简化跨产品与产线的 PCB 标识",
+      "支持广泛的标准 PCB 制造应用",
+      "全程保持可靠的条码识读性",
+      "标识性能稳定，提升生产效率",
+      "在可靠性能与成本效益间取得平衡",
+      "标准化材料选项，降低复杂度"
     ],
     "vi": [
-      "Đơn giản hóa nhận diện dây chuyền, model và lô hàng",
-      "Hỗ trợ cả ứng dụng PCB mỏng và tiêu chuẩn",
-      "Giữ mã vạch rõ ràng qua hàn hồi lưu và rửa",
-      "Giảm thời gian kiểm tra và phế phẩm sản xuất",
-      "Cân bằng hiệu năng ổn định với hiệu quả chi phí",
-      "Đảm bảo nguồn cung ổn định cho sản xuất quy mô lớn"
+      "Đơn giản hóa nhận diện PCB trên nhiều sản phẩm và dây chuyền",
+      "Hỗ trợ nhiều ứng dụng sản xuất PCB tiêu chuẩn",
+      "Giữ mã vạch đọc được đáng tin cậy suốt quá trình sản xuất",
+      "Nâng cao hiệu quả sản xuất với hiệu năng ghi nhãn ổn định",
+      "Cân bằng hiệu năng tin cậy và sản xuất hiệu quả chi phí",
+      "Giảm phức tạp với các lựa chọn vật liệu tiêu chuẩn hóa"
     ],
     "th": [
-      "ทำให้การระบุไลน์ รุ่น และล็อตง่ายขึ้น",
-      "รองรับทั้งงาน PCB บางและมาตรฐาน",
-      "คงบาร์โค้ดให้อ่านได้ตลอดรีโฟลว์และการล้าง",
-      "ลดเวลาตรวจสอบและของเสียในการผลิต",
-      "สมดุลระหว่างประสิทธิภาพที่เชื่อถือได้กับความคุ้มค่า",
-      "รับประกันการจัดหาที่สม่ำเสมอสำหรับการผลิตขนาดใหญ่"
+      "ทำให้การระบุ PCB ข้ามผลิตภัณฑ์และสายการผลิตง่ายขึ้น",
+      "รองรับการผลิต PCB มาตรฐานหลากหลายรูปแบบ",
+      "รักษาการอ่านบาร์โค้ดที่เชื่อถือได้ตลอดการผลิต",
+      "เพิ่มประสิทธิภาพการผลิตด้วยการติดฉลากที่สม่ำเสมอ",
+      "สมดุลระหว่างประสิทธิภาพที่เชื่อถือได้กับการผลิตที่คุ้มค่า",
+      "ลดความซับซ้อนด้วยตัวเลือกวัสดุมาตรฐาน"
     ]
   },
   "spec_table": {

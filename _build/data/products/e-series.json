@@ -108,34 +108,54 @@
   "spec_table": {
     "headers": {
       "en": [
-        "Line",
-        "Models",
+        "Model",
+        "Base",
+        "Thickness",
+        "Finish",
         "Type"
       ],
       "zh": [
-        "系列",
         "型号",
+        "基材",
+        "厚度",
+        "表面",
         "类型"
       ],
       "vi": [
-        "Dòng",
         "Mã",
+        "Nền",
+        "Độ dày",
+        "Bề mặt",
         "Loại"
       ],
       "th": [
-        "สาย",
         "รุ่น",
+        "ฐาน",
+        "ความหนา",
+        "พื้นผิว",
         "ประเภท"
       ]
     },
     "rows": [
       {
         "cells": [
-          "E-85XX",
-          "E-8511 / E-8511TT / E-8512 / E-8512TT / E-8531 / E-8531B / E-8532 / E-8532TT / E-8532W / E-8532+PET",
+          "E-8511",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Gloss white",
+            "zh": "亮白",
+            "vi": "Trắng bóng",
+            "th": "สีขาวเงา"
+          },
           {
             "en": "General, low-cost",
-            "zh": "通用低成本",
+            "zh": "低成本通用",
             "vi": "Phổ thông, giá rẻ",
             "th": "ทั่วไป ต้นทุนต่ำ"
           }
@@ -143,11 +163,239 @@
       },
       {
         "cells": [
-          "E-88XX",
-          "E-8811 / E-8812 / E-8832",
+          "E-8511TT",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Gloss white",
+            "zh": "亮白",
+            "vi": "Trắng bóng",
+            "th": "สีขาวเงา"
+          },
+          {
+            "en": "Abrasion-resistant",
+            "zh": "耐磨",
+            "vi": "Chống mài mòn",
+            "th": "ทนการเสียดสี"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-8512",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Gloss white",
+            "zh": "亮白",
+            "vi": "Trắng bóng",
+            "th": "สีขาวเงา"
+          },
+          {
+            "en": "General, low-cost",
+            "zh": "低成本通用",
+            "vi": "Phổ thông, giá rẻ",
+            "th": "ทั่วไป ต้นทุนต่ำ"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-8512TT",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Gloss white",
+            "zh": "亮白",
+            "vi": "Trắng bóng",
+            "th": "สีขาวเงา"
+          },
+          {
+            "en": "Scratch-resistant",
+            "zh": "耐刮擦",
+            "vi": "Chống trầy xước",
+            "th": "ทนการขีดข่วน"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-8531",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Matte white",
+            "zh": "哑白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          {
+            "en": "General, low-cost",
+            "zh": "低成本通用",
+            "vi": "Phổ thông, giá rẻ",
+            "th": "ทั่วไป ต้นทุนต่ำ"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-8531B",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Matte black",
+            "zh": "哑黑",
+            "vi": "Đen mờ",
+            "th": "สีดำด้าน"
+          },
+          {
+            "en": "General, low-cost",
+            "zh": "低成本通用",
+            "vi": "Phổ thông, giá rẻ",
+            "th": "ทั่วไป ต้นทุนต่ำ"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-8532",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Matte white",
+            "zh": "哑白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          {
+            "en": "General, low-cost",
+            "zh": "低成本通用",
+            "vi": "Phổ thông, giá rẻ",
+            "th": "ทั่วไป ต้นทุนต่ำ"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-8532TT",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Matte white",
+            "zh": "哑白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          {
+            "en": "Scratch-resistant",
+            "zh": "耐刮擦",
+            "vi": "Chống trầy xước",
+            "th": "ทนการขีดข่วน"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-8532W",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Matte white, textured",
+            "zh": "网纹哑白",
+            "vi": "Trắng mờ, có vân",
+            "th": "สีขาวด้าน ลายพื้นผิว"
+          },
+          {
+            "en": "General, low-cost",
+            "zh": "低成本通用",
+            "vi": "Phổ thông, giá rẻ",
+            "th": "ทั่วไป ต้นทุนต่ำ"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-8532+PET",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Matte white",
+            "zh": "哑白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          {
+            "en": "Auto-apply (PET liner)",
+            "zh": "可自动贴标（PET 底纸）",
+            "vi": "Dán tự động (đế PET)",
+            "th": "ติดอัตโนมัติ (ไลเนอร์ PET)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-8811",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Gloss white",
+            "zh": "亮白",
+            "vi": "Trắng bóng",
+            "th": "สีขาวเงา"
+          },
           {
             "en": "High-adhesion",
-            "zh": "高附着",
+            "zh": "超粘高附着",
             "vi": "Độ bám cao",
             "th": "ยึดเกาะสูง"
           }
@@ -155,29 +403,246 @@
       },
       {
         "cells": [
-          "E-86XX",
-          "E-8611 / E-8631 / E-8632S",
+          "E-8812",
           {
-            "en": "Removable, no residue (350°C peak)",
-            "zh": "可移除无残胶（峰值 350°C）",
-            "vi": "Tháo được, không keo thừa (đỉnh 350°C)",
-            "th": "ถอดออกไม่ทิ้งคราบ (สูงสุด 350°C)"
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Gloss white",
+            "zh": "亮白",
+            "vi": "Trắng bóng",
+            "th": "สีขาวเงา"
+          },
+          {
+            "en": "High-adhesion",
+            "zh": "超粘高附着",
+            "vi": "Độ bám cao",
+            "th": "ยึดเกาะสูง"
           }
         ]
       },
       {
-        "esd": true,
         "cells": [
-          "E-87XX",
-          "E-8711 / E-8731 / E-8732 / E-8732W",
+          "E-8832",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Matte white",
+            "zh": "哑白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          {
+            "en": "High-adhesion",
+            "zh": "超粘高附着",
+            "vi": "Độ bám cao",
+            "th": "ยึดเกาะสูง"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-8611",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Gloss white",
+            "zh": "亮白",
+            "vi": "Trắng bóng",
+            "th": "สีขาวเงา"
+          },
+          {
+            "en": "Removable, no residue",
+            "zh": "可移除无残胶",
+            "vi": "Tháo được, không keo thừa",
+            "th": "ถอดออกไม่ทิ้งคราบ"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-8631",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Matte white",
+            "zh": "哑白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          {
+            "en": "Removable",
+            "zh": "可移除",
+            "vi": "Tháo được",
+            "th": "ถอดออกได้"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-8632S",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Matte white",
+            "zh": "哑白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          {
+            "en": "Removable, 350°C peak",
+            "zh": "可移除（峰值 350°C）",
+            "vi": "Tháo được, đỉnh 350°C",
+            "th": "ถอดออกได้ (สูงสุด 350°C)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "E-8711",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Gloss white",
+            "zh": "亮白",
+            "vi": "Trắng bóng",
+            "th": "สีขาวเงา"
+          },
           {
             "en": "ESD anti-static",
-            "zh": "ESD 防静电",
+            "zh": "防静电 ESD",
             "vi": "Chống tĩnh điện ESD",
             "th": "ป้องกันไฟฟ้าสถิต ESD"
           }
-        ]
+        ],
+        "esd": true
+      },
+      {
+        "cells": [
+          "E-8731",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "1 mil",
+          {
+            "en": "Matte white",
+            "zh": "哑白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          {
+            "en": "ESD anti-static",
+            "zh": "防静电 ESD",
+            "vi": "Chống tĩnh điện ESD",
+            "th": "ป้องกันไฟฟ้าสถิต ESD"
+          }
+        ],
+        "esd": true
+      },
+      {
+        "cells": [
+          "E-8732",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Matte white",
+            "zh": "哑白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          {
+            "en": "ESD anti-static",
+            "zh": "防静电 ESD",
+            "vi": "Chống tĩnh điện ESD",
+            "th": "ป้องกันไฟฟ้าสถิต ESD"
+          }
+        ],
+        "esd": true
+      },
+      {
+        "cells": [
+          "E-8732W",
+          {
+            "en": "Polyimide",
+            "zh": "聚酰亚胺",
+            "vi": "Polyimide",
+            "th": "โพลิอิมิด"
+          },
+          "2 mil",
+          {
+            "en": "Matte white, textured",
+            "zh": "网纹哑白",
+            "vi": "Trắng mờ, có vân",
+            "th": "สีขาวด้าน ลายพื้นผิว"
+          },
+          {
+            "en": "ESD anti-static",
+            "zh": "防静电 ESD",
+            "vi": "Chống tĩnh điện ESD",
+            "th": "ป้องกันไฟฟ้าสถิต ESD"
+          }
+        ],
+        "esd": true
       }
-    ]
+    ],
+    "notes": {
+      "en": [
+        "All constructions are polyimide (PI), stable through standard reflow soldering.",
+        "E-86XX is removable with no residue; E-8632S withstands 350°C peak.",
+        "E-87XX is ESD static-dissipative for sensitive components."
+      ],
+      "zh": [
+        "全系聚酰亚胺（PI）结构，稳定通过标准回流焊",
+        "E-86XX 可移除无残胶；E-8632S 耐受峰值 350°C",
+        "E-87XX 为 ESD 静电消散款，保护敏感元器件"
+      ],
+      "vi": [
+        "Tất cả cấu tạo là polyimide (PI), ổn định qua hàn hồi lưu tiêu chuẩn.",
+        "E-86XX tháo được không keo thừa; E-8632S chịu đỉnh 350°C.",
+        "E-87XX là dòng tiêu tán tĩnh điện ESD cho linh kiện nhạy cảm."
+      ],
+      "th": [
+        "ทุกโครงสร้างเป็นโพลิอิมิด (PI) เสถียรผ่านการบัดกรีรีโฟลว์มาตรฐาน",
+        "E-86XX ถอดออกได้ไม่ทิ้งคราบ; E-8632S ทนสูงสุด 350°C",
+        "E-87XX เป็นแบบกระจายไฟฟ้าสถิต ESD สำหรับชิ้นส่วนที่ละเอียดอ่อน"
+      ]
+    }
   }
 }
