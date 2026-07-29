@@ -388,6 +388,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 #svccar .acard-img img{object-fit:cover}
 .appcard .acard-img{background:#eef3fc;aspect-ratio:16/10}
 .appcard .acard-body p{font-size:14px;color:var(--mut);line-height:1.55;margin-top:6px}
+.appnotesgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(max-width:760px){.appnotesgrid{gap:11px}.appnotesgrid .acard-body h3{font-size:15px}.appnotesgrid .acard-body p{font-size:12.5px}}
 .indfilter{display:flex;flex-wrap:wrap;gap:9px;margin:2px 0 22px}
 .indfbtn{font-size:14px;font-weight:700;color:var(--mut);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer;transition:.15s}
 .indfbtn:hover{border-color:var(--blue);color:var(--blue)}
@@ -1863,7 +1865,7 @@ def build_applications(lang):
             esc(_nl(n.get("title",{}))), esc(_nl(n.get("subtitle",{}))))
     note_cards="".join(_notecard(n) for n in notes)
     body=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
-          '<div class="grid grid2">%s</div></div></section>'
+          '<div class="appnotesgrid">%s</div></div></section>'
           '<div class="wrap">%s</div>')%(
         ("应用笔记" if zh else "APPLICATION NOTES"),
         ("应用笔记" if zh else "Application Notes"),
