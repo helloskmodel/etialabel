@@ -104,8 +104,11 @@ CSS = """
 .pscn-sub{font-size:12.5px;line-height:1.55;color:#41506e;margin-top:4px}
 .pscn-lb{display:block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#8593ad;margin-bottom:1px}
 .pscncard .pscn-sub:first-of-type{margin-top:8px;padding-top:8px;border-top:1px solid #eef2f9}
-.pscn-bar{position:relative;height:7px;border-radius:5px;background:#eceff5;margin:5px 0 9px}
-.pscn-fill{position:absolute;top:0;bottom:0;border-radius:5px;min-width:7px}
+.flexbarwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:2px 0 22px;padding-bottom:2px}
+.flexbar{display:flex;gap:3px;min-width:520px}
+.flexseg{flex:1;padding:10px 8px;color:#fff;border-radius:7px;text-align:center;min-width:84px}
+.flexseg .fb-t{display:block;font-size:12.5px;font-weight:800;white-space:nowrap}
+.flexseg .fb-n{display:block;font-size:10.5px;line-height:1.25;margin-top:3px}
 @media (max-width:760px){
   .phero .in{padding:26px 18px}.phero h1{font-size:24px}.phero .tl{font-size:15.5px}
   .psec{padding:20px 18px}.psec h2{font-size:20px}.psec .pos{font-size:14.5px;line-height:1.65}
@@ -139,26 +142,26 @@ def _temp_color(mid):
     if mid < 600:  return "#ef7a2a"   # hot — orange
     return "#e0492a"                  # ultra-high — red
 
+def _segcolor(s):
+    if isinstance(s.get("lo"), (int, float)) and isinstance(s.get("hi"), (int, float)):
+        return _temp_color((s["lo"] + s["hi"]) / 2.0)
+    return "#8aa0c0"
+
 def scenarios_html(items, ui):
     def subblock(label, text):
         return '<div class="pscn-sub"><span class="pscn-lb">%s</span>%s</div>' % (esc(label), esc(text))
-    # shared temperature scale across the cards, so the bars are comparable
-    ranged = [s for s in items if isinstance(s.get("lo"), (int, float)) and isinstance(s.get("hi"), (int, float))]
-    gmin = min(s["lo"] for s in ranged) if ranged else 0
-    gmax = max(s["hi"] for s in ranged) if ranged else 1
-    span = (gmax - gmin) or 1
+    # FLEXcon-style temperature bar: one colored segment per scenario, cold -> warm.
+    segs = ""
+    for s in items:
+        ic = s.get("icon", "")
+        segs += ('<div class="flexseg" style="background:%s"><span class="fb-t">%s</span>'
+                 '<span class="fb-n">%s%s</span></div>') % (
+            _segcolor(s), esc(s.get("temp", "")),
+            (esc(ic) + " " if ic else ""), esc(s.get("title", "")))
+    flexbar = '<div class="flexbarwrap"><div class="flexbar">%s</div></div>' % segs
     cards = ""
     for s in items:
         title = ("%s %s" % (s.get("icon", ""), s.get("title", ""))).strip()
-        bar = ""
-        if isinstance(s.get("lo"), (int, float)) and isinstance(s.get("hi"), (int, float)):
-            left = max(0.0, (s["lo"] - gmin) / span * 100)
-            width = (s["hi"] - s["lo"]) / span * 100
-            if width < 4: width = 4
-            if left + width > 100: width = 100 - left
-            col = _temp_color((s["lo"] + s["hi"]) / 2.0)
-            bar = ('<div class="pscn-bar"><span class="pscn-fill" style="left:%.1f%%;width:%.1f%%;background:%s"></span></div>'
-                   % (left, width, col))
         apps = s.get("apps", "")
         sub = ""
         apline = ""
@@ -171,11 +174,11 @@ def scenarios_html(items, ui):
             sub += subblock(ui["sc_containers"], s["containers"])
         if s.get("products"):
             sub += subblock(ui["sc_products"], s["products"])
-        cards += ('<div class="pscncard"><div class="tmp">%s</div>%s<div class="pr">%s</div>'
-                  '<h3>%s</h3><p>%s</p>%s%s</div>') % (
-            esc(s.get("temp", "")), bar, esc(s.get("process", "")), esc(title),
+        cards += ('<div class="pscncard" style="border-top:3px solid %s"><div class="tmp">%s</div>'
+                  '<div class="pr">%s</div><h3>%s</h3><p>%s</p>%s%s</div>') % (
+            _segcolor(s), esc(s.get("temp", "")), esc(s.get("process", "")), esc(title),
             esc(s.get("desc", "")), sub, apline)
-    return '<div class="pscn">%s</div>' % cards
+    return flexbar + '<div class="pscn">%s</div>' % cards
 
 def ul(items, cls=""):
     return '<ul class="plist %s">%s</ul>' % (cls, "".join("<li>%s</li>" % esc(x) for x in items))

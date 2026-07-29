@@ -22,54 +22,6 @@
     "en": "Built with high-performance materials, specialty adhesives, and durable topcoats, our high heat identification solutions are engineered for demanding thermal processes. They maintain reliable adhesion, clear identification, and long-lasting durability across a wide range of high-temperature manufacturing applications.",
     "zh": "采用高性能面材、特种胶粘技术及耐高温涂层，专为严苛高温工艺打造，在高温、热循环及复杂制造环境中保持稳定粘接、清晰识别和持久耐用，满足各类高温制造应用的标识需求。"
   },
-  "highlight": {
-    "eyebrow": {
-      "en": "Our Core Product",
-      "zh": "我们的核心产品"
-    },
-    "title": {
-      "en": "Polyimide (PI) Labels",
-      "zh": "聚酰亚胺（PI）标签"
-    },
-    "body": {
-      "en": "Polyimide (PI) film labels are ETIA's core high-temperature identification material. The amber PI facestock withstands repeated lead-free reflow soldering and demanding thermal processes, staying dimensionally stable — no shrinkage, curl or discoloration — where paper and PET labels fail. Barcodes, serial numbers and printed data remain sharp and scannable from the board through final assembly, giving electronics manufacturers dependable end-to-end traceability. Flame-retardant PI grades are also available for stricter safety requirements.",
-      "zh": "聚酰亚胺（PI）薄膜标签是 ETIA 的核心耐高温标识材料。琥珀色 PI 面材可耐受反复无铅回流焊及严苛热工艺，尺寸稳定、不收缩、不卷曲、不变色——在纸质与 PET 标签失效的场景中依然可靠。条码、序列号与打印信息从上板到成品全程保持清晰、可扫描，为电子制造提供稳定的端到端追溯。同时提供阻燃 PI 规格，满足更严格的安全要求。"
-    },
-    "points": {
-      "en": [
-        "Amber polyimide (PI) film facestock, heat-resistant up to 300°C",
-        "Withstands multiple lead-free PCB reflow and SMT cycles",
-        "Dimensionally stable — no shrinkage, curl or discoloration",
-        "Chemical-, solvent- and abrasion-resistant topcoat",
-        "Flame-retardant grades available for stricter safety needs",
-        "Reliable PCB / PCBA, battery and electronics traceability"
-      ],
-      "zh": [
-        "琥珀色聚酰亚胺（PI）薄膜面材，耐温可达 300°C",
-        "耐受多次无铅回流焊及 SMT 制程",
-        "尺寸稳定——不收缩、不卷曲、不变色",
-        "耐化学、耐溶剂、耐磨保护涂层",
-        "提供阻燃规格，满足更严格的安全要求",
-        "稳定的 PCB / PCBA、电池与电子标识追溯"
-      ]
-    },
-    "links": [
-      {
-        "slug": "apex",
-        "label": {
-          "en": "APEX Polyimide PCB Labels",
-          "zh": "APEX 聚酰亚胺 PCB 标签"
-        }
-      },
-      {
-        "slug": "xf-603",
-        "label": {
-          "en": "XF-603 PI High-Temp Flame-Retardant",
-          "zh": "XF-603 PI 耐高温阻燃标签"
-        }
-      }
-    ]
-  },
   "why": {
     "heading": {
       "en": "Why High Heat Identification?",
