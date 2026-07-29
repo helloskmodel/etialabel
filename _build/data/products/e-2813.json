@@ -1,8 +1,11 @@
 {
   "slug": "e-2813",
   "source": "client product brief — E-2813 oil-resistant asset & component label (EN/ZH)",
-  "langs": ["en", "zh"],
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER",
+  "langs": [
+    "en",
+    "zh"
+  ],
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS",
   "product_img": "",
   "eyebrow": {
     "en": "Industrial · Oil-Resistant Identification",
@@ -57,25 +60,156 @@
   },
   "spec_table": {
     "headers": {
-      "en": ["Item", "Specification"],
-      "zh": ["项目", "参数"]
+      "en": [
+        "Item",
+        "Specification"
+      ],
+      "zh": [
+        "项目",
+        "参数"
+      ]
     },
     "rows": [
-      {"cells": [{"en": "Facestock", "zh": "面材"}, {"en": "White gloss PET", "zh": "白色亮面 PET"}]},
-      {"cells": [{"en": "Facestock Thickness", "zh": "面材厚度"}, {"en": "2 mil / 0.050 mm", "zh": "2 mil / 0.050 mm"}]},
-      {"cells": [{"en": "Adhesive", "zh": "胶粘剂"}, {"en": "Permanent acrylic", "zh": "永久性丙烯酸胶"}]},
-      {"cells": [{"en": "Adhesive Thickness", "zh": "胶层厚度"}, {"en": "0.060 mm", "zh": "0.060 mm"}]},
-      {"cells": [{"en": "Liner Thickness", "zh": "底纸厚度"}, {"en": "0.068 mm", "zh": "0.068 mm"}]},
-      {"cells": [{"en": "Print Method", "zh": "打印方式"}, {"en": "Thermal transfer", "zh": "热转印"}]},
-      {"cells": [{"en": "Service Temperature", "zh": "使用温度"}, {"en": "−40°C to 200°C", "zh": "−40°C～200°C"}]},
-      {"cells": [{"en": "Peel Adhesion", "zh": "剥离力"}, {"en": "28 N/25 mm", "zh": "28 N/25 mm"}]},
-      {"cells": [{"en": "Initial Tack", "zh": "初粘力"}, {"en": "30 N/25 mm", "zh": "30 N/25 mm"}]},
-      {"cells": [{"en": "Holding Power", "zh": "持粘力"}, {"en": "≥ 1000 h/25 mm", "zh": "≥1000 h/25mm"}]},
-      {"cells": [{"en": "Shelf Life", "zh": "保存期限"}, {"en": "At least 1 year at 22°C and 50% RH", "zh": "22°C、50% RH 条件下至少 1 年"}]}
+      {
+        "cells": [
+          {
+            "en": "Facestock",
+            "zh": "面材"
+          },
+          {
+            "en": "White gloss PET",
+            "zh": "白色亮面 PET"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Facestock Thickness",
+            "zh": "面材厚度"
+          },
+          {
+            "en": "2 mil / 0.050 mm",
+            "zh": "2 mil / 0.050 mm"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesive",
+            "zh": "胶粘剂"
+          },
+          {
+            "en": "Permanent acrylic",
+            "zh": "永久性丙烯酸胶"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesive Thickness",
+            "zh": "胶层厚度"
+          },
+          {
+            "en": "0.060 mm",
+            "zh": "0.060 mm"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Liner Thickness",
+            "zh": "底纸厚度"
+          },
+          {
+            "en": "0.068 mm",
+            "zh": "0.068 mm"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Print Method",
+            "zh": "打印方式"
+          },
+          {
+            "en": "Thermal transfer",
+            "zh": "热转印"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Service Temperature",
+            "zh": "使用温度"
+          },
+          {
+            "en": "−40°C to 200°C",
+            "zh": "−40°C～200°C"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Peel Adhesion",
+            "zh": "剥离力"
+          },
+          {
+            "en": "28 N/25 mm",
+            "zh": "28 N/25 mm"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Initial Tack",
+            "zh": "初粘力"
+          },
+          {
+            "en": "30 N/25 mm",
+            "zh": "30 N/25 mm"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Holding Power",
+            "zh": "持粘力"
+          },
+          {
+            "en": "≥ 1000 h/25 mm",
+            "zh": "≥1000 h/25mm"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Shelf Life",
+            "zh": "保存期限"
+          },
+          {
+            "en": "At least 1 year at 22°C and 50% RH",
+            "zh": "22°C、50% RH 条件下至少 1 年"
+          }
+        ]
+      }
     ],
     "notes": {
-      "en": ["Figures are indicative typical values; verify against the current technical datasheet and by application testing before production."],
-      "zh": ["以上为参考性典型值；量产前请以最新技术数据表为准并经应用测试确认。"]
+      "en": [
+        "Figures are indicative typical values; verify against the current technical datasheet and by application testing before production."
+      ],
+      "zh": [
+        "以上为参考性典型值；量产前请以最新技术数据表为准并经应用测试确认。"
+      ]
     }
   },
   "applications": {
