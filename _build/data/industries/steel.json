@@ -7,7 +7,7 @@
     "vi",
     "th"
   ],
-  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER",
+  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER.jpg",
   "seo_title": {
     "en": "Heat-Resistant Label Applications for the Steel Industry",
     "zh": "钢铁行业耐高温标签应用",
@@ -109,7 +109,7 @@
             "vi": "Đến 1000°C · lá niken, bề mặt gồ ghề",
             "th": "ถึง 1000°C · แผ่นนิกเกิล พื้นผิวไม่เรียบ"
           },
-          "img": "",
+          "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP900",
           "landing": true,
           "slug": "hp-901"
         }
@@ -129,7 +129,7 @@
         "vi": "Nhãn chịu nhiệt được thiết kế cho ủ, đồng nhất hóa và các quy trình gia nhiệt lại khác, giữ mã vạch rõ nét xuyên suốt các chu kỳ nhiệt khắc nghiệt.",
         "th": "ฉลากทนความร้อนที่ออกแบบมาสำหรับการอบอ่อน การทำให้เป็นเนื้อเดียว และกระบวนการให้ความร้อนซ้ำอื่นๆ คงบาร์โค้ดให้อ่านได้ชัดตลอดวัฏจักรความร้อนที่เข้มงวด"
       },
-      "img": "",
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP2080",
       "products": [
         {
           "name": "HP-X2080",
@@ -139,7 +139,7 @@
             "vi": "Đến 1200°C · gia nhiệt nhanh tới 65°C/phút",
             "th": "ถึง 1200°C · ให้ความร้อนเร็วถึง 65°C/นาที"
           },
-          "img": "",
+          "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP2080",
           "landing": true,
           "slug": "hp-x2080"
         },
@@ -181,7 +181,7 @@
             "vi": "Đến 1200°C · thẻ thép không gỉ",
             "th": "ถึง 1200°C · แท็กสแตนเลส"
           },
-          "img": "",
+          "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HPL85",
           "landing": true,
           "slug": "hp-l90"
         },
@@ -193,7 +193,7 @@
             "vi": "Đến 1000°C · thẻ chống axit",
             "th": "ถึง 1000°C · แท็กทนกรด"
           },
-          "img": "",
+          "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HPL85",
           "landing": true,
           "slug": "hp-l80"
         },
