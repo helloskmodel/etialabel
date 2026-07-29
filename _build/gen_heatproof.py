@@ -1000,29 +1000,20 @@ def build_product(lang, p):
     if lang=="en": track(url,"products")
 
 def build_industries_hub(lang):
+    # All industry sectors, mirroring the home "Solutions by Industry" carousel
+    # and the nav "By Industry" menu (image-top cards).
+    focus = HOME_I18N[lang]["focus"]
+    explore = HOME_I18N[lang].get("explore", "View")
     cards = ""
-    order = ["steel","aluminum","heat-resistant-asset-management","coating-process-identification","ceramics","concrete"]
-    for iid in order:
-        i = INDUSTRIES[iid]
-        apps = [a for a in APPS if a["parent"]==iid]
-        title = i["title_zh"] if lang=="zh" else i["title_en"]
-        alink = "".join('<a href="%s">%s</a>' % (L(lang,u_app(iid,a["slug"])), esc(a["title_en"])) for a in apps[:4])
-        cards += ('<a class="card" href="%s"><h3>%s</h3><p>%s</p><div class="xlinks">%s</div></a>') % (
-            L(lang,u_industry(iid)), esc(title),
-            ("跨行业应用" if (lang=="zh" and i["parent_type"]!="industry") else ("%d applications" % len(apps)) if lang=="en" else "%d 个应用"%len(apps)),
-            alink)
-    def _sc(url, te, tz, de, dz):
-        return '<a class="card" href="%s"><h3>%s</h3><p>%s</p></a>' % (
-            L(lang, url), esc(tz if lang == "zh" else te), esc(dz if lang == "zh" else de))
-    sector_cards = (
-        _sc("/industries/automotive-labeling-solutions/", "Automotive Labeling Solutions", "汽车标签解决方案",
-            "E-Label durable automotive labels across the whole vehicle — engine bay, battery, interior, exterior and tire.",
-            "覆盖整车的 E-Label 耐用汽车标签 —— 发动机舱、电池、内饰、外饰与轮胎") +
-        _sc("/industries/pcb-electronics-labeling-solutions/", "PCB Labeling Solutions", "PCB 标签解决方案",
-            "PCB labels by process — reflow, aggressive wash and post-process — under Polyonics APEX, Polyonics XF and E-Label.",
-            "按工序划分的 PCB 标签 —— 回流、强洗与后处理 —— 提供 Polyonics APEX、Polyonics XF 与 E-Label 三个系列"))
+    for k, f in enumerate(focus):
+        img = f.get("img", "")
+        im = ('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">' % (esc(img), esc(f["name"]))) if img else ""
+        cards += ('<a class="acard" href="%s"><div class="acard-img g%d">%s</div>'
+                  '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p>'
+                  '<div class="acard-go">%s →</div></div></a>') % (
+            L(lang, FOCUS_URLS[k]), k % 6, im, esc(f["name"]), esc(f["desc"]), esc(explore))
     h1 = "行业与应用" if lang == "zh" else "Industries & Applications"
-    body = '<section class="blk"><div class="wrap"><div class="grid grid2">%s</div></div></section><div class="wrap">%s</div>' % (sector_cards, cta(lang))
+    body = '<section class="blk"><div class="wrap"><div class="grid">%s</div></div></section><div class="wrap">%s</div>' % (cards, cta(lang))
     crumb=[("Home","/"),("Industries & Applications",u_ind_hub())]
     write(lang, u_ind_hub(), page(lang, u_ind_hub(),
         ("行业与应用 | ETIA" if lang=="zh" else "Industries & Applications | ETIA"),
