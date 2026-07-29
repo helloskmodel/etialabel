@@ -120,11 +120,11 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
 JS_TMPL = """
 <script>
 (function(){
-var CATS=%(cats)s, GO=%(go)s, CS=%(consult)s, SUBNAV=%(subnav)s, HIDE_INTRO=%(hide_intro)s;
+var CATS=%(cats)s, GO=%(go)s, SUBNAV=%(subnav)s, HIDE_INTRO=%(hide_intro)s;
 function card(p,hideName){
   var im=p.img?('<span class="ic"><img class="cim" src="'+p.img+'" alt="" loading="lazy" onerror="this.remove()"></span>'):('<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7" cy="7" r="1.1"/></svg></span>');
   var nm=hideName?'':'<p class="mn">'+p.n+'</p>';
-  var inner=im+'<div>'+nm+'<p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+'</span>'):('<span class="mgo">'+CS+'</span>'))+'</div>';
+  var inner=im+'<div>'+nm+'<p class="ml">'+p.l+'</p>'+(p.landing?('<span class="mgo">'+GO+'</span>'):'')+'</div>';
   return p.landing?'<a class="wcmcard" href="'+p.href+'">'+inner+'</a>':'<div class="wcmcard off">'+inner+'</div>';
 }
 // top row: [image | category-description card]; falls back to plain intro when no image
@@ -216,7 +216,6 @@ def build_lang(data, lang):
         esc(ui["eyebrow_ov"]), esc(ui["overview"]), overview, esc(L(data["classify_by"], lang)))
     body += JS_TMPL % {"cats": json.dumps(cats, ensure_ascii=False),
                        "go": json.dumps(ui["go"], ensure_ascii=False),
-                       "consult": json.dumps(ui["consult"], ensure_ascii=False),
                        "subnav": "true" if data.get("subnav") else "false",
                        "hide_intro": "true" if data.get("hide_intro") else "false"}
 
