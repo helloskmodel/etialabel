@@ -65,31 +65,31 @@
   "tiers": [
     {
       "tab": {
-        "en": "Cryogenic",
-        "zh": "超低温存储",
-        "vi": "Siêu lạnh",
-        "th": "เยือกแข็ง"
+        "en": "Cryo Vial",
+        "zh": "液氮西林瓶",
+        "vi": "Lọ siêu lạnh",
+        "th": "ขวดไครโอ"
       },
       "name": {
-        "en": "Cryogenic LN2 Storage",
-        "zh": "超低温液氮存储标签",
-        "vi": "Nhãn lưu trữ đông siêu lạnh",
-        "th": "ฉลากเก็บตัวอย่างอุณหภูมิเยือกแข็ง"
+        "en": "−196°C Cryo Vial Labels (Direct-Apply)",
+        "zh": "超低温液氮西林瓶标签（直贴）",
+        "vi": "Nhãn lọ đông siêu lạnh −196°C (dán trực tiếp)",
+        "th": "ฉลากขวดไครโอ −196°C (ติดตรง)"
       },
       "intro": {
-        "en": "Vial and cryotube labels applied directly at −80°C without thawing, then stored in liquid nitrogen — surviving −196°C and repeated freeze-thaw.",
-        "zh": "西林瓶与冻存管标签，−80℃ 无需解冻直贴，转入液氮长期存储 —— 耐受 −196℃ 与反复冻融。",
-        "vi": "Nhãn cho lọ và ống đông dán trực tiếp ở −80°C không cần rã đông, rồi lưu nitơ lỏng — chịu −196°C và đông-rã lặp lại.",
-        "th": "ฉลากขวดและหลอดเก็บตัวอย่าง ติดตรงที่ −80°C โดยไม่ต้องละลาย แล้วเก็บในไนโตรเจนเหลว — ทน −196°C และแช่แข็ง-ละลายซ้ำ"
+        "en": "Vaccine-vial labels applied directly at −80°C without thawing, then transferred to liquid nitrogen — full-lifecycle sample traceability, EO- and gamma-compatible.",
+        "zh": "疫苗西林瓶标签，−80℃ 无需解冻直贴，转入液氮长期存储 —— 样本全流程溯源，兼容环氧乙烷与伽马灭菌。",
+        "vi": "Nhãn lọ vắc-xin dán trực tiếp ở −80°C không cần rã đông, rồi chuyển sang nitơ lỏng — truy xuất toàn vòng đời, tương thích EtO và gamma.",
+        "th": "ฉลากขวดวัคซีน ติดตรงที่ −80°C โดยไม่ต้องละลาย แล้วย้ายเข้าไนโตรเจนเหลว — ติดตามตัวอย่างครบวงจร รองรับ EtO และแกมมา"
       },
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-196DIRECT-VIAL",
       "products": [
         {
           "name": {
-            "en": "CryoFlex — Cryogenic Storage Label (Vial Grade)",
-            "zh": "CryoFlex 超低温液氮存储标签（西林瓶款）",
-            "vi": "CryoFlex — Nhãn lưu trữ đông siêu lạnh (lọ thuốc)",
-            "th": "CryoFlex — ฉลากเก็บอุณหภูมิเยือกแข็ง (ขวดยา)"
+            "en": "CryoFlex — LN₂ Vial Label (Direct-Apply)",
+            "zh": "CryoFlex 液氮西林瓶标签（直贴）",
+            "vi": "CryoFlex — Nhãn lọ nitơ lỏng (dán trực tiếp)",
+            "th": "CryoFlex — ฉลากขวดไนโตรเจนเหลว (ติดตรง)"
           },
           "line": {
             "en": "Made of 1.0mil transparent polypropylene, temperature range -196℃~135℃, compatible with EO and gamma ray sterilization processes. · Designed for vaccine vials, direct applied at -80℃ without thawing, supporting long-term storage and later liquid nitrogen preservation for full sample tracking.",
@@ -100,7 +100,30 @@
           "img": "",
           "landing": false,
           "slug": ""
-        },
+        }
+      ]
+    },
+    {
+      "tab": {
+        "en": "Cryo Tube",
+        "zh": "液氮冻存管",
+        "vi": "Ống siêu lạnh",
+        "th": "หลอดไครโอ"
+      },
+      "name": {
+        "en": "−196°C Cryo Tube Labels (Direct-Apply)",
+        "zh": "超低温液氮冻存管标签（直贴）",
+        "vi": "Nhãn ống đông siêu lạnh −196°C (dán trực tiếp)",
+        "th": "ฉลากหลอดไครโอ −196°C (ติดตรง)"
+      },
+      "intro": {
+        "en": "Cryotube labels applied directly at −80°C — high-toughness film that resists cracking and frost curling through repeated freeze-thaw, for plastic and micro-glass cryotubes.",
+        "zh": "冻存管标签，−80℃ 直贴 —— 高韧性薄膜抗脆裂、防结霜翘边，历经反复冻融，适配塑料与微量玻璃冻存管。",
+        "vi": "Nhãn ống đông dán trực tiếp ở −80°C — màng bền dai chống nứt và cong vênh do sương giá qua đông-rã lặp lại, cho ống nhựa và ống thủy tinh siêu nhỏ.",
+        "th": "ฉลากหลอดเก็บตัวอย่าง ติดตรงที่ −80°C — ฟิล์มเหนียวสูงต้านการแตกและขอบงอจากน้ำค้างผ่านการแช่-ละลายซ้ำ สำหรับหลอดพลาสติกและแก้วขนาดจิ๋ว"
+      },
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-196DIRECT-TUBE",
+      "products": [
         {
           "name": {
             "en": "E-4802 Transparent Cryotube Label (-80℃ Direct Apply)",
@@ -141,26 +164,26 @@
       "tab": {
         "en": "Room-Temp LN2",
         "zh": "常温贴液氮",
-        "vi": "Nhiệt độ thường",
-        "th": "อุณหภูมิปกติ"
+        "vi": "LN2 nhiệt thường",
+        "th": "LN2 อุณหภูมิปกติ"
       },
       "name": {
-        "en": "Room-Temperature-Applied LN2 Labels",
+        "en": "−196°C Room-Temperature-Applied Labels",
         "zh": "常温贴液氮标签",
         "vi": "Nhãn dán ở nhiệt độ thường cho nitơ lỏng",
         "th": "ฉลากติดที่อุณหภูมิปกติสำหรับไนโตรเจนเหลว"
       },
       "intro": {
-        "en": "Apply at room temperature, then plunge into liquid nitrogen — engineered to survive the room-temp-to −196°C thermal shock without delaminating.",
-        "zh": "常温贴标后存入液氮罐 —— 专为承受常温至 −196℃ 巨大温差冲击而设计，不分层。",
-        "vi": "Dán ở nhiệt độ thường rồi thả vào nitơ lỏng — chịu sốc nhiệt từ nhiệt thường xuống −196°C mà không phân lớp.",
-        "th": "ติดที่อุณหภูมิปกติแล้วแช่ในไนโตรเจนเหลว — ออกแบบให้ทนแรงกระแทกอุณหภูมิจากปกติลง −196°C โดยไม่แยกชั้น"
+        "en": "Apply at room temperature, then plunge into the liquid-nitrogen tank — engineered to survive the room-temp-to −196°C thermal shock without ink dissolution or delamination.",
+        "zh": "常温贴标固化后存入液氮罐 —— 专为承受常温至 −196℃ 巨大温差冲击设计，不溶墨、不分层。",
+        "vi": "Dán ở nhiệt độ thường rồi thả vào thùng nitơ lỏng — chịu sốc nhiệt từ nhiệt thường xuống −196°C mà không tan mực hay phân lớp.",
+        "th": "ติดที่อุณหภูมิปกติแล้วแช่ในถังไนโตรเจนเหลว — ออกแบบให้ทนแรงกระแทกอุณหภูมิจากปกติลง −196°C โดยหมึกไม่ละลายและไม่แยกชั้น"
       },
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-196C",
       "products": [
         {
           "name": {
-            "en": "E-6333 — Room-Temperature-Applied LN2 Label",
+            "en": "E-6333 — Room-Temperature-Applied LN₂ Label",
             "zh": "E-6333 常温贴液氮标签",
             "vi": "E-6333 — Nhãn dán nhiệt độ thường cho nitơ lỏng",
             "th": "E-6333 — ฉลากติดที่อุณหภูมิปกติสำหรับไนโตรเจนเหลว"
@@ -185,16 +208,16 @@
         "th": "ตู้แช่ −80°C"
       },
       "name": {
-        "en": "−80°C Deep-Freeze Labels",
-        "zh": "−80℃ 专用深冷冻标签",
-        "vi": "Nhãn đông sâu −80°C",
-        "th": "ฉลากเก็บตัวอย่างตู้แช่ −80°C"
+        "en": "−80°C Deep-Freeze & Microplate Labels",
+        "zh": "−80℃ 深冷冻与微孔板标签",
+        "vi": "Nhãn đông sâu −80°C & tấm vi mô",
+        "th": "ฉลากตู้แช่ −80°C และไมโครเพลต"
       },
       "intro": {
-        "en": "Waterproof, freeze-thaw-resistant labels for serum, reagent and general lab tubes stored in −80°C freezers — resisting condensation, warping and blurred print.",
-        "zh": "适用于 −80℃ 冰箱存放的血清、试剂与常规试管的防水抗冻融标签 —— 抵御冷凝水、翘边与字迹模糊。",
-        "vi": "Nhãn chống nước, chịu đông-rã cho ống huyết thanh, hóa chất và ống lab thường trong tủ −80°C — chống ngưng tụ, cong vênh và mờ chữ.",
-        "th": "ฉลากกันน้ำ ทนแช่แข็ง-ละลายสำหรับหลอดซีรัม น้ำยา และหลอดแล็บทั่วไปในตู้ −80°C — ต้านน้ำค้าง การงอ และตัวอักษรจาง"
+        "en": "Waterproof, freeze-thaw-resistant labels for serum, reagent and general lab tubes plus 96/384-well microplates in −80°C freezers — resisting condensation, warping and barcode loss.",
+        "zh": "适用于 −80℃ 冰箱存放的血清、试剂、常规试管与 96/384 孔微孔板的防水抗冻融标签 —— 抵御冷凝水、翘边与条码损毁。",
+        "vi": "Nhãn chống nước, chịu đông-rã cho ống huyết thanh, hóa chất, ống lab thường và tấm 96/384 lỗ trong tủ −80°C — chống ngưng tụ, cong vênh và mất mã vạch.",
+        "th": "ฉลากกันน้ำ ทนแช่แข็ง-ละลายสำหรับหลอดซีรัม น้ำยา หลอดแล็บทั่วไป และไมโครเพลต 96/384 หลุมในตู้ −80°C — ต้านน้ำค้าง การงอ และบาร์โค้ดเสียหาย"
       },
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-80",
       "products": [
@@ -244,6 +267,23 @@
             "zh": "医用级 PO 薄膜，-80℃低温粘接稳定防水抗潮，专为实验室零下八十度冷藏工况定制开发。 · 各类常规实验试管 - 80℃深冻存储使用，长效防潮抗凝水，避免冻融循环引发标签脱落、溯源失效。",
             "vi": "Màng PO cấp y tế, độ bám ổn định ở nhiệt độ thấp và chống nước, sản xuất riêng cho điều kiện lưu đông -80℃ phòng thí nghiệm. · Dùng cho mọi ống thử lab lưu đông -80℃, chống ẩm và nước ngưng tụ, tránh lỗi theo dõi do nhãn bong tróc khi đóng tan băng.",
             "th": "ฟิล์ม PO เกรดการแพทย์ ยึดเกาะเสถียรที่อุณหภูมิต่ำ กันน้ำ พัฒนาขึ้นเฉพาะสำหรับห้องแลปที่เก็บตัวอย่างที่ -80°C · สำหรับหลอดทดลองทั่วไปเก็บที่ -80°C ป้องกันความชื้นและน้ำค้าง หลีกเลี่ยงปัญหาติดตามตัวอย่างล้มเหลวจากฉลากหลุด"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "E-4834 — Microplate Label",
+            "zh": "E-4834 微孔板标签",
+            "vi": "E-4834 — Nhãn tấm lỗ vi mô",
+            "th": "E-4834 — ฉลากแผ่นไมโครเพลต"
+          },
+          "line": {
+            "en": "Ultra-flat polypropylene, waterproof and anti-condensation, freeze-thaw resistant, high compatibility with automation equipment, scannable barcodes long-term. · Mark 96/384 well plates for high-throughput samples stored at -80℃, adapt to automated sealing and scanning to avoid barcode damage from condensed water.",
+            "zh": "高平整聚丙烯基材，防水防冷凝水，耐低温冻融，自动化设备适配性强，条码长期可扫。 · 96/384 孔微孔板高通量样本 - 80℃冷库存储，适配自动化封板、扫码，防止冷凝水毁条码。",
+            "vi": "PP bề mặt cực phẳng, chống nước và nước ngưng tụ, chịu đóng tan băng, tương thích cao với thiết bị tự động, mã vạch quét được lâu dài. · Dán tấm 96/384 lỗ chứa mẫu số lượng lớn lưu trữ -80℃, phù hợp máy đóng và quét tự động, tránh mã vạch hư hỏng do nước ngưng tụ.",
+            "th": "PP ผิวเรียบเนียนสูง กันน้ำและน้ำค้าง ทนการแช่-ละลายน้ำแข็ง เข้ากับอุปกรณ์อัตโนมัติสูง สามารถสแกนบาร์โค้ดได้ยาวนาน · ติดแผ่น 96/384 หลุม สำหรับตัวอย่างจำนวนมากเก็บที่ -80°C เข้ากับเครื่องปิดและสแกนอัตโนมัติ ป้องกันบาร์โค้ดเสียจากน้ำค้าง"
           },
           "img": "",
           "landing": false,
@@ -455,46 +495,6 @@
             "zh": "耐化学腐蚀 PET 材质，耐受二甲苯、酒精等试剂长期浸泡，高温处理后油墨不消融。 · 病理切片、组织蜡块脱蜡染色、高温抗原修复，高低温交替存档，避免标签溶解脱落。",
             "vi": "Chất liệu PET chống hóa chất, chịu ngâm lâu trong xylen và cồn, mực in không tan sau xử lý nhiệt cao. · Dùng cho phiến mô bệnh lý, khối sáp mô trong quá trình khử sáp, nhuộm màu và sửa kháng nguyên nhiệt cao, tránh nhãn tan chảy và bong tróc khi thay đổi nhiệt.",
             "th": "PET ทนสารเคมี ทนการแช่ไซลีนและแอลกอฮอล์นานๆ หมึกพิมพ์ไม่ละลายหลังผ่านอุณหภูมิสูง · สำหรับแผ่นสไลด์เนื้อเยื่อ ก้อนขี้ผึ้งเนื้อเยื่อ ขั้นตอนล้างขี้ผึ้ง ย้อมสี และซ่อมแอนติเจนอุณหภูมิสูง ป้องกันฉลากละลายและหลุดเมื่อสลับอุณหภูมิ"
-          },
-          "img": "",
-          "landing": false,
-          "slug": ""
-        }
-      ]
-    },
-    {
-      "tab": {
-        "en": "Microplate",
-        "zh": "微孔板",
-        "vi": "Tấm vi mô",
-        "th": "ไมโครเพลต"
-      },
-      "name": {
-        "en": "Microplate Labels",
-        "zh": "微孔板标签",
-        "vi": "Nhãn tấm lỗ vi mô",
-        "th": "ฉลากแผ่นไมโครเพลต"
-      },
-      "intro": {
-        "en": "Ultra-flat, anti-condensation labels for 96/384-well plates in −80°C storage — barcodes stay scannable through automated sealing and scanning.",
-        "zh": "适用于 −80℃ 存储的 96/384 孔板超平整防冷凝标签 —— 自动封板与扫码全程条码可扫。",
-        "vi": "Nhãn siêu phẳng, chống ngưng tụ cho tấm 96/384 lỗ lưu −80°C — mã vạch quét được qua đóng và quét tự động.",
-        "th": "ฉลากผิวเรียบเนียน กันน้ำค้างสำหรับแผ่น 96/384 หลุมเก็บที่ −80°C — บาร์โค้ดสแกนได้ผ่านการปิดและสแกนอัตโนมัติ"
-      },
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-196DIRECT-TUBE",
-      "products": [
-        {
-          "name": {
-            "en": "E-4834 — Microplate Label",
-            "zh": "E-4834 微孔板标签",
-            "vi": "E-4834 — Nhãn tấm lỗ vi mô",
-            "th": "E-4834 — ฉลากแผ่นไมโครเพลต"
-          },
-          "line": {
-            "en": "Ultra-flat polypropylene, waterproof and anti-condensation, freeze-thaw resistant, high compatibility with automation equipment, scannable barcodes long-term. · Mark 96/384 well plates for high-throughput samples stored at -80℃, adapt to automated sealing and scanning to avoid barcode damage from condensed water.",
-            "zh": "高平整聚丙烯基材，防水防冷凝水，耐低温冻融，自动化设备适配性强，条码长期可扫。 · 96/384 孔微孔板高通量样本 - 80℃冷库存储，适配自动化封板、扫码，防止冷凝水毁条码。",
-            "vi": "PP bề mặt cực phẳng, chống nước và nước ngưng tụ, chịu đóng tan băng, tương thích cao với thiết bị tự động, mã vạch quét được lâu dài. · Dán tấm 96/384 lỗ chứa mẫu số lượng lớn lưu trữ -80℃, phù hợp máy đóng và quét tự động, tránh mã vạch hư hỏng do nước ngưng tụ.",
-            "th": "PP ผิวเรียบเนียนสูง กันน้ำและน้ำค้าง ทนการแช่-ละลายน้ำแข็ง เข้ากับอุปกรณ์อัตโนมัติสูง สามารถสแกนบาร์โค้ดได้ยาวนาน · ติดแผ่น 96/384 หลุม สำหรับตัวอย่างจำนวนมากเก็บที่ -80°C เข้ากับเครื่องปิดและสแกนอัตโนมัติ ป้องกันบาร์โค้ดเสียจากน้ำค้าง"
           },
           "img": "",
           "landing": false,
