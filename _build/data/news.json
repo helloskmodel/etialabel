@@ -2,7 +2,7 @@
   "articles": [
     {
       "slug": "cable-label-certifications",
-      "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-FLAME.jpg",
+      "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-FLAME",
       "tags": {"zh": ["线缆", "阻燃认证", "选型"], "en": ["Wire & Cable", "Certifications", "Selection"]},
       "title": {"zh": "线缆标签采购核心认证科普", "en": "Cable-Label Certifications: What Buyers Must Know"},
       "subtitle": {"zh": "阻燃只是基础，权威认证才是安全与准入的硬门槛", "en": "Flame retardance is the baseline — certification is the real gate for safety and market access"},
@@ -40,7 +40,7 @@
     },
     {
       "slug": "cable-label-buyers-guide",
-      "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-APPLICATION.jpg",
+      "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-APPLICATION",
       "tags": {"zh": ["线缆", "阻燃", "采购选型"], "en": ["Wire & Cable", "Flame-Retardant", "Procurement"]},
       "title": {"zh": "采购必看：再也不用返工的线缆标签", "en": "Buyer's Guide: Cable Labels That End Rework"},
       "subtitle": {"zh": "严格区分阻燃款与常规款，按工况适配，解决脱落、不防火、不耐用三大通病", "en": "Separate flame-retardant from standard grades, match the conditions, and end peeling, poor fire safety and short life"},

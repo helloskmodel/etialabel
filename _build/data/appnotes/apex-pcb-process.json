@@ -3,8 +3,8 @@
   "source": "_docs/sources/Application Notes APEX (PCB)",
   "order": 1,
   "langs": ["en", "zh", "vi", "th"],
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg",
-  "image": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX-APP.jpg",
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER",
+  "image": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX-APP",
   "title": {
     "en": "APEX Series Polyimide Labels for PCB",
     "zh": "APEX 系列聚酰亚胺 PCB 制程标签",
