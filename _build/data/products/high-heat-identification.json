@@ -86,7 +86,13 @@
         "desc": "Labels withstand repeated steam sterilization cycles while remaining securely bonded and fully readable.",
         "apps": "Medical devices • Surgical instruments • Laboratory containers • Healthcare equipment",
         "lo": 121,
-        "hi": 135
+        "hi": 135,
+        "products_list": [
+          {
+            "name": "E-5532",
+            "material": "2mil white PO · low-migration medical PSA"
+          }
+        ]
       },
       {
         "temp": "150–220°C",
@@ -95,7 +101,14 @@
         "desc": "Labels remain bonded and readable throughout paint and powder coating bake cycles without bubbling, discoloration, or print degradation.",
         "apps": "Automotive parts • Metal fabrication • Appliances • Industrial equipment",
         "lo": 150,
-        "hi": 220
+        "hi": 220,
+        "products_list": [
+          {
+            "name": "E-2813",
+            "material": "3mil matte white PET · high-temp high-tack acrylic",
+            "url": "/products/item/e-2813/"
+          }
+        ]
       },
       {
         "temp": "170–220°C",
@@ -104,7 +117,13 @@
         "desc": "Labels applied before curing withstand heat, pressure, and rubber expansion throughout the vulcanization process.",
         "apps": "Tires • Rubber hoses • Rubber seals • Molded rubber components",
         "lo": 170,
-        "hi": 220
+        "hi": 220,
+        "products_list": [
+          {
+            "name": "TS1100P",
+            "material": "rubber-vulcanization high-temp label"
+          }
+        ]
       },
       {
         "temp": "260–330°C",
@@ -139,7 +158,24 @@
         "desc": "Labels are applied directly onto hot steel, aluminum, or other metal surfaces immediately after casting or rolling, eliminating the need for cooling before identification.",
         "apps": "Steel mills • Aluminum processing • Copper processing • Continuous casting • Hot rolling",
         "lo": 800,
-        "hi": 1000
+        "hi": 1000,
+        "products_list": [
+          {
+            "name": "HP-700T",
+            "material": "direct hot-application label",
+            "url": "/products/item/hp-700t/"
+          },
+          {
+            "name": "HP-800",
+            "material": "direct hot-application label",
+            "url": "/products/item/hp-800c/"
+          },
+          {
+            "name": "HP-901",
+            "material": "direct hot-application label",
+            "url": "/products/item/hp-901/"
+          }
+        ]
       },
       {
         "temp": "Up to 1200°C",
@@ -148,7 +184,23 @@
         "desc": "Labels are applied before heat treatment and remain with the product throughout annealing, firing, sintering, and other thermal processes to ensure continuous identification.",
         "apps": "Steel • Ceramics • Porcelain • Concrete • Electronics • Metal fabrication",
         "lo": 20,
-        "hi": 1200
+        "hi": 1200,
+        "products_list": [
+          {
+            "name": "HP-L80",
+            "material": "heat-treatment process tag",
+            "url": "/products/item/hp-l80/"
+          },
+          {
+            "name": "HP-L85",
+            "material": "heat-treatment process tag"
+          },
+          {
+            "name": "HP-L90",
+            "material": "heat-treatment process tag",
+            "url": "/products/item/hp-l90/"
+          }
+        ]
       }
     ],
     "zh": [
@@ -159,7 +211,13 @@
         "desc": "标签可耐受反复高温高压蒸汽灭菌，在灭菌过程中保持牢固粘贴和清晰识别。",
         "apps": "医疗器械 • 手术器械 • 实验室容器 • 医疗设备",
         "lo": 121,
-        "hi": 135
+        "hi": 135,
+        "products_list": [
+          {
+            "name": "E-5532",
+            "material": "2mil 白色 PO · 低迁移医用压敏胶"
+          }
+        ]
       },
       {
         "temp": "150–220°C",
@@ -168,7 +226,14 @@
         "desc": "标签在喷漆和粉末涂装烘烤过程中保持牢固粘贴，不起泡、不变色，打印信息清晰可读。",
         "apps": "汽车零部件 • 金属制品 • 家电制造 • 工业设备",
         "lo": 150,
-        "hi": 220
+        "hi": 220,
+        "products_list": [
+          {
+            "name": "E-2813",
+            "material": "3mil 哑面白色 PET · 耐高温强粘丙烯酸胶",
+            "url": "/products/item/e-2813/"
+          }
+        ]
       },
       {
         "temp": "170–220°C",
@@ -177,7 +242,13 @@
         "desc": "标签在硫化过程中耐受高温、高压及橡胶膨胀，保持稳定识别。",
         "apps": "轮胎 • 橡胶软管 • 密封件 • 橡胶制品",
         "lo": 170,
-        "hi": 220
+        "hi": 220,
+        "products_list": [
+          {
+            "name": "TS1100P",
+            "material": "橡胶硫化耐高温标签"
+          }
+        ]
       },
       {
         "temp": "260–330°C",
@@ -212,7 +283,24 @@
         "desc": "标签可直接贴附于高温钢材、铝材等赤热金属表面，无需等待冷却即可完成产品标识。",
         "apps": "钢铁制造 • 铝加工 • 铜加工 • 连铸 • 热轧",
         "lo": 800,
-        "hi": 1000
+        "hi": 1000,
+        "products_list": [
+          {
+            "name": "HP-700T",
+            "material": "赤热金属直贴标签",
+            "url": "/products/item/hp-700t/"
+          },
+          {
+            "name": "HP-800",
+            "material": "赤热金属直贴标签",
+            "url": "/products/item/hp-800c/"
+          },
+          {
+            "name": "HP-901",
+            "material": "赤热金属直贴标签",
+            "url": "/products/item/hp-901/"
+          }
+        ]
       },
       {
         "temp": "最高 1200°C",
@@ -221,7 +309,23 @@
         "desc": "标签于常温贴附，随产品经历退火、淬火、烧结等高温工艺，在整个热处理过程中保持稳定识别。",
         "apps": "钢铁 • 陶瓷 • 瓷制品 • 混凝土制品 • 电子制造 • 金属加工",
         "lo": 20,
-        "hi": 1200
+        "hi": 1200,
+        "products_list": [
+          {
+            "name": "HP-L80",
+            "material": "热处理过程管理吊牌",
+            "url": "/products/item/hp-l80/"
+          },
+          {
+            "name": "HP-L85",
+            "material": "热处理过程管理吊牌"
+          },
+          {
+            "name": "HP-L90",
+            "material": "热处理过程管理吊牌",
+            "url": "/products/item/hp-l90/"
+          }
+        ]
       }
     ],
     "vi": [
@@ -232,7 +336,13 @@
         "desc": "Nhãn chịu được các chu trình tiệt trùng hơi nước lặp lại trong khi vẫn bám dính chắc chắn và đọc được hoàn toàn.",
         "apps": "Thiết bị y tế • Dụng cụ phẫu thuật • Hộp đựng phòng thí nghiệm • Thiết bị chăm sóc sức khỏe",
         "lo": 121,
-        "hi": 135
+        "hi": 135,
+        "products_list": [
+          {
+            "name": "E-5532",
+            "material": "PO trắng 2mil · keo y tế ít di trú"
+          }
+        ]
       },
       {
         "temp": "150–220°C",
@@ -241,7 +351,14 @@
         "desc": "Nhãn vẫn bám dính và đọc được trong suốt các chu trình sấy sơn và phủ bột mà không bị phồng rộp, đổi màu hay xuống cấp thông tin in.",
         "apps": "Phụ tùng ô tô • Gia công kim loại • Đồ gia dụng • Thiết bị công nghiệp",
         "lo": 150,
-        "hi": 220
+        "hi": 220,
+        "products_list": [
+          {
+            "name": "E-2813",
+            "material": "PET trắng mờ 3mil · keo acrylic chịu nhiệt bám cao",
+            "url": "/products/item/e-2813/"
+          }
+        ]
       },
       {
         "temp": "170–220°C",
@@ -250,7 +367,13 @@
         "desc": "Nhãn được dán trước khi lưu hóa chịu được nhiệt, áp suất và sự giãn nở của cao su trong suốt quá trình lưu hóa.",
         "apps": "Lốp xe • Ống cao su • Gioăng cao su • Chi tiết cao su đúc khuôn",
         "lo": 170,
-        "hi": 220
+        "hi": 220,
+        "products_list": [
+          {
+            "name": "TS1100P",
+            "material": "nhãn chịu nhiệt lưu hóa cao su"
+          }
+        ]
       },
       {
         "temp": "260–330°C",
@@ -285,7 +408,24 @@
         "desc": "Nhãn được dán trực tiếp lên bề mặt thép, nhôm hoặc kim loại nóng khác ngay sau khi đúc hoặc cán, loại bỏ nhu cầu làm nguội trước khi nhận dạng.",
         "apps": "Nhà máy thép • Chế biến nhôm • Chế biến đồng • Đúc liên tục • Cán nóng",
         "lo": 800,
-        "hi": 1000
+        "hi": 1000,
+        "products_list": [
+          {
+            "name": "HP-700T",
+            "material": "nhãn dán trực tiếp bề mặt nóng",
+            "url": "/products/item/hp-700t/"
+          },
+          {
+            "name": "HP-800",
+            "material": "nhãn dán trực tiếp bề mặt nóng",
+            "url": "/products/item/hp-800c/"
+          },
+          {
+            "name": "HP-901",
+            "material": "nhãn dán trực tiếp bề mặt nóng",
+            "url": "/products/item/hp-901/"
+          }
+        ]
       },
       {
         "temp": "Đến 1200°C",
@@ -294,7 +434,23 @@
         "desc": "Nhãn được dán trước khi xử lý nhiệt và đi cùng sản phẩm trong suốt quá trình ủ, nung, thiêu kết và các quy trình nhiệt khác để đảm bảo nhận dạng liên tục.",
         "apps": "Thép • Gốm • Sứ • Bê tông • Điện tử • Gia công kim loại",
         "lo": 20,
-        "hi": 1200
+        "hi": 1200,
+        "products_list": [
+          {
+            "name": "HP-L80",
+            "material": "thẻ quản lý quy trình xử lý nhiệt",
+            "url": "/products/item/hp-l80/"
+          },
+          {
+            "name": "HP-L85",
+            "material": "thẻ quản lý quy trình xử lý nhiệt"
+          },
+          {
+            "name": "HP-L90",
+            "material": "thẻ quản lý quy trình xử lý nhiệt",
+            "url": "/products/item/hp-l90/"
+          }
+        ]
       }
     ],
     "th": [
@@ -305,7 +461,13 @@
         "desc": "ฉลากทนต่อรอบการฆ่าเชื้อด้วยไอน้ำซ้ำ ๆ ได้ในขณะที่ยังคงยึดเกาะอย่างมั่นคงและอ่านได้อย่างสมบูรณ์",
         "apps": "อุปกรณ์การแพทย์ • เครื่องมือผ่าตัด • ภาชนะในห้องปฏิบัติการ • อุปกรณ์ด้านสุขภาพ",
         "lo": 121,
-        "hi": 135
+        "hi": 135,
+        "products_list": [
+          {
+            "name": "E-5532",
+            "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
+          }
+        ]
       },
       {
         "temp": "150–220°C",
@@ -314,7 +476,14 @@
         "desc": "ฉลากยังคงยึดเกาะและอ่านได้ตลอดรอบการอบสีและการเคลือบผงโดยไม่เกิดฟอง ไม่เปลี่ยนสี และงานพิมพ์ไม่เสื่อมสภาพ",
         "apps": "ชิ้นส่วนยานยนต์ • งานโลหะ • เครื่องใช้ไฟฟ้า • อุปกรณ์อุตสาหกรรม",
         "lo": 150,
-        "hi": 220
+        "hi": 220,
+        "products_list": [
+          {
+            "name": "E-2813",
+            "material": "PET ขาวด้าน 3mil · กาวอะคริลิกทนร้อนแรงยึดสูง",
+            "url": "/products/item/e-2813/"
+          }
+        ]
       },
       {
         "temp": "170–220°C",
@@ -323,7 +492,13 @@
         "desc": "ฉลากที่ติดก่อนการบ่มทนต่อความร้อน แรงดัน และการขยายตัวของยางตลอดกระบวนการวัลคาไนซ์",
         "apps": "ยางรถยนต์ • ท่อยาง • ซีลยาง • ชิ้นส่วนยางขึ้นรูป",
         "lo": 170,
-        "hi": 220
+        "hi": 220,
+        "products_list": [
+          {
+            "name": "TS1100P",
+            "material": "ฉลากทนความร้อนวัลคาไนซ์ยาง"
+          }
+        ]
       },
       {
         "temp": "260–330°C",
@@ -358,7 +533,24 @@
         "desc": "ฉลากถูกติดโดยตรงบนพื้นผิวเหล็ก อะลูมิเนียม หรือโลหะร้อนอื่น ๆ ทันทีหลังการหล่อหรือการรีด โดยไม่ต้องรอให้เย็นลงก่อนการระบุ",
         "apps": "โรงงานเหล็ก • การแปรรูปอะลูมิเนียม • การแปรรูปทองแดง • การหล่อต่อเนื่อง • การรีดร้อน",
         "lo": 800,
-        "hi": 1000
+        "hi": 1000,
+        "products_list": [
+          {
+            "name": "HP-700T",
+            "material": "ฉลากติดพื้นผิวร้อนโดยตรง",
+            "url": "/products/item/hp-700t/"
+          },
+          {
+            "name": "HP-800",
+            "material": "ฉลากติดพื้นผิวร้อนโดยตรง",
+            "url": "/products/item/hp-800c/"
+          },
+          {
+            "name": "HP-901",
+            "material": "ฉลากติดพื้นผิวร้อนโดยตรง",
+            "url": "/products/item/hp-901/"
+          }
+        ]
       },
       {
         "temp": "สูงถึง 1200°C",
@@ -367,7 +559,23 @@
         "desc": "ฉลากถูกติดก่อนการอบชุบด้วยความร้อนและติดอยู่กับผลิตภัณฑ์ตลอดกระบวนการอบอ่อน การเผา การซินเตอร์ และกระบวนการทางความร้อนอื่น ๆ เพื่อให้ระบุได้อย่างต่อเนื่อง",
         "apps": "เหล็ก • เซรามิก • พอร์ซเลน • คอนกรีต • อิเล็กทรอนิกส์ • งานโลหะ",
         "lo": 20,
-        "hi": 1200
+        "hi": 1200,
+        "products_list": [
+          {
+            "name": "HP-L80",
+            "material": "แท็กจัดการกระบวนการอบชุบความร้อน",
+            "url": "/products/item/hp-l80/"
+          },
+          {
+            "name": "HP-L85",
+            "material": "แท็กจัดการกระบวนการอบชุบความร้อน"
+          },
+          {
+            "name": "HP-L90",
+            "material": "แท็กจัดการกระบวนการอบชุบความร้อน",
+            "url": "/products/item/hp-l90/"
+          }
+        ]
       }
     ]
   }
