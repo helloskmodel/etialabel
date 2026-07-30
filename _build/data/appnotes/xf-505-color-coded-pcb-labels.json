@@ -1,0 +1,116 @@
+{
+ "slug": "xf-505-color-coded-pcb-labels",
+ "source": "client brief — XF-505 green polyimide PCB color-coding & high-temperature traceability",
+ "order": 4,
+ "langs": ["en", "zh"],
+ "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg",
+ "image": "",
+ "title": {
+  "en": "Color-Coded PCB Identification & High-Temperature Traceability | XF-505 Green Polyimide Label",
+  "zh": "PCB 彩色分类与高温追溯 | XF-505 绿色聚酰亚胺标签"
+ },
+ "subtitle": {
+  "en": "A 1 mil light-green polyimide label with permanent acrylic adhesive — visual color classification that survives reflow, cleaning and process chemicals.",
+  "zh": "1 mil 浅绿色聚酰亚胺标签，永久性丙烯酸压敏胶 —— 绿色目视管理，耐回流焊、清洗与制程化学品。"
+ },
+ "seo_desc": {
+  "en": "XF-505 pairs a 1 mil (25 μm) light-green polyimide film with a permanent acrylic PSA for PCB color classification that stays legible and firmly bonded through reflow, wave soldering, flux, IPA and cleaning.",
+  "zh": "XF-505 采用 1 mil（25 μm）浅绿色聚酰亚胺薄膜与永久性丙烯酸压敏胶，用于 PCB 彩色分类，在回流焊、波峰焊、助焊剂、IPA 与清洗后仍清晰牢固。"
+ },
+ "info": {
+  "en": [
+   {"label": "Product", "value": "XF-505 green polyimide label"},
+   {"label": "Facestock", "value": "1 mil (25 μm) light-green polyimide film"},
+   {"label": "Adhesive", "value": "Permanent acrylic pressure-sensitive adhesive"},
+   {"label": "Process compatibility", "value": "Reflow & wave soldering, spray/wipe cleaning"},
+   {"label": "Printing", "value": "Thermal transfer (with high-temperature ribbon)"}
+  ],
+  "zh": [
+   {"label": "产品", "value": "XF-505 绿色聚酰亚胺标签"},
+   {"label": "面材", "value": "1 mil（25 μm）浅绿色聚酰亚胺薄膜"},
+   {"label": "胶粘剂", "value": "永久性丙烯酸压敏胶"},
+   {"label": "适用制程", "value": "回流焊、波峰焊、喷淋/擦拭清洗"},
+   {"label": "打印方式", "value": "热转印（搭配耐高温碳带）"}
+  ]
+ },
+ "problems": {
+  "intro": {
+   "en": [
+    "In PCB production, different product models, process routes and quality states often need to be distinguished quickly by color. Conventional colored labels can discolor, curl, detach or lose print clarity after reflow soldering, cleaning and chemical processing, compromising downstream identification and traceability.",
+    "PCB labels typically travel with the board through several manufacturing stages:"
+   ],
+   "zh": [
+    "在 PCB 生产中，不同产品型号、工艺路线及质量状态常需要通过颜色快速区分。普通彩色标签经过回流焊、清洗及化学处理后，容易出现变色、翘边、脱落或打印信息模糊，影响后续识别与追溯。",
+    "PCB 标签通常需要随电路板经历多个生产环节："
+   ]
+  },
+  "items": {
+   "en": [
+    "Heat generated during reflow and wave soldering",
+    "Exposure to flux, IPA and cleaning agents",
+    "Spray washing and mechanical wiping",
+    "Printing and scanning of small barcodes and serial numbers",
+    "Long-term adhesion from production through final use"
+   ],
+   "zh": [
+    "回流焊及波峰焊产生的高温",
+    "助焊剂、IPA 及清洗剂接触",
+    "喷淋、擦拭等清洗过程",
+    "小尺寸条码与序列号识别",
+    "从生产到成品阶段的长期粘接"
+   ]
+  },
+  "outro": {
+   "en": [
+    "Under these conditions, ordinary colored labels may shrink, fade, lift or become unreadable, resulting in unreliable traceability."
+   ],
+   "zh": [
+    "普通彩色标签在上述环境中可能出现收缩、褪色、翘边或条码失读，难以维持稳定追溯。"
+   ]
+  }
+ },
+ "solution": {
+  "intro": {
+   "en": [
+    "XF-505 combines a 1 mil (25 μm) light-green polyimide film with a permanent acrylic pressure-sensitive adhesive, for PCB applications that require both visual color classification and reliable identification through high-temperature processing."
+   ],
+   "zh": [
+    "XF-505 采用 1 mil（25 μm）浅绿色聚酰亚胺薄膜和永久性丙烯酸压敏胶，适用于需要绿色目视管理、同时经历高温制程的 PCB 标识。"
+   ]
+  },
+  "points": {
+   "en": [
+    {"label": "Visual color classification", "text": "The light-green face material helps distinguish PCB models, production batches, process routes and inspection status, enabling faster visual identification and reducing the risk of material mix-ups."},
+    {"label": "Compatibility with high-temperature PCB processes", "text": "The polyimide film provides good thermal stability for reflow and wave-soldering processes, helping reduce label shrinkage, lifting and detachment."},
+    {"label": "Reliable adhesion to PCB surfaces", "text": "The permanent acrylic pressure-sensitive adhesive provides stable bonding to common PCB surfaces throughout production and long-term use."},
+    {"label": "Clear thermal-transfer identification", "text": "Supports thermal-transfer printing of barcodes, QR codes, serial numbers and batch information; paired with a suitable high-temperature ribbon, it maintains good print contrast and scan performance after processing."},
+    {"label": "Resistance to common process chemicals", "text": "Designed to withstand flux, IPA and common PCB cleaning conditions, reducing the risk of coating damage, blurred print or information loss."}
+   ],
+   "zh": [
+    {"label": "绿色目视分类", "text": "浅绿色面材可用于区分 PCB 型号、生产批次、工艺路线或检验状态，帮助现场人员快速识别，减少混料和误判。"},
+    {"label": "适应 PCB 高温制程", "text": "聚酰亚胺面材具有良好的热稳定性，可适应回流焊、波峰焊等工序，降低标签收缩、起翘和脱落的风险。"},
+    {"label": "稳定粘接 PCB 表面", "text": "永久性丙烯酸压敏胶可牢固贴合常见 PCB 表面，在后续生产和长期使用过程中保持标签稳定。"},
+    {"label": "清晰的热转印识别", "text": "适用于热转印打印条码、二维码、SN 码及批次信息；搭配合适的耐高温碳带，可在生产制程后保持良好的打印对比度与扫码性能。"},
+    {"label": "耐受常见制程化学品", "text": "可应对助焊剂、IPA 及常见 PCB 清洗环境，降低涂层受损、字迹模糊和信息脱落的风险。"}
+   ]
+  }
+ },
+ "applications": {
+  "en": [
+   "Front- and back-side PCB identification",
+   "Serial number, barcode and QR-code traceability",
+   "Product model and batch identification",
+   "Color-coded process-route management",
+   "Inspection status and quality classification",
+   "High-temperature electronic-component identification"
+  ],
+  "zh": [
+   "PCB 正反面识别",
+   "SN 码、条码及二维码追溯",
+   "产品型号与批次区分",
+   "工艺路线颜色分类",
+   "检验状态与质量分级管理",
+   "电子元器件高温制程标识"
+  ]
+ }
+}
