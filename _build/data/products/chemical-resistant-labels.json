@@ -1,7 +1,12 @@
 {
   "slug": "chemical-resistant-labels",
   "source": "client brief — Chemical Resistant Label Solutions",
-  "langs": ["en", "zh", "vi", "th"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/enviroment-chemical",
   "banner_pos": "center bottom",
   "eyebrow": {
@@ -86,7 +91,13 @@
           "Chemical Containers",
           "Industrial Cleaning"
         ],
-        "chemicals": "MEK • Acetone • Toluene • Xylene • DMSO"
+        "chemicals": "MEK • Acetone • Toluene • Xylene • DMSO",
+        "products_list": [
+          {
+            "name": "E-2532",
+            "material": "2mil gloss white PET · balanced acrylic"
+          }
+        ]
       },
       {
         "icon": "🍶",
@@ -100,7 +111,26 @@
           "Medical Devices",
           "Clinical Laboratories"
         ],
-        "chemicals": "Ethanol • Methanol • Isopropyl Alcohol (IPA)"
+        "chemicals": "Ethanol • Methanol • Isopropyl Alcohol (IPA)",
+        "products_list": [
+          {
+            "name": "E-4812",
+            "material": "2mil white PO · permanent low-temp acrylic",
+            "url": "/products/item/e-4812/"
+          },
+          {
+            "name": "E-4813",
+            "material": "2mil white PP · low-temp balanced acrylic"
+          },
+          {
+            "name": "E-5532",
+            "material": "2mil white PO · low-migration medical PSA"
+          },
+          {
+            "name": "E-4533",
+            "material": "3mil thick white PP · blood-bag balanced acrylic"
+          }
+        ]
       },
       {
         "icon": "🧼",
@@ -114,7 +144,17 @@
           "Cleanrooms",
           "Food Processing"
         ],
-        "chemicals": "Bleach • Sodium Hypochlorite • Hydrogen Peroxide"
+        "chemicals": "Bleach • Sodium Hypochlorite • Hydrogen Peroxide",
+        "products_list": [
+          {
+            "name": "E-5532",
+            "material": "2mil white PO · low-migration medical PSA"
+          },
+          {
+            "name": "E-4533",
+            "material": "3mil thick white PP · blood-bag balanced acrylic"
+          }
+        ]
       },
       {
         "icon": "🛢",
@@ -128,7 +168,14 @@
           "Industrial Machinery",
           "Hydraulic Systems"
         ],
-        "chemicals": "Lubricants • Hydraulic Fluids • Cutting Oils • Brake Fluids"
+        "chemicals": "Lubricants • Hydraulic Fluids • Cutting Oils • Brake Fluids",
+        "products_list": [
+          {
+            "name": "E-2813",
+            "material": "3mil matte white PET · high-temp high-tack acrylic",
+            "url": "/products/item/e-2813/"
+          }
+        ]
       },
       {
         "icon": "⚗️",
@@ -142,7 +189,22 @@
           "Chemical Production",
           "Laboratory Processing"
         ],
-        "chemicals": "Hydrochloric Acid • Sulfuric Acid • Sodium Hydroxide • Alkaline Cleaners"
+        "chemicals": "Hydrochloric Acid • Sulfuric Acid • Sodium Hydroxide • Alkaline Cleaners",
+        "products_list": [
+          {
+            "name": "HP-L70",
+            "material": "acid & alkali resistant high-temp tag"
+          },
+          {
+            "name": "HP-L85",
+            "material": "acid & alkali resistant high-temp tag"
+          },
+          {
+            "name": "HP-L90",
+            "material": "acid & alkali resistant high-temp tag",
+            "url": "/products/item/hp-l90/"
+          }
+        ]
       }
     ],
     "zh": [
@@ -158,7 +220,13 @@
           "化学品容器",
           "工业清洗"
         ],
-        "chemicals": "MEK • 丙酮 • 甲苯 • 二甲苯 • DMSO"
+        "chemicals": "MEK • 丙酮 • 甲苯 • 二甲苯 • DMSO",
+        "products_list": [
+          {
+            "name": "E-2532",
+            "material": "2mil 亮面白色 PET · 平衡丙烯酸胶"
+          }
+        ]
       },
       {
         "icon": "🍶",
@@ -172,7 +240,26 @@
           "医疗器械",
           "临床实验室"
         ],
-        "chemicals": "乙醇 • 甲醇 • 异丙醇（IPA）"
+        "chemicals": "乙醇 • 甲醇 • 异丙醇（IPA）",
+        "products_list": [
+          {
+            "name": "E-4812",
+            "material": "2mil 白色 PO · 低温永久丙烯酸胶",
+            "url": "/products/item/e-4812/"
+          },
+          {
+            "name": "E-4813",
+            "material": "2mil 白色 PP · 低温平衡丙烯酸胶"
+          },
+          {
+            "name": "E-5532",
+            "material": "2mil 白色 PO · 低迁移医用压敏胶"
+          },
+          {
+            "name": "E-4533",
+            "material": "3mil 加厚白色 PP · 血袋专用平衡丙烯酸胶"
+          }
+        ]
       },
       {
         "icon": "🧼",
@@ -186,7 +273,17 @@
           "洁净室",
           "食品加工"
         ],
-        "chemicals": "漂白剂 • 次氯酸钠 • 过氧化氢"
+        "chemicals": "漂白剂 • 次氯酸钠 • 过氧化氢",
+        "products_list": [
+          {
+            "name": "E-5532",
+            "material": "2mil 白色 PO · 低迁移医用压敏胶"
+          },
+          {
+            "name": "E-4533",
+            "material": "3mil 加厚白色 PP · 血袋专用平衡丙烯酸胶"
+          }
+        ]
       },
       {
         "icon": "🛢",
@@ -200,7 +297,14 @@
           "工业机械",
           "液压系统"
         ],
-        "chemicals": "润滑油 • 液压油 • 切削液 • 制动液"
+        "chemicals": "润滑油 • 液压油 • 切削液 • 制动液",
+        "products_list": [
+          {
+            "name": "E-2813",
+            "material": "3mil 哑面白色 PET · 耐高温强粘丙烯酸胶",
+            "url": "/products/item/e-2813/"
+          }
+        ]
       },
       {
         "icon": "⚗️",
@@ -214,7 +318,22 @@
           "化工生产",
           "实验室处理"
         ],
-        "chemicals": "盐酸 • 硫酸 • 氢氧化钠 • 碱性清洗剂"
+        "chemicals": "盐酸 • 硫酸 • 氢氧化钠 • 碱性清洗剂",
+        "products_list": [
+          {
+            "name": "HP-L70",
+            "material": "耐酸碱高温吊牌"
+          },
+          {
+            "name": "HP-L85",
+            "material": "耐酸碱高温吊牌"
+          },
+          {
+            "name": "HP-L90",
+            "material": "耐酸碱高温吊牌",
+            "url": "/products/item/hp-l90/"
+          }
+        ]
       }
     ],
     "vi": [
@@ -230,7 +349,13 @@
           "Thùng chứa hóa chất",
           "Vệ sinh công nghiệp"
         ],
-        "chemicals": "MEK • Acetone • Toluene • Xylene • DMSO"
+        "chemicals": "MEK • Acetone • Toluene • Xylene • DMSO",
+        "products_list": [
+          {
+            "name": "E-2532",
+            "material": "PET trắng bóng 2mil · keo acrylic cân bằng"
+          }
+        ]
       },
       {
         "icon": "🍶",
@@ -244,7 +369,26 @@
           "Thiết bị y tế",
           "Phòng thí nghiệm lâm sàng"
         ],
-        "chemicals": "Ethanol • Methanol • Isopropyl Alcohol (IPA)"
+        "chemicals": "Ethanol • Methanol • Isopropyl Alcohol (IPA)",
+        "products_list": [
+          {
+            "name": "E-4812",
+            "material": "PO trắng 2mil · keo acrylic nhiệt thấp vĩnh viễn",
+            "url": "/products/item/e-4812/"
+          },
+          {
+            "name": "E-4813",
+            "material": "PP trắng 2mil · keo acrylic cân bằng nhiệt thấp"
+          },
+          {
+            "name": "E-5532",
+            "material": "PO trắng 2mil · keo y tế ít di trú"
+          },
+          {
+            "name": "E-4533",
+            "material": "PP trắng dày 3mil · keo cân bằng cho túi máu"
+          }
+        ]
       },
       {
         "icon": "🧼",
@@ -258,7 +402,17 @@
           "Phòng sạch",
           "Chế biến thực phẩm"
         ],
-        "chemicals": "Bleach • Sodium Hypochlorite • Hydrogen Peroxide"
+        "chemicals": "Bleach • Sodium Hypochlorite • Hydrogen Peroxide",
+        "products_list": [
+          {
+            "name": "E-5532",
+            "material": "PO trắng 2mil · keo y tế ít di trú"
+          },
+          {
+            "name": "E-4533",
+            "material": "PP trắng dày 3mil · keo cân bằng cho túi máu"
+          }
+        ]
       },
       {
         "icon": "🛢",
@@ -272,7 +426,14 @@
           "Máy móc công nghiệp",
           "Hệ thống thủy lực"
         ],
-        "chemicals": "Lubricants • Hydraulic Fluids • Cutting Oils • Brake Fluids"
+        "chemicals": "Lubricants • Hydraulic Fluids • Cutting Oils • Brake Fluids",
+        "products_list": [
+          {
+            "name": "E-2813",
+            "material": "PET trắng mờ 3mil · keo acrylic chịu nhiệt bám cao",
+            "url": "/products/item/e-2813/"
+          }
+        ]
       },
       {
         "icon": "⚗️",
@@ -286,7 +447,22 @@
           "Sản xuất hóa chất",
           "Xử lý trong phòng thí nghiệm"
         ],
-        "chemicals": "Hydrochloric Acid • Sulfuric Acid • Sodium Hydroxide • Alkaline Cleaners"
+        "chemicals": "Hydrochloric Acid • Sulfuric Acid • Sodium Hydroxide • Alkaline Cleaners",
+        "products_list": [
+          {
+            "name": "HP-L70",
+            "material": "thẻ nhiệt cao kháng axit & kiềm"
+          },
+          {
+            "name": "HP-L85",
+            "material": "thẻ nhiệt cao kháng axit & kiềm"
+          },
+          {
+            "name": "HP-L90",
+            "material": "thẻ nhiệt cao kháng axit & kiềm",
+            "url": "/products/item/hp-l90/"
+          }
+        ]
       }
     ],
     "th": [
@@ -302,7 +478,13 @@
           "ภาชนะบรรจุสารเคมี",
           "การทำความสะอาดในอุตสาหกรรม"
         ],
-        "chemicals": "MEK • Acetone • Toluene • Xylene • DMSO"
+        "chemicals": "MEK • Acetone • Toluene • Xylene • DMSO",
+        "products_list": [
+          {
+            "name": "E-2532",
+            "material": "PET ขาวเงา 2mil · กาวอะคริลิกสมดุล"
+          }
+        ]
       },
       {
         "icon": "🍶",
@@ -316,7 +498,26 @@
           "อุปกรณ์การแพทย์",
           "ห้องปฏิบัติการทางคลินิก"
         ],
-        "chemicals": "Ethanol • Methanol • Isopropyl Alcohol (IPA)"
+        "chemicals": "Ethanol • Methanol • Isopropyl Alcohol (IPA)",
+        "products_list": [
+          {
+            "name": "E-4812",
+            "material": "PO ขาว 2mil · กาวอะคริลิกอุณหภูมิต่ำถาวร",
+            "url": "/products/item/e-4812/"
+          },
+          {
+            "name": "E-4813",
+            "material": "PP ขาว 2mil · กาวอะคริลิกสมดุลอุณหภูมิต่ำ"
+          },
+          {
+            "name": "E-5532",
+            "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
+          },
+          {
+            "name": "E-4533",
+            "material": "PP ขาวหนา 3mil · กาวสมดุลสำหรับถุงเลือด"
+          }
+        ]
       },
       {
         "icon": "🧼",
@@ -330,7 +531,17 @@
           "ห้องสะอาด",
           "การแปรรูปอาหาร"
         ],
-        "chemicals": "Bleach • Sodium Hypochlorite • Hydrogen Peroxide"
+        "chemicals": "Bleach • Sodium Hypochlorite • Hydrogen Peroxide",
+        "products_list": [
+          {
+            "name": "E-5532",
+            "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
+          },
+          {
+            "name": "E-4533",
+            "material": "PP ขาวหนา 3mil · กาวสมดุลสำหรับถุงเลือด"
+          }
+        ]
       },
       {
         "icon": "🛢",
@@ -344,7 +555,14 @@
           "เครื่องจักรอุตสาหกรรม",
           "ระบบไฮดรอลิก"
         ],
-        "chemicals": "Lubricants • Hydraulic Fluids • Cutting Oils • Brake Fluids"
+        "chemicals": "Lubricants • Hydraulic Fluids • Cutting Oils • Brake Fluids",
+        "products_list": [
+          {
+            "name": "E-2813",
+            "material": "PET ขาวด้าน 3mil · กาวอะคริลิกทนร้อนแรงยึดสูง",
+            "url": "/products/item/e-2813/"
+          }
+        ]
       },
       {
         "icon": "⚗️",
@@ -358,7 +576,22 @@
           "การผลิตสารเคมี",
           "การประมวลผลในห้องปฏิบัติการ"
         ],
-        "chemicals": "Hydrochloric Acid • Sulfuric Acid • Sodium Hydroxide • Alkaline Cleaners"
+        "chemicals": "Hydrochloric Acid • Sulfuric Acid • Sodium Hydroxide • Alkaline Cleaners",
+        "products_list": [
+          {
+            "name": "HP-L70",
+            "material": "แท็กทนความร้อนสูงกันกรดด่าง"
+          },
+          {
+            "name": "HP-L85",
+            "material": "แท็กทนความร้อนสูงกันกรดด่าง"
+          },
+          {
+            "name": "HP-L90",
+            "material": "แท็กทนความร้อนสูงกันกรดด่าง",
+            "url": "/products/item/hp-l90/"
+          }
+        ]
       }
     ]
   }
