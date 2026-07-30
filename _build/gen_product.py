@@ -174,7 +174,7 @@ def _segcolor(s):
         return _temp_color((s["lo"] + s["hi"]) / 2.0)
     return "#8aa0c0"
 
-def _scn_panel(s, ui):
+def _scn_panel(s, ui, lang="en"):
     """The description card shown below the selected temperature tab. One product =
     one card; extra cards stack here when a temperature maps to several products."""
     def subblock(label, text):
@@ -202,18 +202,21 @@ def _scn_panel(s, ui):
     left = '<div class="pr">%s</div><h3>%s</h3><p>%s</p>%s%s' % (
         esc(s.get("process", "")), esc(title), esc(s.get("desc", "")), sub, apline)
     if prods:
-        rows = "".join('<div class="pscn-prod"><b>%s</b><span>%s</span></div>' % (
-            esc(p.get("name", "")), esc(p.get("material", ""))) for p in prods)
+        def _prow(p):
+            nm = esc(p.get("name", ""))
+            name_html = ('<a href="%s">%s</a>' % (hp.Lx(lang, p["url"]), nm)) if p.get("url") else nm
+            return '<div class="pscn-prod"><b>%s</b><span>%s</span></div>' % (name_html, esc(p.get("material", "")))
+        rows = "".join(_prow(p) for p in prods)
         right = '<div class="pscn-rh">%s</div>%s' % (esc(ui["sc_products"]), rows)
         return ('<div class="pscncard pscn2"><div class="pscn-l">%s</div>'
                 '<div class="pscn-r">%s</div></div>') % (left, right)
     return '<div class="pscncard">%s</div>' % left
 
-def scenarios_html(items, ui):
+def scenarios_html(items, ui, lang="en"):
     # Temperature tab bar — same component as the industry "Choose a category":
     # text tabs = temperature ranges, arrows scroll, selected tab highlighted;
     # the selected temperature's description card renders below.
-    cats = [{"tab": s.get("temp", ""), "html": _scn_panel(s, ui)} for s in items]
+    cats = [{"tab": s.get("temp", ""), "html": _scn_panel(s, ui, lang)} for s in items]
     static_tabs = "".join(
         '<button type="button" class="scntab%s">%s</button>' % ((" on" if i == 0 else ""), esc(c["tab"]))
         for i, c in enumerate(cats))
@@ -298,7 +301,7 @@ def build_lang(d, lang):
         if L(w.get("items", {}), lang):
             body += section("", ui["key_benefits"], ul(L(w["items"], lang), "ok"))
     if L(d.get("scenarios", {}), lang):
-        body += section("", ui["applications"], scenarios_html(L(d["scenarios"], lang), ui))
+        body += section("", ui["applications"], scenarios_html(L(d["scenarios"], lang), ui, lang))
     if L(d.get("featured", {}), lang):
         body += section("", ui["featured"], ul(L(d["featured"], lang), "ok"))
     if d.get("spec_table"):
