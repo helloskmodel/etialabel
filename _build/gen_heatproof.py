@@ -117,6 +117,14 @@ nav .ndm.pm.pm2{grid-template-columns:224px minmax(300px,360px)}
 .pm .subgroup a.suball{font-weight:700;color:var(--blue);border-bottom:1px solid var(--line);border-radius:0;margin-bottom:4px;padding-bottom:12px}
 .pm .subgroup a.suball:hover{background:none;text-decoration:underline}
 .pm .subempty{color:var(--faint);font-size:13px;font-weight:500;padding:12px;line-height:1.5}
+/* simple single-level dropdown (top-level Product / Industry menus) */
+nav .ndt.on{color:var(--blue)}
+nav .ndm.sm{position:absolute;top:62px;left:0;background:#fff;border:1px solid var(--line);border-radius:12px;
+  box-shadow:0 22px 56px rgba(20,40,90,.18);min-width:236px;padding:8px;opacity:0;visibility:hidden;
+  transform:translateY(10px);transition:.16s;z-index:60}
+nav .nd.open .ndm.sm,nav .nd:hover .ndm.sm{opacity:1;visibility:visible;transform:translateY(0)}
+nav .ndm.sm a{display:block;font-size:14px;font-weight:600;color:var(--ink);padding:11px 14px;border-radius:9px;white-space:nowrap}
+nav .ndm.sm a:hover{background:var(--tint-blue);color:var(--blue);text-decoration:none}
 .ndmob{display:none}
 @media(max-width:980px){nav .ndm.pm{grid-template-columns:200px 1fr;left:16px}.pm .ndsub{display:none}}
 @media(max-width:900px){
@@ -127,7 +135,7 @@ nav .navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:
 nav.open .navlinks{display:flex}
 nav .navlinks>a,nav .navlinks .ndt{padding:14px 24px;font-size:16px;border-bottom:1px solid var(--bg)}
 nav .navlinks .nd,nav .navlinks .nd.ndwide{display:block;position:static}
-nav .navlinks .ndm.pm{display:none}
+nav .navlinks .ndm.pm,nav .navlinks .ndm.sm{display:none}
 nav .navlinks .ndt{display:flex;align-items:center;justify-content:space-between}
 nav .navlinks .ndt .caret{display:inline-block;font-size:15px;color:var(--faint);transition:.15s}
 nav .navlinks .nd.mopen .ndt,nav .navlinks .nd.mopen .ndt .caret{color:var(--blue)}
@@ -508,15 +516,16 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 
 NAV_ITEMS = [("Home", "/", "home"),
              ("Product", u_products(), "products"),
+             ("Industry", "/applications/", "industry"),
              ("Application", "/applications/", "applications"),
              ("Insight", "/insights/", "insights"),
              ("Service", "/service/", "service")]
-NAV_ZH = {"Home":"首页","Products":"产品","Product":"产品","Case Studies":"案例","Application Notes":"应用笔记","Application":"应用","News":"新闻","Insights":"洞察","Insight":"洞察","Service":"服务",
+NAV_ZH = {"Home":"首页","Products":"产品","Product":"产品","Industry":"行业","Case Studies":"案例","Application Notes":"应用笔记","Application":"应用","News":"新闻","Insights":"洞察","Insight":"洞察","Service":"服务",
           "Industries":"行业","About ETIA":"关于 ETIA","Contact":"联系我们"}
 # 4-language nav / footer labels (keyed by the English label)
-NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Product":"Sản phẩm","Case Studies":"Nghiên cứu điển hình","Application Notes":"Ghi chú ứng dụng","Application":"Ứng dụng","News":"Tin tức","Insight":"Kiến thức","Service":"Dịch vụ",
+NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Product":"Sản phẩm","Industry":"Ngành","Case Studies":"Nghiên cứu điển hình","Application Notes":"Ghi chú ứng dụng","Application":"Ứng dụng","News":"Tin tức","Insight":"Kiến thức","Service":"Dịch vụ",
           "Industries":"Ngành","About ETIA":"Về ETIA","Contact":"Liên hệ"}
-NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Product":"ผลิตภัณฑ์","Case Studies":"กรณีศึกษา","Application Notes":"แอปพลิเคชันโน้ต","Application":"การใช้งาน","News":"ข่าว","Insight":"ความรู้","Service":"บริการ",
+NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Product":"ผลิตภัณฑ์","Industry":"อุตสาหกรรม","Case Studies":"กรณีศึกษา","Application Notes":"แอปพลิเคชันโน้ต","Application":"การใช้งาน","News":"ข่าว","Insight":"ความรู้","Service":"บริการ",
           "Industries":"อุตสาหกรรม","About ETIA":"เกี่ยวกับ ETIA","Contact":"ติดต่อ"}
 def navlab(lang, t):
     if lang == "zh": return NAV_ZH.get(t, t)
@@ -620,6 +629,29 @@ def products_dropdown(lang, linkfn):
             '%s'
             '</div>%s</div>') % (linkfn("/products/"), esc(top), pmcls, ("产品方案" if zh else "LABEL SOLUTIONS"), rail, mids, sub_col, mob)
 
+# Simple single-level dropdown (used for the top-level Product and Industry menus).
+# One flat column of links — easier to find and tap than the nested cascading menu,
+# especially on mobile (a single tap reveals the whole list).
+_MENU_VITH = {"By Environment": ("Theo môi trường", "ตามสภาพแวดล้อม"),
+              "By Industry": ("Theo ngành", "ตามอุตสาหกรรม"),
+              "Heat Resistant": ("Chịu nhiệt", "ทนความร้อน"),
+              "Low Temperature Resistant": ("Chịu nhiệt độ thấp", "ทนอุณหภูมิต่ำ")}
+def simple_dropdown(lang, top_en, top_href, items, is_active, linkfn):
+    zh = (lang == "zh")
+    def lab(e, z):
+        if zh: return z
+        if lang == "vi" and e in _MENU_VITH: return _MENU_VITH[e][0]
+        if lang == "th" and e in _MENU_VITH: return _MENU_VITH[e][1]
+        return e
+    top = navlab(lang, top_en)
+    desktop = "".join('<a href="%s">%s</a>' % (linkfn(u), esc(lab(e, z))) for e, z, u in items)
+    mob = "".join('<a class="ndma" href="%s">%s</a>' % (linkfn(u), esc(lab(e, z))) for e, z, u in items)
+    return ('<div class="nd" onmouseenter="etaOpen(this)" onmouseleave="etaClose(this)">'
+            '<a class="ndt%s" href="%s" onclick="return etaProd(this,event)">%s <span class="caret">&#9662;</span></a>'
+            '<div class="ndm sm">%s</div>'
+            '<div class="ndmob">%s</div></div>') % (
+        (" on" if is_active else ""), linkfn(top_href), esc(top), desktop, mob)
+
 ALL_URLS = []   # (path, group, changefreq)  — English canonical set for sitemap
 def track(path, group): ALL_URLS.append((path, group))
 
@@ -642,9 +674,14 @@ LANG_CODE = {"en": "EN", "zh": "CN", "vi": "VN", "th": "TH"}
 def nav_html(lang, active, path="/", langs=None):
     langs = langs or ["en", "zh"]
     items = ""
+    linkfn = lambda p: Lx(lang, p)
     for t, href, key in NAV_ITEMS:
         if key == "products":
-            items += products_dropdown(lang, lambda p: Lx(lang, p))
+            # Product = the environment axis (Heat Resistant / Low Temperature Resistant)
+            items += simple_dropdown(lang, t, href, PROD_AXES[0][3], key == active, linkfn)
+        elif key == "industry":
+            # Industry = the sector list (PCB, Automotive, Wire & Cable, …)
+            items += simple_dropdown(lang, t, href, PROD_AXES[1][3], key == active, linkfn)
         else:
             items += '<a href="%s"%s>%s</a>' % (Lx(lang, href), ' class="on"' if key==active else '', navlab(lang, t))
     if len(langs) > 2:
@@ -1252,19 +1289,20 @@ def home_switcher(active):
     return '<span class="langsw">%s</span>' % out
 
 def home_nav(lang):
-    T=HOME_I18N[lang]
     lf=lambda p: home_hlink(lang,p)
-    prod=products_dropdown(lang, lf)
+    # Product + Industry are two top-level single-level dropdowns (matches nav_html).
+    prod=simple_dropdown(lang, "Product", "/products/", PROD_AXES[0][3], False, lf)
+    ind =simple_dropdown(lang, "Industry", "/applications/", PROD_AXES[1][3], False, lf)
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
-    # top nav after Product: Application, Insight, Service
+    # top nav after Product/Industry: Application, Insight, Service
     app_lbl={"en":"Application","zh":"应用","vi":"Ứng dụng","th":"การใช้งาน"}.get(lang,"Application")
     ins_lbl={"en":"Insight","zh":"洞察","vi":"Kiến thức","th":"ความรู้"}.get(lang,"Insight")
     sv_lbl={"en":"Service","zh":"服务","vi":"Dịch vụ","th":"บริการ"}.get(lang,"Service")
     links=('<a href="%s">%s</a><a href="%s">%s</a><a href="%s">%s</a>'%(
         lf("/applications/"),esc(app_lbl),lf("/insights/"),esc(ins_lbl),lf("/service/"),esc(sv_lbl)))
-    return '<nav><div class="navlinks">%s%s%s</div>%s%s</nav>' % (
-        home_link, prod, links, home_switcher(lang), NAV_TOGGLE)
+    return '<nav><div class="navlinks">%s%s%s%s</div>%s%s</nav>' % (
+        home_link, prod, ind, links, home_switcher(lang), NAV_TOGGLE)
 
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
@@ -1876,7 +1914,27 @@ def build_applications(lang):
             Lx(lang,"/application-notes/%s/"%n["slug"]), im,
             esc(_nl(n.get("title",{}))), esc(_nl(n.get("subtitle",{}))))
     note_cards="".join(_notecard(n) for n in notes)
-    body=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
+    # Browse-by-Industry grid — same image cards as the home page "Solutions by
+    # Industry" section, linking to each industry sector page.
+    T=HOME_I18N[lang]
+    ind_cards=""
+    for k,f in enumerate(T["focus"]):
+        top=('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">'%(esc(f["img"]),esc(f["name"]))) if f.get("img") \
+            else ('<span class="aicon">%s</span>'%INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)])
+        ind_cards+=('<a class="acard" href="%s"><div class="acard-img g%d">%s</div>'
+                    '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p>'
+                    '<div class="acard-go">%s →</div></div></a>')%(
+            home_hlink(lang,FOCUS_URLS[k]), k%6, top,
+            esc(f["name"]), esc(f["desc"]), esc(T["explore"]))
+    ind_section=('<section class="blk" style="background:var(--tint-blue)"><div class="wrap">'
+                 '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
+                 '<div class="acgrid">%s</div></div></section>')%(
+        ("按行业" if zh else "BY INDUSTRY"),
+        ("按行业浏览" if zh else "Browse by Industry"),
+        ("按行业查看典型标识场景与推荐材料。" if zh else "See typical identification scenarios and recommended materials for each industry."),
+        ind_cards)
+    body=(ind_section+
+          '<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
           '<div class="appnotesgrid">%s</div></div></section>'
           '<div class="wrap">%s</div>')%(
         ("应用笔记" if zh else "APPLICATION NOTES"),
