@@ -1,0 +1,78 @@
+{
+ "slug": "cryogenic-direct-apply-e4812",
+ "source": "client brief — E-4812 / E-4802 cryogenic direct-apply & liquid-nitrogen storage",
+ "order": 3,
+ "langs": ["en", "zh"],
+ "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
+ "image": "",
+ "title": {
+  "en": "Direct Cryogenic Labeling & Liquid Nitrogen Storage | E-4812 / E-4802",
+  "zh": "超低温直贴与液氮存储解决方案 | E-4812 / E-4802 生物样本标签"
+ },
+ "subtitle": {
+  "en": "Cryovial identification for biobanks, pharma R&D and clinical labs — apply directly to frozen tubes without warming, for long-term liquid-nitrogen storage.",
+  "zh": "面向生物样本库、药企研发与临床实验室的冻存管标识 —— 无需回温，直贴低温冻存管，耐液氮长期存储。"
+ },
+ "seo_desc": {
+  "en": "E-4812 / E-4802 apply directly to cold or frozen cryovials without warming samples, maintaining reliable adhesion through liquid-nitrogen storage, freeze-thaw cycling and laboratory chemicals for long-term sample traceability.",
+  "zh": "E-4812 / E-4802 无需回温即可直贴低温冻存管，在液氮存储、反复冻融及实验室试剂擦拭下保持稳定粘接，为生物样本建立长期清晰的追溯体系。"
+ },
+ "info": {
+  "en": [
+   {"label": "Identification target", "value": "Cryovials — biobank, pharma R&D and clinical samples"},
+   {"label": "Operating temperature", "value": "Ambient down to −196°C (liquid nitrogen)"},
+   {"label": "Application method", "value": "Automated and manual direct application"},
+   {"label": "Recommended product", "value": "E-4812 / E-4802 cryogenic direct-apply labels"}
+  ],
+  "zh": [
+   {"label": "识别对象", "value": "冻存管 —— 生物样本库、药企研发与临床样本"},
+   {"label": "作业温度", "value": "常温至 −196°C（液氮）"},
+   {"label": "贴标方式", "value": "自动与人工直接贴标"},
+   {"label": "推荐产品", "value": "E-4812 / E-4802 超低温直贴标签"}
+  ]
+ },
+ "problems": {
+  "intro": {
+   "en": [
+    "Biological samples are temperature-sensitive and may be stored for many years. Conventional labels can be difficult to apply to frozen tube surfaces and may crack, lift or detach during long-term cryogenic storage, compromising sample identification and traceability."
+   ],
+   "zh": [
+    "生物样本对温度敏感，且保存周期长。普通标签通常难以在低温管壁上牢固粘贴，长期液氮存储后还可能出现开裂、翘边或脱落，影响样本识别与追溯。"
+   ]
+  }
+ },
+ "solution": {
+  "intro": {
+   "en": [
+    "E-4812 / E-4802 is engineered for demanding cryogenic environments. It supports both automated and manual application and can be applied directly to cold or frozen tubes without warming the samples. Its main performance features include:"
+   ],
+   "zh": [
+    "E-4812 / E-4802 针对深冷存储环境设计，兼容自动与人工贴标，可直接贴附于低温冻存管、无需样本回温。主要性能包括："
+   ]
+  },
+  "points": {
+   "en": [
+    {"label": "Direct cryogenic application", "text": "Applies to cold or frozen cryovials without thawing or warming the sample."},
+    {"label": "Liquid nitrogen storage", "text": "Maintains reliable, stable adhesion under deep-cold conditions — resists cracking, lifting and detachment."},
+    {"label": "Freeze-thaw & chemical resistance", "text": "Withstands repeated freeze-thaw cycling and wiping with common laboratory reagents."},
+    {"label": "Clear printability", "text": "Supports text, barcode and QR-code printing for reliable sample identification and traceability."}
+   ],
+   "zh": [
+    {"label": "超低温直贴", "text": "无需解冻回温，可直接贴附于低温冻存管。"},
+    {"label": "耐液氮存储", "text": "深冷环境下保持稳定粘接，不易开裂、翘边或脱落。"},
+    {"label": "耐冻融与化学试剂", "text": "适应反复冻融以及实验室常用试剂的擦拭。"},
+    {"label": "清晰可打印", "text": "支持字符、条码及二维码打印，便于样本追溯。"}
+   ]
+  }
+ },
+ "advantages": {
+  "en": [
+   "Reduces sample-warming procedures and the risk of label loss in deep-cold environments.",
+   "Helps biobanks and laboratories build a stable, clear long-term traceability system."
+  ],
+  "zh": [
+   "减少样本回温操作及深冷环境中的掉标风险。",
+   "帮助生物样本库与实验室建立稳定、清晰的长期追溯体系。"
+  ]
+ }
+}
