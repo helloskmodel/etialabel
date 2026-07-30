@@ -234,7 +234,8 @@ a.gc-line svg{color:var(--green-d)}
 .apppanel .aptext .plink{font-size:14px;font-weight:700;color:var(--blue)}
 /* service commitment panel text */
 .appmod.svc .apptab{max-width:none;white-space:nowrap}
-.appmod.svc .apppanel{align-items:start}
+.appmod.svc .apppanel{align-items:start;grid-template-columns:minmax(0,300px) 1fr;gap:32px}
+.appmod.svc .apimg{aspect-ratio:4/3;max-width:300px}
 .aptext .svc-num{font-size:13px;font-weight:800;letter-spacing:.12em;color:var(--green-d)}
 .aptext .svc-num+h3{margin-top:6px}
 .aptext .svc-tag{font-size:17px;font-weight:700;color:var(--ink);margin-bottom:16px;max-width:40em}
