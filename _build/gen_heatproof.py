@@ -171,10 +171,10 @@ section.blk{padding:42px 0}
 @media(max-width:900px){.grid.grid3{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.grid.grid3,.grid.grid2{grid-template-columns:1fr}}
 /* industry landing HERO SECTION (label + slogan, banner-ready) */
-.indhero{position:relative;background:linear-gradient(120deg,var(--blue),var(--blue-deep) 60%,#0f2f7a);color:#fff;overflow:hidden;background-size:cover;background-position:center}
-.indhero.hasimg::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(20,60,150,.90),rgba(20,60,150,.42));z-index:1}
+.indhero{position:relative;background:var(--blue-deep);color:#fff;overflow:hidden;background-size:cover;background-position:center right;border-bottom:2px solid #fff}
+.indhero.hasimg::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,60,150,.90) 16%,rgba(20,60,150,.50) 54%,rgba(20,60,150,.08));z-index:1}
 .indhero .wrap{position:relative;z-index:2;padding:60px 24px}
-.indhero .eyebrow{color:#9fc0ff}
+.indhero .eyebrow{color:#8fe063}
 .indhero h1{color:#fff;font-family:var(--sans);font-size:40px;line-height:1.12;letter-spacing:-.01em;margin:12px 0 16px;max-width:18em;font-weight:800;text-align:left}
 .indhero .slogan{font-size:20px;line-height:1.45;color:#dbe6ff;font-weight:600;max-width:32em}
 @media(max-width:820px){.indhero{min-height:280px}.indhero h1{font-size:30px}.indhero .slogan{font-size:16.5px}.indhero .wrap{padding:36px 24px}}
@@ -402,6 +402,13 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .appcard .acard-body p{font-size:14px;color:var(--mut);line-height:1.55;margin-top:6px}
 .appnotesgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 @media(max-width:760px){.appnotesgrid{gap:11px}.appnotesgrid .acard-body h3{font-size:15px}.appnotesgrid .acard-body p{font-size:12.5px}}
+/* application-notes search / filter box */
+.ansearch{position:relative;max-width:420px;margin:2px 0 20px}
+.ansearch input{width:100%;font-family:inherit;font-size:14.5px;padding:11px 14px 11px 40px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.ansearch input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,86,219,.12)}
+.ansearch .ansearch-ic{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--faint);pointer-events:none;display:flex}
+.ansearch .ansearch-ic svg{width:18px;height:18px}
+.annohit{color:var(--mut);font-size:14px;padding:6px 2px;display:none}
 .indfilter{display:flex;flex-wrap:wrap;gap:9px;margin:2px 0 22px}
 .indfbtn{font-size:14px;font-weight:700;color:var(--mut);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer;transition:.15s}
 .indfbtn:hover{border-color:var(--blue);color:var(--blue)}
@@ -1906,10 +1913,12 @@ def build_applications(lang):
     def _notecard(n):
         img=n.get("image") or n.get("banner") or ""
         im=('<img src="%s" alt="" loading="lazy" onerror="this.remove()">'%esc(img)) if img else ''
-        return ('<a class="acard appcard" href="%s"><div class="acard-img">%s</div>'
+        title=_nl(n.get("title",{})); sub=_nl(n.get("subtitle",{}))
+        tags=n.get("tags",{}) if isinstance(n.get("tags",{}),dict) else {}
+        txt=" ".join([title,sub]+[str(x) for x in (tags.get(lang,[]) or tags.get("en",[]))]).lower()
+        return ('<a class="acard appcard" data-txt="%s" href="%s"><div class="acard-img">%s</div>'
                 '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p></div></a>')%(
-            Lx(lang,"/application-notes/%s/"%n["slug"]), im,
-            esc(_nl(n.get("title",{}))), esc(_nl(n.get("subtitle",{}))))
+            esc(txt), Lx(lang,"/application-notes/%s/"%n["slug"]), im, esc(title), esc(sub))
     note_cards="".join(_notecard(n) for n in notes)
     T=HOME_I18N[lang]
     # 1) Label Solutions by environment — the temperature solution landing pages
@@ -1941,13 +1950,29 @@ def build_applications(lang):
         sol_cards)
     # 2) Application Notes (industries now live in the Product nav dropdown, so
     #    the Solutions page carries the environment solutions + the notes only).
+    #    A small search box helps visitors filter the notes as the list grows.
+    search_ic=('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+               'stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/>'
+               '<path d="m21 21-4.3-4.3"/></svg>')
+    search_box=('<div class="ansearch"><span class="ansearch-ic">%s</span>'
+                '<input id="anq" type="search" autocomplete="off" placeholder="%s" '
+                'oninput="etaNoteFilter(this.value)"></div>')%(
+        search_ic, ("搜索应用笔记（行业、产品、关键词）…" if zh else "Search application notes (industry, product, keyword)…"))
+    nohit=('<div class="annohit" id="annohit">%s</div>')%(
+        "未找到匹配的应用笔记" if zh else "No matching application notes.")
+    filter_js=('<script>function etaNoteFilter(q){q=(q||"").trim().toLowerCase();'
+               'var g=document.getElementById("angrid"),n=0;'
+               'g.querySelectorAll(".appcard").forEach(function(c){'
+               'var m=(c.getAttribute("data-txt")||"").indexOf(q)>=0;'
+               'c.style.display=m?"":"none";if(m)n++;});'
+               'var nh=document.getElementById("annohit");if(nh)nh.style.display=n?"none":"block";}</script>')
     body=(sol_section+
           '<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
-          '<div class="appnotesgrid">%s</div></div></section>'
+          '%s<div class="appnotesgrid" id="angrid">%s</div>%s%s</div></section>'
           '<div class="wrap">%s</div>')%(
         ("应用笔记" if zh else "APPLICATION NOTES"),
         ("应用笔记" if zh else "Application Notes"),
-        note_cards, cta2(lang,"applications"))
+        search_box, note_cards, nohit, filter_js, cta2(lang,"applications"))
     # hero without body paragraph, single CTA "Talk to Engineering"
     s=HOME2.get(lang,HOME2["en"])["sections"][1]
     hero=page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
