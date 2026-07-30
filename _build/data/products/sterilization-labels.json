@@ -1,0 +1,204 @@
+{
+  "slug": "sterilization-labels",
+  "source": "client brief — Sterilization Label Solutions",
+  "langs": ["en", "zh"],
+  "banner": "",
+  "eyebrow": {
+    "en": "Solutions",
+    "zh": "解决方案"
+  },
+  "title": {
+    "en": "Sterilization Labeling Solutions",
+    "zh": "灭菌标签解决方案"
+  },
+  "tagline": {
+    "en": "Built for sterilization. Designed for reliable identification.",
+    "zh": "耐受严苛灭菌工艺，保障可靠识别。"
+  },
+  "positioning": {
+    "en": "Engineered for medical devices, pharmaceutical packaging, laboratory samples, and healthcare applications, our Sterilization Label Solutions are designed to withstand demanding sterilization processes while maintaining reliable identification from production to clinical use.",
+    "zh": "ETIA 灭菌标签解决方案专为医疗器械、制药、实验室及医疗健康行业设计，可耐受高温蒸汽、干热、辐照、环氧乙烷及化学灭菌等多种灭菌工艺，在生产、灭菌、仓储及临床使用全过程保持稳定识别。"
+  },
+  "why": {
+    "heading": {
+      "en": "Why Sterilization Labeling?",
+      "zh": "为什么选择灭菌标签？"
+    },
+    "intro": {
+      "en": "Every sterilization process presents unique challenges to label materials. Selecting the right label construction helps maintain secure adhesion, durable print quality, and barcode readability throughout repeated sterilization, storage, transportation, and clinical workflows.",
+      "zh": "不同灭菌工艺会对标签产生不同影响，包括高温、湿热、辐照及化学介质等挑战。针对不同灭菌方式选择合适的标签结构，可持续保持牢固粘接、清晰打印及条码可读性，满足医疗产品全生命周期追溯要求。"
+    },
+    "items": {
+      "en": [
+        "Compatible with multiple sterilization methods",
+        "Reliable adhesion after repeated sterilization cycles",
+        "Durable thermal transfer print and barcode readability",
+        "Designed for medical, laboratory, and pharmaceutical applications",
+        "Supports traceability and regulatory compliance"
+      ],
+      "zh": [
+        "适配多种灭菌工艺",
+        "多次灭菌后依然保持稳定粘接",
+        "条码及热转印打印持久清晰",
+        "面向医疗、实验室及制药行业",
+        "满足产品追溯与法规合规要求"
+      ]
+    }
+  },
+  "scenarios": {
+    "en": [
+      {
+        "icon": "♨️",
+        "temp": "♨️ Steam",
+        "process": "121–135°C · High Heat & Moisture",
+        "title": "Steam Autoclave",
+        "desc": "Steam sterilization combines high temperature, pressure, and moisture, requiring labels that resist heat, humidity, and repeated sterilization cycles.",
+        "apps": [
+          "Surgical Instruments",
+          "Reusable Medical Devices",
+          "Laboratory Equipment",
+          "Stainless Steel Trays"
+        ],
+        "sterilization": "Steam • Autoclave",
+        "products": "Steam Sterilization Labels"
+      },
+      {
+        "icon": "🌡",
+        "temp": "🌡 Dry Heat",
+        "process": "160–180°C · High Temperature",
+        "title": "Dry Heat Sterilization",
+        "desc": "Dry heat sterilization exposes labels to prolonged high temperatures without moisture, demanding excellent heat resistance and long-term print durability.",
+        "apps": [
+          "Laboratory Glassware",
+          "Metal Instruments",
+          "Pharmaceutical Equipment",
+          "Heat-Resistant Containers"
+        ],
+        "sterilization": "Dry Heat Oven",
+        "products": "High Temperature Labels"
+      },
+      {
+        "icon": "☢",
+        "temp": "☢ Gamma",
+        "process": "Ionizing Radiation Sterilization",
+        "title": "Gamma Irradiation",
+        "desc": "Gamma rays sterilize packaged products without heat but can embrittle films, fade print, and weaken adhesives if labels are not radiation resistant.",
+        "apps": [
+          "Disposable Medical Devices",
+          "Sterile Medical Kits",
+          "Pharmaceutical Packaging",
+          "Single-Use Products"
+        ],
+        "sterilization": "Gamma Irradiation",
+        "products": "Gamma Resistant Labels"
+      },
+      {
+        "icon": "💨",
+        "temp": "💨 EtO",
+        "process": "Low-Temperature Gas Sterilization",
+        "title": "Ethylene Oxide (EtO)",
+        "desc": "EtO sterilization is ideal for heat-sensitive medical devices. Labels must remain bonded and readable throughout gas sterilization and aeration cycles.",
+        "apps": [
+          "Catheters",
+          "Endoscopes",
+          "Plastic Medical Devices",
+          "Electronic Medical Equipment"
+        ],
+        "sterilization": "EtO Gas",
+        "products": "EtO Sterilization Labels"
+      },
+      {
+        "icon": "🧪",
+        "temp": "🧪 Chemical",
+        "process": "Surface Disinfection & Chemical Sterilization",
+        "title": "Chemical Sterilants",
+        "desc": "Repeated exposure to disinfectants and sterilizing chemicals requires labels that resist chemical attack while preserving print quality and adhesion.",
+        "apps": [
+          "Clinical Laboratories",
+          "Hospitals",
+          "Cleanrooms",
+          "Pharmaceutical Manufacturing"
+        ],
+        "chemicals": "Bleach • Ethanol • Peracetic Acid • Hydrogen Peroxide",
+        "products": "Chemical Resistant Medical Labels"
+      }
+    ],
+    "zh": [
+      {
+        "icon": "♨️",
+        "temp": "♨️ 高压蒸汽",
+        "process": "121–135°C · 高温湿热",
+        "title": "高压蒸汽灭菌",
+        "desc": "高压蒸汽灭菌结合高温、压力及湿热环境，标签需耐受反复蒸汽灭菌循环。",
+        "apps": [
+          "外科手术器械",
+          "可重复使用医疗器械",
+          "实验室器具",
+          "不锈钢器械托盘"
+        ],
+        "sterilization": "高压蒸汽灭菌（Autoclave）",
+        "products": "高压蒸汽灭菌标签"
+      },
+      {
+        "icon": "🌡",
+        "temp": "🌡 干热",
+        "process": "160–180°C · 高温干热",
+        "title": "干热灭菌",
+        "desc": "适用于持续高温环境，要求标签具有优异耐热性能及长期打印稳定性。",
+        "apps": [
+          "实验室玻璃器皿",
+          "金属器械",
+          "制药设备",
+          "耐高温容器"
+        ],
+        "sterilization": "干热灭菌",
+        "products": "耐高温标签"
+      },
+      {
+        "icon": "☢",
+        "temp": "☢ 伽马辐照",
+        "process": "电离辐射灭菌",
+        "title": "伽马辐照灭菌",
+        "desc": "伽马射线可穿透包装完成灭菌，但普通标签可能出现脆化、褪色或胶粘失效。",
+        "apps": [
+          "一次性医疗器械",
+          "无菌医疗包",
+          "医药包装",
+          "一次性耗材"
+        ],
+        "sterilization": "伽马辐照",
+        "products": "耐辐照标签"
+      },
+      {
+        "icon": "💨",
+        "temp": "💨 环氧乙烷",
+        "process": "低温气体灭菌",
+        "title": "环氧乙烷（EtO）灭菌",
+        "desc": "适用于不耐高温医疗器械，标签需耐受 EtO 灭菌及解析全过程。",
+        "apps": [
+          "导管",
+          "内窥镜",
+          "塑料医疗器械",
+          "医疗电子产品"
+        ],
+        "sterilization": "环氧乙烷（EtO）",
+        "products": "EtO 灭菌标签"
+      },
+      {
+        "icon": "🧪",
+        "temp": "🧪 化学灭菌",
+        "process": "化学灭菌与反复消杀",
+        "title": "化学灭菌与表面消毒",
+        "desc": "适用于长期接触消毒剂及灭菌化学品的医疗环境，保持标签粘接和打印稳定。",
+        "apps": [
+          "临床实验室",
+          "医院",
+          "洁净室",
+          "制药车间"
+        ],
+        "chemicals": "漂白剂 • 乙醇 • 过氧乙酸 • 过氧化氢",
+        "products": "耐化学医疗标签"
+      }
+    ]
+  }
+}
