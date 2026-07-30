@@ -379,6 +379,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 /* explore-by-application: six cards (image top / copy below) */
 .acgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
 .acgrid.acgrid5{grid-template-columns:repeat(5,1fr)}
+.solgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:760px}
+@media(max-width:560px){.solgrid{grid-template-columns:1fr}}
 .freesample{background:linear-gradient(150deg,var(--blue),var(--blue-deep))}
 .fsbox{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
 .fsbox h2{color:#fff;font-size:26px}
@@ -515,8 +517,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 """
 
 NAV_ITEMS = [("Home", "/", "home"),
-             ("Product", u_products(), "products"),
-             ("Industry", "/applications/", "industry"),
+             ("Product", "/applications/", "products"),
              ("Application", "/applications/", "applications"),
              ("Insight", "/insights/", "insights"),
              ("Service", "/service/", "service")]
@@ -677,10 +678,7 @@ def nav_html(lang, active, path="/", langs=None):
     linkfn = lambda p: Lx(lang, p)
     for t, href, key in NAV_ITEMS:
         if key == "products":
-            # Product = the environment axis (Heat Resistant / Low Temperature Resistant)
-            items += simple_dropdown(lang, t, href, PROD_AXES[0][3], key == active, linkfn)
-        elif key == "industry":
-            # Industry = the sector list (PCB, Automotive, Wire & Cable, …)
+            # Product dropdown lists the industry sectors directly (one level).
             items += simple_dropdown(lang, t, href, PROD_AXES[1][3], key == active, linkfn)
         else:
             items += '<a href="%s"%s>%s</a>' % (Lx(lang, href), ' class="on"' if key==active else '', navlab(lang, t))
@@ -1290,19 +1288,18 @@ def home_switcher(active):
 
 def home_nav(lang):
     lf=lambda p: home_hlink(lang,p)
-    # Product + Industry are two top-level single-level dropdowns (matches nav_html).
-    prod=simple_dropdown(lang, "Product", "/products/", PROD_AXES[0][3], False, lf)
-    ind =simple_dropdown(lang, "Industry", "/applications/", PROD_AXES[1][3], False, lf)
+    # Product dropdown lists the industry sectors directly (matches nav_html).
+    prod=simple_dropdown(lang, "Product", "/applications/", PROD_AXES[1][3], False, lf)
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
-    # top nav after Product/Industry: Application, Insight, Service
+    # top nav after Product: Application, Insight, Service
     app_lbl={"en":"Application","zh":"应用","vi":"Ứng dụng","th":"การใช้งาน"}.get(lang,"Application")
     ins_lbl={"en":"Insight","zh":"洞察","vi":"Kiến thức","th":"ความรู้"}.get(lang,"Insight")
     sv_lbl={"en":"Service","zh":"服务","vi":"Dịch vụ","th":"บริการ"}.get(lang,"Service")
     links=('<a href="%s">%s</a><a href="%s">%s</a><a href="%s">%s</a>'%(
         lf("/applications/"),esc(app_lbl),lf("/insights/"),esc(ins_lbl),lf("/service/"),esc(sv_lbl)))
-    return '<nav><div class="navlinks">%s%s%s%s</div>%s%s</nav>' % (
-        home_link, prod, ind, links, home_switcher(lang), NAV_TOGGLE)
+    return '<nav><div class="navlinks">%s%s%s</div>%s%s</nav>' % (
+        home_link, prod, links, home_switcher(lang), NAV_TOGGLE)
 
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
@@ -1914,9 +1911,36 @@ def build_applications(lang):
             Lx(lang,"/application-notes/%s/"%n["slug"]), im,
             esc(_nl(n.get("title",{}))), esc(_nl(n.get("subtitle",{}))))
     note_cards="".join(_notecard(n) for n in notes)
-    # Browse-by-Industry grid — same image cards as the home page "Solutions by
-    # Industry" section, linking to each industry sector page.
     T=HOME_I18N[lang]
+    # 1) Label Solutions by environment — the temperature solution landing pages
+    #    (Heat Resistant / Low Temperature Resistant, room for more as they launch).
+    SOL_DESC={
+      "/products/item/high-heat-identification/":
+        {"en":"High-temperature identification that stays legible and firmly bonded through demanding thermal processing.",
+         "zh":"面向高温工艺的标识方案 —— 高温下依旧清晰可读、牢固贴附"},
+      "/products/item/cold-chain-cryogenic-labels/":
+        {"en":"Cold-chain and cryogenic labels for storage down to −196°C and repeated freeze-thaw.",
+         "zh":"冷链与超低温标签 —— 适用于低至 −196°C 存储与反复冻融"},
+    }
+    SOL_ICON=[1,2]  # flame-ish / droplet from INDUSTRY_ICONS — decorative
+    sol_cards=""
+    for i,(e,z,u) in enumerate(PROD_AXES[0][3]):
+        nm=z if zh else e
+        ds=SOL_DESC.get(u,{}).get("zh" if zh else "en","")
+        sol_cards+=('<a class="acard" href="%s"><div class="acard-img g%d"><span class="aicon">%s</span></div>'
+                    '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p>'
+                    '<div class="acard-go">%s →</div></div></a>')%(
+            Lx(lang,u), i%6, INDUSTRY_ICONS[SOL_ICON[i%len(SOL_ICON)]%len(INDUSTRY_ICONS)],
+            esc(nm), esc(ds), esc(T["explore"]))
+    sol_section=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
+                 '<div class="solgrid">%s</div></div></section>')%(
+        ("标签方案" if zh else "LABEL SOLUTIONS"),
+        ("按环境选择方案" if zh else "Label Solutions by Environment"),
+        ("从高温到超低温 —— 按使用环境选择合适的标签方案。" if zh
+         else "From high heat to deep cryogenic — choose a label solution by operating environment."),
+        sol_cards)
+    # 2) Browse-by-Industry grid — same image cards as the home "Solutions by
+    #    Industry" section, linking to each industry sector page.
     ind_cards=""
     for k,f in enumerate(T["focus"]):
         top=('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">'%(esc(f["img"]),esc(f["name"]))) if f.get("img") \
@@ -1933,7 +1957,8 @@ def build_applications(lang):
         ("按行业浏览" if zh else "Browse by Industry"),
         ("按行业查看典型标识场景与推荐材料。" if zh else "See typical identification scenarios and recommended materials for each industry."),
         ind_cards)
-    body=(ind_section+
+    # 3) Application Notes
+    body=(sol_section+ind_section+
           '<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
           '<div class="appnotesgrid">%s</div></div></section>'
           '<div class="wrap">%s</div>')%(
