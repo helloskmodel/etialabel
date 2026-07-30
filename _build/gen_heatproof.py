@@ -2015,16 +2015,25 @@ def build_applications(lang):
         {"en":"Labels that survive steam, dry heat, gamma, EtO and chemical sterilization while staying readable.",
          "zh":"耐蒸汽、干热、伽马、环氧乙烷及化学灭菌 —— 全周期清晰可读"},
     }
-    SOL_ICON=[1,2,0,3]  # flame / droplet / chip / … from INDUSTRY_ICONS — decorative
+    SOL_ICON=[1,2,0,3]  # flame / droplet / chip / … from INDUSTRY_ICONS — fallback only
+    _COS="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/"
+    SOL_IMG={
+      "/products/item/high-heat-identification/":     _COS+"enviroment-heat",
+      "/products/item/cold-chain-cryogenic-labels/":  _COS+"enviroment-cold",
+      "/products/item/chemical-resistant-labels/":    _COS+"enviroment-chemical",
+      "/products/item/sterilization-labels/":         _COS+"enviroment-sterlization",
+    }
     sol_cards=""
     for i,(e,z,u) in enumerate(PROD_AXES[0][3]):
         nm=z if zh else e
         ds=SOL_DESC.get(u,{}).get("zh" if zh else "en","")
-        sol_cards+=('<a class="acard" href="%s"><div class="acard-img g%d"><span class="aicon">%s</span></div>'
+        img=SOL_IMG.get(u,"")
+        top=('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">'%(esc(img),esc(nm))) if img \
+            else ('<span class="aicon">%s</span>'%INDUSTRY_ICONS[SOL_ICON[i%len(SOL_ICON)]%len(INDUSTRY_ICONS)])
+        sol_cards+=('<a class="acard" href="%s"><div class="acard-img g%d">%s</div>'
                     '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p>'
                     '<div class="acard-go">%s →</div></div></a>')%(
-            Lx(lang,u), i%6, INDUSTRY_ICONS[SOL_ICON[i%len(SOL_ICON)]%len(INDUSTRY_ICONS)],
-            esc(nm), esc(ds), esc(T["explore"]))
+            Lx(lang,u), i%6, top, esc(nm), esc(ds), esc(T["explore"]))
     sol_section=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
                  '<div class="solgrid">%s</div></div></section>')%(
         ("标签方案" if zh else "LABEL SOLUTIONS"),
@@ -2050,7 +2059,8 @@ def build_applications(lang):
                'var m=(c.getAttribute("data-txt")||"").indexOf(q)>=0;'
                'c.style.display=m?"":"none";if(m)n++;});'
                'var nh=document.getElementById("annohit");if(nh)nh.style.display=n?"none":"block";}</script>')
-    body=(sol_section+
+    # NB: keep sol_section OUT of this %-format — its image URLs contain %20.
+    body=sol_section+(
           '<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
           '%s<div class="appnotesgrid" id="angrid">%s</div>%s%s</div></section>'
           '<div class="wrap">%s</div>')%(
