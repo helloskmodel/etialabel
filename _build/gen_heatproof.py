@@ -379,7 +379,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 /* explore-by-application: six cards (image top / copy below) */
 .acgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
 .acgrid.acgrid5{grid-template-columns:repeat(5,1fr)}
-.solgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:1000px}
+.solgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:900px){.solgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.solgrid{grid-template-columns:1fr}}
 .freesample{background:linear-gradient(150deg,var(--blue),var(--blue-deep))}
 .fsbox{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}

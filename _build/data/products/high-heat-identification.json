@@ -81,8 +81,13 @@
         "temp": "260–330°C",
         "process": "SMT Assembly",
         "title": "PCB Reflow Soldering",
-        "desc": "Designed for multiple lead-free reflow cycles while maintaining reliable adhesion, barcode readability, and PCB traceability.",
+        "desc": "Designed for multiple lead-free reflow cycles while maintaining reliable adhesion, barcode readability, and PCB traceability. At this range, coated polyimide (PI) film is the industry-standard facestock.",
         "apps": "PCB manufacturing • SMT assembly • Electronic components • PCBA traceability",
+        "products_list": [
+          {"name": "DuPont™ Kapton®", "material": "Polyimide (PI) film"},
+          {"name": "UBE Upilex®", "material": "Polyimide (PI) film"},
+          {"name": "Kaneka Apical®", "material": "Polyimide (PI) film"}
+        ],
         "lo": 260,
         "hi": 330
       },
@@ -137,8 +142,13 @@
         "temp": "260–330°C",
         "process": "SMT 制程",
         "title": "PCB 回流焊",
-        "desc": "适用于多次无铅回流焊工艺，保持稳定粘接、条码清晰及产品追溯。",
+        "desc": "适用于多次无铅回流焊工艺，保持稳定粘接、条码清晰及产品追溯。在该温区，涂布型聚酰亚胺（PI）薄膜是行业标准面材。",
         "apps": "PCB 制造 • SMT 贴装 • 电子元器件 • PCBA 追溯",
+        "products_list": [
+          {"name": "杜邦 Kapton®", "material": "聚酰亚胺（PI）薄膜"},
+          {"name": "宇部 Upilex®", "material": "聚酰亚胺（PI）薄膜"},
+          {"name": "钟渊 Apical®", "material": "聚酰亚胺（PI）薄膜"}
+        ],
         "lo": 260,
         "hi": 330
       },
