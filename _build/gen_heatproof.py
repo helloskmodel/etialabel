@@ -397,7 +397,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .acard-img{position:relative;aspect-ratio:16/11;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .acard-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .35s}
 .acard:hover .acard-img img{transform:scale(1.06)}
-#svccar .acard-img{background:#eef3fc;aspect-ratio:1/1}
+#svccar>.acard{flex:0 0 230px}
+#svccar .acard-img{background:#eef3fc;aspect-ratio:16/10}
 #svccar .acard-img img{object-fit:cover}
 .appcard .acard-img{background:#eef3fc;aspect-ratio:16/10}
 .appcard .acard-body p{font-size:14px;color:var(--mut);line-height:1.55;margin-top:6px}
@@ -1528,7 +1529,7 @@ def build_home(lang):
             esc(pr["name"]), esc(pr["model"]), pcode_html,
             esc(T.get("prod_cta","Talk to a Specialist") if not slug else ("查看产品" if lang=="zh" else "View Product")))
     prod_viewall={"en":"View All Products","zh":"查看全部产品","vi":"Xem tất cả sản phẩm","th":"ดูสินค้าทั้งหมด"}.get(lang,"View All Products")
-    prod_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
+    prod_section=('<section class="blk" style="background:var(--bg)"><div class="wrap">'
                   '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
                   '<div class="acgrid acgrid5">%s</div></div></section>')%(
         esc(T.get("prod_eyebrow","")),esc(T.get("prod_title","")),esc(T.get("prod_sub","")),pcards) if pcards else ""
@@ -1561,7 +1562,7 @@ def build_home(lang):
     h=G["hero"]
     hero_banner=home_banner(lang, HOME_BG[0], h["eyebrow"], h["h1"], h["line"], "",
                             h["b1"], "/applications/", h["b2"], "/contact/")
-    why_section=('<section class="blk" style="background:var(--tint-green)"><div class="wrap">'
+    why_section=('<section class="blk" style="background:var(--bg)"><div class="wrap">'
                  '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
                  '<div class="whygrid">%s</div>%s</div></section>')%(
         esc(T["why_eyebrow"]),esc(T["why_head"]),esc(T["why_intro"]),why_html,why_close)
