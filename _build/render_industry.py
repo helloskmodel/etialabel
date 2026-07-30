@@ -88,7 +88,8 @@ CSS = """
 .wccatcard .wccatintro{margin:0;text-align:left;font-size:15px;line-height:1.62;color:#2c3a58}
 /* fixed-size cards, centered — a single product stays one card, never stretches */
 #wcpanel .wcmcards{max-width:760px;grid-template-columns:repeat(auto-fill,240px);justify-content:center}
-#wcpanel .wcmcards.wcone{grid-template-columns:240px;justify-content:center;max-width:760px}
+#wcpanel .wcmcards.wcone{grid-template-columns:300px;justify-content:center;max-width:760px}
+#wcpanel .wcmcards.wcone .wcmcard{max-width:300px}
 @media(max-width:760px){.wc2col{grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}.wc2col .wccatimg{height:120px}.wccatcard{padding:12px 13px}.wccatcard .wccatintro{font-size:12.5px;line-height:1.48}#wcpanel .wcmcards,#wcpanel .wcmcards.wcone{grid-template-columns:1fr}}
 .wccatintro{color:#2c3a58;font-size:16px;line-height:1.7;margin:8px auto 20px}
 .wcmcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
@@ -164,7 +165,8 @@ function render(a){
   if(SUBNAV){ if(subrow) subrow.style.display='flex'; renderSub(a,0); return; }
   if(subrow){ subrow.style.display='none'; }
   var c=CATS[a];
-  panel.innerHTML=topRow(c)+'<div class="wcmcards">'+c.prods.map(function(p){return card(p,false);}).join('')+'</div>';
+  var one=c.prods.length===1?' wcone':'';
+  panel.innerHTML=topRow(c)+'<div class="wcmcards'+one+'">'+c.prods.map(function(p){return card(p,false);}).join('')+'</div>';
 }
 window.wcScroll=function(d){document.getElementById('wctabs').scrollBy({left:d*180,behavior:'smooth'});};
 window.wcSubScroll=function(d){document.getElementById('wcsub').scrollBy({left:d*200,behavior:'smooth'});};
