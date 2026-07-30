@@ -6,6 +6,7 @@
     "zh"
   ],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-196C",
+  "banner_pos": "center bottom",
   "eyebrow": {
     "en": "Solutions",
     "zh": "解决方案"
