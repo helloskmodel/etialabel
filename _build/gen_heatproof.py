@@ -1894,12 +1894,16 @@ def build_service(lang):
         fields, phones)
     body=commit_sec+form_sec+('<div class="wrap">%s</div>'%cta2(lang,"service"))+tabscript
     crumb=[("Home","/"),("Service","/service/")]
+    # hero without the body paragraph and with a single CTA (matches the other pages)
+    sh=HOME2.get(lang,HOME2["en"])["sections"][3]
+    hero=page_hero(lang, sh["eyebrow"], sh["h2"], sh["sub"], "",
+                   sh["b1"], sh["b1u"], "", "", SECTION_BG.get(3,""))
     write(lang,"/service/",page(lang,"/service/",
         ("服务 | ETIA" if zh else "Service | ETIA"),
         ("100% 质量检测、应用驱动选型、柔性供应与快速响应服务 —— ETIA 服务承诺。" if zh
          else "100% quality inspection, application-driven selection, flexible supply and responsive support — the ETIA service commitment."),
         ("服务" if zh else "Service"), "",
-        body, crumb, active="service", trust=False, hero=section_hero(lang, 3)))
+        body, crumb, active="service", trust=False, hero=hero))
     if lang=="en": track("/service/","core")
 
 def build_applications(lang):
