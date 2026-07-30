@@ -387,39 +387,39 @@
     "Chúng tôi cung cấp thử nghiệm, kiểm tra, xẻ cuộn, bế và gia công theo từng ứng dụng."
    ]
   ],
-  "appc_eyebrow": "LABELING SOLUTIONS BY INDUSTRY",
-  "appc_title": "Labeling Solutions by Industry",
-  "appc_sub": "Pick your industry to see recommended labeling solutions, challenges and applications.",
+  "appc_eyebrow": "GIẢI PHÁP NHÃN THEO NGÀNH",
+  "appc_title": "Giải pháp nhãn theo ngành",
+  "appc_sub": "Chọn ngành của bạn để xem các giải pháp nhãn, thách thức và ứng dụng được đề xuất.",
   "appc_viewall": "View All Industries",
   "focus": [
    {
-    "name": "Automotive",
-    "desc": "Vehicle, tire, battery and component identification across the lifecycle.",
+    "name": "Ô tô",
+    "desc": "Nhận diện xe, lốp, pin và linh kiện xuyên suốt vòng đời.",
     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER"
    },
    {
     "name": "PCB",
-    "desc": "Reflow-, wash- and ESD-safe identification through electronics manufacturing.",
+    "desc": "Nhận diện chịu reflow, rửa và an toàn ESD trong sản xuất điện tử.",
     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg"
    },
    {
-    "name": "Medical & Pharmaceutical",
-    "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
+    "name": "Y tế & Dược phẩm",
+    "desc": "Nhận diện thiết bị, chẩn đoán và phòng thí nghiệm qua tiệt trùng và bảo quản lạnh.",
     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-BANNER"
    },
    {
-    "name": "Wire & Cable",
-    "desc": "Durable marking for wire, cable and harness assemblies.",
+    "name": "Dây & Cáp",
+    "desc": "Đánh dấu bền cho dây, cáp và cụm bó dây.",
     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER"
    },
    {
-    "name": "Outdoor & Energy",
-    "desc": "Weatherable identification that survives years outdoors.",
+    "name": "Ngoài trời & Năng lượng",
+    "desc": "Nhận diện chịu thời tiết, bền nhiều năm ngoài trời.",
     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER"
    },
    {
-    "name": "Steel & Ceramic",
-    "desc": "High-temperature and storage-tough identification for metal processing.",
+    "name": "Thép & Gốm sứ",
+    "desc": "Nhận diện chịu nhiệt độ cao và bền khi lưu kho cho gia công kim loại.",
     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER"
    }
   ],
@@ -551,39 +551,39 @@
     "เราให้บริการทดสอบ ตรวจสอบ กรีด ปั๊มขึ้นรูป และแปรรูปตามการใช้งาน"
    ]
   ],
-  "appc_eyebrow": "LABELING SOLUTIONS BY INDUSTRY",
-  "appc_title": "Labeling Solutions by Industry",
-  "appc_sub": "Pick your industry to see recommended labeling solutions, challenges and applications.",
+  "appc_eyebrow": "โซลูชันฉลากตามอุตสาหกรรม",
+  "appc_title": "โซลูชันฉลากตามอุตสาหกรรม",
+  "appc_sub": "เลือกอุตสาหกรรมของคุณเพื่อดูโซลูชันฉลาก ความท้าทาย และการใช้งานที่แนะนำ",
   "appc_viewall": "View All Industries",
   "focus": [
    {
-    "name": "Automotive",
-    "desc": "Vehicle, tire, battery and component identification across the lifecycle.",
+    "name": "ยานยนต์",
+    "desc": "การระบุยานพาหนะ ยาง แบตเตอรี่ และชิ้นส่วนตลอดวงจรชีวิต",
     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER"
    },
    {
     "name": "PCB",
-    "desc": "Reflow-, wash- and ESD-safe identification through electronics manufacturing.",
+    "desc": "การระบุที่ทนรีโฟลว์ การล้าง และปลอดภัยจาก ESD ในการผลิตอิเล็กทรอนิกส์",
     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg"
    },
    {
-    "name": "Medical & Pharmaceutical",
-    "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
+    "name": "การแพทย์และเภสัชกรรม",
+    "desc": "การระบุอุปกรณ์ การวินิจฉัย และห้องปฏิบัติการผ่านการฆ่าเชื้อและการเก็บรักษาแบบเย็น",
     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-BANNER"
    },
    {
-    "name": "Wire & Cable",
-    "desc": "Durable marking for wire, cable and harness assemblies.",
+    "name": "สายไฟและสายเคเบิล",
+    "desc": "การทำเครื่องหมายที่ทนทานสำหรับสายไฟ สายเคเบิล และชุดสายไฟ",
     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER"
    },
    {
-    "name": "Outdoor & Energy",
-    "desc": "Weatherable identification that survives years outdoors.",
+    "name": "กลางแจ้งและพลังงาน",
+    "desc": "การระบุที่ทนสภาพอากาศ อยู่ได้หลายปีกลางแจ้ง",
     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER"
    },
    {
-    "name": "Steel & Ceramic",
-    "desc": "High-temperature and storage-tough identification for metal processing.",
+    "name": "เหล็กและเซรามิก",
+    "desc": "การระบุที่ทนอุณหภูมิสูงและทนการจัดเก็บสำหรับการแปรรูปโลหะ",
     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER"
    }
   ],
