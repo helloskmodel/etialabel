@@ -277,7 +277,7 @@ PRODUCT_INDUSTRY = {
     "apex": "pcb", "e-series": "pcb", "xf58": "pcb", "xf-603": "pcb",
     "e-2712": "pcb", "e-2913": "pcb",
     # automotive
-    "e-2512bl": "auto", "e-2813": "auto",
+    "e-2512bl": "auto", "e-2813": "auto", "e-2814": "auto",
     # wire & cable
     "e-6033": "cable", "e-6034": "cable", "e-3635": "cable",
     # steel / high-temp HP series
