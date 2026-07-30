@@ -197,6 +197,19 @@ section.blk{padding:42px 0}
 .bcard .bct p{font-size:13px;color:#e6eefc;line-height:1.45}
 .bcard .barr{font-size:26px;color:#fff;flex:none;line-height:1}
 @media(max-width:700px){.brochures{grid-template-columns:1fr}}
+/* regional contact cards (Service page) */
+.gcont{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+@media(max-width:760px){.gcont{grid-template-columns:1fr}}
+.gcard{border:1px solid var(--line);border-radius:16px;padding:24px 26px;background:#fff}
+.gc-region{font-size:18px;font-weight:800;color:var(--blue-deep);margin-bottom:12px}
+.gc-name{font-weight:700;color:var(--ink);margin-bottom:6px}
+.gc-role{font-weight:600;color:var(--mut);font-size:14px}
+.gc-line{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--mut);line-height:1.55;margin-top:11px}
+.gc-line svg{width:16px;height:16px;flex:none;margin-top:2px;color:var(--faint)}
+a.gc-line{color:var(--green-d);font-weight:600;text-decoration:none}
+a.gc-line:hover{text-decoration:underline}
+a.gc-line svg{color:var(--green-d)}
+.gc-note{color:var(--faint);font-size:13.5px;margin-top:22px}
 /* service contact form + phones */
 .ctwo{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:start;margin-top:10px}
 .cform{display:flex;flex-direction:column;gap:12px}
@@ -1812,6 +1825,25 @@ SERVICE_OFFICES=[
   ("Bangkok","曼谷","+66 811 746 947"),
   ("Bac Ninh","北宁","+84 344 590 091"),
 ]
+# Regional contact cards for the Service page ("Contact your regional ETIA team").
+# addr = [native line, english line] (native omitted for HK). role = (en, zh).
+SERVICE_REGIONS=[
+  {"region":("China · Shanghai","中国 · 上海"),"name":"Mark Tang","role":("",""),
+   "addr":["上海市普陀区中江路 388 弄国盛中心 2 号楼 1903 室",
+           "Rm. 1903, 2# Building, Guoson Centre, No. 388 Zhongjiang Rd, Putuo District, Shanghai, China"],
+   "phone":"400 990 8448 · +86-21-6432-7144 转 106","email":"Omnicure@etia-tech.com"},
+  {"region":("China · Hong Kong","中国 · 香港"),"name":"Mark Tang","role":("",""),
+   "addr":["Room 1003, 10/F, Tower 1, Lippo Centre, 89 Queensway, Admiralty, Hong Kong"],
+   "phone":"+86 151 2119 7091","email":"Omnicure@etia-tech.com"},
+  {"region":("Thailand · Bangkok","泰国 · 曼谷"),"name":"Mr. Sompoch Ratchakom (Job)","role":("Sales Director","销售总监"),
+   "addr":["22/41 เอช-เคป บิซ เซ็นเตอร์ ถนนสุขาภิบาล 2 แขวงประเวศ เขตประเวศ กรุงเทพฯ 10250",
+           "22/41 H-Cape Biz Center, Sukhaphiban 2 Road, Prawet Subdistrict, Prawet District, Bangkok 10250, Thailand"],
+   "phone":"+66 811 746 947","email":"omnicure.th@gmail.com"},
+  {"region":("Vietnam · Bac Ninh","越南 · 北宁"),"name":"Tien Nguyen","role":("Technical Engineer","技术工程师"),
+   "addr":["Số 10 đường Thanh Niên, Khu 5, Phường Võ Cường, Tỉnh Bắc Ninh, Việt Nam",
+           "No. 10 Thanh Nien Street, Area 5, Vo Cuong Ward, Bac Ninh Province, Viet Nam"],
+   "phone":"+84 344 590 091","email":"omnicure.vn@gmail.com"},
+]
 # 4 service images (one per commitment) on COS. quote() matches COS folder encoding.
 import urllib.parse as _up
 _SVC_B="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/"+_up.quote("C・Service 服务图 4 组")+"/"
@@ -1885,7 +1917,35 @@ def build_service(lang):
         ("请描述您的应用：表面、温度、化学环境、打印方式与标签尺寸" if zh
          else "Describe your application: surface, temperature, chemistry, print method and label size"),
         ("提交" if zh else "Send Enquiry"))
-    phones="".join('<div class="cph"><b>%s</b><span>%s</span></div>'%(esc(z if zh else e),esc(c)) for e,z,c in SERVICE_OFFICES)
+    # --- Global regional contact cards ---
+    IC_PIN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.686-6-10a6 6 0 1 1 12 0c0 4.314-6 10-6 10z"/><circle cx="12" cy="11" r="2.4"/></svg>'
+    IC_TEL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a13 13 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .56 3.5 1 1 0 0 1-.24 1z"/></svg>'
+    IC_MAIL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>'
+    def gcard(r):
+        role_en, role_zh = r["role"]
+        role = role_zh if zh else role_en
+        role_html = (' <span class="gc-role">· %s</span>' % esc(role)) if role else ""
+        addr_html = "<br>".join(esc(a) for a in r["addr"])
+        return ('<div class="gcard"><div class="gc-region">%s</div>'
+                '<div class="gc-name">%s%s</div>'
+                '<div class="gc-line">%s<div>%s</div></div>'
+                '<div class="gc-line">%s<div>%s</div></div>'
+                '<a class="gc-line" href="mailto:%s">%s<div>%s</div></a></div>') % (
+            esc(r["region"][1] if zh else r["region"][0]), esc(r["name"]), role_html,
+            IC_PIN, addr_html, IC_TEL, esc(r["phone"]), esc(r["email"]), IC_MAIL, esc(r["email"]))
+    global_sec=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
+                '<div class="gcont">%s</div><p class="gc-note">%s</p></div></section>')%(
+        ("全球联系" if zh else "GLOBAL CONTACT"),
+        ("联系您所在地区的 ETIA 团队" if zh else "Contact Your Regional ETIA Team"),
+        "".join(gcard(r) for r in SERVICE_REGIONS),
+        ("* 通过邮件联系我们可获得快速响应 —— 我们的团队通常在 1 个工作日内回复" if zh
+         else "* Email us for a fast response — our team usually replies within one business day."))
+    # form's side column: a short email note (regional phones now live in the cards above)
+    phones=('<div class="cph"><b>%s</b><span><a class="email" href="mailto:label@etia-tech.com">label@etia-tech.com</a></span></div>'
+            '<div class="cph"><b>%s</b><span>%s</span></div>')%(
+        ("邮箱" if zh else "Email"),
+        ("响应时间" if zh else "Response time"),
+        ("我们通常在 1 个工作日内回复" if zh else "We usually reply within one business day"))
     form_sec=('<section class="blk" style="background:var(--tint-blue)"><div class="wrap">'
               '<h2>%s</h2><div class="sub">%s</div>'
               '<div class="ctwo"><form class="cform" onsubmit="return etaMail(this)">%s</form>'
@@ -1894,7 +1954,7 @@ def build_service(lang):
         ("留下电话与应用需求，我们尽快回复并安排样品。" if zh
          else "Leave your phone and application — we'll reply quickly and arrange samples."),
         fields, phones)
-    body=commit_sec+form_sec+('<div class="wrap">%s</div>'%cta2(lang,"service"))+tabscript
+    body=commit_sec+global_sec+form_sec+('<div class="wrap">%s</div>'%cta2(lang,"service"))+tabscript
     crumb=[("Home","/"),("Service","/service/")]
     # hero = Headline + Slogan only (no eyebrow, no body paragraph, no buttons)
     sh=HOME2.get(lang,HOME2["en"])["sections"][3]
