@@ -528,9 +528,9 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .hero h1{font-size:30px}.svcbar .wrap{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}
 .split{grid-template-columns:1fr;gap:22px}.split .imgframe{order:-1}.split .txt h2{font-size:25px}
 .acgrid{grid-template-columns:1fr 1fr;gap:10px}
-.acgrid.acgrid5{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:12px;padding:2px 2px 10px}
-.acgrid.acgrid5::-webkit-scrollbar{display:none}
-.acgrid.acgrid5 .acard{flex:0 0 46%;scroll-snap-align:start}
+.acgrid.acgrid5,.acgrid.acgrid6{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:12px;padding:2px 2px 10px}
+.acgrid.acgrid5::-webkit-scrollbar,.acgrid.acgrid6::-webkit-scrollbar{display:none}
+.acgrid.acgrid5 .acard,.acgrid.acgrid6 .acard{flex:0 0 46%;scroll-snap-align:start}
 .trustbar .wrap{grid-template-columns:1fr 1fr;gap:10px}
 .scgrid{grid-template-columns:1fr 1fr;gap:16px}
 .fsbox{grid-template-columns:1fr;gap:20px}
@@ -1548,7 +1548,7 @@ def build_home(lang):
     prod_viewall={"en":"View All Products","zh":"查看全部产品","vi":"Xem tất cả sản phẩm","th":"ดูสินค้าทั้งหมด"}.get(lang,"View All Products")
     prod_section=('<section class="blk" style="background:var(--bg)"><div class="wrap">'
                   '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
-                  '<div class="acgrid acgrid5">%s</div></div></section>')%(
+                  '<div class="acgrid acgrid6">%s</div></div></section>')%(
         esc(T.get("prod_eyebrow","")),esc(T.get("prod_title","")),esc(T.get("prod_sub","")),pcards) if pcards else ""
     # Free Sample — lead capture (email / phone / address) -> mailto
     fs_section=('<section class="blk freesample"><div class="wrap"><div class="fsbox">'

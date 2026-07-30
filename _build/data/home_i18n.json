@@ -1,656 +1,684 @@
 {
-  "langs": [
-    "en",
-    "zh",
-    "vi",
-    "th"
+ "langs": [
+  "en",
+  "zh",
+  "vi",
+  "th"
+ ],
+ "prefix": {
+  "en": "",
+  "zh": "/cn",
+  "vi": "/vn",
+  "th": "/th"
+ },
+ "lang_name": {
+  "en": "EN",
+  "zh": "CN",
+  "vi": "VN",
+  "th": "TH"
+ },
+ "focus_urls": [
+  "/industries/automotive-labeling-solutions/",
+  "/industries/pcb-electronics-labeling-solutions/",
+  "/industries/medical-pharmaceutical-labeling-solutions/",
+  "/industries/wire-cable-labeling-solutions/",
+  "/industries/outdoor-energy-labeling-solutions/",
+  "/industries/steel-metal-ceramic-labeling-solutions/"
+ ],
+ "en": {
+  "nav": [
+   "Products",
+   "Industries",
+   "Application Notes",
+   "Service"
   ],
-  "prefix": {
-    "en": "",
-    "zh": "/cn",
-    "vi": "/vn",
-    "th": "/th"
-  },
-  "lang_name": {
-    "en": "EN",
-    "zh": "CN",
-    "vi": "VN",
-    "th": "TH"
-  },
-  "focus_urls": [
-    "/industries/automotive-labeling-solutions/",
-    "/industries/pcb-electronics-labeling-solutions/",
-    "/industries/medical-pharmaceutical-labeling-solutions/",
-    "/industries/wire-cable-labeling-solutions/",
-    "/industries/outdoor-energy-labeling-solutions/",
-    "/industries/steel-metal-ceramic-labeling-solutions/"
+  "hero_eyebrow": "DURABLE IDENTIFICATION · SPECIALTY LABEL MATERIALS",
+  "hero_h1": "Where Materials Meet Applications.",
+  "hero_line": "Every demanding application starts with the right material.",
+  "hero_para": "For over 20 years, ETIA has helped manufacturers solve complex identification challenges through specialty materials, application expertise, and flexible supply.",
+  "hero_b1": "Explore Applications",
+  "hero_b2": "Request Samples",
+  "why_eyebrow": "WHY ETIA",
+  "why_head": "Built Around Your Application.",
+  "why_intro": "",
+  "why": [
+   [
+    "We Understand the Application",
+    "We evaluate the process, environment, and performance requirements before recommending a material."
+   ],
+   [
+    "We Know Specialty Materials",
+    "We combine deep material expertise with a global portfolio of high-performance label materials."
+   ],
+   [
+    "We Supply with Flexibility",
+    "We support multiple materials, varied specifications, small batches, and dependable repeat supply."
+   ],
+   [
+    "We Customize a Solution",
+    "We provide testing, inspection, slitting, die-cutting, and converting tailored to the application."
+   ]
   ],
-  "en": {
-    "nav": [
-      "Products",
-      "Industries",
-      "Application Notes",
-      "Service"
-    ],
-    "hero_eyebrow": "DURABLE IDENTIFICATION · SPECIALTY LABEL MATERIALS",
-    "hero_h1": "Where Materials Meet Applications.",
-    "hero_line": "Every demanding application starts with the right material.",
-    "hero_para": "For over 20 years, ETIA has helped manufacturers solve complex identification challenges through specialty materials, application expertise, and flexible supply.",
-    "hero_b1": "Explore Applications",
-    "hero_b2": "Request Samples",
-    "why_eyebrow": "WHY ETIA",
-    "why_head": "Built Around Your Application.",
-    "why_intro": "",
-    "why": [
-      [
-        "We Understand the Application",
-        "We evaluate the process, environment, and performance requirements before recommending a material."
-      ],
-      [
-        "We Know Specialty Materials",
-        "We combine deep material expertise with a global portfolio of high-performance label materials."
-      ],
-      [
-        "We Supply with Flexibility",
-        "We support multiple materials, varied specifications, small batches, and dependable repeat supply."
-      ],
-      [
-        "We Customize a Solution",
-        "We provide testing, inspection, slitting, die-cutting, and converting tailored to the application."
-      ]
-    ],
-    "appc_eyebrow": "LABELING SOLUTIONS BY INDUSTRY",
-    "appc_title": "Labeling Solutions by Industry",
-    "appc_sub": "Pick your industry to see recommended labeling solutions, challenges and applications.",
-    "appc_viewall": "View All Industries",
-    "focus": [
-      {
-        "name": "Automotive",
-        "desc": "Vehicle, tire, battery and component identification across the lifecycle.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER"
-      },
-      {
-        "name": "PCB",
-        "desc": "Reflow-, wash- and ESD-safe identification through electronics manufacturing.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg"
-      },
-      {
-        "name": "Medical & Pharmaceutical",
-        "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-BANNER"
-      },
-      {
-        "name": "Wire & Cable",
-        "desc": "Durable marking for wire, cable and harness assemblies.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER"
-      },
-      {
-        "name": "Outdoor & Energy",
-        "desc": "Weatherable identification that survives years outdoors.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER"
-      },
-      {
-        "name": "Steel & Ceramic",
-        "desc": "High-temperature and storage-tough identification for metal processing.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER"
-      }
-    ],
-    "explore": "View Application",
-    "fcta_title": "Need a Helping Hand?",
-    "fcta_para": "We can label for you. Tell us your surface, process, environment and identification requirements — we'll match the material and arrange samples.",
-    "fcta_b1": "Talk to a Label Specialist",
-    "fcta_b2": "Request Samples",
-    "footer_heads": [
-      "Navigation",
-      "Legal",
-      "Contact"
-    ],
-    "meta_title": "ETIA Label — Specialty & Ultra-High-Temperature Industrial Labels",
-    "meta_desc": "Durable, specialty label materials matched to your application — from cryogenic and high-heat to chemical, tamper-evident and PCB identification.",
-    "svc": [
-      {
-        "title": "100% Quality Inspection",
-        "desc": "Every batch tested. Every shipment verified.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/QUALITY"
-      },
-      {
-        "title": "Application-Driven Solutions",
-        "desc": "The right material for every application.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SOLUTION"
-      },
-      {
-        "title": "Flexible Supply",
-        "desc": "Flexible supply, built around your production.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPLY"
-      },
-      {
-        "title": "Responsive Customer Support",
-        "desc": "Fast, dependable support from a dedicated team.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"
-      }
-    ],
-    "why_close": "",
-    "prod_eyebrow": "REQUEST SAMPLES",
-    "prod_title": "Request Product Samples",
-    "prod_sub": "Tell us your application — we'll recommend a material and arrange samples for evaluation.",
-    "prod_cta": "Talk to a Specialist",
-    "products": [
-      {
-        "name": "Polyimide PCB Labels — APEX",
-        "model": "PI film · reflow up to 300°C",
-        "code": "APEX",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
-        "slug": "apex"
-      },
-      {
-        "name": "Heat Resistant Labels",
-        "model": "PI, hot-apply & heat treatment — up to 1000°C",
-        "code": "HP-700T",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
-        "slug": "hp-700t"
-      },
-      {
-        "name": "Low Temperature Resistant Labels",
-        "model": "Ambient to −196°C — cryogenic & cold chain",
-        "code": "E-4812",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
-        "slug": "e-4812"
-      },
-      {
-        "name": "Heavy-Duty Oil-Resistant Labels",
-        "model": "High-adhesion · oil-resistant",
-        "code": "E-2813",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS",
-        "slug": "e-2813"
-      },
-      {
-        "name": "Dual-Layer ESD-Safe PCB Labels",
-        "model": "ESD-safe construction",
-        "code": "E-2712",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg",
-        "slug": "e-2712"
-      }
-    ],
-    "fs_eyebrow": "FREE SAMPLE",
-    "fs_title": "Request Free Samples",
-    "fs_sub": "Request free samples of any material above — leave your email, phone and mailing address, and we'll send them for evaluation.",
-    "fs_email": "Email",
-    "fs_phone": "Phone",
-    "fs_addr": "Mailing address",
-    "fs_btn": "Request Free Sample",
-    "fs_note": "We reply within one business day.",
-    "sc_eyebrow": "SERVICE COMMITMENT",
-    "sc_title": "Our Service Commitment"
-  },
-  "zh": {
-    "nav": [
-      "产品",
-      "行业",
-      "应用笔记",
-      "服务"
-    ],
-    "hero_eyebrow": "耐久标识 · 特种标签材料",
-    "hero_h1": "让材料，真正适配应用。",
-    "hero_line": "每一种严苛应用，都始于选对材料。",
-    "hero_para": "二十多年来，ETIA 依托特种材料、应用经验与柔性供应能力，帮助制造企业解决复杂的标识难题。",
-    "hero_b1": "探索应用",
-    "hero_b2": "申请样品",
-    "why_eyebrow": "为什么选择 ETIA",
-    "why_head": "围绕您的应用而构建。",
-    "why_intro": "",
-    "why": [
-      [
-        "我们理解应用",
-        "在推荐材料之前，综合评估工艺、环境与性能要求。"
-      ],
-      [
-        "我们深耕特种材料",
-        "凭借长期材料经验，整合全球高性能特种标签材料。"
-      ],
-      [
-        "我们灵活供应",
-        "支持多种材料、多种规格、小批量及长期稳定供货。"
-      ],
-      [
-        "我们定制解决方案",
-        "围绕实际应用提供测试、检验、分切、模切及定制加工。"
-      ]
-    ],
-    "appc_eyebrow": "按行业浏览标签方案",
-    "appc_title": "按行业选择标签方案",
-    "appc_sub": "选择你的行业,查看推荐的标签方案、挑战与应用",
-    "appc_viewall": "查看全部行业",
-    "focus": [
-      {
-        "name": "汽车",
-        "desc": "覆盖全生命周期的车辆、轮胎、电池与零部件标识",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER"
-      },
-      {
-        "name": "PCB",
-        "desc": "贯穿电子制造的回流、水洗与防静电标识",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg"
-      },
-      {
-        "name": "医疗与制药",
-        "desc": "经受灭菌与冷藏的器械、诊断与实验室标识",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-BANNER"
-      },
-      {
-        "name": "线缆",
-        "desc": "面向线缆与线束的耐用标识",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER"
-      },
-      {
-        "name": "户外与能源",
-        "desc": "经久户外的耐候标识",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER"
-      },
-      {
-        "name": "钢铁与陶瓷",
-        "desc": "面向金属加工的耐高温与耐存放标识",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER"
-      }
-    ],
-    "explore": "查看应用",
-    "fcta_title": "需要帮手吗？",
-    "fcta_para": "贴标的事，交给我们。告诉我们表面、工艺、环境与标识需求，我们为您匹配材料并安排样品。",
-    "fcta_b1": "咨询标签专家",
-    "fcta_b2": "申请样品",
-    "footer_heads": [
-      "导航",
-      "法律",
-      "联系"
-    ],
-    "meta_title": "ETIA Label — 特种与超高温工业标签",
-    "meta_desc": "面向严苛环境的特种耐久标签材料，依应用匹配 —— 覆盖超低温、高温、化学、防篡改与 PCB 标识。",
-    "svc": [
-      {
-        "title": "100% 质量检测",
-        "desc": "批批检测，件件验证。",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/QUALITY"
-      },
-      {
-        "title": "应用驱动方案",
-        "desc": "以应用为导向，匹配合适材料。",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SOLUTION"
-      },
-      {
-        "title": "柔性供应",
-        "desc": "灵活供货，适配您的生产节奏。",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPLY"
-      },
-      {
-        "title": "快速响应服务",
-        "desc": "专属团队，快速响应。",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"
-      }
-    ],
-    "why_close": "",
-    "prod_eyebrow": "样品申请",
-    "prod_title": "欢迎申请样品",
-    "prod_sub": "告诉我们您的应用，我们将推荐材料并安排样品验证。",
-    "prod_cta": "咨询专家",
-    "products": [
-      {
-        "name": "聚酰亚胺 PCB 标签 · APEX",
-        "model": "PI 面材 · 回流焊耐温 300°C",
-        "code": "APEX",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
-        "slug": "apex"
-      },
-      {
-        "name": "耐高温标签",
-        "model": "PI、高温直贴与热处理 — 可达 1000℃",
-        "code": "HP-700T",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
-        "slug": "hp-700t"
-      },
-      {
-        "name": "耐低温标签",
-        "model": "常温至 −196°C · 深低温与冷链",
-        "code": "E-4812",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
-        "slug": "e-4812"
-      },
-      {
-        "name": "超粘防油污标签",
-        "model": "强力粘接 · 耐油污",
-        "code": "E-2813",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS",
-        "slug": "e-2813"
-      },
-      {
-        "name": "双层抗静电 PCB 标签",
-        "model": "抗静电结构",
-        "code": "E-2712",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg",
-        "slug": "e-2712"
-      }
-    ],
-    "fs_eyebrow": "免费样品",
-    "fs_title": "申请免费样品",
-    "fs_sub": "上述任一材料均可免费申请样品——留下您的邮箱、电话与邮寄地址，我们为您寄送验证。",
-    "fs_email": "邮箱",
-    "fs_phone": "电话",
-    "fs_addr": "邮寄地址",
-    "fs_btn": "申请免费样品",
-    "fs_note": "我们将在一个工作日内回复。",
-    "sc_eyebrow": "服务承诺",
-    "sc_title": "我们的服务承诺"
-  },
-  "vi": {
-    "nav": [
-      "Sản phẩm",
-      "Ngành",
-      "Ghi chú ứng dụng",
-      "Dịch vụ"
-    ],
-    "hero_eyebrow": "NHẬN DIỆN BỀN VỮNG · VẬT LIỆU NHÃN CHUYÊN DỤNG",
-    "hero_h1": "Nơi vật liệu đáp ứng đúng ứng dụng.",
-    "hero_line": "Mỗi nhãn bền vững đều bắt đầu từ việc hiểu rõ ứng dụng.",
-    "hero_para": "Trong hơn 20 năm, ETIA đã hỗ trợ các nhà sản xuất giải quyết những yêu cầu nhận diện khắt khe bằng chuyên môn về vật liệu chuyên dụng và kinh nghiệm ứng dụng.",
-    "hero_b1": "Tìm ứng dụng của bạn",
-    "hero_b2": "Yêu cầu mẫu",
-    "why_eyebrow": "VÌ SAO CHỌN ETIA",
-    "why_head": "Được xây dựng xoay quanh ứng dụng của bạn.",
-    "why_intro": "",
-    "why": [
-      [
-        "Chúng tôi hiểu ứng dụng",
-        "Chúng tôi đánh giá quy trình, môi trường và yêu cầu hiệu suất trước khi đề xuất vật liệu."
-      ],
-      [
-        "Chúng tôi am hiểu vật liệu chuyên dụng",
-        "Chúng tôi kết hợp chuyên môn sâu về vật liệu với danh mục vật liệu nhãn hiệu suất cao trên toàn cầu."
-      ],
-      [
-        "Chúng tôi cung ứng linh hoạt",
-        "Chúng tôi hỗ trợ nhiều loại vật liệu, quy cách đa dạng, lô nhỏ và nguồn cung lặp lại ổn định."
-      ],
-      [
-        "Chúng tôi tùy chỉnh giải pháp",
-        "Chúng tôi cung cấp thử nghiệm, kiểm tra, xẻ cuộn, bế và gia công theo từng ứng dụng."
-      ]
-    ],
-    "appc_eyebrow": "LABELING SOLUTIONS BY INDUSTRY",
-    "appc_title": "Labeling Solutions by Industry",
-    "appc_sub": "Pick your industry to see recommended labeling solutions, challenges and applications.",
-    "appc_viewall": "View All Industries",
-    "focus": [
-      {
-        "name": "Automotive",
-        "desc": "Vehicle, tire, battery and component identification across the lifecycle.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER"
-      },
-      {
-        "name": "PCB",
-        "desc": "Reflow-, wash- and ESD-safe identification through electronics manufacturing.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg"
-      },
-      {
-        "name": "Medical & Pharmaceutical",
-        "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-BANNER"
-      },
-      {
-        "name": "Wire & Cable",
-        "desc": "Durable marking for wire, cable and harness assemblies.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER"
-      },
-      {
-        "name": "Outdoor & Energy",
-        "desc": "Weatherable identification that survives years outdoors.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER"
-      },
-      {
-        "name": "Steel & Ceramic",
-        "desc": "High-temperature and storage-tough identification for metal processing.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER"
-      }
-    ],
-    "explore": "Khám phá",
-    "fcta_title": "Cần chúng tôi hỗ trợ?",
-    "fcta_para": "Chúng tôi có thể làm nhãn cho bạn. Hãy cho biết bề mặt, quy trình, môi trường và yêu cầu nhận diện — chúng tôi sẽ chọn vật liệu phù hợp và chuẩn bị mẫu.",
-    "fcta_b1": "Trao đổi với chuyên gia nhãn",
-    "fcta_b2": "Yêu cầu mẫu",
-    "footer_heads": [
-      "Điều hướng",
-      "Pháp lý",
-      "Liên hệ"
-    ],
-    "meta_title": "ETIA Label — Vật liệu nhãn công nghiệp chuyên dụng",
-    "meta_desc": "Vật liệu nhãn bền vững, chuyên dụng, được kết hợp theo ứng dụng của bạn — từ siêu lạnh và nhiệt độ cao đến hóa chất, chống giả mạo và nhận diện PCB.",
-    "svc": [
-      {
-        "title": "Kiểm tra chất lượng 100%",
-        "desc": "Kiểm tra từng lô. Xác minh từng chuyến hàng.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/QUALITY"
-      },
-      {
-        "title": "Giải pháp theo ứng dụng",
-        "desc": "Vật liệu phù hợp cho mọi ứng dụng.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SOLUTION"
-      },
-      {
-        "title": "Cung ứng linh hoạt",
-        "desc": "Cung ứng linh hoạt, theo nhịp sản xuất của bạn.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPLY"
-      },
-      {
-        "title": "Hỗ trợ khách hàng nhanh chóng",
-        "desc": "Hỗ trợ nhanh, tin cậy từ đội ngũ chuyên trách.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"
-      }
-    ],
-    "why_close": "",
-    "prod_eyebrow": "YÊU CẦU MẪU",
-    "prod_title": "Yêu cầu mẫu sản phẩm",
-    "prod_sub": "Hãy cho biết ứng dụng của bạn — chúng tôi sẽ đề xuất vật liệu và chuẩn bị mẫu để đánh giá.",
-    "prod_cta": "Trao đổi với chuyên gia",
-    "products": [
-      {
-        "name": "Nhãn PCB Polyimide — APEX",
-        "model": "Màng PI · reflow đến 300°C",
-        "code": "APEX",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
-        "slug": "apex"
-      },
-      {
-        "name": "Nhãn chịu nhiệt",
-        "model": "PI, dán nóng & xử lý nhiệt — đến 1000°C",
-        "code": "HP-700T",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
-        "slug": "hp-700t"
-      },
-      {
-        "name": "Nhãn chịu nhiệt độ thấp",
-        "model": "Nhiệt độ thường đến −196°C — siêu lạnh & chuỗi lạnh",
-        "code": "E-4812",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
-        "slug": "e-4812"
-      },
-      {
-        "name": "Nhãn chống dầu chịu tải nặng",
-        "model": "Độ bám cao · chống dầu",
-        "code": "E-2813",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS",
-        "slug": "e-2813"
-      },
-      {
-        "name": "Nhãn PCB chống tĩnh điện hai lớp",
-        "model": "Cấu tạo an toàn ESD",
-        "code": "E-2712",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg",
-        "slug": "e-2712"
-      }
-    ],
-    "fs_eyebrow": "MẪU MIỄN PHÍ",
-    "fs_title": "Yêu cầu mẫu miễn phí",
-    "fs_sub": "Yêu cầu mẫu miễn phí của bất kỳ vật liệu nào ở trên — để lại email, số điện thoại và địa chỉ nhận hàng, chúng tôi sẽ gửi mẫu để đánh giá.",
-    "fs_email": "Email",
-    "fs_phone": "Số điện thoại",
-    "fs_addr": "Địa chỉ nhận hàng",
-    "fs_btn": "Yêu cầu mẫu miễn phí",
-    "fs_note": "Chúng tôi phản hồi trong vòng một ngày làm việc.",
-    "sc_eyebrow": "CAM KẾT DỊCH VỤ",
-    "sc_title": "Cam kết dịch vụ của chúng tôi"
-  },
-  "th": {
-    "nav": [
-      "ผลิตภัณฑ์",
-      "อุตสาหกรรม",
-      "แอปพลิเคชันโน้ต",
-      "บริการ"
-    ],
-    "hero_eyebrow": "ระบบระบุข้อมูลที่ทนทาน · วัสดุฉลากเฉพาะทาง",
-    "hero_h1": "จุดที่วัสดุตอบโจทย์การใช้งานจริง",
-    "hero_line": "ฉลากที่ทนทานทุกชนิดเริ่มต้นจากการเข้าใจการใช้งาน",
-    "hero_para": "ตลอดระยะเวลากว่า 20 ปี ETIA ช่วยผู้ผลิตแก้ปัญหาด้านการระบุข้อมูลในสภาวะที่มีความต้องการสูง ด้วยความเชี่ยวชาญด้านวัสดุเฉพาะทางและความเข้าใจในการใช้งานจริง",
-    "hero_b1": "ค้นหาการใช้งานของคุณ",
-    "hero_b2": "ขอตัวอย่าง",
-    "why_eyebrow": "ทำไมต้องเลือก ETIA",
-    "why_head": "ออกแบบแนวทางโดยยึดการใช้งานของคุณเป็นหลัก",
-    "why_intro": "",
-    "why": [
-      [
-        "เราเข้าใจการใช้งาน",
-        "เราประเมินกระบวนการ สภาพแวดล้อม และข้อกำหนดด้านสมรรถนะ ก่อนแนะนำวัสดุ"
-      ],
-      [
-        "เราเชี่ยวชาญวัสดุเฉพาะทาง",
-        "เราผสานความเชี่ยวชาญด้านวัสดุเข้ากับพอร์ตวัสดุฉลากสมรรถนะสูงระดับสากล"
-      ],
-      [
-        "เราจัดหาอย่างยืดหยุ่น",
-        "เรารองรับวัสดุหลากหลาย ข้อกำหนดที่แตกต่าง การผลิตล็อตเล็ก และการจัดส่งซ้ำที่เชื่อถือได้"
-      ],
-      [
-        "เราปรับแต่งโซลูชัน",
-        "เราให้บริการทดสอบ ตรวจสอบ กรีด ปั๊มขึ้นรูป และแปรรูปตามการใช้งาน"
-      ]
-    ],
-    "appc_eyebrow": "LABELING SOLUTIONS BY INDUSTRY",
-    "appc_title": "Labeling Solutions by Industry",
-    "appc_sub": "Pick your industry to see recommended labeling solutions, challenges and applications.",
-    "appc_viewall": "View All Industries",
-    "focus": [
-      {
-        "name": "Automotive",
-        "desc": "Vehicle, tire, battery and component identification across the lifecycle.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER"
-      },
-      {
-        "name": "PCB",
-        "desc": "Reflow-, wash- and ESD-safe identification through electronics manufacturing.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg"
-      },
-      {
-        "name": "Medical & Pharmaceutical",
-        "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-BANNER"
-      },
-      {
-        "name": "Wire & Cable",
-        "desc": "Durable marking for wire, cable and harness assemblies.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER"
-      },
-      {
-        "name": "Outdoor & Energy",
-        "desc": "Weatherable identification that survives years outdoors.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER"
-      },
-      {
-        "name": "Steel & Ceramic",
-        "desc": "High-temperature and storage-tough identification for metal processing.",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER"
-      }
-    ],
-    "explore": "สำรวจ",
-    "fcta_title": "ต้องการให้เราช่วยไหม?",
-    "fcta_para": "เราทำฉลากให้คุณได้ บอกเราถึงพื้นผิว กระบวนการ สภาพแวดล้อม และข้อกำหนดการระบุข้อมูล แล้วเราจะจับคู่วัสดุและจัดเตรียมตัวอย่างให้",
-    "fcta_b1": "ปรึกษาผู้เชี่ยวชาญด้านฉลาก",
-    "fcta_b2": "ขอตัวอย่าง",
-    "footer_heads": [
-      "เมนู",
-      "กฎหมาย",
-      "ติดต่อ"
-    ],
-    "meta_title": "ETIA Label — วัสดุฉลากอุตสาหกรรมเฉพาะทาง",
-    "meta_desc": "วัสดุฉลากที่ทนทานและเฉพาะทาง เลือกให้เหมาะกับการใช้งานของคุณ — ตั้งแต่อุณหภูมิต่ำมากและความร้อนสูง ไปจนถึงสารเคมี การป้องกันการปลอมแปลง และการระบุ PCB",
-    "svc": [
-      {
-        "title": "การตรวจสอบคุณภาพ 100%",
-        "desc": "ตรวจทุกล็อต ยืนยันทุกการจัดส่ง",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/QUALITY"
-      },
-      {
-        "title": "โซลูชันที่ขับเคลื่อนด้วยการใช้งาน",
-        "desc": "วัสดุที่เหมาะสมสำหรับทุกการใช้งาน",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SOLUTION"
-      },
-      {
-        "title": "การจัดหาที่ยืดหยุ่น",
-        "desc": "การจัดหาที่ยืดหยุ่น ปรับตามการผลิตของคุณ",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPLY"
-      },
-      {
-        "title": "การสนับสนุนลูกค้าที่รวดเร็ว",
-        "desc": "การสนับสนุนที่รวดเร็วจากทีมงานเฉพาะ",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"
-      }
-    ],
-    "why_close": "",
-    "prod_eyebrow": "ขอตัวอย่าง",
-    "prod_title": "ขอตัวอย่างผลิตภัณฑ์",
-    "prod_sub": "บอกเราถึงการใช้งานของคุณ แล้วเราจะแนะนำวัสดุและจัดเตรียมตัวอย่างเพื่อประเมิน",
-    "prod_cta": "ปรึกษาผู้เชี่ยวชาญ",
-    "products": [
-      {
-        "name": "ฉลาก PCB โพลีอิไมด์ — APEX",
-        "model": "ฟิล์ม PI · รีโฟลว์ถึง 300°C",
-        "code": "APEX",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
-        "slug": "apex"
-      },
-      {
-        "name": "ฉลากทนความร้อน",
-        "model": "PI ติดร้อนและการอบชุบความร้อน — สูงถึง 1000°C",
-        "code": "HP-700T",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
-        "slug": "hp-700t"
-      },
-      {
-        "name": "ฉลากทนอุณหภูมิต่ำ",
-        "model": "อุณหภูมิห้องถึง −196°C — เย็นจัดและโซ่ความเย็น",
-        "code": "E-4812",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
-        "slug": "e-4812"
-      },
-      {
-        "name": "ฉลากทนน้ำมันสำหรับงานหนัก",
-        "model": "ยึดเกาะสูง · ทนน้ำมัน",
-        "code": "E-2813",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS",
-        "slug": "e-2813"
-      },
-      {
-        "name": "ฉลาก PCB ป้องกันไฟฟ้าสถิตสองชั้น",
-        "model": "โครงสร้างปลอดภัยต่อ ESD",
-        "code": "E-2712",
-        "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg",
-        "slug": "e-2712"
-      }
-    ],
-    "fs_eyebrow": "ตัวอย่างฟรี",
-    "fs_title": "ขอตัวอย่างฟรี",
-    "fs_sub": "ขอตัวอย่างฟรีของวัสดุใดก็ได้ด้านบน ทิ้งอีเมล เบอร์โทร และที่อยู่จัดส่ง แล้วเราจะส่งไปให้ประเมิน",
-    "fs_email": "อีเมล",
-    "fs_phone": "โทรศัพท์",
-    "fs_addr": "ที่อยู่จัดส่ง",
-    "fs_btn": "ขอตัวอย่างฟรี",
-    "fs_note": "เราตอบกลับภายในหนึ่งวันทำการ",
-    "sc_eyebrow": "คำมั่นด้านบริการ",
-    "sc_title": "คำมั่นด้านบริการของเรา"
-  }
+  "appc_eyebrow": "LABELING SOLUTIONS BY INDUSTRY",
+  "appc_title": "Labeling Solutions by Industry",
+  "appc_sub": "Pick your industry to see recommended labeling solutions, challenges and applications.",
+  "appc_viewall": "View All Industries",
+  "focus": [
+   {
+    "name": "Automotive",
+    "desc": "Vehicle, tire, battery and component identification across the lifecycle.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER"
+   },
+   {
+    "name": "PCB",
+    "desc": "Reflow-, wash- and ESD-safe identification through electronics manufacturing.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg"
+   },
+   {
+    "name": "Medical & Pharmaceutical",
+    "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-BANNER"
+   },
+   {
+    "name": "Wire & Cable",
+    "desc": "Durable marking for wire, cable and harness assemblies.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER"
+   },
+   {
+    "name": "Outdoor & Energy",
+    "desc": "Weatherable identification that survives years outdoors.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER"
+   },
+   {
+    "name": "Steel & Ceramic",
+    "desc": "High-temperature and storage-tough identification for metal processing.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER"
+   }
+  ],
+  "explore": "View Application",
+  "fcta_title": "Need a Helping Hand?",
+  "fcta_para": "We can label for you. Tell us your surface, process, environment and identification requirements — we'll match the material and arrange samples.",
+  "fcta_b1": "Talk to a Label Specialist",
+  "fcta_b2": "Request Samples",
+  "footer_heads": [
+   "Navigation",
+   "Legal",
+   "Contact"
+  ],
+  "meta_title": "ETIA Label — Specialty & Ultra-High-Temperature Industrial Labels",
+  "meta_desc": "Durable, specialty label materials matched to your application — from cryogenic and high-heat to chemical, tamper-evident and PCB identification.",
+  "svc": [
+   {
+    "title": "100% Quality Inspection",
+    "desc": "Every batch tested. Every shipment verified.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/QUALITY"
+   },
+   {
+    "title": "Application-Driven Solutions",
+    "desc": "The right material for every application.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SOLUTION"
+   },
+   {
+    "title": "Flexible Supply",
+    "desc": "Flexible supply, built around your production.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPLY"
+   },
+   {
+    "title": "Responsive Customer Support",
+    "desc": "Fast, dependable support from a dedicated team.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"
+   }
+  ],
+  "why_close": "",
+  "prod_eyebrow": "REQUEST SAMPLES",
+  "prod_title": "Request Product Samples",
+  "prod_sub": "Tell us your application — we'll recommend a material and arrange samples for evaluation.",
+  "prod_cta": "Talk to a Specialist",
+  "products": [
+   {
+    "name": "Polyimide PCB Labels — APEX",
+    "model": "PI film · reflow up to 300°C",
+    "code": "APEX",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
+    "slug": "apex"
+   },
+   {
+    "name": "Heat Resistant Labels",
+    "model": "PI, hot-apply & heat treatment — up to 1000°C",
+    "code": "HP-700T",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
+    "slug": "hp-700t"
+   },
+   {
+    "name": "Low Temperature Resistant Labels",
+    "model": "Ambient to −196°C — cryogenic & cold chain",
+    "code": "E-4812",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
+    "slug": "e-4812"
+   },
+   {
+    "name": "Heavy-Duty Oil-Resistant Labels",
+    "model": "High-adhesion · oil-resistant",
+    "code": "E-2813",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS",
+    "slug": "e-2813"
+   },
+   {
+    "name": "Dual-Layer ESD-Safe PCB Labels",
+    "model": "ESD-safe construction",
+    "code": "E-2712",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg",
+    "slug": "e-2712"
+   },
+   {
+    "name": "Flame-Retardant Cable Labels",
+    "model": "Halogen-free PI · UL94 VTM-0 · up to 300°C",
+    "code": "XF-603",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-XF603",
+    "slug": "xf-603"
+   }
+  ],
+  "fs_eyebrow": "FREE SAMPLE",
+  "fs_title": "Request Free Samples",
+  "fs_sub": "Request free samples of any material above — leave your email, phone and mailing address, and we'll send them for evaluation.",
+  "fs_email": "Email",
+  "fs_phone": "Phone",
+  "fs_addr": "Mailing address",
+  "fs_btn": "Request Free Sample",
+  "fs_note": "We reply within one business day.",
+  "sc_eyebrow": "SERVICE COMMITMENT",
+  "sc_title": "Our Service Commitment"
+ },
+ "zh": {
+  "nav": [
+   "产品",
+   "行业",
+   "应用笔记",
+   "服务"
+  ],
+  "hero_eyebrow": "耐久标识 · 特种标签材料",
+  "hero_h1": "让材料，真正适配应用。",
+  "hero_line": "每一种严苛应用，都始于选对材料。",
+  "hero_para": "二十多年来，ETIA 依托特种材料、应用经验与柔性供应能力，帮助制造企业解决复杂的标识难题。",
+  "hero_b1": "探索应用",
+  "hero_b2": "申请样品",
+  "why_eyebrow": "为什么选择 ETIA",
+  "why_head": "围绕您的应用而构建。",
+  "why_intro": "",
+  "why": [
+   [
+    "我们理解应用",
+    "在推荐材料之前，综合评估工艺、环境与性能要求。"
+   ],
+   [
+    "我们深耕特种材料",
+    "凭借长期材料经验，整合全球高性能特种标签材料。"
+   ],
+   [
+    "我们灵活供应",
+    "支持多种材料、多种规格、小批量及长期稳定供货。"
+   ],
+   [
+    "我们定制解决方案",
+    "围绕实际应用提供测试、检验、分切、模切及定制加工。"
+   ]
+  ],
+  "appc_eyebrow": "按行业浏览标签方案",
+  "appc_title": "按行业选择标签方案",
+  "appc_sub": "选择你的行业,查看推荐的标签方案、挑战与应用",
+  "appc_viewall": "查看全部行业",
+  "focus": [
+   {
+    "name": "汽车",
+    "desc": "覆盖全生命周期的车辆、轮胎、电池与零部件标识",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER"
+   },
+   {
+    "name": "PCB",
+    "desc": "贯穿电子制造的回流、水洗与防静电标识",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg"
+   },
+   {
+    "name": "医疗与制药",
+    "desc": "经受灭菌与冷藏的器械、诊断与实验室标识",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-BANNER"
+   },
+   {
+    "name": "线缆",
+    "desc": "面向线缆与线束的耐用标识",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER"
+   },
+   {
+    "name": "户外与能源",
+    "desc": "经久户外的耐候标识",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER"
+   },
+   {
+    "name": "钢铁与陶瓷",
+    "desc": "面向金属加工的耐高温与耐存放标识",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER"
+   }
+  ],
+  "explore": "查看应用",
+  "fcta_title": "需要帮手吗？",
+  "fcta_para": "贴标的事，交给我们。告诉我们表面、工艺、环境与标识需求，我们为您匹配材料并安排样品。",
+  "fcta_b1": "咨询标签专家",
+  "fcta_b2": "申请样品",
+  "footer_heads": [
+   "导航",
+   "法律",
+   "联系"
+  ],
+  "meta_title": "ETIA Label — 特种与超高温工业标签",
+  "meta_desc": "面向严苛环境的特种耐久标签材料，依应用匹配 —— 覆盖超低温、高温、化学、防篡改与 PCB 标识。",
+  "svc": [
+   {
+    "title": "100% 质量检测",
+    "desc": "批批检测，件件验证。",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/QUALITY"
+   },
+   {
+    "title": "应用驱动方案",
+    "desc": "以应用为导向，匹配合适材料。",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SOLUTION"
+   },
+   {
+    "title": "柔性供应",
+    "desc": "灵活供货，适配您的生产节奏。",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPLY"
+   },
+   {
+    "title": "快速响应服务",
+    "desc": "专属团队，快速响应。",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"
+   }
+  ],
+  "why_close": "",
+  "prod_eyebrow": "样品申请",
+  "prod_title": "欢迎申请样品",
+  "prod_sub": "告诉我们您的应用，我们将推荐材料并安排样品验证。",
+  "prod_cta": "咨询专家",
+  "products": [
+   {
+    "name": "聚酰亚胺 PCB 标签 · APEX",
+    "model": "PI 面材 · 回流焊耐温 300°C",
+    "code": "APEX",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
+    "slug": "apex"
+   },
+   {
+    "name": "耐高温标签",
+    "model": "PI、高温直贴与热处理 — 可达 1000℃",
+    "code": "HP-700T",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
+    "slug": "hp-700t"
+   },
+   {
+    "name": "耐低温标签",
+    "model": "常温至 −196°C · 深低温与冷链",
+    "code": "E-4812",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
+    "slug": "e-4812"
+   },
+   {
+    "name": "超粘防油污标签",
+    "model": "强力粘接 · 耐油污",
+    "code": "E-2813",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS",
+    "slug": "e-2813"
+   },
+   {
+    "name": "双层抗静电 PCB 标签",
+    "model": "抗静电结构",
+    "code": "E-2712",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg",
+    "slug": "e-2712"
+   },
+   {
+    "name": "阻燃线缆标签",
+    "model": "无卤 PI · UL94 VTM-0 · 耐温达 300°C",
+    "code": "XF-603",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-XF603",
+    "slug": "xf-603"
+   }
+  ],
+  "fs_eyebrow": "免费样品",
+  "fs_title": "申请免费样品",
+  "fs_sub": "上述任一材料均可免费申请样品——留下您的邮箱、电话与邮寄地址，我们为您寄送验证。",
+  "fs_email": "邮箱",
+  "fs_phone": "电话",
+  "fs_addr": "邮寄地址",
+  "fs_btn": "申请免费样品",
+  "fs_note": "我们将在一个工作日内回复。",
+  "sc_eyebrow": "服务承诺",
+  "sc_title": "我们的服务承诺"
+ },
+ "vi": {
+  "nav": [
+   "Sản phẩm",
+   "Ngành",
+   "Ghi chú ứng dụng",
+   "Dịch vụ"
+  ],
+  "hero_eyebrow": "NHẬN DIỆN BỀN VỮNG · VẬT LIỆU NHÃN CHUYÊN DỤNG",
+  "hero_h1": "Nơi vật liệu đáp ứng đúng ứng dụng.",
+  "hero_line": "Mỗi nhãn bền vững đều bắt đầu từ việc hiểu rõ ứng dụng.",
+  "hero_para": "Trong hơn 20 năm, ETIA đã hỗ trợ các nhà sản xuất giải quyết những yêu cầu nhận diện khắt khe bằng chuyên môn về vật liệu chuyên dụng và kinh nghiệm ứng dụng.",
+  "hero_b1": "Tìm ứng dụng của bạn",
+  "hero_b2": "Yêu cầu mẫu",
+  "why_eyebrow": "VÌ SAO CHỌN ETIA",
+  "why_head": "Được xây dựng xoay quanh ứng dụng của bạn.",
+  "why_intro": "",
+  "why": [
+   [
+    "Chúng tôi hiểu ứng dụng",
+    "Chúng tôi đánh giá quy trình, môi trường và yêu cầu hiệu suất trước khi đề xuất vật liệu."
+   ],
+   [
+    "Chúng tôi am hiểu vật liệu chuyên dụng",
+    "Chúng tôi kết hợp chuyên môn sâu về vật liệu với danh mục vật liệu nhãn hiệu suất cao trên toàn cầu."
+   ],
+   [
+    "Chúng tôi cung ứng linh hoạt",
+    "Chúng tôi hỗ trợ nhiều loại vật liệu, quy cách đa dạng, lô nhỏ và nguồn cung lặp lại ổn định."
+   ],
+   [
+    "Chúng tôi tùy chỉnh giải pháp",
+    "Chúng tôi cung cấp thử nghiệm, kiểm tra, xẻ cuộn, bế và gia công theo từng ứng dụng."
+   ]
+  ],
+  "appc_eyebrow": "LABELING SOLUTIONS BY INDUSTRY",
+  "appc_title": "Labeling Solutions by Industry",
+  "appc_sub": "Pick your industry to see recommended labeling solutions, challenges and applications.",
+  "appc_viewall": "View All Industries",
+  "focus": [
+   {
+    "name": "Automotive",
+    "desc": "Vehicle, tire, battery and component identification across the lifecycle.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER"
+   },
+   {
+    "name": "PCB",
+    "desc": "Reflow-, wash- and ESD-safe identification through electronics manufacturing.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg"
+   },
+   {
+    "name": "Medical & Pharmaceutical",
+    "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-BANNER"
+   },
+   {
+    "name": "Wire & Cable",
+    "desc": "Durable marking for wire, cable and harness assemblies.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER"
+   },
+   {
+    "name": "Outdoor & Energy",
+    "desc": "Weatherable identification that survives years outdoors.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER"
+   },
+   {
+    "name": "Steel & Ceramic",
+    "desc": "High-temperature and storage-tough identification for metal processing.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER"
+   }
+  ],
+  "explore": "Khám phá",
+  "fcta_title": "Cần chúng tôi hỗ trợ?",
+  "fcta_para": "Chúng tôi có thể làm nhãn cho bạn. Hãy cho biết bề mặt, quy trình, môi trường và yêu cầu nhận diện — chúng tôi sẽ chọn vật liệu phù hợp và chuẩn bị mẫu.",
+  "fcta_b1": "Trao đổi với chuyên gia nhãn",
+  "fcta_b2": "Yêu cầu mẫu",
+  "footer_heads": [
+   "Điều hướng",
+   "Pháp lý",
+   "Liên hệ"
+  ],
+  "meta_title": "ETIA Label — Vật liệu nhãn công nghiệp chuyên dụng",
+  "meta_desc": "Vật liệu nhãn bền vững, chuyên dụng, được kết hợp theo ứng dụng của bạn — từ siêu lạnh và nhiệt độ cao đến hóa chất, chống giả mạo và nhận diện PCB.",
+  "svc": [
+   {
+    "title": "Kiểm tra chất lượng 100%",
+    "desc": "Kiểm tra từng lô. Xác minh từng chuyến hàng.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/QUALITY"
+   },
+   {
+    "title": "Giải pháp theo ứng dụng",
+    "desc": "Vật liệu phù hợp cho mọi ứng dụng.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SOLUTION"
+   },
+   {
+    "title": "Cung ứng linh hoạt",
+    "desc": "Cung ứng linh hoạt, theo nhịp sản xuất của bạn.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPLY"
+   },
+   {
+    "title": "Hỗ trợ khách hàng nhanh chóng",
+    "desc": "Hỗ trợ nhanh, tin cậy từ đội ngũ chuyên trách.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"
+   }
+  ],
+  "why_close": "",
+  "prod_eyebrow": "YÊU CẦU MẪU",
+  "prod_title": "Yêu cầu mẫu sản phẩm",
+  "prod_sub": "Hãy cho biết ứng dụng của bạn — chúng tôi sẽ đề xuất vật liệu và chuẩn bị mẫu để đánh giá.",
+  "prod_cta": "Trao đổi với chuyên gia",
+  "products": [
+   {
+    "name": "Nhãn PCB Polyimide — APEX",
+    "model": "Màng PI · reflow đến 300°C",
+    "code": "APEX",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
+    "slug": "apex"
+   },
+   {
+    "name": "Nhãn chịu nhiệt",
+    "model": "PI, dán nóng & xử lý nhiệt — đến 1000°C",
+    "code": "HP-700T",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
+    "slug": "hp-700t"
+   },
+   {
+    "name": "Nhãn chịu nhiệt độ thấp",
+    "model": "Nhiệt độ thường đến −196°C — siêu lạnh & chuỗi lạnh",
+    "code": "E-4812",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
+    "slug": "e-4812"
+   },
+   {
+    "name": "Nhãn chống dầu chịu tải nặng",
+    "model": "Độ bám cao · chống dầu",
+    "code": "E-2813",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS",
+    "slug": "e-2813"
+   },
+   {
+    "name": "Nhãn PCB chống tĩnh điện hai lớp",
+    "model": "Cấu tạo an toàn ESD",
+    "code": "E-2712",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg",
+    "slug": "e-2712"
+   },
+   {
+    "name": "Nhãn cáp chống cháy",
+    "model": "PI không halogen · UL94 VTM-0 · tới 300°C",
+    "code": "XF-603",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-XF603",
+    "slug": "xf-603"
+   }
+  ],
+  "fs_eyebrow": "MẪU MIỄN PHÍ",
+  "fs_title": "Yêu cầu mẫu miễn phí",
+  "fs_sub": "Yêu cầu mẫu miễn phí của bất kỳ vật liệu nào ở trên — để lại email, số điện thoại và địa chỉ nhận hàng, chúng tôi sẽ gửi mẫu để đánh giá.",
+  "fs_email": "Email",
+  "fs_phone": "Số điện thoại",
+  "fs_addr": "Địa chỉ nhận hàng",
+  "fs_btn": "Yêu cầu mẫu miễn phí",
+  "fs_note": "Chúng tôi phản hồi trong vòng một ngày làm việc.",
+  "sc_eyebrow": "CAM KẾT DỊCH VỤ",
+  "sc_title": "Cam kết dịch vụ của chúng tôi"
+ },
+ "th": {
+  "nav": [
+   "ผลิตภัณฑ์",
+   "อุตสาหกรรม",
+   "แอปพลิเคชันโน้ต",
+   "บริการ"
+  ],
+  "hero_eyebrow": "ระบบระบุข้อมูลที่ทนทาน · วัสดุฉลากเฉพาะทาง",
+  "hero_h1": "จุดที่วัสดุตอบโจทย์การใช้งานจริง",
+  "hero_line": "ฉลากที่ทนทานทุกชนิดเริ่มต้นจากการเข้าใจการใช้งาน",
+  "hero_para": "ตลอดระยะเวลากว่า 20 ปี ETIA ช่วยผู้ผลิตแก้ปัญหาด้านการระบุข้อมูลในสภาวะที่มีความต้องการสูง ด้วยความเชี่ยวชาญด้านวัสดุเฉพาะทางและความเข้าใจในการใช้งานจริง",
+  "hero_b1": "ค้นหาการใช้งานของคุณ",
+  "hero_b2": "ขอตัวอย่าง",
+  "why_eyebrow": "ทำไมต้องเลือก ETIA",
+  "why_head": "ออกแบบแนวทางโดยยึดการใช้งานของคุณเป็นหลัก",
+  "why_intro": "",
+  "why": [
+   [
+    "เราเข้าใจการใช้งาน",
+    "เราประเมินกระบวนการ สภาพแวดล้อม และข้อกำหนดด้านสมรรถนะ ก่อนแนะนำวัสดุ"
+   ],
+   [
+    "เราเชี่ยวชาญวัสดุเฉพาะทาง",
+    "เราผสานความเชี่ยวชาญด้านวัสดุเข้ากับพอร์ตวัสดุฉลากสมรรถนะสูงระดับสากล"
+   ],
+   [
+    "เราจัดหาอย่างยืดหยุ่น",
+    "เรารองรับวัสดุหลากหลาย ข้อกำหนดที่แตกต่าง การผลิตล็อตเล็ก และการจัดส่งซ้ำที่เชื่อถือได้"
+   ],
+   [
+    "เราปรับแต่งโซลูชัน",
+    "เราให้บริการทดสอบ ตรวจสอบ กรีด ปั๊มขึ้นรูป และแปรรูปตามการใช้งาน"
+   ]
+  ],
+  "appc_eyebrow": "LABELING SOLUTIONS BY INDUSTRY",
+  "appc_title": "Labeling Solutions by Industry",
+  "appc_sub": "Pick your industry to see recommended labeling solutions, challenges and applications.",
+  "appc_viewall": "View All Industries",
+  "focus": [
+   {
+    "name": "Automotive",
+    "desc": "Vehicle, tire, battery and component identification across the lifecycle.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER"
+   },
+   {
+    "name": "PCB",
+    "desc": "Reflow-, wash- and ESD-safe identification through electronics manufacturing.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg"
+   },
+   {
+    "name": "Medical & Pharmaceutical",
+    "desc": "Device, diagnostic and lab identification through sterilization and cold storage.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-BANNER"
+   },
+   {
+    "name": "Wire & Cable",
+    "desc": "Durable marking for wire, cable and harness assemblies.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER"
+   },
+   {
+    "name": "Outdoor & Energy",
+    "desc": "Weatherable identification that survives years outdoors.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER"
+   },
+   {
+    "name": "Steel & Ceramic",
+    "desc": "High-temperature and storage-tough identification for metal processing.",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER"
+   }
+  ],
+  "explore": "สำรวจ",
+  "fcta_title": "ต้องการให้เราช่วยไหม?",
+  "fcta_para": "เราทำฉลากให้คุณได้ บอกเราถึงพื้นผิว กระบวนการ สภาพแวดล้อม และข้อกำหนดการระบุข้อมูล แล้วเราจะจับคู่วัสดุและจัดเตรียมตัวอย่างให้",
+  "fcta_b1": "ปรึกษาผู้เชี่ยวชาญด้านฉลาก",
+  "fcta_b2": "ขอตัวอย่าง",
+  "footer_heads": [
+   "เมนู",
+   "กฎหมาย",
+   "ติดต่อ"
+  ],
+  "meta_title": "ETIA Label — วัสดุฉลากอุตสาหกรรมเฉพาะทาง",
+  "meta_desc": "วัสดุฉลากที่ทนทานและเฉพาะทาง เลือกให้เหมาะกับการใช้งานของคุณ — ตั้งแต่อุณหภูมิต่ำมากและความร้อนสูง ไปจนถึงสารเคมี การป้องกันการปลอมแปลง และการระบุ PCB",
+  "svc": [
+   {
+    "title": "การตรวจสอบคุณภาพ 100%",
+    "desc": "ตรวจทุกล็อต ยืนยันทุกการจัดส่ง",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/QUALITY"
+   },
+   {
+    "title": "โซลูชันที่ขับเคลื่อนด้วยการใช้งาน",
+    "desc": "วัสดุที่เหมาะสมสำหรับทุกการใช้งาน",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SOLUTION"
+   },
+   {
+    "title": "การจัดหาที่ยืดหยุ่น",
+    "desc": "การจัดหาที่ยืดหยุ่น ปรับตามการผลิตของคุณ",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPLY"
+   },
+   {
+    "title": "การสนับสนุนลูกค้าที่รวดเร็ว",
+    "desc": "การสนับสนุนที่รวดเร็วจากทีมงานเฉพาะ",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"
+   }
+  ],
+  "why_close": "",
+  "prod_eyebrow": "ขอตัวอย่าง",
+  "prod_title": "ขอตัวอย่างผลิตภัณฑ์",
+  "prod_sub": "บอกเราถึงการใช้งานของคุณ แล้วเราจะแนะนำวัสดุและจัดเตรียมตัวอย่างเพื่อประเมิน",
+  "prod_cta": "ปรึกษาผู้เชี่ยวชาญ",
+  "products": [
+   {
+    "name": "ฉลาก PCB โพลีอิไมด์ — APEX",
+    "model": "ฟิล์ม PI · รีโฟลว์ถึง 300°C",
+    "code": "APEX",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
+    "slug": "apex"
+   },
+   {
+    "name": "ฉลากทนความร้อน",
+    "model": "PI ติดร้อนและการอบชุบความร้อน — สูงถึง 1000°C",
+    "code": "HP-700T",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HP900",
+    "slug": "hp-700t"
+   },
+   {
+    "name": "ฉลากทนอุณหภูมิต่ำ",
+    "model": "อุณหภูมิห้องถึง −196°C — เย็นจัดและโซ่ความเย็น",
+    "code": "E-4812",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
+    "slug": "e-4812"
+   },
+   {
+    "name": "ฉลากทนน้ำมันสำหรับงานหนัก",
+    "model": "ยึดเกาะสูง · ทนน้ำมัน",
+    "code": "E-2813",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS",
+    "slug": "e-2813"
+   },
+   {
+    "name": "ฉลาก PCB ป้องกันไฟฟ้าสถิตสองชั้น",
+    "model": "โครงสร้างปลอดภัยต่อ ESD",
+    "code": "E-2712",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg",
+    "slug": "e-2712"
+   },
+   {
+    "name": "ฉลากสายเคเบิลหน่วงไฟ",
+    "model": "PI ไร้ฮาโลเจน · UL94 VTM-0 · สูงถึง 300°C",
+    "code": "XF-603",
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-XF603",
+    "slug": "xf-603"
+   }
+  ],
+  "fs_eyebrow": "ตัวอย่างฟรี",
+  "fs_title": "ขอตัวอย่างฟรี",
+  "fs_sub": "ขอตัวอย่างฟรีของวัสดุใดก็ได้ด้านบน ทิ้งอีเมล เบอร์โทร และที่อยู่จัดส่ง แล้วเราจะส่งไปให้ประเมิน",
+  "fs_email": "อีเมล",
+  "fs_phone": "โทรศัพท์",
+  "fs_addr": "ที่อยู่จัดส่ง",
+  "fs_btn": "ขอตัวอย่างฟรี",
+  "fs_note": "เราตอบกลับภายในหนึ่งวันทำการ",
+  "sc_eyebrow": "คำมั่นด้านบริการ",
+  "sc_title": "คำมั่นด้านบริการของเรา"
+ }
 }
