@@ -93,7 +93,22 @@
         ],
         "containers": "Cryovials • Cryotubes • Cryoboxes • Vials",
         "lo": -196,
-        "hi": -80
+        "hi": -80,
+        "products_list": [
+          {
+            "name": "E-4812",
+            "material": "2mil white PO facestock · permanent low-temp acrylic",
+            "url": "/products/item/e-4812/"
+          },
+          {
+            "name": "E-4802",
+            "material": "2mil transparent PO facestock · permanent low-temp acrylic"
+          },
+          {
+            "name": "E-4834",
+            "material": "2mil ultra-thin white PO · ultra-low-temp acrylic"
+          }
+        ]
       },
       {
         "icon": "❄️",
@@ -109,7 +124,17 @@
         ],
         "containers": "Cryovials • Sample Tubes • Sample Boxes • Shipping Containers",
         "lo": -80,
-        "hi": -20
+        "hi": -20,
+        "products_list": [
+          {
+            "name": "E-4813",
+            "material": "2mil white PP facestock · low-temp balanced acrylic"
+          },
+          {
+            "name": "E-4834",
+            "material": "2mil ultra-thin white PO · ultra-low-temp acrylic"
+          }
+        ]
       },
       {
         "icon": "🩸",
@@ -125,7 +150,17 @@
         ],
         "containers": "Blood Bags • Plasma Bags • Blood Collection Tubes • Sample Tubes",
         "lo": -40,
-        "hi": 4
+        "hi": 4,
+        "products_list": [
+          {
+            "name": "E-4802",
+            "material": "2mil transparent PO facestock · permanent low-temp acrylic"
+          },
+          {
+            "name": "E-4533",
+            "material": "3mil thick white PP · blood-bag balanced acrylic"
+          }
+        ]
       },
       {
         "icon": "💉",
@@ -141,7 +176,13 @@
         ],
         "containers": "Glass Vials • Prefilled Syringes • IV Bags • Cartridges",
         "lo": 2,
-        "hi": 8
+        "hi": 8,
+        "products_list": [
+          {
+            "name": "E-6333",
+            "material": "3mil white PE facestock · rubber cryogenic adhesive"
+          }
+        ]
       },
       {
         "icon": "💊",
@@ -157,7 +198,17 @@
         ],
         "containers": "Medicine Bottles • Plastic Bottles • Reagent Bottles • Cartons",
         "lo": 15,
-        "hi": 25
+        "hi": 25,
+        "products_list": [
+          {
+            "name": "E-4501",
+            "material": "2mil white PP facestock · medium-tack medical acrylic"
+          },
+          {
+            "name": "E-4813",
+            "material": "2mil white PP facestock · low-temp balanced acrylic"
+          }
+        ]
       }
     ],
     "zh": [
@@ -175,7 +226,22 @@
         ],
         "containers": "冻存管 • 冻存盒 • 西林瓶 • 样本瓶",
         "lo": -196,
-        "hi": -80
+        "hi": -80,
+        "products_list": [
+          {
+            "name": "E-4812",
+            "material": "2mil 白色 PO 面材 · 低温永久丙烯酸胶",
+            "url": "/products/item/e-4812/"
+          },
+          {
+            "name": "E-4802",
+            "material": "2mil 透明 PO 面材 · 低温永久丙烯酸胶"
+          },
+          {
+            "name": "E-4834",
+            "material": "2mil 超薄白色 PO · 超低温专用丙烯酸胶"
+          }
+        ]
       },
       {
         "icon": "❄️",
@@ -191,7 +257,17 @@
         ],
         "containers": "冻存管 • 样本管 • 样本盒 • 冷链运输箱",
         "lo": -80,
-        "hi": -20
+        "hi": -20,
+        "products_list": [
+          {
+            "name": "E-4813",
+            "material": "2mil 白色 PP 面材 · 低温平衡丙烯酸胶"
+          },
+          {
+            "name": "E-4834",
+            "material": "2mil 超薄白色 PO · 超低温专用丙烯酸胶"
+          }
+        ]
       },
       {
         "icon": "🩸",
@@ -207,7 +283,17 @@
         ],
         "containers": "血袋 • 血浆袋 • 采血管 • 样本管",
         "lo": -40,
-        "hi": 4
+        "hi": 4,
+        "products_list": [
+          {
+            "name": "E-4802",
+            "material": "2mil 透明 PO 面材 · 低温永久丙烯酸胶"
+          },
+          {
+            "name": "E-4533",
+            "material": "3mil 加厚白色 PP · 血袋专用平衡丙烯酸胶"
+          }
+        ]
       },
       {
         "icon": "💉",
@@ -223,7 +309,13 @@
         ],
         "containers": "西林瓶 • 预灌封注射器 • 输液袋 • 卡式瓶",
         "lo": 2,
-        "hi": 8
+        "hi": 8,
+        "products_list": [
+          {
+            "name": "E-6333",
+            "material": "3mil 白色 PE 面材 · 橡胶基超低温胶"
+          }
+        ]
       },
       {
         "icon": "💊",
@@ -239,7 +331,17 @@
         ],
         "containers": "药瓶 • 塑料瓶 • 试剂瓶 • 包装盒",
         "lo": 15,
-        "hi": 25
+        "hi": 25,
+        "products_list": [
+          {
+            "name": "E-4501",
+            "material": "2mil 白色 PP 面材 · 中粘医用丙烯酸胶"
+          },
+          {
+            "name": "E-4813",
+            "material": "2mil 白色 PP 面材 · 低温平衡丙烯酸胶"
+          }
+        ]
       }
     ],
     "vi": [
