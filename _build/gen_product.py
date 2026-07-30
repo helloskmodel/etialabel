@@ -54,11 +54,11 @@ def L(node, lang):
 
 CSS = """
 <style>
-.phero{position:relative;overflow:hidden;color:#fff;min-height:250px;display:flex;align-items:flex-end;background:#0e1c3f}
-.phero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92}
-.phero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(9,20,48,.95) 0%,rgba(11,26,60,.8) 42%,rgba(26,86,219,.34) 74%,rgba(150,190,255,.10) 100%)}
+.phero{position:relative;overflow:hidden;color:#fff;min-height:250px;display:flex;align-items:flex-end;background:#143C96;border-bottom:2px solid #fff}
+.phero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center right;opacity:1}
+.phero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,60,150,.90) 16%,rgba(20,60,150,.50) 54%,rgba(20,60,150,.08))}
 .phero .in{position:relative;z-index:2;max-width:1080px;margin:0 auto;width:100%;padding:38px 24px}
-.phero .k{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#8fe36a}
+.phero .k{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#8fe063}
 .phero h1{color:#fff;font-size:clamp(25px,4.4vw,38px);margin:10px 0 10px;line-height:1.15;max-width:20em}
 .phero .tl{color:#dbe6ff;font-size:18px;margin:0 0 18px;max-width:36em}
 .pbtn{display:inline-block;background:#41A62A;color:#fff;font-weight:800;font-size:14.5px;padding:12px 22px;border-radius:9px;text-decoration:none}

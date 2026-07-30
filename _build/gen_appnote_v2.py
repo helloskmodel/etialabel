@@ -52,11 +52,11 @@ def L(node, lang):
 
 CSS = """
 <style>
-.anhero{position:relative;overflow:hidden;color:#fff;min-height:250px;display:flex;align-items:flex-end;background:#0c2555}
-.anhero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.4}
-.anhero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(9,20,48,.92),rgba(20,60,150,.5) 66%,transparent)}
+.anhero{position:relative;overflow:hidden;color:#fff;min-height:250px;display:flex;align-items:flex-end;background:#143C96;border-bottom:2px solid #fff}
+.anhero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center right;opacity:1}
+.anhero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,60,150,.90) 16%,rgba(20,60,150,.50) 54%,rgba(20,60,150,.08))}
 .anhero .in{position:relative;z-index:2;max-width:1080px;margin:0 auto;width:100%;padding:40px 24px}
-.anhero .k{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#8fe36a}
+.anhero .k{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#8fe063}
 .anhero h1{color:#fff;font-size:clamp(24px,4.3vw,37px);margin:10px 0 10px;line-height:1.16;max-width:22em}
 .anhero .sub{color:#dbe6ff;font-size:17px;line-height:1.5;margin:0;max-width:44em}
 .ansec{max-width:900px;margin:0 auto;padding:30px 24px}
