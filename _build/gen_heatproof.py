@@ -553,6 +553,7 @@ PROD_AXES = [
    ("Heat Resistant","耐高温","/products/item/high-heat-identification/"),
    ("Low Temperature Resistant","耐低温","/products/item/cold-chain-cryogenic-labels/"),
    ("Chemical Resistant","耐化学","/products/item/chemical-resistant-labels/"),
+   ("Sterilization","灭菌","/products/item/sterilization-labels/"),
  ]),
  ("app","By Industry","按行业",[
    ("PCB","PCB","/industries/pcb-electronics-labeling-solutions/"),
@@ -1934,8 +1935,11 @@ def build_applications(lang):
       "/products/item/chemical-resistant-labels/":
         {"en":"Labels that resist solvents, disinfectants, oils, acids and alkalis without fading or lifting.",
          "zh":"耐溶剂、消毒剂、油污、酸碱等化学介质 —— 不褪色、不脱落"},
+      "/products/item/sterilization-labels/":
+        {"en":"Labels that survive steam, dry heat, gamma, EtO and chemical sterilization while staying readable.",
+         "zh":"耐蒸汽、干热、伽马、环氧乙烷及化学灭菌 —— 全周期清晰可读"},
     }
-    SOL_ICON=[1,2,0]  # flame-ish / droplet / chip from INDUSTRY_ICONS — decorative
+    SOL_ICON=[1,2,0,3]  # flame / droplet / chip / … from INDUSTRY_ICONS — decorative
     sol_cards=""
     for i,(e,z,u) in enumerate(PROD_AXES[0][3]):
         nm=z if zh else e
