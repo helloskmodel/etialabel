@@ -62,5 +62,37 @@ def strip_cn_fullstops():
                 open(p, "w", encoding="utf-8").write(new); n += 1
     print("Chinese full-stop (。) stripped from", n, "pages")
 
+def optimize_cos_images():
+    """Append COS image-processing (数据万象/imageMogr2) params to every COS image
+    URL so images are served as compressed WebP. WebP + quality only — no resize —
+    so dimensions never change and small images are never upscaled. Requires image
+    processing enabled on the bucket."""
+    import re
+    root_dir = os.path.dirname(BUILD)
+    skip = {"_build", "_docs", ".git", "node_modules", "scratchpad"}
+    HOST = "eitalabel-1303055923.cos.ap-singapore.myqcloud.com"
+    PARAM = "?imageMogr2/format/webp/quality/80"
+    # match a COS URL WITH a path (so the bare preconnect host is left untouched)
+    pat = re.compile(r"https://" + re.escape(HOST) + r"/[^\s\"'()<>]+")
+    def repl(m):
+        u = m.group(0)
+        # leave the logo untouched (tiny, and it has no onerror fallback)
+        if "?" in u or "/LOGO/" in u.upper():
+            return u
+        return u + PARAM
+    n = 0
+    for r, dirs, files in os.walk(root_dir):
+        dirs[:] = [d for d in dirs if d not in skip and not d.startswith(".")]
+        for f in files:
+            if not f.endswith(".html"):
+                continue
+            p = os.path.join(r, f)
+            s = open(p, encoding="utf-8").read()
+            new = pat.sub(repl, s)
+            if new != s:
+                open(p, "w", encoding="utf-8").write(new); n += 1
+    print("COS image optimize (webp/q80): processed", n, "pages")
+
 strip_cn_fullstops()
+optimize_cos_images()
 print("BUILD COMPLETE — total EN canonical URLs:", len(hp.ALL_URLS))
