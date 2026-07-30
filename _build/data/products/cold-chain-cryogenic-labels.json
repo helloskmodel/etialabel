@@ -96,17 +96,17 @@
         "hi": -80,
         "products_list": [
           {
+            "name": "E-4802",
+            "material": "2mil transparent PO · permanent low-temp acrylic"
+          },
+          {
             "name": "E-4812",
-            "material": "2mil white PO facestock · permanent low-temp acrylic",
+            "material": "2mil white PO · permanent low-temp acrylic",
             "url": "/products/item/e-4812/"
           },
           {
-            "name": "E-4802",
-            "material": "2mil transparent PO facestock · permanent low-temp acrylic"
-          },
-          {
-            "name": "E-4834",
-            "material": "2mil ultra-thin white PO · ultra-low-temp acrylic"
+            "name": "E-6333",
+            "material": "3mil white PE · rubber cryogenic adhesive"
           }
         ]
       },
@@ -128,11 +128,16 @@
         "products_list": [
           {
             "name": "E-4813",
-            "material": "2mil white PP facestock · low-temp balanced acrylic"
+            "material": "2mil white PP · low-temp balanced acrylic"
           },
           {
-            "name": "E-4834",
-            "material": "2mil ultra-thin white PO · ultra-low-temp acrylic"
+            "name": "E-3635",
+            "material": "nylon wrap-around self-laminating label",
+            "url": "/products/item/e-3635/"
+          },
+          {
+            "name": "E-5532",
+            "material": "2mil white PO · low-migration medical PSA"
           }
         ]
       },
@@ -153,8 +158,8 @@
         "hi": 4,
         "products_list": [
           {
-            "name": "E-4802",
-            "material": "2mil transparent PO facestock · permanent low-temp acrylic"
+            "name": "E-5532",
+            "material": "2mil white PO · low-migration medical PSA"
           },
           {
             "name": "E-4533",
@@ -179,8 +184,8 @@
         "hi": 8,
         "products_list": [
           {
-            "name": "E-6333",
-            "material": "3mil white PE facestock · rubber cryogenic adhesive"
+            "name": "E-4232",
+            "material": "2mil medical synthetic paper · low-migration acrylic"
           }
         ]
       },
@@ -201,12 +206,9 @@
         "hi": 25,
         "products_list": [
           {
-            "name": "E-4501",
-            "material": "2mil white PP facestock · medium-tack medical acrylic"
-          },
-          {
-            "name": "E-4813",
-            "material": "2mil white PP facestock · low-temp balanced acrylic"
+            "name": "E-4532",
+            "material": "2mil thin white PP · low-tack acrylic",
+            "url": "/products/item/e-4532/"
           }
         ]
       }
@@ -229,17 +231,17 @@
         "hi": -80,
         "products_list": [
           {
+            "name": "E-4802",
+            "material": "2mil 透明 PO 面材 · 低温永久丙烯酸胶"
+          },
+          {
             "name": "E-4812",
             "material": "2mil 白色 PO 面材 · 低温永久丙烯酸胶",
             "url": "/products/item/e-4812/"
           },
           {
-            "name": "E-4802",
-            "material": "2mil 透明 PO 面材 · 低温永久丙烯酸胶"
-          },
-          {
-            "name": "E-4834",
-            "material": "2mil 超薄白色 PO · 超低温专用丙烯酸胶"
+            "name": "E-6333",
+            "material": "3mil 白色 PE 面材 · 橡胶基超低温胶"
           }
         ]
       },
@@ -264,8 +266,13 @@
             "material": "2mil 白色 PP 面材 · 低温平衡丙烯酸胶"
           },
           {
-            "name": "E-4834",
-            "material": "2mil 超薄白色 PO · 超低温专用丙烯酸胶"
+            "name": "E-3635",
+            "material": "尼龙环绕自覆膜标签",
+            "url": "/products/item/e-3635/"
+          },
+          {
+            "name": "E-5532",
+            "material": "2mil 白色 PO 面材 · 低迁移医用压敏胶"
           }
         ]
       },
@@ -286,8 +293,8 @@
         "hi": 4,
         "products_list": [
           {
-            "name": "E-4802",
-            "material": "2mil 透明 PO 面材 · 低温永久丙烯酸胶"
+            "name": "E-5532",
+            "material": "2mil 白色 PO 面材 · 低迁移医用压敏胶"
           },
           {
             "name": "E-4533",
@@ -312,8 +319,8 @@
         "hi": 8,
         "products_list": [
           {
-            "name": "E-6333",
-            "material": "3mil 白色 PE 面材 · 橡胶基超低温胶"
+            "name": "E-4232",
+            "material": "2mil 医用合成纸 · 低析出丙烯酸胶"
           }
         ]
       },
@@ -334,12 +341,9 @@
         "hi": 25,
         "products_list": [
           {
-            "name": "E-4501",
-            "material": "2mil 白色 PP 面材 · 中粘医用丙烯酸胶"
-          },
-          {
-            "name": "E-4813",
-            "material": "2mil 白色 PP 面材 · 低温平衡丙烯酸胶"
+            "name": "E-4532",
+            "material": "2mil 超薄白色 PP · 低粘丙烯酸胶",
+            "url": "/products/item/e-4532/"
           }
         ]
       }
@@ -359,7 +363,22 @@
         ],
         "containers": "Ống đông lạnh • Ống cryo • Hộp đông lạnh • Lọ mẫu",
         "lo": -196,
-        "hi": -80
+        "hi": -80,
+        "products_list": [
+          {
+            "name": "E-4802",
+            "material": "PO trong suốt 2mil · keo acrylic nhiệt thấp vĩnh viễn"
+          },
+          {
+            "name": "E-4812",
+            "material": "PO trắng 2mil · keo acrylic nhiệt thấp vĩnh viễn",
+            "url": "/products/item/e-4812/"
+          },
+          {
+            "name": "E-6333",
+            "material": "PE trắng 3mil · keo cao su siêu lạnh"
+          }
+        ]
       },
       {
         "icon": "❄️",
@@ -375,7 +394,22 @@
         ],
         "containers": "Ống đông lạnh • Ống mẫu • Hộp mẫu • Thùng vận chuyển",
         "lo": -80,
-        "hi": -20
+        "hi": -20,
+        "products_list": [
+          {
+            "name": "E-4813",
+            "material": "PP trắng 2mil · keo acrylic cân bằng nhiệt thấp"
+          },
+          {
+            "name": "E-3635",
+            "material": "nhãn nylon quấn tự ép màng",
+            "url": "/products/item/e-3635/"
+          },
+          {
+            "name": "E-5532",
+            "material": "PO trắng 2mil · keo y tế ít di trú"
+          }
+        ]
       },
       {
         "icon": "🩸",
@@ -391,7 +425,17 @@
         ],
         "containers": "Túi máu • Túi huyết tương • Ống lấy máu • Ống mẫu",
         "lo": -40,
-        "hi": 4
+        "hi": 4,
+        "products_list": [
+          {
+            "name": "E-5532",
+            "material": "PO trắng 2mil · keo y tế ít di trú"
+          },
+          {
+            "name": "E-4533",
+            "material": "PP trắng dày 3mil · keo cân bằng cho túi máu"
+          }
+        ]
       },
       {
         "icon": "💉",
@@ -407,7 +451,13 @@
         ],
         "containers": "Lọ thủy tinh • Bơm tiêm nạp sẵn • Túi truyền dịch • Ống thuốc",
         "lo": 2,
-        "hi": 8
+        "hi": 8,
+        "products_list": [
+          {
+            "name": "E-4232",
+            "material": "giấy tổng hợp y tế 2mil · keo acrylic ít di trú"
+          }
+        ]
       },
       {
         "icon": "💊",
@@ -423,7 +473,14 @@
         ],
         "containers": "Chai thuốc • Chai nhựa • Chai thuốc thử • Hộp carton",
         "lo": 15,
-        "hi": 25
+        "hi": 25,
+        "products_list": [
+          {
+            "name": "E-4532",
+            "material": "PP trắng mỏng 2mil · keo acrylic độ dính thấp",
+            "url": "/products/item/e-4532/"
+          }
+        ]
       }
     ],
     "th": [
@@ -441,7 +498,22 @@
         ],
         "containers": "หลอดไครโอ • หลอดแช่แข็ง • กล่องไครโอ • ขวดตัวอย่าง",
         "lo": -196,
-        "hi": -80
+        "hi": -80,
+        "products_list": [
+          {
+            "name": "E-4802",
+            "material": "PO ใส 2mil · กาวอะคริลิกอุณหภูมิต่ำถาวร"
+          },
+          {
+            "name": "E-4812",
+            "material": "PO ขาว 2mil · กาวอะคริลิกอุณหภูมิต่ำถาวร",
+            "url": "/products/item/e-4812/"
+          },
+          {
+            "name": "E-6333",
+            "material": "PE ขาว 3mil · กาวยางอุณหภูมิต่ำยิ่งยวด"
+          }
+        ]
       },
       {
         "icon": "❄️",
@@ -457,7 +529,22 @@
         ],
         "containers": "หลอดไครโอ • หลอดตัวอย่าง • กล่องตัวอย่าง • ภาชนะขนส่ง",
         "lo": -80,
-        "hi": -20
+        "hi": -20,
+        "products_list": [
+          {
+            "name": "E-4813",
+            "material": "PP ขาว 2mil · กาวอะคริลิกสมดุลอุณหภูมิต่ำ"
+          },
+          {
+            "name": "E-3635",
+            "material": "ฉลากไนลอนพันรอบเคลือบตัวเอง",
+            "url": "/products/item/e-3635/"
+          },
+          {
+            "name": "E-5532",
+            "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
+          }
+        ]
       },
       {
         "icon": "🩸",
@@ -473,7 +560,17 @@
         ],
         "containers": "ถุงเลือด • ถุงพลาสมา • หลอดเก็บเลือด • หลอดตัวอย่าง",
         "lo": -40,
-        "hi": 4
+        "hi": 4,
+        "products_list": [
+          {
+            "name": "E-5532",
+            "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
+          },
+          {
+            "name": "E-4533",
+            "material": "PP ขาวหนา 3mil · กาวสมดุลสำหรับถุงเลือด"
+          }
+        ]
       },
       {
         "icon": "💉",
@@ -489,7 +586,13 @@
         ],
         "containers": "ขวดแก้ว • เข็มฉีดยาบรรจุสำเร็จ • ถุงน้ำเกลือ • หลอดยา",
         "lo": 2,
-        "hi": 8
+        "hi": 8,
+        "products_list": [
+          {
+            "name": "E-4232",
+            "material": "กระดาษสังเคราะห์การแพทย์ 2mil · กาวอะคริลิกการย้ายต่ำ"
+          }
+        ]
       },
       {
         "icon": "💊",
@@ -505,7 +608,14 @@
         ],
         "containers": "ขวดยา • ขวดพลาสติก • ขวดน้ำยา • กล่องกระดาษ",
         "lo": 15,
-        "hi": 25
+        "hi": 25,
+        "products_list": [
+          {
+            "name": "E-4532",
+            "material": "PP ขาวบาง 2mil · กาวอะคริลิกแรงยึดต่ำ",
+            "url": "/products/item/e-4532/"
+          }
+        ]
       }
     ]
   }
