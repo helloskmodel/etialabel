@@ -20,26 +20,26 @@ esc = hp.esc
 UI = {
   "en": {"eyebrow": "Application Note", "info": "Basic Application Information",
          "problems": "Existing Process & Problems", "solution": "Solution",
-         "advantages": "Application Advantages",
+         "advantages": "Application Advantages", "applications": "Typical Applications",
          "cta_btn": "Request Samples & TDS by Email",
          "cta_note": "No online download — samples and the technical datasheet are sent one-to-one by email.",
          "home": "Home", "notes": "Application Notes",
          "hub_lede": "Engineering application notes: the application, the problem, the solution and the advantages — by process."},
   "zh": {"eyebrow": "应用笔记", "info": "基础应用信息",
-         "problems": "现有工艺及问题", "solution": "解决方案", "advantages": "应用优势",
+         "problems": "现有工艺及问题", "solution": "解决方案", "advantages": "应用优势", "applications": "典型应用",
          "cta_btn": "邮件申请样品 & TDS",
          "cta_note": "本页无在线下载，样品与技术数据表仅通过邮件一对一发送。",
          "home": "首页", "notes": "应用笔记",
          "hub_lede": "工程应用笔记：逐个应用讲清基础信息、现有问题、解决方案与应用优势。"},
   "vi": {"eyebrow": "Ghi chú ứng dụng", "info": "Thông tin ứng dụng cơ bản",
          "problems": "Quy trình hiện tại & vấn đề", "solution": "Giải pháp",
-         "advantages": "Ưu điểm ứng dụng", "cta_btn": "Yêu cầu mẫu & TDS qua Email",
+         "advantages": "Ưu điểm ứng dụng", "applications": "Ứng dụng điển hình", "cta_btn": "Yêu cầu mẫu & TDS qua Email",
          "cta_note": "Không tải xuống trực tuyến — mẫu và bảng dữ liệu kỹ thuật được gửi riêng qua email.",
          "home": "Trang chủ", "notes": "Ghi chú ứng dụng",
          "hub_lede": "Ghi chú ứng dụng kỹ thuật: thông tin cơ bản, vấn đề, giải pháp và ưu điểm — theo quy trình."},
   "th": {"eyebrow": "บันทึกการใช้งาน", "info": "ข้อมูลการใช้งานพื้นฐาน",
          "problems": "กระบวนการปัจจุบันและปัญหา", "solution": "โซลูชัน",
-         "advantages": "ข้อได้เปรียบในการใช้งาน", "cta_btn": "ขอตัวอย่าง & TDS ทางอีเมล",
+         "advantages": "ข้อได้เปรียบในการใช้งาน", "applications": "การใช้งานทั่วไป", "cta_btn": "ขอตัวอย่าง & TDS ทางอีเมล",
          "cta_note": "ไม่มีการดาวน์โหลดออนไลน์ — ตัวอย่างและเอกสารข้อมูลเทคนิคจะถูกส่งทางอีเมล",
          "home": "หน้าแรก", "notes": "บันทึกการใช้งาน",
          "hub_lede": "บันทึกการใช้งานเชิงวิศวกรรม: ข้อมูลพื้นฐาน ปัญหา โซลูชัน และข้อได้เปรียบ — ตามกระบวนการ"},
@@ -138,6 +138,10 @@ def build_note(d, lang):
     # Simple 4-point template: 1) basic info  2) existing process & problems
     # 3) solution (points)  4) application advantages.
     body = ""
+    _n = [0]
+    def nn():  # consecutive section numbers regardless of which sections exist
+        _n[0] += 1
+        return "%02d" % _n[0]
 
     # 1. Basic application information — facts table + location photos (gallery)
     info = L(d.get("info", {}), lang)
@@ -153,7 +157,7 @@ def build_note(d, lang):
         rows = "".join('<div class="anfrow"><span class="anfk">%s</span><span class="anfv">%s</span></div>'
                        % (esc(i.get("label", "")), esc(i.get("value", ""))) for i in info)
         facts = ('<div class="anfacts">%s</div>' % rows) if info else ""
-        body += sec("01", ui["info"], facts + gal_html)
+        body += sec(nn(), ui["info"], facts + gal_html)
 
     # 2. Existing process & problems — intro paragraph + problem bullets
     prob = d.get("problems", {})
@@ -162,8 +166,11 @@ def build_note(d, lang):
     inner = paras(p_intro)
     if p_items:
         inner += bullets(p_items)
+    p_outro = L(prob.get("outro", {}), lang)
+    if p_outro:
+        inner += paras(p_outro)
     if inner:
-        body += sec("02", ui["problems"], inner)
+        body += sec(nn(), ui["problems"], inner)
 
     # 3. Solution — optional intro + labelled points (+ optional image/gallery)
     sol = ""
@@ -177,12 +184,17 @@ def build_note(d, lang):
     if points:
         sol += _adv(points)
     if sol:
-        body += sec("03", ui["solution"], sol)
+        body += sec(nn(), ui["solution"], sol)
 
     # 4. Application advantages — bullet list
     adv = L(d.get("advantages", {}), lang)
     if adv:
-        body += sec("04", ui["advantages"], bullets(adv))
+        body += sec(nn(), ui["advantages"], bullets(adv))
+
+    # 5. Typical applications — bullet list
+    apps = L(d.get("applications", {}), lang)
+    if apps:
+        body += sec(nn(), ui["applications"], bullets(apps))
 
     contact = hp.Lx(lang, "/contact/")
     body += ('<div class="ancta"><h3>%s</h3><p>%s</p><a class="anbtn" href="%s">%s</a></div>' % (
