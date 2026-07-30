@@ -518,15 +518,15 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 
 NAV_ITEMS = [("Home", "/", "home"),
              ("Product", "/applications/", "products"),
-             ("Application", "/applications/", "applications"),
+             ("Solutions", "/applications/", "applications"),
              ("Insight", "/insights/", "insights"),
              ("Service", "/service/", "service")]
-NAV_ZH = {"Home":"首页","Products":"产品","Product":"产品","Industry":"行业","Case Studies":"案例","Application Notes":"应用笔记","Application":"应用","News":"新闻","Insights":"洞察","Insight":"洞察","Service":"服务",
+NAV_ZH = {"Home":"首页","Products":"产品","Product":"产品","Industry":"行业","Solutions":"方案","Case Studies":"案例","Application Notes":"应用笔记","Application":"应用","News":"新闻","Insights":"洞察","Insight":"洞察","Service":"服务",
           "Industries":"行业","About ETIA":"关于 ETIA","Contact":"联系我们"}
 # 4-language nav / footer labels (keyed by the English label)
-NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Product":"Sản phẩm","Industry":"Ngành","Case Studies":"Nghiên cứu điển hình","Application Notes":"Ghi chú ứng dụng","Application":"Ứng dụng","News":"Tin tức","Insight":"Kiến thức","Service":"Dịch vụ",
+NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Product":"Sản phẩm","Industry":"Ngành","Solutions":"Giải pháp","Case Studies":"Nghiên cứu điển hình","Application Notes":"Ghi chú ứng dụng","Application":"Ứng dụng","News":"Tin tức","Insight":"Kiến thức","Service":"Dịch vụ",
           "Industries":"Ngành","About ETIA":"Về ETIA","Contact":"Liên hệ"}
-NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Product":"ผลิตภัณฑ์","Industry":"อุตสาหกรรม","Case Studies":"กรณีศึกษา","Application Notes":"แอปพลิเคชันโน้ต","Application":"การใช้งาน","News":"ข่าว","Insight":"ความรู้","Service":"บริการ",
+NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Product":"ผลิตภัณฑ์","Industry":"อุตสาหกรรม","Solutions":"โซลูชัน","Case Studies":"กรณีศึกษา","Application Notes":"แอปพลิเคชันโน้ต","Application":"การใช้งาน","News":"ข่าว","Insight":"ความรู้","Service":"บริการ",
           "Industries":"อุตสาหกรรม","About ETIA":"เกี่ยวกับ ETIA","Contact":"ติดต่อ"}
 def navlab(lang, t):
     if lang == "zh": return NAV_ZH.get(t, t)
@@ -692,7 +692,7 @@ def nav_html(lang, active, path="/", langs=None):
         sw = '<a class="lang" href="%s">%s</a>' % (L(other, path), LANG_CODE[other])
     return '<nav><div class="navlinks">%s</div>%s%s</nav>' % (items, sw, NAV_TOGGLE)
 
-FOOTER_LINKS = [("Home", "/"), ("Product", u_products()), ("Application", "/applications/"),
+FOOTER_LINKS = [("Home", "/"), ("Product", u_products()), ("Solutions", "/applications/"),
                 ("Insight", "/insights/"), ("Service", "/service/"),
                 ("About ETIA", "/about/"), ("Contact", "/contact/")]
 FOOTER_I18N = {
@@ -1292,8 +1292,8 @@ def home_nav(lang):
     prod=simple_dropdown(lang, "Product", "/applications/", PROD_AXES[1][3], False, lf)
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
-    # top nav after Product: Application, Insight, Service
-    app_lbl={"en":"Application","zh":"应用","vi":"Ứng dụng","th":"การใช้งาน"}.get(lang,"Application")
+    # top nav after Product: Solutions, Insight, Service
+    app_lbl={"en":"Solutions","zh":"方案","vi":"Giải pháp","th":"โซลูชัน"}.get(lang,"Solutions")
     ins_lbl={"en":"Insight","zh":"洞察","vi":"Kiến thức","th":"ความรู้"}.get(lang,"Insight")
     sv_lbl={"en":"Service","zh":"服务","vi":"Dịch vụ","th":"บริการ"}.get(lang,"Service")
     links=('<a href="%s">%s</a><a href="%s">%s</a><a href="%s">%s</a>'%(
@@ -1939,26 +1939,9 @@ def build_applications(lang):
         ("从高温到超低温 —— 按使用环境选择合适的标签方案。" if zh
          else "From high heat to deep cryogenic — choose a label solution by operating environment."),
         sol_cards)
-    # 2) Browse-by-Industry grid — same image cards as the home "Solutions by
-    #    Industry" section, linking to each industry sector page.
-    ind_cards=""
-    for k,f in enumerate(T["focus"]):
-        top=('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">'%(esc(f["img"]),esc(f["name"]))) if f.get("img") \
-            else ('<span class="aicon">%s</span>'%INDUSTRY_ICONS[k%len(INDUSTRY_ICONS)])
-        ind_cards+=('<a class="acard" href="%s"><div class="acard-img g%d">%s</div>'
-                    '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p>'
-                    '<div class="acard-go">%s →</div></div></a>')%(
-            home_hlink(lang,FOCUS_URLS[k]), k%6, top,
-            esc(f["name"]), esc(f["desc"]), esc(T["explore"]))
-    ind_section=('<section class="blk" style="background:var(--tint-blue)"><div class="wrap">'
-                 '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
-                 '<div class="acgrid">%s</div></div></section>')%(
-        ("按行业" if zh else "BY INDUSTRY"),
-        ("按行业浏览" if zh else "Browse by Industry"),
-        ("按行业查看典型标识场景与推荐材料。" if zh else "See typical identification scenarios and recommended materials for each industry."),
-        ind_cards)
-    # 3) Application Notes
-    body=(sol_section+ind_section+
+    # 2) Application Notes (industries now live in the Product nav dropdown, so
+    #    the Solutions page carries the environment solutions + the notes only).
+    body=(sol_section+
           '<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
           '<div class="appnotesgrid">%s</div></div></section>'
           '<div class="wrap">%s</div>')%(
@@ -1969,12 +1952,12 @@ def build_applications(lang):
     s=HOME2.get(lang,HOME2["en"])["sections"][1]
     hero=page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
                    ("咨询工程师" if zh else "Talk to Engineering"), "/contact/", "", "", SECTION_BG.get(1,""))
-    crumb=[("Home","/"),("Applications","/applications/")]
+    crumb=[("Home","/"),(("方案" if zh else "Solutions"),"/applications/")]
     write(lang,"/applications/",page(lang,"/applications/",
-        ("应用 | ETIA" if zh else "Applications | ETIA"),
-        ("按行业浏览 ETIA 应用笔记 —— 汽车、PCB、医疗、钢铁、户外能源等。" if zh
-         else "Browse ETIA application notes by industry - automotive, PCB, medical, steel, outdoor energy and more."),
-        ("应用" if zh else "Applications"), "",
+        ("方案 | ETIA" if zh else "Solutions | ETIA"),
+        ("按使用环境选择标签方案，并查看真实应用笔记 —— 高温、低温与更多。" if zh
+         else "Choose a label solution by operating environment and browse real-world application notes — heat, cold and more."),
+        ("方案" if zh else "Solutions"), "",
         body, crumb, active="applications", trust=False, hero=hero))
     if lang=="en": track("/applications/","industries")
 
