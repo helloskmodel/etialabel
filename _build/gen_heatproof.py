@@ -844,6 +844,7 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
     return """<!doctype html><html lang="%s"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com" crossorigin><link rel="dns-prefetch" href="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com">
 <title>%s</title><meta name="description" content="%s">
 <link rel="canonical" href="%s">%s
 <meta property="og:title" content="%s"><meta property="og:type" content="website"><meta property="og:site_name" content="ETIA Label">
@@ -1578,6 +1579,7 @@ def build_home(lang):
     doc="""<!doctype html><html lang="%s"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com" crossorigin><link rel="dns-prefetch" href="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com">
 <title>%s</title><meta name="description" content="%s">
 <link rel="canonical" href="%s">%s%s
 <meta property="og:title" content="%s"><meta property="og:type" content="website"><meta property="og:site_name" content="ETIA Label">
