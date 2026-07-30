@@ -3,34 +3,48 @@
   "source": "client brief — High Heat Identification Solutions",
   "langs": [
     "en",
-    "zh"
+    "zh",
+    "vi",
+    "th"
   ],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/enviroment-heat",
   "banner_pos": "center bottom",
   "eyebrow": {
     "en": "Solutions",
-    "zh": "解决方案"
+    "zh": "解决方案",
+    "vi": "Giải pháp",
+    "th": "โซลูชัน"
   },
   "title": {
     "en": "Heat Resistant Labeling Solutions",
-    "zh": "耐高温标签解决方案"
+    "zh": "耐高温标签解决方案",
+    "vi": "Giải pháp nhãn chịu nhiệt cao",
+    "th": "โซลูชันฉลากทนความร้อนสูง"
   },
   "tagline": {
     "en": "Engineered for high heat. Built for reliable identification.",
-    "zh": "耐受严苛高温，保障稳定识别。"
+    "zh": "耐受严苛高温，保障稳定识别。",
+    "vi": "Được thiết kế cho nhiệt độ cao. Chế tạo để nhận dạng đáng tin cậy.",
+    "th": "ออกแบบมาเพื่อความร้อนสูง สร้างมาเพื่อการระบุที่เชื่อถือได้"
   },
   "positioning": {
     "en": "Built with high-performance materials, specialty adhesives, and durable topcoats, our high heat identification solutions are engineered for demanding thermal processes. They maintain reliable adhesion, clear identification, and long-lasting durability across a wide range of high-temperature manufacturing applications.",
-    "zh": "采用高性能面材、特种胶粘技术及耐高温涂层，专为严苛高温工艺打造，在高温、热循环及复杂制造环境中保持稳定粘接、清晰识别和持久耐用，满足各类高温制造应用的标识需求。"
+    "zh": "采用高性能面材、特种胶粘技术及耐高温涂层，专为严苛高温工艺打造，在高温、热循环及复杂制造环境中保持稳定粘接、清晰识别和持久耐用，满足各类高温制造应用的标识需求。",
+    "vi": "Được chế tạo từ vật liệu hiệu suất cao, keo dán chuyên dụng và lớp phủ bảo vệ bền bỉ, các giải pháp nhận dạng chịu nhiệt cao của chúng tôi được thiết kế cho những quy trình nhiệt khắc nghiệt. Chúng duy trì độ bám dính ổn định, khả năng nhận dạng rõ ràng và độ bền lâu dài trên nhiều ứng dụng sản xuất ở nhiệt độ cao.",
+    "th": "ผลิตจากวัสดุประสิทธิภาพสูง กาวชนิดพิเศษ และชั้นเคลือบผิวที่ทนทาน โซลูชันการระบุที่ทนความร้อนสูงของเราได้รับการออกแบบมาสำหรับกระบวนการทางความร้อนที่ต้องการความทนทานสูง ฉลากยังคงยึดเกาะได้อย่างมั่นคง ระบุได้ชัดเจน และคงทนยาวนานในงานการผลิตที่อุณหภูมิสูงหลากหลายประเภท"
   },
   "why": {
     "heading": {
       "en": "Why Heat Resistant Labeling?",
-      "zh": "为什么选择耐高温标签？"
+      "zh": "为什么选择耐高温标签？",
+      "vi": "Tại sao chọn nhãn chịu nhiệt?",
+      "th": "ทำไมต้องเลือกฉลากทนความร้อน?"
     },
     "intro": {
       "en": "High-temperature applications require more than heat-resistant materials. The right combination of facestock, adhesive, and protective coating ensures labels remain securely bonded and readable throughout demanding thermal processes.",
-      "zh": "高温应用不仅需要耐热材料，更需要面材、胶粘剂和保护涂层的协同设计，才能在严苛高温工艺中保持牢固粘接、清晰识别和稳定性能。"
+      "zh": "高温应用不仅需要耐热材料，更需要面材、胶粘剂和保护涂层的协同设计，才能在严苛高温工艺中保持牢固粘接、清晰识别和稳定性能。",
+      "vi": "Các ứng dụng ở nhiệt độ cao đòi hỏi nhiều hơn là vật liệu chịu nhiệt. Sự kết hợp đúng đắn giữa vật liệu bề mặt, keo dán và lớp phủ bảo vệ đảm bảo nhãn luôn bám dính chắc chắn và dễ đọc trong suốt các quy trình nhiệt khắc nghiệt.",
+      "th": "งานที่อุณหภูมิสูงต้องการมากกว่าแค่วัสดุที่ทนความร้อน การผสมผสานที่เหมาะสมระหว่างวัสดุหน้าฉลาก กาว และชั้นเคลือบป้องกันช่วยให้ฉลากยังคงยึดเกาะได้อย่างมั่นคงและอ่านได้ชัดเจน ตลอดกระบวนการทางความร้อนที่ต้องการความทนทานสูง"
     },
     "items": {
       "en": [
@@ -46,6 +60,20 @@
         "耐高温、耐磨损、耐化学腐蚀保护涂层",
         "条码及打印信息长期清晰可读",
         "满足多种高温制造工艺应用需求"
+      ],
+      "vi": [
+        "Vật liệu hiệu suất cao cho môi trường nhiệt khắc nghiệt",
+        "Keo dán chuyên dụng giúp bám dính ổn định ở nhiệt độ cao",
+        "Lớp phủ bền bỉ chống nhiệt, mài mòn và hóa chất",
+        "Độ bền vượt trội của mã vạch và thông tin in ấn",
+        "Được thiết kế cho nhiều ứng dụng công nghiệp"
+      ],
+      "th": [
+        "วัสดุประสิทธิภาพสูงสำหรับสภาพแวดล้อมความร้อนที่ต้องการความทนทานสูง",
+        "กาวชนิดพิเศษเพื่อการยึดเกาะที่เชื่อถือได้ที่อุณหภูมิสูง",
+        "ชั้นเคลือบที่ทนทานต่อความร้อน การขัดถู และสารเคมี",
+        "ความคงทนยอดเยี่ยมของบาร์โค้ดและงานพิมพ์",
+        "ออกแบบมาสำหรับงานอุตสาหกรรมที่หลากหลาย"
       ]
     }
   },
@@ -85,9 +113,21 @@
         "desc": "Designed for multiple lead-free reflow cycles while maintaining reliable adhesion, barcode readability, and PCB traceability. At this range, coated polyimide (PI) film is the industry-standard facestock.",
         "apps": "PCB manufacturing • SMT assembly • Electronic components • PCBA traceability",
         "products_list": [
-          {"name": "Apex™ Series", "material": "Polyimide (PI) — next-generation, advanced PCB processes", "url": "/products/item/apex/"},
-          {"name": "XF58 Series", "material": "Polyimide (PI) — proven, everyday PCB manufacturing", "url": "/products/item/xf58/"},
-          {"name": "E-Series", "material": "Polyimide (PI) — high-volume PCB production", "url": "/products/item/e-series/"}
+          {
+            "name": "Apex™ Series",
+            "material": "Polyimide (PI) — next-generation, advanced PCB processes",
+            "url": "/products/item/apex/"
+          },
+          {
+            "name": "XF58 Series",
+            "material": "Polyimide (PI) — proven, everyday PCB manufacturing",
+            "url": "/products/item/xf58/"
+          },
+          {
+            "name": "E-Series",
+            "material": "Polyimide (PI) — high-volume PCB production",
+            "url": "/products/item/e-series/"
+          }
         ],
         "lo": 260,
         "hi": 330
@@ -146,9 +186,21 @@
         "desc": "适用于多次无铅回流焊工艺，保持稳定粘接、条码清晰及产品追溯。在该温区，涂布型聚酰亚胺（PI）薄膜是行业标准面材。",
         "apps": "PCB 制造 • SMT 贴装 • 电子元器件 • PCBA 追溯",
         "products_list": [
-          {"name": "Apex™ 系列", "material": "聚酰亚胺（PI）—— 下一代，先进 PCB 制程", "url": "/products/item/apex/"},
-          {"name": "XF58 系列", "material": "聚酰亚胺（PI）—— 成熟稳定，日常 PCB 制造", "url": "/products/item/xf58/"},
-          {"name": "E 系列", "material": "聚酰亚胺（PI）—— 高产量 PCB 生产", "url": "/products/item/e-series/"}
+          {
+            "name": "Apex™ 系列",
+            "material": "聚酰亚胺（PI）—— 下一代，先进 PCB 制程",
+            "url": "/products/item/apex/"
+          },
+          {
+            "name": "XF58 系列",
+            "material": "聚酰亚胺（PI）—— 成熟稳定，日常 PCB 制造",
+            "url": "/products/item/xf58/"
+          },
+          {
+            "name": "E 系列",
+            "material": "聚酰亚胺（PI）—— 高产量 PCB 生产",
+            "url": "/products/item/e-series/"
+          }
         ],
         "lo": 260,
         "hi": 330
@@ -168,6 +220,152 @@
         "title": "热处理过程管理",
         "desc": "标签于常温贴附，随产品经历退火、淬火、烧结等高温工艺，在整个热处理过程中保持稳定识别。",
         "apps": "钢铁 • 陶瓷 • 瓷制品 • 混凝土制品 • 电子制造 • 金属加工",
+        "lo": 20,
+        "hi": 1200
+      }
+    ],
+    "vi": [
+      {
+        "temp": "121–135°C",
+        "process": "Xử lý bằng nồi hấp",
+        "title": "Tiệt trùng bằng hơi nước",
+        "desc": "Nhãn chịu được các chu trình tiệt trùng hơi nước lặp lại trong khi vẫn bám dính chắc chắn và đọc được hoàn toàn.",
+        "apps": "Thiết bị y tế • Dụng cụ phẫu thuật • Hộp đựng phòng thí nghiệm • Thiết bị chăm sóc sức khỏe",
+        "lo": 121,
+        "hi": 135
+      },
+      {
+        "temp": "150–220°C",
+        "process": "Lò sấy đóng rắn",
+        "title": "Sơn & phủ bột",
+        "desc": "Nhãn vẫn bám dính và đọc được trong suốt các chu trình sấy sơn và phủ bột mà không bị phồng rộp, đổi màu hay xuống cấp thông tin in.",
+        "apps": "Phụ tùng ô tô • Gia công kim loại • Đồ gia dụng • Thiết bị công nghiệp",
+        "lo": 150,
+        "hi": 220
+      },
+      {
+        "temp": "170–220°C",
+        "process": "Lưu hóa cao su",
+        "title": "Lưu hóa cao su",
+        "desc": "Nhãn được dán trước khi lưu hóa chịu được nhiệt, áp suất và sự giãn nở của cao su trong suốt quá trình lưu hóa.",
+        "apps": "Lốp xe • Ống cao su • Gioăng cao su • Chi tiết cao su đúc khuôn",
+        "lo": 170,
+        "hi": 220
+      },
+      {
+        "temp": "260–330°C",
+        "process": "Lắp ráp SMT",
+        "title": "Hàn hồi lưu PCB",
+        "desc": "Được thiết kế cho nhiều chu trình hàn hồi lưu không chì trong khi duy trì độ bám dính ổn định, khả năng đọc mã vạch và truy xuất nguồn gốc PCB. Ở dải nhiệt này, màng polyimide (PI) phủ lớp là vật liệu bề mặt tiêu chuẩn của ngành.",
+        "apps": "Sản xuất PCB • Lắp ráp SMT • Linh kiện điện tử • Truy xuất nguồn gốc PCBA",
+        "products_list": [
+          {
+            "name": "Apex™ Series",
+            "material": "Polyimide (PI) — quy trình PCB thế hệ mới, tiên tiến",
+            "url": "/products/item/apex/"
+          },
+          {
+            "name": "XF58 Series",
+            "material": "Polyimide (PI) — đã được kiểm chứng, sản xuất PCB hằng ngày",
+            "url": "/products/item/xf58/"
+          },
+          {
+            "name": "E-Series",
+            "material": "Polyimide (PI) — sản xuất PCB số lượng lớn",
+            "url": "/products/item/e-series/"
+          }
+        ],
+        "lo": 260,
+        "hi": 330
+      },
+      {
+        "temp": "Đến 1000°C",
+        "process": "Dán trực tiếp khi còn nóng",
+        "title": "Dán trực tiếp ở nhiệt độ siêu cao",
+        "desc": "Nhãn được dán trực tiếp lên bề mặt thép, nhôm hoặc kim loại nóng khác ngay sau khi đúc hoặc cán, loại bỏ nhu cầu làm nguội trước khi nhận dạng.",
+        "apps": "Nhà máy thép • Chế biến nhôm • Chế biến đồng • Đúc liên tục • Cán nóng",
+        "lo": 800,
+        "hi": 1000
+      },
+      {
+        "temp": "Đến 1200°C",
+        "process": "Xử lý nhiệt",
+        "title": "Quản lý quy trình xử lý nhiệt",
+        "desc": "Nhãn được dán trước khi xử lý nhiệt và đi cùng sản phẩm trong suốt quá trình ủ, nung, thiêu kết và các quy trình nhiệt khác để đảm bảo nhận dạng liên tục.",
+        "apps": "Thép • Gốm • Sứ • Bê tông • Điện tử • Gia công kim loại",
+        "lo": 20,
+        "hi": 1200
+      }
+    ],
+    "th": [
+      {
+        "temp": "121–135°C",
+        "process": "การประมวลผลด้วยหม้อนึ่งความดัน",
+        "title": "การฆ่าเชื้อด้วยไอน้ำ",
+        "desc": "ฉลากทนต่อรอบการฆ่าเชื้อด้วยไอน้ำซ้ำ ๆ ได้ในขณะที่ยังคงยึดเกาะอย่างมั่นคงและอ่านได้อย่างสมบูรณ์",
+        "apps": "อุปกรณ์การแพทย์ • เครื่องมือผ่าตัด • ภาชนะในห้องปฏิบัติการ • อุปกรณ์ด้านสุขภาพ",
+        "lo": 121,
+        "hi": 135
+      },
+      {
+        "temp": "150–220°C",
+        "process": "เตาอบบ่ม",
+        "title": "การพ่นสีและการเคลือบผง",
+        "desc": "ฉลากยังคงยึดเกาะและอ่านได้ตลอดรอบการอบสีและการเคลือบผงโดยไม่เกิดฟอง ไม่เปลี่ยนสี และงานพิมพ์ไม่เสื่อมสภาพ",
+        "apps": "ชิ้นส่วนยานยนต์ • งานโลหะ • เครื่องใช้ไฟฟ้า • อุปกรณ์อุตสาหกรรม",
+        "lo": 150,
+        "hi": 220
+      },
+      {
+        "temp": "170–220°C",
+        "process": "การบ่มยาง",
+        "title": "การวัลคาไนซ์ยาง",
+        "desc": "ฉลากที่ติดก่อนการบ่มทนต่อความร้อน แรงดัน และการขยายตัวของยางตลอดกระบวนการวัลคาไนซ์",
+        "apps": "ยางรถยนต์ • ท่อยาง • ซีลยาง • ชิ้นส่วนยางขึ้นรูป",
+        "lo": 170,
+        "hi": 220
+      },
+      {
+        "temp": "260–330°C",
+        "process": "การประกอบ SMT",
+        "title": "การบัดกรีรีโฟลว์ PCB",
+        "desc": "ออกแบบมาสำหรับรอบการบัดกรีรีโฟลว์แบบไร้สารตะกั่วหลายรอบ ในขณะที่ยังคงการยึดเกาะที่เชื่อถือได้ อ่านบาร์โค้ดได้ และตรวจสอบย้อนกลับ PCB ได้ ในช่วงอุณหภูมินี้ ฟิล์มโพลีอิไมด์ (PI) แบบเคลือบเป็นวัสดุหน้าฉลากมาตรฐานของอุตสาหกรรม",
+        "apps": "การผลิต PCB • การประกอบ SMT • ชิ้นส่วนอิเล็กทรอนิกส์ • การตรวจสอบย้อนกลับ PCBA",
+        "products_list": [
+          {
+            "name": "Apex™ Series",
+            "material": "Polyimide (PI) — กระบวนการ PCB ขั้นสูงรุ่นใหม่",
+            "url": "/products/item/apex/"
+          },
+          {
+            "name": "XF58 Series",
+            "material": "Polyimide (PI) — ผ่านการพิสูจน์แล้ว สำหรับการผลิต PCB ประจำวัน",
+            "url": "/products/item/xf58/"
+          },
+          {
+            "name": "E-Series",
+            "material": "Polyimide (PI) — การผลิต PCB ปริมาณมาก",
+            "url": "/products/item/e-series/"
+          }
+        ],
+        "lo": 260,
+        "hi": 330
+      },
+      {
+        "temp": "สูงถึง 1000°C",
+        "process": "การติดโดยตรงขณะร้อน",
+        "title": "การติดโดยตรงที่อุณหภูมิสูงยิ่งยวด",
+        "desc": "ฉลากถูกติดโดยตรงบนพื้นผิวเหล็ก อะลูมิเนียม หรือโลหะร้อนอื่น ๆ ทันทีหลังการหล่อหรือการรีด โดยไม่ต้องรอให้เย็นลงก่อนการระบุ",
+        "apps": "โรงงานเหล็ก • การแปรรูปอะลูมิเนียม • การแปรรูปทองแดง • การหล่อต่อเนื่อง • การรีดร้อน",
+        "lo": 800,
+        "hi": 1000
+      },
+      {
+        "temp": "สูงถึง 1200°C",
+        "process": "การอบชุบด้วยความร้อน",
+        "title": "การจัดการกระบวนการอบชุบด้วยความร้อน",
+        "desc": "ฉลากถูกติดก่อนการอบชุบด้วยความร้อนและติดอยู่กับผลิตภัณฑ์ตลอดกระบวนการอบอ่อน การเผา การซินเตอร์ และกระบวนการทางความร้อนอื่น ๆ เพื่อให้ระบุได้อย่างต่อเนื่อง",
+        "apps": "เหล็ก • เซรามิก • พอร์ซเลน • คอนกรีต • อิเล็กทรอนิกส์ • งานโลหะ",
         "lo": 20,
         "hi": 1200
       }
