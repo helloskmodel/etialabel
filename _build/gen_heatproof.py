@@ -1467,15 +1467,17 @@ SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
 
 def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
     st = ' style="background-image:url(%s)"' % esc(bg) if bg else ""
+    # Every part except the headline + slogan is optional. Pass empty eyebrow /
+    # body / b1 to render a minimal hero (Headline + Slogan only).
+    eyebrow_html = ('<div class="eyebrow">%s</div>' % esc(eyebrow)) if eyebrow else ""
     body_html = ('<p class="hbody">%s</p>' % esc(body)) if body else ""
-    # second button is optional — omit it when its label is empty
     b2_html = ('<a class="btn sec" href="%s">%s</a>' % (linkfn(lang, b2u), esc(b2))) if b2 else ""
+    btns_html = ('<div class="btns"><a class="btn pri" href="%s">%s</a>%s</div>' % (
+        linkfn(lang, b1u), esc(b1), b2_html)) if b1 else ""
     return ('<section class="hbanner"%s><div class="wrap">'
-            '<div class="eyebrow">%s</div><h1>%s</h1>'
-            '<p class="hsub">%s</p>%s'
-            '<div class="btns"><a class="btn pri" href="%s">%s</a>%s</div></div></section>') % (
-        st, esc(eyebrow), esc(title), esc(sub), body_html,
-        linkfn(lang, b1u), esc(b1), b2_html)
+            '%s<h1>%s</h1>'
+            '<p class="hsub">%s</p>%s%s</div></section>') % (
+        st, eyebrow_html, esc(title), esc(sub), body_html, btns_html)
 
 def home_banner(lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
     return _banner_html(home_hlink, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u)
@@ -1894,10 +1896,9 @@ def build_service(lang):
         fields, phones)
     body=commit_sec+form_sec+('<div class="wrap">%s</div>'%cta2(lang,"service"))+tabscript
     crumb=[("Home","/"),("Service","/service/")]
-    # hero without the body paragraph and with a single CTA (matches the other pages)
+    # hero = Headline + Slogan only (no eyebrow, no body paragraph, no buttons)
     sh=HOME2.get(lang,HOME2["en"])["sections"][3]
-    hero=page_hero(lang, sh["eyebrow"], sh["h2"], sh["sub"], "",
-                   sh["b1"], sh["b1u"], "", "", SECTION_BG.get(3,""))
+    hero=page_hero(lang, "", sh["h2"], sh["sub"], "", "", "", "", "", SECTION_BG.get(3,""))
     write(lang,"/service/",page(lang,"/service/",
         ("服务 | ETIA" if zh else "Service | ETIA"),
         ("100% 质量检测、应用驱动选型、柔性供应与快速响应服务 —— ETIA 服务承诺。" if zh
