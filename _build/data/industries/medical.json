@@ -96,30 +96,7 @@
           "img": "",
           "landing": false,
           "slug": ""
-        }
-      ]
-    },
-    {
-      "tab": {
-        "en": "Cryotube · Cold LN₂",
-        "zh": "冻存管冷贴液氮存",
-        "vi": "Ống dán lạnh LN₂",
-        "th": "หลอดติดเย็น LN₂"
-      },
-      "name": {
-        "en": "Cryotube · Cold-Applied LN₂ Storage",
-        "zh": "冻存管冷贴液氮存储",
-        "vi": "Ống trữ · dán lạnh lưu nitơ lỏng",
-        "th": "หลอดเก็บ · ติดเย็นเก็บไนโตรเจนเหลว"
-      },
-      "intro": {
-        "en": "Cryotube labels applied directly at −80°C — high-toughness film that resists cracking and frost curling through repeated freeze-thaw, for plastic and micro-glass cryotubes.",
-        "zh": "冻存管标签，−80℃ 直贴 —— 高韧性薄膜抗脆裂、防结霜翘边，历经反复冻融，适配塑料与微量玻璃冻存管。",
-        "vi": "Nhãn ống đông dán trực tiếp ở −80°C — màng bền dai chống nứt và cong vênh do sương giá qua đông-rã lặp lại, cho ống nhựa và ống thủy tinh siêu nhỏ.",
-        "th": "ฉลากหลอดเก็บตัวอย่าง ติดตรงที่ −80°C — ฟิล์มเหนียวสูงต้านการแตกและขอบงอจากน้ำค้างผ่านการแช่-ละลายซ้ำ สำหรับหลอดพลาสติกและแก้วขนาดจิ๋ว"
-      },
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-196DIRECT-TUBE",
-      "products": [
+        },
         {
           "name": {
             "en": "E-4802 Transparent Cryotube Label",
