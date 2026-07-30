@@ -379,7 +379,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 /* explore-by-application: six cards (image top / copy below) */
 .acgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
 .acgrid.acgrid5{grid-template-columns:repeat(5,1fr)}
-.solgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:760px}
+.solgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:1000px}
 @media(max-width:560px){.solgrid{grid-template-columns:1fr}}
 .freesample{background:linear-gradient(150deg,var(--blue),var(--blue-deep))}
 .fsbox{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
@@ -552,6 +552,7 @@ PROD_AXES = [
  ("env","By Environment","按环境",[
    ("Heat Resistant","耐高温","/products/item/high-heat-identification/"),
    ("Low Temperature Resistant","耐低温","/products/item/cold-chain-cryogenic-labels/"),
+   ("Chemical Resistant","耐化学","/products/item/chemical-resistant-labels/"),
  ]),
  ("app","By Industry","按行业",[
    ("PCB","PCB","/industries/pcb-electronics-labeling-solutions/"),
@@ -1930,8 +1931,11 @@ def build_applications(lang):
       "/products/item/cold-chain-cryogenic-labels/":
         {"en":"Cold-chain and cryogenic labels for storage down to −196°C and repeated freeze-thaw.",
          "zh":"冷链与超低温标签 —— 适用于低至 −196°C 存储与反复冻融"},
+      "/products/item/chemical-resistant-labels/":
+        {"en":"Labels that resist solvents, disinfectants, oils, acids and alkalis without fading or lifting.",
+         "zh":"耐溶剂、消毒剂、油污、酸碱等化学介质 —— 不褪色、不脱落"},
     }
-    SOL_ICON=[1,2]  # flame-ish / droplet from INDUSTRY_ICONS — decorative
+    SOL_ICON=[1,2,0]  # flame-ish / droplet / chip from INDUSTRY_ICONS — decorative
     sol_cards=""
     for i,(e,z,u) in enumerate(PROD_AXES[0][3]):
         nm=z if zh else e
