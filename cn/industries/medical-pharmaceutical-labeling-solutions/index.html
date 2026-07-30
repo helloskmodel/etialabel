@@ -539,8 +539,9 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .wc2col .wccatimg{margin:0;width:100%;height:140px;object-fit:cover;aspect-ratio:auto}
 .wccatcard{background:#f4f7fd;border:1px solid #e6ecf7;border-radius:12px;padding:15px 18px;display:flex;align-items:center}
 .wccatcard .wccatintro{margin:0;text-align:left;font-size:15px;line-height:1.62;color:#2c3a58}
-#wcpanel .wcmcards{max-width:720px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-#wcpanel .wcmcards.wcone{grid-template-columns:1fr;max-width:720px}
+/* fixed-size cards, centered — a single product stays one card, never stretches */
+#wcpanel .wcmcards{max-width:760px;grid-template-columns:repeat(auto-fill,240px);justify-content:center}
+#wcpanel .wcmcards.wcone{grid-template-columns:240px;justify-content:center;max-width:760px}
 @media(max-width:760px){.wc2col{grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}.wc2col .wccatimg{height:120px}.wccatcard{padding:12px 13px}.wccatcard .wccatintro{font-size:12.5px;line-height:1.48}#wcpanel .wcmcards,#wcpanel .wcmcards.wcone{grid-template-columns:1fr}}
 .wccatintro{color:#2c3a58;font-size:16px;line-height:1.7;margin:8px auto 20px}
 .wcmcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
