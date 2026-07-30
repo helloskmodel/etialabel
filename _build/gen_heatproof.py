@@ -1687,6 +1687,13 @@ def write_redirects():
       {"source":"/industries/medical-labeling-solutions","destination":"/industries/medical-pharmaceutical-labeling-solutions/","permanent":True},
       {"source":"/industries/steel-labeling-solutions","destination":"/industries/steel-metal-ceramic-labeling-solutions/","permanent":True},
     ]}
+    # Always revalidate HTML so visitors get the latest page (the CSS is inlined in
+    # each page, so a stale HTML also means stale styling). Content is regenerated
+    # on every deploy, so caching HTML causes "changes not showing" reports.
+    cfg["headers"]=[
+      {"source":"/(.*)","headers":[
+        {"key":"Cache-Control","value":"public, max-age=0, must-revalidate"}]},
+    ]
     open(os.path.join(ROOT,"vercel.json"),"w").write(json.dumps(cfg,indent=2)+"\n")
 
 # ---------------------------------------------------------------- run
