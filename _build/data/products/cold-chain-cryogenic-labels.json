@@ -3,34 +3,48 @@
   "source": "client brief — Cold Chain & Cryogenic Labels",
   "langs": [
     "en",
-    "zh"
+    "zh",
+    "vi",
+    "th"
   ],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/enviroment-cold",
   "banner_pos": "center bottom",
   "eyebrow": {
     "en": "Solutions",
-    "zh": "解决方案"
+    "zh": "解决方案",
+    "vi": "Giải pháp",
+    "th": "โซลูชัน"
   },
   "title": {
     "en": "Low Temperature Resistant Labeling Solutions",
-    "zh": "耐低温标签解决方案"
+    "zh": "耐低温标签解决方案",
+    "vi": "Giải pháp nhãn chịu nhiệt độ thấp",
+    "th": "โซลูชันฉลากทนอุณหภูมิต่ำ"
   },
   "tagline": {
     "en": "Built for extreme cold. Designed for reliable identification.",
-    "zh": "耐受极寒环境，保障稳定识别。"
+    "zh": "耐受极寒环境，保障稳定识别。",
+    "vi": "Thiết kế cho điều kiện cực lạnh. Đảm bảo nhận dạng đáng tin cậy.",
+    "th": "ออกแบบมาเพื่อความเย็นจัด สร้างขึ้นเพื่อการระบุที่เชื่อถือได้"
   },
   "positioning": {
     "en": "Engineered for pharmaceutical, laboratory, and healthcare applications, our Cold Chain & Cryogenic Labels deliver reliable identification from refrigerated storage to liquid nitrogen environments. Designed to withstand freezing, thawing, and cryogenic conditions, they remain securely bonded and clearly readable throughout the product lifecycle.",
-    "zh": "ETIA 低温与深低温系列标签专为制药、生命科学、实验室及医疗行业打造，覆盖冷藏、冷冻及液氮存储环境，在冻结、解冻及深低温工况下保持牢固粘接和清晰识别，满足样本、血液制品及药品全流程标识需求。"
+    "zh": "ETIA 低温与深低温系列标签专为制药、生命科学、实验室及医疗行业打造，覆盖冷藏、冷冻及液氮存储环境，在冻结、解冻及深低温工况下保持牢固粘接和清晰识别，满足样本、血液制品及药品全流程标识需求。",
+    "vi": "Được thiết kế cho các ứng dụng dược phẩm, phòng thí nghiệm và chăm sóc sức khỏe, nhãn Chuỗi Lạnh & Nhiệt độ Siêu thấp của chúng tôi mang lại khả năng nhận dạng đáng tin cậy từ kho lạnh đến môi trường nitơ lỏng. Được thiết kế để chịu được đông lạnh, rã đông và điều kiện siêu lạnh, nhãn vẫn bám dính chắc chắn và dễ đọc trong suốt vòng đời sản phẩm.",
+    "th": "ออกแบบมาสำหรับงานด้านเภสัชกรรม ห้องปฏิบัติการ และการดูแลสุขภาพ ฉลากโซ่ความเย็นและอุณหภูมิต่ำยิ่งยวดของเราให้การระบุที่เชื่อถือได้ตั้งแต่การจัดเก็บแบบแช่เย็นไปจนถึงสภาพแวดล้อมไนโตรเจนเหลว ออกแบบให้ทนต่อการแช่แข็ง การละลาย และสภาวะเย็นยิ่งยวด ฉลากยังคงยึดติดแน่นและอ่านได้ชัดเจนตลอดวงจรชีวิตของผลิตภัณฑ์"
   },
   "why": {
     "heading": {
       "en": "Why Low Temperature Resistant Labeling?",
-      "zh": "为什么选择耐低温标签？"
+      "zh": "为什么选择耐低温标签？",
+      "vi": "Tại sao chọn nhãn chịu nhiệt độ thấp?",
+      "th": "ทำไมต้องเลือกฉลากทนอุณหภูมิต่ำ?"
     },
     "intro": {
       "en": "Low-temperature applications require labels engineered for demanding environments. From refrigerated pharmaceuticals to cryogenic biobanking, the right label ensures secure adhesion, durable printing, and reliable barcode readability throughout storage, transportation, and laboratory workflows.",
-      "zh": "低温应用需要专为严苛环境设计的标签。从医药冷链到液氮样本保存，合适的标签能够在储存、运输及实验室应用过程中持续保持牢固粘接、清晰打印和可靠识别。"
+      "zh": "低温应用需要专为严苛环境设计的标签。从医药冷链到液氮样本保存，合适的标签能够在储存、运输及实验室应用过程中持续保持牢固粘接、清晰打印和可靠识别。",
+      "vi": "Các ứng dụng ở nhiệt độ thấp đòi hỏi nhãn được thiết kế cho môi trường khắc nghiệt. Từ dược phẩm bảo quản lạnh đến ngân hàng sinh học siêu lạnh, nhãn phù hợp đảm bảo bám dính chắc chắn, in ấn bền bỉ và khả năng đọc mã vạch đáng tin cậy trong suốt quá trình lưu trữ, vận chuyển và quy trình phòng thí nghiệm.",
+      "th": "งานที่อุณหภูมิต่ำต้องใช้ฉลากที่ออกแบบมาสำหรับสภาพแวดล้อมที่ท้าทาย ตั้งแต่เภสัชภัณฑ์แบบแช่เย็นไปจนถึงธนาคารชีวภาพแบบเย็นยิ่งยวด ฉลากที่เหมาะสมช่วยให้ยึดติดแน่น พิมพ์ทนทาน และอ่านบาร์โค้ดได้อย่างเชื่อถือได้ตลอดการจัดเก็บ การขนส่ง และกระบวนการในห้องปฏิบัติการ"
     },
     "items": {
       "en": [
@@ -46,6 +60,20 @@
         "耐冷凝、耐潮湿及冷热循环",
         "条码与热转印打印持久清晰",
         "面向制药、生命科学、实验室及医疗行业"
+      ],
+      "vi": [
+        "Hiệu suất đáng tin cậy từ nhiệt độ môi trường đến −196°C",
+        "Được thiết kế cho các ứng dụng siêu lạnh, đông lạnh và bảo quản lạnh",
+        "Chống ẩm, ngưng tụ và chu kỳ đông–rã đông",
+        "Chất lượng in mã vạch và in truyền nhiệt bền bỉ",
+        "Được thiết kế cho ngành dược phẩm, phòng thí nghiệm và chăm sóc sức khỏe"
+      ],
+      "th": [
+        "ประสิทธิภาพที่เชื่อถือได้ตั้งแต่อุณหภูมิห้องจนถึง −196°C",
+        "ออกแบบสำหรับงานเย็นยิ่งยวด แช่แข็ง และแช่เย็น",
+        "ทนความชื้น การควบแน่น และวงจรแช่แข็ง–ละลาย",
+        "คุณภาพการพิมพ์บาร์โค้ดและการพิมพ์แบบถ่ายโอนความร้อนที่ทนทาน",
+        "ออกแบบสำหรับงานด้านเภสัชกรรม ห้องปฏิบัติการ และการดูแลสุขภาพ"
       ]
     }
   },
@@ -210,6 +238,170 @@
           "医疗健康产品"
         ],
         "containers": "药瓶 • 塑料瓶 • 试剂瓶 • 包装盒",
+        "lo": 15,
+        "hi": 25
+      }
+    ],
+    "vi": [
+      {
+        "icon": "❄️",
+        "temp": "Đến −196°C",
+        "process": "Bảo quản trong nitơ lỏng",
+        "title": "Bảo quản siêu lạnh",
+        "desc": "Được thiết kế để bảo quản siêu lạnh lâu dài các mẫu sinh học có giá trị cao.",
+        "apps": [
+          "Ngân hàng sinh học",
+          "Liệu pháp tế bào và gen",
+          "Ngân hàng mô",
+          "Bảo quản tế bào gốc"
+        ],
+        "containers": "Ống đông lạnh • Ống cryo • Hộp đông lạnh • Lọ mẫu",
+        "lo": -196,
+        "hi": -80
+      },
+      {
+        "icon": "❄️",
+        "temp": "−80°C đến −20°C",
+        "process": "Bảo quản và vận chuyển đông lạnh",
+        "title": "Mẫu đông lạnh & Logistics lâm sàng",
+        "desc": "Nhận dạng đáng tin cậy cho các mẫu đông lạnh trong suốt quá trình lưu trữ, xử lý và vận chuyển bằng đá khô.",
+        "apps": [
+          "Thử nghiệm lâm sàng",
+          "Mẫu phòng thí nghiệm",
+          "Mẫu chẩn đoán",
+          "Vận chuyển bằng đá khô"
+        ],
+        "containers": "Ống đông lạnh • Ống mẫu • Hộp mẫu • Thùng vận chuyển",
+        "lo": -80,
+        "hi": -20
+      },
+      {
+        "icon": "🩸",
+        "temp": "−40°C đến 4°C",
+        "process": "Xử lý và bảo quản máu",
+        "title": "Máu & Chế phẩm máu",
+        "desc": "Ghi nhãn đáng tin cậy trong suốt quá trình lấy máu, xử lý thành phần, lưu trữ, vận chuyển và truyền máu.",
+        "apps": [
+          "Máu toàn phần",
+          "Huyết tương",
+          "Tiểu cầu",
+          "Chế phẩm máu"
+        ],
+        "containers": "Túi máu • Túi huyết tương • Ống lấy máu • Ống mẫu",
+        "lo": -40,
+        "hi": 4
+      },
+      {
+        "icon": "💉",
+        "temp": "2°C đến 8°C",
+        "process": "Chuỗi lạnh bảo quản lạnh",
+        "title": "Vắc-xin & Dược phẩm tiêm",
+        "desc": "Được thiết kế cho các dược phẩm tiêm nhạy cảm với nhiệt độ trong suốt quá trình lưu trữ và phân phối lạnh.",
+        "apps": [
+          "Vắc-xin",
+          "Sinh phẩm",
+          "Thuốc tiêm",
+          "Phân phối lâm sàng"
+        ],
+        "containers": "Lọ thủy tinh • Bơm tiêm nạp sẵn • Túi truyền dịch • Ống thuốc",
+        "lo": 2,
+        "hi": 8
+      },
+      {
+        "icon": "💊",
+        "temp": "15°C đến 25°C",
+        "process": "Chăm sóc sức khỏe ở nhiệt độ môi trường",
+        "title": "Bao bì dược phẩm",
+        "desc": "Nhận dạng bền bỉ cho sản xuất, đóng gói, lưu kho dược phẩm và phân phối chăm sóc sức khỏe.",
+        "apps": [
+          "Thuốc kê đơn",
+          "Thuốc không kê đơn",
+          "Thuốc thử chẩn đoán",
+          "Sản phẩm chăm sóc sức khỏe"
+        ],
+        "containers": "Chai thuốc • Chai nhựa • Chai thuốc thử • Hộp carton",
+        "lo": 15,
+        "hi": 25
+      }
+    ],
+    "th": [
+      {
+        "icon": "❄️",
+        "temp": "ต่ำถึง −196°C",
+        "process": "การจัดเก็บในไนโตรเจนเหลว",
+        "title": "การจัดเก็บแบบเย็นยิ่งยวด",
+        "desc": "ออกแบบสำหรับการเก็บรักษาแบบเย็นยิ่งยวดในระยะยาวของตัวอย่างชีวภาพที่มีมูลค่าสูง",
+        "apps": [
+          "ธนาคารชีวภาพ",
+          "การบำบัดด้วยเซลล์และยีน",
+          "ธนาคารเนื้อเยื่อ",
+          "การจัดเก็บเซลล์ต้นกำเนิด"
+        ],
+        "containers": "หลอดไครโอ • หลอดแช่แข็ง • กล่องไครโอ • ขวดตัวอย่าง",
+        "lo": -196,
+        "hi": -80
+      },
+      {
+        "icon": "❄️",
+        "temp": "−80°C ถึง −20°C",
+        "process": "การจัดเก็บและขนส่งแบบแช่แข็ง",
+        "title": "ตัวอย่างแช่แข็งและโลจิสติกส์ทางคลินิก",
+        "desc": "การระบุที่เชื่อถือได้สำหรับตัวอย่างแช่แข็งตลอดการจัดเก็บ การจัดการ และการขนส่งด้วยน้ำแข็งแห้ง",
+        "apps": [
+          "การทดลองทางคลินิก",
+          "ตัวอย่างห้องปฏิบัติการ",
+          "ตัวอย่างตรวจวินิจฉัย",
+          "การขนส่งด้วยน้ำแข็งแห้ง"
+        ],
+        "containers": "หลอดไครโอ • หลอดตัวอย่าง • กล่องตัวอย่าง • ภาชนะขนส่ง",
+        "lo": -80,
+        "hi": -20
+      },
+      {
+        "icon": "🩸",
+        "temp": "−40°C ถึง 4°C",
+        "process": "การแปรรูปและจัดเก็บเลือด",
+        "title": "เลือดและผลิตภัณฑ์จากเลือด",
+        "desc": "การติดฉลากที่เชื่อถือได้ตลอดการเก็บเลือด การแยกส่วนประกอบ การจัดเก็บ การขนส่ง และการถ่ายเลือด",
+        "apps": [
+          "เลือดครบส่วน",
+          "พลาสมา",
+          "เกล็ดเลือด",
+          "ผลิตภัณฑ์จากเลือด"
+        ],
+        "containers": "ถุงเลือด • ถุงพลาสมา • หลอดเก็บเลือด • หลอดตัวอย่าง",
+        "lo": -40,
+        "hi": 4
+      },
+      {
+        "icon": "💉",
+        "temp": "2°C ถึง 8°C",
+        "process": "โซ่ความเย็นแบบแช่เย็น",
+        "title": "วัคซีนและยาฉีด",
+        "desc": "ออกแบบสำหรับยาฉีดที่ไวต่ออุณหภูมิตลอดการจัดเก็บและการกระจายแบบแช่เย็น",
+        "apps": [
+          "วัคซีน",
+          "ชีววัตถุ",
+          "ยาฉีด",
+          "การกระจายทางคลินิก"
+        ],
+        "containers": "ขวดแก้ว • เข็มฉีดยาบรรจุสำเร็จ • ถุงน้ำเกลือ • หลอดยา",
+        "lo": 2,
+        "hi": 8
+      },
+      {
+        "icon": "💊",
+        "temp": "15°C ถึง 25°C",
+        "process": "การดูแลสุขภาพที่อุณหภูมิห้อง",
+        "title": "บรรจุภัณฑ์เภสัชกรรม",
+        "desc": "การระบุที่ทนทานสำหรับการผลิต การบรรจุ การจัดเก็บเภสัชภัณฑ์ และการกระจายด้านการดูแลสุขภาพ",
+        "apps": [
+          "ยาตามใบสั่งแพทย์",
+          "ยาที่ซื้อได้เอง",
+          "น้ำยาตรวจวินิจฉัย",
+          "ผลิตภัณฑ์ดูแลสุขภาพ"
+        ],
+        "containers": "ขวดยา • ขวดพลาสติก • ขวดน้ำยา • กล่องกระดาษ",
         "lo": 15,
         "hi": 25
       }
