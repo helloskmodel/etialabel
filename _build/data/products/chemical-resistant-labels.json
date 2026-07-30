@@ -2,7 +2,8 @@
   "slug": "chemical-resistant-labels",
   "source": "client brief — Chemical Resistant Label Solutions",
   "langs": ["en", "zh"],
-  "banner": "",
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/enviroment-chemical",
+  "banner_pos": "center bottom",
   "eyebrow": {
     "en": "Solutions",
     "zh": "解决方案"
