@@ -154,6 +154,19 @@ section.blk{padding:42px 0}
 .bcard .bct p{font-size:13px;color:#e6eefc;line-height:1.45}
 .bcard .barr{font-size:26px;color:#fff;flex:none;line-height:1}
 @media(max-width:700px){.brochures{grid-template-columns:1fr}}
+/* regional contact cards (Service page) */
+.gcont{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+@media(max-width:760px){.gcont{grid-template-columns:1fr}}
+.gcard{border:1px solid var(--line);border-radius:16px;padding:24px 26px;background:#fff}
+.gc-region{font-size:18px;font-weight:800;color:var(--blue-deep);margin-bottom:12px}
+.gc-name{font-weight:700;color:var(--ink);margin-bottom:6px}
+.gc-role{font-weight:600;color:var(--mut);font-size:14px}
+.gc-line{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--mut);line-height:1.55;margin-top:11px}
+.gc-line svg{width:16px;height:16px;flex:none;margin-top:2px;color:var(--faint)}
+a.gc-line{color:var(--green-d);font-weight:600;text-decoration:none}
+a.gc-line:hover{text-decoration:underline}
+a.gc-line svg{color:var(--green-d)}
+.gc-note{color:var(--faint);font-size:13.5px;margin-top:22px}
 /* service contact form + phones */
 .ctwo{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:start;margin-top:10px}
 .cform{display:flex;flex-direction:column;gap:12px}
