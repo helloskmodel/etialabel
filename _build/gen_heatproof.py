@@ -50,11 +50,13 @@ def L(lang, path):  # localize a site-relative path (vi/th have no inner pages -
 # ---------------------------------------------------------------- design system (finalized brand)
 CSS = """
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--ink:#141b2d;--mut:#5c6678;--faint:#8a93a3;--line:#e7ebf2;--bg:#f6f8fc;--mint:#f1f7ef;
+html{color-scheme:only light}
+:root{color-scheme:only light;--ink:#141b2d;--mut:#5c6678;--faint:#8a93a3;--line:#e7ebf2;--bg:#f6f8fc;--mint:#f1f7ef;
 --tint-green:#f0f5ee;--tint-blue:#edf2fb;
 --blue-deep:#143C96;--blue:#1A56DB;--green:#41A62A;--green-d:#358B22;
 --serif:'Inter','PingFang SC','Microsoft YaHei','Noto Sans SC','Noto Sans Thai',system-ui,-apple-system,'Segoe UI',sans-serif;
 --sans:'Inter','PingFang SC','Microsoft YaHei','Noto Sans SC','Noto Sans Thai',system-ui,-apple-system,'Segoe UI',sans-serif}
+html,body{background:#fff}
 body{font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
 img{max-width:100%}
@@ -795,6 +797,7 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
     head_block = hero if hero else ('<div class="wrap"><div class="pagehead"><h1>%s</h1>%s</div></div>' % (esc(h1), lede_html))
     return """<!doctype html><html lang="%s"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
 <title>%s</title><meta name="description" content="%s">
 <link rel="canonical" href="%s">%s
 <meta property="og:title" content="%s"><meta property="og:type" content="website"><meta property="og:site_name" content="ETIA Label">
@@ -1528,6 +1531,7 @@ def build_home(lang):
     hero_preload=('<link rel="preload" as="image" href="'+HOME_BG[0]+'" fetchpriority="high">') if HOME_BG[0] else ""
     doc="""<!doctype html><html lang="%s"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
 <title>%s</title><meta name="description" content="%s">
 <link rel="canonical" href="%s">%s%s
 <meta property="og:title" content="%s"><meta property="og:type" content="website"><meta property="og:site_name" content="ETIA Label">
