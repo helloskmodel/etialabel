@@ -94,5 +94,7 @@ def optimize_cos_images():
     print("COS image optimize (webp/q80): processed", n, "pages")
 
 strip_cn_fullstops()
-optimize_cos_images()
+# optimize_cos_images() DISABLED: appending ?imageMogr2/... broke images when the
+# bucket's image processing wasn't active. Re-enable only once WebP output is
+# confirmed working on the COS bucket.
 print("BUILD COMPLETE — total EN canonical URLs:", len(hp.ALL_URLS))
