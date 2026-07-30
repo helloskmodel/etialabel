@@ -1,0 +1,194 @@
+{
+  "slug": "chemical-resistant-labels",
+  "source": "client brief — Chemical Resistant Label Solutions",
+  "langs": ["en", "zh"],
+  "banner": "",
+  "eyebrow": {
+    "en": "Solutions",
+    "zh": "解决方案"
+  },
+  "title": {
+    "en": "Chemical Resistant Labeling Solutions",
+    "zh": "耐化学标签解决方案"
+  },
+  "tagline": {
+    "en": "Built to resist harsh chemicals. Designed for reliable identification.",
+    "zh": "耐受严苛化学环境，保障可靠识别。"
+  },
+  "positioning": {
+    "en": "Chemical exposure can quickly damage ordinary labels, leading to faded prints, adhesive failure, and unreadable barcodes. ETIA Chemical Resistant Label Solutions are engineered for demanding environments where solvents, disinfectants, industrial oils, and process chemicals are routinely used, delivering reliable identification throughout the product lifecycle.",
+    "zh": "化学介质会导致普通标签油墨褪色、胶粘失效及条码无法识别。ETIA 耐化学标签解决方案专为有机溶剂、酒精、消毒剂、工业油污及各类工艺化学品环境设计，在严苛化学工况下持续保持牢固粘接、清晰打印和可靠识别。"
+  },
+  "why": {
+    "heading": {
+      "en": "Why Chemical Resistant Labeling?",
+      "zh": "为什么选择耐化学标签？"
+    },
+    "intro": {
+      "en": "Different chemicals require different label constructions. Selecting the right combination of facestock, adhesive, and print technology helps maintain reliable adhesion, durable print performance, and long-lasting barcode readability — even under repeated chemical exposure.",
+      "zh": "不同化学介质对标签的影响各不相同。针对不同应用选择合适的面材、胶粘体系及打印方案，可有效提升标签耐化学性能，确保长期粘附、条码清晰及标识完整。"
+    },
+    "items": {
+      "en": [
+        "Resistant to aggressive industrial chemicals",
+        "Reliable adhesion on metal, plastic, glass, and coated surfaces",
+        "Durable thermal transfer print performance",
+        "Excellent barcode readability",
+        "Designed for laboratory, medical, electronics, and industrial applications"
+      ],
+      "zh": [
+        "耐多种工业化学介质",
+        "金属、塑料、玻璃等多种基材稳定粘接",
+        "热转印打印持久清晰",
+        "条码长期可识别",
+        "面向实验室、医疗、电子及工业应用"
+      ]
+    }
+  },
+  "scenarios": {
+    "en": [
+      {
+        "icon": "🧪",
+        "temp": "🧪 Solvents",
+        "process": "Solvent Exposure",
+        "title": "Organic Solvents",
+        "desc": "Designed for environments exposed to aggressive organic solvents that can dissolve inks, soften coatings, and degrade conventional labels.",
+        "apps": [
+          "Laboratory Sample Identification",
+          "PCB Manufacturing",
+          "Chemical Containers",
+          "Industrial Cleaning"
+        ],
+        "chemicals": "MEK • Acetone • Toluene • Xylene • DMSO"
+      },
+      {
+        "icon": "🍶",
+        "temp": "🍶 Alcohols",
+        "process": "Alcohol & Disinfection",
+        "title": "Alcohol & Disinfectants",
+        "desc": "Maintains clear identification during repeated alcohol cleaning and routine disinfection.",
+        "apps": [
+          "Healthcare",
+          "Pharmaceutical Manufacturing",
+          "Medical Devices",
+          "Clinical Laboratories"
+        ],
+        "chemicals": "Ethanol • Methanol • Isopropyl Alcohol (IPA)"
+      },
+      {
+        "icon": "🧼",
+        "temp": "🧼 Disinfectants",
+        "process": "Oxidizing Disinfection",
+        "title": "Bleach & Oxidizing Disinfectants",
+        "desc": "Designed for repeated exposure to bleach solutions and oxidizing disinfectants without compromising label performance.",
+        "apps": [
+          "Hospitals",
+          "Clinical Laboratories",
+          "Cleanrooms",
+          "Food Processing"
+        ],
+        "chemicals": "Bleach • Sodium Hypochlorite • Hydrogen Peroxide"
+      },
+      {
+        "icon": "🛢",
+        "temp": "🛢 Oils & Fluids",
+        "process": "Oil & Fluid Contamination",
+        "title": "Industrial Oils & Process Fluids",
+        "desc": "Maintains strong adhesion and reliable identification in oil-contaminated manufacturing environments.",
+        "apps": [
+          "Automotive Manufacturing",
+          "Heavy Equipment",
+          "Industrial Machinery",
+          "Hydraulic Systems"
+        ],
+        "chemicals": "Lubricants • Hydraulic Fluids • Cutting Oils • Brake Fluids"
+      },
+      {
+        "icon": "⚗️",
+        "temp": "⚗️ Acids & Alkalis",
+        "process": "Acid & Alkaline Processing",
+        "title": "Acids & Alkalis",
+        "desc": "Designed for harsh chemical processing, surface treatment, and industrial manufacturing environments.",
+        "apps": [
+          "Metal Processing",
+          "PCB Manufacturing",
+          "Chemical Production",
+          "Laboratory Processing"
+        ],
+        "chemicals": "Hydrochloric Acid • Sulfuric Acid • Sodium Hydroxide • Alkaline Cleaners"
+      }
+    ],
+    "zh": [
+      {
+        "icon": "🧪",
+        "temp": "🧪 有机溶剂",
+        "process": "溶剂暴露",
+        "title": "有机溶剂",
+        "desc": "适用于易溶解油墨、软化涂层、破坏普通标签的强有机溶剂环境。",
+        "apps": [
+          "实验室样本标识",
+          "PCB 制造",
+          "化学品容器",
+          "工业清洗"
+        ],
+        "chemicals": "MEK • 丙酮 • 甲苯 • 二甲苯 • DMSO"
+      },
+      {
+        "icon": "🍶",
+        "temp": "🍶 酒精",
+        "process": "酒精与消毒",
+        "title": "酒精与消毒剂",
+        "desc": "在反复酒精擦拭与日常消毒过程中保持清晰标识。",
+        "apps": [
+          "医疗健康",
+          "制药生产",
+          "医疗器械",
+          "临床实验室"
+        ],
+        "chemicals": "乙醇 • 甲醇 • 异丙醇（IPA）"
+      },
+      {
+        "icon": "🧼",
+        "temp": "🧼 消毒剂",
+        "process": "氧化性消毒",
+        "title": "漂白剂与氧化性消毒剂",
+        "desc": "适用于反复接触漂白剂与氧化性消毒剂的环境，标签性能不受影响。",
+        "apps": [
+          "医院",
+          "临床实验室",
+          "洁净室",
+          "食品加工"
+        ],
+        "chemicals": "漂白剂 • 次氯酸钠 • 过氧化氢"
+      },
+      {
+        "icon": "🛢",
+        "temp": "🛢 油污与流体",
+        "process": "油污与流体",
+        "title": "工业油污与工艺流体",
+        "desc": "在油污污染的制造环境中保持牢固粘接与可靠识别。",
+        "apps": [
+          "汽车制造",
+          "重型设备",
+          "工业机械",
+          "液压系统"
+        ],
+        "chemicals": "润滑油 • 液压油 • 切削液 • 制动液"
+      },
+      {
+        "icon": "⚗️",
+        "temp": "⚗️ 酸碱",
+        "process": "酸碱处理",
+        "title": "酸与碱",
+        "desc": "适用于严苛化学加工、表面处理及工业制造环境。",
+        "apps": [
+          "金属加工",
+          "PCB 制造",
+          "化工生产",
+          "实验室处理"
+        ],
+        "chemicals": "盐酸 • 硫酸 • 氢氧化钠 • 碱性清洗剂"
+      }
+    ]
+  }
+}
