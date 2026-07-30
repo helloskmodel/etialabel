@@ -1,390 +1,542 @@
 {
-  "slug": "sterilization-labels",
-  "source": "client brief — Sterilization Label Solutions",
-  "langs": [
-    "en",
-    "zh",
-    "vi",
-    "th"
-  ],
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/enviroment-sterlization",
-  "banner_pos": "center bottom",
-  "eyebrow": {
-    "en": "Solutions",
-    "zh": "解决方案",
-    "vi": "Giải pháp",
-    "th": "โซลูชัน"
+ "slug": "sterilization-labels",
+ "source": "client brief — Sterilization Label Solutions",
+ "langs": [
+  "en",
+  "zh",
+  "vi",
+  "th"
+ ],
+ "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/enviroment-sterlization",
+ "banner_pos": "center bottom",
+ "eyebrow": {
+  "en": "Solutions",
+  "zh": "解决方案",
+  "vi": "Giải pháp",
+  "th": "โซลูชัน"
+ },
+ "title": {
+  "en": "Sterilization Labeling Solutions",
+  "zh": "灭菌标签解决方案",
+  "vi": "Giải pháp Nhãn dán Tiệt trùng",
+  "th": "โซลูชันฉลากสำหรับการฆ่าเชื้อ"
+ },
+ "tagline": {
+  "en": "Built for sterilization. Designed for reliable identification.",
+  "zh": "耐受严苛灭菌工艺，保障可靠识别。",
+  "vi": "Được thiết kế cho tiệt trùng. Đảm bảo nhận diện đáng tin cậy.",
+  "th": "ออกแบบมาเพื่อการฆ่าเชื้อ เพื่อการระบุที่เชื่อถือได้"
+ },
+ "positioning": {
+  "en": "Engineered for medical devices, pharmaceutical packaging, laboratory samples, and healthcare applications, our Sterilization Label Solutions are designed to withstand demanding sterilization processes while maintaining reliable identification from production to clinical use.",
+  "zh": "ETIA 灭菌标签解决方案专为医疗器械、制药、实验室及医疗健康行业设计，可耐受高温蒸汽、干热、辐照、环氧乙烷及化学灭菌等多种灭菌工艺，在生产、灭菌、仓储及临床使用全过程保持稳定识别。",
+  "vi": "Được thiết kế cho thiết bị y tế, bao bì dược phẩm, mẫu phòng thí nghiệm và các ứng dụng chăm sóc sức khỏe, Giải pháp Nhãn dán Tiệt trùng của chúng tôi được chế tạo để chịu được các quy trình tiệt trùng khắc nghiệt, đồng thời duy trì khả năng nhận diện đáng tin cậy từ khâu sản xuất đến khi sử dụng lâm sàng.",
+  "th": "ออกแบบมาสำหรับเครื่องมือแพทย์ บรรจุภัณฑ์ยา ตัวอย่างในห้องปฏิบัติการ และงานด้านการดูแลสุขภาพ โซลูชันฉลากสำหรับการฆ่าเชื้อของเราถูกออกแบบให้ทนต่อกระบวนการฆ่าเชื้อที่รุนแรง พร้อมทั้งคงการระบุที่เชื่อถือได้ตั้งแต่การผลิตจนถึงการใช้งานทางคลินิก"
+ },
+ "why": {
+  "heading": {
+   "en": "Why Sterilization Labeling?",
+   "zh": "为什么选择灭菌标签？",
+   "vi": "Tại sao chọn Nhãn dán Tiệt trùng?",
+   "th": "ทำไมต้องเลือกฉลากสำหรับการฆ่าเชื้อ?"
   },
-  "title": {
-    "en": "Sterilization Labeling Solutions",
-    "zh": "灭菌标签解决方案",
-    "vi": "Giải pháp Nhãn dán Tiệt trùng",
-    "th": "โซลูชันฉลากสำหรับการฆ่าเชื้อ"
+  "intro": {
+   "en": "Every sterilization process presents unique challenges to label materials. Selecting the right label construction helps maintain secure adhesion, durable print quality, and barcode readability throughout repeated sterilization, storage, transportation, and clinical workflows.",
+   "zh": "不同灭菌工艺会对标签产生不同影响，包括高温、湿热、辐照及化学介质等挑战。针对不同灭菌方式选择合适的标签结构，可持续保持牢固粘接、清晰打印及条码可读性，满足医疗产品全生命周期追溯要求。",
+   "vi": "Mỗi quy trình tiệt trùng đều đặt ra những thách thức riêng đối với vật liệu nhãn. Việc lựa chọn cấu trúc nhãn phù hợp giúp duy trì độ bám dính chắc chắn, chất lượng in bền bỉ và khả năng đọc mã vạch trong suốt quá trình tiệt trùng lặp lại, lưu kho, vận chuyển và các quy trình lâm sàng.",
+   "th": "กระบวนการฆ่าเชื้อแต่ละแบบสร้างความท้าทายที่แตกต่างกันต่อวัสดุฉลาก การเลือกโครงสร้างฉลากที่เหมาะสมช่วยรักษาการยึดติดที่มั่นคง คุณภาพงานพิมพ์ที่คงทน และการอ่านบาร์โค้ดได้ตลอดการฆ่าเชื้อซ้ำ การจัดเก็บ การขนส่ง และขั้นตอนการทำงานทางคลินิก"
   },
-  "tagline": {
-    "en": "Built for sterilization. Designed for reliable identification.",
-    "zh": "耐受严苛灭菌工艺，保障可靠识别。",
-    "vi": "Được thiết kế cho tiệt trùng. Đảm bảo nhận diện đáng tin cậy.",
-    "th": "ออกแบบมาเพื่อการฆ่าเชื้อ เพื่อการระบุที่เชื่อถือได้"
-  },
-  "positioning": {
-    "en": "Engineered for medical devices, pharmaceutical packaging, laboratory samples, and healthcare applications, our Sterilization Label Solutions are designed to withstand demanding sterilization processes while maintaining reliable identification from production to clinical use.",
-    "zh": "ETIA 灭菌标签解决方案专为医疗器械、制药、实验室及医疗健康行业设计，可耐受高温蒸汽、干热、辐照、环氧乙烷及化学灭菌等多种灭菌工艺，在生产、灭菌、仓储及临床使用全过程保持稳定识别。",
-    "vi": "Được thiết kế cho thiết bị y tế, bao bì dược phẩm, mẫu phòng thí nghiệm và các ứng dụng chăm sóc sức khỏe, Giải pháp Nhãn dán Tiệt trùng của chúng tôi được chế tạo để chịu được các quy trình tiệt trùng khắc nghiệt, đồng thời duy trì khả năng nhận diện đáng tin cậy từ khâu sản xuất đến khi sử dụng lâm sàng.",
-    "th": "ออกแบบมาสำหรับเครื่องมือแพทย์ บรรจุภัณฑ์ยา ตัวอย่างในห้องปฏิบัติการ และงานด้านการดูแลสุขภาพ โซลูชันฉลากสำหรับการฆ่าเชื้อของเราถูกออกแบบให้ทนต่อกระบวนการฆ่าเชื้อที่รุนแรง พร้อมทั้งคงการระบุที่เชื่อถือได้ตั้งแต่การผลิตจนถึงการใช้งานทางคลินิก"
-  },
-  "why": {
-    "heading": {
-      "en": "Why Sterilization Labeling?",
-      "zh": "为什么选择灭菌标签？",
-      "vi": "Tại sao chọn Nhãn dán Tiệt trùng?",
-      "th": "ทำไมต้องเลือกฉลากสำหรับการฆ่าเชื้อ?"
-    },
-    "intro": {
-      "en": "Every sterilization process presents unique challenges to label materials. Selecting the right label construction helps maintain secure adhesion, durable print quality, and barcode readability throughout repeated sterilization, storage, transportation, and clinical workflows.",
-      "zh": "不同灭菌工艺会对标签产生不同影响，包括高温、湿热、辐照及化学介质等挑战。针对不同灭菌方式选择合适的标签结构，可持续保持牢固粘接、清晰打印及条码可读性，满足医疗产品全生命周期追溯要求。",
-      "vi": "Mỗi quy trình tiệt trùng đều đặt ra những thách thức riêng đối với vật liệu nhãn. Việc lựa chọn cấu trúc nhãn phù hợp giúp duy trì độ bám dính chắc chắn, chất lượng in bền bỉ và khả năng đọc mã vạch trong suốt quá trình tiệt trùng lặp lại, lưu kho, vận chuyển và các quy trình lâm sàng.",
-      "th": "กระบวนการฆ่าเชื้อแต่ละแบบสร้างความท้าทายที่แตกต่างกันต่อวัสดุฉลาก การเลือกโครงสร้างฉลากที่เหมาะสมช่วยรักษาการยึดติดที่มั่นคง คุณภาพงานพิมพ์ที่คงทน และการอ่านบาร์โค้ดได้ตลอดการฆ่าเชื้อซ้ำ การจัดเก็บ การขนส่ง และขั้นตอนการทำงานทางคลินิก"
-    },
-    "items": {
-      "en": [
-        "Compatible with multiple sterilization methods",
-        "Reliable adhesion after repeated sterilization cycles",
-        "Durable thermal transfer print and barcode readability",
-        "Designed for medical, laboratory, and pharmaceutical applications",
-        "Supports traceability and regulatory compliance"
-      ],
-      "zh": [
-        "适配多种灭菌工艺",
-        "多次灭菌后依然保持稳定粘接",
-        "条码及热转印打印持久清晰",
-        "面向医疗、实验室及制药行业",
-        "满足产品追溯与法规合规要求"
-      ],
-      "vi": [
-        "Tương thích với nhiều phương pháp tiệt trùng",
-        "Bám dính đáng tin cậy sau nhiều chu kỳ tiệt trùng lặp lại",
-        "In truyền nhiệt bền bỉ và khả năng đọc mã vạch tốt",
-        "Được thiết kế cho ứng dụng y tế, phòng thí nghiệm và dược phẩm",
-        "Hỗ trợ truy xuất nguồn gốc và tuân thủ quy định"
-      ],
-      "th": [
-        "ใช้งานได้กับวิธีการฆ่าเชื้อหลายรูปแบบ",
-        "ยึดติดได้อย่างเชื่อถือได้หลังการฆ่าเชื้อซ้ำหลายรอบ",
-        "งานพิมพ์ถ่ายโอนความร้อนที่คงทนและอ่านบาร์โค้ดได้ชัดเจน",
-        "ออกแบบสำหรับงานทางการแพทย์ ห้องปฏิบัติการ และเภสัชกรรม",
-        "รองรับการตรวจสอบย้อนกลับและการปฏิบัติตามกฎระเบียบ"
-      ]
-    }
-  },
-  "scenarios": {
-    "en": [
-      {
-        "icon": "♨️",
-        "temp": "♨️ Steam",
-        "process": "121–135°C · High Heat & Moisture",
-        "title": "Steam Autoclave",
-        "desc": "Steam sterilization combines high temperature, pressure, and moisture, requiring labels that resist heat, humidity, and repeated sterilization cycles.",
-        "apps": [
-          "Surgical Instruments",
-          "Reusable Medical Devices",
-          "Laboratory Equipment",
-          "Stainless Steel Trays"
-        ],
-        "sterilization": "Steam • Autoclave",
-        "products": "Steam Sterilization Labels"
-      },
-      {
-        "icon": "🌡",
-        "temp": "🌡 Dry Heat",
-        "process": "160–180°C · High Temperature",
-        "title": "Dry Heat Sterilization",
-        "desc": "Dry heat sterilization exposes labels to prolonged high temperatures without moisture, demanding excellent heat resistance and long-term print durability.",
-        "apps": [
-          "Laboratory Glassware",
-          "Metal Instruments",
-          "Pharmaceutical Equipment",
-          "Heat-Resistant Containers"
-        ],
-        "sterilization": "Dry Heat Oven",
-        "products": "High Temperature Labels"
-      },
-      {
-        "icon": "☢",
-        "temp": "☢ Gamma",
-        "process": "Ionizing Radiation Sterilization",
-        "title": "Gamma Irradiation",
-        "desc": "Gamma rays sterilize packaged products without heat but can embrittle films, fade print, and weaken adhesives if labels are not radiation resistant.",
-        "apps": [
-          "Disposable Medical Devices",
-          "Sterile Medical Kits",
-          "Pharmaceutical Packaging",
-          "Single-Use Products"
-        ],
-        "sterilization": "Gamma Irradiation",
-        "products": "Gamma Resistant Labels"
-      },
-      {
-        "icon": "💨",
-        "temp": "💨 EtO",
-        "process": "Low-Temperature Gas Sterilization",
-        "title": "Ethylene Oxide (EtO)",
-        "desc": "EtO sterilization is ideal for heat-sensitive medical devices. Labels must remain bonded and readable throughout gas sterilization and aeration cycles.",
-        "apps": [
-          "Catheters",
-          "Endoscopes",
-          "Plastic Medical Devices",
-          "Electronic Medical Equipment"
-        ],
-        "sterilization": "EtO Gas",
-        "products": "EtO Sterilization Labels"
-      },
-      {
-        "icon": "🧪",
-        "temp": "🧪 Chemical",
-        "process": "Surface Disinfection & Chemical Sterilization",
-        "title": "Chemical Sterilants",
-        "desc": "Repeated exposure to disinfectants and sterilizing chemicals requires labels that resist chemical attack while preserving print quality and adhesion.",
-        "apps": [
-          "Clinical Laboratories",
-          "Hospitals",
-          "Cleanrooms",
-          "Pharmaceutical Manufacturing"
-        ],
-        "chemicals": "Bleach • Ethanol • Peracetic Acid • Hydrogen Peroxide",
-        "products": "Chemical Resistant Medical Labels"
-      }
-    ],
-    "zh": [
-      {
-        "icon": "♨️",
-        "temp": "♨️ 高压蒸汽",
-        "process": "121–135°C · 高温湿热",
-        "title": "高压蒸汽灭菌",
-        "desc": "高压蒸汽灭菌结合高温、压力及湿热环境，标签需耐受反复蒸汽灭菌循环。",
-        "apps": [
-          "外科手术器械",
-          "可重复使用医疗器械",
-          "实验室器具",
-          "不锈钢器械托盘"
-        ],
-        "sterilization": "高压蒸汽灭菌（Autoclave）",
-        "products": "高压蒸汽灭菌标签"
-      },
-      {
-        "icon": "🌡",
-        "temp": "🌡 干热",
-        "process": "160–180°C · 高温干热",
-        "title": "干热灭菌",
-        "desc": "适用于持续高温环境，要求标签具有优异耐热性能及长期打印稳定性。",
-        "apps": [
-          "实验室玻璃器皿",
-          "金属器械",
-          "制药设备",
-          "耐高温容器"
-        ],
-        "sterilization": "干热灭菌",
-        "products": "耐高温标签"
-      },
-      {
-        "icon": "☢",
-        "temp": "☢ 伽马辐照",
-        "process": "电离辐射灭菌",
-        "title": "伽马辐照灭菌",
-        "desc": "伽马射线可穿透包装完成灭菌，但普通标签可能出现脆化、褪色或胶粘失效。",
-        "apps": [
-          "一次性医疗器械",
-          "无菌医疗包",
-          "医药包装",
-          "一次性耗材"
-        ],
-        "sterilization": "伽马辐照",
-        "products": "耐辐照标签"
-      },
-      {
-        "icon": "💨",
-        "temp": "💨 环氧乙烷",
-        "process": "低温气体灭菌",
-        "title": "环氧乙烷（EtO）灭菌",
-        "desc": "适用于不耐高温医疗器械，标签需耐受 EtO 灭菌及解析全过程。",
-        "apps": [
-          "导管",
-          "内窥镜",
-          "塑料医疗器械",
-          "医疗电子产品"
-        ],
-        "sterilization": "环氧乙烷（EtO）",
-        "products": "EtO 灭菌标签"
-      },
-      {
-        "icon": "🧪",
-        "temp": "🧪 化学灭菌",
-        "process": "化学灭菌与反复消杀",
-        "title": "化学灭菌与表面消毒",
-        "desc": "适用于长期接触消毒剂及灭菌化学品的医疗环境，保持标签粘接和打印稳定。",
-        "apps": [
-          "临床实验室",
-          "医院",
-          "洁净室",
-          "制药车间"
-        ],
-        "chemicals": "漂白剂 • 乙醇 • 过氧乙酸 • 过氧化氢",
-        "products": "耐化学医疗标签"
-      }
-    ],
-    "vi": [
-      {
-        "icon": "♨️",
-        "temp": "♨️ Hơi nước",
-        "process": "121–135°C · Nhiệt độ cao & Hơi ẩm",
-        "title": "Nồi hấp Hơi nước (Autoclave)",
-        "desc": "Tiệt trùng bằng hơi nước kết hợp nhiệt độ cao, áp suất và hơi ẩm, đòi hỏi nhãn phải chịu được nhiệt, độ ẩm và các chu kỳ tiệt trùng lặp lại.",
-        "apps": [
-          "Dụng cụ phẫu thuật",
-          "Thiết bị y tế tái sử dụng",
-          "Thiết bị phòng thí nghiệm",
-          "Khay thép không gỉ"
-        ],
-        "sterilization": "Hơi nước • Autoclave",
-        "products": "Nhãn Tiệt trùng Hơi nước"
-      },
-      {
-        "icon": "🌡",
-        "temp": "🌡 Nhiệt khô",
-        "process": "160–180°C · Nhiệt độ cao",
-        "title": "Tiệt trùng Nhiệt khô",
-        "desc": "Tiệt trùng nhiệt khô làm nhãn tiếp xúc với nhiệt độ cao kéo dài mà không có hơi ẩm, đòi hỏi khả năng chịu nhiệt xuất sắc và độ bền in lâu dài.",
-        "apps": [
-          "Đồ thủy tinh phòng thí nghiệm",
-          "Dụng cụ kim loại",
-          "Thiết bị dược phẩm",
-          "Hộp chịu nhiệt"
-        ],
-        "sterilization": "Lò sấy Nhiệt khô",
-        "products": "Nhãn Chịu Nhiệt độ Cao"
-      },
-      {
-        "icon": "☢",
-        "temp": "☢ Gamma",
-        "process": "Tiệt trùng bằng Bức xạ ion hóa",
-        "title": "Chiếu xạ Gamma",
-        "desc": "Tia gamma tiệt trùng sản phẩm đã đóng gói mà không cần nhiệt, nhưng có thể làm giòn màng, phai mực và làm yếu keo dán nếu nhãn không kháng bức xạ.",
-        "apps": [
-          "Thiết bị y tế dùng một lần",
-          "Bộ dụng cụ y tế vô trùng",
-          "Bao bì dược phẩm",
-          "Sản phẩm dùng một lần"
-        ],
-        "sterilization": "Chiếu xạ Gamma",
-        "products": "Nhãn Kháng Bức xạ Gamma"
-      },
-      {
-        "icon": "💨",
-        "temp": "💨 EtO",
-        "process": "Tiệt trùng bằng Khí ở Nhiệt độ thấp",
-        "title": "Ethylene Oxide (EtO)",
-        "desc": "Tiệt trùng EtO lý tưởng cho các thiết bị y tế nhạy cảm với nhiệt. Nhãn phải giữ được độ bám dính và khả năng đọc trong suốt các chu kỳ tiệt trùng bằng khí và thoáng khí.",
-        "apps": [
-          "Ống thông (Catheter)",
-          "Ống nội soi",
-          "Thiết bị y tế bằng nhựa",
-          "Thiết bị y tế điện tử"
-        ],
-        "sterilization": "Khí EtO",
-        "products": "Nhãn Tiệt trùng EtO"
-      },
-      {
-        "icon": "🧪",
-        "temp": "🧪 Hóa chất",
-        "process": "Khử trùng Bề mặt & Tiệt trùng Hóa học",
-        "title": "Hóa chất Tiệt trùng",
-        "desc": "Việc tiếp xúc lặp lại với chất khử trùng và hóa chất tiệt trùng đòi hỏi nhãn phải kháng lại sự ăn mòn hóa học đồng thời giữ được chất lượng in và độ bám dính.",
-        "apps": [
-          "Phòng thí nghiệm lâm sàng",
-          "Bệnh viện",
-          "Phòng sạch",
-          "Sản xuất dược phẩm"
-        ],
-        "chemicals": "Thuốc tẩy • Ethanol • Axit Peracetic • Hydro Peroxide",
-        "products": "Nhãn Y tế Kháng Hóa chất"
-      }
-    ],
-    "th": [
-      {
-        "icon": "♨️",
-        "temp": "♨️ ไอน้ำ",
-        "process": "121–135°C · ความร้อนสูงและความชื้น",
-        "title": "หม้อนึ่งฆ่าเชื้อไอน้ำ (Autoclave)",
-        "desc": "การฆ่าเชื้อด้วยไอน้ำผสมผสานอุณหภูมิสูง แรงดัน และความชื้น จึงต้องใช้ฉลากที่ทนความร้อน ความชื้น และการฆ่าเชื้อซ้ำหลายรอบ",
-        "apps": [
-          "เครื่องมือผ่าตัด",
-          "เครื่องมือแพทย์ที่ใช้ซ้ำได้",
-          "อุปกรณ์ห้องปฏิบัติการ",
-          "ถาดสเตนเลส"
-        ],
-        "sterilization": "ไอน้ำ • Autoclave",
-        "products": "ฉลากฆ่าเชื้อด้วยไอน้ำ"
-      },
-      {
-        "icon": "🌡",
-        "temp": "🌡 ความร้อนแห้ง",
-        "process": "160–180°C · อุณหภูมิสูง",
-        "title": "การฆ่าเชื้อด้วยความร้อนแห้ง",
-        "desc": "การฆ่าเชื้อด้วยความร้อนแห้งทำให้ฉลากสัมผัสกับอุณหภูมิสูงเป็นเวลานานโดยไม่มีความชื้น จึงต้องการความทนความร้อนที่ยอดเยี่ยมและความคงทนของงานพิมพ์ในระยะยาว",
-        "apps": [
-          "เครื่องแก้วในห้องปฏิบัติการ",
-          "เครื่องมือโลหะ",
-          "อุปกรณ์เภสัชกรรม",
-          "ภาชนะทนความร้อน"
-        ],
-        "sterilization": "ตู้อบความร้อนแห้ง",
-        "products": "ฉลากทนอุณหภูมิสูง"
-      },
-      {
-        "icon": "☢",
-        "temp": "☢ Gamma",
-        "process": "การฆ่าเชื้อด้วยรังสีไอออไนซ์",
-        "title": "การฉายรังสีแกมมา (Gamma)",
-        "desc": "รังสีแกมมาฆ่าเชื้อผลิตภัณฑ์ที่บรรจุแล้วโดยไม่ใช้ความร้อน แต่สามารถทำให้ฟิล์มเปราะ หมึกซีดจาง และกาวเสื่อมสภาพได้หากฉลากไม่ทนต่อรังสี",
-        "apps": [
-          "เครื่องมือแพทย์แบบใช้ครั้งเดียว",
-          "ชุดอุปกรณ์การแพทย์ปลอดเชื้อ",
-          "บรรจุภัณฑ์ยา",
-          "ผลิตภัณฑ์ใช้ครั้งเดียว"
-        ],
-        "sterilization": "การฉายรังสีแกมมา (Gamma)",
-        "products": "ฉลากทนรังสีแกมมา (Gamma)"
-      },
-      {
-        "icon": "💨",
-        "temp": "💨 EtO",
-        "process": "การฆ่าเชื้อด้วยแก๊สที่อุณหภูมิต่ำ",
-        "title": "เอทิลีนออกไซด์ (EtO)",
-        "desc": "การฆ่าเชื้อด้วย EtO เหมาะสำหรับเครื่องมือแพทย์ที่ไวต่อความร้อน ฉลากต้องยึดติดและอ่านได้ตลอดกระบวนการฆ่าเชื้อด้วยแก๊สและการระบายอากาศ",
-        "apps": [
-          "สายสวน (Catheter)",
-          "กล้องส่องตรวจ (Endoscope)",
-          "เครื่องมือแพทย์พลาสติก",
-          "อุปกรณ์การแพทย์อิเล็กทรอนิกส์"
-        ],
-        "sterilization": "แก๊ส EtO",
-        "products": "ฉลากฆ่าเชื้อ EtO"
-      },
-      {
-        "icon": "🧪",
-        "temp": "🧪 สารเคมี",
-        "process": "การฆ่าเชื้อพื้นผิวและการฆ่าเชื้อด้วยสารเคมี",
-        "title": "สารเคมีฆ่าเชื้อ",
-        "desc": "การสัมผัสกับน้ำยาฆ่าเชื้อและสารเคมีฆ่าเชื้อซ้ำ ๆ ต้องใช้ฉลากที่ทนต่อการกัดกร่อนของสารเคมี พร้อมทั้งรักษาคุณภาพงานพิมพ์และการยึดติด",
-        "apps": [
-          "ห้องปฏิบัติการทางคลินิก",
-          "โรงพยาบาล",
-          "ห้องสะอาด (Cleanroom)",
-          "การผลิตยา"
-        ],
-        "chemicals": "น้ำยาฟอกขาว • เอทานอล • กรดเปอร์อะซิติก • ไฮโดรเจนเปอร์ออกไซด์",
-        "products": "ฉลากทางการแพทย์ทนสารเคมี"
-      }
-    ]
+  "items": {
+   "en": [
+    "Compatible with multiple sterilization methods",
+    "Reliable adhesion after repeated sterilization cycles",
+    "Durable thermal transfer print and barcode readability",
+    "Designed for medical, laboratory, and pharmaceutical applications",
+    "Supports traceability and regulatory compliance"
+   ],
+   "zh": [
+    "适配多种灭菌工艺",
+    "多次灭菌后依然保持稳定粘接",
+    "条码及热转印打印持久清晰",
+    "面向医疗、实验室及制药行业",
+    "满足产品追溯与法规合规要求"
+   ],
+   "vi": [
+    "Tương thích với nhiều phương pháp tiệt trùng",
+    "Bám dính đáng tin cậy sau nhiều chu kỳ tiệt trùng lặp lại",
+    "In truyền nhiệt bền bỉ và khả năng đọc mã vạch tốt",
+    "Được thiết kế cho ứng dụng y tế, phòng thí nghiệm và dược phẩm",
+    "Hỗ trợ truy xuất nguồn gốc và tuân thủ quy định"
+   ],
+   "th": [
+    "ใช้งานได้กับวิธีการฆ่าเชื้อหลายรูปแบบ",
+    "ยึดติดได้อย่างเชื่อถือได้หลังการฆ่าเชื้อซ้ำหลายรอบ",
+    "งานพิมพ์ถ่ายโอนความร้อนที่คงทนและอ่านบาร์โค้ดได้ชัดเจน",
+    "ออกแบบสำหรับงานทางการแพทย์ ห้องปฏิบัติการ และเภสัชกรรม",
+    "รองรับการตรวจสอบย้อนกลับและการปฏิบัติตามกฎระเบียบ"
+   ]
   }
+ },
+ "scenarios": {
+  "en": [
+   {
+    "icon": "♨️",
+    "temp": "♨️ Steam",
+    "process": "121–135°C · High Heat & Moisture",
+    "title": "Steam Autoclave",
+    "desc": "Steam sterilization combines high temperature, pressure, and moisture, requiring labels that resist heat, humidity, and repeated sterilization cycles.",
+    "apps": [
+     "Surgical Instruments",
+     "Reusable Medical Devices",
+     "Laboratory Equipment",
+     "Stainless Steel Trays"
+    ],
+    "sterilization": "Steam • Autoclave",
+    "products": "Steam Sterilization Labels",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "2mil white PO · low-migration medical PSA"
+     }
+    ]
+   },
+   {
+    "icon": "🌡",
+    "temp": "🌡 Dry Heat",
+    "process": "160–180°C · High Temperature",
+    "title": "Dry Heat Sterilization",
+    "desc": "Dry heat sterilization exposes labels to prolonged high temperatures without moisture, demanding excellent heat resistance and long-term print durability.",
+    "apps": [
+     "Laboratory Glassware",
+     "Metal Instruments",
+     "Pharmaceutical Equipment",
+     "Heat-Resistant Containers"
+    ],
+    "sterilization": "Dry Heat Oven",
+    "products": "High Temperature Labels",
+    "products_list": [
+     {
+      "name": "E-2531",
+      "material": "ultra-thin PET · heat & chemical resistant"
+     }
+    ]
+   },
+   {
+    "icon": "☢",
+    "temp": "☢ Gamma",
+    "process": "Ionizing Radiation Sterilization",
+    "title": "Gamma Irradiation",
+    "desc": "Gamma rays sterilize packaged products without heat but can embrittle films, fade print, and weaken adhesives if labels are not radiation resistant.",
+    "apps": [
+     "Disposable Medical Devices",
+     "Sterile Medical Kits",
+     "Pharmaceutical Packaging",
+     "Single-Use Products"
+    ],
+    "sterilization": "Gamma Irradiation",
+    "products": "Gamma Resistant Labels",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "2mil white PO · low-migration medical PSA"
+     }
+    ]
+   },
+   {
+    "icon": "💨",
+    "temp": "💨 EtO",
+    "process": "Low-Temperature Gas Sterilization",
+    "title": "Ethylene Oxide (EtO)",
+    "desc": "EtO sterilization is ideal for heat-sensitive medical devices. Labels must remain bonded and readable throughout gas sterilization and aeration cycles.",
+    "apps": [
+     "Catheters",
+     "Endoscopes",
+     "Plastic Medical Devices",
+     "Electronic Medical Equipment"
+    ],
+    "sterilization": "EtO Gas",
+    "products": "EtO Sterilization Labels",
+    "products_list": [
+     {
+      "name": "E-1233",
+      "material": "dual-layer paper · sterilization packaging"
+     }
+    ]
+   },
+   {
+    "icon": "🧪",
+    "temp": "🧪 Chemical",
+    "process": "Surface Disinfection & Chemical Sterilization",
+    "title": "Chemical Sterilants",
+    "desc": "Repeated exposure to disinfectants and sterilizing chemicals requires labels that resist chemical attack while preserving print quality and adhesion.",
+    "apps": [
+     "Clinical Laboratories",
+     "Hospitals",
+     "Cleanrooms",
+     "Pharmaceutical Manufacturing"
+    ],
+    "chemicals": "Bleach • Ethanol • Peracetic Acid • Hydrogen Peroxide",
+    "products": "Chemical Resistant Medical Labels",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "2mil white PO · low-migration medical PSA"
+     },
+     {
+      "name": "E-2531",
+      "material": "ultra-thin PET · heat & chemical resistant"
+     },
+     {
+      "name": "E-1233",
+      "material": "dual-layer paper · sterilization packaging"
+     }
+    ]
+   }
+  ],
+  "zh": [
+   {
+    "icon": "♨️",
+    "temp": "♨️ 高压蒸汽",
+    "process": "121–135°C · 高温湿热",
+    "title": "高压蒸汽灭菌",
+    "desc": "高压蒸汽灭菌结合高温、压力及湿热环境，标签需耐受反复蒸汽灭菌循环。",
+    "apps": [
+     "外科手术器械",
+     "可重复使用医疗器械",
+     "实验室器具",
+     "不锈钢器械托盘"
+    ],
+    "sterilization": "高压蒸汽灭菌（Autoclave）",
+    "products": "高压蒸汽灭菌标签",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "2mil 白色 PO · 低迁移医用压敏胶"
+     }
+    ]
+   },
+   {
+    "icon": "🌡",
+    "temp": "🌡 干热",
+    "process": "160–180°C · 高温干热",
+    "title": "干热灭菌",
+    "desc": "适用于持续高温环境，要求标签具有优异耐热性能及长期打印稳定性。",
+    "apps": [
+     "实验室玻璃器皿",
+     "金属器械",
+     "制药设备",
+     "耐高温容器"
+    ],
+    "sterilization": "干热灭菌",
+    "products": "耐高温标签",
+    "products_list": [
+     {
+      "name": "E-2531",
+      "material": "超薄 PET · 耐高温耐化学"
+     }
+    ]
+   },
+   {
+    "icon": "☢",
+    "temp": "☢ 伽马辐照",
+    "process": "电离辐射灭菌",
+    "title": "伽马辐照灭菌",
+    "desc": "伽马射线可穿透包装完成灭菌，但普通标签可能出现脆化、褪色或胶粘失效。",
+    "apps": [
+     "一次性医疗器械",
+     "无菌医疗包",
+     "医药包装",
+     "一次性耗材"
+    ],
+    "sterilization": "伽马辐照",
+    "products": "耐辐照标签",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "2mil 白色 PO · 低迁移医用压敏胶"
+     }
+    ]
+   },
+   {
+    "icon": "💨",
+    "temp": "💨 环氧乙烷",
+    "process": "低温气体灭菌",
+    "title": "环氧乙烷（EtO）灭菌",
+    "desc": "适用于不耐高温医疗器械，标签需耐受 EtO 灭菌及解析全过程。",
+    "apps": [
+     "导管",
+     "内窥镜",
+     "塑料医疗器械",
+     "医疗电子产品"
+    ],
+    "sterilization": "环氧乙烷（EtO）",
+    "products": "EtO 灭菌标签",
+    "products_list": [
+     {
+      "name": "E-1233",
+      "material": "双层纸基 · 灭菌包装用"
+     }
+    ]
+   },
+   {
+    "icon": "🧪",
+    "temp": "🧪 化学灭菌",
+    "process": "化学灭菌与反复消杀",
+    "title": "化学灭菌与表面消毒",
+    "desc": "适用于长期接触消毒剂及灭菌化学品的医疗环境，保持标签粘接和打印稳定。",
+    "apps": [
+     "临床实验室",
+     "医院",
+     "洁净室",
+     "制药车间"
+    ],
+    "chemicals": "漂白剂 • 乙醇 • 过氧乙酸 • 过氧化氢",
+    "products": "耐化学医疗标签",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "2mil 白色 PO · 低迁移医用压敏胶"
+     },
+     {
+      "name": "E-2531",
+      "material": "超薄 PET · 耐高温耐化学"
+     },
+     {
+      "name": "E-1233",
+      "material": "双层纸基 · 灭菌包装用"
+     }
+    ]
+   }
+  ],
+  "vi": [
+   {
+    "icon": "♨️",
+    "temp": "♨️ Hơi nước",
+    "process": "121–135°C · Nhiệt độ cao & Hơi ẩm",
+    "title": "Nồi hấp Hơi nước (Autoclave)",
+    "desc": "Tiệt trùng bằng hơi nước kết hợp nhiệt độ cao, áp suất và hơi ẩm, đòi hỏi nhãn phải chịu được nhiệt, độ ẩm và các chu kỳ tiệt trùng lặp lại.",
+    "apps": [
+     "Dụng cụ phẫu thuật",
+     "Thiết bị y tế tái sử dụng",
+     "Thiết bị phòng thí nghiệm",
+     "Khay thép không gỉ"
+    ],
+    "sterilization": "Hơi nước • Autoclave",
+    "products": "Nhãn Tiệt trùng Hơi nước",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "PO trắng 2mil · keo y tế ít di trú"
+     }
+    ]
+   },
+   {
+    "icon": "🌡",
+    "temp": "🌡 Nhiệt khô",
+    "process": "160–180°C · Nhiệt độ cao",
+    "title": "Tiệt trùng Nhiệt khô",
+    "desc": "Tiệt trùng nhiệt khô làm nhãn tiếp xúc với nhiệt độ cao kéo dài mà không có hơi ẩm, đòi hỏi khả năng chịu nhiệt xuất sắc và độ bền in lâu dài.",
+    "apps": [
+     "Đồ thủy tinh phòng thí nghiệm",
+     "Dụng cụ kim loại",
+     "Thiết bị dược phẩm",
+     "Hộp chịu nhiệt"
+    ],
+    "sterilization": "Lò sấy Nhiệt khô",
+    "products": "Nhãn Chịu Nhiệt độ Cao",
+    "products_list": [
+     {
+      "name": "E-2531",
+      "material": "PET siêu mỏng · chịu nhiệt & kháng hóa chất"
+     }
+    ]
+   },
+   {
+    "icon": "☢",
+    "temp": "☢ Gamma",
+    "process": "Tiệt trùng bằng Bức xạ ion hóa",
+    "title": "Chiếu xạ Gamma",
+    "desc": "Tia gamma tiệt trùng sản phẩm đã đóng gói mà không cần nhiệt, nhưng có thể làm giòn màng, phai mực và làm yếu keo dán nếu nhãn không kháng bức xạ.",
+    "apps": [
+     "Thiết bị y tế dùng một lần",
+     "Bộ dụng cụ y tế vô trùng",
+     "Bao bì dược phẩm",
+     "Sản phẩm dùng một lần"
+    ],
+    "sterilization": "Chiếu xạ Gamma",
+    "products": "Nhãn Kháng Bức xạ Gamma",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "PO trắng 2mil · keo y tế ít di trú"
+     }
+    ]
+   },
+   {
+    "icon": "💨",
+    "temp": "💨 EtO",
+    "process": "Tiệt trùng bằng Khí ở Nhiệt độ thấp",
+    "title": "Ethylene Oxide (EtO)",
+    "desc": "Tiệt trùng EtO lý tưởng cho các thiết bị y tế nhạy cảm với nhiệt. Nhãn phải giữ được độ bám dính và khả năng đọc trong suốt các chu kỳ tiệt trùng bằng khí và thoáng khí.",
+    "apps": [
+     "Ống thông (Catheter)",
+     "Ống nội soi",
+     "Thiết bị y tế bằng nhựa",
+     "Thiết bị y tế điện tử"
+    ],
+    "sterilization": "Khí EtO",
+    "products": "Nhãn Tiệt trùng EtO",
+    "products_list": [
+     {
+      "name": "E-1233",
+      "material": "giấy hai lớp · dùng cho bao bì tiệt trùng"
+     }
+    ]
+   },
+   {
+    "icon": "🧪",
+    "temp": "🧪 Hóa chất",
+    "process": "Khử trùng Bề mặt & Tiệt trùng Hóa học",
+    "title": "Hóa chất Tiệt trùng",
+    "desc": "Việc tiếp xúc lặp lại với chất khử trùng và hóa chất tiệt trùng đòi hỏi nhãn phải kháng lại sự ăn mòn hóa học đồng thời giữ được chất lượng in và độ bám dính.",
+    "apps": [
+     "Phòng thí nghiệm lâm sàng",
+     "Bệnh viện",
+     "Phòng sạch",
+     "Sản xuất dược phẩm"
+    ],
+    "chemicals": "Thuốc tẩy • Ethanol • Axit Peracetic • Hydro Peroxide",
+    "products": "Nhãn Y tế Kháng Hóa chất",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "PO trắng 2mil · keo y tế ít di trú"
+     },
+     {
+      "name": "E-2531",
+      "material": "PET siêu mỏng · chịu nhiệt & kháng hóa chất"
+     },
+     {
+      "name": "E-1233",
+      "material": "giấy hai lớp · dùng cho bao bì tiệt trùng"
+     }
+    ]
+   }
+  ],
+  "th": [
+   {
+    "icon": "♨️",
+    "temp": "♨️ ไอน้ำ",
+    "process": "121–135°C · ความร้อนสูงและความชื้น",
+    "title": "หม้อนึ่งฆ่าเชื้อไอน้ำ (Autoclave)",
+    "desc": "การฆ่าเชื้อด้วยไอน้ำผสมผสานอุณหภูมิสูง แรงดัน และความชื้น จึงต้องใช้ฉลากที่ทนความร้อน ความชื้น และการฆ่าเชื้อซ้ำหลายรอบ",
+    "apps": [
+     "เครื่องมือผ่าตัด",
+     "เครื่องมือแพทย์ที่ใช้ซ้ำได้",
+     "อุปกรณ์ห้องปฏิบัติการ",
+     "ถาดสเตนเลส"
+    ],
+    "sterilization": "ไอน้ำ • Autoclave",
+    "products": "ฉลากฆ่าเชื้อด้วยไอน้ำ",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
+     }
+    ]
+   },
+   {
+    "icon": "🌡",
+    "temp": "🌡 ความร้อนแห้ง",
+    "process": "160–180°C · อุณหภูมิสูง",
+    "title": "การฆ่าเชื้อด้วยความร้อนแห้ง",
+    "desc": "การฆ่าเชื้อด้วยความร้อนแห้งทำให้ฉลากสัมผัสกับอุณหภูมิสูงเป็นเวลานานโดยไม่มีความชื้น จึงต้องการความทนความร้อนที่ยอดเยี่ยมและความคงทนของงานพิมพ์ในระยะยาว",
+    "apps": [
+     "เครื่องแก้วในห้องปฏิบัติการ",
+     "เครื่องมือโลหะ",
+     "อุปกรณ์เภสัชกรรม",
+     "ภาชนะทนความร้อน"
+    ],
+    "sterilization": "ตู้อบความร้อนแห้ง",
+    "products": "ฉลากทนอุณหภูมิสูง",
+    "products_list": [
+     {
+      "name": "E-2531",
+      "material": "PET บางพิเศษ · ทนความร้อนและสารเคมี"
+     }
+    ]
+   },
+   {
+    "icon": "☢",
+    "temp": "☢ Gamma",
+    "process": "การฆ่าเชื้อด้วยรังสีไอออไนซ์",
+    "title": "การฉายรังสีแกมมา (Gamma)",
+    "desc": "รังสีแกมมาฆ่าเชื้อผลิตภัณฑ์ที่บรรจุแล้วโดยไม่ใช้ความร้อน แต่สามารถทำให้ฟิล์มเปราะ หมึกซีดจาง และกาวเสื่อมสภาพได้หากฉลากไม่ทนต่อรังสี",
+    "apps": [
+     "เครื่องมือแพทย์แบบใช้ครั้งเดียว",
+     "ชุดอุปกรณ์การแพทย์ปลอดเชื้อ",
+     "บรรจุภัณฑ์ยา",
+     "ผลิตภัณฑ์ใช้ครั้งเดียว"
+    ],
+    "sterilization": "การฉายรังสีแกมมา (Gamma)",
+    "products": "ฉลากทนรังสีแกมมา (Gamma)",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
+     }
+    ]
+   },
+   {
+    "icon": "💨",
+    "temp": "💨 EtO",
+    "process": "การฆ่าเชื้อด้วยแก๊สที่อุณหภูมิต่ำ",
+    "title": "เอทิลีนออกไซด์ (EtO)",
+    "desc": "การฆ่าเชื้อด้วย EtO เหมาะสำหรับเครื่องมือแพทย์ที่ไวต่อความร้อน ฉลากต้องยึดติดและอ่านได้ตลอดกระบวนการฆ่าเชื้อด้วยแก๊สและการระบายอากาศ",
+    "apps": [
+     "สายสวน (Catheter)",
+     "กล้องส่องตรวจ (Endoscope)",
+     "เครื่องมือแพทย์พลาสติก",
+     "อุปกรณ์การแพทย์อิเล็กทรอนิกส์"
+    ],
+    "sterilization": "แก๊ส EtO",
+    "products": "ฉลากฆ่าเชื้อ EtO",
+    "products_list": [
+     {
+      "name": "E-1233",
+      "material": "กระดาษสองชั้น · สำหรับบรรจุภัณฑ์ฆ่าเชื้อ"
+     }
+    ]
+   },
+   {
+    "icon": "🧪",
+    "temp": "🧪 สารเคมี",
+    "process": "การฆ่าเชื้อพื้นผิวและการฆ่าเชื้อด้วยสารเคมี",
+    "title": "สารเคมีฆ่าเชื้อ",
+    "desc": "การสัมผัสกับน้ำยาฆ่าเชื้อและสารเคมีฆ่าเชื้อซ้ำ ๆ ต้องใช้ฉลากที่ทนต่อการกัดกร่อนของสารเคมี พร้อมทั้งรักษาคุณภาพงานพิมพ์และการยึดติด",
+    "apps": [
+     "ห้องปฏิบัติการทางคลินิก",
+     "โรงพยาบาล",
+     "ห้องสะอาด (Cleanroom)",
+     "การผลิตยา"
+    ],
+    "chemicals": "น้ำยาฟอกขาว • เอทานอล • กรดเปอร์อะซิติก • ไฮโดรเจนเปอร์ออกไซด์",
+    "products": "ฉลากทางการแพทย์ทนสารเคมี",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
+     },
+     {
+      "name": "E-2531",
+      "material": "PET บางพิเศษ · ทนความร้อนและสารเคมี"
+     },
+     {
+      "name": "E-1233",
+      "material": "กระดาษสองชั้น · สำหรับบรรจุภัณฑ์ฆ่าเชื้อ"
+     }
+    ]
+   }
+  ]
+ }
 }
