@@ -238,7 +238,12 @@ def build_lang(d, lang):
     path = "/products/item/%s/" % slug
     title = L(d["title"], lang)
     banner = d.get("banner", "")
-    bg = ('<img class="bg" src="%s" alt="" loading="eager" onerror="this.style.display=\'none\'">' % esc(banner)) if banner else ""
+    # banner_pos: optional object-position override so a page can steer which part
+    # of the photo shows (e.g. "center bottom" to reveal the bottles). Defaults to
+    # the shared "center right" crop used by every other hero.
+    bpos = d.get("banner_pos", "")
+    bstyle = (' style="object-position:%s"' % esc(bpos)) if bpos else ""
+    bg = ('<img class="bg" src="%s" alt="" loading="eager"%s onerror="this.style.display=\'none\'">' % (esc(banner), bstyle)) if banner else ""
     contact = hp.Lx(lang, "/contact/")
     # tagline stays in data for the meta description; hero_tagline:false hides it from the hero
     tl_html = ('<p class="tl">%s</p>' % esc(L(d.get("tagline", {}), lang))) if d.get("hero_tagline", True) else ""
