@@ -2,7 +2,8 @@
   "slug": "sterilization-labels",
   "source": "client brief — Sterilization Label Solutions",
   "langs": ["en", "zh"],
-  "banner": "",
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/enviroment-sterlization",
+  "banner_pos": "center bottom",
   "eyebrow": {
     "en": "Solutions",
     "zh": "解决方案"

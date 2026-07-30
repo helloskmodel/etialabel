@@ -5,7 +5,8 @@
     "en",
     "zh"
   ],
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/HEAT%20RESISTANT%20",
+  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/enviroment-heat",
+  "banner_pos": "center bottom",
   "eyebrow": {
     "en": "Solutions",
     "zh": "解决方案"
