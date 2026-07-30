@@ -89,7 +89,9 @@ CSS = """
 .anbtn:hover{background:#358B22}
 /* hub */
 .anhub{max-width:1080px;margin:0 auto;padding:8px 24px 10px}
-.angrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin-top:8px}
+.angrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+@media(max-width:900px){.angrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.angrid{grid-template-columns:1fr}}
 .ancard{display:block;background:#fff;border:1px solid #dbe3f1;border-radius:14px;overflow:hidden;text-decoration:none;color:#17203a;transition:box-shadow .15s,transform .15s}
 .ancard:hover{box-shadow:0 10px 26px rgba(20,60,150,.14);transform:translateY(-2px)}
 .ancard .cimg{width:100%;aspect-ratio:16/9;object-fit:cover;background:#e8eefb;display:block}

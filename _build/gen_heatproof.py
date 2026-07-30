@@ -295,9 +295,9 @@ footer .email{color:var(--green);font-weight:600}
 footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;color:var(--faint);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 /* home */
 /* home section banners (dark image + green corner label) */
-.hbanner{position:relative;overflow:hidden;background:var(--blue-deep);background-size:cover;background-position:center right;border-bottom:2px solid #fff}
+.hbanner{position:relative;overflow:hidden;background:var(--blue-deep);background-size:cover;background-position:center right;border-bottom:2px solid #fff;display:flex;align-items:center;min-height:320px}
 .hbanner::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,60,150,.90) 16%,rgba(20,60,150,.50) 54%,rgba(20,60,150,.08))}
-.hbanner .wrap{position:relative;z-index:2;padding:60px 24px}
+.hbanner .wrap{position:relative;z-index:2;width:100%;padding:60px 24px}
 .hbanner .eyebrow{color:#8fe063;margin-bottom:6px}
 .hbanner h1{color:#fff;font-family:var(--sans);font-weight:800;font-size:40px;line-height:1.12;letter-spacing:-.01em;text-align:left;margin:2px 0 10px;max-width:18em}
 .hbanner .hsub{font-size:18px;font-weight:700;color:#eef3ff;margin-bottom:10px;max-width:40em}
@@ -417,8 +417,10 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 #svccar .acard-img img{object-fit:cover}
 .appcard .acard-img{background:#eef3fc;aspect-ratio:16/10}
 .appcard .acard-body p{font-size:14px;color:var(--mut);line-height:1.55;margin-top:6px}
-.appnotesgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.appnotesgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:900px){.appnotesgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.appnotesgrid{gap:11px}.appnotesgrid .acard-body h3{font-size:15px}.appnotesgrid .acard-body p{font-size:12.5px}}
+@media(max-width:520px){.appnotesgrid{grid-template-columns:1fr}}
 /* application-notes search / filter box */
 .ansearch{position:relative;max-width:420px;margin:2px 0 20px}
 .ansearch input{width:100%;font-family:inherit;font-size:14.5px;padding:11px 14px 11px 40px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
