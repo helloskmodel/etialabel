@@ -33,7 +33,7 @@ def Lx(lang, path):
 def esc(s): return html.escape(str(s or ""), quote=True)
 
 # ---------------------------------------------------------------- URLs
-def u_products(): return "/products/"
+def u_products(): return "/applications/"
 def u_line(pid): return "/products/%s/" % PATHS[pid]["slug"]
 def u_prod(slug): return "/products/%s/" % slug
 def u_ind_hub(): return "/industries/"
@@ -813,7 +813,7 @@ CTAS = {
    "body": ("Technical articles can explain the principles, but every process is different. Send us your application details and our team will help you translate the guidance into a suitable material choice.",
             "技术文章讲的是原理，但每个工艺都不同。把您的应用细节发给我们，团队会帮您把这些指南转化为合适的材料选择。"),
    "b1": ("Ask a Material Question", "提出材料问题"), "b1u": "/contact/",
-   "b2": ("Explore Applications", "浏览应用笔记"), "b2u": "/products/"},
+   "b2": ("Explore Applications", "浏览应用笔记"), "b2u": "/applications/"},
  "service": {"h": ("Looking for Material or Production Support?", "需要材料或生产方面的支持？"),
    "body": ("Whether you need help with material selection, testing, converting, quality control, or repeat supply, our team is ready to support your project with clear and practical guidance.",
             "无论是材料选型、检测、加工、质量控制还是持续供应，我们的团队都能以清晰、务实的建议支持您的项目。"),
@@ -1331,7 +1331,7 @@ def home_nav(lang):
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
     # footer nav mirrors the top nav: Product · Application · Insight · Service
-    foot_nav=[("/products/",{"en":"Product","zh":"产品","vi":"Sản phẩm","th":"ผลิตภัณฑ์"}.get(lang,"Product")),
+    foot_nav=[("/applications/",{"en":"Product","zh":"产品","vi":"Sản phẩm","th":"ผลิตภัณฑ์"}.get(lang,"Product")),
               ("/applications/",{"en":"Application","zh":"应用","vi":"Ứng dụng","th":"การใช้งาน"}.get(lang,"Application")),
               ("/insights/",{"en":"Insight","zh":"洞察","vi":"Kiến thức","th":"ความรู้"}.get(lang,"Insight")),
               ("/service/",{"en":"Service","zh":"服务","vi":"Dịch vụ","th":"บริการ"}.get(lang,"Service"))]
