@@ -287,14 +287,29 @@ PRODUCT_INDUSTRY = {
     # medical / lab
     "e-4812": "medical", "e-4532": "medical",
 }
+# Slugs that are environment Solution pages, not industry products — they keep
+# their own (enviroment-*) banner and are exempt from the industry-banner rule.
+SOLUTION_SLUGS = {
+    "high-heat-identification", "cold-chain-cryogenic-labels",
+    "chemical-resistant-labels", "sterilization-labels",
+}
+
+def product_industry(d, slug):
+    """Resolve a product's industry: JSON 'industry' field first, then the
+    hardcoded map. Returns '' for Solution pages and anything unmapped."""
+    return (d.get("industry") or PRODUCT_INDUSTRY.get(slug, "")).strip()
 
 def build_lang(d, lang):
     ui = UI.get(lang, UI[SOURCE_LANG])
     slug = d["slug"]
     path = "/products/item/%s/" % slug
     title = L(d["title"], lang)
-    # Product's own banner wins; otherwise fall back to its industry banner.
-    banner = d.get("banner", "") or INDUSTRY_BANNERS.get(PRODUCT_INDUSTRY.get(slug, ""), "")
+    # UNIFORM RULE, no exceptions: every product landing page shows its industry
+    # banner. The industry comes from the JSON "industry" field (preferred) or the
+    # hardcoded PRODUCT_INDUSTRY map. It ALWAYS wins over any per-product "banner".
+    # Only pages with no industry at all (the environment Solution pages) keep their
+    # own banner. See product_industry() + the build audit that flags omissions.
+    banner = INDUSTRY_BANNERS.get(product_industry(d, slug), "") or d.get("banner", "")
     # banner_pos: optional object-position override so a page can steer which part
     # of the photo shows (e.g. "center bottom" to reveal the bottles). Defaults to
     # the shared "center right" crop used by every other hero.
@@ -355,11 +370,32 @@ def build_lang(d, lang):
 
 def main():
     slugs = [f[:-5] for f in os.listdir(PDIR) if f.endswith(".json")] if os.path.isdir(PDIR) else []
+    unbannered = []   # products that would render with NO banner at all
+    misc = []         # non-solution products with no industry (fell back to own banner)
     for slug in sorted(slugs):
         d = json.load(open(os.path.join(PDIR, slug + ".json"), encoding="utf-8"))
+        ind = product_industry(d, slug)
+        eff_banner = INDUSTRY_BANNERS.get(ind, "") or d.get("banner", "")
+        if slug not in SOLUTION_SLUGS:
+            if not ind:
+                (unbannered if not eff_banner else misc).append(slug)
         for lang in d.get("langs", ["en", "zh"]):
             build_lang(d, lang)
-        print("product:", slug, d.get("langs"))
+        print("product:", slug, "[%s]" % (ind or "—"), d.get("langs"))
+    # Banner audit — so a big batch of new products can't silently ship without a
+    # banner. Any product here needs an "industry" (or a PRODUCT_INDUSTRY entry).
+    known = set(INDUSTRY_BANNERS)
+    bad_ind = sorted({s for s in slugs if s not in SOLUTION_SLUGS
+                      and product_industry(json.load(open(os.path.join(PDIR, s + ".json"), encoding="utf-8")), s)
+                      not in known | {""}})
+    if misc:
+        print("BANNER AUDIT ⚠  no industry set (used own banner):", misc)
+    if bad_ind:
+        print("BANNER AUDIT ⚠  UNKNOWN industry value:", bad_ind, "-> allowed:", sorted(known))
+    if unbannered:
+        print("BANNER AUDIT ❌  NO BANNER AT ALL (set 'industry' in the JSON):", unbannered)
+    else:
+        print("BANNER AUDIT ✓  every product has a banner")
 
 if __name__ == "__main__":
     main()
