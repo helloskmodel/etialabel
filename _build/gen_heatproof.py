@@ -1562,7 +1562,7 @@ def build_home(lang):
                  '<div class="acard-go">%s →</div></div></a>')%(
             href, gi, pimg, INDUSTRY_ICONS[gi%len(INDUSTRY_ICONS)],
             esc(pr["name"]), esc(pr["model"]), pcode_html,
-            esc(T.get("prod_cta","Talk to a Specialist") if not slug else ("查看产品" if lang=="zh" else "View Product")))
+            esc(T.get("prod_cta","Talk to a Specialist") if not slug else P(lang,"View Product","查看产品","Xem sản phẩm","ดูสินค้า")))
     prod_viewall={"en":"View All Products","zh":"查看全部产品","vi":"Xem tất cả sản phẩm","th":"ดูสินค้าทั้งหมด"}.get(lang,"View All Products")
     prod_section=('<section class="blk" style="background:var(--bg)"><div class="wrap">'
                   '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
