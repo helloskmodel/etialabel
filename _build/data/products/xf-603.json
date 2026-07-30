@@ -10,127 +10,320 @@
   "banner": "",
   "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/WIRENCABLE-XF603",
   "title": {
-    "en": "XF-603 — Imported PI High-Temp Flame-Retardant Label",
-    "zh": "XF-603 · 进口 PI 耐高温阻燃标签",
-    "vi": "XF-603 · Nhãn PI nhập khẩu chịu nhiệt cao chống cháy",
-    "th": "XF-603 · ฉลาก PI นำเข้า ทนความร้อนสูง หน่วงไฟ"
+    "en": "XF-603 Halogen-Free Flame-Retardant High-Temperature Polyimide Cable Label",
+    "zh": "XF-603 无卤阻燃耐高温聚酰亚胺线缆标签",
+    "vi": "XF-603 Nhãn cáp polyimide chịu nhiệt cao chống cháy không halogen",
+    "th": "XF-603 ฉลากสายเคเบิลโพลีอิไมด์ทนความร้อนสูง หน่วงไฟไร้ฮาโลเจน"
   },
   "tagline": {
-    "en": "Imported Polyonics polyimide label rated 300℃ short-term / 150℃ long-term with UL94 VTM-0 halogen-free flame retardancy",
-    "zh": "Polyonics 原厂进口聚酰亚胺标签，短时耐 300℃、长期 150℃，UL94 VTM-0 无卤阻燃",
-    "vi": "Nhãn polyimide nhập khẩu Polyonics chịu 300°C ngắn hạn / 150°C dài hạn, chống cháy không halogen UL94 VTM-0",
-    "th": "ฉลากโพลีอิไมด์นำเข้า Polyonics ทน 300°C ระยะสั้น / 150°C ระยะยาว หน่วงไฟไร้ฮาโลเจน UL94 VTM-0"
+    "en": "UL94 VTM-0 Rated and UL 969 Recognized. Peak Heat Resistance up to 300°C.",
+    "zh": "UL94 VTM-0 认证、UL 969 认可，峰值耐温高达 300°C",
+    "vi": "Đạt chuẩn UL94 VTM-0 và được UL 969 công nhận. Chịu nhiệt đỉnh tới 300°C.",
+    "th": "ผ่านมาตรฐาน UL94 VTM-0 และได้รับการรับรอง UL 969 ทนความร้อนสูงสุดถึง 300°C"
   },
   "positioning": {
-    "en": "Premium imported polyimide facestock, withstands 300℃ short-term peak temperature and stable 150℃ long-term operation, halogen-free high-grade flame retardant, resists automotive & aerospace corrosion without deformation. Equipped with special pressure-sensitive glue customized for high temperature & high humidity environments; firmly adheres to curved cable surfaces under continuous heat, moisture and temperature cycling, no curling, lifting or peeling after repeated bending & long-term wiring. Dense flat PI material delivers crisp thermal transfer prints, no ink bleeding or fading under high temperature.",
-    "zh": "高端进口 PI 聚酰亚胺基材，短时耐受 300℃高温、长期 150℃稳定运行，高等级无卤阻燃，耐车用、航空级腐蚀，性能稳定不变形；搭载耐高温高湿专用特种压敏胶，在持续高温、潮湿水汽、冷热交替工况下依旧牢牢贴合线缆曲面，反复弯折、长期布线完全不会起翘、开口脱落；致密平整 PI 面材，热转印打印字迹锐利清晰，高温环境不晕墨、不掉字",
-    "vi": "Vật liệu mặt polyimide nhập khẩu cao cấp, chịu đỉnh nhiệt 300°C ngắn hạn và vận hành ổn định 150°C dài hạn, chống cháy không halogen cấp cao, chống ăn mòn cấp ô tô & hàng không mà không biến dạng. Trang bị keo áp lực đặc biệt tùy chỉnh cho môi trường nhiệt độ cao & độ ẩm cao; bám chắc vào bề mặt cong của dây cáp dưới nhiệt liên tục, hơi ẩm và chu kỳ nhiệt, không cuốn mép, nhấc hay bong tróc sau khi uốn lặp lại & đi dây dài hạn. Vật liệu PI phẳng đặc cho bản in chuyển nhiệt sắc nét, không nhòe mực hay phai màu dưới nhiệt độ cao.",
-    "th": "วัสดุพิมพ์โพลีอิไมด์นำเข้าคุณภาพสูง ทนอุณหภูมิสูงสุด 300°C ระยะสั้นและทำงานเสถียรที่ 150°C ระยะยาว หน่วงไฟไร้ฮาโลเจนระดับสูง ทนการกัดกร่อนระดับยานยนต์และอากาศยานโดยไม่เสียรูป ติดตั้งกาวแรงกดพิเศษที่ออกแบบสำหรับสภาพแวดล้อมอุณหภูมิสูงและความชื้นสูง ยึดเกาะผิวโค้งของสายเคเบิลได้แน่นภายใต้ความร้อนต่อเนื่อง ความชื้นและวัฏจักรอุณหภูมิ ไม่ม้วนงอ เผยอ หรือหลุดลอกหลังการดัดโค้งซ้ำและการเดินสายระยะยาว วัสดุ PI แบนแน่นให้งานพิมพ์ถ่ายเทความร้อนที่คมชัด ไม่มีหมึกเยิ้มหรือซีดจางภายใต้อุณหภูมิสูง"
+    "en": "XF-603 is a halogen-free, flame-retardant polyimide label designed for high-temperature identification. Its flexible PI film is suitable for cable wrapping and flag labeling, combining reliable adhesion, clear printing and high-temperature durability for electronic, automotive and industrial cables.",
+    "zh": "XF-603 是一款专为高温标识设计的无卤阻燃聚酰亚胺标签。其柔性 PI 薄膜适用于线缆缠绕与旗形标签，兼具可靠粘接、清晰打印与耐高温耐久性，适用于电子、汽车及工业线缆。",
+    "vi": "XF-603 là nhãn polyimide chống cháy không halogen được thiết kế cho nhận diện ở nhiệt độ cao. Màng PI dẻo phù hợp để quấn cáp và dán nhãn cờ, kết hợp độ bám dính đáng tin cậy, in ấn rõ nét và độ bền nhiệt cao cho cáp điện tử, ô tô và công nghiệp.",
+    "th": "XF-603 เป็นฉลากโพลีอิไมด์หน่วงไฟไร้ฮาโลเจนที่ออกแบบมาสำหรับการระบุเอกลักษณ์ในสภาพอุณหภูมิสูง ฟิล์ม PI ที่ยืดหยุ่นเหมาะสำหรับการพันสายเคเบิลและฉลากแบบธง ผสมผสานการยึดเกาะที่เชื่อถือได้ การพิมพ์ที่คมชัด และความทนทานต่ออุณหภูมิสูง สำหรับสายเคเบิลอิเล็กทรอนิกส์ ยานยนต์ และอุตสาหกรรม"
   },
   "challenges": {},
   "features": {
     "en": [
-      "Premium imported PI (polyimide) facestock; resists automotive & aerospace corrosion without deformation",
-      "Withstands 300℃ short-term peak temperature and stable 150℃ long-term operation",
-      "UL94 VTM-0 high-grade halogen-free flame retardant",
-      "Special high-temperature & high-humidity pressure-sensitive adhesive firmly bonds to curved cable surfaces; no curling, lifting or peeling after repeated bending and long-term wiring",
-      "Dense flat PI material delivers crisp thermal-transfer prints with no ink bleeding or fading under high temperature"
+      "Flexible 1 mil PI film conforms to round and curved cables",
+      "Suitable for cable wrapping and flag labeling",
+      "Withstands 150°C long-term and peak temperatures up to 300°C",
+      "Halogen-free flame-retardant material rated UL94 VTM-0",
+      "UL 969 recognized for marking and labeling systems",
+      "Tested to FMVSS 302 for motor-vehicle interior flammability",
+      "Chemical-resistant coating supports clear, durable thermal-transfer printing",
+      "REACH and RoHS compliant"
     ],
     "zh": [
-      "高端进口 PI 聚酰亚胺基材，耐车用、航空级腐蚀，性能稳定不变形",
-      "短时耐受 300℃高温、长期 150℃稳定运行",
-      "UL94 VTM-0 高等级无卤阻燃",
-      "耐高温高湿专用特种压敏胶牢牢贴合线缆曲面，反复弯折、长期布线不会起翘、开口脱落",
-      "致密平整 PI 面材，热转印打印字迹锐利清晰，高温环境不晕墨、不掉字"
+      "1 mil 柔性 PI 薄膜，可贴合圆形及弯曲线缆",
+      "适用于线缆缠绕与旗形标签",
+      "长期耐受 150°C，峰值耐温高达 300°C",
+      "无卤阻燃材料，UL94 VTM-0 认证",
+      "获 UL 969 标识与标签系统认可",
+      "通过 FMVSS 302 机动车内饰阻燃测试",
+      "耐化学涂层，支持清晰耐久的热转印打印",
+      "符合 REACH 与 RoHS 要求"
     ],
     "vi": [
-      "Vật liệu mặt PI (polyimide) nhập khẩu cao cấp; chống ăn mòn cấp ô tô & hàng không mà không biến dạng",
-      "Chịu đỉnh nhiệt 300°C ngắn hạn và vận hành ổn định 150°C dài hạn",
-      "Chống cháy không halogen cấp cao UL94 VTM-0",
-      "Keo áp lực đặc biệt chịu nhiệt cao & độ ẩm cao bám chắc bề mặt cong của dây cáp; không cuốn mép, nhấc hay bong tróc sau khi uốn lặp lại & đi dây dài hạn",
-      "Vật liệu PI phẳng đặc cho bản in chuyển nhiệt sắc nét, không nhòe mực hay phai màu dưới nhiệt độ cao"
+      "Màng PI dẻo 1 mil ôm sát cáp tròn và cong",
+      "Phù hợp để quấn cáp và dán nhãn cờ",
+      "Chịu 150°C dài hạn và nhiệt đỉnh tới 300°C",
+      "Vật liệu chống cháy không halogen đạt chuẩn UL94 VTM-0",
+      "Được UL 969 công nhận cho hệ thống đánh dấu và ghi nhãn",
+      "Đã thử nghiệm FMVSS 302 về tính cháy của vật liệu nội thất xe cơ giới",
+      "Lớp phủ kháng hóa chất hỗ trợ in chuyển nhiệt rõ nét, bền lâu",
+      "Tuân thủ REACH và RoHS"
     ],
     "th": [
-      "วัสดุพิมพ์ PI (โพลีอิไมด์) นำเข้าคุณภาพสูง ทนการกัดกร่อนระดับยานยนต์และอากาศยานโดยไม่เสียรูป",
-      "ทนอุณหภูมิสูงสุด 300°C ระยะสั้นและทำงานเสถียรที่ 150°C ระยะยาว",
-      "หน่วงไฟไร้ฮาโลเจนระดับสูง UL94 VTM-0",
-      "กาวแรงกดพิเศษทนความร้อนสูงและความชื้นสูงยึดเกาะผิวโค้งของสายเคเบิลได้แน่น ไม่ม้วนงอ เผยอ หรือหลุดลอกหลังการดัดโค้งซ้ำและการเดินสายระยะยาว",
-      "วัสดุ PI แบนแน่นให้งานพิมพ์ถ่ายเทความร้อนที่คมชัด ไม่มีหมึกเยิ้มหรือซีดจางภายใต้อุณหภูมิสูง"
+      "ฟิล์ม PI ยืดหยุ่น 1 mil แนบสนิทกับสายเคเบิลทรงกลมและโค้ง",
+      "เหมาะสำหรับการพันสายเคเบิลและฉลากแบบธง",
+      "ทน 150°C ระยะยาว และอุณหภูมิสูงสุดถึง 300°C",
+      "วัสดุหน่วงไฟไร้ฮาโลเจน ผ่านมาตรฐาน UL94 VTM-0",
+      "ได้รับการรับรอง UL 969 สำหรับระบบทำเครื่องหมายและติดฉลาก",
+      "ผ่านการทดสอบ FMVSS 302 ด้านการติดไฟของวัสดุภายในยานยนต์",
+      "สารเคลือบทนสารเคมีรองรับการพิมพ์ถ่ายเทความร้อนที่คมชัดและทนทาน",
+      "เป็นไปตามข้อกำหนด REACH และ RoHS"
     ]
   },
   "benefits": {},
-  "spec": {
-    "en": [
-      "Facestock: Imported PI (polyimide), original Polyonics",
-      "Temperature rating: 300℃ short-term peak / 150℃ long-term",
-      "Flame retardant: UL94 VTM-0 (halogen-free)",
-      "Adhesive: High-temperature & high-humidity special pressure-sensitive adhesive",
-      "Certification: Full official UL"
-    ],
-    "zh": [
-      "面材：进口 PI 聚酰亚胺（Polyonics 原厂）",
-      "耐温：短时峰值 300℃ / 长期 150℃",
-      "阻燃：UL94 VTM-0（无卤）",
-      "胶粘剂：耐高温高湿专用特种压敏胶",
-      "认证：全套 UL 官方认证"
-    ],
-    "vi": [
-      "Vật liệu mặt: PI (polyimide) nhập khẩu, chính hãng Polyonics",
-      "Định mức nhiệt: đỉnh ngắn hạn 300°C / dài hạn 150°C",
-      "Chống cháy: UL94 VTM-0 (không halogen)",
-      "Keo dán: keo áp lực đặc biệt chịu nhiệt cao & độ ẩm cao",
-      "Chứng nhận: UL chính thức đầy đủ"
-    ],
-    "th": [
-      "วัสดุพิมพ์: PI (โพลีอิไมด์) นำเข้า ของแท้ Polyonics",
-      "พิกัดอุณหภูมิ: สูงสุดระยะสั้น 300°C / ระยะยาว 150°C",
-      "หน่วงไฟ: UL94 VTM-0 (ไร้ฮาโลเจน)",
-      "กาว: กาวแรงกดพิเศษทนความร้อนสูงและความชื้นสูง",
-      "การรับรอง: UL ทางการครบชุด"
-    ]
-  },
   "applications": {
     "en": [
-      "Flag-wrapping on thin wires",
-      "Full cable wrapping",
-      "Automotive",
-      "Electronic equipment",
-      "Industrial communication"
+      "Electronic-equipment cable identification",
+      "Automotive wire harnesses",
+      "High-temperature industrial cables",
+      "Wrap-around cable labels",
+      "Flag labels",
+      "Industrial communication and control cables",
+      "Wire-harness classification and asset traceability",
+      "Electronic-component process tracking"
     ],
     "zh": [
-      "细线对粘",
-      "线缆缠绕",
-      "汽车",
-      "电子设备",
-      "工业通信"
+      "电子设备线缆标识",
+      "汽车线束",
+      "高温工业线缆",
+      "缠绕式线缆标签",
+      "旗形标签",
+      "工业通信与控制线缆",
+      "线束分类与资产追溯",
+      "电子元器件过程追踪"
     ],
     "vi": [
-      "Dán cờ trên dây mảnh",
-      "Quấn quanh toàn bộ dây cáp",
-      "Ô tô",
-      "Thiết bị điện tử",
-      "Truyền thông công nghiệp"
+      "Nhận diện cáp thiết bị điện tử",
+      "Bó dây ô tô",
+      "Cáp công nghiệp nhiệt độ cao",
+      "Nhãn quấn quanh cáp",
+      "Nhãn cờ",
+      "Cáp truyền thông và điều khiển công nghiệp",
+      "Phân loại bó dây và truy xuất nguồn gốc tài sản",
+      "Theo dõi quy trình linh kiện điện tử"
     ],
     "th": [
-      "ติดแบบธงบนสายเส้นเล็ก",
-      "พันรอบสายเคเบิลทั้งเส้น",
-      "ยานยนต์",
-      "อุปกรณ์อิเล็กทรอนิกส์",
-      "การสื่อสารอุตสาหกรรม"
+      "การระบุสายเคเบิลอุปกรณ์อิเล็กทรอนิกส์",
+      "ชุดสายไฟยานยนต์",
+      "สายเคเบิลอุตสาหกรรมอุณหภูมิสูง",
+      "ฉลากพันรอบสายเคเบิล",
+      "ฉลากแบบธง",
+      "สายเคเบิลสื่อสารและควบคุมในอุตสาหกรรม",
+      "การจำแนกชุดสายไฟและการตรวจสอบย้อนกลับทรัพย์สิน",
+      "การติดตามกระบวนการชิ้นส่วนอิเล็กทรอนิกส์"
     ]
   },
   "certifications": {
     "en": [
-      "Full UL certification (UL94 VTM-0, halogen-free)"
+      "UL94 VTM-0 Rated — Meets the UL94 VTM-0 flammability rating for thin materials, helping restrict continued burning and flame propagation.",
+      "UL 969 Recognized — Recognized for use in marking and labeling systems that require reliable, long-term identification.",
+      "FMVSS 302 Tested — Tested for the flammability of motor-vehicle interior materials, supporting automotive cable-identification applications.",
+      "Halogen-Free — Uses a halogen-free flame-retardant construction, helping reduce the potential generation of corrosive halogen-containing smoke.",
+      "REACH and RoHS Compliant — Meets applicable chemical-management and hazardous-substance requirements."
     ],
     "zh": [
-      "全套 UL 认证（UL94 VTM-0，无卤）"
+      "UL94 VTM-0 认证 — 满足薄材料 UL94 VTM-0 阻燃等级，有助于抑制持续燃烧与火焰蔓延。",
+      "UL 969 认可 — 适用于需要可靠、长期标识的标记与标签系统。",
+      "FMVSS 302 测试 — 通过机动车内饰材料阻燃性测试，支持汽车线缆标识应用。",
+      "无卤 — 采用无卤阻燃结构，有助于减少腐蚀性含卤烟雾的产生。",
+      "REACH 与 RoHS 合规 — 满足适用的化学品管理与有害物质要求。"
     ],
     "vi": [
-      "Chứng nhận UL đầy đủ (UL94 VTM-0, không halogen)"
+      "Đạt chuẩn UL94 VTM-0 — Đáp ứng cấp chống cháy UL94 VTM-0 cho vật liệu mỏng, giúp hạn chế cháy lan và lan truyền ngọn lửa.",
+      "Được UL 969 công nhận — Được công nhận cho hệ thống đánh dấu và ghi nhãn cần nhận diện đáng tin cậy, lâu dài.",
+      "Đã thử nghiệm FMVSS 302 — Được thử nghiệm tính cháy của vật liệu nội thất xe cơ giới, hỗ trợ ứng dụng nhận diện cáp ô tô.",
+      "Không halogen — Sử dụng cấu tạo chống cháy không halogen, giúp giảm khả năng sinh khói chứa halogen ăn mòn.",
+      "Tuân thủ REACH và RoHS — Đáp ứng các yêu cầu quản lý hóa chất và chất nguy hại hiện hành."
     ],
     "th": [
-      "การรับรอง UL ครบชุด (UL94 VTM-0, ไร้ฮาโลเจน)"
+      "ผ่านมาตรฐาน UL94 VTM-0 — เป็นไปตามระดับการหน่วงไฟ UL94 VTM-0 สำหรับวัสดุบาง ช่วยจำกัดการเผาไหม้ต่อเนื่องและการลุกลามของเปลวไฟ",
+      "ได้รับการรับรอง UL 969 — ได้รับการรับรองสำหรับระบบทำเครื่องหมายและติดฉลากที่ต้องการการระบุที่เชื่อถือได้และยาวนาน",
+      "ผ่านการทดสอบ FMVSS 302 — ทดสอบการติดไฟของวัสดุภายในยานยนต์ รองรับการใช้งานระบุสายเคเบิลยานยนต์",
+      "ไร้ฮาโลเจน — ใช้โครงสร้างหน่วงไฟไร้ฮาโลเจน ช่วยลดโอกาสการเกิดควันที่มีฮาโลเจนซึ่งกัดกร่อน",
+      "เป็นไปตาม REACH และ RoHS — เป็นไปตามข้อกำหนดการจัดการสารเคมีและสารอันตรายที่เกี่ยวข้อง"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Specification",
+        "XF-603"
+      ],
+      "zh": [
+        "规格项",
+        "XF-603"
+      ],
+      "vi": [
+        "Thông số",
+        "XF-603"
+      ],
+      "th": [
+        "ข้อมูลจำเพาะ",
+        "XF-603"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Product",
+            "zh": "产品",
+            "vi": "Sản phẩm",
+            "th": "ผลิตภัณฑ์"
+          },
+          "XF-603"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Facestock",
+            "zh": "面材",
+            "vi": "Vật liệu mặt",
+            "th": "วัสดุพิมพ์"
+          },
+          {
+            "en": "Semi-gloss white polyimide film",
+            "zh": "半亮白聚酰亚胺薄膜",
+            "vi": "Màng polyimide trắng bán bóng",
+            "th": "ฟิล์มโพลีอิไมด์สีขาวกึ่งเงา"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Facestock thickness",
+            "zh": "面材厚度",
+            "vi": "Độ dày vật liệu mặt",
+            "th": "ความหนาวัสดุพิมพ์"
+          },
+          "1 mil (25μm)"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesive",
+            "zh": "胶粘剂",
+            "vi": "Keo dán",
+            "th": "กาว"
+          },
+          {
+            "en": "1 mil high-temperature acrylic PSA",
+            "zh": "1 mil 耐高温丙烯酸压敏胶",
+            "vi": "Keo áp lực acrylic chịu nhiệt cao 1 mil",
+            "th": "กาวแรงกดอะคริลิกทนความร้อนสูง 1 mil"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Application methods",
+            "zh": "应用方式",
+            "vi": "Phương pháp ứng dụng",
+            "th": "วิธีการใช้งาน"
+          },
+          {
+            "en": "Cable wrapping and flag labeling",
+            "zh": "线缆缠绕与旗形标签",
+            "vi": "Quấn cáp và dán nhãn cờ",
+            "th": "การพันสายเคเบิลและฉลากแบบธง"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Long-term temperature",
+            "zh": "长期耐温",
+            "vi": "Nhiệt độ dài hạn",
+            "th": "อุณหภูมิระยะยาว"
+          },
+          {
+            "en": "150°C for 100 hours",
+            "zh": "150°C 持续 100 小时",
+            "vi": "150°C trong 100 giờ",
+            "th": "150°C เป็นเวลา 100 ชั่วโมง"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Short-term temperature",
+            "zh": "短期耐温",
+            "vi": "Nhiệt độ ngắn hạn",
+            "th": "อุณหภูมิระยะสั้น"
+          },
+          {
+            "en": "260°C for 5 minutes",
+            "zh": "260°C 持续 5 分钟",
+            "vi": "260°C trong 5 phút",
+            "th": "260°C เป็นเวลา 5 นาที"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Peak temperature",
+            "zh": "峰值耐温",
+            "vi": "Nhiệt độ đỉnh",
+            "th": "อุณหภูมิสูงสุด"
+          },
+          {
+            "en": "300°C for 90 seconds",
+            "zh": "300°C 持续 90 秒",
+            "vi": "300°C trong 90 giây",
+            "th": "300°C เป็นเวลา 90 วินาที"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Printing method",
+            "zh": "打印方式",
+            "vi": "Phương pháp in",
+            "th": "วิธีการพิมพ์"
+          },
+          {
+            "en": "Thermal transfer",
+            "zh": "热转印",
+            "vi": "In chuyển nhiệt",
+            "th": "การถ่ายเทความร้อน"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Flammability rating",
+            "zh": "阻燃等级",
+            "vi": "Cấp chống cháy",
+            "th": "ระดับการหน่วงไฟ"
+          },
+          "UL94 VTM-0"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Environmental compliance",
+            "zh": "环保合规",
+            "vi": "Tuân thủ môi trường",
+            "th": "การปฏิบัติตามด้านสิ่งแวดล้อม"
+          },
+          {
+            "en": "REACH and RoHS",
+            "zh": "REACH 与 RoHS",
+            "vi": "REACH và RoHS",
+            "th": "REACH และ RoHS"
+          }
+        ]
+      }
     ]
   }
 }
