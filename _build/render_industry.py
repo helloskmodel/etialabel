@@ -61,7 +61,7 @@ CSS = """
 .wcfcrow{display:flex;align-items:flex-end;gap:2px;border-bottom:1px solid #dbe3f1}
 .wcar{flex:none;width:34px;height:46px;border:none;background:transparent;color:#143C96;font-size:26px;line-height:1;cursor:pointer;opacity:.6}
 .wcar:hover{opacity:1}
-.wctabs{display:flex;gap:4px;overflow-x:auto;flex:1;justify-content:center}
+.wctabs{display:flex;gap:4px;overflow-x:auto;flex:1;justify-content:safe center}
 .wctabs::-webkit-scrollbar{height:0}
 .wctab{flex:none;max-width:200px;text-align:center;font-size:13.5px;font-weight:700;line-height:1.25;padding:10px 16px;cursor:pointer;white-space:normal;background:transparent;color:#143C96;border:none;border-radius:9px 9px 0 0;position:relative;margin-bottom:-1px}
 .wctab.on{background:#5b6ee8;color:#fff}
