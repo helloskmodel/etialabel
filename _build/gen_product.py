@@ -63,9 +63,10 @@ CSS = """
 .phero .tl{color:#dbe6ff;font-size:18px;margin:0 0 18px;max-width:36em}
 .pbtn{display:inline-block;background:#41A62A;color:#fff;font-weight:800;font-size:14.5px;padding:12px 22px;border-radius:9px;text-decoration:none}
 .pbtn:hover{background:#358B22}
-.psec{max-width:900px;margin:0 auto;padding:30px 24px}
+.psec{max-width:900px;margin:0 auto;padding:15px 24px}
+.psec:first-of-type{padding-top:26px}
 .peye{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#1A56DB}
-.psec h2{font-size:22px;color:#143C96;margin:8px 0 14px}
+.psec h2{font-size:22px;color:#143C96;margin:6px 0 10px}
 .psec .pos{font-size:16px;line-height:1.75;color:#2c3a58;margin:0}
 .plist{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
 .plist li{position:relative;padding-left:26px;font-size:15px;line-height:1.7;color:#41506e}
@@ -108,6 +109,16 @@ CSS = """
 .pscn-sub{font-size:12.5px;line-height:1.55;color:#41506e;margin-top:4px}
 .pscn-lb{display:block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#8593ad;margin-bottom:1px}
 .pscncard .pscn-sub:first-of-type{margin-top:8px;padding-top:8px;border-top:1px solid #eef2f9}
+/* two-column scenario card: left = process, right = products (name + material) */
+.pscncard.pscn2{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;align-items:start;flex-direction:unset}
+.pscn-l{display:flex;flex-direction:column;gap:6px}
+.pscn-r{border-left:1px solid #e6ecf6;padding-left:20px}
+.pscn-rh{font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#8593ad;margin-bottom:6px}
+.pscn-prod{padding:9px 0;border-bottom:1px solid #f0f3fa}
+.pscn-prod:last-child{border-bottom:0}
+.pscn-prod b{display:block;font-size:14px;color:#143C96;font-weight:700;line-height:1.3}
+.pscn-prod span{font-size:12.5px;color:#5a6885}
+@media(max-width:640px){.pscncard.pscn2{grid-template-columns:1fr;gap:14px}.pscn-r{border-left:0;border-top:1px solid #eef2f9;padding-left:0;padding-top:12px}}
 /* temperature tab bar — same component as the industry "Choose a category" */
 .scnfc{margin-top:6px}
 .scnfcrow{display:flex;align-items:flex-end;gap:2px;border-bottom:1px solid #dbe3f1}
@@ -118,7 +129,7 @@ CSS = """
 .scntab{flex:none;font-size:13.5px;font-weight:700;line-height:1.25;padding:10px 16px;cursor:pointer;white-space:nowrap;background:transparent;color:#143C96;border:none;border-radius:9px 9px 0 0;position:relative;margin-bottom:-1px;font-family:inherit}
 .scntab.on{background:#5b6ee8;color:#fff}
 .scntab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#1A56DB}
-#scnpanel{margin-top:20px;max-width:760px;margin-left:auto;margin-right:auto}
+#scnpanel{margin-top:20px;max-width:820px;margin-left:auto;margin-right:auto}
 #scnpanel .pscncard+.pscncard{margin-top:14px}
 /* dimensional container around the temperature tabs + panel */
 .scnbox{background:#f4f7ff;border:1px solid #e3eaf6;border-radius:16px;padding:16px 18px 22px;box-shadow:0 8px 26px rgba(20,60,150,.08)}
@@ -183,10 +194,20 @@ def _scn_panel(s, ui):
         sub += subblock(ui["sc_containers"], s["containers"])
     if s.get("chemicals"):
         sub += subblock(ui["sc_chemicals"], s["chemicals"])
-    if s.get("products"):
+    # products_list = [{name, material}] renders a right-hand product column.
+    # A plain "products" string stays a single-column sub-block (legacy behaviour).
+    prods = s.get("products_list")
+    if s.get("products") and not prods:
         sub += subblock(ui["sc_products"], s["products"])
-    return ('<div class="pscncard"><div class="pr">%s</div><h3>%s</h3><p>%s</p>%s%s</div>') % (
+    left = '<div class="pr">%s</div><h3>%s</h3><p>%s</p>%s%s' % (
         esc(s.get("process", "")), esc(title), esc(s.get("desc", "")), sub, apline)
+    if prods:
+        rows = "".join('<div class="pscn-prod"><b>%s</b><span>%s</span></div>' % (
+            esc(p.get("name", "")), esc(p.get("material", ""))) for p in prods)
+        right = '<div class="pscn-rh">%s</div>%s' % (esc(ui["sc_products"]), rows)
+        return ('<div class="pscncard pscn2"><div class="pscn-l">%s</div>'
+                '<div class="pscn-r">%s</div></div>') % (left, right)
+    return '<div class="pscncard">%s</div>' % left
 
 def scenarios_html(items, ui):
     # Temperature tab bar — same component as the industry "Choose a category":
