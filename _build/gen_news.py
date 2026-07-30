@@ -19,6 +19,10 @@ UI = {
          "read": "Read →", "back": "← All insights", "home": "Home", "news": "Insight"},
   "zh": {"hub_title": "洞察", "hub_lede": "耐久工业标签的市场解读、材料知识与应用经验。",
          "read": "阅读 →", "back": "← 返回全部洞察", "home": "首页", "news": "洞察"},
+  "vi": {"hub_title": "Kiến thức", "hub_lede": "Phân tích thị trường, kiến thức vật liệu và kinh nghiệm ứng dụng cho nhãn công nghiệp bền.",
+         "read": "Đọc →", "back": "← Tất cả bài viết", "home": "Trang chủ", "news": "Kiến thức"},
+  "th": {"hub_title": "ความรู้", "hub_lede": "การวิเคราะห์ตลาด ความรู้ด้านวัสดุ และความเชี่ยวชาญการใช้งานสำหรับฉลากอุตสาหกรรมที่ทนทาน",
+         "read": "อ่าน →", "back": "← บทความทั้งหมด", "home": "หน้าแรก", "news": "ความรู้"},
 }
 
 def L(node, lang):
@@ -27,7 +31,9 @@ def L(node, lang):
     v = node.get(lang)
     if v:
         return v
-    return node.get(SOURCE_LANG) or ""
+    # fall back to English for non-source languages (readable internationally),
+    # then to the Chinese source.
+    return node.get("en") or node.get(SOURCE_LANG) or ""
 
 CSS = """
 <style>
@@ -91,7 +97,8 @@ def build_article(a, lang):
     body += '<a class="nback" href="%s">%s</a></div>' % (hp.Lx(lang, HUB), esc(ui["back"]))
     crumb = [(ui["home"], "/"), (ui["hub_title"], HUB), (title, path)]
     content = hp.page(lang, path, title + " | ETIA", esc(L(a.get("subtitle", {}), lang)),
-                      title, "", body, crumb, active="insights", trust=False, hero=hero)
+                      title, "", body, crumb, active="insights", trust=False, hero=hero,
+                      langs=hp.NAV_PILLAR_LANGS)
     hp.write(lang, path, content)
     if lang == "en":
         hp.track(path, "core")
@@ -110,21 +117,19 @@ def build_hub(lang):
     body = CSS + '<div class="ncards">%s</div>' % cards
     crumb = [(ui["home"], "/"), (ui["hub_title"], HUB)]
     # brand Insight hero (Knowledge Drives Better Decisions) — without the body paragraph
-    if lang in ("en", "zh"):
-        s = hp.HOME2.get(lang, hp.HOME2["en"])["sections"][2]
-        hero = hp.page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
-                            s["b1"], s["b1u"], s["b2"], s["b2u"], hp.SECTION_BG.get(2, ""))
-    else:
-        hero = None
+    s = hp.HOME2.get(lang, hp.HOME2["en"])["sections"][2]
+    hero = hp.page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
+                        s["b1"], s["b1u"], s["b2"], s["b2u"], hp.SECTION_BG.get(2, ""))
     content = hp.page(lang, HUB, ui["hub_title"] + " | ETIA", ui["hub_lede"],
-                      ui["hub_title"], "", body, crumb, active="insights", trust=False, hero=hero)
+                      ui["hub_title"], "", body, crumb, active="insights", trust=False, hero=hero,
+                      langs=hp.NAV_PILLAR_LANGS)
     hp.write(lang, HUB, content)
     if lang == "en":
         hp.track(HUB, "core")
 
 def main():
     arts = json.load(open(DATA, encoding="utf-8"))["articles"]
-    for lang in ["en", "zh"]:
+    for lang in ["en", "zh", "vi", "th"]:
         build_hub(lang)
         for a in arts:
             build_article(a, lang)

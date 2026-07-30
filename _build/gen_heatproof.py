@@ -19,14 +19,19 @@ INDUSTRIES = {i["id"]: i for i in DATA["industries"]}
 APPS = DATA["applications"]
 
 LANGS = ["en", "zh"]                       # default inner-site languages
+NAV_PILLAR_LANGS = ["en", "zh", "vi", "th"]  # Solutions / Service / Insight pillars: all 4 languages
+JX = {"en": 0, "zh": 1, "vi": 2, "th": 3}
+def P(lang, en, zh, vi, th):               # 4-language inline string pick
+    return {"en": en, "zh": zh, "vi": vi, "th": th}.get(lang, en)
 PREFIX = {"en": "", "zh": "/cn", "vi": "/vn", "th": "/th"}
 HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th"}
 # Paths that exist in all four languages (home only). Links to any other path from
 # a vi/th page fall back to the English version (no 404). Industry hubs are EN+ZH.
-FOURLANG = {"/"}
+FOURLANG = {"/", "/applications/", "/service/", "/insights/"}
+FOURLANG_PREFIX = ("/insights/", "/industries/")  # article + industry pages exist in all 4 langs
 def Lx(lang, path):
     """Smart localized link: use the vi/th version only if that path is 4-language."""
-    if lang in ("vi", "th") and path not in FOURLANG:
+    if lang in ("vi", "th") and path not in FOURLANG and not path.startswith(FOURLANG_PREFIX):
         return path
     return PREFIX.get(lang, "") + path
 
@@ -811,16 +816,22 @@ CTAS = {
             "บอกเราว่าจะใช้ฉลากที่ไหน ต้องทนอะไร และจะพิมพ์อย่างไร เราจะช่วยระบุข้อกำหนดวัสดุสำคัญและแนะนำจุดเริ่มต้นที่ใช้งานได้จริง"),
    "b1": ("Discuss Your Application", "沟通您的应用", "Trao đổi về ứng dụng", "ปรึกษาเรื่องการใช้งาน"), "b1u": "/contact/",
    "b2": ("Talk to a Specialist", "咨询专家", "Trao đổi với chuyên gia", "ปรึกษาผู้เชี่ยวชาญ"), "b2u": "/contact/"},
- "insights": {"h": ("Still Have Questions After Reading?", "读完仍有疑问？"),
+ "insights": {"h": ("Still Have Questions After Reading?", "读完仍有疑问？",
+                     "Vẫn còn thắc mắc sau khi đọc?", "ยังมีคำถามหลังจากอ่านหรือไม่?"),
    "body": ("Technical articles can explain the principles, but every process is different. Send us your application details and our team will help you translate the guidance into a suitable material choice.",
-            "技术文章讲的是原理，但每个工艺都不同。把您的应用细节发给我们，团队会帮您把这些指南转化为合适的材料选择。"),
-   "b1": ("Ask a Material Question", "提出材料问题"), "b1u": "/contact/",
-   "b2": ("Explore Applications", "浏览应用笔记"), "b2u": "/applications/"},
- "service": {"h": ("Looking for Material or Production Support?", "需要材料或生产方面的支持？"),
+            "技术文章讲的是原理，但每个工艺都不同。把您的应用细节发给我们，团队会帮您把这些指南转化为合适的材料选择。",
+            "Các bài viết kỹ thuật có thể giải thích nguyên lý, nhưng mỗi quy trình đều khác nhau. Hãy gửi chi tiết ứng dụng của bạn và đội ngũ của chúng tôi sẽ giúp chuyển hướng dẫn thành lựa chọn vật liệu phù hợp.",
+            "บทความทางเทคนิคอธิบายหลักการได้ แต่ทุกกระบวนการแตกต่างกัน ส่งรายละเอียดการใช้งานของคุณมาให้เรา แล้วทีมของเราจะช่วยแปลงคำแนะนำเป็นการเลือกวัสดุที่เหมาะสม"),
+   "b1": ("Ask a Material Question", "提出材料问题", "Đặt câu hỏi về vật liệu", "ถามคำถามเกี่ยวกับวัสดุ"), "b1u": "/contact/",
+   "b2": ("Explore Applications", "浏览应用笔记", "Khám phá ứng dụng", "สำรวจการใช้งาน"), "b2u": "/applications/"},
+ "service": {"h": ("Looking for Material or Production Support?", "需要材料或生产方面的支持？",
+                    "Cần hỗ trợ về vật liệu hoặc sản xuất?", "กำลังมองหาการสนับสนุนด้านวัสดุหรือการผลิต?"),
    "body": ("Whether you need help with material selection, testing, converting, quality control, or repeat supply, our team is ready to support your project with clear and practical guidance.",
-            "无论是材料选型、检测、加工、质量控制还是持续供应，我们的团队都能以清晰、务实的建议支持您的项目。"),
-   "b1": ("Talk to a Specialist", "咨询专家"), "b1u": "/contact/",
-   "b2": ("Submit Your Requirements", "提交您的需求"), "b2u": "/contact/"},
+            "无论是材料选型、检测、加工、质量控制还是持续供应，我们的团队都能以清晰、务实的建议支持您的项目。",
+            "Dù bạn cần hỗ trợ về lựa chọn vật liệu, thử nghiệm, gia công, kiểm soát chất lượng hay cung ứng lặp lại, đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ dự án của bạn với hướng dẫn rõ ràng và thiết thực.",
+            "ไม่ว่าคุณต้องการความช่วยเหลือด้านการเลือกวัสดุ การทดสอบ การแปรรูป การควบคุมคุณภาพ หรือการจัดหาซ้ำ ทีมของเราพร้อมสนับสนุนโครงการของคุณด้วยคำแนะนำที่ชัดเจนและใช้งานได้จริง"),
+   "b1": ("Talk to a Specialist", "咨询专家", "Trao đổi với chuyên gia", "ปรึกษาผู้เชี่ยวชาญ"), "b1u": "/contact/",
+   "b2": ("Submit Your Requirements", "提交您的需求", "Gửi yêu cầu của bạn", "ส่งข้อกำหนดของคุณ"), "b2u": "/contact/"},
  "application-note": {"h": ("Need a Material Recommendation for This Application?", "需要这个应用的材料推荐？"),
    "body": ("Share your surface, temperature, chemical exposure, and printing requirements. We will help you identify suitable options for testing.",
             "告诉我们表面、温度、化学暴露与打印要求，我们将帮您筛选出可供测试的合适选项。"),
@@ -1305,8 +1316,12 @@ HL_PREFIX = HOME_I18N["prefix"]
 FOCUS_URLS = HOME_I18N["focus_urls"]
 
 def home_hlink(lang, path):
-    # home internal link: en -> path, zh -> /zh+path (inner zh exists), vi/th -> English pages
-    return ("/cn"+path) if lang=="zh" else path
+    # home internal link: en -> path, zh -> /cn+path (inner zh exists),
+    # vi/th -> localized only for 4-language paths (pillars, insights, industries), else English.
+    if lang=="zh": return "/cn"+path
+    if lang in ("vi","th") and (path in FOURLANG or path.startswith(FOURLANG_PREFIX)):
+        return PREFIX[lang]+path
+    return path
 
 def home_switcher(active):
     out=""
@@ -1839,18 +1854,18 @@ SERVICE_OFFICES=[
 # Regional contact cards for the Service page ("Contact your regional ETIA team").
 # addr = [native line, english line] (native omitted for HK). role = (en, zh).
 SERVICE_REGIONS=[
-  {"region":("China · Shanghai","中国 · 上海"),"name":"Mark Tang","role":("",""),
+  {"region":("China · Shanghai","中国 · 上海","Trung Quốc · Thượng Hải","จีน · เซี่ยงไฮ้"),"name":"Mark Tang","role":("","","",""),
    "addr":["上海市普陀区中江路 388 弄国盛中心 2 号楼 1903 室",
            "Rm. 1903, 2# Building, Guoson Centre, No. 388 Zhongjiang Rd, Putuo District, Shanghai, China"],
    "phone":"400 990 8448 · +86-21-6432-7144 转 106","email":"Omnicure@etia-tech.com"},
-  {"region":("China · Hong Kong","中国 · 香港"),"name":"Mark Tang","role":("",""),
+  {"region":("China · Hong Kong","中国 · 香港","Trung Quốc · Hồng Kông","จีน · ฮ่องกง"),"name":"Mark Tang","role":("","","",""),
    "addr":["Room 1003, 10/F, Tower 1, Lippo Centre, 89 Queensway, Admiralty, Hong Kong"],
    "phone":"+86 151 2119 7091","email":"Omnicure@etia-tech.com"},
-  {"region":("Thailand · Bangkok","泰国 · 曼谷"),"name":"Mr. Sompoch Ratchakom (Job)","role":("Sales Director","销售总监"),
+  {"region":("Thailand · Bangkok","泰国 · 曼谷","Thái Lan · Bangkok","ไทย · กรุงเทพฯ"),"name":"Mr. Sompoch Ratchakom (Job)","role":("Sales Director","销售总监","Giám đốc Kinh doanh","ผู้อำนวยการฝ่ายขาย"),
    "addr":["22/41 เอช-เคป บิซ เซ็นเตอร์ ถนนสุขาภิบาล 2 แขวงประเวศ เขตประเวศ กรุงเทพฯ 10250",
            "22/41 H-Cape Biz Center, Sukhaphiban 2 Road, Prawet Subdistrict, Prawet District, Bangkok 10250, Thailand"],
    "phone":"+66 811 746 947","email":"omnicure.th@gmail.com"},
-  {"region":("Vietnam · Bac Ninh","越南 · 北宁"),"name":"Tien Nguyen","role":("Technical Engineer","技术工程师"),
+  {"region":("Vietnam · Bac Ninh","越南 · 北宁","Việt Nam · Bắc Ninh","เวียดนาม · บั๊กนิญ"),"name":"Tien Nguyen","role":("Technical Engineer","技术工程师","Kỹ sư Kỹ thuật","วิศวกรเทคนิค"),
    "addr":["Số 10 đường Thanh Niên, Khu 5, Phường Võ Cường, Tỉnh Bắc Ninh, Việt Nam",
            "No. 10 Thanh Nien Street, Area 5, Vo Cuong Ward, Bac Ninh Province, Viet Nam"],
    "phone":"+84 344 590 091","email":"omnicure.vn@gmail.com"},
@@ -1864,30 +1879,32 @@ SERVICE_IMGS=["https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVIC
               "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"]
 SERVICE_INTRO=(
   "From material quality and application validation to flexible converting and ongoing support, ETIA helps customers reduce risk and achieve reliable labeling performance throughout the entire project lifecycle.",
-  "从材料质量、应用验证，到柔性加工与持续支持，ETIA 在项目全流程中帮助客户降低导入风险，确保标签应用稳定可靠。")
-# num, title(en,zh), tagline(en,zh), body[(en,zh)...], close(en,zh)
+  "从材料质量、应用验证，到柔性加工与持续支持，ETIA 在项目全流程中帮助客户降低导入风险，确保标签应用稳定可靠。",
+  "Từ chất lượng vật liệu và xác nhận ứng dụng đến gia công linh hoạt và hỗ trợ liên tục, ETIA giúp khách hàng giảm rủi ro và đạt hiệu suất dán nhãn đáng tin cậy trong suốt vòng đời dự án.",
+  "ตั้งแต่คุณภาพวัสดุและการตรวจสอบการใช้งาน ไปจนถึงการแปรรูปที่ยืดหยุ่นและการสนับสนุนอย่างต่อเนื่อง ETIA ช่วยลูกค้าลดความเสี่ยงและได้ประสิทธิภาพการติดฉลากที่เชื่อถือได้ตลอดวงจรชีวิตของโครงการ")
+# num, title(en,zh,vi,th), tagline(...), body[(...)...], close(...)
 SERVICE_COMMIT=[
- {"num":"01","title":('100% Quality Inspection', '100% 质量检验'),
-  "tag":('Every batch tested. Every shipment verified.', '批批检测，件件验证。'),
-  "body":[('Incoming materials are tested before production, verified during processing, and inspected again before shipment. Every batch is retained for full traceability.', '来料先检测，上机前验证，出厂前复检，并保留批次留样，实现全流程质量追溯。')],
-  "close":('Every material. Every batch. Every delivery.', '每一种材料，每一个批次，每一次交付。')},
- {"num":"02","title":('Application-Driven Solutions', '应用驱动方案'),
-  "tag":('The right material for every application.', '以应用为导向，匹配合适材料。'),
-  "body":[('Our engineers work with your team to understand the application, evaluate the process, and recommend the right material through on-site or remote support.', '工程师深入了解您的应用、工艺与环境，可现场或远程协同，帮助选择更适合的材料与标识方案。')],
-  "close":("We don't guess. We validate.", '我们不凭猜测，依靠验证。')},
- {"num":"03","title":('Flexible Supply', '柔性供应'),
-  "tag":('Flexible supply, built around your production.', '灵活供货，适配您的生产节奏。'),
-  "body":[('Multiple warehouses, flexible air and sea logistics, plus custom slitting, die-cutting, and pre-printed labels to support your production.', '多地仓储，海运、空运灵活配送，并提供分切、模切、预打印等配套服务，满足不同生产需求。')],
-  "close":('Flexible materials. Flexible formats. Flexible quantities.', '材料灵活、规格灵活、数量灵活。')},
- {"num":"04","title":('Responsive Customer Support', '快速响应服务'),
-  "tag":('Fast, dependable support from a dedicated team.', '专属团队，快速响应。'),
-  "body":[('A dedicated support team connects sales, engineering, logistics, and service for fast, coordinated responses throughout your project.', '专属服务团队协同销售、工程、物流与客服，快速响应项目需求，持续支持生产运行。')],
-  "close":('Before delivery, during production, and beyond.', '交付之前、生产之中，以及长期应用之后。')},
+ {"num":"01","title":('100% Quality Inspection', '100% 质量检验', 'Kiểm tra chất lượng 100%', 'การตรวจสอบคุณภาพ 100%'),
+  "tag":('Every batch tested. Every shipment verified.', '批批检测，件件验证。', 'Kiểm tra từng lô. Xác minh từng lô hàng.', 'ทดสอบทุกล็อต ตรวจสอบทุกการจัดส่ง'),
+  "body":[('Incoming materials are tested before production, verified during processing, and inspected again before shipment. Every batch is retained for full traceability.', '来料先检测，上机前验证，出厂前复检，并保留批次留样，实现全流程质量追溯。', 'Vật liệu đầu vào được kiểm tra trước sản xuất, xác minh trong quá trình gia công và kiểm tra lại trước khi giao hàng. Mỗi lô đều được lưu mẫu để truy xuất đầy đủ.', 'วัสดุขาเข้าได้รับการทดสอบก่อนการผลิต ตรวจสอบระหว่างกระบวนการ และตรวจสอบอีกครั้งก่อนจัดส่ง ทุกล็อตถูกเก็บไว้เพื่อการตรวจสอบย้อนกลับอย่างสมบูรณ์')],
+  "close":('Every material. Every batch. Every delivery.', '每一种材料，每一个批次，每一次交付。', 'Mọi vật liệu. Mọi lô. Mọi lần giao hàng.', 'ทุกวัสดุ ทุกล็อต ทุกการจัดส่ง')},
+ {"num":"02","title":('Application-Driven Solutions', '应用驱动方案', 'Giải pháp theo ứng dụng', 'โซลูชันที่ขับเคลื่อนด้วยการใช้งาน'),
+  "tag":('The right material for every application.', '以应用为导向，匹配合适材料。', 'Vật liệu phù hợp cho mọi ứng dụng.', 'วัสดุที่เหมาะสมสำหรับทุกการใช้งาน'),
+  "body":[('Our engineers work with your team to understand the application, evaluate the process, and recommend the right material through on-site or remote support.', '工程师深入了解您的应用、工艺与环境，可现场或远程协同，帮助选择更适合的材料与标识方案。', 'Kỹ sư của chúng tôi làm việc với đội ngũ của bạn để hiểu ứng dụng, đánh giá quy trình và đề xuất vật liệu phù hợp thông qua hỗ trợ tại chỗ hoặc từ xa.', 'วิศวกรของเราทำงานร่วมกับทีมของคุณเพื่อทำความเข้าใจการใช้งาน ประเมินกระบวนการ และแนะนำวัสดุที่เหมาะสมผ่านการสนับสนุนในสถานที่หรือระยะไกล')],
+  "close":("We don't guess. We validate.", '我们不凭猜测，依靠验证。', 'Chúng tôi không phỏng đoán. Chúng tôi xác thực.', 'เราไม่เดา เราพิสูจน์')},
+ {"num":"03","title":('Flexible Supply', '柔性供应', 'Cung ứng linh hoạt', 'การจัดหาที่ยืดหยุ่น'),
+  "tag":('Flexible supply, built around your production.', '灵活供货，适配您的生产节奏。', 'Cung ứng linh hoạt, phù hợp với sản xuất của bạn.', 'การจัดหาที่ยืดหยุ่น ออกแบบตามการผลิตของคุณ'),
+  "body":[('Multiple warehouses, flexible air and sea logistics, plus custom slitting, die-cutting, and pre-printed labels to support your production.', '多地仓储，海运、空运灵活配送，并提供分切、模切、预打印等配套服务，满足不同生产需求。', 'Nhiều kho hàng, logistics đường biển và hàng không linh hoạt, cùng dịch vụ cắt, bế và in sẵn theo yêu cầu để hỗ trợ sản xuất của bạn.', 'คลังสินค้าหลายแห่ง โลจิสติกส์ทางอากาศและทางทะเลที่ยืดหยุ่น พร้อมบริการสลิต ไดคัท และฉลากพิมพ์ล่วงหน้าตามความต้องการเพื่อสนับสนุนการผลิตของคุณ')],
+  "close":('Flexible materials. Flexible formats. Flexible quantities.', '材料灵活、规格灵活、数量灵活。', 'Vật liệu linh hoạt. Quy cách linh hoạt. Số lượng linh hoạt.', 'วัสดุยืดหยุ่น รูปแบบยืดหยุ่น จำนวนยืดหยุ่น')},
+ {"num":"04","title":('Responsive Customer Support', '快速响应服务', 'Hỗ trợ khách hàng nhanh chóng', 'การสนับสนุนลูกค้าที่รวดเร็ว'),
+  "tag":('Fast, dependable support from a dedicated team.', '专属团队，快速响应。', 'Hỗ trợ nhanh, đáng tin cậy từ đội ngũ chuyên trách.', 'การสนับสนุนที่รวดเร็วและเชื่อถือได้จากทีมงานเฉพาะทาง'),
+  "body":[('A dedicated support team connects sales, engineering, logistics, and service for fast, coordinated responses throughout your project.', '专属服务团队协同销售、工程、物流与客服，快速响应项目需求，持续支持生产运行。', 'Đội ngũ hỗ trợ chuyên trách kết nối bán hàng, kỹ thuật, logistics và dịch vụ để phản hồi nhanh và phối hợp xuyên suốt dự án của bạn.', 'ทีมสนับสนุนเฉพาะทางเชื่อมโยงฝ่ายขาย วิศวกรรม โลจิสติกส์ และบริการ เพื่อการตอบสนองที่รวดเร็วและประสานงานตลอดโครงการของคุณ')],
+  "close":('Before delivery, during production, and beyond.', '交付之前、生产之中，以及长期应用之后。', 'Trước khi giao hàng, trong khi sản xuất và về sau.', 'ก่อนการจัดส่ง ระหว่างการผลิต และหลังจากนั้น')},
 ]
 
 def build_service(lang):
     zh=(lang=="zh")
-    j=1 if zh else 0
+    j=JX[lang]
     # --- Service Commitment as a tab BAR (same module as the industry landings) ---
     def panel_img(i):
         u=SERVICE_IMGS[i] if i<len(SERVICE_IMGS) else ""
@@ -1916,25 +1933,26 @@ def build_service(lang):
                 '<div class="apptabs">%s</div>'
                 '<button class="apparrow" onclick="etaScroll(this,1)" aria-label="next">&rsaquo;</button></div>'
                 '<div class="apppanels">%s</div></div></div></section>')%(
-        ("我们的服务承诺" if zh else "Our Service Commitment"), esc(SERVICE_INTRO[j]), tabs, panels)
+        P(lang,"Our Service Commitment","我们的服务承诺","Cam kết dịch vụ của chúng tôi","คำมั่นสัญญาด้านบริการของเรา"), esc(SERVICE_INTRO[j]), tabs, panels)
     # --- contact form with phone ---
     ph=lambda p: '<input name="%s" placeholder="%s"%s>'%p
     fields=('<div class="cfrow"><input name="name" placeholder="%s" required><input name="company" placeholder="%s"></div>'
             '<div class="cfrow"><input name="phone" placeholder="%s" required><input name="email" type="email" placeholder="%s"></div>'
             '<textarea name="msg" rows="4" placeholder="%s"></textarea>'
             '<button class="btn pri" type="submit">%s</button>')%(
-        ("姓名 *" if zh else "Name *"),("公司" if zh else "Company"),
-        ("电话 *" if zh else "Phone *"),("邮箱" if zh else "Email"),
-        ("请描述您的应用：表面、温度、化学环境、打印方式与标签尺寸" if zh
-         else "Describe your application: surface, temperature, chemistry, print method and label size"),
-        ("提交" if zh else "Send Enquiry"))
+        P(lang,"Name *","姓名 *","Họ tên *","ชื่อ *"),P(lang,"Company","公司","Công ty","บริษัท"),
+        P(lang,"Phone *","电话 *","Điện thoại *","โทรศัพท์ *"),P(lang,"Email","邮箱","Email","อีเมล"),
+        P(lang,"Describe your application: surface, temperature, chemistry, print method and label size",
+             "请描述您的应用：表面、温度、化学环境、打印方式与标签尺寸",
+             "Mô tả ứng dụng của bạn: bề mặt, nhiệt độ, hóa chất, phương pháp in và kích thước nhãn",
+             "อธิบายการใช้งานของคุณ: พื้นผิว อุณหภูมิ สารเคมี วิธีการพิมพ์ และขนาดฉลาก"),
+        P(lang,"Send Enquiry","提交","Gửi yêu cầu","ส่งคำถาม"))
     # --- Global regional contact cards ---
     IC_PIN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.686-6-10a6 6 0 1 1 12 0c0 4.314-6 10-6 10z"/><circle cx="12" cy="11" r="2.4"/></svg>'
     IC_TEL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a13 13 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .56 3.5 1 1 0 0 1-.24 1z"/></svg>'
     IC_MAIL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>'
     def gcard(r):
-        role_en, role_zh = r["role"]
-        role = role_zh if zh else role_en
+        role = r["role"][j]
         role_html = (' <span class="gc-role">· %s</span>' % esc(role)) if role else ""
         addr_html = "<br>".join(esc(a) for a in r["addr"])
         return ('<div class="gcard"><div class="gc-region">%s</div>'
@@ -1942,46 +1960,53 @@ def build_service(lang):
                 '<div class="gc-line">%s<div>%s</div></div>'
                 '<div class="gc-line">%s<div>%s</div></div>'
                 '<a class="gc-line" href="mailto:%s">%s<div>%s</div></a></div>') % (
-            esc(r["region"][1] if zh else r["region"][0]), esc(r["name"]), role_html,
+            esc(r["region"][j]), esc(r["name"]), role_html,
             IC_PIN, addr_html, IC_TEL, esc(r["phone"]), esc(r["email"]), IC_MAIL, esc(r["email"]))
     global_sec=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
                 '<div class="gcont">%s</div><p class="gc-note">%s</p></div></section>')%(
-        ("全球联系" if zh else "GLOBAL CONTACT"),
-        ("联系您所在地区的 ETIA 团队" if zh else "Contact Your Regional ETIA Team"),
+        P(lang,"GLOBAL CONTACT","全球联系","LIÊN HỆ TOÀN CẦU","ติดต่อทั่วโลก"),
+        P(lang,"Contact Your Regional ETIA Team","联系您所在地区的 ETIA 团队","Liên hệ đội ngũ ETIA khu vực của bạn","ติดต่อทีม ETIA ในภูมิภาคของคุณ"),
         "".join(gcard(r) for r in SERVICE_REGIONS),
-        ("* 通过邮件联系我们可获得快速响应 —— 我们的团队通常在 1 个工作日内回复" if zh
-         else "* Email us for a fast response — our team usually replies within one business day."))
+        P(lang,"* Email us for a fast response — our team usually replies within one business day.",
+             "* 通过邮件联系我们可获得快速响应 —— 我们的团队通常在 1 个工作日内回复",
+             "* Gửi email cho chúng tôi để được phản hồi nhanh — đội ngũ của chúng tôi thường trả lời trong vòng một ngày làm việc.",
+             "* ส่งอีเมลถึงเราเพื่อการตอบกลับที่รวดเร็ว — ทีมของเรามักตอบกลับภายในหนึ่งวันทำการ"))
     # form's side column: a short email note (regional phones now live in the cards above)
     phones=('<div class="cph"><b>%s</b><span><a class="email" href="mailto:label@etia-tech.com">label@etia-tech.com</a></span></div>'
             '<div class="cph"><b>%s</b><span>%s</span></div>')%(
-        ("邮箱" if zh else "Email"),
-        ("响应时间" if zh else "Response time"),
-        ("我们通常在 1 个工作日内回复" if zh else "We usually reply within one business day"))
+        P(lang,"Email","邮箱","Email","อีเมล"),
+        P(lang,"Response time","响应时间","Thời gian phản hồi","เวลาตอบกลับ"),
+        P(lang,"We usually reply within one business day","我们通常在 1 个工作日内回复","Chúng tôi thường trả lời trong vòng một ngày làm việc","เรามักตอบกลับภายในหนึ่งวันทำการ"))
     form_sec=('<section class="blk" style="background:var(--tint-blue)"><div class="wrap">'
               '<h2>%s</h2><div class="sub">%s</div>'
               '<div class="ctwo"><form class="cform" onsubmit="return etaMail(this)">%s</form>'
               '<div class="cphones">%s</div></div></div></section>')%(
-        ("联系我们" if zh else "Get in Touch"),
-        ("留下电话与应用需求，我们尽快回复并安排样品。" if zh
-         else "Leave your phone and application — we'll reply quickly and arrange samples."),
+        P(lang,"Get in Touch","联系我们","Liên hệ","ติดต่อเรา"),
+        P(lang,"Leave your phone and application — we'll reply quickly and arrange samples.",
+             "留下电话与应用需求，我们尽快回复并安排样品。",
+             "Để lại số điện thoại và ứng dụng của bạn — chúng tôi sẽ trả lời nhanh và chuẩn bị mẫu.",
+             "ทิ้งเบอร์โทรและการใช้งานของคุณไว้ — เราจะตอบกลับอย่างรวดเร็วและจัดเตรียมตัวอย่าง"),
         fields, phones)
     body=commit_sec+global_sec+form_sec+('<div class="wrap">%s</div>'%cta2(lang,"service"))+tabscript
-    crumb=[("Home","/"),("Service","/service/")]
+    crumb=[(P(lang,"Home","首页","Trang chủ","หน้าแรก"),"/"),(P(lang,"Service","服务","Dịch vụ","บริการ"),"/service/")]
     # hero = Headline + Slogan only (no eyebrow, no body paragraph, no buttons)
     sh=HOME2.get(lang,HOME2["en"])["sections"][3]
     hero=page_hero(lang, "", sh["h2"], sh["sub"], "", "", "", "", "", SECTION_BG.get(3,""))
     write(lang,"/service/",page(lang,"/service/",
-        ("服务 | ETIA" if zh else "Service | ETIA"),
-        ("100% 质量检测、应用驱动选型、柔性供应与快速响应服务 —— ETIA 服务承诺。" if zh
-         else "100% quality inspection, application-driven selection, flexible supply and responsive support — the ETIA service commitment."),
-        ("服务" if zh else "Service"), "",
-        body, crumb, active="service", trust=False, hero=hero))
+        P(lang,"Service | ETIA","服务 | ETIA","Dịch vụ | ETIA","บริการ | ETIA"),
+        P(lang,"100% quality inspection, application-driven selection, flexible supply and responsive support — the ETIA service commitment.",
+             "100% 质量检测、应用驱动选型、柔性供应与快速响应服务 —— ETIA 服务承诺。",
+             "Kiểm tra chất lượng 100%, lựa chọn theo ứng dụng, cung ứng linh hoạt và hỗ trợ nhanh chóng — cam kết dịch vụ của ETIA.",
+             "การตรวจสอบคุณภาพ 100% การเลือกตามการใช้งาน การจัดหาที่ยืดหยุ่น และการสนับสนุนที่รวดเร็ว — คำมั่นสัญญาด้านบริการของ ETIA"),
+        P(lang,"Service","服务","Dịch vụ","บริการ"), "",
+        body, crumb, active="service", trust=False, hero=hero, langs=NAV_PILLAR_LANGS))
     if lang=="en": track("/service/","core")
 
 def build_applications(lang):
     """Applications = Application-Notes hub. A simple picture + topic card grid,
     newest first. (Kept intentionally plain — no industry filter.)"""
     zh=(lang=="zh")
+    j=JX[lang]
     def _nl(node):
         if not isinstance(node,dict): return node or ""
         return node.get(lang) or node.get("en") or node.get("zh") or ""
@@ -1990,7 +2015,10 @@ def build_applications(lang):
     for fn in sorted(os.listdir(adir)):
         if fn.endswith(".json"):
             n=json.load(open(os.path.join(adir,fn),encoding="utf-8"))
-            if lang in n.get("langs",["en","zh","vi","th"]): notes.append(n)
+            nlangs=n.get("langs",["en","zh","vi","th"])
+            # show the note if it exists in this language, or fall back to English
+            # (vi/th note pages default to the English article until translated).
+            if lang in nlangs or "en" in nlangs: notes.append(n)
     notes.sort(key=lambda n:n.get("order",99))
     def _notecard(n):
         img=n.get("image") or n.get("banner") or ""
@@ -2008,16 +2036,30 @@ def build_applications(lang):
     SOL_DESC={
       "/products/item/high-heat-identification/":
         {"en":"High-temperature identification that stays legible and firmly bonded through demanding thermal processing.",
-         "zh":"面向高温工艺的标识方案 —— 高温下依旧清晰可读、牢固贴附"},
+         "zh":"面向高温工艺的标识方案 —— 高温下依旧清晰可读、牢固贴附",
+         "vi":"Nhận diện ở nhiệt độ cao, vẫn rõ nét và bám chắc qua các quá trình xử lý nhiệt khắc nghiệt.",
+         "th":"การระบุที่อุณหภูมิสูง ยังคงอ่านได้และยึดแน่นตลอดกระบวนการทางความร้อนที่เข้มงวด"},
       "/products/item/cold-chain-cryogenic-labels/":
         {"en":"Cold-chain and cryogenic labels for storage down to −196°C and repeated freeze-thaw.",
-         "zh":"冷链与超低温标签 —— 适用于低至 −196°C 存储与反复冻融"},
+         "zh":"冷链与超低温标签 —— 适用于低至 −196°C 存储与反复冻融",
+         "vi":"Nhãn chuỗi lạnh và siêu lạnh cho lưu trữ tới −196°C và chu kỳ đông-rã lặp lại.",
+         "th":"ฉลากโซ่ความเย็นและอุณหภูมิต่ำมากสำหรับการจัดเก็บถึง −196°C และการแช่แข็ง-ละลายซ้ำ"},
       "/products/item/chemical-resistant-labels/":
         {"en":"Labels that resist solvents, disinfectants, oils, acids and alkalis without fading or lifting.",
-         "zh":"耐溶剂、消毒剂、油污、酸碱等化学介质 —— 不褪色、不脱落"},
+         "zh":"耐溶剂、消毒剂、油污、酸碱等化学介质 —— 不褪色、不脱落",
+         "vi":"Nhãn kháng dung môi, chất khử trùng, dầu, axit và kiềm mà không phai màu hay bong tróc.",
+         "th":"ฉลากที่ทนตัวทำละลาย น้ำยาฆ่าเชื้อ น้ำมัน กรดและด่าง โดยไม่ซีดจางหรือหลุดลอก"},
       "/products/item/sterilization-labels/":
         {"en":"Labels that survive steam, dry heat, gamma, EtO and chemical sterilization while staying readable.",
-         "zh":"耐蒸汽、干热、伽马、环氧乙烷及化学灭菌 —— 全周期清晰可读"},
+         "zh":"耐蒸汽、干热、伽马、环氧乙烷及化学灭菌 —— 全周期清晰可读",
+         "vi":"Nhãn chịu được hơi nước, nhiệt khô, gamma, EtO và tiệt trùng hóa học mà vẫn đọc được.",
+         "th":"ฉลากที่ทนไอน้ำ ความร้อนแห้ง แกมมา EtO และการฆ่าเชื้อด้วยสารเคมี ขณะยังคงอ่านได้"},
+    }
+    SOL_NAME={
+      "/products/item/high-heat-identification/":("Heat Resistant","耐高温","Chịu nhiệt cao","ทนความร้อนสูง"),
+      "/products/item/cold-chain-cryogenic-labels/":("Low Temperature Resistant","耐低温","Chịu nhiệt độ thấp","ทนอุณหภูมิต่ำ"),
+      "/products/item/chemical-resistant-labels/":("Chemical Resistant","耐化学","Kháng hóa chất","ทนสารเคมี"),
+      "/products/item/sterilization-labels/":("Sterilization","灭菌","Tiệt trùng","การฆ่าเชื้อ"),
     }
     SOL_ICON=[1,2,0,3]  # flame / droplet / chip / … from INDUSTRY_ICONS — fallback only
     _COS="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/"
@@ -2029,8 +2071,8 @@ def build_applications(lang):
     }
     sol_cards=""
     for i,(e,z,u) in enumerate(PROD_AXES[0][3]):
-        nm=z if zh else e
-        ds=SOL_DESC.get(u,{}).get("zh" if zh else "en","")
+        nm=SOL_NAME.get(u,(e,z,e,e))[j]
+        ds=SOL_DESC.get(u,{}).get(lang) or SOL_DESC.get(u,{}).get("en","")
         img=SOL_IMG.get(u,"")
         top=('<img src="%s" alt="%s" loading="lazy" onerror="this.remove()">'%(esc(img),esc(nm))) if img \
             else ('<span class="aicon">%s</span>'%INDUSTRY_ICONS[SOL_ICON[i%len(SOL_ICON)]%len(INDUSTRY_ICONS)])
@@ -2040,10 +2082,12 @@ def build_applications(lang):
             Lx(lang,u), i%6, top, esc(nm), esc(ds), esc(T["explore"]))
     sol_section=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
                  '<div class="solgrid">%s</div></div></section>')%(
-        ("标签方案" if zh else "LABEL SOLUTIONS"),
-        ("按环境选择方案" if zh else "Label Solutions by Environment"),
-        ("从高温到超低温 —— 按使用环境选择合适的标签方案。" if zh
-         else "From high heat to deep cryogenic — choose a label solution by operating environment."),
+        P(lang,"LABEL SOLUTIONS","标签方案","GIẢI PHÁP NHÃN","โซลูชันฉลาก"),
+        P(lang,"Label Solutions by Environment","按环境选择方案","Giải pháp nhãn theo môi trường","โซลูชันฉลากตามสภาพแวดล้อม"),
+        P(lang,"From high heat to deep cryogenic — choose a label solution by operating environment.",
+             "从高温到超低温 —— 按使用环境选择合适的标签方案。",
+             "Từ nhiệt độ cao đến siêu lạnh — chọn giải pháp nhãn theo môi trường vận hành.",
+             "ตั้งแต่ความร้อนสูงไปจนถึงความเย็นจัด — เลือกโซลูชันฉลากตามสภาพแวดล้อมการใช้งาน"),
         sol_cards)
     # 2) Application Notes (industries now live in the Product nav dropdown, so
     #    the Solutions page carries the environment solutions + the notes only).
@@ -2054,9 +2098,10 @@ def build_applications(lang):
     search_box=('<div class="ansearch"><span class="ansearch-ic">%s</span>'
                 '<input id="anq" type="search" autocomplete="off" placeholder="%s" '
                 'oninput="etaNoteFilter(this.value)"></div>')%(
-        search_ic, ("搜索应用笔记（行业、产品、关键词）…" if zh else "Search application notes (industry, product, keyword)…"))
+        search_ic, P(lang,"Search application notes (industry, product, keyword)…","搜索应用笔记（行业、产品、关键词）…",
+                        "Tìm ghi chú ứng dụng (ngành, sản phẩm, từ khóa)…","ค้นหาบันทึกการใช้งาน (อุตสาหกรรม ผลิตภัณฑ์ คำสำคัญ)…"))
     nohit=('<div class="annohit" id="annohit">%s</div>')%(
-        "未找到匹配的应用笔记" if zh else "No matching application notes.")
+        P(lang,"No matching application notes.","未找到匹配的应用笔记","Không tìm thấy ghi chú ứng dụng phù hợp.","ไม่พบบันทึกการใช้งานที่ตรงกัน"))
     filter_js=('<script>function etaNoteFilter(q){q=(q||"").trim().toLowerCase();'
                'var g=document.getElementById("angrid"),n=0;'
                'g.querySelectorAll(".appcard").forEach(function(c){'
@@ -2068,20 +2113,22 @@ def build_applications(lang):
           '<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
           '%s<div class="appnotesgrid" id="angrid">%s</div>%s%s</div></section>'
           '<div class="wrap">%s</div>')%(
-        ("应用笔记" if zh else "APPLICATION NOTES"),
-        ("应用笔记" if zh else "Application Notes"),
+        P(lang,"APPLICATION NOTES","应用笔记","GHI CHÚ ỨNG DỤNG","บันทึกการใช้งาน"),
+        P(lang,"Application Notes","应用笔记","Ghi chú ứng dụng","บันทึกการใช้งาน"),
         search_box, note_cards, nohit, filter_js, cta2(lang,"applications"))
     # hero without body paragraph, single CTA "Talk to Engineering"
     s=HOME2.get(lang,HOME2["en"])["sections"][1]
     hero=page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
-                   ("咨询工程师" if zh else "Talk to Engineering"), "/contact/", "", "", SECTION_BG.get(1,""))
-    crumb=[("Home","/"),(("方案" if zh else "Solutions"),"/applications/")]
+                   P(lang,"Talk to Engineering","咨询工程师","Trao đổi với kỹ thuật","ปรึกษาฝ่ายวิศวกรรม"), "/contact/", "", "", SECTION_BG.get(1,""))
+    crumb=[(P(lang,"Home","首页","Trang chủ","หน้าแรก"),"/"),(P(lang,"Solutions","方案","Giải pháp","โซลูชัน"),"/applications/")]
     write(lang,"/applications/",page(lang,"/applications/",
-        ("方案 | ETIA" if zh else "Solutions | ETIA"),
-        ("按使用环境选择标签方案，并查看真实应用笔记 —— 高温、低温与更多。" if zh
-         else "Choose a label solution by operating environment and browse real-world application notes — heat, cold and more."),
-        ("方案" if zh else "Solutions"), "",
-        body, crumb, active="applications", trust=False, hero=hero))
+        P(lang,"Solutions | ETIA","方案 | ETIA","Giải pháp | ETIA","โซลูชัน | ETIA"),
+        P(lang,"Choose a label solution by operating environment and browse real-world application notes — heat, cold and more.",
+             "按使用环境选择标签方案，并查看真实应用笔记 —— 高温、低温与更多。",
+             "Chọn giải pháp nhãn theo môi trường vận hành và xem các ghi chú ứng dụng thực tế — nhiệt, lạnh và hơn thế.",
+             "เลือกโซลูชันฉลากตามสภาพแวดล้อมการใช้งาน และดูบันทึกการใช้งานจริง — ร้อน เย็น และอื่นๆ"),
+        P(lang,"Solutions","方案","Giải pháp","โซลูชัน"), "",
+        body, crumb, active="applications", trust=False, hero=hero, langs=NAV_PILLAR_LANGS))
     if lang=="en": track("/applications/","industries")
 
 def build_insights(lang):
@@ -2202,11 +2249,12 @@ def build_all():
     # (see write_redirects). Individual product & industry pages remain.
     build_about(lang)
     build_contact(lang)
-    build_applications(lang)   # nav pillar: Application
-    # /insights/ (nav pillar: Insight) is built by gen_news as the Insights article hub
-    build_service(lang)
     # legal pages (general website template — client legal counsel should review)
     build_legal(lang)
+  for lang in NAV_PILLAR_LANGS:  # Solutions / Service pillars: all 4 languages
+    build_applications(lang)   # nav pillar: Solutions
+    build_service(lang)
+    # /insights/ (nav pillar: Insight) is built by gen_news as the Insights article hub
 
 def main():
     clean()
