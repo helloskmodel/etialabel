@@ -82,7 +82,7 @@
       {
         "icon": "❄️",
         "temp": "Down to −196°C",
-        "process": "Liquid Nitrogen Storage",
+        "process": "CRYOFLEX · Liquid Nitrogen Storage",
         "title": "Cryogenic Storage",
         "desc": "Designed for long-term cryogenic preservation of high-value biological samples.",
         "apps": [
@@ -217,7 +217,7 @@
       {
         "icon": "❄️",
         "temp": "最低 −196°C",
-        "process": "液氮保存",
+        "process": "CRYOFLEX · 液氮保存",
         "title": "液氮深低温存储",
         "desc": "适用于高价值生物样本的长期液氮保存。",
         "apps": [
@@ -352,7 +352,7 @@
       {
         "icon": "❄️",
         "temp": "Đến −196°C",
-        "process": "Bảo quản trong nitơ lỏng",
+        "process": "CRYOFLEX · Lưu trữ nitơ lỏng",
         "title": "Bảo quản siêu lạnh",
         "desc": "Được thiết kế để bảo quản siêu lạnh lâu dài các mẫu sinh học có giá trị cao.",
         "apps": [
@@ -487,7 +487,7 @@
       {
         "icon": "❄️",
         "temp": "ต่ำถึง −196°C",
-        "process": "การจัดเก็บในไนโตรเจนเหลว",
+        "process": "CRYOFLEX · การจัดเก็บไนโตรเจนเหลว",
         "title": "การจัดเก็บแบบเย็นยิ่งยวด",
         "desc": "ออกแบบสำหรับการเก็บรักษาแบบเย็นยิ่งยวดในระยะยาวของตัวอย่างชีวภาพที่มีมูลค่าสูง",
         "apps": [
