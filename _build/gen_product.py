@@ -260,12 +260,41 @@ def spec_table(tbl, lang):
         html += '<ul class="ptnote">%s</ul>' % "".join("<li>%s</li>" % esc(n) for n in notes)
     return html
 
+# Per-industry hero banners (same images used on the industry landing pages).
+# Every product landing page shows its industry's banner; a product with its own
+# `banner` still wins, otherwise it falls back to the industry banner here.
+_COS = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/"
+INDUSTRY_BANNERS = {
+    "pcb":     _COS + "INDUSTRY/PCB-BANNER.jpg",
+    "auto":    _COS + "INDUSTRY/AUTO-BANNER",
+    "cable":   _COS + "INDUSTRY/CABLE-BANNER",
+    "steel":   _COS + "INDUSTRY/STEEL-BANNER",
+    "medical": _COS + "INDUSTRY/MEDICAL-BANNER",
+    "outdoor": _COS + "INDUSTRY/OURDOOR-BANNER",
+}
+PRODUCT_INDUSTRY = {
+    # PCB / electronics
+    "apex": "pcb", "e-series": "pcb", "xf58": "pcb", "xf-603": "pcb",
+    "e-2712": "pcb", "e-2913": "pcb",
+    # automotive
+    "e-2512bl": "auto", "e-2813": "auto",
+    # wire & cable
+    "e-6033": "cable", "e-6034": "cable", "e-3635": "cable",
+    # steel / high-temp HP series
+    "hp-700t": "steel", "hp-800c": "steel", "hp-901": "steel",
+    "hp-cbr11": "steel", "hp-cbr13": "steel", "hp-l80": "steel", "hp-l90": "steel",
+    "hp-m83": "steel", "hp-x2049": "steel", "hp-x2080": "steel",
+    # medical / lab
+    "e-4812": "medical", "e-4532": "medical",
+}
+
 def build_lang(d, lang):
     ui = UI.get(lang, UI[SOURCE_LANG])
     slug = d["slug"]
     path = "/products/item/%s/" % slug
     title = L(d["title"], lang)
-    banner = d.get("banner", "")
+    # Product's own banner wins; otherwise fall back to its industry banner.
+    banner = d.get("banner", "") or INDUSTRY_BANNERS.get(PRODUCT_INDUSTRY.get(slug, ""), "")
     # banner_pos: optional object-position override so a page can steer which part
     # of the photo shows (e.g. "center bottom" to reveal the bottles). Defaults to
     # the shared "center right" crop used by every other hero.
