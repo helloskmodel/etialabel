@@ -46,7 +46,7 @@ esc = hp.esc
 
 CSS = """
 <style>
-.wchero{position:relative;overflow:hidden;color:#fff;min-height:280px;display:flex;align-items:flex-end;background:#12224b}
+.wchero{position:relative;overflow:hidden;color:#fff;aspect-ratio:21/9;min-height:280px;display:flex;align-items:flex-end;background:#12224b}
 .wchero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center right;opacity:1}
 .wchero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,60,150,.90) 16%,rgba(20,60,150,.50) 54%,rgba(20,60,150,.08))}
 .wchero .in{position:relative;z-index:2;max-width:1080px;margin:0 auto;width:100%;padding:40px 24px}
