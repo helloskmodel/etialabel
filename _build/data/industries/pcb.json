@@ -1,185 +1,215 @@
 {
-  "slug": "pcb-electronics-labeling-solutions",
-  "source": "_docs/sources/pcb_4lang.md",
-  "langs": [
-    "en",
-    "zh",
-    "vi",
-    "th"
+ "slug": "pcb-electronics-labeling-solutions",
+ "source": "_docs/sources/pcb_4lang.md",
+ "langs": [
+  "en",
+  "zh",
+  "vi",
+  "th"
+ ],
+ "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg",
+ "seo_title": {
+  "en": "PCB Labeling Solution | ETIA",
+  "zh": "PCB 标签解决方案 | ETIA",
+  "vi": "Giải pháp nhãn PCB | ETIA",
+  "th": "โซลูชันฉลาก PCB | ETIA"
+ },
+ "seo_desc": {
+  "en": "Premium high-temp-resistant PI labels for harsh PCB production — APEX, XF58 and ETIA E-Series for reflow, cleaning and ESD-controlled processes.",
+  "zh": "面向严苛 PCB 制程的耐高温 PI 标签 —— APEX、XF58 与 ETIA E 系列，适配回流、清洗与防静电工序。",
+  "vi": "Nhãn PI chịu nhiệt cao cho sản xuất PCB khắc nghiệt — APEX, XF58 và dòng E của ETIA.",
+  "th": "ฉลาก PI ทนความร้อนสูงสำหรับการผลิต PCB — APEX, XF58 และซีรีส์ E ของ ETIA"
+ },
+ "hero": {
+  "eyebrow": {
+   "en": "By Industry · PCB",
+   "zh": "按行业 · PCB",
+   "vi": "Theo ngành · PCB",
+   "th": "ตามอุตสาหกรรม · PCB"
+  },
+  "title": {
+   "en": "PCB Labeling Solution",
+   "zh": "PCB 标签解决方案",
+   "vi": "Giải pháp nhãn PCB",
+   "th": "โซลูชันฉลาก PCB"
+  },
+  "slogan": {
+   "en": "Engineered Polyimide Labels for PCB Manufacturing",
+   "zh": "高性能PI标签，专为PCB制造而生",
+   "vi": "Nhãn Polyimide hiệu năng cao, dành riêng cho sản xuất PCB",
+   "th": "ฉลากโพลีอิมิดสมรรถนะสูง ออกแบบมาเพื่อการผลิต PCB โดยเฉพาะ"
+  }
+ },
+ "overview": {
+  "zh": [
+   "PCB 是所有电子产业的核心基础载体，应用覆盖民用消费、工业控制、汽车电子、人工智能、数据算力、高端芯片封装等全领域。伴随产业全面向精密化、高端化迭代，生产工况愈发严苛，全链路精准追溯、稳定可靠的专业标识方案，已成为高端智能制造的核心刚需。"
   ],
-  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg",
-  "seo_title": {
-    "en": "PCB Labeling Solution | ETIA",
-    "zh": "PCB 标签解决方案 | ETIA",
-    "vi": "Giải pháp nhãn PCB | ETIA",
-    "th": "โซลูชันฉลาก PCB | ETIA"
-  },
-  "seo_desc": {
-    "en": "Premium high-temp-resistant PI labels for harsh PCB production — APEX, XF58 and ETIA E-Series for reflow, cleaning and ESD-controlled processes.",
-    "zh": "面向严苛 PCB 制程的耐高温 PI 标签 —— APEX、XF58 与 ETIA E 系列，适配回流、清洗与防静电工序。",
-    "vi": "Nhãn PI chịu nhiệt cao cho sản xuất PCB khắc nghiệt — APEX, XF58 và dòng E của ETIA.",
-    "th": "ฉลาก PI ทนความร้อนสูงสำหรับการผลิต PCB — APEX, XF58 และซีรีส์ E ของ ETIA"
-  },
-  "hero": {
-    "eyebrow": {
-      "en": "By Industry · PCB",
-      "zh": "按行业 · PCB",
-      "vi": "Theo ngành · PCB",
-      "th": "ตามอุตสาหกรรม · PCB"
-    },
-    "title": {
-      "en": "PCB Labeling Solution",
-      "zh": "PCB 标签解决方案",
-      "vi": "Giải pháp nhãn PCB",
-      "th": "โซลูชันฉลาก PCB"
-    },
-    "slogan": {
-      "en": "Engineered Polyimide Labels for PCB Manufacturing",
-      "zh": "高性能PI标签，专为PCB制造而生",
-      "vi": "Nhãn Polyimide hiệu năng cao, dành riêng cho sản xuất PCB",
-      "th": "ฉลากโพลีอิมิดสมรรถนะสูง ออกแบบมาเพื่อการผลิต PCB โดยเฉพาะ"
-    }
-  },
-  "overview": {
-    "zh": [
-      "PCB 是所有电子产业的核心基础载体，应用覆盖民用消费、工业控制、汽车电子、人工智能、数据算力、高端芯片封装等全领域。伴随产业全面向精密化、高端化迭代，生产工况愈发严苛，全链路精准追溯、稳定可靠的专业标识方案，已成为高端智能制造的核心刚需。"
-    ],
-    "en": [
-      "As the core carrier of the electronics industry, PCBs are widely used in consumer electronics, industrial control, automotive electronics, AI computing and high-end chip packaging. With manufacturing trending toward miniaturization and high precision, standardized high-reliability labeling has become essential for full-process traceability in smart production."
-    ],
-    "vi": [
-      "PCB là nền tảng cốt lõi của ngành điện tử, áp dụng rộng rãi trong tiêu dùng dân dụng, điều khiển công nghiệp, điện tử ô tô, trí tuệ nhân tạo và đóng gói chip cao cấp. Với xu hướng sản xuất chính xác cao, nhãn nhận diện ổn định là giải pháp thiết yếu cho truy vết toàn quy trình."
-    ],
-    "th": [
-      "PCB เป็นสื่อพื้นฐานสำคัญของอุตสาหกรรมอิเล็กทรอนิกส์ ครอบคลุมทุกสาขาการผลิต ปัจจุบันกระบวนการผลิตมีความเข้มงวดสูง ฉลากที่เสถียรและแม่นยำจำเป็นอย่างยิ่งสำหรับการตรวจสอบย้อนกลับในระบบอัจฉริยะ"
-    ]
-  },
-  "classify_by": {
-    "en": "Choose a series",
-    "zh": "选择系列",
-    "vi": "Chọn dòng sản phẩm",
-    "th": "เลือกซีรีส์"
-  },
-  "tiers": [
-    {
-      "name": {
-        "en": "APEX Series · Polyonics",
-        "zh": "APEX 系列 · Polyonics 原装进口",
-        "vi": "APEX Series · Polyonics nhập khẩu",
-        "th": "APEX Series · Polyonics นำเข้าแท้"
-      },
-      "intro": {
-        "en": "High-end precision flagship for modern high-density PCB processes.",
-        "zh": "高端精密旗舰，适配现代高精密度 PCB 制程。",
-        "vi": "Cao cấp chính xác, phù hợp quy trình PCB mật độ cao hiện đại.",
-        "th": "รุ่นพรีเมียมสำหรับกระบวนการ PCB ความหนาแน่นสูงสมัยใหม่"
-      },
-      "products": [
-        {
-          "name": "Polyonics APEX Series",
-          "line": {
-            "en": "Multi-cycle reflow & cleaning resistant · ultra-high print clarity",
-            "zh": "耐多轮焊洗 · 打印高清精度优异",
-            "vi": "Chịu hàn rửa nhiều vòng · in ấn sắc nét độ chính xác cao",
-            "th": "ทนรีโฟลว์และล้างซ้ำได้ · พิมพ์ชัดเจนแม่นยำสูง"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "apex"
-        }
-      ],
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
-      "tab": "APEX"
-    },
-    {
-      "name": {
-        "en": "XF58 Series · Polyonics",
-        "zh": "XF58 系列 · Polyonics 原装进口",
-        "vi": "XF58 Series · Polyonics nhập khẩu",
-        "th": "XF58 Series · Polyonics นำเข้าแท้"
-      },
-      "intro": {
-        "en": "Mainstream industrial grade for full-scenario PCB mass production.",
-        "zh": "工业主流主力款，适配全场景 PCB 量产制程。",
-        "vi": "Dòng công nghiệp chủ lực, phù hợp sản xuất hàng loạt mọi tình huống.",
-        "th": "รุ่นอุตสาหกรรมหลัก รองรับการผลิต PCB ทุกสถานการณ์"
-      },
-      "products": [
-        {
-          "name": "Polyonics XF58 Series",
-          "line": {
-            "en": "Balanced solder & cleaning resistance · multi-color finish options",
-            "zh": "焊洗性能均衡 · 多色饰面可选易分类",
-            "vi": "Chống hàn rửa cân bằng · nhiều màu bề mặt dễ phân loại",
-            "th": "ทนความร้อนและสารเคมีสมดุล · มีหลายสีช่วยแยกประเภท"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "xf58"
-        }
-      ],
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB581",
-      "tab": "XF58"
-    },
-    {
-      "name": {
-        "en": "E Series · ETIA In-House PI Line",
-        "zh": "E 系列 · ETIA 本土自研 PI 系列",
-        "vi": "E Series · ETIA tự phát triển dòng PI",
-        "th": "E Series · พัฒนาโดย ETIA (ซีรีส์ PI)"
-      },
-      "intro": {
-        "en": "In-house, cost-effective PI label series for mass production of mid-to-low-end PCBs, backed by years of high-end process expertise.",
-        "zh": "国产自研高性价比 PI 标签系列，深耕 PCB 中低端大批量平价量产场景，依托多年高端工艺技术积淀，适配通用量产工况",
-        "vi": "Dòng nhãn PI tự phát triển giá trị cao cho sản xuất PCB trung thấp, kế thừa nhiều năm công nghệ cao cấp",
-        "th": "ซีรีส์ PI คุ้มค่าพัฒนาเอง สำหรับผลิต PCB ขนาดกลาง-ต่ำ สืบทอดเทคโนโลยีหลายปี"
-      },
-      "products": [
-        {
-          "name": "E-Label PI Series",
-          "line": {
-            "en": "Full specs — general, high-adhesion, removable and ESD",
-            "zh": "全品类规格齐全，覆盖通用/超粘/可移除/防静电四大场景",
-            "vi": "Đầy đủ quy cách — phổ thông, siêu bám, tháo rời, chống tĩnh",
-            "th": "สเปคครบ — ทั่วไป กาวเหนียว ถอดได้ ป้องกันไฟฟ้าสถิต"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "e-series"
-        }
-      ],
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB8732",
-      "tab": "E Series"
-    },
-    {
-      "tab": "E-2712",
-      "name": {
-        "en": "E-2712 · ETIA Dual Anti-Static PET",
-        "zh": "E-2712 · ETIA 自研双抗静电 PET",
-        "vi": "E-2712 · PET chống tĩnh kép ETIA",
-        "th": "E-2712 · PET ป้องกันไฟฟ้าสถิตคู่ ETIA"
-      },
-      "intro": {
-        "en": "2mil dual-layer anti-static PET label for ESD-sensitive PCB and semiconductor lines.",
-        "zh": "2mil 双层双抗静电 PET 标签，适配 PCB、半导体静电敏感产线",
-        "vi": "Nhãn PET 2 lớp chống tĩnh, cho dây chuyền PCB và bán dẫn dễ hư tĩnh điện",
-        "th": "ฉลาก PET 2 ชั้นป้องกันไฟฟ้าสถิต เหมาะไลน์ PCB เซมิคอนดักเตอร์"
-      },
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg",
-      "products": [
-        {
-          "name": "E-2712",
-          "line": {
-            "en": "Dual-layer ESD · heat & solvent resistant · crisp print",
-            "zh": "双层防静电 · 耐温耐溶剂 · 打印清晰附着力佳",
-            "vi": "2 lớp chống tĩnh · chịu nhiệt dung môi · in rõ",
-            "th": "2 ชั้นป้องกันไฟฟ้าสถิต · ทนความร้อนสารละลาย · พิมพ์ชัด"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "e-2712"
-        }
-      ]
-    }
+  "en": [
+   "As the core carrier of the electronics industry, PCBs are widely used in consumer electronics, industrial control, automotive electronics, AI computing and high-end chip packaging. With manufacturing trending toward miniaturization and high precision, standardized high-reliability labeling has become essential for full-process traceability in smart production."
+  ],
+  "vi": [
+   "PCB là nền tảng cốt lõi của ngành điện tử, áp dụng rộng rãi trong tiêu dùng dân dụng, điều khiển công nghiệp, điện tử ô tô, trí tuệ nhân tạo và đóng gói chip cao cấp. Với xu hướng sản xuất chính xác cao, nhãn nhận diện ổn định là giải pháp thiết yếu cho truy vết toàn quy trình."
+  ],
+  "th": [
+   "PCB เป็นสื่อพื้นฐานสำคัญของอุตสาหกรรมอิเล็กทรอนิกส์ ครอบคลุมทุกสาขาการผลิต ปัจจุบันกระบวนการผลิตมีความเข้มงวดสูง ฉลากที่เสถียรและแม่นยำจำเป็นอย่างยิ่งสำหรับการตรวจสอบย้อนกลับในระบบอัจฉริยะ"
   ]
+ },
+ "classify_by": {
+  "en": "Choose a series",
+  "zh": "选择系列",
+  "vi": "Chọn dòng sản phẩm",
+  "th": "เลือกซีรีส์"
+ },
+ "tiers": [
+  {
+   "name": {
+    "en": "APEX Series · Polyonics",
+    "zh": "APEX 系列 · Polyonics 原装进口",
+    "vi": "APEX Series · Polyonics nhập khẩu",
+    "th": "APEX Series · Polyonics นำเข้าแท้"
+   },
+   "intro": {
+    "en": "High-end precision flagship for modern high-density PCB processes.",
+    "zh": "高端精密旗舰，适配现代高精密度 PCB 制程。",
+    "vi": "Cao cấp chính xác, phù hợp quy trình PCB mật độ cao hiện đại.",
+    "th": "รุ่นพรีเมียมสำหรับกระบวนการ PCB ความหนาแน่นสูงสมัยใหม่"
+   },
+   "products": [
+    {
+     "name": "Polyonics APEX Series",
+     "line": {
+      "en": "Multi-cycle reflow & cleaning resistant · ultra-high print clarity",
+      "zh": "耐多轮焊洗 · 打印高清精度优异",
+      "vi": "Chịu hàn rửa nhiều vòng · in ấn sắc nét độ chính xác cao",
+      "th": "ทนรีโฟลว์และล้างซ้ำได้ · พิมพ์ชัดเจนแม่นยำสูง"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "apex"
+    }
+   ],
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
+   "tab": "APEX"
+  },
+  {
+   "name": {
+    "en": "XF58 Series · Polyonics",
+    "zh": "XF58 系列 · Polyonics 原装进口",
+    "vi": "XF58 Series · Polyonics nhập khẩu",
+    "th": "XF58 Series · Polyonics นำเข้าแท้"
+   },
+   "intro": {
+    "en": "Mainstream industrial grade for full-scenario PCB mass production.",
+    "zh": "工业主流主力款，适配全场景 PCB 量产制程。",
+    "vi": "Dòng công nghiệp chủ lực, phù hợp sản xuất hàng loạt mọi tình huống.",
+    "th": "รุ่นอุตสาหกรรมหลัก รองรับการผลิต PCB ทุกสถานการณ์"
+   },
+   "products": [
+    {
+     "name": "Polyonics XF58 Series",
+     "line": {
+      "en": "Balanced solder & cleaning resistance · multi-color finish options",
+      "zh": "焊洗性能均衡 · 多色饰面可选易分类",
+      "vi": "Chống hàn rửa cân bằng · nhiều màu bề mặt dễ phân loại",
+      "th": "ทนความร้อนและสารเคมีสมดุล · มีหลายสีช่วยแยกประเภท"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "xf58"
+    }
+   ],
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB581",
+   "tab": "XF58"
+  },
+  {
+   "tab": "XF78",
+   "name": {
+    "en": "XF78 Series · Polyonics (ESD-Safe)",
+    "zh": "XF78 系列 · Polyonics 原装进口（防静电）",
+    "vi": "XF78 Series · Polyonics nhập khẩu (ESD-Safe)",
+    "th": "XF78 Series · Polyonics นำเข้าแท้ (ESD-Safe)"
+   },
+   "intro": {
+    "en": "Imported Polyonics ESD-safe polyimide series for static-sensitive PCB and semiconductor assembly.",
+    "zh": "Polyonics 原装进口防静电（ESD-Safe）聚酰亚胺系列，适配静电敏感的 PCB 与半导体装配。",
+    "vi": "Dòng polyimide chống tĩnh điện (ESD-Safe) nhập khẩu Polyonics, cho lắp ráp PCB và bán dẫn nhạy tĩnh điện.",
+    "th": "ซีรีส์โพลีอิไมด์ป้องกันไฟฟ้าสถิต (ESD-Safe) นำเข้าจาก Polyonics สำหรับการประกอบ PCB และเซมิคอนดักเตอร์ที่ไวต่อไฟฟ้าสถิต"
+   },
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB581",
+   "products": [
+    {
+     "name": "Polyonics XF78 Series",
+     "line": {
+      "en": "ESD-safe polyimide · reflow & cleaning resistant",
+      "zh": "防静电聚酰亚胺 · 耐焊洗",
+      "vi": "Polyimide chống tĩnh · chịu hàn rửa",
+      "th": "โพลีอิไมด์ป้องกันไฟฟ้าสถิต · ทนรีโฟลว์และล้าง"
+     },
+     "img": "",
+     "landing": false,
+     "slug": ""
+    }
+   ]
+  },
+  {
+   "name": {
+    "en": "E Series · ETIA In-House PI Line",
+    "zh": "E 系列 · ETIA 本土自研 PI 系列",
+    "vi": "E Series · ETIA tự phát triển dòng PI",
+    "th": "E Series · พัฒนาโดย ETIA (ซีรีส์ PI)"
+   },
+   "intro": {
+    "en": "In-house, cost-effective PI label series for mass production of mid-to-low-end PCBs, backed by years of high-end process expertise.",
+    "zh": "国产自研高性价比 PI 标签系列，深耕 PCB 中低端大批量平价量产场景，依托多年高端工艺技术积淀，适配通用量产工况",
+    "vi": "Dòng nhãn PI tự phát triển giá trị cao cho sản xuất PCB trung thấp, kế thừa nhiều năm công nghệ cao cấp",
+    "th": "ซีรีส์ PI คุ้มค่าพัฒนาเอง สำหรับผลิต PCB ขนาดกลาง-ต่ำ สืบทอดเทคโนโลยีหลายปี"
+   },
+   "products": [
+    {
+     "name": "E-Label PI Series",
+     "line": {
+      "en": "Full specs — general, high-adhesion, removable and ESD",
+      "zh": "全品类规格齐全，覆盖通用/超粘/可移除/防静电四大场景",
+      "vi": "Đầy đủ quy cách — phổ thông, siêu bám, tháo rời, chống tĩnh",
+      "th": "สเปคครบ — ทั่วไป กาวเหนียว ถอดได้ ป้องกันไฟฟ้าสถิต"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "e-series"
+    }
+   ],
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB8732",
+   "tab": "E Series"
+  },
+  {
+   "tab": "E-2712",
+   "name": {
+    "en": "ESD-Safe E-2712 · ETIA Dual Anti-Static PET",
+    "zh": "ESD-Safe E-2712 · ETIA 双抗静电 PET",
+    "vi": "ESD-Safe E-2712 · PET chống tĩnh kép ETIA",
+    "th": "ESD-Safe E-2712 · PET ป้องกันไฟฟ้าสถิตคู่ ETIA"
+   },
+   "intro": {
+    "en": "2mil dual-layer anti-static PET label for ESD-sensitive PCB and semiconductor lines.",
+    "zh": "2mil 双层双抗静电 PET 标签，适配 PCB、半导体静电敏感产线",
+    "vi": "Nhãn PET 2 lớp chống tĩnh, cho dây chuyền PCB và bán dẫn dễ hư tĩnh điện",
+    "th": "ฉลาก PET 2 ชั้นป้องกันไฟฟ้าสถิต เหมาะไลน์ PCB เซมิคอนดักเตอร์"
+   },
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg",
+   "products": [
+    {
+     "name": "ESD-Safe E-2712",
+     "line": {
+      "en": "Dual-layer ESD · heat & solvent resistant · crisp print",
+      "zh": "双层防静电 · 耐温耐溶剂 · 打印清晰附着力佳",
+      "vi": "2 lớp chống tĩnh · chịu nhiệt dung môi · in rõ",
+      "th": "2 ชั้นป้องกันไฟฟ้าสถิต · ทนความร้อนสารละลาย · พิมพ์ชัด"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "e-2712"
+    }
+   ]
+  }
+ ]
 }
