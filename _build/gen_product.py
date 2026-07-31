@@ -286,13 +286,14 @@ PRODUCT_INDUSTRY = {
     # automotive
     "e-2512bl": "auto", "e-2813": "auto", "e-2814": "auto",
     # wire & cable
-    "e-6033": "cable", "e-6034": "cable", "e-3635": "cable",
+    "e-6033": "cable", "e-6034": "cable",
     # steel / high-temp HP series
     "hp-700t": "steel", "hp-800c": "steel", "hp-901": "steel",
     "hp-cbr11": "steel", "hp-cbr13": "steel", "hp-l80": "steel", "hp-l90": "steel",
     "hp-m83": "steel", "hp-x2049": "steel", "hp-x2080": "steel",
-    # medical / lab
+    # medical / lab (incl. low-temp / cryogenic series)
     "e-4812": "medical", "e-4532": "medical",
+    "e-6333": "medical", "e-4533": "medical", "e-3635": "medical", "e-4813": "medical",
 }
 # Slugs that are environment Solution pages, not industry products — they keep
 # their own (enviroment-*) banner and are exempt from the industry-banner rule.
