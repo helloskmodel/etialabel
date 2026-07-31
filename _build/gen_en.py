@@ -4,16 +4,26 @@
 import json, os, re, html, shutil
 
 import os
-ROOT = os.path.dirname(os.path.abspath(__file__))
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(SCRIPT_DIR, "data")
+# Output goes to the repo root (parent of _build) by default; override with ETIA_OUT for testing.
+ROOT = os.environ.get("ETIA_OUT", os.path.dirname(SCRIPT_DIR))
 SITE = "https://www.etialabel.com"
 BRAND = "ETIA Label"
 
 # ---------------------------------------------------------------- load data
-tree = json.load(open("/workspace/etialabel/_build/data/site_tree.json"))
-prods = json.load(open("/workspace/etialabel/_build/data/cn_products.json"))
+tree = json.load(open(os.path.join(DATA_DIR, "site_tree.json")))
+prods = json.load(open(os.path.join(DATA_DIR, "cn_products.json")))
 PROD = {}
 for p in prods:
     PROD[p["m"].strip()] = p
+
+# ---------------------------------------------------------------- rich product details (EN, from label spec sheet)
+DETAILS = {}
+_details_path = os.path.join(DATA_DIR, "product_details.json")
+if os.path.exists(_details_path):
+    for d in json.load(open(_details_path)):
+        DETAILS[d["m"].strip()] = d
 
 # ---------------------------------------------------------------- EN mapping
 # industry L2 : cn-slug -> (en-slug, en-title, blurb)
@@ -120,6 +130,9 @@ MAT_MAP = {
 
 # --------------------------------------------------------- helpers
 def brand_of(m):
+    d = DETAILS.get(m.strip())
+    if d and d.get("brand"):
+        return d["brand"]
     mm = m.upper()
     if mm.startswith("XF") or mm.startswith("X"):
         return "Polyonics"
@@ -127,7 +140,11 @@ def brand_of(m):
         return "YS Tech"
     return "ETIA"
 
-BRAND_CLASS = {"Polyonics": "poly", "YS Tech": "ys", "ETIA": "etia"}
+BRAND_CLASS = {"Polyonics": "poly", "YS Tech": "ys", "ETIA": "etia",
+               "Flexcon": "dist", "Avery": "dist"}
+
+def brand_class(b):
+    return BRAND_CLASS.get(b, "dist")
 
 def prod_slug(m):
     s = m.strip().lower()
@@ -193,7 +210,21 @@ table.matrix th,table.matrix td{text-align:left;padding:10px 12px;border-bottom:
 table.matrix th{background:var(--bg);font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--mut)}
 table.matrix td.mono{font-family:ui-monospace,Menlo,monospace;font-weight:600}
 .bchip{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;color:#fff}
-.bchip.poly{background:#1A56DB}.bchip.ys{background:#b45309}.bchip.etia{background:#44B549}
+.bchip.poly{background:#1A56DB}.bchip.ys{background:#b45309}.bchip.etia{background:#44B549}.bchip.dist{background:#6d28d9}
+.seriesbadge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.4px;background:rgba(255,255,255,.12);color:#dbe4f0;border:1px solid rgba(255,255,255,.22);padding:5px 12px;border-radius:20px;margin-bottom:14px}
+.lede-over{font-size:16px;color:var(--ink);max-width:820px;line-height:1.7}
+.fb{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px}
+.fb h3{font-size:16px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.fb .ic{width:22px;height:22px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;flex:none}
+.fb .ic.f{background:var(--blue)}.fb .ic.b{background:var(--green)}
+ul.chk{list-style:none}
+ul.chk li{position:relative;padding:8px 0 8px 26px;border-top:1px solid var(--line);font-size:14px}
+ul.chk li:first-child{border-top:0}
+ul.chk li:before{content:"";position:absolute;left:2px;top:14px;width:9px;height:9px;border-radius:50%}
+ul.chk.f li:before{background:var(--blue)}ul.chk.b li:before{background:var(--green)}
+.specbox{border:1px solid var(--line);border-radius:14px;padding:8px 20px;background:var(--bg)}
+.appchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.appchips span{font-size:13px;font-weight:600;background:#fff;border:1px solid var(--line);padding:8px 14px;border-radius:20px;color:var(--ink)}
 .pain{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
 .pain .item{background:var(--bg);border-left:3px solid var(--amber);padding:12px 14px;border-radius:0 8px 8px 0;font-size:14px}
 .pain .item b{display:block;color:var(--amber);margin-bottom:2px}
@@ -289,7 +320,7 @@ def matrix(models, limit=None):
         seen.add(key)
         p = PROD.get(key)
         b = brand_of(key)
-        bc = BRAND_CLASS[b]
+        bc = brand_class(b)
         slug = prod_slug(key)
         if p:
             desc = mat_en(p["mat"]); temp = p["t"].replace("℃","°C"); th = p["th"]; brady = p.get("brady","")
@@ -326,13 +357,29 @@ all_urls = []   # (loc, group)
 def track(u, grp): all_urls.append((u, grp))
 
 # --- product detail pages -------------------------------------------------
+def short_mat(material_en):
+    t = (material_en or "").lower()
+    for kw, lab in [("polyimide","Polyimide (PI)"),("pi ","Polyimide (PI)"),
+                    ("pvc","PVC"),("vinyl","Vinyl"),("pet","Polyester (PET)"),
+                    ("polyolefin"," Polyolefin (PO)"),(" po ","Polyolefin (PO)"),
+                    ("synthetic paper","Synthetic Paper (PP)"),("pp ","Synthetic PP"),
+                    ("pe ","Polyethylene (PE)"),("indicator","EtO Indicator")]:
+        if kw in t: return lab.strip()
+    return "Industrial"
+
+def first_sentence(txt):
+    s = (txt or "").strip()
+    i = s.find(". ")
+    return s[:i+1] if i != -1 else s
+
 built_products = set()
 def build_product(m):
     key = m.strip()
     if key in built_products: return
     built_products.add(key)
     p = PROD.get(key)
-    b = brand_of(key); bc = BRAND_CLASS[b]
+    d = DETAILS.get(key)
+    b = brand_of(key); bc = brand_class(b)
     slug = prod_slug(key)
     url = "/products/%s/" % slug
     if p:
@@ -340,6 +387,84 @@ def build_product(m):
         brady = p.get("brady",""); ind = IND_MAP.get(p["ind_s"]); seo = p.get("seo","")
     else:
         desc="—";temp="—";th="—";brady="";ind=None;seo=""
+
+    # cross-path internal links (only available for parts in the catalog tree)
+    xl = ""
+    if p:
+        links = []
+        if ind: links.append('<a href="/industries/%s/">%s</a>' % (ind[0], esc(ind[1])))
+        am = APP_MAP.get(p["app_s"])
+        if am: links.append('<a href="/applications/%s/">%s</a>' % (am[0], esc(am[1])))
+        for k,(es,et,_) in MAT_MAP.items():
+            if k.startswith(p["mat_s"]):
+                links.append('<a href="/materials/%s/">%s</a>' % (es, esc(et))); break
+        xl = '<div class="xlinks">%s</div>' % "".join(links)
+
+    if d:
+        # ---- rich landing page from the label spec sheet ----
+        mat_short = short_mat(d["material_en"])
+        temp_r = d["temp"]
+        title = "%s — %s %s Label | ETIA Label" % (key, b, mat_short)
+        metad = first_sentence(d["overview"])[:157]
+        specs = '<ul class="specs">'
+        specs += '<li><span>Brand</span><span><span class="bchip %s">%s</span></span></li>' % (bc, esc(b))
+        specs += '<li><span>Product series</span><span>%s</span></li>' % esc(d["series_title"])
+        specs += '<li><span>Base construction</span><span>%s</span></li>' % esc(d["material_en"])
+        specs += '<li><span>Facestock thickness</span><span>%s</span></li>' % esc(d["face"])
+        specs += '<li><span>Total thickness</span><span>%s</span></li>' % esc(d["total"])
+        specs += '<li><span>Temperature range</span><span>%s</span></li>' % esc(temp_r)
+        if brady:
+            specs += '<li><span>Brady cross-reference</span><span><a href="/brands/brady-cross-reference/">%s</a></span></li>' % esc(brady)
+        specs += '</ul>'
+
+        feats = ''.join('<li>%s</li>' % esc(x) for x in d["features"])
+        bens  = ''.join('<li>%s</li>' % esc(x) for x in d["benefits"])
+        apps  = ''.join('<span>%s</span>' % esc(x) for x in d["applications"])
+        apps_txt = ", ".join(d["applications"])
+
+        body  = ('<section class="hero"><div class="wrap"><div class="seriesbadge">%s</div>'
+                 '<h1>%s</h1><p>%s</p></div></section>' % (
+                 esc(d["series_title"]), esc(key), esc(first_sentence(d["overview"]))))
+        body += '<div class="wrap">'
+        body += '<div class="sec"><h2>Overview</h2><p class="lede-over">%s</p></div>' % esc(d["overview"])
+        body += ('<div class="sec"><h2>Specifications</h2><div class="specbox">%s</div>%s</div>'
+                 % (specs, xl))
+        body += ('<div class="sec"><h2>Features &amp; benefits</h2><div class="fb">'
+                 '<div><h3><span class="ic f">F</span>Features</h3><ul class="chk f">%s</ul></div>'
+                 '<div><h3><span class="ic b">B</span>Benefits</h3><ul class="chk b">%s</ul></div>'
+                 '</div></div>' % (feats, bens))
+        body += ('<div class="sec"><h2>Applications</h2>'
+                 '<p class="lede">Typical use cases for %s:</p>'
+                 '<div class="appchips">%s</div></div>' % (esc(key), apps))
+
+        faqs = [
+            ("What is %s used for?" % key,
+             "%s is used for %s. %s" % (key, apps_txt.lower(), first_sentence(d["overview"]))),
+            ("What temperature range does %s withstand?" % key,
+             "%s is rated for %s. Stay within the upper limit for continuous exposure; brief peaks can exceed it — contact us for the peak profile." % (key, temp_r)),
+            (("Is there a Brady equivalent for %s?" % key) if brady else ("Can I get samples of %s?" % key),
+             ("Yes. %s cross-references to Brady %s, supplied with free qualification samples." % (key, brady)) if brady
+             else "Yes — we ship free qualification samples and the full datasheet. Send your substrate and print method with the request."),
+        ]
+        if brady:
+            faqs.append(("Can I get samples of %s?" % key,
+                         "Yes — we ship free qualification samples and the full datasheet. Send your substrate and print method with the request."))
+        body += '<div class="sec"><h2>Frequently asked questions</h2>%s</div>' % faq_html(faqs)
+        body += cta() + '</div>'
+
+        crumb = [("Home","/"),("Products","/products/"),(key,url)]
+        sch = [breadcrumb_schema(crumb), faq_schema(faqs),
+               {"@context":"https://schema.org","@type":"Product","name":key,
+                "brand":{"@type":"Brand","name":b},"material":d["material_en"],
+                "description":first_sentence(d["overview"]),"category":d["series_title"],
+                "additionalProperty":[
+                    {"@type":"PropertyValue","name":"Temperature range","value":temp_r},
+                    {"@type":"PropertyValue","name":"Total thickness","value":d["total"]}]}]
+        write(url, page(title, metad, SITE+url, body, sch, crumb))
+        track(url, "products")
+        return
+
+    # ---- legacy thin page for catalog parts without a spec sheet ----
     title = "%s — %s %s Label | ETIA Label" % (key, b, desc if desc!="—" else "Industrial")
     metad = "%s %s industrial label. Material %s, temperature %s, thickness %s.%s Datasheet, samples and Brady cross-reference from ETIA Label." % (
         b, key, desc, temp, th, (" Brady equivalent "+brady+"." if brady else ""))
@@ -351,18 +476,6 @@ def build_product(m):
     if brady:
         specs += '<li><span>Brady cross-reference</span><span><a href="/brands/brady-cross-reference/">%s</a></span></li>' % esc(brady)
     specs += '</ul>'
-    xl = ""
-    if p:
-        links = []
-        if ind: links.append('<a href="/industries/%s/">%s</a>' % (ind[0], esc(ind[1])))
-        am = APP_MAP.get(p["app_s"])
-        if am: links.append('<a href="/applications/%s/">%s</a>' % (am[0], esc(am[1])))
-        mm = MAT_MAP.get(p["mat_s"]+"-biaoqian") or MAT_MAP.get(p["mat_s"])
-        # mat_s in product uses e.g. pi-juyaxianya ; MAT_MAP keys end -biaoqian
-        for k,(es,et,_) in MAT_MAP.items():
-            if k.startswith(p["mat_s"]):
-                links.append('<a href="/materials/%s/">%s</a>' % (es, esc(et))); break
-        xl = '<div class="xlinks">%s</div>' % "".join(links)
     faqs = [
         ("What is the maximum temperature of %s?" % key,
          "%s is rated for %s. For continuous exposure stay within the upper limit; brief peaks (e.g. reflow) can exceed it — contact us for the peak profile." % (key, temp)),
@@ -579,10 +692,14 @@ def build_products_index():
     allm=set(built_products)
     rows=[]
     for m in sorted(allm):
-        b=brand_of(m);bc=BRAND_CLASS[b];p=PROD.get(m)
-        temp=p["t"].replace("℃","°C") if p else "—"
-        desc=mat_en(p["mat"]) if p else "—"
-        rows.append('<tr><td class="mono"><a href="/products/%s/">%s</a></td><td><span class="bchip %s">%s</span></td><td>%s</td><td>%s</td></tr>'%(prod_slug(m),esc(m),bc,b,esc(desc),esc(temp)))
+        b=brand_of(m);bc=brand_class(b);p=PROD.get(m);d=DETAILS.get(m)
+        if p:
+            temp=p["t"].replace("℃","°C"); desc=mat_en(p["mat"])
+        elif d:
+            temp=d["temp"]; desc=short_mat(d["material_en"])
+        else:
+            temp="—"; desc="—"
+        rows.append('<tr><td class="mono"><a href="/products/%s/">%s</a></td><td><span class="bchip %s">%s</span></td><td>%s</td><td>%s</td></tr>'%(prod_slug(m),esc(m),bc,esc(b),esc(desc),esc(temp)))
     crumb=[("Home","/"),("Products","/products/")]
     body='<section class="hero"><div class="wrap"><h1>Product Index</h1><p>All %d parts in the ETIA Label V1.0 catalog — Polyonics, YS Tech and ETIA.</p></div></section><div class="wrap"><div class="sec"><table class="matrix"><thead><tr><th>Model</th><th>Brand</th><th>Material</th><th>Temp</th></tr></thead><tbody>%s</tbody></table></div>%s</div>'%(len(allm),"".join(rows),cta())
     write("/products/", page("Product Index — Industrial Specialty Labels | ETIA Label",
@@ -596,7 +713,7 @@ def build_brands():
     rows=[]
     for m,p in sorted(PROD.items()):
         if p.get("brady"):
-            b=brand_of(m);bc=BRAND_CLASS[b]
+            b=brand_of(m);bc=brand_class(b)
             rows.append('<tr><td class="mono">%s</td><td class="mono"><a href="/products/%s/">%s</a></td><td><span class="bchip %s">%s</span></td><td>%s</td></tr>'
                         %(esc(p["brady"]),prod_slug(m),esc(m),bc,b,esc(mat_en(p["mat"]))))
     body='<section class="hero"><div class="wrap"><h1>Brand Cross-Reference</h1><p>Searching a Brady part number? Find the equivalent ETIA, Polyonics or YS Tech label — same performance, free samples.</p></div></section><div class="wrap">'
@@ -638,7 +755,8 @@ def build_resources():
 def build_sitemaps():
     groups={}
     for u,g in all_urls:
-        groups.setdefault(g,[]).append(u)
+        bucket=groups.setdefault(g,[])
+        if u not in bucket: bucket.append(u)   # de-dup URLs that share a slug
     smap={"root":"sitemap-core.xml","industries":"sitemap-industries.xml","applications":"sitemap-applications.xml",
           "materials":"sitemap-materials.xml","products":"sitemap-products.xml","tech-resources":"sitemap-tech-resources.xml"}
     for g,fname in smap.items():
@@ -668,6 +786,9 @@ build_home()
 build_industries()
 build_applications()
 build_materials()
+# spec-sheet products that aren't reached through any hub/leaf still get a page
+for _m in DETAILS:
+    build_product(_m)
 build_products_index()
 build_brands()
 build_resources()

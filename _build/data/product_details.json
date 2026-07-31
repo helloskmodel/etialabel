@@ -1,0 +1,1060 @@
+[
+ {
+  "m": "E-4802",
+  "brand": "ETIA",
+  "series": "cryo",
+  "material_en": "2 mil Transparent PO Facestock + Permanent Low-Temp Acrylic PSA + White High-Density Glassine Liner",
+  "face": "2 mil / 0.060 mm",
+  "total": "0.135 mm",
+  "temp": "-196°C ~ 100°C",
+  "accent": "#E2EFDA",
+  "overview": "A transparent 2 mil polyolefin (PO) cryogenic label with a permanent low-temperature acrylic adhesive, validated for direct application down to −196 °C liquid nitrogen. It prints by thermal transfer and stays legible and firmly bonded through repeated freeze–thaw cycling and laboratory solvent exposure.",
+  "features": [
+   "Thermal-transfer printable",
+   "Withstands 10 repeated liquid-nitrogen freeze–thaw cycles",
+   "Resists DMSO, methanol and isopropanol solvents",
+   "Low-migration adhesive with no bleed",
+   "Soft, flexible facestock"
+  ],
+  "benefits": [
+   "Printed text stays sharp and rub-resistant",
+   "Adhesive holds through long-term LN₂ immersion",
+   "Suited to laboratory reagent environments",
+   "Will not contaminate biological samples",
+   "Conforms tightly to blood bags and plastic cryovial curves"
+  ],
+  "applications": [
+   "Blood-bank blood bags",
+   "Biobank cryovials",
+   "Cold-chain low-temperature identification"
+  ],
+  "series_title": "Cryogenic LN₂ Series"
+ },
+ {
+  "m": "E-4812",
+  "brand": "ETIA",
+  "series": "cryo",
+  "material_en": "2 mil White PO Facestock + Permanent Low-Temp Acrylic PSA + White Glassine Liner",
+  "face": "2 mil / 0.059 mm",
+  "total": "0.136 mm",
+  "temp": "-196°C ~ 100°C",
+  "accent": "#E2EFDA",
+  "overview": "A white 2 mil polyolefin (PO) cryogenic label built for high-contrast barcode printing on frozen samples. The permanent low-temperature acrylic adhesive holds through liquid-nitrogen and dry-ice logistics without lifting on small-diameter tubes.",
+  "features": [
+   "White base delivers high print contrast",
+   "Withstands long-term liquid-nitrogen immersion",
+   "Resists a wide range of laboratory solvents",
+   "High adhesion on curved surfaces"
+  ],
+  "benefits": [
+   "Barcodes and text stay crisp and scannable",
+   "No label loss through dry-ice or LN₂ transport",
+   "Labels remain intact after cleaning and disinfection",
+   "No edge-lift on small-diameter test tubes"
+  ],
+  "applications": [
+   "Stem-cell samples",
+   "Gene-storage cryovials",
+   "Dry-ice laboratory transport"
+  ],
+  "series_title": "Cryogenic LN₂ Series"
+ },
+ {
+  "m": "E-6333",
+  "brand": "ETIA",
+  "series": "cryo",
+  "material_en": "3 mil White PE Facestock + Rubber Cryo Adhesive + Glassine Liner",
+  "face": "3 mil / 0.085 mm",
+  "total": "0.171 mm",
+  "temp": "-196°C ~ 110°C",
+  "accent": "#E2EFDA",
+  "overview": "A 3 mil white polyethylene (PE) cryogenic label with a rubber-based low-temperature adhesive for maximum instant tack on frozen tube walls. It bridges cryostorage and short sterilization cycles in a single part.",
+  "features": [
+   "Rubber low-temperature adhesive for stronger tack",
+   "Withstands brief 134 °C sterilization",
+   "Resists cell-lysis buffer and DMSO",
+   "High flexibility"
+  ],
+  "benefits": [
+   "Bonds instantly to frozen tube walls without lifting",
+   "One label covers both cryostorage and sterilization",
+   "No ink loss under reagent immersion",
+   "Conforms to very small-radius sampling tubes"
+  ],
+  "applications": [
+   "Vaccine storage",
+   "CAR-T cell samples",
+   "Laboratory LN₂ equipment"
+  ],
+  "series_title": "Cryogenic LN₂ Series"
+ },
+ {
+  "m": "E-4813",
+  "brand": "ETIA",
+  "series": "cryo",
+  "material_en": "2 mil White PP Facestock + Low-Temp Balanced Acrylic PSA + Glassine Liner",
+  "face": "2 mil / 0.057 mm",
+  "total": "0.135 mm",
+  "temp": "-196°C ~ 120°C",
+  "accent": "#E2EFDA",
+  "overview": "A 2 mil white polypropylene (PP) label with a balanced low-temperature acrylic adhesive that bonds across glass, PP and EVA. Waterproof and tear-resistant, it stays stable through long-term −80 °C storage.",
+  "features": [
+   "Waterproof and tear-resistant",
+   "Resists alcohol and biochemical reagents",
+   "Bonds to glass, PP and EVA substrates",
+   "Stable in long-term −80 °C storage"
+  ],
+  "benefits": [
+   "Durable in damp refrigerated environments",
+   "No adhesive lift under routine disinfection",
+   "Universal fit across laboratory containers",
+   "No edge-lift in prolonged deep-freeze"
+  ],
+  "applications": [
+   "Clinical-lab test tubes",
+   "Reagent bottles",
+   "Sample cold rooms"
+  ],
+  "series_title": "Cryogenic LN₂ Series"
+ },
+ {
+  "m": "E-4834",
+  "brand": "ETIA",
+  "series": "cryo",
+  "material_en": "2 mil Ultra-Thin White PO Facestock + Ultra-Low-Temp Acrylic PSA + Glassine Liner",
+  "face": "2 mil / 0.050 mm",
+  "total": "0.130 mm",
+  "temp": "-196°C ~ 120°C",
+  "accent": "#E2EFDA",
+  "overview": "An ultra-thin 2 mil white PO label engineered for repeated freeze–thaw work and automated sample handling. Non-cytotoxic with ultra-low migration, it holds up in aggressive reagent environments.",
+  "features": [
+   "Withstands 15 liquid-nitrogen freeze–thaw cycles",
+   "Non-cytotoxic with ultra-low migration",
+   "Resists strong acids and DMSO",
+   "Ultra-thin and lightweight"
+  ],
+  "benefits": [
+   "Durable through repeated freeze–thaw assays",
+   "Biosafety-compliant — will not contaminate cells",
+   "Stable in strongly corrosive reagent environments",
+   "Low profile fits fully automated sample equipment"
+  ],
+  "applications": [
+   "Single-cell samples",
+   "Gene therapy",
+   "Stem-cell banks"
+  ],
+  "series_title": "Cryogenic LN₂ Series"
+ },
+ {
+  "m": "E-2232",
+  "brand": "ETIA",
+  "series": "medical",
+  "material_en": "2 mil White PET Facestock + Sterilization Acrylic PSA + Glassine Liner",
+  "face": "2 mil / 0.052 mm",
+  "total": "0.131 mm",
+  "temp": "3°C ~ 134°C",
+  "accent": "#D5E8D4",
+  "overview": "A 2 mil white polyester (PET) label with a sterilization-grade acrylic adhesive that holds print through 134 °C high-pressure steam autoclaving. Its adhesion is unaffected by high heat and humidity.",
+  "features": [
+   "Withstands 134 °C high-pressure steam sterilization",
+   "Tack does not decay in high heat and humidity",
+   "Resists hydrogen peroxide and disinfectants",
+   "Waterproof, smudge-resistant print layer"
+  ],
+  "benefits": [
+   "No label loss through the hospital sterilization cycle",
+   "Text stays intact after high-temperature steam",
+   "Labels survive repeated cleaning and disinfection",
+   "Legible in humid sterile-supply rooms"
+  ],
+  "applications": [
+   "CSSD sterilization packs",
+   "Surgical instruments",
+   "Sterile nonwoven pouches"
+  ],
+  "series_title": "Medical Sterilization Series"
+ },
+ {
+  "m": "E-4232",
+  "brand": "ETIA",
+  "series": "medical",
+  "material_en": "2 mil Medical Synthetic Paper Facestock + Low-Migration Acrylic PSA + Glassine Liner",
+  "face": "2 mil / 0.052 mm",
+  "total": "0.119 mm",
+  "temp": "-20°C ~ 80°C",
+  "accent": "#D5E8D4",
+  "overview": "A 2 mil medical synthetic-paper label with a low-migration acrylic adhesive for the tightest curved containers. It supports both handwriting and thermal transfer and peels cleanly without residue.",
+  "features": [
+   "Resists edge curl",
+   "Fits very small curved containers",
+   "Supports handwriting and thermal transfer",
+   "Clean peel with no adhesive residue"
+  ],
+  "benefits": [
+   "Small blood-collection tubes stay bonded without curling",
+   "Full coverage on very small vials",
+   "Works for both manual notes and machine printing",
+   "Leaves no residue to contaminate the container on removal"
+  ],
+  "applications": [
+   "Vials",
+   "Blood-collection tubes",
+   "Disposable medical centrifuge tubes"
+  ],
+  "series_title": "Medical Sterilization Series"
+ },
+ {
+  "m": "E-5532",
+  "brand": "ETIA",
+  "series": "medical",
+  "material_en": "2 mil White PO Facestock + Low-Migration Medical PSA + Glassine Liner",
+  "face": "2 mil / 0.060 mm",
+  "total": "0.137 mm",
+  "temp": "-80°C ~ 134°C",
+  "accent": "#D5E8D4",
+  "overview": "A 2 mil white PO medical label compatible with all four major sterilization methods — EtO, gamma, e-beam and steam. Non-cytotoxic and low-migration, it is suited to implantable-device traceability.",
+  "features": [
+   "Compatible with EtO, gamma, e-beam and steam sterilization",
+   "Non-cytotoxic",
+   "Resists a range of medical disinfectants"
+  ],
+  "benefits": [
+   "One label serves every category of medical-device sterilization",
+   "Safe and compliant for implantable devices",
+   "Stays effective through repeated disinfection"
+  ],
+  "applications": [
+   "Class III implantable consumables",
+   "IV bags",
+   "Medical blood bags"
+  ],
+  "series_title": "Medical Sterilization Series"
+ },
+ {
+  "m": "EO-INDICATOR",
+  "brand": "ETIA",
+  "series": "medical",
+  "material_en": "EO Indicator Coated Facestock + Sterilization-Compatible PSA",
+  "face": "Custom facestock",
+  "total": "ø30 mm die-cut round indicator",
+  "temp": "Ambient 50–60°C",
+  "accent": "#D5E8D4",
+  "overview": "A single-use ethylene-oxide (EtO) sterilization indicator label that turns irreversibly from red to blue once a valid sterilization cycle completes, giving instant at-a-glance pass/fail confirmation. Supplied as a ø30 mm die-cut round.",
+  "features": [
+   "Red before sterilization; irreversibly turns blue once passed",
+   "Uniform gas penetration",
+   "Single-use, independent colour change"
+  ],
+  "benefits": [
+   "Instant visual confirmation that sterilization was achieved",
+   "Whole-pack colour change is uniform with no blind spots",
+   "Avoids wasteful re-sterilization of consumables"
+  ],
+  "applications": [
+   "Hospital sterilization packs",
+   "Medical-consumable outer-packaging monitoring"
+  ],
+  "series_title": "Medical Sterilization Series"
+ },
+ {
+  "m": "E-4501",
+  "brand": "ETIA",
+  "series": "medical",
+  "material_en": "2 mil White PP Facestock + Medium-Tack Medical Acrylic PSA + Glassine Liner",
+  "face": "2 mil / 0.057 mm",
+  "total": "0.132 mm",
+  "temp": "-40°C ~ 120°C",
+  "accent": "#D5E8D4",
+  "overview": "A 2 mil white PP medical label with a medium-tack acrylic adhesive for plastic and glass. Waterproof and alcohol-resistant, it accepts both handwriting and thermal transfer.",
+  "features": [
+   "Waterproof; resists ethanol and weak acids",
+   "Accepts handwriting or thermal transfer",
+   "Medium tack suits plastic and glass"
+  ],
+  "benefits": [
+   "Print will not blur under alcohol wipe in clinical labs",
+   "Convenient for quick temporary handwritten marking",
+   "Universal on standard reagent bottles without lifting"
+  ],
+  "applications": [
+   "IVD reagents",
+   "Hospital sampling tubes",
+   "Laboratory consumables"
+  ],
+  "series_title": "Medical Sterilization Series"
+ },
+ {
+  "m": "E-4513",
+  "brand": "ETIA",
+  "series": "medical",
+  "material_en": "2 mil White PP Facestock + Water-Based Balanced Acrylic PSA + Glassine Liner",
+  "face": "2 mil / 0.057 mm",
+  "total": "0.135 mm",
+  "temp": "-80°C ~ 120°C",
+  "accent": "#D5E8D4",
+  "overview": "A 2 mil white PP label with a water-based balanced acrylic adhesive that fits PVC blood bags and glass tubes. Waterproof and tear-resistant, it removes without residue for re-labelling.",
+  "features": [
+   "Waterproof and tear-resistant",
+   "Fits PVC blood bags and glass tubes",
+   "Medium tack with no residue"
+  ],
+  "benefits": [
+   "Waterproof and damage-resistant for blood-sample transport",
+   "Will not corrode the flexible blood-bag surface",
+   "Re-label without leaving adhesive residue"
+  ],
+  "applications": [
+   "Clinical blood bags",
+   "Laboratory test tubes",
+   "Small cabling"
+  ],
+  "series_title": "Medical Sterilization Series"
+ },
+ {
+  "m": "E-4533",
+  "brand": "ETIA",
+  "series": "medical",
+  "material_en": "3 mil White Thick PP Facestock + Blood-Bag Balanced Acrylic PSA + Glassine Liner",
+  "face": "3 mil / 0.075 mm",
+  "total": "0.166 mm",
+  "temp": "-40°C ~ 120°C",
+  "accent": "#D5E8D4",
+  "overview": "A thick 3 mil white PP label formulated for flexible PVC blood bags. It resists plasticizer migration and crease-cracking while keeping thermal-transfer print abrasion-resistant.",
+  "features": [
+   "Thick facestock resists creasing",
+   "Resists PVC plasticizer migration",
+   "Abrasion-resistant thermal-transfer print"
+  ],
+  "benefits": [
+   "No cracking when soft blood bags are repeatedly folded",
+   "No bleed or whitening over long-term bonding",
+   "Text survives transit abrasion"
+  ],
+  "applications": [
+   "Disposable PVC blood bags",
+   "Large-bore pharmaceutical containers"
+  ],
+  "series_title": "Medical Sterilization Series"
+ },
+ {
+  "m": "E-4532",
+  "brand": "ETIA",
+  "series": "medical",
+  "material_en": "2 mil Thin White PP Facestock + Low-Tack Acrylic PSA + Glassine Liner",
+  "face": "2 mil / 0.057 mm",
+  "total": "0.137 mm",
+  "temp": "-40°C ~ 120°C",
+  "accent": "#D5E8D4",
+  "overview": "An ultra-thin, flexible 2 mil white PP label with a low-tack adhesive for wrapping fine wire loops. It removes cleanly during service and stays stable in damp equipment interiors.",
+  "features": [
+   "Ultra-thin and flexible — wraps wire loops without cracking",
+   "Low-tack clean peel with no residue",
+   "Waterproof and moisture-resistant"
+  ],
+  "benefits": [
+   "Fine medical wire bundles wrap smoothly and flat",
+   "Removes without residue during equipment servicing",
+   "Stable in use inside damp equipment"
+  ],
+  "applications": [
+   "Internal medical-instrument wiring",
+   "Fiber and tubing identification"
+  ],
+  "series_title": "Medical Sterilization Series"
+ },
+ {
+  "m": "E-4853",
+  "brand": "ETIA",
+  "series": "medical",
+  "material_en": "1 mil Ultra-Thin White PE Facestock + Plasticizer-Resistant Acrylic PSA + Glassine Liner",
+  "face": "1 mil / 0.025 mm",
+  "total": "0.098 mm",
+  "temp": "-80°C ~ 120°C",
+  "accent": "#D5E8D4",
+  "overview": "An industry ultra-thin 1 mil white PE label with a plasticizer-resistant acrylic adhesive for soft PVC blood bags and micro tubes. It stays bonded long-term and resists citric acid and medical disinfectants.",
+  "features": [
+   "Industry ultra-thin 1 mil flexible facestock",
+   "Resists PVC plasticizer",
+   "Resists citric acid and medical disinfectants"
+  ],
+  "benefits": [
+   "Ultra-thin profile does not hinder blood-bag folding or storage",
+   "Long-term bond to PVC without lifting",
+   "Drug contact will not corrode the label"
+  ],
+  "applications": [
+   "Micro blood-collection tubes",
+   "Soft PVC blood bags",
+   "Flexible consumables"
+  ],
+  "series_title": "Medical Sterilization Series"
+ },
+ {
+  "m": "E-4633",
+  "brand": "ETIA",
+  "series": "medical",
+  "material_en": "3 mil White PP Synthetic Paper Facestock + Removable Acrylic PSA + Glassine Liner",
+  "face": "3 mil / 0.075 mm",
+  "total": "0.153 mm",
+  "temp": "-40°C ~ 120°C",
+  "accent": "#D5E8D4",
+  "overview": "A 3 mil white PP synthetic-paper label with a gentle removable adhesive that lifts with zero residue. Waterproof and low-migration, it is made for temporary medical marking.",
+  "features": [
+   "Gentle removal, fully residue-free",
+   "Waterproof and resists edge-lift",
+   "Low-migration medical formula"
+  ],
+  "benefits": [
+   "Re-sort temporary categories without leaving any marks",
+   "Stays flat with no curl in refrigeration",
+   "No migration to contaminate drugs on contact"
+  ],
+  "applications": [
+   "Temporary IV-bottle marking",
+   "Diagnostic kits",
+   "Test-tube sorting"
+  ],
+  "series_title": "Medical Sterilization Series"
+ },
+ {
+  "m": "E-4312",
+  "brand": "ETIA",
+  "series": "medical",
+  "material_en": "2 mil White PP Facestock + Low-Residue Removable Medical PSA + Glassine Liner",
+  "face": "2 mil / 0.057 mm",
+  "total": "0.127 mm",
+  "temp": "-30°C ~ 110°C",
+  "accent": "#D5E8D4",
+  "overview": "A 2 mil white PP label with a low-residue removable medical adhesive for disposable devices and totes. It resists medical disinfectants and takes on-site handwriting.",
+  "features": [
+   "Low-residue removable adhesive",
+   "Resists medical disinfectants",
+   "Supports handwritten marking"
+  ],
+  "benefits": [
+   "Clean removal after sorting single-use consumables",
+   "Label intact after alcohol wipe",
+   "Fast on-site handwritten numbering"
+  ],
+  "applications": [
+   "Disposable medical devices",
+   "Medical-tote temporary marking"
+  ],
+  "series_title": "Medical Sterilization Series"
+ },
+ {
+  "m": "E-2314",
+  "brand": "ETIA",
+  "series": "hitemp",
+  "material_en": "4 mil Matte White PET Facestock + Rubber High-Temp PSA + Glassine Liner",
+  "face": "4 mil / 0.100 mm",
+  "total": "0.191 mm",
+  "temp": "-40°C ~ 200°C",
+  "accent": "#FCE4D6",
+  "overview": "A 4 mil matte-white PET label with a dedicated rubber high-temperature adhesive built for rubber vulcanization and heat-treated metal. It resists oil, strong acids and alkalis, and survives shot-blasting and grinding.",
+  "features": [
+   "Dedicated rubber high-temperature adhesive",
+   "Resists engine oil, strong acids/alkalis and mould-release agents",
+   "Withstands shot-blasting and grinding"
+  ],
+  "benefits": [
+   "Stays bonded through the high-heat rubber-vulcanization step",
+   "No label loss on oily, acidic or alkaline workpieces",
+   "Legible after surface grinding"
+  ],
+  "applications": [
+   "Automotive tyres",
+   "Rubber components",
+   "Heat-treated metal parts"
+  ],
+  "series_title": "200 °C High-Temperature Series"
+ },
+ {
+  "m": "E-2813",
+  "brand": "ETIA",
+  "series": "hitemp",
+  "material_en": "3 mil Matte White PET Facestock + High-Temp High-Tack Acrylic PSA + Glassine Liner",
+  "face": "3 mil / 0.075 mm",
+  "total": "0.172 mm",
+  "temp": "-40°C ~ 200°C",
+  "accent": "#FCE4D6",
+  "overview": "A 3 mil matte-white PET label with a high-tack high-temperature acrylic adhesive for the engine bay. It resists oil and coolant, tolerates hot–cold cycling and resists outdoor yellowing.",
+  "features": [
+   "Resists engine oil and coolant",
+   "Withstands hot–cold cycling shock",
+   "Long-term outdoor yellowing resistance"
+  ],
+  "benefits": [
+   "Stable in the oily, high-heat engine bay",
+   "No edge-lift across large seasonal temperature swings",
+   "No yellowing or fade after years outdoors"
+  ],
+  "applications": [
+   "Automotive engine components",
+   "Chassis traceability barcodes"
+  ],
+  "series_title": "200 °C High-Temperature Series"
+ },
+ {
+  "m": "E-2814",
+  "brand": "ETIA",
+  "series": "hitemp",
+  "material_en": "4 mil Gloss White PET Facestock + High-Tack High-Temp Acrylic PSA + Glassine Liner",
+  "face": "4 mil / 0.100 mm",
+  "total": "0.222 mm",
+  "temp": "-40°C ~ 200°C",
+  "accent": "#FCE4D6",
+  "overview": "A thick, stiff 4 mil gloss-white PET label with a high-tack high-temperature acrylic adhesive for heavy industrial parts. It resists cleaning solvents and delivers high barcode-scan clarity.",
+  "features": [
+   "Thick substrate is stiff and abrasion-resistant",
+   "Resists a range of industrial cleaning solvents",
+   "High barcode-scan clarity"
+  ],
+  "benefits": [
+   "Resists damage from heavy-part handling abrasion",
+   "Text survives degreasing wash steps",
+   "Reliable long-range barcode scanning"
+  ],
+  "applications": [
+   "Export automotive parts",
+   "Heavy-machinery nameplates"
+  ],
+  "series_title": "200 °C High-Temperature Series"
+ },
+ {
+  "m": "E-2814A",
+  "brand": "ETIA",
+  "series": "hitemp",
+  "material_en": "4 mil Gloss White PET Facestock + Balanced High-Temp Acrylic PSA + Thick Glassine Liner",
+  "face": "4 mil / 0.100 mm",
+  "total": "0.241 mm",
+  "temp": "-40°C ~ 200°C",
+  "accent": "#FCE4D6",
+  "overview": "A 4 mil gloss-white PET label on a thick glassine liner for smooth, matrix-break-free die-cutting at volume. Its balanced high-temperature adhesive resists welding heat and industrial oil.",
+  "features": [
+   "Thick liner die-cuts smoothly with no matrix breaks",
+   "Resists welding heat and industrial oil",
+   "Moisture- and waterproof"
+  ],
+  "benefits": [
+   "Higher throughput for high-volume die-cutting",
+   "No label loss through e-coat and painting steps",
+   "Stable long-term in damp workshops"
+  ],
+  "applications": [
+   "Domestic-OEM transmission process labels",
+   "Stamping-line process labels"
+  ],
+  "series_title": "200 °C High-Temperature Series"
+ },
+ {
+  "m": "E-2315",
+  "brand": "ETIA",
+  "series": "hitemp",
+  "material_en": "5 mil Matte White PET Facestock + Special High-Temp Rubber PSA + Thick Glassine Liner",
+  "face": "5 mil / 0.127 mm",
+  "total": "0.257 mm",
+  "temp": "-40°C ~ 220°C",
+  "accent": "#FCE4D6",
+  "overview": "An extra-thick 5 mil matte-white PET label rated to 220 °C, built for steel and aluminium heat treatment. Its special rubber adhesive survives annealing, tempering, quench oil and de-rust chemistry.",
+  "features": [
+   "Rated to a peak of 220 °C",
+   "Survives annealing and tempering heat treatment",
+   "Resists quench oil and de-rust acids/alkalis"
+  ],
+  "benefits": [
+   "No label loss through the full steel heat-treatment cycle",
+   "Aggressive heat-treatment chemicals will not attack it",
+   "Thick stock resists forging-impact tearing"
+  ],
+  "applications": [
+   "Steel and aluminium heat treatment",
+   "Heavy forging workpieces"
+  ],
+  "series_title": "200 °C High-Temperature Series"
+ },
+ {
+  "m": "E-2512BL",
+  "brand": "ETIA",
+  "series": "hitemp",
+  "material_en": "2 mil Black-Top White-Base PET Facestock + Permanent High-Temp Acrylic PSA + Glassine Liner",
+  "face": "2 mil / 0.052 mm",
+  "total": "0.145 mm",
+  "temp": "-40°C ~ 180°C",
+  "accent": "#FCE4D6",
+  "overview": "A 2 mil black-top / white-base PET label made for laser marking. Fibre, UV and CO₂ lasers etch a permanent, non-erasable, tamper-proof code with no ink required.",
+  "features": [
+   "Suits fibre, UV and CO₂ laser engraving",
+   "Laser code is permanent and cannot be erased",
+   "Solvent- and abrasion-resistant"
+  ],
+  "benefits": [
+   "Ink-free permanent traceability that cannot be altered",
+   "QR code stays clear after oil wash",
+   "Lifetime equipment identification without wear"
+  ],
+  "applications": [
+   "Permanent under-hood nameplates",
+   "Laser equipment traceability codes"
+  ],
+  "series_title": "200 °C High-Temperature Series"
+ },
+ {
+  "m": "E-6033",
+  "brand": "ETIA",
+  "series": "cable",
+  "material_en": "3 mil Clear Vinyl Facestock + Permanent Acrylic PSA + Glassine Liner",
+  "face": "3 mil / 0.075 mm",
+  "total": "0.167 mm",
+  "temp": "-40°C ~ 120°C",
+  "accent": "#E4DFEC",
+  "overview": "A 3 mil clear-vinyl self-laminating cable label whose transparent tail wraps over the printed area to protect it — no separate over-laminate needed. Soft and conformable, it wraps tightly around wire and cable.",
+  "features": [
+   "Built-in clear over-laminate protects printed content",
+   "Soft material wraps around cables",
+   "Waterproof; resists light oil"
+  ],
+  "benefits": [
+   "No separate over-laminate step needed — simpler process",
+   "Tight cable wrap with no lifting",
+   "Print stays clear in oily workshops"
+  ],
+  "applications": [
+   "Electronic wire harness",
+   "Automotive wiring",
+   "Cable identification"
+  ],
+  "series_title": "PVC / Vinyl Cable & Outdoor Series"
+ },
+ {
+  "m": "E-6034",
+  "brand": "ETIA",
+  "series": "cable",
+  "material_en": "4 mil Matte Clear Vinyl Facestock + Weather-Resistant Acrylic PSA + Glassine Liner",
+  "face": "4 mil / 0.087 mm",
+  "total": "0.192 mm",
+  "temp": "-40°C ~ 80°C",
+  "accent": "#E4DFEC",
+  "overview": "A 4 mil matte clear-vinyl cable label with a weather-resistant acrylic adhesive rated for 5–8 years outdoors. Its matte anti-glare finish keeps codes scannable in bright light and it resists UV and coastal salt-fog.",
+  "features": [
+   "5–8 year outdoor weatherability",
+   "Resists UV and coastal salt-fog",
+   "Matte anti-glare finish for scanning"
+  ],
+  "benefits": [
+   "Outdoor cables resist aging and cracking for years",
+   "Corrosion-resistant and fade-free in seaside plants",
+   "Smooth barcode scanning under strong light"
+  ],
+  "applications": [
+   "Outdoor power cables",
+   "Telecom fiber",
+   "Wind-power harness"
+  ],
+  "series_title": "PVC / Vinyl Cable & Outdoor Series"
+ },
+ {
+  "m": "E-6034-1",
+  "brand": "ETIA",
+  "series": "cable",
+  "material_en": "4 mil Semi-Transparent White Vinyl Facestock + Mid-Tack Weather PSA + Glassine Liner",
+  "face": "4 mil / 0.088 mm",
+  "total": "0.195 mm",
+  "temp": "-40°C ~ 90°C",
+  "accent": "#E4DFEC",
+  "overview": "A 4 mil semi-transparent white-vinyl cable label that lets the cable's base colour show through, so a single stock works for colour-coded wiring. Rated for 5 years outdoors, it wraps fine bundles without edge-lift.",
+  "features": [
+   "Semi-transparent — does not hide the cable's base colour",
+   "5-year outdoor weatherability",
+   "Wraps without edge-lift"
+  ],
+  "benefits": [
+   "Distinguish colour-coded cables without separate coloured labels",
+   "Stable long-term for outdoor low-voltage runs",
+   "Fine bundles wrap smoothly and flat"
+  ],
+  "applications": [
+   "Security cabling",
+   "Indoor telecom wiring",
+   "Low-voltage conduits"
+  ],
+  "series_title": "PVC / Vinyl Cable & Outdoor Series"
+ },
+ {
+  "m": "E-6533",
+  "brand": "ETIA",
+  "series": "cable",
+  "material_en": "3 mil White PVC Facestock + Outdoor Permanent Acrylic PSA + Thick Glassine Liner",
+  "face": "3 mil / 0.080 mm",
+  "total": "0.262 mm",
+  "temp": "-40°C ~ 150°C",
+  "accent": "#E4DFEC",
+  "overview": "A 3 mil white-PVC outdoor label on a thick glassine liner for flat, waste-free die-cutting at volume. Rated for 3–5 years outdoors, it resists UV and hot–cold shock.",
+  "features": [
+   "Thick liner die-cuts flat",
+   "3–5 year outdoor weatherability",
+   "Resists UV and hot–cold shock"
+  ],
+  "benefits": [
+   "High-volume outdoor signage die-cuts with no waste",
+   "No chalking on exposed pipe for years",
+   "No adhesive lift across large seasonal swings"
+  ],
+  "applications": [
+   "Utility poles",
+   "Water and drainage pipelines",
+   "Outdoor equipment nameplates"
+  ],
+  "series_title": "PVC / Vinyl Cable & Outdoor Series"
+ },
+ {
+  "m": "E-6533R",
+  "brand": "ETIA",
+  "series": "cable",
+  "material_en": "3 mil Red Vinyl Facestock + Weather-Resistant Acrylic PSA + Glassine Liner",
+  "face": "3 mil / 0.079 mm",
+  "total": "0.180 mm",
+  "temp": "-40°C ~ 80°C",
+  "accent": "#E4DFEC",
+  "overview": "A 3 mil high-saturation red-vinyl warning label with a weather-resistant adhesive. Flexible enough to conform to curved pipes, it resists UV, rain and salt-fog for strong outdoor hazard marking.",
+  "features": [
+   "High-saturation red warning base",
+   "Resists UV, rain and salt-fog",
+   "Flexible fit on curved pipes"
+  ],
+  "benefits": [
+   "Strong visual warning on hazardous pipe runs",
+   "No fade after years of open-air exposure",
+   "Tight fit on pipes of any diameter"
+  ],
+  "applications": [
+   "Chemical hazard pipelines",
+   "PV safety warning",
+   "Power base stations"
+  ],
+  "series_title": "PVC / Vinyl Cable & Outdoor Series"
+ },
+ {
+  "m": "E-6534",
+  "brand": "ETIA",
+  "series": "cable",
+  "material_en": "4 mil Thick White PVC Facestock + Super Weather-Resistant Acrylic PSA + Thick Liner",
+  "face": "4 mil / 0.102 mm",
+  "total": "0.295 mm",
+  "temp": "-40°C ~ 150°C",
+  "accent": "#E4DFEC",
+  "overview": "A thick 4 mil white-PVC label with a super weather-resistant adhesive rated for 7–10 years outdoors. It resists acid rain and strong UV and stays tear-resistant under heavy abrasion.",
+  "features": [
+   "7–10 year outdoor weatherability",
+   "Resists acid rain and strong UV",
+   "Thick, tear-resistant material"
+  ],
+  "benefits": [
+   "No label replacement over very long PV / municipal service life",
+   "Will not embrittle in harsh outdoor conditions",
+   "Resists damage from heavy abrasion"
+  ],
+  "applications": [
+   "PV modules",
+   "Telecom base stations",
+   "Large municipal pipelines"
+  ],
+  "series_title": "PVC / Vinyl Cable & Outdoor Series"
+ },
+ {
+  "m": "E-6833",
+  "brand": "ETIA",
+  "series": "cable",
+  "material_en": "3 mil White PVC Facestock + Long-Term Weather-Resistant Acrylic PSA + Glassine Liner",
+  "face": "3 mil / 0.076 mm",
+  "total": "0.168 mm",
+  "temp": "-40°C ~ 120°C",
+  "accent": "#E4DFEC",
+  "overview": "A cost-effective 3 mil white-PVC utility label with a long-term weather-resistant adhesive rated for 7–10 years. It resists acid/alkaline rain and is abrasion- and scratch-resistant for buried and exposed runs.",
+  "features": [
+   "7–10 year outdoor weatherability",
+   "Resists acid and alkaline rain",
+   "Abrasion- and scratch-resistant"
+  ],
+  "benefits": [
+   "Stable in damp, buried-pipeline environments",
+   "Text stays legible after years outdoors",
+   "Cost-effective for high-volume municipal projects"
+  ],
+  "applications": [
+   "Gas pipelines",
+   "Underground water and drainage",
+   "Campus outdoor conduits"
+  ],
+  "series_title": "PVC / Vinyl Cable & Outdoor Series"
+ },
+ {
+  "m": "E-2532-2",
+  "brand": "ETIA",
+  "series": "midpet",
+  "material_en": "2 mil Gloss White PET Facestock + Balanced Acrylic PSA + Glassine Liner",
+  "face": "2 mil / 0.050 mm",
+  "total": "0.140 mm",
+  "temp": "-40°C ~ 150°C",
+  "accent": "#FFFFFF",
+  "overview": "A general-purpose 2 mil gloss-white PET label with a balanced acrylic adhesive — a cost-effective, die-cut-stable base label for electronics and light-industrial marking. It resists alcohol and light oil.",
+  "features": [
+   "General-purpose mid-temperature substrate",
+   "Resists alcohol and light oil",
+   "Stable die-cutting; cost-effective"
+  ],
+  "benefits": [
+   "A universal base label for the electronics industry",
+   "No ink loss in light-oil workshops",
+   "Lower cost for high-volume production"
+  ],
+  "applications": [
+   "PCBs",
+   "Appliance harness",
+   "Small and mid-size equipment nameplates"
+  ],
+  "series_title": "Mid-Temperature General-Purpose PET Series"
+ },
+ {
+  "m": "E-2522",
+  "brand": "ETIA",
+  "series": "midpet",
+  "material_en": "2 mil Matte Silver PET (Silver Finish) + Mid-Temp Acrylic PSA + Glassine Liner",
+  "face": "2 mil / 0.050 mm",
+  "total": "0.145 mm",
+  "temp": "-40°C ~ 150°C",
+  "accent": "#FFFFFF",
+  "overview": "A 2 mil matte-silver PET label with a premium metallic look and a mid-temperature acrylic adhesive. Fingerprint-, abrasion-, water- and oil-resistant, it upgrades the appearance of finished equipment.",
+  "features": [
+   "Metallic matte finish with a premium look",
+   "Fingerprint- and abrasion-resistant",
+   "Waterproof and oil-proof"
+  ],
+  "benefits": [
+   "Upgrades product appearance and perceived quality",
+   "Text stays clear — no fingerprint smudging over long handling",
+   "Intact after an oil wipe-down in the workshop"
+  ],
+  "applications": [
+   "Premium instruments",
+   "Industrial-control equipment",
+   "Appliance logo nameplates"
+  ],
+  "series_title": "Mid-Temperature General-Purpose PET Series"
+ },
+ {
+  "m": "E-2012",
+  "brand": "ETIA",
+  "series": "midpet",
+  "material_en": "2 mil Matte White PET Facestock + General Permanent Acrylic PSA + Glassine Liner",
+  "face": "2 mil / 0.050 mm",
+  "total": "0.130 mm",
+  "temp": "-30°C ~ 140°C",
+  "accent": "#FFFFFF",
+  "overview": "An economical 2 mil matte-white PET label for indoor use, compatible with every thermal-transfer ribbon. It resists light solvents and is waterproof for warehouse and office assets.",
+  "features": [
+   "Economical indoor substrate",
+   "Resists light solvents; waterproof",
+   "Compatible with all thermal-transfer ribbons"
+  ],
+  "benefits": [
+   "Lowers procurement cost for indoor warehouse equipment",
+   "No smudge under a water wipe",
+   "Uses standard ribbons — no special consumables"
+  ],
+  "applications": [
+   "Warehouse racking",
+   "Office equipment",
+   "Indoor small machines"
+  ],
+  "series_title": "Mid-Temperature General-Purpose PET Series"
+ },
+ {
+  "m": "E-2713",
+  "brand": "ETIA",
+  "series": "midpet",
+  "material_en": "3 mil Matte Grey PET Facestock + General High-Tack Acrylic PSA + Glassine Liner",
+  "face": "3 mil / 0.075 mm",
+  "total": "0.171 mm",
+  "temp": "-40°C ~ 160°C",
+  "accent": "#FFFFFF",
+  "overview": "A 3 mil matte-grey PET label with a high-tack acrylic adhesive whose grey base hides workpiece blemishes. It resists engine oil and weak acids/alkalis and gives high thermal-transfer contrast.",
+  "features": [
+   "Grey base hides workpiece blemishes",
+   "Resists engine oil and weak acids/alkalis",
+   "High thermal-transfer contrast"
+  ],
+  "benefits": [
+   "Covers rusty or blackened metal without affecting scanning",
+   "Stable in oily hardware-machining environments",
+   "Clear text on dark workpieces"
+  ],
+  "applications": [
+   "Hardware components",
+   "Machine tools",
+   "General industrial equipment"
+  ],
+  "series_title": "Mid-Temperature General-Purpose PET Series"
+ },
+ {
+  "m": "E-2712",
+  "brand": "ETIA",
+  "series": "esd",
+  "material_en": "2 mil Blue Anti-Static PET Facestock + Anti-Static Acrylic PSA + Anti-Static Glassine Liner",
+  "face": "2 mil / 0.050 mm",
+  "total": "0.137 mm",
+  "temp": "-40°C ~ 160°C",
+  "accent": "#DDEBF7",
+  "overview": "A 2 mil blue anti-static PET label with surface resistance of 10⁶–10⁹ Ω to dissipate static charge. It withstands brief SMT reflow heat and protects sensitive components from ESD damage.",
+  "features": [
+   "Surface resistance 10⁶–10⁹ Ω dissipates static",
+   "Withstands brief SMT reflow heat",
+   "Will not cause static discharge to chips"
+  ],
+  "benefits": [
+   "Protects PCBs and sensitive semiconductor components",
+   "No label loss through the hot SMT process",
+   "Prevents ESD damage to electronic parts"
+  ],
+  "applications": [
+   "PCB circuit boards",
+   "SMT assembly",
+   "Semiconductor components"
+  ],
+  "series_title": "Anti-Static Electronics Series"
+ },
+ {
+  "m": "E-4502",
+  "brand": "ETIA",
+  "series": "security",
+  "material_en": "2 mil Matte White VOID PET Facestock + Security PSA + Glassine Liner",
+  "face": "2 mil / 0.050 mm",
+  "total": "0.140 mm",
+  "temp": "-20°C ~ 100°C",
+  "accent": "#FFF2CC",
+  "overview": "A 2 mil matte-white VOID security label that leaves an irreversible “VOID” message on the surface when removed. Waterproof and single-use, it prevents tampering of pharmaceutical and device packaging.",
+  "features": [
+   "Leaves a “VOID” tamper message on removal",
+   "Waterproof and moisture-resistant",
+   "Single-use, tamper-evident"
+  ],
+  "benefits": [
+   "Opening the pack leaves an irreversible tamper trail",
+   "Tamper-evidence unaffected in damp storage",
+   "Stops tampering of drug and device outer packaging"
+  ],
+  "applications": [
+   "Pharmaceutical carton seals",
+   "Medical-device outer-packaging security"
+  ],
+  "series_title": "Pharmaceutical Tamper-Evident Series"
+ },
+ {
+  "m": "Flexcon CryoFlex FLX070806",
+  "brand": "Flexcon",
+  "series": "imported",
+  "material_en": "1 mil Matte Transparent PP Facestock + Cryo High-Tack PSA + PET Liner",
+  "face": "1 mil / 0.025 mm",
+  "total": "0.075 mm",
+  "temp": "-196°C ~ 135°C",
+  "accent": "#B4C6E7",
+  "overview": "An imported ultra-thin 1 mil matte-transparent PP cryogenic label with a high-tack cryo adhesive, supplied on a PET liner for automated dispensing. It resists DMSO and cell reagents and stays stable through 10 freeze–thaw cycles.",
+  "features": [
+   "Imported ultra-thin 1 mil premium facestock",
+   "Resists DMSO and cell reagents",
+   "Stable through 10 freeze–thaw cycles"
+  ],
+  "benefits": [
+   "Fits high-end automated biolab equipment",
+   "No contamination across cell assays",
+   "No adhesive lift in long-term LN₂ storage"
+  ],
+  "applications": [
+   "Overseas biolabs",
+   "High-end stem-cell banks",
+   "Blood stations"
+  ],
+  "series_title": "Imported / Distributed Brands Series"
+ },
+ {
+  "m": "Avery BB624",
+  "brand": "Avery",
+  "series": "imported",
+  "material_en": "2 mil Transparent PP Facestock + Medical Balanced Low-Temp PSA + Glassine Liner",
+  "face": "2 mil / 0.050 mm",
+  "total": "0.132 mm",
+  "temp": "-196°C ~ 120°C",
+  "accent": "#B4C6E7",
+  "overview": "A 2 mil transparent PP label compatible with both sterilization and liquid-nitrogen storage. It resists PVC plasticizer and stays clear so the sample can be read without removing the label.",
+  "features": [
+   "Compatible with both sterilization and LN₂ workflows",
+   "Resists PVC plasticizer",
+   "Transparent — does not obscure the sample"
+  ],
+  "benefits": [
+   "One label covers the full sterilize + cryostorage workflow",
+   "Long-term bond to soft blood bags without whitening",
+   "Read the sample directly without peeling the label"
+  ],
+  "applications": [
+   "Biopharma",
+   "Vaccine cold chain",
+   "Hospital blood-bag systems"
+  ],
+  "series_title": "Imported / Distributed Brands Series"
+ },
+ {
+  "m": "Avery AZ452",
+  "brand": "Avery",
+  "series": "imported",
+  "material_en": "2 mil White PP Facestock + Low-Temp Medical Acrylic PSA + Glassine Liner",
+  "face": "2 mil / 0.050 mm",
+  "total": "0.133 mm",
+  "temp": "-196°C ~ 120°C",
+  "accent": "#B4C6E7",
+  "overview": "A 2 mil white PP low-temperature medical label with very high thermal-transfer contrast. It resists LN₂ freeze–thaw and medical disinfectants and meets tertiary-hospital biological-sample requirements.",
+  "features": [
+   "White base gives very high thermal-transfer contrast",
+   "Resists LN₂ freeze–thaw and medical disinfectants",
+   "Low-migration and biosafe"
+  ],
+  "benefits": [
+   "Clear scanning in cold, dimly lit cold rooms",
+   "Intact after repeated disinfection",
+   "Meets tertiary-hospital biological-sample standards"
+  ],
+  "applications": [
+   "Third-party medical testing",
+   "Large hospital biobanks"
+  ],
+  "series_title": "Imported / Distributed Brands Series"
+ },
+ {
+  "m": "Polyonics XF-710",
+  "brand": "Polyonics",
+  "series": "imported",
+  "material_en": "1 mil Gold PI Polyimide Facestock + High-Temp Silicone PSA + White PET Liner",
+  "face": "1 mil / 0.025 mm",
+  "total": "0.085 mm",
+  "temp": "-40°C ~ 300°C",
+  "accent": "#B4C6E7",
+  "overview": "A 1 mil gold polyimide (PI) label with a high-temperature silicone adhesive that withstands instantaneous 300 °C. It resists solder, flux and cleaning solvents and leaves no residue at high heat — dedicated high-temp electronics traceability.",
+  "features": [
+   "Withstands instantaneous 300 °C",
+   "Resists solder, flux and cleaning solvents",
+   "Silicone adhesive leaves no residue at high heat"
+  ],
+  "benefits": [
+   "No label loss through SMT reflow and wave soldering",
+   "No adhesive residue on the PCB after solder-wash",
+   "Dedicated high-temperature electronics traceability"
+  ],
+  "applications": [
+   "PCBs",
+   "Semiconductor chips",
+   "High-temperature electronics processing"
+  ],
+  "series_title": "Imported / Distributed Brands Series"
+ }
+]
