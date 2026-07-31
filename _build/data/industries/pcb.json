@@ -140,10 +140,10 @@
     {
      "name": "Polyonics XF78 Series",
      "line": {
-      "en": "ESD-safe polyimide · reflow & cleaning resistant",
-      "zh": "防静电聚酰亚胺 · 耐焊洗",
-      "vi": "Polyimide chống tĩnh · chịu hàn rửa",
-      "th": "โพลีอิไมด์ป้องกันไฟฟ้าสถิต · ทนรีโฟลว์และล้าง"
+      "en": "ESD-safe PI (polyimide) · reflow & cleaning resistant",
+      "zh": "防静电 PI（聚酰亚胺）· 耐焊洗",
+      "vi": "PI (polyimide) chống tĩnh điện · chịu hàn rửa",
+      "th": "PI (โพลีอิไมด์) ป้องกันไฟฟ้าสถิต · ทนรีโฟลว์และล้าง"
      },
      "img": "",
      "landing": false,
@@ -200,10 +200,10 @@
     {
      "name": "ESD-Safe E-2712",
      "line": {
-      "en": "Dual-layer ESD · heat & solvent resistant · crisp print",
-      "zh": "双层防静电 · 耐温耐溶剂 · 打印清晰附着力佳",
-      "vi": "2 lớp chống tĩnh · chịu nhiệt dung môi · in rõ",
-      "th": "2 ชั้นป้องกันไฟฟ้าสถิต · ทนความร้อนสารละลาย · พิมพ์ชัด"
+      "en": "ESD-safe PET · dual-layer anti-static · heat & solvent resistant",
+      "zh": "防静电 PET · 双层抗静电 · 耐温耐溶剂",
+      "vi": "PET chống tĩnh điện · 2 lớp chống tĩnh · chịu nhiệt & dung môi",
+      "th": "PET ป้องกันไฟฟ้าสถิต · 2 ชั้นป้องกันไฟฟ้าสถิต · ทนความร้อนและตัวทำละลาย"
      },
      "img": "",
      "landing": true,

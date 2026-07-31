@@ -27,7 +27,7 @@ PREFIX = {"en": "", "zh": "/cn", "vi": "/vn", "th": "/th"}
 HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th"}
 # Paths that exist in all four languages (home only). Links to any other path from
 # a vi/th page fall back to the English version (no 404). Industry hubs are EN+ZH.
-FOURLANG = {"/", "/applications/", "/service/", "/insights/"}
+FOURLANG = {"/", "/products/", "/applications/", "/service/", "/insights/"}
 FOURLANG_PREFIX = ("/insights/", "/industries/")  # article + industry pages exist in all 4 langs
 def Lx(lang, path):
     """Smart localized link: use the vi/th version only if that path is 4-language."""
@@ -38,7 +38,7 @@ def Lx(lang, path):
 def esc(s): return html.escape(str(s or ""), quote=True)
 
 # ---------------------------------------------------------------- URLs
-def u_products(): return "/applications/"
+def u_products(): return "/products/"
 def u_line(pid): return "/products/%s/" % PATHS[pid]["slug"]
 def u_prod(slug): return "/products/%s/" % slug
 def u_ind_hub(): return "/industries/"
@@ -404,6 +404,16 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .solgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 @media(max-width:900px){.solgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.solgrid{grid-template-columns:1fr}}
+/* Products landing — mega-menu-style category cards (heading + chevron + description) */
+.pmgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 44px;margin-top:6px}
+.pmcard{display:block;padding:20px 0;border-top:1px solid var(--line);text-decoration:none;color:inherit;transition:padding-left .15s}
+.pmcard:hover{padding-left:6px}
+.pmcard h3{display:flex;align-items:baseline;gap:8px;margin:0 0 6px;font-size:18px;color:var(--blue-deep)}
+.pmcard:hover h3{color:var(--blue)}
+.pmcard h3 .pmar{color:var(--green-d);font-weight:800}
+.pmcard p{margin:0;font-size:14px;line-height:1.6;color:var(--mut)}
+@media(max-width:820px){.pmgrid{grid-template-columns:1fr 1fr;gap:0 24px}}
+@media(max-width:560px){.pmgrid{grid-template-columns:1fr}}
 .freesample{background:linear-gradient(150deg,var(--blue),var(--blue-deep))}
 .fsbox{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
 .fsbox h2{color:#fff;font-size:26px}
@@ -550,7 +560,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 """
 
 NAV_ITEMS = [("Home", "/", "home"),
-             ("Product", "/applications/", "products"),
+             ("Product", "/products/", "products"),
              ("Solutions", "/applications/", "applications"),
              ("Insight", "/insights/", "insights"),
              ("Service", "/service/", "service")]
@@ -805,11 +815,14 @@ CTAS = {
             "บอกเราถึงพื้นผิว อุณหภูมิ การสัมผัสสารเคมี วิธีการพิมพ์ และอายุการใช้งานที่คาดหวัง ทีมของเราจะช่วยคัดกรองวัสดุที่เหมาะสมและเตรียมตัวอย่างเพื่อประเมิน"),
    "b1": ("Talk to a Specialist", "咨询专家", "Trao đổi với chuyên gia", "ปรึกษาผู้เชี่ยวชาญ"), "b1u": "/contact/",
    "b2": ("Send Us Your Requirements", "提交您的需求", "Gửi yêu cầu của bạn", "ส่งข้อกำหนดของคุณ"), "b2u": "/contact/"},
- "products": {"h": ("Need Help Comparing Materials?", "需要帮助比较材料？"),
+ "products": {"h": ("Need Help Comparing Materials?", "需要帮助比较材料？",
+                     "Cần trợ giúp so sánh vật liệu?", "ต้องการความช่วยเหลือในการเปรียบเทียบวัสดุ?"),
    "body": ("Share your performance requirements and preferred construction. We will help you compare suitable material options based on temperature, surface, adhesive, printing, and durability needs.",
-            "告诉我们您的性能要求与倾向的材料结构，我们将根据温度、表面、胶粘剂、打印与耐久性需求，帮您比较合适的材料选项。"),
-   "b1": ("Get Material Recommendations", "获取材料推荐"), "b1u": "/contact/",
-   "b2": ("Request Technical Data", "索取技术数据"), "b2u": "/contact/"},
+            "告诉我们您的性能要求与倾向的材料结构，我们将根据温度、表面、胶粘剂、打印与耐久性需求，帮您比较合适的材料选项。",
+            "Hãy cho biết yêu cầu hiệu suất và cấu tạo mong muốn. Chúng tôi sẽ giúp bạn so sánh các vật liệu phù hợp theo nhiệt độ, bề mặt, keo dán, in ấn và độ bền.",
+            "แบ่งปันข้อกำหนดด้านประสิทธิภาพและโครงสร้างที่ต้องการ เราจะช่วยเปรียบเทียบตัวเลือกวัสดุที่เหมาะสมตามอุณหภูมิ พื้นผิว กาว การพิมพ์ และความทนทาน"),
+   "b1": ("Get Material Recommendations", "获取材料推荐", "Nhận đề xuất vật liệu", "รับคำแนะนำวัสดุ"), "b1u": "/contact/",
+   "b2": ("Request Technical Data", "索取技术数据", "Yêu cầu dữ liệu kỹ thuật", "ขอข้อมูลทางเทคนิค"), "b2u": "/contact/"},
  "applications": {"h": ("Have a Specific Application Challenge?", "有具体的应用难题？",
                          "Bạn có thách thức ứng dụng cụ thể?", "มีความท้าทายด้านการใช้งานเฉพาะหรือไม่?"),
    "body": ("Describe where the label will be used, what it must withstand, and how it will be printed. We will help you identify the key material requirements and recommend a practical starting point.",
@@ -1335,7 +1348,7 @@ def home_switcher(active):
 def home_nav(lang):
     lf=lambda p: home_hlink(lang,p)
     # Product dropdown lists the industry sectors directly (matches nav_html).
-    prod=simple_dropdown(lang, "Product", "/applications/", PROD_AXES[1][3], False, lf)
+    prod=simple_dropdown(lang, "Product", "/products/", PROD_AXES[1][3], False, lf)
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
     # top nav after Product: Solutions, Insight, Service
@@ -1350,7 +1363,7 @@ def home_nav(lang):
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
     # footer nav mirrors the top nav: Product · Application · Insight · Service
-    foot_nav=[("/applications/",{"en":"Product","zh":"产品","vi":"Sản phẩm","th":"ผลิตภัณฑ์"}.get(lang,"Product")),
+    foot_nav=[("/products/",{"en":"Product","zh":"产品","vi":"Sản phẩm","th":"ผลิตภัณฑ์"}.get(lang,"Product")),
               ("/applications/",{"en":"Application","zh":"应用","vi":"Ứng dụng","th":"การใช้งาน"}.get(lang,"Application")),
               ("/insights/",{"en":"Insight","zh":"洞察","vi":"Kiến thức","th":"ความรู้"}.get(lang,"Insight")),
               ("/service/",{"en":"Service","zh":"服务","vi":"Dịch vụ","th":"บริการ"}.get(lang,"Service"))]
@@ -1673,23 +1686,15 @@ def build_sitemaps():
 def write_redirects():
     # 301 migration redirects (per brief §13) + clean-url config, in vercel.json
     cfg={"cleanUrls":True,"trailingSlash":True,"redirects":[
-      # No products/industries hub pages — send the hub paths to Home (browse
-      # from Home + the Product nav dropdown). Exact paths only, so the
-      # /products/item/* landings and individual industry pages are unaffected.
-      {"source":"/products","destination":"/","permanent":False},
-      {"source":"/products/","destination":"/","permanent":False},
+      # /products/ is now a real landing page (build_products_landing). Only the
+      # /industries/ hub paths still redirect to Home (no industries hub page);
+      # exact paths only, so individual /industries/<slug>/ pages are unaffected.
       {"source":"/industries","destination":"/","permanent":False},
       {"source":"/industries/","destination":"/","permanent":False},
-      {"source":"/cn/products","destination":"/cn/","permanent":False},
-      {"source":"/cn/products/","destination":"/cn/","permanent":False},
       {"source":"/cn/industries","destination":"/cn/","permanent":False},
       {"source":"/cn/industries/","destination":"/cn/","permanent":False},
-      {"source":"/vn/products","destination":"/vn/","permanent":False},
-      {"source":"/vn/products/","destination":"/vn/","permanent":False},
       {"source":"/vn/industries","destination":"/vn/","permanent":False},
       {"source":"/vn/industries/","destination":"/vn/","permanent":False},
-      {"source":"/th/products","destination":"/th/","permanent":False},
-      {"source":"/th/products/","destination":"/th/","permanent":False},
       {"source":"/th/industries","destination":"/th/","permanent":False},
       {"source":"/th/industries/","destination":"/th/","permanent":False},
       {"source":"/cases","destination":"/","permanent":True},
@@ -2004,6 +2009,65 @@ def build_service(lang):
         body, crumb, active="service", trust=False, hero=hero, langs=NAV_PILLAR_LANGS))
     if lang=="en": track("/service/","core")
 
+def build_products_landing(lang):
+    """Products landing page (/products/) — a mega-menu-style category page:
+    browse by industry and by operating environment. No redirect to Home."""
+    T = HOME_I18N[lang]
+    def card(url, name, desc):
+        return ('<a class="pmcard" href="%s"><h3><span class="pmar">›</span>%s</h3>'
+                '<p>%s</p></a>') % (Lx(lang, url), esc(name), esc(desc))
+    # By Industry — 6 sectors (names + descriptions already 4-language in home_i18n)
+    ind_cards = "".join(card(FOCUS_URLS[k], f["name"], f["desc"]) for k, f in enumerate(T["focus"]))
+    # By Environment — the 4 environment solution pages (4-language)
+    ENV = [
+      ("/products/item/high-heat-identification/",
+       P(lang,"Heat Resistant","耐高温","Chịu nhiệt cao","ทนความร้อนสูง"),
+       P(lang,"High-temperature identification that stays legible and firmly bonded through demanding thermal processing.",
+            "面向高温工艺的标识方案 —— 高温下依旧清晰可读、牢固贴附",
+            "Nhận diện ở nhiệt độ cao, vẫn rõ nét và bám chắc qua các quá trình xử lý nhiệt khắc nghiệt.",
+            "การระบุที่อุณหภูมิสูง ยังคงอ่านได้และยึดแน่นตลอดกระบวนการทางความร้อนที่เข้มงวด")),
+      ("/products/item/cold-chain-cryogenic-labels/",
+       P(lang,"Low Temperature Resistant","耐低温","Chịu nhiệt độ thấp","ทนอุณหภูมิต่ำ"),
+       P(lang,"Cold-chain and cryogenic labels for storage down to −196°C and repeated freeze-thaw.",
+            "冷链与超低温标签 —— 适用于低至 −196°C 存储与反复冻融",
+            "Nhãn chuỗi lạnh và siêu lạnh cho lưu trữ tới −196°C và chu kỳ đông-rã lặp lại.",
+            "ฉลากโซ่ความเย็นและอุณหภูมิต่ำมากสำหรับการจัดเก็บถึง −196°C และการแช่แข็ง-ละลายซ้ำ")),
+      ("/products/item/chemical-resistant-labels/",
+       P(lang,"Chemical Resistant","耐化学","Kháng hóa chất","ทนสารเคมี"),
+       P(lang,"Labels that resist solvents, disinfectants, oils, acids and alkalis without fading or lifting.",
+            "耐溶剂、消毒剂、油污、酸碱等化学介质 —— 不褪色、不脱落",
+            "Nhãn kháng dung môi, chất khử trùng, dầu, axit và kiềm mà không phai màu hay bong tróc.",
+            "ฉลากที่ทนตัวทำละลาย น้ำยาฆ่าเชื้อ น้ำมัน กรดและด่าง โดยไม่ซีดจางหรือหลุดลอก")),
+      ("/products/item/sterilization-labels/",
+       P(lang,"Sterilization","灭菌","Tiệt trùng","การฆ่าเชื้อ"),
+       P(lang,"Labels that survive steam, dry heat, gamma, EtO and chemical sterilization while staying readable.",
+            "耐蒸汽、干热、伽马、环氧乙烷及化学灭菌 —— 全周期清晰可读",
+            "Nhãn chịu được hơi nước, nhiệt khô, gamma, EtO và tiệt trùng hóa học mà vẫn đọc được.",
+            "ฉลากที่ทนไอน้ำ ความร้อนแห้ง แกมมา EtO และการฆ่าเชื้อด้วยสารเคมี ขณะยังคงอ่านได้")),
+    ]
+    env_cards = "".join(card(u, nm, ds) for u, nm, ds in ENV)
+    sec = lambda eye, h, grid: ('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div>'
+        '<h2>%s</h2><div class="pmgrid">%s</div></div></section>') % (esc(eye), esc(h), grid)
+    body = (sec(P(lang,"BY INDUSTRY","按行业","THEO NGÀNH","ตามอุตสาหกรรม"),
+                P(lang,"Labels by Industry","按行业选择","Nhãn theo ngành","ฉลากตามอุตสาหกรรม"), ind_cards)
+          + sec(P(lang,"BY ENVIRONMENT","按环境","THEO MÔI TRƯỜNG","ตามสภาพแวดล้อม"),
+                P(lang,"Labels by Operating Environment","按使用环境选择","Nhãn theo môi trường vận hành","ฉลากตามสภาพแวดล้อมการใช้งาน"), env_cards)
+          + ('<div class="wrap">%s</div>' % cta2(lang, "products", Lx)))
+    s = HOME2.get(lang, HOME2["en"])["sections"][0]
+    hero = page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
+                     s["b1"], s["b1u"], s["b2"], s["b2u"], SECTION_BG.get(1, ""))
+    crumb = [(P(lang,"Home","首页","Trang chủ","หน้าแรก"),"/"),
+             (P(lang,"Products","产品","Sản phẩm","ผลิตภัณฑ์"),"/products/")]
+    write(lang, "/products/", page(lang, "/products/",
+        P(lang,"Products | ETIA","产品 | ETIA","Sản phẩm | ETIA","ผลิตภัณฑ์ | ETIA"),
+        P(lang,"Browse ETIA durable and specialty label materials by industry and by operating environment.",
+             "按行业与使用环境浏览 ETIA 耐久与特种标签材料。",
+             "Duyệt vật liệu nhãn bền và chuyên dụng của ETIA theo ngành và theo môi trường vận hành.",
+             "เรียกดูวัสดุฉลากทนทานและเฉพาะทางของ ETIA ตามอุตสาหกรรมและสภาพแวดล้อมการใช้งาน"),
+        P(lang,"Products","产品","Sản phẩm","ผลิตภัณฑ์"), "",
+        body, crumb, active="products", trust=False, hero=hero, langs=NAV_PILLAR_LANGS))
+    if lang=="en": track("/products/","core")
+
 def build_applications(lang):
     """Applications = Application-Notes hub. A simple picture + topic card grid,
     newest first. (Kept intentionally plain — no industry filter.)"""
@@ -2253,7 +2317,8 @@ def build_all():
     build_contact(lang)
     # legal pages (general website template — client legal counsel should review)
     build_legal(lang)
-  for lang in NAV_PILLAR_LANGS:  # Solutions / Service pillars: all 4 languages
+  for lang in NAV_PILLAR_LANGS:  # Product / Solutions / Service pillars: all 4 languages
+    build_products_landing(lang)  # nav pillar: Product (mega-menu-style landing)
     build_applications(lang)   # nav pillar: Solutions
     build_service(lang)
     # /insights/ (nav pillar: Insight) is built by gen_news as the Insights article hub
