@@ -156,8 +156,8 @@
             "zh": "深冷 PE。常温贴标后直接进入液氮，耐 −196℃温差冲击。"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-6333"
         }
       ]
     },
@@ -192,8 +192,8 @@
             "zh": "PP。适用于 −80℃样本试管，防冷凝、防翘边。"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-4813"
         },
         {
           "name": {
@@ -205,8 +205,8 @@
             "zh": "尼龙。适用于大口径试剂瓶，低温粘接牢固，抗撕裂。"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-3635"
         },
         {
           "name": {
@@ -267,8 +267,8 @@
             "zh": "PP。耐水浴、耐离心，适用于血站批量应用。"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-4533"
         }
       ]
     },

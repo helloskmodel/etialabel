@@ -1,0 +1,229 @@
+{
+  "slug": "e-4533",
+  "source": "client TDS (Chinese authoritative) — E-4533",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "industry": "medical",
+  "banner": "",
+  "product_img": "",
+  "title": {
+    "en": "E-4533 — Blood-Bag PP Label",
+    "zh": "E-4533 · 血袋 PP 标签",
+    "vi": "E-4533 — Nhãn PP cho túi máu",
+    "th": "E-4533 — ฉลาก PP สำหรับถุงเลือด"
+  },
+  "tagline": {
+    "en": "3 mil soft white PP with strong permanent tack — flexes, sterilizes and performs at low temperatures on blood bags.",
+    "zh": "3 mil 白色 PP 标签材料，材质柔软、粘性强、初粘力强，满足血袋弯曲、消毒及低温性能要求。",
+    "vi": "PP trắng mềm 3 mil với độ bám dính vĩnh viễn mạnh — uốn cong, tiệt trùng và hoạt động ở nhiệt độ thấp trên túi máu.",
+    "th": "PP สีขาวเนื้อนุ่ม 3 mil ที่มีแรงยึดติดถาวรสูง — โค้งงอ ฆ่าเชื้อ และทำงานได้ในอุณหภูมิต่ำบนถุงเลือด"
+  },
+  "positioning": {
+    "en": "E-4533 is a 3 mil white PP label material. The soft face stock delivers excellent adhesive strength and strong initial tack, meeting the flexing, sterilization and low-temperature requirements of different blood bags. It is waterproof and moisture-proof, offers a degree of tensile and tear strength, has outstanding low-temperature resistance, and remains physically and chemically stable against corrosion.",
+    "zh": "E-4533 是一种 3 mil 白色 PP 标签材料，材质柔软，粘性强度优异，初粘力强。可满足在不同血袋上弯曲、消毒和低温性能要求。防水防潮，具有一定的抗拉抗撕裂强度，耐低温性能优异，物理及耐化学腐蚀性能稳定。",
+    "vi": "E-4533 là vật liệu nhãn PP trắng 3 mil. Lớp mặt mềm mang lại độ bám dính xuất sắc và độ dính ban đầu mạnh, đáp ứng yêu cầu uốn cong, tiệt trùng và nhiệt độ thấp của các loại túi máu khác nhau. Chống nước và chống ẩm, có độ bền kéo và xé nhất định, khả năng chịu nhiệt độ thấp vượt trội, ổn định về tính chất vật lý và chống ăn mòn hóa học.",
+    "th": "E-4533 เป็นวัสดุฉลาก PP สีขาว 3 mil เนื้อวัสดุนุ่ม ให้แรงยึดติดที่ยอดเยี่ยมและแรงยึดเริ่มต้นสูง ตอบสนองความต้องการด้านการโค้งงอ การฆ่าเชื้อ และประสิทธิภาพในอุณหภูมิต่ำบนถุงเลือดต่างชนิด กันน้ำและกันความชื้น มีความแข็งแรงด้านแรงดึงและการฉีกขาดในระดับหนึ่ง ทนอุณหภูมิต่ำได้ดีเยี่ยม และมีคุณสมบัติทางกายภาพและการทนการกัดกร่อนทางเคมีที่เสถียร"
+  },
+  "features": {
+    "en": [
+      "Special printable surface coating, suitable for most printing methods and inks",
+      "Surface specially treated to increase surface activity and improve ink absorption",
+      "Balanced initial tack, peel force and holding power for a permanent bond",
+      "Excellent initial tack together with outstanding final adhesion"
+    ],
+    "zh": [
+      "表面具有适印性的特殊涂层，适用于大多数印刷方式及油墨",
+      "材料表面经特殊加工处理，增强了材料表面活性能，提高其对油墨的吸附能力",
+      "初粘力、剥离力、保持力三力较为平衡永久",
+      "具有优秀的初粘性以及优异的最终粘结性"
+    ],
+    "vi": [
+      "Lớp phủ bề mặt đặc biệt có khả năng in, phù hợp với hầu hết các phương pháp in và loại mực",
+      "Bề mặt được xử lý đặc biệt để tăng hoạt tính bề mặt và cải thiện khả năng hấp thụ mực",
+      "Cân bằng giữa độ dính ban đầu, lực bóc và lực giữ để tạo liên kết vĩnh viễn",
+      "Độ dính ban đầu xuất sắc cùng với độ bám dính cuối cùng vượt trội"
+    ],
+    "th": [
+      "สารเคลือบผิวพิเศษที่พิมพ์ได้ เหมาะกับวิธีการพิมพ์และหมึกส่วนใหญ่",
+      "ผิววัสดุผ่านการปรับสภาพพิเศษเพื่อเพิ่มพลังงานพื้นผิวและปรับปรุงการดูดซับหมึก",
+      "สมดุลระหว่างแรงยึดเริ่มต้น แรงลอก และแรงยึดเกาะ เพื่อการยึดติดแบบถาวร",
+      "แรงยึดเริ่มต้นที่ยอดเยี่ยมพร้อมการยึดติดขั้นสุดท้ายที่โดดเด่น"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Property",
+        "Test method",
+        "Result"
+      ],
+      "zh": [
+        "物理特性",
+        "测试方法",
+        "平均测试结果"
+      ],
+      "vi": [
+        "Đặc tính",
+        "Phương pháp thử",
+        "Kết quả"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "วิธีทดสอบ",
+        "ผลการทดสอบ"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Thickness — base",
+            "zh": "厚度 — 基材",
+            "vi": "Độ dày — lớp nền",
+            "th": "ความหนา — วัสดุฐาน"
+          },
+          "—",
+          "0.075 mm"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Thickness — adhesive",
+            "zh": "厚度 — 粘胶",
+            "vi": "Độ dày — keo",
+            "th": "ความหนา — กาว"
+          },
+          "—",
+          "0.023 mm"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Thickness — liner",
+            "zh": "厚度 — 底纸",
+            "vi": "Độ dày — lớp lót",
+            "th": "ความหนา — กระดาษรอง"
+          },
+          "—",
+          "0.068 mm"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Peel strength",
+            "zh": "剥离力",
+            "vi": "Lực bóc",
+            "th": "แรงลอก"
+          },
+          "GB/T 2792",
+          "7.5 N/25 mm"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Initial tack",
+            "zh": "初粘力",
+            "vi": "Độ dính ban đầu",
+            "th": "แรงยึดเริ่มต้น"
+          },
+          "GB/T 31125",
+          "15 N/25 mm"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Holding power",
+            "zh": "保持力",
+            "vi": "Lực giữ",
+            "th": "แรงยึดเกาะ"
+          },
+          "GB/T 4851",
+          "≥48h/25 mm"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Temperature range",
+            "zh": "温度范围",
+            "vi": "Phạm vi nhiệt độ",
+            "th": "ช่วงอุณหภูมิ"
+          },
+          "—",
+          "-40℃ to 120℃"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Shelf life",
+            "zh": "保存有效期",
+            "vi": "Thời hạn bảo quản",
+            "th": "อายุการเก็บรักษา"
+          },
+          "72℉ (22℃), 60% RH",
+          "≥1 year"
+        ]
+      }
+    ],
+    "notes": {
+      "en": [
+        "Stored at 72℉ (22℃) and 60% relative humidity, the material keeps for at least 1 year."
+      ],
+      "zh": [
+        "在 72℉(22℃) 和 60% 相对湿度环境下可至少保存 1 年。"
+      ],
+      "vi": [
+        "Bảo quản ở 72℉ (22℃) và độ ẩm tương đối 60%, vật liệu giữ được ít nhất 1 năm."
+      ],
+      "th": [
+        "เก็บรักษาที่ 72℉ (22℃) และความชื้นสัมพัทธ์ 60% วัสดุจะเก็บได้อย่างน้อย 1 ปี"
+      ]
+    }
+  },
+  "applications": {
+    "en": [
+      "Blood-bag labels",
+      "Cable and self-wound (mating-adhesive) identification labels",
+      "Small-diameter cylindrical bottles with a suitable curvature — not for irregular curved or spherical surfaces"
+    ],
+    "zh": [
+      "血袋标签",
+      "电缆及其对粘（自缠绕）标签标识",
+      "可粘贴适当弧度的柱状小口径瓶体，但不可以用来粘贴不规则曲面或者球面"
+    ],
+    "vi": [
+      "Nhãn túi máu",
+      "Nhãn nhận dạng cáp và loại tự quấn (dán đối đầu)",
+      "Chai hình trụ đường kính nhỏ có độ cong phù hợp — không dùng cho bề mặt cong bất thường hoặc bề mặt cầu"
+    ],
+    "th": [
+      "ฉลากถุงเลือด",
+      "ฉลากระบุสำหรับสายเคเบิลและแบบพันตัวเอง (กาวประกบ)",
+      "ขวดทรงกระบอกเส้นผ่านศูนย์กลางเล็กที่มีความโค้งเหมาะสม — ไม่ใช้กับพื้นผิวโค้งผิดปกติหรือพื้นผิวทรงกลม"
+    ]
+  },
+  "certifications": {
+    "en": [
+      "RoHS — compliant with EU Directive 2002/95/EC"
+    ],
+    "zh": [
+      "RoHS — 符合欧盟指令 2002/95/EC"
+    ],
+    "vi": [
+      "RoHS — tuân thủ Chỉ thị EU 2002/95/EC"
+    ],
+    "th": [
+      "RoHS — สอดคล้องกับข้อกำหนดสหภาพยุโรป 2002/95/EC"
+    ]
+  }
+}

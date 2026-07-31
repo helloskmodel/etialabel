@@ -1,107 +1,238 @@
 {
   "slug": "e-3635",
-  "source": "_docs/sources/wire & cable",
+  "source": "client TDS (Chinese authoritative) — E-3635 (P02)",
   "langs": [
     "en",
     "zh",
     "vi",
     "th"
   ],
+  "industry": "medical",
   "banner": "",
   "product_img": "",
   "title": {
-    "en": "E3635 — Nylon Wrap-Around Label",
-    "zh": "E3635 · 尼龙缠绕标签",
-    "vi": "E3635 · Nhãn quấn nylon",
-    "th": "E3635 · ฉลากพันไนลอน"
+    "en": "E-3635 — Nylon Cloth Cryogenic Label",
+    "zh": "E-3635 · 尼龙布低温标签",
+    "vi": "E-3635 — Nhãn vải nylon chịu nhiệt độ cực thấp",
+    "th": "E-3635 — ฉลากผ้าไนลอนสำหรับอุณหภูมิต่ำมาก"
   },
   "tagline": {
-    "en": "Highly flexible nylon wrap-around label stable up to 120℃, oil & temperature resistant",
-    "zh": "高柔韧尼龙缠绕标签，适配 120℃工况，耐温耐油污",
-    "vi": "Nhãn quấn nylon dẻo dai cao ổn định đến 120°C, chống dầu & chịu nhiệt",
-    "th": "ฉลากพันไนลอนยืดหยุ่นสูง เสถียรถึง 120°C ทนน้ำมันและทนความร้อน"
+    "en": "5 mil white nylon cloth with permanent acrylic adhesive and a highly opaque white matte topcoat for thermal-transfer, dot-matrix and handwriting printing.",
+    "zh": "5mil 白色尼龙布，带永久性丙烯酸压敏胶及高度不透明白色哑面涂层，专为热转印、点阵及书写打印设计。",
+    "vi": "Vải nylon trắng 5 mil với keo acrylic vĩnh cửu và lớp phủ mờ trắng độ mờ đục cao, chuyên dùng cho in truyền nhiệt, in kim và viết tay.",
+    "th": "ผ้าไนลอนสีขาว 5 mil พร้อมกาวอะคริลิกแบบถาวรและชั้นเคลือบด้านสีขาวทึบแสงสูง ออกแบบมาสำหรับการพิมพ์ถ่ายโอนความร้อน การพิมพ์ดอตเมทริกซ์ และการเขียนด้วยมือ"
   },
   "positioning": {
-    "en": "Super flexible nylon facestock withstands repeated bending, stable up to 120℃, oil & temperature resistant. Special oil-proof glue tightly adheres to curved cables without edge lifting during long-term dynamic operation; uniform ink absorption delivers scratch-resistant permanent prints.",
-    "zh": "高柔韧尼龙面材抗反复弯折，适配 120℃工况，耐温耐油污；专用耐油背胶牢牢贴合曲面线缆，长期动态使用边缘不起翘；基材吸墨均匀，打印标识牢固耐摩擦",
-    "vi": "Vật liệu mặt nylon siêu dẻo chịu được uốn lặp lại, ổn định đến 120°C, chống dầu & chịu nhiệt. Keo chống dầu chuyên dụng bám chắc vào dây cáp cong mà không nhấc mép trong quá trình vận hành động dài hạn; khả năng thấm mực đồng đều cho bản in bền, chống trầy xước.",
-    "th": "วัสดุพิมพ์ไนลอนยืดหยุ่นสูงทนการดัดโค้งซ้ำ เสถียรถึง 120°C ทนน้ำมันและทนความร้อน กาวกันน้ำมันพิเศษยึดเกาะสายเคเบิลผิวโค้งได้แน่นโดยไม่เผยอขอบระหว่างการใช้งานแบบเคลื่อนไหวระยะยาว การดูดซับหมึกสม่ำเสมอให้งานพิมพ์ถาวรที่ทนการขีดข่วน"
+    "en": "E-3635 (P02) is a 5 mil white nylon cloth composed of a permanent acrylic pressure-sensitive adhesive and a highly opaque white matte topcoat. The topcoat is designed specifically for thermal-transfer, dot-matrix and handwriting printing. The material is soft and elastic so it conforms to curved or irregular surfaces, resists chemical corrosion, and withstands heat, cold and solvents.",
+    "zh": "E-3635（P02）是一种 5mil 白色尼龙布，带有永久性丙烯酸压敏胶以及高度不透明白色哑面涂层组成，该涂层专门设计用于热转印、点阵以及书写打印。材料柔软有弹性，可贴于曲面或不规则表面，耐化学腐蚀，耐热、耐寒、耐溶剂。",
+    "vi": "E-3635 (P02) là vải nylon trắng 5 mil gồm keo dán nhạy áp acrylic vĩnh cửu và lớp phủ mờ trắng có độ mờ đục cao. Lớp phủ được thiết kế chuyên cho in truyền nhiệt, in kim và viết tay. Vật liệu mềm và đàn hồi nên bám được trên bề mặt cong hoặc không đều, chịu ăn mòn hóa chất, chịu nóng, chịu lạnh và chịu dung môi.",
+    "th": "E-3635 (P02) เป็นผ้าไนลอนสีขาว 5 mil ประกอบด้วยกาวไวต่อแรงกดอะคริลิกแบบถาวรและชั้นเคลือบด้านสีขาวที่มีความทึบแสงสูง ชั้นเคลือบออกแบบมาเฉพาะสำหรับการพิมพ์ถ่ายโอนความร้อน การพิมพ์ดอตเมทริกซ์ และการเขียนด้วยมือ วัสดุนุ่มและยืดหยุ่นจึงติดกับพื้นผิวโค้งหรือไม่เรียบได้ ทนการกัดกร่อนจากสารเคมี ทนร้อน ทนเย็น และทนตัวทำละลาย"
   },
-  "challenges": {},
   "features": {
     "en": [
-      "Super flexible nylon facestock withstands repeated bending",
-      "Stable up to 120℃, oil & temperature resistant",
-      "Special oil-proof glue tightly adheres to curved cables without edge lifting during long-term dynamic operation",
-      "Uniform ink absorption delivers scratch-resistant permanent prints"
+      "Delivers stable clarity and readability",
+      "Soft and elastic material conforms to curved or irregular surfaces",
+      "Adhesive offers excellent initial tack, shear and ultimate bond strength",
+      "Resists chemical corrosion",
+      "Withstands heat, cold and solvents"
     ],
     "zh": [
-      "高柔韧尼龙面材抗反复弯折",
-      "适配 120℃工况，耐温耐油污",
-      "专用耐油背胶牢牢贴合曲面线缆，长期动态使用边缘不起翘",
-      "基材吸墨均匀，打印标识牢固耐摩擦"
+      "提供稳定的清晰度和可读性",
+      "材料柔软有弹性，可贴于曲面或不规则表面",
+      "粘合剂具有很好的初粘性、剪切性和极限粘结性",
+      "耐化学腐蚀",
+      "耐热、耐寒、耐溶剂"
     ],
     "vi": [
-      "Vật liệu mặt nylon siêu dẻo chịu được uốn lặp lại",
-      "Ổn định đến 120°C, chống dầu & chịu nhiệt",
-      "Keo chống dầu chuyên dụng bám chắc vào dây cáp cong mà không nhấc mép trong vận hành động dài hạn",
-      "Khả năng thấm mực đồng đều cho bản in bền, chống trầy xước"
+      "Mang lại độ rõ nét và khả năng đọc ổn định",
+      "Vật liệu mềm, đàn hồi, bám được trên bề mặt cong hoặc không đều",
+      "Keo dán có độ bám dính ban đầu, độ chịu cắt và độ kết dính tối đa rất tốt",
+      "Chịu ăn mòn hóa chất",
+      "Chịu nóng, chịu lạnh và chịu dung môi"
     ],
     "th": [
-      "วัสดุพิมพ์ไนลอนยืดหยุ่นสูงทนการดัดโค้งซ้ำ",
-      "เสถียรถึง 120°C ทนน้ำมันและทนความร้อน",
-      "กาวกันน้ำมันพิเศษยึดเกาะสายเคเบิลผิวโค้งได้แน่นโดยไม่เผยอขอบระหว่างการใช้งานแบบเคลื่อนไหวระยะยาว",
-      "การดูดซับหมึกสม่ำเสมอให้งานพิมพ์ถาวรที่ทนการขีดข่วน"
+      "ให้ความคมชัดและอ่านง่ายอย่างสม่ำเสมอ",
+      "วัสดุนุ่มและยืดหยุ่น ติดกับพื้นผิวโค้งหรือไม่เรียบได้",
+      "กาวมีแรงยึดเริ่มต้น แรงเฉือน และแรงยึดสูงสุดที่ดีเยี่ยม",
+      "ทนการกัดกร่อนจากสารเคมี",
+      "ทนร้อน ทนเย็น และทนตัวทำละลาย"
     ]
   },
-  "benefits": {},
-  "spec": {
-    "en": [
-      "Facestock: Highly flexible nylon",
-      "Temperature rating: 120℃",
-      "Adhesive: Special oil-proof adhesive"
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Property",
+        "Test method",
+        "Result"
+      ],
+      "zh": [
+        "物理特性",
+        "测试方法",
+        "平均测试结果"
+      ],
+      "vi": [
+        "Đặc tính",
+        "Phương pháp thử",
+        "Kết quả trung bình"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "วิธีทดสอบ",
+        "ผลการทดสอบเฉลี่ย"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Thickness — base material",
+            "zh": "厚度 — 基材",
+            "vi": "Độ dày — vật liệu nền",
+            "th": "ความหนา — วัสดุฐาน"
+          },
+          "—",
+          "0.125 mm"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Thickness — adhesive",
+            "zh": "厚度 — 粘胶",
+            "vi": "Độ dày — keo dán",
+            "th": "ความหนา — กาว"
+          },
+          "—",
+          "0.025 mm"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Thickness — liner",
+            "zh": "厚度 — 底纸",
+            "vi": "Độ dày — lớp lót",
+            "th": "ความหนา — กระดาษรอง"
+          },
+          "—",
+          "0.075 mm"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Peel strength",
+            "zh": "剥离力",
+            "vi": "Lực bóc",
+            "th": "แรงลอก"
+          },
+          "GB/T 2792",
+          "7 N/25 mm"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Initial tack",
+            "zh": "初粘力",
+            "vi": "Độ bám dính ban đầu",
+            "th": "แรงยึดเริ่มต้น"
+          },
+          "GB/T 31125",
+          "8 N/25 mm"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Holding power",
+            "zh": "保持力",
+            "vi": "Lực giữ",
+            "th": "แรงยึดค้าง"
+          },
+          "GB/T 4851",
+          "≥48 h/25 mm"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Temperature range",
+            "zh": "温度范围",
+            "vi": "Phạm vi nhiệt độ",
+            "th": "ช่วงอุณหภูมิ"
+          },
+          "—",
+          "-80℃ to 145℃"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Shelf life",
+            "zh": "保存有效期",
+            "vi": "Hạn sử dụng",
+            "th": "อายุการเก็บรักษา"
+          },
+          "—",
+          {
+            "en": "At least 2 years stored at 72℉ (22℃) and 50% relative humidity",
+            "zh": "72℉(22℃) 和 50% 相对湿度环境下可至少保存 2 年",
+            "vi": "Bảo quản được ít nhất 2 năm ở 72℉ (22℃) và độ ẩm tương đối 50%",
+            "th": "เก็บได้อย่างน้อย 2 ปี ที่ 72℉ (22℃) และความชื้นสัมพัทธ์ 50%"
+          }
+        ]
+      }
     ],
-    "zh": [
-      "面材：高柔韧尼龙",
-      "耐温：120℃",
-      "胶粘剂：专用耐油背胶"
-    ],
-    "vi": [
-      "Vật liệu mặt: nylon dẻo dai cao",
-      "Định mức nhiệt: 120°C",
-      "Keo dán: keo chống dầu chuyên dụng"
-    ],
-    "th": [
-      "วัสดุพิมพ์: ไนลอนยืดหยุ่นสูง",
-      "พิกัดอุณหภูมิ: 120°C",
-      "กาว: กาวกันน้ำมันพิเศษ"
-    ]
+    "notes": {
+      "en": [],
+      "zh": [],
+      "vi": [],
+      "th": []
+    }
   },
   "applications": {
     "en": [
-      "Wrap-around marking on curved cables under long-term dynamic operation",
-      "Automotive",
-      "Electronic equipment",
-      "Industrial communication"
+      "Power and cable identification",
+      "Circuit labelling and asset tracking",
+      "Identification for low-temperature processes",
+      "Laboratory identification",
+      "Manufacturing process control"
     ],
     "zh": [
-      "曲面线缆缠绕标识，适配长期动态使用",
-      "汽车",
-      "电子设备",
-      "工业通信"
+      "电力、线缆标识",
+      "线路说明，资产追踪",
+      "低温工艺的标识",
+      "实验室标识",
+      "制造过程管控"
     ],
     "vi": [
-      "Đánh dấu kiểu quấn trên dây cáp cong trong vận hành động dài hạn",
-      "Ô tô",
-      "Thiết bị điện tử",
-      "Truyền thông công nghiệp"
+      "Nhận diện điện lực và cáp",
+      "Ghi nhãn mạch và theo dõi tài sản",
+      "Nhận diện cho quy trình nhiệt độ thấp",
+      "Nhận diện phòng thí nghiệm",
+      "Kiểm soát quy trình sản xuất"
     ],
     "th": [
-      "การทำเครื่องหมายแบบพันรอบบนสายเคเบิลผิวโค้งภายใต้การใช้งานแบบเคลื่อนไหวระยะยาว",
-      "ยานยนต์",
-      "อุปกรณ์อิเล็กทรอนิกส์",
-      "การสื่อสารอุตสาหกรรม"
+      "การระบุสายไฟฟ้าและสายเคเบิล",
+      "การติดฉลากวงจรและการติดตามทรัพย์สิน",
+      "การระบุสำหรับกระบวนการอุณหภูมิต่ำ",
+      "การระบุในห้องปฏิบัติการ",
+      "การควบคุมกระบวนการผลิต"
     ]
   },
-  "certifications": {}
+  "certifications": {
+    "en": [
+      "Compliant with EU Directive 2002/95/EC (RoHS)"
+    ],
+    "zh": [
+      "符合欧盟指令 2002/95/EC (RoHS)"
+    ],
+    "vi": [
+      "Tuân thủ Chỉ thị EU 2002/95/EC (RoHS)"
+    ],
+    "th": [
+      "สอดคล้องกับข้อกำหนดสหภาพยุโรป 2002/95/EC (RoHS)"
+    ]
+  }
 }
