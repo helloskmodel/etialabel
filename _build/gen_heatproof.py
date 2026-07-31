@@ -685,7 +685,13 @@ def products_dropdown(lang, linkfn):
 _MENU_VITH = {"By Environment": ("Theo môi trường", "ตามสภาพแวดล้อม"),
               "By Industry": ("Theo ngành", "ตามอุตสาหกรรม"),
               "Heat Resistant": ("Chịu nhiệt", "ทนความร้อน"),
-              "Low Temperature Resistant": ("Chịu nhiệt độ thấp", "ทนอุณหภูมิต่ำ")}
+              "Low Temperature Resistant": ("Chịu nhiệt độ thấp", "ทนอุณหภูมิต่ำ"),
+              # Product mega-menu industry names (PCB stays as-is)
+              "Automotive & Tire": ("Ô tô & Lốp xe", "ยานยนต์และยาง"),
+              "Wire & Cable": ("Dây & Cáp", "สายไฟและเคเบิล"),
+              "Outdoor & Energy": ("Ngoài trời & Năng lượng", "กลางแจ้งและพลังงาน"),
+              "Medical & Pharmacy": ("Y tế & Dược", "การแพทย์และเภสัช"),
+              "Steel & Ceramics": ("Thép & Gốm sứ", "เหล็กและเซรามิก")}
 INDUSTRY_MENU_DESC = {
  "/industries/pcb-electronics-labeling-solutions/":{"en":"Reflow-, wash- and ESD-safe identification for electronics.","zh":"耐回流焊、清洗与防静电的电子标识","vi":"Nhận diện chịu reflow, rửa và an toàn ESD cho điện tử.","th":"การระบุที่ทนรีโฟลว์ ล้าง และปลอดภัย ESD สำหรับอิเล็กทรอนิกส์"},
  "/industries/automotive-labeling-solutions/":{"en":"Vehicle, tire, battery and component identification.","zh":"汽车、轮胎、电池与零部件标识","vi":"Nhận diện xe, lốp, pin và linh kiện.","th":"การระบุยานพาหนะ ยาง แบตเตอรี่ และชิ้นส่วน"},
