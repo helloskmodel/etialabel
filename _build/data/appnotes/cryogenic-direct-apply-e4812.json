@@ -2,7 +2,10 @@
  "slug": "cryogenic-direct-apply-e4812",
  "source": "client brief — E-4812 / E-4802 cryogenic direct-apply & liquid-nitrogen storage",
  "order": 3,
- "langs": ["en", "zh"],
+ "langs": [
+  "en",
+  "zh"
+ ],
  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
  "image": "",
  "title": {
@@ -19,16 +22,40 @@
  },
  "info": {
   "en": [
-   {"label": "Identification target", "value": "Cryovials — biobank, pharma R&D and clinical samples"},
-   {"label": "Operating temperature", "value": "Ambient down to −196°C (liquid nitrogen)"},
-   {"label": "Application method", "value": "Automated and manual direct application"},
-   {"label": "Recommended product", "value": "E-4812 / E-4802 cryogenic direct-apply labels"}
+   {
+    "label": "Identification target",
+    "value": "Cryovials — biobank, pharma R&D and clinical samples"
+   },
+   {
+    "label": "Operating temperature",
+    "value": "Ambient down to −196°C (liquid nitrogen)"
+   },
+   {
+    "label": "Application method",
+    "value": "Automated and manual direct application"
+   },
+   {
+    "label": "Recommended product",
+    "value": "E-4812 / E-4802 cryogenic direct-apply labels"
+   }
   ],
   "zh": [
-   {"label": "识别对象", "value": "冻存管 —— 生物样本库、药企研发与临床样本"},
-   {"label": "作业温度", "value": "常温至 −196°C（液氮）"},
-   {"label": "贴标方式", "value": "自动与人工直接贴标"},
-   {"label": "推荐产品", "value": "E-4812 / E-4802 超低温直贴标签"}
+   {
+    "label": "识别对象",
+    "value": "冻存管 —— 生物样本库、药企研发与临床样本"
+   },
+   {
+    "label": "作业温度",
+    "value": "常温至 −196°C（液氮）"
+   },
+   {
+    "label": "贴标方式",
+    "value": "自动与人工直接贴标"
+   },
+   {
+    "label": "推荐产品",
+    "value": "E-4812 / E-4802 超低温直贴标签"
+   }
   ]
  },
  "problems": {
@@ -52,16 +79,40 @@
   },
   "points": {
    "en": [
-    {"label": "Direct cryogenic application", "text": "Applies to cold or frozen cryovials without thawing or warming the sample."},
-    {"label": "Liquid nitrogen storage", "text": "Maintains reliable, stable adhesion under deep-cold conditions — resists cracking, lifting and detachment."},
-    {"label": "Freeze-thaw & chemical resistance", "text": "Withstands repeated freeze-thaw cycling and wiping with common laboratory reagents."},
-    {"label": "Clear printability", "text": "Supports text, barcode and QR-code printing for reliable sample identification and traceability."}
+    {
+     "label": "Direct cryogenic application",
+     "text": "Applies to cold or frozen cryovials without thawing or warming the sample."
+    },
+    {
+     "label": "Liquid nitrogen storage",
+     "text": "Maintains reliable, stable adhesion under deep-cold conditions — resists cracking, lifting and detachment."
+    },
+    {
+     "label": "Freeze-thaw & chemical resistance",
+     "text": "Withstands repeated freeze-thaw cycling and wiping with common laboratory reagents."
+    },
+    {
+     "label": "Clear printability",
+     "text": "Supports text, barcode and QR-code printing for reliable sample identification and traceability."
+    }
    ],
    "zh": [
-    {"label": "超低温直贴", "text": "无需解冻回温，可直接贴附于低温冻存管。"},
-    {"label": "耐液氮存储", "text": "深冷环境下保持稳定粘接，不易开裂、翘边或脱落。"},
-    {"label": "耐冻融与化学试剂", "text": "适应反复冻融以及实验室常用试剂的擦拭。"},
-    {"label": "清晰可打印", "text": "支持字符、条码及二维码打印，便于样本追溯。"}
+    {
+     "label": "超低温直贴",
+     "text": "无需解冻回温，可直接贴附于低温冻存管。"
+    },
+    {
+     "label": "耐液氮存储",
+     "text": "深冷环境下保持稳定粘接，不易开裂、翘边或脱落。"
+    },
+    {
+     "label": "耐冻融与化学试剂",
+     "text": "适应反复冻融以及实验室常用试剂的擦拭。"
+    },
+    {
+     "label": "清晰可打印",
+     "text": "支持字符、条码及二维码打印，便于样本追溯。"
+    }
    ]
   }
  },
@@ -74,5 +125,6 @@
    "减少样本回温操作及深冷环境中的掉标风险。",
    "帮助生物样本库与实验室建立稳定、清晰的长期追溯体系。"
   ]
- }
+ },
+ "industry": "medical"
 }

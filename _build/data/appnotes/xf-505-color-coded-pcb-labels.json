@@ -2,7 +2,10 @@
  "slug": "xf-505-color-coded-pcb-labels",
  "source": "client brief — XF-505 green polyimide PCB color-coding & high-temperature traceability",
  "order": 4,
- "langs": ["en", "zh"],
+ "langs": [
+  "en",
+  "zh"
+ ],
  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/XF505",
  "image": "",
  "title": {
@@ -19,16 +22,40 @@
  },
  "info": {
   "en": [
-   {"label": "Facestock", "value": "1 mil (25 μm) light-green polyimide film"},
-   {"label": "Adhesive", "value": "Permanent acrylic pressure-sensitive adhesive"},
-   {"label": "Process", "value": "Reflow & wave soldering, spray/wipe cleaning"},
-   {"label": "Printing", "value": "Thermal transfer (high-temperature ribbon)"}
+   {
+    "label": "Facestock",
+    "value": "1 mil (25 μm) light-green polyimide film"
+   },
+   {
+    "label": "Adhesive",
+    "value": "Permanent acrylic pressure-sensitive adhesive"
+   },
+   {
+    "label": "Process",
+    "value": "Reflow & wave soldering, spray/wipe cleaning"
+   },
+   {
+    "label": "Printing",
+    "value": "Thermal transfer (high-temperature ribbon)"
+   }
   ],
   "zh": [
-   {"label": "面材", "value": "1 mil（25 μm）浅绿色聚酰亚胺薄膜"},
-   {"label": "胶粘剂", "value": "永久丙烯酸压敏胶"},
-   {"label": "适用制程", "value": "回流焊、波峰焊、喷淋/擦拭清洗"},
-   {"label": "打印方式", "value": "热转印（耐高温碳带）"}
+   {
+    "label": "面材",
+    "value": "1 mil（25 μm）浅绿色聚酰亚胺薄膜"
+   },
+   {
+    "label": "胶粘剂",
+    "value": "永久丙烯酸压敏胶"
+   },
+   {
+    "label": "适用制程",
+    "value": "回流焊、波峰焊、喷淋/擦拭清洗"
+   },
+   {
+    "label": "打印方式",
+    "value": "热转印（耐高温碳带）"
+   }
   ]
  },
  "problems": {
@@ -68,18 +95,48 @@
   },
   "points": {
    "en": [
-    {"label": "Color classification", "text": "Light-green facestock distinguishes models, batches, process routes and inspection status at a glance — fewer mix-ups."},
-    {"label": "High-temperature compatible", "text": "Polyimide film stays stable through reflow and wave soldering — less shrinkage, lifting or detachment."},
-    {"label": "Reliable adhesion", "text": "Permanent acrylic adhesive bonds firmly to common PCB surfaces for the long term."},
-    {"label": "Clear thermal-transfer print", "text": "Prints crisp barcodes, QR, SN and batch codes and stays scannable after processing."},
-    {"label": "Chemical resistant", "text": "Withstands flux, IPA and common PCB cleaning without blurring or lifting."}
+    {
+     "label": "Color classification",
+     "text": "Light-green facestock distinguishes models, batches, process routes and inspection status at a glance — fewer mix-ups."
+    },
+    {
+     "label": "High-temperature compatible",
+     "text": "Polyimide film stays stable through reflow and wave soldering — less shrinkage, lifting or detachment."
+    },
+    {
+     "label": "Reliable adhesion",
+     "text": "Permanent acrylic adhesive bonds firmly to common PCB surfaces for the long term."
+    },
+    {
+     "label": "Clear thermal-transfer print",
+     "text": "Prints crisp barcodes, QR, SN and batch codes and stays scannable after processing."
+    },
+    {
+     "label": "Chemical resistant",
+     "text": "Withstands flux, IPA and common PCB cleaning without blurring or lifting."
+    }
    ],
    "zh": [
-    {"label": "颜色分类", "text": "浅绿色面材一眼区分型号、批次、工艺路线与检验状态，减少混料误判。"},
-    {"label": "适应高温制程", "text": "聚酰亚胺面材在回流焊、波峰焊下保持稳定，降低收缩、起翘与脱落。"},
-    {"label": "稳定粘接", "text": "永久丙烯酸压敏胶牢固贴合常见 PCB 表面，长期保持稳定。"},
-    {"label": "清晰热转印", "text": "清晰打印条码、二维码、SN 码与批次信息，制程后仍可扫码。"},
-    {"label": "耐制程化学品", "text": "耐助焊剂、IPA 及常见 PCB 清洗，不晕墨、不脱落。"}
+    {
+     "label": "颜色分类",
+     "text": "浅绿色面材一眼区分型号、批次、工艺路线与检验状态，减少混料误判。"
+    },
+    {
+     "label": "适应高温制程",
+     "text": "聚酰亚胺面材在回流焊、波峰焊下保持稳定，降低收缩、起翘与脱落。"
+    },
+    {
+     "label": "稳定粘接",
+     "text": "永久丙烯酸压敏胶牢固贴合常见 PCB 表面，长期保持稳定。"
+    },
+    {
+     "label": "清晰热转印",
+     "text": "清晰打印条码、二维码、SN 码与批次信息，制程后仍可扫码。"
+    },
+    {
+     "label": "耐制程化学品",
+     "text": "耐助焊剂、IPA 及常见 PCB 清洗，不晕墨、不脱落。"
+    }
    ]
   }
  },
@@ -98,5 +155,7 @@
    "工艺路线颜色分类",
    "检验状态与质量分级"
   ]
- }
+ },
+ "industry": "pcb",
+ "banner_pos": "center bottom"
 }

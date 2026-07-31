@@ -1,88 +1,141 @@
 {
-  "slug": "vin-code-identification-tesla",
-  "source": "client application note — 2512BL Automotive VIN Labeling Solution",
-  "order": 2,
-  "langs": ["en", "zh"],
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-FRONT",
-  "image": "",
-  "gallery": [
-    {"img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-FRONT",
-     "caption": {"en": "Windshield VIN (front)", "zh": "挡风玻璃 VIN（前部）"}},
-    {"img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-UPPER%20B-PILLAR",
-     "caption": {"en": "Upper B-pillar", "zh": "B 柱上部"}},
-    {"img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-DOOR",
-     "caption": {"en": "Door jamb", "zh": "车门框"}},
-    {"img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-REAR%20DOOR",
-     "caption": {"en": "Rear door", "zh": "后车门"}},
-    {"img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-FRONT%20SEAT",
-     "caption": {"en": "Front seat", "zh": "前排座椅"}}
-  ],
-  "title": {
-    "en": "2512BL Automotive VIN Labeling Solution",
-    "zh": "2512BL 汽车 VIN 码标签解决方案"
+ "slug": "vin-code-identification-tesla",
+ "source": "client application note — E-2512BL Automotive VIN Labeling Solution",
+ "order": 2,
+ "langs": [
+  "en",
+  "zh"
+ ],
+ "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-FRONT",
+ "image": "",
+ "gallery": [
+  {
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-FRONT",
+   "caption": {
+    "en": "Windshield VIN (front)",
+    "zh": "挡风玻璃 VIN（前部）"
+   }
   },
-  "subtitle": {
-    "en": "Laser-markable 2512BL labels for durable, tamper-resistant VIN identification across the vehicle.",
-    "zh": "2512BL 激光可刻标签 —— 全车耐久、防篡改的 VIN 标识方案。"
+  {
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-UPPER%20B-PILLAR",
+   "caption": {
+    "en": "Upper B-pillar",
+    "zh": "B 柱上部"
+   }
   },
-  "seo_desc": {
-    "en": "How the 2512BL laser-markable VIN label delivers durable, tamper-resistant vehicle identification across the windshield, B-pillar, door jamb, rear door and under-seat locations — supporting regulatory marking and lifecycle traceability.",
-    "zh": "2512BL 激光可刻 VIN 标签如何在挡风玻璃、B 柱、门框、后车门与座椅下方等部位提供耐久、防篡改的车辆识别，支撑法规标识与全生命周期追溯。"
+  {
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-DOOR",
+   "caption": {
+    "en": "Door jamb",
+    "zh": "车门框"
+   }
   },
-  "info": {
-    "en": [
-      {"label": "Identification target", "value": "Vehicle Identification Number (VIN)"},
-      {"label": "Typical locations", "value": "Windshield area, upper B-pillar, door jamb, rear door area, and beneath the front seat"},
-      {"label": "Recommended product", "value": "2512BL laser-markable VIN label"},
-      {"label": "Primary functions", "value": "Vehicle identification, regulatory marking, tamper resistance, and lifecycle traceability"}
-    ],
-    "zh": [
-      {"label": "识别对象", "value": "车辆识别码（VIN）"},
-      {"label": "典型部位", "value": "挡风玻璃区域、B 柱上部、门框、后车门区域、前排座椅下方"},
-      {"label": "推荐产品", "value": "2512BL 激光可刻 VIN 标签"},
-      {"label": "主要功能", "value": "车辆识别、法规标识、防篡改、全生命周期追溯"}
-    ]
+  {
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-REAR%20DOOR",
+   "caption": {
+    "en": "Rear door",
+    "zh": "后车门"
+   }
   },
-  "problems": {
-    "intro": {
-      "en": [
-        "A VIN is the unique identity code of a vehicle and must remain readable throughout manufacturing, registration, insurance inspection, maintenance, ownership transfer, and accident verification.",
-        "Conventional printed labels may fade, wear, or become damaged after long-term exposure to sunlight, temperature changes, moisture, cleaning agents, and abrasion. VIN labels must therefore provide durable adhesion, stable readability, and resistance to removal or unauthorized replacement across different vehicle locations."
-      ],
-      "zh": [
-        "VIN 是车辆的唯一身份代码，需在制造、上牌、保险查验、维修保养、过户与事故鉴定等全过程中保持清晰可读。",
-        "普通印刷标签在长期日晒、温度变化、潮湿、清洗剂与磨损作用下可能褪色、磨损或破损。因此 VIN 标签需要在车辆不同部位提供牢固粘接、稳定可读，并具备抗撕除、防止未经授权替换的能力。"
-      ]
-    }
-  },
-  "solution": {
-    "intro": {
-      "en": [
-        "The 2512BL is designed for laser marking of VIN characters, barcodes, and QR codes. Because the information is created by laser rather than ink printing, the mark is less likely to fade, smear, or wear away.",
-        "The material supports variable data marking for one-vehicle-one-code identification and can be integrated with production databases, scanning systems, and vehicle records. When combined with a tamper-resistant label construction, attempted removal can visibly damage the label or marking, helping reduce the risk of transfer and VIN manipulation."
-      ],
-      "zh": [
-        "2512BL 专为 VIN 字符、条码与二维码的激光刻印设计。信息由激光生成而非油墨打印，不易褪色、晕染或磨损。",
-        "材料支持可变数据刻印，实现一车一码，可与生产数据库、扫码系统与车辆档案对接。配合防篡改结构，撕除时会明显破坏标签或标识，有助降低转移与 VIN 篡改风险。"
-      ]
-    }
-  },
-  "advantages": {
-    "en": [
-      "Durable laser marking: clear identification without ink fading or smudging.",
-      "Variable data capability: supports VINs, barcodes, and QR codes.",
-      "Tamper resistance: helps prevent unauthorized removal and label transfer.",
-      "Long-term reliability: suited to automotive temperature, humidity, light, and abrasion conditions.",
-      "Traceability support: connects vehicle data with production, inspection, and after-sales systems.",
-      "Multiple-location compatibility: suitable for windshield, B-pillar, door jamb, and under-seat VIN applications."
-    ],
-    "zh": [
-      "激光刻印耐久：标识清晰，不褪色、不晕染。",
-      "可变数据能力：支持 VIN、条码与二维码。",
-      "防篡改：有助防止未经授权撕除与标签转移。",
-      "长期可靠：适应汽车温度、湿度、光照与磨损工况。",
-      "支持追溯：打通车辆数据与生产、检验、售后系统。",
-      "多部位适配：适用于挡风玻璃、B 柱、门框及座椅下方 VIN。"
-    ]
+  {
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/TESLA%20VIN%20CODE-FRONT%20SEAT",
+   "caption": {
+    "en": "Front seat",
+    "zh": "前排座椅"
+   }
   }
+ ],
+ "title": {
+  "en": "E-2512BL Automotive VIN Labeling Solution",
+  "zh": "E-2512BL 汽车 VIN 码标签解决方案"
+ },
+ "subtitle": {
+  "en": "Laser-markable E-2512BL labels for durable, tamper-resistant VIN identification across the vehicle.",
+  "zh": "E-2512BL 激光可刻标签 —— 全车耐久、防篡改的 VIN 标识方案。"
+ },
+ "seo_desc": {
+  "en": "How the E-2512BL laser-markable VIN label delivers durable, tamper-resistant vehicle identification across the windshield, B-pillar, door jamb, rear door and under-seat locations — supporting regulatory marking and lifecycle traceability.",
+  "zh": "E-2512BL 激光可刻 VIN 标签如何在挡风玻璃、B 柱、门框、后车门与座椅下方等部位提供耐久、防篡改的车辆识别，支撑法规标识与全生命周期追溯。"
+ },
+ "info": {
+  "en": [
+   {
+    "label": "Identification target",
+    "value": "Vehicle Identification Number (VIN)"
+   },
+   {
+    "label": "Typical locations",
+    "value": "Windshield area, upper B-pillar, door jamb, rear door area, and beneath the front seat"
+   },
+   {
+    "label": "Recommended product",
+    "value": "E-2512BL laser-markable VIN label"
+   },
+   {
+    "label": "Primary functions",
+    "value": "Vehicle identification, regulatory marking, tamper resistance, and lifecycle traceability"
+   }
+  ],
+  "zh": [
+   {
+    "label": "识别对象",
+    "value": "车辆识别码（VIN）"
+   },
+   {
+    "label": "典型部位",
+    "value": "挡风玻璃区域、B 柱上部、门框、后车门区域、前排座椅下方"
+   },
+   {
+    "label": "推荐产品",
+    "value": "E-2512BL 激光可刻 VIN 标签"
+   },
+   {
+    "label": "主要功能",
+    "value": "车辆识别、法规标识、防篡改、全生命周期追溯"
+   }
+  ]
+ },
+ "problems": {
+  "intro": {
+   "en": [
+    "A VIN is the unique identity code of a vehicle and must remain readable throughout manufacturing, registration, insurance inspection, maintenance, ownership transfer, and accident verification.",
+    "Conventional printed labels may fade, wear, or become damaged after long-term exposure to sunlight, temperature changes, moisture, cleaning agents, and abrasion. VIN labels must therefore provide durable adhesion, stable readability, and resistance to removal or unauthorized replacement across different vehicle locations."
+   ],
+   "zh": [
+    "VIN 是车辆的唯一身份代码，需在制造、上牌、保险查验、维修保养、过户与事故鉴定等全过程中保持清晰可读。",
+    "普通印刷标签在长期日晒、温度变化、潮湿、清洗剂与磨损作用下可能褪色、磨损或破损。因此 VIN 标签需要在车辆不同部位提供牢固粘接、稳定可读，并具备抗撕除、防止未经授权替换的能力。"
+   ]
+  }
+ },
+ "solution": {
+  "intro": {
+   "en": [
+    "The E-2512BL is designed for laser marking of VIN characters, barcodes, and QR codes. Because the information is created by laser rather than ink printing, the mark is less likely to fade, smear, or wear away.",
+    "The material supports variable data marking for one-vehicle-one-code identification and can be integrated with production databases, scanning systems, and vehicle records. When combined with a tamper-resistant label construction, attempted removal can visibly damage the label or marking, helping reduce the risk of transfer and VIN manipulation."
+   ],
+   "zh": [
+    "E-2512BL 专为 VIN 字符、条码与二维码的激光刻印设计。信息由激光生成而非油墨打印，不易褪色、晕染或磨损。",
+    "材料支持可变数据刻印，实现一车一码，可与生产数据库、扫码系统与车辆档案对接。配合防篡改结构，撕除时会明显破坏标签或标识，有助降低转移与 VIN 篡改风险。"
+   ]
+  }
+ },
+ "advantages": {
+  "en": [
+   "Durable laser marking: clear identification without ink fading or smudging.",
+   "Variable data capability: supports VINs, barcodes, and QR codes.",
+   "Tamper resistance: helps prevent unauthorized removal and label transfer.",
+   "Long-term reliability: suited to automotive temperature, humidity, light, and abrasion conditions.",
+   "Traceability support: connects vehicle data with production, inspection, and after-sales systems.",
+   "Multiple-location compatibility: suitable for windshield, B-pillar, door jamb, and under-seat VIN applications."
+  ],
+  "zh": [
+   "激光刻印耐久：标识清晰，不褪色、不晕染。",
+   "可变数据能力：支持 VIN、条码与二维码。",
+   "防篡改：有助防止未经授权撕除与标签转移。",
+   "长期可靠：适应汽车温度、湿度、光照与磨损工况。",
+   "支持追溯：打通车辆数据与生产、检验、售后系统。",
+   "多部位适配：适用于挡风玻璃、B 柱、门框及座椅下方 VIN。"
+  ]
+ },
+ "industry": "auto"
 }
