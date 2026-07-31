@@ -517,13 +517,13 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 
 <style>
 .nwrap{max-width:820px;margin:0 auto;padding:0 22px}
-.nhero{position:relative;overflow:hidden;color:#fff;min-height:240px;display:flex;align-items:flex-end;background:#12224b}
-.nhero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
-.nhero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(9,20,48,.9),rgba(20,60,150,.5) 68%,transparent)}
+.nhero{position:relative;overflow:hidden;color:#fff;min-height:320px;display:flex;align-items:center;background:#12224b;border-bottom:2px solid #fff}
+.nhero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center right;opacity:1}
+.nhero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,60,150,.90) 16%,rgba(20,60,150,.50) 54%,rgba(20,60,150,.08))}
 .nhero .in{position:relative;z-index:2;max-width:1080px;margin:0 auto;width:100%;padding:34px 24px}
-.nhero .k{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8fe36a}
-.nhero h1{color:#fff;font-size:clamp(24px,4vw,36px);margin:10px 0 8px;line-height:1.16;max-width:24em}
-.nhero .sub{color:#dbe6ff;font-size:17px;margin:0;max-width:40em}
+.nhero .k{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8fe063}
+.nhero h1{color:#fff;font-family:var(--sans);font-weight:800;font-size:40px;letter-spacing:-.01em;margin:2px 0 10px;line-height:1.12;max-width:24em}
+.nhero .sub{color:#eef3ff;font-size:18px;font-weight:700;margin:0;max-width:40em}
 .ntags{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
 .ntag{font-size:12px;font-weight:700;color:#1A56DB;background:#eef3fc;padding:4px 11px;border-radius:999px}
 .art{max-width:760px;margin:0 auto;padding:34px 22px}
@@ -542,9 +542,9 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .ncard .cs{font-size:13.5px;color:#5a6884;line-height:1.5;flex:1}
 .ncard .go{font-size:13.5px;font-weight:800;color:#41A62A}
 @media (max-width:760px){
-  .nhero{min-height:200px}
+  .nhero{min-height:250px}
   .nhero .in{padding:24px 18px}
-  .nhero h1{font-size:23px}
+  .nhero h1{font-size:27px}
   .nhero .sub{font-size:15px}
   .art{padding:22px 18px}
   .art .lead{font-size:15.5px;line-height:1.66;margin:0 0 16px}
