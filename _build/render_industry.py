@@ -207,8 +207,10 @@ def build_lang(data, lang):
     banner = data.get("banner_img", "")
     bg = ('<img class="bg" src="%s" alt="" loading="eager" onerror="this.style.display=\'none\'">' % esc(banner)) if banner else ""
     hero = ('%s<section class="wchero">%s<div class="in">'
-            '<div class="eye">%s</div><h1>%s</h1><p class="slog">%s</p></div></section>') % (
-        CSS, bg, esc(L(data["hero"]["eyebrow"], lang)), esc(title), esc(L(data["hero"]["slogan"], lang)))
+            '<div class="eye">%s</div><h1>%s</h1><p class="slog">%s</p>'
+            '<div style="margin-top:16px">%s</div></div></section>') % (
+        CSS, bg, esc(L(data["hero"]["eyebrow"], lang)), esc(title), esc(L(data["hero"]["slogan"], lang)),
+        hp.hero_cta(lang))
 
     overview = "".join("<p>%s</p>" % esc(p) for p in L(data["overview"], lang))
     body = ('<section class="wcsec wcov"><div class="wceye">%s</div><h2>%s</h2>%s</section>'

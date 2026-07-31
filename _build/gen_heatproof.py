@@ -309,6 +309,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .hbanner .hbody{font-size:15px;color:#c7d3ec;line-height:1.65;max-width:46em;margin-bottom:22px}
 .hbanner .htab{position:absolute;top:0;right:0;z-index:3;background:var(--green);color:#fff;font-size:11px;font-weight:800;letter-spacing:.12em;padding:8px 20px;border-bottom-left-radius:12px}
 .hbanner .btns{display:flex;gap:12px;flex-wrap:wrap}
+.hcta{display:inline-block;background:#41A62A;color:#fff;font-family:var(--sans);font-weight:800;font-size:14.5px;padding:12px 24px;border-radius:9px;text-decoration:none;border:0;line-height:1.2}
+.hcta:hover{background:#358B22;color:#fff}
 .hbanner .btns .btn.sec{border-color:rgba(255,255,255,.6);color:#fff}
 .hbanner .btns .btn.sec:hover{background:#fff;color:var(--blue-deep)}
 @media(max-width:820px){.hbanner{min-height:250px}.hbanner h1{font-size:27px}.hbanner .hsub{font-size:15.5px}.hbanner .wrap{padding:34px 24px}}
@@ -1527,15 +1529,19 @@ HOME_BG = [BANNER_HOME, "", "", "", ""]
 # section_hero idx: 0=Products, 1=Applications, 2=Insights, 3=Service
 SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
 
+def hero_cta(lang):
+    # ONE unified banner contact button, identical everywhere (green · Talk to us).
+    return '<a class="hcta" href="%s">%s</a>' % (
+        Lx(lang, "/contact/"),
+        esc(P(lang, "Talk to us", "联系我们", "Liên hệ với chúng tôi", "ติดต่อเรา")))
+
 def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
     st = ' style="background-image:url(%s)"' % esc(bg) if bg else ""
-    # Every part except the headline + slogan is optional. Pass empty eyebrow /
-    # body / b1 to render a minimal hero (Headline + Slogan only).
+    # Every part except the headline + slogan is optional; the contact button is
+    # the single unified hero CTA on every banner (b1/b2 params are ignored).
     eyebrow_html = ('<div class="eyebrow">%s</div>' % esc(eyebrow)) if eyebrow else ""
     body_html = ('<p class="hbody">%s</p>' % esc(body)) if body else ""
-    b2_html = ('<a class="btn sec" href="%s">%s</a>' % (linkfn(lang, b2u), esc(b2))) if b2 else ""
-    btns_html = ('<div class="btns"><a class="btn pri" href="%s">%s</a>%s</div>' % (
-        linkfn(lang, b1u), esc(b1), b2_html)) if b1 else ""
+    btns_html = '<div class="btns">%s</div>' % hero_cta(lang)
     return ('<section class="hbanner"%s><div class="wrap">'
             '%s<h1>%s</h1>'
             '<p class="hsub">%s</p>%s%s</div></section>') % (

@@ -85,9 +85,9 @@ def build_article(a, lang):
     bg = ('<img class="bg" src="%s" alt="" loading="eager" onerror="this.style.display=\'none\'">' % esc(banner)) if banner else ""
     tags = "".join('<span class="ntag">%s</span>' % esc(t) for t in L(a.get("tags", {}), lang))
     hero = ('%s<section class="nhero">%s<div class="in"><div class="k">%s</div>'
-            '<h1>%s</h1><p class="sub">%s</p>%s</div></section>') % (
+            '<h1>%s</h1><p class="sub">%s</p>%s<div style="margin-top:16px">%s</div></div></section>') % (
         CSS, bg, esc(ui["news"]), esc(title), esc(L(a.get("subtitle", {}), lang)),
-        ('<div class="ntags">%s</div>' % tags) if tags else "")
+        ('<div class="ntags">%s</div>' % tags) if tags else "", hp.hero_cta(lang))
     body = '<div class="art"><p class="lead">%s</p>' % esc(L(a.get("lead", {}), lang))
     for sec in L(a.get("sections", {}), lang):
         if sec.get("h"):
