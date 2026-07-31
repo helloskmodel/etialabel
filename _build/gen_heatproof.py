@@ -757,7 +757,7 @@ def footer_html(lang):
 <div class="fg">
 <div><h5>%s</h5><ul>%s</ul></div>
 <div><h5>%s</h5><ul>%s</ul></div>
-<div><h5>%s</h5><a class="email" href="mailto:label@etia-tech.com">label@etia-tech.com</a><br><br>
+<div><h5>%s</h5><a class="email" href="mailto:etialabel@etia-tech.com">etialabel@etia-tech.com</a><br><br>
 Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)">%s</span></div>
 </div>""" % (heads[0], nav, heads[1], legal, heads[2], tag)) + """
 <div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span><span><a href="%s">%s</a> &nbsp; <a href="%s">%s</a></span></div>
@@ -1194,7 +1194,7 @@ def build_outdoor_energy(lang):
 ORG_JSONLD = {"@context":"https://schema.org","@type":"Organization","name":"ETIA Label",
     "url":SITE,"slogan":"Where materials meet applications.",
     "description":"Supplier and application-support partner for durable, specialty industrial labels — from ultra-high-temperature to cryogenic, chemical and tamper-evident identification.",
-    "contactPoint":[{"@type":"ContactPoint","contactType":"sales","email":"label@etia-tech.com"}]}
+    "contactPoint":[{"@type":"ContactPoint","contactType":"sales","email":"etialabel@etia-tech.com"}]}
 
 # four pillars: (verb, sub-label, description)
 HOME_WHY = {
@@ -1359,7 +1359,7 @@ def home_footer(lang):
                   [("/privacy/","Privacy Policy"),("/cookies/","Cookie Policy"),("/terms/","Terms of Use")])
     return ('<footer><div class="wrap"><div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%%20LOGO.jpg" alt="ETIA Label"></div>'
             '<div class="fg"><div><h5>%s</h5><ul>%s</ul></div><div><h5>%s</h5><ul>%s</ul></div>'
-            '<div><h5>%s</h5><a class="email" href="mailto:label@etia-tech.com">label@etia-tech.com</a><br><br>'
+            '<div><h5>%s</h5><a class="email" href="mailto:etialabel@etia-tech.com">etialabel@etia-tech.com</a><br><br>'
             'Shanghai · Hong Kong · Bangkok · Bac Ninh</div></div>'
             '<div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span></div></div></footer>') % (
         esc(nh),navl,esc(lh),legal,esc(ch))
@@ -1643,7 +1643,7 @@ function etaIndSlide(d){var c=document.getElementById('indcar');if(c)c.scrollBy(
 function etaSvcSlide(d){var c=document.getElementById('svccar');if(c)c.scrollBy({left:d*Math.min(628,Math.max(300,c.clientWidth*0.85)),behavior:'smooth'});}
 function etaSample(e){e.preventDefault();var g=function(i){var el=document.getElementById(i);return el?el.value:'';};
 var b='Email: '+g('fs-email')+'%%0D%%0APhone: '+g('fs-phone')+'%%0D%%0AAddress: '+g('fs-addr')+'%%0D%%0A%%0D%%0APlease send free samples.';
-window.location.href='mailto:label@etia-tech.com?subject=Free%%20Sample%%20Request&body='+b;return false;}</script>
+window.location.href='mailto:etialabel@etia-tech.com?subject=Free%%20Sample%%20Request&body='+b;return false;}</script>
 </body></html>""" % (lang,esc(T["meta_title"]),esc(T["meta_desc"]),canonical,home_hreflang(path),hero_preload,esc(T["meta_title"]),CSS,schema_js,
         ("/" if lang=="en" else HL_PREFIX[lang]+"/"),home_nav(lang),body,home_footer(lang))
     outdir=os.path.join(ROOT,HL_PREFIX[lang].strip("/")) if HL_PREFIX[lang] else ROOT
@@ -1766,7 +1766,7 @@ def build_contact(lang):
     zh=(lang=="zh")
     offices=[
       ("Shanghai","上海","China","中国","+86 151 2119 7091 · 400 990 8448"),
-      ("Hong Kong","香港","ETIA-TECH (ASIA) Co., Limited","ETIA-TECH (ASIA) Co., Limited","label@etia-tech.com"),
+      ("Hong Kong","香港","ETIA-TECH (ASIA) Co., Limited","ETIA-TECH (ASIA) Co., Limited","etialabel@etia-tech.com"),
       ("Bangkok","曼谷","Thailand","泰国","+66 811 746 947"),
       ("Bac Ninh","北宁","Vietnam","越南","+84 344 590 091"),
     ]
@@ -1796,9 +1796,9 @@ def build_contact(lang):
       'if(!nm||!em||!ph){alert("'+lb("Please fill in name, email and phone.","请填写姓名、邮箱和电话。")+'");return false;}'
       'var s="ETIA enquiry"+(g("product")?" - "+g("product"):"");'
       'var b="Name: "+nm+"\\nCompany: "+g("company")+"\\nEmail: "+em+"\\nPhone: "+ph+"\\nProduct: "+g("product")+"\\n\\n"+g("message");'
-      'window.location.href="mailto:label@etia-tech.com?subject="+encodeURIComponent(s)+"&body="+encodeURIComponent(b);return false;}</script>')
+      'window.location.href="mailto:etialabel@etia-tech.com?subject="+encodeURIComponent(s)+"&body="+encodeURIComponent(b);return false;}</script>')
     body=('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div>%s%s'
-          '<p class="muted" style="font-size:13px;margin-top:10px">%s <a href="mailto:label@etia-tech.com">label@etia-tech.com</a></p></div></section>'
+          '<p class="muted" style="font-size:13px;margin-top:10px">%s <a href="mailto:etialabel@etia-tech.com">etialabel@etia-tech.com</a></p></div></section>'
           '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>')%(
         lb("Tell us your application","告诉我们您的应用"), esc(ask), form, form_js,
         lb("Prefer email? Write to","更习惯邮件？请联系"),
@@ -1806,8 +1806,8 @@ def build_contact(lang):
     crumb=[("Home","/"),("Contact","/contact/")]
     write(lang,"/contact/",page(lang,"/contact/",
         ("联系 ETIA | ETIA" if zh else "Contact ETIA | ETIA"),
-        ("联系 ETIA:上海 · 香港 · 曼谷 · 北宁 · label@etia-tech.com。提供工况,我们匹配材料并寄样。" if zh
-         else "Contact ETIA — Shanghai · Hong Kong · Bangkok · Bac Ninh · label@etia-tech.com. Share your application and we'll match the material and send samples."),
+        ("联系 ETIA:上海 · 香港 · 曼谷 · 北宁 · etialabel@etia-tech.com。提供工况,我们匹配材料并寄样。" if zh
+         else "Contact ETIA — Shanghai · Hong Kong · Bangkok · Bac Ninh · etialabel@etia-tech.com. Share your application and we'll match the material and send samples."),
         ("联系我们" if zh else "Contact ETIA"),
         ("提供工况,我们匹配材料并寄样验证。" if zh else "Share your application — we'll match the material and validate by sample."),
         body, crumb, active="contact"))
@@ -1849,7 +1849,7 @@ def build_tech(lang):
 
 SERVICE_OFFICES=[
   ("Shanghai","上海","+86 151 2119 7091 · 400 990 8448"),
-  ("Hong Kong","香港","label@etia-tech.com"),
+  ("Hong Kong","香港","etialabel@etia-tech.com"),
   ("Bangkok","曼谷","+66 811 746 947"),
   ("Bac Ninh","北宁","+84 344 590 091"),
 ]
@@ -1927,7 +1927,7 @@ def build_service(lang):
                "function etaScroll(b,d){var r=b.closest('.apptabsrow').querySelector('.apptabs');r.scrollBy({left:d*260,behavior:'smooth'});}"
                "function etaMail(f){var g=function(n){var e=f.elements[n];return e?e.value:'';};"
                "var b='Name: '+g('name')+'%0D%0ACompany: '+g('company')+'%0D%0APhone: '+g('phone')+'%0D%0AEmail: '+g('email')+'%0D%0A%0D%0A'+g('msg');"
-               "window.location.href='mailto:label@etia-tech.com?subject='+encodeURIComponent('Website enquiry')+'&body='+encodeURIComponent(b);return false;}</script>")
+               "window.location.href='mailto:etialabel@etia-tech.com?subject='+encodeURIComponent('Website enquiry')+'&body='+encodeURIComponent(b);return false;}</script>")
     commit_sec=('<section class="blk"><div class="wrap"><h2>%s</h2>'
                 '<p class="lede" style="max-width:64em;margin-bottom:26px">%s</p>'
                 '<div class="appmod svc">'
@@ -1974,7 +1974,7 @@ def build_service(lang):
              "* Gửi email cho chúng tôi để được phản hồi nhanh — đội ngũ của chúng tôi thường trả lời trong vòng một ngày làm việc.",
              "* ส่งอีเมลถึงเราเพื่อการตอบกลับที่รวดเร็ว — ทีมของเรามักตอบกลับภายในหนึ่งวันทำการ"))
     # form's side column: a short email note (regional phones now live in the cards above)
-    phones=('<div class="cph"><b>%s</b><span><a class="email" href="mailto:label@etia-tech.com">label@etia-tech.com</a></span></div>'
+    phones=('<div class="cph"><b>%s</b><span><a class="email" href="mailto:etialabel@etia-tech.com">etialabel@etia-tech.com</a></span></div>'
             '<div class="cph"><b>%s</b><span>%s</span></div>')%(
         P(lang,"Email","邮箱","Email","อีเมล"),
         P(lang,"Response time","响应时间","Thời gian phản hồi","เวลาตอบกลับ"),
@@ -2183,7 +2183,7 @@ def _legal_page(lang, path, title_en, title_zh, desc_en, desc_zh, secs_en, secs_
     if lang=="en": track(path,"core")
 
 def build_legal(lang):
-    CONTACT="label@etia-tech.com"
+    CONTACT="etialabel@etia-tech.com"
     _legal_page(lang,"/privacy/","Privacy Policy","隐私政策",
         "How ETIA collects, uses and protects information submitted through this website.",
         "ETIA 如何收集、使用并保护通过本网站提交的信息。",
