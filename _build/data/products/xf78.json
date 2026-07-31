@@ -1,0 +1,235 @@
+{
+  "slug": "xf78",
+  "source": "client datasheets — Polyonics XF-781 / XF-782 / XF-784 ESD-safe polyimide",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner": "",
+  "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-XF78",
+  "diagram": {
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-XF78-ESD%20LAYER",
+    "title": {
+      "en": "Construction",
+      "zh": "产品结构",
+      "vi": "Cấu tạo",
+      "th": "โครงสร้าง"
+    },
+    "caption": {
+      "en": "ESD-safe layer construction: static-dissipative topcoat / polyimide film / low-charging acrylic adhesive / low-charging liner.",
+      "zh": "防静电层结构：静电耗散涂层 / 聚酰亚胺面材 / 低起电丙烯酸胶 / 低起电底纸。",
+      "vi": "Cấu tạo lớp chống tĩnh điện: lớp phủ tiêu tán tĩnh / màng polyimide / keo acrylic ít tích điện / lớp lót ít tích điện.",
+      "th": "โครงสร้างชั้นป้องกันไฟฟ้าสถิต: สารเคลือบกระจายประจุ / ฟิล์มโพลีอิไมด์ / กาวอะคริลิกประจุต่ำ / ไลเนอร์ประจุต่ำ"
+    }
+  },
+  "title": {
+    "en": "XF78 Series — Polyonics ESD-Safe Polyimide PCB Labels",
+    "zh": "XF78 系列 · Polyonics 防静电聚酰亚胺 PCB 标签",
+    "vi": "XF78 Series · Nhãn PCB polyimide chống tĩnh điện Polyonics",
+    "th": "XF78 Series · ฉลาก PCB โพลีอิไมด์ป้องกันไฟฟ้าสถิต Polyonics"
+  },
+  "tagline": {
+    "en": "Imported Polyonics static-dissipative polyimide labels for ESD-sensitive circuit boards — thermal-transfer printable, dimensionally stable to 150°C.",
+    "zh": "Polyonics 原装进口静电耗散型聚酰亚胺标签，适用于静电敏感电路板 —— 可热转印，尺寸稳定耐 150°C。",
+    "vi": "Nhãn polyimide tiêu tán tĩnh điện nhập khẩu Polyonics cho bo mạch nhạy ESD — in chuyển nhiệt, ổn định kích thước tới 150°C.",
+    "th": "ฉลากโพลีอิไมด์กระจายประจุนำเข้า Polyonics สำหรับแผงวงจรที่ไวต่อ ESD — พิมพ์ถ่ายเทความร้อนได้ เสถียรมิติถึง 150°C"
+  },
+  "positioning": {
+    "en": "The Polyonics XF78 series are ESD-safe polyimide (PI) labels for identifying static-sensitive circuit boards. Each construction pairs a polyimide film with a low-charging acrylic pressure-sensitive adhesive, a static-dissipative white topcoat and a low-charging liner, all engineered for thermal-transfer printing. Surface resistance is controlled between 10⁸ and 10¹¹ ohms, and the labels comply with ANSI/ESD S20.20, IEC 61340 and ANSI/ESD S541 for use in ESD-protected areas (EPA).",
+    "zh": "Polyonics XF78 系列是面向静电敏感电路板标识的防静电（ESD-Safe）聚酰亚胺（PI）标签。采用聚酰亚胺面材、低起电丙烯酸压敏胶、静电耗散白色涂层与低起电底纸，专为热转印打印设计。表面电阻控制在 10⁸–10¹¹ 欧姆，符合 ANSI/ESD S20.20、IEC 61340 及 ANSI/ESD S541，适用于静电防护区（EPA）。",
+    "vi": "Dòng Polyonics XF78 là nhãn polyimide (PI) chống tĩnh điện (ESD-Safe) để nhận diện bo mạch nhạy tĩnh điện. Mỗi cấu tạo gồm màng polyimide, keo acrylic ít tích điện, lớp phủ trắng tiêu tán tĩnh điện và lớp lót ít tích điện, thiết kế cho in chuyển nhiệt. Điện trở bề mặt được kiểm soát 10⁸–10¹¹ ohm, tuân thủ ANSI/ESD S20.20, IEC 61340 và ANSI/ESD S541 cho khu vực bảo vệ tĩnh điện (EPA).",
+    "th": "ซีรีส์ Polyonics XF78 เป็นฉลากโพลีอิไมด์ (PI) ป้องกันไฟฟ้าสถิต (ESD-Safe) สำหรับการระบุแผงวงจรที่ไวต่อไฟฟ้าสถิต แต่ละโครงสร้างประกอบด้วยฟิล์มโพลีอิไมด์ กาวอะคริลิกประจุต่ำ สารเคลือบสีขาวกระจายประจุ และไลเนอร์ประจุต่ำ ออกแบบสำหรับการพิมพ์ถ่ายเทความร้อน ความต้านทานพื้นผิวควบคุมที่ 10⁸–10¹¹ โอห์ม และเป็นไปตาม ANSI/ESD S20.20, IEC 61340 และ ANSI/ESD S541 สำหรับพื้นที่ป้องกันไฟฟ้าสถิต (EPA)"
+  },
+  "challenges": {},
+  "features": {
+    "en": [
+      "ESD-safe, static-dissipative construction — surface resistance controlled 10⁸–10¹¹ Ω",
+      "Low-charging acrylic adhesive and low-charging liner minimize static generation",
+      "Static-dissipative white topcoat for crisp thermal-transfer barcodes, QR and serial numbers",
+      "Polyimide film — dimensionally stable at high temperature (100 hrs @ 150°C)",
+      "Resists common PCB cleaning media (IPA, saponifiers, terpenes)",
+      "Complies with ANSI/ESD S20.20, IEC 61340 and ANSI/ESD S541 for ESD-protected areas (EPA)"
+    ],
+    "zh": [
+      "防静电、静电耗散结构 —— 表面电阻控制在 10⁸–10¹¹ Ω",
+      "低起电丙烯酸胶与低起电底纸，最大限度降低静电产生",
+      "静电耗散白色涂层，热转印条码、二维码与 SN 码清晰锐利",
+      "聚酰亚胺面材 —— 高温尺寸稳定（150°C 100 小时）",
+      "耐常见 PCB 清洗介质（IPA、皂化剂、萜烯类）",
+      "符合 ANSI/ESD S20.20、IEC 61340 及 ANSI/ESD S541，适用于静电防护区（EPA）"
+    ],
+    "vi": [
+      "Cấu tạo chống tĩnh điện, tiêu tán tĩnh — điện trở bề mặt kiểm soát 10⁸–10¹¹ Ω",
+      "Keo acrylic và lớp lót ít tích điện giảm thiểu phát sinh tĩnh điện",
+      "Lớp phủ trắng tiêu tán tĩnh cho mã vạch, QR và số sê-ri in chuyển nhiệt sắc nét",
+      "Màng polyimide — ổn định kích thước ở nhiệt độ cao (100 giờ @ 150°C)",
+      "Chịu các dung dịch làm sạch PCB thông dụng (IPA, saponifier, terpene)",
+      "Tuân thủ ANSI/ESD S20.20, IEC 61340 và ANSI/ESD S541 cho khu vực bảo vệ tĩnh điện (EPA)"
+    ],
+    "th": [
+      "โครงสร้างป้องกันไฟฟ้าสถิต กระจายประจุ — ความต้านทานพื้นผิวควบคุม 10⁸–10¹¹ Ω",
+      "กาวอะคริลิกและไลเนอร์ประจุต่ำ ลดการเกิดไฟฟ้าสถิต",
+      "สารเคลือบสีขาวกระจายประจุ ให้บาร์โค้ด QR และหมายเลขซีเรียลพิมพ์ถ่ายเทความร้อนคมชัด",
+      "ฟิล์มโพลีอิไมด์ — เสถียรมิติที่อุณหภูมิสูง (100 ชม. @ 150°C)",
+      "ทนสื่อทำความสะอาด PCB ทั่วไป (IPA, saponifier, terpene)",
+      "เป็นไปตาม ANSI/ESD S20.20, IEC 61340 และ ANSI/ESD S541 สำหรับพื้นที่ป้องกันไฟฟ้าสถิต (EPA)"
+    ]
+  },
+  "benefits": {},
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Model",
+        "Film",
+        "Finish",
+        "Surface resistance"
+      ],
+      "zh": [
+        "型号",
+        "面材",
+        "表面",
+        "表面电阻"
+      ],
+      "vi": [
+        "Mã",
+        "Màng",
+        "Bề mặt",
+        "Điện trở bề mặt"
+      ],
+      "th": [
+        "รุ่น",
+        "ฟิล์ม",
+        "พื้นผิว",
+        "ความต้านทานพื้นผิว"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          "XF-781",
+          {
+            "en": "1 mil (25µm) PI",
+            "zh": "1 mil（25µm）PI",
+            "vi": "PI 1 mil (25µm)",
+            "th": "PI 1 mil (25µm)"
+          },
+          {
+            "en": "High-gloss white",
+            "zh": "高光白",
+            "vi": "Trắng bóng cao",
+            "th": "สีขาวเงาสูง"
+          },
+          "10⁸–10¹¹ Ω"
+        ]
+      },
+      {
+        "cells": [
+          "XF-782",
+          {
+            "en": "2 mil (50µm) PI",
+            "zh": "2 mil（50µm）PI",
+            "vi": "PI 2 mil (50µm)",
+            "th": "PI 2 mil (50µm)"
+          },
+          {
+            "en": "High-gloss white",
+            "zh": "高光白",
+            "vi": "Trắng bóng cao",
+            "th": "สีขาวเงาสูง"
+          },
+          "10⁸–10¹¹ Ω"
+        ]
+      },
+      {
+        "cells": [
+          "XF-784",
+          {
+            "en": "1 mil (25µm) PI",
+            "zh": "1 mil（25µm）PI",
+            "vi": "PI 1 mil (25µm)",
+            "th": "PI 1 mil (25µm)"
+          },
+          {
+            "en": "Matte white",
+            "zh": "哑光白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          "10⁸–10¹¹ Ω"
+        ]
+      }
+    ],
+    "notes": {
+      "en": [
+        "All: low-charging acrylic PSA + low-charging liner · thermal-transfer print · dimensionally stable to 150°C.",
+        "Compliance: ANSI/ESD S20.20 · IEC 61340 · ANSI/ESD S541 (EPA)."
+      ],
+      "zh": [
+        "通用：低起电丙烯酸压敏胶 + 低起电底纸 · 热转印打印 · 尺寸稳定耐 150°C。",
+        "合规：ANSI/ESD S20.20 · IEC 61340 · ANSI/ESD S541（EPA）。"
+      ],
+      "vi": [
+        "Chung: keo acrylic + lớp lót ít tích điện · in chuyển nhiệt · ổn định kích thước tới 150°C.",
+        "Tuân thủ: ANSI/ESD S20.20 · IEC 61340 · ANSI/ESD S541 (EPA)."
+      ],
+      "th": [
+        "ทั้งหมด: กาวอะคริลิก + ไลเนอร์ประจุต่ำ · พิมพ์ถ่ายเทความร้อน · เสถียรมิติถึง 150°C",
+        "การปฏิบัติตาม: ANSI/ESD S20.20 · IEC 61340 · ANSI/ESD S541 (EPA)"
+      ]
+    }
+  },
+  "applications": {
+    "en": [
+      "Identification of static-sensitive circuit boards",
+      "Asset tracking",
+      "Warranty labeling",
+      "ESD-safe packaging",
+      "Semiconductor & electronics assembly"
+    ],
+    "zh": [
+      "静电敏感电路板标识",
+      "资产追踪",
+      "保修标签",
+      "防静电包装",
+      "半导体与电子装配"
+    ],
+    "vi": [
+      "Nhận diện bo mạch nhạy tĩnh điện",
+      "Theo dõi tài sản",
+      "Nhãn bảo hành",
+      "Bao bì chống tĩnh điện",
+      "Lắp ráp bán dẫn & điện tử"
+    ],
+    "th": [
+      "การระบุแผงวงจรที่ไวต่อไฟฟ้าสถิต",
+      "การติดตามสินทรัพย์",
+      "ฉลากการรับประกัน",
+      "บรรจุภัณฑ์ป้องกันไฟฟ้าสถิต",
+      "การประกอบเซมิคอนดักเตอร์และอิเล็กทรอนิกส์"
+    ]
+  },
+  "certifications": {
+    "en": [
+      "ANSI/ESD S20.20, IEC 61340 & ANSI/ESD S541 — for ESD-protected areas (EPA)",
+      "Surface resistance to EOS/ESD STM 11.11; ESD surface durability to Modified ESD ADV 11.2",
+      "Print permanence per MIL-STD-202G (Method 215K) and MIL-STD-883E"
+    ],
+    "zh": [
+      "ANSI/ESD S20.20、IEC 61340 与 ANSI/ESD S541 —— 适用于静电防护区（EPA）",
+      "表面电阻依据 EOS/ESD STM 11.11；防静电表面耐久性依据 Modified ESD ADV 11.2",
+      "打印耐久性符合 MIL-STD-202G（Method 215K）与 MIL-STD-883E"
+    ],
+    "vi": [
+      "ANSI/ESD S20.20, IEC 61340 & ANSI/ESD S541 — cho khu vực bảo vệ tĩnh điện (EPA)",
+      "Điện trở bề mặt theo EOS/ESD STM 11.11; độ bền bề mặt ESD theo Modified ESD ADV 11.2",
+      "Độ bền in theo MIL-STD-202G (Method 215K) và MIL-STD-883E"
+    ],
+    "th": [
+      "ANSI/ESD S20.20, IEC 61340 และ ANSI/ESD S541 — สำหรับพื้นที่ป้องกันไฟฟ้าสถิต (EPA)",
+      "ความต้านทานพื้นผิวตาม EOS/ESD STM 11.11; ความทนทานพื้นผิว ESD ตาม Modified ESD ADV 11.2",
+      "ความคงทนของงานพิมพ์ตาม MIL-STD-202G (Method 215K) และ MIL-STD-883E"
+    ]
+  }
+}
