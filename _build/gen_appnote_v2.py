@@ -10,12 +10,23 @@ optional image) -> Customer Value -> email CTA. Content only from client docs.
 """
 import json, os
 import gen_heatproof as hp
+import gen_product as gp
 
 BUILD = os.path.dirname(os.path.abspath(__file__))
 ADIR = os.path.join(BUILD, "data", "appnotes")
 HUB = "/application-notes/"
 SOURCE_LANG = "zh"
 esc = hp.esc
+
+def note_industry(d):
+    """The application note's industry key (pcb/auto/cable/steel/medical/outdoor),
+    from the JSON 'industry' field. Empty if unset."""
+    return (d.get("industry") or "").strip()
+
+def note_banner(d):
+    """Uniform rule (mirrors products): an application note shows its industry's
+    banner. Falls back to a per-note 'banner' only when no industry is set."""
+    return gp.INDUSTRY_BANNERS.get(note_industry(d), "") or d.get("banner", "")
 
 UI = {
   "en": {"eyebrow": "Application Note", "info": "Basic Application Information",
@@ -118,8 +129,10 @@ def build_note(d, lang):
     path = HUB + slug + "/"
     title = L(d["title"], lang)
     subtitle = L(d.get("subtitle", {}), lang)
-    banner = d.get("banner", "")
-    bg = ('<img class="bg" src="%s" alt="" loading="eager" onerror="this.style.display=\'none\'">' % esc(banner)) if banner else ""
+    banner = note_banner(d)
+    bpos = d.get("banner_pos", "")
+    bstyle = (' style="object-position:%s"' % esc(bpos)) if bpos else ""
+    bg = ('<img class="bg" src="%s" alt="" loading="eager"%s onerror="this.style.display=\'none\'">' % (esc(banner), bstyle)) if banner else ""
     # Hero shows eyebrow + title only (subtitle kept in data for meta/hub, not
     # rendered in the hero — it crowded the banner).
     hero = ('%s<section class="anhero">%s<div class="in"><div class="k">%s</div>'
@@ -217,7 +230,7 @@ def build_hub(notes, lang):
         if lang not in d.get("langs", ["en", "zh", "vi", "th"]):
             continue
         href = hp.Lx(lang, HUB + d["slug"] + "/")
-        img = d.get("banner", "") or d.get("image", "")
+        img = note_banner(d) or d.get("image", "")
         cimg = ('<img class="cimg" src="%s" alt="" loading="lazy" onerror="this.style.display=\'none\'">' % esc(img)) if img else ""
         cards += ('<a class="ancard" href="%s">%s<div class="cbody"><h3>%s</h3><p>%s</p>'
                   '<div class="go">%s →</div></div></a>') % (
@@ -242,6 +255,11 @@ def main():
             if lang in d.get("langs", ["en", "zh", "vi", "th"]):
                 build_note(d, lang)
     print("appnotes v2:", [d["slug"] for d in notes], "x4 langs + hub")
+    # BANNER AUDIT — every note should resolve to an industry banner
+    for d in notes:
+        ind = note_industry(d)
+        flag = "" if (ind in gp.INDUSTRY_BANNERS or d.get("banner")) else "  <-- NO BANNER"
+        print("  appnote banner:", d["slug"], "[%s]" % (ind or "own-banner"), flag)
 
 if __name__ == "__main__":
     main()

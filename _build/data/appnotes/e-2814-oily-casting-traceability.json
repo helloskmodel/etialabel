@@ -2,7 +2,10 @@
  "slug": "e-2814-oily-casting-traceability",
  "source": "client brief — E-2814 high-adhesion abrasion-resistant PET for oily castings & MES traceability",
  "order": 5,
- "langs": ["en", "zh"],
+ "langs": [
+  "en",
+  "zh"
+ ],
  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER",
  "image": "",
  "title": {
@@ -19,18 +22,48 @@
  },
  "info": {
   "en": [
-   {"label": "Facestock", "value": "4 mil (0.100 mm) white polyester (PET) film"},
-   {"label": "Adhesive", "value": "High initial-tack, high-adhesion acrylic PSA"},
-   {"label": "Print", "value": "Thermal transfer (abrasion-resistant topcoat)"},
-   {"label": "Surfaces", "value": "Oily / rough castings, engine & machined parts"},
-   {"label": "Use", "value": "Item-level MES traceability"}
+   {
+    "label": "Facestock",
+    "value": "4 mil (0.100 mm) white polyester (PET) film"
+   },
+   {
+    "label": "Adhesive",
+    "value": "High initial-tack, high-adhesion acrylic PSA"
+   },
+   {
+    "label": "Print",
+    "value": "Thermal transfer (abrasion-resistant topcoat)"
+   },
+   {
+    "label": "Surfaces",
+    "value": "Oily / rough castings, engine & machined parts"
+   },
+   {
+    "label": "Use",
+    "value": "Item-level MES traceability"
+   }
   ],
   "zh": [
-   {"label": "面材", "value": "4 mil（0.100 mm）白色聚酯（PET）薄膜"},
-   {"label": "胶粘剂", "value": "高初粘、强粘接丙烯酸压敏胶"},
-   {"label": "打印方式", "value": "热转印（耐刮擦涂层）"},
-   {"label": "适用表面", "value": "带油/粗糙铸件、发动机及机加工零件"},
-   {"label": "用途", "value": "一物一码 MES 追溯"}
+   {
+    "label": "面材",
+    "value": "4 mil（0.100 mm）白色聚酯（PET）薄膜"
+   },
+   {
+    "label": "胶粘剂",
+    "value": "高初粘、强粘接丙烯酸压敏胶"
+   },
+   {
+    "label": "打印方式",
+    "value": "热转印（耐刮擦涂层）"
+   },
+   {
+    "label": "适用表面",
+    "value": "带油/粗糙铸件、发动机及机加工零件"
+   },
+   {
+    "label": "用途",
+    "value": "一物一码 MES 追溯"
+   }
   ]
  },
  "problems": {
@@ -70,20 +103,56 @@
   },
   "points": {
    "en": [
-    {"label": "High adhesion", "text": "High initial adhesion and peel strength; field-verified stable bonding to oily and rough casting surfaces, reducing sliding, edge lifting and detachment."},
-    {"label": "Durable 4 mil PET film", "text": "The 0.100 mm white polyester film provides good mechanical strength for identification throughout handling, stacking and assembly."},
-    {"label": "Abrasion-resistant print coating", "text": "A specialized thermal-transfer topcoat improves resistance to abrasion, smearing and demanding environments, helping barcodes, QR codes and serial numbers stay readable."},
-    {"label": "Solvent-cleaning resistance", "text": "Designed to withstand cleaning with a variety of chemicals; a suitable thermal-transfer ribbon further improves solvent and abrasion resistance of the printed data."},
-    {"label": "MES traceability support", "text": "Carries material batch, mould number, production team, equipment parameters and inspection status — building an item-level 'one part, one code' quality record."},
-    {"label": "Selection & testing tip", "text": "Actual performance depends on oil type, oil-film thickness, surface roughness, application pressure, temperature and ribbon combination. Before volume use, run adhesion, dwell, abrasion, cleaning and scan tests under your real operating conditions."}
+    {
+     "label": "High adhesion",
+     "text": "High initial adhesion and peel strength; field-verified stable bonding to oily and rough casting surfaces, reducing sliding, edge lifting and detachment."
+    },
+    {
+     "label": "Durable 4 mil PET film",
+     "text": "The 0.100 mm white polyester film provides good mechanical strength for identification throughout handling, stacking and assembly."
+    },
+    {
+     "label": "Abrasion-resistant print coating",
+     "text": "A specialized thermal-transfer topcoat improves resistance to abrasion, smearing and demanding environments, helping barcodes, QR codes and serial numbers stay readable."
+    },
+    {
+     "label": "Solvent-cleaning resistance",
+     "text": "Designed to withstand cleaning with a variety of chemicals; a suitable thermal-transfer ribbon further improves solvent and abrasion resistance of the printed data."
+    },
+    {
+     "label": "MES traceability support",
+     "text": "Carries material batch, mould number, production team, equipment parameters and inspection status — building an item-level 'one part, one code' quality record."
+    },
+    {
+     "label": "Selection & testing tip",
+     "text": "Actual performance depends on oil type, oil-film thickness, surface roughness, application pressure, temperature and ribbon combination. Before volume use, run adhesion, dwell, abrasion, cleaning and scan tests under your real operating conditions."
+    }
    ],
    "zh": [
-    {"label": "强粘接性能", "text": "较高的初粘力和剥离强度；现场验证可稳定粘贴于带油及粗糙铸件表面，降低打滑、起翘和脱落风险。"},
-    {"label": "4 mil 耐用 PET 面材", "text": "0.100 mm 白色聚酯薄膜具有良好的机械强度，适合零件搬运、堆放及装配过程中的长期标识。"},
-    {"label": "耐刮擦打印涂层", "text": "特殊热转印打印涂层可提高图文对刮擦、蹭污和严苛环境的耐受性，帮助条码、二维码及 SN 码保持清晰。"},
-    {"label": "耐溶剂清洗", "text": "材料可耐受多种化学品清洗环境；搭配适用的热转印碳带，可进一步提高打印信息的耐溶剂和耐擦拭性能。"},
-    {"label": "支持 MES 全流程追溯", "text": "可承载原材料批次、模具编号、生产班组、设备参数和检验状态等信息，建立“一物一码”的质量追溯档案。"},
-    {"label": "选型提示", "text": "具体表现会受到油品种类、油膜厚度、表面粗糙度、贴标压力、温度及碳带组合影响。批量应用前，建议按实际工况完成粘接、静置、摩擦、清洗和扫码测试。"}
+    {
+     "label": "强粘接性能",
+     "text": "较高的初粘力和剥离强度；现场验证可稳定粘贴于带油及粗糙铸件表面，降低打滑、起翘和脱落风险。"
+    },
+    {
+     "label": "4 mil 耐用 PET 面材",
+     "text": "0.100 mm 白色聚酯薄膜具有良好的机械强度，适合零件搬运、堆放及装配过程中的长期标识。"
+    },
+    {
+     "label": "耐刮擦打印涂层",
+     "text": "特殊热转印打印涂层可提高图文对刮擦、蹭污和严苛环境的耐受性，帮助条码、二维码及 SN 码保持清晰。"
+    },
+    {
+     "label": "耐溶剂清洗",
+     "text": "材料可耐受多种化学品清洗环境；搭配适用的热转印碳带，可进一步提高打印信息的耐溶剂和耐擦拭性能。"
+    },
+    {
+     "label": "支持 MES 全流程追溯",
+     "text": "可承载原材料批次、模具编号、生产班组、设备参数和检验状态等信息，建立“一物一码”的质量追溯档案。"
+    },
+    {
+     "label": "选型提示",
+     "text": "具体表现会受到油品种类、油膜厚度、表面粗糙度、贴标压力、温度及碳带组合影响。批量应用前，建议按实际工况完成粘接、静置、摩擦、清洗和扫码测试。"
+    }
    ]
   }
  },
@@ -104,5 +173,6 @@
    "产品追踪与警示标签",
    "带油或粗糙表面条码标识"
   ]
- }
+ },
+ "industry": "auto"
 }
