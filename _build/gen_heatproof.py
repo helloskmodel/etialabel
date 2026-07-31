@@ -887,6 +887,7 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
     return """<!doctype html><html lang="%s"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
+<link rel="icon" type="image/png" href="/favicon.png"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com" crossorigin><link rel="dns-prefetch" href="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com">
 <title>%s</title><meta name="description" content="%s">
 <link rel="canonical" href="%s">%s
@@ -1628,6 +1629,7 @@ def build_home(lang):
     doc="""<!doctype html><html lang="%s"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
+<link rel="icon" type="image/png" href="/favicon.png"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com" crossorigin><link rel="dns-prefetch" href="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com">
 <title>%s</title><meta name="description" content="%s">
 <link rel="canonical" href="%s">%s%s
