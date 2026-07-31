@@ -535,8 +535,21 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .art h2{font-size:20px;color:#143C96;margin:26px 0 10px}
 .art p{font-size:15.5px;line-height:1.85;color:#41506e;margin:0 0 12px}
 .nback{display:inline-block;margin:8px 0 0;font-size:14px;font-weight:700;color:#1A56DB;text-decoration:none}
+/* hub — section covers that split News vs Knowledge */
+.nsec{max-width:1080px;margin:0 auto;padding:0 22px}
+.nsechd{position:relative;border-radius:16px;overflow:hidden;margin:30px 0 18px;min-height:150px;display:flex;align-items:flex-end;background:#12224b}
+.nsechd img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
+.nsechd::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,60,150,.82) 8%,rgba(20,60,150,.42) 55%,rgba(20,60,150,.08))}
+.nsechd .t{position:relative;z-index:2;padding:20px 24px}
+.nsechd .t .k{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8fe063}
+.nsechd .t h2{margin:3px 0 0;font-size:26px;color:#fff;font-family:var(--sans);font-weight:800;line-height:1.1}
+.nrow{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:18px;padding:2px 0 14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.nrow::-webkit-scrollbar{height:6px}
+.nrow::-webkit-scrollbar-thumb{background:#c7d3ea;border-radius:6px}
+.nrow .ncard{flex:0 0 258px;scroll-snap-align:start}
+.nsoon{color:#5a6884;font-size:14px;padding:8px 2px 18px}
 /* hub */
-.ncards{max-width:1080px;margin:0 auto;padding:30px 22px 10px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.ncards{max-width:1080px;margin:0 auto;padding:4px 22px 10px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
 .ncard{background:#fff;border:1px solid #dbe3f1;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .15s,transform .15s}
 .ncard:hover{box-shadow:0 14px 34px rgba(20,60,150,.14);transform:translateY(-3px)}
 .ncard img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#e8eefb}
@@ -554,7 +567,12 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
   .art .lead{font-size:15.5px;line-height:1.66;margin:0 0 16px}
   .art h2{font-size:18px;margin:20px 0 8px}
   .art p{font-size:14.5px;line-height:1.7;margin:0 0 10px}
-  .ncards{padding:22px 18px 6px;gap:16px}
+  .ncards{padding:4px 18px 6px;gap:16px}
+  .nsec{padding:0 18px}
+  .nsechd{min-height:118px;margin:24px 0 14px}
+  .nsechd .t{padding:15px 18px}
+  .nsechd .t h2{font-size:20px}
+  .nrow .ncard{flex:0 0 230px}
 }
 </style>
 <section class="nhero"><img class="bg" src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/GLP-1%20COLD%20CHAIN" alt="" loading="eager" onerror="this.style.display='none'"><div class="in"><div class="k">洞察</div><h1>GLP‑1 药物冷链标签市场解读</h1><p class="sub">2035 年全球市场规模预计达 1330 亿美元 —— 冷链标签的性能与合规要求</p><div class="ntags"><span class="ntag">GLP-1</span><span class="ntag">冷链</span><span class="ntag">医药标签</span></div><div style="margin-top:16px"><a class="hcta" href="/cn/contact/">联系我们</a></div></div></section>

@@ -518,7 +518,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 <div class="topstrip"></div>
 <header><div class="wrap"><a class="logo" href="/cn/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></a><nav><div class="navlinks"><a href="/cn/">首页</a><div class="nd" onmouseenter="etaOpen(this)" onmouseleave="etaClose(this)"><a class="ndt" href="/cn/products/" onclick="return etaProd(this,event)">产品 <span class="caret">&#9662;</span></a><div class="ndm mega"><a href="/cn/industries/pcb-electronics-labeling-solutions/"><b>PCB</b><span>耐回流焊、清洗与防静电的电子标识</span></a><a href="/cn/industries/automotive-labeling-solutions/"><b>汽车与轮胎</b><span>汽车、轮胎、电池与零部件标识</span></a><a href="/cn/industries/wire-cable-labeling-solutions/"><b>线缆</b><span>线缆与束线组件的耐久标识</span></a><a href="/cn/industries/outdoor-energy-labeling-solutions/"><b>户外与能源</b><span>耐候标识，户外多年不失效</span></a><a href="/cn/industries/medical-pharmaceutical-labeling-solutions/"><b>医疗与制药</b><span>器械、实验室与冷储标识，耐灭菌</span></a><a href="/cn/industries/steel-metal-ceramic-labeling-solutions/"><b>钢铁与陶瓷</b><span>金属加工的高温标识</span></a></div><div class="ndmob"><a class="ndma" href="/cn/industries/pcb-electronics-labeling-solutions/">PCB</a><a class="ndma" href="/cn/industries/automotive-labeling-solutions/">汽车与轮胎</a><a class="ndma" href="/cn/industries/wire-cable-labeling-solutions/">线缆</a><a class="ndma" href="/cn/industries/outdoor-energy-labeling-solutions/">户外与能源</a><a class="ndma" href="/cn/industries/medical-pharmaceutical-labeling-solutions/">医疗与制药</a><a class="ndma" href="/cn/industries/steel-metal-ceramic-labeling-solutions/">钢铁与陶瓷</a></div></div><a href="/cn/applications/">方案</a><a href="/cn/insights/" class="on">洞察</a><a href="/cn/service/">服务</a></div><div class="langsw"><a href="/insights/">EN</a><a href="/cn/insights/" class="on">CN</a><a href="/vn/insights/">VN</a><a href="/th/insights/">TH</a></div><button class="navtog" type="button" aria-label="Menu" onclick="etaMenu(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></nav></div></header>
 <div class="wrap"><div class="crumb"><a href="/cn/">首页</a> &rsaquo; <b>洞察</b></div></div>
-<section class="hbanner" style="background-image:url(https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/INSIGHT-NEWBANNER)"><div class="wrap"><div class="eyebrow">技术指南 · 材料知识 · 案例研究</div><h1>知识驱动更好的决策</h1><p class="hsub">应用笔记、材料洞察、行业动态与专家见解，一站获取</p><div class="btns"><a class="hcta" href="/cn/contact/">联系我们</a></div></div></section>
+<section class="hbanner" style="background-image:url(https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/INSIGHT-NEWBANNER)"><div class="wrap"><div class="eyebrow">技术指南 · 材料知识 · 案例研究</div><h1>知识驱动更好的决策</h1><p class="hsub">行业动态 · 实验室与标签知识</p><div class="btns"><a class="hcta" href="/cn/contact/">联系我们</a></div></div></section>
 
 
 <style>
@@ -537,8 +537,21 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .art h2{font-size:20px;color:#143C96;margin:26px 0 10px}
 .art p{font-size:15.5px;line-height:1.85;color:#41506e;margin:0 0 12px}
 .nback{display:inline-block;margin:8px 0 0;font-size:14px;font-weight:700;color:#1A56DB;text-decoration:none}
+/* hub — section covers that split News vs Knowledge */
+.nsec{max-width:1080px;margin:0 auto;padding:0 22px}
+.nsechd{position:relative;border-radius:16px;overflow:hidden;margin:30px 0 18px;min-height:150px;display:flex;align-items:flex-end;background:#12224b}
+.nsechd img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
+.nsechd::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,60,150,.82) 8%,rgba(20,60,150,.42) 55%,rgba(20,60,150,.08))}
+.nsechd .t{position:relative;z-index:2;padding:20px 24px}
+.nsechd .t .k{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8fe063}
+.nsechd .t h2{margin:3px 0 0;font-size:26px;color:#fff;font-family:var(--sans);font-weight:800;line-height:1.1}
+.nrow{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:18px;padding:2px 0 14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.nrow::-webkit-scrollbar{height:6px}
+.nrow::-webkit-scrollbar-thumb{background:#c7d3ea;border-radius:6px}
+.nrow .ncard{flex:0 0 258px;scroll-snap-align:start}
+.nsoon{color:#5a6884;font-size:14px;padding:8px 2px 18px}
 /* hub */
-.ncards{max-width:1080px;margin:0 auto;padding:30px 22px 10px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.ncards{max-width:1080px;margin:0 auto;padding:4px 22px 10px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
 .ncard{background:#fff;border:1px solid #dbe3f1;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .15s,transform .15s}
 .ncard:hover{box-shadow:0 14px 34px rgba(20,60,150,.14);transform:translateY(-3px)}
 .ncard img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#e8eefb}
@@ -556,10 +569,15 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
   .art .lead{font-size:15.5px;line-height:1.66;margin:0 0 16px}
   .art h2{font-size:18px;margin:20px 0 8px}
   .art p{font-size:14.5px;line-height:1.7;margin:0 0 10px}
-  .ncards{padding:22px 18px 6px;gap:16px}
+  .ncards{padding:4px 18px 6px;gap:16px}
+  .nsec{padding:0 18px}
+  .nsechd{min-height:118px;margin:24px 0 14px}
+  .nsechd .t{padding:15px 18px}
+  .nsechd .t h2{font-size:20px}
+  .nrow .ncard{flex:0 0 230px}
 }
 </style>
-<div class="ncards"><a class="ncard" href="/cn/insights/ul94-vtm0-flame-retardant-labels/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/Flame%20Retardant%20Label" alt="" loading="lazy" onerror="this.remove()"><div class="cb"><span class="kind">洞察</span><h3>什么是 UL94 VTM-0？阻燃标签材料选型指南</h3><p class="cs">读懂 UL94 VTM-0 等级，为电池、线束、PCB 等关键部位选对阻燃标签</p><span class="go">阅读 →</span></div></a><a class="ncard" href="/cn/insights/glp-1-cold-chain-labeling/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/GLP-1%20COLD%20CHAIN" alt="" loading="lazy" onerror="this.remove()"><div class="cb"><span class="kind">洞察</span><h3>GLP‑1 药物冷链标签市场解读</h3><p class="cs">2035 年全球市场规模预计达 1330 亿美元 —— 冷链标签的性能与合规要求</p><span class="go">阅读 →</span></div></a></div>
+<div class="nsec"><div class="nsechd"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-NEWS" alt="" loading="lazy" onerror="this.remove()"><div class="t"><div class="k">洞察</div><h2>行业动态</h2></div></div></div><div class="nsec"><p class="nsoon">更多内容即将上线</p></div><div class="nsec"><div class="nsechd"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-KNOWLEDGE" alt="" loading="lazy" onerror="this.remove()"><div class="t"><div class="k">洞察</div><h2>实验室与标签知识</h2></div></div></div><div class="nsec"><div class="ncards"><a class="ncard" href="/cn/insights/ul94-vtm0-flame-retardant-labels/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/Flame%20Retardant%20Label" alt="" loading="lazy" onerror="this.remove()"><div class="cb"><span class="kind">洞察</span><h3>什么是 UL94 VTM-0？阻燃标签材料选型指南</h3><p class="cs">读懂 UL94 VTM-0 等级，为电池、线束、PCB 等关键部位选对阻燃标签</p><span class="go">阅读 →</span></div></a><a class="ncard" href="/cn/insights/glp-1-cold-chain-labeling/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/GLP-1%20COLD%20CHAIN" alt="" loading="lazy" onerror="this.remove()"><div class="cb"><span class="kind">洞察</span><h3>GLP‑1 药物冷链标签市场解读</h3><p class="cs">2035 年全球市场规模预计达 1330 亿美元 —— 冷链标签的性能与合规要求</p><span class="go">阅读 →</span></div></a></div></div>
 <footer><div class="wrap">
 <div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></div>
 <div class="fg">

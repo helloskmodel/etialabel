@@ -2,6 +2,7 @@
  "articles": [
   {
    "slug": "ul94-vtm0-flame-retardant-labels",
+   "category": "knowledge",
    "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/Flame%20Retardant%20Label",
    "tags": {
     "zh": [
@@ -152,6 +153,7 @@
   },
   {
    "slug": "glp-1-cold-chain-labeling",
+   "category": "knowledge",
    "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/GLP-1%20COLD%20CHAIN",
    "tags": {
     "zh": [
