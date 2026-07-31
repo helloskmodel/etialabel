@@ -55,14 +55,25 @@ def _ind_label(key, lang):
     node = INDUSTRY_LABELS.get(key, {})
     return node.get(lang) or node.get("en") or key
 
-def chips_html(a, lang):
-    """Industry (accent) + label-category chips for card / article hero."""
+def chips_html(a, lang, groups=("ind", "cat")):
+    """Industry (accent) + label-category chips. `groups` selects which show."""
     out = ""
-    for key in a.get("industry", []):
-        out += '<span class="nchip ind">%s</span>' % esc(_ind_label(key, lang))
-    for c in L(a.get("label_category", {}), lang):
-        out += '<span class="nchip cat">%s</span>' % esc(c)
+    if "ind" in groups:
+        for key in a.get("industry", []):
+            out += '<span class="nchip ind">%s</span>' % esc(_ind_label(key, lang))
+    if "cat" in groups:
+        for c in L(a.get("label_category", {}), lang):
+            out += '<span class="nchip cat">%s</span>' % esc(c)
     return ('<div class="nchips">%s</div>' % out) if out else ""
+
+def cover_category(a, lang):
+    """Short classification text shown on the card cover — the label category,
+    falling back to the industry name, then the section word."""
+    cats = L(a.get("label_category", {}), lang)
+    if cats:
+        return " · ".join(cats)
+    inds = [_ind_label(k, lang) for k in a.get("industry", [])]
+    return " · ".join(inds)
 
 def seo_keywords(a):
     """Flat English keyword string from industry + category + tags for <meta>."""
@@ -130,15 +141,16 @@ CSS = """
 .ncard{background:#fff;border:1px solid #dbe3f1;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .15s,transform .15s}
 .ncard:hover{box-shadow:0 14px 34px rgba(20,60,150,.14);transform:translateY(-3px)}
 .ncard img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#e8eefb}
-/* article cover = category template image with the title on the blank left area */
+/* article cover = category template image; the classification sits on the blank left area, the title goes below */
 .ncov{position:relative;aspect-ratio:16/9;overflow:hidden;background:#e8eefb}
 .ncov img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.ncov .novl{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;gap:5px;padding:0 2% 0 7%}
+.ncov .novl{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:0 2% 0 7%}
 .ncov .novl .k{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#1A56DB}
-.ncov .novl h3{margin:0;font-family:var(--sans);font-weight:800;font-size:15.5px;line-height:1.22;color:#000;max-width:48%}
-.nrow .ncov .novl h3{font-size:14px}
-.ncard .cb{padding:16px 18px 18px;display:flex;flex-direction:column;gap:9px;flex:1}
+.ncov .novl .ncat{margin:0;font-family:var(--sans);font-weight:800;font-size:18px;line-height:1.2;color:#000;max-width:50%}
+.nrow .ncov .novl .ncat{font-size:16px}
+.ncard .cb{padding:15px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
 .ncard .kind{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#1A56DB}
+.ncard h3.ntitle{margin:0;font-size:16.5px;font-weight:800;line-height:1.32;color:#17203a}
 .ncard h3{margin:0;font-size:17px;line-height:1.35;color:#17203a}
 .ncard .cs{font-size:13.5px;color:#5a6884;line-height:1.5;flex:1}
 .ncard .go{font-size:13.5px;font-weight:800;color:#41A62A}
@@ -192,15 +204,17 @@ def build_article(a, lang):
         hp.track(path, "core")
 
 def _card(a, lang, ui):
-    # Cover = the category template image; the article title is written on its
-    # blank left area (News -> INSIGHT-NEWS, Knowledge -> INSIGHT-KNOWLEDGE).
+    # Cover = the category template image; the classification sits on its blank
+    # left area (News -> INSIGHT-NEWS, Knowledge -> INSIGHT-KNOWLEDGE). The full
+    # article title goes below the cover, in the card body.
     cover = COVER_NEWS if a.get("category") == "news" else COVER_KNOWLEDGE
     ovl = ('<div class="ncov"><img src="%s" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
-           '<div class="novl"><span class="k">%s</span><h3>%s</h3></div></div>') % (
-        esc(cover), esc(ui["news"]), esc(L(a["title"], lang)))
-    return ('<a class="ncard" href="%s">%s<div class="cb">%s<p class="cs">%s</p>'
-            '<span class="go">%s</span></div></a>') % (
-        hp.Lx(lang, HUB + a["slug"] + "/"), ovl, chips_html(a, lang),
+           '<div class="novl"><span class="k">%s</span><p class="ncat">%s</p></div></div>') % (
+        esc(cover), esc(ui["news"]), esc(cover_category(a, lang)))
+    return ('<a class="ncard" href="%s">%s<div class="cb"><h3 class="ntitle">%s</h3>%s'
+            '<p class="cs">%s</p><span class="go">%s</span></div></a>') % (
+        hp.Lx(lang, HUB + a["slug"] + "/"), ovl, esc(L(a["title"], lang)),
+        chips_html(a, lang, groups=("ind",)),
         esc(L(a.get("subtitle", {}), lang)), esc(ui["read"]))
 
 def _section(kicker, title, cards_html, wrap_cls, soon=""):
