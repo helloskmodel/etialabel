@@ -25,10 +25,10 @@
     }
   },
   "title": {
-    "en": "XF78 Series — Polyonics ESD-Safe Polyimide PCB Labels",
-    "zh": "XF78 系列 · Polyonics 防静电聚酰亚胺 PCB 标签",
-    "vi": "XF78 Series · Nhãn PCB polyimide chống tĩnh điện Polyonics",
-    "th": "XF78 Series · ฉลาก PCB โพลีอิไมด์ป้องกันไฟฟ้าสถิต Polyonics"
+    "en": "ESD-XF78 — Polyonics ESD-Safe Polyimide PCB Labels",
+    "zh": "ESD-XF78 · Polyonics 防静电聚酰亚胺 PCB 标签",
+    "vi": "ESD-XF78 · Nhãn PCB polyimide chống tĩnh điện Polyonics",
+    "th": "ESD-XF78 · ฉลาก PCB โพลีอิไมด์ป้องกันไฟฟ้าสถิต Polyonics"
   },
   "tagline": {
     "en": "Imported Polyonics static-dissipative polyimide labels for ESD-sensitive circuit boards — thermal-transfer printable, dimensionally stable to 150°C.",
