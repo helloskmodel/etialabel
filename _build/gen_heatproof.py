@@ -472,6 +472,11 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .indcar-wrap{position:relative;margin-top:20px}
 .indcar{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px}
 .indcar::-webkit-scrollbar{display:none}
+/* Key Products carousel — same arrow-nav pattern as the Industry carousel */
+.prodcar{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px}
+.prodcar::-webkit-scrollbar{display:none}
+.prodcar>.acard{flex:0 0 212px;scroll-snap-align:start}
+@media(max-width:600px){.prodcar>.acard{flex:0 0 66%}}
 .indcar>.acard{flex:0 0 280px;scroll-snap-align:start}
 .indcar>.acard .acard-img{aspect-ratio:16/9}
 .acard-img.g0{background:linear-gradient(150deg,#1A56DB,#143C96)}
@@ -1611,7 +1616,10 @@ def build_home(lang):
     prod_viewall={"en":"View All Products","zh":"查看全部产品","vi":"Xem tất cả sản phẩm","th":"ดูสินค้าทั้งหมด"}.get(lang,"View All Products")
     prod_section=('<section class="blk" style="background:var(--bg)"><div class="wrap">'
                   '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
-                  '<div class="acgrid acgrid6">%s</div></div></section>')%(
+                  '<div class="indcar-wrap"><button class="acar-nav prev" onclick="etaProdSlide(-1)" aria-label="Previous">&lsaquo;</button>'
+                  '<div class="prodcar" id="prodcar">%s</div>'
+                  '<button class="acar-nav next" onclick="etaProdSlide(1)" aria-label="Next">&rsaquo;</button></div>'
+                  '</div></section>')%(
         esc(T.get("prod_eyebrow","")),esc(T.get("prod_title","")),esc(T.get("prod_sub","")),pcards) if pcards else ""
     # Free Sample — lead capture (email / phone / address) -> mailto
     fs_section=('<section class="blk freesample"><div class="wrap"><div class="fsbox">'
@@ -1681,6 +1689,7 @@ var mg=m.querySelector('.midgroup[data-mid="'+a+'"]');var first=mg?mg.querySelec
 etaSub(first,first?first.getAttribute('data-sub'):'');}
 function etaSlide(d){var c=document.getElementById('acar');if(c)c.scrollBy({left:d*c.clientWidth,behavior:'smooth'});}
 function etaIndSlide(d){var c=document.getElementById('indcar');if(c)c.scrollBy({left:d*Math.min(628,Math.max(300,c.clientWidth*0.85)),behavior:'smooth'});}
+function etaProdSlide(d){var c=document.getElementById('prodcar');if(c)c.scrollBy({left:d*Math.min(628,Math.max(300,c.clientWidth*0.85)),behavior:'smooth'});}
 function etaSvcSlide(d){var c=document.getElementById('svccar');if(c)c.scrollBy({left:d*Math.min(628,Math.max(300,c.clientWidth*0.85)),behavior:'smooth'});}
 function etaSample(e){e.preventDefault();var g=function(i){var el=document.getElementById(i);return el?el.value:'';};
 var b='Email: '+g('fs-email')+'%%0D%%0APhone: '+g('fs-phone')+'%%0D%%0AAddress: '+g('fs-addr')+'%%0D%%0A%%0D%%0APlease send free samples.';
