@@ -30,6 +30,12 @@
      "Traceability"
     ]
    },
+   "cover_cat": {
+    "en": "Engineer Selection Guide",
+    "zh": "工程师选型指南",
+    "vi": "Hướng dẫn lựa chọn cho kỹ sư",
+    "th": "คู่มือการเลือกสำหรับวิศวกร"
+   },
    "lead_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-PCB%20TRAY",
    "banner": "",
    "tags": {
@@ -553,6 +559,12 @@
      "หน่วงไฟ"
     ]
    },
+   "cover_cat": {
+    "en": "Knowledge Sharing",
+    "zh": "知识分享",
+    "vi": "Chia sẻ kiến thức",
+    "th": "การแบ่งปันความรู้"
+   },
    "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/Flame%20Retardant%20Label",
    "tags": {
     "zh": [
@@ -724,6 +736,12 @@
      "โซ่ความเย็น",
      "อุณหภูมิต่ำ"
     ]
+   },
+   "cover_cat": {
+    "en": "Market Analysis",
+    "zh": "市场解读",
+    "vi": "Phân tích thị trường",
+    "th": "การวิเคราะห์ตลาด"
    },
    "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/GLP-1%20COLD%20CHAIN",
    "tags": {

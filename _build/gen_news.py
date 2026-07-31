@@ -67,8 +67,14 @@ def chips_html(a, lang, groups=("ind", "cat")):
     return ('<div class="nchips">%s</div>' % out) if out else ""
 
 def cover_category(a, lang):
-    """Short classification text shown on the card cover — the label category,
-    falling back to the industry name, then the section word."""
+    """Short classification/genre shown on the card cover. Prefers an explicit
+    'cover_cat' (e.g. 'Engineer Selection Guide', 'Knowledge Sharing'), then the
+    label category, then the industry name."""
+    cc = a.get("cover_cat")
+    if cc:
+        v = L(cc, lang)
+        if v:
+            return v
     cats = L(a.get("label_category", {}), lang)
     if cats:
         return " · ".join(cats)
