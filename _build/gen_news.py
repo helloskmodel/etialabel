@@ -16,14 +16,29 @@ esc = hp.esc
 
 UI = {
   "en": {"hub_title": "Insights", "hub_lede": "Market analysis, material knowledge and application know-how for durable industrial labels.",
-         "read": "Read →", "back": "← All insights", "home": "Home", "news": "Insight"},
+         "read": "Read →", "back": "← All insights", "home": "Home", "news": "Insight",
+         "hero_sub": "Industry News · Lab & Labeling Knowledge",
+         "sec_news": "Industry News", "sec_know": "Lab & Labeling Knowledge",
+         "soon": "More articles coming soon."},
   "zh": {"hub_title": "洞察", "hub_lede": "耐久工业标签的市场解读、材料知识与应用经验。",
-         "read": "阅读 →", "back": "← 返回全部洞察", "home": "首页", "news": "洞察"},
+         "read": "阅读 →", "back": "← 返回全部洞察", "home": "首页", "news": "洞察",
+         "hero_sub": "行业动态 · 实验室与标签知识",
+         "sec_news": "行业动态", "sec_know": "实验室与标签知识",
+         "soon": "更多内容即将上线。"},
   "vi": {"hub_title": "Kiến thức", "hub_lede": "Phân tích thị trường, kiến thức vật liệu và kinh nghiệm ứng dụng cho nhãn công nghiệp bền.",
-         "read": "Đọc →", "back": "← Tất cả bài viết", "home": "Trang chủ", "news": "Kiến thức"},
+         "read": "Đọc →", "back": "← Tất cả bài viết", "home": "Trang chủ", "news": "Kiến thức",
+         "hero_sub": "Tin ngành · Kiến thức nhãn & phòng lab",
+         "sec_news": "Tin ngành", "sec_know": "Kiến thức nhãn & phòng lab",
+         "soon": "Sẽ sớm có thêm bài viết."},
   "th": {"hub_title": "ความรู้", "hub_lede": "การวิเคราะห์ตลาด ความรู้ด้านวัสดุ และความเชี่ยวชาญการใช้งานสำหรับฉลากอุตสาหกรรมที่ทนทาน",
-         "read": "อ่าน →", "back": "← บทความทั้งหมด", "home": "หน้าแรก", "news": "ความรู้"},
+         "read": "อ่าน →", "back": "← บทความทั้งหมด", "home": "หน้าแรก", "news": "ความรู้",
+         "hero_sub": "ข่าวอุตสาหกรรม · ความรู้ห้องแล็บและฉลาก",
+         "sec_news": "ข่าวอุตสาหกรรม", "sec_know": "ความรู้ห้องแล็บและฉลาก",
+         "soon": "เร็วๆ นี้จะมีบทความเพิ่มเติม"},
 }
+
+COVER_NEWS = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-NEWS"
+COVER_KNOWLEDGE = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-KNOWLEDGE"
 
 def L(node, lang):
     if not isinstance(node, dict):
@@ -52,8 +67,21 @@ CSS = """
 .art h2{font-size:20px;color:#143C96;margin:26px 0 10px}
 .art p{font-size:15.5px;line-height:1.85;color:#41506e;margin:0 0 12px}
 .nback{display:inline-block;margin:8px 0 0;font-size:14px;font-weight:700;color:#1A56DB;text-decoration:none}
+/* hub — section covers that split News vs Knowledge */
+.nsec{max-width:1080px;margin:0 auto;padding:0 22px}
+.nsechd{position:relative;border-radius:16px;overflow:hidden;margin:30px 0 18px;min-height:150px;display:flex;align-items:flex-end;background:#12224b}
+.nsechd img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
+.nsechd::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,60,150,.82) 8%,rgba(20,60,150,.42) 55%,rgba(20,60,150,.08))}
+.nsechd .t{position:relative;z-index:2;padding:20px 24px}
+.nsechd .t .k{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8fe063}
+.nsechd .t h2{margin:3px 0 0;font-size:26px;color:#fff;font-family:var(--sans);font-weight:800;line-height:1.1}
+.nrow{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:18px;padding:2px 0 14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.nrow::-webkit-scrollbar{height:6px}
+.nrow::-webkit-scrollbar-thumb{background:#c7d3ea;border-radius:6px}
+.nrow .ncard{flex:0 0 258px;scroll-snap-align:start}
+.nsoon{color:#5a6884;font-size:14px;padding:8px 2px 18px}
 /* hub */
-.ncards{max-width:1080px;margin:0 auto;padding:30px 22px 10px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.ncards{max-width:1080px;margin:0 auto;padding:4px 22px 10px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
 .ncard{background:#fff;border:1px solid #dbe3f1;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .15s,transform .15s}
 .ncard:hover{box-shadow:0 14px 34px rgba(20,60,150,.14);transform:translateY(-3px)}
 .ncard img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#e8eefb}
@@ -71,7 +99,12 @@ CSS = """
   .art .lead{font-size:15.5px;line-height:1.66;margin:0 0 16px}
   .art h2{font-size:18px;margin:20px 0 8px}
   .art p{font-size:14.5px;line-height:1.7;margin:0 0 10px}
-  .ncards{padding:22px 18px 6px;gap:16px}
+  .ncards{padding:4px 18px 6px;gap:16px}
+  .nsec{padding:0 18px}
+  .nsechd{min-height:118px;margin:24px 0 14px}
+  .nsechd .t{padding:15px 18px}
+  .nsechd .t h2{font-size:20px}
+  .nrow .ncard{flex:0 0 230px}
 }
 </style>
 """
@@ -103,22 +136,41 @@ def build_article(a, lang):
     if lang == "en":
         hp.track(path, "core")
 
+def _card(a, lang, ui):
+    banner = a.get("banner", "")
+    img = ('<img src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(banner)) if banner else ""
+    return ('<a class="ncard" href="%s">%s<div class="cb"><span class="kind">%s</span>'
+            '<h3>%s</h3><p class="cs">%s</p><span class="go">%s</span></div></a>') % (
+        hp.Lx(lang, HUB + a["slug"] + "/"), img, esc(ui["news"]),
+        esc(L(a["title"], lang)), esc(L(a.get("subtitle", {}), lang)), esc(ui["read"]))
+
+def _section(cover, kicker, title, cards_html, wrap_cls, soon=""):
+    head = ('<div class="nsec"><div class="nsechd">'
+            '<img src="%s" alt="" loading="lazy" onerror="this.remove()">'
+            '<div class="t"><div class="k">%s</div><h2>%s</h2></div></div></div>') % (
+        esc(cover), esc(kicker), esc(title))
+    if cards_html:
+        inner = '<div class="nsec"><div class="%s">%s</div></div>' % (wrap_cls, cards_html)
+    else:
+        inner = '<div class="nsec"><p class="nsoon">%s</p></div>' % esc(soon)
+    return head + inner
+
 def build_hub(lang):
     ui = UI.get(lang, UI[SOURCE_LANG])
     arts = json.load(open(DATA, encoding="utf-8"))["articles"]
-    cards = ""
-    for a in arts:
-        banner = a.get("banner", "")
-        img = ('<img src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(banner)) if banner else ""
-        cards += ('<a class="ncard" href="%s">%s<div class="cb"><span class="kind">%s</span>'
-                  '<h3>%s</h3><p class="cs">%s</p><span class="go">%s</span></div></a>') % (
-            hp.Lx(lang, HUB + a["slug"] + "/"), img, esc(ui["news"]),
-            esc(L(a["title"], lang)), esc(L(a.get("subtitle", {}), lang)), esc(ui["read"]))
-    body = CSS + '<div class="ncards">%s</div>' % cards
+    news = [a for a in arts if a.get("category") == "news"]
+    know = [a for a in arts if a.get("category") != "news"]
+    # Industry News — one row, up to 4 per view, carousel-ready (scrolls)
+    news_html = _section(COVER_NEWS, ui["news"], ui["sec_news"],
+                         "".join(_card(a, lang, ui) for a in news), "nrow", ui["soon"])
+    # Lab & Labeling Knowledge — all articles laid out in a grid
+    know_html = _section(COVER_KNOWLEDGE, ui["hub_title"], ui["sec_know"],
+                         "".join(_card(a, lang, ui) for a in know), "ncards")
+    body = CSS + news_html + know_html
     crumb = [(ui["home"], "/"), (ui["hub_title"], HUB)]
-    # brand Insight hero (Knowledge Drives Better Decisions) — without the body paragraph
+    # brand Insight hero (Knowledge Drives Better Decisions) — with the two-section sub-line
     s = hp.HOME2.get(lang, hp.HOME2["en"])["sections"][2]
-    hero = hp.page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
+    hero = hp.page_hero(lang, s["eyebrow"], s["h2"], ui["hero_sub"], "",
                         s["b1"], s["b1u"], s["b2"], s["b2u"], hp.SECTION_BG.get(2, ""))
     content = hp.page(lang, HUB, ui["hub_title"] + " | ETIA", ui["hub_lede"],
                       ui["hub_title"], "", body, crumb, active="insights", trust=False, hero=hero,

@@ -518,7 +518,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 <div class="topstrip"></div>
 <header><div class="wrap"><a class="logo" href="/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></a><nav><div class="navlinks"><a href="/">Home</a><div class="nd" onmouseenter="etaOpen(this)" onmouseleave="etaClose(this)"><a class="ndt" href="/products/" onclick="return etaProd(this,event)">Product <span class="caret">&#9662;</span></a><div class="ndm mega"><a href="/industries/pcb-electronics-labeling-solutions/"><b>PCB</b><span>Reflow-, wash- and ESD-safe identification for electronics.</span></a><a href="/industries/automotive-labeling-solutions/"><b>Automotive &amp; Tire</b><span>Vehicle, tire, battery and component identification.</span></a><a href="/industries/wire-cable-labeling-solutions/"><b>Wire &amp; Cable</b><span>Durable marking for wire, cable and harness assemblies.</span></a><a href="/industries/outdoor-energy-labeling-solutions/"><b>Outdoor &amp; Energy</b><span>Weatherable identification that survives years outdoors.</span></a><a href="/industries/medical-pharmaceutical-labeling-solutions/"><b>Medical &amp; Pharmacy</b><span>Device, lab and cold-storage ID through sterilization.</span></a><a href="/industries/steel-metal-ceramic-labeling-solutions/"><b>Steel &amp; Ceramics</b><span>High-temperature identification for metal processing.</span></a></div><div class="ndmob"><a class="ndma" href="/industries/pcb-electronics-labeling-solutions/">PCB</a><a class="ndma" href="/industries/automotive-labeling-solutions/">Automotive &amp; Tire</a><a class="ndma" href="/industries/wire-cable-labeling-solutions/">Wire &amp; Cable</a><a class="ndma" href="/industries/outdoor-energy-labeling-solutions/">Outdoor &amp; Energy</a><a class="ndma" href="/industries/medical-pharmaceutical-labeling-solutions/">Medical &amp; Pharmacy</a><a class="ndma" href="/industries/steel-metal-ceramic-labeling-solutions/">Steel &amp; Ceramics</a></div></div><a href="/applications/">Solutions</a><a href="/insights/" class="on">Insight</a><a href="/service/">Service</a></div><div class="langsw"><a href="/insights/" class="on">EN</a><a href="/cn/insights/">CN</a><a href="/vn/insights/">VN</a><a href="/th/insights/">TH</a></div><button class="navtog" type="button" aria-label="Menu" onclick="etaMenu(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></nav></div></header>
 <div class="wrap"><div class="crumb"><a href="/">Home</a> &rsaquo; <b>Insights</b></div></div>
-<section class="hbanner" style="background-image:url(https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/INSIGHT-NEWBANNER)"><div class="wrap"><div class="eyebrow">TECHNICAL GUIDANCE · MATERIAL KNOWLEDGE · CASE STUDIES</div><h1>Knowledge Drives Better Decisions.</h1><p class="hsub">Application notes, material insights, industry news, and expert guidance.</p><div class="btns"><a class="hcta" href="/contact/">Talk to us</a></div></div></section>
+<section class="hbanner" style="background-image:url(https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/INSIGHT-NEWBANNER)"><div class="wrap"><div class="eyebrow">TECHNICAL GUIDANCE · MATERIAL KNOWLEDGE · CASE STUDIES</div><h1>Knowledge Drives Better Decisions.</h1><p class="hsub">Industry News · Lab &amp; Labeling Knowledge</p><div class="btns"><a class="hcta" href="/contact/">Talk to us</a></div></div></section>
 
 
 <style>
@@ -537,8 +537,21 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .art h2{font-size:20px;color:#143C96;margin:26px 0 10px}
 .art p{font-size:15.5px;line-height:1.85;color:#41506e;margin:0 0 12px}
 .nback{display:inline-block;margin:8px 0 0;font-size:14px;font-weight:700;color:#1A56DB;text-decoration:none}
+/* hub — section covers that split News vs Knowledge */
+.nsec{max-width:1080px;margin:0 auto;padding:0 22px}
+.nsechd{position:relative;border-radius:16px;overflow:hidden;margin:30px 0 18px;min-height:150px;display:flex;align-items:flex-end;background:#12224b}
+.nsechd img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
+.nsechd::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,60,150,.82) 8%,rgba(20,60,150,.42) 55%,rgba(20,60,150,.08))}
+.nsechd .t{position:relative;z-index:2;padding:20px 24px}
+.nsechd .t .k{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8fe063}
+.nsechd .t h2{margin:3px 0 0;font-size:26px;color:#fff;font-family:var(--sans);font-weight:800;line-height:1.1}
+.nrow{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:18px;padding:2px 0 14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.nrow::-webkit-scrollbar{height:6px}
+.nrow::-webkit-scrollbar-thumb{background:#c7d3ea;border-radius:6px}
+.nrow .ncard{flex:0 0 258px;scroll-snap-align:start}
+.nsoon{color:#5a6884;font-size:14px;padding:8px 2px 18px}
 /* hub */
-.ncards{max-width:1080px;margin:0 auto;padding:30px 22px 10px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.ncards{max-width:1080px;margin:0 auto;padding:4px 22px 10px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
 .ncard{background:#fff;border:1px solid #dbe3f1;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .15s,transform .15s}
 .ncard:hover{box-shadow:0 14px 34px rgba(20,60,150,.14);transform:translateY(-3px)}
 .ncard img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#e8eefb}
@@ -556,10 +569,15 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
   .art .lead{font-size:15.5px;line-height:1.66;margin:0 0 16px}
   .art h2{font-size:18px;margin:20px 0 8px}
   .art p{font-size:14.5px;line-height:1.7;margin:0 0 10px}
-  .ncards{padding:22px 18px 6px;gap:16px}
+  .ncards{padding:4px 18px 6px;gap:16px}
+  .nsec{padding:0 18px}
+  .nsechd{min-height:118px;margin:24px 0 14px}
+  .nsechd .t{padding:15px 18px}
+  .nsechd .t h2{font-size:20px}
+  .nrow .ncard{flex:0 0 230px}
 }
 </style>
-<div class="ncards"><a class="ncard" href="/insights/ul94-vtm0-flame-retardant-labels/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/Flame%20Retardant%20Label" alt="" loading="lazy" onerror="this.remove()"><div class="cb"><span class="kind">Insight</span><h3>What Is UL94 VTM-0? A Guide to Flame-Retardant Label Materials</h3><p class="cs">Understanding the UL94 VTM-0 rating — and how to choose flame-retardant labels for batteries, harnesses, PCBs and more.</p><span class="go">Read →</span></div></a><a class="ncard" href="/insights/glp-1-cold-chain-labeling/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/GLP-1%20COLD%20CHAIN" alt="" loading="lazy" onerror="this.remove()"><div class="cb"><span class="kind">Insight</span><h3>Cold Chain Labeling for GLP‑1 Drugs</h3><p class="cs">A $133 billion market by 2035 — and the label performance and compliance it demands</p><span class="go">Read →</span></div></a></div>
+<div class="nsec"><div class="nsechd"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-NEWS" alt="" loading="lazy" onerror="this.remove()"><div class="t"><div class="k">Insight</div><h2>Industry News</h2></div></div></div><div class="nsec"><p class="nsoon">More articles coming soon.</p></div><div class="nsec"><div class="nsechd"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-KNOWLEDGE" alt="" loading="lazy" onerror="this.remove()"><div class="t"><div class="k">Insights</div><h2>Lab &amp; Labeling Knowledge</h2></div></div></div><div class="nsec"><div class="ncards"><a class="ncard" href="/insights/ul94-vtm0-flame-retardant-labels/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/Flame%20Retardant%20Label" alt="" loading="lazy" onerror="this.remove()"><div class="cb"><span class="kind">Insight</span><h3>What Is UL94 VTM-0? A Guide to Flame-Retardant Label Materials</h3><p class="cs">Understanding the UL94 VTM-0 rating — and how to choose flame-retardant labels for batteries, harnesses, PCBs and more.</p><span class="go">Read →</span></div></a><a class="ncard" href="/insights/glp-1-cold-chain-labeling/"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/GLP-1%20COLD%20CHAIN" alt="" loading="lazy" onerror="this.remove()"><div class="cb"><span class="kind">Insight</span><h3>Cold Chain Labeling for GLP‑1 Drugs</h3><p class="cs">A $133 billion market by 2035 — and the label performance and compliance it demands</p><span class="go">Read →</span></div></a></div></div>
 <footer><div class="wrap">
 <div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></div>
 <div class="fg">
