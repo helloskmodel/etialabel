@@ -17,8 +17,8 @@ esc = hp.esc
 UI = {
   "en": {"hub_title": "Insights", "hub_lede": "Market analysis, material knowledge and application know-how for durable industrial labels.",
          "read": "Read →", "back": "← All insights", "home": "Home", "news": "Insight",
-         "hero_sub": "Industry News · Lab & Labeling Knowledge",
-         "sec_news": "Industry News", "sec_know": "Lab & Labeling Knowledge",
+         "hero_sub": "Industry News · Label & Labeling Knowledge",
+         "sec_news": "Industry News", "sec_know": "Label & Labeling Knowledge",
          "soon": "More articles coming soon."},
   "zh": {"hub_title": "洞察", "hub_lede": "耐久工业标签的市场解读、材料知识与应用经验。",
          "read": "阅读 →", "back": "← 返回全部洞察", "home": "首页", "news": "洞察",
