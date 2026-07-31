@@ -129,7 +129,7 @@ nav .ndm.sm{position:absolute;top:48px;left:0;background:#fff;border:1px solid v
   transform:translateY(8px);transition:.16s;z-index:60}
 nav .nd.open .ndm.sm,nav .nd:hover .ndm.sm{opacity:1;visibility:visible;transform:translateY(0)}
 nav .ndm.sm a{display:block;font-size:14px;font-weight:600;color:var(--ink);padding:8px 14px;border-radius:9px;white-space:nowrap}
-nav .ndm.sm a:hover{background:var(--tint-blue);color:var(--blue);text-decoration:none}
+nav .ndm.sm a:hover{background:var(--tint-blue);color:var(--blue);text-decoration:none}nav .ndm.mega{position:absolute;top:48px;left:0;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 22px 56px rgba(20,40,90,.18);padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:2px 10px;width:600px;max-width:92vw;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .16s,transform .16s,visibility .16s;z-index:60}.nd:hover .ndm.mega,nav .nd.open .ndm.mega{opacity:1;visibility:visible;transform:translateY(0)}nav .ndm.mega a{display:block;padding:10px 12px;border-radius:10px;text-decoration:none}nav .ndm.mega a:hover{background:var(--tint-blue)}nav .ndm.mega a b{display:block;font-size:14.5px;color:var(--blue-deep);font-weight:700}nav .ndm.mega a:hover b{color:var(--blue)}nav .ndm.mega a span{display:block;font-size:12.5px;color:var(--mut);line-height:1.45;margin-top:2px}
 .ndmob{display:none}
 @media(max-width:980px){nav .ndm.pm{grid-template-columns:200px 1fr;left:16px}.pm .ndsub{display:none}}
 @media(max-width:900px){
@@ -140,7 +140,7 @@ nav .navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:
 nav.open .navlinks{display:flex}
 nav .navlinks>a,nav .navlinks .ndt{padding:14px 24px;font-size:16px;border-bottom:1px solid var(--bg)}
 nav .navlinks .nd,nav .navlinks .nd.ndwide{display:block;position:static}
-nav .navlinks .ndm.pm,nav .navlinks .ndm.sm{display:none}
+nav .navlinks .ndm.pm,nav .navlinks .ndm.sm,nav .navlinks .ndm.mega{display:none}
 nav .navlinks .ndt{display:flex;align-items:center;justify-content:space-between}
 nav .navlinks .ndt .caret{display:inline-block;font-size:15px;color:var(--faint);transition:.15s}
 nav .navlinks .nd.mopen .ndt,nav .navlinks .nd.mopen .ndt .caret{color:var(--blue)}
@@ -682,7 +682,15 @@ _MENU_VITH = {"By Environment": ("Theo môi trường", "ตามสภาพ�
               "By Industry": ("Theo ngành", "ตามอุตสาหกรรม"),
               "Heat Resistant": ("Chịu nhiệt", "ทนความร้อน"),
               "Low Temperature Resistant": ("Chịu nhiệt độ thấp", "ทนอุณหภูมิต่ำ")}
-def simple_dropdown(lang, top_en, top_href, items, is_active, linkfn):
+INDUSTRY_MENU_DESC = {
+ "/industries/pcb-electronics-labeling-solutions/":{"en":"Reflow-, wash- and ESD-safe identification for electronics.","zh":"耐回流焊、清洗与防静电的电子标识","vi":"Nhận diện chịu reflow, rửa và an toàn ESD cho điện tử.","th":"การระบุที่ทนรีโฟลว์ ล้าง และปลอดภัย ESD สำหรับอิเล็กทรอนิกส์"},
+ "/industries/automotive-labeling-solutions/":{"en":"Vehicle, tire, battery and component identification.","zh":"汽车、轮胎、电池与零部件标识","vi":"Nhận diện xe, lốp, pin và linh kiện.","th":"การระบุยานพาหนะ ยาง แบตเตอรี่ และชิ้นส่วน"},
+ "/industries/wire-cable-labeling-solutions/":{"en":"Durable marking for wire, cable and harness assemblies.","zh":"线缆与束线组件的耐久标识","vi":"Đánh dấu bền cho dây, cáp và bó dây.","th":"การทำเครื่องหมายทนทานสำหรับสายไฟ สายเคเบิล และชุดสายไฟ"},
+ "/industries/outdoor-energy-labeling-solutions/":{"en":"Weatherable identification that survives years outdoors.","zh":"耐候标识，户外多年不失效","vi":"Nhận diện chịu thời tiết, bền nhiều năm ngoài trời.","th":"การระบุที่ทนสภาพอากาศ อยู่ได้หลายปีกลางแจ้ง"},
+ "/industries/medical-pharmaceutical-labeling-solutions/":{"en":"Device, lab and cold-storage ID through sterilization.","zh":"器械、实验室与冷储标识，耐灭菌","vi":"Nhận diện thiết bị, phòng lab và bảo quản lạnh, chịu tiệt trùng.","th":"การระบุอุปกรณ์ ห้องแล็บ และการเก็บเย็น ผ่านการฆ่าเชื้อ"},
+ "/industries/steel-metal-ceramic-labeling-solutions/":{"en":"High-temperature identification for metal processing.","zh":"金属加工的高温标识","vi":"Nhận diện nhiệt độ cao cho gia công kim loại.","th":"การระบุอุณหภูมิสูงสำหรับการแปรรูปโลหะ"},
+}
+def simple_dropdown(lang, top_en, top_href, items, is_active, linkfn, descs=None):
     zh = (lang == "zh")
     def lab(e, z):
         if zh: return z
@@ -690,13 +698,19 @@ def simple_dropdown(lang, top_en, top_href, items, is_active, linkfn):
         if lang == "th" and e in _MENU_VITH: return _MENU_VITH[e][1]
         return e
     top = navlab(lang, top_en)
-    desktop = "".join('<a href="%s">%s</a>' % (linkfn(u), esc(lab(e, z))) for e, z, u in items)
     mob = "".join('<a class="ndma" href="%s">%s</a>' % (linkfn(u), esc(lab(e, z))) for e, z, u in items)
+    if descs:  # mega-menu panel: name + short description per item
+        desktop = "".join('<a href="%s"><b>%s</b><span>%s</span></a>' % (
+            linkfn(u), esc(lab(e, z)), esc(descs.get(u, {}).get(lang) or descs.get(u, {}).get("en", "")))
+            for e, z, u in items)
+        panel = '<div class="ndm mega">%s</div>' % desktop
+    else:
+        desktop = "".join('<a href="%s">%s</a>' % (linkfn(u), esc(lab(e, z))) for e, z, u in items)
+        panel = '<div class="ndm sm">%s</div>' % desktop
     return ('<div class="nd" onmouseenter="etaOpen(this)" onmouseleave="etaClose(this)">'
             '<a class="ndt%s" href="%s" onclick="return etaProd(this,event)">%s <span class="caret">&#9662;</span></a>'
-            '<div class="ndm sm">%s</div>'
-            '<div class="ndmob">%s</div></div>') % (
-        (" on" if is_active else ""), linkfn(top_href), esc(top), desktop, mob)
+            '%s<div class="ndmob">%s</div></div>') % (
+        (" on" if is_active else ""), linkfn(top_href), esc(top), panel, mob)
 
 ALL_URLS = []   # (path, group, changefreq)  — English canonical set for sitemap
 def track(path, group): ALL_URLS.append((path, group))
@@ -724,7 +738,7 @@ def nav_html(lang, active, path="/", langs=None):
     for t, href, key in NAV_ITEMS:
         if key == "products":
             # Product dropdown lists the industry sectors directly (one level).
-            items += simple_dropdown(lang, t, href, PROD_AXES[1][3], key == active, linkfn)
+            items += simple_dropdown(lang, t, href, PROD_AXES[1][3], key == active, linkfn, descs=INDUSTRY_MENU_DESC)
         else:
             items += '<a href="%s"%s>%s</a>' % (Lx(lang, href), ' class="on"' if key==active else '', navlab(lang, t))
     if len(langs) > 2:
@@ -1349,7 +1363,7 @@ def home_switcher(active):
 def home_nav(lang):
     lf=lambda p: home_hlink(lang,p)
     # Product dropdown lists the industry sectors directly (matches nav_html).
-    prod=simple_dropdown(lang, "Product", "/products/", PROD_AXES[1][3], False, lf)
+    prod=simple_dropdown(lang, "Product", "/products/", PROD_AXES[1][3], False, lf, descs=INDUSTRY_MENU_DESC)
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
     # top nav after Product: Solutions, Insight, Service
