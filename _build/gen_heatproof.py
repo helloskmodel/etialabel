@@ -472,11 +472,12 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .indcar-wrap{position:relative;margin-top:20px}
 .indcar{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px}
 .indcar::-webkit-scrollbar{display:none}
-/* Key Products carousel — same arrow-nav pattern as the Industry carousel */
+/* Key Products carousel — identical to the Industry carousel (arrows + card size) */
 .prodcar{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px}
 .prodcar::-webkit-scrollbar{display:none}
-.prodcar>.acard{flex:0 0 212px;scroll-snap-align:start}
-@media(max-width:600px){.prodcar>.acard{flex:0 0 66%}}
+.prodcar>.acard{flex:0 0 280px;scroll-snap-align:start}
+.prodcar>.acard .acard-img{aspect-ratio:16/9}
+@media(max-width:600px){.prodcar>.acard{flex:0 0 66%}.prodcar>.acard .acard-img{aspect-ratio:16/10}}
 .indcar>.acard{flex:0 0 280px;scroll-snap-align:start}
 .indcar>.acard .acard-img{aspect-ratio:16/9}
 .acard-img.g0{background:linear-gradient(150deg,#1A56DB,#143C96)}
