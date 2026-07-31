@@ -107,6 +107,10 @@ CSS = """
 .ncard .nchips{margin:0 0 2px}
 .ncard .nchip{font-size:10.5px;padding:2px 8px}
 .art{max-width:760px;margin:0 auto;padding:34px 22px}
+.art .leadrow{overflow:hidden;margin:0 0 22px}
+.art .leadimg{float:left;width:230px;max-width:40%;height:auto;border-radius:10px;border:1px solid #e2e9f5;margin:3px 22px 10px 0}
+.art .leadrow .lead{margin:0}
+@media(max-width:560px){.art .leadimg{float:none;width:100%;max-width:100%;margin:0 0 14px}}
 .art .lead{font-size:17px;line-height:1.8;color:#2c3a58;margin:0 0 22px;font-weight:500}
 .art h2{font-size:20px;color:#143C96;margin:26px 0 10px}
 .art p{font-size:15.5px;line-height:1.85;color:#41506e;margin:0 0 12px}
@@ -169,7 +173,10 @@ def build_article(a, lang):
             '<h1>%s</h1><p class="sub">%s</p>%s%s<div style="margin-top:16px">%s</div></div></section>') % (
         CSS, bg, esc(ui["news"]), esc(title), esc(L(a.get("subtitle", {}), lang)),
         chips_html(a, lang), ('<div class="ntags">%s</div>' % tags) if tags else "", hp.hero_cta(lang))
-    body = '<div class="art"><p class="lead">%s</p>' % esc(L(a.get("lead", {}), lang))
+    lead_img = a.get("lead_img", "")
+    limg = ('<img class="leadimg" src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(lead_img)) if lead_img else ""
+    body = ('<div class="art"><div class="leadrow">%s<p class="lead">%s</p></div>'
+            % (limg, esc(L(a.get("lead", {}), lang))))
     for sec in L(a.get("sections", {}), lang):
         if sec.get("h"):
             body += "<h2>%s</h2>" % esc(sec["h"])
