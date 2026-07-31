@@ -1,7 +1,12 @@
 {
   "slug": "e-2512bl",
   "source": "client product brief — E-2512BL black gloss PET laser-etch label (EN authoritative)",
-  "langs": ["en", "zh"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER",
   "product_img": "",
   "eyebrow": {
@@ -10,15 +15,21 @@
   },
   "title": {
     "en": "E-2512BL — Black Gloss PET Laser-Etch Label",
-    "zh": "E-2512BL · 黑色亮面 PET 激光刻蚀标签"
+    "zh": "E-2512BL · 黑色亮面 PET 激光刻蚀标签",
+    "vi": "E-2512BL · Nhãn PET đen bóng khắc laser",
+    "th": "E-2512BL · ฉลาก PET ดำเงาแกะสลักด้วยเลเซอร์"
   },
   "tagline": {
     "en": "Permanent Laser Marking. Trusted Traceability.",
-    "zh": "激光刻写杜绝篡改，原厂溯源有保障"
+    "zh": "激光刻写杜绝篡改，原厂溯源有保障",
+    "vi": "Khắc laser vĩnh viễn. Truy xuất đáng tin cậy.",
+    "th": "การทำเครื่องหมายด้วยเลเซอร์แบบถาวร การตรวจสอบย้อนกลับที่เชื่อถือได้"
   },
   "positioning": {
     "en": "E-2512BL is a dual-layer PET laser-markable label featuring a black surface and white core for high-contrast laser engraving. Compatible with CO₂, fiber, UV, and YAG laser systems, it combines permanent acrylic adhesive with a destructible construction to prevent label transfer or tampering. Designed for automotive VIN plates, engine components, glass labels, warranty plates, and permanent asset identification, it withstands temperatures from -40°C to 180°C, as well as oil, abrasion, and harsh environments. Laser marking and cutting can be completed in a single process, supporting automated production and full-life traceability. RoHS compliant.",
-    "zh": "E-2512BL 为双层 PET 激光标签，黑面白底显色，适配全类型激光打标机。采用永久丙烯酸胶与自毁基材，用于汽车 VIN、发动机件、车窗、保修铭牌。耐 −40℃~180℃高温油污，激光打刻裁切一体成型，RoHS 环保，实现零部件全周期溯源。"
+    "zh": "E-2512BL 为双层 PET 激光标签，黑面白底显色，适配全类型激光打标机。采用永久丙烯酸胶与自毁基材，用于汽车 VIN、发动机件、车窗、保修铭牌。耐 −40℃~180℃高温油污，激光打刻裁切一体成型，RoHS 环保，实现零部件全周期溯源。",
+    "vi": "E-2512BL là nhãn PET hai lớp có thể khắc laser với mặt đen và lõi trắng cho khắc laser tương phản cao. Tương thích với hệ thống laser CO₂, fiber, UV và YAG, kết hợp keo acrylic vĩnh viễn với cấu tạo tự hủy để ngăn chuyển nhãn hay giả mạo. Dùng cho biển VIN ô tô, chi tiết động cơ, nhãn kính, biển bảo hành và nhận diện tài sản vĩnh viễn; chịu −40°C đến 180°C, dầu, mài mòn và môi trường khắc nghiệt. Khắc và cắt laser trong một quy trình. Tuân thủ RoHS.",
+    "th": "E-2512BL เป็นฉลาก PET สองชั้นที่แกะสลักด้วยเลเซอร์ได้ มีผิวสีดำและแกนสีขาวเพื่อการแกะสลักคอนทราสต์สูง รองรับระบบเลเซอร์ CO₂ ไฟเบอร์ UV และ YAG ผสานกาวอะคริลิกถาวรกับโครงสร้างทำลายตัวเองเพื่อป้องกันการย้ายฉลากหรือปลอมแปลง สำหรับแผ่น VIN ยานยนต์ ชิ้นส่วนเครื่องยนต์ ฉลากกระจก แผ่นรับประกัน และการระบุทรัพย์สินถาวร ทน −40°C ถึง 180°C น้ำมัน การขัดถู และสภาพแวดล้อมรุนแรง ทำเครื่องหมายและตัดด้วยเลเซอร์ในขั้นตอนเดียว เป็นไปตาม RoHS"
   },
   "challenges": {},
   "features": {
@@ -39,6 +50,24 @@
       "激光打标裁切同步完成，适配自动化产线",
       "金属／塑料／玻璃通用，配套玻璃专用激光胶带",
       "通过 RoHS 环保标准"
+    ],
+    "vi": [
+      "Cấu tạo PET đen hai lớp cho khắc laser trắng sắc nét, tương phản cao.",
+      "Cấu trúc nhãn tự hủy ngăn tháo gỡ và chuyển nhãn.",
+      "Chịu −40°C đến 180°C, kháng dầu, hóa chất và mài mòn xuất sắc.",
+      "Keo acrylic vĩnh viễn bám chắc lâu dài; dán khi gia nhiệt càng tăng độ bám.",
+      "Hỗ trợ khắc laser và bế đồng thời cho dây chuyền tự động.",
+      "Phù hợp kim loại, nhựa và kính; có băng laser chuyên dụng cho kính.",
+      "Tuân thủ RoHS."
+    ],
+    "th": [
+      "โครงสร้าง PET ดำสองชั้นให้การแกะสลักด้วยเลเซอร์สีขาวคมชัดคอนทราสต์สูง",
+      "โครงสร้างฉลากทำลายตัวเองป้องกันการถอดและย้าย",
+      "ทน −40°C ถึง 180°C ทนน้ำมัน สารเคมี และการขัดถูได้ดีเยี่ยม",
+      "กาวอะคริลิกถาวรยึดเกาะระยะยาวแข็งแรง การติดแบบให้ความร้อนเพิ่มการยึดเกาะ",
+      "รองรับการทำเครื่องหมายด้วยเลเซอร์และไดคัทพร้อมกันสำหรับสายการผลิตอัตโนมัติ",
+      "เหมาะกับโลหะ พลาสติก และกระจก พร้อมเทปเลเซอร์เฉพาะสำหรับกระจก",
+      "เป็นไปตาม RoHS"
     ]
   },
   "benefits": {
@@ -57,84 +86,260 @@
       "全车多点位通用，统一物料采购",
       "不易脱落返工，长期综合使用成本更低",
       "尺寸、二维码、序列号、防伪图案均可定制"
+    ],
+    "vi": [
+      "Giúp ngăn hàng giả, dán nhãn lại và thay linh kiện trái phép.",
+      "Duy trì nhận diện vĩnh viễn suốt vòng đời xe.",
+      "Đơn giản hóa sản xuất bằng cách tích hợp khắc và cắt vào một quy trình.",
+      "Một giải pháp nhãn cho nhiều linh kiện, giảm phức tạp mua sắm.",
+      "Giảm hỏng nhãn và làm lại, hạ tổng chi phí vòng đời.",
+      "Có sẵn kích thước tùy chỉnh, mã QR, số sê-ri và đồ họa bảo mật."
+    ],
+    "th": [
+      "ช่วยป้องกันการปลอมแปลง การติดฉลากใหม่ และการเปลี่ยนชิ้นส่วนที่ไม่ได้รับอนุญาต",
+      "รักษาการระบุถาวรตลอดอายุยานพาหนะ",
+      "ทำให้การผลิตง่ายขึ้นโดยรวมการทำเครื่องหมายและการตัดเป็นกระบวนการเดียว",
+      "ฉลากเดียวสำหรับหลายชิ้นส่วน ลดความซับซ้อนในการจัดซื้อ",
+      "ลดความล้มเหลวของฉลากและการทำซ้ำ ลดต้นทุนตลอดวงจรชีวิต",
+      "มีขนาดที่กำหนดเอง คิวอาร์โค้ด หมายเลขซีเรียล และกราฟิกความปลอดภัย"
     ]
   },
   "spec_table": {
     "headers": {
-      "en": ["Parameter", "Details"],
-      "zh": ["参数", "详情"]
+      "en": [
+        "Parameter",
+        "Details"
+      ],
+      "zh": [
+        "参数",
+        "详情"
+      ]
     },
     "rows": [
-      {"group": {"en": "Construction", "zh": "结构"}},
-      {"cells": [
-        {"en": "Face Stock", "zh": "面材"},
-        {"en": "0.052 mm Black Gloss PET", "zh": "0.052mm 黑色亮面 PET"}
-      ]},
-      {"cells": [
-        {"en": "Adhesive", "zh": "胶粘剂"},
-        {"en": "0.025 mm Permanent Acrylic", "zh": "0.025mm 永久丙烯酸胶"}
-      ]},
-      {"cells": [
-        {"en": "Liner", "zh": "底纸"},
-        {"en": "0.068 mm Release Liner", "zh": "0.068mm 离型底纸"}
-      ]},
-      {"group": {"en": "Adhesion Performance", "zh": "粘接性能"}},
-      {"cells": [
-        {"en": "Peel Adhesion", "zh": "剥离力"},
-        {"en": "13 N/25 mm", "zh": "13N/25mm"}
-      ]},
-      {"cells": [
-        {"en": "Initial Tack", "zh": "初粘力"},
-        {"en": "15 N/25 mm", "zh": "15N/25mm"}
-      ]},
-      {"cells": [
-        {"en": "Holding Power", "zh": "持粘"},
-        {"en": "≥ 48 hours (25 mm)", "zh": "≥48h/25mm"}
-      ]},
-      {"group": {"en": "Environmental & Processing", "zh": "环境与加工"}},
-      {"cells": [
-        {"en": "Service Temperature", "zh": "耐温"},
-        {"en": "-40°C to 180°C", "zh": "−40℃~180℃"}
-      ]},
-      {"cells": [
-        {"en": "Laser Compatibility", "zh": "激光兼容"},
-        {"en": "Compatible with CO₂, Fiber, UV, and YAG laser marking systems", "zh": "兼容 CO₂、光纤、UV、YAG 激光打标机"}
-      ]},
-      {"group": {"en": "Storage & Compliance", "zh": "存储环保"}},
-      {"cells": [
-        {"en": "Shelf Life", "zh": "保质期"},
-        {"en": "12 months at 22°C / 50% RH", "zh": "22℃、50% 湿度下 12 个月"}
-      ]},
-      {"cells": [
-        {"en": "Compliance", "zh": "环保"},
-        {"en": "RoHS Compliant", "zh": "符合 RoHS 指令"}
-      ]},
-      {"group": {"en": "Application Guidelines", "zh": "使用提示"}},
-      {"cells": [
-        {"en": "Surface", "zh": "表面"},
-        {"en": "Apply to clean, dry, oil-free surfaces.", "zh": "粘贴面清洁、干燥、无油污。"}
-      ]},
-      {"cells": [
-        {"en": "Pressure", "zh": "施压"},
-        {"en": "Apply firm pressure after installation.", "zh": "贴装后充分施压。"}
-      ]},
-      {"cells": [
-        {"en": "Heat", "zh": "加温"},
-        {"en": "Moderate heat during application improves final bond strength.", "zh": "适度加温可增强最终粘接强度。"}
-      ]},
-      {"group": {"en": "Security Features", "zh": "安全特性"}},
-      {"cells": [
-        {"en": "Tamper Evidence", "zh": "防篡改"},
-        {"en": "Destructible construction leaves visible evidence when removal is attempted.", "zh": "自毁结构，尝试揭除时留下明显痕迹。"}
-      ]},
-      {"cells": [
-        {"en": "Custom Security Graphics", "zh": "防伪定制"},
-        {"en": "Custom overt or covert security graphics are available for anti-counterfeiting applications.", "zh": "可定制显性或隐藏防伪图文，用于防伪应用。"}
-      ]}
+      {
+        "group": {
+          "en": "Construction",
+          "zh": "结构"
+        }
+      },
+      {
+        "cells": [
+          {
+            "en": "Face Stock",
+            "zh": "面材"
+          },
+          {
+            "en": "0.052 mm Black Gloss PET",
+            "zh": "0.052mm 黑色亮面 PET"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesive",
+            "zh": "胶粘剂"
+          },
+          {
+            "en": "0.025 mm Permanent Acrylic",
+            "zh": "0.025mm 永久丙烯酸胶"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Liner",
+            "zh": "底纸"
+          },
+          {
+            "en": "0.068 mm Release Liner",
+            "zh": "0.068mm 离型底纸"
+          }
+        ]
+      },
+      {
+        "group": {
+          "en": "Adhesion Performance",
+          "zh": "粘接性能"
+        }
+      },
+      {
+        "cells": [
+          {
+            "en": "Peel Adhesion",
+            "zh": "剥离力"
+          },
+          {
+            "en": "13 N/25 mm",
+            "zh": "13N/25mm"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Initial Tack",
+            "zh": "初粘力"
+          },
+          {
+            "en": "15 N/25 mm",
+            "zh": "15N/25mm"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Holding Power",
+            "zh": "持粘"
+          },
+          {
+            "en": "≥ 48 hours (25 mm)",
+            "zh": "≥48h/25mm"
+          }
+        ]
+      },
+      {
+        "group": {
+          "en": "Environmental & Processing",
+          "zh": "环境与加工"
+        }
+      },
+      {
+        "cells": [
+          {
+            "en": "Service Temperature",
+            "zh": "耐温"
+          },
+          {
+            "en": "-40°C to 180°C",
+            "zh": "−40℃~180℃"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Laser Compatibility",
+            "zh": "激光兼容"
+          },
+          {
+            "en": "Compatible with CO₂, Fiber, UV, and YAG laser marking systems",
+            "zh": "兼容 CO₂、光纤、UV、YAG 激光打标机"
+          }
+        ]
+      },
+      {
+        "group": {
+          "en": "Storage & Compliance",
+          "zh": "存储环保"
+        }
+      },
+      {
+        "cells": [
+          {
+            "en": "Shelf Life",
+            "zh": "保质期"
+          },
+          {
+            "en": "12 months at 22°C / 50% RH",
+            "zh": "22℃、50% 湿度下 12 个月"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Compliance",
+            "zh": "环保"
+          },
+          {
+            "en": "RoHS Compliant",
+            "zh": "符合 RoHS 指令"
+          }
+        ]
+      },
+      {
+        "group": {
+          "en": "Application Guidelines",
+          "zh": "使用提示"
+        }
+      },
+      {
+        "cells": [
+          {
+            "en": "Surface",
+            "zh": "表面"
+          },
+          {
+            "en": "Apply to clean, dry, oil-free surfaces.",
+            "zh": "粘贴面清洁、干燥、无油污。"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Pressure",
+            "zh": "施压"
+          },
+          {
+            "en": "Apply firm pressure after installation.",
+            "zh": "贴装后充分施压。"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Heat",
+            "zh": "加温"
+          },
+          {
+            "en": "Moderate heat during application improves final bond strength.",
+            "zh": "适度加温可增强最终粘接强度。"
+          }
+        ]
+      },
+      {
+        "group": {
+          "en": "Security Features",
+          "zh": "安全特性"
+        }
+      },
+      {
+        "cells": [
+          {
+            "en": "Tamper Evidence",
+            "zh": "防篡改"
+          },
+          {
+            "en": "Destructible construction leaves visible evidence when removal is attempted.",
+            "zh": "自毁结构，尝试揭除时留下明显痕迹。"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Custom Security Graphics",
+            "zh": "防伪定制"
+          },
+          {
+            "en": "Custom overt or covert security graphics are available for anti-counterfeiting applications.",
+            "zh": "可定制显性或隐藏防伪图文，用于防伪应用。"
+          }
+        ]
+      }
     ],
     "notes": {
-      "en": ["Figures are indicative typical values; verify against the current technical datasheet and by application testing before production."],
-      "zh": ["以上为参考性典型值；量产前请以最新技术数据表为准并经应用测试确认。"]
+      "en": [
+        "Figures are indicative typical values; verify against the current technical datasheet and by application testing before production."
+      ],
+      "zh": [
+        "以上为参考性典型值；量产前请以最新技术数据表为准并经应用测试确认。"
+      ]
     }
   },
   "applications": {
@@ -151,6 +356,20 @@
       "玻璃标签（车窗）",
       "保修铭牌",
       "永久资产标识"
+    ],
+    "vi": [
+      "Biển VIN ô tô",
+      "Chi tiết động cơ",
+      "Nhãn kính",
+      "Biển bảo hành",
+      "Nhận diện tài sản vĩnh viễn"
+    ],
+    "th": [
+      "แผ่น VIN ยานยนต์",
+      "ชิ้นส่วนเครื่องยนต์",
+      "ฉลากกระจก",
+      "แผ่นรับประกัน",
+      "การระบุทรัพย์สินถาวร"
     ]
   },
   "certifications": {}
