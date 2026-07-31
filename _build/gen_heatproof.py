@@ -892,8 +892,9 @@ def cta2(lang, kind, linkfn=L):
         esc(pk(c["h"])), esc(pk(c["body"])), linkfn(lang, c["b1u"]), esc(pk(c["b1"])),
         linkfn(lang, c["b2u"]), esc(pk(c["b2"])))
 
-def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, active="", trust=True, hero=None, langs=None):
+def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, active="", trust=True, hero=None, langs=None, keywords=""):
     canonical = SITE + PREFIX[lang] + path
+    kw_meta = ('<meta name="keywords" content="%s">' % esc(keywords)) if keywords else ""
     sch = [breadcrumb_jsonld(crumb, lang)] + (schema_extra or [])
     schema_js = "".join('<script type="application/ld+json">%s</script>' % json.dumps(s, ensure_ascii=False) for s in sch)
     cr = ' &rsaquo; '.join((('<a href="%s">%s</a>' % (Lx(lang,p), esc(n))) if p and i < len(crumb)-1 else '<b>%s</b>' % esc(n))
@@ -907,7 +908,7 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 <meta name="color-scheme" content="light">
 <link rel="icon" type="image/png" href="/favicon.png"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com" crossorigin><link rel="dns-prefetch" href="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com">
-<title>%s</title><meta name="description" content="%s">
+<title>%s</title><meta name="description" content="%s">%s
 <link rel="canonical" href="%s">%s
 <meta property="og:title" content="%s"><meta property="og:type" content="website"><meta property="og:site_name" content="ETIA Label">
 <style>%s</style>%s</head><body>
@@ -933,7 +934,7 @@ m.querySelectorAll('.midgroup').forEach(function(p){p.style.display=(p.getAttrib
 var mg=m.querySelector('.midgroup[data-mid="'+a+'"]');var first=mg?mg.querySelector('.axitem.haskid'):null;
 etaSub(first,first?first.getAttribute('data-sub'):'');}
 </script>
-</body></html>""" % (lang, esc(title), esc(desc), canonical, hreflang_block(path, langs), esc(title), CSS, schema_js,
+</body></html>""" % (lang, esc(title), esc(desc), kw_meta, canonical, hreflang_block(path, langs), esc(title), CSS, schema_js,
      Lx(lang,"/"), nav_html(lang, active, path, langs), cr, head_block, (trust_bar(lang) if trust else ""), body, footer_html(lang))
 
 def write(lang, path, content):

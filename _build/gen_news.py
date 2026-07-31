@@ -40,6 +40,41 @@ UI = {
 COVER_NEWS = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-NEWS"
 COVER_KNOWLEDGE = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-KNOWLEDGE"
 
+# Controlled industry taxonomy (keys map to consistent 4-lang labels) — set
+# each article's "industry" to a list of these keys.
+INDUSTRY_LABELS = {
+  "pcb":        {"en": "PCB & Electronics", "zh": "PCB 电子", "vi": "PCB & Điện tử", "th": "PCB และอิเล็กทรอนิกส์"},
+  "medical":    {"en": "Medical & Pharma", "zh": "医疗医药", "vi": "Y tế & Dược", "th": "การแพทย์และยา"},
+  "automotive": {"en": "Automotive", "zh": "汽车", "vi": "Ô tô", "th": "ยานยนต์"},
+  "cable":      {"en": "Cable & Wire", "zh": "线缆", "vi": "Cáp & Dây", "th": "สายเคเบิล"},
+  "steel":      {"en": "Steel & Metal", "zh": "钢铁金属", "vi": "Thép & Kim loại", "th": "เหล็กและโลหะ"},
+  "outdoor":    {"en": "Outdoor & Durable", "zh": "户外耐候", "vi": "Ngoài trời", "th": "กลางแจ้ง"},
+}
+
+def _ind_label(key, lang):
+    node = INDUSTRY_LABELS.get(key, {})
+    return node.get(lang) or node.get("en") or key
+
+def chips_html(a, lang):
+    """Industry (accent) + label-category chips for card / article hero."""
+    out = ""
+    for key in a.get("industry", []):
+        out += '<span class="nchip ind">%s</span>' % esc(_ind_label(key, lang))
+    for c in L(a.get("label_category", {}), lang):
+        out += '<span class="nchip cat">%s</span>' % esc(c)
+    return ('<div class="nchips">%s</div>' % out) if out else ""
+
+def seo_keywords(a):
+    """Flat English keyword string from industry + category + tags for <meta>."""
+    kw = [_ind_label(k, "en") for k in a.get("industry", [])]
+    kw += (a.get("label_category", {}) or {}).get("en", [])
+    kw += (a.get("tags", {}) or {}).get("en", [])
+    seen, out = set(), []
+    for k in kw:
+        if k and k not in seen:
+            seen.add(k); out.append(k)
+    return ", ".join(out)
+
 def L(node, lang):
     if not isinstance(node, dict):
         return node or ""
@@ -62,6 +97,15 @@ CSS = """
 .nhero .sub{color:#eef3ff;font-size:18px;font-weight:700;margin:0;max-width:40em}
 .ntags{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
 .ntag{font-size:12px;font-weight:700;color:#1A56DB;background:#eef3fc;padding:4px 11px;border-radius:999px}
+/* structured industry / label-category chips */
+.nchips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 0}
+.nchip{font-size:11.5px;font-weight:800;letter-spacing:.02em;padding:3px 10px;border-radius:999px;line-height:1.5}
+.nchip.ind{color:#fff;background:#1A56DB}
+.nchip.cat{color:#2c7a1e;background:#e6f5e0}
+.nhero .nchip.cat{color:#d7ffcf;background:rgba(65,166,42,.30)}
+.nhero .nchips{margin-top:12px}
+.ncard .nchips{margin:0 0 2px}
+.ncard .nchip{font-size:10.5px;padding:2px 8px}
 .art{max-width:760px;margin:0 auto;padding:34px 22px}
 .art .lead{font-size:17px;line-height:1.8;color:#2c3a58;margin:0 0 22px;font-weight:500}
 .art h2{font-size:20px;color:#143C96;margin:26px 0 10px}
@@ -118,9 +162,9 @@ def build_article(a, lang):
     bg = ('<img class="bg" src="%s" alt="" loading="eager" onerror="this.style.display=\'none\'">' % esc(banner)) if banner else ""
     tags = "".join('<span class="ntag">%s</span>' % esc(t) for t in L(a.get("tags", {}), lang))
     hero = ('%s<section class="nhero">%s<div class="in"><div class="k">%s</div>'
-            '<h1>%s</h1><p class="sub">%s</p>%s<div style="margin-top:16px">%s</div></div></section>') % (
+            '<h1>%s</h1><p class="sub">%s</p>%s%s<div style="margin-top:16px">%s</div></div></section>') % (
         CSS, bg, esc(ui["news"]), esc(title), esc(L(a.get("subtitle", {}), lang)),
-        ('<div class="ntags">%s</div>' % tags) if tags else "", hp.hero_cta(lang))
+        chips_html(a, lang), ('<div class="ntags">%s</div>' % tags) if tags else "", hp.hero_cta(lang))
     body = '<div class="art"><p class="lead">%s</p>' % esc(L(a.get("lead", {}), lang))
     for sec in L(a.get("sections", {}), lang):
         if sec.get("h"):
@@ -131,7 +175,7 @@ def build_article(a, lang):
     crumb = [(ui["home"], "/"), (ui["hub_title"], HUB), (title, path)]
     content = hp.page(lang, path, title + " | ETIA", esc(L(a.get("subtitle", {}), lang)),
                       title, "", body, crumb, active="insights", trust=False, hero=hero,
-                      langs=hp.NAV_PILLAR_LANGS)
+                      langs=hp.NAV_PILLAR_LANGS, keywords=seo_keywords(a))
     hp.write(lang, path, content)
     if lang == "en":
         hp.track(path, "core")
@@ -140,8 +184,8 @@ def _card(a, lang, ui):
     banner = a.get("banner", "")
     img = ('<img src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(banner)) if banner else ""
     return ('<a class="ncard" href="%s">%s<div class="cb"><span class="kind">%s</span>'
-            '<h3>%s</h3><p class="cs">%s</p><span class="go">%s</span></div></a>') % (
-        hp.Lx(lang, HUB + a["slug"] + "/"), img, esc(ui["news"]),
+            '%s<h3>%s</h3><p class="cs">%s</p><span class="go">%s</span></div></a>') % (
+        hp.Lx(lang, HUB + a["slug"] + "/"), img, esc(ui["news"]), chips_html(a, lang),
         esc(L(a["title"], lang)), esc(L(a.get("subtitle", {}), lang)), esc(ui["read"]))
 
 def _section(cover, kicker, title, cards_html, wrap_cls, soon=""):

@@ -3,6 +3,13 @@
   {
    "slug": "ul94-vtm0-flame-retardant-labels",
    "category": "knowledge",
+   "industry": ["pcb", "automotive", "cable"],
+   "label_category": {
+    "en": ["Flame-Retardant"],
+    "zh": ["阻燃"],
+    "vi": ["Chống cháy"],
+    "th": ["หน่วงไฟ"]
+   },
    "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/Flame%20Retardant%20Label",
    "tags": {
     "zh": [
@@ -154,6 +161,13 @@
   {
    "slug": "glp-1-cold-chain-labeling",
    "category": "knowledge",
+   "industry": ["medical"],
+   "label_category": {
+    "en": ["Cold-Chain", "Cryogenic"],
+    "zh": ["冷链", "低温"],
+    "vi": ["Chuỗi lạnh", "Đông lạnh"],
+    "th": ["โซ่ความเย็น", "อุณหภูมิต่ำ"]
+   },
    "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/GLP-1%20COLD%20CHAIN",
    "tags": {
     "zh": [
