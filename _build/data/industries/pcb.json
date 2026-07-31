@@ -122,7 +122,7 @@
    "tab": "XF58"
   },
   {
-   "tab": "XF78",
+   "tab": "ESD-XF78",
    "name": {
     "en": "XF78 Series · Polyonics (ESD-Safe)",
     "zh": "XF78 系列 · Polyonics 原装进口（防静电）",
@@ -138,7 +138,7 @@
    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-XF78",
    "products": [
     {
-     "name": "Polyonics XF78 Series",
+     "name": "Polyonics ESD-XF78 Series",
      "line": {
       "en": "ESD-safe PI · static-dissipative 10⁸–10¹¹ Ω · XF-781/782/784",
       "zh": "防静电 PI · 静电耗散 10⁸–10¹¹ Ω · XF-781/782/784",
@@ -182,7 +182,7 @@
    "tab": "E Series"
   },
   {
-   "tab": "E-2712",
+   "tab": "ESD-E2712",
    "name": {
     "en": "ESD-Safe E-2712 · ETIA Dual Anti-Static PET",
     "zh": "ESD-Safe E-2712 · ETIA 双抗静电 PET",
@@ -198,7 +198,7 @@
    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB2712.jpg",
    "products": [
     {
-     "name": "ESD-Safe E-2712",
+     "name": "ESD-E2712",
      "line": {
       "en": "ESD-safe PET · dual-layer anti-static · heat & solvent resistant",
       "zh": "防静电 PET · 双层抗静电 · 耐温耐溶剂",
