@@ -110,24 +110,28 @@
         "Model",
         "Film",
         "Finish",
+        "Total thickness",
         "Surface resistance"
       ],
       "zh": [
         "型号",
         "面材",
         "表面",
+        "总厚度",
         "表面电阻"
       ],
       "vi": [
         "Mã",
         "Màng",
         "Bề mặt",
+        "Độ dày tổng",
         "Điện trở bề mặt"
       ],
       "th": [
         "รุ่น",
         "ฟิล์ม",
         "พื้นผิว",
+        "ความหนารวม",
         "ความต้านทานพื้นผิว"
       ]
     },
@@ -147,6 +151,7 @@
             "vi": "Trắng bóng cao",
             "th": "สีขาวเงาสูง"
           },
+          "5.6 mil (142 µm)",
           "10⁸–10¹¹ Ω"
         ]
       },
@@ -160,11 +165,12 @@
             "th": "PI 2 mil (50µm)"
           },
           {
-            "en": "High-gloss white",
-            "zh": "高光白",
-            "vi": "Trắng bóng cao",
-            "th": "สีขาวเงาสูง"
+            "en": "Semi-gloss white",
+            "zh": "半光白",
+            "vi": "Trắng bán bóng",
+            "th": "สีขาวกึ่งเงา"
           },
+          "7.5 mil (190 µm)",
           "10⁸–10¹¹ Ω"
         ]
       },
@@ -183,26 +189,35 @@
             "vi": "Trắng mờ",
             "th": "สีขาวด้าน"
           },
+          "5.6 mil (142 µm)",
           "10⁸–10¹¹ Ω"
         ]
       }
     ],
     "notes": {
       "en": [
-        "All: low-charging acrylic PSA + low-charging liner · thermal-transfer print · dimensionally stable to 150°C.",
-        "Compliance: ANSI/ESD S20.20 · IEC 61340 · ANSI/ESD S541 (EPA)."
+        "Construction: 1 mil (25 µm) low-charging acrylic PSA + low-charging liner, thermal-transfer printable.",
+        "Temperature rating: 100 hrs @ 150 °C long-term · 5 min @ 260 °C operating · 90 sec @ 300 °C short-term — withstands reflow / wave solder.",
+        "Adhesion (stainless steel, 24 h): ≥ 30 oz/in (≥ 33 N/100 mm) for XF-781 / XF-784; ≥ 40 oz/in (≥ 44 N/100 mm) for XF-782. Low-charging PSA/liner < 125 V.",
+        "Compliance: ANSI/ESD S20.20 · IEC 61340 · ANSI/ESD S541 (EPA) · REACH · RoHS · Halogen-Free."
       ],
       "zh": [
-        "通用：低起电丙烯酸压敏胶 + 低起电底纸 · 热转印打印 · 尺寸稳定耐 150°C。",
-        "合规：ANSI/ESD S20.20 · IEC 61340 · ANSI/ESD S541（EPA）。"
+        "结构：1 mil（25 µm）低起电丙烯酸压敏胶 + 低起电底纸，可热转印。",
+        "温度等级：150 °C 长期 100 小时 · 260 °C 操作 5 分钟 · 300 °C 短时 90 秒 —— 可耐回流焊/波峰焊。",
+        "粘着力（不锈钢，24 小时）：XF-781/XF-784 ≥ 30 oz/in（≥ 33 N/100 mm）；XF-782 ≥ 40 oz/in（≥ 44 N/100 mm）。低起电胶/底纸 < 125 V。",
+        "合规：ANSI/ESD S20.20 · IEC 61340 · ANSI/ESD S541（EPA）· REACH · RoHS · 无卤。"
       ],
       "vi": [
-        "Chung: keo acrylic + lớp lót ít tích điện · in chuyển nhiệt · ổn định kích thước tới 150°C.",
-        "Tuân thủ: ANSI/ESD S20.20 · IEC 61340 · ANSI/ESD S541 (EPA)."
+        "Cấu tạo: keo acrylic ít tích điện 1 mil (25 µm) + lớp lót ít tích điện, in chuyển nhiệt.",
+        "Định mức nhiệt: 100 giờ @ 150 °C dài hạn · 5 phút @ 260 °C vận hành · 90 giây @ 300 °C ngắn hạn — chịu được reflow / wave solder.",
+        "Độ bám (thép không gỉ, 24 h): ≥ 30 oz/in (≥ 33 N/100 mm) cho XF-781 / XF-784; ≥ 40 oz/in (≥ 44 N/100 mm) cho XF-782. Keo/lớp lót ít tích điện < 125 V.",
+        "Tuân thủ: ANSI/ESD S20.20 · IEC 61340 · ANSI/ESD S541 (EPA) · REACH · RoHS · Halogen-Free."
       ],
       "th": [
-        "ทั้งหมด: กาวอะคริลิก + ไลเนอร์ประจุต่ำ · พิมพ์ถ่ายเทความร้อน · เสถียรมิติถึง 150°C",
-        "การปฏิบัติตาม: ANSI/ESD S20.20 · IEC 61340 · ANSI/ESD S541 (EPA)"
+        "โครงสร้าง: กาวอะคริลิกประจุต่ำ 1 mil (25 µm) + ไลเนอร์ประจุต่ำ พิมพ์ถ่ายเทความร้อนได้",
+        "ระดับอุณหภูมิ: 100 ชม. @ 150 °C ระยะยาว · 5 นาที @ 260 °C ใช้งาน · 90 วินาที @ 300 °C ระยะสั้น — ทนรีโฟลว์/เวฟโซลเดอร์",
+        "แรงยึด (สแตนเลส 24 ชม.): ≥ 30 oz/in (≥ 33 N/100 mm) สำหรับ XF-781 / XF-784; ≥ 40 oz/in (≥ 44 N/100 mm) สำหรับ XF-782. กาว/ไลเนอร์ประจุต่ำ < 125 V",
+        "การปฏิบัติตาม: ANSI/ESD S20.20 · IEC 61340 · ANSI/ESD S541 (EPA) · REACH · RoHS · ปลอดฮาโลเจน"
       ]
     }
   },
@@ -240,22 +255,26 @@
     "en": [
       "ANSI/ESD S20.20, IEC 61340 & ANSI/ESD S541 — for ESD-protected areas (EPA)",
       "Surface resistance to EOS/ESD STM 11.11; ESD surface durability to Modified ESD ADV 11.2",
-      "Print permanence per MIL-STD-202G (Method 215K) and MIL-STD-883E"
+      "Print permanence per MIL-STD-202G (Method 215K) and MIL-STD-883E",
+      "REACH, RoHS and Halogen-Free (IEC 61249-2-21) compliant"
     ],
     "zh": [
       "ANSI/ESD S20.20、IEC 61340 与 ANSI/ESD S541 —— 适用于静电防护区（EPA）",
       "表面电阻依据 EOS/ESD STM 11.11；防静电表面耐久性依据 Modified ESD ADV 11.2",
-      "打印耐久性符合 MIL-STD-202G（Method 215K）与 MIL-STD-883E"
+      "打印耐久性符合 MIL-STD-202G（Method 215K）与 MIL-STD-883E",
+      "符合 REACH、RoHS 与无卤（IEC 61249-2-21）"
     ],
     "vi": [
       "ANSI/ESD S20.20, IEC 61340 & ANSI/ESD S541 — cho khu vực bảo vệ tĩnh điện (EPA)",
       "Điện trở bề mặt theo EOS/ESD STM 11.11; độ bền bề mặt ESD theo Modified ESD ADV 11.2",
-      "Độ bền in theo MIL-STD-202G (Method 215K) và MIL-STD-883E"
+      "Độ bền in theo MIL-STD-202G (Method 215K) và MIL-STD-883E",
+      "Tuân thủ REACH, RoHS và Halogen-Free (IEC 61249-2-21)"
     ],
     "th": [
       "ANSI/ESD S20.20, IEC 61340 และ ANSI/ESD S541 — สำหรับพื้นที่ป้องกันไฟฟ้าสถิต (EPA)",
       "ความต้านทานพื้นผิวตาม EOS/ESD STM 11.11; ความทนทานพื้นผิว ESD ตาม Modified ESD ADV 11.2",
-      "ความคงทนของงานพิมพ์ตาม MIL-STD-202G (Method 215K) และ MIL-STD-883E"
+      "ความคงทนของงานพิมพ์ตาม MIL-STD-202G (Method 215K) และ MIL-STD-883E",
+      "เป็นไปตาม REACH, RoHS และปลอดฮาโลเจน (IEC 61249-2-21)"
     ]
   }
 }
