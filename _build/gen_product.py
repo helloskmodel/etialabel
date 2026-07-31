@@ -85,9 +85,12 @@ CSS = """
 .ptnote li{position:relative;padding-left:20px;font-size:14px;line-height:1.6;color:#5a6885}
 .ptnote li::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:2px;background:#dbe7fb}
 .pfeat{display:grid;grid-template-columns:1fr;gap:20px}
-.pdiagram{margin:0;text-align:center}
-.pdiagram img{max-width:100%;max-height:420px;border-radius:12px;background:#f4f7ff}
-.pdiagram figcaption{font-size:13px;color:#5a6885;margin-top:8px}
+.pdiagram{margin:0;display:flex;gap:26px;align-items:center;justify-content:center;flex-wrap:wrap}
+.pdiagram figure{margin:0;text-align:center}
+.pdiagram img{max-width:100%;max-height:230px;border-radius:12px;background:#f4f7ff}
+.pdiagram figcaption{font-size:12.5px;color:#5a6885;margin-top:8px;max-width:280px}
+.pdleg{list-style:none;padding:0;margin:0;text-align:left;display:flex;flex-direction:column;gap:9px}
+.pdleg li{font-size:14px;line-height:1.5;color:#41506e}
 .pimg{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:12px;background:#e8eefb}
 .pcta{max-width:900px;margin:34px auto;background:linear-gradient(120deg,#143C96,#1A56DB);border-radius:16px;padding:30px 30px;color:#fff}
 .pcta h3{margin:0 0 8px;font-size:21px}
@@ -329,14 +332,16 @@ def build_lang(d, lang):
     body = ""
     if L(d.get("positioning", {}), lang):
         body += section(ui["positioning"], ui["positioning"], '<p class="pos">%s</p>' % esc(L(d["positioning"], lang)))
-    # optional construction/structure diagram: {"img":..., "title":{lang}, "caption":{lang}}
+    # optional construction/structure diagram: {"img":, "title":{lang}, "caption":{lang}, "legend":{lang:[...]}}
     dg = d.get("diagram")
     if dg and dg.get("img"):
         dtitle = L(dg.get("title", {}), lang) or ui.get("structure", "Construction")
         cap = L(dg.get("caption", {}), lang)
         capf = ('<figcaption>%s</figcaption>' % esc(cap)) if cap else ""
+        leg = L(dg.get("legend", {}), lang)
+        legf = ('<ul class="pdleg">%s</ul>' % "".join("<li>%s</li>" % esc(x) for x in leg)) if leg else ""
         body += section(dtitle, dtitle,
-            '<figure class="pdiagram"><img src="%s" alt="" loading="lazy" onerror="this.closest(\'figure\').remove()">%s</figure>' % (esc(dg["img"]), capf))
+            '<div class="pdiagram"><figure><img src="%s" alt="" loading="lazy" onerror="this.closest(\'.pdiagram\').remove()">%s</figure>%s</div>' % (esc(dg["img"]), capf, legf))
     if d.get("highlight") and L(d["highlight"].get("title", {}), lang):
         body += highlight_html(d["highlight"], lang)
     if L(d.get("challenges", {}), lang):
