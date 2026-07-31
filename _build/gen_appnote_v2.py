@@ -123,8 +123,8 @@ def build_note(d, lang):
     # Hero shows eyebrow + title only (subtitle kept in data for meta/hub, not
     # rendered in the hero — it crowded the banner).
     hero = ('%s<section class="anhero">%s<div class="in"><div class="k">%s</div>'
-            '<h1>%s</h1></div></section>') % (
-        CSS, bg, esc(ui["eyebrow"]), esc(title))
+            '<h1>%s</h1><div style="margin-top:16px">%s</div></div></section>') % (
+        CSS, bg, esc(ui["eyebrow"]), esc(title), hp.hero_cta(lang))
 
     def sec(eye, h, inner):
         return '<section class="ansec"><div class="aneye">%s</div><h2>%s</h2>%s</section>' % (esc(eye), esc(h), inner)
