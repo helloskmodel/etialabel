@@ -22,28 +22,28 @@ UI = {
          "certs": "Testing & Certifications", "cta_btn": "Request Samples & TDS by Email",
          "cta_note": "No online download — samples and the TDS are sent one-to-one by email.",
          "featured": "Featured Product Solutions", "home": "Home", "products": "Products",
-         "key_benefits": "Key Benefits",
+         "key_benefits": "Key Benefits", "structure": "Construction",
          "sc_apps": "Typical Applications", "sc_containers": "Typical Containers", "sc_products": "Recommended Products", "sc_chemicals": "Typical Chemicals", "sc_steril": "Typical Sterilization"},
   "zh": {"positioning": "产品概述", "challenges": "核心制程挑战", "features": "核心特性",
          "benefits": "客户价值", "spec": "产品规格", "applications": "适用场景",
          "certs": "测试与认证", "cta_btn": "邮件申请样品 & TDS",
          "cta_note": "本页无在线下载，样品与 TDS 仅通过邮件一对一发送。",
          "featured": "推荐产品方案", "home": "首页", "products": "产品",
-         "key_benefits": "核心优势",
+         "key_benefits": "核心优势", "structure": "产品结构",
          "sc_apps": "典型应用", "sc_containers": "典型容器", "sc_products": "推荐产品", "sc_chemicals": "典型化学介质", "sc_steril": "灭菌方式"},
   "vi": {"positioning": "Tổng quan", "challenges": "Thách thức sản xuất", "features": "Đặc tính",
          "benefits": "Lợi ích", "spec": "Thông số kỹ thuật", "applications": "Ứng dụng",
          "certs": "Kiểm tra & Chứng nhận", "cta_btn": "Yêu cầu mẫu & TDS qua Email",
          "cta_note": "Không tải xuống trực tuyến — mẫu và TDS được gửi riêng qua email.",
          "featured": "Giải pháp sản phẩm tiêu biểu", "home": "Trang chủ", "products": "Sản phẩm",
-         "key_benefits": "Lợi ích chính",
+         "key_benefits": "Lợi ích chính", "structure": "Cấu tạo",
          "sc_apps": "Ứng dụng điển hình", "sc_containers": "Vật chứa điển hình", "sc_products": "Sản phẩm đề xuất", "sc_chemicals": "Hóa chất điển hình", "sc_steril": "Phương pháp tiệt trùng"},
   "th": {"positioning": "ภาพรวม", "challenges": "ความท้าทายในการผลิต", "features": "คุณสมบัติ",
          "benefits": "ประโยชน์", "spec": "ข้อมูลจำเพาะ", "applications": "การใช้งาน",
          "certs": "การทดสอบและการรับรอง", "cta_btn": "ขอตัวอย่าง & TDS ทางอีเมล",
          "cta_note": "ไม่มีการดาวน์โหลดออนไลน์ — ตัวอย่างและ TDS จะถูกส่งทางอีเมล",
          "featured": "โซลูชันผลิตภัณฑ์แนะนำ", "home": "หน้าแรก", "products": "สินค้า",
-         "key_benefits": "ประโยชน์หลัก",
+         "key_benefits": "ประโยชน์หลัก", "structure": "โครงสร้าง",
          "sc_apps": "การใช้งานทั่วไป", "sc_containers": "ภาชนะทั่วไป", "sc_products": "ผลิตภัณฑ์แนะนำ", "sc_chemicals": "สารเคมีทั่วไป", "sc_steril": "วิธีการฆ่าเชื้อ"},
 }
 
@@ -85,7 +85,10 @@ CSS = """
 .ptnote li{position:relative;padding-left:20px;font-size:14px;line-height:1.6;color:#5a6885}
 .ptnote li::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:2px;background:#dbe7fb}
 .pfeat{display:grid;grid-template-columns:1fr;gap:20px}
-.pfeat .pimg{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:12px;background:#e8eefb}
+.pdiagram{margin:0;text-align:center}
+.pdiagram img{max-width:100%;max-height:420px;border-radius:12px;background:#f4f7ff}
+.pdiagram figcaption{font-size:13px;color:#5a6885;margin-top:8px}
+.pimg{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:12px;background:#e8eefb}
 .pcta{max-width:900px;margin:34px auto;background:linear-gradient(120deg,#143C96,#1A56DB);border-radius:16px;padding:30px 30px;color:#fff}
 .pcta h3{margin:0 0 8px;font-size:21px}
 .pcta p{margin:0 0 16px;color:#dbe6ff;font-size:14.5px}
@@ -265,7 +268,7 @@ def spec_table(tbl, lang):
 # `banner` still wins, otherwise it falls back to the industry banner here.
 _COS = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/"
 INDUSTRY_BANNERS = {
-    "pcb":     _COS + "INDUSTRY/PCB-BANNER.jpg",
+    "pcb":     _COS + "INDUSTRY/PCB-BANNERNEW.jpg",
     "auto":    _COS + "INDUSTRY/AUTO-BANNER",
     "cable":   _COS + "INDUSTRY/CABLE-BANNER",
     "steel":   _COS + "INDUSTRY/STEEL-BANNER",
@@ -274,7 +277,7 @@ INDUSTRY_BANNERS = {
 }
 PRODUCT_INDUSTRY = {
     # PCB / electronics
-    "apex": "pcb", "e-series": "pcb", "xf58": "pcb", "xf-603": "pcb",
+    "apex": "pcb", "e-series": "pcb", "xf58": "pcb", "xf78": "pcb", "xf-603": "pcb",
     "e-2712": "pcb", "e-2913": "pcb",
     # automotive
     "e-2512bl": "auto", "e-2813": "auto", "e-2814": "auto",
@@ -326,6 +329,14 @@ def build_lang(d, lang):
     body = ""
     if L(d.get("positioning", {}), lang):
         body += section(ui["positioning"], ui["positioning"], '<p class="pos">%s</p>' % esc(L(d["positioning"], lang)))
+    # optional construction/structure diagram: {"img":..., "title":{lang}, "caption":{lang}}
+    dg = d.get("diagram")
+    if dg and dg.get("img"):
+        dtitle = L(dg.get("title", {}), lang) or ui.get("structure", "Construction")
+        cap = L(dg.get("caption", {}), lang)
+        capf = ('<figcaption>%s</figcaption>' % esc(cap)) if cap else ""
+        body += section(dtitle, dtitle,
+            '<figure class="pdiagram"><img src="%s" alt="" loading="lazy" onerror="this.closest(\'figure\').remove()">%s</figure>' % (esc(dg["img"]), capf))
     if d.get("highlight") and L(d["highlight"].get("title", {}), lang):
         body += highlight_html(d["highlight"], lang)
     if L(d.get("challenges", {}), lang):

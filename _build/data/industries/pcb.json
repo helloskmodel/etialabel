@@ -7,7 +7,7 @@
   "vi",
   "th"
  ],
- "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNER.jpg",
+ "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNERNEW.jpg",
  "seo_title": {
   "en": "PCB Labeling Solution | ETIA",
   "zh": "PCB 标签解决方案 | ETIA",
@@ -135,19 +135,19 @@
     "vi": "Dòng polyimide chống tĩnh điện (ESD-Safe) nhập khẩu Polyonics, cho lắp ráp PCB và bán dẫn nhạy tĩnh điện.",
     "th": "ซีรีส์โพลีอิไมด์ป้องกันไฟฟ้าสถิต (ESD-Safe) นำเข้าจาก Polyonics สำหรับการประกอบ PCB และเซมิคอนดักเตอร์ที่ไวต่อไฟฟ้าสถิต"
    },
-   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB581",
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-XF78",
    "products": [
     {
      "name": "Polyonics XF78 Series",
      "line": {
-      "en": "ESD-safe PI (polyimide) · reflow & cleaning resistant",
-      "zh": "防静电 PI（聚酰亚胺）· 耐焊洗",
-      "vi": "PI (polyimide) chống tĩnh điện · chịu hàn rửa",
-      "th": "PI (โพลีอิไมด์) ป้องกันไฟฟ้าสถิต · ทนรีโฟลว์และล้าง"
+      "en": "ESD-safe PI · static-dissipative 10⁸–10¹¹ Ω · XF-781/782/784",
+      "zh": "防静电 PI · 静电耗散 10⁸–10¹¹ Ω · XF-781/782/784",
+      "vi": "PI chống tĩnh · tiêu tán 10⁸–10¹¹ Ω · XF-781/782/784",
+      "th": "PI ป้องกันไฟฟ้าสถิต · กระจายประจุ 10⁸–10¹¹ Ω · XF-781/782/784"
      },
      "img": "",
-     "landing": false,
-     "slug": ""
+     "landing": true,
+     "slug": "xf78"
     }
    ]
   },
