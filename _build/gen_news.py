@@ -152,8 +152,8 @@ CSS = """
 .ncov img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .ncov .novl{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:0 2% 0 7%}
 .ncov .novl .k{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#1A56DB}
-.ncov .novl .ncat{margin:0;font-family:var(--sans);font-weight:800;font-size:18px;line-height:1.2;color:#000;max-width:50%}
-.nrow .ncov .novl .ncat{font-size:16px}
+.ncov .novl .ncat{margin:0;font-family:var(--sans);font-weight:800;font-size:14.5px;line-height:1.24;color:#143C96;max-width:48%}
+.nrow .ncov .novl .ncat{font-size:13px}
 .ncard .cb{padding:15px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
 .ncard .kind{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#1A56DB}
 .ncard h3.ntitle{margin:0;font-size:16.5px;font-weight:800;line-height:1.32;color:#17203a}
@@ -215,8 +215,8 @@ def _card(a, lang, ui):
     # article title goes below the cover, in the card body.
     cover = COVER_NEWS if a.get("category") == "news" else COVER_KNOWLEDGE
     ovl = ('<div class="ncov"><img src="%s" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
-           '<div class="novl"><span class="k">%s</span><p class="ncat">%s</p></div></div>') % (
-        esc(cover), esc(ui["news"]), esc(cover_category(a, lang)))
+           '<div class="novl"><p class="ncat">%s</p></div></div>') % (
+        esc(cover), esc(cover_category(a, lang)))
     return ('<a class="ncard" href="%s">%s<div class="cb"><h3 class="ntitle">%s</h3>%s'
             '<p class="cs">%s</p><span class="go">%s</span></div></a>') % (
         hp.Lx(lang, HUB + a["slug"] + "/"), ovl, esc(L(a["title"], lang)),
