@@ -8,7 +8,7 @@
     "th"
   ],
   "banner": "",
-  "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-XF78",
+  "product_img": "",
   "diagram": {
     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-XF78-ESD%20LAYER",
     "title": {
@@ -18,10 +18,36 @@
       "th": "โครงสร้าง"
     },
     "caption": {
-      "en": "ESD-safe layer construction: static-dissipative topcoat / polyimide film / low-charging acrylic adhesive / low-charging liner.",
-      "zh": "防静电层结构：静电耗散涂层 / 聚酰亚胺面材 / 低起电丙烯酸胶 / 低起电底纸。",
-      "vi": "Cấu tạo lớp chống tĩnh điện: lớp phủ tiêu tán tĩnh / màng polyimide / keo acrylic ít tích điện / lớp lót ít tích điện.",
-      "th": "โครงสร้างชั้นป้องกันไฟฟ้าสถิต: สารเคลือบกระจายประจุ / ฟิล์มโพลีอิไมด์ / กาวอะคริลิกประจุต่ำ / ไลเนอร์ประจุต่ำ"
+      "en": "",
+      "zh": "",
+      "vi": "",
+      "th": ""
+    },
+    "legend": {
+      "en": [
+        "D — Static Dissipative Print Surface",
+        "C — PI Film",
+        "B — Low-Charging Acrylic PSA",
+        "A — Low-Charging Liner"
+      ],
+      "zh": [
+        "D — 静电耗散打印面层",
+        "C — 聚酰亚胺（PI）面材",
+        "B — 低起电丙烯酸压敏胶",
+        "A — 低起电底纸"
+      ],
+      "vi": [
+        "D — Bề mặt in tiêu tán tĩnh điện",
+        "C — Màng PI",
+        "B — Keo acrylic ít tích điện",
+        "A — Lớp lót ít tích điện"
+      ],
+      "th": [
+        "D — พื้นผิวพิมพ์กระจายประจุ",
+        "C — ฟิล์ม PI",
+        "B — กาวอะคริลิกประจุต่ำ",
+        "A — ไลเนอร์ประจุต่ำ"
+      ]
     }
   },
   "title": {
