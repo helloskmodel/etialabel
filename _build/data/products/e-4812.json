@@ -3,7 +3,9 @@
   "source": "client product brief — E-4812 / 4812 (-196°C LN2 storage material)",
   "langs": [
     "en",
-    "zh"
+    "zh",
+    "vi",
+    "th"
   ],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
   "product_img": "",
@@ -13,15 +15,21 @@
   },
   "title": {
     "en": "E-4812 — −196°C LN₂ Cryogenic Storage Label",
-    "zh": "E-4812 · −196℃ 液氮冻存标签"
+    "zh": "E-4812 · −196℃ 液氮冻存标签",
+    "vi": "E-4812 · Nhãn lưu trữ đông lạnh LN₂ −196°C",
+    "th": "E-4812 · ฉลากจัดเก็บแช่แข็ง LN₂ −196°C"
   },
   "tagline": {
     "en": "−196°C liquid-nitrogen storage · direct-apply to frozen surfaces · up to 10 freeze-thaw cycles",
-    "zh": "−196℃ 液氮冻存 · 冷冻表面直贴 · 耐 10 次反复冻融"
+    "zh": "−196℃ 液氮冻存 · 冷冻表面直贴 · 耐 10 次反复冻融",
+    "vi": "Lưu trữ nitơ lỏng −196°C · dán trực tiếp lên bề mặt đông lạnh · tới 10 chu kỳ đông-rã",
+    "th": "จัดเก็บไนโตรเจนเหลว −196°C · ติดโดยตรงบนพื้นผิวแช่แข็ง · สูงสุด 10 รอบแช่แข็ง-ละลาย"
   },
   "positioning": {
     "en": "Purpose-built identification labels for frozen laboratory sample containers — polypropylene (PP) cryovials, test tubes and storage boxes (PP and cardboard). Rated for storage from −150°C to −196°C (liquid-nitrogen environments), it keeps information clearly legible across the sample's entire frozen-storage lifecycle. It also survives repeated thaw-and-refreeze cycles — up to 10 cycles of thawing at room temperature or in warm / ice water followed by refreezing.",
-    "zh": "该产品专为冷冻实验室样品容器的识别标签而设计，适用于聚丙烯（PP）冷冻小瓶、试管和存储盒（PP 和纸板）。存储温度范围在 −150°C 至 −196°C（液氮环境）。信息可确保在样品整个冷冻存储生命周期内保持清晰可识别。该产品还能承受多次解冻和冷冻循环——最多可承受 10 次在室温或温水／冰水中解冻后再冷冻的循环。"
+    "zh": "该产品专为冷冻实验室样品容器的识别标签而设计，适用于聚丙烯（PP）冷冻小瓶、试管和存储盒（PP 和纸板）。存储温度范围在 −150°C 至 −196°C（液氮环境）。信息可确保在样品整个冷冻存储生命周期内保持清晰可识别。该产品还能承受多次解冻和冷冻循环——最多可承受 10 次在室温或温水／冰水中解冻后再冷冻的循环。",
+    "vi": "Nhãn nhận diện chuyên dụng cho hộp đựng mẫu phòng thí nghiệm đông lạnh — lọ cryovial polypropylene (PP), ống nghiệm và hộp lưu trữ (PP và bìa cứng). Định mức cho lưu trữ từ −150°C đến −196°C (môi trường nitơ lỏng), giữ thông tin rõ ràng dễ đọc suốt vòng đời lưu trữ đông lạnh của mẫu. Nhãn cũng chịu được các chu kỳ rã đông và tái đông lặp lại — tới 10 chu kỳ.",
+    "th": "ฉลากระบุเฉพาะสำหรับภาชนะเก็บตัวอย่างในห้องปฏิบัติการแบบแช่แข็ง — cryovial โพลีโพรพิลีน (PP) หลอดทดลอง และกล่องจัดเก็บ (PP และกระดาษแข็ง) รองรับการจัดเก็บ −150°C ถึง −196°C (ไนโตรเจนเหลว) ทำให้ข้อมูลอ่านได้ชัดเจนตลอดวงจรการจัดเก็บแช่แข็ง ทนรอบการละลายและแช่แข็งซ้ำได้สูงสุด 10 รอบ"
   },
   "challenges": {},
   "features": {
@@ -36,6 +44,18 @@
       "持粘性强：可以长时间存储在液氮中，也不会松动脱落，牢固贴合，避免样本混淆。",
       "可耐受高达 10 次反复冻融循环：宽温度耐受，多次冻融也不会破裂、剥落、降解，保持标识完整。",
       "面材适配性广：防水，抗油，耐化学，适配多种印刷方式。可变信息打印，使用热转印打印机搭配超低温树脂碳带，确保信息清晰持久。"
+    ],
+    "vi": [
+      "Dán trực tiếp ở nhiệt độ siêu thấp: độ dính ban đầu 7 N cho phép dán trực tiếp lên bề mặt đông lạnh — không cần rã đông mẫu.",
+      "Giữ độ bám mạnh: bám chắc suốt quá trình lưu trữ nitơ lỏng dài hạn mà không lỏng hay rơi.",
+      "Chịu tới 10 chu kỳ đông-rã: không nứt, bong hay xuống cấp qua các chu kỳ lặp lại.",
+      "Tương thích rộng: chống nước, kháng dầu và hóa chất; với dữ liệu biến đổi, kết hợp máy in chuyển nhiệt với ribbon resin siêu lạnh."
+    ],
+    "th": [
+      "ติดโดยตรงที่อุณหภูมิต่ำมาก: แรงยึดเริ่มต้น 7 N ติดบนพื้นผิวแช่แข็งได้โดยตรง — ไม่ต้องละลายตัวอย่าง",
+      "คงการยึดเกาะที่แข็งแรง: ยึดแน่นตลอดการจัดเก็บไนโตรเจนเหลวระยะยาวโดยไม่หลวมหรือหลุด",
+      "ทนได้สูงสุด 10 รอบแช่แข็ง-ละลาย: ไม่แตก ลอก หรือเสื่อมสภาพตลอดรอบซ้ำ",
+      "รองรับวัสดุหลากหลาย: กันน้ำ ทนน้ำมันและสารเคมี สำหรับข้อมูลแปรผันใช้เครื่องพิมพ์ถ่ายเทความร้อนคู่กับริบบอนเรซินอุณหภูมิต่ำมาก"
     ]
   },
   "benefits": {
@@ -50,6 +70,18 @@
       "标识牢固不脱落 —— 长期液氮存储中标签牢固贴合、不松动脱落，避免样本错标与混淆，保障全程可追溯。",
       "耐反复冻融 —— 可耐受最多 10 次冻融循环，样本多次取用、反复冻存后标识依旧清晰完整。",
       "信息清晰持久 —— 热转印搭配超低温树脂碳带，冷冻全周期信息清晰可读，减少人工核对差错。"
+    ],
+    "vi": [
+      "Không cần làm ấm — dán trực tiếp ở −80°C hoặc trong nitơ lỏng mà không rã đông, bảo vệ khả năng sống của mẫu.",
+      "Bám chắc — suốt quá trình lưu trữ nitơ lỏng dài hạn nhãn không bong, ngăn dán nhầm.",
+      "Chịu đông-rã lặp lại — tới 10 chu kỳ, giữ nhận diện rõ ràng.",
+      "Dữ liệu rõ, bền — in chuyển nhiệt với ribbon resin siêu lạnh giữ thông tin dễ đọc suốt vòng đời đông lạnh."
+    ],
+    "th": [
+      "ไม่ต้องอุ่น — ติดโดยตรงที่ −80°C หรือในไนโตรเจนเหลวโดยไม่ละลาย ปกป้องความมีชีวิตของตัวอย่าง",
+      "ยึดแน่น — ตลอดการจัดเก็บไนโตรเจนเหลวระยะยาวฉลากไม่เผยอ ป้องกันการติดฉลากผิด",
+      "ทนแช่แข็ง-ละลายซ้ำ — สูงสุด 10 รอบ รักษาการระบุให้ชัดเจน",
+      "ข้อมูลชัดเจน ทนทาน — พิมพ์ถ่ายเทความร้อนด้วยริบบอนเรซินอุณหภูมิต่ำมาก อ่านได้ตลอดวงจรแช่แข็ง"
     ]
   },
   "spec_table": {
@@ -358,6 +390,20 @@
       "存储盒（PP 与纸板）",
       "科研样本库、干细胞与基因冻存",
       "干冰与液氮运输容器"
+    ],
+    "vi": [
+      "Lọ cryovial polypropylene (PP)",
+      "Ống nghiệm",
+      "Hộp lưu trữ (PP và bìa cứng)",
+      "Ngân hàng sinh học, lưu trữ lạnh tế bào gốc và gen",
+      "Thùng vận chuyển đá khô và nitơ lỏng"
+    ],
+    "th": [
+      "cryovial โพลีโพรพิลีน (PP)",
+      "หลอดทดลอง",
+      "กล่องจัดเก็บ (PP และกระดาษแข็ง)",
+      "ธนาคารชีวภาพ การเก็บเซลล์ต้นกำเนิดและยีนแบบแช่แข็ง",
+      "ภาชนะขนส่งน้ำแข็งแห้งและไนโตรเจนเหลว"
     ]
   },
   "certifications": {}

@@ -50,7 +50,8 @@ UI = {
 def L(node, lang):
     if not isinstance(node, dict):
         return node or ""
-    return node.get(lang) or node.get(SOURCE_LANG) or ""
+    # fall back to English for vi/th (readable internationally), then the zh source.
+    return node.get(lang) or node.get("en") or node.get(SOURCE_LANG) or ""
 
 CSS = """
 <style>

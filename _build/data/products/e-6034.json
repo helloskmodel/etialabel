@@ -1,7 +1,12 @@
 {
   "slug": "e-6034",
   "source": "client product brief — E-6034 matte vinyl wrap-around label (EN/ZH)",
-  "langs": ["en", "zh"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER",
   "product_img": "",
   "eyebrow": {
@@ -10,15 +15,21 @@
   },
   "title": {
     "en": "E-6034 — Matte Vinyl Wrap-Around Labels",
-    "zh": "E-6034 · 雾面 VINYL 缠绕标签"
+    "zh": "E-6034 · 雾面 VINYL 缠绕标签",
+    "vi": "E-6034 · Nhãn quấn vinyl mờ",
+    "th": "E-6034 · ฉลากพันไวนิลด้าน"
   },
   "tagline": {
     "en": "Flexible wrap-around labels for wire, cable and equipment identification",
-    "zh": "柔性缠绕标签，适用于线缆、线束及户外设备标识"
+    "zh": "柔性缠绕标签，适用于线缆、线束及户外设备标识",
+    "vi": "Nhãn quấn linh hoạt cho nhận diện dây, cáp và thiết bị",
+    "th": "ฉลากพันแบบยืดหยุ่นสำหรับระบุสายไฟ สายเคเบิล และอุปกรณ์"
   },
   "positioning": {
     "en": "E-6034 is a flexible matte vinyl label material designed for wrap-around identification of wires, cables and industrial equipment. Its soft vinyl construction conforms easily to curved surfaces, while the permanent acrylic adhesive delivers reliable long-term bonding on plastics, painted metals and coated surfaces. Resistant to moisture, UV exposure, oils and abrasion, E-6034 provides durable identification for both indoor and outdoor applications.",
-    "zh": "E-6034 是一款专为线缆、线束及工业设备标识设计的雾面 VINYL 标签材料。柔软的乙烯基面材能够紧密贴合线缆、管件及各种曲面，配合高性能永久性丙烯酸胶，在塑料、金属、粉末喷涂及玻璃等多种基材上保持稳定粘接。具备优异的耐水、耐油、耐紫外线及耐磨性能，可满足室内外长期标识需求。"
+    "zh": "E-6034 是一款专为线缆、线束及工业设备标识设计的雾面 VINYL 标签材料。柔软的乙烯基面材能够紧密贴合线缆、管件及各种曲面，配合高性能永久性丙烯酸胶，在塑料、金属、粉末喷涂及玻璃等多种基材上保持稳定粘接。具备优异的耐水、耐油、耐紫外线及耐磨性能，可满足室内外长期标识需求。",
+    "vi": "E-6034 là vật liệu nhãn vinyl mờ linh hoạt để nhận diện quấn quanh dây, cáp và thiết bị công nghiệp. Vinyl mềm dễ ôm theo bề mặt cong, keo acrylic vĩnh viễn cho độ bám lâu dài trên nhựa, kim loại sơn và bề mặt phủ. Kháng ẩm, tia UV, dầu và mài mòn, E-6034 mang lại nhận diện bền cho ứng dụng trong nhà và ngoài trời.",
+    "th": "E-6034 เป็นวัสดุฉลากไวนิลด้านที่ยืดหยุ่นสำหรับการระบุแบบพันรอบสายไฟ สายเคเบิล และอุปกรณ์อุตสาหกรรม ไวนิลนุ่มโค้งตามพื้นผิวได้ง่าย กาวอะคริลิกถาวรให้การยึดเกาะระยะยาวบนพลาสติก โลหะทาสี และพื้นผิวเคลือบ ทนความชื้น รังสียูวี น้ำมัน และการขัดถู ให้การระบุที่ทนทานทั้งในร่มและกลางแจ้ง"
   },
   "challenges": {},
   "benefits": {
@@ -33,6 +44,18 @@
       "强力持久粘接 —— 永久性丙烯酸胶适用于塑料、喷涂金属、玻璃、玻纤等多种表面，长期使用依然稳定可靠。",
       "适应严苛环境 —— 耐水、耐油、耐紫外线、耐磨损，可满足户外及工业环境的长期使用要求。",
       "清晰打印，易于识别 —— 雾面表面减少反光，支持热转印打印，文字、二维码和条码清晰易读。"
+    ],
+    "vi": [
+      "Linh hoạt cho bề mặt cong — vinyl mờ mềm ôm theo dây, cáp, ống mà không bong hay nhăn.",
+      "Bám dính vĩnh viễn mạnh — bám chắc trên nhựa, kim loại sơn, phủ bột, kính và sợi thủy tinh.",
+      "Cho môi trường khắc nghiệt — chịu nước, dầu, tia UV, mài mòn và phun muối.",
+      "In rõ, đáng tin cậy — bề mặt mờ cho chất lượng in chuyển nhiệt tốt, giảm chói."
+    ],
+    "th": [
+      "ยืดหยุ่นสำหรับพื้นผิวโค้ง — ไวนิลด้านนุ่มโค้งตามสายไฟ สายเคเบิล ท่อ โดยไม่เผยอหรือย่น",
+      "ยึดเกาะถาวรแข็งแรง — ยึดแน่นบนพลาสติก โลหะทาสี สีฝุ่น กระจก และไฟเบอร์กลาส",
+      "สำหรับสภาพแวดล้อมที่รุนแรง — ทนน้ำ น้ำมัน รังสียูวี การขัดถู และละอองเกลือ",
+      "พิมพ์ชัดเจน เชื่อถือได้ — พื้นผิวด้านให้คุณภาพการพิมพ์ถ่ายเทความร้อนที่ดี ลดแสงสะท้อน"
     ]
   },
   "features": {
@@ -47,44 +70,124 @@
       "防水、耐油、耐紫外线",
       "支持热转印打印",
       "耐磨耐候，适合室内外长期使用"
+    ],
+    "vi": [
+      "Linh hoạt và dễ ôm theo bề mặt",
+      "Kháng nước, dầu và tia UV",
+      "Phù hợp in chuyển nhiệt",
+      "Độ bền ngoài trời xuất sắc"
+    ],
+    "th": [
+      "ยืดหยุ่นและโค้งตามพื้นผิวได้",
+      "ทนน้ำ น้ำมัน และรังสียูวี",
+      "เหมาะกับการพิมพ์ถ่ายเทความร้อน",
+      "ทนทานกลางแจ้งได้ดีเยี่ยม"
     ]
   },
   "spec_table": {
     "headers": {
-      "en": ["Parameter", "Details"],
-      "zh": ["参数", "详情"]
+      "en": [
+        "Parameter",
+        "Details"
+      ],
+      "zh": [
+        "参数",
+        "详情"
+      ]
     },
     "rows": [
-      {"group": {"en": "Specifications", "zh": "产品特点"}},
-      {"cells": [
-        {"en": "Material", "zh": "面材"},
-        {"en": "Matte Vinyl", "zh": "雾面 VINYL（乙烯基）"}
-      ]},
-      {"cells": [
-        {"en": "Face Thickness", "zh": "面材厚度"},
-        {"en": "0.087 mm (3.4 mil)", "zh": "0.087 mm（3.4 mil）"}
-      ]},
-      {"cells": [
-        {"en": "Adhesive", "zh": "胶粘剂"},
-        {"en": "Permanent Acrylic", "zh": "永久性丙烯酸胶"}
-      ]},
-      {"cells": [
-        {"en": "Adhesive Thickness", "zh": "胶层厚度"},
-        {"en": "0.022 mm (0.9 mil)", "zh": "0.022 mm（0.9 mil）"}
-      ]},
-      {"cells": [
-        {"en": "Service Temperature", "zh": "使用温度"},
-        {"en": "−40°C to 80°C", "zh": "−40℃～80℃"}
-      ]},
-      {"group": {"en": "Recommended For", "zh": "适用行业"}},
-      {"cells": [
-        {"en": "Markets", "zh": "行业"},
-        {"en": "Electrical & Power · Telecommunications · Data Centers · Industrial Automation · Automotive & EV · Rail & Transportation · Outdoor Infrastructure", "zh": "电力 · 通信 · 数据中心 · 工业自动化 · 汽车与新能源 · 轨道交通 · 户外基础设施"}
-      ]}
+      {
+        "group": {
+          "en": "Specifications",
+          "zh": "产品特点"
+        }
+      },
+      {
+        "cells": [
+          {
+            "en": "Material",
+            "zh": "面材"
+          },
+          {
+            "en": "Matte Vinyl",
+            "zh": "雾面 VINYL（乙烯基）"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Face Thickness",
+            "zh": "面材厚度"
+          },
+          {
+            "en": "0.087 mm (3.4 mil)",
+            "zh": "0.087 mm（3.4 mil）"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesive",
+            "zh": "胶粘剂"
+          },
+          {
+            "en": "Permanent Acrylic",
+            "zh": "永久性丙烯酸胶"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesive Thickness",
+            "zh": "胶层厚度"
+          },
+          {
+            "en": "0.022 mm (0.9 mil)",
+            "zh": "0.022 mm（0.9 mil）"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Service Temperature",
+            "zh": "使用温度"
+          },
+          {
+            "en": "−40°C to 80°C",
+            "zh": "−40℃～80℃"
+          }
+        ]
+      },
+      {
+        "group": {
+          "en": "Recommended For",
+          "zh": "适用行业"
+        }
+      },
+      {
+        "cells": [
+          {
+            "en": "Markets",
+            "zh": "行业"
+          },
+          {
+            "en": "Electrical & Power · Telecommunications · Data Centers · Industrial Automation · Automotive & EV · Rail & Transportation · Outdoor Infrastructure",
+            "zh": "电力 · 通信 · 数据中心 · 工业自动化 · 汽车与新能源 · 轨道交通 · 户外基础设施"
+          }
+        ]
+      }
     ],
     "notes": {
-      "en": ["Figures are indicative typical values; verify against the current technical datasheet and by application testing before production."],
-      "zh": ["以上为参考性典型值；量产前请以最新技术数据表为准并经应用测试确认。"]
+      "en": [
+        "Figures are indicative typical values; verify against the current technical datasheet and by application testing before production."
+      ],
+      "zh": [
+        "以上为参考性典型值；量产前请以最新技术数据表为准并经应用测试确认。"
+      ]
     }
   },
   "applications": {
@@ -106,6 +209,26 @@
       "汽车及新能源线束",
       "户外设备及基础设施标识",
       "工业自动化设备"
+    ],
+    "vi": [
+      "Nhận diện dây & cáp",
+      "Bảng điều khiển điện",
+      "Trung tâm dữ liệu & cáp mạng",
+      "Thiết bị viễn thông",
+      "Bó dây điện ô tô",
+      "Thiết bị điện ngoài trời",
+      "Máy móc công nghiệp",
+      "Bảo trì hạ tầng"
+    ],
+    "th": [
+      "การระบุสายไฟและสายเคเบิล",
+      "ตู้ควบคุมไฟฟ้า",
+      "ศูนย์ข้อมูลและสายเครือข่าย",
+      "อุปกรณ์โทรคมนาคม",
+      "ชุดสายไฟยานยนต์",
+      "อุปกรณ์ไฟฟ้ากลางแจ้ง",
+      "เครื่องจักรอุตสาหกรรม",
+      "การบำรุงรักษาโครงสร้างพื้นฐาน"
     ]
   },
   "certifications": {}
