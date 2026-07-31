@@ -401,8 +401,8 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 /* explore-by-application: six cards (image top / copy below) */
 .acgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
 .acgrid.acgrid5{grid-template-columns:repeat(5,1fr)}
-.acgrid.acgrid6{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-.acgrid.acgrid6 .acard{flex:0 1 180px;max-width:200px}
+.acgrid.acgrid6{display:flex;flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:14px;padding:2px 2px 12px}
+.acgrid.acgrid6 .acard{flex:0 0 212px;scroll-snap-align:start}
 .solgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 @media(max-width:900px){.solgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.solgrid{grid-template-columns:1fr}}
@@ -431,9 +431,11 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .acard-img{position:relative;aspect-ratio:16/11;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .acard-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .35s}
 .acard:hover .acard-img img{transform:scale(1.06)}
-#svccar>.acard{flex:0 0 230px}
-#svccar .acard-img{background:#eef3fc;aspect-ratio:16/10}
-#svccar .acard-img img{object-fit:cover}
+.sc4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.sc4 .sccard .acard-img{background:#eef3fc;aspect-ratio:16/10}
+.sc4 .sccard .acard-img img{object-fit:cover}
+@media(max-width:900px){.sc4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.sc4{grid-template-columns:1fr}}
 .appcard .acard-img{background:#eef3fc;aspect-ratio:16/10}
 .appcard .acard-body p{font-size:14px;color:var(--mut);line-height:1.55;margin-top:6px}
 .appnotesgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
@@ -1625,10 +1627,7 @@ def build_home(lang):
         ('<img src="%s" alt="" loading="lazy" onerror="this.remove()">'%esc(it["img"]) if it.get("img") else ''),
         esc(it["title"]),esc(it["desc"])) for it in T.get("svc",[]))
     sc_section=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
-                '<div class="indcar-wrap"><button class="acar-nav prev" onclick="etaSvcSlide(-1)" aria-label="Previous">&lsaquo;</button>'
-                '<div class="indcar" id="svccar">%s</div>'
-                '<button class="acar-nav next" onclick="etaSvcSlide(1)" aria-label="Next">&rsaquo;</button></div>'
-                '</div></section>')%(
+                '<div class="sc4">%s</div></div></section>')%(
         esc(T.get("sc_eyebrow","SERVICE COMMITMENT")),esc(T.get("sc_title","Our Service Commitment")),sc_items)
     h=G["hero"]
     hero_banner=home_banner(lang, HOME_BG[0], h["eyebrow"], h["h1"], h["line"], "",
