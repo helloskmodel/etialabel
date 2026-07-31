@@ -205,7 +205,9 @@ def build_lang(data, lang):
                      "img": t.get("img", ""), "icon": t.get("icon", ""), "prods": prods})
 
     banner = data.get("banner_img", "")
-    bg = ('<img class="bg" src="%s" alt="" loading="eager" onerror="this.style.display=\'none\'">' % esc(banner)) if banner else ""
+    bpos = data.get("banner_pos", "")
+    bstyle = (' style="object-position:%s"' % esc(bpos)) if bpos else ""
+    bg = ('<img class="bg" src="%s" alt="" loading="eager"%s onerror="this.style.display=\'none\'">' % (esc(banner), bstyle)) if banner else ""
     hero = ('%s<section class="wchero">%s<div class="in">'
             '<div class="eye">%s</div><h1>%s</h1><p class="slog">%s</p>'
             '<div style="margin-top:16px">%s</div></div></section>') % (
