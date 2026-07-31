@@ -3,16 +3,6 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/products",
-      "destination": "/",
-      "permanent": false
-    },
-    {
-      "source": "/products/",
-      "destination": "/",
-      "permanent": false
-    },
-    {
       "source": "/industries",
       "destination": "/",
       "permanent": false
@@ -20,16 +10,6 @@
     {
       "source": "/industries/",
       "destination": "/",
-      "permanent": false
-    },
-    {
-      "source": "/cn/products",
-      "destination": "/cn/",
-      "permanent": false
-    },
-    {
-      "source": "/cn/products/",
-      "destination": "/cn/",
       "permanent": false
     },
     {
@@ -43,16 +23,6 @@
       "permanent": false
     },
     {
-      "source": "/vn/products",
-      "destination": "/vn/",
-      "permanent": false
-    },
-    {
-      "source": "/vn/products/",
-      "destination": "/vn/",
-      "permanent": false
-    },
-    {
       "source": "/vn/industries",
       "destination": "/vn/",
       "permanent": false
@@ -60,16 +30,6 @@
     {
       "source": "/vn/industries/",
       "destination": "/vn/",
-      "permanent": false
-    },
-    {
-      "source": "/th/products",
-      "destination": "/th/",
-      "permanent": false
-    },
-    {
-      "source": "/th/products/",
-      "destination": "/th/",
       "permanent": false
     },
     {
