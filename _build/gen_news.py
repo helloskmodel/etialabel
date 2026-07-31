@@ -111,14 +111,11 @@ CSS = """
 .art h2{font-size:20px;color:#143C96;margin:26px 0 10px}
 .art p{font-size:15.5px;line-height:1.85;color:#41506e;margin:0 0 12px}
 .nback{display:inline-block;margin:8px 0 0;font-size:14px;font-weight:700;color:#1A56DB;text-decoration:none}
-/* hub — section covers that split News vs Knowledge */
+/* hub — text section headers that split News vs Knowledge */
 .nsec{max-width:1080px;margin:0 auto;padding:0 22px}
-.nsechd{position:relative;border-radius:16px;overflow:hidden;margin:30px 0 18px;min-height:150px;display:flex;align-items:flex-end;background:#12224b}
-.nsechd img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
-.nsechd::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,60,150,.82) 8%,rgba(20,60,150,.42) 55%,rgba(20,60,150,.08))}
-.nsechd .t{position:relative;z-index:2;padding:20px 24px}
-.nsechd .t .k{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8fe063}
-.nsechd .t h2{margin:3px 0 0;font-size:26px;color:#fff;font-family:var(--sans);font-weight:800;line-height:1.1}
+.nsechd{margin:34px 0 14px;border-bottom:1px solid #e2e9f5;padding-bottom:10px}
+.nsechd .k{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#1A56DB}
+.nsechd h2{margin:3px 0 0;font-size:23px;color:#143C96;font-family:var(--sans);font-weight:800;line-height:1.1}
 .nrow{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:18px;padding:2px 0 14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
 .nrow::-webkit-scrollbar{height:6px}
 .nrow::-webkit-scrollbar-thumb{background:#c7d3ea;border-radius:6px}
@@ -129,6 +126,13 @@ CSS = """
 .ncard{background:#fff;border:1px solid #dbe3f1;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .15s,transform .15s}
 .ncard:hover{box-shadow:0 14px 34px rgba(20,60,150,.14);transform:translateY(-3px)}
 .ncard img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#e8eefb}
+/* article cover = category template image with the title on the blank left area */
+.ncov{position:relative;aspect-ratio:16/9;overflow:hidden;background:#e8eefb}
+.ncov img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.ncov .novl{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:0 6% 0 8%}
+.ncov .novl .k{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#1A56DB}
+.ncov .novl h3{margin:0;font-family:var(--sans);font-weight:800;font-size:18px;line-height:1.25;color:#12224b;max-width:60%;text-shadow:0 1px 3px rgba(255,255,255,.55)}
+.nrow .ncov .novl h3{font-size:16px}
 .ncard .cb{padding:16px 18px 18px;display:flex;flex-direction:column;gap:9px;flex:1}
 .ncard .kind{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#1A56DB}
 .ncard h3{margin:0;font-size:17px;line-height:1.35;color:#17203a}
@@ -181,18 +185,20 @@ def build_article(a, lang):
         hp.track(path, "core")
 
 def _card(a, lang, ui):
-    banner = a.get("banner", "")
-    img = ('<img src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(banner)) if banner else ""
-    return ('<a class="ncard" href="%s">%s<div class="cb"><span class="kind">%s</span>'
-            '%s<h3>%s</h3><p class="cs">%s</p><span class="go">%s</span></div></a>') % (
-        hp.Lx(lang, HUB + a["slug"] + "/"), img, esc(ui["news"]), chips_html(a, lang),
-        esc(L(a["title"], lang)), esc(L(a.get("subtitle", {}), lang)), esc(ui["read"]))
+    # Cover = the category template image; the article title is written on its
+    # blank left area (News -> INSIGHT-NEWS, Knowledge -> INSIGHT-KNOWLEDGE).
+    cover = COVER_NEWS if a.get("category") == "news" else COVER_KNOWLEDGE
+    ovl = ('<div class="ncov"><img src="%s" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
+           '<div class="novl"><span class="k">%s</span><h3>%s</h3></div></div>') % (
+        esc(cover), esc(ui["news"]), esc(L(a["title"], lang)))
+    return ('<a class="ncard" href="%s">%s<div class="cb">%s<p class="cs">%s</p>'
+            '<span class="go">%s</span></div></a>') % (
+        hp.Lx(lang, HUB + a["slug"] + "/"), ovl, chips_html(a, lang),
+        esc(L(a.get("subtitle", {}), lang)), esc(ui["read"]))
 
-def _section(cover, kicker, title, cards_html, wrap_cls, soon=""):
-    head = ('<div class="nsec"><div class="nsechd">'
-            '<img src="%s" alt="" loading="lazy" onerror="this.remove()">'
-            '<div class="t"><div class="k">%s</div><h2>%s</h2></div></div></div>') % (
-        esc(cover), esc(kicker), esc(title))
+def _section(kicker, title, cards_html, wrap_cls, soon=""):
+    head = '<div class="nsec"><div class="nsechd"><div class="k">%s</div><h2>%s</h2></div></div>' % (
+        esc(kicker), esc(title))
     if cards_html:
         inner = '<div class="nsec"><div class="%s">%s</div></div>' % (wrap_cls, cards_html)
     else:
@@ -205,10 +211,10 @@ def build_hub(lang):
     news = [a for a in arts if a.get("category") == "news"]
     know = [a for a in arts if a.get("category") != "news"]
     # Industry News — one row, up to 4 per view, carousel-ready (scrolls)
-    news_html = _section(COVER_NEWS, ui["news"], ui["sec_news"],
+    news_html = _section(ui["news"], ui["sec_news"],
                          "".join(_card(a, lang, ui) for a in news), "nrow", ui["soon"])
-    # Lab & Labeling Knowledge — all articles laid out in a grid
-    know_html = _section(COVER_KNOWLEDGE, ui["hub_title"], ui["sec_know"],
+    # Label & Labeling Knowledge — all articles laid out in a grid
+    know_html = _section(ui["hub_title"], ui["sec_know"],
                          "".join(_card(a, lang, ui) for a in know), "ncards")
     body = CSS + news_html + know_html
     crumb = [(ui["home"], "/"), (ui["hub_title"], HUB)]
