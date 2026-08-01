@@ -1762,21 +1762,18 @@ def hero_carousel(lang, slides, eyebrow, title, sub):
     preload = ('<link rel="preload" as="image" href="%s" fetchpriority="high">' % esc(slides[0][0])) if slides else ""
     return preload + _HERO_FX_CSS + html + script
 
-# Solutions "working-conditions" carousel — different harsh environments (reuses the
-# industry banner photos, which are guaranteed to resolve on COS).
+# Solutions "operating-conditions" carousel — the four solution categories this page
+# is organised around: High Temperature / Low Temperature / Chemical / Sterilization
+# (reuses each solution page's own environment photo, guaranteed to resolve on COS).
 _SOL_SLIDES = [
-    (_COS + "INDUSTRY/STEEL-BANNER",
-     ("Up to 1000 °C hot metal", "高温金属 · 最高 1000 °C", "Kim loại nóng tới 1000 °C", "โลหะร้อนถึง 1000 °C")),
-    (_COS + "INDUSTRY/MEDICAL-BANNER",
-     ("−196 °C cryogenic storage", "−196 °C 深冷存储", "Lưu trữ đông lạnh −196 °C", "จัดเก็บแช่แข็ง −196 °C")),
-    (_COS + "INDUSTRY/PCB-BANNERNEW.jpg",
-     ("Reflow, wash & ESD", "回流焊、清洗与防静电", "Reflow, rửa & ESD", "รีโฟลว์ ล้าง และ ESD")),
-    (_COS + "INDUSTRY/OURDOOR-BANNER",
-     ("UV & years outdoors", "紫外与户外多年", "UV & nhiều năm ngoài trời", "UV และกลางแจ้งหลายปี")),
-    (_COS + "INDUSTRY/AUTO-BANNER",
-     ("Oil, solvent & abrasion", "油污、溶剂与磨损", "Dầu, dung môi & mài mòn", "น้ำมัน ตัวทำละลาย และการขัดถู")),
-    (_COS + "INDUSTRY/CABLE-BANNER",
-     ("Flame-retardant wire & cable", "阻燃线缆标识", "Cáp & dây chống cháy", "สายไฟหน่วงไฟ")),
+    (_COS + "APPLICATION%20/enviroment-heat",
+     ("High Temperature", "高温", "Nhiệt độ cao", "อุณหภูมิสูง")),
+    (_COS + "APPLICATION%20/enviroment-cold",
+     ("Low Temperature", "低温", "Nhiệt độ thấp", "อุณหภูมิต่ำ")),
+    (_COS + "APPLICATION%20/enviroment-chemical",
+     ("Chemical Resistant", "化学", "Kháng hóa chất", "สารเคมี")),
+    (_COS + "APPLICATION%20/enviroment-sterlization",
+     ("Sterilization", "消毒灭菌", "Tiệt trùng", "การฆ่าเชื้อ")),
 ]
 
 def build_home(lang):
