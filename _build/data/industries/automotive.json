@@ -69,16 +69,16 @@
         "th": "ห้องเครื่อง"
       },
       "name": {
-        "en": "Engine Bay Labels",
-        "zh": "发动机舱标签",
-        "vi": "Nhãn kho động cơ",
-        "th": "ฉลากห้องเครื่องยนต์"
+        "en": "Under-the-Hood Labels",
+        "zh": "发动机舱（引擎盖下）标签",
+        "vi": "Nhãn khoang động cơ (dưới nắp ca-pô)",
+        "th": "ฉลากใต้ฝากระโปรง (ห้องเครื่อง)"
       },
       "intro": {
-        "en": "High-temperature, oil- and chemical-resistant labels for radiators, batteries and fluid reservoirs in the engine bay.",
-        "zh": "适配散热器、蓄电池、油液储罐的耐高温、耐油、耐化学品发动机舱标签",
-        "vi": "Nhãn kho động cơ chịu nhiệt cao, chống dầu và hóa chất cho bộ tản nhiệt, pin và bình chứa dầu",
-        "th": "ฉลากห้องเครื่องยนต์ทนอุณหภูมิสูง ทนน้ำมันและสารเคมี สำหรับหม้อน้ำ แบตเตอรี่ และถังน้ำมัน"
+        "en": "High-temperature, oil- and chemical-resistant labels for radiators, batteries and fluid reservoirs under the hood.",
+        "zh": "耐高温、耐油、耐化学的标签，适用于发动机舱（引擎盖下）的散热器、电池与液体储罐。",
+        "vi": "Nhãn chịu nhiệt độ cao, kháng dầu và hóa chất cho két nước, ắc-quy và bình chứa dung dịch dưới nắp ca-pô.",
+        "th": "ฉลากทนอุณหภูมิสูง ทนน้ำมันและสารเคมี สำหรับหม้อน้ำ แบตเตอรี่ และถังของเหลวใต้ฝากระโปรง"
       },
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-RADIATOR",
       "products": [
