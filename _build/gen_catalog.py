@@ -70,9 +70,11 @@ def barcode_label_svg(code):
         'font-size="22" font-weight="700" letter-spacing="2" fill="#143C96">%s</text>'
         '</svg>') % (esc(code), rects, esc(code))
 
-# Series/hub pages that are not a single material — kept in the catalog but the
-# environment Solution hubs are excluded (they already have "browse by environment").
-EXCLUDE = set(gp.SOLUTION_SLUGS)
+# Entries excluded from the finder + brand grid because they are NOT a single
+# product: the environment Solution hubs, and the series-overview pages (APEX,
+# XF-58, XF-78, E-series) whose individual models are already listed on their own.
+# Their pages still exist and are reached from the "Products › By Industry" pages.
+EXCLUDE = set(gp.SOLUTION_SLUGS) | {"apex", "xf58", "xf78", "e-series"}
 
 IND_NAME = {
     "pcb":     {"en": "PCB & Electronics", "zh": "PCB 电子", "vi": "PCB & Điện tử", "th": "PCB และอิเล็กทรอนิกส์"},
