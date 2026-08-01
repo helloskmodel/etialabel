@@ -134,7 +134,7 @@
           "slug": ""
         },
         {
-          "name": "MZS1670",
+          "name": "EA1670",
           "line": {
             "en": "50µm white UV PET · lamination & nameplate · −40 to 149 °C · aging/yellowing-resistant",
             "zh": "50µm 白色耐 UV PET · 层压与铭牌 · −40 至 149 °C · 耐老化/耐黄变",
@@ -143,10 +143,10 @@
           },
           "img": "",
           "landing": true,
-          "slug": "mzs1670"
+          "slug": "ea1670"
         },
         {
-          "name": "MZS1619",
+          "name": "EA1619",
           "line": {
             "en": "50µm matte black UV PET · UL969 · nameplate · 600 dpi TT · −40 to 149 °C",
             "zh": "50µm 哑黑耐 UV PET · UL969 · 铭牌 · 600 dpi 热转印 · −40 至 149 °C",
@@ -155,10 +155,10 @@
           },
           "img": "",
           "landing": true,
-          "slug": "mzs1619"
+          "slug": "ea1619"
         },
         {
-          "name": "MZ0511",
+          "name": "EA0511",
           "line": {
             "en": "50µm matte silver PET · UL969 · solar backsheet · PCT48/DH1250 · −40 to 149 °C",
             "zh": "50µm 哑银 PET · UL969 · 光伏背板 · PCT48/DH1250 · −40 至 149 °C",
@@ -167,7 +167,7 @@
           },
           "img": "",
           "landing": true,
-          "slug": "mz0511"
+          "slug": "ea0511"
         }
       ]
     },
@@ -411,7 +411,7 @@
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER",
       "products": [
         {
-          "name": "CompuCal Excel 21449",
+          "name": "EF21449",
           "line": {
             "en": "2 mil white matte PET · UL969 · CSA · durable equipment",
             "zh": "2 mil 白色哑光 PET · UL969 · CSA · 耐用设备",
@@ -420,10 +420,10 @@
           },
           "img": "",
           "landing": true,
-          "slug": "compucal-21449"
+          "slug": "ef21449"
         },
         {
-          "name": "NexGen WP344S",
+          "name": "EFWP344S",
           "line": {
             "en": "2 mil white gloss PET · UL969 · cUL/CSA · universally printable",
             "zh": "2 mil 白色亮光 PET · UL969 · cUL/CSA · 通用可打印",
@@ -432,10 +432,10 @@
           },
           "img": "",
           "landing": true,
-          "slug": "nexgen-wp344s"
+          "slug": "efwp344s"
         },
         {
-          "name": "ThermlFilm Chemgard 21361v2",
+          "name": "EF21361v2",
           "line": {
             "en": "2 mil white matte PET · UL · hi-performance adhesive for rough/oily/LSE",
             "zh": "2 mil 白色哑光 PET · UL · 高性能胶，耐粗糙/油污/低表面能",
@@ -444,10 +444,10 @@
           },
           "img": "",
           "landing": true,
-          "slug": "chemgard-21361v2"
+          "slug": "ef21361v2"
         },
         {
-          "name": "BusArt V400F",
+          "name": "EFV400F",
           "line": {
             "en": "3.5 mil white vinyl · removable · bus/train wrap · ASTM E162/E662",
             "zh": "3.5 mil 白色乙烯基 · 可移除 · 公交/列车车身 · ASTM E162/E662",
@@ -456,7 +456,7 @@
           },
           "img": "",
           "landing": true,
-          "slug": "busart-v400f"
+          "slug": "efv400f"
         }
       ]
     }
