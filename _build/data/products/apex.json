@@ -1,6 +1,6 @@
 {
   "slug": "apex",
-  "source": "client TDS — Polyonics APEX Series XF-101S / XF-102S / XF-102G / XF-102M / XF-102SE",
+  "source": "client TDS — Polyonics APEX Series XF-101M/S/G/ME · XF-102M/S/G/SE",
   "langs": [
     "en",
     "zh",
@@ -125,6 +125,26 @@
     "rows": [
       {
         "cells": [
+          "XF-101M",
+          {
+            "en": "1 mil (25µm) PI",
+            "zh": "1 mil（25µm）PI",
+            "vi": "PI 1 mil (25µm)",
+            "th": "PI 1 mil (25µm)"
+          },
+          {
+            "en": "Matte white",
+            "zh": "哑光白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          "2.4 mil (61 µm)",
+          "≥ 40 oz/in",
+          "—"
+        ]
+      },
+      {
+        "cells": [
           "XF-101S",
           {
             "en": "1 mil (25µm) PI",
@@ -140,6 +160,71 @@
           },
           "2.4 mil (61 µm)",
           "≥ 40 oz/in",
+          "—"
+        ]
+      },
+      {
+        "cells": [
+          "XF-101G",
+          {
+            "en": "1 mil (25µm) PI",
+            "zh": "1 mil（25µm）PI",
+            "vi": "PI 1 mil (25µm)",
+            "th": "PI 1 mil (25µm)"
+          },
+          {
+            "en": "High-gloss white",
+            "zh": "高光白",
+            "vi": "Trắng bóng cao",
+            "th": "สีขาวเงาสูง"
+          },
+          "2.4 mil (61 µm)",
+          "≥ 40 oz/in",
+          "—"
+        ]
+      },
+      {
+        "cells": [
+          "XF-101ME",
+          {
+            "en": "1 mil (25µm) PI",
+            "zh": "1 mil（25µm）PI",
+            "vi": "PI 1 mil (25µm)",
+            "th": "PI 1 mil (25µm)"
+          },
+          {
+            "en": "Matte white",
+            "zh": "哑光白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          "2.4 mil (61 µm)",
+          "≥ 40 oz/in",
+          {
+            "en": "Static-dissipative",
+            "zh": "静电耗散",
+            "vi": "Tiêu tán tĩnh",
+            "th": "กระจายประจุ"
+          }
+        ]
+      },
+      {
+        "cells": [
+          "XF-102M",
+          {
+            "en": "2 mil (50µm) PI",
+            "zh": "2 mil（50µm）PI",
+            "vi": "PI 2 mil (50µm)",
+            "th": "PI 2 mil (50µm)"
+          },
+          {
+            "en": "Matte white",
+            "zh": "哑光白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          },
+          "3.9 mil (99 µm)",
+          "≥ 50 oz/in",
           "—"
         ]
       },
@@ -185,26 +270,6 @@
       },
       {
         "cells": [
-          "XF-102M",
-          {
-            "en": "2 mil (50µm) PI",
-            "zh": "2 mil（50µm）PI",
-            "vi": "PI 2 mil (50µm)",
-            "th": "PI 2 mil (50µm)"
-          },
-          {
-            "en": "Matte white",
-            "zh": "哑光白",
-            "vi": "Trắng mờ",
-            "th": "สีขาวด้าน"
-          },
-          "3.9 mil (99 µm)",
-          "≥ 50 oz/in",
-          "—"
-        ]
-      },
-      {
-        "cells": [
           "XF-102SE",
           {
             "en": "2 mil (50µm) PI",
@@ -234,28 +299,28 @@
         "Construction: high-temperature permanent acrylic PSA · thermal-transfer printable white polyimide.",
         "Temperature: 100 h @ 150 °C (long-term) · 5 min @ 260 °C (operating) · 90 sec @ 300 °C (short-term) — survives multi-cycle reflow.",
         "Tack ≥ 1000 g/in (XF-101S) / ≥ 1200 g/in (XF-102 series); Taber abrasion resistant; passes MIL-STD-202G Method 215K; flux & cleaner resistant (Kyzen, Zestron, IPA).",
-        "XF-102SE is static-dissipative: static decay 0.02 s · low-charging PSA/liner < 125 V.",
+        "XF-101ME and XF-102SE are static-dissipative: static decay 0.02 s · low-charging PSA/liner < 125 V.",
         "Compliance: REACH · RoHS. UL File # PGJI2.MH19503 (UL 969 label+ribbon approvals pending)."
       ],
       "zh": [
         "结构：耐高温永久丙烯酸压敏胶 · 可热转印白色聚酰亚胺面材。",
         "温度：150 °C 长期 100 小时 · 260 °C 操作 5 分钟 · 300 °C 短时 90 秒 —— 可耐多轮回流焊。",
         "初粘力 ≥ 1000 g/in（XF-101S）/ ≥ 1200 g/in（XF-102 系列）；耐 Taber 磨耗；通过 MIL-STD-202G Method 215K；耐助焊剂与清洗剂（Kyzen、Zestron、IPA）。",
-        "XF-102SE 为静电耗散型：静电衰减 0.02 秒 · 低起电胶/底纸 < 125 V。",
+        "XF-101ME 与 XF-102SE 为静电耗散型：静电衰减 0.02 秒 · 低起电胶/底纸 < 125 V。",
         "合规：REACH · RoHS。UL 档案号 PGJI2.MH19503（UL 969 标签+碳带组合认证审批中）。"
       ],
       "vi": [
         "Cấu tạo: keo acrylic vĩnh viễn chịu nhiệt cao · polyimide trắng in chuyển nhiệt.",
         "Nhiệt độ: 100 giờ @ 150 °C (dài hạn) · 5 phút @ 260 °C (vận hành) · 90 giây @ 300 °C (ngắn hạn) — chịu reflow nhiều chu kỳ.",
         "Độ dính ≥ 1000 g/in (XF-101S) / ≥ 1200 g/in (dòng XF-102); chịu mài mòn Taber; đạt MIL-STD-202G Method 215K; kháng flux & dung dịch rửa (Kyzen, Zestron, IPA).",
-        "XF-102SE tiêu tán tĩnh điện: suy giảm tĩnh 0,02 s · keo/lớp lót ít tích điện < 125 V.",
+        "XF-101ME và XF-102SE tiêu tán tĩnh điện: suy giảm tĩnh 0,02 s · keo/lớp lót ít tích điện < 125 V.",
         "Tuân thủ: REACH · RoHS. UL File # PGJI2.MH19503 (đang chờ duyệt UL 969 cho tổ hợp nhãn+ribbon)."
       ],
       "th": [
         "โครงสร้าง: กาวอะคริลิกถาวรทนความร้อนสูง · โพลีอิไมด์สีขาวพิมพ์ถ่ายเทความร้อนได้",
         "อุณหภูมิ: 100 ชม. @ 150 °C (ระยะยาว) · 5 นาที @ 260 °C (ใช้งาน) · 90 วินาที @ 300 °C (ระยะสั้น) — ทนรีโฟลว์หลายรอบ",
         "แรงยึดเริ่มต้น ≥ 1000 g/in (XF-101S) / ≥ 1200 g/in (ซีรีส์ XF-102); ทนการขัดถู Taber; ผ่าน MIL-STD-202G Method 215K; ทนฟลักซ์และน้ำยาล้าง (Kyzen, Zestron, IPA)",
-        "XF-102SE เป็นแบบกระจายประจุ: การสลายประจุ 0.02 วินาที · กาว/ไลเนอร์ประจุต่ำ < 125 V",
+        "XF-101ME และ XF-102SE เป็นแบบกระจายประจุ: การสลายประจุ 0.02 วินาที · กาว/ไลเนอร์ประจุต่ำ < 125 V",
         "การปฏิบัติตาม: REACH · RoHS. UL File # PGJI2.MH19503 (อยู่ระหว่างอนุมัติ UL 969 สำหรับชุดฉลาก+ริบบอน)"
       ]
     }
