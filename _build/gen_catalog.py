@@ -115,27 +115,35 @@ UI = {
            "search": "Search part number, material or application… (e.g. E-4812, polyimide, blood bag)",
            "reset": "Clear all", "results": "materials", "none": "No materials match your filters.",
            "view": "View product →", "filters": "Filters", "home": "Home", "products": "Products",
-           "fac": {"industry": "Industry", "brand": "Brand", "application": "Application", "facestock": "Facestock", "temp": "Temperature"}},
+           "fac": {"industry": "Industry", "brand": "Brand", "application": "Application", "facestock": "Facestock", "thick": "Thickness", "temp": "Temperature"}},
     "zh": {"title": "查找标签материал".replace("материал", "材料"), "lede": "按料号、材料或应用搜索 —— 或使用下方维度筛选。",
            "search": "搜索料号、材料或应用……（如 E-4812、聚酰亚胺、血袋）",
            "reset": "清除全部", "results": "款材料", "none": "没有符合条件的材料。",
            "view": "查看产品 →", "filters": "筛选", "home": "首页", "products": "产品",
-           "fac": {"industry": "行业", "brand": "品牌", "application": "应用", "facestock": "面材", "temp": "温度"}},
+           "fac": {"industry": "行业", "brand": "品牌", "application": "应用", "facestock": "面材", "thick": "厚度", "temp": "温度"}},
     "vi": {"title": "Tìm vật liệu nhãn", "lede": "Tìm theo mã sản phẩm, vật liệu hoặc ứng dụng — hoặc lọc theo các tiêu chí bên dưới.",
            "search": "Tìm mã, vật liệu hoặc ứng dụng… (vd: E-4812, polyimide, túi máu)",
            "reset": "Xóa tất cả", "results": "vật liệu", "none": "Không có vật liệu phù hợp.",
            "view": "Xem sản phẩm →", "filters": "Bộ lọc", "home": "Trang chủ", "products": "Sản phẩm",
-           "fac": {"industry": "Ngành", "brand": "Thương hiệu", "application": "Ứng dụng", "facestock": "Vật liệu mặt", "temp": "Nhiệt độ"}},
+           "fac": {"industry": "Ngành", "brand": "Thương hiệu", "application": "Ứng dụng", "facestock": "Vật liệu mặt", "thick": "Độ dày", "temp": "Nhiệt độ"}},
     "th": {"title": "ค้นหาวัสดุฉลาก", "lede": "ค้นหาด้วยรหัสสินค้า วัสดุ หรือการใช้งาน — หรือกรองตามหมวดด้านล่าง",
            "search": "ค้นหารหัส วัสดุ หรือการใช้งาน… (เช่น E-4812, โพลีอิไมด์, ถุงเลือด)",
            "reset": "ล้างทั้งหมด", "results": "วัสดุ", "none": "ไม่มีวัสดุที่ตรงกับตัวกรอง",
            "view": "ดูสินค้า →", "filters": "ตัวกรอง", "home": "หน้าแรก", "products": "ผลิตภัณฑ์",
-           "fac": {"industry": "อุตสาหกรรม", "brand": "แบรนด์", "application": "การใช้งาน", "facestock": "วัสดุหน้า", "temp": "อุณหภูมิ"}},
+           "fac": {"industry": "อุตสาหกรรม", "brand": "แบรนด์", "application": "การใช้งาน", "facestock": "วัสดุหน้า", "thick": "ความหนา", "temp": "อุณหภูมิ"}},
 }
 TEMP_BANDS = {
-    "high":  {"en": "High-Temp (≥ 200°C)", "zh": "高温 (≥ 200°C)", "vi": "Nhiệt độ cao (≥ 200°C)", "th": "อุณหภูมิสูง (≥ 200°C)"},
-    "std":   {"en": "Standard (−40 to 200°C)", "zh": "常规 (−40 至 200°C)", "vi": "Tiêu chuẩn (−40 đến 200°C)", "th": "มาตรฐาน (−40 ถึง 200°C)"},
-    "cryo":  {"en": "Low-Temp (≤ −40°C)", "zh": "低温 (≤ −40°C)", "vi": "Nhiệt độ thấp (≤ −40°C)", "th": "อุณหภูมิต่ำ (≤ −40°C)"},
+    "xhot":  {"en": "Extreme (≥ 500°C)", "zh": "极高温 (≥ 500°C)", "vi": "Cực cao (≥ 500°C)", "th": "สูงมาก (≥ 500°C)"},
+    "vhot":  {"en": "Very High (300–500°C)", "zh": "超高温 (300–500°C)", "vi": "Rất cao (300–500°C)", "th": "สูงพิเศษ (300–500°C)"},
+    "hot":   {"en": "High-Temp (150–300°C)", "zh": "高温 (150–300°C)", "vi": "Cao (150–300°C)", "th": "สูง (150–300°C)"},
+    "std":   {"en": "Standard (≤ 150°C)", "zh": "常规 (≤ 150°C)", "vi": "Tiêu chuẩn (≤ 150°C)", "th": "มาตรฐาน (≤ 150°C)"},
+    "cryo":  {"en": "Low / Cryogenic (≤ −40°C)", "zh": "低温 / 冻存 (≤ −40°C)", "vi": "Thấp / Đông lạnh (≤ −40°C)", "th": "ต่ำ / แช่แข็ง (≤ −40°C)"},
+}
+THICK_BANDS = {
+    "t1": {"en": "1 mil (25 µm)", "zh": "1 mil (25 µm)", "vi": "1 mil (25 µm)", "th": "1 mil (25 µm)"},
+    "t2": {"en": "2 mil (50 µm)", "zh": "2 mil (50 µm)", "vi": "2 mil (50 µm)", "th": "2 mil (50 µm)"},
+    "t3": {"en": "3–4 mil", "zh": "3–4 mil", "vi": "3–4 mil", "th": "3–4 mil"},
+    "t5": {"en": "5 mil +", "zh": "5 mil +", "vi": "5 mil +", "th": "5 mil +"},
 }
 BRAND = gp.BRAND_NAMES  # {"polyonics":{...}, "etia":{...}} — shared brand axis
 
@@ -178,14 +186,29 @@ def build_record(d):
     facestocks = [fs for fs, kws in FACESTOCKS if any(k in blob for k in kws)]
     tmin, tmax = _temps(blob)
     temps = []
-    if tmin is not None and tmin <= -60: temps.append("cryo")   # genuinely deep-cold only
-    if tmax is not None and tmax >= 200: temps.append("high")
+    if tmax is not None:
+        if tmax >= 500:   temps.append("xhot")   # hot steel / billet
+        elif tmax >= 300: temps.append("vhot")   # reflow-class PI (up to 300 °C)
+        elif tmax >= 150: temps.append("hot")    # general high-heat
+        else:             temps.append("std")
+    if tmin is not None and tmin <= -40: temps.append("cryo")  # low-temp / cryogenic
     if not temps: temps.append("std")
+    # thickness band from the film (headline) thickness — title first, then blob
+    ttitle = (d.get("title", {}) or {}).get("en", "")
+    mm = re.search(r'([0-9]+(?:\.[0-9]+)?)\s*mil', ttitle) or re.search(r'([0-9]+(?:\.[0-9]+)?)\s*mil', blob)
+    thick = []
+    if mm:
+        v = float(mm.group(1))
+        if v <= 1.4:   thick.append("t1")
+        elif v <= 2.4: thick.append("t2")
+        elif v <= 4.9: thick.append("t3")
+        else:          thick.append("t5")
     explicit = d.get("facets", {}) or {}
     return {
         "slug": slug, "url": "/products/item/%s/" % slug,
         "title": d.get("title", {}), "tagline": d.get("tagline", {}),
-        "industry": ind, "brand": brand, "apps": apps, "facestocks": facestocks, "temps": temps,
+        "industry": ind, "brand": brand, "apps": apps, "facestocks": facestocks,
+        "temps": temps, "thick": thick,
         "product_img": d.get("product_img", ""),
         "blob": blob, "explicit": explicit,
     }
@@ -212,6 +235,7 @@ def build_lang(records, lang):
     brand_opts = sorted({r["brand"] for r in records}, reverse=True)
     app_opts = collect(lambda r: r["apps"], None)
     fs_opts = collect(lambda r: [json.dumps(f, ensure_ascii=False) for f in r["facestocks"]], None)
+    thick_opts = collect(lambda r: r["thick"], None)
     temp_opts = collect(lambda r: r["temps"], None)
 
     def chk(group, value, label):
@@ -219,13 +243,16 @@ def build_lang(records, lang):
                 % (group, esc(value), esc(label)))
 
     fpanels = ""
-    # Spine first: Temperature (High / Standard / Low) then Material, then tags.
+    # Spine first: Temperature (5 tiers), then Material and Thickness, then tags.
     if temp_opts:
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["temp"]),
-            "".join(chk("temp", t, L(TEMP_BANDS[t])) for t in ["high", "std", "cryo"] if t in temp_opts))
+            "".join(chk("temp", t, L(TEMP_BANDS[t])) for t in ["xhot", "vhot", "hot", "std", "cryo"] if t in temp_opts))
     if fs_opts:
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["facestock"]),
             "".join(chk("fs", f, L(json.loads(f))) for f in fs_opts))
+    if thick_opts:
+        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["thick"]),
+            "".join(chk("thick", t, L(THICK_BANDS[t])) for t in ["t1", "t2", "t3", "t5"] if t in thick_opts))
     if app_opts:
         applab = {key: lab for key, lab, kws in APP_CATS}
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["application"]),
@@ -245,9 +272,10 @@ def build_lang(records, lang):
         for f in r["facestocks"][:1]:
             chips += '<span class="cchip mat">%s</span>' % esc(L(f))
         for t in r["temps"]:
-            if t in ("high", "cryo"):
-                cls = "temphi" if t == "high" else "templo"
-                chips += '<span class="cchip %s">%s</span>' % (cls, esc(L(TEMP_BANDS[t]).split("(")[0].strip()))
+            if t in ("xhot", "vhot", "hot"):
+                chips += '<span class="cchip temphi">%s</span>' % esc(L(TEMP_BANDS[t]).split("(")[0].strip())
+            elif t == "cryo":
+                chips += '<span class="cchip templo">%s</span>' % esc(L(TEMP_BANDS[t]).split("(")[0].strip())
         if "esd" in r["apps"]:
             chips += '<span class="cchip esd">ESD</span>'
         if "flame" in r["apps"]:
@@ -256,7 +284,7 @@ def build_lang(records, lang):
             "industry": [r["industry"]] if r["industry"] else [],
             "brand": [r["brand"]], "app": r["apps"],
             "fs": [json.dumps(f, ensure_ascii=False) for f in r["facestocks"]],
-            "temp": r["temps"], "q": r["blob"],
+            "thick": r["thick"], "temp": r["temps"], "q": r["blob"],
         }
         cards += ('<a class="pcell" href="%s" data-f="%s"><div class="pcell-t">%s</div>'
                   '<div class="pcell-chips">%s</div>'
