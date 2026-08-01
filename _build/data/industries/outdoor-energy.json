@@ -132,6 +132,42 @@
           "img": "",
           "landing": false,
           "slug": ""
+        },
+        {
+          "name": "MZS1670",
+          "line": {
+            "en": "50µm white UV PET · lamination & nameplate · −40 to 149 °C · aging/yellowing-resistant",
+            "zh": "50µm 白色耐 UV PET · 层压与铭牌 · −40 至 149 °C · 耐老化/耐黄变",
+            "vi": "PET UV trắng 50µm · cán màng & bảng tên · −40 đến 149 °C · kháng lão hóa/ố vàng",
+            "th": "PET UV สีขาว 50µm · เคลือบและป้ายชื่อ · −40 ถึง 149 °C · ทนการเสื่อม/เหลือง"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "mzs1670"
+        },
+        {
+          "name": "MZS1619",
+          "line": {
+            "en": "50µm matte black UV PET · UL969 · nameplate · 600 dpi TT · −40 to 149 °C",
+            "zh": "50µm 哑黑耐 UV PET · UL969 · 铭牌 · 600 dpi 热转印 · −40 至 149 °C",
+            "vi": "PET UV đen mờ 50µm · UL969 · bảng tên · TT 600 dpi · −40 đến 149 °C",
+            "th": "PET UV ดำด้าน 50µm · UL969 · ป้ายชื่อ · TT 600 dpi · −40 ถึง 149 °C"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "mzs1619"
+        },
+        {
+          "name": "MZ0511",
+          "line": {
+            "en": "50µm matte silver PET · UL969 · solar backsheet · PCT48/DH1250 · −40 to 149 °C",
+            "zh": "50µm 哑银 PET · UL969 · 光伏背板 · PCT48/DH1250 · −40 至 149 °C",
+            "vi": "PET bạc mờ 50µm · UL969 · tấm nền PV · PCT48/DH1250 · −40 đến 149 °C",
+            "th": "PET เงินด้าน 50µm · UL969 · แบ็คชีตโซลาร์ · PCT48/DH1250 · −40 ถึง 149 °C"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "mz0511"
         }
       ]
     },
