@@ -85,14 +85,15 @@ CSS = """
 .ptnote{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
 .ptnote li{position:relative;padding-left:20px;font-size:14px;line-height:1.6;color:#5a6885}
 .ptnote li::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:2px;background:#dbe7fb}
-.pfeat{display:grid;grid-template-columns:1fr;gap:20px}
+.pfeat{display:grid;grid-template-columns:260px 1fr;gap:26px;align-items:start}
+@media(max-width:620px){.pfeat{grid-template-columns:1fr;gap:16px}.pfeat .pimg{max-width:100%}}
 .pdiagram{margin:0;display:flex;gap:26px;align-items:center;justify-content:center;flex-wrap:wrap}
 .pdiagram figure{margin:0;text-align:center}
 .pdiagram img{max-width:100%;max-height:230px;border-radius:12px;background:#f4f7ff}
 .pdiagram figcaption{font-size:12.5px;color:#5a6885;margin-top:8px;max-width:280px}
 .pdleg{list-style:none;padding:0;margin:0;text-align:left;display:flex;flex-direction:column;gap:9px}
 .pdleg li{font-size:14px;line-height:1.5;color:#41506e}
-.pimg{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:12px;background:#e8eefb}
+.pimg{width:100%;max-width:260px;aspect-ratio:16/10;object-fit:cover;border-radius:12px;background:#e8eefb}
 .pcta{max-width:900px;margin:34px auto;background:linear-gradient(120deg,#143C96,#1A56DB);border-radius:16px;padding:30px 30px;color:#fff}
 .pcta h3{margin:0 0 8px;font-size:21px}
 .pcta p{margin:0 0 16px;color:#dbe6ff;font-size:14.5px}
