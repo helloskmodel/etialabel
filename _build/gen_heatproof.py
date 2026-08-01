@@ -1626,7 +1626,7 @@ _HOME_TRUST_CSS = """<style>
 .htrust .ht{padding:6px 26px;text-align:center;color:#fff;border-left:1px solid rgba(255,255,255,.2)}
 .htrust .ht:first-child{border-left:none}
 .htrust .ht b{display:block;font-family:var(--sans);font-weight:800;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.01em;line-height:1.15}
-.htrust .ht span{display:block;font-size:13.5px;color:#d7e3ff;margin-top:5px;line-height:1.4}
+.htrust .ht span{display:block;font-size:13.5px;color:#fff;opacity:.92;margin-top:5px;line-height:1.4}
 @media(max-width:760px){.htrust-in{grid-template-columns:1fr;padding:6px 0}.htrust .ht{border-left:none;border-top:1px solid rgba(255,255,255,.16);padding:15px 20px}.htrust .ht:first-child{border-top:none}}
 </style>"""
 
@@ -1638,15 +1638,11 @@ def home_trustbar(lang):
 
 def home_hero(lang):
     j = JX[lang]
-    def pill(): return P(lang,"Specialty Label Materials · Built for Extreme Conditions",
-        "特种标签材料 · 为极端工况而生","Vật liệu nhãn chuyên dụng · cho điều kiện khắc nghiệt",
-        "วัสดุฉลากเฉพาะทาง · เพื่อสภาวะสุดขั้ว")
-    head = P(lang,"Labels engineered for the world's harshest conditions.",
-        "为极端工况而生的标签材料","Nhãn được thiết kế cho những điều kiện khắc nghiệt nhất",
-        "ฉลากที่ออกแบบมาเพื่อสภาวะที่โหดร้ายที่สุด")
-    sub = P(lang,"From −196 °C to 1000 °C — bonded and readable.",
-        "从 −196 °C 到 1000 °C —— 牢固贴合、清晰可读","Từ −196 °C đến 1000 °C — bám chắc và dễ đọc",
-        "ตั้งแต่ −196 °C ถึง 1000 °C — ยึดแน่นและอ่านได้ชัดเจน")
+    # Restore the original homepage slogan (do not change it): from HOME2 hero.
+    hh = HOME2.get(lang, HOME2["en"])["hero"]
+    pill_txt = hh["eyebrow"]
+    head = hh["h1"]
+    sub = hh["line"]
     c1 = P(lang,"Find a label material →","查找标签材料 →","Tìm vật liệu nhãn →","ค้นหาวัสดุฉลาก →")
     c2 = P(lang,"Talk to an Engineer","咨询工程师","Trao đổi với kỹ sư","ปรึกษาวิศวกร")
     slides, dots = "", ""
@@ -1669,7 +1665,7 @@ def home_hero(lang):
               "setInterval(function(){go(i+1);},3500);})();</script>")
     return (_HOME_HERO_CSS +
         '<section class="hhero"><div class="wrap hhero-in">'
-        '<div class="hhero-copy"><span class="hhero-pill">' + check + ' ' + esc(pill()) + '</span>'
+        '<div class="hhero-copy"><span class="hhero-pill">' + check + ' ' + esc(pill_txt) + '</span>'
         '<h1>' + esc(head) + '</h1><p class="hsub">' + esc(sub) + '</p>'
         '<div class="hhero-cta"><a class="hhbtn pri" href="' + home_hlink(lang,"/products/find/") + '">' + esc(c1) + '</a>'
         '<a class="hhbtn gho" href="' + home_hlink(lang,"/contact/") + '">' + esc(c2) + '</a></div></div>'
