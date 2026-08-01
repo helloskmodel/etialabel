@@ -388,6 +388,77 @@
           "slug": "e-6534"
         }
       ]
+    },
+    {
+      "tab": {
+        "en": "Durable Equipment",
+        "zh": "耐用设备",
+        "vi": "Thiết bị bền",
+        "th": "อุปกรณ์ทนทาน"
+      },
+      "name": {
+        "en": "Durable Equipment & Vehicle Labels",
+        "zh": "耐用设备与车身标签",
+        "vi": "Nhãn thiết bị bền & phương tiện",
+        "th": "ฉลากอุปกรณ์ทนทานและยานพาหนะ"
+      },
+      "intro": {
+        "en": "UL-recognized polyester durable-goods labels and removable vehicle wraps — for rating plates, equipment identification and fleet graphics that hold up outdoors.",
+        "zh": "UL 认证聚酯耐用品标签与可移除车身贴 —— 用于铭牌、设备标识与车队图形，户外耐用。",
+        "vi": "Nhãn hàng bền polyester được UL công nhận và decal xe tháo được — cho bảng thông số, nhận diện thiết bị và đồ họa đội xe, bền ngoài trời.",
+        "th": "ฉลากสินค้าคงทนโพลีเอสเตอร์ที่ได้รับ UL และสติกเกอร์หุ้มยานพาหนะลอกออกได้ — สำหรับป้ายพิกัด การระบุอุปกรณ์ และกราฟิกฟลีตที่ทนกลางแจ้ง"
+      },
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER",
+      "products": [
+        {
+          "name": "CompuCal Excel 21449",
+          "line": {
+            "en": "2 mil white matte PET · UL969 · CSA · durable equipment",
+            "zh": "2 mil 白色哑光 PET · UL969 · CSA · 耐用设备",
+            "vi": "PET trắng mờ 2 mil · UL969 · CSA · thiết bị bền",
+            "th": "PET สีขาวด้าน 2 mil · UL969 · CSA · อุปกรณ์ทนทาน"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "compucal-21449"
+        },
+        {
+          "name": "NexGen WP344S",
+          "line": {
+            "en": "2 mil white gloss PET · UL969 · cUL/CSA · universally printable",
+            "zh": "2 mil 白色亮光 PET · UL969 · cUL/CSA · 通用可打印",
+            "vi": "PET trắng bóng 2 mil · UL969 · cUL/CSA · in đa dạng",
+            "th": "PET สีขาวเงา 2 mil · UL969 · cUL/CSA · พิมพ์หลากหลาย"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "nexgen-wp344s"
+        },
+        {
+          "name": "ThermlFilm Chemgard 21361v2",
+          "line": {
+            "en": "2 mil white matte PET · UL · hi-performance adhesive for rough/oily/LSE",
+            "zh": "2 mil 白色哑光 PET · UL · 高性能胶，耐粗糙/油污/低表面能",
+            "vi": "PET trắng mờ 2 mil · UL · keo hiệu năng cao cho bề mặt thô/dầu/LSE",
+            "th": "PET สีขาวด้าน 2 mil · UL · กาวประสิทธิภาพสูงสำหรับผิวหยาบ/มัน/LSE"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "chemgard-21361v2"
+        },
+        {
+          "name": "BusArt V400F",
+          "line": {
+            "en": "3.5 mil white vinyl · removable · bus/train wrap · ASTM E162/E662",
+            "zh": "3.5 mil 白色乙烯基 · 可移除 · 公交/列车车身 · ASTM E162/E662",
+            "vi": "Vinyl trắng 3.5 mil · tháo được · bọc xe buýt/tàu · ASTM E162/E662",
+            "th": "ไวนิลสีขาว 3.5 mil · ลอกได้ · หุ้มรถบัส/รถไฟ · ASTM E162/E662"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "busart-v400f"
+        }
+      ]
     }
   ]
 }
