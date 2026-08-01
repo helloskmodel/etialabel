@@ -1703,23 +1703,98 @@ window.location.href='mailto:etialabel@etia-tech.com?subject=Free%%20Sample%%20R
     if lang=="en": track(path,"core")
 
 # ---------------------------------------------------------------- sitemaps + redirects
+LANG_ORDER = ["en", "zh", "vi", "th"]
+DIR_LANG = {"cn": "zh", "vn": "vi", "th": "th"}  # locale dir -> lang code
+# Product/item slugs that are environment Solution pages (own sitemap group).
+ENV_SOLUTION_SLUGS = ("high-heat-identification", "cold-chain-cryogenic-labels",
+                      "chemical-resistant-labels", "sterilization-labels")
+# Legacy duplicate paths that 301 to their /products/item/ canonical — kept out
+# of the sitemap so crawlers only see one URL per product.
+SITEMAP_EXCLUDE = {"/products/apex-series/", "/products/e-2712/"}
+
+def _sitemap_group(canon):
+    if canon in SITEMAP_EXCLUDE:
+        return None
+    if canon == "/":
+        return "core"
+    if canon.startswith("/insights/"):
+        return "insights"
+    if canon.startswith("/application-notes/"):
+        return "notes"
+    if canon.startswith("/industries/"):
+        return "industries"
+    if canon.startswith("/products/"):
+        if canon == "/products/":
+            return "core"  # the Products landing hub
+        if any(canon == "/products/item/%s/" % s for s in ENV_SOLUTION_SLUGS):
+            return "environment-solutions"
+        return "products"
+    return "core"  # home, about, service, applications, contact, legal, etc.
+
 def build_sitemaps():
-    groups={}
-    for p,g in ALL_URLS: groups.setdefault(g,[]).append(p)
-    files={}
-    for g,fn in [("core","sitemap-core.xml"),("products","sitemap-products.xml"),
-                 ("industries","sitemap-industries.xml"),("applications","sitemap-applications.xml"),
-                 ("notes","sitemap-application-notes.xml")]:
-        xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
-        for p in groups.get(g,[]):
-            xml+='  <url><loc>%s%s</loc>' % (SITE,p)
-            for lg in LANGS: xml+='<xhtml:link rel="alternate" hreflang="%s" href="%s%s%s"/>'%(HREFLANG[lg],SITE,PREFIX[lg],p)
-            xml+='</url>\n'
-        xml+='</urlset>\n'; open(os.path.join(ROOT,fn),"w").write(xml); files[g]=fn
-    idx='<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    for fn in files.values(): idx+='  <sitemap><loc>%s/%s</loc></sitemap>\n'%(SITE,fn)
-    idx+='</sitemapindex>\n'; open(os.path.join(ROOT,"sitemap-index.xml"),"w").write(idx)
-    open(os.path.join(ROOT,"robots.txt"),"w").write("User-agent: *\nAllow: /\n\nSitemap: %s/sitemap-index.xml\n"%SITE)
+    """Filesystem-based: list exactly the pages that exist, in every locale they
+    exist, split into one sitemap per section, each locale URL listed in full with
+    hreflang alternates. Empty sections are skipped; a stale sitemap-*.xml is removed."""
+    skip_dirs = {"_build", "_docs", ".git", "node_modules", "scratchpad"}
+    pages = {}  # canonical path -> set(lang)
+    for r, dirs, files in os.walk(ROOT):
+        dirs[:] = [d for d in dirs if d not in skip_dirs and not d.startswith(".")]
+        if "index.html" not in files:
+            continue
+        rel = os.path.relpath(r, ROOT).replace(os.sep, "/")
+        if rel == ".":
+            canon, lang = "/", "en"
+        else:
+            parts = rel.split("/")
+            if parts[0] in DIR_LANG:
+                lang = DIR_LANG[parts[0]]
+                rest = "/".join(parts[1:])
+                canon = "/" + (rest + "/" if rest else "")
+            else:
+                lang, canon = "en", "/" + rel + "/"
+        pages.setdefault(canon, set()).add(lang)
+
+    groups = {}
+    for canon, langs in pages.items():
+        g = _sitemap_group(canon)
+        if not g:
+            continue
+        ordered = [l for l in LANG_ORDER if l in langs]
+        groups.setdefault(g, []).append((canon, ordered))
+
+    order = [("core", "sitemap-core.xml"), ("products", "sitemap-products.xml"),
+             ("industries", "sitemap-industries.xml"),
+             ("environment-solutions", "sitemap-environment-solutions.xml"),
+             ("notes", "sitemap-application-notes.xml"), ("insights", "sitemap-insights.xml")]
+    written = []
+    for g, fn in order:
+        items = sorted(groups.get(g, []))
+        if not items:
+            continue
+        xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+        for canon, langs in items:
+            for lg in langs:
+                xml += '  <url><loc>%s%s%s</loc>' % (SITE, PREFIX[lg], canon)
+                for al in langs:
+                    xml += '<xhtml:link rel="alternate" hreflang="%s" href="%s%s%s"/>' % (HREFLANG[al], SITE, PREFIX[al], canon)
+                xml += '<xhtml:link rel="alternate" hreflang="x-default" href="%s%s"/>' % (SITE, canon)
+                xml += '</url>\n'
+        xml += '</urlset>\n'
+        open(os.path.join(ROOT, fn), "w").write(xml)
+        written.append(fn)
+
+    idx = '<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    for fn in written:
+        idx += '  <sitemap><loc>%s/%s</loc></sitemap>\n' % (SITE, fn)
+    idx += '</sitemapindex>\n'
+    open(os.path.join(ROOT, "sitemap-index.xml"), "w").write(idx)
+    open(os.path.join(ROOT, "sitemap.xml"), "w").write(idx)  # alias so /sitemap.xml also resolves
+    open(os.path.join(ROOT, "robots.txt"), "w").write("User-agent: *\nAllow: /\n\nSitemap: %s/sitemap-index.xml\n" % SITE)
+    # remove stale section sitemaps that are no longer generated (e.g. old empty ones)
+    keep = set(written) | {"sitemap-index.xml"}
+    for f in os.listdir(ROOT):
+        if f.startswith("sitemap-") and f.endswith(".xml") and f not in keep:
+            os.remove(os.path.join(ROOT, f))
 
 def write_redirects():
     # 301 migration redirects (per brief §13) + clean-url config, in vercel.json
@@ -1750,6 +1825,11 @@ def write_redirects():
       {"source":"/industries/outdoor-labeling-solutions","destination":"/industries/outdoor-energy-labeling-solutions/","permanent":True},
       {"source":"/industries/medical-labeling-solutions","destination":"/industries/medical-pharmaceutical-labeling-solutions/","permanent":True},
       {"source":"/industries/steel-labeling-solutions","destination":"/industries/steel-metal-ceramic-labeling-solutions/","permanent":True},
+      # Legacy product pages -> canonical /products/item/ pages (avoid duplicate content)
+      {"source":"/products/apex-series","destination":"/products/item/apex/","permanent":True},
+      {"source":"/cn/products/apex-series","destination":"/cn/products/item/apex/","permanent":True},
+      {"source":"/products/e-2712","destination":"/products/item/e-2712/","permanent":True},
+      {"source":"/cn/products/e-2712","destination":"/cn/products/item/e-2712/","permanent":True},
     ]}
     # Always revalidate HTML so visitors get the latest page (the CSS is inlined in
     # each page, so a stale HTML also means stale styling). Content is regenerated
