@@ -307,6 +307,21 @@ def product_industry(d, slug):
     hardcoded map. Returns '' for Solution pages and anything unmapped."""
     return (d.get("industry") or PRODUCT_INDUSTRY.get(slug, "")).strip()
 
+# Brand axis — a product is either an imported Polyonics line or ETIA's own.
+# One product record can be scanned by both its Industry page and its Brand page.
+PRODUCT_BRAND = {
+    "apex": "polyonics", "xf58": "polyonics", "xf78": "polyonics",
+}
+BRAND_NAMES = {
+    "polyonics": {"en": "Polyonics", "zh": "Polyonics", "vi": "Polyonics", "th": "Polyonics"},
+    "etia":      {"en": "ETIA (in-house)", "zh": "ETIA 自研", "vi": "ETIA (tự sản xuất)", "th": "ETIA (ผลิตเอง)"},
+}
+
+def product_brand(d, slug):
+    """Resolve a product's brand key ('polyonics' or 'etia'): JSON 'brand' field
+    first, then the hardcoded map, defaulting to ETIA in-house."""
+    return (d.get("brand") or PRODUCT_BRAND.get(slug, "etia")).strip().lower()
+
 def build_lang(d, lang):
     ui = UI.get(lang, UI[SOURCE_LANG])
     slug = d["slug"]

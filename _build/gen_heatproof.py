@@ -27,7 +27,7 @@ PREFIX = {"en": "", "zh": "/cn", "vi": "/vn", "th": "/th"}
 HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th"}
 # Paths that exist in all four languages (home only). Links to any other path from
 # a vi/th page fall back to the English version (no 404). Industry hubs are EN+ZH.
-FOURLANG = {"/", "/products/", "/products/find/", "/applications/", "/service/", "/insights/"}
+FOURLANG = {"/", "/products/", "/products/find/", "/products/polyonics/", "/applications/", "/service/", "/insights/"}
 FOURLANG_PREFIX = ("/insights/", "/industries/", "/products/item/")  # article, industry & product pages exist in all 4 langs
 def Lx(lang, path):
     """Smart localized link: use the vi/th version only if that path is 4-language."""
@@ -2276,6 +2276,14 @@ def build_products_landing(lang):
                 P(lang,"Labels by Industry","按行业选择","Nhãn theo ngành","ฉลากตามอุตสาหกรรม"), ind_cards)
           + sec(P(lang,"BY ENVIRONMENT","按环境","THEO MÔI TRƯỜNG","ตามสภาพแวดล้อม"),
                 P(lang,"Labels by Operating Environment","按使用环境选择","Nhãn theo môi trường vận hành","ฉลากตามสภาพแวดล้อมการใช้งาน"), env_cards)
+          + sec(P(lang,"BY BRAND","按品牌","THEO THƯƠNG HIỆU","ตามแบรนด์"),
+                P(lang,"Labels by Brand","按品牌选择","Nhãn theo thương hiệu","ฉลากตามแบรนด์"),
+                card("/products/polyonics/",
+                     P(lang,"Polyonics","Polyonics","Polyonics","Polyonics"),
+                     P(lang,"Genuine imported Polyonics polyimide labels — APEX, XF58 and ESD-XF78 series.",
+                          "Polyonics 原装进口聚酰亚胺标签 —— APEX、XF58 与 ESD-XF78 系列。",
+                          "Nhãn polyimide Polyonics nhập khẩu chính hãng — dòng APEX, XF58 và ESD-XF78.",
+                          "ฉลากโพลีอิไมด์ Polyonics นำเข้าแท้ — ซีรีส์ APEX, XF58 และ ESD-XF78")))
           + ('<div class="wrap">%s</div>' % cta2(lang, "products", Lx)))
     s = HOME2.get(lang, HOME2["en"])["sections"][0]
     hero = page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",

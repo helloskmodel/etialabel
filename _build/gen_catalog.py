@@ -88,8 +88,7 @@ TEMP_BANDS = {
     "high":  {"en": "High-Temp (≥ 200°C)", "zh": "高温 (≥ 200°C)", "vi": "Nhiệt cao (≥ 200°C)", "th": "อุณหภูมิสูง (≥ 200°C)"},
     "std":   {"en": "Standard (−40 to 200°C)", "zh": "常规 (−40 至 200°C)", "vi": "Tiêu chuẩn (−40 đến 200°C)", "th": "มาตรฐาน (−40 ถึง 200°C)"},
 }
-BRAND = {"Polyonics": {"en": "Polyonics", "zh": "Polyonics", "vi": "Polyonics", "th": "Polyonics"},
-         "ETIA": {"en": "ETIA (in-house)", "zh": "ETIA 自研", "vi": "ETIA (tự sản xuất)", "th": "ETIA (ผลิตเอง)"}}
+BRAND = gp.BRAND_NAMES  # {"polyonics":{...}, "etia":{...}} — shared brand axis
 
 
 def _blob(d):
@@ -125,7 +124,7 @@ def build_record(d):
     slug = d["slug"]
     blob = _blob(d)
     ind = gp.product_industry(d, slug)
-    brand = "Polyonics" if "polyonics" in blob else "ETIA"
+    brand = gp.product_brand(d, slug)  # 'polyonics' | 'etia'
     apps = [key for key, lab, kws in APP_CATS if any(k in blob for k in kws)]
     facestocks = [fs for fs, kws in FACESTOCKS if any(k in blob for k in kws)]
     tmin, tmax = _temps(blob)
@@ -138,6 +137,7 @@ def build_record(d):
         "slug": slug, "url": "/products/item/%s/" % slug,
         "title": d.get("title", {}), "tagline": d.get("tagline", {}),
         "industry": ind, "brand": brand, "apps": apps, "facestocks": facestocks, "temps": temps,
+        "product_img": d.get("product_img", ""),
         "blob": blob, "explicit": explicit,
     }
 
@@ -285,6 +285,82 @@ cf();
         hp.track(PATH, "core")
 
 
+# ---- Brand page (e.g. Polyonics): one card per product, scanned from the DB ----
+BRAND_PATH = {"polyonics": "/products/polyonics/"}
+BRAND_UI = {
+    "en": {"eyebrow": "By Brand", "view": "View product →", "home": "Home", "products": "Products",
+           "empty": "Products coming soon.",
+           "lede": {"polyonics": "Genuine imported Polyonics polyimide label materials — stocked and application-supported by ETIA for reflow, cleaning and ESD-controlled electronics processes."}},
+    "zh": {"eyebrow": "按品牌", "view": "查看产品 →", "home": "首页", "products": "产品",
+           "empty": "产品即将上线。",
+           "lede": {"polyonics": "Polyonics 原装进口聚酰亚胺标签材料 —— 由 ETIA 备货并提供应用支持，适配回流焊、清洗与防静电电子制程。"}},
+    "vi": {"eyebrow": "Theo thương hiệu", "view": "Xem sản phẩm →", "home": "Trang chủ", "products": "Sản phẩm",
+           "empty": "Sản phẩm sắp ra mắt.",
+           "lede": {"polyonics": "Vật liệu nhãn polyimide Polyonics nhập khẩu chính hãng — được ETIA lưu kho và hỗ trợ ứng dụng cho reflow, làm sạch và quy trình điện tử kiểm soát ESD."}},
+    "th": {"eyebrow": "ตามแบรนด์", "view": "ดูสินค้า →", "home": "หน้าแรก", "products": "ผลิตภัณฑ์",
+           "empty": "สินค้าเร็วๆ นี้",
+           "lede": {"polyonics": "วัสดุฉลากโพลีอิไมด์ Polyonics นำเข้าแท้ — สต๊อกและสนับสนุนการใช้งานโดย ETIA สำหรับรีโฟลว์ การล้าง และกระบวนการอิเล็กทรอนิกส์ที่ควบคุม ESD"}},
+}
+BRAND_CSS = """<style>
+.bwrap{max-width:1120px;margin:0 auto;padding:34px 22px 54px}
+.bhead .eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#1A56DB}
+.bhead h1{font-family:var(--sans);font-weight:800;color:#143C96;font-size:clamp(30px,4vw,44px);margin:8px 0 8px}
+.bhead p{color:#51607e;font-size:16px;max-width:70ch;margin:0 0 8px}
+.bgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-top:26px}
+.bcard{display:flex;flex-direction:column;background:#fff;border:1px solid #dbe3f1;border-radius:16px;overflow:hidden;text-decoration:none;color:#17203a;transition:box-shadow .15s,transform .15s,border-color .15s}
+.bcard:hover{box-shadow:0 16px 38px rgba(20,60,150,.15);transform:translateY(-3px);border-color:#1A56DB}
+.bcard-img{aspect-ratio:16/10;background:#eef3fc;position:relative;display:grid;place-items:center;overflow:hidden}
+.bcard-img img{width:100%;height:100%;object-fit:cover;display:block}
+.bcard-img.ph{background:linear-gradient(150deg,#1A56DB,#143C96)}
+.bcard-img.ph span{color:#fff;font-family:var(--sans);font-weight:800;font-size:22px;letter-spacing:.02em;padding:0 16px;text-align:center}
+.bcard-b{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.bcard-b h3{margin:0;font-size:17px;color:#143C96;font-weight:800;line-height:1.28}
+.bcard-b p{margin:0;font-size:13.5px;color:#5a6884;line-height:1.5;flex:1}
+.bchips{display:flex;flex-wrap:wrap;gap:6px}
+.bchip{font-size:11px;font-weight:800;color:#2c7a1e;background:#e6f5e0;border-radius:999px;padding:3px 9px}
+.bchip.t{color:#1A56DB;background:#eaf1ff}
+.bgo{font-size:13px;font-weight:800;color:#41A62A}
+.bempty{color:#5a6884;font-size:15px;padding:30px 4px}
+</style>"""
+
+def build_brand(records, lang, bkey):
+    ui = BRAND_UI[lang]
+    path = BRAND_PATH[bkey]
+    bname = gp.BRAND_NAMES[bkey].get(lang) or gp.BRAND_NAMES[bkey]["en"]
+    def L(node):
+        if isinstance(node, dict):
+            return node.get(lang) or node.get("en") or node.get("zh") or ""
+        return node or ""
+    items = [r for r in records if r["brand"] == bkey]
+    cards = ""
+    for r in sorted(items, key=lambda x: L(x["title"]).lower()):
+        img = r.get("product_img", "")
+        if img:
+            media = ('<div class="bcard-img"><img src="%s" alt="%s" loading="lazy" '
+                     'onerror="var p=this.parentNode;p.classList.add(\'ph\');p.innerHTML=\'<span>%s</span>\'"></div>') % (
+                esc(img), esc(L(r["title"])), esc(L(r["title"])))
+        else:
+            media = '<div class="bcard-img ph"><span>%s</span></div>' % esc(L(r["title"]))
+        chips = ""
+        for f in r["facestocks"][:1]:
+            chips += '<span class="bchip">%s</span>' % esc(L(f))
+        for t in r["temps"][:1]:
+            chips += '<span class="bchip t">%s</span>' % esc(L(TEMP_BANDS[t]))
+        cards += ('<a class="bcard" href="%s">%s<div class="bcard-b"><h3>%s</h3><p>%s</p>'
+                  '<div class="bchips">%s</div><span class="bgo">%s</span></div></a>') % (
+            hp.Lx(lang, r["url"]), media, esc(L(r["title"])), esc(L(r["tagline"])), chips, esc(ui["view"]))
+    grid = ('<div class="bgrid">%s</div>' % cards) if cards else ('<p class="bempty">%s</p>' % esc(ui["empty"]))
+    body = BRAND_CSS + ('<div class="bwrap"><div class="bhead"><div class="eyebrow">%s</div>'
+                        '<h1>%s</h1><p>%s</p></div>%s</div>') % (
+        esc(ui["eyebrow"]), esc(bname), esc(ui["lede"].get(bkey, "")), grid)
+    crumb = [(ui["home"], "/"), (ui["products"], "/products/"), (bname, path)]
+    content = hp.page(lang, path, bname + " | ETIA", esc(ui["lede"].get(bkey, "")), bname, "", body, crumb,
+                      active="products", trust=False, langs=hp.NAV_PILLAR_LANGS)
+    hp.write(lang, path, content)
+    if lang == "en":
+        hp.track(path, "core")
+
+
 def main():
     records = []
     for f in sorted(os.listdir(PDIR)):
@@ -299,7 +375,10 @@ def main():
         records.append(build_record(d))
     for lang in LANGS:
         build_lang(records, lang)
+        build_brand(records, lang, "polyonics")
+    npoly = sum(1 for r in records if r["brand"] == "polyonics")
     print("catalog: /products/find/ x4 langs —", len(records), "materials")
+    print("brand page: /products/polyonics/ x4 langs —", npoly, "Polyonics products")
 
 
 if __name__ == "__main__":
