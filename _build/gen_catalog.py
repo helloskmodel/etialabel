@@ -330,6 +330,185 @@ BRAND_CSS = """<style>
 .bempty{color:#5a6884;font-size:15px;padding:30px 4px}
 </style>"""
 
+# ---- Polyonics catalog: category selector tables (from Polyonics brochures) ----
+def _ml(en, zh, vi, th): return {"en": en, "zh": zh, "vi": vi, "th": th}
+POLY_FILM = {
+    "pi1": _ml("1 mil (25µm) Polyimide", "1 mil（25µm）聚酰亚胺", "Polyimide 1 mil (25µm)", "โพลีอิไมด์ 1 mil (25µm)"),
+    "pi2": _ml("2 mil (50µm) Polyimide", "2 mil（50µm）聚酰亚胺", "Polyimide 2 mil (50µm)", "โพลีอิไมด์ 2 mil (50µm)"),
+    "pet15": _ml("1.5 mil (38µm) Polyester", "1.5 mil（38µm）聚酯", "Polyester 1.5 mil (38µm)", "โพลีเอสเตอร์ 1.5 mil (38µm)"),
+    "pet2": _ml("2 mil (50µm) Polyester", "2 mil（50µm）聚酯", "Polyester 2 mil (50µm)", "โพลีเอสเตอร์ 2 mil (50µm)"),
+    "nyl5": _ml("5 mil (125µm) Nylon", "5 mil（125µm）尼龙", "Nylon 5 mil (125µm)", "ไนลอน 5 mil (125µm)"),
+}
+POLY_FIN = {
+    "sgw": _ml("Semi-gloss white", "半光白", "Trắng bán bóng", "สีขาวกึ่งเงา"),
+    "mw": _ml("Matte white", "哑光白", "Trắng mờ", "สีขาวด้าน"),
+    "hgw": _ml("High-gloss white", "高光白", "Trắng bóng cao", "สีขาวเงาสูง"),
+    "sgb": _ml("Semi-gloss blue", "半光蓝", "Xanh bán bóng", "สีน้ำเงินกึ่งเงา"),
+    "sgg": _ml("Semi-gloss green", "半光绿", "Xanh lá bán bóng", "สีเขียวกึ่งเงา"),
+    "sgy": _ml("Semi-gloss yellow", "半光黄", "Vàng bán bóng", "สีเหลืองกึ่งเงา"),
+    "hgy": _ml("High-gloss yellow", "高光黄", "Vàng bóng cao", "สีเหลืองเงาสูง"),
+    "mbuff": _ml("Matte buff", "哑光米黄", "Be mờ", "สีน้ำตาลอ่อนด้าน"),
+    "gw": _ml("Gloss white", "亮白", "Trắng bóng", "สีขาวเงา"),
+    "woven": _ml("White woven cloth", "白色机织布", "Vải dệt trắng", "ผ้าทอสีขาว"),
+    "clear": _ml("Clear (amber)", "透明（琥珀）", "Trong suốt (hổ phách)", "ใส (สีอำพัน)"),
+}
+POLY_TEMP = {
+    "hi": "150 °C/100h · 260 °C/5min · 300 °C/90s",
+    "pet611": "−40 to 150 °C",
+    "pet446": "150 °C/100h · −40 to 204 °C op",
+    "ovl": "−40 to 500 °C",
+    "nyl": "180 °C/5min · 110 °C/30d · −196 °C cryo",
+}
+POLY_FEAT = {
+    "esd": _ml("ESD-Safe", "防静电", "ESD-Safe", "ESD-Safe"),
+    "fr": _ml("Flame-Retardant", "阻燃", "Chống cháy", "หน่วงไฟ"),
+    "flux": _ml("Flux-Resistant", "耐助焊剂", "Kháng flux", "ทนฟลักซ์"),
+    "uv": _ml("UV & Chemical", "耐 UV 与化学", "UV & Hóa chất", "UV และสารเคมี"),
+}
+POLY_CATS = [
+    {"slug": "pcb-labels",
+     "title": _ml("PCB & Electronics Labels", "PCB 电子标签", "Nhãn PCB & Điện tử", "ฉลาก PCB และอิเล็กทรอนิกส์"),
+     "lede": _ml("Polyonics polyimide & polyester labels for reflow, wave solder and PCB cleaning — 1 & 2 mil, in multiple finishes and colours.",
+                 "Polyonics 聚酰亚胺与聚酯标签，适配回流焊、波峰焊与 PCB 清洗 —— 1 与 2 mil，多种表面与颜色。",
+                 "Nhãn polyimide & polyester Polyonics cho reflow, hàn sóng và làm sạch PCB — 1 & 2 mil, nhiều bề mặt và màu sắc.",
+                 "ฉลากโพลีอิไมด์และโพลีเอสเตอร์ Polyonics สำหรับรีโฟลว์ เวฟโซลเดอร์ และการล้าง PCB — 1 และ 2 mil หลายพื้นผิวและสี"),
+     "rows": [
+        ["XF-504","pi1","sgb","1 mil (25 µm) acrylic","hi",[]],
+        ["XF-505","pi1","sgg","1 mil (25 µm) acrylic","hi",[]],
+        ["XF-518","pi1","mw","1 mil (25 µm) acrylic","hi",[]],
+        ["XF-528","pi1","hgw","1 mil (25 µm) acrylic","hi",[]],
+        ["XF-581","pi1","sgw","1 mil (25 µm) acrylic","hi",[]],
+        ["XF-583","pi1","mw","1 mil (25 µm) acrylic","hi",[]],
+        ["XF-603","pi1","sgw","1.1 mil (28 µm) acrylic","hi",["fr"]],
+        ["XF-731","pi1","sgw","1 mil (25 µm) acrylic","hi",["flux"]],
+        ["XF-781","pi1","sgw","1 mil (25 µm) acrylic","hi",["esd"]],
+        ["XF-519","pi2","mw","1.5 mil (38 µm) acrylic","hi",[]],
+        ["XF-520","pi2","sgy","2 mil (50 µm) acrylic","hi",[]],
+        ["XF-525","pi2","sgg","2 mil (50 µm) acrylic","hi",[]],
+        ["XF-529","pi2","hgw","1.5 mil (38 µm) acrylic","hi",[]],
+        ["XF-541","pi2","mbuff","2 mil (50 µm) acrylic","hi",[]],
+        ["XF-552","pi2","hgy","2.4 mil (61 µm) acrylic","hi",[]],
+        ["XF-555","pi2","hgw","2 mil (50 µm) acrylic","hi",[]],
+        ["XF-582","pi2","sgw","2 mil (50 µm) acrylic","hi",[]],
+        ["XF-584","pi2","mw","2 mil (50 µm) acrylic","hi",[]],
+        ["XF-592","pi2","sgw","2.4 mil (61 µm) acrylic","hi",[]],
+        ["XF-732","pi2","sgw","2 mil (50 µm) acrylic","hi",["flux"]],
+        ["XF-782","pi2","sgw","2 mil (50 µm) acrylic","hi",["esd"]],
+        ["XF-611","pet15","sgw","1.1 mil (28 µm) acrylic","pet611",["fr"]],
+        ["XF-446","pet2","gw","1 mil (25 µm) acrylic","pet446",["esd"]],
+     ]},
+    {"slug": "wire-cable",
+     "title": _ml("Wire & Cable Marking (Nylon-FR)", "线缆标识（尼龙阻燃）", "Đánh dấu dây & cáp (Nylon-FR)", "การทำเครื่องหมายสายไฟ (ไนลอน-FR)"),
+     "lede": _ml("Flame-retardant polyimide and woven-nylon labels for wire, cable and harness identification.",
+                 "阻燃聚酰亚胺与机织尼龙标签，用于线缆与束线标识。",
+                 "Nhãn polyimide chống cháy và nylon dệt cho nhận diện dây, cáp và bó dây.",
+                 "ฉลากโพลีอิไมด์หน่วงไฟและไนลอนทอ สำหรับระบุสายไฟ สายเคเบิล และชุดสายไฟ"),
+     "rows": [
+        ["XF-603","pi1","sgw","1 mil (25 µm) acrylic","hi",["fr"]],
+        ["XF-300","nyl5","woven","2 mil (50 µm) high-temp acrylic","nyl",["fr"]],
+        ["XF-302","nyl5","woven","1 mil (25 µm) high-temp acrylic","nyl",["fr"]],
+     ]},
+    {"slug": "overlaminates",
+     "title": _ml("High-Temperature Overlaminates", "高温覆膜", "Lớp phủ nhiệt độ cao", "โอเวอร์แลมิเนตอุณหภูมิสูง"),
+     "lede": _ml("Clear polyimide overlaminates that protect printed labels from UV, chemicals and abrasion — up to 500 °C.",
+                 "透明聚酰亚胺覆膜，保护打印标签免受 UV、化学品与磨损 —— 最高 500 °C。",
+                 "Lớp phủ polyimide trong suốt bảo vệ nhãn in khỏi UV, hóa chất và mài mòn — đến 500 °C.",
+                 "โอเวอร์แลมิเนตโพลีอิไมด์ใส ปกป้องฉลากพิมพ์จาก UV สารเคมี และการขัดถู — สูงสุด 500 °C"),
+     "rows": [
+        ["XL-1501","pi1","clear","1 mil (25 µm) high-temp acrylic","ovl",["uv"]],
+        ["XL-1561","pi1","clear","2 mil (50 µm) high-temp acrylic","ovl",["uv"]],
+        ["XL-1502","pi2","clear","1 mil (25 µm) aggressive acrylic","hi",["uv"]],
+     ]},
+    {"slug": "esd-safe",
+     "title": _ml("ESD-Safe Labels", "防静电标签", "Nhãn ESD-Safe", "ฉลาก ESD-Safe"),
+     "lede": _ml("Static-dissipative, low-charging polyimide and polyester labels for ESD-protected areas (ANSI/ESD S20.20).",
+                 "静电耗散、低起电聚酰亚胺与聚酯标签，适用于静电防护区（ANSI/ESD S20.20）。",
+                 "Nhãn polyimide & polyester tiêu tán tĩnh, ít tích điện cho khu vực bảo vệ tĩnh điện (ANSI/ESD S20.20).",
+                 "ฉลากโพลีอิไมด์และโพลีเอสเตอร์แบบกระจายประจุ ประจุต่ำ สำหรับพื้นที่ป้องกันไฟฟ้าสถิต (ANSI/ESD S20.20)"),
+     "rows": [
+        ["XF-781","pi1","sgw","1 mil (25 µm) acrylic","hi",["esd"]],
+        ["XF-784","pi1","mw","1 mil (25 µm) acrylic","hi",["esd"]],
+        ["XF-782","pi2","sgw","2 mil (50 µm) acrylic","hi",["esd"]],
+        ["XF-446","pet2","gw","1 mil (25 µm) acrylic","pet446",["esd"]],
+     ]},
+]
+POLY_CAT_UI = {
+    "en": {"cols": ["Product","Film","Finish","Adhesive","Temperature","Features"], "back": "← All Polyonics", "eyebrow": "Polyonics catalogue", "browse": "Browse the catalogue", "count": "products", "home": "Home", "products": "Products", "note": "Full temperature, adhesion, chemical and compliance data are on each product datasheet — contact us for the TDS."},
+    "zh": {"cols": ["型号","面材","表面","胶粘剂","温度","特性"], "back": "← 返回 Polyonics", "eyebrow": "Polyonics 产品目录", "browse": "浏览目录", "count": "款", "home": "首页", "products": "产品", "note": "完整的温度、粘着、化学与合规数据见各产品数据表 —— 索取 TDS 请联系我们。"},
+    "vi": {"cols": ["Mã","Màng","Bề mặt","Keo","Nhiệt độ","Tính năng"], "back": "← Tất cả Polyonics", "eyebrow": "Danh mục Polyonics", "browse": "Xem danh mục", "count": "sản phẩm", "home": "Trang chủ", "products": "Sản phẩm", "note": "Dữ liệu đầy đủ về nhiệt độ, độ bám, hóa chất và tuân thủ có trong datasheet từng sản phẩm — liên hệ để nhận TDS."},
+    "th": {"cols": ["รุ่น","ฟิล์ม","พื้นผิว","กาว","อุณหภูมิ","คุณสมบัติ"], "back": "← Polyonics ทั้งหมด", "eyebrow": "แคตตาล็อก Polyonics", "browse": "ดูแคตตาล็อก", "count": "รายการ", "home": "หน้าแรก", "products": "ผลิตภัณฑ์", "note": "ข้อมูลอุณหภูมิ การยึดเกาะ สารเคมี และการรับรองฉบับเต็มอยู่ในเอกสารข้อมูลของแต่ละสินค้า — ติดต่อขอ TDS"},
+}
+POLY_CAT_CSS = """<style>
+.pcat{max-width:1080px;margin:0 auto;padding:30px 22px 54px}
+.pcat .eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#1A56DB}
+.pcat h1{font-family:var(--sans);font-weight:800;color:#143C96;font-size:clamp(26px,3.4vw,38px);margin:8px 0 8px}
+.pcat .lede{color:#51607e;font-size:16px;max-width:74ch;margin:0 0 20px}
+.ptable-wrap{overflow-x:auto;border:1px solid #dbe3f1;border-radius:14px}
+.ptable{border-collapse:collapse;width:100%;min-width:680px;font-size:13.5px}
+.ptable th{background:#f2f6fd;color:#143C96;font-weight:800;text-align:left;padding:11px 14px;border-bottom:2px solid #dbe3f1;white-space:nowrap;position:sticky;top:0}
+.ptable td{padding:10px 14px;border-bottom:1px solid #eef2f8;color:#33425e;vertical-align:top}
+.ptable tr:hover td{background:#f8fbff}
+.ptable .mdl{font-weight:800;color:#143C96;white-space:nowrap}
+.ptable .feat{display:inline-block;font-size:10.5px;font-weight:800;border-radius:999px;padding:2px 8px;margin:1px 3px 1px 0;white-space:nowrap}
+.ptable .feat.esd{color:#1A56DB;background:#eaf1ff}
+.ptable .feat.fr{color:#b4520a;background:#fdeede}
+.ptable .feat.flux{color:#2c7a1e;background:#e6f5e0}
+.ptable .feat.uv{color:#6b3fb0;background:#f0e9fb}
+.pcat .pnote{color:#5a6884;font-size:13px;margin:14px 2px 0}
+.pcat .pback{display:inline-block;margin:18px 0 0;font-size:14px;font-weight:800;color:#1A56DB;text-decoration:none}
+/* category cards on the Polyonics landing */
+.pcatcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:6px 0 30px}
+.pcatcard{display:block;background:#143C96;background:linear-gradient(140deg,#1A56DB,#143C96);border-radius:14px;padding:18px 18px 16px;text-decoration:none;color:#fff;transition:transform .15s,box-shadow .15s}
+.pcatcard:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(20,60,150,.24)}
+.pcatcard b{display:block;font-size:16.5px;font-weight:800;line-height:1.25}
+.pcatcard span{display:block;font-size:12.5px;color:#cfe0ff;margin-top:5px}
+.pcatcard .n{display:inline-block;margin-top:10px;font-size:11.5px;font-weight:800;background:rgba(255,255,255,.16);border-radius:999px;padding:3px 10px}
+.bsechd{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#1A56DB;margin:4px 0 12px}
+</style>"""
+
+def _poly_cat_by_slug(slug):
+    for c in POLY_CATS:
+        if c["slug"] == slug:
+            return c
+    return None
+
+def poly_category_cards(lang):
+    ui = POLY_CAT_UI[lang]
+    cards = ""
+    for c in POLY_CATS:
+        title = c["title"].get(lang) or c["title"]["en"]
+        lede = c["lede"].get(lang) or c["lede"]["en"]
+        cards += ('<a class="pcatcard" href="%s"><b>%s</b><span>%s</span>'
+                  '<span class="n">%d %s</span></a>') % (
+            hp.Lx(lang, "/products/polyonics/%s/" % c["slug"]), esc(title), esc(lede),
+            len(c["rows"]), esc(ui["count"]))
+    return ('<div class="bsechd">%s</div><div class="pcatcards">%s</div>' % (esc(ui["browse"]), cards))
+
+def build_poly_cat(lang, slug):
+    c = _poly_cat_by_slug(slug); ui = POLY_CAT_UI[lang]
+    path = "/products/polyonics/%s/" % slug
+    title = c["title"].get(lang) or c["title"]["en"]
+    lede = c["lede"].get(lang) or c["lede"]["en"]
+    def L(d): return d.get(lang) or d["en"]
+    head = "".join("<th>%s</th>" % esc(h) for h in ui["cols"])
+    body_rows = ""
+    for model, film, fin, adh, temp, feats in c["rows"]:
+        fb = "".join('<span class="feat %s">%s</span>' % (k, esc(L(POLY_FEAT[k]))) for k in feats)
+        body_rows += ("<tr><td class=\"mdl\">%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>") % (
+            esc(model), esc(L(POLY_FILM[film])), esc(L(POLY_FIN[fin])), esc(adh), esc(POLY_TEMP[temp]), fb or "—")
+    table = ('<div class="ptable-wrap"><table class="ptable"><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>'
+             % (head, body_rows))
+    body = POLY_CAT_CSS + ('<div class="pcat"><div class="eyebrow">%s</div><h1>%s</h1><p class="lede">%s</p>'
+            '%s<p class="pnote">%s</p><a class="pback" href="%s">%s</a></div>') % (
+        esc(ui["eyebrow"]), esc(title), esc(lede), table, esc(ui["note"]),
+        hp.Lx(lang, "/products/polyonics/"), esc(ui["back"]))
+    crumb = [(ui["home"], "/"), (ui["products"], "/products/"), ("Polyonics", "/products/polyonics/"), (title, path)]
+    content = hp.page(lang, path, title + " | Polyonics | ETIA", lede, title, "", body, crumb,
+                      active="products", trust=False, langs=hp.NAV_PILLAR_LANGS)
+    hp.write(lang, path, content)
+    if lang == "en":
+        hp.track(path, "products")
+
 def build_brand(records, lang, bkey):
     ui = BRAND_UI[lang]
     path = BRAND_PATH[bkey]
@@ -357,9 +536,12 @@ def build_brand(records, lang, bkey):
                   '<div class="bchips">%s</div><span class="bgo">%s</span></div></a>') % (
             hp.Lx(lang, r["url"]), media, esc(L(r["title"])), esc(L(r["tagline"])), chips, esc(ui["view"]))
     grid = ('<div class="bgrid">%s</div>' % cards) if cards else ('<p class="bempty">%s</p>' % esc(ui["empty"]))
-    body = BRAND_CSS + ('<div class="bwrap"><div class="bhead"><div class="eyebrow">%s</div>'
-                        '<h1>%s</h1><p>%s</p></div>%s</div>') % (
-        esc(ui["eyebrow"]), esc(bname), esc(ui["lede"].get(bkey, "")), grid)
+    # Polyonics: show the catalogue category cards above the featured product cards
+    cats = poly_category_cards(lang) if bkey == "polyonics" else ""
+    feat_hd = ('<div class="bsechd">%s</div>' % esc({"en":"Featured series","zh":"精选系列","vi":"Dòng nổi bật","th":"ซีรีส์แนะนำ"}.get(lang,"Featured series"))) if (bkey == "polyonics" and cards) else ""
+    body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap"><div class="bhead"><div class="eyebrow">%s</div>'
+                        '<h1>%s</h1><p>%s</p></div>%s%s%s</div>') % (
+        esc(ui["eyebrow"]), esc(bname), esc(ui["lede"].get(bkey, "")), cats, feat_hd, grid)
     crumb = [(ui["home"], "/"), (ui["products"], "/products/"), (bname, path)]
     content = hp.page(lang, path, bname + " | ETIA", esc(ui["lede"].get(bkey, "")), bname, "", body, crumb,
                       active="products", trust=False, langs=hp.NAV_PILLAR_LANGS)
@@ -382,10 +564,14 @@ def main():
         records.append(build_record(d))
     for lang in LANGS:
         build_lang(records, lang)
+        for c in POLY_CATS:
+            build_poly_cat(lang, c["slug"])
         build_brand(records, lang, "polyonics")
     npoly = sum(1 for r in records if r["brand"] == "polyonics")
+    ncat = sum(len(c["rows"]) for c in POLY_CATS)
     print("catalog: /products/find/ x4 langs —", len(records), "materials")
-    print("brand page: /products/polyonics/ x4 langs —", npoly, "Polyonics products")
+    print("brand page: /products/polyonics/ x4 langs —", npoly, "featured products +",
+          len(POLY_CATS), "categories /", ncat, "catalogue rows")
 
 
 if __name__ == "__main__":
