@@ -364,10 +364,15 @@ POLY_FEAT = {
     "fr": _ml("Flame-Retardant", "阻燃", "Chống cháy", "หน่วงไฟ"),
     "flux": _ml("Flux-Resistant", "耐助焊剂", "Kháng flux", "ทนฟลักซ์"),
     "uv": _ml("UV & Chemical", "耐 UV 与化学", "UV & Hóa chất", "UV และสารเคมี"),
+    "ul94": _ml("UL94 VTM-0", "UL94 VTM-0", "UL94 VTM-0", "UL94 VTM-0"),
+    "ul969": _ml("UL969", "UL969", "UL969", "UL969"),
+    "fmvss": _ml("FMVSS 302", "FMVSS 302", "FMVSS 302", "FMVSS 302"),
+    "bss": _ml("BSS 7238 / FAR 25.853", "BSS 7238 / FAR 25.853", "BSS 7238 / FAR 25.853", "BSS 7238 / FAR 25.853"),
+    "reach": _ml("REACH / RoHS", "REACH / RoHS", "REACH / RoHS", "REACH / RoHS"),
 }
 POLY_CATS = [
     {"slug": "pcb-labels",
-     "title": _ml("PCB & Electronics Labels", "PCB 电子标签", "Nhãn PCB & Điện tử", "ฉลาก PCB และอิเล็กทรอนิกส์"),
+     "title": _ml("PCB Polyimide Label Materials", "PCB 聚酰亚胺标签材料", "Vật liệu nhãn Polyimide PCB", "วัสดุฉลากโพลีอิไมด์ PCB"),
      "lede": _ml("Polyonics polyimide & polyester labels for reflow, wave solder and PCB cleaning — 1 & 2 mil, in multiple finishes and colours.",
                  "Polyonics 聚酰亚胺与聚酯标签，适配回流焊、波峰焊与 PCB 清洗 —— 1 与 2 mil，多种表面与颜色。",
                  "Nhãn polyimide & polyester Polyonics cho reflow, hàn sóng và làm sạch PCB — 1 & 2 mil, nhiều bề mặt và màu sắc.",
@@ -397,8 +402,18 @@ POLY_CATS = [
         ["XF-611","pet15","sgw","1.1 mil (28 µm) acrylic","pet611",["fr"]],
         ["XF-446","pet2","gw","1 mil (25 µm) acrylic","pet446",["esd"]],
      ]},
+    {"slug": "flame-retardant",
+     "title": _ml("Flame Retardant Label Materials", "阻燃标签材料", "Vật liệu nhãn chống cháy", "วัสดุฉลากหน่วงไฟ"),
+     "lede": _ml("UL94 VTM-0 rated polyimide and polyester labels with char-forming chemistry for PCB, battery, power-supply and under-the-hood identification.",
+                 "UL94 VTM-0 认证的聚酰亚胺与聚酯标签，采用成炭化学，适用于 PCB、电池、电源与发动机舱标识。",
+                 "Nhãn polyimide và polyester đạt UL94 VTM-0 với hóa học tạo lớp than, cho nhận diện PCB, pin, nguồn điện và khoang động cơ.",
+                 "ฉลากโพลีอิไมด์และโพลีเอสเตอร์ที่ได้รับ UL94 VTM-0 ด้วยเคมีสร้างชั้นถ่าน สำหรับระบุ PCB แบตเตอรี่ พาวเวอร์ซัพพลาย และห้องเครื่อง"),
+     "rows": [
+        ["XF-603","pi1","sgw","1.1 mil (28 µm) acrylic","hi",["fr","ul94","ul969","fmvss","reach"]],
+        ["XF-611","pet15","sgw","1.1 mil (28 µm) acrylic","pet611",["fr","ul94","ul969","bss","reach"]],
+     ]},
     {"slug": "wire-cable",
-     "title": _ml("Wire & Cable Marking (Nylon-FR)", "线缆标识（尼龙阻燃）", "Đánh dấu dây & cáp (Nylon-FR)", "การทำเครื่องหมายสายไฟ (ไนลอน-FR)"),
+     "title": _ml("Wire Marking Label Materials", "线缆标识标签材料", "Vật liệu nhãn đánh dấu dây", "วัสดุฉลากทำเครื่องหมายสายไฟ"),
      "lede": _ml("Flame-retardant polyimide and woven-nylon labels for wire, cable and harness identification.",
                  "阻燃聚酰亚胺与机织尼龙标签，用于线缆与束线标识。",
                  "Nhãn polyimide chống cháy và nylon dệt cho nhận diện dây, cáp và bó dây.",
@@ -420,7 +435,7 @@ POLY_CATS = [
         ["XL-1502","pi2","clear","1 mil (25 µm) aggressive acrylic","hi",["uv"]],
      ]},
     {"slug": "esd-safe",
-     "title": _ml("ESD-Safe Labels", "防静电标签", "Nhãn ESD-Safe", "ฉลาก ESD-Safe"),
+     "title": _ml("ESD Safe Label Materials", "防静电标签材料", "Vật liệu nhãn ESD-Safe", "วัสดุฉลาก ESD-Safe"),
      "lede": _ml("Static-dissipative, low-charging polyimide and polyester labels for ESD-protected areas (ANSI/ESD S20.20).",
                  "静电耗散、低起电聚酰亚胺与聚酯标签，适用于静电防护区（ANSI/ESD S20.20）。",
                  "Nhãn polyimide & polyester tiêu tán tĩnh, ít tích điện cho khu vực bảo vệ tĩnh điện (ANSI/ESD S20.20).",
@@ -458,6 +473,7 @@ POLY_CAT_CSS = """<style>
 .ptable .feat.fr{color:#b4520a;background:#fdeede}
 .ptable .feat.flux{color:#2c7a1e;background:#e6f5e0}
 .ptable .feat.uv{color:#6b3fb0;background:#f0e9fb}
+.ptable .feat.ul94,.ptable .feat.ul969,.ptable .feat.fmvss,.ptable .feat.bss,.ptable .feat.reach{color:#334a78;background:#eef2fb}
 .pcat .pnote{color:#5a6884;font-size:13px;margin:14px 2px 0}
 .pcat .pback{display:inline-block;margin:18px 0 0;font-size:14px;font-weight:800;color:#1A56DB;text-decoration:none}
 /* category cards on the Polyonics landing */
