@@ -1,0 +1,413 @@
+{
+  "slug": "xf-784",
+  "source": "Polyonics XF-784 Technical Data Sheet",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner": "",
+  "brand": "polyonics",
+  "industry": "pcb",
+  "product_img": "",
+  "title": {
+    "en": "XF-784 — 1 mil ESD-Safe Matte White Polyimide PCB Label",
+    "zh": "XF-784 — 1 mil ESD 防静电哑光白聚酰亚胺 PCB 标签",
+    "vi": "XF-784 — Nhãn PCB Polyimide ESD-Safe trắng mờ 1 mil",
+    "th": "XF-784 — ฉลาก PCB โพลีอิไมด์ ESD-Safe สีขาวด้าน 1 mil"
+  },
+  "tagline": {
+    "en": "Static-dissipative, low-charging polyimide label for ESD-protected areas — ANSI/ESD S20.20 & IEC 61340, high-temperature stable.",
+    "zh": "静电耗散、低起电聚酰亚胺标签，用于静电防护区 —— 符合 ANSI/ESD S20.20 与 IEC 61340，高温稳定。",
+    "vi": "Nhãn polyimide tiêu tán tĩnh, ít tích điện cho khu vực bảo vệ ESD — ANSI/ESD S20.20 & IEC 61340, ổn định nhiệt độ cao.",
+    "th": "ฉลากโพลีอิไมด์กระจายประจุ ประจุต่ำ สำหรับพื้นที่ป้องกัน ESD — ANSI/ESD S20.20 และ IEC 61340 เสถียรที่อุณหภูมิสูง"
+  },
+  "positioning": {
+    "en": "POLYONICS XF-784 is a 1 mil (25 µm) polyimide film with a low-charging acrylic pressure-sensitive adhesive, a high-opacity matte white static-dissipative topcoat and a low-charging liner, designed for thermal-transfer printing. Its surface resistance sits in the static-dissipative range (10⁸–10¹¹ Ω) and it stays stable through reflow and wave-solder — for safe identification of static-sensitive assemblies.",
+    "zh": "POLYONICS XF-784 采用1 mil（25 µm）聚酰亚胺面材，配低起电丙烯酸压敏胶、高遮盖哑光白静电耗散面涂层与低起电离型纸，专为热转印设计。表面电阻处于静电耗散区间（10⁸–10¹¹ Ω），经回流焊与波峰焊仍保持稳定 —— 安全标识静电敏感组件。",
+    "vi": "POLYONICS XF-784 là màng Polyimide 1 mil (25 µm) với keo acrylic PSA ít tích điện, lớp phủ trắng mờ tiêu tán tĩnh độ mờ cao và liner ít tích điện, thiết kế cho in truyền nhiệt. Điện trở bề mặt ở dải tiêu tán tĩnh (10⁸–10¹¹ Ω) và ổn định qua reflow và hàn sóng — nhận diện an toàn các cụm nhạy tĩnh điện.",
+    "th": "POLYONICS XF-784 เป็นฟิล์ม โพลีอิไมด์ 1 mil (25 µm) พร้อมกาว PSA อะคริลิกประจุต่ำ ท็อปโค้ตสีขาวด้านกระจายประจุทึบสูง และไลเนอร์ประจุต่ำ ออกแบบสำหรับพิมพ์ถ่ายเทความร้อน ความต้านทานพื้นผิวอยู่ในย่านกระจายประจุ (10⁸–10¹¹ Ω) และเสถียรผ่านรีโฟลว์และเวฟโซลเดอร์ — ระบุชิ้นงานที่ไวต่อไฟฟ้าสถิตอย่างปลอดภัย"
+  },
+  "features": {
+    "en": [
+      "Durable static-dissipative, thermal-transfer printable top surface",
+      "Low-charging acrylic adhesive and liner",
+      "Complies with ANSI/ESD S20.20 and IEC 61340 for ESD-protected areas (EPA)",
+      "Complies with ANSI/ESD S541",
+      "Dimensionally stable at high temperature; heat, cold, solvent and chemical resistant",
+      "Passes MIL-STD-202G Method 215K & MIL-STD-883E Method 2015.13 (with recommended ribbon)",
+      "Print resists smearing straight from reflow or wave-solder",
+      "REACH and RoHS compliant"
+    ],
+    "zh": [
+      "耐用静电耗散、热转印面层",
+      "低起电丙烯酸胶与离型纸",
+      "符合 ANSI/ESD S20.20 与 IEC 61340，适用于静电防护区（EPA）",
+      "符合 ANSI/ESD S541",
+      "高温尺寸稳定；耐热、耐冷、耐溶剂与化学品",
+      "通过 MIL-STD-202G Method 215K 与 MIL-STD-883E Method 2015.13（配推荐碳带）",
+      "从回流焊或波峰焊取出即取即用，字迹不糊",
+      "符合 REACH 与 RoHS"
+    ],
+    "vi": [
+      "Bề mặt tiêu tán tĩnh bền, in truyền nhiệt",
+      "Keo acrylic và liner ít tích điện",
+      "Tuân thủ ANSI/ESD S20.20 và IEC 61340 cho khu vực bảo vệ ESD (EPA)",
+      "Tuân thủ ANSI/ESD S541",
+      "Ổn định kích thước ở nhiệt độ cao; kháng nhiệt, lạnh, dung môi và hóa chất",
+      "Đạt MIL-STD-202G Method 215K & MIL-STD-883E Method 2015.13 (với ribbon khuyến nghị)",
+      "Bản in không nhòe ngay khi lấy từ reflow hoặc hàn sóng",
+      "Tuân thủ REACH và RoHS"
+    ],
+    "th": [
+      "พื้นผิวกระจายประจุทนทาน พิมพ์ถ่ายเทความร้อนได้",
+      "กาวอะคริลิกและไลเนอร์ประจุต่ำ",
+      "สอดคล้อง ANSI/ESD S20.20 และ IEC 61340 สำหรับพื้นที่ป้องกัน ESD (EPA)",
+      "สอดคล้อง ANSI/ESD S541",
+      "เสถียรที่อุณหภูมิสูง; ทนร้อน เย็น ตัวทำละลายและสารเคมี",
+      "ผ่าน MIL-STD-202G Method 215K และ MIL-STD-883E Method 2015.13 (ด้วยริบบอนที่แนะนำ)",
+      "งานพิมพ์ไม่เลอะแม้นำออกจากรีโฟลว์หรือเวฟโซลเดอร์โดยตรง",
+      "สอดคล้อง REACH และ RoHS"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Property",
+        "Value"
+      ],
+      "zh": [
+        "属性",
+        "参数"
+      ],
+      "vi": [
+        "Thuộc tính",
+        "Giá trị"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "ค่า"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Film",
+            "zh": "面材",
+            "vi": "Màng",
+            "th": "ฟิล์ม"
+          },
+          {
+            "en": "1 mil (25 µm) polyimide",
+            "zh": "1 mil（25 µm）聚酰亚胺",
+            "vi": "Polyimide 1 mil (25 µm)",
+            "th": "โพลีอิไมด์ 1 mil (25 µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Topcoat / finish",
+            "zh": "面涂层 / 表面",
+            "vi": "Lớp phủ / bề mặt",
+            "th": "ท็อปโค้ต / พื้นผิว"
+          },
+          {
+            "en": "Matte white",
+            "zh": "哑光白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesive",
+            "zh": "胶粘剂",
+            "vi": "Keo",
+            "th": "กาว"
+          },
+          {
+            "en": "Low-charging high-temp acrylic PSA, 1 mil (25 µm)",
+            "zh": "低起电高温丙烯酸压敏胶，1 mil (25 µm)",
+            "vi": "Keo acrylic PSA chịu nhiệt ít tích điện, 1 mil (25 µm)",
+            "th": "กาว PSA อะคริลิกทนร้อนประจุต่ำ 1 mil (25 µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Liner",
+            "zh": "离型纸",
+            "vi": "Liner",
+            "th": "ไลเนอร์"
+          },
+          {
+            "en": "3.1 mil (79 µm)",
+            "zh": "3.1 mil (79 µm)",
+            "vi": "3.1 mil (79 µm)",
+            "th": "3.1 mil (79 µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Total thickness",
+            "zh": "总厚度",
+            "vi": "Độ dày tổng",
+            "th": "ความหนารวม"
+          },
+          {
+            "en": "5.6 mil (142 µm)",
+            "zh": "5.6 mil (142 µm)",
+            "vi": "5.6 mil (142 µm)",
+            "th": "5.6 mil (142 µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesion — stainless steel",
+            "zh": "粘着力 —— 不锈钢",
+            "vi": "Độ bám — thép không gỉ",
+            "th": "การยึดเกาะ — สแตนเลส"
+          },
+          {
+            "en": "≥ 30 oz/in (24 h) · ≥ 27 oz/in (20 min)",
+            "zh": "≥ 30 oz/in（24 h） · ≥ 27 oz/in（20 min）",
+            "vi": "≥ 30 oz/in (24 h) · ≥ 27 oz/in (20 min)",
+            "th": "≥ 30 oz/in (24 h) · ≥ 27 oz/in (20 min)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Tack (loop)",
+            "zh": "初粘（环形）",
+            "vi": "Độ dính (loop)",
+            "th": "แทค (loop)"
+          },
+          {
+            "en": "≥ 1000 g/in",
+            "zh": "≥ 1000 g/in",
+            "vi": "≥ 1000 g/in",
+            "th": "≥ 1000 g/in"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Surface resistance (EOS/ESD STM 11.11)",
+            "zh": "表面电阻（EOS/ESD STM 11.11）",
+            "vi": "Điện trở bề mặt (EOS/ESD STM 11.11)",
+            "th": "ความต้านทานพื้นผิว (EOS/ESD STM 11.11)"
+          },
+          {
+            "en": "> 10⁸ and < 10¹¹ Ω (label surface)",
+            "zh": "> 10⁸ 且 < 10¹¹ Ω（标签表面）",
+            "vi": "> 10⁸ và < 10¹¹ Ω (bề mặt nhãn)",
+            "th": "> 10⁸ และ < 10¹¹ Ω (พื้นผิวฉลาก)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Static decay (EIA 541)",
+            "zh": "静电衰减（EIA 541）",
+            "vi": "Suy giảm tĩnh (EIA 541)",
+            "th": "การลดประจุ (EIA 541)"
+          },
+          {
+            "en": "To 1% of initial charge in 0.02 s",
+            "zh": "静电衰减至初始 1% 仅 0.02 秒",
+            "vi": "Về 1% điện tích ban đầu trong 0.02 s",
+            "th": "เหลือ 1% ของประจุเริ่มต้นใน 0.02 วินาที"
+          }
+        ],
+        "esd": true
+      },
+      {
+        "cells": [
+          {
+            "en": "ESD surface durability",
+            "zh": "ESD 表面耐久",
+            "vi": "Độ bền bề mặt ESD",
+            "th": "ความทนพื้นผิว ESD"
+          },
+          {
+            "en": "> 500 IPA double-rubs (ASTM D4752-10)",
+            "zh": "> 500 次 IPA 双向擦拭（ASTM D4752-10）",
+            "vi": "> 500 lần chà IPA (ASTM D4752-10)",
+            "th": "> 500 ครั้งการถู IPA (ASTM D4752-10)"
+          }
+        ],
+        "esd": true
+      },
+      {
+        "cells": [
+          {
+            "en": "Low-charging PSA / liner",
+            "zh": "低起电胶 / 离型纸",
+            "vi": "Keo / liner ít tích điện",
+            "th": "กาว / ไลเนอร์ประจุต่ำ"
+          },
+          {
+            "en": "< 125 V (ESD ADV 11.2)",
+            "zh": "< 125 V（ESD ADV 11.2）",
+            "vi": "< 125 V (ESD ADV 11.2)",
+            "th": "< 125 V (ESD ADV 11.2)"
+          }
+        ],
+        "esd": true
+      },
+      {
+        "cells": [
+          {
+            "en": "Temperature rating",
+            "zh": "温度等级",
+            "vi": "Định mức nhiệt độ",
+            "th": "ระดับอุณหภูมิ"
+          },
+          {
+            "en": "150 °C / 100 h (long-term) · 260 °C / 5 min (operating) · 300 °C / 90 s (short-term)",
+            "zh": "150 °C / 100 h（长期）· 260 °C / 5 min（工作）· 300 °C / 90 s（短期）",
+            "vi": "150 °C / 100 h (dài hạn) · 260 °C / 5 min (vận hành) · 300 °C / 90 s (ngắn hạn)",
+            "th": "150 °C / 100 h (ระยะยาว) · 260 °C / 5 min (ใช้งาน) · 300 °C / 90 s (ระยะสั้น)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "UV & weather (ASTM G154)",
+            "zh": "耐 UV 与气候（ASTM G154）",
+            "vi": "UV & thời tiết (ASTM G154)",
+            "th": "UV และสภาพอากาศ (ASTM G154)"
+          },
+          {
+            "en": "No visible effect",
+            "zh": "无可见影响",
+            "vi": "Không ảnh hưởng thấy được",
+            "th": "ไม่มีผลที่มองเห็น"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Printing",
+            "zh": "打印",
+            "vi": "In ấn",
+            "th": "การพิมพ์"
+          },
+          {
+            "en": "Thermal transfer — UL-tested ribbons (DNP R510HF, Ricoh B110CR, Armor AXR7+)",
+            "zh": "热转印 —— UL 测试碳带（DNP R510HF、Ricoh B110CR、Armor AXR7+）",
+            "vi": "In truyền nhiệt — ribbon đã kiểm UL (DNP R510HF, Ricoh B110CR, Armor AXR7+)",
+            "th": "พิมพ์ถ่ายเทความร้อน — ริบบอนที่ทดสอบ UL (DNP R510HF, Ricoh B110CR, Armor AXR7+)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Shelf life",
+            "zh": "保质期",
+            "vi": "Hạn dùng",
+            "th": "อายุการเก็บ"
+          },
+          {
+            "en": "Face / PSA / liner: 1 year below 27 °C, 60% RH · static-dissipative & low-charging properties: 10+ years",
+            "zh": "面材 / 胶 / 离型纸：27 °C、60% RH 以下 1 年 · 静电耗散与低起电性能：10 年以上",
+            "vi": "Mặt / keo / liner: 1 năm dưới 27 °C, 60% RH · tính tiêu tán tĩnh & ít tích điện: 10+ năm",
+            "th": "หน้า / กาว / ไลเนอร์: 1 ปี ต่ำกว่า 27 °C, 60% RH · คุณสมบัติกระจายประจุและประจุต่ำ: 10+ ปี"
+          }
+        ]
+      }
+    ],
+    "notes": {
+      "en": [
+        "Construction (top→bottom): static-dissipative matte white topcoat · 1 mil PI face (1.5 mil (38 µm)) · low-charging acrylic PSA (1 mil (25 µm)) · low-charging liner (3.1 mil (79 µm)). UL File MH19503.PGJI2.",
+        "Ionization is recommended alongside ESD-safe labels; prolonged high-temperature exposure can reduce ESD properties."
+      ],
+      "zh": [
+        "结构（自上而下）：静电耗散哑光白面涂层 · 1 mil PI 面材（1.5 mil (38 µm)）· 低起电丙烯酸胶（1 mil (25 µm)）· 低起电离型纸（3.1 mil (79 µm)）。UL File MH19503.PGJI2。",
+        "建议配合离子风扇使用防静电标签；长时间高温暴露可能降低 ESD 性能。"
+      ],
+      "vi": [
+        "Cấu tạo (trên→dưới): lớp phủ trắng mờ tiêu tán tĩnh · mặt PI 1 mil (1.5 mil (38 µm)) · keo acrylic ít tích điện (1 mil (25 µm)) · liner ít tích điện (3.1 mil (79 µm)). UL File MH19503.PGJI2.",
+        "Khuyến nghị dùng ion hóa kèm nhãn ESD-safe; phơi nhiệt độ cao kéo dài có thể giảm tính ESD."
+      ],
+      "th": [
+        "โครงสร้าง (บน→ล่าง): ท็อปโค้ตสีขาวด้านกระจายประจุ · หน้า PI 1 mil (1.5 mil (38 µm)) · กาวอะคริลิกประจุต่ำ (1 mil (25 µm)) · ไลเนอร์ประจุต่ำ (3.1 mil (79 µm)) UL File MH19503.PGJI2",
+        "แนะนำใช้ไอออไนเซชันร่วมกับฉลาก ESD-safe; การสัมผัสอุณหภูมิสูงนานอาจลดคุณสมบัติ ESD"
+      ]
+    }
+  },
+  "applications": {
+    "en": [
+      "Identification of static-sensitive circuit boards",
+      "Asset tracking",
+      "Warranty labeling",
+      "ESD-Safe packaging"
+    ],
+    "zh": [
+      "静电敏感电路板的标识",
+      "资产追踪",
+      "保修标签",
+      "防静电包装"
+    ],
+    "vi": [
+      "Nhận diện bo mạch nhạy tĩnh điện",
+      "Theo dõi tài sản",
+      "Nhãn bảo hành",
+      "Đóng gói ESD-Safe"
+    ],
+    "th": [
+      "การระบุแผงวงจรที่ไวต่อไฟฟ้าสถิต",
+      "การติดตามทรัพย์สิน",
+      "ฉลากการรับประกัน",
+      "บรรจุภัณฑ์ ESD-Safe"
+    ]
+  },
+  "certifications": {
+    "en": [
+      "ANSI/ESD S20.20 · IEC 61340 (EPA)",
+      "ANSI/ESD S541",
+      "REACH compliant",
+      "RoHS compliant",
+      "MIL-STD-202G Method 215K · MIL-STD-883E Method 2015.13"
+    ],
+    "zh": [
+      "ANSI/ESD S20.20 · IEC 61340（EPA）",
+      "ANSI/ESD S541",
+      "符合 REACH",
+      "符合 RoHS",
+      "MIL-STD-202G Method 215K · MIL-STD-883E Method 2015.13"
+    ],
+    "vi": [
+      "ANSI/ESD S20.20 · IEC 61340 (EPA)",
+      "ANSI/ESD S541",
+      "Tuân thủ REACH",
+      "Tuân thủ RoHS",
+      "MIL-STD-202G Method 215K · MIL-STD-883E Method 2015.13"
+    ],
+    "th": [
+      "ANSI/ESD S20.20 · IEC 61340 (EPA)",
+      "ANSI/ESD S541",
+      "สอดคล้อง REACH",
+      "สอดคล้อง RoHS",
+      "MIL-STD-202G Method 215K · MIL-STD-883E Method 2015.13"
+    ]
+  }
+}
