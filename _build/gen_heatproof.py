@@ -1633,12 +1633,12 @@ _HOME_TRUST = [
 ]
 _HOME_TRUST_CSS = """<style>
 .htrust{background:linear-gradient(100deg,var(--blue-deep),var(--blue))}
-.htrust-in{display:grid;grid-template-columns:repeat(3,1fr);padding:24px 0}
-.htrust .ht{padding:6px 26px;text-align:center;color:#fff;border-left:1px solid rgba(255,255,255,.2)}
+.htrust-in{display:grid;grid-template-columns:repeat(3,1fr);padding:16px 0}
+.htrust .ht{padding:4px 26px;text-align:center;color:#fff;border-left:1px solid rgba(255,255,255,.2)}
 .htrust .ht:first-child{border-left:none}
-.htrust .ht b{display:block;font-family:var(--sans);font-weight:800;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.01em;line-height:1.15}
-.htrust .ht span{display:block;font-size:13.5px;color:#fff;opacity:.92;margin-top:5px;line-height:1.4}
-@media(max-width:760px){.htrust-in{grid-template-columns:1fr;padding:6px 0}.htrust .ht{border-left:none;border-top:1px solid rgba(255,255,255,.16);padding:15px 20px}.htrust .ht:first-child{border-top:none}}
+.htrust .ht b{display:block;font-family:var(--sans);font-weight:800;font-size:clamp(17px,1.9vw,21px);letter-spacing:-.01em;line-height:1.15}
+.htrust .ht span{display:block;font-size:12.5px;color:#fff;opacity:.92;margin-top:3px;line-height:1.35}
+@media(max-width:760px){.htrust-in{grid-template-columns:1fr;padding:4px 0}.htrust .ht{border-left:none;border-top:1px solid rgba(255,255,255,.16);padding:12px 20px}.htrust .ht:first-child{border-top:none}}
 </style>"""
 
 def home_trustbar(lang):
