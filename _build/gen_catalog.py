@@ -87,8 +87,6 @@ IND_NAME = {
 APP_CATS = [
     ("esd",     {"en": "ESD / Anti-static", "zh": "防静电", "vi": "Chống tĩnh điện", "th": "ป้องกันไฟฟ้าสถิต"}, ["esd", "anti-static", "static-dissipative", "防静电", "静电"]),
     ("flame",   {"en": "Flame-Retardant", "zh": "阻燃", "vi": "Chống cháy", "th": "หน่วงไฟ"}, ["flame-retardant", "flame retardant", "ul94", "ul 94", "vtm-0", "halogen-free", "阻燃", "无卤"]),
-    ("cryo",    {"en": "Cryogenic / Low-Temp", "zh": "低温冻存", "vi": "Đông lạnh", "th": "อุณหภูมิต่ำ"}, ["cryo", "-196", "-80", "−196", "−80", "liquid nitrogen", "液氮", "低温", "冻存", "cold chain", "cold-chain"]),
-    ("hot",     {"en": "High-Temp", "zh": "高温", "vi": "Nhiệt độ cao", "th": "อุณหภูมิสูง"}, ["reflow", "high-temp", "high-temperature", "heat-treatment", "heat treatment", "wave solder", "hot steel", "hot billet", "hot-application", "annealing", "耐高温", "高温工艺", "回流焊", "热处理"]),
     ("chem",    {"en": "Chemical-Resistant", "zh": "耐化学", "vi": "Kháng hóa chất", "th": "ทนสารเคมี"}, ["chemical-resistant", "chemical resistant", "solvent-resistant", "solvent resistant", "acid and alkali", "耐化学", "耐溶剂"]),
     ("steril",  {"en": "Sterilization", "zh": "灭菌", "vi": "Tiệt trùng", "th": "การฆ่าเชื้อ"}, ["sterilization", "sterilize", "autoclave", "gamma", "灭菌", "高压灭菌"]),
     ("laser",   {"en": "Laser-Markable", "zh": "激光可刻", "vi": "Khắc laser", "th": "แกะสลักด้วยเลเซอร์"}, ["laser-mark", "laser mark", "laser-etch", "laser etch", "laser engrav", "激光刻", "激光打"]),
@@ -133,9 +131,9 @@ UI = {
            "fac": {"industry": "อุตสาหกรรม", "brand": "แบรนด์", "application": "การใช้งาน", "facestock": "วัสดุหน้า", "temp": "อุณหภูมิ"}},
 }
 TEMP_BANDS = {
-    "cryo":  {"en": "Cryogenic (≤ −40°C)", "zh": "低温 (≤ −40°C)", "vi": "Đông lạnh (≤ −40°C)", "th": "อุณหภูมิต่ำ (≤ −40°C)"},
-    "high":  {"en": "High-Temp (≥ 200°C)", "zh": "高温 (≥ 200°C)", "vi": "Nhiệt cao (≥ 200°C)", "th": "อุณหภูมิสูง (≥ 200°C)"},
+    "high":  {"en": "High-Temp (≥ 200°C)", "zh": "高温 (≥ 200°C)", "vi": "Nhiệt độ cao (≥ 200°C)", "th": "อุณหภูมิสูง (≥ 200°C)"},
     "std":   {"en": "Standard (−40 to 200°C)", "zh": "常规 (−40 至 200°C)", "vi": "Tiêu chuẩn (−40 đến 200°C)", "th": "มาตรฐาน (−40 ถึง 200°C)"},
+    "cryo":  {"en": "Low-Temp (≤ −40°C)", "zh": "低温 (≤ −40°C)", "vi": "Nhiệt độ thấp (≤ −40°C)", "th": "อุณหภูมิต่ำ (≤ −40°C)"},
 }
 BRAND = gp.BRAND_NAMES  # {"polyonics":{...}, "etia":{...}} — shared brand axis
 
@@ -219,22 +217,23 @@ def build_lang(records, lang):
                 % (group, esc(value), esc(label)))
 
     fpanels = ""
+    # Spine first: Temperature (High / Standard / Low) then Material, then tags.
+    if temp_opts:
+        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["temp"]),
+            "".join(chk("temp", t, L(TEMP_BANDS[t])) for t in ["high", "std", "cryo"] if t in temp_opts))
+    if fs_opts:
+        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["facestock"]),
+            "".join(chk("fs", f, L(json.loads(f))) for f in fs_opts))
+    if app_opts:
+        applab = {key: lab for key, lab, kws in APP_CATS}
+        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["application"]),
+            "".join(chk("app", key, L(applab[key])) for key, lab, kws in APP_CATS if key in app_opts))
     if ind_opts:
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["industry"]),
             "".join(chk("industry", k, L(IND_NAME[k])) for k in ["pcb", "auto", "cable", "steel", "medical", "outdoor"] if k in ind_opts))
     if len(brand_opts) > 1:
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["brand"]),
             "".join(chk("brand", b, L(BRAND[b])) for b in brand_opts))
-    if app_opts:
-        applab = {key: lab for key, lab, kws in APP_CATS}
-        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["application"]),
-            "".join(chk("app", key, L(applab[key])) for key, lab, kws in APP_CATS if key in app_opts))
-    if fs_opts:
-        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["facestock"]),
-            "".join(chk("fs", f, L(json.loads(f))) for f in fs_opts))
-    if temp_opts:
-        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["temp"]),
-            "".join(chk("temp", t, L(TEMP_BANDS[t])) for t in ["cryo", "std", "high"] if t in temp_opts))
 
     # ---- cards ----
     applab = {key: lab for key, lab, kws in APP_CATS}
