@@ -228,9 +228,9 @@ def build_lang(records, lang):
         applab = {key: lab for key, lab, kws in APP_CATS}
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["application"]),
             "".join(chk("app", key, L(applab[key])) for key, lab, kws in APP_CATS if key in app_opts))
-    if ind_opts:
-        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["industry"]),
-            "".join(chk("industry", k, L(IND_NAME[k])) for k in ["pcb", "auto", "cable", "steel", "medical", "outdoor"] if k in ind_opts))
+    # Industry is intentionally NOT a filter here: a product serves several
+    # industries, so industry-based discovery lives on the "Products › By Industry"
+    # pages. This finder is the product/spec angle (temperature, material, application).
     if len(brand_opts) > 1:
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["brand"]),
             "".join(chk("brand", b, L(BRAND[b])) for b in brand_opts))
@@ -240,10 +240,12 @@ def build_lang(records, lang):
     cards = ""
     for r in sorted(records, key=lambda x: L(x["title"]).lower()):
         chips = ""
-        if r["industry"]:
-            chips += '<span class="cchip ind">%s</span>' % esc(L(IND_NAME[r["industry"]]))
         for f in r["facestocks"][:1]:
             chips += '<span class="cchip mat">%s</span>' % esc(L(f))
+        for t in r["temps"]:
+            if t in ("high", "cryo"):
+                cls = "temphi" if t == "high" else "templo"
+                chips += '<span class="cchip %s">%s</span>' % (cls, esc(L(TEMP_BANDS[t]).split("(")[0].strip()))
         if "esd" in r["apps"]:
             chips += '<span class="cchip esd">ESD</span>'
         if "flame" in r["apps"]:
@@ -288,6 +290,7 @@ def build_lang(records, lang):
 .cchip{font-size:10.5px;font-weight:800;padding:2px 8px;border-radius:999px}
 .cchip.ind{color:#fff;background:#1A56DB}.cchip.mat{color:#2c7a1e;background:#e6f5e0}
 .cchip.esd{color:#1A56DB;background:#eaf1ff}.cchip.fr{color:#b4520a;background:#fdeede}
+.cchip.temphi{color:#b4520a;background:#fdeede}.cchip.templo{color:#0e7490;background:#e0f2fe}
 .pcell-go{font-size:12px;font-weight:800;color:#41A62A;margin-top:2px}
 .cnone{padding:40px 8px;color:#5a6884;font-size:15px}
 .fmob{display:none}
