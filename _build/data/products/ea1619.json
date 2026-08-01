@@ -1,0 +1,242 @@
+{
+  "slug": "ea1619",
+  "source": "ETIA-TECH EA1619 Technical Data Sheet",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner": "",
+  "brand": "etia",
+  "industry": "outdoor",
+  "product_img": "",
+  "title": {
+    "en": "EA1619 — Solar PV Nameplate Label (50µm Matte Black UV PET, UL969)",
+    "zh": "EA1619 —— 光伏铭牌标签（50µm 哑黑耐 UV PET，UL969）",
+    "vi": "EA1619 — Nhãn bảng tên PV mặt trời (PET UV đen mờ 50µm, UL969)",
+    "th": "EA1619 — ฉลากป้ายชื่อโซลาร์ PV (PET UV ดำด้าน 50µm, UL969)"
+  },
+  "tagline": {
+    "en": "50µm matte black UV-resistant PET label for solar lamination and nameplates — 600 dpi TT print, aging- and UV-resistant, −40 to +149 °C.",
+    "zh": "50µm 哑黑耐 UV PET 标签，用于光伏层压与铭牌 —— 600 dpi 热转印，耐老化、耐 UV，−40 至 +149 °C。",
+    "vi": "Nhãn PET UV đen mờ 50µm cho cán màng và bảng tên mặt trời — in TT 600 dpi, kháng lão hóa và UV, −40 đến +149 °C.",
+    "th": "ฉลาก PET UV ดำด้าน 50µm สำหรับการเคลือบและป้ายชื่อโซลาร์ — พิมพ์ TT 600 dpi ทนการเสื่อมและ UV, −40 ถึง +149 °C"
+  },
+  "positioning": {
+    "en": "EA1619 is a 50 µm matte black UV-resistant polyester label with a permanent acrylic emulsion adhesive. Its matte UV topcoat takes most domestic and imported inks well and prints crisply at 600 dpi thermal transfer. It offers anti-tear, Hast60, UV and dimensional stability with high opacity and chemical resistance across −40 to +149 °C — for solar lamination and nameplates. UL969 recognized.",
+    "zh": "EA1619 是一款 50 µm 哑黑耐 UV 聚酯标签，配永久性丙烯酸乳液胶。哑光 UV 面涂层对大多数国产与进口油墨适性良好，600 dpi 热转印效果更佳。具抗撕裂、耐 Hast60、耐 UV 与尺寸稳定性，高遮盖、耐化学，温度 −40 至 +149 °C —— 用于光伏层压与铭牌。UL969 认证。",
+    "vi": "EA1619 là nhãn polyester UV đen mờ 50 µm với keo nhũ acrylic vĩnh viễn. Lớp phủ UV mờ nhận hầu hết mực nội/nhập và in sắc nét ở 600 dpi truyền nhiệt. Kháng xé, Hast60, UV và ổn định kích thước, độ mờ cao và kháng hóa chất trong −40 đến +149 °C — cho cán màng và bảng tên mặt trời. Được UL969 công nhận.",
+    "th": "EA1619 เป็นฉลากโพลีเอสเตอร์ UV ดำด้าน 50 µm พร้อมกาวอะคริลิกอิมัลชันถาวร ท็อปโค้ต UV ด้านรับหมึกส่วนใหญ่ได้ดีและพิมพ์คมที่ TT 600 dpi ทนการฉีก Hast60 UV และเสถียรมิติ ความทึบสูงและทนสารเคมี ในช่วง −40 ถึง +149 °C — สำหรับการเคลือบและป้ายชื่อโซลาร์ ได้รับ UL969"
+  },
+  "features": {
+    "en": [
+      "Matte black UV topcoat — 600 dpi thermal-transfer print quality",
+      "Anti-tear, Hast60, UV and dimensional stability",
+      "High opacity and chemical resistance",
+      "UL969 recognized"
+    ],
+    "zh": [
+      "哑黑 UV 面涂层 —— 600 dpi 热转印高清",
+      "抗撕裂、耐 Hast60、耐 UV 与尺寸稳定",
+      "高遮盖与耐化学腐蚀",
+      "UL969 认证"
+    ],
+    "vi": [
+      "Lớp phủ UV đen mờ — chất lượng in TT 600 dpi",
+      "Kháng xé, Hast60, UV và ổn định kích thước",
+      "Độ mờ cao và kháng hóa chất",
+      "Được UL969 công nhận"
+    ],
+    "th": [
+      "ท็อปโค้ต UV ดำด้าน — คุณภาพพิมพ์ TT 600 dpi",
+      "ทนการฉีก Hast60 UV และเสถียรมิติ",
+      "ความทึบสูงและทนสารเคมี",
+      "ได้รับการรับรอง UL969"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Property",
+        "Value"
+      ],
+      "zh": [
+        "属性",
+        "参数"
+      ],
+      "vi": [
+        "Thuộc tính",
+        "Giá trị"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "ค่า"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Facestock",
+            "zh": "面材",
+            "vi": "Vật liệu mặt",
+            "th": "วัสดุหน้า"
+          },
+          {
+            "en": "50 µm matte black UV PET",
+            "zh": "50 µm 哑黑耐 UV PET",
+            "vi": "PET UV đen mờ 50 µm",
+            "th": "PET UV ดำด้าน 50 µm"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesive",
+            "zh": "胶粘剂",
+            "vi": "Keo",
+            "th": "กาว"
+          },
+          {
+            "en": "Permanent acrylic emulsion",
+            "zh": "永久性丙烯酸乳液胶",
+            "vi": "Keo nhũ acrylic vĩnh viễn",
+            "th": "กาวอะคริลิกอิมัลชันถาวร"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Liner",
+            "zh": "底纸",
+            "vi": "Liner",
+            "th": "ไลเนอร์"
+          },
+          {
+            "en": "White glassine (70 µm)",
+            "zh": "白色格拉辛（70 µm）",
+            "vi": "Glassine trắng (70 µm)",
+            "th": "กลาสซีนสีขาว (70 µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Service temperature",
+            "zh": "使用温度",
+            "vi": "Nhiệt độ sử dụng",
+            "th": "อุณหภูมิใช้งาน"
+          },
+          {
+            "en": "−40 to +149 °C",
+            "zh": "−40 至 +149 °C",
+            "vi": "−40 đến +149 °C",
+            "th": "−40 ถึง +149 °C"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Minimum application temp.",
+            "zh": "最低贴标温度",
+            "vi": "Nhiệt độ dán tối thiểu",
+            "th": "อุณหภูมิติดต่ำสุด"
+          },
+          {
+            "en": "−4 °C",
+            "zh": "−4 °C",
+            "vi": "−4 °C",
+            "th": "−4 °C"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "UL",
+            "zh": "UL",
+            "vi": "UL",
+            "th": "UL"
+          },
+          {
+            "en": "UL969 recognized",
+            "zh": "UL969 认证",
+            "vi": "Được UL969 công nhận",
+            "th": "ได้รับการรับรอง UL969"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Printing",
+            "zh": "打印",
+            "vi": "In ấn",
+            "th": "การพิมพ์"
+          },
+          {
+            "en": "Thermal transfer (600 dpi) · letterpress",
+            "zh": "热转印（600 dpi）· 凸版印刷",
+            "vi": "In truyền nhiệt (600 dpi) · letterpress",
+            "th": "พิมพ์ถ่ายเทความร้อน (600 dpi) · เลตเตอร์เพรส"
+          }
+        ]
+      }
+    ],
+    "notes": {
+      "en": [
+        "Base material by. Values are typical, not specifications — verify against the datasheet and by application testing."
+      ],
+      "zh": [
+        "基材由 提供。数值为典型值，非规格值 —— 请以数据表并经应用测试确认。"
+      ],
+      "vi": [
+        "Vật liệu nền của. Giá trị là điển hình, không phải thông số — xác minh theo datasheet và thử nghiệm."
+      ],
+      "th": [
+        "วัสดุพื้นฐานโดย ค่าเป็นค่าทั่วไป ไม่ใช่สเปก — ตรวจสอบกับเอกสารข้อมูลและการทดสอบ"
+      ]
+    }
+  },
+  "applications": {
+    "en": [
+      "Solar-module lamination labels",
+      "Solar nameplates and rating labels",
+      "Durable outdoor equipment identification"
+    ],
+    "zh": [
+      "光伏组件层压标签",
+      "光伏铭牌与铭牌标签",
+      "户外设备耐久标识"
+    ],
+    "vi": [
+      "Nhãn cán màng mô-đun mặt trời",
+      "Bảng tên và nhãn thông số mặt trời",
+      "Nhận diện thiết bị ngoài trời bền"
+    ],
+    "th": [
+      "ฉลากเคลือบโมดูลโซลาร์",
+      "ป้ายชื่อและฉลากพิกัดโซลาร์",
+      "การระบุอุปกรณ์กลางแจ้งที่ทนทาน"
+    ]
+  },
+  "certifications": {
+    "en": [
+      "UL969 recognized"
+    ],
+    "zh": [
+      "UL969 认证"
+    ],
+    "vi": [
+      "Được UL969 công nhận"
+    ],
+    "th": [
+      "ได้รับการรับรอง UL969"
+    ]
+  }
+}
