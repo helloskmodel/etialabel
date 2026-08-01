@@ -1,31 +1,186 @@
 {
   "slug": "hp-l90",
-  "source": "TDS HP-L90",
-  "langs": ["en", "zh", "vi", "th"],
+  "source": "ETIA-TECH HP-L90 Technical Data Sheet",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "",
+  "brand": "etia",
+  "industry": "steel",
   "product_img": "",
-  "title": {"en": "HP-L90 — HP Series High-Temp Tag", "zh": "HP-L90 · HP Series 高温吊牌", "vi": "HP-L90 · Thẻ chịu nhiệt cao HP Series", "th": "HP-L90 · แท็กทนความร้อนสูง HP Series"},
-  "tagline": {"en": "High-temperature HP-series tag for hot metal up to 1200°C", "zh": "HP 系列高温吊牌，适用于高达 1200°C 的高温金属", "vi": "Thẻ HP series chịu nhiệt cao dùng cho kim loại nóng đến 1200°C", "th": "แท็ก HP series ทนความร้อนสูงสำหรับโลหะร้อนถึง 1200°C"},
-  "positioning": {},
-  "challenges": {},
-  "features": {
-    "en": ["Thin layer tag", "Printable with the thermal transfer printer", "High heat resistance up to 1200°C", "Thermal transfer ink ribbon: YS-540 or YS-4"],
-    "zh": ["薄层吊牌", "可使用热转印打印机打印", "高耐热性，最高达 1200°C", "热转印色带：YS-540 或 YS-4"],
-    "vi": ["Thẻ lớp mỏng", "Có thể in bằng máy in chuyển nhiệt", "Khả năng chịu nhiệt cao đến 1200°C", "Băng mực chuyển nhiệt: YS-540 hoặc YS-4"],
-    "th": ["แท็กชั้นบาง", "พิมพ์ได้ด้วยเครื่องพิมพ์ถ่ายเทความร้อน", "ทนความร้อนสูงถึง 1200°C", "ริบบอนหมึกถ่ายเทความร้อน: YS-540 หรือ YS-4"]
+  "title": {
+    "en": "HP-L90 — 1200 °C Stainless-Steel Foil High-Temp Tag",
+    "zh": "HP-L90 —— 1200 °C 不锈钢箔高温挂签",
+    "vi": "HP-L90 — Thẻ lá thép không gỉ 1200 °C",
+    "th": "HP-L90 — แท็กฟอยล์สแตนเลส 1200 °C"
   },
-  "benefits": {},
-  "spec": {
-    "en": ["Printing layer: Inorganic coating (White), 10±2µ", "Tag core: Stainless steel foil, 50±1µ", "Back layer: Inorganic coating (White), 10±2µ", "Printing: Good (thermal transfer printer, SATO)", "Accelerated weathering: 250 hours (Sunshine weather-o-meter, JIS A.415)", "Heat resistance: Good (1200°C x 6hr)"],
-    "zh": ["打印层：无机涂层（白色），10±2µ", "吊牌芯层：不锈钢箔，50±1µ", "背层：无机涂层（白色），10±2µ", "打印：良好（热转印打印机，SATO）", "加速耐候：250 小时（Sunshine weather-o-meter，JIS A.415）", "耐热性：良好（1200°C x 6hr）"],
-    "vi": ["Lớp in: Lớp phủ vô cơ (Trắng), 10±2µ", "Lõi thẻ: Lá thép không gỉ, 50±1µ", "Lớp lưng: Lớp phủ vô cơ (Trắng), 10±2µ", "In ấn: Tốt (máy in chuyển nhiệt, SATO)", "Lão hóa thời tiết gia tốc: 250 giờ (Sunshine weather-o-meter, JIS A.415)", "Khả năng chịu nhiệt: Tốt (1200°C x 6hr)"],
-    "th": ["ชั้นพิมพ์: สารเคลือบอนินทรีย์ (สีขาว), 10±2µ", "แกนแท็ก: ฟอยล์สแตนเลส, 50±1µ", "ชั้นหลัง: สารเคลือบอนินทรีย์ (สีขาว), 10±2µ", "การพิมพ์: ดี (เครื่องพิมพ์ถ่ายเทความร้อน, SATO)", "การเสื่อมสภาพเร่งจากสภาพอากาศ: 250 ชั่วโมง (Sunshine weather-o-meter, JIS A.415)", "ความทนความร้อน: ดี (1200°C x 6hr)"]
+  "tagline": {
+    "en": "Thin stainless-steel foil tag — heat-resistant to 1200 °C, thermal-transfer printable, weathering-resistant.",
+    "zh": "薄型不锈钢箔挂签 —— 耐热 1200 °C，可热转印，耐候。",
+    "vi": "Thẻ lá thép không gỉ mỏng — chịu nhiệt 1200 °C, in truyền nhiệt, chịu thời tiết.",
+    "th": "แท็กฟอยล์สแตนเลสบาง — ทนความร้อน 1200 °C พิมพ์ถ่ายเทความร้อนได้ ทนสภาพอากาศ"
+  },
+  "positioning": {
+    "en": "HP-L90 is a thin stainless-steel foil tag coated both sides with an inorganic white layer, for metal products under heat treatment up to 1200 °C. It resists heat to 1200 °C (1200 °C for 6 hours), is thermal-transfer printable and withstands accelerated weathering (250 hours).",
+    "zh": "HP-L90 是一款薄型不锈钢箔挂签，双面涂覆无机白色涂层，用于热处理下的金属产品（达 1200 °C）。耐热达 1200 °C（1200 °C 保持 6 小时），可热转印，并通过加速候（250 小时）。",
+    "vi": "HP-L90 là thẻ lá thép không gỉ mỏng, phủ hai mặt lớp trắng vô cơ, cho sản phẩm kim loại xử lý nhiệt đến 1200 °C. Chịu nhiệt đến 1200 °C (1200 °C trong 6 giờ), in truyền nhiệt và chịu lão hóa thời tiết gia tốc (250 giờ).",
+    "th": "HP-L90 เป็นแท็กฟอยล์สแตนเลสบาง เคลือบสีขาวอนินทรีย์ทั้งสองด้าน สำหรับผลิตภัณฑ์โลหะที่อบชุบถึง 1200 °C ทนความร้อนถึง 1200 °C (1200 °C นาน 6 ชม.) พิมพ์ถ่ายเทความร้อนได้ และทนการเสื่อมสภาพเร่ง (250 ชม.)"
+  },
+  "features": {
+    "en": [
+      "Thin-layer stainless-steel foil tag",
+      "Heat-resistant up to 1200 °C (1200 °C × 6 hr)",
+      "Thermal-transfer printable (YS-540 / YS-4 ribbon)",
+      "Accelerated weathering 250 hours (JIS A 415)"
+    ],
+    "zh": [
+      "薄层不锈钢箔挂签",
+      "耐热达 1200 °C（1200 °C × 6 小时）",
+      "可热转印（YS-540 / YS-4 碳带）",
+      "加速候 250 小时（JIS A 415）"
+    ],
+    "vi": [
+      "Thẻ lá thép không gỉ mỏng",
+      "Chịu nhiệt đến 1200 °C (1200 °C × 6 giờ)",
+      "In truyền nhiệt (ribbon YS-540 / YS-4)",
+      "Lão hóa thời tiết gia tốc 250 giờ (JIS A 415)"
+    ],
+    "th": [
+      "แท็กฟอยล์สแตนเลสบาง",
+      "ทนความร้อนถึง 1200 °C (1200 °C × 6 ชม.)",
+      "พิมพ์ถ่ายเทความร้อนได้ (ริบบอน YS-540 / YS-4)",
+      "การเสื่อมสภาพเร่ง 250 ชม. (JIS A 415)"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Property",
+        "Value"
+      ],
+      "zh": [
+        "属性",
+        "参数"
+      ],
+      "vi": [
+        "Thuộc tính",
+        "Giá trị"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "ค่า"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Heat resistance",
+            "zh": "耐热",
+            "vi": "Chịu nhiệt",
+            "th": "ทนความร้อน"
+          },
+          {
+            "en": "Up to 1200 °C (1200 °C × 6 hr)",
+            "zh": "达 1200 °C（1200 °C × 6 小时）",
+            "vi": "Đến 1200 °C (1200 °C × 6 giờ)",
+            "th": "ถึง 1200 °C (1200 °C × 6 ชม.)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Label core",
+            "zh": "标签基材",
+            "vi": "Lõi nhãn",
+            "th": "แกนฉลาก"
+          },
+          {
+            "en": "Stainless-steel foil (50 µm)",
+            "zh": "不锈钢箔（50 µm）",
+            "vi": "Lá thép không gỉ (50 µm)",
+            "th": "ฟอยล์สแตนเลส (50 µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Printing",
+            "zh": "打印",
+            "vi": "In ấn",
+            "th": "การพิมพ์"
+          },
+          {
+            "en": "Thermal transfer — YS-540 / YS-4 ribbon",
+            "zh": "热转印 —— YS-540 / YS-4 碳带",
+            "vi": "In truyền nhiệt — ribbon YS-540 / YS-4",
+            "th": "พิมพ์ถ่ายเทความร้อน — ริบบอน YS-540 / YS-4"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Construction (top → bottom)",
+            "zh": "结构（自上而下）",
+            "vi": "Cấu tạo (trên → dưới)",
+            "th": "โครงสร้าง (บน → ล่าง)"
+          },
+          {
+            "en": "Inorganic white coating 10 µm · stainless-steel foil 50 µm · inorganic white coating 10 µm (tag — no adhesive).",
+            "zh": "无机白色涂层 10 µm · 不锈钢箔 50 µm · 无机白色涂层 10 µm（挂签 —— 无胶）。",
+            "vi": "Phủ trắng vô cơ 10 µm · lá thép không gỉ 50 µm · phủ trắng vô cơ 10 µm (thẻ — không keo).",
+            "th": "เคลือบขาวอนินทรีย์ 10 µm · ฟอยล์สแตนเลส 50 µm · เคลือบขาวอนินทรีย์ 10 µm (แท็ก — ไม่มีกาว)"
+          }
+        ]
+      }
+    ],
+    "notes": {
+      "en": [
+        "Values are typical, not specifications; verify against the datasheet and by application testing."
+      ],
+      "zh": [
+        "数值为典型值，非规格值；请以数据表并经应用测试确认。"
+      ],
+      "vi": [
+        "Giá trị là điển hình, không phải thông số kỹ thuật; hãy xác minh theo datasheet và thử nghiệm ứng dụng."
+      ],
+      "th": [
+        "ค่าเป็นค่าทั่วไป ไม่ใช่สเปก โปรดตรวจสอบกับเอกสารข้อมูลและการทดสอบการใช้งาน"
+      ]
+    }
   },
   "applications": {
-    "en": ["For metal products management under heat treatment up to 1200°C", "Steel, Aluminum, Nonferrous metal industry, Metal-processing industry"],
-    "zh": ["用于高达 1200°C 热处理下的金属产品管理", "钢铁、铝、有色金属行业，金属加工行业"],
-    "vi": ["Dùng cho quản lý sản phẩm kim loại trong xử lý nhiệt đến 1200°C", "Ngành thép, nhôm, kim loại màu, ngành gia công kim loại"],
-    "th": ["สำหรับการจัดการผลิตภัณฑ์โลหะภายใต้การอบชุบความร้อนถึง 1200°C", "อุตสาหกรรมเหล็ก อะลูมิเนียม โลหะนอกกลุ่มเหล็ก อุตสาหกรรมแปรรูปโลหะ"]
+    "en": [
+      "Metal product management under heat treatment up to 1200 °C",
+      "Steel, aluminum and non-ferrous metal industries",
+      "Wire-on / hang tags for heat-treatment furnaces"
+    ],
+    "zh": [
+      "热处理下金属产品管理（达 1200 °C）",
+      "钢铁、铝与有色金属行业",
+      "热处理炉的挂签"
+    ],
+    "vi": [
+      "Quản lý sản phẩm kim loại khi xử lý nhiệt đến 1200 °C",
+      "Ngành thép, nhôm và kim loại màu",
+      "Thẻ treo cho lò xử lý nhiệt"
+    ],
+    "th": [
+      "การจัดการผลิตภัณฑ์โลหะภายใต้การอบชุบถึง 1200 °C",
+      "อุตสาหกรรมเหล็ก อะลูมิเนียม และโลหะนอกกลุ่มเหล็ก",
+      "แท็กแขวนสำหรับเตาอบชุบ"
+    ]
   },
-  "certifications": {}
+  "certifications": {
+    "en": [],
+    "zh": [],
+    "vi": [],
+    "th": []
+  }
 }

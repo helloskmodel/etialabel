@@ -1,0 +1,222 @@
+{
+  "slug": "hp-120s",
+  "source": "ETIA-TECH HP-120S Technical Data Sheet",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner": "",
+  "brand": "etia",
+  "industry": "steel",
+  "product_img": "",
+  "title": {
+    "en": "HP-120S — 220 °C Chemical-Resistant Aluminum-Foil Label",
+    "zh": "HP-120S —— 220 °C 耐化学铝箔标签",
+    "vi": "HP-120S — Nhãn lá nhôm kháng hóa chất 220 °C",
+    "th": "HP-120S — ฉลากฟอยล์อะลูมิเนียมทนสารเคมี 220 °C"
+  },
+  "tagline": {
+    "en": "Aluminum-foil label — heat-resistant to 220 °C, chemical-proof, with very high adhesion on metal (> 2000 gf/25 mm).",
+    "zh": "铝箔标签 —— 耐热 220 °C，耐化学，对金属极高粘着（> 2000 gf/25 mm）。",
+    "vi": "Nhãn lá nhôm — chịu nhiệt 220 °C, kháng hóa chất, độ bám rất cao trên kim loại (> 2000 gf/25 mm).",
+    "th": "ฉลากฟอยล์อะลูมิเนียม — ทนความร้อน 220 °C ทนสารเคมี ยึดเกาะโลหะสูงมาก (> 2000 gf/25 mm)"
+  },
+  "positioning": {
+    "en": "HP-120S is an aluminum-foil label with acrylic/epoxy printing layers and a strong acrylic adhesive. It resists heat up to 220 °C, is chemical-proof and delivers very high adhesion on metal (> 2000 gf/25 mm) with minimal loss at high temperature — for durable metal identification through processing.",
+    "zh": "HP-120S 是一款铝箔标签，配丙烯酸/环氧打印层与强力丙烯酸胶。耐热达 220 °C，耐化学，对金属提供极高粘着（> 2000 gf/25 mm），高温下损失极小 —— 用于加工过程中的耐久金属标识。",
+    "vi": "HP-120S là nhãn lá nhôm với lớp in acrylic/epoxy và keo acrylic mạnh. Chịu nhiệt đến 220 °C, kháng hóa chất và cho độ bám rất cao trên kim loại (> 2000 gf/25 mm), ít mất ở nhiệt cao.",
+    "th": "HP-120S เป็นฉลากฟอยล์อะลูมิเนียม พร้อมชั้นพิมพ์อะคริลิก/อีพ็อกซีและกาวอะคริลิกแข็งแรง ทนความร้อนถึง 220 °C ทนสารเคมี และยึดเกาะโลหะสูงมาก (> 2000 gf/25 mm) สูญเสียน้อยที่อุณหภูมิสูง"
+  },
+  "features": {
+    "en": [
+      "Heat-resistant up to 220 °C (RT–220 °C application)",
+      "Chemical-proof",
+      "Very high adhesion on metal (> 2000 gf/25 mm)",
+      "Minimal loss of adhesion at high temperature",
+      "Thermal-transfer printable (YS-1204 ribbon)"
+    ],
+    "zh": [
+      "耐热达 220 °C（常温–220 °C 应用）",
+      "耐化学",
+      "对金属极高粘着（> 2000 gf/25 mm）",
+      "高温下粘着损失极小",
+      "可热转印（YS-1204 碳带）"
+    ],
+    "vi": [
+      "Chịu nhiệt đến 220 °C (ứng dụng RT–220 °C)",
+      "Kháng hóa chất",
+      "Độ bám rất cao trên kim loại (> 2000 gf/25 mm)",
+      "Ít mất độ bám ở nhiệt độ cao",
+      "In truyền nhiệt (ribbon YS-1204)"
+    ],
+    "th": [
+      "ทนความร้อนถึง 220 °C (ใช้งาน RT–220 °C)",
+      "ทนสารเคมี",
+      "ยึดเกาะโลหะสูงมาก (> 2000 gf/25 mm)",
+      "สูญเสียการยึดเกาะน้อยที่อุณหภูมิสูง",
+      "พิมพ์ถ่ายเทความร้อนได้ (ริบบอน YS-1204)"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Property",
+        "Value"
+      ],
+      "zh": [
+        "属性",
+        "参数"
+      ],
+      "vi": [
+        "Thuộc tính",
+        "Giá trị"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "ค่า"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Heat resistance",
+            "zh": "耐热",
+            "vi": "Chịu nhiệt",
+            "th": "ทนความร้อน"
+          },
+          {
+            "en": "Up to 220 °C",
+            "zh": "达 220 °C",
+            "vi": "Đến 220 °C",
+            "th": "ถึง 220 °C"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Application temperature",
+            "zh": "应用温度",
+            "vi": "Nhiệt độ ứng dụng",
+            "th": "อุณหภูมิใช้งาน"
+          },
+          {
+            "en": "RT – 220 °C",
+            "zh": "常温 – 220 °C",
+            "vi": "RT – 220 °C",
+            "th": "RT – 220 °C"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Label core",
+            "zh": "标签基材",
+            "vi": "Lõi nhãn",
+            "th": "แกนฉลาก"
+          },
+          {
+            "en": "Aluminum foil (40 µm)",
+            "zh": "铝箔（40 µm）",
+            "vi": "Lá nhôm (40 µm)",
+            "th": "ฟอยล์อะลูมิเนียม (40 µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesion",
+            "zh": "粘着力",
+            "vi": "Độ bám",
+            "th": "การยึดเกาะ"
+          },
+          {
+            "en": "> 2000 gf/25 mm (Al, 180° peel)",
+            "zh": "> 2000 gf/25 mm（铝，180° 剥离）",
+            "vi": "> 2000 gf/25 mm (Al, bóc 180°)",
+            "th": "> 2000 gf/25 mm (Al, ลอก 180°)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Printing",
+            "zh": "打印",
+            "vi": "In ấn",
+            "th": "การพิมพ์"
+          },
+          {
+            "en": "Thermal transfer — YS-1204 ribbon",
+            "zh": "热转印 —— YS-1204 碳带",
+            "vi": "In truyền nhiệt — ribbon YS-1204",
+            "th": "พิมพ์ถ่ายเทความร้อน — ริบบอน YS-1204"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Construction (top → bottom)",
+            "zh": "结构（自上而下）",
+            "vi": "Cấu tạo (trên → dưới)",
+            "th": "โครงสร้าง (บน → ล่าง)"
+          },
+          {
+            "en": "Acrylic 7 µm · epoxy base 7 µm · aluminum foil 40 µm · acrylic adhesive 60 µm · silicone-coated paper separator 80 µm.",
+            "zh": "丙烯酸 7 µm · 环氧底层 7 µm · 铝箔 40 µm · 丙烯酸胶 60 µm · 硅涂离型纸 80 µm。",
+            "vi": "Acrylic 7 µm · nền epoxy 7 µm · lá nhôm 40 µm · keo acrylic 60 µm · giấy tách phủ silicone 80 µm.",
+            "th": "อะคริลิก 7 µm · ฐานอีพ็อกซี 7 µm · ฟอยล์อะลูมิเนียม 40 µm · กาวอะคริลิก 60 µm · ไลเนอร์กระดาษเคลือบซิลิโคน 80 µm"
+          }
+        ]
+      }
+    ],
+    "notes": {
+      "en": [
+        "Values are typical, not specifications; verify against the datasheet and by application testing."
+      ],
+      "zh": [
+        "数值为典型值，非规格值；请以数据表并经应用测试确认。"
+      ],
+      "vi": [
+        "Giá trị là điển hình, không phải thông số kỹ thuật; hãy xác minh theo datasheet và thử nghiệm ứng dụng."
+      ],
+      "th": [
+        "ค่าเป็นค่าทั่วไป ไม่ใช่สเปก โปรดตรวจสอบกับเอกสารข้อมูลและการทดสอบการใช้งาน"
+      ]
+    }
+  },
+  "applications": {
+    "en": [
+      "Metal product management with heat exposure up to 220 °C",
+      "Steel, aluminum and non-ferrous metal industries",
+      "Metal-processing and thermal-treatment lines"
+    ],
+    "zh": [
+      "热暴露达 220 °C 的金属产品管理",
+      "钢铁、铝与有色金属行业",
+      "金属加工与热处理产线"
+    ],
+    "vi": [
+      "Quản lý sản phẩm kim loại phơi nhiệt đến 220 °C",
+      "Ngành thép, nhôm và kim loại màu",
+      "Dây chuyền gia công kim loại và xử lý nhiệt"
+    ],
+    "th": [
+      "การจัดการผลิตภัณฑ์โลหะที่สัมผัสความร้อนถึง 220 °C",
+      "อุตสาหกรรมเหล็ก อะลูมิเนียม และโลหะนอกกลุ่มเหล็ก",
+      "สายการแปรรูปโลหะและการอบชุบ"
+    ]
+  },
+  "certifications": {
+    "en": [],
+    "zh": [],
+    "vi": [],
+    "th": []
+  }
+}

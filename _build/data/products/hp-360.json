@@ -1,0 +1,202 @@
+{
+  "slug": "hp-360",
+  "source": "ETIA-TECH HP-360 Technical Data Sheet",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner": "",
+  "brand": "etia",
+  "industry": "steel",
+  "product_img": "",
+  "title": {
+    "en": "HP-360 — 600 °C Aluminum-Foil Heat-Treatment Label",
+    "zh": "HP-360 —— 600 °C 铝箔热处理标签",
+    "vi": "HP-360 — Nhãn lá nhôm 600 °C cho xử lý nhiệt",
+    "th": "HP-360 — ฉลากฟอยล์อะลูมิเนียม 600 °C สำหรับการอบชุบ"
+  },
+  "tagline": {
+    "en": "Aluminum-foil label for metal heat-treatment to 600 °C — smudge-proof at 50–200 °C with high adhesion on metal at high temperature.",
+    "zh": "铝箔金属热处理标签，耐热达 600 °C —— 50–200 °C 不糊字，高温下对金属高粘着。",
+    "vi": "Nhãn lá nhôm cho xử lý nhiệt kim loại đến 600 °C — không nhòe ở 50–200 °C, bám cao trên kim loại ở nhiệt cao.",
+    "th": "ฉลากฟอยล์อะลูมิเนียมสำหรับอบชุบโลหะถึง 600 °C — ไม่เลอะที่ 50–200 °C ยึดเกาะโลหะสูงที่อุณหภูมิสูง"
+  },
+  "positioning": {
+    "en": "HP-360 is an aluminum-foil high-temperature label with an inorganic white topcoat and a silicone/inorganic-powder adhesive. Its print stays smudge-proof across 50–200 °C, it resists heat up to 600 °C and keeps high adhesion on metal at high temperature — for heat-treated metal traceability.",
+    "zh": "HP-360 是一款铝箔高温标签，配无机白色面涂层与硅酮/无机粉末胶粘剂。打印在 50–200 °C 不糊字，耐热达 600 °C，高温下对金属保持高粘着 —— 用于热处理金属的追溯。",
+    "vi": "HP-360 là nhãn nhiệt độ cao bằng lá nhôm với lớp phủ trắng vô cơ và keo silicone/bột vô cơ. Bản in không nhòe ở 50–200 °C, chịu nhiệt đến 600 °C và giữ độ bám cao trên kim loại ở nhiệt cao.",
+    "th": "HP-360 เป็นฉลากทนอุณหภูมิสูงจากฟอยล์อะลูมิเนียม พร้อมท็อปโค้ตสีขาวอนินทรีย์และกาวซิลิโคน/ผงอนินทรีย์ งานพิมพ์ไม่เลอะที่ 50–200 °C ทนความร้อนถึง 600 °C และยึดเกาะโลหะสูงที่อุณหภูมิสูง"
+  },
+  "features": {
+    "en": [
+      "Print stays smudge-proof across 50–200 °C",
+      "Heat-resistant up to 600 °C",
+      "High adhesion on metal at high temperature",
+      "Minimal loss of adhesion at high temperature"
+    ],
+    "zh": [
+      "打印在 50–200 °C 不糊字",
+      "耐热达 600 °C",
+      "高温下对金属高粘着",
+      "高温下粘着损失极小"
+    ],
+    "vi": [
+      "Bản in không nhòe ở 50–200 °C",
+      "Chịu nhiệt đến 600 °C",
+      "Bám cao trên kim loại ở nhiệt cao",
+      "Ít mất độ bám ở nhiệt độ cao"
+    ],
+    "th": [
+      "งานพิมพ์ไม่เลอะที่ 50–200 °C",
+      "ทนความร้อนถึง 600 °C",
+      "ยึดเกาะโลหะสูงที่อุณหภูมิสูง",
+      "สูญเสียการยึดเกาะน้อยที่อุณหภูมิสูง"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Property",
+        "Value"
+      ],
+      "zh": [
+        "属性",
+        "参数"
+      ],
+      "vi": [
+        "Thuộc tính",
+        "Giá trị"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "ค่า"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Heat resistance",
+            "zh": "耐热",
+            "vi": "Chịu nhiệt",
+            "th": "ทนความร้อน"
+          },
+          {
+            "en": "Up to 600 °C",
+            "zh": "达 600 °C",
+            "vi": "Đến 600 °C",
+            "th": "ถึง 600 °C"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Label core",
+            "zh": "标签基材",
+            "vi": "Lõi nhãn",
+            "th": "แกนฉลาก"
+          },
+          {
+            "en": "Aluminum foil (40 µm)",
+            "zh": "铝箔（40 µm）",
+            "vi": "Lá nhôm (40 µm)",
+            "th": "ฟอยล์อะลูมิเนียม (40 µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesion",
+            "zh": "粘着力",
+            "vi": "Độ bám",
+            "th": "การยึดเกาะ"
+          },
+          {
+            "en": "> 1200 gf/25 mm (Al, 180° peel)",
+            "zh": "> 1200 gf/25 mm（铝，180° 剥离）",
+            "vi": "> 1200 gf/25 mm (Al, bóc 180°)",
+            "th": "> 1200 gf/25 mm (Al, ลอก 180°)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Printing",
+            "zh": "打印",
+            "vi": "In ấn",
+            "th": "การพิมพ์"
+          },
+          {
+            "en": "Thermal transfer",
+            "zh": "热转印",
+            "vi": "In truyền nhiệt",
+            "th": "พิมพ์ถ่ายเทความร้อน"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Construction (top → bottom)",
+            "zh": "结构（自上而下）",
+            "vi": "Cấu tạo (trên → dưới)",
+            "th": "โครงสร้าง (บน → ล่าง)"
+          },
+          {
+            "en": "Inorganic white coating 16 µm · aluminum foil 40 µm · silicone + inorganic-powder adhesive 12 µm · PET separator 38 µm.",
+            "zh": "无机白色涂层 16 µm · 铝箔 40 µm · 硅酮+无机粉末胶 12 µm · PET 离型膜 38 µm。",
+            "vi": "Phủ trắng vô cơ 16 µm · lá nhôm 40 µm · keo silicone + bột vô cơ 12 µm · màng tách PET 38 µm.",
+            "th": "เคลือบขาวอนินทรีย์ 16 µm · ฟอยล์อะลูมิเนียม 40 µm · กาวซิลิโคน+ผงอนินทรีย์ 12 µm · ไลเนอร์ PET 38 µm"
+          }
+        ]
+      }
+    ],
+    "notes": {
+      "en": [
+        "Values are typical, not specifications; verify against the datasheet and by application testing."
+      ],
+      "zh": [
+        "数值为典型值，非规格值；请以数据表并经应用测试确认。"
+      ],
+      "vi": [
+        "Giá trị là điển hình, không phải thông số kỹ thuật; hãy xác minh theo datasheet và thử nghiệm ứng dụng."
+      ],
+      "th": [
+        "ค่าเป็นค่าทั่วไป ไม่ใช่สเปก โปรดตรวจสอบกับเอกสารข้อมูลและการทดสอบการใช้งาน"
+      ]
+    }
+  },
+  "applications": {
+    "en": [
+      "Metal product management under heat treatment up to 600 °C",
+      "Steel, aluminum and non-ferrous metal industries",
+      "Metal-processing and thermal-treatment lines"
+    ],
+    "zh": [
+      "热处理下金属产品管理（达 600 °C）",
+      "钢铁、铝与有色金属行业",
+      "金属加工与热处理产线"
+    ],
+    "vi": [
+      "Quản lý sản phẩm kim loại khi xử lý nhiệt đến 600 °C",
+      "Ngành thép, nhôm và kim loại màu",
+      "Dây chuyền gia công kim loại và xử lý nhiệt"
+    ],
+    "th": [
+      "การจัดการผลิตภัณฑ์โลหะภายใต้การอบชุบถึง 600 °C",
+      "อุตสาหกรรมเหล็ก อะลูมิเนียม และโลหะนอกกลุ่มเหล็ก",
+      "สายการแปรรูปโลหะและการอบชุบ"
+    ]
+  },
+  "certifications": {
+    "en": [],
+    "zh": [],
+    "vi": [],
+    "th": []
+  }
+}
