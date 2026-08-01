@@ -215,7 +215,7 @@ def build_lang(records, lang):
     temp_opts = collect(lambda r: r["temps"], None)
 
     def chk(group, value, label):
-        return ('<label class="fchk"><input type="checkbox" data-g="%s" data-v="%s" onchange="cf()"> %s</label>'
+        return ('<label class="fchk"><input type="checkbox" data-g="%s" data-v="%s" onchange="cpick(this)"> %s</label>'
                 % (group, esc(value), esc(label)))
 
     fpanels = ""
@@ -298,7 +298,7 @@ def build_lang(records, lang):
 </style>"""
 
     body = CSS + (
-        '<div class="cwrap"><div class="chead"><h1>%s</h1><p>%s</p></div>'
+        '<div class="cwrap">'
         '<div class="csearch"><input id="cq" type="search" placeholder="%s" oninput="cf()" autocomplete="off"></div>'
         '<button class="fmob" onclick="this.nextElementSibling.classList.toggle(\'open\')">%s</button>'
         '<div class="clayout"><aside class="cfilters"><div class="fbody">'
@@ -306,10 +306,17 @@ def build_lang(records, lang):
         '<div class="cresults"><p class="ccount"><span id="ccount">0</span> %s</p>'
         '<div class="pgrid" id="pgrid">%s</div><p class="cnone" id="cnone" style="display:none">%s</p>'
         '</div></div></div>') % (
-        esc(ui["title"]), esc(ui["lede"]), esc(ui["search"]), esc(ui["filters"]),
+        esc(ui["search"]), esc(ui["filters"]),
         esc(ui["filters"]), esc(ui["reset"]), fpanels, esc(ui["results"]), cards, esc(ui["none"]))
 
     body += """<script>
+function cpick(el){
+  /* one choice per facet group: selecting a new option clears the others in that group */
+  if(el.checked){
+    document.querySelectorAll('.cfilters input[data-g="'+el.dataset.g+'"]').forEach(function(o){if(o!==el)o.checked=false;});
+  }
+  cf();
+}
 function cf(){
   var qEl=document.getElementById('cq');
   var q=((qEl&&qEl.value)||'').toLowerCase().trim();
@@ -340,7 +347,7 @@ else document.addEventListener('DOMContentLoaded',cf);
 </script>"""
 
     crumb = [(ui["home"], "/"), (ui["products"], "/products/"), (ui["title"], PATH)]
-    content = hp.page(lang, PATH, ui["title"] + " | ETIA", ui["lede"], ui["title"], "", body, crumb,
+    content = hp.page(lang, PATH, ui["title"] + " | ETIA", ui["lede"], ui["title"], ui["lede"], body, crumb,
                       active="products", trust=False, langs=hp.NAV_PILLAR_LANGS)
     hp.write(lang, PATH, content)
     if lang == "en":
