@@ -269,6 +269,30 @@
           "img": "",
           "landing": true,
           "slug": "e-4533"
+        },
+        {
+          "name": "E-4833 Blood-Bag & Low-Temp Label",
+          "line": {
+            "en": "3 mil flexible white PP · tubes & bending bags · −80 to 120 °C",
+            "zh": "3 mil 柔性白色 PP · 管路与弯折血袋 · −80 至 120 °C",
+            "vi": "PP trắng dẻo 3 mil · ống & túi uốn cong · −80 đến 120 °C",
+            "th": "PP สีขาวยืดหยุ่น 3 mil · ท่อและถุงโค้งงอ · −80 ถึง 120 °C"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-4833"
+        },
+        {
+          "name": "E-4834 PVC Blood-Bag Label",
+          "line": {
+            "en": "3 mil white PP · high adhesion to DEHP/TOTM/DINCH PVC · sterilization-stable",
+            "zh": "3 mil 白色 PP · 对 DEHP/TOTM/DINCH PVC 高粘 · 耐灭菌",
+            "vi": "PP trắng 3 mil · bám cao PVC DEHP/TOTM/DINCH · ổn định sau tiệt trùng",
+            "th": "PP สีขาว 3 mil · ยึด PVC DEHP/TOTM/DINCH สูง · เสถียรหลังฆ่าเชื้อ"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-4834"
         }
       ]
     },
@@ -429,8 +453,10 @@
       "products": [
         {
           "name": {
-            "en": "E-4834 Microplate Label",
-            "zh": "E-4834 微孔板标签"
+            "en": "Microplate Label",
+            "zh": "微孔板标签",
+            "vi": "Nhãn vi bản (microplate)",
+            "th": "ฉลากไมโครเพลต"
           },
           "line": {
             "en": "2.0 mil PP. High-performance microplate label for 96/384-well plates and −80°C storage.",

@@ -157,7 +157,8 @@
             "th": "PI"
           },
           "1 mil"
-        ]
+        ],
+        "link": "/products/item/e-8511/"
       },
       {
         "cells": [
@@ -193,7 +194,8 @@
             "th": "PI"
           },
           "2 mil"
-        ]
+        ],
+        "link": "/products/item/e-8512/"
       },
       {
         "cells": [
@@ -283,7 +285,8 @@
             "th": "PI"
           },
           "2 mil"
-        ]
+        ],
+        "link": "/products/item/e-8532tt/"
       },
       {
         "cells": [
@@ -301,7 +304,8 @@
             "th": "PI"
           },
           "2 mil"
-        ]
+        ],
+        "link": "/products/item/e-8532w/"
       },
       {
         "cells": [
@@ -320,6 +324,44 @@
           },
           "2 mil"
         ]
+      },
+      {
+        "cells": [
+          "E-8512G",
+          {
+            "en": "Gloss green colour-coded label",
+            "zh": "亮面绿色分色标签",
+            "vi": "Nhãn màu xanh lá bóng",
+            "th": "ฉลากสีเขียวผิวเงา"
+          },
+          {
+            "en": "PI",
+            "zh": "PI",
+            "vi": "PI",
+            "th": "PI"
+          },
+          "2 mil"
+        ],
+        "link": "/products/item/e-8512g/"
+      },
+      {
+        "cells": [
+          "E-8531G",
+          {
+            "en": "Matte green colour-coded label",
+            "zh": "哑面绿色分色标签",
+            "vi": "Nhãn màu xanh lá mờ",
+            "th": "ฉลากสีเขียวผิวด้าน"
+          },
+          {
+            "en": "PI",
+            "zh": "PI",
+            "vi": "PI",
+            "th": "PI"
+          },
+          "2 mil"
+        ],
+        "link": "/products/item/e-8531g/"
       },
       {
         "group": {
@@ -345,7 +387,8 @@
             "th": "PI"
           },
           "1 mil"
-        ]
+        ],
+        "link": "/products/item/e-8811/"
       },
       {
         "cells": [
@@ -363,7 +406,8 @@
             "th": "PI"
           },
           "2 mil"
-        ]
+        ],
+        "link": "/products/item/e-8812/"
       },
       {
         "cells": [
@@ -381,7 +425,8 @@
             "th": "PI"
           },
           "2 mil"
-        ]
+        ],
+        "link": "/products/item/e-8832/"
       },
       {
         "group": {
@@ -407,7 +452,8 @@
             "th": "PI"
           },
           "1 mil"
-        ]
+        ],
+        "link": "/products/item/e-8611/"
       },
       {
         "cells": [
@@ -425,7 +471,8 @@
             "th": "PI"
           },
           "1 mil"
-        ]
+        ],
+        "link": "/products/item/e-8631/"
       },
       {
         "cells": [
@@ -444,6 +491,25 @@
           },
           "2 mil"
         ]
+      },
+      {
+        "cells": [
+          "E-8632",
+          {
+            "en": "Matte removable, no-residue label",
+            "zh": "哑面可移除无残胶标签",
+            "vi": "Nhãn mờ tháo được, không keo thừa",
+            "th": "ฉลากผิวด้านถอดได้ ไม่มีคราบกาว"
+          },
+          {
+            "en": "PI",
+            "zh": "PI",
+            "vi": "PI",
+            "th": "PI"
+          },
+          "2 mil"
+        ],
+        "link": "/products/item/e-8632/"
       },
       {
         "group": {
@@ -470,7 +536,8 @@
           },
           "1 mil"
         ],
-        "esd": true
+        "esd": true,
+        "link": "/products/item/e-8711/"
       },
       {
         "cells": [
@@ -489,7 +556,8 @@
           },
           "1 mil"
         ],
-        "esd": true
+        "esd": true,
+        "link": "/products/item/e-8731/"
       },
       {
         "cells": [
@@ -527,7 +595,65 @@
           },
           "2 mil"
         ],
-        "esd": true
+        "esd": true,
+        "link": "/products/item/e-8732w/"
+      },
+      {
+        "cells": [
+          "E-8712",
+          {
+            "en": "White anti-static ESD label",
+            "zh": "白色防静电 ESD 标签",
+            "vi": "Nhãn ESD chống tĩnh trắng",
+            "th": "ฉลาก ESD ป้องกันไฟฟ้าสถิตสีขาว"
+          },
+          {
+            "en": "PI",
+            "zh": "PI",
+            "vi": "PI",
+            "th": "PI"
+          },
+          "2 mil"
+        ],
+        "link": "/products/item/e-8712/"
+      },
+      {
+        "cells": [
+          "E-8711S",
+          {
+            "en": "White anti-static removable ESD label",
+            "zh": "白色防静电可移除 ESD 标签",
+            "vi": "Nhãn ESD chống tĩnh tháo được, trắng",
+            "th": "ฉลาก ESD ป้องกันไฟฟ้าสถิตถอดได้ สีขาว"
+          },
+          {
+            "en": "PI",
+            "zh": "PI",
+            "vi": "PI",
+            "th": "PI"
+          },
+          "1 mil"
+        ],
+        "link": "/products/item/e-8711s/"
+      },
+      {
+        "cells": [
+          "E-8731B",
+          {
+            "en": "Black anti-static ESD label",
+            "zh": "黑色防静电 ESD 标签",
+            "vi": "Nhãn ESD chống tĩnh đen",
+            "th": "ฉลาก ESD ป้องกันไฟฟ้าสถิตสีดำ"
+          },
+          {
+            "en": "PI",
+            "zh": "PI",
+            "vi": "PI",
+            "th": "PI"
+          },
+          "1 mil"
+        ],
+        "link": "/products/item/e-8731b/"
       }
     ],
     "notes": {

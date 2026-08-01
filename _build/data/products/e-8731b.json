@@ -1,0 +1,132 @@
+{
+  "slug": "e-8731b",
+  "source": "ETIA-TECH E-8731B Technical Data Sheet",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "brand": "etia",
+  "industry": "pcb",
+  "product_img": "",
+  "title": {
+    "en": "E-8731B — 1 mil Black Antistatic Polyimide PCB Label (−40 to 300 °C)",
+    "zh": "E-8731B —— 1 mil 黑色防静电聚酰亚胺 PCB 标签（−40 至 300 °C）",
+    "vi": "E-8731B — Nhãn PCB polyimide chống tĩnh điện đen 1 mil (−40 đến 300 °C)",
+    "th": "E-8731B — ฉลาก PCB โพลีอิไมด์ป้องกันไฟฟ้าสถิตสีดำ 1 mil (−40 ถึง 300 °C)"
+  },
+  "tagline": {
+    "en": "1 mil matte black antistatic polyimide thermal-transfer label — low-charging and static-dissipative for ESD-controlled electronics, rated −40 to 300 °C through reflow and wave soldering.",
+    "zh": "1 mil 哑黑防静电聚酰亚胺热转印标签 —— 低起电、静电耗散，适用于 ESD 管控电子，耐温 −40 至 300 °C，可过回流焊与波峰焊。",
+    "vi": "Nhãn in nhiệt polyimide chống tĩnh điện đen mờ 1 mil — ít tích điện và tiêu tán tĩnh cho điện tử kiểm soát ESD, chịu −40 đến 300 °C qua reflow và hàn sóng.",
+    "th": "ฉลากพิมพ์ถ่ายเทความร้อนโพลีอิไมด์ป้องกันไฟฟ้าสถิตสีดำด้าน 1 mil — ประจุต่ำและกระจายประจุ สำหรับอิเล็กทรอนิกส์ที่ควบคุม ESD ทน −40 ถึง 300 °C ผ่านรีโฟลว์และการบัดกรีคลื่น"
+  },
+  "positioning": {
+    "en": "E-8731B is a 1 mil matte black antistatic polyimide thermal-transfer label stock for functional labelling of highly specified electronic goods. The material is engineered to minimize the charge generated when the label is removed from the liner and to prevent a significant charge from building on the label surface after it is applied to a component or board — making it suitable for ESD-controlled assembly areas. Its polyimide facestock is dimensionally stable at high temperature, chemically resistant, and prints resist smearing even when the board and label are removed directly from a reflow or wave-solder environment.",
+    "zh": "E-8731B 是一款 1 mil 哑黑色防静电聚酰亚胺热转印标签材料，用于高规格电子产品的功能性标识。材料经专门设计，可将标签从底纸剥离时产生的电荷降至最低，并防止标签贴到元件或电路板后表面积聚显著电荷 —— 适用于 ESD 管控装配区。聚酰亚胺面材高温尺寸稳定、耐化学腐蚀，即使电路板与标签直接从回流焊或波峰焊环境中取出，打印也不易涂污。",
+    "vi": "E-8731B là vật liệu nhãn in nhiệt polyimide chống tĩnh điện đen mờ 1 mil, dùng cho nhãn chức năng trên hàng điện tử yêu cầu cao. Vật liệu được thiết kế để giảm thiểu điện tích sinh ra khi bóc nhãn khỏi lớp lót và ngăn tích điện đáng kể trên bề mặt nhãn sau khi dán lên linh kiện hoặc bo mạch — phù hợp khu vực lắp ráp kiểm soát ESD. Mặt polyimide ổn định kích thước ở nhiệt độ cao, kháng hóa chất, và bản in không nhòe ngay cả khi bo mạch và nhãn được lấy trực tiếp từ môi trường reflow hoặc hàn sóng.",
+    "th": "E-8731B เป็นวัสดุฉลากพิมพ์ถ่ายเทความร้อนโพลีอิไมด์ป้องกันไฟฟ้าสถิตสีดำด้าน 1 mil สำหรับฉลากใช้งานบนสินค้าอิเล็กทรอนิกส์ระดับสูง วัสดุออกแบบมาเพื่อลดประจุที่เกิดขณะลอกฉลากออกจากไลเนอร์ และป้องกันการสะสมประจุที่มีนัยสำคัญบนผิวฉลากหลังติดลงบนชิ้นส่วนหรือบอร์ด — เหมาะกับพื้นที่ประกอบที่ควบคุม ESD หน้าโพลีอิไมด์เสถียรมิติที่อุณหภูมิสูง ทนสารเคมี และงานพิมพ์ไม่เลอะแม้นำบอร์ดและฉลากออกจากสภาพแวดล้อมรีโฟลว์หรือบัดกรีคลื่นโดยตรง"
+  },
+  "features": {
+    "en": [
+      "Static-dissipative surface — minimizes charge on peel and after application",
+      "Low charging (< 100 V), PSA/liner",
+      "Surface resistance 10⁷–10¹¹ ohms/sq (EOS/ESD STM 11.11)",
+      "Durable thermal-transfer printable top surface",
+      "Dimensionally stable at high temperatures; chemically resistant",
+      "Heat, cold and solvent resistant; print resists smearing out of reflow/wave solder",
+      "RoHS compliant (2002/95/EC)"
+    ],
+    "zh": [
+      "静电耗散表面 —— 剥离时与贴标后均降低电荷",
+      "低起电（< 100 V），胶层/底纸",
+      "表面电阻 10⁷–10¹¹ ohms/sq（EOS/ESD STM 11.11）",
+      "耐用的热转印可打印面层",
+      "高温尺寸稳定；耐化学腐蚀",
+      "耐热、耐冷、耐溶剂；出回流焊/波峰焊后打印不涂污",
+      "符合 RoHS（2002/95/EC）"
+    ],
+    "vi": [
+      "Bề mặt tiêu tán tĩnh — giảm điện tích khi bóc và sau khi dán",
+      "Ít tích điện (< 100 V), keo/lớp lót",
+      "Điện trở bề mặt 10⁷–10¹¹ ohm/sq (EOS/ESD STM 11.11)",
+      "Mặt in nhiệt bền",
+      "Ổn định kích thước ở nhiệt độ cao; kháng hóa chất",
+      "Kháng nhiệt, lạnh và dung môi; bản in không nhòe khi ra khỏi reflow/hàn sóng",
+      "Tuân thủ RoHS (2002/95/EC)"
+    ],
+    "th": [
+      "ผิวกระจายประจุ — ลดประจุขณะลอกและหลังติด",
+      "ประจุต่ำ (< 100 V) กาว/ไลเนอร์",
+      "ความต้านทานผิว 10⁷–10¹¹ โอห์ม/ตร. (EOS/ESD STM 11.11)",
+      "ผิวพิมพ์ถ่ายเทความร้อนที่ทนทาน",
+      "เสถียรมิติที่อุณหภูมิสูง; ทนสารเคมี",
+      "ทนร้อน เย็น และตัวทำละลาย; งานพิมพ์ไม่เลอะเมื่อออกจากรีโฟลว์/บัดกรีคลื่น",
+      "สอดคล้อง RoHS (2002/95/EC)"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": ["Property", "Value"],
+      "zh": ["属性", "参数"],
+      "vi": ["Thuộc tính", "Giá trị"],
+      "th": ["คุณสมบัติ", "ค่า"]
+    },
+    "rows": [
+      {"cells": [{"en": "Facestock", "zh": "面材", "vi": "Vật liệu mặt", "th": "วัสดุหน้า"}, {"en": "1 mil (0.035 mm) matte black antistatic polyimide", "zh": "1 mil（0.035 mm）哑黑色防静电聚酰亚胺", "vi": "Polyimide chống tĩnh điện đen mờ 1 mil (0,035 mm)", "th": "โพลีอิไมด์ป้องกันไฟฟ้าสถิตสีดำด้าน 1 mil (0.035 มม.)"}]},
+      {"cells": [{"en": "Adhesive", "zh": "胶粘剂", "vi": "Keo", "th": "กาว"}, {"en": "Antistatic acrylic PSA (0.025 mm)", "zh": "防静电丙烯酸压敏胶（0.025 mm）", "vi": "Keo acrylic PSA chống tĩnh điện (0,025 mm)", "th": "กาว PSA อะคริลิกป้องกันไฟฟ้าสถิต (0.025 มม.)"}]},
+      {"cells": [{"en": "Liner", "zh": "底纸", "vi": "Lớp lót", "th": "ไลเนอร์"}, "0.080 mm"]},
+      {"cells": [{"en": "Surface resistance", "zh": "表面电阻", "vi": "Điện trở bề mặt", "th": "ความต้านทานผิว"}, "10⁷–10¹¹ ohms/sq (EOS/ESD STM 11.11)"]},
+      {"cells": [{"en": "Low charging (PSA/liner)", "zh": "低起电（胶层/底纸）", "vi": "Ít tích điện (keo/lớp lót)", "th": "ประจุต่ำ (กาว/ไลเนอร์)"}, "< 100 V"]},
+      {"cells": [{"en": "Temperature rating", "zh": "耐温范围", "vi": "Dải nhiệt độ", "th": "ช่วงอุณหภูมิ"}, "−40 to 300 °C"]},
+      {"cells": [{"en": "Peel adhesion", "zh": "剥离力", "vi": "Lực bóc", "th": "แรงลอก"}, "8 N/25 mm (GB/T 2792)"]},
+      {"cells": [{"en": "Initial adhesion", "zh": "初粘力", "vi": "Độ dính ban đầu", "th": "แรงยึดเริ่มต้น"}, "15 N/25 mm (GB/T 31125)"]},
+      {"cells": [{"en": "Retention force", "zh": "保持力", "vi": "Lực giữ", "th": "แรงยึด"}, "≥ 30 h/25 mm (GB/T 4851)"]},
+      {"cells": [{"en": "Shelf life", "zh": "保存有效期", "vi": "Hạn dùng", "th": "อายุการเก็บ"}, {"en": "1 year below 22 °C / 60% RH", "zh": "22 °C / 60% RH 以下 1 年", "vi": "1 năm dưới 22 °C / 60% RH", "th": "1 ปี ต่ำกว่า 22 °C / 60% RH"}]},
+      {"cells": [{"en": "Compliance", "zh": "合规", "vi": "Tuân thủ", "th": "การรับรอง"}, "RoHS (2002/95/EC)"]}
+    ],
+    "notes": {
+      "en": ["Apply to a clean, dry, contamination-free surface (isopropyl alcohol recommended) and use firm pressure. Preheating the labelled product can enhance print permanence under extreme solvent/abrasion exposure. Values are typical, not specifications — verify by application testing."],
+      "zh": ["贴标表面应清洁、干燥、无污染（建议异丙醇清洁），并施加足够压力。对贴标产品进行预热可在极端溶剂/磨损环境下提升打印耐久性。数值为典型值，非规格值 —— 请经应用测试确认。"],
+      "vi": ["Dán lên bề mặt sạch, khô, không nhiễm bẩn (khuyến nghị cồn isopropyl) và ấn mạnh. Làm nóng trước sản phẩm dán nhãn có thể tăng độ bền bản in khi tiếp xúc dung môi/mài mòn khắc nghiệt. Giá trị là điển hình, không phải thông số — hãy xác minh bằng thử nghiệm ứng dụng."],
+      "th": ["ติดบนพื้นผิวสะอาด แห้ง ปราศจากสิ่งปนเปื้อน (แนะนำไอโซโพรพิลแอลกอฮอล์) และกดแน่น การอุ่นผลิตภัณฑ์ที่ติดฉลากช่วยเพิ่มความคงทนของงานพิมพ์เมื่อเจอตัวทำละลาย/การขัดถูรุนแรง ค่าเป็นค่าทั่วไป ไม่ใช่สเปก — โปรดตรวจสอบด้วยการทดสอบการใช้งาน"]
+    }
+  },
+  "applications": {
+    "en": [
+      "PCB identification in ESD-protected areas",
+      "Electronic component tracking",
+      "Asset tracking",
+      "Warranty labelling",
+      "High-resolution printing",
+      "Reflow or wave-soldering environments"
+    ],
+    "zh": [
+      "ESD 防护区内的 PCB 标识",
+      "电子元件追溯",
+      "资产追踪",
+      "保修标签",
+      "高分辨率打印",
+      "回流焊或波峰焊环境"
+    ],
+    "vi": [
+      "Nhận diện PCB trong khu vực bảo vệ ESD",
+      "Theo dõi linh kiện điện tử",
+      "Theo dõi tài sản",
+      "Nhãn bảo hành",
+      "In độ phân giải cao",
+      "Môi trường reflow hoặc hàn sóng"
+    ],
+    "th": [
+      "การระบุ PCB ในพื้นที่ป้องกัน ESD",
+      "การติดตามชิ้นส่วนอิเล็กทรอนิกส์",
+      "การติดตามทรัพย์สิน",
+      "ฉลากรับประกัน",
+      "การพิมพ์ความละเอียดสูง",
+      "สภาพแวดล้อมรีโฟลว์หรือบัดกรีคลื่น"
+    ]
+  },
+  "certifications": {
+    "en": ["RoHS compliant (2002/95/EC)", "Static-dissipative — surface resistance 10⁷–10¹¹ ohms/sq (EOS/ESD STM 11.11)"],
+    "zh": ["符合 RoHS（2002/95/EC）", "静电耗散 —— 表面电阻 10⁷–10¹¹ ohms/sq（EOS/ESD STM 11.11）"],
+    "vi": ["Tuân thủ RoHS (2002/95/EC)", "Tiêu tán tĩnh — điện trở bề mặt 10⁷–10¹¹ ohm/sq (EOS/ESD STM 11.11)"],
+    "th": ["สอดคล้อง RoHS (2002/95/EC)", "กระจายประจุ — ความต้านทานผิว 10⁷–10¹¹ โอห์ม/ตร. (EOS/ESD STM 11.11)"]
+  }
+}

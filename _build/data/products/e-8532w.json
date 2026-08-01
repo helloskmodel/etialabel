@@ -1,0 +1,260 @@
+{
+  "slug": "e-8532w",
+  "source": "ETIA-TECH E-8532W Technical Data Sheet",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner": "",
+  "brand": "etia",
+  "industry": "pcb",
+  "product_img": "",
+  "title": {
+    "en": "E-8532W — 2 mil Matte White Polyimide PCB Label (−40 to 300 °C)",
+    "zh": "E-8532W —— 2 mil 哑面白色聚酰亚胺 PCB 标签（−40 至 300 °C）",
+    "vi": "E-8532W — Nhãn PCB polyimide trắng mờ 2 mil (−40 đến 300 °C)",
+    "th": "E-8532W — ฉลาก PCB โพลีอิไมด์สีขาวด้าน 2 mil (−40 ถึง 300 °C)"
+  },
+  "tagline": {
+    "en": "2 mil (0.070 mm) matte white polyimide thermal-transfer label — high-resolution topside PCB marking and traceability, rated −40 to 300 °C through reflow and wave soldering.",
+    "zh": "2 mil（0.070 mm）哑面白色聚酰亚胺 热转印标签 —— 高分辨率 PCB 顶面标识与追溯，耐温 −40 至 300 °C，可过回流焊与波峰焊。",
+    "vi": "Nhãn in nhiệt polyimide trắng mờ 2 mil (0,070 mm) — in mặt trên PCB độ phân giải cao và truy xuất, chịu −40 đến 300 °C qua reflow và hàn sóng.",
+    "th": "ฉลากพิมพ์ถ่ายเทความร้อน โพลีอิไมด์สีขาวด้าน 2 mil (0.070 มม.) — พิมพ์ด้านบน PCB ความละเอียดสูงและตรวจสอบย้อนกลับ ทน −40 ถึง 300 °C ผ่านรีโฟลว์และการบัดกรีคลื่น"
+  },
+  "positioning": {
+    "en": "E-8532W is a 2 mil (0.070 mm) matte white polyimide thermal-transfer label stock for functional labelling of highly specified electronic goods. With appropriate thermal-transfer ribbons it delivers high-quality, high-resolution print for topside printed-circuit-board manufacture and traceability. The polyimide construction is dimensionally stable at high temperature and chemically resistant, and prints resist smearing when the board and label are removed directly from a reflow or wave-solder environment.",
+    "zh": "E-8532W 是一款2 mil（0.070 mm）哑面白色聚酰亚胺热转印标签材料，用于高规格电子产品的功能性标识。配合合适的热转印色带可实现高质量、高分辨率打印，适用于顶面印刷电路板制造与追溯。聚酰亚胺结构高温尺寸稳定、耐化学腐蚀，电路板与标签直接从回流焊或波峰焊环境取出时打印不易涂污。",
+    "vi": "E-8532W là vật liệu nhãn in nhiệt polyimide trắng mờ 2 mil (0,070 mm) dùng cho nhãn chức năng trên hàng điện tử yêu cầu cao. Với ribbon in nhiệt phù hợp, nó cho bản in chất lượng cao, độ phân giải cao cho sản xuất và truy xuất bo mạch mặt trên. Cấu trúc polyimide ổn định kích thước ở nhiệt độ cao và kháng hóa chất; bản in không nhòe khi bo mạch và nhãn được lấy trực tiếp từ môi trường reflow hoặc hàn sóng.",
+    "th": "E-8532W เป็นวัสดุฉลากพิมพ์ถ่ายเทความร้อน โพลีอิไมด์สีขาวด้าน 2 mil (0.070 มม.) สำหรับฉลากใช้งานบนสินค้าอิเล็กทรอนิกส์ระดับสูง เมื่อใช้ริบบอนพิมพ์ถ่ายเทความร้อนที่เหมาะสมจะให้งานพิมพ์คุณภาพสูงความละเอียดสูงสำหรับการผลิตและตรวจสอบย้อนกลับแผงวงจรด้านบน โครงสร้างโพลีอิไมด์เสถียรมิติที่อุณหภูมิสูงและทนสารเคมี งานพิมพ์ไม่เลอะเมื่อนำบอร์ดและฉลากออกจากสภาพแวดล้อมรีโฟลว์หรือบัดกรีคลื่นโดยตรง"
+  },
+  "features": {
+    "en": [
+      "Durable thermal-transfer printable top surface",
+      "Dimensionally stable at high temperatures; chemically resistant",
+      "Heat, cold and solvent resistant; print resists smearing out of reflow/wave solder",
+      "Textured liner for smooth dispensing and handling",
+      "RoHS compliant (2002/95/EC)"
+    ],
+    "zh": [
+      "耐用的热转印可打印面层",
+      "高温尺寸稳定；耐化学腐蚀",
+      "耐热、耐冷、耐溶剂；出回流焊/波峰焊后打印不涂污",
+      "纹理底纸，便于顺畅出标与操作",
+      "符合 RoHS（2002/95/EC）"
+    ],
+    "vi": [
+      "Mặt in nhiệt bền",
+      "Ổn định kích thước ở nhiệt độ cao; kháng hóa chất",
+      "Kháng nhiệt, lạnh và dung môi; bản in không nhòe khi ra khỏi reflow/hàn sóng",
+      "Lớp lót có vân giúp cấp nhãn và thao tác mượt",
+      "Tuân thủ RoHS (2002/95/EC)"
+    ],
+    "th": [
+      "ผิวพิมพ์ถ่ายเทความร้อนที่ทนทาน",
+      "เสถียรมิติที่อุณหภูมิสูง; ทนสารเคมี",
+      "ทนร้อน เย็น และตัวทำละลาย; งานพิมพ์ไม่เลอะเมื่อออกจากรีโฟลว์/บัดกรีคลื่น",
+      "ไลเนอร์พื้นผิวช่วยจ่ายฉลากและจัดการได้ลื่น",
+      "สอดคล้อง RoHS (2002/95/EC)"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Property",
+        "Value"
+      ],
+      "zh": [
+        "属性",
+        "参数"
+      ],
+      "vi": [
+        "Thuộc tính",
+        "Giá trị"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "ค่า"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Facestock",
+            "zh": "面材",
+            "vi": "Vật liệu mặt",
+            "th": "วัสดุหน้า"
+          },
+          {
+            "en": "2 mil (0.070 mm) matte white polyimide",
+            "zh": "2 mil（0.070 mm）哑面白色聚酰亚胺",
+            "vi": "Polyimide trắng mờ 2 mil (0,070 mm)",
+            "th": "โพลีอิไมด์สีขาวด้าน 2 mil (0.070 มม.)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesive",
+            "zh": "胶粘剂",
+            "vi": "Keo",
+            "th": "กาว"
+          },
+          {
+            "en": "Permanent acrylic PSA (0.035 mm)",
+            "zh": "永久性丙烯酸压敏胶（0.035 mm）",
+            "vi": "Keo acrylic PSA vĩnh viễn (0,035 mm)",
+            "th": "กาว PSA อะคริลิกถาวร (0.035 มม.)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Liner",
+            "zh": "底纸",
+            "vi": "Lớp lót",
+            "th": "ไลเนอร์"
+          },
+          "0.100 mm"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Temperature rating",
+            "zh": "耐温范围",
+            "vi": "Dải nhiệt độ",
+            "th": "ช่วงอุณหภูมิ"
+          },
+          "−40 to 300 °C"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Peel adhesion",
+            "zh": "剥离力",
+            "vi": "Lực bóc",
+            "th": "แรงลอก"
+          },
+          "13 N/25 mm (GB/T 2792)"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Initial adhesion",
+            "zh": "初粘力",
+            "vi": "Độ dính ban đầu",
+            "th": "แรงยึดเริ่มต้น"
+          },
+          "19 N/25 mm (GB/T 31125)"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Retention force",
+            "zh": "保持力",
+            "vi": "Lực giữ",
+            "th": "แรงยึด"
+          },
+          "≥ 48 h/25 mm (GB/T 4851)"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Shelf life",
+            "zh": "保存有效期",
+            "vi": "Hạn dùng",
+            "th": "อายุการเก็บ"
+          },
+          {
+            "en": "1 year below 22 °C / 60% RH",
+            "zh": "22 °C / 60% RH 以下 1 年",
+            "vi": "1 năm dưới 22 °C / 60% RH",
+            "th": "1 ปี ต่ำกว่า 22 °C / 60% RH"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Compliance",
+            "zh": "合规",
+            "vi": "Tuân thủ",
+            "th": "การรับรอง"
+          },
+          "RoHS (2002/95/EC)"
+        ]
+      }
+    ],
+    "notes": {
+      "en": [
+        "Apply to a clean, dry, contamination-free surface (isopropyl alcohol recommended) and use firm pressure. Preheating the labelled product can enhance print permanence under extreme solvent/abrasion exposure. Values are typical, not specifications — verify by application testing."
+      ],
+      "zh": [
+        "贴标表面应清洁、干燥、无污染（建议异丙醇清洁），并施加足够压力。对贴标产品进行预热可在极端溶剂/磨损环境下提升打印耐久性。数值为典型值，非规格值 —— 请经应用测试确认。"
+      ],
+      "vi": [
+        "Dán lên bề mặt sạch, khô, không nhiễm bẩn (khuyến nghị cồn isopropyl) và ấn mạnh. Làm nóng trước sản phẩm dán nhãn có thể tăng độ bền bản in khi tiếp xúc dung môi/mài mòn khắc nghiệt. Giá trị là điển hình, không phải thông số — hãy xác minh bằng thử nghiệm ứng dụng."
+      ],
+      "th": [
+        "ติดบนพื้นผิวสะอาด แห้ง ปราศจากสิ่งปนเปื้อน (แนะนำไอโซโพรพิลแอลกอฮอล์) และกดแน่น การอุ่นผลิตภัณฑ์ที่ติดฉลากช่วยเพิ่มความคงทนของงานพิมพ์เมื่อเจอตัวทำละลาย/การขัดถูรุนแรง ค่าเป็นค่าทั่วไป ไม่ใช่สเปก — โปรดตรวจสอบด้วยการทดสอบการใช้งาน"
+      ]
+    }
+  },
+  "applications": {
+    "en": [
+      "PCB identification",
+      "Electronic component tracking",
+      "Asset tracking",
+      "Warranty labelling",
+      "High-resolution printing",
+      "Reflow or wave-soldering environments"
+    ],
+    "zh": [
+      "PCB 标识",
+      "电子元件追溯",
+      "资产追踪",
+      "保修标签",
+      "高分辨率打印",
+      "回流焊或波峰焊环境"
+    ],
+    "vi": [
+      "Nhận diện PCB",
+      "Theo dõi linh kiện điện tử",
+      "Theo dõi tài sản",
+      "Nhãn bảo hành",
+      "In độ phân giải cao",
+      "Môi trường reflow hoặc hàn sóng"
+    ],
+    "th": [
+      "การระบุ PCB",
+      "การติดตามชิ้นส่วนอิเล็กทรอนิกส์",
+      "การติดตามทรัพย์สิน",
+      "ฉลากรับประกัน",
+      "การพิมพ์ความละเอียดสูง",
+      "สภาพแวดล้อมรีโฟลว์หรือบัดกรีคลื่น"
+    ]
+  },
+  "certifications": {
+    "en": [
+      "RoHS compliant (2002/95/EC)"
+    ],
+    "zh": [
+      "符合 RoHS（2002/95/EC）"
+    ],
+    "vi": [
+      "Tuân thủ RoHS (2002/95/EC)"
+    ],
+    "th": [
+      "สอดคล้อง RoHS (2002/95/EC)"
+    ]
+  }
+}
