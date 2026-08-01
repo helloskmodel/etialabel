@@ -1578,7 +1578,8 @@ HOME_HERO_ITEMS = [
      ("VIN, engine, tire & battery", "VIN、发动机、轮胎与电池", "VIN, động cơ, lốp & pin", "VIN เครื่องยนต์ ยาง แบตเตอรี่")),
     ("/industries/medical-pharmaceutical-labeling-solutions/", _COS + "INDUSTRY/MEDICAL-196C",
      ("Medical & Pharma", "医疗医药", "Y tế & Dược", "การแพทย์และยา"),
-     ("Cryogenic, blood-bag & lab", "低温冻存、血袋与实验室", "Đông lạnh, túi máu & phòng lab", "อุณหภูมิต่ำ ถุงเลือด และแล็บ")),
+     ("Cryogenic, blood-bag & lab", "低温冻存、血袋与实验室", "Đông lạnh, túi máu & phòng lab", "อุณหภูมิต่ำ ถุงเลือด และแล็บ"),
+     "center bottom"),  # show the bottle at the bottom; crop the top
     ("/industries/wire-cable-labeling-solutions/", _COS + "INDUSTRY/CABLE-XF603",
      ("Wire & Cable", "线缆", "Cáp & Dây", "สายเคเบิล"),
      ("Durable wire & harness marking", "耐久线缆与束线标识", "Đánh dấu dây & bó dây bền", "ทำเครื่องหมายสายไฟทนทาน")),
@@ -1625,10 +1626,13 @@ def home_hero(lang):
     c1 = P(lang,"Find a label material →","查找标签材料 →","Tìm vật liệu nhãn →","ค้นหาวัสดุฉลาก →")
     c2 = P(lang,"Talk to an Engineer","咨询工程师","Trao đổi với kỹ sư","ปรึกษาวิศวกร")
     slides, dots = "", ""
-    for k,(url,img,nm,ln) in enumerate(HOME_HERO_ITEMS):
+    for k,item in enumerate(HOME_HERO_ITEMS):
+        url,img,nm,ln = item[0],item[1],item[2],item[3]
+        pos = item[4] if len(item) > 4 else ""
         on = " on" if k==0 else ""
-        slides += ('<a class="hhslide%s" href="%s" aria-label="%s"><img src="%s" alt="%s" loading="%s" onerror="this.style.display=\'none\'"></a>') % (
-            on, home_hlink(lang,url), esc(nm[j]), esc(img), esc(nm[j]), "eager" if k==0 else "lazy")
+        style = (' style="object-position:%s"' % esc(pos)) if pos else ""
+        slides += ('<a class="hhslide%s" href="%s" aria-label="%s"><img src="%s" alt="%s" loading="%s"%s onerror="this.style.display=\'none\'"></a>') % (
+            on, home_hlink(lang,url), esc(nm[j]), esc(img), esc(nm[j]), "eager" if k==0 else "lazy", style)
         dots += '<i class="%s"></i>' % ("on" if k==0 else "")
     check = '<span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>'
     script = ("<script>(function(){var w=document.getElementById('hhwin');if(!w)return;"
