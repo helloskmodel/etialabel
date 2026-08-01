@@ -1,31 +1,107 @@
 {
   "slug": "hp-cbr13",
   "source": "TDS HP-CBR13",
-  "langs": ["en", "zh", "vi", "th"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "",
   "product_img": "",
-  "title": {"en": "HP-CBR13 — HP Series Low-Color-Change Heat-Treatment Label", "zh": "HP-CBR13 · HP Series 低变色热处理标签", "vi": "HP-CBR13 · Nhãn xử lý nhiệt ít đổi màu HP Series", "th": "HP-CBR13 · ฉลากอบชุบความร้อนเปลี่ยนสีน้อย HP Series"},
-  "tagline": {"en": "Label for heat treatment with less color change than HP-CBR CX2", "zh": "用于热处理的标签，变色少于 HP-CBR CX2", "vi": "Nhãn dùng cho xử lý nhiệt với mức đổi màu ít hơn HP-CBR CX2", "th": "ฉลากสำหรับการอบชุบความร้อนที่เปลี่ยนสีน้อยกว่า HP-CBR CX2"},
+  "title": {
+    "en": "HP-CBR13 — HP Series Low-Color-Change Heat-Treatment Label",
+    "zh": "HP-CBR13 · HP Series 低变色热处理标签",
+    "vi": "HP-CBR13 · Nhãn xử lý nhiệt ít đổi màu HP Series",
+    "th": "HP-CBR13 · ฉลากอบชุบความร้อนเปลี่ยนสีน้อย HP Series"
+  },
+  "tagline": {
+    "en": "Label for heat treatment with less color change than HP-CBR CX2",
+    "zh": "用于热处理的标签，变色少于 HP-CBR CX2",
+    "vi": "Nhãn dùng cho xử lý nhiệt với mức đổi màu ít hơn HP-CBR CX2",
+    "th": "ฉลากสำหรับการอบชุบความร้อนที่เปลี่ยนสีน้อยกว่า HP-CBR CX2"
+  },
   "positioning": {},
   "challenges": {},
   "features": {
-    "en": ["Heat resistance up to 1200°C", "Yellowing after baking is better than HP-CBR CX2", "After baking, the label becomes unified with the object", "Chemical proof, high resistance to scratching", "Enough repetition durability after baking with the object", "Printing by TT printer with YS-4"],
-    "zh": ["耐热性高达 1200°C", "烘烤后的黄变优于 HP-CBR CX2", "烘烤后，标签与物体融为一体", "耐化学性，高耐刮擦性", "与物体一起烘烤后具有足够的重复耐久性", "使用 YS-4 的 TT 打印机打印"],
-    "vi": ["Chịu nhiệt đến 1200°C", "Độ vàng hóa sau khi nung tốt hơn HP-CBR CX2", "Sau khi nung, nhãn hợp nhất với vật thể", "Kháng hóa chất, kháng trầy xước cao", "Đủ độ bền lặp lại sau khi nung cùng vật thể", "In bằng máy in TT với YS-4"],
-    "th": ["ทนความร้อนถึง 1200°C", "การเหลืองหลังการอบดีกว่า HP-CBR CX2", "หลังการอบ ฉลากจะรวมเป็นเนื้อเดียวกับวัตถุ", "ทนสารเคมี ทนการขีดข่วนสูง", "มีความทนทานต่อการใช้ซ้ำเพียงพอหลังการอบร่วมกับวัตถุ", "พิมพ์ด้วยเครื่องพิมพ์ TT ด้วย YS-4"]
+    "en": [
+      "Heat resistance up to 1200°C",
+      "Yellowing after baking is better than HP-CBR CX2",
+      "After baking, the label becomes unified with the object",
+      "Chemical proof, high resistance to scratching",
+      "Enough repetition durability after baking with the object",
+      "Printing by TT printer with YS-4"
+    ],
+    "zh": [
+      "耐热性高达 1200°C",
+      "烘烤后的黄变优于 HP-CBR CX2",
+      "烘烤后，标签与物体融为一体",
+      "耐化学性，高耐刮擦性",
+      "与物体一起烘烤后具有足够的重复耐久性",
+      "使用 YS-4 的 TT 打印机打印"
+    ],
+    "vi": [
+      "Chịu nhiệt đến 1200°C",
+      "Độ vàng hóa sau khi nung tốt hơn HP-CBR CX2",
+      "Sau khi nung, nhãn hợp nhất với vật thể",
+      "Kháng hóa chất, kháng trầy xước cao",
+      "Đủ độ bền lặp lại sau khi nung cùng vật thể",
+      "In bằng máy in TT với YS-4"
+    ],
+    "th": [
+      "ทนความร้อนถึง 1200°C",
+      "การเหลืองหลังการอบดีกว่า HP-CBR CX2",
+      "หลังการอบ ฉลากจะรวมเป็นเนื้อเดียวกับวัตถุ",
+      "ทนสารเคมี ทนการขีดข่วนสูง",
+      "มีความทนทานต่อการใช้ซ้ำเพียงพอหลังการอบร่วมกับวัตถุ",
+      "พิมพ์ด้วยเครื่องพิมพ์ TT ด้วย YS-4"
+    ]
   },
   "benefits": {},
   "spec": {
-    "en": ["Label layer: Organic/inorganic complex, 25µm", "Adhesive: Acrylic material, 10µm", "Liner: Silicone treatment paper, 75µm"],
-    "zh": ["标签层：有机/无机复合物，25µm", "胶粘剂：丙烯酸材料，10µm", "离型纸：硅处理纸，75µm"],
-    "vi": ["Lớp nhãn: Phức hợp hữu cơ/vô cơ, 25µm", "Keo dán: Vật liệu acrylic, 10µm", "Lớp lót: Giấy xử lý silicone, 75µm"],
-    "th": ["ชั้นฉลาก: สารประกอบอินทรีย์/อนินทรีย์, 25µm", "กาว: วัสดุอะคริลิก, 10µm", "แผ่นรอง: กระดาษเคลือบซิลิโคน, 75µm"]
+    "en": [
+      "Label layer: Organic/inorganic complex, 25µm",
+      "Adhesive: Acrylic material, 10µm",
+      "Liner: Silicone treatment paper, 75µm"
+    ],
+    "zh": [
+      "标签层：有机/无机复合物，25µm",
+      "胶粘剂：丙烯酸材料，10µm",
+      "离型纸：硅处理纸，75µm"
+    ],
+    "vi": [
+      "Lớp nhãn: Phức hợp hữu cơ/vô cơ, 25µm",
+      "Keo dán: Vật liệu acrylic, 10µm",
+      "Lớp lót: Giấy xử lý silicone, 75µm"
+    ],
+    "th": [
+      "ชั้นฉลาก: สารประกอบอินทรีย์/อนินทรีย์, 25µm",
+      "กาว: วัสดุอะคริลิก, 10µm",
+      "แผ่นรอง: กระดาษเคลือบซิลิโคน, 75µm"
+    ]
   },
   "applications": {
-    "en": ["Process management for heat treatment up to 1200°C", "Management for ceramics", "Management of tray or jigs for heat treatment"],
-    "zh": ["热处理工艺管理，温度高达 1200°C", "陶瓷的管理", "热处理托盘或治具的管理"],
-    "vi": ["Quản lý quy trình xử lý nhiệt đến 1200°C", "Quản lý gốm sứ", "Quản lý khay hoặc đồ gá cho xử lý nhiệt"],
-    "th": ["การจัดการกระบวนการอบชุบความร้อนถึง 1200°C", "การจัดการเซรามิก", "การจัดการถาดหรือจิ๊กสำหรับการอบชุบความร้อน"]
+    "en": [
+      "Process management for heat treatment up to 1200°C",
+      "Management for ceramics",
+      "Management of tray or jigs for heat treatment"
+    ],
+    "zh": [
+      "热处理工艺管理，温度高达 1200°C",
+      "陶瓷的管理",
+      "热处理托盘或治具的管理"
+    ],
+    "vi": [
+      "Quản lý quy trình xử lý nhiệt đến 1200°C",
+      "Quản lý gốm sứ",
+      "Quản lý khay hoặc đồ gá cho xử lý nhiệt"
+    ],
+    "th": [
+      "การจัดการกระบวนการอบชุบความร้อนถึง 1200°C",
+      "การจัดการเซรามิก",
+      "การจัดการถาดหรือจิ๊กสำหรับการอบชุบความร้อน"
+    ]
   },
-  "certifications": {}
+  "certifications": {},
+  "brand": "heatproof"
 }

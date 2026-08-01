@@ -411,20 +411,46 @@ def poly_series_key(slug):
     if slug in _SERIES_CABLE: return "cable"
     return "pcb"
 
-BRAND_PATH = {"polyonics": "/products/polyonics/"}
+BRAND_PATH = {"polyonics": "/products/polyonics/", "heatproof": "/products/heatproof/"}
+# HEATPROOF brand (ETIA's own extreme-temperature line) — steel banner, grouped by temp tier.
+HP_BANNER = hp._COS + "INDUSTRY/STEEL-BANNER"
+HP_HEAD = {
+    "en": "HEATPROOF — Extreme-Temperature Labels & Tags",
+    "zh": "HEATPROOF —— 极端高温标签与吊牌",
+    "vi": "HEATPROOF — Nhãn & thẻ nhiệt độ cực cao",
+    "th": "HEATPROOF — ฉลากและแท็กอุณหภูมิสูงสุดขั้ว",
+}
+HP_OVERVIEW = {
+    "en": [
+        "HEATPROOF is ETIA's own line of extreme-temperature labels and tags. Metal-foil, stainless-steel and ceramic-transfer constructions survive heat treatment, hot-metal application, pickling, acid baths and firing — from around 200 °C up to 1200 °C.",
+        "Applied before or during high-temperature processing, HEATPROOF keeps barcodes and IDs legible end-to-end, so parts need no re-identification between stages — strengthening traceability across steel, aluminum, non-ferrous metal and ceramic production.",
+    ],
+    "zh": [
+        "HEATPROOF 是 ETIA 自研的极端高温标签与吊牌系列。采用金属箔、不锈钢与陶瓷转印结构，可承受热处理、热金属直贴、酸洗、酸浸与烧制 —— 温度范围约 200 °C 至 1200 °C。",
+        "在高温工艺前或工艺中贴附，HEATPROOF 使条码与标识全程清晰可读，各工序间无需重新标识 —— 强化钢铁、铝、有色金属与陶瓷生产的全程可追溯。",
+    ],
+    "vi": [
+        "HEATPROOF là dòng nhãn và thẻ nhiệt độ cực cao do ETIA tự phát triển. Cấu tạo lá kim loại, thép không gỉ và chuyển in gốm chịu được xử lý nhiệt, dán kim loại nóng, tẩy gỉ, ngâm axit và nung — từ khoảng 200 °C đến 1200 °C.",
+        "Được dán trước hoặc trong quá trình gia nhiệt, HEATPROOF giữ mã vạch và ID rõ nét xuyên suốt, nên chi tiết không cần nhận diện lại giữa các công đoạn — củng cố truy xuất trong sản xuất thép, nhôm, kim loại màu và gốm.",
+    ],
+    "th": [
+        "HEATPROOF เป็นไลน์ฉลากและแท็กอุณหภูมิสูงสุดขั้วที่ ETIA พัฒนาเอง โครงสร้างฟอยล์โลหะ สแตนเลส และถ่ายโอนเซรามิก ทนการอบชุบ การติดโลหะร้อน การกัดกรด การแช่กรด และการเผา — ตั้งแต่ประมาณ 200 °C ถึง 1200 °C",
+        "ติดก่อนหรือระหว่างกระบวนการอุณหภูมิสูง HEATPROOF คงบาร์โค้ดและรหัสให้อ่านได้ตลอดสาย จึงไม่ต้องระบุชิ้นงานใหม่ระหว่างขั้นตอน เสริมการตรวจสอบย้อนกลับในการผลิตเหล็ก อะลูมิเนียม โลหะนอกกลุ่มเหล็ก และเซรามิก",
+    ],
+}
 BRAND_UI = {
     "en": {"eyebrow": "By Brand", "view": "View product →", "home": "Home", "products": "Products",
            "empty": "Products coming soon.",
-           "lede": {"polyonics": "Genuine imported Polyonics polyimide label materials — stocked and application-supported by ETIA for reflow, cleaning and ESD-controlled electronics processes."}},
+           "lede": {"polyonics": "Genuine imported Polyonics polyimide label materials — stocked and application-supported by ETIA for reflow, cleaning and ESD-controlled electronics processes.", "heatproof": "ETIA\u2019s own extreme-temperature label and tag line for heat treatment, hot-metal application and ceramic firing \u2014 from 200 \u00b0C to 1200 \u00b0C."}},
     "zh": {"eyebrow": "按品牌", "view": "查看产品 →", "home": "首页", "products": "产品",
            "empty": "产品即将上线。",
-           "lede": {"polyonics": "Polyonics 原装进口聚酰亚胺标签材料 —— 由 ETIA 备货并提供应用支持，适配回流焊、清洗与防静电电子制程。"}},
+           "lede": {"polyonics": "Polyonics 原装进口聚酰亚胺标签材料 —— 由 ETIA 备货并提供应用支持，适配回流焊、清洗与防静电电子制程。", "heatproof": "ETIA 自研的极端高温标签与吊牌系列，适用于热处理、热金属直贴与陶瓷烧制 —— 200 °C 至 1200 °C。"}},
     "vi": {"eyebrow": "Theo thương hiệu", "view": "Xem sản phẩm →", "home": "Trang chủ", "products": "Sản phẩm",
            "empty": "Sản phẩm sắp ra mắt.",
-           "lede": {"polyonics": "Vật liệu nhãn polyimide Polyonics nhập khẩu chính hãng — được ETIA lưu kho và hỗ trợ ứng dụng cho reflow, làm sạch và quy trình điện tử kiểm soát ESD."}},
+           "lede": {"polyonics": "Vật liệu nhãn polyimide Polyonics nhập khẩu chính hãng — được ETIA lưu kho và hỗ trợ ứng dụng cho reflow, làm sạch và quy trình điện tử kiểm soát ESD.", "heatproof": "Dòng nhãn và thẻ nhiệt độ cực cao của ETIA cho xử lý nhiệt, dán kim loại nóng và nung gốm — từ 200 °C đến 1200 °C."}},
     "th": {"eyebrow": "ตามแบรนด์", "view": "ดูสินค้า →", "home": "หน้าแรก", "products": "ผลิตภัณฑ์",
            "empty": "สินค้าเร็วๆ นี้",
-           "lede": {"polyonics": "วัสดุฉลากโพลีอิไมด์ Polyonics นำเข้าแท้ — สต๊อกและสนับสนุนการใช้งานโดย ETIA สำหรับรีโฟลว์ การล้าง และกระบวนการอิเล็กทรอนิกส์ที่ควบคุม ESD"}},
+           "lede": {"polyonics": "วัสดุฉลากโพลีอิไมด์ Polyonics นำเข้าแท้ — สต๊อกและสนับสนุนการใช้งานโดย ETIA สำหรับรีโฟลว์ การล้าง และกระบวนการอิเล็กทรอนิกส์ที่ควบคุม ESD", "heatproof": "ไลน์ฉลากและแท็กอุณหภูมิสูงสุดขั้วของ ETIA สำหรับการอบชุบ การติดโลหะร้อน และการเผาเซรามิก — 200 °C ถึง 1200 °C"}},
 }
 # Polyonics brand banner + overview. Per client decision the Polyonics page
 # reuses the PCB banner (Polyonics is a PCB/electronics-centric line) — no
@@ -733,6 +759,23 @@ def build_brand(records, lang, bkey):
                 esc(nm), len(members), tbl, esc(POLY_COMPARE.get(lang) or POLY_COMPARE["en"]),
                 "".join(card(r) for r in members))
         body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap">%s%s</div>' % (overview, sections))
+    elif bkey == "heatproof":
+        # brand hero (steel banner) + overview + aisles grouped by temperature tier
+        head = HP_HEAD.get(lang) or HP_HEAD["en"]
+        hero = hp.home_banner(lang, HP_BANNER, ui["eyebrow"], head, lede, "", "", "", "", "")
+        paras = HP_OVERVIEW.get(lang) or HP_OVERVIEW["en"]
+        overview = ('<div class="bsechd">%s</div>%s' %
+                    (esc(POLY_OVERVIEW_LABEL.get(lang) or POLY_OVERVIEW_LABEL["en"]),
+                     "".join('<p class="bover">%s</p>' % esc(p) for p in paras)))
+        sections = ""
+        for band in ["xhot", "vhot", "hot", "std", "cryo"]:
+            members = sorted((r for r in items if band in r["temps"]), key=lambda r: r["slug"])
+            if not members:
+                continue
+            nm = TEMP_BANDS[band].get(lang) or TEMP_BANDS[band]["en"]
+            sections += ('<div class="bsec"><h2>%s</h2><span class="cnt">%d</span></div>'
+                         '<div class="bgrid">%s</div>') % (esc(nm), len(members), "".join(card(r) for r in members))
+        body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap">%s%s</div>' % (overview, sections))
     else:
         grid = ('<div class="bgrid">%s</div>' % "".join(card(r) for r in sorted(items, key=lambda x: L(x["title"]).lower()))) \
             if items else ('<p class="bempty">%s</p>' % esc(ui["empty"]))
@@ -764,11 +807,14 @@ def main():
         for c in POLY_CATS:
             build_poly_cat(lang, c["slug"])
         build_brand(records, lang, "polyonics")
+        build_brand(records, lang, "heatproof")
     npoly = sum(1 for r in records if r["brand"] == "polyonics")
+    nhp = sum(1 for r in records if r["brand"] == "heatproof")
     ncat = sum(len(c["rows"]) for c in POLY_CATS)
     print("catalog: /products/find/ x4 langs —", len(records), "materials")
     print("brand page: /products/polyonics/ x4 langs —", npoly, "featured products +",
           len(POLY_CATS), "categories /", ncat, "catalogue rows")
+    print("brand page: /products/heatproof/ x4 langs —", nhp, "products")
 
 
 if __name__ == "__main__":

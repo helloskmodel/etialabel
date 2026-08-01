@@ -1,31 +1,107 @@
 {
   "slug": "hp-l80",
   "source": "TDS HP-L80",
-  "langs": ["en", "zh", "vi", "th"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "",
   "product_img": "",
-  "title": {"en": "HP-L80 — HP Series High-Temp Tag", "zh": "HP-L80 · HP Series 高温标牌", "vi": "HP-L80 · Thẻ chịu nhiệt cao HP Series", "th": "HP-L80 · แท็กทนความร้อนสูง HP Series"},
-  "tagline": {"en": "Thin tag with high heat resistance up to 1000°C, printable with the thermal transfer printer", "zh": "薄层标牌，耐热性高达 1000°C，可用热转印打印机打印", "vi": "Thẻ mỏng, chịu nhiệt cao đến 1000°C, in được bằng máy in chuyển nhiệt", "th": "แท็กชั้นบาง ทนความร้อนสูงถึง 1000°C พิมพ์ด้วยเครื่องพิมพ์ถ่ายเทความร้อนได้"},
+  "title": {
+    "en": "HP-L80 — HP Series High-Temp Tag",
+    "zh": "HP-L80 · HP Series 高温标牌",
+    "vi": "HP-L80 · Thẻ chịu nhiệt cao HP Series",
+    "th": "HP-L80 · แท็กทนความร้อนสูง HP Series"
+  },
+  "tagline": {
+    "en": "Thin tag with high heat resistance up to 1000°C, printable with the thermal transfer printer",
+    "zh": "薄层标牌，耐热性高达 1000°C，可用热转印打印机打印",
+    "vi": "Thẻ mỏng, chịu nhiệt cao đến 1000°C, in được bằng máy in chuyển nhiệt",
+    "th": "แท็กชั้นบาง ทนความร้อนสูงถึง 1000°C พิมพ์ด้วยเครื่องพิมพ์ถ่ายเทความร้อนได้"
+  },
   "positioning": {},
   "challenges": {},
   "features": {
-    "en": ["Thin layer tag", "Printable with the thermal transfer printer", "High heat resistance up to 1000°C", "Thermal transfer ink ribbon: YS-540 or YS-4"],
-    "zh": ["薄层标牌", "可用热转印打印机打印", "耐热性高达 1000°C", "热转印色带：YS-540 或 YS-4"],
-    "vi": ["Thẻ dạng lớp mỏng", "In được bằng máy in chuyển nhiệt", "Chịu nhiệt cao đến 1000°C", "Ruy băng mực chuyển nhiệt: YS-540 hoặc YS-4"],
-    "th": ["แท็กชั้นบาง", "พิมพ์ด้วยเครื่องพิมพ์ถ่ายเทความร้อนได้", "ทนความร้อนสูงถึง 1000°C", "ริบบอนหมึกถ่ายเทความร้อน: YS-540 หรือ YS-4"]
+    "en": [
+      "Thin layer tag",
+      "Printable with the thermal transfer printer",
+      "High heat resistance up to 1000°C",
+      "Thermal transfer ink ribbon: YS-540 or YS-4"
+    ],
+    "zh": [
+      "薄层标牌",
+      "可用热转印打印机打印",
+      "耐热性高达 1000°C",
+      "热转印色带：YS-540 或 YS-4"
+    ],
+    "vi": [
+      "Thẻ dạng lớp mỏng",
+      "In được bằng máy in chuyển nhiệt",
+      "Chịu nhiệt cao đến 1000°C",
+      "Ruy băng mực chuyển nhiệt: YS-540 hoặc YS-4"
+    ],
+    "th": [
+      "แท็กชั้นบาง",
+      "พิมพ์ด้วยเครื่องพิมพ์ถ่ายเทความร้อนได้",
+      "ทนความร้อนสูงถึง 1000°C",
+      "ริบบอนหมึกถ่ายเทความร้อน: YS-540 หรือ YS-4"
+    ]
   },
   "benefits": {},
   "spec": {
-    "en": ["Printing layer: Inorganic coating (White), 9±2µ", "Tag core: Stainless steel foil, 50±1µ", "Back layer: Inorganic coating (White), 9±2µ", "Printing: Good (thermal transfer printer, SATO)", "Heat resistance: Good (1000°C x 6hr)", "Acid resistance: Good (dipping in 70°C 30% sulfuric acid after heat treatment 800°C x 6hr)"],
-    "zh": ["打印层：无机涂层（白色），9±2µ", "标牌芯层：不锈钢箔，50±1µ", "背层：无机涂层（白色），9±2µ", "打印：良好（热转印打印机，SATO）", "耐热性：良好（1000°C x 6hr）", "耐酸性：良好（热处理 800°C x 6hr 后浸入 70°C 30% 硫酸）"],
-    "vi": ["Lớp in: Lớp phủ vô cơ (Trắng), 9±2µ", "Lõi thẻ: Lá thép không gỉ, 50±1µ", "Lớp lưng: Lớp phủ vô cơ (Trắng), 9±2µ", "In ấn: Tốt (máy in chuyển nhiệt, SATO)", "Chịu nhiệt: Tốt (1000°C x 6hr)", "Kháng axit: Tốt (nhúng trong axit sulfuric 30% ở 70°C sau khi xử lý nhiệt 800°C x 6hr)"],
-    "th": ["ชั้นพิมพ์: สารเคลือบอนินทรีย์ (สีขาว), 9±2µ", "แกนแท็ก: แผ่นฟอยล์สแตนเลส, 50±1µ", "ชั้นหลัง: สารเคลือบอนินทรีย์ (สีขาว), 9±2µ", "การพิมพ์: ดี (เครื่องพิมพ์ถ่ายเทความร้อน, SATO)", "ทนความร้อน: ดี (1000°C x 6hr)", "ทนกรด: ดี (จุ่มในกรดซัลฟิวริก 30% ที่ 70°C หลังการอบชุบความร้อน 800°C x 6hr)"]
+    "en": [
+      "Printing layer: Inorganic coating (White), 9±2µ",
+      "Tag core: Stainless steel foil, 50±1µ",
+      "Back layer: Inorganic coating (White), 9±2µ",
+      "Printing: Good (thermal transfer printer, SATO)",
+      "Heat resistance: Good (1000°C x 6hr)",
+      "Acid resistance: Good (dipping in 70°C 30% sulfuric acid after heat treatment 800°C x 6hr)"
+    ],
+    "zh": [
+      "打印层：无机涂层（白色），9±2µ",
+      "标牌芯层：不锈钢箔，50±1µ",
+      "背层：无机涂层（白色），9±2µ",
+      "打印：良好（热转印打印机，SATO）",
+      "耐热性：良好（1000°C x 6hr）",
+      "耐酸性：良好（热处理 800°C x 6hr 后浸入 70°C 30% 硫酸）"
+    ],
+    "vi": [
+      "Lớp in: Lớp phủ vô cơ (Trắng), 9±2µ",
+      "Lõi thẻ: Lá thép không gỉ, 50±1µ",
+      "Lớp lưng: Lớp phủ vô cơ (Trắng), 9±2µ",
+      "In ấn: Tốt (máy in chuyển nhiệt, SATO)",
+      "Chịu nhiệt: Tốt (1000°C x 6hr)",
+      "Kháng axit: Tốt (nhúng trong axit sulfuric 30% ở 70°C sau khi xử lý nhiệt 800°C x 6hr)"
+    ],
+    "th": [
+      "ชั้นพิมพ์: สารเคลือบอนินทรีย์ (สีขาว), 9±2µ",
+      "แกนแท็ก: แผ่นฟอยล์สแตนเลส, 50±1µ",
+      "ชั้นหลัง: สารเคลือบอนินทรีย์ (สีขาว), 9±2µ",
+      "การพิมพ์: ดี (เครื่องพิมพ์ถ่ายเทความร้อน, SATO)",
+      "ทนความร้อน: ดี (1000°C x 6hr)",
+      "ทนกรด: ดี (จุ่มในกรดซัลฟิวริก 30% ที่ 70°C หลังการอบชุบความร้อน 800°C x 6hr)"
+    ]
   },
   "applications": {
-    "en": ["For metal products management under heat treatment up to 850°C", "Steel, Aluminum, Nonferrous metal industry, Metal-processing industry"],
-    "zh": ["用于热处理下的金属产品管理，温度高达 850°C", "钢铁、铝、有色金属行业，金属加工行业"],
-    "vi": ["Dùng để quản lý sản phẩm kim loại trong xử lý nhiệt đến 850°C", "Ngành thép, nhôm, kim loại màu, ngành gia công kim loại"],
-    "th": ["สำหรับการจัดการผลิตภัณฑ์โลหะภายใต้การอบชุบความร้อนถึง 850°C", "อุตสาหกรรมเหล็ก อะลูมิเนียม โลหะนอกกลุ่มเหล็ก อุตสาหกรรมแปรรูปโลหะ"]
+    "en": [
+      "For metal products management under heat treatment up to 850°C",
+      "Steel, Aluminum, Nonferrous metal industry, Metal-processing industry"
+    ],
+    "zh": [
+      "用于热处理下的金属产品管理，温度高达 850°C",
+      "钢铁、铝、有色金属行业，金属加工行业"
+    ],
+    "vi": [
+      "Dùng để quản lý sản phẩm kim loại trong xử lý nhiệt đến 850°C",
+      "Ngành thép, nhôm, kim loại màu, ngành gia công kim loại"
+    ],
+    "th": [
+      "สำหรับการจัดการผลิตภัณฑ์โลหะภายใต้การอบชุบความร้อนถึง 850°C",
+      "อุตสาหกรรมเหล็ก อะลูมิเนียม โลหะนอกกลุ่มเหล็ก อุตสาหกรรมแปรรูปโลหะ"
+    ]
   },
-  "certifications": {}
+  "certifications": {},
+  "brand": "heatproof"
 }

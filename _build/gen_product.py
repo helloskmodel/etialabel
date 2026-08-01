@@ -324,13 +324,20 @@ PRODUCT_BRAND = {
 }
 BRAND_NAMES = {
     "polyonics": {"en": "Polyonics", "zh": "Polyonics", "vi": "Polyonics", "th": "Polyonics"},
+    "heatproof": {"en": "HEATPROOF", "zh": "HEATPROOF", "vi": "HEATPROOF", "th": "HEATPROOF"},
     "etia":      {"en": "ETIA (in-house)", "zh": "ETIA 自研", "vi": "ETIA (tự sản xuất)", "th": "ETIA (ผลิตเอง)"},
 }
 
 def product_brand(d, slug):
-    """Resolve a product's brand key ('polyonics' or 'etia'): JSON 'brand' field
-    first, then the hardcoded map, defaulting to ETIA in-house."""
-    return (d.get("brand") or PRODUCT_BRAND.get(slug, "etia")).strip().lower()
+    """Resolve a product's brand key ('polyonics' | 'heatproof' | 'etia'): JSON
+    'brand' field first, then the hardcoded map; every HP- part falls back to the
+    HEATPROOF brand, everything else to ETIA in-house."""
+    b = (d.get("brand") or PRODUCT_BRAND.get(slug, "")).strip().lower()
+    if b:
+        return b
+    if slug.startswith("hp-"):
+        return "heatproof"
+    return "etia"
 
 def build_lang(d, lang):
     ui = UI.get(lang, UI[SOURCE_LANG])
