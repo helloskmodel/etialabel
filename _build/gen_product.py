@@ -80,6 +80,9 @@ CSS = """
 .ptbl thead th{background:#f4f7fd;color:#143C96;font-weight:800;font-size:12.5px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap}
 .ptbl tbody tr:last-child td{border-bottom:0}
 .ptbl td:first-child{font-weight:700;color:#1A56DB;white-space:nowrap}
+.ptbl a.pmlink{display:inline-flex;align-items:center;gap:6px;color:#1A56DB;text-decoration:none;border-bottom:1.5px solid #bcd0f5;padding-bottom:1px}
+.ptbl a.pmlink:hover{border-bottom-color:#1A56DB}
+.ptbl a.pmlink .pmgo{font-weight:800;color:#41A62A}
 .ptbl tbody tr.esd td:first-child{color:#41A62A}
 .ptbl tbody tr.grp td{background:#eef3fb;color:#143C96;font-weight:800;font-size:12px;letter-spacing:.04em;text-transform:uppercase;padding:9px 14px}
 .ptnote{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
@@ -264,7 +267,7 @@ def spec_table(tbl, lang):
         for i, c in enumerate(cells):
             txt = esc(L(c, lang))
             if link and i == 0:
-                txt = '<a href="%s">%s</a>' % (hp.Lx(lang, link), txt)
+                txt = '<a class="pmlink" href="%s">%s <span class="pmgo">→</span></a>' % (hp.Lx(lang, link), txt)
             tds += "<td>%s</td>" % txt
         rows_html += "<tr%s>%s</tr>" % (cls, tds)
     html = ('<div class="ptblwrap"><table class="ptbl"><thead><tr>%s</tr></thead>'
