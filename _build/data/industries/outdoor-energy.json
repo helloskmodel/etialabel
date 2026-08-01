@@ -314,6 +314,30 @@
           "img": "",
           "landing": false,
           "slug": ""
+        },
+        {
+          "name": "E-6533",
+          "line": {
+            "en": "3 mil soft white PVC · permanent acrylic · −40 to 150 °C · 3–5-year outdoor",
+            "zh": "3 mil 柔软白色 PVC · 永久丙烯酸胶 · −40 至 150 °C · 户外 3–5 年",
+            "vi": "PVC trắng mềm 3 mil · keo acrylic vĩnh viễn · −40 đến 150 °C · ngoài trời 3–5 năm",
+            "th": "PVC สีขาวนุ่ม 3 mil · กาวอะคริลิกถาวร · −40 ถึง 150 °C · กลางแจ้ง 3–5 ปี"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-6533"
+        },
+        {
+          "name": "E-6534",
+          "line": {
+            "en": "4 mil vinyl · UV & weatherable · −40 to 150 °C · Brady B-8541 / B-595 equivalent",
+            "zh": "4 mil 乙烯基 · 耐紫外线耐候 · −40 至 150 °C · 等效 Brady B-8541 / B-595",
+            "vi": "vinyl 4 mil · chống UV & thời tiết · −40 đến 150 °C · tương đương Brady B-8541 / B-595",
+            "th": "ไวนิล 4 mil · ทน UV และสภาพอากาศ · −40 ถึง 150 °C · เทียบเท่า Brady B-8541 / B-595"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-6534"
         }
       ]
     }
