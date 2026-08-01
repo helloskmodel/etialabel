@@ -258,7 +258,13 @@ def spec_table(tbl, lang):
             continue
         cells = row["cells"] if isinstance(row, dict) else row
         cls = " class=\"esd\"" if isinstance(row, dict) and row.get("esd") else ""
-        tds = "".join("<td>%s</td>" % esc(L(c, lang)) for c in cells)
+        link = row.get("link") if isinstance(row, dict) else None
+        tds = ""
+        for i, c in enumerate(cells):
+            txt = esc(L(c, lang))
+            if link and i == 0:
+                txt = '<a href="%s">%s</a>' % (hp.Lx(lang, link), txt)
+            tds += "<td>%s</td>" % txt
         rows_html += "<tr%s>%s</tr>" % (cls, tds)
     html = ('<div class="ptblwrap"><table class="ptbl"><thead><tr>%s</tr></thead>'
             '<tbody>%s</tbody></table></div>') % (thead, rows_html)
