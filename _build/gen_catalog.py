@@ -21,6 +21,55 @@ PATH = "/products/find/"
 esc = hp.esc
 LANGS = ["en", "zh", "vi", "th"]
 
+# ---- Generated product image: a Code 39 barcode label carrying the model code ----
+# These products are labels, so a clean barcode + part-number tile is an on-brand,
+# consistent, zero-photography "product image". Rendered as inline SVG (no files).
+_CODE39 = {
+    '0':'nnnwwnwnn','1':'wnnwnnnnw','2':'nnwwnnnnw','3':'wnwwnnnnn','4':'nnnwwnnnw',
+    '5':'wnnwwnnnn','6':'nnwwwnnnn','7':'nnnwnnwnw','8':'wnnwnnwnn','9':'nnwwnnwnn',
+    'A':'wnnnnwnnw','B':'nnwnnwnnw','C':'wnwnnwnnn','D':'nnnnwwnnw','E':'wnnnwwnnn',
+    'F':'nnwnwwnnn','G':'nnnnnwwnw','H':'wnnnnwwnn','I':'nnwnnwwnn','J':'nnnnwwwnn',
+    'K':'wnnnnnnww','L':'nnwnnnnww','M':'wnwnnnnwn','N':'nnnnwnnww','O':'wnnnwnnwn',
+    'P':'nnwnwnnwn','Q':'nnnnnnwww','R':'wnnnnnwwn','S':'nnwnnnwwn','T':'nnnnwnwwn',
+    'U':'wwnnnnnnw','V':'nwwnnnnnw','W':'wwwnnnnnn','X':'nwnnwnnnw','Y':'wwnnwnnnn',
+    'Z':'nwwnwnnnn','-':'nwnnnnwnw','.':'wwnnnnwnn',' ':'nwwnnnwnn','*':'nwnnwnwnn',
+}
+def _model_code(slug):
+    c = slug.upper()
+    return re.sub(r'^XF(\d)', r'XF-\1', c)   # xf58 -> XF-58, xf-504 -> XF-504, apex -> APEX
+
+def barcode_label_svg(code):
+    """Inline SVG: a printed-label tile with a Code 39 barcode + the model code."""
+    seq = "*" + "".join(ch for ch in code.upper() if ch in _CODE39) + "*"
+    N, W = 1.0, 2.6
+    x = 0.0; bars = []
+    for ch in seq:
+        pat = _CODE39.get(ch)
+        if not pat:
+            continue
+        for i, e in enumerate(pat):
+            w = W if e == 'w' else N
+            if i % 2 == 0:      # even elements are bars
+                bars.append((x, w))
+            x += w
+        x += N                  # narrow inter-character gap
+    total = x or 1.0
+    TARGET, X0, BY, BH = 208.0, 56.0, 66.0, 60.0
+    sc = TARGET / total
+    rects = "".join('<rect x="%.2f" y="%d" width="%.2f" height="%d" fill="#101828"/>'
+                    % (X0 + bx * sc, BY, max(bw * sc, 0.4), BH) for bx, bw in bars)
+    return (
+        '<svg class="bclbl" viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet" '
+        'xmlns="http://www.w3.org/2000/svg" role="img" aria-label="%s">'
+        '<rect width="320" height="200" fill="#eef3fc"/>'
+        '<rect x="34" y="34" width="252" height="132" rx="10" fill="#fff" stroke="#dbe3f1"/>'
+        '<text x="60" y="54" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="8" '
+        'letter-spacing="2.5" fill="#9fb0cf">POLYONICS</text>'
+        '%s'
+        '<text x="160" y="150" text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" '
+        'font-size="22" font-weight="700" letter-spacing="2" fill="#143C96">%s</text>'
+        '</svg>') % (esc(code), rects, esc(code))
+
 # Series/hub pages that are not a single material — kept in the catalog but the
 # environment Solution hubs are excluded (they already have "browse by environment").
 EXCLUDE = set(gp.SOLUTION_SLUGS)
@@ -379,6 +428,8 @@ BRAND_CSS = """<style>
 .bcard-img{aspect-ratio:16/10;background:#eef3fc;position:relative;display:grid;place-items:center;overflow:hidden}
 .bcard-img img{width:100%;height:100%;object-fit:cover;display:block}
 .bcard-img.ph{background:linear-gradient(150deg,#1A56DB,#143C96)}
+.bcard-img.lbl{background:#eef3fc}
+.bcard-img.lbl svg.bclbl{width:100%;height:100%;display:block}
 .bcard-img.ph span{color:#fff;font-family:var(--sans);font-weight:800;font-size:22px;letter-spacing:.02em;padding:0 16px;text-align:center}
 .bcard-b{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
 .bcard-b h3{margin:0;font-size:17px;color:#143C96;font-weight:800;line-height:1.28}
@@ -595,12 +646,14 @@ def build_brand(records, lang, bkey):
     items = [r for r in records if r["brand"] == bkey]
     def card(r):
         img = r.get("product_img", "")
-        if img:
+        # Polyonics grid uses a uniform generated barcode-label tile as the product
+        # image; a real photo still wins for any other brand.
+        if img and r["brand"] != "polyonics":
             media = ('<div class="bcard-img"><img src="%s" alt="%s" loading="lazy" '
                      'onerror="var p=this.parentNode;p.classList.add(\'ph\');p.innerHTML=\'<span>%s</span>\'"></div>') % (
                 esc(img), esc(L(r["title"])), esc(L(r["title"])))
         else:
-            media = '<div class="bcard-img ph"><span>%s</span></div>' % esc(L(r["title"]))
+            media = '<div class="bcard-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]))
         chips = ""
         for f in r["facestocks"][:1]:
             chips += '<span class="bchip">%s</span>' % esc(L(f))
