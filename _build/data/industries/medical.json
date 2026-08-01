@@ -85,17 +85,16 @@
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-196DIRECT-VIAL",
       "products": [
         {
-          "name": {
-            "en": "CryoFlex (Vial)",
-            "zh": "CryoFlex（西林瓶）"
-          },
+          "name": "EF070806 Cryogenic Label",
           "line": {
-            "en": "1.0 mil Clear PP. Directly labels frozen vials at −80°C for long-term liquid-nitrogen storage.",
-            "zh": "1.0mil 透明 PP。−80℃免解冻直贴西林瓶，长期液氮存储。"
+            "en": "1 mil clear matte PP · apply & store to −196 °C LN₂ · tubes, PP vials, EVA bags, boxes",
+            "zh": "1 mil 透明哑面 PP · 可在 −196 °C 液氮贴标与存储 · 管、PP 瓶、EVA 袋、纸盒",
+            "vi": "PP mờ trong 1 mil · dán & lưu trữ đến −196 °C LN₂ · ống, lọ PP, túi EVA, hộp",
+            "th": "PP ใสด้าน 1 mil · ติด & จัดเก็บถึง −196 °C LN₂ · หลอด ขวด PP ถุง EVA กล่อง"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "ef070806"
         },
         {
           "name": {
