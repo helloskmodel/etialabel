@@ -237,6 +237,7 @@ def build_lang(records, lang):
             "".join(chk("temp", t, L(TEMP_BANDS[t])) for t in ["cryo", "std", "high"] if t in temp_opts))
 
     # ---- cards ----
+    applab = {key: lab for key, lab, kws in APP_CATS}
     cards = ""
     for r in sorted(records, key=lambda x: L(x["title"]).lower()):
         chips = ""
@@ -244,6 +245,10 @@ def build_lang(records, lang):
             chips += '<span class="cchip ind">%s</span>' % esc(L(IND_NAME[r["industry"]]))
         for f in r["facestocks"][:1]:
             chips += '<span class="cchip mat">%s</span>' % esc(L(f))
+        if "esd" in r["apps"]:
+            chips += '<span class="cchip esd">ESD</span>'
+        if "flame" in r["apps"]:
+            chips += '<span class="cchip fr">%s</span>' % esc(L(applab["flame"]))
         data = {
             "industry": [r["industry"]] if r["industry"] else [],
             "brand": [r["brand"]], "app": r["apps"],
@@ -251,11 +256,11 @@ def build_lang(records, lang):
             "temp": r["temps"], "q": r["blob"],
         }
         cards += ('<a class="pcell" href="%s" data-f="%s"><div class="pcell-t">%s</div>'
-                  '<div class="pcell-s">%s</div><div class="pcell-chips">%s</div>'
+                  '<div class="pcell-chips">%s</div>'
                   '<span class="pcell-go">%s</span></a>') % (
             hp.Lx(lang, r["url"]),
             esc(json.dumps(data, ensure_ascii=False)),
-            esc(L(r["title"])), esc(L(r["tagline"])), chips, esc(ui["view"]))
+            esc(L(r["title"])), chips, esc(ui["view"]))
 
     CSS = """<style>
 .cwrap{max-width:1180px;margin:0 auto;padding:26px 22px 48px}
@@ -265,7 +270,7 @@ def build_lang(records, lang):
 .csearch input{width:100%;box-sizing:border-box;font-size:16px;padding:14px 16px 14px 44px;border:1.5px solid #cdd8ec;border-radius:12px;background:#fff url('data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'20\\' height=\\'20\\' viewBox=\\'0 0 24 24\\' fill=\\'none\\' stroke=\\'%235a6884\\' stroke-width=\\'2\\'><circle cx=\\'11\\' cy=\\'11\\' r=\\'7\\'/><path d=\\'M21 21l-4-4\\'/></svg>') no-repeat 14px center}
 .csearch input:focus{outline:none;border-color:#1A56DB;box-shadow:0 0 0 3px rgba(26,86,219,.14)}
 .clayout{display:grid;grid-template-columns:236px 1fr;gap:26px;align-items:start}
-.cfilters{position:sticky;top:86px}
+.cfilters{position:sticky;top:86px;max-height:calc(100vh - 100px);overflow-y:auto;padding-right:6px}
 .cfilters .fhd{display:flex;justify-content:space-between;align-items:center;margin:0 0 10px}
 .cfilters .fhd h3{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#143C96;margin:0}
 .cfilters .freset{font-size:12.5px;font-weight:700;color:#1A56DB;background:none;border:none;cursor:pointer}
@@ -283,6 +288,7 @@ def build_lang(records, lang):
 .pcell-chips{display:flex;flex-wrap:wrap;gap:5px}
 .cchip{font-size:10.5px;font-weight:800;padding:2px 8px;border-radius:999px}
 .cchip.ind{color:#fff;background:#1A56DB}.cchip.mat{color:#2c7a1e;background:#e6f5e0}
+.cchip.esd{color:#1A56DB;background:#eaf1ff}.cchip.fr{color:#b4520a;background:#fdeede}
 .pcell-go{font-size:12px;font-weight:800;color:#41A62A;margin-top:2px}
 .cnone{padding:40px 8px;color:#5a6884;font-size:15px}
 .fmob{display:none}
