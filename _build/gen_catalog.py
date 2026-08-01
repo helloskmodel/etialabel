@@ -308,8 +308,26 @@ BRAND_UI = {
            "empty": "สินค้าเร็วๆ นี้",
            "lede": {"polyonics": "วัสดุฉลากโพลีอิไมด์ Polyonics นำเข้าแท้ — สต๊อกและสนับสนุนการใช้งานโดย ETIA สำหรับรีโฟลว์ การล้าง และกระบวนการอิเล็กทรอนิกส์ที่ควบคุม ESD"}},
 }
+# Dedicated Polyonics brand banner + overview. POLY_BANNER uses the PCB banner
+# for now (Polyonics is a PCB/electronics-centric line); swap this one line for a
+# bespoke Polyonics banner image once supplied (e.g. BANNER/POLYONICS-BANNER).
+POLY_BANNER = hp._COS + "INDUSTRY/PCB-BANNERNEW.jpg"
+POLY_HEAD = {
+    "en": "Polyonics — High-Performance Label Materials",
+    "zh": "Polyonics —— 高性能标签材料",
+    "vi": "Polyonics — Vật liệu nhãn hiệu năng cao",
+    "th": "Polyonics — วัสดุฉลากประสิทธิภาพสูง",
+}
+POLY_OVERVIEW_LABEL = {"en": "Overview", "zh": "品牌概述", "vi": "Tổng quan", "th": "ภาพรวม"}
+POLY_OVERVIEW = {
+    "en": "Polyonics is a US manufacturer of high-performance label materials engineered for extreme environments — high-temperature polyimide and polyester films for PCB and electronics identification, in flame-retardant, ESD-safe and flux-resistant constructions. The labels stay dimensionally stable and legible through reflow, wave-solder and aqueous cleaning, and carry UL969, UL94 VTM-0 and REACH/RoHS approvals across the range. ETIA supplies the full Polyonics line with application and sampling support for customers across Asia.",
+    "zh": "Polyonics 是一家美国高性能标签材料制造商，专为极端环境设计 —— 用于 PCB 与电子标识的高温聚酰亚胺与聚酯薄膜，涵盖阻燃、防静电与耐助焊剂结构。标签经回流焊、波峰焊与水洗仍尺寸稳定、字迹清晰，全系列具备 UL969、UL94 VTM-0 与 REACH/RoHS 认证。ETIA 供应全系列 Polyonics 产品，并为亚洲客户提供应用与打样支持。",
+    "vi": "Polyonics là nhà sản xuất Mỹ về vật liệu nhãn hiệu năng cao cho môi trường khắc nghiệt — màng polyimide và polyester chịu nhiệt cao cho nhận diện PCB và điện tử, với cấu trúc chống cháy, ESD-safe và kháng flux. Nhãn ổn định kích thước và rõ nét qua reflow, hàn sóng và rửa nước, đạt UL969, UL94 VTM-0 và REACH/RoHS trên toàn dải. ETIA cung cấp toàn bộ dòng Polyonics cùng hỗ trợ ứng dụng và mẫu thử cho khách hàng khắp châu Á.",
+    "th": "Polyonics เป็นผู้ผลิตวัสดุฉลากประสิทธิภาพสูงจากสหรัฐฯ ออกแบบสำหรับสภาพแวดล้อมสุดขั้ว — ฟิล์มโพลีอิไมด์และโพลีเอสเตอร์ทนอุณหภูมิสูงสำหรับการระบุ PCB และอิเล็กทรอนิกส์ ในโครงสร้างหน่วงไฟ ESD-safe และทนฟลักซ์ ฉลากคงเสถียรและอ่านได้ผ่านรีโฟลว์ เวฟโซลเดอร์ และการล้างน้ำ พร้อมการรับรอง UL969, UL94 VTM-0 และ REACH/RoHS ทั้งกลุ่ม ETIA จัดหาผลิตภัณฑ์ Polyonics ครบไลน์ พร้อมสนับสนุนการใช้งานและตัวอย่างสำหรับลูกค้าทั่วเอเชีย",
+}
 BRAND_CSS = """<style>
 .bwrap{max-width:1120px;margin:0 auto;padding:34px 22px 54px}
+.bover{color:#41506e;font-size:15.5px;line-height:1.7;max-width:80ch;margin:0 0 30px}
 .bhead .eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#1A56DB}
 .bhead h1{font-family:var(--sans);font-weight:800;color:#143C96;font-size:clamp(30px,4vw,44px);margin:8px 0 8px}
 .bhead p{color:#51607e;font-size:16px;max-width:70ch;margin:0 0 8px}
@@ -422,17 +440,6 @@ POLY_CATS = [
         ["XF-603","pi1","sgw","1 mil (25 µm) acrylic","hi",["fr"]],
         ["XF-300","nyl5","woven","2 mil (50 µm) high-temp acrylic","nyl",["fr"]],
         ["XF-302","nyl5","woven","1 mil (25 µm) high-temp acrylic","nyl",["fr"]],
-     ]},
-    {"slug": "overlaminates",
-     "title": _ml("High-Temperature Overlaminates", "高温覆膜", "Lớp phủ nhiệt độ cao", "โอเวอร์แลมิเนตอุณหภูมิสูง"),
-     "lede": _ml("Clear polyimide overlaminates that protect printed labels from UV, chemicals and abrasion — up to 500 °C.",
-                 "透明聚酰亚胺覆膜，保护打印标签免受 UV、化学品与磨损 —— 最高 500 °C。",
-                 "Lớp phủ polyimide trong suốt bảo vệ nhãn in khỏi UV, hóa chất và mài mòn — đến 500 °C.",
-                 "โอเวอร์แลมิเนตโพลีอิไมด์ใส ปกป้องฉลากพิมพ์จาก UV สารเคมี และการขัดถู — สูงสุด 500 °C"),
-     "rows": [
-        ["XL-1501","pi1","clear","1 mil (25 µm) high-temp acrylic","ovl",["uv"]],
-        ["XL-1561","pi1","clear","2 mil (50 µm) high-temp acrylic","ovl",["uv"]],
-        ["XL-1502","pi2","clear","1 mil (25 µm) aggressive acrylic","hi",["uv"]],
      ]},
     {"slug": "esd-safe",
      "title": _ml("ESD Safe Label Materials", "防静电标签材料", "Vật liệu nhãn ESD-Safe", "วัสดุฉลาก ESD-Safe"),
@@ -565,12 +572,23 @@ def build_brand(records, lang, bkey):
     # Polyonics: show the catalogue category cards above the featured product cards
     cats = poly_category_cards(lang) if bkey == "polyonics" else ""
     feat_hd = ('<div class="bsechd">%s</div>' % esc({"en":"Featured series","zh":"精选系列","vi":"Dòng nổi bật","th":"ซีรีส์แนะนำ"}.get(lang,"Featured series"))) if (bkey == "polyonics" and cards) else ""
-    body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap"><div class="bhead"><div class="eyebrow">%s</div>'
-                        '<h1>%s</h1><p>%s</p></div>%s%s%s</div>') % (
-        esc(ui["eyebrow"]), esc(bname), esc(ui["lede"].get(bkey, "")), cats, feat_hd, grid)
+    lede = ui["lede"].get(bkey, "")
+    hero = None
+    if bkey == "polyonics":
+        # dedicated brand hero banner (unified .hbanner style + single green CTA)
+        head = POLY_HEAD.get(lang) or POLY_HEAD["en"]
+        hero = hp.home_banner(lang, POLY_BANNER, ui["eyebrow"], head, lede, "", "", "", "", "")
+        overview = ('<div class="bsechd">%s</div><p class="bover">%s</p>' %
+                    (esc(POLY_OVERVIEW_LABEL.get(lang) or POLY_OVERVIEW_LABEL["en"]),
+                     esc(POLY_OVERVIEW.get(lang) or POLY_OVERVIEW["en"])))
+        body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap">%s%s%s%s</div>' % (overview, cats, feat_hd, grid))
+    else:
+        body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap"><div class="bhead"><div class="eyebrow">%s</div>'
+                            '<h1>%s</h1><p>%s</p></div>%s%s%s</div>') % (
+            esc(ui["eyebrow"]), esc(bname), esc(lede), cats, feat_hd, grid)
     crumb = [(ui["home"], "/"), (ui["products"], "/products/"), (bname, path)]
-    content = hp.page(lang, path, bname + " | ETIA", esc(ui["lede"].get(bkey, "")), bname, "", body, crumb,
-                      active="products", trust=False, langs=hp.NAV_PILLAR_LANGS)
+    content = hp.page(lang, path, bname + " | ETIA", esc(lede), bname, "", body, crumb,
+                      active="products", trust=False, hero=hero, langs=hp.NAV_PILLAR_LANGS)
     hp.write(lang, path, content)
     if lang == "en":
         hp.track(path, "core")
