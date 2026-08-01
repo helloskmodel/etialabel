@@ -243,12 +243,12 @@ def build_hub(lang):
     # Label & Labeling Knowledge — all articles laid out in a grid
     know_html = _section(ui["hub_title"], ui["sec_know"],
                          "".join(_card(a, lang, ui) for a in know), "ncards")
-    body = CSS + news_html + know_html
+    # 20-year trust bar under the hero, then the article sections
+    body = hp.home_trustbar(lang) + CSS + news_html + know_html
     crumb = [(ui["home"], "/"), (ui["hub_title"], HUB)]
-    # brand Insight hero (Knowledge Drives Better Decisions) — with the two-section sub-line
+    # brand Insight hero — single main visual with a subtle Ken Burns zoom (no carousel)
     s = hp.HOME2.get(lang, hp.HOME2["en"])["sections"][2]
-    hero = hp.page_hero(lang, s["eyebrow"], s["h2"], ui["hero_sub"], "",
-                        s["b1"], s["b1u"], s["b2"], s["b2u"], hp.SECTION_BG.get(2, ""))
+    hero = hp.hero_single_anim(lang, hp.SECTION_BG.get(2, ""), s["eyebrow"], s["h2"], ui["hero_sub"])
     content = hp.page(lang, HUB, ui["hub_title"] + " | ETIA", ui["hub_lede"],
                       ui["hub_title"], "", body, crumb, active="insights", trust=False, hero=hero,
                       langs=hp.NAV_PILLAR_LANGS)

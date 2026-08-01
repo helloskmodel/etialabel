@@ -1693,6 +1693,87 @@ def section_hero(lang, idx, bg=""):
     bg = bg or SECTION_BG.get(idx, "")
     return page_hero(lang, s["eyebrow"], s["h2"], s["sub"], s["body"], s["b1"], s["b1u"], s["b2"], s["b2u"], bg)
 
+# ---- Animated page heroes (same .hbanner look, with a moving background layer) ----
+# Two flavours: a single "Ken Burns" slow-zoom visual (Insights / Service), and a
+# rotating "working-conditions" carousel that cycles through harsh-environment
+# photos with a small changing caption (Solutions). Both respect reduced-motion.
+_HERO_FX_CSS = """<style>
+.hbx{position:relative;overflow:hidden;background:var(--blue-deep);border-bottom:2px solid #fff;display:flex;align-items:center;min-height:320px}
+.hbx .hbx-bg{position:absolute;inset:0;background-size:cover;background-position:center right;z-index:0;will-change:transform,opacity}
+.hbx .hbx-bg.kb{animation:hbxzoom 22s ease-in-out infinite alternate}
+@keyframes hbxzoom{from{transform:scale(1.001)}to{transform:scale(1.10)}}
+.hbx.car .hbx-bg{opacity:0;transition:opacity 1.1s ease}
+.hbx.car .hbx-bg.on{opacity:1;animation:hbxzoom 9s ease-in-out infinite alternate}
+.hbx::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,60,150,.90) 16%,rgba(20,60,150,.50) 54%,rgba(20,60,150,.08))}
+.hbx .wrap{position:relative;z-index:2;width:100%;padding:60px 24px}
+.hbx .eyebrow{color:#8fe063;margin-bottom:6px}
+.hbx h1{color:#fff;font-family:var(--sans);font-weight:800;font-size:40px;line-height:1.12;letter-spacing:-.01em;text-align:left;margin:2px 0 10px;max-width:18em}
+.hbx .hsub{font-size:18px;font-weight:700;color:#eef3ff;margin-bottom:16px;max-width:40em}
+.hbx .btns{display:flex;gap:12px;flex-wrap:wrap}
+.hbx .hbx-env{position:absolute;right:18px;bottom:16px;z-index:3;display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end;max-width:60%}
+.hbx .hbx-tag{position:absolute;right:0;bottom:0;white-space:nowrap;background:rgba(9,26,66,.55);border:1px solid rgba(255,255,255,.28);color:#eaf1ff;font-size:12.5px;font-weight:700;padding:5px 12px;border-radius:999px;opacity:0;transition:opacity .5s ease}
+.hbx .hbx-tag.on{opacity:1;position:relative}
+.hbx .hbx-dots{position:absolute;left:24px;bottom:16px;z-index:3;display:flex;gap:6px}
+.hbx .hbx-dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.55);cursor:pointer}
+.hbx .hbx-dots i.on{width:22px;border-radius:5px;background:var(--green)}
+@media(max-width:820px){.hbx{min-height:250px}.hbx h1{font-size:27px}.hbx .hsub{font-size:15.5px}.hbx .wrap{padding:34px 24px}.hbx .hbx-tag{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.hbx .hbx-bg{animation:none!important}}
+</style>"""
+
+def hero_single_anim(lang, bg, eyebrow, title, sub):
+    """Single main visual with a subtle Ken Burns slow-zoom (Insights / Service)."""
+    bgdiv = ('<div class="hbx-bg kb" style="background-image:url(%s)"></div>' % esc(bg)) if bg else ""
+    eye = ('<div class="eyebrow">%s</div>' % esc(eyebrow)) if eyebrow else ""
+    html = ('<section class="hbx">%s<div class="wrap">%s<h1>%s</h1>'
+            '<p class="hsub">%s</p><div class="btns">%s</div></div></section>') % (
+        bgdiv, eye, esc(title), esc(sub), hero_cta(lang))
+    return _HERO_FX_CSS + html
+
+def hero_carousel(lang, slides, eyebrow, title, sub):
+    """Rotating 'working-conditions' banner. slides = [(img_url, {4-lang caption})].
+    Headline/slogan stay fixed; only the background photo + caption rotate."""
+    j = JX[lang]
+    bgs = tags = dots = ""
+    for k, (img, env) in enumerate(slides):
+        on = " on" if k == 0 else ""
+        cap = env[j] if isinstance(env, (list, tuple)) else (env.get(lang) or env.get("en"))
+        bgs += '<div class="hbx-bg%s" style="background-image:url(%s)"></div>' % (on, esc(img))
+        tags += '<span class="hbx-tag%s">%s</span>' % (on, esc(cap))
+        dots += '<i class="%s"></i>' % ("on" if k == 0 else "")
+    eye = ('<div class="eyebrow">%s</div>' % esc(eyebrow)) if eyebrow else ""
+    script = ("<script>(function(){var s=document.currentScript.previousElementSibling;"
+              "var bg=s.querySelectorAll('.hbx-bg'),tg=s.querySelectorAll('.hbx-tag'),"
+              "dt=s.querySelectorAll('.hbx-dots i'),i=0;"
+              "function go(n){i=(n+bg.length)%bg.length;"
+              "bg.forEach(function(x,k){x.classList.toggle('on',k===i);});"
+              "tg.forEach(function(x,k){x.classList.toggle('on',k===i);});"
+              "dt.forEach(function(x,k){x.classList.toggle('on',k===i);});}"
+              "dt.forEach(function(x,k){x.addEventListener('click',function(){go(k);});});"
+              "if(!window.matchMedia||!matchMedia('(prefers-reduced-motion:reduce)').matches)"
+              "setInterval(function(){go(i+1);},4200);})();</script>")
+    html = ('<section class="hbx car">%s<div class="wrap">%s<h1>%s</h1>'
+            '<p class="hsub">%s</p><div class="btns">%s</div></div>'
+            '<div class="hbx-env">%s</div><div class="hbx-dots">%s</div></section>') % (
+        bgs, eye, esc(title), esc(sub), hero_cta(lang), tags, dots)
+    return _HERO_FX_CSS + html + script
+
+# Solutions "working-conditions" carousel — different harsh environments (reuses the
+# industry banner photos, which are guaranteed to resolve on COS).
+_SOL_SLIDES = [
+    (_COS + "INDUSTRY/STEEL-BANNER",
+     ("Up to 1000 °C hot metal", "高温金属 · 最高 1000 °C", "Kim loại nóng tới 1000 °C", "โลหะร้อนถึง 1000 °C")),
+    (_COS + "INDUSTRY/MEDICAL-BANNER",
+     ("−196 °C cryogenic storage", "−196 °C 深冷存储", "Lưu trữ đông lạnh −196 °C", "จัดเก็บแช่แข็ง −196 °C")),
+    (_COS + "INDUSTRY/PCB-BANNERNEW.jpg",
+     ("Reflow, wash & ESD", "回流焊、清洗与防静电", "Reflow, rửa & ESD", "รีโฟลว์ ล้าง และ ESD")),
+    (_COS + "INDUSTRY/OURDOOR-BANNER",
+     ("UV & years outdoors", "紫外与户外多年", "UV & nhiều năm ngoài trời", "UV และกลางแจ้งหลายปี")),
+    (_COS + "INDUSTRY/AUTO-BANNER",
+     ("Oil, solvent & abrasion", "油污、溶剂与磨损", "Dầu, dung môi & mài mòn", "น้ำมัน ตัวทำละลาย และการขัดถู")),
+    (_COS + "INDUSTRY/CABLE-BANNER",
+     ("Flame-retardant wire & cable", "阻燃线缆标识", "Cáp & dây chống cháy", "สายไฟหน่วงไฟ")),
+]
+
 def build_home(lang):
     path="/"
     T=HOME_I18N[lang]
@@ -2230,9 +2311,10 @@ def build_service(lang):
         fields, phones)
     body=commit_sec+global_sec+form_sec+('<div class="wrap">%s</div>'%cta2(lang,"service"))+tabscript
     crumb=[(P(lang,"Home","首页","Trang chủ","หน้าแรก"),"/"),(P(lang,"Service","服务","Dịch vụ","บริการ"),"/service/")]
-    # hero = Headline + Slogan only (no eyebrow, no body paragraph, no buttons)
+    # hero = single main visual with a subtle Ken Burns zoom (headline + slogan only)
     sh=HOME2.get(lang,HOME2["en"])["sections"][3]
-    hero=page_hero(lang, "", sh["h2"], sh["sub"], "", "", "", "", "", SECTION_BG.get(3,""))
+    hero=hero_single_anim(lang, SECTION_BG.get(3,""), "", sh["h2"], sh["sub"])
+    body=home_trustbar(lang)+body   # 20-year trust bar under the hero
     write(lang,"/service/",page(lang,"/service/",
         P(lang,"Service | ETIA","服务 | ETIA","Dịch vụ | ETIA","บริการ | ETIA"),
         P(lang,"100% quality inspection, application-driven selection, flexible supply and responsive support — the ETIA service commitment.",
@@ -2450,10 +2532,10 @@ def build_applications(lang):
         P(lang,"APPLICATION NOTES","应用笔记","GHI CHÚ ỨNG DỤNG","บันทึกการใช้งาน"),
         P(lang,"Application Notes","应用笔记","Ghi chú ứng dụng","บันทึกการใช้งาน"),
         search_box, note_cards, nohit, filter_js, cta2(lang,"applications"))
-    # hero without body paragraph, single CTA "Talk to Engineering"
+    # hero: rotating "working-conditions" banner cycling through harsh environments
     s=HOME2.get(lang,HOME2["en"])["sections"][1]
-    hero=page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
-                   P(lang,"Talk to Engineering","咨询工程师","Trao đổi với kỹ thuật","ปรึกษาฝ่ายวิศวกรรม"), "/contact/", "", "", SECTION_BG.get(1,""))
+    hero=hero_carousel(lang, _SOL_SLIDES, s["eyebrow"], s["h2"], s["sub"])
+    body=home_trustbar(lang)+body   # 20-year trust bar under the hero
     crumb=[(P(lang,"Home","首页","Trang chủ","หน้าแรก"),"/"),(P(lang,"Solutions","方案","Giải pháp","โซลูชัน"),"/applications/")]
     write(lang,"/applications/",page(lang,"/applications/",
         P(lang,"Solutions | ETIA","方案 | ETIA","Giải pháp | ETIA","โซลูชัน | ETIA"),
