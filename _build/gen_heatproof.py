@@ -27,7 +27,7 @@ PREFIX = {"en": "", "zh": "/cn", "vi": "/vn", "th": "/th"}
 HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th"}
 # Paths that exist in all four languages (home only). Links to any other path from
 # a vi/th page fall back to the English version (no 404). Industry hubs are EN+ZH.
-FOURLANG = {"/", "/products/", "/applications/", "/service/", "/insights/"}
+FOURLANG = {"/", "/products/", "/products/find/", "/applications/", "/service/", "/insights/"}
 FOURLANG_PREFIX = ("/insights/", "/industries/", "/products/item/")  # article, industry & product pages exist in all 4 langs
 def Lx(lang, path):
     """Smart localized link: use the vi/th version only if that path is 4-language."""
@@ -1565,6 +1565,94 @@ def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
 def home_banner(lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
     return _banner_html(home_hlink, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u)
 
+_COS = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/"
+# Home hero (etiatech.com house style): trust pill + navy headline + green sub +
+# green/outline CTAs, with a rotating "window" showing one real label per industry
+# (photos pulled from the Industry pages). New materials are swapped by editing this list.
+HOME_HERO_ITEMS = [
+    ("/industries/pcb-electronics-labeling-solutions/", _COS + "INDUSTRY/PCB-APEX",
+     ("PCB & Electronics", "PCB 电子", "PCB & Điện tử", "PCB และอิเล็กทรอนิกส์"),
+     ("Reflow-, wash- and ESD-safe", "耐回流焊、清洗与防静电", "Chịu reflow, rửa & ESD", "ทนรีโฟลว์ ล้าง และ ESD")),
+    ("/industries/automotive-labeling-solutions/", _COS + "INDUSTRY/AUTO-VINCODE",
+     ("Automotive", "汽车", "Ô tô", "ยานยนต์"),
+     ("VIN, engine, tire & battery", "VIN、发动机、轮胎与电池", "VIN, động cơ, lốp & pin", "VIN เครื่องยนต์ ยาง แบตเตอรี่")),
+    ("/industries/medical-pharmaceutical-labeling-solutions/", _COS + "INDUSTRY/MEDICAL-196C",
+     ("Medical & Pharma", "医疗医药", "Y tế & Dược", "การแพทย์และยา"),
+     ("Cryogenic, blood-bag & lab", "低温冻存、血袋与实验室", "Đông lạnh, túi máu & phòng lab", "อุณหภูมิต่ำ ถุงเลือด และแล็บ")),
+    ("/industries/wire-cable-labeling-solutions/", _COS + "INDUSTRY/CABLE-XF603",
+     ("Wire & Cable", "线缆", "Cáp & Dây", "สายเคเบิล"),
+     ("Durable wire & harness marking", "耐久线缆与束线标识", "Đánh dấu dây & bó dây bền", "ทำเครื่องหมายสายไฟทนทาน")),
+    ("/industries/steel-metal-ceramic-labeling-solutions/", _COS + "INDUSTRY/STEEL-HP900",
+     ("Steel & Metal", "钢铁金属", "Thép & Kim loại", "เหล็กและโลหะ"),
+     ("Direct-apply up to 1000 °C", "高温直贴，最高 1000 °C", "Dán trực tiếp tới 1000 °C", "ติดตรงสูงสุด 1000 °C")),
+    ("/industries/outdoor-energy-labeling-solutions/", _COS + "INDUSTRY/OUTDOOR-SOLARSUN",
+     ("Outdoor & Energy", "户外能源", "Ngoài trời & Năng lượng", "กลางแจ้งและพลังงาน"),
+     ("Weatherable for years outdoors", "户外耐候多年", "Chịu thời tiết nhiều năm", "ทนสภาพอากาศได้หลายปี")),
+]
+
+_HOME_HERO_CSS = """<style>
+.hhero{background:linear-gradient(155deg,#eef3ff 0%,#edf6ec 100%);border-bottom:1px solid var(--line)}
+.hhero-in{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center;padding:52px 0 56px}
+.hhero-pill{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 15px;box-shadow:0 6px 16px rgba(16,34,58,.08);font-weight:700;color:var(--blue-deep);font-size:13px;line-height:1.3}
+.hhero-pill .ck{color:var(--green);display:grid;place-items:center;flex:none}
+.hhero h1{font-family:var(--sans);font-weight:800;color:var(--blue-deep);letter-spacing:-.01em;font-size:clamp(30px,4.4vw,46px);line-height:1.06;margin:18px 0 8px;max-width:16ch}
+.hhero .hsub{font-family:var(--sans);font-weight:800;color:var(--green-d);font-size:clamp(17px,2.3vw,23px);margin:0 0 26px}
+.hhero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.hhbtn{font-family:var(--sans);font-weight:700;font-size:15px;border-radius:11px;padding:14px 24px;text-decoration:none;border:1.5px solid transparent;display:inline-block}
+.hhbtn.pri{background:var(--green);color:#fff}
+.hhbtn.gho{background:#fff;border-color:var(--line);color:var(--blue-deep)}
+.hhwin{position:relative;min-height:360px;border-radius:20px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 24px 60px rgba(16,34,58,.15)}
+.hhslide{position:absolute;inset:0;display:flex;flex-direction:column;text-decoration:none;color:inherit;opacity:0;transition:opacity .5s ease;pointer-events:none}
+.hhslide.on{opacity:1;pointer-events:auto}
+.hhslide img{width:100%;height:73%;object-fit:cover;background:#e8eefb;display:block}
+.hhmeta{padding:14px 18px}
+.hhmeta b{display:block;font-size:18px;color:var(--blue-deep);font-weight:800;line-height:1.2}
+.hhmeta span{font-size:13.5px;color:var(--mut)}
+.hhdots{position:absolute;top:13px;right:14px;display:flex;gap:6px;z-index:2}
+.hhdots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.75);box-shadow:0 0 0 1px rgba(16,34,58,.12);cursor:pointer}
+.hhdots i.on{width:22px;border-radius:5px;background:var(--green)}
+@media(max-width:860px){.hhero-in{grid-template-columns:1fr;gap:24px;padding:30px 0 34px}.hhwin{min-height:300px}.hhslide img{height:70%}}
+</style>"""
+
+def home_hero(lang):
+    j = JX[lang]
+    def pill(): return P(lang,"Specialty Label Materials · Built for Extreme Conditions",
+        "特种标签材料 · 为极端工况而生","Vật liệu nhãn chuyên dụng · cho điều kiện khắc nghiệt",
+        "วัสดุฉลากเฉพาะทาง · เพื่อสภาวะสุดขั้ว")
+    head = P(lang,"Labels engineered for the world's harshest conditions.",
+        "为极端工况而生的标签材料","Nhãn được thiết kế cho những điều kiện khắc nghiệt nhất",
+        "ฉลากที่ออกแบบมาเพื่อสภาวะที่โหดร้ายที่สุด")
+    sub = P(lang,"From −196 °C to 1000 °C — bonded and readable.",
+        "从 −196 °C 到 1000 °C —— 牢固贴合、清晰可读","Từ −196 °C đến 1000 °C — bám chắc và dễ đọc",
+        "ตั้งแต่ −196 °C ถึง 1000 °C — ยึดแน่นและอ่านได้ชัดเจน")
+    c1 = P(lang,"Find a label material →","查找标签材料 →","Tìm vật liệu nhãn →","ค้นหาวัสดุฉลาก →")
+    c2 = P(lang,"Talk to an Engineer","咨询工程师","Trao đổi với kỹ sư","ปรึกษาวิศวกร")
+    slides, dots = "", ""
+    for k,(url,img,nm,ln) in enumerate(HOME_HERO_ITEMS):
+        on = " on" if k==0 else ""
+        slides += ('<a class="hhslide%s" href="%s"><img src="%s" alt="%s" loading="%s" onerror="this.style.display=\'none\'">'
+                   '<div class="hhmeta"><b>%s</b><span>%s</span></div></a>') % (
+            on, home_hlink(lang,url), esc(img), esc(nm[j]),
+            "eager" if k==0 else "lazy", esc(nm[j]), esc(ln[j]))
+        dots += '<i class="%s"></i>' % ("on" if k==0 else "")
+    check = '<span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>'
+    script = ("<script>(function(){var w=document.getElementById('hhwin');if(!w)return;"
+              "var s=w.querySelectorAll('.hhslide'),d=w.querySelectorAll('.hhdots i'),i=0;"
+              "function go(n){i=((n%s.length)+s.length)%s.length;"
+              "s.forEach(function(x,k){x.classList.toggle('on',k===i);});"
+              "d.forEach(function(x,k){x.classList.toggle('on',k===i);});}"
+              "d.forEach(function(x,k){x.addEventListener('click',function(){go(k);});});"
+              "if(!window.matchMedia||!matchMedia('(prefers-reduced-motion:reduce)').matches)"
+              "setInterval(function(){go(i+1);},3500);})();</script>")
+    return (_HOME_HERO_CSS +
+        '<section class="hhero"><div class="wrap hhero-in">'
+        '<div class="hhero-copy"><span class="hhero-pill">' + check + ' ' + esc(pill()) + '</span>'
+        '<h1>' + esc(head) + '</h1><p class="hsub">' + esc(sub) + '</p>'
+        '<div class="hhero-cta"><a class="hhbtn pri" href="' + home_hlink(lang,"/products/find/") + '">' + esc(c1) + '</a>'
+        '<a class="hhbtn gho" href="' + home_hlink(lang,"/contact/") + '">' + esc(c2) + '</a></div></div>'
+        '<div class="hhwin" id="hhwin">' + slides + '<div class="hhdots" id="hhdots">' + dots + '</div></div>'
+        '</div></section>' + script)
+
 # Page HERO banner for inner pages (uses L() for en/zh links). Same look as the home banner.
 def page_hero(lang, eyebrow, title, sub, body, b1, b1u, b2, b2u, bg=""):
     return _banner_html(L, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u)
@@ -1645,9 +1733,7 @@ def build_home(lang):
     sc_section=('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div><h2>%s</h2>'
                 '<div class="sc4">%s</div></div></section>')%(
         esc(T.get("sc_eyebrow","SERVICE COMMITMENT")),esc(T.get("sc_title","Our Service Commitment")),sc_items)
-    h=G["hero"]
-    hero_banner=home_banner(lang, HOME_BG[0], h["eyebrow"], h["h1"], h["line"], "",
-                            h["b1"], "/applications/", h["b2"], "/contact/")
+    hero_banner=home_hero(lang)
     why_section=('<section class="blk" style="background:var(--bg)"><div class="wrap">'
                  '<div class="eyebrow">%s</div><h2>%s</h2><div class="sub">%s</div>'
                  '<div class="whygrid">%s</div>%s</div></section>')%(
@@ -1660,7 +1746,7 @@ def build_home(lang):
     body=hero_banner+why_section+app_section+prod_section+sc_section+final_cta
     canonical=SITE+HL_PREFIX[lang]+path
     schema_js='<script type="application/ld+json">%s</script>'%json.dumps(ORG_JSONLD,ensure_ascii=False)
-    hero_preload=('<link rel="preload" as="image" href="'+HOME_BG[0]+'" fetchpriority="high">') if HOME_BG[0] else ""
+    hero_preload=('<link rel="preload" as="image" href="'+HOME_HERO_ITEMS[0][1]+'" fetchpriority="high">') if HOME_HERO_ITEMS else ""
     doc="""<!doctype html><html lang="%s"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
