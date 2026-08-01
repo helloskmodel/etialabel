@@ -256,25 +256,32 @@ def build_lang(records, lang):
 
     body += """<script>
 function cf(){
-  var q=(document.getElementById('cq').value||'').toLowerCase().trim();
+  var qEl=document.getElementById('cq');
+  var q=((qEl&&qEl.value)||'').toLowerCase().trim();
   var terms=q.split(/\\s+/).filter(Boolean);
   var sel={};
   document.querySelectorAll('.cfilters input:checked').forEach(function(c){
     (sel[c.dataset.g]=sel[c.dataset.g]||[]).push(c.dataset.v);});
-  var n=0;
-  document.querySelectorAll('.pcell').forEach(function(el){
-    var f=JSON.parse(el.getAttribute('data-f'));
-    var ok=true;
-    for(var g in sel){ if(!sel[g].some(function(v){return (f[g]||[]).indexOf(v)>=0;})){ok=false;break;} }
-    if(ok && terms.length){ ok=terms.every(function(t){return f.q.indexOf(t)>=0;}); }
+  var active=terms.length>0; for(var _g in sel){active=true;break;}
+  var cells=document.querySelectorAll('.pcell'), n=0;
+  cells.forEach(function(el){
+    var ok=true, f=null;
+    try{ f=JSON.parse(el.getAttribute('data-f')); }catch(e){ f=null; }
+    if(f){
+      for(var g in sel){ if(!sel[g].some(function(v){return (f[g]||[]).indexOf(v)>=0;})){ok=false;break;} }
+      if(ok && terms.length){ ok=terms.every(function(t){return (f.q||'').indexOf(t)>=0;}); }
+    } else { ok=!active; }   /* unparseable card: show it unless a filter is active */
     el.style.display=ok?'':'none'; if(ok)n++;
   });
-  document.getElementById('ccount').textContent=n;
-  document.getElementById('cnone').style.display=n?'none':'block';
+  /* safety net: with nothing selected, never show an empty list */
+  if(!active && n===0 && cells.length){ cells.forEach(function(el){el.style.display='';}); n=cells.length; }
+  var cc=document.getElementById('ccount'); if(cc) cc.textContent=n;
+  var cn=document.getElementById('cnone'); if(cn) cn.style.display=n?'none':'block';
 }
-function cReset(){document.getElementById('cq').value='';
+function cReset(){var q=document.getElementById('cq'); if(q) q.value='';
   document.querySelectorAll('.cfilters input:checked').forEach(function(c){c.checked=false;});cf();}
-cf();
+if(document.readyState!=='loading') cf();
+else document.addEventListener('DOMContentLoaded',cf);
 </script>"""
 
     crumb = [(ui["home"], "/"), (ui["products"], "/products/"), (ui["title"], PATH)]

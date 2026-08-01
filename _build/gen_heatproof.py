@@ -130,6 +130,11 @@ nav .ndm.sm{position:absolute;top:48px;left:0;background:#fff;border:1px solid v
 nav .nd.open .ndm.sm,nav .nd:hover .ndm.sm{opacity:1;visibility:visible;transform:translateY(0)}
 nav .ndm.sm a{display:block;font-size:14px;font-weight:600;color:var(--ink);padding:8px 14px;border-radius:9px;white-space:nowrap}
 nav .ndm.sm a:hover{background:var(--tint-blue);color:var(--blue);text-decoration:none}nav .ndm.mega{position:fixed;top:76px;left:50%;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 22px 56px rgba(20,40,90,.18);padding:22px 26px;display:grid;grid-template-columns:1fr 1fr;gap:10px 48px;width:min(920px,94vw);opacity:0;visibility:hidden;transform:translate(-50%,8px);transition:opacity .16s,transform .16s,visibility .16s;z-index:60}nav .ndm.mega::before{content:"";position:absolute;left:0;right:0;top:-18px;height:18px}.nd:hover .ndm.mega,nav .nd.open .ndm.mega{opacity:1;visibility:visible;transform:translate(-50%,0)}nav .ndm.mega a{display:block;min-width:0;padding:11px 14px;border-radius:10px;text-decoration:none}nav .ndm.mega a:hover{background:var(--tint-blue)}nav .ndm.mega a b{display:block;font-size:14.5px;color:var(--blue-deep);font-weight:700}nav .ndm.mega a:hover b{color:var(--blue)}nav .ndm.mega a span{display:block;font-size:12.5px;color:var(--mut);line-height:1.45;margin-top:2px}
+nav .ndm.mega .findrow{grid-column:1/-1;background:#eafbe3;border:1px solid #cdeebf;margin-bottom:4px}
+nav .ndm.mega .findrow b{color:var(--green-d)}
+nav .ndm.mega .findrow:hover{background:#e0f6d4}
+nav .ndm.mega .findrow:hover b{color:var(--green-d)}
+.ndmob a.ndma.find{color:var(--green-d);font-weight:700}
 .ndmob{display:none}
 @media(max-width:980px){nav .ndm.pm{grid-template-columns:200px 1fr;left:16px}.pm .ndsub{display:none}}
 @media(max-width:900px){
@@ -716,10 +721,16 @@ def simple_dropdown(lang, top_en, top_href, items, is_active, linkfn, descs=None
     top = navlab(lang, top_en)
     mob = "".join('<a class="ndma" href="%s">%s</a>' % (linkfn(u), esc(lab(e, z))) for e, z, u in items)
     if descs:  # mega-menu panel: name + short description per item
-        desktop = "".join('<a href="%s"><b>%s</b><span>%s</span></a>' % (
+        find_lbl = P(lang,"Find a Label Material","查找标签材料","Tìm vật liệu nhãn","ค้นหาวัสดุฉลาก")
+        find_sub = P(lang,"Search by part number, material or application",
+                     "按料号、材料或应用搜索","Tìm theo mã, vật liệu hoặc ứng dụng","ค้นหาด้วยรหัส วัสดุ หรือการใช้งาน")
+        finder = ('<a class="findrow" href="%s"><b>&#128269; %s</b><span>%s</span></a>'
+                  % (linkfn("/products/find/"), esc(find_lbl), esc(find_sub)))
+        desktop = finder + "".join('<a href="%s"><b>%s</b><span>%s</span></a>' % (
             linkfn(u), esc(lab(e, z)), esc(descs.get(u, {}).get(lang) or descs.get(u, {}).get("en", "")))
             for e, z, u in items)
         panel = '<div class="ndm mega">%s</div>' % desktop
+        mob = ('<a class="ndma find" href="%s">&#128269; %s</a>' % (linkfn("/products/find/"), esc(find_lbl))) + mob
     else:
         desktop = "".join('<a href="%s">%s</a>' % (linkfn(u), esc(lab(e, z))) for e, z, u in items)
         panel = '<div class="ndm sm">%s</div>' % desktop
