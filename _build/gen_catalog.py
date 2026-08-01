@@ -512,12 +512,16 @@ def build_poly_cat(lang, slug):
     def L(d): return d.get(lang) or d["en"]
     head = "".join("<th>%s</th>" % esc(h) for h in ui["cols"])
     mat = lambda f: "PI" if f.startswith("pi") else ("PET" if f.startswith("pet") else "Nylon")
+    landing = set(os.path.splitext(f)[0] for f in os.listdir(PDIR) if f.endswith(".json"))
     body_rows = ""
     for model, film, fin, adh, temp, feats in c["rows"]:
         fb = "".join('<span class="feat %s">%s</span>' % (k, esc(L(POLY_FEAT[k]))) for k in feats)
         mtag = '<span class="matchip m-%s">%s</span>' % (mat(film).lower(), mat(film))
+        mslug = model.lower()
+        mcell = ('<a href="%s">%s</a>' % (hp.Lx(lang, "/products/item/%s/" % mslug), esc(model))) \
+            if mslug in landing else esc(model)
         body_rows += ("<tr><td class=\"mdl\">%s %s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>") % (
-            esc(model), mtag, esc(L(POLY_FILM[film])), esc(L(POLY_FIN[fin])), esc(adh), esc(POLY_TEMP[temp]), fb or "—")
+            mcell, mtag, esc(L(POLY_FILM[film])), esc(L(POLY_FIN[fin])), esc(adh), esc(POLY_TEMP[temp]), fb or "—")
     table = ('<div class="ptable-wrap"><table class="ptable"><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>'
              % (head, body_rows))
     body = POLY_CAT_CSS + ('<div class="pcat"><div class="eyebrow">%s</div><h1>%s</h1><p class="lede">%s</p>'

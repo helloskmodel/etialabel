@@ -1,0 +1,250 @@
+{
+  "slug": "xf-446",
+  "source": "Polyonics product brochure (PCB Labels)",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner": "",
+  "brand": "polyonics",
+  "industry": "pcb",
+  "product_img": "",
+  "title": {
+    "en": "XF-446 — 2 mil Gloss white Polyester PCB Label",
+    "zh": "XF-446 — 2 mil 亮白聚酯PCB 标签",
+    "vi": "XF-446 — Nhãn PCB polyester Trắng bóng 2 mil",
+    "th": "XF-446 — ฉลาก PCBโพลีเอสเตอร์ สีขาวเงา 2 mil"
+  },
+  "tagline": {
+    "en": "Polyester thermal-transfer label for PCB and electronics identification — high-temperature stable, chemical- and abrasion-resistant.",
+    "zh": "聚酯热转印标签，用于 PCB 与电子标识 —— 高温稳定，耐化学与耐磨。",
+    "vi": "Nhãn in nhiệt polyester cho nhận diện PCB và điện tử — ổn định nhiệt cao, kháng hóa chất và mài mòn.",
+    "th": "ฉลากพิมพ์ถ่ายเทความร้อนโพลีเอสเตอร์สำหรับการระบุ PCB และอิเล็กทรอนิกส์ — เสถียรอุณหภูมิสูง ทนสารเคมีและการขัดถู"
+  },
+  "positioning": {
+    "en": "POLYONICS XF-446 is a 2 mil (50µm) polyester thermal-transfer label with a high-temperature acrylic pressure-sensitive adhesive and a high-opacity gloss white topcoat. It stays dimensionally stable and legible through reflow, wave-solder and aqueous cleaning — for reliable PCB and electronics identification. It is static-dissipative for use in ESD-protected areas.",
+    "zh": "POLYONICS XF-446 采用2 mil（50µm）聚酯，配高温丙烯酸压敏胶与高遮盖亮白面涂层。经回流焊、波峰焊与水洗仍尺寸稳定、字迹清晰 —— 可靠标识 PCB 与电子产品。 具静电耗散性，适用于静电防护区。",
+    "vi": "POLYONICS XF-446 là nhãn in nhiệt polyester 2 mil (50µm) với keo acrylic PSA chịu nhiệt cao và lớp phủ trắng bóng độ mờ cao. Ổn định kích thước và rõ nét qua reflow, hàn sóng và rửa nước — nhận diện PCB và điện tử đáng tin cậy. Tiêu tán tĩnh, dùng trong khu vực bảo vệ ESD.",
+    "th": "POLYONICS XF-446 เป็นฉลากพิมพ์ถ่ายเทความร้อน โพลีเอสเตอร์ 2 mil (50µm) พร้อมกาว PSA อะคริลิกทนร้อนสูงและท็อปโค้ตสีขาวเงาทึบสูง คงเสถียรและอ่านได้ผ่านรีโฟลว์ เวฟโซลเดอร์ และการล้างน้ำ — ระบุ PCB และอิเล็กทรอนิกส์ได้อย่างเชื่อถือได้ กระจายประจุ ใช้ในพื้นที่ป้องกัน ESD"
+  },
+  "features": {
+    "en": [
+      "Thermal-transfer printable, high-opacity gloss white topcoat",
+      "Dimensionally stable across its rated temperature range",
+      "Chemical, abrasion and solvent resistant",
+      "Static-dissipative, low-charging (ESD-safe)",
+      "UL969 Recognized label material",
+      "REACH and RoHS compliant"
+    ],
+    "zh": [
+      "热转印高遮盖亮白面涂层",
+      "在额定温度范围内尺寸稳定",
+      "耐化学、耐磨、耐溶剂",
+      "静电耗散、低起电（防静电）",
+      "UL969 认证标签材料",
+      "符合 REACH 与 RoHS"
+    ],
+    "vi": [
+      "Lớp phủ trắng bóng độ mờ cao, in truyền nhiệt",
+      "Ổn định kích thước trong dải nhiệt định mức",
+      "Kháng hóa chất, mài mòn và dung môi",
+      "Tiêu tán tĩnh, ít tích điện (ESD-safe)",
+      "Vật liệu nhãn được UL969 công nhận",
+      "Tuân thủ REACH và RoHS"
+    ],
+    "th": [
+      "ท็อปโค้ตสีขาวเงาทึบสูง พิมพ์ถ่ายเทความร้อนได้",
+      "เสถียรมิติในช่วงอุณหภูมิที่กำหนด",
+      "ทนสารเคมี การขัดถู และตัวทำละลาย",
+      "กระจายประจุ ประจุต่ำ (ESD-safe)",
+      "วัสดุฉลากที่ได้รับการรับรอง UL969",
+      "สอดคล้อง REACH และ RoHS"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Property",
+        "Value"
+      ],
+      "zh": [
+        "属性",
+        "参数"
+      ],
+      "vi": [
+        "Thuộc tính",
+        "Giá trị"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "ค่า"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Film",
+            "zh": "面材",
+            "vi": "Màng",
+            "th": "ฟิล์ม"
+          },
+          {
+            "en": "2 mil (50µm) Polyester",
+            "zh": "2 mil（50µm）聚酯",
+            "vi": "Polyester 2 mil (50µm)",
+            "th": "โพลีเอสเตอร์ 2 mil (50µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Topcoat / finish",
+            "zh": "面涂层 / 表面",
+            "vi": "Lớp phủ / bề mặt",
+            "th": "ท็อปโค้ต / พื้นผิว"
+          },
+          {
+            "en": "Gloss white",
+            "zh": "亮白",
+            "vi": "Trắng bóng",
+            "th": "สีขาวเงา"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesive",
+            "zh": "胶粘剂",
+            "vi": "Keo",
+            "th": "กาว"
+          },
+          {
+            "en": "High-temperature acrylic PSA, 1 mil (25 µm) acrylic",
+            "zh": "高温丙烯酸压敏胶，1 mil (25 µm) acrylic",
+            "vi": "Keo acrylic PSA chịu nhiệt cao, 1 mil (25 µm) acrylic",
+            "th": "กาว PSA อะคริลิกทนร้อนสูง 1 mil (25 µm) acrylic"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Temperature",
+            "zh": "温度",
+            "vi": "Nhiệt độ",
+            "th": "อุณหภูมิ"
+          },
+          {
+            "en": "150 °C/100h · −40 to 204 °C op",
+            "zh": "150 °C/100h · −40 to 204 °C op",
+            "vi": "150 °C/100h · −40 to 204 °C op",
+            "th": "150 °C/100h · −40 to 204 °C op"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Compliance",
+            "zh": "合规",
+            "vi": "Tuân thủ",
+            "th": "การรับรอง"
+          },
+          {
+            "en": "UL969 · ANSI/ESD S20.20 · REACH · RoHS",
+            "zh": "UL969 · ANSI/ESD S20.20 · REACH · RoHS",
+            "vi": "UL969 · ANSI/ESD S20.20 · REACH · RoHS",
+            "th": "UL969 · ANSI/ESD S20.20 · REACH · RoHS"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Printing",
+            "zh": "打印",
+            "vi": "In ấn",
+            "th": "การพิมพ์"
+          },
+          {
+            "en": "Thermal transfer — full-resin ribbon recommended",
+            "zh": "热转印 —— 建议全树脂碳带",
+            "vi": "In truyền nhiệt — khuyến nghị ribbon full-resin",
+            "th": "พิมพ์ถ่ายเทความร้อน — แนะนำริบบอน full-resin"
+          }
+        ]
+      }
+    ],
+    "notes": {
+      "en": [
+        "Summary specification from the Polyonics product brochure — request the model datasheet for full adhesion, thickness and durability data."
+      ],
+      "zh": [
+        "摘自 Polyonics 产品手册的概要规格 —— 完整粘着、厚度与耐久数据请索取该型号数据表。"
+      ],
+      "vi": [
+        "Thông số tóm tắt từ brochure Polyonics — yêu cầu datasheet của model để có dữ liệu độ bám, độ dày và độ bền đầy đủ."
+      ],
+      "th": [
+        "ข้อมูลจำเพาะโดยสรุปจากโบรชัวร์ Polyonics — ขอเอกสารข้อมูลรุ่นสำหรับข้อมูลการยึดเกาะ ความหนา และความทนทานฉบับเต็ม"
+      ]
+    }
+  },
+  "applications": {
+    "en": [
+      "PCB identification",
+      "Electronic component and IC tracking",
+      "Product ID and asset tracking",
+      "Identification through high-temperature and harsh-chemical processes"
+    ],
+    "zh": [
+      "PCB 标识",
+      "电子元器件与 IC 追溯",
+      "产品标识与资产追踪",
+      "耐高温与强化学工艺的标识"
+    ],
+    "vi": [
+      "Nhận diện PCB",
+      "Theo dõi linh kiện và IC",
+      "ID sản phẩm và theo dõi tài sản",
+      "Nhận diện qua quy trình nhiệt cao và hóa chất mạnh"
+    ],
+    "th": [
+      "การระบุ PCB",
+      "การติดตามชิ้นส่วนและ IC",
+      "ID สินค้าและการติดตามทรัพย์สิน",
+      "การระบุผ่านกระบวนการอุณหภูมิสูงและสารเคมีรุนแรง"
+    ]
+  },
+  "certifications": {
+    "en": [
+      "UL969 Recognized",
+      "ANSI/ESD S20.20 · IEC 61340",
+      "REACH compliant",
+      "RoHS compliant"
+    ],
+    "zh": [
+      "UL969 认证",
+      "ANSI/ESD S20.20 · IEC 61340",
+      "符合 REACH",
+      "符合 RoHS"
+    ],
+    "vi": [
+      "Được UL969 công nhận",
+      "ANSI/ESD S20.20 · IEC 61340",
+      "Tuân thủ REACH",
+      "Tuân thủ RoHS"
+    ],
+    "th": [
+      "ได้รับการรับรอง UL969",
+      "ANSI/ESD S20.20 · IEC 61340",
+      "สอดคล้อง REACH",
+      "สอดคล้อง RoHS"
+    ]
+  }
+}

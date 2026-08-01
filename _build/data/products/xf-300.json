@@ -1,0 +1,234 @@
+{
+  "slug": "xf-300",
+  "source": "Polyonics product brochure (Cable & Wire Marking)",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner": "",
+  "brand": "polyonics",
+  "industry": "cable",
+  "product_img": "",
+  "title": {
+    "en": "XF-300 — 5 mil Flame-Retardant Woven-Nylon Wire-Marking Label",
+    "zh": "XF-300 — 5 mil 阻燃机织尼龙线缆标识标签",
+    "vi": "XF-300 — Nhãn đánh dấu dây Nylon dệt chống cháy 5 mil",
+    "th": "XF-300 — ฉลากทำเครื่องหมายสายไฟไนลอนทอหน่วงไฟ 5 mil"
+  },
+  "tagline": {
+    "en": "Flame-retardant woven-nylon label for wire, cable and harness marking — conformable, high-temperature acrylic adhesive.",
+    "zh": "阻燃机织尼龙标签，用于线缆与线束标识 —— 柔顺贴合，高温丙烯酸胶。",
+    "vi": "Nhãn nylon dệt chống cháy cho dây, cáp và bó dây — dẻo ôm, keo acrylic chịu nhiệt cao.",
+    "th": "ฉลากไนลอนทอหน่วงไฟสำหรับสายไฟ สายเคเบิล และชุดสายไฟ — ยืดหยุ่นแนบ กาวอะคริลิกทนร้อนสูง"
+  },
+  "positioning": {
+    "en": "POLYONICS XF-300 is a flame-retardant white woven nylon label for wire, cable and harness marking, built on a conformable self-laminating facestock with a high-temperature acrylic adhesive and designed for thermal-transfer printing.",
+    "zh": "POLYONICS XF-300 是一款阻燃白色机织尼龙标签，用于线缆与线束标识，采用柔顺自覆膜面材与高温丙烯酸胶，专为热转印设计。",
+    "vi": "POLYONICS XF-300 là nhãn nylon dệt trắng chống cháy cho dây, cáp và bó dây, trên mặt tự bọc dẻo với keo acrylic chịu nhiệt cao, thiết kế cho in truyền nhiệt.",
+    "th": "POLYONICS XF-300 เป็นฉลากไนลอนทอสีขาวหน่วงไฟสำหรับสายไฟ สายเคเบิล และชุดสายไฟ บนหน้าเคลือบในตัวที่ยืดหยุ่น พร้อมกาวอะคริลิกทนร้อนสูง ออกแบบสำหรับพิมพ์ถ่ายเทความร้อน"
+  },
+  "features": {
+    "en": [
+      "Flexible white woven-nylon facestock, conformable for wire and cable wrap",
+      "Self-laminating wrap-around marking",
+      "High-temperature acrylic adhesive",
+      "Thermal-transfer printable",
+      "Flame-retardant — UL94 VTM-0 rated"
+    ],
+    "zh": [
+      "柔顺白色机织尼龙面材，适合线缆环绕",
+      "自覆膜环绕标识",
+      "高温丙烯酸胶",
+      "可热转印",
+      "阻燃 —— UL94 VTM-0 认证"
+    ],
+    "vi": [
+      "Mặt nylon dệt trắng dẻo, ôm dây và cáp",
+      "Đánh dấu tự bọc quấn quanh",
+      "Keo acrylic chịu nhiệt cao",
+      "In truyền nhiệt",
+      "Chống cháy — đạt UL94 VTM-0"
+    ],
+    "th": [
+      "หน้าไนลอนทอสีขาวยืดหยุ่น แนบสายไฟและสายเคเบิล",
+      "การทำเครื่องหมายพันรอบแบบเคลือบในตัว",
+      "กาวอะคริลิกทนร้อนสูง",
+      "พิมพ์ถ่ายเทความร้อนได้",
+      "หน่วงไฟ — ได้รับ UL94 VTM-0"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Property",
+        "Value"
+      ],
+      "zh": [
+        "属性",
+        "参数"
+      ],
+      "vi": [
+        "Thuộc tính",
+        "Giá trị"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "ค่า"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Film",
+            "zh": "面材",
+            "vi": "Màng",
+            "th": "ฟิล์ม"
+          },
+          {
+            "en": "5 mil (125µm) Nylon",
+            "zh": "5 mil（125µm）尼龙",
+            "vi": "Nylon 5 mil (125µm)",
+            "th": "ไนลอน 5 mil (125µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Topcoat / finish",
+            "zh": "面涂层 / 表面",
+            "vi": "Lớp phủ / bề mặt",
+            "th": "ท็อปโค้ต / พื้นผิว"
+          },
+          {
+            "en": "White woven cloth",
+            "zh": "白色机织布",
+            "vi": "Vải dệt trắng",
+            "th": "ผ้าทอสีขาว"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesive",
+            "zh": "胶粘剂",
+            "vi": "Keo",
+            "th": "กาว"
+          },
+          {
+            "en": "High-temperature acrylic PSA, 2 mil (50 µm) high-temp acrylic",
+            "zh": "高温丙烯酸压敏胶，2 mil (50 µm) high-temp acrylic",
+            "vi": "Keo acrylic PSA chịu nhiệt cao, 2 mil (50 µm) high-temp acrylic",
+            "th": "กาว PSA อะคริลิกทนร้อนสูง 2 mil (50 µm) high-temp acrylic"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Temperature",
+            "zh": "温度",
+            "vi": "Nhiệt độ",
+            "th": "อุณหภูมิ"
+          },
+          {
+            "en": "180 °C/5min · 110 °C/30d · −196 °C cryo",
+            "zh": "180 °C/5min · 110 °C/30d · −196 °C cryo",
+            "vi": "180 °C/5min · 110 °C/30d · −196 °C cryo",
+            "th": "180 °C/5min · 110 °C/30d · −196 °C cryo"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Compliance",
+            "zh": "合规",
+            "vi": "Tuân thủ",
+            "th": "การรับรอง"
+          },
+          {
+            "en": "UL94 VTM-0",
+            "zh": "UL94 VTM-0",
+            "vi": "UL94 VTM-0",
+            "th": "UL94 VTM-0"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Printing",
+            "zh": "打印",
+            "vi": "In ấn",
+            "th": "การพิมพ์"
+          },
+          {
+            "en": "Thermal transfer — full-resin ribbon recommended",
+            "zh": "热转印 —— 建议全树脂碳带",
+            "vi": "In truyền nhiệt — khuyến nghị ribbon full-resin",
+            "th": "พิมพ์ถ่ายเทความร้อน — แนะนำริบบอน full-resin"
+          }
+        ]
+      }
+    ],
+    "notes": {
+      "en": [
+        "Summary specification from the Polyonics product brochure — request the model datasheet for full adhesion, thickness and durability data."
+      ],
+      "zh": [
+        "摘自 Polyonics 产品手册的概要规格 —— 完整粘着、厚度与耐久数据请索取该型号数据表。"
+      ],
+      "vi": [
+        "Thông số tóm tắt từ brochure Polyonics — yêu cầu datasheet của model để có dữ liệu độ bám, độ dày và độ bền đầy đủ."
+      ],
+      "th": [
+        "ข้อมูลจำเพาะโดยสรุปจากโบรชัวร์ Polyonics — ขอเอกสารข้อมูลรุ่นสำหรับข้อมูลการยึดเกาะ ความหนา และความทนทานฉบับเต็ม"
+      ]
+    }
+  },
+  "applications": {
+    "en": [
+      "Wire and cable marking",
+      "Harness identification",
+      "Self-laminating wrap-around labels",
+      "Panel and component identification"
+    ],
+    "zh": [
+      "线缆标识",
+      "线束识别",
+      "自覆膜环绕标签",
+      "面板与元件标识"
+    ],
+    "vi": [
+      "Đánh dấu dây và cáp",
+      "Nhận diện bó dây",
+      "Nhãn tự bọc quấn quanh",
+      "Nhận diện bảng và linh kiện"
+    ],
+    "th": [
+      "การทำเครื่องหมายสายไฟและสายเคเบิล",
+      "การระบุชุดสายไฟ",
+      "ฉลากพันรอบแบบเคลือบในตัว",
+      "การระบุแผงและชิ้นส่วน"
+    ]
+  },
+  "certifications": {
+    "en": [
+      "UL94 VTM-0"
+    ],
+    "zh": [
+      "UL94 VTM-0"
+    ],
+    "vi": [
+      "UL94 VTM-0"
+    ],
+    "th": [
+      "UL94 VTM-0"
+    ]
+  }
+}
