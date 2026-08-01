@@ -1592,7 +1592,7 @@ HOME_HERO_ITEMS = [
 
 _HOME_HERO_CSS = """<style>
 .hhero{background:linear-gradient(155deg,#eef3ff 0%,#edf6ec 100%);border-bottom:1px solid var(--line)}
-.hhero-in{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center;padding:52px 0 56px}
+.hhero-in{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;padding:44px 0 48px}
 .hhero-pill{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 15px;box-shadow:0 6px 16px rgba(16,34,58,.08);font-weight:700;color:var(--blue-deep);font-size:13px;line-height:1.3}
 .hhero-pill .ck{color:var(--green);display:grid;place-items:center;flex:none}
 .hhero h1{font-family:var(--sans);font-weight:800;color:var(--blue-deep);letter-spacing:-.01em;font-size:clamp(30px,4.4vw,46px);line-height:1.06;margin:18px 0 8px;max-width:16ch}
@@ -1601,17 +1601,14 @@ _HOME_HERO_CSS = """<style>
 .hhbtn{font-family:var(--sans);font-weight:700;font-size:15px;border-radius:11px;padding:14px 24px;text-decoration:none;border:1.5px solid transparent;display:inline-block}
 .hhbtn.pri{background:var(--green);color:#fff}
 .hhbtn.gho{background:#fff;border-color:var(--line);color:var(--blue-deep)}
-.hhwin{position:relative;min-height:360px;border-radius:20px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 24px 60px rgba(16,34,58,.15)}
-.hhslide{position:absolute;inset:0;display:flex;flex-direction:column;text-decoration:none;color:inherit;opacity:0;transition:opacity .5s ease;pointer-events:none}
+.hhwin{position:relative;aspect-ratio:16/11;max-height:300px;margin-left:auto;width:100%;max-width:440px;border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 20px 48px rgba(16,34,58,.15)}
+.hhslide{position:absolute;inset:0;text-decoration:none;color:inherit;opacity:0;transition:opacity .5s ease;pointer-events:none}
 .hhslide.on{opacity:1;pointer-events:auto}
-.hhslide img{width:100%;height:73%;object-fit:cover;background:#e8eefb;display:block}
-.hhmeta{padding:14px 18px}
-.hhmeta b{display:block;font-size:18px;color:var(--blue-deep);font-weight:800;line-height:1.2}
-.hhmeta span{font-size:13.5px;color:var(--mut)}
-.hhdots{position:absolute;top:13px;right:14px;display:flex;gap:6px;z-index:2}
-.hhdots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.75);box-shadow:0 0 0 1px rgba(16,34,58,.12);cursor:pointer}
+.hhslide img{width:100%;height:100%;object-fit:cover;background:#e8eefb;display:block}
+.hhdots{position:absolute;bottom:12px;right:14px;display:flex;gap:6px;z-index:2}
+.hhdots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.8);box-shadow:0 0 0 1px rgba(16,34,58,.14);cursor:pointer}
 .hhdots i.on{width:22px;border-radius:5px;background:var(--green)}
-@media(max-width:860px){.hhero-in{grid-template-columns:1fr;gap:24px;padding:30px 0 34px}.hhwin{min-height:300px}.hhslide img{height:70%}}
+@media(max-width:860px){.hhero-in{grid-template-columns:1fr;gap:22px;padding:28px 0 32px}.hhwin{max-width:100%;margin:0;max-height:260px}}
 </style>"""
 
 def home_hero(lang):
@@ -1630,10 +1627,8 @@ def home_hero(lang):
     slides, dots = "", ""
     for k,(url,img,nm,ln) in enumerate(HOME_HERO_ITEMS):
         on = " on" if k==0 else ""
-        slides += ('<a class="hhslide%s" href="%s"><img src="%s" alt="%s" loading="%s" onerror="this.style.display=\'none\'">'
-                   '<div class="hhmeta"><b>%s</b><span>%s</span></div></a>') % (
-            on, home_hlink(lang,url), esc(img), esc(nm[j]),
-            "eager" if k==0 else "lazy", esc(nm[j]), esc(ln[j]))
+        slides += ('<a class="hhslide%s" href="%s" aria-label="%s"><img src="%s" alt="%s" loading="%s" onerror="this.style.display=\'none\'"></a>') % (
+            on, home_hlink(lang,url), esc(nm[j]), esc(img), esc(nm[j]), "eager" if k==0 else "lazy")
         dots += '<i class="%s"></i>' % ("on" if k==0 else "")
     check = '<span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>'
     script = ("<script>(function(){var w=document.getElementById('hhwin');if(!w)return;"
