@@ -1,0 +1,206 @@
+{
+  "slug": "hp-cbr-cx2",
+  "source": "ETIA-TECH HP-CBR CX2 Technical Data Sheet",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner": "",
+  "brand": "etia",
+  "industry": "steel",
+  "product_img": "",
+  "title": {
+    "en": "HP-CBR CX2 — 1200 °C Ceramic & Glass Label",
+    "zh": "HP-CBR CX2 —— 1200 °C 陶瓷与玻璃高温标签",
+    "vi": "HP-CBR CX2 — Nhãn gốm & thủy tinh 1200 °C",
+    "th": "HP-CBR CX2 — ฉลากเซรามิกและแก้ว 1200 °C"
+  },
+  "tagline": {
+    "en": "High-temperature label for ceramic, glass and metal exposed up to 1200 °C — thermal-shock resistant and highly durable.",
+    "zh": "用于陶瓷、玻璃与金属的高温标签，可耐受高达 1200 °C —— 耐热冲击、耐久性强。",
+    "vi": "Nhãn nhiệt độ cao cho gốm, thủy tinh và kim loại phơi đến 1200 °C — chịu sốc nhiệt và độ bền cao.",
+    "th": "ฉลากทนอุณหภูมิสูงสำหรับเซรามิก แก้ว และโลหะที่สัมผัสถึง 1200 °C — ทนช็อกความร้อนและทนทานสูง"
+  },
+  "positioning": {
+    "en": "HP-CBR CX2 is a high-temperature label built for ceramic, glass and metal products exposed to temperatures up to about 1200 °C. It withstands thermal shock and offers high durability. Permanent bonding to the object forms during exposure at 300 °C or higher.",
+    "zh": "HP-CBR CX2 是一款高温标签，专为暴露于约 1200 °C 的陶瓷、玻璃与金属产品设计，耐热冲击、耐久性强。在 300 °C 及以上暴露过程中与工件形成永久粘接。",
+    "vi": "HP-CBR CX2 là nhãn nhiệt độ cao cho sản phẩm gốm, thủy tinh và kim loại phơi đến khoảng 1200 °C. Chịu sốc nhiệt và độ bền cao. Liên kết vĩnh viễn hình thành khi phơi ở 300 °C trở lên.",
+    "th": "HP-CBR CX2 เป็นฉลากทนอุณหภูมิสูงสำหรับเซรามิก แก้ว และโลหะที่สัมผัสถึงประมาณ 1200 °C ทนช็อกความร้อนและทนทานสูง การยึดถาวรเกิดขึ้นเมื่อสัมผัสที่ 300 °C ขึ้นไป"
+  },
+  "features": {
+    "en": [
+      "Heat-resistant up to 1200 °C",
+      "Thermal-shock resistant",
+      "High durability",
+      "Thermal-transfer printable (YS-4 ribbon)"
+    ],
+    "zh": [
+      "耐热达 1200 °C",
+      "耐热冲击",
+      "高耐久性",
+      "可热转印（YS-4 碳带）"
+    ],
+    "vi": [
+      "Chịu nhiệt đến 1200 °C",
+      "Chịu sốc nhiệt",
+      "Độ bền cao",
+      "In truyền nhiệt (ribbon YS-4)"
+    ],
+    "th": [
+      "ทนความร้อนถึง 1200 °C",
+      "ทนช็อกความร้อน",
+      "ทนทานสูง",
+      "พิมพ์ถ่ายเทความร้อนได้ (ริบบอน YS-4)"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Property",
+        "Value"
+      ],
+      "zh": [
+        "属性",
+        "参数"
+      ],
+      "vi": [
+        "Thuộc tính",
+        "Giá trị"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "ค่า"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Heat resistance",
+            "zh": "耐热",
+            "vi": "Chịu nhiệt",
+            "th": "ทนความร้อน"
+          },
+          {
+            "en": "Up to 1200 °C",
+            "zh": "达 1200 °C",
+            "vi": "Đến 1200 °C",
+            "th": "ถึง 1200 °C"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Label core",
+            "zh": "标签基材",
+            "vi": "Lõi nhãn",
+            "th": "แกนฉลาก"
+          },
+          {
+            "en": "Organic film (15 µm)",
+            "zh": "有机薄膜（15 µm）",
+            "vi": "Màng hữu cơ (15 µm)",
+            "th": "ฟิล์มอินทรีย์ (15 µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesion",
+            "zh": "粘着力",
+            "vi": "Độ bám",
+            "th": "การยึดเกาะ"
+          },
+          {
+            "en": "Acrylic (10 µm)",
+            "zh": "丙烯酸（10 µm）",
+            "vi": "Acrylic (10 µm)",
+            "th": "อะคริลิก (10 µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Printing",
+            "zh": "打印",
+            "vi": "In ấn",
+            "th": "การพิมพ์"
+          },
+          {
+            "en": "Thermal transfer — YS-4 ribbon",
+            "zh": "热转印 —— YS-4 碳带",
+            "vi": "In truyền nhiệt — ribbon YS-4",
+            "th": "พิมพ์ถ่ายเทความร้อน — ริบบอน YS-4"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Construction (top → bottom)",
+            "zh": "结构（自上而下）",
+            "vi": "Cấu tạo (trên → dưới)",
+            "th": "โครงสร้าง (บน → ล่าง)"
+          },
+          {
+            "en": "Inorganic white coating 7 µm · organic core 15 µm · acrylic adhesive 10 µm · silicone-coated paper separator 110 µm.",
+            "zh": "无机白色涂层 7 µm · 有机基材 15 µm · 丙烯酸胶 10 µm · 硅涂离型纸 110 µm。",
+            "vi": "Phủ trắng vô cơ 7 µm · lõi hữu cơ 15 µm · keo acrylic 10 µm · giấy tách phủ silicone 110 µm.",
+            "th": "เคลือบขาวอนินทรีย์ 7 µm · แกนอินทรีย์ 15 µm · กาวอะคริลิก 10 µm · ไลเนอร์กระดาษเคลือบซิลิโคน 110 µm"
+          }
+        ]
+      }
+    ],
+    "notes": {
+      "en": [
+        "Permanent bonding requires exposure at 300 °C or higher.",
+        "Values are typical, not specifications; verify against the datasheet and by application testing."
+      ],
+      "zh": [
+        "永久粘接需在 300 °C 及以上暴露。",
+        "数值为典型值，非规格值；请以数据表并经应用测试确认。"
+      ],
+      "vi": [
+        "Liên kết vĩnh viễn cần phơi ở 300 °C trở lên.",
+        "Giá trị là điển hình, không phải thông số kỹ thuật; hãy xác minh theo datasheet và thử nghiệm ứng dụng."
+      ],
+      "th": [
+        "การยึดถาวรต้องสัมผัสที่ 300 °C ขึ้นไป",
+        "ค่าเป็นค่าทั่วไป ไม่ใช่สเปก โปรดตรวจสอบกับเอกสารข้อมูลและการทดสอบการใช้งาน"
+      ]
+    }
+  },
+  "applications": {
+    "en": [
+      "Ceramic, glass and metal products exposed up to ~1200 °C",
+      "Kiln and furnace product tracking",
+      "High-temperature material identification"
+    ],
+    "zh": [
+      "暴露于约 1200 °C 的陶瓷、玻璃与金属产品",
+      "窑炉产品追踪",
+      "高温材料标识"
+    ],
+    "vi": [
+      "Sản phẩm gốm, thủy tinh và kim loại phơi đến ~1200 °C",
+      "Theo dõi sản phẩm lò nung",
+      "Nhận diện vật liệu nhiệt độ cao"
+    ],
+    "th": [
+      "ผลิตภัณฑ์เซรามิก แก้ว และโลหะที่สัมผัสถึง ~1200 °C",
+      "การติดตามผลิตภัณฑ์ในเตาเผา",
+      "การระบุวัสดุอุณหภูมิสูง"
+    ]
+  },
+  "certifications": {
+    "en": [],
+    "zh": [],
+    "vi": [],
+    "th": []
+  }
+}

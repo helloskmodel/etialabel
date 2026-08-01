@@ -1,233 +1,269 @@
 {
- "slug": "steel-metal-ceramic-labeling-solutions",
- "source": "_docs/sources/steel/",
- "langs": [
-  "en",
-  "zh",
-  "vi",
-  "th"
- ],
- "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER",
- "seo_title": {
-  "en": "Heat-Resistant Label Applications for the Steel Industry",
-  "zh": "钢铁行业耐高温标签应用",
-  "vi": "Ứng dụng nhãn chịu nhiệt trong ngành thép",
-  "th": "การใช้งานฉลากทนความร้อนในอุตสาหกรรมเหล็ก"
- },
- "seo_desc": {
-  "en": "Heat-Resistant Label Applications for the Steel Industry | 750℃ Direct Hot Application · Pickling & Annealing Traceability",
-  "zh": "钢铁行业耐高温标签应用 | 750℃ 热态直贴 · 酸洗退火追溯",
-  "vi": "Ứng dụng nhãn chịu nhiệt trong ngành thép | Dán trực tiếp 750℃ · Truy xuất qua tẩy gỉ và ủ",
-  "th": "การใช้งานฉลากทนความร้อนในอุตสาหกรรมเหล็ก | ติดโดยตรงที่ 750℃ · การสอบกลับผ่านการกัดกรดและอบอ่อน"
- },
- "hero": {
-  "eyebrow": {
-   "en": "By Industry · Steel",
-   "zh": "按行业 · 钢铁",
-   "vi": "Theo ngành · Thép",
-   "th": "ตามอุตสาหกรรม · เหล็ก"
+  "slug": "steel-metal-ceramic-labeling-solutions",
+  "source": "_docs/sources/steel/",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-BANNER",
+  "seo_title": {
+    "en": "Heat-Resistant Label Applications for the Steel Industry",
+    "zh": "钢铁行业耐高温标签应用",
+    "vi": "Ứng dụng nhãn chịu nhiệt trong ngành thép",
+    "th": "การใช้งานฉลากทนความร้อนในอุตสาหกรรมเหล็ก"
   },
-  "title": {
-   "en": "Steel & Ceramics Labeling Solution",
-   "zh": "钢铁与陶瓷标签解决方案",
-   "vi": "Giải pháp nhãn thép & gốm sứ",
-   "th": "โซลูชันฉลากเหล็กและเซรามิก"
+  "seo_desc": {
+    "en": "Heat-Resistant Label Applications for the Steel Industry | 750℃ Direct Hot Application · Pickling & Annealing Traceability",
+    "zh": "钢铁行业耐高温标签应用 | 750℃ 热态直贴 · 酸洗退火追溯",
+    "vi": "Ứng dụng nhãn chịu nhiệt trong ngành thép | Dán trực tiếp 750℃ · Truy xuất qua tẩy gỉ và ủ",
+    "th": "การใช้งานฉลากทนความร้อนในอุตสาหกรรมเหล็ก | ติดโดยตรงที่ 750℃ · การสอบกลับผ่านการกัดกรดและอบอ่อน"
   },
-  "slogan": {
-   "en": "Withstand Extreme Heat. Enable End-to-End Traceability",
-   "zh": "耐受极端高温，实现全程可追溯",
-   "vi": "Chịu nhiệt độ khắc nghiệt, truy xuất nguồn gốc toàn trình",
-   "th": "ทนความร้อนสูงสุดขั้ว ตรวจสอบย้อนกลับได้ตลอดสาย"
-  }
- },
- "overview": {
-  "zh": [
-   "HEATPROOF 标签与吊牌为历经高温工艺的工件提供可靠的标识与条码，强化全程可追溯性与库存准确度，同时减少错标、提升作业安全并降低人工成本"
-  ],
-  "en": [
-   "HEATPROOF labels and tags deliver reliable identification and barcoding for components that pass through high-temperature processes — strengthening traceability and inventory accuracy while reducing misidentification, improving workplace safety, and lowering labor costs."
-  ],
-  "vi": [
-   "Nhãn và thẻ HEATPROOF mang lại khả năng nhận diện và mã vạch đáng tin cậy cho các chi tiết trải qua quy trình nhiệt độ cao — củng cố truy xuất nguồn gốc và độ chính xác tồn kho, đồng thời giảm nhầm lẫn, nâng cao an toàn lao động và giảm chi phí nhân công."
-  ],
-  "th": [
-   "ฉลากและแท็ก HEATPROOF มอบการระบุและบาร์โค้ดที่เชื่อถือได้สำหรับชิ้นงานที่ผ่านกระบวนการอุณหภูมิสูง เสริมความสามารถในการตรวจสอบย้อนกลับและความแม่นยำของสินค้าคงคลัง พร้อมลดการระบุผิด เพิ่มความปลอดภัยในการทำงาน และลดต้นทุนแรงงาน"
+  "hero": {
+    "eyebrow": {
+      "en": "By Industry · Steel",
+      "zh": "按行业 · 钢铁",
+      "vi": "Theo ngành · Thép",
+      "th": "ตามอุตสาหกรรม · เหล็ก"
+    },
+    "title": {
+      "en": "Steel & Ceramics Labeling Solution",
+      "zh": "钢铁与陶瓷标签解决方案",
+      "vi": "Giải pháp nhãn thép & gốm sứ",
+      "th": "โซลูชันฉลากเหล็กและเซรามิก"
+    },
+    "slogan": {
+      "en": "Withstand Extreme Heat. Enable End-to-End Traceability",
+      "zh": "耐受极端高温，实现全程可追溯",
+      "vi": "Chịu nhiệt độ khắc nghiệt, truy xuất nguồn gốc toàn trình",
+      "th": "ทนความร้อนสูงสุดขั้ว ตรวจสอบย้อนกลับได้ตลอดสาย"
+    }
+  },
+  "overview": {
+    "zh": [
+      "HEATPROOF 标签与吊牌为历经高温工艺的工件提供可靠的标识与条码，强化全程可追溯性与库存准确度，同时减少错标、提升作业安全并降低人工成本"
+    ],
+    "en": [
+      "HEATPROOF labels and tags deliver reliable identification and barcoding for components that pass through high-temperature processes — strengthening traceability and inventory accuracy while reducing misidentification, improving workplace safety, and lowering labor costs."
+    ],
+    "vi": [
+      "Nhãn và thẻ HEATPROOF mang lại khả năng nhận diện và mã vạch đáng tin cậy cho các chi tiết trải qua quy trình nhiệt độ cao — củng cố truy xuất nguồn gốc và độ chính xác tồn kho, đồng thời giảm nhầm lẫn, nâng cao an toàn lao động và giảm chi phí nhân công."
+    ],
+    "th": [
+      "ฉลากและแท็ก HEATPROOF มอบการระบุและบาร์โค้ดที่เชื่อถือได้สำหรับชิ้นงานที่ผ่านกระบวนการอุณหภูมิสูง เสริมความสามารถในการตรวจสอบย้อนกลับและความแม่นยำของสินค้าคงคลัง พร้อมลดการระบุผิด เพิ่มความปลอดภัยในการทำงาน และลดต้นทุนแรงงาน"
+    ]
+  },
+  "classify_by": {
+    "en": "Choose a category",
+    "zh": "选择应用分类",
+    "vi": "Chọn danh mục",
+    "th": "เลือกหมวดหมู่"
+  },
+  "tiers": [
+    {
+      "tab": "Direct Applied",
+      "name": {
+        "en": "Direct Applied Series",
+        "zh": "直贴系列",
+        "vi": "Dòng dán trực tiếp",
+        "th": "ซีรีส์ติดโดยตรง"
+      },
+      "intro": {
+        "en": "Heat-activated, ultra-high-temperature direct application. A dry adhesive system stays non-tacky at room temperature, activates on contact with the hot surface, and maintains strong adhesion even after cooling.",
+        "zh": "热激活、超高温直贴。干式胶粘系统常温不粘，接触热表面即激活，冷却后仍保持强力粘接",
+        "vi": "Kích hoạt bằng nhiệt, dán trực tiếp ở nhiệt độ siêu cao. Hệ keo khô không dính ở nhiệt độ phòng, kích hoạt khi tiếp xúc bề mặt nóng và duy trì độ bám chắc ngay cả sau khi nguội.",
+        "th": "กระตุ้นด้วยความร้อน ติดโดยตรงที่อุณหภูมิสูงยิ่งยวด ระบบกาวแห้งไม่เหนียวที่อุณหภูมิห้อง กระตุ้นเมื่อสัมผัสพื้นผิวร้อน และคงการยึดเกาะแน่นแม้หลังเย็นตัว"
+      },
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP900",
+      "products": [
+        {
+          "name": "HP-700T",
+          "line": {
+            "en": "450–800°C · brass foil",
+            "zh": "450–800°C · 黄铜箔",
+            "vi": "450–800°C · lá đồng thau",
+            "th": "450–800°C · แผ่นทองเหลือง"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-700t"
+        },
+        {
+          "name": "HP-600",
+          "line": {
+            "en": "Up to 800°C · glass & metal, high adhesion",
+            "zh": "耐 800°C · 玻璃与金属，高附着",
+            "vi": "Đến 800°C · kính & kim loại, bám dính cao",
+            "th": "ถึง 800°C · แก้วและโลหะ ยึดเกาะสูง"
+          },
+          "img": "",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": "HP-901",
+          "line": {
+            "en": "Up to 1000°C · nickel foil, uneven surfaces",
+            "zh": "耐 1000°C · 镍箔，适应不平整表面",
+            "vi": "Đến 1000°C · lá niken, bề mặt gồ ghề",
+            "th": "ถึง 1000°C · แผ่นนิกเกิล พื้นผิวไม่เรียบ"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-901"
+        }
+      ]
+    },
+    {
+      "tab": "HT Labels",
+      "name": {
+        "en": "Heat-Treatment Labels",
+        "zh": "热处理标签",
+        "vi": "Nhãn xử lý nhiệt",
+        "th": "ฉลากอบชุบความร้อน"
+      },
+      "intro": {
+        "en": "Heat-resistant labels engineered for annealing, homogenizing, and other reheat processes, keeping barcodes legible throughout demanding thermal cycles.",
+        "zh": "专为退火、均热及其他再加热工艺设计的耐高温标签，在严苛热循环中保持条码清晰可读",
+        "vi": "Nhãn chịu nhiệt được thiết kế cho ủ, đồng nhất hóa và các quy trình gia nhiệt lại khác, giữ mã vạch rõ nét xuyên suốt các chu kỳ nhiệt khắc nghiệt.",
+        "th": "ฉลากทนความร้อนที่ออกแบบมาสำหรับการอบอ่อน การทำให้เป็นเนื้อเดียว และกระบวนการให้ความร้อนซ้ำอื่นๆ คงบาร์โค้ดให้อ่านได้ชัดตลอดวัฏจักรความร้อนที่เข้มงวด"
+      },
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP2080",
+      "products": [
+        {
+          "name": "HP-X2080",
+          "line": {
+            "en": "Up to 1200°C · fast heating to 65°C/min",
+            "zh": "耐 1200°C · 升温可达 65°C/min",
+            "vi": "Đến 1200°C · gia nhiệt nhanh tới 65°C/phút",
+            "th": "ถึง 1200°C · ให้ความร้อนเร็วถึง 65°C/นาที"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-x2080"
+        },
+        {
+          "name": "HP-360",
+          "line": {
+            "en": "Up to 600°C · aluminum foil, heat-treatment",
+            "zh": "耐 600°C · 铝箔，热处理",
+            "vi": "Đến 600°C · lá nhôm, xử lý nhiệt",
+            "th": "ถึง 600°C · ฟอยล์อะลูมิเนียม อบชุบ"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-360"
+        },
+        {
+          "name": "HP-120S",
+          "line": {
+            "en": "Up to 220°C · chemical-resistant, aluminum foil",
+            "zh": "耐 220°C · 耐化学，铝箔",
+            "vi": "Đến 220°C · kháng hóa chất, lá nhôm",
+            "th": "ถึง 220°C · ทนสารเคมี ฟอยล์อะลูมิเนียม"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-120s"
+        }
+      ]
+    },
+    {
+      "tab": "HT Tags",
+      "name": {
+        "en": "Heat-Treatment Tags",
+        "zh": "热处理吊牌",
+        "vi": "Thẻ treo xử lý nhiệt",
+        "th": "แท็กอบชุบความร้อน"
+      },
+      "intro": {
+        "en": "Durable tags for heat-treatment process management, rated to 1,200°C. Fixed to metal products — including hot steel straight from casting — they withstand repeated reheat cycles, pickling, acid baths, and galvanizing, so parts need no re-identification between stages.",
+        "zh": "用于热处理工艺管理的耐用吊牌，耐温可达 1,200°C。可固定于钢等各类金属产品（含铸造后的热态钢件），承受反复的再加热循环、酸洗、酸浸与热镀锌，各工序间无需重新标识",
+        "vi": "Thẻ bền cho quản lý quy trình xử lý nhiệt, chịu đến 1.200°C. Được gắn lên sản phẩm kim loại — kể cả thép nóng vừa ra khỏi khuôn đúc — chịu được các chu kỳ gia nhiệt lại lặp lại, tẩy gỉ, ngâm axit và mạ kẽm, nên chi tiết không cần nhận diện lại giữa các công đoạn.",
+        "th": "แท็กทนทานสำหรับการจัดการกระบวนการอบชุบความร้อน ทนได้ถึง 1,200°C ยึดกับผลิตภัณฑ์โลหะ รวมถึงเหล็กร้อนที่เพิ่งออกจากการหล่อ ทนวัฏจักรการให้ความร้อนซ้ำ การกัดกรด การแช่กรด และการชุบสังกะสี จึงไม่ต้องระบุชิ้นงานใหม่ระหว่างขั้นตอน"
+      },
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HPL85V2",
+      "products": [
+        {
+          "name": "HP-L90",
+          "line": {
+            "en": "Up to 1200°C · stainless-steel tag",
+            "zh": "耐 1200°C · 不锈钢吊牌",
+            "vi": "Đến 1200°C · thẻ thép không gỉ",
+            "th": "ถึง 1200°C · แท็กสแตนเลส"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-l90"
+        },
+        {
+          "name": "HP-L80",
+          "line": {
+            "en": "Up to 1000°C · acid-resistant tag",
+            "zh": "耐 1000°C · 耐酸吊牌",
+            "vi": "Đến 1000°C · thẻ chống axit",
+            "th": "ถึง 1000°C · แท็กทนกรด"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-l80"
+        },
+        {
+          "name": "HP-M83",
+          "line": {
+            "en": "850°C · magnetic, acid-resistant tag",
+            "zh": "850°C · 磁性耐酸吊牌",
+            "vi": "850°C · thẻ từ tính, chống axit",
+            "th": "850°C · แท็กแม่เหล็ก ทนกรด"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-m83"
+        }
+      ]
+    },
+    {
+      "tab": "Ceramic Transfer",
+      "name": {
+        "en": "Ceramic Transfer",
+        "zh": "陶瓷转印",
+        "vi": "Chuyển in gốm sứ",
+        "th": "ถ่ายโอนเซรามิก"
+      },
+      "intro": {
+        "en": "Transfer labels for ceramic and sanitary-ware firing at roughly 1,000–1,250°C. Applied right after forming, the printed marking fuses permanently into the workpiece during firing — enabling full production management from the earliest manufacturing stage.",
+        "zh": "用于陶瓷与卫浴约 1,000–1,250°C 烧制的转印标签。成型后即可贴附，烧制过程中印刷标记永久熔附于工件，实现自制造最初工序起的全流程生产管理",
+        "vi": "Nhãn chuyển in cho nung gốm sứ và thiết bị vệ sinh ở khoảng 1.000–1.250°C. Dán ngay sau khi tạo hình, dấu in được nung chảy vĩnh viễn vào chi tiết trong quá trình nung — cho phép quản lý sản xuất toàn diện từ công đoạn chế tạo sớm nhất.",
+        "th": "ฉลากถ่ายโอนสำหรับการเผาเซรามิกและสุขภัณฑ์ที่ประมาณ 1,000–1,250°C ติดทันทีหลังขึ้นรูป เครื่องหมายที่พิมพ์จะหลอมติดถาวรเข้ากับชิ้นงานระหว่างการเผา ทำให้จัดการการผลิตได้อย่างครบถ้วนตั้งแต่ขั้นตอนการผลิตแรกสุด"
+      },
+      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP-CBR11",
+      "products": [
+        {
+          "name": "HP-CBR11",
+          "line": {
+            "en": "Up to 1250°C · ceramic & sanitary ware",
+            "zh": "耐 1250°C · 陶瓷与卫浴适用",
+            "vi": "Đến 1250°C · gốm sứ & thiết bị vệ sinh",
+            "th": "ถึง 1250°C · เซรามิกและสุขภัณฑ์"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-cbr11"
+        },
+        {
+          "name": "HP-CBR CX2",
+          "line": {
+            "en": "Up to 1200°C · ceramic & glass, thermal-shock",
+            "zh": "耐 1200°C · 陶瓷与玻璃，耐热冲击",
+            "vi": "Đến 1200°C · gốm & thủy tinh, sốc nhiệt",
+            "th": "ถึง 1200°C · เซรามิกและแก้ว ทนช็อกความร้อน"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "hp-cbr-cx2"
+        }
+      ]
+    }
   ]
- },
- "classify_by": {
-  "en": "Choose a category",
-  "zh": "选择应用分类",
-  "vi": "Chọn danh mục",
-  "th": "เลือกหมวดหมู่"
- },
- "tiers": [
-  {
-   "tab": "Direct Applied",
-   "name": {
-    "en": "Direct Applied Series",
-    "zh": "直贴系列",
-    "vi": "Dòng dán trực tiếp",
-    "th": "ซีรีส์ติดโดยตรง"
-   },
-   "intro": {
-    "en": "Heat-activated, ultra-high-temperature direct application. A dry adhesive system stays non-tacky at room temperature, activates on contact with the hot surface, and maintains strong adhesion even after cooling.",
-    "zh": "热激活、超高温直贴。干式胶粘系统常温不粘，接触热表面即激活，冷却后仍保持强力粘接",
-    "vi": "Kích hoạt bằng nhiệt, dán trực tiếp ở nhiệt độ siêu cao. Hệ keo khô không dính ở nhiệt độ phòng, kích hoạt khi tiếp xúc bề mặt nóng và duy trì độ bám chắc ngay cả sau khi nguội.",
-    "th": "กระตุ้นด้วยความร้อน ติดโดยตรงที่อุณหภูมิสูงยิ่งยวด ระบบกาวแห้งไม่เหนียวที่อุณหภูมิห้อง กระตุ้นเมื่อสัมผัสพื้นผิวร้อน และคงการยึดเกาะแน่นแม้หลังเย็นตัว"
-   },
-   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP900",
-   "products": [
-    {
-     "name": "HP-700T",
-     "line": {
-      "en": "450–800°C · brass foil",
-      "zh": "450–800°C · 黄铜箔",
-      "vi": "450–800°C · lá đồng thau",
-      "th": "450–800°C · แผ่นทองเหลือง"
-     },
-     "img": "",
-     "landing": false,
-     "slug": ""
-    },
-    {
-     "name": "HP-600",
-     "line": {
-      "en": "Up to 800°C · glass & metal, high adhesion",
-      "zh": "耐 800°C · 玻璃与金属，高附着",
-      "vi": "Đến 800°C · kính & kim loại, bám dính cao",
-      "th": "ถึง 800°C · แก้วและโลหะ ยึดเกาะสูง"
-     },
-     "img": "",
-     "landing": false,
-     "slug": ""
-    },
-    {
-     "name": "HP-901",
-     "line": {
-      "en": "Up to 1000°C · nickel foil, uneven surfaces",
-      "zh": "耐 1000°C · 镍箔，适应不平整表面",
-      "vi": "Đến 1000°C · lá niken, bề mặt gồ ghề",
-      "th": "ถึง 1000°C · แผ่นนิกเกิล พื้นผิวไม่เรียบ"
-     },
-     "img": "",
-     "landing": true,
-     "slug": "hp-901"
-    }
-   ]
-  },
-  {
-   "tab": "HT Labels",
-   "name": {
-    "en": "Heat-Treatment Labels",
-    "zh": "热处理标签",
-    "vi": "Nhãn xử lý nhiệt",
-    "th": "ฉลากอบชุบความร้อน"
-   },
-   "intro": {
-    "en": "Heat-resistant labels engineered for annealing, homogenizing, and other reheat processes, keeping barcodes legible throughout demanding thermal cycles.",
-    "zh": "专为退火、均热及其他再加热工艺设计的耐高温标签，在严苛热循环中保持条码清晰可读",
-    "vi": "Nhãn chịu nhiệt được thiết kế cho ủ, đồng nhất hóa và các quy trình gia nhiệt lại khác, giữ mã vạch rõ nét xuyên suốt các chu kỳ nhiệt khắc nghiệt.",
-    "th": "ฉลากทนความร้อนที่ออกแบบมาสำหรับการอบอ่อน การทำให้เป็นเนื้อเดียว และกระบวนการให้ความร้อนซ้ำอื่นๆ คงบาร์โค้ดให้อ่านได้ชัดตลอดวัฏจักรความร้อนที่เข้มงวด"
-   },
-   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP2080",
-   "products": [
-    {
-     "name": "HP-X2080",
-     "line": {
-      "en": "Up to 1200°C · fast heating to 65°C/min",
-      "zh": "耐 1200°C · 升温可达 65°C/min",
-      "vi": "Đến 1200°C · gia nhiệt nhanh tới 65°C/phút",
-      "th": "ถึง 1200°C · ให้ความร้อนเร็วถึง 65°C/นาที"
-     },
-     "img": "",
-     "landing": true,
-     "slug": "hp-x2080"
-    }
-   ]
-  },
-  {
-   "tab": "HT Tags",
-   "name": {
-    "en": "Heat-Treatment Tags",
-    "zh": "热处理吊牌",
-    "vi": "Thẻ treo xử lý nhiệt",
-    "th": "แท็กอบชุบความร้อน"
-   },
-   "intro": {
-    "en": "Durable tags for heat-treatment process management, rated to 1,200°C. Fixed to metal products — including hot steel straight from casting — they withstand repeated reheat cycles, pickling, acid baths, and galvanizing, so parts need no re-identification between stages.",
-    "zh": "用于热处理工艺管理的耐用吊牌，耐温可达 1,200°C。可固定于钢等各类金属产品（含铸造后的热态钢件），承受反复的再加热循环、酸洗、酸浸与热镀锌，各工序间无需重新标识",
-    "vi": "Thẻ bền cho quản lý quy trình xử lý nhiệt, chịu đến 1.200°C. Được gắn lên sản phẩm kim loại — kể cả thép nóng vừa ra khỏi khuôn đúc — chịu được các chu kỳ gia nhiệt lại lặp lại, tẩy gỉ, ngâm axit và mạ kẽm, nên chi tiết không cần nhận diện lại giữa các công đoạn.",
-    "th": "แท็กทนทานสำหรับการจัดการกระบวนการอบชุบความร้อน ทนได้ถึง 1,200°C ยึดกับผลิตภัณฑ์โลหะ รวมถึงเหล็กร้อนที่เพิ่งออกจากการหล่อ ทนวัฏจักรการให้ความร้อนซ้ำ การกัดกรด การแช่กรด และการชุบสังกะสี จึงไม่ต้องระบุชิ้นงานใหม่ระหว่างขั้นตอน"
-   },
-   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HPL85V2",
-   "products": [
-    {
-     "name": "HP-L90",
-     "line": {
-      "en": "Up to 1200°C · stainless-steel tag",
-      "zh": "耐 1200°C · 不锈钢吊牌",
-      "vi": "Đến 1200°C · thẻ thép không gỉ",
-      "th": "ถึง 1200°C · แท็กสแตนเลส"
-     },
-     "img": "",
-     "landing": false,
-     "slug": ""
-    },
-    {
-     "name": "HP-L80",
-     "line": {
-      "en": "Up to 1000°C · acid-resistant tag",
-      "zh": "耐 1000°C · 耐酸吊牌",
-      "vi": "Đến 1000°C · thẻ chống axit",
-      "th": "ถึง 1000°C · แท็กทนกรด"
-     },
-     "img": "",
-     "landing": false,
-     "slug": ""
-    },
-    {
-     "name": "HP-M83",
-     "line": {
-      "en": "850°C · magnetic, acid-resistant tag",
-      "zh": "850°C · 磁性耐酸吊牌",
-      "vi": "850°C · thẻ từ tính, chống axit",
-      "th": "850°C · แท็กแม่เหล็ก ทนกรด"
-     },
-     "img": "",
-     "landing": false,
-     "slug": ""
-    }
-   ]
-  },
-  {
-   "tab": "Ceramic Transfer",
-   "name": {
-    "en": "Ceramic Transfer",
-    "zh": "陶瓷转印",
-    "vi": "Chuyển in gốm sứ",
-    "th": "ถ่ายโอนเซรามิก"
-   },
-   "intro": {
-    "en": "Transfer labels for ceramic and sanitary-ware firing at roughly 1,000–1,250°C. Applied right after forming, the printed marking fuses permanently into the workpiece during firing — enabling full production management from the earliest manufacturing stage.",
-    "zh": "用于陶瓷与卫浴约 1,000–1,250°C 烧制的转印标签。成型后即可贴附，烧制过程中印刷标记永久熔附于工件，实现自制造最初工序起的全流程生产管理",
-    "vi": "Nhãn chuyển in cho nung gốm sứ và thiết bị vệ sinh ở khoảng 1.000–1.250°C. Dán ngay sau khi tạo hình, dấu in được nung chảy vĩnh viễn vào chi tiết trong quá trình nung — cho phép quản lý sản xuất toàn diện từ công đoạn chế tạo sớm nhất.",
-    "th": "ฉลากถ่ายโอนสำหรับการเผาเซรามิกและสุขภัณฑ์ที่ประมาณ 1,000–1,250°C ติดทันทีหลังขึ้นรูป เครื่องหมายที่พิมพ์จะหลอมติดถาวรเข้ากับชิ้นงานระหว่างการเผา ทำให้จัดการการผลิตได้อย่างครบถ้วนตั้งแต่ขั้นตอนการผลิตแรกสุด"
-   },
-   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/STEEL-HP-CBR11",
-   "products": [
-    {
-     "name": "HP-CBR11",
-     "line": {
-      "en": "Up to 1250°C · ceramic & sanitary ware",
-      "zh": "耐 1250°C · 陶瓷与卫浴适用",
-      "vi": "Đến 1250°C · gốm sứ & thiết bị vệ sinh",
-      "th": "ถึง 1250°C · เซรามิกและสุขภัณฑ์"
-     },
-     "img": "",
-     "landing": true,
-     "slug": "hp-cbr11"
-    }
-   ]
-  }
- ]
 }
