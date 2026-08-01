@@ -293,6 +293,30 @@ else document.addEventListener('DOMContentLoaded',cf);
 
 
 # ---- Brand page (e.g. Polyonics): one card per product, scanned from the DB ----
+# E-commerce layout: the Polyonics brand page groups products into four series
+# (PCB Polyimide · ESD-Safe · Flame-Retardant · Cable & Wire), each a browsable
+# aisle of product cards with a "compare specs" link to its selector table.
+# Each product is assigned to exactly one aisle (most-specific series wins).
+POLY_SERIES = [
+    {"key": "pcb", "table": "pcb-labels",
+     "name": {"en": "PCB Polyimide Labels", "zh": "PCB 聚酰亚胺标签", "vi": "Nhãn Polyimide PCB", "th": "ฉลากโพลีอิไมด์ PCB"}},
+    {"key": "esd", "table": "esd-safe",
+     "name": {"en": "ESD-Safe Series", "zh": "防静电系列", "vi": "Dòng ESD-Safe", "th": "ซีรีส์ ESD-Safe"}},
+    {"key": "fr", "table": "flame-retardant",
+     "name": {"en": "Flame-Retardant Series", "zh": "阻燃系列", "vi": "Dòng chống cháy", "th": "ซีรีส์หน่วงไฟ"}},
+    {"key": "cable", "table": "wire-cable",
+     "name": {"en": "Cable & Wire Marking", "zh": "线缆标识系列", "vi": "Đánh dấu dây & cáp", "th": "ซีรีส์ทำเครื่องหมายสายไฟ"}},
+]
+POLY_COMPARE = {"en": "Compare specs →", "zh": "对比规格 →", "vi": "So sánh thông số →", "th": "เปรียบเทียบสเปก →"}
+_SERIES_FR = {"xf-603", "xf-611"}
+_SERIES_ESD = {"xf-781", "xf-782", "xf-784", "xf-446", "xf78"}
+_SERIES_CABLE = {"xf-300", "xf-302"}
+def poly_series_key(slug):
+    if slug in _SERIES_FR: return "fr"
+    if slug in _SERIES_ESD: return "esd"
+    if slug in _SERIES_CABLE: return "cable"
+    return "pcb"
+
 BRAND_PATH = {"polyonics": "/products/polyonics/"}
 BRAND_UI = {
     "en": {"eyebrow": "By Brand", "view": "View product →", "home": "Home", "products": "Products",
@@ -340,7 +364,12 @@ POLY_OVERVIEW = {
 }
 BRAND_CSS = """<style>
 .bwrap{max-width:1120px;margin:0 auto;padding:34px 22px 54px}
-.bover{color:#41506e;font-size:15.5px;line-height:1.7;max-width:80ch;margin:0 0 30px}
+.bover{color:#41506e;font-size:15.5px;line-height:1.7;max-width:80ch;margin:0 0 22px}
+.bsec{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:34px 0 14px;padding-top:18px;border-top:1px solid #e6ecf6}
+.bsec h2{font-family:var(--sans);font-weight:800;color:#143C96;font-size:21px;margin:0}
+.bsec .cnt{font-size:12px;font-weight:800;color:#1A56DB;background:#eaf1ff;border-radius:999px;padding:2px 10px}
+.bsec .tbl{margin-left:auto;font-size:13.5px;font-weight:800;color:#1A56DB;text-decoration:none;white-space:nowrap}
+.bsec .tbl:hover{text-decoration:underline}
 .bhead .eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#1A56DB}
 .bhead h1{font-family:var(--sans);font-weight:800;color:#143C96;font-size:clamp(30px,4vw,44px);margin:8px 0 8px}
 .bhead p{color:#51607e;font-size:16px;max-width:70ch;margin:0 0 8px}
@@ -564,8 +593,7 @@ def build_brand(records, lang, bkey):
             return node.get(lang) or node.get("en") or node.get("zh") or ""
         return node or ""
     items = [r for r in records if r["brand"] == bkey]
-    cards = ""
-    for r in sorted(items, key=lambda x: L(x["title"]).lower()):
+    def card(r):
         img = r.get("product_img", "")
         if img:
             media = ('<div class="bcard-img"><img src="%s" alt="%s" loading="lazy" '
@@ -578,28 +606,39 @@ def build_brand(records, lang, bkey):
             chips += '<span class="bchip">%s</span>' % esc(L(f))
         for t in r["temps"][:1]:
             chips += '<span class="bchip t">%s</span>' % esc(L(TEMP_BANDS[t]))
-        cards += ('<a class="bcard" href="%s">%s<div class="bcard-b"><h3>%s</h3><p>%s</p>'
-                  '<div class="bchips">%s</div><span class="bgo">%s</span></div></a>') % (
+        return ('<a class="bcard" href="%s">%s<div class="bcard-b"><h3>%s</h3><p>%s</p>'
+                '<div class="bchips">%s</div><span class="bgo">%s</span></div></a>') % (
             hp.Lx(lang, r["url"]), media, esc(L(r["title"])), esc(L(r["tagline"])), chips, esc(ui["view"]))
-    grid = ('<div class="bgrid">%s</div>' % cards) if cards else ('<p class="bempty">%s</p>' % esc(ui["empty"]))
-    # Polyonics: show the catalogue category cards above the featured product cards
-    cats = poly_category_cards(lang) if bkey == "polyonics" else ""
-    feat_hd = ('<div class="bsechd">%s</div>' % esc({"en":"Featured series","zh":"精选系列","vi":"Dòng nổi bật","th":"ซีรีส์แนะนำ"}.get(lang,"Featured series"))) if (bkey == "polyonics" and cards) else ""
     lede = ui["lede"].get(bkey, "")
     hero = None
     if bkey == "polyonics":
-        # dedicated brand hero banner (unified .hbanner style + single green CTA)
+        # brand hero banner (PCB banner + single green CTA) + client overview
         head = POLY_HEAD.get(lang) or POLY_HEAD["en"]
         hero = hp.home_banner(lang, POLY_BANNER, ui["eyebrow"], head, lede, "", "", "", "", "")
         paras = POLY_OVERVIEW.get(lang) or POLY_OVERVIEW["en"]
         overview = ('<div class="bsechd">%s</div>%s' %
                     (esc(POLY_OVERVIEW_LABEL.get(lang) or POLY_OVERVIEW_LABEL["en"]),
                      "".join('<p class="bover">%s</p>' % esc(p) for p in paras)))
-        body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap">%s%s%s%s</div>' % (overview, cats, feat_hd, grid))
+        # e-commerce aisles: one section per series, product cards + compare-specs link
+        sections = ""
+        for s in POLY_SERIES:
+            members = sorted((r for r in items if poly_series_key(r["slug"]) == s["key"]),
+                             key=lambda r: r["slug"])
+            if not members:
+                continue
+            nm = s["name"].get(lang) or s["name"]["en"]
+            tbl = hp.Lx(lang, "/products/polyonics/%s/" % s["table"])
+            sections += ('<div class="bsec"><h2>%s</h2><span class="cnt">%d</span>'
+                         '<a class="tbl" href="%s">%s</a></div><div class="bgrid">%s</div>') % (
+                esc(nm), len(members), tbl, esc(POLY_COMPARE.get(lang) or POLY_COMPARE["en"]),
+                "".join(card(r) for r in members))
+        body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap">%s%s</div>' % (overview, sections))
     else:
+        grid = ('<div class="bgrid">%s</div>' % "".join(card(r) for r in sorted(items, key=lambda x: L(x["title"]).lower()))) \
+            if items else ('<p class="bempty">%s</p>' % esc(ui["empty"]))
         body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap"><div class="bhead"><div class="eyebrow">%s</div>'
-                            '<h1>%s</h1><p>%s</p></div>%s%s%s</div>') % (
-            esc(ui["eyebrow"]), esc(bname), esc(lede), cats, feat_hd, grid)
+                            '<h1>%s</h1><p>%s</p></div>%s</div>') % (
+            esc(ui["eyebrow"]), esc(bname), esc(lede), grid)
     crumb = [(ui["home"], "/"), (ui["products"], "/products/"), (bname, path)]
     content = hp.page(lang, path, bname + " | ETIA", esc(lede), bname, "", body, crumb,
                       active="products", trust=False, hero=hero, langs=hp.NAV_PILLAR_LANGS)
