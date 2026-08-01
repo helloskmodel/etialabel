@@ -325,5 +325,7 @@
         ]
       }
     ]
-  }
+  },
+  "brand": "polyonics",
+  "industry": "pcb"
 }
