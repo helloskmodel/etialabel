@@ -116,6 +116,26 @@
       "source": "/industries/steel-labeling-solutions",
       "destination": "/industries/steel-metal-ceramic-labeling-solutions/",
       "permanent": true
+    },
+    {
+      "source": "/products/apex-series",
+      "destination": "/products/item/apex/",
+      "permanent": true
+    },
+    {
+      "source": "/cn/products/apex-series",
+      "destination": "/cn/products/item/apex/",
+      "permanent": true
+    },
+    {
+      "source": "/products/e-2712",
+      "destination": "/products/item/e-2712/",
+      "permanent": true
+    },
+    {
+      "source": "/cn/products/e-2712",
+      "destination": "/cn/products/item/e-2712/",
+      "permanent": true
     }
   ],
   "headers": [
