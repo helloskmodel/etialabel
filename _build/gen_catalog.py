@@ -429,6 +429,8 @@ BRAND_CSS = """<style>
 .bcard-img img{width:100%;height:100%;object-fit:cover;display:block}
 .bcard-img.ph{background:linear-gradient(150deg,#1A56DB,#143C96)}
 .bcard-img.lbl{background:#eef3fc}
+.bcard-img.photo{background:#fff;padding:12px;box-sizing:border-box}
+.bcard-img.photo img{object-fit:contain}
 .bcard-img.lbl svg.bclbl{width:100%;height:100%;display:block}
 .bcard-img.ph span{color:#fff;font-family:var(--sans);font-weight:800;font-size:22px;letter-spacing:.02em;padding:0 16px;text-align:center}
 .bcard-b{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
@@ -649,7 +651,7 @@ def build_brand(records, lang, bkey):
         # A real product photo (under the COS PRODUCT/ folder) wins; every other
         # card falls back to the generated barcode-label tile.
         if img and "/PRODUCT/" in img:
-            media = ('<div class="bcard-img"><img src="%s" alt="%s" loading="lazy" '
+            media = ('<div class="bcard-img photo"><img src="%s" alt="%s" loading="lazy" '
                      'onerror="var p=this.parentNode;p.classList.add(\'ph\');p.innerHTML=\'<span>%s</span>\'"></div>') % (
                 esc(img), esc(L(r["title"])), esc(L(r["title"])))
         else:
