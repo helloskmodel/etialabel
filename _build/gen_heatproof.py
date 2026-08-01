@@ -2166,7 +2166,27 @@ def build_products_landing(lang):
     env_cards = "".join(card(u, nm, ds) for u, nm, ds in ENV)
     sec = lambda eye, h, grid: ('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div>'
         '<h2>%s</h2><div class="pmgrid">%s</div></div></section>') % (esc(eye), esc(h), grid)
-    body = (sec(P(lang,"BY INDUSTRY","按行业","THEO NGÀNH","ตามอุตสาหกรรม"),
+    find_url = Lx(lang, "/products/find/")
+    find_band = (
+      '<section class="blk" style="padding-top:26px;padding-bottom:0"><div class="wrap">'
+      '<a href="%s" style="display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;justify-content:space-between;'
+      'background:linear-gradient(100deg,#143C96,#1A56DB);border-radius:16px;padding:22px 26px;text-decoration:none;'
+      'box-shadow:0 14px 34px rgba(20,60,150,.18)">'
+      '<div style="min-width:0"><div style="color:#8fe063;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase">%s</div>'
+      '<div style="color:#fff;font-family:var(--sans);font-weight:800;font-size:23px;line-height:1.15;margin:3px 0 2px">%s</div>'
+      '<div style="color:#dbe6ff;font-size:14px">%s</div></div>'
+      '<span style="flex:none;background:#41A62A;color:#fff;font-weight:800;font-size:14px;padding:12px 22px;border-radius:10px">%s</span>'
+      '</a></div></section>') % (
+        find_url,
+        esc(P(lang,"Product Finder","产品查找","Tìm sản phẩm","ค้นหาสินค้า")),
+        esc(P(lang,"Find a Label Material","查找标签材料","Tìm vật liệu nhãn","ค้นหาวัสดุฉลาก")),
+        esc(P(lang,"Search by part number, material or application — or filter by industry, temperature and more.",
+              "按料号、材料或应用搜索 —— 或按行业、温度等维度筛选。",
+              "Tìm theo mã, vật liệu hoặc ứng dụng — hoặc lọc theo ngành, nhiệt độ và hơn thế.",
+              "ค้นหาด้วยรหัส วัสดุ หรือการใช้งาน — หรือกรองตามอุตสาหกรรม อุณหภูมิ และอื่นๆ")),
+        esc(P(lang,"Search & filter →","搜索与筛选 →","Tìm & lọc →","ค้นหาและกรอง →")))
+    body = (find_band
+          + sec(P(lang,"BY INDUSTRY","按行业","THEO NGÀNH","ตามอุตสาหกรรม"),
                 P(lang,"Labels by Industry","按行业选择","Nhãn theo ngành","ฉลากตามอุตสาหกรรม"), ind_cards)
           + sec(P(lang,"BY ENVIRONMENT","按环境","THEO MÔI TRƯỜNG","ตามสภาพแวดล้อม"),
                 P(lang,"Labels by Operating Environment","按使用环境选择","Nhãn theo môi trường vận hành","ฉลากตามสภาพแวดล้อมการใช้งาน"), env_cards)
