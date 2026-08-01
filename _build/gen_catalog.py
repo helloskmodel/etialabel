@@ -646,9 +646,9 @@ def build_brand(records, lang, bkey):
     items = [r for r in records if r["brand"] == bkey]
     def card(r):
         img = r.get("product_img", "")
-        # Polyonics grid uses a uniform generated barcode-label tile as the product
-        # image; a real photo still wins for any other brand.
-        if img and r["brand"] != "polyonics":
+        # A real product photo (under the COS PRODUCT/ folder) wins; every other
+        # card falls back to the generated barcode-label tile.
+        if img and "/PRODUCT/" in img:
             media = ('<div class="bcard-img"><img src="%s" alt="%s" loading="lazy" '
                      'onerror="var p=this.parentNode;p.classList.add(\'ph\');p.innerHTML=\'<span>%s</span>\'"></div>') % (
                 esc(img), esc(L(r["title"])), esc(L(r["title"])))
