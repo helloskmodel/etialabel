@@ -422,20 +422,20 @@ HP_HEAD = {
 }
 HP_OVERVIEW = {
     "en": [
-        "HEATPROOF is ETIA's own line of extreme-temperature labels and tags. Metal-foil, stainless-steel and ceramic-transfer constructions survive heat treatment, hot-metal application, pickling, acid baths and firing — from around 200 °C up to 1200 °C.",
-        "Applied before or during high-temperature processing, HEATPROOF keeps barcodes and IDs legible end-to-end, so parts need no re-identification between stages — strengthening traceability across steel, aluminum, non-ferrous metal and ceramic production.",
+        "HEATPROOF labels and tags provide reliable identification and traceability through extreme heat and harsh industrial processes, helping prevent material mix-ups and shipping errors.",
+        "The line spans metal-foil, stainless-steel and ceramic-transfer constructions for heat treatment, hot-metal application, pickling and firing — from around 200 °C up to 1200 °C.",
     ],
     "zh": [
-        "HEATPROOF 是 ETIA 自研的极端高温标签与吊牌系列。采用金属箔、不锈钢与陶瓷转印结构，可承受热处理、热金属直贴、酸洗、酸浸与烧制 —— 温度范围约 200 °C 至 1200 °C。",
-        "在高温工艺前或工艺中贴附，HEATPROOF 使条码与标识全程清晰可读，各工序间无需重新标识 —— 强化钢铁、铝、有色金属与陶瓷生产的全程可追溯。",
+        "HEATPROOF 标签与吊牌在极端高温与严苛工业工艺中提供可靠的标识与追溯，帮助避免物料混淆与发货错误。",
+        "产品线涵盖金属箔、不锈钢与陶瓷转印结构，适用于热处理、热金属直贴、酸洗与烧制 —— 温度范围约 200 °C 至 1200 °C。",
     ],
     "vi": [
-        "HEATPROOF là dòng nhãn và thẻ nhiệt độ cực cao do ETIA tự phát triển. Cấu tạo lá kim loại, thép không gỉ và chuyển in gốm chịu được xử lý nhiệt, dán kim loại nóng, tẩy gỉ, ngâm axit và nung — từ khoảng 200 °C đến 1200 °C.",
-        "Được dán trước hoặc trong quá trình gia nhiệt, HEATPROOF giữ mã vạch và ID rõ nét xuyên suốt, nên chi tiết không cần nhận diện lại giữa các công đoạn — củng cố truy xuất trong sản xuất thép, nhôm, kim loại màu và gốm.",
+        "Nhãn và thẻ HEATPROOF cung cấp khả năng nhận diện và truy xuất đáng tin cậy qua nhiệt độ khắc nghiệt và các quy trình công nghiệp khắc nghiệt, giúp ngăn nhầm lẫn vật liệu và sai sót giao hàng.",
+        "Dòng sản phẩm gồm cấu tạo lá kim loại, thép không gỉ và chuyển in gốm cho xử lý nhiệt, dán kim loại nóng, tẩy gỉ và nung — từ khoảng 200 °C đến 1200 °C.",
     ],
     "th": [
-        "HEATPROOF เป็นไลน์ฉลากและแท็กอุณหภูมิสูงสุดขั้วที่ ETIA พัฒนาเอง โครงสร้างฟอยล์โลหะ สแตนเลส และถ่ายโอนเซรามิก ทนการอบชุบ การติดโลหะร้อน การกัดกรด การแช่กรด และการเผา — ตั้งแต่ประมาณ 200 °C ถึง 1200 °C",
-        "ติดก่อนหรือระหว่างกระบวนการอุณหภูมิสูง HEATPROOF คงบาร์โค้ดและรหัสให้อ่านได้ตลอดสาย จึงไม่ต้องระบุชิ้นงานใหม่ระหว่างขั้นตอน เสริมการตรวจสอบย้อนกลับในการผลิตเหล็ก อะลูมิเนียม โลหะนอกกลุ่มเหล็ก และเซรามิก",
+        "ฉลากและแท็ก HEATPROOF ให้การระบุและการตรวจสอบย้อนกลับที่เชื่อถือได้ผ่านความร้อนสุดขั้วและกระบวนการอุตสาหกรรมที่รุนแรง ช่วยป้องกันการสับสนของวัสดุและข้อผิดพลาดในการจัดส่ง",
+        "ไลน์ผลิตภัณฑ์ครอบคลุมโครงสร้างฟอยล์โลหะ สแตนเลส และถ่ายโอนเซรามิก สำหรับการอบชุบ การติดโลหะร้อน การกัดกรด และการเผา — ตั้งแต่ประมาณ 200 °C ถึง 1200 °C",
     ],
 }
 BRAND_UI = {
