@@ -190,6 +190,18 @@
           "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-TIRE%20PRESSURE",
           "landing": false,
           "slug": ""
+        },
+        {
+          "name": "E-2523SL Silver/Black Laser Label",
+          "line": {
+            "en": "3 mil PET · silver-on-black laser marking · under-hood ID · −40 to 180 °C",
+            "zh": "3 mil PET · 银/黑激光打标 · 发动机舱标识 · −40 至 180 °C",
+            "vi": "PET 3 mil · khắc laser bạc/đen · nhận diện khoang động cơ · −40 đến 180 °C",
+            "th": "PET 3 mil · มาร์กเลเซอร์เงิน/ดำ · ระบุห้องเครื่อง · −40 ถึง 180 °C"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-2523sl"
         }
       ],
       "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z'/><path d='M9 12l2 2 4-4'/></svg>"

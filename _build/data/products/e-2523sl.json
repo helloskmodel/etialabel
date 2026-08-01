@@ -1,0 +1,123 @@
+{
+  "slug": "e-2523sl",
+  "source": "ETIA-TECH E-2523SL Technical Data Sheet",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "brand": "etia",
+  "industry": "auto",
+  "product_img": "",
+  "title": {
+    "en": "E-2523SL — 3 mil Silver/Black Laser-Marking PET Label (−40 to 180 °C)",
+    "zh": "E-2523SL —— 3 mil 银/黑激光打标 PET 标签（−40 至 180 °C）",
+    "vi": "E-2523SL — Nhãn PET khắc laser bạc/đen 3 mil (−40 đến 180 °C)",
+    "th": "E-2523SL — ฉลาก PET มาร์กด้วยเลเซอร์สีเงิน/ดำ 3 mil (−40 ถึง 180 °C)"
+  },
+  "tagline": {
+    "en": "3 mil PET label with a high-gloss silver topcoat over a black sub-layer — laser-marks with CO₂, YAG, UV or fibre-diode systems for permanent, tamper-evident automotive and durable-goods identification, −40 to 180 °C.",
+    "zh": "3 mil PET 标签，高光银色面层 + 黑色底层 —— 可用 CO₂、YAG、UV 或光纤激光打标，实现永久、防篡改的汽车与耐用品标识，耐温 −40 至 180 °C。",
+    "vi": "Nhãn PET 3 mil với lớp phủ bạc bóng cao trên nền đen — khắc laser bằng CO₂, YAG, UV hoặc fibre-diode cho nhận diện ô tô và hàng bền vĩnh viễn, chống giả mạo, −40 đến 180 °C.",
+    "th": "ฉลาก PET 3 mil ผิวเงินเงาสูงบนชั้นรองสีดำ — มาร์กด้วยเลเซอร์ CO₂, YAG, UV หรือ fibre-diode เพื่อการระบุยานยนต์และสินค้าคงทนถาวรกันปลอมแปลง −40 ถึง 180 °C"
+  },
+  "positioning": {
+    "en": "E-2523SL is a 3 mil PET label material with a high-gloss silver topcoat over a black sub-layer, specifically designed for laser marking with CO₂, YAG, UV or fibre-diode marking systems — the laser ablates the silver top layer to reveal a sharp black mark. Backed with a permanent acrylic adhesive, it delivers consistent surface smoothness and excellent dimensional stability, is chemically resistant, and performs well against friction, high temperature and high humidity for automotive under-the-hood and durable-goods identification.",
+    "zh": "E-2523SL 是一款 3 mil PET 标签材料，采用高光银色面层覆盖黑色底层，专为 CO₂、YAG、UV 或光纤激光打标系统而设计 —— 激光烧蚀银色面层，显现清晰的黑色标记。配永久性丙烯酸胶，表面平滑一致、尺寸稳定性优异、耐化学腐蚀，并具备良好的耐摩擦、耐高温与耐高湿性能，适用于汽车发动机舱与耐用品标识。",
+    "vi": "E-2523SL là vật liệu nhãn PET 3 mil với lớp phủ bạc bóng cao trên nền đen, thiết kế riêng cho khắc laser bằng hệ CO₂, YAG, UV hoặc fibre-diode — tia laser bóc lớp bạc để lộ dấu đen sắc nét. Với keo acrylic vĩnh viễn, nó cho độ nhẵn bề mặt đồng đều và ổn định kích thước xuất sắc, kháng hóa chất, và bền với ma sát, nhiệt độ cao và độ ẩm cao cho nhận diện khoang động cơ ô tô và hàng bền.",
+    "th": "E-2523SL เป็นวัสดุฉลาก PET 3 mil ผิวเงินเงาสูงบนชั้นรองสีดำ ออกแบบเฉพาะสำหรับการมาร์กด้วยเลเซอร์ CO₂, YAG, UV หรือ fibre-diode — เลเซอร์ลอกชั้นเงินออกเผยรอยดำคมชัด ด้วยกาวอะคริลิกถาวร ให้ผิวเรียบสม่ำเสมอและเสถียรมิติดีเยี่ยม ทนสารเคมี และทนการเสียดสี อุณหภูมิสูงและความชื้นสูง สำหรับระบุห้องเครื่องยานยนต์และสินค้าคงทน"
+  },
+  "features": {
+    "en": [
+      "High-gloss silver topcoat over black sub-layer — sharp laser-etched contrast",
+      "Marks with CO₂, YAG, UV or fibre-diode laser systems",
+      "Consistent surface smoothness and excellent dimensional stability",
+      "Chemically resistant",
+      "Excellent anti-friction, high-temperature and high-humidity performance",
+      "RoHS compliant (2002/95/EC)"
+    ],
+    "zh": [
+      "高光银色面层 + 黑色底层 —— 激光刻蚀对比清晰",
+      "可用 CO₂、YAG、UV 或光纤激光系统打标",
+      "表面平滑一致，尺寸稳定性优异",
+      "耐化学腐蚀",
+      "耐摩擦、耐高温与耐高湿性能优异",
+      "符合 RoHS（2002/95/EC）"
+    ],
+    "vi": [
+      "Lớp bạc bóng cao trên nền đen — tương phản khắc laser sắc nét",
+      "Khắc bằng hệ laser CO₂, YAG, UV hoặc fibre-diode",
+      "Độ nhẵn bề mặt đồng đều và ổn định kích thước xuất sắc",
+      "Kháng hóa chất",
+      "Kháng ma sát, nhiệt độ cao và độ ẩm cao xuất sắc",
+      "Tuân thủ RoHS (2002/95/EC)"
+    ],
+    "th": [
+      "ผิวเงินเงาสูงบนชั้นรองดำ — คอนทราสต์เลเซอร์คมชัด",
+      "มาร์กด้วยระบบเลเซอร์ CO₂, YAG, UV หรือ fibre-diode",
+      "ผิวเรียบสม่ำเสมอและเสถียรมิติดีเยี่ยม",
+      "ทนสารเคมี",
+      "ทนการเสียดสี อุณหภูมิสูงและความชื้นสูงดีเยี่ยม",
+      "สอดคล้อง RoHS (2002/95/EC)"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": ["Property", "Value"],
+      "zh": ["属性", "参数"],
+      "vi": ["Thuộc tính", "Giá trị"],
+      "th": ["คุณสมบัติ", "ค่า"]
+    },
+    "rows": [
+      {"cells": [{"en": "Facestock", "zh": "面材", "vi": "Vật liệu mặt", "th": "วัสดุหน้า"}, {"en": "3 mil (0.078 mm) PET — high-gloss silver topcoat / black sub-layer", "zh": "3 mil（0.078 mm）PET —— 高光银色面层 / 黑色底层", "vi": "PET 3 mil (0,078 mm) — lớp bạc bóng cao / nền đen", "th": "PET 3 mil (0.078 มม.) — ผิวเงินเงาสูง / ชั้นรองดำ"}]},
+      {"cells": [{"en": "Adhesive", "zh": "胶粘剂", "vi": "Keo", "th": "กาว"}, {"en": "Permanent acrylic PSA (0.030 mm)", "zh": "永久性丙烯酸压敏胶（0.030 mm）", "vi": "Keo acrylic PSA vĩnh viễn (0,030 mm)", "th": "กาว PSA อะคริลิกถาวร (0.030 มม.)"}]},
+      {"cells": [{"en": "Liner", "zh": "底纸", "vi": "Lớp lót", "th": "ไลเนอร์"}, "0.175 mm"]},
+      {"cells": [{"en": "Marking method", "zh": "打标方式", "vi": "Phương pháp khắc", "th": "วิธีมาร์ก"}, {"en": "Laser — CO₂, YAG, UV or fibre-diode", "zh": "激光 —— CO₂、YAG、UV 或光纤", "vi": "Laser — CO₂, YAG, UV hoặc fibre-diode", "th": "เลเซอร์ — CO₂, YAG, UV หรือ fibre-diode"}]},
+      {"cells": [{"en": "Temperature rating", "zh": "耐温范围", "vi": "Dải nhiệt độ", "th": "ช่วงอุณหภูมิ"}, "−40 to 180 °C"]},
+      {"cells": [{"en": "Peel adhesion", "zh": "剥离力", "vi": "Lực bóc", "th": "แรงลอก"}, "15 N/25 mm (GB/T 2792)"]},
+      {"cells": [{"en": "Initial adhesion", "zh": "初粘力", "vi": "Độ dính ban đầu", "th": "แรงยึดเริ่มต้น"}, "16 N/25 mm (GB/T 31125)"]},
+      {"cells": [{"en": "Retention force", "zh": "保持力", "vi": "Lực giữ", "th": "แรงยึด"}, "≥ 48 h/25 mm (GB/T 4851)"]},
+      {"cells": [{"en": "Shelf life", "zh": "保存有效期", "vi": "Hạn dùng", "th": "อายุการเก็บ"}, {"en": "1 year below 22 °C / 50% RH", "zh": "22 °C / 50% RH 以下 1 年", "vi": "1 năm dưới 22 °C / 50% RH", "th": "1 ปี ต่ำกว่า 22 °C / 50% RH"}]},
+      {"cells": [{"en": "Compliance", "zh": "合规", "vi": "Tuân thủ", "th": "การรับรอง"}, "RoHS (2002/95/EC)"]}
+    ],
+    "notes": {
+      "en": ["Apply to a clean, dry, contamination-free surface (isopropyl alcohol recommended) with firm pressure. Preheating the labelled product can enhance print permanence under extreme solvent/abrasion exposure. Values are typical, not specifications — verify by application testing."],
+      "zh": ["贴标表面应清洁、干燥、无污染（建议异丙醇清洁），并施加足够压力。对贴标产品进行预热可在极端溶剂/磨损环境下提升打印耐久性。数值为典型值，非规格值 —— 请经应用测试确认。"],
+      "vi": ["Dán lên bề mặt sạch, khô, không nhiễm bẩn (khuyến nghị cồn isopropyl) và ấn mạnh. Làm nóng trước sản phẩm dán nhãn có thể tăng độ bền bản in khi tiếp xúc dung môi/mài mòn khắc nghiệt. Giá trị là điển hình, không phải thông số — hãy xác minh bằng thử nghiệm ứng dụng."],
+      "th": ["ติดบนพื้นผิวสะอาด แห้ง ปราศจากสิ่งปนเปื้อน (แนะนำไอโซโพรพิลแอลกอฮอล์) และกดแน่น การอุ่นผลิตภัณฑ์ที่ติดฉลากช่วยเพิ่มความคงทนของงานพิมพ์เมื่อเจอตัวทำละลาย/การขัดถูรุนแรง ค่าเป็นค่าทั่วไป ไม่ใช่สเปก — โปรดตรวจสอบด้วยการทดสอบการใช้งาน"]
+    }
+  },
+  "applications": {
+    "en": [
+      "Permanent ID and warranty labelling",
+      "Automotive under-the-hood identification",
+      "Asset tracking and durable-goods marking",
+      "Security and barcode labels",
+      "Information labels with 2-D codes"
+    ],
+    "zh": [
+      "永久标识与保修标签",
+      "汽车发动机舱标识",
+      "资产追踪与耐用品标识",
+      "安全与条码标签",
+      "含二维码的信息标签"
+    ],
+    "vi": [
+      "Nhãn ID vĩnh viễn và bảo hành",
+      "Nhận diện khoang động cơ ô tô",
+      "Theo dõi tài sản và đánh dấu hàng bền",
+      "Nhãn bảo mật và mã vạch",
+      "Nhãn thông tin có mã 2-D"
+    ],
+    "th": [
+      "ฉลาก ID ถาวรและการรับประกัน",
+      "การระบุห้องเครื่องยานยนต์",
+      "การติดตามทรัพย์สินและการมาร์กสินค้าคงทน",
+      "ฉลากความปลอดภัยและบาร์โค้ด",
+      "ฉลากข้อมูลพร้อมรหัส 2 มิติ"
+    ]
+  },
+  "certifications": {
+    "en": ["RoHS compliant (2002/95/EC)"],
+    "zh": ["符合 RoHS（2002/95/EC）"],
+    "vi": ["Tuân thủ RoHS (2002/95/EC)"],
+    "th": ["สอดคล้อง RoHS (2002/95/EC)"]
+  }
+}

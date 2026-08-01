@@ -421,12 +421,14 @@
             "zh": "E-2532 病理载玻片标签"
           },
           "line": {
-            "en": "2.0 mil PET. Chemical-resistant label for pathology slides and staining processes.",
-            "zh": "2.0mil PET。耐二甲苯、酒精及高温染色，适用于病理切片。"
+            "en": "2 mil matte white PET · acid/acetone/solvent-resistant · −40 to 150 °C",
+            "zh": "2 mil 哑白 PET · 耐酸/丙酮/溶剂 · −40 至 150 °C",
+            "vi": "PET trắng mờ 2 mil · kháng axit/acetone/dung môi · −40 đến 150 °C",
+            "th": "PET สีขาวด้าน 2 mil · ทนกรด/อะซิโตน/ตัวทำละลาย · −40 ถึง 150 °C"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-2532"
         }
       ]
     },
@@ -453,18 +455,20 @@
       "products": [
         {
           "name": {
-            "en": "Microplate Label",
-            "zh": "微孔板标签",
-            "vi": "Nhãn vi bản (microplate)",
-            "th": "ฉลากไมโครเพลต"
+            "en": "E-2532 Microplate Label",
+            "zh": "E-2532 微孔板标签",
+            "vi": "Nhãn đĩa vi giếng E-2532",
+            "th": "ฉลากไมโครเวลล์เพลต E-2532"
           },
           "line": {
-            "en": "2.0 mil PP. High-performance microplate label for 96/384-well plates and −80°C storage.",
-            "zh": "2.0mil PP。适用于 96/384 孔板，耐 −80℃冷冻，支持自动扫码。"
+            "en": "2 mil matte white PET · microwell-plate & lab ID · −40 to 150 °C",
+            "zh": "2 mil 哑白 PET · 微孔板与实验室标识 · −40 至 150 °C",
+            "vi": "PET trắng mờ 2 mil · đĩa vi giếng & lab · −40 đến 150 °C",
+            "th": "PET สีขาวด้าน 2 mil · ไมโครเวลล์เพลตและแล็บ · −40 ถึง 150 °C"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-2532"
         }
       ]
     }
