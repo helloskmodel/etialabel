@@ -193,72 +193,52 @@
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OUTDOOR-NEWEV",
       "products": [
         {
-          "name": {
-            "en": "Battery Module Traceability Label",
-            "zh": "电池模组追溯标签",
-            "vi": "Nhãn truy xuất module pin",
-            "th": "ฉลากตรวจสอบย้อนกลับโมดูลแบตเตอรี่"
-          },
+          "name": "EF21449",
           "line": {
-            "en": "21361V2 · 2.0mil white matte chemical-resistant PET · L-606 adhesive · UL certified · DMC-electrolyte resistant · high-resolution QR",
-            "zh": "21361V2 · 2.0mil 白色哑光耐化学 PET · L-606 高性能胶 · UL 认证 · 耐 DMC 电解液 · 高分辨率二维码",
-            "vi": "21361V2 · PET trắng mờ chống hóa chất 2.0mil · keo L-606 · chứng nhận UL · chống điện phân DMC · mã QR độ phân giải cao",
-            "th": "21361V2 · PET สีขาวด้านทนสารเคมี 2.0mil · กาว L-606 · รับรอง UL · ทนอิเล็กโทรไลต์ DMC · QR ความละเอียดสูง"
+            "en": "2 mil white matte PET · UL969 · CSA · battery pack & module ID",
+            "zh": "2 mil 白色哑光 PET · UL969 · CSA · 电池包与模组标识",
+            "vi": "PET trắng mờ 2 mil · UL969 · CSA · ID pack & module pin",
+            "th": "PET สีขาวด้าน 2 mil · UL969 · CSA · ระบุแพ็ค/โมดูลแบตเตอรี่"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "ef21449"
         },
         {
-          "name": {
-            "en": "Battery Pack ID Label",
-            "zh": "电池包标识标签",
-            "vi": "Nhãn nhận dạng pack pin",
-            "th": "ฉลากระบุแพ็กแบตเตอรี่"
-          },
+          "name": "EFWP344S",
           "line": {
-            "en": "WP344S · 2mil white PET · TC-716 topcoat · L-344 adhesive · UL Recognized · permanent · 10-year weatherability",
-            "zh": "WP344S · 2mil 白色 PET · TC-716 顶涂 · L-344 高性能胶 · UL Recognized · 永久胶粘 · 耐候 10 年",
-            "vi": "WP344S · PET trắng 2mil · lớp phủ TC-716 · keo L-344 · UL Recognized · vĩnh viễn · chịu thời tiết 10 năm",
-            "th": "WP344S · PET สีขาว 2mil · ท็อปโค้ท TC-716 · กาว L-344 · UL Recognized · ถาวร · ทนสภาพอากาศ 10 ปี"
+            "en": "2 mil white gloss PET · UL969 · cUL/CSA · universally printable",
+            "zh": "2 mil 白色亮光 PET · UL969 · cUL/CSA · 通用可打印",
+            "vi": "PET trắng bóng 2 mil · UL969 · cUL/CSA · in đa dạng",
+            "th": "PET สีขาวเงา 2 mil · UL969 · cUL/CSA · พิมพ์หลากหลาย"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "efwp344s"
         },
         {
-          "name": {
-            "en": "Battery Warning Label",
-            "zh": "电池警示标签",
-            "vi": "Nhãn cảnh báo pin",
-            "th": "ฉลากเตือนแบตเตอรี่"
-          },
+          "name": "EF21361v2",
           "line": {
-            "en": "V400 F · 4mil white vinyl · TC-106 topcoat · L-156 adhesive · UL certified · flame-retardant electrical compliance · high-contrast printing",
-            "zh": "V400 F · 4mil 白色乙烯基 · TC-106 顶涂 · L-156 特种胶 · UL 认证 · 阻燃电气合规 · 高对比度醒目印刷",
-            "vi": "V400 F · vinyl trắng 4mil · lớp phủ TC-106 · keo L-156 · chứng nhận UL · chống cháy, tuân thủ điện · in tương phản cao",
-            "th": "V400 F · ไวนิลสีขาว 4mil · ท็อปโค้ท TC-106 · กาว L-156 · รับรอง UL · หน่วงไฟ เป็นไปตามมาตรฐานไฟฟ้า · พิมพ์คอนทราสต์สูง"
+            "en": "2 mil white matte PET · UL · hi-performance adhesive for rough/oily/LSE",
+            "zh": "2 mil 白色哑光 PET · UL · 高性能胶，耐粗糙/油污/低表面能",
+            "vi": "PET trắng mờ 2 mil · UL · keo hiệu năng cao cho bề mặt thô/dầu/LSE",
+            "th": "PET สีขาวด้าน 2 mil · UL · กาวประสิทธิภาพสูงสำหรับผิวหยาบ/มัน/LSE"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "ef21361v2"
         },
         {
-          "name": {
-            "en": "In-Plant Shelf Label",
-            "zh": "厂内货架标签",
-            "vi": "Nhãn kệ trong nhà máy",
-            "th": "ฉลากชั้นวางในโรงงาน"
-          },
+          "name": "EFV400F",
           "line": {
-            "en": "21449 · 2mil white matte PET · MTC-722 topcoat · L-344 adhesive · UL certified · thermal-transfer, oil- & abrasion-resistant",
-            "zh": "21449 · 2mil 白色哑光 PET · MTC-722 顶涂 · L-344 胶 · UL 认证 · 热转印适配 · 耐油污耐摩擦",
-            "vi": "21449 · PET trắng mờ 2mil · lớp phủ MTC-722 · keo L-344 · chứng nhận UL · in truyền nhiệt, chống dầu & mài mòn",
-            "th": "21449 · PET สีขาวด้าน 2mil · ท็อปโค้ท MTC-722 · กาว L-344 · รับรอง UL · ถ่ายโอนความร้อน ทนน้ำมันและการขัดถู"
+            "en": "3.5 mil white vinyl · removable wrap · ASTM E162/E662",
+            "zh": "3.5 mil 白色乙烯基 · 可移除环绕 · ASTM E162/E662",
+            "vi": "Vinyl trắng 3.5 mil · quấn tháo được · ASTM E162/E662",
+            "th": "ไวนิลสีขาว 3.5 mil · หุ้มลอกได้ · ASTM E162/E662"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "efv400f"
         }
       ]
     },
@@ -386,77 +366,6 @@
           "img": "",
           "landing": true,
           "slug": "e-6534"
-        }
-      ]
-    },
-    {
-      "tab": {
-        "en": "Durable Equipment",
-        "zh": "耐用设备",
-        "vi": "Thiết bị bền",
-        "th": "อุปกรณ์ทนทาน"
-      },
-      "name": {
-        "en": "Durable Equipment & Vehicle Labels",
-        "zh": "耐用设备与车身标签",
-        "vi": "Nhãn thiết bị bền & phương tiện",
-        "th": "ฉลากอุปกรณ์ทนทานและยานพาหนะ"
-      },
-      "intro": {
-        "en": "UL-recognized polyester durable-goods labels and removable vehicle wraps — for rating plates, equipment identification and fleet graphics that hold up outdoors.",
-        "zh": "UL 认证聚酯耐用品标签与可移除车身贴 —— 用于铭牌、设备标识与车队图形，户外耐用。",
-        "vi": "Nhãn hàng bền polyester được UL công nhận và decal xe tháo được — cho bảng thông số, nhận diện thiết bị và đồ họa đội xe, bền ngoài trời.",
-        "th": "ฉลากสินค้าคงทนโพลีเอสเตอร์ที่ได้รับ UL และสติกเกอร์หุ้มยานพาหนะลอกออกได้ — สำหรับป้ายพิกัด การระบุอุปกรณ์ และกราฟิกฟลีตที่ทนกลางแจ้ง"
-      },
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER",
-      "products": [
-        {
-          "name": "EF21449",
-          "line": {
-            "en": "2 mil white matte PET · UL969 · CSA · durable equipment",
-            "zh": "2 mil 白色哑光 PET · UL969 · CSA · 耐用设备",
-            "vi": "PET trắng mờ 2 mil · UL969 · CSA · thiết bị bền",
-            "th": "PET สีขาวด้าน 2 mil · UL969 · CSA · อุปกรณ์ทนทาน"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "ef21449"
-        },
-        {
-          "name": "EFWP344S",
-          "line": {
-            "en": "2 mil white gloss PET · UL969 · cUL/CSA · universally printable",
-            "zh": "2 mil 白色亮光 PET · UL969 · cUL/CSA · 通用可打印",
-            "vi": "PET trắng bóng 2 mil · UL969 · cUL/CSA · in đa dạng",
-            "th": "PET สีขาวเงา 2 mil · UL969 · cUL/CSA · พิมพ์หลากหลาย"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "efwp344s"
-        },
-        {
-          "name": "EF21361v2",
-          "line": {
-            "en": "2 mil white matte PET · UL · hi-performance adhesive for rough/oily/LSE",
-            "zh": "2 mil 白色哑光 PET · UL · 高性能胶，耐粗糙/油污/低表面能",
-            "vi": "PET trắng mờ 2 mil · UL · keo hiệu năng cao cho bề mặt thô/dầu/LSE",
-            "th": "PET สีขาวด้าน 2 mil · UL · กาวประสิทธิภาพสูงสำหรับผิวหยาบ/มัน/LSE"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "ef21361v2"
-        },
-        {
-          "name": "EFV400F",
-          "line": {
-            "en": "3.5 mil white vinyl · removable · bus/train wrap · ASTM E162/E662",
-            "zh": "3.5 mil 白色乙烯基 · 可移除 · 公交/列车车身 · ASTM E162/E662",
-            "vi": "Vinyl trắng 3.5 mil · tháo được · bọc xe buýt/tàu · ASTM E162/E662",
-            "th": "ไวนิลสีขาว 3.5 mil · ลอกได้ · หุ้มรถบัส/รถไฟ · ASTM E162/E662"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "efv400f"
         }
       ]
     }
