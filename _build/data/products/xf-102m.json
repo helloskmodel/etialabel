@@ -1,0 +1,336 @@
+{
+  "slug": "xf-102m",
+  "source": "Polyonics XF-102M Technical Data Sheet (APEX Series)",
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
+  "banner": "",
+  "brand": "polyonics",
+  "industry": "pcb",
+  "product_img": "",
+  "title": {
+    "en": "XF-102M — 2 mil Matte White Polyimide PCB Label",
+    "zh": "XF-102M — 2 mil 哑光白聚酰亚胺 PCB 标签",
+    "vi": "XF-102M — Nhãn PCB Polyimide trắng mờ 2 mil",
+    "th": "XF-102M — ฉลาก PCB โพลีอิไมด์สีขาวด้าน 2 mil"
+  },
+  "tagline": {
+    "en": "APEX-series thermal-transfer polyimide label — dimensionally stable through multi-cycle reflow, flux- and solvent-resistant.",
+    "zh": "APEX 系列热转印聚酰亚胺标签 —— 多次回流焊尺寸稳定，耐助焊剂与溶剂。",
+    "vi": "Nhãn polyimide in nhiệt dòng APEX — ổn định kích thước qua nhiều chu kỳ reflow, kháng flux và dung môi.",
+    "th": "ฉลากโพลีอิไมด์พิมพ์ถ่ายเทความร้อนซีรีส์ APEX — เสถียรต่อหลายรอบรีโฟลว์ ทนฟลักซ์และตัวทำละลาย"
+  },
+  "positioning": {
+    "en": "POLYONICS XF-102M is a 2 mil (50 µm) polyimide film with a high-temperature permanent acrylic pressure-sensitive adhesive and a high-opacity matte white topcoat engineered for thermal-transfer printing. It stays dimensionally stable and legible through reflow, wave-solder and aqueous cleaning — a workhorse label for PCB and electronics traceability.",
+    "zh": "POLYONICS XF-102M 采用2 mil（50 µm）聚酰亚胺面材，配高温永久性丙烯酸压敏胶与高遮盖哑光白面涂层，专为热转印设计。经回流焊、波峰焊与水洗仍尺寸稳定、字迹清晰 —— 是 PCB 与电子追溯的主力标签。",
+    "vi": "POLYONICS XF-102M là màng Polyimide 2 mil (50 µm) với keo acrylic PSA vĩnh viễn chịu nhiệt cao và lớp phủ trắng mờ độ mờ cao, thiết kế cho in truyền nhiệt. Ổn định kích thước và rõ nét qua reflow, hàn sóng và rửa nước — nhãn chủ lực cho truy xuất PCB và điện tử.",
+    "th": "POLYONICS XF-102M เป็นฟิล์ม โพลีอิไมด์ 2 mil (50 µm) พร้อมกาว PSA อะคริลิกถาวรทนความร้อนสูงและท็อปโค้ตสีขาวด้านทึบสูง ออกแบบสำหรับพิมพ์ถ่ายเทความร้อน คงเสถียรและอ่านได้ผ่านรีโฟลว์ เวฟโซลเดอร์ และการล้างน้ำ — ฉลากหลักสำหรับการติดตาม PCB และอิเล็กทรอนิกส์"
+  },
+  "features": {
+    "en": [
+      "Thermal-transfer printable high-opacity white topcoat",
+      "Dimensionally stable through multi-cycle reflow (150 °C/100h · 260 °C/5min · 300 °C/90s)",
+      "Chemical, abrasion and solvent resistant",
+      "Resists smearing even without preheat prior to chemical wash",
+      "Passes MIL-STD-202G Method 215K",
+      "Flux resistant — solder-pot immersion (Alpha, AIM, Indium): no visible effect",
+      "REACH and RoHS compliant"
+    ],
+    "zh": [
+      "热转印高遮盖白色面涂层",
+      "多次回流焊尺寸稳定（150 °C/100h · 260 °C/5min · 300 °C/90s）",
+      "耐化学、耐磨、耐溶剂",
+      "化学清洗前无需预热也不糊字",
+      "通过 MIL-STD-202G Method 215K",
+      "耐助焊剂 —— 锡炉浸渍（Alpha、AIM、Indium）无可见影响",
+      "符合 REACH 与 RoHS"
+    ],
+    "vi": [
+      "Lớp phủ trắng độ mờ cao, in truyền nhiệt",
+      "Ổn định kích thước qua nhiều chu kỳ reflow (150 °C/100h · 260 °C/5min · 300 °C/90s)",
+      "Kháng hóa chất, mài mòn và dung môi",
+      "Không nhòe ngay cả khi không gia nhiệt trước khi rửa hóa chất",
+      "Đạt MIL-STD-202G Method 215K",
+      "Kháng flux — nhúng bể hàn (Alpha, AIM, Indium): không ảnh hưởng thấy được",
+      "Tuân thủ REACH và RoHS"
+    ],
+    "th": [
+      "ท็อปโค้ตสีขาวทึบพิมพ์ถ่ายเทความร้อนได้",
+      "เสถียรต่อหลายรอบรีโฟลว์ (150 °C/100h · 260 °C/5min · 300 °C/90s)",
+      "ทนสารเคมี การขัดถู และตัวทำละลาย",
+      "ไม่เลอะแม้ไม่อุ่นก่อนล้างสารเคมี",
+      "ผ่าน MIL-STD-202G Method 215K",
+      "ทนฟลักซ์ — จุ่มบ่อบัดกรี (Alpha, AIM, Indium): ไม่มีผลที่มองเห็น",
+      "สอดคล้อง REACH และ RoHS"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Property",
+        "Value"
+      ],
+      "zh": [
+        "属性",
+        "参数"
+      ],
+      "vi": [
+        "Thuộc tính",
+        "Giá trị"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "ค่า"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Film",
+            "zh": "面材",
+            "vi": "Màng",
+            "th": "ฟิล์ม"
+          },
+          {
+            "en": "2 mil (50 µm) polyimide",
+            "zh": "2 mil（50 µm）聚酰亚胺",
+            "vi": "Polyimide 2 mil (50 µm)",
+            "th": "โพลีอิไมด์ 2 mil (50 µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Topcoat / finish",
+            "zh": "面涂层 / 表面",
+            "vi": "Lớp phủ / bề mặt",
+            "th": "ท็อปโค้ต / พื้นผิว"
+          },
+          {
+            "en": "Matte white",
+            "zh": "哑光白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesive",
+            "zh": "胶粘剂",
+            "vi": "Keo",
+            "th": "กาว"
+          },
+          {
+            "en": "High-temperature permanent acrylic PSA, 1.5 mil (38 µm)",
+            "zh": "高温永久性丙烯酸压敏胶，1.5 mil (38 µm)",
+            "vi": "Keo acrylic PSA vĩnh viễn chịu nhiệt cao, 1.5 mil (38 µm)",
+            "th": "กาว PSA อะคริลิกถาวรทนความร้อนสูง 1.5 mil (38 µm)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Total thickness",
+            "zh": "总厚度",
+            "vi": "Độ dày tổng",
+            "th": "ความหนารวม"
+          },
+          "3.9 mil (99 µm)"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesion — stainless steel",
+            "zh": "粘着力 —— 不锈钢",
+            "vi": "Độ bám — thép không gỉ",
+            "th": "การยึดเกาะ — สแตนเลส"
+          },
+          {
+            "en": "≥ 50 oz/in (24 h) · ≥ 40 oz/in (20 min)",
+            "zh": "≥ 50 oz/in（24 h）· ≥ 40 oz/in（20 min）",
+            "vi": "≥ 50 oz/in (24 h) · ≥ 40 oz/in (20 min)",
+            "th": "≥ 50 oz/in (24 h) · ≥ 40 oz/in (20 min)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Tack (loop)",
+            "zh": "初粘（环形）",
+            "vi": "Độ dính (loop)",
+            "th": "แทค (loop)"
+          },
+          "≥ 1200 g/in"
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Abrasion (Taber, 500 g / 500 cyc)",
+            "zh": "耐磨（Taber，500 g / 500 次）",
+            "vi": "Mài mòn (Taber, 500 g / 500 chu kỳ)",
+            "th": "การขัดถู (Taber, 500 g / 500 รอบ)"
+          },
+          {
+            "en": "0.01 g weight loss",
+            "zh": "0.01 g 失重",
+            "vi": "Hao hụt 0.01 g",
+            "th": "น้ำหนักหาย 0.01 g"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Temperature rating",
+            "zh": "温度等级",
+            "vi": "Định mức nhiệt độ",
+            "th": "ระดับอุณหภูมิ"
+          },
+          {
+            "en": "150 °C / 100 h (long-term) · 260 °C / 5 min (operating) · 300 °C / 90 s (short-term)",
+            "zh": "150 °C / 100 h（长期）· 260 °C / 5 min（工作）· 300 °C / 90 s（短期）",
+            "vi": "150 °C / 100 h (dài hạn) · 260 °C / 5 min (vận hành) · 300 °C / 90 s (ngắn hạn)",
+            "th": "150 °C / 100 h (ระยะยาว) · 260 °C / 5 min (ใช้งาน) · 300 °C / 90 s (ระยะสั้น)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Chemical / flux resistance",
+            "zh": "耐化学 / 助焊剂",
+            "vi": "Kháng hóa chất / flux",
+            "th": "ทนสารเคมี / ฟลักซ์"
+          },
+          {
+            "en": "MIL-STD-202G 215K & solder-pot flux immersion — no visible effect",
+            "zh": "MIL-STD-202G 215K 与锡炉助焊剂浸渍 —— 无可见影响",
+            "vi": "MIL-STD-202G 215K & nhúng flux bể hàn — không ảnh hưởng thấy được",
+            "th": "MIL-STD-202G 215K และจุ่มฟลักซ์บ่อบัดกรี — ไม่มีผลที่มองเห็น"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Printing",
+            "zh": "打印",
+            "vi": "In ấn",
+            "th": "การพิมพ์"
+          },
+          {
+            "en": "Thermal transfer — full-resin ribbon recommended (Ricoh, Armor-Iimak, DNP)",
+            "zh": "热转印 —— 建议全树脂碳带（Ricoh、Armor-Iimak、DNP）",
+            "vi": "In truyền nhiệt — khuyến nghị ribbon full-resin (Ricoh, Armor-Iimak, DNP)",
+            "th": "พิมพ์ถ่ายเทความร้อน — แนะนำริบบอน full-resin (Ricoh, Armor-Iimak, DNP)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Shelf life",
+            "zh": "保质期",
+            "vi": "Hạn dùng",
+            "th": "อายุการเก็บ"
+          },
+          {
+            "en": "1 year below 27 °C / 60% RH",
+            "zh": "27 °C / 60% RH 以下 1 年",
+            "vi": "1 năm dưới 27 °C / 60% RH",
+            "th": "1 ปี ต่ำกว่า 27 °C / 60% RH"
+          }
+        ]
+      }
+    ],
+    "notes": {
+      "en": [
+        "Construction (top→bottom): Matte white topcoat · 2 mil polyimide substrate (2.4 mil (61 µm)) · high-temp acrylic adhesive (1.5 mil (38 µm)) · liner.",
+        "Testing with your specific thermal-transfer printer and ribbon is mandatory."
+      ],
+      "zh": [
+        "结构（自上而下）：哑光白面涂层 · 2 mil聚酰亚胺基材（2.4 mil (61 µm)）· 高温丙烯酸胶（1.5 mil (38 µm)）· 离型纸。",
+        "必须用您实际的热转印打印机与碳带进行测试。"
+      ],
+      "vi": [
+        "Cấu tạo (trên→dưới): lớp phủ Trắng mờ · nền polyimide 2 mil (2.4 mil (61 µm)) · keo acrylic chịu nhiệt (1.5 mil (38 µm)) · liner.",
+        "Bắt buộc thử nghiệm với máy in truyền nhiệt và ribbon cụ thể của bạn."
+      ],
+      "th": [
+        "โครงสร้าง (บน→ล่าง): ท็อปโค้ตสีขาวด้าน · ฐานโพลีอิไมด์ 2 mil (2.4 mil (61 µm)) · กาวอะคริลิกทนร้อน (1.5 mil (38 µm)) · ไลเนอร์",
+        "ต้องทดสอบกับเครื่องพิมพ์ถ่ายเทความร้อนและริบบอนของคุณโดยเฉพาะ"
+      ]
+    }
+  },
+  "applications": {
+    "en": [
+      "PCB identification",
+      "Electronic component tracking",
+      "IC labeling — work-in-process, permanent ID and warranty",
+      "Product ID and asset tracking",
+      "Labels on products stacked during manufacturing",
+      "Identification exposed to extreme temperatures and harsh chemicals"
+    ],
+    "zh": [
+      "PCB 标识",
+      "电子元器件追溯",
+      "IC 标签 —— 在制品、永久标识与保修",
+      "产品标识与资产追踪",
+      "制造过程中堆叠产品的标签",
+      "暴露于极端温度与强化学品环境的标识"
+    ],
+    "vi": [
+      "Nhận diện PCB",
+      "Theo dõi linh kiện điện tử",
+      "Nhãn IC — hàng đang gia công, ID vĩnh viễn và bảo hành",
+      "ID sản phẩm và theo dõi tài sản",
+      "Nhãn trên sản phẩm xếp chồng khi sản xuất",
+      "Nhận diện phơi nhiễm nhiệt độ khắc nghiệt và hóa chất mạnh"
+    ],
+    "th": [
+      "การระบุ PCB",
+      "การติดตามชิ้นส่วนอิเล็กทรอนิกส์",
+      "ฉลาก IC — งานระหว่างผลิต, ID ถาวรและการรับประกัน",
+      "ID สินค้าและการติดตามทรัพย์สิน",
+      "ฉลากบนสินค้าที่วางซ้อนระหว่างการผลิต",
+      "การระบุที่สัมผัสอุณหภูมิสุดขั้วและสารเคมีรุนแรง"
+    ]
+  },
+  "certifications": {
+    "en": [
+      "REACH compliant",
+      "RoHS compliant",
+      "UL File PGJI2.MH19503 (UL 969 label + ribbon approvals pending)",
+      "MIL-STD-202G Method 215K"
+    ],
+    "zh": [
+      "符合 REACH",
+      "符合 RoHS",
+      "UL 档案 PGJI2.MH19503（UL 969 标签+碳带认证进行中）",
+      "MIL-STD-202G Method 215K"
+    ],
+    "vi": [
+      "Tuân thủ REACH",
+      "Tuân thủ RoHS",
+      "Hồ sơ UL PGJI2.MH19503 (chứng nhận nhãn + ribbon UL 969 đang chờ)",
+      "MIL-STD-202G Method 215K"
+    ],
+    "th": [
+      "สอดคล้อง REACH",
+      "สอดคล้อง RoHS",
+      "UL File PGJI2.MH19503 (การรับรองฉลาก + ริบบอน UL 969 อยู่ระหว่างดำเนินการ)",
+      "MIL-STD-202G Method 215K"
+    ]
+  }
+}
