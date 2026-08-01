@@ -308,9 +308,9 @@ BRAND_UI = {
            "empty": "สินค้าเร็วๆ นี้",
            "lede": {"polyonics": "วัสดุฉลากโพลีอิไมด์ Polyonics นำเข้าแท้ — สต๊อกและสนับสนุนการใช้งานโดย ETIA สำหรับรีโฟลว์ การล้าง และกระบวนการอิเล็กทรอนิกส์ที่ควบคุม ESD"}},
 }
-# Dedicated Polyonics brand banner + overview. POLY_BANNER uses the PCB banner
-# for now (Polyonics is a PCB/electronics-centric line); swap this one line for a
-# bespoke Polyonics banner image once supplied (e.g. BANNER/POLYONICS-BANNER).
+# Polyonics brand banner + overview. Per client decision the Polyonics page
+# reuses the PCB banner (Polyonics is a PCB/electronics-centric line) — no
+# bespoke banner.
 POLY_BANNER = hp._COS + "INDUSTRY/PCB-BANNERNEW.jpg"
 POLY_HEAD = {
     "en": "Polyonics — High-Performance Label Materials",
@@ -319,11 +319,24 @@ POLY_HEAD = {
     "th": "Polyonics — วัสดุฉลากประสิทธิภาพสูง",
 }
 POLY_OVERVIEW_LABEL = {"en": "Overview", "zh": "品牌概述", "vi": "Tổng quan", "th": "ภาพรวม"}
+# Two-paragraph brand overview (client-supplied EN + ZH; VN/TH translated).
 POLY_OVERVIEW = {
-    "en": "Polyonics is a US manufacturer of high-performance label materials engineered for extreme environments — high-temperature polyimide and polyester films for PCB and electronics identification, in flame-retardant, ESD-safe and flux-resistant constructions. The labels stay dimensionally stable and legible through reflow, wave-solder and aqueous cleaning, and carry UL969, UL94 VTM-0 and REACH/RoHS approvals across the range. ETIA supplies the full Polyonics line with application and sampling support for customers across Asia.",
-    "zh": "Polyonics 是一家美国高性能标签材料制造商，专为极端环境设计 —— 用于 PCB 与电子标识的高温聚酰亚胺与聚酯薄膜，涵盖阻燃、防静电与耐助焊剂结构。标签经回流焊、波峰焊与水洗仍尺寸稳定、字迹清晰，全系列具备 UL969、UL94 VTM-0 与 REACH/RoHS 认证。ETIA 供应全系列 Polyonics 产品，并为亚洲客户提供应用与打样支持。",
-    "vi": "Polyonics là nhà sản xuất Mỹ về vật liệu nhãn hiệu năng cao cho môi trường khắc nghiệt — màng polyimide và polyester chịu nhiệt cao cho nhận diện PCB và điện tử, với cấu trúc chống cháy, ESD-safe và kháng flux. Nhãn ổn định kích thước và rõ nét qua reflow, hàn sóng và rửa nước, đạt UL969, UL94 VTM-0 và REACH/RoHS trên toàn dải. ETIA cung cấp toàn bộ dòng Polyonics cùng hỗ trợ ứng dụng và mẫu thử cho khách hàng khắp châu Á.",
-    "th": "Polyonics เป็นผู้ผลิตวัสดุฉลากประสิทธิภาพสูงจากสหรัฐฯ ออกแบบสำหรับสภาพแวดล้อมสุดขั้ว — ฟิล์มโพลีอิไมด์และโพลีเอสเตอร์ทนอุณหภูมิสูงสำหรับการระบุ PCB และอิเล็กทรอนิกส์ ในโครงสร้างหน่วงไฟ ESD-safe และทนฟลักซ์ ฉลากคงเสถียรและอ่านได้ผ่านรีโฟลว์ เวฟโซลเดอร์ และการล้างน้ำ พร้อมการรับรอง UL969, UL94 VTM-0 และ REACH/RoHS ทั้งกลุ่ม ETIA จัดหาผลิตภัณฑ์ Polyonics ครบไลน์ พร้อมสนับสนุนการใช้งานและตัวอย่างสำหรับลูกค้าทั่วเอเชีย",
+    "en": [
+        "Polyonics is a U.S.-based specialty coatings manufacturer that engineers high-performance polyimide label materials for PCB and electronic component identification. Its materials are designed to withstand reflow temperatures up to 300°C, wave soldering, aggressive fluxes, and demanding cleaning processes.",
+        "As an authorized Polyonics distributor, ETIA provides genuine materials, local supply, sample support, and application-based material selection for OEMs, contract manufacturers, label converters, and printers.",
+    ],
+    "zh": [
+        "Polyonics 是美国特种涂层材料制造商，专注于研发适用于 PCB 与电子元器件标识的高性能聚酰亚胺标签材料。其产品可耐受高达 300°C 的回流焊、波峰焊、活性助焊剂及严苛清洗工艺。",
+        "ETIA 是 Polyonics 授权经销商，为 OEM、电子制造企业、模切厂及标签印刷厂提供正品材料、本地供货、样品支持与应用选型服务。",
+    ],
+    "vi": [
+        "Polyonics là nhà sản xuất lớp phủ đặc chủng của Mỹ, chuyên phát triển vật liệu nhãn polyimide hiệu năng cao cho nhận diện PCB và linh kiện điện tử. Vật liệu của hãng được thiết kế để chịu nhiệt độ reflow lên đến 300°C, hàn sóng, flux hoạt tính mạnh và các quy trình làm sạch khắc nghiệt.",
+        "Là nhà phân phối được ủy quyền của Polyonics, ETIA cung cấp vật liệu chính hãng, nguồn cung tại chỗ, hỗ trợ mẫu và tư vấn chọn vật liệu theo ứng dụng cho các OEM, nhà sản xuất hợp đồng (EMS), nhà gia công nhãn và nhà in.",
+    ],
+    "th": [
+        "Polyonics เป็นผู้ผลิตสารเคลือบเฉพาะทางจากสหรัฐฯ ที่พัฒนาวัสดุฉลากโพลีอิไมด์ประสิทธิภาพสูงสำหรับการระบุ PCB และชิ้นส่วนอิเล็กทรอนิกส์ วัสดุของบริษัทออกแบบมาให้ทนอุณหภูมิรีโฟลว์สูงถึง 300°C การบัดกรีแบบเวฟ ฟลักซ์ที่มีฤทธิ์รุนแรง และกระบวนการทำความสะอาดที่เข้มงวด",
+        "ในฐานะตัวแทนจำหน่ายที่ได้รับอนุญาตของ Polyonics ETIA จัดหาวัสดุของแท้ การจัดหาในพื้นที่ การสนับสนุนตัวอย่าง และการเลือกวัสดุตามการใช้งาน ให้แก่ OEM ผู้ผลิตรับจ้าง ผู้แปรรูปฉลาก และโรงพิมพ์",
+    ],
 }
 BRAND_CSS = """<style>
 .bwrap{max-width:1120px;margin:0 auto;padding:34px 22px 54px}
@@ -578,9 +591,10 @@ def build_brand(records, lang, bkey):
         # dedicated brand hero banner (unified .hbanner style + single green CTA)
         head = POLY_HEAD.get(lang) or POLY_HEAD["en"]
         hero = hp.home_banner(lang, POLY_BANNER, ui["eyebrow"], head, lede, "", "", "", "", "")
-        overview = ('<div class="bsechd">%s</div><p class="bover">%s</p>' %
+        paras = POLY_OVERVIEW.get(lang) or POLY_OVERVIEW["en"]
+        overview = ('<div class="bsechd">%s</div>%s' %
                     (esc(POLY_OVERVIEW_LABEL.get(lang) or POLY_OVERVIEW_LABEL["en"]),
-                     esc(POLY_OVERVIEW.get(lang) or POLY_OVERVIEW["en"])))
+                     "".join('<p class="bover">%s</p>' % esc(p) for p in paras)))
         body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap">%s%s%s%s</div>' % (overview, cats, feat_hd, grid))
     else:
         body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap"><div class="bhead"><div class="eyebrow">%s</div>'
