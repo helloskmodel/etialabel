@@ -449,6 +449,10 @@ POLY_CAT_CSS = """<style>
 .ptable td{padding:10px 14px;border-bottom:1px solid #eef2f8;color:#33425e;vertical-align:top}
 .ptable tr:hover td{background:#f8fbff}
 .ptable .mdl{font-weight:800;color:#143C96;white-space:nowrap}
+.ptable .matchip{font-size:10px;font-weight:800;border-radius:5px;padding:1px 6px;margin-left:5px;vertical-align:middle}
+.ptable .matchip.m-pi{color:#143C96;background:#dfe8fb}
+.ptable .matchip.m-pet{color:#6b3fb0;background:#efe8fb}
+.ptable .matchip.m-nylon{color:#2c7a1e;background:#e6f5e0}
 .ptable .feat{display:inline-block;font-size:10.5px;font-weight:800;border-radius:999px;padding:2px 8px;margin:1px 3px 1px 0;white-space:nowrap}
 .ptable .feat.esd{color:#1A56DB;background:#eaf1ff}
 .ptable .feat.fr{color:#b4520a;background:#fdeede}
@@ -491,11 +495,13 @@ def build_poly_cat(lang, slug):
     lede = c["lede"].get(lang) or c["lede"]["en"]
     def L(d): return d.get(lang) or d["en"]
     head = "".join("<th>%s</th>" % esc(h) for h in ui["cols"])
+    mat = lambda f: "PI" if f.startswith("pi") else ("PET" if f.startswith("pet") else "Nylon")
     body_rows = ""
     for model, film, fin, adh, temp, feats in c["rows"]:
         fb = "".join('<span class="feat %s">%s</span>' % (k, esc(L(POLY_FEAT[k]))) for k in feats)
-        body_rows += ("<tr><td class=\"mdl\">%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>") % (
-            esc(model), esc(L(POLY_FILM[film])), esc(L(POLY_FIN[fin])), esc(adh), esc(POLY_TEMP[temp]), fb or "—")
+        mtag = '<span class="matchip m-%s">%s</span>' % (mat(film).lower(), mat(film))
+        body_rows += ("<tr><td class=\"mdl\">%s %s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>") % (
+            esc(model), mtag, esc(L(POLY_FILM[film])), esc(L(POLY_FIN[fin])), esc(adh), esc(POLY_TEMP[temp]), fb or "—")
     table = ('<div class="ptable-wrap"><table class="ptable"><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>'
              % (head, body_rows))
     body = POLY_CAT_CSS + ('<div class="pcat"><div class="eyebrow">%s</div><h1>%s</h1><p class="lede">%s</p>'
