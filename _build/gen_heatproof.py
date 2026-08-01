@@ -1612,6 +1612,30 @@ _HOME_HERO_CSS = """<style>
 @media(max-width:860px){.hhero-in{grid-template-columns:1fr;gap:22px;padding:28px 0 32px}.hhwin{max-width:100%;margin:0;max-height:260px}}
 </style>"""
 
+_HOME_TRUST = [
+    (("20+ Years","20+ 年","20+ Năm","20+ ปี"),
+     ("Specialty Material Expertise","特种材料专业积累","Chuyên môn vật liệu đặc biệt","ความเชี่ยวชาญวัสดุเฉพาะทาง")),
+    (("Multi-Brand Portfolio","多品牌产品组合","Danh mục đa thương hiệu","พอร์ตหลายแบรนด์"),
+     ("Global Brands + ETIA Materials","国际品牌 + ETIA 自研材料","Thương hiệu toàn cầu + vật liệu ETIA","แบรนด์ระดับโลก + วัสดุ ETIA")),
+    (("Asia-Based Supply","亚洲本地供应","Nguồn cung tại châu Á","อุปทานในเอเชีย"),
+     ("Local Stock & Application Support","本地备货与应用支持","Kho địa phương & hỗ trợ ứng dụng","สต๊อกในพื้นที่และการสนับสนุนการใช้งาน")),
+]
+_HOME_TRUST_CSS = """<style>
+.htrust{background:linear-gradient(100deg,var(--blue-deep),var(--blue))}
+.htrust-in{display:grid;grid-template-columns:repeat(3,1fr);padding:24px 0}
+.htrust .ht{padding:6px 26px;text-align:center;color:#fff;border-left:1px solid rgba(255,255,255,.2)}
+.htrust .ht:first-child{border-left:none}
+.htrust .ht b{display:block;font-family:var(--sans);font-weight:800;font-size:clamp(20px,2.3vw,26px);letter-spacing:-.01em;line-height:1.15}
+.htrust .ht span{display:block;font-size:13.5px;color:#d7e3ff;margin-top:5px;line-height:1.4}
+@media(max-width:760px){.htrust-in{grid-template-columns:1fr;padding:6px 0}.htrust .ht{border-left:none;border-top:1px solid rgba(255,255,255,.16);padding:15px 20px}.htrust .ht:first-child{border-top:none}}
+</style>"""
+
+def home_trustbar(lang):
+    j = JX[lang]
+    cells = "".join('<div class="ht"><b>%s</b><span>%s</span></div>' % (esc(top[j]), esc(sub[j]))
+                    for top, sub in _HOME_TRUST)
+    return _HOME_TRUST_CSS + '<section class="htrust"><div class="wrap htrust-in">' + cells + '</div></section>'
+
 def home_hero(lang):
     j = JX[lang]
     def pill(): return P(lang,"Specialty Label Materials · Built for Extreme Conditions",
@@ -1742,7 +1766,7 @@ def build_home(lang):
         esc(T["appc_eyebrow"]),esc(T["appc_title"]),esc(T["appc_sub"]),app_grid)
     # trust strip removed from the home page: it duplicated the Service Commitment
     # section below (same four items). Keep the dedicated section only.
-    body=hero_banner+why_section+app_section+prod_section+sc_section+final_cta
+    body=hero_banner+home_trustbar(lang)+why_section+app_section+prod_section+sc_section+final_cta
     canonical=SITE+HL_PREFIX[lang]+path
     schema_js='<script type="application/ld+json">%s</script>'%json.dumps(ORG_JSONLD,ensure_ascii=False)
     hero_preload=('<link rel="preload" as="image" href="'+HOME_HERO_ITEMS[0][1]+'" fetchpriority="high">') if HOME_HERO_ITEMS else ""
