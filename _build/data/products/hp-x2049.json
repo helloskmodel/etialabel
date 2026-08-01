@@ -1,31 +1,99 @@
 {
   "slug": "hp-x2049",
   "source": "TDS HP-X2049",
-  "langs": ["en", "zh", "vi", "th"],
+  "langs": [
+    "en",
+    "zh",
+    "vi",
+    "th"
+  ],
   "banner": "",
   "product_img": "",
-  "title": {"en": "HP-X2049 — HP Series Hot-Application Label for Aluminum", "zh": "HP-X2049 · HP Series 铝件热贴标签", "vi": "HP-X2049 · Nhãn dán nóng cho nhôm HP Series", "th": "HP-X2049 · ฉลากติดขณะร้อนสำหรับอะลูมิเนียม HP Series"},
-  "tagline": {"en": "Hot-application aluminum label for hot application from 250°C to 600°C", "zh": "铝件热贴标签，适用于 250°C 至 600°C 的热贴", "vi": "Nhãn dán nóng cho nhôm, dùng cho dán nóng từ 250°C đến 600°C", "th": "ฉลากติดขณะร้อนสำหรับอะลูมิเนียม สำหรับการติดขณะร้อนที่ 250°C ถึง 600°C"},
+  "title": {
+    "en": "HP-X2049 — HP Series Hot-Application Label for Aluminum",
+    "zh": "HP-X2049 · HP Series 铝件热贴标签",
+    "vi": "HP-X2049 · Nhãn dán nóng cho nhôm HP Series",
+    "th": "HP-X2049 · ฉลากติดขณะร้อนสำหรับอะลูมิเนียม HP Series"
+  },
+  "tagline": {
+    "en": "Hot-application aluminum label for hot application from 250°C to 600°C",
+    "zh": "铝件热贴标签，适用于 250°C 至 600°C 的热贴",
+    "vi": "Nhãn dán nóng cho nhôm, dùng cho dán nóng từ 250°C đến 600°C",
+    "th": "ฉลากติดขณะร้อนสำหรับอะลูมิเนียม สำหรับการติดขณะร้อนที่ 250°C ถึง 600°C"
+  },
   "positioning": {},
   "challenges": {},
   "features": {
-    "en": ["Hot application from 250°C to 600°C", "Ribbon YS-350T improves ink smudge significantly versus HP-600", "Aluminum core 70µ is better for automatic application to avoid the label folding on itself", "Thermal transfer ink ribbon: YS-350T"],
-    "zh": ["热贴温度 250°C 至 600°C", "色带 YS-350T 相比 HP-600 显著改善油墨污渍", "铝芯 70µ 更适合自动贴标，可避免标签自身折叠", "热转印色带：YS-350T"],
-    "vi": ["Dán nóng từ 250°C đến 600°C", "Ruy băng YS-350T cải thiện đáng kể vết nhòe mực so với HP-600", "Lõi nhôm 70µ tốt hơn cho dán tự động, tránh nhãn tự gấp lại", "Ruy băng mực chuyển nhiệt: YS-350T"],
-    "th": ["ติดขณะร้อนที่ 250°C ถึง 600°C", "ริบบอน YS-350T ลดรอยเปื้อนหมึกได้อย่างมากเมื่อเทียบกับ HP-600", "แกนอะลูมิเนียม 70µ เหมาะกับการติดอัตโนมัติมากกว่า ช่วยไม่ให้ฉลากพับทับตัวเอง", "ริบบอนหมึกถ่ายเทความร้อน: YS-350T"]
+    "en": [
+      "Hot application from 250°C to 600°C",
+      "Ribbon YS-350T improves ink smudge significantly versus HP-600",
+      "Aluminum core 70µ is better for automatic application to avoid the label folding on itself",
+      "Thermal transfer ink ribbon: YS-350T"
+    ],
+    "zh": [
+      "热贴温度 250°C 至 600°C",
+      "色带 YS-350T 相比 HP-600 显著改善油墨污渍",
+      "铝芯 70µ 更适合自动贴标，可避免标签自身折叠",
+      "热转印色带：YS-350T"
+    ],
+    "vi": [
+      "Dán nóng từ 250°C đến 600°C",
+      "Ruy băng YS-350T cải thiện đáng kể vết nhòe mực so với HP-600",
+      "Lõi nhôm 70µ tốt hơn cho dán tự động, tránh nhãn tự gấp lại",
+      "Ruy băng mực chuyển nhiệt: YS-350T"
+    ],
+    "th": [
+      "ติดขณะร้อนที่ 250°C ถึง 600°C",
+      "ริบบอน YS-350T ลดรอยเปื้อนหมึกได้อย่างมากเมื่อเทียบกับ HP-600",
+      "แกนอะลูมิเนียม 70µ เหมาะกับการติดอัตโนมัติมากกว่า ช่วยไม่ให้ฉลากพับทับตัวเอง",
+      "ริบบอนหมึกถ่ายเทความร้อน: YS-350T"
+    ]
   },
   "benefits": {},
   "spec": {
-    "en": ["Printing layer: Inorganic coating (white), 16µ", "Core: Aluminum core, 70µ", "Adhesive: Complex silicone adhesive, 37µ", "Total thickness: 123µm"],
-    "zh": ["打印层：无机涂层（白色），16µ", "芯层：铝芯，70µ", "胶粘剂：复合硅胶，37µ", "总厚度：123µm"],
-    "vi": ["Lớp in: Lớp phủ vô cơ (trắng), 16µ", "Lõi: Lõi nhôm, 70µ", "Keo dán: Keo silicone phức hợp, 37µ", "Tổng độ dày: 123µm"],
-    "th": ["ชั้นพิมพ์: สารเคลือบอนินทรีย์ (สีขาว), 16µ", "แกน: แกนอะลูมิเนียม, 70µ", "กาว: กาวซิลิโคนเชิงซ้อน, 37µ", "ความหนารวม: 123µm"]
+    "en": [
+      "Printing layer: Inorganic coating (white), 16µ",
+      "Core: Aluminum core, 70µ",
+      "Adhesive: Complex silicone adhesive, 37µ",
+      "Total thickness: 123µm"
+    ],
+    "zh": [
+      "打印层：无机涂层（白色），16µ",
+      "芯层：铝芯，70µ",
+      "胶粘剂：复合硅胶，37µ",
+      "总厚度：123µm"
+    ],
+    "vi": [
+      "Lớp in: Lớp phủ vô cơ (trắng), 16µ",
+      "Lõi: Lõi nhôm, 70µ",
+      "Keo dán: Keo silicone phức hợp, 37µ",
+      "Tổng độ dày: 123µm"
+    ],
+    "th": [
+      "ชั้นพิมพ์: สารเคลือบอนินทรีย์ (สีขาว), 16µ",
+      "แกน: แกนอะลูมิเนียม, 70µ",
+      "กาว: กาวซิลิโคนเชิงซ้อน, 37µ",
+      "ความหนารวม: 123µm"
+    ]
   },
   "applications": {
-    "en": ["Hot application of aluminum parts, including the water-quench process", "automotive parts such as engine blocks"],
-    "zh": ["铝件热贴，包括水淬工艺", "汽车零件，如发动机缸体"],
-    "vi": ["Dán nóng chi tiết nhôm, bao gồm quy trình tôi nước (water-quench)", "Chi tiết ô tô như khối động cơ"],
-    "th": ["การติดขณะร้อนของชิ้นส่วนอะลูมิเนียม รวมถึงกระบวนการชุบน้ำ (water-quench)", "ชิ้นส่วนยานยนต์ เช่น เสื้อสูบเครื่องยนต์"]
+    "en": [
+      "Hot application of aluminum parts, including the water-quench process",
+      "automotive parts such as engine blocks"
+    ],
+    "zh": [
+      "铝件热贴，包括水淬工艺",
+      "汽车零件，如发动机缸体"
+    ],
+    "vi": [
+      "Dán nóng chi tiết nhôm, bao gồm quy trình tôi nước (water-quench)",
+      "Chi tiết ô tô như khối động cơ"
+    ],
+    "th": [
+      "การติดขณะร้อนของชิ้นส่วนอะลูมิเนียม รวมถึงกระบวนการชุบน้ำ (water-quench)",
+      "ชิ้นส่วนยานยนต์ เช่น เสื้อสูบเครื่องยนต์"
+    ]
   },
-  "certifications": {}
+  "certifications": {},
+  "brand": "heatproof"
 }

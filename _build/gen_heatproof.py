@@ -27,7 +27,7 @@ PREFIX = {"en": "", "zh": "/cn", "vi": "/vn", "th": "/th"}
 HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th"}
 # Paths that exist in all four languages (home only). Links to any other path from
 # a vi/th page fall back to the English version (no 404). Industry hubs are EN+ZH.
-FOURLANG = {"/", "/products/", "/products/find/", "/products/polyonics/", "/applications/", "/service/", "/insights/"}
+FOURLANG = {"/", "/products/", "/products/find/", "/products/polyonics/", "/products/heatproof/", "/applications/", "/service/", "/insights/"}
 FOURLANG_PREFIX = ("/insights/", "/industries/", "/products/item/", "/products/polyonics/")  # article, industry, product & Polyonics pages exist in all 4 langs
 def Lx(lang, path):
     """Smart localized link: use the vi/th version only if that path is 4-language."""
@@ -2313,7 +2313,13 @@ def build_products_landing(lang):
                      P(lang,"Genuine imported Polyonics polyimide labels — APEX, XF58 and ESD-XF78 series.",
                           "Polyonics 原装进口聚酰亚胺标签 —— APEX、XF58 与 ESD-XF78 系列。",
                           "Nhãn polyimide Polyonics nhập khẩu chính hãng — dòng APEX, XF58 và ESD-XF78.",
-                          "ฉลากโพลีอิไมด์ Polyonics นำเข้าแท้ — ซีรีส์ APEX, XF58 และ ESD-XF78")))
+                          "ฉลากโพลีอิไมด์ Polyonics นำเข้าแท้ — ซีรีส์ APEX, XF58 และ ESD-XF78"))
+                + card("/products/heatproof/",
+                     P(lang,"HEATPROOF","HEATPROOF","HEATPROOF","HEATPROOF"),
+                     P(lang,"ETIA's own extreme-temperature labels and tags — metal-foil and ceramic, 200°C to 1200°C.",
+                          "ETIA 自研极端高温标签与吊牌 —— 金属箔与陶瓷，200°C 至 1200°C。",
+                          "Nhãn và thẻ nhiệt độ cực cao của ETIA — lá kim loại và gốm, 200°C đến 1200°C.",
+                          "ฉลากและแท็กอุณหภูมิสูงสุดขั้วของ ETIA — ฟอยล์โลหะและเซรามิก 200°C ถึง 1200°C")))
           + ('<div class="wrap">%s</div>' % cta2(lang, "products", Lx)))
     s = HOME2.get(lang, HOME2["en"])["sections"][0]
     hero = page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
