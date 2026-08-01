@@ -123,6 +123,88 @@
    "tab": "XF58"
   },
   {
+   "tab": "Colorful PI",
+   "name": {
+    "en": "Colorful PI Labels · Polyonics",
+    "zh": "彩色 PI 标签 · Polyonics 原装进口",
+    "vi": "Nhãn PI màu · Polyonics nhập khẩu",
+    "th": "ฉลาก PI สีสัน · Polyonics นำเข้าแท้"
+   },
+   "intro": {
+    "en": "Color-coded polyimide labels — blue, green and yellow finishes for fast visual sorting, line identification and error-proofing.",
+    "zh": "彩色聚酰亚胺标签 —— 蓝/绿/黄多色饰面，便于快速目视分类、产线识别与防错。",
+    "vi": "Nhãn polyimide theo màu — bề mặt xanh dương, xanh lá và vàng để phân loại nhanh, nhận diện dây chuyền và chống nhầm.",
+    "th": "ฉลากโพลีอิไมด์แบบระบุสี — สีน้ำเงิน เขียว และเหลือง เพื่อการคัดแยกด้วยสายตา ระบุไลน์ และป้องกันความผิดพลาด"
+   },
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF-504",
+   "products": [
+    {
+     "name": "Polyonics XF-504",
+     "line": {
+      "en": "Semi-gloss blue PI · reflow-stable · UL969 · REACH/RoHS",
+      "zh": "半光蓝 PI · 耐回流焊 · UL969 · REACH/RoHS",
+      "vi": "PI xanh dương bán bóng · ổn định reflow · UL969 · REACH/RoHS",
+      "th": "PI สีน้ำเงินกึ่งเงา · ทนรีโฟลว์ · UL969 · REACH/RoHS"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "xf-504"
+    },
+    {
+     "name": "Polyonics XF-505",
+     "line": {
+      "en": "Semi-gloss green PI · reflow-stable · UL969 · REACH/RoHS",
+      "zh": "半光绿 PI · 耐回流焊 · UL969 · REACH/RoHS",
+      "vi": "PI xanh lá bán bóng · ổn định reflow · UL969 · REACH/RoHS",
+      "th": "PI สีเขียวกึ่งเงา · ทนรีโฟลว์ · UL969 · REACH/RoHS"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "xf-505"
+    },
+    {
+     "name": "Polyonics XF-525",
+     "line": {
+      "en": "Semi-gloss green PI (2 mil) · reflow-stable · UL969 · REACH/RoHS",
+      "zh": "半光绿 PI（2 mil）· 耐回流焊 · UL969 · REACH/RoHS",
+      "vi": "PI xanh lá bán bóng (2 mil) · ổn định reflow · UL969 · REACH/RoHS",
+      "th": "PI สีเขียวกึ่งเงา (2 mil) · ทนรีโฟลว์ · UL969 · REACH/RoHS"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "xf-525"
+    },
+    {
+     "name": "Polyonics XF-552",
+     "line": {
+      "en": "High-gloss yellow PI (2 mil) · reflow-stable · REACH/RoHS",
+      "zh": "高光黄 PI（2 mil）· 耐回流焊 · REACH/RoHS",
+      "vi": "PI vàng bóng cao (2 mil) · ổn định reflow · REACH/RoHS",
+      "th": "PI สีเหลืองเงาสูง (2 mil) · ทนรีโฟลว์ · REACH/RoHS"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "xf-552"
+    },
+    {
+     "name": {
+      "en": "Application Note: Color-Coded PCB Identification",
+      "zh": "应用笔记：彩色 PCB 识别",
+      "vi": "Ghi chú ứng dụng: Nhận diện PCB theo màu",
+      "th": "บันทึกการใช้งาน: การระบุ PCB ด้วยสี"
+     },
+     "line": {
+      "en": "How colored PI labels speed visual sorting and error-proofing on the line.",
+      "zh": "彩色 PI 标签如何加速产线目视分类与防错。",
+      "vi": "Nhãn PI màu giúp phân loại và chống nhầm nhanh hơn trên dây chuyền.",
+      "th": "ฉลาก PI สีช่วยคัดแยกและป้องกันความผิดพลาดบนไลน์ได้เร็วขึ้น"
+     },
+     "img": "",
+     "url": "/application-notes/xf-505-color-coded-pcb-labels/"
+    }
+   ]
+  },
+  {
    "tab": "ESD-XF78",
    "name": {
     "en": "XF78 Series · Polyonics (ESD-Safe)",
