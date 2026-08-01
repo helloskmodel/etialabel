@@ -815,8 +815,8 @@ Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)"
 </div></footer>""" % (Lx(lang,"/privacy/"), pc[0], Lx(lang,"/cookies/"), pc[1])
 
 TRUST_TITLES = {
- "en":["100% Quality Inspection","Application-Driven Solutions","Flexible Supply","Responsive Customer Support"],
- "zh":["100% 质量检测","应用驱动方案","柔性供应","快速响应服务"],
+ "en":["100% Quality Inspection","Application-Driven Solutions","Flexible Supply","Responsive Application Support"],
+ "zh":["100% 质量检测","应用驱动方案","柔性供应","快速应用支持"],
  "vi":["Kiểm tra chất lượng 100%","Giải pháp theo ứng dụng","Cung ứng linh hoạt","Hỗ trợ ứng dụng kịp thời"],
  "th":["การตรวจสอบคุณภาพ 100%","โซลูชันที่ขับเคลื่อนด้วยการใช้งาน","การจัดหาที่ยืดหยุ่น","การสนับสนุนการใช้งานที่ตอบสนองรวดเร็ว"],
 }
@@ -848,13 +848,13 @@ def cta(lang):
 
 # Per-page bottom CTA (question headline + <=2 sentences + primary + secondary).
 CTAS = {
- "home": {"h": ("We Can Label for You.", "标签，我们为您来做。",
-                "Chúng tôi có thể làm nhãn cho bạn.", "เราทำฉลากให้คุณได้"),
-   "body": ("Tell us about the surface, temperature, chemical exposure, printing method, and expected service life. Our team will help you narrow down the right material and prepare samples for evaluation.",
-            "告诉我们贴附表面、温度、化学暴露、打印方式与预期使用寿命，我们的团队将帮您缩小材料范围并准备样品供评估。",
-            "Hãy cho biết bề mặt, nhiệt độ, môi trường hóa chất, phương pháp in và tuổi thọ dự kiến. Đội ngũ của chúng tôi sẽ giúp bạn khoanh vùng vật liệu phù hợp và chuẩn bị mẫu để đánh giá.",
-            "บอกเราถึงพื้นผิว อุณหภูมิ การสัมผัสสารเคมี วิธีการพิมพ์ และอายุการใช้งานที่คาดหวัง ทีมของเราจะช่วยคัดกรองวัสดุที่เหมาะสมและเตรียมตัวอย่างเพื่อประเมิน"),
-   "b1": ("Talk to a Specialist", "咨询专家", "Trao đổi với chuyên gia", "ปรึกษาผู้เชี่ยวชาญ"), "b1u": "/contact/",
+ "home": {"h": ("Find the Right Material for Your Application.", "为您的应用找到合适的材料。",
+                "Tìm đúng vật liệu cho ứng dụng của bạn.", "ค้นหาวัสดุที่เหมาะกับการใช้งานของคุณ"),
+   "body": ("Tell us about the surface, temperature, chemical exposure, printing method and expected service life. We'll help you narrow down the right material and prepare samples for evaluation.",
+            "告诉我们贴附表面、温度、化学暴露、打印方式与预期使用寿命，我们将帮您缩小材料范围并准备样品供评估。",
+            "Hãy cho biết bề mặt, nhiệt độ, môi trường hóa chất, phương pháp in và tuổi thọ dự kiến. Chúng tôi sẽ giúp bạn khoanh vùng vật liệu phù hợp và chuẩn bị mẫu để đánh giá.",
+            "บอกเราถึงพื้นผิว อุณหภูมิ การสัมผัสสารเคมี วิธีการพิมพ์ และอายุการใช้งานที่คาดหวัง เราจะช่วยคัดกรองวัสดุที่เหมาะสมและเตรียมตัวอย่างเพื่อประเมิน"),
+   "b1": ("Talk to a Material Specialist", "咨询材料专家", "Trao đổi với chuyên gia vật liệu", "ปรึกษาผู้เชี่ยวชาญด้านวัสดุ"), "b1u": "/contact/",
    "b2": ("Send Us Your Requirements", "提交您的需求", "Gửi yêu cầu của bạn", "ส่งข้อกำหนดของคุณ"), "b2u": "/contact/"},
  "products": {"h": ("Need Help Comparing Materials?", "需要帮助比较材料？",
                      "Cần trợ giúp so sánh vật liệu?", "ต้องการความช่วยเหลือในการเปรียบเทียบวัสดุ?"),
@@ -1613,7 +1613,7 @@ _HOME_HERO_CSS = """<style>
 .hhbtn{font-family:var(--sans);font-weight:700;font-size:15px;border-radius:11px;padding:14px 24px;text-decoration:none;border:1.5px solid transparent;display:inline-block}
 .hhbtn.pri{background:var(--green);color:#fff}
 .hhbtn.gho{background:#fff;border-color:var(--line);color:var(--blue-deep)}
-.hhwin{position:relative;aspect-ratio:16/11;max-height:300px;margin-left:auto;width:100%;max-width:440px;border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 20px 48px rgba(16,34,58,.15)}
+.hhwin{position:relative;aspect-ratio:16/11;max-height:300px;margin-left:auto;width:100%;max-width:440px;border-radius:18px;overflow:hidden;background:linear-gradient(150deg,#e9eefc,#e8f4e3);border:1px solid var(--line);box-shadow:0 20px 48px rgba(16,34,58,.15)}
 .hhslide{position:absolute;inset:0;text-decoration:none;color:inherit;opacity:0;transition:opacity .5s ease;pointer-events:none}
 .hhslide.on{opacity:1;pointer-events:auto}
 .hhslide img{width:100%;height:100%;object-fit:cover;background:#e8eefb;display:block}
@@ -1662,8 +1662,10 @@ def home_hero(lang):
         pos = item[4] if len(item) > 4 else ""
         on = " on" if k==0 else ""
         style = (' style="object-position:%s"' % esc(pos)) if pos else ""
-        slides += ('<a class="hhslide%s" href="%s" aria-label="%s"><img src="%s" alt="%s" loading="%s"%s onerror="this.style.display=\'none\'"></a>') % (
-            on, home_hlink(lang,url), esc(nm[j]), esc(img), esc(nm[j]), "eager" if k==0 else "lazy", style)
+        # First slide: eager + high priority so the hero paints immediately (no blank flash).
+        fp = ' fetchpriority="high"' if k==0 else ''
+        slides += ('<a class="hhslide%s" href="%s" aria-label="%s"><img src="%s" alt="%s" loading="%s"%s%s onerror="this.style.display=\'none\'"></a>') % (
+            on, home_hlink(lang,url), esc(nm[j]), esc(img), esc(nm[j]), "eager" if k==0 else "lazy", fp, style)
         dots += '<i class="%s"></i>' % ("on" if k==0 else "")
     check = '<span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>'
     script = ("<script>(function(){var w=document.getElementById('hhwin');if(!w)return;"
@@ -1674,6 +1676,7 @@ def home_hero(lang):
               "d.forEach(function(x,k){x.addEventListener('click',function(){go(k);});});"
               "if(!window.matchMedia||!matchMedia('(prefers-reduced-motion:reduce)').matches)"
               "setInterval(function(){go(i+1);},3500);})();</script>")
+    # (The home page shell already emits a <head> preload for the first hero image.)
     return (_HOME_HERO_CSS +
         '<section class="hhero"><div class="wrap hhero-in">'
         '<div class="hhero-copy"><span class="hhero-pill">' + check + ' ' + esc(pill_txt) + '</span>'
@@ -1727,7 +1730,8 @@ def hero_single_anim(lang, bg, eyebrow, title, sub):
     html = ('<section class="hbx">%s<div class="wrap">%s<h1>%s</h1>'
             '<p class="hsub">%s</p><div class="btns">%s</div></div></section>') % (
         bgdiv, eye, esc(title), esc(sub), hero_cta(lang))
-    return _HERO_FX_CSS + html
+    preload = ('<link rel="preload" as="image" href="%s" fetchpriority="high">' % esc(bg)) if bg else ""
+    return preload + _HERO_FX_CSS + html
 
 def hero_carousel(lang, slides, eyebrow, title, sub):
     """Rotating 'working-conditions' banner. slides = [(img_url, {4-lang caption})].
@@ -1755,7 +1759,8 @@ def hero_carousel(lang, slides, eyebrow, title, sub):
             '<p class="hsub">%s</p><div class="btns">%s</div></div>'
             '<div class="hbx-env">%s</div><div class="hbx-dots">%s</div></section>') % (
         bgs, eye, esc(title), esc(sub), hero_cta(lang), tags, dots)
-    return _HERO_FX_CSS + html + script
+    preload = ('<link rel="preload" as="image" href="%s" fetchpriority="high">' % esc(slides[0][0])) if slides else ""
+    return preload + _HERO_FX_CSS + html + script
 
 # Solutions "working-conditions" carousel — different harsh environments (reuses the
 # industry banner photos, which are guaranteed to resolve on COS).
@@ -2218,8 +2223,8 @@ SERVICE_COMMIT=[
   "tag":('Flexible supply, built around your production.', '灵活供货，适配您的生产节奏。', 'Cung ứng linh hoạt, phù hợp với sản xuất của bạn.', 'การจัดหาที่ยืดหยุ่น ออกแบบตามการผลิตของคุณ'),
   "body":[('Multiple warehouses, flexible air and sea logistics, plus custom slitting, die-cutting, and pre-printed labels to support your production.', '多地仓储，海运、空运灵活配送，并提供分切、模切、预打印等配套服务，满足不同生产需求。', 'Nhiều kho hàng, logistics đường biển và hàng không linh hoạt, cùng dịch vụ cắt, bế và in sẵn theo yêu cầu để hỗ trợ sản xuất của bạn.', 'คลังสินค้าหลายแห่ง โลจิสติกส์ทางอากาศและทางทะเลที่ยืดหยุ่น พร้อมบริการสลิต ไดคัท และฉลากพิมพ์ล่วงหน้าตามความต้องการเพื่อสนับสนุนการผลิตของคุณ')],
   "close":('Flexible materials. Flexible formats. Flexible quantities.', '材料灵活、规格灵活、数量灵活。', 'Vật liệu linh hoạt. Quy cách linh hoạt. Số lượng linh hoạt.', 'วัสดุยืดหยุ่น รูปแบบยืดหยุ่น จำนวนยืดหยุ่น')},
- {"num":"04","title":('Responsive Customer Support', '快速响应服务', 'Hỗ trợ khách hàng nhanh chóng', 'การสนับสนุนลูกค้าที่รวดเร็ว'),
-  "tag":('Fast, dependable support from a dedicated team.', '专属团队，快速响应。', 'Hỗ trợ nhanh, đáng tin cậy từ đội ngũ chuyên trách.', 'การสนับสนุนที่รวดเร็วและเชื่อถือได้จากทีมงานเฉพาะทาง'),
+ {"num":"04","title":('Responsive Application Support', '快速应用支持', 'Hỗ trợ ứng dụng nhanh chóng', 'การสนับสนุนการใช้งานที่รวดเร็ว'),
+  "tag":('Fast support for material selection, printing, adhesion and application issues.', '针对材料选型、打印、粘接与应用问题的快速支持。', 'Hỗ trợ nhanh cho việc chọn vật liệu, in ấn, độ bám dính và các vấn đề ứng dụng.', 'การสนับสนุนที่รวดเร็วสำหรับการเลือกวัสดุ การพิมพ์ การยึดเกาะ และปัญหาการใช้งาน'),
   "body":[('A dedicated support team connects sales, engineering, logistics, and service for fast, coordinated responses throughout your project.', '专属服务团队协同销售、工程、物流与客服，快速响应项目需求，持续支持生产运行。', 'Đội ngũ hỗ trợ chuyên trách kết nối bán hàng, kỹ thuật, logistics và dịch vụ để phản hồi nhanh và phối hợp xuyên suốt dự án của bạn.', 'ทีมสนับสนุนเฉพาะทางเชื่อมโยงฝ่ายขาย วิศวกรรม โลจิสติกส์ และบริการ เพื่อการตอบสนองที่รวดเร็วและประสานงานตลอดโครงการของคุณ')],
   "close":('Before delivery, during production, and beyond.', '交付之前、生产之中，以及长期应用之后。', 'Trước khi giao hàng, trong khi sản xuất và về sau.', 'ก่อนการจัดส่ง ระหว่างการผลิต และหลังจากนั้น')},
 ]
