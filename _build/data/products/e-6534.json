@@ -1,0 +1,116 @@
+{
+  "slug": "e-6534",
+  "source": "ETIA material list (E-6534) — Brady B-8541 / B-595 equivalent",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "brand": "etia",
+  "industry": "outdoor",
+  "product_img": "",
+  "title": {
+    "en": "E-6534 — Outdoor UV & Weather-Resistant Vinyl Label",
+    "zh": "E-6534 —— 户外耐紫外线耐候乙烯基标签",
+    "vi": "E-6534 — Nhãn vinyl chống UV & thời tiết ngoài trời",
+    "th": "E-6534 — ฉลากไวนิลทนยูวีและสภาพอากาศกลางแจ้ง"
+  },
+  "tagline": {
+    "en": "4 mil vinyl label built for long-term outdoor exposure — UV-, weather- and corrosion-resistant, −40 to 150 °C.",
+    "zh": "4 mil 乙烯基标签，专为长期户外暴露设计 —— 耐紫外线、耐候、耐腐蚀，−40 至 150 °C。",
+    "vi": "Nhãn vinyl 4 mil cho phơi ngoài trời dài hạn — chống UV, thời tiết và ăn mòn, −40 đến 150 °C.",
+    "th": "ฉลากไวนิล 4 mil สำหรับการใช้งานกลางแจ้งระยะยาว — ทน UV สภาพอากาศ และการกัดกร่อน −40 ถึง 150 °C"
+  },
+  "positioning": {
+    "en": "E-6534 is a 4 mil (100 µm) vinyl label with a UV-stable topcoat and a durable pressure-sensitive adhesive, made for assets that live outdoors. It resists sunlight, weathering and corrosion across −40 to 150 °C, keeping barcodes and warnings legible on cabinets, poles, pipelines and vehicles for years. It is a direct equivalent to Brady B-8541 / B-595.",
+    "zh": "E-6534 是一款 4 mil（100 µm）乙烯基标签，配抗紫外线面涂层与耐久压敏胶，专为户外资产设计。在 −40 至 150 °C 范围内耐阳光、耐候、耐腐蚀，可使机柜、杆塔、管道与车辆上的条码与警示多年清晰可读。可直接替代 Brady B-8541 / B-595。",
+    "vi": "E-6534 là nhãn vinyl 4 mil (100 µm) với lớp phủ ổn định UV và keo dính bền, dành cho tài sản ngoài trời. Chống nắng, thời tiết và ăn mòn trong dải −40 đến 150 °C, giữ mã vạch và cảnh báo rõ nét trên tủ, cột, đường ống và phương tiện trong nhiều năm. Tương đương trực tiếp Brady B-8541 / B-595.",
+    "th": "E-6534 เป็นฉลากไวนิล 4 mil (100 µm) พร้อมท็อปโค้ตทน UV และกาวที่ทนทาน สำหรับทรัพย์สินกลางแจ้ง ทนแดด สภาพอากาศ และการกัดกร่อนในช่วง −40 ถึง 150 °C ทำให้บาร์โค้ดและป้ายเตือนบนตู้ เสา ท่อ และยานพาหนะอ่านได้ชัดเจนหลายปี เทียบเท่า Brady B-8541 / B-595 โดยตรง"
+  },
+  "features": {
+    "en": [
+      "Conformable 4 mil (100 µm) vinyl facestock",
+      "UV-stable, weatherable topcoat for long outdoor life",
+      "Corrosion-resistant",
+      "Service temperature −40 to 150 °C",
+      "Durable pressure-sensitive adhesive for metal, plastic and painted surfaces",
+      "Direct equivalent to Brady B-8541 / B-595"
+    ],
+    "zh": [
+      "柔顺 4 mil（100 µm）乙烯基面材",
+      "抗紫外线、耐候面涂层，户外寿命长",
+      "耐腐蚀",
+      "使用温度 −40 至 150 °C",
+      "耐久压敏胶，适用于金属、塑料与涂漆表面",
+      "可直接替代 Brady B-8541 / B-595"
+    ],
+    "vi": [
+      "Mặt vinyl 4 mil (100 µm) dẻo, ôm bề mặt",
+      "Lớp phủ ổn định UV, chịu thời tiết cho tuổi thọ ngoài trời dài",
+      "Chống ăn mòn",
+      "Nhiệt độ sử dụng −40 đến 150 °C",
+      "Keo dính bền cho kim loại, nhựa và bề mặt sơn",
+      "Tương đương trực tiếp Brady B-8541 / B-595"
+    ],
+    "th": [
+      "หน้าไวนิล 4 mil (100 µm) ยืดหยุ่นแนบผิว",
+      "ท็อปโค้ตทน UV และสภาพอากาศ อายุการใช้งานกลางแจ้งยาวนาน",
+      "ทนการกัดกร่อน",
+      "อุณหภูมิใช้งาน −40 ถึง 150 °C",
+      "กาวที่ทนทานสำหรับโลหะ พลาสติก และพื้นผิวทาสี",
+      "เทียบเท่า Brady B-8541 / B-595 โดยตรง"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": ["Property", "Value"],
+      "zh": ["属性", "参数"],
+      "vi": ["Thuộc tính", "Giá trị"],
+      "th": ["คุณสมบัติ", "ค่า"]
+    },
+    "rows": [
+      {"cells": [{"en": "Facestock", "zh": "面材", "vi": "Vật liệu mặt", "th": "วัสดุหน้า"}, {"en": "Vinyl", "zh": "乙烯基", "vi": "Vinyl", "th": "ไวนิล"}]},
+      {"cells": [{"en": "Thickness", "zh": "厚度", "vi": "Độ dày", "th": "ความหนา"}, "4 mil (100 µm)"]},
+      {"cells": [{"en": "Temperature", "zh": "温度", "vi": "Nhiệt độ", "th": "อุณหภูมิ"}, "−40 to 150 °C"]},
+      {"cells": [{"en": "Durability", "zh": "耐久性", "vi": "Độ bền", "th": "ความทนทาน"}, {"en": "UV-resistant · weatherable · corrosion-resistant", "zh": "耐紫外线 · 耐候 · 耐腐蚀", "vi": "Chống UV · chịu thời tiết · chống ăn mòn", "th": "ทน UV · ทนสภาพอากาศ · ทนการกัดกร่อน"}]},
+      {"cells": [{"en": "Cross-reference", "zh": "对应型号", "vi": "Đối chiếu", "th": "รุ่นเทียบเท่า"}, "Brady B-8541 / B-595"]}
+    ],
+    "notes": {
+      "en": ["Summary specification from the ETIA material list — request the datasheet for full adhesion, print and durability data."],
+      "zh": ["摘自 ETIA 物料清单的概要规格 —— 完整粘着、打印与耐久数据请索取数据表。"],
+      "vi": ["Thông số tóm tắt từ danh mục vật liệu ETIA — yêu cầu datasheet để có dữ liệu độ bám, in và độ bền đầy đủ."],
+      "th": ["ข้อมูลจำเพาะโดยสรุปจากรายการวัสดุ ETIA — ขอเอกสารข้อมูลสำหรับข้อมูลการยึดเกาะ การพิมพ์ และความทนทานฉบับเต็ม"]
+    }
+  },
+  "applications": {
+    "en": [
+      "Outdoor equipment, enclosures and cabinets",
+      "Security cameras and telecom base stations",
+      "Telecom ducts and warning labels",
+      "Municipal pipelines and pipe flow-direction marking",
+      "Environmental-monitoring equipment",
+      "Vehicle safety and warning labels"
+    ],
+    "zh": [
+      "户外设备、机箱与机柜",
+      "监控摄像头与通信基站",
+      "线缆管道与警示标签",
+      "市政管道与介质流向标识",
+      "环境监测设备",
+      "车辆安全与警示标签"
+    ],
+    "vi": [
+      "Thiết bị, vỏ và tủ ngoài trời",
+      "Camera an ninh và trạm gốc viễn thông",
+      "Ống dẫn viễn thông và nhãn cảnh báo",
+      "Đường ống đô thị và đánh dấu hướng dòng chảy",
+      "Thiết bị giám sát môi trường",
+      "Nhãn an toàn và cảnh báo phương tiện"
+    ],
+    "th": [
+      "อุปกรณ์ ตู้ และกล่องกลางแจ้ง",
+      "กล้องวงจรปิดและสถานีฐานโทรคมนาคม",
+      "ท่อร้อยสายและฉลากเตือน",
+      "ท่อประปาเทศบาลและการทำเครื่องหมายทิศทางการไหล",
+      "อุปกรณ์ตรวจวัดสิ่งแวดล้อม",
+      "ฉลากความปลอดภัยและคำเตือนยานพาหนะ"
+    ]
+  }
+}
