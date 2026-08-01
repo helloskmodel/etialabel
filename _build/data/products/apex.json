@@ -1,6 +1,6 @@
 {
   "slug": "apex",
-  "source": "_docs/sources/pcb-products (APEX)",
+  "source": "client TDS — Polyonics APEX Series XF-101S / XF-102S / XF-102G / XF-102M / XF-102SE",
   "langs": [
     "en",
     "zh",
@@ -91,107 +91,55 @@
     "headers": {
       "en": [
         "Model",
-        "Base",
-        "Thickness",
+        "Film",
         "Finish",
+        "Total thickness",
+        "Adhesion (24h, SS)",
         "ESD"
       ],
       "zh": [
         "型号",
-        "基材",
-        "厚度",
+        "面材",
         "表面",
+        "总厚度",
+        "粘着力（24h，不锈钢）",
         "防静电"
       ],
       "vi": [
         "Mã",
-        "Vật liệu",
-        "Độ dày",
+        "Màng",
         "Bề mặt",
+        "Độ dày tổng",
+        "Độ bám (24h, SS)",
         "ESD"
       ],
       "th": [
         "รุ่น",
-        "วัสดุ",
-        "ความหนา",
+        "ฟิล์ม",
         "พื้นผิว",
+        "ความหนารวม",
+        "แรงยึด (24 ชม., SS)",
         "ESD"
       ]
     },
     "rows": [
       {
         "cells": [
-          "XF-101M",
-          {
-            "en": "Polyimide",
-            "zh": "聚酰亚胺",
-            "vi": "Polyimide",
-            "th": "โพลิอิมิด"
-          },
-          "1 mil",
-          {
-            "en": "Matte white",
-            "zh": "雾白",
-            "vi": "Trắng mờ",
-            "th": "สีขาวด้าน"
-          },
-          "—"
-        ]
-      },
-      {
-        "cells": [
           "XF-101S",
           {
-            "en": "Polyimide",
-            "zh": "聚酰亚胺",
-            "vi": "Polyimide",
-            "th": "โพลิอิมิด"
+            "en": "1 mil (25µm) PI",
+            "zh": "1 mil（25µm）PI",
+            "vi": "PI 1 mil (25µm)",
+            "th": "PI 1 mil (25µm)"
           },
-          "1 mil",
           {
             "en": "Semi-gloss white",
-            "zh": "半亮白",
+            "zh": "半光白",
             "vi": "Trắng bán bóng",
             "th": "สีขาวกึ่งเงา"
           },
-          "—"
-        ]
-      },
-      {
-        "cells": [
-          "XF-101G",
-          {
-            "en": "Polyimide",
-            "zh": "聚酰亚胺",
-            "vi": "Polyimide",
-            "th": "โพลิอิมิด"
-          },
-          "1 mil",
-          {
-            "en": "Gloss white",
-            "zh": "亮白",
-            "vi": "Trắng bóng",
-            "th": "สีขาวเงา"
-          },
-          "—"
-        ]
-      },
-      {
-        "cells": [
-          "XF-102M",
-          {
-            "en": "Polyimide",
-            "zh": "聚酰亚胺",
-            "vi": "Polyimide",
-            "th": "โพลิอิมิด"
-          },
-          "2 mil",
-          {
-            "en": "Matte white",
-            "zh": "雾白",
-            "vi": "Trắng mờ",
-            "th": "สีขาวด้าน"
-          },
+          "2.4 mil (61 µm)",
+          "≥ 40 oz/in",
           "—"
         ]
       },
@@ -199,18 +147,19 @@
         "cells": [
           "XF-102S",
           {
-            "en": "Polyimide",
-            "zh": "聚酰亚胺",
-            "vi": "Polyimide",
-            "th": "โพลิอิมิด"
+            "en": "2 mil (50µm) PI",
+            "zh": "2 mil（50µm）PI",
+            "vi": "PI 2 mil (50µm)",
+            "th": "PI 2 mil (50µm)"
           },
-          "2 mil",
           {
             "en": "Semi-gloss white",
-            "zh": "半亮白",
+            "zh": "半光白",
             "vi": "Trắng bán bóng",
             "th": "สีขาวกึ่งเงา"
           },
+          "3.9 mil (99 µm)",
+          "≥ 50 oz/in",
           "—"
         ]
       },
@@ -218,98 +167,96 @@
         "cells": [
           "XF-102G",
           {
-            "en": "Polyimide",
-            "zh": "聚酰亚胺",
-            "vi": "Polyimide",
-            "th": "โพลิอิมิด"
+            "en": "2 mil (50µm) PI",
+            "zh": "2 mil（50µm）PI",
+            "vi": "PI 2 mil (50µm)",
+            "th": "PI 2 mil (50µm)"
           },
-          "2 mil",
           {
-            "en": "Gloss white",
-            "zh": "亮白",
-            "vi": "Trắng bóng",
-            "th": "สีขาวเงา"
+            "en": "High-gloss white",
+            "zh": "高光白",
+            "vi": "Trắng bóng cao",
+            "th": "สีขาวเงาสูง"
           },
+          "3.9 mil (99 µm)",
+          "≥ 50 oz/in",
           "—"
         ]
       },
       {
-        "esd": true,
         "cells": [
-          "XF-101ME",
+          "XF-102M",
           {
-            "en": "Anti-static PI",
-            "zh": "防静电聚酰亚胺",
-            "vi": "PI chống tĩnh",
-            "th": "โพลิอิมิดป้องกันสถิต"
+            "en": "2 mil (50µm) PI",
+            "zh": "2 mil（50µm）PI",
+            "vi": "PI 2 mil (50µm)",
+            "th": "PI 2 mil (50µm)"
           },
-          "1 mil",
           {
-            "en": "Matte",
-            "zh": "雾白",
-            "vi": "Mờ",
-            "th": "ด้าน"
+            "en": "Matte white",
+            "zh": "哑光白",
+            "vi": "Trắng mờ",
+            "th": "สีขาวด้าน"
           },
-          "S20.20"
+          "3.9 mil (99 µm)",
+          "≥ 50 oz/in",
+          "—"
         ]
       },
       {
-        "esd": true,
         "cells": [
-          "XF-101SE",
+          "XF-102SE",
           {
-            "en": "Anti-static PI",
-            "zh": "防静电聚酰亚胺",
-            "vi": "PI chống tĩnh",
-            "th": "โพลิอิมิดป้องกันสถิต"
+            "en": "2 mil (50µm) PI",
+            "zh": "2 mil（50µm）PI",
+            "vi": "PI 2 mil (50µm)",
+            "th": "PI 2 mil (50µm)"
           },
-          "1 mil",
           {
-            "en": "Semi-gloss",
-            "zh": "半亮白",
-            "vi": "Bán bóng",
-            "th": "กึ่งเงา"
+            "en": "Semi-gloss white",
+            "zh": "半光白",
+            "vi": "Trắng bán bóng",
+            "th": "สีขาวกึ่งเงา"
           },
-          "S20.20"
-        ]
-      },
-      {
-        "esd": true,
-        "cells": [
-          "XF-102ME",
+          "3.9 mil (99 µm)",
+          "≥ 50 oz/in",
           {
-            "en": "Anti-static PI",
-            "zh": "防静电聚酰亚胺",
-            "vi": "PI chống tĩnh",
-            "th": "โพลิอิมิดป้องกันสถิต"
-          },
-          "2 mil",
-          {
-            "en": "Matte",
-            "zh": "雾白",
-            "vi": "Mờ",
-            "th": "ด้าน"
-          },
-          "S20.20"
+            "en": "Static-dissipative",
+            "zh": "静电耗散",
+            "vi": "Tiêu tán tĩnh",
+            "th": "กระจายประจุ"
+          }
         ]
       }
     ],
     "notes": {
       "en": [
-        "Unified thermal: 150°C/100h continuous · 260°C/5min reflow peak · 300°C/90s extreme",
-        "Permanent acrylic adhesive; all 9 models UL certified (REACH & RoHS compliant)"
+        "Construction: high-temperature permanent acrylic PSA · thermal-transfer printable white polyimide.",
+        "Temperature: 100 h @ 150 °C (long-term) · 5 min @ 260 °C (operating) · 90 sec @ 300 °C (short-term) — survives multi-cycle reflow.",
+        "Tack ≥ 1000 g/in (XF-101S) / ≥ 1200 g/in (XF-102 series); Taber abrasion resistant; passes MIL-STD-202G Method 215K; flux & cleaner resistant (Kyzen, Zestron, IPA).",
+        "XF-102SE is static-dissipative: static decay 0.02 s · low-charging PSA/liner < 125 V.",
+        "Compliance: REACH · RoHS. UL File # PGJI2.MH19503 (UL 969 label+ribbon approvals pending)."
       ],
       "zh": [
-        "统一耐温：150℃/100h 长期 · 260℃/5min 回流峰值 · 300℃/90s 短时极限",
-        "永久性丙烯酸胶水；全部 9 款型号持有 UL 认证（符合 REACH、RoHS）"
+        "结构：耐高温永久丙烯酸压敏胶 · 可热转印白色聚酰亚胺面材。",
+        "温度：150 °C 长期 100 小时 · 260 °C 操作 5 分钟 · 300 °C 短时 90 秒 —— 可耐多轮回流焊。",
+        "初粘力 ≥ 1000 g/in（XF-101S）/ ≥ 1200 g/in（XF-102 系列）；耐 Taber 磨耗；通过 MIL-STD-202G Method 215K；耐助焊剂与清洗剂（Kyzen、Zestron、IPA）。",
+        "XF-102SE 为静电耗散型：静电衰减 0.02 秒 · 低起电胶/底纸 < 125 V。",
+        "合规：REACH · RoHS。UL 档案号 PGJI2.MH19503（UL 969 标签+碳带组合认证审批中）。"
       ],
       "vi": [
-        "Chịu nhiệt thống nhất: 150°C/100giờ liên tục · 260°C/5phút đỉnh hàn hồi · 300°C/90giây cực đoan ngắn hạn",
-        "Keo acrylic vĩnh viễn; tất cả 9 mã đều có chứng nhận UL (đáp ứng REACH & RoHS)"
+        "Cấu tạo: keo acrylic vĩnh viễn chịu nhiệt cao · polyimide trắng in chuyển nhiệt.",
+        "Nhiệt độ: 100 giờ @ 150 °C (dài hạn) · 5 phút @ 260 °C (vận hành) · 90 giây @ 300 °C (ngắn hạn) — chịu reflow nhiều chu kỳ.",
+        "Độ dính ≥ 1000 g/in (XF-101S) / ≥ 1200 g/in (dòng XF-102); chịu mài mòn Taber; đạt MIL-STD-202G Method 215K; kháng flux & dung dịch rửa (Kyzen, Zestron, IPA).",
+        "XF-102SE tiêu tán tĩnh điện: suy giảm tĩnh 0,02 s · keo/lớp lót ít tích điện < 125 V.",
+        "Tuân thủ: REACH · RoHS. UL File # PGJI2.MH19503 (đang chờ duyệt UL 969 cho tổ hợp nhãn+ribbon)."
       ],
       "th": [
-        "ทนอุณหภูมิมาตรฐานเดียวกัน: 150°C/100 ชั่วโมง ต่อเนื่อง · 260°C/5 นาที สูงสุดรีโฟลว์ · 300°C/90 วินาที สูงรุนแรงชั่วคราว",
-        "กาวอะคริลิกถาวร; ทั้ง 9 รุ่นมีใบรับรอง UL (ตรงตาม REACH และ RoHS)"
+        "โครงสร้าง: กาวอะคริลิกถาวรทนความร้อนสูง · โพลีอิไมด์สีขาวพิมพ์ถ่ายเทความร้อนได้",
+        "อุณหภูมิ: 100 ชม. @ 150 °C (ระยะยาว) · 5 นาที @ 260 °C (ใช้งาน) · 90 วินาที @ 300 °C (ระยะสั้น) — ทนรีโฟลว์หลายรอบ",
+        "แรงยึดเริ่มต้น ≥ 1000 g/in (XF-101S) / ≥ 1200 g/in (ซีรีส์ XF-102); ทนการขัดถู Taber; ผ่าน MIL-STD-202G Method 215K; ทนฟลักซ์และน้ำยาล้าง (Kyzen, Zestron, IPA)",
+        "XF-102SE เป็นแบบกระจายประจุ: การสลายประจุ 0.02 วินาที · กาว/ไลเนอร์ประจุต่ำ < 125 V",
+        "การปฏิบัติตาม: REACH · RoHS. UL File # PGJI2.MH19503 (อยู่ระหว่างอนุมัติ UL 969 สำหรับชุดฉลาก+ริบบอน)"
       ]
     }
   },
@@ -318,5 +265,7 @@
     "zh": "Apex™ 系列",
     "vi": "Dòng Apex™",
     "th": "ซีรีส์ Apex™"
-  }
+  },
+  "brand": "polyonics",
+  "industry": "pcb"
 }
