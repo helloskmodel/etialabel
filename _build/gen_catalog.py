@@ -412,6 +412,17 @@ def poly_series_key(slug):
     return "pcb"
 
 BRAND_PATH = {"polyonics": "/products/polyonics/", "heatproof": "/products/heatproof/"}
+# HEATPROOF functional segments (browsing aisles on the brand page).
+HP_SEGMENTS = [
+    {"key": "direct", "name": {"en": "Direct Hot Application", "zh": "热态直贴", "vi": "Dán trực tiếp khi nóng", "th": "ติดขณะร้อนโดยตรง"},
+     "slugs": ["hp-700t", "hp-800c", "hp-901", "hp-x2049"]},
+    {"key": "heatmgmt", "name": {"en": "Heat Management Labels", "zh": "热管理标签", "vi": "Nhãn quản lý nhiệt", "th": "ฉลากการจัดการความร้อน"},
+     "slugs": ["hp-360", "hp-x2080", "hp-120s"]},
+    {"key": "ceramic", "name": {"en": "Ceramic Labels", "zh": "陶瓷标签", "vi": "Nhãn gốm", "th": "ฉลากเซรามิก"},
+     "slugs": ["hp-cbr11", "hp-cbr13", "hp-cbr-cx2"]},
+    {"key": "tags", "name": {"en": "Heat-Treatment Tags", "zh": "热处理吊牌", "vi": "Thẻ xử lý nhiệt", "th": "แท็กอบชุบความร้อน"},
+     "slugs": ["hp-l90", "hp-l80", "hp-m83"]},
+]
 # HEATPROOF brand (ETIA's own extreme-temperature line) — steel banner, grouped by temp tier.
 HP_BANNER = hp._COS + "INDUSTRY/STEEL-BANNER"
 HP_HEAD = {
@@ -767,14 +778,23 @@ def build_brand(records, lang, bkey):
         overview = ('<div class="bsechd">%s</div>%s' %
                     (esc(POLY_OVERVIEW_LABEL.get(lang) or POLY_OVERVIEW_LABEL["en"]),
                      "".join('<p class="bover">%s</p>' % esc(p) for p in paras)))
+        by_slug = {r["slug"]: r for r in items}
         sections = ""
-        for band in ["xhot", "vhot", "hot", "std", "cryo"]:
-            members = sorted((r for r in items if band in r["temps"]), key=lambda r: r["slug"])
+        placed = set()
+        for seg in HP_SEGMENTS:
+            members = [by_slug[s] for s in seg["slugs"] if s in by_slug]
             if not members:
                 continue
-            nm = TEMP_BANDS[band].get(lang) or TEMP_BANDS[band]["en"]
+            placed.update(seg["slugs"])
+            nm = seg["name"].get(lang) or seg["name"]["en"]
             sections += ('<div class="bsec"><h2>%s</h2><span class="cnt">%d</span></div>'
                          '<div class="bgrid">%s</div>') % (esc(nm), len(members), "".join(card(r) for r in members))
+        # any HP product not mapped to a segment falls into a catch-all "More"
+        extra = sorted((r for r in items if r["slug"] not in placed), key=lambda r: r["slug"])
+        if extra:
+            nm = {"en": "More", "zh": "更多", "vi": "Khác", "th": "อื่นๆ"}.get(lang, "More")
+            sections += ('<div class="bsec"><h2>%s</h2><span class="cnt">%d</span></div>'
+                         '<div class="bgrid">%s</div>') % (esc(nm), len(extra), "".join(card(r) for r in extra))
         body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap">%s%s</div>' % (overview, sections))
     else:
         grid = ('<div class="bgrid">%s</div>' % "".join(card(r) for r in sorted(items, key=lambda x: L(x["title"]).lower()))) \
