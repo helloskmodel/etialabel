@@ -1,128 +1,97 @@
 {
   "slug": "e-6034",
-  "source": "client product brief — E-6034 matte vinyl wrap-around label (EN/ZH)",
+  "source": "ETIA-TECH E-6034 Technical Data Sheet",
   "langs": [
     "en",
     "zh",
     "vi",
     "th"
   ],
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-BANNER",
+  "banner": "",
+  "brand": "etia",
+  "industry": "cable",
   "product_img": "",
-  "eyebrow": {
-    "en": "Wire & Cable · Wrap-Around Identification",
-    "zh": "线缆 · 缠绕标识"
-  },
   "title": {
-    "en": "E-6034 — Matte Vinyl Wrap-Around Labels",
-    "zh": "E-6034 · 雾面 VINYL 缠绕标签",
-    "vi": "E-6034 · Nhãn quấn vinyl mờ",
-    "th": "E-6034 · ฉลากพันไวนิลด้าน"
+    "en": "E-6034 — Clear Matte Vinyl Wrap-Around Label (5–8 Year Outdoor)",
+    "zh": "E-6034 —— 透明哑光乙烯基环绕标签（户外 5–8 年）",
+    "vi": "E-6034 — Nhãn vinyl mờ trong quấn quanh (ngoài trời 5–8 năm)",
+    "th": "E-6034 — ฉลากไวนิลด้านใสพันรอบ (กลางแจ้ง 5–8 ปี)"
   },
   "tagline": {
-    "en": "Flexible wrap-around labels for wire, cable and equipment identification",
-    "zh": "柔性缠绕标签，适用于线缆、线束及户外设备标识",
-    "vi": "Nhãn quấn linh hoạt cho nhận diện dây, cáp và thiết bị",
-    "th": "ฉลากพันแบบยืดหยุ่นสำหรับระบุสายไฟ สายเคเบิล และอุปกรณ์"
+    "en": "4 mil clear matte vinyl wrap-around label with permanent acrylic adhesive — weatherable, water/oil/tear-resistant, 5–8 years outdoors, −40 to 80 °C.",
+    "zh": "4 mil 透明哑光乙烯基环绕标签，永久性丙烯酸胶 —— 耐候、耐水耐油耐撕，户外 5–8 年，−40 至 80 °C。",
+    "vi": "Nhãn vinyl mờ trong 4 mil quấn quanh với keo acrylic vĩnh viễn — chịu thời tiết, kháng nước/dầu/xé, ngoài trời 5–8 năm, −40 đến 80 °C.",
+    "th": "ฉลากไวนิลด้านใส 4 mil พันรอบ พร้อมกาวอะคริลิกถาวร — ทนสภาพอากาศ ทนน้ำ/น้ำมัน/การฉีก กลางแจ้ง 5–8 ปี, −40 ถึง 80 °C"
   },
   "positioning": {
-    "en": "E-6034 is a flexible matte vinyl label material designed for wrap-around identification of wires, cables and industrial equipment. Its soft vinyl construction conforms easily to curved surfaces, while the permanent acrylic adhesive delivers reliable long-term bonding on plastics, painted metals and coated surfaces. Resistant to moisture, UV exposure, oils and abrasion, E-6034 provides durable identification for both indoor and outdoor applications.",
-    "zh": "E-6034 是一款专为线缆、线束及工业设备标识设计的雾面 VINYL 标签材料。柔软的乙烯基面材能够紧密贴合线缆、管件及各种曲面，配合高性能永久性丙烯酸胶，在塑料、金属、粉末喷涂及玻璃等多种基材上保持稳定粘接。具备优异的耐水、耐油、耐紫外线及耐磨性能，可满足室内外长期标识需求。",
-    "vi": "E-6034 là vật liệu nhãn vinyl mờ linh hoạt để nhận diện quấn quanh dây, cáp và thiết bị công nghiệp. Vinyl mềm dễ ôm theo bề mặt cong, keo acrylic vĩnh viễn cho độ bám lâu dài trên nhựa, kim loại sơn và bề mặt phủ. Kháng ẩm, tia UV, dầu và mài mòn, E-6034 mang lại nhận diện bền cho ứng dụng trong nhà và ngoài trời.",
-    "th": "E-6034 เป็นวัสดุฉลากไวนิลด้านที่ยืดหยุ่นสำหรับการระบุแบบพันรอบสายไฟ สายเคเบิล และอุปกรณ์อุตสาหกรรม ไวนิลนุ่มโค้งตามพื้นผิวได้ง่าย กาวอะคริลิกถาวรให้การยึดเกาะระยะยาวบนพลาสติก โลหะทาสี และพื้นผิวเคลือบ ทนความชื้น รังสียูวี น้ำมัน และการขัดถู ให้การระบุที่ทนทานทั้งในร่มและกลางแจ้ง"
-  },
-  "challenges": {},
-  "benefits": {
-    "en": [
-      "Flexible for curved surfaces — soft matte vinyl conforms to wires, cables, tubes and irregular surfaces without lifting or wrinkling.",
-      "Strong permanent adhesion — high-performance acrylic adhesive bonds securely to plastics, painted metal, powder coatings, glass and fiberglass.",
-      "Built for harsh environments — withstands water, oil, UV exposure, abrasion and salt spray for long-lasting identification.",
-      "Clear, reliable printing — the matte surface delivers excellent thermal-transfer print quality and barcode readability with reduced glare."
-    ],
-    "zh": [
-      "柔软贴合，不易翘边 —— 柔性 VINYL 面材可轻松缠绕各种线缆、管路及异形曲面，贴合牢固，不易起翘。",
-      "强力持久粘接 —— 永久性丙烯酸胶适用于塑料、喷涂金属、玻璃、玻纤等多种表面，长期使用依然稳定可靠。",
-      "适应严苛环境 —— 耐水、耐油、耐紫外线、耐磨损，可满足户外及工业环境的长期使用要求。",
-      "清晰打印，易于识别 —— 雾面表面减少反光，支持热转印打印，文字、二维码和条码清晰易读。"
-    ],
-    "vi": [
-      "Linh hoạt cho bề mặt cong — vinyl mờ mềm ôm theo dây, cáp, ống mà không bong hay nhăn.",
-      "Bám dính vĩnh viễn mạnh — bám chắc trên nhựa, kim loại sơn, phủ bột, kính và sợi thủy tinh.",
-      "Cho môi trường khắc nghiệt — chịu nước, dầu, tia UV, mài mòn và phun muối.",
-      "In rõ, đáng tin cậy — bề mặt mờ cho chất lượng in chuyển nhiệt tốt, giảm chói."
-    ],
-    "th": [
-      "ยืดหยุ่นสำหรับพื้นผิวโค้ง — ไวนิลด้านนุ่มโค้งตามสายไฟ สายเคเบิล ท่อ โดยไม่เผยอหรือย่น",
-      "ยึดเกาะถาวรแข็งแรง — ยึดแน่นบนพลาสติก โลหะทาสี สีฝุ่น กระจก และไฟเบอร์กลาส",
-      "สำหรับสภาพแวดล้อมที่รุนแรง — ทนน้ำ น้ำมัน รังสียูวี การขัดถู และละอองเกลือ",
-      "พิมพ์ชัดเจน เชื่อถือได้ — พื้นผิวด้านให้คุณภาพการพิมพ์ถ่ายเทความร้อนที่ดี ลดแสงสะท้อน"
-    ]
+    "en": "E-6034 is a 4 mil clear matte vinyl label with a permanent acrylic adhesive, made for wire, cable and automotive wrap-around identification. Its strong winding ring conforms to curved surfaces without warping and offers good adhesion, stretchability and friction resistance; it withstands weathering, water, oil, tearing and high-humidity salt spray, rated for 5–8 years outdoors across −40 to 80 °C.",
+    "zh": "E-6034 是一款 4 mil 透明哑光乙烯基标签，配永久性丙烯酸胶，专为线缆与汽车环绕标识设计。绕环力强，贴合曲面不翘边，粘着与延展性好、耐摩擦；耐候、耐水、耐油、耐撕并耐高湿盐雾，户外可达 5–8 年，温度 −40 至 80 °C。",
+    "vi": "E-6034 là nhãn vinyl mờ trong 4 mil với keo acrylic vĩnh viễn, cho nhận diện quấn quanh dây, cáp và ô tô. Vòng quấn chắc, ôm bề mặt cong không vênh, bám và co giãn tốt, kháng ma sát; chịu thời tiết, nước, dầu, xé và phun muối ẩm cao, đạt 5–8 năm ngoài trời trong dải −40 đến 80 °C.",
+    "th": "E-6034 เป็นฉลากไวนิลด้านใส 4 mil พร้อมกาวอะคริลิกถาวร สำหรับการระบุแบบพันรอบสายไฟ สายเคเบิล และยานยนต์ วงพันแข็งแรง แนบผิวโค้งไม่โก่ง ยึดเกาะและยืดได้ดี ทนการเสียดสี; ทนสภาพอากาศ น้ำ น้ำมัน การฉีก และละอองเกลือความชื้นสูง รองรับกลางแจ้ง 5–8 ปี ในช่วง −40 ถึง 80 °C"
   },
   "features": {
     "en": [
-      "Flexible and conformable",
-      "Water, oil and UV resistant",
-      "Suitable for thermal-transfer printing",
-      "Excellent outdoor durability"
+      "Transparent — works as a self-laminating wrap-around label",
+      "Strong winding ring; good adhesion, stretchability and friction resistance",
+      "No warping on curved surfaces",
+      "Excellent aging, water, oil and tear resistance; suited to high-humidity salt spray",
+      "5–8 years outdoor durability"
     ],
     "zh": [
-      "柔软易缠绕，适用于曲面",
-      "防水、耐油、耐紫外线",
-      "支持热转印打印",
-      "耐磨耐候，适合室内外长期使用"
+      "透明 —— 可作自覆膜环绕标签",
+      "绕环力强；粘着、延展与耐摩擦性好",
+      "曲面贴标不翘边",
+      "耐老化、耐水、耐油、耐撕优异；适用高湿盐雾环境",
+      "户外耐久 5–8 年"
     ],
     "vi": [
-      "Linh hoạt và dễ ôm theo bề mặt",
-      "Kháng nước, dầu và tia UV",
-      "Phù hợp in chuyển nhiệt",
-      "Độ bền ngoài trời xuất sắc"
+      "Trong suốt — dùng như nhãn tự bọc quấn quanh",
+      "Vòng quấn chắc; bám, co giãn và kháng ma sát tốt",
+      "Không vênh trên bề mặt cong",
+      "Kháng lão hóa, nước, dầu và xé xuất sắc; hợp phun muối ẩm cao",
+      "Độ bền ngoài trời 5–8 năm"
     ],
     "th": [
-      "ยืดหยุ่นและโค้งตามพื้นผิวได้",
-      "ทนน้ำ น้ำมัน และรังสียูวี",
-      "เหมาะกับการพิมพ์ถ่ายเทความร้อน",
-      "ทนทานกลางแจ้งได้ดีเยี่ยม"
+      "ใส — ใช้เป็นฉลากพันรอบเคลือบในตัว",
+      "วงพันแข็งแรง; ยึดเกาะ ยืดได้ และทนเสียดสีดี",
+      "ไม่โก่งบนผิวโค้ง",
+      "ทนการเสื่อมสภาพ น้ำ น้ำมัน และการฉีกดีเยี่ยม; เหมาะกับละอองเกลือความชื้นสูง",
+      "ความทนทานกลางแจ้ง 5–8 ปี"
     ]
   },
   "spec_table": {
     "headers": {
       "en": [
-        "Parameter",
-        "Details"
+        "Property",
+        "Value"
       ],
       "zh": [
-        "参数",
-        "详情"
+        "属性",
+        "参数"
+      ],
+      "vi": [
+        "Thuộc tính",
+        "Giá trị"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "ค่า"
       ]
     },
     "rows": [
       {
-        "group": {
-          "en": "Specifications",
-          "zh": "产品特点"
-        }
-      },
-      {
         "cells": [
           {
-            "en": "Material",
-            "zh": "面材"
+            "en": "Facestock",
+            "zh": "面材",
+            "vi": "Vật liệu mặt",
+            "th": "วัสดุหน้า"
           },
           {
-            "en": "Matte Vinyl",
-            "zh": "雾面 VINYL（乙烯基）"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Face Thickness",
-            "zh": "面材厚度"
-          },
-          {
-            "en": "0.087 mm (3.4 mil)",
-            "zh": "0.087 mm（3.4 mil）"
+            "en": "4 mil clear matte vinyl (soft)",
+            "zh": "4 mil 透明哑光乙烯基（柔软）",
+            "vi": "Vinyl mờ trong 4 mil (mềm)",
+            "th": "ไวนิลด้านใส 4 mil (นุ่ม)"
           }
         ]
       },
@@ -130,106 +99,156 @@
         "cells": [
           {
             "en": "Adhesive",
-            "zh": "胶粘剂"
+            "zh": "胶粘剂",
+            "vi": "Keo",
+            "th": "กาว"
           },
           {
-            "en": "Permanent Acrylic",
-            "zh": "永久性丙烯酸胶"
+            "en": "Permanent acrylic PSA",
+            "zh": "永久性丙烯酸压敏胶",
+            "vi": "Keo acrylic PSA vĩnh viễn",
+            "th": "กาว PSA อะคริลิกถาวร"
           }
         ]
       },
       {
         "cells": [
           {
-            "en": "Adhesive Thickness",
-            "zh": "胶层厚度"
+            "en": "Outdoor durability",
+            "zh": "户外耐久",
+            "vi": "Độ bền ngoài trời",
+            "th": "ความทนทานกลางแจ้ง"
           },
           {
-            "en": "0.022 mm (0.9 mil)",
-            "zh": "0.022 mm（0.9 mil）"
+            "en": "5–8 years",
+            "zh": "5–8 年",
+            "vi": "5–8 năm",
+            "th": "5–8 ปี"
           }
         ]
       },
       {
         "cells": [
           {
-            "en": "Service Temperature",
-            "zh": "使用温度"
+            "en": "Temperature",
+            "zh": "温度",
+            "vi": "Nhiệt độ",
+            "th": "อุณหภูมิ"
           },
           {
-            "en": "−40°C to 80°C",
-            "zh": "−40℃～80℃"
+            "en": "−40 to 80 °C",
+            "zh": "−40 至 80 °C",
+            "vi": "−40 đến 80 °C",
+            "th": "−40 ถึง 80 °C"
           }
         ]
       },
       {
-        "group": {
-          "en": "Recommended For",
-          "zh": "适用行业"
-        }
+        "cells": [
+          {
+            "en": "Peel adhesion",
+            "zh": "剥离力",
+            "vi": "Lực bóc",
+            "th": "แรงลอก"
+          },
+          {
+            "en": "6 N/25 mm (GB/T 2792)",
+            "zh": "6 N/25 mm（GB/T 2792）",
+            "vi": "6 N/25 mm (GB/T 2792)",
+            "th": "6 N/25 mm (GB/T 2792)"
+          }
+        ]
       },
       {
         "cells": [
           {
-            "en": "Markets",
-            "zh": "行业"
+            "en": "Tack",
+            "zh": "初粘力",
+            "vi": "Độ dính",
+            "th": "แทค"
           },
           {
-            "en": "Electrical & Power · Telecommunications · Data Centers · Industrial Automation · Automotive & EV · Rail & Transportation · Outdoor Infrastructure",
-            "zh": "电力 · 通信 · 数据中心 · 工业自动化 · 汽车与新能源 · 轨道交通 · 户外基础设施"
+            "en": "5 N/25 mm (GB/T 31125)",
+            "zh": "5 N/25 mm（GB/T 31125）",
+            "vi": "5 N/25 mm (GB/T 31125)",
+            "th": "5 N/25 mm (GB/T 31125)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Holding power",
+            "zh": "保持力",
+            "vi": "Lực giữ",
+            "th": "แรงยึด"
+          },
+          {
+            "en": "≥ 48 h/25 mm (GB/T 4851)",
+            "zh": "≥ 48 h/25 mm（GB/T 4851）",
+            "vi": "≥ 48 h/25 mm (GB/T 4851)",
+            "th": "≥ 48 h/25 mm (GB/T 4851)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Shelf life",
+            "zh": "保存有效期",
+            "vi": "Hạn dùng",
+            "th": "อายุการเก็บ"
+          },
+          {
+            "en": "1 year(s) at 22 °C / 50% RH",
+            "zh": "22 °C / 50% RH 下 1 年",
+            "vi": "1 năm ở 22 °C / 50% RH",
+            "th": "1 ปี ที่ 22 °C / 50% RH"
           }
         ]
       }
     ],
     "notes": {
       "en": [
-        "Figures are indicative typical values; verify against the current technical datasheet and by application testing before production."
+        "Clean, dry, contamination-free surface (isopropyl alcohol recommended); apply firm pressure. Values are typical, not specifications — verify by application testing."
       ],
       "zh": [
-        "以上为参考性典型值；量产前请以最新技术数据表为准并经应用测试确认。"
+        "贴标表面应清洁、干燥、无污染（建议异丙醇清洁）；贴标时施加足够压力。数值为典型值，非规格值 —— 请经应用测试确认。"
+      ],
+      "vi": [
+        "Bề mặt sạch, khô, không nhiễm bẩn (khuyến nghị cồn isopropyl); ấn mạnh khi dán. Giá trị là điển hình, không phải thông số — hãy xác minh bằng thử nghiệm."
+      ],
+      "th": [
+        "พื้นผิวสะอาด แห้ง ปราศจากสิ่งปนเปื้อน (แนะนำไอโซโพรพิลแอลกอฮอล์); กดแน่นเมื่อติด ค่าเป็นค่าทั่วไป ไม่ใช่สเปก — โปรดตรวจสอบด้วยการทดสอบการใช้งาน"
       ]
     }
   },
   "applications": {
     "en": [
-      "Wire & cable identification",
-      "Electrical control panels",
-      "Data centers & network cabling",
-      "Telecommunications equipment",
-      "Automotive wiring harnesses",
-      "Outdoor electrical equipment",
-      "Industrial machinery",
-      "Infrastructure maintenance"
+      "Wire, cable and wiring-harness wrap-around identification",
+      "Self-laminating cable labels",
+      "Automotive-industry labeling"
     ],
     "zh": [
-      "电线、电缆及线束标识",
-      "电力控制柜及配电设备",
-      "数据中心及网络布线",
-      "通信设备及光纤线路",
-      "汽车及新能源线束",
-      "户外设备及基础设施标识",
-      "工业自动化设备"
+      "线缆与线束环绕标识",
+      "自覆膜线缆标签",
+      "汽车行业标识"
     ],
     "vi": [
-      "Nhận diện dây & cáp",
-      "Bảng điều khiển điện",
-      "Trung tâm dữ liệu & cáp mạng",
-      "Thiết bị viễn thông",
-      "Bó dây điện ô tô",
-      "Thiết bị điện ngoài trời",
-      "Máy móc công nghiệp",
-      "Bảo trì hạ tầng"
+      "Nhận diện quấn quanh dây, cáp và bó dây",
+      "Nhãn cáp tự bọc",
+      "Nhãn ngành ô tô"
     ],
     "th": [
-      "การระบุสายไฟและสายเคเบิล",
-      "ตู้ควบคุมไฟฟ้า",
-      "ศูนย์ข้อมูลและสายเครือข่าย",
-      "อุปกรณ์โทรคมนาคม",
-      "ชุดสายไฟยานยนต์",
-      "อุปกรณ์ไฟฟ้ากลางแจ้ง",
-      "เครื่องจักรอุตสาหกรรม",
-      "การบำรุงรักษาโครงสร้างพื้นฐาน"
+      "การระบุพันรอบสายไฟ สายเคเบิล และชุดสายไฟ",
+      "ฉลากสายเคเบิลเคลือบในตัว",
+      "การติดฉลากในอุตสาหกรรมยานยนต์"
     ]
   },
-  "certifications": {}
+  "certifications": {
+    "en": [],
+    "zh": [],
+    "vi": [],
+    "th": []
+  }
 }

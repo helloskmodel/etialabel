@@ -328,12 +328,24 @@
           "slug": "e-6533"
         },
         {
+          "name": "E-6533R",
+          "line": {
+            "en": "3 mil red vinyl · permanent acrylic · −40 to 80 °C · 5–8-year outdoor · hazard/safety",
+            "zh": "3 mil 红色乙烯基 · 永久丙烯酸胶 · −40 至 80 °C · 户外 5–8 年 · 危险/安全",
+            "vi": "vinyl đỏ 3 mil · keo acrylic vĩnh viễn · −40 đến 80 °C · ngoài trời 5–8 năm · nguy hiểm/an toàn",
+            "th": "ไวนิลสีแดง 3 mil · กาวอะคริลิกถาวร · −40 ถึง 80 °C · กลางแจ้ง 5–8 ปี · อันตราย/ความปลอดภัย"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-6533r"
+        },
+        {
           "name": "E-6534",
           "line": {
-            "en": "4 mil vinyl · UV & weatherable · −40 to 150 °C · Brady B-8541 / B-595 equivalent",
-            "zh": "4 mil 乙烯基 · 耐紫外线耐候 · −40 至 150 °C · 等效 Brady B-8541 / B-595",
-            "vi": "vinyl 4 mil · chống UV & thời tiết · −40 đến 150 °C · tương đương Brady B-8541 / B-595",
-            "th": "ไวนิล 4 mil · ทน UV และสภาพอากาศ · −40 ถึง 150 °C · เทียบเท่า Brady B-8541 / B-595"
+            "en": "4 mil white vinyl · permanent acrylic · −40 to 150 °C · 5–8-year outdoor",
+            "zh": "4 mil 白色乙烯基 · 永久丙烯酸胶 · −40 至 150 °C · 户外 5–8 年",
+            "vi": "vinyl trắng 4 mil · keo acrylic vĩnh viễn · −40 đến 150 °C · ngoài trời 5–8 năm",
+            "th": "ไวนิลสีขาว 4 mil · กาวอะคริลิกถาวร · −40 ถึง 150 °C · กลางแจ้ง 5–8 ปี"
           },
           "img": "",
           "landing": true,

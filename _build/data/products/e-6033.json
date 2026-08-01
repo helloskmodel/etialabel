@@ -1,6 +1,6 @@
 {
   "slug": "e-6033",
-  "source": "_docs/sources/wire & cable",
+  "source": "ETIA-TECH E-6033 Technical Data Sheet",
   "langs": [
     "en",
     "zh",
@@ -8,104 +8,247 @@
     "th"
   ],
   "banner": "",
+  "brand": "etia",
+  "industry": "cable",
   "product_img": "",
   "title": {
-    "en": "E6033 — Clear Self-Laminating Label",
-    "zh": "E6033 · 透明自覆膜标签",
-    "vi": "E6033 · Nhãn tự cán màng trong suốt",
-    "th": "E6033 · ฉลากเคลือบใสในตัว"
+    "en": "E-6033 — Clear Self-Laminating Cable Label",
+    "zh": "E-6033 —— 透明自覆膜线缆标签",
+    "vi": "E-6033 — Nhãn cáp tự bọc trong suốt",
+    "th": "E-6033 — ฉลากสายเคเบิลเคลือบในตัวใส"
   },
   "tagline": {
-    "en": "Full-wrap lamination seals printed text, waterproof & solvent resistant for 120℃ environments",
-    "zh": "全包覆膜锁护打印字迹，防水耐溶剂，适配 120℃工况",
-    "vi": "Cán màng bao phủ toàn phần khóa chữ in, chống nước & dung môi cho môi trường 120°C",
-    "th": "เคลือบหุ้มทั้งชิ้นล็อกตัวอักษรที่พิมพ์ กันน้ำและทนตัวทำละลายสำหรับสภาพแวดล้อม 120°C"
+    "en": "3 mil clear vinyl self-laminating cable label with permanent acrylic adhesive — flexible, thermal-transfer printable, oil/water-resistant, −40 to 120 °C.",
+    "zh": "3 mil 透明乙烯基自覆膜线缆标签，永久性丙烯酸胶 —— 柔软、可热转印、耐油耐水，−40 至 120 °C。",
+    "vi": "Nhãn cáp tự bọc vinyl trong 3 mil với keo acrylic vĩnh viễn — dẻo, in truyền nhiệt, kháng dầu/nước, −40 đến 120 °C.",
+    "th": "ฉลากสายเคเบิลเคลือบในตัวไวนิลใส 3 mil พร้อมกาวอะคริลิกถาวร — ยืดหยุ่น พิมพ์ถ่ายเทความร้อนได้ ทนน้ำมัน/น้ำ, −40 ถึง 120 °C"
   },
   "positioning": {
-    "en": "Full wrap lamination fully seals printed text, waterproof & solvent resistant for 120℃ environments. High-transparency facestock for instant identification; low-creep special glue prevents edge lifting & peeling, offering full-lifecycle durable marking.",
-    "zh": "全包覆膜锁护打印字迹，防水耐溶剂，适配 120℃工况；高透明面材辨识度拉满，专用低蠕变背胶杜绝翘边、开口脱落，实现全生命周期长效标识",
-    "vi": "Cán màng bao phủ toàn phần bịt kín hoàn toàn chữ in, chống nước & dung môi cho môi trường 120°C. Vật liệu mặt độ trong suốt cao giúp nhận diện tức thì; keo chuyên dụng độ trườn thấp ngăn nhấc mép & bong tróc, mang lại đánh dấu bền toàn vòng đời.",
-    "th": "การเคลือบหุ้มทั้งชิ้นบิดปิดตัวอักษรที่พิมพ์อย่างสมบูรณ์ กันน้ำและทนตัวทำละลายสำหรับสภาพแวดล้อม 120°C วัสดุพิมพ์ความโปร่งใสสูงเพื่อการระบุตัวตนทันที กาวพิเศษการไหลเย็นต่ำป้องกันขอบเผยอและหลุดลอก ให้การทำเครื่องหมายที่ทนทานตลอดวงจรอายุการใช้งาน"
+    "en": "E-6033 is a 3 mil clear vinyl film with a permanent acrylic adhesive, designed as a self-laminating cable label. It is very flexible, thermal-transfer printable with the correct ribbon, does not curl after labeling and conforms to curved surfaces. It offers good oil, water, solvent and heat resistance with high initial tack, high shear and high ultimate bond — for cable and wiring-harness identification in electronics, telecom and automotive.",
+    "zh": "E-6033 是一款 3 mil 透明乙烯基薄膜，配永久性丙烯酸胶，专为自覆膜线缆标签设计。非常柔软，配合适碳带可热转印，贴标后不卷曲，贴合曲面。耐油、耐水、耐溶剂与耐热，初粘高、剪切高、终粘强 —— 用于电子、通讯与汽车的线缆与线束标识。",
+    "vi": "E-6033 là màng vinyl trong 3 mil với keo acrylic vĩnh viễn, thiết kế làm nhãn cáp tự bọc. Rất dẻo, in truyền nhiệt với ribbon phù hợp, không cuộn sau khi dán và ôm bề mặt cong. Kháng dầu, nước, dung môi và nhiệt tốt với độ dính ban đầu cao, lực cắt cao và độ bám cuối cao — cho nhận diện cáp và bó dây trong điện tử, viễn thông và ô tô.",
+    "th": "E-6033 เป็นฟิล์มไวนิลใส 3 mil พร้อมกาวอะคริลิกถาวร ออกแบบเป็นฉลากสายเคเบิลเคลือบในตัว ยืดหยุ่นมาก พิมพ์ถ่ายเทความร้อนได้ด้วยริบบอนที่เหมาะสม ไม่ม้วนหลังติด และแนบผิวโค้ง ทนน้ำมัน น้ำ ตัวทำละลาย และความร้อนได้ดี พร้อมแทคเริ่มต้นสูง แรงเฉือนสูง และการยึดสุดท้ายสูง — สำหรับระบุสายเคเบิลและชุดสายไฟในอิเล็กทรอนิกส์ โทรคมนาคม และยานยนต์"
   },
-  "challenges": {},
   "features": {
     "en": [
-      "Full wrap lamination fully seals printed text",
-      "Waterproof & solvent resistant for 120℃ environments",
-      "High-transparency facestock for instant identification",
-      "Low-creep special glue prevents edge lifting & peeling for full-lifecycle durable marking"
+      "Transparent — works as a self-laminating label",
+      "Suitable for winding / ring bonding on cables",
+      "Good solvent, oil, water and heat resistance",
+      "High initial tack, high shear and high ultimate bond to many surfaces",
+      "No curling after labeling; conforms to curved surfaces"
     ],
     "zh": [
-      "全包覆膜锁护打印字迹",
-      "防水耐溶剂，适配 120℃工况",
-      "高透明面材辨识度拉满",
-      "专用低蠕变背胶杜绝翘边、开口脱落，实现全生命周期长效标识"
+      "透明 —— 可作自覆膜标签",
+      "适合线缆绕环粘贴",
+      "耐溶剂、耐油、耐水、耐热性好",
+      "高初粘、高剪切、终粘强，适应多种表面",
+      "贴标后不卷曲；贴合曲面"
     ],
     "vi": [
-      "Cán màng bao phủ toàn phần bịt kín hoàn toàn chữ in",
-      "Chống nước & dung môi cho môi trường 120°C",
-      "Vật liệu mặt độ trong suốt cao giúp nhận diện tức thì",
-      "Keo chuyên dụng độ trườn thấp ngăn nhấc mép & bong tróc, đánh dấu bền toàn vòng đời"
+      "Trong suốt — dùng như nhãn tự bọc",
+      "Hợp quấn / dán vòng trên cáp",
+      "Kháng dung môi, dầu, nước và nhiệt tốt",
+      "Độ dính ban đầu cao, lực cắt cao và độ bám cuối cao trên nhiều bề mặt",
+      "Không cuộn sau khi dán; ôm bề mặt cong"
     ],
     "th": [
-      "การเคลือบหุ้มทั้งชิ้นปิดตัวอักษรที่พิมพ์อย่างสมบูรณ์",
-      "กันน้ำและทนตัวทำละลายสำหรับสภาพแวดล้อม 120°C",
-      "วัสดุพิมพ์ความโปร่งใสสูงเพื่อการระบุตัวตนทันที",
-      "กาวพิเศษการไหลเย็นต่ำป้องกันขอบเผยอและหลุดลอก ให้การทำเครื่องหมายที่ทนทานตลอดวงจรอายุการใช้งาน"
+      "ใส — ใช้เป็นฉลากเคลือบในตัว",
+      "เหมาะกับการพัน / ยึดวงบนสายเคเบิล",
+      "ทนตัวทำละลาย น้ำมัน น้ำ และความร้อนดี",
+      "แทคเริ่มต้นสูง แรงเฉือนสูง และการยึดสุดท้ายสูงบนหลายพื้นผิว",
+      "ไม่ม้วนหลังติด; แนบผิวโค้ง"
     ]
   },
-  "benefits": {},
-  "spec": {
-    "en": [
-      "Facestock: High-transparency self-laminating film (full wrap lamination)",
-      "Temperature rating: 120℃",
-      "Adhesive: Low-creep special adhesive",
-      "Properties: Waterproof & solvent resistant"
+  "spec_table": {
+    "headers": {
+      "en": [
+        "Property",
+        "Value"
+      ],
+      "zh": [
+        "属性",
+        "参数"
+      ],
+      "vi": [
+        "Thuộc tính",
+        "Giá trị"
+      ],
+      "th": [
+        "คุณสมบัติ",
+        "ค่า"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Facestock",
+            "zh": "面材",
+            "vi": "Vật liệu mặt",
+            "th": "วัสดุหน้า"
+          },
+          {
+            "en": "3 mil clear vinyl film",
+            "zh": "3 mil 透明乙烯基薄膜",
+            "vi": "Màng vinyl trong 3 mil",
+            "th": "ฟิล์มไวนิลใส 3 mil"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adhesive",
+            "zh": "胶粘剂",
+            "vi": "Keo",
+            "th": "กาว"
+          },
+          {
+            "en": "Permanent acrylic PSA",
+            "zh": "永久性丙烯酸压敏胶",
+            "vi": "Keo acrylic PSA vĩnh viễn",
+            "th": "กาว PSA อะคริลิกถาวร"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Temperature",
+            "zh": "温度",
+            "vi": "Nhiệt độ",
+            "th": "อุณหภูมิ"
+          },
+          {
+            "en": "−40 to 120 °C",
+            "zh": "−40 至 120 °C",
+            "vi": "−40 đến 120 °C",
+            "th": "−40 ถึง 120 °C"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Peel adhesion",
+            "zh": "剥离力",
+            "vi": "Lực bóc",
+            "th": "แรงลอก"
+          },
+          {
+            "en": "9 N/25 mm (GB/T 2792)",
+            "zh": "9 N/25 mm（GB/T 2792）",
+            "vi": "9 N/25 mm (GB/T 2792)",
+            "th": "9 N/25 mm (GB/T 2792)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Tack",
+            "zh": "初粘力",
+            "vi": "Độ dính",
+            "th": "แทค"
+          },
+          {
+            "en": "10 N/25 mm (GB/T 31125)",
+            "zh": "10 N/25 mm（GB/T 31125）",
+            "vi": "10 N/25 mm (GB/T 31125)",
+            "th": "10 N/25 mm (GB/T 31125)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Holding power",
+            "zh": "保持力",
+            "vi": "Lực giữ",
+            "th": "แรงยึด"
+          },
+          {
+            "en": "≥ 48 h/25 mm (GB/T 4851)",
+            "zh": "≥ 48 h/25 mm（GB/T 4851）",
+            "vi": "≥ 48 h/25 mm (GB/T 4851)",
+            "th": "≥ 48 h/25 mm (GB/T 4851)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Printing",
+            "zh": "打印",
+            "vi": "In ấn",
+            "th": "การพิมพ์"
+          },
+          {
+            "en": "Thermal transfer (with matched ribbon)",
+            "zh": "热转印（配合适碳带）",
+            "vi": "In truyền nhiệt (với ribbon phù hợp)",
+            "th": "พิมพ์ถ่ายเทความร้อน (ด้วยริบบอนที่เหมาะสม)"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Shelf life",
+            "zh": "保存有效期",
+            "vi": "Hạn dùng",
+            "th": "อายุการเก็บ"
+          },
+          {
+            "en": "1 year(s) at 22 °C / 50% RH",
+            "zh": "22 °C / 50% RH 下 1 年",
+            "vi": "1 năm ở 22 °C / 50% RH",
+            "th": "1 ปี ที่ 22 °C / 50% RH"
+          }
+        ]
+      }
     ],
-    "zh": [
-      "面材：高透明自覆膜面材（全包覆膜）",
-      "耐温：120℃",
-      "胶粘剂：专用低蠕变背胶",
-      "特性：防水耐溶剂"
-    ],
-    "vi": [
-      "Vật liệu mặt: màng tự cán độ trong suốt cao (cán màng bao phủ toàn phần)",
-      "Định mức nhiệt: 120°C",
-      "Keo dán: keo chuyên dụng độ trườn thấp",
-      "Đặc tính: chống nước & dung môi"
-    ],
-    "th": [
-      "วัสดุพิมพ์: ฟิล์มเคลือบใสในตัวความโปร่งใสสูง (เคลือบหุ้มทั้งชิ้น)",
-      "พิกัดอุณหภูมิ: 120°C",
-      "กาว: กาวพิเศษการไหลเย็นต่ำ",
-      "คุณสมบัติ: กันน้ำและทนตัวทำละลาย"
-    ]
+    "notes": {
+      "en": [
+        "Clean, dry, contamination-free surface (isopropyl alcohol recommended); apply firm pressure. Values are typical, not specifications — verify by application testing."
+      ],
+      "zh": [
+        "贴标表面应清洁、干燥、无污染（建议异丙醇清洁）；贴标时施加足够压力。数值为典型值，非规格值 —— 请经应用测试确认。"
+      ],
+      "vi": [
+        "Bề mặt sạch, khô, không nhiễm bẩn (khuyến nghị cồn isopropyl); ấn mạnh khi dán. Giá trị là điển hình, không phải thông số — hãy xác minh bằng thử nghiệm."
+      ],
+      "th": [
+        "พื้นผิวสะอาด แห้ง ปราศจากสิ่งปนเปื้อน (แนะนำไอโซโพรพิลแอลกอฮอล์); กดแน่นเมื่อติด ค่าเป็นค่าทั่วไป ไม่ใช่สเปก — โปรดตรวจสอบด้วยการทดสอบการใช้งาน"
+      ]
+    }
   },
   "applications": {
     "en": [
-      "Self-laminating wrap-around identification requiring full-lifecycle durability",
-      "Automotive",
-      "Electronic equipment",
-      "Industrial communication"
+      "Cable and wiring-harness identification",
+      "Self-laminating cable labels",
+      "Electronics, telecommunications and automotive industries"
     ],
     "zh": [
-      "需全生命周期长效的自覆膜缠绕标识",
-      "汽车",
-      "电子设备",
-      "工业通信"
+      "线缆与线束标识",
+      "自覆膜线缆标签",
+      "电子、通讯与汽车行业"
     ],
     "vi": [
-      "Nhận diện kiểu quấn tự cán màng cần độ bền toàn vòng đời",
-      "Ô tô",
-      "Thiết bị điện tử",
-      "Truyền thông công nghiệp"
+      "Nhận diện cáp và bó dây",
+      "Nhãn cáp tự bọc",
+      "Ngành điện tử, viễn thông và ô tô"
     ],
     "th": [
-      "การระบุตัวตนแบบพันรอบเคลือบในตัวที่ต้องการความทนทานตลอดวงจรอายุการใช้งาน",
-      "ยานยนต์",
-      "อุปกรณ์อิเล็กทรอนิกส์",
-      "การสื่อสารอุตสาหกรรม"
+      "การระบุสายเคเบิลและชุดสายไฟ",
+      "ฉลากสายเคเบิลเคลือบในตัว",
+      "อุตสาหกรรมอิเล็กทรอนิกส์ โทรคมนาคม และยานยนต์"
     ]
   },
-  "certifications": {}
+  "certifications": {
+    "en": [],
+    "zh": [],
+    "vi": [],
+    "th": []
+  }
 }
