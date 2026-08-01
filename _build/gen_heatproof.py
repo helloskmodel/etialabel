@@ -28,7 +28,7 @@ HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th"}
 # Paths that exist in all four languages (home only). Links to any other path from
 # a vi/th page fall back to the English version (no 404). Industry hubs are EN+ZH.
 FOURLANG = {"/", "/products/", "/products/find/", "/products/polyonics/", "/applications/", "/service/", "/insights/"}
-FOURLANG_PREFIX = ("/insights/", "/industries/", "/products/item/")  # article, industry & product pages exist in all 4 langs
+FOURLANG_PREFIX = ("/insights/", "/industries/", "/products/item/", "/products/polyonics/")  # article, industry, product & Polyonics pages exist in all 4 langs
 def Lx(lang, path):
     """Smart localized link: use the vi/th version only if that path is 4-language."""
     if lang in ("vi", "th") and path not in FOURLANG and not path.startswith(FOURLANG_PREFIX):
