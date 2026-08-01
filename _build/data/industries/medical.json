@@ -103,12 +103,14 @@
             "zh": "E-4802 透明冻存管标签"
           },
           "line": {
-            "en": "2.0 mil Clear PO. Directly labels plastic cryogenic tubes while keeping graduations visible.",
-            "zh": "2.0mil 高透明 PO。−80℃直贴塑料冻存管，保留刻度，多次冻融不脱落。"
+            "en": "Transparent PO cryovial label · −196 °C service / −80 °C applied",
+            "zh": "透明 PO 冻存管标签 · −196 °C 使用 / −80 °C 贴标",
+            "vi": "Nhãn cryovial PO trong · −196 °C sử dụng / −80 °C dán",
+            "th": "ฉลาก cryovial PO ใส · −196 °C ใช้งาน / −80 °C ติด"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-4802"
         },
         {
           "name": {
@@ -214,12 +216,14 @@
             "zh": "E-5532 深冷冻标签"
           },
           "line": {
-            "en": "PO. General-purpose cryogenic label for reliable −80°C laboratory storage.",
-            "zh": "PO。实验室通用 −80℃标签，耐潮湿、耐冻融。"
+            "en": "2 mil white PO · autoclave/gamma/e-beam/EO · FDA & EU food-contact · −80 to 134 °C",
+            "zh": "2 mil 白色 PO · 高压/伽马/电子束/EO 灭菌 · FDA 与欧盟食品接触 · −80 至 134 °C",
+            "vi": "PO trắng 2 mil · hấp/gamma/e-beam/EO · FDA & tiếp xúc TP EU · −80 đến 134 °C",
+            "th": "PO สีขาว 2 mil · ออโตเคลฟ/แกมมา/อิเล็กตรอน/EO · FDA & สัมผัสอาหาร EU · −80 ถึง 134 °C"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-5532"
         }
       ]
     },
@@ -250,12 +254,14 @@
             "zh": "E-5532 血袋标签"
           },
           "line": {
-            "en": "PO. Low-extractable label for refrigerated and frozen blood bags.",
-            "zh": "PO。低析出材料，适用于血袋冷藏、冷冻标识。"
+            "en": "2 mil white PO · autoclave/gamma/e-beam/EO · FDA & EU food-contact · −80 to 134 °C",
+            "zh": "2 mil 白色 PO · 高压/伽马/电子束/EO 灭菌 · FDA 与欧盟食品接触 · −80 至 134 °C",
+            "vi": "PO trắng 2 mil · hấp/gamma/e-beam/EO · FDA & tiếp xúc TP EU · −80 đến 134 °C",
+            "th": "PO สีขาว 2 mil · ออโตเคลฟ/แกมมา/อิเล็กตรอน/EO · FDA & สัมผัสอาหาร EU · −80 ถึง 134 °C"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-5532"
         },
         {
           "name": {
@@ -323,12 +329,14 @@
             "zh": "E-5532 灭菌标签"
           },
           "line": {
-            "en": "PO. Compatible with steam, EO, and gamma sterilization.",
-            "zh": "PO。兼容蒸汽、EO、伽马灭菌，多工艺通用。"
+            "en": "2 mil white PO · autoclave/gamma/e-beam/EO · FDA & EU food-contact · −80 to 134 °C",
+            "zh": "2 mil 白色 PO · 高压/伽马/电子束/EO 灭菌 · FDA 与欧盟食品接触 · −80 至 134 °C",
+            "vi": "PO trắng 2 mil · hấp/gamma/e-beam/EO · FDA & tiếp xúc TP EU · −80 đến 134 °C",
+            "th": "PO สีขาว 2 mil · ออโตเคลฟ/แกมมา/อิเล็กตรอน/EO · FDA & สัมผัสอาหาร EU · −80 ถึง 134 °C"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-5532"
         },
         {
           "name": {
@@ -355,6 +363,18 @@
           "img": "",
           "landing": false,
           "slug": ""
+        },
+        {
+          "name": "E-2232 Sterilization-Packaging Label",
+          "line": {
+            "en": "2 mil white PET · high initial tack for non-woven/crepe wraps & pouches · autoclave-safe · 3 to 134 °C",
+            "zh": "2 mil 白色 PET · 高初粘，适用无纺布/绉纱灭菌包与灭菌袋 · 耐高压灭菌 · 3 至 134 °C",
+            "vi": "PET trắng 2 mil · độ dính cao cho vải không dệt/crepe & túi · chịu hấp · 3 đến 134 °C",
+            "th": "PET สีขาว 2 mil · แทคสูงสำหรับผ้าไม่ทอ/เครป & ซอง · ทนออโตเคลฟ · 3 ถึง 134 °C"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-2232"
         }
       ]
     },
@@ -385,12 +405,14 @@
             "zh": "E-4232 小口径医药标签"
           },
           "line": {
-            "en": "2.0 mil Matte PP. Flexible label for vials and prefilled syringes on automated lines.",
-            "zh": "2.0mil 哑光 PP。贴合西林瓶及预灌封注射器，高速贴标不起翘。"
+            "en": "2 mil synthetic paper · small-caliber bottles & tubes · curved-surface, anti edge-lift",
+            "zh": "2 mil 合成纸 · 小口径瓶与试管 · 曲面抗翘边",
+            "vi": "Giấy tổng hợp 2 mil · lọ & ống nhỏ · bề mặt cong, kháng bong mép",
+            "th": "กระดาษสังเคราะห์ 2 mil · ขวด&หลอดปากเล็ก · ผิวโค้ง ทนเผยอขอบ"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-4232"
         }
       ]
     },

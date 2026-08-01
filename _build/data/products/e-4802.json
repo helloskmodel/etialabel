@@ -1,0 +1,120 @@
+{
+  "slug": "e-4802",
+  "source": "ETIA-TECH E-4802 Technical Data Sheet",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "brand": "etia",
+  "industry": "medical",
+  "product_img": "",
+  "title": {
+    "en": "E-4802 — Transparent PO Cryovial Label (−196 °C LN₂ Storage, apply at −80 °C)",
+    "zh": "E-4802 —— 透明 PO 冻存管标签（−196 °C 液氮存储，−80 °C 贴标）",
+    "vi": "E-4802 — Nhãn cryovial PO trong suốt (lưu trữ LN₂ −196 °C, dán ở −80 °C)",
+    "th": "E-4802 — ฉลาก cryovial PO ใส (จัดเก็บ LN₂ −196 °C, ติดที่ −80 °C)"
+  },
+  "tagline": {
+    "en": "Transparent 2 mil PO cryogenic label — the clear-facestock version of E-4812. Service to −196 °C liquid nitrogen, applied at −80 °C to frozen surfaces, up to 10 freeze-thaw cycles. For PP cryovials, not glass serum vials.",
+    "zh": "透明 2 mil PO 冻存标签 —— E-4812 的透明面材版本。使用温度低至 −196 °C 液氮，−80 °C 冷冻表面直贴，耐 10 次反复冻融。适用 PP 冻存管，不适用玻璃西林管。",
+    "vi": "Nhãn cryo PO trong suốt 2 mil — phiên bản mặt trong của E-4812. Sử dụng đến nitơ lỏng −196 °C, dán ở −80 °C lên bề mặt đông lạnh, tới 10 chu kỳ đông-rã. Cho cryovial PP, không dùng lọ thủy tinh.",
+    "th": "ฉลากไครโอ PO ใส 2 mil — เวอร์ชันหน้าใสของ E-4812 ใช้งานถึงไนโตรเจนเหลว −196 °C ติดที่ −80 °C บนพื้นผิวแช่แข็ง สูงสุด 10 รอบแช่แข็ง-ละลาย สำหรับ cryovial PP ไม่ใช่ขวดแก้ว"
+  },
+  "positioning": {
+    "en": "E-4802 is a 2 mil transparent PO (polyolefin) label made of soft material with a permanent water-based acrylic adhesive — the clear-facestock counterpart to the white E-4812. It is designed for identification labelling of cryogenic laboratory sample containers: polypropylene (PP) cryogenic vials, tubes and storage boxes (PP and cardboard) stored from −150 °C to −196 °C in liquid nitrogen. Information stays secure for the full duration of the sample's cryogenically extended life, and the label survives up to 10 thaw-and-refreeze cycles. Application is by direct labelling of frozen surfaces at −80 °C — the −196 °C figure is the storage/service temperature, not an application temperature, and the label must never be applied while immersed in liquid nitrogen. It is designed for PP cryovials/cryotubes and is not recommended for glass serum vials (西林管).",
+    "zh": "E-4802 是一款 2 mil 透明 PO（聚烯烃）标签，材质柔软，配永久性水性丙烯酸胶 —— 为白色 E-4812 的透明面材版本。专为冷冻实验室样品容器的识别标签而设计：聚丙烯（PP）冻存瓶、试管与存储盒（PP 与纸板），液氮环境 −150 °C 至 −196 °C 存储。信息可在样品整个冷冻存储生命周期内保持可靠，并可耐受最多 10 次解冻再冷冻循环。贴标方式为在 −80 °C 冷冻表面直接贴标 —— −196 °C 为存储／使用温度，并非贴标温度，切勿在液氮中贴标。本产品适用于 PP 冻存管，不适用于玻璃西林管。",
+    "vi": "E-4802 là nhãn PO (polyolefin) trong suốt 2 mil, chất liệu mềm với keo acrylic gốc nước vĩnh viễn — phiên bản mặt trong của E-4812 trắng. Được thiết kế cho nhãn nhận diện hộp đựng mẫu phòng thí nghiệm đông lạnh: lọ cryo, ống và hộp lưu trữ polypropylene (PP và bìa cứng) lưu trữ từ −150 °C đến −196 °C trong nitơ lỏng. Thông tin giữ chắc suốt vòng đời đông lạnh của mẫu, chịu tới 10 chu kỳ rã-tái đông. Cách dán là dán trực tiếp lên bề mặt đông lạnh ở −80 °C — −196 °C là nhiệt độ lưu trữ/sử dụng, không phải nhiệt độ dán, và tuyệt đối không dán khi ngâm trong nitơ lỏng. Dành cho cryovial/ống cryo PP, không khuyến nghị cho lọ thủy tinh (西林管).",
+    "th": "E-4802 เป็นฉลาก PO (โพลีโอเลฟิน) ใส 2 mil เนื้อนุ่มพร้อมกาวอะคริลิกกลุ่มน้ำถาวร — เวอร์ชันหน้าใสของ E-4812 สีขาว ออกแบบสำหรับฉลากระบุภาชนะเก็บตัวอย่างในห้องแล็บแบบแช่แข็ง: cryovial หลอด และกล่องจัดเก็บโพลีโพรพิลีน (PP และกระดาษแข็ง) จัดเก็บ −150 °C ถึง −196 °C ในไนโตรเจนเหลว ข้อมูลคงอยู่ตลอดวงจรแช่แข็งของตัวอย่าง ทนได้สูงสุด 10 รอบละลาย-แช่แข็งซ้ำ การติดทำโดยติดบนพื้นผิวแช่แข็งโดยตรงที่ −80 °C — −196 °C คืออุณหภูมิจัดเก็บ/ใช้งาน ไม่ใช่อุณหภูมิการติด และห้ามติดขณะแช่ในไนโตรเจนเหลว ออกแบบสำหรับ cryovial/หลอดไครโอ PP ไม่แนะนำสำหรับขวดแก้ว (西林管)"
+  },
+  "features": {
+    "en": [
+      "Transparent facestock — the clear-film version of E-4812",
+      "Withstands −196 °C liquid-nitrogen storage; applied at −80 °C to frozen surfaces",
+      "Survives up to 10 freeze-thaw cycles",
+      "Waterproof, oil-resistant and chemical-resistant",
+      "Stable clarity, good fit and readability",
+      "Printable by flexo, screen and offset; compatible with colour/black resin and wax/resin thermal-transfer ribbons"
+    ],
+    "zh": [
+      "透明面材 —— E-4812 的透明薄膜版本",
+      "可耐 −196 °C 液氮存储；−80 °C 冷冻表面直贴",
+      "可耐受最多 10 次反复冻融",
+      "防水、抗油、耐化学",
+      "清晰度、贴合性与可读性稳定",
+      "可柔印、丝印与胶印；兼容彩色/黑色树脂及蜡/树脂热转印碳带"
+    ],
+    "vi": [
+      "Mặt trong suốt — phiên bản màng trong của E-4812",
+      "Chịu lưu trữ nitơ lỏng −196 °C; dán ở −80 °C lên bề mặt đông lạnh",
+      "Chịu tới 10 chu kỳ đông-rã",
+      "Chống nước, kháng dầu và hóa chất",
+      "Độ rõ, độ ôm và khả năng đọc ổn định",
+      "In flexo, lụa và offset; tương thích ribbon nhựa màu/đen và sáp/nhựa"
+    ],
+    "th": [
+      "หน้าใส — เวอร์ชันฟิล์มใสของ E-4812",
+      "ทนการจัดเก็บไนโตรเจนเหลว −196 °C; ติดที่ −80 °C บนพื้นผิวแช่แข็ง",
+      "ทนได้สูงสุด 10 รอบแช่แข็ง-ละลาย",
+      "กันน้ำ ทนน้ำมันและสารเคมี",
+      "ความคมชัด การแนบ และการอ่านที่เสถียร",
+      "พิมพ์เฟล็กโซ สกรีน และออฟเซ็ต; เข้ากับริบบอนเรซินสี/ดำ และแว็กซ์/เรซิน"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": ["Property", "Value"],
+      "zh": ["属性", "参数"],
+      "vi": ["Thuộc tính", "Giá trị"],
+      "th": ["คุณสมบัติ", "ค่า"]
+    },
+    "rows": [
+      {"cells": [{"en": "Facestock", "zh": "面材", "vi": "Vật liệu mặt", "th": "วัสดุหน้า"}, {"en": "2 mil (0.060 mm) transparent PO (polyolefin)", "zh": "2 mil（0.060 mm）透明 PO（聚烯烃）", "vi": "PO (polyolefin) trong suốt 2 mil (0,060 mm)", "th": "PO (โพลีโอเลฟิน) ใส 2 mil (0.060 มม.)"}]},
+      {"cells": [{"en": "Adhesive", "zh": "胶粘剂", "vi": "Keo", "th": "กาว"}, {"en": "Permanent water-based acrylic (0.020 mm)", "zh": "永久性水性丙烯酸胶（0.020 mm）", "vi": "Keo acrylic gốc nước vĩnh viễn (0,020 mm)", "th": "กาวอะคริลิกกลุ่มน้ำถาวร (0.020 มม.)"}]},
+      {"cells": [{"en": "Liner", "zh": "底纸", "vi": "Lớp lót", "th": "ไลเนอร์"}, "0.055 mm"]},
+      {"cells": [{"en": "Application temperature", "zh": "贴标温度", "vi": "Nhiệt độ dán", "th": "อุณหภูมิการติด"}, {"en": "−80 °C — direct-apply to frozen surfaces; never apply in liquid nitrogen", "zh": "−80 °C —— 冷冻表面直贴；切勿在液氮中贴标", "vi": "−80 °C — dán trực tiếp lên bề mặt đông lạnh; không dán trong nitơ lỏng", "th": "−80 °C — ติดบนพื้นผิวแช่แข็งโดยตรง; ห้ามติดในไนโตรเจนเหลว"}]},
+      {"cells": [{"en": "Service / storage temperature", "zh": "使用／存储温度", "vi": "Nhiệt độ sử dụng/lưu trữ", "th": "อุณหภูมิใช้งาน/จัดเก็บ"}, "−196 to 100 °C"]},
+      {"cells": [{"en": "Suitable containers", "zh": "适用容器", "vi": "Vật chứa phù hợp", "th": "ภาชนะที่เหมาะสม"}, {"en": "PP cryovials/cryotubes and storage boxes — not for glass serum vials (西林管)", "zh": "PP 冻存管及存储盒 —— 不适用于玻璃西林管", "vi": "Cryovial/ống cryo PP và hộp lưu trữ — không dùng lọ thủy tinh (西林管)", "th": "cryovial/หลอดไครโอ PP และกล่องจัดเก็บ — ไม่ใช้กับขวดแก้ว (西林管)"}]},
+      {"cells": [{"en": "Peel adhesion", "zh": "剥离力", "vi": "Lực bóc", "th": "แรงลอก"}, "5 N/25 mm (GB/T 2792)"]},
+      {"cells": [{"en": "Initial adhesion", "zh": "初粘力", "vi": "Độ dính ban đầu", "th": "แรงยึดเริ่มต้น"}, "9.5 N/25 mm (GB/T 31125)"]},
+      {"cells": [{"en": "Retention force", "zh": "保持力", "vi": "Lực giữ", "th": "แรงยึด"}, "≥ 48 h/25 mm (GB/T 4851)"]},
+      {"cells": [{"en": "Freeze-thaw cycles", "zh": "冻融循环", "vi": "Chu kỳ đông-rã", "th": "รอบแช่แข็ง-ละลาย"}, {"en": "Up to 10", "zh": "最多 10 次", "vi": "Tới 10", "th": "สูงสุด 10"}]},
+      {"cells": [{"en": "Shelf life", "zh": "保存有效期", "vi": "Hạn dùng", "th": "อายุการเก็บ"}, {"en": "1 year below 22 °C / 60% RH", "zh": "22 °C / 60% RH 以下 1 年", "vi": "1 năm dưới 22 °C / 60% RH", "th": "1 ปี ต่ำกว่า 22 °C / 60% RH"}]}
+    ],
+    "notes": {
+      "en": ["Same construction and use as E-4812, in a transparent facestock. Designed for PP cryovials/cryotubes — not recommended for glass serum vials (西林管). Values are typical, not specifications — verify by application testing."],
+      "zh": ["与 E-4812 结构和用途相同，为透明面材版本。专为 PP 冻存管设计 —— 不适用于玻璃西林管。数值为典型值，非规格值 —— 请经应用测试确认。"],
+      "vi": ["Cùng cấu trúc và công dụng như E-4812, ở dạng mặt trong suốt. Dành cho cryovial/ống cryo PP — không khuyến nghị lọ thủy tinh (西林管). Giá trị là điển hình, không phải thông số — hãy xác minh bằng thử nghiệm ứng dụng."],
+      "th": ["โครงสร้างและการใช้งานเหมือน E-4812 ในแบบหน้าใส ออกแบบสำหรับ cryovial/หลอดไครโอ PP — ไม่แนะนำขวดแก้ว (西林管) ค่าเป็นค่าทั่วไป ไม่ใช่สเปก — โปรดตรวจสอบด้วยการทดสอบการใช้งาน"]
+    }
+  },
+  "applications": {
+    "en": [
+      "PP cryovials, tubes and storage boxes (PP and cardboard)",
+      "Long-term frozen / liquid-nitrogen sample storage",
+      "Food-packaging labels",
+      "Blood-bag labels"
+    ],
+    "zh": [
+      "PP 冻存管、试管与存储盒（PP 与纸板）",
+      "长期冷冻／液氮样品存储",
+      "食品包装标签",
+      "血袋标签"
+    ],
+    "vi": [
+      "Cryovial, ống và hộp lưu trữ PP (PP và bìa cứng)",
+      "Lưu trữ mẫu đông lạnh / nitơ lỏng dài hạn",
+      "Nhãn bao bì thực phẩm",
+      "Nhãn túi máu"
+    ],
+    "th": [
+      "cryovial หลอด และกล่องจัดเก็บ PP (PP และกระดาษแข็ง)",
+      "การจัดเก็บตัวอย่างแช่แข็ง/ไนโตรเจนเหลวระยะยาว",
+      "ฉลากบรรจุภัณฑ์อาหาร",
+      "ฉลากถุงเลือด"
+    ]
+  },
+  "certifications": {
+    "en": ["Service to −196 °C (liquid-nitrogen storage)"],
+    "zh": ["使用温度低至 −196 °C（液氮存储）"],
+    "vi": ["Sử dụng đến −196 °C (lưu trữ nitơ lỏng)"],
+    "th": ["ใช้งานถึง −196 °C (จัดเก็บไนโตรเจนเหลว)"]
+  }
+}
