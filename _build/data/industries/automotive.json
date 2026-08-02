@@ -190,18 +190,6 @@
           "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-TIRE%20PRESSURE",
           "landing": false,
           "slug": ""
-        },
-        {
-          "name": "E-2523SL Silver/Black Laser Label",
-          "line": {
-            "en": "3 mil PET · silver-on-black laser marking · under-hood ID · −40 to 180 °C",
-            "zh": "3 mil PET · 银/黑激光打标 · 发动机舱标识 · −40 至 180 °C",
-            "vi": "PET 3 mil · khắc laser bạc/đen · nhận diện khoang động cơ · −40 đến 180 °C",
-            "th": "PET 3 mil · มาร์กเลเซอร์เงิน/ดำ · ระบุห้องเครื่อง · −40 ถึง 180 °C"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "e-2523sl"
         }
       ],
       "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z'/><path d='M9 12l2 2 4-4'/></svg>"
@@ -258,6 +246,23 @@
             "th": "XF603 · -40℃~180°C ชั่วคราว · ฟิล์ม PET/โพลีอิมิดบางพิเศษทนอุณหภูมิสูง · ทนฟลักซ์บัดกรี น้ำมันเล็กน้อย น้ำยาหล่อเย็น"
           },
           "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-WIRE%20HARNESS%20LABEL",
+          "landing": false,
+          "slug": ""
+        },
+        {
+          "name": {
+            "en": "Battery Pack Warning Label",
+            "zh": "电池包警示标签",
+            "vi": "Nhãn cảnh báo bộ pin",
+            "th": "ฉลากเตือนชุดแบตเตอรี่"
+          },
+          "line": {
+            "en": "High-voltage warning & identification for EV battery packs · electrolyte, acid/alkali & heat resistant",
+            "zh": "电动车电池包高压警示与标识 · 耐电解液、酸碱与高温",
+            "vi": "Cảnh báo & nhận diện điện áp cao cho bộ pin xe điện · chống dung dịch điện ly, axit/bazơ và nhiệt",
+            "th": "คำเตือนแรงดันสูงและการระบุชุดแบตเตอรี่รถไฟฟ้า · ทนสารอิเล็กโทรไลต์ กรด/เบส และความร้อน"
+          },
+          "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-EV%20BATTERY%20PACK%20WARNING%20LABEL",
           "landing": false,
           "slug": ""
         }
@@ -345,10 +350,10 @@
       "products": [
         {
           "name": {
-            "en": "Component Traceability Label",
-            "zh": "外饰零部件追溯标签",
-            "vi": "Nhãn truy xuất bộ phận ngoại thất",
-            "th": "ฉลากติดตามชิ้นส่วนภายนอก"
+            "en": "AutoParts Label",
+            "zh": "零部件标签",
+            "vi": "Nhãn phụ tùng",
+            "th": "ฉลากชิ้นส่วนรถยนต์"
           },
           "line": {
             "en": "E-2813 · -40℃~150℃ · 2mil white glossy weatherproof PET · rain, deicing salt, brake dust, UV & brake-fluid resistant",
@@ -359,35 +364,6 @@
           "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS",
           "landing": true,
           "slug": "e-2813"
-        },
-        {
-          "name": {
-            "en": "Oily Casting Traceability Label",
-            "zh": "油污铸件追溯标签",
-            "vi": "Nhãn truy xuất vật đúc dính dầu",
-            "th": "ฉลากติดตามงานหล่อที่มีน้ำมัน"
-          },
-          "line": {
-            "en": "E-2814 · -40℃~200℃ · 4mil white PET · high adhesion on oily/rough castings, abrasion & solvent resistant",
-            "zh": "E-2814 · -40℃~200℃ · 4mil 白色 PET · 带油/粗糙铸件强粘接、耐刮擦、耐溶剂",
-            "vi": "E-2814 · -40℃~200℃ · PET trắng 4mil · bám chắc trên vật đúc dính dầu/thô, chống trầy & dung môi",
-            "th": "E-2814 · -40℃~200°C · PET สีขาว 4 มิล · ยึดเกาะสูงบนงานหล่อที่มีน้ำมัน/หยาบ ทนการขีดข่วนและตัวทำละลาย"
-          },
-          "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS",
-          "landing": true,
-          "slug": "e-2814"
-        },
-        {
-          "name": "E-2812 Machined-Part Identification Label",
-          "line": {
-            "en": "2 mil gloss white PET · chemical/solvent/corrosion-resistant · bonds to oily metal · −40 to 200 °C",
-            "zh": "2 mil 亮白 PET · 耐化学/溶剂/腐蚀 · 可粘油污金属 · −40 至 200 °C",
-            "vi": "PET trắng bóng 2 mil · kháng hóa chất/dung môi/ăn mòn · bám kim loại dầu · −40 đến 200 °C",
-            "th": "PET สีขาวเงา 2 mil · ทนสารเคมี/ตัวทำละลาย/กัดกร่อน · ยึดโลหะมัน · −40 ถึง 200 °C"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "e-2812"
         }
       ],
       "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M3 13l1.8-4.5A2 2 0 0 1 6.7 7H14l4 4 2.4.8A1 1 0 0 1 21 12.8V15h-2.2M8.8 15H6'/><circle cx='7.5' cy='16.5' r='1.9'/><circle cx='16.8' cy='16.5' r='1.9'/></svg>"
@@ -446,18 +422,6 @@
           "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-SUN%20VISOR",
           "landing": false,
           "slug": ""
-        },
-        {
-          "name": "E-2112 Airbag & Seat Label",
-          "line": {
-            "en": "2 mil white PET · strong silicone adhesive · airbags, car seats & silicone parts · −20 to 100 °C",
-            "zh": "2 mil 白色 PET · 强力硅胶 · 安全气囊、汽车座椅与硅制品 · −20 至 100 °C",
-            "vi": "PET trắng 2 mil · keo silicone mạnh · túi khí, ghế & chi tiết silicone · −20 đến 100 °C",
-            "th": "PET สีขาว 2 mil · กาวซิลิโคนแรงสูง · ถุงลม เบาะ และชิ้นส่วนซิลิโคน · −20 ถึง 100 °C"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "e-2112"
         }
       ],
       "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M7 4v7a2 2 0 0 0 2 2h5'/><path d='M7 13l-2.2 2.2A2 2 0 0 0 4 16.6V20'/><path d='M9 15v5M14 13h3a2 2 0 0 1 2 2v5'/></svg>"
