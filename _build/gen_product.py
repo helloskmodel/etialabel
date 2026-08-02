@@ -183,7 +183,9 @@ CSS = """
 .pscn-lb{display:block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#8593ad;margin-bottom:1px}
 .pscncard .pscn-sub:first-of-type{margin-top:8px;padding-top:8px;border-top:1px solid #eef2f9}
 /* two-column scenario card: left = process, right = products (name + material) */
-.pscncard.pscn2{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;align-items:start;flex-direction:unset}
+.pscn-img{width:100%;aspect-ratio:21/9;max-height:220px;border-radius:10px;overflow:hidden;background:#eef3fc;margin-bottom:14px}
+.pscn-img img{width:100%;height:100%;object-fit:cover;display:block}
+.pscn2 .pscn-body{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;align-items:start}
 .pscn-l{display:flex;flex-direction:column;gap:6px}
 .pscn-r{border-left:1px solid #e6ecf6;padding-left:20px}
 .pscn-rh{font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#8593ad;margin-bottom:6px}
@@ -191,7 +193,7 @@ CSS = """
 .pscn-prod:last-child{border-bottom:0}
 .pscn-prod b{display:block;font-size:14px;color:#143C96;font-weight:700;line-height:1.3}
 .pscn-prod span{font-size:12.5px;color:#5a6885}
-@media(max-width:640px){.pscncard.pscn2{grid-template-columns:1fr;gap:14px}.pscn-r{border-left:0;border-top:1px solid #eef2f9;padding-left:0;padding-top:12px}}
+@media(max-width:640px){.pscn2 .pscn-body{grid-template-columns:1fr;gap:14px}.pscn-r{border-left:0;border-top:1px solid #eef2f9;padding-left:0;padding-top:12px}}
 /* temperature tab bar — same component as the industry "Choose a category" */
 .scnfc{margin-top:6px}
 .scnfcrow{display:flex;align-items:flex-end;gap:2px;border-bottom:1px solid #dbe3f1}
@@ -247,6 +249,19 @@ def _segcolor(s):
         return _temp_color((s["lo"] + s["hi"]) / 2.0)
     return "#8aa0c0"
 
+def _product_url(name):
+    """Resolve a recommended-product name (e.g. 'E-5532', 'Apex™ Series',
+    'XF58 Series', 'E-Series') to its landing page path, or '' if none exists."""
+    n = (name or "").strip().lower().replace("™", "").replace("®", "")
+    cands = [re.sub(r"\s+", "-", n).strip("-"), re.sub(r"\s+", "", n)]
+    n2 = re.sub(r"\bseries\b", "", n).strip()
+    if n2 and n2 != n:
+        cands += [re.sub(r"\s+", "-", n2).strip("-"), re.sub(r"\s+", "", n2)]
+    for c in cands:
+        if c and c not in SOLUTION_SLUGS and os.path.exists(os.path.join(PDIR, c + ".json")):
+            return "/products/item/%s/" % c
+    return ""
+
 def _scn_panel(s, ui, lang="en"):
     """The description card shown below the selected temperature tab. One product =
     one card; extra cards stack here when a temperature maps to several products."""
@@ -272,25 +287,27 @@ def _scn_panel(s, ui, lang="en"):
     prods = s.get("products_list")
     if s.get("products") and not prods:
         sub += subblock(ui["sc_products"], s["products"])
+    # Optional scenario photo (per temperature) shown as a banner at the top of the card.
+    scimg = s.get("img", "")
+    imghtml = ('<div class="pscn-img"><img src="%s" alt="%s" loading="lazy" '
+               'onerror="this.closest(\'.pscn-img\').remove()"></div>') % (esc(scimg), esc(s.get("title", ""))) if scimg else ""
     left = '<div class="pr">%s</div><h3>%s</h3><p>%s</p>%s%s' % (
         esc(s.get("process", "")), esc(title), esc(s.get("desc", "")), sub, apline)
     if prods:
         def _prow(p):
             nm = esc(p.get("name", ""))
-            # Explicit url wins; otherwise auto-link to the product page when the
-            # named model (e.g. "E-5532") has its own landing page.
-            url = p.get("url", "")
-            if not url:
-                slug = re.sub(r"\s+", "", p.get("name", "").strip().lower())
-                if slug and os.path.exists(os.path.join(PDIR, slug + ".json")):
-                    url = "/products/item/%s/" % slug
+            # Explicit url wins; otherwise auto-link to the product landing page
+            # when the named model/series has one (E-5532, Apex Series, E-Series…).
+            url = p.get("url", "") or _product_url(p.get("name", ""))
             name_html = ('<a href="%s">%s</a>' % (hp.Lx(lang, url), nm)) if url else nm
             return '<div class="pscn-prod"><b>%s</b><span>%s</span></div>' % (name_html, esc(p.get("material", "")))
         rows = "".join(_prow(p) for p in prods)
         right = '<div class="pscn-rh">%s</div>%s' % (esc(ui["sc_products"]), rows)
-        return ('<div class="pscncard pscn2"><div class="pscn-l">%s</div>'
-                '<div class="pscn-r">%s</div></div>') % (left, right)
-    return '<div class="pscncard">%s</div>' % left
+        return ('<div class="pscncard pscn2%s">%s<div class="pscn-body"><div class="pscn-l">%s</div>'
+                '<div class="pscn-r">%s</div></div></div>') % (
+                    " haspic" if imghtml else "", imghtml, left, right)
+    return '<div class="pscncard%s">%s<div class="pscn-body">%s</div></div>' % (
+        " haspic" if imghtml else "", imghtml, left)
 
 def scenarios_html(items, ui, lang="en"):
     # Temperature tab bar — same component as the industry "Choose a category":

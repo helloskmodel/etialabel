@@ -1,598 +1,618 @@
 {
-  "slug": "chemical-resistant-labels",
-  "source": "client brief — Chemical Resistant Label Solutions",
-  "langs": [
-    "en",
-    "zh",
-    "vi",
-    "th"
-  ],
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-BANNER.jpg",
-  "banner_pos": "center bottom",
-  "eyebrow": {
-    "en": "Solutions",
-    "zh": "解决方案",
-    "vi": "Giải pháp",
-    "th": "โซลูชัน"
+ "slug": "chemical-resistant-labels",
+ "source": "client brief — Chemical Resistant Label Solutions",
+ "langs": [
+  "en",
+  "zh",
+  "vi",
+  "th"
+ ],
+ "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-BANNER.jpg",
+ "banner_pos": "center bottom",
+ "eyebrow": {
+  "en": "Solutions",
+  "zh": "解决方案",
+  "vi": "Giải pháp",
+  "th": "โซลูชัน"
+ },
+ "title": {
+  "en": "Chemical Resistant Labeling Solutions",
+  "zh": "耐化学标签解决方案",
+  "vi": "Giải pháp nhãn kháng hóa chất",
+  "th": "โซลูชันฉลากทนสารเคมี"
+ },
+ "tagline": {
+  "en": "Built to resist harsh chemicals. Designed for reliable identification.",
+  "zh": "耐受严苛化学环境，保障可靠识别。",
+  "vi": "Được chế tạo để kháng các hóa chất khắc nghiệt. Thiết kế cho nhận dạng đáng tin cậy.",
+  "th": "สร้างขึ้นเพื่อทนต่อสารเคมีที่รุนแรง ออกแบบเพื่อการระบุที่เชื่อถือได้"
+ },
+ "positioning": {
+  "en": "Chemical exposure can quickly damage ordinary labels, leading to faded prints, adhesive failure, and unreadable barcodes. ETIA Chemical Resistant Label Solutions are engineered for demanding environments where solvents, disinfectants, industrial oils, and process chemicals are routinely used, delivering reliable identification throughout the product lifecycle.",
+  "zh": "化学介质会导致普通标签油墨褪色、胶粘失效及条码无法识别。ETIA 耐化学标签解决方案专为有机溶剂、酒精、消毒剂、工业油污及各类工艺化学品环境设计，在严苛化学工况下持续保持牢固粘接、清晰打印和可靠识别。",
+  "vi": "Việc tiếp xúc với hóa chất có thể nhanh chóng làm hỏng nhãn thông thường, dẫn đến bản in phai màu, keo mất kết dính và mã vạch không đọc được. Giải pháp nhãn kháng hóa chất ETIA được thiết kế cho các môi trường khắc nghiệt, nơi thường xuyên sử dụng dung môi, chất khử trùng, dầu công nghiệp và hóa chất trong quy trình, mang lại khả năng nhận dạng đáng tin cậy trong suốt vòng đời sản phẩm.",
+  "th": "การสัมผัสสารเคมีสามารถทำให้ฉลากทั่วไปเสียหายได้อย่างรวดเร็ว ส่งผลให้งานพิมพ์ซีดจาง กาวเสื่อมสภาพ และบาร์โค้ดอ่านไม่ได้ โซลูชันฉลากทนสารเคมีของ ETIA ได้รับการออกแบบทางวิศวกรรมสำหรับสภาพแวดล้อมที่ต้องการความทนทานสูง ซึ่งมีการใช้ตัวทำละลาย น้ำยาฆ่าเชื้อ น้ำมันอุตสาหกรรม และสารเคมีในกระบวนการเป็นประจำ มอบการระบุที่เชื่อถือได้ตลอดวงจรชีวิตของผลิตภัณฑ์"
+ },
+ "why": {
+  "heading": {
+   "en": "Why Chemical Resistant Labeling?",
+   "zh": "为什么选择耐化学标签？",
+   "vi": "Tại sao chọn nhãn kháng hóa chất?",
+   "th": "ทำไมต้องเลือกฉลากทนสารเคมี?"
   },
-  "title": {
-    "en": "Chemical Resistant Labeling Solutions",
-    "zh": "耐化学标签解决方案",
-    "vi": "Giải pháp nhãn kháng hóa chất",
-    "th": "โซลูชันฉลากทนสารเคมี"
+  "intro": {
+   "en": "Different chemicals require different label constructions. Selecting the right combination of facestock, adhesive, and print technology helps maintain reliable adhesion, durable print performance, and long-lasting barcode readability — even under repeated chemical exposure.",
+   "zh": "不同化学介质对标签的影响各不相同。针对不同应用选择合适的面材、胶粘体系及打印方案，可有效提升标签耐化学性能，确保长期粘附、条码清晰及标识完整。",
+   "vi": "Các hóa chất khác nhau đòi hỏi cấu trúc nhãn khác nhau. Việc lựa chọn đúng sự kết hợp giữa vật liệu mặt, keo và công nghệ in giúp duy trì độ kết dính đáng tin cậy, hiệu suất in bền bỉ và khả năng đọc mã vạch lâu dài — ngay cả khi tiếp xúc hóa chất nhiều lần.",
+   "th": "สารเคมีต่างชนิดกันต้องการโครงสร้างฉลากที่แตกต่างกัน การเลือกการผสมผสานที่เหมาะสมระหว่างวัสดุหน้าฉลาก กาว และเทคโนโลยีการพิมพ์ ช่วยรักษาการยึดเกาะที่เชื่อถือได้ ประสิทธิภาพการพิมพ์ที่ทนทาน และการอ่านบาร์โค้ดที่คงทนยาวนาน — แม้จะสัมผัสสารเคมีซ้ำ ๆ ก็ตาม"
   },
-  "tagline": {
-    "en": "Built to resist harsh chemicals. Designed for reliable identification.",
-    "zh": "耐受严苛化学环境，保障可靠识别。",
-    "vi": "Được chế tạo để kháng các hóa chất khắc nghiệt. Thiết kế cho nhận dạng đáng tin cậy.",
-    "th": "สร้างขึ้นเพื่อทนต่อสารเคมีที่รุนแรง ออกแบบเพื่อการระบุที่เชื่อถือได้"
-  },
-  "positioning": {
-    "en": "Chemical exposure can quickly damage ordinary labels, leading to faded prints, adhesive failure, and unreadable barcodes. ETIA Chemical Resistant Label Solutions are engineered for demanding environments where solvents, disinfectants, industrial oils, and process chemicals are routinely used, delivering reliable identification throughout the product lifecycle.",
-    "zh": "化学介质会导致普通标签油墨褪色、胶粘失效及条码无法识别。ETIA 耐化学标签解决方案专为有机溶剂、酒精、消毒剂、工业油污及各类工艺化学品环境设计，在严苛化学工况下持续保持牢固粘接、清晰打印和可靠识别。",
-    "vi": "Việc tiếp xúc với hóa chất có thể nhanh chóng làm hỏng nhãn thông thường, dẫn đến bản in phai màu, keo mất kết dính và mã vạch không đọc được. Giải pháp nhãn kháng hóa chất ETIA được thiết kế cho các môi trường khắc nghiệt, nơi thường xuyên sử dụng dung môi, chất khử trùng, dầu công nghiệp và hóa chất trong quy trình, mang lại khả năng nhận dạng đáng tin cậy trong suốt vòng đời sản phẩm.",
-    "th": "การสัมผัสสารเคมีสามารถทำให้ฉลากทั่วไปเสียหายได้อย่างรวดเร็ว ส่งผลให้งานพิมพ์ซีดจาง กาวเสื่อมสภาพ และบาร์โค้ดอ่านไม่ได้ โซลูชันฉลากทนสารเคมีของ ETIA ได้รับการออกแบบทางวิศวกรรมสำหรับสภาพแวดล้อมที่ต้องการความทนทานสูง ซึ่งมีการใช้ตัวทำละลาย น้ำยาฆ่าเชื้อ น้ำมันอุตสาหกรรม และสารเคมีในกระบวนการเป็นประจำ มอบการระบุที่เชื่อถือได้ตลอดวงจรชีวิตของผลิตภัณฑ์"
-  },
-  "why": {
-    "heading": {
-      "en": "Why Chemical Resistant Labeling?",
-      "zh": "为什么选择耐化学标签？",
-      "vi": "Tại sao chọn nhãn kháng hóa chất?",
-      "th": "ทำไมต้องเลือกฉลากทนสารเคมี?"
-    },
-    "intro": {
-      "en": "Different chemicals require different label constructions. Selecting the right combination of facestock, adhesive, and print technology helps maintain reliable adhesion, durable print performance, and long-lasting barcode readability — even under repeated chemical exposure.",
-      "zh": "不同化学介质对标签的影响各不相同。针对不同应用选择合适的面材、胶粘体系及打印方案，可有效提升标签耐化学性能，确保长期粘附、条码清晰及标识完整。",
-      "vi": "Các hóa chất khác nhau đòi hỏi cấu trúc nhãn khác nhau. Việc lựa chọn đúng sự kết hợp giữa vật liệu mặt, keo và công nghệ in giúp duy trì độ kết dính đáng tin cậy, hiệu suất in bền bỉ và khả năng đọc mã vạch lâu dài — ngay cả khi tiếp xúc hóa chất nhiều lần.",
-      "th": "สารเคมีต่างชนิดกันต้องการโครงสร้างฉลากที่แตกต่างกัน การเลือกการผสมผสานที่เหมาะสมระหว่างวัสดุหน้าฉลาก กาว และเทคโนโลยีการพิมพ์ ช่วยรักษาการยึดเกาะที่เชื่อถือได้ ประสิทธิภาพการพิมพ์ที่ทนทาน และการอ่านบาร์โค้ดที่คงทนยาวนาน — แม้จะสัมผัสสารเคมีซ้ำ ๆ ก็ตาม"
-    },
-    "items": {
-      "en": [
-        "Resistant to aggressive industrial chemicals",
-        "Reliable adhesion on metal, plastic, glass, and coated surfaces",
-        "Durable thermal transfer print performance",
-        "Excellent barcode readability",
-        "Designed for laboratory, medical, electronics, and industrial applications"
-      ],
-      "zh": [
-        "耐多种工业化学介质",
-        "金属、塑料、玻璃等多种基材稳定粘接",
-        "热转印打印持久清晰",
-        "条码长期可识别",
-        "面向实验室、医疗、电子及工业应用"
-      ],
-      "vi": [
-        "Kháng các hóa chất công nghiệp mạnh",
-        "Kết dính đáng tin cậy trên bề mặt kim loại, nhựa, thủy tinh và có lớp phủ",
-        "Hiệu suất in truyền nhiệt bền bỉ",
-        "Khả năng đọc mã vạch xuất sắc",
-        "Thiết kế cho các ứng dụng phòng thí nghiệm, y tế, điện tử và công nghiệp"
-      ],
-      "th": [
-        "ทนต่อสารเคมีอุตสาหกรรมที่รุนแรง",
-        "ยึดเกาะได้อย่างเชื่อถือได้บนพื้นผิวโลหะ พลาสติก แก้ว และพื้นผิวเคลือบ",
-        "ประสิทธิภาพการพิมพ์แบบถ่ายโอนความร้อนที่ทนทาน",
-        "อ่านบาร์โค้ดได้ยอดเยี่ยม",
-        "ออกแบบสำหรับการใช้งานในห้องปฏิบัติการ การแพทย์ อิเล็กทรอนิกส์ และอุตสาหกรรม"
-      ]
-    }
-  },
-  "scenarios": {
-    "en": [
-      {
-        "icon": "🧪",
-        "temp": "🧪 Solvents",
-        "process": "Solvent Exposure",
-        "title": "Organic Solvents",
-        "desc": "Designed for environments exposed to aggressive organic solvents that can dissolve inks, soften coatings, and degrade conventional labels.",
-        "apps": [
-          "Laboratory Sample Identification",
-          "PCB Manufacturing",
-          "Chemical Containers",
-          "Industrial Cleaning"
-        ],
-        "chemicals": "MEK • Acetone • Toluene • Xylene • DMSO",
-        "products_list": [
-          {
-            "name": "E-2532",
-            "material": "2mil gloss white PET · balanced acrylic"
-          }
-        ]
-      },
-      {
-        "icon": "🍶",
-        "temp": "🍶 Alcohols",
-        "process": "Alcohol & Disinfection",
-        "title": "Alcohol & Disinfectants",
-        "desc": "Maintains clear identification during repeated alcohol cleaning and routine disinfection.",
-        "apps": [
-          "Healthcare",
-          "Pharmaceutical Manufacturing",
-          "Medical Devices",
-          "Clinical Laboratories"
-        ],
-        "chemicals": "Ethanol • Methanol • Isopropyl Alcohol (IPA)",
-        "products_list": [
-          {
-            "name": "E-4812",
-            "material": "2mil white PO · permanent low-temp acrylic",
-            "url": "/products/item/e-4812/"
-          },
-          {
-            "name": "E-4813",
-            "material": "2mil white PP · low-temp balanced acrylic"
-          },
-          {
-            "name": "E-5532",
-            "material": "2mil white PO · low-migration medical PSA"
-          },
-          {
-            "name": "E-4533",
-            "material": "3mil thick white PP · blood-bag balanced acrylic"
-          }
-        ]
-      },
-      {
-        "icon": "🧼",
-        "temp": "🧼 Disinfectants",
-        "process": "Oxidizing Disinfection",
-        "title": "Bleach & Oxidizing Disinfectants",
-        "desc": "Designed for repeated exposure to bleach solutions and oxidizing disinfectants without compromising label performance.",
-        "apps": [
-          "Hospitals",
-          "Clinical Laboratories",
-          "Cleanrooms",
-          "Food Processing"
-        ],
-        "chemicals": "Bleach • Sodium Hypochlorite • Hydrogen Peroxide",
-        "products_list": [
-          {
-            "name": "E-5532",
-            "material": "2mil white PO · low-migration medical PSA"
-          },
-          {
-            "name": "E-4533",
-            "material": "3mil thick white PP · blood-bag balanced acrylic"
-          }
-        ]
-      },
-      {
-        "icon": "🛢",
-        "temp": "🛢 Oils & Fluids",
-        "process": "Oil & Fluid Contamination",
-        "title": "Industrial Oils & Process Fluids",
-        "desc": "Maintains strong adhesion and reliable identification in oil-contaminated manufacturing environments.",
-        "apps": [
-          "Automotive Manufacturing",
-          "Heavy Equipment",
-          "Industrial Machinery",
-          "Hydraulic Systems"
-        ],
-        "chemicals": "Lubricants • Hydraulic Fluids • Cutting Oils • Brake Fluids",
-        "products_list": [
-          {
-            "name": "E-2813",
-            "material": "3mil matte white PET · high-temp high-tack acrylic",
-            "url": "/products/item/e-2813/"
-          }
-        ]
-      },
-      {
-        "icon": "⚗️",
-        "temp": "⚗️ Acids & Alkalis",
-        "process": "Acid & Alkaline Processing",
-        "title": "Acids & Alkalis",
-        "desc": "Designed for harsh chemical processing, surface treatment, and industrial manufacturing environments.",
-        "apps": [
-          "Metal Processing",
-          "PCB Manufacturing",
-          "Chemical Production",
-          "Laboratory Processing"
-        ],
-        "chemicals": "Hydrochloric Acid • Sulfuric Acid • Sodium Hydroxide • Alkaline Cleaners",
-        "products_list": [
-          {
-            "name": "HP-L70",
-            "material": "acid & alkali resistant high-temp tag"
-          },
-          {
-            "name": "HP-L85",
-            "material": "acid & alkali resistant high-temp tag"
-          },
-          {
-            "name": "HP-L90",
-            "material": "acid & alkali resistant high-temp tag",
-            "url": "/products/item/hp-l90/"
-          }
-        ]
-      }
-    ],
-    "zh": [
-      {
-        "icon": "🧪",
-        "temp": "🧪 有机溶剂",
-        "process": "溶剂暴露",
-        "title": "有机溶剂",
-        "desc": "适用于易溶解油墨、软化涂层、破坏普通标签的强有机溶剂环境。",
-        "apps": [
-          "实验室样本标识",
-          "PCB 制造",
-          "化学品容器",
-          "工业清洗"
-        ],
-        "chemicals": "MEK • 丙酮 • 甲苯 • 二甲苯 • DMSO",
-        "products_list": [
-          {
-            "name": "E-2532",
-            "material": "2mil 亮面白色 PET · 平衡丙烯酸胶"
-          }
-        ]
-      },
-      {
-        "icon": "🍶",
-        "temp": "🍶 酒精",
-        "process": "酒精与消毒",
-        "title": "酒精与消毒剂",
-        "desc": "在反复酒精擦拭与日常消毒过程中保持清晰标识。",
-        "apps": [
-          "医疗健康",
-          "制药生产",
-          "医疗器械",
-          "临床实验室"
-        ],
-        "chemicals": "乙醇 • 甲醇 • 异丙醇（IPA）",
-        "products_list": [
-          {
-            "name": "E-4812",
-            "material": "2mil 白色 PO · 低温永久丙烯酸胶",
-            "url": "/products/item/e-4812/"
-          },
-          {
-            "name": "E-4813",
-            "material": "2mil 白色 PP · 低温平衡丙烯酸胶"
-          },
-          {
-            "name": "E-5532",
-            "material": "2mil 白色 PO · 低迁移医用压敏胶"
-          },
-          {
-            "name": "E-4533",
-            "material": "3mil 加厚白色 PP · 血袋专用平衡丙烯酸胶"
-          }
-        ]
-      },
-      {
-        "icon": "🧼",
-        "temp": "🧼 消毒剂",
-        "process": "氧化性消毒",
-        "title": "漂白剂与氧化性消毒剂",
-        "desc": "适用于反复接触漂白剂与氧化性消毒剂的环境，标签性能不受影响。",
-        "apps": [
-          "医院",
-          "临床实验室",
-          "洁净室",
-          "食品加工"
-        ],
-        "chemicals": "漂白剂 • 次氯酸钠 • 过氧化氢",
-        "products_list": [
-          {
-            "name": "E-5532",
-            "material": "2mil 白色 PO · 低迁移医用压敏胶"
-          },
-          {
-            "name": "E-4533",
-            "material": "3mil 加厚白色 PP · 血袋专用平衡丙烯酸胶"
-          }
-        ]
-      },
-      {
-        "icon": "🛢",
-        "temp": "🛢 油污与流体",
-        "process": "油污与流体",
-        "title": "工业油污与工艺流体",
-        "desc": "在油污污染的制造环境中保持牢固粘接与可靠识别。",
-        "apps": [
-          "汽车制造",
-          "重型设备",
-          "工业机械",
-          "液压系统"
-        ],
-        "chemicals": "润滑油 • 液压油 • 切削液 • 制动液",
-        "products_list": [
-          {
-            "name": "E-2813",
-            "material": "3mil 哑面白色 PET · 耐高温强粘丙烯酸胶",
-            "url": "/products/item/e-2813/"
-          }
-        ]
-      },
-      {
-        "icon": "⚗️",
-        "temp": "⚗️ 酸碱",
-        "process": "酸碱处理",
-        "title": "酸与碱",
-        "desc": "适用于严苛化学加工、表面处理及工业制造环境。",
-        "apps": [
-          "金属加工",
-          "PCB 制造",
-          "化工生产",
-          "实验室处理"
-        ],
-        "chemicals": "盐酸 • 硫酸 • 氢氧化钠 • 碱性清洗剂",
-        "products_list": [
-          {
-            "name": "HP-L70",
-            "material": "耐酸碱高温吊牌"
-          },
-          {
-            "name": "HP-L85",
-            "material": "耐酸碱高温吊牌"
-          },
-          {
-            "name": "HP-L90",
-            "material": "耐酸碱高温吊牌",
-            "url": "/products/item/hp-l90/"
-          }
-        ]
-      }
-    ],
-    "vi": [
-      {
-        "icon": "🧪",
-        "temp": "🧪 Dung môi",
-        "process": "Tiếp xúc dung môi",
-        "title": "Dung môi hữu cơ",
-        "desc": "Được thiết kế cho các môi trường tiếp xúc với dung môi hữu cơ mạnh có thể hòa tan mực in, làm mềm lớp phủ và làm hỏng nhãn thông thường.",
-        "apps": [
-          "Nhận dạng mẫu phòng thí nghiệm",
-          "Sản xuất PCB",
-          "Thùng chứa hóa chất",
-          "Vệ sinh công nghiệp"
-        ],
-        "chemicals": "MEK • Acetone • Toluene • Xylene • DMSO",
-        "products_list": [
-          {
-            "name": "E-2532",
-            "material": "PET trắng bóng 2mil · keo acrylic cân bằng"
-          }
-        ]
-      },
-      {
-        "icon": "🍶",
-        "temp": "🍶 Cồn",
-        "process": "Cồn & khử trùng",
-        "title": "Cồn & chất khử trùng",
-        "desc": "Duy trì nhận dạng rõ ràng trong quá trình lau cồn nhiều lần và khử trùng thường xuyên.",
-        "apps": [
-          "Chăm sóc sức khỏe",
-          "Sản xuất dược phẩm",
-          "Thiết bị y tế",
-          "Phòng thí nghiệm lâm sàng"
-        ],
-        "chemicals": "Ethanol • Methanol • Isopropyl Alcohol (IPA)",
-        "products_list": [
-          {
-            "name": "E-4812",
-            "material": "PO trắng 2mil · keo acrylic nhiệt thấp vĩnh viễn",
-            "url": "/products/item/e-4812/"
-          },
-          {
-            "name": "E-4813",
-            "material": "PP trắng 2mil · keo acrylic cân bằng nhiệt thấp"
-          },
-          {
-            "name": "E-5532",
-            "material": "PO trắng 2mil · keo y tế ít di trú"
-          },
-          {
-            "name": "E-4533",
-            "material": "PP trắng dày 3mil · keo cân bằng cho túi máu"
-          }
-        ]
-      },
-      {
-        "icon": "🧼",
-        "temp": "🧼 Chất khử trùng",
-        "process": "Khử trùng oxy hóa",
-        "title": "Thuốc tẩy & chất khử trùng oxy hóa",
-        "desc": "Được thiết kế để tiếp xúc nhiều lần với dung dịch thuốc tẩy và chất khử trùng oxy hóa mà không ảnh hưởng đến hiệu suất nhãn.",
-        "apps": [
-          "Bệnh viện",
-          "Phòng thí nghiệm lâm sàng",
-          "Phòng sạch",
-          "Chế biến thực phẩm"
-        ],
-        "chemicals": "Bleach • Sodium Hypochlorite • Hydrogen Peroxide",
-        "products_list": [
-          {
-            "name": "E-5532",
-            "material": "PO trắng 2mil · keo y tế ít di trú"
-          },
-          {
-            "name": "E-4533",
-            "material": "PP trắng dày 3mil · keo cân bằng cho túi máu"
-          }
-        ]
-      },
-      {
-        "icon": "🛢",
-        "temp": "🛢 Dầu & chất lỏng",
-        "process": "Nhiễm bẩn dầu & chất lỏng",
-        "title": "Dầu công nghiệp & chất lỏng quy trình",
-        "desc": "Duy trì độ kết dính chắc chắn và nhận dạng đáng tin cậy trong môi trường sản xuất bị nhiễm dầu.",
-        "apps": [
-          "Sản xuất ô tô",
-          "Thiết bị hạng nặng",
-          "Máy móc công nghiệp",
-          "Hệ thống thủy lực"
-        ],
-        "chemicals": "Lubricants • Hydraulic Fluids • Cutting Oils • Brake Fluids",
-        "products_list": [
-          {
-            "name": "E-2813",
-            "material": "PET trắng mờ 3mil · keo acrylic chịu nhiệt bám cao",
-            "url": "/products/item/e-2813/"
-          }
-        ]
-      },
-      {
-        "icon": "⚗️",
-        "temp": "⚗️ Axit & kiềm",
-        "process": "Xử lý axit & kiềm",
-        "title": "Axit & kiềm",
-        "desc": "Được thiết kế cho các môi trường xử lý hóa chất khắc nghiệt, xử lý bề mặt và sản xuất công nghiệp.",
-        "apps": [
-          "Xử lý kim loại",
-          "Sản xuất PCB",
-          "Sản xuất hóa chất",
-          "Xử lý trong phòng thí nghiệm"
-        ],
-        "chemicals": "Hydrochloric Acid • Sulfuric Acid • Sodium Hydroxide • Alkaline Cleaners",
-        "products_list": [
-          {
-            "name": "HP-L70",
-            "material": "thẻ nhiệt cao kháng axit & kiềm"
-          },
-          {
-            "name": "HP-L85",
-            "material": "thẻ nhiệt cao kháng axit & kiềm"
-          },
-          {
-            "name": "HP-L90",
-            "material": "thẻ nhiệt cao kháng axit & kiềm",
-            "url": "/products/item/hp-l90/"
-          }
-        ]
-      }
-    ],
-    "th": [
-      {
-        "icon": "🧪",
-        "temp": "🧪 ตัวทำละลาย",
-        "process": "การสัมผัสตัวทำละลาย",
-        "title": "ตัวทำละลายอินทรีย์",
-        "desc": "ออกแบบสำหรับสภาพแวดล้อมที่สัมผัสกับตัวทำละลายอินทรีย์ที่รุนแรงซึ่งสามารถละลายหมึกพิมพ์ ทำให้สารเคลือบอ่อนตัว และทำให้ฉลากทั่วไปเสื่อมสภาพ",
-        "apps": [
-          "การระบุตัวอย่างในห้องปฏิบัติการ",
-          "การผลิต PCB",
-          "ภาชนะบรรจุสารเคมี",
-          "การทำความสะอาดในอุตสาหกรรม"
-        ],
-        "chemicals": "MEK • Acetone • Toluene • Xylene • DMSO",
-        "products_list": [
-          {
-            "name": "E-2532",
-            "material": "PET ขาวเงา 2mil · กาวอะคริลิกสมดุล"
-          }
-        ]
-      },
-      {
-        "icon": "🍶",
-        "temp": "🍶 แอลกอฮอล์",
-        "process": "แอลกอฮอล์และการฆ่าเชื้อ",
-        "title": "แอลกอฮอล์และน้ำยาฆ่าเชื้อ",
-        "desc": "รักษาการระบุที่ชัดเจนในระหว่างการเช็ดทำความสะอาดด้วยแอลกอฮอล์ซ้ำ ๆ และการฆ่าเชื้อตามปกติ",
-        "apps": [
-          "การดูแลสุขภาพ",
-          "การผลิตยา",
-          "อุปกรณ์การแพทย์",
-          "ห้องปฏิบัติการทางคลินิก"
-        ],
-        "chemicals": "Ethanol • Methanol • Isopropyl Alcohol (IPA)",
-        "products_list": [
-          {
-            "name": "E-4812",
-            "material": "PO ขาว 2mil · กาวอะคริลิกอุณหภูมิต่ำถาวร",
-            "url": "/products/item/e-4812/"
-          },
-          {
-            "name": "E-4813",
-            "material": "PP ขาว 2mil · กาวอะคริลิกสมดุลอุณหภูมิต่ำ"
-          },
-          {
-            "name": "E-5532",
-            "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
-          },
-          {
-            "name": "E-4533",
-            "material": "PP ขาวหนา 3mil · กาวสมดุลสำหรับถุงเลือด"
-          }
-        ]
-      },
-      {
-        "icon": "🧼",
-        "temp": "🧼 น้ำยาฆ่าเชื้อ",
-        "process": "การฆ่าเชื้อแบบออกซิไดซ์",
-        "title": "น้ำยาฟอกขาวและน้ำยาฆ่าเชื้อแบบออกซิไดซ์",
-        "desc": "ออกแบบสำหรับการสัมผัสซ้ำ ๆ กับสารละลายน้ำยาฟอกขาวและน้ำยาฆ่าเชื้อแบบออกซิไดซ์โดยไม่ลดทอนประสิทธิภาพของฉลาก",
-        "apps": [
-          "โรงพยาบาล",
-          "ห้องปฏิบัติการทางคลินิก",
-          "ห้องสะอาด",
-          "การแปรรูปอาหาร"
-        ],
-        "chemicals": "Bleach • Sodium Hypochlorite • Hydrogen Peroxide",
-        "products_list": [
-          {
-            "name": "E-5532",
-            "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
-          },
-          {
-            "name": "E-4533",
-            "material": "PP ขาวหนา 3mil · กาวสมดุลสำหรับถุงเลือด"
-          }
-        ]
-      },
-      {
-        "icon": "🛢",
-        "temp": "🛢 น้ำมันและของเหลว",
-        "process": "การปนเปื้อนน้ำมันและของเหลว",
-        "title": "น้ำมันอุตสาหกรรมและของเหลวในกระบวนการ",
-        "desc": "รักษาการยึดเกาะที่แข็งแรงและการระบุที่เชื่อถือได้ในสภาพแวดล้อมการผลิตที่ปนเปื้อนน้ำมัน",
-        "apps": [
-          "การผลิตยานยนต์",
-          "เครื่องจักรกลหนัก",
-          "เครื่องจักรอุตสาหกรรม",
-          "ระบบไฮดรอลิก"
-        ],
-        "chemicals": "Lubricants • Hydraulic Fluids • Cutting Oils • Brake Fluids",
-        "products_list": [
-          {
-            "name": "E-2813",
-            "material": "PET ขาวด้าน 3mil · กาวอะคริลิกทนร้อนแรงยึดสูง",
-            "url": "/products/item/e-2813/"
-          }
-        ]
-      },
-      {
-        "icon": "⚗️",
-        "temp": "⚗️ กรดและด่าง",
-        "process": "การประมวลผลกรดและด่าง",
-        "title": "กรดและด่าง",
-        "desc": "ออกแบบสำหรับสภาพแวดล้อมการประมวลผลสารเคมีที่รุนแรง การบำบัดพื้นผิว และการผลิตในอุตสาหกรรม",
-        "apps": [
-          "การแปรรูปโลหะ",
-          "การผลิต PCB",
-          "การผลิตสารเคมี",
-          "การประมวลผลในห้องปฏิบัติการ"
-        ],
-        "chemicals": "Hydrochloric Acid • Sulfuric Acid • Sodium Hydroxide • Alkaline Cleaners",
-        "products_list": [
-          {
-            "name": "HP-L70",
-            "material": "แท็กทนความร้อนสูงกันกรดด่าง"
-          },
-          {
-            "name": "HP-L85",
-            "material": "แท็กทนความร้อนสูงกันกรดด่าง"
-          },
-          {
-            "name": "HP-L90",
-            "material": "แท็กทนความร้อนสูงกันกรดด่าง",
-            "url": "/products/item/hp-l90/"
-          }
-        ]
-      }
-    ]
+  "items": {
+   "en": [
+    "Resistant to aggressive industrial chemicals",
+    "Reliable adhesion on metal, plastic, glass, and coated surfaces",
+    "Durable thermal transfer print performance",
+    "Excellent barcode readability",
+    "Designed for laboratory, medical, electronics, and industrial applications"
+   ],
+   "zh": [
+    "耐多种工业化学介质",
+    "金属、塑料、玻璃等多种基材稳定粘接",
+    "热转印打印持久清晰",
+    "条码长期可识别",
+    "面向实验室、医疗、电子及工业应用"
+   ],
+   "vi": [
+    "Kháng các hóa chất công nghiệp mạnh",
+    "Kết dính đáng tin cậy trên bề mặt kim loại, nhựa, thủy tinh và có lớp phủ",
+    "Hiệu suất in truyền nhiệt bền bỉ",
+    "Khả năng đọc mã vạch xuất sắc",
+    "Thiết kế cho các ứng dụng phòng thí nghiệm, y tế, điện tử và công nghiệp"
+   ],
+   "th": [
+    "ทนต่อสารเคมีอุตสาหกรรมที่รุนแรง",
+    "ยึดเกาะได้อย่างเชื่อถือได้บนพื้นผิวโลหะ พลาสติก แก้ว และพื้นผิวเคลือบ",
+    "ประสิทธิภาพการพิมพ์แบบถ่ายโอนความร้อนที่ทนทาน",
+    "อ่านบาร์โค้ดได้ยอดเยี่ยม",
+    "ออกแบบสำหรับการใช้งานในห้องปฏิบัติการ การแพทย์ อิเล็กทรอนิกส์ และอุตสาหกรรม"
+   ]
   }
+ },
+ "scenarios": {
+  "en": [
+   {
+    "icon": "🧪",
+    "temp": "🧪 Solvents",
+    "process": "Solvent Exposure",
+    "title": "Organic Solvents",
+    "desc": "Designed for environments exposed to aggressive organic solvents that can dissolve inks, soften coatings, and degrade conventional labels.",
+    "apps": [
+     "Laboratory Sample Identification",
+     "PCB Manufacturing",
+     "Chemical Containers",
+     "Industrial Cleaning"
+    ],
+    "chemicals": "MEK • Acetone • Toluene • Xylene • DMSO",
+    "products_list": [
+     {
+      "name": "E-2532",
+      "material": "2mil gloss white PET · balanced acrylic"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ALCOHOL.jpg"
+   },
+   {
+    "icon": "🍶",
+    "temp": "🍶 Alcohols",
+    "process": "Alcohol & Disinfection",
+    "title": "Alcohol & Disinfectants",
+    "desc": "Maintains clear identification during repeated alcohol cleaning and routine disinfection.",
+    "apps": [
+     "Healthcare",
+     "Pharmaceutical Manufacturing",
+     "Medical Devices",
+     "Clinical Laboratories"
+    ],
+    "chemicals": "Ethanol • Methanol • Isopropyl Alcohol (IPA)",
+    "products_list": [
+     {
+      "name": "E-4812",
+      "material": "2mil white PO · permanent low-temp acrylic",
+      "url": "/products/item/e-4812/"
+     },
+     {
+      "name": "E-4813",
+      "material": "2mil white PP · low-temp balanced acrylic"
+     },
+     {
+      "name": "E-5532",
+      "material": "2mil white PO · low-migration medical PSA"
+     },
+     {
+      "name": "E-4533",
+      "material": "3mil thick white PP · blood-bag balanced acrylic"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ALCOHOL.jpg"
+   },
+   {
+    "icon": "🧼",
+    "temp": "🧼 Disinfectants",
+    "process": "Oxidizing Disinfection",
+    "title": "Bleach & Oxidizing Disinfectants",
+    "desc": "Designed for repeated exposure to bleach solutions and oxidizing disinfectants without compromising label performance.",
+    "apps": [
+     "Hospitals",
+     "Clinical Laboratories",
+     "Cleanrooms",
+     "Food Processing"
+    ],
+    "chemicals": "Bleach • Sodium Hypochlorite • Hydrogen Peroxide",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "2mil white PO · low-migration medical PSA"
+     },
+     {
+      "name": "E-4533",
+      "material": "3mil thick white PP · blood-bag balanced acrylic"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ACID.jpg"
+   },
+   {
+    "icon": "🛢",
+    "temp": "🛢 Oils & Fluids",
+    "process": "Oil & Fluid Contamination",
+    "title": "Industrial Oils & Process Fluids",
+    "desc": "Maintains strong adhesion and reliable identification in oil-contaminated manufacturing environments.",
+    "apps": [
+     "Automotive Manufacturing",
+     "Heavy Equipment",
+     "Industrial Machinery",
+     "Hydraulic Systems"
+    ],
+    "chemicals": "Lubricants • Hydraulic Fluids • Cutting Oils • Brake Fluids",
+    "products_list": [
+     {
+      "name": "E-2813",
+      "material": "3mil matte white PET · high-temp high-tack acrylic",
+      "url": "/products/item/e-2813/"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-OIL.jpg"
+   },
+   {
+    "icon": "⚗️",
+    "temp": "⚗️ Acids & Alkalis",
+    "process": "Acid & Alkaline Processing",
+    "title": "Acids & Alkalis",
+    "desc": "Designed for harsh chemical processing, surface treatment, and industrial manufacturing environments.",
+    "apps": [
+     "Metal Processing",
+     "PCB Manufacturing",
+     "Chemical Production",
+     "Laboratory Processing"
+    ],
+    "chemicals": "Hydrochloric Acid • Sulfuric Acid • Sodium Hydroxide • Alkaline Cleaners",
+    "products_list": [
+     {
+      "name": "HP-L70",
+      "material": "acid & alkali resistant high-temp tag"
+     },
+     {
+      "name": "HP-L85",
+      "material": "acid & alkali resistant high-temp tag"
+     },
+     {
+      "name": "HP-L90",
+      "material": "acid & alkali resistant high-temp tag",
+      "url": "/products/item/hp-l90/"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ACID.jpg"
+   }
+  ],
+  "zh": [
+   {
+    "icon": "🧪",
+    "temp": "🧪 有机溶剂",
+    "process": "溶剂暴露",
+    "title": "有机溶剂",
+    "desc": "适用于易溶解油墨、软化涂层、破坏普通标签的强有机溶剂环境。",
+    "apps": [
+     "实验室样本标识",
+     "PCB 制造",
+     "化学品容器",
+     "工业清洗"
+    ],
+    "chemicals": "MEK • 丙酮 • 甲苯 • 二甲苯 • DMSO",
+    "products_list": [
+     {
+      "name": "E-2532",
+      "material": "2mil 亮面白色 PET · 平衡丙烯酸胶"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ALCOHOL.jpg"
+   },
+   {
+    "icon": "🍶",
+    "temp": "🍶 酒精",
+    "process": "酒精与消毒",
+    "title": "酒精与消毒剂",
+    "desc": "在反复酒精擦拭与日常消毒过程中保持清晰标识。",
+    "apps": [
+     "医疗健康",
+     "制药生产",
+     "医疗器械",
+     "临床实验室"
+    ],
+    "chemicals": "乙醇 • 甲醇 • 异丙醇（IPA）",
+    "products_list": [
+     {
+      "name": "E-4812",
+      "material": "2mil 白色 PO · 低温永久丙烯酸胶",
+      "url": "/products/item/e-4812/"
+     },
+     {
+      "name": "E-4813",
+      "material": "2mil 白色 PP · 低温平衡丙烯酸胶"
+     },
+     {
+      "name": "E-5532",
+      "material": "2mil 白色 PO · 低迁移医用压敏胶"
+     },
+     {
+      "name": "E-4533",
+      "material": "3mil 加厚白色 PP · 血袋专用平衡丙烯酸胶"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ALCOHOL.jpg"
+   },
+   {
+    "icon": "🧼",
+    "temp": "🧼 消毒剂",
+    "process": "氧化性消毒",
+    "title": "漂白剂与氧化性消毒剂",
+    "desc": "适用于反复接触漂白剂与氧化性消毒剂的环境，标签性能不受影响。",
+    "apps": [
+     "医院",
+     "临床实验室",
+     "洁净室",
+     "食品加工"
+    ],
+    "chemicals": "漂白剂 • 次氯酸钠 • 过氧化氢",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "2mil 白色 PO · 低迁移医用压敏胶"
+     },
+     {
+      "name": "E-4533",
+      "material": "3mil 加厚白色 PP · 血袋专用平衡丙烯酸胶"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ACID.jpg"
+   },
+   {
+    "icon": "🛢",
+    "temp": "🛢 油污与流体",
+    "process": "油污与流体",
+    "title": "工业油污与工艺流体",
+    "desc": "在油污污染的制造环境中保持牢固粘接与可靠识别。",
+    "apps": [
+     "汽车制造",
+     "重型设备",
+     "工业机械",
+     "液压系统"
+    ],
+    "chemicals": "润滑油 • 液压油 • 切削液 • 制动液",
+    "products_list": [
+     {
+      "name": "E-2813",
+      "material": "3mil 哑面白色 PET · 耐高温强粘丙烯酸胶",
+      "url": "/products/item/e-2813/"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-OIL.jpg"
+   },
+   {
+    "icon": "⚗️",
+    "temp": "⚗️ 酸碱",
+    "process": "酸碱处理",
+    "title": "酸与碱",
+    "desc": "适用于严苛化学加工、表面处理及工业制造环境。",
+    "apps": [
+     "金属加工",
+     "PCB 制造",
+     "化工生产",
+     "实验室处理"
+    ],
+    "chemicals": "盐酸 • 硫酸 • 氢氧化钠 • 碱性清洗剂",
+    "products_list": [
+     {
+      "name": "HP-L70",
+      "material": "耐酸碱高温吊牌"
+     },
+     {
+      "name": "HP-L85",
+      "material": "耐酸碱高温吊牌"
+     },
+     {
+      "name": "HP-L90",
+      "material": "耐酸碱高温吊牌",
+      "url": "/products/item/hp-l90/"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ACID.jpg"
+   }
+  ],
+  "vi": [
+   {
+    "icon": "🧪",
+    "temp": "🧪 Dung môi",
+    "process": "Tiếp xúc dung môi",
+    "title": "Dung môi hữu cơ",
+    "desc": "Được thiết kế cho các môi trường tiếp xúc với dung môi hữu cơ mạnh có thể hòa tan mực in, làm mềm lớp phủ và làm hỏng nhãn thông thường.",
+    "apps": [
+     "Nhận dạng mẫu phòng thí nghiệm",
+     "Sản xuất PCB",
+     "Thùng chứa hóa chất",
+     "Vệ sinh công nghiệp"
+    ],
+    "chemicals": "MEK • Acetone • Toluene • Xylene • DMSO",
+    "products_list": [
+     {
+      "name": "E-2532",
+      "material": "PET trắng bóng 2mil · keo acrylic cân bằng"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ALCOHOL.jpg"
+   },
+   {
+    "icon": "🍶",
+    "temp": "🍶 Cồn",
+    "process": "Cồn & khử trùng",
+    "title": "Cồn & chất khử trùng",
+    "desc": "Duy trì nhận dạng rõ ràng trong quá trình lau cồn nhiều lần và khử trùng thường xuyên.",
+    "apps": [
+     "Chăm sóc sức khỏe",
+     "Sản xuất dược phẩm",
+     "Thiết bị y tế",
+     "Phòng thí nghiệm lâm sàng"
+    ],
+    "chemicals": "Ethanol • Methanol • Isopropyl Alcohol (IPA)",
+    "products_list": [
+     {
+      "name": "E-4812",
+      "material": "PO trắng 2mil · keo acrylic nhiệt thấp vĩnh viễn",
+      "url": "/products/item/e-4812/"
+     },
+     {
+      "name": "E-4813",
+      "material": "PP trắng 2mil · keo acrylic cân bằng nhiệt thấp"
+     },
+     {
+      "name": "E-5532",
+      "material": "PO trắng 2mil · keo y tế ít di trú"
+     },
+     {
+      "name": "E-4533",
+      "material": "PP trắng dày 3mil · keo cân bằng cho túi máu"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ALCOHOL.jpg"
+   },
+   {
+    "icon": "🧼",
+    "temp": "🧼 Chất khử trùng",
+    "process": "Khử trùng oxy hóa",
+    "title": "Thuốc tẩy & chất khử trùng oxy hóa",
+    "desc": "Được thiết kế để tiếp xúc nhiều lần với dung dịch thuốc tẩy và chất khử trùng oxy hóa mà không ảnh hưởng đến hiệu suất nhãn.",
+    "apps": [
+     "Bệnh viện",
+     "Phòng thí nghiệm lâm sàng",
+     "Phòng sạch",
+     "Chế biến thực phẩm"
+    ],
+    "chemicals": "Bleach • Sodium Hypochlorite • Hydrogen Peroxide",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "PO trắng 2mil · keo y tế ít di trú"
+     },
+     {
+      "name": "E-4533",
+      "material": "PP trắng dày 3mil · keo cân bằng cho túi máu"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ACID.jpg"
+   },
+   {
+    "icon": "🛢",
+    "temp": "🛢 Dầu & chất lỏng",
+    "process": "Nhiễm bẩn dầu & chất lỏng",
+    "title": "Dầu công nghiệp & chất lỏng quy trình",
+    "desc": "Duy trì độ kết dính chắc chắn và nhận dạng đáng tin cậy trong môi trường sản xuất bị nhiễm dầu.",
+    "apps": [
+     "Sản xuất ô tô",
+     "Thiết bị hạng nặng",
+     "Máy móc công nghiệp",
+     "Hệ thống thủy lực"
+    ],
+    "chemicals": "Lubricants • Hydraulic Fluids • Cutting Oils • Brake Fluids",
+    "products_list": [
+     {
+      "name": "E-2813",
+      "material": "PET trắng mờ 3mil · keo acrylic chịu nhiệt bám cao",
+      "url": "/products/item/e-2813/"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-OIL.jpg"
+   },
+   {
+    "icon": "⚗️",
+    "temp": "⚗️ Axit & kiềm",
+    "process": "Xử lý axit & kiềm",
+    "title": "Axit & kiềm",
+    "desc": "Được thiết kế cho các môi trường xử lý hóa chất khắc nghiệt, xử lý bề mặt và sản xuất công nghiệp.",
+    "apps": [
+     "Xử lý kim loại",
+     "Sản xuất PCB",
+     "Sản xuất hóa chất",
+     "Xử lý trong phòng thí nghiệm"
+    ],
+    "chemicals": "Hydrochloric Acid • Sulfuric Acid • Sodium Hydroxide • Alkaline Cleaners",
+    "products_list": [
+     {
+      "name": "HP-L70",
+      "material": "thẻ nhiệt cao kháng axit & kiềm"
+     },
+     {
+      "name": "HP-L85",
+      "material": "thẻ nhiệt cao kháng axit & kiềm"
+     },
+     {
+      "name": "HP-L90",
+      "material": "thẻ nhiệt cao kháng axit & kiềm",
+      "url": "/products/item/hp-l90/"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ACID.jpg"
+   }
+  ],
+  "th": [
+   {
+    "icon": "🧪",
+    "temp": "🧪 ตัวทำละลาย",
+    "process": "การสัมผัสตัวทำละลาย",
+    "title": "ตัวทำละลายอินทรีย์",
+    "desc": "ออกแบบสำหรับสภาพแวดล้อมที่สัมผัสกับตัวทำละลายอินทรีย์ที่รุนแรงซึ่งสามารถละลายหมึกพิมพ์ ทำให้สารเคลือบอ่อนตัว และทำให้ฉลากทั่วไปเสื่อมสภาพ",
+    "apps": [
+     "การระบุตัวอย่างในห้องปฏิบัติการ",
+     "การผลิต PCB",
+     "ภาชนะบรรจุสารเคมี",
+     "การทำความสะอาดในอุตสาหกรรม"
+    ],
+    "chemicals": "MEK • Acetone • Toluene • Xylene • DMSO",
+    "products_list": [
+     {
+      "name": "E-2532",
+      "material": "PET ขาวเงา 2mil · กาวอะคริลิกสมดุล"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ALCOHOL.jpg"
+   },
+   {
+    "icon": "🍶",
+    "temp": "🍶 แอลกอฮอล์",
+    "process": "แอลกอฮอล์และการฆ่าเชื้อ",
+    "title": "แอลกอฮอล์และน้ำยาฆ่าเชื้อ",
+    "desc": "รักษาการระบุที่ชัดเจนในระหว่างการเช็ดทำความสะอาดด้วยแอลกอฮอล์ซ้ำ ๆ และการฆ่าเชื้อตามปกติ",
+    "apps": [
+     "การดูแลสุขภาพ",
+     "การผลิตยา",
+     "อุปกรณ์การแพทย์",
+     "ห้องปฏิบัติการทางคลินิก"
+    ],
+    "chemicals": "Ethanol • Methanol • Isopropyl Alcohol (IPA)",
+    "products_list": [
+     {
+      "name": "E-4812",
+      "material": "PO ขาว 2mil · กาวอะคริลิกอุณหภูมิต่ำถาวร",
+      "url": "/products/item/e-4812/"
+     },
+     {
+      "name": "E-4813",
+      "material": "PP ขาว 2mil · กาวอะคริลิกสมดุลอุณหภูมิต่ำ"
+     },
+     {
+      "name": "E-5532",
+      "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
+     },
+     {
+      "name": "E-4533",
+      "material": "PP ขาวหนา 3mil · กาวสมดุลสำหรับถุงเลือด"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ALCOHOL.jpg"
+   },
+   {
+    "icon": "🧼",
+    "temp": "🧼 น้ำยาฆ่าเชื้อ",
+    "process": "การฆ่าเชื้อแบบออกซิไดซ์",
+    "title": "น้ำยาฟอกขาวและน้ำยาฆ่าเชื้อแบบออกซิไดซ์",
+    "desc": "ออกแบบสำหรับการสัมผัสซ้ำ ๆ กับสารละลายน้ำยาฟอกขาวและน้ำยาฆ่าเชื้อแบบออกซิไดซ์โดยไม่ลดทอนประสิทธิภาพของฉลาก",
+    "apps": [
+     "โรงพยาบาล",
+     "ห้องปฏิบัติการทางคลินิก",
+     "ห้องสะอาด",
+     "การแปรรูปอาหาร"
+    ],
+    "chemicals": "Bleach • Sodium Hypochlorite • Hydrogen Peroxide",
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
+     },
+     {
+      "name": "E-4533",
+      "material": "PP ขาวหนา 3mil · กาวสมดุลสำหรับถุงเลือด"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ACID.jpg"
+   },
+   {
+    "icon": "🛢",
+    "temp": "🛢 น้ำมันและของเหลว",
+    "process": "การปนเปื้อนน้ำมันและของเหลว",
+    "title": "น้ำมันอุตสาหกรรมและของเหลวในกระบวนการ",
+    "desc": "รักษาการยึดเกาะที่แข็งแรงและการระบุที่เชื่อถือได้ในสภาพแวดล้อมการผลิตที่ปนเปื้อนน้ำมัน",
+    "apps": [
+     "การผลิตยานยนต์",
+     "เครื่องจักรกลหนัก",
+     "เครื่องจักรอุตสาหกรรม",
+     "ระบบไฮดรอลิก"
+    ],
+    "chemicals": "Lubricants • Hydraulic Fluids • Cutting Oils • Brake Fluids",
+    "products_list": [
+     {
+      "name": "E-2813",
+      "material": "PET ขาวด้าน 3mil · กาวอะคริลิกทนร้อนแรงยึดสูง",
+      "url": "/products/item/e-2813/"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-OIL.jpg"
+   },
+   {
+    "icon": "⚗️",
+    "temp": "⚗️ กรดและด่าง",
+    "process": "การประมวลผลกรดและด่าง",
+    "title": "กรดและด่าง",
+    "desc": "ออกแบบสำหรับสภาพแวดล้อมการประมวลผลสารเคมีที่รุนแรง การบำบัดพื้นผิว และการผลิตในอุตสาหกรรม",
+    "apps": [
+     "การแปรรูปโลหะ",
+     "การผลิต PCB",
+     "การผลิตสารเคมี",
+     "การประมวลผลในห้องปฏิบัติการ"
+    ],
+    "chemicals": "Hydrochloric Acid • Sulfuric Acid • Sodium Hydroxide • Alkaline Cleaners",
+    "products_list": [
+     {
+      "name": "HP-L70",
+      "material": "แท็กทนความร้อนสูงกันกรดด่าง"
+     },
+     {
+      "name": "HP-L85",
+      "material": "แท็กทนความร้อนสูงกันกรดด่าง"
+     },
+     {
+      "name": "HP-L90",
+      "material": "แท็กทนความร้อนสูงกันกรดด่าง",
+      "url": "/products/item/hp-l90/"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/CHEMICAL-ACID.jpg"
+   }
+  ]
+ }
 }
