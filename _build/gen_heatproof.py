@@ -1641,6 +1641,8 @@ _HOME_HERO_CSS = """<style>
 .hhero-cta{display:flex;flex-wrap:wrap;gap:12px}
 .hhbtn{font-family:var(--sans);font-weight:700;font-size:15px;border-radius:11px;padding:14px 24px;text-decoration:none;border:1.5px solid transparent;display:inline-block}
 .hhbtn.pri{background:var(--green);color:#fff}
+.hhbtn.sample{background:var(--blue);color:#fff}
+.hhbtn.sample:hover{background:var(--blue-deep)}
 .hhbtn.gho{background:#fff;border-color:var(--line);color:var(--blue-deep)}
 .hhwin{position:relative;aspect-ratio:16/11;max-height:300px;margin-left:auto;width:100%;max-width:440px;border-radius:18px;overflow:hidden;background:linear-gradient(150deg,#e9eefc,#e8f4e3);border:1px solid var(--line);box-shadow:0 20px 48px rgba(16,34,58,.15)}
 .hhslide{position:absolute;inset:0;text-decoration:none;color:inherit;opacity:0;transition:opacity .5s ease;pointer-events:none}
@@ -1684,6 +1686,7 @@ def home_hero(lang):
     head = hh["h1"]
     sub = hh["line"]
     c1 = P(lang,"Find a label material →","查找标签材料 →","Tìm vật liệu nhãn →","ค้นหาวัสดุฉลาก →")
+    c3 = P(lang,"Request a Sample","索取样品","Yêu cầu mẫu","ขอตัวอย่าง")
     c2 = P(lang,"Talk to an Engineer","咨询工程师","Trao đổi với kỹ sư","ปรึกษาวิศวกร")
     slides, dots = "", ""
     for k,item in enumerate(HOME_HERO_ITEMS):
@@ -1711,6 +1714,7 @@ def home_hero(lang):
         '<div class="hhero-copy"><span class="hhero-pill">' + check + ' ' + esc(pill_txt) + '</span>'
         '<h1>' + esc(head) + '</h1><p class="hsub">' + esc(sub) + '</p>'
         '<div class="hhero-cta"><a class="hhbtn pri" href="' + home_hlink(lang,"/products/find/") + '">' + esc(c1) + '</a>'
+        '<a class="hhbtn sample" href="' + home_hlink(lang,"/contact/") + '">' + esc(c3) + '</a>'
         '<a class="hhbtn gho" href="' + home_hlink(lang,"/contact/") + '">' + esc(c2) + '</a></div></div>'
         '<div class="hhwin" id="hhwin">' + slides + '<div class="hhdots" id="hhdots">' + dots + '</div></div>'
         '</div></section>' + script)
