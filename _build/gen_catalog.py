@@ -475,6 +475,13 @@ POLY_HEAD = {
     "th": "Polyonics — วัสดุฉลากประสิทธิภาพสูง",
 }
 POLY_OVERVIEW_LABEL = {"en": "Overview", "zh": "品牌概述", "vi": "Tổng quan", "th": "ภาพรวม"}
+# Caption for the cooperation photo (ETIA & Polyonics leadership, Polyonics HQ, USA).
+POLY_COOP_CAPTION = {
+    "en": "ETIA and Polyonics leadership at the Polyonics head office, USA — a 20-year partnership.",
+    "zh": "ETIA 与 Polyonics 高层于美国 Polyonics 总部 —— 逾 20 年的长期合作。",
+    "vi": "Lãnh đạo ETIA và Polyonics tại trụ sở chính Polyonics, Hoa Kỳ — hợp tác hơn 20 năm.",
+    "th": "ผู้บริหาร ETIA และ Polyonics ที่สำนักงานใหญ่ Polyonics สหรัฐฯ — ความร่วมมือกว่า 20 ปี",
+}
 # Two-paragraph brand overview (client-supplied EN + ZH; VN/TH translated).
 POLY_IMG = hp._COS + "PRODUCT/POLYONICSNETIA"
 POLY_OVERVIEW = {
@@ -500,8 +507,11 @@ BRAND_CSS = """<style>
 .bover{color:#41506e;font-size:15.5px;line-height:1.7;max-width:80ch;margin:0 0 16px}
 .bover-2col{display:grid;grid-template-columns:1.4fr .9fr;gap:34px;align-items:center;margin:0 0 22px}
 .bover-2col .bover{margin-bottom:14px}
+.bover-txt{min-width:0}
 .bover-img{margin:0}
+.bover-img.noimg{display:none}
 .bover-img img{width:100%;height:auto;border-radius:14px;border:1px solid #e6ecf6;box-shadow:0 12px 30px rgba(16,34,58,.10);display:block;background:#f3f6fc}
+.bover-img figcaption{margin-top:10px;font-size:12.5px;color:#5a6885;line-height:1.5;text-align:center}
 @media(max-width:820px){.bover-2col{grid-template-columns:1fr;gap:18px}.bover-img{max-width:460px}}
 .bsec{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:34px 0 14px;padding-top:18px;border-top:1px solid #e6ecf6}
 .bsec h2{font-family:var(--sans);font-weight:800;color:#143C96;font-size:21px;margin:0}
@@ -771,9 +781,12 @@ def build_brand(records, lang, bkey):
         ov_txt = ('<div class="bsechd">%s</div>%s' %
                   (esc(POLY_OVERVIEW_LABEL.get(lang) or POLY_OVERVIEW_LABEL["en"]),
                    "".join('<p class="bover">%s</p>' % esc(p) for p in paras)))
-        ov_img = ('<div class="bover-img"><img src="%s" alt="Polyonics × ETIA" loading="lazy" '
-                  'onerror="this.parentNode.remove()"></div>' % esc(POLY_IMG))
-        overview = '<div class="bover-2col">%s%s</div>' % (ov_txt, ov_img)
+        cap = POLY_COOP_CAPTION.get(lang) or POLY_COOP_CAPTION["en"]
+        ov_img = ('<figure class="bover-img"><img src="%s" alt="ETIA × Polyonics leadership" '
+                  'loading="lazy" onerror="this.closest(\'figure\').classList.add(\'noimg\')">'
+                  '<figcaption>%s</figcaption></figure>') % (esc(POLY_IMG), esc(cap))
+        # Two children only (text block + image) so the 2-column grid lines up.
+        overview = '<div class="bover-2col"><div class="bover-txt">%s</div>%s</div>' % (ov_txt, ov_img)
         # e-commerce aisles: one section per series, product cards + compare-specs link
         sections = ""
         for s in POLY_SERIES:
