@@ -1,393 +1,393 @@
 {
-  "slug": "outdoor-energy-labeling-solutions",
-  "subnav": false,
-  "langs": [
-    "en",
-    "zh",
-    "vi",
-    "th"
+ "slug": "outdoor-energy-labeling-solutions",
+ "subnav": false,
+ "langs": [
+  "en",
+  "zh",
+  "vi",
+  "th"
+ ],
+ "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER",
+ "seo_title": {
+  "en": "Outdoor & Energy Labeling Solution | Solar PV · Battery · Outdoor Warning",
+  "zh": "户外能源标签解决方案 | 光伏 · 新能源电池 · 户外警示",
+  "vi": "Giải pháp nhãn ngoài trời & năng lượng | Điện mặt trời · Pin · Cảnh báo ngoài trời",
+  "th": "โซลูชันฉลากกลางแจ้งและพลังงาน | โซลาร์เซลล์ · แบตเตอรี่ · ป้ายเตือนกลางแจ้ง"
+ },
+ "seo_desc": {
+  "en": "Durable labels for solar PV, new-energy batteries, and outdoor warning — internationally certified, built to survive UV, electrolytes, and extreme environments.",
+  "zh": "面向光伏、新能源电池与户外警示的耐久标签 —— 国际认证，耐受 UV、电解液与极端环境。",
+  "vi": "Nhãn bền cho điện mặt trời, pin năng lượng mới và cảnh báo ngoài trời — chứng nhận quốc tế, chịu UV, dung dịch điện phân và môi trường khắc nghiệt.",
+  "th": "ฉลากทนทานสำหรับโซลาร์เซลล์ แบตเตอรี่พลังงานใหม่ และป้ายเตือนกลางแจ้ง — รับรองระดับสากล ทน UV อิเล็กโทรไลต์ และสภาพแวดล้อมสุดขั้ว"
+ },
+ "hero": {
+  "eyebrow": {
+   "en": "By Industry · Outdoor & Energy",
+   "zh": "按行业 · 户外与能源",
+   "vi": "Theo ngành · Ngoài trời & Năng lượng",
+   "th": "ตามอุตสาหกรรม · กลางแจ้งและพลังงาน"
+  },
+  "title": {
+   "en": "Outdoor & Energy Labeling Solution",
+   "zh": "户外能源标签解决方案",
+   "vi": "Giải pháp nhãn ngoài trời & năng lượng",
+   "th": "โซลูชันฉลากกลางแจ้งและพลังงาน"
+  },
+  "slogan": {
+   "en": "Built to survive extreme environments — lifelong asset traceability",
+   "zh": "极端环境不失效，设备终身可溯源",
+   "vi": "Bền bỉ trong môi trường khắc nghiệt — truy xuất tài sản trọn đời",
+   "th": "ทนทานในสภาพแวดล้อมสุดขั้ว — ตรวจสอบย้อนกลับทรัพย์สินตลอดอายุการใช้งาน"
+  }
+ },
+ "overview": {
+  "zh": [
+   "能源产业高速发展，设备长期暴露于紫外、盐雾、高低温、电解液等极端环境，标识耐久性直接决定资产可追溯性与安全合规性。ETIA 户外能源标识体系，覆盖光伏、储能电池、户外警示三大领域，全系国际认证、场景专属胶系，适配多种基材，守护能源资产全程追溯与安全合规。"
   ],
-  "banner_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OURDOOR-BANNER",
-  "seo_title": {
-    "en": "Outdoor & Energy Labeling Solution | Solar PV · Battery · Outdoor Warning",
-    "zh": "户外能源标签解决方案 | 光伏 · 新能源电池 · 户外警示",
-    "vi": "Giải pháp nhãn ngoài trời & năng lượng | Điện mặt trời · Pin · Cảnh báo ngoài trời",
-    "th": "โซลูชันฉลากกลางแจ้งและพลังงาน | โซลาร์เซลล์ · แบตเตอรี่ · ป้ายเตือนกลางแจ้ง"
-  },
-  "seo_desc": {
-    "en": "Durable labels for solar PV, new-energy batteries, and outdoor warning — internationally certified, built to survive UV, electrolytes, and extreme environments.",
-    "zh": "面向光伏、新能源电池与户外警示的耐久标签 —— 国际认证，耐受 UV、电解液与极端环境。",
-    "vi": "Nhãn bền cho điện mặt trời, pin năng lượng mới và cảnh báo ngoài trời — chứng nhận quốc tế, chịu UV, dung dịch điện phân và môi trường khắc nghiệt.",
-    "th": "ฉลากทนทานสำหรับโซลาร์เซลล์ แบตเตอรี่พลังงานใหม่ และป้ายเตือนกลางแจ้ง — รับรองระดับสากล ทน UV อิเล็กโทรไลต์ และสภาพแวดล้อมสุดขั้ว"
-  },
-  "hero": {
-    "eyebrow": {
-      "en": "By Industry · Outdoor & Energy",
-      "zh": "按行业 · 户外与能源",
-      "vi": "Theo ngành · Ngoài trời & Năng lượng",
-      "th": "ตามอุตสาหกรรม · กลางแจ้งและพลังงาน"
-    },
-    "title": {
-      "en": "Outdoor & Energy Labeling Solution",
-      "zh": "户外能源标签解决方案",
-      "vi": "Giải pháp nhãn ngoài trời & năng lượng",
-      "th": "โซลูชันฉลากกลางแจ้งและพลังงาน"
-    },
-    "slogan": {
-      "en": "Built to survive extreme environments — lifelong asset traceability",
-      "zh": "极端环境不失效，设备终身可溯源",
-      "vi": "Bền bỉ trong môi trường khắc nghiệt — truy xuất tài sản trọn đời",
-      "th": "ทนทานในสภาพแวดล้อมสุดขั้ว — ตรวจสอบย้อนกลับทรัพย์สินตลอดอายุการใช้งาน"
-    }
-  },
-  "overview": {
-    "zh": [
-      "能源产业高速发展，设备长期暴露于紫外、盐雾、高低温、电解液等极端环境，标识耐久性直接决定资产可追溯性与安全合规性。ETIA 户外能源标识体系，覆盖光伏、储能电池、户外警示三大领域，全系国际认证、场景专属胶系，适配多种基材，守护能源资产全程追溯与安全合规。"
-    ],
-    "en": [
-      "As the energy industry advances rapidly, equipment is exposed for years to UV, salt spray, temperature extremes, electrolytes, and other harsh conditions, where label durability directly determines asset traceability and safety compliance. The ETIA outdoor-energy labeling system spans three domains — solar PV, energy-storage batteries, and outdoor warning — with fully internationally certified materials, application-specific adhesive systems, and compatibility across many substrates, safeguarding end-to-end traceability and safety compliance for energy assets."
-    ],
-    "vi": [
-      "Ngành năng lượng phát triển nhanh chóng, thiết bị chịu phơi nhiễm lâu dài với tia UV, sương muối, nhiệt độ khắc nghiệt, dung dịch điện phân và các điều kiện khắc nghiệt khác, nơi độ bền của nhãn quyết định trực tiếp khả năng truy xuất tài sản và tuân thủ an toàn. Hệ thống nhãn ngoài trời & năng lượng ETIA bao phủ ba lĩnh vực — điện mặt trời, pin lưu trữ năng lượng và cảnh báo ngoài trời — với vật liệu được chứng nhận quốc tế toàn diện, hệ keo chuyên biệt theo ứng dụng và tương thích với nhiều chất nền, bảo vệ khả năng truy xuất toàn trình và tuân thủ an toàn cho tài sản năng lượng."
-    ],
-    "th": [
-      "อุตสาหกรรมพลังงานเติบโตอย่างรวดเร็ว อุปกรณ์ต้องสัมผัสกับรังสี UV ละอองเกลือ อุณหภูมิสุดขั้ว อิเล็กโทรไลต์ และสภาพแวดล้อมรุนแรงอื่นๆ เป็นเวลานาน ความทนทานของฉลากจึงเป็นตัวกำหนดความสามารถในการตรวจสอบย้อนกลับทรัพย์สินและการปฏิบัติตามมาตรฐานความปลอดภัยโดยตรง ระบบฉลากกลางแจ้งและพลังงานของ ETIA ครอบคลุมสามด้าน ได้แก่ โซลาร์เซลล์ แบตเตอรี่กักเก็บพลังงาน และป้ายเตือนกลางแจ้ง ด้วยวัสดุที่ได้รับการรับรองระดับสากลทั้งหมด ระบบกาวเฉพาะการใช้งาน และรองรับวัสดุพื้นผิวหลากหลาย ปกป้องการตรวจสอบย้อนกลับตลอดสายและการปฏิบัติตามมาตรฐานความปลอดภัยสำหรับทรัพย์สินพลังงาน"
-    ]
-  },
-  "classify_by": {
-    "en": "Choose an application",
-    "zh": "选择应用领域",
-    "vi": "Chọn ứng dụng",
-    "th": "เลือกการใช้งาน"
-  },
-  "tiers": [
-    {
-      "tab": {
-        "en": "Solar / PV",
-        "zh": "光伏",
-        "vi": "Điện mặt trời",
-        "th": "โซลาร์เซลล์"
-      },
-      "name": {
-        "en": "Solar / PV Labels",
-        "zh": "光伏标签",
-        "vi": "Nhãn điện mặt trời",
-        "th": "ฉลากโซลาร์เซลล์"
-      },
-      "intro": {
-        "en": "Module backsheet and nameplate labeling built to endure 25 years of UV aging, thermal cycling, and damp-heat exposure.",
-        "zh": "组件背板与铭牌标识，耐受 25 年 UV 老化、高低温循环与湿热环境。",
-        "vi": "Nhãn tấm nền module và nhãn tên chịu được 25 năm lão hóa UV, chu kỳ nhiệt và môi trường ẩm nhiệt.",
-        "th": "ฉลากแผ่นหลังโมดูลและป้ายชื่อ ทนการเสื่อมสภาพจาก UV นาน 25 ปี วัฏจักรความร้อน และสภาพชื้นร้อน"
-      },
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OUTDOOR-SOLARSUN",
-      "products": [
-        {
-          "name": {
-            "en": "White UV-Resistant PV Label",
-            "zh": "白色耐 UV 光伏标签",
-            "vi": "Nhãn điện mặt trời chống UV màu trắng",
-            "th": "ฉลากโซลาร์เซลล์สีขาวทน UV"
-          },
-          "line": {
-            "en": "MZS1670 · 50µm white UV-resistant PET · S333 adhesive · UV60 / PCT48 / DH1000 · for module backsheet lamination",
-            "zh": "MZS1670 · 50µm 白色耐 UV PET · S333 胶 · UV60 / PCT48 / DH1000 · 适配组件背板层压",
-            "vi": "MZS1670 · PET trắng chống UV 50µm · keo S333 · UV60 / PCT48 / DH1000 · dùng cho ép tấm nền module",
-            "th": "MZS1670 · PET สีขาวทน UV 50µm · กาว S333 · UV60 / PCT48 / DH1000 · สำหรับการเคลือบแผ่นหลังโมดูล"
-          },
-          "img": "",
-          "landing": false,
-          "slug": ""
-        },
-        {
-          "name": {
-            "en": "Matte-Silver PV Nameplate",
-            "zh": "亚银光伏铭牌标签",
-            "vi": "Nhãn tên điện mặt trời bạc mờ",
-            "th": "ป้ายชื่อโซลาร์เซลล์สีเงินด้าน"
-          },
-          "line": {
-            "en": "MZ0511 · 50µm matte-silver PET · S8050 adhesive · UL969 · PCT48 / DH1000 · metallic nameplate finish",
-            "zh": "MZ0511 · 50µm 哑银 PET · S8050 胶 · UL969 · PCT48 / DH1000 · 金属质感铭牌级",
-            "vi": "MZ0511 · PET bạc mờ 50µm · keo S8050 · UL969 · PCT48 / DH1000 · hoàn thiện nhãn kim loại",
-            "th": "MZ0511 · PET สีเงินด้าน 50µm · กาว S8050 · UL969 · PCT48 / DH1000 · ผิวป้ายชื่อโลหะ"
-          },
-          "img": "",
-          "landing": false,
-          "slug": ""
-        },
-        {
-          "name": {
-            "en": "Black PV Label",
-            "zh": "黑色光伏标签",
-            "vi": "Nhãn điện mặt trời màu đen",
-            "th": "ฉลากโซลาร์เซลล์สีดำ"
-          },
-          "line": {
-            "en": "MZS1619 · 50µm black PET · S333 adhesive · UL969 · UV60 / PCT48 / DH1000 · no full-surface printing, no de-inking",
-            "zh": "MZS1619 · 50µm 黑色 PET · S333 胶 · UL969 · UV60 / PCT48 / DH1000 · 免满版印刷，无脱墨风险",
-            "vi": "MZS1619 · PET đen 50µm · keo S333 · UL969 · UV60 / PCT48 / DH1000 · không in phủ toàn bề mặt, không bong mực",
-            "th": "MZS1619 · PET สีดำ 50µm · กาว S333 · UL969 · UV60 / PCT48 / DH1000 · ไม่ต้องพิมพ์เต็มพื้นผิว ไม่มีหมึกหลุด"
-          },
-          "img": "",
-          "landing": false,
-          "slug": ""
-        },
-        {
-          "name": "EA1670",
-          "line": {
-            "en": "50µm white UV PET · lamination & nameplate · −40 to 149 °C · aging/yellowing-resistant",
-            "zh": "50µm 白色耐 UV PET · 层压与铭牌 · −40 至 149 °C · 耐老化/耐黄变",
-            "vi": "PET UV trắng 50µm · cán màng & bảng tên · −40 đến 149 °C · kháng lão hóa/ố vàng",
-            "th": "PET UV สีขาว 50µm · เคลือบและป้ายชื่อ · −40 ถึง 149 °C · ทนการเสื่อม/เหลือง"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "ea1670"
-        },
-        {
-          "name": "EA1619",
-          "line": {
-            "en": "50µm matte black UV PET · UL969 · nameplate · 600 dpi TT · −40 to 149 °C",
-            "zh": "50µm 哑黑耐 UV PET · UL969 · 铭牌 · 600 dpi 热转印 · −40 至 149 °C",
-            "vi": "PET UV đen mờ 50µm · UL969 · bảng tên · TT 600 dpi · −40 đến 149 °C",
-            "th": "PET UV ดำด้าน 50µm · UL969 · ป้ายชื่อ · TT 600 dpi · −40 ถึง 149 °C"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "ea1619"
-        },
-        {
-          "name": "EA0511",
-          "line": {
-            "en": "50µm matte silver PET · UL969 · solar backsheet · PCT48/DH1250 · −40 to 149 °C",
-            "zh": "50µm 哑银 PET · UL969 · 光伏背板 · PCT48/DH1250 · −40 至 149 °C",
-            "vi": "PET bạc mờ 50µm · UL969 · tấm nền PV · PCT48/DH1250 · −40 đến 149 °C",
-            "th": "PET เงินด้าน 50µm · UL969 · แบ็คชีตโซลาร์ · PCT48/DH1250 · −40 ถึง 149 °C"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "ea0511"
-        }
-      ]
-    },
-    {
-      "tab": {
-        "en": "New-Energy Battery",
-        "zh": "新能源电池",
-        "vi": "Pin năng lượng mới",
-        "th": "แบตเตอรี่พลังงานใหม่"
-      },
-      "name": {
-        "en": "New-Energy Battery Labels",
-        "zh": "新能源电池标签",
-        "vi": "Nhãn pin năng lượng mới",
-        "th": "ฉลากแบตเตอรี่พลังงานใหม่"
-      },
-      "intro": {
-        "en": "Cell, module, and pack traceability and warning labels that withstand electrolytes, thermal cycling, and outdoor exposure.",
-        "zh": "电芯、模组与 PACK 追溯及警示标识，耐受电解液、高低温循环与户外环境。",
-        "vi": "Nhãn truy xuất và cảnh báo cho cell, module và pack, chịu được dung dịch điện phân, chu kỳ nhiệt và môi trường ngoài trời.",
-        "th": "ฉลากตรวจสอบย้อนกลับและป้ายเตือนสำหรับเซลล์ โมดูล และแพ็ก ทนอิเล็กโทรไลต์ วัฏจักรความร้อน และการใช้งานกลางแจ้ง"
-      },
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OUTDOOR-NEWEV",
-      "products": [
-        {
-          "name": {
-            "en": "Battery Module Labels",
-            "zh": "电池模组标签",
-            "vi": "Nhãn mô-đun pin",
-            "th": "ฉลากโมดูลแบตเตอรี่"
-          },
-          "line": {
-            "en": "Module identification, QR-code tracking and production data management.",
-            "zh": "用于电池模组识别、二维码追踪及生产信息管理。",
-            "vi": "Nhận diện mô-đun, theo dõi mã QR và quản lý dữ liệu sản xuất.",
-            "th": "การระบุโมดูล การติดตามด้วยคิวอาร์โค้ด และการจัดการข้อมูลการผลิต"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "ef21449"
-        },
-        {
-          "name": {
-            "en": "Battery Pack Warning Labels",
-            "zh": "电池包警示标签",
-            "vi": "Nhãn cảnh báo bộ pin",
-            "th": "ฉลากเตือนแพ็คแบตเตอรี่"
-          },
-          "line": {
-            "en": "Safety warnings, product identification and serial-number management on battery pack enclosures.",
-            "zh": "用于 PACK 外壳安全警示、产品识别及序列号管理。",
-            "vi": "Cảnh báo an toàn, nhận diện sản phẩm và quản lý số sê-ri trên vỏ bộ pin.",
-            "th": "คำเตือนความปลอดภัย การระบุผลิตภัณฑ์ และการจัดการหมายเลขซีเรียลบนตัวถังแพ็คแบตเตอรี่"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "efwp344s"
-        },
-        {
-          "name": {
-            "en": "High- and Low-Voltage Cable Labels",
-            "zh": "高低压线缆标签",
-            "vi": "Nhãn cáp điện áp cao và thấp",
-            "th": "ฉลากสายเคเบิลแรงดันสูงและต่ำ"
-          },
-          "line": {
-            "en": "Identify battery-system cables and clearly distinguish high- and low-voltage circuits.",
-            "zh": "用于识别电池系统线缆，清晰区分高压与低压线路。",
-            "vi": "Nhận diện cáp hệ thống pin, phân biệt rõ mạch cao áp và hạ áp.",
-            "th": "ระบุสายเคเบิลระบบแบตเตอรี่ และแยกวงจรแรงดันสูงและต่ำอย่างชัดเจน"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "ef21361v2"
-        },
-        {
-          "name": {
-            "en": "Factory Rack and Workstation Labels",
-            "zh": "厂区货架与台架标签",
-            "vi": "Nhãn kệ và bàn thao tác nhà máy",
-            "th": "ฉลากชั้นวางและสถานีงานในโรงงาน"
-          },
-          "line": {
-            "en": "Identify warehouse racks, production workstations and materials throughout the factory.",
-            "zh": "用于仓储货架、生产台架及产线物料管理。",
-            "vi": "Nhận diện kệ kho, bàn thao tác sản xuất và vật tư trong toàn nhà máy.",
-            "th": "ระบุชั้นวางในคลัง สถานีงานผลิต และวัสดุทั่วทั้งโรงงาน"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "efv400f"
-        }
-      ]
-    },
-    {
-      "tab": {
-        "en": "Outdoor Warning",
-        "zh": "户外警示",
-        "vi": "Cảnh báo ngoài trời",
-        "th": "ป้ายเตือนกลางแจ้ง"
-      },
-      "name": {
-        "en": "Outdoor Warning Labels",
-        "zh": "户外警示标签",
-        "vi": "Nhãn cảnh báo ngoài trời",
-        "th": "ฉลากเตือนกลางแจ้ง"
-      },
-      "intro": {
-        "en": "Electrical, high-temperature, pipe, and hazardous-chemical warning labels engineered for flame retardancy, weathering, chemical, and marine resistance.",
-        "zh": "电气、高温、管道与危险化学品警示标识，兼具阻燃、耐候、耐化学与海事耐受性能。",
-        "vi": "Nhãn cảnh báo điện, nhiệt độ cao, đường ống và hóa chất nguy hiểm, được thiết kế chống cháy, chịu thời tiết, hóa chất và môi trường biển.",
-        "th": "ฉลากเตือนด้านไฟฟ้า อุณหภูมิสูง ท่อ และสารเคมีอันตราย ออกแบบให้หน่วงไฟ ทนสภาพอากาศ สารเคมี และสภาพแวดล้อมทางทะเล"
-      },
-      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OUTDOOR-WARNING%20OILDRUM",
-      "products": [
-        {
-          "name": {
-            "en": "Electrical Safety Warning Label",
-            "zh": "电气安全警示标签",
-            "vi": "Nhãn cảnh báo an toàn điện",
-            "th": "ฉลากเตือนความปลอดภัยทางไฟฟ้า"
-          },
-          "line": {
-            "en": "V400 F · 4mil white vinyl · TC-106 topcoat · L-156 adhesive · UL certified · flame-retardant, electrical compliance · 5–7-year outdoor",
-            "zh": "V400 F · 4mil 白色乙烯基 · TC-106 顶涂 · L-156 特种胶 · UL 认证 · 阻燃电气合规 · 5–7 年户外",
-            "vi": "V400 F · vinyl trắng 4mil · lớp phủ TC-106 · keo L-156 · chứng nhận UL · chống cháy, tuân thủ điện · ngoài trời 5–7 năm",
-            "th": "V400 F · ไวนิลสีขาว 4mil · ท็อปโค้ท TC-106 · กาว L-156 · รับรอง UL · หน่วงไฟ เป็นไปตามมาตรฐานไฟฟ้า · กลางแจ้ง 5–7 ปี"
-          },
-          "img": "",
-          "landing": false,
-          "slug": ""
-        },
-        {
-          "name": {
-            "en": "High-Temp Environment Warning Label",
-            "zh": "高温环境警示标签",
-            "vi": "Nhãn cảnh báo môi trường nhiệt độ cao",
-            "th": "ฉลากเตือนสภาพแวดล้อมอุณหภูมิสูง"
-          },
-          "line": {
-            "en": "21361V2 · 2.0mil white matte chemical-resistant PET · L-606 adhesive · UL certified · high-temp & chemical resistant · rough-surface (steel / ceramic / forging)",
-            "zh": "21361V2 · 2.0mil 白色哑光耐化学 PET · L-606 高性能胶 · UL 认证 · 耐高温耐化学 · 粗糙表面适配（钢厂 / 陶瓷 / 锻造）",
-            "vi": "21361V2 · PET trắng mờ chống hóa chất 2.0mil · keo L-606 · chứng nhận UL · chịu nhiệt độ cao & hóa chất · bề mặt thô (thép / gốm / rèn)",
-            "th": "21361V2 · PET สีขาวด้านทนสารเคมี 2.0mil · กาว L-606 · รับรอง UL · ทนอุณหภูมิสูงและสารเคมี · พื้นผิวหยาบ (เหล็ก / เซรามิก / งานตีขึ้นรูป)"
-          },
-          "img": "",
-          "landing": false,
-          "slug": ""
-        },
-        {
-          "name": {
-            "en": "Pipe Medium Warning Label",
-            "zh": "管道介质警示标签",
-            "vi": "Nhãn cảnh báo môi chất đường ống",
-            "th": "ฉลากเตือนตัวกลางในท่อ"
-          },
-          "line": {
-            "en": "4mil flexible white vinyl · high-performance adhesive · conformable to curved pipe · 5–7-year outdoor · color-coded flow markers",
-            "zh": "4mil 柔性白色乙烯基 · 高性能胶 · 柔性曲面适配 · 5–7 年户外耐候 · 颜色编码流向标记",
-            "vi": "Vinyl trắng dẻo 4mil · keo hiệu năng cao · ôm theo ống cong · ngoài trời 5–7 năm · dấu hướng dòng mã màu",
-            "th": "ไวนิลสีขาวยืดหยุ่น 4mil · กาวประสิทธิภาพสูง · ติดตามท่อโค้งได้ · กลางแจ้ง 5–7 ปี · เครื่องหมายทิศทางการไหลแบบรหัสสี"
-          },
-          "img": "",
-          "landing": false,
-          "slug": ""
-        },
-        {
-          "name": {
-            "en": "Hazardous Chemical Warning Label",
-            "zh": "危险化学品警示标签",
-            "vi": "Nhãn cảnh báo hóa chất nguy hiểm",
-            "th": "ฉลากเตือนสารเคมีอันตราย"
-          },
-          "line": {
-            "en": "41028 · 3.1mil white PVC · V-224 adhesive · BS 5609 marine certified · laser-printable · seawater- & chemical-resistant (GHS)",
-            "zh": "41028 · 3.1mil 白色 PVC · V-224 胶 · BS 5609 海事认证 · 激光打印 · 耐海水耐化学腐蚀（GHS）",
-            "vi": "41028 · PVC trắng 3.1mil · keo V-224 · chứng nhận hàng hải BS 5609 · in laser · chống nước biển & hóa chất (GHS)",
-            "th": "41028 · PVC สีขาว 3.1mil · กาว V-224 · รับรองทางทะเล BS 5609 · พิมพ์เลเซอร์ได้ · ทนน้ำทะเลและสารเคมี (GHS)"
-          },
-          "img": "",
-          "landing": false,
-          "slug": ""
-        },
-        {
-          "name": "E-6533",
-          "line": {
-            "en": "3 mil soft white PVC · permanent acrylic · −40 to 150 °C · 3–5-year outdoor",
-            "zh": "3 mil 柔软白色 PVC · 永久丙烯酸胶 · −40 至 150 °C · 户外 3–5 年",
-            "vi": "PVC trắng mềm 3 mil · keo acrylic vĩnh viễn · −40 đến 150 °C · ngoài trời 3–5 năm",
-            "th": "PVC สีขาวนุ่ม 3 mil · กาวอะคริลิกถาวร · −40 ถึง 150 °C · กลางแจ้ง 3–5 ปี"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "e-6533"
-        },
-        {
-          "name": "E-6533R",
-          "line": {
-            "en": "3 mil red vinyl · permanent acrylic · −40 to 80 °C · 5–8-year outdoor · hazard/safety",
-            "zh": "3 mil 红色乙烯基 · 永久丙烯酸胶 · −40 至 80 °C · 户外 5–8 年 · 危险/安全",
-            "vi": "vinyl đỏ 3 mil · keo acrylic vĩnh viễn · −40 đến 80 °C · ngoài trời 5–8 năm · nguy hiểm/an toàn",
-            "th": "ไวนิลสีแดง 3 mil · กาวอะคริลิกถาวร · −40 ถึง 80 °C · กลางแจ้ง 5–8 ปี · อันตราย/ความปลอดภัย"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "e-6533r"
-        },
-        {
-          "name": "E-6534",
-          "line": {
-            "en": "4 mil white vinyl · permanent acrylic · −40 to 150 °C · 5–8-year outdoor",
-            "zh": "4 mil 白色乙烯基 · 永久丙烯酸胶 · −40 至 150 °C · 户外 5–8 年",
-            "vi": "vinyl trắng 4 mil · keo acrylic vĩnh viễn · −40 đến 150 °C · ngoài trời 5–8 năm",
-            "th": "ไวนิลสีขาว 4 mil · กาวอะคริลิกถาวร · −40 ถึง 150 °C · กลางแจ้ง 5–8 ปี"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "e-6534"
-        }
-      ]
-    }
+  "en": [
+   "As the energy industry advances rapidly, equipment is exposed for years to UV, salt spray, temperature extremes, electrolytes, and other harsh conditions, where label durability directly determines asset traceability and safety compliance. The ETIA outdoor-energy labeling system spans three domains — solar PV, energy-storage batteries, and outdoor warning — with fully internationally certified materials, application-specific adhesive systems, and compatibility across many substrates, safeguarding end-to-end traceability and safety compliance for energy assets."
+  ],
+  "vi": [
+   "Ngành năng lượng phát triển nhanh chóng, thiết bị chịu phơi nhiễm lâu dài với tia UV, sương muối, nhiệt độ khắc nghiệt, dung dịch điện phân và các điều kiện khắc nghiệt khác, nơi độ bền của nhãn quyết định trực tiếp khả năng truy xuất tài sản và tuân thủ an toàn. Hệ thống nhãn ngoài trời & năng lượng ETIA bao phủ ba lĩnh vực — điện mặt trời, pin lưu trữ năng lượng và cảnh báo ngoài trời — với vật liệu được chứng nhận quốc tế toàn diện, hệ keo chuyên biệt theo ứng dụng và tương thích với nhiều chất nền, bảo vệ khả năng truy xuất toàn trình và tuân thủ an toàn cho tài sản năng lượng."
+  ],
+  "th": [
+   "อุตสาหกรรมพลังงานเติบโตอย่างรวดเร็ว อุปกรณ์ต้องสัมผัสกับรังสี UV ละอองเกลือ อุณหภูมิสุดขั้ว อิเล็กโทรไลต์ และสภาพแวดล้อมรุนแรงอื่นๆ เป็นเวลานาน ความทนทานของฉลากจึงเป็นตัวกำหนดความสามารถในการตรวจสอบย้อนกลับทรัพย์สินและการปฏิบัติตามมาตรฐานความปลอดภัยโดยตรง ระบบฉลากกลางแจ้งและพลังงานของ ETIA ครอบคลุมสามด้าน ได้แก่ โซลาร์เซลล์ แบตเตอรี่กักเก็บพลังงาน และป้ายเตือนกลางแจ้ง ด้วยวัสดุที่ได้รับการรับรองระดับสากลทั้งหมด ระบบกาวเฉพาะการใช้งาน และรองรับวัสดุพื้นผิวหลากหลาย ปกป้องการตรวจสอบย้อนกลับตลอดสายและการปฏิบัติตามมาตรฐานความปลอดภัยสำหรับทรัพย์สินพลังงาน"
   ]
+ },
+ "classify_by": {
+  "en": "Choose an application",
+  "zh": "选择应用领域",
+  "vi": "Chọn ứng dụng",
+  "th": "เลือกการใช้งาน"
+ },
+ "tiers": [
+  {
+   "tab": {
+    "en": "Solar / PV",
+    "zh": "光伏",
+    "vi": "Điện mặt trời",
+    "th": "โซลาร์เซลล์"
+   },
+   "name": {
+    "en": "Solar / PV Labels",
+    "zh": "光伏标签",
+    "vi": "Nhãn điện mặt trời",
+    "th": "ฉลากโซลาร์เซลล์"
+   },
+   "intro": {
+    "en": "Module backsheet and nameplate labeling built to endure 25 years of UV aging, thermal cycling, and damp-heat exposure.",
+    "zh": "组件背板与铭牌标识，耐受 25 年 UV 老化、高低温循环与湿热环境。",
+    "vi": "Nhãn tấm nền module và nhãn tên chịu được 25 năm lão hóa UV, chu kỳ nhiệt và môi trường ẩm nhiệt.",
+    "th": "ฉลากแผ่นหลังโมดูลและป้ายชื่อ ทนการเสื่อมสภาพจาก UV นาน 25 ปี วัฏจักรความร้อน และสภาพชื้นร้อน"
+   },
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OUTDOOR-SOLARSUN",
+   "products": [
+    {
+     "name": {
+      "en": "White UV-Resistant PV Label",
+      "zh": "白色耐 UV 光伏标签",
+      "vi": "Nhãn điện mặt trời chống UV màu trắng",
+      "th": "ฉลากโซลาร์เซลล์สีขาวทน UV"
+     },
+     "line": {
+      "en": "EA1670 · 50µm white UV-resistant PET · S333 adhesive · UV60 / PCT48 / DH1000 · for module backsheet lamination",
+      "zh": "EA1670 · 50µm 白色耐 UV PET · S333 胶 · UV60 / PCT48 / DH1000 · 适配组件背板层压",
+      "vi": "EA1670 · PET trắng chống UV 50µm · keo S333 · UV60 / PCT48 / DH1000 · dùng cho ép tấm nền module",
+      "th": "EA1670 · PET สีขาวทน UV 50µm · กาว S333 · UV60 / PCT48 / DH1000 · สำหรับการเคลือบแผ่นหลังโมดูล"
+     },
+     "img": "",
+     "landing": false,
+     "slug": ""
+    },
+    {
+     "name": {
+      "en": "Matte-Silver PV Nameplate",
+      "zh": "亚银光伏铭牌标签",
+      "vi": "Nhãn tên điện mặt trời bạc mờ",
+      "th": "ป้ายชื่อโซลาร์เซลล์สีเงินด้าน"
+     },
+     "line": {
+      "en": "EA0511 · 50µm matte-silver PET · S8050 adhesive · UL969 · PCT48 / DH1000 · metallic nameplate finish",
+      "zh": "EA0511 · 50µm 哑银 PET · S8050 胶 · UL969 · PCT48 / DH1000 · 金属质感铭牌级",
+      "vi": "EA0511 · PET bạc mờ 50µm · keo S8050 · UL969 · PCT48 / DH1000 · hoàn thiện nhãn kim loại",
+      "th": "EA0511 · PET สีเงินด้าน 50µm · กาว S8050 · UL969 · PCT48 / DH1000 · ผิวป้ายชื่อโลหะ"
+     },
+     "img": "",
+     "landing": false,
+     "slug": ""
+    },
+    {
+     "name": {
+      "en": "Black PV Label",
+      "zh": "黑色光伏标签",
+      "vi": "Nhãn điện mặt trời màu đen",
+      "th": "ฉลากโซลาร์เซลล์สีดำ"
+     },
+     "line": {
+      "en": "EA1619 · 50µm black PET · S333 adhesive · UL969 · UV60 / PCT48 / DH1000 · no full-surface printing, no de-inking",
+      "zh": "EA1619 · 50µm 黑色 PET · S333 胶 · UL969 · UV60 / PCT48 / DH1000 · 免满版印刷，无脱墨风险",
+      "vi": "EA1619 · PET đen 50µm · keo S333 · UL969 · UV60 / PCT48 / DH1000 · không in phủ toàn bề mặt, không bong mực",
+      "th": "EA1619 · PET สีดำ 50µm · กาว S333 · UL969 · UV60 / PCT48 / DH1000 · ไม่ต้องพิมพ์เต็มพื้นผิว ไม่มีหมึกหลุด"
+     },
+     "img": "",
+     "landing": false,
+     "slug": ""
+    },
+    {
+     "name": "EA1670",
+     "line": {
+      "en": "50µm white UV PET · lamination & nameplate · −40 to 149 °C · aging/yellowing-resistant",
+      "zh": "50µm 白色耐 UV PET · 层压与铭牌 · −40 至 149 °C · 耐老化/耐黄变",
+      "vi": "PET UV trắng 50µm · cán màng & bảng tên · −40 đến 149 °C · kháng lão hóa/ố vàng",
+      "th": "PET UV สีขาว 50µm · เคลือบและป้ายชื่อ · −40 ถึง 149 °C · ทนการเสื่อม/เหลือง"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "ea1670"
+    },
+    {
+     "name": "EA1619",
+     "line": {
+      "en": "50µm matte black UV PET · UL969 · nameplate · 600 dpi TT · −40 to 149 °C",
+      "zh": "50µm 哑黑耐 UV PET · UL969 · 铭牌 · 600 dpi 热转印 · −40 至 149 °C",
+      "vi": "PET UV đen mờ 50µm · UL969 · bảng tên · TT 600 dpi · −40 đến 149 °C",
+      "th": "PET UV ดำด้าน 50µm · UL969 · ป้ายชื่อ · TT 600 dpi · −40 ถึง 149 °C"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "ea1619"
+    },
+    {
+     "name": "EA0511",
+     "line": {
+      "en": "50µm matte silver PET · UL969 · solar backsheet · PCT48/DH1250 · −40 to 149 °C",
+      "zh": "50µm 哑银 PET · UL969 · 光伏背板 · PCT48/DH1250 · −40 至 149 °C",
+      "vi": "PET bạc mờ 50µm · UL969 · tấm nền PV · PCT48/DH1250 · −40 đến 149 °C",
+      "th": "PET เงินด้าน 50µm · UL969 · แบ็คชีตโซลาร์ · PCT48/DH1250 · −40 ถึง 149 °C"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "ea0511"
+    }
+   ]
+  },
+  {
+   "tab": {
+    "en": "New-Energy Battery",
+    "zh": "新能源电池",
+    "vi": "Pin năng lượng mới",
+    "th": "แบตเตอรี่พลังงานใหม่"
+   },
+   "name": {
+    "en": "New-Energy Battery Labels",
+    "zh": "新能源电池标签",
+    "vi": "Nhãn pin năng lượng mới",
+    "th": "ฉลากแบตเตอรี่พลังงานใหม่"
+   },
+   "intro": {
+    "en": "Cell, module, and pack traceability and warning labels that withstand electrolytes, thermal cycling, and outdoor exposure.",
+    "zh": "电芯、模组与 PACK 追溯及警示标识，耐受电解液、高低温循环与户外环境。",
+    "vi": "Nhãn truy xuất và cảnh báo cho cell, module và pack, chịu được dung dịch điện phân, chu kỳ nhiệt và môi trường ngoài trời.",
+    "th": "ฉลากตรวจสอบย้อนกลับและป้ายเตือนสำหรับเซลล์ โมดูล และแพ็ก ทนอิเล็กโทรไลต์ วัฏจักรความร้อน และการใช้งานกลางแจ้ง"
+   },
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OUTDOOR-NEWEV",
+   "products": [
+    {
+     "name": {
+      "en": "Battery Module Labels",
+      "zh": "电池模组标签",
+      "vi": "Nhãn mô-đun pin",
+      "th": "ฉลากโมดูลแบตเตอรี่"
+     },
+     "line": {
+      "en": "EF21449 · Module identification, QR-code tracking and production data management.",
+      "zh": "EF21449 · 用于电池模组识别、二维码追踪及生产信息管理。",
+      "vi": "EF21449 · Nhận diện mô-đun, theo dõi mã QR và quản lý dữ liệu sản xuất.",
+      "th": "EF21449 · การระบุโมดูล การติดตามด้วยคิวอาร์โค้ด และการจัดการข้อมูลการผลิต"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "ef21449"
+    },
+    {
+     "name": {
+      "en": "Battery Pack Warning Labels",
+      "zh": "电池包警示标签",
+      "vi": "Nhãn cảnh báo bộ pin",
+      "th": "ฉลากเตือนแพ็คแบตเตอรี่"
+     },
+     "line": {
+      "en": "EFWP344S · Safety warnings, product identification and serial-number management on battery pack enclosures.",
+      "zh": "EFWP344S · 用于 PACK 外壳安全警示、产品识别及序列号管理。",
+      "vi": "EFWP344S · Cảnh báo an toàn, nhận diện sản phẩm và quản lý số sê-ri trên vỏ bộ pin.",
+      "th": "EFWP344S · คำเตือนความปลอดภัย การระบุผลิตภัณฑ์ และการจัดการหมายเลขซีเรียลบนตัวถังแพ็คแบตเตอรี่"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "efwp344s"
+    },
+    {
+     "name": {
+      "en": "High- and Low-Voltage Cable Labels",
+      "zh": "高低压线缆标签",
+      "vi": "Nhãn cáp điện áp cao và thấp",
+      "th": "ฉลากสายเคเบิลแรงดันสูงและต่ำ"
+     },
+     "line": {
+      "en": "EF21361v2 · Identify battery-system cables and clearly distinguish high- and low-voltage circuits.",
+      "zh": "EF21361v2 · 用于识别电池系统线缆，清晰区分高压与低压线路。",
+      "vi": "EF21361v2 · Nhận diện cáp hệ thống pin, phân biệt rõ mạch cao áp và hạ áp.",
+      "th": "EF21361v2 · ระบุสายเคเบิลระบบแบตเตอรี่ และแยกวงจรแรงดันสูงและต่ำอย่างชัดเจน"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "ef21361v2"
+    },
+    {
+     "name": {
+      "en": "Factory Rack and Workstation Labels",
+      "zh": "厂区货架与台架标签",
+      "vi": "Nhãn kệ và bàn thao tác nhà máy",
+      "th": "ฉลากชั้นวางและสถานีงานในโรงงาน"
+     },
+     "line": {
+      "en": "EFV400F · Identify warehouse racks, production workstations and materials throughout the factory.",
+      "zh": "EFV400F · 用于仓储货架、生产台架及产线物料管理。",
+      "vi": "EFV400F · Nhận diện kệ kho, bàn thao tác sản xuất và vật tư trong toàn nhà máy.",
+      "th": "EFV400F · ระบุชั้นวางในคลัง สถานีงานผลิต และวัสดุทั่วทั้งโรงงาน"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "efv400f"
+    }
+   ]
+  },
+  {
+   "tab": {
+    "en": "Outdoor Warning",
+    "zh": "户外警示",
+    "vi": "Cảnh báo ngoài trời",
+    "th": "ป้ายเตือนกลางแจ้ง"
+   },
+   "name": {
+    "en": "Outdoor Warning Labels",
+    "zh": "户外警示标签",
+    "vi": "Nhãn cảnh báo ngoài trời",
+    "th": "ฉลากเตือนกลางแจ้ง"
+   },
+   "intro": {
+    "en": "Electrical, high-temperature, pipe, and hazardous-chemical warning labels engineered for flame retardancy, weathering, chemical, and marine resistance.",
+    "zh": "电气、高温、管道与危险化学品警示标识，兼具阻燃、耐候、耐化学与海事耐受性能。",
+    "vi": "Nhãn cảnh báo điện, nhiệt độ cao, đường ống và hóa chất nguy hiểm, được thiết kế chống cháy, chịu thời tiết, hóa chất và môi trường biển.",
+    "th": "ฉลากเตือนด้านไฟฟ้า อุณหภูมิสูง ท่อ และสารเคมีอันตราย ออกแบบให้หน่วงไฟ ทนสภาพอากาศ สารเคมี และสภาพแวดล้อมทางทะเล"
+   },
+   "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OUTDOOR-WARNING%20OILDRUM",
+   "products": [
+    {
+     "name": {
+      "en": "Electrical Safety Warning Label",
+      "zh": "电气安全警示标签",
+      "vi": "Nhãn cảnh báo an toàn điện",
+      "th": "ฉลากเตือนความปลอดภัยทางไฟฟ้า"
+     },
+     "line": {
+      "en": "V400 F · 4mil white vinyl · TC-106 topcoat · L-156 adhesive · UL certified · flame-retardant, electrical compliance · 5–7-year outdoor",
+      "zh": "V400 F · 4mil 白色乙烯基 · TC-106 顶涂 · L-156 特种胶 · UL 认证 · 阻燃电气合规 · 5–7 年户外",
+      "vi": "V400 F · vinyl trắng 4mil · lớp phủ TC-106 · keo L-156 · chứng nhận UL · chống cháy, tuân thủ điện · ngoài trời 5–7 năm",
+      "th": "V400 F · ไวนิลสีขาว 4mil · ท็อปโค้ท TC-106 · กาว L-156 · รับรอง UL · หน่วงไฟ เป็นไปตามมาตรฐานไฟฟ้า · กลางแจ้ง 5–7 ปี"
+     },
+     "img": "",
+     "landing": false,
+     "slug": ""
+    },
+    {
+     "name": {
+      "en": "High-Temp Environment Warning Label",
+      "zh": "高温环境警示标签",
+      "vi": "Nhãn cảnh báo môi trường nhiệt độ cao",
+      "th": "ฉลากเตือนสภาพแวดล้อมอุณหภูมิสูง"
+     },
+     "line": {
+      "en": "21361V2 · 2.0mil white matte chemical-resistant PET · L-606 adhesive · UL certified · high-temp & chemical resistant · rough-surface (steel / ceramic / forging)",
+      "zh": "21361V2 · 2.0mil 白色哑光耐化学 PET · L-606 高性能胶 · UL 认证 · 耐高温耐化学 · 粗糙表面适配（钢厂 / 陶瓷 / 锻造）",
+      "vi": "21361V2 · PET trắng mờ chống hóa chất 2.0mil · keo L-606 · chứng nhận UL · chịu nhiệt độ cao & hóa chất · bề mặt thô (thép / gốm / rèn)",
+      "th": "21361V2 · PET สีขาวด้านทนสารเคมี 2.0mil · กาว L-606 · รับรอง UL · ทนอุณหภูมิสูงและสารเคมี · พื้นผิวหยาบ (เหล็ก / เซรามิก / งานตีขึ้นรูป)"
+     },
+     "img": "",
+     "landing": false,
+     "slug": ""
+    },
+    {
+     "name": {
+      "en": "Pipe Medium Warning Label",
+      "zh": "管道介质警示标签",
+      "vi": "Nhãn cảnh báo môi chất đường ống",
+      "th": "ฉลากเตือนตัวกลางในท่อ"
+     },
+     "line": {
+      "en": "4mil flexible white vinyl · high-performance adhesive · conformable to curved pipe · 5–7-year outdoor · color-coded flow markers",
+      "zh": "4mil 柔性白色乙烯基 · 高性能胶 · 柔性曲面适配 · 5–7 年户外耐候 · 颜色编码流向标记",
+      "vi": "Vinyl trắng dẻo 4mil · keo hiệu năng cao · ôm theo ống cong · ngoài trời 5–7 năm · dấu hướng dòng mã màu",
+      "th": "ไวนิลสีขาวยืดหยุ่น 4mil · กาวประสิทธิภาพสูง · ติดตามท่อโค้งได้ · กลางแจ้ง 5–7 ปี · เครื่องหมายทิศทางการไหลแบบรหัสสี"
+     },
+     "img": "",
+     "landing": false,
+     "slug": ""
+    },
+    {
+     "name": {
+      "en": "Hazardous Chemical Warning Label",
+      "zh": "危险化学品警示标签",
+      "vi": "Nhãn cảnh báo hóa chất nguy hiểm",
+      "th": "ฉลากเตือนสารเคมีอันตราย"
+     },
+     "line": {
+      "en": "41028 · 3.1mil white PVC · V-224 adhesive · BS 5609 marine certified · laser-printable · seawater- & chemical-resistant (GHS)",
+      "zh": "41028 · 3.1mil 白色 PVC · V-224 胶 · BS 5609 海事认证 · 激光打印 · 耐海水耐化学腐蚀（GHS）",
+      "vi": "41028 · PVC trắng 3.1mil · keo V-224 · chứng nhận hàng hải BS 5609 · in laser · chống nước biển & hóa chất (GHS)",
+      "th": "41028 · PVC สีขาว 3.1mil · กาว V-224 · รับรองทางทะเล BS 5609 · พิมพ์เลเซอร์ได้ · ทนน้ำทะเลและสารเคมี (GHS)"
+     },
+     "img": "",
+     "landing": false,
+     "slug": ""
+    },
+    {
+     "name": "E-6533",
+     "line": {
+      "en": "3 mil soft white PVC · permanent acrylic · −40 to 150 °C · 3–5-year outdoor",
+      "zh": "3 mil 柔软白色 PVC · 永久丙烯酸胶 · −40 至 150 °C · 户外 3–5 年",
+      "vi": "PVC trắng mềm 3 mil · keo acrylic vĩnh viễn · −40 đến 150 °C · ngoài trời 3–5 năm",
+      "th": "PVC สีขาวนุ่ม 3 mil · กาวอะคริลิกถาวร · −40 ถึง 150 °C · กลางแจ้ง 3–5 ปี"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "e-6533"
+    },
+    {
+     "name": "E-6533R",
+     "line": {
+      "en": "3 mil red vinyl · permanent acrylic · −40 to 80 °C · 5–8-year outdoor · hazard/safety",
+      "zh": "3 mil 红色乙烯基 · 永久丙烯酸胶 · −40 至 80 °C · 户外 5–8 年 · 危险/安全",
+      "vi": "vinyl đỏ 3 mil · keo acrylic vĩnh viễn · −40 đến 80 °C · ngoài trời 5–8 năm · nguy hiểm/an toàn",
+      "th": "ไวนิลสีแดง 3 mil · กาวอะคริลิกถาวร · −40 ถึง 80 °C · กลางแจ้ง 5–8 ปี · อันตราย/ความปลอดภัย"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "e-6533r"
+    },
+    {
+     "name": "E-6534",
+     "line": {
+      "en": "4 mil white vinyl · permanent acrylic · −40 to 150 °C · 5–8-year outdoor",
+      "zh": "4 mil 白色乙烯基 · 永久丙烯酸胶 · −40 至 150 °C · 户外 5–8 年",
+      "vi": "vinyl trắng 4 mil · keo acrylic vĩnh viễn · −40 đến 150 °C · ngoài trời 5–8 năm",
+      "th": "ไวนิลสีขาว 4 mil · กาวอะคริลิกถาวร · −40 ถึง 150 °C · กลางแจ้ง 5–8 ปี"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "e-6534"
+    }
+   ]
+  }
+ ]
 }
