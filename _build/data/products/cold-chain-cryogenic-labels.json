@@ -1,622 +1,642 @@
 {
-  "slug": "cold-chain-cryogenic-labels",
-  "source": "client brief — Cold Chain & Cryogenic Labels",
-  "langs": [
-    "en",
-    "zh",
-    "vi",
-    "th"
-  ],
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-BANNER.jpg",
-  "banner_pos": "center bottom",
-  "eyebrow": {
-    "en": "Solutions",
-    "zh": "解决方案",
-    "vi": "Giải pháp",
-    "th": "โซลูชัน"
+ "slug": "cold-chain-cryogenic-labels",
+ "source": "client brief — Cold Chain & Cryogenic Labels",
+ "langs": [
+  "en",
+  "zh",
+  "vi",
+  "th"
+ ],
+ "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-BANNER.jpg",
+ "banner_pos": "center bottom",
+ "eyebrow": {
+  "en": "Solutions",
+  "zh": "解决方案",
+  "vi": "Giải pháp",
+  "th": "โซลูชัน"
+ },
+ "title": {
+  "en": "Low Temperature Resistant Labeling Solutions",
+  "zh": "耐低温标签解决方案",
+  "vi": "Giải pháp nhãn chịu nhiệt độ thấp",
+  "th": "โซลูชันฉลากทนอุณหภูมิต่ำ"
+ },
+ "tagline": {
+  "en": "Built for extreme cold. Designed for reliable identification.",
+  "zh": "耐受极寒环境，保障稳定识别。",
+  "vi": "Thiết kế cho điều kiện cực lạnh. Đảm bảo nhận dạng đáng tin cậy.",
+  "th": "ออกแบบมาเพื่อความเย็นจัด สร้างขึ้นเพื่อการระบุที่เชื่อถือได้"
+ },
+ "positioning": {
+  "en": "Engineered for pharmaceutical, laboratory, and healthcare applications, our Cold Chain & Cryogenic Labels deliver reliable identification from refrigerated storage to liquid nitrogen environments. Designed to withstand freezing, thawing, and cryogenic conditions, they remain securely bonded and clearly readable throughout the product lifecycle.",
+  "zh": "ETIA 低温与深低温系列标签专为制药、生命科学、实验室及医疗行业打造，覆盖冷藏、冷冻及液氮存储环境，在冻结、解冻及深低温工况下保持牢固粘接和清晰识别，满足样本、血液制品及药品全流程标识需求。",
+  "vi": "Được thiết kế cho các ứng dụng dược phẩm, phòng thí nghiệm và chăm sóc sức khỏe, nhãn Chuỗi Lạnh & Nhiệt độ Siêu thấp của chúng tôi mang lại khả năng nhận dạng đáng tin cậy từ kho lạnh đến môi trường nitơ lỏng. Được thiết kế để chịu được đông lạnh, rã đông và điều kiện siêu lạnh, nhãn vẫn bám dính chắc chắn và dễ đọc trong suốt vòng đời sản phẩm.",
+  "th": "ออกแบบมาสำหรับงานด้านเภสัชกรรม ห้องปฏิบัติการ และการดูแลสุขภาพ ฉลากโซ่ความเย็นและอุณหภูมิต่ำยิ่งยวดของเราให้การระบุที่เชื่อถือได้ตั้งแต่การจัดเก็บแบบแช่เย็นไปจนถึงสภาพแวดล้อมไนโตรเจนเหลว ออกแบบให้ทนต่อการแช่แข็ง การละลาย และสภาวะเย็นยิ่งยวด ฉลากยังคงยึดติดแน่นและอ่านได้ชัดเจนตลอดวงจรชีวิตของผลิตภัณฑ์"
+ },
+ "why": {
+  "heading": {
+   "en": "Why Low Temperature Resistant Labeling?",
+   "zh": "为什么选择耐低温标签？",
+   "vi": "Tại sao chọn nhãn chịu nhiệt độ thấp?",
+   "th": "ทำไมต้องเลือกฉลากทนอุณหภูมิต่ำ?"
   },
-  "title": {
-    "en": "Low Temperature Resistant Labeling Solutions",
-    "zh": "耐低温标签解决方案",
-    "vi": "Giải pháp nhãn chịu nhiệt độ thấp",
-    "th": "โซลูชันฉลากทนอุณหภูมิต่ำ"
+  "intro": {
+   "en": "Low-temperature applications require labels engineered for demanding environments. From refrigerated pharmaceuticals to cryogenic biobanking, the right label ensures secure adhesion, durable printing, and reliable barcode readability throughout storage, transportation, and laboratory workflows.",
+   "zh": "低温应用需要专为严苛环境设计的标签。从医药冷链到液氮样本保存，合适的标签能够在储存、运输及实验室应用过程中持续保持牢固粘接、清晰打印和可靠识别。",
+   "vi": "Các ứng dụng ở nhiệt độ thấp đòi hỏi nhãn được thiết kế cho môi trường khắc nghiệt. Từ dược phẩm bảo quản lạnh đến ngân hàng sinh học siêu lạnh, nhãn phù hợp đảm bảo bám dính chắc chắn, in ấn bền bỉ và khả năng đọc mã vạch đáng tin cậy trong suốt quá trình lưu trữ, vận chuyển và quy trình phòng thí nghiệm.",
+   "th": "งานที่อุณหภูมิต่ำต้องใช้ฉลากที่ออกแบบมาสำหรับสภาพแวดล้อมที่ท้าทาย ตั้งแต่เภสัชภัณฑ์แบบแช่เย็นไปจนถึงธนาคารชีวภาพแบบเย็นยิ่งยวด ฉลากที่เหมาะสมช่วยให้ยึดติดแน่น พิมพ์ทนทาน และอ่านบาร์โค้ดได้อย่างเชื่อถือได้ตลอดการจัดเก็บ การขนส่ง และกระบวนการในห้องปฏิบัติการ"
   },
-  "tagline": {
-    "en": "Built for extreme cold. Designed for reliable identification.",
-    "zh": "耐受极寒环境，保障稳定识别。",
-    "vi": "Thiết kế cho điều kiện cực lạnh. Đảm bảo nhận dạng đáng tin cậy.",
-    "th": "ออกแบบมาเพื่อความเย็นจัด สร้างขึ้นเพื่อการระบุที่เชื่อถือได้"
-  },
-  "positioning": {
-    "en": "Engineered for pharmaceutical, laboratory, and healthcare applications, our Cold Chain & Cryogenic Labels deliver reliable identification from refrigerated storage to liquid nitrogen environments. Designed to withstand freezing, thawing, and cryogenic conditions, they remain securely bonded and clearly readable throughout the product lifecycle.",
-    "zh": "ETIA 低温与深低温系列标签专为制药、生命科学、实验室及医疗行业打造，覆盖冷藏、冷冻及液氮存储环境，在冻结、解冻及深低温工况下保持牢固粘接和清晰识别，满足样本、血液制品及药品全流程标识需求。",
-    "vi": "Được thiết kế cho các ứng dụng dược phẩm, phòng thí nghiệm và chăm sóc sức khỏe, nhãn Chuỗi Lạnh & Nhiệt độ Siêu thấp của chúng tôi mang lại khả năng nhận dạng đáng tin cậy từ kho lạnh đến môi trường nitơ lỏng. Được thiết kế để chịu được đông lạnh, rã đông và điều kiện siêu lạnh, nhãn vẫn bám dính chắc chắn và dễ đọc trong suốt vòng đời sản phẩm.",
-    "th": "ออกแบบมาสำหรับงานด้านเภสัชกรรม ห้องปฏิบัติการ และการดูแลสุขภาพ ฉลากโซ่ความเย็นและอุณหภูมิต่ำยิ่งยวดของเราให้การระบุที่เชื่อถือได้ตั้งแต่การจัดเก็บแบบแช่เย็นไปจนถึงสภาพแวดล้อมไนโตรเจนเหลว ออกแบบให้ทนต่อการแช่แข็ง การละลาย และสภาวะเย็นยิ่งยวด ฉลากยังคงยึดติดแน่นและอ่านได้ชัดเจนตลอดวงจรชีวิตของผลิตภัณฑ์"
-  },
-  "why": {
-    "heading": {
-      "en": "Why Low Temperature Resistant Labeling?",
-      "zh": "为什么选择耐低温标签？",
-      "vi": "Tại sao chọn nhãn chịu nhiệt độ thấp?",
-      "th": "ทำไมต้องเลือกฉลากทนอุณหภูมิต่ำ?"
-    },
-    "intro": {
-      "en": "Low-temperature applications require labels engineered for demanding environments. From refrigerated pharmaceuticals to cryogenic biobanking, the right label ensures secure adhesion, durable printing, and reliable barcode readability throughout storage, transportation, and laboratory workflows.",
-      "zh": "低温应用需要专为严苛环境设计的标签。从医药冷链到液氮样本保存，合适的标签能够在储存、运输及实验室应用过程中持续保持牢固粘接、清晰打印和可靠识别。",
-      "vi": "Các ứng dụng ở nhiệt độ thấp đòi hỏi nhãn được thiết kế cho môi trường khắc nghiệt. Từ dược phẩm bảo quản lạnh đến ngân hàng sinh học siêu lạnh, nhãn phù hợp đảm bảo bám dính chắc chắn, in ấn bền bỉ và khả năng đọc mã vạch đáng tin cậy trong suốt quá trình lưu trữ, vận chuyển và quy trình phòng thí nghiệm.",
-      "th": "งานที่อุณหภูมิต่ำต้องใช้ฉลากที่ออกแบบมาสำหรับสภาพแวดล้อมที่ท้าทาย ตั้งแต่เภสัชภัณฑ์แบบแช่เย็นไปจนถึงธนาคารชีวภาพแบบเย็นยิ่งยวด ฉลากที่เหมาะสมช่วยให้ยึดติดแน่น พิมพ์ทนทาน และอ่านบาร์โค้ดได้อย่างเชื่อถือได้ตลอดการจัดเก็บ การขนส่ง และกระบวนการในห้องปฏิบัติการ"
-    },
-    "items": {
-      "en": [
-        "Reliable performance from ambient to −196°C",
-        "Engineered for cryogenic, frozen, and refrigerated applications",
-        "Resistant to moisture, condensation, and freeze–thaw cycles",
-        "Durable barcode and thermal-transfer print quality",
-        "Designed for pharmaceutical, laboratory, and healthcare use"
-      ],
-      "zh": [
-        "覆盖常温至 −196°C 深低温环境",
-        "适用于液氮、冷冻及冷链应用",
-        "耐冷凝、耐潮湿及冷热循环",
-        "条码与热转印打印持久清晰",
-        "面向制药、生命科学、实验室及医疗行业"
-      ],
-      "vi": [
-        "Hiệu suất đáng tin cậy từ nhiệt độ môi trường đến −196°C",
-        "Được thiết kế cho các ứng dụng siêu lạnh, đông lạnh và bảo quản lạnh",
-        "Chống ẩm, ngưng tụ và chu kỳ đông–rã đông",
-        "Chất lượng in mã vạch và in truyền nhiệt bền bỉ",
-        "Được thiết kế cho ngành dược phẩm, phòng thí nghiệm và chăm sóc sức khỏe"
-      ],
-      "th": [
-        "ประสิทธิภาพที่เชื่อถือได้ตั้งแต่อุณหภูมิห้องจนถึง −196°C",
-        "ออกแบบสำหรับงานเย็นยิ่งยวด แช่แข็ง และแช่เย็น",
-        "ทนความชื้น การควบแน่น และวงจรแช่แข็ง–ละลาย",
-        "คุณภาพการพิมพ์บาร์โค้ดและการพิมพ์แบบถ่ายโอนความร้อนที่ทนทาน",
-        "ออกแบบสำหรับงานด้านเภสัชกรรม ห้องปฏิบัติการ และการดูแลสุขภาพ"
-      ]
-    }
-  },
-  "scenarios": {
-    "en": [
-      {
-        "icon": "❄️",
-        "temp": "Down to −196°C",
-        "process": "EF070806 · Liquid Nitrogen Storage",
-        "title": "Cryogenic Storage",
-        "desc": "Designed for long-term cryogenic preservation of high-value biological samples.",
-        "apps": [
-          "Biobanking",
-          "Cell & Gene Therapy",
-          "Tissue Banking",
-          "Stem Cell Storage"
-        ],
-        "containers": "Cryovials • Cryotubes • Cryoboxes • Vials",
-        "lo": -196,
-        "hi": -80,
-        "products_list": [
-          {
-            "name": "E-4802",
-            "material": "2mil transparent PO · permanent low-temp acrylic"
-          },
-          {
-            "name": "E-4812",
-            "material": "2mil white PO · permanent low-temp acrylic",
-            "url": "/products/item/e-4812/"
-          },
-          {
-            "name": "E-6333",
-            "material": "3mil white PE · rubber cryogenic adhesive"
-          }
-        ]
-      },
-      {
-        "icon": "❄️",
-        "temp": "−80°C to −20°C",
-        "process": "Frozen Storage & Transportation",
-        "title": "Frozen Samples & Clinical Logistics",
-        "desc": "Reliable identification for frozen samples throughout storage, handling, and dry ice transportation.",
-        "apps": [
-          "Clinical Trials",
-          "Laboratory Samples",
-          "Diagnostic Specimens",
-          "Dry Ice Shipping"
-        ],
-        "containers": "Cryovials • Sample Tubes • Sample Boxes • Shipping Containers",
-        "lo": -80,
-        "hi": -20,
-        "products_list": [
-          {
-            "name": "E-4813",
-            "material": "2mil white PP · low-temp balanced acrylic"
-          },
-          {
-            "name": "E-3635",
-            "material": "nylon wrap-around self-laminating label",
-            "url": "/products/item/e-3635/"
-          },
-          {
-            "name": "E-5532",
-            "material": "2mil white PO · low-migration medical PSA"
-          }
-        ]
-      },
-      {
-        "icon": "🩸",
-        "temp": "−40°C to 4°C",
-        "process": "Blood Processing & Storage",
-        "title": "Blood & Blood Products",
-        "desc": "Reliable labeling throughout blood collection, component processing, storage, transportation, and transfusion.",
-        "apps": [
-          "Whole Blood",
-          "Plasma",
-          "Platelets",
-          "Blood Products"
-        ],
-        "containers": "Blood Bags • Plasma Bags • Blood Collection Tubes • Sample Tubes",
-        "lo": -40,
-        "hi": 4,
-        "products_list": [
-          {
-            "name": "E-5532",
-            "material": "2mil white PO · low-migration medical PSA"
-          },
-          {
-            "name": "E-4533",
-            "material": "3mil thick white PP · blood-bag balanced acrylic"
-          }
-        ]
-      },
-      {
-        "icon": "💉",
-        "temp": "2°C to 8°C",
-        "process": "Refrigerated Cold Chain",
-        "title": "Vaccines & Injectable Pharmaceuticals",
-        "desc": "Designed for temperature-sensitive injectable pharmaceuticals throughout refrigerated storage and distribution.",
-        "apps": [
-          "Vaccines",
-          "Biologics",
-          "Injectable Drugs",
-          "Clinical Distribution"
-        ],
-        "containers": "Glass Vials • Prefilled Syringes • IV Bags • Cartridges",
-        "lo": 2,
-        "hi": 8,
-        "products_list": [
-          {
-            "name": "E-4232",
-            "material": "2mil medical synthetic paper · low-migration acrylic"
-          }
-        ]
-      },
-      {
-        "icon": "💊",
-        "temp": "15°C to 25°C",
-        "process": "Ambient Healthcare",
-        "title": "Pharmaceutical Packaging",
-        "desc": "Durable identification for pharmaceutical manufacturing, packaging, warehousing, and healthcare distribution.",
-        "apps": [
-          "Prescription Medicines",
-          "OTC Medicines",
-          "Diagnostic Reagents",
-          "Healthcare Products"
-        ],
-        "containers": "Medicine Bottles • Plastic Bottles • Reagent Bottles • Cartons",
-        "lo": 15,
-        "hi": 25,
-        "products_list": [
-          {
-            "name": "E-4532",
-            "material": "2mil thin white PP · low-tack acrylic",
-            "url": "/products/item/e-4532/"
-          }
-        ]
-      }
-    ],
-    "zh": [
-      {
-        "icon": "❄️",
-        "temp": "最低 −196°C",
-        "process": "EF070806 · 液氮保存",
-        "title": "液氮深低温存储",
-        "desc": "适用于高价值生物样本的长期液氮保存。",
-        "apps": [
-          "生物样本库",
-          "细胞与基因治疗",
-          "组织样本库",
-          "干细胞保存"
-        ],
-        "containers": "冻存管 • 冻存盒 • 西林瓶 • 样本瓶",
-        "lo": -196,
-        "hi": -80,
-        "products_list": [
-          {
-            "name": "E-4802",
-            "material": "2mil 透明 PO 面材 · 低温永久丙烯酸胶"
-          },
-          {
-            "name": "E-4812",
-            "material": "2mil 白色 PO 面材 · 低温永久丙烯酸胶",
-            "url": "/products/item/e-4812/"
-          },
-          {
-            "name": "E-6333",
-            "material": "3mil 白色 PE 面材 · 橡胶基超低温胶"
-          }
-        ]
-      },
-      {
-        "icon": "❄️",
-        "temp": "−80°C 至 −20°C",
-        "process": "冻存与运输",
-        "title": "冻存样本与临床物流",
-        "desc": "适用于实验室样本、临床样本及干冰运输全过程。",
-        "apps": [
-          "临床试验",
-          "实验室样本",
-          "检测样本",
-          "干冰运输"
-        ],
-        "containers": "冻存管 • 样本管 • 样本盒 • 冷链运输箱",
-        "lo": -80,
-        "hi": -20,
-        "products_list": [
-          {
-            "name": "E-4813",
-            "material": "2mil 白色 PP 面材 · 低温平衡丙烯酸胶"
-          },
-          {
-            "name": "E-3635",
-            "material": "尼龙环绕自覆膜标签",
-            "url": "/products/item/e-3635/"
-          },
-          {
-            "name": "E-5532",
-            "material": "2mil 白色 PO 面材 · 低迁移医用压敏胶"
-          }
-        ]
-      },
-      {
-        "icon": "🩸",
-        "temp": "−40°C 至 4°C",
-        "process": "血液处理与储存",
-        "title": "血液及血液制品",
-        "desc": "满足血液采集、成分分离、储存、运输及临床输注全过程的可靠标识需求。",
-        "apps": [
-          "全血",
-          "血浆",
-          "血小板",
-          "血液制品"
-        ],
-        "containers": "血袋 • 血浆袋 • 采血管 • 样本管",
-        "lo": -40,
-        "hi": 4,
-        "products_list": [
-          {
-            "name": "E-5532",
-            "material": "2mil 白色 PO 面材 · 低迁移医用压敏胶"
-          },
-          {
-            "name": "E-4533",
-            "material": "3mil 加厚白色 PP · 血袋专用平衡丙烯酸胶"
-          }
-        ]
-      },
-      {
-        "icon": "💉",
-        "temp": "2°C 至 8°C",
-        "process": "医药冷链",
-        "title": "疫苗与注射制剂",
-        "desc": "适用于疫苗、生物制剂及其他温控注射药物的冷链储运。",
-        "apps": [
-          "疫苗",
-          "生物制剂",
-          "注射制剂",
-          "临床配送"
-        ],
-        "containers": "西林瓶 • 预灌封注射器 • 输液袋 • 卡式瓶",
-        "lo": 2,
-        "hi": 8,
-        "products_list": [
-          {
-            "name": "E-4232",
-            "material": "2mil 医用合成纸 · 低析出丙烯酸胶"
-          }
-        ]
-      },
-      {
-        "icon": "💊",
-        "temp": "15°C 至 25°C",
-        "process": "常温医药",
-        "title": "医药包装",
-        "desc": "为药品、诊断试剂及医疗健康产品提供持久可靠的标识方案。",
-        "apps": [
-          "处方药",
-          "OTC 药品",
-          "诊断试剂",
-          "医疗健康产品"
-        ],
-        "containers": "药瓶 • 塑料瓶 • 试剂瓶 • 包装盒",
-        "lo": 15,
-        "hi": 25,
-        "products_list": [
-          {
-            "name": "E-4532",
-            "material": "2mil 超薄白色 PP · 低粘丙烯酸胶",
-            "url": "/products/item/e-4532/"
-          }
-        ]
-      }
-    ],
-    "vi": [
-      {
-        "icon": "❄️",
-        "temp": "Đến −196°C",
-        "process": "EF070806 · Lưu trữ nitơ lỏng",
-        "title": "Bảo quản siêu lạnh",
-        "desc": "Được thiết kế để bảo quản siêu lạnh lâu dài các mẫu sinh học có giá trị cao.",
-        "apps": [
-          "Ngân hàng sinh học",
-          "Liệu pháp tế bào và gen",
-          "Ngân hàng mô",
-          "Bảo quản tế bào gốc"
-        ],
-        "containers": "Ống đông lạnh • Ống cryo • Hộp đông lạnh • Lọ mẫu",
-        "lo": -196,
-        "hi": -80,
-        "products_list": [
-          {
-            "name": "E-4802",
-            "material": "PO trong suốt 2mil · keo acrylic nhiệt thấp vĩnh viễn"
-          },
-          {
-            "name": "E-4812",
-            "material": "PO trắng 2mil · keo acrylic nhiệt thấp vĩnh viễn",
-            "url": "/products/item/e-4812/"
-          },
-          {
-            "name": "E-6333",
-            "material": "PE trắng 3mil · keo cao su siêu lạnh"
-          }
-        ]
-      },
-      {
-        "icon": "❄️",
-        "temp": "−80°C đến −20°C",
-        "process": "Bảo quản và vận chuyển đông lạnh",
-        "title": "Mẫu đông lạnh & Logistics lâm sàng",
-        "desc": "Nhận dạng đáng tin cậy cho các mẫu đông lạnh trong suốt quá trình lưu trữ, xử lý và vận chuyển bằng đá khô.",
-        "apps": [
-          "Thử nghiệm lâm sàng",
-          "Mẫu phòng thí nghiệm",
-          "Mẫu chẩn đoán",
-          "Vận chuyển bằng đá khô"
-        ],
-        "containers": "Ống đông lạnh • Ống mẫu • Hộp mẫu • Thùng vận chuyển",
-        "lo": -80,
-        "hi": -20,
-        "products_list": [
-          {
-            "name": "E-4813",
-            "material": "PP trắng 2mil · keo acrylic cân bằng nhiệt thấp"
-          },
-          {
-            "name": "E-3635",
-            "material": "nhãn nylon quấn tự ép màng",
-            "url": "/products/item/e-3635/"
-          },
-          {
-            "name": "E-5532",
-            "material": "PO trắng 2mil · keo y tế ít di trú"
-          }
-        ]
-      },
-      {
-        "icon": "🩸",
-        "temp": "−40°C đến 4°C",
-        "process": "Xử lý và bảo quản máu",
-        "title": "Máu & Chế phẩm máu",
-        "desc": "Ghi nhãn đáng tin cậy trong suốt quá trình lấy máu, xử lý thành phần, lưu trữ, vận chuyển và truyền máu.",
-        "apps": [
-          "Máu toàn phần",
-          "Huyết tương",
-          "Tiểu cầu",
-          "Chế phẩm máu"
-        ],
-        "containers": "Túi máu • Túi huyết tương • Ống lấy máu • Ống mẫu",
-        "lo": -40,
-        "hi": 4,
-        "products_list": [
-          {
-            "name": "E-5532",
-            "material": "PO trắng 2mil · keo y tế ít di trú"
-          },
-          {
-            "name": "E-4533",
-            "material": "PP trắng dày 3mil · keo cân bằng cho túi máu"
-          }
-        ]
-      },
-      {
-        "icon": "💉",
-        "temp": "2°C đến 8°C",
-        "process": "Chuỗi lạnh bảo quản lạnh",
-        "title": "Vắc-xin & Dược phẩm tiêm",
-        "desc": "Được thiết kế cho các dược phẩm tiêm nhạy cảm với nhiệt độ trong suốt quá trình lưu trữ và phân phối lạnh.",
-        "apps": [
-          "Vắc-xin",
-          "Sinh phẩm",
-          "Thuốc tiêm",
-          "Phân phối lâm sàng"
-        ],
-        "containers": "Lọ thủy tinh • Bơm tiêm nạp sẵn • Túi truyền dịch • Ống thuốc",
-        "lo": 2,
-        "hi": 8,
-        "products_list": [
-          {
-            "name": "E-4232",
-            "material": "giấy tổng hợp y tế 2mil · keo acrylic ít di trú"
-          }
-        ]
-      },
-      {
-        "icon": "💊",
-        "temp": "15°C đến 25°C",
-        "process": "Chăm sóc sức khỏe ở nhiệt độ môi trường",
-        "title": "Bao bì dược phẩm",
-        "desc": "Nhận dạng bền bỉ cho sản xuất, đóng gói, lưu kho dược phẩm và phân phối chăm sóc sức khỏe.",
-        "apps": [
-          "Thuốc kê đơn",
-          "Thuốc không kê đơn",
-          "Thuốc thử chẩn đoán",
-          "Sản phẩm chăm sóc sức khỏe"
-        ],
-        "containers": "Chai thuốc • Chai nhựa • Chai thuốc thử • Hộp carton",
-        "lo": 15,
-        "hi": 25,
-        "products_list": [
-          {
-            "name": "E-4532",
-            "material": "PP trắng mỏng 2mil · keo acrylic độ dính thấp",
-            "url": "/products/item/e-4532/"
-          }
-        ]
-      }
-    ],
-    "th": [
-      {
-        "icon": "❄️",
-        "temp": "ต่ำถึง −196°C",
-        "process": "EF070806 · การจัดเก็บไนโตรเจนเหลว",
-        "title": "การจัดเก็บแบบเย็นยิ่งยวด",
-        "desc": "ออกแบบสำหรับการเก็บรักษาแบบเย็นยิ่งยวดในระยะยาวของตัวอย่างชีวภาพที่มีมูลค่าสูง",
-        "apps": [
-          "ธนาคารชีวภาพ",
-          "การบำบัดด้วยเซลล์และยีน",
-          "ธนาคารเนื้อเยื่อ",
-          "การจัดเก็บเซลล์ต้นกำเนิด"
-        ],
-        "containers": "หลอดไครโอ • หลอดแช่แข็ง • กล่องไครโอ • ขวดตัวอย่าง",
-        "lo": -196,
-        "hi": -80,
-        "products_list": [
-          {
-            "name": "E-4802",
-            "material": "PO ใส 2mil · กาวอะคริลิกอุณหภูมิต่ำถาวร"
-          },
-          {
-            "name": "E-4812",
-            "material": "PO ขาว 2mil · กาวอะคริลิกอุณหภูมิต่ำถาวร",
-            "url": "/products/item/e-4812/"
-          },
-          {
-            "name": "E-6333",
-            "material": "PE ขาว 3mil · กาวยางอุณหภูมิต่ำยิ่งยวด"
-          }
-        ]
-      },
-      {
-        "icon": "❄️",
-        "temp": "−80°C ถึง −20°C",
-        "process": "การจัดเก็บและขนส่งแบบแช่แข็ง",
-        "title": "ตัวอย่างแช่แข็งและโลจิสติกส์ทางคลินิก",
-        "desc": "การระบุที่เชื่อถือได้สำหรับตัวอย่างแช่แข็งตลอดการจัดเก็บ การจัดการ และการขนส่งด้วยน้ำแข็งแห้ง",
-        "apps": [
-          "การทดลองทางคลินิก",
-          "ตัวอย่างห้องปฏิบัติการ",
-          "ตัวอย่างตรวจวินิจฉัย",
-          "การขนส่งด้วยน้ำแข็งแห้ง"
-        ],
-        "containers": "หลอดไครโอ • หลอดตัวอย่าง • กล่องตัวอย่าง • ภาชนะขนส่ง",
-        "lo": -80,
-        "hi": -20,
-        "products_list": [
-          {
-            "name": "E-4813",
-            "material": "PP ขาว 2mil · กาวอะคริลิกสมดุลอุณหภูมิต่ำ"
-          },
-          {
-            "name": "E-3635",
-            "material": "ฉลากไนลอนพันรอบเคลือบตัวเอง",
-            "url": "/products/item/e-3635/"
-          },
-          {
-            "name": "E-5532",
-            "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
-          }
-        ]
-      },
-      {
-        "icon": "🩸",
-        "temp": "−40°C ถึง 4°C",
-        "process": "การแปรรูปและจัดเก็บเลือด",
-        "title": "เลือดและผลิตภัณฑ์จากเลือด",
-        "desc": "การติดฉลากที่เชื่อถือได้ตลอดการเก็บเลือด การแยกส่วนประกอบ การจัดเก็บ การขนส่ง และการถ่ายเลือด",
-        "apps": [
-          "เลือดครบส่วน",
-          "พลาสมา",
-          "เกล็ดเลือด",
-          "ผลิตภัณฑ์จากเลือด"
-        ],
-        "containers": "ถุงเลือด • ถุงพลาสมา • หลอดเก็บเลือด • หลอดตัวอย่าง",
-        "lo": -40,
-        "hi": 4,
-        "products_list": [
-          {
-            "name": "E-5532",
-            "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
-          },
-          {
-            "name": "E-4533",
-            "material": "PP ขาวหนา 3mil · กาวสมดุลสำหรับถุงเลือด"
-          }
-        ]
-      },
-      {
-        "icon": "💉",
-        "temp": "2°C ถึง 8°C",
-        "process": "โซ่ความเย็นแบบแช่เย็น",
-        "title": "วัคซีนและยาฉีด",
-        "desc": "ออกแบบสำหรับยาฉีดที่ไวต่ออุณหภูมิตลอดการจัดเก็บและการกระจายแบบแช่เย็น",
-        "apps": [
-          "วัคซีน",
-          "ชีววัตถุ",
-          "ยาฉีด",
-          "การกระจายทางคลินิก"
-        ],
-        "containers": "ขวดแก้ว • เข็มฉีดยาบรรจุสำเร็จ • ถุงน้ำเกลือ • หลอดยา",
-        "lo": 2,
-        "hi": 8,
-        "products_list": [
-          {
-            "name": "E-4232",
-            "material": "กระดาษสังเคราะห์การแพทย์ 2mil · กาวอะคริลิกการย้ายต่ำ"
-          }
-        ]
-      },
-      {
-        "icon": "💊",
-        "temp": "15°C ถึง 25°C",
-        "process": "การดูแลสุขภาพที่อุณหภูมิห้อง",
-        "title": "บรรจุภัณฑ์เภสัชกรรม",
-        "desc": "การระบุที่ทนทานสำหรับการผลิต การบรรจุ การจัดเก็บเภสัชภัณฑ์ และการกระจายด้านการดูแลสุขภาพ",
-        "apps": [
-          "ยาตามใบสั่งแพทย์",
-          "ยาที่ซื้อได้เอง",
-          "น้ำยาตรวจวินิจฉัย",
-          "ผลิตภัณฑ์ดูแลสุขภาพ"
-        ],
-        "containers": "ขวดยา • ขวดพลาสติก • ขวดน้ำยา • กล่องกระดาษ",
-        "lo": 15,
-        "hi": 25,
-        "products_list": [
-          {
-            "name": "E-4532",
-            "material": "PP ขาวบาง 2mil · กาวอะคริลิกแรงยึดต่ำ",
-            "url": "/products/item/e-4532/"
-          }
-        ]
-      }
-    ]
+  "items": {
+   "en": [
+    "Reliable performance from ambient to −196°C",
+    "Engineered for cryogenic, frozen, and refrigerated applications",
+    "Resistant to moisture, condensation, and freeze–thaw cycles",
+    "Durable barcode and thermal-transfer print quality",
+    "Designed for pharmaceutical, laboratory, and healthcare use"
+   ],
+   "zh": [
+    "覆盖常温至 −196°C 深低温环境",
+    "适用于液氮、冷冻及冷链应用",
+    "耐冷凝、耐潮湿及冷热循环",
+    "条码与热转印打印持久清晰",
+    "面向制药、生命科学、实验室及医疗行业"
+   ],
+   "vi": [
+    "Hiệu suất đáng tin cậy từ nhiệt độ môi trường đến −196°C",
+    "Được thiết kế cho các ứng dụng siêu lạnh, đông lạnh và bảo quản lạnh",
+    "Chống ẩm, ngưng tụ và chu kỳ đông–rã đông",
+    "Chất lượng in mã vạch và in truyền nhiệt bền bỉ",
+    "Được thiết kế cho ngành dược phẩm, phòng thí nghiệm và chăm sóc sức khỏe"
+   ],
+   "th": [
+    "ประสิทธิภาพที่เชื่อถือได้ตั้งแต่อุณหภูมิห้องจนถึง −196°C",
+    "ออกแบบสำหรับงานเย็นยิ่งยวด แช่แข็ง และแช่เย็น",
+    "ทนความชื้น การควบแน่น และวงจรแช่แข็ง–ละลาย",
+    "คุณภาพการพิมพ์บาร์โค้ดและการพิมพ์แบบถ่ายโอนความร้อนที่ทนทาน",
+    "ออกแบบสำหรับงานด้านเภสัชกรรม ห้องปฏิบัติการ และการดูแลสุขภาพ"
+   ]
   }
+ },
+ "scenarios": {
+  "en": [
+   {
+    "icon": "❄️",
+    "temp": "Down to −196°C",
+    "process": "EF070806 · Liquid Nitrogen Storage",
+    "title": "Cryogenic Storage",
+    "desc": "Designed for long-term cryogenic preservation of high-value biological samples.",
+    "apps": [
+     "Biobanking",
+     "Cell & Gene Therapy",
+     "Tissue Banking",
+     "Stem Cell Storage"
+    ],
+    "containers": "Cryovials • Cryotubes • Cryoboxes • Vials",
+    "lo": -196,
+    "hi": -80,
+    "products_list": [
+     {
+      "name": "E-4802",
+      "material": "2mil transparent PO · permanent low-temp acrylic"
+     },
+     {
+      "name": "E-4812",
+      "material": "2mil white PO · permanent low-temp acrylic",
+      "url": "/products/item/e-4812/"
+     },
+     {
+      "name": "E-6333",
+      "material": "3mil white PE · rubber cryogenic adhesive"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-196.jpg"
+   },
+   {
+    "icon": "❄️",
+    "temp": "−80°C to −20°C",
+    "process": "Frozen Storage & Transportation",
+    "title": "Frozen Samples & Clinical Logistics",
+    "desc": "Reliable identification for frozen samples throughout storage, handling, and dry ice transportation.",
+    "apps": [
+     "Clinical Trials",
+     "Laboratory Samples",
+     "Diagnostic Specimens",
+     "Dry Ice Shipping"
+    ],
+    "containers": "Cryovials • Sample Tubes • Sample Boxes • Shipping Containers",
+    "lo": -80,
+    "hi": -20,
+    "products_list": [
+     {
+      "name": "E-4813",
+      "material": "2mil white PP · low-temp balanced acrylic"
+     },
+     {
+      "name": "E-3635",
+      "material": "nylon wrap-around self-laminating label",
+      "url": "/products/item/e-3635/"
+     },
+     {
+      "name": "E-5532",
+      "material": "2mil white PO · low-migration medical PSA"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-80C.jpg"
+   },
+   {
+    "icon": "🩸",
+    "temp": "−40°C to 4°C",
+    "process": "Blood Processing & Storage",
+    "title": "Blood & Blood Products",
+    "desc": "Reliable labeling throughout blood collection, component processing, storage, transportation, and transfusion.",
+    "apps": [
+     "Whole Blood",
+     "Plasma",
+     "Platelets",
+     "Blood Products"
+    ],
+    "containers": "Blood Bags • Plasma Bags • Blood Collection Tubes • Sample Tubes",
+    "lo": -40,
+    "hi": 4,
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "2mil white PO · low-migration medical PSA"
+     },
+     {
+      "name": "E-4533",
+      "material": "3mil thick white PP · blood-bag balanced acrylic"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-40.jpg"
+   },
+   {
+    "icon": "💉",
+    "temp": "2°C to 8°C",
+    "process": "Refrigerated Cold Chain",
+    "title": "Vaccines & Injectable Pharmaceuticals",
+    "desc": "Designed for temperature-sensitive injectable pharmaceuticals throughout refrigerated storage and distribution.",
+    "apps": [
+     "Vaccines",
+     "Biologics",
+     "Injectable Drugs",
+     "Clinical Distribution"
+    ],
+    "containers": "Glass Vials • Prefilled Syringes • IV Bags • Cartridges",
+    "lo": 2,
+    "hi": 8,
+    "products_list": [
+     {
+      "name": "E-4232",
+      "material": "2mil medical synthetic paper · low-migration acrylic"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-5.jpg"
+   },
+   {
+    "icon": "💊",
+    "temp": "15°C to 25°C",
+    "process": "Ambient Healthcare",
+    "title": "Pharmaceutical Packaging",
+    "desc": "Durable identification for pharmaceutical manufacturing, packaging, warehousing, and healthcare distribution.",
+    "apps": [
+     "Prescription Medicines",
+     "OTC Medicines",
+     "Diagnostic Reagents",
+     "Healthcare Products"
+    ],
+    "containers": "Medicine Bottles • Plastic Bottles • Reagent Bottles • Cartons",
+    "lo": 15,
+    "hi": 25,
+    "products_list": [
+     {
+      "name": "E-4532",
+      "material": "2mil thin white PP · low-tack acrylic",
+      "url": "/products/item/e-4532/"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD%2025C.jpg"
+   }
+  ],
+  "zh": [
+   {
+    "icon": "❄️",
+    "temp": "最低 −196°C",
+    "process": "EF070806 · 液氮保存",
+    "title": "液氮深低温存储",
+    "desc": "适用于高价值生物样本的长期液氮保存。",
+    "apps": [
+     "生物样本库",
+     "细胞与基因治疗",
+     "组织样本库",
+     "干细胞保存"
+    ],
+    "containers": "冻存管 • 冻存盒 • 西林瓶 • 样本瓶",
+    "lo": -196,
+    "hi": -80,
+    "products_list": [
+     {
+      "name": "E-4802",
+      "material": "2mil 透明 PO 面材 · 低温永久丙烯酸胶"
+     },
+     {
+      "name": "E-4812",
+      "material": "2mil 白色 PO 面材 · 低温永久丙烯酸胶",
+      "url": "/products/item/e-4812/"
+     },
+     {
+      "name": "E-6333",
+      "material": "3mil 白色 PE 面材 · 橡胶基超低温胶"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-196.jpg"
+   },
+   {
+    "icon": "❄️",
+    "temp": "−80°C 至 −20°C",
+    "process": "冻存与运输",
+    "title": "冻存样本与临床物流",
+    "desc": "适用于实验室样本、临床样本及干冰运输全过程。",
+    "apps": [
+     "临床试验",
+     "实验室样本",
+     "检测样本",
+     "干冰运输"
+    ],
+    "containers": "冻存管 • 样本管 • 样本盒 • 冷链运输箱",
+    "lo": -80,
+    "hi": -20,
+    "products_list": [
+     {
+      "name": "E-4813",
+      "material": "2mil 白色 PP 面材 · 低温平衡丙烯酸胶"
+     },
+     {
+      "name": "E-3635",
+      "material": "尼龙环绕自覆膜标签",
+      "url": "/products/item/e-3635/"
+     },
+     {
+      "name": "E-5532",
+      "material": "2mil 白色 PO 面材 · 低迁移医用压敏胶"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-80C.jpg"
+   },
+   {
+    "icon": "🩸",
+    "temp": "−40°C 至 4°C",
+    "process": "血液处理与储存",
+    "title": "血液及血液制品",
+    "desc": "满足血液采集、成分分离、储存、运输及临床输注全过程的可靠标识需求。",
+    "apps": [
+     "全血",
+     "血浆",
+     "血小板",
+     "血液制品"
+    ],
+    "containers": "血袋 • 血浆袋 • 采血管 • 样本管",
+    "lo": -40,
+    "hi": 4,
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "2mil 白色 PO 面材 · 低迁移医用压敏胶"
+     },
+     {
+      "name": "E-4533",
+      "material": "3mil 加厚白色 PP · 血袋专用平衡丙烯酸胶"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-40.jpg"
+   },
+   {
+    "icon": "💉",
+    "temp": "2°C 至 8°C",
+    "process": "医药冷链",
+    "title": "疫苗与注射制剂",
+    "desc": "适用于疫苗、生物制剂及其他温控注射药物的冷链储运。",
+    "apps": [
+     "疫苗",
+     "生物制剂",
+     "注射制剂",
+     "临床配送"
+    ],
+    "containers": "西林瓶 • 预灌封注射器 • 输液袋 • 卡式瓶",
+    "lo": 2,
+    "hi": 8,
+    "products_list": [
+     {
+      "name": "E-4232",
+      "material": "2mil 医用合成纸 · 低析出丙烯酸胶"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-5.jpg"
+   },
+   {
+    "icon": "💊",
+    "temp": "15°C 至 25°C",
+    "process": "常温医药",
+    "title": "医药包装",
+    "desc": "为药品、诊断试剂及医疗健康产品提供持久可靠的标识方案。",
+    "apps": [
+     "处方药",
+     "OTC 药品",
+     "诊断试剂",
+     "医疗健康产品"
+    ],
+    "containers": "药瓶 • 塑料瓶 • 试剂瓶 • 包装盒",
+    "lo": 15,
+    "hi": 25,
+    "products_list": [
+     {
+      "name": "E-4532",
+      "material": "2mil 超薄白色 PP · 低粘丙烯酸胶",
+      "url": "/products/item/e-4532/"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD%2025C.jpg"
+   }
+  ],
+  "vi": [
+   {
+    "icon": "❄️",
+    "temp": "Đến −196°C",
+    "process": "EF070806 · Lưu trữ nitơ lỏng",
+    "title": "Bảo quản siêu lạnh",
+    "desc": "Được thiết kế để bảo quản siêu lạnh lâu dài các mẫu sinh học có giá trị cao.",
+    "apps": [
+     "Ngân hàng sinh học",
+     "Liệu pháp tế bào và gen",
+     "Ngân hàng mô",
+     "Bảo quản tế bào gốc"
+    ],
+    "containers": "Ống đông lạnh • Ống cryo • Hộp đông lạnh • Lọ mẫu",
+    "lo": -196,
+    "hi": -80,
+    "products_list": [
+     {
+      "name": "E-4802",
+      "material": "PO trong suốt 2mil · keo acrylic nhiệt thấp vĩnh viễn"
+     },
+     {
+      "name": "E-4812",
+      "material": "PO trắng 2mil · keo acrylic nhiệt thấp vĩnh viễn",
+      "url": "/products/item/e-4812/"
+     },
+     {
+      "name": "E-6333",
+      "material": "PE trắng 3mil · keo cao su siêu lạnh"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-196.jpg"
+   },
+   {
+    "icon": "❄️",
+    "temp": "−80°C đến −20°C",
+    "process": "Bảo quản và vận chuyển đông lạnh",
+    "title": "Mẫu đông lạnh & Logistics lâm sàng",
+    "desc": "Nhận dạng đáng tin cậy cho các mẫu đông lạnh trong suốt quá trình lưu trữ, xử lý và vận chuyển bằng đá khô.",
+    "apps": [
+     "Thử nghiệm lâm sàng",
+     "Mẫu phòng thí nghiệm",
+     "Mẫu chẩn đoán",
+     "Vận chuyển bằng đá khô"
+    ],
+    "containers": "Ống đông lạnh • Ống mẫu • Hộp mẫu • Thùng vận chuyển",
+    "lo": -80,
+    "hi": -20,
+    "products_list": [
+     {
+      "name": "E-4813",
+      "material": "PP trắng 2mil · keo acrylic cân bằng nhiệt thấp"
+     },
+     {
+      "name": "E-3635",
+      "material": "nhãn nylon quấn tự ép màng",
+      "url": "/products/item/e-3635/"
+     },
+     {
+      "name": "E-5532",
+      "material": "PO trắng 2mil · keo y tế ít di trú"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-80C.jpg"
+   },
+   {
+    "icon": "🩸",
+    "temp": "−40°C đến 4°C",
+    "process": "Xử lý và bảo quản máu",
+    "title": "Máu & Chế phẩm máu",
+    "desc": "Ghi nhãn đáng tin cậy trong suốt quá trình lấy máu, xử lý thành phần, lưu trữ, vận chuyển và truyền máu.",
+    "apps": [
+     "Máu toàn phần",
+     "Huyết tương",
+     "Tiểu cầu",
+     "Chế phẩm máu"
+    ],
+    "containers": "Túi máu • Túi huyết tương • Ống lấy máu • Ống mẫu",
+    "lo": -40,
+    "hi": 4,
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "PO trắng 2mil · keo y tế ít di trú"
+     },
+     {
+      "name": "E-4533",
+      "material": "PP trắng dày 3mil · keo cân bằng cho túi máu"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-40.jpg"
+   },
+   {
+    "icon": "💉",
+    "temp": "2°C đến 8°C",
+    "process": "Chuỗi lạnh bảo quản lạnh",
+    "title": "Vắc-xin & Dược phẩm tiêm",
+    "desc": "Được thiết kế cho các dược phẩm tiêm nhạy cảm với nhiệt độ trong suốt quá trình lưu trữ và phân phối lạnh.",
+    "apps": [
+     "Vắc-xin",
+     "Sinh phẩm",
+     "Thuốc tiêm",
+     "Phân phối lâm sàng"
+    ],
+    "containers": "Lọ thủy tinh • Bơm tiêm nạp sẵn • Túi truyền dịch • Ống thuốc",
+    "lo": 2,
+    "hi": 8,
+    "products_list": [
+     {
+      "name": "E-4232",
+      "material": "giấy tổng hợp y tế 2mil · keo acrylic ít di trú"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-5.jpg"
+   },
+   {
+    "icon": "💊",
+    "temp": "15°C đến 25°C",
+    "process": "Chăm sóc sức khỏe ở nhiệt độ môi trường",
+    "title": "Bao bì dược phẩm",
+    "desc": "Nhận dạng bền bỉ cho sản xuất, đóng gói, lưu kho dược phẩm và phân phối chăm sóc sức khỏe.",
+    "apps": [
+     "Thuốc kê đơn",
+     "Thuốc không kê đơn",
+     "Thuốc thử chẩn đoán",
+     "Sản phẩm chăm sóc sức khỏe"
+    ],
+    "containers": "Chai thuốc • Chai nhựa • Chai thuốc thử • Hộp carton",
+    "lo": 15,
+    "hi": 25,
+    "products_list": [
+     {
+      "name": "E-4532",
+      "material": "PP trắng mỏng 2mil · keo acrylic độ dính thấp",
+      "url": "/products/item/e-4532/"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD%2025C.jpg"
+   }
+  ],
+  "th": [
+   {
+    "icon": "❄️",
+    "temp": "ต่ำถึง −196°C",
+    "process": "EF070806 · การจัดเก็บไนโตรเจนเหลว",
+    "title": "การจัดเก็บแบบเย็นยิ่งยวด",
+    "desc": "ออกแบบสำหรับการเก็บรักษาแบบเย็นยิ่งยวดในระยะยาวของตัวอย่างชีวภาพที่มีมูลค่าสูง",
+    "apps": [
+     "ธนาคารชีวภาพ",
+     "การบำบัดด้วยเซลล์และยีน",
+     "ธนาคารเนื้อเยื่อ",
+     "การจัดเก็บเซลล์ต้นกำเนิด"
+    ],
+    "containers": "หลอดไครโอ • หลอดแช่แข็ง • กล่องไครโอ • ขวดตัวอย่าง",
+    "lo": -196,
+    "hi": -80,
+    "products_list": [
+     {
+      "name": "E-4802",
+      "material": "PO ใส 2mil · กาวอะคริลิกอุณหภูมิต่ำถาวร"
+     },
+     {
+      "name": "E-4812",
+      "material": "PO ขาว 2mil · กาวอะคริลิกอุณหภูมิต่ำถาวร",
+      "url": "/products/item/e-4812/"
+     },
+     {
+      "name": "E-6333",
+      "material": "PE ขาว 3mil · กาวยางอุณหภูมิต่ำยิ่งยวด"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-196.jpg"
+   },
+   {
+    "icon": "❄️",
+    "temp": "−80°C ถึง −20°C",
+    "process": "การจัดเก็บและขนส่งแบบแช่แข็ง",
+    "title": "ตัวอย่างแช่แข็งและโลจิสติกส์ทางคลินิก",
+    "desc": "การระบุที่เชื่อถือได้สำหรับตัวอย่างแช่แข็งตลอดการจัดเก็บ การจัดการ และการขนส่งด้วยน้ำแข็งแห้ง",
+    "apps": [
+     "การทดลองทางคลินิก",
+     "ตัวอย่างห้องปฏิบัติการ",
+     "ตัวอย่างตรวจวินิจฉัย",
+     "การขนส่งด้วยน้ำแข็งแห้ง"
+    ],
+    "containers": "หลอดไครโอ • หลอดตัวอย่าง • กล่องตัวอย่าง • ภาชนะขนส่ง",
+    "lo": -80,
+    "hi": -20,
+    "products_list": [
+     {
+      "name": "E-4813",
+      "material": "PP ขาว 2mil · กาวอะคริลิกสมดุลอุณหภูมิต่ำ"
+     },
+     {
+      "name": "E-3635",
+      "material": "ฉลากไนลอนพันรอบเคลือบตัวเอง",
+      "url": "/products/item/e-3635/"
+     },
+     {
+      "name": "E-5532",
+      "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-80C.jpg"
+   },
+   {
+    "icon": "🩸",
+    "temp": "−40°C ถึง 4°C",
+    "process": "การแปรรูปและจัดเก็บเลือด",
+    "title": "เลือดและผลิตภัณฑ์จากเลือด",
+    "desc": "การติดฉลากที่เชื่อถือได้ตลอดการเก็บเลือด การแยกส่วนประกอบ การจัดเก็บ การขนส่ง และการถ่ายเลือด",
+    "apps": [
+     "เลือดครบส่วน",
+     "พลาสมา",
+     "เกล็ดเลือด",
+     "ผลิตภัณฑ์จากเลือด"
+    ],
+    "containers": "ถุงเลือด • ถุงพลาสมา • หลอดเก็บเลือด • หลอดตัวอย่าง",
+    "lo": -40,
+    "hi": 4,
+    "products_list": [
+     {
+      "name": "E-5532",
+      "material": "PO ขาว 2mil · กาวแพทย์การย้ายต่ำ"
+     },
+     {
+      "name": "E-4533",
+      "material": "PP ขาวหนา 3mil · กาวสมดุลสำหรับถุงเลือด"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-40.jpg"
+   },
+   {
+    "icon": "💉",
+    "temp": "2°C ถึง 8°C",
+    "process": "โซ่ความเย็นแบบแช่เย็น",
+    "title": "วัคซีนและยาฉีด",
+    "desc": "ออกแบบสำหรับยาฉีดที่ไวต่ออุณหภูมิตลอดการจัดเก็บและการกระจายแบบแช่เย็น",
+    "apps": [
+     "วัคซีน",
+     "ชีววัตถุ",
+     "ยาฉีด",
+     "การกระจายทางคลินิก"
+    ],
+    "containers": "ขวดแก้ว • เข็มฉีดยาบรรจุสำเร็จ • ถุงน้ำเกลือ • หลอดยา",
+    "lo": 2,
+    "hi": 8,
+    "products_list": [
+     {
+      "name": "E-4232",
+      "material": "กระดาษสังเคราะห์การแพทย์ 2mil · กาวอะคริลิกการย้ายต่ำ"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD-5.jpg"
+   },
+   {
+    "icon": "💊",
+    "temp": "15°C ถึง 25°C",
+    "process": "การดูแลสุขภาพที่อุณหภูมิห้อง",
+    "title": "บรรจุภัณฑ์เภสัชกรรม",
+    "desc": "การระบุที่ทนทานสำหรับการผลิต การบรรจุ การจัดเก็บเภสัชภัณฑ์ และการกระจายด้านการดูแลสุขภาพ",
+    "apps": [
+     "ยาตามใบสั่งแพทย์",
+     "ยาที่ซื้อได้เอง",
+     "น้ำยาตรวจวินิจฉัย",
+     "ผลิตภัณฑ์ดูแลสุขภาพ"
+    ],
+    "containers": "ขวดยา • ขวดพลาสติก • ขวดน้ำยา • กล่องกระดาษ",
+    "lo": 15,
+    "hi": 25,
+    "products_list": [
+     {
+      "name": "E-4532",
+      "material": "PP ขาวบาง 2mil · กาวอะคริลิกแรงยึดต่ำ",
+      "url": "/products/item/e-4532/"
+     }
+    ],
+    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/COLD%2025C.jpg"
+   }
+  ]
+ }
 }
