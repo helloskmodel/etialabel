@@ -1552,18 +1552,15 @@ BANNER_HOME = _BN + "HOMEPAGE-BANNER"
 BANNER_APPLICATION = _BN + "SOLUTION-BANNERNEW"
 # Insights & Service heroes use a PER-LANGUAGE banner (client supplies one image
 # per language). File convention: <stem>-<lang> with lang in en/zh/vi/th.
-# Insights uses a PER-LANGUAGE banner (client supplies one image per language,
-# convention insightbanner-<lang>). Service uses ONE banner for all languages.
-BANNER_INSIGHT_L = {l: _BN + "insightbanner-" + l for l in ("en", "zh", "vi", "th")}
-BANNER_INSIGHT = BANNER_INSIGHT_L["en"]   # default / fallback
-BANNER_SERVICE = _BN + "servicebanner"    # single image, all languages
+# Single banner per page, all languages (kept simple).
+BANNER_INSIGHT = _BN + "insightbanner-en"
+BANNER_SERVICE = _BN + "servicebanner"
 HOME_BG = [BANNER_HOME, "", "", "", ""]
 # section_hero idx: 0=Products, 1=Applications, 2=Insights, 3=Service
 SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
 
 def section_banner(idx, lang):
-    """Language-aware hero background for section pages (Insights only; falls back to EN)."""
-    if idx == 2: return BANNER_INSIGHT_L.get(lang, BANNER_INSIGHT_L["en"])
+    """Hero background for a section page (single image, all languages)."""
     return SECTION_BG.get(idx, "")
 
 def hero_cta(lang):
@@ -1694,6 +1691,53 @@ def home_hero(lang):
         '<h1>' + esc(head) + '</h1><p class="hsub">' + esc(sub) + '</p>'
         '<div class="hhero-cta"><a class="hhbtn pri" href="' + home_hlink(lang,"/products/find/") + '">' + esc(c1) + '</a>'
         '<a class="hhbtn gho" href="' + home_hlink(lang,"/contact/") + '">' + esc(c2) + '</a></div></div>'
+        '<div class="hhwin" id="hhwin">' + slides + '<div class="hhdots" id="hhdots">' + dots + '</div></div>'
+        '</div></section>' + script)
+
+# Solutions hero — same Home-page look (light gradient, navy headline, green sub,
+# rotating window), keeping the existing Solutions slogan. The window cycles the
+# operating-condition photos: high temperature / low temperature / chemical /
+# sterilization (each links to its solution page).
+_SOL_HERO_ITEMS = [
+    ("/products/item/high-heat-identification/", _COS + "APPLICATION%20/enviroment-heat",
+     ("High Temperature", "高温", "Nhiệt độ cao", "อุณหภูมิสูง")),
+    ("/products/item/cold-chain-cryogenic-labels/", _COS + "APPLICATION%20/enviroment-cold",
+     ("Low Temperature", "低温", "Nhiệt độ thấp", "อุณหภูมิต่ำ")),
+    ("/products/item/chemical-resistant-labels/", _COS + "APPLICATION%20/enviroment-chemical",
+     ("Chemical", "化学", "Hóa chất", "สารเคมี")),
+    ("/products/item/sterilization-labels/", _COS + "APPLICATION%20/enviroment-sterlization",
+     ("Sterilization", "消毒灭菌", "Tiệt trùng", "การฆ่าเชื้อ")),
+]
+
+def solutions_hero(lang):
+    j = JX[lang]
+    s = HOME2.get(lang, HOME2["en"])["sections"][1]   # keep existing Solutions slogan
+    pill_txt = s["eyebrow"]; head = s["h2"]; sub = s["sub"]
+    c1 = P(lang, "Find a label material →", "查找标签材料 →", "Tìm vật liệu nhãn →", "ค้นหาวัสดุฉลาก →")
+    c2 = P(lang, "Talk to us", "联系我们", "Liên hệ với chúng tôi", "ติดต่อเรา")
+    slides, dots = "", ""
+    for k, (url, img, nm) in enumerate(_SOL_HERO_ITEMS):
+        on = " on" if k == 0 else ""
+        fp = ' fetchpriority="high"' if k == 0 else ''
+        slides += ('<a class="hhslide%s" href="%s" aria-label="%s"><img src="%s" alt="%s" loading="%s"%s onerror="this.style.display=\'none\'"></a>') % (
+            on, Lx(lang, url), esc(nm[j]), esc(img), esc(nm[j]), "eager" if k == 0 else "lazy", fp)
+        dots += '<i class="%s"></i>' % ("on" if k == 0 else "")
+    check = '<span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>'
+    script = ("<script>(function(){var w=document.getElementById('hhwin');if(!w)return;"
+              "var s=w.querySelectorAll('.hhslide'),d=w.querySelectorAll('.hhdots i'),i=0;"
+              "function go(n){i=((n%s.length)+s.length)%s.length;"
+              "s.forEach(function(x,k){x.classList.toggle('on',k===i);});"
+              "d.forEach(function(x,k){x.classList.toggle('on',k===i);});}"
+              "d.forEach(function(x,k){x.addEventListener('click',function(){go(k);});});"
+              "if(!window.matchMedia||!matchMedia('(prefers-reduced-motion:reduce)').matches)"
+              "setInterval(function(){go(i+1);},3800);})();</script>")
+    preload = '<link rel="preload" as="image" href="%s" fetchpriority="high">' % esc(_SOL_HERO_ITEMS[0][1])
+    return (preload + _HOME_HERO_CSS +
+        '<section class="hhero"><div class="wrap hhero-in">'
+        '<div class="hhero-copy"><span class="hhero-pill">' + check + ' ' + esc(pill_txt) + '</span>'
+        '<h1>' + esc(head) + '</h1><p class="hsub">' + esc(sub) + '</p>'
+        '<div class="hhero-cta"><a class="hhbtn pri" href="' + Lx(lang, "/products/find/") + '">' + esc(c1) + '</a>'
+        '<a class="hhbtn gho" href="' + Lx(lang, "/contact/") + '">' + esc(c2) + '</a></div></div>'
         '<div class="hhwin" id="hhwin">' + slides + '<div class="hhdots" id="hhdots">' + dots + '</div></div>'
         '</div></section>' + script)
 
@@ -2545,9 +2589,9 @@ def build_applications(lang):
         P(lang,"APPLICATION NOTES","应用笔记","GHI CHÚ ỨNG DỤNG","บันทึกการใช้งาน"),
         P(lang,"Application Notes","应用笔记","Ghi chú ứng dụng","บันทึกการใช้งาน"),
         search_box, note_cards, nohit, filter_js, cta2(lang,"applications"))
-    # hero: rotating "working-conditions" banner cycling through harsh environments
-    s=HOME2.get(lang,HOME2["en"])["sections"][1]
-    hero=hero_carousel(lang, _SOL_SLIDES, s["eyebrow"], s["h2"], s["sub"])
+    # hero: Home-page-style hero (same light look, existing slogan) with a rotating
+    # window cycling the operating-condition photos (heat / cold / chemical / sterilization)
+    hero=solutions_hero(lang)
     body=home_trustbar(lang)+body   # 20-year trust bar under the hero
     crumb=[(P(lang,"Home","首页","Trang chủ","หน้าแรก"),"/"),(P(lang,"Solutions","方案","Giải pháp","โซลูชัน"),"/applications/")]
     write(lang,"/applications/",page(lang,"/applications/",
