@@ -718,10 +718,10 @@ BRAND_MENU = [
       "Nhãn PCB polyimide tự phát triển của ETIA — phổ thông, ESD & tháo rời",
       "ฉลาก PCB โพลีอิไมด์ที่ ETIA พัฒนาเอง — ทั่วไป, ESD และถอดได้")),
     ("/products/heatproof/", ("HEATPROOF", "HEATPROOF", "HEATPROOF", "HEATPROOF"),
-     ("ETIA extreme-temperature labels & tags (to 1200 °C)",
-      "ETIA 极端高温标签与标牌（至 1200 °C）",
-      "Nhãn & thẻ nhiệt độ cực cao của ETIA (đến 1200 °C)",
-      "ฉลากและแท็กอุณหภูมิสูงสุดของ ETIA (ถึง 1200 °C)")),
+     ("Extreme-temperature labels & tags (to 1200 °C)",
+      "极端高温标签与标牌（至 1200 °C）",
+      "Nhãn & thẻ nhiệt độ cực cao (đến 1200 °C)",
+      "ฉลากและแท็กอุณหภูมิสูงสุด (ถึง 1200 °C)")),
 ]
 _LI = {"en": 0, "zh": 1, "vi": 2, "th": 3}
 
@@ -2496,10 +2496,10 @@ def build_products_landing(lang):
                           "ซีรีส์ฉลาก PCB โพลีอิไมด์ที่ ETIA พัฒนาเอง — ทั่วไป กาวเหนียว ถอดได้ และป้องกันไฟฟ้าสถิต"))
                 + card("/products/heatproof/",
                      P(lang,"HEATPROOF","HEATPROOF","HEATPROOF","HEATPROOF"),
-                     P(lang,"ETIA's own extreme-temperature labels and tags — metal-foil and ceramic, 200°C to 1200°C.",
-                          "ETIA 自研极端高温标签与吊牌 —— 金属箔与陶瓷，200°C 至 1200°C。",
-                          "Nhãn và thẻ nhiệt độ cực cao của ETIA — lá kim loại và gốm, 200°C đến 1200°C.",
-                          "ฉลากและแท็กอุณหภูมิสูงสุดขั้วของ ETIA — ฟอยล์โลหะและเซรามิก 200°C ถึง 1200°C")))
+                     P(lang,"Extreme-temperature labels and tags — metal-foil and ceramic, 200°C to 1200°C.",
+                          "极端高温标签与吊牌 —— 金属箔与陶瓷，200°C 至 1200°C。",
+                          "Nhãn và thẻ nhiệt độ cực cao — lá kim loại và gốm, 200°C đến 1200°C.",
+                          "ฉลากและแท็กอุณหภูมิสูงสุดขั้ว — ฟอยล์โลหะและเซรามิก 200°C ถึง 1200°C")))
           + ('<div class="wrap">%s</div>' % cta2(lang, "products", Lx)))
     s = HOME2.get(lang, HOME2["en"])["sections"][0]
     hero = page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
