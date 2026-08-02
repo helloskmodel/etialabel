@@ -1,0 +1,114 @@
+{
+  "slug": "e-2112",
+  "source": "ETIA-TECH E-2112 Technical Data Sheet (Chinese authoritative)",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "brand": "etia",
+  "industry": "auto",
+  "product_img": "",
+  "title": {
+    "en": "E-2112 — 2 mil White PET Silicone-Adhesive Label for Airbags & Seats (−20 to 100 °C)",
+    "zh": "E-2112 —— 2 mil 白色 PET 硅胶标签，用于安全气囊与座椅（−20 至 100 °C）",
+    "vi": "E-2112 — Nhãn PET trắng 2 mil keo silicone cho túi khí & ghế (−20 đến 100 °C)",
+    "th": "E-2112 — ฉลาก PET สีขาว 2 mil กาวซิลิโคนสำหรับถุงลมนิรภัยและเบาะ (−20 ถึง 100 °C)"
+  },
+  "tagline": {
+    "en": "2 mil soft white PET label with a strong silicone adhesive — bonds to airbags, car seats and silicone parts without lifting on rough surfaces, alcohol- and chemical-resistant, −20 to 100 °C.",
+    "zh": "2 mil 柔软白色 PET 标签，配强力硅胶 —— 可粘接安全气囊、汽车座椅与硅制品，粗糙表面不起翘，耐酒精与耐化学，耐温 −20 至 100 °C。",
+    "vi": "Nhãn PET trắng mềm 2 mil với keo silicone mạnh — bám túi khí, ghế ô tô và chi tiết silicone không bong trên bề mặt nhám, kháng cồn và hóa chất, −20 đến 100 °C.",
+    "th": "ฉลาก PET สีขาวนุ่ม 2 mil พร้อมกาวซิลิโคนแรงยึดสูง — ยึดถุงลมนิรภัย เบาะรถ และชิ้นส่วนซิลิโคนโดยไม่หลุดลอกบนผิวหยาบ ทนแอลกอฮอล์และสารเคมี −20 ถึง 100 °C"
+  },
+  "positioning": {
+    "en": "E-2112 is a 2 mil white PET label with a silicone adhesive — a soft facestock with strong tack designed for low-surface-energy and difficult substrates such as airbags, car seats and silicone parts. Printed with suitable ribbons it gives good image clarity and high read rates, and it resists alcohol and chemicals. The strong silicone adhesive holds firmly on rough surfaces without lifting or falling off, while the material resists water, acids, alkalis and grease.",
+    "zh": "E-2112 是一款 2 mil 白色 PET 标签，采用硅胶粘着剂 —— 面材柔软、粘性强，专为低表面能与难粘基材（如安全气囊、汽车座椅、硅制品）而设计。配合合适的碳带打印，可获得良好的图像清晰度与高读取率，并耐酒精与化学品。强力硅胶可在粗糙表面牢固粘接、不起翘不脱落，材料防水、耐酸碱与耐油脂。",
+    "vi": "E-2112 là nhãn PET trắng 2 mil với keo silicone — mặt nhãn mềm, độ dính mạnh, thiết kế cho nền năng lượng bề mặt thấp và khó dán như túi khí, ghế ô tô và chi tiết silicone. In bằng ribbon phù hợp cho độ rõ hình ảnh tốt và tỷ lệ đọc cao, kháng cồn và hóa chất. Keo silicone mạnh bám chắc trên bề mặt nhám không bong hay rơi, vật liệu kháng nước, axit, kiềm và dầu mỡ.",
+    "th": "E-2112 เป็นฉลาก PET สีขาว 2 mil พร้อมกาวซิลิโคน — หน้าฉลากนุ่ม แทคสูง ออกแบบสำหรับพื้นผิวพลังงานต่ำและติดยาก เช่น ถุงลมนิรภัย เบาะรถ และชิ้นส่วนซิลิโคน เมื่อพิมพ์ด้วยริบบอนที่เหมาะสมให้ความคมชัดของภาพดีและอัตราการอ่านสูง ทนแอลกอฮอล์และสารเคมี กาวซิลิโคนแรงสูงยึดแน่นบนผิวหยาบโดยไม่ยกหรือหลุด วัสดุทนน้ำ กรด ด่าง และไขมัน"
+  },
+  "features": {
+    "en": [
+      "Strong silicone adhesive — holds on rough surfaces without lifting or falling off",
+      "Consistent surface smoothness and good dimensional stability",
+      "Excellent print quality with high information read rates",
+      "Water-, acid-, alkali- and grease-resistant",
+      "Alcohol- and chemical-resistant",
+      "RoHS compliant (2002/95/EC)"
+    ],
+    "zh": [
+      "强力硅胶 —— 粗糙表面牢固粘接、不起翘不脱落",
+      "表面平滑一致，尺寸稳定性好",
+      "打印质量优异，信息读取率高",
+      "防水、耐酸碱与耐油脂",
+      "耐酒精与耐化学",
+      "符合 RoHS（2002/95/EC）"
+    ],
+    "vi": [
+      "Keo silicone mạnh — bám bề mặt nhám không bong hay rơi",
+      "Độ nhẵn bề mặt đồng đều và ổn định kích thước tốt",
+      "Chất lượng in xuất sắc với tỷ lệ đọc cao",
+      "Kháng nước, axit, kiềm và dầu mỡ",
+      "Kháng cồn và hóa chất",
+      "Tuân thủ RoHS (2002/95/EC)"
+    ],
+    "th": [
+      "กาวซิลิโคนแรงสูง — ยึดผิวหยาบโดยไม่ยกหรือหลุด",
+      "ผิวเรียบสม่ำเสมอและเสถียรมิติดี",
+      "คุณภาพการพิมพ์ดีเยี่ยม อัตราการอ่านข้อมูลสูง",
+      "ทนน้ำ กรด ด่าง และไขมัน",
+      "ทนแอลกอฮอล์และสารเคมี",
+      "สอดคล้อง RoHS (2002/95/EC)"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": ["Property", "Value"],
+      "zh": ["属性", "参数"],
+      "vi": ["Thuộc tính", "Giá trị"],
+      "th": ["คุณสมบัติ", "ค่า"]
+    },
+    "rows": [
+      {"cells": [{"en": "Facestock", "zh": "面材", "vi": "Vật liệu mặt", "th": "วัสดุหน้า"}, {"en": "2 mil (0.050 mm) soft white PET", "zh": "2 mil（0.050 mm）柔软白色 PET", "vi": "PET trắng mềm 2 mil (0,050 mm)", "th": "PET สีขาวนุ่ม 2 mil (0.050 มม.)"}]},
+      {"cells": [{"en": "Adhesive", "zh": "胶粘剂", "vi": "Keo", "th": "กาว"}, {"en": "Silicone adhesive (0.020 mm)", "zh": "硅胶粘着剂（0.020 mm）", "vi": "Keo silicone (0,020 mm)", "th": "กาวซิลิโคน (0.020 มม.)"}]},
+      {"cells": [{"en": "Liner", "zh": "底纸", "vi": "Lớp lót", "th": "ไลเนอร์"}, "0.080 mm"]},
+      {"cells": [{"en": "Temperature rating", "zh": "耐温范围", "vi": "Dải nhiệt độ", "th": "ช่วงอุณหภูมิ"}, "−20 to 100 °C"]},
+      {"cells": [{"en": "Peel adhesion", "zh": "剥离力", "vi": "Lực bóc", "th": "แรงลอก"}, "12 N/25 mm (GB/T 2792)"]},
+      {"cells": [{"en": "Initial adhesion", "zh": "初粘力", "vi": "Độ dính ban đầu", "th": "แรงยึดเริ่มต้น"}, "5 N/25 mm (GB/T 31125)"]},
+      {"cells": [{"en": "Retention force", "zh": "保持力", "vi": "Lực giữ", "th": "แรงยึด"}, "≥ 48 h/25 mm (GB/T 4851)"]},
+      {"cells": [{"en": "Shelf life", "zh": "保存有效期", "vi": "Hạn dùng", "th": "อายุการเก็บ"}, {"en": "1 year below 22 °C / 50% RH", "zh": "22 °C / 50% RH 以下 1 年", "vi": "1 năm dưới 22 °C / 50% RH", "th": "1 ปี ต่ำกว่า 22 °C / 50% RH"}]},
+      {"cells": [{"en": "Compliance", "zh": "合规", "vi": "Tuân thủ", "th": "การรับรอง"}, "RoHS (2002/95/EC)"]}
+    ],
+    "notes": {
+      "en": ["Apply to a clean, dry, contamination-free surface (isopropyl alcohol recommended) with firm pressure. Values are typical, not specifications — verify by application testing."],
+      "zh": ["贴标表面应清洁、干燥、无污染（建议异丙醇清洁），并施加足够压力。数值为典型值，非规格值 —— 请经应用测试确认。"],
+      "vi": ["Dán lên bề mặt sạch, khô, không nhiễm bẩn (khuyến nghị cồn isopropyl) và ấn mạnh. Giá trị là điển hình, không phải thông số — hãy xác minh bằng thử nghiệm ứng dụng."],
+      "th": ["ติดบนพื้นผิวสะอาด แห้ง ปราศจากสิ่งปนเปื้อน (แนะนำไอโซโพรพิลแอลกอฮอล์) และกดแน่น ค่าเป็นค่าทั่วไป ไม่ใช่สเปก — โปรดตรวจสอบด้วยการทดสอบการใช้งาน"]
+    }
+  },
+  "applications": {
+    "en": [
+      "Airbags",
+      "Car seats",
+      "Silicone rods and silicone parts"
+    ],
+    "zh": [
+      "安全气囊",
+      "汽车座椅",
+      "硅棒与硅制品"
+    ],
+    "vi": [
+      "Túi khí",
+      "Ghế ô tô",
+      "Thanh silicone và chi tiết silicone"
+    ],
+    "th": [
+      "ถุงลมนิรภัย",
+      "เบาะรถยนต์",
+      "แท่งซิลิโคนและชิ้นส่วนซิลิโคน"
+    ]
+  },
+  "certifications": {
+    "en": ["RoHS compliant (2002/95/EC)"],
+    "zh": ["符合 RoHS（2002/95/EC）"],
+    "vi": ["Tuân thủ RoHS (2002/95/EC)"],
+    "th": ["สอดคล้อง RoHS (2002/95/EC)"]
+  }
+}

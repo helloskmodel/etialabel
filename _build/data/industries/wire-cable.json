@@ -128,6 +128,18 @@
           "img": "",
           "landing": true,
           "slug": "e-2913"
+        },
+        {
+          "name": "E-2931",
+          "line": {
+            "en": "1 mil flame-retardant PET · high-temp & solvent-resistant · −40 to 150 °C",
+            "zh": "1 mil 阻燃 PET · 耐高温耐溶剂 · −40 至 150 °C",
+            "vi": "PET chống cháy 1 mil · kháng nhiệt & dung môi · −40 đến 150 °C",
+            "th": "PET หน่วงไฟ 1 mil · ทนความร้อนและตัวทำละลาย · −40 ถึง 150 °C"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-2931"
         }
       ]
     },

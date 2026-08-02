@@ -1,0 +1,122 @@
+{
+  "slug": "e-2532",
+  "source": "ETIA-TECH E-2532 Technical Data Sheet",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "brand": "etia",
+  "industry": "medical",
+  "product_img": "",
+  "title": {
+    "en": "E-2532 — 2 mil Matte White PET Lab & Slide Label (−40 to 150 °C)",
+    "zh": "E-2532 —— 2 mil 哑白色 PET 实验室与载玻片标签（−40 至 150 °C）",
+    "vi": "E-2532 — Nhãn PET trắng mờ 2 mil cho phòng lab & lam kính (−40 đến 150 °C)",
+    "th": "E-2532 — ฉลาก PET สีขาวด้าน 2 mil สำหรับห้องแล็บและสไลด์ (−40 ถึง 150 °C)"
+  },
+  "tagline": {
+    "en": "2 mil matte white polyester with a permanent acrylic adhesive — resists strong acid, acetone, solvents, water and alcohol for microscope slides, microwell plates and laboratory identification, −40 to 150 °C.",
+    "zh": "2 mil 哑白色聚酯，配永久性丙烯酸胶 —— 耐强酸、丙酮、溶剂、水与酒精，用于载玻片、微孔板与实验室标识，耐温 −40 至 150 °C。",
+    "vi": "Polyester trắng mờ 2 mil với keo acrylic vĩnh viễn — kháng axit mạnh, acetone, dung môi, nước và cồn cho lam kính, đĩa vi giếng và nhận diện phòng lab, −40 đến 150 °C.",
+    "th": "โพลีเอสเตอร์สีขาวด้าน 2 mil พร้อมกาวอะคริลิกถาวร — ทนกรดแก่ อะซิโตน ตัวทำละลาย น้ำและแอลกอฮอล์ สำหรับสไลด์กล้องจุลทรรศน์ ไมโครเวลล์เพลต และการระบุในห้องแล็บ −40 ถึง 150 °C"
+  },
+  "positioning": {
+    "en": "E-2532 is a 2 mil matte white polyester (PET) label with a permanent pressure-sensitive acrylic adhesive. When printed with suitable ribbons its topcoat resists chemical solvents, humidity, staining and scratching. The firm adhesive bonds strongly to a wide variety of surfaces — low- and high-surface-energy plastics, metal, powder-coated and wet paint, ceramic, paper/fibre, glass and fibreglass — with excellent resistance to strong acid, acetone and eraser abrasion. It offers stable clarity and readability, excellent initial adhesion without lift or deformation, and can be stored down to −40 °C.",
+    "zh": "E-2532 是一款 2 mil 哑白色聚酯（PET）标签，配永久性丙烯酸压敏胶。配合合适碳带打印时，其面涂层耐化学溶剂、耐潮湿、耐污与耐刮擦。牢固的胶层可强力粘接多种表面 —— 低/高表面能塑料、金属、粉末涂料与油漆、陶瓷、纸/纤维、玻璃与玻璃纤维 —— 并对强酸、丙酮与橡皮擦磨损具优异抵抗力。清晰度与可读性稳定，初粘优异、不起翘不变形，可低至 −40 °C 储存。",
+    "vi": "E-2532 là nhãn polyester (PET) trắng mờ 2 mil với keo acrylic PSA vĩnh viễn. Khi in bằng ribbon phù hợp, lớp phủ kháng dung môi hóa chất, độ ẩm, vết bẩn và trầy xước. Keo chắc bám mạnh trên nhiều bề mặt — nhựa năng lượng bề mặt thấp/cao, kim loại, sơn phủ bột và sơn ướt, gốm, giấy/sợi, thủy tinh và sợi thủy tinh — kháng axit mạnh, acetone và mài mòn tẩy xuất sắc. Độ rõ và khả năng đọc ổn định, bám ban đầu xuất sắc không bong hay biến dạng, và lưu trữ được đến −40 °C.",
+    "th": "E-2532 เป็นฉลากโพลีเอสเตอร์ (PET) สีขาวด้าน 2 mil พร้อมกาว PSA อะคริลิกถาวร เมื่อพิมพ์ด้วยริบบอนที่เหมาะสม สารเคลือบหน้าทนตัวทำละลายเคมี ความชื้น คราบ และรอยขีดข่วน กาวยึดแน่นเกาะหลายพื้นผิว — พลาสติกพลังงานพื้นผิวต่ำ/สูง โลหะ ผงเคลือบและสีเปียก เซรามิก กระดาษ/เส้นใย แก้วและไฟเบอร์กลาส — ทนกรดแก่ อะซิโตน และการขัดถูจากยางลบดีเยี่ยม ให้ความคมชัดและการอ่านที่เสถียร ยึดเริ่มต้นดีเยี่ยมโดยไม่ยกหรือผิดรูป และเก็บได้ถึง −40 °C"
+  },
+  "features": {
+    "en": [
+      "Suitable for thermal-transfer and traditional printing",
+      "Excellent resistance to strong acid, acetone and eraser abrasion",
+      "Water- and alcohol-resistant with stable clarity and readability",
+      "Excellent initial adhesion — no lift or deformation",
+      "Can be stored down to −40 °C",
+      "RoHS compliant (2002/95/EC)"
+    ],
+    "zh": [
+      "适合热转印与传统印刷",
+      "耐强酸、丙酮与橡皮擦磨损性能优异",
+      "耐水、耐酒精，清晰度与可读性稳定",
+      "初粘优异 —— 不起翘、不变形",
+      "可低至 −40 °C 储存",
+      "符合 RoHS（2002/95/EC）"
+    ],
+    "vi": [
+      "Phù hợp in nhiệt và in truyền thống",
+      "Kháng axit mạnh, acetone và mài mòn tẩy xuất sắc",
+      "Kháng nước và cồn, độ rõ và khả năng đọc ổn định",
+      "Bám ban đầu xuất sắc — không bong hay biến dạng",
+      "Lưu trữ được đến −40 °C",
+      "Tuân thủ RoHS (2002/95/EC)"
+    ],
+    "th": [
+      "เหมาะกับการพิมพ์ถ่ายเทความร้อนและการพิมพ์ทั่วไป",
+      "ทนกรดแก่ อะซิโตน และการขัดถูจากยางลบดีเยี่ยม",
+      "ทนน้ำและแอลกอฮอล์ ความคมชัดและการอ่านเสถียร",
+      "ยึดเริ่มต้นดีเยี่ยม — ไม่ยกหรือผิดรูป",
+      "เก็บได้ถึง −40 °C",
+      "สอดคล้อง RoHS (2002/95/EC)"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": ["Property", "Value"],
+      "zh": ["属性", "参数"],
+      "vi": ["Thuộc tính", "Giá trị"],
+      "th": ["คุณสมบัติ", "ค่า"]
+    },
+    "rows": [
+      {"cells": [{"en": "Facestock", "zh": "面材", "vi": "Vật liệu mặt", "th": "วัสดุหน้า"}, {"en": "2 mil (0.051 mm) matte white polyester (PET)", "zh": "2 mil（0.051 mm）哑白色聚酯（PET）", "vi": "Polyester (PET) trắng mờ 2 mil (0,051 mm)", "th": "โพลีเอสเตอร์ (PET) สีขาวด้าน 2 mil (0.051 มม.)"}]},
+      {"cells": [{"en": "Adhesive", "zh": "胶粘剂", "vi": "Keo", "th": "กาว"}, {"en": "Permanent acrylic PSA (0.023 mm)", "zh": "永久性丙烯酸压敏胶（0.023 mm）", "vi": "Keo acrylic PSA vĩnh viễn (0,023 mm)", "th": "กาว PSA อะคริลิกถาวร (0.023 มม.)"}]},
+      {"cells": [{"en": "Liner", "zh": "底纸", "vi": "Lớp lót", "th": "ไลเนอร์"}, "0.078 mm"]},
+      {"cells": [{"en": "Temperature rating", "zh": "耐温范围", "vi": "Dải nhiệt độ", "th": "ช่วงอุณหภูมิ"}, "−40 to 150 °C"]},
+      {"cells": [{"en": "Peel adhesion", "zh": "剥离力", "vi": "Lực bóc", "th": "แรงลอก"}, "17 N/25 mm (GB/T 2792)"]},
+      {"cells": [{"en": "Initial adhesion", "zh": "初粘力", "vi": "Độ dính ban đầu", "th": "แรงยึดเริ่มต้น"}, "12 N/25 mm (GB/T 31125)"]},
+      {"cells": [{"en": "Retention force", "zh": "保持力", "vi": "Lực giữ", "th": "แรงยึด"}, "≥ 48 h/25 mm (GB/T 4851)"]},
+      {"cells": [{"en": "Shelf life", "zh": "保存有效期", "vi": "Hạn dùng", "th": "อายุการเก็บ"}, {"en": "1 year below 22 °C / 50% RH", "zh": "22 °C / 50% RH 以下 1 年", "vi": "1 năm dưới 22 °C / 50% RH", "th": "1 ปี ต่ำกว่า 22 °C / 50% RH"}]},
+      {"cells": [{"en": "Compliance", "zh": "合规", "vi": "Tuân thủ", "th": "การรับรอง"}, "RoHS (2002/95/EC)"]}
+    ],
+    "notes": {
+      "en": ["Apply to a clean, dry, contamination-free surface (isopropyl alcohol recommended) with firm pressure. Values are typical, not specifications — verify by application testing."],
+      "zh": ["贴标表面应清洁、干燥、无污染（建议异丙醇清洁），并施加足够压力。数值为典型值，非规格值 —— 请经应用测试确认。"],
+      "vi": ["Dán lên bề mặt sạch, khô, không nhiễm bẩn (khuyến nghị cồn isopropyl) và ấn mạnh. Giá trị là điển hình, không phải thông số — hãy xác minh bằng thử nghiệm ứng dụng."],
+      "th": ["ติดบนพื้นผิวสะอาด แห้ง ปราศจากสิ่งปนเปื้อน (แนะนำไอโซโพรพิลแอลกอฮอล์) และกดแน่น ค่าเป็นค่าทั่วไป ไม่ใช่สเปก — โปรดตรวจสอบด้วยการทดสอบการใช้งาน"]
+    }
+  },
+  "applications": {
+    "en": [
+      "Microscope slides, microwell plates and laboratory identification",
+      "Auto-parts production-control identification",
+      "Barcode labels and rating plates",
+      "Property identification and asset labelling",
+      "Battery labels"
+    ],
+    "zh": [
+      "载玻片、微孔板与实验室标识",
+      "汽车零件生产控制标识",
+      "条码标签与铭牌",
+      "资产识别与资产标签",
+      "电池标签"
+    ],
+    "vi": [
+      "Lam kính, đĩa vi giếng và nhận diện phòng lab",
+      "Nhận diện kiểm soát sản xuất chi tiết ô tô",
+      "Nhãn mã vạch và bảng thông số",
+      "Nhận diện tài sản và dán nhãn tài sản",
+      "Nhãn pin"
+    ],
+    "th": [
+      "สไลด์กล้องจุลทรรศน์ ไมโครเวลล์เพลต และการระบุในห้องแล็บ",
+      "การระบุควบคุมการผลิตชิ้นส่วนยานยนต์",
+      "ฉลากบาร์โค้ดและป้ายพิกัด",
+      "การระบุและติดฉลากทรัพย์สิน",
+      "ฉลากแบตเตอรี่"
+    ]
+  },
+  "certifications": {
+    "en": ["RoHS compliant (2002/95/EC)", "Resistant to strong acid, acetone and solvents"],
+    "zh": ["符合 RoHS（2002/95/EC）", "耐强酸、丙酮与溶剂"],
+    "vi": ["Tuân thủ RoHS (2002/95/EC)", "Kháng axit mạnh, acetone và dung môi"],
+    "th": ["สอดคล้อง RoHS (2002/95/EC)", "ทนกรดแก่ อะซิโตน และตัวทำละลาย"]
+  }
+}

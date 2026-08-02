@@ -259,6 +259,42 @@
      "img": "",
      "landing": true,
      "slug": "e-series"
+    },
+    {
+     "name": "E-8731B",
+     "line": {
+      "en": "1 mil black antistatic PI · ESD-safe · −40 to 300 °C",
+      "zh": "1 mil 黑色防静电 PI · ESD 安全 · −40 至 300 °C",
+      "vi": "PI chống tĩnh điện đen 1 mil · ESD-safe · −40 đến 300 °C",
+      "th": "PI ป้องกันไฟฟ้าสถิตสีดำ 1 mil · ESD-safe · −40 ถึง 300 °C"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "e-8731b"
+    },
+    {
+     "name": "E-8712",
+     "line": {
+      "en": "2 mil white antistatic PI · ESD-safe · −40 to 300 °C",
+      "zh": "2 mil 白色防静电 PI · ESD 安全 · −40 至 300 °C",
+      "vi": "PI chống tĩnh điện trắng 2 mil · ESD-safe · −40 đến 300 °C",
+      "th": "PI ป้องกันไฟฟ้าสถิตสีขาว 2 mil · ESD-safe · −40 ถึง 300 °C"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "e-8712"
+    },
+    {
+     "name": "E-8531G",
+     "line": {
+      "en": "2 mil matte green PI · colour-coded topside marking · −40 to 300 °C",
+      "zh": "2 mil 哑绿色 PI · 顶面颜色分类标识 · −40 至 300 °C",
+      "vi": "PI xanh lá mờ 2 mil · đánh dấu mặt trên theo mã màu · −40 đến 300 °C",
+      "th": "PI สีเขียวด้าน 2 mil · ทำเครื่องหมายด้านบนตามรหัสสี · −40 ถึง 300 °C"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "e-8531g"
     }
    ],
    "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB8732",

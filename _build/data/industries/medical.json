@@ -85,17 +85,16 @@
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-196DIRECT-VIAL",
       "products": [
         {
-          "name": {
-            "en": "CryoFlex (Vial)",
-            "zh": "CryoFlex（西林瓶）"
-          },
+          "name": "EF070806 Cryogenic Label",
           "line": {
-            "en": "1.0 mil Clear PP. Directly labels frozen vials at −80°C for long-term liquid-nitrogen storage.",
-            "zh": "1.0mil 透明 PP。−80℃免解冻直贴西林瓶，长期液氮存储。"
+            "en": "1 mil clear matte PP · apply & store to −196 °C LN₂ · tubes, PP vials, EVA bags, boxes",
+            "zh": "1 mil 透明哑面 PP · 可在 −196 °C 液氮贴标与存储 · 管、PP 瓶、EVA 袋、纸盒",
+            "vi": "PP mờ trong 1 mil · dán & lưu trữ đến −196 °C LN₂ · ống, lọ PP, túi EVA, hộp",
+            "th": "PP ใสด้าน 1 mil · ติด & จัดเก็บถึง −196 °C LN₂ · หลอด ขวด PP ถุง EVA กล่อง"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "ef070806"
         },
         {
           "name": {
@@ -103,12 +102,14 @@
             "zh": "E-4802 透明冻存管标签"
           },
           "line": {
-            "en": "2.0 mil Clear PO. Directly labels plastic cryogenic tubes while keeping graduations visible.",
-            "zh": "2.0mil 高透明 PO。−80℃直贴塑料冻存管，保留刻度，多次冻融不脱落。"
+            "en": "Transparent PO cryovial label · −196 °C service / −80 °C applied",
+            "zh": "透明 PO 冻存管标签 · −196 °C 使用 / −80 °C 贴标",
+            "vi": "Nhãn cryovial PO trong · −196 °C sử dụng / −80 °C dán",
+            "th": "ฉลาก cryovial PO ใส · −196 °C ใช้งาน / −80 °C ติด"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-4802"
         },
         {
           "name": {
@@ -214,12 +215,14 @@
             "zh": "E-5532 深冷冻标签"
           },
           "line": {
-            "en": "PO. General-purpose cryogenic label for reliable −80°C laboratory storage.",
-            "zh": "PO。实验室通用 −80℃标签，耐潮湿、耐冻融。"
+            "en": "2 mil white PO · autoclave/gamma/e-beam/EO · FDA & EU food-contact · −80 to 134 °C",
+            "zh": "2 mil 白色 PO · 高压/伽马/电子束/EO 灭菌 · FDA 与欧盟食品接触 · −80 至 134 °C",
+            "vi": "PO trắng 2 mil · hấp/gamma/e-beam/EO · FDA & tiếp xúc TP EU · −80 đến 134 °C",
+            "th": "PO สีขาว 2 mil · ออโตเคลฟ/แกมมา/อิเล็กตรอน/EO · FDA & สัมผัสอาหาร EU · −80 ถึง 134 °C"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-5532"
         }
       ]
     },
@@ -250,12 +253,14 @@
             "zh": "E-5532 血袋标签"
           },
           "line": {
-            "en": "PO. Low-extractable label for refrigerated and frozen blood bags.",
-            "zh": "PO。低析出材料，适用于血袋冷藏、冷冻标识。"
+            "en": "2 mil white PO · autoclave/gamma/e-beam/EO · FDA & EU food-contact · −80 to 134 °C",
+            "zh": "2 mil 白色 PO · 高压/伽马/电子束/EO 灭菌 · FDA 与欧盟食品接触 · −80 至 134 °C",
+            "vi": "PO trắng 2 mil · hấp/gamma/e-beam/EO · FDA & tiếp xúc TP EU · −80 đến 134 °C",
+            "th": "PO สีขาว 2 mil · ออโตเคลฟ/แกมมา/อิเล็กตรอน/EO · FDA & สัมผัสอาหาร EU · −80 ถึง 134 °C"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-5532"
         },
         {
           "name": {
@@ -269,6 +274,30 @@
           "img": "",
           "landing": true,
           "slug": "e-4533"
+        },
+        {
+          "name": "E-4833 Blood-Bag & Low-Temp Label",
+          "line": {
+            "en": "3 mil flexible white PP · tubes & bending bags · −80 to 120 °C",
+            "zh": "3 mil 柔性白色 PP · 管路与弯折血袋 · −80 至 120 °C",
+            "vi": "PP trắng dẻo 3 mil · ống & túi uốn cong · −80 đến 120 °C",
+            "th": "PP สีขาวยืดหยุ่น 3 mil · ท่อและถุงโค้งงอ · −80 ถึง 120 °C"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-4833"
+        },
+        {
+          "name": "E-4834 PVC Blood-Bag Label",
+          "line": {
+            "en": "3 mil white PP · high adhesion to DEHP/TOTM/DINCH PVC · sterilization-stable",
+            "zh": "3 mil 白色 PP · 对 DEHP/TOTM/DINCH PVC 高粘 · 耐灭菌",
+            "vi": "PP trắng 3 mil · bám cao PVC DEHP/TOTM/DINCH · ổn định sau tiệt trùng",
+            "th": "PP สีขาว 3 mil · ยึด PVC DEHP/TOTM/DINCH สูง · เสถียรหลังฆ่าเชื้อ"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-4834"
         }
       ]
     },
@@ -299,12 +328,14 @@
             "zh": "E-5532 灭菌标签"
           },
           "line": {
-            "en": "PO. Compatible with steam, EO, and gamma sterilization.",
-            "zh": "PO。兼容蒸汽、EO、伽马灭菌，多工艺通用。"
+            "en": "2 mil white PO · autoclave/gamma/e-beam/EO · FDA & EU food-contact · −80 to 134 °C",
+            "zh": "2 mil 白色 PO · 高压/伽马/电子束/EO 灭菌 · FDA 与欧盟食品接触 · −80 至 134 °C",
+            "vi": "PO trắng 2 mil · hấp/gamma/e-beam/EO · FDA & tiếp xúc TP EU · −80 đến 134 °C",
+            "th": "PO สีขาว 2 mil · ออโตเคลฟ/แกมมา/อิเล็กตรอน/EO · FDA & สัมผัสอาหาร EU · −80 ถึง 134 °C"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-5532"
         },
         {
           "name": {
@@ -331,6 +362,18 @@
           "img": "",
           "landing": false,
           "slug": ""
+        },
+        {
+          "name": "E-2232 Sterilization-Packaging Label",
+          "line": {
+            "en": "2 mil white PET · high initial tack for non-woven/crepe wraps & pouches · autoclave-safe · 3 to 134 °C",
+            "zh": "2 mil 白色 PET · 高初粘，适用无纺布/绉纱灭菌包与灭菌袋 · 耐高压灭菌 · 3 至 134 °C",
+            "vi": "PET trắng 2 mil · độ dính cao cho vải không dệt/crepe & túi · chịu hấp · 3 đến 134 °C",
+            "th": "PET สีขาว 2 mil · แทคสูงสำหรับผ้าไม่ทอ/เครป & ซอง · ทนออโตเคลฟ · 3 ถึง 134 °C"
+          },
+          "img": "",
+          "landing": true,
+          "slug": "e-2232"
         }
       ]
     },
@@ -361,12 +404,14 @@
             "zh": "E-4232 小口径医药标签"
           },
           "line": {
-            "en": "2.0 mil Matte PP. Flexible label for vials and prefilled syringes on automated lines.",
-            "zh": "2.0mil 哑光 PP。贴合西林瓶及预灌封注射器，高速贴标不起翘。"
+            "en": "2 mil synthetic paper · small-caliber bottles & tubes · curved-surface, anti edge-lift",
+            "zh": "2 mil 合成纸 · 小口径瓶与试管 · 曲面抗翘边",
+            "vi": "Giấy tổng hợp 2 mil · lọ & ống nhỏ · bề mặt cong, kháng bong mép",
+            "th": "กระดาษสังเคราะห์ 2 mil · ขวด&หลอดปากเล็ก · ผิวโค้ง ทนเผยอขอบ"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-4232"
         }
       ]
     },
@@ -397,12 +442,14 @@
             "zh": "E-2532 病理载玻片标签"
           },
           "line": {
-            "en": "2.0 mil PET. Chemical-resistant label for pathology slides and staining processes.",
-            "zh": "2.0mil PET。耐二甲苯、酒精及高温染色，适用于病理切片。"
+            "en": "2 mil matte white PET · acid/acetone/solvent-resistant · −40 to 150 °C",
+            "zh": "2 mil 哑白 PET · 耐酸/丙酮/溶剂 · −40 至 150 °C",
+            "vi": "PET trắng mờ 2 mil · kháng axit/acetone/dung môi · −40 đến 150 °C",
+            "th": "PET สีขาวด้าน 2 mil · ทนกรด/อะซิโตน/ตัวทำละลาย · −40 ถึง 150 °C"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-2532"
         }
       ]
     },
@@ -429,16 +476,20 @@
       "products": [
         {
           "name": {
-            "en": "E-4834 Microplate Label",
-            "zh": "E-4834 微孔板标签"
+            "en": "E-2532 Microplate Label",
+            "zh": "E-2532 微孔板标签",
+            "vi": "Nhãn đĩa vi giếng E-2532",
+            "th": "ฉลากไมโครเวลล์เพลต E-2532"
           },
           "line": {
-            "en": "2.0 mil PP. High-performance microplate label for 96/384-well plates and −80°C storage.",
-            "zh": "2.0mil PP。适用于 96/384 孔板，耐 −80℃冷冻，支持自动扫码。"
+            "en": "2 mil matte white PET · microwell-plate & lab ID · −40 to 150 °C",
+            "zh": "2 mil 哑白 PET · 微孔板与实验室标识 · −40 至 150 °C",
+            "vi": "PET trắng mờ 2 mil · đĩa vi giếng & lab · −40 đến 150 °C",
+            "th": "PET สีขาวด้าน 2 mil · ไมโครเวลล์เพลตและแล็บ · −40 ถึง 150 °C"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "e-2532"
         }
       ]
     }

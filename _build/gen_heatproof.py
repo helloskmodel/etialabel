@@ -545,7 +545,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .pbtn.sample:hover{background:var(--green-d);border-color:var(--green-d);color:#fff}
 .pbtn.view{background:var(--blue);border-color:var(--blue);color:#fff}
 .pbtn.view:hover{background:var(--blue-deep);border-color:var(--blue-deep);color:#fff}
-/* product spec table (FLEXcon-style) */
+/* product spec table */
 .ptable-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
 .ptable{width:100%;border-collapse:collapse;font-size:13.5px}
 .ptable th{text-align:left;font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);padding:12px 14px;border-bottom:2px solid var(--line);white-space:nowrap;background:var(--bg)}
@@ -815,8 +815,8 @@ Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)"
 </div></footer>""" % (Lx(lang,"/privacy/"), pc[0], Lx(lang,"/cookies/"), pc[1])
 
 TRUST_TITLES = {
- "en":["100% Quality Inspection","Application-Driven Solutions","Flexible Supply","Responsive Customer Support"],
- "zh":["100% 质量检测","应用驱动方案","柔性供应","快速响应服务"],
+ "en":["100% Quality Inspection","Application-Driven Solutions","Flexible Supply","Responsive Application Support"],
+ "zh":["100% 质量检测","应用驱动方案","柔性供应","快速应用支持"],
  "vi":["Kiểm tra chất lượng 100%","Giải pháp theo ứng dụng","Cung ứng linh hoạt","Hỗ trợ ứng dụng kịp thời"],
  "th":["การตรวจสอบคุณภาพ 100%","โซลูชันที่ขับเคลื่อนด้วยการใช้งาน","การจัดหาที่ยืดหยุ่น","การสนับสนุนการใช้งานที่ตอบสนองรวดเร็ว"],
 }
@@ -848,13 +848,13 @@ def cta(lang):
 
 # Per-page bottom CTA (question headline + <=2 sentences + primary + secondary).
 CTAS = {
- "home": {"h": ("We Can Label for You.", "标签，我们为您来做。",
-                "Chúng tôi có thể làm nhãn cho bạn.", "เราทำฉลากให้คุณได้"),
-   "body": ("Tell us about the surface, temperature, chemical exposure, printing method, and expected service life. Our team will help you narrow down the right material and prepare samples for evaluation.",
-            "告诉我们贴附表面、温度、化学暴露、打印方式与预期使用寿命，我们的团队将帮您缩小材料范围并准备样品供评估。",
-            "Hãy cho biết bề mặt, nhiệt độ, môi trường hóa chất, phương pháp in và tuổi thọ dự kiến. Đội ngũ của chúng tôi sẽ giúp bạn khoanh vùng vật liệu phù hợp và chuẩn bị mẫu để đánh giá.",
-            "บอกเราถึงพื้นผิว อุณหภูมิ การสัมผัสสารเคมี วิธีการพิมพ์ และอายุการใช้งานที่คาดหวัง ทีมของเราจะช่วยคัดกรองวัสดุที่เหมาะสมและเตรียมตัวอย่างเพื่อประเมิน"),
-   "b1": ("Talk to a Specialist", "咨询专家", "Trao đổi với chuyên gia", "ปรึกษาผู้เชี่ยวชาญ"), "b1u": "/contact/",
+ "home": {"h": ("Find the Right Material for Your Application.", "为您的应用找到合适的材料。",
+                "Tìm đúng vật liệu cho ứng dụng của bạn.", "ค้นหาวัสดุที่เหมาะกับการใช้งานของคุณ"),
+   "body": ("Tell us about the surface, temperature, chemical exposure, printing method and expected service life. We'll help you narrow down the right material and prepare samples for evaluation.",
+            "告诉我们贴附表面、温度、化学暴露、打印方式与预期使用寿命，我们将帮您缩小材料范围并准备样品供评估。",
+            "Hãy cho biết bề mặt, nhiệt độ, môi trường hóa chất, phương pháp in và tuổi thọ dự kiến. Chúng tôi sẽ giúp bạn khoanh vùng vật liệu phù hợp và chuẩn bị mẫu để đánh giá.",
+            "บอกเราถึงพื้นผิว อุณหภูมิ การสัมผัสสารเคมี วิธีการพิมพ์ และอายุการใช้งานที่คาดหวัง เราจะช่วยคัดกรองวัสดุที่เหมาะสมและเตรียมตัวอย่างเพื่อประเมิน"),
+   "b1": ("Talk to a Material Specialist", "咨询材料专家", "Trao đổi với chuyên gia vật liệu", "ปรึกษาผู้เชี่ยวชาญด้านวัสดุ"), "b1u": "/contact/",
    "b2": ("Send Us Your Requirements", "提交您的需求", "Gửi yêu cầu của bạn", "ส่งข้อกำหนดของคุณ"), "b2u": "/contact/"},
  "products": {"h": ("Need Help Comparing Materials?", "需要帮助比较材料？",
                      "Cần trợ giúp so sánh vật liệu?", "ต้องการความช่วยเหลือในการเปรียบเทียบวัสดุ?"),
@@ -1547,13 +1547,21 @@ HOME2 = {
 # Green corner labels + banner background images (fill BG with clean COS URLs later)
 HOME_TABS = [("HOME", "首页"), ("PRODUCTS", "产品"), ("APPLICATIONS", "应用"), ("INSIGHTS", "洞察"), ("SERVICE", "服务")]
 # Page hero banners (COS). .hbanner::before lays the brand-blue gradient over the photo.
-BANNER_HOME = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/HOMEPAGE-BANNER"
-BANNER_APPLICATION = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/SOLUTION-BANNERNEW"
-BANNER_INSIGHT = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/INSIGHT-NEWBANNER"
-BANNER_SERVICE = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/SERVICE-BANNERNEW"
+_BN = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/"
+BANNER_HOME = _BN + "HOMEPAGE-BANNER"
+BANNER_APPLICATION = _BN + "SOLUTION-BANNERNEW"
+# Insights & Service heroes use a PER-LANGUAGE banner (client supplies one image
+# per language). File convention: <stem>-<lang> with lang in en/zh/vi/th.
+# Single banner per page, all languages (kept simple).
+BANNER_INSIGHT = _BN + "insightbanner-en"
+BANNER_SERVICE = _BN + "servicebanner"
 HOME_BG = [BANNER_HOME, "", "", "", ""]
 # section_hero idx: 0=Products, 1=Applications, 2=Insights, 3=Service
 SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
+
+def section_banner(idx, lang):
+    """Hero background for a section page (single image, all languages)."""
+    return SECTION_BG.get(idx, "")
 
 def hero_cta(lang):
     # ONE unified banner contact button, identical everywhere (green · Talk to us).
@@ -1613,7 +1621,7 @@ _HOME_HERO_CSS = """<style>
 .hhbtn{font-family:var(--sans);font-weight:700;font-size:15px;border-radius:11px;padding:14px 24px;text-decoration:none;border:1.5px solid transparent;display:inline-block}
 .hhbtn.pri{background:var(--green);color:#fff}
 .hhbtn.gho{background:#fff;border-color:var(--line);color:var(--blue-deep)}
-.hhwin{position:relative;aspect-ratio:16/11;max-height:300px;margin-left:auto;width:100%;max-width:440px;border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 20px 48px rgba(16,34,58,.15)}
+.hhwin{position:relative;aspect-ratio:16/11;max-height:300px;margin-left:auto;width:100%;max-width:440px;border-radius:18px;overflow:hidden;background:linear-gradient(150deg,#e9eefc,#e8f4e3);border:1px solid var(--line);box-shadow:0 20px 48px rgba(16,34,58,.15)}
 .hhslide{position:absolute;inset:0;text-decoration:none;color:inherit;opacity:0;transition:opacity .5s ease;pointer-events:none}
 .hhslide.on{opacity:1;pointer-events:auto}
 .hhslide img{width:100%;height:100%;object-fit:cover;background:#e8eefb;display:block}
@@ -1662,8 +1670,10 @@ def home_hero(lang):
         pos = item[4] if len(item) > 4 else ""
         on = " on" if k==0 else ""
         style = (' style="object-position:%s"' % esc(pos)) if pos else ""
-        slides += ('<a class="hhslide%s" href="%s" aria-label="%s"><img src="%s" alt="%s" loading="%s"%s onerror="this.style.display=\'none\'"></a>') % (
-            on, home_hlink(lang,url), esc(nm[j]), esc(img), esc(nm[j]), "eager" if k==0 else "lazy", style)
+        # First slide: eager + high priority so the hero paints immediately (no blank flash).
+        fp = ' fetchpriority="high"' if k==0 else ''
+        slides += ('<a class="hhslide%s" href="%s" aria-label="%s"><img src="%s" alt="%s" loading="%s"%s%s onerror="this.style.display=\'none\'"></a>') % (
+            on, home_hlink(lang,url), esc(nm[j]), esc(img), esc(nm[j]), "eager" if k==0 else "lazy", fp, style)
         dots += '<i class="%s"></i>' % ("on" if k==0 else "")
     check = '<span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>'
     script = ("<script>(function(){var w=document.getElementById('hhwin');if(!w)return;"
@@ -1674,12 +1684,60 @@ def home_hero(lang):
               "d.forEach(function(x,k){x.addEventListener('click',function(){go(k);});});"
               "if(!window.matchMedia||!matchMedia('(prefers-reduced-motion:reduce)').matches)"
               "setInterval(function(){go(i+1);},3500);})();</script>")
+    # (The home page shell already emits a <head> preload for the first hero image.)
     return (_HOME_HERO_CSS +
         '<section class="hhero"><div class="wrap hhero-in">'
         '<div class="hhero-copy"><span class="hhero-pill">' + check + ' ' + esc(pill_txt) + '</span>'
         '<h1>' + esc(head) + '</h1><p class="hsub">' + esc(sub) + '</p>'
         '<div class="hhero-cta"><a class="hhbtn pri" href="' + home_hlink(lang,"/products/find/") + '">' + esc(c1) + '</a>'
         '<a class="hhbtn gho" href="' + home_hlink(lang,"/contact/") + '">' + esc(c2) + '</a></div></div>'
+        '<div class="hhwin" id="hhwin">' + slides + '<div class="hhdots" id="hhdots">' + dots + '</div></div>'
+        '</div></section>' + script)
+
+# Solutions hero — same Home-page look (light gradient, navy headline, green sub,
+# rotating window), keeping the existing Solutions slogan. The window cycles the
+# operating-condition photos: high temperature / low temperature / chemical /
+# sterilization (each links to its solution page).
+_SOL_HERO_ITEMS = [
+    ("/products/item/high-heat-identification/", _COS + "APPLICATION%20/enviroment-heat",
+     ("High Temperature", "高温", "Nhiệt độ cao", "อุณหภูมิสูง")),
+    ("/products/item/cold-chain-cryogenic-labels/", _COS + "APPLICATION%20/enviroment-cold",
+     ("Low Temperature", "低温", "Nhiệt độ thấp", "อุณหภูมิต่ำ")),
+    ("/products/item/chemical-resistant-labels/", _COS + "APPLICATION%20/enviroment-chemical",
+     ("Chemical", "化学", "Hóa chất", "สารเคมี")),
+    ("/products/item/sterilization-labels/", _COS + "APPLICATION%20/enviroment-sterlization",
+     ("Sterilization", "消毒灭菌", "Tiệt trùng", "การฆ่าเชื้อ")),
+]
+
+def solutions_hero(lang):
+    j = JX[lang]
+    s = HOME2.get(lang, HOME2["en"])["sections"][1]   # keep existing Solutions slogan
+    pill_txt = s["eyebrow"]; head = s["h2"]; sub = s["sub"]
+    c1 = P(lang, "Find a label material →", "查找标签材料 →", "Tìm vật liệu nhãn →", "ค้นหาวัสดุฉลาก →")
+    c2 = P(lang, "Talk to us", "联系我们", "Liên hệ với chúng tôi", "ติดต่อเรา")
+    slides, dots = "", ""
+    for k, (url, img, nm) in enumerate(_SOL_HERO_ITEMS):
+        on = " on" if k == 0 else ""
+        fp = ' fetchpriority="high"' if k == 0 else ''
+        slides += ('<a class="hhslide%s" href="%s" aria-label="%s"><img src="%s" alt="%s" loading="%s"%s onerror="this.style.display=\'none\'"></a>') % (
+            on, Lx(lang, url), esc(nm[j]), esc(img), esc(nm[j]), "eager" if k == 0 else "lazy", fp)
+        dots += '<i class="%s"></i>' % ("on" if k == 0 else "")
+    check = '<span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>'
+    script = ("<script>(function(){var w=document.getElementById('hhwin');if(!w)return;"
+              "var s=w.querySelectorAll('.hhslide'),d=w.querySelectorAll('.hhdots i'),i=0;"
+              "function go(n){i=((n%s.length)+s.length)%s.length;"
+              "s.forEach(function(x,k){x.classList.toggle('on',k===i);});"
+              "d.forEach(function(x,k){x.classList.toggle('on',k===i);});}"
+              "d.forEach(function(x,k){x.addEventListener('click',function(){go(k);});});"
+              "if(!window.matchMedia||!matchMedia('(prefers-reduced-motion:reduce)').matches)"
+              "setInterval(function(){go(i+1);},3800);})();</script>")
+    preload = '<link rel="preload" as="image" href="%s" fetchpriority="high">' % esc(_SOL_HERO_ITEMS[0][1])
+    return (preload + _HOME_HERO_CSS +
+        '<section class="hhero"><div class="wrap hhero-in">'
+        '<div class="hhero-copy"><span class="hhero-pill">' + check + ' ' + esc(pill_txt) + '</span>'
+        '<h1>' + esc(head) + '</h1><p class="hsub">' + esc(sub) + '</p>'
+        '<div class="hhero-cta"><a class="hhbtn pri" href="' + Lx(lang, "/products/find/") + '">' + esc(c1) + '</a>'
+        '<a class="hhbtn gho" href="' + Lx(lang, "/contact/") + '">' + esc(c2) + '</a></div></div>'
         '<div class="hhwin" id="hhwin">' + slides + '<div class="hhdots" id="hhdots">' + dots + '</div></div>'
         '</div></section>' + script)
 
@@ -1692,6 +1750,86 @@ def section_hero(lang, idx, bg=""):
     s = HOME2.get(lang, HOME2["en"])["sections"][idx]
     bg = bg or SECTION_BG.get(idx, "")
     return page_hero(lang, s["eyebrow"], s["h2"], s["sub"], s["body"], s["b1"], s["b1u"], s["b2"], s["b2u"], bg)
+
+# ---- Animated page heroes (same .hbanner look, with a moving background layer) ----
+# Two flavours: a single "Ken Burns" slow-zoom visual (Insights / Service), and a
+# rotating "working-conditions" carousel that cycles through harsh-environment
+# photos with a small changing caption (Solutions). Both respect reduced-motion.
+_HERO_FX_CSS = """<style>
+.hbx{position:relative;overflow:hidden;background:var(--blue-deep);border-bottom:2px solid #fff;display:flex;align-items:center;min-height:320px}
+.hbx .hbx-bg{position:absolute;inset:0;background-size:cover;background-position:center right;z-index:0;will-change:transform,opacity}
+.hbx .hbx-bg.kb{animation:hbxzoom 22s ease-in-out infinite alternate}
+@keyframes hbxzoom{from{transform:scale(1.001)}to{transform:scale(1.10)}}
+.hbx.car .hbx-bg{opacity:0;transition:opacity 1.1s ease}
+.hbx.car .hbx-bg.on{opacity:1;animation:hbxzoom 9s ease-in-out infinite alternate}
+.hbx::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,60,150,.90) 16%,rgba(20,60,150,.50) 54%,rgba(20,60,150,.08))}
+.hbx .wrap{position:relative;z-index:2;width:100%;padding:60px 24px}
+.hbx .eyebrow{color:#8fe063;margin-bottom:6px}
+.hbx h1{color:#fff;font-family:var(--sans);font-weight:800;font-size:40px;line-height:1.12;letter-spacing:-.01em;text-align:left;margin:2px 0 10px;max-width:18em}
+.hbx .hsub{font-size:18px;font-weight:700;color:#eef3ff;margin-bottom:16px;max-width:40em}
+.hbx .btns{display:flex;gap:12px;flex-wrap:wrap}
+.hbx .hbx-env{position:absolute;right:18px;bottom:16px;z-index:3;display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end;max-width:60%}
+.hbx .hbx-tag{position:absolute;right:0;bottom:0;white-space:nowrap;background:rgba(9,26,66,.55);border:1px solid rgba(255,255,255,.28);color:#eaf1ff;font-size:12.5px;font-weight:700;padding:5px 12px;border-radius:999px;opacity:0;transition:opacity .5s ease}
+.hbx .hbx-tag.on{opacity:1;position:relative}
+.hbx .hbx-dots{position:absolute;left:24px;bottom:16px;z-index:3;display:flex;gap:6px}
+.hbx .hbx-dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.55);cursor:pointer}
+.hbx .hbx-dots i.on{width:22px;border-radius:5px;background:var(--green)}
+@media(max-width:820px){.hbx{min-height:250px}.hbx h1{font-size:27px}.hbx .hsub{font-size:15.5px}.hbx .wrap{padding:34px 24px}.hbx .hbx-tag{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.hbx .hbx-bg{animation:none!important}}
+</style>"""
+
+def hero_single_anim(lang, bg, eyebrow, title, sub):
+    """Single main visual with a subtle Ken Burns slow-zoom (Insights / Service)."""
+    bgdiv = ('<div class="hbx-bg kb" style="background-image:url(%s)"></div>' % esc(bg)) if bg else ""
+    eye = ('<div class="eyebrow">%s</div>' % esc(eyebrow)) if eyebrow else ""
+    html = ('<section class="hbx">%s<div class="wrap">%s<h1>%s</h1>'
+            '<p class="hsub">%s</p><div class="btns">%s</div></div></section>') % (
+        bgdiv, eye, esc(title), esc(sub), hero_cta(lang))
+    preload = ('<link rel="preload" as="image" href="%s" fetchpriority="high">' % esc(bg)) if bg else ""
+    return preload + _HERO_FX_CSS + html
+
+def hero_carousel(lang, slides, eyebrow, title, sub):
+    """Rotating 'working-conditions' banner. slides = [(img_url, {4-lang caption})].
+    Headline/slogan stay fixed; only the background photo + caption rotate."""
+    j = JX[lang]
+    bgs = tags = dots = ""
+    for k, (img, env) in enumerate(slides):
+        on = " on" if k == 0 else ""
+        cap = env[j] if isinstance(env, (list, tuple)) else (env.get(lang) or env.get("en"))
+        bgs += '<div class="hbx-bg%s" style="background-image:url(%s)"></div>' % (on, esc(img))
+        tags += '<span class="hbx-tag%s">%s</span>' % (on, esc(cap))
+        dots += '<i class="%s"></i>' % ("on" if k == 0 else "")
+    eye = ('<div class="eyebrow">%s</div>' % esc(eyebrow)) if eyebrow else ""
+    script = ("<script>(function(){var s=document.currentScript.previousElementSibling;"
+              "var bg=s.querySelectorAll('.hbx-bg'),tg=s.querySelectorAll('.hbx-tag'),"
+              "dt=s.querySelectorAll('.hbx-dots i'),i=0;"
+              "function go(n){i=(n+bg.length)%bg.length;"
+              "bg.forEach(function(x,k){x.classList.toggle('on',k===i);});"
+              "tg.forEach(function(x,k){x.classList.toggle('on',k===i);});"
+              "dt.forEach(function(x,k){x.classList.toggle('on',k===i);});}"
+              "dt.forEach(function(x,k){x.addEventListener('click',function(){go(k);});});"
+              "if(!window.matchMedia||!matchMedia('(prefers-reduced-motion:reduce)').matches)"
+              "setInterval(function(){go(i+1);},4200);})();</script>")
+    html = ('<section class="hbx car">%s<div class="wrap">%s<h1>%s</h1>'
+            '<p class="hsub">%s</p><div class="btns">%s</div></div>'
+            '<div class="hbx-env">%s</div><div class="hbx-dots">%s</div></section>') % (
+        bgs, eye, esc(title), esc(sub), hero_cta(lang), tags, dots)
+    preload = ('<link rel="preload" as="image" href="%s" fetchpriority="high">' % esc(slides[0][0])) if slides else ""
+    return preload + _HERO_FX_CSS + html + script
+
+# Solutions "operating-conditions" carousel — the four solution categories this page
+# is organised around: High Temperature / Low Temperature / Chemical / Sterilization
+# (reuses each solution page's own environment photo, guaranteed to resolve on COS).
+_SOL_SLIDES = [
+    (_COS + "APPLICATION%20/enviroment-heat",
+     ("High Temperature", "高温", "Nhiệt độ cao", "อุณหภูมิสูง")),
+    (_COS + "APPLICATION%20/enviroment-cold",
+     ("Low Temperature", "低温", "Nhiệt độ thấp", "อุณหภูมิต่ำ")),
+    (_COS + "APPLICATION%20/enviroment-chemical",
+     ("Chemical Resistant", "化学", "Kháng hóa chất", "สารเคมี")),
+    (_COS + "APPLICATION%20/enviroment-sterlization",
+     ("Sterilization", "消毒灭菌", "Tiệt trùng", "การฆ่าเชื้อ")),
+]
 
 def build_home(lang):
     path="/"
@@ -2137,8 +2275,8 @@ SERVICE_COMMIT=[
   "tag":('Flexible supply, built around your production.', '灵活供货，适配您的生产节奏。', 'Cung ứng linh hoạt, phù hợp với sản xuất của bạn.', 'การจัดหาที่ยืดหยุ่น ออกแบบตามการผลิตของคุณ'),
   "body":[('Multiple warehouses, flexible air and sea logistics, plus custom slitting, die-cutting, and pre-printed labels to support your production.', '多地仓储，海运、空运灵活配送，并提供分切、模切、预打印等配套服务，满足不同生产需求。', 'Nhiều kho hàng, logistics đường biển và hàng không linh hoạt, cùng dịch vụ cắt, bế và in sẵn theo yêu cầu để hỗ trợ sản xuất của bạn.', 'คลังสินค้าหลายแห่ง โลจิสติกส์ทางอากาศและทางทะเลที่ยืดหยุ่น พร้อมบริการสลิต ไดคัท และฉลากพิมพ์ล่วงหน้าตามความต้องการเพื่อสนับสนุนการผลิตของคุณ')],
   "close":('Flexible materials. Flexible formats. Flexible quantities.', '材料灵活、规格灵活、数量灵活。', 'Vật liệu linh hoạt. Quy cách linh hoạt. Số lượng linh hoạt.', 'วัสดุยืดหยุ่น รูปแบบยืดหยุ่น จำนวนยืดหยุ่น')},
- {"num":"04","title":('Responsive Customer Support', '快速响应服务', 'Hỗ trợ khách hàng nhanh chóng', 'การสนับสนุนลูกค้าที่รวดเร็ว'),
-  "tag":('Fast, dependable support from a dedicated team.', '专属团队，快速响应。', 'Hỗ trợ nhanh, đáng tin cậy từ đội ngũ chuyên trách.', 'การสนับสนุนที่รวดเร็วและเชื่อถือได้จากทีมงานเฉพาะทาง'),
+ {"num":"04","title":('Responsive Application Support', '快速应用支持', 'Hỗ trợ ứng dụng nhanh chóng', 'การสนับสนุนการใช้งานที่รวดเร็ว'),
+  "tag":('Fast support for material selection, printing, adhesion and application issues.', '快速响应材料选型、打印、粘接及实际应用中的问题', 'Hỗ trợ nhanh cho việc chọn vật liệu, in ấn, độ bám dính và các vấn đề ứng dụng.', 'การสนับสนุนที่รวดเร็วสำหรับการเลือกวัสดุ การพิมพ์ การยึดเกาะ และปัญหาการใช้งาน'),
   "body":[('A dedicated support team connects sales, engineering, logistics, and service for fast, coordinated responses throughout your project.', '专属服务团队协同销售、工程、物流与客服，快速响应项目需求，持续支持生产运行。', 'Đội ngũ hỗ trợ chuyên trách kết nối bán hàng, kỹ thuật, logistics và dịch vụ để phản hồi nhanh và phối hợp xuyên suốt dự án của bạn.', 'ทีมสนับสนุนเฉพาะทางเชื่อมโยงฝ่ายขาย วิศวกรรม โลจิสติกส์ และบริการ เพื่อการตอบสนองที่รวดเร็วและประสานงานตลอดโครงการของคุณ')],
   "close":('Before delivery, during production, and beyond.', '交付之前、生产之中，以及长期应用之后。', 'Trước khi giao hàng, trong khi sản xuất và về sau.', 'ก่อนการจัดส่ง ระหว่างการผลิต และหลังจากนั้น')},
 ]
@@ -2230,9 +2368,10 @@ def build_service(lang):
         fields, phones)
     body=commit_sec+global_sec+form_sec+('<div class="wrap">%s</div>'%cta2(lang,"service"))+tabscript
     crumb=[(P(lang,"Home","首页","Trang chủ","หน้าแรก"),"/"),(P(lang,"Service","服务","Dịch vụ","บริการ"),"/service/")]
-    # hero = Headline + Slogan only (no eyebrow, no body paragraph, no buttons)
+    # hero = single main visual with a subtle Ken Burns zoom (headline + slogan only)
     sh=HOME2.get(lang,HOME2["en"])["sections"][3]
-    hero=page_hero(lang, "", sh["h2"], sh["sub"], "", "", "", "", "", SECTION_BG.get(3,""))
+    hero=hero_single_anim(lang, section_banner(3, lang), "", sh["h2"], sh["sub"])
+    body=home_trustbar(lang)+body   # 20-year trust bar under the hero
     write(lang,"/service/",page(lang,"/service/",
         P(lang,"Service | ETIA","服务 | ETIA","Dịch vụ | ETIA","บริการ | ETIA"),
         P(lang,"100% quality inspection, application-driven selection, flexible supply and responsive support — the ETIA service commitment.",
@@ -2450,10 +2589,10 @@ def build_applications(lang):
         P(lang,"APPLICATION NOTES","应用笔记","GHI CHÚ ỨNG DỤNG","บันทึกการใช้งาน"),
         P(lang,"Application Notes","应用笔记","Ghi chú ứng dụng","บันทึกการใช้งาน"),
         search_box, note_cards, nohit, filter_js, cta2(lang,"applications"))
-    # hero without body paragraph, single CTA "Talk to Engineering"
-    s=HOME2.get(lang,HOME2["en"])["sections"][1]
-    hero=page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
-                   P(lang,"Talk to Engineering","咨询工程师","Trao đổi với kỹ thuật","ปรึกษาฝ่ายวิศวกรรม"), "/contact/", "", "", SECTION_BG.get(1,""))
+    # hero: Home-page-style hero (same light look, existing slogan) with a rotating
+    # window cycling the operating-condition photos (heat / cold / chemical / sterilization)
+    hero=solutions_hero(lang)
+    body=home_trustbar(lang)+body   # 20-year trust bar under the hero
     crumb=[(P(lang,"Home","首页","Trang chủ","หน้าแรก"),"/"),(P(lang,"Solutions","方案","Giải pháp","โซลูชัน"),"/applications/")]
     write(lang,"/applications/",page(lang,"/applications/",
         P(lang,"Solutions | ETIA","方案 | ETIA","Giải pháp | ETIA","โซลูชัน | ETIA"),
