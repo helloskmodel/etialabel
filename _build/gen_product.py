@@ -450,12 +450,15 @@ def build_lang(d, lang):
             '<h1>%s</h1>%s%s</div></section>') % (
         CSS, bg, esc(L(d.get("eyebrow", {}), lang) or ui["products"]), esc(title), tl_html, cta)
 
+    # Environment Solution pages are intentionally minimal: Overview + Application
+    # (the temperature-tab scenarios) only — no features/specs/certs/why blocks.
+    is_solution = slug in SOLUTION_SLUGS
     body = ""
     if L(d.get("positioning", {}), lang):
         body += section(ui["positioning"], ui["positioning"], '<p class="pos">%s</p>' % esc(L(d["positioning"], lang)))
     # optional construction/structure diagram: {"img":, "title":{lang}, "caption":{lang}, "legend":{lang:[...]}}
     dg = d.get("diagram")
-    if dg and dg.get("img"):
+    if not is_solution and dg and dg.get("img"):
         dtitle = L(dg.get("title", {}), lang) or ui.get("structure", "Construction")
         cap = L(dg.get("caption", {}), lang)
         capf = ('<figcaption>%s</figcaption>' % esc(cap)) if cap else ""
@@ -463,11 +466,11 @@ def build_lang(d, lang):
         legf = ('<ul class="pdleg">%s</ul>' % "".join("<li>%s</li>" % esc(x) for x in leg)) if leg else ""
         body += section(dtitle, dtitle,
             '<div class="pdiagram"><figure><img src="%s" alt="" loading="lazy" onerror="this.closest(\'.pdiagram\').remove()">%s</figure>%s</div>' % (esc(dg["img"]), capf, legf))
-    if d.get("highlight") and L(d["highlight"].get("title", {}), lang):
+    if not is_solution and d.get("highlight") and L(d["highlight"].get("title", {}), lang):
         body += highlight_html(d["highlight"], lang)
-    if L(d.get("challenges", {}), lang):
+    if not is_solution and L(d.get("challenges", {}), lang):
         body += section(ui["challenges"], ui["challenges"], ul(L(d["challenges"], lang), "warn"))
-    if L(d.get("features", {}), lang):
+    if not is_solution and L(d.get("features", {}), lang):
         pimg = d.get("product_img", "")
         if pimg:
             img = '<img class="pimg" src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(pimg)
@@ -476,9 +479,9 @@ def build_lang(d, lang):
             # brand-aware eyebrow. Keeps every landing page's Features block complete.
             img = '<div class="pimg lbl">%s</div>' % barcode_label_svg(_model_code(slug), brand_eyebrow(product_brand(d, slug)))
         body += section(ui["features"], ui["features"], '<div class="pfeat">%s%s</div>' % (img, ul(L(d["features"], lang), "ok")))
-    if L(d.get("benefits", {}), lang):
+    if not is_solution and L(d.get("benefits", {}), lang):
         body += section(ui["benefits"], ui["benefits"], ul(L(d["benefits"], lang), "ok"))
-    if d.get("why"):
+    if not is_solution and d.get("why"):
         w = d["why"]
         heading = L(w.get("heading", {}), lang)
         # Why (rationale) and Benefit (key benefits list) are separate sections.
@@ -488,15 +491,15 @@ def build_lang(d, lang):
             body += section("", ui["key_benefits"], ul(L(w["items"], lang), "ok"))
     if L(d.get("scenarios", {}), lang):
         body += section("", ui["applications"], scenarios_html(L(d["scenarios"], lang), ui, lang))
-    if L(d.get("featured", {}), lang):
+    if not is_solution and L(d.get("featured", {}), lang):
         body += section("", ui["featured"], ul(L(d["featured"], lang), "ok"))
-    if d.get("spec_table"):
+    if not is_solution and d.get("spec_table"):
         body += section(ui["spec"], ui["spec"], spec_table(d["spec_table"], lang))
-    elif L(d.get("spec", {}), lang):
+    elif not is_solution and L(d.get("spec", {}), lang):
         body += section(ui["spec"], ui["spec"], ul(L(d["spec"], lang)))
-    if L(d.get("applications", {}), lang):
+    if not is_solution and L(d.get("applications", {}), lang):
         body += section(ui["applications"], ui["applications"], ul(L(d["applications"], lang)))
-    if L(d.get("certifications", {}), lang):
+    if not is_solution and L(d.get("certifications", {}), lang):
         body += section(ui["certs"], ui["certs"], ul(L(d["certifications"], lang), "ok"))
     body += ('<div class="pcta"><h3>%s</h3><p>%s</p><a class="pbtn" href="%s">%s</a></div>' % (
         esc(ui["cta_btn"]), esc(ui["cta_note"]), contact, esc(ui["cta_btn"])))
