@@ -156,8 +156,8 @@ CSS = """
 .pdiagram figcaption{font-size:12.5px;color:#5a6885;margin-top:8px;max-width:280px}
 .pdleg{list-style:none;padding:0;margin:0;text-align:left;display:flex;flex-direction:column;gap:9px}
 .pdleg li{font-size:14px;line-height:1.5;color:#41506e}
-.pimg{width:100%;max-width:210px;aspect-ratio:16/10;object-fit:contain;border-radius:12px;background:#e8eefb}
-.pimg.lbl{aspect-ratio:4/3;overflow:hidden;display:grid;place-items:center}
+.pimg{width:100%;max-width:210px;aspect-ratio:4/3;border-radius:12px;overflow:hidden;background:#e8eefb;display:grid;place-items:center}
+.pimg.photo img{width:100%;height:100%;object-fit:contain;display:block}
 .pimg.lbl svg.bclbl{width:100%;height:100%;display:block}
 .pcta{max-width:900px;margin:34px auto;background:linear-gradient(120deg,#143C96,#1A56DB);border-radius:16px;padding:30px 30px;color:#fff}
 .pcta h3{margin:0 0 8px;font-size:21px}
@@ -489,11 +489,13 @@ def build_lang(d, lang):
         body += section(ui["challenges"], ui["challenges"], ul(L(d["challenges"], lang), "warn"))
     if not is_solution and L(d.get("features", {}), lang):
         pimg = d.get("product_img", "")
-        if pimg:
-            img = '<img class="pimg" src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(pimg)
+        # Only a real product photo (COS PRODUCT/ folder) is shown as a photo; a
+        # bare INDUSTRY image (often 404s) would collapse the Features grid, so any
+        # non-PRODUCT image falls back to the uniform 4:3 barcode tile.
+        if pimg and "/PRODUCT/" in pimg:
+            img = ('<div class="pimg photo"><img src="%s" alt="" loading="lazy" '
+                   'onerror="this.style.display=\'none\'"></div>') % esc(pimg)
         else:
-            # No photo: uniform 4:3 barcode tile (barcode on top, model code below),
-            # brand-aware eyebrow. Keeps every landing page's Features block complete.
             img = '<div class="pimg lbl">%s</div>' % barcode_label_svg(_model_code(slug), brand_eyebrow(product_brand(d, slug)))
         body += section(ui["features"], ui["features"], '<div class="pfeat">%s%s</div>' % (img, ul(L(d["features"], lang), "ok")))
     if not is_solution and L(d.get("benefits", {}), lang):
