@@ -193,48 +193,68 @@
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/OUTDOOR-NEWEV",
       "products": [
         {
-          "name": "EF21449",
+          "name": {
+            "en": "Battery Module Labels",
+            "zh": "电池模组标签",
+            "vi": "Nhãn mô-đun pin",
+            "th": "ฉลากโมดูลแบตเตอรี่"
+          },
           "line": {
-            "en": "2 mil white matte PET · UL969 · CSA · battery pack & module ID",
-            "zh": "2 mil 白色哑光 PET · UL969 · CSA · 电池包与模组标识",
-            "vi": "PET trắng mờ 2 mil · UL969 · CSA · ID pack & module pin",
-            "th": "PET สีขาวด้าน 2 mil · UL969 · CSA · ระบุแพ็ค/โมดูลแบตเตอรี่"
+            "en": "Module identification, QR-code tracking and production data management.",
+            "zh": "用于电池模组识别、二维码追踪及生产信息管理。",
+            "vi": "Nhận diện mô-đun, theo dõi mã QR và quản lý dữ liệu sản xuất.",
+            "th": "การระบุโมดูล การติดตามด้วยคิวอาร์โค้ด และการจัดการข้อมูลการผลิต"
           },
           "img": "",
           "landing": true,
           "slug": "ef21449"
         },
         {
-          "name": "EFWP344S",
+          "name": {
+            "en": "Battery Pack Warning Labels",
+            "zh": "电池包警示标签",
+            "vi": "Nhãn cảnh báo bộ pin",
+            "th": "ฉลากเตือนแพ็คแบตเตอรี่"
+          },
           "line": {
-            "en": "2 mil white gloss PET · UL969 · cUL/CSA · universally printable",
-            "zh": "2 mil 白色亮光 PET · UL969 · cUL/CSA · 通用可打印",
-            "vi": "PET trắng bóng 2 mil · UL969 · cUL/CSA · in đa dạng",
-            "th": "PET สีขาวเงา 2 mil · UL969 · cUL/CSA · พิมพ์หลากหลาย"
+            "en": "Safety warnings, product identification and serial-number management on battery pack enclosures.",
+            "zh": "用于 PACK 外壳安全警示、产品识别及序列号管理。",
+            "vi": "Cảnh báo an toàn, nhận diện sản phẩm và quản lý số sê-ri trên vỏ bộ pin.",
+            "th": "คำเตือนความปลอดภัย การระบุผลิตภัณฑ์ และการจัดการหมายเลขซีเรียลบนตัวถังแพ็คแบตเตอรี่"
           },
           "img": "",
           "landing": true,
           "slug": "efwp344s"
         },
         {
-          "name": "EF21361v2",
+          "name": {
+            "en": "High- and Low-Voltage Cable Labels",
+            "zh": "高低压线缆标签",
+            "vi": "Nhãn cáp điện áp cao và thấp",
+            "th": "ฉลากสายเคเบิลแรงดันสูงและต่ำ"
+          },
           "line": {
-            "en": "2 mil white matte PET · UL · hi-performance adhesive for rough/oily/LSE",
-            "zh": "2 mil 白色哑光 PET · UL · 高性能胶，耐粗糙/油污/低表面能",
-            "vi": "PET trắng mờ 2 mil · UL · keo hiệu năng cao cho bề mặt thô/dầu/LSE",
-            "th": "PET สีขาวด้าน 2 mil · UL · กาวประสิทธิภาพสูงสำหรับผิวหยาบ/มัน/LSE"
+            "en": "Identify battery-system cables and clearly distinguish high- and low-voltage circuits.",
+            "zh": "用于识别电池系统线缆，清晰区分高压与低压线路。",
+            "vi": "Nhận diện cáp hệ thống pin, phân biệt rõ mạch cao áp và hạ áp.",
+            "th": "ระบุสายเคเบิลระบบแบตเตอรี่ และแยกวงจรแรงดันสูงและต่ำอย่างชัดเจน"
           },
           "img": "",
           "landing": true,
           "slug": "ef21361v2"
         },
         {
-          "name": "EFV400F",
+          "name": {
+            "en": "Factory Rack and Workstation Labels",
+            "zh": "厂区货架与台架标签",
+            "vi": "Nhãn kệ và bàn thao tác nhà máy",
+            "th": "ฉลากชั้นวางและสถานีงานในโรงงาน"
+          },
           "line": {
-            "en": "3.5 mil white vinyl · removable wrap · ASTM E162/E662",
-            "zh": "3.5 mil 白色乙烯基 · 可移除环绕 · ASTM E162/E662",
-            "vi": "Vinyl trắng 3.5 mil · quấn tháo được · ASTM E162/E662",
-            "th": "ไวนิลสีขาว 3.5 mil · หุ้มลอกได้ · ASTM E162/E662"
+            "en": "Identify warehouse racks, production workstations and materials throughout the factory.",
+            "zh": "用于仓储货架、生产台架及产线物料管理。",
+            "vi": "Nhận diện kệ kho, bàn thao tác sản xuất và vật tư trong toàn nhà máy.",
+            "th": "ระบุชั้นวางในคลัง สถานีงานผลิต และวัสดุทั่วทั้งโรงงาน"
           },
           "img": "",
           "landing": true,

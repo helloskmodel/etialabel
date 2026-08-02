@@ -8,13 +8,68 @@ Structure: Hero (title + tagline + email CTA) -> Positioning -> Challenges
 Certifications -> email CTA (samples & TDS by email; no online download).
 Per-page `langs`; en/zh/vi/th supported. Content only from client briefs.
 """
-import json, os
+import json, os, re
 import gen_heatproof as hp
 
 BUILD = os.path.dirname(os.path.abspath(__file__))
 PDIR = os.path.join(BUILD, "data", "products")
 SOURCE_LANG = "zh"
 esc = hp.esc
+P = hp.P
+
+# ---- Generated product image: a 4:3 label tile carrying a Code 39 barcode + the
+# model code. Used as the uniform "product photo" for label lines that ship no
+# photo (e.g. the E-Series polyimide family). Rendered as inline SVG (no files).
+_CODE39 = {
+    '0':'nnnwwnwnn','1':'wnnwnnnnw','2':'nnwwnnnnw','3':'wnwwnnnnn','4':'nnnwwnnnw',
+    '5':'wnnwwnnnn','6':'nnwwwnnnn','7':'nnnwnnwnw','8':'wnnwnnwnn','9':'nnwwnnwnn',
+    'A':'wnnnnwnnw','B':'nnwnnwnnw','C':'wnwnnwnnn','D':'nnnnwwnnw','E':'wnnnwwnnn',
+    'F':'nnwnwwnnn','G':'nnnnnwwnw','H':'wnnnnwwnn','I':'nnwnnwwnn','J':'nnnnwwwnn',
+    'K':'wnnnnnnww','L':'nnwnnnnww','M':'wnwnnnnwn','N':'nnnnwnnww','O':'wnnnwnnwn',
+    'P':'nnwnwnnwn','Q':'nnnnnnwww','R':'wnnnnnwwn','S':'nnwnnnwwn','T':'nnnnwnwwn',
+    'U':'wwnnnnnnw','V':'nwwnnnnnw','W':'wwwnnnnnn','X':'nwnnwnnnw','Y':'wwnnwnnnn',
+    'Z':'nwwnwnnnn','-':'nwnnnnwnw','.':'wwnnnnwnn',' ':'nwwnnnwnn','*':'nwnnwnwnn',
+}
+
+def _model_code(slug):
+    c = slug.upper()
+    return re.sub(r'^XF(\d)', r'XF-\1', c)   # xf58 -> XF-58, xf-504 -> XF-504
+
+def barcode_label_svg(code, eyebrow="POLYONICS"):
+    """Inline SVG: a 4:3 printed-label tile — Code 39 barcode on top, model code below."""
+    seq = "*" + "".join(ch for ch in code.upper() if ch in _CODE39) + "*"
+    N, W = 1.0, 2.6
+    x = 0.0; bars = []
+    for ch in seq:
+        pat = _CODE39.get(ch)
+        if not pat:
+            continue
+        for i, e in enumerate(pat):
+            w = W if e == 'w' else N
+            if i % 2 == 0:      # even elements are bars
+                bars.append((x, w))
+            x += w
+        x += N                  # narrow inter-character gap
+    total = x or 1.0
+    TARGET, X0, BY, BH = 208.0, 56.0, 78.0, 74.0
+    sc = TARGET / total
+    rects = "".join('<rect x="%.2f" y="%d" width="%.2f" height="%d" fill="#101828"/>'
+                    % (X0 + bx * sc, BY, max(bw * sc, 0.4), BH) for bx, bw in bars)
+    return (
+        '<svg class="bclbl" viewBox="0 0 320 240" preserveAspectRatio="xMidYMid meet" '
+        'xmlns="http://www.w3.org/2000/svg" role="img" aria-label="%s">'
+        '<rect width="320" height="240" fill="#eef3fc"/>'
+        '<rect x="34" y="34" width="252" height="172" rx="10" fill="#fff" stroke="#dbe3f1"/>'
+        '<text x="60" y="58" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="8" '
+        'letter-spacing="2.5" fill="#9fb0cf">%s</text>'
+        '%s'
+        '<text x="160" y="188" text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" '
+        'font-size="24" font-weight="700" letter-spacing="2" fill="#143C96">%s</text>'
+        '</svg>') % (esc(code), esc(eyebrow), rects, esc(code))
+
+def is_eseries(slug):
+    """The E-Series polyimide family (E-8xxx) — uniform barcode tile, no photos."""
+    return bool(re.match(r'^e-8\d', slug.lower()))
 
 UI = {
   "en": {"positioning": "Overview", "challenges": "Process Challenges", "features": "Features",
@@ -62,6 +117,11 @@ CSS = """
 .phero .k{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#8fe063}
 .phero h1{color:#fff;font-family:var(--sans);font-weight:800;font-size:40px;letter-spacing:-.01em;margin:2px 0 10px;line-height:1.12;max-width:20em}
 .phero .tl{color:#eef3ff;font-size:18px;font-weight:700;margin:0 0 18px;max-width:40em}
+.pcta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.phero .hcta{display:inline-block;background:#41A62A;color:#fff;font-family:var(--sans);font-weight:800;font-size:14.5px;padding:12px 24px;border-radius:9px;text-decoration:none;border:0;line-height:1.2}
+.phero .hcta:hover{background:#358B22;color:#fff}
+.phero .hcta2{display:inline-block;background:rgba(255,255,255,.12);color:#fff;font-family:var(--sans);font-weight:800;font-size:14.5px;padding:12px 24px;border-radius:9px;text-decoration:none;border:1.5px solid rgba(255,255,255,.6);line-height:1.2}
+.phero .hcta2:hover{background:rgba(255,255,255,.22);color:#fff}
 .pbtn{display:inline-block;background:#41A62A;color:#fff;font-weight:800;font-size:14.5px;padding:12px 22px;border-radius:9px;text-decoration:none}
 .pbtn:hover{background:#358B22}
 .psec{max-width:900px;margin:0 auto;padding:15px 24px}
@@ -97,6 +157,8 @@ CSS = """
 .pdleg{list-style:none;padding:0;margin:0;text-align:left;display:flex;flex-direction:column;gap:9px}
 .pdleg li{font-size:14px;line-height:1.5;color:#41506e}
 .pimg{width:100%;max-width:210px;aspect-ratio:16/10;object-fit:contain;border-radius:12px;background:#e8eefb}
+.pimg.lbl{aspect-ratio:4/3;overflow:hidden;display:grid;place-items:center}
+.pimg.lbl svg.bclbl{width:100%;height:100%;display:block}
 .pcta{max-width:900px;margin:34px auto;background:linear-gradient(120deg,#143C96,#1A56DB);border-radius:16px;padding:30px 30px;color:#fff}
 .pcta h3{margin:0 0 8px;font-size:21px}
 .pcta p{margin:0 0 16px;color:#dbe6ff;font-size:14.5px}
@@ -289,6 +351,11 @@ INDUSTRY_BANNERS = {
     "medical": _COS + "INDUSTRY/MEDICAL-BANNER",
     "outdoor": _COS + "INDUSTRY/OURDOOR-BANNER",
 }
+# Per-industry banner crop, mirrored from the industry landing pages so a product
+# hero shows the same part of the shared banner image as its industry page.
+INDUSTRY_BANNER_POS = {
+    "pcb": "center bottom",
+}
 PRODUCT_INDUSTRY = {
     # PCB / electronics
     "apex": "pcb", "e-series": "pcb", "xf58": "pcb", "xf78": "pcb", "xf-603": "pcb",
@@ -350,18 +417,27 @@ def build_lang(d, lang):
     # Only pages with no industry at all (the environment Solution pages) keep their
     # own banner. See product_industry() + the build audit that flags omissions.
     banner = INDUSTRY_BANNERS.get(product_industry(d, slug), "") or d.get("banner", "")
-    # banner_pos: optional object-position override so a page can steer which part
-    # of the photo shows (e.g. "center bottom" to reveal the bottles). Defaults to
-    # the shared "center right" crop used by every other hero.
-    bpos = d.get("banner_pos", "")
+    # banner_pos: object-position override so a page can steer which part of the
+    # photo shows. A product inherits its industry's crop (so the product hero is
+    # aligned with the industry banner) unless it sets its own.
+    bpos = d.get("banner_pos", "") or INDUSTRY_BANNER_POS.get(product_industry(d, slug), "")
     bstyle = (' style="object-position:%s"' % esc(bpos)) if bpos else ""
     bg = ('<img class="bg" src="%s" alt="" loading="eager"%s onerror="this.style.display=\'none\'">' % (esc(banner), bstyle)) if banner else ""
     contact = hp.Lx(lang, "/contact/")
-    # tagline stays in data for the meta description; hero_tagline:false hides it from the hero
-    tl_html = ('<p class="tl">%s</p>' % esc(L(d.get("tagline", {}), lang))) if d.get("hero_tagline", True) else ""
+    # The hero subtitle would just repeat the Overview, so it is shown only when the
+    # page has no Overview. The tagline stays in data for the meta description.
+    has_overview = bool(L(d.get("positioning", {}), lang))
+    show_tl = d.get("hero_tagline", True) and not has_overview
+    tl_html = ('<p class="tl">%s</p>' % esc(L(d.get("tagline", {}), lang))) if show_tl else ""
+    # Product-page CTAs: Request a Sample (primary) + Request a Quote (secondary).
+    cta = ('<div class="pcta-row">'
+           '<a class="hcta" href="%s">%s</a>'
+           '<a class="hcta2" href="%s">%s</a></div>') % (
+        contact, esc(P(lang, "Request a Sample", "索取样品", "Yêu cầu mẫu", "ขอตัวอย่าง")),
+        contact, esc(P(lang, "Request a Quote", "询价", "Yêu cầu báo giá", "ขอใบเสนอราคา")))
     hero = ('%s<section class="phero">%s<div class="in"><div class="k">%s</div>'
             '<h1>%s</h1>%s%s</div></section>') % (
-        CSS, bg, esc(L(d.get("eyebrow", {}), lang) or ui["products"]), esc(title), tl_html, hp.hero_cta(lang))
+        CSS, bg, esc(L(d.get("eyebrow", {}), lang) or ui["products"]), esc(title), tl_html, cta)
 
     body = ""
     if L(d.get("positioning", {}), lang):
@@ -382,7 +458,13 @@ def build_lang(d, lang):
         body += section(ui["challenges"], ui["challenges"], ul(L(d["challenges"], lang), "warn"))
     if L(d.get("features", {}), lang):
         pimg = d.get("product_img", "")
-        img = ('<img class="pimg" src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(pimg)) if pimg else ""
+        if pimg:
+            img = '<img class="pimg" src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(pimg)
+        else:
+            # No photo: uniform 4:3 barcode tile (barcode on top, model code below),
+            # brand-aware eyebrow. Keeps every landing page's Features block complete.
+            eyebrow = "POLYONICS" if product_brand(d, slug) == "polyonics" else "ETIA"
+            img = '<div class="pimg lbl">%s</div>' % barcode_label_svg(_model_code(slug), eyebrow)
         body += section(ui["features"], ui["features"], '<div class="pfeat">%s%s</div>' % (img, ul(L(d["features"], lang), "ok")))
     if L(d.get("benefits", {}), lang):
         body += section(ui["benefits"], ui["benefits"], ul(L(d["benefits"], lang), "ok"))

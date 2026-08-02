@@ -21,54 +21,12 @@ PATH = "/products/find/"
 esc = hp.esc
 LANGS = ["en", "zh", "vi", "th"]
 
-# ---- Generated product image: a Code 39 barcode label carrying the model code ----
-# These products are labels, so a clean barcode + part-number tile is an on-brand,
-# consistent, zero-photography "product image". Rendered as inline SVG (no files).
-_CODE39 = {
-    '0':'nnnwwnwnn','1':'wnnwnnnnw','2':'nnwwnnnnw','3':'wnwwnnnnn','4':'nnnwwnnnw',
-    '5':'wnnwwnnnn','6':'nnwwwnnnn','7':'nnnwnnwnw','8':'wnnwnnwnn','9':'nnwwnnwnn',
-    'A':'wnnnnwnnw','B':'nnwnnwnnw','C':'wnwnnwnnn','D':'nnnnwwnnw','E':'wnnnwwnnn',
-    'F':'nnwnwwnnn','G':'nnnnnwwnw','H':'wnnnnwwnn','I':'nnwnnwwnn','J':'nnnnwwwnn',
-    'K':'wnnnnnnww','L':'nnwnnnnww','M':'wnwnnnnwn','N':'nnnnwnnww','O':'wnnnwnnwn',
-    'P':'nnwnwnnwn','Q':'nnnnnnwww','R':'wnnnnnwwn','S':'nnwnnnwwn','T':'nnnnwnwwn',
-    'U':'wwnnnnnnw','V':'nwwnnnnnw','W':'wwwnnnnnn','X':'nwnnwnnnw','Y':'wwnnwnnnn',
-    'Z':'nwwnwnnnn','-':'nwnnnnwnw','.':'wwnnnnwnn',' ':'nwwnnnwnn','*':'nwnnwnwnn',
-}
-def _model_code(slug):
-    c = slug.upper()
-    return re.sub(r'^XF(\d)', r'XF-\1', c)   # xf58 -> XF-58, xf-504 -> XF-504, apex -> APEX
-
-def barcode_label_svg(code):
-    """Inline SVG: a printed-label tile with a Code 39 barcode + the model code."""
-    seq = "*" + "".join(ch for ch in code.upper() if ch in _CODE39) + "*"
-    N, W = 1.0, 2.6
-    x = 0.0; bars = []
-    for ch in seq:
-        pat = _CODE39.get(ch)
-        if not pat:
-            continue
-        for i, e in enumerate(pat):
-            w = W if e == 'w' else N
-            if i % 2 == 0:      # even elements are bars
-                bars.append((x, w))
-            x += w
-        x += N                  # narrow inter-character gap
-    total = x or 1.0
-    TARGET, X0, BY, BH = 208.0, 56.0, 66.0, 60.0
-    sc = TARGET / total
-    rects = "".join('<rect x="%.2f" y="%d" width="%.2f" height="%d" fill="#101828"/>'
-                    % (X0 + bx * sc, BY, max(bw * sc, 0.4), BH) for bx, bw in bars)
-    return (
-        '<svg class="bclbl" viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet" '
-        'xmlns="http://www.w3.org/2000/svg" role="img" aria-label="%s">'
-        '<rect width="320" height="200" fill="#eef3fc"/>'
-        '<rect x="34" y="34" width="252" height="132" rx="10" fill="#fff" stroke="#dbe3f1"/>'
-        '<text x="60" y="54" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="8" '
-        'letter-spacing="2.5" fill="#9fb0cf">POLYONICS</text>'
-        '%s'
-        '<text x="160" y="150" text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" '
-        'font-size="22" font-weight="700" letter-spacing="2" fill="#143C96">%s</text>'
-        '</svg>') % (esc(code), rects, esc(code))
+# ---- Generated product image: a 4:3 Code 39 barcode-label tile (barcode on top,
+# model code below). Defined in gen_product so both modules share one generator;
+# aliased here for the finder/brand cards. ----
+_CODE39 = gp._CODE39
+_model_code = gp._model_code
+barcode_label_svg = gp.barcode_label_svg
 
 # Entries excluded from the finder + brand grid because they are NOT a single
 # product: the environment Solution hubs, and the series-overview pages (APEX,
@@ -88,6 +46,7 @@ IND_NAME = {
 # Application categories: label (4-lang) + keyword triggers (searched in the blob).
 APP_CATS = [
     ("esd",     {"en": "ESD / Anti-static", "zh": "防静电", "vi": "Chống tĩnh điện", "th": "ป้องกันไฟฟ้าสถิต"}, ["esd", "anti-static", "static-dissipative", "防静电", "静电"]),
+    ("washreflow", {"en": "Wash & Reflow PI", "zh": "耐焊洗 PI", "vi": "Chịu rửa & reflow (PI)", "th": "ทนล้าง & รีโฟลว์ (PI)"}, ["reflow", "wave-solder", "wave solder", "wave soldering", "solder flux", "回流焊", "波峰焊", "焊洗", "过炉"]),
     ("flame",   {"en": "Flame-Retardant", "zh": "阻燃", "vi": "Chống cháy", "th": "หน่วงไฟ"}, ["flame-retardant", "flame retardant", "ul94", "ul 94", "vtm-0", "halogen-free", "阻燃", "无卤"]),
     ("chem",    {"en": "Chemical-Resistant", "zh": "耐化学", "vi": "Kháng hóa chất", "th": "ทนสารเคมี"}, ["chemical-resistant", "chemical resistant", "solvent-resistant", "solvent resistant", "acid and alkali", "耐化学", "耐溶剂"]),
     ("steril",  {"en": "Sterilization", "zh": "灭菌", "vi": "Tiệt trùng", "th": "การฆ่าเชื้อ"}, ["sterilization", "sterilize", "autoclave", "gamma", "灭菌", "高压灭菌"]),
@@ -95,7 +54,7 @@ APP_CATS = [
     ("blood",   {"en": "Blood Bag", "zh": "血袋", "vi": "Túi máu", "th": "ถุงเลือด"}, ["blood bag", "blood-bag", "血袋"]),
     ("vin",     {"en": "Automotive VIN", "zh": "汽车 VIN", "vi": "VIN ô tô", "th": "VIN ยานยนต์"}, ["vin code", "vin label", "vin plate", "vin identif", "车架号", "汽车 vin"]),
     ("cablew",  {"en": "Wire & Cable ID", "zh": "线缆标识", "vi": "Nhận diện cáp", "th": "ระบุสายเคเบิล"}, ["wire", "cable", "harness", "线缆", "束线", "电缆"]),
-    ("outdoor", {"en": "Outdoor / Weatherable", "zh": "户外耐候", "vi": "Ngoài trời", "th": "กลางแจ้ง"}, ["outdoor", "weatherable", "weather resist", "户外", "耐候"]),
+    ("outdoor", {"en": "Solar & Battery Outdoor Warning", "zh": "光伏/新能源电池户外警示", "vi": "Cảnh báo ngoài trời điện mặt trời & pin", "th": "คำเตือนกลางแจ้งโซลาร์และแบตเตอรี่"}, ["outdoor", "weatherable", "weather resist", "solar", "photovoltaic", "pv module", "new energy", "户外", "耐候", "光伏", "太阳能", "储能", "新能源"]),
 ]
 
 # Facestock keyword triggers (search title + positioning + spec).
@@ -262,16 +221,17 @@ def build_lang(records, lang):
                 % (group, esc(value), esc(label)))
 
     fpanels = ""
-    # Spine first: Temperature (5 tiers), then Material and Thickness, then tags.
+    # Order: Brand first, then the spec spine (Temperature, Material, Application),
+    # and Thickness last.
+    if len(brand_opts) > 1:
+        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["brand"]),
+            "".join(chk("brand", b, L(BRAND[b])) for b in brand_opts))
     if temp_opts:
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["temp"]),
             "".join(chk("temp", t, L(TEMP_BANDS[t])) for t in ["xhot", "vhot", "hot", "std", "cryo"] if t in temp_opts))
     if fs_opts:
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["facestock"]),
             "".join(chk("fs", f, L(json.loads(f))) for f in fs_opts))
-    if thick_opts:
-        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["thick"]),
-            "".join(chk("thick", t, L(THICK_BANDS[t])) for t in ["t1", "t2", "t3", "t5"] if t in thick_opts))
     if app_opts:
         applab = {key: lab for key, lab, kws in APP_CATS}
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["application"]),
@@ -279,9 +239,9 @@ def build_lang(records, lang):
     # Industry is intentionally NOT a filter here: a product serves several
     # industries, so industry-based discovery lives on the "Products › By Industry"
     # pages. This finder is the product/spec angle (temperature, material, application).
-    if len(brand_opts) > 1:
-        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["brand"]),
-            "".join(chk("brand", b, L(BRAND[b])) for b in brand_opts))
+    if thick_opts:
+        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["thick"]),
+            "".join(chk("thick", t, L(THICK_BANDS[t])) for t in ["t1", "t2", "t3", "t5"] if t in thick_opts))
 
     # ---- cards ----
     applab = {key: lab for key, lab, kws in APP_CATS}
@@ -545,7 +505,7 @@ BRAND_CSS = """<style>
 .bcard-img{aspect-ratio:16/10;background:#eef3fc;position:relative;display:grid;place-items:center;overflow:hidden}
 .bcard-img img{width:100%;height:100%;object-fit:cover;display:block}
 .bcard-img.ph{background:linear-gradient(150deg,#1A56DB,#143C96)}
-.bcard-img.lbl{background:#eef3fc}
+.bcard-img.lbl{background:#eef3fc;aspect-ratio:4/3}
 .bcard-img.photo{background:#fff;padding:12px;box-sizing:border-box}
 .bcard-img.photo img{object-fit:contain}
 .bcard-img.lbl svg.bclbl{width:100%;height:100%;display:block}
@@ -775,7 +735,8 @@ def build_brand(records, lang, bkey):
                      'onerror="var p=this.parentNode;p.classList.add(\'ph\');p.innerHTML=\'<span>%s</span>\'"></div>') % (
                 esc(img), esc(L(r["title"])), esc(L(r["title"])))
         else:
-            media = '<div class="bcard-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]))
+            eyebrow = "ETIA" if bkey == "heatproof" else "POLYONICS"
+            media = '<div class="bcard-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]), eyebrow)
         chips = ""
         for f in r["facestocks"][:1]:
             chips += '<span class="bchip">%s</span>' % esc(L(f))
