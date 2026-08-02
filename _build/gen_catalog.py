@@ -453,16 +453,16 @@ HP_OVERVIEW = {
 BRAND_UI = {
     "en": {"eyebrow": "By Brand", "view": "View product →", "home": "Home", "products": "Products",
            "empty": "Products coming soon.",
-           "lede": {"polyonics": "Genuine imported Polyonics polyimide label materials — stocked and application-supported by ETIA for reflow, cleaning and ESD-controlled electronics processes.", "heatproof": "ETIA\u2019s own extreme-temperature label and tag line for heat treatment, hot-metal application and ceramic firing \u2014 from 200 \u00b0C to 1200 \u00b0C."}},
+           "lede": {"polyonics": "Genuine imported Polyonics polyimide label materials — stocked and application-supported by ETIA for reflow, cleaning and ESD-controlled electronics processes.", "heatproof": "Extreme-temperature label and tag line for heat treatment, hot-metal application and ceramic firing \u2014 from 200 \u00b0C to 1200 \u00b0C."}},
     "zh": {"eyebrow": "按品牌", "view": "查看产品 →", "home": "首页", "products": "产品",
            "empty": "产品即将上线。",
-           "lede": {"polyonics": "Polyonics 原装进口聚酰亚胺标签材料 —— 由 ETIA 备货并提供应用支持，适配回流焊、清洗与防静电电子制程。", "heatproof": "ETIA 自研的极端高温标签与吊牌系列，适用于热处理、热金属直贴与陶瓷烧制 —— 200 °C 至 1200 °C。"}},
+           "lede": {"polyonics": "Polyonics 原装进口聚酰亚胺标签材料 —— 由 ETIA 备货并提供应用支持，适配回流焊、清洗与防静电电子制程。", "heatproof": "极端高温标签与吊牌系列，适用于热处理、热金属直贴与陶瓷烧制 —— 200 °C 至 1200 °C。"}},
     "vi": {"eyebrow": "Theo thương hiệu", "view": "Xem sản phẩm →", "home": "Trang chủ", "products": "Sản phẩm",
            "empty": "Sản phẩm sắp ra mắt.",
-           "lede": {"polyonics": "Vật liệu nhãn polyimide Polyonics nhập khẩu chính hãng — được ETIA lưu kho và hỗ trợ ứng dụng cho reflow, làm sạch và quy trình điện tử kiểm soát ESD.", "heatproof": "Dòng nhãn và thẻ nhiệt độ cực cao của ETIA cho xử lý nhiệt, dán kim loại nóng và nung gốm — từ 200 °C đến 1200 °C."}},
+           "lede": {"polyonics": "Vật liệu nhãn polyimide Polyonics nhập khẩu chính hãng — được ETIA lưu kho và hỗ trợ ứng dụng cho reflow, làm sạch và quy trình điện tử kiểm soát ESD.", "heatproof": "Dòng nhãn và thẻ nhiệt độ cực cao cho xử lý nhiệt, dán kim loại nóng và nung gốm — từ 200 °C đến 1200 °C."}},
     "th": {"eyebrow": "ตามแบรนด์", "view": "ดูสินค้า →", "home": "หน้าแรก", "products": "ผลิตภัณฑ์",
            "empty": "สินค้าเร็วๆ นี้",
-           "lede": {"polyonics": "วัสดุฉลากโพลีอิไมด์ Polyonics นำเข้าแท้ — สต๊อกและสนับสนุนการใช้งานโดย ETIA สำหรับรีโฟลว์ การล้าง และกระบวนการอิเล็กทรอนิกส์ที่ควบคุม ESD", "heatproof": "ไลน์ฉลากและแท็กอุณหภูมิสูงสุดขั้วของ ETIA สำหรับการอบชุบ การติดโลหะร้อน และการเผาเซรามิก — 200 °C ถึง 1200 °C"}},
+           "lede": {"polyonics": "วัสดุฉลากโพลีอิไมด์ Polyonics นำเข้าแท้ — สต๊อกและสนับสนุนการใช้งานโดย ETIA สำหรับรีโฟลว์ การล้าง และกระบวนการอิเล็กทรอนิกส์ที่ควบคุม ESD", "heatproof": "ไลน์ฉลากและแท็กอุณหภูมิสูงสุดขั้วสำหรับการอบชุบ การติดโลหะร้อน และการเผาเซรามิก — 200 °C ถึง 1200 °C"}},
 }
 # Polyonics brand banner + overview. Per client decision the Polyonics page
 # reuses the PCB banner (Polyonics is a PCB/electronics-centric line) — no
@@ -809,9 +809,10 @@ def build_brand(records, lang, bkey):
                 "".join(card(r, tag_l) for r in members))
         body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap">%s%s</div>' % (overview, sections))
     elif bkey == "heatproof":
-        # brand hero (steel banner) + overview + aisles grouped by temperature tier
+        # brand hero (steel banner) + overview + aisles grouped by temperature tier.
+        # No subtitle: HEATPROOF is a distributed (agency) brand, not ETIA's own.
         head = HP_HEAD.get(lang) or HP_HEAD["en"]
-        hero = hp.home_banner(lang, HP_BANNER, ui["eyebrow"], head, lede, "", "", "", "", "")
+        hero = hp.home_banner(lang, HP_BANNER, ui["eyebrow"], head, "", "", "", "", "", "")
         paras = HP_OVERVIEW.get(lang) or HP_OVERVIEW["en"]
         overview = ('<div class="bsechd">%s</div>%s' %
                     (esc(POLY_OVERVIEW_LABEL.get(lang) or POLY_OVERVIEW_LABEL["en"]),
