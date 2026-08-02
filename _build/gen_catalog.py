@@ -177,6 +177,19 @@ def _temps(blob):
     return min(vals), max(vals)
 
 
+# Coloured facestocks — detected from the product title, shown as a small dot chip
+# on the product card. (White/black are the defaults and are not chipped.)
+COLOR_WORDS = [
+    ("blue",   {"en": "Blue", "zh": "蓝色", "vi": "Xanh dương", "th": "น้ำเงิน"}, "#1e5fd8"),
+    ("green",  {"en": "Green", "zh": "绿色", "vi": "Xanh lá", "th": "เขียว"}, "#2e9e3f"),
+    ("yellow", {"en": "Yellow", "zh": "黄色", "vi": "Vàng", "th": "เหลือง"}, "#e0a800"),
+    ("red",    {"en": "Red", "zh": "红色", "vi": "Đỏ", "th": "แดง"}, "#d23b3b"),
+    ("orange", {"en": "Orange", "zh": "橙色", "vi": "Cam", "th": "ส้ม"}, "#e8720c"),
+    ("amber",  {"en": "Amber", "zh": "琥珀色", "vi": "Hổ phách", "th": "อำพัน"}, "#cf8a00"),
+    ("silver", {"en": "Silver", "zh": "银色", "vi": "Bạc", "th": "เงิน"}, "#8a94a6"),
+]
+
+
 def build_record(d):
     slug = d["slug"]
     blob = _blob(d)
@@ -203,12 +216,18 @@ def build_record(d):
         elif v <= 2.4: thick.append("t2")
         elif v <= 4.9: thick.append("t3")
         else:          thick.append("t5")
+    # colour of a coloured facestock (mark the "colourful PI" products on the card)
+    color = None
+    tlow = ttitle.lower()
+    for kw, lab, dot in COLOR_WORDS:
+        if re.search(r'\b%s\b' % kw, tlow):
+            color = {"lab": lab, "dot": dot}; break
     explicit = d.get("facets", {}) or {}
     return {
         "slug": slug, "url": "/products/item/%s/" % slug,
         "title": d.get("title", {}), "tagline": d.get("tagline", {}),
         "industry": ind, "brand": brand, "apps": apps, "facestocks": facestocks,
-        "temps": temps, "thick": thick,
+        "temps": temps, "thick": thick, "color": color,
         "product_img": d.get("product_img", ""),
         "blob": blob, "explicit": explicit,
     }
@@ -280,6 +299,9 @@ def build_lang(records, lang):
             chips += '<span class="cchip esd">ESD</span>'
         if "flame" in r["apps"]:
             chips += '<span class="cchip fr">%s</span>' % esc(L(applab["flame"]))
+        if r.get("color"):
+            chips += '<span class="cchip clr"><i style="background:%s"></i>%s</span>' % (
+                r["color"]["dot"], esc(L(r["color"]["lab"])))
         data = {
             "industry": [r["industry"]] if r["industry"] else [],
             "brand": [r["brand"]], "app": r["apps"],
@@ -321,6 +343,8 @@ def build_lang(records, lang):
 .cchip.ind{color:#fff;background:#1A56DB}.cchip.mat{color:#2c7a1e;background:#e6f5e0}
 .cchip.esd{color:#1A56DB;background:#eaf1ff}.cchip.fr{color:#b4520a;background:#fdeede}
 .cchip.temphi{color:#b4520a;background:#fdeede}.cchip.templo{color:#0e7490;background:#e0f2fe}
+.cchip.clr{color:#3a4763;background:#f1f4fa;display:inline-flex;align-items:center}
+.cchip.clr i{width:8px;height:8px;border-radius:50%;margin-right:5px;box-shadow:0 0 0 1px rgba(0,0,0,.18)}
 .pcell-go{font-size:12px;font-weight:800;color:#41A62A;margin-top:2px}
 .cnone{padding:40px 8px;color:#5a6884;font-size:15px}
 .fmob{display:none}
@@ -479,19 +503,19 @@ POLY_IMG = hp._COS + "PRODUCT/POLYONICSNETIA"
 POLY_OVERVIEW = {
     "en": [
         "For over 30 years, Polyonics has specialized in high-performance polyimide label materials engineered for PCB and electronics manufacturing. Its materials withstand demanding processes including high-temperature reflow, aggressive fluxes, chemical cleaning and ESD-sensitive production.",
-        "ETIA has partnered with Polyonics for over 20 years and is its exclusive distributor in China and authorized partner in Southeast Asia. We provide genuine materials, local supply and application support for customers in China, Thailand and Vietnam.",
+        "ETIA has partnered with Polyonics for over 20 years and is its exclusive distributor in China and authorized distributor in Southeast Asia. We provide genuine materials, local supply and application support for customers in China, Thailand and Vietnam.",
     ],
     "zh": [
         "30 多年来，Polyonics 专注于面向 PCB 与电子制造的高性能聚酰亚胺标签材料。其材料可耐受高温回流焊、活性助焊剂、化学清洗及静电敏感（ESD）制程等严苛工艺。",
-        "ETIA 与 Polyonics 合作已超过 20 年，是其在中国的独家经销商及东南亚授权合作伙伴。我们为中国、泰国与越南的客户提供正品材料、本地供货与应用支持。",
+        "ETIA 与 Polyonics 合作已超过 20 年，是其在中国的独家经销商及东南亚授权代理。我们为中国、泰国与越南的客户提供正品材料、本地供货与应用支持。",
     ],
     "vi": [
         "Hơn 30 năm qua, Polyonics chuyên về vật liệu nhãn polyimide hiệu năng cao cho sản xuất PCB và điện tử. Vật liệu của hãng chịu được các quy trình khắc nghiệt gồm reflow nhiệt độ cao, flux hoạt tính mạnh, làm sạch hóa chất và sản xuất nhạy ESD.",
-        "ETIA đã hợp tác với Polyonics hơn 20 năm và là nhà phân phối độc quyền tại Trung Quốc và đối tác được ủy quyền tại Đông Nam Á. Chúng tôi cung cấp vật liệu chính hãng, nguồn cung tại chỗ và hỗ trợ ứng dụng cho khách hàng tại Trung Quốc, Thái Lan và Việt Nam.",
+        "ETIA đã hợp tác với Polyonics hơn 20 năm và là nhà phân phối độc quyền tại Trung Quốc và đại lý ủy quyền tại Đông Nam Á. Chúng tôi cung cấp vật liệu chính hãng, nguồn cung tại chỗ và hỗ trợ ứng dụng cho khách hàng tại Trung Quốc, Thái Lan và Việt Nam.",
     ],
     "th": [
         "กว่า 30 ปีที่ Polyonics เชี่ยวชาญด้านวัสดุฉลากโพลีอิไมด์ประสิทธิภาพสูงสำหรับการผลิต PCB และอิเล็กทรอนิกส์ วัสดุทนกระบวนการที่เข้มงวด ได้แก่ รีโฟลว์อุณหภูมิสูง ฟลักซ์ฤทธิ์รุนแรง การล้างด้วยสารเคมี และการผลิตที่ไวต่อ ESD",
-        "ETIA ร่วมมือกับ Polyonics มากว่า 20 ปี และเป็นตัวแทนจำหน่ายแต่เพียงผู้เดียวในจีนและพันธมิตรที่ได้รับอนุญาตในเอเชียตะวันออกเฉียงใต้ เราจัดหาวัสดุของแท้ การจัดหาในพื้นที่ และการสนับสนุนการใช้งานให้ลูกค้าในจีน ไทย และเวียดนาม",
+        "ETIA ร่วมมือกับ Polyonics มากว่า 20 ปี และเป็นตัวแทนจำหน่ายแต่เพียงผู้เดียวในจีนและตัวแทนจำหน่ายที่ได้รับอนุญาตในเอเชียตะวันออกเฉียงใต้ เราจัดหาวัสดุของแท้ การจัดหาในพื้นที่ และการสนับสนุนการใช้งานให้ลูกค้าในจีน ไทย และเวียดนาม",
     ],
 }
 BRAND_CSS = """<style>
@@ -527,6 +551,9 @@ BRAND_CSS = """<style>
 .bchips{display:flex;flex-wrap:wrap;gap:6px}
 .bchip{font-size:11px;font-weight:800;color:#2c7a1e;background:#e6f5e0;border-radius:999px;padding:3px 9px}
 .bchip.t{color:#1A56DB;background:#eaf1ff}
+.bchip.esd{color:#1A56DB;background:#eaf1ff}
+.bchip.clr{color:#3a4763;background:#f1f4fa;display:inline-flex;align-items:center}
+.bchip.clr i{width:8px;height:8px;border-radius:50%;margin-right:5px;box-shadow:0 0 0 1px rgba(0,0,0,.18)}
 .bgo{font-size:13px;font-weight:800;color:#41A62A}
 .bempty{color:#5a6884;font-size:15px;padding:30px 4px}
 </style>"""
@@ -749,6 +776,11 @@ def build_brand(records, lang, bkey):
             chips += '<span class="bchip">%s</span>' % esc(L(f))
         for t in r["temps"][:1]:
             chips += '<span class="bchip t">%s</span>' % esc(L(TEMP_BANDS[t]))
+        if "esd" in r["apps"]:
+            chips += '<span class="bchip esd">ESD</span>'
+        if r.get("color"):
+            chips += '<span class="bchip clr"><i style="background:%s"></i>%s</span>' % (
+                r["color"]["dot"], esc(L(r["color"]["lab"])))
         return ('<a class="bcard" href="%s">%s<div class="bcard-b"><h3>%s</h3><p>%s</p>'
                 '<div class="bchips">%s</div><span class="bgo">%s</span></div></a>') % (
             hp.Lx(lang, r["url"]), media, esc(L(r["title"])), esc(L(r["tagline"])), chips, esc(ui["view"]))
