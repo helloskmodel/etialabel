@@ -1552,18 +1552,18 @@ BANNER_HOME = _BN + "HOMEPAGE-BANNER"
 BANNER_APPLICATION = _BN + "SOLUTION-BANNERNEW"
 # Insights & Service heroes use a PER-LANGUAGE banner (client supplies one image
 # per language). File convention: <stem>-<lang> with lang in en/zh/vi/th.
+# Insights uses a PER-LANGUAGE banner (client supplies one image per language,
+# convention insightbanner-<lang>). Service uses ONE banner for all languages.
 BANNER_INSIGHT_L = {l: _BN + "insightbanner-" + l for l in ("en", "zh", "vi", "th")}
-BANNER_SERVICE_L = {l: _BN + "servicebanner-" + l for l in ("en", "zh", "vi", "th")}
 BANNER_INSIGHT = BANNER_INSIGHT_L["en"]   # default / fallback
-BANNER_SERVICE = BANNER_SERVICE_L["en"]
+BANNER_SERVICE = _BN + "servicebanner"    # single image, all languages
 HOME_BG = [BANNER_HOME, "", "", "", ""]
 # section_hero idx: 0=Products, 1=Applications, 2=Insights, 3=Service
 SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
 
 def section_banner(idx, lang):
-    """Language-aware hero background for section pages (falls back to EN)."""
+    """Language-aware hero background for section pages (Insights only; falls back to EN)."""
     if idx == 2: return BANNER_INSIGHT_L.get(lang, BANNER_INSIGHT_L["en"])
-    if idx == 3: return BANNER_SERVICE_L.get(lang, BANNER_SERVICE_L["en"])
     return SECTION_BG.get(idx, "")
 
 def hero_cta(lang):
