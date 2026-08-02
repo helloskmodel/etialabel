@@ -11,8 +11,35 @@ Uses gen_heatproof's page() shell (same header / nav / footer as the rest of
 the site) and writes over the gen_industry output. Runs AFTER gen_industry in
 build.py. Content lives in the JSON (en + zh, zh = source, fall back to zh).
 """
-import json, os, html
+import json, os, html, re
 import gen_heatproof as hp
+
+PDIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "products")
+
+def _leading_code(txt):
+    """The model code at the start of a text, e.g. 'E-2813 · ...' -> 'E-2813'."""
+    if isinstance(txt, dict):
+        txt = txt.get("en") or ""
+    m = re.match(r'\s*([A-Za-z]{1,4}[- ]?\d[\w.-]*?)(?:\s|·|$)', txt or "")
+    return m.group(1) if m else ""
+
+def _resolve_landing_slug(name, line):
+    """Find a product landing-page slug for a card that has no explicit slug,
+    by matching the model code in its name/line to an existing product JSON.
+    Returns '' when there is no matching page (card stays non-clickable)."""
+    for raw in (_leading_code(line), _leading_code(name) if isinstance(name, str) else ""):
+        if not raw:
+            continue
+        base = raw.strip().lower()
+        cands = [base, base.replace(" ", "-"), base.replace(" ", "")]
+        m = re.match(r'^([a-z]+)-?(\d.*)$', base.replace(" ", ""))
+        if m:
+            cands.append(m.group(1) + "-" + m.group(2))
+        for c in cands:
+            c = c.strip("-")
+            if c and os.path.exists(os.path.join(PDIR, c + ".json")):
+                return c
+    return ""
 
 BUILD = os.path.dirname(os.path.abspath(__file__))
 IND_DIR = os.path.join(BUILD, "data", "industries")
@@ -81,16 +108,16 @@ CSS = """
 .wcgo{font-size:13px;font-weight:800;color:#1A56DB;text-decoration:none}
 .wcgo.off{color:#8a97b3}
 #wcpanel{margin-top:24px;max-width:760px;margin-left:auto;margin-right:auto}
-.wccatimg{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;display:block;margin:0 auto 16px;background:#e8eefb}
-.wc2col{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center;max-width:720px;margin:0 auto 16px}
-.wc2col .wccatimg{margin:0;width:100%;aspect-ratio:4/3;object-fit:cover}
+.wccatimg{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block;margin:0 auto 16px;background:#e8eefb}
+.wc2col{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;max-width:720px;margin:0 auto 16px}
+.wc2col .wccatimg{margin:0;width:100%;height:140px;object-fit:cover;aspect-ratio:auto}
 .wccatcard{background:#f4f7fd;border:1px solid #e6ecf7;border-radius:12px;padding:15px 18px;display:flex;align-items:center}
 .wccatcard .wccatintro{margin:0;text-align:left;font-size:15px;line-height:1.62;color:#2c3a58}
 /* fixed-size cards, centered — a single product stays one card, never stretches */
 #wcpanel .wcmcards{max-width:760px;grid-template-columns:repeat(auto-fill,240px);justify-content:center}
 #wcpanel .wcmcards.wcone{grid-template-columns:300px;justify-content:center;max-width:760px}
 #wcpanel .wcmcards.wcone .wcmcard{max-width:300px}
-@media(max-width:760px){.wc2col{grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}.wccatcard{padding:12px 13px}.wccatcard .wccatintro{font-size:12.5px;line-height:1.48}#wcpanel .wcmcards,#wcpanel .wcmcards.wcone{grid-template-columns:1fr}}
+@media(max-width:760px){.wc2col{grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}.wc2col .wccatimg{height:120px}.wccatcard{padding:12px 13px}.wccatcard .wccatintro{font-size:12.5px;line-height:1.48}#wcpanel .wcmcards,#wcpanel .wcmcards.wcone{grid-template-columns:1fr}}
 .wccatintro{color:#2c3a58;font-size:16px;line-height:1.7;margin:8px auto 20px}
 .wcmcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
 .wcmcard{display:flex;gap:13px;align-items:center;background:#fff;border:1px solid #dbe3f1;border-radius:12px;padding:11px;text-decoration:none;color:#17203a;transition:box-shadow .15s,transform .15s}
@@ -193,7 +220,12 @@ def build_lang(data, lang):
             elif pslug and p.get("landing"):
                 href = hp.Lx(lang, "/products/item/%s/" % pslug); is_landing = True
             else:
-                href = "#"; is_landing = False
+                # No explicit target: auto-link to the model's landing page if one exists.
+                auto = _resolve_landing_slug(p.get("name", ""), p.get("line", {}))
+                if auto:
+                    href = hp.Lx(lang, "/products/item/%s/" % auto); is_landing = True
+                else:
+                    href = "#"; is_landing = False
             pname = p["name"]
             pname = L(pname, lang) if isinstance(pname, dict) else pname
             prods.append({"n": pname, "l": L(p.get("line", {}), lang),
