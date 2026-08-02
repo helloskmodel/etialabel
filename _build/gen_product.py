@@ -277,7 +277,14 @@ def _scn_panel(s, ui, lang="en"):
     if prods:
         def _prow(p):
             nm = esc(p.get("name", ""))
-            name_html = ('<a href="%s">%s</a>' % (hp.Lx(lang, p["url"]), nm)) if p.get("url") else nm
+            # Explicit url wins; otherwise auto-link to the product page when the
+            # named model (e.g. "E-5532") has its own landing page.
+            url = p.get("url", "")
+            if not url:
+                slug = re.sub(r"\s+", "", p.get("name", "").strip().lower())
+                if slug and os.path.exists(os.path.join(PDIR, slug + ".json")):
+                    url = "/products/item/%s/" % slug
+            name_html = ('<a href="%s">%s</a>' % (hp.Lx(lang, url), nm)) if url else nm
             return '<div class="pscn-prod"><b>%s</b><span>%s</span></div>' % (name_html, esc(p.get("material", "")))
         rows = "".join(_prow(p) for p in prods)
         right = '<div class="pscn-rh">%s</div>%s' % (esc(ui["sc_products"]), rows)
@@ -392,8 +399,12 @@ PRODUCT_BRAND = {
 BRAND_NAMES = {
     "polyonics": {"en": "Polyonics", "zh": "Polyonics", "vi": "Polyonics", "th": "Polyonics"},
     "heatproof": {"en": "HEATPROOF", "zh": "HEATPROOF", "vi": "HEATPROOF", "th": "HEATPROOF"},
-    "etia":      {"en": "ETIA (in-house)", "zh": "ETIA 自研", "vi": "ETIA (tự sản xuất)", "th": "ETIA (ผลิตเอง)"},
+    "etia":      {"en": "E-Label", "zh": "E-Label", "vi": "E-Label", "th": "E-Label"},
 }
+# Short brand tag printed on the generated barcode tile (uppercase eyebrow).
+_BRAND_EYEBROW = {"polyonics": "POLYONICS", "heatproof": "HEATPROOF", "etia": "E-LABEL"}
+def brand_eyebrow(brand):
+    return _BRAND_EYEBROW.get(brand, "E-LABEL")
 
 def product_brand(d, slug):
     """Resolve a product's brand key ('polyonics' | 'heatproof' | 'etia'): JSON
@@ -463,8 +474,7 @@ def build_lang(d, lang):
         else:
             # No photo: uniform 4:3 barcode tile (barcode on top, model code below),
             # brand-aware eyebrow. Keeps every landing page's Features block complete.
-            eyebrow = "POLYONICS" if product_brand(d, slug) == "polyonics" else "ETIA"
-            img = '<div class="pimg lbl">%s</div>' % barcode_label_svg(_model_code(slug), eyebrow)
+            img = '<div class="pimg lbl">%s</div>' % barcode_label_svg(_model_code(slug), brand_eyebrow(product_brand(d, slug)))
         body += section(ui["features"], ui["features"], '<div class="pfeat">%s%s</div>' % (img, ul(L(d["features"], lang), "ok")))
     if L(d.get("benefits", {}), lang):
         body += section(ui["benefits"], ui["benefits"], ul(L(d["benefits"], lang), "ok"))
