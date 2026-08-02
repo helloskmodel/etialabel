@@ -273,10 +273,9 @@ def build_lang(records, lang):
             media = ('<div class="pcell-img photo"><img src="%s" alt="%s" loading="lazy" '
                      'onerror="this.closest(\'.pcell-img\').innerHTML=\'%s\'"></div>') % (
                 esc(img), esc(L(r["title"])),
-                barcode_label_svg(_model_code(r["slug"]), "POLYONICS" if r["brand"] == "polyonics" else "ETIA").replace("'", "&#39;"))
+                barcode_label_svg(_model_code(r["slug"]), gp.brand_eyebrow(r["brand"])).replace("'", "&#39;"))
         else:
-            eyebrow = "POLYONICS" if r["brand"] == "polyonics" else "ETIA"
-            media = '<div class="pcell-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]), eyebrow)
+            media = '<div class="pcell-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
         cards += ('<a class="pcell" href="%s" data-f="%s">%s<div class="pcell-t">%s</div>'
                   '<div class="pcell-chips">%s</div>'
                   '<span class="pcell-go">%s</span></a>') % (
@@ -748,8 +747,7 @@ def build_brand(records, lang, bkey):
                      'onerror="var p=this.parentNode;p.classList.add(\'ph\');p.innerHTML=\'<span>%s</span>\'"></div>') % (
                 esc(img), esc(L(r["title"])), esc(L(r["title"])))
         else:
-            eyebrow = "ETIA" if bkey == "heatproof" else "POLYONICS"
-            media = '<div class="bcard-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]), eyebrow)
+            media = '<div class="bcard-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
         chips = ""
         for f in r["facestocks"][:1]:
             chips += '<span class="bchip">%s</span>' % esc(L(f))
