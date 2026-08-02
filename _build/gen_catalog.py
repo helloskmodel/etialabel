@@ -475,27 +475,33 @@ POLY_HEAD = {
 }
 POLY_OVERVIEW_LABEL = {"en": "Overview", "zh": "品牌概述", "vi": "Tổng quan", "th": "ภาพรวม"}
 # Two-paragraph brand overview (client-supplied EN + ZH; VN/TH translated).
+POLY_IMG = hp._COS + "PRODUCT/POLYONICSNETIA"
 POLY_OVERVIEW = {
     "en": [
-        "Polyonics is a U.S.-based specialty coatings manufacturer that engineers high-performance polyimide label materials for PCB and electronic component identification. Its materials are designed to withstand reflow temperatures up to 300°C, wave soldering, aggressive fluxes, and demanding cleaning processes.",
-        "As an authorized Polyonics distributor, ETIA provides genuine materials, local supply, sample support, and application-based material selection for OEMs, contract manufacturers, label converters, and printers.",
+        "For over 30 years, Polyonics has specialized in high-performance polyimide label materials engineered for PCB and electronics manufacturing. Its materials withstand demanding processes including high-temperature reflow, aggressive fluxes, chemical cleaning and ESD-sensitive production.",
+        "ETIA has partnered with Polyonics for over 20 years and is its exclusive distributor in China and authorized partner in Southeast Asia. We provide genuine materials, local supply and application support for customers in China, Thailand and Vietnam.",
     ],
     "zh": [
-        "Polyonics 是美国特种涂层材料制造商，专注于研发适用于 PCB 与电子元器件标识的高性能聚酰亚胺标签材料。其产品可耐受高达 300°C 的回流焊、波峰焊、活性助焊剂及严苛清洗工艺。",
-        "ETIA 是 Polyonics 授权经销商，为 OEM、电子制造企业、模切厂及标签印刷厂提供正品材料、本地供货、样品支持与应用选型服务。",
+        "30 多年来，Polyonics 专注于面向 PCB 与电子制造的高性能聚酰亚胺标签材料。其材料可耐受高温回流焊、活性助焊剂、化学清洗及静电敏感（ESD）制程等严苛工艺。",
+        "ETIA 与 Polyonics 合作已超过 20 年，是其在中国的独家经销商及东南亚授权合作伙伴。我们为中国、泰国与越南的客户提供正品材料、本地供货与应用支持。",
     ],
     "vi": [
-        "Polyonics là nhà sản xuất lớp phủ đặc chủng của Mỹ, chuyên phát triển vật liệu nhãn polyimide hiệu năng cao cho nhận diện PCB và linh kiện điện tử. Vật liệu của hãng được thiết kế để chịu nhiệt độ reflow lên đến 300°C, hàn sóng, flux hoạt tính mạnh và các quy trình làm sạch khắc nghiệt.",
-        "Là nhà phân phối được ủy quyền của Polyonics, ETIA cung cấp vật liệu chính hãng, nguồn cung tại chỗ, hỗ trợ mẫu và tư vấn chọn vật liệu theo ứng dụng cho các OEM, nhà sản xuất hợp đồng (EMS), nhà gia công nhãn và nhà in.",
+        "Hơn 30 năm qua, Polyonics chuyên về vật liệu nhãn polyimide hiệu năng cao cho sản xuất PCB và điện tử. Vật liệu của hãng chịu được các quy trình khắc nghiệt gồm reflow nhiệt độ cao, flux hoạt tính mạnh, làm sạch hóa chất và sản xuất nhạy ESD.",
+        "ETIA đã hợp tác với Polyonics hơn 20 năm và là nhà phân phối độc quyền tại Trung Quốc và đối tác được ủy quyền tại Đông Nam Á. Chúng tôi cung cấp vật liệu chính hãng, nguồn cung tại chỗ và hỗ trợ ứng dụng cho khách hàng tại Trung Quốc, Thái Lan và Việt Nam.",
     ],
     "th": [
-        "Polyonics เป็นผู้ผลิตสารเคลือบเฉพาะทางจากสหรัฐฯ ที่พัฒนาวัสดุฉลากโพลีอิไมด์ประสิทธิภาพสูงสำหรับการระบุ PCB และชิ้นส่วนอิเล็กทรอนิกส์ วัสดุของบริษัทออกแบบมาให้ทนอุณหภูมิรีโฟลว์สูงถึง 300°C การบัดกรีแบบเวฟ ฟลักซ์ที่มีฤทธิ์รุนแรง และกระบวนการทำความสะอาดที่เข้มงวด",
-        "ในฐานะตัวแทนจำหน่ายที่ได้รับอนุญาตของ Polyonics ETIA จัดหาวัสดุของแท้ การจัดหาในพื้นที่ การสนับสนุนตัวอย่าง และการเลือกวัสดุตามการใช้งาน ให้แก่ OEM ผู้ผลิตรับจ้าง ผู้แปรรูปฉลาก และโรงพิมพ์",
+        "กว่า 30 ปีที่ Polyonics เชี่ยวชาญด้านวัสดุฉลากโพลีอิไมด์ประสิทธิภาพสูงสำหรับการผลิต PCB และอิเล็กทรอนิกส์ วัสดุทนกระบวนการที่เข้มงวด ได้แก่ รีโฟลว์อุณหภูมิสูง ฟลักซ์ฤทธิ์รุนแรง การล้างด้วยสารเคมี และการผลิตที่ไวต่อ ESD",
+        "ETIA ร่วมมือกับ Polyonics มากว่า 20 ปี และเป็นตัวแทนจำหน่ายแต่เพียงผู้เดียวในจีนและพันธมิตรที่ได้รับอนุญาตในเอเชียตะวันออกเฉียงใต้ เราจัดหาวัสดุของแท้ การจัดหาในพื้นที่ และการสนับสนุนการใช้งานให้ลูกค้าในจีน ไทย และเวียดนาม",
     ],
 }
 BRAND_CSS = """<style>
 .bwrap{max-width:1120px;margin:0 auto;padding:34px 22px 54px}
-.bover{color:#41506e;font-size:15.5px;line-height:1.7;max-width:80ch;margin:0 0 22px}
+.bover{color:#41506e;font-size:15.5px;line-height:1.7;max-width:80ch;margin:0 0 16px}
+.bover-2col{display:grid;grid-template-columns:1.4fr .9fr;gap:34px;align-items:center;margin:0 0 22px}
+.bover-2col .bover{margin-bottom:14px}
+.bover-img{margin:0}
+.bover-img img{width:100%;height:auto;border-radius:14px;border:1px solid #e6ecf6;box-shadow:0 12px 30px rgba(16,34,58,.10);display:block;background:#f3f6fc}
+@media(max-width:820px){.bover-2col{grid-template-columns:1fr;gap:18px}.bover-img{max-width:460px}}
 .bsec{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:34px 0 14px;padding-top:18px;border-top:1px solid #e6ecf6}
 .bsec h2{font-family:var(--sans);font-weight:800;color:#143C96;font-size:21px;margin:0}
 .bsec .cnt{font-size:12px;font-weight:800;color:#1A56DB;background:#eaf1ff;border-radius:999px;padding:2px 10px}
@@ -753,9 +759,12 @@ def build_brand(records, lang, bkey):
         head = POLY_HEAD.get(lang) or POLY_HEAD["en"]
         hero = hp.home_banner(lang, POLY_BANNER, ui["eyebrow"], head, lede, "", "", "", "", "")
         paras = POLY_OVERVIEW.get(lang) or POLY_OVERVIEW["en"]
-        overview = ('<div class="bsechd">%s</div>%s' %
-                    (esc(POLY_OVERVIEW_LABEL.get(lang) or POLY_OVERVIEW_LABEL["en"]),
-                     "".join('<p class="bover">%s</p>' % esc(p) for p in paras)))
+        ov_txt = ('<div class="bsechd">%s</div>%s' %
+                  (esc(POLY_OVERVIEW_LABEL.get(lang) or POLY_OVERVIEW_LABEL["en"]),
+                   "".join('<p class="bover">%s</p>' % esc(p) for p in paras)))
+        ov_img = ('<div class="bover-img"><img src="%s" alt="Polyonics × ETIA" loading="lazy" '
+                  'onerror="this.parentNode.remove()"></div>' % esc(POLY_IMG))
+        overview = '<div class="bover-2col">%s%s</div>' % (ov_txt, ov_img)
         # e-commerce aisles: one section per series, product cards + compare-specs link
         sections = ""
         for s in POLY_SERIES:
