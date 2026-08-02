@@ -81,16 +81,16 @@ CSS = """
 .wcgo{font-size:13px;font-weight:800;color:#1A56DB;text-decoration:none}
 .wcgo.off{color:#8a97b3}
 #wcpanel{margin-top:24px;max-width:760px;margin-left:auto;margin-right:auto}
-.wccatimg{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block;margin:0 auto 16px;background:#e8eefb}
-.wc2col{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;max-width:720px;margin:0 auto 16px}
-.wc2col .wccatimg{margin:0;width:100%;height:140px;object-fit:cover;aspect-ratio:auto}
+.wccatimg{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;display:block;margin:0 auto 16px;background:#e8eefb}
+.wc2col{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center;max-width:720px;margin:0 auto 16px}
+.wc2col .wccatimg{margin:0;width:100%;aspect-ratio:4/3;object-fit:cover}
 .wccatcard{background:#f4f7fd;border:1px solid #e6ecf7;border-radius:12px;padding:15px 18px;display:flex;align-items:center}
 .wccatcard .wccatintro{margin:0;text-align:left;font-size:15px;line-height:1.62;color:#2c3a58}
 /* fixed-size cards, centered — a single product stays one card, never stretches */
 #wcpanel .wcmcards{max-width:760px;grid-template-columns:repeat(auto-fill,240px);justify-content:center}
 #wcpanel .wcmcards.wcone{grid-template-columns:300px;justify-content:center;max-width:760px}
 #wcpanel .wcmcards.wcone .wcmcard{max-width:300px}
-@media(max-width:760px){.wc2col{grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}.wc2col .wccatimg{height:120px}.wccatcard{padding:12px 13px}.wccatcard .wccatintro{font-size:12.5px;line-height:1.48}#wcpanel .wcmcards,#wcpanel .wcmcards.wcone{grid-template-columns:1fr}}
+@media(max-width:760px){.wc2col{grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}.wccatcard{padding:12px 13px}.wccatcard .wccatintro{font-size:12.5px;line-height:1.48}#wcpanel .wcmcards,#wcpanel .wcmcards.wcone{grid-template-columns:1fr}}
 .wccatintro{color:#2c3a58;font-size:16px;line-height:1.7;margin:8px auto 20px}
 .wcmcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
 .wcmcard{display:flex;gap:13px;align-items:center;background:#fff;border:1px solid #dbe3f1;border-radius:12px;padding:11px;text-decoration:none;color:#17203a;transition:box-shadow .15s,transform .15s}
