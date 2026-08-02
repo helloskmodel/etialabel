@@ -191,10 +191,15 @@ CSS = """
 .pscn-l{display:flex;flex-direction:column;gap:6px}
 .pscn-r{border-left:1px solid #e6ecf6;padding-left:20px}
 .pscn-rh{font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#8593ad;margin-bottom:6px}
-.pscn-prod{padding:9px 0;border-bottom:1px solid #f0f3fa}
+.pscn-prod{padding:9px 0;border-bottom:1px solid #f0f3fa;display:block;text-decoration:none}
 .pscn-prod:last-child{border-bottom:0}
 .pscn-prod b{display:block;font-size:14px;color:#143C96;font-weight:700;line-height:1.3}
 .pscn-prod span{font-size:12.5px;color:#5a6885}
+a.pscn-prod.lk{margin:0 -10px;padding:9px 10px;border-radius:8px;transition:background .12s}
+a.pscn-prod.lk b{color:#1A56DB}
+a.pscn-prod.lk .ar{color:#41A62A;font-weight:800}
+a.pscn-prod.lk:hover{background:#f0f5ff}
+a.pscn-prod.lk:hover b{text-decoration:underline}
 @media(max-width:760px){.pscncard.pscn-cols2,.pscncard.pscn-cols3{grid-template-columns:1fr;gap:14px}.pscn-r{border-left:0;border-top:1px solid #eef2f9;padding-left:0;padding-top:12px}.pscn-img{max-width:360px}}
 /* temperature tab bar — same component as the industry "Choose a category" */
 .scnfc{margin-top:6px}
@@ -299,11 +304,15 @@ def _scn_panel(s, ui, lang="en"):
     if prods:
         def _prow(p):
             nm = esc(p.get("name", ""))
+            mat = esc(p.get("material", ""))
             # Explicit url wins; otherwise auto-link to the product landing page
             # when the named model/series has one (E-5532, Apex Series, E-Series…).
             url = p.get("url", "") or _product_url(p.get("name", ""))
-            name_html = ('<a href="%s">%s</a>' % (hp.Lx(lang, url), nm)) if url else nm
-            return '<div class="pscn-prod"><b>%s</b><span>%s</span></div>' % (name_html, esc(p.get("material", "")))
+            if url:
+                # Whole row is a clear, clickable link to the product page.
+                return ('<a class="pscn-prod lk" href="%s"><b>%s <span class="ar">&rsaquo;</span></b>'
+                        '<span>%s</span></a>') % (hp.Lx(lang, url), nm, mat)
+            return '<div class="pscn-prod"><b>%s</b><span>%s</span></div>' % (nm, mat)
         rows = "".join(_prow(p) for p in prods)
         prod_col = '<div class="pscn-r"><div class="pscn-rh">%s</div>%s</div>' % (esc(ui["sc_products"]), rows)
     cols = [c for c in (img_col, desc_col, prod_col) if c]
