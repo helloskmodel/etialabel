@@ -440,11 +440,11 @@ def build_lang(d, lang):
         pimg = d.get("product_img", "")
         if pimg:
             img = '<img class="pimg" src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(pimg)
-        elif is_eseries(slug):
-            # E-Series family: uniform 4:3 barcode tile (barcode on top, E-XXXX below)
-            img = '<div class="pimg lbl">%s</div>' % barcode_label_svg(_model_code(slug), "ETIA")
         else:
-            img = ""
+            # No photo: uniform 4:3 barcode tile (barcode on top, model code below),
+            # brand-aware eyebrow. Keeps every landing page's Features block complete.
+            eyebrow = "POLYONICS" if product_brand(d, slug) == "polyonics" else "ETIA"
+            img = '<div class="pimg lbl">%s</div>' % barcode_label_svg(_model_code(slug), eyebrow)
         body += section(ui["features"], ui["features"], '<div class="pfeat">%s%s</div>' % (img, ul(L(d["features"], lang), "ok")))
     if L(d.get("benefits", {}), lang):
         body += section(ui["benefits"], ui["benefits"], ul(L(d["benefits"], lang), "ok"))
