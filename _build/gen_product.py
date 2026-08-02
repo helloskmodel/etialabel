@@ -173,7 +173,10 @@ CSS = """
 .phl-lnk{display:inline-block;background:rgba(255,255,255,.14);color:#fff;font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:8px;text-decoration:none;border:1px solid rgba(255,255,255,.25)}
 .phl-lnk:hover{background:rgba(255,255,255,.26)}
 .pscn{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:16px}
-.pscncard{border:1px solid #e3eaf6;border-radius:14px;padding:18px;background:#fff;display:flex;flex-direction:column;gap:6px}
+.pscncard{border:1px solid #e3eaf6;border-radius:14px;padding:18px;background:#fff;display:grid;gap:22px;align-items:start}
+.pscncard.pscn-cols1{grid-template-columns:1fr}
+.pscncard.pscn-cols2{grid-template-columns:0.95fr 1.05fr}
+.pscncard.pscn-cols3{grid-template-columns:0.9fr 1.25fr 0.85fr}
 .pscncard .tmp{font-size:17px;font-weight:800;color:#41A62A;line-height:1.2}
 .pscncard .pr{font-size:11.5px;font-weight:700;color:#8593ad;text-transform:uppercase;letter-spacing:.05em}
 .pscncard h3{margin:2px 0 0;font-size:16px;color:#143C96;line-height:1.3}
@@ -182,10 +185,9 @@ CSS = """
 .pscn-sub{font-size:12.5px;line-height:1.55;color:#41506e;margin-top:4px}
 .pscn-lb{display:block;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#8593ad;margin-bottom:1px}
 .pscncard .pscn-sub:first-of-type{margin-top:8px;padding-top:8px;border-top:1px solid #eef2f9}
-/* two-column scenario card: left = process, right = products (name + material) */
-.pscn-img{width:100%;aspect-ratio:21/9;max-height:220px;border-radius:10px;overflow:hidden;background:#eef3fc;margin-bottom:14px}
+/* three side-by-side columns: image (4:3) · description · products */
+.pscn-img{aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:#eef3fc}
 .pscn-img img{width:100%;height:100%;object-fit:cover;display:block}
-.pscn2 .pscn-body{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;align-items:start}
 .pscn-l{display:flex;flex-direction:column;gap:6px}
 .pscn-r{border-left:1px solid #e6ecf6;padding-left:20px}
 .pscn-rh{font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#8593ad;margin-bottom:6px}
@@ -193,7 +195,7 @@ CSS = """
 .pscn-prod:last-child{border-bottom:0}
 .pscn-prod b{display:block;font-size:14px;color:#143C96;font-weight:700;line-height:1.3}
 .pscn-prod span{font-size:12.5px;color:#5a6885}
-@media(max-width:640px){.pscn2 .pscn-body{grid-template-columns:1fr;gap:14px}.pscn-r{border-left:0;border-top:1px solid #eef2f9;padding-left:0;padding-top:12px}}
+@media(max-width:760px){.pscncard.pscn-cols2,.pscncard.pscn-cols3{grid-template-columns:1fr;gap:14px}.pscn-r{border-left:0;border-top:1px solid #eef2f9;padding-left:0;padding-top:12px}.pscn-img{max-width:360px}}
 /* temperature tab bar — same component as the industry "Choose a category" */
 .scnfc{margin-top:6px}
 .scnfcrow{display:flex;align-items:flex-end;gap:2px;border-bottom:1px solid #dbe3f1}
@@ -287,12 +289,13 @@ def _scn_panel(s, ui, lang="en"):
     prods = s.get("products_list")
     if s.get("products") and not prods:
         sub += subblock(ui["sc_products"], s["products"])
-    # Optional scenario photo (per temperature) shown as a banner at the top of the card.
+    # Three side-by-side columns: image (4:3) · description · product.
     scimg = s.get("img", "")
-    imghtml = ('<div class="pscn-img"><img src="%s" alt="%s" loading="lazy" '
-               'onerror="this.closest(\'.pscn-img\').remove()"></div>') % (esc(scimg), esc(s.get("title", ""))) if scimg else ""
-    left = '<div class="pr">%s</div><h3>%s</h3><p>%s</p>%s%s' % (
+    img_col = ('<div class="pscn-img"><img src="%s" alt="%s" loading="lazy" '
+               'onerror="this.style.display=\'none\'"></div>') % (esc(scimg), esc(s.get("title", ""))) if scimg else ""
+    desc_col = '<div class="pscn-l"><div class="pr">%s</div><h3>%s</h3><p>%s</p>%s%s</div>' % (
         esc(s.get("process", "")), esc(title), esc(s.get("desc", "")), sub, apline)
+    prod_col = ""
     if prods:
         def _prow(p):
             nm = esc(p.get("name", ""))
@@ -302,12 +305,9 @@ def _scn_panel(s, ui, lang="en"):
             name_html = ('<a href="%s">%s</a>' % (hp.Lx(lang, url), nm)) if url else nm
             return '<div class="pscn-prod"><b>%s</b><span>%s</span></div>' % (name_html, esc(p.get("material", "")))
         rows = "".join(_prow(p) for p in prods)
-        right = '<div class="pscn-rh">%s</div>%s' % (esc(ui["sc_products"]), rows)
-        return ('<div class="pscncard pscn2%s">%s<div class="pscn-body"><div class="pscn-l">%s</div>'
-                '<div class="pscn-r">%s</div></div></div>') % (
-                    " haspic" if imghtml else "", imghtml, left, right)
-    return '<div class="pscncard%s">%s<div class="pscn-body">%s</div></div>' % (
-        " haspic" if imghtml else "", imghtml, left)
+        prod_col = '<div class="pscn-r"><div class="pscn-rh">%s</div>%s</div>' % (esc(ui["sc_products"]), rows)
+    cols = [c for c in (img_col, desc_col, prod_col) if c]
+    return '<div class="pscncard pscn-cols%d">%s</div>' % (len(cols), "".join(cols))
 
 def scenarios_html(items, ui, lang="en"):
     # Temperature tab bar — same component as the industry "Choose a category":
