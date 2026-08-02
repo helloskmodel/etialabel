@@ -134,6 +134,8 @@ nav .ndm.mega .findrow{grid-column:1/-1;background:#eafbe3;border:1px solid #cde
 nav .ndm.mega .findrow b{color:var(--green-d)}
 nav .ndm.mega .findrow:hover{background:#e0f6d4}
 nav .ndm.mega .findrow:hover b{color:var(--green-d)}
+nav .ndm.mega .megahd{grid-column:1/-1;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#8a94a6;padding:8px 14px 0;margin-top:6px;border-top:1px solid var(--line)}
+nav .ndm.mega a.brandrow b{color:#143C96}nav .ndm.mega a.brandrow:hover b{color:var(--blue)}
 .ndmob a.ndma.find{color:var(--green-d);font-weight:700}
 .ndmob{display:none}
 @media(max-width:980px){nav .ndm.pm{grid-template-columns:200px 1fr;left:16px}.pm .ndsub{display:none}}
@@ -711,7 +713,22 @@ INDUSTRY_MENU_DESC = {
  "/industries/medical-pharmaceutical-labeling-solutions/":{"en":"Device, lab and cold-storage ID through sterilization.","zh":"器械、实验室与冷储标识，耐灭菌","vi":"Nhận diện thiết bị, phòng lab và bảo quản lạnh, chịu tiệt trùng.","th":"การระบุอุปกรณ์ ห้องแล็บ และการเก็บเย็น ผ่านการฆ่าเชื้อ"},
  "/industries/steel-metal-ceramic-labeling-solutions/":{"en":"High-temperature identification for metal processing.","zh":"金属加工的高温标识","vi":"Nhận diện nhiệt độ cao cho gia công kim loại.","th":"การระบุอุณหภูมิสูงสำหรับการแปรรูปโลหะ"},
 }
-def simple_dropdown(lang, top_en, top_href, items, is_active, linkfn, descs=None):
+# "By Brand" entries added to the Product mega-menu so the brand pages are findable.
+BRAND_MENU = [
+    ("/products/polyonics/", ("Polyonics", "Polyonics", "Polyonics", "Polyonics"),
+     ("Imported polyimide labels — PCB, ESD & flame-retardant",
+      "进口聚酰亚胺标签 —— PCB、防静电与阻燃",
+      "Nhãn polyimide nhập khẩu — PCB, ESD & chống cháy",
+      "ฉลากโพลีอิไมด์นำเข้า — PCB, ESD และหน่วงไฟ")),
+    ("/products/heatproof/", ("HEATPROOF", "HEATPROOF", "HEATPROOF", "HEATPROOF"),
+     ("ETIA extreme-temperature labels & tags (to 1200 °C)",
+      "ETIA 极端高温标签与标牌（至 1200 °C）",
+      "Nhãn & thẻ nhiệt độ cực cao của ETIA (đến 1200 °C)",
+      "ฉลากและแท็กอุณหภูมิสูงสุดของ ETIA (ถึง 1200 °C)")),
+]
+_LI = {"en": 0, "zh": 1, "vi": 2, "th": 3}
+
+def simple_dropdown(lang, top_en, top_href, items, is_active, linkfn, descs=None, brands=None):
     zh = (lang == "zh")
     def lab(e, z):
         if zh: return z
@@ -729,6 +746,13 @@ def simple_dropdown(lang, top_en, top_href, items, is_active, linkfn, descs=None
         desktop = finder + "".join('<a href="%s"><b>%s</b><span>%s</span></a>' % (
             linkfn(u), esc(lab(e, z)), esc(descs.get(u, {}).get(lang) or descs.get(u, {}).get("en", "")))
             for e, z, u in items)
+        if brands:
+            li = _LI.get(lang, 0)
+            brand_lbl = P(lang, "By Brand", "按品牌", "Theo thương hiệu", "ตามแบรนด์")
+            desktop += '<div class="megahd">%s</div>' % esc(brand_lbl)
+            desktop += "".join('<a class="brandrow" href="%s"><b>%s</b><span>%s</span></a>' % (
+                linkfn(u), esc(nm[li]), esc(ds[li])) for u, nm, ds in brands)
+            mob += "".join('<a class="ndma" href="%s">%s</a>' % (linkfn(u), esc(nm[li])) for u, nm, ds in brands)
         panel = '<div class="ndm mega">%s</div>' % desktop
         mob = ('<a class="ndma find" href="%s">&#128269; %s</a>' % (linkfn("/products/find/"), esc(find_lbl))) + mob
     else:
@@ -765,7 +789,7 @@ def nav_html(lang, active, path="/", langs=None):
     for t, href, key in NAV_ITEMS:
         if key == "products":
             # Product dropdown lists the industry sectors directly (one level).
-            items += simple_dropdown(lang, t, href, PROD_AXES[1][3], key == active, linkfn, descs=INDUSTRY_MENU_DESC)
+            items += simple_dropdown(lang, t, href, PROD_AXES[1][3], key == active, linkfn, descs=INDUSTRY_MENU_DESC, brands=BRAND_MENU)
         else:
             items += '<a href="%s"%s>%s</a>' % (Lx(lang, href), ' class="on"' if key==active else '', navlab(lang, t))
     if len(langs) > 2:
@@ -1391,7 +1415,7 @@ def home_switcher(active):
 def home_nav(lang):
     lf=lambda p: home_hlink(lang,p)
     # Product dropdown lists the industry sectors directly (matches nav_html).
-    prod=simple_dropdown(lang, "Product", "/products/", PROD_AXES[1][3], False, lf, descs=INDUSTRY_MENU_DESC)
+    prod=simple_dropdown(lang, "Product", "/products/", PROD_AXES[1][3], False, lf, descs=INDUSTRY_MENU_DESC, brands=BRAND_MENU)
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
     # top nav after Product: Solutions, Insight, Service
@@ -1699,13 +1723,13 @@ def home_hero(lang):
 # operating-condition photos: high temperature / low temperature / chemical /
 # sterilization (each links to its solution page).
 _SOL_HERO_ITEMS = [
-    ("/products/item/high-heat-identification/", _COS + "APPLICATION%20/enviroment-heat",
+    ("/products/item/high-heat-identification/", _COS + "SOLUTION%20/SOLUTION-HEAT.jpg",
      ("High Temperature", "高温", "Nhiệt độ cao", "อุณหภูมิสูง")),
-    ("/products/item/cold-chain-cryogenic-labels/", _COS + "APPLICATION%20/enviroment-cold",
+    ("/products/item/cold-chain-cryogenic-labels/", _COS + "SOLUTION%20/SOLUTION-COLD.jpg",
      ("Low Temperature", "低温", "Nhiệt độ thấp", "อุณหภูมิต่ำ")),
-    ("/products/item/chemical-resistant-labels/", _COS + "APPLICATION%20/enviroment-chemical",
+    ("/products/item/chemical-resistant-labels/", _COS + "SOLUTION%20/SOLUTION-CHEMICAL.jpg",
      ("Chemical", "化学", "Hóa chất", "สารเคมี")),
-    ("/products/item/sterilization-labels/", _COS + "APPLICATION%20/enviroment-sterlization",
+    ("/products/item/sterilization-labels/", _COS + "SOLUTION%20/SOLUTION-sterlization.jpg",
      ("Sterilization", "消毒灭菌", "Tiệt trùng", "การฆ่าเชื้อ")),
 ]
 
@@ -2535,12 +2559,12 @@ def build_applications(lang):
       "/products/item/sterilization-labels/":("Sterilization","灭菌","Tiệt trùng","การฆ่าเชื้อ"),
     }
     SOL_ICON=[1,2,0,3]  # flame / droplet / chip / … from INDUSTRY_ICONS — fallback only
-    _COS="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/"
+    _SOLC="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/"
     SOL_IMG={
-      "/products/item/high-heat-identification/":     _COS+"enviroment-heat",
-      "/products/item/cold-chain-cryogenic-labels/":  _COS+"enviroment-cold",
-      "/products/item/chemical-resistant-labels/":    _COS+"enviroment-chemical",
-      "/products/item/sterilization-labels/":         _COS+"enviroment-sterlization",
+      "/products/item/high-heat-identification/":     _SOLC+"SOLUTION-HEAT.jpg",
+      "/products/item/cold-chain-cryogenic-labels/":  _SOLC+"SOLUTION-COLD.jpg",
+      "/products/item/chemical-resistant-labels/":    _SOLC+"SOLUTION-CHEMICAL.jpg",
+      "/products/item/sterilization-labels/":         _SOLC+"SOLUTION-sterlization.jpg",
     }
     sol_cards=""
     for i,(e,z,u) in enumerate(PROD_AXES[0][3]):

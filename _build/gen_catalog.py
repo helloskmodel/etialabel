@@ -177,6 +177,19 @@ def _temps(blob):
     return min(vals), max(vals)
 
 
+# Coloured facestocks — detected from the product title, shown as a small dot chip
+# on the product card. (White/black are the defaults and are not chipped.)
+COLOR_WORDS = [
+    ("blue",   {"en": "Blue", "zh": "蓝色", "vi": "Xanh dương", "th": "น้ำเงิน"}, "#1e5fd8"),
+    ("green",  {"en": "Green", "zh": "绿色", "vi": "Xanh lá", "th": "เขียว"}, "#2e9e3f"),
+    ("yellow", {"en": "Yellow", "zh": "黄色", "vi": "Vàng", "th": "เหลือง"}, "#e0a800"),
+    ("red",    {"en": "Red", "zh": "红色", "vi": "Đỏ", "th": "แดง"}, "#d23b3b"),
+    ("orange", {"en": "Orange", "zh": "橙色", "vi": "Cam", "th": "ส้ม"}, "#e8720c"),
+    ("amber",  {"en": "Amber", "zh": "琥珀色", "vi": "Hổ phách", "th": "อำพัน"}, "#cf8a00"),
+    ("silver", {"en": "Silver", "zh": "银色", "vi": "Bạc", "th": "เงิน"}, "#8a94a6"),
+]
+
+
 def build_record(d):
     slug = d["slug"]
     blob = _blob(d)
@@ -203,12 +216,18 @@ def build_record(d):
         elif v <= 2.4: thick.append("t2")
         elif v <= 4.9: thick.append("t3")
         else:          thick.append("t5")
+    # colour of a coloured facestock (mark the "colourful PI" products on the card)
+    color = None
+    tlow = ttitle.lower()
+    for kw, lab, dot in COLOR_WORDS:
+        if re.search(r'\b%s\b' % kw, tlow):
+            color = {"lab": lab, "dot": dot}; break
     explicit = d.get("facets", {}) or {}
     return {
         "slug": slug, "url": "/products/item/%s/" % slug,
         "title": d.get("title", {}), "tagline": d.get("tagline", {}),
         "industry": ind, "brand": brand, "apps": apps, "facestocks": facestocks,
-        "temps": temps, "thick": thick,
+        "temps": temps, "thick": thick, "color": color,
         "product_img": d.get("product_img", ""),
         "blob": blob, "explicit": explicit,
     }
@@ -280,6 +299,9 @@ def build_lang(records, lang):
             chips += '<span class="cchip esd">ESD</span>'
         if "flame" in r["apps"]:
             chips += '<span class="cchip fr">%s</span>' % esc(L(applab["flame"]))
+        if r.get("color"):
+            chips += '<span class="cchip clr"><i style="background:%s"></i>%s</span>' % (
+                r["color"]["dot"], esc(L(r["color"]["lab"])))
         data = {
             "industry": [r["industry"]] if r["industry"] else [],
             "brand": [r["brand"]], "app": r["apps"],
@@ -321,6 +343,8 @@ def build_lang(records, lang):
 .cchip.ind{color:#fff;background:#1A56DB}.cchip.mat{color:#2c7a1e;background:#e6f5e0}
 .cchip.esd{color:#1A56DB;background:#eaf1ff}.cchip.fr{color:#b4520a;background:#fdeede}
 .cchip.temphi{color:#b4520a;background:#fdeede}.cchip.templo{color:#0e7490;background:#e0f2fe}
+.cchip.clr{color:#3a4763;background:#f1f4fa;display:inline-flex;align-items:center}
+.cchip.clr i{width:8px;height:8px;border-radius:50%;margin-right:5px;box-shadow:0 0 0 1px rgba(0,0,0,.18)}
 .pcell-go{font-size:12px;font-weight:800;color:#41A62A;margin-top:2px}
 .cnone{padding:40px 8px;color:#5a6884;font-size:15px}
 .fmob{display:none}
@@ -391,25 +415,30 @@ else document.addEventListener('DOMContentLoaded',cf);
 # (PCB Polyimide · ESD-Safe · Flame-Retardant · Cable & Wire), each a browsable
 # aisle of product cards with a "compare specs" link to its selector table.
 # Each product is assigned to exactly one aisle (most-specific series wins).
+# Polyonics landing page — grouped by product FAMILY (SEM landing structure).
 POLY_SERIES = [
-    {"key": "pcb", "table": "pcb-labels",
-     "name": {"en": "PCB Polyimide Labels", "zh": "PCB 聚酰亚胺标签", "vi": "Nhãn Polyimide PCB", "th": "ฉลากโพลีอิไมด์ PCB"}},
-    {"key": "esd", "table": "esd-safe",
-     "name": {"en": "ESD-Safe Series", "zh": "防静电系列", "vi": "Dòng ESD-Safe", "th": "ซีรีส์ ESD-Safe"}},
+    {"key": "apex", "table": "pcb-labels",
+     "name": {"en": "APEX Series", "zh": "APEX 系列", "vi": "Dòng APEX", "th": "ซีรีส์ APEX"}},
+    {"key": "xf5", "table": "pcb-labels",
+     "name": {"en": "XF5 Series · PCB Polyimide", "zh": "XF5 系列 · PCB 聚酰亚胺", "vi": "Dòng XF5 · Polyimide PCB", "th": "ซีรีส์ XF5 · โพลีอิไมด์ PCB"}},
+    {"key": "esd7", "table": "esd-safe",
+     "name": {"en": "ESD XF7 Series", "zh": "ESD XF7 系列", "vi": "Dòng ESD XF7", "th": "ซีรีส์ ESD XF7"}},
     {"key": "fr", "table": "flame-retardant",
      "name": {"en": "Flame-Retardant Series", "zh": "阻燃系列", "vi": "Dòng chống cháy", "th": "ซีรีส์หน่วงไฟ"}},
     {"key": "cable", "table": "wire-cable",
      "name": {"en": "Cable & Wire Marking", "zh": "线缆标识系列", "vi": "Đánh dấu dây & cáp", "th": "ซีรีส์ทำเครื่องหมายสายไฟ"}},
 ]
 POLY_COMPARE = {"en": "Compare specs →", "zh": "对比规格 →", "vi": "So sánh thông số →", "th": "เปรียบเทียบสเปก →"}
-_SERIES_FR = {"xf-603", "xf-611"}
-_SERIES_ESD = {"xf-781", "xf-782", "xf-784", "xf-446", "xf78"}
-_SERIES_CABLE = {"xf-300", "xf-302"}
+# XF-446 (ESD PET) folds into the ESD family — we lead PET with our own E-2712.
+_FAM_ESD7 = {"xf-781", "xf-782", "xf-784", "xf-446"}
+_FAM_FR = {"xf-603", "xf-611"}
+_FAM_CABLE = {"xf-300", "xf-302", "xf-731", "xf-732"}
 def poly_series_key(slug):
-    if slug in _SERIES_FR: return "fr"
-    if slug in _SERIES_ESD: return "esd"
-    if slug in _SERIES_CABLE: return "cable"
-    return "pcb"
+    if slug.startswith("xf-101") or slug.startswith("xf-102"): return "apex"
+    if slug in _FAM_ESD7: return "esd7"
+    if slug in _FAM_FR: return "fr"
+    if slug in _FAM_CABLE: return "cable"
+    return "xf5"
 
 BRAND_PATH = {"polyonics": "/products/polyonics/", "heatproof": "/products/heatproof/"}
 # HEATPROOF functional segments (browsing aisles on the brand page).
@@ -475,27 +504,33 @@ POLY_HEAD = {
 }
 POLY_OVERVIEW_LABEL = {"en": "Overview", "zh": "品牌概述", "vi": "Tổng quan", "th": "ภาพรวม"}
 # Two-paragraph brand overview (client-supplied EN + ZH; VN/TH translated).
+POLY_IMG = hp._COS + "PRODUCT/POLYONICSNETIA"
 POLY_OVERVIEW = {
     "en": [
-        "Polyonics is a U.S.-based specialty coatings manufacturer that engineers high-performance polyimide label materials for PCB and electronic component identification. Its materials are designed to withstand reflow temperatures up to 300°C, wave soldering, aggressive fluxes, and demanding cleaning processes.",
-        "As an authorized Polyonics distributor, ETIA provides genuine materials, local supply, sample support, and application-based material selection for OEMs, contract manufacturers, label converters, and printers.",
+        "For over 30 years, Polyonics has specialized in high-performance polyimide label materials engineered for PCB and electronics manufacturing. Its materials withstand demanding processes including high-temperature reflow, aggressive fluxes, chemical cleaning and ESD-sensitive production.",
+        "ETIA has partnered with Polyonics for over 20 years and is its exclusive distributor in China and authorized distributor in Southeast Asia. We provide genuine materials, local supply and application support for customers in China, Thailand and Vietnam.",
     ],
     "zh": [
-        "Polyonics 是美国特种涂层材料制造商，专注于研发适用于 PCB 与电子元器件标识的高性能聚酰亚胺标签材料。其产品可耐受高达 300°C 的回流焊、波峰焊、活性助焊剂及严苛清洗工艺。",
-        "ETIA 是 Polyonics 授权经销商，为 OEM、电子制造企业、模切厂及标签印刷厂提供正品材料、本地供货、样品支持与应用选型服务。",
+        "30 多年来，Polyonics 专注于面向 PCB 与电子制造的高性能聚酰亚胺标签材料。其材料可耐受高温回流焊、活性助焊剂、化学清洗及静电敏感（ESD）制程等严苛工艺。",
+        "ETIA 与 Polyonics 合作已超过 20 年，是其在中国的独家经销商及东南亚授权代理。我们为中国、泰国与越南的客户提供正品材料、本地供货与应用支持。",
     ],
     "vi": [
-        "Polyonics là nhà sản xuất lớp phủ đặc chủng của Mỹ, chuyên phát triển vật liệu nhãn polyimide hiệu năng cao cho nhận diện PCB và linh kiện điện tử. Vật liệu của hãng được thiết kế để chịu nhiệt độ reflow lên đến 300°C, hàn sóng, flux hoạt tính mạnh và các quy trình làm sạch khắc nghiệt.",
-        "Là nhà phân phối được ủy quyền của Polyonics, ETIA cung cấp vật liệu chính hãng, nguồn cung tại chỗ, hỗ trợ mẫu và tư vấn chọn vật liệu theo ứng dụng cho các OEM, nhà sản xuất hợp đồng (EMS), nhà gia công nhãn và nhà in.",
+        "Hơn 30 năm qua, Polyonics chuyên về vật liệu nhãn polyimide hiệu năng cao cho sản xuất PCB và điện tử. Vật liệu của hãng chịu được các quy trình khắc nghiệt gồm reflow nhiệt độ cao, flux hoạt tính mạnh, làm sạch hóa chất và sản xuất nhạy ESD.",
+        "ETIA đã hợp tác với Polyonics hơn 20 năm và là nhà phân phối độc quyền tại Trung Quốc và đại lý ủy quyền tại Đông Nam Á. Chúng tôi cung cấp vật liệu chính hãng, nguồn cung tại chỗ và hỗ trợ ứng dụng cho khách hàng tại Trung Quốc, Thái Lan và Việt Nam.",
     ],
     "th": [
-        "Polyonics เป็นผู้ผลิตสารเคลือบเฉพาะทางจากสหรัฐฯ ที่พัฒนาวัสดุฉลากโพลีอิไมด์ประสิทธิภาพสูงสำหรับการระบุ PCB และชิ้นส่วนอิเล็กทรอนิกส์ วัสดุของบริษัทออกแบบมาให้ทนอุณหภูมิรีโฟลว์สูงถึง 300°C การบัดกรีแบบเวฟ ฟลักซ์ที่มีฤทธิ์รุนแรง และกระบวนการทำความสะอาดที่เข้มงวด",
-        "ในฐานะตัวแทนจำหน่ายที่ได้รับอนุญาตของ Polyonics ETIA จัดหาวัสดุของแท้ การจัดหาในพื้นที่ การสนับสนุนตัวอย่าง และการเลือกวัสดุตามการใช้งาน ให้แก่ OEM ผู้ผลิตรับจ้าง ผู้แปรรูปฉลาก และโรงพิมพ์",
+        "กว่า 30 ปีที่ Polyonics เชี่ยวชาญด้านวัสดุฉลากโพลีอิไมด์ประสิทธิภาพสูงสำหรับการผลิต PCB และอิเล็กทรอนิกส์ วัสดุทนกระบวนการที่เข้มงวด ได้แก่ รีโฟลว์อุณหภูมิสูง ฟลักซ์ฤทธิ์รุนแรง การล้างด้วยสารเคมี และการผลิตที่ไวต่อ ESD",
+        "ETIA ร่วมมือกับ Polyonics มากว่า 20 ปี และเป็นตัวแทนจำหน่ายแต่เพียงผู้เดียวในจีนและตัวแทนจำหน่ายที่ได้รับอนุญาตในเอเชียตะวันออกเฉียงใต้ เราจัดหาวัสดุของแท้ การจัดหาในพื้นที่ และการสนับสนุนการใช้งานให้ลูกค้าในจีน ไทย และเวียดนาม",
     ],
 }
 BRAND_CSS = """<style>
 .bwrap{max-width:1120px;margin:0 auto;padding:34px 22px 54px}
-.bover{color:#41506e;font-size:15.5px;line-height:1.7;max-width:80ch;margin:0 0 22px}
+.bover{color:#41506e;font-size:15.5px;line-height:1.7;max-width:80ch;margin:0 0 16px}
+.bover-2col{display:grid;grid-template-columns:1.4fr .9fr;gap:34px;align-items:center;margin:0 0 22px}
+.bover-2col .bover{margin-bottom:14px}
+.bover-img{margin:0}
+.bover-img img{width:100%;height:auto;border-radius:14px;border:1px solid #e6ecf6;box-shadow:0 12px 30px rgba(16,34,58,.10);display:block;background:#f3f6fc}
+@media(max-width:820px){.bover-2col{grid-template-columns:1fr;gap:18px}.bover-img{max-width:460px}}
 .bsec{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:34px 0 14px;padding-top:18px;border-top:1px solid #e6ecf6}
 .bsec h2{font-family:var(--sans);font-weight:800;color:#143C96;font-size:21px;margin:0}
 .bsec .cnt{font-size:12px;font-weight:800;color:#1A56DB;background:#eaf1ff;border-radius:999px;padding:2px 10px}
@@ -521,6 +556,9 @@ BRAND_CSS = """<style>
 .bchips{display:flex;flex-wrap:wrap;gap:6px}
 .bchip{font-size:11px;font-weight:800;color:#2c7a1e;background:#e6f5e0;border-radius:999px;padding:3px 9px}
 .bchip.t{color:#1A56DB;background:#eaf1ff}
+.bchip.esd{color:#1A56DB;background:#eaf1ff}
+.bchip.clr{color:#3a4763;background:#f1f4fa;display:inline-flex;align-items:center}
+.bchip.clr i{width:8px;height:8px;border-radius:50%;margin-right:5px;box-shadow:0 0 0 1px rgba(0,0,0,.18)}
 .bgo{font-size:13px;font-weight:800;color:#41A62A}
 .bempty{color:#5a6884;font-size:15px;padding:30px 4px}
 </style>"""
@@ -743,6 +781,11 @@ def build_brand(records, lang, bkey):
             chips += '<span class="bchip">%s</span>' % esc(L(f))
         for t in r["temps"][:1]:
             chips += '<span class="bchip t">%s</span>' % esc(L(TEMP_BANDS[t]))
+        if "esd" in r["apps"]:
+            chips += '<span class="bchip esd">ESD</span>'
+        if r.get("color"):
+            chips += '<span class="bchip clr"><i style="background:%s"></i>%s</span>' % (
+                r["color"]["dot"], esc(L(r["color"]["lab"])))
         return ('<a class="bcard" href="%s">%s<div class="bcard-b"><h3>%s</h3><p>%s</p>'
                 '<div class="bchips">%s</div><span class="bgo">%s</span></div></a>') % (
             hp.Lx(lang, r["url"]), media, esc(L(r["title"])), esc(L(r["tagline"])), chips, esc(ui["view"]))
@@ -753,9 +796,12 @@ def build_brand(records, lang, bkey):
         head = POLY_HEAD.get(lang) or POLY_HEAD["en"]
         hero = hp.home_banner(lang, POLY_BANNER, ui["eyebrow"], head, lede, "", "", "", "", "")
         paras = POLY_OVERVIEW.get(lang) or POLY_OVERVIEW["en"]
-        overview = ('<div class="bsechd">%s</div>%s' %
-                    (esc(POLY_OVERVIEW_LABEL.get(lang) or POLY_OVERVIEW_LABEL["en"]),
-                     "".join('<p class="bover">%s</p>' % esc(p) for p in paras)))
+        ov_txt = ('<div class="bsechd">%s</div>%s' %
+                  (esc(POLY_OVERVIEW_LABEL.get(lang) or POLY_OVERVIEW_LABEL["en"]),
+                   "".join('<p class="bover">%s</p>' % esc(p) for p in paras)))
+        ov_img = ('<div class="bover-img"><img src="%s" alt="Polyonics × ETIA" loading="lazy" '
+                  'onerror="this.parentNode.remove()"></div>' % esc(POLY_IMG))
+        overview = '<div class="bover-2col">%s%s</div>' % (ov_txt, ov_img)
         # e-commerce aisles: one section per series, product cards + compare-specs link
         sections = ""
         for s in POLY_SERIES:
