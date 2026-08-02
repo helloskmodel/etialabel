@@ -1699,13 +1699,13 @@ def home_hero(lang):
 # operating-condition photos: high temperature / low temperature / chemical /
 # sterilization (each links to its solution page).
 _SOL_HERO_ITEMS = [
-    ("/products/item/high-heat-identification/", _COS + "APPLICATION%20/enviroment-heat",
+    ("/products/item/high-heat-identification/", _COS + "SOLUTION%20/SOLUTION-HEAT.jpg",
      ("High Temperature", "高温", "Nhiệt độ cao", "อุณหภูมิสูง")),
-    ("/products/item/cold-chain-cryogenic-labels/", _COS + "APPLICATION%20/enviroment-cold",
+    ("/products/item/cold-chain-cryogenic-labels/", _COS + "SOLUTION%20/SOLUTION-COLD.jpg",
      ("Low Temperature", "低温", "Nhiệt độ thấp", "อุณหภูมิต่ำ")),
-    ("/products/item/chemical-resistant-labels/", _COS + "APPLICATION%20/enviroment-chemical",
+    ("/products/item/chemical-resistant-labels/", _COS + "SOLUTION%20/SOLUTION-CHEMICAL.jpg",
      ("Chemical", "化学", "Hóa chất", "สารเคมี")),
-    ("/products/item/sterilization-labels/", _COS + "APPLICATION%20/enviroment-sterlization",
+    ("/products/item/sterilization-labels/", _COS + "SOLUTION%20/SOLUTION-sterlization.jpg",
      ("Sterilization", "消毒灭菌", "Tiệt trùng", "การฆ่าเชื้อ")),
 ]
 
@@ -2535,12 +2535,12 @@ def build_applications(lang):
       "/products/item/sterilization-labels/":("Sterilization","灭菌","Tiệt trùng","การฆ่าเชื้อ"),
     }
     SOL_ICON=[1,2,0,3]  # flame / droplet / chip / … from INDUSTRY_ICONS — fallback only
-    _COS="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/APPLICATION%20/"
+    _SOLC="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SOLUTION%20/"
     SOL_IMG={
-      "/products/item/high-heat-identification/":     _COS+"enviroment-heat",
-      "/products/item/cold-chain-cryogenic-labels/":  _COS+"enviroment-cold",
-      "/products/item/chemical-resistant-labels/":    _COS+"enviroment-chemical",
-      "/products/item/sterilization-labels/":         _COS+"enviroment-sterlization",
+      "/products/item/high-heat-identification/":     _SOLC+"SOLUTION-HEAT.jpg",
+      "/products/item/cold-chain-cryogenic-labels/":  _SOLC+"SOLUTION-COLD.jpg",
+      "/products/item/chemical-resistant-labels/":    _SOLC+"SOLUTION-CHEMICAL.jpg",
+      "/products/item/sterilization-labels/":         _SOLC+"SOLUTION-sterlization.jpg",
     }
     sol_cards=""
     for i,(e,z,u) in enumerate(PROD_AXES[0][3]):
