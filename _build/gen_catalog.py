@@ -395,20 +395,21 @@ POLY_SERIES = [
      "name": {"en": "XF5 Series · PCB Polyimide", "zh": "XF5 系列 · PCB 聚酰亚胺", "vi": "Dòng XF5 · Polyimide PCB", "th": "ซีรีส์ XF5 · โพลีอิไมด์ PCB"}},
     {"key": "esd7", "table": "esd-safe", "tag": {"en": "ESD XF7", "zh": "ESD XF7", "vi": "ESD XF7", "th": "ESD XF7"},
      "name": {"en": "ESD XF7 Series", "zh": "ESD XF7 系列", "vi": "Dòng ESD XF7", "th": "ซีรีส์ ESD XF7"}},
-    {"key": "fr", "table": "flame-retardant", "tag": {"en": "Flame-Retardant", "zh": "阻燃", "vi": "Chống cháy", "th": "หน่วงไฟ"},
-     "name": {"en": "Flame-Retardant Series", "zh": "阻燃系列", "vi": "Dòng chống cháy", "th": "ซีรีส์หน่วงไฟ"}},
     {"key": "cable", "table": "wire-cable", "tag": {"en": "Cable & Wire", "zh": "线缆", "vi": "Cáp & Dây", "th": "สายเคเบิล"},
      "name": {"en": "Cable & Wire Marking", "zh": "线缆标识系列", "vi": "Đánh dấu dây & cáp", "th": "ซีรีส์ทำเครื่องหมายสายไฟ"}},
 ]
 POLY_COMPARE = {"en": "Compare specs →", "zh": "对比规格 →", "vi": "So sánh thông số →", "th": "เปรียบเทียบสเปก →"}
 # XF-446 (ESD PET) folds into the ESD family — we lead PET with our own E-2712.
 _FAM_ESD7 = {"xf-781", "xf-782", "xf-784", "xf-446"}
-_FAM_FR = {"xf-603", "xf-611"}
-_FAM_CABLE = {"xf-300", "xf-302", "xf-731", "xf-732"}
+# Cable & Wire family. XF-603/XF-611 are flame-retardant — shown here with a
+# "Flame-Retardant" small tag (no separate FR family). XF-731/732 are PCB labels
+# and stay in the XF5 family.
+_FAM_CABLE = {"xf-300", "xf-302", "xf-603", "xf-611"}
+_FLAME = {"xf-603", "xf-611"}
+_FLAME_LABEL = {"en": "Flame-Retardant", "zh": "阻燃", "vi": "Chống cháy", "th": "หน่วงไฟ"}
 def poly_series_key(slug):
     if slug.startswith("xf-101") or slug.startswith("xf-102"): return "apex"
     if slug in _FAM_ESD7: return "esd7"
-    if slug in _FAM_FR: return "fr"
     if slug in _FAM_CABLE: return "cable"
     return "xf5"
 
@@ -538,6 +539,7 @@ BRAND_CSS = """<style>
 .bchips{display:flex;flex-wrap:wrap;gap:6px}
 .bchip{font-size:11px;font-weight:800;color:#2c7a1e;background:#e6f5e0;border-radius:999px;padding:3px 9px}
 .bchip.fam{color:#143C96;background:#eaf1ff;letter-spacing:.03em}
+.bchip.fr{color:#b4520a;background:#fdeede}
 .bchip.t{color:#1A56DB;background:#eaf1ff}
 .bchip.esd{color:#1A56DB;background:#eaf1ff}
 .bchip.clr{color:#3a4763;background:#f1f4fa;display:inline-flex;align-items:center}
@@ -759,9 +761,12 @@ def build_brand(records, lang, bkey):
                 esc(img), esc(L(r["title"])), esc(L(r["title"])))
         else:
             media = '<div class="bcard-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
-        # A short family tag (e.g. APEX) replaces the long tagline; no other chips.
+        # A short family tag (e.g. APEX) replaces the long tagline; flame-retardant
+        # members (XF-603/XF-611) also carry a small "Flame-Retardant" tag.
         if tag:
             chips = '<span class="bchip fam">%s</span>' % esc(tag)
+            if r["slug"] in _FLAME:
+                chips += '<span class="bchip fr">%s</span>' % esc(L(_FLAME_LABEL))
         else:
             chips = ""
             for f in r["facestocks"][:1]:
