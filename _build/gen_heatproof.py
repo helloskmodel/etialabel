@@ -1756,9 +1756,13 @@ def solutions_hero(lang):
     slides, dots = "", ""
     for k, (url, img, nm) in enumerate(_SOL_HERO_ITEMS):
         on = " on" if k == 0 else ""
+        # First two slides load eagerly (first also high-priority) so neither the
+        # opening image nor the first rotation shows a blank while COS loads.
         fp = ' fetchpriority="high"' if k == 0 else ''
-        slides += ('<a class="hhslide%s" href="%s" aria-label="%s"><img src="%s" alt="%s" loading="%s"%s onerror="this.style.display=\'none\'"></a>') % (
-            on, Lx(lang, url), esc(nm[j]), esc(img), esc(nm[j]), "eager" if k == 0 else "lazy", fp)
+        ld = "eager" if k < 2 else "lazy"
+        dc = ' decoding="async"'
+        slides += ('<a class="hhslide%s" href="%s" aria-label="%s"><img src="%s" alt="%s" loading="%s"%s%s onerror="this.style.display=\'none\'"></a>') % (
+            on, Lx(lang, url), esc(nm[j]), esc(img), esc(nm[j]), ld, dc, fp)
         dots += '<i class="%s"></i>' % ("on" if k == 0 else "")
     check = '<span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>'
     script = ("<script>(function(){var w=document.getElementById('hhwin');if(!w)return;"
@@ -1769,7 +1773,9 @@ def solutions_hero(lang):
               "d.forEach(function(x,k){x.addEventListener('click',function(){go(k);});});"
               "if(!window.matchMedia||!matchMedia('(prefers-reduced-motion:reduce)').matches)"
               "setInterval(function(){go(i+1);},3800);})();</script>")
-    preload = '<link rel="preload" as="image" href="%s" fetchpriority="high">' % esc(_SOL_HERO_ITEMS[0][1])
+    preload = ('<link rel="preload" as="image" href="%s" fetchpriority="high">'
+               '<link rel="preload" as="image" href="%s">') % (
+        esc(_SOL_HERO_ITEMS[0][1]), esc(_SOL_HERO_ITEMS[1][1]))
     return (preload + _HOME_HERO_CSS +
         '<section class="hhero"><div class="wrap hhero-in">'
         '<div class="hhero-copy"><span class="hhero-pill">' + check + ' ' + esc(pill_txt) + '</span>'

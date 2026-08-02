@@ -268,12 +268,21 @@ def build_lang(records, lang):
             "fs": [json.dumps(f, ensure_ascii=False) for f in r["facestocks"]],
             "thick": r["thick"], "temp": r["temps"], "q": r["blob"],
         }
-        cards += ('<a class="pcell" href="%s" data-f="%s"><div class="pcell-t">%s</div>'
+        img = r.get("product_img", "")
+        if img and "/PRODUCT/" in img:
+            media = ('<div class="pcell-img photo"><img src="%s" alt="%s" loading="lazy" '
+                     'onerror="this.closest(\'.pcell-img\').innerHTML=\'%s\'"></div>') % (
+                esc(img), esc(L(r["title"])),
+                barcode_label_svg(_model_code(r["slug"]), "POLYONICS" if r["brand"] == "polyonics" else "ETIA").replace("'", "&#39;"))
+        else:
+            eyebrow = "POLYONICS" if r["brand"] == "polyonics" else "ETIA"
+            media = '<div class="pcell-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]), eyebrow)
+        cards += ('<a class="pcell" href="%s" data-f="%s">%s<div class="pcell-t">%s</div>'
                   '<div class="pcell-chips">%s</div>'
                   '<span class="pcell-go">%s</span></a>') % (
             hp.Lx(lang, r["url"]),
             esc(json.dumps(data, ensure_ascii=False)),
-            esc(L(r["title"])), chips, esc(ui["view"]))
+            media, esc(L(r["title"])), chips, esc(ui["view"]))
 
     CSS = """<style>
 .cwrap{max-width:1180px;margin:0 auto;padding:26px 22px 48px}
@@ -296,6 +305,10 @@ def build_lang(records, lang):
 .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:16px}
 .pcell{display:flex;flex-direction:column;gap:7px;background:#fff;border:1px solid #dbe3f1;border-radius:14px;padding:15px 16px 16px;text-decoration:none;color:#17203a;transition:box-shadow .15s,transform .15s,border-color .15s}
 .pcell:hover{box-shadow:0 12px 30px rgba(20,60,150,.13);transform:translateY(-2px);border-color:#1A56DB}
+.pcell-img{width:100%;aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:#eef3fc;display:grid;place-items:center;margin-bottom:3px}
+.pcell-img.photo{background:#fff}
+.pcell-img img{width:100%;height:100%;object-fit:contain;display:block}
+.pcell-img svg.bclbl{width:100%;height:100%;display:block}
 .pcell-t{font-size:15.5px;font-weight:800;color:#143C96;line-height:1.28}
 .pcell-s{font-size:12.5px;color:#5a6884;line-height:1.5;flex:1}
 .pcell-chips{display:flex;flex-wrap:wrap;gap:5px}
