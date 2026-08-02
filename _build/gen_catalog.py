@@ -415,25 +415,33 @@ else document.addEventListener('DOMContentLoaded',cf);
 # (PCB Polyimide · ESD-Safe · Flame-Retardant · Cable & Wire), each a browsable
 # aisle of product cards with a "compare specs" link to its selector table.
 # Each product is assigned to exactly one aisle (most-specific series wins).
+# Polyonics landing page — grouped by product FAMILY (SEM landing structure).
 POLY_SERIES = [
-    {"key": "pcb", "table": "pcb-labels",
-     "name": {"en": "PCB Polyimide Labels", "zh": "PCB 聚酰亚胺标签", "vi": "Nhãn Polyimide PCB", "th": "ฉลากโพลีอิไมด์ PCB"}},
-    {"key": "esd", "table": "esd-safe",
-     "name": {"en": "ESD-Safe Series", "zh": "防静电系列", "vi": "Dòng ESD-Safe", "th": "ซีรีส์ ESD-Safe"}},
+    {"key": "apex", "table": "pcb-labels",
+     "name": {"en": "APEX Series", "zh": "APEX 系列", "vi": "Dòng APEX", "th": "ซีรีส์ APEX"}},
+    {"key": "xf5", "table": "pcb-labels",
+     "name": {"en": "XF5 Series · PCB Polyimide", "zh": "XF5 系列 · PCB 聚酰亚胺", "vi": "Dòng XF5 · Polyimide PCB", "th": "ซีรีส์ XF5 · โพลีอิไมด์ PCB"}},
+    {"key": "esd7", "table": "esd-safe",
+     "name": {"en": "ESD XF7 Series", "zh": "ESD XF7 系列", "vi": "Dòng ESD XF7", "th": "ซีรีส์ ESD XF7"}},
+    {"key": "pet446", "table": "esd-safe",
+     "name": {"en": "XF-446 · ESD PET", "zh": "XF-446 · 防静电 PET", "vi": "XF-446 · ESD PET", "th": "XF-446 · ESD PET"}},
     {"key": "fr", "table": "flame-retardant",
      "name": {"en": "Flame-Retardant Series", "zh": "阻燃系列", "vi": "Dòng chống cháy", "th": "ซีรีส์หน่วงไฟ"}},
     {"key": "cable", "table": "wire-cable",
      "name": {"en": "Cable & Wire Marking", "zh": "线缆标识系列", "vi": "Đánh dấu dây & cáp", "th": "ซีรีส์ทำเครื่องหมายสายไฟ"}},
 ]
 POLY_COMPARE = {"en": "Compare specs →", "zh": "对比规格 →", "vi": "So sánh thông số →", "th": "เปรียบเทียบสเปก →"}
-_SERIES_FR = {"xf-603", "xf-611"}
-_SERIES_ESD = {"xf-781", "xf-782", "xf-784", "xf-446", "xf78"}
-_SERIES_CABLE = {"xf-300", "xf-302"}
+_FAM_ESD7 = {"xf-781", "xf-782", "xf-784"}
+_FAM_PET446 = {"xf-446"}
+_FAM_FR = {"xf-603", "xf-611"}
+_FAM_CABLE = {"xf-300", "xf-302", "xf-731", "xf-732"}
 def poly_series_key(slug):
-    if slug in _SERIES_FR: return "fr"
-    if slug in _SERIES_ESD: return "esd"
-    if slug in _SERIES_CABLE: return "cable"
-    return "pcb"
+    if slug.startswith("xf-101") or slug.startswith("xf-102"): return "apex"
+    if slug in _FAM_ESD7: return "esd7"
+    if slug in _FAM_PET446: return "pet446"
+    if slug in _FAM_FR: return "fr"
+    if slug in _FAM_CABLE: return "cable"
+    return "xf5"
 
 BRAND_PATH = {"polyonics": "/products/polyonics/", "heatproof": "/products/heatproof/"}
 # HEATPROOF functional segments (browsing aisles on the brand page).
