@@ -421,8 +421,9 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .pmcard:hover h3{color:var(--blue)}
 .pmcard h3 .pmar{color:var(--green-d);font-weight:800}
 .pmcard p{margin:0;font-size:14px;line-height:1.6;color:var(--mut)}
-@media(max-width:820px){.pmgrid{grid-template-columns:1fr 1fr;gap:0 24px}}
-@media(max-width:560px){.pmgrid{grid-template-columns:1fr}}
+.pmgrid.pm4{grid-template-columns:repeat(4,1fr);gap:0 32px}
+@media(max-width:820px){.pmgrid{grid-template-columns:1fr 1fr;gap:0 24px}.pmgrid.pm4{grid-template-columns:1fr 1fr;gap:0 24px}}
+@media(max-width:560px){.pmgrid{grid-template-columns:1fr}.pmgrid.pm4{grid-template-columns:1fr}}
 .freesample{background:linear-gradient(150deg,var(--blue),var(--blue-deep))}
 .fsbox{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
 .fsbox h2{color:#fff;font-size:26px}
@@ -720,6 +721,11 @@ BRAND_MENU = [
       "进口聚酰亚胺标签 —— PCB、防静电与阻燃",
       "Nhãn polyimide nhập khẩu — PCB, ESD & chống cháy",
       "ฉลากโพลีอิไมด์นำเข้า — PCB, ESD และหน่วงไฟ")),
+    ("/products/item/e-series/", ("E-Label", "E-Label", "E-Label", "E-Label"),
+     ("ETIA in-house polyimide PCB labels — general, ESD & removable",
+      "ETIA 自研聚酰亚胺 PCB 标签 —— 通用、防静电与可移除",
+      "Nhãn PCB polyimide tự phát triển của ETIA — phổ thông, ESD & tháo rời",
+      "ฉลาก PCB โพลีอิไมด์ที่ ETIA พัฒนาเอง — ทั่วไป, ESD และถอดได้")),
     ("/products/heatproof/", ("HEATPROOF", "HEATPROOF", "HEATPROOF", "HEATPROOF"),
      ("ETIA extreme-temperature labels & tags (to 1200 °C)",
       "ETIA 极端高温标签与标牌（至 1200 °C）",
@@ -2451,8 +2457,8 @@ def build_products_landing(lang):
             "ฉลากที่ทนไอน้ำ ความร้อนแห้ง แกมมา EtO และการฆ่าเชื้อด้วยสารเคมี ขณะยังคงอ่านได้")),
     ]
     env_cards = "".join(card(u, nm, ds) for u, nm, ds in ENV)
-    sec = lambda eye, h, grid: ('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div>'
-        '<h2>%s</h2><div class="pmgrid">%s</div></div></section>') % (esc(eye), esc(h), grid)
+    sec = lambda eye, h, grid, gcls="": ('<section class="blk"><div class="wrap"><div class="eyebrow">%s</div>'
+        '<h2>%s</h2><div class="pmgrid%s">%s</div></div></section>') % (esc(eye), esc(h), (" " + gcls) if gcls else "", grid)
     find_url = Lx(lang, "/products/find/")
     find_band = (
       '<section class="blk" style="padding-top:26px;padding-bottom:0"><div class="wrap">'
@@ -2476,7 +2482,7 @@ def build_products_landing(lang):
           + sec(P(lang,"BY INDUSTRY","按行业","THEO NGÀNH","ตามอุตสาหกรรม"),
                 P(lang,"Labels by Industry","按行业选择","Nhãn theo ngành","ฉลากตามอุตสาหกรรม"), ind_cards)
           + sec(P(lang,"BY ENVIRONMENT","按环境","THEO MÔI TRƯỜNG","ตามสภาพแวดล้อม"),
-                P(lang,"Labels by Operating Environment","按使用环境选择","Nhãn theo môi trường vận hành","ฉลากตามสภาพแวดล้อมการใช้งาน"), env_cards)
+                P(lang,"Labels by Operating Environment","按使用环境选择","Nhãn theo môi trường vận hành","ฉลากตามสภาพแวดล้อมการใช้งาน"), env_cards, "pm4")
           + sec(P(lang,"BY BRAND","按品牌","THEO THƯƠNG HIỆU","ตามแบรนด์"),
                 P(lang,"Labels by Brand","按品牌选择","Nhãn theo thương hiệu","ฉลากตามแบรนด์"),
                 card("/products/polyonics/",
@@ -2485,6 +2491,12 @@ def build_products_landing(lang):
                           "Polyonics 原装进口聚酰亚胺标签 —— APEX、XF58 与 ESD-XF78 系列。",
                           "Nhãn polyimide Polyonics nhập khẩu chính hãng — dòng APEX, XF58 và ESD-XF78.",
                           "ฉลากโพลีอิไมด์ Polyonics นำเข้าแท้ — ซีรีส์ APEX, XF58 และ ESD-XF78"))
+                + card("/products/item/e-series/",
+                     P(lang,"E-Label","E-Label","E-Label","E-Label"),
+                     P(lang,"ETIA's own in-house polyimide PCB label series — general, high-adhesion, removable and ESD.",
+                          "ETIA 自研聚酰亚胺 PCB 标签系列 —— 通用、超粘、可移除与防静电。",
+                          "Dòng nhãn PCB polyimide tự phát triển của ETIA — phổ thông, siêu bám, tháo rời và chống tĩnh điện.",
+                          "ซีรีส์ฉลาก PCB โพลีอิไมด์ที่ ETIA พัฒนาเอง — ทั่วไป กาวเหนียว ถอดได้ และป้องกันไฟฟ้าสถิต"))
                 + card("/products/heatproof/",
                      P(lang,"HEATPROOF","HEATPROOF","HEATPROOF","HEATPROOF"),
                      P(lang,"ETIA's own extreme-temperature labels and tags — metal-foil and ceramic, 200°C to 1200°C.",
