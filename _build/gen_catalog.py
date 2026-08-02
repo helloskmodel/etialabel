@@ -389,15 +389,15 @@ else document.addEventListener('DOMContentLoaded',cf);
 # Each product is assigned to exactly one aisle (most-specific series wins).
 # Polyonics landing page — grouped by product FAMILY (SEM landing structure).
 POLY_SERIES = [
-    {"key": "apex", "table": "pcb-labels",
+    {"key": "apex", "table": "pcb-labels", "tag": {"en": "APEX", "zh": "APEX", "vi": "APEX", "th": "APEX"},
      "name": {"en": "APEX Series", "zh": "APEX 系列", "vi": "Dòng APEX", "th": "ซีรีส์ APEX"}},
-    {"key": "xf5", "table": "pcb-labels",
+    {"key": "xf5", "table": "pcb-labels", "tag": {"en": "XF5", "zh": "XF5", "vi": "XF5", "th": "XF5"},
      "name": {"en": "XF5 Series · PCB Polyimide", "zh": "XF5 系列 · PCB 聚酰亚胺", "vi": "Dòng XF5 · Polyimide PCB", "th": "ซีรีส์ XF5 · โพลีอิไมด์ PCB"}},
-    {"key": "esd7", "table": "esd-safe",
+    {"key": "esd7", "table": "esd-safe", "tag": {"en": "ESD XF7", "zh": "ESD XF7", "vi": "ESD XF7", "th": "ESD XF7"},
      "name": {"en": "ESD XF7 Series", "zh": "ESD XF7 系列", "vi": "Dòng ESD XF7", "th": "ซีรีส์ ESD XF7"}},
-    {"key": "fr", "table": "flame-retardant",
+    {"key": "fr", "table": "flame-retardant", "tag": {"en": "Flame-Retardant", "zh": "阻燃", "vi": "Chống cháy", "th": "หน่วงไฟ"},
      "name": {"en": "Flame-Retardant Series", "zh": "阻燃系列", "vi": "Dòng chống cháy", "th": "ซีรีส์หน่วงไฟ"}},
-    {"key": "cable", "table": "wire-cable",
+    {"key": "cable", "table": "wire-cable", "tag": {"en": "Cable & Wire", "zh": "线缆", "vi": "Cáp & Dây", "th": "สายเคเบิล"},
      "name": {"en": "Cable & Wire Marking", "zh": "线缆标识系列", "vi": "Đánh dấu dây & cáp", "th": "ซีรีส์ทำเครื่องหมายสายไฟ"}},
 ]
 POLY_COMPARE = {"en": "Compare specs →", "zh": "对比规格 →", "vi": "So sánh thông số →", "th": "เปรียบเทียบสเปก →"}
@@ -537,6 +537,7 @@ BRAND_CSS = """<style>
 .bcard-b p{margin:0;font-size:13.5px;color:#5a6884;line-height:1.5;flex:1}
 .bchips{display:flex;flex-wrap:wrap;gap:6px}
 .bchip{font-size:11px;font-weight:800;color:#2c7a1e;background:#e6f5e0;border-radius:999px;padding:3px 9px}
+.bchip.fam{color:#143C96;background:#eaf1ff;letter-spacing:.03em}
 .bchip.t{color:#1A56DB;background:#eaf1ff}
 .bchip.esd{color:#1A56DB;background:#eaf1ff}
 .bchip.clr{color:#3a4763;background:#f1f4fa;display:inline-flex;align-items:center}
@@ -748,7 +749,7 @@ def build_brand(records, lang, bkey):
             return node.get(lang) or node.get("en") or node.get("zh") or ""
         return node or ""
     items = [r for r in records if r["brand"] == bkey]
-    def card(r):
+    def card(r, tag=None):
         img = r.get("product_img", "")
         # A real product photo (under the COS PRODUCT/ folder) wins; every other
         # card falls back to the generated barcode-label tile.
@@ -758,19 +759,23 @@ def build_brand(records, lang, bkey):
                 esc(img), esc(L(r["title"])), esc(L(r["title"])))
         else:
             media = '<div class="bcard-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
-        chips = ""
-        for f in r["facestocks"][:1]:
-            chips += '<span class="bchip">%s</span>' % esc(L(f))
-        for t in r["temps"][:1]:
-            chips += '<span class="bchip t">%s</span>' % esc(L(TEMP_BANDS[t]))
-        if "esd" in r["apps"]:
-            chips += '<span class="bchip esd">ESD</span>'
-        if r.get("color"):
-            chips += '<span class="bchip clr"><i style="background:%s"></i>%s</span>' % (
-                r["color"]["dot"], esc(L(r["color"]["lab"])))
-        return ('<a class="bcard" href="%s">%s<div class="bcard-b"><h3>%s</h3><p>%s</p>'
+        # A short family tag (e.g. APEX) replaces the long tagline; no other chips.
+        if tag:
+            chips = '<span class="bchip fam">%s</span>' % esc(tag)
+        else:
+            chips = ""
+            for f in r["facestocks"][:1]:
+                chips += '<span class="bchip">%s</span>' % esc(L(f))
+            for t in r["temps"][:1]:
+                chips += '<span class="bchip t">%s</span>' % esc(L(TEMP_BANDS[t]))
+            if "esd" in r["apps"]:
+                chips += '<span class="bchip esd">ESD</span>'
+            if r.get("color"):
+                chips += '<span class="bchip clr"><i style="background:%s"></i>%s</span>' % (
+                    r["color"]["dot"], esc(L(r["color"]["lab"])))
+        return ('<a class="bcard" href="%s">%s<div class="bcard-b"><h3>%s</h3>'
                 '<div class="bchips">%s</div><span class="bgo">%s</span></div></a>') % (
-            hp.Lx(lang, r["url"]), media, esc(L(r["title"])), esc(L(r["tagline"])), chips, esc(ui["view"]))
+            hp.Lx(lang, r["url"]), media, esc(L(r["title"])), chips, esc(ui["view"]))
     lede = ui["lede"].get(bkey, "")
     hero = None
     if bkey == "polyonics":
@@ -796,10 +801,12 @@ def build_brand(records, lang, bkey):
                 continue
             nm = s["name"].get(lang) or s["name"]["en"]
             tbl = hp.Lx(lang, "/products/polyonics/%s/" % s["table"])
+            tag = s.get("tag", {})
+            tag_l = (tag.get(lang) or tag.get("en")) if isinstance(tag, dict) else tag
             sections += ('<div class="bsec"><h2>%s</h2><span class="cnt">%d</span>'
                          '<a class="tbl" href="%s">%s</a></div><div class="bgrid">%s</div>') % (
                 esc(nm), len(members), tbl, esc(POLY_COMPARE.get(lang) or POLY_COMPARE["en"]),
-                "".join(card(r) for r in members))
+                "".join(card(r, tag_l) for r in members))
         body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap">%s%s</div>' % (overview, sections))
     elif bkey == "heatproof":
         # brand hero (steel banner) + overview + aisles grouped by temperature tier
