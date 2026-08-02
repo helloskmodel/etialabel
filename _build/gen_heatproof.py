@@ -1549,8 +1549,8 @@ HOME_TABS = [("HOME", "首页"), ("PRODUCTS", "产品"), ("APPLICATIONS", "应�
 # Page hero banners (COS). .hbanner::before lays the brand-blue gradient over the photo.
 BANNER_HOME = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/HOMEPAGE-BANNER"
 BANNER_APPLICATION = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/SOLUTION-BANNERNEW"
-BANNER_INSIGHT = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/INSIGHT-NEWBANNER"
-BANNER_SERVICE = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/SERVICE-BANNERNEW"
+BANNER_INSIGHT = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/insightbanner-en"
+BANNER_SERVICE = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/servicebanner"
 HOME_BG = [BANNER_HOME, "", "", "", ""]
 # section_hero idx: 0=Products, 1=Applications, 2=Insights, 3=Service
 SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
