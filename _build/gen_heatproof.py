@@ -1723,14 +1723,22 @@ def home_hero(lang):
 # operating-condition photos: high temperature / low temperature / chemical /
 # sterilization (each links to its solution page).
 _SOL_HERO_ITEMS = [
-    ("/products/item/high-heat-identification/", _COS + "SOLUTION%20/SOLUTION-HEAT.jpg",
-     ("High Temperature", "高温", "Nhiệt độ cao", "อุณหภูมิสูง")),
-    ("/products/item/cold-chain-cryogenic-labels/", _COS + "SOLUTION%20/SOLUTION-COLD.jpg",
-     ("Low Temperature", "低温", "Nhiệt độ thấp", "อุณหภูมิต่ำ")),
-    ("/products/item/chemical-resistant-labels/", _COS + "SOLUTION%20/SOLUTION-CHEMICAL.jpg",
-     ("Chemical", "化学", "Hóa chất", "สารเคมี")),
-    ("/products/item/sterilization-labels/", _COS + "SOLUTION%20/SOLUTION-sterlization.jpg",
-     ("Sterilization", "消毒灭菌", "Tiệt trùng", "การฆ่าเชื้อ")),
+    ("/products/item/high-heat-identification/", _COS + "SOLUTION%20/HEAT-1200.jpg",
+     ("1200 °C High Heat", "1200 °C 高温", "1200 °C nhiệt cao", "1200 °C ความร้อนสูง")),
+    ("/products/item/cold-chain-cryogenic-labels/", _COS + "SOLUTION%20/COLD-196.jpg",
+     ("−196 °C Cryogenic", "−196 °C 深冷", "−196 °C siêu lạnh", "−196 °C เยือกแข็ง")),
+    ("/products/item/high-heat-identification/", _COS + "SOLUTION%20/HEAT-330.jpg",
+     ("330 °C High Heat", "330 °C 高温", "330 °C nhiệt cao", "330 °C ความร้อนสูง")),
+    ("/products/item/cold-chain-cryogenic-labels/", _COS + "SOLUTION%20/COLD-80C.jpg",
+     ("−80 °C Deep Freeze", "−80 °C 超低温", "−80 °C đông sâu", "−80 °C แช่แข็งลึก")),
+    ("/products/item/chemical-resistant-labels/", _COS + "SOLUTION%20/CHEMICAL-ACID.jpg",
+     ("Acid & Solvent", "强酸溶剂", "Axit & dung môi", "กรดและตัวทำละลาย")),
+    ("/products/item/chemical-resistant-labels/", _COS + "SOLUTION%20/CHEMICAL-OIL.jpg",
+     ("Oil & Grease", "油污油脂", "Dầu & mỡ", "น้ำมันและจาระบี")),
+    ("/products/item/sterilization-labels/", _COS + "SOLUTION%20/STERLIZATION-STEAM.png",
+     ("Steam Sterilization", "高温蒸汽灭菌", "Tiệt trùng hơi nước", "ฆ่าเชื้อด้วยไอน้ำ")),
+    ("/products/item/sterilization-labels/", _COS + "SOLUTION%20/STERLIZATION%20-%20GAMMA.jpg",
+     ("Gamma Sterilization", "伽马射线灭菌", "Tiệt trùng Gamma", "ฆ่าเชื้อด้วยรังสีแกมมา")),
 ]
 
 def solutions_hero(lang):
