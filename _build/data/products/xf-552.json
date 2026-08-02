@@ -1,234 +1,234 @@
 {
-  "slug": "xf-552",
-  "source": "Polyonics product brochure (PCB Labels)",
-  "langs": [
-    "en",
-    "zh",
-    "vi",
-    "th"
+ "slug": "xf-552",
+ "source": "Polyonics product brochure (PCB Labels)",
+ "langs": [
+  "en",
+  "zh",
+  "vi",
+  "th"
+ ],
+ "banner": "",
+ "brand": "polyonics",
+ "industry": "pcb",
+ "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF-552",
+ "title": {
+  "en": "XF-552 — 2 mil High-gloss yellow Polyimide PCB Label",
+  "zh": "XF-552 — 2 mil 高光黄聚酰亚胺PCB 标签",
+  "vi": "XF-552 — Nhãn PCB polyimide Vàng bóng cao 2 mil",
+  "th": "XF-552 — ฉลาก PCBโพลีอิไมด์ สีเหลืองเงาสูง 2 mil"
+ },
+ "tagline": {
+  "en": "Polyimide thermal-transfer label for PCB and electronics identification — high-temperature stable, chemical- and abrasion-resistant.",
+  "zh": "聚酰亚胺热转印标签，用于 PCB 与电子标识 —— 高温稳定，耐化学与耐磨。",
+  "vi": "Nhãn in nhiệt polyimide cho nhận diện PCB và điện tử — ổn định nhiệt cao, kháng hóa chất và mài mòn.",
+  "th": "ฉลากพิมพ์ถ่ายเทความร้อนโพลีอิไมด์สำหรับการระบุ PCB และอิเล็กทรอนิกส์ — เสถียรอุณหภูมิสูง ทนสารเคมีและการขัดถู"
+ },
+ "positioning": {
+  "en": "POLYONICS XF-552 is a 2 mil (50µm) polyimide thermal-transfer label with a high-temperature acrylic pressure-sensitive adhesive and a high-opacity high-gloss yellow topcoat. It stays dimensionally stable and legible through reflow, wave-solder and aqueous cleaning — for reliable PCB and electronics identification.",
+  "zh": "POLYONICS XF-552 采用2 mil（50µm）聚酰亚胺，配高温丙烯酸压敏胶与高遮盖高光黄面涂层。经回流焊、波峰焊与水洗仍尺寸稳定、字迹清晰 —— 可靠标识 PCB 与电子产品。",
+  "vi": "POLYONICS XF-552 là nhãn in nhiệt polyimide 2 mil (50µm) với keo acrylic PSA chịu nhiệt cao và lớp phủ vàng bóng cao độ mờ cao. Ổn định kích thước và rõ nét qua reflow, hàn sóng và rửa nước — nhận diện PCB và điện tử đáng tin cậy.",
+  "th": "POLYONICS XF-552 เป็นฉลากพิมพ์ถ่ายเทความร้อน โพลีอิไมด์ 2 mil (50µm) พร้อมกาว PSA อะคริลิกทนร้อนสูงและท็อปโค้ตสีเหลืองเงาสูงทึบสูง คงเสถียรและอ่านได้ผ่านรีโฟลว์ เวฟโซลเดอร์ และการล้างน้ำ — ระบุ PCB และอิเล็กทรอนิกส์ได้อย่างเชื่อถือได้"
+ },
+ "features": {
+  "en": [
+   "Thermal-transfer printable, high-opacity high-gloss yellow topcoat",
+   "Dimensionally stable across its rated temperature range",
+   "Chemical, abrasion and solvent resistant",
+   "REACH and RoHS compliant"
   ],
-  "banner": "",
-  "brand": "polyonics",
-  "industry": "pcb",
-  "product_img": "",
-  "title": {
-    "en": "XF-552 — 2 mil High-gloss yellow Polyimide PCB Label",
-    "zh": "XF-552 — 2 mil 高光黄聚酰亚胺PCB 标签",
-    "vi": "XF-552 — Nhãn PCB polyimide Vàng bóng cao 2 mil",
-    "th": "XF-552 — ฉลาก PCBโพลีอิไมด์ สีเหลืองเงาสูง 2 mil"
+  "zh": [
+   "热转印高遮盖高光黄面涂层",
+   "在额定温度范围内尺寸稳定",
+   "耐化学、耐磨、耐溶剂",
+   "符合 REACH 与 RoHS"
+  ],
+  "vi": [
+   "Lớp phủ vàng bóng cao độ mờ cao, in truyền nhiệt",
+   "Ổn định kích thước trong dải nhiệt định mức",
+   "Kháng hóa chất, mài mòn và dung môi",
+   "Tuân thủ REACH và RoHS"
+  ],
+  "th": [
+   "ท็อปโค้ตสีเหลืองเงาสูงทึบสูง พิมพ์ถ่ายเทความร้อนได้",
+   "เสถียรมิติในช่วงอุณหภูมิที่กำหนด",
+   "ทนสารเคมี การขัดถู และตัวทำละลาย",
+   "สอดคล้อง REACH และ RoHS"
+  ]
+ },
+ "spec_table": {
+  "headers": {
+   "en": [
+    "Property",
+    "Value"
+   ],
+   "zh": [
+    "属性",
+    "参数"
+   ],
+   "vi": [
+    "Thuộc tính",
+    "Giá trị"
+   ],
+   "th": [
+    "คุณสมบัติ",
+    "ค่า"
+   ]
   },
-  "tagline": {
-    "en": "Polyimide thermal-transfer label for PCB and electronics identification — high-temperature stable, chemical- and abrasion-resistant.",
-    "zh": "聚酰亚胺热转印标签，用于 PCB 与电子标识 —— 高温稳定，耐化学与耐磨。",
-    "vi": "Nhãn in nhiệt polyimide cho nhận diện PCB và điện tử — ổn định nhiệt cao, kháng hóa chất và mài mòn.",
-    "th": "ฉลากพิมพ์ถ่ายเทความร้อนโพลีอิไมด์สำหรับการระบุ PCB และอิเล็กทรอนิกส์ — เสถียรอุณหภูมิสูง ทนสารเคมีและการขัดถู"
-  },
-  "positioning": {
-    "en": "POLYONICS XF-552 is a 2 mil (50µm) polyimide thermal-transfer label with a high-temperature acrylic pressure-sensitive adhesive and a high-opacity high-gloss yellow topcoat. It stays dimensionally stable and legible through reflow, wave-solder and aqueous cleaning — for reliable PCB and electronics identification.",
-    "zh": "POLYONICS XF-552 采用2 mil（50µm）聚酰亚胺，配高温丙烯酸压敏胶与高遮盖高光黄面涂层。经回流焊、波峰焊与水洗仍尺寸稳定、字迹清晰 —— 可靠标识 PCB 与电子产品。",
-    "vi": "POLYONICS XF-552 là nhãn in nhiệt polyimide 2 mil (50µm) với keo acrylic PSA chịu nhiệt cao và lớp phủ vàng bóng cao độ mờ cao. Ổn định kích thước và rõ nét qua reflow, hàn sóng và rửa nước — nhận diện PCB và điện tử đáng tin cậy.",
-    "th": "POLYONICS XF-552 เป็นฉลากพิมพ์ถ่ายเทความร้อน โพลีอิไมด์ 2 mil (50µm) พร้อมกาว PSA อะคริลิกทนร้อนสูงและท็อปโค้ตสีเหลืองเงาสูงทึบสูง คงเสถียรและอ่านได้ผ่านรีโฟลว์ เวฟโซลเดอร์ และการล้างน้ำ — ระบุ PCB และอิเล็กทรอนิกส์ได้อย่างเชื่อถือได้"
-  },
-  "features": {
-    "en": [
-      "Thermal-transfer printable, high-opacity high-gloss yellow topcoat",
-      "Dimensionally stable across its rated temperature range",
-      "Chemical, abrasion and solvent resistant",
-      "REACH and RoHS compliant"
-    ],
-    "zh": [
-      "热转印高遮盖高光黄面涂层",
-      "在额定温度范围内尺寸稳定",
-      "耐化学、耐磨、耐溶剂",
-      "符合 REACH 与 RoHS"
-    ],
-    "vi": [
-      "Lớp phủ vàng bóng cao độ mờ cao, in truyền nhiệt",
-      "Ổn định kích thước trong dải nhiệt định mức",
-      "Kháng hóa chất, mài mòn và dung môi",
-      "Tuân thủ REACH và RoHS"
-    ],
-    "th": [
-      "ท็อปโค้ตสีเหลืองเงาสูงทึบสูง พิมพ์ถ่ายเทความร้อนได้",
-      "เสถียรมิติในช่วงอุณหภูมิที่กำหนด",
-      "ทนสารเคมี การขัดถู และตัวทำละลาย",
-      "สอดคล้อง REACH และ RoHS"
+  "rows": [
+   {
+    "cells": [
+     {
+      "en": "Film",
+      "zh": "面材",
+      "vi": "Màng",
+      "th": "ฟิล์ม"
+     },
+     {
+      "en": "2 mil (50µm) Polyimide",
+      "zh": "2 mil（50µm）聚酰亚胺",
+      "vi": "Polyimide 2 mil (50µm)",
+      "th": "โพลีอิไมด์ 2 mil (50µm)"
+     }
     ]
-  },
-  "spec_table": {
-    "headers": {
-      "en": [
-        "Property",
-        "Value"
-      ],
-      "zh": [
-        "属性",
-        "参数"
-      ],
-      "vi": [
-        "Thuộc tính",
-        "Giá trị"
-      ],
-      "th": [
-        "คุณสมบัติ",
-        "ค่า"
-      ]
-    },
-    "rows": [
-      {
-        "cells": [
-          {
-            "en": "Film",
-            "zh": "面材",
-            "vi": "Màng",
-            "th": "ฟิล์ม"
-          },
-          {
-            "en": "2 mil (50µm) Polyimide",
-            "zh": "2 mil（50µm）聚酰亚胺",
-            "vi": "Polyimide 2 mil (50µm)",
-            "th": "โพลีอิไมด์ 2 mil (50µm)"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Topcoat / finish",
-            "zh": "面涂层 / 表面",
-            "vi": "Lớp phủ / bề mặt",
-            "th": "ท็อปโค้ต / พื้นผิว"
-          },
-          {
-            "en": "High-gloss yellow",
-            "zh": "高光黄",
-            "vi": "Vàng bóng cao",
-            "th": "สีเหลืองเงาสูง"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Adhesive",
-            "zh": "胶粘剂",
-            "vi": "Keo",
-            "th": "กาว"
-          },
-          {
-            "en": "High-temperature acrylic PSA, 2.4 mil (61 µm) acrylic",
-            "zh": "高温丙烯酸压敏胶，2.4 mil (61 µm) acrylic",
-            "vi": "Keo acrylic PSA chịu nhiệt cao, 2.4 mil (61 µm) acrylic",
-            "th": "กาว PSA อะคริลิกทนร้อนสูง 2.4 mil (61 µm) acrylic"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Temperature",
-            "zh": "温度",
-            "vi": "Nhiệt độ",
-            "th": "อุณหภูมิ"
-          },
-          {
-            "en": "150 °C/100h · 260 °C/5min · 300 °C/90s",
-            "zh": "150 °C/100h · 260 °C/5min · 300 °C/90s",
-            "vi": "150 °C/100h · 260 °C/5min · 300 °C/90s",
-            "th": "150 °C/100h · 260 °C/5min · 300 °C/90s"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Compliance",
-            "zh": "合规",
-            "vi": "Tuân thủ",
-            "th": "การรับรอง"
-          },
-          {
-            "en": "REACH · RoHS",
-            "zh": "REACH · RoHS",
-            "vi": "REACH · RoHS",
-            "th": "REACH · RoHS"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Printing",
-            "zh": "打印",
-            "vi": "In ấn",
-            "th": "การพิมพ์"
-          },
-          {
-            "en": "Thermal transfer — full-resin ribbon recommended",
-            "zh": "热转印 —— 建议全树脂碳带",
-            "vi": "In truyền nhiệt — khuyến nghị ribbon full-resin",
-            "th": "พิมพ์ถ่ายเทความร้อน — แนะนำริบบอน full-resin"
-          }
-        ]
-      }
-    ],
-    "notes": {
-      "en": [
-        "Summary specification from the Polyonics product brochure — request the model datasheet for full adhesion, thickness and durability data."
-      ],
-      "zh": [
-        "摘自 Polyonics 产品手册的概要规格 —— 完整粘着、厚度与耐久数据请索取该型号数据表。"
-      ],
-      "vi": [
-        "Thông số tóm tắt từ brochure Polyonics — yêu cầu datasheet của model để có dữ liệu độ bám, độ dày và độ bền đầy đủ."
-      ],
-      "th": [
-        "ข้อมูลจำเพาะโดยสรุปจากโบรชัวร์ Polyonics — ขอเอกสารข้อมูลรุ่นสำหรับข้อมูลการยึดเกาะ ความหนา และความทนทานฉบับเต็ม"
-      ]
-    }
-  },
-  "applications": {
-    "en": [
-      "PCB identification",
-      "Electronic component and IC tracking",
-      "Product ID and asset tracking",
-      "Identification through high-temperature and harsh-chemical processes"
-    ],
-    "zh": [
-      "PCB 标识",
-      "电子元器件与 IC 追溯",
-      "产品标识与资产追踪",
-      "耐高温与强化学工艺的标识"
-    ],
-    "vi": [
-      "Nhận diện PCB",
-      "Theo dõi linh kiện và IC",
-      "ID sản phẩm và theo dõi tài sản",
-      "Nhận diện qua quy trình nhiệt cao và hóa chất mạnh"
-    ],
-    "th": [
-      "การระบุ PCB",
-      "การติดตามชิ้นส่วนและ IC",
-      "ID สินค้าและการติดตามทรัพย์สิน",
-      "การระบุผ่านกระบวนการอุณหภูมิสูงและสารเคมีรุนแรง"
+   },
+   {
+    "cells": [
+     {
+      "en": "Topcoat / finish",
+      "zh": "面涂层 / 表面",
+      "vi": "Lớp phủ / bề mặt",
+      "th": "ท็อปโค้ต / พื้นผิว"
+     },
+     {
+      "en": "High-gloss yellow",
+      "zh": "高光黄",
+      "vi": "Vàng bóng cao",
+      "th": "สีเหลืองเงาสูง"
+     }
     ]
-  },
-  "certifications": {
-    "en": [
-      "REACH compliant",
-      "RoHS compliant"
-    ],
-    "zh": [
-      "符合 REACH",
-      "符合 RoHS"
-    ],
-    "vi": [
-      "Tuân thủ REACH",
-      "Tuân thủ RoHS"
-    ],
-    "th": [
-      "สอดคล้อง REACH",
-      "สอดคล้อง RoHS"
+   },
+   {
+    "cells": [
+     {
+      "en": "Adhesive",
+      "zh": "胶粘剂",
+      "vi": "Keo",
+      "th": "กาว"
+     },
+     {
+      "en": "High-temperature acrylic PSA, 2.4 mil (61 µm) acrylic",
+      "zh": "高温丙烯酸压敏胶，2.4 mil (61 µm) acrylic",
+      "vi": "Keo acrylic PSA chịu nhiệt cao, 2.4 mil (61 µm) acrylic",
+      "th": "กาว PSA อะคริลิกทนร้อนสูง 2.4 mil (61 µm) acrylic"
+     }
     ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Temperature",
+      "zh": "温度",
+      "vi": "Nhiệt độ",
+      "th": "อุณหภูมิ"
+     },
+     {
+      "en": "150 °C/100h · 260 °C/5min · 300 °C/90s",
+      "zh": "150 °C/100h · 260 °C/5min · 300 °C/90s",
+      "vi": "150 °C/100h · 260 °C/5min · 300 °C/90s",
+      "th": "150 °C/100h · 260 °C/5min · 300 °C/90s"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Compliance",
+      "zh": "合规",
+      "vi": "Tuân thủ",
+      "th": "การรับรอง"
+     },
+     {
+      "en": "REACH · RoHS",
+      "zh": "REACH · RoHS",
+      "vi": "REACH · RoHS",
+      "th": "REACH · RoHS"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Printing",
+      "zh": "打印",
+      "vi": "In ấn",
+      "th": "การพิมพ์"
+     },
+     {
+      "en": "Thermal transfer — full-resin ribbon recommended",
+      "zh": "热转印 —— 建议全树脂碳带",
+      "vi": "In truyền nhiệt — khuyến nghị ribbon full-resin",
+      "th": "พิมพ์ถ่ายเทความร้อน — แนะนำริบบอน full-resin"
+     }
+    ]
+   }
+  ],
+  "notes": {
+   "en": [
+    "Summary specification from the Polyonics product brochure — request the model datasheet for full adhesion, thickness and durability data."
+   ],
+   "zh": [
+    "摘自 Polyonics 产品手册的概要规格 —— 完整粘着、厚度与耐久数据请索取该型号数据表。"
+   ],
+   "vi": [
+    "Thông số tóm tắt từ brochure Polyonics — yêu cầu datasheet của model để có dữ liệu độ bám, độ dày và độ bền đầy đủ."
+   ],
+   "th": [
+    "ข้อมูลจำเพาะโดยสรุปจากโบรชัวร์ Polyonics — ขอเอกสารข้อมูลรุ่นสำหรับข้อมูลการยึดเกาะ ความหนา และความทนทานฉบับเต็ม"
+   ]
   }
+ },
+ "applications": {
+  "en": [
+   "PCB identification",
+   "Electronic component and IC tracking",
+   "Product ID and asset tracking",
+   "Identification through high-temperature and harsh-chemical processes"
+  ],
+  "zh": [
+   "PCB 标识",
+   "电子元器件与 IC 追溯",
+   "产品标识与资产追踪",
+   "耐高温与强化学工艺的标识"
+  ],
+  "vi": [
+   "Nhận diện PCB",
+   "Theo dõi linh kiện và IC",
+   "ID sản phẩm và theo dõi tài sản",
+   "Nhận diện qua quy trình nhiệt cao và hóa chất mạnh"
+  ],
+  "th": [
+   "การระบุ PCB",
+   "การติดตามชิ้นส่วนและ IC",
+   "ID สินค้าและการติดตามทรัพย์สิน",
+   "การระบุผ่านกระบวนการอุณหภูมิสูงและสารเคมีรุนแรง"
+  ]
+ },
+ "certifications": {
+  "en": [
+   "REACH compliant",
+   "RoHS compliant"
+  ],
+  "zh": [
+   "符合 REACH",
+   "符合 RoHS"
+  ],
+  "vi": [
+   "Tuân thủ REACH",
+   "Tuân thủ RoHS"
+  ],
+  "th": [
+   "สอดคล้อง REACH",
+   "สอดคล้อง RoHS"
+  ]
+ }
 }
