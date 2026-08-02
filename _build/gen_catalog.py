@@ -393,17 +393,17 @@ POLY_SERIES = [
      "name": {"en": "APEX Series", "zh": "APEX 系列", "vi": "Dòng APEX", "th": "ซีรีส์ APEX"}},
     {"key": "xf5", "table": "pcb-labels", "tag": {"en": "XF5", "zh": "XF5", "vi": "XF5", "th": "XF5"},
      "name": {"en": "XF5 Series · PCB Polyimide", "zh": "XF5 系列 · PCB 聚酰亚胺", "vi": "Dòng XF5 · Polyimide PCB", "th": "ซีรีส์ XF5 · โพลีอิไมด์ PCB"}},
-    {"key": "esd7", "table": "esd-safe", "tag": {"en": "ESD XF7", "zh": "ESD XF7", "vi": "ESD XF7", "th": "ESD XF7"},
-     "name": {"en": "ESD XF7 Series", "zh": "ESD XF7 系列", "vi": "Dòng ESD XF7", "th": "ซีรีส์ ESD XF7"}},
+    {"key": "esd7", "table": "esd-safe", "tag": {"en": "XF7", "zh": "XF7", "vi": "XF7", "th": "XF7"},
+     "name": {"en": "XF7 Series", "zh": "XF7 系列", "vi": "Dòng XF7", "th": "ซีรีส์ XF7"}},
     {"key": "cable", "table": "wire-cable", "tag": {"en": "Cable & Wire", "zh": "线缆", "vi": "Cáp & Dây", "th": "สายเคเบิล"},
      "name": {"en": "Cable & Wire Marking", "zh": "线缆标识系列", "vi": "Đánh dấu dây & cáp", "th": "ซีรีส์ทำเครื่องหมายสายไฟ"}},
 ]
 POLY_COMPARE = {"en": "Compare specs →", "zh": "对比规格 →", "vi": "So sánh thông số →", "th": "เปรียบเทียบสเปก →"}
-# XF-446 (ESD PET) folds into the ESD family — we lead PET with our own E-2712.
-_FAM_ESD7 = {"xf-781", "xf-782", "xf-784", "xf-446"}
+# XF7 Series (7-series): ESD-safe XF-78x plus the XF-73x PCB labels. ESD members
+# carry a small "ESD" tag. (XF-446 was cancelled — we lead PET with our own E-2712.)
+_FAM_ESD7 = {"xf-781", "xf-782", "xf-784", "xf-731", "xf-732"}
 # Cable & Wire family. XF-603/XF-611 are flame-retardant — shown here with a
-# "Flame-Retardant" small tag (no separate FR family). XF-731/732 are PCB labels
-# and stay in the XF5 family.
+# "Flame-Retardant" small tag (no separate FR family).
 _FAM_CABLE = {"xf-300", "xf-302", "xf-603", "xf-611"}
 _FLAME = {"xf-603", "xf-611"}
 _FLAME_LABEL = {"en": "Flame-Retardant", "zh": "阻燃", "vi": "Chống cháy", "th": "หน่วงไฟ"}
@@ -767,6 +767,8 @@ def build_brand(records, lang, bkey):
             chips = '<span class="bchip fam">%s</span>' % esc(tag)
             if r["slug"] in _FLAME:
                 chips += '<span class="bchip fr">%s</span>' % esc(L(_FLAME_LABEL))
+            if "esd" in r["apps"]:
+                chips += '<span class="bchip esd">ESD</span>'
         else:
             chips = ""
             for f in r["facestocks"][:1]:
