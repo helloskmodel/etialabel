@@ -423,22 +423,19 @@ POLY_SERIES = [
      "name": {"en": "XF5 Series · PCB Polyimide", "zh": "XF5 系列 · PCB 聚酰亚胺", "vi": "Dòng XF5 · Polyimide PCB", "th": "ซีรีส์ XF5 · โพลีอิไมด์ PCB"}},
     {"key": "esd7", "table": "esd-safe",
      "name": {"en": "ESD XF7 Series", "zh": "ESD XF7 系列", "vi": "Dòng ESD XF7", "th": "ซีรีส์ ESD XF7"}},
-    {"key": "pet446", "table": "esd-safe",
-     "name": {"en": "XF-446 · ESD PET", "zh": "XF-446 · 防静电 PET", "vi": "XF-446 · ESD PET", "th": "XF-446 · ESD PET"}},
     {"key": "fr", "table": "flame-retardant",
      "name": {"en": "Flame-Retardant Series", "zh": "阻燃系列", "vi": "Dòng chống cháy", "th": "ซีรีส์หน่วงไฟ"}},
     {"key": "cable", "table": "wire-cable",
      "name": {"en": "Cable & Wire Marking", "zh": "线缆标识系列", "vi": "Đánh dấu dây & cáp", "th": "ซีรีส์ทำเครื่องหมายสายไฟ"}},
 ]
 POLY_COMPARE = {"en": "Compare specs →", "zh": "对比规格 →", "vi": "So sánh thông số →", "th": "เปรียบเทียบสเปก →"}
-_FAM_ESD7 = {"xf-781", "xf-782", "xf-784"}
-_FAM_PET446 = {"xf-446"}
+# XF-446 (ESD PET) folds into the ESD family — we lead PET with our own E-2712.
+_FAM_ESD7 = {"xf-781", "xf-782", "xf-784", "xf-446"}
 _FAM_FR = {"xf-603", "xf-611"}
 _FAM_CABLE = {"xf-300", "xf-302", "xf-731", "xf-732"}
 def poly_series_key(slug):
     if slug.startswith("xf-101") or slug.startswith("xf-102"): return "apex"
     if slug in _FAM_ESD7: return "esd7"
-    if slug in _FAM_PET446: return "pet446"
     if slug in _FAM_FR: return "fr"
     if slug in _FAM_CABLE: return "cable"
     return "xf5"
