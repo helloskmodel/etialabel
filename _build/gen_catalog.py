@@ -46,6 +46,7 @@ IND_NAME = {
 # Application categories: label (4-lang) + keyword triggers (searched in the blob).
 APP_CATS = [
     ("esd",     {"en": "ESD / Anti-static", "zh": "防静电", "vi": "Chống tĩnh điện", "th": "ป้องกันไฟฟ้าสถิต"}, ["esd", "anti-static", "static-dissipative", "防静电", "静电"]),
+    ("washreflow", {"en": "Wash & Reflow PI", "zh": "耐焊洗 PI", "vi": "Chịu rửa & reflow (PI)", "th": "ทนล้าง & รีโฟลว์ (PI)"}, ["reflow", "wave-solder", "wave solder", "wave soldering", "solder flux", "回流焊", "波峰焊", "焊洗", "过炉"]),
     ("flame",   {"en": "Flame-Retardant", "zh": "阻燃", "vi": "Chống cháy", "th": "หน่วงไฟ"}, ["flame-retardant", "flame retardant", "ul94", "ul 94", "vtm-0", "halogen-free", "阻燃", "无卤"]),
     ("chem",    {"en": "Chemical-Resistant", "zh": "耐化学", "vi": "Kháng hóa chất", "th": "ทนสารเคมี"}, ["chemical-resistant", "chemical resistant", "solvent-resistant", "solvent resistant", "acid and alkali", "耐化学", "耐溶剂"]),
     ("steril",  {"en": "Sterilization", "zh": "灭菌", "vi": "Tiệt trùng", "th": "การฆ่าเชื้อ"}, ["sterilization", "sterilize", "autoclave", "gamma", "灭菌", "高压灭菌"]),
@@ -53,7 +54,7 @@ APP_CATS = [
     ("blood",   {"en": "Blood Bag", "zh": "血袋", "vi": "Túi máu", "th": "ถุงเลือด"}, ["blood bag", "blood-bag", "血袋"]),
     ("vin",     {"en": "Automotive VIN", "zh": "汽车 VIN", "vi": "VIN ô tô", "th": "VIN ยานยนต์"}, ["vin code", "vin label", "vin plate", "vin identif", "车架号", "汽车 vin"]),
     ("cablew",  {"en": "Wire & Cable ID", "zh": "线缆标识", "vi": "Nhận diện cáp", "th": "ระบุสายเคเบิล"}, ["wire", "cable", "harness", "线缆", "束线", "电缆"]),
-    ("outdoor", {"en": "Outdoor / Weatherable", "zh": "户外耐候", "vi": "Ngoài trời", "th": "กลางแจ้ง"}, ["outdoor", "weatherable", "weather resist", "户外", "耐候"]),
+    ("outdoor", {"en": "Solar & Battery Outdoor Warning", "zh": "光伏/新能源电池户外警示", "vi": "Cảnh báo ngoài trời điện mặt trời & pin", "th": "คำเตือนกลางแจ้งโซลาร์และแบตเตอรี่"}, ["outdoor", "weatherable", "weather resist", "solar", "photovoltaic", "pv module", "new energy", "户外", "耐候", "光伏", "太阳能", "储能", "新能源"]),
 ]
 
 # Facestock keyword triggers (search title + positioning + spec).
@@ -220,16 +221,17 @@ def build_lang(records, lang):
                 % (group, esc(value), esc(label)))
 
     fpanels = ""
-    # Spine first: Temperature (5 tiers), then Material and Thickness, then tags.
+    # Order: Brand first, then the spec spine (Temperature, Material, Application),
+    # and Thickness last.
+    if len(brand_opts) > 1:
+        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["brand"]),
+            "".join(chk("brand", b, L(BRAND[b])) for b in brand_opts))
     if temp_opts:
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["temp"]),
             "".join(chk("temp", t, L(TEMP_BANDS[t])) for t in ["xhot", "vhot", "hot", "std", "cryo"] if t in temp_opts))
     if fs_opts:
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["facestock"]),
             "".join(chk("fs", f, L(json.loads(f))) for f in fs_opts))
-    if thick_opts:
-        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["thick"]),
-            "".join(chk("thick", t, L(THICK_BANDS[t])) for t in ["t1", "t2", "t3", "t5"] if t in thick_opts))
     if app_opts:
         applab = {key: lab for key, lab, kws in APP_CATS}
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["application"]),
@@ -237,9 +239,9 @@ def build_lang(records, lang):
     # Industry is intentionally NOT a filter here: a product serves several
     # industries, so industry-based discovery lives on the "Products › By Industry"
     # pages. This finder is the product/spec angle (temperature, material, application).
-    if len(brand_opts) > 1:
-        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["brand"]),
-            "".join(chk("brand", b, L(BRAND[b])) for b in brand_opts))
+    if thick_opts:
+        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["thick"]),
+            "".join(chk("thick", t, L(THICK_BANDS[t])) for t in ["t1", "t2", "t3", "t5"] if t in thick_opts))
 
     # ---- cards ----
     applab = {key: lab for key, lab, kws in APP_CATS}
