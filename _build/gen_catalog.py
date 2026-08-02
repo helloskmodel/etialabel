@@ -478,7 +478,7 @@ POLY_HEAD = {
 POLY_OVERVIEW_LABEL = {"en": "Overview", "zh": "品牌概述", "vi": "Tổng quan", "th": "ภาพรวม"}
 # Caption for the cooperation photo (ETIA & Polyonics leadership, Polyonics HQ, USA).
 POLY_COOP_CAPTION = {
-    "en": "ETIA and Polyonics leadership at the Polyonics head office, USA — a 20-year partnership.",
+    "en": "ETIA and Polyonics leadership at the Polyonics head office, USA — a 20-year partnership.",
     "zh": "ETIA 与 Polyonics 高层于美国 Polyonics 总部 —— 逾 20 年的长期合作。",
     "vi": "Lãnh đạo ETIA và Polyonics tại trụ sở chính Polyonics, Hoa Kỳ — hợp tác hơn 20 năm.",
     "th": "ผู้บริหาร ETIA และ Polyonics ที่สำนักงานใหญ่ Polyonics สหรัฐฯ — ความร่วมมือกว่า 20 ปี",
@@ -512,7 +512,7 @@ BRAND_CSS = """<style>
 .bover-img{margin:0}
 .bover-img.noimg{display:none}
 .bover-img img{width:100%;height:auto;border-radius:14px;border:1px solid #e6ecf6;box-shadow:0 12px 30px rgba(16,34,58,.10);display:block;background:#f3f6fc}
-.bover-img figcaption{margin-top:10px;font-size:12.5px;color:#5a6885;line-height:1.5;text-align:center}
+.bover-img figcaption{margin-top:10px;font-size:12.5px;color:#5a6885;line-height:1.5;text-align:center;text-wrap:balance}
 @media(max-width:820px){.bover-2col{grid-template-columns:1fr;gap:18px}.bover-img{max-width:460px}}
 .bsec{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:34px 0 14px;padding-top:18px;border-top:1px solid #e6ecf6}
 .bsec h2{font-family:var(--sans);font-weight:800;color:#143C96;font-size:21px;margin:0}
