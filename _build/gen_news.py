@@ -248,7 +248,7 @@ def build_hub(lang):
     crumb = [(ui["home"], "/"), (ui["hub_title"], HUB)]
     # brand Insight hero — single main visual with a subtle Ken Burns zoom (no carousel)
     s = hp.HOME2.get(lang, hp.HOME2["en"])["sections"][2]
-    hero = hp.hero_single_anim(lang, hp.SECTION_BG.get(2, ""), s["eyebrow"], s["h2"], ui["hero_sub"])
+    hero = hp.hero_single_anim(lang, hp.section_banner(2, lang), s["eyebrow"], s["h2"], ui["hero_sub"])
     content = hp.page(lang, HUB, ui["hub_title"] + " | ETIA", ui["hub_lede"],
                       ui["hub_title"], "", body, crumb, active="insights", trust=False, hero=hero,
                       langs=hp.NAV_PILLAR_LANGS)

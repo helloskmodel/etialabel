@@ -1547,13 +1547,24 @@ HOME2 = {
 # Green corner labels + banner background images (fill BG with clean COS URLs later)
 HOME_TABS = [("HOME", "首页"), ("PRODUCTS", "产品"), ("APPLICATIONS", "应用"), ("INSIGHTS", "洞察"), ("SERVICE", "服务")]
 # Page hero banners (COS). .hbanner::before lays the brand-blue gradient over the photo.
-BANNER_HOME = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/HOMEPAGE-BANNER"
-BANNER_APPLICATION = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/SOLUTION-BANNERNEW"
-BANNER_INSIGHT = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/insightbanner-en"
-BANNER_SERVICE = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/servicebanner"
+_BN = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/"
+BANNER_HOME = _BN + "HOMEPAGE-BANNER"
+BANNER_APPLICATION = _BN + "SOLUTION-BANNERNEW"
+# Insights & Service heroes use a PER-LANGUAGE banner (client supplies one image
+# per language). File convention: <stem>-<lang> with lang in en/zh/vi/th.
+BANNER_INSIGHT_L = {l: _BN + "insightbanner-" + l for l in ("en", "zh", "vi", "th")}
+BANNER_SERVICE_L = {l: _BN + "servicebanner-" + l for l in ("en", "zh", "vi", "th")}
+BANNER_INSIGHT = BANNER_INSIGHT_L["en"]   # default / fallback
+BANNER_SERVICE = BANNER_SERVICE_L["en"]
 HOME_BG = [BANNER_HOME, "", "", "", ""]
 # section_hero idx: 0=Products, 1=Applications, 2=Insights, 3=Service
 SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
+
+def section_banner(idx, lang):
+    """Language-aware hero background for section pages (falls back to EN)."""
+    if idx == 2: return BANNER_INSIGHT_L.get(lang, BANNER_INSIGHT_L["en"])
+    if idx == 3: return BANNER_SERVICE_L.get(lang, BANNER_SERVICE_L["en"])
+    return SECTION_BG.get(idx, "")
 
 def hero_cta(lang):
     # ONE unified banner contact button, identical everywhere (green · Talk to us).
@@ -2315,7 +2326,7 @@ def build_service(lang):
     crumb=[(P(lang,"Home","首页","Trang chủ","หน้าแรก"),"/"),(P(lang,"Service","服务","Dịch vụ","บริการ"),"/service/")]
     # hero = single main visual with a subtle Ken Burns zoom (headline + slogan only)
     sh=HOME2.get(lang,HOME2["en"])["sections"][3]
-    hero=hero_single_anim(lang, SECTION_BG.get(3,""), "", sh["h2"], sh["sub"])
+    hero=hero_single_anim(lang, section_banner(3, lang), "", sh["h2"], sh["sub"])
     body=home_trustbar(lang)+body   # 20-year trust bar under the hero
     write(lang,"/service/",page(lang,"/service/",
         P(lang,"Service | ETIA","服务 | ETIA","Dịch vụ | ETIA","บริการ | ETIA"),
