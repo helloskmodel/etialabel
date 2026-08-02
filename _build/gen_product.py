@@ -15,6 +15,7 @@ BUILD = os.path.dirname(os.path.abspath(__file__))
 PDIR = os.path.join(BUILD, "data", "products")
 SOURCE_LANG = "zh"
 esc = hp.esc
+P = hp.P
 
 # ---- Generated product image: a 4:3 label tile carrying a Code 39 barcode + the
 # model code. Used as the uniform "product photo" for label lines that ship no
@@ -116,6 +117,11 @@ CSS = """
 .phero .k{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#8fe063}
 .phero h1{color:#fff;font-family:var(--sans);font-weight:800;font-size:40px;letter-spacing:-.01em;margin:2px 0 10px;line-height:1.12;max-width:20em}
 .phero .tl{color:#eef3ff;font-size:18px;font-weight:700;margin:0 0 18px;max-width:40em}
+.pcta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.phero .hcta{display:inline-block;background:#41A62A;color:#fff;font-family:var(--sans);font-weight:800;font-size:14.5px;padding:12px 24px;border-radius:9px;text-decoration:none;border:0;line-height:1.2}
+.phero .hcta:hover{background:#358B22;color:#fff}
+.phero .hcta2{display:inline-block;background:rgba(255,255,255,.12);color:#fff;font-family:var(--sans);font-weight:800;font-size:14.5px;padding:12px 24px;border-radius:9px;text-decoration:none;border:1.5px solid rgba(255,255,255,.6);line-height:1.2}
+.phero .hcta2:hover{background:rgba(255,255,255,.22);color:#fff}
 .pbtn{display:inline-block;background:#41A62A;color:#fff;font-weight:800;font-size:14.5px;padding:12px 22px;border-radius:9px;text-decoration:none}
 .pbtn:hover{background:#358B22}
 .psec{max-width:900px;margin:0 auto;padding:15px 24px}
@@ -345,6 +351,11 @@ INDUSTRY_BANNERS = {
     "medical": _COS + "INDUSTRY/MEDICAL-BANNER",
     "outdoor": _COS + "INDUSTRY/OURDOOR-BANNER",
 }
+# Per-industry banner crop, mirrored from the industry landing pages so a product
+# hero shows the same part of the shared banner image as its industry page.
+INDUSTRY_BANNER_POS = {
+    "pcb": "center bottom",
+}
 PRODUCT_INDUSTRY = {
     # PCB / electronics
     "apex": "pcb", "e-series": "pcb", "xf58": "pcb", "xf78": "pcb", "xf-603": "pcb",
@@ -406,18 +417,27 @@ def build_lang(d, lang):
     # Only pages with no industry at all (the environment Solution pages) keep their
     # own banner. See product_industry() + the build audit that flags omissions.
     banner = INDUSTRY_BANNERS.get(product_industry(d, slug), "") or d.get("banner", "")
-    # banner_pos: optional object-position override so a page can steer which part
-    # of the photo shows (e.g. "center bottom" to reveal the bottles). Defaults to
-    # the shared "center right" crop used by every other hero.
-    bpos = d.get("banner_pos", "")
+    # banner_pos: object-position override so a page can steer which part of the
+    # photo shows. A product inherits its industry's crop (so the product hero is
+    # aligned with the industry banner) unless it sets its own.
+    bpos = d.get("banner_pos", "") or INDUSTRY_BANNER_POS.get(product_industry(d, slug), "")
     bstyle = (' style="object-position:%s"' % esc(bpos)) if bpos else ""
     bg = ('<img class="bg" src="%s" alt="" loading="eager"%s onerror="this.style.display=\'none\'">' % (esc(banner), bstyle)) if banner else ""
     contact = hp.Lx(lang, "/contact/")
-    # tagline stays in data for the meta description; hero_tagline:false hides it from the hero
-    tl_html = ('<p class="tl">%s</p>' % esc(L(d.get("tagline", {}), lang))) if d.get("hero_tagline", True) else ""
+    # The hero subtitle would just repeat the Overview, so it is shown only when the
+    # page has no Overview. The tagline stays in data for the meta description.
+    has_overview = bool(L(d.get("positioning", {}), lang))
+    show_tl = d.get("hero_tagline", True) and not has_overview
+    tl_html = ('<p class="tl">%s</p>' % esc(L(d.get("tagline", {}), lang))) if show_tl else ""
+    # Product-page CTAs: Request a Sample (primary) + Request a Quote (secondary).
+    cta = ('<div class="pcta-row">'
+           '<a class="hcta" href="%s">%s</a>'
+           '<a class="hcta2" href="%s">%s</a></div>') % (
+        contact, esc(P(lang, "Request a Sample", "索取样品", "Yêu cầu mẫu", "ขอตัวอย่าง")),
+        contact, esc(P(lang, "Request a Quote", "询价", "Yêu cầu báo giá", "ขอใบเสนอราคา")))
     hero = ('%s<section class="phero">%s<div class="in"><div class="k">%s</div>'
             '<h1>%s</h1>%s%s</div></section>') % (
-        CSS, bg, esc(L(d.get("eyebrow", {}), lang) or ui["products"]), esc(title), tl_html, hp.hero_cta(lang))
+        CSS, bg, esc(L(d.get("eyebrow", {}), lang) or ui["products"]), esc(title), tl_html, cta)
 
     body = ""
     if L(d.get("positioning", {}), lang):
