@@ -80,10 +80,10 @@
         {
           "name": "HP-700T",
           "line": {
-            "en": "450–800°C · brass foil",
-            "zh": "450–800°C · 黄铜箔",
-            "vi": "450–800°C · lá đồng thau",
-            "th": "450–800°C · แผ่นทองเหลือง"
+            "en": "Up to 800°C · brass foil",
+            "zh": "耐 800°C · 黄铜箔",
+            "vi": "Đến 800°C · lá đồng thau",
+            "th": "ถึง 800°C · แผ่นทองเหลือง"
           },
           "img": "",
           "landing": true,
@@ -92,14 +92,14 @@
         {
           "name": "HP-600",
           "line": {
-            "en": "Up to 800°C · glass & metal, high adhesion",
-            "zh": "耐 800°C · 玻璃与金属，高附着",
-            "vi": "Đến 800°C · kính & kim loại, bám dính cao",
-            "th": "ถึง 800°C · แก้วและโลหะ ยึดเกาะสูง"
+            "en": "Up to 600°C · aluminum foil, high adhesion on metal",
+            "zh": "耐 600°C · 铝箔，金属高附着",
+            "vi": "Đến 600°C · lá nhôm, bám cao trên kim loại",
+            "th": "ถึง 600°C · ฟอยล์อะลูมิเนียม ยึดเกาะโลหะสูง"
           },
           "img": "",
-          "landing": false,
-          "slug": ""
+          "landing": true,
+          "slug": "hp-600"
         },
         {
           "name": "HP-901",
