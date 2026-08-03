@@ -2189,7 +2189,7 @@ def build_about(lang):
 def build_contact(lang):
     zh=(lang=="zh")
     offices=[
-      ("Shanghai","上海","China","中国","+86 139 1833 9249"),
+      ("Shanghai","上海","China","中国","+86 139 1833 9249 · 400 990 8448 · +86-21-6432-7144"),
       ("Hong Kong","香港","ETIA-TECH (ASIA) Co., Limited","ETIA-TECH (ASIA) Co., Limited","etialabel@etia-tech.com"),
       ("Bangkok","曼谷","Thailand","泰国","+66 811 746 947"),
       ("Bac Ninh","北宁","Vietnam","越南","+84 961 530 153"),
@@ -2272,7 +2272,7 @@ def build_tech(lang):
     if lang=="en": track("/technical-resources/","core")
 
 SERVICE_OFFICES=[
-  ("Shanghai","上海","+86 139 1833 9249"),
+  ("Shanghai","上海","+86 139 1833 9249 · 400 990 8448"),
   ("Hong Kong","香港","etialabel@etia-tech.com"),
   ("Bangkok","曼谷","+66 811 746 947"),
   ("Bac Ninh","北宁","+84 961 530 153"),
@@ -2283,7 +2283,7 @@ SERVICE_REGIONS=[
   {"region":("China · Shanghai","中国 · 上海","Trung Quốc · Thượng Hải","จีน · เซี่ยงไฮ้"),"name":"Da Li","role":("","","",""),
    "addr":["上海市普陀区中江路 388 弄国盛中心 2 号楼 1903 室",
            "Rm. 1903, 2# Building, Guoson Centre, No. 388 Zhongjiang Rd, Putuo District, Shanghai, China"],
-   "phone":"+86 139 1833 9249","email":"etialabel@etia-tech.com"},
+   "phone":"+86 139 1833 9249 · 400 990 8448 · +86-21-6432-7144","email":"etialabel@etia-tech.com"},
   {"region":("China · Hong Kong","中国 · 香港","Trung Quốc · Hồng Kông","จีน · ฮ่องกง"),"name":"Da Li","role":("","","",""),
    "addr":["Room 1003, 10/F, Tower 1, Lippo Centre, 89 Queensway, Admiralty, Hong Kong"],
    "phone":"+86 139 1833 9249","email":"etialabel@etia-tech.com"},
