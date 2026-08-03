@@ -571,14 +571,14 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 NAV_ITEMS = [("Home", "/", "home"),
              ("Product", "/products/", "products"),
              ("Solutions", "/applications/", "applications"),
-             ("Insight", "/insights/", "insights"),
+             ("Resources", "/insights/", "insights"),
              ("Service", "/service/", "service")]
-NAV_ZH = {"Home":"首页","Products":"产品","Product":"产品","Industry":"行业","Solutions":"方案","Case Studies":"案例","Application Notes":"应用笔记","Application":"应用","News":"新闻","Insights":"洞察","Insight":"洞察","Service":"服务",
+NAV_ZH = {"Home":"首页","Products":"产品","Product":"产品","Industry":"行业","Solutions":"方案","Case Studies":"案例","Application Notes":"应用笔记","Application":"应用","News":"新闻","Insights":"资讯","Insight":"资讯","Resource":"资讯","Resources":"资讯","Service":"服务",
           "Industries":"行业","About ETIA":"关于 ETIA","Contact":"联系我们"}
 # 4-language nav / footer labels (keyed by the English label)
-NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Product":"Sản phẩm","Industry":"Ngành","Solutions":"Giải pháp","Case Studies":"Nghiên cứu điển hình","Application Notes":"Ghi chú ứng dụng","Application":"Ứng dụng","News":"Tin tức","Insight":"Kiến thức","Service":"Dịch vụ",
+NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Product":"Sản phẩm","Industry":"Ngành","Solutions":"Giải pháp","Case Studies":"Nghiên cứu điển hình","Application Notes":"Ghi chú ứng dụng","Application":"Ứng dụng","News":"Tin tức","Insight":"Tài nguyên","Resource":"Tài nguyên","Resources":"Tài nguyên","Service":"Dịch vụ",
           "Industries":"Ngành","About ETIA":"Về ETIA","Contact":"Liên hệ"}
-NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Product":"ผลิตภัณฑ์","Industry":"อุตสาหกรรม","Solutions":"โซลูชัน","Case Studies":"กรณีศึกษา","Application Notes":"แอปพลิเคชันโน้ต","Application":"การใช้งาน","News":"ข่าว","Insight":"ความรู้","Service":"บริการ",
+NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Product":"ผลิตภัณฑ์","Industry":"อุตสาหกรรม","Solutions":"โซลูชัน","Case Studies":"กรณีศึกษา","Application Notes":"แอปพลิเคชันโน้ต","Application":"การใช้งาน","News":"ข่าว","Insight":"แหล่งข้อมูล","Resource":"แหล่งข้อมูล","Resources":"แหล่งข้อมูล","Service":"บริการ",
           "Industries":"อุตสาหกรรม","About ETIA":"เกี่ยวกับ ETIA","Contact":"ติดต่อ"}
 def navlab(lang, t):
     if lang == "zh": return NAV_ZH.get(t, t)
@@ -800,7 +800,7 @@ def nav_html(lang, active, path="/", langs=None):
     return '<nav><div class="navlinks">%s</div>%s%s</nav>' % (items, sw, NAV_TOGGLE)
 
 FOOTER_LINKS = [("Home", "/"), ("Product", u_products()), ("Solutions", "/applications/"),
-                ("Insight", "/insights/"), ("Service", "/service/"),
+                ("Resources", "/insights/"), ("Service", "/service/"),
                 ("About ETIA", "/about/"), ("Contact", "/contact/")]
 FOOTER_I18N = {
  "heads": {"en": ("Navigation","Legal","Contact"), "zh": ("导航","法律","联系"),
@@ -1415,9 +1415,9 @@ def home_nav(lang):
     prod=simple_dropdown(lang, "Product", "/products/", PROD_AXES[1][3], False, lf, descs=INDUSTRY_MENU_DESC, brands=BRAND_MENU)
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
-    # top nav after Product: Solutions, Insight, Service
+    # top nav after Product: Solutions, Resources, Service
     app_lbl={"en":"Solutions","zh":"方案","vi":"Giải pháp","th":"โซลูชัน"}.get(lang,"Solutions")
-    ins_lbl={"en":"Insight","zh":"洞察","vi":"Kiến thức","th":"ความรู้"}.get(lang,"Insight")
+    ins_lbl={"en":"Resources","zh":"资讯","vi":"Tài nguyên","th":"แหล่งข้อมูล"}.get(lang,"Resources")
     sv_lbl={"en":"Service","zh":"服务","vi":"Dịch vụ","th":"บริการ"}.get(lang,"Service")
     links=('<a href="%s">%s</a><a href="%s">%s</a><a href="%s">%s</a>'%(
         lf("/applications/"),esc(app_lbl),lf("/insights/"),esc(ins_lbl),lf("/service/"),esc(sv_lbl)))
@@ -1426,10 +1426,10 @@ def home_nav(lang):
 
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
-    # footer nav mirrors the top nav: Product · Application · Insight · Service
+    # footer nav mirrors the top nav: Product · Application · Resources · Service
     foot_nav=[("/products/",{"en":"Product","zh":"产品","vi":"Sản phẩm","th":"ผลิตภัณฑ์"}.get(lang,"Product")),
               ("/applications/",{"en":"Application","zh":"应用","vi":"Ứng dụng","th":"การใช้งาน"}.get(lang,"Application")),
-              ("/insights/",{"en":"Insight","zh":"洞察","vi":"Kiến thức","th":"ความรู้"}.get(lang,"Insight")),
+              ("/insights/",{"en":"Resources","zh":"资讯","vi":"Tài nguyên","th":"แหล่งข้อมูล"}.get(lang,"Resources")),
               ("/service/",{"en":"Service","zh":"服务","vi":"Dịch vụ","th":"บริการ"}.get(lang,"Service"))]
     navl="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,h),esc(l)) for h,l in foot_nav)
     legal="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,p),t) for p,t in
@@ -1566,7 +1566,7 @@ HOME2 = {
 }
 
 # Green corner labels + banner background images (fill BG with clean COS URLs later)
-HOME_TABS = [("HOME", "首页"), ("PRODUCTS", "产品"), ("APPLICATIONS", "应用"), ("INSIGHTS", "洞察"), ("SERVICE", "服务")]
+HOME_TABS = [("HOME", "首页"), ("PRODUCTS", "产品"), ("APPLICATIONS", "应用"), ("RESOURCES", "资讯"), ("SERVICE", "服务")]
 # Page hero banners (COS). .hbanner::before lays the brand-blue gradient over the photo.
 _BN = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/"
 BANNER_HOME = _BN + "HOMEPAGE-BANNER"
