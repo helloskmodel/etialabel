@@ -1714,7 +1714,7 @@ def home_hero(lang):
         '<div class="hhero-copy"><span class="hhero-pill">' + check + ' ' + esc(pill_txt) + '</span>'
         '<h1>' + esc(head) + '</h1><p class="hsub">' + esc(sub) + '</p>'
         '<div class="hhero-cta"><a class="hhbtn pri" href="' + home_hlink(lang,"/products/find/") + '">' + esc(c1) + '</a>'
-        '<a class="hhbtn sample" href="' + home_hlink(lang,"/contact/") + '">' + esc(c3) + '</a>'
+        '<a class="hhbtn sample" href="' + home_hlink(lang,"/products/find/") + '">' + esc(c3) + '</a>'
         '<a class="hhbtn gho" href="' + home_hlink(lang,"/contact/") + '">' + esc(c2) + '</a></div></div>'
         '<div class="hhwin" id="hhwin">' + slides + '<div class="hhdots" id="hhdots">' + dots + '</div></div>'
         '</div></section>' + script)
