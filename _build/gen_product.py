@@ -453,7 +453,10 @@ def build_lang(d, lang):
     # hardcoded PRODUCT_INDUSTRY map. It ALWAYS wins over any per-product "banner".
     # Only pages with no industry at all (the environment Solution pages) keep their
     # own banner. See product_industry() + the build audit that flags omissions.
-    banner = INDUSTRY_BANNERS.get(product_industry(d, slug), "") or d.get("banner", "")
+    # A product may set "banner_override" to a specific hero image that wins over
+    # the uniform industry banner (used sparingly, e.g. when the industry banner
+    # would contradict the page — E-4812 must not show a glass serum vial).
+    banner = d.get("banner_override", "") or INDUSTRY_BANNERS.get(product_industry(d, slug), "") or d.get("banner", "")
     # banner_pos: object-position override so a page can steer which part of the
     # photo shows. A product inherits its industry's crop (so the product hero is
     # aligned with the industry banner) unless it sets its own.
@@ -548,7 +551,7 @@ def main():
     for slug in sorted(slugs):
         d = json.load(open(os.path.join(PDIR, slug + ".json"), encoding="utf-8"))
         ind = product_industry(d, slug)
-        eff_banner = INDUSTRY_BANNERS.get(ind, "") or d.get("banner", "")
+        eff_banner = d.get("banner_override", "") or INDUSTRY_BANNERS.get(ind, "") or d.get("banner", "")
         if slug not in SOLUTION_SLUGS:
             if not ind:
                 (unbannered if not eff_banner else misc).append(slug)

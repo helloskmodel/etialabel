@@ -7,7 +7,8 @@
     "vi",
     "th"
   ],
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/medical-4812",
+  "banner": "",
+  "banner_override": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/MEDICAL-196C",
   "product_img": "",
   "eyebrow": {
     "en": "Low Temperature · Cryogenic Storage",
@@ -26,10 +27,10 @@
     "th": "ใช้งานถึงไนโตรเจนเหลว −196°C · ติดที่ −80°C บนพื้นผิวแช่แข็ง · สูงสุด 10 รอบแช่แข็ง-ละลาย · สำหรับ cryovial PP ไม่ใช่ขวดแก้ว"
   },
   "positioning": {
-    "en": "Purpose-built identification labels for frozen laboratory sample containers — polypropylene (PP) cryovials, test tubes and storage boxes (PP and cardboard). Rated for storage from −150°C to −196°C (liquid-nitrogen environments), it keeps information clearly legible across the sample's entire frozen-storage lifecycle. It also survives repeated thaw-and-refreeze cycles — up to 10 cycles of thawing at room temperature or in warm / ice water followed by refreezing. Application is by direct labelling of frozen surfaces at −80°C without thawing — the −150°C to −196°C figures are the liquid-nitrogen storage/service range, not an application temperature, and the label must never be applied while immersed in liquid nitrogen. This label is designed for PP cryovials/cryotubes; it is not recommended for glass serum vials (西林管).",
-    "zh": "该产品专为冷冻实验室样品容器的识别标签而设计，适用于聚丙烯（PP）冷冻小瓶、试管和存储盒（PP 和纸板）。存储温度范围在 −150°C 至 −196°C（液氮环境）。信息可确保在样品整个冷冻存储生命周期内保持清晰可识别。该产品还能承受多次解冻和冷冻循环——最多可承受 10 次在室温或温水／冰水中解冻后再冷冻的循环。 贴标方式为在 −80℃ 冷冻表面直接贴标、无需解冻——−150℃ 至 −196℃ 为液氮存储／使用温度范围，并非贴标温度，切勿在液氮中贴标。本产品适用于 PP 冻存管；不适用于玻璃西林管。",
-    "vi": "Nhãn nhận diện chuyên dụng cho hộp đựng mẫu phòng thí nghiệm đông lạnh — lọ cryovial polypropylene (PP), ống nghiệm và hộp lưu trữ (PP và bìa cứng). Định mức cho lưu trữ từ −150°C đến −196°C (môi trường nitơ lỏng), giữ thông tin rõ ràng dễ đọc suốt vòng đời lưu trữ đông lạnh của mẫu. Nhãn cũng chịu được các chu kỳ rã đông và tái đông lặp lại — tới 10 chu kỳ. Cách dán là dán trực tiếp lên bề mặt đông lạnh ở −80°C mà không rã đông — dải −150°C đến −196°C là nhiệt độ lưu trữ/sử dụng trong nitơ lỏng, không phải nhiệt độ dán, và tuyệt đối không dán khi đang ngâm trong nitơ lỏng. Nhãn này dành cho cryovial/ống cryo PP; không khuyến nghị cho lọ thủy tinh (西林管).",
-    "th": "ฉลากระบุเฉพาะสำหรับภาชนะเก็บตัวอย่างในห้องปฏิบัติการแบบแช่แข็ง — cryovial โพลีโพรพิลีน (PP) หลอดทดลอง และกล่องจัดเก็บ (PP และกระดาษแข็ง) รองรับการจัดเก็บ −150°C ถึง −196°C (ไนโตรเจนเหลว) ทำให้ข้อมูลอ่านได้ชัดเจนตลอดวงจรการจัดเก็บแช่แข็ง ทนรอบการละลายและแช่แข็งซ้ำได้สูงสุด 10 รอบ การติดฉลากทำโดยติดบนพื้นผิวแช่แข็งโดยตรงที่ −80°C โดยไม่ต้องละลาย — ช่วง −150°C ถึง −196°C คืออุณหภูมิจัดเก็บ/ใช้งานในไนโตรเจนเหลว ไม่ใช่อุณหภูมิการติดฉลาก และห้ามติดฉลากขณะแช่ในไนโตรเจนเหลวโดยเด็ดขาด ฉลากนี้ออกแบบสำหรับ cryovial/หลอดไครโอ PP ไม่แนะนำสำหรับขวดแก้ว (西林管)"
+    "en": "Purpose-built identification labels for frozen laboratory sample containers — polypropylene (PP) cryovials, test tubes and storage boxes (PP and cardboard). Applied directly to frozen surfaces at −80°C without thawing, the label stays firmly bonded and clearly legible through long-term liquid-nitrogen storage down to −196°C, and survives up to 10 freeze-thaw cycles. Waterproof, oil- and chemical-resistant, it is designed for PP cryovials and cryotubes — it is not recommended for glass serum vials. (Never apply the label while immersed in liquid nitrogen.)",
+    "zh": "专为冷冻实验室样品容器设计的识别标签，适用于聚丙烯（PP）冻存管、试管与存储盒（PP 与纸板）。可在 −80°C 冷冻表面直接贴标、无需解冻，在低至 −196°C 的长期液氮存储中牢固贴合、清晰可读，并耐受最多 10 次反复冻融。防水、抗油、耐化学，专为 PP 冻存管设计 —— 不适用于玻璃西林管。（切勿在液氮中贴标。）",
+    "vi": "Nhãn nhận diện chuyên dụng cho hộp đựng mẫu phòng thí nghiệm đông lạnh — cryovial polypropylene (PP), ống nghiệm và hộp lưu trữ (PP và bìa cứng). Dán trực tiếp lên bề mặt đông lạnh ở −80°C mà không cần rã đông, nhãn bám chắc và rõ nét suốt quá trình lưu trữ nitơ lỏng dài hạn đến −196°C, chịu được tới 10 chu kỳ đông-rã. Chống nước, kháng dầu và hóa chất, được thiết kế cho cryovial/ống cryo PP — không khuyến nghị cho lọ thủy tinh. (Tuyệt đối không dán khi đang ngâm trong nitơ lỏng.)",
+    "th": "ฉลากระบุเฉพาะสำหรับภาชนะเก็บตัวอย่างในห้องปฏิบัติการแบบแช่แข็ง — cryovial โพลีโพรพิลีน (PP) หลอดทดลอง และกล่องจัดเก็บ (PP และกระดาษแข็ง) ติดบนพื้นผิวแช่แข็งโดยตรงที่ −80°C โดยไม่ต้องละลาย ฉลากยึดแน่นและอ่านได้ชัดเจนตลอดการจัดเก็บไนโตรเจนเหลวระยะยาวถึง −196°C และทนได้สูงสุด 10 รอบแช่แข็ง-ละลาย กันน้ำ ทนน้ำมันและสารเคมี ออกแบบสำหรับ cryovial/หลอดไครโอ PP — ไม่แนะนำสำหรับขวดแก้ว (ห้ามติดฉลากขณะแช่ในไนโตรเจนเหลว)"
   },
   "challenges": {},
   "features": {
@@ -373,7 +374,7 @@
             "zh": "适用容器"
           },
           {
-            "en": "PP cryovials / cryotubes and storage boxes (PP and cardboard). NOT for glass serum vials (西林管).",
+            "en": "PP cryovials / cryotubes and storage boxes (PP and cardboard). NOT for glass serum vials.",
             "zh": "PP 冻存管及存储盒（PP 与纸板）。不适用于玻璃西林管。"
           }
         ]
@@ -382,7 +383,7 @@
     "notes": {
       "en": [
         "Temperatures: applied at −80°C to frozen surfaces; service/storage down to −196°C in liquid nitrogen — never apply while immersed in liquid nitrogen.",
-        "Designed for PP cryovials/cryotubes — not recommended for glass serum vials (西林管).",
+        "Designed for PP cryovials/cryotubes — not recommended for glass serum vials.",
         "Figures are indicative typical values; verify against the current technical datasheet and by application testing before production."
       ],
       "zh": [

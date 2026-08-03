@@ -124,14 +124,14 @@
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPLY"
       },
       {
-        "title": "Responsive Customer Support",
+        "title": "Responsive Application Support",
         "desc": "Fast, dependable support from a dedicated team.",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"
       }
     ],
     "why_close": "",
-    "prod_eyebrow": "REQUEST SAMPLES",
-    "prod_title": "Request Product Samples",
+    "prod_eyebrow": "FEATURED MATERIALS",
+    "prod_title": "Featured Label Materials",
     "prod_sub": "Tell us your application — we'll recommend a material and arrange samples for evaluation.",
     "prod_cta": "Talk to a Specialist",
     "products": [
@@ -288,14 +288,14 @@
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPLY"
       },
       {
-        "title": "快速响应服务",
+        "title": "快速应用支持",
         "desc": "专属团队，快速响应。",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"
       }
     ],
     "why_close": "",
-    "prod_eyebrow": "样品申请",
-    "prod_title": "欢迎申请样品",
+    "prod_eyebrow": "精选材料",
+    "prod_title": "精选标签材料",
     "prod_sub": "告诉我们您的应用，我们将推荐材料并安排样品验证。",
     "prod_cta": "咨询专家",
     "products": [
@@ -452,14 +452,14 @@
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPLY"
       },
       {
-        "title": "Hỗ trợ khách hàng nhanh chóng",
+        "title": "Hỗ trợ ứng dụng nhanh chóng",
         "desc": "Hỗ trợ nhanh, tin cậy từ đội ngũ chuyên trách.",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"
       }
     ],
     "why_close": "",
-    "prod_eyebrow": "YÊU CẦU MẪU",
-    "prod_title": "Yêu cầu mẫu sản phẩm",
+    "prod_eyebrow": "VẬT LIỆU NỔI BẬT",
+    "prod_title": "Vật liệu nhãn nổi bật",
     "prod_sub": "Hãy cho biết ứng dụng của bạn — chúng tôi sẽ đề xuất vật liệu và chuẩn bị mẫu để đánh giá.",
     "prod_cta": "Trao đổi với chuyên gia",
     "products": [
@@ -616,14 +616,14 @@
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPLY"
       },
       {
-        "title": "การสนับสนุนลูกค้าที่รวดเร็ว",
+        "title": "การสนับสนุนการใช้งานที่รวดเร็ว",
         "desc": "การสนับสนุนที่รวดเร็วจากทีมงานเฉพาะ",
         "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/SERVICE%20/SUPPORT"
       }
     ],
     "why_close": "",
-    "prod_eyebrow": "ขอตัวอย่าง",
-    "prod_title": "ขอตัวอย่างผลิตภัณฑ์",
+    "prod_eyebrow": "วัสดุที่แนะนำ",
+    "prod_title": "วัสดุฉลากที่แนะนำ",
     "prod_sub": "บอกเราถึงการใช้งานของคุณ แล้วเราจะแนะนำวัสดุและจัดเตรียมตัวอย่างเพื่อประเมิน",
     "prod_cta": "ปรึกษาผู้เชี่ยวชาญ",
     "products": [

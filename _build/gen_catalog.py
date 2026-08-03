@@ -263,11 +263,18 @@ def build_lang(records, lang):
         if r.get("color"):
             chips += '<span class="cchip clr"><i style="background:%s"></i>%s</span>' % (
                 r["color"]["dot"], esc(L(r["color"]["lab"])))
+        # model-code tokens for precise part-number search — includes hyphenated
+        # and de-hyphenated forms of the slug and any display code (e.g. XF-611FR),
+        # so "e4812" and "e-4812" both resolve to the right product.
+        _cb = [r["slug"], r["slug"].replace("-", "")]
+        if r.get("code"):
+            _cb += [r["code"].lower(), r["code"].lower().replace("-", "")]
         data = {
             "industry": [r["industry"]] if r["industry"] else [],
             "brand": [r["brand"]], "app": r["apps"],
             "fs": [json.dumps(f, ensure_ascii=False) for f in r["facestocks"]],
             "thick": r["thick"], "temp": r["temps"], "q": r["blob"],
+            "code": " ".join(_cb),
         }
         img = r.get("product_img", "")
         if img and "/PRODUCT/" in img:
@@ -360,7 +367,10 @@ function cf(){
     try{ f=JSON.parse(el.getAttribute('data-f')); }catch(e){ f=null; }
     if(f){
       for(var g in sel){ if(!sel[g].some(function(v){return (f[g]||[]).indexOf(v)>=0;})){ok=false;break;} }
-      if(ok && terms.length){ ok=terms.every(function(t){return (f.q||'').indexOf(t)>=0;}); }
+      if(ok && terms.length){ ok=terms.every(function(t){
+        var td=t.replace(/-/g,'');
+        return (f.q||'').indexOf(t)>=0 || (f.code||'').replace(/-/g,'').indexOf(td)>=0;
+      }); }
     } else { ok=!active; }   /* unparseable card: show it unless a filter is active */
     el.style.display=ok?'':'none'; if(ok)n++;
   });
