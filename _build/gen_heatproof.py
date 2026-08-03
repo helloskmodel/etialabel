@@ -2189,10 +2189,10 @@ def build_about(lang):
 def build_contact(lang):
     zh=(lang=="zh")
     offices=[
-      ("Shanghai","上海","China","中国","+86 151 2119 7091 · 400 990 8448"),
+      ("Shanghai","上海","China","中国","+86 139 1833 9249"),
       ("Hong Kong","香港","ETIA-TECH (ASIA) Co., Limited","ETIA-TECH (ASIA) Co., Limited","etialabel@etia-tech.com"),
       ("Bangkok","曼谷","Thailand","泰国","+66 811 746 947"),
-      ("Bac Ninh","北宁","Vietnam","越南","+84 344 590 091"),
+      ("Bac Ninh","北宁","Vietnam","越南","+84 961 530 153"),
     ]
     cards="".join('<div class="card"><h3>%s</h3><p>%s</p><div class="rows"><b>%s</b></div></div>'%(
         esc(z if zh else e), esc(rz if zh else r), esc(c)) for e,z,r,rz,c in offices)
@@ -2272,29 +2272,29 @@ def build_tech(lang):
     if lang=="en": track("/technical-resources/","core")
 
 SERVICE_OFFICES=[
-  ("Shanghai","上海","+86 151 2119 7091 · 400 990 8448"),
+  ("Shanghai","上海","+86 139 1833 9249"),
   ("Hong Kong","香港","etialabel@etia-tech.com"),
   ("Bangkok","曼谷","+66 811 746 947"),
-  ("Bac Ninh","北宁","+84 344 590 091"),
+  ("Bac Ninh","北宁","+84 961 530 153"),
 ]
 # Regional contact cards for the Service page ("Contact your regional ETIA team").
 # addr = [native line, english line] (native omitted for HK). role = (en, zh).
 SERVICE_REGIONS=[
-  {"region":("China · Shanghai","中国 · 上海","Trung Quốc · Thượng Hải","จีน · เซี่ยงไฮ้"),"name":"Mark Tang","role":("","","",""),
+  {"region":("China · Shanghai","中国 · 上海","Trung Quốc · Thượng Hải","จีน · เซี่ยงไฮ้"),"name":"Da Li","role":("","","",""),
    "addr":["上海市普陀区中江路 388 弄国盛中心 2 号楼 1903 室",
            "Rm. 1903, 2# Building, Guoson Centre, No. 388 Zhongjiang Rd, Putuo District, Shanghai, China"],
-   "phone":"400 990 8448 · +86-21-6432-7144 转 106","email":"Omnicure@etia-tech.com"},
-  {"region":("China · Hong Kong","中国 · 香港","Trung Quốc · Hồng Kông","จีน · ฮ่องกง"),"name":"Mark Tang","role":("","","",""),
+   "phone":"+86 139 1833 9249","email":"etialabel@etia-tech.com"},
+  {"region":("China · Hong Kong","中国 · 香港","Trung Quốc · Hồng Kông","จีน · ฮ่องกง"),"name":"Da Li","role":("","","",""),
    "addr":["Room 1003, 10/F, Tower 1, Lippo Centre, 89 Queensway, Admiralty, Hong Kong"],
-   "phone":"+86 151 2119 7091","email":"Omnicure@etia-tech.com"},
+   "phone":"+86 139 1833 9249","email":"etialabel@etia-tech.com"},
   {"region":("Thailand · Bangkok","泰国 · 曼谷","Thái Lan · Bangkok","ไทย · กรุงเทพฯ"),"name":"Mr. Sompoch Ratchakom (Job)","role":("Sales Director","销售总监","Giám đốc Kinh doanh","ผู้อำนวยการฝ่ายขาย"),
    "addr":["22/41 เอช-เคป บิซ เซ็นเตอร์ ถนนสุขาภิบาล 2 แขวงประเวศ เขตประเวศ กรุงเทพฯ 10250",
            "22/41 H-Cape Biz Center, Sukhaphiban 2 Road, Prawet Subdistrict, Prawet District, Bangkok 10250, Thailand"],
-   "phone":"+66 811 746 947","email":"omnicure.th@gmail.com"},
-  {"region":("Vietnam · Bac Ninh","越南 · 北宁","Việt Nam · Bắc Ninh","เวียดนาม · บั๊กนิญ"),"name":"Tien Nguyen","role":("Technical Engineer","技术工程师","Kỹ sư Kỹ thuật","วิศวกรเทคนิค"),
+   "phone":"+66 811 746 947","email":"etialabel@etia-tech.com"},
+  {"region":("Vietnam · Bac Ninh","越南 · 北宁","Việt Nam · Bắc Ninh","เวียดนาม · บั๊กนิญ"),"name":"Trần Diệu Hoa","role":("Technical Engineer","技术工程师","Kỹ sư Kỹ thuật","วิศวกรเทคนิค"),
    "addr":["Số 10 đường Thanh Niên, Khu 5, Phường Võ Cường, Tỉnh Bắc Ninh, Việt Nam",
            "No. 10 Thanh Nien Street, Area 5, Vo Cuong Ward, Bac Ninh Province, Viet Nam"],
-   "phone":"+84 344 590 091","email":"omnicure.vn@gmail.com"},
+   "phone":"+84 961 530 153","email":"etialabel@etia-tech.com"},
 ]
 # 4 service images (one per commitment) on COS. quote() matches COS folder encoding.
 import urllib.parse as _up
