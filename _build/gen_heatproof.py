@@ -1575,7 +1575,7 @@ BANNER_APPLICATION = _BN + "SOLUTION-BANNERNEW"
 # per language). File convention: <stem>-<lang> with lang in en/zh/vi/th.
 # Single banner per page, all languages (kept simple).
 BANNER_INSIGHT = _BN + "insightbanner-en"
-BANNER_SERVICE = _BN + "servicebanner"
+BANNER_SERVICE = _BN + "SERVICE-BANNER"
 HOME_BG = [BANNER_HOME, "", "", "", ""]
 # section_hero idx: 0=Products, 1=Applications, 2=Insights, 3=Service
 SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
