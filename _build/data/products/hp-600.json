@@ -1,0 +1,114 @@
+{
+  "slug": "hp-600",
+  "source": "ETIA-TECH HP-600 Technical Data Sheet",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "brand": "heatproof",
+  "industry": "steel",
+  "product_img": "",
+  "title": {
+    "en": "HP-600 — Heat-Resistant Label for Metal Products (300–600 °C)",
+    "zh": "HP-600 — 金属制品耐高温标签 (300–600 °C)",
+    "vi": "HP-600 — Nhãn chịu nhiệt cho sản phẩm kim loại (300–600 °C)",
+    "th": "HP-600 — ฉลากทนความร้อนสำหรับผลิตภัณฑ์โลหะ (300–600 °C)"
+  },
+  "tagline": {
+    "en": "Aluminum-foil label with a silicone adhesive — heat-resistant to 600 °C, applies at 300–600 °C, liner-free with high adhesion on metal.",
+    "zh": "铝箔标签配硅胶胶粘剂 —— 耐热 600 °C，可在 300–600 °C 贴标，无底纸，金属表面高粘着。",
+    "vi": "Nhãn lá nhôm với keo silicone — chịu nhiệt 600 °C, dán ở 300–600 °C, không lớp lót, bám cao trên kim loại.",
+    "th": "ฉลากฟอยล์อะลูมิเนียมพร้อมกาวซิลิโคน — ทนความร้อน 600 °C ติดที่ 300–600 °C ไม่มีไลเนอร์ ยึดเกาะโลหะสูง"
+  },
+  "positioning": {
+    "en": "HP-600 is an aluminum-foil high-temperature label with an inorganic white printing layer and a complex-silicone thermo-sensitive adhesive, so it needs no liner. It resists heat up to 600 °C and applies across a wide 300–600 °C range, bonding firmly to metal substrates — for identification and traceability of metal products through high-temperature processing.",
+    "zh": "HP-600 是一款铝箔高温标签，配无机白色印刷层与复合硅胶热敏胶粘剂，因而无需底纸。耐热达 600 °C，可在 300–600 °C 的宽温区直接贴标，并牢固粘附于金属基材 —— 用于金属制品在高温加工全过程的标识与追溯。",
+    "vi": "HP-600 là nhãn nhiệt độ cao bằng lá nhôm với lớp in trắng vô cơ và keo silicone phức nhạy nhiệt nên không cần lớp lót. Chịu nhiệt đến 600 °C, dán trong dải rộng 300–600 °C và bám chắc trên nền kim loại — để nhận diện và truy xuất sản phẩm kim loại qua quá trình gia công nhiệt độ cao.",
+    "th": "HP-600 เป็นฉลากทนอุณหภูมิสูงจากฟอยล์อะลูมิเนียม พร้อมชั้นพิมพ์สีขาวอนินทรีย์และกาวซิลิโคนเชิงซ้อนแบบไวความร้อน จึงไม่ต้องใช้ไลเนอร์ ทนความร้อนถึง 600 °C ติดได้ในช่วงกว้าง 300–600 °C และยึดเกาะแน่นบนโลหะ — สำหรับการระบุและตรวจสอบย้อนกลับผลิตภัณฑ์โลหะตลอดกระบวนการอุณหภูมิสูง"
+  },
+  "features": {
+    "en": [
+      "Wide application temperature range: 300–600 °C",
+      "High heat resistance up to 600 °C",
+      "High adhesion on metal substrates",
+      "Liner-free — thermo-sensitive adhesive",
+      "Thermal-transfer printable (YS-4 ribbon)"
+    ],
+    "zh": [
+      "宽应用温度范围：300–600 °C",
+      "高耐热，达 600 °C",
+      "金属基材高粘着",
+      "无底纸 —— 热敏胶粘剂",
+      "可热转印（YS-4 碳带）"
+    ],
+    "vi": [
+      "Dải nhiệt độ ứng dụng rộng: 300–600 °C",
+      "Chịu nhiệt cao đến 600 °C",
+      "Bám cao trên nền kim loại",
+      "Không lớp lót — keo nhạy nhiệt",
+      "In truyền nhiệt (ribbon YS-4)"
+    ],
+    "th": [
+      "ช่วงอุณหภูมิใช้งานกว้าง: 300–600 °C",
+      "ทนความร้อนสูงถึง 600 °C",
+      "ยึดเกาะสูงบนโลหะ",
+      "ไม่มีไลเนอร์ — กาวไวความร้อน",
+      "พิมพ์ถ่ายเทความร้อนได้ (ริบบอน YS-4)"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": ["Property", "Value"],
+      "zh": ["属性", "参数"],
+      "vi": ["Thuộc tính", "Giá trị"],
+      "th": ["คุณสมบัติ", "ค่า"]
+    },
+    "rows": [
+      {"cells": [
+        {"en": "Heat resistance", "zh": "耐热", "vi": "Chịu nhiệt", "th": "ทนความร้อน"},
+        "600 °C"]},
+      {"cells": [
+        {"en": "Application temperature", "zh": "应用温度", "vi": "Nhiệt độ ứng dụng", "th": "อุณหภูมิใช้งาน"},
+        "300–600 °C"]},
+      {"cells": [
+        {"en": "Label core", "zh": "标签基材", "vi": "Lõi nhãn", "th": "แกนฉลาก"},
+        {"en": "Aluminum foil (40 ± 1 µm)", "zh": "铝箔（40 ± 1 µm）", "vi": "Lá nhôm (40 ± 1 µm)", "th": "ฟอยล์อะลูมิเนียม (40 ± 1 µm)"}]},
+      {"cells": [
+        {"en": "Adhesion", "zh": "粘着力", "vi": "Độ bám", "th": "การยึดเกาะ"},
+        {"en": "100–600 gf/25 mm (Al plate, 180° peel)", "zh": "100–600 gf/25 mm（铝板，180° 剥离）", "vi": "100–600 gf/25 mm (tấm nhôm, bóc 180°)", "th": "100–600 gf/25 mm (แผ่นอะลูมิเนียม, ลอก 180°)"}]},
+      {"cells": [
+        {"en": "Printing", "zh": "打印", "vi": "In ấn", "th": "การพิมพ์"},
+        {"en": "Thermal transfer — YS-4 ribbon", "zh": "热转印 —— YS-4 碳带", "vi": "In truyền nhiệt — ribbon YS-4", "th": "พิมพ์ถ่ายเทความร้อน — ริบบอน YS-4"}]},
+      {"cells": [
+        {"en": "Construction (top → bottom)", "zh": "结构（自上而下）", "vi": "Cấu tạo (trên → dưới)", "th": "โครงสร้าง (บน → ล่าง)"},
+        {"en": "Inorganic white coating 10 ± 2 µm · aluminum foil 40 ± 1 µm · complex-silicone adhesive 28 ± 2 µm (liner-free).", "zh": "无机白色涂层 10 ± 2 µm · 铝箔 40 ± 1 µm · 复合硅胶胶粘剂 28 ± 2 µm（无底纸）。", "vi": "Phủ trắng vô cơ 10 ± 2 µm · lá nhôm 40 ± 1 µm · keo silicone phức 28 ± 2 µm (không lớp lót).", "th": "เคลือบขาวอนินทรีย์ 10 ± 2 µm · ฟอยล์อะลูมิเนียม 40 ± 1 µm · กาวซิลิโคนเชิงซ้อน 28 ± 2 µm (ไม่มีไลเนอร์)"}]}
+    ],
+    "notes": {
+      "en": ["Values are typical, not specifications; verify against the datasheet and by application testing."],
+      "zh": ["数值为典型值，非规格值；请以数据表并经应用测试确认。"],
+      "vi": ["Giá trị là điển hình, không phải thông số kỹ thuật; hãy xác minh theo datasheet và thử nghiệm ứng dụng."],
+      "th": ["ค่าเป็นค่าทั่วไป ไม่ใช่สเปก โปรดตรวจสอบกับเอกสารข้อมูลและการทดสอบการใช้งาน"]
+    }
+  },
+  "applications": {
+    "en": [
+      "Metal-product management with heat up to 600 °C",
+      "Steel, aluminum and non-ferrous metal industries",
+      "Metal-processing and thermal-treatment lines"
+    ],
+    "zh": [
+      "热温达 600 °C 的金属制品管理",
+      "钢铁、铝与有色金属行业",
+      "金属加工与热处理产线"
+    ],
+    "vi": [
+      "Quản lý sản phẩm kim loại với nhiệt đến 600 °C",
+      "Ngành thép, nhôm và kim loại màu",
+      "Dây chuyền gia công kim loại và xử lý nhiệt"
+    ],
+    "th": [
+      "การจัดการผลิตภัณฑ์โลหะที่ความร้อนถึง 600 °C",
+      "อุตสาหกรรมเหล็ก อะลูมิเนียม และโลหะนอกกลุ่มเหล็ก",
+      "สายการแปรรูปโลหะและการอบชุบ"
+    ]
+  },
+  "certifications": {"en": [], "zh": [], "vi": [], "th": []}
+}
