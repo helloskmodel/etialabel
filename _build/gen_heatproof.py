@@ -2188,17 +2188,25 @@ def build_about(lang):
 
 def build_contact(lang):
     zh=(lang=="zh")
+    # offices: (name P-args, sub-line P-args, contact string)
     offices=[
-      ("Shanghai","上海","China","中国","+86 139 1833 9249 · 400 990 8448 · +86-21-6432-7144"),
-      ("Hong Kong","香港","ETIA-TECH (ASIA) Co., Limited","ETIA-TECH (ASIA) Co., Limited","etialabel@etia-tech.com"),
-      ("Bangkok","曼谷","Thailand","泰国","+66 811 746 947"),
-      ("Bac Ninh","北宁","Vietnam","越南","+84 961 530 153"),
+      (("Shanghai","上海","Thượng Hải","เซี่ยงไฮ้"),("China","中国","Trung Quốc","จีน"),
+       "+86 139 1833 9249 · 400 990 8448 · +86-21-6432-7144"),
+      (("Hong Kong","香港","Hồng Kông","ฮ่องกง"),
+       ("ETIA-TECH (ASIA) Co., Limited",)*4,"etialabel@etia-tech.com"),
+      (("Bangkok","曼谷","Bangkok","กรุงเทพฯ"),("Thailand","泰国","Thái Lan","ไทย"),
+       "+66 811 746 947"),
+      (("Bac Ninh","北宁","Bắc Ninh","บั๊กนิญ"),("Vietnam","越南","Việt Nam","เวียดนาม"),
+       "+84 961 530 153"),
     ]
     cards="".join('<div class="card"><h3>%s</h3><p>%s</p><div class="rows"><b>%s</b></div></div>'%(
-        esc(z if zh else e), esc(rz if zh else r), esc(c)) for e,z,r,rz,c in offices)
-    ask=("告诉我们:粘贴表面、温度(贴标时与后续最高)、化学暴露、打印方式与标签尺寸,我们推荐材料并安排样品。" if zh
-         else "Tell us: the surface, temperature (at application and later peak), chemical exposure, print method and label size — we'll recommend the material and arrange samples.")
-    def lb(e,z): return z if zh else e
+        esc(P(lang,*nm)), esc(P(lang,*sub)), esc(c)) for nm,sub,c in offices)
+    ask=P(lang,
+        "Tell us: the surface, temperature (at application and later peak), chemical exposure, print method and label size — we'll recommend the material and arrange samples.",
+        "告诉我们:粘贴表面、温度(贴标时与后续最高)、化学暴露、打印方式与标签尺寸,我们推荐材料并安排样品。",
+        "Cho chúng tôi biết: bề mặt, nhiệt độ (khi dán và đỉnh sau đó), tiếp xúc hóa chất, phương pháp in và kích thước nhãn — chúng tôi sẽ đề xuất vật liệu và sắp xếp mẫu.",
+        "บอกเรา: พื้นผิว อุณหภูมิ (ตอนติดและจุดสูงสุดภายหลัง) การสัมผัสสารเคมี วิธีพิมพ์ และขนาดฉลาก — เราจะแนะนำวัสดุและจัดเตรียมตัวอย่าง")
+    def lb(en,zh_,vi="",th=""): return P(lang,en,zh_,vi or en,th or en)
     form_css=('<style>.cform{max-width:760px}'
       '.cfg{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px;margin:12px 0 18px}'
       '.cform label{display:flex;flex-direction:column;font-size:13px;font-weight:700;color:var(--blue-deep);gap:6px}'
@@ -2207,33 +2215,41 @@ def build_contact(lang):
       '.cform input:focus,.cform textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}'
       '@media(max-width:560px){.cfg{grid-template-columns:1fr}}</style>')
     form=(form_css+'<form class="cform" onsubmit="return etaContact(event)"><div class="cfg">'
-      '<label>'+esc(lb("Name *","姓名 *"))+'<input name="name" required></label>'
-      '<label>'+esc(lb("Company","公司"))+'<input name="company"></label>'
-      '<label>'+esc(lb("Email *","邮箱 *"))+'<input type="email" name="email" required></label>'
-      '<label>'+esc(lb("Phone *","电话 *"))+'<input name="phone" required></label>'
-      '<label class="full">'+esc(lb("Product / Interest","产品 / 需求"))+'<input name="product" id="cf_product"></label>'
-      '<label class="full">'+esc(lb("Your application — surface, temperature, chemistry, print method, label size","您的应用 —— 表面、温度、化学环境、打印方式、标签尺寸"))+'<textarea name="message" rows="4"></textarea></label>'
-      '</div><button class="btn pri" type="submit">'+esc(lb("Send to ETIA","发送给 ETIA"))+'</button></form>')
+      '<label>'+esc(lb("Name *","姓名 *","Tên *","ชื่อ *"))+'<input name="name" required></label>'
+      '<label>'+esc(lb("Company","公司","Công ty","บริษัท"))+'<input name="company"></label>'
+      '<label>'+esc(lb("Email *","邮箱 *","Email *","อีเมล *"))+'<input type="email" name="email" required></label>'
+      '<label>'+esc(lb("Phone *","电话 *","Điện thoại *","โทรศัพท์ *"))+'<input name="phone" required></label>'
+      '<label class="full">'+esc(lb("Product / Interest","产品 / 需求","Sản phẩm / Nhu cầu","สินค้า / ความสนใจ"))+'<input name="product" id="cf_product"></label>'
+      '<label class="full">'+esc(lb("Your application — surface, temperature, chemistry, print method, label size","您的应用 —— 表面、温度、化学环境、打印方式、标签尺寸","Ứng dụng của bạn — bề mặt, nhiệt độ, hóa chất, phương pháp in, kích thước nhãn","การใช้งานของคุณ — พื้นผิว อุณหภูมิ สารเคมี วิธีพิมพ์ ขนาดฉลาก"))+'<textarea name="message" rows="4"></textarea></label>'
+      '</div><button class="btn pri" type="submit">'+esc(lb("Send to ETIA","发送给 ETIA","Gửi cho ETIA","ส่งถึง ETIA"))+'</button></form>')
     form_js=('<script>(function(){var p=new URLSearchParams(location.search),pr=p.get("product"),ty=p.get("type"),f=document.getElementById("cf_product");if(f&&pr){f.value=pr+(ty?" ("+ty+")":"");}})();'
       'function etaContact(e){e.preventDefault();var f=e.target,g=function(n){var el=f.querySelector("[name="+n+"]");return el?el.value.trim():"";};'
       'var nm=g("name"),em=g("email"),ph=g("phone");'
-      'if(!nm||!em||!ph){alert("'+lb("Please fill in name, email and phone.","请填写姓名、邮箱和电话。")+'");return false;}'
+      'if(!nm||!em||!ph){alert("'+lb("Please fill in name, email and phone.","请填写姓名、邮箱和电话。","Vui lòng điền tên, email và điện thoại.","กรุณากรอกชื่อ อีเมล และโทรศัพท์")+'");return false;}'
       'var s="ETIA enquiry"+(g("product")?" - "+g("product"):"");'
       'var b="Name: "+nm+"\\nCompany: "+g("company")+"\\nEmail: "+em+"\\nPhone: "+ph+"\\nProduct: "+g("product")+"\\n\\n"+g("message");'
       'window.location.href="mailto:etialabel@etia-tech.com?subject="+encodeURIComponent(s)+"&body="+encodeURIComponent(b);return false;}</script>')
     body=('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div>%s%s'
           '<p class="muted" style="font-size:13px;margin-top:10px">%s <a href="mailto:etialabel@etia-tech.com">etialabel@etia-tech.com</a></p></div></section>'
           '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>')%(
-        lb("Tell us your application","告诉我们您的应用"), esc(ask), form, form_js,
-        lb("Prefer email? Write to","更习惯邮件？请联系"),
-        lb("Offices","办公室"), cards)
-    crumb=[("Home","/"),("Contact","/contact/")]
+        lb("Tell us your application","告诉我们您的应用","Cho chúng tôi biết ứng dụng của bạn","บอกเราเกี่ยวกับการใช้งานของคุณ"),
+        esc(ask), form, form_js,
+        lb("Prefer email? Write to","更习惯邮件？请联系","Thích email hơn? Viết cho","สะดวกอีเมล? เขียนถึง"),
+        lb("Offices","办公室","Văn phòng","สำนักงาน"), cards)
+    contact_lbl=P(lang,"Contact","联系我们","Liên hệ","ติดต่อ")
+    crumb=[(P(lang,"Home","首页","Trang chủ","หน้าแรก"),"/"),(contact_lbl,"/contact/")]
     write(lang,"/contact/",page(lang,"/contact/",
-        ("联系 ETIA | ETIA" if zh else "Contact ETIA | ETIA"),
-        ("联系 ETIA:上海 · 香港 · 曼谷 · 北宁 · etialabel@etia-tech.com。提供工况,我们匹配材料并寄样。" if zh
-         else "Contact ETIA — Shanghai · Hong Kong · Bangkok · Bac Ninh · etialabel@etia-tech.com. Share your application and we'll match the material and send samples."),
-        ("联系我们" if zh else "Contact ETIA"),
-        ("提供工况,我们匹配材料并寄样验证。" if zh else "Share your application — we'll match the material and validate by sample."),
+        P(lang,"Contact ETIA | ETIA","联系 ETIA | ETIA","Liên hệ ETIA | ETIA","ติดต่อ ETIA | ETIA"),
+        P(lang,
+          "Contact ETIA — Shanghai · Hong Kong · Bangkok · Bac Ninh · etialabel@etia-tech.com. Share your application and we'll match the material and send samples.",
+          "联系 ETIA:上海 · 香港 · 曼谷 · 北宁 · etialabel@etia-tech.com。提供工况,我们匹配材料并寄样。",
+          "Liên hệ ETIA — Thượng Hải · Hồng Kông · Bangkok · Bắc Ninh · etialabel@etia-tech.com. Chia sẻ ứng dụng của bạn, chúng tôi sẽ ghép vật liệu và gửi mẫu.",
+          "ติดต่อ ETIA — เซี่ยงไฮ้ · ฮ่องกง · กรุงเทพฯ · บั๊กนิญ · etialabel@etia-tech.com แบ่งปันการใช้งานของคุณ เราจะจับคู่วัสดุและส่งตัวอย่าง"),
+        P(lang,"Contact ETIA","联系我们","Liên hệ ETIA","ติดต่อ ETIA"),
+        P(lang,"Share your application — we'll match the material and validate by sample.",
+          "提供工况,我们匹配材料并寄样验证。",
+          "Chia sẻ ứng dụng của bạn — chúng tôi sẽ ghép vật liệu và xác thực bằng mẫu.",
+          "แบ่งปันการใช้งานของคุณ — เราจะจับคู่วัสดุและตรวจสอบด้วยตัวอย่าง"),
         body, crumb, active="contact"))
     if lang=="en": track("/contact/","core")
 
@@ -2774,10 +2790,10 @@ def build_all():
     # Product nav dropdown. /products/ and /industries/ redirect to Home
     # (see write_redirects). Individual product & industry pages remain.
     build_about(lang)
-    build_contact(lang)
     # legal pages (general website template — client legal counsel should review)
     build_legal(lang)
   for lang in NAV_PILLAR_LANGS:  # Product / Solutions / Service pillars: all 4 languages
+    build_contact(lang)  # linked from the hero CTA on every page → must exist in all 4 languages
     build_products_landing(lang)  # nav pillar: Product (mega-menu-style landing)
     build_applications(lang)   # nav pillar: Solutions
     build_service(lang)
