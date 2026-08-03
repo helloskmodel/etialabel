@@ -391,9 +391,17 @@ else document.addEventListener('DOMContentLoaded',cf);
 # Polyonics landing page — grouped by product FAMILY (SEM landing structure).
 POLY_SERIES = [
     {"key": "apex", "table": "pcb-labels", "tag": {"en": "APEX", "zh": "APEX", "vi": "APEX", "th": "APEX"},
-     "name": {"en": "APEX Series", "zh": "APEX 系列", "vi": "Dòng APEX", "th": "ซีรีส์ APEX"}},
-    {"key": "xf5", "table": "pcb-labels", "tag": {"en": "XF5", "zh": "XF5", "vi": "XF5", "th": "XF5"},
-     "name": {"en": "XF5 Series · PCB Polyimide", "zh": "XF5 系列 · PCB 聚酰亚胺", "vi": "Dòng XF5 · Polyimide PCB", "th": "ซีรีส์ XF5 · โพลีอิไมด์ PCB"}},
+     "name": {"en": "APEX Series", "zh": "APEX 系列", "vi": "Dòng APEX", "th": "ซีรีส์ APEX"},
+     "desc": {"en": "High-performance, solvent-resistant polyimide label series",
+              "zh": "高性能耐溶剂系列 PI 标签",
+              "vi": "Dòng nhãn polyimide kháng dung môi hiệu năng cao",
+              "th": "ซีรีส์ฉลากโพลีอิไมด์ทนตัวทำละลายประสิทธิภาพสูง"}},
+    {"key": "xf5", "table": "pcb-labels", "tag": {"en": "XF58", "zh": "XF58", "vi": "XF58", "th": "XF58"},
+     "name": {"en": "XF58 Series", "zh": "XF58 系列", "vi": "Dòng XF58", "th": "ซีรีส์ XF58"},
+     "desc": {"en": "High-temperature polyimide label series",
+              "zh": "耐高温系列 PI 标签",
+              "vi": "Dòng nhãn polyimide chịu nhiệt độ cao",
+              "th": "ซีรีส์ฉลากโพลีอิไมด์ทนอุณหภูมิสูง"}},
     {"key": "esd7", "table": "esd-safe", "tag": {"en": "XF7", "zh": "XF7", "vi": "XF7", "th": "XF7"},
      "name": {"en": "XF7 Series", "zh": "XF7 系列", "vi": "Dòng XF7", "th": "ซีรีส์ XF7"}},
     {"key": "cable", "table": "wire-cable", "tag": {"en": "Cable & Wire", "zh": "线缆", "vi": "Cáp & Dây", "th": "สายเคเบิล"},
@@ -521,6 +529,7 @@ BRAND_CSS = """<style>
 .bsec .cnt{font-size:12px;font-weight:800;color:#1A56DB;background:#eaf1ff;border-radius:999px;padding:2px 10px}
 .bsec .tbl{margin-left:auto;font-size:13.5px;font-weight:800;color:#1A56DB;text-decoration:none;white-space:nowrap}
 .bsec .tbl:hover{text-decoration:underline}
+.bsec-desc{margin:-6px 0 14px;color:#5a6884;font-size:14px;font-weight:600;line-height:1.5}
 .bhead .eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#1A56DB}
 .bhead h1{font-family:var(--sans);font-weight:800;color:#143C96;font-size:clamp(30px,4vw,44px);margin:8px 0 8px}
 .bhead p{color:#51607e;font-size:16px;max-width:70ch;margin:0 0 8px}
@@ -814,10 +823,13 @@ def build_brand(records, lang, bkey):
             tbl = hp.Lx(lang, "/products/polyonics/%s/" % s["table"])
             tag = s.get("tag", {})
             tag_l = (tag.get(lang) or tag.get("en")) if isinstance(tag, dict) else tag
+            ds = s.get("desc", {})
+            ds_l = (ds.get(lang) or ds.get("en")) if isinstance(ds, dict) else ds
+            desc_html = ('<p class="bsec-desc">%s</p>' % esc(ds_l)) if ds_l else ""
             sections += ('<div class="bsec"><h2>%s</h2><span class="cnt">%d</span>'
-                         '<a class="tbl" href="%s">%s</a></div><div class="bgrid">%s</div>') % (
+                         '<a class="tbl" href="%s">%s</a></div>%s<div class="bgrid">%s</div>') % (
                 esc(nm), len(members), tbl, esc(POLY_COMPARE.get(lang) or POLY_COMPARE["en"]),
-                "".join(card(r, tag_l) for r in members))
+                desc_html, "".join(card(r, tag_l) for r in members))
         body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap">%s%s</div>' % (overview, sections))
     elif bkey == "heatproof":
         # brand hero (steel banner) + overview + aisles grouped by temperature tier.
