@@ -433,7 +433,7 @@ HP_SEGMENTS = [
     {"key": "ceramic", "name": {"en": "Ceramic Labels", "zh": "陶瓷标签", "vi": "Nhãn gốm", "th": "ฉลากเซรามิก"},
      "slugs": ["hp-cbr11", "hp-cbr13", "hp-cbr-cx2"]},
     {"key": "tags", "name": {"en": "Heat-Treatment Tags", "zh": "热处理吊牌", "vi": "Thẻ xử lý nhiệt", "th": "แท็กอบชุบความร้อน"},
-     "slugs": ["hp-l90", "hp-l80", "hp-m83"]},
+     "slugs": ["hp-l90", "hp-l85", "hp-l80", "hp-m83"]},
 ]
 # HEATPROOF brand (ETIA's own extreme-temperature line) — steel banner, grouped by temp tier.
 HP_BANNER = hp._COS + "INDUSTRY/STEEL-BANNER"
