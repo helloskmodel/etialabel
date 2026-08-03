@@ -599,13 +599,22 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .ncard{background:#fff;border:1px solid #dbe3f1;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .15s,transform .15s}
 .ncard:hover{box-shadow:0 14px 34px rgba(20,60,150,.14);transform:translateY(-3px)}
 .ncard img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#e8eefb}
-/* article cover = category template image; the classification sits on the blank left area, the title goes below */
-.ncov{position:relative;aspect-ratio:16/9;overflow:hidden;background:#e8eefb}
-.ncov img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.ncov .novl{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;gap:6px;padding:15px 2% 0 7%}
-.ncov .novl .k{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#1A56DB}
-.ncov .novl .ncat{margin:0;font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;line-height:1.4;color:#1A56DB;max-width:52%}
-.nrow .ncov .novl .ncat{font-size:12px}
+/* article cover = a topic color gradient (no photo); eyebrow + title sit on it */
+.ncov{position:relative;min-height:158px;overflow:hidden;display:flex}
+.ncov .novl{position:relative;z-index:2;display:flex;flex-direction:column;gap:9px;padding:18px 20px;width:100%}
+.ncov .novl .k{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.95}
+.ncov .novl .ncovh{margin:0;font-family:var(--sans);font-weight:800;font-size:19px;line-height:1.3;letter-spacing:-.01em}
+/* topic color themes — light gradient + readable dark ink */
+.ncov.t-engineer_guide{background:linear-gradient(135deg,#e8f1ff,#c2daff)}
+.ncov.t-engineer_guide .novl{color:#173a86}.ncov.t-engineer_guide .k{color:#2f5fc4}
+.ncov.t-industry_standard{background:linear-gradient(135deg,#f2f4f8,#d6dde8)}
+.ncov.t-industry_standard .novl{color:#2f3c54}.ncov.t-industry_standard .k{color:#5a6884}
+.ncov.t-industry_experience{background:linear-gradient(135deg,#e6f6e1,#c2e8bb)}
+.ncov.t-industry_experience .novl{color:#215e17}.ncov.t-industry_experience .k{color:#3a8a2a}
+.ncov.t-news{background:linear-gradient(135deg,#efecf8,#d4cdea)}
+.ncov.t-news .novl{color:#443873}.ncov.t-news .k{color:#6a5da8}
+.ncov.t-new_product{background:linear-gradient(135deg,#f6efe0,#e7d4b4)}
+.ncov.t-new_product .novl{color:#6d4e21}.ncov.t-new_product .k{color:#9d7231}
 .ncard .cb{padding:15px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
 .ncard .kind{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#1A56DB}
 .ncard h3.ntitle{margin:0;font-size:16.5px;font-weight:800;line-height:1.32;color:#17203a}
@@ -629,7 +638,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
   .nrow .ncard{flex:0 0 230px}
 }
 </style>
-<div class="nsec"><div class="nsechd"><div class="k">ความรู้</div><h2>ข่าวอุตสาหกรรม</h2></div></div><div class="nsec"><p class="nsoon">เร็วๆ นี้จะมีบทความเพิ่มเติม</p></div><div class="nsec"><div class="nsechd"><div class="k">ความรู้</div><h2>ความรู้ห้องแล็บและฉลาก</h2></div></div><div class="nsec"><div class="ncards"><a class="ncard" href="/th/insights/electronic-component-labels-selection-guide/"><div class="ncov"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-KNOWLEDGE" alt="" loading="lazy" onerror="this.style.display='none'"><div class="novl"><p class="ncat">คู่มือการเลือกสำหรับวิศวกร</p></div></div><div class="cb"><h3 class="ntitle">ฉลากชิ้นส่วนอิเล็กทรอนิกส์: คู่มือการเลือกใช้สำหรับวิศวกร</h3><div class="nchips"><span class="nchip ind">PCB และอิเล็กทรอนิกส์</span><span class="nchip ind">ยานยนต์</span><span class="nchip ind">การแพทย์และยา</span></div><p class="cs">วิธีกำหนดสเปกฉลากที่ทนต่อกระบวนการรีโฟลว์ การทำความสะอาด และการรับรองมาตรฐาน — ตั้งแต่บาร์โค้ดไปจนถึงโครงสร้างแบบ ESD-safe และแบบทนอุณหภูมิสูง</p><span class="go">อ่าน →</span></div></a><a class="ncard" href="/th/insights/ul94-vtm0-flame-retardant-labels/"><div class="ncov"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-KNOWLEDGE" alt="" loading="lazy" onerror="this.style.display='none'"><div class="novl"><p class="ncat">การแบ่งปันความรู้</p></div></div><div class="cb"><h3 class="ntitle">UL94 VTM-0 คืออะไร? คู่มือวัสดุฉลากหน่วงไฟ</h3><div class="nchips"><span class="nchip ind">PCB และอิเล็กทรอนิกส์</span><span class="nchip ind">ยานยนต์</span><span class="nchip ind">สายเคเบิล</span></div><p class="cs">ทำความเข้าใจระดับ UL94 VTM-0 — และวิธีเลือกฉลากหน่วงไฟสำหรับแบตเตอรี่ ชุดสายไฟ PCB และอื่นๆ</p><span class="go">อ่าน →</span></div></a><a class="ncard" href="/th/insights/glp-1-cold-chain-labeling/"><div class="ncov"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-KNOWLEDGE" alt="" loading="lazy" onerror="this.style.display='none'"><div class="novl"><p class="ncat">ประสบการณ์อุตสาหกรรม</p></div></div><div class="cb"><h3 class="ntitle">การติดฉลากโซ่ความเย็นสำหรับยา GLP-1</h3><div class="nchips"><span class="nchip ind">การแพทย์และยา</span></div><p class="cs">ตลาดมูลค่า 1.33 แสนล้านดอลลาร์ภายในปี 2035 — และประสิทธิภาพฉลากและการปฏิบัติตามข้อกำหนดที่ต้องการ</p><span class="go">อ่าน →</span></div></a></div></div>
+<div class="nsec"><div class="ncards"><a class="ncard" href="/th/insights/electronic-component-labels-selection-guide/"><div class="ncov t-engineer_guide"><div class="novl"><div class="k">คู่มือวิศวกร</div><h3 class="ncovh">ฉลากชิ้นส่วนอิเล็กทรอนิกส์: คู่มือการเลือกใช้สำหรับวิศวกร</h3></div></div><div class="cb"><div class="nchips"><span class="nchip ind">PCB และอิเล็กทรอนิกส์</span><span class="nchip ind">ยานยนต์</span><span class="nchip ind">การแพทย์และยา</span></div><p class="cs">วิธีกำหนดสเปกฉลากที่ทนต่อกระบวนการรีโฟลว์ การทำความสะอาด และการรับรองมาตรฐาน — ตั้งแต่บาร์โค้ดไปจนถึงโครงสร้างแบบ ESD-safe และแบบทนอุณหภูมิสูง</p><span class="go">อ่าน →</span></div></a><a class="ncard" href="/th/insights/ul94-vtm0-flame-retardant-labels/"><div class="ncov t-industry_standard"><div class="novl"><div class="k">มาตรฐานและกฎของอุตสาหกรรม</div><h3 class="ncovh">UL94 VTM-0 คืออะไร? คู่มือวัสดุฉลากหน่วงไฟ</h3></div></div><div class="cb"><div class="nchips"><span class="nchip ind">PCB และอิเล็กทรอนิกส์</span><span class="nchip ind">ยานยนต์</span><span class="nchip ind">สายเคเบิล</span></div><p class="cs">ทำความเข้าใจระดับ UL94 VTM-0 — และวิธีเลือกฉลากหน่วงไฟสำหรับแบตเตอรี่ ชุดสายไฟ PCB และอื่นๆ</p><span class="go">อ่าน →</span></div></a><a class="ncard" href="/th/insights/glp-1-cold-chain-labeling/"><div class="ncov t-industry_experience"><div class="novl"><div class="k">ประสบการณ์ในอุตสาหกรรม</div><h3 class="ncovh">การติดฉลากโซ่ความเย็นสำหรับยา GLP-1</h3></div></div><div class="cb"><div class="nchips"><span class="nchip ind">การแพทย์และยา</span></div><p class="cs">ตลาดมูลค่า 1.33 แสนล้านดอลลาร์ภายในปี 2035 — และประสิทธิภาพฉลากและการปฏิบัติตามข้อกำหนดที่ต้องการ</p><span class="go">อ่าน →</span></div></a></div></div>
 <footer><div class="wrap">
 <div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%20LOGO.jpg" alt="ETIA Label"></div>
 <div class="fg">

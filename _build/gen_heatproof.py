@@ -1576,9 +1576,10 @@ BANNER_APPLICATION = _BN + "SOLUTION-BANNERNEW"
 # Single banner per page, all languages (kept simple).
 BANNER_INSIGHT = _BN + "insightbanner-en"
 BANNER_SERVICE = _BN + "SERVICE-BANNER"
+BANNER_PRODUCT = _BN + "PRODUCT-BANNER"
 HOME_BG = [BANNER_HOME, "", "", "", ""]
 # section_hero idx: 0=Products, 1=Applications, 2=Insights, 3=Service
-SECTION_BG = {1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
+SECTION_BG = {0: BANNER_PRODUCT, 1: BANNER_APPLICATION, 2: BANNER_INSIGHT, 3: BANNER_SERVICE}
 
 def section_banner(idx, lang):
     """Hero background for a section page (single image, all languages)."""
@@ -2507,7 +2508,7 @@ def build_products_landing(lang):
           + ('<div class="wrap">%s</div>' % cta2(lang, "products", Lx)))
     s = HOME2.get(lang, HOME2["en"])["sections"][0]
     hero = page_hero(lang, s["eyebrow"], s["h2"], s["sub"], "",
-                     s["b1"], s["b1u"], s["b2"], s["b2u"], SECTION_BG.get(1, ""))
+                     s["b1"], s["b1u"], s["b2"], s["b2u"], SECTION_BG.get(0, ""))
     crumb = [(P(lang,"Home","首页","Trang chủ","หน้าแรก"),"/"),
              (P(lang,"Products","产品","Sản phẩm","ผลิตภัณฑ์"),"/products/")]
     write(lang, "/products/", page(lang, "/products/",
