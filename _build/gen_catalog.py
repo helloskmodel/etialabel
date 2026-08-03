@@ -270,7 +270,7 @@ def build_lang(records, lang):
         }
         img = r.get("product_img", "")
         if img and "/PRODUCT/" in img:
-            media = ('<div class="pcell-img photo"><img src="%s" alt="%s" loading="lazy" '
+            media = ('<div class="pcell-img photo"><img src="%s" alt="%s" loading="lazy" decoding="async" '
                      'onerror="this.closest(\'.pcell-img\').innerHTML=\'%s\'"></div>') % (
                 esc(img), esc(L(r["title"])),
                 barcode_label_svg(_model_code(r["slug"]), gp.brand_eyebrow(r["brand"])).replace("'", "&#39;"))
@@ -756,7 +756,7 @@ def build_brand(records, lang, bkey):
         # A real product photo (under the COS PRODUCT/ folder) wins; every other
         # card falls back to the generated barcode-label tile.
         if img and "/PRODUCT/" in img:
-            media = ('<div class="bcard-img photo"><img src="%s" alt="%s" loading="lazy" '
+            media = ('<div class="bcard-img photo"><img src="%s" alt="%s" loading="lazy" decoding="async" '
                      'onerror="var p=this.parentNode;p.classList.add(\'ph\');p.innerHTML=\'<span>%s</span>\'"></div>') % (
                 esc(img), esc(L(r["title"])), esc(L(r["title"])))
         else:
@@ -786,16 +786,18 @@ def build_brand(records, lang, bkey):
     lede = ui["lede"].get(bkey, "")
     hero = None
     if bkey == "polyonics":
-        # brand hero banner (PCB banner + single green CTA) + client overview
+        # brand hero banner (PCB banner + single green CTA) + client overview.
+        # The PCB banner's imagery sits along the bottom, so crop to center bottom
+        # (matching the PCB industry/product pages) instead of the hbanner default.
         head = POLY_HEAD.get(lang) or POLY_HEAD["en"]
-        hero = hp.home_banner(lang, POLY_BANNER, ui["eyebrow"], head, lede, "", "", "", "", "")
+        hero = hp.home_banner(lang, POLY_BANNER, ui["eyebrow"], head, lede, "", "", "", "", "", "center bottom")
         paras = POLY_OVERVIEW.get(lang) or POLY_OVERVIEW["en"]
         ov_txt = ('<div class="bsechd">%s</div>%s' %
                   (esc(POLY_OVERVIEW_LABEL.get(lang) or POLY_OVERVIEW_LABEL["en"]),
                    "".join('<p class="bover">%s</p>' % esc(p) for p in paras)))
         cap = POLY_COOP_CAPTION.get(lang) or POLY_COOP_CAPTION["en"]
         ov_img = ('<figure class="bover-img"><img src="%s" alt="ETIA × Polyonics leadership" '
-                  'loading="lazy" onerror="this.closest(\'figure\').classList.add(\'noimg\')">'
+                  'loading="lazy" decoding="async" onerror="this.closest(\'figure\').classList.add(\'noimg\')">'
                   '<figcaption>%s</figcaption></figure>') % (esc(POLY_IMG), esc(cap))
         # Two children only (text block + image) so the 2-column grid lines up.
         overview = '<div class="bover-2col"><div class="bover-txt">%s</div>%s</div>' % (ov_txt, ov_img)

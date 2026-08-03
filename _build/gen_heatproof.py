@@ -1591,8 +1591,15 @@ def hero_cta(lang):
         Lx(lang, "/contact/"),
         esc(P(lang, "Talk to us", "联系我们", "Liên hệ với chúng tôi", "ติดต่อเรา")))
 
-def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
-    st = ' style="background-image:url(%s)"' % esc(bg) if bg else ""
+def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u, bg_pos=""):
+    # .hbanner defaults to background-position:center right; some banners (e.g. the
+    # PCB banner, whose imagery sits along the bottom) need an override so the
+    # meaningful part isn't cropped out.
+    if bg:
+        pos = (';background-position:%s' % bg_pos) if bg_pos else ""
+        st = ' style="background-image:url(%s)%s"' % (esc(bg), pos)
+    else:
+        st = ""
     # Every part except the headline + slogan is optional; the contact button is
     # the single unified hero CTA on every banner (b1/b2 params are ignored).
     eyebrow_html = ('<div class="eyebrow">%s</div>' % esc(eyebrow)) if eyebrow else ""
@@ -1603,8 +1610,8 @@ def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
             '<p class="hsub">%s</p>%s%s</div></section>') % (
         st, eyebrow_html, esc(title), esc(sub), body_html, btns_html)
 
-def home_banner(lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
-    return _banner_html(home_hlink, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u)
+def home_banner(lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u, bg_pos=""):
+    return _banner_html(home_hlink, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u, bg_pos)
 
 _COS = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/"
 # Home hero (etiatech.com house style): trust pill + navy headline + green sub +
