@@ -47,7 +47,7 @@ IND_NAME = {
 APP_CATS = [
     ("esd",     {"en": "ESD / Anti-static", "zh": "防静电", "vi": "Chống tĩnh điện", "th": "ป้องกันไฟฟ้าสถิต"}, ["esd", "anti-static", "static-dissipative", "防静电", "静电"]),
     ("washreflow", {"en": "Wash & Reflow PI", "zh": "耐焊洗 PI", "vi": "Chịu rửa & reflow (PI)", "th": "ทนล้าง & รีโฟลว์ (PI)"}, ["reflow", "wave-solder", "wave solder", "wave soldering", "solder flux", "回流焊", "波峰焊", "焊洗", "过炉"]),
-    ("flame",   {"en": "Flame-Retardant", "zh": "阻燃", "vi": "Chống cháy", "th": "หน่วงไฟ"}, ["flame-retardant", "flame retardant", "ul94", "ul 94", "vtm-0", "halogen-free", "阻燃", "无卤"]),
+    ("flame",   {"en": "Flame-Retardant", "zh": "阻燃", "vi": "Chống cháy", "th": "หน่วงไฟ"}, ["flame-retardant", "flame retardant", "ul94", "ul 94", "vtm-0", "v-0", "阻燃"]),
     ("chem",    {"en": "Chemical-Resistant", "zh": "耐化学", "vi": "Kháng hóa chất", "th": "ทนสารเคมี"}, ["chemical-resistant", "chemical resistant", "solvent-resistant", "solvent resistant", "acid and alkali", "耐化学", "耐溶剂"]),
     ("steril",  {"en": "Sterilization", "zh": "灭菌", "vi": "Tiệt trùng", "th": "การฆ่าเชื้อ"}, ["sterilization", "sterilize", "autoclave", "gamma", "灭菌", "高压灭菌"]),
     ("laser",   {"en": "Laser-Markable", "zh": "激光可刻", "vi": "Khắc laser", "th": "แกะสลักด้วยเลเซอร์"}, ["laser-mark", "laser mark", "laser-etch", "laser etch", "laser engrav", "激光刻", "激光打"]),
@@ -188,6 +188,7 @@ def build_record(d):
         "industry": ind, "brand": brand, "apps": apps, "facestocks": facestocks,
         "temps": temps, "thick": thick, "color": color,
         "product_img": d.get("product_img", ""),
+        "code": d.get("code", ""),   # display model code override (e.g. XF-611FR)
         "blob": blob, "explicit": explicit,
     }
 
@@ -273,9 +274,9 @@ def build_lang(records, lang):
             media = ('<div class="pcell-img photo"><img src="%s" alt="%s" loading="lazy" decoding="async" '
                      'onerror="this.closest(\'.pcell-img\').innerHTML=\'%s\'"></div>') % (
                 esc(img), esc(L(r["title"])),
-                barcode_label_svg(_model_code(r["slug"]), gp.brand_eyebrow(r["brand"])).replace("'", "&#39;"))
+                barcode_label_svg(r.get("code") or _model_code(r["slug"]), gp.brand_eyebrow(r["brand"])).replace("'", "&#39;"))
         else:
-            media = '<div class="pcell-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
+            media = '<div class="pcell-img lbl">%s</div>' % barcode_label_svg(r.get("code") or _model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
         cards += ('<a class="pcell" href="%s" data-f="%s">%s<div class="pcell-t">%s</div>'
                   '<div class="pcell-chips">%s</div>'
                   '<span class="pcell-go">%s</span></a>') % (
@@ -406,7 +407,8 @@ _FAM_ESD7 = {"xf-781", "xf-782", "xf-784", "xf-731", "xf-732"}
 # "Flame-Retardant" small tag (no separate FR family).
 _FAM_CABLE = {"xf-300", "xf-302", "xf-603", "xf-611"}
 _FLAME = {"xf-603", "xf-611"}
-_FLAME_LABEL = {"en": "Flame-Retardant", "zh": "阻燃", "vi": "Chống cháy", "th": "หน่วงไฟ"}
+_FLAME_LABEL = {"en": "Flame-Retardant · UL94 V-0", "zh": "阻燃 · UL94 V-0",
+                "vi": "Chống cháy · UL94 V-0", "th": "หน่วงไฟ · UL94 V-0"}
 def poly_series_key(slug):
     if slug.startswith("xf-101") or slug.startswith("xf-102"): return "apex"
     if slug in _FAM_ESD7: return "esd7"
@@ -760,7 +762,7 @@ def build_brand(records, lang, bkey):
                      'onerror="var p=this.parentNode;p.classList.add(\'ph\');p.innerHTML=\'<span>%s</span>\'"></div>') % (
                 esc(img), esc(L(r["title"])), esc(L(r["title"])))
         else:
-            media = '<div class="bcard-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
+            media = '<div class="bcard-img lbl">%s</div>' % barcode_label_svg(r.get("code") or _model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
         # A short family tag (e.g. APEX) replaces the long tagline; flame-retardant
         # members (XF-603/XF-611) also carry a small "Flame-Retardant" tag.
         if tag:

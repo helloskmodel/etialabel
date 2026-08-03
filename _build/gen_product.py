@@ -505,7 +505,7 @@ def build_lang(d, lang):
             img = ('<div class="pimg photo"><img src="%s" alt="" loading="lazy" '
                    'onerror="this.style.display=\'none\'"></div>') % esc(pimg)
         else:
-            img = '<div class="pimg lbl">%s</div>' % barcode_label_svg(_model_code(slug), brand_eyebrow(product_brand(d, slug)))
+            img = '<div class="pimg lbl">%s</div>' % barcode_label_svg(d.get("code") or _model_code(slug), brand_eyebrow(product_brand(d, slug)))
         body += section(ui["features"], ui["features"], '<div class="pfeat">%s%s</div>' % (img, ul(L(d["features"], lang), "ok")))
     if not is_solution and L(d.get("benefits", {}), lang):
         body += section(ui["benefits"], ui["benefits"], ul(L(d["benefits"], lang), "ok"))
