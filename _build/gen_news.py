@@ -37,8 +37,42 @@ UI = {
          "soon": "เร็วๆ นี้จะมีบทความเพิ่มเติม"},
 }
 
-COVER_NEWS = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-NEWS"
-COVER_KNOWLEDGE = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/INSIGHT-KNOWLEDGE"
+# Topic taxonomy — each article carries a "topic" key. The hub card cover is a
+# color-coded gradient block (no photo) keyed to the topic; eyebrow + title sit
+# on it. Colors: engineer=light blue, standard=light gray, experience=light
+# green, news=light gray-purple, new product=light sand/camel.
+TOPICS = {
+  "engineer_guide": {"label": {
+     "en": "Engineer Guide", "zh": "工程师指南", "vi": "Hướng dẫn kỹ sư", "th": "คู่มือวิศวกร"}},
+  "industry_standard": {"label": {
+     "en": "Industry Standards & Rules", "zh": "行业标准与规范", "vi": "Tiêu chuẩn & quy định ngành", "th": "มาตรฐานและกฎของอุตสาหกรรม"}},
+  "industry_experience": {"label": {
+     "en": "Industry Experience", "zh": "行业经验", "vi": "Kinh nghiệm ngành", "th": "ประสบการณ์ในอุตสาหกรรม"}},
+  "news": {"label": {
+     "en": "News", "zh": "行业动态", "vi": "Tin tức", "th": "ข่าวสาร"}},
+  "new_product": {"label": {
+     "en": "New Product", "zh": "新品发布", "vi": "Sản phẩm mới", "th": "สินค้าใหม่"}},
+}
+
+def topic_key(a):
+    """Resolve an article's topic key. Prefer explicit 'topic'; else derive from
+    category / cover_cat text; default to industry_standard."""
+    tk = a.get("topic")
+    if tk in TOPICS:
+        return tk
+    if a.get("category") == "news":
+        return "news"
+    cc = a.get("cover_cat") or {}
+    en = ((cc.get("en") if isinstance(cc, dict) else cc) or "").lower()
+    if "engineer" in en:
+        return "engineer_guide"
+    if "experience" in en:
+        return "industry_experience"
+    if "product" in en:
+        return "new_product"
+    if "standard" in en or "rule" in en:
+        return "industry_standard"
+    return "industry_standard"
 
 # Controlled industry taxonomy (keys map to consistent 4-lang labels) — set
 # each article's "industry" to a list of these keys.
@@ -147,13 +181,22 @@ CSS = """
 .ncard{background:#fff;border:1px solid #dbe3f1;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .15s,transform .15s}
 .ncard:hover{box-shadow:0 14px 34px rgba(20,60,150,.14);transform:translateY(-3px)}
 .ncard img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#e8eefb}
-/* article cover = category template image; the classification sits on the blank left area, the title goes below */
-.ncov{position:relative;aspect-ratio:16/9;overflow:hidden;background:#e8eefb}
-.ncov img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.ncov .novl{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;gap:6px;padding:15px 2% 0 7%}
-.ncov .novl .k{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#1A56DB}
-.ncov .novl .ncat{margin:0;font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;line-height:1.4;color:#1A56DB;max-width:52%}
-.nrow .ncov .novl .ncat{font-size:12px}
+/* article cover = a topic color gradient (no photo); eyebrow + title sit on it */
+.ncov{position:relative;min-height:158px;overflow:hidden;display:flex}
+.ncov .novl{position:relative;z-index:2;display:flex;flex-direction:column;gap:9px;padding:18px 20px;width:100%}
+.ncov .novl .k{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.95}
+.ncov .novl .ncovh{margin:0;font-family:var(--sans);font-weight:800;font-size:19px;line-height:1.3;letter-spacing:-.01em}
+/* topic color themes — light gradient + readable dark ink */
+.ncov.t-engineer_guide{background:linear-gradient(135deg,#e8f1ff,#c2daff)}
+.ncov.t-engineer_guide .novl{color:#173a86}.ncov.t-engineer_guide .k{color:#2f5fc4}
+.ncov.t-industry_standard{background:linear-gradient(135deg,#f2f4f8,#d6dde8)}
+.ncov.t-industry_standard .novl{color:#2f3c54}.ncov.t-industry_standard .k{color:#5a6884}
+.ncov.t-industry_experience{background:linear-gradient(135deg,#e6f6e1,#c2e8bb)}
+.ncov.t-industry_experience .novl{color:#215e17}.ncov.t-industry_experience .k{color:#3a8a2a}
+.ncov.t-news{background:linear-gradient(135deg,#efecf8,#d4cdea)}
+.ncov.t-news .novl{color:#443873}.ncov.t-news .k{color:#6a5da8}
+.ncov.t-new_product{background:linear-gradient(135deg,#f6efe0,#e7d4b4)}
+.ncov.t-new_product .novl{color:#6d4e21}.ncov.t-new_product .k{color:#9d7231}
 .ncard .cb{padding:15px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
 .ncard .kind{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#1A56DB}
 .ncard h3.ntitle{margin:0;font-size:16.5px;font-weight:800;line-height:1.32;color:#17203a}
@@ -189,7 +232,7 @@ def build_article(a, lang):
     tags = "".join('<span class="ntag">%s</span>' % esc(t) for t in L(a.get("tags", {}), lang))
     hero = ('%s<section class="nhero">%s<div class="in"><div class="k">%s</div>'
             '<h1>%s</h1><p class="sub">%s</p>%s%s<div style="margin-top:16px">%s</div></div></section>') % (
-        CSS, bg, esc(ui["news"]), esc(title), esc(L(a.get("subtitle", {}), lang)),
+        CSS, bg, esc(L(TOPICS[topic_key(a)]["label"], lang)), esc(title), esc(L(a.get("subtitle", {}), lang)),
         chips_html(a, lang), ('<div class="ntags">%s</div>' % tags) if tags else "", hp.hero_cta(lang))
     lead_img = a.get("lead_img", "")
     limg = ('<img class="leadimg" src="%s" alt="" loading="lazy" onerror="this.remove()">' % esc(lead_img)) if lead_img else ""
@@ -210,41 +253,28 @@ def build_article(a, lang):
         hp.track(path, "core")
 
 def _card(a, lang, ui):
-    # Cover = the category template image; the classification sits on its blank
-    # left area (News -> INSIGHT-NEWS, Knowledge -> INSIGHT-KNOWLEDGE). The full
-    # article title goes below the cover, in the card body.
-    cover = COVER_NEWS if a.get("category") == "news" else COVER_KNOWLEDGE
-    ovl = ('<div class="ncov"><img src="%s" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
-           '<div class="novl"><p class="ncat">%s</p></div></div>') % (
-        esc(cover), esc(cover_category(a, lang)))
-    return ('<a class="ncard" href="%s">%s<div class="cb"><h3 class="ntitle">%s</h3>%s'
+    # Cover = a topic-colored gradient block (no photo). Eyebrow (topic label) +
+    # the full article title sit on the color; the card body holds the industry
+    # chips, subtitle and read link.
+    key = topic_key(a)
+    t = TOPICS.get(key, TOPICS["industry_standard"])
+    cover = ('<div class="ncov t-%s"><div class="novl">'
+             '<div class="k">%s</div><h3 class="ncovh">%s</h3></div></div>') % (
+        key, esc(L(t["label"], lang)), esc(L(a["title"], lang)))
+    return ('<a class="ncard" href="%s">%s<div class="cb">%s'
             '<p class="cs">%s</p><span class="go">%s</span></div></a>') % (
-        hp.Lx(lang, HUB + a["slug"] + "/"), ovl, esc(L(a["title"], lang)),
+        hp.Lx(lang, HUB + a["slug"] + "/"), cover,
         chips_html(a, lang, groups=("ind",)),
         esc(L(a.get("subtitle", {}), lang)), esc(ui["read"]))
-
-def _section(kicker, title, cards_html, wrap_cls, soon=""):
-    head = '<div class="nsec"><div class="nsechd"><div class="k">%s</div><h2>%s</h2></div></div>' % (
-        esc(kicker), esc(title))
-    if cards_html:
-        inner = '<div class="nsec"><div class="%s">%s</div></div>' % (wrap_cls, cards_html)
-    else:
-        inner = '<div class="nsec"><p class="nsoon">%s</p></div>' % esc(soon)
-    return head + inner
 
 def build_hub(lang):
     ui = UI.get(lang, UI[SOURCE_LANG])
     arts = json.load(open(DATA, encoding="utf-8"))["articles"]
-    news = [a for a in arts if a.get("category") == "news"]
-    know = [a for a in arts if a.get("category") != "news"]
-    # Industry News — one row, up to 4 per view, carousel-ready (scrolls)
-    news_html = _section(ui["news"], ui["sec_news"],
-                         "".join(_card(a, lang, ui) for a in news), "nrow", ui["soon"])
-    # Label & Labeling Knowledge — all articles laid out in a grid
-    know_html = _section(ui["hub_title"], ui["sec_know"],
-                         "".join(_card(a, lang, ui) for a in know), "ncards")
-    # 20-year trust bar under the hero, then the article sections
-    body = hp.home_trustbar(lang) + CSS + news_html + know_html
+    # One unified grid — no News/Knowledge split; topic is shown by cover color.
+    cards = "".join(_card(a, lang, ui) for a in arts)
+    grid = '<div class="nsec"><div class="ncards">%s</div></div>' % cards
+    # 20-year trust bar under the hero, then the article grid
+    body = hp.home_trustbar(lang) + CSS + grid
     crumb = [(ui["home"], "/"), (ui["hub_title"], HUB)]
     # brand Insight hero — single main visual with a subtle Ken Burns zoom (no carousel)
     s = hp.HOME2.get(lang, hp.HOME2["en"])["sections"][2]

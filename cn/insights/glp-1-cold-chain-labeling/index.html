@@ -568,13 +568,22 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .ncard{background:#fff;border:1px solid #dbe3f1;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .15s,transform .15s}
 .ncard:hover{box-shadow:0 14px 34px rgba(20,60,150,.14);transform:translateY(-3px)}
 .ncard img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#e8eefb}
-/* article cover = category template image; the classification sits on the blank left area, the title goes below */
-.ncov{position:relative;aspect-ratio:16/9;overflow:hidden;background:#e8eefb}
-.ncov img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.ncov .novl{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:flex-start;gap:6px;padding:15px 2% 0 7%}
-.ncov .novl .k{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#1A56DB}
-.ncov .novl .ncat{margin:0;font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;line-height:1.4;color:#1A56DB;max-width:52%}
-.nrow .ncov .novl .ncat{font-size:12px}
+/* article cover = a topic color gradient (no photo); eyebrow + title sit on it */
+.ncov{position:relative;min-height:158px;overflow:hidden;display:flex}
+.ncov .novl{position:relative;z-index:2;display:flex;flex-direction:column;gap:9px;padding:18px 20px;width:100%}
+.ncov .novl .k{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.95}
+.ncov .novl .ncovh{margin:0;font-family:var(--sans);font-weight:800;font-size:19px;line-height:1.3;letter-spacing:-.01em}
+/* topic color themes — light gradient + readable dark ink */
+.ncov.t-engineer_guide{background:linear-gradient(135deg,#e8f1ff,#c2daff)}
+.ncov.t-engineer_guide .novl{color:#173a86}.ncov.t-engineer_guide .k{color:#2f5fc4}
+.ncov.t-industry_standard{background:linear-gradient(135deg,#f2f4f8,#d6dde8)}
+.ncov.t-industry_standard .novl{color:#2f3c54}.ncov.t-industry_standard .k{color:#5a6884}
+.ncov.t-industry_experience{background:linear-gradient(135deg,#e6f6e1,#c2e8bb)}
+.ncov.t-industry_experience .novl{color:#215e17}.ncov.t-industry_experience .k{color:#3a8a2a}
+.ncov.t-news{background:linear-gradient(135deg,#efecf8,#d4cdea)}
+.ncov.t-news .novl{color:#443873}.ncov.t-news .k{color:#6a5da8}
+.ncov.t-new_product{background:linear-gradient(135deg,#f6efe0,#e7d4b4)}
+.ncov.t-new_product .novl{color:#6d4e21}.ncov.t-new_product .k{color:#9d7231}
 .ncard .cb{padding:15px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
 .ncard .kind{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#1A56DB}
 .ncard h3.ntitle{margin:0;font-size:16.5px;font-weight:800;line-height:1.32;color:#17203a}
@@ -598,7 +607,7 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
   .nrow .ncard{flex:0 0 230px}
 }
 </style>
-<section class="nhero"><img class="bg" src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/GLP-1%20COLD%20CHAIN" alt="" loading="eager" onerror="this.style.display='none'"><div class="in"><div class="k">洞察</div><h1>GLP‑1 药物冷链标签市场解读</h1><p class="sub">2035 年全球市场规模预计达 1330 亿美元 —— 冷链标签的性能与合规要求</p><div class="nchips"><span class="nchip ind">医疗医药</span><span class="nchip cat">冷链</span><span class="nchip cat">低温</span></div><div class="ntags"><span class="ntag">GLP-1</span><span class="ntag">冷链</span><span class="ntag">医药标签</span></div><div style="margin-top:16px"><a class="hcta" href="/cn/contact/">联系我们</a></div></div></section>
+<section class="nhero"><img class="bg" src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INSIGHT/GLP-1%20COLD%20CHAIN" alt="" loading="eager" onerror="this.style.display='none'"><div class="in"><div class="k">行业经验</div><h1>GLP‑1 药物冷链标签市场解读</h1><p class="sub">2035 年全球市场规模预计达 1330 亿美元 —— 冷链标签的性能与合规要求</p><div class="nchips"><span class="nchip ind">医疗医药</span><span class="nchip cat">冷链</span><span class="nchip cat">低温</span></div><div class="ntags"><span class="ntag">GLP-1</span><span class="ntag">冷链</span><span class="ntag">医药标签</span></div><div style="margin-top:16px"><a class="hcta" href="/cn/contact/">联系我们</a></div></div></section>
 
 <div class="art"><div class="leadrow"><p class="lead">GLP‑1（胰高血糖素样肽‑1 受体激动剂）属于多肽类生物药，代表产品为司美格鲁肽、替尔泊肽，主要用于糖尿病血糖调节与体重管控 行业预测 2035 年全球市场规模将达到 1330 亿美元，是标签加工企业重点布局的增长赛道</p></div><h2>对温度高度敏感，偏差不可逆</h2><p>该类药物活性成分为蛋白质，对温度高度敏感，全流程储运需严格维持 2℃–8℃ 冷藏条件 温度超标会不可逆破坏蛋白结构：高温加速药效降解，冷冻直接导致蛋白变性失效，且变质药品外观无明显变化，极易引发无效用药</p><p>数据显示，冷链温控异常每年造成药企约 350 亿美元经济损失，涵盖药品报废、合规调查与召回损耗 为此，FDA 与美国药典强制要求从生产到患者手中全链路可追溯，对冷链标签的性能与合规性设立了严格标准</p><h2>冷链工况极易造成普通标签失效</h2><p>低温环境下通用胶粘剂失去附着力，出现标签翘边、分层甚至整片脱落；冷热交替产生的瓶身凝露会浸湿纸质标签，造成油墨晕染、标签破损；反复温差与搬运磨损还会模糊二维追溯码与序列化批号，破坏药品溯源体系</p><h2>薄膜基材 + 低温专用丙烯酸胶</h2><p>目前行业主流选用聚乙烯、聚丙烯薄膜基材，搭配低温专用丙烯酸胶，具备防水、尺寸稳定、低温强粘的优势，全程保障条码清晰可扫描</p><p>多数药企采用瓶身一级标签、外包装二级标签的双重标识规避风险，而一体化无重叠标签方案可有效控制包装成本</p><h2>末端配送是标签损耗最严重的环节</h2><p>冷链末端配送温差骤变、搬运磕碰多，是标签损耗最严重的环节，材料需适配复杂转运场景 标签破损、脱落会直接引发货物扣留、药监核查与批量召回，给药企带来高额损失</p><h2>标签加工商的市场机遇</h2><p>标签加工厂商只有推出耐凝露、低温高粘、符合医药监管规范的专用薄膜冷链标签，才能满足药企的硬性需求，抓住 GLP‑1 药物高速发展的市场机遇</p><a class="nback" href="/cn/insights/">← 返回全部洞察</a></div>
 <footer><div class="wrap">
