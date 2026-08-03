@@ -392,7 +392,7 @@ INDUSTRY_BANNER_POS = {
 PRODUCT_INDUSTRY = {
     # PCB / electronics
     "apex": "pcb", "e-series": "pcb", "xf58": "pcb", "xf78": "pcb", "xf-603": "pcb",
-    "e-2712": "pcb", "e-2913": "pcb",
+    "e-2712": "pcb",
     # automotive
     "e-2512bl": "auto", "e-2813": "auto", "e-2814": "auto",
     # wire & cable
