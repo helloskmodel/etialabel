@@ -1624,7 +1624,7 @@ HOME_HERO_ITEMS = [
     ("/industries/automotive-labeling-solutions/", _COS + "INDUSTRY/AUTO-VINCODE",
      ("Automotive", "汽车", "Ô tô", "ยานยนต์"),
      ("VIN, engine, tire & battery", "VIN、发动机、轮胎与电池", "VIN, động cơ, lốp & pin", "VIN เครื่องยนต์ ยาง แบตเตอรี่")),
-    ("/industries/medical-pharmaceutical-labeling-solutions/", _COS + "INDUSTRY/MEDICAL-196C",
+    ("/industries/medical-pharmaceutical-labeling-solutions/", _COS + "INDUSTRY/MEDICAL-BANNERNEW",
      ("Medical & Pharma", "医疗医药", "Y tế & Dược", "การแพทย์และยา"),
      ("Cryogenic, blood-bag & lab", "低温冻存、血袋与实验室", "Đông lạnh, túi máu & phòng lab", "อุณหภูมิต่ำ ถุงเลือด และแล็บ"),
      "center bottom"),  # show the bottle at the bottom; crop the top

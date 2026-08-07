@@ -381,7 +381,7 @@ INDUSTRY_BANNERS = {
     "auto":    _COS + "INDUSTRY/AUTO-BANNER",
     "cable":   _COS + "INDUSTRY/CABLE-BANNER",
     "steel":   _COS + "INDUSTRY/STEEL-BANNER",
-    "medical": _COS + "INDUSTRY/MEDICAL-BANNER",
+    "medical": _COS + "INDUSTRY/MEDICAL-BANNERNEW",
     "outdoor": _COS + "INDUSTRY/OUTDOOR-BANNER",
 }
 # Per-industry banner crop, mirrored from the industry landing pages so a product
