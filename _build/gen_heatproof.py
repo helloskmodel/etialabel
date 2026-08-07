@@ -1634,7 +1634,7 @@ HOME_HERO_ITEMS = [
     ("/industries/steel-metal-ceramic-labeling-solutions/", _COS + "INDUSTRY/STEEL-HP900",
      ("Steel & Metal", "钢铁金属", "Thép & Kim loại", "เหล็กและโลหะ"),
      ("Direct-apply up to 1000 °C", "高温直贴，最高 1000 °C", "Dán trực tiếp tới 1000 °C", "ติดตรงสูงสุด 1000 °C")),
-    ("/industries/outdoor-energy-labeling-solutions/", _COS + "INDUSTRY/OUTDOOR-SOLARSUN",
+    ("/industries/outdoor-energy-labeling-solutions/", _COS + "INDUSTRY/OUTDOOR-WARNING%20OILDRUM",
      ("Outdoor & Energy", "户外能源", "Ngoài trời & Năng lượng", "กลางแจ้งและพลังงาน"),
      ("Weatherable for years outdoors", "户外耐候多年", "Chịu thời tiết nhiều năm", "ทนสภาพอากาศได้หลายปี")),
 ]
