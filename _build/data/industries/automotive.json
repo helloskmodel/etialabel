@@ -34,26 +34,77 @@
    "th": "โซลูชันฉลากรถยนต์และยาง"
   },
   "slogan": {
-   "en": "Durable vehicle marking, full lifecycle traceability to secure driving safety",
-   "zh": "全车耐久标识，长效溯源，守护行车安全",
-   "vi": "Dấu hiệu bền toàn xe, truy xuất nguồn gốc lâu dài, bảo vệ an toàn lái xe",
-   "th": "เครื่องหมายทนทานทั่วรถ ติดตามสินค้าระยะยาว ปกป้องความปลอดภัยขณะขับขี่"
+   "en": "Built for endurance — our labels meet every automotive challenge, from under the hood to the door jam.",
+   "zh": "为耐久而生 —— 从发动机舱到车门立柱，我们的标签应对每一项汽车挑战",
+   "vi": "Được tạo ra để bền bỉ — nhãn của chúng tôi đáp ứng mọi thách thức trên ô tô, từ khoang động cơ đến khung cửa.",
+   "th": "สร้างมาเพื่อความทนทาน — ฉลากของเรารับมือทุกความท้าทายของรถยนต์ ตั้งแต่ห้องเครื่องจนถึงขอบประตู"
   }
  },
  "overview": {
   "en": [
-   "Durable labels for vehicle interiors, exteriors, under-the-hood areas, chassis, tires, and components. Built to withstand heat, chemicals, oils, and UV while ensuring long-lasting identification."
+   "Every automotive part needs clear, reliable identification. ETIA labels deliver strong adhesion and stable performance under heat, chemicals, moisture and the daily challenges of vehicle life.",
+   "From under the hood to the door jam — engine bay, batteries, wire harnesses, VIN plates, tires, fuel and EV charging ports — our labels stay legible and firmly in place, and look great for years to come."
   ],
   "zh": [
-   "适用于汽车内饰、外饰、发动机舱、底盘、轮胎及零部件的耐久标签，具备耐高温、耐化学品、耐油污及耐UV性能，确保长期可靠识别"
+   "每一个汽车部件都需要清晰、可靠的标识。ETIA 标签具备强力附着与稳定性能，可耐受高温、化学品、潮湿以及日常行车中的种种考验。",
+   "从发动机舱到车门立柱 —— 引擎舱、电池、线束、VIN 铭牌、轮胎、燃油与新能源充电口 —— 我们的标签始终清晰、牢固贴合，历久如新。"
   ],
   "vi": [
-   "Nhãn bền cho nội thất, ngoại thất, khoang động cơ, khung gầm, lốp và linh kiện ô tô. Được chế tạo để chịu nhiệt, hóa chất, dầu và tia UV, đảm bảo nhận diện lâu dài."
+   "Mỗi bộ phận ô tô đều cần nhận diện rõ ràng, đáng tin cậy. Nhãn ETIA bám dính chắc chắn và duy trì hiệu suất ổn định dưới nhiệt độ cao, hóa chất, độ ẩm và những thử thách hằng ngày khi vận hành.",
+   "Từ khoang động cơ đến khung cửa — khoang máy, pin, dây điện, bảng VIN, lốp, nắp xăng và cổng sạc xe điện — nhãn của chúng tôi luôn rõ nét, bám chắc và bền đẹp qua nhiều năm."
   ],
   "th": [
-   "ฉลากทนทานสำหรับภายในรถ ภายนอกรถ ห้องเครื่อง แชสซี ยาง และชิ้นส่วนต่างๆ ออกแบบให้ทนความร้อน สารเคมี น้ำมัน และรังสียูวี รับประกันการระบุที่ยาวนาน"
+   "ทุกชิ้นส่วนของรถยนต์ต้องการการระบุที่ชัดเจนและเชื่อถือได้ ฉลาก ETIA ยึดเกาะแน่นและคงประสิทธิภาพภายใต้ความร้อน สารเคมี ความชื้น และการใช้งานประจำวัน",
+   "ตั้งแต่ห้องเครื่องจนถึงขอบประตู — ห้องเครื่องยนต์ แบตเตอรี่ สายไฟ แผ่น VIN ยาง ช่องเติมน้ำมันและช่องชาร์จรถไฟฟ้า — ฉลากของเรายังคงอ่านชัด ติดแน่น และสวยงามยาวนานหลายปี"
   ]
  },
+ "value_props": [
+  {
+   "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z'/><path d='M12 8.1l1 2 2.2.2-1.7 1.5.5 2.1-2-1.1-2 1.1.5-2.1L8.8 10.3l2.2-.2z'/></svg>",
+   "title": {
+    "en": "Strong",
+    "zh": "强韧",
+    "vi": "Bền chắc",
+    "th": "แข็งแรง"
+   },
+   "desc": {
+    "en": "Multi-layer construction for stable performance and a long service life.",
+    "zh": "多层结构，性能稳定，使用寿命长。",
+    "vi": "Cấu trúc nhiều lớp cho hiệu suất ổn định và tuổi thọ dài.",
+    "th": "โครงสร้างหลายชั้น ให้ประสิทธิภาพเสถียรและอายุการใช้งานยาวนาน"
+   }
+  },
+  {
+   "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M8.5 13h7M8.5 16.5h7'/></svg>",
+   "title": {
+    "en": "Smooth",
+    "zh": "顺滑",
+    "vi": "Mượt mà",
+    "th": "ราบรื่น"
+   },
+   "desc": {
+    "en": "Easy application with excellent print quality and reliable adhesion.",
+    "zh": "施贴顺畅，印刷清晰，附着可靠。",
+    "vi": "Dễ dán, chất lượng in xuất sắc và độ bám dính đáng tin cậy.",
+    "th": "ติดง่าย พิมพ์คมชัด และยึดเกาะเชื่อถือได้"
+   }
+  },
+  {
+   "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><rect x='3.5' y='3.5' width='11' height='11' rx='1.6'/><rect x='9.5' y='9.5' width='11' height='11' rx='1.6'/></svg>",
+   "title": {
+    "en": "Versatile",
+    "zh": "多面适配",
+    "vi": "Đa năng",
+    "th": "อเนกประสงค์"
+   },
+   "desc": {
+    "en": "Bonds to many surfaces — metal, plastic, painted parts and glass.",
+    "zh": "适配多种表面 —— 金属、塑料、喷漆件与玻璃。",
+    "vi": "Bám dính nhiều bề mặt — kim loại, nhựa, chi tiết sơn và kính.",
+    "th": "ยึดติดได้หลากพื้นผิว — โลหะ พลาสติก ชิ้นส่วนพ่นสี และแก้ว"
+   }
+  }
+ ],
  "classify_by": {
   "en": "Choose an application area",
   "zh": "选择应用区域",
