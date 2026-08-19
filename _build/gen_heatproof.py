@@ -833,7 +833,7 @@ FOOTER_I18N = {
         "vi": ("Bảo mật","Cookie"), "th": ("ความเป็นส่วนตัว","คุกกี้")},
 }
 # WeChat QR shown in the Chinese-page popup (confirm exact COS path with client).
-_WECHAT_QR = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/etia-wechat-qr.jpg"
+_WECHAT_QR = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/etia-wechat-qr.webp"
 
 def floating_contact(lang):
     """Floating chat button by market: LINE (English + Thai) → the Thai official
