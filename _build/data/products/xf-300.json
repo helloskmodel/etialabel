@@ -1,234 +1,130 @@
 {
   "slug": "xf-300",
-  "source": "Polyonics product brochure (Cable & Wire Marking)",
-  "langs": [
-    "en",
-    "zh",
-    "vi",
-    "th"
-  ],
+  "source": "Polyonics XF-300 Technical Data Sheet",
+  "langs": ["en", "zh", "vi", "th"],
   "banner": "",
   "brand": "polyonics",
   "industry": "cable",
   "product_img": "",
   "title": {
-    "en": "XF-300 — 5 mil Flame-Retardant Woven-Nylon Wire-Marking Label",
-    "zh": "XF-300 — 5 mil 阻燃机织尼龙线缆标识标签",
-    "vi": "XF-300 — Nhãn đánh dấu dây Nylon dệt chống cháy 5 mil",
-    "th": "XF-300 — ฉลากทำเครื่องหมายสายไฟไนลอนทอหน่วงไฟ 5 mil"
+    "en": "XF-300 — 5 mil Matte White Nylon Wire & Cable Label",
+    "zh": "XF-300 — 5 mil 哑白尼龙线缆标签",
+    "vi": "XF-300 — Nhãn Nylon trắng mờ 5 mil cho dây & cáp",
+    "th": "XF-300 — ฉลากไนลอนสีขาวด้าน 5 mil สำหรับสายไฟและสายเคเบิล"
   },
   "tagline": {
-    "en": "Flame-retardant woven-nylon label for wire, cable and harness marking — conformable, high-temperature acrylic adhesive.",
-    "zh": "阻燃机织尼龙标签，用于线缆与线束标识 —— 柔顺贴合，高温丙烯酸胶。",
-    "vi": "Nhãn nylon dệt chống cháy cho dây, cáp và bó dây — dẻo ôm, keo acrylic chịu nhiệt cao.",
-    "th": "ฉลากไนลอนทอหน่วงไฟสำหรับสายไฟ สายเคเบิล และชุดสายไฟ — ยืดหยุ่นแนบ กาวอะคริลิกทนร้อนสูง"
+    "en": "5 mil matte white nylon thermal-transfer label for wire, cable, terminal and cryogenic-lab identification — heat, cold and solvent resistant.",
+    "zh": "5 mil 哑白尼龙热转印标签，用于线缆、端子与低温实验室标识 —— 耐热、耐寒、耐溶剂。",
+    "vi": "Nhãn in truyền nhiệt nylon trắng mờ 5 mil cho dây, cáp, đầu cực và phòng lab siêu lạnh — chịu nhiệt, lạnh và dung môi.",
+    "th": "ฉลากพิมพ์ถ่ายเทความร้อนไนลอนสีขาวด้าน 5 mil สำหรับสายไฟ สายเคเบิล ขั้วต่อ และห้องแล็บอุณหภูมิต่ำ — ทนร้อน เย็น และตัวทำละลาย"
   },
   "positioning": {
-    "en": "POLYONICS XF-300 is a flame-retardant white woven nylon label for wire, cable and harness marking, built on a conformable self-laminating facestock with a high-temperature acrylic adhesive and designed for thermal-transfer printing.",
-    "zh": "POLYONICS XF-300 是一款阻燃白色机织尼龙标签，用于线缆与线束标识，采用柔顺自覆膜面材与高温丙烯酸胶，专为热转印设计。",
-    "vi": "POLYONICS XF-300 là nhãn nylon dệt trắng chống cháy cho dây, cáp và bó dây, trên mặt tự bọc dẻo với keo acrylic chịu nhiệt cao, thiết kế cho in truyền nhiệt.",
-    "th": "POLYONICS XF-300 เป็นฉลากไนลอนทอสีขาวหน่วงไฟสำหรับสายไฟ สายเคเบิล และชุดสายไฟ บนหน้าเคลือบในตัวที่ยืดหยุ่น พร้อมกาวอะคริลิกทนร้อนสูง ออกแบบสำหรับพิมพ์ถ่ายเทความร้อน"
+    "en": "POLYONICS XF-300 is a 5 mil (127 µm) nylon film with a permanent pressure-sensitive acrylic adhesive and a high-opacity matte white topcoat, designed for thermal-transfer, dot-matrix or write-on printing. It is dimensionally stable, chemically resistant and rated from −40 to 145 °C, and has been tested in cryogenic laboratory use in liquid nitrogen at −196 °C — making it well suited to wire, cable, terminal and laboratory identification.",
+    "zh": "POLYONICS XF-300 是一款 5 mil（127 µm）尼龙薄膜，配永久压敏丙烯酸胶与高遮盖哑白面涂层，适用于热转印、点阵或手写打印。尺寸稳定、耐化学，额定 −40 至 145 °C，并已在液氮 −196 °C 的低温实验室应用中通过测试 —— 非常适合线缆、端子与实验室标识。",
+    "vi": "POLYONICS XF-300 là màng nylon 5 mil (127 µm) với keo acrylic áp lực vĩnh viễn và lớp phủ trắng mờ độ đục cao, dùng cho in truyền nhiệt, dot-matrix hoặc viết tay. Ổn định kích thước, kháng hóa chất, định mức −40 đến 145 °C và đã thử nghiệm trong phòng lab siêu lạnh với nitơ lỏng ở −196 °C — rất phù hợp nhận diện dây, cáp, đầu cực và phòng lab.",
+    "th": "POLYONICS XF-300 เป็นฟิล์มไนลอน 5 mil (127 µm) พร้อมกาวอะคริลิกไวแรงกดถาวรและท็อปโค้ตสีขาวด้านความทึบสูง ออกแบบสำหรับพิมพ์ถ่ายเทความร้อน ดอตเมทริกซ์ หรือเขียนมือ เสถียรเชิงมิติ ทนสารเคมี พิกัด −40 ถึง 145 °C และผ่านการทดสอบในห้องแล็บอุณหภูมิต่ำในไนโตรเจนเหลวที่ −196 °C — เหมาะกับการระบุสายไฟ สายเคเบิล ขั้วต่อ และห้องแล็บ"
   },
   "features": {
     "en": [
-      "Flexible white woven-nylon facestock, conformable for wire and cable wrap",
-      "Self-laminating wrap-around marking",
-      "High-temperature acrylic adhesive",
-      "Thermal-transfer printable",
-      "Flame-retardant — UL94 VTM-0 rated"
+      "Matte white nylon-film top surface — thermal-transfer, dot-matrix or write-on printable",
+      "Dimensionally stable at high temperatures",
+      "Chemically resistant; heat, cold and solvent resistant",
+      "Rated −40 to 145 °C; tested to −196 °C in liquid nitrogen",
+      "REACH and RoHS compliant"
     ],
     "zh": [
-      "柔顺白色机织尼龙面材，适合线缆环绕",
-      "自覆膜环绕标识",
-      "高温丙烯酸胶",
-      "可热转印",
-      "阻燃 —— UL94 VTM-0 认证"
+      "哑白尼龙薄膜面层 —— 可热转印、点阵或手写打印",
+      "高温下尺寸稳定",
+      "耐化学；耐热、耐寒、耐溶剂",
+      "额定 −40 至 145 °C；液氮 −196 °C 通过测试",
+      "符合 REACH 与 RoHS"
     ],
     "vi": [
-      "Mặt nylon dệt trắng dẻo, ôm dây và cáp",
-      "Đánh dấu tự bọc quấn quanh",
-      "Keo acrylic chịu nhiệt cao",
-      "In truyền nhiệt",
-      "Chống cháy — đạt UL94 VTM-0"
+      "Bề mặt màng nylon trắng mờ — in truyền nhiệt, dot-matrix hoặc viết tay",
+      "Ổn định kích thước ở nhiệt độ cao",
+      "Kháng hóa chất; chịu nhiệt, lạnh và dung môi",
+      "Định mức −40 đến 145 °C; thử nghiệm đến −196 °C trong nitơ lỏng",
+      "Tuân thủ REACH và RoHS"
     ],
     "th": [
-      "หน้าไนลอนทอสีขาวยืดหยุ่น แนบสายไฟและสายเคเบิล",
-      "การทำเครื่องหมายพันรอบแบบเคลือบในตัว",
-      "กาวอะคริลิกทนร้อนสูง",
-      "พิมพ์ถ่ายเทความร้อนได้",
-      "หน่วงไฟ — ได้รับ UL94 VTM-0"
+      "พื้นผิวฟิล์มไนลอนสีขาวด้าน — พิมพ์ถ่ายเทความร้อน ดอตเมทริกซ์ หรือเขียนมือ",
+      "เสถียรเชิงมิติที่อุณหภูมิสูง",
+      "ทนสารเคมี ทนร้อน เย็น และตัวทำละลาย",
+      "พิกัด −40 ถึง 145 °C ทดสอบถึง −196 °C ในไนโตรเจนเหลว",
+      "เป็นไปตาม REACH และ RoHS"
     ]
   },
   "spec_table": {
     "headers": {
-      "en": [
-        "Property",
-        "Value"
-      ],
-      "zh": [
-        "属性",
-        "参数"
-      ],
-      "vi": [
-        "Thuộc tính",
-        "Giá trị"
-      ],
-      "th": [
-        "คุณสมบัติ",
-        "ค่า"
-      ]
+      "en": ["Property", "Value"],
+      "zh": ["属性", "参数"],
+      "vi": ["Thuộc tính", "Giá trị"],
+      "th": ["คุณสมบัติ", "ค่า"]
     },
     "rows": [
-      {
-        "cells": [
-          {
-            "en": "Film",
-            "zh": "面材",
-            "vi": "Màng",
-            "th": "ฟิล์ม"
-          },
-          {
-            "en": "5 mil (125µm) Nylon",
-            "zh": "5 mil（125µm）尼龙",
-            "vi": "Nylon 5 mil (125µm)",
-            "th": "ไนลอน 5 mil (125µm)"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Topcoat / finish",
-            "zh": "面涂层 / 表面",
-            "vi": "Lớp phủ / bề mặt",
-            "th": "ท็อปโค้ต / พื้นผิว"
-          },
-          {
-            "en": "White woven cloth",
-            "zh": "白色机织布",
-            "vi": "Vải dệt trắng",
-            "th": "ผ้าทอสีขาว"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Adhesive",
-            "zh": "胶粘剂",
-            "vi": "Keo",
-            "th": "กาว"
-          },
-          {
-            "en": "High-temperature acrylic PSA, 2 mil (50 µm) high-temp acrylic",
-            "zh": "高温丙烯酸压敏胶，2 mil (50 µm) high-temp acrylic",
-            "vi": "Keo acrylic PSA chịu nhiệt cao, 2 mil (50 µm) high-temp acrylic",
-            "th": "กาว PSA อะคริลิกทนร้อนสูง 2 mil (50 µm) high-temp acrylic"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Temperature",
-            "zh": "温度",
-            "vi": "Nhiệt độ",
-            "th": "อุณหภูมิ"
-          },
-          {
-            "en": "180 °C/5min · 110 °C/30d · −196 °C cryo",
-            "zh": "180 °C/5min · 110 °C/30d · −196 °C cryo",
-            "vi": "180 °C/5min · 110 °C/30d · −196 °C cryo",
-            "th": "180 °C/5min · 110 °C/30d · −196 °C cryo"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Compliance",
-            "zh": "合规",
-            "vi": "Tuân thủ",
-            "th": "การรับรอง"
-          },
-          {
-            "en": "UL94 VTM-0",
-            "zh": "UL94 VTM-0",
-            "vi": "UL94 VTM-0",
-            "th": "UL94 VTM-0"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Printing",
-            "zh": "打印",
-            "vi": "In ấn",
-            "th": "การพิมพ์"
-          },
-          {
-            "en": "Thermal transfer — full-resin ribbon recommended",
-            "zh": "热转印 —— 建议全树脂碳带",
-            "vi": "In truyền nhiệt — khuyến nghị ribbon full-resin",
-            "th": "พิมพ์ถ่ายเทความร้อน — แนะนำริบบอน full-resin"
-          }
-        ]
-      }
+      {"cells": [
+        {"en": "Film", "zh": "面材", "vi": "Màng", "th": "ฟิล์ม"},
+        {"en": "5 mil (127 µm) matte white nylon", "zh": "5 mil（127 µm）哑白尼龙", "vi": "Nylon trắng mờ 5 mil (127 µm)", "th": "ไนลอนสีขาวด้าน 5 mil (127 µm)"}]},
+      {"cells": [
+        {"en": "Adhesive", "zh": "胶粘剂", "vi": "Keo", "th": "กาว"},
+        {"en": "Acrylic PSA, 2 mil (51 µm)", "zh": "丙烯酸压敏胶，2 mil（51 µm）", "vi": "Keo acrylic PSA, 2 mil (51 µm)", "th": "กาว PSA อะคริลิก 2 mil (51 µm)"}]},
+      {"cells": [
+        {"en": "Total thickness", "zh": "总厚度", "vi": "Tổng độ dày", "th": "ความหนารวม"},
+        "7 mil (178 µm)"]},
+      {"cells": [
+        {"en": "Adhesion (stainless steel)", "zh": "粘着力（不锈钢）", "vi": "Độ bám (thép không gỉ)", "th": "การยึดเกาะ (สแตนเลส)"},
+        {"en": "≥ 35 oz/in (20 min) · ≥ 40 oz/in (24 hr)", "zh": "≥ 35 oz/in（20 分）· ≥ 40 oz/in（24 小时）", "vi": "≥ 35 oz/in (20 phút) · ≥ 40 oz/in (24 giờ)", "th": "≥ 35 oz/in (20 นาที) · ≥ 40 oz/in (24 ชม.)"}]},
+      {"cells": [
+        {"en": "Temperature", "zh": "温度", "vi": "Nhiệt độ", "th": "อุณหภูมิ"},
+        {"en": "−40 to 145 °C · 5 min @ 180 °C · 30 d @ 110 °C · 1 hr @ −196 °C (LN₂)", "zh": "−40 至 145 °C · 180 °C/5 分 · 110 °C/30 天 · −196 °C 液氮 1 小时", "vi": "−40 đến 145 °C · 5 phút @ 180 °C · 30 ngày @ 110 °C · 1 giờ @ −196 °C (LN₂)", "th": "−40 ถึง 145 °C · 5 นาที @ 180 °C · 30 วัน @ 110 °C · 1 ชม. @ −196 °C (LN₂)"}]},
+      {"cells": [
+        {"en": "Weatherability", "zh": "耐候", "vi": "Chịu thời tiết", "th": "ทนสภาพอากาศ"},
+        {"en": "ASTM G154 — no visible effect", "zh": "ASTM G154 —— 无可见影响", "vi": "ASTM G154 — không ảnh hưởng thấy được", "th": "ASTM G154 — ไม่มีผลที่มองเห็น"}]},
+      {"cells": [
+        {"en": "Printing", "zh": "打印", "vi": "In ấn", "th": "การพิมพ์"},
+        {"en": "Thermal transfer — DNP R510 HF, Ricoh B110A/D110A, iimak SP330", "zh": "热转印 —— DNP R510 HF、Ricoh B110A/D110A、iimak SP330", "vi": "In truyền nhiệt — DNP R510 HF, Ricoh B110A/D110A, iimak SP330", "th": "พิมพ์ถ่ายเทความร้อน — DNP R510 HF, Ricoh B110A/D110A, iimak SP330"}]}
     ],
     "notes": {
-      "en": [
-        "Summary specification from the Polyonics product brochure — request the model datasheet for full adhesion, thickness and durability data."
-      ],
-      "zh": [
-        "摘自 Polyonics 产品手册的概要规格 —— 完整粘着、厚度与耐久数据请索取该型号数据表。"
-      ],
-      "vi": [
-        "Thông số tóm tắt từ brochure Polyonics — yêu cầu datasheet của model để có dữ liệu độ bám, độ dày và độ bền đầy đủ."
-      ],
-      "th": [
-        "ข้อมูลจำเพาะโดยสรุปจากโบรชัวร์ Polyonics — ขอเอกสารข้อมูลรุ่นสำหรับข้อมูลการยึดเกาะ ความหนา และความทนทานฉบับเต็ม"
-      ]
+      "en": ["Values are typical, not specifications; verify against the datasheet and by application testing."],
+      "zh": ["数值为典型值，非规格值；请以数据表并经应用测试确认。"],
+      "vi": ["Giá trị là điển hình, không phải thông số kỹ thuật; hãy xác minh theo datasheet và thử nghiệm ứng dụng."],
+      "th": ["ค่าเป็นค่าทั่วไป ไม่ใช่สเปก โปรดตรวจสอบกับเอกสารข้อมูลและการทดสอบการใช้งาน"]
     }
   },
   "applications": {
     "en": [
-      "Wire and cable marking",
-      "Harness identification",
-      "Self-laminating wrap-around labels",
-      "Panel and component identification"
+      "Wire and cable barcode or alphanumeric marking",
+      "Terminal marking",
+      "Cryogenic-process labeling",
+      "Curved and contoured surfaces, small diameters and tubing",
+      "Vial and slide labeling for laboratory identification"
     ],
     "zh": [
-      "线缆标识",
-      "线束识别",
-      "自覆膜环绕标签",
-      "面板与元件标识"
+      "线缆条码或字母数字标识",
+      "端子标识",
+      "低温工艺标签",
+      "曲面与异形表面、小直径与管材",
+      "实验室瓶与载玻片标识"
     ],
     "vi": [
-      "Đánh dấu dây và cáp",
-      "Nhận diện bó dây",
-      "Nhãn tự bọc quấn quanh",
-      "Nhận diện bảng và linh kiện"
+      "Đánh dấu mã vạch hoặc chữ-số cho dây và cáp",
+      "Đánh dấu đầu cực",
+      "Dán nhãn cho quy trình siêu lạnh",
+      "Bề mặt cong và tạo hình, đường kính nhỏ và ống",
+      "Dán nhãn lọ và lam kính cho phòng lab"
     ],
     "th": [
-      "การทำเครื่องหมายสายไฟและสายเคเบิล",
-      "การระบุชุดสายไฟ",
-      "ฉลากพันรอบแบบเคลือบในตัว",
-      "การระบุแผงและชิ้นส่วน"
+      "การทำเครื่องหมายบาร์โค้ดหรือตัวอักษร-ตัวเลขสำหรับสายไฟและสายเคเบิล",
+      "การทำเครื่องหมายขั้วต่อ",
+      "การติดฉลากสำหรับกระบวนการอุณหภูมิต่ำ",
+      "พื้นผิวโค้งและขึ้นรูป เส้นผ่านศูนย์กลางเล็กและท่อ",
+      "การติดฉลากขวดและสไลด์สำหรับห้องแล็บ"
     ]
   },
   "certifications": {
-    "en": [
-      "UL94 VTM-0"
-    ],
-    "zh": [
-      "UL94 VTM-0"
-    ],
-    "vi": [
-      "UL94 VTM-0"
-    ],
-    "th": [
-      "UL94 VTM-0"
-    ]
+    "en": ["REACH compliant", "RoHS compliant"],
+    "zh": ["符合 REACH", "符合 RoHS"],
+    "vi": ["Tuân thủ REACH", "Tuân thủ RoHS"],
+    "th": ["เป็นไปตาม REACH", "เป็นไปตาม RoHS"]
   }
 }

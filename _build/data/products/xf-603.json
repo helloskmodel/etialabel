@@ -1,331 +1,135 @@
 {
- "slug": "xf-603",
- "source": "_docs/sources/wire & cable",
- "langs": [
-  "en",
-  "zh",
-  "vi",
-  "th"
- ],
- "banner": "",
- "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF-603",
- "title": {
-  "en": "XF-603 Halogen-Free Flame-Retardant High-Temperature Polyimide Cable Label",
-  "zh": "XF-603 无卤阻燃耐高温聚酰亚胺线缆标签",
-  "vi": "XF-603 Nhãn cáp polyimide chịu nhiệt cao chống cháy không halogen",
-  "th": "XF-603 ฉลากสายเคเบิลโพลีอิไมด์ทนความร้อนสูง หน่วงไฟไร้ฮาโลเจน"
- },
- "tagline": {
-  "en": "UL94 VTM-0 Rated and UL 969 Recognized. Peak Heat Resistance up to 300°C.",
-  "zh": "UL94 VTM-0 认证、UL 969 认可，峰值耐温高达 300°C",
-  "vi": "Đạt chuẩn UL94 VTM-0 và được UL 969 công nhận. Chịu nhiệt đỉnh tới 300°C.",
-  "th": "ผ่านมาตรฐาน UL94 VTM-0 และได้รับการรับรอง UL 969 ทนความร้อนสูงสุดถึง 300°C"
- },
- "positioning": {
-  "en": "XF-603 is a halogen-free, flame-retardant polyimide label designed for high-temperature identification. Its flexible PI film is suitable for cable wrapping and flag labeling, combining reliable adhesion, clear printing and high-temperature durability for electronic, automotive and industrial cables.",
-  "zh": "XF-603 是一款专为高温标识设计的无卤阻燃聚酰亚胺标签。其柔性 PI 薄膜适用于线缆缠绕与旗形标签，兼具可靠粘接、清晰打印与耐高温耐久性，适用于电子、汽车及工业线缆。",
-  "vi": "XF-603 là nhãn polyimide chống cháy không halogen được thiết kế cho nhận diện ở nhiệt độ cao. Màng PI dẻo phù hợp để quấn cáp và dán nhãn cờ, kết hợp độ bám dính đáng tin cậy, in ấn rõ nét và độ bền nhiệt cao cho cáp điện tử, ô tô và công nghiệp.",
-  "th": "XF-603 เป็นฉลากโพลีอิไมด์หน่วงไฟไร้ฮาโลเจนที่ออกแบบมาสำหรับการระบุเอกลักษณ์ในสภาพอุณหภูมิสูง ฟิล์ม PI ที่ยืดหยุ่นเหมาะสำหรับการพันสายเคเบิลและฉลากแบบธง ผสมผสานการยึดเกาะที่เชื่อถือได้ การพิมพ์ที่คมชัด และความทนทานต่ออุณหภูมิสูง สำหรับสายเคเบิลอิเล็กทรอนิกส์ ยานยนต์ และอุตสาหกรรม"
- },
- "challenges": {},
- "features": {
-  "en": [
-   "Flexible 1 mil PI film conforms to round and curved cables",
-   "Suitable for cable wrapping and flag labeling",
-   "Withstands 150°C long-term and peak temperatures up to 300°C",
-   "Halogen-free flame-retardant material rated UL94 VTM-0",
-   "UL 969 recognized for marking and labeling systems",
-   "Tested to FMVSS 302 for motor-vehicle interior flammability",
-   "Chemical-resistant coating supports clear, durable thermal-transfer printing",
-   "REACH and RoHS compliant"
-  ],
-  "zh": [
-   "1 mil 柔性 PI 薄膜，可贴合圆形及弯曲线缆",
-   "适用于线缆缠绕与旗形标签",
-   "长期耐受 150°C，峰值耐温高达 300°C",
-   "无卤阻燃材料，UL94 VTM-0 认证",
-   "获 UL 969 标识与标签系统认可",
-   "通过 FMVSS 302 机动车内饰阻燃测试",
-   "耐化学涂层，支持清晰耐久的热转印打印",
-   "符合 REACH 与 RoHS 要求"
-  ],
-  "vi": [
-   "Màng PI dẻo 1 mil ôm sát cáp tròn và cong",
-   "Phù hợp để quấn cáp và dán nhãn cờ",
-   "Chịu 150°C dài hạn và nhiệt đỉnh tới 300°C",
-   "Vật liệu chống cháy không halogen đạt chuẩn UL94 VTM-0",
-   "Được UL 969 công nhận cho hệ thống đánh dấu và ghi nhãn",
-   "Đã thử nghiệm FMVSS 302 về tính cháy của vật liệu nội thất xe cơ giới",
-   "Lớp phủ kháng hóa chất hỗ trợ in chuyển nhiệt rõ nét, bền lâu",
-   "Tuân thủ REACH và RoHS"
-  ],
-  "th": [
-   "ฟิล์ม PI ยืดหยุ่น 1 mil แนบสนิทกับสายเคเบิลทรงกลมและโค้ง",
-   "เหมาะสำหรับการพันสายเคเบิลและฉลากแบบธง",
-   "ทน 150°C ระยะยาว และอุณหภูมิสูงสุดถึง 300°C",
-   "วัสดุหน่วงไฟไร้ฮาโลเจน ผ่านมาตรฐาน UL94 VTM-0",
-   "ได้รับการรับรอง UL 969 สำหรับระบบทำเครื่องหมายและติดฉลาก",
-   "ผ่านการทดสอบ FMVSS 302 ด้านการติดไฟของวัสดุภายในยานยนต์",
-   "สารเคลือบทนสารเคมีรองรับการพิมพ์ถ่ายเทความร้อนที่คมชัดและทนทาน",
-   "เป็นไปตามข้อกำหนด REACH และ RoHS"
-  ]
- },
- "benefits": {},
- "applications": {
-  "en": [
-   "Electronic-equipment cable identification",
-   "Automotive wire harnesses",
-   "High-temperature industrial cables",
-   "Wrap-around cable labels",
-   "Flag labels",
-   "Industrial communication and control cables",
-   "Wire-harness classification and asset traceability",
-   "Electronic-component process tracking"
-  ],
-  "zh": [
-   "电子设备线缆标识",
-   "汽车线束",
-   "高温工业线缆",
-   "缠绕式线缆标签",
-   "旗形标签",
-   "工业通信与控制线缆",
-   "线束分类与资产追溯",
-   "电子元器件过程追踪"
-  ],
-  "vi": [
-   "Nhận diện cáp thiết bị điện tử",
-   "Bó dây ô tô",
-   "Cáp công nghiệp nhiệt độ cao",
-   "Nhãn quấn quanh cáp",
-   "Nhãn cờ",
-   "Cáp truyền thông và điều khiển công nghiệp",
-   "Phân loại bó dây và truy xuất nguồn gốc tài sản",
-   "Theo dõi quy trình linh kiện điện tử"
-  ],
-  "th": [
-   "การระบุสายเคเบิลอุปกรณ์อิเล็กทรอนิกส์",
-   "ชุดสายไฟยานยนต์",
-   "สายเคเบิลอุตสาหกรรมอุณหภูมิสูง",
-   "ฉลากพันรอบสายเคเบิล",
-   "ฉลากแบบธง",
-   "สายเคเบิลสื่อสารและควบคุมในอุตสาหกรรม",
-   "การจำแนกชุดสายไฟและการตรวจสอบย้อนกลับทรัพย์สิน",
-   "การติดตามกระบวนการชิ้นส่วนอิเล็กทรอนิกส์"
-  ]
- },
- "certifications": {
-  "en": [
-   "UL94 VTM-0 Rated — Meets the UL94 VTM-0 flammability rating for thin materials, helping restrict continued burning and flame propagation.",
-   "UL 969 Recognized — Recognized for use in marking and labeling systems that require reliable, long-term identification.",
-   "FMVSS 302 Tested — Tested for the flammability of motor-vehicle interior materials, supporting automotive cable-identification applications.",
-   "Halogen-Free — Uses a halogen-free flame-retardant construction, helping reduce the potential generation of corrosive halogen-containing smoke.",
-   "REACH and RoHS Compliant — Meets applicable chemical-management and hazardous-substance requirements."
-  ],
-  "zh": [
-   "UL94 VTM-0 认证 — 满足薄材料 UL94 VTM-0 阻燃等级，有助于抑制持续燃烧与火焰蔓延。",
-   "UL 969 认可 — 适用于需要可靠、长期标识的标记与标签系统。",
-   "FMVSS 302 测试 — 通过机动车内饰材料阻燃性测试，支持汽车线缆标识应用。",
-   "无卤 — 采用无卤阻燃结构，有助于减少腐蚀性含卤烟雾的产生。",
-   "REACH 与 RoHS 合规 — 满足适用的化学品管理与有害物质要求。"
-  ],
-  "vi": [
-   "Đạt chuẩn UL94 VTM-0 — Đáp ứng cấp chống cháy UL94 VTM-0 cho vật liệu mỏng, giúp hạn chế cháy lan và lan truyền ngọn lửa.",
-   "Được UL 969 công nhận — Được công nhận cho hệ thống đánh dấu và ghi nhãn cần nhận diện đáng tin cậy, lâu dài.",
-   "Đã thử nghiệm FMVSS 302 — Được thử nghiệm tính cháy của vật liệu nội thất xe cơ giới, hỗ trợ ứng dụng nhận diện cáp ô tô.",
-   "Không halogen — Sử dụng cấu tạo chống cháy không halogen, giúp giảm khả năng sinh khói chứa halogen ăn mòn.",
-   "Tuân thủ REACH và RoHS — Đáp ứng các yêu cầu quản lý hóa chất và chất nguy hại hiện hành."
-  ],
-  "th": [
-   "ผ่านมาตรฐาน UL94 VTM-0 — เป็นไปตามระดับการหน่วงไฟ UL94 VTM-0 สำหรับวัสดุบาง ช่วยจำกัดการเผาไหม้ต่อเนื่องและการลุกลามของเปลวไฟ",
-   "ได้รับการรับรอง UL 969 — ได้รับการรับรองสำหรับระบบทำเครื่องหมายและติดฉลากที่ต้องการการระบุที่เชื่อถือได้และยาวนาน",
-   "ผ่านการทดสอบ FMVSS 302 — ทดสอบการติดไฟของวัสดุภายในยานยนต์ รองรับการใช้งานระบุสายเคเบิลยานยนต์",
-   "ไร้ฮาโลเจน — ใช้โครงสร้างหน่วงไฟไร้ฮาโลเจน ช่วยลดโอกาสการเกิดควันที่มีฮาโลเจนซึ่งกัดกร่อน",
-   "เป็นไปตาม REACH และ RoHS — เป็นไปตามข้อกำหนดการจัดการสารเคมีและสารอันตรายที่เกี่ยวข้อง"
-  ]
- },
- "spec_table": {
-  "headers": {
-   "en": [
-    "Specification",
-    "XF-603"
-   ],
-   "zh": [
-    "规格项",
-    "XF-603"
-   ],
-   "vi": [
-    "Thông số",
-    "XF-603"
-   ],
-   "th": [
-    "ข้อมูลจำเพาะ",
-    "XF-603"
-   ]
+  "slug": "xf-603",
+  "code": "XF-603FR",
+  "source": "Polyonics XF-603FR Technical Data Sheet",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "brand": "polyonics",
+  "industry": "cable",
+  "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/XF-603",
+  "title": {
+    "en": "XF-603FR — 1 mil Flame-Retardant Polyimide Label (UL94 V-0)",
+    "zh": "XF-603FR — 1 mil 阻燃聚酰亚胺标签（UL94 V-0）",
+    "vi": "XF-603FR — Nhãn Polyimide chống cháy 1 mil (UL94 V-0)",
+    "th": "XF-603FR — ฉลากโพลีอิไมด์หน่วงไฟ 1 mil (UL94 V-0)"
   },
-  "rows": [
-   {
-    "cells": [
-     {
-      "en": "Product",
-      "zh": "产品",
-      "vi": "Sản phẩm",
-      "th": "ผลิตภัณฑ์"
-     },
-     "XF-603"
+  "tagline": {
+    "en": "1 mil polyimide flame-retardant label rated UL94 V-0 and UL 969 recognized — for battery, electronics and high-temperature identification up to 300 °C short-term.",
+    "zh": "1 mil 聚酰亚胺阻燃标签，UL94 V-0 认证并获 UL 969 认可 —— 用于电池、电子与高温标识，短期耐受 300 °C。",
+    "vi": "Nhãn polyimide chống cháy 1 mil đạt UL94 V-0 và được UL 969 công nhận — cho nhận diện pin, điện tử và nhiệt độ cao đến 300 °C ngắn hạn.",
+    "th": "ฉลากโพลีอิไมด์หน่วงไฟ 1 mil ได้รับ UL94 V-0 และการรับรอง UL 969 — สำหรับการระบุแบตเตอรี่ อิเล็กทรอนิกส์ และอุณหภูมิสูงถึง 300 °C ระยะสั้น"
+  },
+  "positioning": {
+    "en": "POLYONICS XF-603FR is a 1 mil (25 µm) polyimide film with a high-temperature permanent acrylic adhesive and a high-opacity semi-gloss white topcoat, specifically designed to be flame retardant to the UL94 V-0 standard. It is UL 969 recognized, chemically resistant when printed with a recommended ribbon, and dimensionally stable — for battery labels, electronic product identification, IC and asset labeling where flame, chemical and high-temperature exposure occur.",
+    "zh": "POLYONICS XF-603FR 是一款 1 mil（25 µm）聚酰亚胺薄膜，配高温永久丙烯酸胶与高遮盖半光白面涂层，专为达到 UL94 V-0 阻燃标准而设计。获 UL 969 认可，配合推荐碳带打印时耐化学，且尺寸稳定 —— 适用于电池标签、电子产品标识、IC 与资产标识等存在火焰、化学与高温暴露的场景。",
+    "vi": "POLYONICS XF-603FR là màng polyimide 1 mil (25 µm) với keo acrylic vĩnh viễn chịu nhiệt cao và lớp phủ trắng bán bóng độ đục cao, thiết kế chống cháy đạt tiêu chuẩn UL94 V-0. Được UL 969 công nhận, kháng hóa chất khi in bằng ribbon khuyến nghị và ổn định kích thước — cho nhãn pin, nhận diện sản phẩm điện tử, nhãn IC và tài sản nơi có phơi nhiễm lửa, hóa chất và nhiệt độ cao.",
+    "th": "POLYONICS XF-603FR เป็นฟิล์มโพลีอิไมด์ 1 mil (25 µm) พร้อมกาวอะคริลิกถาวรทนอุณหภูมิสูงและท็อปโค้ตสีขาวกึ่งเงาความทึบสูง ออกแบบให้หน่วงไฟตามมาตรฐาน UL94 V-0 ได้รับการรับรอง UL 969 ทนสารเคมีเมื่อพิมพ์ด้วยริบบอนที่แนะนำ และเสถียรเชิงมิติ — สำหรับฉลากแบตเตอรี่ การระบุผลิตภัณฑ์อิเล็กทรอนิกส์ ฉลาก IC และทรัพย์สินที่มีการสัมผัสไฟ สารเคมี และอุณหภูมิสูง"
+  },
+  "features": {
+    "en": [
+      "Flame-retardant polyimide — meets the UL94 V-0 standard (File E338081)",
+      "UL 969 recognized for marking and labeling systems (File MH19503)",
+      "1 mil polyimide film — flexible, conforms to round and curved cables",
+      "Operating −55 to 260 °C; short-term 300 °C (90 sec); long-term 100 hr @ 125 °C",
+      "Chemical-resistant when printed with a recommended thermal-transfer ribbon",
+      "High-opacity semi-gloss white topcoat for high-resolution printing"
+    ],
+    "zh": [
+      "阻燃聚酰亚胺 —— 达 UL94 V-0 标准（文件 E338081）",
+      "获 UL 969 标识与标签系统认可（文件 MH19503）",
+      "1 mil 聚酰亚胺薄膜 —— 柔顺，可贴合圆形与曲面线缆",
+      "工作 −55 至 260 °C；短期 300 °C（90 秒）；长期 125 °C/100 小时",
+      "配合推荐热转印碳带打印时耐化学",
+      "高遮盖半光白面涂层，支持高分辨率打印"
+    ],
+    "vi": [
+      "Polyimide chống cháy — đạt tiêu chuẩn UL94 V-0 (File E338081)",
+      "Được UL 969 công nhận cho hệ thống đánh dấu và ghi nhãn (File MH19503)",
+      "Màng polyimide 1 mil — dẻo, ôm cáp tròn và cong",
+      "Hoạt động −55 đến 260 °C; ngắn hạn 300 °C (90 giây); dài hạn 100 giờ @ 125 °C",
+      "Kháng hóa chất khi in bằng ribbon truyền nhiệt khuyến nghị",
+      "Lớp phủ trắng bán bóng độ đục cao cho in độ phân giải cao"
+    ],
+    "th": [
+      "โพลีอิไมด์หน่วงไฟ — ผ่านมาตรฐาน UL94 V-0 (ไฟล์ E338081)",
+      "ได้รับการรับรอง UL 969 สำหรับระบบทำเครื่องหมายและติดฉลาก (ไฟล์ MH19503)",
+      "ฟิล์มโพลีอิไมด์ 1 mil — ยืดหยุ่น แนบสายเคเบิลกลมและโค้ง",
+      "ใช้งาน −55 ถึง 260 °C ระยะสั้น 300 °C (90 วินาที) ระยะยาว 100 ชม. @ 125 °C",
+      "ทนสารเคมีเมื่อพิมพ์ด้วยริบบอนถ่ายเทความร้อนที่แนะนำ",
+      "ท็อปโค้ตสีขาวกึ่งเงาความทึบสูงสำหรับพิมพ์ความละเอียดสูง"
     ]
-   },
-   {
-    "cells": [
-     {
-      "en": "Facestock",
-      "zh": "面材",
-      "vi": "Vật liệu mặt",
-      "th": "วัสดุพิมพ์"
-     },
-     {
-      "en": "Semi-gloss white polyimide film",
-      "zh": "半亮白聚酰亚胺薄膜",
-      "vi": "Màng polyimide trắng bán bóng",
-      "th": "ฟิล์มโพลีอิไมด์สีขาวกึ่งเงา"
-     }
+  },
+  "spec_table": {
+    "headers": {
+      "en": ["Property", "Value"],
+      "zh": ["属性", "参数"],
+      "vi": ["Thuộc tính", "Giá trị"],
+      "th": ["คุณสมบัติ", "ค่า"]
+    },
+    "rows": [
+      {"cells": [
+        {"en": "Film", "zh": "面材", "vi": "Màng", "th": "ฟิล์ม"},
+        {"en": "1 mil (25 µm) polyimide, semi-gloss white", "zh": "1 mil（25 µm）聚酰亚胺，半光白", "vi": "Polyimide 1 mil (25 µm), trắng bán bóng", "th": "โพลีอิไมด์ 1 mil (25 µm) สีขาวกึ่งเงา"}]},
+      {"cells": [
+        {"en": "Face / adhesive / total", "zh": "面层 / 胶 / 总厚", "vi": "Mặt / keo / tổng", "th": "หน้า / กาว / รวม"},
+        {"en": "1.5 mil (38 µm) / 1 mil (25 µm) / 2.5 mil (63 µm)", "zh": "1.5 mil（38 µm）/ 1 mil（25 µm）/ 2.5 mil（63 µm）", "vi": "1.5 mil (38 µm) / 1 mil (25 µm) / 2.5 mil (63 µm)", "th": "1.5 mil (38 µm) / 1 mil (25 µm) / 2.5 mil (63 µm)"}]},
+      {"cells": [
+        {"en": "Flammability", "zh": "阻燃", "vi": "Chống cháy", "th": "การหน่วงไฟ"},
+        {"en": "UL94 V-0 — Pass", "zh": "UL94 V-0 —— 通过", "vi": "UL94 V-0 — Đạt", "th": "UL94 V-0 — ผ่าน"}]},
+      {"cells": [
+        {"en": "Adhesion (stainless steel)", "zh": "粘着力（不锈钢）", "vi": "Độ bám (thép không gỉ)", "th": "การยึดเกาะ (สแตนเลส)"},
+        {"en": "≥ 29 oz/in (20 min) · ≥ 37 oz/in (24 hr)", "zh": "≥ 29 oz/in（20 分）· ≥ 37 oz/in（24 小时）", "vi": "≥ 29 oz/in (20 phút) · ≥ 37 oz/in (24 giờ)", "th": "≥ 29 oz/in (20 นาที) · ≥ 37 oz/in (24 ชม.)"}]},
+      {"cells": [
+        {"en": "Temperature", "zh": "温度", "vi": "Nhiệt độ", "th": "อุณหภูมิ"},
+        {"en": "Operating −55 to 260 °C · short-term 300 °C (90 s) · long-term 100 hr @ 125 °C", "zh": "工作 −55 至 260 °C · 短期 300 °C（90 秒）· 长期 125 °C/100 小时", "vi": "Hoạt động −55 đến 260 °C · ngắn hạn 300 °C (90 s) · dài hạn 100 giờ @ 125 °C", "th": "ใช้งาน −55 ถึง 260 °C · ระยะสั้น 300 °C (90 วิ) · ระยะยาว 100 ชม. @ 125 °C"}]},
+      {"cells": [
+        {"en": "Opacity", "zh": "遮盖率", "vi": "Độ đục", "th": "ความทึบ"},
+        "≥ 85%"]},
+      {"cells": [
+        {"en": "Printing", "zh": "打印", "vi": "In ấn", "th": "การพิมพ์"},
+        {"en": "Thermal transfer — DNP R510 HF, Ricoh B110 CR, Armor AXR7+, Armor 8", "zh": "热转印 —— DNP R510 HF、Ricoh B110 CR、Armor AXR7+、Armor 8", "vi": "In truyền nhiệt — DNP R510 HF, Ricoh B110 CR, Armor AXR7+, Armor 8", "th": "พิมพ์ถ่ายเทความร้อน — DNP R510 HF, Ricoh B110 CR, Armor AXR7+, Armor 8"}]}
+    ],
+    "notes": {
+      "en": ["UL 969 File MH19503 · UL 94 File E338081. Values are typical, not specifications; verify against the datasheet and by application testing."],
+      "zh": ["UL 969 文件 MH19503 · UL 94 文件 E338081。数值为典型值，非规格值；请以数据表并经应用测试确认。"],
+      "vi": ["UL 969 File MH19503 · UL 94 File E338081. Giá trị là điển hình, không phải thông số kỹ thuật; hãy xác minh theo datasheet và thử nghiệm ứng dụng."],
+      "th": ["UL 969 ไฟล์ MH19503 · UL 94 ไฟล์ E338081 ค่าเป็นค่าทั่วไป ไม่ใช่สเปก โปรดตรวจสอบกับเอกสารข้อมูลและการทดสอบการใช้งาน"]
+    }
+  },
+  "applications": {
+    "en": [
+      "Battery labels where flame, chemical and high-temperature exposure may occur",
+      "Electronic product identification and UL rating labels",
+      "IC labeling for work-in-process and permanent ID",
+      "Tracking labels for mobile hand-held devices",
+      "Low-profile and asset-tracking labels"
+    ],
+    "zh": [
+      "存在火焰、化学与高温暴露的电池标签",
+      "电子产品标识与 UL 等级标签",
+      "IC 在制品与永久标识标签",
+      "移动手持设备追踪标签",
+      "薄型与资产追踪标签"
+    ],
+    "vi": [
+      "Nhãn pin nơi có thể phơi nhiễm lửa, hóa chất và nhiệt độ cao",
+      "Nhận diện sản phẩm điện tử và nhãn xếp hạng UL",
+      "Nhãn IC cho hàng đang gia công và ID vĩnh viễn",
+      "Nhãn theo dõi thiết bị cầm tay",
+      "Nhãn mỏng và theo dõi tài sản"
+    ],
+    "th": [
+      "ฉลากแบตเตอรี่ที่อาจสัมผัสไฟ สารเคมี และอุณหภูมิสูง",
+      "การระบุผลิตภัณฑ์อิเล็กทรอนิกส์และฉลากเรตติ้ง UL",
+      "ฉลาก IC สำหรับงานระหว่างผลิตและ ID ถาวร",
+      "ฉลากติดตามอุปกรณ์พกพา",
+      "ฉลากบางและติดตามทรัพย์สิน"
     ]
-   },
-   {
-    "cells": [
-     {
-      "en": "Facestock thickness",
-      "zh": "面材厚度",
-      "vi": "Độ dày vật liệu mặt",
-      "th": "ความหนาวัสดุพิมพ์"
-     },
-     "1 mil (25μm)"
-    ]
-   },
-   {
-    "cells": [
-     {
-      "en": "Adhesive",
-      "zh": "胶粘剂",
-      "vi": "Keo dán",
-      "th": "กาว"
-     },
-     {
-      "en": "1 mil high-temperature acrylic PSA",
-      "zh": "1 mil 耐高温丙烯酸压敏胶",
-      "vi": "Keo áp lực acrylic chịu nhiệt cao 1 mil",
-      "th": "กาวแรงกดอะคริลิกทนความร้อนสูง 1 mil"
-     }
-    ]
-   },
-   {
-    "cells": [
-     {
-      "en": "Application methods",
-      "zh": "应用方式",
-      "vi": "Phương pháp ứng dụng",
-      "th": "วิธีการใช้งาน"
-     },
-     {
-      "en": "Cable wrapping and flag labeling",
-      "zh": "线缆缠绕与旗形标签",
-      "vi": "Quấn cáp và dán nhãn cờ",
-      "th": "การพันสายเคเบิลและฉลากแบบธง"
-     }
-    ]
-   },
-   {
-    "cells": [
-     {
-      "en": "Long-term temperature",
-      "zh": "长期耐温",
-      "vi": "Nhiệt độ dài hạn",
-      "th": "อุณหภูมิระยะยาว"
-     },
-     {
-      "en": "150°C for 100 hours",
-      "zh": "150°C 持续 100 小时",
-      "vi": "150°C trong 100 giờ",
-      "th": "150°C เป็นเวลา 100 ชั่วโมง"
-     }
-    ]
-   },
-   {
-    "cells": [
-     {
-      "en": "Short-term temperature",
-      "zh": "短期耐温",
-      "vi": "Nhiệt độ ngắn hạn",
-      "th": "อุณหภูมิระยะสั้น"
-     },
-     {
-      "en": "260°C for 5 minutes",
-      "zh": "260°C 持续 5 分钟",
-      "vi": "260°C trong 5 phút",
-      "th": "260°C เป็นเวลา 5 นาที"
-     }
-    ]
-   },
-   {
-    "cells": [
-     {
-      "en": "Peak temperature",
-      "zh": "峰值耐温",
-      "vi": "Nhiệt độ đỉnh",
-      "th": "อุณหภูมิสูงสุด"
-     },
-     {
-      "en": "300°C for 90 seconds",
-      "zh": "300°C 持续 90 秒",
-      "vi": "300°C trong 90 giây",
-      "th": "300°C เป็นเวลา 90 วินาที"
-     }
-    ]
-   },
-   {
-    "cells": [
-     {
-      "en": "Printing method",
-      "zh": "打印方式",
-      "vi": "Phương pháp in",
-      "th": "วิธีการพิมพ์"
-     },
-     {
-      "en": "Thermal transfer",
-      "zh": "热转印",
-      "vi": "In chuyển nhiệt",
-      "th": "การถ่ายเทความร้อน"
-     }
-    ]
-   },
-   {
-    "cells": [
-     {
-      "en": "Flammability rating",
-      "zh": "阻燃等级",
-      "vi": "Cấp chống cháy",
-      "th": "ระดับการหน่วงไฟ"
-     },
-     "UL94 VTM-0"
-    ]
-   },
-   {
-    "cells": [
-     {
-      "en": "Environmental compliance",
-      "zh": "环保合规",
-      "vi": "Tuân thủ môi trường",
-      "th": "การปฏิบัติตามด้านสิ่งแวดล้อม"
-     },
-     {
-      "en": "REACH and RoHS",
-      "zh": "REACH 与 RoHS",
-      "vi": "REACH và RoHS",
-      "th": "REACH และ RoHS"
-     }
-    ]
-   }
-  ]
- },
- "brand": "polyonics",
- "industry": "pcb"
+  },
+  "certifications": {
+    "en": ["UL94 V-0 (File E338081)", "UL 969 Recognized (File MH19503)", "REACH compliant", "RoHS compliant"],
+    "zh": ["UL94 V-0（文件 E338081）", "UL 969 认可（文件 MH19503）", "符合 REACH", "符合 RoHS"],
+    "vi": ["UL94 V-0 (File E338081)", "UL 969 công nhận (File MH19503)", "Tuân thủ REACH", "Tuân thủ RoHS"],
+    "th": ["UL94 V-0 (ไฟล์ E338081)", "UL 969 รับรอง (ไฟล์ MH19503)", "เป็นไปตาม REACH", "เป็นไปตาม RoHS"]
+  }
 }

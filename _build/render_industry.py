@@ -84,6 +84,14 @@ CSS = """
 .wceye{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#1A56DB}
 .wcsec h2{font-size:24px;margin:8px 0 14px;color:#143C96}
 .wcov p{color:#41506e;font-size:15.5px;line-height:1.75;max-width:74ch;margin:0 0 12px}
+.wcvp{max-width:1080px;margin:0 auto;padding:4px 24px 26px}
+.wcvpgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.wcvpcard{background:#f4f7fd;border:1px solid #e6ecf7;border-radius:14px;padding:22px 20px}
+.wcvpic{width:42px;height:42px;color:#1A56DB;margin-bottom:12px}
+.wcvpic svg{width:42px;height:42px;display:block}
+.wcvpcard h3{font-size:19px;color:#143C96;margin:0 0 6px;font-weight:800}
+.wcvpcard p{font-size:14.5px;line-height:1.62;color:#41506e;margin:0}
+@media(max-width:760px){.wcvp{padding:2px 18px 16px}.wcvpgrid{grid-template-columns:1fr;gap:12px}.wcvpcard{padding:16px 16px}.wcvpcard h3{font-size:17px}.wcvpcard p{font-size:13.5px;line-height:1.55}}
 .wcfc{margin-top:16px}
 .wcfcrow{display:flex;align-items:flex-end;gap:2px;border-bottom:1px solid #dbe3f1}
 .wcar{flex:none;width:34px;height:46px;border:none;background:transparent;color:#143C96;font-size:26px;line-height:1;cursor:pointer;opacity:.6}
@@ -247,7 +255,19 @@ def build_lang(data, lang):
         hp.hero_cta(lang))
 
     overview = "".join("<p>%s</p>" % esc(p) for p in L(data["overview"], lang))
+
+    # optional Strong / Smooth / Versatile value-props band (icon + title + desc)
+    vp_html = ""
+    vps = data.get("value_props")
+    if vps:
+        cards = "".join(
+            ('<div class="wcvpcard"><div class="wcvpic">%s</div><h3>%s</h3><p>%s</p></div>')
+            % (v.get("icon", ""), esc(L(v["title"], lang)), esc(L(v["desc"], lang)))
+            for v in vps)
+        vp_html = '<section class="wcvp"><div class="wcvpgrid">%s</div></section>' % cards
+
     body = ('<section class="wcsec wcov"><div class="wceye">%s</div><h2>%s</h2>%s</section>'
+            + vp_html +
             '<section class="wcsec"><div class="wceye">Products</div><h2>%s</h2>'
             '<div class="wcfc"><div class="wcfcrow">'
             '<button class="wcar" onclick="wcScroll(-1)">&lsaquo;</button>'

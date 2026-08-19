@@ -1,0 +1,104 @@
+{
+  "slug": "hp-l85",
+  "source": "ETIA-TECH HP-L85 Technical Data Sheet",
+  "langs": ["en", "zh", "vi", "th"],
+  "banner": "",
+  "brand": "heatproof",
+  "industry": "steel",
+  "product_img": "",
+  "title": {
+    "en": "HP-L85 — Heat-Resistant Stainless-Steel Foil Tag (up to 700 °C)",
+    "zh": "HP-L85 — 耐高温不锈钢箔吊牌（最高 700 °C）",
+    "vi": "HP-L85 — Thẻ lá thép không gỉ chịu nhiệt (đến 700 °C)",
+    "th": "HP-L85 — แท็กฟอยล์สแตนเลสทนความร้อน (สูงสุด 700 °C)"
+  },
+  "tagline": {
+    "en": "Thin stainless-steel foil tag with an inorganic white printing layer — thermal-transfer printable and heat-resistant to 700 °C for metal-product management through heat treatment.",
+    "zh": "薄型不锈钢箔吊牌，配无机白色印刷层 —— 可热转印，耐热 700 °C，用于金属制品在热处理全过程的管理。",
+    "vi": "Thẻ lá thép không gỉ mỏng với lớp in trắng vô cơ — in truyền nhiệt, chịu nhiệt 700 °C để quản lý sản phẩm kim loại qua xử lý nhiệt.",
+    "th": "แท็กฟอยล์สแตนเลสบางพร้อมชั้นพิมพ์สีขาวอนินทรีย์ — พิมพ์ถ่ายเทความร้อนได้ ทนความร้อน 700 °C สำหรับการจัดการผลิตภัณฑ์โลหะตลอดการอบชุบความร้อน"
+  },
+  "positioning": {
+    "en": "HP-L85 is a thin-layer HP-Series tag built on a stainless-steel foil core (50 ± 1 µm) with an inorganic white printing layer (10 ± 2 µm). It is thermal-transfer printable and withstands heat up to 700 °C (700 °C × 6 hr) — for identification and traceability of metal products through heat-treatment processing across the steel, aluminum, non-ferrous-metal and metal-processing industries.",
+    "zh": "HP-L85 是一款薄型 HP 系列吊牌，以不锈钢箔为芯材（50 ± 1 µm），配无机白色印刷层（10 ± 2 µm）。可热转印，耐热达 700 °C（700 °C × 6 小时）—— 用于钢铁、铝、有色金属与金属加工行业中金属制品在热处理全过程的标识与追溯。",
+    "vi": "HP-L85 là thẻ HP-Series lớp mỏng trên lõi lá thép không gỉ (50 ± 1 µm) với lớp in trắng vô cơ (10 ± 2 µm). In truyền nhiệt và chịu nhiệt đến 700 °C (700 °C × 6 giờ) — để nhận diện và truy xuất sản phẩm kim loại qua xử lý nhiệt trong ngành thép, nhôm, kim loại màu và gia công kim loại.",
+    "th": "HP-L85 เป็นแท็ก HP-Series แบบชั้นบางบนแกนฟอยล์สแตนเลส (50 ± 1 µm) พร้อมชั้นพิมพ์สีขาวอนินทรีย์ (10 ± 2 µm) พิมพ์ถ่ายเทความร้อนได้และทนความร้อนถึง 700 °C (700 °C × 6 ชม.) — สำหรับการระบุและตรวจสอบย้อนกลับผลิตภัณฑ์โลหะตลอดการอบชุบในอุตสาหกรรมเหล็ก อะลูมิเนียม โลหะนอกกลุ่มเหล็ก และการแปรรูปโลหะ"
+  },
+  "features": {
+    "en": [
+      "Thin-layer tag construction",
+      "Thermal-transfer printable (YS-540 or YS-4A ribbon)",
+      "High heat resistance up to 700 °C",
+      "Stainless-steel foil core with an inorganic white printing layer"
+    ],
+    "zh": [
+      "薄型吊牌结构",
+      "可热转印（YS-540 或 YS-4A 碳带）",
+      "高耐热，达 700 °C",
+      "不锈钢箔芯材，配无机白色印刷层"
+    ],
+    "vi": [
+      "Cấu tạo thẻ lớp mỏng",
+      "In truyền nhiệt (ribbon YS-540 hoặc YS-4A)",
+      "Chịu nhiệt cao đến 700 °C",
+      "Lõi lá thép không gỉ với lớp in trắng vô cơ"
+    ],
+    "th": [
+      "โครงสร้างแท็กแบบชั้นบาง",
+      "พิมพ์ถ่ายเทความร้อนได้ (ริบบอน YS-540 หรือ YS-4A)",
+      "ทนความร้อนสูงถึง 700 °C",
+      "แกนฟอยล์สแตนเลสพร้อมชั้นพิมพ์สีขาวอนินทรีย์"
+    ]
+  },
+  "spec_table": {
+    "headers": {
+      "en": ["Property", "Value"],
+      "zh": ["属性", "参数"],
+      "vi": ["Thuộc tính", "Giá trị"],
+      "th": ["คุณสมบัติ", "ค่า"]
+    },
+    "rows": [
+      {"cells": [
+        {"en": "Heat resistance", "zh": "耐热", "vi": "Chịu nhiệt", "th": "ทนความร้อน"},
+        {"en": "700 °C (700 °C × 6 hr)", "zh": "700 °C（700 °C × 6 小时）", "vi": "700 °C (700 °C × 6 giờ)", "th": "700 °C (700 °C × 6 ชม.)"}]},
+      {"cells": [
+        {"en": "Tag core", "zh": "吊牌芯材", "vi": "Lõi thẻ", "th": "แกนแท็ก"},
+        {"en": "Stainless steel foil (50 ± 1 µm)", "zh": "不锈钢箔（50 ± 1 µm）", "vi": "Lá thép không gỉ (50 ± 1 µm)", "th": "ฟอยล์สแตนเลส (50 ± 1 µm)"}]},
+      {"cells": [
+        {"en": "Printing layer", "zh": "印刷层", "vi": "Lớp in", "th": "ชั้นพิมพ์"},
+        {"en": "Inorganic white coating (10 ± 2 µm)", "zh": "无机白色涂层（10 ± 2 µm）", "vi": "Phủ trắng vô cơ (10 ± 2 µm)", "th": "เคลือบขาวอนินทรีย์ (10 ± 2 µm)"}]},
+      {"cells": [
+        {"en": "Printing", "zh": "打印", "vi": "In ấn", "th": "การพิมพ์"},
+        {"en": "Thermal transfer — YS-540 or YS-4A ribbon", "zh": "热转印 —— YS-540 或 YS-4A 碳带", "vi": "In truyền nhiệt — ribbon YS-540 hoặc YS-4A", "th": "พิมพ์ถ่ายเทความร้อน — ริบบอน YS-540 หรือ YS-4A"}]}
+    ],
+    "notes": {
+      "en": ["Values are typical, not specifications; verify against the datasheet and by application testing."],
+      "zh": ["数值为典型值，非规格值；请以数据表并经应用测试确认。"],
+      "vi": ["Giá trị là điển hình, không phải thông số kỹ thuật; hãy xác minh theo datasheet và thử nghiệm ứng dụng."],
+      "th": ["ค่าเป็นค่าทั่วไป ไม่ใช่สเปก โปรดตรวจสอบกับเอกสารข้อมูลและการทดสอบการใช้งาน"]
+    }
+  },
+  "applications": {
+    "en": [
+      "Metal-product management under heat treatment up to 700 °C",
+      "Steel, aluminum and non-ferrous-metal industries",
+      "Metal-processing industry"
+    ],
+    "zh": [
+      "热处理达 700 °C 的金属制品管理",
+      "钢铁、铝与有色金属行业",
+      "金属加工行业"
+    ],
+    "vi": [
+      "Quản lý sản phẩm kim loại khi xử lý nhiệt đến 700 °C",
+      "Ngành thép, nhôm và kim loại màu",
+      "Ngành gia công kim loại"
+    ],
+    "th": [
+      "การจัดการผลิตภัณฑ์โลหะภายใต้การอบชุบถึง 700 °C",
+      "อุตสาหกรรมเหล็ก อะลูมิเนียม และโลหะนอกกลุ่มเหล็ก",
+      "อุตสาหกรรมการแปรรูปโลหะ"
+    ]
+  },
+  "certifications": {"en": [], "zh": [], "vi": [], "th": []}
+}

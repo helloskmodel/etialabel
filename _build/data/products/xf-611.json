@@ -1,258 +1,135 @@
 {
   "slug": "xf-611",
-  "source": "Polyonics product brochure (PCB Labels)",
-  "langs": [
-    "en",
-    "zh",
-    "vi",
-    "th"
-  ],
+  "code": "XF-611FR",
+  "source": "Polyonics XF-611FR Technical Data Sheet",
+  "langs": ["en", "zh", "vi", "th"],
   "banner": "",
   "brand": "polyonics",
-  "industry": "pcb",
+  "industry": "cable",
   "product_img": "",
   "title": {
-    "en": "XF-611 — 1.5 mil Semi-gloss white Polyester PCB Label",
-    "zh": "XF-611 — 1.5 mil 半光白聚酯PCB 标签",
-    "vi": "XF-611 — Nhãn PCB polyester Trắng bán bóng 1.5 mil",
-    "th": "XF-611 — ฉลาก PCBโพลีเอสเตอร์ สีขาวกึ่งเงา 1.5 mil"
+    "en": "XF-611FR — 1.5 mil Flame-Retardant Polyester Label (UL94 V-0)",
+    "zh": "XF-611FR — 1.5 mil 阻燃聚酯标签（UL94 V-0）",
+    "vi": "XF-611FR — Nhãn Polyester chống cháy 1.5 mil (UL94 V-0)",
+    "th": "XF-611FR — ฉลากโพลีเอสเตอร์หน่วงไฟ 1.5 mil (UL94 V-0)"
   },
   "tagline": {
-    "en": "Polyester thermal-transfer label for PCB and electronics identification — high-temperature stable, chemical- and abrasion-resistant.",
-    "zh": "聚酯热转印标签，用于 PCB 与电子标识 —— 高温稳定，耐化学与耐磨。",
-    "vi": "Nhãn in nhiệt polyester cho nhận diện PCB và điện tử — ổn định nhiệt cao, kháng hóa chất và mài mòn.",
-    "th": "ฉลากพิมพ์ถ่ายเทความร้อนโพลีเอสเตอร์สำหรับการระบุ PCB และอิเล็กทรอนิกส์ — เสถียรอุณหภูมิสูง ทนสารเคมีและการขัดถู"
+    "en": "1.5 mil white polyester flame-retardant label rated UL94 V-0 and UL 969 recognized — for electronics, battery and product identification up to 150 °C.",
+    "zh": "1.5 mil 白色聚酯阻燃标签，UL94 V-0 认证并获 UL 969 认可 —— 用于电子、电池与产品标识，耐受 150 °C。",
+    "vi": "Nhãn polyester trắng chống cháy 1.5 mil đạt UL94 V-0 và được UL 969 công nhận — cho điện tử, pin và nhận diện sản phẩm đến 150 °C.",
+    "th": "ฉลากโพลีเอสเตอร์สีขาวหน่วงไฟ 1.5 mil ได้รับ UL94 V-0 และการรับรอง UL 969 — สำหรับอิเล็กทรอนิกส์ แบตเตอรี่ และการระบุผลิตภัณฑ์ถึง 150 °C"
   },
   "positioning": {
-    "en": "POLYONICS XF-611 is a 1.5 mil (38µm) polyester thermal-transfer label with a high-temperature acrylic pressure-sensitive adhesive and a high-opacity semi-gloss white topcoat. It stays dimensionally stable and legible through reflow, wave-solder and aqueous cleaning — for reliable PCB and electronics identification. It is UL94 VTM-0 flame-retardant.",
-    "zh": "POLYONICS XF-611 采用1.5 mil（38µm）聚酯，配高温丙烯酸压敏胶与高遮盖半光白面涂层。经回流焊、波峰焊与水洗仍尺寸稳定、字迹清晰 —— 可靠标识 PCB 与电子产品。 具 UL94 VTM-0 阻燃性。",
-    "vi": "POLYONICS XF-611 là nhãn in nhiệt polyester 1.5 mil (38µm) với keo acrylic PSA chịu nhiệt cao và lớp phủ trắng bán bóng độ mờ cao. Ổn định kích thước và rõ nét qua reflow, hàn sóng và rửa nước — nhận diện PCB và điện tử đáng tin cậy. Chống cháy UL94 VTM-0.",
-    "th": "POLYONICS XF-611 เป็นฉลากพิมพ์ถ่ายเทความร้อน โพลีเอสเตอร์ 1.5 mil (38µm) พร้อมกาว PSA อะคริลิกทนร้อนสูงและท็อปโค้ตสีขาวกึ่งเงาทึบสูง คงเสถียรและอ่านได้ผ่านรีโฟลว์ เวฟโซลเดอร์ และการล้างน้ำ — ระบุ PCB และอิเล็กทรอนิกส์ได้อย่างเชื่อถือได้ หน่วงไฟ UL94 VTM-0"
+    "en": "POLYONICS XF-611FR is a 1.5 mil (38 µm) white polyester film with a flame-retardant permanent acrylic adhesive and a high-opacity semi-gloss white topcoat, specifically designed to be flame retardant to the UL94 V-0 standard. It is UL 969 recognized, dimensionally stable up to and exceeding 125 °C, and chemically resistant when printed with a recommended ribbon — for electronic product identification, battery labels and product/asset tracking.",
+    "zh": "POLYONICS XF-611FR 是一款 1.5 mil（38 µm）白色聚酯薄膜，配阻燃永久丙烯酸胶与高遮盖半光白面涂层，专为达到 UL94 V-0 阻燃标准而设计。获 UL 969 认可，在 125 °C 及以上仍尺寸稳定，配合推荐碳带打印时耐化学 —— 适用于电子产品标识、电池标签与产品/资产追踪。",
+    "vi": "POLYONICS XF-611FR là màng polyester trắng 1.5 mil (38 µm) với keo acrylic vĩnh viễn chống cháy và lớp phủ trắng bán bóng độ đục cao, thiết kế chống cháy đạt tiêu chuẩn UL94 V-0. Được UL 969 công nhận, ổn định kích thước đến và vượt 125 °C, kháng hóa chất khi in bằng ribbon khuyến nghị — cho nhận diện sản phẩm điện tử, nhãn pin và theo dõi sản phẩm/tài sản.",
+    "th": "POLYONICS XF-611FR เป็นฟิล์มโพลีเอสเตอร์สีขาว 1.5 mil (38 µm) พร้อมกาวอะคริลิกถาวรหน่วงไฟและท็อปโค้ตสีขาวกึ่งเงาความทึบสูง ออกแบบให้หน่วงไฟตามมาตรฐาน UL94 V-0 ได้รับการรับรอง UL 969 เสถียรเชิงมิติถึงและเกิน 125 °C และทนสารเคมีเมื่อพิมพ์ด้วยริบบอนที่แนะนำ — สำหรับการระบุผลิตภัณฑ์อิเล็กทรอนิกส์ ฉลากแบตเตอรี่ และการติดตามผลิตภัณฑ์/ทรัพย์สิน"
   },
   "features": {
     "en": [
-      "Thermal-transfer printable, high-opacity semi-gloss white topcoat",
-      "Dimensionally stable across its rated temperature range",
-      "Chemical, abrasion and solvent resistant",
-      "Flame-retardant — UL94 VTM-0 rated",
-      "Meets BSS 7238 / FAR 25.853 (aerospace flammability)",
-      "UL969 Recognized label material",
-      "REACH and RoHS compliant"
+      "Flame-retardant polyester — meets the UL94 V-0 standard (File E338081)",
+      "UL 969 recognized for marking and labeling systems (File MH19503)",
+      "1.5 mil white polyester film, semi-gloss high-opacity topcoat",
+      "Rated −40 to 150 °C; dimensionally stable up to and exceeding 125 °C",
+      "Smear- and chemical-resistant when printed with a recommended ribbon",
+      "High-resolution thermal-transfer or flexographic printing"
     ],
     "zh": [
-      "热转印高遮盖半光白面涂层",
-      "在额定温度范围内尺寸稳定",
-      "耐化学、耐磨、耐溶剂",
-      "阻燃 —— UL94 VTM-0 认证",
-      "满足 BSS 7238 / FAR 25.853（航空阻燃）",
-      "UL969 认证标签材料",
-      "符合 REACH 与 RoHS"
+      "阻燃聚酯 —— 达 UL94 V-0 标准（文件 E338081）",
+      "获 UL 969 标识与标签系统认可（文件 MH19503）",
+      "1.5 mil 白色聚酯薄膜，半光高遮盖面涂层",
+      "额定 −40 至 150 °C；125 °C 及以上尺寸稳定",
+      "配合推荐碳带打印时抗涂抹、耐化学",
+      "高分辨率热转印或柔版打印"
     ],
     "vi": [
-      "Lớp phủ trắng bán bóng độ mờ cao, in truyền nhiệt",
-      "Ổn định kích thước trong dải nhiệt định mức",
-      "Kháng hóa chất, mài mòn và dung môi",
-      "Chống cháy — đạt UL94 VTM-0",
-      "Đạt BSS 7238 / FAR 25.853 (chống cháy hàng không)",
-      "Vật liệu nhãn được UL969 công nhận",
-      "Tuân thủ REACH và RoHS"
+      "Polyester chống cháy — đạt tiêu chuẩn UL94 V-0 (File E338081)",
+      "Được UL 969 công nhận cho hệ thống đánh dấu và ghi nhãn (File MH19503)",
+      "Màng polyester trắng 1.5 mil, lớp phủ bán bóng độ đục cao",
+      "Định mức −40 đến 150 °C; ổn định kích thước đến và vượt 125 °C",
+      "Chống nhòe và kháng hóa chất khi in bằng ribbon khuyến nghị",
+      "In truyền nhiệt hoặc flexo độ phân giải cao"
     ],
     "th": [
-      "ท็อปโค้ตสีขาวกึ่งเงาทึบสูง พิมพ์ถ่ายเทความร้อนได้",
-      "เสถียรมิติในช่วงอุณหภูมิที่กำหนด",
-      "ทนสารเคมี การขัดถู และตัวทำละลาย",
-      "หน่วงไฟ — ได้รับ UL94 VTM-0",
-      "ผ่าน BSS 7238 / FAR 25.853 (การติดไฟการบิน)",
-      "วัสดุฉลากที่ได้รับการรับรอง UL969",
-      "สอดคล้อง REACH และ RoHS"
+      "โพลีเอสเตอร์หน่วงไฟ — ผ่านมาตรฐาน UL94 V-0 (ไฟล์ E338081)",
+      "ได้รับการรับรอง UL 969 สำหรับระบบทำเครื่องหมายและติดฉลาก (ไฟล์ MH19503)",
+      "ฟิล์มโพลีเอสเตอร์สีขาว 1.5 mil ท็อปโค้ตกึ่งเงาความทึบสูง",
+      "พิกัด −40 ถึง 150 °C เสถียรเชิงมิติถึงและเกิน 125 °C",
+      "ทนการเลอะและสารเคมีเมื่อพิมพ์ด้วยริบบอนที่แนะนำ",
+      "พิมพ์ถ่ายเทความร้อนหรือเฟล็กโซความละเอียดสูง"
     ]
   },
   "spec_table": {
     "headers": {
-      "en": [
-        "Property",
-        "Value"
-      ],
-      "zh": [
-        "属性",
-        "参数"
-      ],
-      "vi": [
-        "Thuộc tính",
-        "Giá trị"
-      ],
-      "th": [
-        "คุณสมบัติ",
-        "ค่า"
-      ]
+      "en": ["Property", "Value"],
+      "zh": ["属性", "参数"],
+      "vi": ["Thuộc tính", "Giá trị"],
+      "th": ["คุณสมบัติ", "ค่า"]
     },
     "rows": [
-      {
-        "cells": [
-          {
-            "en": "Film",
-            "zh": "面材",
-            "vi": "Màng",
-            "th": "ฟิล์ม"
-          },
-          {
-            "en": "1.5 mil (38µm) Polyester",
-            "zh": "1.5 mil（38µm）聚酯",
-            "vi": "Polyester 1.5 mil (38µm)",
-            "th": "โพลีเอสเตอร์ 1.5 mil (38µm)"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Topcoat / finish",
-            "zh": "面涂层 / 表面",
-            "vi": "Lớp phủ / bề mặt",
-            "th": "ท็อปโค้ต / พื้นผิว"
-          },
-          {
-            "en": "Semi-gloss white",
-            "zh": "半光白",
-            "vi": "Trắng bán bóng",
-            "th": "สีขาวกึ่งเงา"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Adhesive",
-            "zh": "胶粘剂",
-            "vi": "Keo",
-            "th": "กาว"
-          },
-          {
-            "en": "High-temperature acrylic PSA, 1.1 mil (28 µm) acrylic",
-            "zh": "高温丙烯酸压敏胶，1.1 mil (28 µm) acrylic",
-            "vi": "Keo acrylic PSA chịu nhiệt cao, 1.1 mil (28 µm) acrylic",
-            "th": "กาว PSA อะคริลิกทนร้อนสูง 1.1 mil (28 µm) acrylic"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Temperature",
-            "zh": "温度",
-            "vi": "Nhiệt độ",
-            "th": "อุณหภูมิ"
-          },
-          {
-            "en": "−40 to 150 °C",
-            "zh": "−40 to 150 °C",
-            "vi": "−40 to 150 °C",
-            "th": "−40 to 150 °C"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Compliance",
-            "zh": "合规",
-            "vi": "Tuân thủ",
-            "th": "การรับรอง"
-          },
-          {
-            "en": "UL94 VTM-0 · BSS 7238 / FAR 25.853 · UL969 · REACH · RoHS",
-            "zh": "UL94 VTM-0 · BSS 7238 / FAR 25.853 · UL969 · REACH · RoHS",
-            "vi": "UL94 VTM-0 · BSS 7238 / FAR 25.853 · UL969 · REACH · RoHS",
-            "th": "UL94 VTM-0 · BSS 7238 / FAR 25.853 · UL969 · REACH · RoHS"
-          }
-        ]
-      },
-      {
-        "cells": [
-          {
-            "en": "Printing",
-            "zh": "打印",
-            "vi": "In ấn",
-            "th": "การพิมพ์"
-          },
-          {
-            "en": "Thermal transfer — full-resin ribbon recommended",
-            "zh": "热转印 —— 建议全树脂碳带",
-            "vi": "In truyền nhiệt — khuyến nghị ribbon full-resin",
-            "th": "พิมพ์ถ่ายเทความร้อน — แนะนำริบบอน full-resin"
-          }
-        ]
-      }
+      {"cells": [
+        {"en": "Film", "zh": "面材", "vi": "Màng", "th": "ฟิล์ม"},
+        {"en": "1.5 mil (38 µm) polyester, semi-gloss white", "zh": "1.5 mil（38 µm）聚酯，半光白", "vi": "Polyester 1.5 mil (38 µm), trắng bán bóng", "th": "โพลีเอสเตอร์ 1.5 mil (38 µm) สีขาวกึ่งเงา"}]},
+      {"cells": [
+        {"en": "Face / adhesive / total", "zh": "面层 / 胶 / 总厚", "vi": "Mặt / keo / tổng", "th": "หน้า / กาว / รวม"},
+        {"en": "1.5 mil (38 µm) / 1 mil (25 µm) / 2.5 mil (63 µm)", "zh": "1.5 mil（38 µm）/ 1 mil（25 µm）/ 2.5 mil（63 µm）", "vi": "1.5 mil (38 µm) / 1 mil (25 µm) / 2.5 mil (63 µm)", "th": "1.5 mil (38 µm) / 1 mil (25 µm) / 2.5 mil (63 µm)"}]},
+      {"cells": [
+        {"en": "Flammability", "zh": "阻燃", "vi": "Chống cháy", "th": "การหน่วงไฟ"},
+        {"en": "UL94 V-0 — Pass", "zh": "UL94 V-0 —— 通过", "vi": "UL94 V-0 — Đạt", "th": "UL94 V-0 — ผ่าน"}]},
+      {"cells": [
+        {"en": "Adhesion (stainless steel)", "zh": "粘着力（不锈钢）", "vi": "Độ bám (thép không gỉ)", "th": "การยึดเกาะ (สแตนเลส)"},
+        {"en": "≥ 37 oz/in (20 min) · ≥ 42 oz/in (24 hr)", "zh": "≥ 37 oz/in（20 分）· ≥ 42 oz/in（24 小时）", "vi": "≥ 37 oz/in (20 phút) · ≥ 42 oz/in (24 giờ)", "th": "≥ 37 oz/in (20 นาที) · ≥ 42 oz/in (24 ชม.)"}]},
+      {"cells": [
+        {"en": "Temperature", "zh": "温度", "vi": "Nhiệt độ", "th": "อุณหภูมิ"},
+        "−40 to 150 °C"]},
+      {"cells": [
+        {"en": "Opacity", "zh": "遮盖率", "vi": "Độ đục", "th": "ความทึบ"},
+        "≥ 80%"]},
+      {"cells": [
+        {"en": "Printing", "zh": "打印", "vi": "In ấn", "th": "การพิมพ์"},
+        {"en": "Thermal transfer — Armor AXR 7+, ITW B324, Ricoh B110CR, DNP R510 HF", "zh": "热转印 —— Armor AXR 7+、ITW B324、Ricoh B110CR、DNP R510 HF", "vi": "In truyền nhiệt — Armor AXR 7+, ITW B324, Ricoh B110CR, DNP R510 HF", "th": "พิมพ์ถ่ายเทความร้อน — Armor AXR 7+, ITW B324, Ricoh B110CR, DNP R510 HF"}]}
     ],
     "notes": {
-      "en": [
-        "Summary specification from the Polyonics product brochure — request the model datasheet for full adhesion, thickness and durability data."
-      ],
-      "zh": [
-        "摘自 Polyonics 产品手册的概要规格 —— 完整粘着、厚度与耐久数据请索取该型号数据表。"
-      ],
-      "vi": [
-        "Thông số tóm tắt từ brochure Polyonics — yêu cầu datasheet của model để có dữ liệu độ bám, độ dày và độ bền đầy đủ."
-      ],
-      "th": [
-        "ข้อมูลจำเพาะโดยสรุปจากโบรชัวร์ Polyonics — ขอเอกสารข้อมูลรุ่นสำหรับข้อมูลการยึดเกาะ ความหนา และความทนทานฉบับเต็ม"
-      ]
+      "en": ["UL 969 File MH19503 · UL 94 File E338081. Values are typical, not specifications; verify against the datasheet and by application testing."],
+      "zh": ["UL 969 文件 MH19503 · UL 94 文件 E338081。数值为典型值，非规格值；请以数据表并经应用测试确认。"],
+      "vi": ["UL 969 File MH19503 · UL 94 File E338081. Giá trị là điển hình, không phải thông số kỹ thuật; hãy xác minh theo datasheet và thử nghiệm ứng dụng."],
+      "th": ["UL 969 ไฟล์ MH19503 · UL 94 ไฟล์ E338081 ค่าเป็นค่าทั่วไป ไม่ใช่สเปก โปรดตรวจสอบกับเอกสารข้อมูลและการทดสอบการใช้งาน"]
     }
   },
   "applications": {
     "en": [
-      "PCB identification",
-      "Electronic component and IC tracking",
-      "Product ID and asset tracking",
-      "Identification through high-temperature and harsh-chemical processes"
+      "Electronic product identification labels",
+      "Battery labels where flame, chemical and high-temperature exposure may result in fire",
+      "Tracking labels for mobile hand-held devices",
+      "Small label applications requiring high-resolution printing",
+      "Product ID and asset tracking"
     ],
     "zh": [
-      "PCB 标识",
-      "电子元器件与 IC 追溯",
-      "产品标识与资产追踪",
-      "耐高温与强化学工艺的标识"
+      "电子产品标识标签",
+      "存在火焰、化学与高温起火风险的电池标签",
+      "移动手持设备追踪标签",
+      "需要高分辨率打印的小标签应用",
+      "产品标识与资产追踪"
     ],
     "vi": [
-      "Nhận diện PCB",
-      "Theo dõi linh kiện và IC",
-      "ID sản phẩm và theo dõi tài sản",
-      "Nhận diện qua quy trình nhiệt cao và hóa chất mạnh"
+      "Nhãn nhận diện sản phẩm điện tử",
+      "Nhãn pin nơi phơi nhiễm lửa, hóa chất và nhiệt độ cao có thể gây cháy",
+      "Nhãn theo dõi thiết bị cầm tay",
+      "Ứng dụng nhãn nhỏ cần in độ phân giải cao",
+      "Nhận diện sản phẩm và theo dõi tài sản"
     ],
     "th": [
-      "การระบุ PCB",
-      "การติดตามชิ้นส่วนและ IC",
-      "ID สินค้าและการติดตามทรัพย์สิน",
-      "การระบุผ่านกระบวนการอุณหภูมิสูงและสารเคมีรุนแรง"
+      "ฉลากระบุผลิตภัณฑ์อิเล็กทรอนิกส์",
+      "ฉลากแบตเตอรี่ที่การสัมผัสไฟ สารเคมี และอุณหภูมิสูงอาจทำให้เกิดไฟไหม้",
+      "ฉลากติดตามอุปกรณ์พกพา",
+      "งานฉลากขนาดเล็กที่ต้องการพิมพ์ความละเอียดสูง",
+      "การระบุผลิตภัณฑ์และติดตามทรัพย์สิน"
     ]
   },
   "certifications": {
-    "en": [
-      "UL94 VTM-0",
-      "BSS 7238 / FAR 25.853",
-      "UL969 Recognized",
-      "REACH compliant",
-      "RoHS compliant"
-    ],
-    "zh": [
-      "UL94 VTM-0",
-      "BSS 7238 / FAR 25.853",
-      "UL969 认证",
-      "符合 REACH",
-      "符合 RoHS"
-    ],
-    "vi": [
-      "UL94 VTM-0",
-      "BSS 7238 / FAR 25.853",
-      "Được UL969 công nhận",
-      "Tuân thủ REACH",
-      "Tuân thủ RoHS"
-    ],
-    "th": [
-      "UL94 VTM-0",
-      "BSS 7238 / FAR 25.853",
-      "ได้รับการรับรอง UL969",
-      "สอดคล้อง REACH",
-      "สอดคล้อง RoHS"
-    ]
+    "en": ["UL94 V-0 (File E338081)", "UL 969 Recognized (File MH19503)", "REACH compliant", "RoHS compliant"],
+    "zh": ["UL94 V-0（文件 E338081）", "UL 969 认可（文件 MH19503）", "符合 REACH", "符合 RoHS"],
+    "vi": ["UL94 V-0 (File E338081)", "UL 969 công nhận (File MH19503)", "Tuân thủ REACH", "Tuân thủ RoHS"],
+    "th": ["UL94 V-0 (ไฟล์ E338081)", "UL 969 รับรอง (ไฟล์ MH19503)", "เป็นไปตาม REACH", "เป็นไปตาม RoHS"]
   }
 }

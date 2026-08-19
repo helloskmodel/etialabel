@@ -571,14 +571,14 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 NAV_ITEMS = [("Home", "/", "home"),
              ("Product", "/products/", "products"),
              ("Solutions", "/applications/", "applications"),
-             ("Insight", "/insights/", "insights"),
+             ("Resources", "/insights/", "insights"),
              ("Service", "/service/", "service")]
-NAV_ZH = {"Home":"首页","Products":"产品","Product":"产品","Industry":"行业","Solutions":"方案","Case Studies":"案例","Application Notes":"应用笔记","Application":"应用","News":"新闻","Insights":"洞察","Insight":"洞察","Service":"服务",
+NAV_ZH = {"Home":"首页","Products":"产品","Product":"产品","Industry":"行业","Solutions":"方案","Case Studies":"案例","Application Notes":"应用笔记","Application":"应用","News":"新闻","Insights":"资讯","Insight":"资讯","Resource":"资讯","Resources":"资讯","Service":"服务",
           "Industries":"行业","About ETIA":"关于 ETIA","Contact":"联系我们"}
 # 4-language nav / footer labels (keyed by the English label)
-NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Product":"Sản phẩm","Industry":"Ngành","Solutions":"Giải pháp","Case Studies":"Nghiên cứu điển hình","Application Notes":"Ghi chú ứng dụng","Application":"Ứng dụng","News":"Tin tức","Insight":"Kiến thức","Service":"Dịch vụ",
+NAV_VI = {"Home":"Trang chủ","Products":"Sản phẩm","Product":"Sản phẩm","Industry":"Ngành","Solutions":"Giải pháp","Case Studies":"Nghiên cứu điển hình","Application Notes":"Ghi chú ứng dụng","Application":"Ứng dụng","News":"Tin tức","Insight":"Tài nguyên","Resource":"Tài nguyên","Resources":"Tài nguyên","Service":"Dịch vụ",
           "Industries":"Ngành","About ETIA":"Về ETIA","Contact":"Liên hệ"}
-NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Product":"ผลิตภัณฑ์","Industry":"อุตสาหกรรม","Solutions":"โซลูชัน","Case Studies":"กรณีศึกษา","Application Notes":"แอปพลิเคชันโน้ต","Application":"การใช้งาน","News":"ข่าว","Insight":"ความรู้","Service":"บริการ",
+NAV_TH = {"Home":"หน้าแรก","Products":"ผลิตภัณฑ์","Product":"ผลิตภัณฑ์","Industry":"อุตสาหกรรม","Solutions":"โซลูชัน","Case Studies":"กรณีศึกษา","Application Notes":"แอปพลิเคชันโน้ต","Application":"การใช้งาน","News":"ข่าว","Insight":"แหล่งข้อมูล","Resource":"แหล่งข้อมูล","Resources":"แหล่งข้อมูล","Service":"บริการ",
           "Industries":"อุตสาหกรรม","About ETIA":"เกี่ยวกับ ETIA","Contact":"ติดต่อ"}
 def navlab(lang, t):
     if lang == "zh": return NAV_ZH.get(t, t)
@@ -800,7 +800,7 @@ def nav_html(lang, active, path="/", langs=None):
     return '<nav><div class="navlinks">%s</div>%s%s</nav>' % (items, sw, NAV_TOGGLE)
 
 FOOTER_LINKS = [("Home", "/"), ("Product", u_products()), ("Solutions", "/applications/"),
-                ("Insight", "/insights/"), ("Service", "/service/"),
+                ("Resources", "/insights/"), ("Service", "/service/"),
                 ("About ETIA", "/about/"), ("Contact", "/contact/")]
 FOOTER_I18N = {
  "heads": {"en": ("Navigation","Legal","Contact"), "zh": ("导航","法律","联系"),
@@ -1415,9 +1415,9 @@ def home_nav(lang):
     prod=simple_dropdown(lang, "Product", "/products/", PROD_AXES[1][3], False, lf, descs=INDUSTRY_MENU_DESC, brands=BRAND_MENU)
     home_lbl={"en":"Home","zh":"首页","vi":"Trang chủ","th":"หน้าแรก"}.get(lang,"Home")
     home_link='<a href="%s">%s</a>'%(lf("/"),esc(home_lbl))
-    # top nav after Product: Solutions, Insight, Service
+    # top nav after Product: Solutions, Resources, Service
     app_lbl={"en":"Solutions","zh":"方案","vi":"Giải pháp","th":"โซลูชัน"}.get(lang,"Solutions")
-    ins_lbl={"en":"Insight","zh":"洞察","vi":"Kiến thức","th":"ความรู้"}.get(lang,"Insight")
+    ins_lbl={"en":"Resources","zh":"资讯","vi":"Tài nguyên","th":"แหล่งข้อมูล"}.get(lang,"Resources")
     sv_lbl={"en":"Service","zh":"服务","vi":"Dịch vụ","th":"บริการ"}.get(lang,"Service")
     links=('<a href="%s">%s</a><a href="%s">%s</a><a href="%s">%s</a>'%(
         lf("/applications/"),esc(app_lbl),lf("/insights/"),esc(ins_lbl),lf("/service/"),esc(sv_lbl)))
@@ -1426,10 +1426,10 @@ def home_nav(lang):
 
 def home_footer(lang):
     T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
-    # footer nav mirrors the top nav: Product · Application · Insight · Service
+    # footer nav mirrors the top nav: Product · Application · Resources · Service
     foot_nav=[("/products/",{"en":"Product","zh":"产品","vi":"Sản phẩm","th":"ผลิตภัณฑ์"}.get(lang,"Product")),
               ("/applications/",{"en":"Application","zh":"应用","vi":"Ứng dụng","th":"การใช้งาน"}.get(lang,"Application")),
-              ("/insights/",{"en":"Insight","zh":"洞察","vi":"Kiến thức","th":"ความรู้"}.get(lang,"Insight")),
+              ("/insights/",{"en":"Resources","zh":"资讯","vi":"Tài nguyên","th":"แหล่งข้อมูล"}.get(lang,"Resources")),
               ("/service/",{"en":"Service","zh":"服务","vi":"Dịch vụ","th":"บริการ"}.get(lang,"Service"))]
     navl="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,h),esc(l)) for h,l in foot_nav)
     legal="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,p),t) for p,t in
@@ -1566,7 +1566,7 @@ HOME2 = {
 }
 
 # Green corner labels + banner background images (fill BG with clean COS URLs later)
-HOME_TABS = [("HOME", "首页"), ("PRODUCTS", "产品"), ("APPLICATIONS", "应用"), ("INSIGHTS", "洞察"), ("SERVICE", "服务")]
+HOME_TABS = [("HOME", "首页"), ("PRODUCTS", "产品"), ("APPLICATIONS", "应用"), ("RESOURCES", "资讯"), ("SERVICE", "服务")]
 # Page hero banners (COS). .hbanner::before lays the brand-blue gradient over the photo.
 _BN = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/BANNER/"
 BANNER_HOME = _BN + "HOMEPAGE-BANNER"
@@ -1591,8 +1591,15 @@ def hero_cta(lang):
         Lx(lang, "/contact/"),
         esc(P(lang, "Talk to us", "联系我们", "Liên hệ với chúng tôi", "ติดต่อเรา")))
 
-def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
-    st = ' style="background-image:url(%s)"' % esc(bg) if bg else ""
+def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u, bg_pos=""):
+    # .hbanner defaults to background-position:center right; some banners (e.g. the
+    # PCB banner, whose imagery sits along the bottom) need an override so the
+    # meaningful part isn't cropped out.
+    if bg:
+        pos = (';background-position:%s' % bg_pos) if bg_pos else ""
+        st = ' style="background-image:url(%s)%s"' % (esc(bg), pos)
+    else:
+        st = ""
     # Every part except the headline + slogan is optional; the contact button is
     # the single unified hero CTA on every banner (b1/b2 params are ignored).
     eyebrow_html = ('<div class="eyebrow">%s</div>' % esc(eyebrow)) if eyebrow else ""
@@ -1603,8 +1610,8 @@ def _banner_html(linkfn, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
             '<p class="hsub">%s</p>%s%s</div></section>') % (
         st, eyebrow_html, esc(title), esc(sub), body_html, btns_html)
 
-def home_banner(lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u):
-    return _banner_html(home_hlink, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u)
+def home_banner(lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u, bg_pos=""):
+    return _banner_html(home_hlink, lang, bg, eyebrow, title, sub, body, b1, b1u, b2, b2u, bg_pos)
 
 _COS = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/"
 # Home hero (etiatech.com house style): trust pill + navy headline + green sub +
@@ -1617,7 +1624,7 @@ HOME_HERO_ITEMS = [
     ("/industries/automotive-labeling-solutions/", _COS + "INDUSTRY/AUTO-VINCODE",
      ("Automotive", "汽车", "Ô tô", "ยานยนต์"),
      ("VIN, engine, tire & battery", "VIN、发动机、轮胎与电池", "VIN, động cơ, lốp & pin", "VIN เครื่องยนต์ ยาง แบตเตอรี่")),
-    ("/industries/medical-pharmaceutical-labeling-solutions/", _COS + "INDUSTRY/MEDICAL-196C",
+    ("/industries/medical-pharmaceutical-labeling-solutions/", _COS + "INDUSTRY/MEDICAL-BANNERNEW",
      ("Medical & Pharma", "医疗医药", "Y tế & Dược", "การแพทย์และยา"),
      ("Cryogenic, blood-bag & lab", "低温冻存、血袋与实验室", "Đông lạnh, túi máu & phòng lab", "อุณหภูมิต่ำ ถุงเลือด และแล็บ"),
      "center bottom"),  # show the bottle at the bottom; crop the top
@@ -1627,7 +1634,7 @@ HOME_HERO_ITEMS = [
     ("/industries/steel-metal-ceramic-labeling-solutions/", _COS + "INDUSTRY/STEEL-HP900",
      ("Steel & Metal", "钢铁金属", "Thép & Kim loại", "เหล็กและโลหะ"),
      ("Direct-apply up to 1000 °C", "高温直贴，最高 1000 °C", "Dán trực tiếp tới 1000 °C", "ติดตรงสูงสุด 1000 °C")),
-    ("/industries/outdoor-energy-labeling-solutions/", _COS + "INDUSTRY/OUTDOOR-SOLARSUN",
+    ("/industries/outdoor-energy-labeling-solutions/", _COS + "INDUSTRY/OUTDOOR-WARNING%20OILDRUM",
      ("Outdoor & Energy", "户外能源", "Ngoài trời & Năng lượng", "กลางแจ้งและพลังงาน"),
      ("Weatherable for years outdoors", "户外耐候多年", "Chịu thời tiết nhiều năm", "ทนสภาพอากาศได้หลายปี")),
 ]
@@ -2181,17 +2188,25 @@ def build_about(lang):
 
 def build_contact(lang):
     zh=(lang=="zh")
+    # offices: (name P-args, sub-line P-args, contact string)
     offices=[
-      ("Shanghai","上海","China","中国","+86 151 2119 7091 · 400 990 8448"),
-      ("Hong Kong","香港","ETIA-TECH (ASIA) Co., Limited","ETIA-TECH (ASIA) Co., Limited","etialabel@etia-tech.com"),
-      ("Bangkok","曼谷","Thailand","泰国","+66 811 746 947"),
-      ("Bac Ninh","北宁","Vietnam","越南","+84 344 590 091"),
+      (("Shanghai","上海","Thượng Hải","เซี่ยงไฮ้"),("China","中国","Trung Quốc","จีน"),
+       "+86 139 1833 9249 · 400 990 8448 · +86-21-6432-7144"),
+      (("Hong Kong","香港","Hồng Kông","ฮ่องกง"),
+       ("ETIA-TECH (ASIA) Co., Limited",)*4,"etialabel@etia-tech.com"),
+      (("Bangkok","曼谷","Bangkok","กรุงเทพฯ"),("Thailand","泰国","Thái Lan","ไทย"),
+       "+66 811 746 947"),
+      (("Bac Ninh","北宁","Bắc Ninh","บั๊กนิญ"),("Vietnam","越南","Việt Nam","เวียดนาม"),
+       "+84 961 530 153"),
     ]
     cards="".join('<div class="card"><h3>%s</h3><p>%s</p><div class="rows"><b>%s</b></div></div>'%(
-        esc(z if zh else e), esc(rz if zh else r), esc(c)) for e,z,r,rz,c in offices)
-    ask=("告诉我们:粘贴表面、温度(贴标时与后续最高)、化学暴露、打印方式与标签尺寸,我们推荐材料并安排样品。" if zh
-         else "Tell us: the surface, temperature (at application and later peak), chemical exposure, print method and label size — we'll recommend the material and arrange samples.")
-    def lb(e,z): return z if zh else e
+        esc(P(lang,*nm)), esc(P(lang,*sub)), esc(c)) for nm,sub,c in offices)
+    ask=P(lang,
+        "Tell us: the surface, temperature (at application and later peak), chemical exposure, print method and label size — we'll recommend the material and arrange samples.",
+        "告诉我们:粘贴表面、温度(贴标时与后续最高)、化学暴露、打印方式与标签尺寸,我们推荐材料并安排样品。",
+        "Cho chúng tôi biết: bề mặt, nhiệt độ (khi dán và đỉnh sau đó), tiếp xúc hóa chất, phương pháp in và kích thước nhãn — chúng tôi sẽ đề xuất vật liệu và sắp xếp mẫu.",
+        "บอกเรา: พื้นผิว อุณหภูมิ (ตอนติดและจุดสูงสุดภายหลัง) การสัมผัสสารเคมี วิธีพิมพ์ และขนาดฉลาก — เราจะแนะนำวัสดุและจัดเตรียมตัวอย่าง")
+    def lb(en,zh_,vi="",th=""): return P(lang,en,zh_,vi or en,th or en)
     form_css=('<style>.cform{max-width:760px}'
       '.cfg{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px;margin:12px 0 18px}'
       '.cform label{display:flex;flex-direction:column;font-size:13px;font-weight:700;color:var(--blue-deep);gap:6px}'
@@ -2200,33 +2215,41 @@ def build_contact(lang):
       '.cform input:focus,.cform textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}'
       '@media(max-width:560px){.cfg{grid-template-columns:1fr}}</style>')
     form=(form_css+'<form class="cform" onsubmit="return etaContact(event)"><div class="cfg">'
-      '<label>'+esc(lb("Name *","姓名 *"))+'<input name="name" required></label>'
-      '<label>'+esc(lb("Company","公司"))+'<input name="company"></label>'
-      '<label>'+esc(lb("Email *","邮箱 *"))+'<input type="email" name="email" required></label>'
-      '<label>'+esc(lb("Phone *","电话 *"))+'<input name="phone" required></label>'
-      '<label class="full">'+esc(lb("Product / Interest","产品 / 需求"))+'<input name="product" id="cf_product"></label>'
-      '<label class="full">'+esc(lb("Your application — surface, temperature, chemistry, print method, label size","您的应用 —— 表面、温度、化学环境、打印方式、标签尺寸"))+'<textarea name="message" rows="4"></textarea></label>'
-      '</div><button class="btn pri" type="submit">'+esc(lb("Send to ETIA","发送给 ETIA"))+'</button></form>')
+      '<label>'+esc(lb("Name *","姓名 *","Tên *","ชื่อ *"))+'<input name="name" required></label>'
+      '<label>'+esc(lb("Company","公司","Công ty","บริษัท"))+'<input name="company"></label>'
+      '<label>'+esc(lb("Email *","邮箱 *","Email *","อีเมล *"))+'<input type="email" name="email" required></label>'
+      '<label>'+esc(lb("Phone *","电话 *","Điện thoại *","โทรศัพท์ *"))+'<input name="phone" required></label>'
+      '<label class="full">'+esc(lb("Product / Interest","产品 / 需求","Sản phẩm / Nhu cầu","สินค้า / ความสนใจ"))+'<input name="product" id="cf_product"></label>'
+      '<label class="full">'+esc(lb("Your application — surface, temperature, chemistry, print method, label size","您的应用 —— 表面、温度、化学环境、打印方式、标签尺寸","Ứng dụng của bạn — bề mặt, nhiệt độ, hóa chất, phương pháp in, kích thước nhãn","การใช้งานของคุณ — พื้นผิว อุณหภูมิ สารเคมี วิธีพิมพ์ ขนาดฉลาก"))+'<textarea name="message" rows="4"></textarea></label>'
+      '</div><button class="btn pri" type="submit">'+esc(lb("Send to ETIA","发送给 ETIA","Gửi cho ETIA","ส่งถึง ETIA"))+'</button></form>')
     form_js=('<script>(function(){var p=new URLSearchParams(location.search),pr=p.get("product"),ty=p.get("type"),f=document.getElementById("cf_product");if(f&&pr){f.value=pr+(ty?" ("+ty+")":"");}})();'
       'function etaContact(e){e.preventDefault();var f=e.target,g=function(n){var el=f.querySelector("[name="+n+"]");return el?el.value.trim():"";};'
       'var nm=g("name"),em=g("email"),ph=g("phone");'
-      'if(!nm||!em||!ph){alert("'+lb("Please fill in name, email and phone.","请填写姓名、邮箱和电话。")+'");return false;}'
+      'if(!nm||!em||!ph){alert("'+lb("Please fill in name, email and phone.","请填写姓名、邮箱和电话。","Vui lòng điền tên, email và điện thoại.","กรุณากรอกชื่อ อีเมล และโทรศัพท์")+'");return false;}'
       'var s="ETIA enquiry"+(g("product")?" - "+g("product"):"");'
       'var b="Name: "+nm+"\\nCompany: "+g("company")+"\\nEmail: "+em+"\\nPhone: "+ph+"\\nProduct: "+g("product")+"\\n\\n"+g("message");'
       'window.location.href="mailto:etialabel@etia-tech.com?subject="+encodeURIComponent(s)+"&body="+encodeURIComponent(b);return false;}</script>')
     body=('<section class="blk"><div class="wrap"><h2>%s</h2><div class="sub">%s</div>%s%s'
           '<p class="muted" style="font-size:13px;margin-top:10px">%s <a href="mailto:etialabel@etia-tech.com">etialabel@etia-tech.com</a></p></div></section>'
           '<section class="blk" style="background:var(--tint-blue)"><div class="wrap"><h2>%s</h2><div class="grid">%s</div></div></section>')%(
-        lb("Tell us your application","告诉我们您的应用"), esc(ask), form, form_js,
-        lb("Prefer email? Write to","更习惯邮件？请联系"),
-        lb("Offices","办公室"), cards)
-    crumb=[("Home","/"),("Contact","/contact/")]
+        lb("Tell us your application","告诉我们您的应用","Cho chúng tôi biết ứng dụng của bạn","บอกเราเกี่ยวกับการใช้งานของคุณ"),
+        esc(ask), form, form_js,
+        lb("Prefer email? Write to","更习惯邮件？请联系","Thích email hơn? Viết cho","สะดวกอีเมล? เขียนถึง"),
+        lb("Offices","办公室","Văn phòng","สำนักงาน"), cards)
+    contact_lbl=P(lang,"Contact","联系我们","Liên hệ","ติดต่อ")
+    crumb=[(P(lang,"Home","首页","Trang chủ","หน้าแรก"),"/"),(contact_lbl,"/contact/")]
     write(lang,"/contact/",page(lang,"/contact/",
-        ("联系 ETIA | ETIA" if zh else "Contact ETIA | ETIA"),
-        ("联系 ETIA:上海 · 香港 · 曼谷 · 北宁 · etialabel@etia-tech.com。提供工况,我们匹配材料并寄样。" if zh
-         else "Contact ETIA — Shanghai · Hong Kong · Bangkok · Bac Ninh · etialabel@etia-tech.com. Share your application and we'll match the material and send samples."),
-        ("联系我们" if zh else "Contact ETIA"),
-        ("提供工况,我们匹配材料并寄样验证。" if zh else "Share your application — we'll match the material and validate by sample."),
+        P(lang,"Contact ETIA | ETIA","联系 ETIA | ETIA","Liên hệ ETIA | ETIA","ติดต่อ ETIA | ETIA"),
+        P(lang,
+          "Contact ETIA — Shanghai · Hong Kong · Bangkok · Bac Ninh · etialabel@etia-tech.com. Share your application and we'll match the material and send samples.",
+          "联系 ETIA:上海 · 香港 · 曼谷 · 北宁 · etialabel@etia-tech.com。提供工况,我们匹配材料并寄样。",
+          "Liên hệ ETIA — Thượng Hải · Hồng Kông · Bangkok · Bắc Ninh · etialabel@etia-tech.com. Chia sẻ ứng dụng của bạn, chúng tôi sẽ ghép vật liệu và gửi mẫu.",
+          "ติดต่อ ETIA — เซี่ยงไฮ้ · ฮ่องกง · กรุงเทพฯ · บั๊กนิญ · etialabel@etia-tech.com แบ่งปันการใช้งานของคุณ เราจะจับคู่วัสดุและส่งตัวอย่าง"),
+        P(lang,"Contact ETIA","联系我们","Liên hệ ETIA","ติดต่อ ETIA"),
+        P(lang,"Share your application — we'll match the material and validate by sample.",
+          "提供工况,我们匹配材料并寄样验证。",
+          "Chia sẻ ứng dụng của bạn — chúng tôi sẽ ghép vật liệu và xác thực bằng mẫu.",
+          "แบ่งปันการใช้งานของคุณ — เราจะจับคู่วัสดุและตรวจสอบด้วยตัวอย่าง"),
         body, crumb, active="contact"))
     if lang=="en": track("/contact/","core")
 
@@ -2265,29 +2288,29 @@ def build_tech(lang):
     if lang=="en": track("/technical-resources/","core")
 
 SERVICE_OFFICES=[
-  ("Shanghai","上海","+86 151 2119 7091 · 400 990 8448"),
+  ("Shanghai","上海","+86 139 1833 9249 · 400 990 8448"),
   ("Hong Kong","香港","etialabel@etia-tech.com"),
   ("Bangkok","曼谷","+66 811 746 947"),
-  ("Bac Ninh","北宁","+84 344 590 091"),
+  ("Bac Ninh","北宁","+84 961 530 153"),
 ]
 # Regional contact cards for the Service page ("Contact your regional ETIA team").
 # addr = [native line, english line] (native omitted for HK). role = (en, zh).
 SERVICE_REGIONS=[
-  {"region":("China · Shanghai","中国 · 上海","Trung Quốc · Thượng Hải","จีน · เซี่ยงไฮ้"),"name":"Mark Tang","role":("","","",""),
+  {"region":("China · Shanghai","中国 · 上海","Trung Quốc · Thượng Hải","จีน · เซี่ยงไฮ้"),"name":"Da Li","role":("","","",""),
    "addr":["上海市普陀区中江路 388 弄国盛中心 2 号楼 1903 室",
            "Rm. 1903, 2# Building, Guoson Centre, No. 388 Zhongjiang Rd, Putuo District, Shanghai, China"],
-   "phone":"400 990 8448 · +86-21-6432-7144 转 106","email":"Omnicure@etia-tech.com"},
-  {"region":("China · Hong Kong","中国 · 香港","Trung Quốc · Hồng Kông","จีน · ฮ่องกง"),"name":"Mark Tang","role":("","","",""),
+   "phone":"+86 139 1833 9249 · 400 990 8448 · +86-21-6432-7144","email":"etialabel@etia-tech.com"},
+  {"region":("China · Hong Kong","中国 · 香港","Trung Quốc · Hồng Kông","จีน · ฮ่องกง"),"name":"Da Li","role":("","","",""),
    "addr":["Room 1003, 10/F, Tower 1, Lippo Centre, 89 Queensway, Admiralty, Hong Kong"],
-   "phone":"+86 151 2119 7091","email":"Omnicure@etia-tech.com"},
+   "phone":"+86 139 1833 9249","email":"etialabel@etia-tech.com"},
   {"region":("Thailand · Bangkok","泰国 · 曼谷","Thái Lan · Bangkok","ไทย · กรุงเทพฯ"),"name":"Mr. Sompoch Ratchakom (Job)","role":("Sales Director","销售总监","Giám đốc Kinh doanh","ผู้อำนวยการฝ่ายขาย"),
    "addr":["22/41 เอช-เคป บิซ เซ็นเตอร์ ถนนสุขาภิบาล 2 แขวงประเวศ เขตประเวศ กรุงเทพฯ 10250",
            "22/41 H-Cape Biz Center, Sukhaphiban 2 Road, Prawet Subdistrict, Prawet District, Bangkok 10250, Thailand"],
-   "phone":"+66 811 746 947","email":"omnicure.th@gmail.com"},
-  {"region":("Vietnam · Bac Ninh","越南 · 北宁","Việt Nam · Bắc Ninh","เวียดนาม · บั๊กนิญ"),"name":"Tien Nguyen","role":("Technical Engineer","技术工程师","Kỹ sư Kỹ thuật","วิศวกรเทคนิค"),
+   "phone":"+66 811 746 947","email":"etialabel@etia-tech.com"},
+  {"region":("Vietnam · Bac Ninh","越南 · 北宁","Việt Nam · Bắc Ninh","เวียดนาม · บั๊กนิญ"),"name":"Trần Diệu Hoa","role":("Technical Engineer","技术工程师","Kỹ sư Kỹ thuật","วิศวกรเทคนิค"),
    "addr":["Số 10 đường Thanh Niên, Khu 5, Phường Võ Cường, Tỉnh Bắc Ninh, Việt Nam",
            "No. 10 Thanh Nien Street, Area 5, Vo Cuong Ward, Bac Ninh Province, Viet Nam"],
-   "phone":"+84 344 590 091","email":"omnicure.vn@gmail.com"},
+   "phone":"+84 961 530 153","email":"etialabel@etia-tech.com"},
 ]
 # 4 service images (one per commitment) on COS. quote() matches COS folder encoding.
 import urllib.parse as _up
@@ -2767,10 +2790,10 @@ def build_all():
     # Product nav dropdown. /products/ and /industries/ redirect to Home
     # (see write_redirects). Individual product & industry pages remain.
     build_about(lang)
-    build_contact(lang)
     # legal pages (general website template — client legal counsel should review)
     build_legal(lang)
   for lang in NAV_PILLAR_LANGS:  # Product / Solutions / Service pillars: all 4 languages
+    build_contact(lang)  # linked from the hero CTA on every page → must exist in all 4 languages
     build_products_landing(lang)  # nav pillar: Product (mega-menu-style landing)
     build_applications(lang)   # nav pillar: Solutions
     build_service(lang)

@@ -110,25 +110,13 @@
         "th": "หน่วงไฟระดับอุตสาหกรรม · คุ้มค่า"
       },
       "intro": {
-        "en": "Dual-layer flame-retardant PET stable at 150℃, SGS flame-retardant tested — the cost-effective mainstream choice for industrial use.",
-        "zh": "双层阻燃 PET，稳定耐 150℃工况，SGS 阻燃检测达标，工业阻燃高性价比主力款",
-        "vi": "PET chống cháy hai lớp ổn định ở 150°C, đã kiểm tra chống cháy SGS — lựa chọn chủ lực hiệu quả chi phí cho công nghiệp.",
-        "th": "PET หน่วงไฟสองชั้น เสถียรที่ 150°C ผ่านการทดสอบหน่วงไฟ SGS — ตัวเลือกหลักที่คุ้มค่าสำหรับงานอุตสาหกรรม"
+        "en": "1 mil matte white flame-retardant PET, stable from −40 to 150 °C — high-temperature- and solvent-resistant with strong adhesion for cable, wire and packaging identification.",
+        "zh": "1 mil 哑白阻燃 PET，−40 至 150 °C 稳定 —— 耐高温耐溶剂、粘着力强，用于线缆、线材与包装标识。",
+        "vi": "PET chống cháy trắng mờ 1 mil, ổn định từ −40 đến 150 °C — kháng nhiệt và dung môi, bám chắc cho nhận diện cáp, dây và bao bì.",
+        "th": "PET หน่วงไฟสีขาวด้าน 1 mil เสถียรตั้งแต่ −40 ถึง 150 °C — ทนความร้อนและตัวทำละลาย ยึดเกาะแน่น สำหรับระบุสายเคเบิล สายไฟ และบรรจุภัณฑ์"
       },
       "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/CABLE-2931",
       "products": [
-        {
-          "name": "E-2913",
-          "line": {
-            "en": "Ultra-thin dual-layer FR PET · 150℃ · UL94 VTM-0 · SGS tested",
-            "zh": "超薄双层阻燃 PET · 150℃ · UL94 VTM-0 · SGS 检测",
-            "vi": "PET chống cháy hai lớp siêu mỏng · 150°C · UL94 VTM-0 · kiểm tra SGS",
-            "th": "PET หน่วงไฟสองชั้นบางพิเศษ · 150°C · UL94 VTM-0 · ทดสอบ SGS"
-          },
-          "img": "",
-          "landing": true,
-          "slug": "e-2913"
-        },
         {
           "name": "E-2931",
           "line": {

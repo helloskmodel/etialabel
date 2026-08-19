@@ -381,8 +381,8 @@ INDUSTRY_BANNERS = {
     "auto":    _COS + "INDUSTRY/AUTO-BANNER",
     "cable":   _COS + "INDUSTRY/CABLE-BANNER",
     "steel":   _COS + "INDUSTRY/STEEL-BANNER",
-    "medical": _COS + "INDUSTRY/MEDICAL-BANNER",
-    "outdoor": _COS + "INDUSTRY/OURDOOR-BANNER",
+    "medical": _COS + "INDUSTRY/MEDICAL-BANNERNEW",
+    "outdoor": _COS + "INDUSTRY/OUTDOOR-BANNER",
 }
 # Per-industry banner crop, mirrored from the industry landing pages so a product
 # hero shows the same part of the shared banner image as its industry page.
@@ -392,7 +392,7 @@ INDUSTRY_BANNER_POS = {
 PRODUCT_INDUSTRY = {
     # PCB / electronics
     "apex": "pcb", "e-series": "pcb", "xf58": "pcb", "xf78": "pcb", "xf-603": "pcb",
-    "e-2712": "pcb", "e-2913": "pcb",
+    "e-2712": "pcb",
     # automotive
     "e-2512bl": "auto", "e-2813": "auto", "e-2814": "auto",
     # wire & cable
@@ -453,7 +453,10 @@ def build_lang(d, lang):
     # hardcoded PRODUCT_INDUSTRY map. It ALWAYS wins over any per-product "banner".
     # Only pages with no industry at all (the environment Solution pages) keep their
     # own banner. See product_industry() + the build audit that flags omissions.
-    banner = INDUSTRY_BANNERS.get(product_industry(d, slug), "") or d.get("banner", "")
+    # A product may set "banner_override" to a specific hero image that wins over
+    # the uniform industry banner (used sparingly, e.g. when the industry banner
+    # would contradict the page — E-4812 must not show a glass serum vial).
+    banner = d.get("banner_override", "") or INDUSTRY_BANNERS.get(product_industry(d, slug), "") or d.get("banner", "")
     # banner_pos: object-position override so a page can steer which part of the
     # photo shows. A product inherits its industry's crop (so the product hero is
     # aligned with the industry banner) unless it sets its own.
@@ -505,7 +508,7 @@ def build_lang(d, lang):
             img = ('<div class="pimg photo"><img src="%s" alt="" loading="lazy" '
                    'onerror="this.style.display=\'none\'"></div>') % esc(pimg)
         else:
-            img = '<div class="pimg lbl">%s</div>' % barcode_label_svg(_model_code(slug), brand_eyebrow(product_brand(d, slug)))
+            img = '<div class="pimg lbl">%s</div>' % barcode_label_svg(d.get("code") or _model_code(slug), brand_eyebrow(product_brand(d, slug)))
         body += section(ui["features"], ui["features"], '<div class="pfeat">%s%s</div>' % (img, ul(L(d["features"], lang), "ok")))
     if not is_solution and L(d.get("benefits", {}), lang):
         body += section(ui["benefits"], ui["benefits"], ul(L(d["benefits"], lang), "ok"))
@@ -548,7 +551,7 @@ def main():
     for slug in sorted(slugs):
         d = json.load(open(os.path.join(PDIR, slug + ".json"), encoding="utf-8"))
         ind = product_industry(d, slug)
-        eff_banner = INDUSTRY_BANNERS.get(ind, "") or d.get("banner", "")
+        eff_banner = d.get("banner_override", "") or INDUSTRY_BANNERS.get(ind, "") or d.get("banner", "")
         if slug not in SOLUTION_SLUGS:
             if not ind:
                 (unbannered if not eff_banner else misc).append(slug)

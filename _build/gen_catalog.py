@@ -47,7 +47,7 @@ IND_NAME = {
 APP_CATS = [
     ("esd",     {"en": "ESD / Anti-static", "zh": "防静电", "vi": "Chống tĩnh điện", "th": "ป้องกันไฟฟ้าสถิต"}, ["esd", "anti-static", "static-dissipative", "防静电", "静电"]),
     ("washreflow", {"en": "Wash & Reflow PI", "zh": "耐焊洗 PI", "vi": "Chịu rửa & reflow (PI)", "th": "ทนล้าง & รีโฟลว์ (PI)"}, ["reflow", "wave-solder", "wave solder", "wave soldering", "solder flux", "回流焊", "波峰焊", "焊洗", "过炉"]),
-    ("flame",   {"en": "Flame-Retardant", "zh": "阻燃", "vi": "Chống cháy", "th": "หน่วงไฟ"}, ["flame-retardant", "flame retardant", "ul94", "ul 94", "vtm-0", "halogen-free", "阻燃", "无卤"]),
+    ("flame",   {"en": "Flame-Retardant", "zh": "阻燃", "vi": "Chống cháy", "th": "หน่วงไฟ"}, ["flame-retardant", "flame retardant", "ul94", "ul 94", "vtm-0", "v-0", "阻燃"]),
     ("chem",    {"en": "Chemical-Resistant", "zh": "耐化学", "vi": "Kháng hóa chất", "th": "ทนสารเคมี"}, ["chemical-resistant", "chemical resistant", "solvent-resistant", "solvent resistant", "acid and alkali", "耐化学", "耐溶剂"]),
     ("steril",  {"en": "Sterilization", "zh": "灭菌", "vi": "Tiệt trùng", "th": "การฆ่าเชื้อ"}, ["sterilization", "sterilize", "autoclave", "gamma", "灭菌", "高压灭菌"]),
     ("laser",   {"en": "Laser-Markable", "zh": "激光可刻", "vi": "Khắc laser", "th": "แกะสลักด้วยเลเซอร์"}, ["laser-mark", "laser mark", "laser-etch", "laser etch", "laser engrav", "激光刻", "激光打"]),
@@ -188,6 +188,7 @@ def build_record(d):
         "industry": ind, "brand": brand, "apps": apps, "facestocks": facestocks,
         "temps": temps, "thick": thick, "color": color,
         "product_img": d.get("product_img", ""),
+        "code": d.get("code", ""),   # display model code override (e.g. XF-611FR)
         "blob": blob, "explicit": explicit,
     }
 
@@ -262,20 +263,27 @@ def build_lang(records, lang):
         if r.get("color"):
             chips += '<span class="cchip clr"><i style="background:%s"></i>%s</span>' % (
                 r["color"]["dot"], esc(L(r["color"]["lab"])))
+        # model-code tokens for precise part-number search — includes hyphenated
+        # and de-hyphenated forms of the slug and any display code (e.g. XF-611FR),
+        # so "e4812" and "e-4812" both resolve to the right product.
+        _cb = [r["slug"], r["slug"].replace("-", "")]
+        if r.get("code"):
+            _cb += [r["code"].lower(), r["code"].lower().replace("-", "")]
         data = {
             "industry": [r["industry"]] if r["industry"] else [],
             "brand": [r["brand"]], "app": r["apps"],
             "fs": [json.dumps(f, ensure_ascii=False) for f in r["facestocks"]],
             "thick": r["thick"], "temp": r["temps"], "q": r["blob"],
+            "code": " ".join(_cb),
         }
         img = r.get("product_img", "")
         if img and "/PRODUCT/" in img:
-            media = ('<div class="pcell-img photo"><img src="%s" alt="%s" loading="lazy" '
+            media = ('<div class="pcell-img photo"><img src="%s" alt="%s" loading="lazy" decoding="async" '
                      'onerror="this.closest(\'.pcell-img\').innerHTML=\'%s\'"></div>') % (
                 esc(img), esc(L(r["title"])),
-                barcode_label_svg(_model_code(r["slug"]), gp.brand_eyebrow(r["brand"])).replace("'", "&#39;"))
+                barcode_label_svg(r.get("code") or _model_code(r["slug"]), gp.brand_eyebrow(r["brand"])).replace("'", "&#39;"))
         else:
-            media = '<div class="pcell-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
+            media = '<div class="pcell-img lbl">%s</div>' % barcode_label_svg(r.get("code") or _model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
         cards += ('<a class="pcell" href="%s" data-f="%s">%s<div class="pcell-t">%s</div>'
                   '<div class="pcell-chips">%s</div>'
                   '<span class="pcell-go">%s</span></a>') % (
@@ -359,7 +367,10 @@ function cf(){
     try{ f=JSON.parse(el.getAttribute('data-f')); }catch(e){ f=null; }
     if(f){
       for(var g in sel){ if(!sel[g].some(function(v){return (f[g]||[]).indexOf(v)>=0;})){ok=false;break;} }
-      if(ok && terms.length){ ok=terms.every(function(t){return (f.q||'').indexOf(t)>=0;}); }
+      if(ok && terms.length){ ok=terms.every(function(t){
+        var td=t.replace(/-/g,'');
+        return (f.q||'').indexOf(t)>=0 || (f.code||'').replace(/-/g,'').indexOf(td)>=0;
+      }); }
     } else { ok=!active; }   /* unparseable card: show it unless a filter is active */
     el.style.display=ok?'':'none'; if(ok)n++;
   });
@@ -390,9 +401,17 @@ else document.addEventListener('DOMContentLoaded',cf);
 # Polyonics landing page — grouped by product FAMILY (SEM landing structure).
 POLY_SERIES = [
     {"key": "apex", "table": "pcb-labels", "tag": {"en": "APEX", "zh": "APEX", "vi": "APEX", "th": "APEX"},
-     "name": {"en": "APEX Series", "zh": "APEX 系列", "vi": "Dòng APEX", "th": "ซีรีส์ APEX"}},
-    {"key": "xf5", "table": "pcb-labels", "tag": {"en": "XF5", "zh": "XF5", "vi": "XF5", "th": "XF5"},
-     "name": {"en": "XF5 Series · PCB Polyimide", "zh": "XF5 系列 · PCB 聚酰亚胺", "vi": "Dòng XF5 · Polyimide PCB", "th": "ซีรีส์ XF5 · โพลีอิไมด์ PCB"}},
+     "name": {"en": "APEX Series", "zh": "APEX 系列", "vi": "Dòng APEX", "th": "ซีรีส์ APEX"},
+     "desc": {"en": "High-performance, solvent-resistant polyimide label series",
+              "zh": "高性能耐溶剂系列 PI 标签",
+              "vi": "Dòng nhãn polyimide kháng dung môi hiệu năng cao",
+              "th": "ซีรีส์ฉลากโพลีอิไมด์ทนตัวทำละลายประสิทธิภาพสูง"}},
+    {"key": "xf5", "table": "pcb-labels", "tag": {"en": "XF58", "zh": "XF58", "vi": "XF58", "th": "XF58"},
+     "name": {"en": "XF58 Series", "zh": "XF58 系列", "vi": "Dòng XF58", "th": "ซีรีส์ XF58"},
+     "desc": {"en": "High-temperature polyimide label series",
+              "zh": "耐高温系列 PI 标签",
+              "vi": "Dòng nhãn polyimide chịu nhiệt độ cao",
+              "th": "ซีรีส์ฉลากโพลีอิไมด์ทนอุณหภูมิสูง"}},
     {"key": "esd7", "table": "esd-safe", "tag": {"en": "XF7", "zh": "XF7", "vi": "XF7", "th": "XF7"},
      "name": {"en": "XF7 Series", "zh": "XF7 系列", "vi": "Dòng XF7", "th": "ซีรีส์ XF7"}},
     {"key": "cable", "table": "wire-cable", "tag": {"en": "Cable & Wire", "zh": "线缆", "vi": "Cáp & Dây", "th": "สายเคเบิล"},
@@ -406,7 +425,8 @@ _FAM_ESD7 = {"xf-781", "xf-782", "xf-784", "xf-731", "xf-732"}
 # "Flame-Retardant" small tag (no separate FR family).
 _FAM_CABLE = {"xf-300", "xf-302", "xf-603", "xf-611"}
 _FLAME = {"xf-603", "xf-611"}
-_FLAME_LABEL = {"en": "Flame-Retardant", "zh": "阻燃", "vi": "Chống cháy", "th": "หน่วงไฟ"}
+_FLAME_LABEL = {"en": "Flame-Retardant · UL94 V-0", "zh": "阻燃 · UL94 V-0",
+                "vi": "Chống cháy · UL94 V-0", "th": "หน่วงไฟ · UL94 V-0"}
 def poly_series_key(slug):
     if slug.startswith("xf-101") or slug.startswith("xf-102"): return "apex"
     if slug in _FAM_ESD7: return "esd7"
@@ -423,7 +443,7 @@ HP_SEGMENTS = [
     {"key": "ceramic", "name": {"en": "Ceramic Labels", "zh": "陶瓷标签", "vi": "Nhãn gốm", "th": "ฉลากเซรามิก"},
      "slugs": ["hp-cbr11", "hp-cbr13", "hp-cbr-cx2"]},
     {"key": "tags", "name": {"en": "Heat-Treatment Tags", "zh": "热处理吊牌", "vi": "Thẻ xử lý nhiệt", "th": "แท็กอบชุบความร้อน"},
-     "slugs": ["hp-l90", "hp-l80", "hp-m83"]},
+     "slugs": ["hp-l90", "hp-l85", "hp-l80", "hp-m83"]},
 ]
 # HEATPROOF brand (ETIA's own extreme-temperature line) — steel banner, grouped by temp tier.
 HP_BANNER = hp._COS + "INDUSTRY/STEEL-BANNER"
@@ -519,6 +539,7 @@ BRAND_CSS = """<style>
 .bsec .cnt{font-size:12px;font-weight:800;color:#1A56DB;background:#eaf1ff;border-radius:999px;padding:2px 10px}
 .bsec .tbl{margin-left:auto;font-size:13.5px;font-weight:800;color:#1A56DB;text-decoration:none;white-space:nowrap}
 .bsec .tbl:hover{text-decoration:underline}
+.bsec-desc{margin:-6px 0 14px;color:#5a6884;font-size:14px;font-weight:600;line-height:1.5}
 .bhead .eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#1A56DB}
 .bhead h1{font-family:var(--sans);font-weight:800;color:#143C96;font-size:clamp(30px,4vw,44px);margin:8px 0 8px}
 .bhead p{color:#51607e;font-size:16px;max-width:70ch;margin:0 0 8px}
@@ -756,11 +777,11 @@ def build_brand(records, lang, bkey):
         # A real product photo (under the COS PRODUCT/ folder) wins; every other
         # card falls back to the generated barcode-label tile.
         if img and "/PRODUCT/" in img:
-            media = ('<div class="bcard-img photo"><img src="%s" alt="%s" loading="lazy" '
+            media = ('<div class="bcard-img photo"><img src="%s" alt="%s" loading="lazy" decoding="async" '
                      'onerror="var p=this.parentNode;p.classList.add(\'ph\');p.innerHTML=\'<span>%s</span>\'"></div>') % (
                 esc(img), esc(L(r["title"])), esc(L(r["title"])))
         else:
-            media = '<div class="bcard-img lbl">%s</div>' % barcode_label_svg(_model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
+            media = '<div class="bcard-img lbl">%s</div>' % barcode_label_svg(r.get("code") or _model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
         # A short family tag (e.g. APEX) replaces the long tagline; flame-retardant
         # members (XF-603/XF-611) also carry a small "Flame-Retardant" tag.
         if tag:
@@ -786,16 +807,18 @@ def build_brand(records, lang, bkey):
     lede = ui["lede"].get(bkey, "")
     hero = None
     if bkey == "polyonics":
-        # brand hero banner (PCB banner + single green CTA) + client overview
+        # brand hero banner (PCB banner + single green CTA) + client overview.
+        # The PCB banner's imagery sits along the bottom, so crop to center bottom
+        # (matching the PCB industry/product pages) instead of the hbanner default.
         head = POLY_HEAD.get(lang) or POLY_HEAD["en"]
-        hero = hp.home_banner(lang, POLY_BANNER, ui["eyebrow"], head, lede, "", "", "", "", "")
+        hero = hp.home_banner(lang, POLY_BANNER, ui["eyebrow"], head, lede, "", "", "", "", "", "center bottom")
         paras = POLY_OVERVIEW.get(lang) or POLY_OVERVIEW["en"]
         ov_txt = ('<div class="bsechd">%s</div>%s' %
                   (esc(POLY_OVERVIEW_LABEL.get(lang) or POLY_OVERVIEW_LABEL["en"]),
                    "".join('<p class="bover">%s</p>' % esc(p) for p in paras)))
         cap = POLY_COOP_CAPTION.get(lang) or POLY_COOP_CAPTION["en"]
         ov_img = ('<figure class="bover-img"><img src="%s" alt="ETIA × Polyonics leadership" '
-                  'loading="lazy" onerror="this.closest(\'figure\').classList.add(\'noimg\')">'
+                  'loading="lazy" decoding="async" onerror="this.closest(\'figure\').classList.add(\'noimg\')">'
                   '<figcaption>%s</figcaption></figure>') % (esc(POLY_IMG), esc(cap))
         # Two children only (text block + image) so the 2-column grid lines up.
         overview = '<div class="bover-2col"><div class="bover-txt">%s</div>%s</div>' % (ov_txt, ov_img)
@@ -810,10 +833,13 @@ def build_brand(records, lang, bkey):
             tbl = hp.Lx(lang, "/products/polyonics/%s/" % s["table"])
             tag = s.get("tag", {})
             tag_l = (tag.get(lang) or tag.get("en")) if isinstance(tag, dict) else tag
+            ds = s.get("desc", {})
+            ds_l = (ds.get(lang) or ds.get("en")) if isinstance(ds, dict) else ds
+            desc_html = ('<p class="bsec-desc">%s</p>' % esc(ds_l)) if ds_l else ""
             sections += ('<div class="bsec"><h2>%s</h2><span class="cnt">%d</span>'
-                         '<a class="tbl" href="%s">%s</a></div><div class="bgrid">%s</div>') % (
+                         '<a class="tbl" href="%s">%s</a></div>%s<div class="bgrid">%s</div>') % (
                 esc(nm), len(members), tbl, esc(POLY_COMPARE.get(lang) or POLY_COMPARE["en"]),
-                "".join(card(r, tag_l) for r in members))
+                desc_html, "".join(card(r, tag_l) for r in members))
         body = BRAND_CSS + POLY_CAT_CSS + ('<div class="bwrap">%s%s</div>' % (overview, sections))
     elif bkey == "heatproof":
         # brand hero (steel banner) + overview + aisles grouped by temperature tier.
