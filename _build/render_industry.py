@@ -79,6 +79,7 @@ CSS = """
 .wchero .in{position:relative;z-index:2;max-width:1080px;margin:0 auto;width:100%;padding:40px 24px}
 .wchero .eye{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#8fe063}
 .wchero h1{color:#fff;font-family:var(--sans);font-weight:800;font-size:40px;letter-spacing:-.01em;margin:2px 0 10px;line-height:1.12;max-width:20em}
+html[lang="vi"] .wchero h1{font-size:30px;max-width:none}
 .wchero .slog{color:#eef3ff;font-size:18px;font-weight:700;margin:0;max-width:40em}
 .wcsec{max-width:1080px;margin:0 auto;padding:34px 24px}
 .wceye{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#1A56DB}
@@ -145,6 +146,7 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
   .wchero{min-height:250px}
   .wchero .in{padding:24px 18px}
   .wchero h1{font-size:27px;margin:2px 0 8px}
+  html[lang="vi"] .wchero h1{font-size:23px}
   .wchero .slog{font-size:15.5px}
   .wcsec{padding:20px 18px}
   .wcsec h2{font-size:20px;margin:6px 0 9px}

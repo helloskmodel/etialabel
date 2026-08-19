@@ -312,6 +312,15 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 .hbanner .btns .btn.sec{border-color:rgba(255,255,255,.6);color:#fff}
 .hbanner .btns .btn.sec:hover{background:#fff;color:var(--blue-deep)}
 @media(max-width:820px){.hbanner{min-height:250px}.hbanner h1{font-size:27px}.hbanner .hsub{font-size:15.5px}.hbanner .wrap{padding:34px 24px}}
+/* Vietnamese headlines run longer — shrink + widen so they stay on one line */
+html[lang="vi"] .hbanner h1,html[lang="vi"] .hero h1{font-size:30px;max-width:none}
+@media(max-width:820px){html[lang="vi"] .hbanner h1,html[lang="vi"] .hero h1{font-size:23px}}
+/* floating messaging button (LINE on TH pages, Zalo on VN pages) */
+.fabchat{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;gap:8px;height:54px;padding:0 20px 0 15px;border-radius:27px;color:#fff;font-family:var(--sans);font-weight:800;font-size:15px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.28);transition:transform .15s,box-shadow .15s}
+.fabchat:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.34);color:#fff}
+.fabchat svg{width:26px;height:26px;flex:none}
+.fabchat.line{background:#06C755}.fabchat.zalo{background:#0068FF}
+@media(max-width:600px){.fabchat{height:48px;padding:0 16px 0 12px;font-size:14px;right:14px;bottom:14px}.fabchat svg{width:23px;height:23px}}
 .hero{padding:60px 0 46px}
 .hero .eyebrow{margin-bottom:14px}
 .hero h1{font-family:var(--sans);font-weight:800;font-size:40px;line-height:1.12;letter-spacing:-.01em;text-align:left;text-wrap:balance;max-width:18em}
@@ -816,6 +825,15 @@ FOOTER_I18N = {
  "pc": {"en": ("Privacy","Cookies"), "zh": ("隐私","Cookie"),
         "vi": ("Bảo mật","Cookie"), "th": ("ความเป็นส่วนตัว","คุกกี้")},
 }
+def floating_contact(lang):
+    """Floating chat button — LINE on Thai pages, Zalo on Vietnamese pages, nothing elsewhere."""
+    bubble = ('<svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 3.4c-5.4 0-9.8 3.4-9.8 7.6 0 3.8 3.5 7 8.2 7.6.32.07.76.21.87.48.1.25.06.62.03.87 0 0-.11.68-.14.83-.04.25-.2.98.86.53 1.06-.44 5.7-3.35 7.78-5.74 1.43-1.56 2.11-3.14 2.11-4.9 0-4.2-4.4-7.6-9.8-7.6z"/></svg>')
+    if lang == "th":
+        return ('<a class="fabchat line" href="https://line.me/ti/p/~omnicurethailand" target="_blank" rel="noopener" aria-label="Add us on LINE">%s<span>LINE</span></a>' % bubble)
+    if lang == "vi":
+        return ('<a class="fabchat zalo" href="https://zalo.me/84961530153" target="_blank" rel="noopener" aria-label="Liên hệ qua Zalo">%s<span>Zalo</span></a>' % bubble)
+    return ""
+
 def footer_html(lang):
     heads = FOOTER_I18N["heads"].get(lang, FOOTER_I18N["heads"]["en"])
     legals = FOOTER_I18N["legal"].get(lang, FOOTER_I18N["legal"]["en"])
@@ -825,7 +843,7 @@ def footer_html(lang):
     legal = "".join('<li><a href="%s">%s</a></li>' % (Lx(lang, p), lt) for lt, p in
                     zip(legals, ["/privacy/","/cookies/","/terms/"]))
     return ("""<footer><div class="wrap">
-<div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%%20LOGO.jpg" alt="ETIA Label"></div>
+<div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/etialabel.jpg" alt="ETIA Label"></div>
 <div class="fg">
 <div><h5>%s</h5><ul>%s</ul></div>
 <div><h5>%s</h5><ul>%s</ul></div>
@@ -833,7 +851,7 @@ def footer_html(lang):
 Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)">%s</span></div>
 </div>""" % (heads[0], nav, heads[1], legal, heads[2], tag)) + """
 <div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span><span><a href="%s">%s</a> &nbsp; <a href="%s">%s</a></span></div>
-</div></footer>""" % (Lx(lang,"/privacy/"), pc[0], Lx(lang,"/cookies/"), pc[1])
+</div></footer>""" % (Lx(lang,"/privacy/"), pc[0], Lx(lang,"/cookies/"), pc[1]) + floating_contact(lang)
 
 TRUST_TITLES = {
  "en":["100% Quality Inspection","Application-Driven Solutions","Flexible Supply","Responsive Application Support"],
@@ -957,7 +975,7 @@ def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, acti
 <meta property="og:title" content="%s"><meta property="og:type" content="website"><meta property="og:site_name" content="ETIA Label">
 <style>%s</style>%s</head><body>
 <div class="topstrip"></div>
-<header><div class="wrap"><a class="logo" href="%s"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%%20LOGO.jpg" alt="ETIA Label"></a>%s</div></header>
+<header><div class="wrap"><a class="logo" href="%s"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/etialabel.jpg" alt="ETIA Label"></a>%s</div></header>
 <div class="wrap"><div class="crumb">%s</div></div>
 %s
 %s
@@ -1434,12 +1452,12 @@ def home_footer(lang):
     navl="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,h),esc(l)) for h,l in foot_nav)
     legal="".join('<li><a href="%s">%s</a></li>'%(home_hlink(lang,p),t) for p,t in
                   [("/privacy/","Privacy Policy"),("/cookies/","Cookie Policy"),("/terms/","Terms of Use")])
-    return ('<footer><div class="wrap"><div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%%20LOGO.jpg" alt="ETIA Label"></div>'
+    return ('<footer><div class="wrap"><div class="flogo"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/etialabel.jpg" alt="ETIA Label"></div>'
             '<div class="fg"><div><h5>%s</h5><ul>%s</ul></div><div><h5>%s</h5><ul>%s</ul></div>'
             '<div><h5>%s</h5><a class="email" href="mailto:etialabel@etia-tech.com">etialabel@etia-tech.com</a><br><br>'
             'Shanghai · Hong Kong · Bangkok · Bac Ninh</div></div>'
             '<div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span></div></div></footer>') % (
-        esc(nh),navl,esc(lh),legal,esc(ch))
+        esc(nh),navl,esc(lh),legal,esc(ch)) + floating_contact(lang)
 
 def home_hreflang(path):
     t=[]
@@ -1972,7 +1990,7 @@ def build_home(lang):
 <meta property="og:title" content="%s"><meta property="og:type" content="website"><meta property="og:site_name" content="ETIA Label">
 <style>%s</style>%s</head><body>
 <div class="topstrip"></div>
-<header><div class="wrap"><a class="logo" href="%s"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/ETIA%%20LOGO.jpg" alt="ETIA Label"></a>%s</div></header>
+<header><div class="wrap"><a class="logo" href="%s"><img src="https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/etialabel.jpg" alt="ETIA Label"></a>%s</div></header>
 %s
 %s
 <script>
@@ -2296,14 +2314,14 @@ SERVICE_OFFICES=[
 # Regional contact cards for the Service page ("Contact your regional ETIA team").
 # addr = [native line, english line] (native omitted for HK). role = (en, zh).
 SERVICE_REGIONS=[
-  {"region":("China · Shanghai","中国 · 上海","Trung Quốc · Thượng Hải","จีน · เซี่ยงไฮ้"),"name":"Da Li","role":("","","",""),
+  {"region":("China · Shanghai","中国 · 上海","Trung Quốc · Thượng Hải","จีน · เซี่ยงไฮ้"),"name":"Da Li","role":("Sales Manager","销售经理","Quản lý Kinh doanh","ผู้จัดการฝ่ายขาย"),
    "addr":["上海市普陀区中江路 388 弄国盛中心 2 号楼 1903 室",
            "Rm. 1903, 2# Building, Guoson Centre, No. 388 Zhongjiang Rd, Putuo District, Shanghai, China"],
    "phone":"+86 139 1833 9249 · 400 990 8448 · +86-21-6432-7144","email":"etialabel@etia-tech.com"},
-  {"region":("China · Hong Kong","中国 · 香港","Trung Quốc · Hồng Kông","จีน · ฮ่องกง"),"name":"Da Li","role":("","","",""),
+  {"region":("China · Hong Kong","中国 · 香港","Trung Quốc · Hồng Kông","จีน · ฮ่องกง"),"name":"Da Li","role":("Sales Manager","销售经理","Quản lý Kinh doanh","ผู้จัดการฝ่ายขาย"),
    "addr":["Room 1003, 10/F, Tower 1, Lippo Centre, 89 Queensway, Admiralty, Hong Kong"],
    "phone":"+86 139 1833 9249","email":"etialabel@etia-tech.com"},
-  {"region":("Thailand · Bangkok","泰国 · 曼谷","Thái Lan · Bangkok","ไทย · กรุงเทพฯ"),"name":"Mr. Sompoch Ratchakom (Job)","role":("Sales Director","销售总监","Giám đốc Kinh doanh","ผู้อำนวยการฝ่ายขาย"),
+  {"region":("Thailand · Bangkok","泰国 · 曼谷","Thái Lan · Bangkok","ไทย · กรุงเทพฯ"),"name":"Mr. Sompoch Ratchakom (Job)","role":("Sales Manager","销售经理","Quản lý Kinh doanh","ผู้จัดการฝ่ายขาย"),
    "addr":["22/41 เอช-เคป บิซ เซ็นเตอร์ ถนนสุขาภิบาล 2 แขวงประเวศ เขตประเวศ กรุงเทพฯ 10250",
            "22/41 H-Cape Biz Center, Sukhaphiban 2 Road, Prawet Subdistrict, Prawet District, Bangkok 10250, Thailand"],
    "phone":"+66 811 746 947","email":"etialabel@etia-tech.com"},
