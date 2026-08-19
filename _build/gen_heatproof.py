@@ -1722,18 +1722,23 @@ def home_hero(lang):
         style = (' style="object-position:%s"' % esc(pos)) if pos else ""
         # First slide: eager + high priority so the hero paints immediately (no blank flash).
         fp = ' fetchpriority="high"' if k==0 else ''
-        slides += ('<a class="hhslide%s" href="%s" aria-label="%s"><img src="%s" alt="%s" loading="%s"%s%s onerror="this.style.display=\'none\'"></a>') % (
+        slides += ('<a class="hhslide%s" href="%s" aria-label="%s"><img src="%s" alt="%s" loading="%s"%s%s onerror="this.closest(\'.hhslide\').classList.add(\'dead\')"></a>') % (
             on, home_hlink(lang,url), esc(nm[j]), esc(img), esc(nm[j]), "eager" if k==0 else "lazy", fp, style)
-        dots += '<i class="%s"></i>' % ("on" if k==0 else "")
+        dots += '<i></i>'
     check = '<span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>'
     script = ("<script>(function(){var w=document.getElementById('hhwin');if(!w)return;"
-              "var s=w.querySelectorAll('.hhslide'),d=w.querySelectorAll('.hhdots i'),i=0;"
-              "function go(n){i=((n%s.length)+s.length)%s.length;"
-              "s.forEach(function(x,k){x.classList.toggle('on',k===i);});"
-              "d.forEach(function(x,k){x.classList.toggle('on',k===i);});}"
-              "d.forEach(function(x,k){x.addEventListener('click',function(){go(k);});});"
+              "var A=[].slice.call(w.querySelectorAll('.hhslide')),"
+              "D=[].slice.call(w.querySelectorAll('.hhdots i')),i=0;"
+              "function alive(k){return !!A[k]&&!A[k].classList.contains('dead');}"
+              "function nextAlive(from){for(var n=1;n<=A.length;n++){var k=(from+n)%A.length;if(alive(k))return k;}return alive(from)?from:-1;}"
+              "function show(k){if(k<0||!alive(k))return;i=k;"
+              "A.forEach(function(x,j){x.classList.toggle('on',j===k);});"
+              "D.forEach(function(x,j){x.style.display=alive(j)?'':'none';x.classList.toggle('on',j===k);});}"
+              "D.forEach(function(x,k){x.addEventListener('click',function(){show(k);});});"
+              "show(alive(0)?0:nextAlive(0));"
+              "var t=0,iv=setInterval(function(){if(!alive(i)){var k=nextAlive(i);if(k>=0)show(k);}if(++t>10)clearInterval(iv);},400);"
               "if(!window.matchMedia||!matchMedia('(prefers-reduced-motion:reduce)').matches)"
-              "setInterval(function(){go(i+1);},3500);})();</script>")
+              "setInterval(function(){var k=nextAlive(i);if(k>=0)show(k);},3500);})();</script>")
     # (The home page shell already emits a <head> preload for the first hero image.)
     return (_HOME_HERO_CSS +
         '<section class="hhero"><div class="wrap hhero-in">'
