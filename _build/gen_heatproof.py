@@ -826,12 +826,11 @@ FOOTER_I18N = {
         "vi": ("Bảo mật","Cookie"), "th": ("ความเป็นส่วนตัว","คุกกี้")},
 }
 def floating_contact(lang):
-    """Floating chat button — LINE on Thai pages, Zalo on Vietnamese pages, nothing elsewhere."""
+    """Floating chat button — LINE on Thai pages only. (Vietnam Zalo pending a
+    client-supplied Zalo ID; not shown until provided.)"""
     bubble = ('<svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 3.4c-5.4 0-9.8 3.4-9.8 7.6 0 3.8 3.5 7 8.2 7.6.32.07.76.21.87.48.1.25.06.62.03.87 0 0-.11.68-.14.83-.04.25-.2.98.86.53 1.06-.44 5.7-3.35 7.78-5.74 1.43-1.56 2.11-3.14 2.11-4.9 0-4.2-4.4-7.6-9.8-7.6z"/></svg>')
     if lang == "th":
         return ('<a class="fabchat line" href="https://line.me/ti/p/~omnicurethailand" target="_blank" rel="noopener" aria-label="Add us on LINE">%s<span>LINE</span></a>' % bubble)
-    if lang == "vi":
-        return ('<a class="fabchat zalo" href="https://zalo.me/84961530153" target="_blank" rel="noopener" aria-label="Liên hệ qua Zalo">%s<span>Zalo</span></a>' % bubble)
     return ""
 
 def footer_html(lang):
@@ -2337,7 +2336,7 @@ SERVICE_REGIONS=[
    "addr":["22/41 เอช-เคป บิซ เซ็นเตอร์ ถนนสุขาภิบาล 2 แขวงประเวศ เขตประเวศ กรุงเทพฯ 10250",
            "22/41 H-Cape Biz Center, Sukhaphiban 2 Road, Prawet Subdistrict, Prawet District, Bangkok 10250, Thailand"],
    "phone":"+66 811 746 947","email":"etialabel@etia-tech.com"},
-  {"region":("Vietnam · Bac Ninh","越南 · 北宁","Việt Nam · Bắc Ninh","เวียดนาม · บั๊กนิญ"),"name":"Trần Diệu Hoa","role":("Technical Engineer","技术工程师","Kỹ sư Kỹ thuật","วิศวกรเทคนิค"),
+  {"region":("Vietnam · Bac Ninh","越南 · 北宁","Việt Nam · Bắc Ninh","เวียดนาม · บั๊กนิญ"),"name":"Trần Diệu Hoa","role":("Customer Service Officer","客户服务专员","Nhân viên Chăm sóc Khách hàng","เจ้าหน้าที่บริการลูกค้า"),
    "addr":["Số 10 đường Thanh Niên, Khu 5, Phường Võ Cường, Tỉnh Bắc Ninh, Việt Nam",
            "No. 10 Thanh Nien Street, Area 5, Vo Cuong Ward, Bac Ninh Province, Viet Nam"],
    "phone":"+84 961 530 153","email":"etialabel@etia-tech.com"},
