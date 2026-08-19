@@ -316,11 +316,18 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 html[lang="vi"] .hbanner h1,html[lang="vi"] .hero h1{font-size:30px;max-width:none}
 @media(max-width:820px){html[lang="vi"] .hbanner h1,html[lang="vi"] .hero h1{font-size:23px}}
 /* floating messaging button (LINE on TH pages, Zalo on VN pages) */
-.fabchat{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;gap:8px;height:54px;padding:0 20px 0 15px;border-radius:27px;color:#fff;font-family:var(--sans);font-weight:800;font-size:15px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.28);transition:transform .15s,box-shadow .15s}
+.fabchat{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;gap:8px;height:54px;padding:0 20px 0 15px;border:none;cursor:pointer;border-radius:27px;color:#fff;font-family:var(--sans);font-weight:800;font-size:15px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.28);transition:transform .15s,box-shadow .15s}
 .fabchat:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.34);color:#fff}
 .fabchat svg{width:26px;height:26px;flex:none}
-.fabchat.line{background:#06C755}.fabchat.zalo{background:#0068FF}
+.fabchat.line{background:#06C755}.fabchat.zalo{background:#0068FF}.fabchat.wechat{background:#07C160}
 @media(max-width:600px){.fabchat{height:48px;padding:0 16px 0 12px;font-size:14px;right:14px;bottom:14px}.fabchat svg{width:23px;height:23px}}
+/* WeChat QR popup (Chinese pages) */
+.wxqr{display:none;position:fixed;inset:0;z-index:200;background:rgba(15,31,71,.55);align-items:center;justify-content:center;padding:20px}
+.wxqr.on{display:flex}
+.wxqr-card{background:#fff;border-radius:16px;padding:22px;max-width:300px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.wxqr-card img{width:220px;height:220px;object-fit:contain;display:block;margin:0 auto 12px}
+.wxqr-card p{margin:0 0 14px;color:#18213B;font-weight:700;font-size:15px}
+.wxqr-x{border:none;background:#07C160;color:#fff;font-weight:800;padding:9px 22px;border-radius:22px;cursor:pointer;font-size:14px}
 .hero{padding:60px 0 46px}
 .hero .eyebrow{margin-bottom:14px}
 .hero h1{font-family:var(--sans);font-weight:800;font-size:40px;line-height:1.12;letter-spacing:-.01em;text-align:left;text-wrap:balance;max-width:18em}
@@ -825,12 +832,25 @@ FOOTER_I18N = {
  "pc": {"en": ("Privacy","Cookies"), "zh": ("隐私","Cookie"),
         "vi": ("Bảo mật","Cookie"), "th": ("ความเป็นส่วนตัว","คุกกี้")},
 }
+# WeChat QR shown in the Chinese-page popup (confirm exact COS path with client).
+_WECHAT_QR = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/LOGO/etia-wechat-qr.jpg"
+
 def floating_contact(lang):
-    """Floating chat button — LINE on Thai pages only. (Vietnam Zalo pending a
-    client-supplied Zalo ID; not shown until provided.)"""
+    """Floating chat button by market: LINE (English + Thai) → the Thai official
+    account, Zalo (Vietnam), and a WeChat scan-to-add QR popup (Chinese)."""
     bubble = ('<svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 3.4c-5.4 0-9.8 3.4-9.8 7.6 0 3.8 3.5 7 8.2 7.6.32.07.76.21.87.48.1.25.06.62.03.87 0 0-.11.68-.14.83-.04.25-.2.98.86.53 1.06-.44 5.7-3.35 7.78-5.74 1.43-1.56 2.11-3.14 2.11-4.9 0-4.2-4.4-7.6-9.8-7.6z"/></svg>')
-    if lang == "th":
-        return ('<a class="fabchat line" href="https://line.me/ti/p/~omnicurethailand" target="_blank" rel="noopener" aria-label="Add us on LINE">%s<span>LINE</span></a>' % bubble)
+    if lang in ("en", "th"):
+        return ('<a class="fabchat line" href="https://line.me/R/ti/p/@omnicurethailand" target="_blank" rel="noopener" aria-label="Add us on LINE">%s<span>LINE</span></a>' % bubble)
+    if lang == "vi":
+        return ('<a class="fabchat zalo" href="https://zalo.me/84961530153" target="_blank" rel="noopener" aria-label="Liên hệ qua Zalo">%s<span>Zalo</span></a>' % bubble)
+    if lang == "zh":
+        return ('<button type="button" class="fabchat wechat" aria-label="微信扫码添加" onclick="document.getElementById(\'wxqr\').classList.add(\'on\')">%s<span>微信</span></button>'
+                '<div id="wxqr" class="wxqr" onclick="this.classList.remove(\'on\')">'
+                '<div class="wxqr-card" onclick="event.stopPropagation()">'
+                '<img src="%s" alt="ETIA 微信二维码" onerror="this.style.display=\'none\'">'
+                '<p>微信扫一扫，添加我们</p>'
+                '<button type="button" class="wxqr-x" onclick="document.getElementById(\'wxqr\').classList.remove(\'on\')">关闭</button>'
+                '</div></div>') % (bubble, esc(_WECHAT_QR))
     return ""
 
 def footer_html(lang):
