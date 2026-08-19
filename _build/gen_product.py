@@ -382,7 +382,7 @@ INDUSTRY_BANNERS = {
     "cable":   _COS + "INDUSTRY/CABLE-BANNER",
     "steel":   _COS + "INDUSTRY/STEEL-BANNER",
     "medical": _COS + "INDUSTRY/MEDICAL-BANNERNEW",
-    "outdoor": _COS + "INDUSTRY/OUTDOOR-BANNER",
+    "outdoor": _COS + "INDUSTRY/OURDOOR-BANNER",
 }
 # Per-industry banner crop, mirrored from the industry landing pages so a product
 # hero shows the same part of the shared banner image as its industry page.
