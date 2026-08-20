@@ -70,19 +70,19 @@
     "th": "APEX Series · Polyonics นำเข้าแท้"
    },
    "intro": {
-    "en": "High-end precision flagship for modern high-density PCB processes.",
-    "zh": "高端精密旗舰，适配现代高精密度 PCB 制程。",
-    "vi": "Cao cấp chính xác, phù hợp quy trình PCB mật độ cao hiện đại.",
-    "th": "รุ่นพรีเมียมสำหรับกระบวนการ PCB ความหนาแน่นสูงสมัยใหม่"
+    "en": "Flagship polyimide — strongest chemical-solvent and aggressive-cleaning resistance, built for advanced high-density PCB processes.",
+    "zh": "旗舰级 PI 标签 —— 耐化学溶剂、耐强力清洗能力最强，专为先进高密度 PCB 制程打造。",
+    "vi": "Nhãn polyimide đầu bảng — kháng dung môi hóa chất và chịu rửa mạnh tốt nhất, cho quy trình PCB mật độ cao tiên tiến.",
+    "th": "ฉลากโพลีอิไมด์เรือธง — ทนตัวทำละลายและการล้างที่รุนแรงได้สูงสุด สำหรับกระบวนการ PCB ความหนาแน่นสูงขั้นสูง"
    },
    "products": [
     {
      "name": "Polyonics APEX Series",
      "line": {
-      "en": "Multi-cycle reflow & cleaning resistant · ultra-high print clarity",
-      "zh": "耐多轮焊洗 · 打印高清精度优异",
-      "vi": "Chịu hàn rửa nhiều vòng · in ấn sắc nét độ chính xác cao",
-      "th": "ทนรีโฟลว์และล้างซ้ำได้ · พิมพ์ชัดเจนแม่นยำสูง"
+      "en": "Chemical-solvent & aggressive-cleaning resistant · multi-cycle reflow · ultra-high print clarity",
+      "zh": "耐化学溶剂 · 耐强力清洗 · 耐多轮回流焊 · 打印高清精度优异",
+      "vi": "Kháng dung môi hóa chất & rửa mạnh · chịu hàn reflow nhiều vòng · in sắc nét độ chính xác cao",
+      "th": "ทนตัวทำละลายและการล้างรุนแรง · ทนรีโฟลว์หลายรอบ · พิมพ์ชัดแม่นยำสูง"
      },
      "img": "",
      "landing": true,
@@ -100,19 +100,19 @@
     "th": "XF58 Series · Polyonics นำเข้าแท้"
    },
    "intro": {
-    "en": "Mainstream industrial grade for full-scenario PCB mass production.",
-    "zh": "工业主流主力款，适配全场景 PCB 量产制程。",
-    "vi": "Dòng công nghiệp chủ lực, phù hợp sản xuất hàng loạt mọi tình huống.",
-    "th": "รุ่นอุตสาหกรรมหลัก รองรับการผลิต PCB ทุกสถานการณ์"
+    "en": "High-temperature polyimide workhorse for mainstream, full-scenario PCB mass production.",
+    "zh": "耐高温 PI 主力款，适配主流全场景 PCB 大批量量产。",
+    "vi": "Dòng polyimide chịu nhiệt chủ lực cho sản xuất hàng loạt PCB toàn diện.",
+    "th": "รุ่นโพลีอิไมด์ทนอุณหภูมิสูงตัวหลัก สำหรับการผลิต PCB จำนวนมากทุกสถานการณ์"
    },
    "products": [
     {
      "name": "Polyonics XF58 Series",
      "line": {
-      "en": "Balanced solder & cleaning resistance · multi-color finish options",
-      "zh": "焊洗性能均衡 · 多色饰面可选易分类",
-      "vi": "Chống hàn rửa cân bằng · nhiều màu bề mặt dễ phân loại",
-      "th": "ทนความร้อนและสารเคมีสมดุล · มีหลายสีช่วยแยกประเภท"
+      "en": "High-temperature & solder resistant · balanced all-round · multi-color options for sorting",
+      "zh": "耐高温 · 耐焊接 · 综合性能均衡 · 多色饰面可选易分类",
+      "vi": "Chịu nhiệt & chịu hàn · hiệu năng cân bằng · nhiều màu dễ phân loại",
+      "th": "ทนอุณหภูมิสูงและการบัดกรี · สมดุลรอบด้าน · มีหลายสีช่วยแยกประเภท"
      },
      "img": "",
      "landing": true,
