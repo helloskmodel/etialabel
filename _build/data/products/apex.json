@@ -1,370 +1,370 @@
 {
-  "slug": "apex",
-  "source": "client TDS — Polyonics APEX Series XF-101M/S/G/ME/SE · XF-102M/S/G/SE",
-  "langs": [
-    "en",
-    "zh",
-    "vi",
-    "th"
+ "slug": "apex",
+ "source": "client TDS — Polyonics APEX Series XF-101M/S/G/ME/SE · XF-102M/S/G/SE",
+ "langs": [
+  "en",
+  "zh",
+  "vi",
+  "th"
+ ],
+ "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNERNEW.jpg",
+ "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/TDS/POLIOLICS/APEX1609.jpg",
+ "title": {
+  "en": "Next-Generation Polyimide Labels for Advanced PCB Manufacturing",
+  "zh": "面向先进 PCB 制造的下一代聚酰亚胺标签",
+  "vi": "Nhãn Polyimide thế hệ mới cho sản xuất PCB tiên tiến",
+  "th": "ฉลากโพลิอิมิดยุคใหม่สำหรับการผลิต PCB ขั้นสูง"
+ },
+ "tagline": {
+  "en": "Built for Advanced Processes. Designed for Lasting Traceability.",
+  "zh": "为先进制程而生，为持久追溯而设计。",
+  "vi": "Tạo ra cho quy trình tiên tiến. Thiết kế để truy xuất bền lâu.",
+  "th": "สร้างมาเพื่อกระบวนการขั้นสูง ออกแบบเพื่อการตรวจสอบย้อนกลับที่ยั่งยืน"
+ },
+ "positioning": {
+  "en": "The Apex™ Series is engineered for next-generation PCB manufacturing. Advanced coating technology delivers exceptional resistance to high-temperature reflow, aggressive cleaning chemicals, and demanding production environments while maintaining superior print quality, durable adhesion, and reliable traceability.",
+  "zh": "Apex™ 系列专为下一代 PCB 制造而设计。先进涂层技术在高温回流焊、强力清洗化学品与严苛生产环境下提供卓越耐受性，同时保持优异的打印质量、持久附着力与可靠追溯。",
+  "vi": "Dòng Apex™ được thiết kế cho sản xuất PCB thế hệ mới. Công nghệ lớp phủ tiên tiến mang lại khả năng chịu hàn hồi lưu nhiệt độ cao, hóa chất tẩy rửa mạnh và môi trường sản xuất khắc nghiệt, đồng thời giữ chất lượng in vượt trội, độ bám bền và truy xuất đáng tin cậy.",
+  "th": "ซีรีส์ Apex™ ออกแบบมาเพื่อการผลิต PCB ยุคใหม่ เทคโนโลยีเคลือบขั้นสูงให้ความทนทานยอดเยี่ยมต่อการบัดกรีรีโฟลว์อุณหภูมิสูง สารเคมีทำความสะอาดที่รุนแรง และสภาพแวดล้อมการผลิตที่เข้มงวด พร้อมคงคุณภาพการพิมพ์ที่เหนือกว่า การยึดเกาะที่ทนทาน และการตรวจสอบย้อนกลับที่เชื่อถือได้"
+ },
+ "features": {
+  "en": [
+   "Improved Heat Resistance — engineered for extreme thermal cycles, keeping labels secure and readable.",
+   "Improved Chemical & Flux Resistance — withstands the harshest PCB processes, including high-pressure washes and aggressive fluxes.",
+   "Precision Readability — maintains small-font and barcode readability through reflow and cleaning.",
+   "Superior Print Performance — optimized for crisp, high-contrast TTR printability.",
+   "Made in the USA, trusted global supplier — the quality you expect from a specialist in high-performance label materials."
   ],
-  "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-BANNERNEW.jpg",
-  "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/PCB-APEX",
-  "title": {
-    "en": "Next-Generation Polyimide Labels for Advanced PCB Manufacturing",
-    "zh": "面向先进 PCB 制造的下一代聚酰亚胺标签",
-    "vi": "Nhãn Polyimide thế hệ mới cho sản xuất PCB tiên tiến",
-    "th": "ฉลากโพลิอิมิดยุคใหม่สำหรับการผลิต PCB ขั้นสูง"
+  "zh": [
+   "耐热性提升 —— 专为极端热循环设计，确保标签牢固、清晰可读。",
+   "耐化学与耐助焊剂提升 —— 可承受最严苛的 PCB 制程，包括高压清洗与强力助焊剂。",
+   "精准可读 —— 历经回流焊与清洗，仍保持小字体与条码清晰可读。",
+   "卓越打印表现 —— 针对清晰、高对比的热转印（TTR）打印优化。",
+   "美国原产，值得信赖的全球供应商 —— 源自高性能标签材料专家的可靠品质。"
+  ],
+  "vi": [
+   "Chịu nhiệt tốt hơn — thiết kế cho chu kỳ nhiệt khắc nghiệt, giữ nhãn bám chắc và dễ đọc.",
+   "Chịu hóa chất & flux tốt hơn — chịu được quy trình PCB khắc nghiệt nhất, gồm rửa áp lực cao và flux mạnh.",
+   "Đọc chính xác — giữ khả năng đọc font nhỏ và mã vạch qua hàn hồi lưu và rửa.",
+   "In vượt trội — tối ưu cho in TTR sắc nét, tương phản cao.",
+   "Sản xuất tại Mỹ, nhà cung cấp toàn cầu tin cậy — chất lượng từ nhà dẫn đầu vật liệu nhãn hiệu năng cao."
+  ],
+  "th": [
+   "ทนความร้อนดีขึ้น — ออกแบบสำหรับวัฏจักรความร้อนสุดขั้ว ให้ฉลากยึดแน่นและอ่านได้",
+   "ทนสารเคมีและฟลักซ์ดีขึ้น — ทนกระบวนการ PCB ที่รุนแรงที่สุด รวมถึงการล้างแรงดันสูงและฟลักซ์เข้มข้น",
+   "อ่านได้แม่นยำ — คงความชัดของฟอนต์เล็กและบาร์โค้ดตลอดรีโฟลว์และการล้าง",
+   "การพิมพ์ที่เหนือกว่า — ปรับให้พิมพ์ TTR คมชัด คอนทราสต์สูง",
+   "ผลิตในสหรัฐฯ ซัพพลายเออร์ระดับโลกที่ไว้ใจได้ — คุณภาพจากผู้นำวัสดุฉลากสมรรถนะสูง"
+  ]
+ },
+ "benefits": {
+  "en": [
+   "Built for today’s fluxes, cleaners, and multi-cycle reflow.",
+   "72% improvement in flux solder performance vs. our legacy line, validated in testing.",
+   "15% improvement in cleaner resistance vs. our legacy line, helping labels survive high-pressure washes.",
+   "Enhanced ink transfer for more defined images, even at smaller font sizes — designed to extend printhead life and maintain readability through exposure to highly caustic solutions.",
+   "Coating and adhesive system engineered for elevated temperatures, ensuring labels stay put and remain readable."
+  ],
+  "zh": [
+   "专为当今的助焊剂、清洗剂与多轮回流焊而生。",
+   "耐助焊剂焊接性能较老款提升 72%，经测试验证。",
+   "耐清洗剂性能较老款提升 15%，助力标签经受高压清洗。",
+   "油墨转移增强，图像更清晰，即使小字体亦然；专为延长打印头寿命、在强腐蚀溶液中保持可读性而设计。",
+   "涂层与胶粘系统专为高温设计，确保标签牢固不脱、持续可读。"
+  ],
+  "vi": [
+   "Được tạo ra cho flux, dung dịch rửa và hàn hồi lưu nhiều chu kỳ ngày nay.",
+   "Hiệu suất hàn chịu flux cải thiện 72% so với dòng cũ, đã kiểm chứng qua thử nghiệm.",
+   "Khả năng chịu dung dịch rửa cải thiện 15% so với dòng cũ, giúp nhãn chịu được rửa áp lực cao.",
+   "Truyền mực tốt hơn cho hình ảnh sắc nét hơn, ngay cả ở font nhỏ; thiết kế để kéo dài tuổi thọ đầu in và giữ khả năng đọc khi tiếp xúc dung dịch ăn mòn mạnh.",
+   "Hệ lớp phủ và keo thiết kế cho nhiệt độ cao, đảm bảo nhãn bám chắc và dễ đọc."
+  ],
+  "th": [
+   "สร้างมาเพื่อฟลักซ์ น้ำยาล้าง และรีโฟลว์หลายรอบในปัจจุบัน",
+   "ประสิทธิภาพการบัดกรีทนฟลักซ์ดีขึ้น 72% เทียบรุ่นเดิม ผ่านการทดสอบยืนยัน",
+   "ความทนน้ำยาล้างดีขึ้น 15% เทียบรุ่นเดิม ช่วยให้ฉลากทนการล้างแรงดันสูง",
+   "การถ่ายโอนหมึกดีขึ้นให้ภาพคมชัดขึ้นแม้ฟอนต์เล็ก ออกแบบเพื่อยืดอายุหัวพิมพ์และคงการอ่านได้เมื่อสัมผัสสารกัดกร่อนแรง",
+   "ระบบเคลือบและกาวออกแบบสำหรับอุณหภูมิสูง ให้ฉลากยึดแน่นและอ่านได้"
+  ]
+ },
+ "spec_table": {
+  "headers": {
+   "en": [
+    "Model",
+    "Film",
+    "Finish",
+    "Total thickness",
+    "Adhesion (24h, SS)",
+    "ESD"
+   ],
+   "zh": [
+    "型号",
+    "面材",
+    "表面",
+    "总厚度",
+    "粘着力（24h，不锈钢）",
+    "防静电"
+   ],
+   "vi": [
+    "Mã",
+    "Màng",
+    "Bề mặt",
+    "Độ dày tổng",
+    "Độ bám (24h, SS)",
+    "ESD"
+   ],
+   "th": [
+    "รุ่น",
+    "ฟิล์ม",
+    "พื้นผิว",
+    "ความหนารวม",
+    "แรงยึด (24 ชม., SS)",
+    "ESD"
+   ]
   },
-  "tagline": {
-    "en": "Built for Advanced Processes. Designed for Lasting Traceability.",
-    "zh": "为先进制程而生，为持久追溯而设计。",
-    "vi": "Tạo ra cho quy trình tiên tiến. Thiết kế để truy xuất bền lâu.",
-    "th": "สร้างมาเพื่อกระบวนการขั้นสูง ออกแบบเพื่อการตรวจสอบย้อนกลับที่ยั่งยืน"
-  },
-  "positioning": {
-    "en": "The Apex™ Series is engineered for next-generation PCB manufacturing. Advanced coating technology delivers exceptional resistance to high-temperature reflow, aggressive cleaning chemicals, and demanding production environments while maintaining superior print quality, durable adhesion, and reliable traceability.",
-    "zh": "Apex™ 系列专为下一代 PCB 制造而设计。先进涂层技术在高温回流焊、强力清洗化学品与严苛生产环境下提供卓越耐受性，同时保持优异的打印质量、持久附着力与可靠追溯。",
-    "vi": "Dòng Apex™ được thiết kế cho sản xuất PCB thế hệ mới. Công nghệ lớp phủ tiên tiến mang lại khả năng chịu hàn hồi lưu nhiệt độ cao, hóa chất tẩy rửa mạnh và môi trường sản xuất khắc nghiệt, đồng thời giữ chất lượng in vượt trội, độ bám bền và truy xuất đáng tin cậy.",
-    "th": "ซีรีส์ Apex™ ออกแบบมาเพื่อการผลิต PCB ยุคใหม่ เทคโนโลยีเคลือบขั้นสูงให้ความทนทานยอดเยี่ยมต่อการบัดกรีรีโฟลว์อุณหภูมิสูง สารเคมีทำความสะอาดที่รุนแรง และสภาพแวดล้อมการผลิตที่เข้มงวด พร้อมคงคุณภาพการพิมพ์ที่เหนือกว่า การยึดเกาะที่ทนทาน และการตรวจสอบย้อนกลับที่เชื่อถือได้"
-  },
-  "features": {
-    "en": [
-      "Improved Heat Resistance — engineered for extreme thermal cycles, keeping labels secure and readable.",
-      "Improved Chemical & Flux Resistance — withstands the harshest PCB processes, including high-pressure washes and aggressive fluxes.",
-      "Precision Readability — maintains small-font and barcode readability through reflow and cleaning.",
-      "Superior Print Performance — optimized for crisp, high-contrast TTR printability.",
-      "Made in the USA, trusted global supplier — the quality you expect from a specialist in high-performance label materials."
+  "rows": [
+   {
+    "cells": [
+     "XF-101M",
+     {
+      "en": "1 mil (25µm) PI",
+      "zh": "1 mil（25µm）PI",
+      "vi": "PI 1 mil (25µm)",
+      "th": "PI 1 mil (25µm)"
+     },
+     {
+      "en": "Matte white",
+      "zh": "哑光白",
+      "vi": "Trắng mờ",
+      "th": "สีขาวด้าน"
+     },
+     "2.4 mil (61 µm)",
+     "≥ 40 oz/in",
+     "—"
     ],
-    "zh": [
-      "耐热性提升 —— 专为极端热循环设计，确保标签牢固、清晰可读。",
-      "耐化学与耐助焊剂提升 —— 可承受最严苛的 PCB 制程，包括高压清洗与强力助焊剂。",
-      "精准可读 —— 历经回流焊与清洗，仍保持小字体与条码清晰可读。",
-      "卓越打印表现 —— 针对清晰、高对比的热转印（TTR）打印优化。",
-      "美国原产，值得信赖的全球供应商 —— 源自高性能标签材料专家的可靠品质。"
+    "link": "/products/item/xf-101m/"
+   },
+   {
+    "cells": [
+     "XF-101S",
+     {
+      "en": "1 mil (25µm) PI",
+      "zh": "1 mil（25µm）PI",
+      "vi": "PI 1 mil (25µm)",
+      "th": "PI 1 mil (25µm)"
+     },
+     {
+      "en": "Semi-gloss white",
+      "zh": "半光白",
+      "vi": "Trắng bán bóng",
+      "th": "สีขาวกึ่งเงา"
+     },
+     "2.4 mil (61 µm)",
+     "≥ 40 oz/in",
+     "—"
     ],
-    "vi": [
-      "Chịu nhiệt tốt hơn — thiết kế cho chu kỳ nhiệt khắc nghiệt, giữ nhãn bám chắc và dễ đọc.",
-      "Chịu hóa chất & flux tốt hơn — chịu được quy trình PCB khắc nghiệt nhất, gồm rửa áp lực cao và flux mạnh.",
-      "Đọc chính xác — giữ khả năng đọc font nhỏ và mã vạch qua hàn hồi lưu và rửa.",
-      "In vượt trội — tối ưu cho in TTR sắc nét, tương phản cao.",
-      "Sản xuất tại Mỹ, nhà cung cấp toàn cầu tin cậy — chất lượng từ nhà dẫn đầu vật liệu nhãn hiệu năng cao."
+    "link": "/products/item/xf-101s/"
+   },
+   {
+    "cells": [
+     "XF-101G",
+     {
+      "en": "1 mil (25µm) PI",
+      "zh": "1 mil（25µm）PI",
+      "vi": "PI 1 mil (25µm)",
+      "th": "PI 1 mil (25µm)"
+     },
+     {
+      "en": "High-gloss white",
+      "zh": "高光白",
+      "vi": "Trắng bóng cao",
+      "th": "สีขาวเงาสูง"
+     },
+     "2.4 mil (61 µm)",
+     "≥ 40 oz/in",
+     "—"
     ],
-    "th": [
-      "ทนความร้อนดีขึ้น — ออกแบบสำหรับวัฏจักรความร้อนสุดขั้ว ให้ฉลากยึดแน่นและอ่านได้",
-      "ทนสารเคมีและฟลักซ์ดีขึ้น — ทนกระบวนการ PCB ที่รุนแรงที่สุด รวมถึงการล้างแรงดันสูงและฟลักซ์เข้มข้น",
-      "อ่านได้แม่นยำ — คงความชัดของฟอนต์เล็กและบาร์โค้ดตลอดรีโฟลว์และการล้าง",
-      "การพิมพ์ที่เหนือกว่า — ปรับให้พิมพ์ TTR คมชัด คอนทราสต์สูง",
-      "ผลิตในสหรัฐฯ ซัพพลายเออร์ระดับโลกที่ไว้ใจได้ — คุณภาพจากผู้นำวัสดุฉลากสมรรถนะสูง"
-    ]
-  },
-  "benefits": {
-    "en": [
-      "Built for today’s fluxes, cleaners, and multi-cycle reflow.",
-      "72% improvement in flux solder performance vs. our legacy line, validated in testing.",
-      "15% improvement in cleaner resistance vs. our legacy line, helping labels survive high-pressure washes.",
-      "Enhanced ink transfer for more defined images, even at smaller font sizes — designed to extend printhead life and maintain readability through exposure to highly caustic solutions.",
-      "Coating and adhesive system engineered for elevated temperatures, ensuring labels stay put and remain readable."
+    "link": "/products/item/xf-101g/"
+   },
+   {
+    "cells": [
+     "XF-101ME",
+     {
+      "en": "1 mil (25µm) PI",
+      "zh": "1 mil（25µm）PI",
+      "vi": "PI 1 mil (25µm)",
+      "th": "PI 1 mil (25µm)"
+     },
+     {
+      "en": "Matte white",
+      "zh": "哑光白",
+      "vi": "Trắng mờ",
+      "th": "สีขาวด้าน"
+     },
+     "2.4 mil (61 µm)",
+     "≥ 40 oz/in",
+     {
+      "en": "Static-dissipative",
+      "zh": "静电耗散",
+      "vi": "Tiêu tán tĩnh",
+      "th": "กระจายประจุ"
+     }
     ],
-    "zh": [
-      "专为当今的助焊剂、清洗剂与多轮回流焊而生。",
-      "耐助焊剂焊接性能较老款提升 72%，经测试验证。",
-      "耐清洗剂性能较老款提升 15%，助力标签经受高压清洗。",
-      "油墨转移增强，图像更清晰，即使小字体亦然；专为延长打印头寿命、在强腐蚀溶液中保持可读性而设计。",
-      "涂层与胶粘系统专为高温设计，确保标签牢固不脱、持续可读。"
+    "link": "/products/item/xf-101me/"
+   },
+   {
+    "cells": [
+     "XF-101SE",
+     {
+      "en": "1 mil (25µm) PI",
+      "zh": "1 mil（25µm）PI",
+      "vi": "PI 1 mil (25µm)",
+      "th": "PI 1 mil (25µm)"
+     },
+     {
+      "en": "Semi-gloss white",
+      "zh": "半光白",
+      "vi": "Trắng bán bóng",
+      "th": "สีขาวกึ่งเงา"
+     },
+     "2.4 mil (61 µm)",
+     "≥ 40 oz/in",
+     {
+      "en": "Static-dissipative",
+      "zh": "静电耗散",
+      "vi": "Tiêu tán tĩnh",
+      "th": "กระจายประจุ"
+     }
     ],
-    "vi": [
-      "Được tạo ra cho flux, dung dịch rửa và hàn hồi lưu nhiều chu kỳ ngày nay.",
-      "Hiệu suất hàn chịu flux cải thiện 72% so với dòng cũ, đã kiểm chứng qua thử nghiệm.",
-      "Khả năng chịu dung dịch rửa cải thiện 15% so với dòng cũ, giúp nhãn chịu được rửa áp lực cao.",
-      "Truyền mực tốt hơn cho hình ảnh sắc nét hơn, ngay cả ở font nhỏ; thiết kế để kéo dài tuổi thọ đầu in và giữ khả năng đọc khi tiếp xúc dung dịch ăn mòn mạnh.",
-      "Hệ lớp phủ và keo thiết kế cho nhiệt độ cao, đảm bảo nhãn bám chắc và dễ đọc."
+    "link": "/products/item/xf-101se/"
+   },
+   {
+    "cells": [
+     "XF-102M",
+     {
+      "en": "2 mil (50µm) PI",
+      "zh": "2 mil（50µm）PI",
+      "vi": "PI 2 mil (50µm)",
+      "th": "PI 2 mil (50µm)"
+     },
+     {
+      "en": "Matte white",
+      "zh": "哑光白",
+      "vi": "Trắng mờ",
+      "th": "สีขาวด้าน"
+     },
+     "3.9 mil (99 µm)",
+     "≥ 50 oz/in",
+     "—"
     ],
-    "th": [
-      "สร้างมาเพื่อฟลักซ์ น้ำยาล้าง และรีโฟลว์หลายรอบในปัจจุบัน",
-      "ประสิทธิภาพการบัดกรีทนฟลักซ์ดีขึ้น 72% เทียบรุ่นเดิม ผ่านการทดสอบยืนยัน",
-      "ความทนน้ำยาล้างดีขึ้น 15% เทียบรุ่นเดิม ช่วยให้ฉลากทนการล้างแรงดันสูง",
-      "การถ่ายโอนหมึกดีขึ้นให้ภาพคมชัดขึ้นแม้ฟอนต์เล็ก ออกแบบเพื่อยืดอายุหัวพิมพ์และคงการอ่านได้เมื่อสัมผัสสารกัดกร่อนแรง",
-      "ระบบเคลือบและกาวออกแบบสำหรับอุณหภูมิสูง ให้ฉลากยึดแน่นและอ่านได้"
-    ]
-  },
-  "spec_table": {
-    "headers": {
-      "en": [
-        "Model",
-        "Film",
-        "Finish",
-        "Total thickness",
-        "Adhesion (24h, SS)",
-        "ESD"
-      ],
-      "zh": [
-        "型号",
-        "面材",
-        "表面",
-        "总厚度",
-        "粘着力（24h，不锈钢）",
-        "防静电"
-      ],
-      "vi": [
-        "Mã",
-        "Màng",
-        "Bề mặt",
-        "Độ dày tổng",
-        "Độ bám (24h, SS)",
-        "ESD"
-      ],
-      "th": [
-        "รุ่น",
-        "ฟิล์ม",
-        "พื้นผิว",
-        "ความหนารวม",
-        "แรงยึด (24 ชม., SS)",
-        "ESD"
-      ]
-    },
-    "rows": [
-      {
-        "cells": [
-          "XF-101M",
-          {
-            "en": "1 mil (25µm) PI",
-            "zh": "1 mil（25µm）PI",
-            "vi": "PI 1 mil (25µm)",
-            "th": "PI 1 mil (25µm)"
-          },
-          {
-            "en": "Matte white",
-            "zh": "哑光白",
-            "vi": "Trắng mờ",
-            "th": "สีขาวด้าน"
-          },
-          "2.4 mil (61 µm)",
-          "≥ 40 oz/in",
-          "—"
-        ],
-        "link": "/products/item/xf-101m/"
-      },
-      {
-        "cells": [
-          "XF-101S",
-          {
-            "en": "1 mil (25µm) PI",
-            "zh": "1 mil（25µm）PI",
-            "vi": "PI 1 mil (25µm)",
-            "th": "PI 1 mil (25µm)"
-          },
-          {
-            "en": "Semi-gloss white",
-            "zh": "半光白",
-            "vi": "Trắng bán bóng",
-            "th": "สีขาวกึ่งเงา"
-          },
-          "2.4 mil (61 µm)",
-          "≥ 40 oz/in",
-          "—"
-        ],
-        "link": "/products/item/xf-101s/"
-      },
-      {
-        "cells": [
-          "XF-101G",
-          {
-            "en": "1 mil (25µm) PI",
-            "zh": "1 mil（25µm）PI",
-            "vi": "PI 1 mil (25µm)",
-            "th": "PI 1 mil (25µm)"
-          },
-          {
-            "en": "High-gloss white",
-            "zh": "高光白",
-            "vi": "Trắng bóng cao",
-            "th": "สีขาวเงาสูง"
-          },
-          "2.4 mil (61 µm)",
-          "≥ 40 oz/in",
-          "—"
-        ],
-        "link": "/products/item/xf-101g/"
-      },
-      {
-        "cells": [
-          "XF-101ME",
-          {
-            "en": "1 mil (25µm) PI",
-            "zh": "1 mil（25µm）PI",
-            "vi": "PI 1 mil (25µm)",
-            "th": "PI 1 mil (25µm)"
-          },
-          {
-            "en": "Matte white",
-            "zh": "哑光白",
-            "vi": "Trắng mờ",
-            "th": "สีขาวด้าน"
-          },
-          "2.4 mil (61 µm)",
-          "≥ 40 oz/in",
-          {
-            "en": "Static-dissipative",
-            "zh": "静电耗散",
-            "vi": "Tiêu tán tĩnh",
-            "th": "กระจายประจุ"
-          }
-        ],
-        "link": "/products/item/xf-101me/"
-      },
-      {
-        "cells": [
-          "XF-101SE",
-          {
-            "en": "1 mil (25µm) PI",
-            "zh": "1 mil（25µm）PI",
-            "vi": "PI 1 mil (25µm)",
-            "th": "PI 1 mil (25µm)"
-          },
-          {
-            "en": "Semi-gloss white",
-            "zh": "半光白",
-            "vi": "Trắng bán bóng",
-            "th": "สีขาวกึ่งเงา"
-          },
-          "2.4 mil (61 µm)",
-          "≥ 40 oz/in",
-          {
-            "en": "Static-dissipative",
-            "zh": "静电耗散",
-            "vi": "Tiêu tán tĩnh",
-            "th": "กระจายประจุ"
-          }
-        ],
-        "link": "/products/item/xf-101se/"
-      },
-      {
-        "cells": [
-          "XF-102M",
-          {
-            "en": "2 mil (50µm) PI",
-            "zh": "2 mil（50µm）PI",
-            "vi": "PI 2 mil (50µm)",
-            "th": "PI 2 mil (50µm)"
-          },
-          {
-            "en": "Matte white",
-            "zh": "哑光白",
-            "vi": "Trắng mờ",
-            "th": "สีขาวด้าน"
-          },
-          "3.9 mil (99 µm)",
-          "≥ 50 oz/in",
-          "—"
-        ],
-        "link": "/products/item/xf-102m/"
-      },
-      {
-        "cells": [
-          "XF-102S",
-          {
-            "en": "2 mil (50µm) PI",
-            "zh": "2 mil（50µm）PI",
-            "vi": "PI 2 mil (50µm)",
-            "th": "PI 2 mil (50µm)"
-          },
-          {
-            "en": "Semi-gloss white",
-            "zh": "半光白",
-            "vi": "Trắng bán bóng",
-            "th": "สีขาวกึ่งเงา"
-          },
-          "3.9 mil (99 µm)",
-          "≥ 50 oz/in",
-          "—"
-        ],
-        "link": "/products/item/xf-102s/"
-      },
-      {
-        "cells": [
-          "XF-102G",
-          {
-            "en": "2 mil (50µm) PI",
-            "zh": "2 mil（50µm）PI",
-            "vi": "PI 2 mil (50µm)",
-            "th": "PI 2 mil (50µm)"
-          },
-          {
-            "en": "High-gloss white",
-            "zh": "高光白",
-            "vi": "Trắng bóng cao",
-            "th": "สีขาวเงาสูง"
-          },
-          "3.9 mil (99 µm)",
-          "≥ 50 oz/in",
-          "—"
-        ],
-        "link": "/products/item/xf-102g/"
-      },
-      {
-        "cells": [
-          "XF-102SE",
-          {
-            "en": "2 mil (50µm) PI",
-            "zh": "2 mil（50µm）PI",
-            "vi": "PI 2 mil (50µm)",
-            "th": "PI 2 mil (50µm)"
-          },
-          {
-            "en": "Semi-gloss white",
-            "zh": "半光白",
-            "vi": "Trắng bán bóng",
-            "th": "สีขาวกึ่งเงา"
-          },
-          "3.9 mil (99 µm)",
-          "≥ 50 oz/in",
-          {
-            "en": "Static-dissipative",
-            "zh": "静电耗散",
-            "vi": "Tiêu tán tĩnh",
-            "th": "กระจายประจุ"
-          }
-        ],
-        "link": "/products/item/xf-102se/"
-      }
+    "link": "/products/item/xf-102m/"
+   },
+   {
+    "cells": [
+     "XF-102S",
+     {
+      "en": "2 mil (50µm) PI",
+      "zh": "2 mil（50µm）PI",
+      "vi": "PI 2 mil (50µm)",
+      "th": "PI 2 mil (50µm)"
+     },
+     {
+      "en": "Semi-gloss white",
+      "zh": "半光白",
+      "vi": "Trắng bán bóng",
+      "th": "สีขาวกึ่งเงา"
+     },
+     "3.9 mil (99 µm)",
+     "≥ 50 oz/in",
+     "—"
     ],
-    "notes": {
-      "en": [
-        "Construction: high-temperature permanent acrylic PSA · thermal-transfer printable white polyimide.",
-        "Temperature: 100 h @ 150 °C (long-term) · 5 min @ 260 °C (operating) · 90 sec @ 300 °C (short-term) — survives multi-cycle reflow.",
-        "Tack ≥ 1000 g/in (XF-101S) / ≥ 1200 g/in (XF-102 series); Taber abrasion resistant; passes MIL-STD-202G Method 215K; flux & cleaner resistant (Kyzen, Zestron, IPA).",
-        "XF-101ME, XF-101SE and XF-102SE are static-dissipative: static decay 0.02 s · low-charging PSA/liner < 125 V.",
-        "Compliance: REACH · RoHS. UL File # PGJI2.MH19503 (UL 969 label+ribbon approvals pending)."
-      ],
-      "zh": [
-        "结构：耐高温永久丙烯酸压敏胶 · 可热转印白色聚酰亚胺面材。",
-        "温度：150 °C 长期 100 小时 · 260 °C 操作 5 分钟 · 300 °C 短时 90 秒 —— 可耐多轮回流焊。",
-        "初粘力 ≥ 1000 g/in（XF-101S）/ ≥ 1200 g/in（XF-102 系列）；耐 Taber 磨耗；通过 MIL-STD-202G Method 215K；耐助焊剂与清洗剂（Kyzen、Zestron、IPA）。",
-        "XF-101ME、XF-101SE 与 XF-102SE 为静电耗散型：静电衰减 0.02 秒 · 低起电胶/底纸 < 125 V。",
-        "合规：REACH · RoHS。UL 档案号 PGJI2.MH19503（UL 969 标签+碳带组合认证审批中）。"
-      ],
-      "vi": [
-        "Cấu tạo: keo acrylic vĩnh viễn chịu nhiệt cao · polyimide trắng in chuyển nhiệt.",
-        "Nhiệt độ: 100 giờ @ 150 °C (dài hạn) · 5 phút @ 260 °C (vận hành) · 90 giây @ 300 °C (ngắn hạn) — chịu reflow nhiều chu kỳ.",
-        "Độ dính ≥ 1000 g/in (XF-101S) / ≥ 1200 g/in (dòng XF-102); chịu mài mòn Taber; đạt MIL-STD-202G Method 215K; kháng flux & dung dịch rửa (Kyzen, Zestron, IPA).",
-        "XF-101ME, XF-101SE và XF-102SE tiêu tán tĩnh điện: suy giảm tĩnh 0,02 s · keo/lớp lót ít tích điện < 125 V.",
-        "Tuân thủ: REACH · RoHS. UL File # PGJI2.MH19503 (đang chờ duyệt UL 969 cho tổ hợp nhãn+ribbon)."
-      ],
-      "th": [
-        "โครงสร้าง: กาวอะคริลิกถาวรทนความร้อนสูง · โพลีอิไมด์สีขาวพิมพ์ถ่ายเทความร้อนได้",
-        "อุณหภูมิ: 100 ชม. @ 150 °C (ระยะยาว) · 5 นาที @ 260 °C (ใช้งาน) · 90 วินาที @ 300 °C (ระยะสั้น) — ทนรีโฟลว์หลายรอบ",
-        "แรงยึดเริ่มต้น ≥ 1000 g/in (XF-101S) / ≥ 1200 g/in (ซีรีส์ XF-102); ทนการขัดถู Taber; ผ่าน MIL-STD-202G Method 215K; ทนฟลักซ์และน้ำยาล้าง (Kyzen, Zestron, IPA)",
-        "XF-101ME, XF-101SE และ XF-102SE เป็นแบบกระจายประจุ: การสลายประจุ 0.02 วินาที · กาว/ไลเนอร์ประจุต่ำ < 125 V",
-        "การปฏิบัติตาม: REACH · RoHS. UL File # PGJI2.MH19503 (อยู่ระหว่างอนุมัติ UL 969 สำหรับชุดฉลาก+ริบบอน)"
-      ]
-    }
-  },
-  "eyebrow": {
-    "en": "Apex™ Series",
-    "zh": "Apex™ 系列",
-    "vi": "Dòng Apex™",
-    "th": "ซีรีส์ Apex™"
-  },
-  "brand": "polyonics",
-  "industry": "pcb"
+    "link": "/products/item/xf-102s/"
+   },
+   {
+    "cells": [
+     "XF-102G",
+     {
+      "en": "2 mil (50µm) PI",
+      "zh": "2 mil（50µm）PI",
+      "vi": "PI 2 mil (50µm)",
+      "th": "PI 2 mil (50µm)"
+     },
+     {
+      "en": "High-gloss white",
+      "zh": "高光白",
+      "vi": "Trắng bóng cao",
+      "th": "สีขาวเงาสูง"
+     },
+     "3.9 mil (99 µm)",
+     "≥ 50 oz/in",
+     "—"
+    ],
+    "link": "/products/item/xf-102g/"
+   },
+   {
+    "cells": [
+     "XF-102SE",
+     {
+      "en": "2 mil (50µm) PI",
+      "zh": "2 mil（50µm）PI",
+      "vi": "PI 2 mil (50µm)",
+      "th": "PI 2 mil (50µm)"
+     },
+     {
+      "en": "Semi-gloss white",
+      "zh": "半光白",
+      "vi": "Trắng bán bóng",
+      "th": "สีขาวกึ่งเงา"
+     },
+     "3.9 mil (99 µm)",
+     "≥ 50 oz/in",
+     {
+      "en": "Static-dissipative",
+      "zh": "静电耗散",
+      "vi": "Tiêu tán tĩnh",
+      "th": "กระจายประจุ"
+     }
+    ],
+    "link": "/products/item/xf-102se/"
+   }
+  ],
+  "notes": {
+   "en": [
+    "Construction: high-temperature permanent acrylic PSA · thermal-transfer printable white polyimide.",
+    "Temperature: 100 h @ 150 °C (long-term) · 5 min @ 260 °C (operating) · 90 sec @ 300 °C (short-term) — survives multi-cycle reflow.",
+    "Tack ≥ 1000 g/in (XF-101S) / ≥ 1200 g/in (XF-102 series); Taber abrasion resistant; passes MIL-STD-202G Method 215K; flux & cleaner resistant (Kyzen, Zestron, IPA).",
+    "XF-101ME, XF-101SE and XF-102SE are static-dissipative: static decay 0.02 s · low-charging PSA/liner < 125 V.",
+    "Compliance: REACH · RoHS. UL File # PGJI2.MH19503 (UL 969 label+ribbon approvals pending)."
+   ],
+   "zh": [
+    "结构：耐高温永久丙烯酸压敏胶 · 可热转印白色聚酰亚胺面材。",
+    "温度：150 °C 长期 100 小时 · 260 °C 操作 5 分钟 · 300 °C 短时 90 秒 —— 可耐多轮回流焊。",
+    "初粘力 ≥ 1000 g/in（XF-101S）/ ≥ 1200 g/in（XF-102 系列）；耐 Taber 磨耗；通过 MIL-STD-202G Method 215K；耐助焊剂与清洗剂（Kyzen、Zestron、IPA）。",
+    "XF-101ME、XF-101SE 与 XF-102SE 为静电耗散型：静电衰减 0.02 秒 · 低起电胶/底纸 < 125 V。",
+    "合规：REACH · RoHS。UL 档案号 PGJI2.MH19503（UL 969 标签+碳带组合认证审批中）。"
+   ],
+   "vi": [
+    "Cấu tạo: keo acrylic vĩnh viễn chịu nhiệt cao · polyimide trắng in chuyển nhiệt.",
+    "Nhiệt độ: 100 giờ @ 150 °C (dài hạn) · 5 phút @ 260 °C (vận hành) · 90 giây @ 300 °C (ngắn hạn) — chịu reflow nhiều chu kỳ.",
+    "Độ dính ≥ 1000 g/in (XF-101S) / ≥ 1200 g/in (dòng XF-102); chịu mài mòn Taber; đạt MIL-STD-202G Method 215K; kháng flux & dung dịch rửa (Kyzen, Zestron, IPA).",
+    "XF-101ME, XF-101SE và XF-102SE tiêu tán tĩnh điện: suy giảm tĩnh 0,02 s · keo/lớp lót ít tích điện < 125 V.",
+    "Tuân thủ: REACH · RoHS. UL File # PGJI2.MH19503 (đang chờ duyệt UL 969 cho tổ hợp nhãn+ribbon)."
+   ],
+   "th": [
+    "โครงสร้าง: กาวอะคริลิกถาวรทนความร้อนสูง · โพลีอิไมด์สีขาวพิมพ์ถ่ายเทความร้อนได้",
+    "อุณหภูมิ: 100 ชม. @ 150 °C (ระยะยาว) · 5 นาที @ 260 °C (ใช้งาน) · 90 วินาที @ 300 °C (ระยะสั้น) — ทนรีโฟลว์หลายรอบ",
+    "แรงยึดเริ่มต้น ≥ 1000 g/in (XF-101S) / ≥ 1200 g/in (ซีรีส์ XF-102); ทนการขัดถู Taber; ผ่าน MIL-STD-202G Method 215K; ทนฟลักซ์และน้ำยาล้าง (Kyzen, Zestron, IPA)",
+    "XF-101ME, XF-101SE และ XF-102SE เป็นแบบกระจายประจุ: การสลายประจุ 0.02 วินาที · กาว/ไลเนอร์ประจุต่ำ < 125 V",
+    "การปฏิบัติตาม: REACH · RoHS. UL File # PGJI2.MH19503 (อยู่ระหว่างอนุมัติ UL 969 สำหรับชุดฉลาก+ริบบอน)"
+   ]
+  }
+ },
+ "eyebrow": {
+  "en": "Apex™ Series",
+  "zh": "Apex™ 系列",
+  "vi": "Dòng Apex™",
+  "th": "ซีรีส์ Apex™"
+ },
+ "brand": "polyonics",
+ "industry": "pcb"
 }

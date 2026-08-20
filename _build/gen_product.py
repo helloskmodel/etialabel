@@ -504,7 +504,7 @@ def build_lang(d, lang):
         # Only a real product photo (COS PRODUCT/ folder) is shown as a photo; a
         # bare INDUSTRY image (often 404s) would collapse the Features grid, so any
         # non-PRODUCT image falls back to the uniform 4:3 barcode tile.
-        if pimg and "/PRODUCT/" in pimg:
+        if pimg and ("/PRODUCT/" in pimg or "/TDS/" in pimg):
             img = ('<div class="pimg photo"><img src="%s" alt="" loading="lazy" '
                    'onerror="this.style.display=\'none\'"></div>') % esc(pimg)
         else:
