@@ -840,7 +840,7 @@ def floating_contact(lang):
     account, Zalo (Vietnam), and a WeChat scan-to-add QR popup (Chinese)."""
     bubble = ('<svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 3.4c-5.4 0-9.8 3.4-9.8 7.6 0 3.8 3.5 7 8.2 7.6.32.07.76.21.87.48.1.25.06.62.03.87 0 0-.11.68-.14.83-.04.25-.2.98.86.53 1.06-.44 5.7-3.35 7.78-5.74 1.43-1.56 2.11-3.14 2.11-4.9 0-4.2-4.4-7.6-9.8-7.6z"/></svg>')
     if lang in ("en", "th"):
-        return ('<a class="fabchat line" href="https://line.me/R/ti/p/@omnicurethailand" target="_blank" rel="noopener" aria-label="Add us on LINE">%s<span>LINE</span></a>' % bubble)
+        return ('<a class="fabchat line" href="https://lin.ee/wLV66QX" target="_blank" rel="noopener" aria-label="Add us on LINE">%s<span>LINE</span></a>' % bubble)
     if lang == "vi":
         return ('<a class="fabchat zalo" href="https://zalo.me/84961530153" target="_blank" rel="noopener" aria-label="Liên hệ qua Zalo">%s<span>Zalo</span></a>' % bubble)
     if lang == "zh":
