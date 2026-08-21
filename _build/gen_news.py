@@ -166,6 +166,10 @@ CSS = """
 .art h2{font-size:20px;color:#143C96;margin:26px 0 10px}
 .art p{font-size:15.5px;line-height:1.85;color:#41506e;margin:0 0 12px}
 .nback{display:inline-block;margin:8px 0 0;font-size:14px;font-weight:700;color:#1A56DB;text-decoration:none}
+.nctarow{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 6px}
+.ncta{display:inline-flex;align-items:center;padding:12px 22px;border-radius:26px;font-size:15px;font-weight:800;text-decoration:none;background:#1A56DB;color:#fff}
+.ncta:nth-child(2){background:#16a34a}
+.ncta:hover{filter:brightness(1.06)}
 /* hub — text section headers that split News vs Knowledge */
 .nsec{max-width:1080px;margin:0 auto;padding:0 22px}
 .nsechd{margin:34px 0 14px;border-bottom:1px solid #e2e9f5;padding-bottom:10px}
@@ -243,6 +247,11 @@ def build_article(a, lang):
             body += "<h2>%s</h2>" % esc(sec["h"])
         for p in sec.get("ps", []):
             body += "<p>%s</p>" % esc(p)
+    ctas = a.get("cta", [])
+    if ctas:
+        body += '<div class="nctarow">' + "".join(
+            '<a class="ncta" href="%s">%s</a>' % (hp.Lx(lang, c["url"]), esc(L(c.get("label", {}), lang)))
+            for c in ctas) + '</div>'
     body += '<a class="nback" href="%s">%s</a></div>' % (hp.Lx(lang, HUB), esc(ui["back"]))
     crumb = [(ui["home"], "/"), (ui["hub_title"], HUB), (title, path)]
     content = hp.page(lang, path, title + " | ETIA", esc(L(a.get("subtitle", {}), lang)),
