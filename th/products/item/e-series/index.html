@@ -273,6 +273,15 @@ html[lang="vi"] .hbanner h1,html[lang="vi"] .hero h1{font-size:30px;max-width:no
 .fabchat:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.34);color:#fff}
 .fabchat svg{width:26px;height:26px;flex:none}
 .fabchat.line{background:#06C755}.fabchat.zalo{background:#0068FF}.fabchat.wechat{background:#07C160}
+.ckbar{position:fixed;left:0;right:0;bottom:0;z-index:120;display:none;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;padding:14px 20px;background:#0F1F47;color:#fff;box-shadow:0 -4px 20px rgba(0,0,0,.22)}
+.ckbar.on{display:flex}
+.ckbar p{margin:0;font-size:14px;max-width:64ch;line-height:1.5}
+.ckbar a{color:#8fb4ff}
+.ckbtns{display:flex;gap:10px;flex:none}
+.ckbtn{border:none;cursor:pointer;font-weight:800;font-size:14px;padding:10px 22px;border-radius:22px;font-family:var(--sans)}
+.ckbtn.pri{background:#16a34a;color:#fff}
+.ckbtn.ghost{background:transparent;color:#cdd9f0;border:1px solid rgba(255,255,255,.4)}
+@media(max-width:600px){.ckbar{padding:11px 14px;gap:10px}.ckbar p{font-size:12.5px}.ckbtn{padding:9px 18px;font-size:13px}}
 @media(max-width:600px){.fabchat{height:48px;padding:0 16px 0 12px;font-size:14px;right:14px;bottom:14px}.fabchat svg{width:23px;height:23px}}
 /* WeChat QR popup (Chinese pages) */
 .wxqr{display:none;position:fixed;inset:0;z-index:200;background:rgba(15,31,71,.55);align-items:center;justify-content:center;padding:20px}

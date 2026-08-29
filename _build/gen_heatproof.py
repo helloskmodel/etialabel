@@ -335,6 +335,15 @@ html[lang="vi"] .hbanner h1,html[lang="vi"] .hero h1{font-size:30px;max-width:no
 .fabchat:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.34);color:#fff}
 .fabchat svg{width:26px;height:26px;flex:none}
 .fabchat.line{background:#06C755}.fabchat.zalo{background:#0068FF}.fabchat.wechat{background:#07C160}
+.ckbar{position:fixed;left:0;right:0;bottom:0;z-index:120;display:none;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;padding:14px 20px;background:#0F1F47;color:#fff;box-shadow:0 -4px 20px rgba(0,0,0,.22)}
+.ckbar.on{display:flex}
+.ckbar p{margin:0;font-size:14px;max-width:64ch;line-height:1.5}
+.ckbar a{color:#8fb4ff}
+.ckbtns{display:flex;gap:10px;flex:none}
+.ckbtn{border:none;cursor:pointer;font-weight:800;font-size:14px;padding:10px 22px;border-radius:22px;font-family:var(--sans)}
+.ckbtn.pri{background:#16a34a;color:#fff}
+.ckbtn.ghost{background:transparent;color:#cdd9f0;border:1px solid rgba(255,255,255,.4)}
+@media(max-width:600px){.ckbar{padding:11px 14px;gap:10px}.ckbar p{font-size:12.5px}.ckbtn{padding:9px 18px;font-size:13px}}
 @media(max-width:600px){.fabchat{height:48px;padding:0 16px 0 12px;font-size:14px;right:14px;bottom:14px}.fabchat svg{width:23px;height:23px}}
 /* WeChat QR popup (Chinese pages) */
 .wxqr{display:none;position:fixed;inset:0;z-index:200;background:rgba(15,31,71,.55);align-items:center;justify-content:center;padding:20px}
@@ -871,6 +880,42 @@ def floating_contact(lang):
                 '</div></div>') % (bubble, esc(_WECHAT_QR))
     return ""
 
+# GA4 Measurement ID (e.g. "G-XXXXXXXX"). Empty = no analytics loaded and no
+# consent bar shown (the site then sets no non-essential cookies). Fill this in
+# to activate analytics + the consent bar.
+GA_ID = ""
+
+def cookie_consent(lang):
+    """Bottom cookie-consent bar. Only rendered when GA_ID is set. Accept loads
+    GA4 (anonymized IP); Reject loads nothing; the choice persists in
+    localStorage so the bar shows once."""
+    if not GA_ID:
+        return ""
+    msg = P(lang,
+            "We use cookies to understand site traffic and improve your experience.",
+            "我们使用 Cookie 分析网站流量并改善您的体验。",
+            "Chúng tôi sử dụng cookie để phân tích lưu lượng và cải thiện trải nghiệm của bạn.",
+            "เราใช้คุกกี้เพื่อวิเคราะห์การเข้าชมและปรับปรุงประสบการณ์ของคุณ")
+    pol = P(lang, "Cookie Policy", "Cookie 政策", "Chính sách Cookie", "นโยบายคุกกี้")
+    acc = P(lang, "Accept", "接受", "Chấp nhận", "ยอมรับ")
+    rej = P(lang, "Reject", "拒绝", "Từ chối", "ปฏิเสธ")
+    bar = ('<div id="ckbar" class="ckbar" role="dialog" aria-label="Cookie consent">'
+           '<p>%s <a href="%s">%s</a></p>'
+           '<div class="ckbtns"><button type="button" class="ckbtn ghost" onclick="ckSet(0)">%s</button>'
+           '<button type="button" class="ckbtn pri" onclick="ckSet(1)">%s</button></div></div>') % (
+        esc(msg), Lx(lang, "/cookies/"), esc(pol), esc(rej), esc(acc))
+    js = ("<script>(function(){var K='etia_cookie_consent';"
+          "function get(){try{return localStorage.getItem(K);}catch(e){return null;}}"
+          "function ga(){var id='%s';if(!id)return;"
+          "var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id='+id;document.head.appendChild(s);"
+          "window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments);}window.gtag=g;"
+          "g('js',new Date());g('config',id,{anonymize_ip:true});}"
+          "window.ckSet=function(v){try{localStorage.setItem(K,v?'1':'0');}catch(e){}"
+          "var b=document.getElementById('ckbar');if(b)b.classList.remove('on');if(v)ga();};"
+          "var c=get();if(c==='1'){ga();}else if(c===null){var b=document.getElementById('ckbar');if(b)b.classList.add('on');}"
+          "})();</script>") % GA_ID
+    return bar + js
+
 def footer_html(lang):
     heads = FOOTER_I18N["heads"].get(lang, FOOTER_I18N["heads"]["en"])
     legals = FOOTER_I18N["legal"].get(lang, FOOTER_I18N["legal"]["en"])
@@ -888,7 +933,7 @@ def footer_html(lang):
 Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)">%s</span></div>
 </div>""" % (heads[0], nav, heads[1], legal, heads[2], tag)) + """
 <div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span><span><a href="%s">%s</a> &nbsp; <a href="%s">%s</a></span></div>
-</div></footer>""" % (Lx(lang,"/privacy/"), pc[0], Lx(lang,"/cookies/"), pc[1]) + floating_contact(lang)
+</div></footer>""" % (Lx(lang,"/privacy/"), pc[0], Lx(lang,"/cookies/"), pc[1]) + floating_contact(lang) + cookie_consent(lang)
 
 TRUST_TITLES = {
  "en":["100% Quality Inspection","Application-Driven Solutions","Flexible Supply","Responsive Application Support"],
@@ -1498,7 +1543,7 @@ def home_footer(lang):
             '<div><h5>%s</h5><a class="email" href="mailto:etialabel@etia-tech.com">etialabel@etia-tech.com</a><br><br>'
             'Shanghai · Hong Kong · Bangkok · Bac Ninh</div></div>'
             '<div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span></div></div></footer>') % (
-        esc(nh),navl,esc(lh),legal,esc(ch)) + floating_contact(lang)
+        esc(nh),navl,esc(lh),legal,esc(ch)) + floating_contact(lang) + cookie_consent(lang)
 
 def home_hreflang(path):
     t=[]
