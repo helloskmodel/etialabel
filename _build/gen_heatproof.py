@@ -19,21 +19,32 @@ INDUSTRIES = {i["id"]: i for i in DATA["industries"]}
 APPS = DATA["applications"]
 
 LANGS = ["en", "zh"]                       # default inner-site languages
-NAV_PILLAR_LANGS = ["en", "zh", "vi", "th"]  # Solutions / Service / Insight pillars: all 4 languages
-JX = {"en": 0, "zh": 1, "vi": 2, "th": 3}
-def P(lang, en, zh, vi, th):               # 4-language inline string pick
-    return {"en": en, "zh": zh, "vi": vi, "th": th}.get(lang, en)
-PREFIX = {"en": "", "zh": "/cn", "vi": "/vn", "th": "/th"}
-HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th"}
+NAV_PILLAR_LANGS = ["en", "zh", "vi", "th", "id", "ms"]  # Solutions / Service / Insight pillars + Indonesian & Malay
+JX = {"en": 0, "zh": 1, "vi": 2, "th": 3, "id": 0, "ms": 0}  # id/ms index English positional content
+def P(lang, en, zh, vi, th, id=None, ms=None):   # multi-language inline string pick (id/ms fall back to en)
+    return {"en": en, "zh": zh, "vi": vi, "th": th,
+            "id": en if id is None else id, "ms": en if ms is None else ms}.get(lang, en)
+PREFIX = {"en": "", "zh": "/cn", "vi": "/vn", "th": "/th", "id": "/id", "ms": "/my"}
+HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th", "id": "id", "ms": "ms"}
 # Paths that exist in all four languages (home only). Links to any other path from
 # a vi/th page fall back to the English version (no 404). Industry hubs are EN+ZH.
 FOURLANG = {"/", "/products/", "/products/find/", "/products/polyonics/", "/products/heatproof/", "/applications/", "/service/", "/insights/"}
 FOURLANG_PREFIX = ("/insights/", "/industries/", "/products/item/", "/products/polyonics/")  # article, industry, product & Polyonics pages exist in all 4 langs
 def Lx(lang, path):
-    """Smart localized link: use the vi/th version only if that path is 4-language."""
-    if lang in ("vi", "th") and path not in FOURLANG and not path.startswith(FOURLANG_PREFIX):
+    """Smart localized link: use the localized version only if that path exists in this language."""
+    if lang in ("vi", "th", "id", "ms") and path not in FOURLANG and not path.startswith(FOURLANG_PREFIX):
         return path
     return PREFIX.get(lang, "") + path
+
+def ext_langs(langs):
+    """Extend a language list with Indonesian & Malay (English-fallback locales)
+    when the content is already fully localized (contains vi)."""
+    ls = list(langs)
+    if "vi" in ls:
+        for x in ("id", "ms"):
+            if x not in ls:
+                ls.append(x)
+    return ls
 
 def esc(s): return html.escape(str(s or ""), quote=True)
 
@@ -794,7 +805,7 @@ NAV_TOGGLE = ('<button class="navtog" type="button" aria-label="Menu" onclick="e
               '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">'
               '<path d="M4 7h16M4 12h16M4 17h16"/></svg></button>')
 
-LANG_CODE = {"en": "EN", "zh": "CN", "vi": "VN", "th": "TH"}
+LANG_CODE = {"en": "EN", "zh": "CN", "vi": "VN", "th": "TH", "id": "ID", "ms": "MY"}
 def nav_html(lang, active, path="/", langs=None):
     langs = langs or ["en", "zh"]
     items = ""
@@ -1198,8 +1209,8 @@ def build_product(lang, p):
 def build_industries_hub(lang):
     # All industry sectors, mirroring the home "Solutions by Industry" carousel
     # and the nav "By Industry" menu (image-top cards).
-    focus = HOME_I18N[lang]["focus"]
-    explore = HOME_I18N[lang].get("explore", "View")
+    focus = HOME_I18N.get(lang, HOME_I18N["en"])["focus"]
+    explore = HOME_I18N.get(lang, HOME_I18N["en"]).get("explore", "View")
     cards = ""
     for k, f in enumerate(focus):
         img = f.get("img", "")
@@ -1462,7 +1473,7 @@ def home_nav(lang):
         home_link, prod, links, home_switcher(lang), NAV_TOGGLE)
 
 def home_footer(lang):
-    T=HOME_I18N[lang]; nh,lh,ch=T["footer_heads"]
+    T=HOME_I18N.get(lang, HOME_I18N["en"]); nh,lh,ch=T["footer_heads"]
     # footer nav mirrors the top nav: Product · Application · Resources · Service
     foot_nav=[("/products/",{"en":"Product","zh":"产品","vi":"Sản phẩm","th":"ผลิตภัณฑ์"}.get(lang,"Product")),
               ("/applications/",{"en":"Application","zh":"应用","vi":"Ứng dụng","th":"การใช้งาน"}.get(lang,"Application")),
@@ -1929,7 +1940,7 @@ _SOL_SLIDES = [
 
 def build_home(lang):
     path="/"
-    T=HOME_I18N[lang]
+    T=HOME_I18N.get(lang, HOME_I18N["en"])
     G=HOME2.get(lang, HOME2["en"])
     # Why ETIA pillars — icon + "We…" heading + up to two short lines
     why_html="".join('<div class="why"><div class="ic">%s</div><div class="txt"><b>%s</b><p class="wexp">%s</p></div></div>'%(
@@ -2053,8 +2064,8 @@ window.location.href='mailto:etialabel@etia-tech.com?subject=Free%%20Sample%%20R
     if lang=="en": track(path,"core")
 
 # ---------------------------------------------------------------- sitemaps + redirects
-LANG_ORDER = ["en", "zh", "vi", "th"]
-DIR_LANG = {"cn": "zh", "vn": "vi", "th": "th"}  # locale dir -> lang code
+LANG_ORDER = ["en", "zh", "vi", "th", "id", "ms"]
+DIR_LANG = {"cn": "zh", "vn": "vi", "th": "th", "id": "id", "my": "ms"}  # locale dir -> lang code
 # Product/item slugs that are environment Solution pages (own sitemap group).
 ENV_SOLUTION_SLUGS = ("high-heat-identification", "cold-chain-cryogenic-labels",
                       "chemical-resistant-labels", "sterilization-labels")
@@ -2497,7 +2508,7 @@ def build_service(lang):
 def build_products_landing(lang):
     """Products landing page (/products/) — a mega-menu-style category page:
     browse by industry and by operating environment. No redirect to Home."""
-    T = HOME_I18N[lang]
+    T = HOME_I18N.get(lang, HOME_I18N["en"])
     def card(url, name, desc):
         return ('<a class="pmcard" href="%s"><h3><span class="pmar">›</span>%s</h3>'
                 '<p>%s</p></a>') % (Lx(lang, url), esc(name), esc(desc))
@@ -2621,7 +2632,7 @@ def build_applications(lang):
                 '<div class="acard-body"><h3 class="indname">%s</h3><p>%s</p></div></a>')%(
             esc(txt), Lx(lang,"/application-notes/%s/"%n["slug"]), im, esc(title), esc(sub))
     note_cards="".join(_notecard(n) for n in notes)
-    T=HOME_I18N[lang]
+    T=HOME_I18N.get(lang, HOME_I18N["en"])
     # 1) Label Solutions by environment — the temperature solution landing pages
     #    (Heat Resistant / Low Temperature Resistant, room for more as they launch).
     SOL_DESC={

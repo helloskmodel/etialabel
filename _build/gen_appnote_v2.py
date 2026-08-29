@@ -218,7 +218,7 @@ def build_note(d, lang):
     crumb = [(ui["home"], "/"), (ui["notes"], HUB), (title, path)]
     content = hp.page(lang, path, title + " | ETIA", L(d.get("seo_desc", {}), lang) or subtitle or title,
                       title, "", body, crumb, active="insights", trust=False, hero=hero,
-                      langs=d.get("langs", ["en", "zh", "vi", "th"]))
+                      langs=d.get("langs", hp.NAV_PILLAR_LANGS))
     hp.write(lang, path, content)
     if lang == "en":
         hp.track(path, "notes")
@@ -227,7 +227,7 @@ def build_hub(notes, lang):
     ui = UI.get(lang, UI[SOURCE_LANG])
     cards = ""
     for d in notes:
-        if lang not in d.get("langs", ["en", "zh", "vi", "th"]):
+        if lang not in d.get("langs", hp.NAV_PILLAR_LANGS):
             continue
         href = hp.Lx(lang, HUB + d["slug"] + "/")
         img = note_banner(d) or d.get("image", "")
@@ -241,7 +241,7 @@ def build_hub(notes, lang):
     crumb = [(ui["home"], "/"), (ui["notes"], HUB)]
     content = hp.page(lang, HUB,
         ui["notes"] + " | ETIA", ui["hub_lede"], ui["notes"], ui["hub_lede"], body, crumb,
-        active="insights", langs=["en", "zh", "vi", "th"])
+        active="insights", langs=hp.NAV_PILLAR_LANGS)
     hp.write(lang, HUB, content)
 
 def main():
@@ -249,10 +249,10 @@ def main():
     notes = [json.load(open(os.path.join(ADIR, s + ".json"), encoding="utf-8")) for s in slugs]
     # keep a stable hub order if a note declares "order"
     notes.sort(key=lambda d: d.get("order", 99))
-    for lang in ["en", "zh", "vi", "th"]:
+    for lang in hp.NAV_PILLAR_LANGS:
         build_hub(notes, lang)
         for d in notes:
-            if lang in d.get("langs", ["en", "zh", "vi", "th"]):
+            if lang in d.get("langs", hp.NAV_PILLAR_LANGS):
                 build_note(d, lang)
     print("appnotes v2:", [d["slug"] for d in notes], "x4 langs + hub")
     # BANNER AUDIT — every note should resolve to an industry banner

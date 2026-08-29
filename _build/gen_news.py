@@ -297,7 +297,7 @@ def build_hub(lang):
 
 def main():
     arts = json.load(open(DATA, encoding="utf-8"))["articles"]
-    for lang in ["en", "zh", "vi", "th"]:
+    for lang in hp.NAV_PILLAR_LANGS:
         build_hub(lang)
         for a in arts:
             build_article(a, lang)
