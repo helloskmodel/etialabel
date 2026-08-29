@@ -141,7 +141,7 @@ HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th", "id": "id", "ms": "m
 # Locales that are BUILT but not yet publicly advertised (English fallback until
 # translated): hidden from the language switcher, sitemaps, hreflang, and marked
 # noindex. Clear this set to launch them. Reachable only by direct URL meanwhile.
-HIDDEN_LANGS = {"id", "ms"}
+HIDDEN_LANGS = {"ms"}
 # Paths that exist in all four languages (home only). Links to any other path from
 # a vi/th page fall back to the English version (no 404). Industry hubs are EN+ZH.
 FOURLANG = {"/", "/products/", "/products/find/", "/products/polyonics/", "/products/heatproof/", "/applications/", "/service/", "/insights/", "/request-sample/"}
