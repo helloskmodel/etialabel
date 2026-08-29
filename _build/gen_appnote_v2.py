@@ -58,8 +58,12 @@ UI = {
 
 def L(node, lang):
     if not isinstance(node, dict):
-        return node or ""
-    return node.get(lang) or node.get(SOURCE_LANG) or ""
+        return hp._tr(lang, node) if lang in ("id", "ms") and node else (node or "")
+    if node.get(lang):
+        return node[lang]
+    if lang in ("id", "ms"):
+        return hp._tr(lang, node.get("en") or node.get(SOURCE_LANG) or "")
+    return node.get(SOURCE_LANG) or ""
 
 CSS = """
 <style>
@@ -124,7 +128,7 @@ def _adv(items):
         for a in items)
 
 def build_note(d, lang):
-    ui = UI.get(lang, UI[SOURCE_LANG])
+    ui = UI.get(lang, UI["en"])
     slug = d["slug"]
     path = HUB + slug + "/"
     title = L(d["title"], lang)
@@ -224,7 +228,7 @@ def build_note(d, lang):
         hp.track(path, "notes")
 
 def build_hub(notes, lang):
-    ui = UI.get(lang, UI[SOURCE_LANG])
+    ui = UI.get(lang, UI["en"])
     cards = ""
     for d in notes:
         if lang not in d.get("langs", hp.NAV_PILLAR_LANGS):

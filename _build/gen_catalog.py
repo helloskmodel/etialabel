@@ -74,22 +74,22 @@ UI = {
     "en": {"title": "Find a Label Material", "lede": "Search by part number, material or application — or filter by the facets below.",
            "search": "Search part number, material or application… (e.g. E-4812, polyimide, blood bag)",
            "reset": "Clear all", "results": "materials", "none": "No materials match your filters.",
-           "view": "View product →", "filters": "Filters", "home": "Home", "products": "Products",
+           "view": "View product →", "add": "Add to sample", "filters": "Filters", "home": "Home", "products": "Products",
            "fac": {"industry": "Industry", "brand": "Brand", "application": "Application", "facestock": "Facestock", "thick": "Thickness", "temp": "Temperature"}},
     "zh": {"title": "查找标签материал".replace("материал", "材料"), "lede": "按料号、材料或应用搜索 —— 或使用下方维度筛选。",
            "search": "搜索料号、材料或应用……（如 E-4812、聚酰亚胺、血袋）",
            "reset": "清除全部", "results": "款材料", "none": "没有符合条件的材料。",
-           "view": "查看产品 →", "filters": "筛选", "home": "首页", "products": "产品",
+           "view": "查看产品 →", "add": "加入样品单", "filters": "筛选", "home": "首页", "products": "产品",
            "fac": {"industry": "行业", "brand": "品牌", "application": "应用", "facestock": "面材", "thick": "厚度", "temp": "温度"}},
     "vi": {"title": "Tìm vật liệu nhãn", "lede": "Tìm theo mã sản phẩm, vật liệu hoặc ứng dụng — hoặc lọc theo các tiêu chí bên dưới.",
            "search": "Tìm mã, vật liệu hoặc ứng dụng… (vd: E-4812, polyimide, túi máu)",
            "reset": "Xóa tất cả", "results": "vật liệu", "none": "Không có vật liệu phù hợp.",
-           "view": "Xem sản phẩm →", "filters": "Bộ lọc", "home": "Trang chủ", "products": "Sản phẩm",
+           "view": "Xem sản phẩm →", "add": "Thêm vào mẫu", "filters": "Bộ lọc", "home": "Trang chủ", "products": "Sản phẩm",
            "fac": {"industry": "Ngành", "brand": "Thương hiệu", "application": "Ứng dụng", "facestock": "Vật liệu mặt", "thick": "Độ dày", "temp": "Nhiệt độ"}},
     "th": {"title": "ค้นหาวัสดุฉลาก", "lede": "ค้นหาด้วยรหัสสินค้า วัสดุ หรือการใช้งาน — หรือกรองตามหมวดด้านล่าง",
            "search": "ค้นหารหัส วัสดุ หรือการใช้งาน… (เช่น E-4812, โพลีอิไมด์, ถุงเลือด)",
            "reset": "ล้างทั้งหมด", "results": "วัสดุ", "none": "ไม่มีวัสดุที่ตรงกับตัวกรอง",
-           "view": "ดูสินค้า →", "filters": "ตัวกรอง", "home": "หน้าแรก", "products": "ผลิตภัณฑ์",
+           "view": "ดูสินค้า →", "add": "เพิ่มลงตัวอย่าง", "filters": "ตัวกรอง", "home": "หน้าแรก", "products": "ผลิตภัณฑ์",
            "fac": {"industry": "อุตสาหกรรม", "brand": "แบรนด์", "application": "การใช้งาน", "facestock": "วัสดุหน้า", "thick": "ความหนา", "temp": "อุณหภูมิ"}},
 }
 TEMP_BANDS = {
@@ -194,12 +194,20 @@ def build_record(d):
     }
 
 
-def build_lang(records, lang):
+def _finder_block(records, lang, add_only=False):
+    """The browse UI (search + facet filters + product grid) shared by the
+    'Find a Label Material' finder and the 'Request a Sample' page. Returns
+    (ui, body). When add_only=True the product cards are plain tiles that add
+    to the sample list on click (no navigation to the product page)."""
     ui = UI.get(lang, UI["en"])
 
     def L(node):
         if isinstance(node, dict):
-            return node.get(lang) or node.get("en") or node.get("zh") or ""
+            if node.get(lang):
+                return node[lang]
+            if lang in ("id", "ms"):
+                return hp._tr(lang, node.get("en") or node.get("zh") or "")
+            return node.get("en") or node.get("zh") or ""
         return node or ""
 
     # ---- facet option sets (only values that actually occur) ----
@@ -292,12 +300,22 @@ def build_lang(records, lang):
         skbtn = ('<span class="skadd" role="button" tabindex="0" data-skc="%s" data-name="%s" data-url="%s" '
                  'onclick="skAdd(event,this)" aria-label="Add to sample list"></span>') % (
             esc(_code), esc(L(r["title"])), esc(hp.Lx(lang, r["url"])))
-        cards += ('<a class="pcell" href="%s" data-f="%s">%s%s<div class="pcell-t">%s</div>'
-                  '<div class="pcell-chips">%s</div>'
-                  '<span class="pcell-go">%s</span></a>') % (
-            hp.Lx(lang, r["url"]),
-            esc(json.dumps(data, ensure_ascii=False)),
-            skbtn, media, esc(L(r["title"])), chips, esc(ui["view"]))
+        if add_only:
+            # Whole tile adds to the sample list; the corner "+"/"✓" mirrors state.
+            cards += ('<div class="pcell psel" role="button" tabindex="0" data-skc="%s" data-name="%s" '
+                      'data-url="%s" onclick="skAdd(event,this)" data-f="%s">%s%s<div class="pcell-t">%s</div>'
+                      '<div class="pcell-chips">%s</div>'
+                      '<span class="pcell-go pcell-add">%s</span></div>') % (
+                esc(_code), esc(L(r["title"])), esc(hp.Lx(lang, r["url"])),
+                esc(json.dumps(data, ensure_ascii=False)),
+                skbtn, media, esc(L(r["title"])), chips, esc(ui["add"]))
+        else:
+            cards += ('<a class="pcell" href="%s" data-f="%s">%s%s<div class="pcell-t">%s</div>'
+                      '<div class="pcell-chips">%s</div>'
+                      '<span class="pcell-go">%s</span></a>') % (
+                hp.Lx(lang, r["url"]),
+                esc(json.dumps(data, ensure_ascii=False)),
+                skbtn, media, esc(L(r["title"])), chips, esc(ui["view"]))
 
     CSS = """<style>
 .cwrap{max-width:1180px;margin:0 auto;padding:26px 22px 48px}
@@ -334,6 +352,11 @@ def build_lang(records, lang):
 .cchip.clr{color:#3a4763;background:#f1f4fa;display:inline-flex;align-items:center}
 .cchip.clr i{width:8px;height:8px;border-radius:50%;margin-right:5px;box-shadow:0 0 0 1px rgba(0,0,0,.18)}
 .pcell-go{font-size:12px;font-weight:800;color:#41A62A;margin-top:2px}
+.pcell.psel{cursor:pointer}
+.pcell.psel .pcell-add::before{content:"+ "}
+.pcell.psel.in{border-color:#41A62A;box-shadow:0 0 0 2px rgba(65,166,42,.35)}
+.pcell.psel.in .pcell-add{color:#2c7a1e}
+.pcell.psel.in .pcell-add::before{content:"\\2713 "}
 .cnone{padding:40px 8px;color:#5a6884;font-size:15px}
 .fmob{display:none}
 @media(max-width:860px){.clayout{grid-template-columns:1fr}.cfilters{position:static}
@@ -393,12 +416,226 @@ if(document.readyState!=='loading') cf();
 else document.addEventListener('DOMContentLoaded',cf);
 </script>"""
 
+    return ui, body
+
+
+def build_lang(records, lang):
+    ui, body = _finder_block(records, lang)
     crumb = [(ui["home"], "/"), (ui["products"], "/products/"), (ui["title"], PATH)]
     content = hp.page(lang, PATH, ui["title"] + " | ETIA", ui["lede"], ui["title"], ui["lede"], body, crumb,
                       active="products", trust=False, langs=hp.NAV_PILLAR_LANGS)
     hp.write(lang, PATH, content)
     if lang == "en":
         hp.track(PATH, "core")
+
+
+# ---- Request a Sample: the finder browse UI, in "shop" mode, with a sample-list
+# cart at the top and the shipping/contact form below. Submits the sample slip to
+# sales by email (mailto) for 1-to-1 follow-up. Samples are free; shipping is
+# freight-collect (customer pays courier on delivery). ----
+SAMPLE_PATH = "/request-sample/"
+
+def build_sample_request(records, lang):
+    ui, browse = _finder_block(records, lang, add_only=True)
+    def lb(en, zh_, vi="", th=""): return hp.P(lang, en, zh_, vi or en, th or en)
+    COUNTRIES = [
+        ("Vietnam", lb("Vietnam", "越南", "Việt Nam", "เวียดนาม")),
+        ("Thailand", lb("Thailand", "泰国", "Thái Lan", "ไทย")),
+        ("Indonesia", lb("Indonesia", "印度尼西亚", "Indonesia", "อินโดนีเซีย")),
+        ("Malaysia", lb("Malaysia", "马来西亚", "Malaysia", "มาเลเซีย")),
+        ("Singapore", lb("Singapore", "新加坡", "Singapore", "สิงคโปร์")),
+    ]
+    opts = "".join('<option value="%s">%s</option>' % (esc(v), esc(t)) for v, t in COUNTRIES)
+    OFFICE = {"Vietnam": lb("Bac Ninh office", "北宁办事处", "Văn phòng Bắc Ninh", "สำนักงานบั๊กนิญ"),
+              "Thailand": lb("Bangkok office", "曼谷办事处", "Văn phòng Bangkok", "สำนักงานกรุงเทพฯ")}
+    OFFICE_DEFAULT = lb("our Southeast Asia team", "我们的东南亚团队", "đội ngũ Đông Nam Á của chúng tôi", "ทีมเอเชียตะวันออกเฉียงใต้ของเรา")
+    office_js = "{" + ",".join('"%s":"%s"' % (k, esc(v)) for k, v in OFFICE.items()) + "}"
+
+    css = ('<style>'
+      '.rqbar{max-width:1180px;margin:0 auto;padding:22px 22px 0}'
+      '.rqhd{font-family:var(--sans);font-weight:800;color:#143C96;font-size:16px;margin:0 0 10px;display:flex;align-items:center;gap:9px}'
+      '.rqhd .n{font-size:12px;font-weight:800;color:#fff;background:#41A62A;border-radius:999px;padding:2px 9px;min-width:12px;text-align:center}'
+      '.rqcartbox{background:#f4f8f1;border:1px solid #cfe6c3;border-radius:14px;padding:16px 18px;margin:0 0 16px}'
+      '.rqcart{display:flex;flex-wrap:wrap;gap:8px;margin:0}'
+      '.rqcitem{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #cfe0c5;border-radius:22px;padding:7px 8px 7px 14px;font-size:13.5px;font-weight:700;color:#2c7a1e;font-family:ui-monospace,Menlo,Consolas,monospace}'
+      '.rqcitem button{border:none;background:#dcebd3;color:#2c7a1e;width:20px;height:20px;border-radius:50%;cursor:pointer;font-size:14px;line-height:1;font-weight:800}'
+      '.rqempty{font-size:14px;color:#5a6884;margin:0}.rqempty a{color:#1A56DB;font-weight:700;text-decoration:none}'
+      '.rqfree{background:#eef3fc;border:1px solid #d6e2f6;border-radius:12px;padding:12px 16px;font-size:13.5px;color:#33456b;margin:0 0 16px;line-height:1.55}'
+      '.rqfree b{color:#143C96}'
+      '.rqform{max-width:1180px;margin:0 auto;padding:6px 22px 10px}'
+      '.rqsechd{font-family:var(--sans);font-weight:800;color:#143C96;font-size:19px;margin:26px 0 4px}'
+      '.rqsub{color:#5a6884;font-size:14px;margin:0 0 14px}'
+      '.rqg{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px;margin:10px 0 16px}'
+      '.rqform label.f{display:flex;flex-direction:column;font-size:13px;font-weight:700;color:#143C96;gap:6px}'
+      '.rqform label.full{grid-column:1/-1}'
+      '.rqform input,.rqform select,.rqform textarea{font:inherit;font-weight:400;padding:11px 12px;border:1px solid #cdd8ec;border-radius:9px;background:#fff;color:#17203a}'
+      '.rqform input:focus,.rqform select:focus,.rqform textarea:focus{outline:2px solid #1A56DB;border-color:#1A56DB}'
+      '.rqoffice{grid-column:1/-1;font-size:13px;color:#5a6884;margin:-4px 0 0}'
+      '.rqsubmit{background:#41A62A;color:#fff;border:none;border-radius:10px;padding:14px 26px;font-size:15px;font-weight:800;cursor:pointer}'
+      '.rqsubmit:hover{background:#37901f}'
+      '.rqok{display:none;background:#e6f5e0;border:1px solid #bfe3b0;border-radius:12px;padding:18px 20px;color:#1f7a1f;font-weight:700;margin-top:14px}'
+      '.rqhide{display:none}'
+      '.rqsteps{max-width:1180px;margin:0 auto;padding:20px 22px 0;display:flex;gap:10px;flex-wrap:wrap}'
+      '.rqstep{font-size:13px;font-weight:800;color:#8894ac;background:#eef1f7;border:1px solid #e0e6f0;border-radius:999px;padding:7px 16px}'
+      '.rqstep.on{color:#fff;background:#143C96;border-color:#143C96}'
+      '.rqcont{background:#143C96;color:#fff;border:none;border-radius:10px;padding:14px 26px;font-size:15px;font-weight:800;cursor:pointer;margin:2px 0 4px}'
+      '.rqcont:hover{background:#0f2f78}.rqcont:disabled{background:#b9c3d8;cursor:not-allowed}'
+      '.rqback{display:inline-block;font-size:14px;font-weight:800;color:#1A56DB;text-decoration:none;margin:0 0 10px}'
+      '.rqrecap{list-style:none;margin:6px 0 16px;padding:14px 16px;background:#f4f8f1;border:1px solid #cfe6c3;border-radius:12px;display:grid;gap:6px}'
+      '.rqrecap li{font-size:13.5px;font-weight:800;color:#2c7a1e;font-family:ui-monospace,Menlo,Consolas,monospace}'
+      '.rqrecap li span{font-family:var(--sans);font-weight:600;color:#5a6884}.rqrecap li.n{color:#5a6884;font-family:var(--sans);font-weight:600}'
+      '.rqagree{display:flex;align-items:flex-start;gap:10px;background:#eef3fc;border:1px solid #d6e2f6;border-radius:12px;padding:14px 16px;margin:8px 0 16px;font-size:13.5px;color:#33456b;line-height:1.55;cursor:pointer}'
+      '.rqagree input{width:18px;height:18px;margin-top:1px;accent-color:#41A62A;flex:none}'
+      '.rqagree b{color:#143C96}'
+      '@media(max-width:560px){.rqg{grid-template-columns:1fr}}</style>')
+
+    browse_anchor = "rq_browse"
+
+    # ---- Step indicator ----
+    steps = ('<div class="rqsteps"><span class="rqstep on" id="rqs1">' +
+      esc(lb("1 · Select samples", "1 · 选择样品", "1 · Chọn mẫu", "1 · เลือกตัวอย่าง")) + '</span>'
+      '<span class="rqstep" id="rqs2">' +
+      esc(lb("2 · Shipping & delivery", "2 · 寄送与配送", "2 · Giao hàng", "2 · การจัดส่ง")) + '</span></div>')
+
+    # ===== STEP 1 — sample cart + browse grid =====
+    step1 = ('<section id="rq_step1"><div class="rqbar">'
+      '<p class="rqfree">' + esc(lb(
+        "Samples are free of charge. Shipping is freight-collect via DHL — DHL collects the delivery fee from you on arrival. Add the label models you'd like to try, then continue to enter your shipping address.",
+        "样品免费，邮费到付（DHL）—— 运费由 DHL 在收货时向您收取。选择您想试用的标签型号，然后继续填写收货地址。",
+        "Mẫu miễn phí. Cước vận chuyển thu hộ qua DHL — DHL thu phí giao hàng khi bạn nhận. Chọn các mã nhãn muốn thử, rồi tiếp tục nhập địa chỉ giao hàng.",
+        "ตัวอย่างฟรี ค่าจัดส่งเก็บปลายทางผ่าน DHL — DHL จะเก็บค่าจัดส่งเมื่อสินค้าถึงมือคุณ เลือกรุ่นฉลากที่ต้องการทดลอง แล้วไปกรอกที่อยู่จัดส่งต่อ")) + '</p>'
+      '<div class="rqhd">' + esc(lb("Your sample cart", "您的样品车", "Giỏ mẫu của bạn", "ตะกร้าตัวอย่างของคุณ")) +
+        '<span class="n" id="rq_n">0</span></div>'
+      '<div class="rqcartbox"><div class="rqcart" id="rq_cart"></div>'
+      '<p class="rqempty" id="rq_empty">' + esc(lb(
+        "No samples in your cart yet — browse the materials below and tap a card (or its “+”) to add it here.",
+        "样品车还是空的 —— 浏览下方材料，点击卡片（或其“+”）即可加入。",
+        "Giỏ mẫu còn trống — duyệt vật liệu bên dưới và bấm vào thẻ (hoặc dấu “+”) để thêm.",
+        "ยังไม่มีตัวอย่างในตะกร้า — เลือกดูวัสดุด้านล่างแล้วแตะที่การ์ด (หรือ “+”) เพื่อเพิ่ม")) +
+        ' <a href="#' + browse_anchor + '">' + esc(lb("Browse below ↓", "浏览下方 ↓", "Xem bên dưới ↓", "เลือกดูด้านล่าง ↓")) + '</a></p>'
+      '<button type="button" class="rqcont" onclick="rqGoShip()">' +
+        esc(lb("Confirm samples & continue to shipping →", "确认样品并继续填写寄送 →", "Xác nhận mẫu & tiếp tục giao hàng →", "ยืนยันตัวอย่างและไปยังการจัดส่ง →")) + '</button>'
+      '</div></div>'
+      # browse/filter grid (finder in shop mode)
+      '<div class="rqform" id="' + browse_anchor + '"><div class="rqsechd">' + esc(lb(
+        "Browse & add samples", "浏览并选择样品", "Duyệt & thêm mẫu", "เลือกดูและเพิ่มตัวอย่าง")) + '</div>'
+      '<p class="rqsub">' + esc(lb("Search by part number, material or application, or filter — then tap a card to add it to your sample cart above.",
+        "按料号、材料或应用搜索，或使用筛选 —— 点击卡片即可加入上方样品车。",
+        "Tìm theo mã, vật liệu hoặc ứng dụng, hoặc lọc — rồi bấm vào thẻ để thêm vào giỏ mẫu ở trên.",
+        "ค้นหาด้วยรหัส วัสดุ หรือการใช้งาน หรือกรอง — แล้วแตะการ์ดเพื่อเพิ่มลงในตะกร้าตัวอย่างด้านบน")) + '</p></div>'
+      + browse + '</section>')
+
+    # ===== STEP 2 — shipping address + freight-collect consent =====
+    step2 = ('<section id="rq_step2" class="rqhide"><div class="rqform">'
+      '<a class="rqback" href="javascript:void(0)" onclick="rqBackCart()">' +
+        esc(lb("← Edit sample cart", "← 修改样品车", "← Sửa giỏ mẫu", "← แก้ไขตะกร้าตัวอย่าง")) + '</a>'
+      '<div class="rqsechd">' + esc(lb("Your samples", "您的样品", "Mẫu của bạn", "ตัวอย่างของคุณ")) +
+        ' <span class="n" id="rq_rn" style="background:#41A62A;color:#fff;border-radius:999px;padding:2px 9px;font-size:12px">0</span></div>'
+      '<ul class="rqrecap" id="rq_recap"></ul>'
+      '<form class="rqform" style="padding:0" onsubmit="return etaSampleReq(event)">'
+      '<div class="rqsechd">' + esc(lb("Shipping address", "收货地址", "Địa chỉ giao hàng", "ที่อยู่จัดส่ง")) + '</div>'
+      '<p class="rqsub">' + esc(lb("Where should DHL deliver the samples? Our sales team will confirm the samples and freight-collect shipping with you.",
+        "样品由 DHL 寄往何处？我们的销售团队将与您确认样品与到付运费事宜。",
+        "DHL giao mẫu đến đâu? Đội ngũ kinh doanh sẽ xác nhận mẫu và cước thu hộ với bạn.",
+        "ให้ DHL จัดส่งตัวอย่างไปที่ไหน? ทีมขายจะยืนยันตัวอย่างและค่าจัดส่งเก็บปลายทางกับคุณ")) + '</p>'
+      '<div class="rqg">'
+      '<label class="f">' + esc(lb("Name *", "姓名 *", "Tên *", "ชื่อ *")) + '<input name="name" required></label>'
+      '<label class="f">' + esc(lb("Company", "公司", "Công ty", "บริษัท")) + '<input name="company"></label>'
+      '<label class="f">' + esc(lb("Email *", "邮箱 *", "Email *", "อีเมล *")) + '<input type="email" name="email" required></label>'
+      '<label class="f">' + esc(lb("Phone *", "电话 *", "Điện thoại *", "โทรศัพท์ *")) + '<input name="phone" required></label>'
+      '<label class="f">' + esc(lb("Country *", "国家 *", "Quốc gia *", "ประเทศ *")) +
+        '<select name="country" id="rq_country" required onchange="rqOffice()"><option value="">' +
+        esc(lb("Select…", "请选择…", "Chọn…", "เลือก…")) + '</option>' + opts + '</select></label>'
+      '<label class="f">' + esc(lb("City *", "城市 *", "Thành phố *", "เมือง *")) + '<input name="city" required></label>'
+      '<label class="f">' + esc(lb("District / State", "地区 / 州", "Quận / Bang", "เขต / รัฐ")) + '<input name="district"></label>'
+      '<label class="f">' + esc(lb("Postal code", "邮编", "Mã bưu điện", "รหัสไปรษณีย์")) + '<input name="postal"></label>'
+      '<label class="f full">' + esc(lb("Full address *", "详细地址 *", "Địa chỉ đầy đủ *", "ที่อยู่เต็ม *")) + '<input name="address" required></label>'
+      '<p class="rqoffice" id="rq_office"></p>'
+      '<label class="f full">' + esc(lb("Your application — surface, temperature, chemistry, print method, label size",
+        "您的应用 —— 表面、温度、化学环境、打印方式、标签尺寸",
+        "Ứng dụng của bạn — bề mặt, nhiệt độ, hóa chất, phương pháp in, kích thước nhãn",
+        "การใช้งานของคุณ — พื้นผิว อุณหภูมิ สารเคมี วิธีพิมพ์ ขนาดฉลาก")) + '<textarea name="message" rows="3"></textarea></label>'
+      '<label class="f full">' + esc(lb("Anything else / notes", "其他备注", "Ghi chú khác", "หมายเหตุอื่น ๆ")) + '<input name="models"></label>'
+      '</div>'
+      '<label class="rqagree"><input type="checkbox" id="rq_agree"><span>' + esc(lb(
+        "I agree that samples are free of charge and shipping is freight-collect via DHL — DHL will collect the delivery fee from me on arrival.",
+        "我同意：样品免费，运费由 DHL 邮费到付 —— DHL 将在收货时向我收取运费。",
+        "Tôi đồng ý rằng mẫu được miễn phí và cước vận chuyển thu hộ qua DHL — DHL sẽ thu phí giao hàng khi tôi nhận.",
+        "ฉันยอมรับว่าตัวอย่างฟรีและค่าจัดส่งเก็บปลายทางผ่าน DHL — DHL จะเก็บค่าจัดส่งเมื่อสินค้าถึงมือฉัน")) + '</span></label>'
+      '<button class="rqsubmit" type="submit">' + esc(lb("Submit sample request", "提交样品申请", "Gửi yêu cầu mẫu", "ส่งคำขอตัวอย่าง")) + '</button>'
+      '<div class="rqok" id="rq_ok">' + esc(lb(
+        "Thank you — your sample request has been prepared. Your email app will open with the request; send it and our sales team will contact you.",
+        "感谢您 —— 样品申请单已生成。您的邮件应用将打开并带上申请内容，发送后我们的销售团队会与您联系。",
+        "Cảm ơn bạn — yêu cầu mẫu đã được chuẩn bị. Ứng dụng email sẽ mở kèm nội dung; hãy gửi đi và đội ngũ kinh doanh sẽ liên hệ với bạn.",
+        "ขอบคุณ — คำขอตัวอย่างถูกจัดเตรียมแล้ว แอปอีเมลจะเปิดพร้อมเนื้อหา ส่งแล้วทีมขายจะติดต่อคุณ")) + '</div>'
+      '</form></div></section>')
+
+    RQ_EMPTY = esc(lb("Please add at least one sample to your cart first.", "请先在样品车中至少添加一个样品。", "Vui lòng thêm ít nhất một mẫu vào giỏ trước.", "กรุณาเพิ่มตัวอย่างอย่างน้อยหนึ่งรายการลงในตะกร้าก่อน"))
+    RQ_AGREE = esc(lb("Please tick the box to agree to free samples with freight-collect (DHL) shipping.", "请勾选同意“样品免费、邮费到付（DHL）”。", "Vui lòng tích chọn đồng ý mẫu miễn phí, cước thu hộ (DHL).", "กรุณาติ๊กช่องยอมรับตัวอย่างฟรีและค่าจัดส่งเก็บปลายทาง (DHL)"))
+    RQ_NONE = esc(lb("No samples selected.", "未选择样品。", "Chưa chọn mẫu.", "ยังไม่ได้เลือกตัวอย่าง"))
+
+    js = ('<script>var RQ_OFFICE=' + office_js + ',RQ_DEF="' + esc(OFFICE_DEFAULT) + '",'
+      'RQ_EMPTY="' + RQ_EMPTY + '",RQ_AGREE="' + RQ_AGREE + '",RQ_NONE="' + RQ_NONE + '";'
+      'window.rqRenderCart=function(){if(!window.etiaSample)return;var a=window.etiaSample.get(),'
+      'box=document.getElementById("rq_cart"),emp=document.getElementById("rq_empty"),nn=document.getElementById("rq_n"),'
+      'rc=document.getElementById("rq_recap"),rn=document.getElementById("rq_rn");'
+      'if(box){box.innerHTML=a.map(function(x){var c=(x.code||"").replace(/[^A-Za-z0-9._-]/g,"");'
+      'return "<span class=\\"rqcitem\\">"+(x.code||"")+"<button type=\\"button\\" aria-label=\\"remove\\" onclick=\\"window.etiaSample.remove(\'"+c+"\')\\">\\u00d7</button></span>";}).join("");}'
+      'if(emp)emp.style.display=a.length?"none":"block";if(nn)nn.textContent=a.length;if(rn)rn.textContent=a.length;'
+      'if(rc)rc.innerHTML=a.length?a.map(function(x){return "<li>"+(x.code||"")+((x.name&&x.name!==x.code)?(" <span>"+x.name+"</span>"):"")+"</li>";}).join(""):"<li class=\\"n\\">"+RQ_NONE+"</li>";};'
+      'function rqGoShip(){var a=window.etiaSample?window.etiaSample.get():[];'
+      'if(!a.length){alert(RQ_EMPTY);var b=document.getElementById("' + browse_anchor + '");if(b)b.scrollIntoView({behavior:"smooth"});return;}'
+      'document.getElementById("rq_step1").classList.add("rqhide");document.getElementById("rq_step2").classList.remove("rqhide");'
+      'document.getElementById("rqs1").classList.remove("on");document.getElementById("rqs2").classList.add("on");'
+      'window.rqRenderCart();window.scrollTo({top:0,behavior:"smooth"});}'
+      'function rqBackCart(){document.getElementById("rq_step2").classList.add("rqhide");document.getElementById("rq_step1").classList.remove("rqhide");'
+      'document.getElementById("rqs2").classList.remove("on");document.getElementById("rqs1").classList.add("on");'
+      'window.rqRenderCart();window.scrollTo({top:0,behavior:"smooth"});}'
+      'function rqOffice(){var c=document.getElementById("rq_country").value,'
+      'o=document.getElementById("rq_office");if(!c){o.textContent="";return;}'
+      'o.textContent="' + esc(lb("Handled by", "由", "Được xử lý bởi", "ดูแลโดย")) + ' "+(RQ_OFFICE[c]||RQ_DEF)+".";}'
+      'function etaSampleReq(e){e.preventDefault();var f=e.target,g=function(n){var el=f.querySelector("[name="+n+"]");return el?el.value.trim():"";};'
+      'var picks=(window.etiaSample?window.etiaSample.get():[]).map(function(x){return x.code+((x.name&&x.name!==x.code)?(" - "+x.name):"");});'
+      'if(!picks.length){alert(RQ_EMPTY);return false;}'
+      'var nm=g("name"),em=g("email"),ph=g("phone"),co=g("country"),ci=g("city"),ad=g("address");'
+      'if(!nm||!em||!ph||!co||!ci||!ad){alert("' + esc(lb("Please fill in the required fields (*).", "请填写带 * 的必填项。", "Vui lòng điền các trường bắt buộc (*).", "กรุณากรอกช่องที่จำเป็น (*)")) + '");return false;}'
+      'var ag=document.getElementById("rq_agree");if(ag&&!ag.checked){alert(RQ_AGREE);return false;}'
+      'var NL="%0D%0A",b="=== ' + esc(lb("SAMPLE REQUEST", "样品申请单", "YÊU CẦU MẪU", "คำขอตัวอย่าง")) + ' ==="+NL+NL'
+      '+"' + esc(lb("Name", "姓名", "Tên", "ชื่อ")) + ': "+nm+NL'
+      '+"' + esc(lb("Company", "公司", "Công ty", "บริษัท")) + ': "+g("company")+NL'
+      '+"' + esc(lb("Email", "邮箱", "Email", "อีเมล")) + ': "+em+NL'
+      '+"' + esc(lb("Phone", "电话", "Điện thoại", "โทรศัพท์")) + ': "+ph+NL+NL'
+      '+"' + esc(lb("Country", "国家", "Quốc gia", "ประเทศ")) + ': "+co+NL'
+      '+"' + esc(lb("City", "城市", "Thành phố", "เมือง")) + ': "+ci+"   ' + esc(lb("District", "地区", "Quận", "เขต")) + ': "+g("district")+NL'
+      '+"' + esc(lb("Address", "地址", "Địa chỉ", "ที่อยู่")) + ': "+ad+NL'
+      '+"' + esc(lb("Postal", "邮编", "Mã bưu điện", "รหัสไปรษณีย์")) + ': "+g("postal")+NL+NL'
+      '+"' + esc(lb("Samples", "样品", "Mẫu", "ตัวอย่าง")) + ': "+(picks.join(", ")||"-")+NL'
+      '+"' + esc(lb("Application", "应用", "Ứng dụng", "การใช้งาน")) + ': "+g("message")+NL'
+      '+"' + esc(lb("Notes", "备注", "Ghi chú", "หมายเหตุ")) + ': "+g("models")+NL'
+      '+"' + esc(lb("Shipping", "运费", "Vận chuyển", "การจัดส่ง")) + ': ' + esc(lb("Free samples · freight-collect via DHL (customer agreed)", "样品免费 · DHL 邮费到付（客户已同意）", "Mẫu miễn phí · cước thu hộ qua DHL (khách đã đồng ý)", "ตัวอย่างฟรี · เก็บเงินปลายทางผ่าน DHL (ลูกค้ายอมรับแล้ว)")) + '"+NL;'
+      'var sub=encodeURIComponent("' + esc(lb("Sample Request", "样品申请", "Yêu cầu mẫu", "คำขอตัวอย่าง")) + ' - "+nm+" ("+co+")");'
+      'document.getElementById("rq_ok").style.display="block";'
+      'window.location.href="mailto:etialabel@etia-tech.com?subject="+sub+"&body="+b;return false;}'
+      'if(window.etiaSample)window.rqRenderCart();</script>')
+
+    body = css + steps + step1 + step2 + js
+    L1 = lb("Request Samples", "申请样品", "Yêu cầu mẫu", "ขอตัวอย่าง")
+    crumb = [(ui["home"], "/"), (ui["products"], "/products/"), (L1, SAMPLE_PATH)]
+    content = hp.page(lang, SAMPLE_PATH,
+        hp.P(lang, "Request Samples | ETIA", "申请样品 | ETIA", "Yêu cầu mẫu | ETIA", "ขอตัวอย่าง | ETIA"),
+        hp.P(lang, "Request free label samples from ETIA — pick the labels, tell us your country and address, and our sales team follows up one-to-one. Samples free, shipping freight-collect.",
+          "向 ETIA 免费申请标签样品 —— 选择样品、填写国家与地址，我们的销售团队将一对一跟进。样品免费，邮费到付。",
+          "Yêu cầu mẫu nhãn miễn phí từ ETIA — chọn nhãn, cho biết quốc gia và địa chỉ, đội ngũ kinh doanh sẽ liên hệ trực tiếp. Mẫu miễn phí, cước thu hộ.",
+          "ขอตัวอย่างฉลากฟรีจาก ETIA — เลือกฉลาก บอกประเทศและที่อยู่ แล้วทีมขายจะติดต่อแบบตัวต่อตัว ตัวอย่างฟรี ค่าส่งเก็บปลายทาง"),
+        L1,
+        hp.P(lang, "Pick your labels and address — samples are free, shipping is freight-collect, and our sales team confirms everything with you directly.",
+          "选择样品并填写地址 —— 样品免费、邮费到付，我们的销售团队将直接与您确认全部事宜。",
+          "Chọn nhãn và địa chỉ — mẫu miễn phí, cước thu hộ, đội ngũ kinh doanh sẽ xác nhận mọi thứ trực tiếp với bạn.",
+          "เลือกฉลากและที่อยู่ — ตัวอย่างฟรี ค่าส่งเก็บปลายทาง และทีมขายจะยืนยันทุกอย่างกับคุณโดยตรง"),
+        body, crumb, active="products", trust=False, langs=hp.NAV_PILLAR_LANGS)
+    hp.write(lang, SAMPLE_PATH, content)
+    if lang == "en":
+        hp.track(SAMPLE_PATH, "core")
 
 
 # ---- Brand page (e.g. Polyonics): one card per product, scanned from the DB ----
@@ -777,7 +1014,11 @@ def build_brand(records, lang, bkey):
     bname = gp.BRAND_NAMES[bkey].get(lang) or gp.BRAND_NAMES[bkey]["en"]
     def L(node):
         if isinstance(node, dict):
-            return node.get(lang) or node.get("en") or node.get("zh") or ""
+            if node.get(lang):
+                return node[lang]
+            if lang in ("id", "ms"):
+                return hp._tr(lang, node.get("en") or node.get("zh") or "")
+            return node.get("en") or node.get("zh") or ""
         return node or ""
     items = [r for r in records if r["brand"] == bkey]
     def card(r, tag=None):
@@ -904,6 +1145,7 @@ def main():
         records.append(build_record(d))
     for lang in LANGS:
         build_lang(records, lang)
+        build_sample_request(records, lang)
         for c in POLY_CATS:
             build_poly_cat(lang, c["slug"])
         build_brand(records, lang, "polyonics")

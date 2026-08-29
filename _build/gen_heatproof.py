@@ -21,9 +21,121 @@ APPS = DATA["applications"]
 LANGS = ["en", "zh"]                       # default inner-site languages
 NAV_PILLAR_LANGS = ["en", "zh", "vi", "th", "id", "ms"]  # Solutions / Service / Insight pillars + Indonesian & Malay
 JX = {"en": 0, "zh": 1, "vi": 2, "th": 3, "id": 0, "ms": 0}  # id/ms index English positional content
-def P(lang, en, zh, vi, th, id=None, ms=None):   # multi-language inline string pick (id/ms fall back to en)
-    return {"en": en, "zh": zh, "vi": vi, "th": th,
-            "id": en if id is None else id, "ms": en if ms is None else ms}.get(lang, en)
+# ---- Indonesian / Malay translation overlay --------------------------------
+# All id/ms translation lives in two English-keyed maps (data/i18n/{id,ms}.json)
+# so it can be reviewed and edited in one place without touching call sites. Any
+# string missing from the overlay falls back to English. Explicit id=/ms= args to
+# P() still win. Use loc() to resolve a {lang:...} content dict through the overlay.
+_I18N = {"id": {}, "ms": {}}
+def _load_i18n():
+    for code in ("id", "ms"):
+        p = os.path.join(BUILD_DIR, "data", "i18n", code + ".json")
+        try:
+            _I18N[code] = json.load(open(p, encoding="utf-8"))
+        except Exception:
+            _I18N[code] = {}
+_load_i18n()
+
+_I18N_MISS = {"id": {}, "ms": {}}   # audit: English strings with no translation on file
+_I18N_AUDIT = bool(os.environ.get("ETIA_I18N_AUDIT"))
+def _tr(code, en):
+    """Overlay lookup for id/ms, keyed by the English source string (exact, then
+    whitespace-trimmed); returns English when no translation is on file. Non-string
+    inputs (e.g. a list of feature bullets) pass through unchanged — their items are
+    translated later by the HTML post-pass."""
+    if not isinstance(en, str) or not en:
+        return en
+    m = _I18N.get(code, {})
+    hit = m.get(en) or m.get(en.strip())
+    if hit:
+        return hit
+    if _I18N_AUDIT and en.strip():
+        _I18N_MISS.setdefault(code, {})[en] = en
+    return en
+
+def dump_i18n_audit():
+    if not _I18N_AUDIT:
+        return
+    for code in ("id", "ms"):
+        out = os.path.join(BUILD_DIR, "data", "i18n", "_misses_%s.json" % code)
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        json.dump(_I18N_MISS.get(code, {}), open(out, "w", encoding="utf-8"),
+                  ensure_ascii=False, indent=1, sort_keys=True)
+        print("i18n audit: %d untranslated %s strings -> %s" % (len(_I18N_MISS.get(code, {})), code, out))
+
+def P(lang, en, zh, vi, th, id=None, ms=None):   # multi-language inline string pick
+    if lang == "id":
+        return id if id is not None else _tr("id", en)
+    if lang == "ms":
+        return ms if ms is not None else _tr("ms", en)
+    return {"en": en, "zh": zh, "vi": vi, "th": th}.get(lang, en)
+
+def loc(node, lang):
+    """Resolve a {lang:...} content dict (or a plain string) to `lang`. For id/ms,
+    when the dict carries no explicit id/ms value, translate the English value via
+    the overlay. Falls back to English, then Chinese, then ''."""
+    if isinstance(node, dict):
+        v = node.get(lang)
+        if v:
+            return v
+        en = node.get("en") or node.get("zh") or ""
+        if lang in ("id", "ms") and en:
+            return _tr(lang, en)
+        return en
+    if lang in ("id", "ms"):
+        return _tr(lang, node) if node else (node or "")
+    return node or ""
+
+def dpick(d, lang):
+    """Pick from a {lang: value} dict where value is a str or list[str]. For id/ms
+    with no explicit value on file, translate the English value(s) via the overlay."""
+    if d.get(lang):
+        return d[lang]
+    en = d.get("en")
+    if lang in ("id", "ms") and en is not None:
+        if isinstance(en, (list, tuple)):
+            return [_tr(lang, x) for x in en]
+        return _tr(lang, en)
+    return en
+
+def spick(seq, lang):
+    """Pick from a positional (en, zh, vi, th[, ...]) sequence; for id/ms translate
+    the English item (index 0) via the overlay."""
+    if lang in ("id", "ms"):
+        return _tr(lang, seq[0])
+    return seq[JX[lang]]
+
+_I18N_PAIRS = {}   # lang -> [(esc(en), esc(tr)), ...] longest-en-first, built lazily
+def _i18n_htmlpass(page_html, lang):
+    """Final overlay pass for id/ms pages: translate English strings that reached
+    the HTML through positional/dict lookups (which bypass P/navlab/loc). Only whole
+    text nodes (>EN<) and whole attribute values ("EN") are replaced, longest first,
+    so no substring of a larger word or string is ever touched. English not on file
+    in the overlay is left as-is. Records misses when ETIA_I18N_AUDIT is set."""
+    if lang not in ("id", "ms"):
+        return page_html
+    m = _I18N.get(lang, {})
+    if not m and not _I18N_AUDIT:
+        return page_html
+    if lang not in _I18N_PAIRS:
+        pairs = []
+        for en, tr in m.items():
+            if not tr or tr == en:
+                continue
+            een, etr = esc(en), esc(tr)
+            # text node with optional surrounding whitespace: >  EN  <  ->  >  TR  <
+            rx = re.compile(r'(>\s*)' + re.escape(een) + r'(\s*<)')
+            pairs.append((een, etr, rx))
+        pairs.sort(key=lambda p: -len(p[0]))   # longest English first
+        _I18N_PAIRS[lang] = pairs
+    for een, etr, rx in _I18N_PAIRS[lang]:
+        if een not in page_html:
+            continue
+        page_html = rx.sub(lambda mm: mm.group(1) + etr + mm.group(2), page_html)
+        q = '"' + een + '"'
+        if q in page_html:
+            page_html = page_html.replace(q, '"' + etr + '"')
+    return page_html
 PREFIX = {"en": "", "zh": "/cn", "vi": "/vn", "th": "/th", "id": "/id", "ms": "/my"}
 HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th", "id": "id", "ms": "ms"}
 # Locales that are BUILT but not yet publicly advertised (English fallback until
@@ -634,6 +746,7 @@ def navlab(lang, t):
     if lang == "zh": return NAV_ZH.get(t, t)
     if lang == "vi": return NAV_VI.get(t, t)
     if lang == "th": return NAV_TH.get(t, t)
+    if lang in ("id", "ms"): return _tr(lang, t)
     return t
 
 # Products mega-menu: current sectors only (legacy partner-brand sectors retired)
@@ -1121,6 +1234,7 @@ etaSub(first,first?first.getAttribute('data-sub'):'');}
      Lx(lang,"/"), nav_html(lang, active, path, langs), cr, head_block, (trust_bar(lang) if trust else ""), body, footer_html(lang))
 
 def write(lang, path, content):
+    content = _i18n_htmlpass(content, lang)
     full = os.path.join(ROOT, (PREFIX[lang] + path).strip("/"), "index.html")
     os.makedirs(os.path.dirname(full), exist_ok=True)
     open(full, "w").write(content)
@@ -2155,6 +2269,7 @@ var b='Email: '+g('fs-email')+'%%0D%%0APhone: '+g('fs-phone')+'%%0D%%0AAddress: 
 window.location.href='mailto:etialabel@etia-tech.com?subject=Free%%20Sample%%20Request&body='+b;return false;}</script>
 </body></html>""" % (lang,esc(T["meta_title"]),esc(T["meta_desc"]),canonical,home_hreflang(path),hero_preload,esc(T["meta_title"]),CSS,schema_js,
         ("/" if lang=="en" else HL_PREFIX[lang]+"/"),home_nav(lang),body,home_footer(lang))
+    doc=_i18n_htmlpass(doc,lang)
     outdir=os.path.join(ROOT,HL_PREFIX[lang].strip("/")) if HL_PREFIX[lang] else ROOT
     os.makedirs(outdir,exist_ok=True)
     open(os.path.join(outdir,"index.html"),"w").write(doc)
@@ -2409,125 +2524,6 @@ def build_contact(lang):
           "แบ่งปันการใช้งานของคุณ — เราจะจับคู่วัสดุและตรวจสอบด้วยตัวอย่าง"),
         body, crumb, active="contact"))
     if lang=="en": track("/contact/","core")
-
-def build_request_sample(lang):
-    """Sample-request page: contact + country-based address + sample selection.
-    Submits the 'sample slip' to sales by email (mailto) for 1-to-1 follow-up.
-    (Set SAMPLE_ENDPOINT to a form-service URL to POST instead of email.)"""
-    def lb(en, zh_, vi="", th=""): return P(lang, en, zh_, vi or en, th or en)
-    COUNTRIES = [
-        ("Vietnam", lb("Vietnam", "越南", "Việt Nam", "เวียดนาม")),
-        ("Thailand", lb("Thailand", "泰国", "Thái Lan", "ไทย")),
-        ("Indonesia", lb("Indonesia", "印度尼西亚", "Indonesia", "อินโดนีเซีย")),
-        ("Malaysia", lb("Malaysia", "马来西亚", "Malaysia", "มาเลเซีย")),
-        ("Singapore", lb("Singapore", "新加坡", "Singapore", "สิงคโปร์")),
-    ]
-    opts = "".join('<option value="%s">%s</option>' % (esc(v), esc(t)) for v, t in COUNTRIES)
-    css = ('<style>.rqwrap{max-width:820px;margin:0 auto;padding:8px 22px 20px}'
-      '.rqform{display:block}.rqg{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px;margin:10px 0 16px}'
-      '.rqform label.f{display:flex;flex-direction:column;font-size:13px;font-weight:700;color:var(--blue-deep);gap:6px}'
-      '.rqform label.full{grid-column:1/-1}'
-      '.rqform input,.rqform select,.rqform textarea{font:inherit;font-weight:400;padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink)}'
-      '.rqform input:focus,.rqform select:focus,.rqform textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}'
-      '.rqoffice{grid-column:1/-1;font-size:13px;color:var(--mut);margin:-4px 0 0}'
-      '.rqcart{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 4px}'
-      '.rqcitem{display:inline-flex;align-items:center;gap:8px;background:#eef3fc;border:1px solid #d5e1f5;border-radius:22px;padding:7px 8px 7px 14px;font-size:13.5px;font-weight:700;color:#143C96;font-family:ui-monospace,Menlo,Consolas,monospace}'
-      '.rqcitem button{border:none;background:#c9d6ee;color:#143C96;width:20px;height:20px;border-radius:50%;cursor:pointer;font-size:14px;line-height:1;font-weight:800}'
-      '.rqempty{font-size:13.5px;color:#5a6884;margin:2px 0 4px}.rqempty a{color:#1A56DB;font-weight:700}'
-      '.rqnote{background:#f4f7fd;border:1px solid #e6ecf7;border-radius:10px;padding:12px 14px;font-size:13px;color:#41506e;margin:14px 0}'
-      '.rqok{display:none;background:#e6f5e0;border:1px solid #bfe3b0;border-radius:12px;padding:18px 20px;color:#1f7a1f;font-weight:700}'
-      '@media(max-width:560px){.rqg{grid-template-columns:1fr}}</style>')
-    OFFICE = {"Vietnam": lb("Bac Ninh office", "北宁办事处", "Văn phòng Bắc Ninh", "สำนักงานบั๊กนิญ"),
-              "Thailand": lb("Bangkok office", "曼谷办事处", "Văn phòng Bangkok", "สำนักงานกรุงเทพฯ")}
-    OFFICE_DEFAULT = lb("our Southeast Asia team", "我们的东南亚团队", "đội ngũ Đông Nam Á của chúng tôi", "ทีมเอเชียตะวันออกเฉียงใต้ของเรา")
-    office_js = "{" + ",".join('"%s":"%s"' % (k, esc(v)) for k, v in OFFICE.items()) + "}"
-    L1 = lb("Request Samples", "申请样品", "Yêu cầu mẫu", "ขอตัวอย่าง")
-    body = (css +
-      '<section class="blk"><div class="rqwrap">'
-      '<p class="rqnote">' + esc(lb(
-        "Fill in your details and the labels you'd like to sample. Your request goes straight to our sales team, who will follow up with you one-to-one to confirm the samples and shipping.",
-        "填写您的信息和想索取的标签样品。您的申请将直接发送给我们的销售团队,由销售一对一与您确认样品与寄送事宜。",
-        "Điền thông tin và loại nhãn bạn muốn lấy mẫu. Yêu cầu sẽ được gửi thẳng đến đội ngũ kinh doanh của chúng tôi để liên hệ trực tiếp xác nhận mẫu và giao hàng.",
-        "กรอกข้อมูลและฉลากที่คุณต้องการขอตัวอย่าง คำขอจะส่งตรงถึงทีมขายของเราเพื่อติดต่อคุณแบบตัวต่อตัวในการยืนยันตัวอย่างและการจัดส่ง")) + '</p>'
-      '<form class="rqform" onsubmit="return etaSampleReq(event)">'
-      '<div class="rqg">'
-      '<label class="f">' + esc(lb("Name *", "姓名 *", "Tên *", "ชื่อ *")) + '<input name="name" required></label>'
-      '<label class="f">' + esc(lb("Company", "公司", "Công ty", "บริษัท")) + '<input name="company"></label>'
-      '<label class="f">' + esc(lb("Email *", "邮箱 *", "Email *", "อีเมล *")) + '<input type="email" name="email" required></label>'
-      '<label class="f">' + esc(lb("Phone *", "电话 *", "Điện thoại *", "โทรศัพท์ *")) + '<input name="phone" required></label>'
-      '<label class="f">' + esc(lb("Country *", "国家 *", "Quốc gia *", "ประเทศ *")) +
-        '<select name="country" id="rq_country" required onchange="rqOffice()"><option value="">' +
-        esc(lb("Select…", "请选择…", "Chọn…", "เลือก…")) + '</option>' + opts + '</select></label>'
-      '<label class="f">' + esc(lb("City *", "城市 *", "Thành phố *", "เมือง *")) + '<input name="city" required></label>'
-      '<label class="f">' + esc(lb("District / State", "地区 / 州", "Quận / Bang", "เขต / รัฐ")) + '<input name="district"></label>'
-      '<label class="f">' + esc(lb("Postal code", "邮编", "Mã bưu điện", "รหัสไปรษณีย์")) + '<input name="postal"></label>'
-      '<label class="f full">' + esc(lb("Full address *", "详细地址 *", "Địa chỉ đầy đủ *", "ที่อยู่เต็ม *")) + '<input name="address" required></label>'
-      '<p class="rqoffice" id="rq_office"></p>'
-      '</div>'
-      '<label class="f full" style="margin-bottom:6px">' + esc(lb("Your sample list", "您的样品单", "Danh sách mẫu của bạn", "รายการตัวอย่างของคุณ")) + '</label>'
-      '<div class="rqcart" id="rq_cart"></div>'
-      '<p class="rqempty" id="rq_empty">' + esc(lb(
-        "No samples selected yet — browse products and tap the “+” to add model numbers here.",
-        "还没有选择样品 —— 在产品或查找器页面点击“+”把型号加进来。",
-        "Chưa chọn mẫu nào — duyệt sản phẩm và bấm “+” để thêm mã vào đây.",
-        "ยังไม่ได้เลือกตัวอย่าง — เลือกสินค้าและกด “+” เพื่อเพิ่มรุ่นที่นี่")) + ' <a href="' + Lx(lang, "/products/find/") + '">' + esc(lb("Find a material →", "查找材料 →", "Tìm vật liệu →", "ค้นหาวัสดุ →")) + '</a></p>'
-      '<div class="rqg" style="margin-top:12px">'
-      '<label class="f full">' + esc(lb("Anything else / notes", "其他备注", "Ghi chú khác", "หมายเหตุอื่น ๆ")) + '<input name="models"></label>'
-      '<label class="f full">' + esc(lb("Your application — surface, temperature, chemistry, print method, label size",
-        "您的应用 —— 表面、温度、化学环境、打印方式、标签尺寸",
-        "Ứng dụng của bạn — bề mặt, nhiệt độ, hóa chất, phương pháp in, kích thước nhãn",
-        "การใช้งานของคุณ — พื้นผิว อุณหภูมิ สารเคมี วิธีพิมพ์ ขนาดฉลาก")) + '<textarea name="message" rows="4"></textarea></label>'
-      '</div>'
-      '<button class="btn pri" type="submit">' + esc(lb("Submit sample request", "提交样品申请", "Gửi yêu cầu mẫu", "ส่งคำขอตัวอย่าง")) + '</button>'
-      '</form>'
-      '<div class="rqok" id="rq_ok">' + esc(lb(
-        "Thank you — your sample request has been prepared. Your email app will open with the request; send it and our sales team will contact you.",
-        "感谢您 —— 样品申请单已生成。您的邮件应用将打开并带上申请内容,发送后我们的销售团队会与您联系。",
-        "Cảm ơn bạn — yêu cầu mẫu đã được chuẩn bị. Ứng dụng email sẽ mở kèm nội dung; hãy gửi đi và đội ngũ kinh doanh sẽ liên hệ với bạn.",
-        "ขอบคุณ — คำขอตัวอย่างถูกจัดเตรียมแล้ว แอปอีเมลจะเปิดพร้อมเนื้อหา ส่งแล้วทีมขายจะติดต่อคุณ")) + '</div>'
-      '</div></section>')
-    js = ('<script>var RQ_OFFICE=' + office_js + ',RQ_DEF="' + esc(OFFICE_DEFAULT) + '";'
-      'window.rqRenderCart=function(){if(!window.etiaSample)return;var a=window.etiaSample.get(),'
-      'box=document.getElementById("rq_cart"),emp=document.getElementById("rq_empty");if(!box)return;'
-      'box.innerHTML=a.map(function(x){var c=(x.code||"").replace(/[^A-Za-z0-9._-]/g,"");'
-      'return "<span class=\\"rqcitem\\">"+(x.code||"")+"<button type=\\"button\\" aria-label=\\"remove\\" onclick=\\"window.etiaSample.remove(\'"+c+"\')\\">\\u00d7</button></span>";}).join("");'
-      'if(emp)emp.style.display=a.length?"none":"block";};'
-      'function rqOffice(){var c=document.getElementById("rq_country").value,'
-      'o=document.getElementById("rq_office");if(!c){o.textContent="";return;}'
-      'o.textContent="' + esc(lb("Handled by", "由", "Được xử lý bởi", "ดูแลโดย")) + ' "+(RQ_OFFICE[c]||RQ_DEF)+".";}'
-      'function etaSampleReq(e){e.preventDefault();var f=e.target,g=function(n){var el=f.querySelector("[name="+n+"]");return el?el.value.trim():"";};'
-      'var nm=g("name"),em=g("email"),ph=g("phone"),co=g("country"),ci=g("city"),ad=g("address");'
-      'if(!nm||!em||!ph||!co||!ci||!ad){alert("' + esc(lb("Please fill in the required fields (*).", "请填写带 * 的必填项。", "Vui lòng điền các trường bắt buộc (*).", "กรุณากรอกช่องที่จำเป็น (*)")) + '");return false;}'
-      'var picks=(window.etiaSample?window.etiaSample.get():[]).map(function(x){return x.code+((x.name&&x.name!==x.code)?(" - "+x.name):"");});'
-      'var NL="%0D%0A",b="=== ' + esc(lb("SAMPLE REQUEST", "样品申请单", "YÊU CẦU MẪU", "คำขอตัวอย่าง")) + ' ==="+NL+NL'
-      '+"' + esc(lb("Name", "姓名", "Tên", "ชื่อ")) + ': "+nm+NL'
-      '+"' + esc(lb("Company", "公司", "Công ty", "บริษัท")) + ': "+g("company")+NL'
-      '+"' + esc(lb("Email", "邮箱", "Email", "อีเมล")) + ': "+em+NL'
-      '+"' + esc(lb("Phone", "电话", "Điện thoại", "โทรศัพท์")) + ': "+ph+NL+NL'
-      '+"' + esc(lb("Country", "国家", "Quốc gia", "ประเทศ")) + ': "+co+NL'
-      '+"' + esc(lb("City", "城市", "Thành phố", "เมือง")) + ': "+ci+"   ' + esc(lb("District", "地区", "Quận", "เขต")) + ': "+g("district")+NL'
-      '+"' + esc(lb("Address", "地址", "Địa chỉ", "ที่อยู่")) + ': "+ad+NL'
-      '+"' + esc(lb("Postal", "邮编", "Mã bưu điện", "รหัสไปรษณีย์")) + ': "+g("postal")+NL+NL'
-      '+"' + esc(lb("Samples", "样品", "Mẫu", "ตัวอย่าง")) + ': "+(picks.join(", ")||"-")+NL'
-      '+"' + esc(lb("Models", "型号", "Mã", "รุ่น")) + ': "+g("models")+NL'
-      '+"' + esc(lb("Application", "应用", "Ứng dụng", "การใช้งาน")) + ': "+g("message")+NL;'
-      'var sub=encodeURIComponent("' + esc(lb("Sample Request", "样品申请", "Yêu cầu mẫu", "คำขอตัวอย่าง")) + ' - "+nm+" ("+co+")");'
-      'document.getElementById("rq_ok").style.display="block";'
-      'window.location.href="mailto:etialabel@etia-tech.com?subject="+sub+"&body="+b;return false;}</script>')
-    crumb = [(P(lang, "Home", "首页", "Trang chủ", "หน้าแรก"), "/"), (L1, "/request-sample/")]
-    write(lang, "/request-sample/", page(lang, "/request-sample/",
-        P(lang, "Request Samples | ETIA", "申请样品 | ETIA", "Yêu cầu mẫu | ETIA", "ขอตัวอย่าง | ETIA"),
-        P(lang, "Request free label samples from ETIA — pick the labels, tell us your country and address, and our sales team follows up one-to-one.",
-          "向 ETIA 免费申请标签样品 —— 选择样品、填写国家与地址,我们的销售团队将一对一跟进。",
-          "Yêu cầu mẫu nhãn miễn phí từ ETIA — chọn nhãn, cho biết quốc gia và địa chỉ, đội ngũ kinh doanh sẽ liên hệ trực tiếp.",
-          "ขอตัวอย่างฉลากฟรีจาก ETIA — เลือกฉลาก บอกประเทศและที่อยู่ แล้วทีมขายจะติดต่อแบบตัวต่อตัว"),
-        L1,
-        P(lang, "Pick your labels and address — our sales team will confirm the samples and shipping with you directly.",
-          "选择样品并填写地址 —— 我们的销售团队将直接与您确认样品与寄送。",
-          "Chọn nhãn và địa chỉ — đội ngũ kinh doanh sẽ xác nhận mẫu và giao hàng trực tiếp với bạn.",
-          "เลือกฉลากและที่อยู่ — ทีมขายจะยืนยันตัวอย่างและการจัดส่งกับคุณโดยตรง"),
-        body + js, crumb, active="products"))
-    if lang == "en": track("/request-sample/", "core")
 
 def build_tech(lang):
     zh=(lang=="zh")
@@ -3070,7 +3066,8 @@ def build_all():
     build_legal(lang)
   for lang in NAV_PILLAR_LANGS:  # Product / Solutions / Service pillars: all 4 languages
     build_contact(lang)  # linked from the hero CTA on every page → must exist in all 4 languages
-    build_request_sample(lang)  # sample-request landing page (home "Request a Sample" button)
+    # /request-sample/ is built by gen_catalog (build_sample_request) — it reuses
+    # the "Find a Label Material" browse UI in shop mode with a sample-list cart.
     build_products_landing(lang)  # nav pillar: Product (mega-menu-style landing)
     build_applications(lang)   # nav pillar: Solutions
     build_service(lang)

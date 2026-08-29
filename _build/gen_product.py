@@ -114,9 +114,14 @@ UI = {
 
 def L(node, lang):
     if not isinstance(node, dict):
-        return node or ""
+        return hp._tr(lang, node) if lang in ("id", "ms") and node else (node or "")
+    if node.get(lang):
+        return node[lang]
+    # Indonesian/Malay: prefer English and translate via the overlay.
+    if lang in ("id", "ms"):
+        return hp._tr(lang, node.get("en") or node.get(SOURCE_LANG) or "")
     # fall back to English for vi/th (readable internationally), then the zh source.
-    return node.get(lang) or node.get("en") or node.get(SOURCE_LANG) or ""
+    return node.get("en") or node.get(SOURCE_LANG) or ""
 
 CSS = """
 <style>
@@ -454,7 +459,7 @@ def product_brand(d, slug):
     return "etia"
 
 def build_lang(d, lang):
-    ui = UI.get(lang, UI[SOURCE_LANG])
+    ui = UI.get(lang, UI["en"])
     slug = d["slug"]
     path = "/products/item/%s/" % slug
     title = L(d["title"], lang)

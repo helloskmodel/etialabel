@@ -152,8 +152,19 @@ UI = {
 
 def L(node, lang):
     if not isinstance(node, dict):
+        if lang in ("id", "ms") and node:
+            return hp._tr(lang, node)
         return node or ""
-    return node.get(lang) or node.get(SOURCE_LANG) or ""
+    if node.get(lang):
+        return node[lang]
+    # Indonesian/Malay: prefer the English source and translate via the overlay;
+    # only show Chinese as a last resort when there is no English at all.
+    if lang in ("id", "ms"):
+        en = node.get("en")
+        if en:
+            return hp._tr(lang, en)
+        return node.get("zh") or ""
+    return node.get(SOURCE_LANG) or ""
 
 esc = hp.esc
 
@@ -309,7 +320,7 @@ render(0);
 """
 
 def build_lang(data, lang):
-    ui = UI.get(lang, UI[SOURCE_LANG])
+    ui = UI.get(lang, UI["en"])
     slug = data["slug"]
     path = "%s%s/" % (data.get("base", "/industries/"), slug)
     title = L(data["hero"]["title"], lang)

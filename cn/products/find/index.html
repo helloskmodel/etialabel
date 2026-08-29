@@ -595,6 +595,11 @@ html[lang="vi"] .hbanner h1,html[lang="vi"] .hero h1{font-size:30px;max-width:no
 .cchip.clr{color:#3a4763;background:#f1f4fa;display:inline-flex;align-items:center}
 .cchip.clr i{width:8px;height:8px;border-radius:50%;margin-right:5px;box-shadow:0 0 0 1px rgba(0,0,0,.18)}
 .pcell-go{font-size:12px;font-weight:800;color:#41A62A;margin-top:2px}
+.pcell.psel{cursor:pointer}
+.pcell.psel .pcell-add::before{content:"+ "}
+.pcell.psel.in{border-color:#41A62A;box-shadow:0 0 0 2px rgba(65,166,42,.35)}
+.pcell.psel.in .pcell-add{color:#2c7a1e}
+.pcell.psel.in .pcell-add::before{content:"\2713 "}
 .cnone{padding:40px 8px;color:#5a6884;font-size:15px}
 .fmob{display:none}
 @media(max-width:860px){.clayout{grid-template-columns:1fr}.cfilters{position:static}
