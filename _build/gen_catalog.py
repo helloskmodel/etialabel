@@ -450,6 +450,24 @@ def build_sample_request(records, lang):
               "Thailand": lb("Bangkok office", "曼谷办事处", "Văn phòng Bangkok", "สำนักงานกรุงเทพฯ")}
     OFFICE_DEFAULT = lb("our Southeast Asia team", "我们的东南亚团队", "đội ngũ Đông Nam Á của chúng tôi", "ทีมเอเชียตะวันออกเฉียงใต้ของเรา")
     office_js = "{" + ",".join('"%s":"%s"' % (k, esc(v)) for k, v in OFFICE.items()) + "}"
+    # Preset city suggestions per country (major industrial/electronics hubs) —
+    # populated into the City datalist when a country is chosen; free text still OK.
+    COUNTRY_CITIES = {
+        "Vietnam": ["Hanoi", "Ho Chi Minh City", "Bac Ninh", "Bac Giang", "Hai Phong",
+                    "Da Nang", "Binh Duong", "Dong Nai", "Hung Yen", "Vinh Phuc",
+                    "Thai Nguyen", "Hai Duong", "Quang Ninh", "Long An"],
+        "Thailand": ["Bangkok", "Samut Prakan", "Chonburi", "Rayong", "Ayutthaya",
+                     "Pathum Thani", "Chiang Mai", "Nonthaburi", "Nakhon Ratchasima",
+                     "Prachinburi", "Songkhla", "Lamphun"],
+        "Indonesia": ["Jakarta", "Surabaya", "Bandung", "Bekasi", "Tangerang",
+                      "Semarang", "Batam", "Cikarang", "Karawang", "Medan",
+                      "Surakarta", "Gresik"],
+        "Malaysia": ["Kuala Lumpur", "Shah Alam", "Petaling Jaya", "George Town (Penang)",
+                     "Johor Bahru", "Klang", "Ipoh", "Melaka", "Seremban",
+                     "Kulim", "Bayan Lepas", "Cyberjaya"],
+        "Singapore": ["Singapore", "Jurong", "Tuas", "Woodlands", "Ang Mo Kio", "Changi"],
+    }
+    cities_js = json.dumps(COUNTRY_CITIES, ensure_ascii=False)
 
     css = ('<style>'
       '.rqbar{max-width:1180px;margin:0 auto;padding:22px 22px 0}'
@@ -546,7 +564,10 @@ def build_sample_request(records, lang):
       '<label class="f">' + esc(lb("Country *", "国家 *", "Quốc gia *", "ประเทศ *")) +
         '<select name="country" id="rq_country" required onchange="rqOffice()"><option value="">' +
         esc(lb("Select…", "请选择…", "Chọn…", "เลือก…")) + '</option>' + opts + '</select></label>'
-      '<label class="f">' + esc(lb("City *", "城市 *", "Thành phố *", "เมือง *")) + '<input name="city" required></label>'
+      '<label class="f">' + esc(lb("City *", "城市 *", "Thành phố *", "เมือง *")) +
+        '<input name="city" id="rq_city" list="rq_cities" autocomplete="off" placeholder="' +
+        esc(lb("Select country first…", "请先选择国家…", "Chọn quốc gia trước…", "เลือกประเทศก่อน…")) +
+        '" required><datalist id="rq_cities"></datalist></label>'
       '<label class="f">' + esc(lb("District / State", "地区 / 州", "Quận / Bang", "เขต / รัฐ")) + '<input name="district"></label>'
       '<label class="f">' + esc(lb("Postal code", "邮编", "Mã bưu điện", "รหัสไปรษณีย์")) + '<input name="postal"></label>'
       '<label class="f full">' + esc(lb("Full address *", "详细地址 *", "Địa chỉ đầy đủ *", "ที่อยู่เต็ม *")) + '<input name="address" required></label>'
@@ -575,6 +596,7 @@ def build_sample_request(records, lang):
     RQ_NONE = esc(lb("No samples selected.", "未选择样品。", "Chưa chọn mẫu.", "ยังไม่ได้เลือกตัวอย่าง"))
 
     js = ('<script>var RQ_OFFICE=' + office_js + ',RQ_DEF="' + esc(OFFICE_DEFAULT) + '",'
+      'RQ_CITIES=' + cities_js + ','
       'RQ_EMPTY="' + RQ_EMPTY + '",RQ_AGREE="' + RQ_AGREE + '",RQ_NONE="' + RQ_NONE + '";'
       'window.rqRenderCart=function(){if(!window.etiaSample)return;var a=window.etiaSample.get(),'
       'box=document.getElementById("rq_cart"),emp=document.getElementById("rq_empty"),nn=document.getElementById("rq_n"),'
@@ -591,8 +613,11 @@ def build_sample_request(records, lang):
       'function rqBackCart(){document.getElementById("rq_step2").classList.add("rqhide");document.getElementById("rq_step1").classList.remove("rqhide");'
       'document.getElementById("rqs2").classList.remove("on");document.getElementById("rqs1").classList.add("on");'
       'window.rqRenderCart();window.scrollTo({top:0,behavior:"smooth"});}'
+      'function rqCities(c){var dl=document.getElementById("rq_cities"),ci=document.getElementById("rq_city");if(!dl)return;'
+      'var list=RQ_CITIES[c]||[];dl.innerHTML=list.map(function(x){return "<option value=\\""+x+"\\">";}).join("");'
+      'if(ci){ci.value="";ci.placeholder=list.length?"' + esc(lb("Select or type your city…", "选择或输入城市…", "Chọn hoặc nhập thành phố…", "เลือกหรือพิมพ์เมือง…")) + '":"' + esc(lb("Select country first…", "请先选择国家…", "Chọn quốc gia trước…", "เลือกประเทศก่อน…")) + '";}}'
       'function rqOffice(){var c=document.getElementById("rq_country").value,'
-      'o=document.getElementById("rq_office");if(!c){o.textContent="";return;}'
+      'o=document.getElementById("rq_office");rqCities(c);if(!c){o.textContent="";return;}'
       'o.textContent="' + esc(lb("Handled by", "由", "Được xử lý bởi", "ดูแลโดย")) + ' "+(RQ_OFFICE[c]||RQ_DEF)+".";}'
       'function etaSampleReq(e){e.preventDefault();var f=e.target,g=function(n){var el=f.querySelector("[name="+n+"]");return el?el.value.trim():"";};'
       'var picks=(window.etiaSample?window.etiaSample.get():[]).map(function(x){return x.code+((x.name&&x.name!==x.code)?(" - "+x.name):"");});'
