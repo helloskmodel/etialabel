@@ -132,6 +132,8 @@ def L(node, lang):
     v = node.get(lang)
     if v:
         return v
+    if lang in ("id", "ms"):
+        return hp._tr(lang, node.get("en") or node.get(SOURCE_LANG) or "")
     # fall back to English for non-source languages (readable internationally),
     # then to the Chinese source.
     return node.get("en") or node.get(SOURCE_LANG) or ""
@@ -227,7 +229,7 @@ CSS = """
 """
 
 def build_article(a, lang):
-    ui = UI.get(lang, UI[SOURCE_LANG])
+    ui = UI.get(lang, UI["en"])
     slug = a["slug"]
     path = HUB + slug + "/"
     title = L(a["title"], lang)
@@ -277,7 +279,7 @@ def _card(a, lang, ui):
         esc(L(a.get("subtitle", {}), lang)), esc(ui["read"]))
 
 def build_hub(lang):
-    ui = UI.get(lang, UI[SOURCE_LANG])
+    ui = UI.get(lang, UI["en"])
     arts = json.load(open(DATA, encoding="utf-8"))["articles"]
     # One unified grid — no News/Knowledge split; topic is shown by cover color.
     cards = "".join(_card(a, lang, ui) for a in arts)
