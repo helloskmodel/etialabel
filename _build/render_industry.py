@@ -13,8 +13,91 @@ build.py. Content lives in the JSON (en + zh, zh = source, fall back to zh).
 """
 import json, os, html, re
 import gen_heatproof as hp
+import gen_catalog as gc
+import gen_product as gp
 
 PDIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "products")
+
+# industry-page slug -> product industry key (matches gp.product_industry / the finder)
+IND_KEY = {
+    "pcb-electronics-labeling-solutions": "pcb",
+    "automotive-labeling-solutions": "auto",
+    "wire-cable-labeling-solutions": "cable",
+    "outdoor-energy-labeling-solutions": "outdoor",
+    "medical-pharmaceutical-labeling-solutions": "medical",
+    "steel-metal-ceramic-labeling-solutions": "steel",
+}
+_RECORDS = None
+def all_records():
+    """All product finder-records (industry, apps, code, url, title), cached."""
+    global _RECORDS
+    if _RECORDS is None:
+        _RECORDS = []
+        for fn in sorted(os.listdir(PDIR)):
+            if not fn.endswith(".json"):
+                continue
+            d = json.load(open(os.path.join(PDIR, fn), encoding="utf-8"))
+            if d.get("slug") in gc.EXCLUDE:   # solution + series-landing pages, not model SKUs
+                continue
+            _RECORDS.append(gc.build_record(d))
+    return _RECORDS
+
+_SHOP_EYEBROW = {"en": "Catalog", "zh": "型号目录", "vi": "Danh mục", "th": "แคตตาล็อก"}
+_SHOP_TITLE = {"en": "All labels for this industry", "zh": "本行业全部型号",
+               "vi": "Tất cả nhãn cho ngành này", "th": "ฉลากทั้งหมดสำหรับอุตสาหกรรมนี้"}
+_SHOP_GENERAL = {"en": "General purpose", "zh": "通用", "vi": "Đa dụng", "th": "อเนกประสงค์"}
+_SHOP_VIEW = {"en": "View →", "zh": "查看 →", "vi": "Xem →", "th": "ดู →"}
+
+def shop_grid(ind_key, lang):
+    """Shop-style catalog of every product in an industry, grouped by the
+    application/resistance sub-category (APP_CATS), each product listed once."""
+    if not ind_key:
+        return ""
+    prods = [r for r in all_records() if r.get("industry") == ind_key]
+    if not prods:
+        return ""
+    # Group into product families: Polyonics by series (APEX / XF58 / ESD-XF78 /
+    # Cable), HeatProof as one family, and E-Label by application/resistance.
+    poly_name = {s["key"]: s.get("name", s.get("tag", {})) for s in gc.POLY_SERIES}
+    applab = {k: lab for k, lab, kws in gc.APP_CATS}
+    def famkey(r):
+        b = r.get("brand")
+        if b == "polyonics":
+            return "poly:" + gc.poly_series_key(r["slug"])
+        if b == "heatproof":
+            return "brand:heatproof"
+        for k, lab, kws in gc.APP_CATS:
+            if k in r.get("apps", []):
+                return "app:" + k
+        return "general"
+    def famlabel(fk):
+        if fk.startswith("poly:"):
+            return poly_name.get(fk[5:], {"en": "Polyonics"})
+        if fk == "brand:heatproof":
+            return {"en": "HeatProof", "zh": "HeatProof", "vi": "HeatProof", "th": "HeatProof"}
+        if fk.startswith("app:"):
+            return applab[fk[4:]]
+        return _SHOP_GENERAL
+    order, buckets = [], {}
+    for r in prods:
+        fk = famkey(r)
+        if fk not in buckets:
+            buckets[fk] = []
+            order.append(fk)
+        buckets[fk].append(r)
+    groups = [(famlabel(fk), buckets[fk]) for fk in order]
+    secs = ""
+    for lab, members in groups:
+        cards = ""
+        for r in sorted(members, key=lambda x: L(x["title"], lang).lower()):
+            code = r.get("code") or gp._model_code(r["slug"])
+            cards += ('<a class="shpc" href="%s"><span class="shpc-code">%s</span>'
+                      '<span class="shpc-t">%s</span><span class="shpc-go">%s</span></a>') % (
+                hp.Lx(lang, r["url"]), esc(code), esc(L(r["title"], lang)), esc(L(_SHOP_VIEW, lang)))
+        secs += ('<div class="shpgrp"><h3 class="shph">%s <span class="shpn">%d</span></h3>'
+                 '<div class="shpgrid">%s</div></div>') % (esc(L(lab, lang)), len(members), cards)
+    return ('<section class="wcsec"><div class="wceye">%s</div><h2>%s</h2>%s</section>') % (
+        esc(L(_SHOP_EYEBROW, lang)), esc(L(_SHOP_TITLE, lang)), secs)
 
 def _leading_code(txt):
     """The model code at the start of a text, e.g. 'E-2813 · ...' -> 'E-2813'."""
@@ -156,6 +239,16 @@ a.wcmcard:hover{box-shadow:0 8px 22px rgba(20,60,150,.13);transform:translateY(-
   #wcpanel{margin-top:16px}
   .wcmcard .ic{width:40px;height:40px}
 }
+.shpgrp{margin:14px 0 18px}
+.shph{font-size:15px;color:#143C96;font-weight:800;margin:0 0 10px;padding-bottom:6px;border-bottom:1px solid #e3eaf6;display:flex;align-items:center;gap:8px}
+.shph .shpn{font-size:12px;font-weight:700;color:#6b7a99;background:#eef3fc;border-radius:20px;padding:1px 9px}
+.shpgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:10px}
+.shpc{display:flex;flex-direction:column;gap:2px;background:#fff;border:1px solid #dbe3f1;border-radius:10px;padding:11px 13px;text-decoration:none;color:#17203a;transition:box-shadow .15s,transform .15s}
+.shpc:hover{box-shadow:0 6px 18px rgba(20,60,150,.12);transform:translateY(-2px)}
+.shpc-code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13.5px;font-weight:800;color:#143C96}
+.shpc-t{font-size:12.5px;color:#5a6884;line-height:1.35}
+.shpc-go{font-size:11.5px;font-weight:800;color:#1A56DB;margin-top:4px}
+@media(max-width:560px){.shpgrid{grid-template-columns:1fr 1fr;gap:8px}.shpc{padding:9px 10px}.shpc-t{font-size:11.5px}}
 </style>
 """
 
@@ -279,6 +372,7 @@ def build_lang(data, lang):
             '<div class="wcsub" id="wcsub"></div>'
             '<button class="wcar" onclick="wcSubScroll(1)">&rsaquo;</button></div><div id="wcpanel"></div></div></section>') % (
         esc(ui["eyebrow_ov"]), esc(ui["overview"]), overview, esc(L(data["classify_by"], lang)))
+    body += shop_grid(IND_KEY.get(slug, ""), lang)   # 商城 catalog of every product in this industry
     body += JS_TMPL % {"cats": json.dumps(cats, ensure_ascii=False),
                        "go": json.dumps(ui["go"], ensure_ascii=False),
                        "subnav": "true" if data.get("subnav") else "false",
