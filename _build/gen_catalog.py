@@ -34,13 +34,14 @@ barcode_label_svg = gp.barcode_label_svg
 # Their pages still exist and are reached from the "Products › By Industry" pages.
 EXCLUDE = set(gp.SOLUTION_SLUGS) | {"apex", "xf58", "xf78", "e-series"}
 
+# Industry labels — kept identical to the Product mega-menu "By Industry" list.
 IND_NAME = {
-    "pcb":     {"en": "PCB & Electronics", "zh": "PCB 电子", "vi": "PCB & Điện tử", "th": "PCB และอิเล็กทรอนิกส์"},
-    "auto":    {"en": "Automotive", "zh": "汽车", "vi": "Ô tô", "th": "ยานยนต์"},
+    "pcb":     {"en": "PCB", "zh": "PCB", "vi": "PCB", "th": "PCB"},
+    "auto":    {"en": "Automotive & Tire", "zh": "汽车与轮胎", "vi": "Ô tô & Lốp xe", "th": "รถยนต์และยาง"},
     "cable":   {"en": "Wire & Cable", "zh": "线缆", "vi": "Cáp & Dây", "th": "สายเคเบิล"},
-    "steel":   {"en": "Steel & Metal", "zh": "钢铁金属", "vi": "Thép & Kim loại", "th": "เหล็กและโลหะ"},
-    "medical": {"en": "Medical & Pharma", "zh": "医疗医药", "vi": "Y tế & Dược", "th": "การแพทย์และยา"},
-    "outdoor": {"en": "Outdoor & Energy", "zh": "户外能源", "vi": "Ngoài trời & Năng lượng", "th": "กลางแจ้งและพลังงาน"},
+    "outdoor": {"en": "Outdoor & Energy", "zh": "户外与能源", "vi": "Ngoài trời & Năng lượng", "th": "กลางแจ้งและพลังงาน"},
+    "medical": {"en": "Medical & Pharmacy", "zh": "医疗与制药", "vi": "Y tế & Dược", "th": "การแพทย์และเภสัชกรรม"},
+    "steel":   {"en": "Steel & Ceramics", "zh": "钢铁与陶瓷", "vi": "Thép & Gốm", "th": "เหล็กและเซรามิก"},
 }
 
 # Application categories: label (4-lang) + keyword triggers (searched in the blob).
@@ -226,7 +227,7 @@ def build_lang(records, lang):
     # Material, Application), Thickness last.
     if ind_opts:
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["industry"]),
-            "".join(chk("industry", i, L(IND_NAME[i])) for i in ["pcb", "medical", "auto", "cable", "steel", "outdoor"] if i in ind_opts))
+            "".join(chk("industry", i, L(IND_NAME[i])) for i in ["pcb", "auto", "cable", "outdoor", "medical", "steel"] if i in ind_opts))
     if len(brand_opts) > 1:
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["brand"]),
             "".join(chk("brand", b, L(BRAND[b])) for b in brand_opts))
