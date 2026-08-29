@@ -463,7 +463,7 @@ html[lang="vi"] .hbanner h1,html[lang="vi"] .hero h1{font-size:30px;max-width:no
 .skadd{position:absolute;top:8px;right:8px;z-index:3;width:28px;height:28px;border-radius:50%;border:1px solid #cfe0d4;background:#fff;color:#16a34a;font-size:19px;font-weight:800;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
 .skadd:hover{background:#eaf7ea}
 .skadd.in{background:#16a34a;color:#fff;border-color:#16a34a}
-.skadd.in::before{content:"\2713"}.skadd:not(.in)::before{content:"+"}
+.skadd.in::before{content:"\\2713"}.skadd:not(.in)::before{content:"+"}
 @media(max-width:600px){.skcart{left:14px;bottom:72px;padding:10px 15px;font-size:13px}}
 @media(max-width:600px){.ckbar{padding:11px 14px;gap:10px}.ckbar p{font-size:12.5px}.ckbtn{padding:9px 18px;font-size:13px}}
 @media(max-width:600px){.fabchat{height:48px;padding:0 16px 0 12px;font-size:14px;right:14px;bottom:14px}.fabchat svg{width:23px;height:23px}}
