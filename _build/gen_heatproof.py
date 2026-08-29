@@ -883,7 +883,7 @@ def floating_contact(lang):
 # GA4 Measurement ID (e.g. "G-XXXXXXXX"). Empty = no analytics loaded and no
 # consent bar shown (the site then sets no non-essential cookies). Fill this in
 # to activate analytics + the consent bar.
-GA_ID = ""
+GA_ID = "G-1NQJ06YBQB"
 
 def cookie_consent(lang):
     """Bottom cookie-consent bar. Only rendered when GA_ID is set. Accept loads
