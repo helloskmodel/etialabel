@@ -343,6 +343,16 @@ html[lang="vi"] .hbanner h1,html[lang="vi"] .hero h1{font-size:30px;max-width:no
 .ckbtn{border:none;cursor:pointer;font-weight:800;font-size:14px;padding:10px 22px;border-radius:22px;font-family:var(--sans)}
 .ckbtn.pri{background:#16a34a;color:#fff}
 .ckbtn.ghost{background:transparent;color:#cdd9f0;border:1px solid rgba(255,255,255,.4)}
+/* sample cart */
+.pcell,.shpc{position:relative}
+.skcart{position:fixed;left:18px;bottom:18px;z-index:70;align-items:center;gap:8px;background:#143C96;color:#fff;font-family:var(--sans);font-weight:800;font-size:14px;padding:11px 18px;border-radius:26px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.28)}
+.skcart:hover{color:#fff;transform:translateY(-2px)}
+.skcart-n{background:#fff;color:#143C96;border-radius:20px;min-width:20px;text-align:center;padding:0 6px;font-size:12.5px;line-height:20px}
+.skadd{position:absolute;top:8px;right:8px;z-index:3;width:28px;height:28px;border-radius:50%;border:1px solid #cfe0d4;background:#fff;color:#16a34a;font-size:19px;font-weight:800;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.skadd:hover{background:#eaf7ea}
+.skadd.in{background:#16a34a;color:#fff;border-color:#16a34a}
+.skadd.in::before{content:"\2713"}.skadd:not(.in)::before{content:"+"}
+@media(max-width:600px){.skcart{left:14px;bottom:72px;padding:10px 15px;font-size:13px}}
 @media(max-width:600px){.ckbar{padding:11px 14px;gap:10px}.ckbar p{font-size:12.5px}.ckbtn{padding:9px 18px;font-size:13px}}
 @media(max-width:600px){.fabchat{height:48px;padding:0 16px 0 12px;font-size:14px;right:14px;bottom:14px}.fabchat svg{width:23px;height:23px}}
 /* WeChat QR popup (Chinese pages) */
@@ -916,6 +926,33 @@ def cookie_consent(lang):
           "})();</script>") % GA_ID
     return bar + js
 
+def sample_cart(lang):
+    """Site-wide sample cart. Product cards call skAdd(); a floating pill shows
+    the count and links to /request-sample/, which reads the same localStorage."""
+    lab = P(lang, "Sample list", "样品单", "Danh sách mẫu", "รายการตัวอย่าง")
+    href = Lx(lang, "/request-sample/")
+    icon = ('<svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="#fff" stroke-width="1.8" '
+            'stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.6 9H7.5z"/>'
+            '<path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg>')
+    bar = ('<a id="skcart" class="skcart" href="%s" style="display:none">%s<span>%s</span>'
+           '<span id="skcart-n" class="skcart-n">0</span></a>') % (href, icon, esc(lab))
+    js = ("<script>(function(){var S={KEY:'etia_sample_cart',"
+          "get:function(){try{return JSON.parse(localStorage.getItem(this.KEY)||'[]')}catch(e){return[]}},"
+          "set:function(a){try{localStorage.setItem(this.KEY,JSON.stringify(a))}catch(e){}this.render();},"
+          "add:function(o){var a=this.get();if(!a.some(function(x){return x.code===o.code})){a.push(o);this.set(a);}},"
+          "remove:function(code){this.set(this.get().filter(function(x){return x.code!==code}));},"
+          "render:function(){var a=this.get(),n=a.length,c=document.getElementById('skcart');"
+          "if(c){c.style.display=n?'inline-flex':'none';var e=document.getElementById('skcart-n');if(e)e.textContent=n;}"
+          "document.querySelectorAll('[data-skc]').forEach(function(b){b.classList.toggle('in',a.some(function(x){return x.code===b.getAttribute('data-skc')}));});"
+          "if(window.rqRenderCart)window.rqRenderCart();}};"
+          "window.etiaSample=S;"
+          "window.skAdd=function(e,el){if(e){e.preventDefault();e.stopPropagation();}"
+          "var code=el.getAttribute('data-skc'),name=el.getAttribute('data-name')||code,url=el.getAttribute('data-url')||'';"
+          "if(S.get().some(function(x){return x.code===code})){S.remove(code);}else{S.add({code:code,name:name,url:url});}};"
+          "if(document.readyState!=='loading')S.render();else document.addEventListener('DOMContentLoaded',function(){S.render();});"
+          "})();</script>")
+    return bar + js
+
 def footer_html(lang):
     heads = FOOTER_I18N["heads"].get(lang, FOOTER_I18N["heads"]["en"])
     legals = FOOTER_I18N["legal"].get(lang, FOOTER_I18N["legal"]["en"])
@@ -933,7 +970,7 @@ def footer_html(lang):
 Shanghai · Hong Kong · Bangkok · Bac Ninh<br><span style="color:var(--faint)">%s</span></div>
 </div>""" % (heads[0], nav, heads[1], legal, heads[2], tag)) + """
 <div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span><span><a href="%s">%s</a> &nbsp; <a href="%s">%s</a></span></div>
-</div></footer>""" % (Lx(lang,"/privacy/"), pc[0], Lx(lang,"/cookies/"), pc[1]) + floating_contact(lang) + cookie_consent(lang)
+</div></footer>""" % (Lx(lang,"/privacy/"), pc[0], Lx(lang,"/cookies/"), pc[1]) + floating_contact(lang) + cookie_consent(lang) + sample_cart(lang)
 
 TRUST_TITLES = {
  "en":["100% Quality Inspection","Application-Driven Solutions","Flexible Supply","Responsive Application Support"],
@@ -1543,7 +1580,7 @@ def home_footer(lang):
             '<div><h5>%s</h5><a class="email" href="mailto:etialabel@etia-tech.com">etialabel@etia-tech.com</a><br><br>'
             'Shanghai · Hong Kong · Bangkok · Bac Ninh</div></div>'
             '<div class="bar"><span>© 2026 ETIA-TECH (ASIA) Co., Limited. All rights reserved.</span></div></div></footer>') % (
-        esc(nh),navl,esc(lh),legal,esc(ch)) + floating_contact(lang) + cookie_consent(lang)
+        esc(nh),navl,esc(lh),legal,esc(ch)) + floating_contact(lang) + cookie_consent(lang) + sample_cart(lang)
 
 def home_hreflang(path):
     t=[]
@@ -2385,15 +2422,7 @@ def build_request_sample(lang):
         ("Malaysia", lb("Malaysia", "马来西亚", "Malaysia", "มาเลเซีย")),
         ("Singapore", lb("Singapore", "新加坡", "Singapore", "สิงคโปร์")),
     ]
-    SERIES = [
-        "APEX", "XF58", "ESD-XF78", lb("E-Series PI", "E 系列 PI", "PI dòng E", "PI ซีรีส์ E"),
-        lb("Cable & Wire", "线缆标识", "Cáp & Dây", "สายเคเบิล"),
-        lb("Heat-treatment tags", "热处理吊牌", "Thẻ xử lý nhiệt", "แท็กอบชุบความร้อน"),
-    ]
     opts = "".join('<option value="%s">%s</option>' % (esc(v), esc(t)) for v, t in COUNTRIES)
-    chips = "".join(
-        '<label class="skchip"><input type="checkbox" name="sample" value="%s"><span>%s</span></label>' % (esc(s), esc(s))
-        for s in SERIES)
     css = ('<style>.rqwrap{max-width:820px;margin:0 auto;padding:8px 22px 20px}'
       '.rqform{display:block}.rqg{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px;margin:10px 0 16px}'
       '.rqform label.f{display:flex;flex-direction:column;font-size:13px;font-weight:700;color:var(--blue-deep);gap:6px}'
@@ -2401,9 +2430,10 @@ def build_request_sample(lang):
       '.rqform input,.rqform select,.rqform textarea{font:inherit;font-weight:400;padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink)}'
       '.rqform input:focus,.rqform select:focus,.rqform textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}'
       '.rqoffice{grid-column:1/-1;font-size:13px;color:var(--mut);margin:-4px 0 0}'
-      '.skchips{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 4px}'
-      '.skchip{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:22px;padding:8px 14px;font-size:13.5px;font-weight:600;color:var(--ink);cursor:pointer}'
-      '.skchip input{accent-color:var(--blue)}'
+      '.rqcart{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 4px}'
+      '.rqcitem{display:inline-flex;align-items:center;gap:8px;background:#eef3fc;border:1px solid #d5e1f5;border-radius:22px;padding:7px 8px 7px 14px;font-size:13.5px;font-weight:700;color:#143C96;font-family:ui-monospace,Menlo,Consolas,monospace}'
+      '.rqcitem button{border:none;background:#c9d6ee;color:#143C96;width:20px;height:20px;border-radius:50%;cursor:pointer;font-size:14px;line-height:1;font-weight:800}'
+      '.rqempty{font-size:13.5px;color:#5a6884;margin:2px 0 4px}.rqempty a{color:#1A56DB;font-weight:700}'
       '.rqnote{background:#f4f7fd;border:1px solid #e6ecf7;border-radius:10px;padding:12px 14px;font-size:13px;color:#41506e;margin:14px 0}'
       '.rqok{display:none;background:#e6f5e0;border:1px solid #bfe3b0;border-radius:12px;padding:18px 20px;color:#1f7a1f;font-weight:700}'
       '@media(max-width:560px){.rqg{grid-template-columns:1fr}}</style>')
@@ -2434,10 +2464,15 @@ def build_request_sample(lang):
       '<label class="f full">' + esc(lb("Full address *", "详细地址 *", "Địa chỉ đầy đủ *", "ที่อยู่เต็ม *")) + '<input name="address" required></label>'
       '<p class="rqoffice" id="rq_office"></p>'
       '</div>'
-      '<label class="f full" style="margin-bottom:6px">' + esc(lb("Samples you'd like", "想索取的样品", "Mẫu bạn muốn", "ตัวอย่างที่ต้องการ")) + '</label>'
-      '<div class="skchips">' + chips + '</div>'
+      '<label class="f full" style="margin-bottom:6px">' + esc(lb("Your sample list", "您的样品单", "Danh sách mẫu của bạn", "รายการตัวอย่างของคุณ")) + '</label>'
+      '<div class="rqcart" id="rq_cart"></div>'
+      '<p class="rqempty" id="rq_empty">' + esc(lb(
+        "No samples selected yet — browse products and tap the “+” to add model numbers here.",
+        "还没有选择样品 —— 在产品或查找器页面点击“+”把型号加进来。",
+        "Chưa chọn mẫu nào — duyệt sản phẩm và bấm “+” để thêm mã vào đây.",
+        "ยังไม่ได้เลือกตัวอย่าง — เลือกสินค้าและกด “+” เพื่อเพิ่มรุ่นที่นี่")) + ' <a href="' + Lx(lang, "/products/find/") + '">' + esc(lb("Find a material →", "查找材料 →", "Tìm vật liệu →", "ค้นหาวัสดุ →")) + '</a></p>'
       '<div class="rqg" style="margin-top:12px">'
-      '<label class="f full">' + esc(lb("Specific products / model numbers", "具体产品 / 型号", "Sản phẩm / mã cụ thể", "สินค้า / รหัสรุ่นเฉพาะ")) + '<input name="models"></label>'
+      '<label class="f full">' + esc(lb("Anything else / notes", "其他备注", "Ghi chú khác", "หมายเหตุอื่น ๆ")) + '<input name="models"></label>'
       '<label class="f full">' + esc(lb("Your application — surface, temperature, chemistry, print method, label size",
         "您的应用 —— 表面、温度、化学环境、打印方式、标签尺寸",
         "Ứng dụng của bạn — bề mặt, nhiệt độ, hóa chất, phương pháp in, kích thước nhãn",
@@ -2452,13 +2487,18 @@ def build_request_sample(lang):
         "ขอบคุณ — คำขอตัวอย่างถูกจัดเตรียมแล้ว แอปอีเมลจะเปิดพร้อมเนื้อหา ส่งแล้วทีมขายจะติดต่อคุณ")) + '</div>'
       '</div></section>')
     js = ('<script>var RQ_OFFICE=' + office_js + ',RQ_DEF="' + esc(OFFICE_DEFAULT) + '";'
+      'window.rqRenderCart=function(){if(!window.etiaSample)return;var a=window.etiaSample.get(),'
+      'box=document.getElementById("rq_cart"),emp=document.getElementById("rq_empty");if(!box)return;'
+      'box.innerHTML=a.map(function(x){var c=(x.code||"").replace(/[^A-Za-z0-9._-]/g,"");'
+      'return "<span class=\\"rqcitem\\">"+(x.code||"")+"<button type=\\"button\\" aria-label=\\"remove\\" onclick=\\"window.etiaSample.remove(\'"+c+"\')\\">\\u00d7</button></span>";}).join("");'
+      'if(emp)emp.style.display=a.length?"none":"block";};'
       'function rqOffice(){var c=document.getElementById("rq_country").value,'
       'o=document.getElementById("rq_office");if(!c){o.textContent="";return;}'
       'o.textContent="' + esc(lb("Handled by", "由", "Được xử lý bởi", "ดูแลโดย")) + ' "+(RQ_OFFICE[c]||RQ_DEF)+".";}'
       'function etaSampleReq(e){e.preventDefault();var f=e.target,g=function(n){var el=f.querySelector("[name="+n+"]");return el?el.value.trim():"";};'
       'var nm=g("name"),em=g("email"),ph=g("phone"),co=g("country"),ci=g("city"),ad=g("address");'
       'if(!nm||!em||!ph||!co||!ci||!ad){alert("' + esc(lb("Please fill in the required fields (*).", "请填写带 * 的必填项。", "Vui lòng điền các trường bắt buộc (*).", "กรุณากรอกช่องที่จำเป็น (*)")) + '");return false;}'
-      'var picks=[];f.querySelectorAll("[name=sample]:checked").forEach(function(x){picks.push(x.value);});'
+      'var picks=(window.etiaSample?window.etiaSample.get():[]).map(function(x){return x.code+((x.name&&x.name!==x.code)?(" - "+x.name):"");});'
       'var NL="%0D%0A",b="=== ' + esc(lb("SAMPLE REQUEST", "样品申请单", "YÊU CẦU MẪU", "คำขอตัวอย่าง")) + ' ==="+NL+NL'
       '+"' + esc(lb("Name", "姓名", "Tên", "ชื่อ")) + ': "+nm+NL'
       '+"' + esc(lb("Company", "公司", "Công ty", "บริษัท")) + ': "+g("company")+NL'
