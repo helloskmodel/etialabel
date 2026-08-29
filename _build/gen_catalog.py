@@ -222,8 +222,11 @@ def build_lang(records, lang):
                 % (group, esc(value), esc(label)))
 
     fpanels = ""
-    # Order: Brand first, then the spec spine (Temperature, Material, Application),
-    # and Thickness last.
+    # Order: Industry first, then Brand, then the spec spine (Temperature,
+    # Material, Application), Thickness last.
+    if ind_opts:
+        fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["industry"]),
+            "".join(chk("industry", i, L(IND_NAME[i])) for i in ["pcb", "medical", "auto", "cable", "steel", "outdoor"] if i in ind_opts))
     if len(brand_opts) > 1:
         fpanels += '<div class="fgrp"><h4>%s</h4>%s</div>' % (esc(ui["fac"]["brand"]),
             "".join(chk("brand", b, L(BRAND[b])) for b in brand_opts))
