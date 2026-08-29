@@ -32,7 +32,7 @@ HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th", "id": "id", "ms": "m
 HIDDEN_LANGS = {"id", "ms"}
 # Paths that exist in all four languages (home only). Links to any other path from
 # a vi/th page fall back to the English version (no 404). Industry hubs are EN+ZH.
-FOURLANG = {"/", "/products/", "/products/find/", "/products/polyonics/", "/products/heatproof/", "/applications/", "/service/", "/insights/"}
+FOURLANG = {"/", "/products/", "/products/find/", "/products/polyonics/", "/products/heatproof/", "/applications/", "/service/", "/insights/", "/request-sample/"}
 FOURLANG_PREFIX = ("/insights/", "/industries/", "/products/item/", "/products/polyonics/")  # article, industry, product & Polyonics pages exist in all 4 langs
 def Lx(lang, path):
     """Smart localized link: use the localized version only if that path exists in this language."""
@@ -1500,7 +1500,7 @@ def home_hlink(lang, path):
     # home internal link: en -> path, zh -> /cn+path (inner zh exists),
     # vi/th -> localized only for 4-language paths (pillars, insights, industries), else English.
     if lang=="zh": return "/cn"+path
-    if lang in ("vi","th") and (path in FOURLANG or path.startswith(FOURLANG_PREFIX)):
+    if lang in ("vi","th","id","ms") and (path in FOURLANG or path.startswith(FOURLANG_PREFIX)):
         return PREFIX[lang]+path
     return path
 
@@ -1833,7 +1833,7 @@ def home_hero(lang):
         '<div class="hhero-copy"><span class="hhero-pill">' + check + ' ' + esc(pill_txt) + '</span>'
         '<h1>' + esc(head) + '</h1><p class="hsub">' + esc(sub) + '</p>'
         '<div class="hhero-cta"><a class="hhbtn pri" href="' + home_hlink(lang,"/products/find/") + '">' + esc(c1) + '</a>'
-        '<a class="hhbtn sample" href="' + home_hlink(lang,"/products/find/") + '">' + esc(c3) + '</a>'
+        '<a class="hhbtn sample" href="' + home_hlink(lang,"/request-sample/") + '">' + esc(c3) + '</a>'
         '<a class="hhbtn gho" href="' + home_hlink(lang,"/contact/") + '">' + esc(c2) + '</a></div></div>'
         '<div class="hhwin" id="hhwin">' + slides + '<div class="hhdots" id="hhdots">' + dots + '</div></div>'
         '</div></section>' + script)
@@ -2372,6 +2372,122 @@ def build_contact(lang):
           "แบ่งปันการใช้งานของคุณ — เราจะจับคู่วัสดุและตรวจสอบด้วยตัวอย่าง"),
         body, crumb, active="contact"))
     if lang=="en": track("/contact/","core")
+
+def build_request_sample(lang):
+    """Sample-request page: contact + country-based address + sample selection.
+    Submits the 'sample slip' to sales by email (mailto) for 1-to-1 follow-up.
+    (Set SAMPLE_ENDPOINT to a form-service URL to POST instead of email.)"""
+    def lb(en, zh_, vi="", th=""): return P(lang, en, zh_, vi or en, th or en)
+    COUNTRIES = [
+        ("Vietnam", lb("Vietnam", "越南", "Việt Nam", "เวียดนาม")),
+        ("Thailand", lb("Thailand", "泰国", "Thái Lan", "ไทย")),
+        ("Indonesia", lb("Indonesia", "印度尼西亚", "Indonesia", "อินโดนีเซีย")),
+        ("Malaysia", lb("Malaysia", "马来西亚", "Malaysia", "มาเลเซีย")),
+        ("Singapore", lb("Singapore", "新加坡", "Singapore", "สิงคโปร์")),
+    ]
+    SERIES = [
+        "APEX", "XF58", "ESD-XF78", lb("E-Series PI", "E 系列 PI", "PI dòng E", "PI ซีรีส์ E"),
+        lb("Cable & Wire", "线缆标识", "Cáp & Dây", "สายเคเบิล"),
+        lb("Heat-treatment tags", "热处理吊牌", "Thẻ xử lý nhiệt", "แท็กอบชุบความร้อน"),
+    ]
+    opts = "".join('<option value="%s">%s</option>' % (esc(v), esc(t)) for v, t in COUNTRIES)
+    chips = "".join(
+        '<label class="skchip"><input type="checkbox" name="sample" value="%s"><span>%s</span></label>' % (esc(s), esc(s))
+        for s in SERIES)
+    css = ('<style>.rqwrap{max-width:820px;margin:0 auto;padding:8px 22px 20px}'
+      '.rqform{display:block}.rqg{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px;margin:10px 0 16px}'
+      '.rqform label.f{display:flex;flex-direction:column;font-size:13px;font-weight:700;color:var(--blue-deep);gap:6px}'
+      '.rqform label.full{grid-column:1/-1}'
+      '.rqform input,.rqform select,.rqform textarea{font:inherit;font-weight:400;padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink)}'
+      '.rqform input:focus,.rqform select:focus,.rqform textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}'
+      '.rqoffice{grid-column:1/-1;font-size:13px;color:var(--mut);margin:-4px 0 0}'
+      '.skchips{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 4px}'
+      '.skchip{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:22px;padding:8px 14px;font-size:13.5px;font-weight:600;color:var(--ink);cursor:pointer}'
+      '.skchip input{accent-color:var(--blue)}'
+      '.rqnote{background:#f4f7fd;border:1px solid #e6ecf7;border-radius:10px;padding:12px 14px;font-size:13px;color:#41506e;margin:14px 0}'
+      '.rqok{display:none;background:#e6f5e0;border:1px solid #bfe3b0;border-radius:12px;padding:18px 20px;color:#1f7a1f;font-weight:700}'
+      '@media(max-width:560px){.rqg{grid-template-columns:1fr}}</style>')
+    OFFICE = {"Vietnam": lb("Bac Ninh office", "北宁办事处", "Văn phòng Bắc Ninh", "สำนักงานบั๊กนิญ"),
+              "Thailand": lb("Bangkok office", "曼谷办事处", "Văn phòng Bangkok", "สำนักงานกรุงเทพฯ")}
+    OFFICE_DEFAULT = lb("our Southeast Asia team", "我们的东南亚团队", "đội ngũ Đông Nam Á của chúng tôi", "ทีมเอเชียตะวันออกเฉียงใต้ของเรา")
+    office_js = "{" + ",".join('"%s":"%s"' % (k, esc(v)) for k, v in OFFICE.items()) + "}"
+    L1 = lb("Request Samples", "申请样品", "Yêu cầu mẫu", "ขอตัวอย่าง")
+    body = (css +
+      '<section class="blk"><div class="rqwrap">'
+      '<p class="rqnote">' + esc(lb(
+        "Fill in your details and the labels you'd like to sample. Your request goes straight to our sales team, who will follow up with you one-to-one to confirm the samples and shipping.",
+        "填写您的信息和想索取的标签样品。您的申请将直接发送给我们的销售团队,由销售一对一与您确认样品与寄送事宜。",
+        "Điền thông tin và loại nhãn bạn muốn lấy mẫu. Yêu cầu sẽ được gửi thẳng đến đội ngũ kinh doanh của chúng tôi để liên hệ trực tiếp xác nhận mẫu và giao hàng.",
+        "กรอกข้อมูลและฉลากที่คุณต้องการขอตัวอย่าง คำขอจะส่งตรงถึงทีมขายของเราเพื่อติดต่อคุณแบบตัวต่อตัวในการยืนยันตัวอย่างและการจัดส่ง")) + '</p>'
+      '<form class="rqform" onsubmit="return etaSampleReq(event)">'
+      '<div class="rqg">'
+      '<label class="f">' + esc(lb("Name *", "姓名 *", "Tên *", "ชื่อ *")) + '<input name="name" required></label>'
+      '<label class="f">' + esc(lb("Company", "公司", "Công ty", "บริษัท")) + '<input name="company"></label>'
+      '<label class="f">' + esc(lb("Email *", "邮箱 *", "Email *", "อีเมล *")) + '<input type="email" name="email" required></label>'
+      '<label class="f">' + esc(lb("Phone *", "电话 *", "Điện thoại *", "โทรศัพท์ *")) + '<input name="phone" required></label>'
+      '<label class="f">' + esc(lb("Country *", "国家 *", "Quốc gia *", "ประเทศ *")) +
+        '<select name="country" id="rq_country" required onchange="rqOffice()"><option value="">' +
+        esc(lb("Select…", "请选择…", "Chọn…", "เลือก…")) + '</option>' + opts + '</select></label>'
+      '<label class="f">' + esc(lb("City *", "城市 *", "Thành phố *", "เมือง *")) + '<input name="city" required></label>'
+      '<label class="f">' + esc(lb("District / State", "地区 / 州", "Quận / Bang", "เขต / รัฐ")) + '<input name="district"></label>'
+      '<label class="f">' + esc(lb("Postal code", "邮编", "Mã bưu điện", "รหัสไปรษณีย์")) + '<input name="postal"></label>'
+      '<label class="f full">' + esc(lb("Full address *", "详细地址 *", "Địa chỉ đầy đủ *", "ที่อยู่เต็ม *")) + '<input name="address" required></label>'
+      '<p class="rqoffice" id="rq_office"></p>'
+      '</div>'
+      '<label class="f full" style="margin-bottom:6px">' + esc(lb("Samples you'd like", "想索取的样品", "Mẫu bạn muốn", "ตัวอย่างที่ต้องการ")) + '</label>'
+      '<div class="skchips">' + chips + '</div>'
+      '<div class="rqg" style="margin-top:12px">'
+      '<label class="f full">' + esc(lb("Specific products / model numbers", "具体产品 / 型号", "Sản phẩm / mã cụ thể", "สินค้า / รหัสรุ่นเฉพาะ")) + '<input name="models"></label>'
+      '<label class="f full">' + esc(lb("Your application — surface, temperature, chemistry, print method, label size",
+        "您的应用 —— 表面、温度、化学环境、打印方式、标签尺寸",
+        "Ứng dụng của bạn — bề mặt, nhiệt độ, hóa chất, phương pháp in, kích thước nhãn",
+        "การใช้งานของคุณ — พื้นผิว อุณหภูมิ สารเคมี วิธีพิมพ์ ขนาดฉลาก")) + '<textarea name="message" rows="4"></textarea></label>'
+      '</div>'
+      '<button class="btn pri" type="submit">' + esc(lb("Submit sample request", "提交样品申请", "Gửi yêu cầu mẫu", "ส่งคำขอตัวอย่าง")) + '</button>'
+      '</form>'
+      '<div class="rqok" id="rq_ok">' + esc(lb(
+        "Thank you — your sample request has been prepared. Your email app will open with the request; send it and our sales team will contact you.",
+        "感谢您 —— 样品申请单已生成。您的邮件应用将打开并带上申请内容,发送后我们的销售团队会与您联系。",
+        "Cảm ơn bạn — yêu cầu mẫu đã được chuẩn bị. Ứng dụng email sẽ mở kèm nội dung; hãy gửi đi và đội ngũ kinh doanh sẽ liên hệ với bạn.",
+        "ขอบคุณ — คำขอตัวอย่างถูกจัดเตรียมแล้ว แอปอีเมลจะเปิดพร้อมเนื้อหา ส่งแล้วทีมขายจะติดต่อคุณ")) + '</div>'
+      '</div></section>')
+    js = ('<script>var RQ_OFFICE=' + office_js + ',RQ_DEF="' + esc(OFFICE_DEFAULT) + '";'
+      'function rqOffice(){var c=document.getElementById("rq_country").value,'
+      'o=document.getElementById("rq_office");if(!c){o.textContent="";return;}'
+      'o.textContent="' + esc(lb("Handled by", "由", "Được xử lý bởi", "ดูแลโดย")) + ' "+(RQ_OFFICE[c]||RQ_DEF)+".";}'
+      'function etaSampleReq(e){e.preventDefault();var f=e.target,g=function(n){var el=f.querySelector("[name="+n+"]");return el?el.value.trim():"";};'
+      'var nm=g("name"),em=g("email"),ph=g("phone"),co=g("country"),ci=g("city"),ad=g("address");'
+      'if(!nm||!em||!ph||!co||!ci||!ad){alert("' + esc(lb("Please fill in the required fields (*).", "请填写带 * 的必填项。", "Vui lòng điền các trường bắt buộc (*).", "กรุณากรอกช่องที่จำเป็น (*)")) + '");return false;}'
+      'var picks=[];f.querySelectorAll("[name=sample]:checked").forEach(function(x){picks.push(x.value);});'
+      'var NL="%0D%0A",b="=== ' + esc(lb("SAMPLE REQUEST", "样品申请单", "YÊU CẦU MẪU", "คำขอตัวอย่าง")) + ' ==="+NL+NL'
+      '+"' + esc(lb("Name", "姓名", "Tên", "ชื่อ")) + ': "+nm+NL'
+      '+"' + esc(lb("Company", "公司", "Công ty", "บริษัท")) + ': "+g("company")+NL'
+      '+"' + esc(lb("Email", "邮箱", "Email", "อีเมล")) + ': "+em+NL'
+      '+"' + esc(lb("Phone", "电话", "Điện thoại", "โทรศัพท์")) + ': "+ph+NL+NL'
+      '+"' + esc(lb("Country", "国家", "Quốc gia", "ประเทศ")) + ': "+co+NL'
+      '+"' + esc(lb("City", "城市", "Thành phố", "เมือง")) + ': "+ci+"   ' + esc(lb("District", "地区", "Quận", "เขต")) + ': "+g("district")+NL'
+      '+"' + esc(lb("Address", "地址", "Địa chỉ", "ที่อยู่")) + ': "+ad+NL'
+      '+"' + esc(lb("Postal", "邮编", "Mã bưu điện", "รหัสไปรษณีย์")) + ': "+g("postal")+NL+NL'
+      '+"' + esc(lb("Samples", "样品", "Mẫu", "ตัวอย่าง")) + ': "+(picks.join(", ")||"-")+NL'
+      '+"' + esc(lb("Models", "型号", "Mã", "รุ่น")) + ': "+g("models")+NL'
+      '+"' + esc(lb("Application", "应用", "Ứng dụng", "การใช้งาน")) + ': "+g("message")+NL;'
+      'var sub=encodeURIComponent("' + esc(lb("Sample Request", "样品申请", "Yêu cầu mẫu", "คำขอตัวอย่าง")) + ' - "+nm+" ("+co+")");'
+      'document.getElementById("rq_ok").style.display="block";'
+      'window.location.href="mailto:etialabel@etia-tech.com?subject="+sub+"&body="+b;return false;}</script>')
+    crumb = [(P(lang, "Home", "首页", "Trang chủ", "หน้าแรก"), "/"), (L1, "/request-sample/")]
+    write(lang, "/request-sample/", page(lang, "/request-sample/",
+        P(lang, "Request Samples | ETIA", "申请样品 | ETIA", "Yêu cầu mẫu | ETIA", "ขอตัวอย่าง | ETIA"),
+        P(lang, "Request free label samples from ETIA — pick the labels, tell us your country and address, and our sales team follows up one-to-one.",
+          "向 ETIA 免费申请标签样品 —— 选择样品、填写国家与地址,我们的销售团队将一对一跟进。",
+          "Yêu cầu mẫu nhãn miễn phí từ ETIA — chọn nhãn, cho biết quốc gia và địa chỉ, đội ngũ kinh doanh sẽ liên hệ trực tiếp.",
+          "ขอตัวอย่างฉลากฟรีจาก ETIA — เลือกฉลาก บอกประเทศและที่อยู่ แล้วทีมขายจะติดต่อแบบตัวต่อตัว"),
+        L1,
+        P(lang, "Pick your labels and address — our sales team will confirm the samples and shipping with you directly.",
+          "选择样品并填写地址 —— 我们的销售团队将直接与您确认样品与寄送。",
+          "Chọn nhãn và địa chỉ — đội ngũ kinh doanh sẽ xác nhận mẫu và giao hàng trực tiếp với bạn.",
+          "เลือกฉลากและที่อยู่ — ทีมขายจะยืนยันตัวอย่างและการจัดส่งกับคุณโดยตรง"),
+        body + js, crumb, active="products"))
+    if lang == "en": track("/request-sample/", "core")
 
 def build_tech(lang):
     zh=(lang=="zh")
@@ -2914,6 +3030,7 @@ def build_all():
     build_legal(lang)
   for lang in NAV_PILLAR_LANGS:  # Product / Solutions / Service pillars: all 4 languages
     build_contact(lang)  # linked from the hero CTA on every page → must exist in all 4 languages
+    build_request_sample(lang)  # sample-request landing page (home "Request a Sample" button)
     build_products_landing(lang)  # nav pillar: Product (mega-menu-style landing)
     build_applications(lang)   # nav pillar: Solutions
     build_service(lang)
