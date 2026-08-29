@@ -288,12 +288,16 @@ def build_lang(records, lang):
                 barcode_label_svg(r.get("code") or _model_code(r["slug"]), gp.brand_eyebrow(r["brand"])).replace("'", "&#39;"))
         else:
             media = '<div class="pcell-img lbl">%s</div>' % barcode_label_svg(r.get("code") or _model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
-        cards += ('<a class="pcell" href="%s" data-f="%s">%s<div class="pcell-t">%s</div>'
+        _code = r.get("code") or _model_code(r["slug"])
+        skbtn = ('<span class="skadd" role="button" tabindex="0" data-skc="%s" data-name="%s" data-url="%s" '
+                 'onclick="skAdd(event,this)" aria-label="Add to sample list"></span>') % (
+            esc(_code), esc(L(r["title"])), esc(hp.Lx(lang, r["url"])))
+        cards += ('<a class="pcell" href="%s" data-f="%s">%s%s<div class="pcell-t">%s</div>'
                   '<div class="pcell-chips">%s</div>'
                   '<span class="pcell-go">%s</span></a>') % (
             hp.Lx(lang, r["url"]),
             esc(json.dumps(data, ensure_ascii=False)),
-            media, esc(L(r["title"])), chips, esc(ui["view"]))
+            skbtn, media, esc(L(r["title"])), chips, esc(ui["view"]))
 
     CSS = """<style>
 .cwrap{max-width:1180px;margin:0 auto;padding:26px 22px 48px}

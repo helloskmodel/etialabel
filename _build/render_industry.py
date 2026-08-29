@@ -91,9 +91,12 @@ def shop_grid(ind_key, lang):
         cards = ""
         for r in sorted(members, key=lambda x: L(x["title"], lang).lower()):
             code = r.get("code") or gp._model_code(r["slug"])
-            cards += ('<a class="shpc" href="%s"><span class="shpc-code">%s</span>'
+            sk = ('<span class="skadd" role="button" tabindex="0" data-skc="%s" data-name="%s" data-url="%s" '
+                  'onclick="skAdd(event,this)" aria-label="Add to sample list"></span>') % (
+                esc(code), esc(L(r["title"], lang)), esc(hp.Lx(lang, r["url"])))
+            cards += ('<a class="shpc" href="%s">%s<span class="shpc-code">%s</span>'
                       '<span class="shpc-t">%s</span><span class="shpc-go">%s</span></a>') % (
-                hp.Lx(lang, r["url"]), esc(code), esc(L(r["title"], lang)), esc(L(_SHOP_VIEW, lang)))
+                hp.Lx(lang, r["url"]), sk, esc(code), esc(L(r["title"], lang)), esc(L(_SHOP_VIEW, lang)))
         secs += ('<div class="shpgrp"><h3 class="shph">%s <span class="shpn">%d</span></h3>'
                  '<div class="shpgrid">%s</div></div>') % (esc(L(lab, lang)), len(members), cards)
     return ('<section class="wcsec"><div class="wceye">%s</div><h2>%s</h2>%s</section>') % (
