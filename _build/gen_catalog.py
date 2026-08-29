@@ -496,7 +496,7 @@ def build_sample_request(records, lang):
       '.rqsteps{max-width:1180px;margin:0 auto;padding:20px 22px 0;display:flex;gap:10px;flex-wrap:wrap}'
       '.rqstep{font-size:13px;font-weight:800;color:#8894ac;background:#eef1f7;border:1px solid #e0e6f0;border-radius:999px;padding:7px 16px}'
       '.rqstep.on{color:#fff;background:#143C96;border-color:#143C96}'
-      '.rqcont{background:#143C96;color:#fff;border:none;border-radius:10px;padding:14px 26px;font-size:15px;font-weight:800;cursor:pointer;margin:2px 0 4px}'
+      '.rqcont{display:inline-block;width:auto;background:#143C96;color:#fff;border:none;border-radius:9px;padding:11px 20px;font-size:14px;font-weight:700;cursor:pointer;margin:2px 0 4px}'
       '.rqcont:hover{background:#0f2f78}.rqcont:disabled{background:#b9c3d8;cursor:not-allowed}'
       '.rqback{display:inline-block;font-size:14px;font-weight:800;color:#1A56DB;text-decoration:none;margin:0 0 10px}'
       '.rqrecap{list-style:none;margin:6px 0 16px;padding:14px 16px;background:#f4f8f1;border:1px solid #cfe6c3;border-radius:12px;display:grid;gap:6px}'
@@ -532,7 +532,7 @@ def build_sample_request(records, lang):
         "ยังไม่มีตัวอย่างในตะกร้า — เลือกดูวัสดุด้านล่างแล้วแตะที่การ์ด (หรือ “+”) เพื่อเพิ่ม")) +
         ' <a href="#' + browse_anchor + '">' + esc(lb("Browse below ↓", "浏览下方 ↓", "Xem bên dưới ↓", "เลือกดูด้านล่าง ↓")) + '</a></p>'
       '<button type="button" class="rqcont" onclick="rqGoShip()">' +
-        esc(lb("Confirm samples & continue to shipping →", "确认样品并继续填写寄送 →", "Xác nhận mẫu & tiếp tục giao hàng →", "ยืนยันตัวอย่างและไปยังการจัดส่ง →")) + '</button>'
+        esc(lb("Continue to shipping →", "继续填写寄送 →", "Tiếp tục giao hàng →", "ไปยังการจัดส่ง →")) + '</button>'
       '</div></div>'
       # browse/filter grid (finder in shop mode)
       '<div class="rqform" id="' + browse_anchor + '"><div class="rqsechd">' + esc(lb(
