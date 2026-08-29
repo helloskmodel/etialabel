@@ -26,6 +26,10 @@ def P(lang, en, zh, vi, th, id=None, ms=None):   # multi-language inline string 
             "id": en if id is None else id, "ms": en if ms is None else ms}.get(lang, en)
 PREFIX = {"en": "", "zh": "/cn", "vi": "/vn", "th": "/th", "id": "/id", "ms": "/my"}
 HREFLANG = {"en": "en", "zh": "zh", "vi": "vi", "th": "th", "id": "id", "ms": "ms"}
+# Locales that are BUILT but not yet publicly advertised (English fallback until
+# translated): hidden from the language switcher, sitemaps, hreflang, and marked
+# noindex. Clear this set to launch them. Reachable only by direct URL meanwhile.
+HIDDEN_LANGS = {"id", "ms"}
 # Paths that exist in all four languages (home only). Links to any other path from
 # a vi/th page fall back to the English version (no 404). Industry hubs are EN+ZH.
 FOURLANG = {"/", "/products/", "/products/find/", "/products/polyonics/", "/products/heatproof/", "/applications/", "/service/", "/insights/"}
@@ -793,6 +797,8 @@ def track(path, group): ALL_URLS.append((path, group))
 def hreflang_block(path, langs=None):
     t = []
     for lg in (langs or LANGS):
+        if lg in HIDDEN_LANGS:
+            continue
         t.append('<link rel="alternate" hreflang="%s" href="%s">' % (HREFLANG[lg], SITE + PREFIX[lg] + path))
     t.append('<link rel="alternate" hreflang="x-default" href="%s">' % (SITE + path))  # EN is x-default
     return "".join(t)
@@ -816,11 +822,12 @@ def nav_html(lang, active, path="/", langs=None):
             items += simple_dropdown(lang, t, href, PROD_AXES[1][3], key == active, linkfn, descs=INDUSTRY_MENU_DESC, brands=BRAND_MENU)
         else:
             items += '<a href="%s"%s>%s</a>' % (Lx(lang, href), ' class="on"' if key==active else '', navlab(lang, t))
-    if len(langs) > 2:
-        # 4-language switcher chips (page exists in all of `langs`)
+    vis_langs = [lg for lg in langs if lg not in HIDDEN_LANGS or lg == lang]
+    if len(vis_langs) > 2:
+        # language switcher chips (page exists in all of `langs`; hidden locales omitted)
         sw = '<div class="langsw">%s</div>' % "".join(
             '<a href="%s"%s>%s</a>' % (PREFIX[lg] + path, ' class="on"' if lg == lang else '', LANG_CODE[lg])
-            for lg in langs)
+            for lg in vis_langs)
     else:
         other = "zh" if lang == "en" else "en"
         sw = '<a class="lang" href="%s">%s</a>' % (L(other, path), LANG_CODE[other])
@@ -987,6 +994,8 @@ def cta2(lang, kind, linkfn=L):
 def page(lang, path, title, desc, h1, lede, body, crumb, schema_extra=None, active="", trust=True, hero=None, langs=None, keywords=""):
     canonical = SITE + PREFIX[lang] + path
     kw_meta = ('<meta name="keywords" content="%s">' % esc(keywords)) if keywords else ""
+    if lang in HIDDEN_LANGS:
+        kw_meta = '<meta name="robots" content="noindex,follow">' + kw_meta
     sch = [breadcrumb_jsonld(crumb, lang)] + (schema_extra or [])
     schema_js = "".join('<script type="application/ld+json">%s</script>' % json.dumps(s, ensure_ascii=False) for s in sch)
     cr = ' &rsaquo; '.join((('<a href="%s">%s</a>' % (Lx(lang,p), esc(n))) if p and i < len(crumb)-1 else '<b>%s</b>' % esc(n))
@@ -1453,6 +1462,8 @@ def home_hlink(lang, path):
 def home_switcher(active):
     out=""
     for lg in HOME_LANGS:
+        if lg in HIDDEN_LANGS and lg != active:
+            continue
         href = "/" if lg=="en" else HL_PREFIX[lg]+"/"
         out += '<a href="%s"%s>%s</a>' % (href, ' class="on"' if lg==active else '', esc(HOME_I18N["lang_name"][lg]))
     return '<span class="langsw">%s</span>' % out
@@ -1492,6 +1503,8 @@ def home_footer(lang):
 def home_hreflang(path):
     t=[]
     for lg in HOME_LANGS:
+        if lg in HIDDEN_LANGS:
+            continue
         t.append('<link rel="alternate" hreflang="%s" href="%s%s%s">'%(lg,SITE,HL_PREFIX[lg],path))
     t.append('<link rel="alternate" hreflang="x-default" href="%s%s">'%(SITE,path))
     return "".join(t)
@@ -2022,6 +2035,8 @@ def build_home(lang):
     canonical=SITE+HL_PREFIX[lang]+path
     schema_js='<script type="application/ld+json">%s</script>'%json.dumps(ORG_JSONLD,ensure_ascii=False)
     hero_preload=('<link rel="preload" as="image" href="'+HOME_HERO_ITEMS[0][1]+'" fetchpriority="high">') if HOME_HERO_ITEMS else ""
+    if lang in HIDDEN_LANGS:
+        hero_preload = '<meta name="robots" content="noindex,follow">' + hero_preload
     doc="""<!doctype html><html lang="%s"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
@@ -2120,7 +2135,7 @@ def build_sitemaps():
         g = _sitemap_group(canon)
         if not g:
             continue
-        ordered = [l for l in LANG_ORDER if l in langs]
+        ordered = [l for l in LANG_ORDER if l in langs and l not in HIDDEN_LANGS]
         groups.setdefault(g, []).append((canon, ordered))
 
     order = [("core", "sitemap-core.xml"), ("products", "sitemap-products.xml"),
