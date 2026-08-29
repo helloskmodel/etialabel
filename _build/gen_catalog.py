@@ -19,7 +19,7 @@ BUILD = os.path.dirname(os.path.abspath(__file__))
 PDIR = os.path.join(BUILD, "data", "products")
 PATH = "/products/find/"
 esc = hp.esc
-LANGS = ["en", "zh", "vi", "th"]
+LANGS = ["en", "zh", "vi", "th", "id", "ms"]
 
 # ---- Generated product image: a 4:3 Code 39 barcode-label tile (barcode on top,
 # model code below). Defined in gen_product so both modules share one generator;
@@ -194,7 +194,7 @@ def build_record(d):
 
 
 def build_lang(records, lang):
-    ui = UI[lang]
+    ui = UI.get(lang, UI["en"])
 
     def L(node):
         if isinstance(node, dict):
@@ -721,7 +721,7 @@ def _poly_cat_by_slug(slug):
     return None
 
 def poly_category_cards(lang):
-    ui = POLY_CAT_UI[lang]
+    ui = POLY_CAT_UI.get(lang, POLY_CAT_UI["en"])
     cards = ""
     for c in POLY_CATS:
         title = c["title"].get(lang) or c["title"]["en"]
@@ -733,7 +733,7 @@ def poly_category_cards(lang):
     return ('<div class="bsechd">%s</div><div class="pcatcards">%s</div>' % (esc(ui["browse"]), cards))
 
 def build_poly_cat(lang, slug):
-    c = _poly_cat_by_slug(slug); ui = POLY_CAT_UI[lang]
+    c = _poly_cat_by_slug(slug); ui = POLY_CAT_UI.get(lang, POLY_CAT_UI["en"])
     path = "/products/polyonics/%s/" % slug
     title = c["title"].get(lang) or c["title"]["en"]
     lede = c["lede"].get(lang) or c["lede"]["en"]
@@ -764,7 +764,7 @@ def build_poly_cat(lang, slug):
         hp.track(path, "products")
 
 def build_brand(records, lang, bkey):
-    ui = BRAND_UI[lang]
+    ui = BRAND_UI.get(lang, BRAND_UI["en"])
     path = BRAND_PATH[bkey]
     bname = gp.BRAND_NAMES[bkey].get(lang) or gp.BRAND_NAMES[bkey]["en"]
     def L(node):

@@ -288,7 +288,7 @@ def build_lang(data, lang):
     crumb = [(ui["home"], "/"), (title, path)]
     content = hp.page(lang, path, L(data["seo_title"], lang), L(data["seo_desc"], lang),
                       title, "", body, crumb, active="app", trust=False, hero=hero,
-                      langs=data.get("langs", ["en", "zh"]))
+                      langs=hp.ext_langs(data.get("langs", ["en", "zh"])))
     hp.write(lang, path, content)  # overwrites gen_industry output; path already tracked there
     if lang == "en" and data.get("track"):  # new pages (not from gen_industry) need tracking
         hp.track(path, "products")
@@ -303,7 +303,7 @@ def main():
     # now points to the new High Heat and Cold Chain solution pages.
     for slug in ["wire-cable", "outdoor-energy", "pcb", "steel", "automotive", "medical"]:
         data = json.load(open(os.path.join(IND_DIR, slug + ".json"), encoding="utf-8"))
-        for lang in data.get("langs", ["en", "zh"]):
+        for lang in hp.ext_langs(data.get("langs", ["en", "zh"])):
             out = build_lang(data, lang)
             print("industry v2:", out)
 

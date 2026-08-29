@@ -35,6 +35,16 @@ def _model_code(slug):
     c = slug.upper()
     return re.sub(r'^XF(\d)', r'XF-\1', c)   # xf58 -> XF-58, xf-504 -> XF-504
 
+def _prod_langs(d):
+    """Languages to build a product in. Fully-localized (4-lang) products also
+    build Indonesian & Malay as English-fallback locales."""
+    ls = list(d.get("langs", ["en", "zh"]))
+    if "vi" in ls:
+        for x in ("id", "ms"):
+            if x not in ls:
+                ls.append(x)
+    return ls
+
 def barcode_label_svg(code, eyebrow="POLYONICS"):
     """Inline SVG: a 4:3 printed-label tile — Code 39 barcode on top, model code below."""
     seq = "*" + "".join(ch for ch in code.upper() if ch in _CODE39) + "*"
@@ -539,7 +549,7 @@ def build_lang(d, lang):
     crumb = [(ui["home"], "/"), (title, path)]
     content = hp.page(lang, path, title + " | ETIA", esc(L(d.get("tagline", {}), lang)),
                       title, "", body, crumb, active="products", trust=False, hero=hero,
-                      langs=d.get("langs", ["en", "zh"]))
+                      langs=_prod_langs(d))
     hp.write(lang, path, content)
     if lang == "en":
         hp.track(path, "products")
@@ -555,7 +565,7 @@ def main():
         if slug not in SOLUTION_SLUGS:
             if not ind:
                 (unbannered if not eff_banner else misc).append(slug)
-        for lang in d.get("langs", ["en", "zh"]):
+        for lang in _prod_langs(d):
             build_lang(d, lang)
         print("product:", slug, "[%s]" % (ind or "—"), d.get("langs"))
     # Banner audit — so a big batch of new products can't silently ship without a
