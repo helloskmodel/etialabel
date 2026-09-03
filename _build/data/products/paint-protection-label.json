@@ -2,9 +2,14 @@
  "slug": "paint-protection-label",
  "source": "client TDS — 油漆防护标签（蝴蝶标）/ Paint Protection Label (Butterfly Label), TDS26CN",
  "industry": "auto",
- "langs": ["en", "zh", "vi", "th"],
+ "langs": [
+  "en",
+  "zh",
+  "vi",
+  "th"
+ ],
  "banner": "",
- "product_img": "",
+ "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/26CN",
  "title": {
   "en": "Paint Protection Label (Butterfly Label)",
   "zh": "油漆防护标签（蝴蝶标）",
@@ -55,24 +60,157 @@
  },
  "spec_table": {
   "headers": {
-   "en": ["Property", "Value"],
-   "zh": ["物理特性", "参数"],
-   "vi": ["Đặc tính", "Giá trị"],
-   "th": ["คุณสมบัติ", "ค่า"]
+   "en": [
+    "Property",
+    "Value"
+   ],
+   "zh": [
+    "物理特性",
+    "参数"
+   ],
+   "vi": [
+    "Đặc tính",
+    "Giá trị"
+   ],
+   "th": [
+    "คุณสมบัติ",
+    "ค่า"
+   ]
   },
   "rows": [
-   {"group": {"en": "Construction (thickness)", "zh": "结构（厚度）", "vi": "Cấu tạo (độ dày)", "th": "โครงสร้าง (ความหนา)"}},
-   {"cells": [{"en": "Protective film", "zh": "保护膜", "vi": "Màng bảo vệ", "th": "ฟิล์มป้องกัน"}, "0.036 mm"]},
-   {"cells": [{"en": "Facestock", "zh": "基材", "vi": "Vật liệu mặt", "th": "วัสดุพิมพ์"}, {"en": "0.050 mm white gloss PET", "zh": "0.050 mm 白色亮面 PET", "vi": "PET bóng trắng 0.050 mm", "th": "PET สีขาวเงา 0.050 mm"}]},
-   {"cells": [{"en": "Adhesive", "zh": "粘胶", "vi": "Keo dán", "th": "กาว"}, "0.020 mm"]},
-   {"cells": [{"en": "Liner", "zh": "底纸", "vi": "Lớp lót", "th": "ไลเนอร์"}, "0.079 mm"]},
-   {"group": {"en": "Adhesion", "zh": "粘接性能", "vi": "Độ bám", "th": "การยึดเกาะ"}},
-   {"cells": [{"en": "Peel adhesion", "zh": "剥离力", "vi": "Lực bóc", "th": "แรงลอก"}, "1650 g/cm² (ASTM D903)"]},
-   {"cells": [{"en": "Initial tack", "zh": "初粘力", "vi": "Độ dính ban đầu", "th": "แรงยึดเริ่มต้น"}, "22.6 N/25.4mm (ASTM D2979)"]},
-   {"cells": [{"en": "Holding power", "zh": "保持力", "vi": "Lực giữ", "th": "แรงยึด"}, "≥75 h/1in² (ASTM D3654-A)"]},
-   {"group": {"en": "Thermal", "zh": "耐温", "vi": "Nhiệt", "th": "ความร้อน"}},
-   {"cells": [{"en": "Temperature range", "zh": "温度范围", "vi": "Dải nhiệt độ", "th": "ช่วงอุณหภูมิ"}, "-40℃ to 150℃"]},
-   {"cells": [{"en": "Bake tolerance", "zh": "烘烤耐温", "vi": "Chịu nhiệt nung", "th": "ทนอุณหภูมิอบ"}, {"en": "80–150℃ (paint & powder-coat baking)", "zh": "80–150℃（喷漆与粉末喷涂烘烤）", "vi": "80–150℃ (nung sơn & sơn tĩnh điện)", "th": "80–150℃ (อบสีและพ่นผง)"}]}
+   {
+    "group": {
+     "en": "Construction (thickness)",
+     "zh": "结构（厚度）",
+     "vi": "Cấu tạo (độ dày)",
+     "th": "โครงสร้าง (ความหนา)"
+    }
+   },
+   {
+    "cells": [
+     {
+      "en": "Protective film",
+      "zh": "保护膜",
+      "vi": "Màng bảo vệ",
+      "th": "ฟิล์มป้องกัน"
+     },
+     "0.036 mm"
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Facestock",
+      "zh": "基材",
+      "vi": "Vật liệu mặt",
+      "th": "วัสดุพิมพ์"
+     },
+     {
+      "en": "0.050 mm white gloss PET",
+      "zh": "0.050 mm 白色亮面 PET",
+      "vi": "PET bóng trắng 0.050 mm",
+      "th": "PET สีขาวเงา 0.050 mm"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Adhesive",
+      "zh": "粘胶",
+      "vi": "Keo dán",
+      "th": "กาว"
+     },
+     "0.020 mm"
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Liner",
+      "zh": "底纸",
+      "vi": "Lớp lót",
+      "th": "ไลเนอร์"
+     },
+     "0.079 mm"
+    ]
+   },
+   {
+    "group": {
+     "en": "Adhesion",
+     "zh": "粘接性能",
+     "vi": "Độ bám",
+     "th": "การยึดเกาะ"
+    }
+   },
+   {
+    "cells": [
+     {
+      "en": "Peel adhesion",
+      "zh": "剥离力",
+      "vi": "Lực bóc",
+      "th": "แรงลอก"
+     },
+     "1650 g/cm² (ASTM D903)"
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Initial tack",
+      "zh": "初粘力",
+      "vi": "Độ dính ban đầu",
+      "th": "แรงยึดเริ่มต้น"
+     },
+     "22.6 N/25.4mm (ASTM D2979)"
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Holding power",
+      "zh": "保持力",
+      "vi": "Lực giữ",
+      "th": "แรงยึด"
+     },
+     "≥75 h/1in² (ASTM D3654-A)"
+    ]
+   },
+   {
+    "group": {
+     "en": "Thermal",
+     "zh": "耐温",
+     "vi": "Nhiệt",
+     "th": "ความร้อน"
+    }
+   },
+   {
+    "cells": [
+     {
+      "en": "Temperature range",
+      "zh": "温度范围",
+      "vi": "Dải nhiệt độ",
+      "th": "ช่วงอุณหภูมิ"
+     },
+     "-40℃ to 150℃"
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Bake tolerance",
+      "zh": "烘烤耐温",
+      "vi": "Chịu nhiệt nung",
+      "th": "ทนอุณหภูมิอบ"
+     },
+     {
+      "en": "80–150℃ (paint & powder-coat baking)",
+      "zh": "80–150℃（喷漆与粉末喷涂烘烤）",
+      "vi": "80–150℃ (nung sơn & sơn tĩnh điện)",
+      "th": "80–150℃ (อบสีและพ่นผง)"
+     }
+    ]
+   }
   ],
   "notes": {
    "en": [
@@ -120,9 +258,17 @@
   ]
  },
  "certifications": {
-  "en": ["RoHS compliant (EU Directive 2002/95/EC)"],
-  "zh": ["RoHS 合规（欧盟指令 2002/95/EC）"],
-  "vi": ["Tuân thủ RoHS (Chỉ thị EU 2002/95/EC)"],
-  "th": ["เป็นไปตาม RoHS (ระเบียบ EU 2002/95/EC)"]
+  "en": [
+   "RoHS compliant (EU Directive 2002/95/EC)"
+  ],
+  "zh": [
+   "RoHS 合规（欧盟指令 2002/95/EC）"
+  ],
+  "vi": [
+   "Tuân thủ RoHS (Chỉ thị EU 2002/95/EC)"
+  ],
+  "th": [
+   "เป็นไปตาม RoHS (ระเบียบ EU 2002/95/EC)"
+  ]
  }
 }

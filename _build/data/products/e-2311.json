@@ -2,9 +2,14 @@
  "slug": "e-2311",
  "source": "client catalog (E-2311 胎面标签 / Tire Tread Label)",
  "industry": "auto",
- "langs": ["en", "zh", "vi", "th"],
+ "langs": [
+  "en",
+  "zh",
+  "vi",
+  "th"
+ ],
  "banner": "",
- "product_img": "",
+ "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2311",
  "title": {
   "en": "E-2311 — Tire Tread Label",
   "zh": "E-2311 · 胎面标签",
@@ -47,16 +52,83 @@
  },
  "spec_table": {
   "headers": {
-   "en": ["Specification", "E-2311"],
-   "zh": ["规格项", "E-2311"],
-   "vi": ["Thông số", "E-2311"],
-   "th": ["ข้อมูลจำเพาะ", "E-2311"]
+   "en": [
+    "Specification",
+    "E-2311"
+   ],
+   "zh": [
+    "规格项",
+    "E-2311"
+   ],
+   "vi": [
+    "Thông số",
+    "E-2311"
+   ],
+   "th": [
+    "ข้อมูลจำเพาะ",
+    "E-2311"
+   ]
   },
   "rows": [
-   {"cells": [{"en": "Facestock", "zh": "面材", "vi": "Vật liệu mặt", "th": "วัสดุพิมพ์"}, {"en": "1 mil white matte-silver polyester (PET) film", "zh": "1 mil 白色哑银聚酯（PET）薄膜", "vi": "Màng polyester (PET) bạc mờ trắng 1 mil", "th": "ฟิล์มโพลีเอสเตอร์ (PET) สีขาวเงินด้าน 1 mil"}]},
-   {"cells": [{"en": "Service temperature", "zh": "使用温度", "vi": "Nhiệt độ sử dụng", "th": "อุณหภูมิใช้งาน"}, "-40°C ~ 50°C"]},
-   {"cells": [{"en": "Print method", "zh": "打印方式", "vi": "Phương pháp in", "th": "วิธีการพิมพ์"}, {"en": "Thermal transfer", "zh": "热转印", "vi": "In chuyển nhiệt", "th": "การพิมพ์ถ่ายเทความร้อน"}]},
-   {"cells": [{"en": "Application", "zh": "用途", "vi": "Ứng dụng", "th": "การใช้งาน"}, {"en": "Finished-tire tread identification", "zh": "成品胎胎面标识", "vi": "Nhận diện mặt lốp thành phẩm", "th": "การระบุหน้ายางสำเร็จรูป"}]}
+   {
+    "cells": [
+     {
+      "en": "Facestock",
+      "zh": "面材",
+      "vi": "Vật liệu mặt",
+      "th": "วัสดุพิมพ์"
+     },
+     {
+      "en": "1 mil white matte-silver polyester (PET) film",
+      "zh": "1 mil 白色哑银聚酯（PET）薄膜",
+      "vi": "Màng polyester (PET) bạc mờ trắng 1 mil",
+      "th": "ฟิล์มโพลีเอสเตอร์ (PET) สีขาวเงินด้าน 1 mil"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Service temperature",
+      "zh": "使用温度",
+      "vi": "Nhiệt độ sử dụng",
+      "th": "อุณหภูมิใช้งาน"
+     },
+     "-40°C ~ 50°C"
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Print method",
+      "zh": "打印方式",
+      "vi": "Phương pháp in",
+      "th": "วิธีการพิมพ์"
+     },
+     {
+      "en": "Thermal transfer",
+      "zh": "热转印",
+      "vi": "In chuyển nhiệt",
+      "th": "การพิมพ์ถ่ายเทความร้อน"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Application",
+      "zh": "用途",
+      "vi": "Ứng dụng",
+      "th": "การใช้งาน"
+     },
+     {
+      "en": "Finished-tire tread identification",
+      "zh": "成品胎胎面标识",
+      "vi": "Nhận diện mặt lốp thành phẩm",
+      "th": "การระบุหน้ายางสำเร็จรูป"
+     }
+    ]
+   }
   ]
  },
  "applications": {
