@@ -398,6 +398,23 @@
      "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-AUTOPARTS",
      "landing": true,
      "slug": "e-2813"
+    },
+    {
+     "name": {
+      "en": "Paint Protection Label",
+      "zh": "油漆防护标签（蝴蝶标）",
+      "vi": "Nhãn bảo vệ sơn",
+      "th": "ฉลากปกป้องสี"
+     },
+     "line": {
+      "en": "Butterfly masking label · 2 mil white gloss PET + removable film · protects marking through spray-paint / powder-coat / e-coat baking (80–150℃) · peels off clean, no residue · RoHS",
+      "zh": "蝴蝶标遮蔽防护 · 2 mil 白色亮面 PET + 可移除保护膜 · 喷漆/喷粉/电泳烤漆（80–150℃）全程保护标识 · 撕除无残胶 · RoHS",
+      "vi": "Nhãn che chắn cánh bướm · PET bóng trắng 2 mil + màng tháo rời · bảo vệ nhãn qua sơn phun / sơn tĩnh điện / nung ED (80–150℃) · bóc sạch, không keo · RoHS",
+      "th": "ฉลากปิดบังปีกผีเสื้อ · PET สีขาวเงา 2 mil + ฟิล์มลอกออกได้ · ปกป้องเครื่องหมายตลอดพ่นสี/พ่นผง/อบ e-coat (80–150℃) · ลอกสะอาดไม่มีคราบ · RoHS"
+     },
+     "img": "",
+     "landing": true,
+     "slug": "paint-protection-label"
     }
    ],
    "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M3 13l1.8-4.5A2 2 0 0 1 6.7 7H14l4 4 2.4.8A1 1 0 0 1 21 12.8V15h-2.2M8.8 15H6'/><circle cx='7.5' cy='16.5' r='1.9'/><circle cx='16.8' cy='16.5' r='1.9'/></svg>"
