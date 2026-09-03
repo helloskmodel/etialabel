@@ -1,0 +1,80 @@
+{
+ "slug": "e-2311",
+ "source": "client catalog (E-2311 胎面标签 / Tire Tread Label)",
+ "industry": "auto",
+ "langs": ["en", "zh", "vi", "th"],
+ "banner": "",
+ "product_img": "",
+ "title": {
+  "en": "E-2311 — Tire Tread Label",
+  "zh": "E-2311 · 胎面标签",
+  "vi": "E-2311 · Nhãn mặt lốp (tread)",
+  "th": "E-2311 · ฉลากหน้ายาง (tread)"
+ },
+ "tagline": {
+  "en": "1 mil white matte-silver PET label for finished-tire tread identification.",
+  "zh": "1 mil 白色哑银 PET 标签，用于成品胎胎面标识",
+  "vi": "Nhãn PET bạc mờ trắng 1 mil để nhận diện mặt lốp thành phẩm.",
+  "th": "ฉลาก PET สีขาวเงินด้าน 1 mil สำหรับระบุหน้ายางสำเร็จรูป"
+ },
+ "positioning": {
+  "en": "E-2311 is a 1 mil white matte-silver PET label built for tread marking on finished tires. It supports thermal-transfer printing of clear barcodes and part data for tire identification and traceability.",
+  "zh": "E-2311 为 1 mil 白色哑银 PET 标签，专为成品胎胎面标识而设计，支持热转印打印清晰条码与信息，用于轮胎标识与追溯。",
+  "vi": "E-2311 là nhãn PET bạc mờ trắng 1 mil dành cho việc đánh dấu mặt lốp trên lốp thành phẩm. Nhãn hỗ trợ in chuyển nhiệt mã vạch và dữ liệu rõ nét để nhận diện và truy xuất lốp.",
+  "th": "E-2311 เป็นฉลาก PET สีขาวเงินด้าน 1 mil สำหรับทำเครื่องหมายบนหน้ายางของยางสำเร็จรูป รองรับการพิมพ์ถ่ายเทความร้อนของบาร์โค้ดและข้อมูลที่คมชัด เพื่อการระบุและสืบค้นยาง"
+ },
+ "features": {
+  "en": [
+   "1 mil white matte-silver PET facestock, thin and conformable to the tread surface.",
+   "Thermal-transfer printable for crisp, scannable barcodes.",
+   "Service temperature -40°C~50°C for finished-tire handling, storage and logistics."
+  ],
+  "zh": [
+   "1 mil 白色哑银 PET 面材，轻薄贴合胎面",
+   "支持热转印，条码清晰易扫读",
+   "使用温度 -40℃~50℃，适配成品胎周转、存储与物流"
+  ],
+  "vi": [
+   "Vật liệu mặt PET bạc mờ trắng 1 mil, mỏng và ôm theo bề mặt mặt lốp.",
+   "In chuyển nhiệt được, mã vạch sắc nét dễ quét.",
+   "Nhiệt độ sử dụng -40°C~50°C cho vận chuyển, lưu kho và logistics lốp thành phẩm."
+  ],
+  "th": [
+   "วัสดุ PET สีขาวเงินด้าน 1 mil บางและแนบไปกับผิวหน้ายาง",
+   "พิมพ์ถ่ายเทความร้อนได้ บาร์โค้ดคมชัดสแกนง่าย",
+   "อุณหภูมิใช้งาน -40°C~50°C สำหรับการเคลื่อนย้าย จัดเก็บ และโลจิสติกส์ยางสำเร็จรูป"
+  ]
+ },
+ "spec_table": {
+  "headers": {
+   "en": ["Specification", "E-2311"],
+   "zh": ["规格项", "E-2311"],
+   "vi": ["Thông số", "E-2311"],
+   "th": ["ข้อมูลจำเพาะ", "E-2311"]
+  },
+  "rows": [
+   {"cells": [{"en": "Facestock", "zh": "面材", "vi": "Vật liệu mặt", "th": "วัสดุพิมพ์"}, {"en": "1 mil white matte-silver polyester (PET) film", "zh": "1 mil 白色哑银聚酯（PET）薄膜", "vi": "Màng polyester (PET) bạc mờ trắng 1 mil", "th": "ฟิล์มโพลีเอสเตอร์ (PET) สีขาวเงินด้าน 1 mil"}]},
+   {"cells": [{"en": "Service temperature", "zh": "使用温度", "vi": "Nhiệt độ sử dụng", "th": "อุณหภูมิใช้งาน"}, "-40°C ~ 50°C"]},
+   {"cells": [{"en": "Print method", "zh": "打印方式", "vi": "Phương pháp in", "th": "วิธีการพิมพ์"}, {"en": "Thermal transfer", "zh": "热转印", "vi": "In chuyển nhiệt", "th": "การพิมพ์ถ่ายเทความร้อน"}]},
+   {"cells": [{"en": "Application", "zh": "用途", "vi": "Ứng dụng", "th": "การใช้งาน"}, {"en": "Finished-tire tread identification", "zh": "成品胎胎面标识", "vi": "Nhận diện mặt lốp thành phẩm", "th": "การระบุหน้ายางสำเร็จรูป"}]}
+  ]
+ },
+ "applications": {
+  "en": [
+   "Tread marking and identification on finished tires",
+   "Tire barcode / serial-number traceability labels"
+  ],
+  "zh": [
+   "成品胎胎面标识",
+   "轮胎条码 / 序列号追溯标签"
+  ],
+  "vi": [
+   "Đánh dấu và nhận diện mặt lốp trên lốp thành phẩm",
+   "Nhãn truy xuất mã vạch / số sê-ri lốp"
+  ],
+  "th": [
+   "การทำเครื่องหมายและระบุหน้ายางบนยางสำเร็จรูป",
+   "ฉลากสืบค้นบาร์โค้ด / หมายเลขซีเรียลของยาง"
+  ]
+ }
+}
