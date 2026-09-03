@@ -442,11 +442,15 @@ footer .bar{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;co
 /* Vietnamese headlines run longer — shrink + widen so they stay on one line */
 html[lang="vi"] .hbanner h1,html[lang="vi"] .hero h1{font-size:30px;max-width:none}
 @media(max-width:820px){html[lang="vi"] .hbanner h1,html[lang="vi"] .hero h1{font-size:23px}}
-/* floating messaging button (LINE on TH pages, Zalo on VN pages) */
-.fabchat{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;gap:8px;height:54px;padding:0 20px 0 15px;border:none;cursor:pointer;border-radius:27px;color:#fff;font-family:var(--sans);font-weight:800;font-size:15px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.28);transition:transform .15s,box-shadow .15s}
+/* floating messaging stack: primary pill + icon-only channel circles */
+.fabstack{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.fabchat{display:inline-flex;align-items:center;gap:8px;height:54px;padding:0 20px 0 15px;border:none;cursor:pointer;border-radius:27px;color:#fff;font-family:var(--sans);font-weight:800;font-size:15px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.28);transition:transform .15s,box-shadow .15s}
 .fabchat:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.34);color:#fff}
 .fabchat svg{width:26px;height:26px;flex:none}
-.fabchat.line{background:#06C755}.fabchat.zalo{background:#0068FF}.fabchat.wechat{background:#07C160}
+.fabmini{display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:50%;color:#fff;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.28);transition:transform .15s,box-shadow .15s}
+.fabmini:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.34);color:#fff}
+.fabmini svg{width:26px;height:26px;flex:none}
+.fabchat.wa,.fabmini.wa{background:#25D366}.fabchat.line,.fabmini.line{background:#06C755}.fabchat.zalo,.fabmini.zalo{background:#0068FF}.fabchat.wechat,.fabmini.wechat{background:#07C160}
 .ckbar{position:fixed;left:0;right:0;bottom:0;z-index:120;display:none;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;padding:14px 20px;background:#0F1F47;color:#fff;box-shadow:0 -4px 20px rgba(0,0,0,.22)}
 .ckbar.on{display:flex}
 .ckbar p{margin:0;font-size:14px;max-width:64ch;line-height:1.5}
@@ -466,14 +470,7 @@ html[lang="vi"] .hbanner h1,html[lang="vi"] .hero h1{font-size:30px;max-width:no
 .skadd.in::before{content:"\\2713"}.skadd:not(.in)::before{content:"+"}
 @media(max-width:600px){.skcart{left:14px;bottom:72px;padding:10px 15px;font-size:13px}}
 @media(max-width:600px){.ckbar{padding:11px 14px;gap:10px}.ckbar p{font-size:12.5px}.ckbtn{padding:9px 18px;font-size:13px}}
-@media(max-width:600px){.fabchat{height:48px;padding:0 16px 0 12px;font-size:14px;right:14px;bottom:14px}.fabchat svg{width:23px;height:23px}}
-/* WeChat QR popup (Chinese pages) */
-.wxqr{display:none;position:fixed;inset:0;z-index:200;background:rgba(15,31,71,.55);align-items:center;justify-content:center;padding:20px}
-.wxqr.on{display:flex}
-.wxqr-card{background:#fff;border-radius:16px;padding:22px;max-width:300px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.3)}
-.wxqr-card img{width:220px;height:220px;object-fit:contain;display:block;margin:0 auto 12px}
-.wxqr-card p{margin:0 0 14px;color:#18213B;font-weight:700;font-size:15px}
-.wxqr-x{border:none;background:#07C160;color:#fff;font-weight:800;padding:9px 22px;border-radius:22px;cursor:pointer;font-size:14px}
+@media(max-width:600px){.fabstack{right:14px;bottom:14px;gap:10px}.fabchat{height:48px;padding:0 16px 0 12px;font-size:14px}.fabchat svg{width:23px;height:23px}.fabmini{width:46px;height:46px}.fabmini svg{width:24px;height:24px}}
 .hero{padding:60px 0 46px}
 .hero .eyebrow{margin-bottom:14px}
 .hero h1{font-family:var(--sans);font-weight:800;font-size:40px;line-height:1.12;letter-spacing:-.01em;text-align:left;text-wrap:balance;max-width:18em}
@@ -982,26 +979,56 @@ FOOTER_I18N = {
  "pc": {"en": ("Privacy","Cookies"), "zh": ("隐私","Cookie"),
         "vi": ("Bảo mật","Cookie"), "th": ("ความเป็นส่วนตัว","คุกกี้")},
 }
-# WeChat QR shown in the Chinese-page popup (confirm exact COS path with client).
-_WECHAT_QR = "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/IMAGO/etia-wechat-qr.webp"
+# WeChat Work (企业微信) customer-service link for the Chinese-page chat button.
+# Opening it deep-links into a live 微信客服 chat in the WeChat app on mobile and
+# shows a scan-to-chat QR on desktop — no self-hosted QR image needed.
+_WECHAT_KF = "https://work.weixin.qq.com/kfid/kfcae13b93d714df6b6"
+
+# Brand glyphs (24×24, single path, fill=currentColor) for the chat channels.
+_ICON = {
+    "wa": "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z",
+    "line": "M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.843 2.572-5.99zm-18.988 3.219a.234.234 0 01-.233.234H1.464a.233.233 0 01-.233-.234V7.548c0-.129.104-.234.233-.234h.836c.128 0 .233.105.233.234v4.729h2.415c.129 0 .233.104.233.233v.836zm2.018 0a.233.233 0 01-.233.234h-.836a.233.233 0 01-.233-.234V7.548c0-.129.104-.234.233-.234h.836c.128 0 .233.105.233.234v5.975zm6.616 0a.233.233 0 01-.233.234h-.836a.23.23 0 01-.186-.093L9.55 8.917v4.606a.233.233 0 01-.233.234h-.836a.233.233 0 01-.233-.234V7.548c0-.129.104-.234.233-.234h.855l.036.005.019.006.02.008.017.009.019.013.015.011.017.018.014.015.008.012 2.641 3.566V7.548c0-.129.105-.234.234-.234h.836c.128 0 .233.105.233.234v5.975zm5.309-5.14a.233.233 0 01-.233.234h-2.415v.933h2.415c.128 0 .233.105.233.234v.836a.234.234 0 01-.233.234h-2.415v.933h2.415c.128 0 .233.105.233.233v.836a.234.234 0 01-.233.234h-3.484a.233.233 0 01-.233-.234V7.548c0-.129.104-.234.233-.234h3.484c.128 0 .233.105.233.234v.835z",
+    "wechat": "M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.116 2.361-.335a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.045c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 01-.023-.156.49.49 0 01.201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088-.135-.01-.27-.027-.406-.024zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.969-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.969-.982z",
+    "zalo": "M12 3.4c-5.4 0-9.8 3.4-9.8 7.6 0 3.8 3.5 7 8.2 7.6.32.07.76.21.87.48.1.25.06.62.03.87 0 0-.11.68-.14.83-.04.25-.2.98.86.53 1.06-.44 5.7-3.35 7.78-5.74 1.43-1.56 2.11-3.14 2.11-4.9 0-4.2-4.4-7.6-9.8-7.6z",
+}
+# Each channel: css class · label · href · aria-label · icon key.
+_CHANNELS = {
+    "whatsapp": ("wa",     "WhatsApp", "https://wa.me/message/HDAWX7IOYT4CO1", "Chat with us on WhatsApp", "wa"),
+    "line":     ("line",   "LINE",     "https://lin.ee/wLV66QX",               "Add us on LINE",           "line"),
+    "wechat":   ("wechat", "微信",     _WECHAT_KF,                             "微信客服咨询",             "wechat"),
+    "zalo":     ("zalo",   "Zalo",     "https://zalo.me/84961530153",          "Liên hệ qua Zalo",         "zalo"),
+}
+# Chat channels shown per market, primary first. The primary renders as a
+# labelled pill at the bottom; the rest stack above it as icon-only circles.
+_MARKET_CHANNELS = {
+    "en": ["whatsapp", "line", "wechat"],
+    "zh": ["wechat", "whatsapp", "line"],
+    "th": ["line"],
+    "vi": ["zalo"],
+    "id": ["whatsapp"],
+}
 
 def floating_contact(lang):
-    """Floating chat button by market: LINE (English + Thai) → the Thai official
-    account, Zalo (Vietnam), and a WeChat scan-to-add QR popup (Chinese)."""
-    bubble = ('<svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 3.4c-5.4 0-9.8 3.4-9.8 7.6 0 3.8 3.5 7 8.2 7.6.32.07.76.21.87.48.1.25.06.62.03.87 0 0-.11.68-.14.83-.04.25-.2.98.86.53 1.06-.44 5.7-3.35 7.78-5.74 1.43-1.56 2.11-3.14 2.11-4.9 0-4.2-4.4-7.6-9.8-7.6z"/></svg>')
-    if lang in ("en", "th"):
-        return ('<a class="fabchat line" href="https://lin.ee/wLV66QX" target="_blank" rel="noopener" aria-label="Add us on LINE">%s<span>LINE</span></a>' % bubble)
-    if lang == "vi":
-        return ('<a class="fabchat zalo" href="https://zalo.me/84961530153" target="_blank" rel="noopener" aria-label="Liên hệ qua Zalo">%s<span>Zalo</span></a>' % bubble)
-    if lang == "zh":
-        return ('<button type="button" class="fabchat wechat" aria-label="微信扫码添加" onclick="document.getElementById(\'wxqr\').classList.add(\'on\')">%s<span>微信</span></button>'
-                '<div id="wxqr" class="wxqr" onclick="this.classList.remove(\'on\')">'
-                '<div class="wxqr-card" onclick="event.stopPropagation()">'
-                '<img src="%s" alt="ETIA 微信二维码" onerror="this.style.display=\'none\'">'
-                '<p>微信扫一扫，添加我们</p>'
-                '<button type="button" class="wxqr-x" onclick="document.getElementById(\'wxqr\').classList.remove(\'on\')">关闭</button>'
-                '</div></div>') % (bubble, esc(_WECHAT_QR))
-    return ""
+    """Floating chat stack by market. English leads with WhatsApp (plus LINE &
+    WeChat); Chinese leads with the WeChat Work 微信客服 link (plus WhatsApp &
+    LINE); Thai is LINE-only and Vietnamese is Zalo-only. The WeChat link opens a
+    live 微信客服 chat in WeChat on mobile and shows a scan QR on desktop."""
+    order = _MARKET_CHANNELS.get(lang)
+    if not order:
+        return ""
+    def btn(key, mini):
+        cls, label, href, aria, icon = _CHANNELS[key]
+        svg = ('<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="%s"/></svg>'
+               % _ICON[icon])
+        if mini:
+            return ('<a class="fabmini %s" href="%s" target="_blank" rel="noopener" aria-label="%s" title="%s">%s</a>'
+                    % (cls, esc(href), esc(aria), esc(label), svg))
+        return ('<a class="fabchat %s" href="%s" target="_blank" rel="noopener" aria-label="%s">%s<span>%s</span></a>'
+                % (cls, esc(href), esc(aria), svg, esc(label)))
+    # DOM order top→bottom: lower-priority circles first, primary pill last
+    # (bottom), so priority reads bottom-up from the thumb-reachable pill.
+    parts = [btn(k, True) for k in reversed(order[1:])] + [btn(order[0], False)]
+    return '<div class="fabstack">%s</div>' % "".join(parts)
 
 # GA4 Measurement ID (e.g. "G-XXXXXXXX"). Empty = no analytics loaded and no
 # consent bar shown (the site then sets no non-essential cookies). Fill this in
