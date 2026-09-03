@@ -2,9 +2,14 @@
  "slug": "e-2313",
  "source": "client E-2313 brief (硫化标签 / Tire Vulcanization Label)",
  "industry": "auto",
- "langs": ["en", "zh", "vi", "th"],
+ "langs": [
+  "en",
+  "zh",
+  "vi",
+  "th"
+ ],
  "banner": "",
- "product_img": "",
+ "product_img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/E2313",
  "title": {
   "en": "E-2313 — Tire Vulcanization Label",
   "zh": "E-2313 · 轮胎硫化标签",
@@ -81,28 +86,166 @@
  },
  "spec_table": {
   "headers": {
-   "en": ["Specification", "E-2313"],
-   "zh": ["规格项", "E-2313"],
-   "vi": ["Thông số", "E-2313"],
-   "th": ["ข้อมูลจำเพาะ", "E-2313"]
+   "en": [
+    "Specification",
+    "E-2313"
+   ],
+   "zh": [
+    "规格项",
+    "E-2313"
+   ],
+   "vi": [
+    "Thông số",
+    "E-2313"
+   ],
+   "th": [
+    "ข้อมูลจำเพาะ",
+    "E-2313"
+   ]
   },
   "rows": [
-   {"group": {"en": "Construction", "zh": "结构", "vi": "Cấu tạo", "th": "โครงสร้าง"}},
-   {"cells": [{"en": "Facestock", "zh": "面材", "vi": "Vật liệu mặt", "th": "วัสดุพิมพ์"}, {"en": "3 mil (0.084 mm) white matte polyester (PET) film", "zh": "3 mil（0.084 mm）白色哑面聚酯（PET）薄膜", "vi": "Màng polyester (PET) mờ trắng 3 mil (0.084 mm)", "th": "ฟิล์มโพลีเอสเตอร์ (PET) สีขาวด้าน 3 mil (0.084 mm)"}]},
-   {"cells": [{"en": "Adhesive", "zh": "胶粘剂", "vi": "Keo dán", "th": "กาว"}, {"en": "Rubber-based pressure-sensitive adhesive, 0.032 mm", "zh": "橡胶基压敏胶，0.032 mm", "vi": "Keo áp lực gốc cao su, 0.032 mm", "th": "กาวแรงดันฐานยาง 0.032 mm"}]},
-   {"group": {"en": "Performance", "zh": "性能", "vi": "Hiệu năng", "th": "ประสิทธิภาพ"}},
-   {"cells": [{"en": "Peel adhesion", "zh": "剥离力", "vi": "Lực bóc", "th": "แรงลอก"}, "4 N/25 mm"]},
-   {"cells": [{"en": "Initial tack", "zh": "初粘力", "vi": "Độ dính ban đầu", "th": "แรงยึดเริ่มต้น"}, "7 N/25 mm"]},
-   {"cells": [{"en": "Service temperature", "zh": "使用温度", "vi": "Nhiệt độ sử dụng", "th": "อุณหภูมิใช้งาน"}, "-40°C ~ 200°C"]},
-   {"cells": [{"en": "Curing condition", "zh": "硫化工况", "vi": "Điều kiện lưu hóa", "th": "สภาวะอบยาง"}, {"en": "180°C–220°C high-temperature, high-pressure vulcanization", "zh": "180℃~220℃ 高温高压硫化", "vi": "Lưu hóa nhiệt cao, áp lực cao 180°C–220°C", "th": "การอบยางอุณหภูมิและแรงดันสูง 180°C–220°C"}]},
-   {"cells": [{"en": "Application", "zh": "贴标方式", "vi": "Cách dán", "th": "วิธีติด"}, {"en": "Automatic labeling supported", "zh": "支持自动贴标", "vi": "Hỗ trợ dán nhãn tự động", "th": "รองรับการติดฉลากอัตโนมัติ"}]},
-   {"cells": [{"en": "Compliance", "zh": "合规", "vi": "Tuân thủ", "th": "การรับรอง"}, "RoHS"]}
+   {
+    "group": {
+     "en": "Construction",
+     "zh": "结构",
+     "vi": "Cấu tạo",
+     "th": "โครงสร้าง"
+    }
+   },
+   {
+    "cells": [
+     {
+      "en": "Facestock",
+      "zh": "面材",
+      "vi": "Vật liệu mặt",
+      "th": "วัสดุพิมพ์"
+     },
+     {
+      "en": "3 mil (0.084 mm) white matte polyester (PET) film",
+      "zh": "3 mil（0.084 mm）白色哑面聚酯（PET）薄膜",
+      "vi": "Màng polyester (PET) mờ trắng 3 mil (0.084 mm)",
+      "th": "ฟิล์มโพลีเอสเตอร์ (PET) สีขาวด้าน 3 mil (0.084 mm)"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Adhesive",
+      "zh": "胶粘剂",
+      "vi": "Keo dán",
+      "th": "กาว"
+     },
+     {
+      "en": "Rubber-based pressure-sensitive adhesive, 0.032 mm",
+      "zh": "橡胶基压敏胶，0.032 mm",
+      "vi": "Keo áp lực gốc cao su, 0.032 mm",
+      "th": "กาวแรงดันฐานยาง 0.032 mm"
+     }
+    ]
+   },
+   {
+    "group": {
+     "en": "Performance",
+     "zh": "性能",
+     "vi": "Hiệu năng",
+     "th": "ประสิทธิภาพ"
+    }
+   },
+   {
+    "cells": [
+     {
+      "en": "Peel adhesion",
+      "zh": "剥离力",
+      "vi": "Lực bóc",
+      "th": "แรงลอก"
+     },
+     "4 N/25 mm"
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Initial tack",
+      "zh": "初粘力",
+      "vi": "Độ dính ban đầu",
+      "th": "แรงยึดเริ่มต้น"
+     },
+     "7 N/25 mm"
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Service temperature",
+      "zh": "使用温度",
+      "vi": "Nhiệt độ sử dụng",
+      "th": "อุณหภูมิใช้งาน"
+     },
+     "-40°C ~ 200°C"
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Curing condition",
+      "zh": "硫化工况",
+      "vi": "Điều kiện lưu hóa",
+      "th": "สภาวะอบยาง"
+     },
+     {
+      "en": "180°C–220°C high-temperature, high-pressure vulcanization",
+      "zh": "180℃~220℃ 高温高压硫化",
+      "vi": "Lưu hóa nhiệt cao, áp lực cao 180°C–220°C",
+      "th": "การอบยางอุณหภูมิและแรงดันสูง 180°C–220°C"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Application",
+      "zh": "贴标方式",
+      "vi": "Cách dán",
+      "th": "วิธีติด"
+     },
+     {
+      "en": "Automatic labeling supported",
+      "zh": "支持自动贴标",
+      "vi": "Hỗ trợ dán nhãn tự động",
+      "th": "รองรับการติดฉลากอัตโนมัติ"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "en": "Compliance",
+      "zh": "合规",
+      "vi": "Tuân thủ",
+      "th": "การรับรอง"
+     },
+     "RoHS"
+    ]
+   }
   ],
   "notes": {
-   "en": ["Storage: 22°C, 50% RH — shelf life up to 1 year.", "Always validate suitability with on-site process testing before production."],
-   "zh": ["存储条件：22℃、相对湿度 50%，有效期可达 1 年", "建议客户务必提前做现场工况测试验证适用性"],
-   "vi": ["Bảo quản: 22°C, 50% RH — hạn dùng đến 1 năm.", "Luôn kiểm chứng tính phù hợp bằng thử nghiệm quy trình tại chỗ trước khi sản xuất."],
-   "th": ["การจัดเก็บ: 22°C, ความชื้นสัมพัทธ์ 50% — อายุการใช้งานสูงสุด 1 ปี", "ควรทดสอบกับกระบวนการจริงหน้างานก่อนใช้ผลิตทุกครั้ง"]
+   "en": [
+    "Storage: 22°C, 50% RH — shelf life up to 1 year.",
+    "Always validate suitability with on-site process testing before production."
+   ],
+   "zh": [
+    "存储条件：22℃、相对湿度 50%，有效期可达 1 年",
+    "建议客户务必提前做现场工况测试验证适用性"
+   ],
+   "vi": [
+    "Bảo quản: 22°C, 50% RH — hạn dùng đến 1 năm.",
+    "Luôn kiểm chứng tính phù hợp bằng thử nghiệm quy trình tại chỗ trước khi sản xuất."
+   ],
+   "th": [
+    "การจัดเก็บ: 22°C, ความชื้นสัมพัทธ์ 50% — อายุการใช้งานสูงสุด 1 ปี",
+    "ควรทดสอบกับกระบวนการจริงหน้างานก่อนใช้ผลิตทุกครั้ง"
+   ]
   }
  },
  "applications": {
@@ -128,9 +271,17 @@
   ]
  },
  "certifications": {
-  "en": ["RoHS compliant"],
-  "zh": ["RoHS 合规"],
-  "vi": ["Tuân thủ RoHS"],
-  "th": ["เป็นไปตาม RoHS"]
+  "en": [
+   "RoHS compliant"
+  ],
+  "zh": [
+   "RoHS 合规"
+  ],
+  "vi": [
+   "Tuân thủ RoHS"
+  ],
+  "th": [
+   "เป็นไปตาม RoHS"
+  ]
  }
 }
