@@ -450,7 +450,7 @@ html[lang="vi"] .hbanner h1,html[lang="vi"] .hero h1{font-size:30px;max-width:no
 .fabmini{display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:50%;color:#fff;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.28);transition:transform .15s,box-shadow .15s}
 .fabmini:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.34);color:#fff}
 .fabmini svg{width:26px;height:26px;flex:none}
-.fabchat.wa,.fabmini.wa{background:#25D366}.fabchat.line,.fabmini.line{background:#06C755}.fabchat.zalo,.fabmini.zalo{background:#0068FF}.fabchat.wechat,.fabmini.wechat{background:#07C160}
+.fabchat.wa,.fabmini.wa{background:#1A56DB}.fabchat.line,.fabmini.line{background:#06C755}.fabchat.zalo,.fabmini.zalo{background:#0068FF}.fabchat.wechat,.fabmini.wechat{background:#07C160}
 .ckbar{position:fixed;left:0;right:0;bottom:0;z-index:120;display:none;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;padding:14px 20px;background:#0F1F47;color:#fff;box-shadow:0 -4px 20px rgba(0,0,0,.22)}
 .ckbar.on{display:flex}
 .ckbar p{margin:0;font-size:14px;max-width:64ch;line-height:1.5}
