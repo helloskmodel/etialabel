@@ -495,8 +495,8 @@
       "th": "ETIA E-2313 · ฉลากอบยาง PET สีขาวด้าน 3 mil กาวแรงดันฐานยาง · -40°C~200°C เหมาะกับความร้อนและแรงดันอบยาง 180°C–220°C · แรงลอก 4N/25mm แรงยึดเริ่มต้น 7N/25mm — ยึดยางแน่นหลังอบไม่หลุดลอก · ทนน้ำมัน กรด/ด่าง ตัวทำละลาย และรอยขีดข่วน ติดอัตโนมัติ เป็นไปตาม RoHS"
      },
      "img": "",
-     "landing": false,
-     "slug": ""
+     "landing": true,
+     "slug": "e-2313"
     },
     {
      "name": {
@@ -512,8 +512,8 @@
       "th": "ETIA E-2311 · ฉลากระบุหน้ายาง · PET สีขาวเงินด้าน 1 mil · ช่วงอุณหภูมิ -40°C~50°C · สำหรับระบุหน้ายางสำเร็จรูป"
      },
      "img": "",
-     "landing": false,
-     "slug": ""
+     "landing": true,
+     "slug": "e-2311"
     }
    ],
    "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><circle cx='12' cy='12' r='4'/><path d='M12 3v3M12 18v3M3 12h3M18 12h3'/></svg>"

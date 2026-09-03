@@ -1,0 +1,136 @@
+{
+ "slug": "e-2313",
+ "source": "client E-2313 brief (硫化标签 / Tire Vulcanization Label)",
+ "industry": "auto",
+ "langs": ["en", "zh", "vi", "th"],
+ "banner": "",
+ "product_img": "",
+ "title": {
+  "en": "E-2313 — Tire Vulcanization Label",
+  "zh": "E-2313 · 轮胎硫化标签",
+  "vi": "E-2313 · Nhãn lưu hóa lốp xe",
+  "th": "E-2313 · ฉลากอบยาง (วัลคาไนซ์) สำหรับยาง"
+ },
+ "tagline": {
+  "en": "3 mil white matte PET vulcanization label with rubber-based pressure-sensitive adhesive — engineered for 180°C–220°C tire and rubber curing.",
+  "zh": "3 mil 白色哑面 PET 橡胶基压敏胶硫化标签 —— 专为 180℃~220℃ 轮胎与橡胶制品硫化工艺而生",
+  "vi": "Nhãn lưu hóa PET mờ trắng 3 mil, keo áp lực gốc cao su — thiết kế cho lưu hóa lốp và cao su ở 180°C–220°C.",
+  "th": "ฉลากอบยาง PET สีขาวด้าน 3 mil กาวแรงดันฐานยาง — ออกแบบสำหรับการอบยางล้อและยางที่ 180°C–220°C"
+ },
+ "positioning": {
+  "en": "The vulcanization label is the industrial ID card of tires and rubber products, carrying batch traceability, production management and quality tracing. E-2313 is a 3 mil white matte PET label with a rubber-based pressure-sensitive adhesive, purpose-built to survive high-temperature curing without lifting, blurring or corroding — keeping barcodes scannable across the full molding → curing → inspection → warehousing flow.",
+  "zh": "一张小小的硫化标签，是轮胎与橡胶制品的“工业身份证”，承载批次追溯、生产管理与质量溯源。E-2313 为 3 mil 白色哑面 PET 橡胶基压敏胶标签，专为高温硫化工况而生，直面标签脱落、模糊、腐蚀等挑战，贯穿成型 → 硫化 → 检测 → 入库全流程，保障条码稳定可读。",
+  "vi": "Nhãn lưu hóa là “chứng minh thư công nghiệp” của lốp và sản phẩm cao su, mang theo truy xuất lô, quản lý sản xuất và truy nguyên chất lượng. E-2313 là nhãn PET mờ trắng 3 mil với keo áp lực gốc cao su, được chế tạo để chịu lưu hóa nhiệt độ cao mà không bong, mờ hay ăn mòn — giữ mã vạch quét được xuyên suốt quy trình tạo hình → lưu hóa → kiểm tra → nhập kho.",
+  "th": "ฉลากอบยางคือ “บัตรประจำตัวเชิงอุตสาหกรรม” ของยางและผลิตภัณฑ์ยาง รองรับการตรวจสอบย้อนกลับตามล็อต การจัดการการผลิต และการสืบค้นคุณภาพ E-2313 เป็นฉลาก PET สีขาวด้าน 3 mil พร้อมกาวแรงดันฐานยาง ออกแบบให้ทนการอบยางอุณหภูมิสูงโดยไม่หลุด เลือน หรือกัดกร่อน — คงบาร์โค้ดให้อ่านได้ตลอดกระบวนการขึ้นรูป → อบยาง → ตรวจสอบ → เข้าคลัง"
+ },
+ "challenges": {
+  "en": [
+   "Edge-lift or fall-off after high-temperature, high-pressure curing — batch rework that drives up cost",
+   "Barcodes blur or fade after curing, scan failures break MES traceability",
+   "Poor resistance to oil, acid/alkali and solvents damages the marking in harsh workshops",
+   "Heat-shrink and dimensional distortion of the facestock, unfit for automated line labeling",
+   "Weak bond on rough rubber surfaces — insufficient initial tack, labels shift after application"
+  ],
+  "zh": [
+   "硫化高温高压后标签翘边、脱落，批量返工，拉高生产成本",
+   "硫化后条码模糊褪色，扫码识读失败，MES 系统追溯断档",
+   "不耐油污、酸碱、化学溶剂，车间复杂环境下标识损毁",
+   "基材受热收缩变形，尺寸不稳定，无法适配自动化产线贴标",
+   "粗糙橡胶表面粘结差，初粘不足，贴标后移位跑偏"
+  ],
+  "vi": [
+   "Bong mép hoặc rơi nhãn sau lưu hóa nhiệt cao, áp lực cao — làm lại hàng loạt, đội chi phí",
+   "Mã vạch mờ hoặc phai sau lưu hóa, quét lỗi làm gián đoạn truy xuất MES",
+   "Kém chịu dầu, axit/kiềm và dung môi khiến nhãn hỏng trong xưởng khắc nghiệt",
+   "Vật liệu mặt co nhiệt, biến dạng kích thước, không phù hợp dán tự động trên dây chuyền",
+   "Bám kém trên bề mặt cao su thô — độ dính ban đầu thấp, nhãn xê dịch sau khi dán"
+  ],
+  "th": [
+   "ขอบหลุดหรือฉลากร่วงหลังอบยางอุณหภูมิและแรงดันสูง — ต้องทำใหม่ทั้งล็อต ดันต้นทุนขึ้น",
+   "บาร์โค้ดเลือนหรือจางหลังอบยาง สแกนไม่ผ่าน ทำให้การสืบค้น MES ขาดช่วง",
+   "ทนน้ำมัน กรด/ด่าง และตัวทำละลายได้ไม่ดี ทำให้เครื่องหมายเสียหายในโรงงานที่สภาพแวดล้อมรุนแรง",
+   "วัสดุหดตัวจากความร้อนและผิดเพี้ยนด้านมิติ ไม่เหมาะกับการติดฉลากอัตโนมัติบนสายการผลิต",
+   "ยึดเกาะผิวยางหยาบได้ไม่ดี — แรงยึดเริ่มต้นต่ำ ฉลากเลื่อนหลังติด"
+  ]
+ },
+ "features": {
+  "en": [
+   "Strong temperature resistance: -40°C~200°C service range fits tire curing; the facestock resists distortion and shrinkage for excellent dimensional stability.",
+   "High post-cure bond: a special rubber-based PSA delivers strong initial tack, peel and holding; after curing it bonds firmly to rubber without edge-lift, even on rough surfaces.",
+   "Rugged for harsh conditions: waterproof, acid/alkali, solvent, scratch and abrasion resistant against workshop oil, moisture and aggressive chemicals.",
+   "Excellent print & scanning: 3 mil white matte PET with matched ribbon prints crisp, high-contrast barcodes for reliable high-speed line scanning and full-flow traceability."
+  ],
+  "zh": [
+   "强悍耐温：耐温 -40℃~200℃，完美适配轮胎硫化高温工况；历经硫化，基材不易变形收缩，尺寸稳定性优秀",
+   "硫化后高粘接：特制橡胶基压敏胶，初粘力、剥离力、保持力优异；硫化完成后与橡胶高强度结合，不翘边脱落，适配粗糙橡胶表面",
+   "耐造抗造：防水防潮、耐酸碱、耐化学溶剂、耐刮擦磨损，直面车间油污、潮湿、强酸强碱复杂生产环境",
+   "打印出色：3 mil 白色哑面 PET 搭配适配碳带，打印清晰、条码辨识度高，保障产线高速扫码，打通全流程追溯"
+  ],
+  "vi": [
+   "Chịu nhiệt mạnh: dải -40°C~200°C phù hợp lưu hóa lốp; vật liệu mặt chống biến dạng, co ngót, ổn định kích thước tốt.",
+   "Bám chắc sau lưu hóa: keo áp lực gốc cao su đặc biệt cho độ dính ban đầu, lực bóc và giữ cao; sau lưu hóa bám chắc cao su không bong mép, kể cả bề mặt thô.",
+   "Bền bỉ môi trường khắc nghiệt: chống nước, axit/kiềm, dung môi, trầy xước và mài mòn trước dầu, ẩm và hóa chất mạnh trong xưởng.",
+   "In & quét xuất sắc: PET mờ trắng 3 mil với ribbon phù hợp in mã vạch sắc nét, tương phản cao cho quét dây chuyền tốc độ cao và truy xuất toàn trình."
+  ],
+  "th": [
+   "ทนอุณหภูมิสูง: ช่วง -40°C~200°C เหมาะกับการอบยาง วัสดุม่ต้านการผิดรูปและหดตัว เสถียรด้านมิติดีเยี่ยม",
+   "ยึดแน่นหลังอบยาง: กาวแรงดันฐานยางพิเศษให้แรงยึดเริ่มต้น แรงลอก และแรงยึดสูง หลังอบยึดยางแน่นไม่หลุดขอบ แม้ผิวหยาบ",
+   "แข็งแกร่งในสภาพรุนแรง: กันน้ำ ทนกรด/ด่าง ตัวทำละลาย รอยขีดข่วนและการสึกหรอ ต่อน้ำมัน ความชื้น และสารเคมีรุนแรงในโรงงาน",
+   "พิมพ์และสแกนยอดเยี่ยม: PET สีขาวด้าน 3 mil กับริบบอนที่เข้ากันพิมพ์บาร์โค้ดคมชัด คอนทราสต์สูง สแกนสายการผลิตความเร็วสูงได้ดี ครบทั้งการสืบค้น"
+  ]
+ },
+ "spec_table": {
+  "headers": {
+   "en": ["Specification", "E-2313"],
+   "zh": ["规格项", "E-2313"],
+   "vi": ["Thông số", "E-2313"],
+   "th": ["ข้อมูลจำเพาะ", "E-2313"]
+  },
+  "rows": [
+   {"group": {"en": "Construction", "zh": "结构", "vi": "Cấu tạo", "th": "โครงสร้าง"}},
+   {"cells": [{"en": "Facestock", "zh": "面材", "vi": "Vật liệu mặt", "th": "วัสดุพิมพ์"}, {"en": "3 mil (0.084 mm) white matte polyester (PET) film", "zh": "3 mil（0.084 mm）白色哑面聚酯（PET）薄膜", "vi": "Màng polyester (PET) mờ trắng 3 mil (0.084 mm)", "th": "ฟิล์มโพลีเอสเตอร์ (PET) สีขาวด้าน 3 mil (0.084 mm)"}]},
+   {"cells": [{"en": "Adhesive", "zh": "胶粘剂", "vi": "Keo dán", "th": "กาว"}, {"en": "Rubber-based pressure-sensitive adhesive, 0.032 mm", "zh": "橡胶基压敏胶，0.032 mm", "vi": "Keo áp lực gốc cao su, 0.032 mm", "th": "กาวแรงดันฐานยาง 0.032 mm"}]},
+   {"group": {"en": "Performance", "zh": "性能", "vi": "Hiệu năng", "th": "ประสิทธิภาพ"}},
+   {"cells": [{"en": "Peel adhesion", "zh": "剥离力", "vi": "Lực bóc", "th": "แรงลอก"}, "4 N/25 mm"]},
+   {"cells": [{"en": "Initial tack", "zh": "初粘力", "vi": "Độ dính ban đầu", "th": "แรงยึดเริ่มต้น"}, "7 N/25 mm"]},
+   {"cells": [{"en": "Service temperature", "zh": "使用温度", "vi": "Nhiệt độ sử dụng", "th": "อุณหภูมิใช้งาน"}, "-40°C ~ 200°C"]},
+   {"cells": [{"en": "Curing condition", "zh": "硫化工况", "vi": "Điều kiện lưu hóa", "th": "สภาวะอบยาง"}, {"en": "180°C–220°C high-temperature, high-pressure vulcanization", "zh": "180℃~220℃ 高温高压硫化", "vi": "Lưu hóa nhiệt cao, áp lực cao 180°C–220°C", "th": "การอบยางอุณหภูมิและแรงดันสูง 180°C–220°C"}]},
+   {"cells": [{"en": "Application", "zh": "贴标方式", "vi": "Cách dán", "th": "วิธีติด"}, {"en": "Automatic labeling supported", "zh": "支持自动贴标", "vi": "Hỗ trợ dán nhãn tự động", "th": "รองรับการติดฉลากอัตโนมัติ"}]},
+   {"cells": [{"en": "Compliance", "zh": "合规", "vi": "Tuân thủ", "th": "การรับรอง"}, "RoHS"]}
+  ],
+  "notes": {
+   "en": ["Storage: 22°C, 50% RH — shelf life up to 1 year.", "Always validate suitability with on-site process testing before production."],
+   "zh": ["存储条件：22℃、相对湿度 50%，有效期可达 1 年", "建议客户务必提前做现场工况测试验证适用性"],
+   "vi": ["Bảo quản: 22°C, 50% RH — hạn dùng đến 1 năm.", "Luôn kiểm chứng tính phù hợp bằng thử nghiệm quy trình tại chỗ trước khi sản xuất."],
+   "th": ["การจัดเก็บ: 22°C, ความชื้นสัมพัทธ์ 50% — อายุการใช้งานสูงสุด 1 ปี", "ควรทดสอบกับกระบวนการจริงหน้างานก่อนใช้ผลิตทุกครั้ง"]
+  }
+ },
+ "applications": {
+  "en": [
+   "Automotive tire curing: applied to the green-tire sidewall/bead before molding; permanently bonds under 180°C–220°C curing. Records unique tire ID, plant code, shift, mold number and production time for MES traceability from molding to warehousing.",
+   "Automotive rubber parts (co-cure): air springs, vibration-damping rubber blocks, dust boots and coolant hoses — records part number, batch and supplier code for OEM parts traceability, staying readable against engine-bay oil and chemicals.",
+   "Industrial molded rubber: V-belts, timing and conveyor belts, oil seals, rubber gaskets and large pads — the label co-cures with the product for model, spec and pressure-rating marking."
+  ],
+  "zh": [
+   "汽车轮胎硫化标识：成型工序贴于生胎胎侧、胎圈未硫化橡胶表面，进模前完成贴标；在 180℃~220℃ 高温高压下与轮胎永久结合，记录轮胎唯一 ID、工厂代码、班次、模具编号与生产时间，对接 MES 实现全流程扫码追溯",
+   "汽车橡胶零部件（共硫化）：空气弹簧、减震橡胶垫块、橡胶防尘套、冷却水管胶管等，硫化前贴于生胶表面，记录料号、批次、供应商代码，满足主机厂零部件溯源；耐化学腐蚀，长期可读",
+   "工业橡胶模压制品：三角带、同步带、输送带、油封、橡胶垫圈与大型垫板等，标签随产品共硫化，用于型号、规格与压力等级标识"
+  ],
+  "vi": [
+   "Lưu hóa lốp ô tô: dán lên hông/tanh lốp thô trước khi vào khuôn; bám vĩnh viễn khi lưu hóa 180°C–220°C. Ghi ID lốp, mã nhà máy, ca, số khuôn và thời gian sản xuất để truy xuất MES từ tạo hình đến nhập kho.",
+   "Linh kiện cao su ô tô (đồng lưu hóa): lò xo khí, khối cao su giảm chấn, chụp chắn bụi và ống làm mát — ghi mã linh kiện, lô và mã nhà cung cấp để truy xuất linh kiện OEM, vẫn đọc được trước dầu và hóa chất khoang máy.",
+   "Cao su đúc công nghiệp: dây curoa chữ V, dây curoa cam và băng tải, phớt dầu, gioăng cao su và tấm lớn — nhãn đồng lưu hóa với sản phẩm để ghi model, thông số và cấp áp suất."
+  ],
+  "th": [
+   "การอบยางล้อรถยนต์: ติดที่แก้มยาง/ขอบยางดิบก่อนเข้าแม่พิมพ์ ยึดถาวรเมื่ออบที่ 180°C–220°C บันทึก ID ยาง รหัสโรงงาน กะ หมายเลขแม่พิมพ์ และเวลาผลิต เพื่อสืบค้น MES ตั้งแต่ขึ้นรูปถึงเข้าคลัง",
+   "ชิ้นส่วนยางรถยนต์ (อบร่วม): สปริงลม บล็อกยางกันสะเทือน ยางกันฝุ่น และท่อหล่อเย็น — บันทึกรหัสชิ้นส่วน ล็อต และรหัสซัพพลายเออร์ เพื่อสืบค้นชิ้นส่วน OEM คงอ่านได้ต่อน้ำมันและสารเคมีในห้องเครื่อง",
+   "ยางขึ้นรูปอุตสาหกรรม: สายพานวี สายพานไทม์มิ่งและสายพานลำเลียง ซีลน้ำมัน ปะเก็นยาง และแผ่นขนาดใหญ่ — ฉลากอบร่วมกับผลิตภัณฑ์เพื่อระบุรุ่น สเปก และระดับความดัน"
+  ]
+ },
+ "certifications": {
+  "en": ["RoHS compliant"],
+  "zh": ["RoHS 合规"],
+  "vi": ["Tuân thủ RoHS"],
+  "th": ["เป็นไปตาม RoHS"]
+ }
+}
