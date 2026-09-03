@@ -500,18 +500,18 @@
     },
     {
      "name": {
-      "en": "Post-Cure Tire Bead Label",
-      "zh": "硫化后胎圈标签",
-      "vi": "Nhãn hạt lốp sau lưu hóa",
-      "th": "ฉลากลูกปัดยางหลังการอบ"
+      "en": "Tire Tread Label",
+      "zh": "胎面标签",
+      "vi": "Nhãn mặt lốp (tread)",
+      "th": "ฉลากหน้ายาง (tread)"
      },
      "line": {
-      "en": "COMPUTYPE TS1134P · Post-cure bead labels for all tire types · optimal adhesion to cured rubber through tire testing · -40°C~80°C, white glossy PET, rubber-bleed oil, ozone, rain, road-grease & deicing-salt resistant",
-      "zh": "COMPUTYPE TS1134P · 适配全部胎型的硫化后胎圈标签 · 与硫化橡胶最佳附着，贯穿轮胎测试全程 · -40°C~80°C，白色光面 PET，耐橡胶析出油脂、臭氧、雨水、路面油污与融雪盐",
-      "vi": "COMPUTYPE TS1134P · Nhãn hạt lốp sau lưu hóa cho mọi loại lốp · bám tối ưu vào cao su đã lưu hóa suốt quá trình kiểm tra lốp · -40°C~80°C, PET bóng trắng, chống dầu cao su, ôzôn, mưa, dầu đường & muối tan tuyết",
-      "th": "COMPUTYPE TS1134P · ฉลากลูกปัดยางหลังอบสำหรับยางทุกชนิด · ยึดเกาะยางที่อบแล้วดีที่สุดตลอดการทดสอบยาง · -40°C~80°C, PET สีขาวเงา, ทนน้ำมันยาง โอโซน ฝน น้ำมันถนน & เกลือละลายหิมะ"
+      "en": "ETIA E-2311 · Tire tread marking label · white matte-silver PET, 1 mil · service range -40°C~50°C · for finished-tire tread identification",
+      "zh": "ETIA E-2311 · 胎面标识标签 · 白色哑银 PET，1 mil · 使用温度 -40℃~50℃ · 适用于成品胎胎面标识",
+      "vi": "ETIA E-2311 · Nhãn nhận diện mặt lốp · PET bạc mờ trắng, 1 mil · dải nhiệt -40°C~50°C · dùng cho nhận diện mặt lốp thành phẩm",
+      "th": "ETIA E-2311 · ฉลากระบุหน้ายาง · PET สีขาวเงินด้าน 1 mil · ช่วงอุณหภูมิ -40°C~50°C · สำหรับระบุหน้ายางสำเร็จรูป"
      },
-     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-TIER-POSTCURE",
+     "img": "",
      "landing": false,
      "slug": ""
     }
