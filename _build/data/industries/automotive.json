@@ -483,18 +483,18 @@
    "products": [
     {
      "name": {
-      "en": "Pre-Cure Tire Bead Label",
-      "zh": "预硫化胎圈标签",
-      "vi": "Nhãn hạt lốp trước lưu hóa",
-      "th": "ฉลากลูกปัดยางก่อนการอบ"
+      "en": "Tire Vulcanization Label",
+      "zh": "硫化标签",
+      "vi": "Nhãn lưu hóa lốp xe",
+      "th": "ฉลากอบยาง (วัลคาไนซ์)"
      },
      "line": {
-      "en": "COMPUTYPE TS-1100P · Pre-cure bead labels for all tire types · precise placement & dimensional stability through curing · ambient molding, withstands 180°C vulcanization (200°C short-term), rubber-bleed oil, vulcanizing-agent & steam resistant",
-      "zh": "COMPUTYPE TS-1100P · 适配全部胎型的预硫化胎圈标签 · 精准贴标定位，硫化过程尺寸稳定 · 常温成型，耐 180°C 硫化（短时 200°C），耐生胎析出油脂、硫化药剂与高温水汽",
-      "vi": "COMPUTYPE TS-1100P · Nhãn hạt lốp trước lưu hóa cho mọi loại lốp · đặt nhãn chính xác, ổn định kích thước qua lưu hóa · tạo hình nhiệt thường, chịu 180°C lưu hóa (200°C ngắn hạn), chống dầu cao su, thuốc lưu hóa & hơi nước",
-      "th": "COMPUTYPE TS-1100P · ฉลากลูกปัดยางก่อนอบสำหรับยางทุกชนิด · วางตำแหน่งแม่นยำ เสถียรด้านมิติตลอดการอบยาง · ขึ้นรูปอุณหภูมิปกติ ทน 180°C อบยาง (200°C ชั่วคราว) ทนน้ำมันยางดิบ สารอบยาง และไอน้ำ"
+      "en": "ETIA E-2313 · 3 mil white matte PET vulcanization label with rubber-based pressure-sensitive adhesive · -40°C~200°C, suited to 180°C–220°C tire curing heat & pressure · 4N/25mm peel, 7N/25mm initial tack — bonds firmly to rubber after curing without lifting · oil, acid/alkali, solvent & scratch resistant, auto-apply, RoHS compliant",
+      "zh": "怡天 E-2313 · 3 mil 白色哑面 PET 橡胶基压敏胶硫化标签 · 耐温 -40℃~200℃，适配 180℃~220℃ 轮胎硫化高温高压 · 剥离力 4N/25mm、初粘力 7N/25mm，硫化后与橡胶高强度结合，不翘边脱落 · 耐油污、酸碱、化学溶剂与刮擦，可自动贴标，RoHS 合规",
+      "vi": "ETIA E-2313 · Nhãn lưu hóa PET mờ trắng 3 mil, keo áp lực gốc cao su · -40°C~200°C, phù hợp nhiệt & áp lực lưu hóa lốp 180°C–220°C · lực bóc 4N/25mm, độ dính ban đầu 7N/25mm — bám chắc cao su sau lưu hóa, không bong mép · chống dầu, axit/kiềm, dung môi & trầy xước, dán tự động, tuân thủ RoHS",
+      "th": "ETIA E-2313 · ฉลากอบยาง PET สีขาวด้าน 3 mil กาวแรงดันฐานยาง · -40°C~200°C เหมาะกับความร้อนและแรงดันอบยาง 180°C–220°C · แรงลอก 4N/25mm แรงยึดเริ่มต้น 7N/25mm — ยึดยางแน่นหลังอบไม่หลุดลอก · ทนน้ำมัน กรด/ด่าง ตัวทำละลาย และรอยขีดข่วน ติดอัตโนมัติ เป็นไปตาม RoHS"
      },
-     "img": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-TIRE-PRECURE",
+     "img": "",
      "landing": false,
      "slug": ""
     },
