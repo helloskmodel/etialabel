@@ -289,13 +289,20 @@ def _finder_block(records, lang, add_only=False):
             "code": " ".join(_cb),
         }
         img = r.get("product_img", "")
+        _tile = barcode_label_svg(r.get("code") or _model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
+        _indimg = gp.INDUSTRY_BANNERS.get(r["industry"], "") if r.get("industry") else ""
         if img and "/PRODUCT/" in img:
+            # a real product photo wins
             media = ('<div class="pcell-img photo"><img src="%s" alt="%s" loading="lazy" decoding="async" '
                      'onerror="this.closest(\'.pcell-img\').innerHTML=\'%s\'"></div>') % (
-                esc(img), esc(L(r["title"])),
-                barcode_label_svg(r.get("code") or _model_code(r["slug"]), gp.brand_eyebrow(r["brand"])).replace("'", "&#39;"))
+                esc(img), esc(L(r["title"])), _tile.replace("'", "&#39;"))
+        elif _indimg:
+            # otherwise echo the product's "By Industry" photo, falling back to the label tile
+            media = ('<div class="pcell-img ind"><img src="%s" alt="%s" loading="lazy" decoding="async" '
+                     'onerror="this.closest(\'.pcell-img\').innerHTML=\'%s\'"></div>') % (
+                esc(_indimg), esc(L(r["title"])), _tile.replace("'", "&#39;"))
         else:
-            media = '<div class="pcell-img lbl">%s</div>' % barcode_label_svg(r.get("code") or _model_code(r["slug"]), gp.brand_eyebrow(r["brand"]))
+            media = '<div class="pcell-img lbl">%s</div>' % _tile
         _code = r.get("code") or _model_code(r["slug"])
         skbtn = ('<span class="skadd" role="button" tabindex="0" data-skc="%s" data-name="%s" data-url="%s" '
                  'onclick="skAdd(event,this)" aria-label="Add to sample list"></span>') % (
@@ -340,6 +347,7 @@ def _finder_block(records, lang, add_only=False):
 .pcell:hover{box-shadow:0 12px 30px rgba(20,60,150,.13);transform:translateY(-2px);border-color:#1A56DB}
 .pcell-img{width:100%;aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:#eef3fc;display:grid;place-items:center;margin-bottom:3px}
 .pcell-img.photo{background:#fff}
+.pcell-img.ind{background:#eef3fc}.pcell-img.ind img{object-fit:cover}
 .pcell-img img{width:100%;height:100%;object-fit:contain;display:block}
 .pcell-img svg.bclbl{width:100%;height:100%;display:block}
 .pcell-t{font-size:15.5px;font-weight:800;color:#143C96;line-height:1.28}
