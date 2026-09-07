@@ -473,6 +473,8 @@ def build_sample_request(records, lang):
       '.rqbar{max-width:1180px;margin:0 auto;padding:22px 22px 0}'
       '.rqhd{font-family:var(--sans);font-weight:800;color:#143C96;font-size:16px;margin:0 0 10px;display:flex;align-items:center;gap:9px}'
       '.rqhd .n{font-size:12px;font-weight:800;color:#fff;background:#41A62A;border-radius:999px;padding:2px 9px;min-width:12px;text-align:center}'
+      '.rqclear{margin-left:auto;background:none;border:1px solid #cbd7ea;color:#5a6884;border-radius:8px;padding:5px 12px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:var(--sans)}'
+      '.rqclear:hover{border-color:#d9534f;color:#d9534f}'
       '.rqcartbox{background:#f4f8f1;border:1px solid #cfe6c3;border-radius:14px;padding:16px 18px;margin:0 0 16px}'
       '.rqcart{display:flex;flex-wrap:wrap;gap:8px;margin:0}'
       '.rqcitem{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #cfe0c5;border-radius:22px;padding:7px 8px 7px 14px;font-size:13.5px;font-weight:700;color:#2c7a1e;font-family:ui-monospace,Menlo,Consolas,monospace}'
@@ -523,7 +525,9 @@ def build_sample_request(records, lang):
         "Mẫu miễn phí. Cước vận chuyển thu hộ qua DHL — DHL thu phí giao hàng khi bạn nhận. Chọn các mã nhãn muốn thử, rồi tiếp tục nhập địa chỉ giao hàng.",
         "ตัวอย่างฟรี ค่าจัดส่งเก็บปลายทางผ่าน DHL — DHL จะเก็บค่าจัดส่งเมื่อสินค้าถึงมือคุณ เลือกรุ่นฉลากที่ต้องการทดลอง แล้วไปกรอกที่อยู่จัดส่งต่อ")) + '</p>'
       '<div class="rqhd">' + esc(lb("Your sample cart", "您的样品车", "Giỏ mẫu của bạn", "ตะกร้าตัวอย่างของคุณ")) +
-        '<span class="n" id="rq_n">0</span></div>'
+        '<span class="n" id="rq_n">0</span>'
+        '<button type="button" class="rqclear" id="rq_clear" style="display:none" onclick="rqClearCart()">' +
+        esc(lb("Clear all", "一键清空", "Xóa tất cả", "ล้างทั้งหมด")) + '</button></div>'
       '<div class="rqcartbox"><div class="rqcart" id="rq_cart"></div>'
       '<p class="rqempty" id="rq_empty">' + esc(lb(
         "No samples in your cart yet — browse the materials below and tap a card (or its “+”) to add it here.",
@@ -594,22 +598,25 @@ def build_sample_request(records, lang):
     RQ_EMPTY = esc(lb("Please add at least one sample to your cart first.", "请先在样品车中至少添加一个样品。", "Vui lòng thêm ít nhất một mẫu vào giỏ trước.", "กรุณาเพิ่มตัวอย่างอย่างน้อยหนึ่งรายการลงในตะกร้าก่อน"))
     RQ_AGREE = esc(lb("Please tick the box to agree to free samples with freight-collect (DHL) shipping.", "请勾选同意“样品免费、邮费到付（DHL）”。", "Vui lòng tích chọn đồng ý mẫu miễn phí, cước thu hộ (DHL).", "กรุณาติ๊กช่องยอมรับตัวอย่างฟรีและค่าจัดส่งเก็บปลายทาง (DHL)"))
     RQ_NONE = esc(lb("No samples selected.", "未选择样品。", "Chưa chọn mẫu.", "ยังไม่ได้เลือกตัวอย่าง"))
+    RQ_CLEARQ = esc(lb("Clear all samples from your cart?", "确定清空样品车中的所有样品？", "Xóa tất cả mẫu khỏi giỏ?", "ล้างตัวอย่างทั้งหมดออกจากตะกร้าหรือไม่?"))
 
     js = ('<script>var RQ_OFFICE=' + office_js + ',RQ_DEF="' + esc(OFFICE_DEFAULT) + '",'
       'RQ_CITIES=' + cities_js + ','
-      'RQ_EMPTY="' + RQ_EMPTY + '",RQ_AGREE="' + RQ_AGREE + '",RQ_NONE="' + RQ_NONE + '";'
+      'RQ_EMPTY="' + RQ_EMPTY + '",RQ_AGREE="' + RQ_AGREE + '",RQ_NONE="' + RQ_NONE + '",RQ_CLEARQ="' + RQ_CLEARQ + '";'
       'window.rqRenderCart=function(){if(!window.etiaSample)return;var a=window.etiaSample.get(),'
       'box=document.getElementById("rq_cart"),emp=document.getElementById("rq_empty"),nn=document.getElementById("rq_n"),'
       'rc=document.getElementById("rq_recap"),rn=document.getElementById("rq_rn");'
       'if(box){box.innerHTML=a.map(function(x){var c=(x.code||"").replace(/[^A-Za-z0-9._-]/g,"");'
       'return "<span class=\\"rqcitem\\">"+(x.code||"")+"<button type=\\"button\\" aria-label=\\"remove\\" onclick=\\"window.etiaSample.remove(\'"+c+"\')\\">\\u00d7</button></span>";}).join("");}'
       'if(emp)emp.style.display=a.length?"none":"block";if(nn)nn.textContent=a.length;if(rn)rn.textContent=a.length;'
+      'var cl=document.getElementById("rq_clear");if(cl)cl.style.display=a.length?"inline-block":"none";'
       'if(rc)rc.innerHTML=a.length?a.map(function(x){return "<li>"+(x.code||"")+((x.name&&x.name!==x.code)?(" <span>"+x.name+"</span>"):"")+"</li>";}).join(""):"<li class=\\"n\\">"+RQ_NONE+"</li>";};'
       'function rqGoShip(){var a=window.etiaSample?window.etiaSample.get():[];'
       'if(!a.length){alert(RQ_EMPTY);var b=document.getElementById("' + browse_anchor + '");if(b)b.scrollIntoView({behavior:"smooth"});return;}'
       'document.getElementById("rq_step1").classList.add("rqhide");document.getElementById("rq_step2").classList.remove("rqhide");'
       'document.getElementById("rqs1").classList.remove("on");document.getElementById("rqs2").classList.add("on");'
       'window.rqRenderCart();window.scrollTo({top:0,behavior:"smooth"});}'
+      'function rqClearCart(){if(window.etiaSample&&confirm(RQ_CLEARQ))window.etiaSample.set([]);}'
       'function rqBackCart(){document.getElementById("rq_step2").classList.add("rqhide");document.getElementById("rq_step1").classList.remove("rqhide");'
       'document.getElementById("rqs2").classList.remove("on");document.getElementById("rqs1").classList.add("on");'
       'window.rqRenderCart();window.scrollTo({top:0,behavior:"smooth"});}'
@@ -640,7 +647,8 @@ def build_sample_request(records, lang):
       '+"' + esc(lb("Shipping", "运费", "Vận chuyển", "การจัดส่ง")) + ': ' + esc(lb("Free samples · freight-collect via DHL (customer agreed)", "样品免费 · DHL 邮费到付（客户已同意）", "Mẫu miễn phí · cước thu hộ qua DHL (khách đã đồng ý)", "ตัวอย่างฟรี · เก็บเงินปลายทางผ่าน DHL (ลูกค้ายอมรับแล้ว)")) + '"+NL;'
       'var sub=encodeURIComponent("' + esc(lb("Sample Request", "样品申请", "Yêu cầu mẫu", "คำขอตัวอย่าง")) + ' - "+nm+" ("+co+")");'
       'document.getElementById("rq_ok").style.display="block";'
-      'window.location.href="mailto:etialabel@etia-tech.com?subject="+sub+"&body="+b;return false;}'
+      'window.location.href="mailto:etialabel@etia-tech.com?subject="+sub+"&body="+b;'
+      'if(window.etiaSample)window.etiaSample.set([]);return false;}'
       'if(window.etiaSample)window.rqRenderCart();</script>')
 
     body = css + steps + step1 + step2 + js
