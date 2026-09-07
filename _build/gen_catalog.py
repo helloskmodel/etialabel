@@ -362,6 +362,8 @@ def _finder_block(records, lang, add_only=False):
 @media(max-width:860px){.clayout{grid-template-columns:1fr}.cfilters{position:static}
   .fmob{display:block;width:100%;padding:11px 14px;border:1.5px solid #cdd8ec;border-radius:10px;background:#fff;font-weight:800;color:#143C96;cursor:pointer;margin-bottom:12px}
   .cfilters .fbody{display:none}.cfilters.open .fbody{display:block}}
+@media(max-width:560px){.pgrid{grid-template-columns:1fr 1fr;gap:10px}.pcell{padding:11px 11px 13px;gap:5px}.pcell-img{border-radius:8px}}
+@media(max-width:360px){.pgrid{gap:8px}.pcell{padding:9px 9px 11px}}
 </style>"""
 
     body = CSS + (
