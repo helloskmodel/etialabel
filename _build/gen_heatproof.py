@@ -2331,12 +2331,36 @@ def _sitemap_group(canon):
         return "products"
     return "core"  # home, about, service, applications, contact, legal, etc.
 
+def _git_lastmod_map():
+    """repo-relative file path -> YYYY-MM-DD of its most recent commit, built in a
+    single `git log` pass (newest-first, so the first date seen for a file wins).
+    Returns {} if git is unavailable, in which case sitemaps fall back to today."""
+    import subprocess
+    try:
+        out = subprocess.run(
+            ["git", "-C", ROOT, "log", "--name-only", "--date=short", "--format=%x01%cd"],
+            capture_output=True, text=True, timeout=120).stdout
+    except Exception:
+        return {}
+    dates, cur = {}, None
+    for line in out.split("\n"):
+        if line.startswith("\x01"):
+            cur = line[1:].strip()
+        elif line and cur and line not in dates:
+            dates[line] = cur
+    return dates
+
 def build_sitemaps():
     """Filesystem-based: list exactly the pages that exist, in every locale they
     exist, split into one sitemap per section, each locale URL listed in full with
-    hreflang alternates. Empty sections are skipped; a stale sitemap-*.xml is removed."""
+    hreflang alternates and a <lastmod> from the page's last git commit. Empty
+    sections are skipped; a stale sitemap-*.xml is removed."""
+    import datetime
+    today = datetime.date.today().isoformat()
+    gitmap = _git_lastmod_map()
     skip_dirs = {"_build", "_docs", ".git", "node_modules", "scratchpad"}
-    pages = {}  # canonical path -> set(lang)
+    pages = {}       # canonical path -> set(lang)
+    page_date = {}   # (canonical, lang) -> YYYY-MM-DD
     for r, dirs, files in os.walk(ROOT):
         dirs[:] = [d for d in dirs if d not in skip_dirs and not d.startswith(".")]
         if "index.html" not in files:
@@ -2352,6 +2376,8 @@ def build_sitemaps():
                 canon = "/" + (rest + "/" if rest else "")
             else:
                 lang, canon = "en", "/" + rel + "/"
+        relf = "index.html" if rel == "." else rel + "/index.html"
+        page_date[(canon, lang)] = gitmap.get(relf, today)
         pages.setdefault(canon, set()).add(lang)
 
     groups = {}
@@ -2375,6 +2401,9 @@ def build_sitemaps():
         for canon, langs in items:
             for lg in langs:
                 xml += '  <url><loc>%s%s%s</loc>' % (SITE, PREFIX[lg], canon)
+                _lm = page_date.get((canon, lg))
+                if _lm:
+                    xml += '<lastmod>%s</lastmod>' % _lm
                 for al in langs:
                     xml += '<xhtml:link rel="alternate" hreflang="%s" href="%s%s%s"/>' % (HREFLANG[al], SITE, PREFIX[al], canon)
                 xml += '<xhtml:link rel="alternate" hreflang="x-default" href="%s%s"/>' % (SITE, canon)
