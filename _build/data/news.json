@@ -1,6 +1,243 @@
 {
  "articles": [
   {
+   "slug": "new-paint-protection-butterfly-label",
+   "category": "news",
+   "topic": "product",
+   "industry": [
+    "auto"
+   ],
+   "label_category": {
+    "en": [
+     "New Product",
+     "Painting"
+    ],
+    "zh": [
+     "新品发布",
+     "喷涂"
+    ],
+    "vi": [
+     "Sản phẩm mới",
+     "Sơn phủ"
+    ],
+    "th": [
+     "สินค้าใหม่",
+     "การพ่นสี"
+    ]
+   },
+   "cover_cat": {
+    "en": "New Product",
+    "zh": "新品发布",
+    "vi": "Sản phẩm mới",
+    "th": "สินค้าใหม่"
+   },
+   "lead_img": "",
+   "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER",
+   "tags": {
+    "en": [
+     "Paint Protection",
+     "Butterfly Label",
+     "Spray Coating",
+     "Traceability",
+     "New Product"
+    ],
+    "zh": [
+     "油漆防护",
+     "蝴蝶标",
+     "喷涂",
+     "追溯",
+     "新品"
+    ],
+    "vi": [
+     "Bảo vệ sơn",
+     "Nhãn cánh bướm",
+     "Phun phủ",
+     "Truy xuất",
+     "Sản phẩm mới"
+    ],
+    "th": [
+     "ปกป้องสี",
+     "ฉลากปีกผีเสื้อ",
+     "การพ่นเคลือบ",
+     "การสืบค้น",
+     "สินค้าใหม่"
+    ]
+   },
+   "title": {
+    "en": "New: Paint Protection Butterfly Label for Spray-Coating Lines",
+    "zh": "新品：面向喷涂产线的油漆防护蝴蝶标",
+    "vi": "Sản phẩm mới: Nhãn cánh bướm bảo vệ sơn cho dây chuyền phun phủ",
+    "th": "สินค้าใหม่: ฉลากปีกผีเสื้อปกป้องสีสำหรับสายการพ่นเคลือบ"
+   },
+   "subtitle": {
+    "en": "A masking label that carries part barcodes through spray-paint, powder-coat and e-coat baking — then peels off clean, with no residue.",
+    "zh": "一款遮蔽标签，贯穿喷漆、喷粉、电泳烤漆保护零部件条码，工序结束洁净撕除、无残胶。",
+    "vi": "Nhãn che chắn giữ mã vạch chi tiết xuyên suốt sơn phun, sơn tĩnh điện và nung ED — rồi bóc sạch, không để lại keo.",
+    "th": "ฉลากปิดบังที่คงบาร์โค้ดของชิ้นงานตลอดการพ่นสี พ่นผง และอบ e-coat — แล้วลอกออกสะอาด ไม่มีคราบกาว"
+   },
+   "lead": {
+    "en": "Factories invest heavily in traceability, then lose it to a single process label that can't survive the paint line. ETIA's new Paint Protection (Butterfly) Label is built for exactly that gap: it keeps a part's barcode intact and scannable through 80–150℃ baking, then lifts off cleanly by hand.",
+    "zh": "许多工厂在追溯系统上投入巨大，却常常栽在一张扛不住喷涂产线的小小工序标签上。怡天全新油漆防护（蝴蝶）标正是为此而生：在 80–150℃ 烘烤后仍保持零部件条码完整可扫，工序结束又能徒手洁净撕除。",
+    "vi": "Nhà máy đầu tư lớn cho truy xuất, rồi đánh mất nó chỉ vì một nhãn công đoạn không trụ nổi dây chuyền sơn. Nhãn bảo vệ sơn (cánh bướm) mới của ETIA sinh ra cho đúng khoảng trống đó: giữ mã vạch chi tiết nguyên vẹn và quét được qua nung 80–150℃, rồi bóc sạch bằng tay.",
+    "th": "โรงงานลงทุนกับการสืบค้นอย่างมาก แล้วสูญเสียไปเพราะฉลากในกระบวนการเพียงแผ่นเดียวที่ทนสายการพ่นสีไม่ได้ ฉลากปกป้องสี (ปีกผีเสื้อ) ใหม่ของ ETIA สร้างมาเพื่อช่องว่างนี้: คงบาร์โค้ดของชิ้นงานให้ครบถ้วนและสแกนได้ผ่านการอบ 80–150℃ แล้วลอกออกสะอาดด้วยมือ"
+   },
+   "sections": {
+    "en": [
+     {
+      "h": "The problem: marking that doesn't survive the paint line",
+      "ps": [
+       "On painting and coating lines, parts are marked before spray-paint, powder-coat or e-coat, then baked. Conventional labels lift or curl, paint bleeds under the edge, and paint mist covers the barcode until it can't be scanned.",
+       "Peeling the label off afterward leaves adhesive residue that has to be cleaned by hand — and a single failed label breaks MES traceability and causes material mix-ups."
+      ]
+     },
+     {
+      "h": "One label, all the way through",
+      "ps": [
+       "The Paint Protection Label is a 2 mil white gloss PET facestock with a removable protective film. It takes variable barcode printing, then protects that marking through the whole process:",
+       "Bake-proof — withstands 80–150℃ spray-paint and powder-coat baking without lifting or paint bleed; the protective film keeps the barcode and characters intact.",
+       "Strong, versatile adhesion — bonds firmly to high- and low-surface-energy plastics and metal: castings, die-cast aluminum and sheet-metal parts.",
+       "Clean removal — a built-in adhesive-free pull tab lets operators hand-peel after the process, with no tools, no residue and no damage to the barcode or finish.",
+       "Harsh-condition performance across −40℃ to 150℃, RoHS compliant. Verified figures: 1650 g/cm² peel (ASTM D903), 22.6 N/25.4mm initial tack, ≥75 h/1in² holding."
+      ]
+     },
+     {
+      "h": "Where it fits",
+      "ps": [
+       "Construction machinery (excavator parts, track assemblies), automotive chassis parts (suspension control arms, shock brackets, steering parts, die-cast and stamped parts), agricultural machinery (cast brackets, housings, sheet-metal structures) and die-cast hardware — anywhere parts are spray-painted, powder-coated or e-coated between marking and final traceability."
+      ]
+     },
+     {
+      "h": "Try it on your line",
+      "ps": [
+       "Samples are free. We recommend a small-batch test under your actual production conditions before scaling up. See the full spec on the product page, or request a sample and our team will follow up."
+      ]
+     }
+    ],
+    "zh": [
+     {
+      "h": "痛点：扛不住喷涂产线的工序标识",
+      "ps": [
+       "在喷涂、涂装产线上，零部件在喷漆、喷粉或电泳前完成标识，随后进入烘烤。普通标签翘边、卷起，油漆从边缘渗入，漆雾覆盖条码直至无法扫码。",
+       "工序结束撕除标签又会留下残胶，需人工清除；一张失效的工序标签就会中断 MES 追溯，造成物料错混。"
+      ]
+     },
+     {
+      "h": "一标到底，全程守护",
+      "ps": [
+       "油漆防护标签采用 2 mil 白色亮面 PET 基材加可移除保护膜，可用条码打印机变量打印，随后贯穿全工序守护标识：",
+       "耐烘烤——可承受 80–150℃ 喷漆、喷粉烘烤，不起翘、不渗漆，保护膜完整保护条码与字符。",
+       "强粘、适配多种表面——牢固贴合高/低表面能塑料与金属：铸件、压铸铝件、钣金件。",
+       "洁净撕除——自带无胶拉手，工序结束无需刀具徒手撕除，无残胶，不伤条码与漆面。",
+       "严苛环境性能，宽温域 −40℃~150℃，符合 RoHS。实测数据：剥离力 1650 g/cm²（ASTM D903）、初粘力 22.6 N/25.4mm、保持力 ≥75 h/1in²。"
+      ]
+     },
+     {
+      "h": "适用场景",
+      "ps": [
+       "工程机械（挖掘机零部件、履带总成）、汽车底盘件（悬架控制臂、减震支架、转向件、压铸与冲压件）、农机装备（铸造支架、壳体、钣金结构件）与压铸五金——凡在标识与最终追溯之间需喷漆、喷粉或电泳的零部件均适用。"
+      ]
+     },
+     {
+      "h": "到产线上试一试",
+      "ps": [
+       "样品免费。建议先在实际生产工况做小批量测试，确认适配再大规模上线。可在产品页查看完整规格，或直接申请样品，我们的团队会与您对接。"
+      ]
+     }
+    ],
+    "vi": [
+     {
+      "h": "Vấn đề: nhãn không trụ nổi dây chuyền sơn",
+      "ps": [
+       "Trên dây chuyền sơn và phủ, chi tiết được đánh dấu trước khi sơn phun, sơn tĩnh điện hoặc ED rồi đem nung. Nhãn thường bong, cuộn mép, sơn thấm vào mép và sương sơn phủ lên mã vạch đến mức không quét được.",
+       "Bóc nhãn sau đó để lại keo phải làm sạch thủ công — và chỉ một nhãn hỏng là gãy truy xuất MES, gây lẫn vật liệu."
+      ]
+     },
+     {
+      "h": "Một nhãn, suốt cả quy trình",
+      "ps": [
+       "Nhãn bảo vệ sơn dùng nền PET bóng trắng 2 mil kèm màng bảo vệ tháo rời, in được mã vạch biến đổi, rồi bảo vệ nhãn xuyên suốt quy trình:",
+       "Chịu nung — chịu nung sơn và sơn tĩnh điện 80–150℃ mà không bong hay thấm sơn; màng bảo vệ giữ mã vạch và ký tự nguyên vẹn.",
+       "Bám mạnh, đa dụng — bám chắc nhựa năng lượng bề mặt cao và thấp cùng kim loại: vật đúc, nhôm đúc áp lực, chi tiết kim loại tấm.",
+       "Bóc sạch — tai kéo không keo cho phép bóc tay sau quy trình, không cần dụng cụ, không keo thừa, không hỏng mã vạch hay lớp sơn.",
+       "Bền trong điều kiện khắc nghiệt, dải −40℃ đến 150℃, tuân thủ RoHS. Số liệu đã kiểm: lực bóc 1650 g/cm² (ASTM D903), độ dính ban đầu 22.6 N/25.4mm, lực giữ ≥75 h/1in²."
+      ]
+     },
+     {
+      "h": "Ứng dụng ở đâu",
+      "ps": [
+       "Máy xây dựng (chi tiết máy xúc, cụm xích), chi tiết khung gầm ô tô (càng treo, giá giảm chấn, chi tiết lái, chi tiết đúc và dập), máy nông nghiệp (giá đúc, vỏ, kết cấu kim loại tấm) và ngũ kim đúc áp lực — bất cứ nơi nào chi tiết được sơn phun, sơn tĩnh điện hoặc ED giữa khâu đánh dấu và truy xuất cuối."
+      ]
+     },
+     {
+      "h": "Dùng thử trên dây chuyền của bạn",
+      "ps": [
+       "Mẫu miễn phí. Nên chạy thử lô nhỏ trong điều kiện sản xuất thực tế trước khi triển khai đại trà. Xem thông số đầy đủ trên trang sản phẩm, hoặc yêu cầu mẫu và đội ngũ của chúng tôi sẽ liên hệ."
+      ]
+     }
+    ],
+    "th": [
+     {
+      "h": "ปัญหา: เครื่องหมายที่ทนสายการพ่นสีไม่ได้",
+      "ps": [
+       "บนสายการพ่นสีและเคลือบ ชิ้นงานถูกทำเครื่องหมายก่อนพ่นสี พ่นผง หรือ e-coat แล้วนำไปอบ ฉลากทั่วไปหลุดหรือม้วนงอ สีซึมใต้ขอบ และละอองสีปกคลุมบาร์โค้ดจนสแกนไม่ได้",
+       "การลอกฉลากออกภายหลังทิ้งคราบกาวที่ต้องทำความสะอาดด้วยมือ — และฉลากที่ใช้ไม่ได้เพียงแผ่นเดียวก็ทำให้การสืบค้น MES ขาดช่วงและวัสดุปนกัน"
+      ]
+     },
+     {
+      "h": "ฉลากเดียว ครบทั้งกระบวนการ",
+      "ps": [
+       "ฉลากปกป้องสีใช้วัสดุ PET สีขาวเงา 2 mil พร้อมฟิล์มป้องกันแบบลอกออกได้ พิมพ์บาร์โค้ดแบบแปรผันได้ แล้วปกป้องเครื่องหมายตลอดกระบวนการ:",
+       "ทนอบ — ทนการอบสีและพ่นผง 80–150℃ โดยไม่หลุดหรือสีซึม ฟิล์มป้องกันคงบาร์โค้ดและตัวอักษรครบถ้วน",
+       "ยึดแน่นและใช้ได้หลากหลาย — ยึดพลาสติกพลังงานพื้นผิวสูงและต่ำและโลหะ: งานหล่อ อะลูมิเนียมหล่อ และชิ้นงานโลหะแผ่น",
+       "ลอกสะอาด — แถบดึงไร้กาวให้พนักงานลอกด้วยมือหลังกระบวนการ ไม่ต้องใช้เครื่องมือ ไม่มีคราบกาว ไม่ทำลายบาร์โค้ดหรือผิวสี",
+       "ทนสภาพรุนแรง ช่วง −40℃ ถึง 150℃ เป็นไปตาม RoHS ค่าที่ตรวจแล้ว: แรงลอก 1650 g/cm² (ASTM D903), แรงยึดเริ่มต้น 22.6 N/25.4mm, แรงยึด ≥75 h/1in²"
+      ]
+     },
+     {
+      "h": "เหมาะกับที่ไหน",
+      "ps": [
+       "เครื่องจักรก่อสร้าง (ชิ้นส่วนรถขุด ชุดตีนตะขาบ) ชิ้นส่วนแชสซีรถยนต์ (แขนควบคุมช่วงล่าง ขายึดโช้ค ชิ้นส่วนพวงมาลัย งานหล่อและงานปั๊ม) เครื่องจักรกลเกษตร (ขายึดหล่อ ตัวเรือน โครงสร้างโลหะแผ่น) และฮาร์ดแวร์หล่อ — ทุกที่ที่ชิ้นงานถูกพ่นสี พ่นผง หรือ e-coat ระหว่างการทำเครื่องหมายกับการสืบค้นขั้นสุดท้าย"
+      ]
+     },
+     {
+      "h": "ลองใช้บนสายการผลิตของคุณ",
+      "ps": [
+       "ตัวอย่างฟรี แนะนำให้ทดสอบล็อตเล็กในสภาพการผลิตจริงก่อนขยายใช้งานเต็มรูปแบบ ดูสเปกเต็มบนหน้าสินค้า หรือขอตัวอย่างแล้วทีมงานของเราจะติดต่อกลับ"
+      ]
+     }
+    ]
+   },
+   "cta": [
+    {
+     "url": "/products/item/paint-protection-label/",
+     "label": {
+      "en": "See the product →",
+      "zh": "查看产品 →",
+      "vi": "Xem sản phẩm →",
+      "th": "ดูสินค้า →"
+     }
+    },
+    {
+     "url": "/request-sample/",
+     "label": {
+      "en": "Request a free sample →",
+      "zh": "申请免费样品 →",
+      "vi": "Yêu cầu mẫu miễn phí →",
+      "th": "ขอตัวอย่างฟรี →"
+     }
+    },
+    {
+     "url": "/contact/",
+     "label": {
+      "en": "Talk to us →",
+      "zh": "联系我们 →",
+      "vi": "Liên hệ →",
+      "th": "ติดต่อเรา →"
+     }
+    }
+   ]
+  },
+  {
    "slug": "polyonics-authorized-distributor-2026",
    "category": "news",
    "topic": "news",
