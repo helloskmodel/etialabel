@@ -1,0 +1,89 @@
+{
+ "slug": "paint-protection-spray-line-marking",
+ "source": "client brief — 油漆防护标签（蝴蝶标）/ Paint Protection (Butterfly) Label, spray-line part marking",
+ "order": 6,
+ "langs": ["en", "zh"],
+ "banner": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/INDUSTRY/AUTO-BANNER",
+ "image": "https://eitalabel-1303055923.cos.ap-singapore.myqcloud.com/PRODUCT/26CN",
+ "title": {
+  "en": "Protecting Part Marking Through the Painting Line | Paint Protection Butterfly Label",
+  "zh": "喷涂产线工序间标识防护 | 油漆防护蝴蝶标"
+ },
+ "subtitle": {
+  "en": "A 2 mil white gloss PET masking label with a removable film that carries barcodes through spray-paint, powder-coat and e-coat baking, then peels off clean — no residue, no rework.",
+  "zh": "2 mil 白色亮面 PET 遮蔽标签，配可移除保护膜，贯穿喷漆、喷粉、电泳烤漆保护条码，撕除无残胶、无返工。"
+ },
+ "seo_desc": {
+  "en": "Application note: how ETIA's Paint Protection (Butterfly) Label keeps part barcodes intact and scannable through 80–150℃ spray-paint, powder-coat and e-coat baking on castings, die-cast aluminum and sheet-metal parts, with clean adhesive-free removal for reliable MES traceability.",
+  "zh": "应用笔记：怡天油漆防护（蝴蝶）标如何在 80–150℃ 喷漆、喷粉、电泳烤漆工况下保持铸件、压铸铝件、钣金件条码完整可扫，并以无胶拉手洁净撕除，保障 MES 全流程追溯。"
+ },
+ "info": {
+  "en": [
+   {"label": "Facestock", "value": "2 mil (0.050 mm) white gloss PET + removable protective film"},
+   {"label": "Adhesive", "value": "Strong PSA — 1650 g/cm² peel (ASTM D903), 22.6 N/25.4mm initial tack"},
+   {"label": "Print", "value": "Thermal transfer — variable barcode / data"},
+   {"label": "Process", "value": "Spray-paint / powder-coat / e-coat baking, 80–150℃ (−40℃ to 150℃ range)"},
+   {"label": "Removal", "value": "Adhesive-free pull tab — hand-peel, no residue"},
+   {"label": "Use", "value": "Inter-process part marking & MES traceability"}
+  ],
+  "zh": [
+   {"label": "面材", "value": "2 mil（0.050 mm）白色亮面 PET + 可移除保护膜"},
+   {"label": "胶粘剂", "value": "强粘压敏胶 —— 剥离力 1650 g/cm²（ASTM D903），初粘力 22.6 N/25.4mm"},
+   {"label": "打印方式", "value": "热转印 —— 可变条码 / 数据"},
+   {"label": "工序", "value": "喷漆 / 喷粉 / 电泳烤漆，80–150℃（使用温度 −40℃~150℃）"},
+   {"label": "撕除", "value": "无胶拉手 —— 手撕、无残胶"},
+   {"label": "用途", "value": "工序间零部件标识与 MES 追溯"}
+  ]
+ },
+ "problems": {
+  "intro": {
+   "en": [
+    "On painting and coating lines, parts are marked before spray-paint, powder-coat or e-coat and then baked. Conventional labels lift or curl in the oven, paint bleeds under the edge, and paint mist covers the barcode so it can no longer be scanned. Removing the label afterward leaves adhesive residue that must be cleaned off by hand — and can mar the finish. A single failed process label breaks MES traceability and causes material mix-ups."
+   ],
+   "zh": [
+    "在喷涂、涂装产线上，零部件在喷漆、喷粉或电泳前完成标识，随后进入烘烤。普通标签在烘箱中翘边、卷起，油漆从边缘渗入，漆雾覆盖条码导致无法扫码；工序结束撕除标签又会在漆面留下残胶，需人工额外清除，甚至损伤漆面。一张失效的工序标签就会中断 MES 追溯，造成物料错混。"
+   ]
+  },
+  "items": {
+   "en": [
+    "Labels lift or curl during baking; paint seeps under the edge",
+    "Paint mist covers the barcode, making it unscannable",
+    "Adhesive residue after removal needs extra manual cleaning and can mar the paint",
+    "Weak bonding on die-cast, sheet-metal and low-surface-energy parts",
+    "Failed marking causes material mix-ups and breaks part-flow traceability"
+   ],
+   "zh": [
+    "标签在烘烤中翘边、卷起，油漆从边缘渗入",
+    "漆雾覆盖条码，导致无法扫码识别",
+    "撕除后残胶需额外人工清除，且可能损伤漆面",
+    "压铸件、钣金件及低表面能工件上粘接不牢",
+    "标识失效造成物料错混，中断零部件流转追溯"
+   ]
+  }
+ },
+ "solution": {
+  "intro": {
+   "en": [
+    "ETIA's Paint Protection (Butterfly) Label is purpose-built for spray-coating lines: a 2 mil white gloss PET facestock plus a removable protective film. It takes variable barcode printing and has been applied on construction-machinery castings, die-cast aluminum and sheet-metal parts to protect marking between processes — whether spray-paint, powder-coat or e-coat baking."
+   ],
+   "zh": [
+    "怡天油漆防护（蝴蝶）标专为喷涂工序打造：2 mil 白色亮面 PET 基材加可移除保护膜，可用条码打印机变量打印。已应用于工程机械铸件、压铸铝件与钣金件，在喷漆、喷粉、电泳烤漆各工序间守护标识。"
+   ]
+  },
+  "points": {
+   "en": [
+    {"label": "Bake-proof, no bleed, no lift", "text": "Withstands 80–150℃ paint and powder-coat baking; the protective film keeps the barcode and characters intact, so parts stay scannable end to end — no 'marking dies after baking'."},
+    {"label": "Strong, versatile adhesion", "text": "A stable, powerful adhesive bonds firmly to high- and low-surface-energy plastics and metal — castings, die-cast aluminum and sheet-metal parts."},
+    {"label": "Clean adhesive-free removal", "text": "A built-in adhesive-free pull tab lets operators hand-peel with no tools after the process, leaving no residue and without damaging the barcode or the painted finish."},
+    {"label": "Harsh-condition performance", "text": "Excellent abrasion, high-temperature and high-humidity resistance across a −40℃ to 150℃ range; RoHS compliant."}
+   ],
+   "zh": [
+    {"label": "耐烘烤、不渗漆、不起翘", "text": "可承受 80–150℃ 喷漆、喷粉烘烤；保护膜完整保护条码与字符，零部件全程可扫码追溯，杜绝“烤完标识就失效”。"},
+    {"label": "强粘、适配多种表面", "text": "胶粘剂稳定强劲，牢固贴合高/低表面能塑料与金属——铸件、压铸铝件、钣金件均可稳稳贴牢。"},
+    {"label": "无胶拉手，洁净撕除", "text": "自带无胶拉手，工序结束无需刀具直接手撕，撕除无残胶，不伤条码与漆面。"},
+    {"label": "严苛环境性能", "text": "优秀耐摩擦、耐高温、耐高湿，宽温域 −40℃~150℃；符合 RoHS。"}
+   ]
+  }
+ },
+ "industry": "auto"
+}
